@@ -25,6 +25,11 @@ const docs = {
     title: "平台注册路线图",
     description: "说明什么时候才需要注册流量、支付、收款和 AI API 平台。",
   },
+  "manual-review-checklist": {
+    file: "manual-review-checklist.md",
+    title: "人工审核清单",
+    description: "文章从 review 进入 published 前必须检查的内容质量和合规项目。",
+  },
   "post-deploy-checklist": {
     file: "post-deploy-checklist.md",
     title: "上线后检查清单",

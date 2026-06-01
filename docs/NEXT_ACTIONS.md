@@ -19,6 +19,7 @@
 - 每次从 batch 1 中人工审核 1-3 篇。
 - 只发布 `status=review` 且 `qualityScore>=80` 的文章。
 - 不一次性发布 500 篇。
+- 发布前按 `docs/manual-review-checklist.md` 做人工审核。
 
 ## 4. 收款和流量收益
 

@@ -27,6 +27,11 @@ const docs = [
     href: "/docs/platform-registration-roadmap",
   },
   {
+    title: "人工审核清单",
+    description: "说明 review 文章发布前必须人工检查的事实、原创、平台规则和风险项目。",
+    href: "/docs/manual-review-checklist",
+  },
+  {
     title: "上线后检查清单",
     description: "说明每次 Vercel 部署后如何检查页面、sitemap、robots、canonical 和草稿泄露。",
     href: "/docs/post-deploy-checklist",

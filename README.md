@@ -212,6 +212,7 @@ draft -> content:check -> 人工审核 -> review -> publish --confirm
 - GitHub 维护说明：`docs/github-workflow.md`
 - 平台注册路线图：`docs/platform-registration-roadmap.md`
 - 上线后检查清单：`docs/post-deploy-checklist.md`
+- 人工审核清单：`docs/manual-review-checklist.md`
 - PR 模板：`.github/PULL_REQUEST_TEMPLATE.md`
 - 内容任务 Issue 模板：`.github/ISSUE_TEMPLATE/content-task.yml`
 - 工具改进 Issue 模板：`.github/ISSUE_TEMPLATE/tool-bug.yml`
