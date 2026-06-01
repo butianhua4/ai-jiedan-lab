@@ -5,9 +5,31 @@ import { notFound } from "next/navigation";
 import { renderMarkdown } from "@/lib/blog";
 
 const docs = {
-  "publishing-workflow": "publishing-workflow.md",
-  "automation-plan": "automation-plan.md",
-  "monetization-and-payment-plan": "monetization-and-payment-plan.md",
+  "publishing-workflow": {
+    file: "publishing-workflow.md",
+    title: "内容发布工作流",
+    description: "AI 接单实验室的内容发布、审核和部署流程。",
+  },
+  "automation-plan": {
+    file: "automation-plan.md",
+    title: "安全自动化计划",
+    description: "OpenClaw / Codex 后期自动维护网站的安全边界。",
+  },
+  "monetization-and-payment-plan": {
+    file: "monetization-and-payment-plan.md",
+    title: "收款与变现路线",
+    description: "AI 接单实验室的服务、模板、联盟和广告变现顺序。",
+  },
+  "platform-registration-roadmap": {
+    file: "platform-registration-roadmap.md",
+    title: "平台注册路线图",
+    description: "说明什么时候才需要注册流量、支付、收款和 AI API 平台。",
+  },
+  "post-deploy-checklist": {
+    file: "post-deploy-checklist.md",
+    title: "上线后检查清单",
+    description: "每次 Vercel 部署后的线上 SEO 和页面检查流程。",
+  },
 } as const;
 
 export function generateStaticParams() {
@@ -16,19 +38,23 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
+  const doc = docs[slug as keyof typeof docs];
+  if (!doc) return {};
   return {
-    title: slugToTitle(slug),
-    description: `${slugToTitle(slug)} 文档。`,
+    title: doc.title,
+    description: doc.description,
     robots: { index: false, follow: true },
   };
 }
 
 export default async function DocPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const fileName = docs[slug as keyof typeof docs];
-  if (!fileName) notFound();
-  const file = path.join(process.cwd(), "docs", fileName);
+  const doc = docs[slug as keyof typeof docs];
+  if (!doc) notFound();
+
+  const file = path.join(process.cwd(), "docs", doc.file);
   if (!fs.existsSync(file)) notFound();
+
   const content = fs.readFileSync(file, "utf8");
 
   return (
@@ -36,11 +62,4 @@ export default async function DocPage({ params }: { params: Promise<{ slug: stri
       <article className="prose prose-lg max-w-none" dangerouslySetInnerHTML={{ __html: renderMarkdown(content) }} />
     </main>
   );
-}
-
-function slugToTitle(slug: string) {
-  if (slug === "publishing-workflow") return "内容发布工作流";
-  if (slug === "automation-plan") return "安全自动化计划";
-  if (slug === "monetization-and-payment-plan") return "收款与变现路线";
-  return "项目文档";
 }

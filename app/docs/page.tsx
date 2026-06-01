@@ -22,6 +22,16 @@ const docs = [
     href: "/docs/monetization-and-payment-plan",
   },
   {
+    title: "平台注册路线图",
+    description: "说明什么时候才需要注册 Search Console、统计、支付、收款和 AI API 平台。",
+    href: "/docs/platform-registration-roadmap",
+  },
+  {
+    title: "上线后检查清单",
+    description: "说明每次 Vercel 部署后如何检查页面、sitemap、robots、canonical 和草稿泄露。",
+    href: "/docs/post-deploy-checklist",
+  },
+  {
     title: "变现路线页面",
     description: "面向站内维护的收款平台选择表，说明不同阶段什么时候接什么平台。",
     href: "/monetization",

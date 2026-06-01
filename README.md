@@ -210,6 +210,8 @@ draft -> content:check -> 人工审核 -> review -> publish --confirm
 当前阶段可以先不部署 Vercel，先把 GitHub 作为代码、内容和审核记录中心。
 
 - GitHub 维护说明：`docs/github-workflow.md`
+- 平台注册路线图：`docs/platform-registration-roadmap.md`
+- 上线后检查清单：`docs/post-deploy-checklist.md`
 - PR 模板：`.github/PULL_REQUEST_TEMPLATE.md`
 - 内容任务 Issue 模板：`.github/ISSUE_TEMPLATE/content-task.yml`
 - 工具改进 Issue 模板：`.github/ISSUE_TEMPLATE/tool-bug.yml`

@@ -33,4 +33,19 @@
 npm run project:status
 npm run seo:check
 npm run smoke:web
+npm run live:check -- --url=https://ai-jiedan-lab.vercel.app
 ```
+
+## 6. 平台注册顺序
+
+当前不需要继续注册新平台。已经有 GitHub 和 Vercel 就够推进。
+
+后续触发条件：
+
+- 有 5 篇以上人工审核公开文章：注册 Google Search Console。
+- 有稳定访问：开启 Vercel Web Analytics 或 Google Analytics。
+- 有模板下载反馈：注册 Gumroad 或 Lemon Squeezy。
+- 有人工服务咨询：再考虑 Payoneer、Wise、PayPal。
+- 工具规则模板不够用：再考虑 OpenAI、Anthropic 或 Vercel AI Gateway。
+
+详细说明见 `docs/platform-registration-roadmap.md`。
