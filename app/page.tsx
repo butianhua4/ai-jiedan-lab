@@ -1,10 +1,25 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { Card } from "@/components/Card";
 import { ServiceCTA } from "@/components/ServiceCTA";
 import { getAllPosts } from "@/lib/blog";
+import { site } from "@/data/site";
 import { templates } from "@/data/templates";
 import { tools } from "@/data/tools";
+
+export const metadata: Metadata = {
+  title: site.name,
+  description: site.description,
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: site.name,
+    description: site.description,
+    url: "/",
+    siteName: site.name,
+    type: "website",
+  },
+};
 
 export default function Home() {
   const posts = getAllPosts(false).slice(0, 6);

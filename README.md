@@ -25,6 +25,16 @@ npm.cmd run dev
 npm.cmd run build
 ```
 
+## 上线后检查
+
+部署到 Vercel 后，使用正式域名检查公开页面、sitemap、robots 和草稿泄露：
+
+```bash
+npm run live:check -- --url=https://ai-jiedan-lab.vercel.app
+```
+
+这个检查只读线上页面，不会发布文章，也不会调用真实 AI API。
+
 ## 内容自动化
 
 500 篇选题计划在 `content/content-plan-500.ts`。选题分为 20 个 batch，每个 batch 最多 25 篇。文章生成后默认：

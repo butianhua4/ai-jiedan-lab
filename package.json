@@ -14,7 +14,8 @@
     "content:dashboard": "next dev",
     "project:status": "tsx scripts/project-status.ts",
     "seo:check": "tsx scripts/seo-safety-check.ts",
-    "smoke:web": "tsx scripts/web-smoke-check.ts"
+    "smoke:web": "tsx scripts/web-smoke-check.ts",
+    "live:check": "tsx scripts/live-site-check.ts"
   },
   "dependencies": {
     "fast-glob": "^3.3.3",
