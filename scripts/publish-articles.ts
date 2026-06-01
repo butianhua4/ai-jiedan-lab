@@ -43,7 +43,7 @@ async function main() {
     article.data.status = "published";
     article.data.noindex = false;
     article.data.qualityScore = result.qualityScore;
-    article.data.updatedAt = new Date().toISOString().slice(0, 10);
+    article.data.updatedAt = todayInShanghai();
     writeArticle(article.file, article.data, article.content);
     log.push({ time: new Date().toISOString(), action: "publish", slug: article.data.slug, score: result.qualityScore });
     published += 1;
@@ -53,3 +53,14 @@ async function main() {
 }
 
 void main();
+
+function todayInShanghai() {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Shanghai",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(new Date());
+  const value = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return `${value.year}-${value.month}-${value.day}`;
+}
