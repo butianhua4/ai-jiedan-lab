@@ -1,6 +1,5 @@
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
-import { Card } from "@/components/Card";
-import { tools } from "@/data/tools";
+import { ToolsDirectoryClient } from "@/components/ToolsDirectoryClient";
 
 export const metadata = {
   title: "AI 工具导航",
@@ -8,24 +7,16 @@ export const metadata = {
 };
 
 export default function ToolsPage() {
-  const categories = Array.from(new Set(tools.map((tool) => tool.category)));
   return (
-    <main className="mx-auto max-w-6xl px-4 py-12">
-      <h1 className="text-3xl font-bold">AI 工具导航</h1>
-      <p className="mt-3 max-w-3xl text-gray-600">工具推荐用于帮助新手建立工作流，不代表一定适合你，也不保证收入结果。</p>
-      <div className="mt-6"><AffiliateDisclosure /></div>
-      <div className="mt-8 space-y-10">
-        {categories.map((category) => (
-          <section key={category}>
-            <h2 className="text-2xl font-bold">{category}</h2>
-            <div className="mt-4 grid gap-4 md:grid-cols-3">
-              {tools.filter((tool) => tool.category === category).map((tool) => (
-                <Card key={tool.slug} title={tool.name} description={tool.description} href={`/tools/${tool.slug}`} />
-              ))}
-            </div>
-          </section>
-        ))}
-      </div>
+    <main className="mx-auto w-full max-w-6xl overflow-hidden px-4 py-12">
+      <section className="min-w-0 max-w-full overflow-hidden rounded-lg border border-gray-200 bg-gradient-to-b from-sky-50 to-white p-6 shadow-sm md:p-8">
+        <h1 className="break-words text-3xl font-bold text-ink">AI 工具导航</h1>
+        <p className="mt-3 max-w-3xl break-words text-gray-600 [overflow-wrap:anywhere]">
+          按用途筛选 Codex、Claude Code、ChatGPT、Upwork、Vercel、收款和 SEO 工具。工具推荐只用于建立工作流，不代表一定适合你，也不保证收入结果。
+        </p>
+        <div className="mt-6"><AffiliateDisclosure /></div>
+      </section>
+      <ToolsDirectoryClient />
     </main>
   );
 }

@@ -14,10 +14,10 @@ const nav = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-20 border-b bg-white/90 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-4">
+    <header className="sticky top-0 z-20 w-full max-w-full overflow-hidden border-b bg-white/90 backdrop-blur">
+      <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-4">
         <Link href="/" className="text-lg font-bold text-ink">AI 接单实验室</Link>
-        <nav className="flex flex-wrap gap-3 text-sm text-gray-600">
+        <nav className="flex min-w-0 flex-wrap gap-3 text-sm text-gray-600">
           {nav.map(([href, label]) => (
             <Link key={href} href={href} className="hover:text-brand">{label}</Link>
           ))}

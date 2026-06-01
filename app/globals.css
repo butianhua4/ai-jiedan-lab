@@ -1,4 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body{color:#111827;background:#fff}.prose h1,.prose h2,.prose h3{color:#111827}
