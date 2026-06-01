@@ -1,0 +1,1 @@
+"use client"; import { useState } from "react"; export function CopyButton({ text }: { text: string }) { const [copied, setCopied] = useState(false); return <button className="rounded-md bg-ink px-3 py-2 text-sm text-white" onClick={async () => { await navigator.clipboard.writeText(text); setCopied(true); }}>{copied ? "已复制" : "复制"}</button> }

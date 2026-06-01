@@ -1,0 +1,1 @@
+import { NextResponse } from "next/server"; import { explainError } from "@/lib/errorRules"; export async function POST(request:Request){const body=await request.json(); return NextResponse.json(explainError(body.error||""))}

@@ -1,0 +1,42 @@
+{
+  "name": "ai-jiedan-lab",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "generate:drafts": "tsx scripts/generate-drafts.ts",
+    "content:check": "tsx scripts/content-quality-check.ts",
+    "mark:review": "tsx scripts/mark-review.ts",
+    "publish:articles": "tsx scripts/publish-articles.ts",
+    "content:dashboard": "next dev",
+    "project:status": "tsx scripts/project-status.ts",
+    "seo:check": "tsx scripts/seo-safety-check.ts",
+    "smoke:web": "tsx scripts/web-smoke-check.ts"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.3",
+    "gray-matter": "^4.0.3",
+    "next": "^16.2.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "reading-time": "^1.5.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.28.0",
+    "eslint-config-next": "^16.2.6",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.20.4",
+    "typescript": "^5.8.3"
+  }
+}

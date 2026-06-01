@@ -1,0 +1,1 @@
+import { NextResponse } from "next/server"; import { generateProposal } from "@/lib/proposal"; export async function POST(request:Request){const body=await request.json(); return NextResponse.json(generateProposal(body.job||""))}
