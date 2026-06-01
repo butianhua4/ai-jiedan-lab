@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Project Notes
+    url: https://github.com/butianhua4/ai-jiedan-lab
+    about: Use repository issues only for planned site, content, and tooling work.

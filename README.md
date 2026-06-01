@@ -194,3 +194,14 @@ draft -> content:check -> 人工审核 -> review -> publish --confirm
 - Turbopack workspace root 推断错误：已在 `next.config.ts` 设置 `turbopack.root`。
 - 文章不进 sitemap：检查 `status` 是否为 `published` 且 `noindex` 是否为 `false`。
 - 发布失败：先运行 `npm run content:check -- --file=...`。
+
+## GitHub 工作流
+
+当前阶段可以先不部署 Vercel，先把 GitHub 作为代码、内容和审核记录中心。
+
+- GitHub 维护说明：`docs/github-workflow.md`
+- PR 模板：`.github/PULL_REQUEST_TEMPLATE.md`
+- 内容任务 Issue 模板：`.github/ISSUE_TEMPLATE/content-task.yml`
+- 工具改进 Issue 模板：`.github/ISSUE_TEMPLATE/tool-bug.yml`
+
+推荐顺序是：生成少量 draft -> 质量检查 -> 人工审核 -> review -> 少量发布 -> build -> commit -> push -> 等 GitHub Actions 通过。

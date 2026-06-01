@@ -1,0 +1,56 @@
+name: Content task
+description: Plan one article, checklist, comparison, or template page.
+title: "[Content] "
+labels:
+  - content
+body:
+  - type: input
+    id: keyword
+    attributes:
+      label: Primary keyword
+      description: The specific search query this page should answer.
+      placeholder: "Codex npm install 报错怎么办"
+    validations:
+      required: true
+  - type: dropdown
+    id: content_type
+    attributes:
+      label: Content type
+      options:
+        - tutorial
+        - checklist
+        - comparison
+        - template
+        - troubleshooting
+        - tool-guide
+        - pricing-guide
+        - roadmap
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: What concrete beginner problem should this page solve?
+    validations:
+      required: true
+  - type: textarea
+    id: outline
+    attributes:
+      label: Draft outline
+      description: Include suitable readers, unsuitable readers, steps, risks, CTA, and internal links.
+    validations:
+      required: true
+  - type: checkboxes
+    id: quality
+    attributes:
+      label: Quality rules
+      options:
+        - label: This will be original content, not copied or spun.
+          required: true
+        - label: The page will include actionable steps for beginners.
+          required: true
+        - label: The page will include risk warnings and no income guarantee.
+          required: true
+        - label: The page will stay draft/noindex until human review.
+          required: true
