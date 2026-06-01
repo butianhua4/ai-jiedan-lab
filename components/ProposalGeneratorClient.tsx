@@ -34,7 +34,7 @@ export function ProposalGeneratorClient() {
     "英文 Proposal：",
     result.proposal,
     "",
-    "投标前提醒：请按真实能力修改，不要承诺无法完成的内容，不要绕过平台规则。",
+    "投标前提醒：请按真实能力修改，不要承诺无法完成的内容，也不要规避平台规则。",
   ].join("\n"), [result]);
 
   return (

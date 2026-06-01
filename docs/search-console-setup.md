@@ -12,7 +12,7 @@
 2. sitemap 不包含 draft 或 review 文章。
 3. robots.txt 能访问并指向 sitemap。
 4. 首页、博客页、工具页和模板页可以正常打开。
-5. 内容没有承诺保证赚钱，没有鼓励平台违规。
+5. 内容没有承诺收入结果，没有鼓励平台违规。
 
 当前项目已经满足前 4 项，后续每次发布文章都继续按人工审核清单检查第 5 项。
 
@@ -54,7 +54,15 @@ Vercel 项目最简单的验证方式通常是 HTML 标签：
 4. 推送 GitHub，等待 Vercel 部署。
 5. 回到 Search Console 点击 Verify。
 
-第一版我们可以先手动加到 `app/layout.tsx` 的 metadata verification 位置。不要把 Google 账号密码、API Key 或私人验证码写进公开文档。
+项目已经预留 `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` 环境变量。把 HTML tag 的 `content` 值填进去并重新部署后，Next.js 会自动输出 Google 验证标签。不要把 Google 账号密码、API Key 或私人验证码写进公开文档。
+
+Vercel 环境变量建议这样填：
+
+```text
+Key: NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+Value: Google Search Console HTML tag 的 content 值
+Environment: Production and Preview
+```
 
 ## 提交 sitemap
 

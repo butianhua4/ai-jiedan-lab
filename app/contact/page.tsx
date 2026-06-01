@@ -20,7 +20,7 @@ export default function ContactPage() {
         </div>
         <div className="rounded-lg border bg-white p-5 shadow-sm">
           <h2 className="text-lg font-semibold">暂不适合</h2>
-          <p className="mt-2 text-sm leading-6 text-gray-600">保证接单、代写虚假案例、站外绕过平台收款、自动群发 Proposal。</p>
+          <p className="mt-2 text-sm leading-6 text-gray-600">承诺接单结果、代写虚假案例、引导站外收款、批量发送未经审核的 Proposal。</p>
         </div>
         <div className="rounded-lg border bg-white p-5 shadow-sm">
           <h2 className="text-lg font-semibold">先准备材料</h2>

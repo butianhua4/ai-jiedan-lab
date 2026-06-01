@@ -63,7 +63,7 @@ git push
 - 新文章默认 `noindex: true`
 - 发布文章必须先人工审核
 - 不复制、不洗稿、不整篇翻译
-- 不承诺保证赚钱
+- 不承诺收入结果
 - 不鼓励绕过 Upwork、Fiverr、GitHub、Vercel 等平台规则
 
 ## 以后接 Vercel

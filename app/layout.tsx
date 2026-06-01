@@ -1,1 +1,37 @@
-import type { Metadata } from "next"; import "./globals.css"; import { Header } from "@/components/Header"; import { Footer } from "@/components/Footer"; import { site } from "@/data/site"; import { JsonLd } from "@/components/JsonLd"; export const metadata: Metadata = { metadataBase: new URL(site.url), title: { default: site.name, template: "%s | AI 接单实验室" }, description: site.description }; export default function RootLayout({ children }: { children: React.ReactNode }) { return <html lang="zh-CN"><body><JsonLd data={{ "@context": "https://schema.org", "@type": "WebSite", name: site.name, url: site.url }} /><Header />{children}<Footer /></body></html> }
+import type { Metadata } from "next";
+import "./globals.css";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+import { JsonLd } from "@/components/JsonLd";
+import { site } from "@/data/site";
+
+const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+
+export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
+  title: {
+    default: site.name,
+    template: "%s | AI 接单实验室",
+  },
+  description: site.description,
+  ...(googleSiteVerification
+    ? {
+        verification: {
+          google: googleSiteVerification,
+        },
+      }
+    : {}),
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="zh-CN">
+      <body>
+        <JsonLd data={{ "@context": "https://schema.org", "@type": "WebSite", name: site.name, url: site.url }} />
+        <Header />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
+}

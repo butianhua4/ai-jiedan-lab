@@ -46,7 +46,7 @@ export default function Home() {
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-4 px-4 py-10 md:grid-cols-4">
-        {["不承诺暴富", "不鼓励自动刷单", "不做搬运洗稿", "只做真实交付"].map((item) => (
+        {["不承诺暴富", "不鼓励违规操作", "不做搬运洗稿", "只做真实交付"].map((item) => (
           <div key={item} className="rounded-lg border bg-white p-4 text-center font-medium shadow-sm">{item}</div>
         ))}
       </section>

@@ -37,7 +37,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
         </div>
         <div className="rounded-lg border bg-white p-5">
           <h2 className="text-xl font-semibold">不适合谁</h2>
-          <p className="mt-2 text-sm leading-6 text-gray-600">不适合想绕过平台规则、未经审核直接交付或用工具承诺保证收入的人。</p>
+          <p className="mt-2 text-sm leading-6 text-gray-600">不适合想规避平台规则、未经审核直接交付或用工具承诺收入结果的人。</p>
         </div>
       </section>
 

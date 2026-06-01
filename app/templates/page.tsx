@@ -17,7 +17,7 @@ export default function TemplatesPage() {
     <main className="mx-auto max-w-6xl px-4 py-12">
       <h1 className="text-3xl font-bold">模板下载</h1>
       <p className="mt-3 max-w-3xl text-gray-600">
-        第一版先提供免费模板和付费模板占位。所有模板都强调真实沟通、谨慎报价和人工审核，不用于自动群发或虚假包装。
+        第一版先提供免费模板和付费模板占位。所有模板都强调真实沟通、谨慎报价和人工审核，不用于批量发送未经审核的内容或虚假包装。
       </p>
 
       <section className="mt-8 grid gap-4 md:grid-cols-3">
@@ -70,7 +70,7 @@ export default function TemplatesPage() {
         <h2 className="text-xl font-semibold">使用提醒</h2>
         <ul className="mt-4 grid gap-3 text-sm leading-6 text-gray-700 md:grid-cols-2">
           <li className="rounded-md bg-gray-50 p-3">模板只能帮你整理结构，不能替你判断项目是否真的能做。</li>
-          <li className="rounded-md bg-gray-50 p-3">不要把模板用于自动群发 Proposal，也不要包装虚假经历。</li>
+          <li className="rounded-md bg-gray-50 p-3">不要把模板用于批量发送未经审核的 Proposal，也不要包装虚假经历。</li>
           <li className="rounded-md bg-gray-50 p-3">客户需求不清时，先追问，不要急着报价和承诺截止时间。</li>
           <li className="rounded-md bg-gray-50 p-3">涉及支付、数据库、安全权限的项目，新手不要独立硬接。</li>
         </ul>

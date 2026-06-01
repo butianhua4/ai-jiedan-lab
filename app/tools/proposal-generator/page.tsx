@@ -19,7 +19,7 @@ export default function ProposalPage() {
       <h1 className="text-3xl font-bold">Upwork Proposal 生成器</h1>
       <p className="mt-3 max-w-3xl text-gray-600">第一版使用规则模板，不调用真实 AI API。生成内容只适合做草稿，投标前必须按真实能力修改。</p>
       <ProposalGeneratorClient />
-      <p className="mt-8 rounded-lg border bg-white p-4 text-sm text-gray-600">免责声明：生成内容仅供参考，投标前请根据真实能力修改，不要承诺无法完成的内容，不要绕过平台规则。</p>
+      <p className="mt-8 rounded-lg border bg-white p-4 text-sm text-gray-600">免责声明：生成内容仅供参考，投标前请根据真实能力修改，不要承诺无法完成的内容，也不要规避平台规则。</p>
       <div className="mt-8"><ToolCTA /></div>
     </main>
   );
