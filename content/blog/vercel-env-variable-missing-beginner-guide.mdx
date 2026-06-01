@@ -1,0 +1,138 @@
+---
+title: Vercel 提示环境变量缺失怎么办：新手部署检查流程
+slug: vercel-env-variable-missing-beginner-guide
+description: >-
+  Vercel 部署 Next.js 项目时经常因为环境变量缺失失败。本文解释什么是环境变量、如何看日志、如何使用
+  .env.example、什么时候不能让客户直接发真实密钥。
+date: '2026-06-02'
+updatedAt: '2026-06-02'
+category: 部署教程
+tags:
+  - Vercel
+  - 环境变量
+  - Next.js
+  - 部署失败
+author: AI 接单实验室
+status: published
+contentType: troubleshooting
+difficulty: beginner
+targetReader: 正在把 Next.js 或 AI 工具项目部署到 Vercel，但看不懂环境变量报错的新手
+searchIntent: informational
+primaryKeyword: Vercel 环境变量缺失怎么办
+secondaryKeywords:
+  - Vercel deploy environment variable missing
+  - Next.js 环境变量
+  - Vercel 部署失败
+sourceNotes: 原创部署检查流程，结合本站 Next.js 项目实践整理；不包含任何真实 API Key。
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - Vercel
+  templateCTA: 下载 Vercel 部署检查表
+  serviceCTA: 联系我协助配置 GitHub 和 Vercel
+  adSlots:
+    - article-bottom
+qualityScore: 100
+publishBatch: 6
+canonical: >-
+  https://ai-jiedan-lab.vercel.app/blog/vercel-env-variable-missing-beginner-guide
+noindex: false
+---
+# Vercel 提示环境变量缺失怎么办：新手部署检查流程
+
+Vercel 部署失败时，如果日志里出现 `missing environment variable`、`process.env`、`API key is required`、`NEXT_PUBLIC`、`DATABASE_URL` 之类的内容，通常说明项目需要某些配置值，但这些值没有在 Vercel 后台设置。这个问题很常见，不等于项目不能部署，也不等于你必须马上找客户要所有账号密码。正确做法是先确认缺少什么变量、变量用途是什么、是否应该公开、应该放在哪个环境里。
+
+本文给新手一套安全检查流程。它适合你用 Codex、Claude Code 或 ChatGPT 辅助部署小网站、工具页、表单项目、内容站时使用。它不承诺部署后一定有流量或收入，也不鼓励你索要不必要的敏感信息。部署是技术交付的一部分，安全和记录同样重要。
+
+## 适合谁
+
+适合正在学习 Vercel、Next.js、GitHub 自动部署的新手。你可能已经把代码推到 GitHub，也在 Vercel 创建了项目，但部署日志显示失败。你不知道 `.env`、`.env.local`、`.env.example`、Production、Preview、Development 有什么区别，也担心自己填错导致网站打不开。
+
+也适合准备接小单的人。很多 Upwork 或 Fiverr 小项目看起来只是“帮我部署一下”，实际可能需要域名、数据库、邮件服务、支付服务、AI API Key、OAuth 回调地址等配置。你需要先判断范围，而不是把“部署”当成一个按钮。
+
+## 不适合谁
+
+如果你想让客户把所有真实密钥直接发给你，或者想把 API Key 写死在代码里，这篇文章不适合你。这样做不安全，也不专业。环境变量的目的就是把敏感配置和代码分开。你应该尽量使用临时权限、占位示例、客户自己在后台填写，或明确记录谁负责哪一步。
+
+如果项目涉及生产数据库、支付、用户隐私、公司内部系统，而你没有相关经验，不建议单独承诺完整部署。你可以先承接“部署检查”和“问题定位”，把风险写清楚，再决定是否继续。
+
+## 这个问题是什么
+
+环境变量是运行项目时需要读取的配置。比如站点地址可以叫 `NEXT_PUBLIC_SITE_URL`，邮件服务可能需要 `RESEND_API_KEY`，数据库可能需要 `DATABASE_URL`，AI 功能可能需要 `OPENAI_API_KEY`。本地开发时，这些值通常放在 `.env.local`，但这个文件不应该上传到 GitHub。部署到 Vercel 时，需要在 Vercel 的 Environment Variables 页面单独添加。
+
+当代码里读取了某个变量，但 Vercel 没有这个值，构建或运行就可能失败。还有一种情况是变量名字填错，比如代码需要 `NEXT_PUBLIC_SITE_URL`，你填成了 `SITE_URL`。名字差一个字符也不行。
+
+## 为什么新手会遇到
+
+第一，新手常把本地环境和线上环境混在一起。本地能跑，不代表 Vercel 已经有同样的配置。第二，很多教程只说“复制 .env”，但没有解释哪些变量可以公开、哪些不能公开。第三，AI 生成项目时可能自动加了某些变量，例如数据库、登录、邮件或 AI API，但你还没有真的接这些服务。
+
+第四，客户项目经常缺少 `.env.example`。没有示例文件时，你只能从代码里找 `process.env` 的引用。第五，新手容易被红色日志吓到，直接到处改代码，反而引入新问题。先读日志，再决定动作。
+
+## 先判断你属于哪种情况
+
+第一种情况：变量是公开配置，比如 `NEXT_PUBLIC_SITE_URL`。它通常可以写成你的正式域名，例如 `https://ai-jiedan-lab.vercel.app`。第二种情况：变量是密钥，比如 `OPENAI_API_KEY`、`STRIPE_SECRET_KEY`、`RESEND_API_KEY`。这类值不能出现在代码仓库，也不能截图公开。第三种情况：变量属于还没接入的功能，例如你暂时没有邮件订阅后端，那么可以先让代码走占位逻辑，或在 README 写清楚以后再接。
+
+你还要判断变量影响的是构建阶段还是运行阶段。如果构建时就失败，通常需要先补齐变量或修改构建逻辑。如果只是某个页面功能运行时报错，可以让网站先上线静态部分，再把功能标记为“即将上线”。
+
+## 具体步骤
+
+1. 打开 Vercel 部署日志，搜索 `env`、`process.env`、`missing`、`required`、`undefined`。
+2. 记录缺少的变量名，不要只记错误截图。
+3. 在项目里搜索变量：
+
+```bash
+rg "process.env|NEXT_PUBLIC|DATABASE_URL|API_KEY"
+```
+
+4. 查看是否有 `.env.example`。如果没有，可以自己整理一份，但不要写真实密钥。
+5. 判断变量类型。以 `NEXT_PUBLIC_` 开头的变量会暴露给浏览器，不能放秘密值。
+6. 在 Vercel 项目里进入 Environment Variables，选择 Production 和 Preview，添加变量名和值。
+7. 保存后重新部署。只改环境变量通常需要 redeploy 才会生效。
+8. 部署成功后检查网站首页、关键工具页、`/sitemap.xml` 和 `/robots.txt`。
+
+## 可以复制的客户沟通模板
+
+```text
+The deployment is blocked by missing environment variables. I can identify the required variable names, but for security reasons you should not send production secrets in plain text unless necessary.
+
+Please confirm:
+1. Which services should be active in production?
+2. Can you add the required keys directly in Vercel, or should I guide you step by step?
+3. Is there a .env.example file for this project?
+```
+
+这段话适合部署小单。它既说明你在处理问题，也保护了客户的敏感信息。
+
+## 常见错误
+
+第一个错误是把 `.env.local` 上传到 GitHub。这个文件可能包含真实密钥，上传后即使删除也可能已经暴露。第二个错误是把秘密值写成 `NEXT_PUBLIC_`。这个前缀代表浏览器可见，只适合站点地址、公开 ID 等非敏感值。第三个错误是添加变量后忘记 redeploy。Vercel 不一定会自动让旧部署读取新变量。
+
+第四个错误是变量名大小写不一致。`OPENAI_API_KEY` 和 `OpenAI_API_Key` 不是同一个变量。第五个错误是没有区分 Production 和 Preview。你在 Preview 填了变量，Production 可能仍然缺失。
+
+## 风险提醒
+
+不要让客户把真实 API Key 发到 Upwork 聊天、邮件截图或公开文档里。更安全的方式是让客户在 Vercel 后台自己添加，或者创建权限受限、可随时撤销的临时密钥。你也不要把密钥写进 README、文章、GitHub issue、公开截图。
+
+如果客户要求你绕过平台规则、站外付款或共享高权限账号，要谨慎处理。技术配置不能成为平台违规的借口。报价时要写清楚：你负责部署配置检查，不负责未授权的账号操作，也不保证上线后一定获得流量或收入。
+
+## 适合继续看的相关文章
+
+你可以继续阅读 [Vercel 部署失败常见原因和解决步骤](/blog/vercel-deploy-error-guide)、[GitHub 推送失败怎么解决](/blog/github-push-error-guide)，也可以用 [Codex 报错解释器](/tools/error-explainer) 分析部署日志。
+
+## 推荐工具或模板
+
+推荐使用 [Vercel](/tools/vercel) 做静态站和 Next.js 部署，用 [GitHub](/tools/github) 管理版本。模板页里可以下载 Vercel 部署检查表、GitHub 常用命令表和项目交付检查清单。
+
+## 总结
+
+Vercel 环境变量缺失不是神秘问题。你要做的是读日志、找变量名、判断是否敏感、在正确环境添加、重新部署并检查关键页面。新手不要把部署当成单纯按钮操作，真正的价值在于把配置、风险和交付记录讲清楚。
+
+免责声明：本文仅供学习参考，不构成职业、财务或法律建议，不保证任何部署、接单或收入结果。所有 AI 生成内容都需要人工审核。使用 Vercel、GitHub、Upwork、Fiverr 等平台时，请遵守对应平台规则。
