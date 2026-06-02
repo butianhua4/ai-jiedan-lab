@@ -71,6 +71,20 @@ Value: Google Search Console HTML tag 的 content 值
 Environment: Production and Preview
 ```
 
+保存环境变量并重新部署后，可以运行：
+
+```bash
+npm run search-console:check -- --url=https://ai-jiedan-lab.vercel.app
+```
+
+如果还没有写入环境变量，也可以临时把验证码作为参数传入：
+
+```bash
+npm run search-console:check -- --url=https://ai-jiedan-lab.vercel.app --token=你的验证码
+```
+
+检查通过后，再回到 Search Console 点击 Verify。
+
 ## 提交 sitemap
 
 验证成功后，在 Sitemaps 页面提交：

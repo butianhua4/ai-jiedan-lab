@@ -40,6 +40,18 @@ npm run searchability:check -- --url=https://ai-jiedan-lab.vercel.app
 
 当前站点已通过基础可搜索度检查，但 Google 是否收录还需要提交 Google Search Console 后观察。相关记录见 `docs/seo-searchability-audit.md` 和 `docs/search-console-setup.md`。
 
+拿到 Google Search Console HTML tag 的 `content` 验证码后，可以先检查验证准备度：
+
+```bash
+npm run search-console:check -- --url=https://ai-jiedan-lab.vercel.app --token=你的验证码
+```
+
+如果已经把验证码写入 Vercel 环境变量并重新部署，也可以直接运行：
+
+```bash
+npm run search-console:check -- --url=https://ai-jiedan-lab.vercel.app
+```
+
 ## 内容自动化
 
 500 篇选题计划在 `content/content-plan-500.ts`。选题分为 20 个 batch，每个 batch 最多 25 篇。文章生成后默认：
