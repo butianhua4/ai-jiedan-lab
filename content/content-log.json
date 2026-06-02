@@ -2872,5 +2872,35 @@
     "action": "generate-draft",
     "slug": "portfolio-page-copy-template-checklist",
     "batch": 19
+  },
+  {
+    "time": "2026-06-02T21:09:31.005Z",
+    "action": "generate-draft",
+    "slug": "english-client-reply-template-honest",
+    "batch": 19
+  },
+  {
+    "time": "2026-06-02T21:09:31.006Z",
+    "action": "generate-draft",
+    "slug": "english-client-reply-template-honest-checklist",
+    "batch": 19
+  },
+  {
+    "time": "2026-06-02T21:09:31.006Z",
+    "action": "generate-draft",
+    "slug": "project-retrospective-template",
+    "batch": 19
+  },
+  {
+    "time": "2026-06-02T21:09:31.007Z",
+    "action": "generate-draft",
+    "slug": "project-retrospective-template-checklist",
+    "batch": 19
+  },
+  {
+    "time": "2026-06-02T21:09:31.007Z",
+    "action": "generate-draft",
+    "slug": "bugfix-delivery-note-template",
+    "batch": 19
   }
 ]
