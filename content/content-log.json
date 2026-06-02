@@ -2338,5 +2338,35 @@
     "action": "generate-draft",
     "slug": "gumroad-template-selling-prep-checklist",
     "batch": 16
+  },
+  {
+    "time": "2026-06-02T19:56:07.358Z",
+    "action": "generate-draft",
+    "slug": "lemon-squeezy-digital-products",
+    "batch": 16
+  },
+  {
+    "time": "2026-06-02T19:56:07.358Z",
+    "action": "generate-draft",
+    "slug": "lemon-squeezy-digital-products-checklist",
+    "batch": 16
+  },
+  {
+    "time": "2026-06-02T19:56:07.359Z",
+    "action": "generate-draft",
+    "slug": "paddle-vs-stripe-beginner",
+    "batch": 16
+  },
+  {
+    "time": "2026-06-02T19:56:07.359Z",
+    "action": "generate-draft",
+    "slug": "paddle-vs-stripe-beginner-checklist",
+    "batch": 16
+  },
+  {
+    "time": "2026-06-02T19:56:07.360Z",
+    "action": "generate-draft",
+    "slug": "bank-card-payment-platform-risk",
+    "batch": 16
   }
 ]
