@@ -628,5 +628,35 @@
     "action": "generate-draft",
     "slug": "claude-code-bug-prompt-mistakes",
     "batch": 4
+  },
+  {
+    "time": "2026-06-02T16:06:22.269Z",
+    "action": "generate-draft",
+    "slug": "claude-code-bug-prompt-freelance-scope",
+    "batch": 4
+  },
+  {
+    "time": "2026-06-02T16:06:22.270Z",
+    "action": "generate-draft",
+    "slug": "claude-code-small-project-tasks",
+    "batch": 4
+  },
+  {
+    "time": "2026-06-02T16:06:22.270Z",
+    "action": "generate-draft",
+    "slug": "claude-code-small-project-tasks-checklist",
+    "batch": 4
+  },
+  {
+    "time": "2026-06-02T16:06:22.270Z",
+    "action": "generate-draft",
+    "slug": "claude-code-small-project-tasks-mistakes",
+    "batch": 4
+  },
+  {
+    "time": "2026-06-02T16:06:22.271Z",
+    "action": "generate-draft",
+    "slug": "claude-code-small-project-tasks-freelance-scope",
+    "batch": 4
   }
 ]
