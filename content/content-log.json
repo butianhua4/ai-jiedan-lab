@@ -2278,5 +2278,35 @@
     "action": "generate-draft",
     "slug": "package-lock-conflict-fix-freelance-scope",
     "batch": 15
+  },
+  {
+    "time": "2026-06-02T19:48:09.838Z",
+    "action": "generate-draft",
+    "slug": "payoneer-freelancer-beginner",
+    "batch": 15
+  },
+  {
+    "time": "2026-06-02T19:48:09.838Z",
+    "action": "generate-draft",
+    "slug": "payoneer-freelancer-beginner-checklist",
+    "batch": 15
+  },
+  {
+    "time": "2026-06-02T19:48:09.839Z",
+    "action": "generate-draft",
+    "slug": "wise-freelancer-use-cases",
+    "batch": 15
+  },
+  {
+    "time": "2026-06-02T19:48:09.839Z",
+    "action": "generate-draft",
+    "slug": "wise-freelancer-use-cases-checklist",
+    "batch": 15
+  },
+  {
+    "time": "2026-06-02T19:48:09.840Z",
+    "action": "generate-draft",
+    "slug": "paypal-freelancer-limits",
+    "batch": 15
   }
 ]
