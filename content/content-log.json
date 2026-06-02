@@ -304,5 +304,35 @@
     "action": "generate-draft",
     "slug": "codex-edit-existing-ui",
     "batch": 2
+  },
+  {
+    "time": "2026-06-02T15:23:25.497Z",
+    "action": "generate-draft",
+    "slug": "codex-edit-existing-ui-checklist",
+    "batch": 2
+  },
+  {
+    "time": "2026-06-02T15:23:25.497Z",
+    "action": "generate-draft",
+    "slug": "codex-edit-existing-ui-mistakes",
+    "batch": 2
+  },
+  {
+    "time": "2026-06-02T15:23:25.498Z",
+    "action": "generate-draft",
+    "slug": "codex-edit-existing-ui-freelance-scope",
+    "batch": 2
+  },
+  {
+    "time": "2026-06-02T15:23:25.499Z",
+    "action": "generate-draft",
+    "slug": "codex-bugfix-rollback-record",
+    "batch": 2
+  },
+  {
+    "time": "2026-06-02T15:23:25.500Z",
+    "action": "generate-draft",
+    "slug": "codex-bugfix-rollback-record-checklist",
+    "batch": 2
   }
 ]
