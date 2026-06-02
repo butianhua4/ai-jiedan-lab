@@ -838,5 +838,35 @@
     "action": "generate-draft",
     "slug": "claude-code-github-file-scope-checklist",
     "batch": 6
+  },
+  {
+    "time": "2026-06-02T16:32:35.261Z",
+    "action": "generate-draft",
+    "slug": "claude-code-github-file-scope-mistakes",
+    "batch": 6
+  },
+  {
+    "time": "2026-06-02T16:32:35.262Z",
+    "action": "generate-draft",
+    "slug": "claude-code-github-file-scope-freelance-scope",
+    "batch": 6
+  },
+  {
+    "time": "2026-06-02T16:32:35.263Z",
+    "action": "generate-draft",
+    "slug": "claude-code-client-questions",
+    "batch": 6
+  },
+  {
+    "time": "2026-06-02T16:32:35.263Z",
+    "action": "generate-draft",
+    "slug": "claude-code-client-questions-checklist",
+    "batch": 6
+  },
+  {
+    "time": "2026-06-02T16:32:35.264Z",
+    "action": "generate-draft",
+    "slug": "claude-code-client-questions-mistakes",
+    "batch": 6
   }
 ]
