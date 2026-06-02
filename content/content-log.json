@@ -1138,5 +1138,35 @@
     "action": "generate-draft",
     "slug": "upwork-low-budget-urgent-risk",
     "batch": 8
+  },
+  {
+    "time": "2026-06-02T17:20:42.862Z",
+    "action": "generate-draft",
+    "slug": "upwork-low-budget-urgent-risk-checklist",
+    "batch": 8
+  },
+  {
+    "time": "2026-06-02T17:20:42.862Z",
+    "action": "generate-draft",
+    "slug": "upwork-low-budget-urgent-risk-mistakes",
+    "batch": 8
+  },
+  {
+    "time": "2026-06-02T17:20:42.863Z",
+    "action": "generate-draft",
+    "slug": "upwork-fixed-vs-hourly-pricing",
+    "batch": 8
+  },
+  {
+    "time": "2026-06-02T17:20:42.863Z",
+    "action": "generate-draft",
+    "slug": "upwork-fixed-vs-hourly-pricing-checklist",
+    "batch": 8
+  },
+  {
+    "time": "2026-06-02T17:20:42.864Z",
+    "action": "generate-draft",
+    "slug": "upwork-fixed-vs-hourly-pricing-mistakes",
+    "batch": 8
   }
 ]
