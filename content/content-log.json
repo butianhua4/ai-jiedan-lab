@@ -2368,5 +2368,35 @@
     "action": "generate-draft",
     "slug": "bank-card-payment-platform-risk",
     "batch": 16
+  },
+  {
+    "time": "2026-06-02T19:59:36.355Z",
+    "action": "generate-draft",
+    "slug": "bank-card-payment-platform-risk-checklist",
+    "batch": 16
+  },
+  {
+    "time": "2026-06-02T19:59:36.356Z",
+    "action": "generate-draft",
+    "slug": "international-payment-fee-estimate",
+    "batch": 16
+  },
+  {
+    "time": "2026-06-02T19:59:36.356Z",
+    "action": "generate-draft",
+    "slug": "international-payment-fee-estimate-checklist",
+    "batch": 16
+  },
+  {
+    "time": "2026-06-02T19:59:36.357Z",
+    "action": "generate-draft",
+    "slug": "platform-payment-vs-direct-payment",
+    "batch": 16
+  },
+  {
+    "time": "2026-06-02T19:59:36.357Z",
+    "action": "generate-draft",
+    "slug": "platform-payment-vs-direct-payment-checklist",
+    "batch": 16
   }
 ]
