@@ -15,6 +15,7 @@
     "content:dashboard": "next dev",
     "project:status": "tsx scripts/project-status.ts",
     "seo:check": "tsx scripts/seo-safety-check.ts",
+    "searchability:check": "tsx scripts/searchability-audit.ts",
     "smoke:web": "tsx scripts/web-smoke-check.ts",
     "live:check": "tsx scripts/live-site-check.ts"
   },
