@@ -23,17 +23,22 @@ async function main() {
       files: articles.length,
       statusCounts,
       publicPublished: published.length,
+      draftOrReview: articles.length - published.length,
       publishableNow: publishable.map((article) => article.slug),
     },
+    searchSetup: {
+      googleSearchConsole: "已完成验证并提交 sitemap.xml",
+      sitemapRule: "只收录 published 且 noindex=false 的文章",
+    },
     recommendedNextActions: [
-      "继续打磨 3 个核心工具页的移动端和转化文案。",
+      "继续生成 draft，保持每次最多 5 篇。",
       "人工抽查 batch 1 中 2-3 篇 draft，再 mark:review。",
-      "每天最多发布 1-3 篇 review 文章，不要批量发布。",
-      "等有真实下载或咨询后，再接 Gumroad/Lemon Squeezy 或 Payoneer/Wise。",
+      "每次最多发布 1-3 篇 review 文章，不要批量发布。",
+      "继续打磨 3 个核心工具页的移动端和转化文案。",
+      "等有真实下载或咨询后，再接 Gumroad、Lemon Squeezy、Payoneer 或 Wise。",
     ],
     registrationRoadmap: {
-      now: "当前不需要注册新平台；GitHub + Vercel 已足够继续推进。",
-      next: "有 5 篇以上人工审核公开文章后，优先注册 Google Search Console 并提交 sitemap。",
+      now: "当前不需要注册新平台；GitHub、Vercel、Google Search Console 已经足够继续推进。",
       later: [
         "有稳定访问后再开启 Vercel Web Analytics 或 Google Analytics。",
         "有模板下载反馈后再注册 Gumroad 或 Lemon Squeezy。",

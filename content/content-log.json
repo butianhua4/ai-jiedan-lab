@@ -70,5 +70,35 @@
     "action": "generate-draft",
     "slug": "codex-first-day-guide",
     "batch": 1
+  },
+  {
+    "time": "2026-06-02T13:16:44.107Z",
+    "action": "generate-draft",
+    "slug": "codex-first-day-guide-checklist",
+    "batch": 1
+  },
+  {
+    "time": "2026-06-02T13:16:44.108Z",
+    "action": "generate-draft",
+    "slug": "codex-first-day-guide-mistakes",
+    "batch": 1
+  },
+  {
+    "time": "2026-06-02T13:16:44.108Z",
+    "action": "generate-draft",
+    "slug": "codex-first-day-guide-freelance-scope",
+    "batch": 1
+  },
+  {
+    "time": "2026-06-02T13:16:44.109Z",
+    "action": "generate-draft",
+    "slug": "codex-install-prerequisites",
+    "batch": 1
+  },
+  {
+    "time": "2026-06-02T13:16:44.110Z",
+    "action": "generate-draft",
+    "slug": "codex-install-prerequisites-checklist",
+    "batch": 1
   }
 ]
