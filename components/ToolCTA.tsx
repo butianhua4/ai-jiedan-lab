@@ -9,7 +9,7 @@ const actions = [
   {
     href: "/tools",
     title: "查看 AI 工具导航",
-    description: "按编码、部署、收款、自动化和 SEO 场景挑工具。",
+    description: "按编程、部署、收款、自动化和 SEO 场景挑工具。",
   },
   {
     href: "/roadmap",
@@ -24,7 +24,9 @@ export function ToolCTA({ title = "下一步可以这样做" }: { title?: string
       <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-end">
         <div>
           <h2 className="text-lg font-semibold text-ink">{title}</h2>
-          <p className="mt-1 text-sm leading-6 text-gray-600">先用工具做判断，再用模板整理交付，不要把生成内容直接发给客户。</p>
+          <p className="mt-1 text-sm leading-6 text-gray-600">
+            先用工具做判断，再用模板整理交付。生成内容只能作为草稿，不要不审核就直接发给客户。
+          </p>
         </div>
       </div>
       <div className="mt-4 grid gap-3 md:grid-cols-3">

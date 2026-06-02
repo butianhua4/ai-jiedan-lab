@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/tools/error-explainer" },
   openGraph: {
     title: "Codex 报错解释器",
-    description: "把常见开发报错翻译成新手能执行的步骤。",
+    description: "把常见开发报错翻译成新手能执行的排查步骤。",
     url: "/tools/error-explainer",
   },
 };
@@ -20,11 +20,14 @@ export default function ErrorPage() {
         <p className="text-sm font-medium text-brand">Codex / Vercel / GitHub 排错工具</p>
         <h1 className="mt-2 text-3xl font-bold text-ink">Codex 报错解释器</h1>
         <p className="mt-3 max-w-3xl text-gray-600">
-          把常见 npm、Git、Vercel、TypeScript、ESLint 报错翻译成新手能执行的排查步骤。第一版不调用真实 AI API，适合先整理报错和判断是否需要找人协助。
+          把常见 npm、Git、Vercel、TypeScript、ESLint 报错翻译成新手能执行的排查步骤。
+          第一版不调用真实 AI API，适合先整理报错和判断是否需要找人协助。
         </p>
       </section>
       <ErrorExplainerClient />
-      <div className="mt-8"><ToolCTA title="排错后下一步" /></div>
+      <div className="mt-8">
+        <ToolCTA title="排错后下一步" />
+      </div>
     </main>
   );
 }

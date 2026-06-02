@@ -20,11 +20,14 @@ export default function PricingPage() {
         <p className="text-sm font-medium text-brand">自由职业报价参考工具</p>
         <h1 className="mt-2 text-3xl font-bold text-ink">项目报价助手</h1>
         <p className="mt-3 max-w-3xl text-gray-600">
-          用于估算 Upwork/Fiverr 小项目报价范围。结果只做参考，不保证成交，也不建议低价承诺复杂交付；真实报价还要结合客户预算、范围和验收标准。
+          用于估算 Upwork/Fiverr 小项目报价范围。结果只做参考，不保证成交，也不建议低价承诺复杂交付。
+          真实报价还要结合客户预算、范围、验收标准和你的真实能力。
         </p>
       </section>
       <PricingCalculatorClient />
-      <div className="mt-8"><ToolCTA title="报价后下一步" /></div>
+      <div className="mt-8">
+        <ToolCTA title="报价后下一步" />
+      </div>
     </main>
   );
 }

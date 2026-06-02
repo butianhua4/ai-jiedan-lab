@@ -1,7 +1,17 @@
 import fs from "fs";
 import path from "path";
-import matter from "gray-matter";
 import fg from "fast-glob";
+import matter from "gray-matter";
+
+export type ArticleData = Record<string, unknown> & {
+  noindex?: boolean;
+  publishBatch?: number;
+  qualityScore?: number;
+  slug?: string;
+  sourceNotes?: string;
+  status?: string;
+  updatedAt?: string;
+};
 
 export function parseArgs() {
   const args: Record<string, string | boolean> = {};
@@ -24,8 +34,8 @@ export function parseArgs() {
 
 export async function articleFiles() {
   return fg(["content/blog/*.{md,mdx}"], {
-    cwd: process.cwd(),
     absolute: true,
+    cwd: process.cwd(),
   });
 }
 
@@ -35,14 +45,14 @@ export function readArticle(file: string) {
   const parsed = matter(raw);
 
   return {
-    raw,
-    data: parsed.data as Record<string, any>,
     content: parsed.content,
+    data: parsed.data as ArticleData,
     file: absoluteFile,
+    raw,
   };
 }
 
-export function writeArticle(file: string, data: Record<string, any>, content: string) {
+export function writeArticle(file: string, data: ArticleData, content: string) {
   fs.writeFileSync(file, matter.stringify(`${content.trim()}\n`, data), "utf8");
 }
 

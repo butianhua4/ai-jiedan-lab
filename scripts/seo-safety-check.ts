@@ -6,7 +6,7 @@ async function main() {
   const all = files.map((file) => readArticle(file).data);
   const publicPosts = getAllPosts(false);
   const publicSlugSet = new Set(publicPosts.map((post) => post.slug));
-  const leaked = all.filter((article) => article.status !== "published" && publicSlugSet.has(article.slug));
+  const leaked = all.filter((article) => article.status !== "published" && article.slug && publicSlugSet.has(article.slug));
   const wronglyIndexed = all.filter((article) => article.status !== "published" && article.noindex === false);
   const publishedNoindexed = all.filter((article) => article.status === "published" && article.noindex !== false);
 
