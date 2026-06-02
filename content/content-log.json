@@ -334,5 +334,29 @@
     "action": "generate-draft",
     "slug": "codex-bugfix-rollback-record-checklist",
     "batch": 2
+  },
+  {
+    "time": "2026-06-02T15:25:13.102Z",
+    "action": "generate-draft",
+    "slug": "codex-bugfix-rollback-record-mistakes",
+    "batch": 2
+  },
+  {
+    "time": "2026-06-02T15:25:13.103Z",
+    "action": "generate-draft",
+    "slug": "codex-bugfix-rollback-record-freelance-scope",
+    "batch": 2
+  },
+  {
+    "time": "2026-06-02T15:25:13.103Z",
+    "action": "generate-draft",
+    "slug": "codex-client-requirement-questions",
+    "batch": 2
+  },
+  {
+    "time": "2026-06-02T15:25:13.104Z",
+    "action": "generate-draft",
+    "slug": "codex-client-requirement-questions-checklist",
+    "batch": 2
   }
 ]
