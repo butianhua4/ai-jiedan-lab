@@ -2962,5 +2962,35 @@
     "action": "generate-draft",
     "slug": "pre-project-risk-assessment-template",
     "batch": 20
+  },
+  {
+    "time": "2026-06-02T21:14:27.514Z",
+    "action": "generate-draft",
+    "slug": "pre-project-risk-assessment-template-checklist",
+    "batch": 20
+  },
+  {
+    "time": "2026-06-02T21:14:27.515Z",
+    "action": "generate-draft",
+    "slug": "template-download-cta-copy",
+    "batch": 20
+  },
+  {
+    "time": "2026-06-02T21:14:27.515Z",
+    "action": "generate-draft",
+    "slug": "template-download-cta-copy-checklist",
+    "batch": 20
+  },
+  {
+    "time": "2026-06-02T21:14:27.516Z",
+    "action": "generate-draft",
+    "slug": "service-inquiry-form-questions",
+    "batch": 20
+  },
+  {
+    "time": "2026-06-02T21:14:27.516Z",
+    "action": "generate-draft",
+    "slug": "service-inquiry-form-questions-checklist",
+    "batch": 20
   }
 ]
