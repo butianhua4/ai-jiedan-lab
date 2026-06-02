@@ -1168,5 +1168,35 @@
     "action": "generate-draft",
     "slug": "upwork-fixed-vs-hourly-pricing-mistakes",
     "batch": 8
+  },
+  {
+    "time": "2026-06-02T17:25:42.326Z",
+    "action": "generate-draft",
+    "slug": "upwork-proposal-promises-to-avoid",
+    "batch": 8
+  },
+  {
+    "time": "2026-06-02T17:25:42.326Z",
+    "action": "generate-draft",
+    "slug": "upwork-proposal-promises-to-avoid-checklist",
+    "batch": 8
+  },
+  {
+    "time": "2026-06-02T17:25:42.327Z",
+    "action": "generate-draft",
+    "slug": "upwork-proposal-promises-to-avoid-mistakes",
+    "batch": 8
+  },
+  {
+    "time": "2026-06-02T17:25:42.327Z",
+    "action": "generate-draft",
+    "slug": "upwork-filter-risky-clients",
+    "batch": 8
+  },
+  {
+    "time": "2026-06-02T17:25:42.328Z",
+    "action": "generate-draft",
+    "slug": "upwork-filter-risky-clients-checklist",
+    "batch": 8
   }
 ]
