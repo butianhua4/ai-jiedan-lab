@@ -100,5 +100,35 @@
     "action": "generate-draft",
     "slug": "codex-install-prerequisites-checklist",
     "batch": 1
+  },
+  {
+    "time": "2026-06-02T13:54:40.577Z",
+    "action": "generate-draft",
+    "slug": "codex-install-prerequisites-mistakes",
+    "batch": 1
+  },
+  {
+    "time": "2026-06-02T13:54:40.577Z",
+    "action": "generate-draft",
+    "slug": "codex-install-prerequisites-freelance-scope",
+    "batch": 1
+  },
+  {
+    "time": "2026-06-02T13:54:40.578Z",
+    "action": "generate-draft",
+    "slug": "codex-windows-install-failed",
+    "batch": 1
+  },
+  {
+    "time": "2026-06-02T13:54:40.578Z",
+    "action": "generate-draft",
+    "slug": "codex-windows-install-failed-checklist",
+    "batch": 1
+  },
+  {
+    "time": "2026-06-02T13:54:40.579Z",
+    "action": "generate-draft",
+    "slug": "codex-windows-install-failed-mistakes",
+    "batch": 1
   }
 ]
