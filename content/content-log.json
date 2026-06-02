@@ -1618,5 +1618,35 @@
     "action": "generate-draft",
     "slug": "before-first-ai-freelance-job-mistakes",
     "batch": 11
+  },
+  {
+    "time": "2026-06-02T18:18:50.368Z",
+    "action": "generate-draft",
+    "slug": "deliver-small-website-with-ai-no-code",
+    "batch": 11
+  },
+  {
+    "time": "2026-06-02T18:18:50.368Z",
+    "action": "generate-draft",
+    "slug": "deliver-small-website-with-ai-no-code-checklist",
+    "batch": 11
+  },
+  {
+    "time": "2026-06-02T18:18:50.369Z",
+    "action": "generate-draft",
+    "slug": "deliver-small-website-with-ai-no-code-mistakes",
+    "batch": 11
+  },
+  {
+    "time": "2026-06-02T18:18:50.369Z",
+    "action": "generate-draft",
+    "slug": "why-ai-freelance-needs-human-review",
+    "batch": 11
+  },
+  {
+    "time": "2026-06-02T18:18:50.370Z",
+    "action": "generate-draft",
+    "slug": "why-ai-freelance-needs-human-review-checklist",
+    "batch": 11
   }
 ]
