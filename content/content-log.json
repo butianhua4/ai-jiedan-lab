@@ -568,5 +568,35 @@
     "action": "generate-draft",
     "slug": "claude-code-install-prerequisites",
     "batch": 4
+  },
+  {
+    "time": "2026-06-02T15:57:46.863Z",
+    "action": "generate-draft",
+    "slug": "claude-code-install-prerequisites-checklist",
+    "batch": 4
+  },
+  {
+    "time": "2026-06-02T15:57:46.864Z",
+    "action": "generate-draft",
+    "slug": "claude-code-install-prerequisites-mistakes",
+    "batch": 4
+  },
+  {
+    "time": "2026-06-02T15:57:46.864Z",
+    "action": "generate-draft",
+    "slug": "claude-code-install-prerequisites-freelance-scope",
+    "batch": 4
+  },
+  {
+    "time": "2026-06-02T15:57:46.865Z",
+    "action": "generate-draft",
+    "slug": "claude-code-common-commands",
+    "batch": 4
+  },
+  {
+    "time": "2026-06-02T15:57:46.865Z",
+    "action": "generate-draft",
+    "slug": "claude-code-common-commands-checklist",
+    "batch": 4
   }
 ]
