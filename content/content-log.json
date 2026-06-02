@@ -130,5 +130,35 @@
     "action": "generate-draft",
     "slug": "codex-windows-install-failed-mistakes",
     "batch": 1
+  },
+  {
+    "time": "2026-06-02T13:56:13.491Z",
+    "action": "generate-draft",
+    "slug": "codex-windows-install-failed-freelance-scope",
+    "batch": 1
+  },
+  {
+    "time": "2026-06-02T13:56:13.492Z",
+    "action": "generate-draft",
+    "slug": "codex-npm-install-errors",
+    "batch": 1
+  },
+  {
+    "time": "2026-06-02T13:56:13.492Z",
+    "action": "generate-draft",
+    "slug": "codex-npm-install-errors-checklist",
+    "batch": 1
+  },
+  {
+    "time": "2026-06-02T13:56:13.493Z",
+    "action": "generate-draft",
+    "slug": "codex-npm-install-errors-mistakes",
+    "batch": 1
+  },
+  {
+    "time": "2026-06-02T13:56:13.493Z",
+    "action": "generate-draft",
+    "slug": "codex-npm-install-errors-freelance-scope",
+    "batch": 1
   }
 ]
