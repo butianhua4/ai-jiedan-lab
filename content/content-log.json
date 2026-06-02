@@ -598,5 +598,35 @@
     "action": "generate-draft",
     "slug": "claude-code-common-commands-checklist",
     "batch": 4
+  },
+  {
+    "time": "2026-06-02T16:01:17.111Z",
+    "action": "generate-draft",
+    "slug": "claude-code-common-commands-mistakes",
+    "batch": 4
+  },
+  {
+    "time": "2026-06-02T16:01:17.112Z",
+    "action": "generate-draft",
+    "slug": "claude-code-common-commands-freelance-scope",
+    "batch": 4
+  },
+  {
+    "time": "2026-06-02T16:01:17.112Z",
+    "action": "generate-draft",
+    "slug": "claude-code-bug-prompt",
+    "batch": 4
+  },
+  {
+    "time": "2026-06-02T16:01:17.113Z",
+    "action": "generate-draft",
+    "slug": "claude-code-bug-prompt-checklist",
+    "batch": 4
+  },
+  {
+    "time": "2026-06-02T16:01:17.113Z",
+    "action": "generate-draft",
+    "slug": "claude-code-bug-prompt-mistakes",
+    "batch": 4
   }
 ]
