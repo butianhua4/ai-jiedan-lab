@@ -20,40 +20,46 @@ export default function Dashboard() {
   if (process.env.NODE_ENV !== "development") notFound();
 
   const posts = getAllPosts(true);
-  const generatedSlugs = new Set(posts.map((post) => post.slug));
+  const postsBySlug = new Map<string, (typeof posts)[number]>(posts.map((post) => [post.slug, post]));
+  const planSlugs = new Set<string>(contentPlan500.map((item) => item.slug));
+  const plannedPosts = posts.filter((post) => planSlugs.has(post.slug));
+  const plannedGenerated = contentPlan500.filter((item) => postsBySlug.has(item.slug)).length;
   const counts = {
-    planned: contentPlan500.filter((item) => !generatedSlugs.has(item.slug)).length,
-    drafted: posts.filter((post) => post.status === "draft").length,
-    review: posts.filter((post) => post.status === "review").length,
-    published: posts.filter((post) => post.status === "published").length,
+    plannedMissing: contentPlan500.length - plannedGenerated,
+    drafted: plannedPosts.filter((post) => post.status === "draft").length,
+    review: plannedPosts.filter((post) => post.status === "review").length,
+    published: plannedPosts.filter((post) => post.status === "published").length,
     archived: posts.filter((post) => post.status === "archived").length,
   };
   const byBatch = Array.from({ length: 20 }, (_, index) => {
     const batch = index + 1;
+    const batchPlan = contentPlan500.filter((item) => item.batch === batch);
+    const generated = batchPlan.filter((item) => postsBySlug.has(item.slug));
     return {
       batch,
-      generated: posts.filter((post) => post.publishBatch === batch).length,
-      published: posts.filter((post) => post.publishBatch === batch && post.status === "published").length,
-      total: contentPlan500.filter((item) => item.batch === batch).length,
+      generated: generated.length,
+      draft: generated.filter((item) => postsBySlug.get(item.slug)?.status === "draft").length,
+      published: generated.filter((item) => postsBySlug.get(item.slug)?.status === "published").length,
+      total: batchPlan.length,
     };
   });
   const byCategory = contentPlan500.reduce<Record<string, number>>((acc, item) => {
     acc[item.category] = (acc[item.category] || 0) + 1;
     return acc;
   }, {});
-  const lowQuality = posts.filter((post) => (post.qualityScore || 0) < 80);
-  const publishable = posts.filter((post) => post.status === "review" && (post.qualityScore || 0) >= 80);
+  const lowQuality = plannedPosts.filter((post) => (post.qualityScore || 0) < 80);
+  const publishable = plannedPosts.filter((post) => post.status === "review" && (post.qualityScore || 0) >= 80);
   const publishLog = readJsonLog("publish-log.json").slice(-10);
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-12">
       <h1 className="text-3xl font-bold">内容仪表盘</h1>
       <p className="mt-3 text-gray-600">
-        仅开发环境可访问，用于查看选题、草稿、审核和发布状态。生产环境会返回 404，避免草稿入口暴露。
+        仅开发环境可访问，用于查看正式 500 篇选题、草稿、审核和发布状态。生产环境会返回 404，避免草稿入口暴露。
       </p>
 
-      <section className="mt-6 grid gap-4 md:grid-cols-5">
-        {Object.entries({ total: contentPlan500.length, ...counts }).map(([key, value]) => (
+      <section className="mt-6 grid gap-4 md:grid-cols-6">
+        {Object.entries({ totalPlan: contentPlan500.length, plannedGenerated, ...counts }).map(([key, value]) => (
           <div className="rounded-lg border bg-white p-4 shadow-sm" key={key}>
             <p className="text-sm text-gray-500">{key}</p>
             <p className="text-3xl font-bold">{value}</p>
@@ -68,6 +74,7 @@ export default function Dashboard() {
             <div className="rounded border bg-white p-3 text-sm shadow-sm" key={item.batch}>
               <strong>Batch {item.batch}</strong>
               <p>{item.generated}/{item.total} generated</p>
+              <p>{item.draft} draft</p>
               <p>{item.published} published</p>
             </div>
           ))}
