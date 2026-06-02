@@ -160,5 +160,35 @@
     "action": "generate-draft",
     "slug": "codex-npm-install-errors-freelance-scope",
     "batch": 1
+  },
+  {
+    "time": "2026-06-02T14:36:52.703Z",
+    "action": "generate-draft",
+    "slug": "codex-first-landing-page",
+    "batch": 1
+  },
+  {
+    "time": "2026-06-02T14:36:52.704Z",
+    "action": "generate-draft",
+    "slug": "codex-first-landing-page-checklist",
+    "batch": 1
+  },
+  {
+    "time": "2026-06-02T14:36:52.704Z",
+    "action": "generate-draft",
+    "slug": "codex-first-landing-page-mistakes",
+    "batch": 1
+  },
+  {
+    "time": "2026-06-02T14:36:52.705Z",
+    "action": "generate-draft",
+    "slug": "codex-first-landing-page-freelance-scope",
+    "batch": 1
+  },
+  {
+    "time": "2026-06-02T14:36:52.706Z",
+    "action": "generate-draft",
+    "slug": "codex-css-spacing-responsive",
+    "batch": 1
   }
 ]
