@@ -2488,5 +2488,35 @@
     "action": "generate-draft",
     "slug": "ads-income-when-to-start",
     "batch": 17
+  },
+  {
+    "time": "2026-06-02T20:15:22.742Z",
+    "action": "generate-draft",
+    "slug": "ads-income-when-to-start-checklist",
+    "batch": 17
+  },
+  {
+    "time": "2026-06-02T20:15:22.742Z",
+    "action": "generate-draft",
+    "slug": "payment-page-disclaimer",
+    "batch": 17
+  },
+  {
+    "time": "2026-06-02T20:15:22.743Z",
+    "action": "generate-draft",
+    "slug": "payment-page-disclaimer-checklist",
+    "batch": 17
+  },
+  {
+    "time": "2026-06-02T20:15:22.743Z",
+    "action": "generate-draft",
+    "slug": "digital-template-refund-policy",
+    "batch": 17
+  },
+  {
+    "time": "2026-06-02T20:15:22.743Z",
+    "action": "generate-draft",
+    "slug": "digital-template-refund-policy-checklist",
+    "batch": 17
   }
 ]
