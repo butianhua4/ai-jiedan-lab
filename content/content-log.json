@@ -958,5 +958,35 @@
     "action": "generate-draft",
     "slug": "upwork-first-project-pricing",
     "batch": 6
+  },
+  {
+    "time": "2026-06-02T16:49:06.013Z",
+    "action": "generate-draft",
+    "slug": "upwork-first-project-pricing-checklist",
+    "batch": 7
+  },
+  {
+    "time": "2026-06-02T16:49:06.014Z",
+    "action": "generate-draft",
+    "slug": "upwork-first-project-pricing-mistakes",
+    "batch": 7
+  },
+  {
+    "time": "2026-06-02T16:49:06.014Z",
+    "action": "generate-draft",
+    "slug": "upwork-short-job-post-questions",
+    "batch": 7
+  },
+  {
+    "time": "2026-06-02T16:49:06.014Z",
+    "action": "generate-draft",
+    "slug": "upwork-short-job-post-questions-checklist",
+    "batch": 7
+  },
+  {
+    "time": "2026-06-02T16:49:06.015Z",
+    "action": "generate-draft",
+    "slug": "upwork-short-job-post-questions-mistakes",
+    "batch": 7
   }
 ]
