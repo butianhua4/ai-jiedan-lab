@@ -128,6 +128,15 @@ npm run content:review-pack -- --priority=5 --limit=3 --write=docs/review-pack.m
 
 审核包同样只读，不会改文章状态。它适合明天人工逐篇检查时使用。
 
+如果想先让脚本指出候选草稿的明显弱点，例如 sourceNotes 太泛、缺少真实验证痕迹、需要复核平台规则：
+
+```bash
+npm run content:review-opinions
+npm run content:review-opinions -- --priority=5 --limit=5 --write=docs/review-opinions.md
+```
+
+审核意见仍然只是辅助判断，不能替代人工审核。
+
 ## 进入人工审核
 
 ```bash
