@@ -2722,5 +2722,35 @@
     "action": "generate-draft",
     "slug": "freelance-platform-tool-stack",
     "batch": 18
+  },
+  {
+    "time": "2026-06-02T20:45:52.130Z",
+    "action": "generate-draft",
+    "slug": "freelance-platform-tool-stack-checklist",
+    "batch": 18
+  },
+  {
+    "time": "2026-06-02T20:45:52.131Z",
+    "action": "generate-draft",
+    "slug": "template-download-site-tools",
+    "batch": 18
+  },
+  {
+    "time": "2026-06-02T20:45:52.132Z",
+    "action": "generate-draft",
+    "slug": "template-download-site-tools-checklist",
+    "batch": 18
+  },
+  {
+    "time": "2026-06-02T20:45:52.132Z",
+    "action": "generate-draft",
+    "slug": "tools-not-to-buy-first",
+    "batch": 18
+  },
+  {
+    "time": "2026-06-02T20:45:52.133Z",
+    "action": "generate-draft",
+    "slug": "tools-not-to-buy-first-checklist",
+    "batch": 18
   }
 ]
