@@ -1,0 +1,117 @@
+---
+title: "OpenAI Agents SDK 怎么入门：Tools、Handoffs 和 Tracing 先分清"
+slug: "openai-agents-sdk-beginner-guide"
+description: "面向新手整理 OpenAI Agents SDK 入门路线，覆盖 agent、tools、handoffs、running agents、tracing、敏感数据、评测和上线边界。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "OpenAI Agents SDK"
+  - "Agent"
+  - "Tracing"
+  - "Tools"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "想用 OpenAI Agents SDK 构建工具调用和多 Agent 应用的新手"
+searchIntent: "informational"
+primaryKeyword: "OpenAI Agents SDK 入门"
+secondaryKeywords:
+  - "OpenAI Agents SDK tools"
+  - "OpenAI Agents SDK handoffs"
+  - "OpenAI Agents SDK tracing"
+  - "Agent SDK 教程"
+sourceNotes: "参考 OpenAI Agents SDK 官方 Python/JS 文档中 running agents、handoffs、tracing 和敏感数据配置方向整理；正式发布前需要人工核对最新 API、包名和模型要求。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 OpenAI Agents SDK 设计检查表"
+  serviceCTA: "联系人工协助设计 Agent 工具链"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 28
+canonical: "https://ai-jiedan-lab.vercel.app/blog/openai-agents-sdk-beginner-guide"
+noindex: true
+---
+# OpenAI Agents SDK 怎么入门：Tools、Handoffs 和 Tracing 先分清
+
+OpenAI Agents SDK 用来构建 agentic 应用，常见能力包括工具调用、handoffs、运行 agent 和 tracing。新手搜索“OpenAI Agents SDK 教程”“tools handoffs tracing”时，最容易把它理解成一个更高级的聊天接口。实际上，Agent 项目真正要设计的是工具权限、交接条件、运行状态、追踪日志和敏感数据边界。
+
+这篇是草稿，正式发布前需要核对 OpenAI 最新官方文档。Agent 上线边界可以看 [Agent 生产部署检查清单](/blog/agent-production-deployment-checklist)，工具调用基础可以看 [Agent Tool Calling 入门](/blog/agent-tool-calling-beginner-guide)。
+
+## 适合谁
+
+适合想构建能调用工具、拆分职责、保留追踪记录的 AI 应用的人。比如客服分流、资料检索、内部助手、工单处理、代码辅助和多步骤任务。
+
+也适合已经用普通模型 API 做过聊天，想进一步把业务动作接进 Agent 的开发者。你需要把“回答问题”和“执行流程”分开设计。
+
+## 不适合谁
+
+不适合只需要一次文本生成的场景。简单摘要、改写和分类，不一定需要 Agents SDK。
+
+也不适合没有权限设计的项目。工具调用一旦能影响真实系统，就必须有确认、日志和失败处理。
+
+## 第一步：先定义 Agent 职责
+
+每个 Agent 都应该有明确职责。不要让一个 Agent 同时负责理解需求、查资料、写报告、发邮件和修改数据库。
+
+如果职责复杂，可以拆分多个 Agent，并设计 handoffs 条件。交接不是炫技，而是让不同角色处理不同类型任务。
+
+## 第二步：设计 Tools
+
+工具是 Agent 能影响外部世界的入口。读取资料、查询订单、搜索知识库是低影响工具；发送消息、修改数据、创建任务是高影响工具。
+
+第一版建议从只读工具开始。写入型工具要加入人工确认，或者至少限制参数范围、记录日志和提供回滚方式。
+
+## 第三步：理解 Handoffs
+
+Handoffs 适合把任务转给更合适的 Agent。例如客服 Agent 判断问题涉及退款，就转给退款 Agent；技术支持 Agent 判断是账单问题，就转给账单 Agent。
+
+交接条件要清楚，输入也要过滤。不要把所有历史上下文都无脑交给下一个 Agent，尤其是包含敏感信息时。
+
+## 第四步：开启 Tracing 并控制敏感数据
+
+官方文档强调 tracing 能帮助观察 agent 运行、工具调用和 handoff。它对调试非常重要，但也可能记录输入输出。
+
+正式项目必须决定 trace 是否包含敏感数据、谁能查看、保存多久、如何删除。调试需要信息，但生产不应无限记录客户隐私。
+
+## 第五步：用评测样本上线
+
+Agent 不是跑通一次就可以上线。准备测试样本，覆盖正常请求、边界请求、工具失败、交接失败、恶意输入、长上下文和用户取消。
+
+每次改工具、提示词、模型或 handoff 规则，都要重新跑关键样本。否则 Agent 行为很容易悄悄变化。
+
+## 常见错误
+
+常见错误是先写工具，再想权限。工具一旦开放，模型就可能尝试调用。权限和参数边界应该在工具设计之前就确定。
+
+另一个错误是只看最终回答，不看 trace。Agent 调试必须看中间步骤，否则不知道问题发生在哪个工具或交接环节。
+
+客户项目里，Agents SDK 的验收要覆盖工具行为，而不只是聊天效果。比如只读工具是否只读，写入工具是否需要人工确认，handoff 是否在正确场景发生，trace 是否能定位错误，敏感数据是否被记录。每个工具都应有成功样本、失败样本和越界样本。
+
+交付说明里建议写清模型、agent 职责、工具权限、handoff 条件、trace 设置、日志保留和人工审核流程。这样客户后续新增工具时，不会把 Agent 系统变成无边界的自动执行器。
+
+## 风险提醒
+
+Agents SDK 能让模型连接工具和流程，也会增加安全与运营责任。涉及客户资料、账号、订单、合同、财务、医疗或人事内容时，要保留人工复核。
+
+Tracing、日志和工具输入可能包含敏感信息。正式上线前必须设计脱敏、访问权限和保留时间。
+
+## 具体步骤
+
+第一步，定义 Agent 职责和任务边界。第二步，设计只读工具并测试。第三步，按场景加入 handoffs。第四步，开启 tracing 并设置敏感数据策略。第五步，用测试集验证工具调用和交接。第六步，再评估部署、限流和人工复核。需要设计检查表可以进入 [工具导航](/tools)。
+
+## 免责声明
+
+本文只用于技术学习和项目预评估，不构成安全、合规、稳定性、准确率或商业效果承诺。正式上线前，应由人工核对 OpenAI 官方文档、客户数据授权、工具权限和验收标准。

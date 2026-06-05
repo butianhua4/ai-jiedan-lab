@@ -1,0 +1,117 @@
+---
+title: "AutoGen / Microsoft Agent Framework 怎么入门：多 Agent 先看迁移和边界"
+slug: "autogen-agent-framework-beginner-guide"
+description: "面向新手整理 AutoGen 与 Microsoft Agent Framework 的入门判断，覆盖多 Agent、工具、人类介入、迁移、日志、评测和生产边界。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "AutoGen"
+  - "Microsoft Agent Framework"
+  - "Agent"
+  - "多智能体"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "想用 AutoGen 或 Microsoft Agent Framework 做多 Agent 应用的新手"
+searchIntent: "informational"
+primaryKeyword: "AutoGen Agent 入门"
+secondaryKeywords:
+  - "Microsoft Agent Framework"
+  - "AutoGen 教程"
+  - "AutoGen 多 Agent"
+  - "Agent Framework migrate from AutoGen"
+sourceNotes: "参考 Microsoft AutoGen 官方文档和 Microsoft Agent Framework 文档中 get started、migrate from AutoGen 方向整理；正式发布前需要人工核对最新包名、迁移建议和示例。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 AutoGen Agent 设计检查表"
+  serviceCTA: "联系人工协助评估多 Agent 框架"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 28
+canonical: "https://ai-jiedan-lab.vercel.app/blog/autogen-agent-framework-beginner-guide"
+noindex: true
+---
+# AutoGen / Microsoft Agent Framework 怎么入门：多 Agent 先看迁移和边界
+
+AutoGen 是很多多 Agent 教程里常见的框架，Microsoft 也在推进 Agent Framework，并在文档里提供从 AutoGen 迁移的方向。新手搜索“AutoGen 教程”“Microsoft Agent Framework”“多 Agent 框架”时，真正要判断的是：现在应该学习哪个入口，任务是否真的需要多 Agent，生产边界怎么处理。
+
+这篇是草稿，正式发布前需要核对 Microsoft 最新官方文档。多 Agent 设计也可以看 [LangGraph Agent 入门](/blog/langgraph-agent-beginner-guide) 和 [Agent 生产部署检查清单](/blog/agent-production-deployment-checklist)。
+
+## 适合谁
+
+适合想研究多 Agent 协作、工具调用、人类介入和复杂任务编排的人。比如一个 Agent 负责计划，一个 Agent 负责执行，一个 Agent 负责审核，一个 Agent 负责和用户沟通。
+
+也适合已经有 AutoGen 老项目，正在判断是否迁移到 Microsoft Agent Framework 的团队。迁移前要先确认现有功能、依赖、模型供应商、工具和部署方式。
+
+## 不适合谁
+
+不适合简单问答或单步骤生成任务。一个普通摘要工具、分类工具或 FAQ 问答，不一定需要多 Agent。
+
+也不适合还没有测试样本的人。多 Agent 系统调试成本更高，没有样本就很难判断是否真的变好。
+
+## 第一步：确认任务是否需要多 Agent
+
+先判断任务是否包含多个职责、多个工具、多个决策点和人工确认。如果只是一次模型调用，多 Agent 可能只是增加复杂度。
+
+真正适合多 Agent 的场景，通常有清楚的分工。例如研究、规划、执行、质检、用户沟通和结果汇总。
+
+## 第二步：关注当前官方入口
+
+AutoGen 文档和 Microsoft Agent Framework 文档都在演进。新手不要只看旧教程，要确认当前官方推荐包名、示例和迁移说明。
+
+如果项目是新建，优先看当前 Agent Framework 文档和最新 AutoGen 文档。如果项目是旧代码，先盘点依赖，再决定是否迁移。
+
+## 第三步：设计人类介入点
+
+多 Agent 不代表完全自动。人工介入可以出现在计划确认、工具调用确认、结果审核和异常处理阶段。
+
+客户项目里，高影响动作必须有人工确认。比如发送邮件、更新 CRM、修改订单、生成客户可见报告，都不应该只由模型决定。
+
+## 第四步：记录对话和工具调用
+
+多 Agent 系统的核心问题是可解释性。要记录每个 Agent 的输入、输出、工具调用、耗时、错误和最终贡献。
+
+没有这些日志，客户只会看到最后结果，无法知道哪个步骤出错。生产系统必须能追踪链路。
+
+## 第五步：用评测决定是否继续
+
+不要因为框架新或复杂就默认更好。用同一组任务比较单 Agent、多 Agent 和传统流程，看成功率、成本、延迟和人工修改量。
+
+如果多 Agent 没有带来明显收益，就退回更简单方案。工程里，简单可控通常比复杂漂亮更值钱。
+
+## 常见错误
+
+常见错误是把 Agent 名字取得很专业，但任务仍然模糊。角色不清，多 Agent 只会互相传递空话。
+
+另一个错误是追旧教程。Agent 框架变化快，包名、API、示例和推荐入口都可能更新。
+
+客户项目里，AutoGen 或 Agent Framework 的验收要从“最终结果”扩展到“中间协作”。例如每个 Agent 是否按职责行动，是否调用了正确工具，是否在需要人工确认时停下，是否能处理输入缺失和工具失败。只看最后输出，会漏掉很多流程隐患。
+
+如果客户已有 AutoGen 原型，迁移前建议做一份资产清单：当前 agent 列表、工具列表、模型供应商、提示词、测试样本、部署方式、日志保存和失败案例。这样迁移到新框架时，才能判断哪些功能保留、哪些功能重写、哪些风险需要重新验收。
+
+## 风险提醒
+
+多 Agent 系统可能放大错误和成本。一个 Agent 判断错，后续 Agent 可能基于错误继续生成。
+
+如果系统处理客户资料、代码、内部文档或业务动作，必须有权限、日志、人工复核和删除流程。
+
+## 具体步骤
+
+第一步，判断任务是否真的需要多 Agent。第二步，核对当前官方文档和迁移建议。第三步，定义角色、工具和人工确认点。第四步，记录每一步对话和工具调用。第五步，用测试集比较单 Agent 与多 Agent。第六步，再决定部署和维护方案。需要设计检查表可以进入 [工具导航](/tools)。
+
+## 免责声明
+
+本文只用于技术学习和项目预评估，不构成稳定性、安全、合规、准确率或商业效果承诺。正式上线前，应由人工核对 Microsoft 官方文档、框架版本、客户数据授权和验收标准。

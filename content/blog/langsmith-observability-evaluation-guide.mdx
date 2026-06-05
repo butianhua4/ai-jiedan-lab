@@ -1,0 +1,119 @@
+---
+title: "LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent"
+slug: "langsmith-observability-evaluation-guide"
+description: "面向新手整理 LangSmith 观测和评测入门，覆盖 tracing、runs、datasets、evaluations、LangChain/LangGraph 应用、成本和上线排查。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "LangSmith"
+  - "Observability"
+  - "Evaluation"
+  - "LangChain"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "想给 LangChain、LangGraph 或 LLM 应用加追踪和评测的新手"
+searchIntent: "informational"
+primaryKeyword: "LangSmith Observability"
+secondaryKeywords:
+  - "LangSmith tracing"
+  - "LangSmith evaluation"
+  - "LangChain observability"
+  - "LLM 应用评测"
+sourceNotes: "参考 LangChain/LangSmith 官方 observability、tracing、evaluation 文档方向整理；正式发布前需要人工核对最新环境变量、SDK 和平台功能。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 LangSmith 观测评测检查表"
+  serviceCTA: "联系人工协助排查 Agent 链路"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 28
+canonical: "https://ai-jiedan-lab.vercel.app/blog/langsmith-observability-evaluation-guide"
+noindex: true
+---
+# LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent
+
+LangSmith 常被用于 LangChain、LangGraph 和 LLM 应用的观测、调试和评测。新手搜索“LangSmith tracing”“LangSmith evaluation”“LangChain observability”时，真实痛点通常是：模型链路变复杂后，靠打印日志已经看不清哪里错了。
+
+这篇是草稿，正式发布前需要核对 LangSmith 最新官方文档。LangChain RAG 入门可以看 [LangChain 做 RAG 怎么开始](/blog/langchain-rag-beginner-guide)，Agent 日志基础可以看 [Agent 可观测性日志指南](/blog/agent-observability-logging-guide)。
+
+## 适合谁
+
+适合已经有 LangChain、LangGraph、RAG 或 Agent 应用，并且遇到调试困难的人。比如不知道哪一步检索错了、哪个工具超时了、哪次提示词修改让效果变差了。
+
+也适合客户项目交付。客户说“这个 AI 有时答错”，你需要拿出 trace、测试集和失败案例，而不是只说模型不稳定。
+
+## 不适合谁
+
+不适合还没有应用链路的人。如果只是刚学模型 API，先把业务流程跑通，再加观测工具。
+
+也不适合把 tracing 当成自动质量保证。trace 能告诉你发生了什么，评测样本和人工判断才能告诉你结果是否好。
+
+## 第一步：先开启 tracing
+
+LangSmith observability 文档强调 tracing 可以帮助查看应用运行过程。你需要让模型调用、检索、工具和链路步骤被记录下来。
+
+开启后先跑少量真实请求，检查每一步输入、输出、耗时和错误。不要等上线出问题才想起来加追踪。
+
+## 第二步：区分调试和评测
+
+调试关注单次请求发生了什么。评测关注一组样本的整体表现。两者都需要，但不能互相替代。
+
+例如 RAG 回答错了，trace 能看到检索片段；evaluation 可以告诉你最近 50 个问题整体是否比旧版本更好。
+
+## 第三步：建立数据集
+
+准备真实测试问题、期望答案、正确来源和边界案例。数据集不需要一开始很大，但必须代表真实使用场景。
+
+客户项目里，可以先从客服问题、内部 FAQ、失败反馈和人工验收问题中整理样本。每次上线前跑一遍。
+
+## 第四步：评估版本变化
+
+模型、提示词、chunk、embedding、工具和检索参数变化后，都可能影响结果。LangSmith 这类工具的价值之一是帮助你比较版本。
+
+不要只凭感觉说“新版本更好”。用测试集、指标、人工评审和失败案例一起判断。
+
+## 第五步：处理敏感数据
+
+trace 可能包含用户输入、文档片段、模型输出和工具参数。正式项目要决定哪些数据可以记录，哪些需要脱敏，谁能访问。
+
+如果客户资料敏感，先设计日志策略，再开启全量追踪。调试方便不能压过数据边界。
+
+## 常见错误
+
+常见错误是上线后才加观测。出了问题再补 trace，很多关键上下文已经丢了。
+
+另一个错误是只看漂亮仪表盘，不做测试集。观测告诉你系统怎么运行，评测才帮你判断效果是否变好。
+
+客户项目里，LangSmith 的交付价值常常体现在复盘。比如客户反馈“昨天有个回答不对”，你可以从 trace 找到当时的输入、检索结果、模型输出和耗时，再判断是资料错、检索错、提示词错还是模型生成错。没有 trace，排查只能靠猜。
+
+验收时建议准备一页“如何看一次失败请求”的说明。里面写清 trace 在哪里、哪些字段代表检索结果、哪些字段代表模型输出、怎样标记失败案例、怎样把失败样本加入测试集。客户能看懂这个流程，后续维护压力会小很多。
+
+## 风险提醒
+
+LLM trace 中可能包含敏感资料、API 输出和业务动作。必须控制访问权限、保留时间和脱敏方式。
+
+评测结果也不能机械理解。自动指标要结合人工复核，尤其是对客户可见内容和高影响业务场景。
+
+发布前还要确认团队是否真的会使用这些记录。观测系统不是装上就结束，需要约定谁每周看失败样本，谁把失败样本加入数据集，谁决定提示词或检索参数是否调整。没有负责人，trace 很快会变成无人查看的历史记录。
+
+## 具体步骤
+
+第一步，明确需要追踪的链路。第二步，接入 LangSmith tracing。第三步，收集真实测试问题。第四步，建立 dataset 和评测流程。第五步，比较模型、提示词和检索参数变化。第六步，设置数据访问和保留策略。需要检查表可以进入 [工具导航](/tools)。
+
+## 免责声明
+
+本文只用于技术学习和项目预评估，不构成安全、合规、准确率、平台可用性或商业效果承诺。正式上线前，应由人工核对 LangSmith 官方文档、客户数据授权和验收标准。

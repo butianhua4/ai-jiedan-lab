@@ -1,0 +1,121 @@
+---
+title: "promptfoo 怎么做 LLM 评测：提示词、模型和 Agent 都要有测试用例"
+slug: "promptfoo-llm-evaluation-beginner-guide"
+description: "面向新手整理 promptfoo 做 LLM 评测的路线，覆盖配置文件、providers、prompts、test cases、assertions、red teaming 和 CI 检查。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "promptfoo"
+  - "LLM Evaluation"
+  - "Prompt Testing"
+  - "Red Teaming"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "想给提示词、模型输出或 Agent 应用建立测试用例的新手"
+searchIntent: "informational"
+primaryKeyword: "promptfoo LLM 评测"
+secondaryKeywords:
+  - "promptfoo 教程"
+  - "prompt testing"
+  - "LLM eval"
+  - "AI red teaming"
+sourceNotes: "参考 promptfoo 官方 intro、getting started、agent evaluation 和 red teaming 文档方向整理；正式发布前需要人工核对最新 CLI、配置格式和 provider 支持。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 promptfoo 测试用例模板"
+  serviceCTA: "联系人工协助设计 LLM 评测流程"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 28
+canonical: "https://ai-jiedan-lab.vercel.app/blog/promptfoo-llm-evaluation-beginner-guide"
+noindex: true
+---
+# promptfoo 怎么做 LLM 评测：提示词、模型和 Agent 都要有测试用例
+
+promptfoo 是一个用于评测和 red teaming LLM 应用的开源工具。用户搜索“promptfoo 教程”“LLM eval”“prompt testing”时，通常已经意识到：提示词不能靠感觉改，模型输出不能只靠肉眼看几个例子。
+
+这篇是草稿，正式发布前需要核对 promptfoo 最新官方文档。RAG 评测可以看 [RAG 评测集怎么做](/blog/rag-evaluation-test-set-guide)，Agent 日志可以看 [Agent 可观测性日志指南](/blog/agent-observability-logging-guide)。
+
+## 适合谁
+
+适合需要比较提示词、模型、Provider 或 Agent 行为的人。比如同一个任务用不同模型，哪个更稳定；提示词改了之后，旧功能有没有变差。
+
+也适合客户项目验收。客户要求“AI 回复要稳定”，你需要用测试用例证明关键场景通过，而不是只演示成功样本。
+
+## 不适合谁
+
+不适合还没有明确输出标准的项目。如果不知道什么叫合格回答，就无法写测试断言。
+
+也不适合把自动评测当成全部质量保证。promptfoo 能帮你发现问题，但复杂业务仍然需要人工复核。
+
+## 第一步：写清任务和输出标准
+
+先定义输入是什么，输出应该包含什么，不能包含什么，格式是否固定，失败时应该怎么回答。
+
+例如客户回复草稿要礼貌、不能承诺超出范围、要提醒人工确认；RAG 回答要引用资料、找不到依据时说明找不到。
+
+## 第二步：建立 promptfooconfig
+
+promptfoo 官方 getting started 会引导配置 prompts、providers 和测试用例。新手可以从一个简单配置开始，不要一开始就做复杂 CI。
+
+先用 10 到 20 个真实问题跑通，再逐步增加边界样本和失败样本。
+
+## 第三步：比较模型和提示词
+
+promptfoo 适合把多个 prompt 和 provider 放到同一组测试里比较。这样你能看到哪个组合更稳定，而不是靠印象判断。
+
+每次改提示词，都要跑旧测试。否则你可能修好了一个场景，却破坏了另一个场景。
+
+## 第四步：设计 assertions
+
+断言可以检查输出是否包含关键词、是否符合 JSON、是否满足规则、是否通过模型评判或自定义判断。
+
+新手不要把断言写得太宽。太宽会让坏输出也通过；太严会让合理表达被误判。先从关键业务规则开始。
+
+## 第五步：考虑 red teaming
+
+promptfoo 官方文档也覆盖 red teaming 方向。公开 LLM 应用要测试提示注入、越权请求、敏感信息诱导、格式破坏和恶意输入。
+
+这不是为了吓人，而是为了在上线前发现最明显的脆弱点。尤其是 Agent 和 RAG 应用，更需要边界测试。
+
+## 常见错误
+
+常见错误是只测正常问题，不测边界和攻击式输入。另一个错误是测试用例太少，结果没有代表性。
+
+还有一种错误是评测后不维护测试集。项目需求变化、模型变化、提示词变化后，测试集也要更新。
+
+客户项目里，promptfoo 很适合作为“提示词变更前的刹车”。每次改 prompt、换模型、接入新 provider 或增加工具，都先跑一遍测试用例。这样不会因为修一个客户抱怨，顺手破坏其他重要场景。
+
+交付时建议给客户留三类用例：必须通过的业务规则、应该拒绝或谨慎回答的边界输入、容易导致格式错误的复杂输入。后续客户自己改文案或模型时，也能用这些用例做最基本的回归检查。
+
+## 风险提醒
+
+测试用例可能包含客户资料、失败案例和敏感提示词。存储和分享时要控制权限。
+
+如果用外部模型作为 judge，也要确认样本是否允许发送出去。评测流程本身也有数据路径。
+
+发布前建议把测试用例放进交付流程。每次上线前跑一次，失败就先修复或标注原因。这样客户看到的不是“我们感觉可以”，而是一套能重复执行的质量门槛。
+
+如果项目后续由客户自己维护，测试用例也要写得能读懂。每个 case 说明它代表什么风险，为什么必须通过，失败后应该找谁处理。这样 promptfoo 不只是开发工具，也能成为客户团队的验收语言。
+
+## 具体步骤
+
+第一步，定义任务和合格标准。第二步，创建 promptfoo 配置。第三步，添加 prompts、providers 和测试用例。第四步，设计 assertions。第五步，比较模型和提示词。第六步，加入 red teaming 和 CI 检查。需要测试用例模板可以进入 [工具导航](/tools)。
+
+## 免责声明
+
+本文只用于技术学习和项目预评估，不构成安全、合规、准确率、评测结论或商业效果承诺。正式上线前，应由人工核对 promptfoo 官方文档、客户数据授权和验收标准。

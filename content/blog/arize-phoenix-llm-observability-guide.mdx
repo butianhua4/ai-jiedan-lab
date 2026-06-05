@@ -1,0 +1,121 @@
+---
+title: "Arize Phoenix 怎么做 LLM Tracing：OpenTelemetry、评测和排错入门"
+slug: "arize-phoenix-llm-observability-guide"
+description: "面向新手整理 Arize Phoenix LLM observability 入门，覆盖 tracing、OpenTelemetry、OpenInference、RAG/Agent 排错、评测和敏感数据边界。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "Arize Phoenix"
+  - "LLM Tracing"
+  - "OpenTelemetry"
+  - "Evaluation"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "想给 RAG、Agent 或 LLM 应用加 tracing 和评测的新手"
+searchIntent: "informational"
+primaryKeyword: "Arize Phoenix LLM Tracing"
+secondaryKeywords:
+  - "Phoenix observability"
+  - "OpenInference"
+  - "OpenTelemetry LLM"
+  - "LLM evaluation"
+sourceNotes: "参考 Arize Phoenix 官方文档中 tracing、OpenTelemetry/OpenInference、LLM observability、evaluation 和 MCP tracing 方向整理；正式发布前需要人工核对最新 SDK 和部署方式。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 Phoenix LLM Tracing 检查表"
+  serviceCTA: "联系人工协助排查 RAG/Agent 链路"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 28
+canonical: "https://ai-jiedan-lab.vercel.app/blog/arize-phoenix-llm-observability-guide"
+noindex: true
+---
+# Arize Phoenix 怎么做 LLM Tracing：OpenTelemetry、评测和排错入门
+
+Arize Phoenix 是开源 AI observability 和 evaluation 工具，常用于 LLM tracing、RAG 排错、Agent 链路观测和评测。用户搜索“Phoenix LLM tracing”“OpenTelemetry LLM observability”“OpenInference”时，通常已经遇到模型应用难以解释的问题。
+
+这篇是草稿，正式发布前需要核对 Arize Phoenix 最新官方文档。RAG 排错可以看 [RAG 检索不到内容怎么办](/blog/rag-retrieval-no-context-debug-guide)，Agent 日志可以看 [Agent 可观测性日志指南](/blog/agent-observability-logging-guide)。
+
+## 适合谁
+
+适合已经有 RAG、Agent、LangChain、LlamaIndex、OpenAI、Anthropic 或 Vercel AI SDK 应用，并希望看清每一步发生了什么的人。
+
+也适合需要开源观测方案的团队。Phoenix 文档强调 tracing、evaluation 和 OpenTelemetry 方向，适合用来理解模型调用、检索、工具和自定义逻辑。
+
+## 不适合谁
+
+不适合还没有稳定应用链路的人。先跑通业务，再加 observability。
+
+也不适合没有数据边界意识的项目。trace 可能包含用户输入、文档片段、模型输出和工具参数。
+
+## 第一步：先明确要追踪什么
+
+RAG 应用要追踪检索、召回片段、模型生成和引用。Agent 应用要追踪工具调用、handoff、状态变化和失败路径。
+
+不要把 tracing 当成单纯的技术配置。你要先知道哪些步骤对业务结果最重要。
+
+## 第二步：理解 OpenTelemetry 和 OpenInference
+
+Phoenix 文档提到基于 OpenTelemetry 和 OpenInference 的 tracing。新手可以先理解为：把 LLM 应用中的步骤变成可观察的 trace 和 span。
+
+具体接入时，按当前框架选择自动 instrumentation 或手动 instrumentation。不要一次性追踪所有内容，先从关键路径开始。
+
+## 第三步：接入 RAG 或 Agent
+
+接入后，跑几组真实问题，查看检索片段、模型回答、工具调用、耗时和错误。RAG 回答错时，先看是不是检索错；Agent 行为异常时，先看工具和中间状态。
+
+Phoenix 的价值在于把黑箱拆开，让你能定位问题发生在哪个步骤。
+
+## 第四步：加入 evaluation
+
+Tracing 只能说明过程，evaluation 才能帮助判断质量。准备测试问题、预期来源、人工标签或自动评测规则。
+
+客户项目里，不要只给客户看一次成功运行。要用测试集说明版本变化前后的表现。
+
+## 第五步：处理敏感数据
+
+Trace 里可能出现客户文档、用户输入、API 返回和内部工具参数。正式接入前要确认日志是否脱敏、谁能访问、保存多久。
+
+如果客户资料敏感，可以先在样本环境验证 instrumentation，再决定生产采集范围。
+
+## 常见错误
+
+常见错误是只安装工具，不设计问题定位流程。看到 trace 后仍然不知道该看哪个字段，说明追踪目标不清。
+
+另一个错误是把自动评测当成最终裁判。自动指标要配合人工抽检，尤其是复杂业务和高影响输出。
+
+客户项目里，Phoenix 很适合做 RAG 和 Agent 的问题定位台。比如 RAG 回答错了，你先看检索 span；工具调用错了，你看 tool span；模型输出不符合格式，你看生成阶段。把问题拆到 span 级别，修复会比反复改提示词更有效。
+
+交付文档里建议附一套排查路径：回答无依据先查 retrieval，回答格式错先查 prompt 和 parser，工具失败先查参数和外部 API，成本异常先查长输入和重试。客户看到的是流程，不是一堆看不懂的追踪数据。
+
+## 风险提醒
+
+LLM observability 会增加透明度，也会增加数据责任。记录越细，越要管理访问权限和保留策略。
+
+如果系统包含客户隐私、合同、财务、医疗、人事或内部代码，必须谨慎采集和展示 trace。
+
+发布前建议先在测试环境跑一轮真实样本，再决定生产环境采集范围。你可以先采集关键 span，再逐步扩大，不要为了调试方便一次性记录所有输入输出。客户越重视隐私，越需要这种渐进式接入。
+
+还要确认团队是否能读懂 trace。给客户交付时，最好用一次真实失败案例演示：从用户问题进入 trace，找到检索片段，查看模型输入输出，定位失败原因，再把样本加入评测。这个过程比单纯展示平台界面更有价值。
+
+## 具体步骤
+
+第一步，列出 RAG 或 Agent 关键链路。第二步，选择自动或手动 instrumentation。第三步，把 trace 发送到 Phoenix。第四步，查看检索、工具、模型和错误。第五步，建立测试集和 evaluation。第六步，制定敏感数据和访问策略。需要检查表可以进入 [工具导航](/tools)。
+
+## 免责声明
+
+本文只用于技术学习和项目预评估，不构成安全、合规、准确率、平台可用性或商业效果承诺。正式上线前，应由人工核对 Arize Phoenix 官方文档、客户数据授权和验收标准。
