@@ -1,0 +1,114 @@
+---
+title: "LiteLLM Proxy 怎么部署：统一多个模型 API 前先管好预算和密钥"
+slug: "litellm-proxy-beginner-guide"
+description: "面向新手整理 LiteLLM Proxy 的部署和使用边界，覆盖 OpenAI-compatible 接口、模型路由、API Key、预算、日志、团队使用和上线风险。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "LiteLLM"
+  - "模型代理"
+  - "OpenAI Compatible"
+  - "AI Gateway"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "想用 LiteLLM 统一多个模型 API 的新手和小团队"
+searchIntent: "informational"
+primaryKeyword: "LiteLLM Proxy 部署"
+secondaryKeywords:
+  - "LiteLLM 教程"
+  - "OpenAI compatible proxy"
+  - "模型路由"
+  - "LLM API 网关"
+sourceNotes: "参考 LiteLLM 官方 Getting Started 和 Proxy 文档整理；正式发布前需要人工核对最新配置、预算、认证和部署方式。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 LiteLLM Proxy 部署检查表"
+  serviceCTA: "联系人工协助设计模型代理方案"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 26
+canonical: "https://ai-jiedan-lab.vercel.app/blog/litellm-proxy-beginner-guide"
+noindex: true
+---
+# LiteLLM Proxy 怎么部署：统一多个模型 API 前先管好预算和密钥
+
+LiteLLM Proxy 常被用来把不同模型供应商包装成统一接口，方便应用用类似 OpenAI 的调用方式访问多个模型。用户搜索“LiteLLM Proxy 部署”“LLM API 网关”“OpenAI compatible proxy”，通常是因为项目里模型越来越多，想统一路由、记录费用和管理密钥。
+
+这篇是草稿，正式发布前需要核对 LiteLLM 最新官方文档。模型 API 接入基础可以看 [大模型 API 集成部署清单](/blog/llm-api-integration-deployment-checklist)，成本延迟可以看 [大模型服务成本和延迟检查](/blog/llm-serving-cost-latency-checklist)。
+
+## 适合谁
+
+适合有多个模型供应商、多个项目或多个团队成员的人。你可能同时使用 OpenAI、Anthropic、Gemini、OpenRouter、本地 OpenAI-compatible 服务或其他模型，希望应用层不要到处写不同接口。
+
+也适合给客户搭 AI 应用平台的新手。客户可能想要“以后模型可以换”，LiteLLM 这类代理能降低切换成本，但前提是你把权限、预算和日志设计清楚。
+
+## 不适合谁
+
+不适合只有一个小脚本、一个模型、一个人使用的场景。引入代理会增加部署和维护复杂度，不一定值得。
+
+也不适合没有密钥管理和预算意识的项目。代理层集中管理模型访问，一旦配置不当，影响范围会比单个应用更大。
+
+## 第一步：确定为什么需要代理
+
+先写清楚目标：是统一 OpenAI-compatible 接口，还是做模型路由、成本追踪、预算限制、团队 Key 管理、失败切换，或者集中日志。
+
+如果只是为了“看起来更专业”，不建议第一版就加。代理层应该解决明确问题，否则会变成新的故障点。
+
+## 第二步：整理模型和供应商
+
+列出当前要接入的模型供应商、模型名、API Key、Base URL、费用、限速、上下文长度和适用场景。不同模型能力差异很大，不能只按模型名路由。
+
+例如客服问答、代码生成、摘要、分类、embedding 可能需要不同模型。代理配置要和业务场景绑定，而不是把所有请求都丢给同一个默认模型。
+
+## 第三步：配置认证和预算
+
+LiteLLM Proxy 的价值之一是集中管理访问。新手要关注谁能调用代理、每个项目用什么 Key、是否有预算上限、是否有日志和审计。
+
+不要把上游供应商 Key 暴露给前端或客户。应用应该调用代理提供的受控 Key，代理再调用上游模型。这样更容易做撤销、限额和追踪。
+
+## 第四步：让应用接 OpenAI-compatible 接口
+
+很多应用或 SDK 支持配置 Base URL 和 API Key。你可以把它们指向 LiteLLM Proxy，这样应用层改动较小。
+
+但兼容不代表所有功能完全一样。工具调用、流式输出、结构化输出、图片、embedding 和错误格式都要逐项测试。不要只测简单聊天。
+
+## 第五步：监控失败和成本
+
+代理上线后，要看请求量、失败率、延迟、供应商错误、费用和异常调用。模型服务会限流、超时或返回不同错误，代理层要有清晰日志。
+
+如果客户项目预算有限，先设置测试期额度和报警。没有预算边界的 AI API 很容易在公开应用或异常循环里产生额外成本。
+
+## 常见错误
+
+常见错误是把 LiteLLM 当成“换模型就不改代码”的万能层。接口统一能降低一部分改动，但提示词、上下文长度、工具能力和输出风格仍然要适配。
+
+另一个错误是没有把代理层纳入运维。代理挂了，所有下游应用都会受影响。部署、备份、日志和告警都要考虑。
+
+## 风险提醒
+
+模型代理会集中处理密钥、请求内容和日志。涉及客户数据时，要明确日志是否保存、保存多久、谁能访问、是否脱敏。
+
+如果代理对公网开放，必须配置认证、访问限制和速率控制。不要把管理接口或上游 Key 暴露出去。
+
+## 具体步骤
+
+第一步，确认代理要解决的问题。第二步，列出供应商、模型和使用场景。第三步，配置上游 Key、路由和预算。第四步，让应用通过 OpenAI-compatible 接口调用代理。第五步，测试流式、工具、embedding 和错误处理。第六步，补充日志、告警和交付说明。需要检查表可以进入 [工具导航](/tools)。
+
+## 免责声明
+
+本文只用于技术学习和方案预评估，不构成成本、安全、合规、稳定性或商业效果承诺。正式上线前，应由人工核对 LiteLLM 官方文档、供应商条款、密钥权限和客户数据要求。
+

@@ -1,0 +1,114 @@
+---
+title: "Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试"
+slug: "dify-ollama-local-model-guide"
+description: "面向新手整理 Dify 接入 Ollama 本地模型的检查点，覆盖 Ollama 服务、模型供应商配置、Docker 网络、LLM 节点、知识库和上线边界。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "Dify"
+  - "Ollama"
+  - "本地大模型"
+  - "知识库"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "想把 Dify 应用接到 Ollama 本地模型的新手"
+searchIntent: "informational"
+primaryKeyword: "Dify 接入 Ollama"
+secondaryKeywords:
+  - "Dify 本地模型"
+  - "Dify Ollama 配置"
+  - "Ollama Dify 知识库"
+  - "Dify model provider"
+sourceNotes: "参考 Dify 官方 Model Providers、LLM 节点文档和 Ollama 本地服务说明整理；正式发布前需要人工核对最新界面、URL 和模型配置。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 Dify + Ollama 接入检查表"
+  serviceCTA: "联系人工协助检查 Dify 本地模型方案"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 26
+canonical: "https://ai-jiedan-lab.vercel.app/blog/dify-ollama-local-model-guide"
+noindex: true
+---
+# Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试
+
+很多人搜索“Dify 接入 Ollama”“Dify 本地模型”“Dify 私有化模型”，真正想做的是把 Dify 的应用编排和知识库能力，接到自己电脑或服务器上的本地模型。这个组合很适合做内部原型，但新手要先分清：模型能连上，只是第一步；回答质量、速度、权限和维护才是项目能不能交付的关键。
+
+这篇是草稿，正式发布前需要核对 Dify 和 Ollama 最新文档。Dify 自部署可以看 [Dify Docker Compose 自部署](/blog/dify-docker-compose-self-host-guide)，Ollama 基础可以看 [Ollama 本地模型部署](/blog/ollama-local-model-deployment-guide)。
+
+## 适合谁
+
+适合已经会用 Dify 创建应用，但想把模型供应商换成本地 Ollama 的人。你可能希望数据尽量留在本机或内网，也可能只是想降低测试阶段的 API 成本。
+
+也适合接客户知识库项目的新手。客户常说“我们不想资料出去，能不能本地跑模型”，你需要解释本地模型能解决一部分数据流向问题，但不能自动解决权限、日志、备份和模型准确率。
+
+## 不适合谁
+
+不适合还没有跑通 Ollama 的人。Dify 配置之前，先确认 Ollama 服务能启动、模型已拉取、命令行可以正常回答。
+
+也不适合对回答质量要求很高、但硬件配置很弱的项目。本地小模型可能速度慢、上下文短、推理弱，适合原型和低风险场景，不一定适合正式业务判断。
+
+## 第一步：确认 Ollama 服务地址
+
+Ollama 常见本地服务地址是 `http://localhost:11434`，但如果 Dify 在 Docker 容器里，容器里的 `localhost` 不是宿主机。此时要根据部署方式设置可访问地址，例如宿主机地址、内网地址或 Docker 网络地址。
+
+新手排查时先问三件事：Ollama 在哪里运行，Dify 在哪里运行，Dify 所在环境能不能访问 Ollama 端口。不要只在浏览器或宿主机终端里测试。
+
+## 第二步：在 Dify 配置模型供应商
+
+Dify 需要在模型供应商里配置可用模型。配置时要注意 Base URL、模型名、模型类型和是否支持当前节点需要的能力。不同模型可能支持聊天，但不一定适合 embedding、工具调用或长上下文。
+
+如果模型列表不显示，先检查 Ollama 是否已经拉取模型，再检查 Dify 配置是否刷新。项目记录里要写清楚模型名、版本、参数和配置时间。
+
+## 第三步：先跑普通 LLM 节点
+
+不要一上来就测知识库。先创建一个简单应用，只让 LLM 节点回答普通问题。这样可以确认 Dify 到 Ollama 的基本调用链路是通的。
+
+测试时看三项：是否能返回，速度是否可接受，回答是否符合预期。若普通问答已经不稳定，知识库问答只会更难排查。
+
+## 第四步：再接知识库
+
+知识库问答涉及文档解析、切分、embedding、检索和模型生成。Ollama 本地模型可以做回答，但 embedding 是否使用本地模型、效果是否稳定，需要单独评估。
+
+建议先用一小批高质量文档做测试。准备 20 到 50 个真实问题，每个问题标注正确来源。知识库排错可以参考 [RAG 检索不到内容怎么办](/blog/rag-retrieval-no-context-debug-guide)。
+
+## 第五步：记录性能和边界
+
+本地模型常见限制是速度、显存、内存、上下文长度和并发。给客户演示时不能只展示一次成功回答，要记录多轮对话、长文档问答和多人同时使用时的表现。
+
+如果客户希望长期使用，要说明后续升级模型、替换机器、清理日志、备份知识库和处理失败反馈的方式。
+
+## 常见错误
+
+常见错误是把 Docker 网络问题误判成 Dify 配置错误。Dify 容器访问不到宿主机 Ollama 时，界面配置看起来正确，但调用仍然失败。
+
+另一个错误是把本地模型等同于高准确率。模型本地运行只是部署位置变化，知识库质量仍然取决于资料、检索、提示词和评测。
+
+## 风险提醒
+
+本地模型不代表可以随意导入客户资料。聊天记录、知识库文件、向量数据和日志都可能留在机器上，仍然需要权限和删除流程。
+
+如果 Dify 对公网开放，还要检查管理员账号、访问控制、HTTPS、备份和环境变量。不要把测试环境当正式环境长期使用。
+
+## 具体步骤
+
+第一步，确认 Ollama 已启动并有可用模型。第二步，确认 Dify 能访问 Ollama 服务地址。第三步，在模型供应商里配置 Ollama。第四步，创建简单应用测试 LLM 节点。第五步，再接入知识库并跑测试集。第六步，记录性能、限制和维护说明。需要检查表可以进入 [工具导航](/tools)。
+
+## 免责声明
+
+本文只用于技术学习和项目预评估，不构成安全、准确率、合规或商业效果承诺。正式交付前，应由人工核对官方文档、客户授权、部署环境和验收标准。
+
