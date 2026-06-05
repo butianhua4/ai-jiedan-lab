@@ -1,0 +1,119 @@
+---
+title: "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit"
+slug: "gpu-docker-nvidia-container-toolkit-guide"
+description: "面向新手整理 Docker 使用 NVIDIA GPU 的部署检查点，覆盖驱动、NVIDIA Container Toolkit、Docker runtime、nvidia-smi、CUDA 镜像和排错。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "Docker"
+  - "NVIDIA"
+  - "GPU"
+  - "大模型部署"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "想在 Docker 容器里使用 NVIDIA GPU 部署大模型的新手"
+searchIntent: "informational"
+primaryKeyword: "Docker 使用 NVIDIA GPU"
+secondaryKeywords:
+  - "NVIDIA Container Toolkit"
+  - "Docker GPU 部署"
+  - "nvidia-smi docker"
+  - "CUDA 容器"
+sourceNotes: "参考 NVIDIA Container Toolkit 官方安装文档和 NVIDIA deep learning container 文档方向整理；正式发布前需要人工核对最新 Linux 发行版、Docker 和 toolkit 版本。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 Docker GPU 部署检查表"
+  serviceCTA: "联系人工协助排查 GPU 容器环境"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 29
+canonical: "https://ai-jiedan-lab.vercel.app/blog/gpu-docker-nvidia-container-toolkit-guide"
+noindex: true
+---
+# Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit
+
+很多大模型部署教程一上来就让你跑 Docker 命令，但新手最常卡在一个基础问题：容器里看不到 GPU。搜索“Docker 使用 NVIDIA GPU”“NVIDIA Container Toolkit”“nvidia-smi docker”的人，往往不是模型不会部署，而是宿主机、驱动、容器 runtime 和镜像之间没有打通。
+
+这篇是草稿，正式发布前需要核对 NVIDIA 最新官方文档。vLLM 部署可以看 [vLLM 部署入门](/blog/vllm-deployment-beginner-guide)，本地大模型基础可以看 [本地大模型部署入门](/blog/local-llm-deployment-beginner)。
+
+## 适合谁
+
+适合想在 Linux 服务器、云 GPU 主机或工作站上用 Docker 跑 Ollama、vLLM、TGI、llama.cpp、ComfyUI 或其他 AI 服务的人。你已经有 NVIDIA GPU，但容器里不一定能访问。
+
+也适合接大模型部署项目的新手。客户经常说“服务器有 GPU，为什么模型跑得很慢”，你要先确认容器是否真的使用 GPU，而不是只看机器配置。
+
+## 不适合谁
+
+不适合没有 NVIDIA GPU 的环境。CPU 可以跑一部分小模型，但本文重点是 NVIDIA GPU 容器链路。
+
+也不适合把驱动、CUDA、Docker 和模型镜像混在一起乱装的人。GPU 环境排错要按层次来，不要看到报错就到处复制命令。
+
+## 第一步：先确认宿主机 GPU
+
+在 Docker 之前，先确认宿主机能看到 GPU。通常要检查 NVIDIA 驱动、`nvidia-smi`、系统版本和 GPU 型号。如果宿主机都看不到 GPU，容器里更不可能正常使用。
+
+记录驱动版本、CUDA 兼容情况、GPU 显存、服务器系统和 Docker 版本。客户项目里，这些信息是后续排错的基础。
+
+## 第二步：安装 NVIDIA Container Toolkit
+
+NVIDIA 官方文档说明 Container Toolkit 用于让容器运行时访问 NVIDIA GPU。安装后通常还需要配置 Docker runtime，并重启 Docker。
+
+不要把 CUDA 装进每个镜像里就以为解决了。容器需要通过 runtime 使用宿主机驱动，镜像里的 CUDA 库和宿主机驱动要兼容。
+
+## 第三步：用官方镜像测试
+
+安装完成后，先用简单 CUDA 或 NVIDIA 官方测试镜像运行 `nvidia-smi`。如果这个测试失败，不要急着跑大模型。
+
+测试通过后再运行 vLLM、TGI 或其他模型服务。这样可以把问题分层：先确认 GPU 容器链路，再确认模型服务。
+
+## 第四步：看显存和进程
+
+模型启动后，用宿主机 `nvidia-smi` 看显存占用和进程。如果显存没有变化，说明模型可能没有使用 GPU，或者服务根本没启动成功。
+
+不要只看日志里出现 CUDA 字样。真正验收要看显存、响应速度、模型输出和容器资源限制。
+
+## 第五步：记录环境和重启方式
+
+客户项目交付时，要写清 Docker 命令、Compose 文件、镜像版本、GPU 参数、端口、数据卷、日志位置和重启方式。
+
+如果不记录，后续升级驱动、更新 Docker、换镜像或重启服务器时，很容易重新踩坑。
+
+## 常见错误
+
+常见错误是只在宿主机看到 GPU，却没有确认容器里能看到。另一个错误是驱动、CUDA 镜像和模型框架版本不兼容。
+
+还有一种错误是把 `--gpus all` 当成万能参数。参数只是入口，runtime、toolkit、驱动和镜像都要正常。
+
+客户项目里，Docker GPU 环境的验收要写成表格：宿主机 `nvidia-smi`、容器内 `nvidia-smi`、测试镜像、模型镜像、显存占用、端口、启动命令和重启方式。这样客户后续换模型或重启机器时，不会把所有问题都归因到模型本身。
+
+如果部署多个服务，还要记录每个容器使用几张卡、是否限制显存、是否有端口冲突。GPU 机器贵，排查慢半天就是实际成本。
+
+## 风险提醒
+
+GPU 容器部署涉及驱动、系统包、Docker 配置和模型镜像，正式项目不要在生产环境随意升级。升级前要备份配置并记录回滚方式。
+
+如果服务器对公网开放，还要检查端口、认证和日志。大模型接口不能随便暴露。
+
+发布前复核时，至少让客户确认三件事：谁能登录服务器，谁能重启 Docker，谁负责升级驱动。GPU 环境不是一次性安装，后续维护责任要提前说清。
+
+## 具体步骤
+
+第一步，在宿主机确认 `nvidia-smi` 正常。第二步，按官方文档安装 NVIDIA Container Toolkit。第三步，配置并重启 Docker。第四步，用测试镜像确认容器里能看到 GPU。第五步，再部署模型服务并观察显存。第六步，整理环境、命令和交付说明。需要 Docker GPU 检查表可以进入 [工具导航](/tools)。
+
+## 免责声明
+
+本文只用于技术学习和项目预评估，不构成生产稳定性、安全、合规、性能或商业效果承诺。正式部署前，应由人工核对 NVIDIA 官方文档、服务器环境、客户授权和验收标准。

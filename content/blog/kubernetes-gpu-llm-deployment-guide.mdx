@@ -1,0 +1,123 @@
+---
+title: "Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界"
+slug: "kubernetes-gpu-llm-deployment-guide"
+description: "面向新手整理 Kubernetes 部署 GPU LLM 的基础检查点，覆盖 NVIDIA device plugin、nvidia.com/gpu、节点驱动、Pod 资源、日志和生产边界。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "Kubernetes"
+  - "GPU"
+  - "Device Plugin"
+  - "大模型部署"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "intermediate"
+targetReader: "想在 Kubernetes 集群里部署 GPU 大模型服务的新手进阶用户"
+searchIntent: "informational"
+primaryKeyword: "Kubernetes GPU 大模型部署"
+secondaryKeywords:
+  - "Kubernetes nvidia.com/gpu"
+  - "NVIDIA device plugin"
+  - "K8s GPU scheduling"
+  - "LLM Kubernetes deployment"
+sourceNotes: "参考 Kubernetes 官方 GPU scheduling 和 device plugin 文档方向整理；正式发布前需要人工核对最新 Kubernetes、NVIDIA plugin 和集群环境。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 Kubernetes GPU 部署检查表"
+  serviceCTA: "联系人工协助评估 K8s GPU 集群"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 29
+canonical: "https://ai-jiedan-lab.vercel.app/blog/kubernetes-gpu-llm-deployment-guide"
+noindex: true
+---
+# Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界
+
+Kubernetes 部署 GPU 大模型不是把普通 Deployment 换个镜像就结束。官方文档说明 Kubernetes 通过 device plugin 管理 GPU，节点需要驱动和厂商插件，Pod 通过类似 `nvidia.com/gpu` 的资源请求获得 GPU。新手搜索“Kubernetes GPU scheduling”“nvidia.com/gpu”“LLM Kubernetes deployment”，核心就是把调度和 GPU runtime 打通。
+
+这篇是草稿，正式发布前需要核对 Kubernetes 和 NVIDIA 最新官方文档。Docker GPU 基础可以看 [Docker 怎么用 NVIDIA GPU](/blog/gpu-docker-nvidia-container-toolkit-guide)，Ray Serve 可以看 [Ray Serve LLM 部署](/blog/ray-serve-llm-deployment-guide)。
+
+## 适合谁
+
+适合已经有 Kubernetes 集群，并希望在集群里运行 vLLM、TGI、Ray Serve、TensorRT-LLM 或其他推理服务的人。
+
+也适合企业内部平台团队。客户可能希望统一管理 GPU 服务、自动重启、滚动更新、日志和访问控制。
+
+## 不适合谁
+
+不适合只想快速跑一个模型的新手。单机 Docker、RunPod、Modal 或 BentoCloud 可能更快。
+
+也不适合没有集群运维能力的项目。Kubernetes GPU 部署涉及节点驱动、插件、调度、镜像、网络和监控。
+
+## 第一步：确认节点 GPU 和驱动
+
+每个 GPU 节点都要能看到 GPU，并安装对应驱动。宿主机问题不解决，Kubernetes 也无法调度出可用 GPU。
+
+记录节点名称、GPU 型号、显存、驱动版本和容器运行时。后续排查 Pod 为什么拿不到 GPU 时会用到。
+
+## 第二步：安装 Device Plugin
+
+Kubernetes 官方文档说明 GPU 通过 device plugin 暴露为可调度资源。NVIDIA GPU 通常需要安装 NVIDIA device plugin 或相关 operator。
+
+安装后要检查节点资源中是否出现 `nvidia.com/gpu`。如果没有出现，Pod 资源配置写得再对也调度不了。
+
+## 第三步：配置 Pod 资源
+
+GPU 通常在 Pod 的 resources limits 中声明。新手要注意 GPU 资源和 CPU、内存不同，调度语义也不同。
+
+部署 LLM 时还要配置显存需求、模型缓存、共享存储、端口、健康检查和日志。只申请 GPU 不代表模型能加载成功。
+
+## 第四步：测试最小 GPU Pod
+
+先部署一个能运行 `nvidia-smi` 的测试 Pod，确认容器里能看到 GPU。测试通过后再部署模型服务。
+
+如果最小测试失败，先查 device plugin、节点驱动、runtime 和权限。不要直接调试复杂模型镜像。
+
+## 第五步：部署模型服务并监控
+
+部署 vLLM、TGI 或其他服务后，要看 Pod 日志、GPU 显存、启动时间、健康检查、请求延迟和错误率。
+
+生产环境还要考虑滚动更新、回滚、节点故障、模型下载、镜像大小和队列。大模型 Pod 启动可能很慢，探针配置要合理。
+
+## 常见错误
+
+常见错误是忘记安装 device plugin。另一个错误是节点能看到 GPU，但 Pod 看不到 GPU。
+
+还有一种错误是用普通 Web 服务的探针和超时配置套大模型服务。模型加载需要时间，配置太激进会导致反复重启。
+
+客户项目里，Kubernetes GPU 部署要把“平台责任”和“模型责任”分开。平台负责节点、驱动、插件、调度、日志和网络；模型服务负责镜像、显存、启动、API 和业务结果。混在一起排查，会让每次故障都变成长会。
+
+验收时建议先用最小 GPU Pod 证明集群可调度，再用真实模型 Pod 证明业务可用。两层都记录下来，后续升级驱动或替换模型时更容易定位问题。
+
+## 风险提醒
+
+Kubernetes GPU 部署复杂度高，成本也高。不要为了“看起来企业级”就上 K8s。
+
+如果模型服务对外开放，要配置认证、限流、日志、密钥和网络策略。客户数据进入集群后，也要处理访问和删除流程。
+
+发布前复核时，要确认资源申请、节点标签、镜像版本和回滚方式。K8s 能自动调度，但不会自动替你判断模型服务是否真的适合当前集群。
+
+如果客户没有平台团队，Kubernetes GPU 可能不是第一选择。GPU 驱动、device plugin、镜像、调度和监控都需要长期维护。很多小团队用托管 GPU 或单机 Docker 会更快获得结果，等请求量和团队能力上来后再迁移到 K8s。
+
+最终交付件建议包含 YAML、镜像版本、资源申请、节点选择、探针配置、服务入口、日志入口和回滚命令。Kubernetes 的优势是可管理，但前提是配置能被团队读懂和复现。
+
+## 具体步骤
+
+第一步，确认 GPU 节点驱动和容器 runtime。第二步，安装并验证 NVIDIA device plugin。第三步，部署最小 GPU 测试 Pod。第四步，配置模型服务的 GPU、内存、存储和端口。第五步，测试模型启动和请求。第六步，加入监控、回滚和安全策略。需要 K8s GPU 检查表可以进入 [工具导航](/tools)。
+
+## 免责声明
+
+本文只用于技术学习和项目预评估，不构成费用、安全、稳定性、性能或商业效果承诺。正式上线前，应由人工核对 Kubernetes 官方文档、NVIDIA 插件文档、客户集群环境和验收标准。
