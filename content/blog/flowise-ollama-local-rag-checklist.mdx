@@ -1,0 +1,129 @@
+---
+title: "Flowise 接 Ollama 做本地 RAG：新手先跑通最小链路"
+slug: "flowise-ollama-local-rag-checklist"
+description: "面向新手整理 Flowise 接 Ollama 做本地 RAG 的检查清单，覆盖本地模型、文档、embedding、向量库、检索、回答和安全边界。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "Flowise"
+  - "Ollama"
+  - "RAG"
+  - "本地模型"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "想用 Flowise 和 Ollama 搭一个本地知识库问答 demo 的新手"
+searchIntent: "informational"
+primaryKeyword: "Flowise Ollama RAG"
+secondaryKeywords:
+  - "Flowise 接 Ollama"
+  - "本地 RAG"
+  - "Ollama 知识库"
+  - "Flowise 本地模型"
+sourceNotes: "结合 Flowise 部署文档和 Ollama API 文档整理；正式发布前需要人工核对节点、模型和版本兼容。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载本地 RAG 检查表"
+  serviceCTA: "联系人工协助搭本地 RAG"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 23
+canonical: "https://ai-jiedan-lab.vercel.app/blog/flowise-ollama-local-rag-checklist"
+noindex: true
+---
+# Flowise 接 Ollama 做本地 RAG：新手先跑通最小链路
+
+Flowise 加 Ollama 是很多人想尝试的本地 RAG 组合：用 Flowise 组装流程，用 Ollama 在本地跑模型，再接文档、embedding 和向量检索。新手要先跑通最小链路，而不是一开始就追求完整企业知识库。
+
+这篇是草稿，正式发布前需要核对 Flowise 节点、Ollama API 和模型兼容性。Flowise 部署可以看 [Flowise 本地部署](/blog/flowise-local-deployment-beginner-guide)，Ollama API 可以看 [Ollama API 接网页应用](/blog/ollama-api-web-app-integration)。
+
+## 适合谁
+
+适合想做本地知识库 demo、离线问答实验、个人资料助手或内部原型的人。你可能已经能跑 Ollama，也能打开 Flowise，但不知道如何把两者接成 RAG。
+
+也适合学习 AI 应用链路的人。这个组合能帮助你理解模型、embedding、向量库、检索和回答之间的关系。
+
+## 不适合谁
+
+不适合直接拿来做生产企业知识库的人。生产场景要考虑权限、多人并发、备份、监控、日志和文档更新。
+
+如果客户要求稳定上线，不能只交付一个本地 demo。要明确它是原型还是生产系统。
+
+## 最小链路是什么
+
+最小链路包括：本地模型能回答，文档能被读取，文本能被切分，embedding 能生成，向量库能检索，LLM 能基于检索结果回答。
+
+先让这条链路跑通，再考虑 UI、权限、更多文档和部署。链路不通时，堆更多工具只会更乱。
+
+## 检查 Ollama
+
+确认 Ollama 服务运行、模型已下载、本地 API 可调用。记录模型名称、响应速度和错误情况。
+
+如果模型太慢，先换小模型测试流程。RAG demo 的第一目标是跑通流程，不是立刻追求最好模型。
+
+## 检查 Flowise
+
+确认 Flowise 能正常启动，flow 能保存，凭据能配置，日志可查看。不要只看页面打开。
+
+如果使用 Docker 或服务器部署，要额外检查数据持久化和访问权限。
+
+## 检查文档和 embedding
+
+准备少量高质量文档，先不要上传一堆 PDF。测试文档切分是否合理，embedding 是否能生成，向量库是否能查到相关片段。
+
+如果检索不到正确片段，先检查切分和 embedding，不要急着改提示词。
+
+## 检查回答
+
+RAG 回答要基于检索资料。测试时同时看最终答案和检索来源。答案对但来源错，后续仍然有风险。
+
+还要测试找不到答案时，系统是否会承认找不到，而不是编造。
+
+本地 RAG 还要记录硬件表现：模型响应时间、embedding 时间、检索时间、文档数量、向量库大小。文档少时很快，不代表文档多时也稳定。把这些数据写进记录，后续扩展时才知道瓶颈在哪里。
+
+## 常见错误
+
+常见错误是把模型回答慢都归咎于模型。实际上瓶颈可能在文档加载、embedding、向量检索、提示词过长、硬件资源或网络。最小链路每一段都要单独测，才能知道该优化哪里。
+
+交付记录里要包含模型、embedding、向量库、文档数量、切分规则、测试问题、检索来源和响应时间。这个记录能帮助你把 demo 变成可复盘的项目，而不是一次性实验。
+
+排查时可以把问题拆成三段：Ollama 是否能稳定生成，Flowise 是否能正确编排节点，RAG 是否能检索到相关资料。不要把所有问题都归到“模型不行”。多数本地 RAG 问题其实出在文档、embedding、向量库或流程配置上。
+
+给客户演示时，建议先准备三类问题：资料里明确有答案的问题、资料里没有答案的问题、资料里有相近但不完全匹配的问题。第一类检查系统能不能答，第二类检查系统会不会编，第三类检查检索是否足够精准。三类都测过，演示才更接近真实使用。
+
+如果这个本地 RAG 后续要扩展成团队工具，还要提前考虑文档更新流程。谁负责新增资料，谁负责重新索引，谁负责检查回答是否变差，谁负责备份本地数据。没有这些流程，demo 很快会变成难维护的临时工具。
+
+## 风险提醒
+
+本地 RAG demo 很适合学习，但不要忽略隐私和权限。文档、向量库、日志和模型输入都可能包含敏感内容。
+
+如果要给客户交付，必须写清硬件要求、运行方式、数据位置、维护责任和已知限制。
+
+## 具体步骤
+
+第一步，跑通 Ollama 模型和本地 API。
+
+第二步，启动 Flowise，并建立最小聊天 flow。
+
+第三步，加入文档加载、切分、embedding 和向量库。
+
+第四步，接入检索结果，让模型基于资料回答。
+
+第五步，测试常见问题、找不到答案和错误场景。需要检查表或人工协助，可以从 [工具导航](/tools) 进入。
+
+## 免责声明
+
+本文是 Flowise 接 Ollama 做本地 RAG 的草稿，不构成生产部署或安全建议。工具节点、模型和版本兼容可能变化，正式发布前需要人工核对官方文档。涉及客户资料时，请由专业人员复核。

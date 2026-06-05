@@ -1,0 +1,123 @@
+---
+title: "Coze Bot 发布前检查什么：新手别只看能不能聊天"
+slug: "coze-bot-publish-checklist"
+description: "面向新手整理 Coze Bot 发布前检查清单，覆盖 Bot 目标、知识库、插件、工作流、权限、测试问题、发布渠道和人工复核。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "Coze"
+  - "Bot 发布"
+  - "AI Agent"
+  - "AI 基建"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "想用 Coze 搭 Bot、并准备发布到真实使用场景的新手"
+searchIntent: "informational"
+primaryKeyword: "Coze Bot 发布"
+secondaryKeywords:
+  - "Coze 教程"
+  - "Coze Bot"
+  - "Coze 工作流"
+  - "Bot 发布检查"
+sourceNotes: "Coze 具体发布流程和渠道变化较快；正式发布前需要人工核对 Coze 官方文档和当前控制台界面。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 Bot 发布检查表"
+  serviceCTA: "联系人工协助测试 Coze Bot"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 23
+canonical: "https://ai-jiedan-lab.vercel.app/blog/coze-bot-publish-checklist"
+noindex: true
+---
+# Coze Bot 发布前检查什么：新手别只看能不能聊天
+
+Coze 这类 Bot 搭建平台很容易让新手快速做出一个能聊天的 AI 助手。但发布前真正要检查的不是“能不能回复”，而是 Bot 目标是否清楚、知识来源是否可靠、插件和工作流权限是否安全、测试问题是否覆盖边界、发布渠道是否符合场景。
+
+这篇是草稿，正式发布前需要核对 Coze 最新官方文档和控制台界面。工具选型可以看 [Dify、Coze、Flowise 怎么选](/blog/dify-coze-flowise-agent-builder-comparison)，Agent 权限可以看 [Agent 工具调用怎么设计](/blog/agent-tool-calling-beginner-guide)。
+
+## 适合谁
+
+适合想用 Coze 做客服 Bot、知识问答 Bot、内容助手、运营助手、学习助手或内部流程助手的人。你可能已经搭出了 demo，但还不确定能不能发布给别人用。
+
+也适合接 Bot 搭建任务的新手。客户说“帮我做一个 Coze 机器人”，你要问清发布渠道、知识来源、插件权限、失败处理和维护方式。
+
+## 不适合谁
+
+不适合只测试一句话就发布的人。Bot 看似能回答，但遇到边界问题、敏感问题、找不到资料、插件失败时可能表现很差。
+
+如果 Bot 涉及客户数据、外部用户、交易、账号权限或对外发送消息，新手不应该独立上线。
+
+## 检查一：Bot 目标
+
+先写清 Bot 要解决什么问题。是回答 FAQ、推荐资料、整理输入、生成草稿，还是执行工作流。目标不清楚，Bot 会变成什么都能聊、什么都不稳定。
+
+一个好的 Bot 目标应该能被测试。例如“根据产品文档回答 30 个常见问题，并在找不到依据时提示联系人工”。
+
+## 检查二：知识来源
+
+如果 Bot 依赖知识库，要确认资料来源、更新时间、权限和引用方式。不要把未经审核的文档直接给外部用户使用。
+
+如果资料会更新，还要写清维护人。知识库过期后，Bot 可能仍然自信回答旧信息。
+
+## 检查三：插件和工作流
+
+Coze Bot 可能会接插件、工作流或外部能力。要把每个工具分级：只读、写入、外部执行。不同级别需要不同确认。
+
+如果 Bot 能调用外部系统，就必须测试失败情况和权限不足情况。不要只测成功路径。
+
+## 检查四：发布渠道
+
+发布到内部测试、公开页面、社群、客服入口或其他渠道，风险不同。公开渠道要更严格地检查语气、敏感问题、免责声明和人工转接。
+
+如果发布给客户使用，要写清 Bot 不是人工客服，也不能替代专业判断。
+
+## 检查五：测试问题
+
+准备一组测试问题：常见问题、模糊问题、恶意问题、找不到答案、权限不足、插件失败、重复追问。每个问题都记录预期结果。
+
+只测试“你好”和一个标准问题，没有任何意义。真实用户不会按你的理想脚本提问。
+
+发布后也要留反馈入口。用户发现回答不对、资料过期、Bot 误解问题时，应该知道如何反馈给维护者。没有反馈入口，Bot 会停留在发布当天的状态，问题会慢慢累积。
+
+## 常见错误
+
+常见错误是把 Bot 的“语气好”当成“质量好”。真实质量要看能否引用正确资料、能否拒绝越界问题、能否在插件失败时解释、能否把用户引导到下一步。发布前测试要覆盖这些场景。
+
+交付记录里要写清 Bot 的用途、知识来源、插件和工作流、发布渠道、维护人、测试问题和已知限制。客户后续要改知识库或发布渠道时，才能知道应该从哪里改。
+
+## 风险提醒
+
+Bot 最大风险是看起来聪明，但边界不清。用户可能把它当成官方承诺、专业建议或自动执行工具。发布前必须写清用途和限制。
+
+如果 Bot 会收集用户输入，要考虑隐私、日志、保存时间和访问权限。不要把敏感信息随便暴露给维护人员。
+
+## 具体步骤
+
+第一步，写清 Bot 目标、受众和发布渠道。
+
+第二步，检查知识库、插件、工作流和权限。
+
+第三步，准备测试问题和失败场景。
+
+第四步，内部测试后再发布到真实渠道。
+
+第五步，记录反馈和维护责任。需要发布检查表或人工协助测试，可以从 [工具导航](/tools) 进入。
+
+## 免责声明
+
+本文是 Coze Bot 发布检查草稿，不构成具体平台发布、安全或合规建议。Coze 功能和发布渠道可能变化，正式发布前需要人工核对官方文档。涉及客户数据和公开用户时，请由专业人员复核。

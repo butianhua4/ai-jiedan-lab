@@ -1,0 +1,115 @@
+---
+title: "Dify 知识库怎么搭：从上传文档到 RAG 问答"
+slug: "dify-knowledge-base-beginner-guide"
+description: "面向新手整理 Dify 知识库搭建流程，覆盖文档准备、知识库创建、检索节点、metadata filtering、引用来源、测试和上线边界。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "Dify"
+  - "知识库"
+  - "RAG"
+  - "AI 基建"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "想用 Dify 搭知识库问答、但还不熟悉 RAG 流程的新手"
+searchIntent: "informational"
+primaryKeyword: "Dify 知识库"
+secondaryKeywords:
+  - "Dify RAG"
+  - "Dify knowledge base"
+  - "Dify 知识库教程"
+  - "Dify metadata filtering"
+sourceNotes: "参考 Dify 官方 Knowledge 和 Knowledge Retrieval 文档整理；正式发布前需要人工核对最新界面、价格和部署方式。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 Dify 知识库检查表"
+  serviceCTA: "联系人工协助搭建 Dify 知识库"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 23
+canonical: "https://ai-jiedan-lab.vercel.app/blog/dify-knowledge-base-beginner-guide"
+noindex: true
+---
+# Dify 知识库怎么搭：从上传文档到 RAG 问答
+
+Dify 知识库是很多人搜索 AI 应用搭建时会遇到的入口。官方文档把 Knowledge 描述为可集成到 AI 应用里的自有数据集合，并通过 RAG 让模型先检索相关资料，再结合用户问题生成回答。对新手来说，重点不是“上传文档就完事”，而是资料准备、检索设置、metadata filtering、引用来源和上线测试。
+
+这篇是草稿，正式发布前需要核对 Dify 最新界面和官方文档。更通用的 RAG 流程可以看 [RAG 知识库怎么搭](/blog/rag-knowledge-base-beginner-guide)，工具选型可以看 [Dify、Coze、Flowise 怎么选](/blog/dify-coze-flowise-agent-builder-comparison)。
+
+## 适合谁
+
+适合想用 Dify 做企业 FAQ、客服知识库、产品手册问答、课程资料问答或内部 SOP 助手的人。你可能已经有文档，但不知道如何把文档变成可检索、可引用、可测试的知识库。
+
+也适合接 AI 知识库项目的新手。客户说“帮我搭一个 Dify 知识库”，你要继续问文档来源、权限、更新频率、测试问题、回答格式和维护负责人。
+
+## 不适合谁
+
+不适合资料还没有整理、文档互相矛盾、权限边界不清，却希望 Dify 自动解决所有问题的人。知识库效果很大程度取决于资料质量。
+
+如果项目包含客户隐私、合同、人事、财务、内部账号或敏感业务信息，新手不应该独立决定上传和权限方案。
+
+## 第一步：准备文档
+
+先列出知识库要包含哪些资料：FAQ、产品说明、客服记录、课程资料、SOP、网页内容或 PDF。每份资料都要有来源、负责人、更新时间和可见范围。
+
+不要把过期资料和重复资料直接上传。RAG 的回答会受资料质量影响，资料越乱，模型越容易给出看似合理但不可靠的答案。
+
+## 第二步：创建知识库
+
+创建知识库时，要关注文档格式、切分方式、索引模式、embedding 和检索设置。新手不一定一开始就懂所有参数，但至少要记录当前设置，方便后续复盘。
+
+如果是客户项目，建议先用一小批高质量文档做试点。跑通检索和回答质量后，再批量导入更多资料。
+
+## 第三步：接入 Knowledge Retrieval 节点
+
+Dify 的 Knowledge Retrieval 节点用于从指定知识库检索和用户查询相关的内容，并把结果作为上下文传给后续 LLM 节点。官方文档也提到检索结果会包含文档 chunk、metadata、title 等信息。
+
+这意味着你可以把知识库检索作为工作流的一步，而不是把所有资料都塞进提示词。节点配置时要明确查询变量、知识库范围、Top K、Score Threshold 和 rerank 设置。
+
+## 第四步：使用 metadata filtering
+
+metadata filtering 很适合文档较多、场景不同或权限复杂的知识库。比如同一个知识库里有产品 A、产品 B、内部版、公开版，就可以通过 metadata 缩小检索范围。
+
+不要等知识库很大才补 metadata。文档导入时就设计项目、部门、版本、更新时间、可见范围等字段，后续检索会更可控。
+
+## 第五步：测试引用和答案
+
+知识库问答最好带引用或来源，让用户知道答案基于哪份文档。没有来源的答案不方便信任，也不方便纠错。
+
+测试时准备常见问题、边界问题、找不到答案的问题和权限问题。系统应该能回答有依据的问题，也应该能在没有资料时说明找不到依据。
+
+## 风险提醒
+
+Dify 能降低搭建门槛，但不会自动保证资料准确、权限安全或回答可靠。知识库上线前必须人工检查文档、检索结果、引用来源和权限边界。
+
+如果使用 Dify Cloud 或自部署 Dify，还要分别核对数据存储、访问权限、日志和费用。正式项目不要只看演示效果。
+
+## 具体步骤
+
+第一步，整理文档清单，标注来源、负责人、更新时间和可见范围。
+
+第二步，创建小规模知识库，先导入高质量资料。
+
+第三步，在应用或工作流中加入 Knowledge Retrieval 节点。
+
+第四步，配置检索参数、metadata filtering 和引用显示。
+
+第五步，用测试问题验收。需要 Dify 知识库检查表或人工协助，可以从 [工具导航](/tools) 进入。
+
+## 免责声明
+
+本文是 Dify 知识库入门草稿，不构成具体部署、安全或商业建议。Dify 功能、界面、价格和限制可能变化，正式发布前需要人工核对官方文档。涉及企业数据和客户资料时，请由专业人员复核。

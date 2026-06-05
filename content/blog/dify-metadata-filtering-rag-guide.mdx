@@ -1,0 +1,125 @@
+---
+title: "Dify metadata filtering 怎么用：让知识库检索更可控"
+slug: "dify-metadata-filtering-rag-guide"
+description: "解释 Dify metadata filtering 在 RAG 知识库里的用途，覆盖文档标签、检索过滤、权限、版本、场景筛选和测试方法。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "Dify"
+  - "metadata filtering"
+  - "RAG"
+  - "知识库"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "已经搭 Dify 知识库、想让检索按场景或权限过滤的新手"
+searchIntent: "informational"
+primaryKeyword: "Dify metadata filtering"
+secondaryKeywords:
+  - "Dify metadata"
+  - "Dify RAG 检索"
+  - "知识库过滤"
+  - "RAG 权限过滤"
+sourceNotes: "参考 Dify 官方 metadata filtering 和 Knowledge Retrieval 文档整理；正式发布前需要人工核对最新功能和限制。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 metadata 字段设计表"
+  serviceCTA: "联系人工协助设计 Dify 检索过滤"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 23
+canonical: "https://ai-jiedan-lab.vercel.app/blog/dify-metadata-filtering-rag-guide"
+noindex: true
+---
+# Dify metadata filtering 怎么用：让知识库检索更可控
+
+Dify 官方文档把 metadata filtering 用在 Knowledge Retrieval 中，用来根据文档 metadata 过滤检索范围。对新手来说，它解决的不是“让模型更聪明”，而是“让模型只在该看的资料里找答案”。当知识库文档多、版本多、权限复杂、场景不同，metadata filtering 就很重要。
+
+这篇是草稿，正式发布前需要核对 Dify 最新文档。基础知识库流程可以看 [Dify 知识库怎么搭](/blog/dify-knowledge-base-beginner-guide)，权限设计可以看 [AI 知识库权限怎么设计](/blog/knowledge-base-permission-design-guide)。
+
+## 适合谁
+
+适合已经有 Dify 知识库，但发现检索结果太宽、不同产品资料混在一起、内部和公开资料难区分的人。
+
+也适合做企业知识库的人。企业资料通常有部门、版本、项目、权限、地区、语言等维度，不适合全部混在同一个检索空间里。
+
+## 不适合谁
+
+不适合文档很少、场景很简单的人。如果只有十几篇公开 FAQ，metadata filtering 可能不是第一优先级。
+
+如果你还没有整理文档来源和分类，先不要急着配置过滤。metadata 依赖清楚的资料治理。
+
+## metadata 是什么
+
+metadata 可以理解为文档的标签或属性。例如产品、版本、部门、地区、语言、可见范围、更新时间、文档类型。
+
+这些字段不一定直接给用户看，但会帮助系统在检索时缩小范围。比如用户问产品 A，就只检索产品 A 的资料。
+
+## 什么时候需要过滤
+
+第一种情况是多产品。产品 A 和产品 B 的说明不同，如果不筛选，答案可能混用。
+
+第二种情况是多版本。旧版和新版规则不同，用户问新版时不应该检索旧文档。
+
+第三种情况是权限。内部资料和公开资料不能混在一起给所有用户查。
+
+## 如何设计字段
+
+字段不要一开始设计太复杂。可以先选 3 到 5 个最常用字段：product、version、visibility、department、updated_at。
+
+字段值要稳定，不要今天写“公开”，明天写“public”，后天写“对外”。不统一的 metadata 会让过滤失效。
+
+## 如何测试过滤
+
+用同一个问题，分别切换 metadata 条件测试。例如只查产品 A，只查产品 B，只查公开资料，只查内部资料。看检索来源是否符合预期。
+
+测试不要只看最终回答，还要看检索到了哪些 chunk。回答正确但来源错误，仍然有风险。
+
+交付时建议把 metadata 字段表作为附件。字段名、字段含义、允许值、维护人、更新频率都写清楚。这样后续新增文档时，团队不会随意写字段值，导致过滤规则越来越乱。
+
+## 常见错误
+
+常见错误是字段设计太随意。比如同一个字段里同时出现“公开”“public”“外部可见”，过滤时就会漏掉一部分资料。metadata filtering 要求字段值稳定，最好提前约定枚举值和填写规则。
+
+交付记录里要包含字段表、示例文档、过滤条件、测试问题和检索来源截图。这样后续有人新增文档时，不会只知道上传文件，却不知道 metadata 应该怎么填。
+
+排查时可以按这个顺序来：先确认文档 metadata 是否写对，再确认 Knowledge Retrieval 节点是否启用了正确过滤条件，然后查看实际检索到的 chunk，最后再看 LLM 回答。不要一开始就改 prompt，因为检索范围错了，prompt 再好也拿不到正确资料。
+
+给非技术客户解释时，可以把 metadata 说成“文档标签”，把 filtering 说成“只在符合条件的文档里查”。比如同一个知识库里有公开资料和内部资料，用户是访客时只查公开资料，员工登录后才查内部资料。这样客户更容易理解为什么上传文档前要先整理标签，而不是把所有资料一次性丢进去。
+
+如果团队以后会持续新增文档，最好指定一个文档管理员。管理员负责检查标签是否统一、版本是否正确、旧文档是否下线。没有这个角色，技术人员配置得再好，后续也会因为资料维护混乱而影响回答质量。
+
+## 风险提醒
+
+metadata filtering 不能替代完整权限系统。它可以帮助缩小检索范围，但用户认证、角色、访问控制和日志仍然要单独设计。
+
+另一个风险是字段过期。文档版本更新了，但 metadata 没更新，系统仍然可能检索旧资料。
+
+## 具体步骤
+
+第一步，列出知识库文档分类和权限维度。
+
+第二步，设计 3 到 5 个核心 metadata 字段。
+
+第三步，导入文档时填写稳定字段值。
+
+第四步，在 Knowledge Retrieval 中配置 metadata filtering。
+
+第五步，用测试问题验证来源和回答。需要字段设计表或人工协助，可以从 [工具导航](/tools) 进入。
+
+## 免责声明
+
+本文是 Dify metadata filtering 入门草稿，不构成企业权限或安全架构建议。Dify 功能和界面可能变化，正式发布前需要人工核对官方文档。涉及敏感资料时，请由专业人员复核。

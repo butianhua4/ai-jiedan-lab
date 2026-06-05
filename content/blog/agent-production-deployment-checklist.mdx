@@ -1,0 +1,129 @@
+---
+title: "Agent 生产上线检查表：权限、日志、成本和人工确认"
+slug: "agent-production-deployment-checklist"
+description: "整理 Agent 生产上线前检查清单，覆盖目标、工具权限、记忆、RAG、日志、成本、失败处理、人工确认、监控和回退。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "Agent 上线"
+  - "AI Agent"
+  - "生产部署"
+  - "AI 基建"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "准备把 Agent 从 demo 推到真实用户或内部生产环境的新手"
+searchIntent: "informational"
+primaryKeyword: "Agent 生产上线"
+secondaryKeywords:
+  - "Agent 部署检查"
+  - "AI Agent 上线"
+  - "Agent 权限"
+  - "Agent 监控"
+sourceNotes: "AI Agent 生产上线通用检查草稿；正式发布前需要人工核对所用框架、模型和部署平台。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 Agent 上线检查表"
+  serviceCTA: "联系人工协助做上线评审"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 23
+canonical: "https://ai-jiedan-lab.vercel.app/blog/agent-production-deployment-checklist"
+noindex: true
+---
+# Agent 生产上线检查表：权限、日志、成本和人工确认
+
+Agent demo 能跑，不代表可以生产上线。真正上线前，要检查目标、工具权限、记忆、RAG、日志、成本、失败处理、人工确认、监控和回退。Agent 比普通聊天工具风险更高，因为它可能会调用工具、写入数据、触发外部动作。
+
+这篇是草稿，适合作为生产上线评审框架。Agent 部署入门可以看 [Agent 部署怎么做](/blog/agent-deployment-beginner-guide)，工具调用可以看 [Agent 工具调用怎么设计](/blog/agent-tool-calling-beginner-guide)。
+
+## 适合谁
+
+适合准备把 Agent 给真实用户、客户团队或内部生产环境使用的人。你可能已经有了一个能演示的工作流，但还没有上线检查表。
+
+也适合做交付评审的人。客户看到 demo 往往会觉得已经完成，但上线需要更多工程和流程工作。
+
+## 不适合谁
+
+不适合只做个人实验的人。个人 demo 可以简化，但只要给别人使用，就要认真处理权限和日志。
+
+如果 Agent 会操作生产系统、发送消息、修改数据或处理客户资料，新手不应该独立上线。
+
+## 检查一：目标和边界
+
+写清 Agent 做什么、不做什么、给谁用、在什么环境用、成功标准是什么。没有边界的 Agent 最容易失控。
+
+目标要可测试。例如“根据内部知识库回答员工问题，并在无依据时提示联系人工”，比“做一个智能助手”更适合上线。
+
+## 检查二：工具权限
+
+列出所有工具：搜索、读文档、查数据库、写任务、发消息、运行脚本。分成只读、写入和外部执行。
+
+写入和外部执行工具必须有人工确认、日志和回退。不要让 Agent 自行决定高风险动作。
+
+## 检查三：记忆和知识库
+
+记忆要可查看、可更新、可删除。知识库要有来源、权限、更新时间和引用。不要把聊天记录、用户偏好和企业文档混成一团。
+
+如果使用 RAG，要测试检索来源、权限过滤和找不到答案的情况。
+
+## 检查四：成本和延迟
+
+Agent 多步执行会调用模型多次，也可能调用 embedding、向量库和外部工具。上线前要估算每次任务的成本和响应时间。
+
+设置每日上限、用户频率限制、超时和监控。不要等费用异常后再补。
+
+## 检查五：失败和人工确认
+
+Agent 必须知道什么时候停下来。材料不足、权限不足、工具失败、结果不确定、用户取消时，它不应该硬做。
+
+人工确认点要写清楚：生成草稿后确认，写入数据前确认，外部发送前确认，生产修改前确认。
+
+## 检查六：监控和回退
+
+监控请求量、错误率、延迟、成本、工具失败、用户反馈和高风险动作。日志要能追踪每一步，但也不能泄漏敏感信息。
+
+回退方案包括禁用工具、切换模型、暂停 Agent、恢复旧版本、转人工处理。上线前就要准备。
+
+生产上线还要有负责人。谁看监控，谁处理报警，谁审核高风险动作，谁维护知识库，谁决定暂停 Agent，都要写清楚。没有负责人，Agent 出错时就会变成所有人都着急、没人能处理。
+
+## 常见错误
+
+常见错误是把 Agent 上线当成普通网页上线。网页主要展示内容，Agent 会判断、调用工具、保存记忆、生成输出甚至触发动作。它的测试集必须覆盖更多失败情况，监控也要关注工具调用和高风险动作。
+
+交付记录里要写清 Agent 目标、工具清单、权限等级、人工确认点、记忆规则、知识库来源、成本限制、日志位置和回退方案。没有这份记录，后续维护会非常困难。
+
+## 风险提醒
+
+Agent 最大风险是把建议变成动作。一个错误回答可能只是沟通问题，一个错误动作可能造成真实损失。
+
+生产上线要保守。先内部试运行，再小范围开放，再逐步扩大。每一步都要有评估和回退。
+
+## 具体步骤
+
+第一步，写清 Agent 目标、用户和边界。
+
+第二步，列出工具、权限、记忆、知识库和人工确认点。
+
+第三步，准备测试集，覆盖正常和异常情况。
+
+第四步，设置日志、监控、成本限制和回退方案。
+
+第五步，完成上线评审。需要检查表或人工协助，可以从 [工具导航](/tools) 进入。
+
+## 免责声明
+
+本文是 Agent 生产上线检查草稿，不构成生产安全或合规建议。具体框架、模型、工具和平台规则会变化，正式发布前需要人工核对。涉及生产系统和客户数据时，请由专业人员复核。
