@@ -1,0 +1,114 @@
+---
+title: "Open WebUI + Ollama 怎么部署：本地大模型网页聊天入门"
+slug: "open-webui-ollama-docker-guide"
+description: "面向新手整理 Open WebUI 搭配 Ollama 的 Docker 部署思路，覆盖本机模型、Docker 网络、端口、模型连接、知识库测试和上线前检查。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "Open WebUI"
+  - "Ollama"
+  - "Docker"
+  - "本地大模型"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "想把 Ollama 本地模型接到网页聊天界面的新手"
+searchIntent: "informational"
+primaryKeyword: "Open WebUI Ollama 部署"
+secondaryKeywords:
+  - "Open WebUI Docker"
+  - "Ollama 网页界面"
+  - "本地大模型部署"
+  - "Open WebUI 连接 Ollama"
+sourceNotes: "参考 Open WebUI 官方 Quick Start、Ollama provider 文档和 Ollama Docker 文档整理；正式发布前需要人工核对最新命令、镜像名和连接地址。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 Open WebUI + Ollama 部署检查表"
+  serviceCTA: "联系人工协助检查本地大模型部署"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 25
+canonical: "https://ai-jiedan-lab.vercel.app/blog/open-webui-ollama-docker-guide"
+noindex: true
+---
+# Open WebUI + Ollama 怎么部署：本地大模型网页聊天入门
+
+很多人搜索“本地大模型网页界面”“Ollama 怎么做 ChatGPT 界面”“Open WebUI Docker 部署”，真正想解决的是一个朴素问题：模型已经能在命令行里跑，怎样让自己、同事或客户通过浏览器更方便地使用。Open WebUI 常被用来给 Ollama、OpenAI-compatible API 和其他模型服务提供聊天界面，适合做本地演示、内部知识库试验和小团队原型。
+
+这篇是草稿，正式发布前需要核对 Open WebUI 和 Ollama 最新文档。更底层的模型服务可以看 [Ollama 本地模型部署](/blog/ollama-local-model-deployment-guide)，如果要把本地模型接进业务接口，可以继续看 [Ollama API 接入网页应用](/blog/ollama-api-web-app-integration)。
+
+## 适合谁
+
+适合已经知道 Ollama 是什么，想把本地模型变成网页聊天入口的人。你可能已经在电脑或服务器上跑过 `ollama run`，但不想每次都用终端，也希望有会话记录、模型选择、用户界面和基础配置入口。
+
+也适合给客户做本地 AI 工具演示的新手。客户常说“我们想自己部署一个 AI 聊天，不想一开始就做复杂系统”，这时 Open WebUI + Ollama 可以作为低门槛原型，但你仍然要解释清楚硬件、模型能力、数据边界和维护责任。
+
+## 不适合谁
+
+不适合把它当成立刻可商用的完整企业平台。网页能打开、模型能回答，只说明原型跑通了，不代表权限、审计、备份、访问控制、成本、内容安全都已经处理好。
+
+如果客户要处理合同、医疗、法律、财务、人事或内部账号资料，新手不应该只凭教程直接上线。需要先确认数据是否允许进入本地模型、是否会被记录、谁能访问、日志如何保留以及删除流程。
+
+## 第一步：先确认 Ollama 是否正常
+
+不要一上来就排查 Open WebUI。先确认 Ollama 服务能启动，模型能拉取，命令行能正常回答。如果模型本身没有下载好，或者机器内存不够，网页界面再漂亮也无法稳定使用。
+
+同时记录模型名、模型大小、机器配置、操作系统、是否使用 Docker、Ollama 监听地址和端口。以后客户说“网页打不开”或“模型不显示”，这些信息会直接影响排查路径。
+
+## 第二步：理解 Docker 网络地址
+
+Open WebUI 放在 Docker 容器里时，它看到的 `localhost` 通常是容器自己，不一定是宿主机。官方文档里常见的连接思路是让容器通过类似 `host.docker.internal` 的地址访问宿主机上的 Ollama 服务。
+
+这是新手最容易卡住的地方。浏览器访问 `localhost:3000` 成功，不代表容器内部能访问 `localhost:11434`。部署记录里要写清楚 Open WebUI 在哪里，Ollama 在哪里，两者是不是同一个 Docker 网络，连接地址具体是什么。
+
+## 第三步：启动 Open WebUI
+
+使用 Docker 启动时，要关注端口映射、数据卷、容器名、重启策略和连接配置。数据卷很重要，因为聊天记录、用户设置和界面配置通常不能随着容器删除而丢失。
+
+如果只是个人测试，可以先用最小命令跑通。若要给客户交付，建议改成 Docker Compose，并把配置、数据目录、环境变量、备份方式写进交付说明。交付不是把命令发给客户就结束，而是让客户知道以后怎么重启、升级和排错。
+
+## 第四步：连接模型并测试
+
+进入 Open WebUI 后，先看模型列表是否能读取到 Ollama 模型。如果看不到模型，不要急着换模型，先检查 Ollama 地址、端口、容器网络和服务状态。
+
+测试时准备三类问题：普通问答、长文本总结、模型能力边界。不要只问“你好”，那只能证明服务活着，不能证明系统适合客户的业务。你要记录响应速度、输出质量、显存或内存占用，以及连续对话是否稳定。
+
+## 第五步：再考虑知识库和多人使用
+
+Open WebUI 可以扩展到文档、知识库和多用户场景，但这些不是第一步。先把模型连接和聊天稳定性跑通，再做文档上传、RAG 设置、权限和引用来源。
+
+如果客户需要“上传公司资料后提问”，建议先阅读 [RAG 知识库怎么搭](/blog/rag-knowledge-base-beginner-guide) 和 [RAG 检索不到内容怎么排查](/blog/rag-retrieval-no-context-debug-guide)。知识库效果取决于文档质量、切分、embedding、检索参数和测试集，不是装上界面就自然准确。
+
+## 常见错误
+
+常见错误是把“浏览器打不开”和“模型连不上”混在一起。浏览器打不开通常查端口、防火墙、容器状态；模型连不上通常查 Ollama 服务、连接地址、Docker 网络和模型列表。
+
+另一个错误是只复制命令，不记录环境。不同系统、Docker Desktop、Linux 服务器、WSL、GPU 驱动和网络策略都会影响结果。接客户项目时，部署记录要比命令本身更重要。
+
+## 风险提醒
+
+本地部署不等于天然安全。聊天记录、上传文件、容器数据卷、模型输出和访问入口都可能产生风险。上线前要确认谁能访问网页、是否需要登录、数据是否备份、如何删除历史记录，以及是否允许把客户资料导入。
+
+模型能力也要说清楚。小模型适合内部试验和轻量任务，不一定适合复杂推理、严肃业务判断或高准确率知识问答。不要把演示效果包装成稳定生产能力。
+
+## 具体步骤
+
+第一步，确认 Ollama 已安装并能运行至少一个模型。第二步，决定 Open WebUI 和 Ollama 是同机、同容器网络，还是分开部署。第三步，用 Docker 或 Docker Compose 启动 Open WebUI，并挂载数据卷。第四步，在后台连接 Ollama 地址，检查模型列表。第五步，用真实问题测试响应速度、稳定性和边界。需要检查表或人工协助，可以从 [工具导航](/tools) 进入。
+
+## 免责声明
+
+本文只用于技术学习和项目预评估，不构成安全、法律、财务或商业承诺。正式给客户部署前，应由人工核对官方文档、授权条款、数据边界、访问权限和备份方案。
+

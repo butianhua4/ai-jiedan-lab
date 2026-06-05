@@ -1,0 +1,114 @@
+---
+title: "RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路"
+slug: "rag-retrieval-no-context-debug-guide"
+description: "面向新手整理 RAG 检索不到上下文的排查路线，覆盖资料质量、chunk、embedding、向量库、过滤条件、Top K、rerank 和测试集。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "RAG"
+  - "检索"
+  - "向量数据库"
+  - "知识库排错"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "知识库回答不准、检索不到资料、想系统排查 RAG 的新手"
+searchIntent: "informational"
+primaryKeyword: "RAG 检索不到内容"
+secondaryKeywords:
+  - "RAG no context"
+  - "知识库检索不到"
+  - "向量数据库检索问题"
+  - "RAG 排错"
+sourceNotes: "参考 LangChain、LlamaIndex、FastGPT、Open WebUI 等官方 RAG 文档和检索参数说明整理；正式发布前需要人工核对具体工具界面。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 RAG 检索排错清单"
+  serviceCTA: "联系人工协助排查知识库检索问题"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 25
+canonical: "https://ai-jiedan-lab.vercel.app/blog/rag-retrieval-no-context-debug-guide"
+noindex: true
+---
+# RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路
+
+“RAG 检索不到内容”“知识库没有召回上下文”“明明上传了文档为什么回答胡说”是非常常见的问题。新手第一反应往往是换模型，但很多时候问题不在模型，而在资料、切分、embedding、向量库、过滤条件或检索参数。
+
+这篇是草稿，正式发布前需要核对各工具最新界面。RAG 基础可以看 [RAG 知识库怎么搭](/blog/rag-knowledge-base-beginner-guide)，分块策略可以看 [RAG 分块策略指南](/blog/rag-chunking-strategy-guide)。
+
+## 适合谁
+
+适合已经搭了 Dify、FastGPT、Open WebUI、LangChain、LlamaIndex 或其他知识库工具，但回答经常不引用资料的人。你可能看到系统能聊天，却不能稳定找回正确文档。
+
+也适合接知识库优化项目的新手。客户说“资料都传了，为什么 AI 还答错”，你需要有一套排查顺序，而不是凭感觉改提示词。
+
+## 不适合谁
+
+不适合资料还没准备好的人。没有清晰、准确、可检索的资料，任何排错都会变成猜测。先整理资料，再谈检索优化。
+
+也不适合期待一次调参解决所有问题的场景。RAG 是一条链路，资料、索引、检索、重排、提示词和模型都会影响结果。
+
+## 第一步：确认资料真的进了索引
+
+先不要看最终回答，先确认文档是否导入成功、是否完成 embedding、是否进入正确知识库或 collection。很多“检索不到”的问题，本质是资料根本没有进入索引。
+
+检查文件格式、解析结果、失败日志、文档数量、chunk 数量和更新时间。如果导入工具能显示切片内容，要随机抽查几段，看看是否有乱码、空内容、重复页眉或扫描识别错误。
+
+## 第二步：检查问题和资料是否同一种语言
+
+如果资料是英文，问题是中文，或者资料使用大量内部缩写，embedding 可能召回不稳定。不是所有模型都能很好处理跨语言、缩写、错别字和行业术语。
+
+可以准备同义问题测试：原词提问、换说法提问、缩写提问、完整名称提问。看哪些问题能召回，哪些不能召回，就能判断是否需要 query rewrite、术语表或元数据过滤。
+
+## 第三步：检查 chunk 是否太大或太碎
+
+chunk 太大，相关内容可能被无关内容稀释；chunk 太碎，答案需要的上下文可能分散在多个片段里。不要只看 chunk 数量，要看问题能不能召回包含完整答案的片段。
+
+对每个失败问题，人工找到正确原文，再看正确原文被切成了什么样。如果正确答案跨越标题、表格和正文，可能需要调整切分规则或保留标题层级。
+
+## 第四步：检查过滤条件和 Top K
+
+很多知识库会有 metadata filtering、score threshold、Top K、rerank 等设置。过滤条件太严格会把正确资料排除，阈值太高可能让系统返回空上下文，Top K 太小可能漏掉关键片段。
+
+排查时先放宽过滤条件，观察正确片段是否能出现。再逐步收紧。不要在多个参数同时变化时判断效果，否则你不知道是哪一项起作用。
+
+## 第五步：分清检索错和生成错
+
+如果检索片段已经正确，但最终回答仍然错，那是生成阶段或提示词阶段的问题。此时应该改回答规则、引用要求、拒答策略或模型，而不是继续调整向量库。
+
+如果检索片段本身就错，优先查资料、切分、embedding、过滤和检索参数。把两个阶段分开，是 RAG 排错的核心。
+
+## 常见错误
+
+常见错误是只看模型最后一句话。RAG 排错必须看检索片段，否则你无法知道模型有没有拿到正确上下文。
+
+另一个错误是没有测试集。只靠临时问几个问题，很容易误判。至少要准备 20 到 50 个真实问题，每个问题标注正确来源和预期回答。
+
+## 风险提醒
+
+知识库检索不到内容时，模型可能会凭已有知识或语言模式继续回答。对用户来说，这种回答看起来流畅，但不一定有资料依据。
+
+上线前要设置“找不到依据就说明找不到”的规则，并保留人工反馈入口。涉及客户、法律、财务、医疗、人事等内容时，更不能让无依据回答直接作为结论。
+
+## 具体步骤
+
+第一步，确认文档导入和索引成功。第二步，抽查 chunk 内容。第三步，用测试问题查看召回片段。第四步，放宽过滤和阈值排查。第五步，区分检索问题和生成问题。第六步，记录失败案例并更新测试集。需要排错清单，可以从 [工具导航](/tools) 下载。
+
+## 免责声明
+
+本文只用于技术排查和学习，不构成准确率、安全、合规或业务效果承诺。正式修复客户知识库前，应由人工核对资料授权、工具文档、检索日志和验收标准。
+

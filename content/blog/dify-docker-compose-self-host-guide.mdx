@@ -1,0 +1,114 @@
+---
+title: "Dify Docker Compose 自部署怎么做：新手先看这份边界清单"
+slug: "dify-docker-compose-self-host-guide"
+description: "面向新手整理 Dify Docker Compose 自部署前后的检查点，覆盖服务器、环境变量、数据库、向量库、模型供应商、备份和安全边界。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "Dify"
+  - "Docker Compose"
+  - "自部署"
+  - "AI 应用"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "想用 Docker Compose 自部署 Dify 的新手或接单者"
+searchIntent: "informational"
+primaryKeyword: "Dify Docker Compose 部署"
+secondaryKeywords:
+  - "Dify 自部署"
+  - "Dify Docker"
+  - "Dify 私有化部署"
+  - "Dify 环境变量"
+sourceNotes: "参考 Dify 官方 Docker Compose 自部署文档整理；正式发布前需要人工核对最新版 compose、环境变量、依赖服务和安全建议。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 Dify 自部署验收清单"
+  serviceCTA: "联系人工协助检查 Dify 部署方案"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 25
+canonical: "https://ai-jiedan-lab.vercel.app/blog/dify-docker-compose-self-host-guide"
+noindex: true
+---
+# Dify Docker Compose 自部署怎么做：新手先看这份边界清单
+
+“Dify 自部署”“Dify Docker Compose 部署”“Dify 私有化部署”是很常见的搜索词。很多人并不是想研究容器，而是想知道：能不能把 Dify 放到自己的服务器上，连接自己的模型，做企业知识库、聊天机器人或工作流应用。
+
+这篇是草稿，正式发布前需要核对 Dify 最新官方文档。知识库配置可以看 [Dify 知识库怎么搭](/blog/dify-knowledge-base-beginner-guide)，如果还在比较工具，可以看 [Dify、Coze、Flowise 怎么选](/blog/dify-coze-flowise-agent-builder-comparison)。
+
+## 适合谁
+
+适合已经试过 Dify Cloud 或本地演示，想进一步理解自部署成本和边界的人。你可能要给客户说明服务器要求、模型接入、数据存储、备份、升级和维护，而不只是“装一下”。
+
+也适合接 AI 应用搭建项目的新手。客户说“我们要私有化部署 Dify”，你要先问清楚业务目标、用户数量、文档规模、模型供应商、是否公网访问、是否有运维人员和数据合规要求。
+
+## 不适合谁
+
+不适合完全没有服务器、Docker、域名、反向代理和日志概念的人独立交付。Dify 自部署涉及多个服务，出了问题需要能看容器状态、日志、配置和网络。
+
+也不适合把“私有化”理解成所有问题都解决。私有化只是部署位置变化，权限设计、数据备份、访问控制、模型调用和人员管理仍然需要单独处理。
+
+## 第一步：明确部署目标
+
+先问客户为什么要自部署。是为了数据控制、内部访问、连接本地模型、降低长期成本，还是为了定制工作流。不同目标会影响服务器配置、网络策略、模型选择和后续维护。
+
+如果只是早期验证，可能不需要一上来就做复杂生产部署。可以先用测试服务器跑通应用、知识库和模型调用，再评估正式环境。
+
+## 第二步：准备服务器和基础环境
+
+Docker Compose 自部署需要服务器、Docker、Compose、磁盘空间、稳定网络和基础运维能力。不要只看 CPU，还要关注内存、磁盘、备份、端口、防火墙和域名。
+
+如果要对公网开放，建议同时规划 HTTPS、反向代理、管理员账号、安全更新和访问限制。内部测试和正式生产环境不要混用同一套账号和资料。
+
+## 第三步：理解 compose 里的依赖服务
+
+Dify 不只是一个前端界面，通常还会涉及 API、worker、数据库、缓存、向量相关组件、存储和沙箱等依赖。新手要理解每个服务大致负责什么，至少要知道出了问题该看哪个容器日志。
+
+部署记录里应保留 compose 版本、环境变量、服务端口、数据卷位置和修改点。以后升级或迁移时，这些记录比“我当时复制了一个命令”更有价值。
+
+## 第四步：配置模型供应商
+
+Dify 应用最终要调用模型。你可以接云端模型、本地模型或 OpenAI-compatible API。配置时要关注 API Key、Base URL、模型名、额度、超时、并发和错误处理。
+
+客户常会问“能不能接我们自己的模型”。答案要拆开：接口是否兼容、模型效果是否够、响应速度是否接受、上下文长度是否够、费用或硬件是否可承受。不要只回答能不能连上。
+
+## 第五步：知识库和工作流测试
+
+部署跑通后，不要只看登录页。至少要创建一个测试应用，接入一个模型，上传一小批文档，跑几组知识库问题，再测试工作流节点是否能正常执行。
+
+如果知识库回答不稳，先查资料质量、切分、embedding、检索参数和引用来源。可以参考 [Dify metadata filtering RAG 指南](/blog/dify-metadata-filtering-rag-guide) 和 [RAG 评测集怎么做](/blog/rag-evaluation-test-set-guide)。
+
+## 常见错误
+
+常见错误是把自部署当成一次性安装。真正交付要包含备份、升级、日志、权限、管理员交接、故障恢复和数据删除流程。
+
+另一个错误是没有区分测试环境和生产环境。测试时用的 API Key、域名、管理员密码和样本文档，不应该长期留在正式环境里。
+
+## 风险提醒
+
+Dify 自部署涉及客户数据、模型调用和应用发布，必须明确责任边界。谁维护服务器，谁更新版本，谁处理账单，谁审核知识库内容，谁处理用户反馈，都要写清楚。
+
+如果对公网开放，还要关注弱密码、默认配置、未授权访问、日志暴露和环境变量泄露。不要为了快速演示而忽略基本安全。
+
+## 具体步骤
+
+第一步，确认自部署原因和业务范围。第二步，准备服务器、Docker、域名和访问策略。第三步，按官方文档启动 Docker Compose。第四步，配置模型供应商和必要环境变量。第五步，创建测试应用、知识库和工作流。第六步，补充备份、升级和交接文档。需要 Dify 自部署验收清单，可以从 [工具导航](/tools) 下载。
+
+## 免责声明
+
+本文只用于学习和部署前评估，不构成运维、安全、合规或商业效果承诺。正式上线前，应由人工核对官方文档、服务器安全、数据授权、备份方案和客户验收标准。
+

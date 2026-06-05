@@ -1,0 +1,108 @@
+---
+title: "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界"
+slug: "vector-database-selection-for-rag-guide"
+description: "面向新手整理 RAG 向量数据库选型思路，比较 pgvector、Qdrant、Milvus 等路线时应关注数据规模、权限、运维、成本和迁移。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "向量数据库"
+  - "RAG"
+  - "pgvector"
+  - "Qdrant"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "正在为 RAG 项目选择向量数据库的新手或接单者"
+searchIntent: "informational"
+primaryKeyword: "RAG 向量数据库怎么选"
+secondaryKeywords:
+  - "pgvector vs Qdrant"
+  - "Milvus RAG"
+  - "向量数据库选型"
+  - "RAG 数据库"
+sourceNotes: "参考 Supabase pgvector、Qdrant、FastGPT 检索参数、LangChain/LlamaIndex 向量存储相关文档整理；正式发布前需要人工核对最新能力和价格。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 RAG 向量数据库选型表"
+  serviceCTA: "联系人工协助评估向量库方案"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 25
+canonical: "https://ai-jiedan-lab.vercel.app/blog/vector-database-selection-for-rag-guide"
+noindex: true
+---
+# RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界
+
+做 RAG 很快会遇到一个问题：向量数据到底放哪里。用户会搜索“pgvector vs Qdrant”“Milvus 适合 RAG 吗”“向量数据库怎么选”。新手容易被工具名带着走，但真正应该先看项目边界：数据规模、权限、团队能力、部署方式、成本和迁移难度。
+
+这篇是草稿，正式发布前需要核对各工具最新文档。基础概念可以看 [向量数据库新手指南](/blog/vector-database-beginner-guide)，Supabase 路线可以看 [Supabase pgvector RAG 指南](/blog/supabase-pgvector-rag-guide)。
+
+## 适合谁
+
+适合已经准备做知识库、文档问答、客服助手、内部搜索或 Agent 检索工具的人。你知道需要 embedding 和检索，但不确定该选 PostgreSQL 扩展、专门向量库，还是工具内置方案。
+
+也适合给客户做方案评估的接单者。客户通常不会关心向量库名字，他们关心能不能稳定、能不能维护、能不能控制权限、后续成本如何。
+
+## 不适合谁
+
+不适合还没有明确资料规模和使用场景的人。没有文档数量、更新频率、查询量、权限规则和部署要求，选型只能靠猜。
+
+也不适合追求一次选到“最终答案”。早期原型和生产系统可以用不同方案。关键是留好迁移记录和数据结构，不要把自己锁死。
+
+## 路线一：pgvector
+
+pgvector 适合已经使用 PostgreSQL 或 Supabase 的项目。它的优势是业务数据和向量数据可以在同一个数据库体系里管理，权限、备份和查询习惯也更接近传统 Web 项目。
+
+如果项目规模不大、团队熟悉 Postgres、需要和用户表、文档表、权限表一起查询，pgvector 是很实际的起点。但当向量规模、检索性能或专门向量能力要求很高时，需要进一步评估。
+
+## 路线二：Qdrant
+
+Qdrant 是专门的向量数据库，适合更明确的向量检索场景。它通常会被用于需要 collection、payload、过滤、相似度检索和较清晰向量服务边界的项目。
+
+选择 Qdrant 时，要考虑部署、备份、权限、监控、数据迁移和与应用服务的连接方式。专门工具能力更强，也意味着运维边界要更清楚。
+
+## 路线三：Milvus 或其他专门向量库
+
+Milvus 这类方案更适合数据规模和检索需求更重的场景。它们可能提供更强的向量检索能力，但部署和维护也更复杂。
+
+新手不应该因为“看起来专业”就直接上复杂方案。客户项目要先看团队是否有运维能力，是否需要高并发、大规模索引、多租户或复杂检索。
+
+## 选型要看的 6 个问题
+
+第一，文档量和 chunk 量大概多少。第二，查询量和响应速度要求多高。第三，是否需要按用户、部门、项目做权限过滤。第四，团队是否熟悉数据库和容器运维。第五，数据是否需要本地或私有化。第六，后续是否可能迁移工具。
+
+这 6 个问题比工具热度更重要。很多小项目用简单方案就够，真正复杂的是资料治理和检索评测。
+
+## 常见错误
+
+常见错误是以为换向量库就能解决 RAG 不准。向量库只是链路的一部分，资料质量、chunk、embedding、过滤、rerank 和提示词都会影响结果。
+
+另一个错误是不记录 embedding 模型和索引配置。以后换模型或重建索引时，如果没有记录，检索效果变化很难解释。
+
+## 风险提醒
+
+向量数据也是数据。它可能包含从客户资料中提取出的语义信息，不能因为不是原文就忽视权限和删除要求。客户要求删除资料时，也要考虑相关 chunk 和向量是否同步删除。
+
+同时要注意成本和锁定。托管服务、专门数据库和自部署方案的费用结构不同，迁移难度也不同。不要只看第一天能不能跑通。
+
+## 具体步骤
+
+第一步，估算资料量、chunk 量和查询量。第二步，列出权限和部署要求。第三步，选择一个低复杂度方案做原型。第四步，记录 embedding、索引和检索参数。第五步，用测试集比较召回质量。第六步，再决定是否升级到专门向量库。需要选型表，可以从 [工具导航](/tools) 获取。
+
+## 免责声明
+
+本文只用于技术学习和选型预评估，不构成成本、安全、性能或商业效果承诺。正式选型前，应由人工核对最新官方文档、价格、部署能力和客户数据要求。
+

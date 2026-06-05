@@ -1,0 +1,114 @@
+---
+title: "LangGraph Agent 怎么入门：把状态、工具和人工节点先想清楚"
+slug: "langgraph-agent-beginner-guide"
+description: "面向新手整理 LangGraph Agent 入门思路，覆盖状态图、工具调用、长流程、人工介入、可观测性、评测和生产部署边界。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "LangGraph"
+  - "Agent"
+  - "LangChain"
+  - "AI 工程"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "想从 LangChain 进一步理解 LangGraph Agent 的新手"
+searchIntent: "informational"
+primaryKeyword: "LangGraph Agent 入门"
+secondaryKeywords:
+  - "LangGraph 教程"
+  - "Agent 状态图"
+  - "LangGraph 部署"
+  - "LangGraph workflow"
+sourceNotes: "参考 LangGraph 官方文档关于 agent、状态化工作流、部署和可观测性说明整理；正式发布前需要人工核对最新 API 与平台能力。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 LangGraph Agent 设计检查表"
+  serviceCTA: "联系人工协助设计 Agent 状态图"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 25
+canonical: "https://ai-jiedan-lab.vercel.app/blog/langgraph-agent-beginner-guide"
+noindex: true
+---
+# LangGraph Agent 怎么入门：把状态、工具和人工节点先想清楚
+
+LangGraph 常被用来构建更可靠的 Agent 和状态化工作流。很多人学完 LangChain RAG 后，会继续搜索“LangGraph Agent 教程”“LangGraph 怎么部署”“LangGraph 和 LangChain 区别”。真正的问题是：当 Agent 不只是一次对话，而是要在多步任务里记住状态、调用工具、等待人工、继续执行，应该怎么设计。
+
+这篇是草稿，正式发布前需要核对 LangGraph 最新官方文档。LangChain RAG 入门可以看 [LangChain 做 RAG 怎么开始](/blog/langchain-rag-beginner-guide)，Agent 上线检查可以看 [Agent 生产部署检查清单](/blog/agent-production-deployment-checklist)。
+
+## 适合谁
+
+适合已经理解基础 LLM 调用、工具调用或 LangChain 链路，想进一步做多步骤 Agent 的人。比如任务需要查询资料、调用工具、判断下一步、等待用户确认、再继续执行。
+
+也适合做内部助手、代码助手、运营助手、客服辅助或资料分析流程的接单者。客户常说“希望 AI 自动处理一部分流程”，你需要把这个需求拆成状态、节点、工具和人工审批，而不是只写一个提示词。
+
+## 不适合谁
+
+不适合还没有明确任务流程的人。LangGraph 能表达复杂流程，但如果业务本身没有定义清楚，图只会把混乱变得更难调试。
+
+也不适合把 Agent 当成自由发挥的黑箱。生产 Agent 必须有边界、状态记录、可观测性和失败处理。否则一次工具误调用就可能影响真实业务。
+
+## 第一步：先画状态，而不是先写代码
+
+LangGraph 的关键是状态。你要先回答：任务有哪些阶段，输入是什么，中间结果是什么，什么时候结束，什么时候需要人工确认，失败后回到哪里。
+
+例如一个资料审核 Agent，可以有“接收资料、检索规则、生成建议、人工确认、输出报告”几个阶段。每个阶段都应该有清楚的输入和输出。
+
+## 第二步：把工具范围缩小
+
+Agent 能调用工具，不代表所有工具都应该开放。工具越多，决策空间越大，错误路径也越多。新手项目最好从只读工具开始，比如搜索文档、读取表格、查询状态。
+
+如果工具会写入数据、发送消息、修改配置或触发外部流程，就要加入人工节点和权限检查。工具调用日志也要保留，方便复盘。
+
+## 第三步：加入人工介入节点
+
+真正可用的 Agent 往往不是完全自动，而是能在关键点停下来等人确认。比如发送客户邮件、修改价格、删除数据、提交报告，这些动作都适合由人工确认。
+
+LangGraph 的价值之一就是让流程能暂停、恢复和保留状态。对客户解释时，可以说它适合把 AI 建议和人工判断放在同一个流程里。
+
+## 第四步：做评测和回放
+
+Agent 不是只测一次输出。你要准备任务样本、预期路径、工具调用记录、失败案例和人工判断结果。每次修改提示词、工具或模型后，都要重新跑关键样本。
+
+如果没有回放和评测，Agent 看起来能跑，但你不知道它在什么情况下会偏离。可以配合 [Agent 可观测性日志指南](/blog/agent-observability-logging-guide) 来记录。
+
+## 第五步：再谈部署
+
+部署 LangGraph Agent 前，要先确认运行环境、状态存储、并发、超时、重试、权限、日志和成本。长流程 Agent 尤其要关注任务中断后能否恢复。
+
+如果客户只是早期验证，可以先做本地原型和小样本测试。生产部署需要更完整的监控、队列、错误处理和人工运营流程。
+
+## 常见错误
+
+常见错误是把 LangGraph 当成“更高级的提示词”。它真正解决的是流程、状态和控制问题。没有状态设计，Agent 仍然会变成不可控的聊天机器人。
+
+另一个错误是过早追求复杂图。第一版只需要覆盖最核心的路径，先把一个低风险任务跑稳，再扩展分支和工具。
+
+## 风险提醒
+
+Agent 系统可能调用外部工具、处理客户数据或产生业务动作，必须明确权限和责任。不要让模型直接执行高影响操作，也不要隐藏失败路径。
+
+涉及敏感资料时，还要处理日志脱敏、访问控制、数据保留和删除流程。Agent 的中间状态也可能包含敏感信息。
+
+## 具体步骤
+
+第一步，画出任务状态和结束条件。第二步，定义每个节点的输入、输出和失败处理。第三步，只开放必要工具。第四步，加入人工确认节点。第五步，准备评测样本和日志。第六步，再评估部署方式。需要 LangGraph Agent 设计检查表，可以从 [工具导航](/tools) 获取。
+
+## 免责声明
+
+本文只用于技术学习和方案设计，不构成生产可靠性、安全、合规或业务效果承诺。正式上线前，应由人工核对 LangGraph 官方文档、客户需求、工具权限和验收标准。
+
