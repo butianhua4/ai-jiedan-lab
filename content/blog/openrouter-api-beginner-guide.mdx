@@ -1,0 +1,114 @@
+---
+title: "OpenRouter API 怎么接入：统一模型入口不是只换 Base URL"
+slug: "openrouter-api-beginner-guide"
+description: "面向新手整理 OpenRouter API 接入思路，覆盖 OpenAI-compatible 调用、模型选择、API Key、费用、路由、应用接入和上线风险。"
+date: "2026-06-05"
+updatedAt: "2026-06-05"
+category: "AI 基建"
+tags:
+  - "OpenRouter"
+  - "API"
+  - "模型路由"
+  - "OpenAI Compatible"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "beginner"
+targetReader: "想用 OpenRouter 统一调用多个模型的新手和接单者"
+searchIntent: "informational"
+primaryKeyword: "OpenRouter API 接入"
+secondaryKeywords:
+  - "OpenRouter 教程"
+  - "OpenRouter OpenAI compatible"
+  - "OpenRouter Base URL"
+  - "模型 API 路由"
+sourceNotes: "参考 OpenRouter 官方 API Reference 和 OpenAI-compatible schema 说明整理；正式发布前需要人工核对最新模型、价格、路由和请求头要求。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 OpenRouter API 接入检查表"
+  serviceCTA: "联系人工协助设计模型 API 路由方案"
+  adSlots:
+    - "article-bottom"
+qualityScore: 86
+publishBatch: 27
+canonical: "https://ai-jiedan-lab.vercel.app/blog/openrouter-api-beginner-guide"
+noindex: true
+---
+# OpenRouter API 怎么接入：统一模型入口不是只换 Base URL
+
+OpenRouter 经常被搜索，是因为它把多个模型放在一个统一入口里，很多应用只需要改 Base URL、API Key 和模型名，就能试不同模型。对新手来说，这听起来很方便，但真正项目里还要看费用、路由、模型能力、请求格式、日志和客户数据边界。
+
+这篇是草稿，正式发布前需要核对 OpenRouter 最新官方文档。类似的模型代理思路可以看 [LiteLLM Proxy 怎么部署](/blog/litellm-proxy-beginner-guide)，如果是 Next.js 聊天应用，可以看 [Vercel AI SDK 聊天机器人部署](/blog/vercel-ai-sdk-chatbot-deploy-guide)。
+
+## 适合谁
+
+适合想快速比较多个模型的人。你可能要在同一个聊天机器人里测试不同模型的中文能力、代码能力、价格、速度和上下文长度，不想每次都重写供应商 SDK。
+
+也适合做客户方案预评估的接单者。客户常问“哪个模型好”，OpenRouter 这类统一入口能帮助你用真实任务对比，但你仍然要记录模型名、价格和测试结果。
+
+## 不适合谁
+
+不适合对供应商直连、合规边界或数据处理要求非常严格的项目。统一入口会增加一个中间层，客户是否允许通过该层调用模型，需要单独确认。
+
+也不适合没有预算控制的公开应用。多个模型都能调用，不代表可以随便开放给匿名用户。
+
+## 第一步：理解 OpenAI-compatible 只是接口相似
+
+OpenRouter 官方文档说明其请求和响应 schema 与 OpenAI Chat API 很相似，但仍可能有差异。新手不要把“兼容”理解成所有功能都完全一样。
+
+聊天补全、流式输出、工具调用、结构化输出、图片、多模态和错误格式都要按项目测试。能回答一句话，只能说明最小链路通了。
+
+## 第二步：选择模型和路由
+
+OpenRouter 上有很多模型。选择时不要只看排名，要看任务类型、价格、上下文长度、速度、可用性和输出稳定性。
+
+建议为每个任务建立模型备选表。例如客服摘要、代码解释、长文档问答、中文润色、分类标签分别用什么模型，失败时是否切换，客户是否接受切换后的输出风格。
+
+## 第三步：管理 API Key 和预算
+
+API Key 不能放进前端、公开仓库或截图。应用应从服务端读取环境变量，再调用 OpenRouter。客户项目里，最好让客户使用自己的账号和账单。
+
+同时要设置预算观察方式。统一入口方便试模型，也容易因为频繁切换和公开访问造成费用不透明。测试期要记录请求量、平均输入输出长度和失败重试。
+
+## 第四步：接入应用
+
+很多支持 OpenAI-compatible 的应用可以配置 Base URL、API Key 和模型名。接入后先测试普通聊天，再测试流式输出、长输入、错误处理和多轮上下文。
+
+如果是 RAG 应用，还要单独确认 embedding 是否由谁提供。并非所有统一聊天入口都适合承担 embedding 和向量检索任务。
+
+## 第五步：写清客户交付边界
+
+如果客户希望“以后模型随便换”，你要解释：接口可以更容易换，但提示词、上下文、工具调用和输出格式仍然可能需要调整。
+
+交付说明里应写清当前模型、备用模型、费用承担、API Key 归属、日志策略和失败处理。这样后续换模型不会变成无记录的临时操作。
+
+## 常见错误
+
+常见错误是只改 Base URL，不改模型名和请求参数。另一个错误是没有测试模型能力差异，导致上线后某些任务回答风格突然变化。
+
+还有一种错误是忽略中间层风险。统一入口方便，但数据路径、账单路径和故障路径也多了一层。
+
+## 风险提醒
+
+OpenRouter 这类服务涉及第三方模型路由和请求转发，正式项目必须确认客户是否接受这种调用路径。涉及隐私、合同、财务、法律、医疗、人事等内容时，要谨慎处理。
+
+公开应用还要设置访问限制和费用监控。不要让未知用户无限调用模型。
+
+## 具体步骤
+
+第一步，确认项目是否允许通过统一模型入口调用。第二步，创建 API Key 并保存到服务端环境变量。第三步，选择模型并记录用途。第四步，把应用 Base URL 指向 OpenRouter。第五步，测试普通聊天、流式、错误和长上下文。第六步，记录预算、日志和备用模型。需要接入检查表可以进入 [工具导航](/tools)。
+
+## 免责声明
+
+本文只用于技术学习和项目预评估，不构成成本、安全、合规、稳定性或模型效果承诺。正式上线前，应由人工核对 OpenRouter 官方文档、客户数据要求、模型条款和验收标准。
+
