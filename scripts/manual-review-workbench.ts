@@ -192,6 +192,26 @@ type ContentIntegrity = {
   };
 };
 
+type InternalLinks = {
+  summary: {
+    candidateItems: number;
+    candidateItemsMissingPublicLinkSuggestion: number;
+    candidateItemsWithPublicSuggestions: number;
+    expansionItems: number;
+    publicArticles: number;
+    recommendedItems: number;
+    waveItems: number;
+    waveItemsMissingPublicLinkSuggestion: number;
+  };
+  waveItems: Array<{
+    currentInternalLinks: number;
+    file: string;
+    linksToPublicArticles: number;
+    suggestions: Array<{ title: string; url: string }>;
+    title: string;
+  }>;
+};
+
 type ProjectStatus = {
   articles: { publicPublished: number; publishableNow: unknown[]; statusCounts: Record<string, number> };
 };
@@ -216,6 +236,7 @@ function main() {
   const trafficEvidence = readJson<TrafficEvidence>("content/automation/traffic-evidence-audit.json");
   const trafficClaimGuard = readJson<TrafficClaimGuard>("content/automation/traffic-claim-guard.json");
   const contentIntegrity = readJson<ContentIntegrity>("content/automation/content-integrity-audit.json");
+  const internalLinks = readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json");
   const deploymentCoverage = readJson<DeploymentCoverage>("content/automation/ai-deployment-coverage.json");
   const promptCoverage = readJson<PromptCoverage>("content/automation/industry-prompt-coverage.json");
   const projectStatus = readJson<ProjectStatus>("content/automation/project-status.json");
@@ -338,6 +359,19 @@ function main() {
     },
     trafficClaimGuard: trafficClaimGuard.summary,
     contentIntegrity: contentIntegrity.summary,
+    internalLinks: {
+      summary: internalLinks.summary,
+      waveItems: internalLinks.waveItems.map((item) => ({
+        currentInternalLinks: item.currentInternalLinks,
+        file: item.file,
+        linksToPublicArticles: item.linksToPublicArticles,
+        suggestions: item.suggestions.slice(0, 3).map((suggestion) => ({
+          title: suggestion.title,
+          url: suggestion.url,
+        })),
+        title: item.title,
+      })),
+    },
     deploymentCoverage: {
       summary: deploymentCoverage.summary,
       topTopics: deploymentCoverage.coverage.slice(0, 6).map((item) => ({
@@ -369,6 +403,7 @@ function main() {
       trafficEvidence,
       trafficClaimGuard,
       contentIntegrity,
+      internalLinks,
     ),
   };
 
@@ -394,6 +429,7 @@ function buildNextActions(
   trafficEvidence: TrafficEvidence,
   trafficClaimGuard: TrafficClaimGuard,
   contentIntegrity: ContentIntegrity,
+  internalLinks: InternalLinks,
 ) {
   if (projectStatus.articles.publishableNow.length > 0) return ["Stop and inspect publishableNow before adding more review candidates."];
   if (!liveSearch.ok || liveSearch.failedChecks.length > 0) return ["Fix live search surface failures before any publishing action."];
@@ -420,6 +456,7 @@ function buildNextActions(
   if (trafficEvidence.summary.failedChecks > 0) return ["Resolve traffic evidence audit failures before reporting traffic status."];
   if (trafficClaimGuard.summary.unsafeClaims > 0) return ["Remove unsupported traffic claims before reporting traffic status."];
   if (contentIntegrity.summary.blockingItems > 0) return ["Fix content integrity blockers before any mark:review action."];
+  if (internalLinks.summary.waveItemsMissingPublicLinkSuggestion > 0) return ["Resolve Wave 1 internal link suggestion gaps before publishing."];
   if (
     reviewCoverage.summary.itemsMissingOfficialSources > 0 ||
     reviewCoverage.summary.itemsMissingFactCheckQueries > 0 ||
@@ -432,6 +469,7 @@ function buildNextActions(
     "Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.",
     "Use docs/wave-publish-simulation.md for the exact post-approval mark-review and publish dry-run path.",
     "Use docs/content-integrity-audit.md to confirm encoding, metadata, and indexing boundaries before approval.",
+    "Use docs/internal-link-opportunity-audit.md to add public internal links during manual review.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.",
     "Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.",
     "Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.",
@@ -518,6 +556,16 @@ function toMarkdown(payload: {
   };
   trafficClaimGuard: { filesScanned: number; unsafeClaims: number; watchMentions: number };
   contentIntegrity: ContentIntegrity["summary"];
+  internalLinks: {
+    summary: InternalLinks["summary"];
+    waveItems: Array<{
+      currentInternalLinks: number;
+      file: string;
+      linksToPublicArticles: number;
+      suggestions: Array<{ title: string; url: string }>;
+      title: string;
+    }>;
+  };
   deploymentCoverage: {
     summary: DeploymentCoverage["summary"];
     topTopics: Array<{ candidates: number; gapScore: number; publicMatches: number; topic: string }>;
@@ -705,6 +753,20 @@ function toMarkdown(payload: {
     `- Recommended items: ${payload.contentIntegrity.recommendedItems}`,
     `- Wave items: ${payload.contentIntegrity.waveItems}`,
     `- Expansion items: ${payload.contentIntegrity.expansionItems}`,
+    "",
+    "## Internal Link Opportunities",
+    "",
+    `- Candidate items: ${payload.internalLinks.summary.candidateItems}`,
+    `- Candidates with public suggestions: ${payload.internalLinks.summary.candidateItemsWithPublicSuggestions}`,
+    `- Candidate items missing suggestions: ${payload.internalLinks.summary.candidateItemsMissingPublicLinkSuggestion}`,
+    `- Wave items: ${payload.internalLinks.summary.waveItems}`,
+    `- Wave items missing suggestions: ${payload.internalLinks.summary.waveItemsMissingPublicLinkSuggestion}`,
+    "",
+    "| Public links now | Suggestions | Title | File |",
+    "| --- | --- | --- | --- |",
+    ...payload.internalLinks.waveItems.map((item) => (
+      `| ${item.linksToPublicArticles}/${item.currentInternalLinks} | ${item.suggestions.map((suggestion) => `${suggestion.title} (${suggestion.url})`).join("<br>")} | ${item.title} | ${item.file} |`
+    )),
     "",
     "## AI Deployment Coverage",
     "",

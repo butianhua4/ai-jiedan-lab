@@ -223,6 +223,19 @@ type ContentIntegrity = {
   };
 };
 
+type InternalLinks = {
+  summary: {
+    candidateItems: number;
+    candidateItemsMissingPublicLinkSuggestion: number;
+    candidateItemsWithPublicSuggestions: number;
+    expansionItems: number;
+    publicArticles: number;
+    recommendedItems: number;
+    waveItems: number;
+    waveItemsMissingPublicLinkSuggestion: number;
+  };
+};
+
 const reports = {
   cannibalization: readJson<{ summary: { conflicts: number; reviewBatchConflicts: number } }>("content/automation/content-cannibalization.json"),
   freshness: readJson<{ summary: { currentReviewItems: number; highRisk: number; mediumRisk: number; plannedReviewItems: number } }>(
@@ -263,6 +276,7 @@ const reports = {
   trafficEvidence: readJson<TrafficEvidence>("content/automation/traffic-evidence-audit.json"),
   trafficClaimGuard: readJson<TrafficClaimGuard>("content/automation/traffic-claim-guard.json"),
   contentIntegrity: readJson<ContentIntegrity>("content/automation/content-integrity-audit.json"),
+  internalLinks: readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json"),
   review: readJson<{ counts: { candidates: number; returned: number; rejected: Record<string, number> }; recommendedToday: ReviewCandidate[] }>(
     "content/automation/review-candidates.json",
   ),
@@ -294,6 +308,7 @@ const payload = {
     trafficDataAvailable: reports.trafficEvidence.data?.summary.trafficDataAvailable ?? false,
   },
   contentIntegrity: reports.contentIntegrity.data?.summary ?? null,
+  internalLinks: reports.internalLinks.data?.summary ?? null,
   publishingBoundary: {
     publicPublished: reports.project.data?.articles.publicPublished ?? null,
     publishableNow: reports.project.data?.articles.publishableNow.length ?? null,
@@ -474,6 +489,9 @@ function buildNextActions() {
   if (!reports.contentIntegrity.data || reports.contentIntegrity.data.summary.blockingItems > 0) {
     return ["Open docs/content-integrity-audit.md and fix content integrity blockers before any review or publish action."];
   }
+  if (!reports.internalLinks.data || reports.internalLinks.data.summary.waveItemsMissingPublicLinkSuggestion > 0) {
+    return ["Open docs/internal-link-opportunity-audit.md and add or approve internal link suggestions for Wave 1 before publishing."];
+  }
   if (!reports.reviewCoverage.data || reports.reviewCoverage.data.summary.missingCoverage > 0) {
     return ["Open docs/review-coverage-report.md and regenerate coverage for all planned review candidates."];
   }
@@ -524,6 +542,24 @@ function toMarkdown(data: typeof payload) {
     data.contentIntegrity
       ? `- Wave items: ${data.contentIntegrity.waveItems}`
       : "- Wave items: missing",
+    "",
+    "## Internal Link Opportunities",
+    "",
+    data.internalLinks
+      ? `- Candidate items: ${data.internalLinks.candidateItems}`
+      : "- Candidate items: missing",
+    data.internalLinks
+      ? `- Candidates with public suggestions: ${data.internalLinks.candidateItemsWithPublicSuggestions}`
+      : "- Candidates with public suggestions: missing",
+    data.internalLinks
+      ? `- Candidate items missing suggestions: ${data.internalLinks.candidateItemsMissingPublicLinkSuggestion}`
+      : "- Candidate items missing suggestions: missing",
+    data.internalLinks
+      ? `- Wave items: ${data.internalLinks.waveItems}`
+      : "- Wave items: missing",
+    data.internalLinks
+      ? `- Wave items missing suggestions: ${data.internalLinks.waveItemsMissingPublicLinkSuggestion}`
+      : "- Wave items missing suggestions: missing",
     "",
     "## Publishing Boundary",
     "",

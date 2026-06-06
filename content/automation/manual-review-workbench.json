@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T12:59:45.023Z",
+  "generatedAt": "2026-06-06T13:07:06.574Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -815,7 +815,7 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 67,
+    "filesScanned": 69,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
     "watchMentions": 387
@@ -828,6 +828,80 @@
     "publicItems": 15,
     "recommendedItems": 3,
     "waveItems": 3
+  },
+  "internalLinks": {
+    "summary": {
+      "candidateItems": 19,
+      "candidateItemsMissingPublicLinkSuggestion": 0,
+      "candidateItemsWithPublicSuggestions": 19,
+      "expansionItems": 19,
+      "publicArticles": 15,
+      "recommendedItems": 3,
+      "waveItems": 3,
+      "waveItemsMissingPublicLinkSuggestion": 0
+    },
+    "waveItems": [
+      {
+        "currentInternalLinks": 6,
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "linksToPublicArticles": 0,
+        "suggestions": [
+          {
+            "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+            "url": "/blog/codex-vercel-deploy-preflight-checklist"
+          },
+          {
+            "title": "Codex 怎么做第一个网页",
+            "url": "/blog/build-first-webpage-with-codex"
+          },
+          {
+            "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+            "url": "/blog/first-upwork-project-pricing-checklist"
+          }
+        ],
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+      },
+      {
+        "currentInternalLinks": 4,
+        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "linksToPublicArticles": 0,
+        "suggestions": [
+          {
+            "title": "Codex 怎么做第一个网页",
+            "url": "/blog/build-first-webpage-with-codex"
+          },
+          {
+            "title": "Codex 生成代码后怎么审核：交付前检查清单",
+            "url": "/blog/codex-code-review-delivery-checklist"
+          },
+          {
+            "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+            "url": "/blog/codex-vercel-deploy-preflight-checklist"
+          }
+        ],
+        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
+      },
+      {
+        "currentInternalLinks": 5,
+        "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "linksToPublicArticles": 0,
+        "suggestions": [
+          {
+            "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+            "url": "/blog/upwork-client-requirements-analysis-beginner"
+          },
+          {
+            "title": "Codex 生成代码后怎么审核：交付前检查清单",
+            "url": "/blog/codex-code-review-delivery-checklist"
+          },
+          {
+            "title": "Codex 怎么做第一个网页",
+            "url": "/blog/build-first-webpage-with-codex"
+          }
+        ],
+        "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+      }
+    ]
   },
   "deploymentCoverage": {
     "summary": {
@@ -940,6 +1014,7 @@
     "Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.",
     "Use docs/wave-publish-simulation.md for the exact post-approval mark-review and publish dry-run path.",
     "Use docs/content-integrity-audit.md to confirm encoding, metadata, and indexing boundaries before approval.",
+    "Use docs/internal-link-opportunity-audit.md to add public internal links during manual review.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.",
     "Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.",
     "Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.",

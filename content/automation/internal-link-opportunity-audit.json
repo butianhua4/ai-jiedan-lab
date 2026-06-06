@@ -1,0 +1,1369 @@
+{
+  "generatedAt": "2026-06-06T13:06:57.366Z",
+  "guardrails": {
+    "autoEditArticles": false,
+    "autoMarkReview": false,
+    "autoPublish": false,
+    "note": "Read-only internal-link opportunity audit. It does not edit article body links or publish content."
+  },
+  "summary": {
+    "candidateItems": 19,
+    "candidateItemsMissingPublicLinkSuggestion": 0,
+    "candidateItemsWithPublicSuggestions": 19,
+    "expansionItems": 19,
+    "publicArticles": 15,
+    "recommendedItems": 3,
+    "waveItems": 3,
+    "waveItemsMissingPublicLinkSuggestion": 0
+  },
+  "candidateItems": [
+    {
+      "currentInternalLinks": 6,
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, vercel, 部署, 上线, 检查, 新手",
+          "score": 35,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 么做, 新手, 网页, 一个",
+          "score": 31,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 怎么, 检查, 项目, 新手, 一个, 第一",
+          "score": 28,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+          "reason": "keyword overlap: ai, 工具, 新手, 什么, 有什, 么区",
+          "score": 28,
+          "slug": "payoneer-wise-paypal-beginner-comparison",
+          "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+          "url": "/blog/payoneer-wise-paypal-beginner-comparison"
+        },
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: vercel, 部署, 怎么, 检查, 新手, 署检",
+          "score": 28,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        }
+      ],
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+    },
+    {
+      "currentInternalLinks": 6,
+      "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 一个, 么做, 接单",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 代码, 接单, 检查",
+          "score": 23,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-github-before-commit-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 代码, 接单, 检查",
+          "score": 23,
+          "slug": "codex-github-before-commit-checklist",
+          "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
+          "url": "/blog/codex-github-before-commit-checklist"
+        },
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, 部署, 什么, 接单, 检查",
+          "score": 23,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        {
+          "file": "content/blog/what-is-codex-beginner-start.mdx",
+          "reason": "keyword overlap: ai, 怎么, 开始, 什么, 接单",
+          "score": 23,
+          "slug": "what-is-codex-beginner-start",
+          "title": "Codex 是什么新手怎么开始",
+          "url": "/blog/what-is-codex-beginner-start"
+        }
+      ],
+      "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "linksToPublicArticles": 1,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 新手, 代码, 检查, 交付",
+          "score": 31,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-github-before-commit-checklist.mdx",
+          "reason": "keyword overlap: ai, github, 怎么, 新手, 提交, 代码",
+          "score": 31,
+          "slug": "codex-github-before-commit-checklist",
+          "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
+          "url": "/blog/codex-github-before-commit-checklist"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 怎么, 新手, 项目, 一个, 指南, 检查",
+          "score": 28,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 新手, 一个, 么做, 第一",
+          "score": 27,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, 部署, vercel, 上线, 新手, 检查",
+          "score": 27,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        }
+      ],
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 报价, 项目, 目怎, 怎么, 么报, 范围",
+          "score": 40,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 接单, 交付, 清单, 新手",
+          "score": 35,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, 部署, 接单, 什么, 清单, 新手",
+          "score": 31,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 接单, 一个, 新手, 第一",
+          "score": 27,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 怎么, 接单, 新手, 生成, 审核",
+          "score": 27,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        }
+      ],
+      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
+    },
+    {
+      "currentInternalLinks": 4,
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 一个, 怎么, 么做, 第一",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 交付, 生成, 检查",
+          "score": 23,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, 部署, 什么, 上线, 检查",
+          "score": 23,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 一个, 怎么, 项目, 第一, 检查",
+          "score": 20,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 部署, 提示, 怎么, 失败, 检查",
+          "score": 20,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        }
+      ],
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 审核, 接单, 交付, 生成",
+          "score": 35,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 怎么, 一个, 接单, 范围, 围和, 第一",
+          "score": 28,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 怎么, 审核, 接单, 生成, 代码",
+          "score": 27,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        },
+        {
+          "file": "content/blog/what-is-codex-beginner-start.mdx",
+          "reason": "keyword overlap: ai, 怎么, 开始, 接单, 什么, 是什",
+          "score": 27,
+          "slug": "what-is-codex-beginner-start",
+          "title": "Codex 是什么新手怎么开始",
+          "url": "/blog/what-is-codex-beginner-start"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 一个, 接单, 第一",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        }
+      ],
+      "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 部署, 怎么, 么办, 新手, 失败, 环境",
+          "score": 28,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 新手, 代码, 交付, 生成",
+          "score": 27,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 新手, 第一, 么做",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 怎么, 新手, 代码, 生成",
+          "score": 23,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        },
+        {
+          "file": "content/blog/codex-github-before-commit-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 新手, 代码, 提交",
+          "score": 23,
+          "slug": "codex-github-before-commit-checklist",
+          "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
+          "url": "/blog/codex-github-before-commit-checklist"
+        }
+      ],
+      "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 生成, 审核, 怎么, 新手, 检查",
+          "score": 27,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+          "reason": "keyword overlap: ai, 判断, 怎么, 新手, 风险, 检查",
+          "score": 27,
+          "slug": "codex-upwork-small-job-risk-checklist",
+          "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+          "url": "/blog/codex-upwork-small-job-risk-checklist"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 生成, 审核, 怎么, 新手",
+          "score": 23,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        },
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 提示, 流程, 怎么, 新手, 检查",
+          "score": 20,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        },
+        {
+          "file": "content/blog/codex-github-before-commit-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 新手, 检查",
+          "score": 19,
+          "slug": "codex-github-before-commit-checklist",
+          "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
+          "url": "/blog/codex-github-before-commit-checklist"
+        }
+      ],
+      "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 审核, 代码, 生成",
+          "score": 19,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 审核, 代码, 生成",
+          "score": 19,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 范围, 项目, 一个",
+          "score": 12,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+          "reason": "keyword overlap: ai, 工具, 什么",
+          "score": 12,
+          "slug": "payoneer-wise-paypal-beginner-comparison",
+          "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+          "url": "/blog/payoneer-wise-paypal-beginner-comparison"
+        },
+        {
+          "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+          "reason": "keyword overlap: 分析, 客户, 需求",
+          "score": 12,
+          "slug": "upwork-client-requirements-analysis-beginner",
+          "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+          "url": "/blog/upwork-client-requirements-analysis-beginner"
+        }
+      ],
+      "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要"
+    },
+    {
+      "currentInternalLinks": 4,
+      "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 变量, 部署, next, 怎么, 失败, 新手",
+          "score": 48,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 怎么, 指南, 新手, 一个, 项目, 第一",
+          "score": 40,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 代码, 生成, 交付, 新手",
+          "score": 31,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+          "reason": "keyword overlap: 需求, 怎么, 分析, 析和, 新手, 客户",
+          "score": 28,
+          "slug": "upwork-client-requirements-analysis-beginner",
+          "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+          "url": "/blog/upwork-client-requirements-analysis-beginner"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 么做, 新手, 一个, 第一",
+          "score": 27,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        }
+      ],
+      "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底"
+    },
+    {
+      "currentInternalLinks": 5,
+      "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 审核, 生成, 交付",
+          "score": 23,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, 部署, 上线, 什么, 线前",
+          "score": 23,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        {
+          "file": "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
+          "reason": "keyword overlap: 怎么选, ai, 对比, 怎么, 么选",
+          "score": 23,
+          "slug": "codex-vs-claude-code-beginner-checklist",
+          "title": "Codex 和 Claude Code 怎么选：新手对比清单",
+          "url": "/blog/codex-vs-claude-code-beginner-checklist"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 怎么, 审核, 生成",
+          "score": 19,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        },
+        {
+          "file": "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 风险, 判断",
+          "score": 19,
+          "slug": "codex-upwork-small-job-risk-checklist",
+          "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+          "url": "/blog/codex-upwork-small-job-risk-checklist"
+        }
+      ],
+      "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/ecommerce-ai-prompts-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 审核, 生成",
+          "score": 15,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 审核, 生成",
+          "score": 15,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        },
+        {
+          "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+          "reason": "keyword overlap: 分析, 析和, 客户",
+          "score": 12,
+          "slug": "upwork-client-requirements-analysis-beginner",
+          "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+          "url": "/blog/upwork-client-requirements-analysis-beginner"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 一个",
+          "score": 11,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+          "reason": "keyword overlap: ai, 风险",
+          "score": 11,
+          "slug": "codex-upwork-small-job-risk-checklist",
+          "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+          "url": "/blog/codex-upwork-small-job-risk-checklist"
+        }
+      ],
+      "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/education-ai-prompts-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 生成, 清单, 检查",
+          "score": 19,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 范围, 围和, 自由, 检查",
+          "score": 16,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+          "reason": "keyword overlap: ai, 清单, 检查",
+          "score": 15,
+          "slug": "codex-upwork-small-job-risk-checklist",
+          "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+          "url": "/blog/codex-upwork-small-job-risk-checklist"
+        },
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, 清单, 检查",
+          "score": 15,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        {
+          "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+          "reason": "keyword overlap: 清单, 客户, 析和",
+          "score": 12,
+          "slug": "upwork-client-requirements-analysis-beginner",
+          "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+          "url": "/blog/upwork-client-requirements-analysis-beginner"
+        }
+      ],
+      "title": "教育 AI 提示词模板：备课、教案、测验、反馈和学习计划"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 一个, 么做, 第一",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 生成, 交付",
+          "score": 19,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 部署, 怎么, 失败, 环境",
+          "score": 16,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 怎么, 生成",
+          "score": 15,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        },
+        {
+          "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+          "reason": "keyword overlap: ai, 怎么, 失败",
+          "score": 15,
+          "slug": "codex-install-failed-beginner-fix",
+          "title": "Codex 安装失败怎么办",
+          "url": "/blog/codex-install-failed-beginner-fix"
+        }
+      ],
+      "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 怎么, 部署, 署教, 教程, 新手, 环境",
+          "score": 32,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 教程, 新手, 一个, 第一",
+          "score": 27,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+          "reason": "keyword overlap: ai, 安装, 怎么, 教程, 新手, 失败",
+          "score": 27,
+          "slug": "codex-install-failed-beginner-fix",
+          "title": "Codex 安装失败怎么办",
+          "url": "/blog/codex-install-failed-beginner-fix"
+        },
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, 部署, 教程, 新手, 什么, 检查",
+          "score": 27,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 怎么, 新手, 一个, 项目, 第一, 检查",
+          "score": 24,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        }
+      ],
+      "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit"
+    },
+    {
+      "currentInternalLinks": 5,
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+          "reason": "keyword overlap: proposal, 客户沟通, 怎么, 客户, 需求, 户沟",
+          "score": 32,
+          "slug": "upwork-client-requirements-analysis-beginner",
+          "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+          "url": "/blog/upwork-client-requirements-analysis-beginner"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 审核, 接单, 生成, 交付",
+          "score": 27,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 么做, 接单, 第一",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 怎么, 审核, 接单, 生成",
+          "score": 23,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        },
+        {
+          "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+          "reason": "keyword overlap: ai, 怎么, 失败, 接单",
+          "score": 19,
+          "slug": "codex-install-failed-beginner-fix",
+          "title": "Codex 安装失败怎么办",
+          "url": "/blog/codex-install-failed-beginner-fix"
+        }
+      ],
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+    },
+    {
+      "currentInternalLinks": 6,
+      "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 检查, 新手, 查清, 清单",
+          "score": 31,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, 部署, 检查, 什么, 新手, 上线",
+          "score": 31,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 新手, 么做, 一个, 第一",
+          "score": 27,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 检查, 新手, 查清, 清单",
+          "score": 27,
+          "slug": "codex-upwork-small-job-risk-checklist",
+          "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+          "url": "/blog/codex-upwork-small-job-risk-checklist"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 怎么, 检查, 新手, 项目, 一个, 第一",
+          "score": 24,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        }
+      ],
+      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+          "reason": "keyword overlap: ai, 怎么, 么办, 新手, 安装, 失败",
+          "score": 27,
+          "slug": "codex-install-failed-beginner-fix",
+          "title": "Codex 安装失败怎么办",
+          "url": "/blog/codex-install-failed-beginner-fix"
+        },
+        {
+          "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
+          "reason": "keyword overlap: 怎么, 么办, 报错, 新手, 解决",
+          "score": 23,
+          "slug": "codex-npm-install-error-beginner-fix",
+          "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
+          "url": "/blog/codex-npm-install-error-beginner-fix"
+        },
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 部署, 怎么, 么办, 新手, 失败",
+          "score": 20,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 新手, 一个",
+          "score": 19,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 新手, 判断",
+          "score": 19,
+          "slug": "codex-upwork-small-job-risk-checklist",
+          "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+          "url": "/blog/codex-upwork-small-job-risk-checklist"
+        }
+      ],
+      "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 一个, 第一",
+          "score": 19,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 代码, 交付",
+          "score": 19,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 怎么, 代码",
+          "score": 15,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        },
+        {
+          "file": "content/blog/codex-github-before-commit-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 代码",
+          "score": 15,
+          "slug": "codex-github-before-commit-checklist",
+          "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
+          "url": "/blog/codex-github-before-commit-checklist"
+        },
+        {
+          "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+          "reason": "keyword overlap: ai, 怎么, 安装",
+          "score": 15,
+          "slug": "codex-install-failed-beginner-fix",
+          "title": "Codex 安装失败怎么办",
+          "url": "/blog/codex-install-failed-beginner-fix"
+        }
+      ],
+      "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流"
+    }
+  ],
+  "missingSuggestions": [],
+  "recommendedItems": [
+    {
+      "currentInternalLinks": 6,
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, vercel, 部署, 上线, 检查, 新手",
+          "score": 35,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 么做, 新手, 网页, 一个",
+          "score": 31,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 怎么, 检查, 项目, 新手, 一个, 第一",
+          "score": 28,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+          "reason": "keyword overlap: ai, 工具, 新手, 什么, 有什, 么区",
+          "score": 28,
+          "slug": "payoneer-wise-paypal-beginner-comparison",
+          "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+          "url": "/blog/payoneer-wise-paypal-beginner-comparison"
+        },
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: vercel, 部署, 怎么, 检查, 新手, 署检",
+          "score": 28,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        }
+      ],
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+    },
+    {
+      "currentInternalLinks": 4,
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 一个, 怎么, 么做, 第一",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 交付, 生成, 检查",
+          "score": 23,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, 部署, 什么, 上线, 检查",
+          "score": 23,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 一个, 怎么, 项目, 第一, 检查",
+          "score": 20,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 部署, 提示, 怎么, 失败, 检查",
+          "score": 20,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        }
+      ],
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
+    },
+    {
+      "currentInternalLinks": 5,
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+          "reason": "keyword overlap: proposal, 客户沟通, 怎么, 客户, 需求, 户沟",
+          "score": 32,
+          "slug": "upwork-client-requirements-analysis-beginner",
+          "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+          "url": "/blog/upwork-client-requirements-analysis-beginner"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 审核, 接单, 生成, 交付",
+          "score": 27,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 么做, 接单, 第一",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 怎么, 审核, 接单, 生成",
+          "score": 23,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        },
+        {
+          "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+          "reason": "keyword overlap: ai, 怎么, 失败, 接单",
+          "score": 19,
+          "slug": "codex-install-failed-beginner-fix",
+          "title": "Codex 安装失败怎么办",
+          "url": "/blog/codex-install-failed-beginner-fix"
+        }
+      ],
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+    }
+  ],
+  "waveItems": [
+    {
+      "currentInternalLinks": 6,
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, vercel, 部署, 上线, 检查, 新手",
+          "score": 35,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 么做, 新手, 网页, 一个",
+          "score": 31,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 怎么, 检查, 项目, 新手, 一个, 第一",
+          "score": 28,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+          "reason": "keyword overlap: ai, 工具, 新手, 什么, 有什, 么区",
+          "score": 28,
+          "slug": "payoneer-wise-paypal-beginner-comparison",
+          "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+          "url": "/blog/payoneer-wise-paypal-beginner-comparison"
+        },
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: vercel, 部署, 怎么, 检查, 新手, 署检",
+          "score": 28,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        }
+      ],
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+    },
+    {
+      "currentInternalLinks": 4,
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 一个, 怎么, 么做, 第一",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 交付, 生成, 检查",
+          "score": 23,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, 部署, 什么, 上线, 检查",
+          "score": 23,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 一个, 怎么, 项目, 第一, 检查",
+          "score": 20,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 部署, 提示, 怎么, 失败, 检查",
+          "score": 20,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        }
+      ],
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
+    },
+    {
+      "currentInternalLinks": 5,
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+          "reason": "keyword overlap: proposal, 客户沟通, 怎么, 客户, 需求, 户沟",
+          "score": 32,
+          "slug": "upwork-client-requirements-analysis-beginner",
+          "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+          "url": "/blog/upwork-client-requirements-analysis-beginner"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 审核, 接单, 生成, 交付",
+          "score": 27,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 么做, 接单, 第一",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 怎么, 审核, 接单, 生成",
+          "score": 23,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        },
+        {
+          "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+          "reason": "keyword overlap: ai, 怎么, 失败, 接单",
+          "score": 19,
+          "slug": "codex-install-failed-beginner-fix",
+          "title": "Codex 安装失败怎么办",
+          "url": "/blog/codex-install-failed-beginner-fix"
+        }
+      ],
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+    }
+  ]
+}

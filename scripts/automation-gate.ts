@@ -184,6 +184,19 @@ async function main() {
       waveItems: number;
     };
   }>("content/automation/content-integrity-audit.json");
+  const internalLinks = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    summary: {
+      candidateItems: number;
+      candidateItemsMissingPublicLinkSuggestion: number;
+      candidateItemsWithPublicSuggestions: number;
+      expansionItems: number;
+      publicArticles: number;
+      recommendedItems: number;
+      waveItems: number;
+      waveItemsMissingPublicLinkSuggestion: number;
+    };
+  }>("content/automation/internal-link-opportunity-audit.json");
   const articles = (await articleFiles()).map(readArticle);
 
   const reviewFiles = reviewQueue.recommendedToday.map((item) => item.file);
@@ -320,6 +333,26 @@ async function main() {
         contentIntegrity.summary.recommendedItems === reviewQueue.recommendedToday.length &&
         contentIntegrity.summary.waveItems === waveApprovalPacket.summary.items,
       detail: `public=${contentIntegrity.summary.publicItems}, recommended=${contentIntegrity.summary.recommendedItems}, wave=${contentIntegrity.summary.waveItems}`,
+    },
+    {
+      name: "internal link opportunity audit is read-only and covers expansion candidates",
+      ok:
+        internalLinks.guardrails.autoEditArticles === false &&
+        internalLinks.guardrails.autoMarkReview === false &&
+        internalLinks.guardrails.autoPublish === false &&
+        internalLinks.summary.publicArticles === projectStatus.articles.publicPublished &&
+        internalLinks.summary.expansionItems === publicExpansion.summary.items &&
+        internalLinks.summary.candidateItems === publicExpansion.summary.items,
+      detail: `public=${internalLinks.summary.publicArticles}, expansion=${internalLinks.summary.expansionItems}, candidates=${internalLinks.summary.candidateItems}`,
+    },
+    {
+      name: "internal link opportunity audit has public suggestions for Wave 1",
+      ok:
+        internalLinks.summary.waveItems === waveApprovalPacket.summary.items &&
+        internalLinks.summary.recommendedItems === reviewQueue.recommendedToday.length &&
+        internalLinks.summary.waveItemsMissingPublicLinkSuggestion === 0 &&
+        internalLinks.summary.candidateItemsMissingPublicLinkSuggestion === 0,
+      detail: `wave=${internalLinks.summary.waveItems}, waveMissing=${internalLinks.summary.waveItemsMissingPublicLinkSuggestion}, candidateMissing=${internalLinks.summary.candidateItemsMissingPublicLinkSuggestion}`,
     },
     {
       name: "SEO opportunity map has review-ready drafts",

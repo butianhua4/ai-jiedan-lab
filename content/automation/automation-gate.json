@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-06T12:59:45.219Z",
+  "generatedAt": "2026-06-06T13:07:06.748Z",
   "ok": true,
   "summary": {
-    "checks": 49,
+    "checks": 51,
     "failed": 0,
-    "passed": 49
+    "passed": 51
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=67, unsafeClaims=0, watchMentions=387"
+      "detail": "filesScanned=69, unsafeClaims=0, watchMentions=387"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -101,6 +101,16 @@
       "name": "content integrity audit covers public, recommended, and Wave 1 items",
       "ok": true,
       "detail": "public=15, recommended=3, wave=3"
+    },
+    {
+      "name": "internal link opportunity audit is read-only and covers expansion candidates",
+      "ok": true,
+      "detail": "public=15, expansion=19, candidates=19"
+    },
+    {
+      "name": "internal link opportunity audit has public suggestions for Wave 1",
+      "ok": true,
+      "detail": "wave=3, waveMissing=0, candidateMissing=0"
     },
     {
       "name": "SEO opportunity map has review-ready drafts",

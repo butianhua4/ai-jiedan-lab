@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T12:59:45.172Z",
+  "generatedAt": "2026-06-06T13:07:06.700Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -21,6 +21,16 @@
     "publicItems": 15,
     "recommendedItems": 3,
     "waveItems": 3
+  },
+  "internalLinks": {
+    "candidateItems": 19,
+    "candidateItemsMissingPublicLinkSuggestion": 0,
+    "candidateItemsWithPublicSuggestions": 19,
+    "expansionItems": 19,
+    "publicArticles": 15,
+    "recommendedItems": 3,
+    "waveItems": 3,
+    "waveItemsMissingPublicLinkSuggestion": 0
   },
   "publishingBoundary": {
     "publicPublished": 15,
@@ -1988,7 +1998,7 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 67,
+    "filesScanned": 69,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
     "watchMentions": 387
@@ -3267,7 +3277,7 @@
   "liveSearch": {
     "checkedArticles": 15,
     "failedChecks": [],
-    "generatedAt": "2026-06-06T12:59:11.725Z",
+    "generatedAt": "2026-06-06T13:06:34.160Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 15,
