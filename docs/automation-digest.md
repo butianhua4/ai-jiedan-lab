@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T11:13:18.781Z
+Generated at: 2026-06-06T11:18:45.738Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -81,11 +81,16 @@ This digest is read-only. It summarizes automation reports and does not publish 
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T11:13:01.189Z
+- Latest check: 2026-06-06T11:18:26.477Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
 - Failed checks: none
+
+## Manual Review Workbench
+
+- Next batch: 1 - Agent 部署、工具调用和记忆
+- Current publish readiness items: 3
 
 ## Next Actions
 

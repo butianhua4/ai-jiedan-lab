@@ -1,0 +1,238 @@
+{
+  "generatedAt": "2026-06-06T11:17:56.195Z",
+  "guardrails": {
+    "autoMarkReview": false,
+    "autoPublish": false,
+    "note": "This workbench summarizes manual review inputs only. It does not change article status, noindex, or publishing state.",
+    "stopBefore": "Explicit human approval is required before mark:review --confirm-human or publish:articles --confirm."
+  },
+  "publishingBoundary": {
+    "publicPublished": 15,
+    "publishableNow": 0,
+    "statusCounts": {
+      "draft": 633,
+      "published": 15,
+      "archived": 21
+    }
+  },
+  "liveSearch": {
+    "failedChecks": [],
+    "ok": true,
+    "publicCount": 15,
+    "sitemapUrlCount": 85
+  },
+  "reviewPlan": {
+    "plannedBatches": 3,
+    "plannedCandidates": 9,
+    "nextBatch": {
+      "batch": 1,
+      "candidates": [
+        {
+          "category": "AI Agent",
+          "cluster": "Agent and memory",
+          "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
+          "opportunityScore": 260,
+          "publishBatch": 40,
+          "qualityScore": 100,
+          "reviewCommandAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+        },
+        {
+          "category": "AI 记忆",
+          "cluster": "Agent and memory",
+          "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx",
+          "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+          "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
+          "opportunityScore": 260,
+          "publishBatch": 40,
+          "qualityScore": 100,
+          "reviewCommandAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
+          "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
+        },
+        {
+          "category": "接单报价",
+          "cluster": "Agent and memory",
+          "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
+          "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+          "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
+          "opportunityScore": 253,
+          "publishBatch": 33,
+          "qualityScore": 100,
+          "reviewCommandAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
+          "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
+        }
+      ],
+      "topic": "Agent 部署、工具调用和记忆"
+    }
+  },
+  "publishReadiness": {
+    "currentItemsCovered": 3,
+    "items": [
+      {
+        "factCheckQueries": [
+          "AI Agent 部署 官方文档 最新",
+          "AI Agent 部署 official docs latest",
+          "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 事实核对",
+          "AI Agent 平台限制 官方文档",
+          "AI Agent 部署教程",
+          "Agent 记忆怎么做",
+          "AI Agent 工具调用教程",
+          "AI 工作流部署"
+        ],
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "humanDecisionChecklist": [
+          "Article remains draft before approval: true",
+          "Article remains noindex before approval: true",
+          "Human review is required: true",
+          "Quality score is at least 100: true",
+          "Source notes are present: true",
+          "Article has at least one internal link: true",
+          "Opening section directly answers the search query.",
+          "Reviewer can explain why this article should be public now instead of staying draft."
+        ],
+        "matchedContentOpportunity": {
+          "reviewFocus": [
+            "解释工具调用和多步执行边界",
+            "明确记忆、状态和人工确认的安全边界",
+            "避免承诺全自动完成业务结果"
+          ],
+          "searchQueries": [
+            "AI Agent 部署教程",
+            "Agent 记忆怎么做",
+            "AI Agent 工具调用教程",
+            "AI 工作流部署"
+          ],
+          "topic": "Agent 部署、工具调用和记忆",
+          "why": "Agent、记忆和工作流是高频 AI 应用词，但需要清楚解释边界和落地步骤。"
+        },
+        "officialSourceTargets": [
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs"
+        ],
+        "riskReviewChecklist": [
+          "No income, ranking, approval, or client acquisition guarantee.",
+          "No instruction to bypass platform rules, payments, messaging, or review systems.",
+          "No API key, credential, private customer data, or account detail is included.",
+          "Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.",
+          "Automation claims include human approval, permissions, logging, and rollback boundaries.",
+          "Deployment guidance includes environment variables, rate limits, smoke checks, and failure handling."
+        ],
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+      },
+      {
+        "factCheckQueries": [
+          "全行业 AI 提示词模板 官方文档 最新",
+          "全行业 AI 提示词模板 official docs latest",
+          "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 事实核对",
+          "AI 提示词 平台限制 官方文档",
+          "AI 提示词大全",
+          "销售 AI 提示词",
+          "客服 AI 提示词",
+          "运营 AI 提示词"
+        ],
+        "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "humanDecisionChecklist": [
+          "Article remains draft before approval: true",
+          "Article remains noindex before approval: true",
+          "Human review is required: true",
+          "Quality score is at least 100: true",
+          "Source notes are present: true",
+          "Article has at least one internal link: true",
+          "Opening section directly answers the search query.",
+          "Reviewer can explain why this article should be public now instead of staying draft."
+        ],
+        "matchedContentOpportunity": {
+          "reviewFocus": [
+            "按行业给可复制结构",
+            "避免空泛万能提示词",
+            "补充输入字段、质检标准和反例"
+          ],
+          "searchQueries": [
+            "AI 提示词大全",
+            "销售 AI 提示词",
+            "客服 AI 提示词",
+            "运营 AI 提示词",
+            "HR AI 提示词"
+          ],
+          "topic": "全行业 AI 提示词和工作流模板",
+          "why": "提示词类内容搜索面宽，但需要从模板升级成行业流程，才更适合长期收录。"
+        },
+        "officialSourceTargets": [
+          "OpenAI docs: https://platform.openai.com/docs",
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
+        ],
+        "riskReviewChecklist": [
+          "No income, ranking, approval, or client acquisition guarantee.",
+          "No instruction to bypass platform rules, payments, messaging, or review systems.",
+          "No API key, credential, private customer data, or account detail is included.",
+          "Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.",
+          "Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.",
+          "Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts."
+        ],
+        "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+      },
+      {
+        "factCheckQueries": [
+          "客服 AI 模型选型 官方文档 最新",
+          "客服 AI 模型选型 official docs latest",
+          "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 事实核对",
+          "AI 部署 平台限制 官方文档",
+          "RAG 知识库搭建教程",
+          "企业知识库 AI 部署",
+          "向量数据库教程",
+          "客服知识库 AI"
+        ],
+        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "humanDecisionChecklist": [
+          "Article remains draft before approval: true",
+          "Article remains noindex before approval: true",
+          "Human review is required: true",
+          "Quality score is at least 100: true",
+          "Source notes are present: true",
+          "Article has at least one internal link: true",
+          "Opening section directly answers the search query.",
+          "Reviewer can explain why this article should be public now instead of staying draft."
+        ],
+        "matchedContentOpportunity": {
+          "reviewFocus": [
+            "区分 RAG、微调和普通提示词",
+            "核对向量库、引用、召回和质检说法",
+            "说明失败案例和人工兜底"
+          ],
+          "searchQueries": [
+            "RAG 知识库搭建教程",
+            "企业知识库 AI 部署",
+            "向量数据库教程",
+            "客服知识库 AI"
+          ],
+          "topic": "RAG、知识库和向量检索",
+          "why": "很多团队会搜索知识库 AI，但真正需要的是可审核、可引用、可质检的方案。"
+        },
+        "officialSourceTargets": [
+          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
+        ],
+        "riskReviewChecklist": [
+          "No income, ranking, approval, or client acquisition guarantee.",
+          "No instruction to bypass platform rules, payments, messaging, or review systems.",
+          "No API key, credential, private customer data, or account detail is included.",
+          "Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.",
+          "Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.",
+          "Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts."
+        ],
+        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
+      }
+    ]
+  },
+  "cannibalization": {
+    "conflicts": 200,
+    "reviewBatchConflicts": 0,
+    "reviewBatchConflictItems": []
+  },
+  "nextActions": [
+    "Review the current publish readiness items in docs/publish-readiness-pack.md.",
+    "Use docs/review-batch-plan.md to see the next topical batches after the current pack.",
+    "Run dry-run mark:review commands only; add --confirm-human only after explicit human approval."
+  ]
+}

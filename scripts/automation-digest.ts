@@ -52,6 +52,10 @@ const reports = {
     ok: boolean;
     sitemap: { urlCount: number };
   }>("content/automation/live-search-surface.json"),
+  workbench: readJson<{
+    publishReadiness: { currentItemsCovered: number };
+    reviewPlan: { nextBatch: { batch: number; topic: string } | null };
+  }>("content/automation/manual-review-workbench.json"),
   preflight: readJson<{ ok: boolean; summary: { checked: number; failed: number; passed: number }; items: PreflightItem[] }>(
     "content/automation/review-preflight.json",
   ),
@@ -134,6 +138,10 @@ const payload = {
         sitemapUrlCount: reports.liveSearch.data.sitemap.urlCount,
       }
     : null,
+  workbench: {
+    currentItemsCovered: reports.workbench.data?.publishReadiness.currentItemsCovered ?? null,
+    nextBatch: reports.workbench.data?.reviewPlan.nextBatch ?? null,
+  },
   nextActions: buildNextActions(),
 };
 
@@ -256,6 +264,11 @@ function toMarkdown(data: typeof payload) {
     data.liveSearch
       ? `- Failed checks: ${data.liveSearch.failedChecks.length ? data.liveSearch.failedChecks.join(", ") : "none"}`
       : "- Failed checks: live-search-surface report missing",
+    "",
+    "## Manual Review Workbench",
+    "",
+    `- Next batch: ${data.workbench.nextBatch ? `${data.workbench.nextBatch.batch} - ${data.workbench.nextBatch.topic}` : "missing"}`,
+    `- Current publish readiness items: ${data.workbench.currentItemsCovered}`,
     "",
     "## Next Actions",
     "",

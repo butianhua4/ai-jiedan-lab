@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T11:13:18.781Z",
+  "generatedAt": "2026-06-06T11:18:45.738Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -685,11 +685,56 @@
   "liveSearch": {
     "checkedArticles": 15,
     "failedChecks": [],
-    "generatedAt": "2026-06-06T11:13:01.189Z",
+    "generatedAt": "2026-06-06T11:18:26.477Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 15,
     "sitemapUrlCount": 85
+  },
+  "workbench": {
+    "currentItemsCovered": 3,
+    "nextBatch": {
+      "batch": 1,
+      "candidates": [
+        {
+          "category": "AI Agent",
+          "cluster": "Agent and memory",
+          "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
+          "opportunityScore": 260,
+          "publishBatch": 40,
+          "qualityScore": 100,
+          "reviewCommandAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+        },
+        {
+          "category": "AI 记忆",
+          "cluster": "Agent and memory",
+          "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx",
+          "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+          "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
+          "opportunityScore": 260,
+          "publishBatch": 40,
+          "qualityScore": 100,
+          "reviewCommandAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
+          "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
+        },
+        {
+          "category": "接单报价",
+          "cluster": "Agent and memory",
+          "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
+          "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+          "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
+          "opportunityScore": 253,
+          "publishBatch": 33,
+          "qualityScore": 100,
+          "reviewCommandAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
+          "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
+        }
+      ],
+      "topic": "Agent 部署、工具调用和记忆"
+    }
   },
   "nextActions": [
     "Manually review the three recommended drafts in docs/review-preflight.md.",

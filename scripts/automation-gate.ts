@@ -48,6 +48,12 @@ async function main() {
     summary: { articleCount: number; conflicts: number; reviewBatchConflicts: number };
   }>("content/automation/content-cannibalization.json");
   const liveSearch = readJson<{ articles: { publicCount: number }; failedChecks: string[]; ok: boolean }>("content/automation/live-search-surface.json");
+  const workbench = readJson<{
+    guardrails: { autoMarkReview: boolean; autoPublish: boolean };
+    publishReadiness: { currentItemsCovered: number };
+    publishingBoundary: { publishableNow: number };
+    reviewPlan: { nextBatch: unknown };
+  }>("content/automation/manual-review-workbench.json");
   const projectStatus = readJson<{ articles: { publicPublished: number; publishableNow: unknown[] } }>("content/automation/project-status.json");
   const articles = (await articleFiles()).map(readArticle);
 
@@ -175,6 +181,16 @@ async function main() {
       name: "live search surface check passed",
       ok: liveSearch.ok === true && liveSearch.failedChecks.length === 0,
       detail: `publicArticles=${liveSearch.articles.publicCount}, failed=${liveSearch.failedChecks.length}`,
+    },
+    {
+      name: "manual review workbench is ready and stops before publishing",
+      ok:
+        workbench.guardrails.autoMarkReview === false &&
+        workbench.guardrails.autoPublish === false &&
+        workbench.publishingBoundary.publishableNow === 0 &&
+        Boolean(workbench.reviewPlan.nextBatch) &&
+        workbench.publishReadiness.currentItemsCovered > 0,
+      detail: `currentItemsCovered=${workbench.publishReadiness.currentItemsCovered}, publishableNow=${workbench.publishingBoundary.publishableNow}`,
     },
   ];
 
