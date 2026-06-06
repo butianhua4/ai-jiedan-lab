@@ -33,6 +33,9 @@ jobs:
       - name: Run SEO safety check
         run: npm run --silent seo:check > content/automation/seo-check.json
 
+      - name: Generate SEO opportunity map
+        run: npm run seo:opportunities
+
       - name: Run searchability check
         run: npm run --silent searchability:check > content/automation/searchability-check.json
 
@@ -46,6 +49,8 @@ jobs:
             content/automation/draft-guardrail-sanitize.json
             content/automation/project-status.json
             content/automation/seo-check.json
+            content/automation/seo-opportunity-map.json
             content/automation/searchability-check.json
             docs/review-automation.md
             docs/publish-readiness-pack.md
+            docs/seo-opportunity-map.md

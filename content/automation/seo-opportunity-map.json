@@ -1,0 +1,371 @@
+{
+  "generatedAt": "2026-06-06T09:47:09.890Z",
+  "guardrails": {
+    "autoPublish": false,
+    "note": "This report uses local content metadata only. It does not claim real traffic or Search Console impressions."
+  },
+  "totals": {
+    "files": 665,
+    "published": 15,
+    "draft": 629,
+    "archived": 21,
+    "reviewReadyDrafts": 629
+  },
+  "nextReviewTargets": [
+    {
+      "category": "AI 基建",
+      "reason": "has review-ready drafts but no public article yet",
+      "reviewReadyDrafts": 78,
+      "published": 0
+    },
+    {
+      "category": "报错解决",
+      "reason": "has enough review-ready drafts for a small manual publishing batch",
+      "reviewReadyDrafts": 80,
+      "published": 1
+    },
+    {
+      "category": "Upwork 新手",
+      "reason": "has enough review-ready drafts for a small manual publishing batch",
+      "reviewReadyDrafts": 78,
+      "published": 2
+    },
+    {
+      "category": "Codex 新手教程",
+      "reason": "has enough review-ready drafts for a small manual publishing batch",
+      "reviewReadyDrafts": 74,
+      "published": 9
+    },
+    {
+      "category": "工具流程",
+      "reason": "has review-ready drafts but no public article yet",
+      "reviewReadyDrafts": 58,
+      "published": 0
+    },
+    {
+      "category": "模板和清单",
+      "reason": "has review-ready drafts but no public article yet",
+      "reviewReadyDrafts": 44,
+      "published": 0
+    },
+    {
+      "category": "AI 自由职业路线",
+      "reason": "has review-ready drafts but no public article yet",
+      "reviewReadyDrafts": 44,
+      "published": 0
+    },
+    {
+      "category": "收款工具",
+      "reason": "has enough review-ready drafts for a small manual publishing batch",
+      "reviewReadyDrafts": 40,
+      "published": 1
+    }
+  ],
+  "clusters": [
+    {
+      "cluster": "Freelance monetization",
+      "drafts": 295,
+      "examples": [
+        "广告收入要等到什么时候再接：新手检查清单",
+        "广告收入要等到什么时候再接",
+        "联盟链接收入和服务收入有什么区别：新手检查清单",
+        "联盟链接收入和服务收入有什么区别",
+        "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
+      ],
+      "published": 5,
+      "reviewReadyDrafts": 295,
+      "total": 302
+    },
+    {
+      "cluster": "Troubleshooting",
+      "drafts": 188,
+      "examples": [
+        "AI 辅助交付常见错误和解决步骤",
+        "AI 新手判断接项目时的常见错误",
+        "新手 30 天 AI 接单计划常见执行错误",
+        "AI 自动化接单常见合规错误和解决步骤",
+        "AI 接单误区的常见错误和解决步骤"
+      ],
+      "published": 3,
+      "reviewReadyDrafts": 188,
+      "total": 194
+    },
+    {
+      "cluster": "AI deployment",
+      "drafts": 151,
+      "examples": [
+        "Agent 部署怎么做：从聊天助手到可上线工作流",
+        "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+        "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+        "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+        "API Key 无效或缺失排查清单"
+      ],
+      "published": 3,
+      "reviewReadyDrafts": 151,
+      "total": 158
+    },
+    {
+      "cluster": "Agent and memory",
+      "drafts": 53,
+      "examples": [
+        "Agent 部署怎么做：从聊天助手到可上线工作流",
+        "Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认",
+        "Agent 记忆怎么设计：短期记忆、长期记忆和用户偏好",
+        "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
+        "Agent 可观测性怎么做：日志、轨迹、成本和失败复盘"
+      ],
+      "published": 0,
+      "reviewReadyDrafts": 53,
+      "total": 53
+    },
+    {
+      "cluster": "RAG and knowledge base",
+      "drafts": 30,
+      "examples": [
+        "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+        "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+        "AnythingLLM 怎么搭本地知识库：从文档聊天到 Agent 原型",
+        "Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection",
+        "Dify、Coze、Flowise 怎么选：做 Agent 和知识库前先看边界"
+      ],
+      "published": 0,
+      "reviewReadyDrafts": 30,
+      "total": 30
+    },
+    {
+      "cluster": "Industry AI prompts",
+      "drafts": 26,
+      "examples": [
+        "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+        "AI 提示词怎么写才好用：全行业都能套的 5 段式框架",
+        "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
+        "ChatGPT 提示词怎么写：新手可复制的 5 段式模板",
+        "Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection"
+      ],
+      "published": 0,
+      "reviewReadyDrafts": 26,
+      "total": 26
+    }
+  ],
+  "categories": [
+    {
+      "category": "AI 基建",
+      "drafts": 78,
+      "published": 0,
+      "reviewReadyDrafts": 78,
+      "total": 78
+    },
+    {
+      "category": "报错解决",
+      "drafts": 80,
+      "published": 1,
+      "reviewReadyDrafts": 80,
+      "total": 81
+    },
+    {
+      "category": "Upwork 新手",
+      "drafts": 78,
+      "published": 2,
+      "reviewReadyDrafts": 78,
+      "total": 80
+    },
+    {
+      "category": "Codex 新手教程",
+      "drafts": 74,
+      "published": 9,
+      "reviewReadyDrafts": 74,
+      "total": 104
+    },
+    {
+      "category": "工具流程",
+      "drafts": 58,
+      "published": 0,
+      "reviewReadyDrafts": 58,
+      "total": 58
+    },
+    {
+      "category": "模板和清单",
+      "drafts": 44,
+      "published": 0,
+      "reviewReadyDrafts": 44,
+      "total": 44
+    },
+    {
+      "category": "AI 自由职业路线",
+      "drafts": 44,
+      "published": 0,
+      "reviewReadyDrafts": 44,
+      "total": 44
+    },
+    {
+      "category": "收款工具",
+      "drafts": 40,
+      "published": 1,
+      "reviewReadyDrafts": 40,
+      "total": 41
+    },
+    {
+      "category": "工具导航",
+      "drafts": 29,
+      "published": 0,
+      "reviewReadyDrafts": 29,
+      "total": 29
+    },
+    {
+      "category": "新手教程",
+      "drafts": 17,
+      "published": 0,
+      "reviewReadyDrafts": 17,
+      "total": 17
+    },
+    {
+      "category": "AI 提示词",
+      "drafts": 17,
+      "published": 0,
+      "reviewReadyDrafts": 17,
+      "total": 17
+    },
+    {
+      "category": "AI 部署",
+      "drafts": 16,
+      "published": 0,
+      "reviewReadyDrafts": 16,
+      "total": 16
+    },
+    {
+      "category": "接单平台",
+      "drafts": 12,
+      "published": 0,
+      "reviewReadyDrafts": 12,
+      "total": 12
+    },
+    {
+      "category": "AI 工具",
+      "drafts": 8,
+      "published": 0,
+      "reviewReadyDrafts": 8,
+      "total": 8
+    },
+    {
+      "category": "工具对比",
+      "drafts": 4,
+      "published": 0,
+      "reviewReadyDrafts": 4,
+      "total": 4
+    },
+    {
+      "category": "Claude Code 新手教程",
+      "drafts": 4,
+      "published": 0,
+      "reviewReadyDrafts": 4,
+      "total": 4
+    },
+    {
+      "category": "Deployment",
+      "drafts": 4,
+      "published": 0,
+      "reviewReadyDrafts": 4,
+      "total": 4
+    },
+    {
+      "category": "Troubleshooting",
+      "drafts": 4,
+      "published": 0,
+      "reviewReadyDrafts": 4,
+      "total": 4
+    },
+    {
+      "category": "Upwork 新手教程",
+      "drafts": 4,
+      "published": 0,
+      "reviewReadyDrafts": 4,
+      "total": 4
+    },
+    {
+      "category": "新手路线",
+      "drafts": 3,
+      "published": 0,
+      "reviewReadyDrafts": 3,
+      "total": 3
+    },
+    {
+      "category": "工具选择",
+      "drafts": 2,
+      "published": 0,
+      "reviewReadyDrafts": 2,
+      "total": 2
+    },
+    {
+      "category": "客户沟通",
+      "drafts": 2,
+      "published": 0,
+      "reviewReadyDrafts": 2,
+      "total": 2
+    },
+    {
+      "category": "作品集",
+      "drafts": 2,
+      "published": 0,
+      "reviewReadyDrafts": 2,
+      "total": 2
+    },
+    {
+      "category": "Proposal",
+      "drafts": 2,
+      "published": 0,
+      "reviewReadyDrafts": 2,
+      "total": 2
+    },
+    {
+      "category": "接单报价",
+      "drafts": 1,
+      "published": 0,
+      "reviewReadyDrafts": 1,
+      "total": 1
+    },
+    {
+      "category": "报价指南",
+      "drafts": 2,
+      "published": 1,
+      "reviewReadyDrafts": 2,
+      "total": 3
+    },
+    {
+      "category": "部署教程",
+      "drafts": 0,
+      "published": 1,
+      "reviewReadyDrafts": 0,
+      "total": 1
+    }
+  ],
+  "searchIntents": [
+    {
+      "name": "informational",
+      "drafts": 570,
+      "published": 9,
+      "reviewReadyDrafts": 570,
+      "total": 585
+    },
+    {
+      "name": "commercial",
+      "drafts": 59,
+      "published": 4,
+      "reviewReadyDrafts": 59,
+      "total": 68
+    },
+    {
+      "name": "navigational",
+      "drafts": 0,
+      "published": 1,
+      "reviewReadyDrafts": 0,
+      "total": 5
+    },
+    {
+      "name": "transactional",
+      "drafts": 0,
+      "published": 1,
+      "reviewReadyDrafts": 0,
+      "total": 7
+    }
+  ]
+}
