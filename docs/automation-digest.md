@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T11:25:14.571Z
+Generated at: 2026-06-06T11:34:30.538Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -37,6 +37,16 @@ This digest is read-only. It summarizes automation reports and does not publish 
 | 1 | Agent 部署、工具调用和记忆 | 3 |
 | 2 | RAG、知识库和向量检索 | 3 |
 | 3 | 全行业 AI 提示词和工作流模板 | 3 |
+
+## Review Coverage
+
+- Planned candidates: 9
+- Current pack covered: 3
+- Missing coverage: 0
+- Missing official sources: 0
+- Missing fact-check queries: 0
+- Missing risk checks: 0
+- Unsafe indexing items: 0
 
 ## Preflight
 
@@ -88,7 +98,7 @@ This digest is read-only. It summarizes automation reports and does not publish 
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T11:24:01.298Z
+- Latest check: 2026-06-06T11:34:21.464Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
@@ -102,5 +112,6 @@ This digest is read-only. It summarizes automation reports and does not publish 
 ## Next Actions
 
 - Manually review the three recommended drafts in docs/review-preflight.md.
+- Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.
 - If approved by a human, run mark:review with --confirm-human for approved files only.
 - Publish only status=review articles in a 1-3 article batch after a dry-run.

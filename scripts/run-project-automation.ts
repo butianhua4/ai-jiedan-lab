@@ -22,6 +22,7 @@ const tasks: Task[] = [
   { title: "Generate review batch plan", args: ["run", "automation:review-plan"] },
   { title: "Run content cannibalization check", args: ["run", "content:cannibalization"] },
   { title: "Run content freshness check", args: ["run", "content:freshness"] },
+  { title: "Generate review coverage report", args: ["run", "automation:review-coverage"] },
   { title: "Generate manual review workbench", args: ["run", "automation:workbench"] },
   { title: "Run searchability check", args: ["run", "--silent", "searchability:check"], outputFile: "content/automation/searchability-check.json" },
   { title: "Run automation gate", args: ["run", "automation:gate"] },

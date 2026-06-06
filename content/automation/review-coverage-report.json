@@ -1,0 +1,670 @@
+{
+  "generatedAt": "2026-06-06T11:33:06.548Z",
+  "guardrails": {
+    "autoMarkReview": false,
+    "autoPublish": false,
+    "note": "This report expands manual review coverage for planned candidates. It does not change article status, noindex, or publishing state."
+  },
+  "summary": {
+    "currentPackCovered": 3,
+    "itemsMissingApprovalChecks": 0,
+    "itemsMissingFactCheckQueries": 0,
+    "itemsMissingOfficialSources": 0,
+    "itemsMissingRiskChecks": 0,
+    "missingCoverage": 0,
+    "nonDraftItems": 0,
+    "plannedCandidates": 9,
+    "reviewBatchConflictItems": 0,
+    "unsafeIndexingItems": 0
+  },
+  "batches": [
+    {
+      "batch": 1,
+      "candidateCount": 3,
+      "topic": "Agent 部署、工具调用和记忆"
+    },
+    {
+      "batch": 2,
+      "candidateCount": 3,
+      "topic": "RAG、知识库和向量检索"
+    },
+    {
+      "batch": 3,
+      "candidateCount": 3,
+      "topic": "全行业 AI 提示词和工作流模板"
+    }
+  ],
+  "items": [
+    {
+      "approvalChecklist": [
+        "Article is still draft: true",
+        "Article is still noindex: true",
+        "Human review flag is present: true",
+        "Source notes are present: true",
+        "Article has internal links: true",
+        "Reviewer confirms the opening answer matches the main query.",
+        "Reviewer confirms the article should enter review before any status change command runs."
+      ],
+      "batch": 1,
+      "category": "AI Agent",
+      "cluster": "Agent and memory",
+      "currentPackCovered": true,
+      "factCheckQueries": [
+        "AI Agent 部署 官方文档 最新",
+        "AI Agent 部署 official docs latest",
+        "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 事实核对",
+        "AI Agent 平台限制 官方文档",
+        "AI Agent 部署教程",
+        "Agent 记忆怎么做",
+        "AI Agent 工具调用教程",
+        "AI 工作流部署"
+      ],
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "freshnessRiskLevel": "high",
+      "freshnessRiskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: agent",
+        "fast-changing technical term: model",
+        "fast-changing technical term: vercel",
+        "fast-changing technical term: 部署",
+        "fast-changing technical term: 模型",
+        "fast-changing technical term: 知识库",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 报价",
+        "review-sensitive term: 客服",
+        "review-sensitive term: 销售",
+        "review-sensitive term: 自动化"
+      ],
+      "humanReviewRequired": true,
+      "internalLinks": 6,
+      "noindex": true,
+      "officialSourceTargets": [
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs"
+      ],
+      "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
+      "opportunityScore": 260,
+      "primaryKeyword": "AI Agent 部署",
+      "qualityScore": 100,
+      "reviewFocus": [
+        "解释工具调用和多步执行边界",
+        "明确记忆、状态和人工确认的安全边界",
+        "避免承诺全自动完成业务结果",
+        "Verify current official docs before approval.",
+        "Confirm the article has one clear search intent."
+      ],
+      "riskReviewChecklist": [
+        "No income, ranking, approval, or client acquisition guarantee.",
+        "No instruction to bypass platform rules, payments, messaging, or review systems.",
+        "No API key, credential, private customer data, or account detail is included.",
+        "Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.",
+        "Automation claims include human approval, permissions, logging, and rollback boundaries.",
+        "Deployment guidance includes environment variables, rate limits, smoke checks, and failure handling."
+      ],
+      "searchIntent": "informational",
+      "sourceNotesPresent": true,
+      "status": "draft",
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "topic": "Agent 部署、工具调用和记忆",
+      "wordCountChinese": 1540
+    },
+    {
+      "approvalChecklist": [
+        "Article is still draft: true",
+        "Article is still noindex: true",
+        "Human review flag is present: true",
+        "Source notes are present: true",
+        "Article has internal links: true",
+        "Reviewer confirms the opening answer matches the main query.",
+        "Reviewer confirms the article should enter review before any status change command runs."
+      ],
+      "batch": 1,
+      "category": "AI 记忆",
+      "cluster": "Agent and memory",
+      "currentPackCovered": false,
+      "factCheckQueries": [
+        "AI Agent 记忆 official docs latest",
+        "AI Agent 记忆 official changelog",
+        "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 fact check official docs",
+        "AI Agent 部署教程",
+        "Agent 记忆怎么做",
+        "AI Agent 工具调用教程",
+        "AI 工作流部署"
+      ],
+      "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+      "freshnessRiskLevel": "high",
+      "freshnessRiskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: agent",
+        "fast-changing technical term: model",
+        "fast-changing technical term: openai",
+        "fast-changing technical term: rag",
+        "fast-changing technical term: vercel",
+        "fast-changing technical term: 部署",
+        "fast-changing technical term: 模型",
+        "review-sensitive term: prompt",
+        "review-sensitive term: 提示词",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 报价",
+        "review-sensitive term: 客服"
+      ],
+      "humanReviewRequired": true,
+      "internalLinks": 6,
+      "noindex": true,
+      "officialSourceTargets": [
+        "OpenAI docs: https://platform.openai.com/docs",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
+      ],
+      "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
+      "opportunityScore": 260,
+      "primaryKeyword": "AI Agent 记忆",
+      "qualityScore": 100,
+      "reviewFocus": [
+        "解释工具调用和多步执行边界",
+        "明确记忆、状态和人工确认的安全边界",
+        "避免承诺全自动完成业务结果",
+        "Verify current official docs before approval.",
+        "Confirm the article has one clear search intent."
+      ],
+      "riskReviewChecklist": [
+        "No income, traffic, approval, ranking, or client-acquisition guarantee.",
+        "No instruction to bypass platform, payment, messaging, or account rules.",
+        "No API key, credential, customer data, or private account detail.",
+        "Fast-changing tool limits, model names, pricing, deployment steps, and API behavior are checked against official docs.",
+        "Agent or workflow claims include permissions, logging, human approval, rollback, and failure handling.",
+        "RAG or memory claims explain retrieval limits, citation checks, privacy boundaries, and hallucination risk.",
+        "Deployment guidance includes environment variables, smoke checks, rate limits, logs, and rollback steps.",
+        "Prompt examples include input context, output criteria, review rules, and adaptation notes."
+      ],
+      "searchIntent": "informational",
+      "sourceNotesPresent": true,
+      "status": "draft",
+      "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+      "topic": "Agent 部署、工具调用和记忆",
+      "wordCountChinese": 1701
+    },
+    {
+      "approvalChecklist": [
+        "Article is still draft: true",
+        "Article is still noindex: true",
+        "Human review flag is present: true",
+        "Source notes are present: true",
+        "Article has internal links: true",
+        "Reviewer confirms the opening answer matches the main query.",
+        "Reviewer confirms the article should enter review before any status change command runs."
+      ],
+      "batch": 1,
+      "category": "接单报价",
+      "cluster": "Agent and memory",
+      "currentPackCovered": false,
+      "factCheckQueries": [
+        "AI 自动化项目报价 official docs latest",
+        "AI 自动化项目报价 official changelog",
+        "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 fact check official docs",
+        "AI Agent 部署教程",
+        "Agent 记忆怎么做",
+        "AI Agent 工具调用教程",
+        "AI 工作流部署"
+      ],
+      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+      "freshnessRiskLevel": "high",
+      "freshnessRiskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: agent",
+        "fast-changing technical term: dify",
+        "fast-changing technical term: n8n",
+        "fast-changing technical term: rag",
+        "fast-changing technical term: 部署",
+        "fast-changing technical term: 模型",
+        "fast-changing technical term: 知识库",
+        "review-sensitive term: 提示词",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 报价",
+        "review-sensitive term: 客服",
+        "review-sensitive term: 销售"
+      ],
+      "humanReviewRequired": true,
+      "internalLinks": 4,
+      "noindex": true,
+      "officialSourceTargets": [
+        "Dify docs: https://docs.dify.ai",
+        "n8n docs: https://docs.n8n.io",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
+      ],
+      "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
+      "opportunityScore": 253,
+      "primaryKeyword": "AI 自动化项目报价",
+      "qualityScore": 100,
+      "reviewFocus": [
+        "解释工具调用和多步执行边界",
+        "明确记忆、状态和人工确认的安全边界",
+        "避免承诺全自动完成业务结果",
+        "Verify current official docs before approval.",
+        "Confirm the article has one clear search intent."
+      ],
+      "riskReviewChecklist": [
+        "No income, traffic, approval, ranking, or client-acquisition guarantee.",
+        "No instruction to bypass platform, payment, messaging, or account rules.",
+        "No API key, credential, customer data, or private account detail.",
+        "Fast-changing tool limits, model names, pricing, deployment steps, and API behavior are checked against official docs.",
+        "Agent or workflow claims include permissions, logging, human approval, rollback, and failure handling.",
+        "RAG or memory claims explain retrieval limits, citation checks, privacy boundaries, and hallucination risk.",
+        "Deployment guidance includes environment variables, smoke checks, rate limits, logs, and rollback steps."
+      ],
+      "searchIntent": "informational",
+      "sourceNotesPresent": true,
+      "status": "draft",
+      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+      "topic": "Agent 部署、工具调用和记忆",
+      "wordCountChinese": 1303
+    },
+    {
+      "approvalChecklist": [
+        "Article is still draft: true",
+        "Article is still noindex: true",
+        "Human review flag is present: true",
+        "Source notes are present: true",
+        "Article has internal links: true",
+        "Reviewer confirms the opening answer matches the main query.",
+        "Reviewer confirms the article should enter review before any status change command runs."
+      ],
+      "batch": 2,
+      "category": "AI 部署",
+      "cluster": "RAG and knowledge base",
+      "currentPackCovered": true,
+      "factCheckQueries": [
+        "客服 AI 模型选型 官方文档 最新",
+        "客服 AI 模型选型 official docs latest",
+        "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 事实核对",
+        "AI 部署 平台限制 官方文档",
+        "RAG 知识库搭建教程",
+        "企业知识库 AI 部署",
+        "向量数据库教程",
+        "客服知识库 AI"
+      ],
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "freshnessRiskLevel": "high",
+      "freshnessRiskReasons": [
+        "fast-changing technical term: model",
+        "fast-changing technical term: rag",
+        "fast-changing technical term: 部署",
+        "fast-changing technical term: 模型",
+        "fast-changing technical term: 知识库",
+        "review-sensitive term: prompt",
+        "review-sensitive term: 提示词",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 客服"
+      ],
+      "humanReviewRequired": true,
+      "internalLinks": 4,
+      "noindex": true,
+      "officialSourceTargets": [
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
+      ],
+      "opportunityReason": "RAG and knowledge base cluster; no public article in cluster; no public article in category",
+      "opportunityScore": 254,
+      "primaryKeyword": "客服 AI 模型选型",
+      "qualityScore": 100,
+      "reviewFocus": [
+        "区分 RAG、微调和普通提示词",
+        "核对向量库、引用、召回和质检说法",
+        "说明失败案例和人工兜底",
+        "Verify current official docs before approval.",
+        "Confirm the article has one clear search intent."
+      ],
+      "riskReviewChecklist": [
+        "No income, ranking, approval, or client acquisition guarantee.",
+        "No instruction to bypass platform rules, payments, messaging, or review systems.",
+        "No API key, credential, private customer data, or account detail is included.",
+        "Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.",
+        "Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.",
+        "Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts."
+      ],
+      "searchIntent": "informational",
+      "sourceNotesPresent": true,
+      "status": "draft",
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "topic": "RAG、知识库和向量检索",
+      "wordCountChinese": 1232
+    },
+    {
+      "approvalChecklist": [
+        "Article is still draft: true",
+        "Article is still noindex: true",
+        "Human review flag is present: true",
+        "Source notes are present: true",
+        "Article has internal links: true",
+        "Reviewer confirms the opening answer matches the main query.",
+        "Reviewer confirms the article should enter review before any status change command runs."
+      ],
+      "batch": 2,
+      "category": "AI 部署",
+      "cluster": "Agent and memory",
+      "currentPackCovered": false,
+      "factCheckQueries": [
+        "n8n AI Agent 知识库记忆 official docs latest",
+        "n8n AI Agent 知识库记忆 official changelog",
+        "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 fact check official docs",
+        "RAG 知识库搭建教程",
+        "企业知识库 AI 部署",
+        "向量数据库教程",
+        "客服知识库 AI"
+      ],
+      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+      "freshnessRiskLevel": "high",
+      "freshnessRiskReasons": [
+        "fast-changing technical term: agent",
+        "fast-changing technical term: n8n",
+        "fast-changing technical term: rag",
+        "fast-changing technical term: 部署",
+        "fast-changing technical term: 模型",
+        "fast-changing technical term: 知识库",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 客服",
+        "review-sensitive term: 销售",
+        "review-sensitive term: 自动化"
+      ],
+      "humanReviewRequired": true,
+      "internalLinks": 5,
+      "noindex": true,
+      "officialSourceTargets": [
+        "n8n docs: https://docs.n8n.io",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
+      ],
+      "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
+      "opportunityScore": 253,
+      "primaryKeyword": "n8n AI Agent 知识库记忆",
+      "qualityScore": 100,
+      "reviewFocus": [
+        "区分 RAG、微调和普通提示词",
+        "核对向量库、引用、召回和质检说法",
+        "说明失败案例和人工兜底",
+        "Verify current official docs before approval.",
+        "Confirm the article has one clear search intent."
+      ],
+      "riskReviewChecklist": [
+        "No income, traffic, approval, ranking, or client-acquisition guarantee.",
+        "No instruction to bypass platform, payment, messaging, or account rules.",
+        "No API key, credential, customer data, or private account detail.",
+        "Fast-changing tool limits, model names, pricing, deployment steps, and API behavior are checked against official docs.",
+        "Agent or workflow claims include permissions, logging, human approval, rollback, and failure handling.",
+        "RAG or memory claims explain retrieval limits, citation checks, privacy boundaries, and hallucination risk."
+      ],
+      "searchIntent": "informational",
+      "sourceNotesPresent": true,
+      "status": "draft",
+      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+      "topic": "RAG、知识库和向量检索",
+      "wordCountChinese": 1268
+    },
+    {
+      "approvalChecklist": [
+        "Article is still draft: true",
+        "Article is still noindex: true",
+        "Human review flag is present: true",
+        "Source notes are present: true",
+        "Article has internal links: true",
+        "Reviewer confirms the opening answer matches the main query.",
+        "Reviewer confirms the article should enter review before any status change command runs."
+      ],
+      "batch": 2,
+      "category": "AI 部署",
+      "cluster": "RAG and knowledge base",
+      "currentPackCovered": false,
+      "factCheckQueries": [
+        "Open WebUI Functions Pipelines official docs latest",
+        "Open WebUI Functions Pipelines official changelog",
+        "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 fact check official docs",
+        "RAG 知识库搭建教程",
+        "企业知识库 AI 部署",
+        "向量数据库教程",
+        "客服知识库 AI"
+      ],
+      "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+      "freshnessRiskLevel": "high",
+      "freshnessRiskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: n8n",
+        "fast-changing technical term: ollama",
+        "fast-changing technical term: openai",
+        "fast-changing technical term: rag",
+        "fast-changing technical term: 部署",
+        "fast-changing technical term: 大模型",
+        "fast-changing technical term: 模型",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 自动化"
+      ],
+      "humanReviewRequired": true,
+      "internalLinks": 3,
+      "noindex": true,
+      "officialSourceTargets": [
+        "OpenAI docs: https://platform.openai.com/docs",
+        "n8n docs: https://docs.n8n.io",
+        "Ollama docs: https://ollama.com/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
+      ],
+      "opportunityReason": "RAG and knowledge base cluster; no public article in cluster; no public article in category",
+      "opportunityScore": 253,
+      "primaryKeyword": "Open WebUI Functions Pipelines",
+      "qualityScore": 100,
+      "reviewFocus": [
+        "区分 RAG、微调和普通提示词",
+        "核对向量库、引用、召回和质检说法",
+        "说明失败案例和人工兜底",
+        "Verify current official docs before approval.",
+        "Confirm the article has one clear search intent."
+      ],
+      "riskReviewChecklist": [
+        "No income, traffic, approval, ranking, or client-acquisition guarantee.",
+        "No instruction to bypass platform, payment, messaging, or account rules.",
+        "No API key, credential, customer data, or private account detail.",
+        "Fast-changing tool limits, model names, pricing, deployment steps, and API behavior are checked against official docs.",
+        "RAG or memory claims explain retrieval limits, citation checks, privacy boundaries, and hallucination risk.",
+        "Deployment guidance includes environment variables, smoke checks, rate limits, logs, and rollback steps."
+      ],
+      "searchIntent": "informational",
+      "sourceNotesPresent": true,
+      "status": "draft",
+      "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+      "topic": "RAG、知识库和向量检索",
+      "wordCountChinese": 1263
+    },
+    {
+      "approvalChecklist": [
+        "Article is still draft: true",
+        "Article is still noindex: true",
+        "Human review flag is present: true",
+        "Source notes are present: true",
+        "Article has internal links: true",
+        "Reviewer confirms the opening answer matches the main query.",
+        "Reviewer confirms the article should enter review before any status change command runs."
+      ],
+      "batch": 3,
+      "category": "AI 提示词",
+      "cluster": "Industry AI prompts",
+      "currentPackCovered": true,
+      "factCheckQueries": [
+        "全行业 AI 提示词模板 官方文档 最新",
+        "全行业 AI 提示词模板 official docs latest",
+        "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 事实核对",
+        "AI 提示词 平台限制 官方文档",
+        "AI 提示词大全",
+        "销售 AI 提示词",
+        "客服 AI 提示词",
+        "运营 AI 提示词"
+      ],
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "freshnessRiskLevel": "high",
+      "freshnessRiskReasons": [
+        "fast-changing technical term: 模型",
+        "fast-changing technical term: 知识库",
+        "review-sensitive term: prompt",
+        "review-sensitive term: 提示词",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 报价",
+        "review-sensitive term: 客服"
+      ],
+      "humanReviewRequired": true,
+      "internalLinks": 6,
+      "noindex": true,
+      "officialSourceTargets": [
+        "OpenAI docs: https://platform.openai.com/docs",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
+      ],
+      "opportunityReason": "Industry AI prompts cluster; no public article in cluster; no public article in category",
+      "opportunityScore": 260,
+      "primaryKeyword": "全行业 AI 提示词模板",
+      "qualityScore": 100,
+      "reviewFocus": [
+        "按行业给可复制结构",
+        "避免空泛万能提示词",
+        "补充输入字段、质检标准和反例",
+        "Verify current official docs before approval.",
+        "Confirm the article has one clear search intent."
+      ],
+      "riskReviewChecklist": [
+        "No income, ranking, approval, or client acquisition guarantee.",
+        "No instruction to bypass platform rules, payments, messaging, or review systems.",
+        "No API key, credential, private customer data, or account detail is included.",
+        "Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.",
+        "Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.",
+        "Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts."
+      ],
+      "searchIntent": "informational",
+      "sourceNotesPresent": true,
+      "status": "draft",
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "topic": "全行业 AI 提示词和工作流模板",
+      "wordCountChinese": 1862
+    },
+    {
+      "approvalChecklist": [
+        "Article is still draft: true",
+        "Article is still noindex: true",
+        "Human review flag is present: true",
+        "Source notes are present: true",
+        "Article has internal links: true",
+        "Reviewer confirms the opening answer matches the main query.",
+        "Reviewer confirms the article should enter review before any status change command runs."
+      ],
+      "batch": 3,
+      "category": "AI 提示词",
+      "cluster": "Industry AI prompts",
+      "currentPackCovered": false,
+      "factCheckQueries": [
+        "团队 AI 提示词库 official docs latest",
+        "团队 AI 提示词库 official changelog",
+        "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 fact check official docs",
+        "AI 提示词大全",
+        "销售 AI 提示词",
+        "客服 AI 提示词",
+        "运营 AI 提示词",
+        "HR AI 提示词"
+      ],
+      "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+      "freshnessRiskLevel": "high",
+      "freshnessRiskReasons": [
+        "fast-changing technical term: 模型",
+        "review-sensitive term: prompt",
+        "review-sensitive term: 提示词",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 报价",
+        "review-sensitive term: 客服"
+      ],
+      "humanReviewRequired": true,
+      "internalLinks": 3,
+      "noindex": true,
+      "officialSourceTargets": [
+        "OpenAI docs: https://platform.openai.com/docs"
+      ],
+      "opportunityReason": "Industry AI prompts cluster; no public article in cluster; no public article in category",
+      "opportunityScore": 252,
+      "primaryKeyword": "团队 AI 提示词库",
+      "qualityScore": 100,
+      "reviewFocus": [
+        "按行业给可复制结构",
+        "避免空泛万能提示词",
+        "补充输入字段、质检标准和反例",
+        "Verify current official docs before approval.",
+        "Confirm the article has one clear search intent."
+      ],
+      "riskReviewChecklist": [
+        "No income, traffic, approval, ranking, or client-acquisition guarantee.",
+        "No instruction to bypass platform, payment, messaging, or account rules.",
+        "No API key, credential, customer data, or private account detail.",
+        "Fast-changing tool limits, model names, pricing, deployment steps, and API behavior are checked against official docs.",
+        "Prompt examples include input context, output criteria, review rules, and adaptation notes."
+      ],
+      "searchIntent": "informational",
+      "sourceNotesPresent": true,
+      "status": "draft",
+      "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
+      "topic": "全行业 AI 提示词和工作流模板",
+      "wordCountChinese": 1269
+    },
+    {
+      "approvalChecklist": [
+        "Article is still draft: true",
+        "Article is still noindex: true",
+        "Human review flag is present: true",
+        "Source notes are present: true",
+        "Article has internal links: true",
+        "Reviewer confirms the opening answer matches the main query.",
+        "Reviewer confirms the article should enter review before any status change command runs."
+      ],
+      "batch": 3,
+      "category": "AI 提示词",
+      "cluster": "Industry AI prompts",
+      "currentPackCovered": false,
+      "factCheckQueries": [
+        "数据分析 AI 提示词 official docs latest",
+        "数据分析 AI 提示词 official changelog",
+        "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 fact check official docs",
+        "AI 提示词大全",
+        "销售 AI 提示词",
+        "客服 AI 提示词",
+        "运营 AI 提示词",
+        "HR AI 提示词"
+      ],
+      "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
+      "freshnessRiskLevel": "medium",
+      "freshnessRiskReasons": [
+        "review-sensitive term: prompt",
+        "review-sensitive term: 提示词",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 运营"
+      ],
+      "humanReviewRequired": true,
+      "internalLinks": 3,
+      "noindex": true,
+      "officialSourceTargets": [
+        "OpenAI docs: https://platform.openai.com/docs"
+      ],
+      "opportunityReason": "Industry AI prompts cluster; no public article in cluster; no public article in category",
+      "opportunityScore": 251,
+      "primaryKeyword": "数据分析 AI 提示词",
+      "qualityScore": 100,
+      "reviewFocus": [
+        "按行业给可复制结构",
+        "避免空泛万能提示词",
+        "补充输入字段、质检标准和反例",
+        "Verify current official docs before approval.",
+        "Confirm the article has one clear search intent."
+      ],
+      "riskReviewChecklist": [
+        "No income, traffic, approval, ranking, or client-acquisition guarantee.",
+        "No instruction to bypass platform, payment, messaging, or account rules.",
+        "No API key, credential, customer data, or private account detail.",
+        "Fast-changing tool limits, model names, pricing, deployment steps, and API behavior are checked against official docs.",
+        "Prompt examples include input context, output criteria, review rules, and adaptation notes."
+      ],
+      "searchIntent": "informational",
+      "sourceNotesPresent": true,
+      "status": "draft",
+      "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
+      "topic": "全行业 AI 提示词和工作流模板",
+      "wordCountChinese": 1229
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-06T11:25:14.620Z
+Generated at: 2026-06-06T11:34:30.586Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 21
-- Passed: 21
+- Checks: 24
+- Passed: 24
 - Failed: 0
 
 ## Checks
@@ -33,5 +33,8 @@ Overall: PASS
 | content opportunity backlog has reviewable topics | PASS | topics=7, topicsWithReadyCandidates=7 |
 | content cannibalization check generated warning report | PASS | conflicts=200, reviewBatchConflicts=0 |
 | content freshness check covers review items | PASS | highRisk=570, currentReviewItems=3, plannedReviewItems=9 |
+| review coverage report covers planned candidates | PASS | planned=9, items=9, missingCoverage=0 |
+| review coverage includes source, fact-check, approval, and risk tasks | PASS | {"approval":0,"factCheck":0,"risk":0,"sources":0} |
+| review coverage keeps planned candidates unpublished and non-indexable | PASS | {"nonDraftItems":0,"reviewBatchConflictItems":0,"unsafeIndexingItems":0} |
 | live search surface check passed | PASS | publicArticles=15, failed=0 |
 | manual review workbench is ready and stops before publishing | PASS | currentItemsCovered=3, publishableNow=0 |

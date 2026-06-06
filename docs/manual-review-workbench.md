@@ -1,6 +1,6 @@
 # Manual Review Workbench
 
-Generated at: 2026-06-06T11:24:26.493Z
+Generated at: 2026-06-06T11:33:07.065Z
 
 This workbench is read-only. It does not publish articles or mark drafts for review.
 
@@ -72,11 +72,23 @@ This workbench is read-only. It does not publish articles or mark drafts for rev
 - Conflicts: 200
 - Review batch conflicts: 0
 
+## Review Coverage
+
+- Planned candidates: 9
+- Current pack covered: 3
+- Missing coverage: 0
+- Missing official sources: 0
+- Missing fact-check queries: 0
+- Missing risk checks: 0
+- Unsafe indexing items: 0
+- Non-draft items: 0
+
 | Reason | Group | Overlap | Files |
 | --- | --- | --- | --- |
 
 ## Next Actions
 
 - Review the current publish readiness items in docs/publish-readiness-pack.md.
+- Use docs/review-coverage-report.md to inspect all planned review candidates, not only today's pack.
 - Use docs/review-batch-plan.md to see the next topical batches after the current pack.
 - Run dry-run mark:review commands only; add --confirm-human only after explicit human approval.

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T11:24:26.493Z",
+  "generatedAt": "2026-06-06T11:33:07.065Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -230,8 +230,21 @@
     "reviewBatchConflicts": 0,
     "reviewBatchConflictItems": []
   },
+  "reviewCoverage": {
+    "currentPackCovered": 3,
+    "itemsMissingApprovalChecks": 0,
+    "itemsMissingFactCheckQueries": 0,
+    "itemsMissingOfficialSources": 0,
+    "itemsMissingRiskChecks": 0,
+    "missingCoverage": 0,
+    "nonDraftItems": 0,
+    "plannedCandidates": 9,
+    "reviewBatchConflictItems": 0,
+    "unsafeIndexingItems": 0
+  },
   "nextActions": [
     "Review the current publish readiness items in docs/publish-readiness-pack.md.",
+    "Use docs/review-coverage-report.md to inspect all planned review candidates, not only today's pack.",
     "Use docs/review-batch-plan.md to see the next topical batches after the current pack.",
     "Run dry-run mark:review commands only; add --confirm-human only after explicit human approval."
   ]

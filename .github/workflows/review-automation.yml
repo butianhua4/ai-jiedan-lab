@@ -52,7 +52,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/automation docs/automation-digest.md docs/automation-gate.md docs/content-cannibalization.md docs/content-freshness.md docs/content-opportunity-backlog.md docs/live-search-surface.md docs/manual-review-workbench.md docs/publish-readiness-pack.md docs/review-automation.md docs/review-batch-plan.md docs/review-preflight.md docs/seo-opportunity-map.md
+          git add content/automation docs/automation-digest.md docs/automation-gate.md docs/content-cannibalization.md docs/content-freshness.md docs/content-opportunity-backlog.md docs/live-search-surface.md docs/manual-review-workbench.md docs/publish-readiness-pack.md docs/review-automation.md docs/review-batch-plan.md docs/review-coverage-report.md docs/review-preflight.md docs/seo-opportunity-map.md
           if git diff --cached --quiet; then
             echo "No automation report changes to commit."
           else
@@ -82,6 +82,7 @@ jobs:
           path: |
             content/automation/review-candidates.json
             content/automation/review-batch-plan.json
+            content/automation/review-coverage-report.json
             content/automation/publish-readiness-pack.json
             content/automation/review-preflight.json
             content/automation/draft-guardrail-sanitize.json
@@ -99,6 +100,7 @@ jobs:
             content/automation/automation-run-summary.json
             docs/review-automation.md
             docs/review-batch-plan.md
+            docs/review-coverage-report.md
             docs/automation-gate.md
             docs/automation-digest.md
             docs/content-cannibalization.md

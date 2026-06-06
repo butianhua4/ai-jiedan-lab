@@ -51,6 +51,21 @@ async function main() {
     guardrails: { autoPublish: boolean };
     summary: { articlesChecked: number; currentReviewItems: number; highRisk: number; plannedReviewItems: number };
   }>("content/automation/content-freshness.json");
+  const reviewCoverage = readJson<{
+    guardrails: { autoMarkReview: boolean; autoPublish: boolean };
+    items: Array<{ file: string }>;
+    summary: {
+      itemsMissingApprovalChecks: number;
+      itemsMissingFactCheckQueries: number;
+      itemsMissingOfficialSources: number;
+      itemsMissingRiskChecks: number;
+      missingCoverage: number;
+      nonDraftItems: number;
+      plannedCandidates: number;
+      reviewBatchConflictItems: number;
+      unsafeIndexingItems: number;
+    };
+  }>("content/automation/review-coverage-report.json");
   const liveSearch = readJson<{ articles: { publicCount: number }; failedChecks: string[]; ok: boolean }>("content/automation/live-search-surface.json");
   const workbench = readJson<{
     guardrails: { autoMarkReview: boolean; autoPublish: boolean };
@@ -185,6 +200,42 @@ async function main() {
       name: "content freshness check covers review items",
       ok: freshness.guardrails.autoPublish === false && freshness.summary.articlesChecked > 0 && freshness.summary.currentReviewItems > 0,
       detail: `highRisk=${freshness.summary.highRisk}, currentReviewItems=${freshness.summary.currentReviewItems}, plannedReviewItems=${freshness.summary.plannedReviewItems}`,
+    },
+    {
+      name: "review coverage report covers planned candidates",
+      ok:
+        reviewCoverage.guardrails.autoMarkReview === false &&
+        reviewCoverage.guardrails.autoPublish === false &&
+        reviewCoverage.summary.plannedCandidates === reviewPlan.totals.plannedCandidates &&
+        reviewCoverage.items.length === reviewPlan.totals.plannedCandidates &&
+        reviewCoverage.summary.missingCoverage === 0,
+      detail: `planned=${reviewCoverage.summary.plannedCandidates}, items=${reviewCoverage.items.length}, missingCoverage=${reviewCoverage.summary.missingCoverage}`,
+    },
+    {
+      name: "review coverage includes source, fact-check, approval, and risk tasks",
+      ok:
+        reviewCoverage.summary.itemsMissingOfficialSources === 0 &&
+        reviewCoverage.summary.itemsMissingFactCheckQueries === 0 &&
+        reviewCoverage.summary.itemsMissingApprovalChecks === 0 &&
+        reviewCoverage.summary.itemsMissingRiskChecks === 0,
+      detail: JSON.stringify({
+        approval: reviewCoverage.summary.itemsMissingApprovalChecks,
+        factCheck: reviewCoverage.summary.itemsMissingFactCheckQueries,
+        risk: reviewCoverage.summary.itemsMissingRiskChecks,
+        sources: reviewCoverage.summary.itemsMissingOfficialSources,
+      }),
+    },
+    {
+      name: "review coverage keeps planned candidates unpublished and non-indexable",
+      ok:
+        reviewCoverage.summary.nonDraftItems === 0 &&
+        reviewCoverage.summary.unsafeIndexingItems === 0 &&
+        reviewCoverage.summary.reviewBatchConflictItems === 0,
+      detail: JSON.stringify({
+        nonDraftItems: reviewCoverage.summary.nonDraftItems,
+        reviewBatchConflictItems: reviewCoverage.summary.reviewBatchConflictItems,
+        unsafeIndexingItems: reviewCoverage.summary.unsafeIndexingItems,
+      }),
     },
     {
       name: "live search surface check passed",

@@ -39,6 +39,18 @@ type ContentOpportunity = {
   why: string;
 };
 
+type ReviewCoverage = {
+  summary: {
+    currentPackCovered: number;
+    itemsMissingFactCheckQueries: number;
+    itemsMissingOfficialSources: number;
+    itemsMissingRiskChecks: number;
+    missingCoverage: number;
+    plannedCandidates: number;
+    unsafeIndexingItems: number;
+  };
+};
+
 const reports = {
   cannibalization: readJson<{ summary: { conflicts: number; reviewBatchConflicts: number } }>("content/automation/content-cannibalization.json"),
   freshness: readJson<{ summary: { currentReviewItems: number; highRisk: number; mediumRisk: number; plannedReviewItems: number } }>(
@@ -68,6 +80,7 @@ const reports = {
   reviewPlan: readJson<{ batches: Array<{ batch: number; candidates: unknown[]; topic: string }>; totals: { plannedBatches: number; plannedCandidates: number } }>(
     "content/automation/review-batch-plan.json",
   ),
+  reviewCoverage: readJson<ReviewCoverage>("content/automation/review-coverage-report.json"),
   review: readJson<{ counts: { candidates: number; returned: number; rejected: Record<string, number> }; recommendedToday: ReviewCandidate[] }>(
     "content/automation/review-candidates.json",
   ),
@@ -112,6 +125,7 @@ const payload = {
     plannedBatches: reports.reviewPlan.data?.totals.plannedBatches ?? null,
     plannedCandidates: reports.reviewPlan.data?.totals.plannedCandidates ?? null,
   },
+  reviewCoverage: reports.reviewCoverage.data?.summary ?? null,
   preflight: {
     checked: reports.preflight.data?.summary.checked ?? null,
     failed: reports.preflight.data?.summary.failed ?? null,
@@ -178,8 +192,12 @@ function buildNextActions() {
   if (missingReports.length) return [`Fix missing reports: ${missingReports.join(", ")}`];
   if (!reports.gate.data?.ok) return ["Open docs/automation-gate.md and fix failed checks before any review or publish action."];
   if (!reports.preflight.data?.ok) return ["Open docs/review-preflight.md and resolve candidate issues before marking review."];
+  if (!reports.reviewCoverage.data || reports.reviewCoverage.data.summary.missingCoverage > 0) {
+    return ["Open docs/review-coverage-report.md and regenerate coverage for all planned review candidates."];
+  }
   return [
     "Manually review the three recommended drafts in docs/review-preflight.md.",
+    "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
     "If approved by a human, run mark:review with --confirm-human for approved files only.",
     "Publish only status=review articles in a 1-3 article batch after a dry-run.",
   ];
@@ -222,6 +240,30 @@ function toMarkdown(data: typeof payload) {
     "| Batch | Topic | Candidates |",
     "| --- | --- | --- |",
     ...data.reviewPlan.batches.map((item) => `| ${item.batch} | ${item.topic} | ${item.candidates.length} |`),
+    "",
+    "## Review Coverage",
+    "",
+    data.reviewCoverage
+      ? `- Planned candidates: ${data.reviewCoverage.plannedCandidates}`
+      : "- Planned candidates: missing",
+    data.reviewCoverage
+      ? `- Current pack covered: ${data.reviewCoverage.currentPackCovered}`
+      : "- Current pack covered: missing",
+    data.reviewCoverage
+      ? `- Missing coverage: ${data.reviewCoverage.missingCoverage}`
+      : "- Missing coverage: missing",
+    data.reviewCoverage
+      ? `- Missing official sources: ${data.reviewCoverage.itemsMissingOfficialSources}`
+      : "- Missing official sources: missing",
+    data.reviewCoverage
+      ? `- Missing fact-check queries: ${data.reviewCoverage.itemsMissingFactCheckQueries}`
+      : "- Missing fact-check queries: missing",
+    data.reviewCoverage
+      ? `- Missing risk checks: ${data.reviewCoverage.itemsMissingRiskChecks}`
+      : "- Missing risk checks: missing",
+    data.reviewCoverage
+      ? `- Unsafe indexing items: ${data.reviewCoverage.unsafeIndexingItems}`
+      : "- Unsafe indexing items: missing",
     "",
     "## Preflight",
     "",

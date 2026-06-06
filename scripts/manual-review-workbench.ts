@@ -28,6 +28,21 @@ type Cannibalization = {
   summary: { conflicts: number; reviewBatchConflicts: number };
 };
 
+type ReviewCoverage = {
+  summary: {
+    currentPackCovered: number;
+    itemsMissingApprovalChecks: number;
+    itemsMissingFactCheckQueries: number;
+    itemsMissingOfficialSources: number;
+    itemsMissingRiskChecks: number;
+    missingCoverage: number;
+    nonDraftItems: number;
+    plannedCandidates: number;
+    reviewBatchConflictItems: number;
+    unsafeIndexingItems: number;
+  };
+};
+
 type ProjectStatus = {
   articles: { publicPublished: number; publishableNow: unknown[]; statusCounts: Record<string, number> };
 };
@@ -43,6 +58,7 @@ function main() {
   const reviewPlan = readJson<ReviewPlan>("content/automation/review-batch-plan.json");
   const publishPack = readJson<PublishPack>("content/automation/publish-readiness-pack.json");
   const cannibalization = readJson<Cannibalization>("content/automation/content-cannibalization.json");
+  const reviewCoverage = readJson<ReviewCoverage>("content/automation/review-coverage-report.json");
   const projectStatus = readJson<ProjectStatus>("content/automation/project-status.json");
   const liveSearch = readJson<LiveSearch>("content/automation/live-search-surface.json");
   const firstBatch = reviewPlan.batches[0];
@@ -94,7 +110,8 @@ function main() {
       reviewBatchConflicts: cannibalization.summary.reviewBatchConflicts,
       reviewBatchConflictItems: cannibalization.reviewBatchConflicts,
     },
-    nextActions: buildNextActions(projectStatus, liveSearch, cannibalization, publishPack.items.length),
+    reviewCoverage: reviewCoverage.summary,
+    nextActions: buildNextActions(projectStatus, liveSearch, cannibalization, publishPack.items.length, reviewCoverage),
   };
 
   const jsonTarget = path.join(process.cwd(), "content", "automation", "manual-review-workbench.json");
@@ -106,13 +123,28 @@ function main() {
   console.log(JSON.stringify({ ok: true, json: rel(jsonTarget), markdown: rel(mdTarget), nextBatch: payload.reviewPlan.nextBatch?.topic || null }, null, 2));
 }
 
-function buildNextActions(projectStatus: ProjectStatus, liveSearch: LiveSearch, cannibalization: Cannibalization, currentItemsCovered: number) {
+function buildNextActions(
+  projectStatus: ProjectStatus,
+  liveSearch: LiveSearch,
+  cannibalization: Cannibalization,
+  currentItemsCovered: number,
+  reviewCoverage: ReviewCoverage,
+) {
   if (projectStatus.articles.publishableNow.length > 0) return ["Stop and inspect publishableNow before adding more review candidates."];
   if (!liveSearch.ok || liveSearch.failedChecks.length > 0) return ["Fix live search surface failures before any publishing action."];
   if (cannibalization.summary.reviewBatchConflicts > 0) return ["Resolve review batch cannibalization conflicts before marking review."];
   if (currentItemsCovered === 0) return ["Regenerate publish readiness pack before human review."];
+  if (reviewCoverage.summary.missingCoverage > 0) return ["Regenerate review coverage report before human review."];
+  if (
+    reviewCoverage.summary.itemsMissingOfficialSources > 0 ||
+    reviewCoverage.summary.itemsMissingFactCheckQueries > 0 ||
+    reviewCoverage.summary.itemsMissingRiskChecks > 0
+  ) {
+    return ["Fill review coverage source, fact-check, and risk checks before any mark:review action."];
+  }
   return [
     "Review the current publish readiness items in docs/publish-readiness-pack.md.",
+    "Use docs/review-coverage-report.md to inspect all planned review candidates, not only today's pack.",
     "Use docs/review-batch-plan.md to see the next topical batches after the current pack.",
     "Run dry-run mark:review commands only; add --confirm-human only after explicit human approval.",
   ];
@@ -141,6 +173,7 @@ function toMarkdown(payload: {
     }>;
   };
   publishingBoundary: { publicPublished: number; publishableNow: number; statusCounts: Record<string, number> };
+  reviewCoverage: ReviewCoverage["summary"];
   reviewPlan: {
     nextBatch: { batch: number; candidates: Array<{ file: string; opportunityScore: number; qualityScore: number; title: string }>; topic: string } | null;
     plannedBatches: number;
@@ -211,6 +244,17 @@ function toMarkdown(payload: {
     "",
     `- Conflicts: ${payload.cannibalization.conflicts}`,
     `- Review batch conflicts: ${payload.cannibalization.reviewBatchConflicts}`,
+    "",
+    "## Review Coverage",
+    "",
+    `- Planned candidates: ${payload.reviewCoverage.plannedCandidates}`,
+    `- Current pack covered: ${payload.reviewCoverage.currentPackCovered}`,
+    `- Missing coverage: ${payload.reviewCoverage.missingCoverage}`,
+    `- Missing official sources: ${payload.reviewCoverage.itemsMissingOfficialSources}`,
+    `- Missing fact-check queries: ${payload.reviewCoverage.itemsMissingFactCheckQueries}`,
+    `- Missing risk checks: ${payload.reviewCoverage.itemsMissingRiskChecks}`,
+    `- Unsafe indexing items: ${payload.reviewCoverage.unsafeIndexingItems}`,
+    `- Non-draft items: ${payload.reviewCoverage.nonDraftItems}`,
     "",
     "| Reason | Group | Overlap | Files |",
     "| --- | --- | --- | --- |",
