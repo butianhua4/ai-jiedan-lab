@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T15:49:48.668Z
+Generated at: 2026-06-06T16:03:00.677Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -53,7 +53,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=he
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - https://docs.dify.ai -> https://docs.dify.ai/en/use-dify/getting-started/introduction
@@ -81,6 +81,26 @@ Unsafe tasks:
 | true | 790 | public-gap-review | public-gap-wave-1 | 10 | 3 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 787 | public-gap-review | public-gap-wave-1 | 8 | 3 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | true | 769 | public-gap-review | public-gap-wave-2 | 11 | 3 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+
+## Review Optimization Brief
+
+- Briefs: 11
+- Ready briefs: 11
+- Briefs with action: 11
+- Exact-query weak items: 3
+- Missing public-link items: 10
+- Unsafe commands: 0
+
+| Priority | Scope | Exact queries | Link | Proposed title | File |
+| --- | --- | --- | --- | --- | --- |
+| 1009 | wave-1 | 0 | /blog/build-first-webpage-with-codex | 客服 AI 模型选型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 1000 | wave-2 | 4 | /blog/codex-vercel-deploy-preflight-checklist | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 988 | wave-3 | 4 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| 790 | public-gap-wave-1 | 4 | /blog/codex-vercel-deploy-preflight-checklist | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 787 | public-gap-wave-1 | 4 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| 769 | public-gap-wave-2 | 3 | /blog/build-first-webpage-with-codex | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| 768 | public-gap-wave-2 | 0 | /blog/build-first-webpage-with-codex | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| 748 | public-gap-wave-3 | 1 | /blog/first-upwork-project-pricing-checklist | AI 自动化项目报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 
 ## Search Snippet Readiness
 
@@ -244,7 +264,7 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 95
+- Traffic claim files scanned: 97
 - Traffic claim watch mentions: 551
 
 ## Preflight
@@ -542,7 +562,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T15:48:48.972Z
+- Latest check: 2026-06-06T16:02:42.437Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85

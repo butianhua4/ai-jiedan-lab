@@ -1,0 +1,950 @@
+{
+  "generatedAt": "2026-06-06T16:01:00.953Z",
+  "guardrails": {
+    "autoEditArticles": false,
+    "autoMarkReview": false,
+    "autoPublish": false,
+    "note": "Read-only copydesk brief for review candidates. It proposes search snippet, query-match, and internal-link improvements without editing article files.",
+    "stopBefore": "Apply any proposed copy only during human review. Never mark review or publish automatically."
+  },
+  "sourceEvidence": {
+    "actionBoardItems": 11,
+    "actionBoardGuardrails": {
+      "autoEditArticles": false,
+      "autoMarkReview": false,
+      "autoPublish": false,
+      "note": "Read-only review action board. It prioritizes human review tasks and does not edit articles, mark review, or publish.",
+      "stopBefore": "Every mark:review command requires explicit human approval. publish --confirm commands are intentionally not included."
+    },
+    "reportsUsed": [
+      "review-action-board",
+      "internal-link-opportunity-audit",
+      "search-query-match-audit",
+      "search-snippet-readiness-audit",
+      "structured-data-readiness-audit",
+      "public-coverage-gap-decision-pack"
+    ]
+  },
+  "summary": {
+    "briefs": 11,
+    "briefsWithAction": 11,
+    "exactQueryWeakItems": 3,
+    "missingPublicLinkItems": 10,
+    "readyBriefs": 11,
+    "unsafeCommands": 0
+  },
+  "nextBriefs": [
+    {
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: ai, 一个, 怎么, 么做, 第一",
+        "title": "Codex 怎么做第一个网页",
+        "url": "/blog/build-first-webpage-with-codex"
+      },
+      "kind": "wave-approval",
+      "priority": 1009,
+      "proposedDescription": "面向准备落地 客服 AI 模型选型 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“客服 AI 模型选型”这个搜索意图，先给结论再展开步骤。",
+        "在相关段落加入公开内链：Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)。"
+      ],
+      "proposedTitle": "客服 AI 模型选型：速度、成本、知识库、转人工和质检",
+      "ready": true,
+      "scope": "wave-1",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 0,
+        "matchedFamilies": 7,
+        "queryCount": 35,
+        "seedExamples": [],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "description may be thin for search snippets",
+        "primary keyword is not an exact title substring",
+        "few exact query variant matches in article text"
+      ],
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "warningRemediation": [
+        "Rewrite the meta description to name the reader, outcome, and search phrase: 客服 AI 模型选型.",
+        "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
+        "Add one FAQ or checklist line that uses a high-intent query variant such as: 客服 AI 模型选型."
+      ]
+    },
+    {
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: ai, vercel, 部署, 上线, 检查, 新手",
+        "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+        "url": "/blog/codex-vercel-deploy-preflight-checklist"
+      },
+      "kind": "wave-approval",
+      "priority": 1000,
+      "proposedDescription": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“AI Agent deployment tutorial”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：tool calling、human review、permissions、logs。",
+        "在相关段落加入公开内链：Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist)。"
+      ],
+      "proposedTitle": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "ready": true,
+      "scope": "wave-2",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 4,
+        "matchedFamilies": 7,
+        "queryCount": 35,
+        "seedExamples": [
+          "AI Agent deployment tutorial",
+          "agent tool calling tutorial",
+          "OpenAI Agents SDK beginner guide",
+          "Vercel AI SDK agent"
+        ],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "theme still has missing subtopics: tool calling, human review, permissions, logs"
+      ],
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "warningRemediation": [
+        "Rewrite the meta description to name the reader, outcome, and search phrase: AI Agent deployment tutorial.",
+        "Add one contextual link to a published article before approval.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    },
+    {
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: proposal, 客户沟通, 怎么, 客户, 需求, 户沟",
+        "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+        "url": "/blog/upwork-client-requirements-analysis-beginner"
+      },
+      "kind": "wave-approval",
+      "priority": 988,
+      "proposedDescription": "整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“ChatGPT prompts for business”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：customer service。",
+        "在相关段落加入公开内链：Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner)。"
+      ],
+      "proposedTitle": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "ready": true,
+      "scope": "wave-3",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 4,
+        "matchedFamilies": 7,
+        "queryCount": 35,
+        "seedExamples": [
+          "ChatGPT prompts for business",
+          "AI prompt template library",
+          "industry AI prompts",
+          "best AI prompts for work"
+        ],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "theme still has missing subtopics: customer service"
+      ],
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "warningRemediation": [
+        "Rewrite the meta description to name the reader, outcome, and search phrase: ChatGPT prompts for business.",
+        "Add one contextual link to a published article before approval.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner).",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    },
+    {
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: ai, vercel, 部署, 上线, 检查, 新手",
+        "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+        "url": "/blog/codex-vercel-deploy-preflight-checklist"
+      },
+      "kind": "public-gap-review",
+      "priority": 790,
+      "proposedDescription": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“AI Agent deployment tutorial”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：tool calling、human review、permissions、logs。",
+        "在相关段落加入公开内链：Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist)。"
+      ],
+      "proposedTitle": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "ready": true,
+      "scope": "public-gap-wave-1",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 4,
+        "matchedFamilies": 7,
+        "queryCount": 35,
+        "seedExamples": [
+          "AI Agent deployment tutorial",
+          "agent tool calling tutorial",
+          "OpenAI Agents SDK beginner guide",
+          "Vercel AI SDK agent"
+        ],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "theme still has missing subtopics: tool calling, human review, permissions, logs"
+      ],
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "warningRemediation": [
+        "Rewrite the meta description to name the reader, outcome, and search phrase: AI Agent deployment tutorial.",
+        "Add one contextual link to a published article before approval.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    },
+    {
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: proposal, 客户沟通, 怎么, 客户, 需求, 户沟",
+        "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+        "url": "/blog/upwork-client-requirements-analysis-beginner"
+      },
+      "kind": "public-gap-review",
+      "priority": 787,
+      "proposedDescription": "整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“ChatGPT prompts for business”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：customer service。",
+        "在相关段落加入公开内链：Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner)。"
+      ],
+      "proposedTitle": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "ready": true,
+      "scope": "public-gap-wave-1",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 4,
+        "matchedFamilies": 7,
+        "queryCount": 35,
+        "seedExamples": [
+          "ChatGPT prompts for business",
+          "AI prompt template library",
+          "industry AI prompts",
+          "best AI prompts for work"
+        ],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "theme still has missing subtopics: customer service"
+      ],
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "warningRemediation": [
+        "Rewrite the meta description to name the reader, outcome, and search phrase: ChatGPT prompts for business.",
+        "Add one contextual link to a published article before approval.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner).",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    },
+    {
+      "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: ai, 怎么, 一个, 么做, 接单",
+        "title": "Codex 怎么做第一个网页",
+        "url": "/blog/build-first-webpage-with-codex"
+      },
+      "kind": "public-gap-review",
+      "priority": 769,
+      "proposedDescription": "解释 AI Agent 记忆和 RAG 的区别，覆盖短期记忆、长期记忆、知识库检索、引用来源、更新机制、隐私和验收检查。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“RAG knowledge base tutorial”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：knowledge base、vector database。",
+        "在相关段落加入公开内链：Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)。"
+      ],
+      "proposedTitle": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+      "ready": true,
+      "scope": "public-gap-wave-2",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 3,
+        "matchedFamilies": 7,
+        "queryCount": 35,
+        "seedExamples": [
+          "RAG knowledge base tutorial",
+          "AI agent memory",
+          "vector database RAG",
+          "enterprise knowledge base AI"
+        ],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "theme still has missing subtopics: knowledge base, vector database"
+      ],
+      "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+      "warningRemediation": [
+        "Rewrite the meta description to name the reader, outcome, and search phrase: RAG knowledge base tutorial.",
+        "Add one contextual link to a published article before approval.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    },
+    {
+      "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: ai, 怎么, 一个, 第一",
+        "title": "Codex 怎么做第一个网页",
+        "url": "/blog/build-first-webpage-with-codex"
+      },
+      "kind": "public-gap-review",
+      "priority": 768,
+      "proposedDescription": "面向准备落地 Open WebUI Functions Pipelines 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“local LLM deployment”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：gpu memory、quantization、local api、model download。",
+        "在相关段落加入公开内链：Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)。"
+      ],
+      "proposedTitle": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+      "ready": true,
+      "scope": "public-gap-wave-2",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 0,
+        "matchedFamilies": 7,
+        "queryCount": 36,
+        "seedExamples": [
+          "local LLM deployment",
+          "Ollama local model tutorial",
+          "Open WebUI deployment",
+          "local AI model GPU memory"
+        ],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "primary keyword is not an exact title substring",
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "theme still has missing subtopics: gpu memory, quantization, local api, model download",
+        "few exact query variant matches in article text"
+      ],
+      "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+      "warningRemediation": [
+        "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
+        "Rewrite the meta description to name the reader, outcome, and search phrase: local LLM deployment.",
+        "Add one contextual link to a published article before approval.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "Add one FAQ or checklist line that uses a high-intent query variant such as: local LLM deployment.",
+        "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    },
+    {
+      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: 报价, 项目, 目怎, 怎么, 么报, 范围",
+        "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+        "url": "/blog/first-upwork-project-pricing-checklist"
+      },
+      "kind": "public-gap-review",
+      "priority": 748,
+      "proposedDescription": "面向准备落地 AI 自动化项目报价 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“Dify deployment tutorial”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：self hosted、connector。",
+        "在相关段落加入公开内链：第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist)。"
+      ],
+      "proposedTitle": "AI 自动化项目报价：Dify、n8n、RAG、Agent 和维护范围",
+      "ready": true,
+      "scope": "public-gap-wave-3",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 1,
+        "matchedFamilies": 7,
+        "queryCount": 35,
+        "seedExamples": [
+          "Dify deployment tutorial",
+          "n8n AI agent self hosted",
+          "Flowise local deployment",
+          "Dify workflow error handling"
+        ],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "description may be thin for search snippets",
+        "primary keyword is not an exact title substring",
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "theme still has missing subtopics: self hosted, connector",
+        "few exact query variant matches in article text"
+      ],
+      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+      "warningRemediation": [
+        "Rewrite the meta description to name the reader, outcome, and search phrase: Dify deployment tutorial.",
+        "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
+        "Add one contextual link to a published article before approval.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "Add one FAQ or checklist line that uses a high-intent query variant such as: Dify deployment tutorial.",
+        "Tighten the meta description so it states the search intent, audience, and outcome clearly.",
+        "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: ai, 一个, 怎么, 么做, 第一",
+        "title": "Codex 怎么做第一个网页",
+        "url": "/blog/build-first-webpage-with-codex"
+      },
+      "kind": "wave-approval",
+      "priority": 1009,
+      "proposedDescription": "面向准备落地 客服 AI 模型选型 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“客服 AI 模型选型”这个搜索意图，先给结论再展开步骤。",
+        "在相关段落加入公开内链：Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)。"
+      ],
+      "proposedTitle": "客服 AI 模型选型：速度、成本、知识库、转人工和质检",
+      "ready": true,
+      "scope": "wave-1",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 0,
+        "matchedFamilies": 7,
+        "queryCount": 35,
+        "seedExamples": [],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "description may be thin for search snippets",
+        "primary keyword is not an exact title substring",
+        "few exact query variant matches in article text"
+      ],
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "warningRemediation": [
+        "Rewrite the meta description to name the reader, outcome, and search phrase: 客服 AI 模型选型.",
+        "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
+        "Add one FAQ or checklist line that uses a high-intent query variant such as: 客服 AI 模型选型."
+      ]
+    },
+    {
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: ai, vercel, 部署, 上线, 检查, 新手",
+        "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+        "url": "/blog/codex-vercel-deploy-preflight-checklist"
+      },
+      "kind": "wave-approval",
+      "priority": 1000,
+      "proposedDescription": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“AI Agent deployment tutorial”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：tool calling、human review、permissions、logs。",
+        "在相关段落加入公开内链：Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist)。"
+      ],
+      "proposedTitle": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "ready": true,
+      "scope": "wave-2",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 4,
+        "matchedFamilies": 7,
+        "queryCount": 35,
+        "seedExamples": [
+          "AI Agent deployment tutorial",
+          "agent tool calling tutorial",
+          "OpenAI Agents SDK beginner guide",
+          "Vercel AI SDK agent"
+        ],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "theme still has missing subtopics: tool calling, human review, permissions, logs"
+      ],
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "warningRemediation": [
+        "Rewrite the meta description to name the reader, outcome, and search phrase: AI Agent deployment tutorial.",
+        "Add one contextual link to a published article before approval.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    },
+    {
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: proposal, 客户沟通, 怎么, 客户, 需求, 户沟",
+        "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+        "url": "/blog/upwork-client-requirements-analysis-beginner"
+      },
+      "kind": "wave-approval",
+      "priority": 988,
+      "proposedDescription": "整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“ChatGPT prompts for business”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：customer service。",
+        "在相关段落加入公开内链：Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner)。"
+      ],
+      "proposedTitle": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "ready": true,
+      "scope": "wave-3",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 4,
+        "matchedFamilies": 7,
+        "queryCount": 35,
+        "seedExamples": [
+          "ChatGPT prompts for business",
+          "AI prompt template library",
+          "industry AI prompts",
+          "best AI prompts for work"
+        ],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "theme still has missing subtopics: customer service"
+      ],
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "warningRemediation": [
+        "Rewrite the meta description to name the reader, outcome, and search phrase: ChatGPT prompts for business.",
+        "Add one contextual link to a published article before approval.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner).",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    },
+    {
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: ai, vercel, 部署, 上线, 检查, 新手",
+        "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+        "url": "/blog/codex-vercel-deploy-preflight-checklist"
+      },
+      "kind": "public-gap-review",
+      "priority": 790,
+      "proposedDescription": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“AI Agent deployment tutorial”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：tool calling、human review、permissions、logs。",
+        "在相关段落加入公开内链：Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist)。"
+      ],
+      "proposedTitle": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "ready": true,
+      "scope": "public-gap-wave-1",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 4,
+        "matchedFamilies": 7,
+        "queryCount": 35,
+        "seedExamples": [
+          "AI Agent deployment tutorial",
+          "agent tool calling tutorial",
+          "OpenAI Agents SDK beginner guide",
+          "Vercel AI SDK agent"
+        ],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "theme still has missing subtopics: tool calling, human review, permissions, logs"
+      ],
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "warningRemediation": [
+        "Rewrite the meta description to name the reader, outcome, and search phrase: AI Agent deployment tutorial.",
+        "Add one contextual link to a published article before approval.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    },
+    {
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: proposal, 客户沟通, 怎么, 客户, 需求, 户沟",
+        "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+        "url": "/blog/upwork-client-requirements-analysis-beginner"
+      },
+      "kind": "public-gap-review",
+      "priority": 787,
+      "proposedDescription": "整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“ChatGPT prompts for business”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：customer service。",
+        "在相关段落加入公开内链：Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner)。"
+      ],
+      "proposedTitle": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "ready": true,
+      "scope": "public-gap-wave-1",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 4,
+        "matchedFamilies": 7,
+        "queryCount": 35,
+        "seedExamples": [
+          "ChatGPT prompts for business",
+          "AI prompt template library",
+          "industry AI prompts",
+          "best AI prompts for work"
+        ],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "theme still has missing subtopics: customer service"
+      ],
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "warningRemediation": [
+        "Rewrite the meta description to name the reader, outcome, and search phrase: ChatGPT prompts for business.",
+        "Add one contextual link to a published article before approval.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner).",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    },
+    {
+      "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: ai, 怎么, 一个, 么做, 接单",
+        "title": "Codex 怎么做第一个网页",
+        "url": "/blog/build-first-webpage-with-codex"
+      },
+      "kind": "public-gap-review",
+      "priority": 769,
+      "proposedDescription": "解释 AI Agent 记忆和 RAG 的区别，覆盖短期记忆、长期记忆、知识库检索、引用来源、更新机制、隐私和验收检查。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“RAG knowledge base tutorial”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：knowledge base、vector database。",
+        "在相关段落加入公开内链：Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)。"
+      ],
+      "proposedTitle": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+      "ready": true,
+      "scope": "public-gap-wave-2",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 3,
+        "matchedFamilies": 7,
+        "queryCount": 35,
+        "seedExamples": [
+          "RAG knowledge base tutorial",
+          "AI agent memory",
+          "vector database RAG",
+          "enterprise knowledge base AI"
+        ],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "theme still has missing subtopics: knowledge base, vector database"
+      ],
+      "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+      "warningRemediation": [
+        "Rewrite the meta description to name the reader, outcome, and search phrase: RAG knowledge base tutorial.",
+        "Add one contextual link to a published article before approval.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    },
+    {
+      "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: ai, 怎么, 一个, 第一",
+        "title": "Codex 怎么做第一个网页",
+        "url": "/blog/build-first-webpage-with-codex"
+      },
+      "kind": "public-gap-review",
+      "priority": 768,
+      "proposedDescription": "面向准备落地 Open WebUI Functions Pipelines 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“local LLM deployment”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：gpu memory、quantization、local api、model download。",
+        "在相关段落加入公开内链：Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)。"
+      ],
+      "proposedTitle": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+      "ready": true,
+      "scope": "public-gap-wave-2",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 0,
+        "matchedFamilies": 7,
+        "queryCount": 36,
+        "seedExamples": [
+          "local LLM deployment",
+          "Ollama local model tutorial",
+          "Open WebUI deployment",
+          "local AI model GPU memory"
+        ],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "primary keyword is not an exact title substring",
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "theme still has missing subtopics: gpu memory, quantization, local api, model download",
+        "few exact query variant matches in article text"
+      ],
+      "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+      "warningRemediation": [
+        "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
+        "Rewrite the meta description to name the reader, outcome, and search phrase: local LLM deployment.",
+        "Add one contextual link to a published article before approval.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "Add one FAQ or checklist line that uses a high-intent query variant such as: local LLM deployment.",
+        "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    },
+    {
+      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: 报价, 项目, 目怎, 怎么, 么报, 范围",
+        "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+        "url": "/blog/first-upwork-project-pricing-checklist"
+      },
+      "kind": "public-gap-review",
+      "priority": 748,
+      "proposedDescription": "面向准备落地 AI 自动化项目报价 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“Dify deployment tutorial”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：self hosted、connector。",
+        "在相关段落加入公开内链：第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist)。"
+      ],
+      "proposedTitle": "AI 自动化项目报价：Dify、n8n、RAG、Agent 和维护范围",
+      "ready": true,
+      "scope": "public-gap-wave-3",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 1,
+        "matchedFamilies": 7,
+        "queryCount": 35,
+        "seedExamples": [
+          "Dify deployment tutorial",
+          "n8n AI agent self hosted",
+          "Flowise local deployment",
+          "Dify workflow error handling"
+        ],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "description may be thin for search snippets",
+        "primary keyword is not an exact title substring",
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "theme still has missing subtopics: self hosted, connector",
+        "few exact query variant matches in article text"
+      ],
+      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+      "warningRemediation": [
+        "Rewrite the meta description to name the reader, outcome, and search phrase: Dify deployment tutorial.",
+        "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
+        "Add one contextual link to a published article before approval.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "Add one FAQ or checklist line that uses a high-intent query variant such as: Dify deployment tutorial.",
+        "Tighten the meta description so it states the search intent, audience, and outcome clearly.",
+        "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    },
+    {
+      "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: 变量, 部署, next, 怎么, 失败, 新手",
+        "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+        "url": "/blog/vercel-env-variable-missing-beginner-guide"
+      },
+      "kind": "public-gap-review",
+      "priority": 744,
+      "proposedDescription": "面向新手整理 Dify 工作流错误处理方法，覆盖输入变量校验、节点失败、条件分支、重试、人工兜底和上线前测试。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“AI workflow examples”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：support、product、weekly report。",
+        "在相关段落加入公开内链：Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide)。"
+      ],
+      "proposedTitle": "Dify 工作流错误处理：变量、分支、重试和人工兜底",
+      "ready": true,
+      "scope": "public-gap-wave-3",
+      "searchEvidence": {
+        "descriptionHit": true,
+        "exactQueryMatches": 0,
+        "matchedFamilies": 7,
+        "queryCount": 36,
+        "seedExamples": [
+          "AI workflow examples",
+          "AI use cases for business",
+          "AI automation workflow",
+          "department AI SOP"
+        ],
+        "titleHit": true
+      },
+      "sourceWarnings": [
+        "primary keyword is not an exact title substring",
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "theme still has missing subtopics: support, product, weekly report",
+        "few exact query variant matches in article text"
+      ],
+      "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+      "warningRemediation": [
+        "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
+        "Rewrite the meta description to name the reader, outcome, and search phrase: AI workflow examples.",
+        "Add one contextual link to a published article before approval.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "Add one FAQ or checklist line that uses a high-intent query variant such as: AI workflow examples.",
+        "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    },
+    {
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "internalLink": {
+        "currentPublicLinks": 1,
+        "reason": "keyword overlap: ai, 怎么, 新手, 代码, 检查, 交付",
+        "title": "Codex 生成代码后怎么审核：交付前检查清单",
+        "url": "/blog/codex-code-review-delivery-checklist"
+      },
+      "kind": "public-gap-review",
+      "priority": 725,
+      "proposedDescription": "整理 AI API Key 安全管理清单，覆盖环境变量、最小权限、服务端调用、密钥轮换、日志脱敏、泄露应急和客户交付。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“LLM observability”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：logs、prompt injection、cost tracking。",
+        "在相关段落加入公开内链：Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)。"
+      ],
+      "proposedTitle": "AI API Key 安全管理：环境变量、权限、轮换、泄露应急",
+      "ready": true,
+      "scope": "public-gap-wave-4",
+      "searchEvidence": {
+        "descriptionHit": null,
+        "exactQueryMatches": null,
+        "matchedFamilies": null,
+        "queryCount": null,
+        "seedExamples": [
+          "LLM observability",
+          "RAG evaluation",
+          "AI agent logs",
+          "prompt injection defense"
+        ],
+        "titleHit": null
+      },
+      "sourceWarnings": [
+        "primary keyword is not an exact title substring",
+        "no exact search-seed phrase appears in title, description, or body",
+        "few search-seed token families appear in article text",
+        "theme still has missing subtopics: logs, prompt injection, cost tracking"
+      ],
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "warningRemediation": [
+        "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
+        "Rewrite the meta description to name the reader, outcome, and search phrase: LLM observability.",
+        "Resolve or explicitly accept during human review: few search-seed token families appear in article text.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Add or approve one concrete subsection that matches the target search intent without keyword stuffing.",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    },
+    {
+      "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+      "internalLink": {
+        "currentPublicLinks": 0,
+        "reason": "keyword overlap: ai, 怎么, 交付, 清单, 代码, 生成",
+        "title": "Codex 生成代码后怎么审核：交付前检查清单",
+        "url": "/blog/codex-code-review-delivery-checklist"
+      },
+      "kind": "public-gap-review",
+      "priority": 716,
+      "proposedDescription": "面向准备落地 BentoML LLM 部署 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
+      "proposedOpeningAdditions": [
+        "在开头 200 字内自然回答一次“vLLM deployment tutorial”这个搜索意图，先给结论再展开步骤。",
+        "补一个小节或提示框覆盖缺口：concurrency、autoscaling。",
+        "在相关段落加入公开内链：Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)。"
+      ],
+      "proposedTitle": "BentoML LLM 部署：从本地 Service 到 BentoCloud 验收",
+      "ready": true,
+      "scope": "public-gap-wave-4",
+      "searchEvidence": {
+        "descriptionHit": null,
+        "exactQueryMatches": null,
+        "matchedFamilies": null,
+        "queryCount": null,
+        "seedExamples": [
+          "vLLM deployment tutorial",
+          "Hugging Face TGI deployment",
+          "RunPod serverless LLM",
+          "serverless GPU LLM deployment"
+        ],
+        "titleHit": null
+      },
+      "sourceWarnings": [
+        "primary keyword is not an exact title substring",
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "theme still has missing subtopics: concurrency, autoscaling"
+      ],
+      "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+      "warningRemediation": [
+        "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
+        "Rewrite the meta description to name the reader, outcome, and search phrase: vLLM deployment tutorial.",
+        "Add one contextual link to a published article before approval.",
+        "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ]
+    }
+  ]
+}

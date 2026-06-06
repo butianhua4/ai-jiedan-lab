@@ -33,6 +33,7 @@
     "automation:wave-publish-sim": "tsx scripts/wave-publish-simulator.ts",
     "automation:workbench": "tsx scripts/manual-review-workbench.ts",
     "automation:review-action-board": "tsx scripts/review-action-board.ts",
+    "automation:review-optimization-brief": "tsx scripts/review-optimization-brief.ts",
     "automation:gate": "tsx scripts/automation-gate.ts",
     "automation:publish-pack": "tsx scripts/publish-readiness-pack.ts",
     "automation:review-preflight": "tsx scripts/review-candidate-preflight.ts",

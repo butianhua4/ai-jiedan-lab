@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-06T15:49:48.701Z",
+  "generatedAt": "2026-06-06T16:03:00.726Z",
   "ok": true,
   "summary": {
-    "checks": 77,
+    "checks": 79,
     "failed": 0,
-    "passed": 77
+    "passed": 79
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=95, unsafeClaims=0, watchMentions=551"
+      "detail": "filesScanned=97, unsafeClaims=0, watchMentions=551"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -131,6 +131,16 @@
       "name": "review action board tasks are ready and preserve command boundaries",
       "ok": true,
       "detail": "ready=11, unsafe=0"
+    },
+    {
+      "name": "review optimization brief is read-only and covers ready action-board tasks",
+      "ok": true,
+      "detail": "briefs=11, ready=11, unsafeCommands=0"
+    },
+    {
+      "name": "review optimization brief has actionable copydesk guidance",
+      "ok": true,
+      "detail": "withAction=11, missingPublicLinkItems=10, exactQueryWeak=3"
     },
     {
       "name": "search snippet readiness audit is read-only and covers public plus expansion items",

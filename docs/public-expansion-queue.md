@@ -1,6 +1,6 @@
 # Public Expansion Queue
 
-Generated at: 2026-06-06T15:48:00.571Z
+Generated at: 2026-06-06T16:00:45.437Z
 
 This queue is read-only. It ranks drafts for manual approval waves so public coverage can expand without bypassing review.
 

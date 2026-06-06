@@ -380,6 +380,27 @@ async function main() {
     }>;
     unsafeTasks?: unknown[];
   }>("content/automation/review-action-board.json");
+  const reviewOptimizationBrief = readJson<{
+    briefs?: Array<{
+      file: string;
+      internalLink?: unknown;
+      proposedDescription?: string;
+      proposedOpeningAdditions?: unknown[];
+      proposedTitle?: string;
+      ready?: boolean;
+      warningRemediation?: unknown[];
+    }>;
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    nextBriefs?: unknown[];
+    summary: {
+      briefs: number;
+      briefsWithAction: number;
+      exactQueryWeakItems: number;
+      missingPublicLinkItems: number;
+      readyBriefs: number;
+      unsafeCommands: number;
+    };
+  }>("content/automation/review-optimization-brief.json");
   const searchSnippets = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     summary: {
@@ -616,8 +637,36 @@ async function main() {
               task.commandBoundary.publishConfirm === "not-included" &&
               !task.commandBoundary.publishDryRunAfterReview.includes("--confirm"),
           ),
-        ),
+      ),
       detail: `ready=${reviewActionBoard.summary.readyTasks}, unsafe=${reviewActionBoard.summary.unsafeTasks}`,
+    },
+    {
+      name: "review optimization brief is read-only and covers ready action-board tasks",
+      ok:
+        reviewOptimizationBrief.guardrails.autoEditArticles === false &&
+        reviewOptimizationBrief.guardrails.autoMarkReview === false &&
+        reviewOptimizationBrief.guardrails.autoPublish === false &&
+        reviewOptimizationBrief.summary.briefs === reviewActionBoard.summary.readyTasks &&
+        reviewOptimizationBrief.summary.readyBriefs === reviewOptimizationBrief.summary.briefs &&
+        reviewOptimizationBrief.summary.unsafeCommands === 0,
+      detail: `briefs=${reviewOptimizationBrief.summary.briefs}, ready=${reviewOptimizationBrief.summary.readyBriefs}, unsafeCommands=${reviewOptimizationBrief.summary.unsafeCommands}`,
+    },
+    {
+      name: "review optimization brief has actionable copydesk guidance",
+      ok:
+        reviewOptimizationBrief.summary.briefsWithAction >= reviewOptimizationBrief.summary.briefs - 1 &&
+        reviewOptimizationBrief.summary.missingPublicLinkItems >= reviewActionBoard.summary.publicGapTasks &&
+        Boolean(
+          reviewOptimizationBrief.briefs?.every(
+            (item) =>
+              item.ready === true &&
+              Boolean(item.proposedTitle) &&
+              Boolean(item.proposedDescription) &&
+              (item.proposedOpeningAdditions?.length || 0) > 0 &&
+              ((item.warningRemediation?.length || 0) > 0 || Boolean(item.internalLink)),
+          ),
+        ),
+      detail: `withAction=${reviewOptimizationBrief.summary.briefsWithAction}, missingPublicLinkItems=${reviewOptimizationBrief.summary.missingPublicLinkItems}, exactQueryWeak=${reviewOptimizationBrief.summary.exactQueryWeakItems}`,
     },
     {
       name: "search snippet readiness audit is read-only and covers public plus expansion items",

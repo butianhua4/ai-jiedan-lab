@@ -280,6 +280,29 @@ type ReviewActionBoard = {
   unsafeTasks: unknown[];
 };
 
+type ReviewOptimizationBrief = {
+  nextBriefs: Array<{
+    file: string;
+    internalLink: { title: string; url: string } | null;
+    priority: number;
+    proposedDescription: string;
+    proposedOpeningAdditions: string[];
+    proposedTitle: string;
+    scope: string;
+    searchEvidence: { exactQueryMatches: number | null; matchedFamilies: number | null };
+    title: string;
+    warningRemediation: string[];
+  }>;
+  summary: {
+    briefs: number;
+    briefsWithAction: number;
+    exactQueryWeakItems: number;
+    missingPublicLinkItems: number;
+    readyBriefs: number;
+    unsafeCommands: number;
+  };
+};
+
 type SearchSnippets = {
   summary: {
     blockingItems: number;
@@ -582,6 +605,7 @@ const reports = {
   internalLinks: readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json"),
   sourceHealth: readJson<SourceHealth>("content/automation/source-target-health-audit.json"),
   reviewActionBoard: readJson<ReviewActionBoard>("content/automation/review-action-board.json"),
+  reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
   searchSnippets: readJson<SearchSnippets>("content/automation/search-snippet-readiness-audit.json"),
   structuredData: readJson<StructuredData>("content/automation/structured-data-readiness-audit.json"),
   searchIntentLanes: readJson<SearchIntentLanes>("content/automation/search-intent-lane-map.json"),
@@ -649,6 +673,15 @@ const payload = {
     unsafeTaskList: reports.reviewActionBoard.data?.unsafeTasks.slice(0, 6) ?? [],
     waveReadyTasks: reports.reviewActionBoard.data?.summary.waveReadyTasks ?? null,
     waveTasks: reports.reviewActionBoard.data?.summary.waveTasks ?? null,
+  },
+  reviewOptimizationBrief: {
+    briefs: reports.reviewOptimizationBrief.data?.summary.briefs ?? null,
+    briefsWithAction: reports.reviewOptimizationBrief.data?.summary.briefsWithAction ?? null,
+    exactQueryWeakItems: reports.reviewOptimizationBrief.data?.summary.exactQueryWeakItems ?? null,
+    missingPublicLinkItems: reports.reviewOptimizationBrief.data?.summary.missingPublicLinkItems ?? null,
+    nextBriefs: reports.reviewOptimizationBrief.data?.nextBriefs.slice(0, 8) ?? [],
+    readyBriefs: reports.reviewOptimizationBrief.data?.summary.readyBriefs ?? null,
+    unsafeCommands: reports.reviewOptimizationBrief.data?.summary.unsafeCommands ?? null,
   },
   searchSnippets: reports.searchSnippets.data?.summary ?? null,
   structuredData: reports.structuredData.data?.summary ?? null,
@@ -939,6 +972,9 @@ function buildNextActions() {
   if (!reports.reviewActionBoard.data || reports.reviewActionBoard.data.summary.unsafeTasks > 0) {
     return ["Open docs/review-action-board.md and resolve unsafe review tasks before any mark:review command."];
   }
+  if (!reports.reviewOptimizationBrief.data || reports.reviewOptimizationBrief.data.summary.unsafeCommands > 0) {
+    return ["Open docs/review-optimization-brief.md and resolve unsafe or missing copydesk guidance before manual review."];
+  }
   if (!reports.searchSnippets.data || reports.searchSnippets.data.summary.waveItemsWithBlockingIssues > 0) {
     return ["Open docs/search-snippet-readiness-audit.md and fix Wave 1 title, description, slug, or indexing blockers."];
   }
@@ -1088,6 +1124,22 @@ function toMarkdown(data: typeof payload) {
     "| --- | --- | --- | --- | --- | --- | --- | --- |",
     ...data.reviewActionBoard.nextTasks.map(
       (item) => `| ${item.ready} | ${item.priority} | ${item.kind} | ${item.scope} | ${item.sourceTargets} | ${item.warnings.length} | ${item.title} | ${item.file} |`,
+    ),
+    "",
+    "## Review Optimization Brief",
+    "",
+    `- Briefs: ${data.reviewOptimizationBrief.briefs}`,
+    `- Ready briefs: ${data.reviewOptimizationBrief.readyBriefs}`,
+    `- Briefs with action: ${data.reviewOptimizationBrief.briefsWithAction}`,
+    `- Exact-query weak items: ${data.reviewOptimizationBrief.exactQueryWeakItems}`,
+    `- Missing public-link items: ${data.reviewOptimizationBrief.missingPublicLinkItems}`,
+    `- Unsafe commands: ${data.reviewOptimizationBrief.unsafeCommands}`,
+    "",
+    "| Priority | Scope | Exact queries | Link | Proposed title | File |",
+    "| --- | --- | --- | --- | --- | --- |",
+    ...data.reviewOptimizationBrief.nextBriefs.map(
+      (item) =>
+        `| ${item.priority} | ${item.scope} | ${item.searchEvidence.exactQueryMatches ?? "n/a"} | ${item.internalLink ? item.internalLink.url : "none"} | ${item.proposedTitle} | ${item.file} |`,
     ),
     "",
     "## Search Snippet Readiness",
