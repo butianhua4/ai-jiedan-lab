@@ -1,6 +1,6 @@
 # Manual Review Workbench
 
-Generated at: 2026-06-06T14:50:15.104Z
+Generated at: 2026-06-06T14:58:35.688Z
 
 This workbench is read-only. It does not publish articles or mark drafts for review.
 
@@ -95,8 +95,8 @@ This workbench is read-only. It does not publish articles or mark drafts for rev
 | deployment: RAG、知识库和向量检索 | 348 | 0 | 5 |
 | content-backlog: RAG、知识库和向量检索 | 342 | 0 | 5 |
 | deployment: Agent 部署、工具调用和工作流 | 338 | 0 | 5 |
-| content-backlog: 全行业 AI 提示词和工作流模板 | 334 | 0 | 5 |
 | content-backlog: Agent 部署、工具调用和记忆 | 334 | 0 | 5 |
+| content-backlog: 全行业 AI 提示词和工作流模板 | 334 | 0 | 5 |
 | industry-prompt: 全行业提示词模板库 | 324 | 0 | 4 |
 
 Next review files:

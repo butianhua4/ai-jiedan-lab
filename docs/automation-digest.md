@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T14:51:18.674Z
+Generated at: 2026-06-06T14:58:43.599Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -94,8 +94,8 @@ This digest is read-only. It summarizes automation reports and does not publish 
 | deployment: RAG、知识库和向量检索 | 348 | 0 | 5 |
 | content-backlog: RAG、知识库和向量检索 | 342 | 0 | 5 |
 | deployment: Agent 部署、工具调用和工作流 | 338 | 0 | 5 |
-| content-backlog: 全行业 AI 提示词和工作流模板 | 334 | 0 | 5 |
 | content-backlog: Agent 部署、工具调用和记忆 | 334 | 0 | 5 |
+| content-backlog: 全行业 AI 提示词和工作流模板 | 334 | 0 | 5 |
 | industry-prompt: 全行业提示词模板库 | 324 | 0 | 4 |
 
 Next review files:
@@ -403,7 +403,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T14:50:48.989Z
+- Latest check: 2026-06-06T14:58:41.623Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85

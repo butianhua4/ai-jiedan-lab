@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T14:51:17.433Z",
+  "generatedAt": "2026-06-06T14:58:42.630Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
@@ -47,6 +47,30 @@
       "line": 47,
       "reason": "traffic-related mention",
       "text": "\"- The site does not claim real traffic, impressions, income guarantees, or automatic publishing.\","
+    },
+    {
+      "file": "docs/NEXT_ACTIONS.md",
+      "line": 24,
+      "reason": "traffic-related mention",
+      "text": "## 4. 收款和流量收益"
+    },
+    {
+      "file": "docs/NEXT_ACTIONS.md",
+      "line": 29,
+      "reason": "traffic-related mention",
+      "text": "- 稳定流量后再接联盟链接和广告。"
+    },
+    {
+      "file": "docs/NEXT_ACTIONS.md",
+      "line": 46,
+      "reason": "traffic-related mention",
+      "text": "- 有 5 篇以上人工审核公开文章：注册 Google Search Console。"
+    },
+    {
+      "file": "docs/NEXT_ACTIONS.md",
+      "line": 47,
+      "reason": "traffic-related mention",
+      "text": "- 有稳定访问：开启 Vercel Web Analytics 或 Google Analytics。"
     },
     {
       "file": "docs/ai-deployment-coverage.md",
@@ -359,30 +383,6 @@
       "line": 130,
       "reason": "traffic-related mention",
       "text": "6. 有稳定访问后再申请广告和联盟计划。"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 24,
-      "reason": "traffic-related mention",
-      "text": "## 4. 收款和流量收益"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 29,
-      "reason": "traffic-related mention",
-      "text": "- 稳定流量后再接联盟链接和广告。"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 46,
-      "reason": "traffic-related mention",
-      "text": "- 有 5 篇以上人工审核公开文章：注册 Google Search Console。"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 47,
-      "reason": "traffic-related mention",
-      "text": "- 有稳定访问：开启 Vercel Web Analytics 或 Google Analytics。"
     },
     {
       "file": "docs/platform-registration-roadmap.md",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T14:51:18.674Z",
+  "generatedAt": "2026-06-06T14:58:43.599Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -608,6 +608,98 @@
       {
         "candidates": [
           {
+            "category": "AI Agent",
+            "currentPack": true,
+            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+            "plannedBatch": true,
+            "primaryKeyword": "AI Agent 部署",
+            "publishBatch": 40,
+            "qualityScore": 100,
+            "safeDraft": true,
+            "searchIntent": "informational",
+            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+          },
+          {
+            "category": "AI 记忆",
+            "currentPack": false,
+            "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+            "plannedBatch": true,
+            "primaryKeyword": "AI Agent 记忆",
+            "publishBatch": 40,
+            "qualityScore": 100,
+            "safeDraft": true,
+            "searchIntent": "informational",
+            "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
+          },
+          {
+            "category": "接单报价",
+            "currentPack": false,
+            "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+            "plannedBatch": true,
+            "primaryKeyword": "AI 自动化项目报价",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "safeDraft": true,
+            "searchIntent": "informational",
+            "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
+          },
+          {
+            "category": "AI 部署",
+            "currentPack": false,
+            "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+            "plannedBatch": false,
+            "primaryKeyword": "Dify 工作流错误处理",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "safeDraft": true,
+            "searchIntent": "informational",
+            "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底"
+          },
+          {
+            "category": "AI 部署",
+            "currentPack": false,
+            "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+            "plannedBatch": false,
+            "primaryKeyword": "Dify Workflow 和 Agent 区别",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "safeDraft": true,
+            "searchIntent": "informational",
+            "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核"
+          }
+        ],
+        "currentPackCandidates": 1,
+        "draftMatches": 5,
+        "lane": "content-backlog: Agent 部署、工具调用和记忆",
+        "missingPublicCoverage": false,
+        "plannedBatchCandidates": 3,
+        "priorityScore": 334,
+        "publicMatches": 0,
+        "rationale": "Agent、记忆和工作流是高频 AI 应用词，但需要清楚解释边界和落地步骤。",
+        "reviewFocus": [
+          "解释工具调用和多步执行边界",
+          "明确记忆、状态和人工确认的安全边界",
+          "避免承诺全自动完成业务结果"
+        ],
+        "searchQueries": [
+          "AI Agent 部署教程",
+          "Agent 记忆怎么做",
+          "AI Agent 工具调用教程",
+          "AI 工作流部署"
+        ],
+        "sourceTargets": [
+          "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval."
+        ],
+        "workflowAngles": [
+          "search intent",
+          "fact review",
+          "risk language",
+          "internal links"
+        ]
+      },
+      {
+        "candidates": [
+          {
             "category": "AI 提示词",
             "currentPack": true,
             "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
@@ -687,98 +779,6 @@
           "客服 AI 提示词",
           "运营 AI 提示词",
           "HR AI 提示词"
-        ],
-        "sourceTargets": [
-          "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval."
-        ],
-        "workflowAngles": [
-          "search intent",
-          "fact review",
-          "risk language",
-          "internal links"
-        ]
-      },
-      {
-        "candidates": [
-          {
-            "category": "AI Agent",
-            "currentPack": true,
-            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-            "plannedBatch": true,
-            "primaryKeyword": "AI Agent 部署",
-            "publishBatch": 40,
-            "qualityScore": 100,
-            "safeDraft": true,
-            "searchIntent": "informational",
-            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
-          },
-          {
-            "category": "AI 记忆",
-            "currentPack": false,
-            "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
-            "plannedBatch": true,
-            "primaryKeyword": "AI Agent 记忆",
-            "publishBatch": 40,
-            "qualityScore": 100,
-            "safeDraft": true,
-            "searchIntent": "informational",
-            "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
-          },
-          {
-            "category": "接单报价",
-            "currentPack": false,
-            "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-            "plannedBatch": true,
-            "primaryKeyword": "AI 自动化项目报价",
-            "publishBatch": 33,
-            "qualityScore": 100,
-            "safeDraft": true,
-            "searchIntent": "informational",
-            "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
-          },
-          {
-            "category": "AI 部署",
-            "currentPack": false,
-            "file": "content/blog/dify-workflow-error-handling-guide.mdx",
-            "plannedBatch": false,
-            "primaryKeyword": "Dify 工作流错误处理",
-            "publishBatch": 33,
-            "qualityScore": 100,
-            "safeDraft": true,
-            "searchIntent": "informational",
-            "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底"
-          },
-          {
-            "category": "AI 部署",
-            "currentPack": false,
-            "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
-            "plannedBatch": false,
-            "primaryKeyword": "Dify Workflow 和 Agent 区别",
-            "publishBatch": 33,
-            "qualityScore": 100,
-            "safeDraft": true,
-            "searchIntent": "informational",
-            "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核"
-          }
-        ],
-        "currentPackCandidates": 1,
-        "draftMatches": 5,
-        "lane": "content-backlog: Agent 部署、工具调用和记忆",
-        "missingPublicCoverage": false,
-        "plannedBatchCandidates": 3,
-        "priorityScore": 334,
-        "publicMatches": 0,
-        "rationale": "Agent、记忆和工作流是高频 AI 应用词，但需要清楚解释边界和落地步骤。",
-        "reviewFocus": [
-          "解释工具调用和多步执行边界",
-          "明确记忆、状态和人工确认的安全边界",
-          "避免承诺全自动完成业务结果"
-        ],
-        "searchQueries": [
-          "AI Agent 部署教程",
-          "Agent 记忆怎么做",
-          "AI Agent 工具调用教程",
-          "AI 工作流部署"
         ],
         "sourceTargets": [
           "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval."
@@ -8073,7 +8073,7 @@
   "liveSearch": {
     "checkedArticles": 15,
     "failedChecks": [],
-    "generatedAt": "2026-06-06T14:50:48.989Z",
+    "generatedAt": "2026-06-06T14:58:41.623Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 15,

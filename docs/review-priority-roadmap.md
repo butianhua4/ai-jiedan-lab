@@ -1,6 +1,6 @@
 # Review Priority Roadmap
 
-Generated at: 2026-06-06T14:50:07.661Z
+Generated at: 2026-06-06T14:58:28.891Z
 
 This roadmap is read-only. It prioritizes manual review work and does not publish or mark articles for review.
 
@@ -50,8 +50,8 @@ This roadmap is read-only. It prioritizes manual review work and does not publis
 | deployment: RAG、知识库和向量检索 | 348 | 0 | 32 | 5 | 1 | 5 | High search-intent lane with ready drafts but no public coverage yet. |
 | content-backlog: RAG、知识库和向量检索 | 342 | 0 | 5 | 5 | 1 | 5 | 很多团队会搜索知识库 AI，但真正需要的是可审核、可引用、可质检的方案。 |
 | deployment: Agent 部署、工具调用和工作流 | 338 | 0 | 41 | 5 | 1 | 3 | High search-intent lane with ready drafts but no public coverage yet. |
-| content-backlog: 全行业 AI 提示词和工作流模板 | 334 | 0 | 5 | 5 | 2 | 4 | 提示词类内容搜索面宽，但需要从模板升级成行业流程，才更适合长期收录。 |
 | content-backlog: Agent 部署、工具调用和记忆 | 334 | 0 | 5 | 5 | 1 | 3 | Agent、记忆和工作流是高频 AI 应用词，但需要清楚解释边界和落地步骤。 |
+| content-backlog: 全行业 AI 提示词和工作流模板 | 334 | 0 | 5 | 5 | 2 | 4 | 提示词类内容搜索面宽，但需要从模板升级成行业流程，才更适合长期收录。 |
 | industry-prompt: 全行业提示词模板库 | 324 | 0 | 17 | 4 | 1 | 2 | High search-intent lane with ready drafts but no public coverage yet. |
 | deployment: Dify、n8n、Flowise 和无代码 AI 自动化 | 312 | 0 | 21 | 5 | 0 | 2 | High search-intent lane with ready drafts but no public coverage yet. |
 | content-backlog: Dify、n8n、MCP 和无代码 AI 自动化 | 310 | 0 | 5 | 5 | 0 | 2 | 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 |
@@ -191,6 +191,47 @@ Candidates:
 | 33 | true | false | false | 100 | AI 部署 | Dify 工作流错误处理 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | 33 | true | false | false | 100 | AI 部署 | Dify Workflow 和 Agent 区别 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
 
+## content-backlog: Agent 部署、工具调用和记忆
+
+- Priority score: 334
+- Public matches: 0
+- Missing public coverage: false
+- Rationale: Agent、记忆和工作流是高频 AI 应用词，但需要清楚解释边界和落地步骤。
+
+Search queries:
+
+- AI Agent 部署教程
+- Agent 记忆怎么做
+- AI Agent 工具调用教程
+- AI 工作流部署
+
+Review focus:
+
+- 解释工具调用和多步执行边界
+- 明确记忆、状态和人工确认的安全边界
+- 避免承诺全自动完成业务结果
+
+Source targets:
+
+- Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.
+
+Workflow angles:
+
+- search intent
+- fact review
+- risk language
+- internal links
+
+Candidates:
+
+| Batch | Safe draft | Current pack | Planned | Score | Category | Keyword | Title | File |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 40 | true | true | true | 100 | AI Agent | AI Agent 部署 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 40 | true | false | true | 100 | AI 记忆 | AI Agent 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| 33 | true | false | true | 100 | 接单报价 | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 33 | true | false | false | 100 | AI 部署 | Dify 工作流错误处理 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| 33 | true | false | false | 100 | AI 部署 | Dify Workflow 和 Agent 区别 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
+
 ## content-backlog: 全行业 AI 提示词和工作流模板
 
 - Priority score: 334
@@ -232,47 +273,6 @@ Candidates:
 | 32 | true | false | true | 100 | AI 提示词 | 团队 AI 提示词库 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
 | 31 | true | false | true | 100 | AI 提示词 | 数据分析 AI 提示词 | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
 | 31 | true | false | false | 100 | AI 提示词 | 教育 AI 提示词 | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
-
-## content-backlog: Agent 部署、工具调用和记忆
-
-- Priority score: 334
-- Public matches: 0
-- Missing public coverage: false
-- Rationale: Agent、记忆和工作流是高频 AI 应用词，但需要清楚解释边界和落地步骤。
-
-Search queries:
-
-- AI Agent 部署教程
-- Agent 记忆怎么做
-- AI Agent 工具调用教程
-- AI 工作流部署
-
-Review focus:
-
-- 解释工具调用和多步执行边界
-- 明确记忆、状态和人工确认的安全边界
-- 避免承诺全自动完成业务结果
-
-Source targets:
-
-- Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.
-
-Workflow angles:
-
-- search intent
-- fact review
-- risk language
-- internal links
-
-Candidates:
-
-| Batch | Safe draft | Current pack | Planned | Score | Category | Keyword | Title | File |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 40 | true | true | true | 100 | AI Agent | AI Agent 部署 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| 40 | true | false | true | 100 | AI 记忆 | AI Agent 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| 33 | true | false | true | 100 | 接单报价 | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
-| 33 | true | false | false | 100 | AI 部署 | Dify 工作流错误处理 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
-| 33 | true | false | false | 100 | AI 部署 | Dify Workflow 和 Agent 区别 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
 
 ## industry-prompt: 全行业提示词模板库
 

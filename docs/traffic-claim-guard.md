@@ -1,5 +1,5 @@
 # Traffic Claim Guard
-Generated at: 2026-06-06T14:51:17.433Z
+Generated at: 2026-06-06T14:58:42.630Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
@@ -20,6 +20,10 @@ None.
 | README.md | 250 | 4. 每次只发布 1-3 篇人工审核文章，观察收录和点击。 |
 | README.md | 276 | - Google Search Console 提交清单：`docs/search-console-setup.md` |
 | app/llms.txt/route.ts | 47 | "- The site does not claim real traffic, impressions, income guarantees, or automatic publishing.", |
+| docs/NEXT_ACTIONS.md | 24 | ## 4. 收款和流量收益 |
+| docs/NEXT_ACTIONS.md | 29 | - 稳定流量后再接联盟链接和广告。 |
+| docs/NEXT_ACTIONS.md | 46 | - 有 5 篇以上人工审核公开文章：注册 Google Search Console。 |
+| docs/NEXT_ACTIONS.md | 47 | - 有稳定访问：开启 Vercel Web Analytics 或 Google Analytics。 |
 | docs/ai-deployment-coverage.md | 11 | - Note: This coverage matrix is read-only. It organizes deployment, Agent, RAG, and model infrastructure drafts for manual review and does not claim measured traffic. |
 | docs/automation-digest.md | 14 | - Traffic data available: false |
 | docs/automation-digest.md | 185 | ## Traffic Evidence |
@@ -72,10 +76,6 @@ None.
 | docs/monetization-and-payment-plan.md | 87 | 等搜索流量稳定后，再接广告。 |
 | docs/monetization-and-payment-plan.md | 127 | 3. 接 Google Search Console。 |
 | docs/monetization-and-payment-plan.md | 130 | 6. 有稳定访问后再申请广告和联盟计划。 |
-| docs/NEXT_ACTIONS.md | 24 | ## 4. 收款和流量收益 |
-| docs/NEXT_ACTIONS.md | 29 | - 稳定流量后再接联盟链接和广告。 |
-| docs/NEXT_ACTIONS.md | 46 | - 有 5 篇以上人工审核公开文章：注册 Google Search Console。 |
-| docs/NEXT_ACTIONS.md | 47 | - 有稳定访问：开启 Vercel Web Analytics 或 Google Analytics。 |
 | docs/platform-registration-roadmap.md | 13 | ## 第一阶段：收录和流量观察 |
 | docs/platform-registration-roadmap.md | 17 | - 网站正式可访问。 |
 | docs/platform-registration-roadmap.md | 23 | - Google Search Console |
