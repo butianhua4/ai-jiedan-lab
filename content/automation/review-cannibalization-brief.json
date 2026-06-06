@@ -1,0 +1,441 @@
+{
+  "generatedAt": "2026-06-06T16:12:01.506Z",
+  "guardrails": {
+    "autoEditArticles": false,
+    "autoMarkReview": false,
+    "autoPublish": false,
+    "note": "Read-only cannibalization brief for current review candidates. It does not edit titles, slugs, keywords, status, noindex, or publishing state.",
+    "stopBefore": "Use recommendations during human review only. Publishing still requires separate explicit approval."
+  },
+  "sourceEvidence": {
+    "actionBoardGuardrails": {
+      "autoEditArticles": false,
+      "autoMarkReview": false,
+      "autoPublish": false,
+      "note": "Read-only review action board. It prioritizes human review tasks and does not edit articles, mark review, or publish.",
+      "stopBefore": "Every mark:review command requires explicit human approval. publish --confirm commands are intentionally not included."
+    },
+    "actionBoardReadyTasks": 11,
+    "contentCannibalizationGeneratedAt": "2026-06-06T16:12:00.808Z",
+    "contentCannibalizationSummary": {
+      "articleCount": 669,
+      "conflicts": 200,
+      "keywordConflicts": 11,
+      "reviewBatchConflicts": 0,
+      "slugStemConflicts": 177,
+      "titleStemConflicts": 12
+    },
+    "uniqueActionFiles": 9
+  },
+  "summary": {
+    "candidateFiles": 9,
+    "highRiskItems": 0,
+    "items": 9,
+    "itemsWithPublishedComparison": 0,
+    "itemsWithReviewComparison": 0,
+    "mediumRiskItems": 0,
+    "unsafeCommands": 0
+  },
+  "highRiskItems": [],
+  "nextItems": [],
+  "items": [
+    {
+      "candidate": {
+        "category": "AI 部署",
+        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "primaryKeyword": "客服 AI 模型选型",
+        "searchIntent": "informational",
+        "slug": "ai-model-selection-customer-service-guide",
+        "status": "draft",
+        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+        "tokens": [
+          "客服",
+          "ai",
+          "该选什么模型",
+          "速度",
+          "成本",
+          "知识库",
+          "转人工和质检",
+          "客服",
+          "ai",
+          "模型选型",
+          "ai",
+          "model",
+          "selection",
+          "customer",
+          "service",
+          "ai",
+          "部署"
+        ]
+      },
+      "decision": "monitor-only",
+      "highestPublishedScore": 0,
+      "highestReviewScore": 0,
+      "humanReviewChecklist": [
+        "Confirm the candidate owns a distinct search intent: 客服 AI 模型选型.",
+        "No close published article found; still confirm the title is not a duplicate promise.",
+        "No close draft/review candidate found.",
+        "Document why this can remain a separate article.",
+        "If both articles stay, add a clear internal-link relationship: pillar, comparison, implementation detail, or troubleshooting follow-up."
+      ],
+      "publishedSimilar": [],
+      "recommendation": "No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article.",
+      "reviewSimilar": [],
+      "riskLevel": "low"
+    },
+    {
+      "candidate": {
+        "category": "AI Agent",
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "primaryKeyword": "AI Agent 部署",
+        "searchIntent": "informational",
+        "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
+        "status": "draft",
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "tokens": [
+          "ai",
+          "agent",
+          "部署怎么做",
+          "vercel",
+          "ai",
+          "sdk",
+          "理解工具调用",
+          "多步执行和上线检查",
+          "ai",
+          "agent",
+          "部署",
+          "ai",
+          "agent",
+          "deployment",
+          "vercel",
+          "ai",
+          "sdk",
+          "ai",
+          "agent"
+        ]
+      },
+      "decision": "monitor-only",
+      "highestPublishedScore": 0,
+      "highestReviewScore": 0,
+      "humanReviewChecklist": [
+        "Confirm the candidate owns a distinct search intent: AI Agent 部署.",
+        "No close published article found; still confirm the title is not a duplicate promise.",
+        "No close draft/review candidate found.",
+        "Document why this can remain a separate article.",
+        "If both articles stay, add a clear internal-link relationship: pillar, comparison, implementation detail, or troubleshooting follow-up."
+      ],
+      "publishedSimilar": [],
+      "recommendation": "No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article.",
+      "reviewSimilar": [],
+      "riskLevel": "low"
+    },
+    {
+      "candidate": {
+        "category": "AI 提示词",
+        "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "primaryKeyword": "全行业 AI 提示词模板",
+        "searchIntent": "informational",
+        "slug": "industry-ai-prompts-template-library-2026",
+        "status": "draft",
+        "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+        "tokens": [
+          "全行业",
+          "ai",
+          "提示词模板库怎么做",
+          "销售",
+          "运营",
+          "客服",
+          "hr",
+          "财务和教育都能用",
+          "全行业",
+          "ai",
+          "提示词模板",
+          "industry",
+          "ai",
+          "prompts",
+          "template",
+          "library",
+          "2026",
+          "ai",
+          "提示词"
+        ]
+      },
+      "decision": "monitor-only",
+      "highestPublishedScore": 0,
+      "highestReviewScore": 0,
+      "humanReviewChecklist": [
+        "Confirm the candidate owns a distinct search intent: 全行业 AI 提示词模板.",
+        "No close published article found; still confirm the title is not a duplicate promise.",
+        "No close draft/review candidate found.",
+        "Document why this can remain a separate article.",
+        "If both articles stay, add a clear internal-link relationship: pillar, comparison, implementation detail, or troubleshooting follow-up."
+      ],
+      "publishedSimilar": [],
+      "recommendation": "No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article.",
+      "reviewSimilar": [],
+      "riskLevel": "low"
+    },
+    {
+      "candidate": {
+        "category": "AI 记忆",
+        "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+        "primaryKeyword": "AI Agent 记忆",
+        "searchIntent": "informational",
+        "slug": "ai-agent-memory-rag-design-guide",
+        "status": "draft",
+        "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+        "tokens": [
+          "ai",
+          "agent",
+          "记忆和",
+          "rag",
+          "怎么设计",
+          "短期记忆",
+          "长期记忆",
+          "引用来源和隐私边界",
+          "ai",
+          "agent",
+          "记忆",
+          "ai",
+          "agent",
+          "memory",
+          "rag",
+          "design",
+          "ai",
+          "记忆"
+        ]
+      },
+      "decision": "monitor-only",
+      "highestPublishedScore": 0,
+      "highestReviewScore": 0,
+      "humanReviewChecklist": [
+        "Confirm the candidate owns a distinct search intent: AI Agent 记忆.",
+        "No close published article found; still confirm the title is not a duplicate promise.",
+        "No close draft/review candidate found.",
+        "Document why this can remain a separate article.",
+        "If both articles stay, add a clear internal-link relationship: pillar, comparison, implementation detail, or troubleshooting follow-up."
+      ],
+      "publishedSimilar": [],
+      "recommendation": "No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article.",
+      "reviewSimilar": [],
+      "riskLevel": "low"
+    },
+    {
+      "candidate": {
+        "category": "AI 部署",
+        "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+        "primaryKeyword": "Open WebUI Functions Pipelines",
+        "searchIntent": "informational",
+        "slug": "open-webui-functions-pipelines-deployment-guide",
+        "status": "draft",
+        "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+        "tokens": [
+          "open",
+          "webui",
+          "functions",
+          "pipelines",
+          "怎么用",
+          "扩展模型",
+          "rag",
+          "和外部工作流",
+          "open",
+          "webui",
+          "functions",
+          "pipelines",
+          "open",
+          "webui",
+          "functions",
+          "pipelines",
+          "deployment",
+          "ai",
+          "部署"
+        ]
+      },
+      "decision": "monitor-only",
+      "highestPublishedScore": 0,
+      "highestReviewScore": 0,
+      "humanReviewChecklist": [
+        "Confirm the candidate owns a distinct search intent: Open WebUI Functions Pipelines.",
+        "No close published article found; still confirm the title is not a duplicate promise.",
+        "No close draft/review candidate found.",
+        "Document why this can remain a separate article.",
+        "If both articles stay, add a clear internal-link relationship: pillar, comparison, implementation detail, or troubleshooting follow-up."
+      ],
+      "publishedSimilar": [],
+      "recommendation": "No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article.",
+      "reviewSimilar": [],
+      "riskLevel": "low"
+    },
+    {
+      "candidate": {
+        "category": "接单报价",
+        "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "primaryKeyword": "AI 自动化项目报价",
+        "searchIntent": "informational",
+        "slug": "ai-automation-project-pricing-scope-guide",
+        "status": "draft",
+        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+        "tokens": [
+          "ai",
+          "自动化项目怎么报价",
+          "dify",
+          "n8n",
+          "rag",
+          "agent",
+          "和维护范围",
+          "ai",
+          "自动化项目报价",
+          "ai",
+          "automation",
+          "project",
+          "pricing",
+          "scope",
+          "接单报价"
+        ]
+      },
+      "decision": "monitor-only",
+      "highestPublishedScore": 0,
+      "highestReviewScore": 0,
+      "humanReviewChecklist": [
+        "Confirm the candidate owns a distinct search intent: AI 自动化项目报价.",
+        "No close published article found; still confirm the title is not a duplicate promise.",
+        "No close draft/review candidate found.",
+        "Document why this can remain a separate article.",
+        "If both articles stay, add a clear internal-link relationship: pillar, comparison, implementation detail, or troubleshooting follow-up."
+      ],
+      "publishedSimilar": [],
+      "recommendation": "No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article.",
+      "reviewSimilar": [],
+      "riskLevel": "low"
+    },
+    {
+      "candidate": {
+        "category": "AI 部署",
+        "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+        "primaryKeyword": "Dify 工作流错误处理",
+        "searchIntent": "informational",
+        "slug": "dify-workflow-error-handling-guide",
+        "status": "draft",
+        "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+        "tokens": [
+          "dify",
+          "工作流怎么做错误处理",
+          "变量",
+          "分支",
+          "重试和人工兜底",
+          "dify",
+          "工作流错误处理",
+          "dify",
+          "workflow",
+          "error",
+          "handling",
+          "ai",
+          "部署"
+        ]
+      },
+      "decision": "monitor-only",
+      "highestPublishedScore": 0,
+      "highestReviewScore": 0,
+      "humanReviewChecklist": [
+        "Confirm the candidate owns a distinct search intent: Dify 工作流错误处理.",
+        "No close published article found; still confirm the title is not a duplicate promise.",
+        "No close draft/review candidate found.",
+        "Document why this can remain a separate article.",
+        "If both articles stay, add a clear internal-link relationship: pillar, comparison, implementation detail, or troubleshooting follow-up."
+      ],
+      "publishedSimilar": [],
+      "recommendation": "No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article.",
+      "reviewSimilar": [],
+      "riskLevel": "low"
+    },
+    {
+      "candidate": {
+        "category": "AI 部署",
+        "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+        "primaryKeyword": "AI API Key 安全管理",
+        "searchIntent": "informational",
+        "slug": "ai-api-key-security-rotation-guide",
+        "status": "draft",
+        "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+        "tokens": [
+          "ai",
+          "api",
+          "key",
+          "怎么安全管理",
+          "环境变量",
+          "权限",
+          "轮换",
+          "泄露应急",
+          "ai",
+          "api",
+          "key",
+          "安全管理",
+          "ai",
+          "api",
+          "key",
+          "security",
+          "rotation",
+          "ai",
+          "部署"
+        ]
+      },
+      "decision": "monitor-only",
+      "highestPublishedScore": 0,
+      "highestReviewScore": 0,
+      "humanReviewChecklist": [
+        "Confirm the candidate owns a distinct search intent: AI API Key 安全管理.",
+        "No close published article found; still confirm the title is not a duplicate promise.",
+        "No close draft/review candidate found.",
+        "Document why this can remain a separate article.",
+        "If both articles stay, add a clear internal-link relationship: pillar, comparison, implementation detail, or troubleshooting follow-up."
+      ],
+      "publishedSimilar": [],
+      "recommendation": "No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article.",
+      "reviewSimilar": [],
+      "riskLevel": "low"
+    },
+    {
+      "candidate": {
+        "category": "AI 基建",
+        "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+        "primaryKeyword": "BentoML LLM 部署",
+        "searchIntent": "informational",
+        "slug": "bentoml-llm-deployment-beginner-guide",
+        "status": "draft",
+        "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+        "tokens": [
+          "bentoml",
+          "怎么部署",
+          "llm",
+          "从本地",
+          "service",
+          "bentocloud",
+          "验收",
+          "bentoml",
+          "llm",
+          "部署",
+          "bentoml",
+          "llm",
+          "deployment",
+          "beginner",
+          "ai",
+          "基建"
+        ]
+      },
+      "decision": "monitor-only",
+      "highestPublishedScore": 0,
+      "highestReviewScore": 0,
+      "humanReviewChecklist": [
+        "Confirm the candidate owns a distinct search intent: BentoML LLM 部署.",
+        "No close published article found; still confirm the title is not a duplicate promise.",
+        "No close draft/review candidate found.",
+        "Document why this can remain a separate article.",
+        "If both articles stay, add a clear internal-link relationship: pillar, comparison, implementation detail, or troubleshooting follow-up."
+      ],
+      "publishedSimilar": [],
+      "recommendation": "No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article.",
+      "reviewSimilar": [],
+      "riskLevel": "low"
+    }
+  ]
+}

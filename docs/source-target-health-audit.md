@@ -1,6 +1,6 @@
 # Source Target Health Audit
 
-Generated at: 2026-06-06T16:00:55.958Z
+Generated at: 2026-06-06T16:11:54.886Z
 
 This report is read-only. It verifies official source URLs used by review and public-gap candidates before any human approval step.
 
@@ -41,7 +41,7 @@ This report is read-only. It verifies official source URLs used by review and pu
 | OK | Status | URL | Final URL | References | Error |
 | --- | --- | --- | --- | --- | --- |
 | true | 200 | https://ai-sdk.dev/docs | https://ai-sdk.dev/docs/introduction | 20 |  |
-| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs | 2 |  |
+| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=fr | 2 |  |
 | true | 200 | https://docs.anthropic.com | https://platform.claude.com/docs/en/home | 3 |  |
 | true | 200 | https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview | https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview | 3 |  |
 | true | 200 | https://docs.dify.ai | https://docs.dify.ai/en/use-dify/getting-started/introduction | 5 |  |
@@ -85,7 +85,7 @@ This report is read-only. It verifies official source URLs used by review and pu
 | --- | --- | --- | --- | --- | --- |
 | true | 200 | https://adoption.microsoft.com/en-us/copilot/prompt-gallery/ | https://adoption.microsoft.com/en-us/copilot/prompt-gallery/ | 2 |  |
 | true | 200 | https://ai-sdk.dev/docs | https://ai-sdk.dev/docs/introduction | 20 |  |
-| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs | 2 |  |
+| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=fr | 2 |  |
 | true | 200 | https://docs.anthropic.com | https://platform.claude.com/docs/en/home | 3 |  |
 | true | 200 | https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview | https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview | 3 |  |
 | true | 200 | https://docs.dify.ai | https://docs.dify.ai/en/use-dify/getting-started/introduction | 5 |  |

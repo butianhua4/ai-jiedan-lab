@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-06T16:03:00.726Z
+Generated at: 2026-06-06T16:13:42.776Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 79
-- Passed: 79
+- Checks: 81
+- Passed: 81
 - Failed: 0
 
 ## Checks
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=97, unsafeClaims=0, watchMentions=551 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=99, unsafeClaims=0, watchMentions=551 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, candidates=19 |
@@ -73,6 +73,8 @@ Overall: PASS
 | public coverage gap decision pack is read-only and covers preflight items | PASS | items=8, ready=8, waves=4 |
 | public coverage gap decision pack has human review actions and command boundaries | PASS | blocking=0, unsafe=0, commandBoundary=8, optimizations=8 |
 | content cannibalization check generated warning report | PASS | conflicts=200, reviewBatchConflicts=0 |
+| review cannibalization brief is read-only and covers unique action-board files | PASS | items=9, uniqueActionFiles=9, unsafeCommands=0 |
+| review cannibalization brief keeps publish candidates differentiated | PASS | highRisk=0, mediumRisk=0, publishedComparisons=0, reviewComparisons=0 |
 | content freshness check covers review items | PASS | highRisk=570, currentReviewItems=3, plannedReviewItems=9 |
 | review coverage report covers planned candidates | PASS | planned=9, items=9, missingCoverage=0 |
 | review coverage includes source, fact-check, approval, and risk tasks | PASS | {"approval":0,"factCheck":0,"risk":0,"sources":0} |

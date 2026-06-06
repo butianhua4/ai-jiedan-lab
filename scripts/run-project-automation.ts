@@ -46,6 +46,7 @@ const tasks: Task[] = [
   { title: "Generate review optimization brief", args: ["run", "automation:review-optimization-brief"] },
   { title: "Generate wave publish simulation", args: ["run", "automation:wave-publish-sim"] },
   { title: "Run content cannibalization check", args: ["run", "content:cannibalization"] },
+  { title: "Generate review cannibalization brief", args: ["run", "automation:review-cannibalization-brief"] },
   { title: "Run content freshness check", args: ["run", "content:freshness"] },
   { title: "Generate review coverage report", args: ["run", "automation:review-coverage"] },
   { title: "Generate manual review workbench", args: ["run", "automation:workbench"] },

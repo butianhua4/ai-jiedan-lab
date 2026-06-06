@@ -303,6 +303,26 @@ type ReviewOptimizationBrief = {
   };
 };
 
+type ReviewCannibalizationBrief = {
+  nextItems: Array<{
+    candidate: { file: string; primaryKeyword: string; title: string };
+    decision: string;
+    highestPublishedScore: number;
+    highestReviewScore: number;
+    recommendation: string;
+    riskLevel: string;
+  }>;
+  summary: {
+    candidateFiles: number;
+    highRiskItems: number;
+    items: number;
+    itemsWithPublishedComparison: number;
+    itemsWithReviewComparison: number;
+    mediumRiskItems: number;
+    unsafeCommands: number;
+  };
+};
+
 type SearchSnippets = {
   summary: {
     blockingItems: number;
@@ -606,6 +626,7 @@ const reports = {
   sourceHealth: readJson<SourceHealth>("content/automation/source-target-health-audit.json"),
   reviewActionBoard: readJson<ReviewActionBoard>("content/automation/review-action-board.json"),
   reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
+  reviewCannibalizationBrief: readJson<ReviewCannibalizationBrief>("content/automation/review-cannibalization-brief.json"),
   searchSnippets: readJson<SearchSnippets>("content/automation/search-snippet-readiness-audit.json"),
   structuredData: readJson<StructuredData>("content/automation/structured-data-readiness-audit.json"),
   searchIntentLanes: readJson<SearchIntentLanes>("content/automation/search-intent-lane-map.json"),
@@ -682,6 +703,16 @@ const payload = {
     nextBriefs: reports.reviewOptimizationBrief.data?.nextBriefs.slice(0, 8) ?? [],
     readyBriefs: reports.reviewOptimizationBrief.data?.summary.readyBriefs ?? null,
     unsafeCommands: reports.reviewOptimizationBrief.data?.summary.unsafeCommands ?? null,
+  },
+  reviewCannibalizationBrief: {
+    candidateFiles: reports.reviewCannibalizationBrief.data?.summary.candidateFiles ?? null,
+    highRiskItems: reports.reviewCannibalizationBrief.data?.summary.highRiskItems ?? null,
+    items: reports.reviewCannibalizationBrief.data?.summary.items ?? null,
+    itemsWithPublishedComparison: reports.reviewCannibalizationBrief.data?.summary.itemsWithPublishedComparison ?? null,
+    itemsWithReviewComparison: reports.reviewCannibalizationBrief.data?.summary.itemsWithReviewComparison ?? null,
+    mediumRiskItems: reports.reviewCannibalizationBrief.data?.summary.mediumRiskItems ?? null,
+    nextItems: reports.reviewCannibalizationBrief.data?.nextItems.slice(0, 8) ?? [],
+    unsafeCommands: reports.reviewCannibalizationBrief.data?.summary.unsafeCommands ?? null,
   },
   searchSnippets: reports.searchSnippets.data?.summary ?? null,
   structuredData: reports.structuredData.data?.summary ?? null,
@@ -975,6 +1006,9 @@ function buildNextActions() {
   if (!reports.reviewOptimizationBrief.data || reports.reviewOptimizationBrief.data.summary.unsafeCommands > 0) {
     return ["Open docs/review-optimization-brief.md and resolve unsafe or missing copydesk guidance before manual review."];
   }
+  if (!reports.reviewCannibalizationBrief.data || reports.reviewCannibalizationBrief.data.summary.highRiskItems > 0) {
+    return ["Open docs/review-cannibalization-brief.md and differentiate high-risk candidate overlaps before manual review."];
+  }
   if (!reports.searchSnippets.data || reports.searchSnippets.data.summary.waveItemsWithBlockingIssues > 0) {
     return ["Open docs/search-snippet-readiness-audit.md and fix Wave 1 title, description, slug, or indexing blockers."];
   }
@@ -1140,6 +1174,23 @@ function toMarkdown(data: typeof payload) {
     ...data.reviewOptimizationBrief.nextBriefs.map(
       (item) =>
         `| ${item.priority} | ${item.scope} | ${item.searchEvidence.exactQueryMatches ?? "n/a"} | ${item.internalLink ? item.internalLink.url : "none"} | ${item.proposedTitle} | ${item.file} |`,
+    ),
+    "",
+    "## Review Cannibalization Brief",
+    "",
+    `- Items: ${data.reviewCannibalizationBrief.items}`,
+    `- Candidate files: ${data.reviewCannibalizationBrief.candidateFiles}`,
+    `- High-risk items: ${data.reviewCannibalizationBrief.highRiskItems}`,
+    `- Medium-risk items: ${data.reviewCannibalizationBrief.mediumRiskItems}`,
+    `- With published comparison: ${data.reviewCannibalizationBrief.itemsWithPublishedComparison}`,
+    `- With review comparison: ${data.reviewCannibalizationBrief.itemsWithReviewComparison}`,
+    `- Unsafe commands: ${data.reviewCannibalizationBrief.unsafeCommands}`,
+    "",
+    "| Risk | Published score | Review score | Decision | Recommendation | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- |",
+    ...data.reviewCannibalizationBrief.nextItems.map(
+      (item) =>
+        `| ${item.riskLevel} | ${item.highestPublishedScore} | ${item.highestReviewScore} | ${item.decision} | ${item.recommendation} | ${item.candidate.title} | ${item.candidate.file} |`,
     ),
     "",
     "## Search Snippet Readiness",

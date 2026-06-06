@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T16:03:00.677Z",
+  "generatedAt": "2026-06-06T16:13:42.824Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -195,7 +195,7 @@
         "url": "https://ai-sdk.dev/docs"
       },
       {
-        "finalUrl": "https://ai.google.dev/gemini-api/docs",
+        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=fr",
         "ok": true,
         "references": [
           {
@@ -1117,6 +1117,16 @@
       }
     ],
     "readyBriefs": 11,
+    "unsafeCommands": 0
+  },
+  "reviewCannibalizationBrief": {
+    "candidateFiles": 9,
+    "highRiskItems": 0,
+    "items": 9,
+    "itemsWithPublishedComparison": 0,
+    "itemsWithReviewComparison": 0,
+    "mediumRiskItems": 0,
+    "nextItems": [],
     "unsafeCommands": 0
   },
   "searchSnippets": {
@@ -3128,7 +3138,7 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 97,
+    "filesScanned": 99,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
     "watchMentions": 551
@@ -11258,7 +11268,7 @@
   "liveSearch": {
     "checkedArticles": 15,
     "failedChecks": [],
-    "generatedAt": "2026-06-06T16:02:42.437Z",
+    "generatedAt": "2026-06-06T16:13:26.735Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 15,

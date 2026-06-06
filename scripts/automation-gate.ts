@@ -401,6 +401,28 @@ async function main() {
       unsafeCommands: number;
     };
   }>("content/automation/review-optimization-brief.json");
+  const reviewCannibalizationBrief = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    highRiskItems?: unknown[];
+    items?: Array<{
+      candidate?: { file?: string };
+      humanReviewChecklist?: unknown[];
+      publishedSimilar?: unknown[];
+      recommendation?: string;
+      reviewSimilar?: unknown[];
+      riskLevel?: string;
+    }>;
+    sourceEvidence: { uniqueActionFiles: number };
+    summary: {
+      candidateFiles: number;
+      highRiskItems: number;
+      items: number;
+      itemsWithPublishedComparison: number;
+      itemsWithReviewComparison: number;
+      mediumRiskItems: number;
+      unsafeCommands: number;
+    };
+  }>("content/automation/review-cannibalization-brief.json");
   const searchSnippets = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     summary: {
@@ -1036,6 +1058,35 @@ async function main() {
       name: "content cannibalization check generated warning report",
       ok: cannibalization.guardrails.autoPublish === false && cannibalization.summary.articleCount > 0,
       detail: `conflicts=${cannibalization.summary.conflicts}, reviewBatchConflicts=${cannibalization.summary.reviewBatchConflicts}`,
+    },
+    {
+      name: "review cannibalization brief is read-only and covers unique action-board files",
+      ok:
+        reviewCannibalizationBrief.guardrails.autoEditArticles === false &&
+        reviewCannibalizationBrief.guardrails.autoMarkReview === false &&
+        reviewCannibalizationBrief.guardrails.autoPublish === false &&
+        reviewCannibalizationBrief.summary.items === reviewCannibalizationBrief.summary.candidateFiles &&
+        reviewCannibalizationBrief.summary.candidateFiles === reviewCannibalizationBrief.sourceEvidence.uniqueActionFiles &&
+        reviewCannibalizationBrief.summary.unsafeCommands === 0,
+      detail: `items=${reviewCannibalizationBrief.summary.items}, uniqueActionFiles=${reviewCannibalizationBrief.sourceEvidence.uniqueActionFiles}, unsafeCommands=${reviewCannibalizationBrief.summary.unsafeCommands}`,
+    },
+    {
+      name: "review cannibalization brief keeps publish candidates differentiated",
+      ok:
+        reviewCannibalizationBrief.summary.highRiskItems === 0 &&
+        (reviewCannibalizationBrief.highRiskItems?.length || 0) === 0 &&
+        Boolean(
+          reviewCannibalizationBrief.items?.every(
+            (item) =>
+              Boolean(item.candidate?.file) &&
+              Boolean(item.recommendation) &&
+              (item.humanReviewChecklist?.length || 0) >= 5 &&
+              (item.publishedSimilar?.length || 0) <= 5 &&
+              (item.reviewSimilar?.length || 0) <= 5 &&
+              item.riskLevel !== "high",
+          ),
+        ),
+      detail: `highRisk=${reviewCannibalizationBrief.summary.highRiskItems}, mediumRisk=${reviewCannibalizationBrief.summary.mediumRiskItems}, publishedComparisons=${reviewCannibalizationBrief.summary.itemsWithPublishedComparison}, reviewComparisons=${reviewCannibalizationBrief.summary.itemsWithReviewComparison}`,
     },
     {
       name: "content freshness check covers review items",

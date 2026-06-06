@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T16:03:00.677Z
+Generated at: 2026-06-06T16:13:42.824Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -53,7 +53,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=fr
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - https://docs.dify.ai -> https://docs.dify.ai/en/use-dify/getting-started/introduction
@@ -101,6 +101,19 @@ Unsafe tasks:
 | 769 | public-gap-wave-2 | 3 | /blog/build-first-webpage-with-codex | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | 768 | public-gap-wave-2 | 0 | /blog/build-first-webpage-with-codex | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 | 748 | public-gap-wave-3 | 1 | /blog/first-upwork-project-pricing-checklist | AI 自动化项目报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+
+## Review Cannibalization Brief
+
+- Items: 9
+- Candidate files: 9
+- High-risk items: 0
+- Medium-risk items: 0
+- With published comparison: 0
+- With review comparison: 0
+- Unsafe commands: 0
+
+| Risk | Published score | Review score | Decision | Recommendation | Title | File |
+| --- | --- | --- | --- | --- | --- | --- |
 
 ## Search Snippet Readiness
 
@@ -264,7 +277,7 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 97
+- Traffic claim files scanned: 99
 - Traffic claim watch mentions: 551
 
 ## Preflight
@@ -562,7 +575,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T16:02:42.437Z
+- Latest check: 2026-06-06T16:13:26.735Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
