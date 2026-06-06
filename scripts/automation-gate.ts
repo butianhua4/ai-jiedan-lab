@@ -153,6 +153,15 @@ async function main() {
       trafficDataAvailable: boolean;
     };
   }>("content/automation/traffic-evidence-audit.json");
+  const trafficClaimGuard = readJson<{
+    guardrails: { autoPublish: boolean };
+    summary: {
+      filesScanned: number;
+      measuredTrafficUnavailable: boolean;
+      unsafeClaims: number;
+      watchMentions: number;
+    };
+  }>("content/automation/traffic-claim-guard.json");
   const articles = (await articleFiles()).map(readArticle);
 
   const reviewFiles = reviewQueue.recommendedToday.map((item) => item.file);
@@ -264,6 +273,14 @@ async function main() {
         trafficEvidence.summary.canClaimTraffic === false &&
         trafficEvidence.summary.claimableMetrics === 0,
       detail: `trafficDataAvailable=${trafficEvidence.summary.trafficDataAvailable}, canClaimTraffic=${trafficEvidence.summary.canClaimTraffic}, claimableMetrics=${trafficEvidence.summary.claimableMetrics}`,
+    },
+    {
+      name: "traffic claim guard found no unsupported claims",
+      ok:
+        trafficClaimGuard.guardrails.autoPublish === false &&
+        trafficClaimGuard.summary.filesScanned > 0 &&
+        trafficClaimGuard.summary.unsafeClaims === 0,
+      detail: `filesScanned=${trafficClaimGuard.summary.filesScanned}, unsafeClaims=${trafficClaimGuard.summary.unsafeClaims}, watchMentions=${trafficClaimGuard.summary.watchMentions}`,
     },
     {
       name: "SEO opportunity map has review-ready drafts",

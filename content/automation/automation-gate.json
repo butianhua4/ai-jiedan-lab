@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-06T12:36:23.027Z",
+  "generatedAt": "2026-06-06T12:43:45.759Z",
   "ok": true,
   "summary": {
-    "checks": 43,
+    "checks": 44,
     "failed": 0,
-    "passed": 43
+    "passed": 44
   },
   "failed": [],
   "checks": [
@@ -86,6 +86,11 @@
       "name": "traffic is not claimed without measured metrics",
       "ok": true,
       "detail": "trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0"
+    },
+    {
+      "name": "traffic claim guard found no unsupported claims",
+      "ok": true,
+      "detail": "filesScanned=63, unsafeClaims=0, watchMentions=387"
     },
     {
       "name": "SEO opportunity map has review-ready drafts",

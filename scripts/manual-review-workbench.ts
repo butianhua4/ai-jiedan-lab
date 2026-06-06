@@ -152,6 +152,14 @@ type TrafficEvidence = {
   };
 };
 
+type TrafficClaimGuard = {
+  summary: {
+    filesScanned: number;
+    unsafeClaims: number;
+    watchMentions: number;
+  };
+};
+
 type ProjectStatus = {
   articles: { publicPublished: number; publishableNow: unknown[]; statusCounts: Record<string, number> };
 };
@@ -173,6 +181,7 @@ function main() {
   const publicExpansion = readJson<PublicExpansionQueue>("content/automation/public-expansion-queue.json");
   const waveApprovalPacket = readJson<WaveApprovalPacket>("content/automation/wave-approval-packet.json");
   const trafficEvidence = readJson<TrafficEvidence>("content/automation/traffic-evidence-audit.json");
+  const trafficClaimGuard = readJson<TrafficClaimGuard>("content/automation/traffic-claim-guard.json");
   const deploymentCoverage = readJson<DeploymentCoverage>("content/automation/ai-deployment-coverage.json");
   const promptCoverage = readJson<PromptCoverage>("content/automation/industry-prompt-coverage.json");
   const projectStatus = readJson<ProjectStatus>("content/automation/project-status.json");
@@ -283,6 +292,7 @@ function main() {
       searchConsoleVerificationEvidence: trafficEvidence.summary.searchConsoleVerificationEvidence,
       trafficDataAvailable: trafficEvidence.summary.trafficDataAvailable,
     },
+    trafficClaimGuard: trafficClaimGuard.summary,
     deploymentCoverage: {
       summary: deploymentCoverage.summary,
       topTopics: deploymentCoverage.coverage.slice(0, 6).map((item) => ({
@@ -311,6 +321,7 @@ function main() {
       publicExpansion,
       waveApprovalPacket,
       trafficEvidence,
+      trafficClaimGuard,
     ),
   };
 
@@ -333,6 +344,7 @@ function buildNextActions(
   publicExpansion: PublicExpansionQueue,
   waveApprovalPacket: WaveApprovalPacket,
   trafficEvidence: TrafficEvidence,
+  trafficClaimGuard: TrafficClaimGuard,
 ) {
   if (projectStatus.articles.publishableNow.length > 0) return ["Stop and inspect publishableNow before adding more review candidates."];
   if (!liveSearch.ok || liveSearch.failedChecks.length > 0) return ["Fix live search surface failures before any publishing action."];
@@ -354,6 +366,7 @@ function buildNextActions(
     return ["Resolve Wave 1 approval packet issues before any mark:review action."];
   }
   if (trafficEvidence.summary.failedChecks > 0) return ["Resolve traffic evidence audit failures before reporting traffic status."];
+  if (trafficClaimGuard.summary.unsafeClaims > 0) return ["Remove unsupported traffic claims before reporting traffic status."];
   if (
     reviewCoverage.summary.itemsMissingOfficialSources > 0 ||
     reviewCoverage.summary.itemsMissingFactCheckQueries > 0 ||
@@ -444,6 +457,7 @@ function toMarkdown(payload: {
     searchConsoleVerificationEvidence: boolean;
     trafficDataAvailable: boolean;
   };
+  trafficClaimGuard: { filesScanned: number; unsafeClaims: number; watchMentions: number };
   deploymentCoverage: {
     summary: DeploymentCoverage["summary"];
     topTopics: Array<{ candidates: number; gapScore: number; publicMatches: number; topic: string }>;
@@ -601,6 +615,9 @@ function toMarkdown(payload: {
     `- Measured traffic sources: ${payload.trafficEvidence.measuredTrafficSources.length ? payload.trafficEvidence.measuredTrafficSources.join(", ") : "none"}`,
     `- Search Console verification evidence: ${payload.trafficEvidence.searchConsoleVerificationEvidence}`,
     `- Failed checks: ${payload.trafficEvidence.failedChecks}`,
+    `- Unsupported traffic claims: ${payload.trafficClaimGuard.unsafeClaims}`,
+    `- Traffic claim files scanned: ${payload.trafficClaimGuard.filesScanned}`,
+    `- Traffic claim watch mentions: ${payload.trafficClaimGuard.watchMentions}`,
     "",
     "## AI Deployment Coverage",
     "",

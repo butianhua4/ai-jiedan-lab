@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-06T12:36:23.027Z
+Generated at: 2026-06-06T12:43:45.759Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 43
-- Passed: 43
+- Checks: 44
+- Passed: 44
 - Failed: 0
 
 ## Checks
@@ -30,6 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=63, unsafeClaims=0, watchMentions=387 |
 | SEO opportunity map has review-ready drafts | PASS | reviewReadyDrafts=633 |
 | SEO opportunity map includes manual review batches | PASS | batches=6 |
 | content opportunity backlog has reviewable topics | PASS | topics=7, topicsWithReadyCandidates=7 |

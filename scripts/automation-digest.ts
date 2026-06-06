@@ -182,6 +182,15 @@ type TrafficEvidence = {
   };
 };
 
+type TrafficClaimGuard = {
+  summary: {
+    filesScanned: number;
+    measuredTrafficUnavailable: boolean;
+    unsafeClaims: number;
+    watchMentions: number;
+  };
+};
+
 const reports = {
   cannibalization: readJson<{ summary: { conflicts: number; reviewBatchConflicts: number } }>("content/automation/content-cannibalization.json"),
   freshness: readJson<{ summary: { currentReviewItems: number; highRisk: number; mediumRisk: number; plannedReviewItems: number } }>(
@@ -219,6 +228,7 @@ const reports = {
   publicExpansion: readJson<PublicExpansionQueue>("content/automation/public-expansion-queue.json"),
   waveApprovalPacket: readJson<WaveApprovalPacket>("content/automation/wave-approval-packet.json"),
   trafficEvidence: readJson<TrafficEvidence>("content/automation/traffic-evidence-audit.json"),
+  trafficClaimGuard: readJson<TrafficClaimGuard>("content/automation/traffic-claim-guard.json"),
   review: readJson<{ counts: { candidates: number; returned: number; rejected: Record<string, number> }; recommendedToday: ReviewCandidate[] }>(
     "content/automation/review-candidates.json",
   ),
@@ -308,6 +318,12 @@ const payload = {
     measuredTrafficSources: reports.trafficEvidence.data?.measuredTrafficSources ?? [],
     searchConsoleVerificationEvidence: reports.trafficEvidence.data?.summary.searchConsoleVerificationEvidence ?? false,
     trafficDataAvailable: reports.trafficEvidence.data?.summary.trafficDataAvailable ?? false,
+  },
+  trafficClaimGuard: {
+    filesScanned: reports.trafficClaimGuard.data?.summary.filesScanned ?? null,
+    measuredTrafficUnavailable: reports.trafficClaimGuard.data?.summary.measuredTrafficUnavailable ?? null,
+    unsafeClaims: reports.trafficClaimGuard.data?.summary.unsafeClaims ?? null,
+    watchMentions: reports.trafficClaimGuard.data?.summary.watchMentions ?? null,
   },
   preflight: {
     checked: reports.preflight.data?.summary.checked ?? null,
@@ -402,6 +418,9 @@ function buildNextActions() {
   }
   if (!reports.trafficEvidence.data || reports.trafficEvidence.data.summary.failedChecks > 0) {
     return ["Open docs/traffic-evidence-audit.md and resolve traffic evidence audit failures."];
+  }
+  if (!reports.trafficClaimGuard.data || reports.trafficClaimGuard.data.summary.unsafeClaims > 0) {
+    return ["Open docs/traffic-claim-guard.md and remove unsupported traffic claims."];
   }
   if (!reports.reviewCoverage.data || reports.reviewCoverage.data.summary.missingCoverage > 0) {
     return ["Open docs/review-coverage-report.md and regenerate coverage for all planned review candidates."];
@@ -547,6 +566,9 @@ function toMarkdown(data: typeof payload) {
     `- Search Console verification evidence: ${data.trafficEvidence.searchConsoleVerificationEvidence}`,
     `- Live status: ${data.trafficEvidence.liveStatus}`,
     `- Failed checks: ${data.trafficEvidence.failedChecks}`,
+    `- Unsupported traffic claims: ${data.trafficClaimGuard.unsafeClaims}`,
+    `- Traffic claim files scanned: ${data.trafficClaimGuard.filesScanned}`,
+    `- Traffic claim watch mentions: ${data.trafficClaimGuard.watchMentions}`,
     "",
     "## Preflight",
     "",

@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T12:36:23.119Z
+Generated at: 2026-06-06T12:43:45.763Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -141,6 +141,9 @@ Next review files:
 - Search Console verification evidence: false
 - Live status: 200
 - Failed checks: 0
+- Unsupported traffic claims: 0
+- Traffic claim files scanned: 63
+- Traffic claim watch mentions: 387
 
 ## Preflight
 
@@ -226,7 +229,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T12:36:00.922Z
+- Latest check: 2026-06-06T12:43:28.791Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
