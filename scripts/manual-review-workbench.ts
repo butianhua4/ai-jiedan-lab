@@ -319,6 +319,26 @@ type SearchIntentWaves = {
   }>;
 };
 
+type SearchQueryCoverage = {
+  items: Array<{
+    file: string;
+    laneTitle: string;
+    primaryKeyword: string;
+    queryCount: number;
+    readyForManualReview: boolean;
+    title: string;
+    wave: number;
+  }>;
+  summary: {
+    items: number;
+    readyItems: number;
+    unsafeItems: number;
+    uniqueFiles: number;
+    uniqueLanes: number;
+    uniqueQueries: number;
+  };
+};
+
 type ProjectStatus = {
   articles: { publicPublished: number; publishableNow: unknown[]; statusCounts: Record<string, number> };
 };
@@ -349,6 +369,7 @@ function main() {
   const searchIntentLanes = readJson<SearchIntentLanes>("content/automation/search-intent-lane-map.json");
   const searchIntentApproval = readJson<SearchIntentApproval>("content/automation/search-intent-approval-packet.json");
   const searchIntentWaves = readJson<SearchIntentWaves>("content/automation/search-intent-wave-planner.json");
+  const searchQueryCoverage = readJson<SearchQueryCoverage>("content/automation/search-query-coverage.json");
   const deploymentCoverage = readJson<DeploymentCoverage>("content/automation/ai-deployment-coverage.json");
   const promptCoverage = readJson<PromptCoverage>("content/automation/industry-prompt-coverage.json");
   const projectStatus = readJson<ProjectStatus>("content/automation/project-status.json");
@@ -554,6 +575,18 @@ function main() {
         wave: item.wave,
       })),
     },
+    searchQueryCoverage: {
+      summary: searchQueryCoverage.summary,
+      topItems: searchQueryCoverage.items.slice(0, 12).map((item) => ({
+        file: item.file,
+        laneTitle: item.laneTitle,
+        primaryKeyword: item.primaryKeyword,
+        queryCount: item.queryCount,
+        readyForManualReview: item.readyForManualReview,
+        title: item.title,
+        wave: item.wave,
+      })),
+    },
     promptCoverage: {
       summary: promptCoverage.summary,
       topIndustries: promptCoverage.coverage.slice(0, 6).map((item) => ({
@@ -582,6 +615,7 @@ function main() {
       searchIntentLanes,
       searchIntentApproval,
       searchIntentWaves,
+      searchQueryCoverage,
     ),
   };
 
@@ -613,6 +647,7 @@ function buildNextActions(
   searchIntentLanes: SearchIntentLanes,
   searchIntentApproval: SearchIntentApproval,
   searchIntentWaves: SearchIntentWaves,
+  searchQueryCoverage: SearchQueryCoverage,
 ) {
   if (projectStatus.articles.publishableNow.length > 0) return ["Stop and inspect publishableNow before adding more review candidates."];
   if (!liveSearch.ok || liveSearch.failedChecks.length > 0) return ["Fix live search surface failures before any publishing action."];
@@ -645,6 +680,7 @@ function buildNextActions(
   if (searchIntentLanes.summary.lanesWithReadyDrafts !== searchIntentLanes.summary.lanes) return ["Regenerate search intent lane map and ensure every broad lane has ready draft candidates."];
   if (searchIntentApproval.summary.unsafeItems > 0) return ["Resolve search intent approval packet safety issues before manual review."];
   if (searchIntentWaves.summary.unsafeItems > 0) return ["Resolve search intent wave planner safety issues before manual review."];
+  if (searchQueryCoverage.summary.unsafeItems > 0) return ["Resolve search query coverage gaps before manual review."];
   if (
     reviewCoverage.summary.itemsMissingOfficialSources > 0 ||
     reviewCoverage.summary.itemsMissingFactCheckQueries > 0 ||
@@ -663,6 +699,7 @@ function buildNextActions(
     "Use docs/search-intent-lane-map.md to choose broad, high-search-intent lanes beyond basic web deployment.",
     "Use docs/search-intent-approval-packet.md as the concrete current-wave and next-gap approval queue.",
     "Use docs/search-intent-wave-planner.md as the continuous multi-wave review queue across prompt, Agent, RAG, and model deployment lanes.",
+    "Use docs/search-query-coverage.md to review likely user-search query variants for each planned wave item.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.",
     "Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.",
     "Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.",
@@ -821,6 +858,18 @@ function toMarkdown(payload: {
       focus: string;
       laneCount: number;
       readyItems: number;
+      wave: number;
+    }>;
+  };
+  searchQueryCoverage: {
+    summary: SearchQueryCoverage["summary"];
+    topItems: Array<{
+      file: string;
+      laneTitle: string;
+      primaryKeyword: string;
+      queryCount: number;
+      readyForManualReview: boolean;
+      title: string;
       wave: number;
     }>;
   };
@@ -1107,6 +1156,21 @@ function toMarkdown(payload: {
     "| --- | --- | --- | --- | --- |",
     ...payload.searchIntentWaves.waves.map((item) => (
       `| ${item.wave} | ${item.readyItems} | ${item.laneCount} | ${item.focus} | ${item.files.join("<br>")} |`
+    )),
+    "",
+    "## Search Query Coverage",
+    "",
+    `- Items: ${payload.searchQueryCoverage.summary.items}`,
+    `- Ready items: ${payload.searchQueryCoverage.summary.readyItems}`,
+    `- Unique files: ${payload.searchQueryCoverage.summary.uniqueFiles}`,
+    `- Unique lanes: ${payload.searchQueryCoverage.summary.uniqueLanes}`,
+    `- Unique queries: ${payload.searchQueryCoverage.summary.uniqueQueries}`,
+    `- Unsafe items: ${payload.searchQueryCoverage.summary.unsafeItems}`,
+    "",
+    "| Wave | Ready | Queries | Lane | Primary keyword | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- |",
+    ...payload.searchQueryCoverage.topItems.map((item) => (
+      `| ${item.wave} | ${item.readyForManualReview} | ${item.queryCount} | ${item.laneTitle} | ${item.primaryKeyword} | ${item.title} | ${item.file} |`
     )),
     "",
     "## Industry Prompt Coverage",

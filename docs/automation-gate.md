@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-06T14:21:14.381Z
+Generated at: 2026-06-06T14:29:15.871Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 61
-- Passed: 61
+- Checks: 63
+- Passed: 63
 - Failed: 0
 
 ## Checks
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=79, unsafeClaims=0, watchMentions=503 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=81, unsafeClaims=0, watchMentions=505 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, candidates=19 |
@@ -54,6 +54,8 @@ Overall: PASS
 | search intent approval packet has no unsafe items and includes review context | PASS | unsafe=0, currentReady=3, nextGap=6 |
 | search intent wave planner is read-only and continuous | PASS | waves=4, items=12, files=12, lanes=6 |
 | search intent wave planner keeps all items safe for manual review | PASS | unsafe=0, ready=12, planned=12 |
+| search query coverage is read-only and matches planned waves | PASS | items=12, waves=4, files=12, lanes=6 |
+| search query coverage has broad user-search variants | PASS | uniqueQueries=360, ready=12, unsafe=0 |
 | content cannibalization check generated warning report | PASS | conflicts=200, reviewBatchConflicts=0 |
 | content freshness check covers review items | PASS | highRisk=570, currentReviewItems=3, plannedReviewItems=9 |
 | review coverage report covers planned candidates | PASS | planned=9, items=9, missingCoverage=0 |

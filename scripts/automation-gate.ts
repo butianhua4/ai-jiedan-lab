@@ -106,6 +106,22 @@ async function main() {
     };
     waves?: Array<{ items?: Array<{ readyForHumanReview?: boolean; safeDraft?: boolean; sourceTargets?: unknown[]; riskChecks?: unknown[] }> }>;
   }>("content/automation/search-intent-wave-planner.json");
+  const searchQueryCoverage = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    items?: Array<{ queryCount?: number; queryFamilies?: Record<string, unknown[]>; readyForManualReview?: boolean }>;
+    summary: {
+      items: number;
+      minFamiliesPerItem: number;
+      minQueriesPerItem: number;
+      plannerItems: number;
+      plannerWaves: number;
+      readyItems: number;
+      unsafeItems: number;
+      uniqueFiles: number;
+      uniqueLanes: number;
+      uniqueQueries: number;
+    };
+  }>("content/automation/search-query-coverage.json");
   const cannibalization = readJson<{
     guardrails: { autoPublish: boolean };
     summary: { articleCount: number; conflicts: number; reviewBatchConflicts: number };
@@ -602,6 +618,35 @@ async function main() {
           ),
         ),
       detail: `unsafe=${searchIntentWaves.summary.unsafeItems}, ready=${searchIntentWaves.summary.readyItems}, planned=${searchIntentWaves.summary.plannedItems}`,
+    },
+    {
+      name: "search query coverage is read-only and matches planned waves",
+      ok:
+        searchQueryCoverage.guardrails.autoEditArticles === false &&
+        searchQueryCoverage.guardrails.autoMarkReview === false &&
+        searchQueryCoverage.guardrails.autoPublish === false &&
+        searchQueryCoverage.summary.items === searchIntentWaves.summary.plannedItems &&
+        searchQueryCoverage.summary.plannerItems === searchIntentWaves.summary.plannedItems &&
+        searchQueryCoverage.summary.plannerWaves === searchIntentWaves.summary.plannedWaves &&
+        searchQueryCoverage.summary.uniqueFiles === searchQueryCoverage.summary.items &&
+        searchQueryCoverage.summary.uniqueLanes >= searchIntentWaves.summary.uniqueLanes,
+      detail: `items=${searchQueryCoverage.summary.items}, waves=${searchQueryCoverage.summary.plannerWaves}, files=${searchQueryCoverage.summary.uniqueFiles}, lanes=${searchQueryCoverage.summary.uniqueLanes}`,
+    },
+    {
+      name: "search query coverage has broad user-search variants",
+      ok:
+        searchQueryCoverage.summary.unsafeItems === 0 &&
+        searchQueryCoverage.summary.readyItems === searchQueryCoverage.summary.items &&
+        searchQueryCoverage.summary.uniqueQueries >= searchQueryCoverage.summary.items * searchQueryCoverage.summary.minQueriesPerItem &&
+        Boolean(
+          searchQueryCoverage.items?.every(
+            (item) =>
+              item.readyForManualReview === true &&
+              (item.queryCount || 0) >= searchQueryCoverage.summary.minQueriesPerItem &&
+              Object.values(item.queryFamilies || {}).filter((queries) => queries.length > 0).length >= searchQueryCoverage.summary.minFamiliesPerItem,
+          ),
+        ),
+      detail: `uniqueQueries=${searchQueryCoverage.summary.uniqueQueries}, ready=${searchQueryCoverage.summary.readyItems}, unsafe=${searchQueryCoverage.summary.unsafeItems}`,
     },
     {
       name: "content cannibalization check generated warning report",

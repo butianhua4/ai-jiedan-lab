@@ -1,0 +1,821 @@
+# Search Query Coverage
+
+Generated at: 2026-06-06T14:28:47.663Z
+
+This report is read-only. It expands each planned review-wave article into user-search query variants for human review and SEO planning. It does not claim measured search volume.
+
+## Guardrails
+
+- Auto edit articles: false
+- Auto mark review: false
+- Auto publish: false
+- Stop before: Use the query list to guide human review and content expansion. Do not publish or mark review without explicit human approval.
+- Note: Read-only search-query coverage planner. Query variants are editorial review prompts, not measured search volume, ranking, click, or traffic claims.
+
+## Summary
+
+- items: 12
+- minFamiliesPerItem: 5
+- minQueriesPerItem: 10
+- plannerItems: 12
+- plannerWaves: 4
+- readyItems: 12
+- unsafeItems: 0
+- uniqueFiles: 12
+- uniqueLanes: 6
+- uniqueQueries: 360
+
+## Source Evidence
+
+- Note: Queries are derived from approved search-intent waves, primary keywords, lane intent seeds, review focus, and common how-to/template/comparison/troubleshooting modifiers.
+- Planner guardrails: {"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"note":"Read-only continuous wave planner for human review. It does not modify article status, noindex, review, or publishing state.","stopBefore":"Each wave still requires explicit human approval before mark:review --confirm-human or publish:articles --confirm."}
+
+## Wave 1: Current human approval packet
+
+- Items: 3
+- Query variants: 105
+
+| Ready | Queries | Lane | Primary keyword | Gaps | Title | File |
+| --- | --- | --- | --- | --- | --- | --- |
+| true | 35 | Cross-industry AI prompt templates and reusable prompt libraries | 全行业 AI 提示词模板 | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | 35 | Cross-industry AI prompt templates and reusable prompt libraries | 客服 AI 模型选型 | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 35 | AI Agent deployment, tool calling, and production workflow | AI Agent 部署 | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+
+### 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用
+
+- File: content/blog/industry-ai-prompts-template-library-2026.mdx
+- Lane: Cross-industry AI prompt templates and reusable prompt libraries
+- Primary keyword: 全行业 AI 提示词模板
+
+howTo:
+
+- 全行业 AI 提示词模板怎么做
+- 全行业 AI 提示词模板教程
+- 全行业 AI 提示词模板新手教程
+- 全行业 AI 提示词模板落地步骤
+
+deployment:
+
+- 全行业 AI 提示词模板部署
+- 全行业 AI 提示词模板工作流
+- 全行业 AI 提示词模板生产环境
+- AI 提示词库
+- ChatGPT 提示词模板
+- 行业提示词
+- 全行业 AI 提示词模板 industry taxonomy
+- 全行业 AI 提示词模板 input schema
+- 全行业 AI 提示词模板 output format
+- 全行业 AI 提示词模板 review checklist
+- 全行业 AI 提示词模板 reuse rules
+
+template:
+
+- 全行业 AI 提示词模板模板
+- 全行业 AI 提示词模板清单
+- 全行业 AI 提示词模板SOP
+- 全行业 AI 提示词模板方案
+
+comparison:
+
+- 全行业 AI 提示词模板对比
+- 全行业 AI 提示词模板怎么选
+- 提示词模板和工作流区别
+- 行业提示词和通用提示词区别
+
+risk:
+
+- 全行业 AI 提示词模板避坑
+- 全行业 AI 提示词模板风险
+- 全行业 AI 提示词模板安全
+- 全行业 AI 提示词模板人工审核
+
+costOps:
+
+- 全行业 AI 提示词模板成本
+- 全行业 AI 提示词模板报价
+- 全行业 AI 提示词模板维护
+- 全行业 AI 提示词模板上线检查
+
+intentSeeds:
+
+- AI 提示词大全
+- ChatGPT 提示词模板
+- 全行业 AI 提示词
+- AI prompt library
+
+### 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
+
+- File: content/blog/ai-model-selection-customer-service-guide.mdx
+- Lane: Cross-industry AI prompt templates and reusable prompt libraries
+- Primary keyword: 客服 AI 模型选型
+
+howTo:
+
+- 客服 AI 模型选型怎么做
+- 客服 AI 模型选型教程
+- 客服 AI 模型选型新手教程
+- 客服 AI 模型选型落地步骤
+
+deployment:
+
+- 客服 AI 模型选型部署
+- 客服 AI 模型选型工作流
+- 客服 AI 模型选型生产环境
+- AI 提示词库
+- ChatGPT 提示词模板
+- 行业提示词
+- 客服 AI 模型选型 industry taxonomy
+- 客服 AI 模型选型 input schema
+- 客服 AI 模型选型 output format
+- 客服 AI 模型选型 review checklist
+- 客服 AI 模型选型 reuse rules
+
+template:
+
+- 客服 AI 模型选型模板
+- 客服 AI 模型选型清单
+- 客服 AI 模型选型SOP
+- 客服 AI 模型选型方案
+
+comparison:
+
+- 客服 AI 模型选型对比
+- 客服 AI 模型选型怎么选
+- 提示词模板和工作流区别
+- 行业提示词和通用提示词区别
+
+risk:
+
+- 客服 AI 模型选型避坑
+- 客服 AI 模型选型风险
+- 客服 AI 模型选型安全
+- 客服 AI 模型选型人工审核
+
+costOps:
+
+- 客服 AI 模型选型成本
+- 客服 AI 模型选型报价
+- 客服 AI 模型选型维护
+- 客服 AI 模型选型上线检查
+
+intentSeeds:
+
+- AI 提示词大全
+- ChatGPT 提示词模板
+- 全行业 AI 提示词
+- AI prompt library
+
+### AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查
+
+- File: content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
+- Lane: AI Agent deployment, tool calling, and production workflow
+- Primary keyword: AI Agent 部署
+
+howTo:
+
+- AI Agent 部署怎么做
+- AI Agent 部署教程
+- AI Agent 部署新手教程
+- AI Agent 部署落地步骤
+
+deployment:
+
+- AI Agent 部署部署
+- AI Agent 部署工作流
+- AI Agent 部署生产环境
+- AI Agent 部署
+- Agent 工具调用
+- Agent 上线检查
+- AI Agent 部署 tool calling
+- AI Agent 部署 multi-step execution
+- AI Agent 部署 human approval
+- AI Agent 部署 observability
+- AI Agent 部署 permissions
+
+template:
+
+- AI Agent 部署模板
+- AI Agent 部署清单
+- AI Agent 部署SOP
+- AI Agent 部署方案
+
+comparison:
+
+- AI Agent 部署对比
+- AI Agent 部署怎么选
+- AI Agent 和 Chatbot 区别
+- Vercel AI SDK Agent vs OpenAI Agents SDK
+
+risk:
+
+- AI Agent 部署避坑
+- AI Agent 部署风险
+- AI Agent 部署安全
+- AI Agent 部署人工审核
+
+costOps:
+
+- AI Agent 部署成本
+- AI Agent 部署报价
+- AI Agent 部署维护
+- AI Agent 部署上线检查
+
+intentSeeds:
+
+- AI Agent 部署
+- AI Agent 工具调用
+- Vercel AI SDK Agent
+- OpenAI Agents SDK
+
+## Wave 2: Cross-industry AI prompt templates and reusable prompt libraries + Business department AI workflows across sales, support, ops, HR, finance, legal, and education
+
+- Items: 3
+- Query variants: 106
+
+| Ready | Queries | Lane | Primary keyword | Gaps | Title | File |
+| --- | --- | --- | --- | --- | --- | --- |
+| true | 35 | Cross-industry AI prompt templates and reusable prompt libraries | 团队 AI 提示词库 | none | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
+| true | 35 | Cross-industry AI prompt templates and reusable prompt libraries | 数据分析 AI 提示词 | none | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
+| true | 36 | Business department AI workflows across sales, support, ops, HR, finance, legal, and education | Dify 工作流错误处理 | none | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+
+### 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用
+
+- File: content/blog/ai-prompt-library-team-knowledge-base-guide.mdx
+- Lane: Cross-industry AI prompt templates and reusable prompt libraries
+- Primary keyword: 团队 AI 提示词库
+
+howTo:
+
+- 团队 AI 提示词库怎么做
+- 团队 AI 提示词库教程
+- 团队 AI 提示词库新手教程
+- 团队 AI 提示词库落地步骤
+
+deployment:
+
+- 团队 AI 提示词库部署
+- 团队 AI 提示词库工作流
+- 团队 AI 提示词库生产环境
+- AI 提示词库
+- ChatGPT 提示词模板
+- 行业提示词
+- 团队 AI 提示词库 industry taxonomy
+- 团队 AI 提示词库 input schema
+- 团队 AI 提示词库 output format
+- 团队 AI 提示词库 review checklist
+- 团队 AI 提示词库 reuse rules
+
+template:
+
+- 团队 AI 提示词库模板
+- 团队 AI 提示词库清单
+- 团队 AI 提示词库SOP
+- 团队 AI 提示词库方案
+
+comparison:
+
+- 团队 AI 提示词库对比
+- 团队 AI 提示词库怎么选
+- 提示词模板和工作流区别
+- 行业提示词和通用提示词区别
+
+risk:
+
+- 团队 AI 提示词库避坑
+- 团队 AI 提示词库风险
+- 团队 AI 提示词库安全
+- 团队 AI 提示词库人工审核
+
+costOps:
+
+- 团队 AI 提示词库成本
+- 团队 AI 提示词库报价
+- 团队 AI 提示词库维护
+- 团队 AI 提示词库上线检查
+
+intentSeeds:
+
+- AI 提示词大全
+- ChatGPT 提示词模板
+- 全行业 AI 提示词
+- AI prompt library
+
+### 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要
+
+- File: content/blog/data-analysis-ai-prompts-guide.mdx
+- Lane: Cross-industry AI prompt templates and reusable prompt libraries
+- Primary keyword: 数据分析 AI 提示词
+
+howTo:
+
+- 数据分析 AI 提示词怎么做
+- 数据分析 AI 提示词教程
+- 数据分析 AI 提示词新手教程
+- 数据分析 AI 提示词落地步骤
+
+deployment:
+
+- 数据分析 AI 提示词部署
+- 数据分析 AI 提示词工作流
+- 数据分析 AI 提示词生产环境
+- AI 提示词库
+- ChatGPT 提示词模板
+- 行业提示词
+- 数据分析 AI 提示词 industry taxonomy
+- 数据分析 AI 提示词 input schema
+- 数据分析 AI 提示词 output format
+- 数据分析 AI 提示词 review checklist
+- 数据分析 AI 提示词 reuse rules
+
+template:
+
+- 数据分析 AI 提示词模板
+- 数据分析 AI 提示词清单
+- 数据分析 AI 提示词SOP
+- 数据分析 AI 提示词方案
+
+comparison:
+
+- 数据分析 AI 提示词对比
+- 数据分析 AI 提示词怎么选
+- 提示词模板和工作流区别
+- 行业提示词和通用提示词区别
+
+risk:
+
+- 数据分析 AI 提示词避坑
+- 数据分析 AI 提示词风险
+- 数据分析 AI 提示词安全
+- 数据分析 AI 提示词人工审核
+
+costOps:
+
+- 数据分析 AI 提示词成本
+- 数据分析 AI 提示词报价
+- 数据分析 AI 提示词维护
+- 数据分析 AI 提示词上线检查
+
+intentSeeds:
+
+- AI 提示词大全
+- ChatGPT 提示词模板
+- 全行业 AI 提示词
+- AI prompt library
+
+### Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底
+
+- File: content/blog/dify-workflow-error-handling-guide.mdx
+- Lane: Business department AI workflows across sales, support, ops, HR, finance, legal, and education
+- Primary keyword: Dify 工作流错误处理
+
+howTo:
+
+- Dify 工作流错误处理怎么做
+- Dify 工作流错误处理教程
+- Dify 工作流错误处理新手教程
+- Dify 工作流错误处理落地步骤
+
+deployment:
+
+- Dify 工作流错误处理部署
+- Dify 工作流错误处理工作流
+- Dify 工作流错误处理生产环境
+- 企业 AI 工作流
+- 部门 AI SOP
+- 业务 AI 自动化
+- Dify 工作流错误处理 department workflows
+- Dify 工作流错误处理 SOP
+- Dify 工作流错误处理 review owner
+- Dify 工作流错误处理 handoff
+- Dify 工作流错误处理 template library
+
+template:
+
+- Dify 工作流错误处理模板
+- Dify 工作流错误处理清单
+- Dify 工作流错误处理SOP
+- Dify 工作流错误处理方案
+
+comparison:
+
+- Dify 工作流错误处理对比
+- Dify 工作流错误处理怎么选
+- 销售 AI 和客服 AI 工作流区别
+- AI 工作流和自动化脚本区别
+
+risk:
+
+- Dify 工作流错误处理避坑
+- Dify 工作流错误处理风险
+- Dify 工作流错误处理安全
+- Dify 工作流错误处理人工审核
+
+costOps:
+
+- Dify 工作流错误处理成本
+- Dify 工作流错误处理报价
+- Dify 工作流错误处理维护
+- Dify 工作流错误处理上线检查
+
+intentSeeds:
+
+- 企业 AI 应用场景
+- AI 工作流模板
+- 销售 AI 提示词
+- 客服 AI 提示词
+- 运营 AI 提示词
+
+## Wave 3: Business department AI workflows across sales, support, ops, HR, finance, legal, and education + AI Agent deployment, tool calling, and production workflow
+
+- Items: 3
+- Query variants: 106
+
+| Ready | Queries | Lane | Primary keyword | Gaps | Title | File |
+| --- | --- | --- | --- | --- | --- | --- |
+| true | 36 | Business department AI workflows across sales, support, ops, HR, finance, legal, and education | Open WebUI Functions Pipelines | none | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| true | 35 | AI Agent deployment, tool calling, and production workflow | AI Agent 记忆 | none | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| true | 35 | AI Agent deployment, tool calling, and production workflow | AI 自动化项目报价 | none | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+
+### Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流
+
+- File: content/blog/open-webui-functions-pipelines-deployment-guide.mdx
+- Lane: Business department AI workflows across sales, support, ops, HR, finance, legal, and education
+- Primary keyword: Open WebUI Functions Pipelines
+
+howTo:
+
+- Open WebUI Functions Pipelines怎么做
+- Open WebUI Functions Pipelines教程
+- Open WebUI Functions Pipelines新手教程
+- Open WebUI Functions Pipelines落地步骤
+
+deployment:
+
+- Open WebUI Functions Pipelines部署
+- Open WebUI Functions Pipelines工作流
+- Open WebUI Functions Pipelines生产环境
+- 企业 AI 工作流
+- 部门 AI SOP
+- 业务 AI 自动化
+- Open WebUI Functions Pipelines department workflows
+- Open WebUI Functions Pipelines SOP
+- Open WebUI Functions Pipelines review owner
+- Open WebUI Functions Pipelines handoff
+- Open WebUI Functions Pipelines template library
+
+template:
+
+- Open WebUI Functions Pipelines模板
+- Open WebUI Functions Pipelines清单
+- Open WebUI Functions PipelinesSOP
+- Open WebUI Functions Pipelines方案
+
+comparison:
+
+- Open WebUI Functions Pipelines对比
+- Open WebUI Functions Pipelines怎么选
+- 销售 AI 和客服 AI 工作流区别
+- AI 工作流和自动化脚本区别
+
+risk:
+
+- Open WebUI Functions Pipelines避坑
+- Open WebUI Functions Pipelines风险
+- Open WebUI Functions Pipelines安全
+- Open WebUI Functions Pipelines人工审核
+
+costOps:
+
+- Open WebUI Functions Pipelines成本
+- Open WebUI Functions Pipelines报价
+- Open WebUI Functions Pipelines维护
+- Open WebUI Functions Pipelines上线检查
+
+intentSeeds:
+
+- 企业 AI 应用场景
+- AI 工作流模板
+- 销售 AI 提示词
+- 客服 AI 提示词
+- 运营 AI 提示词
+
+### AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界
+
+- File: content/blog/ai-agent-memory-rag-design-guide.mdx
+- Lane: AI Agent deployment, tool calling, and production workflow
+- Primary keyword: AI Agent 记忆
+
+howTo:
+
+- AI Agent 记忆怎么做
+- AI Agent 记忆教程
+- AI Agent 记忆新手教程
+- AI Agent 记忆落地步骤
+
+deployment:
+
+- AI Agent 记忆部署
+- AI Agent 记忆工作流
+- AI Agent 记忆生产环境
+- AI Agent 部署
+- Agent 工具调用
+- Agent 上线检查
+- AI Agent 记忆 tool calling
+- AI Agent 记忆 multi-step execution
+- AI Agent 记忆 human approval
+- AI Agent 记忆 observability
+- AI Agent 记忆 permissions
+
+template:
+
+- AI Agent 记忆模板
+- AI Agent 记忆清单
+- AI Agent 记忆SOP
+- AI Agent 记忆方案
+
+comparison:
+
+- AI Agent 记忆对比
+- AI Agent 记忆怎么选
+- AI Agent 和 Chatbot 区别
+- Vercel AI SDK Agent vs OpenAI Agents SDK
+
+risk:
+
+- AI Agent 记忆避坑
+- AI Agent 记忆风险
+- AI Agent 记忆安全
+- AI Agent 记忆人工审核
+
+costOps:
+
+- AI Agent 记忆成本
+- AI Agent 记忆报价
+- AI Agent 记忆维护
+- AI Agent 记忆上线检查
+
+intentSeeds:
+
+- AI Agent 部署
+- AI Agent 工具调用
+- Vercel AI SDK Agent
+- OpenAI Agents SDK
+
+### AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围
+
+- File: content/blog/ai-automation-project-pricing-scope-guide.mdx
+- Lane: AI Agent deployment, tool calling, and production workflow
+- Primary keyword: AI 自动化项目报价
+
+howTo:
+
+- AI 自动化项目报价怎么做
+- AI 自动化项目报价教程
+- AI 自动化项目报价新手教程
+- AI 自动化项目报价落地步骤
+
+deployment:
+
+- AI 自动化项目报价部署
+- AI 自动化项目报价工作流
+- AI 自动化项目报价生产环境
+- AI Agent 部署
+- Agent 工具调用
+- Agent 上线检查
+- AI 自动化项目报价 tool calling
+- AI 自动化项目报价 multi-step execution
+- AI 自动化项目报价 human approval
+- AI 自动化项目报价 observability
+- AI 自动化项目报价 permissions
+
+template:
+
+- AI 自动化项目报价模板
+- AI 自动化项目报价清单
+- AI 自动化项目报价SOP
+- AI 自动化项目报价方案
+
+comparison:
+
+- AI 自动化项目报价对比
+- AI 自动化项目报价怎么选
+- AI Agent 和 Chatbot 区别
+- Vercel AI SDK Agent vs OpenAI Agents SDK
+
+risk:
+
+- AI 自动化项目报价避坑
+- AI 自动化项目报价风险
+- AI 自动化项目报价安全
+- AI 自动化项目报价人工审核
+
+costOps:
+
+- AI 自动化项目报价成本
+- AI 自动化项目报价报价
+- AI 自动化项目报价维护
+- AI 自动化项目报价上线检查
+
+intentSeeds:
+
+- AI Agent 部署
+- AI Agent 工具调用
+- Vercel AI SDK Agent
+- OpenAI Agents SDK
+
+## Wave 4: RAG, knowledge base, and Agent memory + Large model deployment, LLM serving, and GPU infrastructure + Dify, n8n, no-code AI automation, and workflow deployment
+
+- Items: 3
+- Query variants: 105
+
+| Ready | Queries | Lane | Primary keyword | Gaps | Title | File |
+| --- | --- | --- | --- | --- | --- | --- |
+| true | 35 | RAG, knowledge base, and Agent memory | 客服 AI 提示词 | none | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
+| true | 35 | Large model deployment, LLM serving, and GPU infrastructure | 大模型部署 | none | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| true | 35 | Dify, n8n, no-code AI automation, and workflow deployment | Dify Workflow 和 Agent 区别 | none | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
+
+### 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断
+
+- File: content/blog/customer-service-ai-prompts-guide.mdx
+- Lane: RAG, knowledge base, and Agent memory
+- Primary keyword: 客服 AI 提示词
+
+howTo:
+
+- 客服 AI 提示词怎么做
+- 客服 AI 提示词教程
+- 客服 AI 提示词新手教程
+- 客服 AI 提示词落地步骤
+
+deployment:
+
+- 客服 AI 提示词部署
+- 客服 AI 提示词工作流
+- 客服 AI 提示词生产环境
+- RAG 知识库搭建
+- Agent 记忆设计
+- 向量数据库检索
+- 客服 AI 提示词 document cleanup
+- 客服 AI 提示词 chunking
+- 客服 AI 提示词 embedding
+- 客服 AI 提示词 source citation
+- 客服 AI 提示词 memory policy
+
+template:
+
+- 客服 AI 提示词模板
+- 客服 AI 提示词清单
+- 客服 AI 提示词SOP
+- 客服 AI 提示词方案
+
+comparison:
+
+- 客服 AI 提示词对比
+- 客服 AI 提示词怎么选
+- RAG 和微调区别
+- 知识库和长期记忆区别
+
+risk:
+
+- 客服 AI 提示词避坑
+- 客服 AI 提示词风险
+- 客服 AI 提示词安全
+- 客服 AI 提示词人工审核
+
+costOps:
+
+- 客服 AI 提示词成本
+- 客服 AI 提示词报价
+- 客服 AI 提示词维护
+- 客服 AI 提示词上线检查
+
+intentSeeds:
+
+- RAG 知识库搭建
+- AI Agent 记忆
+- 向量数据库教程
+- 企业知识库 AI
+
+### 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查
+
+- File: content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx
+- Lane: Large model deployment, LLM serving, and GPU infrastructure
+- Primary keyword: 大模型部署
+
+howTo:
+
+- 大模型部署怎么做
+- 大模型部署教程
+- 大模型部署新手教程
+- 大模型部署落地步骤
+
+deployment:
+
+- 大模型部署部署
+- 大模型部署工作流
+- 大模型部署生产环境
+- 大模型部署
+- LLM serving
+- GPU 部署
+- 大模型部署 GPU sizing
+- 大模型部署 serving API
+- 大模型部署 quantization
+- 大模型部署 autoscaling
+- 大模型部署 cost control
+
+template:
+
+- 大模型部署模板
+- 大模型部署清单
+- 大模型部署SOP
+- 大模型部署方案
+
+comparison:
+
+- 大模型部署对比
+- 大模型部署怎么选
+- vLLM 和 TGI 区别
+- RunPod 和 Modal 部署对比
+
+risk:
+
+- 大模型部署避坑
+- 大模型部署风险
+- 大模型部署安全
+- 大模型部署人工审核
+
+costOps:
+
+- 大模型部署成本
+- 大模型部署报价
+- 大模型部署维护
+- 大模型部署上线检查
+
+intentSeeds:
+
+- 大模型部署教程
+- LLM deployment
+- vLLM 部署
+- Hugging Face TGI 部署
+
+### Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核
+
+- File: content/blog/dify-workflow-vs-agent-guide.mdx
+- Lane: Dify, n8n, no-code AI automation, and workflow deployment
+- Primary keyword: Dify Workflow 和 Agent 区别
+
+howTo:
+
+- Dify Workflow 和 Agent 区别怎么做
+- Dify Workflow 和 Agent 区别教程
+- Dify Workflow 和 Agent 区别新手教程
+- Dify Workflow 和 Agent 区别落地步骤
+
+deployment:
+
+- Dify Workflow 和 Agent 区别部署
+- Dify Workflow 和 Agent 区别工作流
+- Dify Workflow 和 Agent 区别生产环境
+- Dify 工作流
+- n8n AI Agent
+- Webhook 自动化
+- Dify Workflow 和 Agent 区别 self-hosting
+- Dify Workflow 和 Agent 区别 webhook
+- Dify Workflow 和 Agent 区别 auth
+- Dify Workflow 和 Agent 区别 retry
+- Dify Workflow 和 Agent 区别 human fallback
+
+template:
+
+- Dify Workflow 和 Agent 区别模板
+- Dify Workflow 和 Agent 区别清单
+- Dify Workflow 和 Agent 区别SOP
+- Dify Workflow 和 Agent 区别方案
+
+comparison:
+
+- Dify Workflow 和 Agent 区别对比
+- Dify Workflow 和 Agent 区别怎么选
+- Dify 和 n8n 区别
+- Dify 和 Flowise 对比
+
+risk:
+
+- Dify Workflow 和 Agent 区别避坑
+- Dify Workflow 和 Agent 区别风险
+- Dify Workflow 和 Agent 区别安全
+- Dify Workflow 和 Agent 区别人工审核
+
+costOps:
+
+- Dify Workflow 和 Agent 区别成本
+- Dify Workflow 和 Agent 区别报价
+- Dify Workflow 和 Agent 区别维护
+- Dify Workflow 和 Agent 区别上线检查
+
+intentSeeds:
+
+- Dify 部署教程
+- n8n AI Agent
+- AI 自动化工作流
+- Webhook AI Agent

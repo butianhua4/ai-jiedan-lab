@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T14:21:13.770Z",
+  "generatedAt": "2026-06-06T14:29:15.077Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -815,10 +815,10 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 79,
+    "filesScanned": 81,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 503
+    "watchMentions": 505
   },
   "contentIntegrity": {
     "allIssueItems": 0,
@@ -1324,6 +1324,130 @@
       }
     ]
   },
+  "searchQueryCoverage": {
+    "summary": {
+      "items": 12,
+      "minFamiliesPerItem": 5,
+      "minQueriesPerItem": 10,
+      "plannerItems": 12,
+      "plannerWaves": 4,
+      "readyItems": 12,
+      "unsafeItems": 0,
+      "uniqueFiles": 12,
+      "uniqueLanes": 6,
+      "uniqueQueries": 360
+    },
+    "topItems": [
+      {
+        "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "laneTitle": "Cross-industry AI prompt templates and reusable prompt libraries",
+        "primaryKeyword": "全行业 AI 提示词模板",
+        "queryCount": 35,
+        "readyForManualReview": true,
+        "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+        "wave": 1
+      },
+      {
+        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "laneTitle": "Cross-industry AI prompt templates and reusable prompt libraries",
+        "primaryKeyword": "客服 AI 模型选型",
+        "queryCount": 35,
+        "readyForManualReview": true,
+        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+        "wave": 1
+      },
+      {
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "laneTitle": "AI Agent deployment, tool calling, and production workflow",
+        "primaryKeyword": "AI Agent 部署",
+        "queryCount": 35,
+        "readyForManualReview": true,
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "wave": 1
+      },
+      {
+        "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+        "laneTitle": "Cross-industry AI prompt templates and reusable prompt libraries",
+        "primaryKeyword": "团队 AI 提示词库",
+        "queryCount": 35,
+        "readyForManualReview": true,
+        "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
+        "wave": 2
+      },
+      {
+        "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
+        "laneTitle": "Cross-industry AI prompt templates and reusable prompt libraries",
+        "primaryKeyword": "数据分析 AI 提示词",
+        "queryCount": 35,
+        "readyForManualReview": true,
+        "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
+        "wave": 2
+      },
+      {
+        "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+        "laneTitle": "Business department AI workflows across sales, support, ops, HR, finance, legal, and education",
+        "primaryKeyword": "Dify 工作流错误处理",
+        "queryCount": 36,
+        "readyForManualReview": true,
+        "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+        "wave": 2
+      },
+      {
+        "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+        "laneTitle": "Business department AI workflows across sales, support, ops, HR, finance, legal, and education",
+        "primaryKeyword": "Open WebUI Functions Pipelines",
+        "queryCount": 36,
+        "readyForManualReview": true,
+        "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+        "wave": 3
+      },
+      {
+        "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+        "laneTitle": "AI Agent deployment, tool calling, and production workflow",
+        "primaryKeyword": "AI Agent 记忆",
+        "queryCount": 35,
+        "readyForManualReview": true,
+        "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+        "wave": 3
+      },
+      {
+        "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "laneTitle": "AI Agent deployment, tool calling, and production workflow",
+        "primaryKeyword": "AI 自动化项目报价",
+        "queryCount": 35,
+        "readyForManualReview": true,
+        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+        "wave": 3
+      },
+      {
+        "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+        "laneTitle": "RAG, knowledge base, and Agent memory",
+        "primaryKeyword": "客服 AI 提示词",
+        "queryCount": 35,
+        "readyForManualReview": true,
+        "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
+        "wave": 4
+      },
+      {
+        "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+        "laneTitle": "Large model deployment, LLM serving, and GPU infrastructure",
+        "primaryKeyword": "大模型部署",
+        "queryCount": 35,
+        "readyForManualReview": true,
+        "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+        "wave": 4
+      },
+      {
+        "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+        "laneTitle": "Dify, n8n, no-code AI automation, and workflow deployment",
+        "primaryKeyword": "Dify Workflow 和 Agent 区别",
+        "queryCount": 35,
+        "readyForManualReview": true,
+        "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+        "wave": 4
+      }
+    ]
+  },
   "promptCoverage": {
     "summary": {
       "currentPackPromptItems": 1,
@@ -1388,6 +1512,7 @@
     "Use docs/search-intent-lane-map.md to choose broad, high-search-intent lanes beyond basic web deployment.",
     "Use docs/search-intent-approval-packet.md as the concrete current-wave and next-gap approval queue.",
     "Use docs/search-intent-wave-planner.md as the continuous multi-wave review queue across prompt, Agent, RAG, and model deployment lanes.",
+    "Use docs/search-query-coverage.md to review likely user-search query variants for each planned wave item.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.",
     "Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.",
     "Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.",

@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T14:21:14.877Z
+Generated at: 2026-06-06T14:29:16.405Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -192,8 +192,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 79
-- Traffic claim watch mentions: 503
+- Traffic claim files scanned: 81
+- Traffic claim watch mentions: 505
 
 ## Preflight
 
@@ -301,6 +301,30 @@ Next review files:
 | 2 | 3 | 2 | Cross-industry AI prompt templates and reusable prompt libraries + Business department AI workflows across sales, support, ops, HR, finance, legal, and education | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx |
 | 3 | 3 | 2 | Business department AI workflows across sales, support, ops, HR, finance, legal, and education + AI Agent deployment, tool calling, and production workflow | content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | 4 | 3 | 3 | RAG, knowledge base, and Agent memory + Large model deployment, LLM serving, and GPU infrastructure + Dify, n8n, no-code AI automation, and workflow deployment | content/blog/customer-service-ai-prompts-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx |
+
+## Search Query Coverage
+
+- Items: 12
+- Ready items: 12
+- Unique files: 12
+- Unique lanes: 6
+- Unique queries: 360
+- Unsafe items: 0
+
+| Wave | Ready | Queries | Lane | Primary keyword | Title | File |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | true | 35 | Cross-industry AI prompt templates and reusable prompt libraries | 全行业 AI 提示词模板 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| 1 | true | 35 | Cross-industry AI prompt templates and reusable prompt libraries | 客服 AI 模型选型 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 1 | true | 35 | AI Agent deployment, tool calling, and production workflow | AI Agent 部署 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 2 | true | 35 | Cross-industry AI prompt templates and reusable prompt libraries | 团队 AI 提示词库 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
+| 2 | true | 35 | Cross-industry AI prompt templates and reusable prompt libraries | 数据分析 AI 提示词 | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
+| 2 | true | 36 | Business department AI workflows across sales, support, ops, HR, finance, legal, and education | Dify 工作流错误处理 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| 3 | true | 36 | Business department AI workflows across sales, support, ops, HR, finance, legal, and education | Open WebUI Functions Pipelines | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| 3 | true | 35 | AI Agent deployment, tool calling, and production workflow | AI Agent 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| 3 | true | 35 | AI Agent deployment, tool calling, and production workflow | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 4 | true | 35 | RAG, knowledge base, and Agent memory | 客服 AI 提示词 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
+| 4 | true | 35 | Large model deployment, LLM serving, and GPU infrastructure | 大模型部署 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| 4 | true | 35 | Dify, n8n, no-code AI automation, and workflow deployment | Dify Workflow 和 Agent 区别 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
 
 ## Industry Prompt Coverage
 

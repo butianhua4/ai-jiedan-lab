@@ -323,6 +323,26 @@ type SearchIntentWaves = {
   }>;
 };
 
+type SearchQueryCoverage = {
+  items: Array<{
+    file: string;
+    laneTitle: string;
+    primaryKeyword: string;
+    queryCount: number;
+    readyForManualReview: boolean;
+    title: string;
+    wave: number;
+  }>;
+  summary: {
+    items: number;
+    readyItems: number;
+    unsafeItems: number;
+    uniqueFiles: number;
+    uniqueLanes: number;
+    uniqueQueries: number;
+  };
+};
+
 const reports = {
   cannibalization: readJson<{ summary: { conflicts: number; reviewBatchConflicts: number } }>("content/automation/content-cannibalization.json"),
   freshness: readJson<{ summary: { currentReviewItems: number; highRisk: number; mediumRisk: number; plannedReviewItems: number } }>(
@@ -369,6 +389,7 @@ const reports = {
   searchIntentLanes: readJson<SearchIntentLanes>("content/automation/search-intent-lane-map.json"),
   searchIntentApproval: readJson<SearchIntentApproval>("content/automation/search-intent-approval-packet.json"),
   searchIntentWaves: readJson<SearchIntentWaves>("content/automation/search-intent-wave-planner.json"),
+  searchQueryCoverage: readJson<SearchQueryCoverage>("content/automation/search-query-coverage.json"),
   review: readJson<{ counts: { candidates: number; returned: number; rejected: Record<string, number> }; recommendedToday: ReviewCandidate[] }>(
     "content/automation/review-candidates.json",
   ),
@@ -530,6 +551,15 @@ const payload = {
     unsafeItems: reports.searchIntentWaves.data?.summary.unsafeItems ?? null,
     waves: reports.searchIntentWaves.data?.waves.slice(0, 4) ?? [],
   },
+  searchQueryCoverage: {
+    items: reports.searchQueryCoverage.data?.summary.items ?? null,
+    readyItems: reports.searchQueryCoverage.data?.summary.readyItems ?? null,
+    top: reports.searchQueryCoverage.data?.items.slice(0, 12) ?? [],
+    unsafeItems: reports.searchQueryCoverage.data?.summary.unsafeItems ?? null,
+    uniqueFiles: reports.searchQueryCoverage.data?.summary.uniqueFiles ?? null,
+    uniqueLanes: reports.searchQueryCoverage.data?.summary.uniqueLanes ?? null,
+    uniqueQueries: reports.searchQueryCoverage.data?.summary.uniqueQueries ?? null,
+  },
   promptCoverage: {
     industries: reports.promptCoverage.data?.summary.industries ?? null,
     industriesWithReadyCandidates: reports.promptCoverage.data?.summary.industriesWithReadyCandidates ?? null,
@@ -628,6 +658,9 @@ function buildNextActions() {
   }
   if (!reports.searchIntentWaves.data || reports.searchIntentWaves.data.summary.unsafeItems > 0) {
     return ["Open docs/search-intent-wave-planner.md and resolve continuous wave safety issues before manual review."];
+  }
+  if (!reports.searchQueryCoverage.data || reports.searchQueryCoverage.data.summary.unsafeItems > 0) {
+    return ["Open docs/search-query-coverage.md and resolve search-query coverage gaps before manual review."];
   }
   if (!reports.reviewCoverage.data || reports.reviewCoverage.data.summary.missingCoverage > 0) {
     return ["Open docs/review-coverage-report.md and regenerate coverage for all planned review candidates."];
@@ -955,6 +988,21 @@ function toMarkdown(data: typeof payload) {
     "| --- | --- | --- | --- | --- |",
     ...data.searchIntentWaves.waves.map((item) => (
       `| ${item.wave} | ${item.readyItems} | ${item.laneCount} | ${item.focus} | ${item.files.join("<br>")} |`
+    )),
+    "",
+    "## Search Query Coverage",
+    "",
+    `- Items: ${data.searchQueryCoverage.items}`,
+    `- Ready items: ${data.searchQueryCoverage.readyItems}`,
+    `- Unique files: ${data.searchQueryCoverage.uniqueFiles}`,
+    `- Unique lanes: ${data.searchQueryCoverage.uniqueLanes}`,
+    `- Unique queries: ${data.searchQueryCoverage.uniqueQueries}`,
+    `- Unsafe items: ${data.searchQueryCoverage.unsafeItems}`,
+    "",
+    "| Wave | Ready | Queries | Lane | Primary keyword | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- |",
+    ...data.searchQueryCoverage.top.map((item) => (
+      `| ${item.wave} | ${item.readyForManualReview} | ${item.queryCount} | ${item.laneTitle} | ${item.primaryKeyword} | ${item.title} | ${item.file} |`
     )),
     "",
     "## Industry Prompt Coverage",
