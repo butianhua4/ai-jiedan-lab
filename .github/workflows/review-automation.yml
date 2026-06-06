@@ -18,31 +18,11 @@ jobs:
 
       - run: npm install
 
-      - name: Check draft guardrail cleanup
-        run: npm run automation:sanitize-drafts -- --dry-run
-
-      - name: Generate review queue
-        run: npm run automation:review -- --limit=25
-
-      - name: Generate publish readiness pack
-        run: npm run automation:publish-pack -- --limit=3
-
-      - name: Generate project status
-        run: npm run --silent project:status > content/automation/project-status.json
-
-      - name: Run SEO safety check
-        run: npm run --silent seo:check > content/automation/seo-check.json
-
-      - name: Generate SEO opportunity map
-        run: npm run seo:opportunities
-
-      - name: Run searchability check
-        run: npm run --silent searchability:check > content/automation/searchability-check.json
-
-      - name: Run automation gate
-        run: npm run automation:gate
+      - name: Run project automation
+        run: npm run automation:all
 
       - name: Upload project automation reports
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: project-automation
@@ -55,6 +35,7 @@ jobs:
             content/automation/seo-check.json
             content/automation/seo-opportunity-map.json
             content/automation/searchability-check.json
+            content/automation/automation-run-summary.json
             docs/review-automation.md
             docs/automation-gate.md
             docs/publish-readiness-pack.md
