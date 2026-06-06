@@ -1,6 +1,6 @@
 # Manual Review Workbench
 
-Generated at: 2026-06-06T13:38:38.259Z
+Generated at: 2026-06-06T13:50:26.710Z
 
 This workbench is read-only. It does not publish articles or mark drafts for review.
 
@@ -192,7 +192,7 @@ Next review files:
 - Search Console verification evidence: false
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 71
+- Traffic claim files scanned: 73
 - Traffic claim watch mentions: 387
 
 ## Content Integrity
@@ -232,6 +232,21 @@ Next review files:
 | 47 | 69 | none | none | ai-agent-deployment-vercel-ai-sdk-guide | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 29 | 52 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-model-selection-customer-service-guide | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 37 | 67 | none | none | industry-ai-prompts-template-library-2026 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+
+## Structured Data Readiness
+
+- Scoped items: 34
+- JSON-LD preview items: 34
+- Blocking items: 0
+- Warning items: 7
+- Wave items: 3
+- Wave items with blocking issues: 0
+
+| Date | Updated | Tags | Type | Difficulty | Issues | Warnings | Title | File |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-06-06 | 2026-06-06 | AI Agent, Vercel AI SDK, 工具调用, AI 部署 | tutorial | intermediate | none | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 2026-06-06 | 2026-06-06 | 客服 AI, 模型选型, RAG, AI Agent | tutorial | beginner | none | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 2026-06-06 | 2026-06-06 | AI 提示词, 提示词模板, 行业 AI, SOP | tutorial | beginner | none | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
 ## AI Deployment Coverage
 
@@ -280,6 +295,7 @@ Next review files:
 - Use docs/content-integrity-audit.md to confirm encoding, metadata, and indexing boundaries before approval.
 - Use docs/internal-link-opportunity-audit.md to add public internal links during manual review.
 - Use docs/search-snippet-readiness-audit.md to review title, description, and slug snippet quality.
+- Use docs/structured-data-readiness-audit.md to review metadata and JSON-LD readiness.
 - Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.
 - Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.
 - Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.

@@ -1,6 +1,6 @@
 # Content Freshness Check
 
-Generated at: 2026-06-06T13:37:28.182Z
+Generated at: 2026-06-06T13:48:13.738Z
 
 This report flags fast-changing content for manual fact review. It does not verify facts or publish anything.
 
@@ -44,7 +44,6 @@ This report flags fast-changing content for manual fact review. It does not veri
 
 | Risk | Updated | Category | Keyword | Title | File | Reasons |
 | --- | --- | --- | --- | --- | --- | --- |
-| high | 2026-05-31 | Codex 新手教程 | Codex 是什么新手怎么开始 | Codex 是什么新手怎么开始 | content/blog/what-is-codex-beginner-start.mdx | fast-changing technical term: claude; fast-changing technical term: vercel; fast-changing technical term: 部署; review-sensitive term: 工具; review-sensitive term: 报价 |
 | high | 2026-06-01 | Codex 新手教程 | Codex 怎么做第一个网页 | Codex 怎么做第一个网页 | content/blog/build-first-webpage-with-codex.mdx | fast-changing technical term: claude; fast-changing technical term: vercel; fast-changing technical term: 部署; review-sensitive term: 工具; review-sensitive term: 报价 |
 | high | 2026-06-01 | Codex 新手教程 | Codex 生成代码后怎么审核：交付前检查清单 | Codex 生成代码后怎么审核：交付前检查清单 | content/blog/codex-code-review-delivery-checklist.mdx | fast-changing technical term: claude; fast-changing technical term: vercel; fast-changing technical term: 部署; review-sensitive term: 工具; review-sensitive term: 报价 |
 | high | 2026-06-01 | Codex 新手教程 | Codex 生成代码后怎么审核 | Codex 生成代码后怎么审核 | content/blog/codex-generated-code-review-guide.mdx | fast-changing technical term: api; fast-changing technical term: claude; fast-changing technical term: key; fast-changing technical term: vercel; fast-changing technical term: 部署 |
@@ -53,6 +52,7 @@ This report flags fast-changing content for manual fact review. It does not veri
 | high | 2026-06-01 | Codex 新手教程 | Codex 接 Upwork 小单怎么判断：风险检查清单 | Codex 接 Upwork 小单怎么判断：风险检查清单 | content/blog/codex-upwork-small-job-risk-checklist.mdx | fast-changing technical term: claude; fast-changing technical term: vercel; fast-changing technical term: 部署; review-sensitive term: 工具; review-sensitive term: 报价 |
 | high | 2026-06-01 | Codex 新手教程 | Codex 部署 Vercel 前检查什么：上线前清单 | Codex 部署 Vercel 前检查什么：上线前清单 | content/blog/codex-vercel-deploy-preflight-checklist.mdx | fast-changing technical term: claude; fast-changing technical term: vercel; fast-changing technical term: 部署; review-sensitive term: 工具; review-sensitive term: 报价 |
 | high | 2026-06-01 | Codex 新手教程 | Codex 和 Claude Code 怎么选：新手对比清单 | Codex 和 Claude Code 怎么选：新手对比清单 | content/blog/codex-vs-claude-code-beginner-checklist.mdx | fast-changing technical term: claude; fast-changing technical term: vercel; fast-changing technical term: 部署; review-sensitive term: 工具; review-sensitive term: 报价 |
+| high | 2026-06-01 | Codex 新手教程 | Codex 是什么新手怎么开始 | Codex 是什么新手怎么开始 | content/blog/what-is-codex-beginner-start.mdx | fast-changing technical term: claude; fast-changing technical term: vercel; fast-changing technical term: 部署; review-sensitive term: 工具; review-sensitive term: 报价 |
 | high | 2026-06-02 | 报错解决 | Codex npm install 报错怎么办 | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx | fast-changing technical term: api; fast-changing technical term: claude; fast-changing technical term: key; fast-changing technical term: vercel; fast-changing technical term: 部署 |
 | high | 2026-06-02 | 报价指南 | 第一个 Upwork 项目怎么报价 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx | fast-changing technical term: vercel; fast-changing technical term: 部署; review-sensitive term: 工具; review-sensitive term: 报价 |
 | high | 2026-06-02 | 收款工具 | Payoneer Wise PayPal 区别 | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx | fast-changing technical term: 部署; review-sensitive term: 工具; review-sensitive term: 报价 |

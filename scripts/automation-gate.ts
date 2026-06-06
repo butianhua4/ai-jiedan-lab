@@ -210,6 +210,20 @@ async function main() {
       waveItemsWithBlockingIssues: number;
     };
   }>("content/automation/search-snippet-readiness-audit.json");
+  const structuredData = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    summary: {
+      blockingItems: number;
+      expansionItems: number;
+      jsonLdPreviewItems: number;
+      publicItems: number;
+      recommendedItems: number;
+      scopedItems: number;
+      warningItems: number;
+      waveItems: number;
+      waveItemsWithBlockingIssues: number;
+    };
+  }>("content/automation/structured-data-readiness-audit.json");
   const articles = (await articleFiles()).map(readArticle);
 
   const reviewFiles = reviewQueue.recommendedToday.map((item) => item.file);
@@ -386,6 +400,27 @@ async function main() {
         searchSnippets.summary.recommendedItems === reviewQueue.recommendedToday.length &&
         searchSnippets.summary.waveItemsWithBlockingIssues === 0,
       detail: `blocking=${searchSnippets.summary.blockingItems}, wave=${searchSnippets.summary.waveItems}, waveBlocking=${searchSnippets.summary.waveItemsWithBlockingIssues}, warnings=${searchSnippets.summary.warningItems}`,
+    },
+    {
+      name: "structured data readiness audit is read-only and covers public plus expansion items",
+      ok:
+        structuredData.guardrails.autoEditArticles === false &&
+        structuredData.guardrails.autoMarkReview === false &&
+        structuredData.guardrails.autoPublish === false &&
+        structuredData.summary.publicItems === projectStatus.articles.publicPublished &&
+        structuredData.summary.expansionItems === publicExpansion.summary.items &&
+        structuredData.summary.scopedItems >= projectStatus.articles.publicPublished + publicExpansion.summary.items,
+      detail: `public=${structuredData.summary.publicItems}, expansion=${structuredData.summary.expansionItems}, scoped=${structuredData.summary.scopedItems}`,
+    },
+    {
+      name: "structured data readiness audit has JSON-LD previews and no blocking Wave 1 issues",
+      ok:
+        structuredData.summary.blockingItems === 0 &&
+        structuredData.summary.jsonLdPreviewItems === structuredData.summary.scopedItems &&
+        structuredData.summary.waveItems === waveApprovalPacket.summary.items &&
+        structuredData.summary.recommendedItems === reviewQueue.recommendedToday.length &&
+        structuredData.summary.waveItemsWithBlockingIssues === 0,
+      detail: `blocking=${structuredData.summary.blockingItems}, previews=${structuredData.summary.jsonLdPreviewItems}, wave=${structuredData.summary.waveItems}, waveBlocking=${structuredData.summary.waveItemsWithBlockingIssues}, warnings=${structuredData.summary.warningItems}`,
     },
     {
       name: "SEO opportunity map has review-ready drafts",

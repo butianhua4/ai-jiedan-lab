@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T13:37:28.182Z",
+  "generatedAt": "2026-06-06T13:48:13.738Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status."
@@ -275,24 +275,6 @@
   "items": [
     {
       "category": "Codex 新手教程",
-      "file": "content/blog/what-is-codex-beginner-start.mdx",
-      "primaryKeyword": "Codex 是什么新手怎么开始",
-      "reviewContext": [],
-      "riskLevel": "high",
-      "riskReasons": [
-        "fast-changing technical term: claude",
-        "fast-changing technical term: vercel",
-        "fast-changing technical term: 部署",
-        "review-sensitive term: 工具",
-        "review-sensitive term: 报价",
-        "review-sensitive term: 自动化"
-      ],
-      "status": "published",
-      "title": "Codex 是什么新手怎么开始",
-      "updatedAt": "2026-05-31"
-    },
-    {
-      "category": "Codex 新手教程",
       "file": "content/blog/build-first-webpage-with-codex.mdx",
       "primaryKeyword": "Codex 怎么做第一个网页",
       "reviewContext": [],
@@ -435,6 +417,24 @@
       ],
       "status": "published",
       "title": "Codex 和 Claude Code 怎么选：新手对比清单",
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "category": "Codex 新手教程",
+      "file": "content/blog/what-is-codex-beginner-start.mdx",
+      "primaryKeyword": "Codex 是什么新手怎么开始",
+      "reviewContext": [],
+      "riskLevel": "high",
+      "riskReasons": [
+        "fast-changing technical term: claude",
+        "fast-changing technical term: vercel",
+        "fast-changing technical term: 部署",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 报价",
+        "review-sensitive term: 自动化"
+      ],
+      "status": "published",
+      "title": "Codex 是什么新手怎么开始",
       "updatedAt": "2026-06-01"
     },
     {

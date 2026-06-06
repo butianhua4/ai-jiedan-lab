@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T13:37:32.426Z",
+  "generatedAt": "2026-06-06T13:48:18.044Z",
   "failures": [],
   "ok": true,
   "tasks": [
@@ -14,6 +14,7 @@
     "Run internal link opportunity audit",
     "Run SEO safety check",
     "Run search snippet readiness audit",
+    "Run structured data readiness audit",
     "Generate SEO opportunity map",
     "Generate content opportunity backlog",
     "Generate AI deployment coverage",

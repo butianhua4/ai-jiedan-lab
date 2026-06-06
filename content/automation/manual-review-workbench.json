@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T13:38:38.259Z",
+  "generatedAt": "2026-06-06T13:50:26.710Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -815,7 +815,7 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 71,
+    "filesScanned": 73,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
     "watchMentions": 387
@@ -947,6 +947,69 @@
       }
     ]
   },
+  "structuredData": {
+    "summary": {
+      "blockingItems": 0,
+      "expansionItems": 19,
+      "jsonLdPreviewItems": 34,
+      "publicItems": 15,
+      "recommendedItems": 3,
+      "scopedItems": 34,
+      "warningItems": 7,
+      "waveItems": 3,
+      "waveItemsWithBlockingIssues": 0
+    },
+    "waveItems": [
+      {
+        "contentType": "tutorial",
+        "date": "2026-06-06",
+        "difficulty": "intermediate",
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "issues": [],
+        "tags": [
+          "AI Agent",
+          "Vercel AI SDK",
+          "工具调用",
+          "AI 部署"
+        ],
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "updatedAt": "2026-06-06",
+        "warnings": []
+      },
+      {
+        "contentType": "tutorial",
+        "date": "2026-06-06",
+        "difficulty": "beginner",
+        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "issues": [],
+        "tags": [
+          "客服 AI",
+          "模型选型",
+          "RAG",
+          "AI Agent"
+        ],
+        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+        "updatedAt": "2026-06-06",
+        "warnings": []
+      },
+      {
+        "contentType": "tutorial",
+        "date": "2026-06-06",
+        "difficulty": "beginner",
+        "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "issues": [],
+        "tags": [
+          "AI 提示词",
+          "提示词模板",
+          "行业 AI",
+          "SOP"
+        ],
+        "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+        "updatedAt": "2026-06-06",
+        "warnings": []
+      }
+    ]
+  },
   "deploymentCoverage": {
     "summary": {
       "currentPackDeploymentItems": 2,
@@ -1060,6 +1123,7 @@
     "Use docs/content-integrity-audit.md to confirm encoding, metadata, and indexing boundaries before approval.",
     "Use docs/internal-link-opportunity-audit.md to add public internal links during manual review.",
     "Use docs/search-snippet-readiness-audit.md to review title, description, and slug snippet quality.",
+    "Use docs/structured-data-readiness-audit.md to review metadata and JSON-LD readiness.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.",
     "Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.",
     "Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.",

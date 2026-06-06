@@ -234,6 +234,31 @@ type SearchSnippets = {
   }>;
 };
 
+type StructuredData = {
+  summary: {
+    blockingItems: number;
+    expansionItems: number;
+    jsonLdPreviewItems: number;
+    publicItems: number;
+    recommendedItems: number;
+    scopedItems: number;
+    warningItems: number;
+    waveItems: number;
+    waveItemsWithBlockingIssues: number;
+  };
+  waveItems: Array<{
+    contentType: string;
+    date: string;
+    difficulty: string;
+    file: string;
+    issues: string[];
+    tags: string[];
+    title: string;
+    updatedAt: string;
+    warnings: string[];
+  }>;
+};
+
 type ProjectStatus = {
   articles: { publicPublished: number; publishableNow: unknown[]; statusCounts: Record<string, number> };
 };
@@ -260,6 +285,7 @@ function main() {
   const contentIntegrity = readJson<ContentIntegrity>("content/automation/content-integrity-audit.json");
   const internalLinks = readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json");
   const searchSnippets = readJson<SearchSnippets>("content/automation/search-snippet-readiness-audit.json");
+  const structuredData = readJson<StructuredData>("content/automation/structured-data-readiness-audit.json");
   const deploymentCoverage = readJson<DeploymentCoverage>("content/automation/ai-deployment-coverage.json");
   const promptCoverage = readJson<PromptCoverage>("content/automation/industry-prompt-coverage.json");
   const projectStatus = readJson<ProjectStatus>("content/automation/project-status.json");
@@ -407,6 +433,20 @@ function main() {
         warnings: item.warnings,
       })),
     },
+    structuredData: {
+      summary: structuredData.summary,
+      waveItems: structuredData.waveItems.map((item) => ({
+        contentType: item.contentType,
+        date: item.date,
+        difficulty: item.difficulty,
+        file: item.file,
+        issues: item.issues,
+        tags: item.tags,
+        title: item.title,
+        updatedAt: item.updatedAt,
+        warnings: item.warnings,
+      })),
+    },
     deploymentCoverage: {
       summary: deploymentCoverage.summary,
       topTopics: deploymentCoverage.coverage.slice(0, 6).map((item) => ({
@@ -440,6 +480,7 @@ function main() {
       contentIntegrity,
       internalLinks,
       searchSnippets,
+      structuredData,
     ),
   };
 
@@ -467,6 +508,7 @@ function buildNextActions(
   contentIntegrity: ContentIntegrity,
   internalLinks: InternalLinks,
   searchSnippets: SearchSnippets,
+  structuredData: StructuredData,
 ) {
   if (projectStatus.articles.publishableNow.length > 0) return ["Stop and inspect publishableNow before adding more review candidates."];
   if (!liveSearch.ok || liveSearch.failedChecks.length > 0) return ["Fix live search surface failures before any publishing action."];
@@ -495,6 +537,7 @@ function buildNextActions(
   if (contentIntegrity.summary.blockingItems > 0) return ["Fix content integrity blockers before any mark:review action."];
   if (internalLinks.summary.waveItemsMissingPublicLinkSuggestion > 0) return ["Resolve Wave 1 internal link suggestion gaps before publishing."];
   if (searchSnippets.summary.waveItemsWithBlockingIssues > 0) return ["Fix Wave 1 search snippet blockers before publishing."];
+  if (structuredData.summary.waveItemsWithBlockingIssues > 0) return ["Fix Wave 1 structured data readiness blockers before publishing."];
   if (
     reviewCoverage.summary.itemsMissingOfficialSources > 0 ||
     reviewCoverage.summary.itemsMissingFactCheckQueries > 0 ||
@@ -509,6 +552,7 @@ function buildNextActions(
     "Use docs/content-integrity-audit.md to confirm encoding, metadata, and indexing boundaries before approval.",
     "Use docs/internal-link-opportunity-audit.md to add public internal links during manual review.",
     "Use docs/search-snippet-readiness-audit.md to review title, description, and slug snippet quality.",
+    "Use docs/structured-data-readiness-audit.md to review metadata and JSON-LD readiness.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.",
     "Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.",
     "Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.",
@@ -614,6 +658,20 @@ function toMarkdown(payload: {
       slug: string;
       title: string;
       titleLength: number;
+      warnings: string[];
+    }>;
+  };
+  structuredData: {
+    summary: StructuredData["summary"];
+    waveItems: Array<{
+      contentType: string;
+      date: string;
+      difficulty: string;
+      file: string;
+      issues: string[];
+      tags: string[];
+      title: string;
+      updatedAt: string;
       warnings: string[];
     }>;
   };
@@ -831,6 +889,21 @@ function toMarkdown(payload: {
     "| --- | --- | --- | --- | --- | --- | --- |",
     ...payload.searchSnippets.waveItems.map((item) => (
       `| ${item.titleLength} | ${item.descriptionLength} | ${item.issues.length ? item.issues.join("<br>") : "none"} | ${item.warnings.length ? item.warnings.join("<br>") : "none"} | ${item.slug} | ${item.title} | ${item.file} |`
+    )),
+    "",
+    "## Structured Data Readiness",
+    "",
+    `- Scoped items: ${payload.structuredData.summary.scopedItems}`,
+    `- JSON-LD preview items: ${payload.structuredData.summary.jsonLdPreviewItems}`,
+    `- Blocking items: ${payload.structuredData.summary.blockingItems}`,
+    `- Warning items: ${payload.structuredData.summary.warningItems}`,
+    `- Wave items: ${payload.structuredData.summary.waveItems}`,
+    `- Wave items with blocking issues: ${payload.structuredData.summary.waveItemsWithBlockingIssues}`,
+    "",
+    "| Date | Updated | Tags | Type | Difficulty | Issues | Warnings | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...payload.structuredData.waveItems.map((item) => (
+      `| ${item.date} | ${item.updatedAt} | ${item.tags.join(", ")} | ${item.contentType} | ${item.difficulty} | ${item.issues.length ? item.issues.join("<br>") : "none"} | ${item.warnings.length ? item.warnings.join("<br>") : "none"} | ${item.title} | ${item.file} |`
     )),
     "",
     "## AI Deployment Coverage",

@@ -22,6 +22,7 @@ const tasks: Task[] = [
   { title: "Run internal link opportunity audit", args: ["run", "content:internal-links"] },
   { title: "Run SEO safety check", args: ["run", "--silent", "seo:check"], outputFile: "content/automation/seo-check.json" },
   { title: "Run search snippet readiness audit", args: ["run", "seo:snippets"] },
+  { title: "Run structured data readiness audit", args: ["run", "seo:schema"] },
   { title: "Generate SEO opportunity map", args: ["run", "seo:opportunities"] },
   { title: "Generate content opportunity backlog", args: ["run", "content:opportunities"] },
   { title: "Generate AI deployment coverage", args: ["run", "content:deployment-coverage"] },

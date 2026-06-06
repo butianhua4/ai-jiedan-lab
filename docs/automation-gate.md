@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-06T13:38:23.844Z
+Generated at: 2026-06-06T13:50:26.860Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 53
-- Passed: 53
+- Checks: 55
+- Passed: 55
 - Failed: 0
 
 ## Checks
@@ -30,13 +30,15 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=71, unsafeClaims=0, watchMentions=387 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=73, unsafeClaims=0, watchMentions=387 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, candidates=19 |
 | internal link opportunity audit has public suggestions for Wave 1 | PASS | wave=3, waveMissing=0, candidateMissing=0 |
 | search snippet readiness audit is read-only and covers public plus expansion items | PASS | public=15, expansion=19, scoped=34 |
 | search snippet readiness audit has no blocking Wave 1 issues | PASS | blocking=0, wave=3, waveBlocking=0, warnings=13 |
+| structured data readiness audit is read-only and covers public plus expansion items | PASS | public=15, expansion=19, scoped=34 |
+| structured data readiness audit has JSON-LD previews and no blocking Wave 1 issues | PASS | blocking=0, previews=34, wave=3, waveBlocking=0, warnings=7 |
 | SEO opportunity map has review-ready drafts | PASS | reviewReadyDrafts=633 |
 | SEO opportunity map includes manual review batches | PASS | batches=6 |
 | content opportunity backlog has reviewable topics | PASS | topics=7, topicsWithReadyCandidates=7 |

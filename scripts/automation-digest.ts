@@ -249,6 +249,20 @@ type SearchSnippets = {
   };
 };
 
+type StructuredData = {
+  summary: {
+    blockingItems: number;
+    expansionItems: number;
+    jsonLdPreviewItems: number;
+    publicItems: number;
+    recommendedItems: number;
+    scopedItems: number;
+    warningItems: number;
+    waveItems: number;
+    waveItemsWithBlockingIssues: number;
+  };
+};
+
 const reports = {
   cannibalization: readJson<{ summary: { conflicts: number; reviewBatchConflicts: number } }>("content/automation/content-cannibalization.json"),
   freshness: readJson<{ summary: { currentReviewItems: number; highRisk: number; mediumRisk: number; plannedReviewItems: number } }>(
@@ -291,6 +305,7 @@ const reports = {
   contentIntegrity: readJson<ContentIntegrity>("content/automation/content-integrity-audit.json"),
   internalLinks: readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json"),
   searchSnippets: readJson<SearchSnippets>("content/automation/search-snippet-readiness-audit.json"),
+  structuredData: readJson<StructuredData>("content/automation/structured-data-readiness-audit.json"),
   review: readJson<{ counts: { candidates: number; returned: number; rejected: Record<string, number> }; recommendedToday: ReviewCandidate[] }>(
     "content/automation/review-candidates.json",
   ),
@@ -324,6 +339,7 @@ const payload = {
   contentIntegrity: reports.contentIntegrity.data?.summary ?? null,
   internalLinks: reports.internalLinks.data?.summary ?? null,
   searchSnippets: reports.searchSnippets.data?.summary ?? null,
+  structuredData: reports.structuredData.data?.summary ?? null,
   publishingBoundary: {
     publicPublished: reports.project.data?.articles.publicPublished ?? null,
     publishableNow: reports.project.data?.articles.publishableNow.length ?? null,
@@ -510,6 +526,9 @@ function buildNextActions() {
   if (!reports.searchSnippets.data || reports.searchSnippets.data.summary.waveItemsWithBlockingIssues > 0) {
     return ["Open docs/search-snippet-readiness-audit.md and fix Wave 1 title, description, slug, or indexing blockers."];
   }
+  if (!reports.structuredData.data || reports.structuredData.data.summary.waveItemsWithBlockingIssues > 0) {
+    return ["Open docs/structured-data-readiness-audit.md and fix Wave 1 metadata or JSON-LD readiness blockers."];
+  }
   if (!reports.reviewCoverage.data || reports.reviewCoverage.data.summary.missingCoverage > 0) {
     return ["Open docs/review-coverage-report.md and regenerate coverage for all planned review candidates."];
   }
@@ -595,6 +614,27 @@ function toMarkdown(data: typeof payload) {
       : "- Wave items: missing",
     data.searchSnippets
       ? `- Wave items with blocking issues: ${data.searchSnippets.waveItemsWithBlockingIssues}`
+      : "- Wave items with blocking issues: missing",
+    "",
+    "## Structured Data Readiness",
+    "",
+    data.structuredData
+      ? `- Scoped items: ${data.structuredData.scopedItems}`
+      : "- Scoped items: missing",
+    data.structuredData
+      ? `- JSON-LD preview items: ${data.structuredData.jsonLdPreviewItems}`
+      : "- JSON-LD preview items: missing",
+    data.structuredData
+      ? `- Blocking items: ${data.structuredData.blockingItems}`
+      : "- Blocking items: missing",
+    data.structuredData
+      ? `- Warning items: ${data.structuredData.warningItems}`
+      : "- Warning items: missing",
+    data.structuredData
+      ? `- Wave items: ${data.structuredData.waveItems}`
+      : "- Wave items: missing",
+    data.structuredData
+      ? `- Wave items with blocking issues: ${data.structuredData.waveItemsWithBlockingIssues}`
       : "- Wave items with blocking issues: missing",
     "",
     "## Publishing Boundary",
