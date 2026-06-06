@@ -1,6 +1,6 @@
 # Review Candidate Preflight
 
-Generated at: 2026-06-06T10:15:01.106Z
+Generated at: 2026-06-06T10:21:28.251Z
 
 Overall: PASS
 
@@ -19,14 +19,14 @@ Overall: PASS
 
 | Status | Score | Chinese chars | Title | File | Issues |
 | --- | --- | --- | --- | --- | --- |
+| PASS | 100 | 1540 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |  |
+| PASS | 100 | 1862 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |  |
 | PASS | 100 | 1232 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |  |
-| PASS | 100 | 1303 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |  |
-| PASS | 100 | 1269 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |  |
 
 ## Dry-run Commands
 
 ```bash
+npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
+npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx
 npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx
-npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx
-npm run mark:review -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx
 ```

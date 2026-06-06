@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T10:15:05.454Z",
+  "generatedAt": "2026-06-06T10:21:32.492Z",
   "ok": true,
   "summary": {
     "checks": 11,
@@ -15,7 +15,7 @@
     {
       "name": "publish pack matches recommended review files",
       "ok": true,
-      "detail": "review=content/blog/ai-model-selection-customer-service-guide.mdx, content/blog/ai-automation-project-pricing-scope-guide.mdx, content/blog/ai-prompt-library-team-knowledge-base-guide.mdx pack=content/blog/ai-model-selection-customer-service-guide.mdx, content/blog/ai-automation-project-pricing-scope-guide.mdx, content/blog/ai-prompt-library-team-knowledge-base-guide.mdx"
+      "detail": "review=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx, content/blog/industry-ai-prompts-template-library-2026.mdx, content/blog/ai-model-selection-customer-service-guide.mdx pack=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx, content/blog/industry-ai-prompts-template-library-2026.mdx, content/blog/ai-model-selection-customer-service-guide.mdx"
     },
     {
       "name": "recommended review candidates pass preflight",
@@ -25,7 +25,7 @@
     {
       "name": "recommended review clusters are diverse",
       "ok": true,
-      "detail": "RAG and knowledge base, Agent and memory, Industry AI prompts"
+      "detail": "Agent and memory, Industry AI prompts, RAG and knowledge base"
     },
     {
       "name": "SEO safety check passed",
@@ -60,7 +60,7 @@
     {
       "name": "SEO opportunity map has review-ready drafts",
       "ok": true,
-      "detail": "reviewReadyDrafts=629"
+      "detail": "reviewReadyDrafts=633"
     }
   ]
 }

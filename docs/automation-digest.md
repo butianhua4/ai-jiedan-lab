@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T10:15:05.962Z
+Generated at: 2026-06-06T10:21:33.010Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -17,15 +17,15 @@ This digest is read-only. It summarizes automation reports and does not publish 
 
 - Public published: 15
 - Publishable now: 0
-- Status counts: {"draft":629,"published":15,"archived":21}
+- Status counts: {"draft":633,"published":15,"archived":21}
 
 ## Recommended Today
 
 | Cluster | Opportunity | Title | File |
 | --- | --- | --- | --- |
+| Agent and memory | 260 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| Industry AI prompts | 260 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | RAG and knowledge base | 254 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| Agent and memory | 253 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
-| Industry AI prompts | 252 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
 
 ## Preflight
 
@@ -34,13 +34,13 @@ This digest is read-only. It summarizes automation reports and does not publish 
 
 | Status | Score | Title | Issues |
 | --- | --- | --- | --- |
+| PASS | 100 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 |  |
+| PASS | 100 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 |  |
 | PASS | 100 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 |  |
-| PASS | 100 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 |  |
-| PASS | 100 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 |  |
 
 ## SEO Opportunities
 
-- Review-ready drafts: 629
+- Review-ready drafts: 633
 
 | Category | Published | Review-ready drafts | Reason |
 | --- | --- | --- | --- |

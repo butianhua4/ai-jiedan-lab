@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T10:15:01.698Z",
+  "generatedAt": "2026-06-06T10:21:28.887Z",
   "contentPlan": {
     "total": 500,
     "uniqueSlugs": 500,
@@ -13,14 +13,14 @@
     }
   },
   "articles": {
-    "files": 665,
+    "files": 669,
     "statusCounts": {
-      "draft": 629,
+      "draft": 633,
       "published": 15,
       "archived": 21
     },
     "publicPublished": 15,
-    "draftOrReview": 629,
+    "draftOrReview": 633,
     "archived": 21,
     "publishableNow": []
   },

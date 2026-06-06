@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T10:15:00.106Z",
+  "generatedAt": "2026-06-06T10:21:27.244Z",
   "guardrails": {
     "autoPublish": false,
     "nextHumanAction": "Open each candidate, verify facts and risk language, then run mark:review with --confirm-human for approved files.",
@@ -15,7 +15,7 @@
     "sortStrategy": "opportunityScore desc, publishBatch desc, qualityScore desc, slug asc"
   },
   "counts": {
-    "candidates": 629,
+    "candidates": 633,
     "returned": 25,
     "rejected": {
       "status:published": 15,
@@ -23,6 +23,40 @@
     }
   },
   "recommendedToday": [
+    {
+      "category": "AI Agent",
+      "cluster": "Agent and memory",
+      "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "noindex": true,
+      "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
+      "opportunityScore": 260,
+      "publishBatch": 40,
+      "qualityScore": 100,
+      "reason": "batch 40; AI Agent; Agent and memory cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
+      "reviewCommand": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+      "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
+      "sourceNotes": true,
+      "status": "draft",
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+    },
+    {
+      "category": "AI 提示词",
+      "cluster": "Industry AI prompts",
+      "dryRunCommand": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "noindex": true,
+      "opportunityReason": "Industry AI prompts cluster; no public article in cluster; no public article in category",
+      "opportunityScore": 260,
+      "publishBatch": 40,
+      "qualityScore": 100,
+      "reason": "batch 40; AI 提示词; Industry AI prompts cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
+      "reviewCommand": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+      "slug": "industry-ai-prompts-template-library-2026",
+      "sourceNotes": true,
+      "status": "draft",
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+    },
     {
       "category": "AI 部署",
       "cluster": "RAG and knowledge base",
@@ -39,43 +73,60 @@
       "sourceNotes": true,
       "status": "draft",
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
-    },
+    }
+  ],
+  "candidates": [
     {
-      "category": "接单报价",
+      "category": "AI Agent",
       "cluster": "Agent and memory",
-      "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
-      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+      "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
       "noindex": true,
       "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
-      "opportunityScore": 253,
-      "publishBatch": 33,
+      "opportunityScore": 260,
+      "publishBatch": 40,
       "qualityScore": 100,
-      "reason": "batch 33; 接单报价; Agent and memory cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
-      "reviewCommand": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
-      "slug": "ai-automation-project-pricing-scope-guide",
+      "reason": "batch 40; AI Agent; Agent and memory cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
+      "reviewCommand": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+      "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
       "sourceNotes": true,
       "status": "draft",
-      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+    },
+    {
+      "category": "AI 记忆",
+      "cluster": "Agent and memory",
+      "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx",
+      "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+      "noindex": true,
+      "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
+      "opportunityScore": 260,
+      "publishBatch": 40,
+      "qualityScore": 100,
+      "reason": "batch 40; AI 记忆; Agent and memory cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
+      "reviewCommand": "npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
+      "slug": "ai-agent-memory-rag-design-guide",
+      "sourceNotes": true,
+      "status": "draft",
+      "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
     },
     {
       "category": "AI 提示词",
       "cluster": "Industry AI prompts",
-      "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
-      "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+      "dryRunCommand": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
       "noindex": true,
       "opportunityReason": "Industry AI prompts cluster; no public article in cluster; no public article in category",
-      "opportunityScore": 252,
-      "publishBatch": 32,
+      "opportunityScore": 260,
+      "publishBatch": 40,
       "qualityScore": 100,
-      "reason": "batch 32; AI 提示词; Industry AI prompts cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
-      "reviewCommand": "npm run mark:review -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx --confirm-human",
-      "slug": "ai-prompt-library-team-knowledge-base-guide",
+      "reason": "batch 40; AI 提示词; Industry AI prompts cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
+      "reviewCommand": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+      "slug": "industry-ai-prompts-template-library-2026",
       "sourceNotes": true,
       "status": "draft",
-      "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用"
-    }
-  ],
-  "candidates": [
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+    },
     {
       "category": "AI 部署",
       "cluster": "RAG and knowledge base",
@@ -449,57 +500,6 @@
       "sourceNotes": true,
       "status": "draft",
       "title": "软件开发 AI 提示词模板：需求拆解、代码审查、Bug 排查和测试用例"
-    },
-    {
-      "category": "AI 提示词",
-      "cluster": "Industry AI prompts",
-      "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-prompt-framework-business-guide.mdx",
-      "file": "content/blog/ai-prompt-framework-business-guide.mdx",
-      "noindex": true,
-      "opportunityReason": "Industry AI prompts cluster; no public article in cluster; no public article in category",
-      "opportunityScore": 250,
-      "publishBatch": 30,
-      "qualityScore": 100,
-      "reason": "batch 30; AI 提示词; Industry AI prompts cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
-      "reviewCommand": "npm run mark:review -- --file=content/blog/ai-prompt-framework-business-guide.mdx --confirm-human",
-      "slug": "ai-prompt-framework-business-guide",
-      "sourceNotes": true,
-      "status": "draft",
-      "title": "AI 提示词怎么写才好用：全行业都能套的 5 段式框架"
-    },
-    {
-      "category": "AI 提示词",
-      "cluster": "Industry AI prompts",
-      "dryRunCommand": "npm run mark:review -- --file=content/blog/customer-service-ai-prompts-guide.mdx",
-      "file": "content/blog/customer-service-ai-prompts-guide.mdx",
-      "noindex": true,
-      "opportunityReason": "Industry AI prompts cluster; no public article in cluster; no public article in category",
-      "opportunityScore": 250,
-      "publishBatch": 30,
-      "qualityScore": 100,
-      "reason": "batch 30; AI 提示词; Industry AI prompts cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
-      "reviewCommand": "npm run mark:review -- --file=content/blog/customer-service-ai-prompts-guide.mdx --confirm-human",
-      "slug": "customer-service-ai-prompts-guide",
-      "sourceNotes": true,
-      "status": "draft",
-      "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断"
-    },
-    {
-      "category": "AI 提示词",
-      "cluster": "Industry AI prompts",
-      "dryRunCommand": "npm run mark:review -- --file=content/blog/ecommerce-ai-prompts-guide.mdx",
-      "file": "content/blog/ecommerce-ai-prompts-guide.mdx",
-      "noindex": true,
-      "opportunityReason": "Industry AI prompts cluster; no public article in cluster; no public article in category",
-      "opportunityScore": 250,
-      "publishBatch": 30,
-      "qualityScore": 100,
-      "reason": "batch 30; AI 提示词; Industry AI prompts cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
-      "reviewCommand": "npm run mark:review -- --file=content/blog/ecommerce-ai-prompts-guide.mdx --confirm-human",
-      "slug": "ecommerce-ai-prompts-guide",
-      "sourceNotes": true,
-      "status": "draft",
-      "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复"
     }
   ]
 }

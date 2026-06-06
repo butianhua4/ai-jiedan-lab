@@ -1,0 +1,127 @@
+---
+title: "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+slug: "ai-agent-deployment-vercel-ai-sdk-guide"
+description: "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。"
+date: "2026-06-06"
+updatedAt: "2026-06-06"
+category: "AI Agent"
+tags:
+  - "AI Agent"
+  - "Vercel AI SDK"
+  - "工具调用"
+  - "AI 部署"
+author: "AI 接单实验室"
+status: "draft"
+contentType: "tutorial"
+difficulty: "intermediate"
+targetReader: "想把聊天机器人升级成可调用工具的 AI Agent，并部署到线上环境的新手"
+searchIntent: "informational"
+primaryKeyword: "AI Agent 部署"
+secondaryKeywords:
+  - "Vercel AI SDK Agent"
+  - "AI Agent 工具调用"
+  - "AI Agent 上线检查"
+  - "AI Agent 多步执行"
+sourceNotes: "参考 Vercel 官方 AI SDK Agent 文档和实际 Web 应用部署流程整理；正式公开前需要人工核对 API 示例、版本和平台限制。"
+humanReviewRequired: true
+reviewChecklist:
+  hasOriginalAngle: true
+  hasActionableSteps: true
+  hasRiskWarning: true
+  hasNoIncomeGuarantee: true
+  hasNoCopyrightIssue: true
+  hasNoPlatformViolation: true
+  hasClearCTA: true
+monetization:
+  affiliateSlots:
+    - "工具导航"
+  templateCTA: "下载 AI Agent 上线检查表"
+  serviceCTA: "联系人工协助设计 Agent 部署方案"
+  adSlots:
+    - "article-bottom"
+qualityScore: 90
+publishBatch: 40
+canonical: "https://ai-jiedan-lab.vercel.app/blog/ai-agent-deployment-vercel-ai-sdk-guide"
+noindex: true
+---
+# AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查
+
+很多人说要做 AI Agent，但实际项目里最容易卡住的不是“模型会不会回答”，而是 Agent 能不能安全地调用工具、能不能在多步执行后停下来、能不能记录日志、能不能让人接管。Vercel AI SDK 的 Agent 思路可以帮助新手理解这条线：模型先判断是否要调用工具，工具返回结果后再进入下一步，直到达到停止条件或生成最终回复。
+
+本文是待复核草稿。网页部署基础可以看 [Vercel 部署检查表怎么写](/blog/vercel-deploy-checklist-beginner-guide)，模型选型可以看 [客服 AI 该选什么模型](/blog/ai-model-selection-customer-service-guide)，工具入口可以看 [AI 工具导航](/tools)。
+
+## 适合谁
+
+适合已经做过普通聊天机器人，想进一步让 AI 调用数据库、搜索、日历、订单、CRM、知识库或内部工具的人。也适合正在接 AI 自动化项目，但还分不清聊天、工作流和 Agent 边界的新手。
+
+如果你的客户说“我想要一个能自动处理任务的 AI 助手”，你需要先把任务拆成：哪些只是文本生成，哪些需要工具调用，哪些需要人工确认，哪些必须写日志，哪些不能让模型直接执行。
+
+## 不适合谁
+
+不适合一上来就让 Agent 直接操作生产系统的人。删除数据、改价格、发邮件、创建订单、处理退款、修改权限、调用支付接口，都应该有严格确认和审计。
+
+也不适合没有明确工具边界的项目。Agent 不是把所有 API 都丢给模型。工具越多，越需要命名、参数、权限、错误处理和停止条件。
+
+## Agent 和普通聊天机器人有什么区别
+
+普通聊天机器人通常是一次输入、一次输出。Agent 更像一个受限制的执行循环：模型决定是否调用工具，工具返回结果，模型再根据结果决定下一步。Vercel 文档里强调，多步 Agent 需要设置步骤上限，否则模型可能反复调用工具，造成成本、延迟和风险上升。
+
+新手可以把 Agent 理解成三层：第一层是模型负责理解意图；第二层是工具负责真实动作；第三层是系统负责限制、记录和兜底。不要把这三层混在一起。
+
+## 具体步骤
+
+1. 写清楚 Agent 的任务范围，例如“查询订单状态并生成客服回复草稿”。
+2. 列出可调用工具，每个工具只做一件事。
+3. 给工具参数加 schema，避免模型传入模糊字段。
+4. 设置多步执行上限，例如最多 3-5 步。
+5. 给高影响动作加人工确认，例如发送邮件、改订单、写数据库。
+6. 记录每次工具调用的输入、输出、耗时和错误。
+7. 为失败情况设计回复，不要让用户卡住。
+8. 上线前用真实但脱敏的样本做回归测试。
+
+## 一个最小设计
+
+先不要做万能 Agent。可以先做客服订单助手：
+
+- 用户输入：订单号、问题描述。
+- 工具 1：查询订单状态。
+- 工具 2：查询售后政策。
+- 工具 3：生成回复草稿。
+- 人工确认：真正发送给用户前由客服确认。
+
+这个 Agent 的核心价值不是“全自动解决所有客服问题”，而是缩短客服查资料和写初稿的时间。边界越清楚，越容易上线。
+
+## 部署时要检查什么
+
+部署前要检查环境变量、模型提供商、请求超时、日志、错误页面、速率限制、成本上限和权限。Agent 的风险往往不是模型一句话说错，而是工具真的执行了动作。
+
+如果部署在 Vercel，需要确认 API Route 或 Server Function 的运行时、最大执行时间、环境变量是否配置完整。还要确认前端不会把敏感 token 暴露给浏览器。上线后可以用 [线上检查命令](/docs/post-deploy-checklist) 或项目里的 smoke check 做基础验证。
+
+## 常见错误
+
+第一个错误是没有停止条件。多步 Agent 如果没有上限，可能不断调用工具。第二个错误是工具太宽。比如一个 `runCommand` 工具如果没有限制，很容易越界。第三个错误是没有人工确认。很多动作应该先生成草稿，再由人点击确认。
+
+第四个错误是没有记录工具调用。上线后只看最终回复，无法知道 Agent 中间查了什么、错在哪里、成本为什么变高。
+
+## 风险提醒
+
+Agent 部署要优先保护权限、隐私和可追溯性。不要把客户密钥、内部数据库权限或敏感文件直接暴露给前端，也不要让模型自己决定是否执行高影响动作。
+
+对外发送内容、修改数据、创建账单、触发付款、删除记录等动作，需要人工确认或更严格的权限控制。AI 可以做草稿、建议和检索，但最终责任不能模糊。
+
+## 人工复核时需要补充
+
+- 根据当前 Vercel AI SDK 版本核对代码示例。
+- 补一个最小 API Route 示例和工具 schema。
+- 补一个失败样本，例如工具返回 404 或权限不足。
+- 检查是否需要加成本估算和速率限制示例。
+
+## 推荐工具或模板
+
+可以先用 [项目报价助手](/tools/pricing-calculator) 估算 Agent 设计、接口开发、测试和上线检查的工时。需求还不清楚时，先用 [Proposal 生成器](/tools/proposal-generator) 生成客户确认问题，再决定是否进入开发。
+
+CTA：如果你要做的是客服、销售、资料检索或内部知识库 Agent，可以先下载 Agent 上线检查表，把工具、权限、停止条件和人工确认点列出来。
+
+## 免责声明
+
+本文只用于学习和方案设计参考，不构成安全、法律或商业承诺。Agent 上线前需要人工复核代码、权限、日志和平台规则。本站可能在工具推荐或模板页面预留联盟链接和广告位，但不会因此承诺任何收入结果。

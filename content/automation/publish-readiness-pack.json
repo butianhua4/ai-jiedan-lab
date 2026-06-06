@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T10:15:00.626Z",
+  "generatedAt": "2026-06-06T10:21:27.737Z",
   "guardrails": {
     "autoPublish": false,
     "requiredHumanAction": "Read the article, verify factual claims and risk language, then mark review manually.",
@@ -10,6 +10,52 @@
     "included": 3
   },
   "items": [
+    {
+      "category": "AI Agent",
+      "description": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "internalLinks": 6,
+      "markReviewCommand": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+      "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
+      "opportunityScore": 260,
+      "primaryKeyword": "AI Agent 部署",
+      "publishConfirmCommand": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm",
+      "publishDryRunCommand": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "qualityScore": 100,
+      "reviewFocus": [
+        "Verify the opening answer matches the title and search intent.",
+        "Check facts, tool names, limits, and platform policy wording.",
+        "Confirm risk reminders are cautionary and do not imply guaranteed outcomes.",
+        "Confirm internal links and CTA point to relevant site pages."
+      ],
+      "searchIntent": "informational",
+      "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "wordCountChinese": 1540
+    },
+    {
+      "category": "AI 提示词",
+      "description": "整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。",
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "internalLinks": 6,
+      "markReviewCommand": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+      "opportunityReason": "Industry AI prompts cluster; no public article in cluster; no public article in category",
+      "opportunityScore": 260,
+      "primaryKeyword": "全行业 AI 提示词模板",
+      "publishConfirmCommand": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm",
+      "publishDryRunCommand": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "qualityScore": 100,
+      "reviewFocus": [
+        "Verify the opening answer matches the title and search intent.",
+        "Check facts, tool names, limits, and platform policy wording.",
+        "Confirm risk reminders are cautionary and do not imply guaranteed outcomes.",
+        "Confirm internal links and CTA point to relevant site pages."
+      ],
+      "searchIntent": "informational",
+      "slug": "industry-ai-prompts-template-library-2026",
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "wordCountChinese": 1862
+    },
     {
       "category": "AI 部署",
       "description": "整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。",
@@ -32,52 +78,6 @@
       "slug": "ai-model-selection-customer-service-guide",
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "wordCountChinese": 1232
-    },
-    {
-      "category": "接单报价",
-      "description": "整理 AI 自动化项目报价思路，覆盖需求范围、工具选型、RAG、Agent、部署、维护、验收标准和风险边界。",
-      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-      "internalLinks": 4,
-      "markReviewCommand": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
-      "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
-      "opportunityScore": 253,
-      "primaryKeyword": "AI 自动化项目报价",
-      "publishConfirmCommand": "npm run publish:articles -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm",
-      "publishDryRunCommand": "npm run publish:articles -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
-      "qualityScore": 100,
-      "reviewFocus": [
-        "Verify the opening answer matches the title and search intent.",
-        "Check facts, tool names, limits, and platform policy wording.",
-        "Confirm risk reminders are cautionary and do not imply guaranteed outcomes.",
-        "Confirm internal links and CTA point to relevant site pages."
-      ],
-      "searchIntent": "informational",
-      "slug": "ai-automation-project-pricing-scope-guide",
-      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
-      "wordCountChinese": 1303
-    },
-    {
-      "category": "AI 提示词",
-      "description": "讲清团队提示词库的搭建方式，覆盖行业分类、版本管理、示例输出、适用边界、审核流程、失败案例和工具导航。",
-      "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
-      "internalLinks": 3,
-      "markReviewCommand": "npm run mark:review -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx --confirm-human",
-      "opportunityReason": "Industry AI prompts cluster; no public article in cluster; no public article in category",
-      "opportunityScore": 252,
-      "primaryKeyword": "团队 AI 提示词库",
-      "publishConfirmCommand": "npm run publish:articles -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx --confirm",
-      "publishDryRunCommand": "npm run publish:articles -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
-      "qualityScore": 100,
-      "reviewFocus": [
-        "Verify the opening answer matches the title and search intent.",
-        "Check facts, tool names, limits, and platform policy wording.",
-        "Confirm risk reminders are cautionary and do not imply guaranteed outcomes.",
-        "Confirm internal links and CTA point to relevant site pages."
-      ],
-      "searchIntent": "informational",
-      "slug": "ai-prompt-library-team-knowledge-base-guide",
-      "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
-      "wordCountChinese": 1269
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T10:15:05.962Z",
+  "generatedAt": "2026-06-06T10:21:33.010Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -16,15 +16,49 @@
     "publicPublished": 15,
     "publishableNow": 0,
     "statusCounts": {
-      "draft": 629,
+      "draft": 633,
       "published": 15,
       "archived": 21
     }
   },
   "reviewQueue": {
-    "candidates": 629,
+    "candidates": 633,
     "returned": 25,
     "recommendedToday": [
+      {
+        "category": "AI Agent",
+        "cluster": "Agent and memory",
+        "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "noindex": true,
+        "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
+        "opportunityScore": 260,
+        "publishBatch": 40,
+        "qualityScore": 100,
+        "reason": "batch 40; AI Agent; Agent and memory cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
+        "reviewCommand": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+        "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
+        "sourceNotes": true,
+        "status": "draft",
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+      },
+      {
+        "category": "AI 提示词",
+        "cluster": "Industry AI prompts",
+        "dryRunCommand": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "noindex": true,
+        "opportunityReason": "Industry AI prompts cluster; no public article in cluster; no public article in category",
+        "opportunityScore": 260,
+        "publishBatch": 40,
+        "qualityScore": 100,
+        "reason": "batch 40; AI 提示词; Industry AI prompts cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
+        "reviewCommand": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+        "slug": "industry-ai-prompts-template-library-2026",
+        "sourceNotes": true,
+        "status": "draft",
+        "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+      },
       {
         "category": "AI 部署",
         "cluster": "RAG and knowledge base",
@@ -41,40 +75,6 @@
         "sourceNotes": true,
         "status": "draft",
         "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
-      },
-      {
-        "category": "接单报价",
-        "cluster": "Agent and memory",
-        "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
-        "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-        "noindex": true,
-        "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
-        "opportunityScore": 253,
-        "publishBatch": 33,
-        "qualityScore": 100,
-        "reason": "batch 33; 接单报价; Agent and memory cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
-        "reviewCommand": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
-        "slug": "ai-automation-project-pricing-scope-guide",
-        "sourceNotes": true,
-        "status": "draft",
-        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
-      },
-      {
-        "category": "AI 提示词",
-        "cluster": "Industry AI prompts",
-        "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
-        "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
-        "noindex": true,
-        "opportunityReason": "Industry AI prompts cluster; no public article in cluster; no public article in category",
-        "opportunityScore": 252,
-        "publishBatch": 32,
-        "qualityScore": 100,
-        "reason": "batch 32; AI 提示词; Industry AI prompts cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
-        "reviewCommand": "npm run mark:review -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx --confirm-human",
-        "slug": "ai-prompt-library-team-knowledge-base-guide",
-        "sourceNotes": true,
-        "status": "draft",
-        "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用"
       }
     ]
   },
@@ -82,6 +82,26 @@
     "checked": 3,
     "failed": 0,
     "items": [
+      {
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "issues": [],
+        "markReviewDryRunCommand": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "ok": true,
+        "qualityScore": 100,
+        "status": "draft",
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "wordCountChinese": 1540
+      },
+      {
+        "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "issues": [],
+        "markReviewDryRunCommand": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "ok": true,
+        "qualityScore": 100,
+        "status": "draft",
+        "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+        "wordCountChinese": 1862
+      },
       {
         "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
         "issues": [],
@@ -91,31 +111,11 @@
         "status": "draft",
         "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
         "wordCountChinese": 1232
-      },
-      {
-        "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-        "issues": [],
-        "markReviewDryRunCommand": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
-        "ok": true,
-        "qualityScore": 100,
-        "status": "draft",
-        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
-        "wordCountChinese": 1303
-      },
-      {
-        "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
-        "issues": [],
-        "markReviewDryRunCommand": "npm run mark:review -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
-        "ok": true,
-        "qualityScore": 100,
-        "status": "draft",
-        "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
-        "wordCountChinese": 1269
       }
     ]
   },
   "seoOpportunities": {
-    "reviewReadyDrafts": 629,
+    "reviewReadyDrafts": 633,
     "nextReviewTargets": [
       {
         "category": "AI 基建",

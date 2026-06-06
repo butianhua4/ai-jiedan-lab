@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-06-06T10:15:03.357Z",
+  "generatedAt": "2026-06-06T10:21:30.561Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This report uses local content metadata only. It does not claim real traffic or Search Console impressions."
   },
   "totals": {
-    "files": 665,
+    "files": 669,
     "published": 15,
-    "draft": 629,
+    "draft": 633,
     "archived": 21,
-    "reviewReadyDrafts": 629
+    "reviewReadyDrafts": 633
   },
   "nextReviewTargets": [
     {
@@ -92,21 +92,21 @@
     },
     {
       "cluster": "AI deployment",
-      "drafts": 151,
+      "drafts": 153,
       "examples": [
         "Agent 部署怎么做：从聊天助手到可上线工作流",
+        "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
         "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
         "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
-        "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-        "API Key 无效或缺失排查清单"
+        "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
       ],
       "published": 3,
-      "reviewReadyDrafts": 151,
-      "total": 158
+      "reviewReadyDrafts": 153,
+      "total": 160
     },
     {
       "cluster": "Agent and memory",
-      "drafts": 53,
+      "drafts": 55,
       "examples": [
         "Agent 部署怎么做：从聊天助手到可上线工作流",
         "Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认",
@@ -115,26 +115,26 @@
         "Agent 可观测性怎么做：日志、轨迹、成本和失败复盘"
       ],
       "published": 0,
-      "reviewReadyDrafts": 53,
-      "total": 53
+      "reviewReadyDrafts": 55,
+      "total": 55
     },
     {
       "cluster": "RAG and knowledge base",
-      "drafts": 30,
+      "drafts": 31,
       "examples": [
+        "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
         "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
         "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
         "AnythingLLM 怎么搭本地知识库：从文档聊天到 Agent 原型",
-        "Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection",
-        "Dify、Coze、Flowise 怎么选：做 Agent 和知识库前先看边界"
+        "Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection"
       ],
       "published": 0,
-      "reviewReadyDrafts": 30,
-      "total": 30
+      "reviewReadyDrafts": 31,
+      "total": 31
     },
     {
       "cluster": "Industry AI prompts",
-      "drafts": 26,
+      "drafts": 27,
       "examples": [
         "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
         "AI 提示词怎么写才好用：全行业都能套的 5 段式框架",
@@ -143,8 +143,8 @@
         "Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection"
       ],
       "published": 0,
-      "reviewReadyDrafts": 26,
-      "total": 26
+      "reviewReadyDrafts": 27,
+      "total": 27
     }
   ],
   "categories": [
@@ -212,6 +212,13 @@
       "total": 29
     },
     {
+      "category": "AI 提示词",
+      "drafts": 18,
+      "published": 0,
+      "reviewReadyDrafts": 18,
+      "total": 18
+    },
+    {
       "category": "新手教程",
       "drafts": 17,
       "published": 0,
@@ -219,18 +226,11 @@
       "total": 17
     },
     {
-      "category": "AI 提示词",
+      "category": "AI 部署",
       "drafts": 17,
       "published": 0,
       "reviewReadyDrafts": 17,
       "total": 17
-    },
-    {
-      "category": "AI 部署",
-      "drafts": 16,
-      "published": 0,
-      "reviewReadyDrafts": 16,
-      "total": 16
     },
     {
       "category": "接单平台",
@@ -324,6 +324,20 @@
       "total": 1
     },
     {
+      "category": "AI 记忆",
+      "drafts": 1,
+      "published": 0,
+      "reviewReadyDrafts": 1,
+      "total": 1
+    },
+    {
+      "category": "AI Agent",
+      "drafts": 1,
+      "published": 0,
+      "reviewReadyDrafts": 1,
+      "total": 1
+    },
+    {
       "category": "报价指南",
       "drafts": 2,
       "published": 1,
@@ -341,10 +355,10 @@
   "searchIntents": [
     {
       "name": "informational",
-      "drafts": 570,
+      "drafts": 574,
       "published": 9,
-      "reviewReadyDrafts": 570,
-      "total": 585
+      "reviewReadyDrafts": 574,
+      "total": 589
     },
     {
       "name": "commercial",
