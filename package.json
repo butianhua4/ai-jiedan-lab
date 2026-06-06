@@ -20,6 +20,7 @@
     "automation:all": "tsx scripts/run-project-automation.ts",
     "automation:digest": "tsx scripts/automation-digest.ts",
     "automation:review": "tsx scripts/review-automation.ts",
+    "automation:review-plan": "tsx scripts/review-batch-plan.ts",
     "automation:gate": "tsx scripts/automation-gate.ts",
     "automation:publish-pack": "tsx scripts/publish-readiness-pack.ts",
     "automation:review-preflight": "tsx scripts/review-candidate-preflight.ts",

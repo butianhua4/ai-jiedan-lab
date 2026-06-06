@@ -1,6 +1,6 @@
 # Review Automation Queue
 
-Generated at: 2026-06-06T11:04:01.754Z
+Generated at: 2026-06-06T11:08:17.721Z
 
 This automation does not publish articles. It only ranks safe-looking draft candidates for human review.
 

@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T11:04:54.364Z
+Generated at: 2026-06-06T11:09:12.252Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -26,6 +26,17 @@ This digest is read-only. It summarizes automation reports and does not publish 
 | Agent and memory | 260 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | Industry AI prompts | 260 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | RAG and knowledge base | 254 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+
+## Review Batch Plan
+
+- Planned batches: 3
+- Planned candidates: 9
+
+| Batch | Topic | Candidates |
+| --- | --- | --- |
+| 1 | Agent 部署、工具调用和记忆 | 3 |
+| 2 | RAG、知识库和向量检索 | 3 |
+| 3 | 全行业 AI 提示词和工作流模板 | 3 |
 
 ## Preflight
 
@@ -65,7 +76,7 @@ This digest is read-only. It summarizes automation reports and does not publish 
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T11:04:36.149Z
+- Latest check: 2026-06-06T11:08:50.499Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85

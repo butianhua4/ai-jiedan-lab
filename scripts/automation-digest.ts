@@ -57,6 +57,9 @@ const reports = {
   project: readJson<{ articles: { publicPublished: number; publishableNow: unknown[]; statusCounts: Record<string, number> } }>(
     "content/automation/project-status.json",
   ),
+  reviewPlan: readJson<{ batches: Array<{ batch: number; candidates: unknown[]; topic: string }>; totals: { plannedBatches: number; plannedCandidates: number } }>(
+    "content/automation/review-batch-plan.json",
+  ),
   review: readJson<{ counts: { candidates: number; returned: number; rejected: Record<string, number> }; recommendedToday: ReviewCandidate[] }>(
     "content/automation/review-candidates.json",
   ),
@@ -95,6 +98,11 @@ const payload = {
     candidates: reports.review.data?.counts.candidates ?? null,
     returned: reports.review.data?.counts.returned ?? null,
     recommendedToday: reports.review.data?.recommendedToday ?? [],
+  },
+  reviewPlan: {
+    batches: reports.reviewPlan.data?.batches.slice(0, 3) ?? [],
+    plannedBatches: reports.reviewPlan.data?.totals.plannedBatches ?? null,
+    plannedCandidates: reports.reviewPlan.data?.totals.plannedCandidates ?? null,
   },
   preflight: {
     checked: reports.preflight.data?.summary.checked ?? null,
@@ -183,6 +191,15 @@ function toMarkdown(data: typeof payload) {
     "| Cluster | Opportunity | Title | File |",
     "| --- | --- | --- | --- |",
     ...data.reviewQueue.recommendedToday.map((item) => `| ${item.cluster} | ${item.opportunityScore} | ${item.title} | ${item.file} |`),
+    "",
+    "## Review Batch Plan",
+    "",
+    `- Planned batches: ${data.reviewPlan.plannedBatches}`,
+    `- Planned candidates: ${data.reviewPlan.plannedCandidates}`,
+    "",
+    "| Batch | Topic | Candidates |",
+    "| --- | --- | --- |",
+    ...data.reviewPlan.batches.map((item) => `| ${item.batch} | ${item.topic} | ${item.candidates.length} |`),
     "",
     "## Preflight",
     "",

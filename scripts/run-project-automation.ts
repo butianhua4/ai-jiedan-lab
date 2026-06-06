@@ -19,6 +19,7 @@ const tasks: Task[] = [
   { title: "Run SEO safety check", args: ["run", "--silent", "seo:check"], outputFile: "content/automation/seo-check.json" },
   { title: "Generate SEO opportunity map", args: ["run", "seo:opportunities"] },
   { title: "Generate content opportunity backlog", args: ["run", "content:opportunities"] },
+  { title: "Generate review batch plan", args: ["run", "automation:review-plan"] },
   { title: "Run searchability check", args: ["run", "--silent", "searchability:check"], outputFile: "content/automation/searchability-check.json" },
   { title: "Run automation gate", args: ["run", "automation:gate"] },
   { title: "Generate automation digest", args: ["run", "automation:digest"] },

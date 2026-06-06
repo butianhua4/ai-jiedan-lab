@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-06T11:04:54.438Z",
+  "generatedAt": "2026-06-06T11:09:12.292Z",
   "ok": true,
   "summary": {
-    "checks": 17,
+    "checks": 18,
     "failed": 0,
-    "passed": 17
+    "passed": 18
   },
   "failed": [],
   "checks": [
@@ -16,6 +16,11 @@
       "name": "publish pack matches recommended review files",
       "ok": true,
       "detail": "review=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx, content/blog/industry-ai-prompts-template-library-2026.mdx, content/blog/ai-model-selection-customer-service-guide.mdx pack=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx, content/blog/industry-ai-prompts-template-library-2026.mdx, content/blog/ai-model-selection-customer-service-guide.mdx"
+    },
+    {
+      "name": "review batch plan stays manual and has candidates",
+      "ok": true,
+      "detail": "batches=3, candidates=9"
     },
     {
       "name": "publish pack includes source verification tasks",

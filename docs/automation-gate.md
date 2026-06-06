@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-06T11:04:54.438Z
+Generated at: 2026-06-06T11:09:12.292Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 17
-- Passed: 17
+- Checks: 18
+- Passed: 18
 - Failed: 0
 
 ## Checks
@@ -16,6 +16,7 @@ Overall: PASS
 | --- | --- | --- |
 | review automation never auto-publishes | PASS |  |
 | publish pack matches recommended review files | PASS | review=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx, content/blog/industry-ai-prompts-template-library-2026.mdx, content/blog/ai-model-selection-customer-service-guide.mdx pack=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx, content/blog/industry-ai-prompts-template-library-2026.mdx, content/blog/ai-model-selection-customer-service-guide.mdx |
+| review batch plan stays manual and has candidates | PASS | batches=3, candidates=9 |
 | publish pack includes source verification tasks | PASS | 3 item(s) covered |
 | publish pack includes human decision and risk context | PASS | 3 item(s) covered |
 | recommended review candidates pass preflight | PASS | failed=0 |

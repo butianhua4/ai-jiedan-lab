@@ -12,6 +12,11 @@ async function main() {
   const reviewQueue = readJson<{ guardrails: { autoPublish: boolean }; recommendedToday: Array<{ cluster: string; file: string }> }>(
     "content/automation/review-candidates.json",
   );
+  const reviewPlan = readJson<{
+    batches?: Array<{ candidates?: unknown[] }>;
+    guardrails: { autoMarkReview: boolean; autoPublish: boolean };
+    totals: { plannedBatches: number; plannedCandidates: number };
+  }>("content/automation/review-batch-plan.json");
   const publishPack = readJson<{
     guardrails: { autoPublish: boolean };
     items: Array<{
@@ -69,6 +74,16 @@ async function main() {
       name: "publish pack matches recommended review files",
       ok: sameList(packFiles, reviewFiles),
       detail: `review=${reviewFiles.join(", ")} pack=${packFiles.join(", ")}`,
+    },
+    {
+      name: "review batch plan stays manual and has candidates",
+      ok:
+        reviewPlan.guardrails.autoMarkReview === false &&
+        reviewPlan.guardrails.autoPublish === false &&
+        reviewPlan.totals.plannedBatches >= 3 &&
+        reviewPlan.totals.plannedCandidates >= 3 &&
+        Boolean(reviewPlan.batches?.every((batch) => (batch.candidates?.length || 0) > 0)),
+      detail: `batches=${reviewPlan.totals.plannedBatches}, candidates=${reviewPlan.totals.plannedCandidates}`,
     },
     {
       name: "publish pack includes source verification tasks",
