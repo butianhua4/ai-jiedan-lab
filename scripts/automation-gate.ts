@@ -197,6 +197,19 @@ async function main() {
       waveItemsMissingPublicLinkSuggestion: number;
     };
   }>("content/automation/internal-link-opportunity-audit.json");
+  const searchSnippets = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    summary: {
+      blockingItems: number;
+      expansionItems: number;
+      publicItems: number;
+      recommendedItems: number;
+      scopedItems: number;
+      warningItems: number;
+      waveItems: number;
+      waveItemsWithBlockingIssues: number;
+    };
+  }>("content/automation/search-snippet-readiness-audit.json");
   const articles = (await articleFiles()).map(readArticle);
 
   const reviewFiles = reviewQueue.recommendedToday.map((item) => item.file);
@@ -353,6 +366,26 @@ async function main() {
         internalLinks.summary.waveItemsMissingPublicLinkSuggestion === 0 &&
         internalLinks.summary.candidateItemsMissingPublicLinkSuggestion === 0,
       detail: `wave=${internalLinks.summary.waveItems}, waveMissing=${internalLinks.summary.waveItemsMissingPublicLinkSuggestion}, candidateMissing=${internalLinks.summary.candidateItemsMissingPublicLinkSuggestion}`,
+    },
+    {
+      name: "search snippet readiness audit is read-only and covers public plus expansion items",
+      ok:
+        searchSnippets.guardrails.autoEditArticles === false &&
+        searchSnippets.guardrails.autoMarkReview === false &&
+        searchSnippets.guardrails.autoPublish === false &&
+        searchSnippets.summary.publicItems === projectStatus.articles.publicPublished &&
+        searchSnippets.summary.expansionItems === publicExpansion.summary.items &&
+        searchSnippets.summary.scopedItems >= projectStatus.articles.publicPublished + publicExpansion.summary.items,
+      detail: `public=${searchSnippets.summary.publicItems}, expansion=${searchSnippets.summary.expansionItems}, scoped=${searchSnippets.summary.scopedItems}`,
+    },
+    {
+      name: "search snippet readiness audit has no blocking Wave 1 issues",
+      ok:
+        searchSnippets.summary.blockingItems === 0 &&
+        searchSnippets.summary.waveItems === waveApprovalPacket.summary.items &&
+        searchSnippets.summary.recommendedItems === reviewQueue.recommendedToday.length &&
+        searchSnippets.summary.waveItemsWithBlockingIssues === 0,
+      detail: `blocking=${searchSnippets.summary.blockingItems}, wave=${searchSnippets.summary.waveItems}, waveBlocking=${searchSnippets.summary.waveItemsWithBlockingIssues}, warnings=${searchSnippets.summary.warningItems}`,
     },
     {
       name: "SEO opportunity map has review-ready drafts",

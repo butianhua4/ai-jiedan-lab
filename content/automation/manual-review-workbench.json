@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T13:07:06.574Z",
+  "generatedAt": "2026-06-06T13:38:38.259Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -815,7 +815,7 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 69,
+    "filesScanned": 71,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
     "watchMentions": 387
@@ -900,6 +900,50 @@
           }
         ],
         "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+      }
+    ]
+  },
+  "searchSnippets": {
+    "summary": {
+      "blockingItems": 0,
+      "expansionItems": 19,
+      "publicItems": 15,
+      "recommendedItems": 3,
+      "scopedItems": 34,
+      "warningItems": 13,
+      "waveItems": 3,
+      "waveItemsWithBlockingIssues": 0
+    },
+    "waveItems": [
+      {
+        "descriptionLength": 69,
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "issues": [],
+        "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "titleLength": 47,
+        "warnings": []
+      },
+      {
+        "descriptionLength": 52,
+        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "issues": [],
+        "slug": "ai-model-selection-customer-service-guide",
+        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+        "titleLength": 29,
+        "warnings": [
+          "description may be thin for search snippets",
+          "primary keyword is not an exact title substring"
+        ]
+      },
+      {
+        "descriptionLength": 67,
+        "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "issues": [],
+        "slug": "industry-ai-prompts-template-library-2026",
+        "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+        "titleLength": 37,
+        "warnings": []
       }
     ]
   },
@@ -1015,6 +1059,7 @@
     "Use docs/wave-publish-simulation.md for the exact post-approval mark-review and publish dry-run path.",
     "Use docs/content-integrity-audit.md to confirm encoding, metadata, and indexing boundaries before approval.",
     "Use docs/internal-link-opportunity-audit.md to add public internal links during manual review.",
+    "Use docs/search-snippet-readiness-audit.md to review title, description, and slug snippet quality.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.",
     "Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.",
     "Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.",

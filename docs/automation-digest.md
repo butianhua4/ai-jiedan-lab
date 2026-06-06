@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T13:07:06.700Z
+Generated at: 2026-06-06T13:38:24.244Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -29,6 +29,14 @@ This digest is read-only. It summarizes automation reports and does not publish 
 - Candidate items missing suggestions: 0
 - Wave items: 3
 - Wave items missing suggestions: 0
+
+## Search Snippet Readiness
+
+- Scoped items: 34
+- Blocking items: 0
+- Warning items: 13
+- Wave items: 3
+- Wave items with blocking issues: 0
 
 ## Publishing Boundary
 
@@ -175,7 +183,7 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 69
+- Traffic claim files scanned: 71
 - Traffic claim watch mentions: 387
 
 ## Preflight
@@ -262,7 +270,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T13:06:34.160Z
+- Latest check: 2026-06-06T13:38:00.205Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85

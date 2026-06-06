@@ -212,6 +212,28 @@ type InternalLinks = {
   }>;
 };
 
+type SearchSnippets = {
+  summary: {
+    blockingItems: number;
+    expansionItems: number;
+    publicItems: number;
+    recommendedItems: number;
+    scopedItems: number;
+    warningItems: number;
+    waveItems: number;
+    waveItemsWithBlockingIssues: number;
+  };
+  waveItems: Array<{
+    descriptionLength: number;
+    file: string;
+    issues: string[];
+    slug: string;
+    title: string;
+    titleLength: number;
+    warnings: string[];
+  }>;
+};
+
 type ProjectStatus = {
   articles: { publicPublished: number; publishableNow: unknown[]; statusCounts: Record<string, number> };
 };
@@ -237,6 +259,7 @@ function main() {
   const trafficClaimGuard = readJson<TrafficClaimGuard>("content/automation/traffic-claim-guard.json");
   const contentIntegrity = readJson<ContentIntegrity>("content/automation/content-integrity-audit.json");
   const internalLinks = readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json");
+  const searchSnippets = readJson<SearchSnippets>("content/automation/search-snippet-readiness-audit.json");
   const deploymentCoverage = readJson<DeploymentCoverage>("content/automation/ai-deployment-coverage.json");
   const promptCoverage = readJson<PromptCoverage>("content/automation/industry-prompt-coverage.json");
   const projectStatus = readJson<ProjectStatus>("content/automation/project-status.json");
@@ -372,6 +395,18 @@ function main() {
         title: item.title,
       })),
     },
+    searchSnippets: {
+      summary: searchSnippets.summary,
+      waveItems: searchSnippets.waveItems.map((item) => ({
+        descriptionLength: item.descriptionLength,
+        file: item.file,
+        issues: item.issues,
+        slug: item.slug,
+        title: item.title,
+        titleLength: item.titleLength,
+        warnings: item.warnings,
+      })),
+    },
     deploymentCoverage: {
       summary: deploymentCoverage.summary,
       topTopics: deploymentCoverage.coverage.slice(0, 6).map((item) => ({
@@ -404,6 +439,7 @@ function main() {
       trafficClaimGuard,
       contentIntegrity,
       internalLinks,
+      searchSnippets,
     ),
   };
 
@@ -430,6 +466,7 @@ function buildNextActions(
   trafficClaimGuard: TrafficClaimGuard,
   contentIntegrity: ContentIntegrity,
   internalLinks: InternalLinks,
+  searchSnippets: SearchSnippets,
 ) {
   if (projectStatus.articles.publishableNow.length > 0) return ["Stop and inspect publishableNow before adding more review candidates."];
   if (!liveSearch.ok || liveSearch.failedChecks.length > 0) return ["Fix live search surface failures before any publishing action."];
@@ -457,6 +494,7 @@ function buildNextActions(
   if (trafficClaimGuard.summary.unsafeClaims > 0) return ["Remove unsupported traffic claims before reporting traffic status."];
   if (contentIntegrity.summary.blockingItems > 0) return ["Fix content integrity blockers before any mark:review action."];
   if (internalLinks.summary.waveItemsMissingPublicLinkSuggestion > 0) return ["Resolve Wave 1 internal link suggestion gaps before publishing."];
+  if (searchSnippets.summary.waveItemsWithBlockingIssues > 0) return ["Fix Wave 1 search snippet blockers before publishing."];
   if (
     reviewCoverage.summary.itemsMissingOfficialSources > 0 ||
     reviewCoverage.summary.itemsMissingFactCheckQueries > 0 ||
@@ -470,6 +508,7 @@ function buildNextActions(
     "Use docs/wave-publish-simulation.md for the exact post-approval mark-review and publish dry-run path.",
     "Use docs/content-integrity-audit.md to confirm encoding, metadata, and indexing boundaries before approval.",
     "Use docs/internal-link-opportunity-audit.md to add public internal links during manual review.",
+    "Use docs/search-snippet-readiness-audit.md to review title, description, and slug snippet quality.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.",
     "Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.",
     "Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.",
@@ -564,6 +603,18 @@ function toMarkdown(payload: {
       linksToPublicArticles: number;
       suggestions: Array<{ title: string; url: string }>;
       title: string;
+    }>;
+  };
+  searchSnippets: {
+    summary: SearchSnippets["summary"];
+    waveItems: Array<{
+      descriptionLength: number;
+      file: string;
+      issues: string[];
+      slug: string;
+      title: string;
+      titleLength: number;
+      warnings: string[];
     }>;
   };
   deploymentCoverage: {
@@ -766,6 +817,20 @@ function toMarkdown(payload: {
     "| --- | --- | --- | --- |",
     ...payload.internalLinks.waveItems.map((item) => (
       `| ${item.linksToPublicArticles}/${item.currentInternalLinks} | ${item.suggestions.map((suggestion) => `${suggestion.title} (${suggestion.url})`).join("<br>")} | ${item.title} | ${item.file} |`
+    )),
+    "",
+    "## Search Snippet Readiness",
+    "",
+    `- Scoped items: ${payload.searchSnippets.summary.scopedItems}`,
+    `- Blocking items: ${payload.searchSnippets.summary.blockingItems}`,
+    `- Warning items: ${payload.searchSnippets.summary.warningItems}`,
+    `- Wave items: ${payload.searchSnippets.summary.waveItems}`,
+    `- Wave items with blocking issues: ${payload.searchSnippets.summary.waveItemsWithBlockingIssues}`,
+    "",
+    "| Title chars | Description chars | Issues | Warnings | Slug | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- |",
+    ...payload.searchSnippets.waveItems.map((item) => (
+      `| ${item.titleLength} | ${item.descriptionLength} | ${item.issues.length ? item.issues.join("<br>") : "none"} | ${item.warnings.length ? item.warnings.join("<br>") : "none"} | ${item.slug} | ${item.title} | ${item.file} |`
     )),
     "",
     "## AI Deployment Coverage",

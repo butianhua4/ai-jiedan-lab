@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-06T13:06:57.262Z",
+  "generatedAt": "2026-06-06T13:37:17.966Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 69,
+    "filesScanned": 71,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
     "watchMentions": 387

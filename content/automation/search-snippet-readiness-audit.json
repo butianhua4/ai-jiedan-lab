@@ -1,0 +1,596 @@
+{
+  "generatedAt": "2026-06-06T13:38:23.194Z",
+  "guardrails": {
+    "autoEditArticles": false,
+    "autoMarkReview": false,
+    "autoPublish": false,
+    "note": "Read-only search snippet readiness audit. It does not edit title, description, slug, status, or noindex."
+  },
+  "summary": {
+    "blockingItems": 0,
+    "expansionItems": 19,
+    "publicItems": 15,
+    "recommendedItems": 3,
+    "scopedItems": 34,
+    "warningItems": 13,
+    "waveItems": 3,
+    "waveItemsWithBlockingIssues": 0
+  },
+  "blockingItems": [],
+  "warningItems": [
+    {
+      "description": "整理 AI API Key 安全管理清单，覆盖环境变量、最小权限、服务端调用、密钥轮换、日志脱敏、泄露应急和客户交付。",
+      "descriptionLength": 59,
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "AI API Key 安全管理",
+      "scope": [
+        "expansion"
+      ],
+      "slug": "ai-api-key-security-rotation-guide",
+      "status": "draft",
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "titleLength": 33,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "整理 AI 自动化项目报价思路，覆盖需求范围、工具选型、RAG、Agent、部署、维护、验收标准和风险边界。",
+      "descriptionLength": 54,
+      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "AI 自动化项目报价",
+      "scope": [
+        "expansion"
+      ],
+      "slug": "ai-automation-project-pricing-scope-guide",
+      "status": "draft",
+      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+      "titleLength": 37,
+      "warnings": [
+        "description may be thin for search snippets",
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。",
+      "descriptionLength": 52,
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "客服 AI 模型选型",
+      "scope": [
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "slug": "ai-model-selection-customer-service-guide",
+      "status": "draft",
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "titleLength": 29,
+      "warnings": [
+        "description may be thin for search snippets",
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "讲清团队提示词库的搭建方式，覆盖行业分类、版本管理、示例输出、适用边界、审核流程、失败案例和工具导航。",
+      "descriptionLength": 51,
+      "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "团队 AI 提示词库",
+      "scope": [
+        "expansion"
+      ],
+      "slug": "ai-prompt-library-team-knowledge-base-guide",
+      "status": "draft",
+      "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
+      "titleLength": 28,
+      "warnings": [
+        "description may be thin for search snippets"
+      ]
+    },
+    {
+      "description": "新手用 Codex 接触 Next.js 或 Node.js 项目时，npm install 报错很常见。本文用可执行步骤解释如何判断 Node 版本、依赖冲突、网络和权限问题，避免在没有把握时承诺客户。",
+      "descriptionLength": 102,
+      "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
+      "issues": [],
+      "primaryKeyword": "Codex npm install 报错怎么办",
+      "scope": [
+        "public"
+      ],
+      "slug": "codex-npm-install-error-beginner-fix",
+      "status": "published",
+      "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
+      "titleLength": 33,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "面向新手整理 Dify 工作流错误处理方法，覆盖输入变量校验、节点失败、条件分支、重试、人工兜底和上线前测试。",
+      "descriptionLength": 55,
+      "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "Dify 工作流错误处理",
+      "scope": [
+        "expansion"
+      ],
+      "slug": "dify-workflow-error-handling-guide",
+      "status": "draft",
+      "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+      "titleLength": 29,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "解释 Dify Workflow 与 Agent 的选择方法，覆盖固定流程、自由工具调用、知识库问答、人工审核、成本和上线风险。",
+      "descriptionLength": 64,
+      "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "Dify Workflow 和 Agent 区别",
+      "scope": [
+        "expansion"
+      ],
+      "slug": "dify-workflow-vs-agent-guide",
+      "status": "draft",
+      "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+      "titleLength": 40,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "新手给第一个 Upwork 项目报价时，不要只看别人报多少。本文从工时、沟通成本、平台抽成、修改次数和交付风险出发，给你一个谨慎的报价检查流程。",
+      "descriptionLength": 72,
+      "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+      "issues": [],
+      "primaryKeyword": "第一个 Upwork 项目怎么报价",
+      "scope": [
+        "public"
+      ],
+      "slug": "first-upwork-project-pricing-checklist",
+      "status": "published",
+      "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+      "titleLength": 28,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "面向新手整理 Docker 使用 NVIDIA GPU 的部署检查点，覆盖驱动、NVIDIA Container Toolkit、Docker runtime、nvidia-smi、CUDA 镜像和排错。",
+      "descriptionLength": 102,
+      "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "Docker 使用 NVIDIA GPU",
+      "scope": [
+        "expansion"
+      ],
+      "slug": "gpu-docker-nvidia-container-toolkit-guide",
+      "status": "draft",
+      "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
+      "titleLength": 48,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "整理 Open WebUI Functions 与 Pipelines 的使用边界，覆盖 provider 接入、RAG、消息过滤、外部工作流、安全和部署检查。",
+      "descriptionLength": 80,
+      "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "Open WebUI Functions Pipelines",
+      "scope": [
+        "expansion"
+      ],
+      "slug": "open-webui-functions-pipelines-deployment-guide",
+      "status": "draft",
+      "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+      "titleLength": 52,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "Payoneer、Wise、PayPal 都可能用于跨境收款，但适用场景、费用、平台支持和账户风险不同。本文用新手能理解的方式说明差异，并提醒先遵守平台内收款规则。",
+      "descriptionLength": 82,
+      "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+      "issues": [],
+      "primaryKeyword": "Payoneer Wise PayPal 区别",
+      "scope": [
+        "public"
+      ],
+      "slug": "payoneer-wise-paypal-beginner-comparison",
+      "status": "published",
+      "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+      "titleLength": 39,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "Upwork 新手投标后没人回复，通常不是一句话能解决的问题。本文帮你检查项目选择、开头文案、客户问题、报价边界和风险信号，避免用夸张承诺或批量复制的方式投标。",
+      "descriptionLength": 80,
+      "file": "content/blog/upwork-proposal-no-reply-checklist.mdx",
+      "issues": [],
+      "primaryKeyword": "Upwork Proposal 没人回怎么办",
+      "scope": [
+        "public"
+      ],
+      "slug": "upwork-proposal-no-reply-checklist",
+      "status": "published",
+      "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
+      "titleLength": 32,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "Vercel 部署 Next.js 项目时经常因为环境变量缺失失败。本文解释什么是环境变量、如何看日志、如何使用 .env.example、什么时候不能让客户直接发真实密钥。",
+      "descriptionLength": 87,
+      "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "Vercel 环境变量缺失怎么办",
+      "scope": [
+        "public"
+      ],
+      "slug": "vercel-env-variable-missing-beginner-guide",
+      "status": "published",
+      "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+      "titleLength": 27,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    }
+  ],
+  "publicItems": [
+    {
+      "description": "新手遇到“Codex 怎么做第一个网页”时，通常不知道如何判断范围、准备材料、识别风险和写出稳妥回复。读完后能按步骤做初步判断，知道该问客户什么、该测试什么、哪些情况需要暂缓。",
+      "descriptionLength": 88,
+      "file": "content/blog/build-first-webpage-with-codex.mdx",
+      "issues": [],
+      "primaryKeyword": "Codex 怎么做第一个网页",
+      "scope": [
+        "public"
+      ],
+      "slug": "build-first-webpage-with-codex",
+      "status": "published",
+      "title": "Codex 怎么做第一个网页",
+      "titleLength": 14,
+      "warnings": []
+    },
+    {
+      "description": "新手遇到“Codex 生成代码后怎么审核：交付前检查清单”时，通常不知道如何判断范围、准备材料、识别风险和写出稳妥回复。读完后能按步骤做初步判断，知道该问客户什么、该测试什么、哪些情况需要暂缓。",
+      "descriptionLength": 97,
+      "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+      "issues": [],
+      "primaryKeyword": "Codex 生成代码后怎么审核：交付前检查清单",
+      "scope": [
+        "public"
+      ],
+      "slug": "codex-code-review-delivery-checklist",
+      "status": "published",
+      "title": "Codex 生成代码后怎么审核：交付前检查清单",
+      "titleLength": 23,
+      "warnings": []
+    },
+    {
+      "description": "新手遇到“Codex 生成代码后怎么审核”时，通常不知道如何判断范围、准备材料、识别风险和写出稳妥回复。读完后能按步骤做初步判断，知道该问客户什么、该测试什么、哪些情况需要暂缓。",
+      "descriptionLength": 89,
+      "file": "content/blog/codex-generated-code-review-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "Codex 生成代码后怎么审核",
+      "scope": [
+        "public"
+      ],
+      "slug": "codex-generated-code-review-guide",
+      "status": "published",
+      "title": "Codex 生成代码后怎么审核",
+      "titleLength": 15,
+      "warnings": []
+    },
+    {
+      "description": "新手遇到“Codex 和 GitHub 怎么配合：提交代码前检查”时，通常不知道如何判断范围、准备材料、识别风险和写出稳妥回复。读完后能按步骤做初步判断，知道该问客户什么、该测试什么、哪些情况需要暂缓。",
+      "descriptionLength": 101,
+      "file": "content/blog/codex-github-before-commit-checklist.mdx",
+      "issues": [],
+      "primaryKeyword": "Codex 和 GitHub 怎么配合：提交代码前检查",
+      "scope": [
+        "public"
+      ],
+      "slug": "codex-github-before-commit-checklist",
+      "status": "published",
+      "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
+      "titleLength": 27,
+      "warnings": []
+    },
+    {
+      "description": "新手遇到“Codex 安装失败怎么办”时，通常不知道如何判断范围、准备材料、识别风险和写出稳妥回复。读完后能按步骤做初步判断，知道该问客户什么、该测试什么、哪些情况需要暂缓。",
+      "descriptionLength": 87,
+      "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+      "issues": [],
+      "primaryKeyword": "Codex 安装失败怎么办",
+      "scope": [
+        "public"
+      ],
+      "slug": "codex-install-failed-beginner-fix",
+      "status": "published",
+      "title": "Codex 安装失败怎么办",
+      "titleLength": 13,
+      "warnings": []
+    },
+    {
+      "description": "新手用 Codex 接触 Next.js 或 Node.js 项目时，npm install 报错很常见。本文用可执行步骤解释如何判断 Node 版本、依赖冲突、网络和权限问题，避免在没有把握时承诺客户。",
+      "descriptionLength": 102,
+      "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
+      "issues": [],
+      "primaryKeyword": "Codex npm install 报错怎么办",
+      "scope": [
+        "public"
+      ],
+      "slug": "codex-npm-install-error-beginner-fix",
+      "status": "published",
+      "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
+      "titleLength": 33,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "新手遇到“Codex 接 Upwork 小单怎么判断：风险检查清单”时，通常不知道如何判断范围、准备材料、识别风险和写出稳妥回复。读完后能按步骤做初步判断，知道该问客户什么、该测试什么、哪些情况需要暂缓。",
+      "descriptionLength": 102,
+      "file": "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+      "issues": [],
+      "primaryKeyword": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+      "scope": [
+        "public"
+      ],
+      "slug": "codex-upwork-small-job-risk-checklist",
+      "status": "published",
+      "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+      "titleLength": 28,
+      "warnings": []
+    },
+    {
+      "description": "新手遇到“Codex 部署 Vercel 前检查什么：上线前清单”时，通常不知道如何判断范围、准备材料、识别风险和写出稳妥回复。读完后能按步骤做初步判断，知道该问客户什么、该测试什么、哪些情况需要暂缓。",
+      "descriptionLength": 101,
+      "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+      "issues": [],
+      "primaryKeyword": "Codex 部署 Vercel 前检查什么：上线前清单",
+      "scope": [
+        "public"
+      ],
+      "slug": "codex-vercel-deploy-preflight-checklist",
+      "status": "published",
+      "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+      "titleLength": 27,
+      "warnings": []
+    },
+    {
+      "description": "新手遇到“Codex 和 Claude Code 怎么选：新手对比清单”时，通常不知道如何判断范围、准备材料、识别风险和写出稳妥回复。读完后能按步骤做初步判断，知道该问客户什么、该测试什么、哪些情况需要暂缓。",
+      "descriptionLength": 104,
+      "file": "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
+      "issues": [],
+      "primaryKeyword": "Codex 和 Claude Code 怎么选：新手对比清单",
+      "scope": [
+        "public"
+      ],
+      "slug": "codex-vs-claude-code-beginner-checklist",
+      "status": "published",
+      "title": "Codex 和 Claude Code 怎么选：新手对比清单",
+      "titleLength": 30,
+      "warnings": []
+    },
+    {
+      "description": "新手给第一个 Upwork 项目报价时，不要只看别人报多少。本文从工时、沟通成本、平台抽成、修改次数和交付风险出发，给你一个谨慎的报价检查流程。",
+      "descriptionLength": 72,
+      "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+      "issues": [],
+      "primaryKeyword": "第一个 Upwork 项目怎么报价",
+      "scope": [
+        "public"
+      ],
+      "slug": "first-upwork-project-pricing-checklist",
+      "status": "published",
+      "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+      "titleLength": 28,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "Payoneer、Wise、PayPal 都可能用于跨境收款，但适用场景、费用、平台支持和账户风险不同。本文用新手能理解的方式说明差异，并提醒先遵守平台内收款规则。",
+      "descriptionLength": 82,
+      "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+      "issues": [],
+      "primaryKeyword": "Payoneer Wise PayPal 区别",
+      "scope": [
+        "public"
+      ],
+      "slug": "payoneer-wise-paypal-beginner-comparison",
+      "status": "published",
+      "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+      "titleLength": 39,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "Upwork 新手经常遇到客户需求很短、范围不清、预算不明的项目。本文提供需求分析步骤、追问模板、风险提醒和是否投标的判断方法。",
+      "descriptionLength": 64,
+      "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+      "issues": [],
+      "primaryKeyword": "Upwork 客户需求太模糊怎么办",
+      "scope": [
+        "public"
+      ],
+      "slug": "upwork-client-requirements-analysis-beginner",
+      "status": "published",
+      "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+      "titleLength": 27,
+      "warnings": []
+    },
+    {
+      "description": "Upwork 新手投标后没人回复，通常不是一句话能解决的问题。本文帮你检查项目选择、开头文案、客户问题、报价边界和风险信号，避免用夸张承诺或批量复制的方式投标。",
+      "descriptionLength": 80,
+      "file": "content/blog/upwork-proposal-no-reply-checklist.mdx",
+      "issues": [],
+      "primaryKeyword": "Upwork Proposal 没人回怎么办",
+      "scope": [
+        "public"
+      ],
+      "slug": "upwork-proposal-no-reply-checklist",
+      "status": "published",
+      "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
+      "titleLength": 32,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "Vercel 部署 Next.js 项目时经常因为环境变量缺失失败。本文解释什么是环境变量、如何看日志、如何使用 .env.example、什么时候不能让客户直接发真实密钥。",
+      "descriptionLength": 87,
+      "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "Vercel 环境变量缺失怎么办",
+      "scope": [
+        "public"
+      ],
+      "slug": "vercel-env-variable-missing-beginner-guide",
+      "status": "published",
+      "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+      "titleLength": 27,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "新手遇到“Codex 是什么新手怎么开始”时，通常不知道如何判断范围、准备材料、识别风险和写出稳妥回复。读完后能按步骤做初步判断，知道该问客户什么、该测试什么、哪些情况需要暂缓。",
+      "descriptionLength": 89,
+      "file": "content/blog/what-is-codex-beginner-start.mdx",
+      "issues": [],
+      "primaryKeyword": "Codex 是什么新手怎么开始",
+      "scope": [
+        "public"
+      ],
+      "slug": "what-is-codex-beginner-start",
+      "status": "published",
+      "title": "Codex 是什么新手怎么开始",
+      "titleLength": 15,
+      "warnings": []
+    }
+  ],
+  "recommendedItems": [
+    {
+      "description": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
+      "descriptionLength": 69,
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "AI Agent 部署",
+      "scope": [
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
+      "status": "draft",
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "titleLength": 47,
+      "warnings": []
+    },
+    {
+      "description": "整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。",
+      "descriptionLength": 52,
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "客服 AI 模型选型",
+      "scope": [
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "slug": "ai-model-selection-customer-service-guide",
+      "status": "draft",
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "titleLength": 29,
+      "warnings": [
+        "description may be thin for search snippets",
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。",
+      "descriptionLength": 67,
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "issues": [],
+      "primaryKeyword": "全行业 AI 提示词模板",
+      "scope": [
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "slug": "industry-ai-prompts-template-library-2026",
+      "status": "draft",
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "titleLength": 37,
+      "warnings": []
+    }
+  ],
+  "waveItems": [
+    {
+      "description": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
+      "descriptionLength": 69,
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "AI Agent 部署",
+      "scope": [
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
+      "status": "draft",
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "titleLength": 47,
+      "warnings": []
+    },
+    {
+      "description": "整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。",
+      "descriptionLength": 52,
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "客服 AI 模型选型",
+      "scope": [
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "slug": "ai-model-selection-customer-service-guide",
+      "status": "draft",
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "titleLength": 29,
+      "warnings": [
+        "description may be thin for search snippets",
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。",
+      "descriptionLength": 67,
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "issues": [],
+      "primaryKeyword": "全行业 AI 提示词模板",
+      "scope": [
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "slug": "industry-ai-prompts-template-library-2026",
+      "status": "draft",
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "titleLength": 37,
+      "warnings": []
+    }
+  ]
+}

@@ -236,6 +236,19 @@ type InternalLinks = {
   };
 };
 
+type SearchSnippets = {
+  summary: {
+    blockingItems: number;
+    expansionItems: number;
+    publicItems: number;
+    recommendedItems: number;
+    scopedItems: number;
+    warningItems: number;
+    waveItems: number;
+    waveItemsWithBlockingIssues: number;
+  };
+};
+
 const reports = {
   cannibalization: readJson<{ summary: { conflicts: number; reviewBatchConflicts: number } }>("content/automation/content-cannibalization.json"),
   freshness: readJson<{ summary: { currentReviewItems: number; highRisk: number; mediumRisk: number; plannedReviewItems: number } }>(
@@ -277,6 +290,7 @@ const reports = {
   trafficClaimGuard: readJson<TrafficClaimGuard>("content/automation/traffic-claim-guard.json"),
   contentIntegrity: readJson<ContentIntegrity>("content/automation/content-integrity-audit.json"),
   internalLinks: readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json"),
+  searchSnippets: readJson<SearchSnippets>("content/automation/search-snippet-readiness-audit.json"),
   review: readJson<{ counts: { candidates: number; returned: number; rejected: Record<string, number> }; recommendedToday: ReviewCandidate[] }>(
     "content/automation/review-candidates.json",
   ),
@@ -309,6 +323,7 @@ const payload = {
   },
   contentIntegrity: reports.contentIntegrity.data?.summary ?? null,
   internalLinks: reports.internalLinks.data?.summary ?? null,
+  searchSnippets: reports.searchSnippets.data?.summary ?? null,
   publishingBoundary: {
     publicPublished: reports.project.data?.articles.publicPublished ?? null,
     publishableNow: reports.project.data?.articles.publishableNow.length ?? null,
@@ -492,6 +507,9 @@ function buildNextActions() {
   if (!reports.internalLinks.data || reports.internalLinks.data.summary.waveItemsMissingPublicLinkSuggestion > 0) {
     return ["Open docs/internal-link-opportunity-audit.md and add or approve internal link suggestions for Wave 1 before publishing."];
   }
+  if (!reports.searchSnippets.data || reports.searchSnippets.data.summary.waveItemsWithBlockingIssues > 0) {
+    return ["Open docs/search-snippet-readiness-audit.md and fix Wave 1 title, description, slug, or indexing blockers."];
+  }
   if (!reports.reviewCoverage.data || reports.reviewCoverage.data.summary.missingCoverage > 0) {
     return ["Open docs/review-coverage-report.md and regenerate coverage for all planned review candidates."];
   }
@@ -560,6 +578,24 @@ function toMarkdown(data: typeof payload) {
     data.internalLinks
       ? `- Wave items missing suggestions: ${data.internalLinks.waveItemsMissingPublicLinkSuggestion}`
       : "- Wave items missing suggestions: missing",
+    "",
+    "## Search Snippet Readiness",
+    "",
+    data.searchSnippets
+      ? `- Scoped items: ${data.searchSnippets.scopedItems}`
+      : "- Scoped items: missing",
+    data.searchSnippets
+      ? `- Blocking items: ${data.searchSnippets.blockingItems}`
+      : "- Blocking items: missing",
+    data.searchSnippets
+      ? `- Warning items: ${data.searchSnippets.warningItems}`
+      : "- Warning items: missing",
+    data.searchSnippets
+      ? `- Wave items: ${data.searchSnippets.waveItems}`
+      : "- Wave items: missing",
+    data.searchSnippets
+      ? `- Wave items with blocking issues: ${data.searchSnippets.waveItemsWithBlockingIssues}`
+      : "- Wave items with blocking issues: missing",
     "",
     "## Publishing Boundary",
     "",

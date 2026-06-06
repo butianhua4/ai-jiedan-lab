@@ -1,6 +1,6 @@
 # Manual Review Workbench
 
-Generated at: 2026-06-06T13:07:06.574Z
+Generated at: 2026-06-06T13:38:38.259Z
 
 This workbench is read-only. It does not publish articles or mark drafts for review.
 
@@ -192,7 +192,7 @@ Next review files:
 - Search Console verification evidence: false
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 69
+- Traffic claim files scanned: 71
 - Traffic claim watch mentions: 387
 
 ## Content Integrity
@@ -218,6 +218,20 @@ Next review files:
 | 0/6 | Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist)<br>Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)<br>第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist) | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 0/4 | Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)<br>Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)<br>Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 0/5 | Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner)<br>Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)<br>Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+
+## Search Snippet Readiness
+
+- Scoped items: 34
+- Blocking items: 0
+- Warning items: 13
+- Wave items: 3
+- Wave items with blocking issues: 0
+
+| Title chars | Description chars | Issues | Warnings | Slug | Title | File |
+| --- | --- | --- | --- | --- | --- | --- |
+| 47 | 69 | none | none | ai-agent-deployment-vercel-ai-sdk-guide | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 29 | 52 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-model-selection-customer-service-guide | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 37 | 67 | none | none | industry-ai-prompts-template-library-2026 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
 ## AI Deployment Coverage
 
@@ -265,6 +279,7 @@ Next review files:
 - Use docs/wave-publish-simulation.md for the exact post-approval mark-review and publish dry-run path.
 - Use docs/content-integrity-audit.md to confirm encoding, metadata, and indexing boundaries before approval.
 - Use docs/internal-link-opportunity-audit.md to add public internal links during manual review.
+- Use docs/search-snippet-readiness-audit.md to review title, description, and slug snippet quality.
 - Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.
 - Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.
 - Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.

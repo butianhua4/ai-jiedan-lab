@@ -46,7 +46,8 @@
     "smoke:web": "tsx scripts/web-smoke-check.ts",
     "live:check": "tsx scripts/live-site-check.ts",
     "content:integrity": "tsx scripts/content-integrity-audit.ts",
-    "content:internal-links": "tsx scripts/internal-link-opportunity-audit.ts"
+    "content:internal-links": "tsx scripts/internal-link-opportunity-audit.ts",
+    "seo:snippets": "tsx scripts/search-snippet-readiness-audit.ts"
   },
   "dependencies": {
     "fast-glob": "^3.3.3",
