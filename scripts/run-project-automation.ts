@@ -20,6 +20,7 @@ const tasks: Task[] = [
   { title: "Generate SEO opportunity map", args: ["run", "seo:opportunities"] },
   { title: "Run searchability check", args: ["run", "--silent", "searchability:check"], outputFile: "content/automation/searchability-check.json" },
   { title: "Run automation gate", args: ["run", "automation:gate"] },
+  { title: "Generate automation digest", args: ["run", "automation:digest"] },
 ];
 
 const failures: string[] = [];

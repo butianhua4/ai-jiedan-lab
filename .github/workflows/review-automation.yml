@@ -32,6 +32,7 @@ jobs:
             content/automation/review-preflight.json
             content/automation/draft-guardrail-sanitize.json
             content/automation/automation-gate.json
+            content/automation/automation-digest.json
             content/automation/project-status.json
             content/automation/seo-check.json
             content/automation/seo-opportunity-map.json
@@ -39,6 +40,7 @@ jobs:
             content/automation/automation-run-summary.json
             docs/review-automation.md
             docs/automation-gate.md
+            docs/automation-digest.md
             docs/publish-readiness-pack.md
             docs/review-preflight.md
             docs/seo-opportunity-map.md

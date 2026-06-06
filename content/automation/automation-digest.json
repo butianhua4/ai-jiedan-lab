@@ -1,0 +1,157 @@
+{
+  "generatedAt": "2026-06-06T10:06:41.391Z",
+  "guardrails": {
+    "autoPublish": false,
+    "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
+  },
+  "health": {
+    "gateOk": true,
+    "missingReports": [],
+    "preflightOk": true,
+    "runOk": true,
+    "searchabilityScore": 100,
+    "seoOk": true
+  },
+  "publishingBoundary": {
+    "publicPublished": 15,
+    "publishableNow": 0,
+    "statusCounts": {
+      "draft": 629,
+      "published": 15,
+      "archived": 21
+    }
+  },
+  "reviewQueue": {
+    "candidates": 629,
+    "returned": 25,
+    "recommendedToday": [
+      {
+        "category": "AI 部署",
+        "cluster": "RAG and knowledge base",
+        "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx",
+        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "noindex": true,
+        "opportunityReason": "RAG and knowledge base cluster; no public article in cluster; no public article in category",
+        "opportunityScore": 254,
+        "publishBatch": 34,
+        "qualityScore": 100,
+        "reason": "batch 34; AI 部署; RAG and knowledge base cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
+        "reviewCommand": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
+        "slug": "ai-model-selection-customer-service-guide",
+        "sourceNotes": true,
+        "status": "draft",
+        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
+      },
+      {
+        "category": "接单报价",
+        "cluster": "Agent and memory",
+        "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "noindex": true,
+        "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
+        "opportunityScore": 253,
+        "publishBatch": 33,
+        "qualityScore": 100,
+        "reason": "batch 33; 接单报价; Agent and memory cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
+        "reviewCommand": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
+        "slug": "ai-automation-project-pricing-scope-guide",
+        "sourceNotes": true,
+        "status": "draft",
+        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
+      },
+      {
+        "category": "AI 提示词",
+        "cluster": "Industry AI prompts",
+        "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+        "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+        "noindex": true,
+        "opportunityReason": "Industry AI prompts cluster; no public article in cluster; no public article in category",
+        "opportunityScore": 252,
+        "publishBatch": 32,
+        "qualityScore": 100,
+        "reason": "batch 32; AI 提示词; Industry AI prompts cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
+        "reviewCommand": "npm run mark:review -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx --confirm-human",
+        "slug": "ai-prompt-library-team-knowledge-base-guide",
+        "sourceNotes": true,
+        "status": "draft",
+        "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用"
+      }
+    ]
+  },
+  "preflight": {
+    "checked": 3,
+    "failed": 0,
+    "items": [
+      {
+        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "issues": [],
+        "markReviewDryRunCommand": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx",
+        "ok": true,
+        "qualityScore": 100,
+        "status": "draft",
+        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+        "wordCountChinese": 1232
+      },
+      {
+        "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "issues": [],
+        "markReviewDryRunCommand": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "ok": true,
+        "qualityScore": 100,
+        "status": "draft",
+        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+        "wordCountChinese": 1303
+      },
+      {
+        "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+        "issues": [],
+        "markReviewDryRunCommand": "npm run mark:review -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+        "ok": true,
+        "qualityScore": 100,
+        "status": "draft",
+        "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
+        "wordCountChinese": 1269
+      }
+    ]
+  },
+  "seoOpportunities": {
+    "reviewReadyDrafts": 629,
+    "nextReviewTargets": [
+      {
+        "category": "AI 基建",
+        "reason": "has review-ready drafts but no public article yet",
+        "reviewReadyDrafts": 78,
+        "published": 0
+      },
+      {
+        "category": "报错解决",
+        "reason": "has enough review-ready drafts for a small manual publishing batch",
+        "reviewReadyDrafts": 80,
+        "published": 1
+      },
+      {
+        "category": "Upwork 新手",
+        "reason": "has enough review-ready drafts for a small manual publishing batch",
+        "reviewReadyDrafts": 78,
+        "published": 2
+      },
+      {
+        "category": "Codex 新手教程",
+        "reason": "has enough review-ready drafts for a small manual publishing batch",
+        "reviewReadyDrafts": 74,
+        "published": 9
+      },
+      {
+        "category": "工具流程",
+        "reason": "has review-ready drafts but no public article yet",
+        "reviewReadyDrafts": 58,
+        "published": 0
+      }
+    ]
+  },
+  "nextActions": [
+    "Manually review the three recommended drafts in docs/review-preflight.md.",
+    "If approved by a human, run mark:review with --confirm-human for approved files only.",
+    "Publish only status=review articles in a 1-3 article batch after a dry-run."
+  ]
+}
