@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T10:53:59.365Z
+Generated at: 2026-06-06T10:58:42.284Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -62,6 +62,14 @@ This digest is read-only. It summarizes automation reports and does not publish 
 | 全行业 AI 提示词和工作流模板 | 270 | 0 | 5 | 提示词类内容搜索面宽，但需要从模板升级成行业流程，才更适合长期收录。 |
 | Ollama、vLLM 和开源模型本地部署 | 260 | 0 | 5 | 本地模型部署搜索需求强，但信息变化快，必须保留人工事实核对。 |
 | Dify、n8n、MCP 和无代码 AI 自动化 | 258 | 0 | 5 | 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 |
+
+## Live Search Surface
+
+- Latest check: 2026-06-06T10:57:47.153Z
+- Ok: true
+- Public articles checked: 15
+- Sitemap URLs: 85
+- Failed checks: none
 
 ## Next Actions
 

@@ -31,6 +31,7 @@ async function main() {
     opportunities?: Array<{ readyCandidates?: unknown[]; searchDemandNote?: string }>;
     totals: { topics: number; topicsWithReadyCandidates: number };
   }>("content/automation/content-opportunity-backlog.json");
+  const liveSearch = readJson<{ articles: { publicCount: number }; failedChecks: string[]; ok: boolean }>("content/automation/live-search-surface.json");
   const projectStatus = readJson<{ articles: { publicPublished: number; publishableNow: unknown[] } }>("content/automation/project-status.json");
   const articles = (await articleFiles()).map(readArticle);
 
@@ -130,6 +131,11 @@ async function main() {
         contentBacklog.totals.topicsWithReadyCandidates > 0 &&
         Boolean(contentBacklog.opportunities?.every((item) => item.searchDemandNote && item.readyCandidates)),
       detail: `topics=${contentBacklog.totals.topics}, topicsWithReadyCandidates=${contentBacklog.totals.topicsWithReadyCandidates}`,
+    },
+    {
+      name: "live search surface check passed",
+      ok: liveSearch.ok === true && liveSearch.failedChecks.length === 0,
+      detail: `publicArticles=${liveSearch.articles.publicCount}, failed=${liveSearch.failedChecks.length}`,
     },
   ];
 

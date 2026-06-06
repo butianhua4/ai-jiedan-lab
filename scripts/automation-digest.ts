@@ -44,6 +44,13 @@ const reports = {
     "content/automation/content-opportunity-backlog.json",
   ),
   gate: readJson<{ ok: boolean; summary: { checks: number; failed: number; passed: number } }>("content/automation/automation-gate.json"),
+  liveSearch: readJson<{
+    articles: { checked: number; failed: unknown[]; missingFromSitemap: string[]; publicCount: number };
+    failedChecks: string[];
+    generatedAt: string;
+    ok: boolean;
+    sitemap: { urlCount: number };
+  }>("content/automation/live-search-surface.json"),
   preflight: readJson<{ ok: boolean; summary: { checked: number; failed: number; passed: number }; items: PreflightItem[] }>(
     "content/automation/review-preflight.json",
   ),
@@ -103,6 +110,17 @@ const payload = {
     topicsWithReadyCandidates: reports.contentBacklog.data?.totals.topicsWithReadyCandidates ?? null,
     top: reports.contentBacklog.data?.opportunities.slice(0, 5) ?? [],
   },
+  liveSearch: reports.liveSearch.data
+    ? {
+        checkedArticles: reports.liveSearch.data.articles.checked,
+        failedChecks: reports.liveSearch.data.failedChecks,
+        generatedAt: reports.liveSearch.data.generatedAt,
+        missingFromSitemap: reports.liveSearch.data.articles.missingFromSitemap,
+        ok: reports.liveSearch.data.ok,
+        publicArticles: reports.liveSearch.data.articles.publicCount,
+        sitemapUrlCount: reports.liveSearch.data.sitemap.urlCount,
+      }
+    : null,
   nextActions: buildNextActions(),
 };
 
@@ -193,6 +211,24 @@ function toMarkdown(data: typeof payload) {
     ...data.contentOpportunities.top.map((item) => (
       `| ${item.topic} | ${item.gapScore} | ${item.publicMatches} | ${item.readyCandidates.length} | ${item.why} |`
     )),
+    "",
+    "## Live Search Surface",
+    "",
+    data.liveSearch
+      ? `- Latest check: ${data.liveSearch.generatedAt}`
+      : "- Latest check: missing",
+    data.liveSearch
+      ? `- Ok: ${data.liveSearch.ok}`
+      : "- Ok: false",
+    data.liveSearch
+      ? `- Public articles checked: ${data.liveSearch.checkedArticles}`
+      : "- Public articles checked: 0",
+    data.liveSearch
+      ? `- Sitemap URLs: ${data.liveSearch.sitemapUrlCount}`
+      : "- Sitemap URLs: 0",
+    data.liveSearch
+      ? `- Failed checks: ${data.liveSearch.failedChecks.length ? data.liveSearch.failedChecks.join(", ") : "none"}`
+      : "- Failed checks: live-search-surface report missing",
     "",
     "## Next Actions",
     "",

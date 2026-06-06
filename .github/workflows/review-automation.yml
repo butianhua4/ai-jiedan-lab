@@ -31,22 +31,34 @@ jobs:
       - name: Run project automation
         run: npm run automation:all
 
+      - name: Check live search surfaces
+        shell: bash
+        run: |
+          set +e
+          npm run live:check -- --url=https://ai-jiedan-lab.vercel.app --json=content/automation/live-search-surface.json --markdown=docs/live-search-surface.md
+          code=$?
+          echo "LIVE_SEARCH_SURFACE_EXIT_CODE=$code" >> "$GITHUB_ENV"
+          exit 0
+
+      - name: Refresh automation gate and digest after live check
+        shell: bash
+        run: |
+          npm run automation:gate
+          npm run automation:digest
+
       - name: Commit refreshed automation reports
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/automation docs/automation-digest.md docs/automation-gate.md docs/content-opportunity-backlog.md docs/publish-readiness-pack.md docs/review-automation.md docs/review-preflight.md docs/seo-opportunity-map.md
+          git add content/automation docs/automation-digest.md docs/automation-gate.md docs/content-opportunity-backlog.md docs/live-search-surface.md docs/publish-readiness-pack.md docs/review-automation.md docs/review-preflight.md docs/seo-opportunity-map.md
           if git diff --cached --quiet; then
             echo "No automation report changes to commit."
           else
             git commit -m "Refresh automation reports"
             git push
           fi
-
-      - name: Check live search surfaces
-        run: npm run live:check -- --url=https://ai-jiedan-lab.vercel.app
 
       - name: Add automation digest to job summary
         if: always()
@@ -75,6 +87,7 @@ jobs:
             content/automation/automation-gate.json
             content/automation/automation-digest.json
             content/automation/content-opportunity-backlog.json
+            content/automation/live-search-surface.json
             content/automation/project-status.json
             content/automation/seo-check.json
             content/automation/seo-opportunity-map.json
@@ -84,7 +97,17 @@ jobs:
             docs/automation-gate.md
             docs/automation-digest.md
             docs/content-opportunity-backlog.md
+            docs/live-search-surface.md
             docs/publish-readiness-pack.md
             docs/project-automation.md
             docs/review-preflight.md
             docs/seo-opportunity-map.md
+
+      - name: Fail if live search surfaces failed
+        if: always()
+        shell: bash
+        run: |
+          if [ "${LIVE_SEARCH_SURFACE_EXIT_CODE:-0}" != "0" ]; then
+            echo "Live search surface check failed. See docs/live-search-surface.md or the project-automation artifact."
+            exit 1
+          fi

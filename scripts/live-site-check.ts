@@ -1,8 +1,12 @@
+import fs from "fs";
+import path from "path";
 import { getAllPosts } from "../lib/blog";
 
 const defaultBase = process.env.NEXT_PUBLIC_SITE_URL || "https://ai-jiedan-lab.vercel.app";
 const fetchBase = normalizeBase(readArg("url") || readArg("fetchBase") || defaultBase);
 const canonicalBase = normalizeBase(readArg("canonical") || readArg("base") || defaultBase);
+const jsonOutput = readArg("json") || readArg("jsonOutput");
+const markdownOutput = readArg("markdown") || readArg("markdownOutput");
 
 const checks = [
   ["/", "AI 接单实验室"],
@@ -58,9 +62,25 @@ async function main() {
   const llmsDraftLeak = getAllPosts(true)
     .filter((post) => !(post.status === "published" && post.noindex === false))
     .some((post) => llms.includes(`](${canonicalBase}/blog/${post.slug})`));
+  const failedChecks = [
+    ...pageResults.filter((item) => !item.ok).map((item) => `page:${item.path}`),
+    ...articleResults.filter((item) => !item.ok).map((item) => `article:${item.path}`),
+    ...missingPublishedPosts.map((post) => `missing-from-sitemap:${post.slug}`),
+  ];
+  if (draftLeak) failedChecks.push("sitemap-leaks-drafts");
+  if (!sitemap.includes(canonicalBase)) failedChecks.push("sitemap-base-mismatch");
+  if (!robots.includes(`${canonicalBase}/sitemap.xml`)) failedChecks.push("robots-sitemap-mismatch");
+  if (!llms.includes(`${canonicalBase}/`)) failedChecks.push("llms-base-mismatch");
+  if (!publicPosts.every((post) => llms.includes(`](${canonicalBase}/blog/${post.slug})`))) failedChecks.push("llms-missing-published-posts");
+  if (llmsDraftLeak) failedChecks.push("llms-leaks-drafts");
+  if (!articleResults.every((item) => item.ok)) failedChecks.push("article-canonical-mismatch");
+
   const result = {
+    generatedAt: new Date().toISOString(),
+    ok: failedChecks.length === 0,
     base: canonicalBase,
     fetchBase,
+    failedChecks,
     pages: pageResults,
     articles: {
       publicCount: publicPosts.length,
@@ -88,20 +108,11 @@ async function main() {
     },
   };
 
+  writeReport(jsonOutput, `${JSON.stringify(result, null, 2)}\n`);
+  writeReport(markdownOutput, toMarkdown(result));
   console.log(JSON.stringify(result, null, 2));
 
-  if (
-    pageResults.some((item) => !item.ok) ||
-    result.articles.failed.length > 0 ||
-    result.articles.missingFromSitemap.length > 0 ||
-    result.sitemap.leaksDrafts ||
-    !result.sitemap.usesBase ||
-    !result.robots.pointsToSitemap ||
-    !result.llms.usesBase ||
-    !result.llms.includesPublished ||
-    result.llms.leaksDrafts ||
-    !result.canonical.article
-  ) {
+  if (!result.ok) {
     process.exitCode = 1;
   }
 }
@@ -119,6 +130,80 @@ function readArg(name: string) {
   const prefix = `--${name}=`;
   const match = process.argv.slice(2).find((arg) => arg.startsWith(prefix));
   return match?.slice(prefix.length);
+}
+
+function writeReport(target: string | undefined, content: string) {
+  if (!target) return;
+  const absoluteTarget = path.isAbsolute(target) ? target : path.join(process.cwd(), target);
+  fs.mkdirSync(path.dirname(absoluteTarget), { recursive: true });
+  fs.writeFileSync(absoluteTarget, content, "utf8");
+}
+
+function toMarkdown(result: {
+  articles: { checked: number; failed: Array<{ path: string; status: number; title: string }>; missingFromSitemap: string[]; publicCount: number };
+  base: string;
+  canonical: { article: boolean; home: boolean };
+  failedChecks: string[];
+  fetchBase: string;
+  generatedAt: string;
+  llms: { includesPublished: boolean; leaksDrafts: boolean; usesBase: boolean };
+  ok: boolean;
+  pages: Array<{ expected: string; ok: boolean; path: string; status: number }>;
+  robots: { allowsAll: boolean; pointsToSitemap: boolean };
+  sitemap: { leaksDrafts: boolean; urlCount: number; usesBase: boolean };
+}) {
+  const lines = [
+    "# Live Search Surface Check",
+    "",
+    `Generated at: ${result.generatedAt}`,
+    "",
+    "This report checks the live production search surfaces. It does not use Search Console traffic, impressions, or ranking data.",
+    "",
+    `Overall: ${result.ok ? "PASS" : "FAIL"}`,
+    "",
+    "## Scope",
+    "",
+    `- Canonical base: ${result.base}`,
+    `- Fetch base: ${result.fetchBase}`,
+    `- Public articles: ${result.articles.publicCount}`,
+    `- Articles checked: ${result.articles.checked}`,
+    "",
+    "## Search Surfaces",
+    "",
+    `- Sitemap URL count: ${result.sitemap.urlCount}`,
+    `- Sitemap uses canonical base: ${result.sitemap.usesBase}`,
+    `- Sitemap leaks drafts: ${result.sitemap.leaksDrafts}`,
+    `- Robots allows crawling: ${result.robots.allowsAll}`,
+    `- Robots points to sitemap: ${result.robots.pointsToSitemap}`,
+    `- llms.txt uses canonical base: ${result.llms.usesBase}`,
+    `- llms.txt includes published posts: ${result.llms.includesPublished}`,
+    `- llms.txt leaks drafts: ${result.llms.leaksDrafts}`,
+    `- Home canonical present: ${result.canonical.home}`,
+    `- Article canonicals present: ${result.canonical.article}`,
+    "",
+    "## Failed Checks",
+    "",
+    ...(result.failedChecks.length ? result.failedChecks.map((item) => `- ${item}`) : ["- none"]),
+    "",
+    "## Page Checks",
+    "",
+    "| Path | Status | Result | Expected text |",
+    "| --- | --- | --- | --- |",
+    ...result.pages.map((item) => `| ${item.path} | ${item.status} | ${item.ok ? "PASS" : "FAIL"} | ${item.expected} |`),
+    "",
+    "## Article Failures",
+    "",
+    "| Path | Status | Title |",
+    "| --- | --- | --- |",
+    ...result.articles.failed.map((item) => `| ${item.path} | ${item.status} | ${item.title} |`),
+    "",
+    "## Missing From Sitemap",
+    "",
+    ...(result.articles.missingFromSitemap.length ? result.articles.missingFromSitemap.map((slug) => `- ${slug}`) : ["- none"]),
+    "",
+  ];
+
+  return lines.join("\n");
 }
 
 void main();

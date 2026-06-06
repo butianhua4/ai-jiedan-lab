@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T10:53:59.365Z",
+  "generatedAt": "2026-06-06T10:58:42.284Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -505,6 +505,15 @@
         "why": "无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。"
       }
     ]
+  },
+  "liveSearch": {
+    "checkedArticles": 15,
+    "failedChecks": [],
+    "generatedAt": "2026-06-06T10:57:47.153Z",
+    "missingFromSitemap": [],
+    "ok": true,
+    "publicArticles": 15,
+    "sitemapUrlCount": 85
   },
   "nextActions": [
     "Manually review the three recommended drafts in docs/review-preflight.md.",

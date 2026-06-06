@@ -1,0 +1,99 @@
+{
+  "generatedAt": "2026-06-06T10:57:47.153Z",
+  "ok": true,
+  "base": "https://ai-jiedan-lab.vercel.app",
+  "fetchBase": "https://ai-jiedan-lab.vercel.app",
+  "failedChecks": [],
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "ok": true,
+      "expected": "AI 接单实验室"
+    },
+    {
+      "path": "/blog",
+      "status": 200,
+      "ok": true,
+      "expected": "新手教程"
+    },
+    {
+      "path": "/tools",
+      "status": 200,
+      "ok": true,
+      "expected": "AI 工具导航"
+    },
+    {
+      "path": "/tools/proposal-generator",
+      "status": 200,
+      "ok": true,
+      "expected": "Upwork Proposal 生成器"
+    },
+    {
+      "path": "/tools/error-explainer",
+      "status": 200,
+      "ok": true,
+      "expected": "Codex 报错解释器"
+    },
+    {
+      "path": "/tools/pricing-calculator",
+      "status": 200,
+      "ok": true,
+      "expected": "项目报价助手"
+    },
+    {
+      "path": "/templates",
+      "status": 200,
+      "ok": true,
+      "expected": "模板下载"
+    },
+    {
+      "path": "/roadmap",
+      "status": 200,
+      "ok": true,
+      "expected": "AI 接单 30 天路线图"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "ok": true,
+      "expected": "<urlset"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "ok": true,
+      "expected": "Sitemap"
+    },
+    {
+      "path": "/llms.txt",
+      "status": 200,
+      "ok": true,
+      "expected": "Draft and noindex articles are intentionally excluded"
+    }
+  ],
+  "articles": {
+    "publicCount": 15,
+    "checked": 15,
+    "failed": [],
+    "missingFromSitemap": []
+  },
+  "sitemap": {
+    "urlCount": 85,
+    "usesBase": true,
+    "leaksDrafts": false
+  },
+  "robots": {
+    "allowsAll": true,
+    "pointsToSitemap": true
+  },
+  "llms": {
+    "usesBase": true,
+    "includesPublished": true,
+    "leaksDrafts": false
+  },
+  "canonical": {
+    "home": true,
+    "article": true
+  }
+}

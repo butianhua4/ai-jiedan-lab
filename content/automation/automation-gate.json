@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-06T10:53:58.812Z",
+  "generatedAt": "2026-06-06T10:58:41.718Z",
   "ok": true,
   "summary": {
-    "checks": 15,
+    "checks": 16,
     "failed": 0,
-    "passed": 15
+    "passed": 16
   },
   "failed": [],
   "checks": [
@@ -81,6 +81,11 @@
       "name": "content opportunity backlog has reviewable topics",
       "ok": true,
       "detail": "topics=7, topicsWithReadyCandidates=7"
+    },
+    {
+      "name": "live search surface check passed",
+      "ok": true,
+      "detail": "publicArticles=15, failed=0"
     }
   ]
 }
