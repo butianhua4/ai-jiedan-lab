@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T14:37:48.877Z
+Generated at: 2026-06-06T14:51:18.674Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -192,8 +192,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 83
-- Traffic claim watch mentions: 507
+- Traffic claim files scanned: 85
+- Traffic claim watch mentions: 514
 
 ## Preflight
 
@@ -247,6 +247,28 @@ Next review files:
 | Dify、n8n、Flowise 和无代码 AI 自动化 | 220 | 0 | 5 | Dify 部署教程<br>n8n AI Agent 自托管 |
 | 模型 API 接入、限流和多模型降级 | 218 | 0 | 5 | OpenAI API Next.js<br>Claude API 接入 |
 | LLM Serving、GPU 和托管推理 | 217 | 0 | 5 | vLLM 部署教程<br>TGI 部署教程 |
+
+## Broad Search Demand Map
+
+- Themes: 10
+- Themes with ready drafts: 10
+- Themes without public coverage: 8
+- Unique candidate files: 56
+- Total ready draft matches: 417
+- Review pack theme matches: 4
+- Planned wave theme matches: 24
+- Missing subtopics: 25
+
+| Theme | Score | Public | Ready | Review pack | Planned wave | Missing subtopics | Search seeds |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Agent deployment, tool calling, and production workflows | 388 | 0 | 35 | 1 | 5 | tool calling, human review, permissions, logs | AI Agent deployment tutorial<br>agent tool calling tutorial |
+| Cross-industry AI prompt templates | 378 | 0 | 66 | 2 | 5 | customer service | ChatGPT prompts for business<br>AI prompt template library |
+| RAG, knowledge base, and agent memory | 352 | 0 | 32 | 0 | 4 | knowledge base, vector database | RAG knowledge base tutorial<br>AI agent memory |
+| Local and open-source model deployment | 342 | 0 | 15 | 0 | 1 | gpu memory, quantization, local api, model download | local LLM deployment<br>Ollama local model tutorial |
+| Dify, n8n, Flowise, and no-code AI automation | 330 | 0 | 23 | 0 | 3 | self hosted, connector | Dify deployment tutorial<br>n8n AI agent self hosted |
+| Business AI workflows and SOP templates | 328 | 0 | 15 | 0 | 2 | support, product, weekly report | AI workflow examples<br>AI use cases for business |
+| LLM serving, GPU, and managed inference | 312 | 0 | 9 | 0 | 0 | concurrency, autoscaling | vLLM deployment tutorial<br>Hugging Face TGI deployment |
+| LLM evaluation, observability, and security | 312 | 0 | 11 | 0 | 0 | logs, prompt injection, cost tracking | LLM observability<br>RAG evaluation |
 
 ## Search Intent Lane Map
 
@@ -381,7 +403,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T14:29:31.862Z
+- Latest check: 2026-06-06T14:50:48.989Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85

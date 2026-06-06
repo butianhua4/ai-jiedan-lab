@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-06T14:37:48.349Z",
+  "generatedAt": "2026-06-06T14:51:18.120Z",
   "ok": true,
   "summary": {
-    "checks": 65,
+    "checks": 67,
     "failed": 0,
-    "passed": 65
+    "passed": 67
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=83, unsafeClaims=0, watchMentions=507"
+      "detail": "filesScanned=85, unsafeClaims=0, watchMentions=514"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -226,6 +226,16 @@
       "name": "search query match audit has no blocking search-alignment issues",
       "ok": true,
       "detail": "blocking=0, averageFamilies=7"
+    },
+    {
+      "name": "broad search demand map is read-only and covers major demand themes",
+      "ok": true,
+      "detail": "themes=10, readyThemes=10, uniqueCandidates=56"
+    },
+    {
+      "name": "broad search demand map links demand, sources, and planned review waves",
+      "ok": true,
+      "detail": "officialSources=13, reviewPackMatches=4, waveMatches=24, readyMatches=417"
     },
     {
       "name": "content cannibalization check generated warning report",

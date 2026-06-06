@@ -365,6 +365,31 @@ type SearchQueryMatch = {
   };
 };
 
+type BroadSearchDemand = {
+  summary: {
+    maxGapScore: number;
+    missingSubtopics: number;
+    plannedWaveThemeMatches: number;
+    reviewPackThemeMatches: number;
+    themes: number;
+    themesWithReadyDrafts: number;
+    themesWithoutPublicCoverage: number;
+    totalReadyDraftMatches: number;
+    uniqueCandidateFiles: number;
+  };
+  topThemes: Array<{
+    candidateDrafts: unknown[];
+    gapScore: number;
+    missingSubtopics: string[];
+    plannedWaveMatches: number;
+    publicMatches: number;
+    readyDrafts: number;
+    reviewPackMatches: number;
+    searchSeeds: string[];
+    title: string;
+  }>;
+};
+
 const reports = {
   cannibalization: readJson<{ summary: { conflicts: number; reviewBatchConflicts: number } }>("content/automation/content-cannibalization.json"),
   freshness: readJson<{ summary: { currentReviewItems: number; highRisk: number; mediumRisk: number; plannedReviewItems: number } }>(
@@ -374,6 +399,7 @@ const reports = {
     "content/automation/content-opportunity-backlog.json",
   ),
   deploymentCoverage: readJson<DeploymentCoverage>("content/automation/ai-deployment-coverage.json"),
+  broadSearchDemand: readJson<BroadSearchDemand>("content/automation/broad-search-demand-map.json"),
   promptCoverage: readJson<PromptCoverage>("content/automation/industry-prompt-coverage.json"),
   gate: readJson<{ ok: boolean; summary: { checks: number; failed: number; passed: number } }>("content/automation/automation-gate.json"),
   liveSearch: readJson<{
@@ -546,6 +572,18 @@ const payload = {
     topicsWithReadyCandidates: reports.deploymentCoverage.data?.summary.topicsWithReadyCandidates ?? null,
     uniqueCandidateFiles: reports.deploymentCoverage.data?.summary.uniqueCandidateFiles ?? null,
   },
+  broadSearchDemand: {
+    maxGapScore: reports.broadSearchDemand.data?.summary.maxGapScore ?? null,
+    missingSubtopics: reports.broadSearchDemand.data?.summary.missingSubtopics ?? null,
+    plannedWaveThemeMatches: reports.broadSearchDemand.data?.summary.plannedWaveThemeMatches ?? null,
+    reviewPackThemeMatches: reports.broadSearchDemand.data?.summary.reviewPackThemeMatches ?? null,
+    themes: reports.broadSearchDemand.data?.summary.themes ?? null,
+    themesWithReadyDrafts: reports.broadSearchDemand.data?.summary.themesWithReadyDrafts ?? null,
+    themesWithoutPublicCoverage: reports.broadSearchDemand.data?.summary.themesWithoutPublicCoverage ?? null,
+    top: reports.broadSearchDemand.data?.topThemes.slice(0, 8) ?? [],
+    totalReadyDraftMatches: reports.broadSearchDemand.data?.summary.totalReadyDraftMatches ?? null,
+    uniqueCandidateFiles: reports.broadSearchDemand.data?.summary.uniqueCandidateFiles ?? null,
+  },
   searchIntentLanes: {
     highPriorityLanes: reports.searchIntentLanes.data?.summary.highPriorityLanes ?? null,
     lanes: reports.searchIntentLanes.data?.summary.lanes ?? null,
@@ -696,6 +734,9 @@ function buildNextActions() {
   }
   if (!reports.searchQueryMatch.data || reports.searchQueryMatch.data.summary.blockingItems > 0) {
     return ["Open docs/search-query-match-audit.md and resolve blocking query-match issues before manual review."];
+  }
+  if (!reports.broadSearchDemand.data || reports.broadSearchDemand.data.summary.themesWithReadyDrafts !== reports.broadSearchDemand.data.summary.themes) {
+    return ["Open docs/broad-search-demand-map.md and ensure every broad demand theme has ready draft candidates."];
   }
   if (!reports.reviewCoverage.data || reports.reviewCoverage.data.summary.missingCoverage > 0) {
     return ["Open docs/review-coverage-report.md and regenerate coverage for all planned review candidates."];
@@ -978,6 +1019,23 @@ function toMarkdown(data: typeof payload) {
     "| --- | --- | --- | --- | --- |",
     ...data.deploymentCoverage.top.map((item) => (
       `| ${item.topic} | ${item.gapScore} | ${item.publicMatches} | ${item.candidates.length} | ${item.searchQueries.slice(0, 2).join("<br>")} |`
+    )),
+    "",
+    "## Broad Search Demand Map",
+    "",
+    `- Themes: ${data.broadSearchDemand.themes}`,
+    `- Themes with ready drafts: ${data.broadSearchDemand.themesWithReadyDrafts}`,
+    `- Themes without public coverage: ${data.broadSearchDemand.themesWithoutPublicCoverage}`,
+    `- Unique candidate files: ${data.broadSearchDemand.uniqueCandidateFiles}`,
+    `- Total ready draft matches: ${data.broadSearchDemand.totalReadyDraftMatches}`,
+    `- Review pack theme matches: ${data.broadSearchDemand.reviewPackThemeMatches}`,
+    `- Planned wave theme matches: ${data.broadSearchDemand.plannedWaveThemeMatches}`,
+    `- Missing subtopics: ${data.broadSearchDemand.missingSubtopics}`,
+    "",
+    "| Theme | Score | Public | Ready | Review pack | Planned wave | Missing subtopics | Search seeds |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.broadSearchDemand.top.map((item) => (
+      `| ${item.title} | ${item.gapScore} | ${item.publicMatches} | ${item.readyDrafts} | ${item.reviewPackMatches} | ${item.plannedWaveMatches} | ${item.missingSubtopics.join(", ") || "none"} | ${item.searchSeeds.slice(0, 2).join("<br>")} |`
     )),
     "",
     "## Search Intent Lane Map",

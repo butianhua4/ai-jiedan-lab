@@ -1,14 +1,14 @@
 # Traffic Claim Guard
-Generated at: 2026-06-06T14:37:47.034Z
+Generated at: 2026-06-06T14:51:17.433Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
 - Note: This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples.
 ## Summary
-- filesScanned: 83
+- filesScanned: 85
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 507
+- watchMentions: 514
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -28,12 +28,15 @@ None.
 | docs/automation-digest.md | 190 | - Measured traffic sources: none |
 | docs/automation-digest.md | 191 | - Search Console verification evidence: false |
 | docs/automation-digest.md | 194 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 195 | - Traffic claim files scanned: 83 |
-| docs/automation-digest.md | 196 | - Traffic claim watch mentions: 507 |
+| docs/automation-digest.md | 195 | - Traffic claim files scanned: 85 |
+| docs/automation-digest.md | 196 | - Traffic claim watch mentions: 514 |
 | docs/automation-digest.md | 232 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
 | docs/automation-gate.md | 31 | \| traffic evidence audit passed and is read-only \| PASS \| failedChecks=0, measuredTrafficSources=0 \| |
 | docs/automation-gate.md | 32 | \| traffic is not claimed without measured metrics \| PASS \| trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 \| |
-| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=83, unsafeClaims=0, watchMentions=507 \| |
+| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=85, unsafeClaims=0, watchMentions=514 \| |
+| docs/broad-search-demand-map.md | 5 | This report is read-only. It turns broad user-search demand areas into a review and content-gap map. It does not publish, mark review, claim keyword volume, or claim traffic. |
+| docs/broad-search-demand-map.md | 12 | - Note: Read-only broad-demand map. It prioritizes likely user-search themes from the local content inventory and official source targets; it does not claim keyword volume, rankings, clicks, or traffic. |
+| docs/broad-search-demand-map.md | 123 | \| 31 \| 100 \| informational \| 医疗 AI 提示词 \| 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 \| content/blog/healthcare-admin-ai-prompts-guide.mdx \| |
 | docs/content-freshness.md | 10 | - Note: This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status. |
 | docs/content-opportunity-backlog.md | 5 | This backlog is read-only. It does not publish articles, mark review, or claim measured traffic. |
 | docs/content-opportunity-backlog.md | 10 | - Note: This backlog is based on local content inventory and broad search intent themes only. It does not claim traffic, impressions, keyword volume, or ranking data. |
@@ -59,8 +62,8 @@ None.
 | docs/manual-review-workbench.md | 191 | - Measured traffic sources: none |
 | docs/manual-review-workbench.md | 192 | - Search Console verification evidence: false |
 | docs/manual-review-workbench.md | 194 | - Unsupported traffic claims: 0 |
-| docs/manual-review-workbench.md | 195 | - Traffic claim files scanned: 83 |
-| docs/manual-review-workbench.md | 196 | - Traffic claim watch mentions: 507 |
+| docs/manual-review-workbench.md | 195 | - Traffic claim files scanned: 85 |
+| docs/manual-review-workbench.md | 196 | - Traffic claim watch mentions: 514 |
 | docs/manual-review-workbench.md | 407 | - Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim. |
 | docs/monetization-and-payment-plan.md | 3 | 这个项目的变现顺序不是“先注册一堆收款平台”，而是“先让网站有可用工具、可信内容和真实访问”。早期重点是降低复杂度，避免把时间花在还没有用户验证的支付系统上。 |
 | docs/monetization-and-payment-plan.md | 11 | 3. 用 Search Console 和 Analytics 观察用户搜索词、访问页面和点击行为。 |
@@ -91,9 +94,6 @@ None.
 | docs/publishing-workflow.md | 33 | 前期只发布少量最有用的文章，优先围绕已经能承接流量的工具页： |
 | docs/review-automation.md | 72 | \| 20 \| 251 \| 100 \| 31 \| Industry AI prompts \| AI 提示词 \| 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 \| content/blog/healthcare-admin-ai-prompts-guide.mdx \| |
 | docs/review-coverage-report.md | 146 | - No income, traffic, approval, ranking, or client-acquisition guarantee. |
-| docs/review-coverage-report.md | 205 | - No income, traffic, approval, ranking, or client-acquisition guarantee. |
-| docs/review-coverage-report.md | 319 | - No income, traffic, approval, ranking, or client-acquisition guarantee. |
-| docs/review-coverage-report.md | 377 | - No income, traffic, approval, ranking, or client-acquisition guarantee. |
 ## Next Actions
 - Keep saying that live/search surfaces are healthy, not that traffic exists.
 - Only report traffic after an audited source provides clicks, impressions, visits, or pageviews.

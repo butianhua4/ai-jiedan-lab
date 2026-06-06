@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T14:37:18.678Z",
+  "generatedAt": "2026-06-06T14:50:18.287Z",
   "failures": [],
   "ok": true,
   "tasks": [
@@ -29,6 +29,7 @@
     "Generate search intent wave planner",
     "Generate search query coverage",
     "Run search query match audit",
+    "Generate broad search demand map",
     "Generate wave publish simulation",
     "Run content cannibalization check",
     "Run content freshness check",

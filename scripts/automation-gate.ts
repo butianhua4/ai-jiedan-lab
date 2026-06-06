@@ -134,6 +134,22 @@ async function main() {
       warningItems: number;
     };
   }>("content/automation/search-query-match-audit.json");
+  const broadSearchDemand = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    sourceEvidence?: { officialSources?: unknown[] };
+    summary: {
+      maxGapScore: number;
+      missingSubtopics: number;
+      plannedWaveThemeMatches: number;
+      reviewPackThemeMatches: number;
+      themes: number;
+      themesWithReadyDrafts: number;
+      themesWithoutPublicCoverage: number;
+      totalReadyDraftMatches: number;
+      uniqueCandidateFiles: number;
+    };
+    themes?: Array<{ candidateDrafts?: unknown[]; reviewFocus?: unknown[]; searchSeeds?: unknown[]; sourceTargets?: unknown[]; subtopics?: unknown[] }>;
+  }>("content/automation/broad-search-demand-map.json");
   const cannibalization = readJson<{
     guardrails: { autoPublish: boolean };
     summary: { articleCount: number; conflicts: number; reviewBatchConflicts: number };
@@ -678,6 +694,36 @@ async function main() {
         searchQueryMatch.summary.averageMatchedFamilies >= 3 &&
         Boolean(searchQueryMatch.items?.every((item) => item.readyForManualReview === true && item.titleHit === true && item.descriptionHit === true)),
       detail: `blocking=${searchQueryMatch.summary.blockingItems}, averageFamilies=${searchQueryMatch.summary.averageMatchedFamilies}`,
+    },
+    {
+      name: "broad search demand map is read-only and covers major demand themes",
+      ok:
+        broadSearchDemand.guardrails.autoEditArticles === false &&
+        broadSearchDemand.guardrails.autoMarkReview === false &&
+        broadSearchDemand.guardrails.autoPublish === false &&
+        broadSearchDemand.summary.themes >= 10 &&
+        broadSearchDemand.summary.themesWithReadyDrafts === broadSearchDemand.summary.themes &&
+        broadSearchDemand.summary.uniqueCandidateFiles >= 40,
+      detail: `themes=${broadSearchDemand.summary.themes}, readyThemes=${broadSearchDemand.summary.themesWithReadyDrafts}, uniqueCandidates=${broadSearchDemand.summary.uniqueCandidateFiles}`,
+    },
+    {
+      name: "broad search demand map links demand, sources, and planned review waves",
+      ok:
+        (broadSearchDemand.sourceEvidence?.officialSources?.length || 0) >= 10 &&
+        broadSearchDemand.summary.reviewPackThemeMatches >= 3 &&
+        broadSearchDemand.summary.plannedWaveThemeMatches >= searchIntentWaves.summary.plannedItems &&
+        broadSearchDemand.summary.totalReadyDraftMatches >= 100 &&
+        Boolean(
+          broadSearchDemand.themes?.every(
+            (theme) =>
+              (theme.searchSeeds?.length || 0) >= 4 &&
+              (theme.sourceTargets?.length || 0) >= 2 &&
+              (theme.reviewFocus?.length || 0) >= 3 &&
+              (theme.subtopics?.length || 0) >= 6 &&
+              (theme.candidateDrafts?.length || 0) > 0,
+          ),
+        ),
+      detail: `officialSources=${broadSearchDemand.sourceEvidence?.officialSources?.length || 0}, reviewPackMatches=${broadSearchDemand.summary.reviewPackThemeMatches}, waveMatches=${broadSearchDemand.summary.plannedWaveThemeMatches}, readyMatches=${broadSearchDemand.summary.totalReadyDraftMatches}`,
     },
     {
       name: "content cannibalization check generated warning report",
