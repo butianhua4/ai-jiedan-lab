@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-06-06T09:55:38.832Z",
+  "ok": true,
+  "summary": {
+    "checks": 10,
+    "failed": 0,
+    "passed": 10
+  },
+  "failed": [],
+  "checks": [
+    {
+      "name": "review automation never auto-publishes",
+      "ok": true
+    },
+    {
+      "name": "publish pack matches recommended review files",
+      "ok": true,
+      "detail": "review=content/blog/ai-model-selection-customer-service-guide.mdx, content/blog/ai-automation-project-pricing-scope-guide.mdx, content/blog/ai-prompt-library-team-knowledge-base-guide.mdx pack=content/blog/ai-model-selection-customer-service-guide.mdx, content/blog/ai-automation-project-pricing-scope-guide.mdx, content/blog/ai-prompt-library-team-knowledge-base-guide.mdx"
+    },
+    {
+      "name": "recommended review clusters are diverse",
+      "ok": true,
+      "detail": "RAG and knowledge base, Agent and memory, Industry AI prompts"
+    },
+    {
+      "name": "SEO safety check passed",
+      "ok": true,
+      "detail": "{\"leakedDraftOrReview\":[],\"nonPublishedWithNoindexFalse\":[],\"publishedButNoindexed\":[]}"
+    },
+    {
+      "name": "searchability check passed",
+      "ok": true,
+      "detail": "score=100, failed=0"
+    },
+    {
+      "name": "draft guardrail sanitizer is clean",
+      "ok": true,
+      "detail": "changedFiles=0, totalReplacements=0"
+    },
+    {
+      "name": "no non-published article is indexable",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "all published articles are indexable",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "project status still stops before publishing",
+      "ok": true,
+      "detail": "publicPublished=15, publishableNow=0"
+    },
+    {
+      "name": "SEO opportunity map has review-ready drafts",
+      "ok": true,
+      "detail": "reviewReadyDrafts=629"
+    }
+  ]
+}

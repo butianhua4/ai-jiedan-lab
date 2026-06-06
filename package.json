@@ -17,6 +17,7 @@
     "content:review-opinions": "tsx scripts/content-review-opinions.ts",
     "content:review-queue": "tsx scripts/content-review-queue.ts",
     "automation:review": "tsx scripts/review-automation.ts",
+    "automation:gate": "tsx scripts/automation-gate.ts",
     "automation:publish-pack": "tsx scripts/publish-readiness-pack.ts",
     "automation:sanitize-drafts": "tsx scripts/sanitize-draft-guardrails.ts",
     "project:status": "tsx scripts/project-status.ts",

@@ -39,6 +39,9 @@ jobs:
       - name: Run searchability check
         run: npm run --silent searchability:check > content/automation/searchability-check.json
 
+      - name: Run automation gate
+        run: npm run automation:gate
+
       - name: Upload project automation reports
         uses: actions/upload-artifact@v4
         with:
@@ -47,10 +50,12 @@ jobs:
             content/automation/review-candidates.json
             content/automation/publish-readiness-pack.json
             content/automation/draft-guardrail-sanitize.json
+            content/automation/automation-gate.json
             content/automation/project-status.json
             content/automation/seo-check.json
             content/automation/seo-opportunity-map.json
             content/automation/searchability-check.json
             docs/review-automation.md
+            docs/automation-gate.md
             docs/publish-readiness-pack.md
             docs/seo-opportunity-map.md
