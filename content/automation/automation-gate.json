@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-06T12:19:35.526Z",
+  "generatedAt": "2026-06-06T12:27:28.445Z",
   "ok": true,
   "summary": {
-    "checks": 39,
+    "checks": 41,
     "failed": 0,
-    "passed": 39
+    "passed": 41
   },
   "failed": [],
   "checks": [
@@ -191,6 +191,16 @@
       "name": "public expansion queue stops before publishing",
       "ok": true,
       "detail": "publishableNow=0"
+    },
+    {
+      "name": "wave approval packet is manual and ready",
+      "ok": true,
+      "detail": "wave=1, items=3, ready=3"
+    },
+    {
+      "name": "wave approval packet has no unsafe items",
+      "ok": true,
+      "detail": "unsafeItems=0"
     },
     {
       "name": "live search surface check passed",

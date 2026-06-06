@@ -126,6 +126,15 @@ async function main() {
       unsafeItems: number;
     };
   }>("content/automation/public-expansion-queue.json");
+  const waveApprovalPacket = readJson<{
+    guardrails: { autoMarkReview: boolean; autoPublish: boolean };
+    summary: {
+      items: number;
+      readyForHumanReview: number;
+      unsafeItems: number;
+      wave: number;
+    };
+  }>("content/automation/wave-approval-packet.json");
   const liveSearch = readJson<{ articles: { publicCount: number }; failedChecks: string[]; ok: boolean }>("content/automation/live-search-surface.json");
   const workbench = readJson<{
     guardrails: { autoMarkReview: boolean; autoPublish: boolean };
@@ -417,6 +426,21 @@ async function main() {
       name: "public expansion queue stops before publishing",
       ok: publicExpansion.publishingBoundary.publishableNow === 0,
       detail: `publishableNow=${publicExpansion.publishingBoundary.publishableNow}`,
+    },
+    {
+      name: "wave approval packet is manual and ready",
+      ok:
+        waveApprovalPacket.guardrails.autoMarkReview === false &&
+        waveApprovalPacket.guardrails.autoPublish === false &&
+        waveApprovalPacket.summary.wave === 1 &&
+        waveApprovalPacket.summary.items === 3 &&
+        waveApprovalPacket.summary.readyForHumanReview === waveApprovalPacket.summary.items,
+      detail: `wave=${waveApprovalPacket.summary.wave}, items=${waveApprovalPacket.summary.items}, ready=${waveApprovalPacket.summary.readyForHumanReview}`,
+    },
+    {
+      name: "wave approval packet has no unsafe items",
+      ok: waveApprovalPacket.summary.unsafeItems === 0,
+      detail: `unsafeItems=${waveApprovalPacket.summary.unsafeItems}`,
     },
     {
       name: "live search surface check passed",

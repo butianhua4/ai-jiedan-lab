@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T12:18:16.825Z",
+  "generatedAt": "2026-06-06T12:26:18.080Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -735,6 +735,42 @@
       }
     ]
   },
+  "waveApprovalPacket": {
+    "files": [
+      "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "content/blog/industry-ai-prompts-template-library-2026.mdx"
+    ],
+    "summary": {
+      "items": 3,
+      "readyForHumanReview": 3,
+      "unsafeItems": 0,
+      "wave": 1
+    },
+    "items": [
+      {
+        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "readyForHumanReview": true,
+        "riskChecks": 6,
+        "sources": 5,
+        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
+      },
+      {
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "readyForHumanReview": true,
+        "riskChecks": 6,
+        "sources": 3,
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+      },
+      {
+        "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "readyForHumanReview": true,
+        "riskChecks": 6,
+        "sources": 3,
+        "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+      }
+    ]
+  },
   "deploymentCoverage": {
     "summary": {
       "currentPackDeploymentItems": 2,
@@ -843,6 +879,7 @@
   },
   "nextActions": [
     "Review the current publish readiness items in docs/publish-readiness-pack.md.",
+    "Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.",
     "Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.",
     "Use docs/next-review-source-pack.md to verify official sources for the roadmap's next review files.",

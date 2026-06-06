@@ -1,6 +1,6 @@
 # Manual Review Workbench
 
-Generated at: 2026-06-06T12:18:16.825Z
+Generated at: 2026-06-06T12:26:18.080Z
 
 This workbench is read-only. It does not publish articles or mark drafts for review.
 
@@ -153,6 +153,19 @@ Next review files:
 | 3 | 730 | true | false | true | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
 | 3 | 463 | true | false | false | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 
+## Wave Approval Packet
+
+- Wave: 1
+- Items: 3
+- Ready for human review: 3
+- Unsafe items: 0
+
+| Ready | Sources | Risk checks | Title | File |
+| --- | --- | --- | --- | --- |
+| true | 5 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 3 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | 3 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+
 ## AI Deployment Coverage
 
 - Topics: 10
@@ -195,6 +208,7 @@ Next review files:
 ## Next Actions
 
 - Review the current publish readiness items in docs/publish-readiness-pack.md.
+- Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.
 - Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.
 - Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.
 - Use docs/next-review-source-pack.md to verify official sources for the roadmap's next review files.

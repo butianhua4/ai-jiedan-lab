@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T12:19:35.460Z
+Generated at: 2026-06-06T12:27:28.395Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -118,6 +118,19 @@ Next review files:
 | 3 | 730 | true | false | true | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
 | 3 | 463 | true | false | false | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 
+## Wave Approval Packet
+
+- Wave: 1
+- Items: 3
+- Ready for human review: 3
+- Unsafe items: 0
+
+| Ready | Sources | Risk checks | Title | File |
+| --- | --- | --- | --- | --- |
+| true | 5 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 3 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | 3 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+
 ## Preflight
 
 - Checked: 3
@@ -202,7 +215,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T12:19:27.801Z
+- Latest check: 2026-06-06T12:27:21.308Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
@@ -216,6 +229,7 @@ Next review files:
 ## Next Actions
 
 - Manually review the three recommended drafts in docs/review-preflight.md.
+- Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.
 - Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.
 - Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.
 - Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.

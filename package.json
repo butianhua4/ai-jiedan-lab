@@ -29,6 +29,7 @@
     "automation:review-roadmap": "tsx scripts/review-priority-roadmap.ts",
     "automation:next-review-source-pack": "tsx scripts/next-review-source-pack.ts",
     "automation:public-expansion": "tsx scripts/public-expansion-queue.ts",
+    "automation:wave-approval-packet": "tsx scripts/wave-approval-packet.ts",
     "automation:workbench": "tsx scripts/manual-review-workbench.ts",
     "automation:gate": "tsx scripts/automation-gate.ts",
     "automation:publish-pack": "tsx scripts/publish-readiness-pack.ts",

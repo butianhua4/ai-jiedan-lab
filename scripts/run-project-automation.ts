@@ -25,6 +25,7 @@ const tasks: Task[] = [
   { title: "Generate review priority roadmap", args: ["run", "automation:review-roadmap"] },
   { title: "Generate next review source pack", args: ["run", "automation:next-review-source-pack"] },
   { title: "Generate public expansion queue", args: ["run", "automation:public-expansion"] },
+  { title: "Generate wave approval packet", args: ["run", "automation:wave-approval-packet"] },
   { title: "Run content cannibalization check", args: ["run", "content:cannibalization"] },
   { title: "Run content freshness check", args: ["run", "content:freshness"] },
   { title: "Generate review coverage report", args: ["run", "automation:review-coverage"] },

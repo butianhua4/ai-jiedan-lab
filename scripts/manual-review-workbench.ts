@@ -124,6 +124,23 @@ type PublicExpansionQueue = {
   }>;
 };
 
+type WaveApprovalPacket = {
+  files: string[];
+  items: Array<{
+    file: string;
+    officialSourceTargets: string[];
+    readyForHumanReview: boolean;
+    riskReviewChecklist: string[];
+    title: string;
+  }>;
+  summary: {
+    items: number;
+    readyForHumanReview: number;
+    unsafeItems: number;
+    wave: number;
+  };
+};
+
 type ProjectStatus = {
   articles: { publicPublished: number; publishableNow: unknown[]; statusCounts: Record<string, number> };
 };
@@ -143,6 +160,7 @@ function main() {
   const reviewRoadmap = readJson<ReviewRoadmap>("content/automation/review-priority-roadmap.json");
   const nextReviewSourcePack = readJson<NextReviewSourcePack>("content/automation/next-review-source-pack.json");
   const publicExpansion = readJson<PublicExpansionQueue>("content/automation/public-expansion-queue.json");
+  const waveApprovalPacket = readJson<WaveApprovalPacket>("content/automation/wave-approval-packet.json");
   const deploymentCoverage = readJson<DeploymentCoverage>("content/automation/ai-deployment-coverage.json");
   const promptCoverage = readJson<PromptCoverage>("content/automation/industry-prompt-coverage.json");
   const projectStatus = readJson<ProjectStatus>("content/automation/project-status.json");
@@ -234,6 +252,17 @@ function main() {
         title: item.title,
       })),
     },
+    waveApprovalPacket: {
+      files: waveApprovalPacket.files,
+      summary: waveApprovalPacket.summary,
+      items: waveApprovalPacket.items.map((item) => ({
+        file: item.file,
+        readyForHumanReview: item.readyForHumanReview,
+        riskChecks: item.riskReviewChecklist.length,
+        sources: item.officialSourceTargets.length,
+        title: item.title,
+      })),
+    },
     deploymentCoverage: {
       summary: deploymentCoverage.summary,
       topTopics: deploymentCoverage.coverage.slice(0, 6).map((item) => ({
@@ -252,7 +281,16 @@ function main() {
         publicMatches: item.publicMatches,
       })),
     },
-    nextActions: buildNextActions(projectStatus, liveSearch, cannibalization, publishPack.items.length, reviewCoverage, nextReviewSourcePack, publicExpansion),
+    nextActions: buildNextActions(
+      projectStatus,
+      liveSearch,
+      cannibalization,
+      publishPack.items.length,
+      reviewCoverage,
+      nextReviewSourcePack,
+      publicExpansion,
+      waveApprovalPacket,
+    ),
   };
 
   const jsonTarget = path.join(process.cwd(), "content", "automation", "manual-review-workbench.json");
@@ -272,6 +310,7 @@ function buildNextActions(
   reviewCoverage: ReviewCoverage,
   nextReviewSourcePack: NextReviewSourcePack,
   publicExpansion: PublicExpansionQueue,
+  waveApprovalPacket: WaveApprovalPacket,
 ) {
   if (projectStatus.articles.publishableNow.length > 0) return ["Stop and inspect publishableNow before adding more review candidates."];
   if (!liveSearch.ok || liveSearch.failedChecks.length > 0) return ["Fix live search surface failures before any publishing action."];
@@ -289,6 +328,9 @@ function buildNextActions(
   if (publicExpansion.summary.unsafeItems > 0 || publicExpansion.summary.duplicateFiles > 0) {
     return ["Resolve public expansion queue safety or duplicate issues before any mark:review action."];
   }
+  if (waveApprovalPacket.summary.unsafeItems > 0 || waveApprovalPacket.summary.readyForHumanReview !== waveApprovalPacket.summary.items) {
+    return ["Resolve Wave 1 approval packet issues before any mark:review action."];
+  }
   if (
     reviewCoverage.summary.itemsMissingOfficialSources > 0 ||
     reviewCoverage.summary.itemsMissingFactCheckQueries > 0 ||
@@ -298,6 +340,7 @@ function buildNextActions(
   }
   return [
     "Review the current publish readiness items in docs/publish-readiness-pack.md.",
+    "Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.",
     "Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.",
     "Use docs/next-review-source-pack.md to verify official sources for the roadmap's next review files.",
@@ -363,6 +406,11 @@ function toMarkdown(payload: {
       sourcePackReady: boolean;
       title: string;
     }>;
+  };
+  waveApprovalPacket: {
+    files: string[];
+    items: Array<{ file: string; readyForHumanReview: boolean; riskChecks: number; sources: number; title: string }>;
+    summary: WaveApprovalPacket["summary"];
   };
   deploymentCoverage: {
     summary: DeploymentCoverage["summary"];
@@ -498,6 +546,19 @@ function toMarkdown(payload: {
     "| --- | --- | --- | --- | --- | --- | --- |",
     ...payload.publicExpansion.topItems.map((item) => (
       `| ${item.approvalWave} | ${item.priorityScore} | ${item.sourcePackReady} | ${item.currentPack} | ${item.plannedBatch} | ${item.title} | ${item.file} |`
+    )),
+    "",
+    "## Wave Approval Packet",
+    "",
+    `- Wave: ${payload.waveApprovalPacket.summary.wave}`,
+    `- Items: ${payload.waveApprovalPacket.summary.items}`,
+    `- Ready for human review: ${payload.waveApprovalPacket.summary.readyForHumanReview}`,
+    `- Unsafe items: ${payload.waveApprovalPacket.summary.unsafeItems}`,
+    "",
+    "| Ready | Sources | Risk checks | Title | File |",
+    "| --- | --- | --- | --- | --- |",
+    ...payload.waveApprovalPacket.items.map((item) => (
+      `| ${item.readyForHumanReview} | ${item.sources} | ${item.riskChecks} | ${item.title} | ${item.file} |`
     )),
     "",
     "## AI Deployment Coverage",

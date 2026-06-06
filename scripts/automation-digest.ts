@@ -147,6 +147,23 @@ type PublicExpansionQueue = {
   }>;
 };
 
+type WaveApprovalPacket = {
+  files: string[];
+  items: Array<{
+    file: string;
+    officialSourceTargets: string[];
+    readyForHumanReview: boolean;
+    riskReviewChecklist: string[];
+    title: string;
+  }>;
+  summary: {
+    items: number;
+    readyForHumanReview: number;
+    unsafeItems: number;
+    wave: number;
+  };
+};
+
 const reports = {
   cannibalization: readJson<{ summary: { conflicts: number; reviewBatchConflicts: number } }>("content/automation/content-cannibalization.json"),
   freshness: readJson<{ summary: { currentReviewItems: number; highRisk: number; mediumRisk: number; plannedReviewItems: number } }>(
@@ -182,6 +199,7 @@ const reports = {
   reviewRoadmap: readJson<ReviewRoadmap>("content/automation/review-priority-roadmap.json"),
   nextReviewSourcePack: readJson<NextReviewSourcePack>("content/automation/next-review-source-pack.json"),
   publicExpansion: readJson<PublicExpansionQueue>("content/automation/public-expansion-queue.json"),
+  waveApprovalPacket: readJson<WaveApprovalPacket>("content/automation/wave-approval-packet.json"),
   review: readJson<{ counts: { candidates: number; returned: number; rejected: Record<string, number> }; recommendedToday: ReviewCandidate[] }>(
     "content/automation/review-candidates.json",
   ),
@@ -253,6 +271,14 @@ const payload = {
     top: reports.publicExpansion.data?.items.slice(0, 9) ?? [],
     unsafeItems: reports.publicExpansion.data?.summary.unsafeItems ?? null,
     waves: reports.publicExpansion.data?.approvalWaves.slice(0, 3) ?? [],
+  },
+  waveApprovalPacket: {
+    files: reports.waveApprovalPacket.data?.files ?? [],
+    items: reports.waveApprovalPacket.data?.summary.items ?? null,
+    readyForHumanReview: reports.waveApprovalPacket.data?.summary.readyForHumanReview ?? null,
+    top: reports.waveApprovalPacket.data?.items ?? [],
+    unsafeItems: reports.waveApprovalPacket.data?.summary.unsafeItems ?? null,
+    wave: reports.waveApprovalPacket.data?.summary.wave ?? null,
   },
   preflight: {
     checked: reports.preflight.data?.summary.checked ?? null,
@@ -342,11 +368,15 @@ function buildNextActions() {
   if (!reports.publicExpansion.data || reports.publicExpansion.data.summary.unsafeItems > 0) {
     return ["Open docs/public-expansion-queue.md and resolve expansion queue guardrail issues before manual review."];
   }
+  if (!reports.waveApprovalPacket.data || reports.waveApprovalPacket.data.summary.unsafeItems > 0) {
+    return ["Open docs/wave-approval-packet.md and resolve Wave 1 approval issues before manual review."];
+  }
   if (!reports.reviewCoverage.data || reports.reviewCoverage.data.summary.missingCoverage > 0) {
     return ["Open docs/review-coverage-report.md and regenerate coverage for all planned review candidates."];
   }
   return [
     "Manually review the three recommended drafts in docs/review-preflight.md.",
+    "Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.",
     "Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
@@ -460,6 +490,19 @@ function toMarkdown(data: typeof payload) {
     "| --- | --- | --- | --- | --- | --- | --- |",
     ...data.publicExpansion.top.map((item) => (
       `| ${item.approvalWave} | ${item.priorityScore} | ${item.sourcePackReady} | ${item.currentPack} | ${item.plannedBatch} | ${item.title} | ${item.file} |`
+    )),
+    "",
+    "## Wave Approval Packet",
+    "",
+    `- Wave: ${data.waveApprovalPacket.wave}`,
+    `- Items: ${data.waveApprovalPacket.items}`,
+    `- Ready for human review: ${data.waveApprovalPacket.readyForHumanReview}`,
+    `- Unsafe items: ${data.waveApprovalPacket.unsafeItems}`,
+    "",
+    "| Ready | Sources | Risk checks | Title | File |",
+    "| --- | --- | --- | --- | --- |",
+    ...data.waveApprovalPacket.top.map((item) => (
+      `| ${item.readyForHumanReview} | ${item.officialSourceTargets.length} | ${item.riskReviewChecklist.length} | ${item.title} | ${item.file} |`
     )),
     "",
     "## Preflight",

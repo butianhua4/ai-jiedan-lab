@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-06T12:19:35.526Z
+Generated at: 2026-06-06T12:27:28.445Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 39
-- Passed: 39
+- Checks: 41
+- Passed: 41
 - Failed: 0
 
 ## Checks
@@ -51,5 +51,7 @@ Overall: PASS
 | public expansion queue is manual and covers roadmap files | PASS | items=19, waves=7, roadmap=19 |
 | public expansion queue only contains source-pack-ready safe drafts | PASS | unsafeItems=0, duplicateFiles=0, sourcePackReadyItems=19 |
 | public expansion queue stops before publishing | PASS | publishableNow=0 |
+| wave approval packet is manual and ready | PASS | wave=1, items=3, ready=3 |
+| wave approval packet has no unsafe items | PASS | unsafeItems=0 |
 | live search surface check passed | PASS | publicArticles=15, failed=0 |
 | manual review workbench is ready and stops before publishing | PASS | currentItemsCovered=3, publishableNow=0 |
