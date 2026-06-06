@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T10:58:42.284Z",
+  "generatedAt": "2026-06-06T11:04:54.364Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -509,7 +509,7 @@
   "liveSearch": {
     "checkedArticles": 15,
     "failedChecks": [],
-    "generatedAt": "2026-06-06T10:57:47.153Z",
+    "generatedAt": "2026-06-06T11:04:36.149Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 15,

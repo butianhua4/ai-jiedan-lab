@@ -14,7 +14,14 @@ async function main() {
   );
   const publishPack = readJson<{
     guardrails: { autoPublish: boolean };
-    items: Array<{ factCheckQueries?: unknown[]; file: string; officialSourceTargets?: unknown[] }>;
+    items: Array<{
+      factCheckQueries?: unknown[];
+      file: string;
+      humanDecisionChecklist?: unknown[];
+      matchedContentOpportunity?: unknown;
+      officialSourceTargets?: unknown[];
+      riskReviewChecklist?: unknown[];
+    }>;
   }>(
     "content/automation/publish-readiness-pack.json",
   );
@@ -41,6 +48,9 @@ async function main() {
   const packItemsMissingSourceReview = publishPack.items
     .filter((item) => !item.officialSourceTargets?.length || !item.factCheckQueries?.length)
     .map((item) => item.file);
+  const packItemsMissingReviewContext = publishPack.items
+    .filter((item) => !item.humanDecisionChecklist?.length || !item.riskReviewChecklist?.length || !item.matchedContentOpportunity)
+    .map((item) => item.file);
   const clusters = reviewQueue.recommendedToday.map((item) => item.cluster);
   const repeatedClusters = clusters.filter((cluster, index) => clusters.indexOf(cluster) !== index);
   const nonPublishedIndexed = articles
@@ -64,6 +74,11 @@ async function main() {
       name: "publish pack includes source verification tasks",
       ok: packItemsMissingSourceReview.length === 0,
       detail: packItemsMissingSourceReview.length ? packItemsMissingSourceReview.join(", ") : `${publishPack.items.length} item(s) covered`,
+    },
+    {
+      name: "publish pack includes human decision and risk context",
+      ok: packItemsMissingReviewContext.length === 0,
+      detail: packItemsMissingReviewContext.length ? packItemsMissingReviewContext.join(", ") : `${publishPack.items.length} item(s) covered`,
     },
     {
       name: "recommended review candidates pass preflight",
