@@ -1,4 +1,4 @@
-name: Review Automation
+name: Project Automation
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
     - cron: "30 23 * * *"
 
 jobs:
-  review-automation:
+  project-automation:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,10 +21,22 @@ jobs:
       - name: Generate review queue
         run: npm run automation:review -- --limit=25
 
-      - name: Upload review queue
+      - name: Generate project status
+        run: npm run --silent project:status > content/automation/project-status.json
+
+      - name: Run SEO safety check
+        run: npm run --silent seo:check > content/automation/seo-check.json
+
+      - name: Run searchability check
+        run: npm run --silent searchability:check > content/automation/searchability-check.json
+
+      - name: Upload project automation reports
         uses: actions/upload-artifact@v4
         with:
-          name: review-automation
+          name: project-automation
           path: |
             content/automation/review-candidates.json
+            content/automation/project-status.json
+            content/automation/seo-check.json
+            content/automation/searchability-check.json
             docs/review-automation.md

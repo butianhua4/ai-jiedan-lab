@@ -1,0 +1,56 @@
+﻿{
+  "base": "https://ai-jiedan-lab.vercel.app",
+  "score": 100,
+  "summary": {
+    "checks": 9,
+    "passed": 9,
+    "failed": 0,
+    "publishedPosts": 15,
+    "categorySlugs": 6,
+    "tagSlugs": 31
+  },
+  "failedItems": [],
+  "checks": [
+    {
+      "name": "published posts are available",
+      "ok": true,
+      "detail": "15 published posts"
+    },
+    {
+      "name": "article slugs are english/ascii",
+      "ok": true
+    },
+    {
+      "name": "category slugs are english/ascii",
+      "ok": true
+    },
+    {
+      "name": "tag slugs are english/ascii",
+      "ok": true
+    },
+    {
+      "name": "published posts are indexable",
+      "ok": true
+    },
+    {
+      "name": "published posts have canonical URL",
+      "ok": true
+    },
+    {
+      "name": "published posts have metadata basics",
+      "ok": true
+    },
+    {
+      "name": "published posts have enough content",
+      "ok": true
+    },
+    {
+      "name": "tool detail pages exist in data",
+      "ok": true,
+      "detail": "20 tools"
+    }
+  ],
+  "nextActions": [
+    "当前基础可搜索度检查通过。下一步提交 Google Search Console 并观察真实收录。"
+  ]
+}
