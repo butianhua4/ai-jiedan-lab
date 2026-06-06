@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T11:34:30.538Z
+Generated at: 2026-06-06T11:45:18.406Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -84,6 +84,23 @@ This digest is read-only. It summarizes automation reports and does not publish 
 | Ollama、vLLM 和开源模型本地部署 | 260 | 0 | 5 | 本地模型部署搜索需求强，但信息变化快，必须保留人工事实核对。 |
 | Dify、n8n、MCP 和无代码 AI 自动化 | 258 | 0 | 5 | 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 |
 
+## Industry Prompt Coverage
+
+- Industries: 16
+- Industries with ready candidates: 16
+- Review-ready prompt drafts: 25
+- Unique candidate files: 19
+- Public prompt articles: 0
+
+| Industry | Score | Public | Ready candidates | Search query examples |
+| --- | --- | --- | --- | --- |
+| 全行业提示词模板库 | 230 | 0 | 4 | AI 提示词大全<br>ChatGPT 提示词模板 |
+| 客服 | 206 | 0 | 3 | 客服 AI 提示词<br>客服回复 AI 模板 |
+| 运营 | 201 | 0 | 3 | 运营 AI 提示词<br>周报 AI prompt |
+| 软件开发 | 196 | 0 | 4 | 软件开发 AI 提示词<br>代码审查 AI prompt |
+| 销售 | 196 | 0 | 2 | 销售 AI 提示词<br>客户跟进 AI 话术 |
+| HR 招聘 | 188 | 0 | 2 | HR AI 提示词<br>招聘 AI prompt |
+
 ## Cannibalization Warnings
 
 - Conflicts: 200
@@ -98,7 +115,7 @@ This digest is read-only. It summarizes automation reports and does not publish 
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T11:34:21.464Z
+- Latest check: 2026-06-06T11:45:09.680Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85

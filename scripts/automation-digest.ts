@@ -51,6 +51,23 @@ type ReviewCoverage = {
   };
 };
 
+type PromptCoverage = {
+  coverage: Array<{
+    candidates: unknown[];
+    gapScore: number;
+    industry: string;
+    publicMatches: number;
+    searchQueries: string[];
+  }>;
+  summary: {
+    industries: number;
+    industriesWithReadyCandidates: number;
+    promptPublicArticles: number;
+    reviewReadyPromptDrafts: number;
+    uniqueCandidateFiles: number;
+  };
+};
+
 const reports = {
   cannibalization: readJson<{ summary: { conflicts: number; reviewBatchConflicts: number } }>("content/automation/content-cannibalization.json"),
   freshness: readJson<{ summary: { currentReviewItems: number; highRisk: number; mediumRisk: number; plannedReviewItems: number } }>(
@@ -59,6 +76,7 @@ const reports = {
   contentBacklog: readJson<{ opportunities: ContentOpportunity[]; totals: { topics: number; topicsWithReadyCandidates: number } }>(
     "content/automation/content-opportunity-backlog.json",
   ),
+  promptCoverage: readJson<PromptCoverage>("content/automation/industry-prompt-coverage.json"),
   gate: readJson<{ ok: boolean; summary: { checks: number; failed: number; passed: number } }>("content/automation/automation-gate.json"),
   liveSearch: readJson<{
     articles: { checked: number; failed: unknown[]; missingFromSitemap: string[]; publicCount: number };
@@ -139,6 +157,14 @@ const payload = {
     topics: reports.contentBacklog.data?.totals.topics ?? null,
     topicsWithReadyCandidates: reports.contentBacklog.data?.totals.topicsWithReadyCandidates ?? null,
     top: reports.contentBacklog.data?.opportunities.slice(0, 5) ?? [],
+  },
+  promptCoverage: {
+    industries: reports.promptCoverage.data?.summary.industries ?? null,
+    industriesWithReadyCandidates: reports.promptCoverage.data?.summary.industriesWithReadyCandidates ?? null,
+    promptPublicArticles: reports.promptCoverage.data?.summary.promptPublicArticles ?? null,
+    reviewReadyPromptDrafts: reports.promptCoverage.data?.summary.reviewReadyPromptDrafts ?? null,
+    top: reports.promptCoverage.data?.coverage.slice(0, 6) ?? [],
+    uniqueCandidateFiles: reports.promptCoverage.data?.summary.uniqueCandidateFiles ?? null,
   },
   cannibalization: {
     conflicts: reports.cannibalization.data?.summary.conflicts ?? null,
@@ -291,6 +317,20 @@ function toMarkdown(data: typeof payload) {
     "| --- | --- | --- | --- | --- |",
     ...data.contentOpportunities.top.map((item) => (
       `| ${item.topic} | ${item.gapScore} | ${item.publicMatches} | ${item.readyCandidates.length} | ${item.why} |`
+    )),
+    "",
+    "## Industry Prompt Coverage",
+    "",
+    `- Industries: ${data.promptCoverage.industries}`,
+    `- Industries with ready candidates: ${data.promptCoverage.industriesWithReadyCandidates}`,
+    `- Review-ready prompt drafts: ${data.promptCoverage.reviewReadyPromptDrafts}`,
+    `- Unique candidate files: ${data.promptCoverage.uniqueCandidateFiles}`,
+    `- Public prompt articles: ${data.promptCoverage.promptPublicArticles}`,
+    "",
+    "| Industry | Score | Public | Ready candidates | Search query examples |",
+    "| --- | --- | --- | --- | --- |",
+    ...data.promptCoverage.top.map((item) => (
+      `| ${item.industry} | ${item.gapScore} | ${item.publicMatches} | ${item.candidates.length} | ${item.searchQueries.slice(0, 2).join("<br>")} |`
     )),
     "",
     "## Cannibalization Warnings",

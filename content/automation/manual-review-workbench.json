@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T11:33:07.065Z",
+  "generatedAt": "2026-06-06T11:44:00.376Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -242,9 +242,63 @@
     "reviewBatchConflictItems": 0,
     "unsafeIndexingItems": 0
   },
+  "promptCoverage": {
+    "summary": {
+      "currentPackPromptItems": 1,
+      "industries": 16,
+      "industriesWithoutPublicCoverage": 16,
+      "industriesWithReadyCandidates": 16,
+      "plannedPromptItems": 3,
+      "promptDrafts": 25,
+      "promptPublicArticles": 0,
+      "reviewReadyPromptDrafts": 25,
+      "totalCandidateMentions": 32,
+      "uniqueCandidateFiles": 19,
+      "unsafeCandidateItems": 0
+    },
+    "topIndustries": [
+      {
+        "candidates": 4,
+        "gapScore": 230,
+        "industry": "全行业提示词模板库",
+        "publicMatches": 0
+      },
+      {
+        "candidates": 3,
+        "gapScore": 206,
+        "industry": "客服",
+        "publicMatches": 0
+      },
+      {
+        "candidates": 3,
+        "gapScore": 201,
+        "industry": "运营",
+        "publicMatches": 0
+      },
+      {
+        "candidates": 4,
+        "gapScore": 196,
+        "industry": "软件开发",
+        "publicMatches": 0
+      },
+      {
+        "candidates": 2,
+        "gapScore": 196,
+        "industry": "销售",
+        "publicMatches": 0
+      },
+      {
+        "candidates": 2,
+        "gapScore": 188,
+        "industry": "HR 招聘",
+        "publicMatches": 0
+      }
+    ]
+  },
   "nextActions": [
     "Review the current publish readiness items in docs/publish-readiness-pack.md.",
     "Use docs/review-coverage-report.md to inspect all planned review candidates, not only today's pack.",
+    "Use docs/industry-prompt-coverage.md to prioritize broad industry AI prompt drafts for future review batches.",
     "Use docs/review-batch-plan.md to see the next topical batches after the current pack.",
     "Run dry-run mark:review commands only; add --confirm-human only after explicit human approval."
   ]

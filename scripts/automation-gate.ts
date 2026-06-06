@@ -43,6 +43,18 @@ async function main() {
     opportunities?: Array<{ readyCandidates?: unknown[]; searchDemandNote?: string }>;
     totals: { topics: number; topicsWithReadyCandidates: number };
   }>("content/automation/content-opportunity-backlog.json");
+  const promptCoverage = readJson<{
+    coverage?: Array<{ candidates?: unknown[]; searchQueries?: unknown[]; sourceTargets?: unknown[] }>;
+    guardrails: { autoMarkReview: boolean; autoPublish: boolean };
+    sourceEvidence?: { officialPromptSources?: unknown[] };
+    summary: {
+      industries: number;
+      industriesWithReadyCandidates: number;
+      reviewReadyPromptDrafts: number;
+      unsafeCandidateItems: number;
+      uniqueCandidateFiles: number;
+    };
+  }>("content/automation/industry-prompt-coverage.json");
   const cannibalization = readJson<{
     guardrails: { autoPublish: boolean };
     summary: { articleCount: number; conflicts: number; reviewBatchConflicts: number };
@@ -190,6 +202,29 @@ async function main() {
         contentBacklog.totals.topicsWithReadyCandidates > 0 &&
         Boolean(contentBacklog.opportunities?.every((item) => item.searchDemandNote && item.readyCandidates)),
       detail: `topics=${contentBacklog.totals.topics}, topicsWithReadyCandidates=${contentBacklog.totals.topicsWithReadyCandidates}`,
+    },
+    {
+      name: "industry prompt coverage has broad reviewable coverage",
+      ok:
+        promptCoverage.guardrails.autoMarkReview === false &&
+        promptCoverage.guardrails.autoPublish === false &&
+        promptCoverage.summary.industries >= 12 &&
+        promptCoverage.summary.industriesWithReadyCandidates >= 10 &&
+        promptCoverage.summary.reviewReadyPromptDrafts >= 10 &&
+        promptCoverage.summary.uniqueCandidateFiles >= 10,
+      detail: `industries=${promptCoverage.summary.industries}, withCandidates=${promptCoverage.summary.industriesWithReadyCandidates}, reviewReady=${promptCoverage.summary.reviewReadyPromptDrafts}, unique=${promptCoverage.summary.uniqueCandidateFiles}`,
+    },
+    {
+      name: "industry prompt coverage includes source and search review tasks",
+      ok:
+        (promptCoverage.sourceEvidence?.officialPromptSources?.length || 0) >= 4 &&
+        Boolean(promptCoverage.coverage?.every((item) => (item.searchQueries?.length || 0) > 0 && (item.sourceTargets?.length || 0) > 0)),
+      detail: `officialSources=${promptCoverage.sourceEvidence?.officialPromptSources?.length || 0}, industries=${promptCoverage.coverage?.length || 0}`,
+    },
+    {
+      name: "industry prompt candidates stay draft and non-indexable",
+      ok: promptCoverage.summary.unsafeCandidateItems === 0,
+      detail: `unsafeCandidateItems=${promptCoverage.summary.unsafeCandidateItems}`,
     },
     {
       name: "content cannibalization check generated warning report",

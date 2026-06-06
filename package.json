@@ -14,6 +14,7 @@
     "content:plan": "tsx scripts/refresh-content-plan.ts",
     "content:cannibalization": "tsx scripts/content-cannibalization-check.ts",
     "content:freshness": "tsx scripts/content-freshness-check.ts",
+    "content:prompt-coverage": "tsx scripts/industry-prompt-coverage.ts",
     "content:dashboard": "next dev",
     "content:review-pack": "tsx scripts/content-review-pack.ts",
     "content:review-opinions": "tsx scripts/content-review-opinions.ts",

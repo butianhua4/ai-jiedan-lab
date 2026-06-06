@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T11:34:30.538Z",
+  "generatedAt": "2026-06-06T11:45:18.406Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -690,6 +690,363 @@
       }
     ]
   },
+  "promptCoverage": {
+    "industries": 16,
+    "industriesWithReadyCandidates": 16,
+    "promptPublicArticles": 0,
+    "reviewReadyPromptDrafts": 25,
+    "top": [
+      {
+        "audience": "跨行业新手、团队负责人、内容运营",
+        "candidates": [
+          {
+            "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+            "primaryKeyword": "全行业 AI 提示词模板",
+            "publishBatch": 40,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+          },
+          {
+            "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
+            "primaryKeyword": "数据分析 AI 提示词",
+            "publishBatch": 31,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要"
+          },
+          {
+            "file": "content/blog/education-ai-prompts-guide.mdx",
+            "primaryKeyword": "教育 AI 提示词",
+            "publishBatch": 31,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "教育 AI 提示词模板：备课、教案、测验、反馈和学习计划"
+          },
+          {
+            "file": "content/blog/healthcare-admin-ai-prompts-guide.mdx",
+            "primaryKeyword": "医疗 AI 提示词",
+            "publishBatch": 31,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写"
+          }
+        ],
+        "draftMatches": 17,
+        "gapScore": 230,
+        "industry": "全行业提示词模板库",
+        "nextAction": "Use these draft candidates in manual review; keep status=draft/noindex until explicit approval.",
+        "publicMatches": 0,
+        "reviewFocus": [
+          "必须说明提示词不是万能答案",
+          "补齐输入字段、输出格式、质检标准和反例",
+          "避免承诺直接带来成交、排名或收益"
+        ],
+        "searchQueries": [
+          "AI 提示词大全",
+          "ChatGPT 提示词模板",
+          "全行业 AI 提示词",
+          "AI prompt library"
+        ],
+        "sourceTargets": [
+          "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+          "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+          "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+          "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+        ],
+        "workflowAngles": [
+          "行业分类",
+          "提示词版本管理",
+          "审核标准",
+          "复用规则"
+        ]
+      },
+      {
+        "audience": "客服、售后、工单运营",
+        "candidates": [
+          {
+            "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+            "primaryKeyword": "全行业 AI 提示词模板",
+            "publishBatch": 40,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+          },
+          {
+            "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+            "primaryKeyword": "客服 AI 提示词",
+            "publishBatch": 30,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断"
+          },
+          {
+            "file": "content/blog/ecommerce-ai-prompts-guide.mdx",
+            "primaryKeyword": "电商 AI 提示词",
+            "publishBatch": 30,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复"
+          }
+        ],
+        "draftMatches": 3,
+        "gapScore": 206,
+        "industry": "客服",
+        "nextAction": "Use these draft candidates in manual review; keep status=draft/noindex until explicit approval.",
+        "publicMatches": 0,
+        "reviewFocus": [
+          "强调人工升级边界",
+          "敏感投诉和退款不能自动定性",
+          "输出必须包含情绪安抚和事实确认"
+        ],
+        "searchQueries": [
+          "客服 AI 提示词",
+          "客服回复 AI 模板",
+          "工单分类 AI prompt",
+          "售后回复 AI 提示词"
+        ],
+        "sourceTargets": [
+          "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+          "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+          "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+          "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+        ],
+        "workflowAngles": [
+          "回复草稿",
+          "工单分类",
+          "情绪安抚",
+          "升级判断"
+        ]
+      },
+      {
+        "audience": "运营、项目管理、内部流程负责人",
+        "candidates": [
+          {
+            "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+            "primaryKeyword": "全行业 AI 提示词模板",
+            "publishBatch": 40,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+          },
+          {
+            "file": "content/blog/manufacturing-ai-prompts-guide.mdx",
+            "primaryKeyword": "制造业 AI 提示词",
+            "publishBatch": 31,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘"
+          },
+          {
+            "file": "content/blog/operations-ai-prompts-guide.mdx",
+            "primaryKeyword": "运营 AI 提示词",
+            "publishBatch": 31,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "运营 AI 提示词模板：周报、SOP、活动计划、复盘和数据解释"
+          }
+        ],
+        "draftMatches": 3,
+        "gapScore": 201,
+        "industry": "运营",
+        "nextAction": "Use these draft candidates in manual review; keep status=draft/noindex until explicit approval.",
+        "publicMatches": 0,
+        "reviewFocus": [
+          "SOP 和复盘要保留负责人、时间线和验收标准",
+          "周报不能凭空编造数据",
+          "活动计划要保留风险清单"
+        ],
+        "searchQueries": [
+          "运营 AI 提示词",
+          "周报 AI prompt",
+          "SOP AI 提示词",
+          "活动计划 AI 提示词"
+        ],
+        "sourceTargets": [
+          "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+          "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+          "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+          "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+        ],
+        "workflowAngles": [
+          "周报",
+          "SOP",
+          "活动计划",
+          "数据解释"
+        ]
+      },
+      {
+        "audience": "开发者、测试、技术负责人",
+        "candidates": [
+          {
+            "file": "content/blog/software-development-ai-prompts-guide.mdx",
+            "primaryKeyword": "软件开发 AI 提示词",
+            "publishBatch": 31,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "软件开发 AI 提示词模板：需求拆解、代码审查、Bug 排查和测试用例"
+          },
+          {
+            "file": "content/blog/promptfoo-llm-evaluation-beginner-guide.mdx",
+            "primaryKeyword": "promptfoo LLM 评测",
+            "publishBatch": 28,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "promptfoo 怎么做 LLM 评测：提示词、模型和 Agent 都要有测试用例"
+          },
+          {
+            "file": "content/blog/claude-code-bug-prompt.mdx",
+            "primaryKeyword": "Claude Code bug prompt",
+            "publishBatch": 20,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "Claude Code 修 bug 的 prompt 怎么写"
+          },
+          {
+            "file": "content/blog/claude-code-bug-prompt-checklist.mdx",
+            "primaryKeyword": "Claude Code bug prompt 检查清单",
+            "publishBatch": 20,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "Claude Code Bug Prompt 检查清单"
+          }
+        ],
+        "draftMatches": 6,
+        "gapScore": 196,
+        "industry": "软件开发",
+        "nextAction": "Use these draft candidates in manual review; keep status=draft/noindex until explicit approval.",
+        "publicMatches": 0,
+        "reviewFocus": [
+          "代码建议必须经过测试",
+          "Bug 排查要保留复现步骤",
+          "不要把 AI 输出当成最终安全审计"
+        ],
+        "searchQueries": [
+          "软件开发 AI 提示词",
+          "代码审查 AI prompt",
+          "Bug 排查 AI 提示词",
+          "测试用例 AI 提示词"
+        ],
+        "sourceTargets": [
+          "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+          "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+          "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+          "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+        ],
+        "workflowAngles": [
+          "需求拆解",
+          "代码审查",
+          "Bug 排查",
+          "测试用例"
+        ]
+      },
+      {
+        "audience": "销售、BD、客户成功",
+        "candidates": [
+          {
+            "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+            "primaryKeyword": "全行业 AI 提示词模板",
+            "publishBatch": 40,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+          },
+          {
+            "file": "content/blog/sales-ai-prompts-guide.mdx",
+            "primaryKeyword": "销售 AI 提示词",
+            "publishBatch": 30,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "销售 AI 提示词模板：客户画像、跟进话术、异议处理和会议纪要"
+          }
+        ],
+        "draftMatches": 2,
+        "gapScore": 196,
+        "industry": "销售",
+        "nextAction": "Use these draft candidates in manual review; keep status=draft/noindex until explicit approval.",
+        "publicMatches": 0,
+        "reviewFocus": [
+          "提示词要要求输入客户背景和真实约束",
+          "异议处理不能变成夸大承诺",
+          "会议纪要要保留待确认事项"
+        ],
+        "searchQueries": [
+          "销售 AI 提示词",
+          "客户跟进 AI 话术",
+          "销售会议纪要 prompt",
+          "异议处理 AI 提示词"
+        ],
+        "sourceTargets": [
+          "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+          "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+          "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+          "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+        ],
+        "workflowAngles": [
+          "客户画像",
+          "跟进话术",
+          "异议处理",
+          "会议纪要"
+        ]
+      },
+      {
+        "audience": "HR、招聘、培训负责人",
+        "candidates": [
+          {
+            "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+            "primaryKeyword": "全行业 AI 提示词模板",
+            "publishBatch": 40,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+          },
+          {
+            "file": "content/blog/hr-recruiting-ai-prompts-guide.mdx",
+            "primaryKeyword": "HR AI 提示词",
+            "publishBatch": 30,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "title": "人力招聘 AI 提示词模板：JD、简历初筛、面试题和培训材料"
+          }
+        ],
+        "draftMatches": 2,
+        "gapScore": 188,
+        "industry": "HR 招聘",
+        "nextAction": "Use these draft candidates in manual review; keep status=draft/noindex until explicit approval.",
+        "publicMatches": 0,
+        "reviewFocus": [
+          "简历初筛要避免歧视性标准",
+          "面试题要与岗位能力相关",
+          "培训材料要保留人工确认"
+        ],
+        "searchQueries": [
+          "HR AI 提示词",
+          "招聘 AI prompt",
+          "简历初筛 AI 提示词",
+          "面试题 AI 提示词"
+        ],
+        "sourceTargets": [
+          "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+          "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+          "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+          "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+        ],
+        "workflowAngles": [
+          "JD",
+          "简历初筛",
+          "面试题",
+          "培训材料"
+        ]
+      }
+    ],
+    "uniqueCandidateFiles": 19
+  },
   "cannibalization": {
     "conflicts": 200,
     "reviewBatchConflicts": 0
@@ -703,7 +1060,7 @@
   "liveSearch": {
     "checkedArticles": 15,
     "failedChecks": [],
-    "generatedAt": "2026-06-06T11:34:21.464Z",
+    "generatedAt": "2026-06-06T11:45:09.680Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 15,

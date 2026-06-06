@@ -19,6 +19,7 @@ const tasks: Task[] = [
   { title: "Run SEO safety check", args: ["run", "--silent", "seo:check"], outputFile: "content/automation/seo-check.json" },
   { title: "Generate SEO opportunity map", args: ["run", "seo:opportunities"] },
   { title: "Generate content opportunity backlog", args: ["run", "content:opportunities"] },
+  { title: "Generate industry prompt coverage", args: ["run", "content:prompt-coverage"] },
   { title: "Generate review batch plan", args: ["run", "automation:review-plan"] },
   { title: "Run content cannibalization check", args: ["run", "content:cannibalization"] },
   { title: "Run content freshness check", args: ["run", "content:freshness"] },

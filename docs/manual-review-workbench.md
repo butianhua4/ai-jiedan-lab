@@ -1,6 +1,6 @@
 # Manual Review Workbench
 
-Generated at: 2026-06-06T11:33:07.065Z
+Generated at: 2026-06-06T11:44:00.376Z
 
 This workbench is read-only. It does not publish articles or mark drafts for review.
 
@@ -83,6 +83,24 @@ This workbench is read-only. It does not publish articles or mark drafts for rev
 - Unsafe indexing items: 0
 - Non-draft items: 0
 
+## Industry Prompt Coverage
+
+- Industries: 16
+- Industries with ready candidates: 16
+- Review-ready prompt drafts: 25
+- Unique candidate files: 19
+- Public prompt articles: 0
+- Unsafe candidate items: 0
+
+| Industry | Score | Public | Ready candidates |
+| --- | --- | --- | --- |
+| 全行业提示词模板库 | 230 | 0 | 4 |
+| 客服 | 206 | 0 | 3 |
+| 运营 | 201 | 0 | 3 |
+| 软件开发 | 196 | 0 | 4 |
+| 销售 | 196 | 0 | 2 |
+| HR 招聘 | 188 | 0 | 2 |
+
 | Reason | Group | Overlap | Files |
 | --- | --- | --- | --- |
 
@@ -90,5 +108,6 @@ This workbench is read-only. It does not publish articles or mark drafts for rev
 
 - Review the current publish readiness items in docs/publish-readiness-pack.md.
 - Use docs/review-coverage-report.md to inspect all planned review candidates, not only today's pack.
+- Use docs/industry-prompt-coverage.md to prioritize broad industry AI prompt drafts for future review batches.
 - Use docs/review-batch-plan.md to see the next topical batches after the current pack.
 - Run dry-run mark:review commands only; add --confirm-human only after explicit human approval.
