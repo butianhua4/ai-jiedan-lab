@@ -259,6 +259,29 @@ type StructuredData = {
   }>;
 };
 
+type SearchIntentLanes = {
+  summary: {
+    highPriorityLanes: number;
+    lanes: number;
+    lanesWithReadyDrafts: number;
+    lanesWithoutPublicCoverage: number;
+    maxPriorityScore: number;
+    notReadyMatchedDrafts: number;
+    totalReadyDraftMatches: number;
+  };
+  topLanes: Array<{
+    demandScore: number;
+    id: string;
+    intentSeeds: string[];
+    matchedCandidates: unknown[];
+    priorityReason: string;
+    priorityScore: number;
+    publicCount: number;
+    readyDraftCount: number;
+    title: string;
+  }>;
+};
+
 type ProjectStatus = {
   articles: { publicPublished: number; publishableNow: unknown[]; statusCounts: Record<string, number> };
 };
@@ -286,6 +309,7 @@ function main() {
   const internalLinks = readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json");
   const searchSnippets = readJson<SearchSnippets>("content/automation/search-snippet-readiness-audit.json");
   const structuredData = readJson<StructuredData>("content/automation/structured-data-readiness-audit.json");
+  const searchIntentLanes = readJson<SearchIntentLanes>("content/automation/search-intent-lane-map.json");
   const deploymentCoverage = readJson<DeploymentCoverage>("content/automation/ai-deployment-coverage.json");
   const promptCoverage = readJson<PromptCoverage>("content/automation/industry-prompt-coverage.json");
   const projectStatus = readJson<ProjectStatus>("content/automation/project-status.json");
@@ -456,6 +480,20 @@ function main() {
         topic: item.topic,
       })),
     },
+    searchIntentLanes: {
+      summary: searchIntentLanes.summary,
+      topLanes: searchIntentLanes.topLanes.slice(0, 8).map((item) => ({
+        demandScore: item.demandScore,
+        id: item.id,
+        intentSeeds: item.intentSeeds,
+        matchedCandidates: item.matchedCandidates.length,
+        priorityReason: item.priorityReason,
+        priorityScore: item.priorityScore,
+        publicCount: item.publicCount,
+        readyDraftCount: item.readyDraftCount,
+        title: item.title,
+      })),
+    },
     promptCoverage: {
       summary: promptCoverage.summary,
       topIndustries: promptCoverage.coverage.slice(0, 6).map((item) => ({
@@ -481,6 +519,7 @@ function main() {
       internalLinks,
       searchSnippets,
       structuredData,
+      searchIntentLanes,
     ),
   };
 
@@ -509,6 +548,7 @@ function buildNextActions(
   internalLinks: InternalLinks,
   searchSnippets: SearchSnippets,
   structuredData: StructuredData,
+  searchIntentLanes: SearchIntentLanes,
 ) {
   if (projectStatus.articles.publishableNow.length > 0) return ["Stop and inspect publishableNow before adding more review candidates."];
   if (!liveSearch.ok || liveSearch.failedChecks.length > 0) return ["Fix live search surface failures before any publishing action."];
@@ -538,6 +578,7 @@ function buildNextActions(
   if (internalLinks.summary.waveItemsMissingPublicLinkSuggestion > 0) return ["Resolve Wave 1 internal link suggestion gaps before publishing."];
   if (searchSnippets.summary.waveItemsWithBlockingIssues > 0) return ["Fix Wave 1 search snippet blockers before publishing."];
   if (structuredData.summary.waveItemsWithBlockingIssues > 0) return ["Fix Wave 1 structured data readiness blockers before publishing."];
+  if (searchIntentLanes.summary.lanesWithReadyDrafts !== searchIntentLanes.summary.lanes) return ["Regenerate search intent lane map and ensure every broad lane has ready draft candidates."];
   if (
     reviewCoverage.summary.itemsMissingOfficialSources > 0 ||
     reviewCoverage.summary.itemsMissingFactCheckQueries > 0 ||
@@ -553,6 +594,7 @@ function buildNextActions(
     "Use docs/internal-link-opportunity-audit.md to add public internal links during manual review.",
     "Use docs/search-snippet-readiness-audit.md to review title, description, and slug snippet quality.",
     "Use docs/structured-data-readiness-audit.md to review metadata and JSON-LD readiness.",
+    "Use docs/search-intent-lane-map.md to choose broad, high-search-intent lanes beyond basic web deployment.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.",
     "Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.",
     "Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.",
@@ -678,6 +720,20 @@ function toMarkdown(payload: {
   deploymentCoverage: {
     summary: DeploymentCoverage["summary"];
     topTopics: Array<{ candidates: number; gapScore: number; publicMatches: number; topic: string }>;
+  };
+  searchIntentLanes: {
+    summary: SearchIntentLanes["summary"];
+    topLanes: Array<{
+      demandScore: number;
+      id: string;
+      intentSeeds: string[];
+      matchedCandidates: number;
+      priorityReason: string;
+      priorityScore: number;
+      publicCount: number;
+      readyDraftCount: number;
+      title: string;
+    }>;
   };
   promptCoverage: {
     summary: PromptCoverage["summary"];
@@ -918,6 +974,21 @@ function toMarkdown(payload: {
     "| Topic | Score | Public | Ready candidates |",
     "| --- | --- | --- | --- |",
     ...payload.deploymentCoverage.topTopics.map((item) => `| ${item.topic} | ${item.gapScore} | ${item.publicMatches} | ${item.candidates} |`),
+    "",
+    "## Search Intent Lane Map",
+    "",
+    `- Lanes: ${payload.searchIntentLanes.summary.lanes}`,
+    `- High-priority lanes: ${payload.searchIntentLanes.summary.highPriorityLanes}`,
+    `- Lanes with ready drafts: ${payload.searchIntentLanes.summary.lanesWithReadyDrafts}`,
+    `- Lanes without public coverage: ${payload.searchIntentLanes.summary.lanesWithoutPublicCoverage}`,
+    `- Total ready draft matches: ${payload.searchIntentLanes.summary.totalReadyDraftMatches}`,
+    `- Not-ready matched drafts: ${payload.searchIntentLanes.summary.notReadyMatchedDrafts}`,
+    "",
+    "| Score | Demand | Public | Ready drafts | Candidates shown | Lane | Intent seeds | Reason |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...payload.searchIntentLanes.topLanes.map((item) => (
+      `| ${item.priorityScore} | ${item.demandScore} | ${item.publicCount} | ${item.readyDraftCount} | ${item.matchedCandidates} | ${item.title} | ${item.intentSeeds.slice(0, 3).join("<br>")} | ${item.priorityReason} |`
+    )),
     "",
     "## Industry Prompt Coverage",
     "",

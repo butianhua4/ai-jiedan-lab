@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T13:50:26.710Z",
+  "generatedAt": "2026-06-06T14:01:18.821Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -815,10 +815,10 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 73,
+    "filesScanned": 75,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 387
+    "watchMentions": 395
   },
   "contentIntegrity": {
     "allIssueItems": 0,
@@ -1063,6 +1063,148 @@
       }
     ]
   },
+  "searchIntentLanes": {
+    "summary": {
+      "highPriorityLanes": 12,
+      "lanes": 12,
+      "lanesWithReadyDrafts": 12,
+      "lanesWithoutPublicCoverage": 10,
+      "maxPriorityScore": 386,
+      "notReadyMatchedDrafts": 355,
+      "totalReadyDraftMatches": 233
+    },
+    "topLanes": [
+      {
+        "demandScore": 10,
+        "id": "industry-prompt-library",
+        "intentSeeds": [
+          "AI 提示词大全",
+          "ChatGPT 提示词模板",
+          "全行业 AI 提示词",
+          "AI prompt library"
+        ],
+        "matchedCandidates": 8,
+        "priorityReason": "demandScore=10; no public coverage; readyDrafts=23; currentPack=2; wave1=2",
+        "priorityScore": 386,
+        "publicCount": 0,
+        "readyDraftCount": 23,
+        "title": "Cross-industry AI prompt templates and reusable prompt libraries"
+      },
+      {
+        "demandScore": 9,
+        "id": "business-ai-workflows",
+        "intentSeeds": [
+          "企业 AI 应用场景",
+          "AI 工作流模板",
+          "销售 AI 提示词",
+          "客服 AI 提示词",
+          "运营 AI 提示词"
+        ],
+        "matchedCandidates": 8,
+        "priorityReason": "demandScore=9; no public coverage; readyDrafts=16; currentPack=2; wave1=2",
+        "priorityScore": 366,
+        "publicCount": 0,
+        "readyDraftCount": 16,
+        "title": "Business department AI workflows across sales, support, ops, HR, finance, legal, and education"
+      },
+      {
+        "demandScore": 10,
+        "id": "agent-deployment-tools",
+        "intentSeeds": [
+          "AI Agent 部署",
+          "AI Agent 工具调用",
+          "Vercel AI SDK Agent",
+          "OpenAI Agents SDK"
+        ],
+        "matchedCandidates": 8,
+        "priorityReason": "demandScore=10; no public coverage; readyDrafts=27; currentPack=1; wave1=1",
+        "priorityScore": 358,
+        "publicCount": 0,
+        "readyDraftCount": 27,
+        "title": "AI Agent deployment, tool calling, and production workflow"
+      },
+      {
+        "demandScore": 10,
+        "id": "rag-knowledge-memory",
+        "intentSeeds": [
+          "RAG 知识库搭建",
+          "AI Agent 记忆",
+          "向量数据库教程",
+          "企业知识库 AI"
+        ],
+        "matchedCandidates": 8,
+        "priorityReason": "demandScore=10; no public coverage; readyDrafts=35; currentPack=1; wave1=1",
+        "priorityScore": 358,
+        "publicCount": 0,
+        "readyDraftCount": 35,
+        "title": "RAG, knowledge base, and Agent memory"
+      },
+      {
+        "demandScore": 10,
+        "id": "llm-deployment-serving",
+        "intentSeeds": [
+          "大模型部署教程",
+          "LLM deployment",
+          "vLLM 部署",
+          "Hugging Face TGI 部署"
+        ],
+        "matchedCandidates": 8,
+        "priorityReason": "demandScore=10; no public coverage; readyDrafts=29",
+        "priorityScore": 330,
+        "publicCount": 0,
+        "readyDraftCount": 29,
+        "title": "Large model deployment, LLM serving, and GPU infrastructure"
+      },
+      {
+        "demandScore": 9,
+        "id": "nocode-ai-automation",
+        "intentSeeds": [
+          "Dify 部署教程",
+          "n8n AI Agent",
+          "AI 自动化工作流",
+          "Webhook AI Agent"
+        ],
+        "matchedCandidates": 8,
+        "priorityReason": "demandScore=9; no public coverage; readyDrafts=17",
+        "priorityScore": 314,
+        "publicCount": 0,
+        "readyDraftCount": 17,
+        "title": "Dify, n8n, no-code AI automation, and workflow deployment"
+      },
+      {
+        "demandScore": 9,
+        "id": "model-api-integration",
+        "intentSeeds": [
+          "OpenAI API 接入",
+          "Claude API 限流",
+          "Gemini API 限流",
+          "多模型 Router 降级"
+        ],
+        "matchedCandidates": 8,
+        "priorityReason": "demandScore=9; no public coverage; readyDrafts=24",
+        "priorityScore": 314,
+        "publicCount": 0,
+        "readyDraftCount": 24,
+        "title": "Model API integration, rate limits, and multi-model fallback"
+      },
+      {
+        "demandScore": 9,
+        "id": "local-open-models",
+        "intentSeeds": [
+          "本地部署大模型",
+          "Ollama 本地部署",
+          "Open WebUI 部署",
+          "显存不够怎么办"
+        ],
+        "matchedCandidates": 8,
+        "priorityReason": "demandScore=9; no public coverage; readyDrafts=16",
+        "priorityScore": 306,
+        "publicCount": 0,
+        "readyDraftCount": 16,
+        "title": "Local and open-source model deployment"
+      }
+    ]
+  },
   "promptCoverage": {
     "summary": {
       "currentPackPromptItems": 1,
@@ -1124,6 +1266,7 @@
     "Use docs/internal-link-opportunity-audit.md to add public internal links during manual review.",
     "Use docs/search-snippet-readiness-audit.md to review title, description, and slug snippet quality.",
     "Use docs/structured-data-readiness-audit.md to review metadata and JSON-LD readiness.",
+    "Use docs/search-intent-lane-map.md to choose broad, high-search-intent lanes beyond basic web deployment.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.",
     "Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.",
     "Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.",

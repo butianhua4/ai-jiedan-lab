@@ -1,14 +1,14 @@
 # Traffic Claim Guard
-Generated at: 2026-06-06T13:50:17.832Z
+Generated at: 2026-06-06T14:00:53.076Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
 - Note: This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples.
 ## Summary
-- filesScanned: 73
+- filesScanned: 75
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 387
+- watchMentions: 395
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -28,12 +28,12 @@ None.
 | docs/automation-digest.md | 190 | - Measured traffic sources: none |
 | docs/automation-digest.md | 191 | - Search Console verification evidence: false |
 | docs/automation-digest.md | 194 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 195 | - Traffic claim files scanned: 73 |
-| docs/automation-digest.md | 196 | - Traffic claim watch mentions: 387 |
+| docs/automation-digest.md | 195 | - Traffic claim files scanned: 75 |
+| docs/automation-digest.md | 196 | - Traffic claim watch mentions: 394 |
 | docs/automation-digest.md | 232 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
 | docs/automation-gate.md | 31 | \| traffic evidence audit passed and is read-only \| PASS \| failedChecks=0, measuredTrafficSources=0 \| |
 | docs/automation-gate.md | 32 | \| traffic is not claimed without measured metrics \| PASS \| trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 \| |
-| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=73, unsafeClaims=0, watchMentions=387 \| |
+| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=75, unsafeClaims=0, watchMentions=394 \| |
 | docs/content-freshness.md | 10 | - Note: This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status. |
 | docs/content-opportunity-backlog.md | 5 | This backlog is read-only. It does not publish articles, mark review, or claim measured traffic. |
 | docs/content-opportunity-backlog.md | 10 | - Note: This backlog is based on local content inventory and broad search intent themes only. It does not claim traffic, impressions, keyword volume, or ranking data. |
@@ -59,9 +59,9 @@ None.
 | docs/manual-review-workbench.md | 191 | - Measured traffic sources: none |
 | docs/manual-review-workbench.md | 192 | - Search Console verification evidence: false |
 | docs/manual-review-workbench.md | 194 | - Unsupported traffic claims: 0 |
-| docs/manual-review-workbench.md | 195 | - Traffic claim files scanned: 73 |
-| docs/manual-review-workbench.md | 196 | - Traffic claim watch mentions: 387 |
-| docs/manual-review-workbench.md | 300 | - Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim. |
+| docs/manual-review-workbench.md | 195 | - Traffic claim files scanned: 75 |
+| docs/manual-review-workbench.md | 196 | - Traffic claim watch mentions: 394 |
+| docs/manual-review-workbench.md | 321 | - Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim. |
 | docs/monetization-and-payment-plan.md | 3 | 这个项目的变现顺序不是“先注册一堆收款平台”，而是“先让网站有可用工具、可信内容和真实访问”。早期重点是降低复杂度，避免把时间花在还没有用户验证的支付系统上。 |
 | docs/monetization-and-payment-plan.md | 11 | 3. 用 Search Console 和 Analytics 观察用户搜索词、访问页面和点击行为。 |
 | docs/monetization-and-payment-plan.md | 12 | 4. 根据真实访问和下载数据，决定哪些模板值得做成付费包。 |

@@ -263,6 +263,29 @@ type StructuredData = {
   };
 };
 
+type SearchIntentLanes = {
+  summary: {
+    highPriorityLanes: number;
+    lanes: number;
+    lanesWithReadyDrafts: number;
+    lanesWithoutPublicCoverage: number;
+    maxPriorityScore: number;
+    notReadyMatchedDrafts: number;
+    totalReadyDraftMatches: number;
+  };
+  topLanes: Array<{
+    demandScore: number;
+    id: string;
+    intentSeeds: string[];
+    matchedCandidates: unknown[];
+    priorityReason: string;
+    priorityScore: number;
+    publicCount: number;
+    readyDraftCount: number;
+    title: string;
+  }>;
+};
+
 const reports = {
   cannibalization: readJson<{ summary: { conflicts: number; reviewBatchConflicts: number } }>("content/automation/content-cannibalization.json"),
   freshness: readJson<{ summary: { currentReviewItems: number; highRisk: number; mediumRisk: number; plannedReviewItems: number } }>(
@@ -306,6 +329,7 @@ const reports = {
   internalLinks: readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json"),
   searchSnippets: readJson<SearchSnippets>("content/automation/search-snippet-readiness-audit.json"),
   structuredData: readJson<StructuredData>("content/automation/structured-data-readiness-audit.json"),
+  searchIntentLanes: readJson<SearchIntentLanes>("content/automation/search-intent-lane-map.json"),
   review: readJson<{ counts: { candidates: number; returned: number; rejected: Record<string, number> }; recommendedToday: ReviewCandidate[] }>(
     "content/automation/review-candidates.json",
   ),
@@ -439,6 +463,16 @@ const payload = {
     topicsWithReadyCandidates: reports.deploymentCoverage.data?.summary.topicsWithReadyCandidates ?? null,
     uniqueCandidateFiles: reports.deploymentCoverage.data?.summary.uniqueCandidateFiles ?? null,
   },
+  searchIntentLanes: {
+    highPriorityLanes: reports.searchIntentLanes.data?.summary.highPriorityLanes ?? null,
+    lanes: reports.searchIntentLanes.data?.summary.lanes ?? null,
+    lanesWithReadyDrafts: reports.searchIntentLanes.data?.summary.lanesWithReadyDrafts ?? null,
+    lanesWithoutPublicCoverage: reports.searchIntentLanes.data?.summary.lanesWithoutPublicCoverage ?? null,
+    maxPriorityScore: reports.searchIntentLanes.data?.summary.maxPriorityScore ?? null,
+    notReadyMatchedDrafts: reports.searchIntentLanes.data?.summary.notReadyMatchedDrafts ?? null,
+    top: reports.searchIntentLanes.data?.topLanes.slice(0, 8) ?? [],
+    totalReadyDraftMatches: reports.searchIntentLanes.data?.summary.totalReadyDraftMatches ?? null,
+  },
   promptCoverage: {
     industries: reports.promptCoverage.data?.summary.industries ?? null,
     industriesWithReadyCandidates: reports.promptCoverage.data?.summary.industriesWithReadyCandidates ?? null,
@@ -528,6 +562,9 @@ function buildNextActions() {
   }
   if (!reports.structuredData.data || reports.structuredData.data.summary.waveItemsWithBlockingIssues > 0) {
     return ["Open docs/structured-data-readiness-audit.md and fix Wave 1 metadata or JSON-LD readiness blockers."];
+  }
+  if (!reports.searchIntentLanes.data || reports.searchIntentLanes.data.summary.lanesWithReadyDrafts !== reports.searchIntentLanes.data.summary.lanes) {
+    return ["Open docs/search-intent-lane-map.md and ensure every high-search-intent lane has ready draft candidates."];
   }
   if (!reports.reviewCoverage.data || reports.reviewCoverage.data.summary.missingCoverage > 0) {
     return ["Open docs/review-coverage-report.md and regenerate coverage for all planned review candidates."];
@@ -810,6 +847,21 @@ function toMarkdown(data: typeof payload) {
     "| --- | --- | --- | --- | --- |",
     ...data.deploymentCoverage.top.map((item) => (
       `| ${item.topic} | ${item.gapScore} | ${item.publicMatches} | ${item.candidates.length} | ${item.searchQueries.slice(0, 2).join("<br>")} |`
+    )),
+    "",
+    "## Search Intent Lane Map",
+    "",
+    `- Lanes: ${data.searchIntentLanes.lanes}`,
+    `- High-priority lanes: ${data.searchIntentLanes.highPriorityLanes}`,
+    `- Lanes with ready drafts: ${data.searchIntentLanes.lanesWithReadyDrafts}`,
+    `- Lanes without public coverage: ${data.searchIntentLanes.lanesWithoutPublicCoverage}`,
+    `- Total ready draft matches: ${data.searchIntentLanes.totalReadyDraftMatches}`,
+    `- Not-ready matched drafts: ${data.searchIntentLanes.notReadyMatchedDrafts}`,
+    "",
+    "| Score | Demand | Public | Ready drafts | Candidates shown | Lane | Intent seeds | Reason |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.searchIntentLanes.top.map((item) => (
+      `| ${item.priorityScore} | ${item.demandScore} | ${item.publicCount} | ${item.readyDraftCount} | ${item.matchedCandidates.length} | ${item.title} | ${item.intentSeeds.slice(0, 3).join("<br>")} | ${item.priorityReason} |`
     )),
     "",
     "## Industry Prompt Coverage",

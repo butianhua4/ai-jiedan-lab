@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-06T13:50:26.860Z
+Generated at: 2026-06-06T14:01:18.997Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 55
-- Passed: 55
+- Checks: 57
+- Passed: 57
 - Failed: 0
 
 ## Checks
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=73, unsafeClaims=0, watchMentions=387 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=75, unsafeClaims=0, watchMentions=395 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, candidates=19 |
@@ -48,6 +48,8 @@ Overall: PASS
 | industry prompt coverage has broad reviewable coverage | PASS | industries=16, withCandidates=16, reviewReady=25, unique=19 |
 | industry prompt coverage includes source and search review tasks | PASS | officialSources=5, industries=16 |
 | industry prompt candidates stay draft and non-indexable | PASS | unsafeCandidateItems=0 |
+| search intent lane map is read-only and broad | PASS | lanes=12, highPriority=12, withReadyDrafts=12 |
+| search intent lane map includes sources, review focus, and safe candidates | PASS | readyDraftMatches=233, noPublicCoverage=10, notReadyMatched=355 |
 | content cannibalization check generated warning report | PASS | conflicts=200, reviewBatchConflicts=0 |
 | content freshness check covers review items | PASS | highRisk=570, currentReviewItems=3, plannedReviewItems=9 |
 | review coverage report covers planned candidates | PASS | planned=9, items=9, missingCoverage=0 |

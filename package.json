@@ -48,7 +48,8 @@
     "content:integrity": "tsx scripts/content-integrity-audit.ts",
     "content:internal-links": "tsx scripts/internal-link-opportunity-audit.ts",
     "seo:snippets": "tsx scripts/search-snippet-readiness-audit.ts",
-    "seo:schema": "tsx scripts/structured-data-readiness-audit.ts"
+    "seo:schema": "tsx scripts/structured-data-readiness-audit.ts",
+    "content:search-intent-lanes": "tsx scripts/search-intent-lane-map.ts"
   },
   "dependencies": {
     "fast-glob": "^3.3.3",

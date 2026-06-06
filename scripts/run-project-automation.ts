@@ -27,6 +27,7 @@ const tasks: Task[] = [
   { title: "Generate content opportunity backlog", args: ["run", "content:opportunities"] },
   { title: "Generate AI deployment coverage", args: ["run", "content:deployment-coverage"] },
   { title: "Generate industry prompt coverage", args: ["run", "content:prompt-coverage"] },
+  { title: "Generate search intent lane map", args: ["run", "content:search-intent-lanes"] },
   { title: "Generate review batch plan", args: ["run", "automation:review-plan"] },
   { title: "Generate review priority roadmap", args: ["run", "automation:review-roadmap"] },
   { title: "Generate next review source pack", args: ["run", "automation:next-review-source-pack"] },

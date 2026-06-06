@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T13:48:18.044Z",
+  "generatedAt": "2026-06-06T13:59:59.529Z",
   "failures": [],
   "ok": true,
   "tasks": [
@@ -19,6 +19,7 @@
     "Generate content opportunity backlog",
     "Generate AI deployment coverage",
     "Generate industry prompt coverage",
+    "Generate search intent lane map",
     "Generate review batch plan",
     "Generate review priority roadmap",
     "Generate next review source pack",

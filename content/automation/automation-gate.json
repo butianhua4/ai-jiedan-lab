@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-06T13:50:26.860Z",
+  "generatedAt": "2026-06-06T14:01:18.997Z",
   "ok": true,
   "summary": {
-    "checks": 55,
+    "checks": 57,
     "failed": 0,
-    "passed": 55
+    "passed": 57
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=73, unsafeClaims=0, watchMentions=387"
+      "detail": "filesScanned=75, unsafeClaims=0, watchMentions=395"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -176,6 +176,16 @@
       "name": "industry prompt candidates stay draft and non-indexable",
       "ok": true,
       "detail": "unsafeCandidateItems=0"
+    },
+    {
+      "name": "search intent lane map is read-only and broad",
+      "ok": true,
+      "detail": "lanes=12, highPriority=12, withReadyDrafts=12"
+    },
+    {
+      "name": "search intent lane map includes sources, review focus, and safe candidates",
+      "ok": true,
+      "detail": "readyDraftMatches=233, noPublicCoverage=10, notReadyMatched=355"
     },
     {
       "name": "content cannibalization check generated warning report",

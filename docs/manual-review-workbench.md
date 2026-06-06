@@ -1,6 +1,6 @@
 # Manual Review Workbench
 
-Generated at: 2026-06-06T13:50:26.710Z
+Generated at: 2026-06-06T14:01:18.821Z
 
 This workbench is read-only. It does not publish articles or mark drafts for review.
 
@@ -192,8 +192,8 @@ Next review files:
 - Search Console verification evidence: false
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 73
-- Traffic claim watch mentions: 387
+- Traffic claim files scanned: 75
+- Traffic claim watch mentions: 395
 
 ## Content Integrity
 
@@ -266,6 +266,26 @@ Next review files:
 | 模型 API 接入、限流和多模型降级 | 218 | 0 | 5 |
 | LLM Serving、GPU 和托管推理 | 217 | 0 | 5 |
 
+## Search Intent Lane Map
+
+- Lanes: 12
+- High-priority lanes: 12
+- Lanes with ready drafts: 12
+- Lanes without public coverage: 10
+- Total ready draft matches: 233
+- Not-ready matched drafts: 355
+
+| Score | Demand | Public | Ready drafts | Candidates shown | Lane | Intent seeds | Reason |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 386 | 10 | 0 | 23 | 8 | Cross-industry AI prompt templates and reusable prompt libraries | AI 提示词大全<br>ChatGPT 提示词模板<br>全行业 AI 提示词 | demandScore=10; no public coverage; readyDrafts=23; currentPack=2; wave1=2 |
+| 366 | 9 | 0 | 16 | 8 | Business department AI workflows across sales, support, ops, HR, finance, legal, and education | 企业 AI 应用场景<br>AI 工作流模板<br>销售 AI 提示词 | demandScore=9; no public coverage; readyDrafts=16; currentPack=2; wave1=2 |
+| 358 | 10 | 0 | 27 | 8 | AI Agent deployment, tool calling, and production workflow | AI Agent 部署<br>AI Agent 工具调用<br>Vercel AI SDK Agent | demandScore=10; no public coverage; readyDrafts=27; currentPack=1; wave1=1 |
+| 358 | 10 | 0 | 35 | 8 | RAG, knowledge base, and Agent memory | RAG 知识库搭建<br>AI Agent 记忆<br>向量数据库教程 | demandScore=10; no public coverage; readyDrafts=35; currentPack=1; wave1=1 |
+| 330 | 10 | 0 | 29 | 8 | Large model deployment, LLM serving, and GPU infrastructure | 大模型部署教程<br>LLM deployment<br>vLLM 部署 | demandScore=10; no public coverage; readyDrafts=29 |
+| 314 | 9 | 0 | 17 | 8 | Dify, n8n, no-code AI automation, and workflow deployment | Dify 部署教程<br>n8n AI Agent<br>AI 自动化工作流 | demandScore=9; no public coverage; readyDrafts=17 |
+| 314 | 9 | 0 | 24 | 8 | Model API integration, rate limits, and multi-model fallback | OpenAI API 接入<br>Claude API 限流<br>Gemini API 限流 | demandScore=9; no public coverage; readyDrafts=24 |
+| 306 | 9 | 0 | 16 | 8 | Local and open-source model deployment | 本地部署大模型<br>Ollama 本地部署<br>Open WebUI 部署 | demandScore=9; no public coverage; readyDrafts=16 |
+
 ## Industry Prompt Coverage
 
 - Industries: 16
@@ -296,6 +316,7 @@ Next review files:
 - Use docs/internal-link-opportunity-audit.md to add public internal links during manual review.
 - Use docs/search-snippet-readiness-audit.md to review title, description, and slug snippet quality.
 - Use docs/structured-data-readiness-audit.md to review metadata and JSON-LD readiness.
+- Use docs/search-intent-lane-map.md to choose broad, high-search-intent lanes beyond basic web deployment.
 - Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.
 - Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.
 - Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.

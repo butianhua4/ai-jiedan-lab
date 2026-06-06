@@ -67,6 +67,20 @@ async function main() {
       uniqueCandidateFiles: number;
     };
   }>("content/automation/industry-prompt-coverage.json");
+  const searchIntentLanes = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    lanes?: Array<{ intentSeeds?: unknown[]; matchedCandidates?: unknown[]; reviewFocus?: unknown[]; sourceTargets?: unknown[]; workflowAngles?: unknown[] }>;
+    summary: {
+      highPriorityLanes: number;
+      lanes: number;
+      lanesWithReadyDrafts: number;
+      lanesWithoutPublicCoverage: number;
+      maxPriorityScore: number;
+      notReadyMatchedDrafts: number;
+      totalReadyDraftMatches: number;
+    };
+    topLanes?: Array<{ matchedCandidates?: unknown[] }>;
+  }>("content/automation/search-intent-lane-map.json");
   const cannibalization = readJson<{
     guardrails: { autoPublish: boolean };
     summary: { articleCount: number; conflicts: number; reviewBatchConflicts: number };
@@ -485,6 +499,34 @@ async function main() {
       name: "industry prompt candidates stay draft and non-indexable",
       ok: promptCoverage.summary.unsafeCandidateItems === 0,
       detail: `unsafeCandidateItems=${promptCoverage.summary.unsafeCandidateItems}`,
+    },
+    {
+      name: "search intent lane map is read-only and broad",
+      ok:
+        searchIntentLanes.guardrails.autoEditArticles === false &&
+        searchIntentLanes.guardrails.autoMarkReview === false &&
+        searchIntentLanes.guardrails.autoPublish === false &&
+        searchIntentLanes.summary.lanes >= 12 &&
+        searchIntentLanes.summary.highPriorityLanes >= 8 &&
+        searchIntentLanes.summary.lanesWithReadyDrafts === searchIntentLanes.summary.lanes,
+      detail: `lanes=${searchIntentLanes.summary.lanes}, highPriority=${searchIntentLanes.summary.highPriorityLanes}, withReadyDrafts=${searchIntentLanes.summary.lanesWithReadyDrafts}`,
+    },
+    {
+      name: "search intent lane map includes sources, review focus, and safe candidates",
+      ok:
+        searchIntentLanes.summary.totalReadyDraftMatches >= 50 &&
+        searchIntentLanes.summary.lanesWithoutPublicCoverage >= 6 &&
+        Boolean(
+          searchIntentLanes.lanes?.every(
+            (lane) =>
+              (lane.intentSeeds?.length || 0) >= 3 &&
+              (lane.sourceTargets?.length || 0) >= 2 &&
+              (lane.reviewFocus?.length || 0) >= 3 &&
+              (lane.workflowAngles?.length || 0) >= 3 &&
+              (lane.matchedCandidates?.length || 0) > 0,
+          ),
+        ),
+      detail: `readyDraftMatches=${searchIntentLanes.summary.totalReadyDraftMatches}, noPublicCoverage=${searchIntentLanes.summary.lanesWithoutPublicCoverage}, notReadyMatched=${searchIntentLanes.summary.notReadyMatchedDrafts}`,
     },
     {
       name: "content cannibalization check generated warning report",
