@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-06T16:34:51.379Z",
+  "generatedAt": "2026-06-06T16:43:22.189Z",
   "ok": true,
   "summary": {
-    "checks": 85,
+    "checks": 87,
     "failed": 0,
-    "passed": 85
+    "passed": 87
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=103, unsafeClaims=0, watchMentions=662"
+      "detail": "filesScanned=105, unsafeClaims=0, watchMentions=697"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -191,6 +191,16 @@
       "name": "AI deployment candidates stay draft and non-indexable",
       "ok": true,
       "detail": "unsafeCandidateItems=0"
+    },
+    {
+      "name": "AI deployment review pack is read-only and covers deployment topics",
+      "ok": true,
+      "detail": "items=10, topics=10/10, unique=10, duplicates=0"
+    },
+    {
+      "name": "AI deployment review pack has source-backed human review boundaries",
+      "ok": true,
+      "detail": "safe=10, sources=10, commands=10"
     },
     {
       "name": "industry prompt coverage has broad reviewable coverage",

@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T16:34:51.311Z
+Generated at: 2026-06-06T16:43:22.137Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -53,7 +53,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=ru
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=fr
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - https://docs.dify.ai -> https://docs.dify.ai/en/use-dify/getting-started/introduction
@@ -277,8 +277,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 103
-- Traffic claim watch mentions: 662
+- Traffic claim files scanned: 105
+- Traffic claim watch mentions: 697
 
 ## Preflight
 
@@ -332,6 +332,28 @@ Next review files:
 | Dify、n8n、Flowise 和无代码 AI 自动化 | 220 | 0 | 5 | Dify 部署教程<br>n8n AI Agent 自托管 |
 | 模型 API 接入、限流和多模型降级 | 218 | 0 | 5 | OpenAI API Next.js<br>Claude API 接入 |
 | LLM Serving、GPU 和托管推理 | 217 | 0 | 5 | vLLM 部署教程<br>TGI 部署教程 |
+
+## AI Deployment Review Pack
+
+- Items: 10
+- Topics covered: 10
+- Unique files: 10
+- Duplicate files: 0
+- Safe draft items: 10
+- Unsafe items: 0
+- With official sources: 10
+- With search queries: 10
+- With command boundary: 10
+- Public deployment articles: 3
+
+| Ready | Safe | Score | Public | Sources | Queries | Topic | Category | Title | File |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| true | true | 380 | 0 | 3 | 4 | Agent 部署、工具调用和工作流 | AI Agent | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | true | 378 | 0 | 4 | 4 | RAG、知识库和向量检索 | AI 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| true | true | 374 | 0 | 3 | 4 | 本地模型和开源模型部署 | AI 部署 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| true | true | 370 | 0 | 2 | 4 | Dify、n8n、Flowise 和无代码 AI 自动化 | 接单报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| true | true | 368 | 0 | 2 | 4 | 模型 API 接入、限流和多模型降级 | AI 部署 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| true | true | 367 | 0 | 2 | 4 | LLM Serving、GPU 和托管推理 | AI 基建 | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
 
 ## Broad Search Demand Map
 
@@ -618,7 +640,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T16:34:24.231Z
+- Latest check: 2026-06-06T16:42:52.634Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
@@ -636,6 +658,7 @@ Next review files:
 - Use docs/wave-publish-simulation.md to see the exact post-approval mark-review and publish dry-run path.
 - Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.
 - Use docs/public-coverage-gap-decision-pack.md to review the 8 broad-demand public gap candidates and their optimization actions.
+- Use docs/ai-deployment-review-pack.md to review the 10 deployment, Agent, RAG, memory, API, and infrastructure candidates.
 - Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.
 - Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.
 - Use docs/source-target-health-audit.md to confirm official source links are reachable before approving fast-changing AI guidance.

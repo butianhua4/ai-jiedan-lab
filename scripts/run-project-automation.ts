@@ -38,6 +38,7 @@ const tasks: Task[] = [
   { title: "Generate search query coverage", args: ["run", "automation:search-query-coverage"] },
   { title: "Run search query match audit", args: ["run", "automation:search-query-match"] },
   { title: "Generate broad search demand map", args: ["run", "automation:broad-search-demand"] },
+  { title: "Generate AI deployment review pack", args: ["run", "automation:ai-deployment-review-pack"] },
   { title: "Generate industry prompt review pack", args: ["run", "automation:industry-prompt-review-pack"] },
   { title: "Generate public coverage gap plan", args: ["run", "automation:public-gap-plan"] },
   { title: "Run public coverage gap preflight", args: ["run", "automation:public-gap-preflight"] },

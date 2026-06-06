@@ -60,6 +60,7 @@
     "automation:search-query-coverage": "tsx scripts/search-query-coverage.ts",
     "automation:search-query-match": "tsx scripts/search-query-match-audit.ts",
     "automation:broad-search-demand": "tsx scripts/broad-search-demand-map.ts",
+    "automation:ai-deployment-review-pack": "tsx scripts/ai-deployment-review-pack.ts",
     "automation:industry-prompt-review-pack": "tsx scripts/industry-prompt-review-pack.ts",
     "automation:public-gap-plan": "tsx scripts/public-coverage-gap-plan.ts",
     "automation:public-gap-preflight": "tsx scripts/public-coverage-gap-preflight.ts",

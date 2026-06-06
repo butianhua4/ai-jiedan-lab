@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T16:34:51.311Z",
+  "generatedAt": "2026-06-06T16:43:22.137Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -195,7 +195,7 @@
         "url": "https://ai-sdk.dev/docs"
       },
       {
-        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=ru",
+        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=fr",
         "ok": true,
         "references": [
           {
@@ -3753,10 +3753,10 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 103,
+    "filesScanned": 105,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 662
+    "watchMentions": 697
   },
   "preflight": {
     "checked": 3,
@@ -4661,6 +4661,373 @@
     "topics": 10,
     "topicsWithReadyCandidates": 10,
     "uniqueCandidateFiles": 34
+  },
+  "deploymentReviewPack": {
+    "deploymentPublicArticles": 3,
+    "duplicateFiles": 0,
+    "items": 10,
+    "itemsWithCommandBoundary": 10,
+    "itemsWithOfficialSources": 10,
+    "itemsWithSearchQueries": 10,
+    "safeDraftItems": 10,
+    "top": [
+      {
+        "audience": "正在把聊天助手升级成工作流或内部工具的人",
+        "category": "AI Agent",
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "humanDecisionChecklist": [
+          "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+          "Verify official docs for deployment commands, SDK names, model names, API endpoints, environment variables, and version-sensitive details.",
+          "Check that API keys, secrets, tokens, and credentials are never exposed in client-side code or screenshots.",
+          "Confirm the article includes a smoke check, rollback boundary, logging plan, and a failure triage path.",
+          "For Agent or tool-calling topics, confirm tool permissions, human approval steps, and audit logs are explicit.",
+          "For RAG or memory topics, confirm citation, privacy, chunking, retrieval, and hallucination review boundaries are explicit.",
+          "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+        ],
+        "primaryKeyword": "AI Agent 部署",
+        "priorityScore": 380,
+        "publicMatches": 0,
+        "qualityScore": 100,
+        "readyForHumanReview": true,
+        "reviewFocus": [
+          "区分 Agent、Workflow、普通聊天机器人",
+          "核对工具调用、状态、人工接管和日志边界",
+          "避免承诺全自动完成业务结果"
+        ],
+        "riskChecks": [
+          "No one-click stability promise for deployment, serving, Agent execution, or RAG quality.",
+          "No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim.",
+          "No unsafe secret handling, public API key exposure, or client-side privileged token use.",
+          "No unbounded autonomous Agent action without permissions, allowlists, human approval, and logs.",
+          "No RAG or memory claim that removes the need for citation, privacy review, or hallucination checks.",
+          "No outdated model, package, endpoint, pricing, or platform behavior unless marked for human fact-checking."
+        ],
+        "safeDraft": true,
+        "searchQueries": [
+          "AI Agent 部署教程",
+          "Agent 工具调用教程",
+          "AI 工作流部署",
+          "Agent 人工审核流程"
+        ],
+        "sourceTargets": [
+          "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+          "LangChain docs: https://python.langchain.com/docs"
+        ],
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "topic": "Agent 部署、工具调用和工作流",
+        "workflowAngles": [
+          "工具白名单",
+          "多步执行",
+          "人工确认",
+          "失败重试",
+          "日志追踪"
+        ]
+      },
+      {
+        "audience": "客服知识库、企业内部问答、文档检索项目负责人",
+        "category": "AI 记忆",
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+        "humanDecisionChecklist": [
+          "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+          "Verify official docs for deployment commands, SDK names, model names, API endpoints, environment variables, and version-sensitive details.",
+          "Check that API keys, secrets, tokens, and credentials are never exposed in client-side code or screenshots.",
+          "Confirm the article includes a smoke check, rollback boundary, logging plan, and a failure triage path.",
+          "For Agent or tool-calling topics, confirm tool permissions, human approval steps, and audit logs are explicit.",
+          "For RAG or memory topics, confirm citation, privacy, chunking, retrieval, and hallucination review boundaries are explicit.",
+          "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+        ],
+        "primaryKeyword": "AI Agent 记忆",
+        "priorityScore": 378,
+        "publicMatches": 0,
+        "qualityScore": 100,
+        "readyForHumanReview": true,
+        "reviewFocus": [
+          "区分 RAG、微调和普通提示词",
+          "核对切分、embedding、召回、引用和评测说法",
+          "说明隐私、幻觉和人工复核边界"
+        ],
+        "riskChecks": [
+          "No one-click stability promise for deployment, serving, Agent execution, or RAG quality.",
+          "No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim.",
+          "No unsafe secret handling, public API key exposure, or client-side privileged token use.",
+          "No unbounded autonomous Agent action without permissions, allowlists, human approval, and logs.",
+          "No RAG or memory claim that removes the need for citation, privacy review, or hallucination checks.",
+          "No outdated model, package, endpoint, pricing, or platform behavior unless marked for human fact-checking."
+        ],
+        "safeDraft": true,
+        "searchQueries": [
+          "RAG 知识库搭建教程",
+          "企业知识库 AI 部署",
+          "向量数据库 RAG 教程",
+          "RAG 评测怎么做"
+        ],
+        "sourceTargets": [
+          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+          "LangChain docs: https://python.langchain.com/docs",
+          "LlamaIndex docs: https://docs.llamaindex.ai",
+          "Hugging Face docs: https://huggingface.co/docs"
+        ],
+        "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+        "topic": "RAG、知识库和向量检索",
+        "workflowAngles": [
+          "文档清洗",
+          "chunk",
+          "embedding",
+          "metadata",
+          "引用来源",
+          "测试集"
+        ]
+      },
+      {
+        "audience": "想低成本或本地运行模型的开发者、团队和爱好者",
+        "category": "AI 部署",
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/open-webui-functions-pipelines-deployment-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+        "humanDecisionChecklist": [
+          "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+          "Verify official docs for deployment commands, SDK names, model names, API endpoints, environment variables, and version-sensitive details.",
+          "Check that API keys, secrets, tokens, and credentials are never exposed in client-side code or screenshots.",
+          "Confirm the article includes a smoke check, rollback boundary, logging plan, and a failure triage path.",
+          "For Agent or tool-calling topics, confirm tool permissions, human approval steps, and audit logs are explicit.",
+          "For RAG or memory topics, confirm citation, privacy, chunking, retrieval, and hallucination review boundaries are explicit.",
+          "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+        ],
+        "primaryKeyword": "Open WebUI Functions Pipelines",
+        "priorityScore": 374,
+        "publicMatches": 0,
+        "qualityScore": 100,
+        "readyForHumanReview": true,
+        "reviewFocus": [
+          "核对显存、量化、模型大小和上下文要求",
+          "区分 Ollama、LM Studio、Open WebUI、vLLM 和 TGI",
+          "不要暗示本地部署一定更省钱或更安全"
+        ],
+        "riskChecks": [
+          "No one-click stability promise for deployment, serving, Agent execution, or RAG quality.",
+          "No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim.",
+          "No unsafe secret handling, public API key exposure, or client-side privileged token use.",
+          "No unbounded autonomous Agent action without permissions, allowlists, human approval, and logs.",
+          "No RAG or memory claim that removes the need for citation, privacy review, or hallucination checks.",
+          "No outdated model, package, endpoint, pricing, or platform behavior unless marked for human fact-checking."
+        ],
+        "safeDraft": true,
+        "searchQueries": [
+          "本地部署大模型教程",
+          "Ollama 本地部署",
+          "Open WebUI Ollama 部署",
+          "本地大模型显存不够"
+        ],
+        "sourceTargets": [
+          "Ollama docs: https://docs.ollama.com",
+          "vLLM docs: https://docs.vllm.ai",
+          "Hugging Face docs: https://huggingface.co/docs"
+        ],
+        "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+        "topic": "本地模型和开源模型部署",
+        "workflowAngles": [
+          "硬件估算",
+          "模型下载",
+          "本地 API",
+          "量化",
+          "网页聊天"
+        ]
+      },
+      {
+        "audience": "用 Dify、n8n、Flowise、Coze 做自动化和知识库的人",
+        "category": "接单报价",
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "humanDecisionChecklist": [
+          "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+          "Verify official docs for deployment commands, SDK names, model names, API endpoints, environment variables, and version-sensitive details.",
+          "Check that API keys, secrets, tokens, and credentials are never exposed in client-side code or screenshots.",
+          "Confirm the article includes a smoke check, rollback boundary, logging plan, and a failure triage path.",
+          "For Agent or tool-calling topics, confirm tool permissions, human approval steps, and audit logs are explicit.",
+          "For RAG or memory topics, confirm citation, privacy, chunking, retrieval, and hallucination review boundaries are explicit.",
+          "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+        ],
+        "primaryKeyword": "AI 自动化项目报价",
+        "priorityScore": 370,
+        "publicMatches": 0,
+        "qualityScore": 100,
+        "readyForHumanReview": true,
+        "reviewFocus": [
+          "核对自部署和云端功能边界",
+          "检查 Webhook、权限、连接器、错误处理和人工兜底",
+          "避免引导群发、绕规则或站外交易"
+        ],
+        "riskChecks": [
+          "No one-click stability promise for deployment, serving, Agent execution, or RAG quality.",
+          "No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim.",
+          "No unsafe secret handling, public API key exposure, or client-side privileged token use.",
+          "No unbounded autonomous Agent action without permissions, allowlists, human approval, and logs.",
+          "No RAG or memory claim that removes the need for citation, privacy review, or hallucination checks.",
+          "No outdated model, package, endpoint, pricing, or platform behavior unless marked for human fact-checking."
+        ],
+        "safeDraft": true,
+        "searchQueries": [
+          "Dify 部署教程",
+          "n8n AI Agent 自托管",
+          "Flowise 本地部署",
+          "Dify 工作流错误处理"
+        ],
+        "sourceTargets": [
+          "Dify docs: https://docs.dify.ai",
+          "n8n docs: https://docs.n8n.io"
+        ],
+        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+        "topic": "Dify、n8n、Flowise 和无代码 AI 自动化",
+        "workflowAngles": [
+          "自部署",
+          "Webhook",
+          "鉴权",
+          "错误处理",
+          "人工兜底"
+        ]
+      },
+      {
+        "audience": "正在接入 OpenAI、Claude、Gemini、OpenRouter 等 API 的开发者",
+        "category": "AI 部署",
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+        "humanDecisionChecklist": [
+          "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+          "Verify official docs for deployment commands, SDK names, model names, API endpoints, environment variables, and version-sensitive details.",
+          "Check that API keys, secrets, tokens, and credentials are never exposed in client-side code or screenshots.",
+          "Confirm the article includes a smoke check, rollback boundary, logging plan, and a failure triage path.",
+          "For Agent or tool-calling topics, confirm tool permissions, human approval steps, and audit logs are explicit.",
+          "For RAG or memory topics, confirm citation, privacy, chunking, retrieval, and hallucination review boundaries are explicit.",
+          "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+        ],
+        "primaryKeyword": "AI API Key 安全管理",
+        "priorityScore": 368,
+        "publicMatches": 0,
+        "qualityScore": 100,
+        "readyForHumanReview": true,
+        "reviewFocus": [
+          "核对 API 端点、模型名、限流、费用和降级方式",
+          "检查 key 安全和重试逻辑",
+          "避免把过期模型名或价格写死为结论"
+        ],
+        "riskChecks": [
+          "No one-click stability promise for deployment, serving, Agent execution, or RAG quality.",
+          "No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim.",
+          "No unsafe secret handling, public API key exposure, or client-side privileged token use.",
+          "No unbounded autonomous Agent action without permissions, allowlists, human approval, and logs.",
+          "No RAG or memory claim that removes the need for citation, privacy review, or hallucination checks.",
+          "No outdated model, package, endpoint, pricing, or platform behavior unless marked for human fact-checking."
+        ],
+        "safeDraft": true,
+        "searchQueries": [
+          "OpenAI API Next.js",
+          "Claude API 接入",
+          "Gemini API Next.js",
+          "API rate limit 怎么办"
+        ],
+        "sourceTargets": [
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "Anthropic docs: https://docs.anthropic.com"
+        ],
+        "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+        "topic": "模型 API 接入、限流和多模型降级",
+        "workflowAngles": [
+          "服务端调用",
+          "限流重试",
+          "降级模型",
+          "成本控制",
+          "Key 轮换"
+        ]
+      },
+      {
+        "audience": "需要自部署或托管 LLM 服务的工程团队",
+        "category": "AI 基建",
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+        "humanDecisionChecklist": [
+          "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+          "Verify official docs for deployment commands, SDK names, model names, API endpoints, environment variables, and version-sensitive details.",
+          "Check that API keys, secrets, tokens, and credentials are never exposed in client-side code or screenshots.",
+          "Confirm the article includes a smoke check, rollback boundary, logging plan, and a failure triage path.",
+          "For Agent or tool-calling topics, confirm tool permissions, human approval steps, and audit logs are explicit.",
+          "For RAG or memory topics, confirm citation, privacy, chunking, retrieval, and hallucination review boundaries are explicit.",
+          "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+        ],
+        "primaryKeyword": "BentoML LLM 部署",
+        "priorityScore": 367,
+        "publicMatches": 0,
+        "qualityScore": 100,
+        "readyForHumanReview": true,
+        "reviewFocus": [
+          "核对 serving 框架版本和部署方式",
+          "说明冷启动、并发、成本、GPU、扩缩容和监控",
+          "避免把 benchmark 写成项目保证"
+        ],
+        "riskChecks": [
+          "No one-click stability promise for deployment, serving, Agent execution, or RAG quality.",
+          "No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim.",
+          "No unsafe secret handling, public API key exposure, or client-side privileged token use.",
+          "No unbounded autonomous Agent action without permissions, allowlists, human approval, and logs.",
+          "No RAG or memory claim that removes the need for citation, privacy review, or hallucination checks.",
+          "No outdated model, package, endpoint, pricing, or platform behavior unless marked for human fact-checking."
+        ],
+        "safeDraft": true,
+        "searchQueries": [
+          "vLLM 部署教程",
+          "TGI 部署教程",
+          "RunPod Serverless 大模型部署",
+          "Modal Serverless GPU LLM"
+        ],
+        "sourceTargets": [
+          "vLLM docs: https://docs.vllm.ai",
+          "Hugging Face docs: https://huggingface.co/docs"
+        ],
+        "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+        "topic": "LLM Serving、GPU 和托管推理",
+        "workflowAngles": [
+          "在线 serving",
+          "并发",
+          "GPU",
+          "冷启动",
+          "成本延迟"
+        ]
+      }
+    ],
+    "topicsCovered": 10,
+    "unsafeItems": 0,
+    "uniqueFiles": 10
   },
   "broadSearchDemand": {
     "maxGapScore": 388,
@@ -12233,7 +12600,7 @@
   "liveSearch": {
     "checkedArticles": 15,
     "failedChecks": [],
-    "generatedAt": "2026-06-06T16:34:24.231Z",
+    "generatedAt": "2026-06-06T16:42:52.634Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 15,
@@ -12290,6 +12657,7 @@
     "Use docs/wave-publish-simulation.md to see the exact post-approval mark-review and publish dry-run path.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.",
     "Use docs/public-coverage-gap-decision-pack.md to review the 8 broad-demand public gap candidates and their optimization actions.",
+    "Use docs/ai-deployment-review-pack.md to review the 10 deployment, Agent, RAG, memory, API, and infrastructure candidates.",
     "Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.",
     "Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.",
     "Use docs/source-target-health-audit.md to confirm official source links are reachable before approving fast-changing AI guidance.",

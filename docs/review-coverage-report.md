@@ -1,6 +1,6 @@
 # Review Coverage Report
 
-Generated at: 2026-06-06T16:33:34.747Z
+Generated at: 2026-06-06T16:42:07.635Z
 
 This report expands manual review coverage across the planned candidate batches. It is read-only and does not publish or mark review.
 

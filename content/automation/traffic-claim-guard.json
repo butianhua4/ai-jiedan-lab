@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-06T16:34:43.824Z",
+  "generatedAt": "2026-06-06T16:43:13.945Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 103,
+    "filesScanned": 105,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 662
+    "watchMentions": 697
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -53,6 +53,72 @@
       "line": 11,
       "reason": "traffic-related mention",
       "text": "- Note: This coverage matrix is read-only. It organizes deployment, Agent, RAG, and model infrastructure drafts for manual review and does not claim measured traffic."
+    },
+    {
+      "file": "docs/ai-deployment-review-pack.md",
+      "line": 17,
+      "reason": "traffic-related mention",
+      "text": "- Traffic note: Search queries are broad intent seeds, not measured traffic, rankings, clicks, impressions, or income."
+    },
+    {
+      "file": "docs/ai-deployment-review-pack.md",
+      "line": 113,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim."
+    },
+    {
+      "file": "docs/ai-deployment-review-pack.md",
+      "line": 170,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim."
+    },
+    {
+      "file": "docs/ai-deployment-review-pack.md",
+      "line": 226,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim."
+    },
+    {
+      "file": "docs/ai-deployment-review-pack.md",
+      "line": 282,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim."
+    },
+    {
+      "file": "docs/ai-deployment-review-pack.md",
+      "line": 338,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim."
+    },
+    {
+      "file": "docs/ai-deployment-review-pack.md",
+      "line": 394,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim."
+    },
+    {
+      "file": "docs/ai-deployment-review-pack.md",
+      "line": 450,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim."
+    },
+    {
+      "file": "docs/ai-deployment-review-pack.md",
+      "line": 506,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim."
+    },
+    {
+      "file": "docs/ai-deployment-review-pack.md",
+      "line": 562,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim."
+    },
+    {
+      "file": "docs/ai-deployment-review-pack.md",
+      "line": 618,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim."
     },
     {
       "file": "docs/automation-digest.md",
@@ -100,13 +166,13 @@
       "file": "docs/automation-digest.md",
       "line": 280,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 103"
+      "text": "- Traffic claim files scanned: 105"
     },
     {
       "file": "docs/automation-digest.md",
       "line": 281,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 662"
+      "text": "- Traffic claim watch mentions: 697"
     },
     {
       "file": "docs/automation-digest.md",
@@ -130,7 +196,7 @@
       "file": "docs/automation-gate.md",
       "line": 33,
       "reason": "traffic-related mention",
-      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=103, unsafeClaims=0, watchMentions=662 |"
+      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=105, unsafeClaims=0, watchMentions=697 |"
     },
     {
       "file": "docs/broad-search-demand-map.md",
@@ -425,72 +491,6 @@
       "line": 188,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
-    },
-    {
-      "file": "docs/manual-review-workbench.md",
-      "line": 189,
-      "reason": "traffic-related mention",
-      "text": "- Can claim traffic: false"
-    },
-    {
-      "file": "docs/manual-review-workbench.md",
-      "line": 191,
-      "reason": "traffic-related mention",
-      "text": "- Measured traffic sources: none"
-    },
-    {
-      "file": "docs/manual-review-workbench.md",
-      "line": 192,
-      "reason": "traffic-related mention",
-      "text": "- Search Console verification evidence: false"
-    },
-    {
-      "file": "docs/manual-review-workbench.md",
-      "line": 194,
-      "reason": "traffic-related mention",
-      "text": "- Unsupported traffic claims: 0"
-    },
-    {
-      "file": "docs/manual-review-workbench.md",
-      "line": 195,
-      "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 103"
-    },
-    {
-      "file": "docs/manual-review-workbench.md",
-      "line": 196,
-      "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 662"
-    },
-    {
-      "file": "docs/manual-review-workbench.md",
-      "line": 407,
-      "reason": "traffic-related mention",
-      "text": "- Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim."
-    },
-    {
-      "file": "docs/monetization-and-payment-plan.md",
-      "line": 3,
-      "reason": "traffic-related mention",
-      "text": "这个项目的变现顺序不是“先注册一堆收款平台”，而是“先让网站有可用工具、可信内容和真实访问”。早期重点是降低复杂度，避免把时间花在还没有用户验证的支付系统上。"
-    },
-    {
-      "file": "docs/monetization-and-payment-plan.md",
-      "line": 11,
-      "reason": "traffic-related mention",
-      "text": "3. 用 Search Console 和 Analytics 观察用户搜索词、访问页面和点击行为。"
-    },
-    {
-      "file": "docs/monetization-and-payment-plan.md",
-      "line": 12,
-      "reason": "traffic-related mention",
-      "text": "4. 根据真实访问和下载数据，决定哪些模板值得做成付费包。"
-    },
-    {
-      "file": "docs/monetization-and-payment-plan.md",
-      "line": 15,
-      "reason": "traffic-related mention",
-      "text": "原因很简单：文章可以带来搜索流量，但工具和模板才更容易让用户停留、复制结果、下载资料或联系服务。早期不要把网站做得太像广告站。"
     }
   ],
   "nextActions": [

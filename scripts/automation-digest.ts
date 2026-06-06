@@ -111,6 +111,33 @@ type DeploymentCoverage = {
   };
 };
 
+type DeploymentReviewPack = {
+  nextItems: Array<{
+    category: string;
+    file: string;
+    priorityScore: number;
+    publicMatches: number;
+    readyForHumanReview: boolean;
+    safeDraft: boolean;
+    searchQueries: string[];
+    sourceTargets: string[];
+    title: string;
+    topic: string;
+  }>;
+  summary: {
+    deploymentPublicArticles: number;
+    duplicateFiles: number;
+    items: number;
+    itemsWithCommandBoundary: number;
+    itemsWithOfficialSources: number;
+    itemsWithSearchQueries: number;
+    safeDraftItems: number;
+    topicsCovered: number;
+    unsafeItems: number;
+    uniqueFiles: number;
+  };
+};
+
 type ReviewRoadmap = {
   lanes: Array<{
     candidates: unknown[];
@@ -635,6 +662,7 @@ const reports = {
     "content/automation/content-opportunity-backlog.json",
   ),
   deploymentCoverage: readJson<DeploymentCoverage>("content/automation/ai-deployment-coverage.json"),
+  deploymentReviewPack: readJson<DeploymentReviewPack>("content/automation/ai-deployment-review-pack.json"),
   broadSearchDemand: readJson<BroadSearchDemand>("content/automation/broad-search-demand-map.json"),
   publicCoverageGapPlan: readJson<PublicCoverageGapPlan>("content/automation/public-coverage-gap-plan.json"),
   publicCoverageGapPreflight: readJson<PublicCoverageGapPreflight>("content/automation/public-coverage-gap-preflight.json"),
@@ -875,6 +903,19 @@ const payload = {
     topicsWithReadyCandidates: reports.deploymentCoverage.data?.summary.topicsWithReadyCandidates ?? null,
     uniqueCandidateFiles: reports.deploymentCoverage.data?.summary.uniqueCandidateFiles ?? null,
   },
+  deploymentReviewPack: {
+    deploymentPublicArticles: reports.deploymentReviewPack.data?.summary.deploymentPublicArticles ?? null,
+    duplicateFiles: reports.deploymentReviewPack.data?.summary.duplicateFiles ?? null,
+    items: reports.deploymentReviewPack.data?.summary.items ?? null,
+    itemsWithCommandBoundary: reports.deploymentReviewPack.data?.summary.itemsWithCommandBoundary ?? null,
+    itemsWithOfficialSources: reports.deploymentReviewPack.data?.summary.itemsWithOfficialSources ?? null,
+    itemsWithSearchQueries: reports.deploymentReviewPack.data?.summary.itemsWithSearchQueries ?? null,
+    safeDraftItems: reports.deploymentReviewPack.data?.summary.safeDraftItems ?? null,
+    top: reports.deploymentReviewPack.data?.nextItems ?? [],
+    topicsCovered: reports.deploymentReviewPack.data?.summary.topicsCovered ?? null,
+    unsafeItems: reports.deploymentReviewPack.data?.summary.unsafeItems ?? null,
+    uniqueFiles: reports.deploymentReviewPack.data?.summary.uniqueFiles ?? null,
+  },
   broadSearchDemand: {
     maxGapScore: reports.broadSearchDemand.data?.summary.maxGapScore ?? null,
     missingSubtopics: reports.broadSearchDemand.data?.summary.missingSubtopics ?? null,
@@ -1106,6 +1147,9 @@ function buildNextActions() {
   if (!reports.searchQueryMatch.data || reports.searchQueryMatch.data.summary.blockingItems > 0) {
     return ["Open docs/search-query-match-audit.md and resolve blocking query-match issues before manual review."];
   }
+  if (!reports.deploymentReviewPack.data || reports.deploymentReviewPack.data.summary.unsafeItems > 0 || reports.deploymentReviewPack.data.summary.duplicateFiles > 0) {
+    return ["Open docs/ai-deployment-review-pack.md and resolve deployment review pack safety or duplicate-file issues before manual review."];
+  }
   if (!reports.promptReviewPack.data || reports.promptReviewPack.data.summary.unsafeItems > 0 || reports.promptReviewPack.data.summary.duplicateFiles > 0) {
     return ["Open docs/industry-prompt-review-pack.md and resolve prompt review pack safety or duplicate-file issues before manual review."];
   }
@@ -1130,6 +1174,7 @@ function buildNextActions() {
     "Use docs/wave-publish-simulation.md to see the exact post-approval mark-review and publish dry-run path.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.",
     "Use docs/public-coverage-gap-decision-pack.md to review the 8 broad-demand public gap candidates and their optimization actions.",
+    "Use docs/ai-deployment-review-pack.md to review the 10 deployment, Agent, RAG, memory, API, and infrastructure candidates.",
     "Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.",
     "Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.",
     "Use docs/source-target-health-audit.md to confirm official source links are reachable before approving fast-changing AI guidance.",
@@ -1485,6 +1530,25 @@ function toMarkdown(data: typeof payload) {
     "| --- | --- | --- | --- | --- |",
     ...data.deploymentCoverage.top.map((item) => (
       `| ${item.topic} | ${item.gapScore} | ${item.publicMatches} | ${item.candidates.length} | ${item.searchQueries.slice(0, 2).join("<br>")} |`
+    )),
+    "",
+    "## AI Deployment Review Pack",
+    "",
+    `- Items: ${data.deploymentReviewPack.items}`,
+    `- Topics covered: ${data.deploymentReviewPack.topicsCovered}`,
+    `- Unique files: ${data.deploymentReviewPack.uniqueFiles}`,
+    `- Duplicate files: ${data.deploymentReviewPack.duplicateFiles}`,
+    `- Safe draft items: ${data.deploymentReviewPack.safeDraftItems}`,
+    `- Unsafe items: ${data.deploymentReviewPack.unsafeItems}`,
+    `- With official sources: ${data.deploymentReviewPack.itemsWithOfficialSources}`,
+    `- With search queries: ${data.deploymentReviewPack.itemsWithSearchQueries}`,
+    `- With command boundary: ${data.deploymentReviewPack.itemsWithCommandBoundary}`,
+    `- Public deployment articles: ${data.deploymentReviewPack.deploymentPublicArticles}`,
+    "",
+    "| Ready | Safe | Score | Public | Sources | Queries | Topic | Category | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.deploymentReviewPack.top.map((item) => (
+      `| ${item.readyForHumanReview} | ${item.safeDraft} | ${item.priorityScore} | ${item.publicMatches} | ${item.sourceTargets.length} | ${item.searchQueries.length} | ${item.topic} | ${item.category} | ${item.title} | ${item.file} |`
     )),
     "",
     "## Broad Search Demand Map",

@@ -1,14 +1,14 @@
 # Traffic Claim Guard
-Generated at: 2026-06-06T16:34:43.824Z
+Generated at: 2026-06-06T16:43:13.945Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
 - Note: This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples.
 ## Summary
-- filesScanned: 103
+- filesScanned: 105
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 662
+- watchMentions: 697
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -21,6 +21,17 @@ None.
 | README.md | 276 | - Google Search Console 提交清单：`docs/search-console-setup.md` |
 | app/llms.txt/route.ts | 47 | "- The site does not claim real traffic, impressions, income guarantees, or automatic publishing.", |
 | docs/ai-deployment-coverage.md | 11 | - Note: This coverage matrix is read-only. It organizes deployment, Agent, RAG, and model infrastructure drafts for manual review and does not claim measured traffic. |
+| docs/ai-deployment-review-pack.md | 17 | - Traffic note: Search queries are broad intent seeds, not measured traffic, rankings, clicks, impressions, or income. |
+| docs/ai-deployment-review-pack.md | 113 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
+| docs/ai-deployment-review-pack.md | 170 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
+| docs/ai-deployment-review-pack.md | 226 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
+| docs/ai-deployment-review-pack.md | 282 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
+| docs/ai-deployment-review-pack.md | 338 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
+| docs/ai-deployment-review-pack.md | 394 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
+| docs/ai-deployment-review-pack.md | 450 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
+| docs/ai-deployment-review-pack.md | 506 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
+| docs/ai-deployment-review-pack.md | 562 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
+| docs/ai-deployment-review-pack.md | 618 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
 | docs/automation-digest.md | 14 | - Traffic data available: false |
 | docs/automation-digest.md | 270 | ## Traffic Evidence |
 | docs/automation-digest.md | 272 | - Traffic data available: false |
@@ -28,12 +39,12 @@ None.
 | docs/automation-digest.md | 275 | - Measured traffic sources: none |
 | docs/automation-digest.md | 276 | - Search Console verification evidence: false |
 | docs/automation-digest.md | 279 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 280 | - Traffic claim files scanned: 103 |
-| docs/automation-digest.md | 281 | - Traffic claim watch mentions: 662 |
+| docs/automation-digest.md | 280 | - Traffic claim files scanned: 105 |
+| docs/automation-digest.md | 281 | - Traffic claim watch mentions: 697 |
 | docs/automation-digest.md | 317 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
 | docs/automation-gate.md | 31 | \| traffic evidence audit passed and is read-only \| PASS \| failedChecks=0, measuredTrafficSources=0 \| |
 | docs/automation-gate.md | 32 | \| traffic is not claimed without measured metrics \| PASS \| trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 \| |
-| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=103, unsafeClaims=0, watchMentions=662 \| |
+| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=105, unsafeClaims=0, watchMentions=697 \| |
 | docs/broad-search-demand-map.md | 5 | This report is read-only. It turns broad user-search demand areas into a review and content-gap map. It does not publish, mark review, claim keyword volume, or claim traffic. |
 | docs/broad-search-demand-map.md | 12 | - Note: Read-only broad-demand map. It prioritizes likely user-search themes from the local content inventory and official source targets; it does not claim keyword volume, rankings, clicks, or traffic. |
 | docs/broad-search-demand-map.md | 123 | \| 31 \| 100 \| informational \| 医疗 AI 提示词 \| 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 \| content/blog/healthcare-admin-ai-prompts-guide.mdx \| |
@@ -83,17 +94,6 @@ None.
 | docs/live-search-surface.md | 5 | This report checks the live production search surfaces. It does not use Search Console traffic, impressions, or ranking data. |
 | docs/manual-review-workbench.md | 186 | ## Traffic Evidence |
 | docs/manual-review-workbench.md | 188 | - Traffic data available: false |
-| docs/manual-review-workbench.md | 189 | - Can claim traffic: false |
-| docs/manual-review-workbench.md | 191 | - Measured traffic sources: none |
-| docs/manual-review-workbench.md | 192 | - Search Console verification evidence: false |
-| docs/manual-review-workbench.md | 194 | - Unsupported traffic claims: 0 |
-| docs/manual-review-workbench.md | 195 | - Traffic claim files scanned: 103 |
-| docs/manual-review-workbench.md | 196 | - Traffic claim watch mentions: 662 |
-| docs/manual-review-workbench.md | 407 | - Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim. |
-| docs/monetization-and-payment-plan.md | 3 | 这个项目的变现顺序不是“先注册一堆收款平台”，而是“先让网站有可用工具、可信内容和真实访问”。早期重点是降低复杂度，避免把时间花在还没有用户验证的支付系统上。 |
-| docs/monetization-and-payment-plan.md | 11 | 3. 用 Search Console 和 Analytics 观察用户搜索词、访问页面和点击行为。 |
-| docs/monetization-and-payment-plan.md | 12 | 4. 根据真实访问和下载数据，决定哪些模板值得做成付费包。 |
-| docs/monetization-and-payment-plan.md | 15 | 原因很简单：文章可以带来搜索流量，但工具和模板才更容易让用户停留、复制结果、下载资料或联系服务。早期不要把网站做得太像广告站。 |
 ## Next Actions
 - Keep saying that live/search surfaces are healthy, not that traffic exists.
 - Only report traffic after an audited source provides clicks, impressions, visits, or pageviews.

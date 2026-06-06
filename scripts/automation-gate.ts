@@ -55,6 +55,35 @@ async function main() {
       uniqueCandidateFiles: number;
     };
   }>("content/automation/ai-deployment-coverage.json");
+  const deploymentReviewPack = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    items?: Array<{
+      commandBoundary?: {
+        markReviewAfterHumanApproval?: string;
+        publishConfirm?: string;
+        publishDryRunAfterReview?: string;
+        stopBefore?: string;
+      };
+      humanDecisionChecklist?: unknown[];
+      readyForHumanReview?: boolean;
+      riskChecks?: unknown[];
+      safeDraft?: boolean;
+      searchQueries?: unknown[];
+      sourceTargets?: unknown[];
+    }>;
+    summary: {
+      duplicateFiles: number;
+      items: number;
+      itemsWithChecklists: number;
+      itemsWithCommandBoundary: number;
+      itemsWithOfficialSources: number;
+      itemsWithSearchQueries: number;
+      safeDraftItems: number;
+      topicsCovered: number;
+      unsafeItems: number;
+      uniqueFiles: number;
+    };
+  }>("content/automation/ai-deployment-review-pack.json");
   const promptCoverage = readJson<{
     coverage?: Array<{ candidates?: unknown[]; searchQueries?: unknown[]; sourceTargets?: unknown[] }>;
     guardrails: { autoMarkReview: boolean; autoPublish: boolean };
@@ -822,6 +851,44 @@ async function main() {
       name: "AI deployment candidates stay draft and non-indexable",
       ok: deploymentCoverage.summary.unsafeCandidateItems === 0,
       detail: `unsafeCandidateItems=${deploymentCoverage.summary.unsafeCandidateItems}`,
+    },
+    {
+      name: "AI deployment review pack is read-only and covers deployment topics",
+      ok:
+        deploymentReviewPack.guardrails.autoEditArticles === false &&
+        deploymentReviewPack.guardrails.autoMarkReview === false &&
+        deploymentReviewPack.guardrails.autoPublish === false &&
+        deploymentReviewPack.summary.items >= 10 &&
+        deploymentReviewPack.summary.topicsCovered >= deploymentCoverage.summary.topics &&
+        deploymentReviewPack.summary.uniqueFiles === deploymentReviewPack.summary.items &&
+        deploymentReviewPack.summary.duplicateFiles === 0,
+      detail: `items=${deploymentReviewPack.summary.items}, topics=${deploymentReviewPack.summary.topicsCovered}/${deploymentCoverage.summary.topics}, unique=${deploymentReviewPack.summary.uniqueFiles}, duplicates=${deploymentReviewPack.summary.duplicateFiles}`,
+    },
+    {
+      name: "AI deployment review pack has source-backed human review boundaries",
+      ok:
+        deploymentReviewPack.summary.unsafeItems === 0 &&
+        deploymentReviewPack.summary.safeDraftItems === deploymentReviewPack.summary.items &&
+        deploymentReviewPack.summary.itemsWithOfficialSources === deploymentReviewPack.summary.items &&
+        deploymentReviewPack.summary.itemsWithSearchQueries === deploymentReviewPack.summary.items &&
+        deploymentReviewPack.summary.itemsWithChecklists === deploymentReviewPack.summary.items &&
+        deploymentReviewPack.summary.itemsWithCommandBoundary === deploymentReviewPack.summary.items &&
+        Boolean(
+          deploymentReviewPack.items?.every(
+            (item) =>
+              item.readyForHumanReview === true &&
+              item.safeDraft === true &&
+              (item.sourceTargets?.length || 0) >= 2 &&
+              (item.searchQueries?.length || 0) >= 3 &&
+              (item.humanDecisionChecklist?.length || 0) >= 7 &&
+              (item.riskChecks?.length || 0) >= 6 &&
+              item.commandBoundary?.markReviewAfterHumanApproval?.includes("--confirm-human") &&
+              !item.commandBoundary?.publishDryRunAfterReview?.includes("--confirm") &&
+              item.commandBoundary?.publishConfirm === "not-included" &&
+              item.commandBoundary?.stopBefore?.includes("explicit human approval"),
+          ),
+        ),
+      detail: `safe=${deploymentReviewPack.summary.safeDraftItems}, sources=${deploymentReviewPack.summary.itemsWithOfficialSources}, commands=${deploymentReviewPack.summary.itemsWithCommandBoundary}`,
     },
     {
       name: "industry prompt coverage has broad reviewable coverage",
