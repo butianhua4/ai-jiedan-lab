@@ -1,7 +1,8 @@
 import { getAllPosts } from "../lib/blog";
 
 const defaultBase = process.env.NEXT_PUBLIC_SITE_URL || "https://ai-jiedan-lab.vercel.app";
-const base = normalizeBase(readArg("url") || readArg("base") || defaultBase);
+const fetchBase = normalizeBase(readArg("url") || readArg("fetchBase") || defaultBase);
+const canonicalBase = normalizeBase(readArg("canonical") || readArg("base") || defaultBase);
 
 const checks = [
   ["/", "AI 接单实验室"],
@@ -14,6 +15,7 @@ const checks = [
   ["/roadmap", "AI 接单 30 天路线图"],
   ["/sitemap.xml", "<urlset"],
   ["/robots.txt", "Sitemap"],
+  ["/llms.txt", "Draft and noindex articles are intentionally excluded"],
 ] as const;
 
 async function main() {
@@ -21,7 +23,7 @@ async function main() {
   const publicPosts = getAllPosts(false);
 
   for (const [path, expected] of checks) {
-    const url = `${base}${path}`;
+    const url = `${fetchBase}${path}`;
     const response = await fetch(url);
     const text = await response.text();
     pageResults.push({
@@ -34,26 +36,31 @@ async function main() {
 
   const sitemap = await fetchText("/sitemap.xml");
   const robots = await fetchText("/robots.txt");
+  const llms = await fetchText("/llms.txt");
   const home = await fetchText("/");
   const articleResults = [];
-  const missingPublishedPosts = publicPosts.filter((post) => !sitemap.includes(`${base}/blog/${post.slug}`));
+  const missingPublishedPosts = publicPosts.filter((post) => !sitemap.includes(`${canonicalBase}/blog/${post.slug}`));
 
   for (const post of publicPosts) {
     const path = `/blog/${post.slug}`;
-    const url = `${base}${path}`;
+    const url = `${fetchBase}${path}`;
     const response = await fetch(url);
     const text = await response.text();
     articleResults.push({
       path,
       status: response.status,
-      ok: response.ok && text.includes(post.title) && text.includes(`${base}${path}`),
+      ok: response.ok && text.includes(post.title) && text.includes(`${canonicalBase}${path}`),
       title: post.title,
     });
   }
 
   const draftLeak = sitemap.includes("codex-codex-4-31") || sitemap.includes("codex-codex-github-4-36");
+  const llmsDraftLeak = getAllPosts(true)
+    .filter((post) => !(post.status === "published" && post.noindex === false))
+    .some((post) => llms.includes(`](${canonicalBase}/blog/${post.slug})`));
   const result = {
-    base,
+    base: canonicalBase,
+    fetchBase,
     pages: pageResults,
     articles: {
       publicCount: publicPosts.length,
@@ -63,15 +70,20 @@ async function main() {
     },
     sitemap: {
       urlCount: [...sitemap.matchAll(/<loc>/g)].length,
-      usesBase: sitemap.includes(base),
+      usesBase: sitemap.includes(canonicalBase),
       leaksDrafts: draftLeak,
     },
     robots: {
       allowsAll: robots.includes("Allow: /"),
-      pointsToSitemap: robots.includes(`${base}/sitemap.xml`),
+      pointsToSitemap: robots.includes(`${canonicalBase}/sitemap.xml`),
+    },
+    llms: {
+      usesBase: llms.includes(`${canonicalBase}/`),
+      includesPublished: publicPosts.every((post) => llms.includes(`](${canonicalBase}/blog/${post.slug})`)),
+      leaksDrafts: llmsDraftLeak,
     },
     canonical: {
-      home: home.includes('rel="canonical"') && home.includes(base),
+      home: home.includes('rel="canonical"') && home.includes(canonicalBase),
       article: articleResults.every((item) => item.ok),
     },
   };
@@ -85,6 +97,9 @@ async function main() {
     result.sitemap.leaksDrafts ||
     !result.sitemap.usesBase ||
     !result.robots.pointsToSitemap ||
+    !result.llms.usesBase ||
+    !result.llms.includesPublished ||
+    result.llms.leaksDrafts ||
     !result.canonical.article
   ) {
     process.exitCode = 1;
@@ -92,7 +107,7 @@ async function main() {
 }
 
 async function fetchText(path: string) {
-  const response = await fetch(`${base}${path}`);
+  const response = await fetch(`${fetchBase}${path}`);
   return response.text();
 }
 

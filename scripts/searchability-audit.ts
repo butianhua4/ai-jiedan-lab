@@ -8,7 +8,8 @@ type Check = {
   detail?: string;
 };
 
-const base = normalizeBase(readArg("url") || readArg("base") || site.url);
+const fetchBase = normalizeBase(readArg("url") || readArg("fetchBase") || site.url);
+const canonicalBase = normalizeBase(readArg("canonical") || readArg("base") || site.url);
 
 async function main() {
   const checks: Check[] = [];
@@ -42,8 +43,8 @@ async function main() {
   });
   checks.push({
     name: "published posts have canonical URL",
-    ok: publicPosts.every((post) => post.canonical === `${base}/blog/${post.slug}`),
-    detail: failedValues(publicPosts.filter((post) => post.canonical !== `${base}/blog/${post.slug}`).map((post) => post.slug)),
+    ok: publicPosts.every((post) => post.canonical === `${canonicalBase}/blog/${post.slug}`),
+    detail: failedValues(publicPosts.filter((post) => post.canonical !== `${canonicalBase}/blog/${post.slug}`).map((post) => post.slug)),
   });
   checks.push({
     name: "published posts have metadata basics",
@@ -60,14 +61,15 @@ async function main() {
     detail: `${tools.length} tools`,
   });
 
-  if (readArg("url") || readArg("base")) {
+  if (readArg("url") || readArg("fetchBase") || readArg("base")) {
     await addLiveChecks(checks, publicPosts.map((post) => post.slug));
   }
 
   const failed = checks.filter((check) => !check.ok);
   const score = Math.max(0, Math.round(((checks.length - failed.length) / checks.length) * 100));
   const result = {
-    base,
+    base: canonicalBase,
+    fetchBase,
     score,
     summary: {
       checks: checks.length,
@@ -87,27 +89,44 @@ async function main() {
 }
 
 async function addLiveChecks(checks: Check[], publicSlugs: string[]) {
-  const [home, blog, robots, sitemap] = await Promise.all([
+  const allPosts = getAllPosts(true);
+  const draftSlugs = allPosts
+    .filter((post) => !(post.status === "published" && post.noindex === false))
+    .map((post) => post.slug);
+  const [home, blog, robots, sitemap, llms] = await Promise.all([
     fetchPage("/"),
     fetchPage("/blog"),
     fetchPage("/robots.txt"),
     fetchPage("/sitemap.xml"),
+    fetchPage("/llms.txt"),
   ]);
 
   checks.push({ name: "homepage returns 200", ok: home.status === 200, detail: `${home.status}` });
   checks.push({ name: "blog index returns 200", ok: blog.status === 200, detail: `${blog.status}` });
   checks.push({ name: "robots.txt returns 200", ok: robots.status === 200, detail: `${robots.status}` });
   checks.push({ name: "sitemap.xml returns 200", ok: sitemap.status === 200, detail: `${sitemap.status}` });
-  checks.push({ name: "robots points to sitemap", ok: robots.text.includes(`${base}/sitemap.xml`) });
+  checks.push({ name: "llms.txt returns 200", ok: llms.status === 200, detail: `${llms.status}` });
+  checks.push({ name: "robots points to sitemap", ok: robots.text.includes(`${canonicalBase}/sitemap.xml`) });
   checks.push({ name: "robots allows public crawl", ok: robots.text.includes("Allow: /") && !robots.text.includes("Disallow: /") });
   checks.push({ name: "sitemap has loc entries", ok: (sitemap.text.match(/<loc>/g) || []).length >= publicSlugs.length });
-  checks.push({ name: "sitemap uses canonical base", ok: sitemap.text.includes(`${base}/`) });
-  checks.push({ name: "homepage has canonical", ok: hasCanonical(home.text, base) });
+  checks.push({ name: "sitemap uses canonical base", ok: sitemap.text.includes(`${canonicalBase}/`) });
+  checks.push({ name: "llms.txt uses canonical base", ok: llms.text.includes(`${canonicalBase}/`) });
+  checks.push({
+    name: "llms.txt excludes draft slugs",
+    ok: draftSlugs.every((slug) => !hasMarkdownUrl(llms.text, `${canonicalBase}/blog/${slug}`)),
+    detail: failedValues(draftSlugs.filter((slug) => hasMarkdownUrl(llms.text, `${canonicalBase}/blog/${slug}`)).slice(0, 10)),
+  });
+  checks.push({
+    name: "llms.txt includes public article links",
+    ok: publicSlugs.slice(0, 5).every((slug) => hasMarkdownUrl(llms.text, `${canonicalBase}/blog/${slug}`)),
+    detail: failedValues(publicSlugs.slice(0, 5).filter((slug) => !hasMarkdownUrl(llms.text, `${canonicalBase}/blog/${slug}`))),
+  });
+  checks.push({ name: "homepage has canonical", ok: hasCanonical(home.text, canonicalBase) });
   checks.push({ name: "homepage has meta description", ok: hasMetaDescription(home.text) });
   checks.push({ name: "homepage has Open Graph", ok: hasOpenGraph(home.text) });
   checks.push({ name: "homepage has JSON-LD", ok: home.text.includes("application/ld+json") });
 
-  const missingFromSitemap = publicSlugs.filter((slug) => !sitemap.text.includes(`${base}/blog/${slug}`));
+  const missingFromSitemap = publicSlugs.filter((slug) => !sitemap.text.includes(`${canonicalBase}/blog/${slug}`));
   checks.push({
     name: "all published posts are in sitemap",
     ok: missingFromSitemap.length === 0,
@@ -123,12 +142,12 @@ async function addLiveChecks(checks: Check[], publicSlugs: string[]) {
   });
   checks.push({
     name: "sample articles have canonical and BlogPosting JSON-LD",
-    ok: samplePages.every((page, index) => hasCanonical(page.text, `${base}/blog/${sampleSlugs[index]}`) && page.text.includes("BlogPosting")),
+    ok: samplePages.every((page, index) => hasCanonical(page.text, `${canonicalBase}/blog/${sampleSlugs[index]}`) && page.text.includes("BlogPosting")),
   });
 }
 
 async function fetchPage(path: string) {
-  const response = await fetch(`${base}${path}`);
+  const response = await fetch(`${fetchBase}${path}`);
   return { status: response.status, text: await response.text() };
 }
 
@@ -151,6 +170,10 @@ function hasMetaDescription(html: string) {
 
 function hasOpenGraph(html: string) {
   return html.includes('property="og:title"') && html.includes('property="og:description"');
+}
+
+function hasMarkdownUrl(text: string, url: string) {
+  return text.includes(`](${url})`);
 }
 
 function failedValues(values: string[]) {
