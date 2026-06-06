@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-06T12:43:45.759Z
+Generated at: 2026-06-06T12:52:45.271Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 44
-- Passed: 44
+- Checks: 47
+- Passed: 47
 - Failed: 0
 
 ## Checks
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=63, unsafeClaims=0, watchMentions=387 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=65, unsafeClaims=0, watchMentions=387 |
 | SEO opportunity map has review-ready drafts | PASS | reviewReadyDrafts=633 |
 | SEO opportunity map includes manual review batches | PASS | batches=6 |
 | content opportunity backlog has reviewable topics | PASS | topics=7, topicsWithReadyCandidates=7 |
@@ -56,5 +56,8 @@ Overall: PASS
 | public expansion queue stops before publishing | PASS | publishableNow=0 |
 | wave approval packet is manual and ready | PASS | wave=1, items=3, ready=3 |
 | wave approval packet has no unsafe items | PASS | unsafeItems=0 |
+| wave publish simulation is read-only and human-gated | PASS | {"autoMarkReview":false,"autoPublish":false,"note":"Read-only simulation. It does not run mark:review, publish:articles, or change any article status/noindex value.","stopBeforeHumanApproval":true} |
+| wave publish simulation projects only approved Wave 1 items | PASS | wave=1, items=3, ready=3, projected=3 |
+| wave publish simulation public total matches project status | PASS | current=15, projectedAfterApproval=3, projectedPublic=18 |
 | live search surface check passed | PASS | publicArticles=15, failed=0 |
 | manual review workbench is ready and stops before publishing | PASS | currentItemsCovered=3, publishableNow=0 |

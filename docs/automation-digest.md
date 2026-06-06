@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T12:43:45.763Z
+Generated at: 2026-06-06T12:52:45.182Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -132,6 +132,23 @@ Next review files:
 | true | 3 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 3 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
+## Wave Publish Simulation
+
+- Wave: 1
+- Items: 3
+- Ready for human approval: 3
+- Unsafe items: 0
+- Currently publishable: 0
+- Public published before wave: 15
+- Projected publishable after human approval: 3
+- Projected public published after wave: 18
+
+| Ready | Status | Blockers | Title | File |
+| --- | --- | --- | --- | --- |
+| true | draft | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | draft | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | draft | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+
 ## Traffic Evidence
 
 - Traffic data available: false
@@ -142,7 +159,7 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 63
+- Traffic claim files scanned: 65
 - Traffic claim watch mentions: 387
 
 ## Preflight
@@ -229,7 +246,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T12:43:28.791Z
+- Latest check: 2026-06-06T12:52:35.086Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
@@ -244,6 +261,7 @@ Next review files:
 
 - Manually review the three recommended drafts in docs/review-preflight.md.
 - Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.
+- Use docs/wave-publish-simulation.md to see the exact post-approval mark-review and publish dry-run path.
 - Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.
 - Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.
 - Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.

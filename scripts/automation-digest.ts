@@ -164,6 +164,26 @@ type WaveApprovalPacket = {
   };
 };
 
+type WavePublishSimulation = {
+  items: Array<{
+    blockers: string[];
+    currentStatus: string;
+    file: string;
+    readyForHumanApproval: boolean;
+    title: string;
+  }>;
+  summary: {
+    currentlyPublishable: number;
+    items: number;
+    projectedPublicPublishedAfterWave: number;
+    projectedPublishableAfterHumanApproval: number;
+    publicPublishedBeforeWave: number;
+    readyForHumanApproval: number;
+    unsafeItems: number;
+    wave: number;
+  };
+};
+
 type TrafficEvidence = {
   liveEvidence: {
     googleAnalyticsSnippet: boolean;
@@ -227,6 +247,7 @@ const reports = {
   nextReviewSourcePack: readJson<NextReviewSourcePack>("content/automation/next-review-source-pack.json"),
   publicExpansion: readJson<PublicExpansionQueue>("content/automation/public-expansion-queue.json"),
   waveApprovalPacket: readJson<WaveApprovalPacket>("content/automation/wave-approval-packet.json"),
+  wavePublishSimulation: readJson<WavePublishSimulation>("content/automation/wave-publish-simulation.json"),
   trafficEvidence: readJson<TrafficEvidence>("content/automation/traffic-evidence-audit.json"),
   trafficClaimGuard: readJson<TrafficClaimGuard>("content/automation/traffic-claim-guard.json"),
   review: readJson<{ counts: { candidates: number; returned: number; rejected: Record<string, number> }; recommendedToday: ReviewCandidate[] }>(
@@ -309,6 +330,17 @@ const payload = {
     top: reports.waveApprovalPacket.data?.items ?? [],
     unsafeItems: reports.waveApprovalPacket.data?.summary.unsafeItems ?? null,
     wave: reports.waveApprovalPacket.data?.summary.wave ?? null,
+  },
+  wavePublishSimulation: {
+    currentlyPublishable: reports.wavePublishSimulation.data?.summary.currentlyPublishable ?? null,
+    items: reports.wavePublishSimulation.data?.summary.items ?? null,
+    projectedPublicPublishedAfterWave: reports.wavePublishSimulation.data?.summary.projectedPublicPublishedAfterWave ?? null,
+    projectedPublishableAfterHumanApproval: reports.wavePublishSimulation.data?.summary.projectedPublishableAfterHumanApproval ?? null,
+    publicPublishedBeforeWave: reports.wavePublishSimulation.data?.summary.publicPublishedBeforeWave ?? null,
+    readyForHumanApproval: reports.wavePublishSimulation.data?.summary.readyForHumanApproval ?? null,
+    top: reports.wavePublishSimulation.data?.items ?? [],
+    unsafeItems: reports.wavePublishSimulation.data?.summary.unsafeItems ?? null,
+    wave: reports.wavePublishSimulation.data?.summary.wave ?? null,
   },
   trafficEvidence: {
     canClaimTraffic: reports.trafficEvidence.data?.summary.canClaimTraffic ?? false,
@@ -416,6 +448,9 @@ function buildNextActions() {
   if (!reports.waveApprovalPacket.data || reports.waveApprovalPacket.data.summary.unsafeItems > 0) {
     return ["Open docs/wave-approval-packet.md and resolve Wave 1 approval issues before manual review."];
   }
+  if (!reports.wavePublishSimulation.data || reports.wavePublishSimulation.data.summary.unsafeItems > 0) {
+    return ["Open docs/wave-publish-simulation.md and resolve Wave 1 publish simulation blockers before manual review."];
+  }
   if (!reports.trafficEvidence.data || reports.trafficEvidence.data.summary.failedChecks > 0) {
     return ["Open docs/traffic-evidence-audit.md and resolve traffic evidence audit failures."];
   }
@@ -428,6 +463,7 @@ function buildNextActions() {
   return [
     "Manually review the three recommended drafts in docs/review-preflight.md.",
     "Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.",
+    "Use docs/wave-publish-simulation.md to see the exact post-approval mark-review and publish dry-run path.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.",
     "Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
@@ -555,6 +591,23 @@ function toMarkdown(data: typeof payload) {
     "| --- | --- | --- | --- | --- |",
     ...data.waveApprovalPacket.top.map((item) => (
       `| ${item.readyForHumanReview} | ${item.officialSourceTargets.length} | ${item.riskReviewChecklist.length} | ${item.title} | ${item.file} |`
+    )),
+    "",
+    "## Wave Publish Simulation",
+    "",
+    `- Wave: ${data.wavePublishSimulation.wave}`,
+    `- Items: ${data.wavePublishSimulation.items}`,
+    `- Ready for human approval: ${data.wavePublishSimulation.readyForHumanApproval}`,
+    `- Unsafe items: ${data.wavePublishSimulation.unsafeItems}`,
+    `- Currently publishable: ${data.wavePublishSimulation.currentlyPublishable}`,
+    `- Public published before wave: ${data.wavePublishSimulation.publicPublishedBeforeWave}`,
+    `- Projected publishable after human approval: ${data.wavePublishSimulation.projectedPublishableAfterHumanApproval}`,
+    `- Projected public published after wave: ${data.wavePublishSimulation.projectedPublicPublishedAfterWave}`,
+    "",
+    "| Ready | Status | Blockers | Title | File |",
+    "| --- | --- | --- | --- | --- |",
+    ...data.wavePublishSimulation.top.map((item) => (
+      `| ${item.readyForHumanApproval} | ${item.currentStatus} | ${item.blockers.length ? item.blockers.join("<br>") : "none"} | ${item.title} | ${item.file} |`
     )),
     "",
     "## Traffic Evidence",

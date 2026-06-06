@@ -57,7 +57,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/automation docs/ai-deployment-coverage.md docs/automation-digest.md docs/automation-gate.md docs/content-cannibalization.md docs/content-freshness.md docs/content-opportunity-backlog.md docs/industry-prompt-coverage.md docs/live-search-surface.md docs/manual-review-workbench.md docs/next-review-source-pack.md docs/public-expansion-queue.md docs/publish-readiness-pack.md docs/review-automation.md docs/review-batch-plan.md docs/review-coverage-report.md docs/review-preflight.md docs/review-priority-roadmap.md docs/seo-opportunity-map.md docs/traffic-claim-guard.md docs/traffic-evidence-audit.md docs/wave-approval-packet.md
+          git add content/automation docs/ai-deployment-coverage.md docs/automation-digest.md docs/automation-gate.md docs/content-cannibalization.md docs/content-freshness.md docs/content-opportunity-backlog.md docs/industry-prompt-coverage.md docs/live-search-surface.md docs/manual-review-workbench.md docs/next-review-source-pack.md docs/public-expansion-queue.md docs/publish-readiness-pack.md docs/review-automation.md docs/review-batch-plan.md docs/review-coverage-report.md docs/review-preflight.md docs/review-priority-roadmap.md docs/seo-opportunity-map.md docs/traffic-claim-guard.md docs/traffic-evidence-audit.md docs/wave-approval-packet.md docs/wave-publish-simulation.md
           if git diff --cached --quiet; then
             echo "No automation report changes to commit."
           else
@@ -92,6 +92,7 @@ jobs:
             content/automation/next-review-source-pack.json
             content/automation/public-expansion-queue.json
             content/automation/wave-approval-packet.json
+            content/automation/wave-publish-simulation.json
             content/automation/traffic-evidence-audit.json
             content/automation/traffic-claim-guard.json
             content/automation/publish-readiness-pack.json
@@ -119,6 +120,7 @@ jobs:
             docs/next-review-source-pack.md
             docs/public-expansion-queue.md
             docs/wave-approval-packet.md
+            docs/wave-publish-simulation.md
             docs/traffic-evidence-audit.md
             docs/traffic-claim-guard.md
             docs/automation-gate.md

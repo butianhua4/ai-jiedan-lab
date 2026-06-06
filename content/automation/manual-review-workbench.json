@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T12:43:36.672Z",
+  "generatedAt": "2026-06-06T12:52:44.532Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -771,6 +771,41 @@
       }
     ]
   },
+  "wavePublishSimulation": {
+    "summary": {
+      "currentlyPublishable": 0,
+      "items": 3,
+      "projectedPublicPublishedAfterWave": 18,
+      "projectedPublishableAfterHumanApproval": 3,
+      "publicPublishedBeforeWave": 15,
+      "readyForHumanApproval": 3,
+      "unsafeItems": 0,
+      "wave": 1
+    },
+    "items": [
+      {
+        "blockers": [],
+        "currentStatus": "draft",
+        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "readyForHumanApproval": true,
+        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
+      },
+      {
+        "blockers": [],
+        "currentStatus": "draft",
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "readyForHumanApproval": true,
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+      },
+      {
+        "blockers": [],
+        "currentStatus": "draft",
+        "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "readyForHumanApproval": true,
+        "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+      }
+    ]
+  },
   "trafficEvidence": {
     "canClaimTraffic": false,
     "claimableMetrics": 0,
@@ -780,7 +815,7 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 63,
+    "filesScanned": 65,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
     "watchMentions": 387
@@ -894,6 +929,7 @@
   "nextActions": [
     "Review the current publish readiness items in docs/publish-readiness-pack.md.",
     "Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.",
+    "Use docs/wave-publish-simulation.md for the exact post-approval mark-review and publish dry-run path.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.",
     "Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.",
     "Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.",

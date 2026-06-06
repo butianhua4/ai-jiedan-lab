@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-06T12:43:36.596Z",
+  "generatedAt": "2026-06-06T12:52:21.001Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 63,
+    "filesScanned": 65,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
     "watchMentions": 387
@@ -62,55 +62,55 @@
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 135,
+      "line": 152,
       "reason": "traffic-related mention",
       "text": "## Traffic Evidence"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 137,
+      "line": 154,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 138,
+      "line": 155,
       "reason": "traffic-related mention",
       "text": "- Can claim traffic: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 140,
+      "line": 157,
       "reason": "traffic-related mention",
       "text": "- Measured traffic sources: none"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 141,
+      "line": 158,
       "reason": "traffic-related mention",
       "text": "- Search Console verification evidence: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 144,
+      "line": 161,
       "reason": "traffic-related mention",
       "text": "- Unsupported traffic claims: 0"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 145,
+      "line": 162,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 63"
+      "text": "- Traffic claim files scanned: 65"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 146,
+      "line": 163,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 374"
+      "text": "- Traffic claim watch mentions: 387"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 182,
+      "line": 199,
       "reason": "traffic-related mention",
       "text": "| Dify、n8n、MCP 和无代码 AI 自动化 | 258 | 0 | 5 | 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 |"
     },
@@ -130,7 +130,7 @@
       "file": "docs/automation-gate.md",
       "line": 33,
       "reason": "traffic-related mention",
-      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=63, unsafeClaims=0, watchMentions=374 |"
+      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=65, unsafeClaims=0, watchMentions=387 |"
     },
     {
       "file": "docs/content-freshness.md",
@@ -248,55 +248,55 @@
     },
     {
       "file": "docs/manual-review-workbench.md",
-      "line": 169,
+      "line": 186,
       "reason": "traffic-related mention",
       "text": "## Traffic Evidence"
     },
     {
       "file": "docs/manual-review-workbench.md",
-      "line": 171,
+      "line": 188,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/manual-review-workbench.md",
-      "line": 172,
+      "line": 189,
       "reason": "traffic-related mention",
       "text": "- Can claim traffic: false"
     },
     {
       "file": "docs/manual-review-workbench.md",
-      "line": 174,
+      "line": 191,
       "reason": "traffic-related mention",
       "text": "- Measured traffic sources: none"
     },
     {
       "file": "docs/manual-review-workbench.md",
-      "line": 175,
+      "line": 192,
       "reason": "traffic-related mention",
       "text": "- Search Console verification evidence: false"
     },
     {
       "file": "docs/manual-review-workbench.md",
-      "line": 177,
+      "line": 194,
       "reason": "traffic-related mention",
       "text": "- Unsupported traffic claims: 0"
     },
     {
       "file": "docs/manual-review-workbench.md",
-      "line": 178,
+      "line": 195,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 63"
+      "text": "- Traffic claim files scanned: 65"
     },
     {
       "file": "docs/manual-review-workbench.md",
-      "line": 179,
+      "line": 196,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 374"
+      "text": "- Traffic claim watch mentions: 387"
     },
     {
       "file": "docs/manual-review-workbench.md",
-      "line": 225,
+      "line": 243,
       "reason": "traffic-related mention",
       "text": "- Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim."
     },

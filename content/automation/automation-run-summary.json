@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T12:42:21.230Z",
+  "generatedAt": "2026-06-06T12:51:34.596Z",
   "failures": [],
   "ok": true,
   "tasks": [
@@ -20,6 +20,7 @@
     "Generate next review source pack",
     "Generate public expansion queue",
     "Generate wave approval packet",
+    "Generate wave publish simulation",
     "Run content cannibalization check",
     "Run content freshness check",
     "Generate review coverage report",

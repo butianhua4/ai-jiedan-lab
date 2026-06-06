@@ -1,6 +1,6 @@
 # Manual Review Workbench
 
-Generated at: 2026-06-06T12:43:36.672Z
+Generated at: 2026-06-06T12:52:44.532Z
 
 This workbench is read-only. It does not publish articles or mark drafts for review.
 
@@ -166,6 +166,23 @@ Next review files:
 | true | 3 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 3 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
+## Wave Publish Simulation
+
+- Wave: 1
+- Items: 3
+- Ready for human approval: 3
+- Unsafe items: 0
+- Currently publishable: 0
+- Public published before wave: 15
+- Projected publishable after human approval: 3
+- Projected public published after wave: 18
+
+| Ready | Status | Blockers | Title | File |
+| --- | --- | --- | --- | --- |
+| true | draft | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | draft | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | draft | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+
 ## Traffic Evidence
 
 - Traffic data available: false
@@ -175,7 +192,7 @@ Next review files:
 - Search Console verification evidence: false
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 63
+- Traffic claim files scanned: 65
 - Traffic claim watch mentions: 387
 
 ## AI Deployment Coverage
@@ -221,6 +238,7 @@ Next review files:
 
 - Review the current publish readiness items in docs/publish-readiness-pack.md.
 - Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.
+- Use docs/wave-publish-simulation.md for the exact post-approval mark-review and publish dry-run path.
 - Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.
 - Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.
 - Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.

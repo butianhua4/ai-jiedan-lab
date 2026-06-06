@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-06T12:43:45.759Z",
+  "generatedAt": "2026-06-06T12:52:45.271Z",
   "ok": true,
   "summary": {
-    "checks": 44,
+    "checks": 47,
     "failed": 0,
-    "passed": 44
+    "passed": 47
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=63, unsafeClaims=0, watchMentions=387"
+      "detail": "filesScanned=65, unsafeClaims=0, watchMentions=387"
     },
     {
       "name": "SEO opportunity map has review-ready drafts",
@@ -216,6 +216,21 @@
       "name": "wave approval packet has no unsafe items",
       "ok": true,
       "detail": "unsafeItems=0"
+    },
+    {
+      "name": "wave publish simulation is read-only and human-gated",
+      "ok": true,
+      "detail": "{\"autoMarkReview\":false,\"autoPublish\":false,\"note\":\"Read-only simulation. It does not run mark:review, publish:articles, or change any article status/noindex value.\",\"stopBeforeHumanApproval\":true}"
+    },
+    {
+      "name": "wave publish simulation projects only approved Wave 1 items",
+      "ok": true,
+      "detail": "wave=1, items=3, ready=3, projected=3"
+    },
+    {
+      "name": "wave publish simulation public total matches project status",
+      "ok": true,
+      "detail": "current=15, projectedAfterApproval=3, projectedPublic=18"
     },
     {
       "name": "live search surface check passed",

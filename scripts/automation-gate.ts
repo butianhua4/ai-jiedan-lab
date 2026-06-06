@@ -135,6 +135,18 @@ async function main() {
       wave: number;
     };
   }>("content/automation/wave-approval-packet.json");
+  const wavePublishSimulation = readJson<{
+    guardrails: { autoMarkReview: boolean; autoPublish: boolean; stopBeforeHumanApproval: boolean };
+    summary: {
+      currentlyPublishable: number;
+      items: number;
+      projectedPublicPublishedAfterWave: number;
+      projectedPublishableAfterHumanApproval: number;
+      readyForHumanApproval: number;
+      unsafeItems: number;
+      wave: number;
+    };
+  }>("content/automation/wave-publish-simulation.json");
   const liveSearch = readJson<{ articles: { publicCount: number }; failedChecks: string[]; ok: boolean }>("content/automation/live-search-surface.json");
   const workbench = readJson<{
     guardrails: { autoMarkReview: boolean; autoPublish: boolean };
@@ -481,6 +493,32 @@ async function main() {
       name: "wave approval packet has no unsafe items",
       ok: waveApprovalPacket.summary.unsafeItems === 0,
       detail: `unsafeItems=${waveApprovalPacket.summary.unsafeItems}`,
+    },
+    {
+      name: "wave publish simulation is read-only and human-gated",
+      ok:
+        wavePublishSimulation.guardrails.autoMarkReview === false &&
+        wavePublishSimulation.guardrails.autoPublish === false &&
+        wavePublishSimulation.guardrails.stopBeforeHumanApproval === true,
+      detail: JSON.stringify(wavePublishSimulation.guardrails),
+    },
+    {
+      name: "wave publish simulation projects only approved Wave 1 items",
+      ok:
+        wavePublishSimulation.summary.wave === waveApprovalPacket.summary.wave &&
+        wavePublishSimulation.summary.items === waveApprovalPacket.summary.items &&
+        wavePublishSimulation.summary.readyForHumanApproval === waveApprovalPacket.summary.readyForHumanReview &&
+        wavePublishSimulation.summary.unsafeItems === 0 &&
+        wavePublishSimulation.summary.currentlyPublishable === 0 &&
+        wavePublishSimulation.summary.projectedPublishableAfterHumanApproval === waveApprovalPacket.summary.items,
+      detail: `wave=${wavePublishSimulation.summary.wave}, items=${wavePublishSimulation.summary.items}, ready=${wavePublishSimulation.summary.readyForHumanApproval}, projected=${wavePublishSimulation.summary.projectedPublishableAfterHumanApproval}`,
+    },
+    {
+      name: "wave publish simulation public total matches project status",
+      ok:
+        wavePublishSimulation.summary.projectedPublicPublishedAfterWave ===
+        projectStatus.articles.publicPublished + wavePublishSimulation.summary.projectedPublishableAfterHumanApproval,
+      detail: `current=${projectStatus.articles.publicPublished}, projectedAfterApproval=${wavePublishSimulation.summary.projectedPublishableAfterHumanApproval}, projectedPublic=${wavePublishSimulation.summary.projectedPublicPublishedAfterWave}`,
     },
     {
       name: "live search surface check passed",
