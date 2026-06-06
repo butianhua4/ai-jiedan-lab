@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-06T17:22:04.807Z",
+  "generatedAt": "2026-06-06T17:31:15.272Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 113,
+    "filesScanned": 115,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 901
+    "watchMentions": 905
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -128,55 +128,55 @@
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 374,
+      "line": 394,
       "reason": "traffic-related mention",
       "text": "## Traffic Evidence"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 376,
+      "line": 396,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 377,
+      "line": 397,
       "reason": "traffic-related mention",
       "text": "- Can claim traffic: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 379,
+      "line": 399,
       "reason": "traffic-related mention",
       "text": "- Measured traffic sources: none"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 380,
+      "line": 400,
       "reason": "traffic-related mention",
       "text": "- Search Console verification evidence: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 383,
+      "line": 403,
       "reason": "traffic-related mention",
       "text": "- Unsupported traffic claims: 0"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 384,
+      "line": 404,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 113"
+      "text": "- Traffic claim files scanned: 115"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 385,
+      "line": 405,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 901"
+      "text": "- Traffic claim watch mentions: 905"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 421,
+      "line": 441,
       "reason": "traffic-related mention",
       "text": "| Dify、n8n、MCP 和无代码 AI 自动化 | 258 | 0 | 5 | 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 |"
     },
@@ -196,7 +196,7 @@
       "file": "docs/automation-gate.md",
       "line": 33,
       "reason": "traffic-related mention",
-      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=113, unsafeClaims=0, watchMentions=901 |"
+      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=115, unsafeClaims=0, watchMentions=905 |"
     },
     {
       "file": "docs/autopilot-approval-packet.md",
@@ -227,6 +227,18 @@
       "line": 204,
       "reason": "traffic-related mention",
       "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
+    },
+    {
+      "file": "docs/autopilot-internal-link-brief.md",
+      "line": 19,
+      "reason": "traffic-related mention",
+      "text": "- Traffic data available: false"
+    },
+    {
+      "file": "docs/autopilot-internal-link-brief.md",
+      "line": 20,
+      "reason": "traffic-related mention",
+      "text": "- Can claim traffic: false"
     },
     {
       "file": "docs/autopilot-review-queue.md",
@@ -477,18 +489,6 @@
     {
       "file": "docs/industry-prompt-review-pack.md",
       "line": 206,
-      "reason": "traffic-related mention",
-      "text": "- No fabricated metrics, rankings, traffic, income, or client results."
-    },
-    {
-      "file": "docs/industry-prompt-review-pack.md",
-      "line": 217,
-      "reason": "traffic-related mention",
-      "text": "- Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion."
-    },
-    {
-      "file": "docs/industry-prompt-review-pack.md",
-      "line": 257,
       "reason": "traffic-related mention",
       "text": "- No fabricated metrics, rankings, traffic, income, or client results."
     }

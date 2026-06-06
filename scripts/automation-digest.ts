@@ -449,6 +449,29 @@ type AutopilotSearchIntentBrief = {
   unsafeItems: unknown[];
 };
 
+type AutopilotInternalLinkBrief = {
+  items: Array<{
+    currentInternalLinks: number;
+    file: string;
+    linksToPublicArticles: number;
+    readyForHumanReview: boolean;
+    safeDraft: boolean;
+    suggestions: Array<{ title: string; url: string }>;
+    title: string;
+  }>;
+  summary: {
+    approvalItems: number;
+    items: number;
+    itemsAlreadyLinkedToPublic: number;
+    itemsMissingCurrentPublicLink: number;
+    itemsWithSuggestions: number;
+    packetUnsafeItems: number;
+    publicArticles: number;
+    unsafeItems: number;
+  };
+  unsafeItems: unknown[];
+};
+
 type ReviewOptimizationBrief = {
   nextBriefs: Array<{
     file: string;
@@ -822,6 +845,7 @@ const reports = {
   autopilotReviewQueue: readJson<AutopilotReviewQueue>("content/automation/autopilot-review-queue.json"),
   autopilotApprovalPacket: readJson<AutopilotApprovalPacket>("content/automation/autopilot-approval-packet.json"),
   autopilotSearchIntentBrief: readJson<AutopilotSearchIntentBrief>("content/automation/autopilot-search-intent-brief.json"),
+  autopilotInternalLinkBrief: readJson<AutopilotInternalLinkBrief>("content/automation/autopilot-internal-link-brief.json"),
   reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
   reviewCannibalizationBrief: readJson<ReviewCannibalizationBrief>("content/automation/review-cannibalization-brief.json"),
   reviewFreshnessBrief: readJson<ReviewFreshnessBrief>("content/automation/review-freshness-brief.json"),
@@ -939,6 +963,17 @@ const payload = {
     unsafeItems: reports.autopilotSearchIntentBrief.data?.summary.unsafeItems ?? null,
     unsafeItemList: reports.autopilotSearchIntentBrief.data?.unsafeItems.slice(0, 8) ?? [],
     itemsList: reports.autopilotSearchIntentBrief.data?.items.slice(0, 3) ?? [],
+  },
+  autopilotInternalLinkBrief: {
+    items: reports.autopilotInternalLinkBrief.data?.summary.items ?? null,
+    itemsAlreadyLinkedToPublic: reports.autopilotInternalLinkBrief.data?.summary.itemsAlreadyLinkedToPublic ?? null,
+    itemsList: reports.autopilotInternalLinkBrief.data?.items.slice(0, 3) ?? [],
+    itemsMissingCurrentPublicLink: reports.autopilotInternalLinkBrief.data?.summary.itemsMissingCurrentPublicLink ?? null,
+    itemsWithSuggestions: reports.autopilotInternalLinkBrief.data?.summary.itemsWithSuggestions ?? null,
+    packetUnsafeItems: reports.autopilotInternalLinkBrief.data?.summary.packetUnsafeItems ?? null,
+    publicArticles: reports.autopilotInternalLinkBrief.data?.summary.publicArticles ?? null,
+    unsafeItems: reports.autopilotInternalLinkBrief.data?.summary.unsafeItems ?? null,
+    unsafeItemList: reports.autopilotInternalLinkBrief.data?.unsafeItems.slice(0, 8) ?? [],
   },
   reviewOptimizationBrief: {
     briefs: reports.reviewOptimizationBrief.data?.summary.briefs ?? null,
@@ -1296,6 +1331,9 @@ function buildNextActions() {
   if (!reports.autopilotSearchIntentBrief.data || reports.autopilotSearchIntentBrief.data.summary.unsafeItems > 0) {
     return ["Open docs/autopilot-search-intent-brief.md and resolve unsafe search-intent packet items before any mark:review command."];
   }
+  if (!reports.autopilotInternalLinkBrief.data || reports.autopilotInternalLinkBrief.data.summary.unsafeItems > 0) {
+    return ["Open docs/autopilot-internal-link-brief.md and resolve unsafe internal-link packet items before any mark:review command."];
+  }
   if (!reports.reviewOptimizationBrief.data || reports.reviewOptimizationBrief.data.summary.unsafeCommands > 0) {
     return ["Open docs/review-optimization-brief.md and resolve unsafe or missing copydesk guidance before manual review."];
   }
@@ -1362,6 +1400,7 @@ function buildNextActions() {
     "Use docs/autopilot-review-queue.md as the ordered next-10 manual review assignment queue.",
     "Use docs/autopilot-approval-packet.md as the top-3 packet for human approval.",
     "Use docs/autopilot-search-intent-brief.md to tune top-3 search-intent wording during human review.",
+    "Use docs/autopilot-internal-link-brief.md to add one contextual public internal link during human review.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
     "If approved by a human, run mark:review with --confirm-human for approved files only.",
     "Publish only status=review articles in a 1-3 article batch after a dry-run.",
@@ -1559,6 +1598,27 @@ function toMarkdown(data: typeof payload) {
     ...data.autopilotSearchIntentBrief.itemsList.map(
       (item) =>
         `| ${item.readyForHumanReview} | ${item.titleQueryHits.length} | ${item.descriptionQueryHits.length} | ${item.headingQueryHits.length} | ${item.bodyQueryHits.length} | ${item.queryTokenHits} | ${item.searchWeaknesses.length} | ${item.primaryQuery} | ${item.title} | ${item.file} |`,
+    ),
+    "",
+    "## Autopilot Internal Link Brief",
+    "",
+    `- Items: ${data.autopilotInternalLinkBrief.items}`,
+    `- Public articles: ${data.autopilotInternalLinkBrief.publicArticles}`,
+    `- Items with suggestions: ${data.autopilotInternalLinkBrief.itemsWithSuggestions}`,
+    `- Already linked to public: ${data.autopilotInternalLinkBrief.itemsAlreadyLinkedToPublic}`,
+    `- Missing current public link: ${data.autopilotInternalLinkBrief.itemsMissingCurrentPublicLink}`,
+    `- Packet unsafe items: ${data.autopilotInternalLinkBrief.packetUnsafeItems}`,
+    `- Unsafe items: ${data.autopilotInternalLinkBrief.unsafeItems}`,
+    "",
+    "Unsafe internal-link items:",
+    "",
+    ...(data.autopilotInternalLinkBrief.unsafeItemList.length ? data.autopilotInternalLinkBrief.unsafeItemList.map((item) => `- ${JSON.stringify(item)}`) : ["- none"]),
+    "",
+    "| Ready | Safe | Current links | Public links | Suggestions | First suggestion | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.autopilotInternalLinkBrief.itemsList.map(
+      (item) =>
+        `| ${item.readyForHumanReview} | ${item.safeDraft} | ${item.currentInternalLinks} | ${item.linksToPublicArticles} | ${item.suggestions.length} | ${item.suggestions[0]?.url || "none"} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Review Optimization Brief",

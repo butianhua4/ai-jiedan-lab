@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-06T17:22:15.113Z
+Generated at: 2026-06-06T17:31:23.837Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 95
-- Passed: 95
+- Checks: 97
+- Passed: 97
 - Failed: 0
 
 ## Checks
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=113, unsafeClaims=0, watchMentions=901 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=115, unsafeClaims=0, watchMentions=905 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, candidates=19 |
@@ -47,6 +47,8 @@ Overall: PASS
 | autopilot approval packet keeps publish and review commands human-gated | PASS | unsafe=0, headings=3 |
 | autopilot search intent brief covers approval packet | PASS | items=3, weak=2, unsafe=0 |
 | autopilot search intent brief produces human review suggestions | PASS | title=1, description=1, heading=0, body=1 |
+| autopilot internal link brief covers approval packet | PASS | items=3, public=15, unsafe=0 |
+| autopilot internal link brief provides public link suggestions | PASS | suggestions=3, missingCurrentPublicLink=2, alreadyLinked=1 |
 | review optimization brief is read-only and covers ready action-board tasks | PASS | briefs=11, ready=11, unsafeCommands=0 |
 | review optimization brief has actionable copydesk guidance | PASS | withAction=11, missingPublicLinkItems=10, exactQueryWeak=3 |
 | search snippet readiness audit is read-only and covers public plus expansion items | PASS | public=15, expansion=19, scoped=34 |

@@ -549,6 +549,24 @@ async function main() {
       unsafeItems: number;
     };
   }>("content/automation/autopilot-search-intent-brief.json");
+  const autopilotInternalLinkBrief = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    items?: Array<{
+      readyForHumanReview?: boolean;
+      safeDraft?: boolean;
+      suggestions?: unknown[];
+    }>;
+    summary: {
+      approvalItems: number;
+      items: number;
+      itemsAlreadyLinkedToPublic: number;
+      itemsMissingCurrentPublicLink: number;
+      itemsWithSuggestions: number;
+      packetUnsafeItems: number;
+      publicArticles: number;
+      unsafeItems: number;
+    };
+  }>("content/automation/autopilot-internal-link-brief.json");
   const reviewOptimizationBrief = readJson<{
     briefs?: Array<{
       file: string;
@@ -984,6 +1002,30 @@ async function main() {
           ),
         ),
       detail: `title=${autopilotSearchIntentBrief.summary.titleCoveredItems}, description=${autopilotSearchIntentBrief.summary.descriptionCoveredItems}, heading=${autopilotSearchIntentBrief.summary.headingCoveredItems}, body=${autopilotSearchIntentBrief.summary.bodyCoveredItems}`,
+    },
+    {
+      name: "autopilot internal link brief covers approval packet",
+      ok:
+        autopilotInternalLinkBrief.guardrails.autoEditArticles === false &&
+        autopilotInternalLinkBrief.guardrails.autoMarkReview === false &&
+        autopilotInternalLinkBrief.guardrails.autoPublish === false &&
+        autopilotInternalLinkBrief.summary.approvalItems === autopilotApprovalPacket.summary.items &&
+        autopilotInternalLinkBrief.summary.items === autopilotApprovalPacket.summary.items &&
+        autopilotInternalLinkBrief.summary.packetUnsafeItems === 0 &&
+        autopilotInternalLinkBrief.summary.unsafeItems === 0 &&
+        autopilotInternalLinkBrief.summary.publicArticles > 0,
+      detail: `items=${autopilotInternalLinkBrief.summary.items}, public=${autopilotInternalLinkBrief.summary.publicArticles}, unsafe=${autopilotInternalLinkBrief.summary.unsafeItems}`,
+    },
+    {
+      name: "autopilot internal link brief provides public link suggestions",
+      ok:
+        autopilotInternalLinkBrief.summary.itemsWithSuggestions === autopilotInternalLinkBrief.summary.items &&
+        Boolean(
+          autopilotInternalLinkBrief.items?.every(
+            (item) => item.readyForHumanReview === true && item.safeDraft === true && (item.suggestions?.length || 0) > 0,
+          ),
+        ),
+      detail: `suggestions=${autopilotInternalLinkBrief.summary.itemsWithSuggestions}, missingCurrentPublicLink=${autopilotInternalLinkBrief.summary.itemsMissingCurrentPublicLink}, alreadyLinked=${autopilotInternalLinkBrief.summary.itemsAlreadyLinkedToPublic}`,
     },
     {
       name: "review optimization brief is read-only and covers ready action-board tasks",
