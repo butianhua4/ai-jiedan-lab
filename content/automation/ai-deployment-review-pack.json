@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T17:12:32.401Z",
+  "generatedAt": "2026-06-06T17:21:04.531Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -8,7 +8,7 @@
     "stopBefore": "Stop before mark:review and stop before publish. Human approval is required for every article."
   },
   "sourceEvidence": {
-    "coverageGeneratedAt": "2026-06-06T17:12:23.622Z",
+    "coverageGeneratedAt": "2026-06-06T17:20:56.098Z",
     "coverageGuardrails": {
       "autoMarkReview": false,
       "autoPublish": false,

@@ -420,6 +420,35 @@ type AutopilotApprovalPacket = {
   unsafeItems: unknown[];
 };
 
+type AutopilotSearchIntentBrief = {
+  items: Array<{
+    bodyQueryHits: string[];
+    descriptionQueryHits: string[];
+    file: string;
+    headingQueryHits: string[];
+    primaryQuery: string;
+    queryTokenHits: number;
+    readyForHumanReview: boolean;
+    reviewSuggestions: string[];
+    searchWeaknesses: string[];
+    title: string;
+    titleQueryHits: string[];
+  }>;
+  searchWeakItems: unknown[];
+  summary: {
+    approvalItems: number;
+    bodyCoveredItems: number;
+    descriptionCoveredItems: number;
+    headingCoveredItems: number;
+    items: number;
+    packetUnsafeItems: number;
+    searchWeakItems: number;
+    titleCoveredItems: number;
+    unsafeItems: number;
+  };
+  unsafeItems: unknown[];
+};
+
 type ReviewOptimizationBrief = {
   nextBriefs: Array<{
     file: string;
@@ -792,6 +821,7 @@ const reports = {
   reviewPortfolioBoard: readJson<ReviewPortfolioBoard>("content/automation/review-portfolio-board.json"),
   autopilotReviewQueue: readJson<AutopilotReviewQueue>("content/automation/autopilot-review-queue.json"),
   autopilotApprovalPacket: readJson<AutopilotApprovalPacket>("content/automation/autopilot-approval-packet.json"),
+  autopilotSearchIntentBrief: readJson<AutopilotSearchIntentBrief>("content/automation/autopilot-search-intent-brief.json"),
   reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
   reviewCannibalizationBrief: readJson<ReviewCannibalizationBrief>("content/automation/review-cannibalization-brief.json"),
   reviewFreshnessBrief: readJson<ReviewFreshnessBrief>("content/automation/review-freshness-brief.json"),
@@ -896,6 +926,19 @@ const payload = {
     withHeadings: reports.autopilotApprovalPacket.data?.summary.withHeadings ?? null,
     withSearchQueries: reports.autopilotApprovalPacket.data?.summary.withSearchQueries ?? null,
     withSourceTargets: reports.autopilotApprovalPacket.data?.summary.withSourceTargets ?? null,
+  },
+  autopilotSearchIntentBrief: {
+    bodyCoveredItems: reports.autopilotSearchIntentBrief.data?.summary.bodyCoveredItems ?? null,
+    descriptionCoveredItems: reports.autopilotSearchIntentBrief.data?.summary.descriptionCoveredItems ?? null,
+    headingCoveredItems: reports.autopilotSearchIntentBrief.data?.summary.headingCoveredItems ?? null,
+    items: reports.autopilotSearchIntentBrief.data?.summary.items ?? null,
+    packetUnsafeItems: reports.autopilotSearchIntentBrief.data?.summary.packetUnsafeItems ?? null,
+    searchWeakItems: reports.autopilotSearchIntentBrief.data?.summary.searchWeakItems ?? null,
+    searchWeakItemList: reports.autopilotSearchIntentBrief.data?.searchWeakItems.slice(0, 8) ?? [],
+    titleCoveredItems: reports.autopilotSearchIntentBrief.data?.summary.titleCoveredItems ?? null,
+    unsafeItems: reports.autopilotSearchIntentBrief.data?.summary.unsafeItems ?? null,
+    unsafeItemList: reports.autopilotSearchIntentBrief.data?.unsafeItems.slice(0, 8) ?? [],
+    itemsList: reports.autopilotSearchIntentBrief.data?.items.slice(0, 3) ?? [],
   },
   reviewOptimizationBrief: {
     briefs: reports.reviewOptimizationBrief.data?.summary.briefs ?? null,
@@ -1250,6 +1293,9 @@ function buildNextActions() {
   if (!reports.autopilotApprovalPacket.data || reports.autopilotApprovalPacket.data.summary.unsafeItems > 0) {
     return ["Open docs/autopilot-approval-packet.md and resolve unsafe approval packet items before any mark:review command."];
   }
+  if (!reports.autopilotSearchIntentBrief.data || reports.autopilotSearchIntentBrief.data.summary.unsafeItems > 0) {
+    return ["Open docs/autopilot-search-intent-brief.md and resolve unsafe search-intent packet items before any mark:review command."];
+  }
   if (!reports.reviewOptimizationBrief.data || reports.reviewOptimizationBrief.data.summary.unsafeCommands > 0) {
     return ["Open docs/review-optimization-brief.md and resolve unsafe or missing copydesk guidance before manual review."];
   }
@@ -1315,6 +1361,7 @@ function buildNextActions() {
     "Use docs/review-portfolio-board.md to deduplicate Wave, public-gap, deployment, and prompt review candidates before assigning manual review.",
     "Use docs/autopilot-review-queue.md as the ordered next-10 manual review assignment queue.",
     "Use docs/autopilot-approval-packet.md as the top-3 packet for human approval.",
+    "Use docs/autopilot-search-intent-brief.md to tune top-3 search-intent wording during human review.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
     "If approved by a human, run mark:review with --confirm-human for approved files only.",
     "Publish only status=review articles in a 1-3 article batch after a dry-run.",
@@ -1490,6 +1537,28 @@ function toMarkdown(data: typeof payload) {
     ...data.autopilotApprovalPacket.packetItems.map(
       (item) =>
         `| ${item.readyForHumanApproval} | ${item.autopilotScore} | ${item.assignmentLane} | ${item.articleMeta.status} | ${item.articleMeta.noindex} | ${item.sourceTargets.length} | ${item.searchQueries.length} | ${item.headings.length} | ${item.title} | ${item.file} |`,
+    ),
+    "",
+    "## Autopilot Search Intent Brief",
+    "",
+    `- Items: ${data.autopilotSearchIntentBrief.items}`,
+    `- Title covered items: ${data.autopilotSearchIntentBrief.titleCoveredItems}`,
+    `- Description covered items: ${data.autopilotSearchIntentBrief.descriptionCoveredItems}`,
+    `- Heading covered items: ${data.autopilotSearchIntentBrief.headingCoveredItems}`,
+    `- Body covered items: ${data.autopilotSearchIntentBrief.bodyCoveredItems}`,
+    `- Search weak items: ${data.autopilotSearchIntentBrief.searchWeakItems}`,
+    `- Packet unsafe items: ${data.autopilotSearchIntentBrief.packetUnsafeItems}`,
+    `- Unsafe items: ${data.autopilotSearchIntentBrief.unsafeItems}`,
+    "",
+    "Unsafe search-intent items:",
+    "",
+    ...(data.autopilotSearchIntentBrief.unsafeItemList.length ? data.autopilotSearchIntentBrief.unsafeItemList.map((item) => `- ${JSON.stringify(item)}`) : ["- none"]),
+    "",
+    "| Ready | Title hits | Description hits | Heading hits | Body hits | Token hits | Weaknesses | Primary query | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.autopilotSearchIntentBrief.itemsList.map(
+      (item) =>
+        `| ${item.readyForHumanReview} | ${item.titleQueryHits.length} | ${item.descriptionQueryHits.length} | ${item.headingQueryHits.length} | ${item.bodyQueryHits.length} | ${item.queryTokenHits} | ${item.searchWeaknesses.length} | ${item.primaryQuery} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Review Optimization Brief",

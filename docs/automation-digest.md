@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T17:13:45.024Z
+Generated at: 2026-06-06T17:22:15.030Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -164,6 +164,27 @@ Unsafe packet items:
 | true | 1688 | industry-prompt | draft | true | 9 | 8 | 8 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | true | 1643 | ai-deployment | draft | true | 6 | 8 | 8 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 1253 | ai-deployment | draft | true | 5 | 8 | 8 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+
+## Autopilot Search Intent Brief
+
+- Items: 3
+- Title covered items: 1
+- Description covered items: 1
+- Heading covered items: 0
+- Body covered items: 1
+- Search weak items: 2
+- Packet unsafe items: 0
+- Unsafe items: 0
+
+Unsafe search-intent items:
+
+- none
+
+| Ready | Title hits | Description hits | Heading hits | Body hits | Token hits | Weaknesses | Primary query | Title | File |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| true | 1 | 1 | 0 | 2 | 7 | 0 | ChatGPT prompts for business | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | 0 | 0 | 0 | 0 | 8 | 3 | AI Agent deployment tutorial | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | 0 | 0 | 0 | 0 | 10 | 3 | LLM observability | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 
 ## Review Optimization Brief
 
@@ -360,8 +381,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 111
-- Traffic claim watch mentions: 895
+- Traffic claim files scanned: 113
+- Traffic claim watch mentions: 901
 
 ## Preflight
 
@@ -723,7 +744,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T17:13:22.751Z
+- Latest check: 2026-06-06T17:21:55.347Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
@@ -749,6 +770,7 @@ Next review files:
 - Use docs/review-portfolio-board.md to deduplicate Wave, public-gap, deployment, and prompt review candidates before assigning manual review.
 - Use docs/autopilot-review-queue.md as the ordered next-10 manual review assignment queue.
 - Use docs/autopilot-approval-packet.md as the top-3 packet for human approval.
+- Use docs/autopilot-search-intent-brief.md to tune top-3 search-intent wording during human review.
 - Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.
 - If approved by a human, run mark:review with --confirm-human for approved files only.
 - Publish only status=review articles in a 1-3 article batch after a dry-run.

@@ -530,6 +530,25 @@ async function main() {
       withSourceTargets: number;
     };
   }>("content/automation/autopilot-approval-packet.json");
+  const autopilotSearchIntentBrief = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    items?: Array<{
+      readyForHumanReview?: boolean;
+      reviewSuggestions?: unknown[];
+      searchQueries?: unknown[];
+    }>;
+    summary: {
+      approvalItems: number;
+      bodyCoveredItems: number;
+      descriptionCoveredItems: number;
+      headingCoveredItems: number;
+      items: number;
+      packetUnsafeItems: number;
+      searchWeakItems: number;
+      titleCoveredItems: number;
+      unsafeItems: number;
+    };
+  }>("content/automation/autopilot-search-intent-brief.json");
   const reviewOptimizationBrief = readJson<{
     briefs?: Array<{
       file: string;
@@ -938,6 +957,33 @@ async function main() {
           ),
         ),
       detail: `unsafe=${autopilotApprovalPacket.summary.unsafeItems}, headings=${autopilotApprovalPacket.summary.withHeadings}`,
+    },
+    {
+      name: "autopilot search intent brief covers approval packet",
+      ok:
+        autopilotSearchIntentBrief.guardrails.autoEditArticles === false &&
+        autopilotSearchIntentBrief.guardrails.autoMarkReview === false &&
+        autopilotSearchIntentBrief.guardrails.autoPublish === false &&
+        autopilotSearchIntentBrief.summary.approvalItems === autopilotApprovalPacket.summary.items &&
+        autopilotSearchIntentBrief.summary.items === autopilotApprovalPacket.summary.items &&
+        autopilotSearchIntentBrief.summary.packetUnsafeItems === 0 &&
+        autopilotSearchIntentBrief.summary.unsafeItems === 0,
+      detail: `items=${autopilotSearchIntentBrief.summary.items}, weak=${autopilotSearchIntentBrief.summary.searchWeakItems}, unsafe=${autopilotSearchIntentBrief.summary.unsafeItems}`,
+    },
+    {
+      name: "autopilot search intent brief produces human review suggestions",
+      ok:
+        autopilotSearchIntentBrief.summary.titleCoveredItems +
+          autopilotSearchIntentBrief.summary.descriptionCoveredItems +
+          autopilotSearchIntentBrief.summary.headingCoveredItems +
+          autopilotSearchIntentBrief.summary.bodyCoveredItems >
+          0 &&
+        Boolean(
+          autopilotSearchIntentBrief.items?.every(
+            (item) => item.readyForHumanReview === true && (item.searchQueries?.length || 0) > 0 && (item.reviewSuggestions?.length || 0) > 0,
+          ),
+        ),
+      detail: `title=${autopilotSearchIntentBrief.summary.titleCoveredItems}, description=${autopilotSearchIntentBrief.summary.descriptionCoveredItems}, heading=${autopilotSearchIntentBrief.summary.headingCoveredItems}, body=${autopilotSearchIntentBrief.summary.bodyCoveredItems}`,
     },
     {
       name: "review optimization brief is read-only and covers ready action-board tasks",

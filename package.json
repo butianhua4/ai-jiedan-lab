@@ -36,6 +36,7 @@
     "automation:review-portfolio-board": "tsx scripts/review-portfolio-board.ts",
     "automation:autopilot-review-queue": "tsx scripts/autopilot-review-queue.ts",
     "automation:autopilot-approval-packet": "tsx scripts/autopilot-approval-packet.ts",
+    "automation:autopilot-search-intent": "tsx scripts/autopilot-search-intent-brief.ts",
     "automation:review-optimization-brief": "tsx scripts/review-optimization-brief.ts",
     "automation:review-cannibalization-brief": "tsx scripts/review-cannibalization-brief.ts",
     "automation:review-freshness-brief": "tsx scripts/review-freshness-brief.ts",

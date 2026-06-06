@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-06T17:13:45.019Z
+Generated at: 2026-06-06T17:22:15.113Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 93
-- Passed: 93
+- Checks: 95
+- Passed: 95
 - Failed: 0
 
 ## Checks
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=111, unsafeClaims=0, watchMentions=895 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=113, unsafeClaims=0, watchMentions=901 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, candidates=19 |
@@ -45,6 +45,8 @@ Overall: PASS
 | autopilot review queue keeps assignments safe and human-gated | PASS | ready=24, safe=24, unsafe=0 |
 | autopilot approval packet packages the top safe assignments | PASS | items=3, ready=3, sources=3, queries=3 |
 | autopilot approval packet keeps publish and review commands human-gated | PASS | unsafe=0, headings=3 |
+| autopilot search intent brief covers approval packet | PASS | items=3, weak=2, unsafe=0 |
+| autopilot search intent brief produces human review suggestions | PASS | title=1, description=1, heading=0, body=1 |
 | review optimization brief is read-only and covers ready action-board tasks | PASS | briefs=11, ready=11, unsafeCommands=0 |
 | review optimization brief has actionable copydesk guidance | PASS | withAction=11, missingPublicLinkItems=10, exactQueryWeak=3 |
 | search snippet readiness audit is read-only and covers public plus expansion items | PASS | public=15, expansion=19, scoped=34 |

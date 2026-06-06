@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-06T17:13:45.019Z",
+  "generatedAt": "2026-06-06T17:22:15.113Z",
   "ok": true,
   "summary": {
-    "checks": 93,
+    "checks": 95,
     "failed": 0,
-    "passed": 93
+    "passed": 95
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=111, unsafeClaims=0, watchMentions=895"
+      "detail": "filesScanned=113, unsafeClaims=0, watchMentions=901"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -161,6 +161,16 @@
       "name": "autopilot approval packet keeps publish and review commands human-gated",
       "ok": true,
       "detail": "unsafe=0, headings=3"
+    },
+    {
+      "name": "autopilot search intent brief covers approval packet",
+      "ok": true,
+      "detail": "items=3, weak=2, unsafe=0"
+    },
+    {
+      "name": "autopilot search intent brief produces human review suggestions",
+      "ok": true,
+      "detail": "title=1, description=1, heading=0, body=1"
     },
     {
       "name": "review optimization brief is read-only and covers ready action-board tasks",
