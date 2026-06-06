@@ -143,6 +143,16 @@ async function main() {
     reviewPlan: { nextBatch: unknown };
   }>("content/automation/manual-review-workbench.json");
   const projectStatus = readJson<{ articles: { publicPublished: number; publishableNow: unknown[] } }>("content/automation/project-status.json");
+  const trafficEvidence = readJson<{
+    guardrails: { autoPublish: boolean };
+    summary: {
+      canClaimTraffic: boolean;
+      claimableMetrics: number;
+      failedChecks: number;
+      measuredTrafficSources: number;
+      trafficDataAvailable: boolean;
+    };
+  }>("content/automation/traffic-evidence-audit.json");
   const articles = (await articleFiles()).map(readArticle);
 
   const reviewFiles = reviewQueue.recommendedToday.map((item) => item.file);
@@ -241,6 +251,19 @@ async function main() {
       name: "project status still stops before publishing",
       ok: projectStatus.articles.publishableNow.length === 0,
       detail: `publicPublished=${projectStatus.articles.publicPublished}, publishableNow=${projectStatus.articles.publishableNow.length}`,
+    },
+    {
+      name: "traffic evidence audit passed and is read-only",
+      ok: trafficEvidence.guardrails.autoPublish === false && trafficEvidence.summary.failedChecks === 0,
+      detail: `failedChecks=${trafficEvidence.summary.failedChecks}, measuredTrafficSources=${trafficEvidence.summary.measuredTrafficSources}`,
+    },
+    {
+      name: "traffic is not claimed without measured metrics",
+      ok:
+        trafficEvidence.summary.trafficDataAvailable === false &&
+        trafficEvidence.summary.canClaimTraffic === false &&
+        trafficEvidence.summary.claimableMetrics === 0,
+      detail: `trafficDataAvailable=${trafficEvidence.summary.trafficDataAvailable}, canClaimTraffic=${trafficEvidence.summary.canClaimTraffic}, claimableMetrics=${trafficEvidence.summary.claimableMetrics}`,
     },
     {
       name: "SEO opportunity map has review-ready drafts",

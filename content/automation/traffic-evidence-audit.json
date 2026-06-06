@@ -1,0 +1,63 @@
+{
+  "generatedAt": "2026-06-06T12:35:45.843Z",
+  "guardrails": {
+    "autoPublish": false,
+    "note": "This audit checks evidence for traffic measurement. It does not claim visits, clicks, impressions, rankings, or Search Console performance data."
+  },
+  "base": "https://ai-jiedan-lab.vercel.app",
+  "summary": {
+    "canClaimTraffic": false,
+    "claimableMetrics": 0,
+    "failedChecks": 0,
+    "measuredTrafficSources": 0,
+    "searchConsoleVerificationEvidence": false,
+    "trafficDataAvailable": false
+  },
+  "measuredTrafficSources": [],
+  "envEvidence": {
+    "googleAnalyticsId": false,
+    "googleSiteVerification": false,
+    "vercelAnalyticsId": false
+  },
+  "codeEvidence": {
+    "googleAnalyticsDependency": false,
+    "googleAnalyticsSnippet": false,
+    "googleSiteVerificationMeta": true,
+    "vercelAnalyticsDependency": false,
+    "vercelAnalyticsSnippet": false
+  },
+  "liveEvidence": {
+    "fetched": true,
+    "googleAnalyticsSnippet": false,
+    "googleSiteVerificationMeta": false,
+    "status": 200,
+    "vercelAnalyticsSnippet": false
+  },
+  "checks": [
+    {
+      "name": "live homepage fetched",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "traffic data is not claimed without measured source",
+      "ok": true,
+      "detail": "measuredTrafficSources=0, claimableMetrics=0"
+    },
+    {
+      "name": "search console status is evidence-based",
+      "ok": true,
+      "detail": "no verification evidence detected in env or live HTML"
+    },
+    {
+      "name": "privacy page mentions analytics possibility",
+      "ok": true,
+      "detail": "privacy notice should be reviewed before adding tracking scripts"
+    }
+  ],
+  "nextActions": [
+    "Do not claim real traffic yet; current automation only proves the site is reachable and index surfaces are clean.",
+    "Add Search Console verification evidence before treating search performance as measurable.",
+    "Add Analytics or Vercel Web Analytics only after privacy notice and tracking purpose are confirmed."
+  ]
+}

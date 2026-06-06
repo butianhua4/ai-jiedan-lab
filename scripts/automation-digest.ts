@@ -164,6 +164,24 @@ type WaveApprovalPacket = {
   };
 };
 
+type TrafficEvidence = {
+  liveEvidence: {
+    googleAnalyticsSnippet: boolean;
+    googleSiteVerificationMeta: boolean;
+    status: number;
+    vercelAnalyticsSnippet: boolean;
+  };
+  measuredTrafficSources: string[];
+  summary: {
+    canClaimTraffic: boolean;
+    claimableMetrics: number;
+    failedChecks: number;
+    measuredTrafficSources: number;
+    searchConsoleVerificationEvidence: boolean;
+    trafficDataAvailable: boolean;
+  };
+};
+
 const reports = {
   cannibalization: readJson<{ summary: { conflicts: number; reviewBatchConflicts: number } }>("content/automation/content-cannibalization.json"),
   freshness: readJson<{ summary: { currentReviewItems: number; highRisk: number; mediumRisk: number; plannedReviewItems: number } }>(
@@ -200,6 +218,7 @@ const reports = {
   nextReviewSourcePack: readJson<NextReviewSourcePack>("content/automation/next-review-source-pack.json"),
   publicExpansion: readJson<PublicExpansionQueue>("content/automation/public-expansion-queue.json"),
   waveApprovalPacket: readJson<WaveApprovalPacket>("content/automation/wave-approval-packet.json"),
+  trafficEvidence: readJson<TrafficEvidence>("content/automation/traffic-evidence-audit.json"),
   review: readJson<{ counts: { candidates: number; returned: number; rejected: Record<string, number> }; recommendedToday: ReviewCandidate[] }>(
     "content/automation/review-candidates.json",
   ),
@@ -228,6 +247,7 @@ const payload = {
     runOk: reports.run.data?.ok ?? false,
     searchabilityScore: reports.searchability.data?.score ?? null,
     seoOk: reports.seo.data?.ok ?? false,
+    trafficDataAvailable: reports.trafficEvidence.data?.summary.trafficDataAvailable ?? false,
   },
   publishingBoundary: {
     publicPublished: reports.project.data?.articles.publicPublished ?? null,
@@ -279,6 +299,15 @@ const payload = {
     top: reports.waveApprovalPacket.data?.items ?? [],
     unsafeItems: reports.waveApprovalPacket.data?.summary.unsafeItems ?? null,
     wave: reports.waveApprovalPacket.data?.summary.wave ?? null,
+  },
+  trafficEvidence: {
+    canClaimTraffic: reports.trafficEvidence.data?.summary.canClaimTraffic ?? false,
+    claimableMetrics: reports.trafficEvidence.data?.summary.claimableMetrics ?? null,
+    failedChecks: reports.trafficEvidence.data?.summary.failedChecks ?? null,
+    liveStatus: reports.trafficEvidence.data?.liveEvidence.status ?? null,
+    measuredTrafficSources: reports.trafficEvidence.data?.measuredTrafficSources ?? [],
+    searchConsoleVerificationEvidence: reports.trafficEvidence.data?.summary.searchConsoleVerificationEvidence ?? false,
+    trafficDataAvailable: reports.trafficEvidence.data?.summary.trafficDataAvailable ?? false,
   },
   preflight: {
     checked: reports.preflight.data?.summary.checked ?? null,
@@ -371,6 +400,9 @@ function buildNextActions() {
   if (!reports.waveApprovalPacket.data || reports.waveApprovalPacket.data.summary.unsafeItems > 0) {
     return ["Open docs/wave-approval-packet.md and resolve Wave 1 approval issues before manual review."];
   }
+  if (!reports.trafficEvidence.data || reports.trafficEvidence.data.summary.failedChecks > 0) {
+    return ["Open docs/traffic-evidence-audit.md and resolve traffic evidence audit failures."];
+  }
   if (!reports.reviewCoverage.data || reports.reviewCoverage.data.summary.missingCoverage > 0) {
     return ["Open docs/review-coverage-report.md and regenerate coverage for all planned review candidates."];
   }
@@ -400,6 +432,7 @@ function toMarkdown(data: typeof payload) {
     `- Preflight ok: ${data.health.preflightOk}`,
     `- SEO ok: ${data.health.seoOk}`,
     `- Searchability score: ${data.health.searchabilityScore}`,
+    `- Traffic data available: ${data.health.trafficDataAvailable}`,
     `- Missing reports: ${data.health.missingReports.length ? data.health.missingReports.join(", ") : "none"}`,
     "",
     "## Publishing Boundary",
@@ -504,6 +537,16 @@ function toMarkdown(data: typeof payload) {
     ...data.waveApprovalPacket.top.map((item) => (
       `| ${item.readyForHumanReview} | ${item.officialSourceTargets.length} | ${item.riskReviewChecklist.length} | ${item.title} | ${item.file} |`
     )),
+    "",
+    "## Traffic Evidence",
+    "",
+    `- Traffic data available: ${data.trafficEvidence.trafficDataAvailable}`,
+    `- Can claim traffic: ${data.trafficEvidence.canClaimTraffic}`,
+    `- Claimable metrics: ${data.trafficEvidence.claimableMetrics}`,
+    `- Measured traffic sources: ${data.trafficEvidence.measuredTrafficSources.length ? data.trafficEvidence.measuredTrafficSources.join(", ") : "none"}`,
+    `- Search Console verification evidence: ${data.trafficEvidence.searchConsoleVerificationEvidence}`,
+    `- Live status: ${data.trafficEvidence.liveStatus}`,
+    `- Failed checks: ${data.trafficEvidence.failedChecks}`,
     "",
     "## Preflight",
     "",

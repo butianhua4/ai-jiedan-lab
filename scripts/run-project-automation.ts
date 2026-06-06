@@ -16,6 +16,7 @@ const tasks: Task[] = [
   { title: "Generate publish readiness pack", args: ["run", "automation:publish-pack", "--", "--limit=3"] },
   { title: "Run review candidate preflight", args: ["run", "automation:review-preflight"] },
   { title: "Generate project status", args: ["run", "--silent", "project:status"], outputFile: "content/automation/project-status.json" },
+  { title: "Run traffic evidence audit", args: ["run", "traffic:evidence"] },
   { title: "Run SEO safety check", args: ["run", "--silent", "seo:check"], outputFile: "content/automation/seo-check.json" },
   { title: "Generate SEO opportunity map", args: ["run", "seo:opportunities"] },
   { title: "Generate content opportunity backlog", args: ["run", "content:opportunities"] },

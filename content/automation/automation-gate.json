@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-06T12:27:28.445Z",
+  "generatedAt": "2026-06-06T12:36:23.027Z",
   "ok": true,
   "summary": {
-    "checks": 41,
+    "checks": 43,
     "failed": 0,
-    "passed": 41
+    "passed": 43
   },
   "failed": [],
   "checks": [
@@ -76,6 +76,16 @@
       "name": "project status still stops before publishing",
       "ok": true,
       "detail": "publicPublished=15, publishableNow=0"
+    },
+    {
+      "name": "traffic evidence audit passed and is read-only",
+      "ok": true,
+      "detail": "failedChecks=0, measuredTrafficSources=0"
+    },
+    {
+      "name": "traffic is not claimed without measured metrics",
+      "ok": true,
+      "detail": "trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0"
     },
     {
       "name": "SEO opportunity map has review-ready drafts",

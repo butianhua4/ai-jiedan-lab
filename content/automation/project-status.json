@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T12:26:09.333Z",
+  "generatedAt": "2026-06-06T12:34:44.846Z",
   "contentPlan": {
     "total": 500,
     "uniqueSlugs": 500,
@@ -25,23 +25,23 @@
     "publishableNow": []
   },
   "searchSetup": {
-    "googleSearchConsole": "已完成验证并提交 sitemap.xml",
-    "sitemapRule": "只收录 published 且 noindex=false 的文章"
+    "googleSearchConsole": "Traffic data is not proven by project-status. Use content/automation/traffic-evidence-audit.json for evidence.",
+    "sitemapRule": "Only status=published and noindex=false articles are eligible for public indexing."
   },
   "recommendedNextActions": [
-    "500 篇正式选题已补齐；下一步不要继续盲目生成，先进入人工抽查和小批量审核。",
-    "人工抽查每个主题中 2-3 篇 draft，再用 mark:review 进入 review。",
-    "每次最多发布 1-3 篇 review 文章，不要批量发布。",
-    "继续打磨 3 个核心工具页的移动端和转化文案。",
-    "等有真实下载或咨询后，再接 Gumroad、Lemon Squeezy、Payoneer、Wise 或 PayPal。"
+    "All planned topics have draft files; focus on manual review, source checks, and small publish batches.",
+    "Review 2-3 drafts per topic before marking anything as review.",
+    "Publish only 1-3 approved review articles per batch.",
+    "Keep improving the core tool pages and conversion copy.",
+    "Do not claim traffic until Search Console, Analytics, or another measured data source is connected and audited."
   ],
   "registrationRoadmap": {
-    "now": "当前不需要注册新平台；GitHub、Vercel、Google Search Console 已经足够继续推进。",
+    "now": "Keep using GitHub, Vercel, and local automation. Add measured traffic tooling only after privacy and ownership are confirmed.",
     "later": [
-      "有稳定访问后再开启 Vercel Web Analytics 或 Google Analytics。",
-      "有模板下载反馈后再注册 Gumroad 或 Lemon Squeezy。",
-      "有人工服务咨询后再准备 Payoneer、Wise 或 PayPal。",
-      "工具有稳定使用后再考虑 OpenAI、Anthropic 或 Vercel AI Gateway。"
+      "Add Search Console verification or measured exports before reporting impressions/clicks.",
+      "Add Vercel Web Analytics or GA only after the tracking purpose and privacy notice are confirmed.",
+      "Register Gumroad or Lemon Squeezy after template download demand is visible.",
+      "Prepare Payoneer, Wise, or PayPal after manual service inquiries appear."
     ]
   }
 }

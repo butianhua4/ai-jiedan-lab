@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T12:27:28.395Z
+Generated at: 2026-06-06T12:36:23.119Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -11,6 +11,7 @@ This digest is read-only. It summarizes automation reports and does not publish 
 - Preflight ok: true
 - SEO ok: true
 - Searchability score: 100
+- Traffic data available: false
 - Missing reports: none
 
 ## Publishing Boundary
@@ -131,6 +132,16 @@ Next review files:
 | true | 3 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 3 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
+## Traffic Evidence
+
+- Traffic data available: false
+- Can claim traffic: false
+- Claimable metrics: 0
+- Measured traffic sources: none
+- Search Console verification evidence: false
+- Live status: 200
+- Failed checks: 0
+
 ## Preflight
 
 - Checked: 3
@@ -215,7 +226,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T12:27:21.308Z
+- Latest check: 2026-06-06T12:36:00.922Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T12:26:21.271Z",
+  "generatedAt": "2026-06-06T12:34:58.415Z",
   "failures": [],
   "ok": true,
   "tasks": [
@@ -8,6 +8,7 @@
     "Generate publish readiness pack",
     "Run review candidate preflight",
     "Generate project status",
+    "Run traffic evidence audit",
     "Run SEO safety check",
     "Generate SEO opportunity map",
     "Generate content opportunity backlog",

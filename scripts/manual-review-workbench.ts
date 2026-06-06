@@ -141,6 +141,17 @@ type WaveApprovalPacket = {
   };
 };
 
+type TrafficEvidence = {
+  measuredTrafficSources: string[];
+  summary: {
+    canClaimTraffic: boolean;
+    claimableMetrics: number;
+    failedChecks: number;
+    searchConsoleVerificationEvidence: boolean;
+    trafficDataAvailable: boolean;
+  };
+};
+
 type ProjectStatus = {
   articles: { publicPublished: number; publishableNow: unknown[]; statusCounts: Record<string, number> };
 };
@@ -161,6 +172,7 @@ function main() {
   const nextReviewSourcePack = readJson<NextReviewSourcePack>("content/automation/next-review-source-pack.json");
   const publicExpansion = readJson<PublicExpansionQueue>("content/automation/public-expansion-queue.json");
   const waveApprovalPacket = readJson<WaveApprovalPacket>("content/automation/wave-approval-packet.json");
+  const trafficEvidence = readJson<TrafficEvidence>("content/automation/traffic-evidence-audit.json");
   const deploymentCoverage = readJson<DeploymentCoverage>("content/automation/ai-deployment-coverage.json");
   const promptCoverage = readJson<PromptCoverage>("content/automation/industry-prompt-coverage.json");
   const projectStatus = readJson<ProjectStatus>("content/automation/project-status.json");
@@ -263,6 +275,14 @@ function main() {
         title: item.title,
       })),
     },
+    trafficEvidence: {
+      canClaimTraffic: trafficEvidence.summary.canClaimTraffic,
+      claimableMetrics: trafficEvidence.summary.claimableMetrics,
+      failedChecks: trafficEvidence.summary.failedChecks,
+      measuredTrafficSources: trafficEvidence.measuredTrafficSources,
+      searchConsoleVerificationEvidence: trafficEvidence.summary.searchConsoleVerificationEvidence,
+      trafficDataAvailable: trafficEvidence.summary.trafficDataAvailable,
+    },
     deploymentCoverage: {
       summary: deploymentCoverage.summary,
       topTopics: deploymentCoverage.coverage.slice(0, 6).map((item) => ({
@@ -290,6 +310,7 @@ function main() {
       nextReviewSourcePack,
       publicExpansion,
       waveApprovalPacket,
+      trafficEvidence,
     ),
   };
 
@@ -311,6 +332,7 @@ function buildNextActions(
   nextReviewSourcePack: NextReviewSourcePack,
   publicExpansion: PublicExpansionQueue,
   waveApprovalPacket: WaveApprovalPacket,
+  trafficEvidence: TrafficEvidence,
 ) {
   if (projectStatus.articles.publishableNow.length > 0) return ["Stop and inspect publishableNow before adding more review candidates."];
   if (!liveSearch.ok || liveSearch.failedChecks.length > 0) return ["Fix live search surface failures before any publishing action."];
@@ -331,6 +353,7 @@ function buildNextActions(
   if (waveApprovalPacket.summary.unsafeItems > 0 || waveApprovalPacket.summary.readyForHumanReview !== waveApprovalPacket.summary.items) {
     return ["Resolve Wave 1 approval packet issues before any mark:review action."];
   }
+  if (trafficEvidence.summary.failedChecks > 0) return ["Resolve traffic evidence audit failures before reporting traffic status."];
   if (
     reviewCoverage.summary.itemsMissingOfficialSources > 0 ||
     reviewCoverage.summary.itemsMissingFactCheckQueries > 0 ||
@@ -342,6 +365,7 @@ function buildNextActions(
     "Review the current publish readiness items in docs/publish-readiness-pack.md.",
     "Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.",
+    "Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.",
     "Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.",
     "Use docs/next-review-source-pack.md to verify official sources for the roadmap's next review files.",
     "Use docs/review-coverage-report.md to inspect all planned review candidates, not only today's pack.",
@@ -411,6 +435,14 @@ function toMarkdown(payload: {
     files: string[];
     items: Array<{ file: string; readyForHumanReview: boolean; riskChecks: number; sources: number; title: string }>;
     summary: WaveApprovalPacket["summary"];
+  };
+  trafficEvidence: {
+    canClaimTraffic: boolean;
+    claimableMetrics: number;
+    failedChecks: number;
+    measuredTrafficSources: string[];
+    searchConsoleVerificationEvidence: boolean;
+    trafficDataAvailable: boolean;
   };
   deploymentCoverage: {
     summary: DeploymentCoverage["summary"];
@@ -560,6 +592,15 @@ function toMarkdown(payload: {
     ...payload.waveApprovalPacket.items.map((item) => (
       `| ${item.readyForHumanReview} | ${item.sources} | ${item.riskChecks} | ${item.title} | ${item.file} |`
     )),
+    "",
+    "## Traffic Evidence",
+    "",
+    `- Traffic data available: ${payload.trafficEvidence.trafficDataAvailable}`,
+    `- Can claim traffic: ${payload.trafficEvidence.canClaimTraffic}`,
+    `- Claimable metrics: ${payload.trafficEvidence.claimableMetrics}`,
+    `- Measured traffic sources: ${payload.trafficEvidence.measuredTrafficSources.length ? payload.trafficEvidence.measuredTrafficSources.join(", ") : "none"}`,
+    `- Search Console verification evidence: ${payload.trafficEvidence.searchConsoleVerificationEvidence}`,
+    `- Failed checks: ${payload.trafficEvidence.failedChecks}`,
     "",
     "## AI Deployment Coverage",
     "",

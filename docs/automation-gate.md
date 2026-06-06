@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-06T12:27:28.445Z
+Generated at: 2026-06-06T12:36:23.027Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 41
-- Passed: 41
+- Checks: 43
+- Passed: 43
 - Failed: 0
 
 ## Checks
@@ -28,6 +28,8 @@ Overall: PASS
 | no non-published article is indexable | PASS |  |
 | all published articles are indexable | PASS |  |
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
+| traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
+| traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
 | SEO opportunity map has review-ready drafts | PASS | reviewReadyDrafts=633 |
 | SEO opportunity map includes manual review batches | PASS | batches=6 |
 | content opportunity backlog has reviewable topics | PASS | topics=7, topicsWithReadyCandidates=7 |

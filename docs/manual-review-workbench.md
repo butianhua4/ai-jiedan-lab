@@ -1,6 +1,6 @@
 # Manual Review Workbench
 
-Generated at: 2026-06-06T12:26:18.080Z
+Generated at: 2026-06-06T12:36:12.400Z
 
 This workbench is read-only. It does not publish articles or mark drafts for review.
 
@@ -166,6 +166,15 @@ Next review files:
 | true | 3 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 3 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
+## Traffic Evidence
+
+- Traffic data available: false
+- Can claim traffic: false
+- Claimable metrics: 0
+- Measured traffic sources: none
+- Search Console verification evidence: false
+- Failed checks: 0
+
 ## AI Deployment Coverage
 
 - Topics: 10
@@ -210,6 +219,7 @@ Next review files:
 - Review the current publish readiness items in docs/publish-readiness-pack.md.
 - Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.
 - Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.
+- Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.
 - Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.
 - Use docs/next-review-source-pack.md to verify official sources for the roadmap's next review files.
 - Use docs/review-coverage-report.md to inspect all planned review candidates, not only today's pack.
