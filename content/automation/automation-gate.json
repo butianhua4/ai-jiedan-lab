@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-06T10:35:23.068Z",
+  "generatedAt": "2026-06-06T10:41:05.203Z",
   "ok": true,
   "summary": {
-    "checks": 12,
+    "checks": 13,
     "failed": 0,
-    "passed": 12
+    "passed": 13
   },
   "failed": [],
   "checks": [
@@ -41,6 +41,11 @@
       "name": "searchability check passed",
       "ok": true,
       "detail": "score=100, failed=0"
+    },
+    {
+      "name": "searchability check covers llms.txt",
+      "ok": true,
+      "detail": "checks=13"
     },
     {
       "name": "draft guardrail sanitizer is clean",

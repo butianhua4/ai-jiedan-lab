@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-06T10:35:23.068Z
+Generated at: 2026-06-06T10:41:05.203Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 12
-- Passed: 12
+- Checks: 13
+- Passed: 13
 - Failed: 0
 
 ## Checks
@@ -21,6 +21,7 @@ Overall: PASS
 | recommended review clusters are diverse | PASS | Agent and memory, Industry AI prompts, RAG and knowledge base |
 | SEO safety check passed | PASS | {"leakedDraftOrReview":[],"nonPublishedWithNoindexFalse":[],"publishedButNoindexed":[]} |
 | searchability check passed | PASS | score=100, failed=0 |
+| searchability check covers llms.txt | PASS | checks=13 |
 | draft guardrail sanitizer is clean | PASS | changedFiles=0, totalReplacements=0 |
 | no non-published article is indexable | PASS |  |
 | all published articles are indexable | PASS |  |

@@ -3,8 +3,8 @@
   "fetchBase": "https://ai-jiedan-lab.vercel.app",
   "score": 100,
   "summary": {
-    "checks": 9,
-    "passed": 9,
+    "checks": 13,
+    "passed": 13,
     "failed": 0,
     "publishedPosts": 15,
     "categorySlugs": 6,
@@ -49,6 +49,22 @@
       "name": "tool detail pages exist in data",
       "ok": true,
       "detail": "20 tools"
+    },
+    {
+      "name": "llms.txt route renders",
+      "ok": true
+    },
+    {
+      "name": "llms.txt route uses canonical base",
+      "ok": true
+    },
+    {
+      "name": "llms.txt route excludes draft slugs",
+      "ok": true
+    },
+    {
+      "name": "llms.txt route includes public article links",
+      "ok": true
     }
   ],
   "nextActions": [

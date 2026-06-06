@@ -21,7 +21,7 @@ async function main() {
   const seo = readJson<{ ok: boolean; leakedDraftOrReview: string[]; nonPublishedWithNoindexFalse: string[]; publishedButNoindexed: string[] }>(
     "content/automation/seo-check.json",
   );
-  const searchability = readJson<{ failedItems: unknown[]; score: number }>("content/automation/searchability-check.json");
+  const searchability = readJson<{ failedItems: unknown[]; score: number; summary?: { checks: number } }>("content/automation/searchability-check.json");
   const reviewPreflight = readJson<{ ok: boolean; summary: { failed: number } }>("content/automation/review-preflight.json");
   const sanitize = readJson<{ changedFiles: number; totalReplacements: number }>("content/automation/draft-guardrail-sanitize.json");
   const opportunityMap = readJson<{ totals: { reviewReadyDrafts: number } }>("content/automation/seo-opportunity-map.json");
@@ -80,6 +80,11 @@ async function main() {
       name: "searchability check passed",
       ok: searchability.failedItems.length === 0 && searchability.score >= 100,
       detail: `score=${searchability.score}, failed=${searchability.failedItems.length}`,
+    },
+    {
+      name: "searchability check covers llms.txt",
+      ok: Number(searchability.summary?.checks || 0) >= 13,
+      detail: `checks=${searchability.summary?.checks || 0}`,
     },
     {
       name: "draft guardrail sanitizer is clean",

@@ -1,6 +1,7 @@
 import { getAllPosts, getCategorySlugs, getTagSlugs } from "../lib/blog";
 import { site } from "../data/site";
 import { tools } from "../data/tools";
+import { GET as getLlmsTxt } from "../app/llms.txt/route";
 
 type Check = {
   name: string;
@@ -14,8 +15,13 @@ const canonicalBase = normalizeBase(readArg("canonical") || readArg("base") || s
 async function main() {
   const checks: Check[] = [];
   const publicPosts = getAllPosts(false);
+  const allPosts = getAllPosts(true);
   const categorySlugs = getCategorySlugs();
   const tagSlugs = getTagSlugs();
+  const llmsText = await renderLlmsTxt();
+  const draftSlugs = allPosts
+    .filter((post) => !(post.status === "published" && post.noindex === false))
+    .map((post) => post.slug);
 
   checks.push({
     name: "published posts are available",
@@ -59,6 +65,24 @@ async function main() {
     name: "tool detail pages exist in data",
     ok: tools.length >= 20,
     detail: `${tools.length} tools`,
+  });
+  checks.push({
+    name: "llms.txt route renders",
+    ok: llmsText.includes("AI 接单实验室") && llmsText.includes("Draft and noindex articles are intentionally excluded"),
+  });
+  checks.push({
+    name: "llms.txt route uses canonical base",
+    ok: llmsText.includes(`${canonicalBase}/`),
+  });
+  checks.push({
+    name: "llms.txt route excludes draft slugs",
+    ok: draftSlugs.every((slug) => !hasMarkdownUrl(llmsText, `${canonicalBase}/blog/${slug}`)),
+    detail: failedValues(draftSlugs.filter((slug) => hasMarkdownUrl(llmsText, `${canonicalBase}/blog/${slug}`)).slice(0, 10)),
+  });
+  checks.push({
+    name: "llms.txt route includes public article links",
+    ok: publicPosts.slice(0, 5).every((post) => hasMarkdownUrl(llmsText, `${canonicalBase}/blog/${post.slug}`)),
+    detail: failedValues(publicPosts.slice(0, 5).filter((post) => !hasMarkdownUrl(llmsText, `${canonicalBase}/blog/${post.slug}`)).map((post) => post.slug)),
   });
 
   if (readArg("url") || readArg("fetchBase") || readArg("base")) {
@@ -149,6 +173,11 @@ async function addLiveChecks(checks: Check[], publicSlugs: string[]) {
 async function fetchPage(path: string) {
   const response = await fetch(`${fetchBase}${path}`);
   return { status: response.status, text: await response.text() };
+}
+
+async function renderLlmsTxt() {
+  const response = getLlmsTxt();
+  return response.text();
 }
 
 function isAsciiSlug(value: string) {
