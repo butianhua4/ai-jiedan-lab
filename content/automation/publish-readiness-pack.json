@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-06-06T09:42:40.490Z",
+  "guardrails": {
+    "autoPublish": false,
+    "requiredHumanAction": "Read the article, verify factual claims and risk language, then mark review manually.",
+    "publishRule": "Only publish status=review articles, 1-3 per batch, after a second dry-run."
+  },
+  "counts": {
+    "requested": 3,
+    "included": 3
+  },
+  "items": [
+    {
+      "category": "AI 部署",
+      "description": "整理 AI API Key 安全管理清单，覆盖环境变量、最小权限、服务端调用、密钥轮换、日志脱敏、泄露应急和客户交付。",
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "internalLinks": 3,
+      "markReviewCommand": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
+      "primaryKeyword": "AI API Key 安全管理",
+      "publishConfirmCommand": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm",
+      "publishDryRunCommand": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx",
+      "qualityScore": 100,
+      "reviewFocus": [
+        "Verify the opening answer matches the title and search intent.",
+        "Check facts, tool names, limits, and platform policy wording.",
+        "Confirm risk reminders are cautionary and do not imply guaranteed outcomes.",
+        "Confirm internal links and CTA point to relevant site pages."
+      ],
+      "searchIntent": "informational",
+      "slug": "ai-api-key-security-rotation-guide",
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "wordCountChinese": 1270
+    },
+    {
+      "category": "AI 部署",
+      "description": "整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。",
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "internalLinks": 4,
+      "markReviewCommand": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
+      "primaryKeyword": "客服 AI 模型选型",
+      "publishConfirmCommand": "npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm",
+      "publishDryRunCommand": "npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx",
+      "qualityScore": 100,
+      "reviewFocus": [
+        "Verify the opening answer matches the title and search intent.",
+        "Check facts, tool names, limits, and platform policy wording.",
+        "Confirm risk reminders are cautionary and do not imply guaranteed outcomes.",
+        "Confirm internal links and CTA point to relevant site pages."
+      ],
+      "searchIntent": "informational",
+      "slug": "ai-model-selection-customer-service-guide",
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "wordCountChinese": 1232
+    },
+    {
+      "category": "AI 部署",
+      "description": "面向新手整理 Claude API rate limit reached 的排查方法，覆盖 token、RPM、上下文长度、重试、队列、降级和日志。",
+      "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+      "internalLinks": 3,
+      "markReviewCommand": "npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human",
+      "primaryKeyword": "Claude API rate limit reached",
+      "publishConfirmCommand": "npm run publish:articles -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm",
+      "publishDryRunCommand": "npm run publish:articles -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx",
+      "qualityScore": 100,
+      "reviewFocus": [
+        "Verify the opening answer matches the title and search intent.",
+        "Check facts, tool names, limits, and platform policy wording.",
+        "Confirm risk reminders are cautionary and do not imply guaranteed outcomes.",
+        "Confirm internal links and CTA point to relevant site pages."
+      ],
+      "searchIntent": "informational",
+      "slug": "claude-api-rate-limit-debug-guide",
+      "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+      "wordCountChinese": 1305
+    }
+  ]
+}
