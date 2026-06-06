@@ -34,6 +34,7 @@ const tasks: Task[] = [
   { title: "Generate public expansion queue", args: ["run", "automation:public-expansion"] },
   { title: "Generate wave approval packet", args: ["run", "automation:wave-approval-packet"] },
   { title: "Generate search intent approval packet", args: ["run", "automation:search-intent-approval"] },
+  { title: "Generate search intent wave planner", args: ["run", "automation:search-intent-waves"] },
   { title: "Generate wave publish simulation", args: ["run", "automation:wave-publish-sim"] },
   { title: "Run content cannibalization check", args: ["run", "content:cannibalization"] },
   { title: "Run content freshness check", args: ["run", "content:freshness"] },

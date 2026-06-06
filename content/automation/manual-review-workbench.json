@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T14:09:37.957Z",
+  "generatedAt": "2026-06-06T14:21:13.770Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -815,10 +815,10 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 77,
+    "filesScanned": 79,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 445
+    "watchMentions": 503
   },
   "contentIntegrity": {
     "allIssueItems": 0,
@@ -1265,6 +1265,65 @@
       }
     ]
   },
+  "searchIntentWaves": {
+    "summary": {
+      "plannedWaves": 4,
+      "itemsPerWave": 3,
+      "plannedItems": 12,
+      "readyItems": 12,
+      "uniqueFiles": 12,
+      "uniqueLanes": 6,
+      "unsafeItems": 0,
+      "sourceLaneMapItems": 233,
+      "sourceApprovalNextGapItems": 6
+    },
+    "waves": [
+      {
+        "files": [
+          "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx"
+        ],
+        "focus": "Current human approval packet",
+        "laneCount": 2,
+        "readyItems": 3,
+        "wave": 1
+      },
+      {
+        "files": [
+          "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+          "content/blog/data-analysis-ai-prompts-guide.mdx",
+          "content/blog/dify-workflow-error-handling-guide.mdx"
+        ],
+        "focus": "Cross-industry AI prompt templates and reusable prompt libraries + Business department AI workflows across sales, support, ops, HR, finance, legal, and education",
+        "laneCount": 2,
+        "readyItems": 3,
+        "wave": 2
+      },
+      {
+        "files": [
+          "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+          "content/blog/ai-agent-memory-rag-design-guide.mdx",
+          "content/blog/ai-automation-project-pricing-scope-guide.mdx"
+        ],
+        "focus": "Business department AI workflows across sales, support, ops, HR, finance, legal, and education + AI Agent deployment, tool calling, and production workflow",
+        "laneCount": 2,
+        "readyItems": 3,
+        "wave": 3
+      },
+      {
+        "files": [
+          "content/blog/customer-service-ai-prompts-guide.mdx",
+          "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "content/blog/dify-workflow-vs-agent-guide.mdx"
+        ],
+        "focus": "RAG, knowledge base, and Agent memory + Large model deployment, LLM serving, and GPU infrastructure + Dify, n8n, no-code AI automation, and workflow deployment",
+        "laneCount": 3,
+        "readyItems": 3,
+        "wave": 4
+      }
+    ]
+  },
   "promptCoverage": {
     "summary": {
       "currentPackPromptItems": 1,
@@ -1328,6 +1387,7 @@
     "Use docs/structured-data-readiness-audit.md to review metadata and JSON-LD readiness.",
     "Use docs/search-intent-lane-map.md to choose broad, high-search-intent lanes beyond basic web deployment.",
     "Use docs/search-intent-approval-packet.md as the concrete current-wave and next-gap approval queue.",
+    "Use docs/search-intent-wave-planner.md as the continuous multi-wave review queue across prompt, Agent, RAG, and model deployment lanes.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.",
     "Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.",
     "Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.",

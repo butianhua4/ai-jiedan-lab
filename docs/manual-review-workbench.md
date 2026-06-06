@@ -1,6 +1,6 @@
 # Manual Review Workbench
 
-Generated at: 2026-06-06T14:09:37.957Z
+Generated at: 2026-06-06T14:21:13.770Z
 
 This workbench is read-only. It does not publish articles or mark drafts for review.
 
@@ -192,8 +192,8 @@ Next review files:
 - Search Console verification evidence: false
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 77
-- Traffic claim watch mentions: 445
+- Traffic claim files scanned: 79
+- Traffic claim watch mentions: 503
 
 ## Content Integrity
 
@@ -304,6 +304,22 @@ Next review files:
 | true | 358 | AI Agent deployment, tool calling, and production workflow | AI Agent 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | true | 358 | AI Agent deployment, tool calling, and production workflow | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 
+## Search Intent Wave Planner
+
+- Planned waves: 4
+- Planned items: 12
+- Ready items: 12
+- Unique files: 12
+- Unique lanes: 6
+- Unsafe items: 0
+
+| Wave | Ready | Lanes | Focus | Files |
+| --- | --- | --- | --- | --- |
+| 1 | 3 | 2 | Current human approval packet | content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 2 | 3 | 2 | Cross-industry AI prompt templates and reusable prompt libraries + Business department AI workflows across sales, support, ops, HR, finance, legal, and education | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx |
+| 3 | 3 | 2 | Business department AI workflows across sales, support, ops, HR, finance, legal, and education + AI Agent deployment, tool calling, and production workflow | content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 4 | 3 | 3 | RAG, knowledge base, and Agent memory + Large model deployment, LLM serving, and GPU infrastructure + Dify, n8n, no-code AI automation, and workflow deployment | content/blog/customer-service-ai-prompts-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx |
+
 ## Industry Prompt Coverage
 
 - Industries: 16
@@ -336,6 +352,7 @@ Next review files:
 - Use docs/structured-data-readiness-audit.md to review metadata and JSON-LD readiness.
 - Use docs/search-intent-lane-map.md to choose broad, high-search-intent lanes beyond basic web deployment.
 - Use docs/search-intent-approval-packet.md as the concrete current-wave and next-gap approval queue.
+- Use docs/search-intent-wave-planner.md as the continuous multi-wave review queue across prompt, Agent, RAG, and model deployment lanes.
 - Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.
 - Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.
 - Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.

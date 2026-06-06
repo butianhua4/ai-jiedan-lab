@@ -301,6 +301,24 @@ type SearchIntentApproval = {
   };
 };
 
+type SearchIntentWaves = {
+  summary: {
+    plannedItems: number;
+    plannedWaves: number;
+    readyItems: number;
+    uniqueFiles: number;
+    uniqueLanes: number;
+    unsafeItems: number;
+  };
+  waves: Array<{
+    files: string[];
+    focus: string;
+    laneCount: number;
+    readyItems: number;
+    wave: number;
+  }>;
+};
+
 type ProjectStatus = {
   articles: { publicPublished: number; publishableNow: unknown[]; statusCounts: Record<string, number> };
 };
@@ -330,6 +348,7 @@ function main() {
   const structuredData = readJson<StructuredData>("content/automation/structured-data-readiness-audit.json");
   const searchIntentLanes = readJson<SearchIntentLanes>("content/automation/search-intent-lane-map.json");
   const searchIntentApproval = readJson<SearchIntentApproval>("content/automation/search-intent-approval-packet.json");
+  const searchIntentWaves = readJson<SearchIntentWaves>("content/automation/search-intent-wave-planner.json");
   const deploymentCoverage = readJson<DeploymentCoverage>("content/automation/ai-deployment-coverage.json");
   const promptCoverage = readJson<PromptCoverage>("content/automation/industry-prompt-coverage.json");
   const projectStatus = readJson<ProjectStatus>("content/automation/project-status.json");
@@ -525,6 +544,16 @@ function main() {
         title: item.title,
       })),
     },
+    searchIntentWaves: {
+      summary: searchIntentWaves.summary,
+      waves: searchIntentWaves.waves.slice(0, 4).map((item) => ({
+        files: item.files,
+        focus: item.focus,
+        laneCount: item.laneCount,
+        readyItems: item.readyItems,
+        wave: item.wave,
+      })),
+    },
     promptCoverage: {
       summary: promptCoverage.summary,
       topIndustries: promptCoverage.coverage.slice(0, 6).map((item) => ({
@@ -552,6 +581,7 @@ function main() {
       structuredData,
       searchIntentLanes,
       searchIntentApproval,
+      searchIntentWaves,
     ),
   };
 
@@ -582,6 +612,7 @@ function buildNextActions(
   structuredData: StructuredData,
   searchIntentLanes: SearchIntentLanes,
   searchIntentApproval: SearchIntentApproval,
+  searchIntentWaves: SearchIntentWaves,
 ) {
   if (projectStatus.articles.publishableNow.length > 0) return ["Stop and inspect publishableNow before adding more review candidates."];
   if (!liveSearch.ok || liveSearch.failedChecks.length > 0) return ["Fix live search surface failures before any publishing action."];
@@ -613,6 +644,7 @@ function buildNextActions(
   if (structuredData.summary.waveItemsWithBlockingIssues > 0) return ["Fix Wave 1 structured data readiness blockers before publishing."];
   if (searchIntentLanes.summary.lanesWithReadyDrafts !== searchIntentLanes.summary.lanes) return ["Regenerate search intent lane map and ensure every broad lane has ready draft candidates."];
   if (searchIntentApproval.summary.unsafeItems > 0) return ["Resolve search intent approval packet safety issues before manual review."];
+  if (searchIntentWaves.summary.unsafeItems > 0) return ["Resolve search intent wave planner safety issues before manual review."];
   if (
     reviewCoverage.summary.itemsMissingOfficialSources > 0 ||
     reviewCoverage.summary.itemsMissingFactCheckQueries > 0 ||
@@ -630,6 +662,7 @@ function buildNextActions(
     "Use docs/structured-data-readiness-audit.md to review metadata and JSON-LD readiness.",
     "Use docs/search-intent-lane-map.md to choose broad, high-search-intent lanes beyond basic web deployment.",
     "Use docs/search-intent-approval-packet.md as the concrete current-wave and next-gap approval queue.",
+    "Use docs/search-intent-wave-planner.md as the continuous multi-wave review queue across prompt, Agent, RAG, and model deployment lanes.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public articles.",
     "Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim.",
     "Use docs/review-priority-roadmap.md as the merged priority list before deciding the next manual review batch.",
@@ -780,6 +813,16 @@ function toMarkdown(payload: {
       title: string;
     }>;
     summary: SearchIntentApproval["summary"];
+  };
+  searchIntentWaves: {
+    summary: SearchIntentWaves["summary"];
+    waves: Array<{
+      files: string[];
+      focus: string;
+      laneCount: number;
+      readyItems: number;
+      wave: number;
+    }>;
   };
   promptCoverage: {
     summary: PromptCoverage["summary"];
@@ -1049,6 +1092,21 @@ function toMarkdown(payload: {
     "| --- | --- | --- | --- | --- | --- |",
     ...payload.searchIntentApproval.nextGapItems.map((item) => (
       `| ${item.readyForHumanReview} | ${item.lanePriorityScore} | ${item.laneTitle} | ${item.primaryKeyword} | ${item.title} | ${item.file} |`
+    )),
+    "",
+    "## Search Intent Wave Planner",
+    "",
+    `- Planned waves: ${payload.searchIntentWaves.summary.plannedWaves}`,
+    `- Planned items: ${payload.searchIntentWaves.summary.plannedItems}`,
+    `- Ready items: ${payload.searchIntentWaves.summary.readyItems}`,
+    `- Unique files: ${payload.searchIntentWaves.summary.uniqueFiles}`,
+    `- Unique lanes: ${payload.searchIntentWaves.summary.uniqueLanes}`,
+    `- Unsafe items: ${payload.searchIntentWaves.summary.unsafeItems}`,
+    "",
+    "| Wave | Ready | Lanes | Focus | Files |",
+    "| --- | --- | --- | --- | --- |",
+    ...payload.searchIntentWaves.waves.map((item) => (
+      `| ${item.wave} | ${item.readyItems} | ${item.laneCount} | ${item.focus} | ${item.files.join("<br>")} |`
     )),
     "",
     "## Industry Prompt Coverage",

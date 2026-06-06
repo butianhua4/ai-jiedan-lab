@@ -94,6 +94,18 @@ async function main() {
       wave: number;
     };
   }>("content/automation/search-intent-approval-packet.json");
+  const searchIntentWaves = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    summary: {
+      plannedItems: number;
+      plannedWaves: number;
+      readyItems: number;
+      uniqueFiles: number;
+      uniqueLanes: number;
+      unsafeItems: number;
+    };
+    waves?: Array<{ items?: Array<{ readyForHumanReview?: boolean; safeDraft?: boolean; sourceTargets?: unknown[]; riskChecks?: unknown[] }> }>;
+  }>("content/automation/search-intent-wave-planner.json");
   const cannibalization = readJson<{
     guardrails: { autoPublish: boolean };
     summary: { articleCount: number; conflicts: number; reviewBatchConflicts: number };
@@ -564,6 +576,32 @@ async function main() {
           ),
         ),
       detail: `unsafe=${searchIntentApproval.summary.unsafeItems}, currentReady=${searchIntentApproval.summary.currentWaveReady}, nextGap=${searchIntentApproval.summary.nextGapItems}`,
+    },
+    {
+      name: "search intent wave planner is read-only and continuous",
+      ok:
+        searchIntentWaves.guardrails.autoEditArticles === false &&
+        searchIntentWaves.guardrails.autoMarkReview === false &&
+        searchIntentWaves.guardrails.autoPublish === false &&
+        searchIntentWaves.summary.plannedWaves >= 4 &&
+        searchIntentWaves.summary.plannedItems >= 12 &&
+        searchIntentWaves.summary.uniqueFiles === searchIntentWaves.summary.plannedItems &&
+        searchIntentWaves.summary.uniqueLanes >= 4,
+      detail: `waves=${searchIntentWaves.summary.plannedWaves}, items=${searchIntentWaves.summary.plannedItems}, files=${searchIntentWaves.summary.uniqueFiles}, lanes=${searchIntentWaves.summary.uniqueLanes}`,
+    },
+    {
+      name: "search intent wave planner keeps all items safe for manual review",
+      ok:
+        searchIntentWaves.summary.unsafeItems === 0 &&
+        searchIntentWaves.summary.readyItems === searchIntentWaves.summary.plannedItems &&
+        Boolean(
+          searchIntentWaves.waves?.every((wave) =>
+            wave.items?.every(
+              (item) => item.readyForHumanReview === true && item.safeDraft === true && (item.sourceTargets?.length || 0) >= 2 && (item.riskChecks?.length || 0) >= 4,
+            ),
+          ),
+        ),
+      detail: `unsafe=${searchIntentWaves.summary.unsafeItems}, ready=${searchIntentWaves.summary.readyItems}, planned=${searchIntentWaves.summary.plannedItems}`,
     },
     {
       name: "content cannibalization check generated warning report",

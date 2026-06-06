@@ -50,7 +50,8 @@
     "seo:snippets": "tsx scripts/search-snippet-readiness-audit.ts",
     "seo:schema": "tsx scripts/structured-data-readiness-audit.ts",
     "content:search-intent-lanes": "tsx scripts/search-intent-lane-map.ts",
-    "automation:search-intent-approval": "tsx scripts/search-intent-approval-packet.ts"
+    "automation:search-intent-approval": "tsx scripts/search-intent-approval-packet.ts",
+    "automation:search-intent-waves": "tsx scripts/search-intent-wave-planner.ts"
   },
   "dependencies": {
     "fast-glob": "^3.3.3",
