@@ -155,7 +155,11 @@ function opportunityToLane(item: ContentOpportunity, currentPackFiles: Set<strin
     rationale: item.why,
     reviewFocus: item.reviewFocus,
     searchQueries: item.searchQueries,
-    sourceTargets: ["Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval."],
+    sourceTargets: [
+      "OpenAI API docs: https://platform.openai.com/docs",
+      "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+      "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+    ],
     workflowAngles: ["search intent", "fact review", "risk language", "internal links"],
   };
 }

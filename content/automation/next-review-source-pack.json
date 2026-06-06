@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T15:23:29.654Z",
+  "generatedAt": "2026-06-06T15:37:58.825Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -115,6 +115,8 @@
         "LangChain docs: https://python.langchain.com/docs",
         "LlamaIndex docs: https://docs.llamaindex.ai",
         "Hugging Face docs: https://huggingface.co/docs",
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
       ],
       "plannedBatch": true,
@@ -176,9 +178,12 @@
         "LangChain docs: https://python.langchain.com/docs",
         "LlamaIndex docs: https://docs.llamaindex.ai",
         "Hugging Face docs: https://huggingface.co/docs",
+        "OpenAI API docs: https://platform.openai.com/docs",
         "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "Dify docs: https://docs.dify.ai",
-        "n8n docs: https://docs.n8n.io"
+        "n8n docs: https://docs.n8n.io",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
       ],
       "plannedBatch": true,
       "primaryKeyword": "AI 自动化项目报价",
@@ -238,7 +243,10 @@
       "officialSourceTargets": [
         "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-        "LangChain docs: https://python.langchain.com/docs"
+        "LangChain docs: https://python.langchain.com/docs",
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
       ],
       "plannedBatch": true,
       "primaryKeyword": "AI Agent 部署",
@@ -295,9 +303,10 @@
       "lane": "content-backlog: 全行业 AI 提示词和工作流模板",
       "lanePriorityScore": 334,
       "officialSourceTargets": [
-        "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.",
         "OpenAI API docs: https://platform.openai.com/docs",
-        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
       ],
       "plannedBatch": true,
       "primaryKeyword": "全行业 AI 提示词模板",
@@ -353,9 +362,10 @@
       "lane": "content-backlog: 全行业 AI 提示词和工作流模板",
       "lanePriorityScore": 334,
       "officialSourceTargets": [
-        "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.",
         "OpenAI API docs: https://platform.openai.com/docs",
-        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
       ],
       "plannedBatch": true,
       "primaryKeyword": "团队 AI 提示词库",
@@ -410,9 +420,9 @@
       "lane": "content-backlog: 全行业 AI 提示词和工作流模板",
       "lanePriorityScore": 334,
       "officialSourceTargets": [
-        "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.",
         "OpenAI API docs: https://platform.openai.com/docs",
-        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs"
       ],
       "plannedBatch": true,
       "primaryKeyword": "数据分析 AI 提示词",
@@ -467,9 +477,9 @@
       "lane": "content-backlog: 全行业 AI 提示词和工作流模板",
       "lanePriorityScore": 334,
       "officialSourceTargets": [
-        "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.",
         "OpenAI API docs: https://platform.openai.com/docs",
-        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs"
       ],
       "plannedBatch": false,
       "primaryKeyword": "教育 AI 提示词",
@@ -526,8 +536,10 @@
         "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "LangChain docs: https://python.langchain.com/docs",
+        "OpenAI API docs: https://platform.openai.com/docs",
         "Dify docs: https://docs.dify.ai",
-        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
       ],
       "plannedBatch": false,
       "primaryKeyword": "Dify 工作流错误处理",
@@ -587,7 +599,9 @@
         "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "LangChain docs: https://python.langchain.com/docs",
-        "Dify docs: https://docs.dify.ai"
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "Dify docs: https://docs.dify.ai",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
       ],
       "plannedBatch": false,
       "primaryKeyword": "Dify Workflow 和 Agent 区别",
@@ -648,6 +662,7 @@
         "LlamaIndex docs: https://docs.llamaindex.ai",
         "Hugging Face docs: https://huggingface.co/docs",
         "OpenAI API docs: https://platform.openai.com/docs",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "n8n docs: https://docs.n8n.io",
         "Ollama docs: https://docs.ollama.com"
       ],
@@ -709,7 +724,9 @@
         "Ollama docs: https://docs.ollama.com",
         "vLLM docs: https://docs.vllm.ai",
         "Hugging Face docs: https://huggingface.co/docs",
+        "OpenAI API docs: https://platform.openai.com/docs",
         "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
       ],
       "plannedBatch": false,
@@ -769,7 +786,9 @@
       "officialSourceTargets": [
         "Ollama docs: https://docs.ollama.com",
         "vLLM docs: https://docs.vllm.ai",
-        "Hugging Face docs: https://huggingface.co/docs"
+        "Hugging Face docs: https://huggingface.co/docs",
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs"
       ],
       "plannedBatch": false,
       "primaryKeyword": "Docker 使用 NVIDIA GPU",
@@ -824,9 +843,10 @@
       "lane": "content-backlog: Ollama、vLLM 和开源模型本地部署",
       "lanePriorityScore": 300,
       "officialSourceTargets": [
-        "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.",
-        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
         "vLLM docs: https://docs.vllm.ai",
         "Hugging Face docs: https://huggingface.co/docs",
         "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
@@ -891,7 +911,9 @@
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "Google AI docs: https://ai.google.dev/docs",
         "Dify docs: https://docs.dify.ai",
-        "n8n docs: https://docs.n8n.io"
+        "n8n docs: https://docs.n8n.io",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
       ],
       "plannedBatch": false,
       "primaryKeyword": "AI API Key 安全管理",
@@ -949,7 +971,10 @@
       "officialSourceTargets": [
         "OpenAI API docs: https://platform.openai.com/docs",
         "Anthropic docs: https://docs.anthropic.com",
-        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents"
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
       ],
       "plannedBatch": false,
       "primaryKeyword": "Claude API rate limit reached",
@@ -1007,7 +1032,9 @@
         "OpenAI API docs: https://platform.openai.com/docs",
         "Anthropic docs: https://docs.anthropic.com",
         "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
-        "Google AI docs: https://ai.google.dev/docs"
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "Google AI docs: https://ai.google.dev/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
       ],
       "plannedBatch": false,
       "primaryKeyword": "Gemini API 限流",
@@ -1130,6 +1157,7 @@
         "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
         "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/",
         "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
         "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
       ],
       "plannedBatch": false,

@@ -1,6 +1,6 @@
 # Next Review Source Pack
 
-Generated at: 2026-06-06T15:23:29.654Z
+Generated at: 2026-06-06T15:37:58.825Z
 
 This pack is read-only. It prepares official-source, fact-check, approval, and risk-review work for the roadmap's next review files.
 
@@ -27,24 +27,24 @@ This pack is read-only. It prepares official-source, fact-check, approval, and r
 | Safe | Current | Planned | Score | Sources | Queries | Risk checks | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | false | true | 100 | 8 | 8 | 8 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| true | true | true | 100 | 5 | 8 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| true | false | true | 100 | 7 | 8 | 7 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
-| true | true | true | 100 | 3 | 8 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | true | true | 100 | 3 | 9 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | false | true | 100 | 3 | 9 | 5 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
+| true | true | true | 100 | 7 | 8 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | false | true | 100 | 10 | 8 | 7 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| true | true | true | 100 | 6 | 8 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | true | true | 100 | 4 | 9 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | false | true | 100 | 4 | 9 | 5 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
 | true | false | true | 100 | 3 | 9 | 5 | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
 | true | false | false | 100 | 3 | 9 | 5 | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
-| true | false | false | 100 | 5 | 8 | 7 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
-| true | false | false | 100 | 4 | 8 | 6 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
-| true | false | true | 100 | 7 | 8 | 6 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
-| true | false | false | 100 | 5 | 8 | 7 | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 | content/blog/local-llm-vram-not-enough-guide.mdx |
-| true | false | false | 100 | 3 | 8 | 5 | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
-| true | false | false | 100 | 6 | 8 | 7 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
-| true | false | false | 100 | 7 | 8 | 6 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
-| true | false | false | 100 | 3 | 8 | 5 | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
-| true | false | false | 100 | 4 | 8 | 5 | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | content/blog/gemini-api-rate-limit-debug-guide.mdx |
+| true | false | false | 100 | 7 | 8 | 7 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| true | false | false | 100 | 6 | 8 | 6 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
+| true | false | true | 100 | 8 | 8 | 6 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| true | false | false | 100 | 7 | 8 | 7 | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 | content/blog/local-llm-vram-not-enough-guide.mdx |
+| true | false | false | 100 | 5 | 8 | 5 | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
+| true | false | false | 100 | 7 | 8 | 7 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| true | false | false | 100 | 9 | 8 | 6 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| true | false | false | 100 | 6 | 8 | 5 | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
+| true | false | false | 100 | 6 | 8 | 5 | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | content/blog/gemini-api-rate-limit-debug-guide.mdx |
 | true | false | false | 100 | 8 | 8 | 6 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
-| true | false | false | 100 | 7 | 8 | 5 | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
+| true | false | false | 100 | 8 | 8 | 5 | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
 
 ## AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界
 
@@ -146,6 +146,8 @@ Official source targets:
 - LangChain docs: https://python.langchain.com/docs
 - LlamaIndex docs: https://docs.llamaindex.ai
 - Hugging Face docs: https://huggingface.co/docs
+- OpenAI API docs: https://platform.openai.com/docs
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
 - OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 
 Fact-check queries:
@@ -209,9 +211,12 @@ Official source targets:
 - LangChain docs: https://python.langchain.com/docs
 - LlamaIndex docs: https://docs.llamaindex.ai
 - Hugging Face docs: https://huggingface.co/docs
+- OpenAI API docs: https://platform.openai.com/docs
 - OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
 - Dify docs: https://docs.dify.ai
 - n8n docs: https://docs.n8n.io
+- OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 
 Fact-check queries:
 
@@ -274,6 +279,9 @@ Official source targets:
 - OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
 - Vercel AI SDK docs: https://ai-sdk.dev/docs
 - LangChain docs: https://python.langchain.com/docs
+- OpenAI API docs: https://platform.openai.com/docs
+- OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
+- OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 
 Fact-check queries:
 
@@ -331,9 +339,10 @@ Approval checklist:
 
 Official source targets:
 
-- Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.
 - OpenAI API docs: https://platform.openai.com/docs
 - OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
+- OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
 
 Fact-check queries:
 
@@ -391,9 +400,10 @@ Approval checklist:
 
 Official source targets:
 
-- Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.
 - OpenAI API docs: https://platform.openai.com/docs
 - OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
+- OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
 
 Fact-check queries:
 
@@ -450,9 +460,9 @@ Approval checklist:
 
 Official source targets:
 
-- Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.
 - OpenAI API docs: https://platform.openai.com/docs
 - OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
 
 Fact-check queries:
 
@@ -509,9 +519,9 @@ Approval checklist:
 
 Official source targets:
 
-- Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.
 - OpenAI API docs: https://platform.openai.com/docs
 - OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
 
 Fact-check queries:
 
@@ -571,8 +581,10 @@ Official source targets:
 - OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
 - Vercel AI SDK docs: https://ai-sdk.dev/docs
 - LangChain docs: https://python.langchain.com/docs
+- OpenAI API docs: https://platform.openai.com/docs
 - Dify docs: https://docs.dify.ai
 - OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
+- OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 
 Fact-check queries:
 
@@ -634,7 +646,9 @@ Official source targets:
 - OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
 - Vercel AI SDK docs: https://ai-sdk.dev/docs
 - LangChain docs: https://python.langchain.com/docs
+- OpenAI API docs: https://platform.openai.com/docs
 - Dify docs: https://docs.dify.ai
+- OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
 
 Fact-check queries:
 
@@ -697,6 +711,7 @@ Official source targets:
 - LlamaIndex docs: https://docs.llamaindex.ai
 - Hugging Face docs: https://huggingface.co/docs
 - OpenAI API docs: https://platform.openai.com/docs
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
 - n8n docs: https://docs.n8n.io
 - Ollama docs: https://docs.ollama.com
 
@@ -760,7 +775,9 @@ Official source targets:
 - Ollama docs: https://docs.ollama.com
 - vLLM docs: https://docs.vllm.ai
 - Hugging Face docs: https://huggingface.co/docs
+- OpenAI API docs: https://platform.openai.com/docs
 - OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
 - OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
 
 Fact-check queries:
@@ -823,6 +840,8 @@ Official source targets:
 - Ollama docs: https://docs.ollama.com
 - vLLM docs: https://docs.vllm.ai
 - Hugging Face docs: https://huggingface.co/docs
+- OpenAI API docs: https://platform.openai.com/docs
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
 
 Fact-check queries:
 
@@ -879,9 +898,10 @@ Approval checklist:
 
 Official source targets:
 
-- Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.
-- OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
+- OpenAI API docs: https://platform.openai.com/docs
+- OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 - Vercel AI SDK docs: https://ai-sdk.dev/docs
+- OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
 - vLLM docs: https://docs.vllm.ai
 - Hugging Face docs: https://huggingface.co/docs
 - OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
@@ -949,6 +969,8 @@ Official source targets:
 - Google AI docs: https://ai.google.dev/docs
 - Dify docs: https://docs.dify.ai
 - n8n docs: https://docs.n8n.io
+- OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
+- OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 
 Fact-check queries:
 
@@ -1009,6 +1031,9 @@ Official source targets:
 - OpenAI API docs: https://platform.openai.com/docs
 - Anthropic docs: https://docs.anthropic.com
 - OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
+- OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
+- OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 
 Fact-check queries:
 
@@ -1068,7 +1093,9 @@ Official source targets:
 - OpenAI API docs: https://platform.openai.com/docs
 - Anthropic docs: https://docs.anthropic.com
 - OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
 - Google AI docs: https://ai.google.dev/docs
+- OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
 
 Fact-check queries:
 
@@ -1195,6 +1222,7 @@ Official source targets:
 - Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615
 - Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/
 - OpenAI API docs: https://platform.openai.com/docs
+- OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
 - OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 
 Fact-check queries:

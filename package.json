@@ -47,6 +47,7 @@
     "live:check": "tsx scripts/live-site-check.ts",
     "content:integrity": "tsx scripts/content-integrity-audit.ts",
     "content:internal-links": "tsx scripts/internal-link-opportunity-audit.ts",
+    "content:source-health": "tsx scripts/source-target-health-audit.ts",
     "seo:snippets": "tsx scripts/search-snippet-readiness-audit.ts",
     "seo:schema": "tsx scripts/structured-data-readiness-audit.ts",
     "content:search-intent-lanes": "tsx scripts/search-intent-lane-map.ts",

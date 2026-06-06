@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-06T15:25:07.561Z",
+  "generatedAt": "2026-06-06T15:39:54.784Z",
   "ok": true,
   "summary": {
-    "checks": 73,
+    "checks": 75,
     "failed": 0,
-    "passed": 73
+    "passed": 75
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=91, unsafeClaims=0, watchMentions=546"
+      "detail": "filesScanned=93, unsafeClaims=0, watchMentions=546"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -111,6 +111,16 @@
       "name": "internal link opportunity audit has public suggestions for Wave 1",
       "ok": true,
       "detail": "wave=3, waveMissing=0, candidateMissing=0"
+    },
+    {
+      "name": "source target health audit is read-only and covers review source scopes",
+      "ok": true,
+      "detail": "current=3, publicGap=8, next=19, files=20"
+    },
+    {
+      "name": "source target health audit has reachable URLs for every covered review file",
+      "ok": true,
+      "detail": "checked=18, ok=18, failed=0, missingTargets=0, filesWithoutReachable=0"
     },
     {
       "name": "search snippet readiness audit is read-only and covers public plus expansion items",

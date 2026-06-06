@@ -236,6 +236,27 @@ type InternalLinks = {
   };
 };
 
+type SourceHealth = {
+  failedChecks: Array<{ error?: string; finalUrl?: string; ok: boolean; references: unknown[]; status?: number; url: string }>;
+  filesWithoutReachableSource: Array<{ file: string; reachableSources: number; sourceTargets: number; title: string }>;
+  redirectedChecks: Array<{ finalUrl?: string; references: unknown[]; status?: number; url: string }>;
+  summary: {
+    checkedUrls: number;
+    currentReviewFiles: number;
+    failedUrls: number;
+    filesCovered: number;
+    filesWithReachableSource: number;
+    filesWithoutReachableSource: number;
+    missingUrlTargets: number;
+    nextSourcePackFiles: number;
+    okUrls: number;
+    publicGapDecisionFiles: number;
+    redirectedUrls: number;
+    sourceReferences: number;
+    uniqueUrls: number;
+  };
+};
+
 type SearchSnippets = {
   summary: {
     blockingItems: number;
@@ -536,6 +557,7 @@ const reports = {
   trafficClaimGuard: readJson<TrafficClaimGuard>("content/automation/traffic-claim-guard.json"),
   contentIntegrity: readJson<ContentIntegrity>("content/automation/content-integrity-audit.json"),
   internalLinks: readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json"),
+  sourceHealth: readJson<SourceHealth>("content/automation/source-target-health-audit.json"),
   searchSnippets: readJson<SearchSnippets>("content/automation/search-snippet-readiness-audit.json"),
   structuredData: readJson<StructuredData>("content/automation/structured-data-readiness-audit.json"),
   searchIntentLanes: readJson<SearchIntentLanes>("content/automation/search-intent-lane-map.json"),
@@ -575,6 +597,24 @@ const payload = {
   },
   contentIntegrity: reports.contentIntegrity.data?.summary ?? null,
   internalLinks: reports.internalLinks.data?.summary ?? null,
+  sourceHealth: {
+    checkedUrls: reports.sourceHealth.data?.summary.checkedUrls ?? null,
+    currentReviewFiles: reports.sourceHealth.data?.summary.currentReviewFiles ?? null,
+    failedChecks: reports.sourceHealth.data?.failedChecks.slice(0, 8) ?? [],
+    failedUrls: reports.sourceHealth.data?.summary.failedUrls ?? null,
+    filesCovered: reports.sourceHealth.data?.summary.filesCovered ?? null,
+    filesWithReachableSource: reports.sourceHealth.data?.summary.filesWithReachableSource ?? null,
+    filesWithoutReachableSource: reports.sourceHealth.data?.summary.filesWithoutReachableSource ?? null,
+    filesWithoutReachableSourceList: reports.sourceHealth.data?.filesWithoutReachableSource.slice(0, 8) ?? [],
+    missingUrlTargets: reports.sourceHealth.data?.summary.missingUrlTargets ?? null,
+    nextSourcePackFiles: reports.sourceHealth.data?.summary.nextSourcePackFiles ?? null,
+    okUrls: reports.sourceHealth.data?.summary.okUrls ?? null,
+    publicGapDecisionFiles: reports.sourceHealth.data?.summary.publicGapDecisionFiles ?? null,
+    redirectedChecks: reports.sourceHealth.data?.redirectedChecks.slice(0, 8) ?? [],
+    redirectedUrls: reports.sourceHealth.data?.summary.redirectedUrls ?? null,
+    sourceReferences: reports.sourceHealth.data?.summary.sourceReferences ?? null,
+    uniqueUrls: reports.sourceHealth.data?.summary.uniqueUrls ?? null,
+  },
   searchSnippets: reports.searchSnippets.data?.summary ?? null,
   structuredData: reports.structuredData.data?.summary ?? null,
   publishingBoundary: {
@@ -858,6 +898,9 @@ function buildNextActions() {
   if (!reports.internalLinks.data || reports.internalLinks.data.summary.waveItemsMissingPublicLinkSuggestion > 0) {
     return ["Open docs/internal-link-opportunity-audit.md and add or approve internal link suggestions for Wave 1 before publishing."];
   }
+  if (!reports.sourceHealth.data || reports.sourceHealth.data.summary.filesWithoutReachableSource > 0 || reports.sourceHealth.data.summary.missingUrlTargets > 0) {
+    return ["Open docs/source-target-health-audit.md and replace missing or unreachable official source targets before manual review."];
+  }
   if (!reports.searchSnippets.data || reports.searchSnippets.data.summary.waveItemsWithBlockingIssues > 0) {
     return ["Open docs/search-snippet-readiness-audit.md and fix Wave 1 title, description, slug, or indexing blockers."];
   }
@@ -901,6 +944,7 @@ function buildNextActions() {
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.",
     "Use docs/public-coverage-gap-decision-pack.md to review the 8 broad-demand public gap candidates and their optimization actions.",
     "Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.",
+    "Use docs/source-target-health-audit.md to confirm official source links are reachable before approving fast-changing AI guidance.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
     "If approved by a human, run mark:review with --confirm-human for approved files only.",
     "Publish only status=review articles in a 1-3 article batch after a dry-run.",
@@ -960,6 +1004,34 @@ function toMarkdown(data: typeof payload) {
     data.internalLinks
       ? `- Wave items missing suggestions: ${data.internalLinks.waveItemsMissingPublicLinkSuggestion}`
       : "- Wave items missing suggestions: missing",
+    "",
+    "## Source Target Health",
+    "",
+    `- Files covered: ${data.sourceHealth.filesCovered}`,
+    `- Files with reachable source: ${data.sourceHealth.filesWithReachableSource}`,
+    `- Files without reachable source: ${data.sourceHealth.filesWithoutReachableSource}`,
+    `- Current review files: ${data.sourceHealth.currentReviewFiles}`,
+    `- Public gap decision files: ${data.sourceHealth.publicGapDecisionFiles}`,
+    `- Next source-pack files: ${data.sourceHealth.nextSourcePackFiles}`,
+    `- Source references: ${data.sourceHealth.sourceReferences}`,
+    `- Unique URLs: ${data.sourceHealth.uniqueUrls}`,
+    `- Checked URLs: ${data.sourceHealth.checkedUrls}`,
+    `- OK URLs: ${data.sourceHealth.okUrls}`,
+    `- Failed URLs: ${data.sourceHealth.failedUrls}`,
+    `- Missing URL targets: ${data.sourceHealth.missingUrlTargets}`,
+    `- Redirected URLs: ${data.sourceHealth.redirectedUrls}`,
+    "",
+    "Failed checks:",
+    "",
+    ...(data.sourceHealth.failedChecks.length
+      ? data.sourceHealth.failedChecks.map((item) => `- ${item.url} (${item.status || item.error || "unknown"})`)
+      : ["- none"]),
+    "",
+    "Redirect samples:",
+    "",
+    ...(data.sourceHealth.redirectedChecks.length
+      ? data.sourceHealth.redirectedChecks.map((item) => `- ${item.url} -> ${item.finalUrl || ""}`)
+      : ["- none"]),
     "",
     "## Search Snippet Readiness",
     "",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T15:23:35.695Z",
+  "generatedAt": "2026-06-06T15:38:22.625Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -46,7 +46,7 @@
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "humanReviewRequired": true,
       "noindex": true,
-      "officialSourceTargets": 5,
+      "officialSourceTargets": 7,
       "projectedPublishableAfterHumanApproval": true,
       "qualityIssues": [],
       "qualityScore": 100,
@@ -66,7 +66,7 @@
       "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
       "humanReviewRequired": true,
       "noindex": true,
-      "officialSourceTargets": 3,
+      "officialSourceTargets": 6,
       "projectedPublishableAfterHumanApproval": true,
       "qualityIssues": [],
       "qualityScore": 100,
@@ -86,7 +86,7 @@
       "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
       "humanReviewRequired": true,
       "noindex": true,
-      "officialSourceTargets": 3,
+      "officialSourceTargets": 4,
       "projectedPublishableAfterHumanApproval": true,
       "qualityIssues": [],
       "qualityScore": 100,

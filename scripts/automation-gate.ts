@@ -345,6 +345,23 @@ async function main() {
       waveItemsMissingPublicLinkSuggestion: number;
     };
   }>("content/automation/internal-link-opportunity-audit.json");
+  const sourceHealth = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    summary: {
+      checkedUrls: number;
+      currentReviewFiles: number;
+      failedUrls: number;
+      filesCovered: number;
+      filesWithReachableSource: number;
+      filesWithoutReachableSource: number;
+      missingUrlTargets: number;
+      nextSourcePackFiles: number;
+      okUrls: number;
+      publicGapDecisionFiles: number;
+      sourceReferences: number;
+      uniqueUrls: number;
+    };
+  }>("content/automation/source-target-health-audit.json");
   const searchSnippets = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     summary: {
@@ -528,6 +545,29 @@ async function main() {
         internalLinks.summary.waveItemsMissingPublicLinkSuggestion === 0 &&
         internalLinks.summary.candidateItemsMissingPublicLinkSuggestion === 0,
       detail: `wave=${internalLinks.summary.waveItems}, waveMissing=${internalLinks.summary.waveItemsMissingPublicLinkSuggestion}, candidateMissing=${internalLinks.summary.candidateItemsMissingPublicLinkSuggestion}`,
+    },
+    {
+      name: "source target health audit is read-only and covers review source scopes",
+      ok:
+        sourceHealth.guardrails.autoEditArticles === false &&
+        sourceHealth.guardrails.autoMarkReview === false &&
+        sourceHealth.guardrails.autoPublish === false &&
+        sourceHealth.summary.currentReviewFiles === publishPack.items.length &&
+        sourceHealth.summary.publicGapDecisionFiles === publicCoverageGapDecisionPack.summary.items &&
+        sourceHealth.summary.nextSourcePackFiles === nextReviewSourcePack.summary.items &&
+        sourceHealth.summary.filesCovered >= nextReviewSourcePack.summary.items,
+      detail: `current=${sourceHealth.summary.currentReviewFiles}, publicGap=${sourceHealth.summary.publicGapDecisionFiles}, next=${sourceHealth.summary.nextSourcePackFiles}, files=${sourceHealth.summary.filesCovered}`,
+    },
+    {
+      name: "source target health audit has reachable URLs for every covered review file",
+      ok:
+        sourceHealth.summary.missingUrlTargets === 0 &&
+        sourceHealth.summary.filesWithoutReachableSource === 0 &&
+        sourceHealth.summary.filesWithReachableSource === sourceHealth.summary.filesCovered &&
+        sourceHealth.summary.checkedUrls === sourceHealth.summary.uniqueUrls &&
+        sourceHealth.summary.okUrls > 0 &&
+        sourceHealth.summary.sourceReferences >= sourceHealth.summary.filesCovered,
+      detail: `checked=${sourceHealth.summary.checkedUrls}, ok=${sourceHealth.summary.okUrls}, failed=${sourceHealth.summary.failedUrls}, missingTargets=${sourceHealth.summary.missingUrlTargets}, filesWithoutReachable=${sourceHealth.summary.filesWithoutReachableSource}`,
     },
     {
       name: "search snippet readiness audit is read-only and covers public plus expansion items",

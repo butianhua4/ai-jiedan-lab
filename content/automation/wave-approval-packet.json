@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T15:23:30.651Z",
+  "generatedAt": "2026-06-06T15:37:59.841Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -50,6 +50,8 @@
         "LangChain docs: https://python.langchain.com/docs",
         "LlamaIndex docs: https://docs.llamaindex.ai",
         "Hugging Face docs: https://huggingface.co/docs",
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
       ],
       "priorityScore": 777,
@@ -110,7 +112,10 @@
       "officialSourceTargets": [
         "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-        "LangChain docs: https://python.langchain.com/docs"
+        "LangChain docs: https://python.langchain.com/docs",
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
       ],
       "priorityScore": 773,
       "publishBatch": 40,
@@ -168,9 +173,10 @@
       "internalLinks": 6,
       "lane": "content-backlog: 全行业 AI 提示词和工作流模板",
       "officialSourceTargets": [
-        "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.",
         "OpenAI API docs: https://platform.openai.com/docs",
-        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
       ],
       "priorityScore": 769,
       "publishBatch": 40,

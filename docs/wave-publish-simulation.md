@@ -1,6 +1,6 @@
 # Wave Publish Simulation
 
-Generated at: 2026-06-06T15:23:35.695Z
+Generated at: 2026-06-06T15:38:22.625Z
 
 This simulation is read-only. It lists the post-approval path but does not change article status, noindex, or publishing state.
 
@@ -41,9 +41,9 @@ This simulation is read-only. It lists the post-approval path but does not chang
 
 | Ready | Status | Noindex | Human review flag | Score | Sources | Risk checks | Blockers | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | draft | true | true | 100 | 5 | 6 | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| true | draft | true | true | 100 | 3 | 6 | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | draft | true | true | 100 | 3 | 6 | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | draft | true | true | 100 | 7 | 6 | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | draft | true | true | 100 | 6 | 6 | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | draft | true | true | 100 | 4 | 6 | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
 ## 1. 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
 
@@ -53,7 +53,7 @@ This simulation is read-only. It lists the post-approval path but does not chang
 - Noindex: true
 - Human review required: true
 - Quality score: 100
-- Official source targets: 5
+- Official source targets: 7
 - Risk review checks: 6
 
 Blockers:
@@ -77,7 +77,7 @@ npm run publish:articles -- --file=content/blog/ai-model-selection-customer-serv
 - Noindex: true
 - Human review required: true
 - Quality score: 100
-- Official source targets: 3
+- Official source targets: 6
 - Risk review checks: 6
 
 Blockers:
@@ -101,7 +101,7 @@ npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sd
 - Noindex: true
 - Human review required: true
 - Quality score: 100
-- Official source targets: 3
+- Official source targets: 4
 - Risk review checks: 6
 
 Blockers:

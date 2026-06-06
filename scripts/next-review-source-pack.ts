@@ -185,9 +185,9 @@ function buildRiskReviewChecklist(text: string) {
 
 function sourceTargetsFor(text: string) {
   const targets = [
-    matchTarget(text, ["openai", "chatgpt", "responses api", "batch api"], "OpenAI API docs", "https://platform.openai.com/docs"),
-    matchTarget(text, ["agent", "agents sdk", "tool calling", "handoff"], "OpenAI Agents docs", "https://platform.openai.com/docs/guides/agents"),
-    matchTarget(text, ["vercel ai sdk", "ai sdk", "vercel"], "Vercel AI SDK docs", "https://ai-sdk.dev/docs"),
+    matchTarget(text, ["openai", "chatgpt", "responses api", "batch api", "大模型", "模型"], "OpenAI API docs", "https://platform.openai.com/docs"),
+    matchTarget(text, ["agent", "agents sdk", "tool calling", "handoff", "智能体", "工具调用"], "OpenAI Agents docs", "https://platform.openai.com/docs/guides/agents"),
+    matchTarget(text, ["vercel ai sdk", "ai sdk", "vercel", "部署", "上线"], "Vercel AI SDK docs", "https://ai-sdk.dev/docs"),
     matchTarget(text, ["anthropic", "claude"], "Anthropic docs", "https://docs.anthropic.com"),
     matchTarget(text, ["gemini", "google ai"], "Google AI docs", "https://ai.google.dev/docs"),
     matchTarget(text, ["dify"], "Dify docs", "https://docs.dify.ai"),
@@ -195,14 +195,14 @@ function sourceTargetsFor(text: string) {
     matchTarget(text, ["ollama"], "Ollama docs", "https://docs.ollama.com"),
     matchTarget(text, ["vllm"], "vLLM docs", "https://docs.vllm.ai"),
     matchTarget(text, ["hugging face", "tgi", "inference endpoints"], "Hugging Face docs", "https://huggingface.co/docs"),
-    matchTarget(text, ["rag", "retrieval", "vector", "embedding"], "OpenAI retrieval docs", "https://platform.openai.com/docs/guides/retrieval"),
+    matchTarget(text, ["rag", "retrieval", "vector", "embedding", "知识库", "向量", "检索", "客服"], "OpenAI retrieval docs", "https://platform.openai.com/docs/guides/retrieval"),
     matchTarget(text, ["langchain"], "LangChain docs", "https://docs.langchain.com"),
     matchTarget(text, ["llamaindex"], "LlamaIndex docs", "https://docs.llamaindex.ai"),
-    matchTarget(text, ["prompt", "prompting", "prompt engineering"], "OpenAI prompt engineering guide", "https://platform.openai.com/docs/guides/prompt-engineering"),
+    matchTarget(text, ["prompt", "prompting", "prompt engineering", "提示词", "模板"], "OpenAI prompt engineering guide", "https://platform.openai.com/docs/guides/prompt-engineering"),
   ].filter((target): target is string => Boolean(target));
 
   if (!targets.length) {
-    targets.push("General official docs search: verify the primary keyword against current vendor documentation before approval.");
+    targets.push("OpenAI API docs: https://platform.openai.com/docs");
   }
 
   return targets;

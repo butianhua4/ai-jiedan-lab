@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-06T15:25:07.561Z
+Generated at: 2026-06-06T15:39:54.784Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 73
-- Passed: 73
+- Checks: 75
+- Passed: 75
 - Failed: 0
 
 ## Checks
@@ -30,11 +30,13 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=91, unsafeClaims=0, watchMentions=546 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=93, unsafeClaims=0, watchMentions=546 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, candidates=19 |
 | internal link opportunity audit has public suggestions for Wave 1 | PASS | wave=3, waveMissing=0, candidateMissing=0 |
+| source target health audit is read-only and covers review source scopes | PASS | current=3, publicGap=8, next=19, files=20 |
+| source target health audit has reachable URLs for every covered review file | PASS | checked=18, ok=18, failed=0, missingTargets=0, filesWithoutReachable=0 |
 | search snippet readiness audit is read-only and covers public plus expansion items | PASS | public=15, expansion=19, scoped=34 |
 | search snippet readiness audit has no blocking Wave 1 issues | PASS | blocking=0, wave=3, waveBlocking=0, warnings=13 |
 | structured data readiness audit is read-only and covers public plus expansion items | PASS | public=15, expansion=19, scoped=34 |

@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T15:25:07.518Z
+Generated at: 2026-06-06T15:39:54.698Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -29,6 +29,37 @@ This digest is read-only. It summarizes automation reports and does not publish 
 - Candidate items missing suggestions: 0
 - Wave items: 3
 - Wave items missing suggestions: 0
+
+## Source Target Health
+
+- Files covered: 20
+- Files with reachable source: 20
+- Files without reachable source: 0
+- Current review files: 3
+- Public gap decision files: 8
+- Next source-pack files: 19
+- Source references: 147
+- Unique URLs: 18
+- Checked URLs: 18
+- OK URLs: 18
+- Failed URLs: 0
+- Missing URL targets: 0
+- Redirected URLs: 13
+
+Failed checks:
+
+- none
+
+Redirect samples:
+
+- https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
+- https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
+- https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
+- https://docs.dify.ai -> https://docs.dify.ai/en/use-dify/getting-started/introduction
+- https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/
+- https://docs.vllm.ai -> https://docs.vllm.ai/en/latest/
+- https://platform.openai.com/docs -> https://developers.openai.com/api/docs
 
 ## Search Snippet Readiness
 
@@ -126,11 +157,11 @@ Next review files:
 | Safe | Current | Planned | Score | Sources | Queries | Risk checks | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | false | true | 100 | 8 | 8 | 8 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| true | true | true | 100 | 5 | 8 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| true | false | true | 100 | 7 | 8 | 7 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
-| true | true | true | 100 | 3 | 8 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | true | true | 100 | 3 | 9 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | false | true | 100 | 3 | 9 | 5 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
+| true | true | true | 100 | 7 | 8 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | false | true | 100 | 10 | 8 | 7 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| true | true | true | 100 | 6 | 8 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | true | true | 100 | 4 | 9 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | false | true | 100 | 4 | 9 | 5 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
 
 ## Public Expansion Queue
 
@@ -161,9 +192,9 @@ Next review files:
 
 | Ready | Sources | Risk checks | Title | File |
 | --- | --- | --- | --- | --- |
-| true | 5 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| true | 3 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | 3 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | 7 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 6 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | 4 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
 ## Wave Publish Simulation
 
@@ -192,7 +223,7 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 91
+- Traffic claim files scanned: 93
 - Traffic claim watch mentions: 546
 
 ## Preflight
@@ -490,7 +521,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T15:24:11.441Z
+- Latest check: 2026-06-06T15:38:57.334Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
@@ -509,6 +540,7 @@ Next review files:
 - Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.
 - Use docs/public-coverage-gap-decision-pack.md to review the 8 broad-demand public gap candidates and their optimization actions.
 - Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.
+- Use docs/source-target-health-audit.md to confirm official source links are reachable before approving fast-changing AI guidance.
 - Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.
 - If approved by a human, run mark:review with --confirm-human for approved files only.
 - Publish only status=review articles in a 1-3 article batch after a dry-run.

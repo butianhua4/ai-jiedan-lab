@@ -1,6 +1,6 @@
 # Wave Approval Packet
 
-Generated at: 2026-06-06T15:23:30.651Z
+Generated at: 2026-06-06T15:37:59.841Z
 
 Approval wave: 1
 
@@ -30,9 +30,9 @@ This packet is read-only. It consolidates the queue and source-pack checks for t
 
 | Ready | Score | Quality | Sources | Queries | Risk | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | 777 | 100 | 5 | 8 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| true | 773 | 100 | 3 | 8 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | 769 | 100 | 3 | 9 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | 777 | 100 | 7 | 8 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 773 | 100 | 6 | 8 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | 769 | 100 | 4 | 9 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
 ## 1. 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
 
@@ -67,6 +67,8 @@ Official source targets:
 - LangChain docs: https://python.langchain.com/docs
 - LlamaIndex docs: https://docs.llamaindex.ai
 - Hugging Face docs: https://huggingface.co/docs
+- OpenAI API docs: https://platform.openai.com/docs
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
 - OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 
 Fact-check queries:
@@ -141,6 +143,9 @@ Official source targets:
 - OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
 - Vercel AI SDK docs: https://ai-sdk.dev/docs
 - LangChain docs: https://python.langchain.com/docs
+- OpenAI API docs: https://platform.openai.com/docs
+- OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
+- OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 
 Fact-check queries:
 
@@ -210,9 +215,10 @@ Approval checklist:
 
 Official source targets:
 
-- Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.
 - OpenAI API docs: https://platform.openai.com/docs
 - OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
+- OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
 
 Fact-check queries:
 

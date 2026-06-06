@@ -1,6 +1,6 @@
 # Public Coverage Gap Preflight
 
-Generated at: 2026-06-06T15:23:34.695Z
+Generated at: 2026-06-06T15:38:03.771Z
 
 This report is read-only. It checks the public coverage gap plan candidates before any human review or publishing action.
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T15:23:29.140Z",
+  "generatedAt": "2026-06-06T15:37:58.279Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -217,7 +217,9 @@
         "客服知识库 AI"
       ],
       "sourceTargets": [
-        "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval."
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs"
       ],
       "workflowAngles": [
         "search intent",
@@ -405,7 +407,9 @@
         "HR AI 提示词"
       ],
       "sourceTargets": [
-        "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval."
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs"
       ],
       "workflowAngles": [
         "search intent",
@@ -497,7 +501,9 @@
         "AI 工作流部署"
       ],
       "sourceTargets": [
-        "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval."
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs"
       ],
       "workflowAngles": [
         "search intent",
@@ -767,7 +773,9 @@
         "AI 自动化工作流教程"
       ],
       "sourceTargets": [
-        "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval."
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs"
       ],
       "workflowAngles": [
         "search intent",
@@ -954,7 +962,9 @@
         "开源大模型部署教程"
       ],
       "sourceTargets": [
-        "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval."
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs"
       ],
       "workflowAngles": [
         "search intent",

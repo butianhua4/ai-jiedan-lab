@@ -1,6 +1,6 @@
 # Review Priority Roadmap
 
-Generated at: 2026-06-06T15:23:29.140Z
+Generated at: 2026-06-06T15:37:58.279Z
 
 This roadmap is read-only. It prioritizes manual review work and does not publish or mark articles for review.
 
@@ -128,7 +128,9 @@ Review focus:
 
 Source targets:
 
-- Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.
+- OpenAI API docs: https://platform.openai.com/docs
+- OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
 
 Workflow angles:
 
@@ -214,7 +216,9 @@ Review focus:
 
 Source targets:
 
-- Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.
+- OpenAI API docs: https://platform.openai.com/docs
+- OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
 
 Workflow angles:
 
@@ -255,7 +259,9 @@ Review focus:
 
 Source targets:
 
-- Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.
+- OpenAI API docs: https://platform.openai.com/docs
+- OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
 
 Workflow angles:
 
@@ -383,7 +389,9 @@ Review focus:
 
 Source targets:
 
-- Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.
+- OpenAI API docs: https://platform.openai.com/docs
+- OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
 
 Workflow angles:
 
@@ -468,7 +476,9 @@ Review focus:
 
 Source targets:
 
-- Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.
+- OpenAI API docs: https://platform.openai.com/docs
+- OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
 
 Workflow angles:
 

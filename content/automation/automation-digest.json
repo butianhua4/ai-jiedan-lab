@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T15:25:07.518Z",
+  "generatedAt": "2026-06-06T15:39:54.698Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -31,6 +31,530 @@
     "recommendedItems": 3,
     "waveItems": 3,
     "waveItemsMissingPublicLinkSuggestion": 0
+  },
+  "sourceHealth": {
+    "checkedUrls": 18,
+    "currentReviewFiles": 3,
+    "failedChecks": [],
+    "failedUrls": 0,
+    "filesCovered": 20,
+    "filesWithReachableSource": 20,
+    "filesWithoutReachableSource": 0,
+    "filesWithoutReachableSourceList": [],
+    "missingUrlTargets": 0,
+    "nextSourcePackFiles": 19,
+    "okUrls": 18,
+    "publicGapDecisionFiles": 8,
+    "redirectedChecks": [
+      {
+        "finalUrl": "https://ai-sdk.dev/docs/introduction",
+        "ok": true,
+        "references": [
+          {
+            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "current-review",
+            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "public-gap-decision",
+            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "public-gap-decision",
+            "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/education-ai-prompts-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "教育 AI 提示词模板：备课、教案、测验、反馈和学习计划",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
+            "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+            "scope": "next-source-pack",
+            "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+            "url": "https://ai-sdk.dev/docs"
+          }
+        ],
+        "status": 200,
+        "url": "https://ai-sdk.dev/docs"
+      },
+      {
+        "finalUrl": "https://ai.google.dev/gemini-api/docs",
+        "ok": true,
+        "references": [
+          {
+            "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+            "label": "Google AI docs: https://ai.google.dev/docs",
+            "scope": "next-source-pack",
+            "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+            "url": "https://ai.google.dev/docs"
+          },
+          {
+            "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
+            "label": "Google AI docs: https://ai.google.dev/docs",
+            "scope": "next-source-pack",
+            "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+            "url": "https://ai.google.dev/docs"
+          }
+        ],
+        "status": 200,
+        "url": "https://ai.google.dev/docs"
+      },
+      {
+        "finalUrl": "https://platform.claude.com/docs/en/home",
+        "ok": true,
+        "references": [
+          {
+            "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+            "label": "Anthropic docs: https://docs.anthropic.com",
+            "scope": "next-source-pack",
+            "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+            "url": "https://docs.anthropic.com"
+          },
+          {
+            "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+            "label": "Anthropic docs: https://docs.anthropic.com",
+            "scope": "next-source-pack",
+            "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+            "url": "https://docs.anthropic.com"
+          },
+          {
+            "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
+            "label": "Anthropic docs: https://docs.anthropic.com",
+            "scope": "next-source-pack",
+            "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+            "url": "https://docs.anthropic.com"
+          }
+        ],
+        "status": 200,
+        "url": "https://docs.anthropic.com"
+      },
+      {
+        "finalUrl": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+        "ok": true,
+        "references": [
+          {
+            "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+            "label": "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+            "scope": "public-gap-decision",
+            "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+            "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+          },
+          {
+            "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+            "label": "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+            "scope": "next-source-pack",
+            "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
+            "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+          },
+          {
+            "file": "content/blog/ecommerce-ai-prompts-guide.mdx",
+            "label": "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+            "scope": "next-source-pack",
+            "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复",
+            "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+          }
+        ],
+        "status": 200,
+        "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+      },
+      {
+        "finalUrl": "https://docs.dify.ai/en/use-dify/getting-started/introduction",
+        "ok": true,
+        "references": [
+          {
+            "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+            "label": "Dify docs: https://docs.dify.ai",
+            "scope": "public-gap-decision",
+            "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+            "url": "https://docs.dify.ai"
+          },
+          {
+            "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+            "label": "Dify docs: https://docs.dify.ai",
+            "scope": "next-source-pack",
+            "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+            "url": "https://docs.dify.ai"
+          },
+          {
+            "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+            "label": "Dify docs: https://docs.dify.ai",
+            "scope": "next-source-pack",
+            "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+            "url": "https://docs.dify.ai"
+          },
+          {
+            "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+            "label": "Dify docs: https://docs.dify.ai",
+            "scope": "next-source-pack",
+            "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+            "url": "https://docs.dify.ai"
+          },
+          {
+            "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+            "label": "Dify docs: https://docs.dify.ai",
+            "scope": "next-source-pack",
+            "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+            "url": "https://docs.dify.ai"
+          }
+        ],
+        "status": 200,
+        "url": "https://docs.dify.ai"
+      },
+      {
+        "finalUrl": "https://developers.llamaindex.ai/python/framework/",
+        "ok": true,
+        "references": [
+          {
+            "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+            "label": "LlamaIndex docs: https://docs.llamaindex.ai",
+            "scope": "public-gap-decision",
+            "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+            "url": "https://docs.llamaindex.ai"
+          },
+          {
+            "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+            "label": "LlamaIndex docs: https://docs.llamaindex.ai",
+            "scope": "next-source-pack",
+            "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+            "url": "https://docs.llamaindex.ai"
+          },
+          {
+            "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+            "label": "LlamaIndex docs: https://docs.llamaindex.ai",
+            "scope": "next-source-pack",
+            "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+            "url": "https://docs.llamaindex.ai"
+          },
+          {
+            "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+            "label": "LlamaIndex docs: https://docs.llamaindex.ai",
+            "scope": "next-source-pack",
+            "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+            "url": "https://docs.llamaindex.ai"
+          },
+          {
+            "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+            "label": "LlamaIndex docs: https://docs.llamaindex.ai",
+            "scope": "next-source-pack",
+            "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+            "url": "https://docs.llamaindex.ai"
+          }
+        ],
+        "status": 200,
+        "url": "https://docs.llamaindex.ai"
+      },
+      {
+        "finalUrl": "https://docs.vllm.ai/en/latest/",
+        "ok": true,
+        "references": [
+          {
+            "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+            "label": "vLLM docs: https://docs.vllm.ai",
+            "scope": "public-gap-decision",
+            "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+            "url": "https://docs.vllm.ai"
+          },
+          {
+            "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+            "label": "vLLM docs: https://docs.vllm.ai",
+            "scope": "public-gap-decision",
+            "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+            "url": "https://docs.vllm.ai"
+          },
+          {
+            "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
+            "label": "vLLM docs: https://docs.vllm.ai",
+            "scope": "next-source-pack",
+            "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
+            "url": "https://docs.vllm.ai"
+          },
+          {
+            "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+            "label": "vLLM docs: https://docs.vllm.ai",
+            "scope": "next-source-pack",
+            "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
+            "url": "https://docs.vllm.ai"
+          },
+          {
+            "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+            "label": "vLLM docs: https://docs.vllm.ai",
+            "scope": "next-source-pack",
+            "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+            "url": "https://docs.vllm.ai"
+          }
+        ],
+        "status": 200,
+        "url": "https://docs.vllm.ai"
+      },
+      {
+        "finalUrl": "https://developers.openai.com/api/docs",
+        "ok": true,
+        "references": [
+          {
+            "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+            "label": "OpenAI docs: https://platform.openai.com/docs",
+            "scope": "current-review",
+            "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/education-ai-prompts-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "教育 AI 提示词模板：备课、教案、测验、反馈和学习计划",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "file": "content/blog/ecommerce-ai-prompts-guide.mdx",
+            "label": "OpenAI API docs: https://platform.openai.com/docs",
+            "scope": "next-source-pack",
+            "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复",
+            "url": "https://platform.openai.com/docs"
+          }
+        ],
+        "status": 200,
+        "url": "https://platform.openai.com/docs"
+      }
+    ],
+    "redirectedUrls": 13,
+    "sourceReferences": 147,
+    "uniqueUrls": 18
   },
   "searchSnippets": {
     "blockingItems": 0,
@@ -501,7 +1025,9 @@
           "客服知识库 AI"
         ],
         "sourceTargets": [
-          "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval."
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs"
         ],
         "workflowAngles": [
           "search intent",
@@ -689,7 +1215,9 @@
           "HR AI 提示词"
         ],
         "sourceTargets": [
-          "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval."
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs"
         ],
         "workflowAngles": [
           "search intent",
@@ -781,7 +1309,9 @@
           "AI 工作流部署"
         ],
         "sourceTargets": [
-          "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval."
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs"
         ],
         "workflowAngles": [
           "search intent",
@@ -984,6 +1514,8 @@
           "LangChain docs: https://python.langchain.com/docs",
           "LlamaIndex docs: https://docs.llamaindex.ai",
           "Hugging Face docs: https://huggingface.co/docs",
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
           "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
         ],
         "plannedBatch": true,
@@ -1045,9 +1577,12 @@
           "LangChain docs: https://python.langchain.com/docs",
           "LlamaIndex docs: https://docs.llamaindex.ai",
           "Hugging Face docs: https://huggingface.co/docs",
+          "OpenAI API docs: https://platform.openai.com/docs",
           "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
           "Dify docs: https://docs.dify.ai",
-          "n8n docs: https://docs.n8n.io"
+          "n8n docs: https://docs.n8n.io",
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
         ],
         "plannedBatch": true,
         "primaryKeyword": "AI 自动化项目报价",
@@ -1107,7 +1642,10 @@
         "officialSourceTargets": [
           "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-          "LangChain docs: https://python.langchain.com/docs"
+          "LangChain docs: https://python.langchain.com/docs",
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
         ],
         "plannedBatch": true,
         "primaryKeyword": "AI Agent 部署",
@@ -1164,9 +1702,10 @@
         "lane": "content-backlog: 全行业 AI 提示词和工作流模板",
         "lanePriorityScore": 334,
         "officialSourceTargets": [
-          "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.",
           "OpenAI API docs: https://platform.openai.com/docs",
-          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
         ],
         "plannedBatch": true,
         "primaryKeyword": "全行业 AI 提示词模板",
@@ -1222,9 +1761,10 @@
         "lane": "content-backlog: 全行业 AI 提示词和工作流模板",
         "lanePriorityScore": 334,
         "officialSourceTargets": [
-          "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.",
           "OpenAI API docs: https://platform.openai.com/docs",
-          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
         ],
         "plannedBatch": true,
         "primaryKeyword": "团队 AI 提示词库",
@@ -1269,7 +1809,7 @@
         "internalStatus": "draft",
         "lane": "deployment: RAG、知识库和向量检索",
         "noindex": true,
-        "officialSourceTargets": 5,
+        "officialSourceTargets": 7,
         "plannedBatch": true,
         "primaryKeyword": "客服 AI 模型选型",
         "priorityScore": 777,
@@ -1294,7 +1834,7 @@
         "internalStatus": "draft",
         "lane": "deployment: Agent 部署、工具调用和工作流",
         "noindex": true,
-        "officialSourceTargets": 3,
+        "officialSourceTargets": 6,
         "plannedBatch": true,
         "primaryKeyword": "AI Agent 部署",
         "priorityScore": 773,
@@ -1319,7 +1859,7 @@
         "internalStatus": "draft",
         "lane": "content-backlog: 全行业 AI 提示词和工作流模板",
         "noindex": true,
-        "officialSourceTargets": 3,
+        "officialSourceTargets": 4,
         "plannedBatch": true,
         "primaryKeyword": "全行业 AI 提示词模板",
         "priorityScore": 769,
@@ -1369,7 +1909,7 @@
         "internalStatus": "draft",
         "lane": "deployment: RAG、知识库和向量检索",
         "noindex": true,
-        "officialSourceTargets": 7,
+        "officialSourceTargets": 10,
         "plannedBatch": true,
         "primaryKeyword": "AI 自动化项目报价",
         "priorityScore": 746,
@@ -1394,7 +1934,7 @@
         "internalStatus": "draft",
         "lane": "deployment: RAG、知识库和向量检索",
         "noindex": true,
-        "officialSourceTargets": 7,
+        "officialSourceTargets": 8,
         "plannedBatch": true,
         "primaryKeyword": "Open WebUI Functions Pipelines",
         "priorityScore": 746,
@@ -1419,7 +1959,7 @@
         "internalStatus": "draft",
         "lane": "content-backlog: 全行业 AI 提示词和工作流模板",
         "noindex": true,
-        "officialSourceTargets": 3,
+        "officialSourceTargets": 4,
         "plannedBatch": true,
         "primaryKeyword": "团队 AI 提示词库",
         "priorityScore": 731,
@@ -1469,7 +2009,7 @@
         "internalStatus": "draft",
         "lane": "deployment: Agent 部署、工具调用和工作流",
         "noindex": true,
-        "officialSourceTargets": 5,
+        "officialSourceTargets": 7,
         "plannedBatch": false,
         "primaryKeyword": "Dify 工作流错误处理",
         "priorityScore": 463,
@@ -1504,7 +2044,7 @@
             "internalStatus": "draft",
             "lane": "deployment: RAG、知识库和向量检索",
             "noindex": true,
-            "officialSourceTargets": 5,
+            "officialSourceTargets": 7,
             "plannedBatch": true,
             "primaryKeyword": "客服 AI 模型选型",
             "priorityScore": 777,
@@ -1529,7 +2069,7 @@
             "internalStatus": "draft",
             "lane": "deployment: Agent 部署、工具调用和工作流",
             "noindex": true,
-            "officialSourceTargets": 3,
+            "officialSourceTargets": 6,
             "plannedBatch": true,
             "primaryKeyword": "AI Agent 部署",
             "priorityScore": 773,
@@ -1554,7 +2094,7 @@
             "internalStatus": "draft",
             "lane": "content-backlog: 全行业 AI 提示词和工作流模板",
             "noindex": true,
-            "officialSourceTargets": 3,
+            "officialSourceTargets": 4,
             "plannedBatch": true,
             "primaryKeyword": "全行业 AI 提示词模板",
             "priorityScore": 769,
@@ -1614,7 +2154,7 @@
             "internalStatus": "draft",
             "lane": "deployment: RAG、知识库和向量检索",
             "noindex": true,
-            "officialSourceTargets": 7,
+            "officialSourceTargets": 10,
             "plannedBatch": true,
             "primaryKeyword": "AI 自动化项目报价",
             "priorityScore": 746,
@@ -1639,7 +2179,7 @@
             "internalStatus": "draft",
             "lane": "deployment: RAG、知识库和向量检索",
             "noindex": true,
-            "officialSourceTargets": 7,
+            "officialSourceTargets": 8,
             "plannedBatch": true,
             "primaryKeyword": "Open WebUI Functions Pipelines",
             "priorityScore": 746,
@@ -1674,7 +2214,7 @@
             "internalStatus": "draft",
             "lane": "content-backlog: 全行业 AI 提示词和工作流模板",
             "noindex": true,
-            "officialSourceTargets": 3,
+            "officialSourceTargets": 4,
             "plannedBatch": true,
             "primaryKeyword": "团队 AI 提示词库",
             "priorityScore": 731,
@@ -1724,7 +2264,7 @@
             "internalStatus": "draft",
             "lane": "deployment: Agent 部署、工具调用和工作流",
             "noindex": true,
-            "officialSourceTargets": 5,
+            "officialSourceTargets": 7,
             "plannedBatch": false,
             "primaryKeyword": "Dify 工作流错误处理",
             "priorityScore": 463,
@@ -1784,6 +2324,8 @@
           "LangChain docs: https://python.langchain.com/docs",
           "LlamaIndex docs: https://docs.llamaindex.ai",
           "Hugging Face docs: https://huggingface.co/docs",
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
           "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
         ],
         "priorityScore": 777,
@@ -1844,7 +2386,10 @@
         "officialSourceTargets": [
           "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-          "LangChain docs: https://python.langchain.com/docs"
+          "LangChain docs: https://python.langchain.com/docs",
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
         ],
         "priorityScore": 773,
         "publishBatch": 40,
@@ -1902,9 +2447,10 @@
         "internalLinks": 6,
         "lane": "content-backlog: 全行业 AI 提示词和工作流模板",
         "officialSourceTargets": [
-          "Use the article's publish readiness pack or official vendor docs listed in coverage reports before approval.",
           "OpenAI API docs: https://platform.openai.com/docs",
-          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
         ],
         "priorityScore": 769,
         "publishBatch": 40,
@@ -1957,7 +2503,7 @@
         "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
         "humanReviewRequired": true,
         "noindex": true,
-        "officialSourceTargets": 5,
+        "officialSourceTargets": 7,
         "projectedPublishableAfterHumanApproval": true,
         "qualityIssues": [],
         "qualityScore": 100,
@@ -1977,7 +2523,7 @@
         "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
         "humanReviewRequired": true,
         "noindex": true,
-        "officialSourceTargets": 3,
+        "officialSourceTargets": 6,
         "projectedPublishableAfterHumanApproval": true,
         "qualityIssues": [],
         "qualityScore": 100,
@@ -1997,7 +2543,7 @@
         "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
         "humanReviewRequired": true,
         "noindex": true,
-        "officialSourceTargets": 3,
+        "officialSourceTargets": 4,
         "projectedPublishableAfterHumanApproval": true,
         "qualityIssues": [],
         "qualityScore": 100,
@@ -2019,7 +2565,7 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 91,
+    "filesScanned": 93,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
     "watchMentions": 546
@@ -10149,7 +10695,7 @@
   "liveSearch": {
     "checkedArticles": 15,
     "failedChecks": [],
-    "generatedAt": "2026-06-06T15:24:11.441Z",
+    "generatedAt": "2026-06-06T15:38:57.334Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 15,
@@ -10207,6 +10753,7 @@
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.",
     "Use docs/public-coverage-gap-decision-pack.md to review the 8 broad-demand public gap candidates and their optimization actions.",
     "Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.",
+    "Use docs/source-target-health-audit.md to confirm official source links are reachable before approving fast-changing AI guidance.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
     "If approved by a human, run mark:review with --confirm-human for approved files only.",
     "Publish only status=review articles in a 1-3 article batch after a dry-run."
