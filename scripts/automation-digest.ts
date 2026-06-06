@@ -323,6 +323,28 @@ type ReviewCannibalizationBrief = {
   };
 };
 
+type ReviewFreshnessBrief = {
+  highRiskItems: Array<{
+    articleUpdatedAt: string;
+    file: string;
+    freshnessRisk: string;
+    readyForFreshnessReview: boolean;
+    reachableSources: number;
+    sourceTargets: number;
+    staleSensitiveChecks: unknown[];
+    title: string;
+  }>;
+  summary: {
+    blockedItems: number;
+    highRiskItems: number;
+    items: number;
+    itemsWithOfficialSources: number;
+    itemsWithReachableSources: number;
+    readyItems: number;
+    unsafeCommands: number;
+  };
+};
+
 type SearchSnippets = {
   summary: {
     blockingItems: number;
@@ -627,6 +649,7 @@ const reports = {
   reviewActionBoard: readJson<ReviewActionBoard>("content/automation/review-action-board.json"),
   reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
   reviewCannibalizationBrief: readJson<ReviewCannibalizationBrief>("content/automation/review-cannibalization-brief.json"),
+  reviewFreshnessBrief: readJson<ReviewFreshnessBrief>("content/automation/review-freshness-brief.json"),
   searchSnippets: readJson<SearchSnippets>("content/automation/search-snippet-readiness-audit.json"),
   structuredData: readJson<StructuredData>("content/automation/structured-data-readiness-audit.json"),
   searchIntentLanes: readJson<SearchIntentLanes>("content/automation/search-intent-lane-map.json"),
@@ -713,6 +736,16 @@ const payload = {
     mediumRiskItems: reports.reviewCannibalizationBrief.data?.summary.mediumRiskItems ?? null,
     nextItems: reports.reviewCannibalizationBrief.data?.nextItems.slice(0, 8) ?? [],
     unsafeCommands: reports.reviewCannibalizationBrief.data?.summary.unsafeCommands ?? null,
+  },
+  reviewFreshnessBrief: {
+    blockedItems: reports.reviewFreshnessBrief.data?.summary.blockedItems ?? null,
+    highRiskItems: reports.reviewFreshnessBrief.data?.summary.highRiskItems ?? null,
+    items: reports.reviewFreshnessBrief.data?.summary.items ?? null,
+    itemsWithOfficialSources: reports.reviewFreshnessBrief.data?.summary.itemsWithOfficialSources ?? null,
+    itemsWithReachableSources: reports.reviewFreshnessBrief.data?.summary.itemsWithReachableSources ?? null,
+    readyItems: reports.reviewFreshnessBrief.data?.summary.readyItems ?? null,
+    top: reports.reviewFreshnessBrief.data?.highRiskItems.slice(0, 8) ?? [],
+    unsafeCommands: reports.reviewFreshnessBrief.data?.summary.unsafeCommands ?? null,
   },
   searchSnippets: reports.searchSnippets.data?.summary ?? null,
   structuredData: reports.structuredData.data?.summary ?? null,
@@ -1008,6 +1041,9 @@ function buildNextActions() {
   }
   if (!reports.reviewCannibalizationBrief.data || reports.reviewCannibalizationBrief.data.summary.highRiskItems > 0) {
     return ["Open docs/review-cannibalization-brief.md and differentiate high-risk candidate overlaps before manual review."];
+  }
+  if (!reports.reviewFreshnessBrief.data || reports.reviewFreshnessBrief.data.summary.blockedItems > 0) {
+    return ["Open docs/review-freshness-brief.md and complete source-backed freshness checks before manual review."];
   }
   if (!reports.searchSnippets.data || reports.searchSnippets.data.summary.waveItemsWithBlockingIssues > 0) {
     return ["Open docs/search-snippet-readiness-audit.md and fix Wave 1 title, description, slug, or indexing blockers."];
@@ -1593,6 +1629,23 @@ function toMarkdown(data: typeof payload) {
     `- Medium risk: ${data.freshness.mediumRisk}`,
     `- Current review items: ${data.freshness.currentReviewItems}`,
     `- Planned review items: ${data.freshness.plannedReviewItems}`,
+    "",
+    "## Review Freshness Brief",
+    "",
+    `- Items: ${data.reviewFreshnessBrief.items}`,
+    `- Ready items: ${data.reviewFreshnessBrief.readyItems}`,
+    `- Blocked items: ${data.reviewFreshnessBrief.blockedItems}`,
+    `- High-risk items: ${data.reviewFreshnessBrief.highRiskItems}`,
+    `- With official sources: ${data.reviewFreshnessBrief.itemsWithOfficialSources}`,
+    `- With reachable sources: ${data.reviewFreshnessBrief.itemsWithReachableSources}`,
+    `- Unsafe commands: ${data.reviewFreshnessBrief.unsafeCommands}`,
+    "",
+    "| Ready | Risk | Updated | Sources | Checks | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- |",
+    ...data.reviewFreshnessBrief.top.map(
+      (item) =>
+        `| ${item.readyForFreshnessReview} | ${item.freshnessRisk} | ${item.articleUpdatedAt} | ${item.reachableSources}/${item.sourceTargets} | ${item.staleSensitiveChecks.length} | ${item.title} | ${item.file} |`,
+    ),
     "",
     "## Live Search Surface",
     "",

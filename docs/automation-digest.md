@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T16:13:42.824Z
+Generated at: 2026-06-06T16:24:10.369Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -53,7 +53,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=fr
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - https://docs.dify.ai -> https://docs.dify.ai/en/use-dify/getting-started/introduction
@@ -277,8 +277,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 99
-- Traffic claim watch mentions: 551
+- Traffic claim files scanned: 101
+- Traffic claim watch mentions: 587
 
 ## Preflight
 
@@ -573,9 +573,30 @@ Next review files:
 - Current review items: 3
 - Planned review items: 9
 
+## Review Freshness Brief
+
+- Items: 9
+- Ready items: 9
+- Blocked items: 0
+- High-risk items: 9
+- With official sources: 9
+- With reachable sources: 9
+- Unsafe commands: 0
+
+| Ready | Risk | Updated | Sources | Checks | Title | File |
+| --- | --- | --- | --- | --- | --- | --- |
+| true | high | 2026-06-06 | 9/9 | 12 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | high | 2026-06-06 | 10/10 | 12 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | high | 2026-06-06 | 8/8 | 12 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | high | 2026-06-06 | 11/11 | 12 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| true | high | 2026-06-06 | 11/11 | 12 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| true | high | 2026-06-06 | 12/12 | 12 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| true | high | 2026-06-06 | 9/9 | 11 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| true | high | 2026-06-06 | 12/12 | 12 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+
 ## Live Search Surface
 
-- Latest check: 2026-06-06T16:13:26.735Z
+- Latest check: 2026-06-06T16:23:50.829Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-06T16:13:42.776Z",
+  "generatedAt": "2026-06-06T16:24:10.315Z",
   "ok": true,
   "summary": {
-    "checks": 81,
+    "checks": 83,
     "failed": 0,
-    "passed": 81
+    "passed": 83
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=99, unsafeClaims=0, watchMentions=551"
+      "detail": "filesScanned=101, unsafeClaims=0, watchMentions=587"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -316,6 +316,16 @@
       "name": "content freshness check covers review items",
       "ok": true,
       "detail": "highRisk=570, currentReviewItems=3, plannedReviewItems=9"
+    },
+    {
+      "name": "review freshness brief is read-only and covers unique action-board files",
+      "ok": true,
+      "detail": "items=9, uniqueActionFiles=9, unsafeCommands=0"
+    },
+    {
+      "name": "review freshness brief has source-backed human fact-check tasks",
+      "ok": true,
+      "detail": "ready=9, blocked=0, highRisk=9, withSources=9"
     },
     {
       "name": "review coverage report covers planned candidates",

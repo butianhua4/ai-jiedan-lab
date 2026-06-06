@@ -423,6 +423,27 @@ async function main() {
       unsafeCommands: number;
     };
   }>("content/automation/review-cannibalization-brief.json");
+  const reviewFreshnessBrief = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    items?: Array<{
+      humanReviewChecklist?: unknown[];
+      officialSourceTargets?: unknown[];
+      readyForFreshnessReview?: boolean;
+      reachableSources?: number;
+      staleSensitiveChecks?: unknown[];
+      sourceTargets?: number;
+    }>;
+    sourceEvidence: { uniqueActionFiles: number };
+    summary: {
+      blockedItems: number;
+      highRiskItems: number;
+      items: number;
+      itemsWithOfficialSources: number;
+      itemsWithReachableSources: number;
+      readyItems: number;
+      unsafeCommands: number;
+    };
+  }>("content/automation/review-freshness-brief.json");
   const searchSnippets = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     summary: {
@@ -1092,6 +1113,36 @@ async function main() {
       name: "content freshness check covers review items",
       ok: freshness.guardrails.autoPublish === false && freshness.summary.articlesChecked > 0 && freshness.summary.currentReviewItems > 0,
       detail: `highRisk=${freshness.summary.highRisk}, currentReviewItems=${freshness.summary.currentReviewItems}, plannedReviewItems=${freshness.summary.plannedReviewItems}`,
+    },
+    {
+      name: "review freshness brief is read-only and covers unique action-board files",
+      ok:
+        reviewFreshnessBrief.guardrails.autoEditArticles === false &&
+        reviewFreshnessBrief.guardrails.autoMarkReview === false &&
+        reviewFreshnessBrief.guardrails.autoPublish === false &&
+        reviewFreshnessBrief.summary.items === reviewFreshnessBrief.sourceEvidence.uniqueActionFiles &&
+        reviewFreshnessBrief.summary.unsafeCommands === 0,
+      detail: `items=${reviewFreshnessBrief.summary.items}, uniqueActionFiles=${reviewFreshnessBrief.sourceEvidence.uniqueActionFiles}, unsafeCommands=${reviewFreshnessBrief.summary.unsafeCommands}`,
+    },
+    {
+      name: "review freshness brief has source-backed human fact-check tasks",
+      ok:
+        reviewFreshnessBrief.summary.blockedItems === 0 &&
+        reviewFreshnessBrief.summary.readyItems === reviewFreshnessBrief.summary.items &&
+        reviewFreshnessBrief.summary.itemsWithOfficialSources === reviewFreshnessBrief.summary.items &&
+        reviewFreshnessBrief.summary.itemsWithReachableSources === reviewFreshnessBrief.summary.items &&
+        Boolean(
+          reviewFreshnessBrief.items?.every(
+            (item) =>
+              item.readyForFreshnessReview === true &&
+              (item.reachableSources || 0) > 0 &&
+              (item.sourceTargets || 0) > 0 &&
+              (item.officialSourceTargets?.length || 0) > 0 &&
+              (item.staleSensitiveChecks?.length || 0) >= 3 &&
+              (item.humanReviewChecklist?.length || 0) >= 5,
+          ),
+        ),
+      detail: `ready=${reviewFreshnessBrief.summary.readyItems}, blocked=${reviewFreshnessBrief.summary.blockedItems}, highRisk=${reviewFreshnessBrief.summary.highRiskItems}, withSources=${reviewFreshnessBrief.summary.itemsWithOfficialSources}`,
     },
     {
       name: "review coverage report covers planned candidates",

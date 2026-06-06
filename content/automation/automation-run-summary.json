@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T16:12:06.116Z",
+  "generatedAt": "2026-06-06T16:22:36.048Z",
   "failures": [],
   "ok": true,
   "tasks": [
@@ -40,6 +40,7 @@
     "Run content cannibalization check",
     "Generate review cannibalization brief",
     "Run content freshness check",
+    "Generate review freshness brief",
     "Generate review coverage report",
     "Generate manual review workbench",
     "Run searchability check",

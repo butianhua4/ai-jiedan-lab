@@ -1,14 +1,14 @@
 # Traffic Claim Guard
-Generated at: 2026-06-06T16:13:34.783Z
+Generated at: 2026-06-06T16:24:01.841Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
 - Note: This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples.
 ## Summary
-- filesScanned: 99
+- filesScanned: 101
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 551
+- watchMentions: 587
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -28,12 +28,12 @@ None.
 | docs/automation-digest.md | 275 | - Measured traffic sources: none |
 | docs/automation-digest.md | 276 | - Search Console verification evidence: false |
 | docs/automation-digest.md | 279 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 280 | - Traffic claim files scanned: 99 |
-| docs/automation-digest.md | 281 | - Traffic claim watch mentions: 551 |
+| docs/automation-digest.md | 280 | - Traffic claim files scanned: 101 |
+| docs/automation-digest.md | 281 | - Traffic claim watch mentions: 587 |
 | docs/automation-digest.md | 317 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
 | docs/automation-gate.md | 31 | \| traffic evidence audit passed and is read-only \| PASS \| failedChecks=0, measuredTrafficSources=0 \| |
 | docs/automation-gate.md | 32 | \| traffic is not claimed without measured metrics \| PASS \| trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 \| |
-| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=99, unsafeClaims=0, watchMentions=551 \| |
+| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=101, unsafeClaims=0, watchMentions=587 \| |
 | docs/broad-search-demand-map.md | 5 | This report is read-only. It turns broad user-search demand areas into a review and content-gap map. It does not publish, mark review, claim keyword volume, or claim traffic. |
 | docs/broad-search-demand-map.md | 12 | - Note: Read-only broad-demand map. It prioritizes likely user-search themes from the local content inventory and official source targets; it does not claim keyword volume, rankings, clicks, or traffic. |
 | docs/broad-search-demand-map.md | 123 | \| 31 \| 100 \| informational \| 医疗 AI 提示词 \| 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 \| content/blog/healthcare-admin-ai-prompts-guide.mdx \| |
@@ -62,8 +62,8 @@ None.
 | docs/manual-review-workbench.md | 191 | - Measured traffic sources: none |
 | docs/manual-review-workbench.md | 192 | - Search Console verification evidence: false |
 | docs/manual-review-workbench.md | 194 | - Unsupported traffic claims: 0 |
-| docs/manual-review-workbench.md | 195 | - Traffic claim files scanned: 99 |
-| docs/manual-review-workbench.md | 196 | - Traffic claim watch mentions: 551 |
+| docs/manual-review-workbench.md | 195 | - Traffic claim files scanned: 101 |
+| docs/manual-review-workbench.md | 196 | - Traffic claim watch mentions: 587 |
 | docs/manual-review-workbench.md | 407 | - Use docs/traffic-evidence-audit.md before making any traffic or Search Console performance claim. |
 | docs/monetization-and-payment-plan.md | 3 | 这个项目的变现顺序不是“先注册一堆收款平台”，而是“先让网站有可用工具、可信内容和真实访问”。早期重点是降低复杂度，避免把时间花在还没有用户验证的支付系统上。 |
 | docs/monetization-and-payment-plan.md | 11 | 3. 用 Search Console 和 Analytics 观察用户搜索词、访问页面和点击行为。 |
