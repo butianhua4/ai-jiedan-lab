@@ -24,12 +24,15 @@ async function main() {
   const searchability = readJson<{ failedItems: unknown[]; score: number; summary?: { checks: number } }>("content/automation/searchability-check.json");
   const reviewPreflight = readJson<{ ok: boolean; summary: { failed: number } }>("content/automation/review-preflight.json");
   const sanitize = readJson<{ changedFiles: number; totalReplacements: number }>("content/automation/draft-guardrail-sanitize.json");
-  const opportunityMap = readJson<{ totals: { reviewReadyDrafts: number } }>("content/automation/seo-opportunity-map.json");
+  const opportunityMap = readJson<{ reviewBatches?: Array<{ candidates?: unknown[] }>; totals: { reviewReadyDrafts: number } }>(
+    "content/automation/seo-opportunity-map.json",
+  );
   const projectStatus = readJson<{ articles: { publicPublished: number; publishableNow: unknown[] } }>("content/automation/project-status.json");
   const articles = (await articleFiles()).map(readArticle);
 
   const reviewFiles = reviewQueue.recommendedToday.map((item) => item.file);
   const packFiles = publishPack.items.map((item) => item.file);
+  const reviewBatches = opportunityMap.reviewBatches || [];
   const packItemsMissingSourceReview = publishPack.items
     .filter((item) => !item.officialSourceTargets?.length || !item.factCheckQueries?.length)
     .map((item) => item.file);
@@ -110,6 +113,11 @@ async function main() {
       name: "SEO opportunity map has review-ready drafts",
       ok: opportunityMap.totals.reviewReadyDrafts > 0,
       detail: `reviewReadyDrafts=${opportunityMap.totals.reviewReadyDrafts}`,
+    },
+    {
+      name: "SEO opportunity map includes manual review batches",
+      ok: reviewBatches.length > 0 && reviewBatches.every((batch) => (batch.candidates?.length || 0) > 0),
+      detail: `batches=${reviewBatches.length}`,
     },
   ];
 

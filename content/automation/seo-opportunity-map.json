@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T10:41:02.778Z",
+  "generatedAt": "2026-06-06T10:47:06.815Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This report uses local content metadata only. It does not claim real traffic or Search Console impressions."
@@ -59,6 +59,198 @@
       "reason": "has enough review-ready drafts for a small manual publishing batch",
       "reviewReadyDrafts": 40,
       "published": 1
+    }
+  ],
+  "reviewBatches": [
+    {
+      "candidates": [
+        {
+          "category": "模板和清单",
+          "file": "content/blog/ai-tool-setup-service-checklist.mdx",
+          "primaryKeyword": "AI 工具配置服务接单清单",
+          "publishBatch": 20,
+          "searchIntent": "informational",
+          "title": "AI 工具配置服务接单清单怎么写"
+        },
+        {
+          "category": "模板和清单",
+          "file": "content/blog/ai-tool-setup-service-checklist-checklist.mdx",
+          "primaryKeyword": "AI 工具配置服务检查清单",
+          "publishBatch": 20,
+          "searchIntent": "informational",
+          "title": "AI 工具配置服务接单检查清单"
+        },
+        {
+          "category": "作品集",
+          "file": "content/blog/canva-portfolio-cover-tips.mdx",
+          "primaryKeyword": "Canva 作品集封面",
+          "publishBatch": 20,
+          "searchIntent": "informational",
+          "title": "Canva 作品集封面怎么做更适合 AI 接单新手"
+        }
+      ],
+      "cluster": "Freelance monetization",
+      "published": 5,
+      "reason": "cluster has enough review-ready drafts for a small manual batch",
+      "reviewReadyDrafts": 295,
+      "suggestedBatchSize": 3
+    },
+    {
+      "candidates": [
+        {
+          "category": "新手路线",
+          "file": "content/blog/before-first-ai-freelance-job-mistakes.mdx",
+          "primaryKeyword": "第一次接 AI 小单常见错误",
+          "publishBatch": 18,
+          "searchIntent": "informational",
+          "title": "第一次接 AI 小单前最容易犯的错误"
+        },
+        {
+          "category": "新手教程",
+          "file": "content/blog/first-portfolio-case-realistic-mistakes.mdx",
+          "primaryKeyword": "第一个作品集案例常见错误",
+          "publishBatch": 18,
+          "searchIntent": "informational",
+          "title": "第一个作品集案例常见错误和修正方法"
+        },
+        {
+          "category": "报错解决",
+          "file": "content/blog/npm-command-not-found-fix.mdx",
+          "primaryKeyword": "npm command not found 怎么解决",
+          "publishBatch": 18,
+          "searchIntent": "informational",
+          "title": "npm command not found 怎么解决"
+        }
+      ],
+      "cluster": "Troubleshooting",
+      "published": 3,
+      "reason": "cluster has enough review-ready drafts for a small manual batch",
+      "reviewReadyDrafts": 188,
+      "suggestedBatchSize": 3
+    },
+    {
+      "candidates": [
+        {
+          "category": "AI Agent",
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "primaryKeyword": "AI Agent 部署",
+          "publishBatch": 40,
+          "searchIntent": "informational",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+        },
+        {
+          "category": "AI 部署",
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "primaryKeyword": "大模型部署",
+          "publishBatch": 40,
+          "searchIntent": "informational",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查"
+        },
+        {
+          "category": "AI 部署",
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "primaryKeyword": "AI API Key 安全管理",
+          "publishBatch": 34,
+          "searchIntent": "informational",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
+        }
+      ],
+      "cluster": "AI deployment",
+      "published": 3,
+      "reason": "cluster has enough review-ready drafts for a small manual batch",
+      "reviewReadyDrafts": 153,
+      "suggestedBatchSize": 3
+    },
+    {
+      "candidates": [
+        {
+          "category": "AI 记忆",
+          "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+          "primaryKeyword": "AI Agent 记忆",
+          "publishBatch": 40,
+          "searchIntent": "informational",
+          "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
+        },
+        {
+          "category": "AI 基建",
+          "file": "content/blog/agent-human-review-loop-guide.mdx",
+          "primaryKeyword": "Agent 人工审核流程",
+          "publishBatch": 32,
+          "searchIntent": "informational",
+          "title": "Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认"
+        },
+        {
+          "category": "AI 基建",
+          "file": "content/blog/agent-memory-postgres-schema-guide.mdx",
+          "primaryKeyword": "Agent 记忆数据库设计",
+          "publishBatch": 32,
+          "searchIntent": "informational",
+          "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则"
+        }
+      ],
+      "cluster": "Agent and memory",
+      "published": 0,
+      "reason": "cluster has review-ready drafts but no public article yet",
+      "reviewReadyDrafts": 55,
+      "suggestedBatchSize": 3
+    },
+    {
+      "candidates": [
+        {
+          "category": "AI 基建",
+          "file": "content/blog/knowledge-base-permission-design-guide.mdx",
+          "primaryKeyword": "AI 知识库权限",
+          "publishBatch": 22,
+          "searchIntent": "informational",
+          "title": "AI 知识库权限怎么设计：别让检索结果越权"
+        },
+        {
+          "category": "AI 基建",
+          "file": "content/blog/vector-database-beginner-guide.mdx",
+          "primaryKeyword": "向量数据库",
+          "publishBatch": 21,
+          "searchIntent": "informational",
+          "title": "向量数据库怎么选：新手先理解 embedding 和检索"
+        }
+      ],
+      "cluster": "RAG and knowledge base",
+      "published": 0,
+      "reason": "cluster has review-ready drafts but no public article yet",
+      "reviewReadyDrafts": 31,
+      "suggestedBatchSize": 2
+    },
+    {
+      "candidates": [
+        {
+          "category": "AI 提示词",
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "primaryKeyword": "全行业 AI 提示词模板",
+          "publishBatch": 40,
+          "searchIntent": "informational",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+        },
+        {
+          "category": "AI 提示词",
+          "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+          "primaryKeyword": "团队 AI 提示词库",
+          "publishBatch": 32,
+          "searchIntent": "informational",
+          "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用"
+        },
+        {
+          "category": "AI 提示词",
+          "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
+          "primaryKeyword": "数据分析 AI 提示词",
+          "publishBatch": 31,
+          "searchIntent": "informational",
+          "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要"
+        }
+      ],
+      "cluster": "Industry AI prompts",
+      "published": 0,
+      "reason": "cluster has review-ready drafts but no public article yet",
+      "reviewReadyDrafts": 27,
+      "suggestedBatchSize": 3
     }
   ],
   "clusters": [

@@ -1,6 +1,6 @@
 # SEO Opportunity Map
 
-Generated at: 2026-06-06T10:41:02.778Z
+Generated at: 2026-06-06T10:47:06.815Z
 
 This report ranks local content opportunities. It does not use or claim real traffic, impressions, or keyword volume.
 
@@ -29,6 +29,87 @@ This report ranks local content opportunities. It does not use or claim real tra
 | 模板和清单 | 0 | 44 | has review-ready drafts but no public article yet |
 | AI 自由职业路线 | 0 | 44 | has review-ready drafts but no public article yet |
 | 收款工具 | 1 | 40 | has enough review-ready drafts for a small manual publishing batch |
+
+## Suggested Review Batches
+
+These are manual-review batches only. They do not change status or publish anything.
+
+### Freelance monetization
+
+- Published: 5
+- Review-ready drafts: 295
+- Suggested batch size: 3
+- Reason: cluster has enough review-ready drafts for a small manual batch
+
+| Category | Intent | Batch | Primary keyword | Title | File |
+| --- | --- | --- | --- | --- | --- |
+| 模板和清单 | informational | 20 | AI 工具配置服务接单清单 | AI 工具配置服务接单清单怎么写 | content/blog/ai-tool-setup-service-checklist.mdx |
+| 模板和清单 | informational | 20 | AI 工具配置服务检查清单 | AI 工具配置服务接单检查清单 | content/blog/ai-tool-setup-service-checklist-checklist.mdx |
+| 作品集 | informational | 20 | Canva 作品集封面 | Canva 作品集封面怎么做更适合 AI 接单新手 | content/blog/canva-portfolio-cover-tips.mdx |
+
+### Troubleshooting
+
+- Published: 3
+- Review-ready drafts: 188
+- Suggested batch size: 3
+- Reason: cluster has enough review-ready drafts for a small manual batch
+
+| Category | Intent | Batch | Primary keyword | Title | File |
+| --- | --- | --- | --- | --- | --- |
+| 新手路线 | informational | 18 | 第一次接 AI 小单常见错误 | 第一次接 AI 小单前最容易犯的错误 | content/blog/before-first-ai-freelance-job-mistakes.mdx |
+| 新手教程 | informational | 18 | 第一个作品集案例常见错误 | 第一个作品集案例常见错误和修正方法 | content/blog/first-portfolio-case-realistic-mistakes.mdx |
+| 报错解决 | informational | 18 | npm command not found 怎么解决 | npm command not found 怎么解决 | content/blog/npm-command-not-found-fix.mdx |
+
+### AI deployment
+
+- Published: 3
+- Review-ready drafts: 153
+- Suggested batch size: 3
+- Reason: cluster has enough review-ready drafts for a small manual batch
+
+| Category | Intent | Batch | Primary keyword | Title | File |
+| --- | --- | --- | --- | --- | --- |
+| AI Agent | informational | 40 | AI Agent 部署 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| AI 部署 | informational | 40 | 大模型部署 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| AI 部署 | informational | 34 | AI API Key 安全管理 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+
+### Agent and memory
+
+- Published: 0
+- Review-ready drafts: 55
+- Suggested batch size: 3
+- Reason: cluster has review-ready drafts but no public article yet
+
+| Category | Intent | Batch | Primary keyword | Title | File |
+| --- | --- | --- | --- | --- | --- |
+| AI 记忆 | informational | 40 | AI Agent 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| AI 基建 | informational | 32 | Agent 人工审核流程 | Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认 | content/blog/agent-human-review-loop-guide.mdx |
+| AI 基建 | informational | 32 | Agent 记忆数据库设计 | Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则 | content/blog/agent-memory-postgres-schema-guide.mdx |
+
+### RAG and knowledge base
+
+- Published: 0
+- Review-ready drafts: 31
+- Suggested batch size: 2
+- Reason: cluster has review-ready drafts but no public article yet
+
+| Category | Intent | Batch | Primary keyword | Title | File |
+| --- | --- | --- | --- | --- | --- |
+| AI 基建 | informational | 22 | AI 知识库权限 | AI 知识库权限怎么设计：别让检索结果越权 | content/blog/knowledge-base-permission-design-guide.mdx |
+| AI 基建 | informational | 21 | 向量数据库 | 向量数据库怎么选：新手先理解 embedding 和检索 | content/blog/vector-database-beginner-guide.mdx |
+
+### Industry AI prompts
+
+- Published: 0
+- Review-ready drafts: 27
+- Suggested batch size: 3
+- Reason: cluster has review-ready drafts but no public article yet
+
+| Category | Intent | Batch | Primary keyword | Title | File |
+| --- | --- | --- | --- | --- | --- |
+| AI 提示词 | informational | 40 | 全行业 AI 提示词模板 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| AI 提示词 | informational | 32 | 团队 AI 提示词库 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
+| AI 提示词 | informational | 31 | 数据分析 AI 提示词 | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
 
 ## Topic Clusters
 
