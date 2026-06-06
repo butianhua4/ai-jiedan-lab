@@ -67,6 +67,36 @@ async function main() {
       uniqueCandidateFiles: number;
     };
   }>("content/automation/industry-prompt-coverage.json");
+  const promptReviewPack = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    items?: Array<{
+      commandBoundary?: {
+        markReviewAfterHumanApproval?: string;
+        publishConfirm?: string;
+        publishDryRunAfterReview?: string;
+        stopBefore?: string;
+      };
+      humanDecisionChecklist?: unknown[];
+      readyForHumanReview?: boolean;
+      riskChecks?: unknown[];
+      safeDraft?: boolean;
+      searchQueries?: unknown[];
+      sourceTargets?: unknown[];
+    }>;
+    summary: {
+      duplicateFiles: number;
+      industriesCovered: number;
+      items: number;
+      itemsWithChecklists: number;
+      itemsWithCommandBoundary: number;
+      itemsWithOfficialSources: number;
+      itemsWithSearchQueries: number;
+      promptPublicArticles: number;
+      safeDraftItems: number;
+      unsafeItems: number;
+      uniqueFiles: number;
+    };
+  }>("content/automation/industry-prompt-review-pack.json");
   const searchIntentLanes = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     lanes?: Array<{ intentSeeds?: unknown[]; matchedCandidates?: unknown[]; reviewFocus?: unknown[]; sourceTargets?: unknown[]; workflowAngles?: unknown[] }>;
@@ -815,6 +845,43 @@ async function main() {
       name: "industry prompt candidates stay draft and non-indexable",
       ok: promptCoverage.summary.unsafeCandidateItems === 0,
       detail: `unsafeCandidateItems=${promptCoverage.summary.unsafeCandidateItems}`,
+    },
+    {
+      name: "industry prompt review pack is read-only and deduplicated",
+      ok:
+        promptReviewPack.guardrails.autoEditArticles === false &&
+        promptReviewPack.guardrails.autoMarkReview === false &&
+        promptReviewPack.guardrails.autoPublish === false &&
+        promptReviewPack.summary.items >= 10 &&
+        promptReviewPack.summary.uniqueFiles === promptReviewPack.summary.items &&
+        promptReviewPack.summary.duplicateFiles === 0,
+      detail: `items=${promptReviewPack.summary.items}, unique=${promptReviewPack.summary.uniqueFiles}, duplicates=${promptReviewPack.summary.duplicateFiles}`,
+    },
+    {
+      name: "industry prompt review pack has source-backed human review boundaries",
+      ok:
+        promptReviewPack.summary.unsafeItems === 0 &&
+        promptReviewPack.summary.safeDraftItems === promptReviewPack.summary.items &&
+        promptReviewPack.summary.itemsWithOfficialSources === promptReviewPack.summary.items &&
+        promptReviewPack.summary.itemsWithSearchQueries === promptReviewPack.summary.items &&
+        promptReviewPack.summary.itemsWithChecklists === promptReviewPack.summary.items &&
+        promptReviewPack.summary.itemsWithCommandBoundary === promptReviewPack.summary.items &&
+        Boolean(
+          promptReviewPack.items?.every(
+            (item) =>
+              item.readyForHumanReview === true &&
+              item.safeDraft === true &&
+              (item.sourceTargets?.length || 0) >= 4 &&
+              (item.searchQueries?.length || 0) >= 3 &&
+              (item.humanDecisionChecklist?.length || 0) >= 6 &&
+              (item.riskChecks?.length || 0) >= 4 &&
+              item.commandBoundary?.markReviewAfterHumanApproval?.includes("--confirm-human") &&
+              !item.commandBoundary?.publishDryRunAfterReview?.includes("--confirm") &&
+              item.commandBoundary?.publishConfirm === "not-included" &&
+              item.commandBoundary?.stopBefore?.includes("explicit human approval"),
+          ),
+        ),
+      detail: `safe=${promptReviewPack.summary.safeDraftItems}, sources=${promptReviewPack.summary.itemsWithOfficialSources}, commands=${promptReviewPack.summary.itemsWithCommandBoundary}, publicPrompt=${promptReviewPack.summary.promptPublicArticles}`,
     },
     {
       name: "search intent lane map is read-only and broad",

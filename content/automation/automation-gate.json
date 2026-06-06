@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-06T16:24:10.315Z",
+  "generatedAt": "2026-06-06T16:34:51.379Z",
   "ok": true,
   "summary": {
-    "checks": 83,
+    "checks": 85,
     "failed": 0,
-    "passed": 83
+    "passed": 85
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=101, unsafeClaims=0, watchMentions=587"
+      "detail": "filesScanned=103, unsafeClaims=0, watchMentions=662"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -206,6 +206,16 @@
       "name": "industry prompt candidates stay draft and non-indexable",
       "ok": true,
       "detail": "unsafeCandidateItems=0"
+    },
+    {
+      "name": "industry prompt review pack is read-only and deduplicated",
+      "ok": true,
+      "detail": "items=12, unique=12, duplicates=0"
+    },
+    {
+      "name": "industry prompt review pack has source-backed human review boundaries",
+      "ok": true,
+      "detail": "safe=12, sources=12, commands=12, publicPrompt=0"
     },
     {
       "name": "search intent lane map is read-only and broad",

@@ -1,0 +1,1067 @@
+{
+  "generatedAt": "2026-06-06T16:33:19.007Z",
+  "guardrails": {
+    "autoEditArticles": false,
+    "autoMarkReview": false,
+    "autoPublish": false,
+    "note": "Read-only industry prompt review pack. It selects broad industry AI prompt drafts for human review and does not edit, mark review, or publish.",
+    "stopBefore": "Stop before mark:review and stop before publish. Human approval is required for every article."
+  },
+  "sourceEvidence": {
+    "coverageGeneratedAt": "2026-06-06T16:33:12.387Z",
+    "coverageGuardrails": {
+      "autoMarkReview": false,
+      "autoPublish": false,
+      "note": "This coverage matrix is read-only. It organizes broad industry prompt drafts for manual review and does not claim measured traffic."
+    },
+    "coverageSummary": {
+      "currentPackPromptItems": 1,
+      "industries": 16,
+      "industriesWithoutPublicCoverage": 16,
+      "industriesWithReadyCandidates": 16,
+      "plannedPromptItems": 3,
+      "promptDrafts": 25,
+      "promptPublicArticles": 0,
+      "reviewReadyPromptDrafts": 25,
+      "totalCandidateMentions": 32,
+      "uniqueCandidateFiles": 19,
+      "unsafeCandidateItems": 0
+    },
+    "officialPromptSources": [
+      "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+      "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+      "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+      "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+      "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+    ],
+    "trafficNote": "Search queries are broad intent seeds, not measured traffic, rankings, clicks, impressions, or income."
+  },
+  "summary": {
+    "duplicateFiles": 0,
+    "industriesCovered": 12,
+    "industriesWithoutPublicCoverage": 16,
+    "items": 12,
+    "itemsWithChecklists": 12,
+    "itemsWithCommandBoundary": 12,
+    "itemsWithOfficialSources": 12,
+    "itemsWithSearchQueries": 12,
+    "promptPublicArticles": 0,
+    "reviewReadyPromptDrafts": 25,
+    "safeDraftItems": 12,
+    "unsafeItems": 0,
+    "uniqueFiles": 12
+  },
+  "unsafeItems": [],
+  "nextItems": [
+    {
+      "audience": "跨行业新手、团队负责人、内容运营",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "全行业提示词模板库",
+      "priorityScore": 380,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "必须说明提示词不是万能答案",
+        "补齐输入字段、输出格式、质检标准和反例",
+        "避免承诺直接带来成交、排名或收益"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "AI 提示词大全",
+        "ChatGPT 提示词模板",
+        "全行业 AI 提示词",
+        "AI prompt library"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "workflowAngles": [
+        "行业分类",
+        "提示词版本管理",
+        "审核标准",
+        "复用规则"
+      ]
+    },
+    {
+      "audience": "客服、售后、工单运营",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/customer-service-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/customer-service-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "客服",
+      "priorityScore": 356,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "强调人工升级边界",
+        "敏感投诉和退款不能自动定性",
+        "输出必须包含情绪安抚和事实确认"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "客服 AI 提示词",
+        "客服回复 AI 模板",
+        "工单分类 AI prompt",
+        "售后回复 AI 提示词"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
+      "workflowAngles": [
+        "回复草稿",
+        "工单分类",
+        "情绪安抚",
+        "升级判断"
+      ]
+    },
+    {
+      "audience": "运营、项目管理、内部流程负责人",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/manufacturing-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/manufacturing-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/manufacturing-ai-prompts-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "运营",
+      "priorityScore": 351,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "SOP 和复盘要保留负责人、时间线和验收标准",
+        "周报不能凭空编造数据",
+        "活动计划要保留风险清单"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "运营 AI 提示词",
+        "周报 AI prompt",
+        "SOP AI 提示词",
+        "活动计划 AI 提示词"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘",
+      "workflowAngles": [
+        "周报",
+        "SOP",
+        "活动计划",
+        "数据解释"
+      ]
+    },
+    {
+      "audience": "销售、BD、客户成功",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/sales-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/sales-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/sales-ai-prompts-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "销售",
+      "priorityScore": 346,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "提示词要要求输入客户背景和真实约束",
+        "异议处理不能变成夸大承诺",
+        "会议纪要要保留待确认事项"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "销售 AI 提示词",
+        "客户跟进 AI 话术",
+        "销售会议纪要 prompt",
+        "异议处理 AI 提示词"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "销售 AI 提示词模板：客户画像、跟进话术、异议处理和会议纪要",
+      "workflowAngles": [
+        "客户画像",
+        "跟进话术",
+        "异议处理",
+        "会议纪要"
+      ]
+    },
+    {
+      "audience": "开发者、测试、技术负责人",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/software-development-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/software-development-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/software-development-ai-prompts-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "软件开发",
+      "priorityScore": 346,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "代码建议必须经过测试",
+        "Bug 排查要保留复现步骤",
+        "不要把 AI 输出当成最终安全审计"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "软件开发 AI 提示词",
+        "代码审查 AI prompt",
+        "Bug 排查 AI 提示词",
+        "测试用例 AI 提示词"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "软件开发 AI 提示词模板：需求拆解、代码审查、Bug 排查和测试用例",
+      "workflowAngles": [
+        "需求拆解",
+        "代码审查",
+        "Bug 排查",
+        "测试用例"
+      ]
+    },
+    {
+      "audience": "HR、招聘、培训负责人",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/hr-recruiting-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/hr-recruiting-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/hr-recruiting-ai-prompts-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "HR 招聘",
+      "priorityScore": 338,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "简历初筛要避免歧视性标准",
+        "面试题要与岗位能力相关",
+        "培训材料要保留人工确认"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "HR AI 提示词",
+        "招聘 AI prompt",
+        "简历初筛 AI 提示词",
+        "面试题 AI 提示词"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "人力招聘 AI 提示词模板：JD、简历初筛、面试题和培训材料",
+      "workflowAngles": [
+        "JD",
+        "简历初筛",
+        "面试题",
+        "培训材料"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "audience": "跨行业新手、团队负责人、内容运营",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "全行业提示词模板库",
+      "priorityScore": 380,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "必须说明提示词不是万能答案",
+        "补齐输入字段、输出格式、质检标准和反例",
+        "避免承诺直接带来成交、排名或收益"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "AI 提示词大全",
+        "ChatGPT 提示词模板",
+        "全行业 AI 提示词",
+        "AI prompt library"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "workflowAngles": [
+        "行业分类",
+        "提示词版本管理",
+        "审核标准",
+        "复用规则"
+      ]
+    },
+    {
+      "audience": "客服、售后、工单运营",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/customer-service-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/customer-service-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "客服",
+      "priorityScore": 356,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "强调人工升级边界",
+        "敏感投诉和退款不能自动定性",
+        "输出必须包含情绪安抚和事实确认"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "客服 AI 提示词",
+        "客服回复 AI 模板",
+        "工单分类 AI prompt",
+        "售后回复 AI 提示词"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
+      "workflowAngles": [
+        "回复草稿",
+        "工单分类",
+        "情绪安抚",
+        "升级判断"
+      ]
+    },
+    {
+      "audience": "运营、项目管理、内部流程负责人",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/manufacturing-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/manufacturing-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/manufacturing-ai-prompts-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "运营",
+      "priorityScore": 351,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "SOP 和复盘要保留负责人、时间线和验收标准",
+        "周报不能凭空编造数据",
+        "活动计划要保留风险清单"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "运营 AI 提示词",
+        "周报 AI prompt",
+        "SOP AI 提示词",
+        "活动计划 AI 提示词"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘",
+      "workflowAngles": [
+        "周报",
+        "SOP",
+        "活动计划",
+        "数据解释"
+      ]
+    },
+    {
+      "audience": "销售、BD、客户成功",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/sales-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/sales-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/sales-ai-prompts-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "销售",
+      "priorityScore": 346,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "提示词要要求输入客户背景和真实约束",
+        "异议处理不能变成夸大承诺",
+        "会议纪要要保留待确认事项"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "销售 AI 提示词",
+        "客户跟进 AI 话术",
+        "销售会议纪要 prompt",
+        "异议处理 AI 提示词"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "销售 AI 提示词模板：客户画像、跟进话术、异议处理和会议纪要",
+      "workflowAngles": [
+        "客户画像",
+        "跟进话术",
+        "异议处理",
+        "会议纪要"
+      ]
+    },
+    {
+      "audience": "开发者、测试、技术负责人",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/software-development-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/software-development-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/software-development-ai-prompts-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "软件开发",
+      "priorityScore": 346,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "代码建议必须经过测试",
+        "Bug 排查要保留复现步骤",
+        "不要把 AI 输出当成最终安全审计"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "软件开发 AI 提示词",
+        "代码审查 AI prompt",
+        "Bug 排查 AI 提示词",
+        "测试用例 AI 提示词"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "软件开发 AI 提示词模板：需求拆解、代码审查、Bug 排查和测试用例",
+      "workflowAngles": [
+        "需求拆解",
+        "代码审查",
+        "Bug 排查",
+        "测试用例"
+      ]
+    },
+    {
+      "audience": "HR、招聘、培训负责人",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/hr-recruiting-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/hr-recruiting-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/hr-recruiting-ai-prompts-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "HR 招聘",
+      "priorityScore": 338,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "简历初筛要避免歧视性标准",
+        "面试题要与岗位能力相关",
+        "培训材料要保留人工确认"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "HR AI 提示词",
+        "招聘 AI prompt",
+        "简历初筛 AI 提示词",
+        "面试题 AI 提示词"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "人力招聘 AI 提示词模板：JD、简历初筛、面试题和培训材料",
+      "workflowAngles": [
+        "JD",
+        "简历初筛",
+        "面试题",
+        "培训材料"
+      ]
+    },
+    {
+      "audience": "营销、品牌、投放、内容团队",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/marketing-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/marketing-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/marketing-ai-prompts-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "营销",
+      "priorityScore": 337,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "区分选题、广告文案、SEO 和复盘场景",
+        "保留事实核查和品牌语气确认",
+        "避免暗示稳定排名或转化"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "营销 AI 提示词",
+        "广告文案 AI prompt",
+        "SEO AI 提示词",
+        "活动复盘 AI 提示词"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "营销 AI 提示词模板：选题、广告文案、SEO 和活动复盘怎么写",
+      "workflowAngles": [
+        "选题",
+        "广告文案",
+        "SEO 大纲",
+        "活动复盘"
+      ]
+    },
+    {
+      "audience": "财务、行政、经营分析人员",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/finance-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/finance-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/finance-ai-prompts-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "财务",
+      "priorityScore": 336,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "不能替代会计或税务判断",
+        "报表摘要必须引用输入数据",
+        "风险清单要标记需要人工核对"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "财务 AI 提示词",
+        "报表摘要 AI prompt",
+        "预算复盘 AI 提示词",
+        "费用分类 AI 提示词"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "财务 AI 提示词模板：报表摘要、费用分类、预算复盘和风险清单",
+      "workflowAngles": [
+        "报表摘要",
+        "费用分类",
+        "预算复盘",
+        "风险清单"
+      ]
+    },
+    {
+      "audience": "法务、合同管理、业务负责人",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/legal-contract-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/legal-contract-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/legal-contract-ai-prompts-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "法务合同",
+      "priorityScore": 334,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "必须声明不能替代律师意见",
+        "条款风险要基于输入合同文本",
+        "输出要区分事实摘要和待咨询问题"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "合同 AI 提示词",
+        "法务 AI prompt",
+        "合同风险 AI 提示词",
+        "条款摘要 AI 提示词"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "法务合同 AI 提示词模板：条款摘要、风险清单和修改问题",
+      "workflowAngles": [
+        "条款摘要",
+        "风险清单",
+        "修改问题",
+        "谈判准备"
+      ]
+    },
+    {
+      "audience": "教师、教培、学习产品团队",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/education-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/education-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/education-ai-prompts-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "教育",
+      "priorityScore": 332,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "不能替代教师判断",
+        "测验题要保留难度和答案核对",
+        "学习计划要按学生情况调整"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "教育 AI 提示词",
+        "教案 AI prompt",
+        "备课 AI 提示词",
+        "测验 AI 提示词"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "教育 AI 提示词模板：备课、教案、测验、反馈和学习计划",
+      "workflowAngles": [
+        "备课",
+        "教案",
+        "测验",
+        "学习计划"
+      ]
+    },
+    {
+      "audience": "电商运营、店铺客服、商品编辑",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ecommerce-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ecommerce-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/ecommerce-ai-prompts-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "电商",
+      "priorityScore": 331,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "商品事实必须由人工补充",
+        "评价分析要避免泄露用户隐私",
+        "售后回复要保留平台规则边界"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "电商 AI 提示词",
+        "商品标题 AI prompt",
+        "详情页 AI 文案",
+        "评价分析 AI 提示词"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复",
+      "workflowAngles": [
+        "商品标题",
+        "详情页",
+        "评价分析",
+        "售后回复"
+      ]
+    },
+    {
+      "audience": "产品经理、创业团队、需求分析人员",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/product-manager-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/product-manager-ai-prompts-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify the prompt framework guidance against the official source targets.",
+        "Check that prompt examples require user-provided facts instead of inventing business data.",
+        "Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion.",
+        "Make sure each prompt has input fields, output format, review criteria, and a human escalation boundary.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "industry": "产品经理",
+      "priorityScore": 324,
+      "publicMatches": 0,
+      "qualityScore": 100,
+      "readyForHumanReview": true,
+      "reviewFocus": [
+        "PRD 和用户故事必须连接真实业务目标",
+        "竞品分析要保留来源和不确定性",
+        "验收标准要可测试"
+      ],
+      "riskChecks": [
+        "No fabricated metrics, rankings, traffic, income, or client results.",
+        "No claim that prompts replace professional judgment in regulated or high-stakes workflows.",
+        "No unsafe collection or exposure of private customer, employee, patient, or financial data.",
+        "No instruction that bypasses platform rules, approval workflows, or human review.",
+        "No unsupported model-specific behavior unless backed by a current official source."
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "产品经理 AI 提示词",
+        "PRD AI prompt",
+        "需求分析 AI 提示词",
+        "用户故事 AI 提示词"
+      ],
+      "sourceTargets": [
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+      ],
+      "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
+      "workflowAngles": [
+        "需求分析",
+        "PRD",
+        "竞品",
+        "验收标准"
+      ]
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-06T16:24:10.315Z
+Generated at: 2026-06-06T16:34:51.379Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 83
-- Passed: 83
+- Checks: 85
+- Passed: 85
 - Failed: 0
 
 ## Checks
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=101, unsafeClaims=0, watchMentions=587 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=103, unsafeClaims=0, watchMentions=662 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, candidates=19 |
@@ -54,6 +54,8 @@ Overall: PASS
 | industry prompt coverage has broad reviewable coverage | PASS | industries=16, withCandidates=16, reviewReady=25, unique=19 |
 | industry prompt coverage includes source and search review tasks | PASS | officialSources=5, industries=16 |
 | industry prompt candidates stay draft and non-indexable | PASS | unsafeCandidateItems=0 |
+| industry prompt review pack is read-only and deduplicated | PASS | items=12, unique=12, duplicates=0 |
+| industry prompt review pack has source-backed human review boundaries | PASS | safe=12, sources=12, commands=12, publicPrompt=0 |
 | search intent lane map is read-only and broad | PASS | lanes=12, highPriority=12, withReadyDrafts=12 |
 | search intent lane map includes sources, review focus, and safe candidates | PASS | readyDraftMatches=233, noPublicCoverage=10, notReadyMatched=355 |
 | search intent approval packet is read-only and covers current wave plus next gaps | PASS | currentWave=3, nextGap=6, nextGapLanes=3 |

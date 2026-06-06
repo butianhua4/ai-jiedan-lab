@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-06T16:24:10.369Z
+Generated at: 2026-06-06T16:34:51.311Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -53,7 +53,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=ru
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - https://docs.dify.ai -> https://docs.dify.ai/en/use-dify/getting-started/introduction
@@ -277,8 +277,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 101
-- Traffic claim watch mentions: 587
+- Traffic claim files scanned: 103
+- Traffic claim watch mentions: 662
 
 ## Preflight
 
@@ -561,6 +561,28 @@ Next review files:
 | 销售 | 196 | 0 | 2 | 销售 AI 提示词<br>客户跟进 AI 话术 |
 | HR 招聘 | 188 | 0 | 2 | HR AI 提示词<br>招聘 AI prompt |
 
+## Industry Prompt Review Pack
+
+- Items: 12
+- Industries covered: 12
+- Unique files: 12
+- Duplicate files: 0
+- Safe draft items: 12
+- Unsafe items: 0
+- With official sources: 12
+- With search queries: 12
+- With command boundary: 12
+- Public prompt articles: 0
+
+| Ready | Safe | Score | Public | Sources | Queries | Industry | Title | File |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| true | true | 380 | 0 | 5 | 4 | 全行业提示词模板库 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | true | 356 | 0 | 5 | 4 | 客服 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
+| true | true | 351 | 0 | 5 | 4 | 运营 | 制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘 | content/blog/manufacturing-ai-prompts-guide.mdx |
+| true | true | 346 | 0 | 5 | 4 | 销售 | 销售 AI 提示词模板：客户画像、跟进话术、异议处理和会议纪要 | content/blog/sales-ai-prompts-guide.mdx |
+| true | true | 346 | 0 | 5 | 4 | 软件开发 | 软件开发 AI 提示词模板：需求拆解、代码审查、Bug 排查和测试用例 | content/blog/software-development-ai-prompts-guide.mdx |
+| true | true | 338 | 0 | 5 | 4 | HR 招聘 | 人力招聘 AI 提示词模板：JD、简历初筛、面试题和培训材料 | content/blog/hr-recruiting-ai-prompts-guide.mdx |
+
 ## Cannibalization Warnings
 
 - Conflicts: 200
@@ -596,7 +618,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-06T16:23:50.829Z
+- Latest check: 2026-06-06T16:34:24.231Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
@@ -614,6 +636,7 @@ Next review files:
 - Use docs/wave-publish-simulation.md to see the exact post-approval mark-review and publish dry-run path.
 - Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.
 - Use docs/public-coverage-gap-decision-pack.md to review the 8 broad-demand public gap candidates and their optimization actions.
+- Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.
 - Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.
 - Use docs/source-target-health-audit.md to confirm official source links are reachable before approving fast-changing AI guidance.
 - Use docs/review-action-board.md as the prioritized task board for Wave 1 and public-gap manual review.

@@ -68,6 +68,32 @@ type PromptCoverage = {
   };
 };
 
+type PromptReviewPack = {
+  nextItems: Array<{
+    file: string;
+    industry: string;
+    priorityScore: number;
+    publicMatches: number;
+    readyForHumanReview: boolean;
+    safeDraft: boolean;
+    searchQueries: string[];
+    sourceTargets: string[];
+    title: string;
+  }>;
+  summary: {
+    duplicateFiles: number;
+    industriesCovered: number;
+    items: number;
+    itemsWithCommandBoundary: number;
+    itemsWithOfficialSources: number;
+    itemsWithSearchQueries: number;
+    promptPublicArticles: number;
+    safeDraftItems: number;
+    unsafeItems: number;
+    uniqueFiles: number;
+  };
+};
+
 type DeploymentCoverage = {
   coverage: Array<{
     candidates: unknown[];
@@ -614,6 +640,7 @@ const reports = {
   publicCoverageGapPreflight: readJson<PublicCoverageGapPreflight>("content/automation/public-coverage-gap-preflight.json"),
   publicCoverageGapDecisionPack: readJson<PublicCoverageGapDecisionPack>("content/automation/public-coverage-gap-decision-pack.json"),
   promptCoverage: readJson<PromptCoverage>("content/automation/industry-prompt-coverage.json"),
+  promptReviewPack: readJson<PromptReviewPack>("content/automation/industry-prompt-review-pack.json"),
   gate: readJson<{ ok: boolean; summary: { checks: number; failed: number; passed: number } }>("content/automation/automation-gate.json"),
   liveSearch: readJson<{
     articles: { checked: number; failed: unknown[]; missingFromSitemap: string[]; publicCount: number };
@@ -954,6 +981,19 @@ const payload = {
     top: reports.promptCoverage.data?.coverage.slice(0, 6) ?? [],
     uniqueCandidateFiles: reports.promptCoverage.data?.summary.uniqueCandidateFiles ?? null,
   },
+  promptReviewPack: {
+    duplicateFiles: reports.promptReviewPack.data?.summary.duplicateFiles ?? null,
+    industriesCovered: reports.promptReviewPack.data?.summary.industriesCovered ?? null,
+    items: reports.promptReviewPack.data?.summary.items ?? null,
+    itemsWithCommandBoundary: reports.promptReviewPack.data?.summary.itemsWithCommandBoundary ?? null,
+    itemsWithOfficialSources: reports.promptReviewPack.data?.summary.itemsWithOfficialSources ?? null,
+    itemsWithSearchQueries: reports.promptReviewPack.data?.summary.itemsWithSearchQueries ?? null,
+    promptPublicArticles: reports.promptReviewPack.data?.summary.promptPublicArticles ?? null,
+    safeDraftItems: reports.promptReviewPack.data?.summary.safeDraftItems ?? null,
+    top: reports.promptReviewPack.data?.nextItems ?? [],
+    unsafeItems: reports.promptReviewPack.data?.summary.unsafeItems ?? null,
+    uniqueFiles: reports.promptReviewPack.data?.summary.uniqueFiles ?? null,
+  },
   cannibalization: {
     conflicts: reports.cannibalization.data?.summary.conflicts ?? null,
     reviewBatchConflicts: reports.cannibalization.data?.summary.reviewBatchConflicts ?? null,
@@ -1066,6 +1106,9 @@ function buildNextActions() {
   if (!reports.searchQueryMatch.data || reports.searchQueryMatch.data.summary.blockingItems > 0) {
     return ["Open docs/search-query-match-audit.md and resolve blocking query-match issues before manual review."];
   }
+  if (!reports.promptReviewPack.data || reports.promptReviewPack.data.summary.unsafeItems > 0 || reports.promptReviewPack.data.summary.duplicateFiles > 0) {
+    return ["Open docs/industry-prompt-review-pack.md and resolve prompt review pack safety or duplicate-file issues before manual review."];
+  }
   if (!reports.broadSearchDemand.data || reports.broadSearchDemand.data.summary.themesWithReadyDrafts !== reports.broadSearchDemand.data.summary.themes) {
     return ["Open docs/broad-search-demand-map.md and ensure every broad demand theme has ready draft candidates."];
   }
@@ -1087,6 +1130,7 @@ function buildNextActions() {
     "Use docs/wave-publish-simulation.md to see the exact post-approval mark-review and publish dry-run path.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.",
     "Use docs/public-coverage-gap-decision-pack.md to review the 8 broad-demand public gap candidates and their optimization actions.",
+    "Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.",
     "Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.",
     "Use docs/source-target-health-audit.md to confirm official source links are reachable before approving fast-changing AI guidance.",
     "Use docs/review-action-board.md as the prioritized task board for Wave 1 and public-gap manual review.",
@@ -1616,6 +1660,25 @@ function toMarkdown(data: typeof payload) {
     "| --- | --- | --- | --- | --- |",
     ...data.promptCoverage.top.map((item) => (
       `| ${item.industry} | ${item.gapScore} | ${item.publicMatches} | ${item.candidates.length} | ${item.searchQueries.slice(0, 2).join("<br>")} |`
+    )),
+    "",
+    "## Industry Prompt Review Pack",
+    "",
+    `- Items: ${data.promptReviewPack.items}`,
+    `- Industries covered: ${data.promptReviewPack.industriesCovered}`,
+    `- Unique files: ${data.promptReviewPack.uniqueFiles}`,
+    `- Duplicate files: ${data.promptReviewPack.duplicateFiles}`,
+    `- Safe draft items: ${data.promptReviewPack.safeDraftItems}`,
+    `- Unsafe items: ${data.promptReviewPack.unsafeItems}`,
+    `- With official sources: ${data.promptReviewPack.itemsWithOfficialSources}`,
+    `- With search queries: ${data.promptReviewPack.itemsWithSearchQueries}`,
+    `- With command boundary: ${data.promptReviewPack.itemsWithCommandBoundary}`,
+    `- Public prompt articles: ${data.promptReviewPack.promptPublicArticles}`,
+    "",
+    "| Ready | Safe | Score | Public | Sources | Queries | Industry | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.promptReviewPack.top.map((item) => (
+      `| ${item.readyForHumanReview} | ${item.safeDraft} | ${item.priorityScore} | ${item.publicMatches} | ${item.sourceTargets.length} | ${item.searchQueries.length} | ${item.industry} | ${item.title} | ${item.file} |`
     )),
     "",
     "## Cannibalization Warnings",

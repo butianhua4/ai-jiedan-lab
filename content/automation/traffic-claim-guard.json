@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-06T16:24:01.841Z",
+  "generatedAt": "2026-06-06T16:34:43.824Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 101,
+    "filesScanned": 103,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 587
+    "watchMentions": 662
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -100,13 +100,13 @@
       "file": "docs/automation-digest.md",
       "line": 280,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 101"
+      "text": "- Traffic claim files scanned: 103"
     },
     {
       "file": "docs/automation-digest.md",
       "line": 281,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 587"
+      "text": "- Traffic claim watch mentions: 662"
     },
     {
       "file": "docs/automation-digest.md",
@@ -130,7 +130,7 @@
       "file": "docs/automation-gate.md",
       "line": 33,
       "reason": "traffic-related mention",
-      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=101, unsafeClaims=0, watchMentions=587 |"
+      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=103, unsafeClaims=0, watchMentions=662 |"
     },
     {
       "file": "docs/broad-search-demand-map.md",
@@ -259,6 +259,156 @@
       "text": "| 31 | 100 | informational | 医疗 AI 提示词 | 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 | content/blog/healthcare-admin-ai-prompts-guide.mdx |"
     },
     {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 17,
+      "reason": "traffic-related mention",
+      "text": "- Traffic note: Search queries are broad intent seeds, not measured traffic, rankings, clicks, impressions, or income."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 104,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated metrics, rankings, traffic, income, or client results."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 115,
+      "reason": "traffic-related mention",
+      "text": "- Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 155,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated metrics, rankings, traffic, income, or client results."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 166,
+      "reason": "traffic-related mention",
+      "text": "- Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 206,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated metrics, rankings, traffic, income, or client results."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 217,
+      "reason": "traffic-related mention",
+      "text": "- Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 257,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated metrics, rankings, traffic, income, or client results."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 268,
+      "reason": "traffic-related mention",
+      "text": "- Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 308,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated metrics, rankings, traffic, income, or client results."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 319,
+      "reason": "traffic-related mention",
+      "text": "- Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 359,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated metrics, rankings, traffic, income, or client results."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 370,
+      "reason": "traffic-related mention",
+      "text": "- Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 410,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated metrics, rankings, traffic, income, or client results."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 421,
+      "reason": "traffic-related mention",
+      "text": "- Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 461,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated metrics, rankings, traffic, income, or client results."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 472,
+      "reason": "traffic-related mention",
+      "text": "- Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 512,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated metrics, rankings, traffic, income, or client results."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 523,
+      "reason": "traffic-related mention",
+      "text": "- Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 563,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated metrics, rankings, traffic, income, or client results."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 574,
+      "reason": "traffic-related mention",
+      "text": "- Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 614,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated metrics, rankings, traffic, income, or client results."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 625,
+      "reason": "traffic-related mention",
+      "text": "- Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 665,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated metrics, rankings, traffic, income, or client results."
+    },
+    {
+      "file": "docs/industry-prompt-review-pack.md",
+      "line": 676,
+      "reason": "traffic-related mention",
+      "text": "- Confirm the article does not promise rankings, traffic, revenue, legal outcomes, medical outcomes, or guaranteed conversion."
+    },
+    {
       "file": "docs/live-search-surface.md",
       "line": 5,
       "reason": "traffic-related mention",
@@ -304,13 +454,13 @@
       "file": "docs/manual-review-workbench.md",
       "line": 195,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 101"
+      "text": "- Traffic claim files scanned: 103"
     },
     {
       "file": "docs/manual-review-workbench.md",
       "line": 196,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 587"
+      "text": "- Traffic claim watch mentions: 662"
     },
     {
       "file": "docs/manual-review-workbench.md",
@@ -341,156 +491,6 @@
       "line": 15,
       "reason": "traffic-related mention",
       "text": "原因很简单：文章可以带来搜索流量，但工具和模板才更容易让用户停留、复制结果、下载资料或联系服务。早期不要把网站做得太像广告站。"
-    },
-    {
-      "file": "docs/monetization-and-payment-plan.md",
-      "line": 87,
-      "reason": "traffic-related mention",
-      "text": "等搜索流量稳定后，再接广告。"
-    },
-    {
-      "file": "docs/monetization-and-payment-plan.md",
-      "line": 127,
-      "reason": "traffic-related mention",
-      "text": "3. 接 Google Search Console。"
-    },
-    {
-      "file": "docs/monetization-and-payment-plan.md",
-      "line": 130,
-      "reason": "traffic-related mention",
-      "text": "6. 有稳定访问后再申请广告和联盟计划。"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 24,
-      "reason": "traffic-related mention",
-      "text": "## 4. 收款和流量收益"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 29,
-      "reason": "traffic-related mention",
-      "text": "- 稳定流量后再接联盟链接和广告。"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 46,
-      "reason": "traffic-related mention",
-      "text": "- 有 5 篇以上人工审核公开文章：注册 Google Search Console。"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 47,
-      "reason": "traffic-related mention",
-      "text": "- 有稳定访问：开启 Vercel Web Analytics 或 Google Analytics。"
-    },
-    {
-      "file": "docs/platform-registration-roadmap.md",
-      "line": 13,
-      "reason": "traffic-related mention",
-      "text": "## 第一阶段：收录和流量观察"
-    },
-    {
-      "file": "docs/platform-registration-roadmap.md",
-      "line": 17,
-      "reason": "traffic-related mention",
-      "text": "- 网站正式可访问。"
-    },
-    {
-      "file": "docs/platform-registration-roadmap.md",
-      "line": 23,
-      "reason": "traffic-related mention",
-      "text": "- Google Search Console"
-    },
-    {
-      "file": "docs/platform-registration-roadmap.md",
-      "line": 29,
-      "reason": "traffic-related mention",
-      "text": "- 查看哪些搜索词带来曝光。"
-    },
-    {
-      "file": "docs/platform-registration-roadmap.md",
-      "line": 38,
-      "reason": "traffic-related mention",
-      "text": "## 第二阶段：流量统计"
-    },
-    {
-      "file": "docs/platform-registration-roadmap.md",
-      "line": 42,
-      "reason": "traffic-related mention",
-      "text": "- Search Console 开始有曝光。"
-    },
-    {
-      "file": "docs/platform-registration-roadmap.md",
-      "line": 47,
-      "reason": "traffic-related mention",
-      "text": "- Vercel Web Analytics"
-    },
-    {
-      "file": "docs/platform-registration-roadmap.md",
-      "line": 48,
-      "reason": "traffic-related mention",
-      "text": "- Google Analytics"
-    },
-    {
-      "file": "docs/platform-registration-roadmap.md",
-      "line": 50,
-      "reason": "traffic-related mention",
-      "text": "建议先用 Vercel Web Analytics，因为开启简单，不需要改很多代码。"
-    },
-    {
-      "file": "docs/platform-registration-roadmap.md",
-      "line": 56,
-      "reason": "traffic-related mention",
-      "text": "- 模板页有访问。"
-    },
-    {
-      "file": "docs/platform-registration-roadmap.md",
-      "line": 133,
-      "reason": "traffic-related mention",
-      "text": "3. 人工审核少量文章后，再接 Google Search Console。"
-    },
-    {
-      "file": "docs/platform-registration-roadmap.md",
-      "line": 135,
-      "reason": "traffic-related mention",
-      "text": "等需要注册新平台时，优先注册 Google Search Console。其他平台都可以再等等。"
-    },
-    {
-      "file": "docs/post-deploy-checklist.md",
-      "line": 34,
-      "reason": "traffic-related mention",
-      "text": "- Google Search Console：用于提交 sitemap 和看收录。"
-    },
-    {
-      "file": "docs/post-deploy-checklist.md",
-      "line": 35,
-      "reason": "traffic-related mention",
-      "text": "- Google Analytics 或 Vercel Web Analytics：用于看流量。"
-    },
-    {
-      "file": "docs/public-coverage-gap-decision-pack.md",
-      "line": 18,
-      "reason": "traffic-related mention",
-      "text": "- Traffic note: Search seeds and link suggestions are editorial signals, not measured rankings, impressions, clicks, traffic, or income."
-    },
-    {
-      "file": "docs/public-coverage-gap-decision-pack.md",
-      "line": 99,
-      "reason": "traffic-related mention",
-      "text": "- Confirm the article does not claim measured traffic, rankings, impressions, clicks, revenue, or income."
-    },
-    {
-      "file": "docs/public-coverage-gap-decision-pack.md",
-      "line": 142,
-      "reason": "traffic-related mention",
-      "text": "- Confirm the article does not claim measured traffic, rankings, impressions, clicks, revenue, or income."
-    },
-    {
-      "file": "docs/public-coverage-gap-decision-pack.md",
-      "line": 185,
-      "reason": "traffic-related mention",
-      "text": "- Confirm the article does not claim measured traffic, rankings, impressions, clicks, revenue, or income."
     }
   ],
   "nextActions": [
