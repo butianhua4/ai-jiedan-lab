@@ -62,6 +62,7 @@ const tasks: Task[] = [
   { title: "Generate autopilot search query gap brief", args: ["run", "automation:autopilot-search-query-gap"] },
   { title: "Generate autopilot queued playbook brief", args: ["run", "automation:autopilot-queued-playbook"] },
   { title: "Generate autopilot broad AI demand brief", args: ["run", "automation:autopilot-broad-ai-demand"] },
+  { title: "Generate autopilot broad freshness triage", args: ["run", "automation:autopilot-broad-freshness"] },
   { title: "Generate review coverage report", args: ["run", "automation:review-coverage"] },
   { title: "Generate manual review workbench", args: ["run", "automation:workbench"] },
   { title: "Run searchability check", args: ["run", "--silent", "searchability:check"], outputFile: "content/automation/searchability-check.json" },

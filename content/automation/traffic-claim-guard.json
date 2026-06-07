@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-07T02:16:54.031Z",
+  "generatedAt": "2026-06-07T02:29:35.733Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 127,
+    "filesScanned": 129,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 1127
+    "watchMentions": 1198
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -140,55 +140,55 @@
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 544,
+      "line": 576,
       "reason": "traffic-related mention",
       "text": "## Traffic Evidence"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 546,
+      "line": 578,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 547,
+      "line": 579,
       "reason": "traffic-related mention",
       "text": "- Can claim traffic: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 549,
+      "line": 581,
       "reason": "traffic-related mention",
       "text": "- Measured traffic sources: none"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 550,
+      "line": 582,
       "reason": "traffic-related mention",
       "text": "- Search Console verification evidence: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 553,
+      "line": 585,
       "reason": "traffic-related mention",
       "text": "- Unsupported traffic claims: 0"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 554,
+      "line": 586,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 127"
+      "text": "- Traffic claim files scanned: 129"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 555,
+      "line": 587,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 1114"
+      "text": "- Traffic claim watch mentions: 1190"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 591,
+      "line": 623,
       "reason": "traffic-related mention",
       "text": "| Dify、n8n、MCP 和无代码 AI 自动化 | 258 | 0 | 5 | 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 |"
     },
@@ -208,7 +208,7 @@
       "file": "docs/automation-gate.md",
       "line": 33,
       "reason": "traffic-related mention",
-      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=127, unsafeClaims=0, watchMentions=1114 |"
+      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=129, unsafeClaims=0, watchMentions=1190 |"
     },
     {
       "file": "docs/autopilot-approval-packet.md",
@@ -325,6 +325,162 @@
       "text": "- Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue."
     },
     {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 12,
+      "reason": "traffic-related mention",
+      "text": "- Traffic claim: not-included"
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 14,
+      "reason": "traffic-related mention",
+      "text": "- Note: Read-only broad freshness triage. It prioritizes high-demand AI draft candidates for human fact-checking and does not edit, mark review, publish, or claim traffic."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 121,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 177,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 229,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 279,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 336,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 395,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 461,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 531,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 603,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 661,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 717,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 767,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 815,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 872,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 941,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 993,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 1056,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 1117,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 1180,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 1232,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 1282,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 1331,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 1387,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-freshness-triage.md",
+      "line": 1441,
+      "reason": "traffic-related mention",
+      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
+    },
+    {
       "file": "docs/autopilot-human-review-playbook.md",
       "line": 19,
       "reason": "traffic-related mention",
@@ -335,162 +491,6 @@
       "line": 20,
       "reason": "traffic-related mention",
       "text": "- Can claim traffic: false"
-    },
-    {
-      "file": "docs/autopilot-human-review-playbook.md",
-      "line": 68,
-      "reason": "traffic-related mention",
-      "text": "- Do not claim traffic, ranking, revenue, or conversion lift without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-human-review-playbook.md",
-      "line": 93,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-human-review-playbook.md",
-      "line": 128,
-      "reason": "traffic-related mention",
-      "text": "- Do not claim traffic, ranking, revenue, or conversion lift without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-human-review-playbook.md",
-      "line": 154,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-human-review-playbook.md",
-      "line": 189,
-      "reason": "traffic-related mention",
-      "text": "- Do not claim traffic, ranking, revenue, or conversion lift without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-human-review-playbook.md",
-      "line": 215,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-internal-link-brief.md",
-      "line": 19,
-      "reason": "traffic-related mention",
-      "text": "- Traffic data available: false"
-    },
-    {
-      "file": "docs/autopilot-internal-link-brief.md",
-      "line": 20,
-      "reason": "traffic-related mention",
-      "text": "- Can claim traffic: false"
-    },
-    {
-      "file": "docs/autopilot-queued-playbook-brief.md",
-      "line": 109,
-      "reason": "traffic-related mention",
-      "text": "- No traffic, ranking, revenue, benchmark, cost, latency, or stability claim is approved without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-queued-playbook-brief.md",
-      "line": 224,
-      "reason": "traffic-related mention",
-      "text": "- No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim."
-    },
-    {
-      "file": "docs/autopilot-queued-playbook-brief.md",
-      "line": 328,
-      "reason": "traffic-related mention",
-      "text": "- No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim."
-    },
-    {
-      "file": "docs/autopilot-queued-playbook-brief.md",
-      "line": 391,
-      "reason": "traffic-related mention",
-      "text": "- No traffic, ranking, revenue, benchmark, cost, latency, or stability claim is approved without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-queued-playbook-brief.md",
-      "line": 442,
-      "reason": "traffic-related mention",
-      "text": "- No fabricated metrics, rankings, traffic, income, or client results."
-    },
-    {
-      "file": "docs/autopilot-review-queue.md",
-      "line": 18,
-      "reason": "traffic-related mention",
-      "text": "- Traffic data available: false"
-    },
-    {
-      "file": "docs/autopilot-review-queue.md",
-      "line": 19,
-      "reason": "traffic-related mention",
-      "text": "- Can claim traffic: false"
-    },
-    {
-      "file": "docs/autopilot-review-queue.md",
-      "line": 67,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-queue.md",
-      "line": 84,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-queue.md",
-      "line": 101,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-queue.md",
-      "line": 118,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-queue.md",
-      "line": 135,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-queue.md",
-      "line": 152,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-queue.md",
-      "line": 169,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-queue.md",
-      "line": 186,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-queue.md",
-      "line": 203,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-queue.md",
-      "line": 218,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 19,
-      "reason": "traffic-related mention",
-      "text": "- Traffic data available: false"
     }
   ],
   "nextActions": [

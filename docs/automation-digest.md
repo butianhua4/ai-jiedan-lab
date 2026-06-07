@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T02:17:46.803Z
+Generated at: 2026-06-07T02:29:35.747Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -53,7 +53,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=fr
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - https://docs.dify.ai -> https://docs.dify.ai/en/use-dify/getting-started/introduction
@@ -356,6 +356,38 @@ Unsafe broad AI demand clusters:
 | 293 | 0 | 15 | 6 | 3 | 5 | AI API 接入、限流、成本和多模型路由 | API 接入和报错是明确搜索意图，能和工具页、报价页、部署教程形成内链闭环。 |
 | 287 | 0 | 13 | 6 | 3 | 5 | LLM 观测、评测、日志和上线后质量 | 部署之后的质量和成本问题会持续出现，适合承接更成熟的搜索需求，也能提高文章可信度。 |
 
+## Autopilot Broad Freshness Triage
+
+- Items: 24
+- High risk items: 24
+- Clusters covered: 7
+- Source clusters: 8
+- Source ready candidate files: 33
+- Ready items: 24
+- Safe draft items: 24
+- Unique files: 24
+- Items with command boundary: 24
+- Items with external signals: 24
+- Items with human fact-checks: 24
+- Items with search queries: 24
+- Items with source targets: 24
+- Unsafe items: 0
+
+Unsafe broad freshness triage items:
+
+- none
+
+| Ready | Safe | Priority | Risk | Public | Queries | Sources | Checks | Cluster | Title | File |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| true | true | 431 | high | 0 | 5 | 5 | 15 | 开源大模型部署：Ollama、vLLM、TGI、RunPod | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
+| true | true | 431 | high | 0 | 5 | 8 | 15 | 开源大模型部署：Ollama、vLLM、TGI、RunPod | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
+| true | true | 431 | high | 0 | 5 | 3 | 14 | 开源大模型部署：Ollama、vLLM、TGI、RunPod | 大模型 API 限流和重试怎么做：429、队列、退避和降级方案 | content/blog/llm-api-rate-limit-retry-guide.mdx |
+| true | true | 431 | high | 0 | 5 | 3 | 13 | 开源大模型部署：Ollama、vLLM、TGI、RunPod | 大模型成本监控怎么做：按用户、功能、模型和项目拆账 | content/blog/llm-cost-monitoring-dashboard-guide.mdx |
+| true | true | 431 | high | 0 | 5 | 10 | 16 | 开源大模型部署：Ollama、vLLM、TGI、RunPod | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| true | true | 431 | high | 0 | 5 | 10 | 15 | 开源大模型部署：Ollama、vLLM、TGI、RunPod | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 | content/blog/local-llm-vram-not-enough-guide.mdx |
+| true | true | 427 | high | 0 | 5 | 8 | 16 | Agent 部署、工具调用和生产安全 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | true | 427 | high | 0 | 5 | 10 | 16 | Agent 部署、工具调用和生产安全 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+
 ## Review Optimization Brief
 
 - Briefs: 11
@@ -551,8 +583,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 127
-- Traffic claim watch mentions: 1127
+- Traffic claim files scanned: 129
+- Traffic claim watch mentions: 1198
 
 ## Preflight
 
@@ -914,7 +946,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-07T02:06:44.815Z
+- Latest check: 2026-06-07T02:29:13.960Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
@@ -948,6 +980,7 @@ Next review files:
 - Use docs/autopilot-search-query-gap-brief.md to fill next-10 search-query gaps during manual review.
 - Use docs/autopilot-queued-playbook-brief.md to review the 7 queued sprint items with merged search, source, freshness, and link actions.
 - Use docs/autopilot-broad-ai-demand-brief.md to prioritize broad AI deployment, Agent, memory, RAG, and industry prompt themes.
+- Use docs/autopilot-broad-freshness-triage.md to fact-check high-demand AI drafts before any approval action.
 - Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.
 - If approved by a human, run mark:review with --confirm-human for approved files only.
 - Publish only status=review articles in a 1-3 article batch after a dry-run.

@@ -648,6 +648,41 @@ type AutopilotBroadAiDemandBrief = {
   unsafeClusters: unknown[];
 };
 
+type AutopilotBroadFreshnessTriage = {
+  items: Array<{
+    cluster: string;
+    file: string;
+    freshnessPriority: number;
+    freshnessRisk: string;
+    humanFactCheckChecklist: unknown[];
+    publicMatches: number;
+    readyForHumanFreshnessReview: boolean;
+    safeDraft: boolean;
+    searchQueries: unknown[];
+    sourceSignals: unknown[];
+    sourceTargets: unknown[];
+    title: string;
+  }>;
+  nextItems: AutopilotBroadFreshnessTriage["items"];
+  summary: {
+    clustersCovered: number;
+    highRiskItems: number;
+    items: number;
+    itemsWithCommandBoundary: number;
+    itemsWithExternalSignals: number;
+    itemsWithHumanFactChecks: number;
+    itemsWithSearchQueries: number;
+    itemsWithSourceTargets: number;
+    readyItems: number;
+    safeDraftItems: number;
+    sourceClusters: number;
+    sourceReadyCandidateFiles: number;
+    unsafeItems: number;
+    uniqueFiles: number;
+  };
+  unsafeItems: unknown[];
+};
+
 type ReviewOptimizationBrief = {
   nextBriefs: Array<{
     file: string;
@@ -1028,6 +1063,7 @@ const reports = {
   autopilotSearchQueryGapBrief: readJson<AutopilotSearchQueryGapBrief>("content/automation/autopilot-search-query-gap-brief.json"),
   autopilotQueuedPlaybookBrief: readJson<AutopilotQueuedPlaybookBrief>("content/automation/autopilot-queued-playbook-brief.json"),
   autopilotBroadAiDemandBrief: readJson<AutopilotBroadAiDemandBrief>("content/automation/autopilot-broad-ai-demand-brief.json"),
+  autopilotBroadFreshnessTriage: readJson<AutopilotBroadFreshnessTriage>("content/automation/autopilot-broad-freshness-triage.json"),
   reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
   reviewCannibalizationBrief: readJson<ReviewCannibalizationBrief>("content/automation/review-cannibalization-brief.json"),
   reviewFreshnessBrief: readJson<ReviewFreshnessBrief>("content/automation/review-freshness-brief.json"),
@@ -1238,6 +1274,24 @@ const payload = {
     reviewReadyDrafts: reports.autopilotBroadAiDemandBrief.data?.summary.reviewReadyDrafts ?? null,
     unsafeClusters: reports.autopilotBroadAiDemandBrief.data?.summary.unsafeClusters ?? null,
     unsafeClusterList: reports.autopilotBroadAiDemandBrief.data?.unsafeClusters.slice(0, 8) ?? [],
+  },
+  autopilotBroadFreshnessTriage: {
+    clustersCovered: reports.autopilotBroadFreshnessTriage.data?.summary.clustersCovered ?? null,
+    highRiskItems: reports.autopilotBroadFreshnessTriage.data?.summary.highRiskItems ?? null,
+    items: reports.autopilotBroadFreshnessTriage.data?.summary.items ?? null,
+    itemsList: reports.autopilotBroadFreshnessTriage.data?.nextItems.slice(0, 8) ?? [],
+    itemsWithCommandBoundary: reports.autopilotBroadFreshnessTriage.data?.summary.itemsWithCommandBoundary ?? null,
+    itemsWithExternalSignals: reports.autopilotBroadFreshnessTriage.data?.summary.itemsWithExternalSignals ?? null,
+    itemsWithHumanFactChecks: reports.autopilotBroadFreshnessTriage.data?.summary.itemsWithHumanFactChecks ?? null,
+    itemsWithSearchQueries: reports.autopilotBroadFreshnessTriage.data?.summary.itemsWithSearchQueries ?? null,
+    itemsWithSourceTargets: reports.autopilotBroadFreshnessTriage.data?.summary.itemsWithSourceTargets ?? null,
+    readyItems: reports.autopilotBroadFreshnessTriage.data?.summary.readyItems ?? null,
+    safeDraftItems: reports.autopilotBroadFreshnessTriage.data?.summary.safeDraftItems ?? null,
+    sourceClusters: reports.autopilotBroadFreshnessTriage.data?.summary.sourceClusters ?? null,
+    sourceReadyCandidateFiles: reports.autopilotBroadFreshnessTriage.data?.summary.sourceReadyCandidateFiles ?? null,
+    unsafeItems: reports.autopilotBroadFreshnessTriage.data?.summary.unsafeItems ?? null,
+    unsafeItemList: reports.autopilotBroadFreshnessTriage.data?.unsafeItems.slice(0, 8) ?? [],
+    uniqueFiles: reports.autopilotBroadFreshnessTriage.data?.summary.uniqueFiles ?? null,
   },
   reviewOptimizationBrief: {
     briefs: reports.reviewOptimizationBrief.data?.summary.briefs ?? null,
@@ -1616,6 +1670,9 @@ function buildNextActions() {
   if (!reports.autopilotBroadAiDemandBrief.data || reports.autopilotBroadAiDemandBrief.data.summary.unsafeClusters > 0) {
     return ["Open docs/autopilot-broad-ai-demand-brief.md and resolve unsafe broad AI demand clusters before expanding review work."];
   }
+  if (!reports.autopilotBroadFreshnessTriage.data || reports.autopilotBroadFreshnessTriage.data.summary.unsafeItems > 0) {
+    return ["Open docs/autopilot-broad-freshness-triage.md and resolve unsafe broad freshness triage items before expanding review work."];
+  }
   if (!reports.reviewOptimizationBrief.data || reports.reviewOptimizationBrief.data.summary.unsafeCommands > 0) {
     return ["Open docs/review-optimization-brief.md and resolve unsafe or missing copydesk guidance before manual review."];
   }
@@ -1689,6 +1746,7 @@ function buildNextActions() {
     "Use docs/autopilot-search-query-gap-brief.md to fill next-10 search-query gaps during manual review.",
     "Use docs/autopilot-queued-playbook-brief.md to review the 7 queued sprint items with merged search, source, freshness, and link actions.",
     "Use docs/autopilot-broad-ai-demand-brief.md to prioritize broad AI deployment, Agent, memory, RAG, and industry prompt themes.",
+    "Use docs/autopilot-broad-freshness-triage.md to fact-check high-demand AI drafts before any approval action.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
     "If approved by a human, run mark:review with --confirm-human for approved files only.",
     "Publish only status=review articles in a 1-3 article batch after a dry-run.",
@@ -2049,6 +2107,34 @@ function toMarkdown(data: typeof payload) {
     ...data.autopilotBroadAiDemandBrief.clustersList.map(
       (cluster) =>
         `| ${cluster.gapScore} | ${cluster.publicMatches} | ${cluster.draftMatches} | ${cluster.readyCandidates.length} | ${cluster.sourceSignals.length} | ${cluster.searchQueries.length} | ${cluster.cluster} | ${cluster.why} |`,
+    ),
+    "",
+    "## Autopilot Broad Freshness Triage",
+    "",
+    `- Items: ${data.autopilotBroadFreshnessTriage.items}`,
+    `- High risk items: ${data.autopilotBroadFreshnessTriage.highRiskItems}`,
+    `- Clusters covered: ${data.autopilotBroadFreshnessTriage.clustersCovered}`,
+    `- Source clusters: ${data.autopilotBroadFreshnessTriage.sourceClusters}`,
+    `- Source ready candidate files: ${data.autopilotBroadFreshnessTriage.sourceReadyCandidateFiles}`,
+    `- Ready items: ${data.autopilotBroadFreshnessTriage.readyItems}`,
+    `- Safe draft items: ${data.autopilotBroadFreshnessTriage.safeDraftItems}`,
+    `- Unique files: ${data.autopilotBroadFreshnessTriage.uniqueFiles}`,
+    `- Items with command boundary: ${data.autopilotBroadFreshnessTriage.itemsWithCommandBoundary}`,
+    `- Items with external signals: ${data.autopilotBroadFreshnessTriage.itemsWithExternalSignals}`,
+    `- Items with human fact-checks: ${data.autopilotBroadFreshnessTriage.itemsWithHumanFactChecks}`,
+    `- Items with search queries: ${data.autopilotBroadFreshnessTriage.itemsWithSearchQueries}`,
+    `- Items with source targets: ${data.autopilotBroadFreshnessTriage.itemsWithSourceTargets}`,
+    `- Unsafe items: ${data.autopilotBroadFreshnessTriage.unsafeItems}`,
+    "",
+    "Unsafe broad freshness triage items:",
+    "",
+    ...(data.autopilotBroadFreshnessTriage.unsafeItemList.length ? data.autopilotBroadFreshnessTriage.unsafeItemList.map((item) => `- ${JSON.stringify(item)}`) : ["- none"]),
+    "",
+    "| Ready | Safe | Priority | Risk | Public | Queries | Sources | Checks | Cluster | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.autopilotBroadFreshnessTriage.itemsList.map(
+      (item) =>
+        `| ${item.readyForHumanFreshnessReview} | ${item.safeDraft} | ${item.freshnessPriority} | ${item.freshnessRisk} | ${item.publicMatches} | ${item.searchQueries.length} | ${item.sourceTargets.length} | ${item.humanFactCheckChecklist.length} | ${item.cluster} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Review Optimization Brief",

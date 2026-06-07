@@ -747,6 +747,40 @@ async function main() {
     };
     unsafeClusters?: unknown[];
   }>("content/automation/autopilot-broad-ai-demand-brief.json");
+  const autopilotBroadFreshnessTriage = readJson<{
+    guardrails: {
+      autoEditArticles: boolean;
+      autoMarkReview: boolean;
+      autoPublish: boolean;
+      trafficClaim: string;
+    };
+    items?: Array<{
+      commandBoundary?: { markReviewAfterHumanApproval?: string; publishConfirm?: string; publishDryRunAfterReview?: string };
+      humanFactCheckChecklist?: unknown[];
+      readyForHumanFreshnessReview?: boolean;
+      safeDraft?: boolean;
+      searchQueries?: unknown[];
+      sourceSignals?: unknown[];
+      sourceTargets?: unknown[];
+    }>;
+    summary: {
+      clustersCovered: number;
+      highRiskItems: number;
+      items: number;
+      itemsWithCommandBoundary: number;
+      itemsWithExternalSignals: number;
+      itemsWithHumanFactChecks: number;
+      itemsWithSearchQueries: number;
+      itemsWithSourceTargets: number;
+      readyItems: number;
+      safeDraftItems: number;
+      sourceClusters: number;
+      sourceReadyCandidateFiles: number;
+      unsafeItems: number;
+      uniqueFiles: number;
+    };
+    unsafeItems?: unknown[];
+  }>("content/automation/autopilot-broad-freshness-triage.json");
   const reviewOptimizationBrief = readJson<{
     briefs?: Array<{
       file: string;
@@ -1432,6 +1466,46 @@ async function main() {
         ),
       ),
       detail: `clusters=${autopilotBroadAiDemandBrief.summary.clusters}, withoutPublic=${autopilotBroadAiDemandBrief.summary.clustersWithoutPublicCoverage}, withReady=${autopilotBroadAiDemandBrief.summary.clustersWithReadyCandidates}`,
+    },
+    {
+      name: "autopilot broad freshness triage is read-only and prioritizes high-risk demand candidates",
+      ok:
+        autopilotBroadFreshnessTriage.guardrails.autoEditArticles === false &&
+        autopilotBroadFreshnessTriage.guardrails.autoMarkReview === false &&
+        autopilotBroadFreshnessTriage.guardrails.autoPublish === false &&
+        autopilotBroadFreshnessTriage.guardrails.trafficClaim === "not-included" &&
+        autopilotBroadFreshnessTriage.summary.items >= 16 &&
+        autopilotBroadFreshnessTriage.summary.highRiskItems === autopilotBroadFreshnessTriage.summary.items &&
+        autopilotBroadFreshnessTriage.summary.clustersCovered >= Math.min(6, autopilotBroadAiDemandBrief.summary.clusters) &&
+        autopilotBroadFreshnessTriage.summary.unsafeItems === 0,
+      detail: `items=${autopilotBroadFreshnessTriage.summary.items}, highRisk=${autopilotBroadFreshnessTriage.summary.highRiskItems}, clusters=${autopilotBroadFreshnessTriage.summary.clustersCovered}, unsafe=${autopilotBroadFreshnessTriage.summary.unsafeItems}`,
+    },
+    {
+      name: "autopilot broad freshness triage has complete human fact-check packets",
+      ok:
+        autopilotBroadFreshnessTriage.summary.readyItems === autopilotBroadFreshnessTriage.summary.items &&
+        autopilotBroadFreshnessTriage.summary.safeDraftItems === autopilotBroadFreshnessTriage.summary.items &&
+        autopilotBroadFreshnessTriage.summary.uniqueFiles === autopilotBroadFreshnessTriage.summary.items &&
+        autopilotBroadFreshnessTriage.summary.itemsWithCommandBoundary === autopilotBroadFreshnessTriage.summary.items &&
+        autopilotBroadFreshnessTriage.summary.itemsWithExternalSignals === autopilotBroadFreshnessTriage.summary.items &&
+        autopilotBroadFreshnessTriage.summary.itemsWithHumanFactChecks === autopilotBroadFreshnessTriage.summary.items &&
+        autopilotBroadFreshnessTriage.summary.itemsWithSearchQueries === autopilotBroadFreshnessTriage.summary.items &&
+        autopilotBroadFreshnessTriage.summary.itemsWithSourceTargets === autopilotBroadFreshnessTriage.summary.items &&
+        Boolean(
+          autopilotBroadFreshnessTriage.items?.every(
+            (item) =>
+              item.readyForHumanFreshnessReview === true &&
+              item.safeDraft === true &&
+              (item.humanFactCheckChecklist?.length || 0) >= 6 &&
+              (item.searchQueries?.length || 0) >= 4 &&
+              (item.sourceSignals?.length || 0) > 0 &&
+              (item.sourceTargets?.length || 0) > 0 &&
+              item.commandBoundary?.markReviewAfterHumanApproval?.includes("--confirm-human") &&
+              !item.commandBoundary?.publishDryRunAfterReview?.includes("--confirm") &&
+              item.commandBoundary?.publishConfirm === "not-included",
+          ),
+        ),
+      detail: `ready=${autopilotBroadFreshnessTriage.summary.readyItems}, factChecks=${autopilotBroadFreshnessTriage.summary.itemsWithHumanFactChecks}, sources=${autopilotBroadFreshnessTriage.summary.itemsWithSourceTargets}`,
     },
     {
       name: "review optimization brief is read-only and covers ready action-board tasks",

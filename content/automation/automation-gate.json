@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T02:17:46.881Z",
+  "generatedAt": "2026-06-07T02:29:24.554Z",
   "ok": true,
   "summary": {
-    "checks": 109,
+    "checks": 111,
     "failed": 0,
-    "passed": 109
+    "passed": 111
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=127, unsafeClaims=0, watchMentions=1127"
+      "detail": "filesScanned=129, unsafeClaims=0, watchMentions=1190"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -241,6 +241,16 @@
       "name": "autopilot broad AI demand brief covers broad search lanes",
       "ok": true,
       "detail": "clusters=8, withoutPublic=8, withReady=8"
+    },
+    {
+      "name": "autopilot broad freshness triage is read-only and prioritizes high-risk demand candidates",
+      "ok": true,
+      "detail": "items=24, highRisk=24, clusters=7, unsafe=0"
+    },
+    {
+      "name": "autopilot broad freshness triage has complete human fact-check packets",
+      "ok": true,
+      "detail": "ready=24, factChecks=24, sources=24"
     },
     {
       "name": "review optimization brief is read-only and covers ready action-board tasks",
