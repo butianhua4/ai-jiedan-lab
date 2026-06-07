@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T04:19:20.500Z",
+  "generatedAt": "2026-06-07T04:28:39.558Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -14761,6 +14761,160 @@
     ],
     "unsafeCommands": 0
   },
+  "reviewCollisionDecisionPack": {
+    "blockedQueueMatchedItems": 1,
+    "blockingItems": 0,
+    "decisionItems": 1,
+    "highRiskItems": 1,
+    "humanDecisionReadyItems": 1,
+    "itemsList": [
+      {
+        "blockingIssues": [],
+        "candidate": {
+          "category": "AI 部署",
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "primaryKeyword": "大模型部署",
+          "searchIntent": "informational",
+          "slug": "llm-deployment-huggingface-inference-endpoints-guide",
+          "status": "draft",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "tokens": [
+            "大模型部署怎么选",
+            "hugging",
+            "face",
+            "inference",
+            "endpoints",
+            "api",
+            "私有化和成本检查",
+            "大模型部署",
+            "llm",
+            "deployment",
+            "huggingface",
+            "inference",
+            "endpoints",
+            "ai",
+            "部署"
+          ],
+          "headings": [
+            "适合谁",
+            "不适合谁",
+            "常见部署路径",
+            "具体步骤",
+            "成本怎么估",
+            "验收要看什么",
+            "常见错误",
+            "风险提醒"
+          ],
+          "role": "provider-specific deployment option: own Hugging Face endpoints, hosted inference, engine choice, cost checks, and production acceptance."
+        },
+        "closest": [
+          {
+            "file": "content/blog/llm-deployment-beginner-guide.mdx",
+            "primaryKeyword": "大模型部署",
+            "reason": [
+              "same primary keyword",
+              "same search intent",
+              "token overlap 0.56"
+            ],
+            "score": 93,
+            "slug": "llm-deployment-beginner-guide",
+            "status": "draft",
+            "title": "大模型部署是什么意思：API、本地和私有化怎么选",
+            "headings": [
+              "适合谁",
+              "不适合谁",
+              "路线一：调用大模型 API",
+              "路线二：本地部署开源模型",
+              "路线三：私有化或企业部署",
+              "怎么判断该选哪条路",
+              "风险提醒",
+              "具体步骤"
+            ],
+            "role": "pillar explainer: own beginner route selection across API, local deployment, and private deployment."
+          }
+        ],
+        "collisionType": "review-only-collision",
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "decisionOptions": [
+          "Keep both: content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx should own provider-specific deployment option: own Hugging Face endpoints, hosted inference, engine choice, cost checks, and production acceptance.",
+          "Keep both: content/blog/llm-deployment-beginner-guide.mdx should own pillar explainer: own beginner route selection across API, local deployment, and private deployment.",
+          "Merge: fold the provider-specific material into the broader article and leave this draft unpublished.",
+          "Delay: keep this draft in noindex draft until the broader article is reviewed and an internal-link path is clear.",
+          "Differentiate: update title/opening during human review so the two drafts do not promise the same answer."
+        ],
+        "humanDecisionReady": true,
+        "manualNextActions": [
+          "Pick one decision option before changing status.",
+          "Candidate role to preserve: provider-specific deployment option: own Hugging Face endpoints, hosted inference, engine choice, cost checks, and production acceptance.",
+          "Closest article role to preserve: pillar explainer: own beginner route selection across API, local deployment, and private deployment.",
+          "Consider copydesk addition during human review: 在开头 200 字内自然回答一次“大模型部署教程”这个搜索意图，先给结论再展开步骤。",
+          "Consider copydesk addition during human review: 在相关段落加入公开内链：Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)。",
+          "If keeping both drafts, add a clear cross-link relationship during human review.",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
+          "Publishing remains a separate explicit approval step."
+        ],
+        "queueBlockers": [
+          "high cannibalization risk needs differentiation first"
+        ],
+        "requiredDecision": "Choose keep-both, merge, or delay before mark:review.",
+        "reviewFocus": [
+          "Verify 13 official source target(s).",
+          "Check 8 search query seed(s).",
+          "Review 15 combined checklist signal(s).",
+          "Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: 大模型部署教程.; Add one contextual link to a published article before approval..",
+          "Complete freshness checklist for fast-changing AI/tool guidance.",
+          "Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
+        ],
+        "searchQueries": [
+          "大模型部署教程",
+          "Ollama 本地部署教程",
+          "vLLM 部署教程",
+          "RunPod vLLM serverless",
+          "Hugging Face TGI 部署",
+          "AI 应用部署教程",
+          "OpenAI API 部署教程",
+          "Vercel AI SDK 部署"
+        ],
+        "sourceTargets": [
+          "https://platform.openai.com/docs",
+          "https://platform.openai.com/docs/guides/prompt-engineering",
+          "https://ai-sdk.dev/docs",
+          "https://platform.openai.com/docs/guides/agents",
+          "https://docs.vllm.ai",
+          "https://huggingface.co/docs",
+          "https://platform.openai.com/docs/guides/retrieval",
+          "https://docs.runpod.io/serverless/vllm/get-started",
+          "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+          "https://www.spheron.network/blog/llm-deployment-guide/",
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+          "Anthropic docs: https://docs.anthropic.com"
+        ],
+        "warningIssues": [
+          "Confirm the candidate owns a distinct search intent: 大模型部署.",
+          "No close published article found; still confirm the title is not a duplicate promise.",
+          "Compare against nearby draft/review candidate: 大模型部署是什么意思：API、本地和私有化怎么选 (content/blog/llm-deployment-beginner-guide.mdx).",
+          "Do not mark review until the angle, title, or consolidation decision is explicit.",
+          "If both articles stay, add a clear internal-link relationship: pillar, comparison, implementation detail, or troubleshooting follow-up.",
+          "high cannibalization risk needs differentiation first",
+          "Rewrite the meta description to name the reader, outcome, and search phrase: 大模型部署教程.",
+          "Add one contextual link to a published article before approval.",
+          "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+          "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)."
+        ]
+      }
+    ],
+    "itemsWithCommandBoundary": 1,
+    "publishedCollisionItems": 0,
+    "reviewOnlyCollisionItems": 1,
+    "unsafeItems": 0,
+    "warningItems": 1
+  },
   "reviewFreshnessBrief": {
     "blockedItems": 0,
     "highRiskItems": 13,
@@ -17391,10 +17545,10 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 145,
+    "filesScanned": 147,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 1666
+    "watchMentions": 1670
   },
   "publicSurfaceInventory": {
     "broadCoverage": [
@@ -28041,7 +28195,7 @@
   "liveSearch": {
     "checkedArticles": 15,
     "failedChecks": [],
-    "generatedAt": "2026-06-07T04:19:16.661Z",
+    "generatedAt": "2026-06-07T04:28:35.605Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 15,
@@ -28093,6 +28247,35 @@
     }
   },
   "nextActions": [
-    "Open docs/review-cannibalization-brief.md and differentiate high-risk candidate overlaps before manual review."
+    "Manually review the three recommended drafts in docs/review-preflight.md.",
+    "Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.",
+    "Use docs/wave-publish-simulation.md to see the exact post-approval mark-review and publish dry-run path.",
+    "Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.",
+    "Use docs/public-surface-inventory.md to confirm what is public now and which broad AI clusters still have zero public coverage.",
+    "Use docs/public-coverage-gap-decision-pack.md to review the 8 broad-demand public gap candidates and their optimization actions.",
+    "Use docs/ai-deployment-review-pack.md to review the 10 deployment, Agent, RAG, memory, API, and infrastructure candidates.",
+    "Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.",
+    "Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.",
+    "Use docs/source-target-health-audit.md to confirm official source links are reachable before approving fast-changing AI guidance.",
+    "Use docs/review-action-board.md as the prioritized task board for Wave 1 and public-gap manual review.",
+    "Use docs/review-portfolio-board.md to deduplicate Wave, public-gap, deployment, and prompt review candidates before assigning manual review.",
+    "Use docs/autopilot-review-queue.md as the ordered next-10 manual review assignment queue.",
+    "Use docs/autopilot-approval-packet.md as the top-3 packet for human approval.",
+    "Use docs/autopilot-search-intent-brief.md to tune top-3 search-intent wording during human review.",
+    "Use docs/autopilot-internal-link-brief.md to add one contextual public internal link during human review.",
+    "Use docs/autopilot-source-verification-brief.md to verify top-3 official sources and fast-changing claims during human review.",
+    "Use docs/autopilot-human-review-playbook.md as the merged top-3 checklist before any mark:review command.",
+    "Use docs/autopilot-review-sprint-board.md as the next-10 manual review sprint order.",
+    "Use docs/autopilot-search-query-gap-brief.md to fill next-10 search-query gaps during manual review.",
+    "Use docs/autopilot-queued-playbook-brief.md to review the 7 queued sprint items with merged search, source, freshness, and link actions.",
+    "Use docs/autopilot-broad-ai-demand-brief.md to prioritize broad AI deployment, Agent, memory, RAG, and industry prompt themes.",
+    "Use docs/autopilot-broad-freshness-triage.md to fact-check high-demand AI drafts before any approval action.",
+    "Use docs/autopilot-broad-publish-waves.md to review 1-3 high-demand AI drafts per human-approved batch.",
+    "Use docs/autopilot-broad-wave-optimization.md to apply SEO snippet, opening, internal-link, and risk-language improvements during human review.",
+    "Use docs/broad-first-coverage-launch-pack.md to review one first-coverage candidate for each broad AI cluster with zero public coverage.",
+    "Use docs/broad-first-coverage-readiness-matrix.md to resolve source, snippet, schema, link, query, and freshness warnings for the first-coverage candidates.",
+    "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
+    "If approved by a human, run mark:review with --confirm-human for approved files only.",
+    "Publish only status=review articles in a 1-3 article batch after a dry-run."
   ]
 }

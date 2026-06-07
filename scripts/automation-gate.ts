@@ -1088,6 +1088,37 @@ async function main() {
       unsafeCommands: number;
     };
   }>("content/automation/review-cannibalization-brief.json");
+  const reviewCollisionDecisionPack = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    items?: Array<{
+      blockingIssues?: unknown[];
+      closest?: unknown[];
+      collisionType?: string;
+      commandBoundary?: {
+        markReviewAfterHumanApproval?: string;
+        publishConfirm?: string;
+        publishDryRunAfterReview?: string;
+        stopBefore?: string;
+      };
+      decisionOptions?: unknown[];
+      humanDecisionReady?: boolean;
+      manualNextActions?: unknown[];
+      queueBlockers?: unknown[];
+      warningIssues?: unknown[];
+    }>;
+    summary: {
+      blockedQueueMatchedItems: number;
+      blockingItems: number;
+      decisionItems: number;
+      highRiskItems: number;
+      humanDecisionReadyItems: number;
+      itemsWithCommandBoundary: number;
+      publishedCollisionItems: number;
+      reviewOnlyCollisionItems: number;
+      unsafeItems: number;
+      warningItems: number;
+    };
+  }>("content/automation/review-collision-decision-pack.json");
   const reviewFreshnessBrief = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     items?: Array<{
@@ -2562,6 +2593,43 @@ async function main() {
           ),
         ),
       detail: `highRisk=${reviewCannibalizationBrief.summary.highRiskItems}, highPublished=${reviewCannibalizationBrief.summary.highRiskPublishedItems || 0}, highReviewOnly=${reviewCannibalizationBrief.summary.highRiskReviewOnlyItems || 0}, mediumRisk=${reviewCannibalizationBrief.summary.mediumRiskItems}, publishedComparisons=${reviewCannibalizationBrief.summary.itemsWithPublishedComparison}, reviewComparisons=${reviewCannibalizationBrief.summary.itemsWithReviewComparison}`,
+    },
+    {
+      name: "review collision decision pack is read-only and covers high-risk overlaps",
+      ok:
+        reviewCollisionDecisionPack.guardrails.autoEditArticles === false &&
+        reviewCollisionDecisionPack.guardrails.autoMarkReview === false &&
+        reviewCollisionDecisionPack.guardrails.autoPublish === false &&
+        reviewCollisionDecisionPack.guardrails.trafficClaim === "not-included" &&
+        reviewCollisionDecisionPack.summary.decisionItems === reviewCannibalizationBrief.summary.highRiskItems &&
+        reviewCollisionDecisionPack.summary.highRiskItems === reviewCannibalizationBrief.summary.highRiskItems &&
+        reviewCollisionDecisionPack.summary.blockingItems === 0 &&
+        reviewCollisionDecisionPack.summary.unsafeItems === 0,
+      detail: `decisionItems=${reviewCollisionDecisionPack.summary.decisionItems}, highRisk=${reviewCollisionDecisionPack.summary.highRiskItems}, blocking=${reviewCollisionDecisionPack.summary.blockingItems}, unsafe=${reviewCollisionDecisionPack.summary.unsafeItems}`,
+    },
+    {
+      name: "review collision decision pack keeps collision approvals human-gated",
+      ok:
+        reviewCollisionDecisionPack.summary.humanDecisionReadyItems === reviewCollisionDecisionPack.summary.decisionItems &&
+        reviewCollisionDecisionPack.summary.itemsWithCommandBoundary === reviewCollisionDecisionPack.summary.decisionItems &&
+        reviewCollisionDecisionPack.summary.publishedCollisionItems === 0 &&
+        reviewCollisionDecisionPack.summary.reviewOnlyCollisionItems === reviewCollisionDecisionPack.summary.decisionItems &&
+        reviewCollisionDecisionPack.summary.blockedQueueMatchedItems >= reviewCollisionDecisionPack.summary.decisionItems &&
+        Boolean(
+          reviewCollisionDecisionPack.items?.every(
+            (item) =>
+              item.humanDecisionReady === true &&
+              (item.blockingIssues?.length || 0) === 0 &&
+              (item.closest?.length || 0) > 0 &&
+              (item.decisionOptions?.length || 0) >= 4 &&
+              (item.manualNextActions?.length || 0) >= 5 &&
+              item.commandBoundary?.markReviewAfterHumanApproval?.includes("--confirm-human") &&
+              !item.commandBoundary?.publishDryRunAfterReview?.includes("--confirm") &&
+              item.commandBoundary?.publishConfirm === "not-included" &&
+              item.commandBoundary?.stopBefore?.includes("explicit"),
+          ),
+        ),
+      detail: `ready=${reviewCollisionDecisionPack.summary.humanDecisionReadyItems}, commandBoundary=${reviewCollisionDecisionPack.summary.itemsWithCommandBoundary}, reviewOnly=${reviewCollisionDecisionPack.summary.reviewOnlyCollisionItems}, published=${reviewCollisionDecisionPack.summary.publishedCollisionItems}, blockedMatched=${reviewCollisionDecisionPack.summary.blockedQueueMatchedItems}`,
     },
     {
       name: "content freshness check covers review items",

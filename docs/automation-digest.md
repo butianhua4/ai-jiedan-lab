@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T04:19:20.500Z
+Generated at: 2026-06-07T04:28:39.558Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -676,6 +676,23 @@ Unsafe first coverage launch items:
 | --- | --- | --- | --- | --- | --- | --- |
 | high | 0 | 93 | differentiate-before-approval | Before mark:review, rewrite or split the angle so "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查" does not compete with "大模型部署是什么意思：API、本地和私有化怎么选". | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 
+## Review Collision Decision Pack
+
+- Decision items: 1
+- High-risk items: 1
+- Human decision ready items: 1
+- Blocked queue matched items: 1
+- Review-only collision items: 1
+- Published collision items: 0
+- Items with command boundary: 1
+- Blocking items: 0
+- Warning items: 1
+- Unsafe items: 0
+
+| Ready | Type | Queue blockers | Publish confirm | Required decision | Candidate role | Closest role | Title | File |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| true | review-only-collision | 1 | not-included | Choose keep-both, merge, or delay before mark:review. | provider-specific deployment option: own Hugging Face endpoints, hosted inference, engine choice, cost checks, and production acceptance. | pillar explainer: own beginner route selection across API, local deployment, and private deployment. | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+
 ## Search Snippet Readiness
 
 - Scoped items: 34
@@ -838,8 +855,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 145
-- Traffic claim watch mentions: 1666
+- Traffic claim files scanned: 147
+- Traffic claim watch mentions: 1670
 
 ## Public Surface Inventory
 
@@ -1256,7 +1273,7 @@ Public categories:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-07T04:19:16.661Z
+- Latest check: 2026-06-07T04:28:35.605Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
@@ -1269,4 +1286,33 @@ Public categories:
 
 ## Next Actions
 
-- Open docs/review-cannibalization-brief.md and differentiate high-risk candidate overlaps before manual review.
+- Manually review the three recommended drafts in docs/review-preflight.md.
+- Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.
+- Use docs/wave-publish-simulation.md to see the exact post-approval mark-review and publish dry-run path.
+- Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.
+- Use docs/public-surface-inventory.md to confirm what is public now and which broad AI clusters still have zero public coverage.
+- Use docs/public-coverage-gap-decision-pack.md to review the 8 broad-demand public gap candidates and their optimization actions.
+- Use docs/ai-deployment-review-pack.md to review the 10 deployment, Agent, RAG, memory, API, and infrastructure candidates.
+- Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.
+- Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.
+- Use docs/source-target-health-audit.md to confirm official source links are reachable before approving fast-changing AI guidance.
+- Use docs/review-action-board.md as the prioritized task board for Wave 1 and public-gap manual review.
+- Use docs/review-portfolio-board.md to deduplicate Wave, public-gap, deployment, and prompt review candidates before assigning manual review.
+- Use docs/autopilot-review-queue.md as the ordered next-10 manual review assignment queue.
+- Use docs/autopilot-approval-packet.md as the top-3 packet for human approval.
+- Use docs/autopilot-search-intent-brief.md to tune top-3 search-intent wording during human review.
+- Use docs/autopilot-internal-link-brief.md to add one contextual public internal link during human review.
+- Use docs/autopilot-source-verification-brief.md to verify top-3 official sources and fast-changing claims during human review.
+- Use docs/autopilot-human-review-playbook.md as the merged top-3 checklist before any mark:review command.
+- Use docs/autopilot-review-sprint-board.md as the next-10 manual review sprint order.
+- Use docs/autopilot-search-query-gap-brief.md to fill next-10 search-query gaps during manual review.
+- Use docs/autopilot-queued-playbook-brief.md to review the 7 queued sprint items with merged search, source, freshness, and link actions.
+- Use docs/autopilot-broad-ai-demand-brief.md to prioritize broad AI deployment, Agent, memory, RAG, and industry prompt themes.
+- Use docs/autopilot-broad-freshness-triage.md to fact-check high-demand AI drafts before any approval action.
+- Use docs/autopilot-broad-publish-waves.md to review 1-3 high-demand AI drafts per human-approved batch.
+- Use docs/autopilot-broad-wave-optimization.md to apply SEO snippet, opening, internal-link, and risk-language improvements during human review.
+- Use docs/broad-first-coverage-launch-pack.md to review one first-coverage candidate for each broad AI cluster with zero public coverage.
+- Use docs/broad-first-coverage-readiness-matrix.md to resolve source, snippet, schema, link, query, and freshness warnings for the first-coverage candidates.
+- Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.
+- If approved by a human, run mark:review with --confirm-human for approved files only.
+- Publish only status=review articles in a 1-3 article batch after a dry-run.

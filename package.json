@@ -51,6 +51,7 @@
     "automation:broad-first-coverage-readiness": "tsx scripts/broad-first-coverage-readiness-matrix.ts",
     "automation:review-optimization-brief": "tsx scripts/review-optimization-brief.ts",
     "automation:review-cannibalization-brief": "tsx scripts/review-cannibalization-brief.ts",
+    "automation:review-collision-decision-pack": "tsx scripts/review-collision-decision-pack.ts",
     "automation:review-freshness-brief": "tsx scripts/review-freshness-brief.ts",
     "automation:gate": "tsx scripts/automation-gate.ts",
     "automation:publish-pack": "tsx scripts/publish-readiness-pack.ts",

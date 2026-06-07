@@ -1,14 +1,14 @@
 # Traffic Claim Guard
-Generated at: 2026-06-07T04:19:18.618Z
+Generated at: 2026-06-07T04:28:37.670Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
 - Note: This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples.
 ## Summary
-- filesScanned: 145
+- filesScanned: 147
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 1666
+- watchMentions: 1670
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -38,19 +38,19 @@ None.
 | docs/automation-digest.md | 458 | \| 313 \| 0 \| 32 \| 6 \| 3 \| 5 \| RAG、知识库、向量数据库和引用溯源 \| RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。 \| |
 | docs/automation-digest.md | 460 | \| 307 \| 0 \| 36 \| 6 \| 3 \| 5 \| Dify、n8n、Coze、Flowise、MCP 自动化部署 \| 这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。 \| |
 | docs/automation-digest.md | 578 | - Traffic data available: false |
-| docs/automation-digest.md | 831 | ## Traffic Evidence |
-| docs/automation-digest.md | 833 | - Traffic data available: false |
-| docs/automation-digest.md | 834 | - Can claim traffic: false |
-| docs/automation-digest.md | 836 | - Measured traffic sources: none |
-| docs/automation-digest.md | 837 | - Search Console verification evidence: false |
-| docs/automation-digest.md | 840 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 841 | - Traffic claim files scanned: 145 |
-| docs/automation-digest.md | 842 | - Traffic claim watch mentions: 1666 |
-| docs/automation-digest.md | 855 | - Traffic data available: false |
-| docs/automation-digest.md | 930 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
+| docs/automation-digest.md | 848 | ## Traffic Evidence |
+| docs/automation-digest.md | 850 | - Traffic data available: false |
+| docs/automation-digest.md | 851 | - Can claim traffic: false |
+| docs/automation-digest.md | 853 | - Measured traffic sources: none |
+| docs/automation-digest.md | 854 | - Search Console verification evidence: false |
+| docs/automation-digest.md | 857 | - Unsupported traffic claims: 0 |
+| docs/automation-digest.md | 858 | - Traffic claim files scanned: 147 |
+| docs/automation-digest.md | 859 | - Traffic claim watch mentions: 1670 |
+| docs/automation-digest.md | 872 | - Traffic data available: false |
+| docs/automation-digest.md | 947 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
 | docs/automation-gate.md | 31 | \| traffic evidence audit passed and is read-only \| PASS \| failedChecks=0, measuredTrafficSources=0 \| |
 | docs/automation-gate.md | 32 | \| traffic is not claimed without measured metrics \| PASS \| trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 \| |
-| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=145, unsafeClaims=0, watchMentions=1666 \| |
+| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=147, unsafeClaims=0, watchMentions=1670 \| |
 | docs/autopilot-approval-packet.md | 18 | - Traffic data available: false |
 | docs/autopilot-approval-packet.md | 19 | - Can claim traffic: false |
 | docs/autopilot-approval-packet.md | 102 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |

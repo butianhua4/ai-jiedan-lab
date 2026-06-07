@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-07T04:19:19.985Z
+Generated at: 2026-06-07T04:28:38.973Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 127
-- Passed: 127
+- Checks: 129
+- Passed: 129
 - Failed: 0
 
 ## Checks
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=145, unsafeClaims=0, watchMentions=1666 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=147, unsafeClaims=0, watchMentions=1670 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, broadFirst=8, candidates=22 |
@@ -117,6 +117,8 @@ Overall: PASS
 | content cannibalization check generated warning report | PASS | conflicts=200, reviewBatchConflicts=0 |
 | review cannibalization brief is read-only and covers unique action-board files | PASS | items=13, uniqueActionFiles=13, unsafeCommands=0 |
 | review cannibalization brief keeps publish candidates differentiated | PASS | highRisk=1, highPublished=0, highReviewOnly=1, mediumRisk=0, publishedComparisons=0, reviewComparisons=1 |
+| review collision decision pack is read-only and covers high-risk overlaps | PASS | decisionItems=1, highRisk=1, blocking=0, unsafe=0 |
+| review collision decision pack keeps collision approvals human-gated | PASS | ready=1, commandBoundary=1, reviewOnly=1, published=0, blockedMatched=1 |
 | content freshness check covers review items | PASS | highRisk=570, currentReviewItems=3, plannedReviewItems=9 |
 | review freshness brief is read-only and covers unique action-board files | PASS | items=13, uniqueActionFiles=13, unsafeCommands=0 |
 | review freshness brief has source-backed human fact-check tasks | PASS | ready=13, blocked=0, highRisk=13, withSources=13 |

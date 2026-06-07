@@ -1025,6 +1025,32 @@ type ReviewCannibalizationBrief = {
   };
 };
 
+type ReviewCollisionDecisionPack = {
+  items: Array<{
+    candidate: { file: string; role: string; title: string };
+    closest: Array<{ file: string; role: string; title: string }>;
+    collisionType: string;
+    commandBoundary: { markReviewAfterHumanApproval: string; publishConfirm: string; publishDryRunAfterReview: string };
+    decisionOptions: string[];
+    humanDecisionReady: boolean;
+    queueBlockers: unknown[];
+    requiredDecision: string;
+    warningIssues: unknown[];
+  }>;
+  summary: {
+    blockedQueueMatchedItems: number;
+    blockingItems: number;
+    decisionItems: number;
+    highRiskItems: number;
+    humanDecisionReadyItems: number;
+    itemsWithCommandBoundary: number;
+    publishedCollisionItems: number;
+    reviewOnlyCollisionItems: number;
+    unsafeItems: number;
+    warningItems: number;
+  };
+};
+
 type ReviewFreshnessBrief = {
   highRiskItems: Array<{
     articleUpdatedAt: string;
@@ -1375,6 +1401,7 @@ const reports = {
   broadFirstCoverageReadinessMatrix: readJson<BroadFirstCoverageReadinessMatrix>("content/automation/broad-first-coverage-readiness-matrix.json"),
   reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
   reviewCannibalizationBrief: readJson<ReviewCannibalizationBrief>("content/automation/review-cannibalization-brief.json"),
+  reviewCollisionDecisionPack: readJson<ReviewCollisionDecisionPack>("content/automation/review-collision-decision-pack.json"),
   reviewFreshnessBrief: readJson<ReviewFreshnessBrief>("content/automation/review-freshness-brief.json"),
   searchSnippets: readJson<SearchSnippets>("content/automation/search-snippet-readiness-audit.json"),
   structuredData: readJson<StructuredData>("content/automation/structured-data-readiness-audit.json"),
@@ -1703,6 +1730,19 @@ const payload = {
     mediumRiskItems: reports.reviewCannibalizationBrief.data?.summary.mediumRiskItems ?? null,
     nextItems: reports.reviewCannibalizationBrief.data?.nextItems.slice(0, 8) ?? [],
     unsafeCommands: reports.reviewCannibalizationBrief.data?.summary.unsafeCommands ?? null,
+  },
+  reviewCollisionDecisionPack: {
+    blockedQueueMatchedItems: reports.reviewCollisionDecisionPack.data?.summary.blockedQueueMatchedItems ?? null,
+    blockingItems: reports.reviewCollisionDecisionPack.data?.summary.blockingItems ?? null,
+    decisionItems: reports.reviewCollisionDecisionPack.data?.summary.decisionItems ?? null,
+    highRiskItems: reports.reviewCollisionDecisionPack.data?.summary.highRiskItems ?? null,
+    humanDecisionReadyItems: reports.reviewCollisionDecisionPack.data?.summary.humanDecisionReadyItems ?? null,
+    itemsList: reports.reviewCollisionDecisionPack.data?.items.slice(0, 8) ?? [],
+    itemsWithCommandBoundary: reports.reviewCollisionDecisionPack.data?.summary.itemsWithCommandBoundary ?? null,
+    publishedCollisionItems: reports.reviewCollisionDecisionPack.data?.summary.publishedCollisionItems ?? null,
+    reviewOnlyCollisionItems: reports.reviewCollisionDecisionPack.data?.summary.reviewOnlyCollisionItems ?? null,
+    unsafeItems: reports.reviewCollisionDecisionPack.data?.summary.unsafeItems ?? null,
+    warningItems: reports.reviewCollisionDecisionPack.data?.summary.warningItems ?? null,
   },
   reviewFreshnessBrief: {
     blockedItems: reports.reviewFreshnessBrief.data?.summary.blockedItems ?? null,
@@ -2146,7 +2186,12 @@ function buildNextActions() {
   if (!reports.reviewOptimizationBrief.data || reports.reviewOptimizationBrief.data.summary.unsafeCommands > 0) {
     return ["Open docs/review-optimization-brief.md and resolve unsafe or missing copydesk guidance before manual review."];
   }
-  if (!reports.reviewCannibalizationBrief.data || reports.reviewCannibalizationBrief.data.summary.highRiskItems > 0) {
+  if (
+    !reports.reviewCannibalizationBrief.data ||
+    !reports.reviewCollisionDecisionPack.data ||
+    reports.reviewCollisionDecisionPack.data.summary.decisionItems !== reports.reviewCannibalizationBrief.data.summary.highRiskItems ||
+    reports.reviewCollisionDecisionPack.data.summary.blockingItems > 0
+  ) {
     return ["Open docs/review-cannibalization-brief.md and differentiate high-risk candidate overlaps before manual review."];
   }
   if (!reports.reviewFreshnessBrief.data || reports.reviewFreshnessBrief.data.summary.blockedItems > 0) {
@@ -2844,6 +2889,26 @@ function toMarkdown(data: typeof payload) {
     ...data.reviewCannibalizationBrief.nextItems.map(
       (item) =>
         `| ${item.riskLevel} | ${item.highestPublishedScore} | ${item.highestReviewScore} | ${item.decision} | ${item.recommendation} | ${item.candidate.title} | ${item.candidate.file} |`,
+    ),
+    "",
+    "## Review Collision Decision Pack",
+    "",
+    `- Decision items: ${data.reviewCollisionDecisionPack.decisionItems}`,
+    `- High-risk items: ${data.reviewCollisionDecisionPack.highRiskItems}`,
+    `- Human decision ready items: ${data.reviewCollisionDecisionPack.humanDecisionReadyItems}`,
+    `- Blocked queue matched items: ${data.reviewCollisionDecisionPack.blockedQueueMatchedItems}`,
+    `- Review-only collision items: ${data.reviewCollisionDecisionPack.reviewOnlyCollisionItems}`,
+    `- Published collision items: ${data.reviewCollisionDecisionPack.publishedCollisionItems}`,
+    `- Items with command boundary: ${data.reviewCollisionDecisionPack.itemsWithCommandBoundary}`,
+    `- Blocking items: ${data.reviewCollisionDecisionPack.blockingItems}`,
+    `- Warning items: ${data.reviewCollisionDecisionPack.warningItems}`,
+    `- Unsafe items: ${data.reviewCollisionDecisionPack.unsafeItems}`,
+    "",
+    "| Ready | Type | Queue blockers | Publish confirm | Required decision | Candidate role | Closest role | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.reviewCollisionDecisionPack.itemsList.map(
+      (item) =>
+        `| ${item.humanDecisionReady} | ${item.collisionType} | ${item.queueBlockers.length} | ${item.commandBoundary.publishConfirm} | ${item.requiredDecision} | ${item.candidate.role} | ${item.closest.map((entry) => entry.role).join("<br>")} | ${item.candidate.title} | ${item.candidate.file} |`,
     ),
     "",
     "## Search Snippet Readiness",
