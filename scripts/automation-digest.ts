@@ -1481,6 +1481,41 @@ type BroadSearchDemand = {
   }>;
 };
 
+type MassAiSearchMatrix = {
+  summary: {
+    deploymentBridgedThemes: number;
+    humanGatedItems: number;
+    items: number;
+    itemsReadyForHumanReviewPrep: number;
+    itemsWithHumanReviewActions: number;
+    itemsWithSearchSeeds: number;
+    itemsWithSourceTargets: number;
+    promptBlueprintSamples: number;
+    promptBridgedThemes: number;
+    sourceBroadThemes: number;
+    sourceTopThemes: number;
+    themesWithoutPublicCoverage: number;
+    trafficDataAvailable: boolean;
+    uniqueCandidateFiles: number;
+    unsafeItems: number;
+    waves: number;
+  };
+  topItems: Array<{
+    candidateFiles: string[];
+    deploymentMatches: number;
+    editorialWave: number;
+    lane: string;
+    promptBlueprintSamples: unknown[];
+    promptModuleMatches: number;
+    publicMatches: number;
+    readyForHumanReviewPrep: boolean;
+    searchSeeds: string[];
+    sourceTargets: string[];
+    themeTitle: string;
+    trafficClaim: string;
+  }>;
+};
+
 type PublicCoverageGapPlan = {
   items: Array<{
     file: string;
@@ -1596,6 +1631,7 @@ const reports = {
   deploymentReviewPack: readJson<DeploymentReviewPack>("content/automation/ai-deployment-review-pack.json"),
   searchDemandIntake: readJson<SearchDemandIntake>("content/automation/search-demand-intake.json"),
   broadSearchDemand: readJson<BroadSearchDemand>("content/automation/broad-search-demand-map.json"),
+  massAiSearchMatrix: readJson<MassAiSearchMatrix>("content/automation/mass-ai-search-action-matrix.json"),
   publicCoverageGapPlan: readJson<PublicCoverageGapPlan>("content/automation/public-coverage-gap-plan.json"),
   publicCoverageGapPreflight: readJson<PublicCoverageGapPreflight>("content/automation/public-coverage-gap-preflight.json"),
   publicCoverageGapDecisionPack: readJson<PublicCoverageGapDecisionPack>("content/automation/public-coverage-gap-decision-pack.json"),
@@ -2297,6 +2333,25 @@ const payload = {
     totalReadyDraftMatches: reports.broadSearchDemand.data?.summary.totalReadyDraftMatches ?? null,
     uniqueCandidateFiles: reports.broadSearchDemand.data?.summary.uniqueCandidateFiles ?? null,
   },
+  massAiSearchMatrix: {
+    deploymentBridgedThemes: reports.massAiSearchMatrix.data?.summary.deploymentBridgedThemes ?? null,
+    humanGatedItems: reports.massAiSearchMatrix.data?.summary.humanGatedItems ?? null,
+    items: reports.massAiSearchMatrix.data?.summary.items ?? null,
+    itemsReadyForHumanReviewPrep: reports.massAiSearchMatrix.data?.summary.itemsReadyForHumanReviewPrep ?? null,
+    itemsWithHumanReviewActions: reports.massAiSearchMatrix.data?.summary.itemsWithHumanReviewActions ?? null,
+    itemsWithSearchSeeds: reports.massAiSearchMatrix.data?.summary.itemsWithSearchSeeds ?? null,
+    itemsWithSourceTargets: reports.massAiSearchMatrix.data?.summary.itemsWithSourceTargets ?? null,
+    promptBlueprintSamples: reports.massAiSearchMatrix.data?.summary.promptBlueprintSamples ?? null,
+    promptBridgedThemes: reports.massAiSearchMatrix.data?.summary.promptBridgedThemes ?? null,
+    sourceBroadThemes: reports.massAiSearchMatrix.data?.summary.sourceBroadThemes ?? null,
+    sourceTopThemes: reports.massAiSearchMatrix.data?.summary.sourceTopThemes ?? null,
+    themesWithoutPublicCoverage: reports.massAiSearchMatrix.data?.summary.themesWithoutPublicCoverage ?? null,
+    top: reports.massAiSearchMatrix.data?.topItems ?? [],
+    trafficDataAvailable: reports.massAiSearchMatrix.data?.summary.trafficDataAvailable ?? null,
+    uniqueCandidateFiles: reports.massAiSearchMatrix.data?.summary.uniqueCandidateFiles ?? null,
+    unsafeItems: reports.massAiSearchMatrix.data?.summary.unsafeItems ?? null,
+    waves: reports.massAiSearchMatrix.data?.summary.waves ?? null,
+  },
   publicCoverageGapPlan: {
     duplicateFiles: reports.publicCoverageGapPlan.data?.summary.duplicateFiles ?? null,
     gapThemes: reports.publicCoverageGapPlan.data?.summary.gapThemes ?? null,
@@ -2589,6 +2644,9 @@ function buildNextActions() {
   }
   if (!reports.autopilotBroadWaveRemediation.data || reports.autopilotBroadWaveRemediation.data.summary.unsafeItems > 0) {
     return ["Open docs/autopilot-broad-wave-remediation-pack.md and resolve unsafe broad wave remediation items before any approval action."];
+  }
+  if (!reports.massAiSearchMatrix.data || reports.massAiSearchMatrix.data.summary.unsafeItems > 0) {
+    return ["Open docs/mass-ai-search-action-matrix.md and resolve unsafe broad AI search action items before manual review."];
   }
   if (!reports.broadFirstCoverageLaunchPack.data || reports.broadFirstCoverageLaunchPack.data.summary.unsafeItems > 0) {
     return ["Open docs/broad-first-coverage-launch-pack.md and resolve unsafe first-coverage launch candidates before any approval action."];
@@ -3768,6 +3826,28 @@ function toMarkdown(data: typeof payload) {
     "| --- | --- | --- | --- | --- | --- | --- | --- |",
     ...data.broadSearchDemand.top.map((item) => (
       `| ${item.title} | ${item.gapScore} | ${item.publicMatches} | ${item.readyDrafts} | ${item.reviewPackMatches} | ${item.plannedWaveMatches} | ${item.missingSubtopics.join(", ") || "none"} | ${item.searchSeeds.slice(0, 2).join("<br>")} |`
+    )),
+    "",
+    "## Mass AI Search Action Matrix",
+    "",
+    `- Items: ${data.massAiSearchMatrix.items}`,
+    `- Waves: ${data.massAiSearchMatrix.waves}`,
+    `- Source broad themes: ${data.massAiSearchMatrix.sourceBroadThemes}`,
+    `- Source top themes: ${data.massAiSearchMatrix.sourceTopThemes}`,
+    `- Ready for human review prep: ${data.massAiSearchMatrix.itemsReadyForHumanReviewPrep}`,
+    `- Human-gated items: ${data.massAiSearchMatrix.humanGatedItems}`,
+    `- Unique candidate files: ${data.massAiSearchMatrix.uniqueCandidateFiles}`,
+    `- Themes without public coverage: ${data.massAiSearchMatrix.themesWithoutPublicCoverage}`,
+    `- Deployment bridged themes: ${data.massAiSearchMatrix.deploymentBridgedThemes}`,
+    `- Prompt bridged themes: ${data.massAiSearchMatrix.promptBridgedThemes}`,
+    `- Prompt blueprint samples: ${data.massAiSearchMatrix.promptBlueprintSamples}`,
+    `- Traffic data available: ${data.massAiSearchMatrix.trafficDataAvailable}`,
+    `- Unsafe items: ${data.massAiSearchMatrix.unsafeItems}`,
+    "",
+    "| Wave | Ready | Public | Candidates | Sources | Seeds | Deploy | Prompt | Lane | Theme |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.massAiSearchMatrix.top.map((item) => (
+      `| ${item.editorialWave} | ${item.readyForHumanReviewPrep} | ${item.publicMatches} | ${item.candidateFiles.length} | ${item.sourceTargets.length} | ${item.searchSeeds.length} | ${item.deploymentMatches} | ${item.promptModuleMatches} | ${item.lane} | ${item.themeTitle} |`
     )),
     "",
     "## Public Coverage Gap Plan",

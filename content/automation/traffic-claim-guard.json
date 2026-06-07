@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-07T17:41:19.111Z",
+  "generatedAt": "2026-06-07T17:54:03.518Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 163,
+    "filesScanned": 165,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 2489
+    "watchMentions": 2565
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -202,13 +202,13 @@
       "file": "docs/automation-digest.md",
       "line": 1035,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 161"
+      "text": "- Traffic claim files scanned: 163"
     },
     {
       "file": "docs/automation-digest.md",
       "line": 1036,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 2485"
+      "text": "- Traffic claim watch mentions: 2489"
     },
     {
       "file": "docs/automation-digest.md",
@@ -221,6 +221,12 @@
       "line": 1124,
       "reason": "traffic-related mention",
       "text": "| Dify、n8n、MCP 和无代码 AI 自动化 | 258 | 0 | 5 | 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 |"
+    },
+    {
+      "file": "docs/automation-digest.md",
+      "line": 1200,
+      "reason": "traffic-related mention",
+      "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-gate.md",
@@ -238,7 +244,13 @@
       "file": "docs/automation-gate.md",
       "line": 33,
       "reason": "traffic-related mention",
-      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=161, unsafeClaims=0, watchMentions=2485 |"
+      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=163, unsafeClaims=0, watchMentions=2489 |"
+    },
+    {
+      "file": "docs/automation-gate.md",
+      "line": 128,
+      "reason": "traffic-related mention",
+      "text": "| mass AI search action matrix is read-only and covers broad themes | PASS | items=8/8, broad=10, unique=45, traffic=false |"
     },
     {
       "file": "docs/autopilot-approval-packet.md",
@@ -477,18 +489,6 @@
     {
       "file": "docs/autopilot-broad-freshness-triage.md",
       "line": 661,
-      "reason": "traffic-related mention",
-      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
-    },
-    {
-      "file": "docs/autopilot-broad-freshness-triage.md",
-      "line": 717,
-      "reason": "traffic-related mention",
-      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
-    },
-    {
-      "file": "docs/autopilot-broad-freshness-triage.md",
-      "line": 767,
       "reason": "traffic-related mention",
       "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
     }

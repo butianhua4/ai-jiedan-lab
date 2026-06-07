@@ -1,14 +1,14 @@
 # Traffic Claim Guard
-Generated at: 2026-06-07T17:41:19.111Z
+Generated at: 2026-06-07T17:54:03.518Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
 - Note: This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples.
 ## Summary
-- filesScanned: 163
+- filesScanned: 165
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 2489
+- watchMentions: 2565
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -45,13 +45,15 @@ None.
 | docs/automation-digest.md | 1030 | - Measured traffic sources: none |
 | docs/automation-digest.md | 1031 | - Search Console verification evidence: false |
 | docs/automation-digest.md | 1034 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 1035 | - Traffic claim files scanned: 161 |
-| docs/automation-digest.md | 1036 | - Traffic claim watch mentions: 2485 |
+| docs/automation-digest.md | 1035 | - Traffic claim files scanned: 163 |
+| docs/automation-digest.md | 1036 | - Traffic claim watch mentions: 2489 |
 | docs/automation-digest.md | 1049 | - Traffic data available: false |
 | docs/automation-digest.md | 1124 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
+| docs/automation-digest.md | 1200 | - Traffic data available: false |
 | docs/automation-gate.md | 31 | \| traffic evidence audit passed and is read-only \| PASS \| failedChecks=0, measuredTrafficSources=0 \| |
 | docs/automation-gate.md | 32 | \| traffic is not claimed without measured metrics \| PASS \| trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 \| |
-| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=161, unsafeClaims=0, watchMentions=2485 \| |
+| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=163, unsafeClaims=0, watchMentions=2489 \| |
+| docs/automation-gate.md | 128 | \| mass AI search action matrix is read-only and covers broad themes \| PASS \| items=8/8, broad=10, unique=45, traffic=false \| |
 | docs/autopilot-approval-packet.md | 18 | - Traffic data available: false |
 | docs/autopilot-approval-packet.md | 19 | - Can claim traffic: false |
 | docs/autopilot-approval-packet.md | 102 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
@@ -92,8 +94,6 @@ None.
 | docs/autopilot-broad-freshness-triage.md | 531 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
 | docs/autopilot-broad-freshness-triage.md | 603 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
 | docs/autopilot-broad-freshness-triage.md | 661 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
-| docs/autopilot-broad-freshness-triage.md | 717 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
-| docs/autopilot-broad-freshness-triage.md | 767 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
 ## Next Actions
 - Keep saying that live/search surfaces are healthy, not that traffic exists.
 - Only report traffic after an audited source provides clicks, impressions, visits, or pageviews.

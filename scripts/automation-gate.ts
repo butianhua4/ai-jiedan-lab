@@ -368,6 +368,40 @@ async function main() {
     };
     themes?: Array<{ candidateDrafts?: unknown[]; reviewFocus?: unknown[]; searchSeeds?: unknown[]; sourceTargets?: unknown[]; subtopics?: unknown[] }>;
   }>("content/automation/broad-search-demand-map.json");
+  const massAiSearchMatrix = readJson<{
+    guardrails: { autoCreateArticles: boolean; autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    items?: Array<{
+      articleSignals?: Array<{ humanReviewRequired?: boolean; noindex?: boolean; qualityScore?: number; sourceNotes?: boolean; status?: string }>;
+      candidateFiles?: unknown[];
+      commandBoundaries?: Array<{ markReviewAfterHumanApproval?: string; publishConfirm?: string; publishDryRunAfterReview?: string }>;
+      humanReviewActions?: unknown[];
+      readyForHumanReviewPrep?: boolean;
+      searchSeeds?: unknown[];
+      sourceTargets?: unknown[];
+      trafficClaim?: string;
+      unsafeReasons?: unknown[];
+    }>;
+    summary: {
+      commandBoundaries: number;
+      deploymentBridgedThemes: number;
+      humanGatedItems: number;
+      items: number;
+      itemsReadyForHumanReviewPrep: number;
+      itemsWithCandidateFiles: number;
+      itemsWithHumanReviewActions: number;
+      itemsWithSearchSeeds: number;
+      itemsWithSourceTargets: number;
+      promptBlueprintSamples: number;
+      promptBridgedThemes: number;
+      sourceBroadThemes: number;
+      sourceTopThemes: number;
+      themesWithoutPublicCoverage: number;
+      trafficDataAvailable: boolean;
+      uniqueCandidateFiles: number;
+      unsafeItems: number;
+      waves: number;
+    };
+  }>("content/automation/mass-ai-search-action-matrix.json");
   const publicCoverageGapPlan = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     items?: Array<{ noindex?: boolean; readyForManualReview?: boolean; safeDraft?: boolean; searchSeeds?: unknown[]; sourceTargets?: unknown[] }>;
@@ -3128,6 +3162,61 @@ async function main() {
           ),
         ),
       detail: `officialSources=${broadSearchDemand.sourceEvidence?.officialSources?.length || 0}, reviewPackMatches=${broadSearchDemand.summary.reviewPackThemeMatches}, waveMatches=${broadSearchDemand.summary.plannedWaveThemeMatches}, readyMatches=${broadSearchDemand.summary.totalReadyDraftMatches}`,
+    },
+    {
+      name: "mass AI search action matrix is read-only and covers broad themes",
+      ok:
+        massAiSearchMatrix.guardrails.autoCreateArticles === false &&
+        massAiSearchMatrix.guardrails.autoEditArticles === false &&
+        massAiSearchMatrix.guardrails.autoMarkReview === false &&
+        massAiSearchMatrix.guardrails.autoPublish === false &&
+        massAiSearchMatrix.guardrails.trafficClaim === "not-included" &&
+        massAiSearchMatrix.summary.sourceBroadThemes === broadSearchDemand.summary.themes &&
+        massAiSearchMatrix.summary.items === massAiSearchMatrix.summary.sourceTopThemes &&
+        massAiSearchMatrix.summary.items >= 8 &&
+        massAiSearchMatrix.summary.itemsWithCandidateFiles === massAiSearchMatrix.summary.items &&
+        massAiSearchMatrix.summary.uniqueCandidateFiles >= broadSearchDemand.summary.uniqueCandidateFiles / 2 &&
+        massAiSearchMatrix.summary.trafficDataAvailable === false,
+      detail: `items=${massAiSearchMatrix.summary.items}/${massAiSearchMatrix.summary.sourceTopThemes}, broad=${massAiSearchMatrix.summary.sourceBroadThemes}, unique=${massAiSearchMatrix.summary.uniqueCandidateFiles}, traffic=${massAiSearchMatrix.summary.trafficDataAvailable}`,
+    },
+    {
+      name: "mass AI search action matrix keeps prompt and deployment work human-gated",
+      ok:
+        massAiSearchMatrix.summary.unsafeItems === 0 &&
+        massAiSearchMatrix.summary.humanGatedItems === massAiSearchMatrix.summary.items &&
+        massAiSearchMatrix.summary.itemsReadyForHumanReviewPrep === massAiSearchMatrix.summary.items &&
+        massAiSearchMatrix.summary.itemsWithHumanReviewActions === massAiSearchMatrix.summary.items &&
+        massAiSearchMatrix.summary.itemsWithSearchSeeds === massAiSearchMatrix.summary.items &&
+        massAiSearchMatrix.summary.itemsWithSourceTargets === massAiSearchMatrix.summary.items &&
+        massAiSearchMatrix.summary.deploymentBridgedThemes >= 3 &&
+        massAiSearchMatrix.summary.promptBridgedThemes >= 1 &&
+        massAiSearchMatrix.summary.promptBlueprintSamples >= 2 &&
+        Boolean(
+          massAiSearchMatrix.items?.every(
+            (item) =>
+              item.readyForHumanReviewPrep === true &&
+              item.trafficClaim === "not-included" &&
+              (item.unsafeReasons?.length || 0) === 0 &&
+              (item.humanReviewActions?.length || 0) >= 6 &&
+              (item.searchSeeds?.length || 0) >= 4 &&
+              (item.sourceTargets?.length || 0) > 0 &&
+              (item.articleSignals || []).every(
+                (signal) =>
+                  signal.status === "draft" &&
+                  signal.noindex === true &&
+                  signal.humanReviewRequired === true &&
+                  signal.sourceNotes === true &&
+                  (signal.qualityScore || 0) >= 100,
+              ) &&
+              (item.commandBoundaries || []).every(
+                (command) =>
+                  command.markReviewAfterHumanApproval?.includes("--confirm-human") &&
+                  !command.publishDryRunAfterReview?.includes("--confirm") &&
+                  command.publishConfirm === "not-included",
+              ),
+          ),
+        ),
+      detail: `ready=${massAiSearchMatrix.summary.itemsReadyForHumanReviewPrep}, deploy=${massAiSearchMatrix.summary.deploymentBridgedThemes}, prompt=${massAiSearchMatrix.summary.promptBridgedThemes}, unsafe=${massAiSearchMatrix.summary.unsafeItems}`,
     },
     {
       name: "public coverage gap plan is read-only and covers every no-public broad theme",

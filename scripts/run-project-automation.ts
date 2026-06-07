@@ -45,6 +45,7 @@ const tasks: Task[] = [
   { title: "Generate search demand review pack", args: ["run", "automation:search-demand-review-pack"] },
   { title: "Generate search demand publication bridge", args: ["run", "automation:search-demand-publication-bridge"] },
   { title: "Generate broad search demand map", args: ["run", "automation:broad-search-demand"] },
+  { title: "Generate mass AI search action matrix", args: ["run", "automation:mass-ai-search-matrix"] },
   { title: "Generate AI deployment review pack", args: ["run", "automation:ai-deployment-review-pack"] },
   { title: "Generate industry prompt review pack", args: ["run", "automation:industry-prompt-review-pack"] },
   { title: "Generate industry prompt opportunity board", args: ["run", "automation:industry-prompt-opportunity-board"] },

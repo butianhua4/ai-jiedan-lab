@@ -1,6 +1,6 @@
 # Industry Prompt Coverage
 
-Generated at: 2026-06-07T17:41:26.645Z
+Generated at: 2026-06-07T17:54:11.049Z
 
 This report is read-only. It organizes broad industry AI prompt drafts for manual review and does not publish anything.
 

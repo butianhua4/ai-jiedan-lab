@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T17:42:09.546Z",
+  "generatedAt": "2026-06-07T17:54:54.727Z",
   "ok": true,
   "summary": {
-    "checks": 147,
+    "checks": 149,
     "failed": 0,
-    "passed": 147
+    "passed": 149
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=163, unsafeClaims=0, watchMentions=2489"
+      "detail": "filesScanned=165, unsafeClaims=0, watchMentions=2565"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -561,6 +561,16 @@
       "name": "broad search demand map links demand, sources, and planned review waves",
       "ok": true,
       "detail": "officialSources=13, reviewPackMatches=4, waveMatches=24, readyMatches=417"
+    },
+    {
+      "name": "mass AI search action matrix is read-only and covers broad themes",
+      "ok": true,
+      "detail": "items=8/8, broad=10, unique=45, traffic=false"
+    },
+    {
+      "name": "mass AI search action matrix keeps prompt and deployment work human-gated",
+      "ok": true,
+      "detail": "ready=8, deploy=6, prompt=2, unsafe=0"
     },
     {
       "name": "public coverage gap plan is read-only and covers every no-public broad theme",

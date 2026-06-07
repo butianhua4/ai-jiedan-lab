@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T17:42:10.061Z
+Generated at: 2026-06-07T17:54:55.292Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -1032,8 +1032,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 163
-- Traffic claim watch mentions: 2489
+- Traffic claim files scanned: 165
+- Traffic claim watch mentions: 2565
 
 ## Public Surface Inventory
 
@@ -1183,6 +1183,33 @@ Public categories:
 | Business AI workflows and SOP templates | 328 | 0 | 15 | 0 | 2 | support, product, weekly report | AI workflow examples<br>AI use cases for business |
 | LLM serving, GPU, and managed inference | 312 | 0 | 9 | 0 | 0 | concurrency, autoscaling | vLLM deployment tutorial<br>Hugging Face TGI deployment |
 | LLM evaluation, observability, and security | 312 | 0 | 11 | 0 | 0 | logs, prompt injection, cost tracking | LLM observability<br>RAG evaluation |
+
+## Mass AI Search Action Matrix
+
+- Items: 8
+- Waves: 3
+- Source broad themes: 10
+- Source top themes: 8
+- Ready for human review prep: 8
+- Human-gated items: 8
+- Unique candidate files: 45
+- Themes without public coverage: 8
+- Deployment bridged themes: 6
+- Prompt bridged themes: 2
+- Prompt blueprint samples: 10
+- Traffic data available: false
+- Unsafe items: 0
+
+| Wave | Ready | Public | Candidates | Sources | Seeds | Deploy | Prompt | Lane | Theme |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | true | 0 | 8 | 8 | 14 | 3 | 0 | agent-deployment | Agent deployment, tool calling, and production workflows |
+| 1 | true | 0 | 8 | 7 | 14 | 0 | 6 | prompt-library | Cross-industry AI prompt templates |
+| 1 | true | 0 | 8 | 8 | 14 | 3 | 0 | agent-memory-rag | RAG, knowledge base, and agent memory |
+| 2 | true | 0 | 8 | 3 | 8 | 1 | 0 | rag-memory | Local and open-source model deployment |
+| 2 | true | 0 | 8 | 2 | 8 | 1 | 0 | agent-deployment | Dify, n8n, Flowise, and no-code AI automation |
+| 2 | true | 0 | 8 | 7 | 14 | 0 | 2 | broad-ai-operations | Business AI workflows and SOP templates |
+| 3 | true | 0 | 8 | 2 | 8 | 1 | 0 | model-deployment | LLM serving, GPU, and managed inference |
+| 3 | true | 0 | 8 | 5 | 8 | 1 | 0 | prompt-library | LLM evaluation, observability, and security |
 
 ## Public Coverage Gap Plan
 

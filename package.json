@@ -87,6 +87,7 @@
     "automation:search-demand-review-pack": "tsx scripts/search-demand-review-pack.ts",
     "automation:search-demand-publication-bridge": "tsx scripts/search-demand-publication-bridge.ts",
     "automation:broad-search-demand": "tsx scripts/broad-search-demand-map.ts",
+    "automation:mass-ai-search-matrix": "tsx scripts/mass-ai-search-action-matrix.ts",
     "automation:ai-deployment-review-pack": "tsx scripts/ai-deployment-review-pack.ts",
     "automation:industry-prompt-review-pack": "tsx scripts/industry-prompt-review-pack.ts",
     "automation:industry-prompt-opportunity-board": "tsx scripts/industry-prompt-opportunity-board.ts",
