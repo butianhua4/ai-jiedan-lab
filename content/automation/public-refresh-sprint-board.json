@@ -1,0 +1,616 @@
+{
+  "generatedAt": "2026-06-07T19:41:18.576Z",
+  "guardrails": {
+    "autoEditArticles": false,
+    "autoMarkReview": false,
+    "autoPublish": false,
+    "note": "Read-only public refresh sprint board. It groups public pages into manual SEO refresh waves without changing metadata, body, canonical, or publishing state.",
+    "stopBefore": "Stop before public-page edits, canonical changes, redirects, or publish:articles --confirm until a human approves the exact change.",
+    "trafficClaim": "not-included"
+  },
+  "sourceEvidence": {
+    "publicSearchRefreshGeneratedAt": "2026-06-07T19:41:18.078Z",
+    "publicSearchRefreshSummary": {
+      "actionItems": 114,
+      "cannibalizationItems": 6,
+      "highPriorityItems": 12,
+      "items": 15,
+      "itemsReadyForHumanRefreshReview": 15,
+      "liveMissingFromSitemap": 0,
+      "measuredTrafficSources": 0,
+      "publicArticles": 15,
+      "publishConfirmCommandsIncluded": 0,
+      "publishedButNoindexed": 0,
+      "seoWarningItems": 8,
+      "shortDescriptionItems": 9,
+      "trafficDataAvailable": false,
+      "unsafeItems": 0
+    },
+    "trafficNote": "No measured traffic, ranking, impression, click, conversion, or revenue claim is made."
+  },
+  "summary": {
+    "actionItems": 163,
+    "cannibalizationItems": 6,
+    "highPriorityItems": 12,
+    "items": 15,
+    "itemsPerWave": 3,
+    "itemsReadyForPublicRefreshSprint": 15,
+    "liveMissingFromSitemap": 0,
+    "publicArticles": 15,
+    "publishConfirmCommandsIncluded": 0,
+    "publishedButNoindexed": 0,
+    "seoWarningItems": 8,
+    "shortDescriptionItems": 9,
+    "trafficDataAvailable": false,
+    "unsafeItems": 0,
+    "waves": 5
+  },
+  "unsafeItems": [],
+  "waves": [
+    {
+      "actionItems": 33,
+      "files": [
+        "content/blog/codex-npm-install-error-beginner-fix.mdx",
+        "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
+        "content/blog/first-upwork-project-pricing-checklist.mdx"
+      ],
+      "highPriorityItems": 3,
+      "items": 3,
+      "readyItems": 3,
+      "refreshReasons": [
+        "seo-warning",
+        "cannibalization",
+        "freshness-high",
+        "high-priority",
+        "short-description"
+      ],
+      "unsafeItems": 0,
+      "wave": 1
+    },
+    {
+      "actionItems": 33,
+      "files": [
+        "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+        "content/blog/upwork-proposal-no-reply-checklist.mdx",
+        "content/blog/vercel-env-variable-missing-beginner-guide.mdx"
+      ],
+      "highPriorityItems": 3,
+      "items": 3,
+      "readyItems": 3,
+      "refreshReasons": [
+        "seo-warning",
+        "short-description",
+        "freshness-high",
+        "high-priority"
+      ],
+      "unsafeItems": 0,
+      "wave": 2
+    },
+    {
+      "actionItems": 32,
+      "files": [
+        "content/blog/codex-github-before-commit-checklist.mdx",
+        "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+        "content/blog/build-first-webpage-with-codex.mdx"
+      ],
+      "highPriorityItems": 3,
+      "items": 3,
+      "readyItems": 3,
+      "refreshReasons": [
+        "seo-warning",
+        "freshness-high",
+        "high-priority",
+        "short-description",
+        "cannibalization"
+      ],
+      "unsafeItems": 0,
+      "wave": 3
+    },
+    {
+      "actionItems": 36,
+      "files": [
+        "content/blog/codex-generated-code-review-guide.mdx",
+        "content/blog/codex-install-failed-beginner-fix.mdx",
+        "content/blog/what-is-codex-beginner-start.mdx"
+      ],
+      "highPriorityItems": 3,
+      "items": 3,
+      "readyItems": 3,
+      "refreshReasons": [
+        "short-description",
+        "cannibalization",
+        "freshness-high",
+        "high-priority"
+      ],
+      "unsafeItems": 0,
+      "wave": 4
+    },
+    {
+      "actionItems": 29,
+      "files": [
+        "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+        "content/blog/codex-code-review-delivery-checklist.mdx",
+        "content/blog/codex-upwork-small-job-risk-checklist.mdx"
+      ],
+      "highPriorityItems": 0,
+      "items": 3,
+      "readyItems": 3,
+      "refreshReasons": [
+        "short-description",
+        "freshness-high"
+      ],
+      "unsafeItems": 0,
+      "wave": 5
+    }
+  ],
+  "items": [
+    {
+      "actionCount": 11,
+      "category": "报错解决",
+      "descriptionLength": 102,
+      "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
+      "priorityScore": 165,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: Codex npm install 报错怎么办.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "seo-warning",
+        "cannibalization",
+        "freshness-high",
+        "high-priority"
+      ],
+      "slug": "codex-npm-install-error-beginner-fix",
+      "sprintWave": 1,
+      "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 11,
+      "category": "Codex 新手教程",
+      "descriptionLength": 104,
+      "file": "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
+      "priorityScore": 165,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "SEO warning: Confirm the contentType value matches the actual article format and category.",
+        "SEO warning: If the value is intentionally uncommon, document that decision during human review.",
+        "SEO warning: If the value is accidental, replace it with the closest established content type before approval.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "seo-warning",
+        "cannibalization",
+        "freshness-high",
+        "high-priority"
+      ],
+      "slug": "codex-vs-claude-code-beginner-checklist",
+      "sprintWave": 1,
+      "title": "Codex 和 Claude Code 怎么选：新手对比清单",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 11,
+      "category": "报价指南",
+      "descriptionLength": 72,
+      "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+      "priorityScore": 160,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: 第一个 Upwork 项目怎么报价.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "seo-warning",
+        "short-description",
+        "freshness-high",
+        "high-priority"
+      ],
+      "slug": "first-upwork-project-pricing-checklist",
+      "sprintWave": 1,
+      "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 11,
+      "category": "收款工具",
+      "descriptionLength": 82,
+      "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+      "priorityScore": 160,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: Payoneer Wise PayPal 区别.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "seo-warning",
+        "short-description",
+        "freshness-high",
+        "high-priority"
+      ],
+      "slug": "payoneer-wise-paypal-beginner-comparison",
+      "sprintWave": 2,
+      "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 11,
+      "category": "Upwork 新手",
+      "descriptionLength": 80,
+      "file": "content/blog/upwork-proposal-no-reply-checklist.mdx",
+      "priorityScore": 160,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: Upwork Proposal 没人回怎么办.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "seo-warning",
+        "short-description",
+        "freshness-high",
+        "high-priority"
+      ],
+      "slug": "upwork-proposal-no-reply-checklist",
+      "sprintWave": 2,
+      "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 11,
+      "category": "部署教程",
+      "descriptionLength": 87,
+      "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+      "priorityScore": 160,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: Vercel 环境变量缺失怎么办.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "seo-warning",
+        "short-description",
+        "freshness-high",
+        "high-priority"
+      ],
+      "slug": "vercel-env-variable-missing-beginner-guide",
+      "sprintWave": 2,
+      "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 10,
+      "category": "Codex 新手教程",
+      "descriptionLength": 101,
+      "file": "content/blog/codex-github-before-commit-checklist.mdx",
+      "priorityScore": 150,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "SEO warning: Confirm the contentType value matches the actual article format and category.",
+        "SEO warning: If the value is intentionally uncommon, document that decision during human review.",
+        "SEO warning: If the value is accidental, replace it with the closest established content type before approval.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "seo-warning",
+        "freshness-high",
+        "high-priority"
+      ],
+      "slug": "codex-github-before-commit-checklist",
+      "sprintWave": 3,
+      "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 10,
+      "category": "Codex 新手教程",
+      "descriptionLength": 101,
+      "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+      "priorityScore": 150,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "SEO warning: Confirm the contentType value matches the actual article format and category.",
+        "SEO warning: If the value is intentionally uncommon, document that decision during human review.",
+        "SEO warning: If the value is accidental, replace it with the closest established content type before approval.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "seo-warning",
+        "freshness-high",
+        "high-priority"
+      ],
+      "slug": "codex-vercel-deploy-preflight-checklist",
+      "sprintWave": 3,
+      "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 12,
+      "category": "Codex 新手教程",
+      "descriptionLength": 88,
+      "file": "content/blog/build-first-webpage-with-codex.mdx",
+      "priorityScore": 145,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Cannibalization check: review same primary keyword conflict \"codex 怎么做第一个网页\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+        "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "short-description",
+        "cannibalization",
+        "freshness-high",
+        "high-priority"
+      ],
+      "slug": "build-first-webpage-with-codex",
+      "sprintWave": 3,
+      "title": "Codex 怎么做第一个网页",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 12,
+      "category": "Codex 新手教程",
+      "descriptionLength": 89,
+      "file": "content/blog/codex-generated-code-review-guide.mdx",
+      "priorityScore": 145,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Cannibalization check: review same primary keyword conflict \"codex 生成代码后怎么审核\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+        "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "short-description",
+        "cannibalization",
+        "freshness-high",
+        "high-priority"
+      ],
+      "slug": "codex-generated-code-review-guide",
+      "sprintWave": 4,
+      "title": "Codex 生成代码后怎么审核",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 12,
+      "category": "Codex 新手教程",
+      "descriptionLength": 87,
+      "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+      "priorityScore": 145,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Cannibalization check: review same primary keyword conflict \"codex 安装失败怎么办\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+        "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "short-description",
+        "cannibalization",
+        "freshness-high",
+        "high-priority"
+      ],
+      "slug": "codex-install-failed-beginner-fix",
+      "sprintWave": 4,
+      "title": "Codex 安装失败怎么办",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 12,
+      "category": "Codex 新手教程",
+      "descriptionLength": 89,
+      "file": "content/blog/what-is-codex-beginner-start.mdx",
+      "priorityScore": 145,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Cannibalization check: review same primary keyword conflict \"codex 是什么新手怎么开始\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+        "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "short-description",
+        "cannibalization",
+        "freshness-high",
+        "high-priority"
+      ],
+      "slug": "what-is-codex-beginner-start",
+      "sprintWave": 4,
+      "title": "Codex 是什么新手怎么开始",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 11,
+      "category": "Upwork 新手",
+      "descriptionLength": 64,
+      "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+      "priorityScore": 130,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded.",
+        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "short-description",
+        "freshness-high"
+      ],
+      "slug": "upwork-client-requirements-analysis-beginner",
+      "sprintWave": 5,
+      "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 9,
+      "category": "Codex 新手教程",
+      "descriptionLength": 97,
+      "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+      "priorityScore": 120,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "freshness-high"
+      ],
+      "slug": "codex-code-review-delivery-checklist",
+      "sprintWave": 5,
+      "title": "Codex 生成代码后怎么审核：交付前检查清单",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 9,
+      "category": "Codex 新手教程",
+      "descriptionLength": 102,
+      "file": "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+      "priorityScore": 120,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "freshness-high"
+      ],
+      "slug": "codex-upwork-small-job-risk-checklist",
+      "sprintWave": 5,
+      "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+      "unsafeReasons": []
+    }
+  ]
+}

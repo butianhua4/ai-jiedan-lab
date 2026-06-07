@@ -400,6 +400,49 @@ type PublicSearchRefreshPack = {
   }>;
 };
 
+type PublicRefreshSprintBoard = {
+  items: Array<{
+    actionCount: number;
+    category: string;
+    descriptionLength: number;
+    file: string;
+    priorityScore: number;
+    publishConfirm: string;
+    readyForPublicRefreshSprint: boolean;
+    refreshReasons: string[];
+    sprintWave: number;
+    title: string;
+    unsafeReasons: string[];
+  }>;
+  summary: {
+    actionItems: number;
+    cannibalizationItems: number;
+    highPriorityItems: number;
+    items: number;
+    itemsPerWave: number;
+    itemsReadyForPublicRefreshSprint: number;
+    liveMissingFromSitemap: number | null;
+    publicArticles: number;
+    publishConfirmCommandsIncluded: number;
+    publishedButNoindexed: number;
+    seoWarningItems: number;
+    shortDescriptionItems: number;
+    trafficDataAvailable: boolean;
+    unsafeItems: number;
+    waves: number;
+  };
+  waves: Array<{
+    actionItems: number;
+    files: string[];
+    highPriorityItems: number;
+    items: number;
+    readyItems: number;
+    refreshReasons: string[];
+    unsafeItems: number;
+    wave: number;
+  }>;
+};
+
 type BroadFirstCoverageLaunchPack = {
   items: Array<{
     category: string;
@@ -1954,6 +1997,7 @@ const reports = {
   trafficClaimGuard: readJson<TrafficClaimGuard>("content/automation/traffic-claim-guard.json"),
   publicSurfaceInventory: readJson<PublicSurfaceInventory>("content/automation/public-surface-inventory.json"),
   publicSearchRefreshPack: readJson<PublicSearchRefreshPack>("content/automation/public-search-refresh-pack.json"),
+  publicRefreshSprintBoard: readJson<PublicRefreshSprintBoard>("content/automation/public-refresh-sprint-board.json"),
   contentIntegrity: readJson<ContentIntegrity>("content/automation/content-integrity-audit.json"),
   internalLinks: readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json"),
   sourceHealth: readJson<SourceHealth>("content/automation/source-target-health-audit.json"),
@@ -2554,6 +2598,24 @@ const payload = {
     trafficDataAvailable: reports.publicSearchRefreshPack.data?.summary.trafficDataAvailable ?? null,
     unsafeItems: reports.publicSearchRefreshPack.data?.summary.unsafeItems ?? null,
   },
+  publicRefreshSprintBoard: {
+    actionItems: reports.publicRefreshSprintBoard.data?.summary.actionItems ?? null,
+    cannibalizationItems: reports.publicRefreshSprintBoard.data?.summary.cannibalizationItems ?? null,
+    highPriorityItems: reports.publicRefreshSprintBoard.data?.summary.highPriorityItems ?? null,
+    items: reports.publicRefreshSprintBoard.data?.summary.items ?? null,
+    itemsPerWave: reports.publicRefreshSprintBoard.data?.summary.itemsPerWave ?? null,
+    itemsReadyForPublicRefreshSprint: reports.publicRefreshSprintBoard.data?.summary.itemsReadyForPublicRefreshSprint ?? null,
+    liveMissingFromSitemap: reports.publicRefreshSprintBoard.data?.summary.liveMissingFromSitemap ?? null,
+    publicArticles: reports.publicRefreshSprintBoard.data?.summary.publicArticles ?? null,
+    publishConfirmCommandsIncluded: reports.publicRefreshSprintBoard.data?.summary.publishConfirmCommandsIncluded ?? null,
+    publishedButNoindexed: reports.publicRefreshSprintBoard.data?.summary.publishedButNoindexed ?? null,
+    seoWarningItems: reports.publicRefreshSprintBoard.data?.summary.seoWarningItems ?? null,
+    shortDescriptionItems: reports.publicRefreshSprintBoard.data?.summary.shortDescriptionItems ?? null,
+    top: reports.publicRefreshSprintBoard.data?.items.slice(0, 15) ?? [],
+    trafficDataAvailable: reports.publicRefreshSprintBoard.data?.summary.trafficDataAvailable ?? null,
+    unsafeItems: reports.publicRefreshSprintBoard.data?.summary.unsafeItems ?? null,
+    waves: reports.publicRefreshSprintBoard.data?.waves ?? [],
+  },
   broadFirstCoverageLaunchPack: {
     clustersSelected: reports.broadFirstCoverageLaunchPack.data?.summary.clustersSelected ?? null,
     commandBoundaries: reports.broadFirstCoverageLaunchPack.data?.summary.commandBoundaries ?? null,
@@ -2998,6 +3060,13 @@ function buildNextActions() {
     reports.publicSearchRefreshPack.data.summary.publishConfirmCommandsIncluded > 0
   ) {
     return ["Open docs/public-search-refresh-pack.md and resolve public search refresh issues before editing public pages."];
+  }
+  if (
+    !reports.publicRefreshSprintBoard.data ||
+    reports.publicRefreshSprintBoard.data.summary.unsafeItems > 0 ||
+    reports.publicRefreshSprintBoard.data.summary.publishConfirmCommandsIncluded > 0
+  ) {
+    return ["Open docs/public-refresh-sprint-board.md and resolve public refresh sprint issues before editing public pages."];
   }
   if (!reports.contentIntegrity.data || reports.contentIntegrity.data.summary.blockingItems > 0) {
     return ["Open docs/content-integrity-audit.md and fix content integrity blockers before any review or publish action."];
@@ -4346,6 +4415,37 @@ function toMarkdown(data: typeof payload) {
     ...data.publicSearchRefreshPack.top.map(
       (item) =>
         `| ${item.readyForHumanRefreshReview} | ${item.priorityScore} | ${item.actionCount} | ${Boolean(item.seoWarning)} | ${item.freshnessRisk?.riskLevel || "none"} | ${item.cannibalizationConflicts.length} | ${item.descriptionLength} | ${item.category} | ${item.title} | ${item.file} |`,
+    ),
+    "",
+    "## Public Refresh Sprint Board",
+    "",
+    `- Public articles: ${data.publicRefreshSprintBoard.publicArticles}`,
+    `- Items: ${data.publicRefreshSprintBoard.items}`,
+    `- Waves: ${data.publicRefreshSprintBoard.waves.length}`,
+    `- Items per wave: ${data.publicRefreshSprintBoard.itemsPerWave}`,
+    `- Ready for public refresh sprint: ${data.publicRefreshSprintBoard.itemsReadyForPublicRefreshSprint}`,
+    `- High-priority items: ${data.publicRefreshSprintBoard.highPriorityItems}`,
+    `- SEO warning items: ${data.publicRefreshSprintBoard.seoWarningItems}`,
+    `- Short-description items: ${data.publicRefreshSprintBoard.shortDescriptionItems}`,
+    `- Cannibalization items: ${data.publicRefreshSprintBoard.cannibalizationItems}`,
+    `- Action items: ${data.publicRefreshSprintBoard.actionItems}`,
+    `- Live missing from sitemap: ${data.publicRefreshSprintBoard.liveMissingFromSitemap}`,
+    `- Published but noindexed: ${data.publicRefreshSprintBoard.publishedButNoindexed}`,
+    `- Publish confirm commands included: ${data.publicRefreshSprintBoard.publishConfirmCommandsIncluded}`,
+    `- Traffic data available: ${data.publicRefreshSprintBoard.trafficDataAvailable}`,
+    `- Unsafe items: ${data.publicRefreshSprintBoard.unsafeItems}`,
+    "",
+    "| Wave | Ready | High priority | Actions | Reasons | Files |",
+    "| ---: | ---: | ---: | ---: | --- | --- |",
+    ...data.publicRefreshSprintBoard.waves.map(
+      (wave) => `| ${wave.wave} | ${wave.readyItems}/${wave.items} | ${wave.highPriorityItems} | ${wave.actionItems} | ${wave.refreshReasons.join(", ") || "none"} | ${wave.files.join("<br>")} |`,
+    ),
+    "",
+    "| Wave | Ready | Score | Actions | Desc | Reasons | Publish confirm | Title | File |",
+    "| ---: | --- | ---: | ---: | ---: | --- | --- | --- | --- |",
+    ...data.publicRefreshSprintBoard.top.map(
+      (item) =>
+        `| ${item.sprintWave} | ${item.readyForPublicRefreshSprint} | ${item.priorityScore} | ${item.actionCount} | ${item.descriptionLength} | ${item.refreshReasons.join(", ") || "none"} | ${item.publishConfirm} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Preflight",

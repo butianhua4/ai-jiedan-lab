@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T19:31:28.276Z
+Generated at: 2026-06-07T19:41:33.843Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -54,7 +54,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=vi
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/ -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
@@ -1142,8 +1142,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 179
-- Traffic claim watch mentions: 3239
+- Traffic claim files scanned: 181
+- Traffic claim watch mentions: 3339
 
 ## Public Surface Inventory
 
@@ -1231,6 +1231,50 @@ Public categories:
 | true | 130 | 6 | false | high | 0 | 64 | Upwork 新手 | Upwork 客户需求太模糊怎么办：新手分析和追问清单 | content/blog/upwork-client-requirements-analysis-beginner.mdx |
 | true | 120 | 5 | false | high | 0 | 97 | Codex 新手教程 | Codex 生成代码后怎么审核：交付前检查清单 | content/blog/codex-code-review-delivery-checklist.mdx |
 | true | 120 | 5 | false | high | 0 | 102 | Codex 新手教程 | Codex 接 Upwork 小单怎么判断：风险检查清单 | content/blog/codex-upwork-small-job-risk-checklist.mdx |
+
+## Public Refresh Sprint Board
+
+- Public articles: 15
+- Items: 15
+- Waves: 5
+- Items per wave: 3
+- Ready for public refresh sprint: 15
+- High-priority items: 12
+- SEO warning items: 8
+- Short-description items: 9
+- Cannibalization items: 6
+- Action items: 163
+- Live missing from sitemap: 0
+- Published but noindexed: 0
+- Publish confirm commands included: 0
+- Traffic data available: false
+- Unsafe items: 0
+
+| Wave | Ready | High priority | Actions | Reasons | Files |
+| ---: | ---: | ---: | ---: | --- | --- |
+| 1 | 3/3 | 3 | 33 | seo-warning, cannibalization, freshness-high, high-priority, short-description | content/blog/codex-npm-install-error-beginner-fix.mdx<br>content/blog/codex-vs-claude-code-beginner-checklist.mdx<br>content/blog/first-upwork-project-pricing-checklist.mdx |
+| 2 | 3/3 | 3 | 33 | seo-warning, short-description, freshness-high, high-priority | content/blog/payoneer-wise-paypal-beginner-comparison.mdx<br>content/blog/upwork-proposal-no-reply-checklist.mdx<br>content/blog/vercel-env-variable-missing-beginner-guide.mdx |
+| 3 | 3/3 | 3 | 32 | seo-warning, freshness-high, high-priority, short-description, cannibalization | content/blog/codex-github-before-commit-checklist.mdx<br>content/blog/codex-vercel-deploy-preflight-checklist.mdx<br>content/blog/build-first-webpage-with-codex.mdx |
+| 4 | 3/3 | 3 | 36 | short-description, cannibalization, freshness-high, high-priority | content/blog/codex-generated-code-review-guide.mdx<br>content/blog/codex-install-failed-beginner-fix.mdx<br>content/blog/what-is-codex-beginner-start.mdx |
+| 5 | 3/3 | 0 | 29 | short-description, freshness-high | content/blog/upwork-client-requirements-analysis-beginner.mdx<br>content/blog/codex-code-review-delivery-checklist.mdx<br>content/blog/codex-upwork-small-job-risk-checklist.mdx |
+
+| Wave | Ready | Score | Actions | Desc | Reasons | Publish confirm | Title | File |
+| ---: | --- | ---: | ---: | ---: | --- | --- | --- | --- |
+| 1 | true | 165 | 11 | 102 | seo-warning, cannibalization, freshness-high, high-priority | not-included | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx |
+| 1 | true | 165 | 11 | 104 | seo-warning, cannibalization, freshness-high, high-priority | not-included | Codex 和 Claude Code 怎么选：新手对比清单 | content/blog/codex-vs-claude-code-beginner-checklist.mdx |
+| 1 | true | 160 | 11 | 72 | seo-warning, short-description, freshness-high, high-priority | not-included | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
+| 2 | true | 160 | 11 | 82 | seo-warning, short-description, freshness-high, high-priority | not-included | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
+| 2 | true | 160 | 11 | 80 | seo-warning, short-description, freshness-high, high-priority | not-included | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
+| 2 | true | 160 | 11 | 87 | seo-warning, short-description, freshness-high, high-priority | not-included | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | content/blog/vercel-env-variable-missing-beginner-guide.mdx |
+| 3 | true | 150 | 10 | 101 | seo-warning, freshness-high, high-priority | not-included | Codex 和 GitHub 怎么配合：提交代码前检查 | content/blog/codex-github-before-commit-checklist.mdx |
+| 3 | true | 150 | 10 | 101 | seo-warning, freshness-high, high-priority | not-included | Codex 部署 Vercel 前检查什么：上线前清单 | content/blog/codex-vercel-deploy-preflight-checklist.mdx |
+| 3 | true | 145 | 12 | 88 | short-description, cannibalization, freshness-high, high-priority | not-included | Codex 怎么做第一个网页 | content/blog/build-first-webpage-with-codex.mdx |
+| 4 | true | 145 | 12 | 89 | short-description, cannibalization, freshness-high, high-priority | not-included | Codex 生成代码后怎么审核 | content/blog/codex-generated-code-review-guide.mdx |
+| 4 | true | 145 | 12 | 87 | short-description, cannibalization, freshness-high, high-priority | not-included | Codex 安装失败怎么办 | content/blog/codex-install-failed-beginner-fix.mdx |
+| 4 | true | 145 | 12 | 89 | short-description, cannibalization, freshness-high, high-priority | not-included | Codex 是什么新手怎么开始 | content/blog/what-is-codex-beginner-start.mdx |
+| 5 | true | 130 | 11 | 64 | short-description, freshness-high | not-included | Upwork 客户需求太模糊怎么办：新手分析和追问清单 | content/blog/upwork-client-requirements-analysis-beginner.mdx |
+| 5 | true | 120 | 9 | 97 | freshness-high | not-included | Codex 生成代码后怎么审核：交付前检查清单 | content/blog/codex-code-review-delivery-checklist.mdx |
+| 5 | true | 120 | 9 | 102 | freshness-high | not-included | Codex 接 Upwork 小单怎么判断：风险检查清单 | content/blog/codex-upwork-small-job-risk-checklist.mdx |
 
 ## Preflight
 

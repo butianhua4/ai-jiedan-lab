@@ -690,6 +690,36 @@ async function main() {
     }>;
     unsafeItems?: unknown[];
   }>("content/automation/public-search-refresh-pack.json");
+  const publicRefreshSprintBoard = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    items?: Array<{
+      actionCount?: number;
+      publishConfirm?: string;
+      readyForPublicRefreshSprint?: boolean;
+      refreshActions?: unknown[];
+      refreshReasons?: unknown[];
+      unsafeReasons?: unknown[];
+    }>;
+    summary: {
+      actionItems: number;
+      cannibalizationItems: number;
+      highPriorityItems: number;
+      items: number;
+      itemsPerWave: number;
+      itemsReadyForPublicRefreshSprint: number;
+      liveMissingFromSitemap: number | null;
+      publicArticles: number;
+      publishConfirmCommandsIncluded: number;
+      publishedButNoindexed: number;
+      seoWarningItems: number;
+      shortDescriptionItems: number;
+      trafficDataAvailable: boolean;
+      unsafeItems: number;
+      waves: number;
+    };
+    unsafeItems?: unknown[];
+    waves?: Array<{ actionItems?: number; items?: number; readyItems?: number; unsafeItems?: number }>;
+  }>("content/automation/public-refresh-sprint-board.json");
   const trafficEvidence = readJson<{
     guardrails: { autoPublish: boolean };
     summary: {
@@ -4112,6 +4142,44 @@ async function main() {
           ),
         ),
       detail: `ready=${publicSearchRefreshPack.summary.itemsReadyForHumanRefreshReview}, actions=${publicSearchRefreshPack.summary.actionItems}, highPriority=${publicSearchRefreshPack.summary.highPriorityItems}, shortDescriptions=${publicSearchRefreshPack.summary.shortDescriptionItems}, publishConfirm=${publicSearchRefreshPack.summary.publishConfirmCommandsIncluded}`,
+    },
+    {
+      name: "public refresh sprint board covers public refresh pack",
+      ok:
+        publicRefreshSprintBoard.guardrails.autoEditArticles === false &&
+        publicRefreshSprintBoard.guardrails.autoMarkReview === false &&
+        publicRefreshSprintBoard.guardrails.autoPublish === false &&
+        publicRefreshSprintBoard.guardrails.trafficClaim === "not-included" &&
+        publicRefreshSprintBoard.summary.items === publicSearchRefreshPack.summary.items &&
+        publicRefreshSprintBoard.summary.publicArticles === publicSearchRefreshPack.summary.publicArticles &&
+        publicRefreshSprintBoard.summary.itemsReadyForPublicRefreshSprint === publicSearchRefreshPack.summary.itemsReadyForHumanRefreshReview &&
+        publicRefreshSprintBoard.summary.seoWarningItems === publicSearchRefreshPack.summary.seoWarningItems &&
+        publicRefreshSprintBoard.summary.shortDescriptionItems === publicSearchRefreshPack.summary.shortDescriptionItems &&
+        publicRefreshSprintBoard.summary.cannibalizationItems === publicSearchRefreshPack.summary.cannibalizationItems &&
+        publicRefreshSprintBoard.summary.liveMissingFromSitemap === publicSearchRefreshPack.summary.liveMissingFromSitemap &&
+        publicRefreshSprintBoard.summary.publishedButNoindexed === publicSearchRefreshPack.summary.publishedButNoindexed &&
+        publicRefreshSprintBoard.summary.trafficDataAvailable === false &&
+        publicRefreshSprintBoard.summary.waves >= 5,
+      detail: `items=${publicRefreshSprintBoard.summary.items}, public=${publicRefreshSprintBoard.summary.publicArticles}, waves=${publicRefreshSprintBoard.summary.waves}, seo=${publicRefreshSprintBoard.summary.seoWarningItems}, shortDescriptions=${publicRefreshSprintBoard.summary.shortDescriptionItems}`,
+    },
+    {
+      name: "public refresh sprint board keeps public edits manual and publish-confirm-free",
+      ok:
+        publicRefreshSprintBoard.summary.unsafeItems === 0 &&
+        (publicRefreshSprintBoard.unsafeItems?.length || 0) === 0 &&
+        publicRefreshSprintBoard.summary.publishConfirmCommandsIncluded === 0 &&
+        publicRefreshSprintBoard.summary.actionItems >= publicRefreshSprintBoard.summary.items * 5 &&
+        Boolean(
+          publicRefreshSprintBoard.items?.every(
+            (item) =>
+              item.readyForPublicRefreshSprint === true &&
+              (item.unsafeReasons?.length || 0) === 0 &&
+              (item.refreshActions?.length || item.actionCount || 0) >= 5 &&
+              item.publishConfirm === "not-included",
+          ),
+        ) &&
+        Boolean(publicRefreshSprintBoard.waves?.every((wave) => wave.readyItems === wave.items && (wave.unsafeItems || 0) === 0 && (wave.actionItems || 0) >= (wave.items || 0) * 5)),
+      detail: `ready=${publicRefreshSprintBoard.summary.itemsReadyForPublicRefreshSprint}, actions=${publicRefreshSprintBoard.summary.actionItems}, unsafe=${publicRefreshSprintBoard.summary.unsafeItems}, publishConfirm=${publicRefreshSprintBoard.summary.publishConfirmCommandsIncluded}`,
     },
     {
       name: "manual review workbench is ready and stops before publishing",

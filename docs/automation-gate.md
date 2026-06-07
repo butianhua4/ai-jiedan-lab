@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-07T19:31:27.724Z
+Generated at: 2026-06-07T19:41:33.296Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 163
-- Passed: 163
+- Checks: 165
+- Passed: 165
 - Failed: 0
 
 ## Checks
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=179, unsafeClaims=0, watchMentions=3239 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=181, unsafeClaims=0, watchMentions=3339 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, broadFirst=8, candidates=22 |
@@ -171,6 +171,8 @@ Overall: PASS
 | public surface inventory identifies broad AI public gaps with candidates | PASS | clusters=8, zeroPublic=8 |
 | public search refresh pack is read-only and covers all public pages | PASS | items=15, public=15, seo=8, measuredTraffic=0 |
 | public search refresh pack keeps public edits human-gated and action-ready | PASS | ready=15, actions=114, highPriority=12, shortDescriptions=9, publishConfirm=0 |
+| public refresh sprint board covers public refresh pack | PASS | items=15, public=15, waves=5, seo=8, shortDescriptions=9 |
+| public refresh sprint board keeps public edits manual and publish-confirm-free | PASS | ready=15, actions=163, unsafe=0, publishConfirm=0 |
 | manual review workbench is ready and stops before publishing | PASS | currentItemsCovered=3, publishableNow=0 |
 | manual review workbench includes SEO warning remediation | PASS | workbenchSeo=16, remediation=16, unsafe=0 |
 | next batch approval route matches manual review workbench | PASS | batch=1, items=3, workbenchItems=3, public=15, publishable=0 |

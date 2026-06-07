@@ -73,6 +73,7 @@ const tasks: Task[] = [
   { title: "Run content freshness check", args: ["run", "content:freshness"] },
   { title: "Generate review freshness brief", args: ["run", "automation:review-freshness-brief"] },
   { title: "Generate public search refresh pack", args: ["run", "automation:public-search-refresh"] },
+  { title: "Generate public refresh sprint board", args: ["run", "automation:public-refresh-sprint"] },
   { title: "Generate autopilot review queue", args: ["run", "automation:autopilot-review-queue"] },
   { title: "Generate autopilot approval packet", args: ["run", "automation:autopilot-approval-packet"] },
   { title: "Generate autopilot search intent brief", args: ["run", "automation:autopilot-search-intent"] },
