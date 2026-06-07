@@ -718,6 +718,35 @@ type AutopilotBroadPublishWaves = {
   }>;
 };
 
+type AutopilotBroadWaveOptimization = {
+  nextItems: Array<{
+    actionChecklist: unknown[];
+    articleSignals: { descriptionLength: number; h2Count: number; titleLength: number };
+    file: string;
+    publicLinkSuggestion: { title: string; url: string } | null;
+    readyForHumanOptimizationReview: boolean;
+    title: string;
+    unsafeReasons: unknown[];
+    warningRemediation: unknown[];
+    wave: number;
+  }>;
+  summary: {
+    items: number;
+    itemsWithActionChecklist: number;
+    itemsWithPublicLinkSuggestion: number;
+    itemsWithSearchQueries: number;
+    itemsWithSourceTargets: number;
+    readyItems: number;
+    safeDraftItems: number;
+    unsafeItems: number;
+    waveItems: number;
+    waves: number;
+    wavesReady: number;
+  };
+  unsafeItems: unknown[];
+  waveSummaries: Array<{ files: string[]; items: number; readyItems: number; theme: string; unsafeItems: number; wave: number }>;
+};
+
 type ReviewOptimizationBrief = {
   nextBriefs: Array<{
     file: string;
@@ -1100,6 +1129,7 @@ const reports = {
   autopilotBroadAiDemandBrief: readJson<AutopilotBroadAiDemandBrief>("content/automation/autopilot-broad-ai-demand-brief.json"),
   autopilotBroadFreshnessTriage: readJson<AutopilotBroadFreshnessTriage>("content/automation/autopilot-broad-freshness-triage.json"),
   autopilotBroadPublishWaves: readJson<AutopilotBroadPublishWaves>("content/automation/autopilot-broad-publish-waves.json"),
+  autopilotBroadWaveOptimization: readJson<AutopilotBroadWaveOptimization>("content/automation/autopilot-broad-wave-optimization.json"),
   reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
   reviewCannibalizationBrief: readJson<ReviewCannibalizationBrief>("content/automation/review-cannibalization-brief.json"),
   reviewFreshnessBrief: readJson<ReviewFreshnessBrief>("content/automation/review-freshness-brief.json"),
@@ -1344,6 +1374,22 @@ const payload = {
     waves: reports.autopilotBroadPublishWaves.data?.summary.waves ?? null,
     wavesList: reports.autopilotBroadPublishWaves.data?.waves.slice(0, 8) ?? [],
     wavesReadyForHumanApproval: reports.autopilotBroadPublishWaves.data?.summary.wavesReadyForHumanApproval ?? null,
+  },
+  autopilotBroadWaveOptimization: {
+    items: reports.autopilotBroadWaveOptimization.data?.summary.items ?? null,
+    itemsList: reports.autopilotBroadWaveOptimization.data?.nextItems.slice(0, 8) ?? [],
+    itemsWithActionChecklist: reports.autopilotBroadWaveOptimization.data?.summary.itemsWithActionChecklist ?? null,
+    itemsWithPublicLinkSuggestion: reports.autopilotBroadWaveOptimization.data?.summary.itemsWithPublicLinkSuggestion ?? null,
+    itemsWithSearchQueries: reports.autopilotBroadWaveOptimization.data?.summary.itemsWithSearchQueries ?? null,
+    itemsWithSourceTargets: reports.autopilotBroadWaveOptimization.data?.summary.itemsWithSourceTargets ?? null,
+    readyItems: reports.autopilotBroadWaveOptimization.data?.summary.readyItems ?? null,
+    safeDraftItems: reports.autopilotBroadWaveOptimization.data?.summary.safeDraftItems ?? null,
+    unsafeItems: reports.autopilotBroadWaveOptimization.data?.summary.unsafeItems ?? null,
+    unsafeItemList: reports.autopilotBroadWaveOptimization.data?.unsafeItems.slice(0, 8) ?? [],
+    waveItems: reports.autopilotBroadWaveOptimization.data?.summary.waveItems ?? null,
+    waveSummaries: reports.autopilotBroadWaveOptimization.data?.waveSummaries.slice(0, 8) ?? [],
+    waves: reports.autopilotBroadWaveOptimization.data?.summary.waves ?? null,
+    wavesReady: reports.autopilotBroadWaveOptimization.data?.summary.wavesReady ?? null,
   },
   reviewOptimizationBrief: {
     briefs: reports.reviewOptimizationBrief.data?.summary.briefs ?? null,
@@ -1728,6 +1774,9 @@ function buildNextActions() {
   if (!reports.autopilotBroadPublishWaves.data || reports.autopilotBroadPublishWaves.data.summary.unsafeItems > 0 || reports.autopilotBroadPublishWaves.data.summary.unsafeWaves > 0) {
     return ["Open docs/autopilot-broad-publish-waves.md and resolve unsafe broad publish waves before any approval action."];
   }
+  if (!reports.autopilotBroadWaveOptimization.data || reports.autopilotBroadWaveOptimization.data.summary.unsafeItems > 0) {
+    return ["Open docs/autopilot-broad-wave-optimization.md and resolve unsafe broad wave optimization items before any approval action."];
+  }
   if (!reports.reviewOptimizationBrief.data || reports.reviewOptimizationBrief.data.summary.unsafeCommands > 0) {
     return ["Open docs/review-optimization-brief.md and resolve unsafe or missing copydesk guidance before manual review."];
   }
@@ -1803,6 +1852,7 @@ function buildNextActions() {
     "Use docs/autopilot-broad-ai-demand-brief.md to prioritize broad AI deployment, Agent, memory, RAG, and industry prompt themes.",
     "Use docs/autopilot-broad-freshness-triage.md to fact-check high-demand AI drafts before any approval action.",
     "Use docs/autopilot-broad-publish-waves.md to review 1-3 high-demand AI drafts per human-approved batch.",
+    "Use docs/autopilot-broad-wave-optimization.md to apply SEO snippet, opening, internal-link, and risk-language improvements during human review.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
     "If approved by a human, run mark:review with --confirm-human for approved files only.",
     "Publish only status=review articles in a 1-3 article batch after a dry-run.",
@@ -2220,6 +2270,37 @@ function toMarkdown(data: typeof payload) {
     ...data.autopilotBroadPublishWaves.wavesList.map(
       (wave) =>
         `| ${wave.wave} | ${wave.readyItems}/${wave.files.length} | ${wave.unsafeItems} | ${wave.projectedPublicPublishedAfterApproval} | ${wave.theme} | ${wave.files.join("<br>")} |`,
+    ),
+    "",
+    "## Autopilot Broad Wave Optimization",
+    "",
+    `- Waves: ${data.autopilotBroadWaveOptimization.waves}`,
+    `- Waves ready: ${data.autopilotBroadWaveOptimization.wavesReady}`,
+    `- Items: ${data.autopilotBroadWaveOptimization.items}`,
+    `- Wave items: ${data.autopilotBroadWaveOptimization.waveItems}`,
+    `- Ready items: ${data.autopilotBroadWaveOptimization.readyItems}`,
+    `- Safe draft items: ${data.autopilotBroadWaveOptimization.safeDraftItems}`,
+    `- Items with action checklist: ${data.autopilotBroadWaveOptimization.itemsWithActionChecklist}`,
+    `- Items with public link suggestion: ${data.autopilotBroadWaveOptimization.itemsWithPublicLinkSuggestion}`,
+    `- Items with search queries: ${data.autopilotBroadWaveOptimization.itemsWithSearchQueries}`,
+    `- Items with source targets: ${data.autopilotBroadWaveOptimization.itemsWithSourceTargets}`,
+    `- Unsafe items: ${data.autopilotBroadWaveOptimization.unsafeItems}`,
+    "",
+    "Unsafe broad wave optimization items:",
+    "",
+    ...(data.autopilotBroadWaveOptimization.unsafeItemList.length ? data.autopilotBroadWaveOptimization.unsafeItemList.map((item) => `- ${JSON.stringify(item)}`) : ["- none"]),
+    "",
+    "| Wave | Ready | Unsafe | Theme | Files |",
+    "| --- | --- | --- | --- | --- |",
+    ...data.autopilotBroadWaveOptimization.waveSummaries.map(
+      (wave) => `| ${wave.wave} | ${wave.readyItems}/${wave.items} | ${wave.unsafeItems} | ${wave.theme} | ${wave.files.join("<br>")} |`,
+    ),
+    "",
+    "| Wave | Ready | Link | H2 | Description | Actions | Warnings | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.autopilotBroadWaveOptimization.itemsList.map(
+      (item) =>
+        `| ${item.wave} | ${item.readyForHumanOptimizationReview} | ${item.publicLinkSuggestion ? item.publicLinkSuggestion.url : "missing"} | ${item.articleSignals.h2Count} | ${item.articleSignals.descriptionLength} | ${item.actionChecklist.length} | ${item.warningRemediation.length} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Review Optimization Brief",

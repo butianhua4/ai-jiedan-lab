@@ -1,0 +1,2123 @@
+{
+  "generatedAt": "2026-06-07T02:51:29.417Z",
+  "guardrails": {
+    "autoEditArticles": false,
+    "autoMarkReview": false,
+    "autoPublish": false,
+    "note": "Read-only optimization brief for broad publish waves. It proposes SEO, snippet, opening, internal-link, and risk-language checks without editing article files.",
+    "stopBefore": "Apply any copy or link changes only during human review. Do not mark review or publish automatically.",
+    "trafficClaim": "not-included"
+  },
+  "sourceEvidence": {
+    "broadPublishWavesGeneratedAt": "2026-06-07T02:51:28.848Z",
+    "broadPublishWavesGuardrails": {
+      "autoEditArticles": false,
+      "autoMarkReview": false,
+      "autoPublish": false,
+      "note": "Read-only broad publish wave planner. It turns high-demand freshness triage items into small human approval batches and never changes article status.",
+      "stopBefore": "Stop before mark:review and publish. Human approval is required per file and per wave.",
+      "trafficClaim": "not-included"
+    },
+    "broadPublishWavesSummary": {
+      "clustersCovered": 7,
+      "currentPublicPublished": 15,
+      "items": 24,
+      "itemsPerWaveMax": 3,
+      "readyItems": 24,
+      "safeDraftItems": 24,
+      "unsafeItems": 0,
+      "unsafeWaves": 0,
+      "uniqueFiles": 24,
+      "waves": 8,
+      "wavesReadyForHumanApproval": 8
+    },
+    "reportsUsed": [
+      "autopilot-broad-publish-waves",
+      "internal-link-opportunity-audit",
+      "article front matter and headings"
+    ]
+  },
+  "summary": {
+    "items": 24,
+    "itemsWithActionChecklist": 24,
+    "itemsWithPublicLinkSuggestion": 14,
+    "itemsWithSearchQueries": 24,
+    "itemsWithSourceTargets": 24,
+    "readyItems": 24,
+    "safeDraftItems": 24,
+    "unsafeItems": 0,
+    "waveItems": 24,
+    "waves": 8,
+    "wavesReady": 8
+  },
+  "nextItems": [
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: 大模型部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to a relevant published article before approval.",
+        "Apply review focus: 核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异.",
+        "Apply review focus: 不要承诺本地部署一定更省钱或更稳定.",
+        "Apply review focus: 必须包含 smoke check、回滚、日志、限流和成本边界.",
+        "Check search phrasing coverage: 大模型部署教程.",
+        "Check search phrasing coverage: Ollama 本地部署教程.",
+        "Check search phrasing coverage: vLLM 部署教程.",
+        "Check search phrasing coverage: RunPod vLLM serverless."
+      ],
+      "articleSignals": {
+        "descriptionLength": 91,
+        "h2Count": 11,
+        "titleLength": 44
+      },
+      "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+      "publicLinkSuggestion": null,
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "大模型部署教程",
+        "Ollama 本地部署教程",
+        "vLLM 部署教程",
+        "RunPod vLLM serverless",
+        "Hugging Face TGI 部署"
+      ],
+      "sourceTargets": [
+        "https://docs.vllm.ai",
+        "https://huggingface.co/docs",
+        "https://docs.runpod.io/serverless/vllm/get-started",
+        "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+        "https://www.spheron.network/blog/llm-deployment-guide/"
+      ],
+      "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 1
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: AI Agent 部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Codex 部署 Vercel 前检查什么：上线前清单\" at /blog/codex-vercel-deploy-preflight-checklist.",
+        "Apply review focus: 不要写成全自动替人完成高风险业务.",
+        "Apply review focus: 明确工具权限、人工确认、日志和失败处理.",
+        "Apply review focus: 核对 SDK/API 的当前名称和部署方式.",
+        "Check search phrasing coverage: AI Agent 部署教程.",
+        "Check search phrasing coverage: Agent 工具调用教程.",
+        "Check search phrasing coverage: AI Agent 生产环境.",
+        "Check search phrasing coverage: LangGraph Agent 入门."
+      ],
+      "articleSignals": {
+        "descriptionLength": 69,
+        "h2Count": 11,
+        "titleLength": 47
+      },
+      "cluster": "Agent 部署、工具调用和生产安全",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+        "reason": "keyword overlap: ai, vercel, 部署, 上线, 检查, 新手",
+        "score": 35,
+        "slug": "codex-vercel-deploy-preflight-checklist",
+        "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+        "url": "/blog/codex-vercel-deploy-preflight-checklist"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "AI Agent 部署教程",
+        "Agent 工具调用教程",
+        "AI Agent 生产环境",
+        "LangGraph Agent 入门",
+        "CrewAI 部署教程"
+      ],
+      "sourceTargets": [
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://python.langchain.com/docs",
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://openai.github.io/openai-agents-python/",
+        "https://langchain-ai.github.io/langgraph/"
+      ],
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 1
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: AI Agent 记忆怎么做.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to a relevant published article before approval.",
+        "Apply review focus: 区分知识库 RAG 和用户记忆.",
+        "Apply review focus: 必须有隐私、删除、去重、引用和人工纠错边界.",
+        "Apply review focus: 避免宣称记忆层能自动解决幻觉.",
+        "Check search phrasing coverage: AI Agent 记忆怎么做.",
+        "Check search phrasing coverage: Agent memory RAG.",
+        "Check search phrasing coverage: AI Agent 长期记忆.",
+        "Check search phrasing coverage: pgvector Agent memory."
+      ],
+      "articleSignals": {
+        "descriptionLength": 57,
+        "h2Count": 10,
+        "titleLength": 38
+      },
+      "cluster": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/agent-memory-postgres-schema-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/agent-memory-postgres-schema-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/agent-memory-postgres-schema-guide.mdx",
+      "publicLinkSuggestion": null,
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "AI Agent 记忆怎么做",
+        "Agent memory RAG",
+        "AI Agent 长期记忆",
+        "pgvector Agent memory",
+        "RAG 和记忆区别"
+      ],
+      "sourceTargets": [
+        "https://arxiv.org/abs/2604.20598",
+        "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/",
+        "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
+      ],
+      "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 1
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: RAG 知识库搭建教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Codex 怎么做第一个网页\" at /blog/build-first-webpage-with-codex.",
+        "Apply review focus: 把 RAG、微调、提示词模板区分清楚.",
+        "Apply review focus: 必须写明引用、来源、权限和失败兜底.",
+        "Apply review focus: 不要把 demo 成功写成生产质量保证.",
+        "Check search phrasing coverage: RAG 知识库搭建教程.",
+        "Check search phrasing coverage: 向量数据库教程.",
+        "Check search phrasing coverage: 企业知识库 AI 部署.",
+        "Check search phrasing coverage: RAG 检索不到内容."
+      ],
+      "articleSignals": {
+        "descriptionLength": 52,
+        "h2Count": 11,
+        "titleLength": 29
+      },
+      "cluster": "RAG、知识库、向量数据库和引用溯源",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/build-first-webpage-with-codex.mdx",
+        "reason": "keyword overlap: ai, 一个, 怎么, 么做, 第一",
+        "score": 23,
+        "slug": "build-first-webpage-with-codex",
+        "title": "Codex 怎么做第一个网页",
+        "url": "/blog/build-first-webpage-with-codex"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "RAG 知识库搭建教程",
+        "向量数据库教程",
+        "企业知识库 AI 部署",
+        "RAG 检索不到内容",
+        "RAG 评测教程"
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://python.langchain.com/docs",
+        "https://docs.llamaindex.ai",
+        "https://huggingface.co/docs",
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
+        "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
+        "https://arxiv.org/abs/2603.10700",
+        "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+      ],
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 2
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: AI 提示词大全.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Codex 生成代码后怎么审核：交付前检查清单\" at /blog/codex-code-review-delivery-checklist.",
+        "Apply review focus: 避免空泛万能提示词，必须给输入字段、输出结构和质检标准.",
+        "Apply review focus: 高风险行业必须保留专业判断和人工复核.",
+        "Apply review focus: 不要承诺转化率、收入或法律/医疗结果.",
+        "Check search phrasing coverage: AI 提示词大全.",
+        "Check search phrasing coverage: 销售 AI 提示词.",
+        "Check search phrasing coverage: 客服 AI 提示词.",
+        "Check search phrasing coverage: HR AI 提示词."
+      ],
+      "articleSignals": {
+        "descriptionLength": 51,
+        "h2Count": 10,
+        "titleLength": 28
+      },
+      "cluster": "全行业 AI 提示词和工作流模板",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+        "reason": "keyword overlap: ai, 怎么, 审核, 接单, 交付, 生成",
+        "score": 35,
+        "slug": "codex-code-review-delivery-checklist",
+        "title": "Codex 生成代码后怎么审核：交付前检查清单",
+        "url": "/blog/codex-code-review-delivery-checklist"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "AI 提示词大全",
+        "销售 AI 提示词",
+        "客服 AI 提示词",
+        "HR AI 提示词",
+        "运营 AI 提示词",
+        "企业 AI 提示词模板"
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
+        "https://sensara.io/prompts/",
+        "https://www.mrprompts.ai/learn/ai-prompts-for-sales"
+      ],
+      "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 2
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: Dify 部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to a relevant published article before approval.",
+        "Apply review focus: 核对平台连接器、webhook、权限和部署限制.",
+        "Apply review focus: 避免鼓励群发、绕过平台规则或抓取隐私数据.",
+        "Apply review focus: 写清楚人工审批和客户验收边界.",
+        "Check search phrasing coverage: Dify 部署教程.",
+        "Check search phrasing coverage: n8n AI 自动化教程.",
+        "Check search phrasing coverage: MCP 使用教程.",
+        "Check search phrasing coverage: Flowise 本地部署."
+      ],
+      "articleSignals": {
+        "descriptionLength": 58,
+        "h2Count": 11,
+        "titleLength": 36
+      },
+      "cluster": "Dify、n8n、Coze、Flowise、MCP 自动化部署",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/mcp-server-deployment-security-checklist.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/mcp-server-deployment-security-checklist.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+      "publicLinkSuggestion": null,
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "Dify 部署教程",
+        "n8n AI 自动化教程",
+        "MCP 使用教程",
+        "Flowise 本地部署",
+        "Coze Bot 发布"
+      ],
+      "sourceTargets": [
+        "https://docs.dify.ai/",
+        "https://docs.n8n.io/",
+        "https://modelcontextprotocol.io/docs"
+      ],
+      "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 2
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: OpenAI API 接入教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Codex 生成代码后怎么审核：交付前检查清单\" at /blog/codex-code-review-delivery-checklist.",
+        "Apply review focus: 核对 SDK 名称、API endpoint、限流概念和错误码.",
+        "Apply review focus: 必须强调密钥安全、服务端代理和日志脱敏.",
+        "Apply review focus: 不要虚构价格或模型能力.",
+        "Check search phrasing coverage: OpenAI API 接入教程.",
+        "Check search phrasing coverage: Claude API rate limit.",
+        "Check search phrasing coverage: Gemini API 限流.",
+        "Check search phrasing coverage: OpenRouter API 教程."
+      ],
+      "articleSignals": {
+        "descriptionLength": 59,
+        "h2Count": 11,
+        "titleLength": 33
+      },
+      "cluster": "AI API 接入、限流、成本和多模型路由",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+        "reason": "keyword overlap: ai, 怎么, 新手, 代码, 检查, 交付",
+        "score": 31,
+        "slug": "codex-code-review-delivery-checklist",
+        "title": "Codex 生成代码后怎么审核：交付前检查清单",
+        "url": "/blog/codex-code-review-delivery-checklist"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "OpenAI API 接入教程",
+        "Claude API rate limit",
+        "Gemini API 限流",
+        "OpenRouter API 教程",
+        "AI API key 安全"
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs/guides/agents",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://python.langchain.com/docs",
+        "https://platform.openai.com/docs",
+        "https://docs.anthropic.com",
+        "https://ai-sdk.dev/docs",
+        "https://ai.google.dev/docs",
+        "https://docs.dify.ai",
+        "https://docs.n8n.io",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://docs.anthropic.com/",
+        "https://vercel.com/docs/ai-gateway"
+      ],
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 3
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: 大模型部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Vercel 提示环境变量缺失怎么办：新手部署检查流程\" at /blog/vercel-env-variable-missing-beginner-guide.",
+        "Apply review focus: 核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异.",
+        "Apply review focus: 不要承诺本地部署一定更省钱或更稳定.",
+        "Apply review focus: 必须包含 smoke check、回滚、日志、限流和成本边界.",
+        "Check search phrasing coverage: 大模型部署教程.",
+        "Check search phrasing coverage: Ollama 本地部署教程.",
+        "Check search phrasing coverage: vLLM 部署教程.",
+        "Check search phrasing coverage: RunPod vLLM serverless."
+      ],
+      "articleSignals": {
+        "descriptionLength": 102,
+        "h2Count": 11,
+        "titleLength": 48
+      },
+      "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+        "reason": "keyword overlap: 怎么, 部署, 署教, 教程, 新手, 环境",
+        "score": 32,
+        "slug": "vercel-env-variable-missing-beginner-guide",
+        "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+        "url": "/blog/vercel-env-variable-missing-beginner-guide"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "大模型部署教程",
+        "Ollama 本地部署教程",
+        "vLLM 部署教程",
+        "RunPod vLLM serverless",
+        "Hugging Face TGI 部署"
+      ],
+      "sourceTargets": [
+        "https://docs.ollama.com",
+        "https://docs.vllm.ai",
+        "https://huggingface.co/docs",
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
+        "https://docs.runpod.io/serverless/vllm/get-started",
+        "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+        "https://www.spheron.network/blog/llm-deployment-guide/"
+      ],
+      "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 3
+    }
+  ],
+  "unsafeItems": [],
+  "waveSummaries": [
+    {
+      "files": [
+        "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+        "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "content/blog/agent-memory-postgres-schema-guide.mdx"
+      ],
+      "items": 3,
+      "readyItems": 3,
+      "theme": "开源大模型部署：Ollama、vLLM、TGI、RunPod + Agent 部署、工具调用和生产安全 + Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
+      "unsafeItems": 0,
+      "wave": 1
+    },
+    {
+      "files": [
+        "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+        "content/blog/mcp-server-deployment-security-checklist.mdx"
+      ],
+      "items": 3,
+      "readyItems": 3,
+      "theme": "RAG、知识库、向量数据库和引用溯源 + 全行业 AI 提示词和工作流模板 + Dify、n8n、Coze、Flowise、MCP 自动化部署",
+      "unsafeItems": 0,
+      "wave": 2
+    },
+    {
+      "files": [
+        "content/blog/ai-api-key-security-rotation-guide.mdx",
+        "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+        "content/blog/ai-agent-memory-rag-design-guide.mdx"
+      ],
+      "items": 3,
+      "readyItems": 3,
+      "theme": "AI API 接入、限流、成本和多模型路由 + 开源大模型部署：Ollama、vLLM、TGI、RunPod + Agent 部署、工具调用和生产安全",
+      "unsafeItems": 0,
+      "wave": 3
+    },
+    {
+      "files": [
+        "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+        "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "content/blog/n8n-ai-agent-webhook-production-guide.mdx"
+      ],
+      "items": 3,
+      "readyItems": 3,
+      "theme": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres + 全行业 AI 提示词和工作流模板 + Dify、n8n、Coze、Flowise、MCP 自动化部署",
+      "unsafeItems": 0,
+      "wave": 4
+    },
+    {
+      "files": [
+        "content/blog/claude-api-rate-limit-debug-guide.mdx",
+        "content/blog/llm-api-rate-limit-retry-guide.mdx",
+        "content/blog/ai-automation-project-pricing-scope-guide.mdx"
+      ],
+      "items": 3,
+      "readyItems": 3,
+      "theme": "AI API 接入、限流、成本和多模型路由 + 开源大模型部署：Ollama、vLLM、TGI、RunPod + Agent 部署、工具调用和生产安全",
+      "unsafeItems": 0,
+      "wave": 5
+    },
+    {
+      "files": [
+        "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+        "content/blog/helicone-llm-observability-guide.mdx",
+        "content/blog/llm-cost-monitoring-dashboard-guide.mdx"
+      ],
+      "items": 3,
+      "readyItems": 3,
+      "theme": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres + AI API 接入、限流、成本和多模型路由 + 开源大模型部署：Ollama、vLLM、TGI、RunPod",
+      "unsafeItems": 0,
+      "wave": 6
+    },
+    {
+      "files": [
+        "content/blog/dify-workflow-error-handling-guide.mdx",
+        "content/blog/rag-citation-source-trace-guide.mdx",
+        "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx"
+      ],
+      "items": 3,
+      "readyItems": 3,
+      "theme": "Agent 部署、工具调用和生产安全 + Agent 记忆：短期记忆、长期记忆、RAG、Postgres + 开源大模型部署：Ollama、vLLM、TGI、RunPod",
+      "unsafeItems": 0,
+      "wave": 7
+    },
+    {
+      "files": [
+        "content/blog/dify-workflow-vs-agent-guide.mdx",
+        "content/blog/local-llm-vram-not-enough-guide.mdx",
+        "content/blog/enterprise-im-ai-agent-integration-guide.mdx"
+      ],
+      "items": 3,
+      "readyItems": 3,
+      "theme": "Agent 部署、工具调用和生产安全 + 开源大模型部署：Ollama、vLLM、TGI、RunPod",
+      "unsafeItems": 0,
+      "wave": 8
+    }
+  ],
+  "items": [
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: 大模型部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to a relevant published article before approval.",
+        "Apply review focus: 核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异.",
+        "Apply review focus: 不要承诺本地部署一定更省钱或更稳定.",
+        "Apply review focus: 必须包含 smoke check、回滚、日志、限流和成本边界.",
+        "Check search phrasing coverage: 大模型部署教程.",
+        "Check search phrasing coverage: Ollama 本地部署教程.",
+        "Check search phrasing coverage: vLLM 部署教程.",
+        "Check search phrasing coverage: RunPod vLLM serverless."
+      ],
+      "articleSignals": {
+        "descriptionLength": 91,
+        "h2Count": 11,
+        "titleLength": 44
+      },
+      "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+      "publicLinkSuggestion": null,
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "大模型部署教程",
+        "Ollama 本地部署教程",
+        "vLLM 部署教程",
+        "RunPod vLLM serverless",
+        "Hugging Face TGI 部署"
+      ],
+      "sourceTargets": [
+        "https://docs.vllm.ai",
+        "https://huggingface.co/docs",
+        "https://docs.runpod.io/serverless/vllm/get-started",
+        "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+        "https://www.spheron.network/blog/llm-deployment-guide/"
+      ],
+      "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 1
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: AI Agent 部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Codex 部署 Vercel 前检查什么：上线前清单\" at /blog/codex-vercel-deploy-preflight-checklist.",
+        "Apply review focus: 不要写成全自动替人完成高风险业务.",
+        "Apply review focus: 明确工具权限、人工确认、日志和失败处理.",
+        "Apply review focus: 核对 SDK/API 的当前名称和部署方式.",
+        "Check search phrasing coverage: AI Agent 部署教程.",
+        "Check search phrasing coverage: Agent 工具调用教程.",
+        "Check search phrasing coverage: AI Agent 生产环境.",
+        "Check search phrasing coverage: LangGraph Agent 入门."
+      ],
+      "articleSignals": {
+        "descriptionLength": 69,
+        "h2Count": 11,
+        "titleLength": 47
+      },
+      "cluster": "Agent 部署、工具调用和生产安全",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+        "reason": "keyword overlap: ai, vercel, 部署, 上线, 检查, 新手",
+        "score": 35,
+        "slug": "codex-vercel-deploy-preflight-checklist",
+        "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+        "url": "/blog/codex-vercel-deploy-preflight-checklist"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "AI Agent 部署教程",
+        "Agent 工具调用教程",
+        "AI Agent 生产环境",
+        "LangGraph Agent 入门",
+        "CrewAI 部署教程"
+      ],
+      "sourceTargets": [
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://python.langchain.com/docs",
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://openai.github.io/openai-agents-python/",
+        "https://langchain-ai.github.io/langgraph/"
+      ],
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 1
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: AI Agent 记忆怎么做.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to a relevant published article before approval.",
+        "Apply review focus: 区分知识库 RAG 和用户记忆.",
+        "Apply review focus: 必须有隐私、删除、去重、引用和人工纠错边界.",
+        "Apply review focus: 避免宣称记忆层能自动解决幻觉.",
+        "Check search phrasing coverage: AI Agent 记忆怎么做.",
+        "Check search phrasing coverage: Agent memory RAG.",
+        "Check search phrasing coverage: AI Agent 长期记忆.",
+        "Check search phrasing coverage: pgvector Agent memory."
+      ],
+      "articleSignals": {
+        "descriptionLength": 57,
+        "h2Count": 10,
+        "titleLength": 38
+      },
+      "cluster": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/agent-memory-postgres-schema-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/agent-memory-postgres-schema-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/agent-memory-postgres-schema-guide.mdx",
+      "publicLinkSuggestion": null,
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "AI Agent 记忆怎么做",
+        "Agent memory RAG",
+        "AI Agent 长期记忆",
+        "pgvector Agent memory",
+        "RAG 和记忆区别"
+      ],
+      "sourceTargets": [
+        "https://arxiv.org/abs/2604.20598",
+        "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/",
+        "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
+      ],
+      "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 1
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: RAG 知识库搭建教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Codex 怎么做第一个网页\" at /blog/build-first-webpage-with-codex.",
+        "Apply review focus: 把 RAG、微调、提示词模板区分清楚.",
+        "Apply review focus: 必须写明引用、来源、权限和失败兜底.",
+        "Apply review focus: 不要把 demo 成功写成生产质量保证.",
+        "Check search phrasing coverage: RAG 知识库搭建教程.",
+        "Check search phrasing coverage: 向量数据库教程.",
+        "Check search phrasing coverage: 企业知识库 AI 部署.",
+        "Check search phrasing coverage: RAG 检索不到内容."
+      ],
+      "articleSignals": {
+        "descriptionLength": 52,
+        "h2Count": 11,
+        "titleLength": 29
+      },
+      "cluster": "RAG、知识库、向量数据库和引用溯源",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/build-first-webpage-with-codex.mdx",
+        "reason": "keyword overlap: ai, 一个, 怎么, 么做, 第一",
+        "score": 23,
+        "slug": "build-first-webpage-with-codex",
+        "title": "Codex 怎么做第一个网页",
+        "url": "/blog/build-first-webpage-with-codex"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "RAG 知识库搭建教程",
+        "向量数据库教程",
+        "企业知识库 AI 部署",
+        "RAG 检索不到内容",
+        "RAG 评测教程"
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://python.langchain.com/docs",
+        "https://docs.llamaindex.ai",
+        "https://huggingface.co/docs",
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
+        "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
+        "https://arxiv.org/abs/2603.10700",
+        "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+      ],
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 2
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: AI 提示词大全.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Codex 生成代码后怎么审核：交付前检查清单\" at /blog/codex-code-review-delivery-checklist.",
+        "Apply review focus: 避免空泛万能提示词，必须给输入字段、输出结构和质检标准.",
+        "Apply review focus: 高风险行业必须保留专业判断和人工复核.",
+        "Apply review focus: 不要承诺转化率、收入或法律/医疗结果.",
+        "Check search phrasing coverage: AI 提示词大全.",
+        "Check search phrasing coverage: 销售 AI 提示词.",
+        "Check search phrasing coverage: 客服 AI 提示词.",
+        "Check search phrasing coverage: HR AI 提示词."
+      ],
+      "articleSignals": {
+        "descriptionLength": 51,
+        "h2Count": 10,
+        "titleLength": 28
+      },
+      "cluster": "全行业 AI 提示词和工作流模板",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+        "reason": "keyword overlap: ai, 怎么, 审核, 接单, 交付, 生成",
+        "score": 35,
+        "slug": "codex-code-review-delivery-checklist",
+        "title": "Codex 生成代码后怎么审核：交付前检查清单",
+        "url": "/blog/codex-code-review-delivery-checklist"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "AI 提示词大全",
+        "销售 AI 提示词",
+        "客服 AI 提示词",
+        "HR AI 提示词",
+        "运营 AI 提示词",
+        "企业 AI 提示词模板"
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
+        "https://sensara.io/prompts/",
+        "https://www.mrprompts.ai/learn/ai-prompts-for-sales"
+      ],
+      "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 2
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: Dify 部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to a relevant published article before approval.",
+        "Apply review focus: 核对平台连接器、webhook、权限和部署限制.",
+        "Apply review focus: 避免鼓励群发、绕过平台规则或抓取隐私数据.",
+        "Apply review focus: 写清楚人工审批和客户验收边界.",
+        "Check search phrasing coverage: Dify 部署教程.",
+        "Check search phrasing coverage: n8n AI 自动化教程.",
+        "Check search phrasing coverage: MCP 使用教程.",
+        "Check search phrasing coverage: Flowise 本地部署."
+      ],
+      "articleSignals": {
+        "descriptionLength": 58,
+        "h2Count": 11,
+        "titleLength": 36
+      },
+      "cluster": "Dify、n8n、Coze、Flowise、MCP 自动化部署",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/mcp-server-deployment-security-checklist.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/mcp-server-deployment-security-checklist.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+      "publicLinkSuggestion": null,
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "Dify 部署教程",
+        "n8n AI 自动化教程",
+        "MCP 使用教程",
+        "Flowise 本地部署",
+        "Coze Bot 发布"
+      ],
+      "sourceTargets": [
+        "https://docs.dify.ai/",
+        "https://docs.n8n.io/",
+        "https://modelcontextprotocol.io/docs"
+      ],
+      "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 2
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: OpenAI API 接入教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Codex 生成代码后怎么审核：交付前检查清单\" at /blog/codex-code-review-delivery-checklist.",
+        "Apply review focus: 核对 SDK 名称、API endpoint、限流概念和错误码.",
+        "Apply review focus: 必须强调密钥安全、服务端代理和日志脱敏.",
+        "Apply review focus: 不要虚构价格或模型能力.",
+        "Check search phrasing coverage: OpenAI API 接入教程.",
+        "Check search phrasing coverage: Claude API rate limit.",
+        "Check search phrasing coverage: Gemini API 限流.",
+        "Check search phrasing coverage: OpenRouter API 教程."
+      ],
+      "articleSignals": {
+        "descriptionLength": 59,
+        "h2Count": 11,
+        "titleLength": 33
+      },
+      "cluster": "AI API 接入、限流、成本和多模型路由",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+        "reason": "keyword overlap: ai, 怎么, 新手, 代码, 检查, 交付",
+        "score": 31,
+        "slug": "codex-code-review-delivery-checklist",
+        "title": "Codex 生成代码后怎么审核：交付前检查清单",
+        "url": "/blog/codex-code-review-delivery-checklist"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "OpenAI API 接入教程",
+        "Claude API rate limit",
+        "Gemini API 限流",
+        "OpenRouter API 教程",
+        "AI API key 安全"
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs/guides/agents",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://python.langchain.com/docs",
+        "https://platform.openai.com/docs",
+        "https://docs.anthropic.com",
+        "https://ai-sdk.dev/docs",
+        "https://ai.google.dev/docs",
+        "https://docs.dify.ai",
+        "https://docs.n8n.io",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://docs.anthropic.com/",
+        "https://vercel.com/docs/ai-gateway"
+      ],
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 3
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: 大模型部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Vercel 提示环境变量缺失怎么办：新手部署检查流程\" at /blog/vercel-env-variable-missing-beginner-guide.",
+        "Apply review focus: 核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异.",
+        "Apply review focus: 不要承诺本地部署一定更省钱或更稳定.",
+        "Apply review focus: 必须包含 smoke check、回滚、日志、限流和成本边界.",
+        "Check search phrasing coverage: 大模型部署教程.",
+        "Check search phrasing coverage: Ollama 本地部署教程.",
+        "Check search phrasing coverage: vLLM 部署教程.",
+        "Check search phrasing coverage: RunPod vLLM serverless."
+      ],
+      "articleSignals": {
+        "descriptionLength": 102,
+        "h2Count": 11,
+        "titleLength": 48
+      },
+      "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+        "reason": "keyword overlap: 怎么, 部署, 署教, 教程, 新手, 环境",
+        "score": 32,
+        "slug": "vercel-env-variable-missing-beginner-guide",
+        "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+        "url": "/blog/vercel-env-variable-missing-beginner-guide"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "大模型部署教程",
+        "Ollama 本地部署教程",
+        "vLLM 部署教程",
+        "RunPod vLLM serverless",
+        "Hugging Face TGI 部署"
+      ],
+      "sourceTargets": [
+        "https://docs.ollama.com",
+        "https://docs.vllm.ai",
+        "https://huggingface.co/docs",
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
+        "https://docs.runpod.io/serverless/vllm/get-started",
+        "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+        "https://www.spheron.network/blog/llm-deployment-guide/"
+      ],
+      "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 3
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: AI Agent 部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Codex 怎么做第一个网页\" at /blog/build-first-webpage-with-codex.",
+        "Apply review focus: 不要写成全自动替人完成高风险业务.",
+        "Apply review focus: 明确工具权限、人工确认、日志和失败处理.",
+        "Apply review focus: 核对 SDK/API 的当前名称和部署方式.",
+        "Check search phrasing coverage: AI Agent 部署教程.",
+        "Check search phrasing coverage: Agent 工具调用教程.",
+        "Check search phrasing coverage: AI Agent 生产环境.",
+        "Check search phrasing coverage: LangGraph Agent 入门."
+      ],
+      "articleSignals": {
+        "descriptionLength": 60,
+        "h2Count": 12,
+        "titleLength": 41
+      },
+      "cluster": "Agent 部署、工具调用和生产安全",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/build-first-webpage-with-codex.mdx",
+        "reason": "keyword overlap: ai, 怎么, 一个, 么做, 接单",
+        "score": 23,
+        "slug": "build-first-webpage-with-codex",
+        "title": "Codex 怎么做第一个网页",
+        "url": "/blog/build-first-webpage-with-codex"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "AI Agent 部署教程",
+        "Agent 工具调用教程",
+        "AI Agent 生产环境",
+        "LangGraph Agent 入门",
+        "CrewAI 部署教程"
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://python.langchain.com/docs",
+        "https://docs.llamaindex.ai",
+        "https://huggingface.co/docs",
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://openai.github.io/openai-agents-python/",
+        "https://langchain-ai.github.io/langgraph/"
+      ],
+      "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 3
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: AI Agent 记忆怎么做.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to a relevant published article before approval.",
+        "Apply review focus: 区分知识库 RAG 和用户记忆.",
+        "Apply review focus: 必须有隐私、删除、去重、引用和人工纠错边界.",
+        "Apply review focus: 避免宣称记忆层能自动解决幻觉.",
+        "Check search phrasing coverage: AI Agent 记忆怎么做.",
+        "Check search phrasing coverage: Agent memory RAG.",
+        "Check search phrasing coverage: AI Agent 长期记忆.",
+        "Check search phrasing coverage: pgvector Agent memory."
+      ],
+      "articleSignals": {
+        "descriptionLength": 59,
+        "h2Count": 11,
+        "titleLength": 35
+      },
+      "cluster": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+      "publicLinkSuggestion": null,
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "AI Agent 记忆怎么做",
+        "Agent memory RAG",
+        "AI Agent 长期记忆",
+        "pgvector Agent memory",
+        "RAG 和记忆区别"
+      ],
+      "sourceTargets": [
+        "https://arxiv.org/abs/2604.20598",
+        "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/",
+        "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
+      ],
+      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 4
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: AI 提示词大全.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Upwork 客户需求太模糊怎么办：新手分析和追问清单\" at /blog/upwork-client-requirements-analysis-beginner.",
+        "Apply review focus: 避免空泛万能提示词，必须给输入字段、输出结构和质检标准.",
+        "Apply review focus: 高风险行业必须保留专业判断和人工复核.",
+        "Apply review focus: 不要承诺转化率、收入或法律/医疗结果.",
+        "Check search phrasing coverage: AI 提示词大全.",
+        "Check search phrasing coverage: 销售 AI 提示词.",
+        "Check search phrasing coverage: 客服 AI 提示词.",
+        "Check search phrasing coverage: HR AI 提示词."
+      ],
+      "articleSignals": {
+        "descriptionLength": 67,
+        "h2Count": 11,
+        "titleLength": 37
+      },
+      "cluster": "全行业 AI 提示词和工作流模板",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+        "reason": "keyword overlap: proposal, 客户沟通, 怎么, 客户, 需求, 户沟",
+        "score": 32,
+        "slug": "upwork-client-requirements-analysis-beginner",
+        "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+        "url": "/blog/upwork-client-requirements-analysis-beginner"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "AI 提示词大全",
+        "销售 AI 提示词",
+        "客服 AI 提示词",
+        "HR AI 提示词",
+        "运营 AI 提示词",
+        "企业 AI 提示词模板"
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
+        "https://sensara.io/prompts/",
+        "https://www.mrprompts.ai/learn/ai-prompts-for-sales"
+      ],
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 4
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: Dify 部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to a relevant published article before approval.",
+        "Apply review focus: 核对平台连接器、webhook、权限和部署限制.",
+        "Apply review focus: 避免鼓励群发、绕过平台规则或抓取隐私数据.",
+        "Apply review focus: 写清楚人工审批和客户验收边界.",
+        "Check search phrasing coverage: Dify 部署教程.",
+        "Check search phrasing coverage: n8n AI 自动化教程.",
+        "Check search phrasing coverage: MCP 使用教程.",
+        "Check search phrasing coverage: Flowise 本地部署."
+      ],
+      "articleSignals": {
+        "descriptionLength": 63,
+        "h2Count": 11,
+        "titleLength": 41
+      },
+      "cluster": "Dify、n8n、Coze、Flowise、MCP 自动化部署",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/n8n-ai-agent-webhook-production-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/n8n-ai-agent-webhook-production-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/n8n-ai-agent-webhook-production-guide.mdx",
+      "publicLinkSuggestion": null,
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "Dify 部署教程",
+        "n8n AI 自动化教程",
+        "MCP 使用教程",
+        "Flowise 本地部署",
+        "Coze Bot 发布"
+      ],
+      "sourceTargets": [
+        "https://docs.dify.ai/",
+        "https://docs.n8n.io/",
+        "https://modelcontextprotocol.io/docs"
+      ],
+      "title": "n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 4
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: OpenAI API 接入教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Vercel 提示环境变量缺失怎么办：新手部署检查流程\" at /blog/vercel-env-variable-missing-beginner-guide.",
+        "Apply review focus: 核对 SDK 名称、API endpoint、限流概念和错误码.",
+        "Apply review focus: 必须强调密钥安全、服务端代理和日志脱敏.",
+        "Apply review focus: 不要虚构价格或模型能力.",
+        "Check search phrasing coverage: OpenAI API 接入教程.",
+        "Check search phrasing coverage: Claude API rate limit.",
+        "Check search phrasing coverage: Gemini API 限流.",
+        "Check search phrasing coverage: OpenRouter API 教程."
+      ],
+      "articleSignals": {
+        "descriptionLength": 74,
+        "h2Count": 11,
+        "titleLength": 46
+      },
+      "cluster": "AI API 接入、限流、成本和多模型路由",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+        "reason": "keyword overlap: 部署, 怎么, 么办, 新手, 失败, 环境",
+        "score": 28,
+        "slug": "vercel-env-variable-missing-beginner-guide",
+        "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+        "url": "/blog/vercel-env-variable-missing-beginner-guide"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "OpenAI API 接入教程",
+        "Claude API rate limit",
+        "Gemini API 限流",
+        "OpenRouter API 教程",
+        "AI API key 安全"
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs",
+        "https://docs.anthropic.com",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://docs.anthropic.com/",
+        "https://vercel.com/docs/ai-gateway"
+      ],
+      "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 5
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: 大模型部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to a relevant published article before approval.",
+        "Apply review focus: 核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异.",
+        "Apply review focus: 不要承诺本地部署一定更省钱或更稳定.",
+        "Apply review focus: 必须包含 smoke check、回滚、日志、限流和成本边界.",
+        "Check search phrasing coverage: 大模型部署教程.",
+        "Check search phrasing coverage: Ollama 本地部署教程.",
+        "Check search phrasing coverage: vLLM 部署教程.",
+        "Check search phrasing coverage: RunPod vLLM serverless."
+      ],
+      "articleSignals": {
+        "descriptionLength": 56,
+        "h2Count": 11,
+        "titleLength": 31
+      },
+      "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-api-rate-limit-retry-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-api-rate-limit-retry-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/llm-api-rate-limit-retry-guide.mdx",
+      "publicLinkSuggestion": null,
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "大模型部署教程",
+        "Ollama 本地部署教程",
+        "vLLM 部署教程",
+        "RunPod vLLM serverless",
+        "Hugging Face TGI 部署"
+      ],
+      "sourceTargets": [
+        "https://docs.runpod.io/serverless/vllm/get-started",
+        "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+        "https://www.spheron.network/blog/llm-deployment-guide/"
+      ],
+      "title": "大模型 API 限流和重试怎么做：429、队列、退避和降级方案",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 5
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: AI Agent 部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"第一个 Upwork 小项目怎么报价：新手范围和底价检查\" at /blog/first-upwork-project-pricing-checklist.",
+        "Apply review focus: 不要写成全自动替人完成高风险业务.",
+        "Apply review focus: 明确工具权限、人工确认、日志和失败处理.",
+        "Apply review focus: 核对 SDK/API 的当前名称和部署方式.",
+        "Check search phrasing coverage: AI Agent 部署教程.",
+        "Check search phrasing coverage: Agent 工具调用教程.",
+        "Check search phrasing coverage: AI Agent 生产环境.",
+        "Check search phrasing coverage: LangGraph Agent 入门."
+      ],
+      "articleSignals": {
+        "descriptionLength": 54,
+        "h2Count": 11,
+        "titleLength": 37
+      },
+      "cluster": "Agent 部署、工具调用和生产安全",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+        "reason": "keyword overlap: 报价, 项目, 目怎, 怎么, 么报, 范围",
+        "score": 40,
+        "slug": "first-upwork-project-pricing-checklist",
+        "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+        "url": "/blog/first-upwork-project-pricing-checklist"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "AI Agent 部署教程",
+        "Agent 工具调用教程",
+        "AI Agent 生产环境",
+        "LangGraph Agent 入门",
+        "CrewAI 部署教程"
+      ],
+      "sourceTargets": [
+        "https://docs.dify.ai",
+        "https://docs.n8n.io",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://python.langchain.com/docs",
+        "https://docs.llamaindex.ai",
+        "https://huggingface.co/docs",
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://openai.github.io/openai-agents-python/",
+        "https://langchain-ai.github.io/langgraph/"
+      ],
+      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 5
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: AI Agent 记忆怎么做.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Codex 怎么做第一个网页\" at /blog/build-first-webpage-with-codex.",
+        "Apply review focus: 区分知识库 RAG 和用户记忆.",
+        "Apply review focus: 必须有隐私、删除、去重、引用和人工纠错边界.",
+        "Apply review focus: 避免宣称记忆层能自动解决幻觉.",
+        "Check search phrasing coverage: AI Agent 记忆怎么做.",
+        "Check search phrasing coverage: Agent memory RAG.",
+        "Check search phrasing coverage: AI Agent 长期记忆.",
+        "Check search phrasing coverage: pgvector Agent memory."
+      ],
+      "articleSignals": {
+        "descriptionLength": 80,
+        "h2Count": 10,
+        "titleLength": 52
+      },
+      "cluster": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/open-webui-functions-pipelines-deployment-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/build-first-webpage-with-codex.mdx",
+        "reason": "keyword overlap: ai, 怎么, 一个, 第一",
+        "score": 19,
+        "slug": "build-first-webpage-with-codex",
+        "title": "Codex 怎么做第一个网页",
+        "url": "/blog/build-first-webpage-with-codex"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "AI Agent 记忆怎么做",
+        "Agent memory RAG",
+        "AI Agent 长期记忆",
+        "pgvector Agent memory",
+        "RAG 和记忆区别"
+      ],
+      "sourceTargets": [
+        "https://docs.ollama.com",
+        "https://huggingface.co/docs",
+        "https://docs.vllm.ai",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://python.langchain.com/docs",
+        "https://docs.llamaindex.ai",
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
+        "https://docs.n8n.io",
+        "https://arxiv.org/abs/2604.20598",
+        "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/",
+        "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
+      ],
+      "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 6
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: OpenAI API 接入教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to a relevant published article before approval.",
+        "Apply review focus: 核对 SDK 名称、API endpoint、限流概念和错误码.",
+        "Apply review focus: 必须强调密钥安全、服务端代理和日志脱敏.",
+        "Apply review focus: 不要虚构价格或模型能力.",
+        "Check search phrasing coverage: OpenAI API 接入教程.",
+        "Check search phrasing coverage: Claude API rate limit.",
+        "Check search phrasing coverage: Gemini API 限流.",
+        "Check search phrasing coverage: OpenRouter API 教程."
+      ],
+      "articleSignals": {
+        "descriptionLength": 82,
+        "h2Count": 11,
+        "titleLength": 39
+      },
+      "cluster": "AI API 接入、限流、成本和多模型路由",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/helicone-llm-observability-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/helicone-llm-observability-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/helicone-llm-observability-guide.mdx",
+      "publicLinkSuggestion": null,
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "OpenAI API 接入教程",
+        "Claude API rate limit",
+        "Gemini API 限流",
+        "OpenRouter API 教程",
+        "AI API key 安全"
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs",
+        "https://docs.anthropic.com/",
+        "https://vercel.com/docs/ai-gateway"
+      ],
+      "title": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 6
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: 大模型部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to a relevant published article before approval.",
+        "Apply review focus: 核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异.",
+        "Apply review focus: 不要承诺本地部署一定更省钱或更稳定.",
+        "Apply review focus: 必须包含 smoke check、回滚、日志、限流和成本边界.",
+        "Check search phrasing coverage: 大模型部署教程.",
+        "Check search phrasing coverage: Ollama 本地部署教程.",
+        "Check search phrasing coverage: vLLM 部署教程.",
+        "Check search phrasing coverage: RunPod vLLM serverless."
+      ],
+      "articleSignals": {
+        "descriptionLength": 54,
+        "h2Count": 11,
+        "titleLength": 25
+      },
+      "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-cost-monitoring-dashboard-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-cost-monitoring-dashboard-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
+      "publicLinkSuggestion": null,
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "大模型部署教程",
+        "Ollama 本地部署教程",
+        "vLLM 部署教程",
+        "RunPod vLLM serverless",
+        "Hugging Face TGI 部署"
+      ],
+      "sourceTargets": [
+        "https://docs.runpod.io/serverless/vllm/get-started",
+        "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+        "https://www.spheron.network/blog/llm-deployment-guide/"
+      ],
+      "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 6
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: AI Agent 部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Vercel 提示环境变量缺失怎么办：新手部署检查流程\" at /blog/vercel-env-variable-missing-beginner-guide.",
+        "Apply review focus: 不要写成全自动替人完成高风险业务.",
+        "Apply review focus: 明确工具权限、人工确认、日志和失败处理.",
+        "Apply review focus: 核对 SDK/API 的当前名称和部署方式.",
+        "Check search phrasing coverage: AI Agent 部署教程.",
+        "Check search phrasing coverage: Agent 工具调用教程.",
+        "Check search phrasing coverage: AI Agent 生产环境.",
+        "Check search phrasing coverage: LangGraph Agent 入门."
+      ],
+      "articleSignals": {
+        "descriptionLength": 55,
+        "h2Count": 11,
+        "titleLength": 29
+      },
+      "cluster": "Agent 部署、工具调用和生产安全",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/dify-workflow-error-handling-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/dify-workflow-error-handling-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+        "reason": "keyword overlap: 变量, 部署, next, 怎么, 失败, 新手",
+        "score": 48,
+        "slug": "vercel-env-variable-missing-beginner-guide",
+        "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+        "url": "/blog/vercel-env-variable-missing-beginner-guide"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "AI Agent 部署教程",
+        "Agent 工具调用教程",
+        "AI Agent 生产环境",
+        "LangGraph Agent 入门",
+        "CrewAI 部署教程"
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://python.langchain.com/docs",
+        "https://platform.openai.com/docs",
+        "https://docs.dify.ai",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://openai.github.io/openai-agents-python/",
+        "https://langchain-ai.github.io/langgraph/"
+      ],
+      "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 7
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: AI Agent 记忆怎么做.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to a relevant published article before approval.",
+        "Apply review focus: 区分知识库 RAG 和用户记忆.",
+        "Apply review focus: 必须有隐私、删除、去重、引用和人工纠错边界.",
+        "Apply review focus: 避免宣称记忆层能自动解决幻觉.",
+        "Check search phrasing coverage: AI Agent 记忆怎么做.",
+        "Check search phrasing coverage: Agent memory RAG.",
+        "Check search phrasing coverage: AI Agent 长期记忆.",
+        "Check search phrasing coverage: pgvector Agent memory."
+      ],
+      "articleSignals": {
+        "descriptionLength": 58,
+        "h2Count": 10,
+        "titleLength": 26
+      },
+      "cluster": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/rag-citation-source-trace-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/rag-citation-source-trace-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/rag-citation-source-trace-guide.mdx",
+      "publicLinkSuggestion": null,
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "AI Agent 记忆怎么做",
+        "Agent memory RAG",
+        "AI Agent 长期记忆",
+        "pgvector Agent memory",
+        "RAG 和记忆区别"
+      ],
+      "sourceTargets": [
+        "https://arxiv.org/abs/2604.20598",
+        "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/",
+        "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
+      ],
+      "title": "RAG 怎么显示引用来源：文档名、页码、片段和可信度",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 7
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: 大模型部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Codex 生成代码后怎么审核：交付前检查清单\" at /blog/codex-code-review-delivery-checklist.",
+        "Apply review focus: 核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异.",
+        "Apply review focus: 不要承诺本地部署一定更省钱或更稳定.",
+        "Apply review focus: 必须包含 smoke check、回滚、日志、限流和成本边界.",
+        "Check search phrasing coverage: 大模型部署教程.",
+        "Check search phrasing coverage: Ollama 本地部署教程.",
+        "Check search phrasing coverage: vLLM 部署教程.",
+        "Check search phrasing coverage: RunPod vLLM serverless."
+      ],
+      "articleSignals": {
+        "descriptionLength": 65,
+        "h2Count": 11,
+        "titleLength": 54
+      },
+      "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+        "reason": "keyword overlap: ai, 怎么, 检查, 新手, 查清, 清单",
+        "score": 31,
+        "slug": "codex-code-review-delivery-checklist",
+        "title": "Codex 生成代码后怎么审核：交付前检查清单",
+        "url": "/blog/codex-code-review-delivery-checklist"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "大模型部署教程",
+        "Ollama 本地部署教程",
+        "vLLM 部署教程",
+        "RunPod vLLM serverless",
+        "Hugging Face TGI 部署"
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://docs.vllm.ai",
+        "https://huggingface.co/docs",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://docs.runpod.io/serverless/vllm/get-started",
+        "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+        "https://www.spheron.network/blog/llm-deployment-guide/"
+      ],
+      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 7
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: AI Agent 部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Codex 生成代码后怎么审核：交付前检查清单\" at /blog/codex-code-review-delivery-checklist.",
+        "Apply review focus: 不要写成全自动替人完成高风险业务.",
+        "Apply review focus: 明确工具权限、人工确认、日志和失败处理.",
+        "Apply review focus: 核对 SDK/API 的当前名称和部署方式.",
+        "Check search phrasing coverage: AI Agent 部署教程.",
+        "Check search phrasing coverage: Agent 工具调用教程.",
+        "Check search phrasing coverage: AI Agent 生产环境.",
+        "Check search phrasing coverage: LangGraph Agent 入门."
+      ],
+      "articleSignals": {
+        "descriptionLength": 64,
+        "h2Count": 11,
+        "titleLength": 40
+      },
+      "cluster": "Agent 部署、工具调用和生产安全",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/dify-workflow-vs-agent-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/dify-workflow-vs-agent-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+        "reason": "keyword overlap: ai, 怎么, 审核, 生成, 交付",
+        "score": 23,
+        "slug": "codex-code-review-delivery-checklist",
+        "title": "Codex 生成代码后怎么审核：交付前检查清单",
+        "url": "/blog/codex-code-review-delivery-checklist"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "AI Agent 部署教程",
+        "Agent 工具调用教程",
+        "AI Agent 生产环境",
+        "LangGraph Agent 入门",
+        "CrewAI 部署教程"
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs/guides/agents",
+        "https://ai-sdk.dev/docs",
+        "https://python.langchain.com/docs",
+        "https://platform.openai.com/docs",
+        "https://docs.dify.ai",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://openai.github.io/openai-agents-python/",
+        "https://langchain-ai.github.io/langgraph/"
+      ],
+      "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 8
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: 大模型部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to the published article \"Codex 安装失败怎么办\" at /blog/codex-install-failed-beginner-fix.",
+        "Apply review focus: 核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异.",
+        "Apply review focus: 不要承诺本地部署一定更省钱或更稳定.",
+        "Apply review focus: 必须包含 smoke check、回滚、日志、限流和成本边界.",
+        "Check search phrasing coverage: 大模型部署教程.",
+        "Check search phrasing coverage: Ollama 本地部署教程.",
+        "Check search phrasing coverage: vLLM 部署教程.",
+        "Check search phrasing coverage: RunPod vLLM serverless."
+      ],
+      "articleSignals": {
+        "descriptionLength": 69,
+        "h2Count": 11,
+        "titleLength": 28
+      },
+      "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/local-llm-vram-not-enough-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/local-llm-vram-not-enough-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
+      "publicLinkSuggestion": {
+        "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+        "reason": "keyword overlap: ai, 怎么, 么办, 新手, 安装, 失败",
+        "score": 27,
+        "slug": "codex-install-failed-beginner-fix",
+        "title": "Codex 安装失败怎么办",
+        "url": "/blog/codex-install-failed-beginner-fix"
+      },
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "大模型部署教程",
+        "Ollama 本地部署教程",
+        "vLLM 部署教程",
+        "RunPod vLLM serverless",
+        "Hugging Face TGI 部署"
+      ],
+      "sourceTargets": [
+        "https://docs.ollama.com",
+        "https://docs.vllm.ai",
+        "https://huggingface.co/docs",
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://docs.runpod.io/serverless/vllm/get-started",
+        "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+        "https://www.spheron.network/blog/llm-deployment-guide/"
+      ],
+      "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 8
+    },
+    {
+      "actionChecklist": [
+        "Make the title and first paragraph answer this search intent explicitly: AI Agent 部署教程.",
+        "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
+        "Add one exact or near-exact search query naturally in the opening or first H2.",
+        "Make the first practical checklist visible before deep implementation detail.",
+        "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
+        "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
+        "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Add one contextual link to a relevant published article before approval.",
+        "Apply review focus: 不要写成全自动替人完成高风险业务.",
+        "Apply review focus: 明确工具权限、人工确认、日志和失败处理.",
+        "Apply review focus: 核对 SDK/API 的当前名称和部署方式.",
+        "Check search phrasing coverage: AI Agent 部署教程.",
+        "Check search phrasing coverage: Agent 工具调用教程.",
+        "Check search phrasing coverage: AI Agent 生产环境.",
+        "Check search phrasing coverage: LangGraph Agent 入门."
+      ],
+      "articleSignals": {
+        "descriptionLength": 57,
+        "h2Count": 11,
+        "titleLength": 39
+      },
+      "cluster": "Agent 部署、工具调用和生产安全",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/enterprise-im-ai-agent-integration-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/enterprise-im-ai-agent-integration-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/enterprise-im-ai-agent-integration-guide.mdx",
+      "publicLinkSuggestion": null,
+      "readyForHumanOptimizationReview": true,
+      "safeDraft": true,
+      "searchQueries": [
+        "AI Agent 部署教程",
+        "Agent 工具调用教程",
+        "AI Agent 生产环境",
+        "LangGraph Agent 入门",
+        "CrewAI 部署教程"
+      ],
+      "sourceTargets": [
+        "https://ai-sdk.dev/docs",
+        "https://openai.github.io/openai-agents-python/",
+        "https://langchain-ai.github.io/langgraph/"
+      ],
+      "title": "企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管",
+      "unsafeReasons": [],
+      "warningRemediation": [
+        "Meta description is short; rewrite it before approval.",
+        "Freshness risk is high; all implementation-sensitive claims need current source checks."
+      ],
+      "wave": 8
+    }
+  ]
+}

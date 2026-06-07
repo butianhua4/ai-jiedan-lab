@@ -812,6 +812,39 @@ async function main() {
       unsafeItems?: number;
     }>;
   }>("content/automation/autopilot-broad-publish-waves.json");
+  const autopilotBroadWaveOptimization = readJson<{
+    guardrails: {
+      autoEditArticles: boolean;
+      autoMarkReview: boolean;
+      autoPublish: boolean;
+      trafficClaim: string;
+    };
+    items?: Array<{
+      actionChecklist?: unknown[];
+      commandBoundary?: { markReviewAfterHumanApproval?: string; publishConfirm?: string; publishDryRunAfterReview?: string };
+      publicLinkSuggestion?: unknown;
+      readyForHumanOptimizationReview?: boolean;
+      safeDraft?: boolean;
+      searchQueries?: unknown[];
+      sourceTargets?: unknown[];
+      unsafeReasons?: unknown[];
+      warningRemediation?: unknown[];
+    }>;
+    summary: {
+      items: number;
+      itemsWithActionChecklist: number;
+      itemsWithPublicLinkSuggestion: number;
+      itemsWithSearchQueries: number;
+      itemsWithSourceTargets: number;
+      readyItems: number;
+      safeDraftItems: number;
+      unsafeItems: number;
+      waveItems: number;
+      waves: number;
+      wavesReady: number;
+    };
+    waveSummaries?: Array<{ items?: number; readyItems?: number; unsafeItems?: number }>;
+  }>("content/automation/autopilot-broad-wave-optimization.json");
   const reviewOptimizationBrief = readJson<{
     briefs?: Array<{
       file: string;
@@ -1574,8 +1607,46 @@ async function main() {
               wave.commandBoundary?.publishConfirm === "not-included" &&
               wave.items?.every((item) => item.readyForHumanFreshnessReview === true && item.safeDraft === true),
           ),
-        ),
+      ),
       detail: `ready=${autopilotBroadPublishWaves.summary.readyItems}, safe=${autopilotBroadPublishWaves.summary.safeDraftItems}, approvalWaves=${autopilotBroadPublishWaves.summary.wavesReadyForHumanApproval}`,
+    },
+    {
+      name: "autopilot broad wave optimization is read-only and covers publish waves",
+      ok:
+        autopilotBroadWaveOptimization.guardrails.autoEditArticles === false &&
+        autopilotBroadWaveOptimization.guardrails.autoMarkReview === false &&
+        autopilotBroadWaveOptimization.guardrails.autoPublish === false &&
+        autopilotBroadWaveOptimization.guardrails.trafficClaim === "not-included" &&
+        autopilotBroadWaveOptimization.summary.items === autopilotBroadPublishWaves.summary.items &&
+        autopilotBroadWaveOptimization.summary.waveItems === autopilotBroadPublishWaves.summary.items &&
+        autopilotBroadWaveOptimization.summary.waves === autopilotBroadPublishWaves.summary.waves &&
+        autopilotBroadWaveOptimization.summary.wavesReady === autopilotBroadWaveOptimization.summary.waves &&
+        autopilotBroadWaveOptimization.summary.unsafeItems === 0,
+      detail: `items=${autopilotBroadWaveOptimization.summary.items}, waves=${autopilotBroadWaveOptimization.summary.waves}, readyWaves=${autopilotBroadWaveOptimization.summary.wavesReady}, unsafe=${autopilotBroadWaveOptimization.summary.unsafeItems}`,
+    },
+    {
+      name: "autopilot broad wave optimization has actionable SEO and approval guidance",
+      ok:
+        autopilotBroadWaveOptimization.summary.readyItems === autopilotBroadWaveOptimization.summary.items &&
+        autopilotBroadWaveOptimization.summary.safeDraftItems === autopilotBroadWaveOptimization.summary.items &&
+        autopilotBroadWaveOptimization.summary.itemsWithActionChecklist === autopilotBroadWaveOptimization.summary.items &&
+        autopilotBroadWaveOptimization.summary.itemsWithSearchQueries === autopilotBroadWaveOptimization.summary.items &&
+        autopilotBroadWaveOptimization.summary.itemsWithSourceTargets === autopilotBroadWaveOptimization.summary.items &&
+        Boolean(
+          autopilotBroadWaveOptimization.items?.every(
+            (item) =>
+              item.readyForHumanOptimizationReview === true &&
+              item.safeDraft === true &&
+              (item.actionChecklist?.length || 0) >= 8 &&
+              (item.searchQueries?.length || 0) >= 4 &&
+              (item.sourceTargets?.length || 0) > 0 &&
+              item.commandBoundary?.markReviewAfterHumanApproval?.includes("--confirm-human") &&
+              !item.commandBoundary?.publishDryRunAfterReview?.includes("--confirm") &&
+              item.commandBoundary?.publishConfirm === "not-included" &&
+              (item.unsafeReasons?.length || 0) === 0,
+          ),
+        ),
+      detail: `ready=${autopilotBroadWaveOptimization.summary.readyItems}, checklists=${autopilotBroadWaveOptimization.summary.itemsWithActionChecklist}, links=${autopilotBroadWaveOptimization.summary.itemsWithPublicLinkSuggestion}`,
     },
     {
       name: "review optimization brief is read-only and covers ready action-board tasks",

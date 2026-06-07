@@ -46,6 +46,7 @@
     "automation:autopilot-broad-ai-demand": "tsx scripts/autopilot-broad-ai-demand-brief.ts",
     "automation:autopilot-broad-freshness": "tsx scripts/autopilot-broad-freshness-triage.ts",
     "automation:autopilot-broad-waves": "tsx scripts/autopilot-broad-publish-waves.ts",
+    "automation:autopilot-broad-wave-optimization": "tsx scripts/autopilot-broad-wave-optimization.ts",
     "automation:review-optimization-brief": "tsx scripts/review-optimization-brief.ts",
     "automation:review-cannibalization-brief": "tsx scripts/review-cannibalization-brief.ts",
     "automation:review-freshness-brief": "tsx scripts/review-freshness-brief.ts",
