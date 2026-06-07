@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T19:41:33.296Z",
+  "generatedAt": "2026-06-07T19:54:12.016Z",
   "ok": true,
   "summary": {
-    "checks": 165,
+    "checks": 167,
     "failed": 0,
-    "passed": 165
+    "passed": 167
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=181, unsafeClaims=0, watchMentions=3339"
+      "detail": "filesScanned=183, unsafeClaims=0, watchMentions=3382"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -611,6 +611,16 @@
       "name": "popular prompt approval bridge keeps next candidates human-gated and publish-safe",
       "ok": true,
       "detail": "items=27, ready=27, templates=135, uniqueFiles=10, publishConfirm=0"
+    },
+    {
+      "name": "popular prompt sprint board covers every broad prompt lane",
+      "ok": true,
+      "detail": "items=10, queries=115, buckets=4, waves=5"
+    },
+    {
+      "name": "popular prompt sprint board keeps prompt expansion manual and publish-safe",
+      "ok": true,
+      "detail": "ready=10, actions=90, nextFiles=10, publishConfirm=0"
     },
     {
       "name": "public coverage gap plan is read-only and covers every no-public broad theme",

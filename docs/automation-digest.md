@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T19:41:33.843Z
+Generated at: 2026-06-07T19:54:11.906Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -54,7 +54,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=vi
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/ -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
@@ -1142,8 +1142,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 181
-- Traffic claim watch mentions: 3339
+- Traffic claim files scanned: 183
+- Traffic claim watch mentions: 3382
 
 ## Public Surface Inventory
 
@@ -1465,6 +1465,47 @@ Public categories:
 | true | 253 | 5 | 10 | 8 | draft/noindex | 电商客服、售后和直播卖货 AI 提示词 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | true | 253 | 5 | 10 | 8 | draft/noindex | 电商客服、售后和直播卖货 AI 提示词 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
 | true | 252 | 5 | 10 | 8 | draft/noindex | 电商客服、售后和直播卖货 AI 提示词 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
+
+## Popular Prompt Sprint Board
+
+- Items: 10
+- Playbook items: 10
+- Waves: 5
+- Items per wave: 2
+- Ready for prompt sprint: 10
+- High-priority items: 10
+- Industry buckets: 4
+- Candidate files: 21
+- Next candidate files: 10
+- Bridge items: 27
+- Prompt templates: 50
+- Prompt template samples: 50
+- Search queries: 115
+- Action items: 90
+- Publish confirm commands included: 0
+- Traffic data available: false
+- Unsafe items: 0
+
+| Wave | Ready | High priority | Actions | Buckets | Candidate files | Search queries |
+| ---: | ---: | ---: | ---: | --- | --- | --- |
+| 1 | 2/2 | 2 | 18 | agent-deployment | content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx | AI Agent 记忆怎么做<br>Agent memory prompt<br>RAG 知识库提示词<br>LangChain long term memory |
+| 2 | 2/2 | 2 | 18 | office-data, agent-deployment | content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx | Excel AI 提示词<br>ChatGPT 分析表格数据<br>AI 数据分析提示词<br>销售数据分析 prompt |
+| 3 | 2/2 | 2 | 18 | commerce-service | content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx | ChatGPT 提示词大全<br>ChatGPT 怎么提问效果最好<br>AI 提示词万能公式<br>提示词模板 免费 |
+| 4 | 2/2 | 2 | 18 | commerce-service | content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx | AI 销售话术提示词<br>ChatGPT 写报价单<br>AI 方案书提示词<br>客户跟进邮件 prompt |
+| 5 | 2/2 | 2 | 18 | content-marketing, office-data | content/blog/ecommerce-ai-prompts-guide.mdx<br>content/blog/marketing-ai-prompts-guide.mdx<br>content/blog/hr-recruiting-ai-prompts-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx | 小红书 AI 提示词<br>ChatGPT 小红书文案<br>短视频脚本 AI 提示词<br>直播带货话术 AI |
+
+| Wave | Ready | Score | Bucket | Public | Actions | Queries | Sources | Next files | Title |
+| ---: | --- | ---: | --- | ---: | ---: | ---: | ---: | --- | --- |
+| 1 | true | 214 | agent-deployment | 0 | 9 | 14 | 8 | content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx | Agent 记忆、知识库和 RAG 提示词 |
+| 1 | true | 194 | agent-deployment | 0 | 9 | 14 | 8 | content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx | AI Agent 部署、工具调用和上线排错提示词 |
+| 2 | true | 194 | office-data | 0 | 9 | 14 | 8 | content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx | Excel 和数据分析 AI 提示词 |
+| 2 | true | 194 | agent-deployment | 0 | 9 | 14 | 8 | content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx | 大模型部署、本地模型和 API 排错提示词 |
+| 3 | true | 184 | commerce-service | 0 | 9 | 14 | 8 | content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx | ChatGPT 提示词大全和万能公式 |
+| 3 | true | 184 | commerce-service | 0 | 9 | 14 | 8 | content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx | 电商客服、售后和直播卖货 AI 提示词 |
+| 4 | true | 184 | commerce-service | 0 | 9 | 14 | 8 | content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx | 销售话术、报价和方案书 AI 提示词 |
+| 4 | true | 182 | commerce-service | 0 | 9 | 14 | 8 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/education-ai-prompts-guide.mdx | 简历优化、招聘和 HR AI 提示词 |
+| 5 | true | 133 | content-marketing | 0 | 9 | 14 | 7 | content/blog/ecommerce-ai-prompts-guide.mdx<br>content/blog/marketing-ai-prompts-guide.mdx | 小红书、短视频和直播脚本 AI 提示词 |
+| 5 | true | 116 | office-data | 0 | 9 | 14 | 8 | content/blog/hr-recruiting-ai-prompts-guide.mdx | AI 办公提示词：Word、Excel、PPT、邮件和会议 |
 
 ## Public Coverage Gap Plan
 

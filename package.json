@@ -100,6 +100,7 @@
     "automation:industry-prompt-module-pack": "tsx scripts/industry-prompt-module-pack.ts",
     "automation:popular-ai-prompt-playbook": "tsx scripts/popular-ai-prompt-playbook.ts",
     "automation:popular-prompt-approval-bridge": "tsx scripts/popular-prompt-approval-bridge.ts",
+    "automation:popular-prompt-sprint": "tsx scripts/popular-prompt-sprint-board.ts",
     "automation:public-gap-plan": "tsx scripts/public-coverage-gap-plan.ts",
     "automation:public-gap-preflight": "tsx scripts/public-coverage-gap-preflight.ts",
     "automation:public-gap-decision-pack": "tsx scripts/public-coverage-gap-decision-pack.ts"

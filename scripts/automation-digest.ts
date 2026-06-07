@@ -1837,6 +1837,55 @@ type PopularPromptApprovalBridge = {
   }>;
 };
 
+type PopularPromptSprintBoard = {
+  items: Array<{
+    actionCount: number;
+    industryBucket: string;
+    laneId: string;
+    nextCandidateFiles: string[];
+    promptTemplateSamples: string[];
+    publicMatches: number;
+    publishConfirm: string;
+    readyForPromptSprint: boolean;
+    searchQueries: string[];
+    sourceTargets: string[];
+    sprintPriorityScore: number;
+    sprintWave: number;
+    title: string;
+    unsafeReasons: string[];
+  }>;
+  summary: {
+    actionItems: number;
+    bridgeItems: number;
+    candidateFiles: number;
+    highPriorityItems: number;
+    industryBuckets: number;
+    items: number;
+    itemsPerWave: number;
+    lanesReadyForPromptSprint: number;
+    nextCandidateFiles: number;
+    playbookItems: number;
+    promptTemplateSamples: number;
+    promptTemplates: number;
+    publishConfirmCommandsIncluded: number;
+    searchQueries: number;
+    trafficDataAvailable: boolean;
+    unsafeItems: number;
+    waves: number;
+  };
+  waves: Array<{
+    actionItems: number;
+    candidateFiles: string[];
+    highPriorityItems: number;
+    industryBuckets: string[];
+    items: number;
+    readyItems: number;
+    searchQueries: string[];
+    unsafeItems: number;
+    wave: number;
+  }>;
+};
+
 type PublicCoverageGapPlan = {
   items: Array<{
     file: string;
@@ -1955,6 +2004,7 @@ const reports = {
   massAiSearchMatrix: readJson<MassAiSearchMatrix>("content/automation/mass-ai-search-action-matrix.json"),
   popularAiPromptPlaybook: readJson<PopularAiPromptPlaybook>("content/automation/popular-ai-prompt-playbook.json"),
   popularPromptApprovalBridge: readJson<PopularPromptApprovalBridge>("content/automation/popular-prompt-approval-bridge.json"),
+  popularPromptSprintBoard: readJson<PopularPromptSprintBoard>("content/automation/popular-prompt-sprint-board.json"),
   publicCoverageGapPlan: readJson<PublicCoverageGapPlan>("content/automation/public-coverage-gap-plan.json"),
   publicCoverageGapPreflight: readJson<PublicCoverageGapPreflight>("content/automation/public-coverage-gap-preflight.json"),
   publicCoverageGapDecisionPack: readJson<PublicCoverageGapDecisionPack>("content/automation/public-coverage-gap-decision-pack.json"),
@@ -2839,6 +2889,26 @@ const payload = {
     unsafeItems: reports.popularPromptApprovalBridge.data?.summary.unsafeItems ?? null,
     uniqueFiles: reports.popularPromptApprovalBridge.data?.summary.uniqueFiles ?? null,
   },
+  popularPromptSprintBoard: {
+    actionItems: reports.popularPromptSprintBoard.data?.summary.actionItems ?? null,
+    bridgeItems: reports.popularPromptSprintBoard.data?.summary.bridgeItems ?? null,
+    candidateFiles: reports.popularPromptSprintBoard.data?.summary.candidateFiles ?? null,
+    highPriorityItems: reports.popularPromptSprintBoard.data?.summary.highPriorityItems ?? null,
+    industryBuckets: reports.popularPromptSprintBoard.data?.summary.industryBuckets ?? null,
+    items: reports.popularPromptSprintBoard.data?.summary.items ?? null,
+    itemsPerWave: reports.popularPromptSprintBoard.data?.summary.itemsPerWave ?? null,
+    lanesReadyForPromptSprint: reports.popularPromptSprintBoard.data?.summary.lanesReadyForPromptSprint ?? null,
+    nextCandidateFiles: reports.popularPromptSprintBoard.data?.summary.nextCandidateFiles ?? null,
+    playbookItems: reports.popularPromptSprintBoard.data?.summary.playbookItems ?? null,
+    promptTemplateSamples: reports.popularPromptSprintBoard.data?.summary.promptTemplateSamples ?? null,
+    promptTemplates: reports.popularPromptSprintBoard.data?.summary.promptTemplates ?? null,
+    publishConfirmCommandsIncluded: reports.popularPromptSprintBoard.data?.summary.publishConfirmCommandsIncluded ?? null,
+    searchQueries: reports.popularPromptSprintBoard.data?.summary.searchQueries ?? null,
+    top: reports.popularPromptSprintBoard.data?.items.slice(0, 10) ?? [],
+    trafficDataAvailable: reports.popularPromptSprintBoard.data?.summary.trafficDataAvailable ?? null,
+    unsafeItems: reports.popularPromptSprintBoard.data?.summary.unsafeItems ?? null,
+    waves: reports.popularPromptSprintBoard.data?.waves ?? [],
+  },
   publicCoverageGapPlan: {
     duplicateFiles: reports.publicCoverageGapPlan.data?.summary.duplicateFiles ?? null,
     gapThemes: reports.publicCoverageGapPlan.data?.summary.gapThemes ?? null,
@@ -3162,6 +3232,13 @@ function buildNextActions() {
     reports.popularPromptApprovalBridge.data.summary.publishConfirmCommandsIncluded > 0
   ) {
     return ["Open docs/popular-prompt-approval-bridge.md and resolve popular prompt approval bridge guardrail issues before manual review."];
+  }
+  if (
+    !reports.popularPromptSprintBoard.data ||
+    reports.popularPromptSprintBoard.data.summary.unsafeItems > 0 ||
+    reports.popularPromptSprintBoard.data.summary.publishConfirmCommandsIncluded > 0
+  ) {
+    return ["Open docs/popular-prompt-sprint-board.md and resolve popular prompt sprint issues before manual review."];
   }
   if (!reports.broadFirstCoverageLaunchPack.data || reports.broadFirstCoverageLaunchPack.data.summary.unsafeItems > 0) {
     return ["Open docs/broad-first-coverage-launch-pack.md and resolve unsafe first-coverage launch candidates before any approval action."];
@@ -4597,6 +4674,40 @@ function toMarkdown(data: typeof payload) {
     ...data.popularPromptApprovalBridge.top.map((item) => (
       `| ${item.readyForHumanReviewPrep} | ${item.opportunityScore} | ${item.promptTemplates} | ${item.searchQueries.length} | ${item.sourceTargets.length} | ${item.articleState.status}/${item.articleState.noindex ? "noindex" : "index"} | ${item.laneTitle} | ${item.title} | ${item.file} |`
     )),
+    "",
+    "## Popular Prompt Sprint Board",
+    "",
+    `- Items: ${data.popularPromptSprintBoard.items}`,
+    `- Playbook items: ${data.popularPromptSprintBoard.playbookItems}`,
+    `- Waves: ${data.popularPromptSprintBoard.waves.length}`,
+    `- Items per wave: ${data.popularPromptSprintBoard.itemsPerWave}`,
+    `- Ready for prompt sprint: ${data.popularPromptSprintBoard.lanesReadyForPromptSprint}`,
+    `- High-priority items: ${data.popularPromptSprintBoard.highPriorityItems}`,
+    `- Industry buckets: ${data.popularPromptSprintBoard.industryBuckets}`,
+    `- Candidate files: ${data.popularPromptSprintBoard.candidateFiles}`,
+    `- Next candidate files: ${data.popularPromptSprintBoard.nextCandidateFiles}`,
+    `- Bridge items: ${data.popularPromptSprintBoard.bridgeItems}`,
+    `- Prompt templates: ${data.popularPromptSprintBoard.promptTemplates}`,
+    `- Prompt template samples: ${data.popularPromptSprintBoard.promptTemplateSamples}`,
+    `- Search queries: ${data.popularPromptSprintBoard.searchQueries}`,
+    `- Action items: ${data.popularPromptSprintBoard.actionItems}`,
+    `- Publish confirm commands included: ${data.popularPromptSprintBoard.publishConfirmCommandsIncluded}`,
+    `- Traffic data available: ${data.popularPromptSprintBoard.trafficDataAvailable}`,
+    `- Unsafe items: ${data.popularPromptSprintBoard.unsafeItems}`,
+    "",
+    "| Wave | Ready | High priority | Actions | Buckets | Candidate files | Search queries |",
+    "| ---: | ---: | ---: | ---: | --- | --- | --- |",
+    ...data.popularPromptSprintBoard.waves.map(
+      (wave) =>
+        `| ${wave.wave} | ${wave.readyItems}/${wave.items} | ${wave.highPriorityItems} | ${wave.actionItems} | ${wave.industryBuckets.join(", ")} | ${wave.candidateFiles.slice(0, 4).join("<br>") || "none"} | ${wave.searchQueries.slice(0, 4).join("<br>") || "none"} |`,
+    ),
+    "",
+    "| Wave | Ready | Score | Bucket | Public | Actions | Queries | Sources | Next files | Title |",
+    "| ---: | --- | ---: | --- | ---: | ---: | ---: | ---: | --- | --- |",
+    ...data.popularPromptSprintBoard.top.map(
+      (item) =>
+        `| ${item.sprintWave} | ${item.readyForPromptSprint} | ${item.sprintPriorityScore} | ${item.industryBucket} | ${item.publicMatches} | ${item.actionCount} | ${item.searchQueries.length} | ${item.sourceTargets.length} | ${item.nextCandidateFiles.slice(0, 3).join("<br>") || "none"} | ${item.title} |`,
+    ),
     "",
     "## Public Coverage Gap Plan",
     "",

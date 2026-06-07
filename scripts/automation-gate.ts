@@ -475,6 +475,43 @@ async function main() {
       unsafeReasons?: unknown[];
     }>;
   }>("content/automation/popular-prompt-approval-bridge.json");
+  const popularPromptSprintBoard = readJson<{
+    guardrails: { autoCreateArticles: boolean; autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    items?: Array<{
+      actionCount?: number;
+      alreadyQueuedFiles?: unknown[];
+      nextCandidateFiles?: unknown[];
+      promptTemplateSamples?: unknown[];
+      publishConfirm?: string;
+      readyForPromptSprint?: boolean;
+      reviewActions?: unknown[];
+      searchQueries?: unknown[];
+      sourceTargets?: unknown[];
+      sprintPriorityScore?: number;
+      unsafeReasons?: unknown[];
+    }>;
+    summary: {
+      actionItems: number;
+      bridgeItems: number;
+      candidateFiles: number;
+      highPriorityItems: number;
+      industryBuckets: number;
+      items: number;
+      itemsPerWave: number;
+      lanesReadyForPromptSprint: number;
+      nextCandidateFiles: number;
+      playbookItems: number;
+      promptTemplateSamples: number;
+      promptTemplates: number;
+      publishConfirmCommandsIncluded: number;
+      searchQueries: number;
+      trafficDataAvailable: boolean;
+      unsafeItems: number;
+      waves: number;
+    };
+    unsafeItems?: unknown[];
+    waves?: Array<{ actionItems?: number; items?: number; readyItems?: number; searchQueries?: unknown[]; unsafeItems?: number }>;
+  }>("content/automation/popular-prompt-sprint-board.json");
   const publicCoverageGapPlan = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     items?: Array<{ noindex?: boolean; readyForManualReview?: boolean; safeDraft?: boolean; searchSeeds?: unknown[]; sourceTargets?: unknown[] }>;
@@ -3703,6 +3740,50 @@ async function main() {
           ),
         ),
       detail: `items=${popularPromptApprovalBridge.summary.bridgeItems}, ready=${popularPromptApprovalBridge.summary.bridgeItemsReadyForHumanReviewPrep}, templates=${popularPromptApprovalBridge.summary.promptTemplatesReferenced}, uniqueFiles=${popularPromptApprovalBridge.summary.uniqueFiles}, publishConfirm=${popularPromptApprovalBridge.summary.publishConfirmCommandsIncluded}`,
+    },
+    {
+      name: "popular prompt sprint board covers every broad prompt lane",
+      ok:
+        popularPromptSprintBoard.guardrails.autoCreateArticles === false &&
+        popularPromptSprintBoard.guardrails.autoEditArticles === false &&
+        popularPromptSprintBoard.guardrails.autoMarkReview === false &&
+        popularPromptSprintBoard.guardrails.autoPublish === false &&
+        popularPromptSprintBoard.guardrails.trafficClaim === "not-included" &&
+        popularPromptSprintBoard.summary.items === popularAiPromptPlaybook.summary.items &&
+        popularPromptSprintBoard.summary.playbookItems === popularAiPromptPlaybook.summary.items &&
+        popularPromptSprintBoard.summary.promptTemplates === popularAiPromptPlaybook.summary.promptTemplates &&
+        popularPromptSprintBoard.summary.bridgeItems === popularPromptApprovalBridge.summary.bridgeItems &&
+        popularPromptSprintBoard.summary.searchQueries >= 100 &&
+        popularPromptSprintBoard.summary.industryBuckets >= 3 &&
+        popularPromptSprintBoard.summary.waves >= 5 &&
+        popularPromptSprintBoard.summary.trafficDataAvailable === false,
+      detail: `items=${popularPromptSprintBoard.summary.items}, queries=${popularPromptSprintBoard.summary.searchQueries}, buckets=${popularPromptSprintBoard.summary.industryBuckets}, waves=${popularPromptSprintBoard.summary.waves}`,
+    },
+    {
+      name: "popular prompt sprint board keeps prompt expansion manual and publish-safe",
+      ok:
+        popularPromptSprintBoard.summary.unsafeItems === 0 &&
+        (popularPromptSprintBoard.unsafeItems?.length || 0) === 0 &&
+        popularPromptSprintBoard.summary.publishConfirmCommandsIncluded === 0 &&
+        popularPromptSprintBoard.summary.lanesReadyForPromptSprint === popularPromptSprintBoard.summary.items &&
+        popularPromptSprintBoard.summary.actionItems >= popularPromptSprintBoard.summary.items * 7 &&
+        popularPromptSprintBoard.summary.nextCandidateFiles > 0 &&
+        popularPromptSprintBoard.summary.promptTemplateSamples >= popularPromptSprintBoard.summary.items * 5 &&
+        Boolean(
+          popularPromptSprintBoard.items?.every(
+            (item) =>
+              item.readyForPromptSprint === true &&
+              (item.unsafeReasons?.length || 0) === 0 &&
+              (item.reviewActions?.length || item.actionCount || 0) >= 7 &&
+              (item.searchQueries?.length || 0) >= 5 &&
+              (item.sourceTargets?.length || 0) >= 3 &&
+              (item.promptTemplateSamples?.length || 0) >= 5 &&
+              ((item.nextCandidateFiles?.length || 0) > 0 || (item.alreadyQueuedFiles?.length || 0) > 0) &&
+              item.publishConfirm === "not-included",
+          ),
+        ) &&
+        Boolean(popularPromptSprintBoard.waves?.every((wave) => wave.readyItems === wave.items && (wave.unsafeItems || 0) === 0 && (wave.actionItems || 0) >= (wave.items || 0) * 7)),
+      detail: `ready=${popularPromptSprintBoard.summary.lanesReadyForPromptSprint}, actions=${popularPromptSprintBoard.summary.actionItems}, nextFiles=${popularPromptSprintBoard.summary.nextCandidateFiles}, publishConfirm=${popularPromptSprintBoard.summary.publishConfirmCommandsIncluded}`,
     },
     {
       name: "public coverage gap plan is read-only and covers every no-public broad theme",
