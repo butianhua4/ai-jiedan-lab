@@ -55,6 +55,7 @@
     "automation:broad-first-coverage-launch": "tsx scripts/broad-first-coverage-launch-pack.ts",
     "automation:broad-first-coverage-readiness": "tsx scripts/broad-first-coverage-readiness-matrix.ts",
     "automation:human-approval-queue": "tsx scripts/human-approval-execution-queue.ts",
+    "automation:human-approval-clearance": "tsx scripts/human-approval-clearance-pack.ts",
     "automation:review-optimization-brief": "tsx scripts/review-optimization-brief.ts",
     "automation:review-cannibalization-brief": "tsx scripts/review-cannibalization-brief.ts",
     "automation:review-collision-decision-pack": "tsx scripts/review-collision-decision-pack.ts",

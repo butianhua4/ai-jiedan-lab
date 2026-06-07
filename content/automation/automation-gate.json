@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T18:49:22.488Z",
+  "generatedAt": "2026-06-07T18:58:58.162Z",
   "ok": true,
   "summary": {
-    "checks": 155,
+    "checks": 157,
     "failed": 0,
-    "passed": 155
+    "passed": 157
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=171, unsafeClaims=0, watchMentions=3062"
+      "detail": "filesScanned=173, unsafeClaims=0, watchMentions=3078"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -351,6 +351,16 @@
       "name": "human approval execution queue stays human-gated and excludes publish confirm",
       "ok": true,
       "detail": "ready=8, sourceDecisions=7, seoWarnings=2, promptLanes=5, publishConfirm=0"
+    },
+    {
+      "name": "human approval clearance pack is read-only and covers the full approval queue",
+      "ok": true,
+      "detail": "items=8, immediate=3, backlog=5, failedSources=1, seo=2"
+    },
+    {
+      "name": "human approval clearance pack keeps all work human-gated and action-ready",
+      "ok": true,
+      "detail": "ready=8, actions=63, sourceDecisions=3, copydesk=4, publishConfirm=0"
     },
     {
       "name": "review optimization brief is read-only and covers ready action-board tasks",

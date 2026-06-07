@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T18:49:23.020Z
+Generated at: 2026-06-07T18:58:58.687Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -54,7 +54,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=pt-br
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=th
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/ -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
@@ -819,6 +819,36 @@ Unsafe first coverage launch items:
 | first-coverage-backlog | true | 64 | 0 | 0 | 3 | 4 | draft | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 | first-coverage-backlog | true | 60 | 0 | 2 | 0 | 0 | draft | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
 
+## Human Approval Clearance Pack
+
+- Current public published: 15
+- Projected public after immediate human approval: 18
+- Approval items: 8
+- Immediate items: 3
+- Backlog items: 5
+- Ready for clearance review: 8
+- Clearance actions: 63
+- Source decision items: 3
+- Failed source decision items: 1
+- SEO warning items: 2
+- Copydesk brief items: 4
+- Popular prompt lane items: 5
+- Mass search theme items: 6
+- Publish confirm commands included: 0
+- Traffic data available: false
+- Unsafe items: 0
+
+| Immediate | Ready | Priority | Actions | Source decisions | Failed source | SEO | Copydesk | Prompt lanes | Mass themes | Title | File |
+| --- | --- | ---: | ---: | ---: | --- | --- | --- | ---: | ---: | --- | --- |
+| true | true | 777 | 11 | 0 | false | true | true | 5 | 1 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | true | 773 | 11 | 6 | false | false | true | 4 | 1 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | true | 769 | 9 | 1 | true | false | true | 6 | 1 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| false | true | 70 | 6 | 0 | false | false | true | 0 | 0 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| false | true | 64 | 6 | 0 | false | false | false | 4 | 3 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
+| false | true | 64 | 6 | 0 | false | false | false | 4 | 2 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
+| false | true | 68 | 8 | 0 | false | true | false | 0 | 1 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| false | true | 60 | 6 | 2 | false | false | false | 0 | 0 | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+
 ## Review Optimization Brief
 
 - Briefs: 16
@@ -1061,8 +1091,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 171
-- Traffic claim watch mentions: 3062
+- Traffic claim files scanned: 173
+- Traffic claim watch mentions: 3078
 
 ## Public Surface Inventory
 

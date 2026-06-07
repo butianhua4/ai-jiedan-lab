@@ -496,6 +496,46 @@ type HumanApprovalQueue = {
   };
 };
 
+type HumanApprovalClearancePack = {
+  items: Array<{
+    clearanceActions: string[];
+    copydeskBrief: unknown | null;
+    file: string;
+    hasFailedSourceDecision: boolean;
+    immediate: boolean;
+    massSearchThemes: number;
+    popularPromptLanes: number;
+    priorityScore: number;
+    readyForClearanceReview: boolean;
+    seoWarning: unknown | null;
+    sourceDecisions: unknown[];
+    title: string;
+    unsafeReasons: string[];
+  }>;
+  publishingBoundary: {
+    currentPublicPublished: number;
+    currentPublishableNow: number;
+    projectedPublicPublishedAfterImmediateHumanApproval: number;
+    publishConfirmCommandsIncluded: number;
+  };
+  summary: {
+    approvalItems: number;
+    backlogItems: number;
+    clearanceActions: number;
+    copydeskBriefItems: number;
+    failedSourceDecisionItems: number;
+    immediateItems: number;
+    itemsReadyForClearanceReview: number;
+    massSearchThemeItems: number;
+    popularPromptLaneItems: number;
+    publishConfirmCommandsIncluded: number;
+    seoWarningItems: number;
+    sourceDecisionItems: number;
+    trafficDataAvailable: boolean;
+    unsafeItems: number;
+  };
+};
+
 type ContentIntegrity = {
   summary: {
     allIssueItems: number;
@@ -1814,6 +1854,7 @@ const reports = {
   broadFirstCoverageLaunchPack: readJson<BroadFirstCoverageLaunchPack>("content/automation/broad-first-coverage-launch-pack.json"),
   broadFirstCoverageReadinessMatrix: readJson<BroadFirstCoverageReadinessMatrix>("content/automation/broad-first-coverage-readiness-matrix.json"),
   humanApprovalQueue: readJson<HumanApprovalQueue>("content/automation/human-approval-execution-queue.json"),
+  humanApprovalClearancePack: readJson<HumanApprovalClearancePack>("content/automation/human-approval-clearance-pack.json"),
   reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
   reviewCannibalizationBrief: readJson<ReviewCannibalizationBrief>("content/automation/review-cannibalization-brief.json"),
   reviewCollisionDecisionPack: readJson<ReviewCollisionDecisionPack>("content/automation/review-collision-decision-pack.json"),
@@ -2422,6 +2463,26 @@ const payload = {
     trafficDataAvailable: reports.humanApprovalQueue.data?.summary.trafficDataAvailable ?? null,
     unsafeItems: reports.humanApprovalQueue.data?.summary.unsafeItems ?? null,
   },
+  humanApprovalClearancePack: {
+    approvalItems: reports.humanApprovalClearancePack.data?.summary.approvalItems ?? null,
+    backlogItems: reports.humanApprovalClearancePack.data?.summary.backlogItems ?? null,
+    clearanceActions: reports.humanApprovalClearancePack.data?.summary.clearanceActions ?? null,
+    copydeskBriefItems: reports.humanApprovalClearancePack.data?.summary.copydeskBriefItems ?? null,
+    currentPublicPublished: reports.humanApprovalClearancePack.data?.publishingBoundary.currentPublicPublished ?? null,
+    failedSourceDecisionItems: reports.humanApprovalClearancePack.data?.summary.failedSourceDecisionItems ?? null,
+    immediateItems: reports.humanApprovalClearancePack.data?.summary.immediateItems ?? null,
+    itemsReadyForClearanceReview: reports.humanApprovalClearancePack.data?.summary.itemsReadyForClearanceReview ?? null,
+    massSearchThemeItems: reports.humanApprovalClearancePack.data?.summary.massSearchThemeItems ?? null,
+    popularPromptLaneItems: reports.humanApprovalClearancePack.data?.summary.popularPromptLaneItems ?? null,
+    projectedPublicPublishedAfterImmediateHumanApproval:
+      reports.humanApprovalClearancePack.data?.publishingBoundary.projectedPublicPublishedAfterImmediateHumanApproval ?? null,
+    publishConfirmCommandsIncluded: reports.humanApprovalClearancePack.data?.summary.publishConfirmCommandsIncluded ?? null,
+    seoWarningItems: reports.humanApprovalClearancePack.data?.summary.seoWarningItems ?? null,
+    sourceDecisionItems: reports.humanApprovalClearancePack.data?.summary.sourceDecisionItems ?? null,
+    top: reports.humanApprovalClearancePack.data?.items ?? [],
+    trafficDataAvailable: reports.humanApprovalClearancePack.data?.summary.trafficDataAvailable ?? null,
+    unsafeItems: reports.humanApprovalClearancePack.data?.summary.unsafeItems ?? null,
+  },
   preflight: {
     checked: reports.preflight.data?.summary.checked ?? null,
     failed: reports.preflight.data?.summary.failed ?? null,
@@ -2846,6 +2907,13 @@ function buildNextActions() {
   }
   if (!reports.humanApprovalQueue.data || reports.humanApprovalQueue.data.summary.unsafeItems > 0 || reports.humanApprovalQueue.data.summary.publishConfirmCommandsIncluded > 0) {
     return ["Open docs/human-approval-execution-queue.md and resolve approval queue guardrail issues before any approval action."];
+  }
+  if (
+    !reports.humanApprovalClearancePack.data ||
+    reports.humanApprovalClearancePack.data.summary.unsafeItems > 0 ||
+    reports.humanApprovalClearancePack.data.summary.publishConfirmCommandsIncluded > 0
+  ) {
+    return ["Open docs/human-approval-clearance-pack.md and resolve approval clearance issues before any mark:review action."];
   }
   if (!reports.reviewOptimizationBrief.data || reports.reviewOptimizationBrief.data.summary.unsafeCommands > 0) {
     return ["Open docs/review-optimization-brief.md and resolve unsafe or missing copydesk guidance before manual review."];
@@ -3687,6 +3755,32 @@ function toMarkdown(data: typeof payload) {
     ...data.humanApprovalQueue.top.map(
       (item) =>
         `| ${item.currentStage} | ${item.readyForHumanApproval} | ${item.priorityScore} | ${item.seoWarnings.length} | ${item.sourceReplacementDecisions.length} | ${item.massSearchThemes.length} | ${item.popularPromptLanes.length} | ${item.articleState.status} | ${item.title} | ${item.file} |`,
+    ),
+    "",
+    "## Human Approval Clearance Pack",
+    "",
+    `- Current public published: ${data.humanApprovalClearancePack.currentPublicPublished}`,
+    `- Projected public after immediate human approval: ${data.humanApprovalClearancePack.projectedPublicPublishedAfterImmediateHumanApproval}`,
+    `- Approval items: ${data.humanApprovalClearancePack.approvalItems}`,
+    `- Immediate items: ${data.humanApprovalClearancePack.immediateItems}`,
+    `- Backlog items: ${data.humanApprovalClearancePack.backlogItems}`,
+    `- Ready for clearance review: ${data.humanApprovalClearancePack.itemsReadyForClearanceReview}`,
+    `- Clearance actions: ${data.humanApprovalClearancePack.clearanceActions}`,
+    `- Source decision items: ${data.humanApprovalClearancePack.sourceDecisionItems}`,
+    `- Failed source decision items: ${data.humanApprovalClearancePack.failedSourceDecisionItems}`,
+    `- SEO warning items: ${data.humanApprovalClearancePack.seoWarningItems}`,
+    `- Copydesk brief items: ${data.humanApprovalClearancePack.copydeskBriefItems}`,
+    `- Popular prompt lane items: ${data.humanApprovalClearancePack.popularPromptLaneItems}`,
+    `- Mass search theme items: ${data.humanApprovalClearancePack.massSearchThemeItems}`,
+    `- Publish confirm commands included: ${data.humanApprovalClearancePack.publishConfirmCommandsIncluded}`,
+    `- Traffic data available: ${data.humanApprovalClearancePack.trafficDataAvailable}`,
+    `- Unsafe items: ${data.humanApprovalClearancePack.unsafeItems}`,
+    "",
+    "| Immediate | Ready | Priority | Actions | Source decisions | Failed source | SEO | Copydesk | Prompt lanes | Mass themes | Title | File |",
+    "| --- | --- | ---: | ---: | ---: | --- | --- | --- | ---: | ---: | --- | --- |",
+    ...data.humanApprovalClearancePack.top.map(
+      (item) =>
+        `| ${item.immediate} | ${item.readyForClearanceReview} | ${item.priorityScore} | ${item.clearanceActions.length} | ${item.sourceDecisions.length} | ${item.hasFailedSourceDecision} | ${Boolean(item.seoWarning)} | ${Boolean(item.copydeskBrief)} | ${item.popularPromptLanes} | ${item.massSearchThemes} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Review Optimization Brief",

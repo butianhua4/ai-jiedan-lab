@@ -1465,6 +1465,45 @@ async function main() {
       unsafeItems: number;
     };
   }>("content/automation/human-approval-execution-queue.json");
+  const humanApprovalClearancePack = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    items?: Array<{
+      articleState?: { humanReviewRequired?: boolean; noindex?: boolean; qualityScore?: number; sourceNotes?: boolean; status?: string };
+      blockers?: unknown[];
+      clearanceActions?: unknown[];
+      commandBoundary?: { markReviewAfterHumanApproval?: string; publishConfirm?: string; publishDryRunAfterReview?: string };
+      copydeskBrief?: unknown;
+      immediate?: boolean;
+      popularPromptLanes?: number;
+      readyForClearanceReview?: boolean;
+      readyForHumanApproval?: boolean;
+      seoWarning?: unknown;
+      sourceDecisions?: unknown[];
+      unsafeReasons?: unknown[];
+    }>;
+    publishingBoundary: {
+      currentPublicPublished: number;
+      currentPublishableNow: number;
+      projectedPublicPublishedAfterImmediateHumanApproval: number;
+      publishConfirmCommandsIncluded: number;
+    };
+    summary: {
+      approvalItems: number;
+      backlogItems: number;
+      clearanceActions: number;
+      copydeskBriefItems: number;
+      failedSourceDecisionItems: number;
+      immediateItems: number;
+      itemsReadyForClearanceReview: number;
+      massSearchThemeItems: number;
+      popularPromptLaneItems: number;
+      publishConfirmCommandsIncluded: number;
+      seoWarningItems: number;
+      sourceDecisionItems: number;
+      trafficDataAvailable: boolean;
+      unsafeItems: number;
+    };
+  }>("content/automation/human-approval-clearance-pack.json");
   const reviewOptimizationBrief = readJson<{
     briefs?: Array<{
       file: string;
@@ -2702,6 +2741,54 @@ async function main() {
           ),
         ),
       detail: `ready=${humanApprovalQueue.summary.itemsReadyForHumanApproval}, sourceDecisions=${humanApprovalQueue.summary.itemsWithSourceReplacementDecisions}, seoWarnings=${humanApprovalQueue.summary.itemsWithSeoWarnings}, promptLanes=${humanApprovalQueue.summary.itemsWithPopularPromptLane}, publishConfirm=${humanApprovalQueue.summary.publishConfirmCommandsIncluded}`,
+    },
+    {
+      name: "human approval clearance pack is read-only and covers the full approval queue",
+      ok:
+        humanApprovalClearancePack.guardrails.autoEditArticles === false &&
+        humanApprovalClearancePack.guardrails.autoMarkReview === false &&
+        humanApprovalClearancePack.guardrails.autoPublish === false &&
+        humanApprovalClearancePack.guardrails.trafficClaim === "not-included" &&
+        humanApprovalClearancePack.summary.approvalItems === humanApprovalQueue.summary.items &&
+        humanApprovalClearancePack.summary.immediateItems === humanApprovalQueue.summary.immediateApprovalItems &&
+        humanApprovalClearancePack.summary.backlogItems === humanApprovalQueue.summary.backlogItems &&
+        humanApprovalClearancePack.summary.sourceDecisionItems <= humanApprovalQueue.summary.itemsWithSourceReplacementDecisions &&
+        humanApprovalClearancePack.summary.failedSourceDecisionItems === humanApprovalQueue.summary.itemsWithFailedSourceDecision &&
+        humanApprovalClearancePack.summary.seoWarningItems === humanApprovalQueue.summary.itemsWithSeoWarnings &&
+        humanApprovalClearancePack.summary.popularPromptLaneItems === humanApprovalQueue.summary.itemsWithPopularPromptLane &&
+        humanApprovalClearancePack.publishingBoundary.currentPublicPublished === humanApprovalQueue.publishingBoundary.currentPublicPublished &&
+        humanApprovalClearancePack.publishingBoundary.projectedPublicPublishedAfterImmediateHumanApproval ===
+          humanApprovalQueue.publishingBoundary.projectedPublicPublishedAfterImmediateHumanApproval,
+      detail: `items=${humanApprovalClearancePack.summary.approvalItems}, immediate=${humanApprovalClearancePack.summary.immediateItems}, backlog=${humanApprovalClearancePack.summary.backlogItems}, failedSources=${humanApprovalClearancePack.summary.failedSourceDecisionItems}, seo=${humanApprovalClearancePack.summary.seoWarningItems}`,
+    },
+    {
+      name: "human approval clearance pack keeps all work human-gated and action-ready",
+      ok:
+        humanApprovalClearancePack.summary.unsafeItems === 0 &&
+        humanApprovalClearancePack.summary.itemsReadyForClearanceReview === humanApprovalClearancePack.summary.approvalItems &&
+        humanApprovalClearancePack.summary.clearanceActions >= humanApprovalClearancePack.summary.approvalItems * 5 &&
+        humanApprovalClearancePack.summary.publishConfirmCommandsIncluded === 0 &&
+        humanApprovalClearancePack.publishingBoundary.publishConfirmCommandsIncluded === 0 &&
+        humanApprovalClearancePack.summary.trafficDataAvailable === false &&
+        Boolean(
+          humanApprovalClearancePack.items?.every(
+            (item) =>
+              item.readyForClearanceReview === true &&
+              item.readyForHumanApproval === true &&
+              (item.blockers?.length || 0) === 0 &&
+              (item.unsafeReasons?.length || 0) === 0 &&
+              (item.clearanceActions?.length || 0) >= 5 &&
+              item.articleState?.status === "draft" &&
+              item.articleState?.noindex === true &&
+              item.articleState?.humanReviewRequired === true &&
+              item.articleState?.sourceNotes === true &&
+              (item.articleState?.qualityScore || 0) >= 100 &&
+              item.commandBoundary?.markReviewAfterHumanApproval?.includes("--confirm-human") &&
+              !item.commandBoundary?.publishDryRunAfterReview?.includes("--confirm") &&
+              item.commandBoundary?.publishConfirm === "not-included",
+          ),
+        ),
+      detail: `ready=${humanApprovalClearancePack.summary.itemsReadyForClearanceReview}, actions=${humanApprovalClearancePack.summary.clearanceActions}, sourceDecisions=${humanApprovalClearancePack.summary.sourceDecisionItems}, copydesk=${humanApprovalClearancePack.summary.copydeskBriefItems}, publishConfirm=${humanApprovalClearancePack.summary.publishConfirmCommandsIncluded}`,
     },
     {
       name: "review optimization brief is read-only and covers ready action-board tasks",
