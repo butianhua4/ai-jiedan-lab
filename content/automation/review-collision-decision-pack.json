@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T17:23:01.835Z",
+  "generatedAt": "2026-06-07T17:32:50.932Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "stopBefore": "Stop before mark:review. If a reviewer keeps both articles, the angle and internal-link relationship must be explicit first."
   },
   "sourceEvidence": {
-    "cannibalizationGeneratedAt": "2026-06-07T17:23:01.322Z",
+    "cannibalizationGeneratedAt": "2026-06-07T17:32:50.441Z",
     "cannibalizationGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,

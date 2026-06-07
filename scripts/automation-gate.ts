@@ -156,6 +156,42 @@ async function main() {
       zeroPublicCoverageItems: number;
     };
   }>("content/automation/industry-prompt-opportunity-board.json");
+  const industryPromptModulePack = readJson<{
+    guardrails: { autoCreateArticles: boolean; autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    items?: Array<{
+      manualReviewActions?: unknown[];
+      promptBlueprints?: Array<{
+        copyPrompt?: string;
+        inputFields?: unknown[];
+        outputBlocks?: unknown[];
+        qualityChecklist?: unknown[];
+        riskControls?: unknown[];
+      }>;
+      readyForHumanReviewPrep?: boolean;
+      reviewCandidateFiles?: unknown[];
+      safeReviewPackBridge?: boolean;
+      sourceTargets?: unknown[];
+      supportingQueries?: unknown[];
+      unsafeReasons?: unknown[];
+    }>;
+    sourceEvidence?: { marketSignalSources?: unknown[]; officialPromptSources?: unknown[] };
+    summary: {
+      humanGatedItems: number;
+      items: number;
+      itemsWithCopyPrompts: number;
+      itemsWithInputOutputStructure: number;
+      itemsWithReviewPackCandidate: number;
+      itemsWithRiskControls: number;
+      itemsWithSourceTargets: number;
+      modulesPerOpportunityMin: number;
+      promptBlueprints: number;
+      sourceOpportunityModules: number;
+      sourceOpportunityUnsafeItems: number;
+      sourceReviewPackUnsafeItems: number;
+      unsafeItems: number;
+      zeroPublicCoverageItems: number;
+    };
+  }>("content/automation/industry-prompt-module-pack.json");
   const searchIntentLanes = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     lanes?: Array<{ intentSeeds?: unknown[]; matchedCandidates?: unknown[]; reviewFocus?: unknown[]; sourceTargets?: unknown[]; workflowAngles?: unknown[] }>;
@@ -2691,6 +2727,56 @@ async function main() {
         industryPromptOpportunityBoard.summary.itemsWithReviewPackCandidate >= 1 &&
         industryPromptOpportunityBoard.summary.zeroPublicCoverageItems >= 8,
       detail: `withReviewCandidate=${industryPromptOpportunityBoard.summary.itemsWithReviewPackCandidate}, zeroPublic=${industryPromptOpportunityBoard.summary.zeroPublicCoverageItems}`,
+    },
+    {
+      name: "industry prompt module pack is read-only and mirrors opportunity modules",
+      ok:
+        industryPromptModulePack.guardrails.autoCreateArticles === false &&
+        industryPromptModulePack.guardrails.autoEditArticles === false &&
+        industryPromptModulePack.guardrails.autoMarkReview === false &&
+        industryPromptModulePack.guardrails.autoPublish === false &&
+        industryPromptModulePack.guardrails.trafficClaim.includes("No measured traffic") &&
+        industryPromptModulePack.summary.items === industryPromptOpportunityBoard.summary.opportunities &&
+        industryPromptModulePack.summary.promptBlueprints === industryPromptOpportunityBoard.summary.promptModules &&
+        industryPromptModulePack.summary.sourceOpportunityModules === industryPromptOpportunityBoard.summary.promptModules,
+      detail: `items=${industryPromptModulePack.summary.items}/${industryPromptOpportunityBoard.summary.opportunities}, blueprints=${industryPromptModulePack.summary.promptBlueprints}/${industryPromptOpportunityBoard.summary.promptModules}`,
+    },
+    {
+      name: "industry prompt module pack has reusable prompt blueprints and human gates",
+      ok:
+        industryPromptModulePack.summary.unsafeItems === 0 &&
+        industryPromptModulePack.summary.sourceOpportunityUnsafeItems === 0 &&
+        industryPromptModulePack.summary.sourceReviewPackUnsafeItems === 0 &&
+        industryPromptModulePack.summary.humanGatedItems === industryPromptModulePack.summary.items &&
+        industryPromptModulePack.summary.itemsWithCopyPrompts === industryPromptModulePack.summary.items &&
+        industryPromptModulePack.summary.itemsWithInputOutputStructure === industryPromptModulePack.summary.items &&
+        industryPromptModulePack.summary.itemsWithRiskControls === industryPromptModulePack.summary.items &&
+        industryPromptModulePack.summary.itemsWithSourceTargets === industryPromptModulePack.summary.items &&
+        industryPromptModulePack.summary.itemsWithReviewPackCandidate >= 10 &&
+        industryPromptModulePack.summary.modulesPerOpportunityMin >= 5 &&
+        (industryPromptModulePack.sourceEvidence?.officialPromptSources?.length || 0) >= 5 &&
+        (industryPromptModulePack.sourceEvidence?.marketSignalSources?.length || 0) >= 4 &&
+        Boolean(
+          industryPromptModulePack.items?.every(
+            (item) =>
+              item.readyForHumanReviewPrep === true &&
+              (item.safeReviewPackBridge === true || (item.reviewCandidateFiles?.length || 0) === 0) &&
+              (item.sourceTargets?.length || 0) >= 5 &&
+              (item.supportingQueries?.length || 0) >= 4 &&
+              (item.manualReviewActions?.length || 0) >= 4 &&
+              (item.unsafeReasons?.length || 0) === 0 &&
+              (item.promptBlueprints?.length || 0) >= 5 &&
+              item.promptBlueprints?.every(
+                (prompt) =>
+                  (prompt.copyPrompt?.length || 0) > 300 &&
+                  (prompt.inputFields?.length || 0) >= 5 &&
+                  (prompt.outputBlocks?.length || 0) >= 5 &&
+                  (prompt.qualityChecklist?.length || 0) >= 5 &&
+                  (prompt.riskControls?.length || 0) >= 4,
+              ),
+          ),
+        ),
+      detail: `safe=${industryPromptModulePack.summary.unsafeItems === 0}, gated=${industryPromptModulePack.summary.humanGatedItems}, copyPrompts=${industryPromptModulePack.summary.itemsWithCopyPrompts}, reviewBridge=${industryPromptModulePack.summary.itemsWithReviewPackCandidate}`,
     },
     {
       name: "search intent lane map is read-only and broad",

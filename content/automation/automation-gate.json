@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T17:23:15.846Z",
+  "generatedAt": "2026-06-07T17:33:05.168Z",
   "ok": true,
   "summary": {
-    "checks": 143,
+    "checks": 145,
     "failed": 0,
-    "passed": 143
+    "passed": 145
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=159, unsafeClaims=0, watchMentions=2051"
+      "detail": "filesScanned=161, unsafeClaims=0, watchMentions=2485"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -451,6 +451,16 @@
       "name": "industry prompt opportunity board connects to reviewable content",
       "ok": true,
       "detail": "withReviewCandidate=11, zeroPublic=12"
+    },
+    {
+      "name": "industry prompt module pack is read-only and mirrors opportunity modules",
+      "ok": true,
+      "detail": "items=12/12, blueprints=60/60"
+    },
+    {
+      "name": "industry prompt module pack has reusable prompt blueprints and human gates",
+      "ok": true,
+      "detail": "safe=true, gated=12, copyPrompts=12, reviewBridge=11"
     },
     {
       "name": "search intent lane map is read-only and broad",

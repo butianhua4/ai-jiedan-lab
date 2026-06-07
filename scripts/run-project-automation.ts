@@ -48,6 +48,7 @@ const tasks: Task[] = [
   { title: "Generate AI deployment review pack", args: ["run", "automation:ai-deployment-review-pack"] },
   { title: "Generate industry prompt review pack", args: ["run", "automation:industry-prompt-review-pack"] },
   { title: "Generate industry prompt opportunity board", args: ["run", "automation:industry-prompt-opportunity-board"] },
+  { title: "Generate industry prompt module pack", args: ["run", "automation:industry-prompt-module-pack"] },
   { title: "Generate public coverage gap plan", args: ["run", "automation:public-gap-plan"] },
   { title: "Run public coverage gap preflight", args: ["run", "automation:public-gap-preflight"] },
   { title: "Generate public coverage gap decision pack", args: ["run", "automation:public-gap-decision-pack"] },

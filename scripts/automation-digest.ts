@@ -127,6 +127,32 @@ type IndustryPromptOpportunityBoard = {
   }>;
 };
 
+type IndustryPromptModulePack = {
+  summary: {
+    humanGatedItems: number;
+    items: number;
+    itemsWithCopyPrompts: number;
+    itemsWithInputOutputStructure: number;
+    itemsWithReviewPackCandidate: number;
+    itemsWithRiskControls: number;
+    itemsWithSourceTargets: number;
+    modulesPerOpportunityMin: number;
+    promptBlueprints: number;
+    unsafeItems: number;
+    zeroPublicCoverageItems: number;
+  };
+  topItems: Array<{
+    lane: string;
+    primaryQuery: string;
+    priorityScore: number;
+    promptBlueprints: unknown[];
+    publicMatches: number;
+    readyForHumanReviewPrep: boolean;
+    reviewCandidateFiles: string[];
+    safeReviewPackBridge: boolean;
+  }>;
+};
+
 type DeploymentCoverage = {
   coverage: Array<{
     candidates: unknown[];
@@ -1546,6 +1572,7 @@ const reports = {
   promptCoverage: readJson<PromptCoverage>("content/automation/industry-prompt-coverage.json"),
   promptReviewPack: readJson<PromptReviewPack>("content/automation/industry-prompt-review-pack.json"),
   industryPromptOpportunityBoard: readJson<IndustryPromptOpportunityBoard>("content/automation/industry-prompt-opportunity-board.json"),
+  industryPromptModulePack: readJson<IndustryPromptModulePack>("content/automation/industry-prompt-module-pack.json"),
   gate: readJson<{ ok: boolean; summary: { checks: number; failed: number; passed: number } }>("content/automation/automation-gate.json"),
   liveSearch: readJson<{
     articles: { checked: number; failed: unknown[]; missingFromSitemap: string[]; publicCount: number };
@@ -2344,6 +2371,20 @@ const payload = {
     unsafeItems: reports.industryPromptOpportunityBoard.data?.summary.unsafeItems ?? null,
     zeroPublicCoverageItems: reports.industryPromptOpportunityBoard.data?.summary.zeroPublicCoverageItems ?? null,
   },
+  industryPromptModulePack: {
+    humanGatedItems: reports.industryPromptModulePack.data?.summary.humanGatedItems ?? null,
+    items: reports.industryPromptModulePack.data?.summary.items ?? null,
+    itemsWithCopyPrompts: reports.industryPromptModulePack.data?.summary.itemsWithCopyPrompts ?? null,
+    itemsWithInputOutputStructure: reports.industryPromptModulePack.data?.summary.itemsWithInputOutputStructure ?? null,
+    itemsWithReviewPackCandidate: reports.industryPromptModulePack.data?.summary.itemsWithReviewPackCandidate ?? null,
+    itemsWithRiskControls: reports.industryPromptModulePack.data?.summary.itemsWithRiskControls ?? null,
+    itemsWithSourceTargets: reports.industryPromptModulePack.data?.summary.itemsWithSourceTargets ?? null,
+    modulesPerOpportunityMin: reports.industryPromptModulePack.data?.summary.modulesPerOpportunityMin ?? null,
+    promptBlueprints: reports.industryPromptModulePack.data?.summary.promptBlueprints ?? null,
+    top: reports.industryPromptModulePack.data?.topItems ?? [],
+    unsafeItems: reports.industryPromptModulePack.data?.summary.unsafeItems ?? null,
+    zeroPublicCoverageItems: reports.industryPromptModulePack.data?.summary.zeroPublicCoverageItems ?? null,
+  },
   cannibalization: {
     conflicts: reports.cannibalization.data?.summary.conflicts ?? null,
     reviewBatchConflicts: reports.cannibalization.data?.summary.reviewBatchConflicts ?? null,
@@ -2548,6 +2589,9 @@ function buildNextActions() {
   if (!reports.industryPromptOpportunityBoard.data || reports.industryPromptOpportunityBoard.data.summary.unsafeItems > 0) {
     return ["Open docs/industry-prompt-opportunity-board.md and resolve prompt opportunity board safety issues before manual review."];
   }
+  if (!reports.industryPromptModulePack.data || reports.industryPromptModulePack.data.summary.unsafeItems > 0) {
+    return ["Open docs/industry-prompt-module-pack.md and resolve prompt blueprint safety issues before using them in article review."];
+  }
   if (!reports.broadSearchDemand.data || reports.broadSearchDemand.data.summary.themesWithReadyDrafts !== reports.broadSearchDemand.data.summary.themes) {
     return ["Open docs/broad-search-demand-map.md and ensure every broad demand theme has ready draft candidates."];
   }
@@ -2573,6 +2617,7 @@ function buildNextActions() {
     "Use docs/ai-deployment-review-pack.md to review the 10 deployment, Agent, RAG, memory, API, and infrastructure candidates.",
     "Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.",
     "Use docs/industry-prompt-opportunity-board.md to turn broad department prompt searches into specific prompt-pack page ideas.",
+    "Use docs/industry-prompt-module-pack.md to deepen each department prompt page with reusable input/output prompt blueprints.",
     "Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.",
     "Use docs/source-target-health-audit.md to confirm official source links are reachable before approving fast-changing AI guidance.",
     "Use docs/source-target-remediation-pack.md to replace failed source URLs and confirm canonical redirected source URLs during human review.",
@@ -3846,6 +3891,26 @@ function toMarkdown(data: typeof payload) {
     "| --- | --- | --- | --- | --- | --- | --- |",
     ...data.industryPromptOpportunityBoard.top.map((item) => (
       `| ${item.priorityScore} | ${item.publicMatches} | ${item.existingReviewCandidates.length} | ${item.searchQueryFamilies} | ${item.lane} | ${item.primaryQuery} | ${item.deliverable} |`
+    )),
+    "",
+    "## Industry Prompt Module Pack",
+    "",
+    `- Items: ${data.industryPromptModulePack.items}`,
+    `- Prompt blueprints: ${data.industryPromptModulePack.promptBlueprints}`,
+    `- Min modules per opportunity: ${data.industryPromptModulePack.modulesPerOpportunityMin}`,
+    `- Human-gated items: ${data.industryPromptModulePack.humanGatedItems}`,
+    `- Items with copy prompts: ${data.industryPromptModulePack.itemsWithCopyPrompts}`,
+    `- Items with input/output structure: ${data.industryPromptModulePack.itemsWithInputOutputStructure}`,
+    `- Items with source targets: ${data.industryPromptModulePack.itemsWithSourceTargets}`,
+    `- Items with risk controls: ${data.industryPromptModulePack.itemsWithRiskControls}`,
+    `- Items with review-pack candidate: ${data.industryPromptModulePack.itemsWithReviewPackCandidate}`,
+    `- Zero-public-coverage items: ${data.industryPromptModulePack.zeroPublicCoverageItems}`,
+    `- Unsafe items: ${data.industryPromptModulePack.unsafeItems}`,
+    "",
+    "| Ready | Bridge | Score | Public | Blueprints | Candidates | Lane | Primary query |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.industryPromptModulePack.top.map((item) => (
+      `| ${item.readyForHumanReviewPrep} | ${item.safeReviewPackBridge} | ${item.priorityScore} | ${item.publicMatches} | ${item.promptBlueprints.length} | ${item.reviewCandidateFiles.length} | ${item.lane} | ${item.primaryQuery} |`
     )),
     "",
     "## Cannibalization Warnings",

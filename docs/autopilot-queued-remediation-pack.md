@@ -1,6 +1,6 @@
 # Autopilot Queued Remediation Pack
 
-Generated at: 2026-06-07T17:23:08.385Z
+Generated at: 2026-06-07T17:32:57.589Z
 
 This report is read-only. It turns queued playbook items into manual remediation cards and keeps article edits, mark-review, and publishing human-gated.
 
@@ -25,7 +25,7 @@ This report is read-only. It turns queued playbook items into manual remediation
 
 ## Source Evidence
 
-- queuedPlaybookGeneratedAt: "2026-06-07T17:23:07.909Z"
+- queuedPlaybookGeneratedAt: "2026-06-07T17:32:57.097Z"
 - queuedPlaybookGuardrails: {"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"note":"Read-only merged playbook for next-10 queued-for-playbook sprint items. It prepares human review without changing article status.","stopBefore":"Use this report for manual review only. mark:review requires explicit human approval per file; publish --confirm is not included."}
 - queuedPlaybookItems: 7
 - queuedPlaybookReadyItems: 7

@@ -89,6 +89,7 @@
     "automation:ai-deployment-review-pack": "tsx scripts/ai-deployment-review-pack.ts",
     "automation:industry-prompt-review-pack": "tsx scripts/industry-prompt-review-pack.ts",
     "automation:industry-prompt-opportunity-board": "tsx scripts/industry-prompt-opportunity-board.ts",
+    "automation:industry-prompt-module-pack": "tsx scripts/industry-prompt-module-pack.ts",
     "automation:public-gap-plan": "tsx scripts/public-coverage-gap-plan.ts",
     "automation:public-gap-preflight": "tsx scripts/public-coverage-gap-preflight.ts",
     "automation:public-gap-decision-pack": "tsx scripts/public-coverage-gap-decision-pack.ts"

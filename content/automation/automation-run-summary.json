@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T17:23:16.479Z",
+  "generatedAt": "2026-06-07T17:33:05.732Z",
   "failures": [],
   "ok": true,
   "tasks": [
@@ -38,6 +38,7 @@
     "Generate AI deployment review pack",
     "Generate industry prompt review pack",
     "Generate industry prompt opportunity board",
+    "Generate industry prompt module pack",
     "Generate public coverage gap plan",
     "Run public coverage gap preflight",
     "Generate public coverage gap decision pack",

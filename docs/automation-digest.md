@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T17:23:16.423Z
+Generated at: 2026-06-07T17:33:05.677Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -54,7 +54,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=ja
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/ -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
@@ -1005,8 +1005,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 159
-- Traffic claim watch mentions: 2051
+- Traffic claim files scanned: 161
+- Traffic claim watch mentions: 2485
 
 ## Public Surface Inventory
 
@@ -1412,6 +1412,31 @@ Public categories:
 | 202 | 0 | 2 | 5 | product-manager-ai-prompts | 产品经理 AI 提示词 | Product prompt pack with PRD, user stories, competitor notes, acceptance criteria, and launch checklist. |
 | 198 | 0 | 1 | 5 | marketing-ai-prompts | 营销 AI 提示词 | Marketing prompt pack with campaign brief, SEO outline, ad copy, content calendar, and post-campaign review. |
 
+## Industry Prompt Module Pack
+
+- Items: 12
+- Prompt blueprints: 60
+- Min modules per opportunity: 5
+- Human-gated items: 12
+- Items with copy prompts: 12
+- Items with input/output structure: 12
+- Items with source targets: 12
+- Items with risk controls: 12
+- Items with review-pack candidate: 11
+- Zero-public-coverage items: 12
+- Unsafe items: 0
+
+| Ready | Bridge | Score | Public | Blueprints | Candidates | Lane | Primary query |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| true | true | 226 | 0 | 5 | 3 | customer-service-ai-prompts | 客服 AI 回复模板 |
+| true | true | 216 | 0 | 5 | 2 | sales-ai-prompts | 销售 AI 提示词 |
+| true | true | 212 | 0 | 5 | 2 | hr-ai-prompts | HR AI 提示词 |
+| true | true | 208 | 0 | 5 | 2 | operations-ai-prompts | 运营 AI 提示词 |
+| true | true | 206 | 0 | 5 | 2 | finance-ai-prompts | 财务 AI 提示词 |
+| true | true | 204 | 0 | 5 | 2 | education-ai-prompts | 教师 AI 提示词 |
+| true | true | 202 | 0 | 5 | 2 | product-manager-ai-prompts | 产品经理 AI 提示词 |
+| true | true | 198 | 0 | 5 | 1 | marketing-ai-prompts | 营销 AI 提示词 |
+
 ## Cannibalization Warnings
 
 - Conflicts: 200
@@ -1474,6 +1499,7 @@ Public categories:
 - Use docs/ai-deployment-review-pack.md to review the 10 deployment, Agent, RAG, memory, API, and infrastructure candidates.
 - Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.
 - Use docs/industry-prompt-opportunity-board.md to turn broad department prompt searches into specific prompt-pack page ideas.
+- Use docs/industry-prompt-module-pack.md to deepen each department prompt page with reusable input/output prompt blueprints.
 - Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.
 - Use docs/source-target-health-audit.md to confirm official source links are reachable before approving fast-changing AI guidance.
 - Use docs/source-target-remediation-pack.md to replace failed source URLs and confirm canonical redirected source URLs during human review.

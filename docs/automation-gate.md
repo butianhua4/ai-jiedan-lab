@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-07T17:23:15.846Z
+Generated at: 2026-06-07T17:33:05.168Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 143
-- Passed: 143
+- Checks: 145
+- Passed: 145
 - Failed: 0
 
 ## Checks
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=159, unsafeClaims=0, watchMentions=2051 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=161, unsafeClaims=0, watchMentions=2485 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, broadFirst=8, candidates=22 |
@@ -103,6 +103,8 @@ Overall: PASS
 | industry prompt opportunity board is broad and read-only | PASS | opportunities=12, lanes=12, queries=60 |
 | industry prompt opportunity board has sources, structure, and human boundaries | PASS | safe=true, sources=12, structure=12, modules=60 |
 | industry prompt opportunity board connects to reviewable content | PASS | withReviewCandidate=11, zeroPublic=12 |
+| industry prompt module pack is read-only and mirrors opportunity modules | PASS | items=12/12, blueprints=60/60 |
+| industry prompt module pack has reusable prompt blueprints and human gates | PASS | safe=true, gated=12, copyPrompts=12, reviewBridge=11 |
 | search intent lane map is read-only and broad | PASS | lanes=12, highPriority=12, withReadyDrafts=12 |
 | search intent lane map includes sources, review focus, and safe candidates | PASS | readyDraftMatches=233, noPublicCoverage=10, notReadyMatched=355 |
 | search intent approval packet is read-only and covers current wave plus next gaps | PASS | currentWave=3, nextGap=6, nextGapLanes=3 |
