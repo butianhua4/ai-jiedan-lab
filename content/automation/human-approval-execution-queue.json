@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T18:05:18.080Z",
+  "generatedAt": "2026-06-07T18:30:51.534Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "firstCoverageGeneratedAt": "2026-06-07T18:05:17.536Z",
+    "firstCoverageGeneratedAt": "2026-06-07T18:30:51.010Z",
     "firstCoverageSummary": {
       "blockingItems": 0,
       "commandBoundaries": 8,
@@ -29,7 +29,7 @@
       "warningItems": 8,
       "zeroPublicClusters": 8
     },
-    "massAiSearchMatrixGeneratedAt": "2026-06-07T18:04:49.860Z",
+    "massAiSearchMatrixGeneratedAt": "2026-06-07T18:30:17.644Z",
     "massAiSearchMatrixSummary": {
       "commandBoundaries": 10,
       "deploymentBridgedThemes": 6,
@@ -50,7 +50,29 @@
       "unsafeItems": 0,
       "waves": 3
     },
-    "seoWarningGeneratedAt": "2026-06-07T18:04:38.650Z",
+    "popularAiPromptPlaybookGeneratedAt": "2026-06-07T18:30:20.341Z",
+    "popularAiPromptPlaybookSummary": {
+      "agentDeploymentLanes": 3,
+      "broadWorkPromptLanes": 3,
+      "commandBoundaries": 10,
+      "deploymentBridgeItems": 6,
+      "humanGatedItems": 10,
+      "items": 10,
+      "itemsReadyForHumanReviewPrep": 10,
+      "itemsWithCandidateFiles": 10,
+      "itemsWithOfficialSources": 10,
+      "memoryLanes": 1,
+      "officialSources": 12,
+      "promptModuleBridgeItems": 7,
+      "promptTemplates": 50,
+      "publishConfirmCommandsIncluded": 0,
+      "searchQueries": 127,
+      "sourceTargets": 22,
+      "trafficDataAvailable": false,
+      "uniqueCandidateFiles": 21,
+      "unsafeItems": 0
+    },
+    "seoWarningGeneratedAt": "2026-06-07T18:30:06.186Z",
     "seoWarningSummary": {
       "blockingItems": 0,
       "draftItems": 8,
@@ -67,7 +89,7 @@
       "warningItems": 16,
       "waveItems": 1
     },
-    "sourceReplacementGeneratedAt": "2026-06-07T18:05:03.225Z",
+    "sourceReplacementGeneratedAt": "2026-06-07T18:30:36.711Z",
     "sourceReplacementSummary": {
       "affectedFiles": 22,
       "failedDecisionItems": 1,
@@ -83,14 +105,14 @@
       "sourceRemediationUnsafeItems": 0,
       "unsafeItems": 0
     },
-    "waveApprovalGeneratedAt": "2026-06-07T18:04:44.849Z",
+    "waveApprovalGeneratedAt": "2026-06-07T18:30:12.463Z",
     "waveApprovalSummary": {
       "items": 3,
       "readyForHumanReview": 3,
       "unsafeItems": 0,
       "wave": 1
     },
-    "wavePublishSimulationGeneratedAt": "2026-06-07T18:05:05.316Z",
+    "wavePublishSimulationGeneratedAt": "2026-06-07T18:30:38.767Z",
     "wavePublishSimulationSummary": {
       "currentlyPublishable": 0,
       "items": 3,
@@ -119,6 +141,7 @@
     "itemsReadyForHumanApproval": 8,
     "itemsWithFailedSourceDecision": 1,
     "itemsWithMassSearchTheme": 6,
+    "itemsWithPopularPromptLane": 5,
     "itemsWithSeoWarnings": 2,
     "itemsWithSourceReplacementDecisions": 7,
     "publishConfirmCommandsIncluded": 0,
@@ -177,6 +200,38 @@
           "lane": "prompt-library",
           "themeTitle": "Cross-industry AI prompt templates",
           "wave": 1
+        }
+      ],
+      "popularPromptLanes": [
+        {
+          "laneId": "chatgpt-prompt-daquan",
+          "queries": 18,
+          "templates": 5,
+          "title": "ChatGPT 提示词大全和万能公式"
+        },
+        {
+          "laneId": "ecommerce-customer-service-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "电商客服、售后和直播卖货 AI 提示词"
+        },
+        {
+          "laneId": "sales-proposal-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "销售话术、报价和方案书 AI 提示词"
+        },
+        {
+          "laneId": "hr-resume-recruiting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "简历优化、招聘和 HR AI 提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
         }
       ],
       "priorityScore": 777,
@@ -288,6 +343,32 @@
           "wave": 1
         }
       ],
+      "popularPromptLanes": [
+        {
+          "laneId": "excel-data-analysis-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Excel 和数据分析 AI 提示词"
+        },
+        {
+          "laneId": "ai-agent-deploy-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "AI Agent 部署、工具调用和上线排错提示词"
+        },
+        {
+          "laneId": "llm-deployment-troubleshooting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "大模型部署、本地模型和 API 排错提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
+        }
+      ],
       "priorityScore": 773,
       "projectedPublishableAfterHumanApproval": true,
       "publicImpact": "Immediate Wave 1; projected public count after human approval is 18.",
@@ -376,6 +457,44 @@
           "lane": "prompt-library",
           "themeTitle": "Cross-industry AI prompt templates",
           "wave": 1
+        }
+      ],
+      "popularPromptLanes": [
+        {
+          "laneId": "chatgpt-prompt-daquan",
+          "queries": 18,
+          "templates": 5,
+          "title": "ChatGPT 提示词大全和万能公式"
+        },
+        {
+          "laneId": "office-copilot-prompts",
+          "queries": 14,
+          "templates": 5,
+          "title": "AI 办公提示词：Word、Excel、PPT、邮件和会议"
+        },
+        {
+          "laneId": "ecommerce-customer-service-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "电商客服、售后和直播卖货 AI 提示词"
+        },
+        {
+          "laneId": "sales-proposal-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "销售话术、报价和方案书 AI 提示词"
+        },
+        {
+          "laneId": "hr-resume-recruiting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "简历优化、招聘和 HR AI 提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
         }
       ],
       "priorityScore": 769,
@@ -452,6 +571,7 @@
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "massSearchThemes": [],
+      "popularPromptLanes": [],
       "priorityScore": 70,
       "projectedPublishableAfterHumanApproval": true,
       "publicImpact": "First-coverage backlog for zero-public cluster: 开源大模型部署：Ollama、vLLM、TGI、RunPod.",
@@ -540,6 +660,32 @@
           "wave": 2
         }
       ],
+      "popularPromptLanes": [
+        {
+          "laneId": "excel-data-analysis-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Excel 和数据分析 AI 提示词"
+        },
+        {
+          "laneId": "ai-agent-deploy-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "AI Agent 部署、工具调用和上线排错提示词"
+        },
+        {
+          "laneId": "llm-deployment-troubleshooting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "大模型部署、本地模型和 API 排错提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
+        }
+      ],
       "priorityScore": 64,
       "projectedPublishableAfterHumanApproval": true,
       "publicImpact": "First-coverage backlog for zero-public cluster: Agent 记忆：短期记忆、长期记忆、RAG、Postgres.",
@@ -590,6 +736,32 @@
           "lane": "prompt-library",
           "themeTitle": "LLM evaluation, observability, and security",
           "wave": 3
+        }
+      ],
+      "popularPromptLanes": [
+        {
+          "laneId": "excel-data-analysis-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Excel 和数据分析 AI 提示词"
+        },
+        {
+          "laneId": "ai-agent-deploy-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "AI Agent 部署、工具调用和上线排错提示词"
+        },
+        {
+          "laneId": "llm-deployment-troubleshooting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "大模型部署、本地模型和 API 排错提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
         }
       ],
       "priorityScore": 64,
@@ -650,6 +822,7 @@
           "wave": 3
         }
       ],
+      "popularPromptLanes": [],
       "priorityScore": 68,
       "projectedPublishableAfterHumanApproval": true,
       "publicImpact": "First-coverage backlog for zero-public cluster: AI API 接入、限流、成本和多模型路由.",
@@ -756,6 +929,7 @@
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "massSearchThemes": [],
+      "popularPromptLanes": [],
       "priorityScore": 60,
       "projectedPublishableAfterHumanApproval": true,
       "publicImpact": "First-coverage backlog for zero-public cluster: LLM 观测、评测、日志和上线后质量.",
@@ -828,6 +1002,38 @@
           "lane": "prompt-library",
           "themeTitle": "Cross-industry AI prompt templates",
           "wave": 1
+        }
+      ],
+      "popularPromptLanes": [
+        {
+          "laneId": "chatgpt-prompt-daquan",
+          "queries": 18,
+          "templates": 5,
+          "title": "ChatGPT 提示词大全和万能公式"
+        },
+        {
+          "laneId": "ecommerce-customer-service-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "电商客服、售后和直播卖货 AI 提示词"
+        },
+        {
+          "laneId": "sales-proposal-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "销售话术、报价和方案书 AI 提示词"
+        },
+        {
+          "laneId": "hr-resume-recruiting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "简历优化、招聘和 HR AI 提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
         }
       ],
       "priorityScore": 777,
@@ -939,6 +1145,32 @@
           "wave": 1
         }
       ],
+      "popularPromptLanes": [
+        {
+          "laneId": "excel-data-analysis-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Excel 和数据分析 AI 提示词"
+        },
+        {
+          "laneId": "ai-agent-deploy-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "AI Agent 部署、工具调用和上线排错提示词"
+        },
+        {
+          "laneId": "llm-deployment-troubleshooting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "大模型部署、本地模型和 API 排错提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
+        }
+      ],
       "priorityScore": 773,
       "projectedPublishableAfterHumanApproval": true,
       "publicImpact": "Immediate Wave 1; projected public count after human approval is 18.",
@@ -1029,6 +1261,44 @@
           "wave": 1
         }
       ],
+      "popularPromptLanes": [
+        {
+          "laneId": "chatgpt-prompt-daquan",
+          "queries": 18,
+          "templates": 5,
+          "title": "ChatGPT 提示词大全和万能公式"
+        },
+        {
+          "laneId": "office-copilot-prompts",
+          "queries": 14,
+          "templates": 5,
+          "title": "AI 办公提示词：Word、Excel、PPT、邮件和会议"
+        },
+        {
+          "laneId": "ecommerce-customer-service-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "电商客服、售后和直播卖货 AI 提示词"
+        },
+        {
+          "laneId": "sales-proposal-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "销售话术、报价和方案书 AI 提示词"
+        },
+        {
+          "laneId": "hr-resume-recruiting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "简历优化、招聘和 HR AI 提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
+        }
+      ],
       "priorityScore": 769,
       "projectedPublishableAfterHumanApproval": true,
       "publicImpact": "Immediate Wave 1; projected public count after human approval is 18.",
@@ -1101,6 +1371,7 @@
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "massSearchThemes": [],
+      "popularPromptLanes": [],
       "priorityScore": 70,
       "projectedPublishableAfterHumanApproval": true,
       "publicImpact": "First-coverage backlog for zero-public cluster: 开源大模型部署：Ollama、vLLM、TGI、RunPod.",
@@ -1179,6 +1450,7 @@
           "wave": 3
         }
       ],
+      "popularPromptLanes": [],
       "priorityScore": 68,
       "projectedPublishableAfterHumanApproval": true,
       "publicImpact": "First-coverage backlog for zero-public cluster: AI API 接入、限流、成本和多模型路由.",
@@ -1295,6 +1567,32 @@
           "wave": 3
         }
       ],
+      "popularPromptLanes": [
+        {
+          "laneId": "excel-data-analysis-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Excel 和数据分析 AI 提示词"
+        },
+        {
+          "laneId": "ai-agent-deploy-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "AI Agent 部署、工具调用和上线排错提示词"
+        },
+        {
+          "laneId": "llm-deployment-troubleshooting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "大模型部署、本地模型和 API 排错提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
+        }
+      ],
       "priorityScore": 64,
       "projectedPublishableAfterHumanApproval": true,
       "publicImpact": "First-coverage backlog for zero-public cluster: Dify、n8n、Coze、Flowise、MCP 自动化部署.",
@@ -1363,6 +1661,32 @@
           "wave": 2
         }
       ],
+      "popularPromptLanes": [
+        {
+          "laneId": "excel-data-analysis-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Excel 和数据分析 AI 提示词"
+        },
+        {
+          "laneId": "ai-agent-deploy-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "AI Agent 部署、工具调用和上线排错提示词"
+        },
+        {
+          "laneId": "llm-deployment-troubleshooting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "大模型部署、本地模型和 API 排错提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
+        }
+      ],
       "priorityScore": 64,
       "projectedPublishableAfterHumanApproval": true,
       "publicImpact": "First-coverage backlog for zero-public cluster: Agent 记忆：短期记忆、长期记忆、RAG、Postgres.",
@@ -1405,6 +1729,7 @@
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "massSearchThemes": [],
+      "popularPromptLanes": [],
       "priorityScore": 60,
       "projectedPublishableAfterHumanApproval": true,
       "publicImpact": "First-coverage backlog for zero-public cluster: LLM 观测、评测、日志和上线后质量.",

@@ -462,6 +462,7 @@ type HumanApprovalQueue = {
     file: string;
     humanChecklist: unknown[];
     massSearchThemes: unknown[];
+    popularPromptLanes: unknown[];
     priorityScore: number;
     projectedPublishableAfterHumanApproval: boolean;
     readyForHumanApproval: boolean;
@@ -486,6 +487,7 @@ type HumanApprovalQueue = {
     itemsReadyForHumanApproval: number;
     itemsWithFailedSourceDecision: number;
     itemsWithMassSearchTheme: number;
+    itemsWithPopularPromptLane: number;
     itemsWithSeoWarnings: number;
     itemsWithSourceReplacementDecisions: number;
     publishConfirmCommandsIncluded: number;
@@ -2374,6 +2376,7 @@ const payload = {
     itemsReadyForHumanApproval: reports.humanApprovalQueue.data?.summary.itemsReadyForHumanApproval ?? null,
     itemsWithFailedSourceDecision: reports.humanApprovalQueue.data?.summary.itemsWithFailedSourceDecision ?? null,
     itemsWithMassSearchTheme: reports.humanApprovalQueue.data?.summary.itemsWithMassSearchTheme ?? null,
+    itemsWithPopularPromptLane: reports.humanApprovalQueue.data?.summary.itemsWithPopularPromptLane ?? null,
     itemsWithSeoWarnings: reports.humanApprovalQueue.data?.summary.itemsWithSeoWarnings ?? null,
     itemsWithSourceReplacementDecisions: reports.humanApprovalQueue.data?.summary.itemsWithSourceReplacementDecisions ?? null,
     projectedPublicPublishedAfterImmediateHumanApproval:
@@ -3610,15 +3613,16 @@ function toMarkdown(data: typeof payload) {
     `- Items with failed source decision: ${data.humanApprovalQueue.itemsWithFailedSourceDecision}`,
     `- Items with SEO warnings: ${data.humanApprovalQueue.itemsWithSeoWarnings}`,
     `- Items with mass search theme: ${data.humanApprovalQueue.itemsWithMassSearchTheme}`,
+    `- Items with popular prompt lane: ${data.humanApprovalQueue.itemsWithPopularPromptLane}`,
     `- Publish confirm commands included: ${data.humanApprovalQueue.publishConfirmCommandsIncluded}`,
     `- Traffic data available: ${data.humanApprovalQueue.trafficDataAvailable}`,
     `- Unsafe items: ${data.humanApprovalQueue.unsafeItems}`,
     "",
-    "| Stage | Ready | Priority | SEO | Source decisions | Mass themes | Status | Title | File |",
-    "| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |",
+    "| Stage | Ready | Priority | SEO | Source decisions | Mass themes | Prompt lanes | Status | Title | File |",
+    "| --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- | --- |",
     ...data.humanApprovalQueue.top.map(
       (item) =>
-        `| ${item.currentStage} | ${item.readyForHumanApproval} | ${item.priorityScore} | ${item.seoWarnings.length} | ${item.sourceReplacementDecisions.length} | ${item.massSearchThemes.length} | ${item.articleState.status} | ${item.title} | ${item.file} |`,
+        `| ${item.currentStage} | ${item.readyForHumanApproval} | ${item.priorityScore} | ${item.seoWarnings.length} | ${item.sourceReplacementDecisions.length} | ${item.massSearchThemes.length} | ${item.popularPromptLanes.length} | ${item.articleState.status} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Review Optimization Brief",

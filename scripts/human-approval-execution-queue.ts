@@ -145,6 +145,28 @@ type MassAiSearchMatrix = {
   };
 };
 
+type PopularAiPromptPlaybook = {
+  generatedAt: string;
+  guardrails: { autoCreateArticles: boolean; autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+  items: Array<{
+    candidateFiles: string[];
+    laneId: string;
+    promptTemplates: unknown[];
+    readyForHumanReviewPrep: boolean;
+    searchQueries: string[];
+    title: string;
+    trafficClaim: string;
+    unsafeReasons: string[];
+  }>;
+  summary: {
+    items: number;
+    itemsReadyForHumanReviewPrep: number;
+    publishConfirmCommandsIncluded: number;
+    trafficDataAvailable: boolean;
+    unsafeItems: number;
+  };
+};
+
 type ApprovalQueueItem = {
   articleState: {
     humanReviewRequired: boolean;
@@ -159,6 +181,7 @@ type ApprovalQueueItem = {
   file: string;
   humanChecklist: string[];
   massSearchThemes: Array<{ lane: string; themeTitle: string; wave: number }>;
+  popularPromptLanes: Array<{ laneId: string; queries: number; templates: number; title: string }>;
   priorityScore: number;
   projectedPublishableAfterHumanApproval: boolean;
   publicImpact: string;
@@ -180,11 +203,13 @@ function main() {
   const sourceDecisions = readJson<SourceReplacementDecisionPack>("content/automation/source-replacement-decision-pack.json");
   const seoWarnings = readJson<SeoWarningRemediation>("content/automation/seo-warning-remediation-pack.json");
   const massMatrix = readJson<MassAiSearchMatrix>("content/automation/mass-ai-search-action-matrix.json");
+  const popularPromptPlaybook = readJson<PopularAiPromptPlaybook>("content/automation/popular-ai-prompt-playbook.json");
 
   const simulationByFile = new Map(publishSimulation.items.map((item) => [item.file, item]));
   const sourceDecisionsByFile = groupBy(sourceDecisions.items, (item) => item.file);
   const seoWarningsByFile = groupBy(seoWarnings.items, (item) => item.file);
   const massThemesByFile = buildMassThemeIndex(massMatrix.items);
+  const popularPromptLanesByFile = buildPopularPromptLaneIndex(popularPromptPlaybook.items);
 
   const immediateItems = wavePacket.items.map((item) =>
     toApprovalQueueItem({
@@ -210,6 +235,7 @@ function main() {
       sourceDecisions: sourceDecisionsByFile.get(item.file) || [],
       seoWarnings: seoWarningsByFile.get(item.file) || [],
       massThemes: massThemesByFile.get(item.file) || [],
+      popularPromptLanes: popularPromptLanesByFile.get(item.file) || [],
       title: item.title,
     }),
   );
@@ -232,6 +258,7 @@ function main() {
         sourceDecisions: sourceDecisionsByFile.get(item.file) || [],
         seoWarnings: seoWarningsByFile.get(item.file) || [],
         massThemes: massThemesByFile.get(item.file) || [],
+        popularPromptLanes: popularPromptLanesByFile.get(item.file) || [],
         title: item.title,
       }),
     );
@@ -256,6 +283,8 @@ function main() {
       firstCoverageSummary: firstCoverage.summary,
       massAiSearchMatrixGeneratedAt: massMatrix.generatedAt,
       massAiSearchMatrixSummary: massMatrix.summary,
+      popularAiPromptPlaybookGeneratedAt: popularPromptPlaybook.generatedAt,
+      popularAiPromptPlaybookSummary: popularPromptPlaybook.summary,
       seoWarningGeneratedAt: seoWarnings.generatedAt,
       seoWarningSummary: seoWarnings.summary,
       sourceReplacementGeneratedAt: sourceDecisions.generatedAt,
@@ -282,6 +311,7 @@ function main() {
       itemsReadyForHumanApproval: items.filter((item) => item.readyForHumanApproval).length,
       itemsWithFailedSourceDecision: itemsWithFailedSourceDecision.length,
       itemsWithMassSearchTheme: items.filter((item) => item.massSearchThemes.length > 0).length,
+      itemsWithPopularPromptLane: items.filter((item) => item.popularPromptLanes.length > 0).length,
       itemsWithSeoWarnings: items.filter((item) => item.seoWarnings.length > 0).length,
       itemsWithSourceReplacementDecisions: items.filter((item) => item.sourceReplacementDecisions.length > 0).length,
       publishConfirmCommandsIncluded: 0,
@@ -310,6 +340,7 @@ function toApprovalQueueItem(input: {
   file: string;
   humanChecklist: string[];
   massThemes: ApprovalQueueItem["massSearchThemes"];
+  popularPromptLanes: ApprovalQueueItem["popularPromptLanes"];
   priorityScore: number;
   projectedPublishableAfterHumanApproval: boolean;
   publicImpact: string;
@@ -360,6 +391,7 @@ function toApprovalQueueItem(input: {
     file: input.file,
     humanChecklist: dedupe(input.humanChecklist).slice(0, 28),
     massSearchThemes: input.massThemes,
+    popularPromptLanes: input.popularPromptLanes,
     priorityScore: input.priorityScore,
     projectedPublishableAfterHumanApproval: input.projectedPublishableAfterHumanApproval,
     publicImpact: input.publicImpact,
@@ -408,6 +440,24 @@ function buildMassThemeIndex(items: MassAiSearchMatrix["items"]) {
     for (const file of item.candidateFiles) {
       const current = index.get(file) || [];
       current.push({ lane: item.lane, themeTitle: item.themeTitle, wave: item.editorialWave });
+      index.set(file, current);
+    }
+  }
+  return index;
+}
+
+function buildPopularPromptLaneIndex(items: PopularAiPromptPlaybook["items"]) {
+  const index = new Map<string, ApprovalQueueItem["popularPromptLanes"]>();
+  for (const item of items) {
+    if (!item.readyForHumanReviewPrep || item.trafficClaim !== "not-included" || item.unsafeReasons.length > 0) continue;
+    for (const file of item.candidateFiles) {
+      const current = index.get(file) || [];
+      current.push({
+        laneId: item.laneId,
+        queries: item.searchQueries.length,
+        templates: item.promptTemplates.length,
+        title: item.title,
+      });
       index.set(file, current);
     }
   }
@@ -477,11 +527,11 @@ function toMarkdown(payload: {
     "",
     "## Queue",
     "",
-    "| Stage | Ready | Priority | SEO | Source decisions | Mass themes | Status | Title | File |",
-    "| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |",
+    "| Stage | Ready | Priority | SEO | Source decisions | Mass themes | Prompt lanes | Status | Title | File |",
+    "| --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- | --- |",
     ...payload.items.map(
       (item) =>
-        `| ${item.currentStage} | ${item.readyForHumanApproval} | ${item.priorityScore} | ${item.seoWarnings.length} | ${item.sourceReplacementDecisions.length} | ${item.massSearchThemes.length} | ${item.articleState.status} | ${item.title} | ${item.file} |`,
+        `| ${item.currentStage} | ${item.readyForHumanApproval} | ${item.priorityScore} | ${item.seoWarnings.length} | ${item.sourceReplacementDecisions.length} | ${item.massSearchThemes.length} | ${item.popularPromptLanes.length} | ${item.articleState.status} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Command Boundaries",
@@ -512,6 +562,12 @@ function itemSection(item: ApprovalQueueItem) {
     "Mass search themes:",
     "",
     ...(item.massSearchThemes.length ? item.massSearchThemes.map((theme) => `- Wave ${theme.wave}: ${theme.lane} - ${theme.themeTitle}`) : ["- none"]),
+    "",
+    "Popular prompt lanes:",
+    "",
+    ...(item.popularPromptLanes.length
+      ? item.popularPromptLanes.map((lane) => `- ${lane.laneId}: ${lane.title} (${lane.templates} templates, ${lane.queries} queries)`)
+      : ["- none"]),
     "",
     "Source replacement decisions:",
     "",

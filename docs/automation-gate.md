@@ -1,6 +1,6 @@
 # Automation Gate
 
-Generated at: 2026-06-07T18:22:15.431Z
+Generated at: 2026-06-07T18:30:55.113Z
 
 Overall: PASS
 
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=169, unsafeClaims=0, watchMentions=2995 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=169, unsafeClaims=0, watchMentions=2997 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, broadFirst=8, candidates=22 |
@@ -81,8 +81,8 @@ Overall: PASS
 | broad first coverage launch pack preserves human review boundaries | PASS | safe=8, commands=8, sources=8, checks=8 |
 | broad first coverage readiness matrix is read-only and covers launch pack | PASS | items=8, unique=8, blocking=0, unsafe=0 |
 | broad first coverage readiness matrix has review evidence and command boundaries | PASS | commands=8, preflight=8, source=8, links=8 |
-| human approval execution queue is read-only and covers approval wave | PASS | items=8, immediate=3, backlog=5, projected=18 |
-| human approval execution queue stays human-gated and excludes publish confirm | PASS | ready=8, sourceDecisions=7, seoWarnings=2, publishConfirm=0 |
+| human approval execution queue is read-only and covers approval wave | PASS | items=8, immediate=3, backlog=5, promptLanes=5, projected=18 |
+| human approval execution queue stays human-gated and excludes publish confirm | PASS | ready=8, sourceDecisions=7, seoWarnings=2, promptLanes=5, publishConfirm=0 |
 | review optimization brief is read-only and covers ready action-board tasks | PASS | briefs=16, ready=16, unsafeCommands=0 |
 | review optimization brief has actionable copydesk guidance | PASS | withAction=16, missingPublicLinkItems=15, exactQueryWeak=4 |
 | search snippet readiness audit is read-only and covers public plus expansion items | PASS | public=15, expansion=19, scoped=34 |

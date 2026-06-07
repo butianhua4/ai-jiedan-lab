@@ -1401,6 +1401,7 @@ async function main() {
       blockers?: unknown[];
       commandBoundary?: { markReviewAfterHumanApproval?: string; publishConfirm?: string; publishDryRunAfterReview?: string };
       humanChecklist?: unknown[];
+      popularPromptLanes?: unknown[];
       readyForHumanApproval?: boolean;
       unsafeReasons?: unknown[];
     }>;
@@ -1420,6 +1421,7 @@ async function main() {
       itemsReadyForHumanApproval: number;
       itemsWithFailedSourceDecision: number;
       itemsWithMassSearchTheme: number;
+      itemsWithPopularPromptLane: number;
       itemsWithSeoWarnings: number;
       itemsWithSourceReplacementDecisions: number;
       publishConfirmCommandsIncluded: number;
@@ -2630,9 +2632,10 @@ async function main() {
         humanApprovalQueue.summary.immediateApprovalReadyItems === waveApprovalPacket.summary.readyForHumanReview &&
         humanApprovalQueue.summary.backlogItems > 0 &&
         humanApprovalQueue.summary.items === humanApprovalQueue.summary.immediateApprovalItems + humanApprovalQueue.summary.backlogItems &&
+        humanApprovalQueue.summary.itemsWithPopularPromptLane >= humanApprovalQueue.summary.immediateApprovalItems &&
         humanApprovalQueue.publishingBoundary.currentPublicPublished === wavePublishSimulation.summary.publicPublishedBeforeWave &&
         humanApprovalQueue.publishingBoundary.projectedPublicPublishedAfterImmediateHumanApproval === wavePublishSimulation.summary.projectedPublicPublishedAfterWave,
-      detail: `items=${humanApprovalQueue.summary.items}, immediate=${humanApprovalQueue.summary.immediateApprovalItems}, backlog=${humanApprovalQueue.summary.backlogItems}, projected=${humanApprovalQueue.publishingBoundary.projectedPublicPublishedAfterImmediateHumanApproval}`,
+      detail: `items=${humanApprovalQueue.summary.items}, immediate=${humanApprovalQueue.summary.immediateApprovalItems}, backlog=${humanApprovalQueue.summary.backlogItems}, promptLanes=${humanApprovalQueue.summary.itemsWithPopularPromptLane}, projected=${humanApprovalQueue.publishingBoundary.projectedPublicPublishedAfterImmediateHumanApproval}`,
     },
     {
       name: "human approval execution queue stays human-gated and excludes publish confirm",
@@ -2651,6 +2654,7 @@ async function main() {
               (item.blockers?.length || 0) === 0 &&
               (item.unsafeReasons?.length || 0) === 0 &&
               (item.humanChecklist?.length || 0) >= 6 &&
+              (item.popularPromptLanes?.length || 0) <= popularAiPromptPlaybook.summary.items &&
               item.articleState?.status === "draft" &&
               item.articleState.noindex === true &&
               item.articleState.humanReviewRequired === true &&
@@ -2661,7 +2665,7 @@ async function main() {
               item.commandBoundary?.publishConfirm === "not-included",
           ),
         ),
-      detail: `ready=${humanApprovalQueue.summary.itemsReadyForHumanApproval}, sourceDecisions=${humanApprovalQueue.summary.itemsWithSourceReplacementDecisions}, seoWarnings=${humanApprovalQueue.summary.itemsWithSeoWarnings}, publishConfirm=${humanApprovalQueue.summary.publishConfirmCommandsIncluded}`,
+      detail: `ready=${humanApprovalQueue.summary.itemsReadyForHumanApproval}, sourceDecisions=${humanApprovalQueue.summary.itemsWithSourceReplacementDecisions}, seoWarnings=${humanApprovalQueue.summary.itemsWithSeoWarnings}, promptLanes=${humanApprovalQueue.summary.itemsWithPopularPromptLane}, publishConfirm=${humanApprovalQueue.summary.publishConfirmCommandsIncluded}`,
     },
     {
       name: "review optimization brief is read-only and covers ready action-board tasks",

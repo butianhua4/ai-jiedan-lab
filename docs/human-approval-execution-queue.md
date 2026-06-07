@@ -1,6 +1,6 @@
 # Human Approval Execution Queue
 
-Generated at: 2026-06-07T18:05:18.080Z
+Generated at: 2026-06-07T18:30:51.534Z
 
 This queue is read-only. It consolidates the next manual approval actions that can increase public article count, while stopping before article edits, mark-review execution, and publish confirmation.
 
@@ -28,6 +28,7 @@ This queue is read-only. It consolidates the next manual approval actions that c
 - itemsReadyForHumanApproval: 8
 - itemsWithFailedSourceDecision: 1
 - itemsWithMassSearchTheme: 6
+- itemsWithPopularPromptLane: 5
 - itemsWithSeoWarnings: 2
 - itemsWithSourceReplacementDecisions: 7
 - publishConfirmCommandsIncluded: 0
@@ -36,17 +37,19 @@ This queue is read-only. It consolidates the next manual approval actions that c
 
 ## Source Evidence
 
-- firstCoverageGeneratedAt: "2026-06-07T18:05:17.536Z"
+- firstCoverageGeneratedAt: "2026-06-07T18:30:51.010Z"
 - firstCoverageSummary: {"blockingItems":0,"commandBoundaries":8,"firstCoverageItems":8,"freshnessReadyItems":8,"integrityReadyItems":8,"itemsWithPublicLinkPath":8,"launchPackItems":8,"preflightReadyItems":8,"queryReadyItems":8,"schemaReadyItems":8,"snippetReadyItems":8,"sourceReadyItems":8,"trafficDataAvailable":false,"uniqueFiles":8,"unsafeItems":0,"warningItems":8,"zeroPublicClusters":8}
-- massAiSearchMatrixGeneratedAt: "2026-06-07T18:04:49.860Z"
+- massAiSearchMatrixGeneratedAt: "2026-06-07T18:30:17.644Z"
 - massAiSearchMatrixSummary: {"commandBoundaries":10,"deploymentBridgedThemes":6,"humanGatedItems":8,"items":8,"itemsReadyForHumanReviewPrep":8,"itemsWithCandidateFiles":8,"itemsWithHumanReviewActions":8,"itemsWithSearchSeeds":8,"itemsWithSourceTargets":8,"promptBlueprintSamples":10,"promptBridgedThemes":2,"sourceBroadThemes":10,"sourceTopThemes":8,"themesWithoutPublicCoverage":8,"trafficDataAvailable":false,"uniqueCandidateFiles":45,"unsafeItems":0,"waves":3}
-- seoWarningGeneratedAt: "2026-06-07T18:04:38.650Z"
+- popularAiPromptPlaybookGeneratedAt: "2026-06-07T18:30:20.341Z"
+- popularAiPromptPlaybookSummary: {"agentDeploymentLanes":3,"broadWorkPromptLanes":3,"commandBoundaries":10,"deploymentBridgeItems":6,"humanGatedItems":10,"items":10,"itemsReadyForHumanReviewPrep":10,"itemsWithCandidateFiles":10,"itemsWithOfficialSources":10,"memoryLanes":1,"officialSources":12,"promptModuleBridgeItems":7,"promptTemplates":50,"publishConfirmCommandsIncluded":0,"searchQueries":127,"sourceTargets":22,"trafficDataAvailable":false,"uniqueCandidateFiles":21,"unsafeItems":0}
+- seoWarningGeneratedAt: "2026-06-07T18:30:06.186Z"
 - seoWarningSummary: {"blockingItems":0,"draftItems":8,"humanGatedItems":16,"items":16,"itemsWithHumanChecklist":16,"itemsWithManualActions":16,"publicItems":8,"recommendedItems":1,"schemaWarningItems":7,"snippetWarningItems":13,"trafficDataAvailable":false,"unsafeItems":0,"warningItems":16,"waveItems":1}
-- sourceReplacementGeneratedAt: "2026-06-07T18:05:03.225Z"
+- sourceReplacementGeneratedAt: "2026-06-07T18:30:36.711Z"
 - sourceReplacementSummary: {"affectedFiles":22,"failedDecisionItems":1,"humanGatedItems":113,"items":113,"itemsWithDecisionOptions":113,"itemsWithManualChecklist":113,"itemsWithRecommendedCandidate":1,"officialRecommendedCandidates":1,"redirectedDecisionItems":112,"replacementCandidateOptions":8,"sourceRemediationItems":19,"sourceRemediationUnsafeItems":0,"unsafeItems":0}
-- waveApprovalGeneratedAt: "2026-06-07T18:04:44.849Z"
+- waveApprovalGeneratedAt: "2026-06-07T18:30:12.463Z"
 - waveApprovalSummary: {"items":3,"readyForHumanReview":3,"unsafeItems":0,"wave":1}
-- wavePublishSimulationGeneratedAt: "2026-06-07T18:05:05.316Z"
+- wavePublishSimulationGeneratedAt: "2026-06-07T18:30:38.767Z"
 - wavePublishSimulationSummary: {"currentlyPublishable":0,"items":3,"projectedPublicPublishedAfterWave":18,"projectedPublishableAfterHumanApproval":3,"publicPublishedBeforeWave":15,"readyForHumanApproval":3,"unsafeItems":0,"wave":1}
 - trafficNote: "No measured traffic, rankings, impressions, clicks, or revenue data is available or claimed."
 
@@ -56,16 +59,16 @@ This queue is read-only. It consolidates the next manual approval actions that c
 
 ## Queue
 
-| Stage | Ready | Priority | SEO | Source decisions | Mass themes | Status | Title | File |
-| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
-| draft-needs-human-approval | true | 777 | 1 | 6 | 1 | draft | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| draft-needs-human-approval | true | 773 | 0 | 6 | 1 | draft | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| draft-needs-human-approval | true | 769 | 0 | 6 | 1 | draft | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| first-coverage-backlog | true | 70 | 0 | 6 | 0 | draft | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
-| first-coverage-backlog | true | 68 | 1 | 10 | 1 | draft | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
-| first-coverage-backlog | true | 64 | 0 | 2 | 2 | draft | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
-| first-coverage-backlog | true | 64 | 0 | 0 | 3 | draft | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
-| first-coverage-backlog | true | 60 | 0 | 2 | 0 | draft | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+| Stage | Ready | Priority | SEO | Source decisions | Mass themes | Prompt lanes | Status | Title | File |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- | --- |
+| draft-needs-human-approval | true | 777 | 1 | 6 | 1 | 5 | draft | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| draft-needs-human-approval | true | 773 | 0 | 6 | 1 | 4 | draft | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| draft-needs-human-approval | true | 769 | 0 | 6 | 1 | 6 | draft | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| first-coverage-backlog | true | 70 | 0 | 6 | 0 | 0 | draft | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| first-coverage-backlog | true | 68 | 1 | 10 | 1 | 0 | draft | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| first-coverage-backlog | true | 64 | 0 | 2 | 2 | 4 | draft | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
+| first-coverage-backlog | true | 64 | 0 | 0 | 3 | 4 | draft | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
+| first-coverage-backlog | true | 60 | 0 | 2 | 0 | 0 | draft | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
 
 ## Command Boundaries
 
@@ -93,6 +96,14 @@ This queue is read-only. It consolidates the next manual approval actions that c
 Mass search themes:
 
 - Wave 1: prompt-library - Cross-industry AI prompt templates
+
+Popular prompt lanes:
+
+- chatgpt-prompt-daquan: ChatGPT 提示词大全和万能公式 (5 templates, 18 queries)
+- ecommerce-customer-service-prompts: 电商客服、售后和直播卖货 AI 提示词 (5 templates, 18 queries)
+- sales-proposal-prompts: 销售话术、报价和方案书 AI 提示词 (5 templates, 18 queries)
+- hr-resume-recruiting-prompts: 简历优化、招聘和 HR AI 提示词 (5 templates, 18 queries)
+- agent-memory-knowledge-base-prompts: Agent 记忆、知识库和 RAG 提示词 (5 templates, 18 queries)
 
 Source replacement decisions:
 
@@ -149,6 +160,13 @@ Mass search themes:
 
 - Wave 1: agent-deployment - Agent deployment, tool calling, and production workflows
 
+Popular prompt lanes:
+
+- excel-data-analysis-prompts: Excel 和数据分析 AI 提示词 (5 templates, 18 queries)
+- ai-agent-deploy-prompts: AI Agent 部署、工具调用和上线排错提示词 (5 templates, 18 queries)
+- llm-deployment-troubleshooting-prompts: 大模型部署、本地模型和 API 排错提示词 (5 templates, 18 queries)
+- agent-memory-knowledge-base-prompts: Agent 记忆、知识库和 RAG 提示词 (5 templates, 18 queries)
+
 Source replacement decisions:
 
 - redirected-url: https://ai-sdk.dev/docs -> review manually
@@ -203,6 +221,15 @@ Mass search themes:
 
 - Wave 1: prompt-library - Cross-industry AI prompt templates
 
+Popular prompt lanes:
+
+- chatgpt-prompt-daquan: ChatGPT 提示词大全和万能公式 (5 templates, 18 queries)
+- office-copilot-prompts: AI 办公提示词：Word、Excel、PPT、邮件和会议 (5 templates, 14 queries)
+- ecommerce-customer-service-prompts: 电商客服、售后和直播卖货 AI 提示词 (5 templates, 18 queries)
+- sales-proposal-prompts: 销售话术、报价和方案书 AI 提示词 (5 templates, 18 queries)
+- hr-resume-recruiting-prompts: 简历优化、招聘和 HR AI 提示词 (5 templates, 18 queries)
+- agent-memory-knowledge-base-prompts: Agent 记忆、知识库和 RAG 提示词 (5 templates, 18 queries)
+
 Source replacement decisions:
 
 - failed-url: https://ai-prompts-pro.com/blog/ai-prompt-templates-business -> Microsoft Copilot Prompt Gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/
@@ -255,6 +282,10 @@ Mass search themes:
 
 - none
 
+Popular prompt lanes:
+
+- none
+
 Source replacement decisions:
 
 - redirected-url: https://ai-sdk.dev/docs -> review manually
@@ -294,6 +325,10 @@ Human checklist:
 Mass search themes:
 
 - Wave 3: prompt-library - LLM evaluation, observability, and security
+
+Popular prompt lanes:
+
+- none
 
 Source replacement decisions:
 
@@ -340,6 +375,13 @@ Mass search themes:
 - Wave 1: agent-deployment - Agent deployment, tool calling, and production workflows
 - Wave 3: prompt-library - LLM evaluation, observability, and security
 
+Popular prompt lanes:
+
+- excel-data-analysis-prompts: Excel 和数据分析 AI 提示词 (5 templates, 18 queries)
+- ai-agent-deploy-prompts: AI Agent 部署、工具调用和上线排错提示词 (5 templates, 18 queries)
+- llm-deployment-troubleshooting-prompts: 大模型部署、本地模型和 API 排错提示词 (5 templates, 18 queries)
+- agent-memory-knowledge-base-prompts: Agent 记忆、知识库和 RAG 提示词 (5 templates, 18 queries)
+
 Source replacement decisions:
 
 - redirected-url: https://docs.dify.ai/ -> review manually
@@ -378,6 +420,13 @@ Mass search themes:
 - Wave 1: agent-memory-rag - RAG, knowledge base, and agent memory
 - Wave 2: agent-deployment - Dify, n8n, Flowise, and no-code AI automation
 
+Popular prompt lanes:
+
+- excel-data-analysis-prompts: Excel 和数据分析 AI 提示词 (5 templates, 18 queries)
+- ai-agent-deploy-prompts: AI Agent 部署、工具调用和上线排错提示词 (5 templates, 18 queries)
+- llm-deployment-troubleshooting-prompts: 大模型部署、本地模型和 API 排错提示词 (5 templates, 18 queries)
+- agent-memory-knowledge-base-prompts: Agent 记忆、知识库和 RAG 提示词 (5 templates, 18 queries)
+
 Source replacement decisions:
 
 - none
@@ -410,6 +459,10 @@ Human checklist:
 - Article state: status=draft, noindex=true, humanReviewRequired=true, qualityScore=100
 
 Mass search themes:
+
+- none
+
+Popular prompt lanes:
 
 - none
 
