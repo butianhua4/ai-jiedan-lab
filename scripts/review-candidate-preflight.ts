@@ -12,6 +12,7 @@ type PreflightItem = {
   file: string;
   issues: string[];
   markReviewDryRunCommand: string;
+  contentIntegrityWarnings: string[];
   ok: boolean;
   qualityScore: number;
   status: string;
@@ -19,10 +20,19 @@ type PreflightItem = {
   wordCountChinese: number;
 };
 
+type ContentIntegrity = {
+  warningItems?: Array<{ file: string; warnings?: string[] }>;
+};
+
 async function main() {
   const pack = readJson<{ items: PackItem[] }>("content/automation/publish-readiness-pack.json");
-  const items = pack.items.map(toPreflightItem);
+  const contentIntegrity = readJson<ContentIntegrity>("content/automation/content-integrity-audit.json");
+  const warningsByFile = new Map(
+    (contentIntegrity.warningItems || []).map((item) => [normalizeFile(item.file), item.warnings || []]),
+  );
+  const items = pack.items.map((item) => toPreflightItem(item, warningsByFile));
   const failed = items.filter((item) => !item.ok);
+  const warningItems = items.filter((item) => item.contentIntegrityWarnings.length > 0);
   const payload = {
     generatedAt: new Date().toISOString(),
     guardrails: {
@@ -33,7 +43,9 @@ async function main() {
     summary: {
       checked: items.length,
       failed: failed.length,
+      mojibakeWarningItems: warningItems.filter((item) => item.contentIntegrityWarnings.includes("possible mojibake or replacement character")).length,
       passed: items.length - failed.length,
+      warningItems: warningItems.length,
     },
     failed,
     items,
@@ -49,10 +61,11 @@ async function main() {
   if (failed.length) process.exitCode = 1;
 }
 
-function toPreflightItem(packItem: PackItem): PreflightItem {
+function toPreflightItem(packItem: PackItem, warningsByFile: Map<string, string[]>): PreflightItem {
   const article = readArticle(packItem.file);
   const result = checkFile(article.file);
   const file = rel(article.file);
+  const contentIntegrityWarnings = warningsByFile.get(file) || [];
   const issues = [
     article.data.status === "draft" ? "" : `status is ${article.data.status}, expected draft`,
     article.data.noindex === true ? "" : "draft must be noindex=true",
@@ -65,6 +78,7 @@ function toPreflightItem(packItem: PackItem): PreflightItem {
     file,
     issues,
     markReviewDryRunCommand: `npm run mark:review -- --file=${file}`,
+    contentIntegrityWarnings,
     ok: issues.length === 0,
     qualityScore: result.qualityScore,
     status: String(article.data.status || "unknown"),
@@ -77,11 +91,15 @@ function readJson<T>(relativePath: string): T {
   return JSON.parse(fs.readFileSync(path.join(process.cwd(), relativePath), "utf8").replace(/^\uFEFF/, "")) as T;
 }
 
+function normalizeFile(file: string) {
+  return file.replace(/\\/g, "/");
+}
+
 function toMarkdown(payload: {
   generatedAt: string;
   guardrails: { autoMarkReview: boolean; note: string };
   ok: boolean;
-  summary: { checked: number; failed: number; passed: number };
+  summary: { checked: number; failed: number; mojibakeWarningItems: number; passed: number; warningItems: number };
   items: PreflightItem[];
 }) {
   const lines = [
@@ -101,12 +119,14 @@ function toMarkdown(payload: {
     `- Checked: ${payload.summary.checked}`,
     `- Passed: ${payload.summary.passed}`,
     `- Failed: ${payload.summary.failed}`,
+    `- Warning items: ${payload.summary.warningItems}`,
+    `- Mojibake warning items: ${payload.summary.mojibakeWarningItems}`,
     "",
     "## Items",
     "",
-    "| Status | Score | Chinese chars | Title | File | Issues |",
-    "| --- | --- | --- | --- | --- | --- |",
-    ...payload.items.map((item) => `| ${item.ok ? "PASS" : "FAIL"} | ${item.qualityScore} | ${item.wordCountChinese} | ${item.title} | ${item.file} | ${item.issues.join("; ")} |`),
+    "| Status | Score | Chinese chars | Title | File | Issues | Warnings |",
+    "| --- | --- | --- | --- | --- | --- | --- |",
+    ...payload.items.map((item) => `| ${item.ok ? "PASS" : "FAIL"} | ${item.qualityScore} | ${item.wordCountChinese} | ${item.title} | ${item.file} | ${item.issues.join("; ")} | ${item.contentIntegrityWarnings.join("; ")} |`),
     "",
     "## Dry-run Commands",
     "",

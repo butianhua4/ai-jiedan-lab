@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-07T21:18:42.280Z
+Generated at: 2026-06-07T21:29:32.689Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 180
-- Passed: 180
+- Checks: 181
+- Passed: 181
 - Failed: 0
 
 ## Checks
@@ -20,6 +20,7 @@ Overall: PASS
 | publish pack includes source verification tasks | PASS | 3 item(s) covered |
 | publish pack includes human decision and risk context | PASS | 3 item(s) covered |
 | recommended review candidates pass preflight | PASS | failed=0 |
+| review preflight surfaces content integrity warnings | PASS | preflightWarnings=0, preflightMojibake=0, recommendedWarningFiles=none |
 | recommended review clusters are diverse | PASS | Agent and memory, Industry AI prompts, RAG and knowledge base |
 | SEO safety check passed | PASS | {"leakedDraftOrReview":[],"nonPublishedWithNoindexFalse":[],"publishedButNoindexed":[]} |
 | searchability check passed | PASS | score=100, failed=0 |

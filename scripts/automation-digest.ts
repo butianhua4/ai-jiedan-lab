@@ -94,6 +94,7 @@ type ReviewCandidate = {
 };
 
 type PreflightItem = {
+  contentIntegrityWarnings: string[];
   file: string;
   issues: string[];
   ok: boolean;
@@ -908,6 +909,7 @@ type ContentIntegrity = {
     waveItems: number;
     warningItems: number;
   };
+  warningItems: Array<{ file: string; warnings: string[] }>;
 };
 
 type InternalLinks = {
@@ -2271,9 +2273,11 @@ const reports = {
       topItems?: unknown[];
     };
   }>("content/automation/manual-review-workbench.json"),
-  preflight: readJson<{ ok: boolean; summary: { checked: number; failed: number; passed: number }; items: PreflightItem[] }>(
-    "content/automation/review-preflight.json",
-  ),
+  preflight: readJson<{
+    ok: boolean;
+    summary: { checked: number; failed: number; mojibakeWarningItems: number; passed: number; warningItems: number };
+    items: PreflightItem[];
+  }>("content/automation/review-preflight.json"),
   project: readJson<{ articles: { publicPublished: number; publishableNow: unknown[]; statusCounts: Record<string, number> } }>(
     "content/automation/project-status.json",
   ),
@@ -3093,6 +3097,8 @@ const payload = {
     checked: reports.preflight.data?.summary.checked ?? null,
     failed: reports.preflight.data?.summary.failed ?? null,
     items: reports.preflight.data?.items ?? [],
+    mojibakeWarningItems: reports.preflight.data?.summary.mojibakeWarningItems ?? null,
+    warningItems: reports.preflight.data?.summary.warningItems ?? null,
   },
   seoOpportunities: {
     reviewReadyDrafts: reports.seoOpportunity.data?.totals.reviewReadyDrafts ?? null,
@@ -5014,10 +5020,15 @@ function toMarkdown(data: typeof payload) {
     "",
     `- Checked: ${data.preflight.checked}`,
     `- Failed: ${data.preflight.failed}`,
+    `- Warning items: ${data.preflight.warningItems}`,
+    `- Mojibake warning items: ${data.preflight.mojibakeWarningItems}`,
     "",
-    "| Status | Score | Title | Issues |",
-    "| --- | --- | --- | --- |",
-    ...data.preflight.items.map((item) => `| ${item.ok ? "PASS" : "FAIL"} | ${item.qualityScore} | ${item.title} | ${item.issues.join("; ")} |`),
+    "| Status | Score | Title | File | Issues | Warnings |",
+    "| --- | --- | --- | --- | --- | --- |",
+    ...data.preflight.items.map(
+      (item) =>
+        `| ${item.ok ? "PASS" : "FAIL"} | ${item.qualityScore} | ${item.title} | ${item.file} | ${item.issues.join("; ")} | ${item.contentIntegrityWarnings.join("; ")} |`,
+    ),
     "",
     "## SEO Opportunities",
     "",

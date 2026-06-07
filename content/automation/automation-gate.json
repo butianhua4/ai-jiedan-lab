@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T21:18:42.280Z",
+  "generatedAt": "2026-06-07T21:29:32.689Z",
   "ok": true,
   "summary": {
-    "checks": 180,
+    "checks": 181,
     "failed": 0,
-    "passed": 180
+    "passed": 181
   },
   "failed": [],
   "checks": [
@@ -36,6 +36,11 @@
       "name": "recommended review candidates pass preflight",
       "ok": true,
       "detail": "failed=0"
+    },
+    {
+      "name": "review preflight surfaces content integrity warnings",
+      "ok": true,
+      "detail": "preflightWarnings=0, preflightMojibake=0, recommendedWarningFiles=none"
     },
     {
       "name": "recommended review clusters are diverse",

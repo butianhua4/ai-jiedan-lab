@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T18:04:31.003Z",
+  "generatedAt": "2026-06-07T21:28:35.735Z",
   "guardrails": {
     "autoMarkReview": false,
     "note": "This preflight only checks whether recommended drafts are ready for human review. It does not change article status."
@@ -8,7 +8,9 @@
   "summary": {
     "checked": 3,
     "failed": 0,
-    "passed": 3
+    "mojibakeWarningItems": 0,
+    "passed": 3,
+    "warningItems": 0
   },
   "failed": [],
   "items": [
@@ -16,6 +18,7 @@
       "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
       "issues": [],
       "markReviewDryRunCommand": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "contentIntegrityWarnings": [],
       "ok": true,
       "qualityScore": 100,
       "status": "draft",
@@ -26,6 +29,7 @@
       "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
       "issues": [],
       "markReviewDryRunCommand": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "contentIntegrityWarnings": [],
       "ok": true,
       "qualityScore": 100,
       "status": "draft",
@@ -36,6 +40,7 @@
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "issues": [],
       "markReviewDryRunCommand": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx",
+      "contentIntegrityWarnings": [],
       "ok": true,
       "qualityScore": 100,
       "status": "draft",

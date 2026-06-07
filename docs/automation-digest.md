@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T21:18:42.838Z
+Generated at: 2026-06-07T21:29:33.240Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -1387,12 +1387,14 @@ Public categories:
 
 - Checked: 3
 - Failed: 0
+- Warning items: 0
+- Mojibake warning items: 0
 
-| Status | Score | Title | Issues |
-| --- | --- | --- | --- |
-| PASS | 100 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 |  |
-| PASS | 100 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 |  |
-| PASS | 100 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 |  |
+| Status | Score | Title | File | Issues | Warnings |
+| --- | --- | --- | --- | --- | --- |
+| PASS | 100 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |  |  |
+| PASS | 100 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |  |  |
+| PASS | 100 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |  |  |
 
 ## SEO Opportunities
 

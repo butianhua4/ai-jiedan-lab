@@ -34,7 +34,11 @@ async function main() {
     "content/automation/seo-check.json",
   );
   const searchability = readJson<{ failedItems: unknown[]; score: number; summary?: { checks: number } }>("content/automation/searchability-check.json");
-  const reviewPreflight = readJson<{ ok: boolean; summary: { failed: number } }>("content/automation/review-preflight.json");
+  const reviewPreflight = readJson<{
+    items?: Array<{ contentIntegrityWarnings?: string[]; file: string }>;
+    ok: boolean;
+    summary: { failed: number; mojibakeWarningItems: number; warningItems: number };
+  }>("content/automation/review-preflight.json");
   const sanitize = readJson<{ changedFiles: number; totalReplacements: number }>("content/automation/draft-guardrail-sanitize.json");
   const workflowAudit = readJson<{
     guardrails: { autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
@@ -923,6 +927,7 @@ async function main() {
       waveItems: number;
       warningItems: number;
     };
+    warningItems?: Array<{ file: string; warnings?: string[] }>;
   }>("content/automation/content-integrity-audit.json");
   const internalLinks = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
@@ -2019,6 +2024,8 @@ async function main() {
     .map((item) => item.file);
   const clusters = reviewQueue.recommendedToday.map((item) => item.cluster);
   const repeatedClusters = clusters.filter((cluster, index) => clusters.indexOf(cluster) !== index);
+  const contentIntegrityWarningFiles = new Set((contentIntegrity.warningItems || []).map((item) => item.file));
+  const recommendedWarningFiles = reviewFiles.filter((file) => contentIntegrityWarningFiles.has(file));
   const nonPublishedIndexed = articles
     .filter((article) => article.data.status !== "published" && article.data.noindex === false)
     .map((article) => rel(article.file));
@@ -2060,6 +2067,20 @@ async function main() {
       name: "recommended review candidates pass preflight",
       ok: reviewPreflight.ok === true && reviewPreflight.summary.failed === 0,
       detail: `failed=${reviewPreflight.summary.failed}`,
+    },
+    {
+      name: "review preflight surfaces content integrity warnings",
+      ok:
+        reviewPreflight.summary.warningItems === recommendedWarningFiles.length &&
+        reviewPreflight.summary.mojibakeWarningItems === recommendedWarningFiles.length &&
+        Boolean(
+          reviewPreflight.items?.every(
+            (item) =>
+              !contentIntegrityWarningFiles.has(item.file) ||
+              item.contentIntegrityWarnings?.includes("possible mojibake or replacement character"),
+          ),
+        ),
+      detail: `preflightWarnings=${reviewPreflight.summary.warningItems}, preflightMojibake=${reviewPreflight.summary.mojibakeWarningItems}, recommendedWarningFiles=${recommendedWarningFiles.join(", ") || "none"}`,
     },
     {
       name: "recommended review clusters are diverse",
