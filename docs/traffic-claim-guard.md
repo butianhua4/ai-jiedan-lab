@@ -1,5 +1,5 @@
 # Traffic Claim Guard
-Generated at: 2026-06-07T15:06:19.654Z
+Generated at: 2026-06-07T15:13:25.733Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
@@ -20,6 +20,10 @@ None.
 | README.md | 250 | 4. 每次只发布 1-3 篇人工审核文章，观察收录和点击。 |
 | README.md | 276 | - Google Search Console 提交清单：`docs/search-console-setup.md` |
 | app/llms.txt/route.ts | 47 | "- The site does not claim real traffic, impressions, income guarantees, or automatic publishing.", |
+| docs/NEXT_ACTIONS.md | 24 | ## 4. 收款和流量收益 |
+| docs/NEXT_ACTIONS.md | 29 | - 稳定流量后再接联盟链接和广告。 |
+| docs/NEXT_ACTIONS.md | 46 | - 有 5 篇以上人工审核公开文章：注册 Google Search Console。 |
+| docs/NEXT_ACTIONS.md | 47 | - 有稳定访问：开启 Vercel Web Analytics 或 Google Analytics。 |
 | docs/ai-deployment-coverage.md | 11 | - Note: This coverage matrix is read-only. It organizes deployment, Agent, RAG, and model infrastructure drafts for manual review and does not claim measured traffic. |
 | docs/ai-deployment-review-pack.md | 17 | - Traffic note: Search queries are broad intent seeds, not measured traffic, rankings, clicks, impressions, or income. |
 | docs/ai-deployment-review-pack.md | 113 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
@@ -44,13 +48,13 @@ None.
 | docs/automation-digest.md | 970 | - Measured traffic sources: none |
 | docs/automation-digest.md | 971 | - Search Console verification evidence: false |
 | docs/automation-digest.md | 974 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 975 | - Traffic claim files scanned: 153 |
-| docs/automation-digest.md | 976 | - Traffic claim watch mentions: 1876 |
+| docs/automation-digest.md | 975 | - Traffic claim files scanned: 155 |
+| docs/automation-digest.md | 976 | - Traffic claim watch mentions: 1878 |
 | docs/automation-digest.md | 989 | - Traffic data available: false |
 | docs/automation-digest.md | 1064 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
 | docs/automation-gate.md | 31 | \| traffic evidence audit passed and is read-only \| PASS \| failedChecks=0, measuredTrafficSources=0 \| |
 | docs/automation-gate.md | 32 | \| traffic is not claimed without measured metrics \| PASS \| trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 \| |
-| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=153, unsafeClaims=0, watchMentions=1876 \| |
+| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=155, unsafeClaims=0, watchMentions=1878 \| |
 | docs/autopilot-approval-packet.md | 18 | - Traffic data available: false |
 | docs/autopilot-approval-packet.md | 19 | - Can claim traffic: false |
 | docs/autopilot-approval-packet.md | 102 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
@@ -90,10 +94,6 @@ None.
 | docs/autopilot-broad-freshness-triage.md | 461 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
 | docs/autopilot-broad-freshness-triage.md | 531 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
 | docs/autopilot-broad-freshness-triage.md | 603 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
-| docs/autopilot-broad-freshness-triage.md | 661 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
-| docs/autopilot-broad-freshness-triage.md | 717 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
-| docs/autopilot-broad-freshness-triage.md | 767 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
-| docs/autopilot-broad-freshness-triage.md | 815 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
 ## Next Actions
 - Keep saying that live/search surfaces are healthy, not that traffic exists.
 - Only report traffic after an audited source provides clicks, impressions, visits, or pageviews.

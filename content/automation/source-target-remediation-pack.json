@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T15:08:38.759Z",
+  "generatedAt": "2026-06-07T15:13:02.747Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "sourceHealthGeneratedAt": "2026-06-07T15:06:59.726Z",
+    "sourceHealthGeneratedAt": "2026-06-07T15:13:02.252Z",
     "sourceHealthGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -1651,13 +1651,11 @@
         "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
         "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核"
       ],
-      "error": "AbortError",
       "finalUrl": "https://docs.dify.ai/en/use-dify/getting-started/introduction",
       "humanChecklist": [
         "Review URL: https://docs.dify.ai.",
         "Review final URL: https://docs.dify.ai/en/use-dify/getting-started/introduction.",
         "HTTP status observed by automation: 200.",
-        "Automation error observed: AbortError.",
         "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
         "If the final URL is the canonical destination, update the source target during human review.",
         "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
@@ -2134,10 +2132,10 @@
         "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
         "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型"
       ],
-      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=tr",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs",
       "humanChecklist": [
         "Review URL: https://ai.google.dev/docs.",
-        "Review final URL: https://ai.google.dev/gemini-api/docs?hl=tr.",
+        "Review final URL: https://ai.google.dev/gemini-api/docs.",
         "HTTP status observed by automation: 200.",
         "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
         "If the final URL is the canonical destination, update the source target during human review.",

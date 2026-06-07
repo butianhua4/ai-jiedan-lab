@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T15:06:59.726Z",
+  "generatedAt": "2026-06-07T15:13:02.252Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -268,7 +268,7 @@
       "url": "https://ai-sdk.dev/docs"
     },
     {
-      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=tr",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs",
       "ok": true,
       "references": [
         {
@@ -412,7 +412,6 @@
       "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
     },
     {
-      "error": "AbortError",
       "finalUrl": "https://docs.dify.ai/en/use-dify/getting-started/introduction",
       "ok": true,
       "references": [
@@ -2394,7 +2393,7 @@
       "url": "https://ai-sdk.dev/docs"
     },
     {
-      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=tr",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs",
       "ok": true,
       "references": [
         {
@@ -2452,7 +2451,6 @@
       "url": "https://arxiv.org/abs/2603.10700"
     },
     {
-      "error": "AbortError",
       "finalUrl": "https://arxiv.org/abs/2604.20598",
       "ok": true,
       "references": [
@@ -2475,7 +2473,6 @@
       "url": "https://arxiv.org/abs/2604.20598"
     },
     {
-      "error": "AbortError",
       "finalUrl": "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag",
       "ok": true,
       "references": [
@@ -2606,7 +2603,6 @@
       "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
     },
     {
-      "error": "AbortError",
       "finalUrl": "https://docs.dify.ai/en/use-dify/getting-started/introduction",
       "ok": true,
       "references": [
@@ -2837,7 +2833,6 @@
       "url": "https://docs.n8n.io/"
     },
     {
-      "error": "AbortError",
       "finalUrl": "https://docs.ollama.com/",
       "ok": true,
       "references": [
@@ -4213,7 +4208,7 @@
           "url": "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/"
         }
       ],
-      "status": 200,
+      "status": 403,
       "url": "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/"
     },
     {
@@ -4235,7 +4230,7 @@
           "url": "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/"
         }
       ],
-      "status": 200,
+      "status": 403,
       "url": "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/"
     },
     {

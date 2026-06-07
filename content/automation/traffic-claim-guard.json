@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T15:06:19.654Z",
+  "generatedAt": "2026-06-07T15:13:25.733Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
@@ -47,6 +47,30 @@
       "line": 47,
       "reason": "traffic-related mention",
       "text": "\"- The site does not claim real traffic, impressions, income guarantees, or automatic publishing.\","
+    },
+    {
+      "file": "docs/NEXT_ACTIONS.md",
+      "line": 24,
+      "reason": "traffic-related mention",
+      "text": "## 4. 收款和流量收益"
+    },
+    {
+      "file": "docs/NEXT_ACTIONS.md",
+      "line": 29,
+      "reason": "traffic-related mention",
+      "text": "- 稳定流量后再接联盟链接和广告。"
+    },
+    {
+      "file": "docs/NEXT_ACTIONS.md",
+      "line": 46,
+      "reason": "traffic-related mention",
+      "text": "- 有 5 篇以上人工审核公开文章：注册 Google Search Console。"
+    },
+    {
+      "file": "docs/NEXT_ACTIONS.md",
+      "line": 47,
+      "reason": "traffic-related mention",
+      "text": "- 有稳定访问：开启 Vercel Web Analytics 或 Google Analytics。"
     },
     {
       "file": "docs/ai-deployment-coverage.md",
@@ -196,13 +220,13 @@
       "file": "docs/automation-digest.md",
       "line": 975,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 153"
+      "text": "- Traffic claim files scanned: 155"
     },
     {
       "file": "docs/automation-digest.md",
       "line": 976,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 1876"
+      "text": "- Traffic claim watch mentions: 1878"
     },
     {
       "file": "docs/automation-digest.md",
@@ -232,7 +256,7 @@
       "file": "docs/automation-gate.md",
       "line": 33,
       "reason": "traffic-related mention",
-      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=153, unsafeClaims=0, watchMentions=1876 |"
+      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=155, unsafeClaims=0, watchMentions=1878 |"
     },
     {
       "file": "docs/autopilot-approval-packet.md",
@@ -465,30 +489,6 @@
     {
       "file": "docs/autopilot-broad-freshness-triage.md",
       "line": 603,
-      "reason": "traffic-related mention",
-      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
-    },
-    {
-      "file": "docs/autopilot-broad-freshness-triage.md",
-      "line": 661,
-      "reason": "traffic-related mention",
-      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
-    },
-    {
-      "file": "docs/autopilot-broad-freshness-triage.md",
-      "line": 717,
-      "reason": "traffic-related mention",
-      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
-    },
-    {
-      "file": "docs/autopilot-broad-freshness-triage.md",
-      "line": 767,
-      "reason": "traffic-related mention",
-      "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
-    },
-    {
-      "file": "docs/autopilot-broad-freshness-triage.md",
-      "line": 815,
       "reason": "traffic-related mention",
       "text": "- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence."
     }
