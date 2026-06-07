@@ -789,6 +789,52 @@ type InternalLinks = {
   };
 };
 
+type InternalLinkSprintBoard = {
+  items: Array<{
+    currentInternalLinks: number;
+    file: string;
+    linksToPublicArticles: number;
+    priorityScore: number;
+    publishConfirm: string;
+    readyForInternalLinkSprint: boolean;
+    scopes: string[];
+    sprintWave: number;
+    suggestedLinks: Array<{ title: string; url: string }>;
+    title: string;
+    unsafeReasons: string[];
+  }>;
+  summary: {
+    actionItems: number;
+    broadFirstCoverageItems: number;
+    candidateItems: number;
+    candidateItemsMissingPublicLinkSuggestion: number;
+    candidateItemsWithPublicSuggestions: number;
+    candidatesWithoutCurrentPublicLinks: number;
+    expansionItems: number;
+    items: number;
+    itemsPerWave: number;
+    publicArticles: number;
+    publishConfirmCommandsIncluded: number;
+    readyForInternalLinkSprint: number;
+    recommendedItems: number;
+    suggestedPublicLinks: number;
+    trafficDataAvailable: boolean;
+    unsafeItems: number;
+    waveItems: number;
+    waves: number;
+  };
+  waves: Array<{
+    actionItems: number;
+    files: string[];
+    items: number;
+    readyItems: number;
+    scopes: string[];
+    suggestedPublicLinks: number;
+    unsafeItems: number;
+    wave: number;
+  }>;
+};
+
 type SourceHealth = {
   failedChecks: Array<{ error?: string; finalUrl?: string; ok: boolean; references: unknown[]; status?: number; url: string }>;
   filesWithoutReachableSource: Array<{ file: string; reachableSources: number; sourceTargets: number; title: string }>;
@@ -2107,6 +2153,7 @@ const reports = {
   publicRefreshSprintBoard: readJson<PublicRefreshSprintBoard>("content/automation/public-refresh-sprint-board.json"),
   contentIntegrity: readJson<ContentIntegrity>("content/automation/content-integrity-audit.json"),
   internalLinks: readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json"),
+  internalLinkSprintBoard: readJson<InternalLinkSprintBoard>("content/automation/internal-link-sprint-board.json"),
   sourceHealth: readJson<SourceHealth>("content/automation/source-target-health-audit.json"),
   sourceTargetRemediation: readJson<SourceTargetRemediationPack>("content/automation/source-target-remediation-pack.json"),
   sourceReplacementDecisions: readJson<SourceReplacementDecisionPack>("content/automation/source-replacement-decision-pack.json"),
@@ -2180,6 +2227,22 @@ const payload = {
   },
   contentIntegrity: reports.contentIntegrity.data?.summary ?? null,
   internalLinks: reports.internalLinks.data?.summary ?? null,
+  internalLinkSprintBoard: {
+    actionItems: reports.internalLinkSprintBoard.data?.summary.actionItems ?? null,
+    candidateItems: reports.internalLinkSprintBoard.data?.summary.candidateItems ?? null,
+    candidatesWithoutCurrentPublicLinks: reports.internalLinkSprintBoard.data?.summary.candidatesWithoutCurrentPublicLinks ?? null,
+    items: reports.internalLinkSprintBoard.data?.summary.items ?? null,
+    itemsPerWave: reports.internalLinkSprintBoard.data?.summary.itemsPerWave ?? null,
+    publicArticles: reports.internalLinkSprintBoard.data?.summary.publicArticles ?? null,
+    publishConfirmCommandsIncluded: reports.internalLinkSprintBoard.data?.summary.publishConfirmCommandsIncluded ?? null,
+    readyForInternalLinkSprint: reports.internalLinkSprintBoard.data?.summary.readyForInternalLinkSprint ?? null,
+    suggestedPublicLinks: reports.internalLinkSprintBoard.data?.summary.suggestedPublicLinks ?? null,
+    top: reports.internalLinkSprintBoard.data?.items.slice(0, 12) ?? [],
+    trafficDataAvailable: reports.internalLinkSprintBoard.data?.summary.trafficDataAvailable ?? null,
+    unsafeItems: reports.internalLinkSprintBoard.data?.summary.unsafeItems ?? null,
+    waveItems: reports.internalLinkSprintBoard.data?.summary.waveItems ?? null,
+    waves: reports.internalLinkSprintBoard.data?.waves ?? [],
+  },
   sourceHealth: {
     broadFirstCoverageFiles: reports.sourceHealth.data?.summary.broadFirstCoverageFiles ?? null,
     checkedUrls: reports.sourceHealth.data?.summary.checkedUrls ?? null,
@@ -3226,6 +3289,13 @@ function buildNextActions() {
   if (!reports.internalLinks.data || reports.internalLinks.data.summary.waveItemsMissingPublicLinkSuggestion > 0) {
     return ["Open docs/internal-link-opportunity-audit.md and add or approve internal link suggestions for Wave 1 before publishing."];
   }
+  if (
+    !reports.internalLinkSprintBoard.data ||
+    reports.internalLinkSprintBoard.data.summary.unsafeItems > 0 ||
+    reports.internalLinkSprintBoard.data.summary.publishConfirmCommandsIncluded > 0
+  ) {
+    return ["Open docs/internal-link-sprint-board.md and resolve internal link sprint issues before editing article bodies."];
+  }
   if (!reports.sourceHealth.data || reports.sourceHealth.data.summary.filesWithoutReachableSource > 0 || reports.sourceHealth.data.summary.missingUrlTargets > 0) {
     return ["Open docs/source-target-health-audit.md and replace missing or unreachable official source targets before manual review."];
   }
@@ -3440,6 +3510,7 @@ function buildNextActions() {
     "Use docs/autopilot-review-queue.md as the ordered next-10 manual review assignment queue.",
     "Use docs/autopilot-approval-packet.md as the top-3 packet for human approval.",
     "Use docs/autopilot-search-intent-brief.md to tune top-3 search-intent wording during human review.",
+    "Use docs/internal-link-sprint-board.md to add one contextual public internal link per candidate during manual review.",
     "Use docs/autopilot-internal-link-brief.md to add one contextual public internal link during human review.",
     "Use docs/autopilot-source-verification-brief.md to verify top-3 official sources and fast-changing claims during human review.",
     "Use docs/autopilot-human-review-playbook.md as the merged top-3 checklist before any mark:review command.",
@@ -3511,6 +3582,34 @@ function toMarkdown(data: typeof payload) {
     data.internalLinks
       ? `- Wave items missing suggestions: ${data.internalLinks.waveItemsMissingPublicLinkSuggestion}`
       : "- Wave items missing suggestions: missing",
+    "",
+    "## Internal Link Sprint Board",
+    "",
+    `- Items: ${data.internalLinkSprintBoard.items}`,
+    `- Candidate items: ${data.internalLinkSprintBoard.candidateItems}`,
+    `- Public articles: ${data.internalLinkSprintBoard.publicArticles}`,
+    `- Waves: ${data.internalLinkSprintBoard.waves.length}`,
+    `- Items per wave: ${data.internalLinkSprintBoard.itemsPerWave}`,
+    `- Ready for internal link sprint: ${data.internalLinkSprintBoard.readyForInternalLinkSprint}`,
+    `- Candidates without current public links: ${data.internalLinkSprintBoard.candidatesWithoutCurrentPublicLinks}`,
+    `- Suggested public links: ${data.internalLinkSprintBoard.suggestedPublicLinks}`,
+    `- Action items: ${data.internalLinkSprintBoard.actionItems}`,
+    `- Publish confirm commands included: ${data.internalLinkSprintBoard.publishConfirmCommandsIncluded}`,
+    `- Traffic data available: ${data.internalLinkSprintBoard.trafficDataAvailable}`,
+    `- Unsafe items: ${data.internalLinkSprintBoard.unsafeItems}`,
+    "",
+    "| Wave | Ready | Actions | Suggestions | Scopes | Files |",
+    "| ---: | ---: | ---: | ---: | --- | --- |",
+    ...data.internalLinkSprintBoard.waves.map(
+      (wave) => `| ${wave.wave} | ${wave.readyItems}/${wave.items} | ${wave.actionItems} | ${wave.suggestedPublicLinks} | ${wave.scopes.join(", ")} | ${wave.files.join("<br>")} |`,
+    ),
+    "",
+    "| Wave | Ready | Score | Public links | Suggestions | Scopes | Top target | Title | File |",
+    "| ---: | --- | ---: | ---: | ---: | --- | --- | --- | --- |",
+    ...data.internalLinkSprintBoard.top.map(
+      (item) =>
+        `| ${item.sprintWave} | ${item.readyForInternalLinkSprint} | ${item.priorityScore} | ${item.linksToPublicArticles} | ${item.suggestedLinks.length} | ${item.scopes.join(", ")} | ${item.suggestedLinks[0]?.url || "none"} | ${item.title} | ${item.file} |`,
+    ),
     "",
     "## Source Target Health",
     "",

@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T20:07:15.897Z
+Generated at: 2026-06-07T20:18:29.041Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -30,6 +30,45 @@ This digest is read-only. It summarizes automation reports and does not publish 
 - Wave items: 3
 - Wave items missing suggestions: 0
 
+## Internal Link Sprint Board
+
+- Items: 22
+- Candidate items: 22
+- Public articles: 15
+- Waves: 6
+- Items per wave: 4
+- Ready for internal link sprint: 22
+- Candidates without current public links: 21
+- Suggested public links: 66
+- Action items: 176
+- Publish confirm commands included: 0
+- Traffic data available: false
+- Unsafe items: 0
+
+| Wave | Ready | Actions | Suggestions | Scopes | Files |
+| ---: | ---: | ---: | ---: | --- | --- |
+| 1 | 4/4 | 32 | 12 | broad-first-coverage, expansion, recommended, wave-1 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| 2 | 4/4 | 32 | 12 | broad-first-coverage, expansion | content/blog/n8n-ai-agent-rag-memory-guide.mdx<br>content/blog/agent-tool-permission-safety-guide.mdx<br>content/blog/mcp-server-deployment-security-checklist.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx |
+| 3 | 4/4 | 32 | 12 | expansion | content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 4 | 4/4 | 32 | 12 | expansion | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/customer-service-ai-prompts-guide.mdx<br>content/blog/data-analysis-ai-prompts-guide.mdx |
+| 5 | 4/4 | 32 | 12 | expansion | content/blog/ecommerce-ai-prompts-guide.mdx<br>content/blog/education-ai-prompts-guide.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx<br>content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
+| 6 | 2/2 | 16 | 6 | expansion | content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+
+| Wave | Ready | Score | Public links | Suggestions | Scopes | Top target | Title | File |
+| ---: | --- | ---: | ---: | ---: | --- | --- | --- | --- |
+| 1 | true | 296 | 0 | 3 | broad-first-coverage, expansion, recommended, wave-1 | /blog/codex-vercel-deploy-preflight-checklist | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 1 | true | 295 | 0 | 3 | broad-first-coverage, expansion, recommended, wave-1 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| 1 | true | 294 | 0 | 3 | broad-first-coverage, expansion, recommended, wave-1 | /blog/build-first-webpage-with-codex | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 1 | true | 156 | 0 | 3 | broad-first-coverage, expansion | /blog/codex-code-review-delivery-checklist | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| 2 | true | 130 | 0 | 3 | broad-first-coverage | /blog/build-first-webpage-with-codex | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
+| 2 | true | 128 | 0 | 3 | broad-first-coverage | /blog/first-upwork-project-pricing-checklist | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+| 2 | true | 128 | 0 | 3 | broad-first-coverage | /blog/vercel-env-variable-missing-beginner-guide | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
+| 2 | true | 113 | 1 | 3 | broad-first-coverage, expansion | /blog/codex-code-review-delivery-checklist | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| 3 | true | 111 | 0 | 3 | expansion | /blog/build-first-webpage-with-codex | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| 3 | true | 110 | 0 | 3 | expansion | /blog/codex-code-review-delivery-checklist | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
+| 3 | true | 109 | 0 | 3 | expansion | /blog/vercel-env-variable-missing-beginner-guide | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| 3 | true | 108 | 0 | 3 | expansion | /blog/first-upwork-project-pricing-checklist | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+
 ## Source Target Health
 
 - Files covered: 23
@@ -54,7 +93,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=fa
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=ja
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/ -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
@@ -1142,8 +1181,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 185
-- Traffic claim watch mentions: 3429
+- Traffic claim files scanned: 187
+- Traffic claim watch mentions: 3436
 
 ## Public Surface Inventory
 
@@ -1902,6 +1941,7 @@ Public categories:
 - Use docs/autopilot-review-queue.md as the ordered next-10 manual review assignment queue.
 - Use docs/autopilot-approval-packet.md as the top-3 packet for human approval.
 - Use docs/autopilot-search-intent-brief.md to tune top-3 search-intent wording during human review.
+- Use docs/internal-link-sprint-board.md to add one contextual public internal link per candidate during manual review.
 - Use docs/autopilot-internal-link-brief.md to add one contextual public internal link during human review.
 - Use docs/autopilot-source-verification-brief.md to verify top-3 official sources and fast-changing claims during human review.
 - Use docs/autopilot-human-review-playbook.md as the merged top-3 checklist before any mark:review command.

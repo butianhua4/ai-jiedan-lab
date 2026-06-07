@@ -842,6 +842,39 @@ async function main() {
       waveItemsMissingPublicLinkSuggestion: number;
     };
   }>("content/automation/internal-link-opportunity-audit.json");
+  const internalLinkSprintBoard = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    items?: Array<{
+      linkActions?: unknown[];
+      publishConfirm?: string;
+      readyForInternalLinkSprint?: boolean;
+      scopes?: unknown[];
+      suggestedLinks?: unknown[];
+      unsafeReasons?: unknown[];
+    }>;
+    summary: {
+      actionItems: number;
+      broadFirstCoverageItems: number;
+      candidateItems: number;
+      candidateItemsMissingPublicLinkSuggestion: number;
+      candidateItemsWithPublicSuggestions: number;
+      candidatesWithoutCurrentPublicLinks: number;
+      expansionItems: number;
+      items: number;
+      itemsPerWave: number;
+      publicArticles: number;
+      publishConfirmCommandsIncluded: number;
+      readyForInternalLinkSprint: number;
+      recommendedItems: number;
+      suggestedPublicLinks: number;
+      trafficDataAvailable: boolean;
+      unsafeItems: number;
+      waveItems: number;
+      waves: number;
+    };
+    unsafeItems?: unknown[];
+    waves?: Array<{ actionItems?: number; items?: number; readyItems?: number; suggestedPublicLinks?: number; unsafeItems?: number }>;
+  }>("content/automation/internal-link-sprint-board.json");
   const sourceHealth = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     summary: {
@@ -2034,6 +2067,46 @@ async function main() {
         internalLinks.summary.waveItemsMissingPublicLinkSuggestion === 0 &&
         internalLinks.summary.candidateItemsMissingPublicLinkSuggestion === 0,
       detail: `wave=${internalLinks.summary.waveItems}, broadFirstMissing=${internalLinks.summary.broadFirstCoverageItemsMissingPublicLinkSuggestion}, waveMissing=${internalLinks.summary.waveItemsMissingPublicLinkSuggestion}, candidateMissing=${internalLinks.summary.candidateItemsMissingPublicLinkSuggestion}`,
+    },
+    {
+      name: "internal link sprint board covers all linkable candidates",
+      ok:
+        internalLinkSprintBoard.guardrails.autoEditArticles === false &&
+        internalLinkSprintBoard.guardrails.autoMarkReview === false &&
+        internalLinkSprintBoard.guardrails.autoPublish === false &&
+        internalLinkSprintBoard.guardrails.trafficClaim === "not-included" &&
+        internalLinkSprintBoard.summary.items === internalLinks.summary.candidateItems &&
+        internalLinkSprintBoard.summary.candidateItems === internalLinks.summary.candidateItems &&
+        internalLinkSprintBoard.summary.candidateItemsWithPublicSuggestions === internalLinks.summary.candidateItemsWithPublicSuggestions &&
+        internalLinkSprintBoard.summary.candidateItemsMissingPublicLinkSuggestion === internalLinks.summary.candidateItemsMissingPublicLinkSuggestion &&
+        internalLinkSprintBoard.summary.publicArticles === internalLinks.summary.publicArticles &&
+        internalLinkSprintBoard.summary.waveItems === internalLinks.summary.waveItems &&
+        internalLinkSprintBoard.summary.waves >= 5 &&
+        internalLinkSprintBoard.summary.trafficDataAvailable === false,
+      detail: `items=${internalLinkSprintBoard.summary.items}, waves=${internalLinkSprintBoard.summary.waves}, public=${internalLinkSprintBoard.summary.publicArticles}, suggestions=${internalLinkSprintBoard.summary.suggestedPublicLinks}`,
+    },
+    {
+      name: "internal link sprint board keeps link edits manual and publish-safe",
+      ok:
+        internalLinkSprintBoard.summary.unsafeItems === 0 &&
+        (internalLinkSprintBoard.unsafeItems?.length || 0) === 0 &&
+        internalLinkSprintBoard.summary.publishConfirmCommandsIncluded === 0 &&
+        internalLinkSprintBoard.summary.readyForInternalLinkSprint === internalLinkSprintBoard.summary.items &&
+        internalLinkSprintBoard.summary.suggestedPublicLinks >= internalLinkSprintBoard.summary.items &&
+        internalLinkSprintBoard.summary.actionItems >= internalLinkSprintBoard.summary.items * 6 &&
+        Boolean(
+          internalLinkSprintBoard.items?.every(
+            (item) =>
+              item.readyForInternalLinkSprint === true &&
+              item.publishConfirm === "not-included" &&
+              (item.unsafeReasons?.length || 0) === 0 &&
+              (item.linkActions?.length || 0) >= 6 &&
+              (item.suggestedLinks?.length || 0) > 0 &&
+              (item.scopes?.length || 0) > 0,
+          ),
+        ) &&
+        Boolean(internalLinkSprintBoard.waves?.every((wave) => wave.readyItems === wave.items && (wave.unsafeItems || 0) === 0 && (wave.actionItems || 0) >= (wave.items || 0) * 6)),
+      detail: `ready=${internalLinkSprintBoard.summary.readyForInternalLinkSprint}, actions=${internalLinkSprintBoard.summary.actionItems}, unsafe=${internalLinkSprintBoard.summary.unsafeItems}, publishConfirm=${internalLinkSprintBoard.summary.publishConfirmCommandsIncluded}`,
     },
     {
       name: "source target health audit is read-only and covers review source scopes",

@@ -1,0 +1,1311 @@
+{
+  "generatedAt": "2026-06-07T20:17:38.284Z",
+  "guardrails": {
+    "autoEditArticles": false,
+    "autoMarkReview": false,
+    "autoPublish": false,
+    "note": "Read-only internal link sprint board. It groups manual public-link insertion tasks for review candidates without editing article bodies.",
+    "stopBefore": "Stop before article body edits, mark:review, publish dry-run, or publish confirm until a human approves exact anchors and target URLs.",
+    "trafficClaim": "not-included"
+  },
+  "sourceEvidence": {
+    "internalLinkAuditGeneratedAt": "2026-06-07T20:17:37.787Z",
+    "internalLinkAuditSummary": {
+      "broadFirstCoverageItems": 8,
+      "broadFirstCoverageItemsMissingPublicLinkSuggestion": 0,
+      "candidateItems": 22,
+      "candidateItemsMissingPublicLinkSuggestion": 0,
+      "candidateItemsWithPublicSuggestions": 22,
+      "expansionItems": 19,
+      "publicArticles": 15,
+      "recommendedItems": 3,
+      "waveItems": 3,
+      "waveItemsMissingPublicLinkSuggestion": 0
+    },
+    "trafficNote": "Internal-link suggestions are crawl-path and editorial signals only; no traffic, ranking, impression, click, conversion, or revenue claim is made."
+  },
+  "summary": {
+    "actionItems": 176,
+    "broadFirstCoverageItems": 8,
+    "candidateItems": 22,
+    "candidateItemsMissingPublicLinkSuggestion": 0,
+    "candidateItemsWithPublicSuggestions": 22,
+    "candidatesWithoutCurrentPublicLinks": 21,
+    "expansionItems": 19,
+    "items": 22,
+    "itemsPerWave": 4,
+    "publicArticles": 15,
+    "publishConfirmCommandsIncluded": 0,
+    "readyForInternalLinkSprint": 22,
+    "recommendedItems": 3,
+    "suggestedPublicLinks": 66,
+    "trafficDataAvailable": false,
+    "unsafeItems": 0,
+    "waveItems": 3,
+    "waves": 6
+  },
+  "unsafeItems": [],
+  "waves": [
+    {
+      "actionItems": 32,
+      "files": [
+        "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx"
+      ],
+      "items": 4,
+      "readyItems": 4,
+      "scopes": [
+        "broad-first-coverage",
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "suggestedPublicLinks": 12,
+      "unsafeItems": 0,
+      "wave": 1
+    },
+    {
+      "actionItems": 32,
+      "files": [
+        "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+        "content/blog/agent-tool-permission-safety-guide.mdx",
+        "content/blog/mcp-server-deployment-security-checklist.mdx",
+        "content/blog/ai-api-key-security-rotation-guide.mdx"
+      ],
+      "items": 4,
+      "readyItems": 4,
+      "scopes": [
+        "broad-first-coverage",
+        "expansion"
+      ],
+      "suggestedPublicLinks": 12,
+      "unsafeItems": 0,
+      "wave": 2
+    },
+    {
+      "actionItems": 32,
+      "files": [
+        "content/blog/ai-agent-memory-rag-design-guide.mdx",
+        "content/blog/dify-workflow-vs-agent-guide.mdx",
+        "content/blog/dify-workflow-error-handling-guide.mdx",
+        "content/blog/ai-automation-project-pricing-scope-guide.mdx"
+      ],
+      "items": 4,
+      "readyItems": 4,
+      "scopes": [
+        "expansion"
+      ],
+      "suggestedPublicLinks": 12,
+      "unsafeItems": 0,
+      "wave": 3
+    },
+    {
+      "actionItems": 32,
+      "files": [
+        "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+        "content/blog/claude-api-rate-limit-debug-guide.mdx",
+        "content/blog/customer-service-ai-prompts-guide.mdx",
+        "content/blog/data-analysis-ai-prompts-guide.mdx"
+      ],
+      "items": 4,
+      "readyItems": 4,
+      "scopes": [
+        "expansion"
+      ],
+      "suggestedPublicLinks": 12,
+      "unsafeItems": 0,
+      "wave": 4
+    },
+    {
+      "actionItems": 32,
+      "files": [
+        "content/blog/ecommerce-ai-prompts-guide.mdx",
+        "content/blog/education-ai-prompts-guide.mdx",
+        "content/blog/gemini-api-rate-limit-debug-guide.mdx",
+        "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx"
+      ],
+      "items": 4,
+      "readyItems": 4,
+      "scopes": [
+        "expansion"
+      ],
+      "suggestedPublicLinks": 12,
+      "unsafeItems": 0,
+      "wave": 5
+    },
+    {
+      "actionItems": 16,
+      "files": [
+        "content/blog/local-llm-vram-not-enough-guide.mdx",
+        "content/blog/open-webui-functions-pipelines-deployment-guide.mdx"
+      ],
+      "items": 2,
+      "readyItems": 2,
+      "scopes": [
+        "expansion"
+      ],
+      "suggestedPublicLinks": 6,
+      "unsafeItems": 0,
+      "wave": 6
+    }
+  ],
+  "items": [
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/codex-vercel-deploy-preflight-checklist using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 6,
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/codex-vercel-deploy-preflight-checklist.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 296,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "broad-first-coverage",
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "sprintWave": 1,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, vercel, 部署, 上线, 检查, 新手",
+          "score": 35,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 么做, 新手, 网页, 一个",
+          "score": 31,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 怎么, 检查, 项目, 新手, 一个, 第一",
+          "score": 28,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        }
+      ],
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/upwork-client-requirements-analysis-beginner using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 5,
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/upwork-client-requirements-analysis-beginner.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 295,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "broad-first-coverage",
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "sprintWave": 1,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+          "reason": "keyword overlap: proposal, 客户沟通, 怎么, 客户, 需求, 户沟",
+          "score": 32,
+          "slug": "upwork-client-requirements-analysis-beginner",
+          "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+          "url": "/blog/upwork-client-requirements-analysis-beginner"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 审核, 接单, 生成, 交付",
+          "score": 27,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 么做, 接单, 第一",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        }
+      ],
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/build-first-webpage-with-codex using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 4,
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/build-first-webpage-with-codex.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 294,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "broad-first-coverage",
+        "expansion",
+        "recommended",
+        "wave-1"
+      ],
+      "sprintWave": 1,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 一个, 怎么, 么做, 第一",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 交付, 生成, 检查",
+          "score": 23,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, 部署, 什么, 上线, 检查",
+          "score": 23,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        }
+      ],
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/codex-code-review-delivery-checklist using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 6,
+      "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/codex-code-review-delivery-checklist.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 156,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "broad-first-coverage",
+        "expansion"
+      ],
+      "sprintWave": 1,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 检查, 新手, 查清, 清单",
+          "score": 31,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, 部署, 检查, 什么, 新手, 上线",
+          "score": 31,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 新手, 么做, 一个, 第一",
+          "score": 27,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        }
+      ],
+      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/build-first-webpage-with-codex using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 5,
+      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/build-first-webpage-with-codex.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 130,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "broad-first-coverage"
+      ],
+      "sprintWave": 2,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 接单, 第一, 一个",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/what-is-codex-beginner-start.mdx",
+          "reason": "keyword overlap: ai, 怎么, 开始, 什么, 接单",
+          "score": 23,
+          "slug": "what-is-codex-beginner-start",
+          "title": "Codex 是什么新手怎么开始",
+          "url": "/blog/what-is-codex-beginner-start"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 怎么, 项目, 接单, 第一, 一个",
+          "score": 20,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        }
+      ],
+      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/first-upwork-project-pricing-checklist using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 3,
+      "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/first-upwork-project-pricing-checklist.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 128,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "broad-first-coverage"
+      ],
+      "sprintWave": 2,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 怎么, 新手, 指南, 项目, 一个, 自由",
+          "score": 28,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 怎么, 环境, 失败, 流程, 部署, 新手",
+          "score": 28,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 生成, 清单, 新手, 代码",
+          "score": 27,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        }
+      ],
+      "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/vercel-env-variable-missing-beginner-guide using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 3,
+      "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/vercel-env-variable-missing-beginner-guide.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 128,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "broad-first-coverage"
+      ],
+      "sprintWave": 2,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 部署, 怎么, 新手, 提示, 环境, 境变",
+          "score": 32,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 怎么, 新手, 指南, 项目, 范围, 一个",
+          "score": 28,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, codex, 怎么, 新手, 一个, 第一",
+          "score": 27,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        }
+      ],
+      "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/codex-code-review-delivery-checklist using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 3,
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/codex-code-review-delivery-checklist.",
+        "Candidate currently links to 1 public article(s)."
+      ],
+      "linksToPublicArticles": 1,
+      "priorityScore": 113,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "broad-first-coverage",
+        "expansion"
+      ],
+      "sprintWave": 2,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 新手, 代码, 检查, 交付",
+          "score": 31,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-github-before-commit-checklist.mdx",
+          "reason": "keyword overlap: ai, github, 怎么, 新手, 提交, 代码",
+          "score": 31,
+          "slug": "codex-github-before-commit-checklist",
+          "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
+          "url": "/blog/codex-github-before-commit-checklist"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 怎么, 新手, 项目, 一个, 指南, 检查",
+          "score": 28,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        }
+      ],
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/build-first-webpage-with-codex using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 6,
+      "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/build-first-webpage-with-codex.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 111,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "expansion"
+      ],
+      "sprintWave": 3,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 一个, 么做, 接单",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 代码, 接单, 检查",
+          "score": 23,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-github-before-commit-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 代码, 接单, 检查",
+          "score": 23,
+          "slug": "codex-github-before-commit-checklist",
+          "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
+          "url": "/blog/codex-github-before-commit-checklist"
+        }
+      ],
+      "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/codex-code-review-delivery-checklist using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 5,
+      "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/codex-code-review-delivery-checklist.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 110,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "expansion"
+      ],
+      "sprintWave": 3,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 审核, 生成, 交付",
+          "score": 23,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, 部署, 上线, 什么, 线前",
+          "score": 23,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        {
+          "file": "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
+          "reason": "keyword overlap: 怎么选, ai, 对比, 怎么, 么选",
+          "score": 23,
+          "slug": "codex-vs-claude-code-beginner-checklist",
+          "title": "Codex 和 Claude Code 怎么选：新手对比清单",
+          "url": "/blog/codex-vs-claude-code-beginner-checklist"
+        }
+      ],
+      "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/vercel-env-variable-missing-beginner-guide using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 4,
+      "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/vercel-env-variable-missing-beginner-guide.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 109,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "expansion"
+      ],
+      "sprintWave": 3,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 变量, 部署, next, 怎么, 失败, 新手",
+          "score": 48,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 怎么, 指南, 新手, 一个, 项目, 第一",
+          "score": 40,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 代码, 生成, 交付, 新手",
+          "score": 31,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        }
+      ],
+      "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/first-upwork-project-pricing-checklist using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 3,
+      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/first-upwork-project-pricing-checklist.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 108,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "expansion"
+      ],
+      "sprintWave": 3,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 报价, 项目, 目怎, 怎么, 么报, 范围",
+          "score": 40,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 接单, 交付, 清单, 新手",
+          "score": 35,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, 部署, 接单, 什么, 清单, 新手",
+          "score": 31,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        }
+      ],
+      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/codex-code-review-delivery-checklist using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 3,
+      "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/codex-code-review-delivery-checklist.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 108,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "expansion"
+      ],
+      "sprintWave": 4,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 审核, 接单, 交付, 生成",
+          "score": 35,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 怎么, 一个, 接单, 范围, 围和, 第一",
+          "score": 28,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 怎么, 审核, 接单, 生成, 代码",
+          "score": 27,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        }
+      ],
+      "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/vercel-env-variable-missing-beginner-guide using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 3,
+      "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/vercel-env-variable-missing-beginner-guide.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 108,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "expansion"
+      ],
+      "sprintWave": 4,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 部署, 怎么, 么办, 新手, 失败, 环境",
+          "score": 28,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 新手, 代码, 交付, 生成",
+          "score": 27,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 新手, 第一, 么做",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        }
+      ],
+      "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/codex-code-review-delivery-checklist using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 3,
+      "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/codex-code-review-delivery-checklist.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 108,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "expansion"
+      ],
+      "sprintWave": 4,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 生成, 审核, 怎么, 新手, 检查",
+          "score": 27,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+          "reason": "keyword overlap: ai, 判断, 怎么, 新手, 风险, 检查",
+          "score": 27,
+          "slug": "codex-upwork-small-job-risk-checklist",
+          "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+          "url": "/blog/codex-upwork-small-job-risk-checklist"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 生成, 审核, 怎么, 新手",
+          "score": 23,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        }
+      ],
+      "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/codex-code-review-delivery-checklist using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 3,
+      "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/codex-code-review-delivery-checklist.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 108,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "expansion"
+      ],
+      "sprintWave": 4,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 审核, 代码, 生成",
+          "score": 19,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 审核, 代码, 生成",
+          "score": 19,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 范围, 项目, 一个",
+          "score": 12,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        }
+      ],
+      "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/codex-code-review-delivery-checklist using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 3,
+      "file": "content/blog/ecommerce-ai-prompts-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/codex-code-review-delivery-checklist.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 108,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "expansion"
+      ],
+      "sprintWave": 5,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 审核, 生成",
+          "score": 15,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 审核, 生成",
+          "score": 15,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        },
+        {
+          "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+          "reason": "keyword overlap: 分析, 析和, 客户",
+          "score": 12,
+          "slug": "upwork-client-requirements-analysis-beginner",
+          "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+          "url": "/blog/upwork-client-requirements-analysis-beginner"
+        }
+      ],
+      "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/codex-code-review-delivery-checklist using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 3,
+      "file": "content/blog/education-ai-prompts-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/codex-code-review-delivery-checklist.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 108,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "expansion"
+      ],
+      "sprintWave": 5,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 生成, 清单, 检查",
+          "score": 19,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 范围, 围和, 自由, 检查",
+          "score": 16,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        {
+          "file": "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+          "reason": "keyword overlap: ai, 清单, 检查",
+          "score": 15,
+          "slug": "codex-upwork-small-job-risk-checklist",
+          "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+          "url": "/blog/codex-upwork-small-job-risk-checklist"
+        }
+      ],
+      "title": "教育 AI 提示词模板：备课、教案、测验、反馈和学习计划",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/build-first-webpage-with-codex using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 3,
+      "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/build-first-webpage-with-codex.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 108,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "expansion"
+      ],
+      "sprintWave": 5,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 一个, 么做, 第一",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 生成, 交付",
+          "score": 19,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 部署, 怎么, 失败, 环境",
+          "score": 16,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        }
+      ],
+      "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/vercel-env-variable-missing-beginner-guide using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 3,
+      "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/vercel-env-variable-missing-beginner-guide.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 108,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "expansion"
+      ],
+      "sprintWave": 5,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 怎么, 部署, 署教, 教程, 新手, 环境",
+          "score": 32,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        },
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 教程, 新手, 一个, 第一",
+          "score": 27,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+          "reason": "keyword overlap: ai, 安装, 怎么, 教程, 新手, 失败",
+          "score": 27,
+          "slug": "codex-install-failed-beginner-fix",
+          "title": "Codex 安装失败怎么办",
+          "url": "/blog/codex-install-failed-beginner-fix"
+        }
+      ],
+      "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/codex-install-failed-beginner-fix using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 3,
+      "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/codex-install-failed-beginner-fix.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 108,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "expansion"
+      ],
+      "sprintWave": 6,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+          "reason": "keyword overlap: ai, 怎么, 么办, 新手, 安装, 失败",
+          "score": 27,
+          "slug": "codex-install-failed-beginner-fix",
+          "title": "Codex 安装失败怎么办",
+          "url": "/blog/codex-install-failed-beginner-fix"
+        },
+        {
+          "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
+          "reason": "keyword overlap: 怎么, 么办, 报错, 新手, 解决",
+          "score": 23,
+          "slug": "codex-npm-install-error-beginner-fix",
+          "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
+          "url": "/blog/codex-npm-install-error-beginner-fix"
+        },
+        {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 部署, 怎么, 么办, 新手, 失败",
+          "score": 20,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        }
+      ],
+      "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
+      "unsafeReasons": []
+    },
+    {
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/build-first-webpage-with-codex using reader-first anchor text, not keyword stuffing.",
+      "currentInternalLinks": 3,
+      "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+      "linkActions": [
+        "Keep this as a manual article-body edit; do not auto-insert links.",
+        "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+        "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+        "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+        "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+        "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+        "Primary suggested target: /blog/build-first-webpage-with-codex.",
+        "Candidate currently links to 0 public article(s)."
+      ],
+      "linksToPublicArticles": 0,
+      "priorityScore": 108,
+      "publishConfirm": "not-included",
+      "readyForInternalLinkSprint": true,
+      "scopes": [
+        "expansion"
+      ],
+      "sprintWave": 6,
+      "status": "draft",
+      "suggestedLinks": [
+        {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 一个, 第一",
+          "score": 19,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 代码, 交付",
+          "score": 19,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/codex-generated-code-review-guide.mdx",
+          "reason": "keyword overlap: ai, 怎么, 代码",
+          "score": 15,
+          "slug": "codex-generated-code-review-guide",
+          "title": "Codex 生成代码后怎么审核",
+          "url": "/blog/codex-generated-code-review-guide"
+        }
+      ],
+      "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+      "unsafeReasons": []
+    }
+  ]
+}
