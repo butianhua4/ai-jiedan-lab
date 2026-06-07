@@ -53,6 +53,38 @@ type ExecutiveBrief = {
   }>;
 };
 
+type MojibakeRemediationBrief = {
+  items: Array<{
+    file: string;
+    metadataHits: Array<{ field: string; markers: string[]; sample: string }>;
+    noindex: boolean | null;
+    preserveStatus: boolean;
+    priorityScore: number;
+    publishConfirm: string;
+    queueSignals: {
+      inExecutiveTop: boolean;
+      inHumanApprovalImmediate: boolean;
+      inReviewPortfolio: boolean;
+      lanes: string[];
+    };
+    status: string;
+    title: string;
+    bodyHit: { field: string; markers: string[]; sample: string } | null;
+  }>;
+  summary: {
+    affectedDraftFiles: number;
+    affectedFiles: number;
+    affectedPublicFiles: number;
+    bodyExcerptHits: number;
+    executiveTopAffected: number;
+    filesScanned: number;
+    immediateApprovalAffected: number;
+    publishConfirmCommandsIncluded: number;
+    trafficDataAvailable: boolean;
+    unsafeItems: number;
+  };
+};
+
 type ReviewCandidate = {
   cluster: string;
   file: string;
@@ -2198,6 +2230,7 @@ const reports = {
   ),
   workflowAudit: readJson<WorkflowAudit>("content/automation/project-automation-workflow-audit.json"),
   executiveBrief: readJson<ExecutiveBrief>("content/automation/autopilot-executive-brief.json"),
+  mojibakeRemediation: readJson<MojibakeRemediationBrief>("content/automation/mojibake-remediation-brief.json"),
   contentBacklog: readJson<{ opportunities: ContentOpportunity[]; totals: { topics: number; topicsWithReadyCandidates: number } }>(
     "content/automation/content-opportunity-backlog.json",
   ),
@@ -2359,6 +2392,19 @@ const payload = {
     boardActions: reports.executiveBrief.data?.boardActions ?? [],
     routeWarnings: reports.executiveBrief.data?.routeWarnings ?? [],
     topApprovalActions: reports.executiveBrief.data?.topApprovalActions ?? [],
+  },
+  mojibakeRemediation: {
+    affectedDraftFiles: reports.mojibakeRemediation.data?.summary.affectedDraftFiles ?? null,
+    affectedFiles: reports.mojibakeRemediation.data?.summary.affectedFiles ?? null,
+    affectedPublicFiles: reports.mojibakeRemediation.data?.summary.affectedPublicFiles ?? null,
+    bodyExcerptHits: reports.mojibakeRemediation.data?.summary.bodyExcerptHits ?? null,
+    executiveTopAffected: reports.mojibakeRemediation.data?.summary.executiveTopAffected ?? null,
+    filesScanned: reports.mojibakeRemediation.data?.summary.filesScanned ?? null,
+    immediateApprovalAffected: reports.mojibakeRemediation.data?.summary.immediateApprovalAffected ?? null,
+    publishConfirmCommandsIncluded: reports.mojibakeRemediation.data?.summary.publishConfirmCommandsIncluded ?? null,
+    top: reports.mojibakeRemediation.data?.items.slice(0, 8) ?? [],
+    trafficDataAvailable: reports.mojibakeRemediation.data?.summary.trafficDataAvailable ?? null,
+    unsafeItems: reports.mojibakeRemediation.data?.summary.unsafeItems ?? null,
   },
   contentIntegrity: reports.contentIntegrity.data?.summary ?? null,
   internalLinks: reports.internalLinks.data?.summary ?? null,
@@ -3409,6 +3455,13 @@ function buildNextActions() {
   if (!reports.executiveBrief.data || reports.executiveBrief.data.summary.unsafeItems > 0 || reports.executiveBrief.data.summary.publishConfirmCommandsIncluded > 0) {
     return ["Open docs/autopilot-executive-brief.md and resolve executive brief safety issues before assigning review work."];
   }
+  if (
+    !reports.mojibakeRemediation.data ||
+    reports.mojibakeRemediation.data.summary.unsafeItems > 0 ||
+    reports.mojibakeRemediation.data.summary.publishConfirmCommandsIncluded > 0
+  ) {
+    return ["Open docs/mojibake-remediation-brief.md and resolve remediation guardrail issues before manual copy repair."];
+  }
   if (!reports.preflight.data?.ok) return ["Open docs/review-preflight.md and resolve candidate issues before marking review."];
   if (!reports.nextReviewSourcePack.data || reports.nextReviewSourcePack.data.summary.unsafeItems > 0) {
     return ["Open docs/next-review-source-pack.md and resolve source-pack guardrail issues before manual review."];
@@ -3663,6 +3716,7 @@ function buildNextActions() {
   return [
     "Use docs/autopilot-executive-brief.md as the short daily execution brief before opening the long automation digest.",
     "Use docs/project-automation-workflow-audit.md to confirm scheduled project automation is active and still publish-safe.",
+    "Use docs/mojibake-remediation-brief.md to repair garbled Chinese titles, descriptions, and excerpts during human review before mark:review.",
     "Manually review the three recommended drafts in docs/review-preflight.md.",
     "Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.",
     "Use docs/wave-publish-simulation.md to see the exact post-approval mark-review and publish dry-run path.",
@@ -3755,6 +3809,25 @@ function toMarkdown(data: typeof payload) {
     "| Board | Action |",
     "| --- | --- |",
     ...data.executiveBrief.boardActions.map((item) => `| ${item.title} | ${item.action} |`),
+    "",
+    "## Mojibake Remediation Brief",
+    "",
+    `- Files scanned: ${data.mojibakeRemediation.filesScanned}`,
+    `- Affected files: ${data.mojibakeRemediation.affectedFiles}`,
+    `- Affected draft/public files: ${data.mojibakeRemediation.affectedDraftFiles}/${data.mojibakeRemediation.affectedPublicFiles}`,
+    `- Immediate approval affected: ${data.mojibakeRemediation.immediateApprovalAffected}`,
+    `- Executive top affected: ${data.mojibakeRemediation.executiveTopAffected}`,
+    `- Body excerpt hits: ${data.mojibakeRemediation.bodyExcerptHits}`,
+    `- Publish confirm commands included: ${data.mojibakeRemediation.publishConfirmCommandsIncluded}`,
+    `- Traffic data available: ${data.mojibakeRemediation.trafficDataAvailable}`,
+    `- Unsafe items: ${data.mojibakeRemediation.unsafeItems}`,
+    "",
+    "| Priority | Status | Immediate | Executive | Lanes | Fields | File |",
+    "| ---: | --- | --- | --- | --- | --- | --- |",
+    ...data.mojibakeRemediation.top.map((item) => {
+      const fields = item.metadataHits.map((hit) => hit.field).concat(item.bodyHit ? ["bodyExcerpt"] : []).join(", ");
+      return `| ${item.priorityScore} | ${item.status} | ${item.queueSignals.inHumanApprovalImmediate} | ${item.queueSignals.inExecutiveTop} | ${item.queueSignals.lanes.join(", ") || "none"} | ${fields} | ${item.file} |`;
+    }),
     "",
     "## Content Integrity",
     "",

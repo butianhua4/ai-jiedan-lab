@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T20:48:50.217Z
+Generated at: 2026-06-07T21:01:06.970Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -54,6 +54,29 @@ This digest is read-only. It summarizes automation reports and does not publish 
 | AI deployment | Use docs/ai-deployment-sprint-board.md to prioritize deployment, Agent, model-serving, and API tutorial candidates. |
 | Memory/RAG | Use docs/memory-rag-sprint-board.md to prioritize RAG, knowledge base, vector search, memory, evaluation, and privacy lanes. |
 | Popular prompts | Use docs/popular-prompt-sprint-board.md to prioritize high-demand prompt playbook lanes. |
+
+## Mojibake Remediation Brief
+
+- Files scanned: 669
+- Affected files: 77
+- Affected draft/public files: 68/9
+- Immediate approval affected: 0
+- Executive top affected: 0
+- Body excerpt hits: 72
+- Publish confirm commands included: 0
+- Traffic data available: false
+- Unsafe items: 0
+
+| Priority | Status | Immediate | Executive | Lanes | Fields | File |
+| ---: | --- | --- | --- | --- | --- | --- |
+| 140 | published | false | false | internal-link-sprint | bodyExcerpt | content/blog/build-first-webpage-with-codex.mdx |
+| 140 | published | false | false | internal-link-sprint | bodyExcerpt | content/blog/codex-install-failed-beginner-fix.mdx |
+| 140 | published | false | false | internal-link-sprint | bodyExcerpt | content/blog/first-upwork-project-pricing-checklist.mdx |
+| 140 | published | false | false | internal-link-sprint | bodyExcerpt | content/blog/what-is-codex-beginner-start.mdx |
+| 128 | published | false | false | internal-link-sprint | bodyExcerpt | content/blog/codex-code-review-delivery-checklist.mdx |
+| 128 | published | false | false | internal-link-sprint | bodyExcerpt | content/blog/codex-github-before-commit-checklist.mdx |
+| 128 | published | false | false | internal-link-sprint | bodyExcerpt | content/blog/codex-upwork-small-job-risk-checklist.mdx |
+| 128 | published | false | false | internal-link-sprint | bodyExcerpt | content/blog/codex-vercel-deploy-preflight-checklist.mdx |
 
 ## Content Integrity
 
@@ -134,7 +157,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=de
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/ -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
@@ -1222,8 +1245,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 193
-- Traffic claim watch mentions: 3499
+- Traffic claim files scanned: 195
+- Traffic claim watch mentions: 3510
 
 ## Public Surface Inventory
 
@@ -2006,6 +2029,7 @@ Public categories:
 
 - Use docs/autopilot-executive-brief.md as the short daily execution brief before opening the long automation digest.
 - Use docs/project-automation-workflow-audit.md to confirm scheduled project automation is active and still publish-safe.
+- Use docs/mojibake-remediation-brief.md to repair garbled Chinese titles, descriptions, and excerpts during human review before mark:review.
 - Manually review the three recommended drafts in docs/review-preflight.md.
 - Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.
 - Use docs/wave-publish-simulation.md to see the exact post-approval mark-review and publish dry-run path.

@@ -37,6 +37,7 @@
     "automation:review-portfolio-board": "tsx scripts/review-portfolio-board.ts",
     "automation:autopilot-review-queue": "tsx scripts/autopilot-review-queue.ts",
     "automation:autopilot-executive-brief": "tsx scripts/autopilot-executive-brief.ts",
+    "automation:mojibake-remediation": "tsx scripts/mojibake-remediation-brief.ts",
     "automation:autopilot-approval-packet": "tsx scripts/autopilot-approval-packet.ts",
     "automation:autopilot-search-intent": "tsx scripts/autopilot-search-intent-brief.ts",
     "automation:autopilot-internal-links": "tsx scripts/autopilot-internal-link-brief.ts",

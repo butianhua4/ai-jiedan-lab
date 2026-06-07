@@ -72,6 +72,23 @@ async function main() {
     topApprovalActions?: Array<{ humanGate?: string; priority?: number }>;
     unsafeReasons?: unknown[];
   }>("content/automation/autopilot-executive-brief.json");
+  const mojibakeRemediation = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    items?: Array<{
+      manualActions?: unknown[];
+      preserveStatus?: boolean;
+      publishConfirm?: string;
+    }>;
+    manualRemediationRules?: unknown[];
+    summary: {
+      affectedFiles: number;
+      filesScanned: number;
+      publishConfirmCommandsIncluded: number;
+      scannedMetadataFields: number;
+      trafficDataAvailable: boolean;
+      unsafeItems: number;
+    };
+  }>("content/automation/mojibake-remediation-brief.json");
   const opportunityMap = readJson<{ reviewBatches?: Array<{ candidates?: unknown[] }>; totals: { reviewReadyDrafts: number } }>(
     "content/automation/seo-opportunity-map.json",
   );
@@ -2119,6 +2136,34 @@ async function main() {
         Boolean(executiveBrief.topApprovalActions?.every((item) => item.humanGate === "explicit human approval required" && typeof item.priority === "number")) &&
         Boolean(executiveBrief.boardActions?.every((item) => item.publishConfirm === "not-included")),
       detail: `unsafe=${executiveBrief.summary.unsafeItems}, publishConfirm=${executiveBrief.summary.publishConfirmCommandsIncluded}, publishableNow=${executiveBrief.summary.currentPublishableNow}, routeWarnings=${executiveBrief.summary.routeWarningItems}`,
+    },
+    {
+      name: "mojibake remediation brief is read-only and article-safe",
+      ok:
+        mojibakeRemediation.guardrails.autoEditArticles === false &&
+        mojibakeRemediation.guardrails.autoMarkReview === false &&
+        mojibakeRemediation.guardrails.autoPublish === false &&
+        mojibakeRemediation.guardrails.trafficClaim === "not-included" &&
+        mojibakeRemediation.summary.filesScanned === articles.length &&
+        mojibakeRemediation.summary.scannedMetadataFields >= 8,
+      detail: `filesScanned=${mojibakeRemediation.summary.filesScanned}, affected=${mojibakeRemediation.summary.affectedFiles}, metadataFields=${mojibakeRemediation.summary.scannedMetadataFields}`,
+    },
+    {
+      name: "mojibake remediation brief stays human-gated and publish-safe",
+      ok:
+        mojibakeRemediation.summary.unsafeItems === 0 &&
+        mojibakeRemediation.summary.publishConfirmCommandsIncluded === 0 &&
+        mojibakeRemediation.summary.trafficDataAvailable === false &&
+        Boolean(mojibakeRemediation.manualRemediationRules?.length && mojibakeRemediation.manualRemediationRules.length >= 5) &&
+        Boolean(
+          (mojibakeRemediation.items || []).every(
+            (item) =>
+              item.preserveStatus === true &&
+              item.publishConfirm === "not-included" &&
+              Boolean(item.manualActions?.length && item.manualActions.length >= 5),
+          ),
+        ),
+      detail: `unsafe=${mojibakeRemediation.summary.unsafeItems}, publishConfirm=${mojibakeRemediation.summary.publishConfirmCommandsIncluded}, traffic=${mojibakeRemediation.summary.trafficDataAvailable}`,
     },
     {
       name: "no non-published article is indexable",

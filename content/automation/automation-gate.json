@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T20:48:49.662Z",
+  "generatedAt": "2026-06-07T21:01:06.409Z",
   "ok": true,
   "summary": {
-    "checks": 177,
+    "checks": 179,
     "failed": 0,
-    "passed": 177
+    "passed": 179
   },
   "failed": [],
   "checks": [
@@ -83,6 +83,16 @@
       "detail": "unsafe=0, publishConfirm=0, publishableNow=0, routeWarnings=2"
     },
     {
+      "name": "mojibake remediation brief is read-only and article-safe",
+      "ok": true,
+      "detail": "filesScanned=669, affected=77, metadataFields=9"
+    },
+    {
+      "name": "mojibake remediation brief stays human-gated and publish-safe",
+      "ok": true,
+      "detail": "unsafe=0, publishConfirm=0, traffic=false"
+    },
+    {
       "name": "no non-published article is indexable",
       "ok": true,
       "detail": ""
@@ -110,7 +120,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=193, unsafeClaims=0, watchMentions=3499"
+      "detail": "filesScanned=195, unsafeClaims=0, watchMentions=3510"
     },
     {
       "name": "content integrity audit is read-only and clean",
