@@ -544,6 +544,7 @@ async function main() {
       items: number;
       projectedPublicPublishedAfterWave: number;
       projectedPublishableAfterHumanApproval: number;
+      publicPublishedBeforeWave: number;
       readyForHumanApproval: number;
       unsafeItems: number;
       wave: number;
