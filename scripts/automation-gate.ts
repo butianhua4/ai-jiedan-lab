@@ -1457,6 +1457,54 @@ async function main() {
     };
     unsafeItems?: unknown[];
   }>("content/automation/human-approval-repair-route.json");
+  const humanApprovalRepairProgress = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    items?: Array<{
+      categories?: Array<{ category?: string; status?: string }>;
+      manualOnlyCommand?: string;
+      nextManualSession?: unknown;
+      openCategories?: unknown[];
+      publishConfirm?: string;
+      readyForHumanApprovalAfterRepair?: boolean;
+      unsafeReasons?: unknown[];
+    }>;
+    publishingBoundary: {
+      currentPublicPublished: number;
+      currentPublishableNow: number;
+      publishConfirmCommandsIncluded: number;
+      trafficDataAvailable: boolean;
+    };
+    sourceEvidence: {
+      decisionMatrixItems: number;
+      decisionMatrixRepairItems: number;
+      decisionMatrixUnsafeItems: number;
+      internalLinkUnsafeItems: number;
+      repairQueueMinimumPathFiles: number;
+      repairQueueMinimumPathTasks: number;
+      repairQueueUnsafeItems: number;
+      routeFiles: number;
+      routeSessions: number;
+      routeUnsafeItems: number;
+      searchIntentUnsafeItems: number;
+      sourceVerificationUnsafeItems: number;
+      remediationUnsafeItems: number;
+    };
+    summary: {
+      blockedCategories: number;
+      categoriesTracked: number;
+      evidenceReadyCategories: number;
+      filesReadyForHumanApprovalAfterRepair: number;
+      filesTracked: number;
+      manualOnlyCategories: number;
+      openCategories: number;
+      publishConfirmCommandsIncluded: number;
+      resolvedCategories: number;
+      routeSessions: number;
+      trafficDataAvailable: boolean;
+      unsafeItems: number;
+    };
+    unsafeItems?: unknown[];
+  }>("content/automation/human-approval-repair-progress.json");
   const autopilotReviewSprintBoard = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     items?: Array<{
@@ -3036,6 +3084,54 @@ async function main() {
           ),
         ),
       detail: `sessions=${humanApprovalRepairRoute.summary.routeSessions}, publishConfirm=${humanApprovalRepairRoute.summary.publishConfirmCommandsIncluded}, highRisk=${humanApprovalRepairRoute.summary.highRiskTasks}`,
+    },
+    {
+      name: "human approval repair progress covers repair route",
+      ok:
+        humanApprovalRepairProgress.guardrails.autoEditArticles === false &&
+        humanApprovalRepairProgress.guardrails.autoMarkReview === false &&
+        humanApprovalRepairProgress.guardrails.autoPublish === false &&
+        humanApprovalRepairProgress.guardrails.trafficClaim === "not-included" &&
+        humanApprovalRepairProgress.sourceEvidence.decisionMatrixItems === humanApprovalDecisionMatrix.summary.decisionRows &&
+        humanApprovalRepairProgress.sourceEvidence.decisionMatrixRepairItems === humanApprovalDecisionMatrix.summary.repairBeforeReviewItems &&
+        humanApprovalRepairProgress.sourceEvidence.decisionMatrixUnsafeItems === 0 &&
+        humanApprovalRepairProgress.sourceEvidence.repairQueueMinimumPathFiles === humanApprovalRepairQueue.summary.minimumPathFiles &&
+        humanApprovalRepairProgress.sourceEvidence.repairQueueMinimumPathTasks === humanApprovalRepairQueue.summary.minimumPathTasks &&
+        humanApprovalRepairProgress.sourceEvidence.repairQueueUnsafeItems === 0 &&
+        humanApprovalRepairProgress.sourceEvidence.routeFiles === humanApprovalRepairRoute.summary.filesRouted &&
+        humanApprovalRepairProgress.sourceEvidence.routeSessions === humanApprovalRepairRoute.summary.routeSessions &&
+        humanApprovalRepairProgress.sourceEvidence.routeUnsafeItems === 0 &&
+        humanApprovalRepairProgress.sourceEvidence.searchIntentUnsafeItems === 0 &&
+        humanApprovalRepairProgress.sourceEvidence.internalLinkUnsafeItems === 0 &&
+        humanApprovalRepairProgress.sourceEvidence.sourceVerificationUnsafeItems === 0 &&
+        humanApprovalRepairProgress.sourceEvidence.remediationUnsafeItems === 0 &&
+        humanApprovalRepairProgress.summary.filesTracked === humanApprovalRepairRoute.summary.filesRouted &&
+        humanApprovalRepairProgress.summary.categoriesTracked >= humanApprovalRepairProgress.summary.filesTracked &&
+        humanApprovalRepairProgress.summary.routeSessions === humanApprovalRepairRoute.summary.routeSessions &&
+        humanApprovalRepairProgress.summary.unsafeItems === 0,
+      detail: `files=${humanApprovalRepairProgress.summary.filesTracked}, categories=${humanApprovalRepairProgress.summary.categoriesTracked}, open=${humanApprovalRepairProgress.summary.openCategories}, blocked=${humanApprovalRepairProgress.summary.blockedCategories}`,
+    },
+    {
+      name: "human approval repair progress stays manual and non-publishing",
+      ok:
+        humanApprovalRepairProgress.publishingBoundary.currentPublicPublished === projectStatus.articles.publicPublished &&
+        humanApprovalRepairProgress.publishingBoundary.currentPublishableNow === projectStatus.articles.publishableNow.length &&
+        humanApprovalRepairProgress.publishingBoundary.publishConfirmCommandsIncluded === 0 &&
+        humanApprovalRepairProgress.summary.publishConfirmCommandsIncluded === 0 &&
+        humanApprovalRepairProgress.summary.trafficDataAvailable === false &&
+        humanApprovalRepairProgress.summary.filesReadyForHumanApprovalAfterRepair <= humanApprovalRepairProgress.summary.filesTracked &&
+        Boolean(
+          humanApprovalRepairProgress.items?.every(
+            (item) =>
+              item.publishConfirm === "not-included" &&
+              item.manualOnlyCommand?.includes("--confirm-human") &&
+              (item.categories?.length || 0) >= 3 &&
+              (item.openCategories?.length ? Boolean(item.nextManualSession) : true) &&
+              (item.readyForHumanApprovalAfterRepair === false || (item.openCategories?.length || 0) === 0) &&
+              (item.unsafeReasons?.length || 0) === 0,
+          ),
+        ),
+      detail: `readyAfterRepair=${humanApprovalRepairProgress.summary.filesReadyForHumanApprovalAfterRepair}, open=${humanApprovalRepairProgress.summary.openCategories}, evidenceReady=${humanApprovalRepairProgress.summary.evidenceReadyCategories}, publishConfirm=${humanApprovalRepairProgress.summary.publishConfirmCommandsIncluded}`,
     },
     {
       name: "autopilot review sprint board covers next assignments",

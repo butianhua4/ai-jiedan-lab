@@ -62,6 +62,7 @@
     "automation:human-approval-decision-matrix": "tsx scripts/human-approval-decision-matrix.ts",
     "automation:human-approval-repair-queue": "tsx scripts/human-approval-repair-queue.ts",
     "automation:human-approval-repair-route": "tsx scripts/human-approval-repair-route.ts",
+    "automation:human-approval-repair-progress": "tsx scripts/human-approval-repair-progress.ts",
     "automation:next-batch-approval-route": "tsx scripts/next-batch-approval-route.ts",
     "automation:next-batch-route-remediation": "tsx scripts/next-batch-route-remediation-pack.ts",
     "automation:publication-bottleneck": "tsx scripts/publication-bottleneck-report.ts",

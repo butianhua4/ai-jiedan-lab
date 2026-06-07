@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T22:27:05.341Z
+Generated at: 2026-06-07T22:40:10.114Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -168,6 +168,28 @@ This digest is read-only. It summarizes automation reports and does not publish 
 | 1939 | 2 | 6 | 4 | industry-prompt | ChatGPT prompts for business | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | 1819 | 2 | 6 | 4 | public-coverage-gap | RAG 知识库搭建教程 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
+## Human Approval Repair Progress
+
+- Files tracked: 3
+- Categories tracked: 18
+- Open categories: 11
+- Blocked categories: 0
+- Evidence-ready categories: 3
+- Resolved categories: 1
+- Manual-only categories: 3
+- Files ready for human approval after repair: 0
+- Next repair title: AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查
+- Next repair file: content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
+- Publish confirm commands included: 0
+- Traffic data available: false
+- Unsafe items: 0
+
+| Rank | Ready after repair | Open categories | Next session | Lane | Primary query | Title | File |
+| ---: | --- | --- | --- | --- | --- | --- | --- |
+| 1943 | false | source-url, search-intent, internal-link, copydesk | source verification first | ai-deployment | AI Agent deployment tutorial | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 1939 | false | source-url, internal-link, copydesk | source verification first | industry-prompt | ChatGPT prompts for business | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| 1819 | false | source-url, search-intent, internal-link, copydesk | source verification first | public-coverage-gap | RAG 知识库搭建教程 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+
 ## Mojibake Remediation Brief
 
 - Files scanned: 669
@@ -273,7 +295,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=ru
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=es-419
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/ -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
@@ -1361,8 +1383,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 203
-- Traffic claim watch mentions: 3615
+- Traffic claim files scanned: 205
+- Traffic claim watch mentions: 3629
 
 ## Public Surface Inventory
 
@@ -2146,41 +2168,4 @@ Public categories:
 
 ## Next Actions
 
-- Use docs/autopilot-executive-brief.md as the short daily execution brief before opening the long automation digest.
-- Use docs/project-automation-workflow-audit.md to confirm scheduled project automation is active and still publish-safe.
-- Use docs/mojibake-remediation-brief.md to repair garbled Chinese titles, descriptions, and excerpts during human review before mark:review.
-- Manually review the three recommended drafts in docs/review-preflight.md.
-- Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.
-- Use docs/wave-publish-simulation.md to see the exact post-approval mark-review and publish dry-run path.
-- Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.
-- Use docs/public-surface-inventory.md to confirm what is public now and which broad AI clusters still have zero public coverage.
-- Use docs/public-coverage-gap-decision-pack.md to review the 8 broad-demand public gap candidates and their optimization actions.
-- Use docs/ai-deployment-review-pack.md to review the 10 deployment, Agent, RAG, memory, API, and infrastructure candidates.
-- Use docs/memory-rag-sprint-board.md to prioritize RAG, knowledge base, vector search, Agent memory, evaluation, and privacy content lanes.
-- Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.
-- Use docs/industry-prompt-opportunity-board.md to turn broad department prompt searches into specific prompt-pack page ideas.
-- Use docs/industry-prompt-module-pack.md to deepen each department prompt page with reusable input/output prompt blueprints.
-- Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.
-- Use docs/source-target-health-audit.md to confirm official source links are reachable before approving fast-changing AI guidance.
-- Use docs/source-target-remediation-pack.md to replace failed source URLs and confirm canonical redirected source URLs during human review.
-- Use docs/review-action-board.md as the prioritized task board for Wave 1 and public-gap manual review.
-- Use docs/review-portfolio-board.md to deduplicate Wave, public-gap, deployment, and prompt review candidates before assigning manual review.
-- Use docs/autopilot-review-queue.md as the ordered next-10 manual review assignment queue.
-- Use docs/autopilot-approval-packet.md as the top-3 packet for human approval.
-- Use docs/autopilot-search-intent-brief.md to tune top-3 search-intent wording during human review.
-- Use docs/internal-link-sprint-board.md to add one contextual public internal link per candidate during manual review.
-- Use docs/autopilot-internal-link-brief.md to add one contextual public internal link during human review.
-- Use docs/autopilot-source-verification-brief.md to verify top-3 official sources and fast-changing claims during human review.
-- Use docs/autopilot-human-review-playbook.md as the merged top-3 checklist before any mark:review command.
-- Use docs/autopilot-review-sprint-board.md as the next-10 manual review sprint order.
-- Use docs/autopilot-search-query-gap-brief.md to fill next-10 search-query gaps during manual review.
-- Use docs/autopilot-queued-playbook-brief.md to review the 7 queued sprint items with merged search, source, freshness, and link actions.
-- Use docs/autopilot-broad-ai-demand-brief.md to prioritize broad AI deployment, Agent, memory, RAG, and industry prompt themes.
-- Use docs/autopilot-broad-freshness-triage.md to fact-check high-demand AI drafts before any approval action.
-- Use docs/autopilot-broad-publish-waves.md to review 1-3 high-demand AI drafts per human-approved batch.
-- Use docs/autopilot-broad-wave-optimization.md to apply SEO snippet, opening, internal-link, and risk-language improvements during human review.
-- Use docs/broad-first-coverage-launch-pack.md to review one first-coverage candidate for each broad AI cluster with zero public coverage.
-- Use docs/broad-first-coverage-readiness-matrix.md to resolve source, snippet, schema, link, query, and freshness warnings for the first-coverage candidates.
-- Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.
-- If approved by a human, run mark:review with --confirm-human for approved files only.
-- Publish only status=review articles in a 1-3 article batch after a dry-run.
+- Open docs/human-approval-repair-progress.md and run the next manual repair session for content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx.
