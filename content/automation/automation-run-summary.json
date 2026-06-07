@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T02:51:33.825Z",
+  "generatedAt": "2026-06-07T03:03:33.976Z",
   "failures": [],
   "ok": true,
   "tasks": [
@@ -10,6 +10,7 @@
     "Generate project status",
     "Run traffic evidence audit",
     "Run traffic claim guard",
+    "Generate public surface inventory",
     "Run content integrity audit",
     "Run internal link opportunity audit",
     "Run SEO safety check",

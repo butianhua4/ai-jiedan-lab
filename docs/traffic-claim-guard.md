@@ -1,14 +1,14 @@
 # Traffic Claim Guard
-Generated at: 2026-06-07T02:52:58.764Z
+Generated at: 2026-06-07T03:05:04.153Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
 - Note: This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples.
 ## Summary
-- filesScanned: 133
+- filesScanned: 135
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 1299
+- watchMentions: 1311
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -41,12 +41,13 @@ None.
 | docs/automation-digest.md | 652 | - Measured traffic sources: none |
 | docs/automation-digest.md | 653 | - Search Console verification evidence: false |
 | docs/automation-digest.md | 656 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 657 | - Traffic claim files scanned: 133 |
-| docs/automation-digest.md | 658 | - Traffic claim watch mentions: 1291 |
-| docs/automation-digest.md | 694 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
+| docs/automation-digest.md | 657 | - Traffic claim files scanned: 135 |
+| docs/automation-digest.md | 658 | - Traffic claim watch mentions: 1309 |
+| docs/automation-digest.md | 671 | - Traffic data available: false |
+| docs/automation-digest.md | 746 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
 | docs/automation-gate.md | 31 | \| traffic evidence audit passed and is read-only \| PASS \| failedChecks=0, measuredTrafficSources=0 \| |
 | docs/automation-gate.md | 32 | \| traffic is not claimed without measured metrics \| PASS \| trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 \| |
-| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=133, unsafeClaims=0, watchMentions=1291 \| |
+| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=135, unsafeClaims=0, watchMentions=1309 \| |
 | docs/autopilot-approval-packet.md | 18 | - Traffic data available: false |
 | docs/autopilot-approval-packet.md | 19 | - Can claim traffic: false |
 | docs/autopilot-approval-packet.md | 95 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
@@ -93,7 +94,6 @@ None.
 | docs/autopilot-broad-freshness-triage.md | 1387 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
 | docs/autopilot-broad-freshness-triage.md | 1441 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
 | docs/autopilot-broad-publish-waves.md | 9 | - Traffic claim: not-included |
-| docs/autopilot-broad-wave-optimization.md | 9 | - Traffic claim: not-included |
 ## Next Actions
 - Keep saying that live/search surfaces are healthy, not that traffic exists.
 - Only report traffic after an audited source provides clicks, impressions, visits, or pageviews.

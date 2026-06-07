@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T02:50:48.343Z",
+  "generatedAt": "2026-06-07T03:02:47.321Z",
   "guardrails": {
     "autoPublish": false,
     "requiredHumanAction": "Read the article, verify factual claims and risk language, then mark review manually.",

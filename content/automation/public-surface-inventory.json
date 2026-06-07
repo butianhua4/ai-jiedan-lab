@@ -1,0 +1,609 @@
+{
+  "generatedAt": "2026-06-07T03:05:04.094Z",
+  "guardrails": {
+    "autoEditArticles": false,
+    "autoMarkReview": false,
+    "autoPublish": false,
+    "note": "Read-only public surface inventory. It lists currently public content and broad AI demand gaps without editing articles or claiming traffic.",
+    "trafficClaim": "not-included"
+  },
+  "sourceEvidence": {
+    "broadDemandGeneratedAt": "2026-06-07T03:03:27.611Z",
+    "broadDemandGuardrails": {
+      "autoCreateArticles": false,
+      "autoEditArticles": false,
+      "autoMarkReview": false,
+      "autoPublish": false,
+      "trafficClaim": "not-included",
+      "note": "Read-only broad AI demand brief. It prioritizes likely search-demand themes from local inventory plus external source signals, but does not claim measured traffic or keyword volume."
+    },
+    "broadDemandSummary": {
+      "clusters": 8,
+      "clustersWithoutPublicCoverage": 8,
+      "clustersWithReadyCandidates": 8,
+      "externalSourceSignals": 24,
+      "publicArticles": 15,
+      "readyCandidateFiles": 33,
+      "reviewReadyDrafts": 633,
+      "unsafeClusters": 0
+    },
+    "liveSearchGeneratedAt": "2026-06-07T03:04:49.905Z",
+    "liveSearchOk": true,
+    "projectStatusPublicPublished": 15,
+    "projectStatusTotalFiles": 669,
+    "reportsUsed": [
+      "project-status",
+      "autopilot-broad-ai-demand-brief",
+      "live-search-surface when available",
+      "article front matter"
+    ]
+  },
+  "summary": {
+    "broadClusters": 8,
+    "broadClustersWithoutPublicCoverage": 8,
+    "broadReadyCandidateFiles": 33,
+    "liveArticlesChecked": 15,
+    "liveMissingFromSitemap": 0,
+    "livePublicCount": 15,
+    "liveSitemapUrls": 85,
+    "projectPublicPublished": 15,
+    "publicArticles": 15,
+    "publicCategories": 6,
+    "publicTags": 31,
+    "publishedButNoindexed": 0,
+    "nonPublishedIndexable": 0,
+    "trafficDataAvailable": false,
+    "unsafeItems": 0
+  },
+  "unsafeItems": [],
+  "publicItems": [
+    {
+      "category": "报错解决",
+      "descriptionLength": 102,
+      "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
+      "slug": "codex-npm-install-error-beginner-fix",
+      "tags": [
+        "Codex",
+        "npm install",
+        "Node.js",
+        "报错解决"
+      ],
+      "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "category": "报价指南",
+      "descriptionLength": 72,
+      "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+      "slug": "first-upwork-project-pricing-checklist",
+      "tags": [
+        "Upwork",
+        "报价",
+        "自由职业",
+        "新手接单"
+      ],
+      "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "category": "部署教程",
+      "descriptionLength": 87,
+      "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+      "slug": "vercel-env-variable-missing-beginner-guide",
+      "tags": [
+        "Vercel",
+        "环境变量",
+        "Next.js",
+        "部署失败"
+      ],
+      "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "category": "收款工具",
+      "descriptionLength": 82,
+      "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+      "slug": "payoneer-wise-paypal-beginner-comparison",
+      "tags": [
+        "Payoneer",
+        "Wise",
+        "PayPal",
+        "跨境收款"
+      ],
+      "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "category": "Codex 新手教程",
+      "descriptionLength": 88,
+      "file": "content/blog/build-first-webpage-with-codex.mdx",
+      "slug": "build-first-webpage-with-codex",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 怎么做第一个网页",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 怎么做第一个网页",
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "category": "Codex 新手教程",
+      "descriptionLength": 97,
+      "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+      "slug": "codex-code-review-delivery-checklist",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 生成代码后怎么审核：交付前检查清单",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 生成代码后怎么审核：交付前检查清单",
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "category": "Codex 新手教程",
+      "descriptionLength": 89,
+      "file": "content/blog/codex-generated-code-review-guide.mdx",
+      "slug": "codex-generated-code-review-guide",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 生成代码后怎么审核",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 生成代码后怎么审核",
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "category": "Codex 新手教程",
+      "descriptionLength": 101,
+      "file": "content/blog/codex-github-before-commit-checklist.mdx",
+      "slug": "codex-github-before-commit-checklist",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 和 GitHub 怎么配合：提交代码前检查",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "category": "Codex 新手教程",
+      "descriptionLength": 87,
+      "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+      "slug": "codex-install-failed-beginner-fix",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 安装失败怎么办",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 安装失败怎么办",
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "category": "Codex 新手教程",
+      "descriptionLength": 102,
+      "file": "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+      "slug": "codex-upwork-small-job-risk-checklist",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 接 Upwork 小单怎么判断：风险检查清单",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "category": "Codex 新手教程",
+      "descriptionLength": 101,
+      "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+      "slug": "codex-vercel-deploy-preflight-checklist",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 部署 Vercel 前检查什么：上线前清单",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "category": "Codex 新手教程",
+      "descriptionLength": 104,
+      "file": "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
+      "slug": "codex-vs-claude-code-beginner-checklist",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 和 Claude Code 怎么选：新手对比清单",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 和 Claude Code 怎么选：新手对比清单",
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "category": "Codex 新手教程",
+      "descriptionLength": 89,
+      "file": "content/blog/what-is-codex-beginner-start.mdx",
+      "slug": "what-is-codex-beginner-start",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 是什么新手怎么开始",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 是什么新手怎么开始",
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "category": "Upwork 新手",
+      "descriptionLength": 64,
+      "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+      "slug": "upwork-client-requirements-analysis-beginner",
+      "tags": [
+        "Upwork",
+        "客户沟通",
+        "需求分析",
+        "Proposal"
+      ],
+      "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "category": "Upwork 新手",
+      "descriptionLength": 80,
+      "file": "content/blog/upwork-proposal-no-reply-checklist.mdx",
+      "slug": "upwork-proposal-no-reply-checklist",
+      "tags": [
+        "Upwork",
+        "Proposal",
+        "新手接单",
+        "自由职业"
+      ],
+      "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
+      "updatedAt": "2026-06-02"
+    }
+  ],
+  "publicCategoryCounts": {
+    "报错解决": 1,
+    "报价指南": 1,
+    "部署教程": 1,
+    "收款工具": 1,
+    "Codex 新手教程": 9,
+    "Upwork 新手": 2
+  },
+  "publicTagCounts": {
+    "Codex": 1,
+    "npm install": 1,
+    "Node.js": 1,
+    "报错解决": 1,
+    "Upwork": 3,
+    "报价": 1,
+    "自由职业": 2,
+    "新手接单": 2,
+    "Vercel": 1,
+    "环境变量": 1,
+    "Next.js": 1,
+    "部署失败": 1,
+    "Payoneer": 1,
+    "Wise": 1,
+    "PayPal": 1,
+    "跨境收款": 1,
+    "Codex 新手教程": 9,
+    "Codex 怎么做第一个网页": 1,
+    "AI 接单": 9,
+    "新手教程": 9,
+    "Codex 生成代码后怎么审核：交付前检查清单": 1,
+    "Codex 生成代码后怎么审核": 1,
+    "Codex 和 GitHub 怎么配合：提交代码前检查": 1,
+    "Codex 安装失败怎么办": 1,
+    "Codex 接 Upwork 小单怎么判断：风险检查清单": 1,
+    "Codex 部署 Vercel 前检查什么：上线前清单": 1,
+    "Codex 和 Claude Code 怎么选：新手对比清单": 1,
+    "Codex 是什么新手怎么开始": 1,
+    "客户沟通": 1,
+    "需求分析": 1,
+    "Proposal": 2
+  },
+  "broadCoverage": [
+    {
+      "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
+      "gapScore": 321,
+      "publicMatches": 0,
+      "readyCandidates": 6,
+      "searchQueries": [
+        "大模型部署教程",
+        "Ollama 本地部署教程",
+        "vLLM 部署教程",
+        "RunPod vLLM serverless",
+        "Hugging Face TGI 部署"
+      ],
+      "suggestedFiles": [
+        "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+        "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
+        "content/blog/llm-api-rate-limit-retry-guide.mdx"
+      ]
+    },
+    {
+      "cluster": "Agent 部署、工具调用和生产安全",
+      "gapScore": 317,
+      "publicMatches": 0,
+      "readyCandidates": 6,
+      "searchQueries": [
+        "AI Agent 部署教程",
+        "Agent 工具调用教程",
+        "AI Agent 生产环境",
+        "LangGraph Agent 入门",
+        "CrewAI 部署教程"
+      ],
+      "suggestedFiles": [
+        "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "content/blog/ai-agent-memory-rag-design-guide.mdx",
+        "content/blog/ai-automation-project-pricing-scope-guide.mdx"
+      ]
+    },
+    {
+      "cluster": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
+      "gapScore": 315,
+      "publicMatches": 0,
+      "readyCandidates": 6,
+      "searchQueries": [
+        "AI Agent 记忆怎么做",
+        "Agent memory RAG",
+        "AI Agent 长期记忆",
+        "pgvector Agent memory",
+        "RAG 和记忆区别"
+      ],
+      "suggestedFiles": [
+        "content/blog/ai-agent-memory-rag-design-guide.mdx",
+        "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "content/blog/n8n-ai-agent-rag-memory-guide.mdx"
+      ]
+    },
+    {
+      "cluster": "RAG、知识库、向量数据库和引用溯源",
+      "gapScore": 313,
+      "publicMatches": 0,
+      "readyCandidates": 6,
+      "searchQueries": [
+        "RAG 知识库搭建教程",
+        "向量数据库教程",
+        "企业知识库 AI 部署",
+        "RAG 检索不到内容",
+        "RAG 评测教程"
+      ],
+      "suggestedFiles": [
+        "content/blog/ai-agent-memory-rag-design-guide.mdx",
+        "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "content/blog/ai-automation-project-pricing-scope-guide.mdx"
+      ]
+    },
+    {
+      "cluster": "全行业 AI 提示词和工作流模板",
+      "gapScore": 311,
+      "publicMatches": 0,
+      "readyCandidates": 6,
+      "searchQueries": [
+        "AI 提示词大全",
+        "销售 AI 提示词",
+        "客服 AI 提示词",
+        "HR AI 提示词",
+        "运营 AI 提示词"
+      ],
+      "suggestedFiles": [
+        "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx"
+      ]
+    },
+    {
+      "cluster": "Dify、n8n、Coze、Flowise、MCP 自动化部署",
+      "gapScore": 307,
+      "publicMatches": 0,
+      "readyCandidates": 6,
+      "searchQueries": [
+        "Dify 部署教程",
+        "n8n AI 自动化教程",
+        "MCP 使用教程",
+        "Flowise 本地部署",
+        "Coze Bot 发布"
+      ],
+      "suggestedFiles": [
+        "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "content/blog/dify-workflow-error-handling-guide.mdx",
+        "content/blog/dify-workflow-vs-agent-guide.mdx"
+      ]
+    },
+    {
+      "cluster": "AI API 接入、限流、成本和多模型路由",
+      "gapScore": 293,
+      "publicMatches": 0,
+      "readyCandidates": 6,
+      "searchQueries": [
+        "OpenAI API 接入教程",
+        "Claude API rate limit",
+        "Gemini API 限流",
+        "OpenRouter API 教程",
+        "AI API key 安全"
+      ],
+      "suggestedFiles": [
+        "content/blog/ai-api-key-security-rotation-guide.mdx",
+        "content/blog/claude-api-rate-limit-debug-guide.mdx",
+        "content/blog/gemini-api-rate-limit-debug-guide.mdx"
+      ]
+    },
+    {
+      "cluster": "LLM 观测、评测、日志和上线后质量",
+      "gapScore": 287,
+      "publicMatches": 0,
+      "readyCandidates": 6,
+      "searchQueries": [
+        "LLM observability 教程",
+        "RAG 评测教程",
+        "promptfoo 入门",
+        "LangSmith 教程",
+        "AI 应用日志监控"
+      ],
+      "suggestedFiles": [
+        "content/blog/mcp-server-deployment-security-checklist.mdx",
+        "content/blog/agent-tool-permission-safety-guide.mdx",
+        "content/blog/arize-phoenix-llm-observability-guide.mdx"
+      ]
+    }
+  ],
+  "uncoveredBroadClusters": [
+    {
+      "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
+      "gapScore": 321,
+      "publicMatches": 0,
+      "readyCandidates": 6,
+      "searchQueries": [
+        "大模型部署教程",
+        "Ollama 本地部署教程",
+        "vLLM 部署教程",
+        "RunPod vLLM serverless",
+        "Hugging Face TGI 部署"
+      ],
+      "suggestedFiles": [
+        "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+        "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
+        "content/blog/llm-api-rate-limit-retry-guide.mdx"
+      ]
+    },
+    {
+      "cluster": "Agent 部署、工具调用和生产安全",
+      "gapScore": 317,
+      "publicMatches": 0,
+      "readyCandidates": 6,
+      "searchQueries": [
+        "AI Agent 部署教程",
+        "Agent 工具调用教程",
+        "AI Agent 生产环境",
+        "LangGraph Agent 入门",
+        "CrewAI 部署教程"
+      ],
+      "suggestedFiles": [
+        "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "content/blog/ai-agent-memory-rag-design-guide.mdx",
+        "content/blog/ai-automation-project-pricing-scope-guide.mdx"
+      ]
+    },
+    {
+      "cluster": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
+      "gapScore": 315,
+      "publicMatches": 0,
+      "readyCandidates": 6,
+      "searchQueries": [
+        "AI Agent 记忆怎么做",
+        "Agent memory RAG",
+        "AI Agent 长期记忆",
+        "pgvector Agent memory",
+        "RAG 和记忆区别"
+      ],
+      "suggestedFiles": [
+        "content/blog/ai-agent-memory-rag-design-guide.mdx",
+        "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "content/blog/n8n-ai-agent-rag-memory-guide.mdx"
+      ]
+    },
+    {
+      "cluster": "RAG、知识库、向量数据库和引用溯源",
+      "gapScore": 313,
+      "publicMatches": 0,
+      "readyCandidates": 6,
+      "searchQueries": [
+        "RAG 知识库搭建教程",
+        "向量数据库教程",
+        "企业知识库 AI 部署",
+        "RAG 检索不到内容",
+        "RAG 评测教程"
+      ],
+      "suggestedFiles": [
+        "content/blog/ai-agent-memory-rag-design-guide.mdx",
+        "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "content/blog/ai-automation-project-pricing-scope-guide.mdx"
+      ]
+    },
+    {
+      "cluster": "全行业 AI 提示词和工作流模板",
+      "gapScore": 311,
+      "publicMatches": 0,
+      "readyCandidates": 6,
+      "searchQueries": [
+        "AI 提示词大全",
+        "销售 AI 提示词",
+        "客服 AI 提示词",
+        "HR AI 提示词",
+        "运营 AI 提示词"
+      ],
+      "suggestedFiles": [
+        "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx"
+      ]
+    },
+    {
+      "cluster": "Dify、n8n、Coze、Flowise、MCP 自动化部署",
+      "gapScore": 307,
+      "publicMatches": 0,
+      "readyCandidates": 6,
+      "searchQueries": [
+        "Dify 部署教程",
+        "n8n AI 自动化教程",
+        "MCP 使用教程",
+        "Flowise 本地部署",
+        "Coze Bot 发布"
+      ],
+      "suggestedFiles": [
+        "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "content/blog/dify-workflow-error-handling-guide.mdx",
+        "content/blog/dify-workflow-vs-agent-guide.mdx"
+      ]
+    },
+    {
+      "cluster": "AI API 接入、限流、成本和多模型路由",
+      "gapScore": 293,
+      "publicMatches": 0,
+      "readyCandidates": 6,
+      "searchQueries": [
+        "OpenAI API 接入教程",
+        "Claude API rate limit",
+        "Gemini API 限流",
+        "OpenRouter API 教程",
+        "AI API key 安全"
+      ],
+      "suggestedFiles": [
+        "content/blog/ai-api-key-security-rotation-guide.mdx",
+        "content/blog/claude-api-rate-limit-debug-guide.mdx",
+        "content/blog/gemini-api-rate-limit-debug-guide.mdx"
+      ]
+    },
+    {
+      "cluster": "LLM 观测、评测、日志和上线后质量",
+      "gapScore": 287,
+      "publicMatches": 0,
+      "readyCandidates": 6,
+      "searchQueries": [
+        "LLM observability 教程",
+        "RAG 评测教程",
+        "promptfoo 入门",
+        "LangSmith 教程",
+        "AI 应用日志监控"
+      ],
+      "suggestedFiles": [
+        "content/blog/mcp-server-deployment-security-checklist.mdx",
+        "content/blog/agent-tool-permission-safety-guide.mdx",
+        "content/blog/arize-phoenix-llm-observability-guide.mdx"
+      ]
+    }
+  ],
+  "nextActions": [
+    "Use this inventory to answer what is public now before choosing the next human review batch.",
+    "Prioritize broad clusters with zero public matches and ready candidates, but do not claim measured demand or traffic from this report.",
+    "Keep publishing in 1-3 article batches after human approval and dry-run checks."
+  ]
+}

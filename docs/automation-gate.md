@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-07T02:52:58.764Z
+Generated at: 2026-06-07T03:05:04.306Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 115
-- Passed: 115
+- Checks: 117
+- Passed: 117
 - Failed: 0
 
 ## Checks
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=133, unsafeClaims=0, watchMentions=1291 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=135, unsafeClaims=0, watchMentions=1311 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, candidates=19 |
@@ -128,4 +128,6 @@ Overall: PASS
 | wave publish simulation projects only approved Wave 1 items | PASS | wave=1, items=3, ready=3, projected=3 |
 | wave publish simulation public total matches project status | PASS | current=15, projectedAfterApproval=3, projectedPublic=18 |
 | live search surface check passed | PASS | publicArticles=15, failed=0 |
+| public surface inventory is read-only and matches public counts | PASS | public=15, live=15, unsafe=0 |
+| public surface inventory identifies broad AI public gaps with candidates | PASS | clusters=8, zeroPublic=8 |
 | manual review workbench is ready and stops before publishing | PASS | currentItemsCovered=3, publishableNow=0 |

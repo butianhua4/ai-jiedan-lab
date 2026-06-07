@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T02:52:58.764Z
+Generated at: 2026-06-07T03:05:12.431Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -53,7 +53,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=pt-br
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - https://docs.dify.ai -> https://docs.dify.ai/en/use-dify/getting-started/introduction
@@ -654,8 +654,60 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 133
-- Traffic claim watch mentions: 1291
+- Traffic claim files scanned: 135
+- Traffic claim watch mentions: 1311
+
+## Public Surface Inventory
+
+- Public articles: 15
+- Project public published: 15
+- Live public count: 15
+- Live sitemap URLs: 85
+- Live missing from sitemap: 0
+- Public categories: 6
+- Public tags: 31
+- Broad clusters: 8
+- Broad clusters without public coverage: 8
+- Traffic data available: false
+- Unsafe items: 0
+
+Public categories:
+
+- Codex 新手教程: 9
+- Upwork 新手: 2
+- 报错解决: 1
+- 报价指南: 1
+- 部署教程: 1
+- 收款工具: 1
+
+| Category | Updated | Tags | Title | URL |
+| --- | --- | --- | --- | --- |
+| 报错解决 | 2026-06-02 | 4 | Codex 项目 npm install 报错怎么办：新手排查步骤 | /blog/codex-npm-install-error-beginner-fix |
+| 报价指南 | 2026-06-02 | 4 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | /blog/first-upwork-project-pricing-checklist |
+| 部署教程 | 2026-06-02 | 4 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | /blog/vercel-env-variable-missing-beginner-guide |
+| 收款工具 | 2026-06-02 | 4 | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | /blog/payoneer-wise-paypal-beginner-comparison |
+| Codex 新手教程 | 2026-06-01 | 4 | Codex 怎么做第一个网页 | /blog/build-first-webpage-with-codex |
+| Codex 新手教程 | 2026-06-01 | 4 | Codex 生成代码后怎么审核：交付前检查清单 | /blog/codex-code-review-delivery-checklist |
+| Codex 新手教程 | 2026-06-01 | 4 | Codex 生成代码后怎么审核 | /blog/codex-generated-code-review-guide |
+| Codex 新手教程 | 2026-06-01 | 4 | Codex 和 GitHub 怎么配合：提交代码前检查 | /blog/codex-github-before-commit-checklist |
+| Codex 新手教程 | 2026-06-01 | 4 | Codex 安装失败怎么办 | /blog/codex-install-failed-beginner-fix |
+| Codex 新手教程 | 2026-06-01 | 4 | Codex 接 Upwork 小单怎么判断：风险检查清单 | /blog/codex-upwork-small-job-risk-checklist |
+| Codex 新手教程 | 2026-06-01 | 4 | Codex 部署 Vercel 前检查什么：上线前清单 | /blog/codex-vercel-deploy-preflight-checklist |
+| Codex 新手教程 | 2026-06-01 | 4 | Codex 和 Claude Code 怎么选：新手对比清单 | /blog/codex-vs-claude-code-beginner-checklist |
+| Codex 新手教程 | 2026-06-01 | 4 | Codex 是什么新手怎么开始 | /blog/what-is-codex-beginner-start |
+| Upwork 新手 | 2026-06-02 | 4 | Upwork 客户需求太模糊怎么办：新手分析和追问清单 | /blog/upwork-client-requirements-analysis-beginner |
+| Upwork 新手 | 2026-06-02 | 4 | Upwork Proposal 发出去没人回怎么办：新手检查清单 | /blog/upwork-proposal-no-reply-checklist |
+
+| Gap score | Public | Ready candidates | Cluster | Suggested files |
+| --- | --- | --- | --- | --- |
+| 321 | 0 | 6 | 开源大模型部署：Ollama、vLLM、TGI、RunPod | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/llm-cost-monitoring-dashboard-guide.mdx<br>content/blog/llm-api-rate-limit-retry-guide.mdx |
+| 317 | 0 | 6 | Agent 部署、工具调用和生产安全 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 315 | 0 | 6 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres | content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/n8n-ai-agent-rag-memory-guide.mdx |
+| 313 | 0 | 6 | RAG、知识库、向量数据库和引用溯源 | content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 311 | 0 | 6 | 全行业 AI 提示词和工作流模板 | content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
+| 307 | 0 | 6 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx |
+| 293 | 0 | 6 | AI API 接入、限流、成本和多模型路由 | content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx |
+| 287 | 0 | 6 | LLM 观测、评测、日志和上线后质量 | content/blog/mcp-server-deployment-security-checklist.mdx<br>content/blog/agent-tool-permission-safety-guide.mdx<br>content/blog/arize-phoenix-llm-observability-guide.mdx |
 
 ## Preflight
 
@@ -1017,7 +1069,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-07T02:52:46.961Z
+- Latest check: 2026-06-07T03:04:49.905Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
@@ -1034,6 +1086,7 @@ Next review files:
 - Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.
 - Use docs/wave-publish-simulation.md to see the exact post-approval mark-review and publish dry-run path.
 - Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.
+- Use docs/public-surface-inventory.md to confirm what is public now and which broad AI clusters still have zero public coverage.
 - Use docs/public-coverage-gap-decision-pack.md to review the 8 broad-demand public gap candidates and their optimization actions.
 - Use docs/ai-deployment-review-pack.md to review the 10 deployment, Agent, RAG, memory, API, and infrastructure candidates.
 - Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.

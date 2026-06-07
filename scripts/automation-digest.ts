@@ -264,6 +264,49 @@ type TrafficClaimGuard = {
   };
 };
 
+type PublicSurfaceInventory = {
+  broadCoverage: Array<{
+    cluster: string;
+    gapScore: number;
+    publicMatches: number;
+    readyCandidates: number;
+    searchQueries: string[];
+    suggestedFiles: string[];
+  }>;
+  publicCategoryCounts: Record<string, number>;
+  publicItems: Array<{
+    category: string;
+    descriptionLength: number;
+    file: string;
+    slug: string;
+    tags: string[];
+    title: string;
+    updatedAt: string;
+  }>;
+  publicTagCounts: Record<string, number>;
+  summary: {
+    broadClusters: number;
+    broadClustersWithoutPublicCoverage: number;
+    liveMissingFromSitemap: number | null;
+    livePublicCount: number | null;
+    liveSitemapUrls: number | null;
+    projectPublicPublished: number;
+    publicArticles: number;
+    publicCategories: number;
+    publicTags: number;
+    trafficDataAvailable: boolean;
+    unsafeItems: number;
+  };
+  uncoveredBroadClusters: Array<{
+    cluster: string;
+    gapScore: number;
+    publicMatches: number;
+    readyCandidates: number;
+    searchQueries: string[];
+    suggestedFiles: string[];
+  }>;
+};
+
 type ContentIntegrity = {
   summary: {
     allIssueItems: number;
@@ -1112,6 +1155,7 @@ const reports = {
   wavePublishSimulation: readJson<WavePublishSimulation>("content/automation/wave-publish-simulation.json"),
   trafficEvidence: readJson<TrafficEvidence>("content/automation/traffic-evidence-audit.json"),
   trafficClaimGuard: readJson<TrafficClaimGuard>("content/automation/traffic-claim-guard.json"),
+  publicSurfaceInventory: readJson<PublicSurfaceInventory>("content/automation/public-surface-inventory.json"),
   contentIntegrity: readJson<ContentIntegrity>("content/automation/content-integrity-audit.json"),
   internalLinks: readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json"),
   sourceHealth: readJson<SourceHealth>("content/automation/source-target-health-audit.json"),
@@ -1499,6 +1543,24 @@ const payload = {
     unsafeClaims: reports.trafficClaimGuard.data?.summary.unsafeClaims ?? null,
     watchMentions: reports.trafficClaimGuard.data?.summary.watchMentions ?? null,
   },
+  publicSurfaceInventory: {
+    broadCoverage: reports.publicSurfaceInventory.data?.broadCoverage.slice(0, 8) ?? [],
+    broadClusters: reports.publicSurfaceInventory.data?.summary.broadClusters ?? null,
+    broadClustersWithoutPublicCoverage: reports.publicSurfaceInventory.data?.summary.broadClustersWithoutPublicCoverage ?? null,
+    liveMissingFromSitemap: reports.publicSurfaceInventory.data?.summary.liveMissingFromSitemap ?? null,
+    livePublicCount: reports.publicSurfaceInventory.data?.summary.livePublicCount ?? null,
+    liveSitemapUrls: reports.publicSurfaceInventory.data?.summary.liveSitemapUrls ?? null,
+    projectPublicPublished: reports.publicSurfaceInventory.data?.summary.projectPublicPublished ?? null,
+    publicArticles: reports.publicSurfaceInventory.data?.summary.publicArticles ?? null,
+    publicCategories: reports.publicSurfaceInventory.data?.summary.publicCategories ?? null,
+    publicCategoryCounts: reports.publicSurfaceInventory.data?.publicCategoryCounts ?? {},
+    publicItems: reports.publicSurfaceInventory.data?.publicItems ?? [],
+    publicTags: reports.publicSurfaceInventory.data?.summary.publicTags ?? null,
+    publicTagCounts: reports.publicSurfaceInventory.data?.publicTagCounts ?? {},
+    trafficDataAvailable: reports.publicSurfaceInventory.data?.summary.trafficDataAvailable ?? false,
+    uncoveredBroadClusters: reports.publicSurfaceInventory.data?.uncoveredBroadClusters.slice(0, 8) ?? [],
+    unsafeItems: reports.publicSurfaceInventory.data?.summary.unsafeItems ?? null,
+  },
   preflight: {
     checked: reports.preflight.data?.summary.checked ?? null,
     failed: reports.preflight.data?.summary.failed ?? null,
@@ -1723,6 +1785,9 @@ function buildNextActions() {
   if (!reports.trafficClaimGuard.data || reports.trafficClaimGuard.data.summary.unsafeClaims > 0) {
     return ["Open docs/traffic-claim-guard.md and remove unsupported traffic claims."];
   }
+  if (!reports.publicSurfaceInventory.data || reports.publicSurfaceInventory.data.summary.unsafeItems > 0) {
+    return ["Open docs/public-surface-inventory.md and resolve public surface inventory issues before choosing the next review batch."];
+  }
   if (!reports.contentIntegrity.data || reports.contentIntegrity.data.summary.blockingItems > 0) {
     return ["Open docs/content-integrity-audit.md and fix content integrity blockers before any review or publish action."];
   }
@@ -1833,6 +1898,7 @@ function buildNextActions() {
     "Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.",
     "Use docs/wave-publish-simulation.md to see the exact post-approval mark-review and publish dry-run path.",
     "Use docs/public-expansion-queue.md as the approval-wave order for expanding public coverage.",
+    "Use docs/public-surface-inventory.md to confirm what is public now and which broad AI clusters still have zero public coverage.",
     "Use docs/public-coverage-gap-decision-pack.md to review the 8 broad-demand public gap candidates and their optimization actions.",
     "Use docs/ai-deployment-review-pack.md to review the 10 deployment, Agent, RAG, memory, API, and infrastructure candidates.",
     "Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.",
@@ -2507,6 +2573,36 @@ function toMarkdown(data: typeof payload) {
     `- Unsupported traffic claims: ${data.trafficClaimGuard.unsafeClaims}`,
     `- Traffic claim files scanned: ${data.trafficClaimGuard.filesScanned}`,
     `- Traffic claim watch mentions: ${data.trafficClaimGuard.watchMentions}`,
+    "",
+    "## Public Surface Inventory",
+    "",
+    `- Public articles: ${data.publicSurfaceInventory.publicArticles}`,
+    `- Project public published: ${data.publicSurfaceInventory.projectPublicPublished}`,
+    `- Live public count: ${data.publicSurfaceInventory.livePublicCount}`,
+    `- Live sitemap URLs: ${data.publicSurfaceInventory.liveSitemapUrls}`,
+    `- Live missing from sitemap: ${data.publicSurfaceInventory.liveMissingFromSitemap}`,
+    `- Public categories: ${data.publicSurfaceInventory.publicCategories}`,
+    `- Public tags: ${data.publicSurfaceInventory.publicTags}`,
+    `- Broad clusters: ${data.publicSurfaceInventory.broadClusters}`,
+    `- Broad clusters without public coverage: ${data.publicSurfaceInventory.broadClustersWithoutPublicCoverage}`,
+    `- Traffic data available: ${data.publicSurfaceInventory.trafficDataAvailable}`,
+    `- Unsafe items: ${data.publicSurfaceInventory.unsafeItems}`,
+    "",
+    "Public categories:",
+    "",
+    ...Object.entries(data.publicSurfaceInventory.publicCategoryCounts)
+      .sort((a, b) => Number(b[1]) - Number(a[1]) || a[0].localeCompare(b[0]))
+      .map(([category, count]) => `- ${category}: ${count}`),
+    "",
+    "| Category | Updated | Tags | Title | URL |",
+    "| --- | --- | --- | --- | --- |",
+    ...data.publicSurfaceInventory.publicItems.map((item) => `| ${item.category} | ${item.updatedAt} | ${item.tags.length} | ${item.title} | /blog/${item.slug} |`),
+    "",
+    "| Gap score | Public | Ready candidates | Cluster | Suggested files |",
+    "| --- | --- | --- | --- | --- |",
+    ...data.publicSurfaceInventory.broadCoverage.map(
+      (cluster) => `| ${cluster.gapScore} | ${cluster.publicMatches} | ${cluster.readyCandidates} | ${cluster.cluster} | ${cluster.suggestedFiles.join("<br>")} |`,
+    ),
     "",
     "## Preflight",
     "",

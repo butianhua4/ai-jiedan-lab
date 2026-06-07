@@ -1,6 +1,6 @@
 # Autopilot Broad Freshness Triage
 
-Generated at: 2026-06-07T02:51:28.296Z
+Generated at: 2026-06-07T03:03:28.153Z
 
 This report is read-only. It prioritizes high-demand AI draft candidates for human freshness review before any approval or publish action.
 
@@ -15,8 +15,8 @@ This report is read-only. It prioritizes high-demand AI draft candidates for hum
 
 ## Source Evidence
 
-- Broad demand generated at: 2026-06-07T02:51:27.772Z
-- Content freshness generated at: 2026-06-07T02:51:21.698Z
+- Broad demand generated at: 2026-06-07T03:03:27.611Z
+- Content freshness generated at: 2026-06-07T03:03:21.275Z
 - Source health summary: {"checkedUrls":18,"currentReviewFiles":3,"failedUrls":0,"filesCovered":20,"filesWithReachableSource":20,"filesWithoutReachableSource":0,"missingUrlTargets":0,"nextSourcePackFiles":19,"okUrls":18,"publicGapDecisionFiles":8,"redirectedUrls":13,"sourceReferences":147,"uniqueUrls":18}
 - Triage source: autopilot-broad-ai-demand readyCandidates joined with content-freshness risk and source health URLs
 

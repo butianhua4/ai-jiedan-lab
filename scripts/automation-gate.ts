@@ -362,6 +362,25 @@ async function main() {
     reviewPlan: { nextBatch: unknown };
   }>("content/automation/manual-review-workbench.json");
   const projectStatus = readJson<{ articles: { publicPublished: number; publishableNow: unknown[] } }>("content/automation/project-status.json");
+  const publicSurfaceInventory = readJson<{
+    broadCoverage?: Array<{ publicMatches?: number; readyCandidates?: number; searchQueries?: unknown[]; suggestedFiles?: unknown[] }>;
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    publicItems?: Array<{ file?: string; slug?: string; title?: string }>;
+    summary: {
+      broadClusters: number;
+      broadClustersWithoutPublicCoverage: number;
+      liveMissingFromSitemap: number | null;
+      livePublicCount: number | null;
+      nonPublishedIndexable: number;
+      projectPublicPublished: number;
+      publicArticles: number;
+      publishedButNoindexed: number;
+      trafficDataAvailable: boolean;
+      unsafeItems: number;
+    };
+    uncoveredBroadClusters?: unknown[];
+    unsafeItems?: unknown[];
+  }>("content/automation/public-surface-inventory.json");
   const trafficEvidence = readJson<{
     guardrails: { autoPublish: boolean };
     summary: {
@@ -2340,6 +2359,38 @@ async function main() {
       name: "live search surface check passed",
       ok: liveSearch.ok === true && liveSearch.failedChecks.length === 0,
       detail: `publicArticles=${liveSearch.articles.publicCount}, failed=${liveSearch.failedChecks.length}`,
+    },
+    {
+      name: "public surface inventory is read-only and matches public counts",
+      ok:
+        publicSurfaceInventory.guardrails.autoEditArticles === false &&
+        publicSurfaceInventory.guardrails.autoMarkReview === false &&
+        publicSurfaceInventory.guardrails.autoPublish === false &&
+        publicSurfaceInventory.guardrails.trafficClaim === "not-included" &&
+        publicSurfaceInventory.summary.publicArticles === projectStatus.articles.publicPublished &&
+        publicSurfaceInventory.summary.projectPublicPublished === projectStatus.articles.publicPublished &&
+        (publicSurfaceInventory.summary.livePublicCount === null || publicSurfaceInventory.summary.livePublicCount === liveSearch.articles.publicCount) &&
+        (publicSurfaceInventory.summary.liveMissingFromSitemap === null || publicSurfaceInventory.summary.liveMissingFromSitemap === 0) &&
+        publicSurfaceInventory.summary.publishedButNoindexed === 0 &&
+        publicSurfaceInventory.summary.nonPublishedIndexable === 0 &&
+        publicSurfaceInventory.summary.trafficDataAvailable === false &&
+        publicSurfaceInventory.summary.unsafeItems === 0,
+      detail: `public=${publicSurfaceInventory.summary.publicArticles}, live=${publicSurfaceInventory.summary.livePublicCount}, unsafe=${publicSurfaceInventory.summary.unsafeItems}`,
+    },
+    {
+      name: "public surface inventory identifies broad AI public gaps with candidates",
+      ok:
+        publicSurfaceInventory.summary.broadClusters >= autopilotBroadAiDemandBrief.summary.clusters &&
+        publicSurfaceInventory.summary.broadClustersWithoutPublicCoverage === autopilotBroadAiDemandBrief.summary.clustersWithoutPublicCoverage &&
+        Boolean(
+          publicSurfaceInventory.broadCoverage?.every(
+            (cluster) =>
+              (cluster.searchQueries?.length || 0) > 0 &&
+              (cluster.publicMatches || 0) >= 0 &&
+              ((cluster.publicMatches || 0) > 0 || ((cluster.readyCandidates || 0) > 0 && (cluster.suggestedFiles?.length || 0) > 0)),
+          ),
+        ),
+      detail: `clusters=${publicSurfaceInventory.summary.broadClusters}, zeroPublic=${publicSurfaceInventory.summary.broadClustersWithoutPublicCoverage}`,
     },
     {
       name: "manual review workbench is ready and stops before publishing",
