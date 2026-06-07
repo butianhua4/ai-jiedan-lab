@@ -60,7 +60,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/automation docs/ai-deployment-coverage.md docs/ai-deployment-review-pack.md docs/autopilot-approval-packet.md docs/autopilot-broad-ai-demand-brief.md docs/autopilot-broad-freshness-triage.md docs/autopilot-broad-publish-waves.md docs/autopilot-broad-wave-optimization.md docs/autopilot-human-review-playbook.md docs/autopilot-internal-link-brief.md docs/autopilot-queued-playbook-brief.md docs/autopilot-review-queue.md docs/autopilot-review-sprint-board.md docs/autopilot-search-query-gap-brief.md docs/autopilot-search-intent-brief.md docs/autopilot-source-verification-brief.md docs/automation-digest.md docs/automation-gate.md docs/broad-first-coverage-launch-pack.md docs/broad-first-coverage-readiness-matrix.md docs/broad-search-demand-map.md docs/content-cannibalization.md docs/content-freshness.md docs/content-integrity-audit.md docs/content-opportunity-backlog.md docs/industry-prompt-coverage.md docs/industry-prompt-review-pack.md docs/internal-link-opportunity-audit.md docs/live-search-surface.md docs/manual-review-workbench.md docs/next-review-source-pack.md docs/public-coverage-gap-decision-pack.md docs/public-coverage-gap-plan.md docs/public-coverage-gap-preflight.md docs/public-expansion-queue.md docs/public-surface-inventory.md docs/publish-readiness-pack.md docs/review-action-board.md docs/review-cannibalization-brief.md docs/review-freshness-brief.md docs/review-optimization-brief.md docs/review-portfolio-board.md docs/review-automation.md docs/review-batch-plan.md docs/review-coverage-report.md docs/review-preflight.md docs/review-priority-roadmap.md docs/search-intent-approval-packet.md docs/search-intent-lane-map.md docs/search-intent-wave-planner.md docs/search-query-coverage.md docs/search-query-match-audit.md docs/search-snippet-readiness-audit.md docs/seo-opportunity-map.md docs/source-target-health-audit.md docs/structured-data-readiness-audit.md docs/traffic-claim-guard.md docs/traffic-evidence-audit.md docs/wave-approval-packet.md docs/wave-publish-simulation.md
+          git add content/automation docs/ai-deployment-coverage.md docs/ai-deployment-review-pack.md docs/autopilot-approval-packet.md docs/autopilot-broad-ai-demand-brief.md docs/autopilot-broad-freshness-triage.md docs/autopilot-broad-publish-waves.md docs/autopilot-broad-wave-optimization.md docs/autopilot-broad-wave-remediation-pack.md docs/autopilot-human-review-playbook.md docs/autopilot-internal-link-brief.md docs/autopilot-queued-playbook-brief.md docs/autopilot-review-queue.md docs/autopilot-review-sprint-board.md docs/autopilot-search-query-gap-brief.md docs/autopilot-search-intent-brief.md docs/autopilot-source-verification-brief.md docs/automation-digest.md docs/automation-gate.md docs/broad-first-coverage-launch-pack.md docs/broad-first-coverage-readiness-matrix.md docs/broad-search-demand-map.md docs/content-cannibalization.md docs/content-freshness.md docs/content-integrity-audit.md docs/content-opportunity-backlog.md docs/industry-prompt-coverage.md docs/industry-prompt-review-pack.md docs/internal-link-opportunity-audit.md docs/live-search-surface.md docs/manual-review-workbench.md docs/next-review-source-pack.md docs/public-coverage-gap-decision-pack.md docs/public-coverage-gap-plan.md docs/public-coverage-gap-preflight.md docs/public-expansion-queue.md docs/public-surface-inventory.md docs/publish-readiness-pack.md docs/review-action-board.md docs/review-cannibalization-brief.md docs/review-freshness-brief.md docs/review-optimization-brief.md docs/review-portfolio-board.md docs/review-automation.md docs/review-batch-plan.md docs/review-coverage-report.md docs/review-preflight.md docs/review-priority-roadmap.md docs/search-intent-approval-packet.md docs/search-intent-lane-map.md docs/search-intent-wave-planner.md docs/search-query-coverage.md docs/search-query-match-audit.md docs/search-snippet-readiness-audit.md docs/seo-opportunity-map.md docs/source-target-health-audit.md docs/source-target-remediation-pack.md docs/structured-data-readiness-audit.md docs/traffic-claim-guard.md docs/traffic-evidence-audit.md docs/wave-approval-packet.md docs/wave-publish-simulation.md
           if git diff --cached --quiet; then
             echo "No automation report changes to commit."
           else
@@ -103,6 +103,7 @@ jobs:
             content/automation/autopilot-broad-freshness-triage.json
             content/automation/autopilot-broad-publish-waves.json
             content/automation/autopilot-broad-wave-optimization.json
+            content/automation/autopilot-broad-wave-remediation-pack.json
             content/automation/broad-first-coverage-launch-pack.json
             content/automation/broad-first-coverage-readiness-matrix.json
             content/automation/autopilot-review-sprint-board.json
@@ -150,6 +151,7 @@ jobs:
             content/automation/search-query-match-audit.json
             content/automation/structured-data-readiness-audit.json
             content/automation/source-target-health-audit.json
+            content/automation/source-target-remediation-pack.json
             content/automation/searchability-check.json
             content/automation/automation-run-summary.json
             docs/ai-deployment-coverage.md
@@ -195,6 +197,7 @@ jobs:
             docs/autopilot-broad-freshness-triage.md
             docs/autopilot-broad-publish-waves.md
             docs/autopilot-broad-wave-optimization.md
+            docs/autopilot-broad-wave-remediation-pack.md
             docs/broad-first-coverage-launch-pack.md
             docs/broad-first-coverage-readiness-matrix.md
             docs/autopilot-review-sprint-board.md
@@ -211,6 +214,7 @@ jobs:
             docs/search-snippet-readiness-audit.md
             docs/seo-opportunity-map.md
             docs/source-target-health-audit.md
+            docs/source-target-remediation-pack.md
             docs/structured-data-readiness-audit.md
 
       - name: Fail if live search surfaces failed
