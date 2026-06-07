@@ -10,6 +10,10 @@ type PublicGapDecisionPack = {
   items: Array<{ file: string; reviewPacket: { sourceTargets: string[] }; title: string }>;
 };
 
+type BroadFirstCoverageLaunchPack = {
+  items: Array<{ cluster: string; file: string; sourceTargets: string[]; title: string }>;
+};
+
 type NextReviewSourcePack = {
   items: Array<{ file: string; officialSourceTargets: string[]; title: string }>;
 };
@@ -17,7 +21,7 @@ type NextReviewSourcePack = {
 type SourceReference = {
   file: string;
   label: string;
-  scope: "current-review" | "next-source-pack" | "public-gap-decision";
+  scope: "broad-first-coverage" | "current-review" | "next-source-pack" | "public-gap-decision";
   title: string;
   url: string;
 };
@@ -38,11 +42,13 @@ async function main() {
   const publishPack = readJson<PublishPack>("content/automation/publish-readiness-pack.json");
   const publicGapDecisionPack = readJson<PublicGapDecisionPack>("content/automation/public-coverage-gap-decision-pack.json");
   const nextReviewSourcePack = readJson<NextReviewSourcePack>("content/automation/next-review-source-pack.json");
+  const broadFirstCoverageLaunchPack = readJson<BroadFirstCoverageLaunchPack>("content/automation/broad-first-coverage-launch-pack.json");
 
   const references = [
     ...publishPack.items.flatMap((item) => toReferences(item.file, item.title, item.officialSourceTargets || [], "current-review")),
     ...publicGapDecisionPack.items.flatMap((item) => toReferences(item.file, item.title, item.reviewPacket.sourceTargets || [], "public-gap-decision")),
     ...nextReviewSourcePack.items.flatMap((item) => toReferences(item.file, item.title, item.officialSourceTargets || [], "next-source-pack")),
+    ...broadFirstCoverageLaunchPack.items.flatMap((item) => toReferences(item.file, item.title, item.sourceTargets || [], "broad-first-coverage")),
   ];
   const missingUrlTargets = references.filter((reference) => !reference.url);
   const referencesWithUrls = references.filter((reference) => reference.url);
@@ -78,6 +84,7 @@ async function main() {
     },
     summary: {
       checkedUrls: checks.length,
+      broadFirstCoverageFiles: new Set(referencesWithUrls.filter((reference) => reference.scope === "broad-first-coverage").map((reference) => reference.file)).size,
       currentReviewFiles: new Set(referencesWithUrls.filter((reference) => reference.scope === "current-review").map((reference) => reference.file)).size,
       failedUrls: failedChecks.length,
       filesCovered: files.length,

@@ -1,6 +1,6 @@
 # Autopilot Search Intent Brief
 
-Generated at: 2026-06-07T03:28:20.148Z
+Generated at: 2026-06-07T03:46:22.065Z
 
 This report is read-only. It checks search-intent coverage for the top autopilot approval packet items.
 
@@ -44,27 +44,17 @@ This report is read-only. It checks search-intent coverage for the top autopilot
 | Ready | Title hits | Description hits | Heading hits | Body hits | Token hits | Weaknesses | Primary query | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | 0 | 0 | 0 | 0 | 8 | 3 | AI Agent deployment tutorial | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | 0 | 0 | 0 | 0 | 10 | 3 | LLM observability | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| true | 0 | 0 | 0 | 0 | 2 | 4 | RAG 知识库搭建教程 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
 ## All Items
 
 | Ready | Title hits | Description hits | Heading hits | Body hits | Token hits | Weaknesses | Primary query | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | 1 | 1 | 0 | 2 | 7 | 0 | ChatGPT prompts for business | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | true | 0 | 0 | 0 | 0 | 8 | 3 | AI Agent deployment tutorial | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | 0 | 0 | 0 | 0 | 10 | 3 | LLM observability | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| true | 1 | 1 | 0 | 3 | 11 | 0 | ChatGPT prompts for business | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | 0 | 0 | 0 | 0 | 2 | 4 | RAG 知识库搭建教程 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
 ## Review Suggestions
-
-### 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用
-
-- File: content/blog/industry-ai-prompts-template-library-2026.mdx
-- Primary query: ChatGPT prompts for business
-- Search weaknesses: none
-
-Review suggestions:
-
-- Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.
 
 ### AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查
 
@@ -79,16 +69,27 @@ Review suggestions:
 - During human review, add one natural H2/H3 or paragraph that answers: AI Agent deployment tutorial / agent tool calling tutorial.
 - Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.
 
-### AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急
+### 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用
 
-- File: content/blog/ai-api-key-security-rotation-guide.mdx
-- Primary query: LLM observability
-- Search weaknesses: no exact search query appears in title; no exact search query appears in description; no exact search query appears in headings or body
+- File: content/blog/industry-ai-prompts-template-library-2026.mdx
+- Primary query: ChatGPT prompts for business
+- Search weaknesses: none
 
 Review suggestions:
 
-- During human review, consider whether the title can naturally include: LLM observability.
-- During human review, tune the meta description around: LLM observability.
-- During human review, add one natural H2/H3 or paragraph that answers: LLM observability / RAG evaluation.
+- Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.
+
+### 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
+
+- File: content/blog/ai-model-selection-customer-service-guide.mdx
+- Primary query: RAG 知识库搭建教程
+- Search weaknesses: no exact search query appears in title; no exact search query appears in description; no exact search query appears in headings or body; few query tokens appear in searchable text
+
+Review suggestions:
+
+- During human review, consider whether the title can naturally include: RAG 知识库搭建教程.
+- During human review, tune the meta description around: RAG 知识库搭建教程.
+- During human review, add one natural H2/H3 or paragraph that answers: RAG 知识库搭建教程 / 向量数据库教程.
+- During human review, add user-language phrasing without keyword stuffing.
 - Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.
 

@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { articleFiles, readArticle, rel } from "./content-utils";
 
-type CandidateScope = "expansion" | "recommended" | "wave-1";
+type CandidateScope = "broad-first-coverage" | "expansion" | "recommended" | "wave-1";
 
 type LinkSuggestion = {
   file: string;
@@ -46,14 +46,20 @@ type WaveApprovalPacket = {
   files: string[];
 };
 
+type BroadFirstCoverageLaunchPack = {
+  items: Array<{ file: string }>;
+};
+
 async function main() {
   const publicExpansion = readJson<PublicExpansionQueue>("content/automation/public-expansion-queue.json");
   const reviewCandidates = readJson<ReviewCandidates>("content/automation/review-candidates.json");
   const waveApprovalPacket = readJson<WaveApprovalPacket>("content/automation/wave-approval-packet.json");
+  const broadFirstCoverageLaunchPack = readJson<BroadFirstCoverageLaunchPack>("content/automation/broad-first-coverage-launch-pack.json");
   const expansionFiles = new Set(publicExpansion.items.map((item) => normalizeFile(item.file)));
   const recommendedFiles = new Set(reviewCandidates.recommendedToday.map((item) => normalizeFile(item.file)));
   const waveFiles = new Set(waveApprovalPacket.files.map(normalizeFile));
-  const candidateFiles = [...new Set([...expansionFiles, ...recommendedFiles, ...waveFiles])].sort();
+  const broadFirstCoverageFiles = new Set(broadFirstCoverageLaunchPack.items.map((item) => normalizeFile(item.file)));
+  const candidateFiles = [...new Set([...expansionFiles, ...recommendedFiles, ...waveFiles, ...broadFirstCoverageFiles])].sort();
   const articles = (await articleFiles()).map((file) => readArticle(file));
   const publicArticles = articles
     .filter((article) => article.data.status === "published" && article.data.noindex === false && article.data.slug)
@@ -67,7 +73,8 @@ async function main() {
       title: String(article.data.title || ""),
     }));
   const publicSlugs = new Set(publicArticles.map((article) => article.slug));
-  const candidateItems = candidateFiles.map((file) => toCandidateItem(file, publicArticles, publicSlugs, expansionFiles, recommendedFiles, waveFiles));
+  const candidateItems = candidateFiles.map((file) => toCandidateItem(file, publicArticles, publicSlugs, broadFirstCoverageFiles, expansionFiles, recommendedFiles, waveFiles));
+  const broadFirstCoverageItems = candidateItems.filter((item) => item.scopes.includes("broad-first-coverage"));
   const waveItems = candidateItems.filter((item) => item.scopes.includes("wave-1"));
   const recommendedItems = candidateItems.filter((item) => item.scopes.includes("recommended"));
   const missingSuggestions = candidateItems.filter((item) => item.missingPublicLinkSuggestion);
@@ -81,6 +88,8 @@ async function main() {
       note: "Read-only internal-link opportunity audit. It does not edit article body links or publish content.",
     },
     summary: {
+      broadFirstCoverageItems: broadFirstCoverageItems.length,
+      broadFirstCoverageItemsMissingPublicLinkSuggestion: broadFirstCoverageItems.filter((item) => item.missingPublicLinkSuggestion).length,
       candidateItems: candidateItems.length,
       candidateItemsMissingPublicLinkSuggestion: missingSuggestions.length,
       candidateItemsWithPublicSuggestions: candidateItems.length - missingSuggestions.length,
@@ -91,6 +100,7 @@ async function main() {
       waveItemsMissingPublicLinkSuggestion: waveItems.filter((item) => item.missingPublicLinkSuggestion).length,
     },
     candidateItems,
+    broadFirstCoverageItems,
     missingSuggestions,
     recommendedItems,
     waveItems,
@@ -109,6 +119,7 @@ function toCandidateItem(
   file: string,
   publicArticles: PublicArticle[],
   publicSlugs: Set<string>,
+  broadFirstCoverageFiles: Set<string>,
   expansionFiles: Set<string>,
   recommendedFiles: Set<string>,
   waveFiles: Set<string>,
@@ -128,6 +139,7 @@ function toCandidateItem(
     linksToPublicArticles,
     missingPublicLinkSuggestion: suggestions.length === 0,
     scopes: [
+      broadFirstCoverageFiles.has(relativeFile) ? "broad-first-coverage" : null,
       expansionFiles.has(relativeFile) ? "expansion" : null,
       recommendedFiles.has(relativeFile) ? "recommended" : null,
       waveFiles.has(relativeFile) ? "wave-1" : null,
@@ -212,6 +224,7 @@ const stopWords = new Set(["the", "and", "with", "for", "怎么", "什么", "指
 
 function toMarkdown(payload: {
   candidateItems: CandidateItem[];
+  broadFirstCoverageItems: CandidateItem[];
   generatedAt: string;
   guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; note: string };
   missingSuggestions: CandidateItem[];
@@ -240,6 +253,10 @@ function toMarkdown(payload: {
     "## Wave 1 Items",
     "",
     ...table(payload.waveItems),
+    "",
+    "## Broad First Coverage Items",
+    "",
+    ...table(payload.broadFirstCoverageItems),
     "",
     "## Recommended Items",
     "",

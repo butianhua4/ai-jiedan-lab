@@ -1,6 +1,6 @@
 # Review Portfolio Board
 
-Generated at: 2026-06-07T03:28:15.241Z
+Generated at: 2026-06-07T03:46:17.251Z
 
 This report is read-only. It deduplicates review candidates across Wave, public-gap, deployment, and industry-prompt packs.
 
@@ -22,20 +22,20 @@ This report is read-only. It deduplicates review candidates across Wave, public-
 
 - deployment: 10
 - prompt: 12
-- publicGap: 8
+- publicGap: 13
 - wave: 3
 
 ## Summary
 
-- duplicateMentions: 9
-- items: 24
-- itemsWithCommandBoundary: 24
-- itemsWithMultipleSources: 7
-- itemsWithSearchQueries: 23
-- itemsWithSourceTargets: 24
-- readyItems: 24
-- safeDraftItems: 24
-- sourceCandidates: 33
+- duplicateMentions: 12
+- items: 26
+- itemsWithCommandBoundary: 26
+- itemsWithMultipleSources: 10
+- itemsWithSearchQueries: 26
+- itemsWithSourceTargets: 26
+- readyItems: 26
+- safeDraftItems: 26
+- sourceCandidates: 38
 - unsafeItems: 0
 
 ## Unsafe Items
@@ -46,41 +46,47 @@ This report is read-only. It deduplicates review candidates across Wave, public-
 
 | Ready | Safe | Score | Sources | Official refs | Queries | Checklists | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | true | 1275 | deployment, public-gap, wave | 6 | 8 | 22 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | true | 1275 | prompt, public-gap, wave | 9 | 8 | 20 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | true | 1275 | deployment, public-gap, wave | 14 | 11 | 22 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | true | 1275 | prompt, public-gap, wave | 17 | 13 | 19 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | true | 1250 | public-gap, wave | 17 | 5 | 10 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | true | 950 | deployment, public-gap | 4 | 8 | 16 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| true | true | 950 | deployment, public-gap | 5 | 8 | 17 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| true | true | 950 | deployment, public-gap | 17 | 13 | 15 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | true | true | 950 | deployment, public-gap | 2 | 8 | 18 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | true | true | 950 | deployment, public-gap | 2 | 8 | 17 | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
+| true | true | 950 | deployment, public-gap | 13 | 8 | 15 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| true | true | 950 | deployment, public-gap | 6 | 9 | 16 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | true | true | 950 | deployment, public-gap | 3 | 8 | 17 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 
 ## Next Items
 
 | Ready | Safe | Score | Sources | Official refs | Queries | Checklists | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | true | 1275 | deployment, public-gap, wave | 6 | 8 | 22 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | true | 1275 | prompt, public-gap, wave | 9 | 8 | 20 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | true | 1225 | wave | 7 | 0 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | true | 1275 | deployment, public-gap, wave | 14 | 11 | 22 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | true | 1275 | prompt, public-gap, wave | 17 | 13 | 19 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | true | 1250 | public-gap, wave | 17 | 5 | 10 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | true | 950 | deployment, public-gap | 4 | 8 | 16 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| true | true | 950 | deployment, public-gap | 5 | 8 | 17 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| true | true | 950 | deployment, public-gap | 17 | 13 | 15 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | true | true | 950 | deployment, public-gap | 2 | 8 | 18 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | true | true | 950 | deployment, public-gap | 2 | 8 | 17 | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
-| true | true | 950 | deployment, public-gap | 3 | 8 | 17 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| true | true | 950 | deployment, public-gap | 13 | 8 | 15 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 
 ## All Items
 
 | Ready | Safe | Score | Sources | Official refs | Queries | Checklists | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | true | 1275 | deployment, public-gap, wave | 6 | 8 | 22 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | true | 1275 | prompt, public-gap, wave | 9 | 8 | 20 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | true | 1225 | wave | 7 | 0 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | true | 1275 | deployment, public-gap, wave | 14 | 11 | 22 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | true | 1275 | prompt, public-gap, wave | 17 | 13 | 19 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | true | 1250 | public-gap, wave | 17 | 5 | 10 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | true | 950 | deployment, public-gap | 4 | 8 | 16 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| true | true | 950 | deployment, public-gap | 5 | 8 | 17 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| true | true | 950 | deployment, public-gap | 17 | 13 | 15 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | true | true | 950 | deployment, public-gap | 2 | 8 | 18 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | true | true | 950 | deployment, public-gap | 2 | 8 | 17 | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
+| true | true | 950 | deployment, public-gap | 13 | 8 | 15 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| true | true | 950 | deployment, public-gap | 6 | 9 | 16 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | true | true | 950 | deployment, public-gap | 3 | 8 | 17 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| true | true | 925 | public-gap | 3 | 5 | 4 | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
 | true | true | 925 | public-gap | 2 | 4 | 4 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
-| true | true | 391 | deployment | 3 | 4 | 13 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
+| true | true | 925 | public-gap | 3 | 5 | 3 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 | true | true | 389 | deployment | 2 | 4 | 13 | 企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管 | content/blog/enterprise-im-ai-agent-integration-guide.mdx |
 | true | true | 381 | prompt | 5 | 4 | 11 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
 | true | true | 376 | prompt | 5 | 4 | 11 | 制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘 | content/blog/manufacturing-ai-prompts-guide.mdx |
@@ -93,7 +99,6 @@ This report is read-only. It deduplicates review candidates across Wave, public-
 | true | true | 357 | prompt | 5 | 4 | 11 | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
 | true | true | 356 | prompt | 5 | 4 | 11 | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
 | true | true | 349 | prompt | 5 | 4 | 11 | 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准 | content/blog/product-manager-ai-prompts-guide.mdx |
-| true | true | 299 | deployment | 3 | 4 | 13 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | true | true | 277 | deployment | 2 | 4 | 13 | 用 Claude Code 排查客户报错时怎么做才稳 | content/blog/claude-code-error-debug.mdx |
 
 ## Per-Item Action Plans
@@ -108,7 +113,7 @@ This report is read-only. It deduplicates review candidates across Wave, public-
 Human action plan:
 
 - Review source lanes together: deployment, public-gap, wave.
-- Verify 6 official source target(s) before any approval.
+- Verify 14 official source target(s) before any approval.
 - Check search intent against 6 query seed(s).
 - Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.
 - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.
@@ -130,7 +135,7 @@ Command boundary:
 Human action plan:
 
 - Review source lanes together: prompt, public-gap, wave.
-- Verify 9 official source target(s) before any approval.
+- Verify 17 official source target(s) before any approval.
 - Check search intent against 6 query seed(s).
 - Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.
 - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.
@@ -145,15 +150,15 @@ Command boundary:
 ### 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
 
 - File: content/blog/ai-model-selection-customer-service-guide.mdx
-- Source types: wave
+- Source types: public-gap, wave
 - Ready for human review: true
 - Status: draft
 
 Human action plan:
 
-- Review source lanes together: wave.
-- Verify 7 official source target(s) before any approval.
-- Confirm search intent from the source review packet.
+- Review source lanes together: public-gap, wave.
+- Verify 17 official source target(s) before any approval.
+- Check search intent against 5 query seed(s).
 - Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.
 - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.
 - Run mark:review only after explicit human approval; publishing requires a separate explicit approval.
@@ -196,7 +201,7 @@ Command boundary:
 Human action plan:
 
 - Review source lanes together: deployment, public-gap.
-- Verify 5 official source target(s) before any approval.
+- Verify 17 official source target(s) before any approval.
 - Check search intent against 6 query seed(s).
 - Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.
 - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.
@@ -252,6 +257,50 @@ Command boundary:
 - Publish dry-run after review: `npm run publish:articles -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx`
 - Publish confirm: not-included
 
+### 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查
+
+- File: content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx
+- Source types: deployment, public-gap
+- Ready for human review: true
+- Status: draft
+
+Human action plan:
+
+- Review source lanes together: deployment, public-gap.
+- Verify 13 official source target(s) before any approval.
+- Check search intent against 6 query seed(s).
+- Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.
+- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.
+- Run mark:review only after explicit human approval; publishing requires a separate explicit approval.
+
+Command boundary:
+
+- Mark review after human approval: `npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human`
+- Publish dry-run after review: `npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx`
+- Publish confirm: not-included
+
+### MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单
+
+- File: content/blog/mcp-server-deployment-security-checklist.mdx
+- Source types: deployment, public-gap
+- Ready for human review: true
+- Status: draft
+
+Human action plan:
+
+- Review source lanes together: deployment, public-gap.
+- Verify 6 official source target(s) before any approval.
+- Check search intent against 6 query seed(s).
+- Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.
+- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.
+- Run mark:review only after explicit human approval; publishing requires a separate explicit approval.
+
+Command boundary:
+
+- Mark review after human approval: `npm run mark:review -- --file=content/blog/mcp-server-deployment-security-checklist.mdx --confirm-human`
+- Publish dry-run after review: `npm run publish:articles -- --file=content/blog/mcp-server-deployment-security-checklist.mdx`
+- Publish confirm: not-included
+
 ### Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流
 
 - File: content/blog/open-webui-functions-pipelines-deployment-guide.mdx
@@ -272,6 +321,28 @@ Command boundary:
 
 - Mark review after human approval: `npm run mark:review -- --file=content/blog/open-webui-functions-pipelines-deployment-guide.mdx --confirm-human`
 - Publish dry-run after review: `npm run publish:articles -- --file=content/blog/open-webui-functions-pipelines-deployment-guide.mdx`
+- Publish confirm: not-included
+
+### Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志
+
+- File: content/blog/agent-tool-permission-safety-guide.mdx
+- Source types: public-gap
+- Ready for human review: true
+- Status: draft
+
+Human action plan:
+
+- Review source lanes together: public-gap.
+- Verify 3 official source target(s) before any approval.
+- Check search intent against 5 query seed(s).
+- Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.
+- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.
+- Run mark:review only after explicit human approval; publishing requires a separate explicit approval.
+
+Command boundary:
+
+- Mark review after human approval: `npm run mark:review -- --file=content/blog/agent-tool-permission-safety-guide.mdx --confirm-human`
+- Publish dry-run after review: `npm run publish:articles -- --file=content/blog/agent-tool-permission-safety-guide.mdx`
 - Publish confirm: not-included
 
 ### Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底
@@ -296,26 +367,26 @@ Command boundary:
 - Publish dry-run after review: `npm run publish:articles -- --file=content/blog/dify-workflow-error-handling-guide.mdx`
 - Publish confirm: not-included
 
-### MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单
+### n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储
 
-- File: content/blog/mcp-server-deployment-security-checklist.mdx
-- Source types: deployment
+- File: content/blog/n8n-ai-agent-rag-memory-guide.mdx
+- Source types: public-gap
 - Ready for human review: true
 - Status: draft
 
 Human action plan:
 
-- Review source lanes together: deployment.
+- Review source lanes together: public-gap.
 - Verify 3 official source target(s) before any approval.
-- Check search intent against 4 query seed(s).
+- Check search intent against 5 query seed(s).
 - Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.
 - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.
 - Run mark:review only after explicit human approval; publishing requires a separate explicit approval.
 
 Command boundary:
 
-- Mark review after human approval: `npm run mark:review -- --file=content/blog/mcp-server-deployment-security-checklist.mdx --confirm-human`
-- Publish dry-run after review: `npm run publish:articles -- --file=content/blog/mcp-server-deployment-security-checklist.mdx`
+- Mark review after human approval: `npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human`
+- Publish dry-run after review: `npm run publish:articles -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx`
 - Publish confirm: not-included
 
 ### 企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管
@@ -580,28 +651,6 @@ Command boundary:
 
 - Mark review after human approval: `npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human`
 - Publish dry-run after review: `npm run publish:articles -- --file=content/blog/product-manager-ai-prompts-guide.mdx`
-- Publish confirm: not-included
-
-### 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查
-
-- File: content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx
-- Source types: deployment
-- Ready for human review: true
-- Status: draft
-
-Human action plan:
-
-- Review source lanes together: deployment.
-- Verify 3 official source target(s) before any approval.
-- Check search intent against 4 query seed(s).
-- Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.
-- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.
-- Run mark:review only after explicit human approval; publishing requires a separate explicit approval.
-
-Command boundary:
-
-- Mark review after human approval: `npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human`
-- Publish dry-run after review: `npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx`
 - Publish confirm: not-included
 
 ### 用 Claude Code 排查客户报错时怎么做才稳

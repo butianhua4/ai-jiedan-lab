@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T03:28:10.268Z",
+  "generatedAt": "2026-06-07T03:46:09.178Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -8,23 +8,46 @@
     "timeoutMs": 8000
   },
   "summary": {
-    "checkedUrls": 18,
+    "checkedUrls": 40,
+    "broadFirstCoverageFiles": 8,
     "currentReviewFiles": 3,
-    "failedUrls": 0,
-    "filesCovered": 20,
-    "filesWithReachableSource": 20,
+    "failedUrls": 1,
+    "filesCovered": 23,
+    "filesWithReachableSource": 23,
     "filesWithoutReachableSource": 0,
     "missingUrlTargets": 0,
     "nextSourcePackFiles": 19,
-    "okUrls": 18,
-    "publicGapDecisionFiles": 8,
-    "redirectedUrls": 13,
-    "sourceReferences": 147,
-    "uniqueUrls": 18
+    "okUrls": 39,
+    "publicGapDecisionFiles": 13,
+    "redirectedUrls": 18,
+    "sourceReferences": 261,
+    "uniqueUrls": 40
   },
   "missingUrlTargets": [],
   "filesWithoutReachableSource": [],
-  "failedChecks": [],
+  "failedChecks": [
+    {
+      "error": "TypeError",
+      "ok": false,
+      "references": [
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
+          "scope": "public-gap-decision",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
+          "scope": "broad-first-coverage",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business"
+        }
+      ],
+      "url": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business"
+    }
+  ],
   "redirectedChecks": [
     {
       "finalUrl": "https://ai-sdk.dev/docs/introduction",
@@ -45,10 +68,45 @@
           "url": "https://ai-sdk.dev/docs"
         },
         {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "public-gap-decision",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "public-gap-decision",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
           "file": "content/blog/dify-workflow-error-handling-guide.mdx",
           "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
           "scope": "public-gap-decision",
           "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://ai-sdk.dev/docs"
         },
         {
@@ -169,15 +227,57 @@
           "scope": "next-source-pack",
           "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
           "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "broad-first-coverage",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "broad-first-coverage",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://ai-sdk.dev/docs"
         }
       ],
       "status": 200,
       "url": "https://ai-sdk.dev/docs"
     },
     {
-      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=it",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=es-419",
       "ok": true,
       "references": [
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://ai.google.dev/docs",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://ai.google.dev/docs"
+        },
         {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "Google AI docs: https://ai.google.dev/docs",
@@ -191,6 +291,13 @@
           "scope": "next-source-pack",
           "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
           "url": "https://ai.google.dev/docs"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://ai.google.dev/docs",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://ai.google.dev/docs"
         }
       ],
       "status": 200,
@@ -200,6 +307,13 @@
       "finalUrl": "https://platform.claude.com/docs/en/home",
       "ok": true,
       "references": [
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://docs.anthropic.com",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://docs.anthropic.com"
+        },
         {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "Anthropic docs: https://docs.anthropic.com",
@@ -220,10 +334,39 @@
           "scope": "next-source-pack",
           "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
           "url": "https://docs.anthropic.com"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://docs.anthropic.com",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://docs.anthropic.com"
         }
       ],
       "status": 200,
       "url": "https://docs.anthropic.com"
+    },
+    {
+      "finalUrl": "https://platform.claude.com/docs/en/home",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://docs.anthropic.com/",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://docs.anthropic.com/"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://docs.anthropic.com/",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://docs.anthropic.com/"
+        }
+      ],
+      "status": 200,
+      "url": "https://docs.anthropic.com/"
     },
     {
       "finalUrl": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
@@ -232,6 +375,13 @@
         {
           "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
           "label": "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "scope": "public-gap-decision",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
           "scope": "public-gap-decision",
           "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
           "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
@@ -249,6 +399,13 @@
           "scope": "next-source-pack",
           "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复",
           "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "scope": "broad-first-coverage",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
         }
       ],
       "status": 200,
@@ -263,6 +420,13 @@
           "label": "Dify docs: https://docs.dify.ai",
           "scope": "public-gap-decision",
           "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+          "url": "https://docs.dify.ai"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://docs.dify.ai",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://docs.dify.ai"
         },
         {
@@ -292,10 +456,61 @@
           "scope": "next-source-pack",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://docs.dify.ai"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://docs.dify.ai",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://docs.dify.ai"
         }
       ],
       "status": 200,
       "url": "https://docs.dify.ai"
+    },
+    {
+      "finalUrl": "https://docs.dify.ai/en/use-dify/getting-started/introduction",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+          "label": "https://docs.dify.ai/",
+          "scope": "public-gap-decision",
+          "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+          "url": "https://docs.dify.ai/"
+        },
+        {
+          "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+          "label": "https://docs.dify.ai/",
+          "scope": "broad-first-coverage",
+          "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+          "url": "https://docs.dify.ai/"
+        }
+      ],
+      "status": 200,
+      "url": "https://docs.dify.ai/"
+    },
+    {
+      "finalUrl": "https://docs.helicone.ai/getting-started/quick-start",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+          "label": "https://docs.helicone.ai/",
+          "scope": "public-gap-decision",
+          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+          "url": "https://docs.helicone.ai/"
+        },
+        {
+          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+          "label": "https://docs.helicone.ai/",
+          "scope": "broad-first-coverage",
+          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+          "url": "https://docs.helicone.ai/"
+        }
+      ],
+      "status": 200,
+      "url": "https://docs.helicone.ai/"
     },
     {
       "finalUrl": "https://developers.llamaindex.ai/python/framework/",
@@ -306,6 +521,13 @@
           "label": "LlamaIndex docs: https://docs.llamaindex.ai",
           "scope": "public-gap-decision",
           "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+          "url": "https://docs.llamaindex.ai"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://docs.llamaindex.ai",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
           "url": "https://docs.llamaindex.ai"
         },
         {
@@ -335,10 +557,39 @@
           "scope": "next-source-pack",
           "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
           "url": "https://docs.llamaindex.ai"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://docs.llamaindex.ai",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://docs.llamaindex.ai"
         }
       ],
       "status": 200,
       "url": "https://docs.llamaindex.ai"
+    },
+    {
+      "finalUrl": "https://docs.ragas.io/en/stable/",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+          "label": "https://docs.ragas.io/",
+          "scope": "public-gap-decision",
+          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+          "url": "https://docs.ragas.io/"
+        },
+        {
+          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+          "label": "https://docs.ragas.io/",
+          "scope": "broad-first-coverage",
+          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+          "url": "https://docs.ragas.io/"
+        }
+      ],
+      "status": 200,
+      "url": "https://docs.ragas.io/"
     },
     {
       "finalUrl": "https://docs.vllm.ai/en/latest/",
@@ -349,6 +600,13 @@
           "label": "vLLM docs: https://docs.vllm.ai",
           "scope": "public-gap-decision",
           "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://docs.vllm.ai",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
           "url": "https://docs.vllm.ai"
         },
         {
@@ -378,10 +636,39 @@
           "scope": "next-source-pack",
           "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
           "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://docs.vllm.ai",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://docs.vllm.ai"
         }
       ],
       "status": 200,
       "url": "https://docs.vllm.ai"
+    },
+    {
+      "finalUrl": "https://modelcontextprotocol.io/docs/getting-started/intro",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+          "label": "https://modelcontextprotocol.io/docs",
+          "scope": "public-gap-decision",
+          "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+          "url": "https://modelcontextprotocol.io/docs"
+        },
+        {
+          "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+          "label": "https://modelcontextprotocol.io/docs",
+          "scope": "broad-first-coverage",
+          "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+          "url": "https://modelcontextprotocol.io/docs"
+        }
+      ],
+      "status": 200,
+      "url": "https://modelcontextprotocol.io/docs"
     },
     {
       "finalUrl": "https://developers.openai.com/api/docs",
@@ -392,6 +679,41 @@
           "label": "OpenAI docs: https://platform.openai.com/docs",
           "scope": "current-review",
           "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "public-gap-decision",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "public-gap-decision",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://platform.openai.com/docs"
         },
         {
@@ -526,6 +848,41 @@
           "scope": "next-source-pack",
           "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复",
           "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "broad-first-coverage",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "broad-first-coverage",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://platform.openai.com/docs"
         }
       ],
       "status": 200,
@@ -543,8 +900,29 @@
           "url": "https://platform.openai.com/docs/guides/agents"
         },
         {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/agents",
+          "scope": "public-gap-decision",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/agents",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/agents",
           "scope": "public-gap-decision",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://platform.openai.com/docs/guides/agents"
@@ -618,6 +996,27 @@
           "scope": "next-source-pack",
           "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
           "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/agents",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/agents",
+          "scope": "broad-first-coverage",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/agents",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://platform.openai.com/docs/guides/agents"
         }
       ],
       "status": 200,
@@ -642,8 +1041,22 @@
           "url": "https://platform.openai.com/docs/guides/prompt-engineering"
         },
         {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "public-gap-decision",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
           "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
           "label": "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "public-gap-decision",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
           "scope": "public-gap-decision",
           "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
           "url": "https://platform.openai.com/docs/guides/prompt-engineering"
@@ -653,6 +1066,27 @@
           "label": "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
           "scope": "public-gap-decision",
           "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://platform.openai.com/docs/guides/prompt-engineering"
         },
         {
@@ -765,6 +1199,41 @@
           "label": "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
           "scope": "next-source-pack",
           "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "broad-first-coverage",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "broad-first-coverage",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://platform.openai.com/docs/guides/prompt-engineering"
         }
       ],
@@ -805,6 +1274,20 @@
           "url": "https://platform.openai.com/docs/guides/retrieval"
         },
         {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "public-gap-decision",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "public-gap-decision",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
           "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
           "label": "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
           "scope": "public-gap-decision",
@@ -812,8 +1295,29 @@
           "url": "https://platform.openai.com/docs/guides/retrieval"
         },
         {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
           "scope": "public-gap-decision",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://platform.openai.com/docs/guides/retrieval"
@@ -929,6 +1433,41 @@
           "scope": "next-source-pack",
           "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复",
           "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "broad-first-coverage",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "broad-first-coverage",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
         }
       ],
       "status": 200,
@@ -946,6 +1485,13 @@
           "url": "https://python.langchain.com/docs"
         },
         {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://python.langchain.com/docs",
+          "scope": "public-gap-decision",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://python.langchain.com/docs"
+        },
+        {
           "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
           "label": "LangChain docs: https://python.langchain.com/docs",
           "scope": "public-gap-decision",
@@ -953,8 +1499,22 @@
           "url": "https://python.langchain.com/docs"
         },
         {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://python.langchain.com/docs",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://python.langchain.com/docs"
+        },
+        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "LangChain docs: https://python.langchain.com/docs",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://python.langchain.com/docs"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://python.langchain.com/docs",
           "scope": "public-gap-decision",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://python.langchain.com/docs"
@@ -1007,6 +1567,27 @@
           "scope": "next-source-pack",
           "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
           "url": "https://python.langchain.com/docs"
+        },
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://python.langchain.com/docs",
+          "scope": "broad-first-coverage",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://python.langchain.com/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://python.langchain.com/docs",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://python.langchain.com/docs"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://python.langchain.com/docs",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://python.langchain.com/docs"
         }
       ],
       "status": 200,
@@ -1015,26 +1596,61 @@
   ],
   "files": [
     {
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-      "reachableSources": 10,
+      "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+      "reachableSources": 6,
       "scopes": [
+        "broad-first-coverage",
+        "public-gap-decision"
+      ],
+      "sourceTargets": 6,
+      "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+      "urls": [
+        "https://www.promptfoo.dev/docs/intro/",
+        "https://docs.ragas.io/",
+        "https://docs.helicone.ai/",
+        "https://www.promptfoo.dev/docs/intro/",
+        "https://docs.ragas.io/",
+        "https://docs.helicone.ai/"
+      ]
+    },
+    {
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "reachableSources": 26,
+      "scopes": [
+        "broad-first-coverage",
         "current-review",
         "next-source-pack",
         "public-gap-decision"
       ],
-      "sourceTargets": 10,
+      "sourceTargets": 26,
       "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
       "urls": [
         "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/agents",
         "https://ai-sdk.dev/docs",
         "https://python.langchain.com/docs",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://python.langchain.com/docs",
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://openai.github.io/openai-agents-python/",
+        "https://langchain-ai.github.io/langgraph/",
         "https://platform.openai.com/docs/guides/agents",
         "https://ai-sdk.dev/docs",
         "https://python.langchain.com/docs",
         "https://platform.openai.com/docs",
         "https://platform.openai.com/docs/guides/retrieval",
-        "https://platform.openai.com/docs/guides/prompt-engineering"
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://python.langchain.com/docs",
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://openai.github.io/openai-agents-python/",
+        "https://langchain-ai.github.io/langgraph/"
       ]
     },
     {
@@ -1062,17 +1678,30 @@
     },
     {
       "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-      "reachableSources": 12,
+      "reachableSources": 36,
       "scopes": [
+        "broad-first-coverage",
         "next-source-pack",
         "public-gap-decision"
       ],
-      "sourceTargets": 12,
+      "sourceTargets": 36,
       "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
       "urls": [
         "https://platform.openai.com/docs/guides/agents",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://python.langchain.com/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://python.langchain.com/docs",
+        "https://platform.openai.com/docs",
+        "https://docs.anthropic.com",
+        "https://ai-sdk.dev/docs",
+        "https://ai.google.dev/docs",
+        "https://docs.dify.ai",
+        "https://docs.n8n.io",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://docs.anthropic.com/",
+        "https://vercel.com/docs/ai-gateway",
         "https://platform.openai.com/docs",
         "https://docs.anthropic.com",
         "https://platform.openai.com/docs/guides/agents",
@@ -1081,7 +1710,19 @@
         "https://docs.dify.ai",
         "https://docs.n8n.io",
         "https://platform.openai.com/docs/guides/retrieval",
-        "https://platform.openai.com/docs/guides/prompt-engineering"
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://python.langchain.com/docs",
+        "https://platform.openai.com/docs",
+        "https://docs.anthropic.com",
+        "https://ai-sdk.dev/docs",
+        "https://ai.google.dev/docs",
+        "https://docs.dify.ai",
+        "https://docs.n8n.io",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://docs.anthropic.com/",
+        "https://vercel.com/docs/ai-gateway"
       ]
     },
     {
@@ -1110,23 +1751,45 @@
     },
     {
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-      "reachableSources": 9,
+      "reachableSources": 29,
       "scopes": [
+        "broad-first-coverage",
         "current-review",
-        "next-source-pack"
+        "next-source-pack",
+        "public-gap-decision"
       ],
-      "sourceTargets": 9,
+      "sourceTargets": 29,
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "urls": [
         "https://platform.openai.com/docs/guides/retrieval",
         "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://python.langchain.com/docs",
+        "https://docs.llamaindex.ai",
+        "https://huggingface.co/docs",
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
+        "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
+        "https://arxiv.org/abs/2603.10700",
+        "https://www.pinecone.io/learn/retrieval-augmented-generation/",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://python.langchain.com/docs",
         "https://docs.llamaindex.ai",
         "https://huggingface.co/docs",
         "https://platform.openai.com/docs",
         "https://ai-sdk.dev/docs",
-        "https://platform.openai.com/docs/guides/prompt-engineering"
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://python.langchain.com/docs",
+        "https://docs.llamaindex.ai",
+        "https://huggingface.co/docs",
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
+        "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
+        "https://arxiv.org/abs/2603.10700",
+        "https://www.pinecone.io/learn/retrieval-augmented-generation/"
       ]
     },
     {
@@ -1313,13 +1976,14 @@
     },
     {
       "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
-      "reachableSources": 8,
+      "reachableSources": 22,
       "scopes": [
+        "broad-first-coverage",
         "current-review",
         "next-source-pack",
         "public-gap-decision"
       ],
-      "sourceTargets": 8,
+      "sourceTargets": 24,
       "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
       "urls": [
         "https://platform.openai.com/docs",
@@ -1328,17 +1992,35 @@
         "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
         "https://platform.openai.com/docs",
         "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
         "https://ai-sdk.dev/docs",
-        "https://platform.openai.com/docs/guides/retrieval"
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
+        "https://sensara.io/prompts/",
+        "https://www.mrprompts.ai/learn/ai-prompts-for-sales",
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
+        "https://sensara.io/prompts/",
+        "https://www.mrprompts.ai/learn/ai-prompts-for-sales"
       ]
     },
     {
       "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-      "reachableSources": 7,
+      "reachableSources": 27,
       "scopes": [
-        "next-source-pack"
+        "broad-first-coverage",
+        "next-source-pack",
+        "public-gap-decision"
       ],
-      "sourceTargets": 7,
+      "sourceTargets": 27,
       "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
       "urls": [
         "https://platform.openai.com/docs",
@@ -1347,7 +2029,27 @@
         "https://platform.openai.com/docs/guides/agents",
         "https://docs.vllm.ai",
         "https://huggingface.co/docs",
-        "https://platform.openai.com/docs/guides/retrieval"
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://docs.runpod.io/serverless/vllm/get-started",
+        "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+        "https://www.spheron.network/blog/llm-deployment-guide/",
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://docs.vllm.ai",
+        "https://huggingface.co/docs",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://docs.vllm.ai",
+        "https://huggingface.co/docs",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://docs.runpod.io/serverless/vllm/get-started",
+        "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+        "https://www.spheron.network/blog/llm-deployment-guide/"
       ]
     },
     {
@@ -1366,6 +2068,42 @@
         "https://platform.openai.com/docs/guides/agents",
         "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/retrieval"
+      ]
+    },
+    {
+      "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+      "reachableSources": 6,
+      "scopes": [
+        "broad-first-coverage",
+        "public-gap-decision"
+      ],
+      "sourceTargets": 6,
+      "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+      "urls": [
+        "https://docs.dify.ai/",
+        "https://docs.n8n.io/",
+        "https://modelcontextprotocol.io/docs",
+        "https://docs.dify.ai/",
+        "https://docs.n8n.io/",
+        "https://modelcontextprotocol.io/docs"
+      ]
+    },
+    {
+      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+      "reachableSources": 6,
+      "scopes": [
+        "broad-first-coverage",
+        "public-gap-decision"
+      ],
+      "sourceTargets": 6,
+      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+      "urls": [
+        "https://arxiv.org/abs/2604.20598",
+        "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/",
+        "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag",
+        "https://arxiv.org/abs/2604.20598",
+        "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/",
+        "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
       ]
     },
     {
@@ -1416,6 +2154,27 @@
       "url": "https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
     },
     {
+      "error": "TypeError",
+      "ok": false,
+      "references": [
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
+          "scope": "public-gap-decision",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
+          "scope": "broad-first-coverage",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business"
+        }
+      ],
+      "url": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business"
+    },
+    {
       "finalUrl": "https://ai-sdk.dev/docs/introduction",
       "ok": true,
       "references": [
@@ -1434,10 +2193,45 @@
           "url": "https://ai-sdk.dev/docs"
         },
         {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "public-gap-decision",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "public-gap-decision",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
           "file": "content/blog/dify-workflow-error-handling-guide.mdx",
           "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
           "scope": "public-gap-decision",
           "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://ai-sdk.dev/docs"
         },
         {
@@ -1558,15 +2352,57 @@
           "scope": "next-source-pack",
           "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
           "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "broad-first-coverage",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "broad-first-coverage",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://ai-sdk.dev/docs"
         }
       ],
       "status": 200,
       "url": "https://ai-sdk.dev/docs"
     },
     {
-      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=it",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=es-419",
       "ok": true,
       "references": [
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://ai.google.dev/docs",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://ai.google.dev/docs"
+        },
         {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "Google AI docs: https://ai.google.dev/docs",
@@ -1580,15 +2416,95 @@
           "scope": "next-source-pack",
           "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
           "url": "https://ai.google.dev/docs"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://ai.google.dev/docs",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://ai.google.dev/docs"
         }
       ],
       "status": 200,
       "url": "https://ai.google.dev/docs"
     },
     {
+      "finalUrl": "https://arxiv.org/abs/2603.10700",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://arxiv.org/abs/2603.10700",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://arxiv.org/abs/2603.10700"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://arxiv.org/abs/2603.10700",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://arxiv.org/abs/2603.10700"
+        }
+      ],
+      "status": 200,
+      "url": "https://arxiv.org/abs/2603.10700"
+    },
+    {
+      "finalUrl": "https://arxiv.org/abs/2604.20598",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+          "label": "https://arxiv.org/abs/2604.20598",
+          "scope": "public-gap-decision",
+          "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+          "url": "https://arxiv.org/abs/2604.20598"
+        },
+        {
+          "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+          "label": "https://arxiv.org/abs/2604.20598",
+          "scope": "broad-first-coverage",
+          "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+          "url": "https://arxiv.org/abs/2604.20598"
+        }
+      ],
+      "status": 200,
+      "url": "https://arxiv.org/abs/2604.20598"
+    },
+    {
+      "finalUrl": "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+          "label": "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag",
+          "scope": "public-gap-decision",
+          "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+          "url": "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
+        },
+        {
+          "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+          "label": "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag",
+          "scope": "broad-first-coverage",
+          "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+          "url": "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
+        }
+      ],
+      "status": 200,
+      "url": "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
+    },
+    {
       "finalUrl": "https://platform.claude.com/docs/en/home",
       "ok": true,
       "references": [
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://docs.anthropic.com",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://docs.anthropic.com"
+        },
         {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "Anthropic docs: https://docs.anthropic.com",
@@ -1609,10 +2525,39 @@
           "scope": "next-source-pack",
           "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
           "url": "https://docs.anthropic.com"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://docs.anthropic.com",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://docs.anthropic.com"
         }
       ],
       "status": 200,
       "url": "https://docs.anthropic.com"
+    },
+    {
+      "finalUrl": "https://platform.claude.com/docs/en/home",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://docs.anthropic.com/",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://docs.anthropic.com/"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://docs.anthropic.com/",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://docs.anthropic.com/"
+        }
+      ],
+      "status": 200,
+      "url": "https://docs.anthropic.com/"
     },
     {
       "finalUrl": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
@@ -1621,6 +2566,13 @@
         {
           "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
           "label": "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "scope": "public-gap-decision",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
           "scope": "public-gap-decision",
           "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
           "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
@@ -1638,6 +2590,13 @@
           "scope": "next-source-pack",
           "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复",
           "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "scope": "broad-first-coverage",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
         }
       ],
       "status": 200,
@@ -1652,6 +2611,13 @@
           "label": "Dify docs: https://docs.dify.ai",
           "scope": "public-gap-decision",
           "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+          "url": "https://docs.dify.ai"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://docs.dify.ai",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://docs.dify.ai"
         },
         {
@@ -1681,10 +2647,61 @@
           "scope": "next-source-pack",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://docs.dify.ai"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://docs.dify.ai",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://docs.dify.ai"
         }
       ],
       "status": 200,
       "url": "https://docs.dify.ai"
+    },
+    {
+      "finalUrl": "https://docs.dify.ai/en/use-dify/getting-started/introduction",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+          "label": "https://docs.dify.ai/",
+          "scope": "public-gap-decision",
+          "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+          "url": "https://docs.dify.ai/"
+        },
+        {
+          "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+          "label": "https://docs.dify.ai/",
+          "scope": "broad-first-coverage",
+          "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+          "url": "https://docs.dify.ai/"
+        }
+      ],
+      "status": 200,
+      "url": "https://docs.dify.ai/"
+    },
+    {
+      "finalUrl": "https://docs.helicone.ai/getting-started/quick-start",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+          "label": "https://docs.helicone.ai/",
+          "scope": "public-gap-decision",
+          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+          "url": "https://docs.helicone.ai/"
+        },
+        {
+          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+          "label": "https://docs.helicone.ai/",
+          "scope": "broad-first-coverage",
+          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+          "url": "https://docs.helicone.ai/"
+        }
+      ],
+      "status": 200,
+      "url": "https://docs.helicone.ai/"
     },
     {
       "finalUrl": "https://developers.llamaindex.ai/python/framework/",
@@ -1695,6 +2712,13 @@
           "label": "LlamaIndex docs: https://docs.llamaindex.ai",
           "scope": "public-gap-decision",
           "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+          "url": "https://docs.llamaindex.ai"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://docs.llamaindex.ai",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
           "url": "https://docs.llamaindex.ai"
         },
         {
@@ -1724,6 +2748,13 @@
           "scope": "next-source-pack",
           "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
           "url": "https://docs.llamaindex.ai"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://docs.llamaindex.ai",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://docs.llamaindex.ai"
         }
       ],
       "status": 200,
@@ -1738,6 +2769,13 @@
           "label": "n8n docs: https://docs.n8n.io",
           "scope": "public-gap-decision",
           "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+          "url": "https://docs.n8n.io"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://docs.n8n.io",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://docs.n8n.io"
         },
         {
@@ -1760,10 +2798,39 @@
           "scope": "next-source-pack",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://docs.n8n.io"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://docs.n8n.io",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://docs.n8n.io"
         }
       ],
       "status": 200,
       "url": "https://docs.n8n.io"
+    },
+    {
+      "finalUrl": "https://docs.n8n.io/",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+          "label": "https://docs.n8n.io/",
+          "scope": "public-gap-decision",
+          "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+          "url": "https://docs.n8n.io/"
+        },
+        {
+          "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+          "label": "https://docs.n8n.io/",
+          "scope": "broad-first-coverage",
+          "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+          "url": "https://docs.n8n.io/"
+        }
+      ],
+      "status": 200,
+      "url": "https://docs.n8n.io/"
     },
     {
       "finalUrl": "https://docs.ollama.com/",
@@ -1802,6 +2869,50 @@
       "url": "https://docs.ollama.com"
     },
     {
+      "finalUrl": "https://docs.ragas.io/en/stable/",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+          "label": "https://docs.ragas.io/",
+          "scope": "public-gap-decision",
+          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+          "url": "https://docs.ragas.io/"
+        },
+        {
+          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+          "label": "https://docs.ragas.io/",
+          "scope": "broad-first-coverage",
+          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+          "url": "https://docs.ragas.io/"
+        }
+      ],
+      "status": 200,
+      "url": "https://docs.ragas.io/"
+    },
+    {
+      "finalUrl": "https://docs.runpod.io/serverless/vllm/get-started",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://docs.runpod.io/serverless/vllm/get-started",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://docs.runpod.io/serverless/vllm/get-started"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://docs.runpod.io/serverless/vllm/get-started",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://docs.runpod.io/serverless/vllm/get-started"
+        }
+      ],
+      "status": 200,
+      "url": "https://docs.runpod.io/serverless/vllm/get-started"
+    },
+    {
       "finalUrl": "https://docs.vllm.ai/en/latest/",
       "ok": true,
       "references": [
@@ -1810,6 +2921,13 @@
           "label": "vLLM docs: https://docs.vllm.ai",
           "scope": "public-gap-decision",
           "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://docs.vllm.ai",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
           "url": "https://docs.vllm.ai"
         },
         {
@@ -1839,6 +2957,13 @@
           "scope": "next-source-pack",
           "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
           "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://docs.vllm.ai",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://docs.vllm.ai"
         }
       ],
       "status": 200,
@@ -1853,6 +2978,20 @@
           "label": "Hugging Face docs: https://huggingface.co/docs",
           "scope": "public-gap-decision",
           "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+          "url": "https://huggingface.co/docs"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://huggingface.co/docs",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://huggingface.co/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://huggingface.co/docs",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
           "url": "https://huggingface.co/docs"
         },
         {
@@ -1910,10 +3049,90 @@
           "scope": "next-source-pack",
           "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
           "url": "https://huggingface.co/docs"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://huggingface.co/docs",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://huggingface.co/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://huggingface.co/docs",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://huggingface.co/docs"
         }
       ],
       "status": 200,
       "url": "https://huggingface.co/docs"
+    },
+    {
+      "finalUrl": "https://langchain-ai.github.io/langgraph/",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://langchain-ai.github.io/langgraph/",
+          "scope": "public-gap-decision",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://langchain-ai.github.io/langgraph/"
+        },
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://langchain-ai.github.io/langgraph/",
+          "scope": "broad-first-coverage",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://langchain-ai.github.io/langgraph/"
+        }
+      ],
+      "status": 200,
+      "url": "https://langchain-ai.github.io/langgraph/"
+    },
+    {
+      "finalUrl": "https://modelcontextprotocol.io/docs/getting-started/intro",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+          "label": "https://modelcontextprotocol.io/docs",
+          "scope": "public-gap-decision",
+          "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+          "url": "https://modelcontextprotocol.io/docs"
+        },
+        {
+          "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+          "label": "https://modelcontextprotocol.io/docs",
+          "scope": "broad-first-coverage",
+          "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+          "url": "https://modelcontextprotocol.io/docs"
+        }
+      ],
+      "status": 200,
+      "url": "https://modelcontextprotocol.io/docs"
+    },
+    {
+      "finalUrl": "https://openai.github.io/openai-agents-python/",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://openai.github.io/openai-agents-python/",
+          "scope": "public-gap-decision",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://openai.github.io/openai-agents-python/"
+        },
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://openai.github.io/openai-agents-python/",
+          "scope": "broad-first-coverage",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://openai.github.io/openai-agents-python/"
+        }
+      ],
+      "status": 200,
+      "url": "https://openai.github.io/openai-agents-python/"
     },
     {
       "finalUrl": "https://developers.openai.com/api/docs",
@@ -1924,6 +3143,41 @@
           "label": "OpenAI docs: https://platform.openai.com/docs",
           "scope": "current-review",
           "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "public-gap-decision",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "public-gap-decision",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://platform.openai.com/docs"
         },
         {
@@ -2058,6 +3312,41 @@
           "scope": "next-source-pack",
           "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复",
           "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "broad-first-coverage",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "broad-first-coverage",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://platform.openai.com/docs"
         }
       ],
       "status": 200,
@@ -2075,8 +3364,29 @@
           "url": "https://platform.openai.com/docs/guides/agents"
         },
         {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/agents",
+          "scope": "public-gap-decision",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/agents",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/agents",
           "scope": "public-gap-decision",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://platform.openai.com/docs/guides/agents"
@@ -2149,6 +3459,27 @@
           "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "scope": "next-source-pack",
           "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/agents",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/agents",
+          "scope": "broad-first-coverage",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/agents",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://platform.openai.com/docs/guides/agents"
         }
       ],
@@ -2174,8 +3505,22 @@
           "url": "https://platform.openai.com/docs/guides/prompt-engineering"
         },
         {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "public-gap-decision",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
           "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
           "label": "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "public-gap-decision",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
           "scope": "public-gap-decision",
           "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
           "url": "https://platform.openai.com/docs/guides/prompt-engineering"
@@ -2185,6 +3530,27 @@
           "label": "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
           "scope": "public-gap-decision",
           "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://platform.openai.com/docs/guides/prompt-engineering"
         },
         {
@@ -2297,6 +3663,41 @@
           "label": "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
           "scope": "next-source-pack",
           "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "broad-first-coverage",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "broad-first-coverage",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://platform.openai.com/docs/guides/prompt-engineering"
         }
       ],
@@ -2337,6 +3738,20 @@
           "url": "https://platform.openai.com/docs/guides/retrieval"
         },
         {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "public-gap-decision",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "public-gap-decision",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
           "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
           "label": "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
           "scope": "public-gap-decision",
@@ -2344,8 +3759,29 @@
           "url": "https://platform.openai.com/docs/guides/retrieval"
         },
         {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
           "scope": "public-gap-decision",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://platform.openai.com/docs/guides/retrieval"
@@ -2461,6 +3897,41 @@
           "scope": "next-source-pack",
           "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复",
           "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "broad-first-coverage",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "broad-first-coverage",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
         }
       ],
       "status": 200,
@@ -2478,6 +3949,13 @@
           "url": "https://python.langchain.com/docs"
         },
         {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://python.langchain.com/docs",
+          "scope": "public-gap-decision",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://python.langchain.com/docs"
+        },
+        {
           "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
           "label": "LangChain docs: https://python.langchain.com/docs",
           "scope": "public-gap-decision",
@@ -2485,8 +3963,22 @@
           "url": "https://python.langchain.com/docs"
         },
         {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://python.langchain.com/docs",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://python.langchain.com/docs"
+        },
+        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "LangChain docs: https://python.langchain.com/docs",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://python.langchain.com/docs"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://python.langchain.com/docs",
           "scope": "public-gap-decision",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
           "url": "https://python.langchain.com/docs"
@@ -2539,10 +4031,53 @@
           "scope": "next-source-pack",
           "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
           "url": "https://python.langchain.com/docs"
+        },
+        {
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "label": "https://python.langchain.com/docs",
+          "scope": "broad-first-coverage",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://python.langchain.com/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://python.langchain.com/docs",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://python.langchain.com/docs"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://python.langchain.com/docs",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://python.langchain.com/docs"
         }
       ],
       "status": 200,
       "url": "https://python.langchain.com/docs"
+    },
+    {
+      "finalUrl": "https://sensara.io/prompts/",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://sensara.io/prompts/",
+          "scope": "public-gap-decision",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://sensara.io/prompts/"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://sensara.io/prompts/",
+          "scope": "broad-first-coverage",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://sensara.io/prompts/"
+        }
+      ],
+      "status": 200,
+      "url": "https://sensara.io/prompts/"
     },
     {
       "finalUrl": "https://support.google.com/docs/answer/15013615",
@@ -2565,6 +4100,182 @@
       ],
       "status": 200,
       "url": "https://support.google.com/docs/answer/15013615"
+    },
+    {
+      "finalUrl": "https://vercel.com/docs/ai-gateway",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://vercel.com/docs/ai-gateway",
+          "scope": "public-gap-decision",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://vercel.com/docs/ai-gateway"
+        },
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "label": "https://vercel.com/docs/ai-gateway",
+          "scope": "broad-first-coverage",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://vercel.com/docs/ai-gateway"
+        }
+      ],
+      "status": 200,
+      "url": "https://vercel.com/docs/ai-gateway"
+    },
+    {
+      "finalUrl": "https://www.mrprompts.ai/learn/ai-prompts-for-sales",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://www.mrprompts.ai/learn/ai-prompts-for-sales",
+          "scope": "public-gap-decision",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://www.mrprompts.ai/learn/ai-prompts-for-sales"
+        },
+        {
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "label": "https://www.mrprompts.ai/learn/ai-prompts-for-sales",
+          "scope": "broad-first-coverage",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "url": "https://www.mrprompts.ai/learn/ai-prompts-for-sales"
+        }
+      ],
+      "status": 200,
+      "url": "https://www.mrprompts.ai/learn/ai-prompts-for-sales"
+    },
+    {
+      "finalUrl": "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+        }
+      ],
+      "status": 200,
+      "url": "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+    },
+    {
+      "finalUrl": "https://www.promptfoo.dev/docs/intro/",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+          "label": "https://www.promptfoo.dev/docs/intro/",
+          "scope": "public-gap-decision",
+          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+          "url": "https://www.promptfoo.dev/docs/intro/"
+        },
+        {
+          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+          "label": "https://www.promptfoo.dev/docs/intro/",
+          "scope": "broad-first-coverage",
+          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+          "url": "https://www.promptfoo.dev/docs/intro/"
+        }
+      ],
+      "status": 200,
+      "url": "https://www.promptfoo.dev/docs/intro/"
+    },
+    {
+      "finalUrl": "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+          "label": "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/",
+          "scope": "public-gap-decision",
+          "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+          "url": "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/"
+        },
+        {
+          "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+          "label": "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/",
+          "scope": "broad-first-coverage",
+          "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+          "url": "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/"
+        }
+      ],
+      "status": 200,
+      "url": "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/"
+    },
+    {
+      "finalUrl": "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/"
+        }
+      ],
+      "status": 200,
+      "url": "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/"
+    },
+    {
+      "finalUrl": "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker"
+        }
+      ],
+      "status": 200,
+      "url": "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker"
+    },
+    {
+      "finalUrl": "https://www.spheron.network/blog/llm-deployment-guide/",
+      "ok": true,
+      "references": [
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://www.spheron.network/blog/llm-deployment-guide/",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://www.spheron.network/blog/llm-deployment-guide/"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://www.spheron.network/blog/llm-deployment-guide/",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://www.spheron.network/blog/llm-deployment-guide/"
+        }
+      ],
+      "status": 200,
+      "url": "https://www.spheron.network/blog/llm-deployment-guide/"
     }
   ]
 }

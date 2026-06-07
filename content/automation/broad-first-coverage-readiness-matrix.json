@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T03:29:44.957Z",
+  "generatedAt": "2026-06-07T03:47:35.146Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,7 +10,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "launchPackGeneratedAt": "2026-06-07T03:29:44.480Z",
+    "launchPackGeneratedAt": "2026-06-07T03:47:34.656Z",
     "launchPackGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -55,13 +55,13 @@
     "firstCoverageItems": 8,
     "freshnessReadyItems": 8,
     "integrityReadyItems": 8,
-    "itemsWithPublicLinkPath": 5,
+    "itemsWithPublicLinkPath": 8,
     "launchPackItems": 8,
-    "preflightReadyItems": 3,
+    "preflightReadyItems": 8,
     "queryReadyItems": 8,
     "schemaReadyItems": 8,
     "snippetReadyItems": 8,
-    "sourceReadyItems": 5,
+    "sourceReadyItems": 8,
     "trafficDataAvailable": false,
     "uniqueFiles": 8,
     "unsafeItems": 0,
@@ -83,45 +83,47 @@
       "gapScore": 321,
       "launchReady": true,
       "readiness": {
-        "freshnessReady": null,
+        "freshnessReady": true,
         "hasPublicLinkPath": true,
         "integrityReady": true,
-        "preflightReady": false,
+        "preflightReady": true,
         "queryReady": true,
         "schemaReady": true,
         "snippetReady": true,
         "sourceReady": true
       },
-      "readinessScore": 66,
+      "readinessScore": 70,
       "reviewActions": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
         "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
         "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
         "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
         "Choose one suggested public internal link during review or document why it should remain unlinked.",
-        "Use launch-pack freshness checklist because no separate freshness record exists for this file.",
-        "Resolve or explicitly accept warning: no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval.",
-        "Resolve or explicitly accept warning: no review-freshness record; rely on launch fact-check checklist.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
+        "Resolve or explicitly accept warning: candidate has no current links to public articles; use suggested public link during review.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "searchSignals": {
         "exactQueryMatches": 2,
-        "exactSeedMatches": null,
+        "exactSeedMatches": 0,
         "matchedFamilies": 7,
         "searchQueries": 5,
-        "seedFamilyMatches": null
+        "seedFamilyMatches": 5
       },
       "sourceSignals": {
         "launchSourceTargets": 10,
-        "reachableSources": 7,
-        "sourceTargets": 7
+        "reachableSources": 27,
+        "sourceTargets": 27
       },
       "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
       "warningIssues": [
-        "no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval",
-        "no review-freshness record; rely on launch fact-check checklist"
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "candidate has no current links to public articles; use suggested public link during review"
       ]
     },
     {
@@ -166,12 +168,12 @@
         "exactSeedMatches": 0,
         "matchedFamilies": 7,
         "searchQueries": 5,
-        "seedFamilyMatches": 4
+        "seedFamilyMatches": 9
       },
       "sourceSignals": {
         "launchSourceTargets": 8,
-        "reachableSources": 10,
-        "sourceTargets": 10
+        "reachableSources": 26,
+        "sourceTargets": 26
       },
       "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
       "warningIssues": [
@@ -194,51 +196,49 @@
       "gapScore": 315,
       "launchReady": true,
       "readiness": {
-        "freshnessReady": null,
-        "hasPublicLinkPath": false,
+        "freshnessReady": true,
+        "hasPublicLinkPath": true,
         "integrityReady": true,
-        "preflightReady": false,
+        "preflightReady": true,
         "queryReady": null,
         "schemaReady": true,
         "snippetReady": true,
-        "sourceReady": false
+        "sourceReady": true
       },
-      "readinessScore": 40,
+      "readinessScore": 64,
       "reviewActions": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
         "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
         "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
         "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
-        "Add or replace official source targets before manual approval.",
-        "Use launch-pack freshness checklist because no separate freshness record exists for this file.",
-        "Resolve or explicitly accept warning: source-health report does not show a reachable source for this file; verify launch-pack source targets manually.",
-        "Resolve or explicitly accept warning: no public internal-link suggestion found in the internal-link audit; add or document one during review.",
-        "Resolve or explicitly accept warning: no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval.",
-        "Resolve or explicitly accept warning: no search-query-match record; rely on launch search queries and public-gap seed evidence.",
-        "Resolve or explicitly accept warning: no review-freshness record; rely on launch fact-check checklist.",
+        "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
+        "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "searchSignals": {
         "exactQueryMatches": null,
-        "exactSeedMatches": null,
+        "exactSeedMatches": 0,
         "matchedFamilies": null,
         "searchQueries": 5,
-        "seedFamilyMatches": null
+        "seedFamilyMatches": 5
       },
       "sourceSignals": {
         "launchSourceTargets": 3,
-        "reachableSources": null,
-        "sourceTargets": null
+        "reachableSources": 6,
+        "sourceTargets": 6
       },
       "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
       "warningIssues": [
-        "source-health report does not show a reachable source for this file; verify launch-pack source targets manually",
-        "no public internal-link suggestion found in the internal-link audit; add or document one during review",
-        "no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval",
-        "no search-query-match record; rely on launch search queries and public-gap seed evidence",
-        "no review-freshness record; rely on launch fact-check checklist"
+        "primary keyword is not an exact title substring",
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "candidate has no current links to public articles; use suggested public link during review",
+        "no search-query-match record; rely on launch search queries and public-gap seed evidence"
       ]
     },
     {
@@ -257,47 +257,50 @@
         "freshnessReady": true,
         "hasPublicLinkPath": true,
         "integrityReady": true,
-        "preflightReady": false,
+        "preflightReady": true,
         "queryReady": true,
         "schemaReady": true,
         "snippetReady": true,
         "sourceReady": true
       },
-      "readinessScore": 62,
+      "readinessScore": 56,
       "reviewActions": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
         "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
         "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
         "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
         "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
         "Improve exact query alignment without keyword stuffing.",
         "Review snippet warnings for title, description, slug, and primary keyword alignment.",
         "Resolve or explicitly accept warning: description may be thin for search snippets.",
         "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
-        "Resolve or explicitly accept warning: few exact query variant matches in article text.",
-        "Resolve or explicitly accept warning: no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "searchSignals": {
         "exactQueryMatches": 0,
-        "exactSeedMatches": null,
+        "exactSeedMatches": 0,
         "matchedFamilies": 7,
         "searchQueries": 5,
-        "seedFamilyMatches": null
+        "seedFamilyMatches": 5
       },
       "sourceSignals": {
         "launchSourceTargets": 10,
-        "reachableSources": 9,
-        "sourceTargets": 9
+        "reachableSources": 29,
+        "sourceTargets": 29
       },
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "warningIssues": [
         "description may be thin for search snippets",
         "primary keyword is not an exact title substring",
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
         "few exact query variant matches in article text",
-        "no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval"
+        "candidate has no current links to public articles; use suggested public link during review"
       ]
     },
     {
@@ -322,36 +325,34 @@
         "snippetReady": true,
         "sourceReady": true
       },
-      "readinessScore": 66,
+      "readinessScore": 70,
       "reviewActions": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
         "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
         "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
         "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
         "Choose one suggested public internal link during review or document why it should remain unlinked.",
-        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
-        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
         "Resolve or explicitly accept warning: article currently has no links to published articles.",
         "Resolve or explicitly accept warning: theme still has missing subtopics: customer service.",
+        "Resolve or explicitly accept warning: candidate has no current links to public articles; use suggested public link during review.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "searchSignals": {
         "exactQueryMatches": 4,
-        "exactSeedMatches": 0,
+        "exactSeedMatches": 1,
         "matchedFamilies": 7,
         "searchQueries": 6,
-        "seedFamilyMatches": 3
+        "seedFamilyMatches": 9
       },
       "sourceSignals": {
         "launchSourceTargets": 8,
-        "reachableSources": 8,
-        "sourceTargets": 8
+        "reachableSources": 22,
+        "sourceTargets": 24
       },
       "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
       "warningIssues": [
-        "no exact search-seed phrase appears in title, description, or body",
         "article currently has no links to published articles",
         "theme still has missing subtopics: customer service",
         "candidate has no current links to public articles; use suggested public link during review"
@@ -370,51 +371,49 @@
       "gapScore": 307,
       "launchReady": true,
       "readiness": {
-        "freshnessReady": null,
-        "hasPublicLinkPath": false,
+        "freshnessReady": true,
+        "hasPublicLinkPath": true,
         "integrityReady": true,
-        "preflightReady": false,
+        "preflightReady": true,
         "queryReady": null,
         "schemaReady": true,
         "snippetReady": true,
-        "sourceReady": false
+        "sourceReady": true
       },
-      "readinessScore": 40,
+      "readinessScore": 64,
       "reviewActions": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
         "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
         "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
         "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
-        "Add or replace official source targets before manual approval.",
-        "Use launch-pack freshness checklist because no separate freshness record exists for this file.",
-        "Resolve or explicitly accept warning: source-health report does not show a reachable source for this file; verify launch-pack source targets manually.",
-        "Resolve or explicitly accept warning: no public internal-link suggestion found in the internal-link audit; add or document one during review.",
-        "Resolve or explicitly accept warning: no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval.",
-        "Resolve or explicitly accept warning: no search-query-match record; rely on launch search queries and public-gap seed evidence.",
-        "Resolve or explicitly accept warning: no review-freshness record; rely on launch fact-check checklist.",
+        "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
+        "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "searchSignals": {
         "exactQueryMatches": null,
-        "exactSeedMatches": null,
+        "exactSeedMatches": 0,
         "matchedFamilies": null,
         "searchQueries": 5,
-        "seedFamilyMatches": null
+        "seedFamilyMatches": 5
       },
       "sourceSignals": {
         "launchSourceTargets": 3,
-        "reachableSources": null,
-        "sourceTargets": null
+        "reachableSources": 6,
+        "sourceTargets": 6
       },
       "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
       "warningIssues": [
-        "source-health report does not show a reachable source for this file; verify launch-pack source targets manually",
-        "no public internal-link suggestion found in the internal-link audit; add or document one during review",
-        "no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval",
-        "no search-query-match record; rely on launch search queries and public-gap seed evidence",
-        "no review-freshness record; rely on launch fact-check checklist"
+        "primary keyword is not an exact title substring",
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "candidate has no current links to public articles; use suggested public link during review",
+        "no search-query-match record; rely on launch search queries and public-gap seed evidence"
       ]
     },
     {
@@ -439,40 +438,36 @@
         "snippetReady": true,
         "sourceReady": true
       },
-      "readinessScore": 60,
+      "readinessScore": 68,
       "reviewActions": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
         "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
         "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
         "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
         "Choose one suggested public internal link during review or document why it should remain unlinked.",
-        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
         "Review snippet warnings for title, description, slug, and primary keyword alignment.",
         "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
-        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
-        "Resolve or explicitly accept warning: few search-seed token families appear in article text.",
         "Resolve or explicitly accept warning: theme still has missing subtopics: logs, prompt injection, cost tracking.",
+        "Resolve or explicitly accept warning: no search-query-match record; rely on launch search queries and public-gap seed evidence.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "searchSignals": {
         "exactQueryMatches": null,
-        "exactSeedMatches": 0,
+        "exactSeedMatches": 1,
         "matchedFamilies": null,
         "searchQueries": 5,
-        "seedFamilyMatches": 1
+        "seedFamilyMatches": 6
       },
       "sourceSignals": {
         "launchSourceTargets": 12,
-        "reachableSources": 12,
-        "sourceTargets": 12
+        "reachableSources": 36,
+        "sourceTargets": 36
       },
       "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
       "warningIssues": [
         "primary keyword is not an exact title substring",
-        "no exact search-seed phrase appears in title, description, or body",
-        "few search-seed token families appear in article text",
         "theme still has missing subtopics: logs, prompt injection, cost tracking",
         "no search-query-match record; rely on launch search queries and public-gap seed evidence"
       ]
@@ -490,51 +485,51 @@
       "gapScore": 287,
       "launchReady": true,
       "readiness": {
-        "freshnessReady": null,
-        "hasPublicLinkPath": false,
+        "freshnessReady": true,
+        "hasPublicLinkPath": true,
         "integrityReady": true,
-        "preflightReady": false,
+        "preflightReady": true,
         "queryReady": null,
         "schemaReady": true,
         "snippetReady": true,
-        "sourceReady": false
+        "sourceReady": true
       },
-      "readinessScore": 40,
+      "readinessScore": 60,
       "reviewActions": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
         "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
         "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
         "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
-        "Add or replace official source targets before manual approval.",
-        "Use launch-pack freshness checklist because no separate freshness record exists for this file.",
-        "Resolve or explicitly accept warning: source-health report does not show a reachable source for this file; verify launch-pack source targets manually.",
-        "Resolve or explicitly accept warning: no public internal-link suggestion found in the internal-link audit; add or document one during review.",
-        "Resolve or explicitly accept warning: no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval.",
-        "Resolve or explicitly accept warning: no search-query-match record; rely on launch search queries and public-gap seed evidence.",
-        "Resolve or explicitly accept warning: no review-freshness record; rely on launch fact-check checklist.",
+        "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
+        "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: few search-seed token families appear in article text.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "searchSignals": {
         "exactQueryMatches": null,
-        "exactSeedMatches": null,
+        "exactSeedMatches": 0,
         "matchedFamilies": null,
         "searchQueries": 5,
-        "seedFamilyMatches": null
+        "seedFamilyMatches": 1
       },
       "sourceSignals": {
         "launchSourceTargets": 3,
-        "reachableSources": null,
-        "sourceTargets": null
+        "reachableSources": 6,
+        "sourceTargets": 6
       },
       "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
       "warningIssues": [
-        "source-health report does not show a reachable source for this file; verify launch-pack source targets manually",
-        "no public internal-link suggestion found in the internal-link audit; add or document one during review",
-        "no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval",
-        "no search-query-match record; rely on launch search queries and public-gap seed evidence",
-        "no review-freshness record; rely on launch fact-check checklist"
+        "primary keyword is not an exact title substring",
+        "no exact search-seed phrase appears in title, description, or body",
+        "few search-seed token families appear in article text",
+        "article currently has no links to published articles",
+        "candidate has no current links to public articles; use suggested public link during review",
+        "no search-query-match record; rely on launch search queries and public-gap seed evidence"
       ]
     }
   ],
@@ -552,45 +547,47 @@
       "gapScore": 321,
       "launchReady": true,
       "readiness": {
-        "freshnessReady": null,
+        "freshnessReady": true,
         "hasPublicLinkPath": true,
         "integrityReady": true,
-        "preflightReady": false,
+        "preflightReady": true,
         "queryReady": true,
         "schemaReady": true,
         "snippetReady": true,
         "sourceReady": true
       },
-      "readinessScore": 66,
+      "readinessScore": 70,
       "reviewActions": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
         "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
         "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
         "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
         "Choose one suggested public internal link during review or document why it should remain unlinked.",
-        "Use launch-pack freshness checklist because no separate freshness record exists for this file.",
-        "Resolve or explicitly accept warning: no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval.",
-        "Resolve or explicitly accept warning: no review-freshness record; rely on launch fact-check checklist.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
+        "Resolve or explicitly accept warning: candidate has no current links to public articles; use suggested public link during review.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "searchSignals": {
         "exactQueryMatches": 2,
-        "exactSeedMatches": null,
+        "exactSeedMatches": 0,
         "matchedFamilies": 7,
         "searchQueries": 5,
-        "seedFamilyMatches": null
+        "seedFamilyMatches": 5
       },
       "sourceSignals": {
         "launchSourceTargets": 10,
-        "reachableSources": 7,
-        "sourceTargets": 7
+        "reachableSources": 27,
+        "sourceTargets": 27
       },
       "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
       "warningIssues": [
-        "no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval",
-        "no review-freshness record; rely on launch fact-check checklist"
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "candidate has no current links to public articles; use suggested public link during review"
       ]
     },
     {
@@ -635,12 +632,12 @@
         "exactSeedMatches": 0,
         "matchedFamilies": 7,
         "searchQueries": 5,
-        "seedFamilyMatches": 4
+        "seedFamilyMatches": 9
       },
       "sourceSignals": {
         "launchSourceTargets": 8,
-        "reachableSources": 10,
-        "sourceTargets": 10
+        "reachableSources": 26,
+        "sourceTargets": 26
       },
       "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
       "warningIssues": [
@@ -663,51 +660,49 @@
       "gapScore": 315,
       "launchReady": true,
       "readiness": {
-        "freshnessReady": null,
-        "hasPublicLinkPath": false,
+        "freshnessReady": true,
+        "hasPublicLinkPath": true,
         "integrityReady": true,
-        "preflightReady": false,
+        "preflightReady": true,
         "queryReady": null,
         "schemaReady": true,
         "snippetReady": true,
-        "sourceReady": false
+        "sourceReady": true
       },
-      "readinessScore": 40,
+      "readinessScore": 64,
       "reviewActions": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
         "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
         "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
         "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
-        "Add or replace official source targets before manual approval.",
-        "Use launch-pack freshness checklist because no separate freshness record exists for this file.",
-        "Resolve or explicitly accept warning: source-health report does not show a reachable source for this file; verify launch-pack source targets manually.",
-        "Resolve or explicitly accept warning: no public internal-link suggestion found in the internal-link audit; add or document one during review.",
-        "Resolve or explicitly accept warning: no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval.",
-        "Resolve or explicitly accept warning: no search-query-match record; rely on launch search queries and public-gap seed evidence.",
-        "Resolve or explicitly accept warning: no review-freshness record; rely on launch fact-check checklist.",
+        "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
+        "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "searchSignals": {
         "exactQueryMatches": null,
-        "exactSeedMatches": null,
+        "exactSeedMatches": 0,
         "matchedFamilies": null,
         "searchQueries": 5,
-        "seedFamilyMatches": null
+        "seedFamilyMatches": 5
       },
       "sourceSignals": {
         "launchSourceTargets": 3,
-        "reachableSources": null,
-        "sourceTargets": null
+        "reachableSources": 6,
+        "sourceTargets": 6
       },
       "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
       "warningIssues": [
-        "source-health report does not show a reachable source for this file; verify launch-pack source targets manually",
-        "no public internal-link suggestion found in the internal-link audit; add or document one during review",
-        "no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval",
-        "no search-query-match record; rely on launch search queries and public-gap seed evidence",
-        "no review-freshness record; rely on launch fact-check checklist"
+        "primary keyword is not an exact title substring",
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "candidate has no current links to public articles; use suggested public link during review",
+        "no search-query-match record; rely on launch search queries and public-gap seed evidence"
       ]
     },
     {
@@ -726,47 +721,50 @@
         "freshnessReady": true,
         "hasPublicLinkPath": true,
         "integrityReady": true,
-        "preflightReady": false,
+        "preflightReady": true,
         "queryReady": true,
         "schemaReady": true,
         "snippetReady": true,
         "sourceReady": true
       },
-      "readinessScore": 62,
+      "readinessScore": 56,
       "reviewActions": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
         "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
         "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
         "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
         "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
         "Improve exact query alignment without keyword stuffing.",
         "Review snippet warnings for title, description, slug, and primary keyword alignment.",
         "Resolve or explicitly accept warning: description may be thin for search snippets.",
         "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
-        "Resolve or explicitly accept warning: few exact query variant matches in article text.",
-        "Resolve or explicitly accept warning: no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "searchSignals": {
         "exactQueryMatches": 0,
-        "exactSeedMatches": null,
+        "exactSeedMatches": 0,
         "matchedFamilies": 7,
         "searchQueries": 5,
-        "seedFamilyMatches": null
+        "seedFamilyMatches": 5
       },
       "sourceSignals": {
         "launchSourceTargets": 10,
-        "reachableSources": 9,
-        "sourceTargets": 9
+        "reachableSources": 29,
+        "sourceTargets": 29
       },
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "warningIssues": [
         "description may be thin for search snippets",
         "primary keyword is not an exact title substring",
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
         "few exact query variant matches in article text",
-        "no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval"
+        "candidate has no current links to public articles; use suggested public link during review"
       ]
     },
     {
@@ -791,36 +789,34 @@
         "snippetReady": true,
         "sourceReady": true
       },
-      "readinessScore": 66,
+      "readinessScore": 70,
       "reviewActions": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
         "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
         "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
         "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
         "Choose one suggested public internal link during review or document why it should remain unlinked.",
-        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
-        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
         "Resolve or explicitly accept warning: article currently has no links to published articles.",
         "Resolve or explicitly accept warning: theme still has missing subtopics: customer service.",
+        "Resolve or explicitly accept warning: candidate has no current links to public articles; use suggested public link during review.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "searchSignals": {
         "exactQueryMatches": 4,
-        "exactSeedMatches": 0,
+        "exactSeedMatches": 1,
         "matchedFamilies": 7,
         "searchQueries": 6,
-        "seedFamilyMatches": 3
+        "seedFamilyMatches": 9
       },
       "sourceSignals": {
         "launchSourceTargets": 8,
-        "reachableSources": 8,
-        "sourceTargets": 8
+        "reachableSources": 22,
+        "sourceTargets": 24
       },
       "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
       "warningIssues": [
-        "no exact search-seed phrase appears in title, description, or body",
         "article currently has no links to published articles",
         "theme still has missing subtopics: customer service",
         "candidate has no current links to public articles; use suggested public link during review"
@@ -839,51 +835,49 @@
       "gapScore": 307,
       "launchReady": true,
       "readiness": {
-        "freshnessReady": null,
-        "hasPublicLinkPath": false,
+        "freshnessReady": true,
+        "hasPublicLinkPath": true,
         "integrityReady": true,
-        "preflightReady": false,
+        "preflightReady": true,
         "queryReady": null,
         "schemaReady": true,
         "snippetReady": true,
-        "sourceReady": false
+        "sourceReady": true
       },
-      "readinessScore": 40,
+      "readinessScore": 64,
       "reviewActions": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
         "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
         "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
         "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
-        "Add or replace official source targets before manual approval.",
-        "Use launch-pack freshness checklist because no separate freshness record exists for this file.",
-        "Resolve or explicitly accept warning: source-health report does not show a reachable source for this file; verify launch-pack source targets manually.",
-        "Resolve or explicitly accept warning: no public internal-link suggestion found in the internal-link audit; add or document one during review.",
-        "Resolve or explicitly accept warning: no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval.",
-        "Resolve or explicitly accept warning: no search-query-match record; rely on launch search queries and public-gap seed evidence.",
-        "Resolve or explicitly accept warning: no review-freshness record; rely on launch fact-check checklist.",
+        "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
+        "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "searchSignals": {
         "exactQueryMatches": null,
-        "exactSeedMatches": null,
+        "exactSeedMatches": 0,
         "matchedFamilies": null,
         "searchQueries": 5,
-        "seedFamilyMatches": null
+        "seedFamilyMatches": 5
       },
       "sourceSignals": {
         "launchSourceTargets": 3,
-        "reachableSources": null,
-        "sourceTargets": null
+        "reachableSources": 6,
+        "sourceTargets": 6
       },
       "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
       "warningIssues": [
-        "source-health report does not show a reachable source for this file; verify launch-pack source targets manually",
-        "no public internal-link suggestion found in the internal-link audit; add or document one during review",
-        "no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval",
-        "no search-query-match record; rely on launch search queries and public-gap seed evidence",
-        "no review-freshness record; rely on launch fact-check checklist"
+        "primary keyword is not an exact title substring",
+        "no exact search-seed phrase appears in title, description, or body",
+        "article currently has no links to published articles",
+        "candidate has no current links to public articles; use suggested public link during review",
+        "no search-query-match record; rely on launch search queries and public-gap seed evidence"
       ]
     },
     {
@@ -908,40 +902,36 @@
         "snippetReady": true,
         "sourceReady": true
       },
-      "readinessScore": 60,
+      "readinessScore": 68,
       "reviewActions": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
         "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
         "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
         "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
         "Choose one suggested public internal link during review or document why it should remain unlinked.",
-        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
         "Review snippet warnings for title, description, slug, and primary keyword alignment.",
         "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
-        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
-        "Resolve or explicitly accept warning: few search-seed token families appear in article text.",
         "Resolve or explicitly accept warning: theme still has missing subtopics: logs, prompt injection, cost tracking.",
+        "Resolve or explicitly accept warning: no search-query-match record; rely on launch search queries and public-gap seed evidence.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "searchSignals": {
         "exactQueryMatches": null,
-        "exactSeedMatches": 0,
+        "exactSeedMatches": 1,
         "matchedFamilies": null,
         "searchQueries": 5,
-        "seedFamilyMatches": 1
+        "seedFamilyMatches": 6
       },
       "sourceSignals": {
         "launchSourceTargets": 12,
-        "reachableSources": 12,
-        "sourceTargets": 12
+        "reachableSources": 36,
+        "sourceTargets": 36
       },
       "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
       "warningIssues": [
         "primary keyword is not an exact title substring",
-        "no exact search-seed phrase appears in title, description, or body",
-        "few search-seed token families appear in article text",
         "theme still has missing subtopics: logs, prompt injection, cost tracking",
         "no search-query-match record; rely on launch search queries and public-gap seed evidence"
       ]
@@ -959,51 +949,51 @@
       "gapScore": 287,
       "launchReady": true,
       "readiness": {
-        "freshnessReady": null,
-        "hasPublicLinkPath": false,
+        "freshnessReady": true,
+        "hasPublicLinkPath": true,
         "integrityReady": true,
-        "preflightReady": false,
+        "preflightReady": true,
         "queryReady": null,
         "schemaReady": true,
         "snippetReady": true,
-        "sourceReady": false
+        "sourceReady": true
       },
-      "readinessScore": 40,
+      "readinessScore": 60,
       "reviewActions": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
         "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
         "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
         "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
-        "Add or replace official source targets before manual approval.",
-        "Use launch-pack freshness checklist because no separate freshness record exists for this file.",
-        "Resolve or explicitly accept warning: source-health report does not show a reachable source for this file; verify launch-pack source targets manually.",
-        "Resolve or explicitly accept warning: no public internal-link suggestion found in the internal-link audit; add or document one during review.",
-        "Resolve or explicitly accept warning: no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval.",
-        "Resolve or explicitly accept warning: no search-query-match record; rely on launch search queries and public-gap seed evidence.",
-        "Resolve or explicitly accept warning: no review-freshness record; rely on launch fact-check checklist.",
+        "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
+        "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: few search-seed token families appear in article text.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "searchSignals": {
         "exactQueryMatches": null,
-        "exactSeedMatches": null,
+        "exactSeedMatches": 0,
         "matchedFamilies": null,
         "searchQueries": 5,
-        "seedFamilyMatches": null
+        "seedFamilyMatches": 1
       },
       "sourceSignals": {
         "launchSourceTargets": 3,
-        "reachableSources": null,
-        "sourceTargets": null
+        "reachableSources": 6,
+        "sourceTargets": 6
       },
       "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
       "warningIssues": [
-        "source-health report does not show a reachable source for this file; verify launch-pack source targets manually",
-        "no public internal-link suggestion found in the internal-link audit; add or document one during review",
-        "no public-gap preflight record; rely on launch-pack checks and run targeted preflight before approval",
-        "no search-query-match record; rely on launch search queries and public-gap seed evidence",
-        "no review-freshness record; rely on launch fact-check checklist"
+        "primary keyword is not an exact title substring",
+        "no exact search-seed phrase appears in title, description, or body",
+        "few search-seed token families appear in article text",
+        "article currently has no links to published articles",
+        "candidate has no current links to public articles; use suggested public link during review",
+        "no search-query-match record; rely on launch search queries and public-gap seed evidence"
       ]
     }
   ]

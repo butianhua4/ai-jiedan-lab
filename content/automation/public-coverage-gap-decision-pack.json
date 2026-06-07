@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T03:28:04.778Z",
+  "generatedAt": "2026-06-07T03:46:01.369Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -8,7 +8,7 @@
     "stopBefore": "Only use these commands after explicit human approval. Never run mark:review --confirm-human or publish:articles --confirm automatically."
   },
   "sourceEvidence": {
-    "preflightGeneratedAt": "2026-06-07T03:28:04.290Z",
+    "preflightGeneratedAt": "2026-06-07T03:46:00.897Z",
     "preflightGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -18,31 +18,33 @@
     },
     "preflightSummary": {
       "blockingItems": 0,
-      "items": 8,
+      "broadFirstCoverageItems": 8,
+      "broadFirstCoveragePreflightItems": 8,
+      "items": 13,
       "planItems": 8,
       "planReadyItems": 8,
       "planUnsafeItems": 0,
       "planWaves": 4,
-      "readyItems": 8,
-      "structuredDataReadyItems": 8,
-      "uniqueFiles": 8,
-      "warningItems": 8,
-      "withPublicLinkSuggestions": 8,
-      "withSeedMatches": 7
+      "readyItems": 13,
+      "structuredDataReadyItems": 13,
+      "uniqueFiles": 13,
+      "warningItems": 13,
+      "withPublicLinkSuggestions": 13,
+      "withSeedMatches": 12
     },
     "trafficNote": "Search seeds and link suggestions are editorial signals, not measured rankings, impressions, clicks, traffic, or income."
   },
   "summary": {
     "blockingItems": 0,
-    "items": 8,
-    "itemsWithCommandBoundary": 8,
-    "itemsWithHumanChecklist": 8,
-    "itemsWithPublicLinkSuggestion": 8,
-    "itemsWithSourceTargets": 8,
-    "itemsWithWarningRemediation": 8,
-    "optimizationActions": 30,
-    "readyItems": 8,
-    "reviewReadyWithOptimizations": 8,
+    "items": 13,
+    "itemsWithCommandBoundary": 13,
+    "itemsWithHumanChecklist": 13,
+    "itemsWithPublicLinkSuggestion": 13,
+    "itemsWithSourceTargets": 13,
+    "itemsWithWarningRemediation": 13,
+    "optimizationActions": 43,
+    "readyItems": 13,
+    "reviewReadyWithOptimizations": 13,
     "unsafeItems": 0,
     "waves": 4
   },
@@ -51,13 +53,15 @@
       "blockingItems": 0,
       "files": [
         "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-        "content/blog/industry-ai-prompts-template-library-2026.mdx"
+        "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx"
       ],
-      "optimizationActions": 6,
-      "readyItems": 2,
+      "optimizationActions": 7,
+      "readyItems": 3,
       "themes": [
         "Agent deployment, tool calling, and production workflows",
-        "Cross-industry AI prompt templates"
+        "Cross-industry AI prompt templates",
+        "开源大模型部署：Ollama、vLLM、TGI、RunPod"
       ],
       "wave": 1
     },
@@ -65,13 +69,17 @@
       "blockingItems": 0,
       "files": [
         "content/blog/ai-agent-memory-rag-design-guide.mdx",
-        "content/blog/open-webui-functions-pipelines-deployment-guide.mdx"
+        "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+        "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+        "content/blog/ai-model-selection-customer-service-guide.mdx"
       ],
-      "optimizationActions": 7,
-      "readyItems": 2,
+      "optimizationActions": 14,
+      "readyItems": 4,
       "themes": [
         "RAG, knowledge base, and agent memory",
-        "Local and open-source model deployment"
+        "Local and open-source model deployment",
+        "Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
+        "RAG、知识库、向量数据库和引用溯源"
       ],
       "wave": 2
     },
@@ -79,27 +87,31 @@
       "blockingItems": 0,
       "files": [
         "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-        "content/blog/dify-workflow-error-handling-guide.mdx"
+        "content/blog/dify-workflow-error-handling-guide.mdx",
+        "content/blog/mcp-server-deployment-security-checklist.mdx"
       ],
-      "optimizationActions": 9,
-      "readyItems": 2,
+      "optimizationActions": 12,
+      "readyItems": 3,
       "themes": [
         "Dify, n8n, Flowise, and no-code AI automation",
-        "Business AI workflows and SOP templates"
+        "Business AI workflows and SOP templates",
+        "Dify、n8n、Coze、Flowise、MCP 自动化部署"
       ],
       "wave": 3
     },
     {
       "blockingItems": 0,
       "files": [
+        "content/blog/ai-api-key-security-rotation-guide.mdx",
         "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-        "content/blog/ai-api-key-security-rotation-guide.mdx"
+        "content/blog/agent-tool-permission-safety-guide.mdx"
       ],
-      "optimizationActions": 8,
-      "readyItems": 2,
+      "optimizationActions": 10,
+      "readyItems": 3,
       "themes": [
+        "LLM evaluation, observability, and security",
         "LLM serving, GPU, and managed inference",
-        "LLM evaluation, observability, and security"
+        "LLM 观测、评测、日志和上线后质量"
       ],
       "wave": 4
     }
@@ -141,7 +153,10 @@
           "tool permissions",
           "multi-step state",
           "human approval",
-          "observability and fallback paths"
+          "observability and fallback paths",
+          "不要写成全自动替人完成高风险业务",
+          "明确工具权限、人工确认、日志和失败处理",
+          "核对 SDK/API 的当前名称和部署方式"
         ],
         "searchSeedEvidence": {
           "exactSeedMatches": 0,
@@ -149,14 +164,27 @@
             "AI Agent deployment tutorial",
             "agent tool calling tutorial",
             "OpenAI Agents SDK beginner guide",
-            "Vercel AI SDK agent"
+            "Vercel AI SDK agent",
+            "AI Agent 部署教程",
+            "Agent 工具调用教程",
+            "AI Agent 生产环境",
+            "LangGraph Agent 入门",
+            "CrewAI 部署教程"
           ],
-          "seedFamilyMatches": 4
+          "seedFamilyMatches": 9
         },
         "sourceTargets": [
           "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-          "LangChain docs: https://python.langchain.com/docs"
+          "LangChain docs: https://python.langchain.com/docs",
+          "https://ai-sdk.dev/docs",
+          "https://platform.openai.com/docs/guides/agents",
+          "https://python.langchain.com/docs",
+          "https://platform.openai.com/docs",
+          "https://platform.openai.com/docs/guides/retrieval",
+          "https://platform.openai.com/docs/guides/prompt-engineering",
+          "https://openai.github.io/openai-agents-python/",
+          "https://langchain-ai.github.io/langgraph/"
         ],
         "warningIssues": [
           "no exact search-seed phrase appears in title, description, or body",
@@ -207,24 +235,40 @@
           "output formats",
           "quality checks",
           "risk disclaimers",
-          "prompt versioning"
+          "prompt versioning",
+          "避免空泛万能提示词，必须给输入字段、输出结构和质检标准",
+          "高风险行业必须保留专业判断和人工复核",
+          "不要承诺转化率、收入或法律/医疗结果"
         ],
         "searchSeedEvidence": {
-          "exactSeedMatches": 0,
+          "exactSeedMatches": 1,
           "searchSeeds": [
             "ChatGPT prompts for business",
             "AI prompt template library",
             "industry AI prompts",
-            "best AI prompts for work"
+            "best AI prompts for work",
+            "AI 提示词大全",
+            "销售 AI 提示词",
+            "客服 AI 提示词",
+            "HR AI 提示词",
+            "运营 AI 提示词",
+            "企业 AI 提示词模板"
           ],
-          "seedFamilyMatches": 3
+          "seedFamilyMatches": 9
         },
         "sourceTargets": [
           "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
-          "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+          "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "https://platform.openai.com/docs",
+          "https://platform.openai.com/docs/guides/prompt-engineering",
+          "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "https://ai-sdk.dev/docs",
+          "https://platform.openai.com/docs/guides/retrieval",
+          "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
+          "https://sensara.io/prompts/",
+          "https://www.mrprompts.ai/learn/ai-prompts-for-sales"
         ],
         "warningIssues": [
-          "no exact search-seed phrase appears in title, description, or body",
           "article currently has no links to published articles",
           "theme still has missing subtopics: customer service"
         ]
@@ -232,7 +276,6 @@
       "riskLevel": "medium",
       "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
       "suggestedOptimizations": [
-        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
         "Review the suggested public internal link before publishing: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner).",
         "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
       ],
@@ -513,6 +556,294 @@
       "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底"
     },
     {
+      "approvalWave": 1,
+      "blockingIssues": [],
+      "commandsAfterExplicitApproval": {
+        "markReview": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
+        "publishDryRun": "npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx"
+      },
+      "decision": "human-review-ready-with-optimizations",
+      "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify source targets and remove or rewrite any unsupported claims.",
+        "Decide whether the warning issues must be fixed before mark:review.",
+        "Choose one public internal link suggestion or document why no link should be added.",
+        "Confirm the article does not claim measured traffic, rankings, impressions, clicks, revenue, or income.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "publicLinkSuggestion": {
+        "reason": "keyword overlap: ai, 怎么, 检查, 新手, 查清, 清单",
+        "score": 28,
+        "title": "Codex 生成代码后怎么审核：交付前检查清单",
+        "url": "/blog/codex-code-review-delivery-checklist"
+      },
+      "readyForManualReview": true,
+      "reviewPacket": {
+        "missingSubtopics": [],
+        "reviewFocus": [
+          "核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异",
+          "不要承诺本地部署一定更省钱或更稳定",
+          "必须包含 smoke check、回滚、日志、限流和成本边界"
+        ],
+        "searchSeedEvidence": {
+          "exactSeedMatches": 0,
+          "searchSeeds": [
+            "大模型部署教程",
+            "Ollama 本地部署教程",
+            "vLLM 部署教程",
+            "RunPod vLLM serverless",
+            "Hugging Face TGI 部署"
+          ],
+          "seedFamilyMatches": 5
+        },
+        "sourceTargets": [
+          "https://platform.openai.com/docs",
+          "https://platform.openai.com/docs/guides/prompt-engineering",
+          "https://ai-sdk.dev/docs",
+          "https://platform.openai.com/docs/guides/agents",
+          "https://docs.vllm.ai",
+          "https://huggingface.co/docs",
+          "https://platform.openai.com/docs/guides/retrieval",
+          "https://docs.runpod.io/serverless/vllm/get-started",
+          "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+          "https://www.spheron.network/blog/llm-deployment-guide/"
+        ],
+        "warningIssues": [
+          "no exact search-seed phrase appears in title, description, or body",
+          "article currently has no links to published articles"
+        ]
+      },
+      "riskLevel": "medium",
+      "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+      "suggestedOptimizations": [
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)."
+      ],
+      "themeTitle": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
+      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查"
+    },
+    {
+      "approvalWave": 2,
+      "blockingIssues": [],
+      "commandsAfterExplicitApproval": {
+        "markReview": "npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human",
+        "publishDryRun": "npm run publish:articles -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx"
+      },
+      "decision": "human-review-ready-with-optimizations",
+      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify source targets and remove or rewrite any unsupported claims.",
+        "Decide whether the warning issues must be fixed before mark:review.",
+        "Choose one public internal link suggestion or document why no link should be added.",
+        "Confirm the article does not claim measured traffic, rankings, impressions, clicks, revenue, or income.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "publicLinkSuggestion": {
+        "reason": "keyword overlap: ai, 怎么, 接单, 第一, 一个",
+        "score": 20,
+        "title": "Codex 怎么做第一个网页",
+        "url": "/blog/build-first-webpage-with-codex"
+      },
+      "readyForManualReview": true,
+      "reviewPacket": {
+        "missingSubtopics": [],
+        "reviewFocus": [
+          "区分知识库 RAG 和用户记忆",
+          "必须有隐私、删除、去重、引用和人工纠错边界",
+          "避免宣称记忆层能自动解决幻觉"
+        ],
+        "searchSeedEvidence": {
+          "exactSeedMatches": 0,
+          "searchSeeds": [
+            "AI Agent 记忆怎么做",
+            "Agent memory RAG",
+            "AI Agent 长期记忆",
+            "pgvector Agent memory",
+            "RAG 和记忆区别"
+          ],
+          "seedFamilyMatches": 5
+        },
+        "sourceTargets": [
+          "https://arxiv.org/abs/2604.20598",
+          "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/",
+          "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
+        ],
+        "warningIssues": [
+          "primary keyword is not an exact title substring",
+          "no exact search-seed phrase appears in title, description, or body",
+          "article currently has no links to published articles"
+        ]
+      },
+      "riskLevel": "medium",
+      "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+      "suggestedOptimizations": [
+        "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)."
+      ],
+      "themeTitle": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
+      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储"
+    },
+    {
+      "approvalWave": 2,
+      "blockingIssues": [],
+      "commandsAfterExplicitApproval": {
+        "markReview": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
+        "publishDryRun": "npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx"
+      },
+      "decision": "human-review-ready-with-optimizations",
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify source targets and remove or rewrite any unsupported claims.",
+        "Decide whether the warning issues must be fixed before mark:review.",
+        "Choose one public internal link suggestion or document why no link should be added.",
+        "Confirm the article does not claim measured traffic, rankings, impressions, clicks, revenue, or income.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "publicLinkSuggestion": {
+        "reason": "keyword overlap: ai, 一个, 怎么, 么做, 第一",
+        "score": 20,
+        "title": "Codex 怎么做第一个网页",
+        "url": "/blog/build-first-webpage-with-codex"
+      },
+      "readyForManualReview": true,
+      "reviewPacket": {
+        "missingSubtopics": [],
+        "reviewFocus": [
+          "把 RAG、微调、提示词模板区分清楚",
+          "必须写明引用、来源、权限和失败兜底",
+          "不要把 demo 成功写成生产质量保证"
+        ],
+        "searchSeedEvidence": {
+          "exactSeedMatches": 0,
+          "searchSeeds": [
+            "RAG 知识库搭建教程",
+            "向量数据库教程",
+            "企业知识库 AI 部署",
+            "RAG 检索不到内容",
+            "RAG 评测教程"
+          ],
+          "seedFamilyMatches": 5
+        },
+        "sourceTargets": [
+          "https://platform.openai.com/docs/guides/retrieval",
+          "https://platform.openai.com/docs/guides/prompt-engineering",
+          "https://python.langchain.com/docs",
+          "https://docs.llamaindex.ai",
+          "https://huggingface.co/docs",
+          "https://platform.openai.com/docs",
+          "https://ai-sdk.dev/docs",
+          "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
+          "https://arxiv.org/abs/2603.10700",
+          "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+        ],
+        "warningIssues": [
+          "description may be thin for search snippets",
+          "primary keyword is not an exact title substring",
+          "no exact search-seed phrase appears in title, description, or body",
+          "article currently has no links to published articles"
+        ]
+      },
+      "riskLevel": "medium",
+      "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+      "suggestedOptimizations": [
+        "Tighten the meta description so it states the search intent, audience, and outcome clearly.",
+        "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)."
+      ],
+      "themeTitle": "RAG、知识库、向量数据库和引用溯源",
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
+    },
+    {
+      "approvalWave": 4,
+      "blockingIssues": [],
+      "commandsAfterExplicitApproval": {
+        "markReview": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
+        "publishDryRun": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx"
+      },
+      "decision": "human-review-ready-with-optimizations",
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify source targets and remove or rewrite any unsupported claims.",
+        "Decide whether the warning issues must be fixed before mark:review.",
+        "Choose one public internal link suggestion or document why no link should be added.",
+        "Confirm the article does not claim measured traffic, rankings, impressions, clicks, revenue, or income.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "publicLinkSuggestion": {
+        "reason": "keyword overlap: ai, 怎么, 新手, 代码, 检查, 交付",
+        "score": 28,
+        "title": "Codex 生成代码后怎么审核：交付前检查清单",
+        "url": "/blog/codex-code-review-delivery-checklist"
+      },
+      "readyForManualReview": true,
+      "reviewPacket": {
+        "missingSubtopics": [
+          "logs",
+          "prompt injection",
+          "cost tracking"
+        ],
+        "reviewFocus": [
+          "traces and logs",
+          "evaluation datasets",
+          "prompt injection",
+          "cost and quality drift",
+          "核对 SDK 名称、API endpoint、限流概念和错误码",
+          "必须强调密钥安全、服务端代理和日志脱敏",
+          "不要虚构价格或模型能力"
+        ],
+        "searchSeedEvidence": {
+          "exactSeedMatches": 1,
+          "searchSeeds": [
+            "LLM observability",
+            "RAG evaluation",
+            "AI agent logs",
+            "prompt injection defense",
+            "OpenAI API 接入教程",
+            "Claude API rate limit",
+            "Gemini API 限流",
+            "OpenRouter API 教程",
+            "AI API key 安全"
+          ],
+          "seedFamilyMatches": 6
+        },
+        "sourceTargets": [
+          "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+          "LangChain docs: https://python.langchain.com/docs",
+          "https://platform.openai.com/docs/guides/agents",
+          "https://platform.openai.com/docs/guides/retrieval",
+          "https://python.langchain.com/docs",
+          "https://platform.openai.com/docs",
+          "https://docs.anthropic.com",
+          "https://ai-sdk.dev/docs",
+          "https://ai.google.dev/docs",
+          "https://docs.dify.ai",
+          "https://docs.n8n.io",
+          "https://platform.openai.com/docs/guides/prompt-engineering",
+          "https://docs.anthropic.com/",
+          "https://vercel.com/docs/ai-gateway"
+        ],
+        "warningIssues": [
+          "primary keyword is not an exact title substring",
+          "theme still has missing subtopics: logs, prompt injection, cost tracking"
+        ]
+      },
+      "riskLevel": "low",
+      "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+      "suggestedOptimizations": [
+        "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+      ],
+      "themeTitle": "LLM evaluation, observability, and security",
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
+    },
+    {
       "approvalWave": 4,
       "blockingIssues": [],
       "commandsAfterExplicitApproval": {
@@ -580,14 +911,14 @@
       "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收"
     },
     {
-      "approvalWave": 4,
+      "approvalWave": 3,
       "blockingIssues": [],
       "commandsAfterExplicitApproval": {
-        "markReview": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
-        "publishDryRun": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx"
+        "markReview": "npm run mark:review -- --file=content/blog/mcp-server-deployment-security-checklist.mdx --confirm-human",
+        "publishDryRun": "npm run publish:articles -- --file=content/blog/mcp-server-deployment-security-checklist.mdx"
       },
       "decision": "human-review-ready-with-optimizations",
-      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
       "humanDecisionChecklist": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
         "Verify source targets and remove or rewrite any unsupported claims.",
@@ -597,44 +928,103 @@
         "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
       ],
       "publicLinkSuggestion": {
-        "reason": "keyword overlap: ai, 怎么, 新手, 代码, 检查, 交付",
-        "score": 28,
-        "title": "Codex 生成代码后怎么审核：交付前检查清单",
-        "url": "/blog/codex-code-review-delivery-checklist"
+        "reason": "keyword overlap: 部署, 怎么, 新手, 提示, 环境, 境变",
+        "score": 32,
+        "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+        "url": "/blog/vercel-env-variable-missing-beginner-guide"
       },
       "readyForManualReview": true,
       "reviewPacket": {
-        "missingSubtopics": [
-          "logs",
-          "prompt injection",
-          "cost tracking"
-        ],
+        "missingSubtopics": [],
         "reviewFocus": [
-          "traces and logs",
-          "evaluation datasets",
-          "prompt injection",
-          "cost and quality drift"
+          "核对平台连接器、webhook、权限和部署限制",
+          "避免鼓励群发、绕过平台规则或抓取隐私数据",
+          "写清楚人工审批和客户验收边界"
         ],
         "searchSeedEvidence": {
           "exactSeedMatches": 0,
           "searchSeeds": [
-            "LLM observability",
-            "RAG evaluation",
-            "AI agent logs",
-            "prompt injection defense"
+            "Dify 部署教程",
+            "n8n AI 自动化教程",
+            "MCP 使用教程",
+            "Flowise 本地部署",
+            "Coze Bot 发布"
+          ],
+          "seedFamilyMatches": 5
+        },
+        "sourceTargets": [
+          "https://docs.dify.ai/",
+          "https://docs.n8n.io/",
+          "https://modelcontextprotocol.io/docs"
+        ],
+        "warningIssues": [
+          "primary keyword is not an exact title substring",
+          "no exact search-seed phrase appears in title, description, or body",
+          "article currently has no links to published articles"
+        ]
+      },
+      "riskLevel": "medium",
+      "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+      "suggestedOptimizations": [
+        "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
+        "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
+        "Review the suggested public internal link before publishing: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide)."
+      ],
+      "themeTitle": "Dify、n8n、Coze、Flowise、MCP 自动化部署",
+      "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单"
+    },
+    {
+      "approvalWave": 4,
+      "blockingIssues": [],
+      "commandsAfterExplicitApproval": {
+        "markReview": "npm run mark:review -- --file=content/blog/agent-tool-permission-safety-guide.mdx --confirm-human",
+        "publishDryRun": "npm run publish:articles -- --file=content/blog/agent-tool-permission-safety-guide.mdx"
+      },
+      "decision": "human-review-ready-with-optimizations",
+      "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+      "humanDecisionChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify source targets and remove or rewrite any unsupported claims.",
+        "Decide whether the warning issues must be fixed before mark:review.",
+        "Choose one public internal link suggestion or document why no link should be added.",
+        "Confirm the article does not claim measured traffic, rankings, impressions, clicks, revenue, or income.",
+        "Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval."
+      ],
+      "publicLinkSuggestion": {
+        "reason": "keyword overlap: 怎么, 新手, 指南, 项目, 一个, 自由",
+        "score": 28,
+        "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+        "url": "/blog/first-upwork-project-pricing-checklist"
+      },
+      "readyForManualReview": true,
+      "reviewPacket": {
+        "missingSubtopics": [],
+        "reviewFocus": [
+          "不要把评测分数写成绝对质量保证",
+          "明确日志隐私、数据脱敏和留存边界",
+          "给出人工抽检和回滚流程"
+        ],
+        "searchSeedEvidence": {
+          "exactSeedMatches": 0,
+          "searchSeeds": [
+            "LLM observability 教程",
+            "RAG 评测教程",
+            "promptfoo 入门",
+            "LangSmith 教程",
+            "AI 应用日志监控"
           ],
           "seedFamilyMatches": 1
         },
         "sourceTargets": [
-          "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
-          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
-          "LangChain docs: https://python.langchain.com/docs"
+          "https://www.promptfoo.dev/docs/intro/",
+          "https://docs.ragas.io/",
+          "https://docs.helicone.ai/"
         ],
         "warningIssues": [
           "primary keyword is not an exact title substring",
           "no exact search-seed phrase appears in title, description, or body",
           "few search-seed token families appear in article text",
-          "theme still has missing subtopics: logs, prompt injection, cost tracking"
+          "article currently has no links to published articles"
         ]
       },
       "riskLevel": "medium",
@@ -643,10 +1033,10 @@
         "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
         "Add or approve one concrete subsection that matches the target search intent without keyword stuffing.",
-        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+        "Review the suggested public internal link before publishing: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist)."
       ],
-      "themeTitle": "LLM evaluation, observability, and security",
-      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
+      "themeTitle": "LLM 观测、评测、日志和上线后质量",
+      "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志"
     }
   ]
 }

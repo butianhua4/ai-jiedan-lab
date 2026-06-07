@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T03:28:25.524Z",
+  "generatedAt": "2026-06-07T03:46:27.087Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "broadPublishWavesGeneratedAt": "2026-06-07T03:28:25.020Z",
+    "broadPublishWavesGeneratedAt": "2026-06-07T03:46:26.620Z",
     "broadPublishWavesGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -40,7 +40,7 @@
   "summary": {
     "items": 24,
     "itemsWithActionChecklist": 24,
-    "itemsWithPublicLinkSuggestion": 14,
+    "itemsWithPublicLinkSuggestion": 16,
     "itemsWithSearchQueries": 24,
     "itemsWithSourceTargets": 24,
     "readyItems": 24,
@@ -367,7 +367,7 @@
         "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
         "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
         "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
-        "Add one contextual link to a relevant published article before approval.",
+        "Add one contextual link to the published article \"Vercel 提示环境变量缺失怎么办：新手部署检查流程\" at /blog/vercel-env-variable-missing-beginner-guide.",
         "Apply review focus: 核对平台连接器、webhook、权限和部署限制.",
         "Apply review focus: 避免鼓励群发、绕过平台规则或抓取隐私数据.",
         "Apply review focus: 写清楚人工审批和客户验收边界.",
@@ -388,7 +388,14 @@
         "publishConfirm": "not-included"
       },
       "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
-      "publicLinkSuggestion": null,
+      "publicLinkSuggestion": {
+        "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+        "reason": "keyword overlap: 部署, 怎么, 新手, 提示, 环境, 境变",
+        "score": 32,
+        "slug": "vercel-env-variable-missing-beginner-guide",
+        "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+        "url": "/blog/vercel-env-variable-missing-beginner-guide"
+      },
       "readyForHumanOptimizationReview": true,
       "safeDraft": true,
       "searchQueries": [
@@ -407,6 +414,7 @@
       "unsafeReasons": [],
       "warningRemediation": [
         "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
         "Freshness risk is high; all implementation-sensitive claims need current source checks."
       ],
       "wave": 2
@@ -962,7 +970,7 @@
         "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
         "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
         "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
-        "Add one contextual link to a relevant published article before approval.",
+        "Add one contextual link to the published article \"Vercel 提示环境变量缺失怎么办：新手部署检查流程\" at /blog/vercel-env-variable-missing-beginner-guide.",
         "Apply review focus: 核对平台连接器、webhook、权限和部署限制.",
         "Apply review focus: 避免鼓励群发、绕过平台规则或抓取隐私数据.",
         "Apply review focus: 写清楚人工审批和客户验收边界.",
@@ -983,7 +991,14 @@
         "publishConfirm": "not-included"
       },
       "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
-      "publicLinkSuggestion": null,
+      "publicLinkSuggestion": {
+        "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+        "reason": "keyword overlap: 部署, 怎么, 新手, 提示, 环境, 境变",
+        "score": 32,
+        "slug": "vercel-env-variable-missing-beginner-guide",
+        "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+        "url": "/blog/vercel-env-variable-missing-beginner-guide"
+      },
       "readyForHumanOptimizationReview": true,
       "safeDraft": true,
       "searchQueries": [
@@ -1002,6 +1017,7 @@
       "unsafeReasons": [],
       "warningRemediation": [
         "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
         "Freshness risk is high; all implementation-sensitive claims need current source checks."
       ],
       "wave": 2
@@ -1217,7 +1233,7 @@
         "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
         "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
         "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
-        "Add one contextual link to a relevant published article before approval.",
+        "Add one contextual link to the published article \"Codex 怎么做第一个网页\" at /blog/build-first-webpage-with-codex.",
         "Apply review focus: 区分知识库 RAG 和用户记忆.",
         "Apply review focus: 必须有隐私、删除、去重、引用和人工纠错边界.",
         "Apply review focus: 避免宣称记忆层能自动解决幻觉.",
@@ -1238,7 +1254,14 @@
         "publishConfirm": "not-included"
       },
       "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-      "publicLinkSuggestion": null,
+      "publicLinkSuggestion": {
+        "file": "content/blog/build-first-webpage-with-codex.mdx",
+        "reason": "keyword overlap: ai, 怎么, 接单, 第一, 一个",
+        "score": 23,
+        "slug": "build-first-webpage-with-codex",
+        "title": "Codex 怎么做第一个网页",
+        "url": "/blog/build-first-webpage-with-codex"
+      },
       "readyForHumanOptimizationReview": true,
       "safeDraft": true,
       "searchQueries": [
@@ -1257,6 +1280,7 @@
       "unsafeReasons": [],
       "warningRemediation": [
         "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
         "Freshness risk is high; all implementation-sensitive claims need current source checks."
       ],
       "wave": 4

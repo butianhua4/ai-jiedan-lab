@@ -1,6 +1,6 @@
 # Automation Gate
 
-Generated at: 2026-06-07T03:29:45.559Z
+Generated at: 2026-06-07T03:47:35.757Z
 
 Overall: PASS
 
@@ -30,33 +30,33 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=139, unsafeClaims=0, watchMentions=1448 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=139, unsafeClaims=0, watchMentions=1499 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
-| internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, candidates=19 |
-| internal link opportunity audit has public suggestions for Wave 1 | PASS | wave=3, waveMissing=0, candidateMissing=0 |
-| source target health audit is read-only and covers review source scopes | PASS | current=3, publicGap=8, next=19, files=20 |
-| source target health audit has reachable URLs for every covered review file | PASS | checked=18, ok=18, failed=0, missingTargets=0, filesWithoutReachable=0 |
-| review action board is read-only and covers active review queues | PASS | tasks=11, wave=3, publicGap=8 |
-| review action board tasks are ready and preserve command boundaries | PASS | ready=11, unsafe=0 |
-| review portfolio board deduplicates all review packs | PASS | sourceCandidates=33, uniqueItems=24, duplicates=9, multiSource=7 |
-| review portfolio board keeps unique candidates safe and human-gated | PASS | ready=24, safe=24, sources=24, commands=24 |
-| autopilot review queue is read-only and covers portfolio candidates | PASS | items=24, next=10, sources=24 |
-| autopilot review queue keeps assignments safe and human-gated | PASS | ready=24, safe=24, unsafe=0 |
+| internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, broadFirst=8, candidates=22 |
+| internal link opportunity audit has public suggestions for Wave 1 | PASS | wave=3, broadFirstMissing=0, waveMissing=0, candidateMissing=0 |
+| source target health audit is read-only and covers review source scopes | PASS | broadFirst=8, current=3, publicGap=13, next=19, files=23 |
+| source target health audit has reachable URLs for every covered review file | PASS | checked=40, ok=39, failed=1, missingTargets=0, filesWithoutReachable=0 |
+| review action board is read-only and covers active review queues | PASS | tasks=16, wave=3, publicGap=13 |
+| review action board tasks are ready and preserve command boundaries | PASS | ready=16, unsafe=0 |
+| review portfolio board deduplicates all review packs | PASS | sourceCandidates=38, uniqueItems=26, duplicates=12, multiSource=10 |
+| review portfolio board keeps unique candidates safe and human-gated | PASS | ready=26, safe=26, sources=26, commands=26 |
+| autopilot review queue is read-only and covers portfolio candidates | PASS | items=26, next=10, sources=26 |
+| autopilot review queue keeps assignments safe and human-gated | PASS | ready=25, blocked=1, safe=26, unsafe=0 |
 | autopilot approval packet packages the top safe assignments | PASS | items=3, ready=3, sources=3, queries=3 |
 | autopilot approval packet keeps publish and review commands human-gated | PASS | unsafe=0, headings=3 |
 | autopilot search intent brief covers approval packet | PASS | items=3, weak=2, unsafe=0 |
 | autopilot search intent brief produces human review suggestions | PASS | title=1, description=1, heading=0, body=1 |
 | autopilot internal link brief covers approval packet | PASS | items=3, public=15, unsafe=0 |
-| autopilot internal link brief provides public link suggestions | PASS | suggestions=3, missingCurrentPublicLink=2, alreadyLinked=1 |
-| autopilot source verification brief covers approval packet | PASS | items=3, reachable=21, unsafe=0 |
+| autopilot internal link brief provides public link suggestions | PASS | suggestions=3, missingCurrentPublicLink=3, alreadyLinked=0 |
+| autopilot source verification brief covers approval packet | PASS | items=3, reachable=25, unsafe=0 |
 | autopilot source verification brief provides source-backed review tasks | PASS | reachableItems=3, official=3, factChecks=3, approvalChecks=3 |
 | autopilot human review playbook covers approval packet | PASS | items=3, ready=3, unsafe=0 |
 | autopilot human review playbook keeps actions human-gated | PASS | commands=3, search=3, source=3, links=3 |
-| autopilot review sprint board covers next assignments | PASS | items=10, readyWithPlaybook=3, queued=7, needsQuery=1, unsafe=0 |
-| autopilot review sprint board keeps sprint actions human-gated | PASS | ready=10, commands=10, queries=9, sources=10 |
-| autopilot search query gap brief covers sprint query gaps | PASS | items=1, sprintNeedsQuery=1, unsafe=0 |
-| autopilot search query gap brief has source-backed manual query suggestions | PASS | ready=1, coverage=1, recommended=10, sources=1 |
+| autopilot review sprint board covers next assignments | PASS | items=10, readyWithPlaybook=3, queued=7, needsQuery=0, unsafe=0 |
+| autopilot review sprint board keeps sprint actions human-gated | PASS | ready=10, commands=10, queries=10, sources=10 |
+| autopilot search query gap brief covers sprint query gaps | PASS | items=0, sprintNeedsQuery=0, unsafe=0 |
+| autopilot search query gap brief has source-backed manual query suggestions | PASS | ready=0, coverage=0, recommended=0, sources=0 |
 | autopilot queued playbook brief covers queued sprint items | PASS | items=7, queued=7, unsafe=0 |
 | autopilot queued playbook brief has complete human-gated actions | PASS | ready=7, search=7, source=7, links=7 |
 | autopilot broad AI demand brief is read-only and source-backed | PASS | clusters=8, sources=24, readyFiles=33, unsafe=0 |
@@ -66,13 +66,13 @@ Overall: PASS
 | autopilot broad publish waves are read-only and small-batch | PASS | waves=8, items=24, maxPerWave=3, unsafe=0 |
 | autopilot broad publish waves preserve human approval command boundaries | PASS | ready=24, safe=24, approvalWaves=8 |
 | autopilot broad wave optimization is read-only and covers publish waves | PASS | items=24, waves=8, readyWaves=8, unsafe=0 |
-| autopilot broad wave optimization has actionable SEO and approval guidance | PASS | ready=24, checklists=24, links=14 |
+| autopilot broad wave optimization has actionable SEO and approval guidance | PASS | ready=24, checklists=24, links=16 |
 | broad first coverage launch pack is read-only and covers zero-public clusters | PASS | selected=8, zeroPublic=8, unique=8, unsafe=0 |
 | broad first coverage launch pack preserves human review boundaries | PASS | safe=8, commands=8, sources=8, checks=8 |
 | broad first coverage readiness matrix is read-only and covers launch pack | PASS | items=8, unique=8, blocking=0, unsafe=0 |
-| broad first coverage readiness matrix has review evidence and command boundaries | PASS | commands=8, preflight=3, source=5, links=5 |
-| review optimization brief is read-only and covers ready action-board tasks | PASS | briefs=11, ready=11, unsafeCommands=0 |
-| review optimization brief has actionable copydesk guidance | PASS | withAction=11, missingPublicLinkItems=10, exactQueryWeak=3 |
+| broad first coverage readiness matrix has review evidence and command boundaries | PASS | commands=8, preflight=8, source=8, links=8 |
+| review optimization brief is read-only and covers ready action-board tasks | PASS | briefs=16, ready=16, unsafeCommands=0 |
+| review optimization brief has actionable copydesk guidance | PASS | withAction=16, missingPublicLinkItems=15, exactQueryWeak=4 |
 | search snippet readiness audit is read-only and covers public plus expansion items | PASS | public=15, expansion=19, scoped=34 |
 | search snippet readiness audit has no blocking Wave 1 issues | PASS | blocking=0, wave=3, waveBlocking=0, warnings=13 |
 | structured data readiness audit is read-only and covers public plus expansion items | PASS | public=15, expansion=19, scoped=34 |
@@ -104,16 +104,16 @@ Overall: PASS
 | broad search demand map links demand, sources, and planned review waves | PASS | officialSources=13, reviewPackMatches=4, waveMatches=24, readyMatches=417 |
 | public coverage gap plan is read-only and covers every no-public broad theme | PASS | gapThemes=8, items=8, uniqueFiles=8, duplicateFiles=0 |
 | public coverage gap plan keeps candidates safe for manual review | PASS | ready=8, unsafe=0, waves=4 |
-| public coverage gap preflight is read-only and covers gap plan items | PASS | items=8, planItems=8, uniqueFiles=8 |
-| public coverage gap preflight has no blocking publish-readiness issues | PASS | blocking=0, ready=8, structured=8, seedMatches=7, warnings=8 |
-| public coverage gap decision pack is read-only and covers preflight items | PASS | items=8, ready=8, waves=4 |
-| public coverage gap decision pack has human review actions and command boundaries | PASS | blocking=0, unsafe=0, commandBoundary=8, optimizations=8 |
+| public coverage gap preflight is read-only and covers gap plan items | PASS | items=13, planItems=8, broadFirst=8, uniqueFiles=13 |
+| public coverage gap preflight has no blocking publish-readiness issues | PASS | blocking=0, ready=13, structured=13, seedMatches=12, warnings=13 |
+| public coverage gap decision pack is read-only and covers preflight items | PASS | items=13, ready=13, waves=4 |
+| public coverage gap decision pack has human review actions and command boundaries | PASS | blocking=0, unsafe=0, commandBoundary=13, optimizations=13 |
 | content cannibalization check generated warning report | PASS | conflicts=200, reviewBatchConflicts=0 |
-| review cannibalization brief is read-only and covers unique action-board files | PASS | items=9, uniqueActionFiles=9, unsafeCommands=0 |
-| review cannibalization brief keeps publish candidates differentiated | PASS | highRisk=0, mediumRisk=0, publishedComparisons=0, reviewComparisons=0 |
+| review cannibalization brief is read-only and covers unique action-board files | PASS | items=13, uniqueActionFiles=13, unsafeCommands=0 |
+| review cannibalization brief keeps publish candidates differentiated | PASS | highRisk=1, highPublished=0, highReviewOnly=1, mediumRisk=0, publishedComparisons=0, reviewComparisons=1 |
 | content freshness check covers review items | PASS | highRisk=570, currentReviewItems=3, plannedReviewItems=9 |
-| review freshness brief is read-only and covers unique action-board files | PASS | items=9, uniqueActionFiles=9, unsafeCommands=0 |
-| review freshness brief has source-backed human fact-check tasks | PASS | ready=9, blocked=0, highRisk=9, withSources=9 |
+| review freshness brief is read-only and covers unique action-board files | PASS | items=13, uniqueActionFiles=13, unsafeCommands=0 |
+| review freshness brief has source-backed human fact-check tasks | PASS | ready=13, blocked=0, highRisk=13, withSources=13 |
 | review coverage report covers planned candidates | PASS | planned=9, items=9, missingCoverage=0 |
 | review coverage includes source, fact-check, approval, and risk tasks | PASS | {"approval":0,"factCheck":0,"risk":0,"sources":0} |
 | review coverage keeps planned candidates unpublished and non-indexable | PASS | {"nonDraftItems":0,"reviewBatchConflictItems":0,"unsafeIndexingItems":0} |

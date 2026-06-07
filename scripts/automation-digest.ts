@@ -409,6 +409,8 @@ type ContentIntegrity = {
 
 type InternalLinks = {
   summary: {
+    broadFirstCoverageItems: number;
+    broadFirstCoverageItemsMissingPublicLinkSuggestion: number;
     candidateItems: number;
     candidateItemsMissingPublicLinkSuggestion: number;
     candidateItemsWithPublicSuggestions: number;
@@ -425,6 +427,7 @@ type SourceHealth = {
   filesWithoutReachableSource: Array<{ file: string; reachableSources: number; sourceTargets: number; title: string }>;
   redirectedChecks: Array<{ finalUrl?: string; references: unknown[]; status?: number; url: string }>;
   summary: {
+    broadFirstCoverageFiles: number;
     checkedUrls: number;
     currentReviewFiles: number;
     failedUrls: number;
@@ -1142,6 +1145,8 @@ type PublicCoverageGapPreflight = {
   }>;
   summary: {
     blockingItems: number;
+    broadFirstCoverageItems: number;
+    broadFirstCoveragePreflightItems: number;
     items: number;
     planItems: number;
     readyItems: number;
@@ -1307,6 +1312,7 @@ const payload = {
   contentIntegrity: reports.contentIntegrity.data?.summary ?? null,
   internalLinks: reports.internalLinks.data?.summary ?? null,
   sourceHealth: {
+    broadFirstCoverageFiles: reports.sourceHealth.data?.summary.broadFirstCoverageFiles ?? null,
     checkedUrls: reports.sourceHealth.data?.summary.checkedUrls ?? null,
     currentReviewFiles: reports.sourceHealth.data?.summary.currentReviewFiles ?? null,
     failedChecks: reports.sourceHealth.data?.failedChecks.slice(0, 8) ?? [],
@@ -1745,6 +1751,8 @@ const payload = {
   },
   publicCoverageGapPreflight: {
     blockingItems: reports.publicCoverageGapPreflight.data?.summary.blockingItems ?? null,
+    broadFirstCoverageItems: reports.publicCoverageGapPreflight.data?.summary.broadFirstCoverageItems ?? null,
+    broadFirstCoveragePreflightItems: reports.publicCoverageGapPreflight.data?.summary.broadFirstCoveragePreflightItems ?? null,
     items: reports.publicCoverageGapPreflight.data?.summary.items ?? null,
     planItems: reports.publicCoverageGapPreflight.data?.summary.planItems ?? null,
     readyItems: reports.publicCoverageGapPreflight.data?.summary.readyItems ?? null,
@@ -2116,6 +2124,7 @@ function toMarkdown(data: typeof payload) {
     `- Files covered: ${data.sourceHealth.filesCovered}`,
     `- Files with reachable source: ${data.sourceHealth.filesWithReachableSource}`,
     `- Files without reachable source: ${data.sourceHealth.filesWithoutReachableSource}`,
+    `- Broad first coverage files: ${data.sourceHealth.broadFirstCoverageFiles}`,
     `- Current review files: ${data.sourceHealth.currentReviewFiles}`,
     `- Public gap decision files: ${data.sourceHealth.publicGapDecisionFiles}`,
     `- Next source-pack files: ${data.sourceHealth.nextSourcePackFiles}`,
@@ -2901,6 +2910,9 @@ function toMarkdown(data: typeof payload) {
     "## Public Coverage Gap Preflight",
     "",
     `- Items: ${data.publicCoverageGapPreflight.items}`,
+    `- Public gap plan items: ${data.publicCoverageGapPreflight.planItems}`,
+    `- Broad first coverage items: ${data.publicCoverageGapPreflight.broadFirstCoverageItems}`,
+    `- Broad first coverage preflight items: ${data.publicCoverageGapPreflight.broadFirstCoveragePreflightItems}`,
     `- Ready items: ${data.publicCoverageGapPreflight.readyItems}`,
     `- Blocking items: ${data.publicCoverageGapPreflight.blockingItems}`,
     `- Warning items: ${data.publicCoverageGapPreflight.warningItems}`,

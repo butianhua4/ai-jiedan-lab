@@ -1,6 +1,6 @@
 # Autopilot Broad Wave Optimization
 
-Generated at: 2026-06-07T03:28:25.524Z
+Generated at: 2026-06-07T03:46:27.087Z
 
 ## Guardrails
 
@@ -15,7 +15,7 @@ Generated at: 2026-06-07T03:28:25.524Z
 - Items: 24
 - Ready items: 24
 - Items with action checklist: 24
-- Items with public link suggestion: 14
+- Items with public link suggestion: 16
 - Unsafe items: 0
 
 ## Wave Readiness
@@ -44,7 +44,7 @@ Generated at: 2026-06-07T03:28:25.524Z
 | 1 | true | missing | 10 | 57 | 15 | 2 | Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则 | content/blog/agent-memory-postgres-schema-guide.mdx |
 | 2 | true | /blog/build-first-webpage-with-codex | 11 | 52 | 15 | 3 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 2 | true | /blog/codex-code-review-delivery-checklist | 10 | 51 | 15 | 3 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
-| 2 | true | missing | 11 | 58 | 15 | 2 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
+| 2 | true | /blog/vercel-env-variable-missing-beginner-guide | 11 | 58 | 15 | 3 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | 3 | true | /blog/codex-code-review-delivery-checklist | 11 | 59 | 15 | 2 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | 3 | true | /blog/vercel-env-variable-missing-beginner-guide | 11 | 102 | 15 | 2 | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
 

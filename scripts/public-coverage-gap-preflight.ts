@@ -23,6 +23,21 @@ type GapPlan = {
   summary: { items: number; plannedWaves: number; readyItems: number; unsafeItems: number; uniqueFiles: number };
 };
 
+type BroadFirstCoverageLaunchPack = {
+  guardrails: { autoCreateArticles: boolean; autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+  items: Array<{
+    cluster: string;
+    file: string;
+    gapScore: number;
+    primaryKeyword: string;
+    reviewFocus: string[];
+    searchQueries: string[];
+    sourceTargets: string[];
+    title: string;
+  }>;
+  summary: { clustersSelected: number; unsafeItems: number; uniqueFiles: number; zeroPublicClusters: number };
+};
+
 type PublicArticle = {
   category: string;
   file: string;
@@ -50,6 +65,7 @@ type PreflightItem = {
   readyForManualReview: boolean;
   reviewFocus: string[];
   safeDraft: boolean;
+  scope: Array<"broad-first-coverage" | "public-gap-plan">;
   searchSeeds: string[];
   seedFamilyMatches: number;
   slug: string;
@@ -68,9 +84,11 @@ const siteUrl = "https://ai-jiedan-lab.vercel.app";
 
 async function main() {
   const plan = readJson<GapPlan>("content/automation/public-coverage-gap-plan.json");
+  const launchPack = readJson<BroadFirstCoverageLaunchPack>("content/automation/broad-first-coverage-launch-pack.json");
   const publicArticles = await loadPublicArticles();
   const publicSlugs = new Set(publicArticles.map((article) => article.slug));
-  const items = plan.items.map((item) => toPreflightItem(item, publicArticles, publicSlugs));
+  const mergedItems = mergePlanItems(plan.items, launchPack.items);
+  const items = mergedItems.map((item) => toPreflightItem(item, publicArticles, publicSlugs));
   const blockingItems = items.filter((item) => item.blockingIssues.length > 0);
   const warningItems = items.filter((item) => item.warningIssues.length > 0);
   const waveSummaries = toWaveSummaries(items);
@@ -85,11 +103,15 @@ async function main() {
       stopBefore: "Use findings during human review. Do not run mark:review --confirm-human or publish:articles --confirm without explicit human approval.",
     },
     sourceEvidence: {
+      broadFirstCoverageGuardrails: launchPack.guardrails,
+      broadFirstCoverageSummary: launchPack.summary,
       gapPlanGuardrails: plan.guardrails,
       note: "Search seeds are editorial review prompts, not measured keyword volume, rankings, clicks, impressions, or traffic.",
     },
     summary: {
       blockingItems: blockingItems.length,
+      broadFirstCoverageItems: launchPack.summary.clustersSelected,
+      broadFirstCoveragePreflightItems: items.filter((item) => item.scope.includes("broad-first-coverage")).length,
       items: items.length,
       planItems: plan.summary.items,
       planReadyItems: plan.summary.readyItems,
@@ -194,6 +216,7 @@ function toPreflightItem(planItem: GapPlanItem, publicArticles: PublicArticle[],
     readyForManualReview: blockingIssues.length === 0,
     reviewFocus: planItem.reviewFocus,
     safeDraft,
+    scope: getItemScope(planItem),
     searchSeeds: planItem.searchSeeds,
     seedFamilyMatches,
     slug,
@@ -207,6 +230,74 @@ function toPreflightItem(planItem: GapPlanItem, publicArticles: PublicArticle[],
     warningIssues,
     wordCountChinese: chineseCount(article.content),
   };
+}
+
+function mergePlanItems(planItems: GapPlanItem[], launchItems: BroadFirstCoverageLaunchPack["items"]) {
+  const byFile = new Map<string, GapPlanItem>();
+  for (const item of planItems) {
+    byFile.set(normalizeFile(item.file), {
+      ...item,
+      themeId: markScope(item.themeId || slugify(item.themeTitle), "public-gap-plan"),
+    });
+  }
+
+  for (const [index, launchItem] of launchItems.entries()) {
+    const file = normalizeFile(launchItem.file);
+    const existing = byFile.get(file);
+    if (existing) {
+      byFile.set(file, {
+        ...existing,
+        reviewFocus: dedupe([...existing.reviewFocus, ...launchItem.reviewFocus]),
+        searchSeeds: dedupe([...existing.searchSeeds, ...launchItem.searchQueries]),
+        sourceTargets: dedupe([...existing.sourceTargets, ...launchItem.sourceTargets]),
+        themeId: markScope(existing.themeId, "broad-first-coverage"),
+      });
+      continue;
+    }
+
+    byFile.set(file, {
+      approvalWave: Math.floor(index / 2) + 1,
+      file: launchItem.file,
+      gapScore: launchItem.gapScore,
+      missingSubtopics: [],
+      primaryKeyword: launchItem.primaryKeyword,
+      reviewFocus: launchItem.reviewFocus,
+      searchSeeds: launchItem.searchQueries,
+      sourceTargets: launchItem.sourceTargets,
+      themeId: markScope(slugify(launchItem.cluster), "broad-first-coverage"),
+      themeTitle: launchItem.cluster,
+      title: launchItem.title,
+    });
+  }
+
+  return [...byFile.values()].sort((a, b) => b.gapScore - a.gapScore || a.file.localeCompare(b.file));
+}
+
+function getItemScope(item: GapPlanItem): PreflightItem["scope"] {
+  return [
+    item.themeId.includes("public-gap-plan") ? "public-gap-plan" : null,
+    item.themeId.includes("broad-first-coverage") ? "broad-first-coverage" : null,
+  ].filter(Boolean) as PreflightItem["scope"];
+}
+
+function markScope(value: string, scope: string) {
+  return value.includes(scope) ? value : `${value}__${scope}`;
+}
+
+function dedupe(items: string[]) {
+  return [...new Set(items.filter(Boolean))];
+}
+
+function normalizeFile(file: string) {
+  return file.replace(/\\/g, "/");
+}
+
+function slugify(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9\u4e00-\u9fa5]+/gi, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);
 }
 
 function isStructuredDataReady(data: Record<string, unknown>, slug: string) {
@@ -330,7 +421,7 @@ function toMarkdown(payload: {
   generatedAt: string;
   guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; note: string; stopBefore: string };
   items: PreflightItem[];
-  sourceEvidence: { gapPlanGuardrails: unknown; note: string };
+  sourceEvidence: { broadFirstCoverageGuardrails?: unknown; broadFirstCoverageSummary?: unknown; gapPlanGuardrails: unknown; note: string };
   summary: Record<string, number>;
   warningItems: PreflightItem[];
   waveSummaries: Array<{ blockingItems: number; files: string[]; readyItems: number; themes: string[]; warningItems: number; wave: number }>;
@@ -354,6 +445,8 @@ function toMarkdown(payload: {
     "",
     `- Note: ${payload.sourceEvidence.note}`,
     `- Gap plan guardrails: ${JSON.stringify(payload.sourceEvidence.gapPlanGuardrails)}`,
+    `- Broad first coverage guardrails: ${JSON.stringify(payload.sourceEvidence.broadFirstCoverageGuardrails)}`,
+    `- Broad first coverage summary: ${JSON.stringify(payload.sourceEvidence.broadFirstCoverageSummary)}`,
     "",
     "## Summary",
     "",
@@ -384,11 +477,11 @@ function toMarkdown(payload: {
 function table(items: PreflightItem[]) {
   if (!items.length) return ["- none"];
   return [
-    "| Wave | Ready | Score | Quality | Snippet | Links | Seeds | Structured | Blocking | Warnings | Theme | Title | File |",
-    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    "| Wave | Scope | Ready | Score | Quality | Snippet | Links | Seeds | Structured | Blocking | Warnings | Theme | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
     ...items.map(
       (item) =>
-        `| ${item.approvalWave} | ${item.readyForManualReview} | ${item.gapScore} | ${item.qualityScore} | ${item.titleLength}/${item.descriptionLength} | ${item.linksToPublicArticles}/${item.internalLinks} + ${item.publicLinkSuggestions.length} suggestions | ${item.exactSeedMatches}/${item.seedFamilyMatches} | ${item.structuredDataReady} | ${item.blockingIssues.length ? item.blockingIssues.join("<br>") : "none"} | ${item.warningIssues.length ? item.warningIssues.join("<br>") : "none"} | ${item.themeTitle} | ${item.title} | ${item.file} |`,
+        `| ${item.approvalWave} | ${item.scope.join(", ")} | ${item.readyForManualReview} | ${item.gapScore} | ${item.qualityScore} | ${item.titleLength}/${item.descriptionLength} | ${item.linksToPublicArticles}/${item.internalLinks} + ${item.publicLinkSuggestions.length} suggestions | ${item.exactSeedMatches}/${item.seedFamilyMatches} | ${item.structuredDataReady} | ${item.blockingIssues.length ? item.blockingIssues.join("<br>") : "none"} | ${item.warningIssues.length ? item.warningIssues.join("<br>") : "none"} | ${item.themeTitle} | ${item.title} | ${item.file} |`,
     ),
   ];
 }

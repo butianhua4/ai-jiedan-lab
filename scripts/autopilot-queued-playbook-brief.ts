@@ -192,6 +192,10 @@ function main() {
       ...(prompt?.riskReviewChecklist || []),
       ...(prompt?.riskChecks || []),
       ...(prompt?.humanDecisionChecklist || []),
+      ...(freshness?.humanReviewChecklist || []),
+      ...(cannibalization?.humanReviewChecklist || []),
+      ...(action?.blockers || []),
+      ...(action?.warnings || []),
       "No traffic, ranking, revenue, benchmark, cost, latency, or stability claim is approved without measured evidence.",
       "No API key, private customer data, credential, or client account detail is exposed.",
     ]);

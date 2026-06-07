@@ -1,6 +1,6 @@
 # Autopilot Queued Playbook Brief
 
-Generated at: 2026-06-07T03:28:23.229Z
+Generated at: 2026-06-07T03:46:24.919Z
 
 This report is read-only. It prepares the queued-for-playbook sprint items for manual review and keeps all status changes human-gated.
 
@@ -18,7 +18,7 @@ This report is read-only. It prepares the queued-for-playbook sprint items for m
 - itemsWithCommandBoundary: 7
 - itemsWithFactCheckQueries: 7
 - itemsWithInternalLinkSuggestions: 7
-- itemsWithOptimizationActions: 6
+- itemsWithOptimizationActions: 7
 - itemsWithRiskChecklist: 7
 - itemsWithSearchActions: 7
 - itemsWithSearchQueries: 7
@@ -42,61 +42,61 @@ This report is read-only. It prepares the queued-for-playbook sprint items for m
 
 | Order | Ready | Sources | Queries | Actions | Links | Freshness | Cannibalization | Mark-review gated | Publish confirm | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 3 | true | 7 | 12 | 20 | 3 | high | low | true | not-included | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| 5 | true | 8 | 12 | 21 | 3 | high | low | true | not-included | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| 6 | true | 9 | 12 | 22 | 3 | high | low | true | not-included | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
-| 7 | true | 10 | 12 | 22 | 3 | high | low | true | not-included | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
-| 8 | true | 2 | 8 | 22 | 1 | high | low | true | not-included | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
-| 9 | true | 8 | 12 | 22 | 3 | high | low | true | not-included | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
-| 10 | true | 8 | 12 | 13 | 3 | unknown | unknown | true | not-included | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
+| 4 | true | 22 | 12 | 20 | 3 | high | low | true | not-included | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| 5 | true | 6 | 9 | 21 | 3 | high | low | true | not-included | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
+| 6 | true | 8 | 12 | 21 | 3 | high | low | true | not-included | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| 7 | true | 9 | 12 | 22 | 3 | high | low | true | not-included | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| 8 | true | 10 | 12 | 22 | 3 | high | low | true | not-included | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 9 | true | 2 | 8 | 22 | 1 | high | low | true | not-included | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
+| 10 | true | 3 | 5 | 22 | 3 | high | low | true | not-included | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
 
 ## Manual Review Playbooks
 
-### 3. 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
+### 4. AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急
 
-- File: content/blog/ai-model-selection-customer-service-guide.mdx
-- Primary keyword: 客服 AI 模型选型
-- Source evidence: next-review-source-pack, search-query-coverage, review-portfolio-board, review-action-board, review-optimization-brief, review-freshness-brief, review-cannibalization-brief, internal-link-opportunity-audit, autopilot-search-query-gap-brief
-- Manual mark-review command after approval: npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human
-- Publish dry-run only after review: npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx
+- File: content/blog/ai-api-key-security-rotation-guide.mdx
+- Primary keyword: AI API Key 安全管理
+- Source evidence: next-review-source-pack, review-portfolio-board, review-action-board, review-optimization-brief, review-freshness-brief, review-cannibalization-brief, internal-link-opportunity-audit, ai-deployment-review-pack
+- Manual mark-review command after approval: npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human
+- Publish dry-run only after review: npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx
 - Publish confirm: not-included
 
 Search actions:
 
-- Confirm article answers search query: 客服 AI 模型选型
-- Confirm article answers search query: 客服 AI 模型选型怎么做
-- Confirm article answers search query: 客服 AI 模型选型教程
-- Confirm article answers search query: 客服 AI 模型选型新手教程
-- Confirm article answers search query: 客服 AI 模型选型落地步骤
-- Confirm article answers search query: 客服 AI 模型选型对比
-- Confirm article answers search query: 客服 AI 模型选型怎么选
-- Confirm article answers search query: 客服 AI 模型选型模板
+- Confirm article answers search query: LLM observability
+- Confirm article answers search query: RAG evaluation
+- Confirm article answers search query: AI agent logs
+- Confirm article answers search query: prompt injection defense
+- Confirm article answers search query: OpenAI API 接入教程
+- Confirm article answers search query: Claude API rate limit
+- Confirm article answers search query: Gemini API 限流
+- Confirm article answers search query: OpenRouter API 教程
 
 Source actions:
 
-- Verify official source: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
-- Verify official source: LangChain docs: https://python.langchain.com/docs
-- Verify official source: LlamaIndex docs: https://docs.llamaindex.ai
-- Verify official source: Hugging Face docs: https://huggingface.co/docs
 - Verify official source: OpenAI API docs: https://platform.openai.com/docs
+- Verify official source: Anthropic docs: https://docs.anthropic.com
+- Verify official source: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
 - Verify official source: Vercel AI SDK docs: https://ai-sdk.dev/docs
-- Verify official source: OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
-- Run or manually check fact-check query: 客服 AI 模型选型 official docs latest
+- Verify official source: Google AI docs: https://ai.google.dev/docs
+- Verify official source: Dify docs: https://docs.dify.ai
+- Verify official source: n8n docs: https://docs.n8n.io
+- Verify official source: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
 
 Optimization actions:
 
-- 在开头 200 字内自然回答一次“客服 AI 模型选型”这个搜索意图，先给结论再展开步骤。
-- 在相关段落加入公开内链：Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)。
-- Rewrite the meta description to name the reader, outcome, and search phrase: 客服 AI 模型选型.
+- 在开头 200 字内自然回答一次“LLM observability”这个搜索意图，先给结论再展开步骤。
+- 补一个小节或提示框覆盖缺口：logs、prompt injection、cost tracking。
+- 在相关段落加入公开内链：Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)。
 - Check whether the primary keyword can appear naturally in the title without making the title stiff.
-- Add one FAQ or checklist line that uses a high-intent query variant such as: 客服 AI 模型选型.
-- Consider reviewed title: 客服 AI 模型选型：速度、成本、知识库、转人工和质检
+- Decide whether missing subtopics should become a short section or a follow-up article.
+- Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.
 
 Internal link suggestions:
 
-- Codex 怎么做第一个网页: /blog/build-first-webpage-with-codex
 - Codex 生成代码后怎么审核：交付前检查清单: /blog/codex-code-review-delivery-checklist
-- Codex 部署 Vercel 前检查什么：上线前清单: /blog/codex-vercel-deploy-preflight-checklist
+- Codex 和 GitHub 怎么配合：提交代码前检查: /blog/codex-github-before-commit-checklist
+- 第一个 Upwork 小项目怎么报价：新手范围和底价检查: /blog/first-upwork-project-pricing-checklist
 
 Risk checklist:
 
@@ -104,12 +104,69 @@ Risk checklist:
 - No instruction to bypass platform, payment, messaging, account, or review rules.
 - No API key, credential, private customer data, or account detail is included.
 - Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.
-- RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.
-- Prompt examples include input context, output criteria, review rules, and adaptation notes.
-- No traffic, ranking, revenue, benchmark, cost, latency, or stability claim is approved without measured evidence.
-- No API key, private customer data, credential, or client account detail is exposed.
+- Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.
+- Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.
+- No one-click stability promise for deployment, serving, Agent execution, or RAG quality.
+- No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim.
 
-### 5. AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界
+### 5. MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单
+
+- File: content/blog/mcp-server-deployment-security-checklist.mdx
+- Primary keyword: MCP Server 部署安全
+- Source evidence: review-portfolio-board, review-action-board, review-optimization-brief, review-freshness-brief, review-cannibalization-brief, internal-link-opportunity-audit, ai-deployment-review-pack
+- Manual mark-review command after approval: npm run mark:review -- --file=content/blog/mcp-server-deployment-security-checklist.mdx --confirm-human
+- Publish dry-run only after review: npm run publish:articles -- --file=content/blog/mcp-server-deployment-security-checklist.mdx
+- Publish confirm: not-included
+
+Search actions:
+
+- Confirm article answers search query: Dify 部署教程
+- Confirm article answers search query: n8n AI 自动化教程
+- Confirm article answers search query: MCP 使用教程
+- Confirm article answers search query: Flowise 本地部署
+- Confirm article answers search query: Coze Bot 发布
+- Confirm article answers search query: LLM observability 教程
+- Confirm article answers search query: Agent 可观测性
+- Confirm article answers search query: RAG 评测
+
+Source actions:
+
+- Verify official source: https://docs.dify.ai/
+- Verify official source: https://docs.n8n.io/
+- Verify official source: https://modelcontextprotocol.io/docs
+- Verify official source: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
+- Verify official source: LangChain docs: https://python.langchain.com/docs
+- Verify official source: LlamaIndex docs: https://docs.llamaindex.ai
+- Run or manually check fact-check query: Dify 部署教程 official docs latest
+- Run or manually check fact-check query: n8n AI 自动化教程 official docs latest
+
+Optimization actions:
+
+- 在开头 200 字内自然回答一次“Dify 部署教程”这个搜索意图，先给结论再展开步骤。
+- 在相关段落加入公开内链：Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide)。
+- Check whether the primary keyword can appear naturally in the title without making the title stiff.
+- Rewrite the meta description to name the reader, outcome, and search phrase: Dify 部署教程.
+- Add one contextual link to a published article before approval.
+- Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.
+
+Internal link suggestions:
+
+- Vercel 提示环境变量缺失怎么办：新手部署检查流程: /blog/vercel-env-variable-missing-beginner-guide
+- 第一个 Upwork 小项目怎么报价：新手范围和底价检查: /blog/first-upwork-project-pricing-checklist
+- Codex 怎么做第一个网页: /blog/build-first-webpage-with-codex
+
+Risk checklist:
+
+- No one-click stability promise for deployment, serving, Agent execution, or RAG quality.
+- No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim.
+- No unsafe secret handling, public API key exposure, or client-side privileged token use.
+- No unbounded autonomous Agent action without permissions, allowlists, human approval, and logs.
+- No RAG or memory claim that removes the need for citation, privacy review, or hallucination checks.
+- No outdated model, package, endpoint, pricing, or platform behavior unless marked for human fact-checking.
+- Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.
+- Verify official docs for deployment commands, SDK names, model names, API endpoints, environment variables, and version-sensitive details.
+
+### 6. AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界
 
 - File: content/blog/ai-agent-memory-rag-design-guide.mdx
 - Primary keyword: AI Agent 记忆
@@ -166,7 +223,7 @@ Risk checklist:
 - Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.
 - Prompt examples include input context, output criteria, review rules, and adaptation notes.
 
-### 6. Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流
+### 7. Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流
 
 - File: content/blog/open-webui-functions-pipelines-deployment-guide.mdx
 - Primary keyword: Open WebUI Functions Pipelines
@@ -223,7 +280,7 @@ Risk checklist:
 - No one-click stability promise for deployment, serving, Agent execution, or RAG quality.
 - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim.
 
-### 7. AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围
+### 8. AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围
 
 - File: content/blog/ai-automation-project-pricing-scope-guide.mdx
 - Primary keyword: AI 自动化项目报价
@@ -280,7 +337,7 @@ Risk checklist:
 - Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.
 - No one-click stability promise for deployment, serving, Agent execution, or RAG quality.
 
-### 8. BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收
+### 9. BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收
 
 - File: content/blog/bentoml-llm-deployment-beginner-guide.mdx
 - Primary keyword: BentoML LLM 部署
@@ -333,112 +390,56 @@ Risk checklist:
 - Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.
 - Verify official docs for deployment commands, SDK names, model names, API endpoints, environment variables, and version-sensitive details.
 
-### 9. Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底
+### 10. Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志
 
-- File: content/blog/dify-workflow-error-handling-guide.mdx
-- Primary keyword: Dify 工作流错误处理
-- Source evidence: next-review-source-pack, search-query-coverage, review-portfolio-board, review-action-board, review-optimization-brief, review-freshness-brief, review-cannibalization-brief, internal-link-opportunity-audit
-- Manual mark-review command after approval: npm run mark:review -- --file=content/blog/dify-workflow-error-handling-guide.mdx --confirm-human
-- Publish dry-run only after review: npm run publish:articles -- --file=content/blog/dify-workflow-error-handling-guide.mdx
+- File: content/blog/agent-tool-permission-safety-guide.mdx
+- Primary keyword: missing
+- Source evidence: review-portfolio-board, review-action-board, review-optimization-brief, review-freshness-brief, review-cannibalization-brief, internal-link-opportunity-audit
+- Manual mark-review command after approval: npm run mark:review -- --file=content/blog/agent-tool-permission-safety-guide.mdx --confirm-human
+- Publish dry-run only after review: npm run publish:articles -- --file=content/blog/agent-tool-permission-safety-guide.mdx
 - Publish confirm: not-included
 
 Search actions:
 
-- Confirm article answers search query: AI workflow examples
-- Confirm article answers search query: AI use cases for business
-- Confirm article answers search query: AI automation workflow
-- Confirm article answers search query: department AI SOP
-- Confirm article answers search query: Dify 工作流错误处理怎么做
-- Confirm article answers search query: Dify 工作流错误处理教程
-- Confirm article answers search query: Dify 工作流错误处理新手教程
-- Confirm article answers search query: Dify 工作流错误处理落地步骤
+- Confirm article answers search query: LLM observability 教程
+- Confirm article answers search query: RAG 评测教程
+- Confirm article answers search query: promptfoo 入门
+- Confirm article answers search query: LangSmith 教程
+- Confirm article answers search query: AI 应用日志监控
 
 Source actions:
 
-- Verify official source: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
-- Verify official source: Vercel AI SDK docs: https://ai-sdk.dev/docs
-- Verify official source: LangChain docs: https://python.langchain.com/docs
-- Verify official source: OpenAI API docs: https://platform.openai.com/docs
-- Verify official source: Dify docs: https://docs.dify.ai
-- Verify official source: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
-- Verify official source: OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
-- Verify official source: OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering
+- Verify official source: https://www.promptfoo.dev/docs/intro/
+- Verify official source: https://docs.ragas.io/
+- Verify official source: https://docs.helicone.ai/
+- Run or manually check fact-check query: LLM observability 教程 official docs latest
+- Run or manually check fact-check query: RAG 评测教程 official docs latest
+- Run or manually check fact-check query: promptfoo 入门 official docs latest
+- Run or manually check fact-check query: LangSmith 教程 official docs latest
 
 Optimization actions:
 
-- 在开头 200 字内自然回答一次“AI workflow examples”这个搜索意图，先给结论再展开步骤。
-- 补一个小节或提示框覆盖缺口：support、product、weekly report。
-- 在相关段落加入公开内链：Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide)。
+- 在开头 200 字内自然回答一次“LLM observability 教程”这个搜索意图，先给结论再展开步骤。
+- 在相关段落加入公开内链：第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist)。
 - Check whether the primary keyword can appear naturally in the title without making the title stiff.
-- Rewrite the meta description to name the reader, outcome, and search phrase: AI workflow examples.
+- Rewrite the meta description to name the reader, outcome, and search phrase: LLM observability 教程.
+- Resolve or explicitly accept during human review: few search-seed token families appear in article text.
 - Add one contextual link to a published article before approval.
 
 Internal link suggestions:
 
-- Vercel 提示环境变量缺失怎么办：新手部署检查流程: /blog/vercel-env-variable-missing-beginner-guide
 - 第一个 Upwork 小项目怎么报价：新手范围和底价检查: /blog/first-upwork-project-pricing-checklist
+- Vercel 提示环境变量缺失怎么办：新手部署检查流程: /blog/vercel-env-variable-missing-beginner-guide
 - Codex 生成代码后怎么审核：交付前检查清单: /blog/codex-code-review-delivery-checklist
 
 Risk checklist:
 
-- No income, ranking, approval, or client acquisition guarantee.
-- No instruction to bypass platform, payment, messaging, account, or review rules.
-- No API key, credential, private customer data, or account detail is included.
-- Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.
-- Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.
-- RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.
-- Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.
-- No traffic, ranking, revenue, benchmark, cost, latency, or stability claim is approved without measured evidence.
-
-### 10. 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断
-
-- File: content/blog/customer-service-ai-prompts-guide.mdx
-- Primary keyword: 客服 AI 提示词
-- Source evidence: next-review-source-pack, search-query-coverage, review-portfolio-board, internal-link-opportunity-audit, industry-prompt-review-pack
-- Manual mark-review command after approval: npm run mark:review -- --file=content/blog/customer-service-ai-prompts-guide.mdx --confirm-human
-- Publish dry-run only after review: npm run publish:articles -- --file=content/blog/customer-service-ai-prompts-guide.mdx
-- Publish confirm: not-included
-
-Search actions:
-
-- Confirm article answers search query: 客服 AI 提示词
-- Confirm article answers search query: 客服回复 AI 模板
-- Confirm article answers search query: 工单分类 AI prompt
-- Confirm article answers search query: 售后回复 AI 提示词
-- Confirm article answers search query: 客服 AI 提示词怎么做
-- Confirm article answers search query: 客服 AI 提示词教程
-- Confirm article answers search query: 客服 AI 提示词新手教程
-- Confirm article answers search query: 客服 AI 提示词落地步骤
-
-Source actions:
-
-- Verify official source: OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering
-- Verify official source: OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation
-- Verify official source: Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
-- Verify official source: Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615
-- Verify official source: Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/
-- Verify official source: OpenAI API docs: https://platform.openai.com/docs
-- Verify official source: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
-- Verify official source: OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
-
-Optimization actions:
-
-- none
-
-Internal link suggestions:
-
-- Codex 生成代码后怎么审核：交付前检查清单: /blog/codex-code-review-delivery-checklist
-- Codex 接 Upwork 小单怎么判断：风险检查清单: /blog/codex-upwork-small-job-risk-checklist
-- Codex 生成代码后怎么审核: /blog/codex-generated-code-review-guide
-
-Risk checklist:
-
-- No income, ranking, approval, or client acquisition guarantee.
-- No instruction to bypass platform, payment, messaging, account, or review rules.
-- No API key, credential, private customer data, or account detail is included.
-- Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.
-- RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.
-- Prompt examples include input context, output criteria, review rules, and adaptation notes.
-- No fabricated metrics, rankings, traffic, income, or client results.
-- No claim that prompts replace professional judgment in regulated or high-stakes workflows.
+- Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.
+- Open official source targets and verify current product names, APIs, limits, pricing-sensitive wording, and workflow boundaries.
+- Rewrite or remove any unsupported claim before mark:review.
+- Confirm no traffic, ranking, revenue, client acquisition, or guaranteed result claim was introduced.
+- Only after human approval, run mark:review manually; publishing still requires separate explicit approval.
+- Confirm the candidate owns a distinct search intent: Agent 工具权限控制.
+- No close published article found; still confirm the title is not a duplicate promise.
+- No close draft/review candidate found.
 

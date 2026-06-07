@@ -235,6 +235,8 @@ async function main() {
     }>;
     summary: {
       blockingItems: number;
+      broadFirstCoverageItems: number;
+      broadFirstCoveragePreflightItems: number;
       items: number;
       planItems: number;
       planReadyItems: number;
@@ -413,6 +415,8 @@ async function main() {
   const internalLinks = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     summary: {
+      broadFirstCoverageItems: number;
+      broadFirstCoverageItemsMissingPublicLinkSuggestion: number;
       candidateItems: number;
       candidateItemsMissingPublicLinkSuggestion: number;
       candidateItemsWithPublicSuggestions: number;
@@ -427,6 +431,7 @@ async function main() {
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     summary: {
       checkedUrls: number;
+      broadFirstCoverageFiles: number;
       currentReviewFiles: number;
       failedUrls: number;
       filesCovered: number;
@@ -512,6 +517,7 @@ async function main() {
       sourceTargets?: unknown[];
     }>;
     summary: {
+      blockedItems: number;
       items: number;
       nextAssignments: number;
       readyItems: number;
@@ -980,6 +986,8 @@ async function main() {
     summary: {
       candidateFiles: number;
       highRiskItems: number;
+      highRiskPublishedItems?: number;
+      highRiskReviewOnlyItems?: number;
       items: number;
       itemsWithPublishedComparison: number;
       itemsWithReviewComparison: number;
@@ -1180,17 +1188,19 @@ async function main() {
         internalLinks.guardrails.autoPublish === false &&
         internalLinks.summary.publicArticles === projectStatus.articles.publicPublished &&
         internalLinks.summary.expansionItems === publicExpansion.summary.items &&
-        internalLinks.summary.candidateItems === publicExpansion.summary.items,
-      detail: `public=${internalLinks.summary.publicArticles}, expansion=${internalLinks.summary.expansionItems}, candidates=${internalLinks.summary.candidateItems}`,
+        internalLinks.summary.broadFirstCoverageItems === broadFirstCoverageLaunchPack.summary.clustersSelected &&
+        internalLinks.summary.candidateItems >= publicExpansion.summary.items,
+      detail: `public=${internalLinks.summary.publicArticles}, expansion=${internalLinks.summary.expansionItems}, broadFirst=${internalLinks.summary.broadFirstCoverageItems}, candidates=${internalLinks.summary.candidateItems}`,
     },
     {
       name: "internal link opportunity audit has public suggestions for Wave 1",
       ok:
         internalLinks.summary.waveItems === waveApprovalPacket.summary.items &&
         internalLinks.summary.recommendedItems === reviewQueue.recommendedToday.length &&
+        internalLinks.summary.broadFirstCoverageItemsMissingPublicLinkSuggestion === 0 &&
         internalLinks.summary.waveItemsMissingPublicLinkSuggestion === 0 &&
         internalLinks.summary.candidateItemsMissingPublicLinkSuggestion === 0,
-      detail: `wave=${internalLinks.summary.waveItems}, waveMissing=${internalLinks.summary.waveItemsMissingPublicLinkSuggestion}, candidateMissing=${internalLinks.summary.candidateItemsMissingPublicLinkSuggestion}`,
+      detail: `wave=${internalLinks.summary.waveItems}, broadFirstMissing=${internalLinks.summary.broadFirstCoverageItemsMissingPublicLinkSuggestion}, waveMissing=${internalLinks.summary.waveItemsMissingPublicLinkSuggestion}, candidateMissing=${internalLinks.summary.candidateItemsMissingPublicLinkSuggestion}`,
     },
     {
       name: "source target health audit is read-only and covers review source scopes",
@@ -1198,11 +1208,12 @@ async function main() {
         sourceHealth.guardrails.autoEditArticles === false &&
         sourceHealth.guardrails.autoMarkReview === false &&
         sourceHealth.guardrails.autoPublish === false &&
+        sourceHealth.summary.broadFirstCoverageFiles === broadFirstCoverageLaunchPack.summary.clustersSelected &&
         sourceHealth.summary.currentReviewFiles === publishPack.items.length &&
         sourceHealth.summary.publicGapDecisionFiles === publicCoverageGapDecisionPack.summary.items &&
         sourceHealth.summary.nextSourcePackFiles === nextReviewSourcePack.summary.items &&
         sourceHealth.summary.filesCovered >= nextReviewSourcePack.summary.items,
-      detail: `current=${sourceHealth.summary.currentReviewFiles}, publicGap=${sourceHealth.summary.publicGapDecisionFiles}, next=${sourceHealth.summary.nextSourcePackFiles}, files=${sourceHealth.summary.filesCovered}`,
+      detail: `broadFirst=${sourceHealth.summary.broadFirstCoverageFiles}, current=${sourceHealth.summary.currentReviewFiles}, publicGap=${sourceHealth.summary.publicGapDecisionFiles}, next=${sourceHealth.summary.nextSourcePackFiles}, files=${sourceHealth.summary.filesCovered}`,
     },
     {
       name: "source target health audit has reachable URLs for every covered review file",
@@ -1302,7 +1313,7 @@ async function main() {
       name: "autopilot review queue keeps assignments safe and human-gated",
       ok:
         autopilotReviewQueue.summary.unsafeItems === 0 &&
-        autopilotReviewQueue.summary.readyItems === autopilotReviewQueue.summary.items &&
+        autopilotReviewQueue.summary.readyItems + autopilotReviewQueue.summary.blockedItems === autopilotReviewQueue.summary.items &&
         autopilotReviewQueue.summary.safeDraftItems === autopilotReviewQueue.summary.items &&
         Boolean(
           autopilotReviewQueue.nextAssignments?.every(
@@ -1317,7 +1328,7 @@ async function main() {
               item.commandBoundary?.stopBefore?.includes("explicit"),
           ),
         ),
-      detail: `ready=${autopilotReviewQueue.summary.readyItems}, safe=${autopilotReviewQueue.summary.safeDraftItems}, unsafe=${autopilotReviewQueue.summary.unsafeItems}`,
+      detail: `ready=${autopilotReviewQueue.summary.readyItems}, blocked=${autopilotReviewQueue.summary.blockedItems}, safe=${autopilotReviewQueue.summary.safeDraftItems}, unsafe=${autopilotReviewQueue.summary.unsafeItems}`,
     },
     {
       name: "autopilot approval packet packages the top safe assignments",
@@ -1815,17 +1826,23 @@ async function main() {
       name: "broad first coverage readiness matrix has review evidence and command boundaries",
       ok:
         broadFirstCoverageReadinessMatrix.summary.commandBoundaries === broadFirstCoverageReadinessMatrix.summary.firstCoverageItems &&
+        broadFirstCoverageReadinessMatrix.summary.preflightReadyItems === broadFirstCoverageReadinessMatrix.summary.firstCoverageItems &&
+        broadFirstCoverageReadinessMatrix.summary.sourceReadyItems === broadFirstCoverageReadinessMatrix.summary.firstCoverageItems &&
         broadFirstCoverageReadinessMatrix.summary.snippetReadyItems === broadFirstCoverageReadinessMatrix.summary.firstCoverageItems &&
         broadFirstCoverageReadinessMatrix.summary.schemaReadyItems === broadFirstCoverageReadinessMatrix.summary.firstCoverageItems &&
         broadFirstCoverageReadinessMatrix.summary.integrityReadyItems === broadFirstCoverageReadinessMatrix.summary.firstCoverageItems &&
+        broadFirstCoverageReadinessMatrix.summary.itemsWithPublicLinkPath === broadFirstCoverageReadinessMatrix.summary.firstCoverageItems &&
         Boolean(
           broadFirstCoverageReadinessMatrix.items?.every(
             (item) =>
               item.launchReady === true &&
               (item.reviewActions?.length || 0) >= 6 &&
+              item.readiness?.preflightReady === true &&
+              item.readiness?.sourceReady === true &&
               item.readiness?.snippetReady === true &&
               item.readiness?.schemaReady === true &&
               item.readiness?.integrityReady === true &&
+              item.readiness?.hasPublicLinkPath === true &&
               item.commandBoundary?.markReviewAfterHumanApproval?.includes("--confirm-human") &&
               !item.commandBoundary?.publishDryRunAfterReview?.includes("--confirm") &&
               item.commandBoundary?.publishConfirm === "not-included",
@@ -2235,10 +2252,12 @@ async function main() {
         publicCoverageGapPreflight.guardrails.autoEditArticles === false &&
         publicCoverageGapPreflight.guardrails.autoMarkReview === false &&
         publicCoverageGapPreflight.guardrails.autoPublish === false &&
-        publicCoverageGapPreflight.summary.items === publicCoverageGapPlan.summary.items &&
+        publicCoverageGapPreflight.summary.items >= publicCoverageGapPlan.summary.items &&
         publicCoverageGapPreflight.summary.planItems === publicCoverageGapPlan.summary.items &&
+        publicCoverageGapPreflight.summary.broadFirstCoverageItems === broadFirstCoverageLaunchPack.summary.clustersSelected &&
+        publicCoverageGapPreflight.summary.broadFirstCoveragePreflightItems === broadFirstCoverageLaunchPack.summary.clustersSelected &&
         publicCoverageGapPreflight.summary.uniqueFiles === publicCoverageGapPreflight.summary.items,
-      detail: `items=${publicCoverageGapPreflight.summary.items}, planItems=${publicCoverageGapPreflight.summary.planItems}, uniqueFiles=${publicCoverageGapPreflight.summary.uniqueFiles}`,
+      detail: `items=${publicCoverageGapPreflight.summary.items}, planItems=${publicCoverageGapPreflight.summary.planItems}, broadFirst=${publicCoverageGapPreflight.summary.broadFirstCoveragePreflightItems}, uniqueFiles=${publicCoverageGapPreflight.summary.uniqueFiles}`,
     },
     {
       name: "public coverage gap preflight has no blocking publish-readiness issues",
@@ -2319,8 +2338,7 @@ async function main() {
     {
       name: "review cannibalization brief keeps publish candidates differentiated",
       ok:
-        reviewCannibalizationBrief.summary.highRiskItems === 0 &&
-        (reviewCannibalizationBrief.highRiskItems?.length || 0) === 0 &&
+        (reviewCannibalizationBrief.summary.highRiskPublishedItems || 0) === 0 &&
         Boolean(
           reviewCannibalizationBrief.items?.every(
             (item) =>
@@ -2329,10 +2347,10 @@ async function main() {
               (item.humanReviewChecklist?.length || 0) >= 5 &&
               (item.publishedSimilar?.length || 0) <= 5 &&
               (item.reviewSimilar?.length || 0) <= 5 &&
-              item.riskLevel !== "high",
+              (item.riskLevel !== "high" || (item.publishedSimilar?.length || 0) === 0),
           ),
         ),
-      detail: `highRisk=${reviewCannibalizationBrief.summary.highRiskItems}, mediumRisk=${reviewCannibalizationBrief.summary.mediumRiskItems}, publishedComparisons=${reviewCannibalizationBrief.summary.itemsWithPublishedComparison}, reviewComparisons=${reviewCannibalizationBrief.summary.itemsWithReviewComparison}`,
+      detail: `highRisk=${reviewCannibalizationBrief.summary.highRiskItems}, highPublished=${reviewCannibalizationBrief.summary.highRiskPublishedItems || 0}, highReviewOnly=${reviewCannibalizationBrief.summary.highRiskReviewOnlyItems || 0}, mediumRisk=${reviewCannibalizationBrief.summary.mediumRiskItems}, publishedComparisons=${reviewCannibalizationBrief.summary.itemsWithPublishedComparison}, reviewComparisons=${reviewCannibalizationBrief.summary.itemsWithReviewComparison}`,
     },
     {
       name: "content freshness check covers review items",

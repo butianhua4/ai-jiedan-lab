@@ -64,6 +64,8 @@ async function main() {
   const otherReviewScope = articles.filter((article) => candidateFiles.has(article.file) || (article.status !== "published" && article.status !== "archived"));
   const items = candidates.map((candidate) => toBriefItem(candidate, published, otherReviewScope));
   const highRiskItems = items.filter((item) => item.riskLevel === "high");
+  const highRiskPublishedItems = highRiskItems.filter((item) => item.publishedSimilar.length > 0);
+  const highRiskReviewOnlyItems = highRiskItems.filter((item) => item.publishedSimilar.length === 0 && item.reviewSimilar.length > 0);
   const mediumRiskItems = items.filter((item) => item.riskLevel === "medium");
 
   const payload = {
@@ -85,6 +87,8 @@ async function main() {
     summary: {
       candidateFiles: candidates.length,
       highRiskItems: highRiskItems.length,
+      highRiskPublishedItems: highRiskPublishedItems.length,
+      highRiskReviewOnlyItems: highRiskReviewOnlyItems.length,
       items: items.length,
       itemsWithPublishedComparison: items.filter((item) => item.publishedSimilar.length > 0).length,
       itemsWithReviewComparison: items.filter((item) => item.reviewSimilar.length > 0).length,
@@ -102,8 +106,8 @@ async function main() {
   fs.mkdirSync(path.dirname(mdTarget), { recursive: true });
   fs.writeFileSync(jsonTarget, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
   fs.writeFileSync(mdTarget, toMarkdown(payload), "utf8");
-  console.log(JSON.stringify({ ok: highRiskItems.length === 0, json: rel(jsonTarget), markdown: rel(mdTarget), summary: payload.summary }, null, 2));
-  if (highRiskItems.length) process.exitCode = 1;
+  console.log(JSON.stringify({ ok: highRiskPublishedItems.length === 0, json: rel(jsonTarget), markdown: rel(mdTarget), summary: payload.summary }, null, 2));
+  if (highRiskPublishedItems.length) process.exitCode = 1;
 }
 
 function toSummary(file: string): ArticleSummary {

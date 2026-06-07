@@ -92,7 +92,8 @@ function main() {
     .sort((a, b) => b.autopilotScore - a.autopilotScore || a.file.localeCompare(b.file));
 
   const nextAssignments = items.filter((item) => item.readyForAssignment).slice(0, 10);
-  const unsafeItems = items.filter((item) => !isSafeQueueItem(item));
+  const blockedItems = items.filter((item) => !item.readyForAssignment && isSafeBlockedItem(item));
+  const unsafeItems = items.filter((item) => !isSafeQueueItem(item) && !isSafeBlockedItem(item));
   const payload = {
     generatedAt: new Date().toISOString(),
     guardrails: {
@@ -109,6 +110,7 @@ function main() {
       trafficDataAvailable: portfolio.trafficBoundary.trafficDataAvailable,
     },
     summary: {
+      blockedItems: blockedItems.length,
       items: items.length,
       nextAssignments: nextAssignments.length,
       readyItems: items.filter((item) => item.readyForAssignment).length,
@@ -118,6 +120,7 @@ function main() {
       withSourceTargets: items.filter((item) => item.sourceTargets.length > 0).length,
     },
     nextAssignments,
+    blockedItems,
     unsafeItems,
     items,
   };
@@ -184,6 +187,16 @@ function isSafeQueueItem(item: AutopilotQueueItem) {
   );
 }
 
+function isSafeBlockedItem(item: AutopilotQueueItem) {
+  return (
+    item.safeDraft &&
+    item.blockers.length > 0 &&
+    item.sourceTargets.length > 0 &&
+    hasCommandBoundary(item.commandBoundary) &&
+    item.commandBoundary.publishConfirm === "not-included"
+  );
+}
+
 function hasCommandBoundary(command: Partial<CommandBoundary>) {
   return (
     command.markReviewAfterHumanApproval?.includes("--confirm-human") === true &&
@@ -211,6 +224,7 @@ function toMarkdown(payload: {
   boundaries: { canClaimTraffic: boolean; publicPublished: number; publishableNow: number; trafficDataAvailable: boolean };
   generatedAt: string;
   guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; stopBefore: string };
+  blockedItems: AutopilotQueueItem[];
   items: AutopilotQueueItem[];
   nextAssignments: AutopilotQueueItem[];
   summary: Record<string, number>;
@@ -244,6 +258,10 @@ function toMarkdown(payload: {
     "## Unsafe Items",
     "",
     ...itemTable(payload.unsafeItems),
+    "",
+    "## Blocked Items",
+    "",
+    ...itemTable(payload.blockedItems),
     "",
     "## Next Assignments",
     "",

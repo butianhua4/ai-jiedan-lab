@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T03:29:45.559Z",
+  "generatedAt": "2026-06-07T03:47:35.757Z",
   "ok": true,
   "summary": {
     "checks": 121,
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=139, unsafeClaims=0, watchMentions=1448"
+      "detail": "filesScanned=139, unsafeClaims=0, watchMentions=1499"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -105,52 +105,52 @@
     {
       "name": "internal link opportunity audit is read-only and covers expansion candidates",
       "ok": true,
-      "detail": "public=15, expansion=19, candidates=19"
+      "detail": "public=15, expansion=19, broadFirst=8, candidates=22"
     },
     {
       "name": "internal link opportunity audit has public suggestions for Wave 1",
       "ok": true,
-      "detail": "wave=3, waveMissing=0, candidateMissing=0"
+      "detail": "wave=3, broadFirstMissing=0, waveMissing=0, candidateMissing=0"
     },
     {
       "name": "source target health audit is read-only and covers review source scopes",
       "ok": true,
-      "detail": "current=3, publicGap=8, next=19, files=20"
+      "detail": "broadFirst=8, current=3, publicGap=13, next=19, files=23"
     },
     {
       "name": "source target health audit has reachable URLs for every covered review file",
       "ok": true,
-      "detail": "checked=18, ok=18, failed=0, missingTargets=0, filesWithoutReachable=0"
+      "detail": "checked=40, ok=39, failed=1, missingTargets=0, filesWithoutReachable=0"
     },
     {
       "name": "review action board is read-only and covers active review queues",
       "ok": true,
-      "detail": "tasks=11, wave=3, publicGap=8"
+      "detail": "tasks=16, wave=3, publicGap=13"
     },
     {
       "name": "review action board tasks are ready and preserve command boundaries",
       "ok": true,
-      "detail": "ready=11, unsafe=0"
+      "detail": "ready=16, unsafe=0"
     },
     {
       "name": "review portfolio board deduplicates all review packs",
       "ok": true,
-      "detail": "sourceCandidates=33, uniqueItems=24, duplicates=9, multiSource=7"
+      "detail": "sourceCandidates=38, uniqueItems=26, duplicates=12, multiSource=10"
     },
     {
       "name": "review portfolio board keeps unique candidates safe and human-gated",
       "ok": true,
-      "detail": "ready=24, safe=24, sources=24, commands=24"
+      "detail": "ready=26, safe=26, sources=26, commands=26"
     },
     {
       "name": "autopilot review queue is read-only and covers portfolio candidates",
       "ok": true,
-      "detail": "items=24, next=10, sources=24"
+      "detail": "items=26, next=10, sources=26"
     },
     {
       "name": "autopilot review queue keeps assignments safe and human-gated",
       "ok": true,
-      "detail": "ready=24, safe=24, unsafe=0"
+      "detail": "ready=25, blocked=1, safe=26, unsafe=0"
     },
     {
       "name": "autopilot approval packet packages the top safe assignments",
@@ -180,12 +180,12 @@
     {
       "name": "autopilot internal link brief provides public link suggestions",
       "ok": true,
-      "detail": "suggestions=3, missingCurrentPublicLink=2, alreadyLinked=1"
+      "detail": "suggestions=3, missingCurrentPublicLink=3, alreadyLinked=0"
     },
     {
       "name": "autopilot source verification brief covers approval packet",
       "ok": true,
-      "detail": "items=3, reachable=21, unsafe=0"
+      "detail": "items=3, reachable=25, unsafe=0"
     },
     {
       "name": "autopilot source verification brief provides source-backed review tasks",
@@ -205,22 +205,22 @@
     {
       "name": "autopilot review sprint board covers next assignments",
       "ok": true,
-      "detail": "items=10, readyWithPlaybook=3, queued=7, needsQuery=1, unsafe=0"
+      "detail": "items=10, readyWithPlaybook=3, queued=7, needsQuery=0, unsafe=0"
     },
     {
       "name": "autopilot review sprint board keeps sprint actions human-gated",
       "ok": true,
-      "detail": "ready=10, commands=10, queries=9, sources=10"
+      "detail": "ready=10, commands=10, queries=10, sources=10"
     },
     {
       "name": "autopilot search query gap brief covers sprint query gaps",
       "ok": true,
-      "detail": "items=1, sprintNeedsQuery=1, unsafe=0"
+      "detail": "items=0, sprintNeedsQuery=0, unsafe=0"
     },
     {
       "name": "autopilot search query gap brief has source-backed manual query suggestions",
       "ok": true,
-      "detail": "ready=1, coverage=1, recommended=10, sources=1"
+      "detail": "ready=0, coverage=0, recommended=0, sources=0"
     },
     {
       "name": "autopilot queued playbook brief covers queued sprint items",
@@ -270,7 +270,7 @@
     {
       "name": "autopilot broad wave optimization has actionable SEO and approval guidance",
       "ok": true,
-      "detail": "ready=24, checklists=24, links=14"
+      "detail": "ready=24, checklists=24, links=16"
     },
     {
       "name": "broad first coverage launch pack is read-only and covers zero-public clusters",
@@ -290,17 +290,17 @@
     {
       "name": "broad first coverage readiness matrix has review evidence and command boundaries",
       "ok": true,
-      "detail": "commands=8, preflight=3, source=5, links=5"
+      "detail": "commands=8, preflight=8, source=8, links=8"
     },
     {
       "name": "review optimization brief is read-only and covers ready action-board tasks",
       "ok": true,
-      "detail": "briefs=11, ready=11, unsafeCommands=0"
+      "detail": "briefs=16, ready=16, unsafeCommands=0"
     },
     {
       "name": "review optimization brief has actionable copydesk guidance",
       "ok": true,
-      "detail": "withAction=11, missingPublicLinkItems=10, exactQueryWeak=3"
+      "detail": "withAction=16, missingPublicLinkItems=15, exactQueryWeak=4"
     },
     {
       "name": "search snippet readiness audit is read-only and covers public plus expansion items",
@@ -460,22 +460,22 @@
     {
       "name": "public coverage gap preflight is read-only and covers gap plan items",
       "ok": true,
-      "detail": "items=8, planItems=8, uniqueFiles=8"
+      "detail": "items=13, planItems=8, broadFirst=8, uniqueFiles=13"
     },
     {
       "name": "public coverage gap preflight has no blocking publish-readiness issues",
       "ok": true,
-      "detail": "blocking=0, ready=8, structured=8, seedMatches=7, warnings=8"
+      "detail": "blocking=0, ready=13, structured=13, seedMatches=12, warnings=13"
     },
     {
       "name": "public coverage gap decision pack is read-only and covers preflight items",
       "ok": true,
-      "detail": "items=8, ready=8, waves=4"
+      "detail": "items=13, ready=13, waves=4"
     },
     {
       "name": "public coverage gap decision pack has human review actions and command boundaries",
       "ok": true,
-      "detail": "blocking=0, unsafe=0, commandBoundary=8, optimizations=8"
+      "detail": "blocking=0, unsafe=0, commandBoundary=13, optimizations=13"
     },
     {
       "name": "content cannibalization check generated warning report",
@@ -485,12 +485,12 @@
     {
       "name": "review cannibalization brief is read-only and covers unique action-board files",
       "ok": true,
-      "detail": "items=9, uniqueActionFiles=9, unsafeCommands=0"
+      "detail": "items=13, uniqueActionFiles=13, unsafeCommands=0"
     },
     {
       "name": "review cannibalization brief keeps publish candidates differentiated",
       "ok": true,
-      "detail": "highRisk=0, mediumRisk=0, publishedComparisons=0, reviewComparisons=0"
+      "detail": "highRisk=1, highPublished=0, highReviewOnly=1, mediumRisk=0, publishedComparisons=0, reviewComparisons=1"
     },
     {
       "name": "content freshness check covers review items",
@@ -500,12 +500,12 @@
     {
       "name": "review freshness brief is read-only and covers unique action-board files",
       "ok": true,
-      "detail": "items=9, uniqueActionFiles=9, unsafeCommands=0"
+      "detail": "items=13, uniqueActionFiles=13, unsafeCommands=0"
     },
     {
       "name": "review freshness brief has source-backed human fact-check tasks",
       "ok": true,
-      "detail": "ready=9, blocked=0, highRisk=9, withSources=9"
+      "detail": "ready=13, blocked=0, highRisk=13, withSources=13"
     },
     {
       "name": "review coverage report covers planned candidates",

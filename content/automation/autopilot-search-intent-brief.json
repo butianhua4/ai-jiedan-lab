@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T03:28:20.148Z",
+  "generatedAt": "2026-06-07T03:46:22.065Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -50,6 +50,9 @@
         "Vercel AI SDK agent",
         "AI Agent 部署教程",
         "Agent 工具调用教程",
+        "AI Agent 生产环境",
+        "LangGraph Agent 入门",
+        "CrewAI 部署教程",
         "AI 工作流部署",
         "Agent 人工审核流程"
       ],
@@ -64,69 +67,36 @@
     {
       "bodyQueryHits": [],
       "descriptionQueryHits": [],
-      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "headingQueryHits": [],
-      "primaryQuery": "LLM observability",
-      "queryTokenHits": 10,
+      "primaryQuery": "RAG 知识库搭建教程",
+      "queryTokenHits": 2,
       "readyForHumanReview": true,
       "reviewSuggestions": [
-        "During human review, consider whether the title can naturally include: LLM observability.",
-        "During human review, tune the meta description around: LLM observability.",
-        "During human review, add one natural H2/H3 or paragraph that answers: LLM observability / RAG evaluation.",
+        "During human review, consider whether the title can naturally include: RAG 知识库搭建教程.",
+        "During human review, tune the meta description around: RAG 知识库搭建教程.",
+        "During human review, add one natural H2/H3 or paragraph that answers: RAG 知识库搭建教程 / 向量数据库教程.",
+        "During human review, add user-language phrasing without keyword stuffing.",
         "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval."
       ],
       "searchQueries": [
-        "LLM observability",
-        "RAG evaluation",
-        "AI agent logs",
-        "prompt injection defense",
-        "OpenAI API Next.js",
-        "Claude API 接入",
-        "Gemini API Next.js",
-        "API rate limit 怎么办"
+        "RAG 知识库搭建教程",
+        "向量数据库教程",
+        "企业知识库 AI 部署",
+        "RAG 检索不到内容",
+        "RAG 评测教程"
       ],
       "searchWeaknesses": [
         "no exact search query appears in title",
         "no exact search query appears in description",
-        "no exact search query appears in headings or body"
+        "no exact search query appears in headings or body",
+        "few query tokens appear in searchable text"
       ],
-      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "titleQueryHits": []
     }
   ],
   "items": [
-    {
-      "bodyQueryHits": [
-        "全行业 AI 提示词",
-        "AI prompt library"
-      ],
-      "descriptionQueryHits": [
-        "全行业 AI 提示词"
-      ],
-      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
-      "headingQueryHits": [],
-      "primaryQuery": "ChatGPT prompts for business",
-      "queryTokenHits": 7,
-      "readyForHumanReview": true,
-      "reviewSuggestions": [
-        "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval."
-      ],
-      "searchQueries": [
-        "ChatGPT prompts for business",
-        "AI prompt template library",
-        "industry AI prompts",
-        "best AI prompts for work",
-        "AI 提示词大全",
-        "ChatGPT 提示词模板",
-        "全行业 AI 提示词",
-        "AI prompt library"
-      ],
-      "searchWeaknesses": [],
-      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-      "titleQueryHits": [
-        "全行业 AI 提示词"
-      ]
-    },
     {
       "bodyQueryHits": [],
       "descriptionQueryHits": [],
@@ -148,6 +118,9 @@
         "Vercel AI SDK agent",
         "AI Agent 部署教程",
         "Agent 工具调用教程",
+        "AI Agent 生产环境",
+        "LangGraph Agent 入门",
+        "CrewAI 部署教程",
         "AI 工作流部署",
         "Agent 人工审核流程"
       ],
@@ -160,35 +133,72 @@
       "titleQueryHits": []
     },
     {
-      "bodyQueryHits": [],
-      "descriptionQueryHits": [],
-      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "bodyQueryHits": [
+        "客服 AI 提示词",
+        "全行业 AI 提示词",
+        "AI prompt library"
+      ],
+      "descriptionQueryHits": [
+        "全行业 AI 提示词"
+      ],
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
       "headingQueryHits": [],
-      "primaryQuery": "LLM observability",
-      "queryTokenHits": 10,
+      "primaryQuery": "ChatGPT prompts for business",
+      "queryTokenHits": 11,
       "readyForHumanReview": true,
       "reviewSuggestions": [
-        "During human review, consider whether the title can naturally include: LLM observability.",
-        "During human review, tune the meta description around: LLM observability.",
-        "During human review, add one natural H2/H3 or paragraph that answers: LLM observability / RAG evaluation.",
         "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval."
       ],
       "searchQueries": [
-        "LLM observability",
-        "RAG evaluation",
-        "AI agent logs",
-        "prompt injection defense",
-        "OpenAI API Next.js",
-        "Claude API 接入",
-        "Gemini API Next.js",
-        "API rate limit 怎么办"
+        "ChatGPT prompts for business",
+        "AI prompt template library",
+        "industry AI prompts",
+        "best AI prompts for work",
+        "AI 提示词大全",
+        "销售 AI 提示词",
+        "客服 AI 提示词",
+        "HR AI 提示词",
+        "运营 AI 提示词",
+        "企业 AI 提示词模板",
+        "ChatGPT 提示词模板",
+        "全行业 AI 提示词",
+        "AI prompt library"
+      ],
+      "searchWeaknesses": [],
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "titleQueryHits": [
+        "全行业 AI 提示词"
+      ]
+    },
+    {
+      "bodyQueryHits": [],
+      "descriptionQueryHits": [],
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "headingQueryHits": [],
+      "primaryQuery": "RAG 知识库搭建教程",
+      "queryTokenHits": 2,
+      "readyForHumanReview": true,
+      "reviewSuggestions": [
+        "During human review, consider whether the title can naturally include: RAG 知识库搭建教程.",
+        "During human review, tune the meta description around: RAG 知识库搭建教程.",
+        "During human review, add one natural H2/H3 or paragraph that answers: RAG 知识库搭建教程 / 向量数据库教程.",
+        "During human review, add user-language phrasing without keyword stuffing.",
+        "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval."
+      ],
+      "searchQueries": [
+        "RAG 知识库搭建教程",
+        "向量数据库教程",
+        "企业知识库 AI 部署",
+        "RAG 检索不到内容",
+        "RAG 评测教程"
       ],
       "searchWeaknesses": [
         "no exact search query appears in title",
         "no exact search query appears in description",
-        "no exact search query appears in headings or body"
+        "no exact search query appears in headings or body",
+        "few query tokens appear in searchable text"
       ],
-      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "titleQueryHits": []
     }
   ]
