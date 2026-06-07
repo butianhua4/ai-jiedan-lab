@@ -51,6 +51,7 @@
     "automation:autopilot-broad-wave-optimization": "tsx scripts/autopilot-broad-wave-optimization.ts",
     "automation:autopilot-broad-wave-remediation": "tsx scripts/autopilot-broad-wave-remediation-pack.ts",
     "automation:source-remediation": "tsx scripts/source-target-remediation-pack.ts",
+    "automation:source-replacement-decisions": "tsx scripts/source-replacement-decision-pack.ts",
     "automation:broad-first-coverage-launch": "tsx scripts/broad-first-coverage-launch-pack.ts",
     "automation:broad-first-coverage-readiness": "tsx scripts/broad-first-coverage-readiness-matrix.ts",
     "automation:review-optimization-brief": "tsx scripts/review-optimization-brief.ts",

@@ -659,6 +659,43 @@ async function main() {
     };
     unsafeItems?: unknown[];
   }>("content/automation/source-target-remediation-pack.json");
+  const sourceReplacementDecisionPack = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    items?: Array<{
+      alternatives?: unknown[];
+      decisionOptions?: unknown[];
+      file?: string;
+      kind?: string;
+      manualChecklist?: unknown[];
+      recommendedCandidate?: { sourceType?: string; url?: string } | null;
+      stopBefore?: string;
+      unsafeReasons?: unknown[];
+    }>;
+    sourceEvidence?: {
+      remediationSummary?: {
+        failedUrlItems: number;
+        items: number;
+        redirectedUrlItems: number;
+        unsafeItems: number;
+      };
+    };
+    summary: {
+      affectedFiles: number;
+      failedDecisionItems: number;
+      humanGatedItems: number;
+      items: number;
+      itemsWithDecisionOptions: number;
+      itemsWithManualChecklist: number;
+      itemsWithRecommendedCandidate: number;
+      officialRecommendedCandidates: number;
+      redirectedDecisionItems: number;
+      replacementCandidateOptions: number;
+      sourceRemediationItems: number;
+      sourceRemediationUnsafeItems: number;
+      unsafeItems: number;
+    };
+    unsafeItems?: unknown[];
+  }>("content/automation/source-replacement-decision-pack.json");
   const reviewActionBoard = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     summary: {
@@ -1671,6 +1708,46 @@ async function main() {
           ),
         ),
       detail: `ready=${sourceTargetRemediationPack.summary.manualFixReadyItems}, unsafe=${sourceTargetRemediationPack.summary.unsafeItems}, gated=${sourceTargetRemediationPack.summary.humanGatedItems}, replacementCandidates=${sourceTargetRemediationPack.summary.replacementCandidateOptions}`,
+    },
+    {
+      name: "source replacement decision pack is read-only and mirrors remediation counts",
+      ok:
+        sourceReplacementDecisionPack.guardrails.autoEditArticles === false &&
+        sourceReplacementDecisionPack.guardrails.autoMarkReview === false &&
+        sourceReplacementDecisionPack.guardrails.autoPublish === false &&
+        sourceReplacementDecisionPack.guardrails.trafficClaim.includes("No measured traffic") &&
+        sourceReplacementDecisionPack.summary.sourceRemediationItems === sourceTargetRemediationPack.summary.items &&
+        sourceReplacementDecisionPack.summary.sourceRemediationUnsafeItems === sourceTargetRemediationPack.summary.unsafeItems &&
+        sourceReplacementDecisionPack.summary.failedDecisionItems >= sourceTargetRemediationPack.summary.failedUrlItems &&
+        sourceReplacementDecisionPack.summary.redirectedDecisionItems >= sourceTargetRemediationPack.summary.redirectedUrlItems &&
+        sourceReplacementDecisionPack.sourceEvidence?.remediationSummary?.items === sourceTargetRemediationPack.summary.items &&
+        sourceReplacementDecisionPack.sourceEvidence?.remediationSummary?.failedUrlItems === sourceTargetRemediationPack.summary.failedUrlItems &&
+        sourceReplacementDecisionPack.sourceEvidence?.remediationSummary?.redirectedUrlItems === sourceTargetRemediationPack.summary.redirectedUrlItems,
+      detail: `decisions=${sourceReplacementDecisionPack.summary.items}, remediation=${sourceTargetRemediationPack.summary.items}, failed=${sourceReplacementDecisionPack.summary.failedDecisionItems}/${sourceTargetRemediationPack.summary.failedUrlItems}, redirected=${sourceReplacementDecisionPack.summary.redirectedDecisionItems}/${sourceTargetRemediationPack.summary.redirectedUrlItems}`,
+    },
+    {
+      name: "source replacement decision pack keeps file-level decisions human-gated",
+      ok:
+        sourceReplacementDecisionPack.summary.unsafeItems === 0 &&
+        sourceReplacementDecisionPack.summary.humanGatedItems === sourceReplacementDecisionPack.summary.items &&
+        sourceReplacementDecisionPack.summary.itemsWithDecisionOptions === sourceReplacementDecisionPack.summary.items &&
+        sourceReplacementDecisionPack.summary.itemsWithManualChecklist === sourceReplacementDecisionPack.summary.items &&
+        sourceReplacementDecisionPack.summary.itemsWithRecommendedCandidate >= sourceReplacementDecisionPack.summary.failedDecisionItems &&
+        sourceReplacementDecisionPack.summary.officialRecommendedCandidates >= sourceReplacementDecisionPack.summary.failedDecisionItems &&
+        (sourceReplacementDecisionPack.unsafeItems?.length || 0) === 0 &&
+        Boolean(
+          sourceReplacementDecisionPack.items?.every(
+            (item) =>
+              Boolean(item.file) &&
+              (item.decisionOptions?.length || 0) >= 3 &&
+              (item.manualChecklist?.length || 0) >= 5 &&
+              (item.kind !== "failed-url" || item.recommendedCandidate?.sourceType === "official-doc") &&
+              (item.kind !== "redirected-url" || item.recommendedCandidate === null) &&
+              (item.unsafeReasons?.length || 0) === 0 &&
+              item.stopBefore?.toLowerCase().includes("human"),
+          ),
+        ),
+      detail: `unsafe=${sourceReplacementDecisionPack.summary.unsafeItems}, gated=${sourceReplacementDecisionPack.summary.humanGatedItems}, recommended=${sourceReplacementDecisionPack.summary.itemsWithRecommendedCandidate}, official=${sourceReplacementDecisionPack.summary.officialRecommendedCandidates}`,
     },
     {
       name: "review action board is read-only and covers active review queues",

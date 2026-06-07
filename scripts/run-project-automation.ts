@@ -59,6 +59,7 @@ const tasks: Task[] = [
     timeoutMs: 180000,
   },
   { title: "Generate source target remediation pack", args: ["run", "automation:source-remediation"] },
+  { title: "Generate source replacement decision pack", args: ["run", "automation:source-replacement-decisions"] },
   { title: "Generate review action board", args: ["run", "automation:review-action-board"] },
   { title: "Generate review portfolio board", args: ["run", "automation:review-portfolio-board"] },
   { title: "Generate review optimization brief", args: ["run", "automation:review-optimization-brief"] },

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T17:33:05.677Z",
+  "generatedAt": "2026-06-07T17:42:10.061Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -2323,6 +2323,369 @@
     "redirectedUrlItems": 18,
     "redirectedUrls": 18,
     "sourceHealthCheckedUrls": 40,
+    "unsafeItems": 0,
+    "unsafeItemList": []
+  },
+  "sourceReplacementDecisions": {
+    "affectedFiles": 22,
+    "failedDecisionItems": 1,
+    "humanGatedItems": 113,
+    "items": 113,
+    "itemsWithDecisionOptions": 113,
+    "itemsWithManualChecklist": 113,
+    "itemsWithRecommendedCandidate": 1,
+    "officialRecommendedCandidates": 1,
+    "redirectedDecisionItems": 112,
+    "replacementCandidateOptions": 8,
+    "sourceRemediationItems": 19,
+    "sourceRemediationUnsafeItems": 0,
+    "top": [
+      {
+        "alternatives": [
+          {
+            "title": "OpenAI prompt engineering guide",
+            "url": "https://platform.openai.com/docs/guides/prompt-engineering",
+            "sourceType": "official-doc",
+            "reason": "Official OpenAI prompting guidance; useful for replacing generic prompt-template claims with source-backed practice notes.",
+            "appliesTo": [
+              "content/blog/industry-ai-prompts-template-library-2026.mdx"
+            ]
+          },
+          {
+            "title": "OpenAI prompt generation guide",
+            "url": "https://platform.openai.com/docs/guides/prompt-generation",
+            "sourceType": "official-doc",
+            "reason": "Official OpenAI guide for generating and improving prompts; useful for template-building and prompt-iteration claims.",
+            "appliesTo": [
+              "content/blog/industry-ai-prompts-template-library-2026.mdx"
+            ]
+          },
+          {
+            "title": "Google Workspace Gemini prompting guide",
+            "url": "https://support.google.com/docs/answer/15013615",
+            "sourceType": "official-doc",
+            "reason": "Official Google Workspace support page; useful for cross-checking business prompting language in Docs/Gemini workflows.",
+            "appliesTo": [
+              "content/blog/industry-ai-prompts-template-library-2026.mdx"
+            ]
+          },
+          {
+            "title": "FwdSlash prompt template",
+            "url": "https://www.fwdslash.ai/prompt-template",
+            "sourceType": "prompt-library",
+            "reason": "Prompt-template library signal; useful only as market/category evidence after official-source claims are separately covered.",
+            "appliesTo": [
+              "content/blog/industry-ai-prompts-template-library-2026.mdx"
+            ]
+          },
+          {
+            "title": "PromptFluent prompt browser",
+            "url": "https://www.promptfluent.com/browse",
+            "sourceType": "prompt-library",
+            "reason": "Prompt-library category signal; useful for seeing common prompt taxonomy and searchable user intent.",
+            "appliesTo": [
+              "content/blog/industry-ai-prompts-template-library-2026.mdx"
+            ]
+          },
+          {
+            "title": "Sensara prompt library",
+            "url": "https://sensara.io/prompts/",
+            "sourceType": "prompt-library",
+            "reason": "Prompt-library market signal; useful for validating that prompt-template content maps to discoverable query families.",
+            "appliesTo": [
+              "content/blog/industry-ai-prompts-template-library-2026.mdx"
+            ]
+          },
+          {
+            "title": "Pmtly prompt library",
+            "url": "https://pmtly.com/",
+            "sourceType": "prompt-library",
+            "reason": "Prompt-library market signal; useful only as supplemental evidence for category demand, not as authority for technical claims.",
+            "appliesTo": [
+              "content/blog/industry-ai-prompts-template-library-2026.mdx"
+            ]
+          }
+        ],
+        "decisionOptions": [
+          "Replace the failed URL with the recommended official source if it covers the same claim.",
+          "Use one market-signal alternative only for category-demand evidence, not for technical or policy authority.",
+          "Remove or rewrite the dependent claim if no source candidate covers it.",
+          "Keep the article draft/noindex/humanReviewRequired until approval."
+        ],
+        "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "kind": "failed-url",
+        "manualChecklist": [
+          "Original URL: https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
+          "Scopes: public-gap-decision, broad-first-coverage",
+          "Confirm the replacement source covers the exact claim family.",
+          "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+          "Use prompt-library sources only as market/category evidence.",
+          "Do not run mark:review or publish commands from this decision pack."
+        ],
+        "originalUrl": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
+        "recommendedCandidate": {
+          "title": "Microsoft Copilot Prompt Gallery",
+          "url": "https://adoption.microsoft.com/en-us/copilot/prompt-gallery/",
+          "sourceType": "official-doc",
+          "reason": "Official Microsoft prompt gallery; useful for validating business prompt patterns and workplace use cases.",
+          "appliesTo": [
+            "content/blog/industry-ai-prompts-template-library-2026.mdx"
+          ]
+        },
+        "referenceLabels": [
+          "https://ai-prompts-pro.com/blog/ai-prompt-templates-business"
+        ],
+        "scopes": [
+          "public-gap-decision",
+          "broad-first-coverage"
+        ],
+        "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+        "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+        "unsafeReasons": []
+      },
+      {
+        "alternatives": [],
+        "decisionOptions": [
+          "Approve the redirected final URL as canonical if it is content-equivalent.",
+          "Replace the original URL with the final URL during human review if the redirect is stable.",
+          "Find a more specific official source if the redirect lands on a generic page.",
+          "Keep the article draft/noindex/humanReviewRequired until approval."
+        ],
+        "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+        "finalUrl": "https://docs.helicone.ai/getting-started/quick-start",
+        "kind": "redirected-url",
+        "manualChecklist": [
+          "Original URL: https://docs.helicone.ai/",
+          "Final URL: https://docs.helicone.ai/getting-started/quick-start",
+          "Scopes: public-gap-decision, broad-first-coverage",
+          "Confirm the replacement source covers the exact claim family.",
+          "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+          "Use prompt-library sources only as market/category evidence.",
+          "Do not run mark:review or publish commands from this decision pack."
+        ],
+        "originalUrl": "https://docs.helicone.ai/",
+        "recommendedCandidate": null,
+        "referenceLabels": [
+          "https://docs.helicone.ai/"
+        ],
+        "scopes": [
+          "public-gap-decision",
+          "broad-first-coverage"
+        ],
+        "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+        "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+        "unsafeReasons": []
+      },
+      {
+        "alternatives": [],
+        "decisionOptions": [
+          "Approve the redirected final URL as canonical if it is content-equivalent.",
+          "Replace the original URL with the final URL during human review if the redirect is stable.",
+          "Find a more specific official source if the redirect lands on a generic page.",
+          "Keep the article draft/noindex/humanReviewRequired until approval."
+        ],
+        "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+        "finalUrl": "https://docs.ragas.io/en/stable/",
+        "kind": "redirected-url",
+        "manualChecklist": [
+          "Original URL: https://docs.ragas.io/",
+          "Final URL: https://docs.ragas.io/en/stable/",
+          "Scopes: public-gap-decision, broad-first-coverage",
+          "Confirm the replacement source covers the exact claim family.",
+          "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+          "Use prompt-library sources only as market/category evidence.",
+          "Do not run mark:review or publish commands from this decision pack."
+        ],
+        "originalUrl": "https://docs.ragas.io/",
+        "recommendedCandidate": null,
+        "referenceLabels": [
+          "https://docs.ragas.io/"
+        ],
+        "scopes": [
+          "public-gap-decision",
+          "broad-first-coverage"
+        ],
+        "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+        "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+        "unsafeReasons": []
+      },
+      {
+        "alternatives": [],
+        "decisionOptions": [
+          "Approve the redirected final URL as canonical if it is content-equivalent.",
+          "Replace the original URL with the final URL during human review if the redirect is stable.",
+          "Find a more specific official source if the redirect lands on a generic page.",
+          "Keep the article draft/noindex/humanReviewRequired until approval."
+        ],
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "finalUrl": "https://ai-sdk.dev/docs/introduction",
+        "kind": "redirected-url",
+        "manualChecklist": [
+          "Original URL: https://ai-sdk.dev/docs",
+          "Final URL: https://ai-sdk.dev/docs/introduction",
+          "Scopes: current-review, public-gap-decision, next-source-pack, broad-first-coverage",
+          "Confirm the replacement source covers the exact claim family.",
+          "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+          "Use prompt-library sources only as market/category evidence.",
+          "Do not run mark:review or publish commands from this decision pack."
+        ],
+        "originalUrl": "https://ai-sdk.dev/docs",
+        "recommendedCandidate": null,
+        "referenceLabels": [
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+          "https://ai-sdk.dev/docs"
+        ],
+        "scopes": [
+          "current-review",
+          "public-gap-decision",
+          "next-source-pack",
+          "broad-first-coverage"
+        ],
+        "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "unsafeReasons": []
+      },
+      {
+        "alternatives": [],
+        "decisionOptions": [
+          "Approve the redirected final URL as canonical if it is content-equivalent.",
+          "Replace the original URL with the final URL during human review if the redirect is stable.",
+          "Find a more specific official source if the redirect lands on a generic page.",
+          "Keep the article draft/noindex/humanReviewRequired until approval."
+        ],
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "finalUrl": "https://developers.openai.com/api/docs",
+        "kind": "redirected-url",
+        "manualChecklist": [
+          "Original URL: https://platform.openai.com/docs",
+          "Final URL: https://developers.openai.com/api/docs",
+          "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
+          "Confirm the replacement source covers the exact claim family.",
+          "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+          "Use prompt-library sources only as market/category evidence.",
+          "Do not run mark:review or publish commands from this decision pack."
+        ],
+        "originalUrl": "https://platform.openai.com/docs",
+        "recommendedCandidate": null,
+        "referenceLabels": [
+          "https://platform.openai.com/docs",
+          "OpenAI API docs: https://platform.openai.com/docs"
+        ],
+        "scopes": [
+          "public-gap-decision",
+          "next-source-pack",
+          "broad-first-coverage"
+        ],
+        "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "unsafeReasons": []
+      },
+      {
+        "alternatives": [],
+        "decisionOptions": [
+          "Approve the redirected final URL as canonical if it is content-equivalent.",
+          "Replace the original URL with the final URL during human review if the redirect is stable.",
+          "Find a more specific official source if the redirect lands on a generic page.",
+          "Keep the article draft/noindex/humanReviewRequired until approval."
+        ],
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "finalUrl": "https://developers.openai.com/api/docs/guides/agents",
+        "kind": "redirected-url",
+        "manualChecklist": [
+          "Original URL: https://platform.openai.com/docs/guides/agents",
+          "Final URL: https://developers.openai.com/api/docs/guides/agents",
+          "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
+          "Confirm the replacement source covers the exact claim family.",
+          "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+          "Use prompt-library sources only as market/category evidence.",
+          "Do not run mark:review or publish commands from this decision pack."
+        ],
+        "originalUrl": "https://platform.openai.com/docs/guides/agents",
+        "recommendedCandidate": null,
+        "referenceLabels": [
+          "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+          "https://platform.openai.com/docs/guides/agents"
+        ],
+        "scopes": [
+          "public-gap-decision",
+          "next-source-pack",
+          "broad-first-coverage"
+        ],
+        "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "unsafeReasons": []
+      },
+      {
+        "alternatives": [],
+        "decisionOptions": [
+          "Approve the redirected final URL as canonical if it is content-equivalent.",
+          "Replace the original URL with the final URL during human review if the redirect is stable.",
+          "Find a more specific official source if the redirect lands on a generic page.",
+          "Keep the article draft/noindex/humanReviewRequired until approval."
+        ],
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "finalUrl": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "kind": "redirected-url",
+        "manualChecklist": [
+          "Original URL: https://platform.openai.com/docs/guides/prompt-engineering",
+          "Final URL: https://developers.openai.com/api/docs/guides/prompt-engineering",
+          "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
+          "Confirm the replacement source covers the exact claim family.",
+          "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+          "Use prompt-library sources only as market/category evidence.",
+          "Do not run mark:review or publish commands from this decision pack."
+        ],
+        "originalUrl": "https://platform.openai.com/docs/guides/prompt-engineering",
+        "recommendedCandidate": null,
+        "referenceLabels": [
+          "https://platform.openai.com/docs/guides/prompt-engineering",
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
+        ],
+        "scopes": [
+          "public-gap-decision",
+          "next-source-pack",
+          "broad-first-coverage"
+        ],
+        "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "unsafeReasons": []
+      },
+      {
+        "alternatives": [],
+        "decisionOptions": [
+          "Approve the redirected final URL as canonical if it is content-equivalent.",
+          "Replace the original URL with the final URL during human review if the redirect is stable.",
+          "Find a more specific official source if the redirect lands on a generic page.",
+          "Keep the article draft/noindex/humanReviewRequired until approval."
+        ],
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "finalUrl": "https://developers.openai.com/api/docs/guides/retrieval",
+        "kind": "redirected-url",
+        "manualChecklist": [
+          "Original URL: https://platform.openai.com/docs/guides/retrieval",
+          "Final URL: https://developers.openai.com/api/docs/guides/retrieval",
+          "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
+          "Confirm the replacement source covers the exact claim family.",
+          "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+          "Use prompt-library sources only as market/category evidence.",
+          "Do not run mark:review or publish commands from this decision pack."
+        ],
+        "originalUrl": "https://platform.openai.com/docs/guides/retrieval",
+        "recommendedCandidate": null,
+        "referenceLabels": [
+          "https://platform.openai.com/docs/guides/retrieval",
+          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
+        ],
+        "scopes": [
+          "public-gap-decision",
+          "next-source-pack",
+          "broad-first-coverage"
+        ],
+        "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "unsafeReasons": []
+      }
+    ],
     "unsafeItems": 0,
     "unsafeItemList": []
   },
@@ -21764,10 +22127,10 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 161,
+    "filesScanned": 163,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 2485
+    "watchMentions": 2489
   },
   "publicSurfaceInventory": {
     "broadCoverage": [

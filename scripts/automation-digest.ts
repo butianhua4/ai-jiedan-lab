@@ -542,6 +542,36 @@ type SourceTargetRemediationPack = {
   unsafeItems: unknown[];
 };
 
+type SourceReplacementDecisionPack = {
+  items: Array<{
+    alternatives: unknown[];
+    file: string;
+    finalUrl?: string;
+    kind: string;
+    originalUrl: string;
+    recommendedCandidate: { sourceType: string; title: string; url: string } | null;
+    scopes: string[];
+    title: string;
+    unsafeReasons: string[];
+  }>;
+  summary: {
+    affectedFiles: number;
+    failedDecisionItems: number;
+    humanGatedItems: number;
+    items: number;
+    itemsWithDecisionOptions: number;
+    itemsWithManualChecklist: number;
+    itemsWithRecommendedCandidate: number;
+    officialRecommendedCandidates: number;
+    redirectedDecisionItems: number;
+    replacementCandidateOptions: number;
+    sourceRemediationItems: number;
+    sourceRemediationUnsafeItems: number;
+    unsafeItems: number;
+  };
+  unsafeItems: unknown[];
+};
+
 type ReviewActionBoard = {
   nextTasks: Array<{
     file: string;
@@ -1611,6 +1641,7 @@ const reports = {
   internalLinks: readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json"),
   sourceHealth: readJson<SourceHealth>("content/automation/source-target-health-audit.json"),
   sourceTargetRemediation: readJson<SourceTargetRemediationPack>("content/automation/source-target-remediation-pack.json"),
+  sourceReplacementDecisions: readJson<SourceReplacementDecisionPack>("content/automation/source-replacement-decision-pack.json"),
   reviewActionBoard: readJson<ReviewActionBoard>("content/automation/review-action-board.json"),
   reviewPortfolioBoard: readJson<ReviewPortfolioBoard>("content/automation/review-portfolio-board.json"),
   autopilotReviewQueue: readJson<AutopilotReviewQueue>("content/automation/autopilot-review-queue.json"),
@@ -1711,6 +1742,23 @@ const payload = {
     sourceHealthCheckedUrls: reports.sourceTargetRemediation.data?.summary.sourceHealthCheckedUrls ?? null,
     unsafeItems: reports.sourceTargetRemediation.data?.summary.unsafeItems ?? null,
     unsafeItemList: reports.sourceTargetRemediation.data?.unsafeItems.slice(0, 8) ?? [],
+  },
+  sourceReplacementDecisions: {
+    affectedFiles: reports.sourceReplacementDecisions.data?.summary.affectedFiles ?? null,
+    failedDecisionItems: reports.sourceReplacementDecisions.data?.summary.failedDecisionItems ?? null,
+    humanGatedItems: reports.sourceReplacementDecisions.data?.summary.humanGatedItems ?? null,
+    items: reports.sourceReplacementDecisions.data?.summary.items ?? null,
+    itemsWithDecisionOptions: reports.sourceReplacementDecisions.data?.summary.itemsWithDecisionOptions ?? null,
+    itemsWithManualChecklist: reports.sourceReplacementDecisions.data?.summary.itemsWithManualChecklist ?? null,
+    itemsWithRecommendedCandidate: reports.sourceReplacementDecisions.data?.summary.itemsWithRecommendedCandidate ?? null,
+    officialRecommendedCandidates: reports.sourceReplacementDecisions.data?.summary.officialRecommendedCandidates ?? null,
+    redirectedDecisionItems: reports.sourceReplacementDecisions.data?.summary.redirectedDecisionItems ?? null,
+    replacementCandidateOptions: reports.sourceReplacementDecisions.data?.summary.replacementCandidateOptions ?? null,
+    sourceRemediationItems: reports.sourceReplacementDecisions.data?.summary.sourceRemediationItems ?? null,
+    sourceRemediationUnsafeItems: reports.sourceReplacementDecisions.data?.summary.sourceRemediationUnsafeItems ?? null,
+    top: reports.sourceReplacementDecisions.data?.items.slice(0, 8) ?? [],
+    unsafeItems: reports.sourceReplacementDecisions.data?.summary.unsafeItems ?? null,
+    unsafeItemList: reports.sourceReplacementDecisions.data?.unsafeItems.slice(0, 8) ?? [],
   },
   reviewActionBoard: {
     nextTasks: reports.reviewActionBoard.data?.nextTasks.slice(0, 6) ?? [],
@@ -2476,6 +2524,9 @@ function buildNextActions() {
   if (!reports.sourceTargetRemediation.data || reports.sourceTargetRemediation.data.summary.unsafeItems > 0) {
     return ["Open docs/source-target-remediation-pack.md and resolve unsafe source URL remediation items before manual review."];
   }
+  if (!reports.sourceReplacementDecisions.data || reports.sourceReplacementDecisions.data.summary.unsafeItems > 0) {
+    return ["Open docs/source-replacement-decision-pack.md and resolve unsafe file-level source replacement decisions before manual review."];
+  }
   if (!reports.reviewActionBoard.data || reports.reviewActionBoard.data.summary.unsafeTasks > 0) {
     return ["Open docs/review-action-board.md and resolve unsafe review tasks before any mark:review command."];
   }
@@ -2750,6 +2801,31 @@ function toMarkdown(data: typeof payload) {
     ...data.sourceTargetRemediation.itemsList.map(
       (item) =>
         `| ${item.manualFixReady} | ${item.kind} | ${item.referenceCount} | ${item.replacementCandidates?.length || 0} | ${item.affectedFiles.join("<br>")} | ${item.url} | ${item.finalUrl || item.error || "review manually"} |`,
+    ),
+    "",
+    "## Source Replacement Decisions",
+    "",
+    `- Items: ${data.sourceReplacementDecisions.items}`,
+    `- Affected files: ${data.sourceReplacementDecisions.affectedFiles}`,
+    `- Failed decision items: ${data.sourceReplacementDecisions.failedDecisionItems}`,
+    `- Redirected decision items: ${data.sourceReplacementDecisions.redirectedDecisionItems}`,
+    `- Items with recommended candidate: ${data.sourceReplacementDecisions.itemsWithRecommendedCandidate}`,
+    `- Official recommended candidates: ${data.sourceReplacementDecisions.officialRecommendedCandidates}`,
+    `- Replacement candidate options: ${data.sourceReplacementDecisions.replacementCandidateOptions}`,
+    `- Human-gated items: ${data.sourceReplacementDecisions.humanGatedItems}`,
+    `- Unsafe items: ${data.sourceReplacementDecisions.unsafeItems}`,
+    "",
+    "Unsafe source replacement decisions:",
+    "",
+    ...(data.sourceReplacementDecisions.unsafeItemList.length
+      ? data.sourceReplacementDecisions.unsafeItemList.map((item) => `- ${JSON.stringify(item)}`)
+      : ["- none"]),
+    "",
+    "| Kind | Recommended | Alternatives | Scopes | Title | File | URL |",
+    "| --- | --- | ---: | --- | --- | --- | --- |",
+    ...data.sourceReplacementDecisions.top.map(
+      (item) =>
+        `| ${item.kind} | ${item.recommendedCandidate ? `${item.recommendedCandidate.title} (${item.recommendedCandidate.sourceType})` : "review redirect"} | ${item.alternatives.length} | ${item.scopes.join(", ") || "unknown"} | ${item.title} | ${item.file} | ${item.originalUrl} |`,
     ),
     "",
     "## Review Action Board",

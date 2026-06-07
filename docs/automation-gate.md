@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-07T17:33:05.168Z
+Generated at: 2026-06-07T17:42:09.546Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 145
-- Passed: 145
+- Checks: 147
+- Passed: 147
 - Failed: 0
 
 ## Checks
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=161, unsafeClaims=0, watchMentions=2485 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=163, unsafeClaims=0, watchMentions=2489 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, broadFirst=8, candidates=22 |
@@ -39,6 +39,8 @@ Overall: PASS
 | source target health audit has reachable URLs for every covered review file | PASS | checked=40, ok=39, failed=1, missingTargets=0, filesWithoutReachable=0 |
 | source target remediation pack is read-only and mirrors source health counts | PASS | items=19, failed=1/1, redirected=18/18 |
 | source target remediation pack keeps every source fix human-gated | PASS | ready=19, unsafe=0, gated=19, replacementCandidates=8 |
+| source replacement decision pack is read-only and mirrors remediation counts | PASS | decisions=113, remediation=19, failed=1/1, redirected=112/18 |
+| source replacement decision pack keeps file-level decisions human-gated | PASS | unsafe=0, gated=113, recommended=1, official=1 |
 | review action board is read-only and covers active review queues | PASS | tasks=16, wave=3, publicGap=13 |
 | review action board tasks are ready and preserve command boundaries | PASS | ready=16, unsafe=0 |
 | review portfolio board deduplicates all review packs | PASS | sourceCandidates=38, uniqueItems=26, duplicates=12, multiSource=10 |

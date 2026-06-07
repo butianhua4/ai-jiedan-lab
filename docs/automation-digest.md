@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T17:33:05.677Z
+Generated at: 2026-06-07T17:42:10.061Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -88,6 +88,33 @@ Unsafe source remediation items:
 | true | redirected-url | 18 | 0 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx | https://platform.openai.com/docs/guides/agents | https://developers.openai.com/api/docs/guides/agents |
 | true | redirected-url | 16 | 0 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/open-webui-functions-pipelines-deployment-guide.mdx | https://python.langchain.com/docs | https://docs.langchain.com/oss/python/langchain/overview |
 | true | redirected-url | 7 | 0 | content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx | https://docs.dify.ai | https://docs.dify.ai/en/use-dify/getting-started/introduction |
+
+## Source Replacement Decisions
+
+- Items: 113
+- Affected files: 22
+- Failed decision items: 1
+- Redirected decision items: 112
+- Items with recommended candidate: 1
+- Official recommended candidates: 1
+- Replacement candidate options: 8
+- Human-gated items: 113
+- Unsafe items: 0
+
+Unsafe source replacement decisions:
+
+- none
+
+| Kind | Recommended | Alternatives | Scopes | Title | File | URL |
+| --- | --- | ---: | --- | --- | --- | --- |
+| failed-url | Microsoft Copilot Prompt Gallery (official-doc) | 7 | public-gap-decision, broad-first-coverage | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx | https://ai-prompts-pro.com/blog/ai-prompt-templates-business |
+| redirected-url | review redirect | 0 | public-gap-decision, broad-first-coverage | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx | https://docs.helicone.ai/ |
+| redirected-url | review redirect | 0 | public-gap-decision, broad-first-coverage | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx | https://docs.ragas.io/ |
+| redirected-url | review redirect | 0 | current-review, public-gap-decision, next-source-pack, broad-first-coverage | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx | https://ai-sdk.dev/docs |
+| redirected-url | review redirect | 0 | public-gap-decision, next-source-pack, broad-first-coverage | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx | https://platform.openai.com/docs |
+| redirected-url | review redirect | 0 | public-gap-decision, next-source-pack, broad-first-coverage | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx | https://platform.openai.com/docs/guides/agents |
+| redirected-url | review redirect | 0 | public-gap-decision, next-source-pack, broad-first-coverage | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx | https://platform.openai.com/docs/guides/prompt-engineering |
+| redirected-url | review redirect | 0 | public-gap-decision, next-source-pack, broad-first-coverage | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx | https://platform.openai.com/docs/guides/retrieval |
 
 ## Review Action Board
 
@@ -1005,8 +1032,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 161
-- Traffic claim watch mentions: 2485
+- Traffic claim files scanned: 163
+- Traffic claim watch mentions: 2489
 
 ## Public Surface Inventory
 
