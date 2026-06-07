@@ -78,6 +78,7 @@
     "automation:search-query-match": "tsx scripts/search-query-match-audit.ts",
     "automation:search-demand-intake": "tsx scripts/search-demand-intake.ts",
     "automation:search-demand-review-pack": "tsx scripts/search-demand-review-pack.ts",
+    "automation:search-demand-publication-bridge": "tsx scripts/search-demand-publication-bridge.ts",
     "automation:broad-search-demand": "tsx scripts/broad-search-demand-map.ts",
     "automation:ai-deployment-review-pack": "tsx scripts/ai-deployment-review-pack.ts",
     "automation:industry-prompt-review-pack": "tsx scripts/industry-prompt-review-pack.ts",

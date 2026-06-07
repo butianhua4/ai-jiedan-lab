@@ -40,6 +40,7 @@ const tasks: Task[] = [
   { title: "Run search query match audit", args: ["run", "automation:search-query-match"] },
   { title: "Generate search demand intake", args: ["run", "automation:search-demand-intake"] },
   { title: "Generate search demand review pack", args: ["run", "automation:search-demand-review-pack"] },
+  { title: "Generate search demand publication bridge", args: ["run", "automation:search-demand-publication-bridge"] },
   { title: "Generate broad search demand map", args: ["run", "automation:broad-search-demand"] },
   { title: "Generate AI deployment review pack", args: ["run", "automation:ai-deployment-review-pack"] },
   { title: "Generate industry prompt review pack", args: ["run", "automation:industry-prompt-review-pack"] },

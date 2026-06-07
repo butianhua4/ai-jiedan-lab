@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T04:08:50.801Z
+Generated at: 2026-06-07T04:19:20.500Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -54,7 +54,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=id
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/ -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
@@ -397,6 +397,43 @@ Unsafe search-demand review items:
 | 462 | true | true | ai-service-pricing-delivery | 4 | true | 4 | 10 | false | 2 | true | not-included | 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准 | content/blog/product-manager-ai-prompts-guide.mdx |
 | 460 | true | true | ai-service-pricing-delivery | 4 | true | 4 | 10 | false | 2 | true | not-included | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
 | 459 | true | true | ai-api-keys-limits-routing | 1 | false | 4 | 10 | true | 1 | true | not-included | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
+
+## Search Demand Publication Bridge
+
+- Items: 16
+- Review pack items: 16
+- Human approval ready items: 16
+- Indexing-safe items: 16
+- Search snippet ready items: 16
+- Schema ready items: 16
+- Source ready items: 16
+- Review-pack ready items: 16
+- Internal-link ready items: 13
+- Blocking items: 0
+- Warning items: 16
+
+Blocking search-demand bridge items:
+
+- none
+
+| Ready | Snippet | Schema | Source | Link | Draft safe | Review pack | Warnings | Publish confirm | Lane | Title | File |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| true | true | true | true | true | true | true | 1 | not-included | agent-deployment-tools-mcp | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | true | true | true | true | true | true | 1 | not-included | agent-deployment-tools-mcp | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| true | true | true | true | true | true | true | 1 | not-included | cross-industry-ai-prompts | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | true | true | true | true | true | true | 2 | not-included | cross-industry-ai-prompts | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | true | true | true | true | true | true | 1 | not-included | llm-deployment-and-serving | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| true | true | true | true | false | true | true | 3 | not-included | llm-deployment-and-serving | 大模型成本监控怎么做：按用户、功能、模型和项目拆账 | content/blog/llm-cost-monitoring-dashboard-guide.mdx |
+| true | true | true | true | true | true | true | 2 | not-included | rag-knowledge-base-agent-memory | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| true | true | true | true | true | true | true | 1 | not-included | rag-knowledge-base-agent-memory | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
+| true | true | true | true | true | true | true | 1 | not-included | nocode-ai-automation-deployment | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| true | true | true | true | true | true | true | 1 | not-included | nocode-ai-automation-deployment | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
+| true | true | true | true | true | true | true | 1 | not-included | llm-evals-observability-security | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
+| true | true | true | true | true | true | true | 1 | not-included | llm-evals-observability-security | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+| true | true | true | true | true | true | true | 1 | not-included | ai-api-keys-limits-routing | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| true | true | true | true | false | true | true | 2 | not-included | ai-service-pricing-delivery | 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准 | content/blog/product-manager-ai-prompts-guide.mdx |
+| true | true | true | true | false | true | true | 2 | not-included | ai-service-pricing-delivery | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
+| true | true | true | true | true | true | true | 1 | not-included | ai-api-keys-limits-routing | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
 
 ## Autopilot Broad AI Demand Brief
 
@@ -801,8 +838,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 143
-- Traffic claim watch mentions: 1588
+- Traffic claim files scanned: 145
+- Traffic claim watch mentions: 1666
 
 ## Public Surface Inventory
 
@@ -1219,7 +1256,7 @@ Public categories:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-07T04:08:46.848Z
+- Latest check: 2026-06-07T04:19:16.661Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85

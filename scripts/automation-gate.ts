@@ -255,6 +255,37 @@ async function main() {
     };
     unsafeItems?: unknown[];
   }>("content/automation/search-demand-review-pack.json");
+  const searchDemandPublicationBridge = readJson<{
+    guardrails: { autoCreateArticles: boolean; autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    items?: Array<{
+      blockingIssues?: unknown[];
+      commandBoundary?: {
+        markReviewAfterHumanApproval?: string;
+        publishConfirm?: string;
+        publishDryRunAfterReview?: string;
+        stopBefore?: string;
+      };
+      humanApprovalReady?: boolean;
+      indexingSafe?: boolean;
+      reviewPackReady?: boolean;
+      schemaReady?: boolean;
+      searchSnippetReady?: boolean;
+      sourceReady?: boolean;
+    }>;
+    summary: {
+      blockingItems: number;
+      humanApprovalReadyItems: number;
+      indexingSafeItems: number;
+      internalLinkReadyItems: number;
+      items: number;
+      reviewPackItems: number;
+      reviewPackReadyItems: number;
+      schemaReadyItems: number;
+      searchSnippetReadyItems: number;
+      sourceReadyItems: number;
+      warningItems: number;
+    };
+  }>("content/automation/search-demand-publication-bridge.json");
   const broadSearchDemand = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     sourceEvidence?: { officialSources?: unknown[] };
@@ -2322,6 +2353,47 @@ async function main() {
           ),
         ),
       detail: `ready=${searchDemandReviewPack.summary.readyItems}, commands=${searchDemandReviewPack.summary.itemsWithCommandBoundary}, sources=${searchDemandReviewPack.summary.itemsWithOfficialSources}, queries=${searchDemandReviewPack.summary.itemsWithSearchQueries}, factChecks=${searchDemandReviewPack.summary.factCheckQueries}`,
+    },
+    {
+      name: "search demand publication bridge is read-only and matches review pack",
+      ok:
+        searchDemandPublicationBridge.guardrails.autoCreateArticles === false &&
+        searchDemandPublicationBridge.guardrails.autoEditArticles === false &&
+        searchDemandPublicationBridge.guardrails.autoMarkReview === false &&
+        searchDemandPublicationBridge.guardrails.autoPublish === false &&
+        searchDemandPublicationBridge.guardrails.trafficClaim === "not-included" &&
+        searchDemandPublicationBridge.summary.items === searchDemandReviewPack.summary.items &&
+        searchDemandPublicationBridge.summary.reviewPackItems === searchDemandReviewPack.summary.items &&
+        searchDemandPublicationBridge.summary.blockingItems === 0 &&
+        searchDemandPublicationBridge.summary.warningItems >= 0,
+      detail: `items=${searchDemandPublicationBridge.summary.items}, reviewPackItems=${searchDemandPublicationBridge.summary.reviewPackItems}, blocking=${searchDemandPublicationBridge.summary.blockingItems}, warnings=${searchDemandPublicationBridge.summary.warningItems}`,
+    },
+    {
+      name: "search demand publication bridge confirms manual approval readiness",
+      ok:
+        searchDemandPublicationBridge.summary.humanApprovalReadyItems === searchDemandPublicationBridge.summary.items &&
+        searchDemandPublicationBridge.summary.indexingSafeItems === searchDemandPublicationBridge.summary.items &&
+        searchDemandPublicationBridge.summary.searchSnippetReadyItems === searchDemandPublicationBridge.summary.items &&
+        searchDemandPublicationBridge.summary.schemaReadyItems === searchDemandPublicationBridge.summary.items &&
+        searchDemandPublicationBridge.summary.sourceReadyItems === searchDemandPublicationBridge.summary.items &&
+        searchDemandPublicationBridge.summary.reviewPackReadyItems === searchDemandPublicationBridge.summary.items &&
+        Boolean(
+          searchDemandPublicationBridge.items?.every(
+            (item) =>
+              item.humanApprovalReady === true &&
+              item.indexingSafe === true &&
+              item.searchSnippetReady === true &&
+              item.schemaReady === true &&
+              item.sourceReady === true &&
+              item.reviewPackReady === true &&
+              (item.blockingIssues?.length || 0) === 0 &&
+              item.commandBoundary?.markReviewAfterHumanApproval?.includes("--confirm-human") &&
+              !item.commandBoundary?.publishDryRunAfterReview?.includes("--confirm") &&
+              item.commandBoundary?.publishConfirm === "not-included" &&
+              item.commandBoundary?.stopBefore?.includes("explicit"),
+          ),
+        ),
+      detail: `approvalReady=${searchDemandPublicationBridge.summary.humanApprovalReadyItems}, snippet=${searchDemandPublicationBridge.summary.searchSnippetReadyItems}, schema=${searchDemandPublicationBridge.summary.schemaReadyItems}, source=${searchDemandPublicationBridge.summary.sourceReadyItems}, links=${searchDemandPublicationBridge.summary.internalLinkReadyItems}`,
     },
     {
       name: "broad search demand map is read-only and covers major demand themes",

@@ -1,0 +1,1334 @@
+{
+  "generatedAt": "2026-06-07T04:17:34.642Z",
+  "guardrails": {
+    "autoCreateArticles": false,
+    "autoEditArticles": false,
+    "autoMarkReview": false,
+    "autoPublish": false,
+    "trafficClaim": "not-included",
+    "note": "Read-only bridge from search-demand review candidates to SEO/source/publication readiness. It does not edit front matter, mark review, or publish.",
+    "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval."
+  },
+  "sourceEvidence": {
+    "reviewPackGeneratedAt": "2026-06-07T04:17:34.133Z",
+    "reviewPackGuardrails": {
+      "autoCreateArticles": false,
+      "autoEditArticles": false,
+      "autoMarkReview": false,
+      "autoPublish": false,
+      "trafficClaim": "not-included",
+      "note": "Read-only review pack for high-search-demand lanes. It packages manual review work but never edits article files, marks review, or publishes.",
+      "stopBefore": "All commands are manual-only and require explicit human approval."
+    },
+    "reviewPackSummary": {
+      "factCheckQueries": 79,
+      "items": 16,
+      "itemsPerLaneMax": 2,
+      "itemsWithCommandBoundary": 16,
+      "itemsWithHumanChecklist": 16,
+      "itemsWithInternalLinkSuggestion": 13,
+      "itemsWithManualReviewFocus": 16,
+      "itemsWithOfficialSources": 16,
+      "itemsWithSearchQueries": 16,
+      "lanes": 8,
+      "readyItems": 16,
+      "reviewQueueMatchedItems": 15,
+      "safeDraftItems": 16,
+      "unsafeItems": 0,
+      "zeroPublicLaneItems": 12
+    },
+    "sourceHealthFilesWithoutReachableSource": 0,
+    "sourceHealthMissingUrlTargets": 0,
+    "trafficNote": "This report evaluates readiness only; it does not claim keyword volume, rankings, impressions, clicks, traffic, or revenue."
+  },
+  "summary": {
+    "blockingItems": 0,
+    "humanApprovalReadyItems": 16,
+    "indexingSafeItems": 16,
+    "internalLinkReadyItems": 13,
+    "items": 16,
+    "reviewPackItems": 16,
+    "reviewPackReadyItems": 16,
+    "schemaReadyItems": 16,
+    "searchSnippetReadyItems": 16,
+    "sourceReadyItems": 16,
+    "warningItems": 16
+  },
+  "blockingItems": [],
+  "warningItems": [
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-agent-deployment-vercel-ai-sdk-guide",
+        "date": "2026-06-06",
+        "description": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
+        "noindex": true,
+        "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
+        "status": "draft",
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "agent-deployment-tools-mcp",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-agent-memory-rag-design-guide",
+        "date": "2026-06-06",
+        "description": "解释 AI Agent 记忆和 RAG 的区别，覆盖短期记忆、长期记忆、知识库检索、引用来源、更新机制、隐私和验收检查。",
+        "noindex": true,
+        "slug": "ai-agent-memory-rag-design-guide",
+        "status": "draft",
+        "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "agent-deployment-tools-mcp",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/industry-ai-prompts-template-library-2026",
+        "date": "2026-06-06",
+        "description": "整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。",
+        "noindex": true,
+        "slug": "industry-ai-prompts-template-library-2026",
+        "status": "draft",
+        "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "cross-industry-ai-prompts",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-model-selection-customer-service-guide",
+        "date": "2026-06-06",
+        "description": "整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。",
+        "noindex": true,
+        "slug": "ai-model-selection-customer-service-guide",
+        "status": "draft",
+        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "cross-industry-ai-prompts",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Review warning before publish: description may be thin for search snippets.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually",
+        "description may be thin for search snippets"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/llm-deployment-huggingface-inference-endpoints-guide",
+        "date": "2026-06-06",
+        "description": "面向新手整理大模型部署路径，讲清 API 调用、托管推理端点、私有化部署、vLLM/TGI/SGLang、成本、延迟、安全和验收。",
+        "noindex": true,
+        "slug": "llm-deployment-huggingface-inference-endpoints-guide",
+        "status": "draft",
+        "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "llm-deployment-and-serving",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-cost-monitoring-dashboard-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-cost-monitoring-dashboard-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/llm-cost-monitoring-dashboard-guide",
+        "date": "2026-06-06",
+        "description": "整理 LLM 成本监控看板设计方法，覆盖用户、功能、模型、token、错误率、缓存、预算告警和客户项目拆账。",
+        "noindex": true,
+        "slug": "llm-cost-monitoring-dashboard-guide",
+        "status": "draft",
+        "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": false,
+      "lane": "llm-deployment-and-serving",
+      "manualNextActions": [
+        "Review warning before publish: no public internal-link suggestion is attached yet.",
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review.",
+        "Review warning before publish: description may be thin for search snippets.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/llm-cost-monitoring-dashboard-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
+      "warningIssues": [
+        "no public internal-link suggestion is attached yet",
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review",
+        "description may be thin for search snippets"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-automation-project-pricing-scope-guide",
+        "date": "2026-06-06",
+        "description": "整理 AI 自动化项目报价思路，覆盖需求范围、工具选型、RAG、Agent、部署、维护、验收标准和风险边界。",
+        "noindex": true,
+        "slug": "ai-automation-project-pricing-scope-guide",
+        "status": "draft",
+        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "rag-knowledge-base-agent-memory",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Review warning before publish: description may be thin for search snippets.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually",
+        "description may be thin for search snippets"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/n8n-ai-agent-rag-memory-guide",
+        "date": "2026-06-06",
+        "description": "讲清 n8n AI Agent 接 RAG 和记忆的思路，覆盖知识库检索、短期上下文、长期偏好、状态存储、权限和测试。",
+        "noindex": true,
+        "slug": "n8n-ai-agent-rag-memory-guide",
+        "status": "draft",
+        "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "rag-knowledge-base-agent-memory",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/dify-workflow-error-handling-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/dify-workflow-error-handling-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/dify-workflow-error-handling-guide",
+        "date": "2026-06-06",
+        "description": "面向新手整理 Dify 工作流错误处理方法，覆盖输入变量校验、节点失败、条件分支、重试、人工兜底和上线前测试。",
+        "noindex": true,
+        "slug": "dify-workflow-error-handling-guide",
+        "status": "draft",
+        "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "nocode-ai-automation-deployment",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/dify-workflow-error-handling-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/dify-workflow-vs-agent-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/dify-workflow-vs-agent-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/dify-workflow-vs-agent-guide",
+        "date": "2026-06-06",
+        "description": "解释 Dify Workflow 与 Agent 的选择方法，覆盖固定流程、自由工具调用、知识库问答、人工审核、成本和上线风险。",
+        "noindex": true,
+        "slug": "dify-workflow-vs-agent-guide",
+        "status": "draft",
+        "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "nocode-ai-automation-deployment",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/dify-workflow-vs-agent-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/mcp-server-deployment-security-checklist.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/mcp-server-deployment-security-checklist.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/mcp-server-deployment-security-checklist",
+        "date": "2026-06-06",
+        "description": "整理 MCP Server 部署安全清单，覆盖本地与远程传输、工具白名单、凭据管理、权限边界、日志追踪和上线前测试。",
+        "noindex": true,
+        "slug": "mcp-server-deployment-security-checklist",
+        "status": "draft",
+        "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "llm-evals-observability-security",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/mcp-server-deployment-security-checklist.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/agent-tool-permission-safety-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/agent-tool-permission-safety-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/agent-tool-permission-safety-guide",
+        "date": "2026-06-06",
+        "description": "整理 AI Agent 调用工具前的权限控制清单，覆盖工具白名单、参数校验、人工审批、沙箱执行、失败回滚和审计日志。",
+        "noindex": true,
+        "slug": "agent-tool-permission-safety-guide",
+        "status": "draft",
+        "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "llm-evals-observability-security",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/agent-tool-permission-safety-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-api-key-security-rotation-guide",
+        "date": "2026-06-06",
+        "description": "整理 AI API Key 安全管理清单，覆盖环境变量、最小权限、服务端调用、密钥轮换、日志脱敏、泄露应急和客户交付。",
+        "noindex": true,
+        "slug": "ai-api-key-security-rotation-guide",
+        "status": "draft",
+        "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "ai-api-keys-limits-routing",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/product-manager-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/product-manager-ai-prompts-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/product-manager-ai-prompts-guide",
+        "date": "2026-06-06",
+        "description": "面向产品经理整理 AI 提示词模板，覆盖需求澄清、PRD 草稿、竞品分析、用户故事、验收标准、发布说明和风险复核。",
+        "noindex": true,
+        "slug": "product-manager-ai-prompts-guide",
+        "status": "draft",
+        "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": false,
+      "lane": "ai-service-pricing-delivery",
+      "manualNextActions": [
+        "Review warning before publish: no public internal-link suggestion is attached yet.",
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
+      "warningIssues": [
+        "no public internal-link suggestion is attached yet",
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/bentoml-llm-deployment-beginner-guide",
+        "date": "2026-06-05",
+        "description": "面向新手整理 BentoML 部署 LLM 的路线，覆盖 Service、本地运行、Bento、BentoCloud、OpenAI-compatible API、批量推理和上线边界。",
+        "noindex": true,
+        "slug": "bentoml-llm-deployment-beginner-guide",
+        "status": "draft",
+        "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+        "updatedAt": "2026-06-05"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": false,
+      "lane": "ai-service-pricing-delivery",
+      "manualNextActions": [
+        "Review warning before publish: no public internal-link suggestion is attached yet.",
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+      "warningIssues": [
+        "no public internal-link suggestion is attached yet",
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-api-rate-limit-debug-guide",
+        "date": "2026-06-06",
+        "description": "面向新手整理 Claude API rate limit reached 的排查方法，覆盖 token、RPM、上下文长度、重试、队列、降级和日志。",
+        "noindex": true,
+        "slug": "claude-api-rate-limit-debug-guide",
+        "status": "draft",
+        "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "ai-api-keys-limits-routing",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-agent-deployment-vercel-ai-sdk-guide",
+        "date": "2026-06-06",
+        "description": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
+        "noindex": true,
+        "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
+        "status": "draft",
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "agent-deployment-tools-mcp",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-agent-memory-rag-design-guide",
+        "date": "2026-06-06",
+        "description": "解释 AI Agent 记忆和 RAG 的区别，覆盖短期记忆、长期记忆、知识库检索、引用来源、更新机制、隐私和验收检查。",
+        "noindex": true,
+        "slug": "ai-agent-memory-rag-design-guide",
+        "status": "draft",
+        "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "agent-deployment-tools-mcp",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/industry-ai-prompts-template-library-2026",
+        "date": "2026-06-06",
+        "description": "整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。",
+        "noindex": true,
+        "slug": "industry-ai-prompts-template-library-2026",
+        "status": "draft",
+        "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "cross-industry-ai-prompts",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-model-selection-customer-service-guide",
+        "date": "2026-06-06",
+        "description": "整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。",
+        "noindex": true,
+        "slug": "ai-model-selection-customer-service-guide",
+        "status": "draft",
+        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "cross-industry-ai-prompts",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Review warning before publish: description may be thin for search snippets.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually",
+        "description may be thin for search snippets"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/llm-deployment-huggingface-inference-endpoints-guide",
+        "date": "2026-06-06",
+        "description": "面向新手整理大模型部署路径，讲清 API 调用、托管推理端点、私有化部署、vLLM/TGI/SGLang、成本、延迟、安全和验收。",
+        "noindex": true,
+        "slug": "llm-deployment-huggingface-inference-endpoints-guide",
+        "status": "draft",
+        "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "llm-deployment-and-serving",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-cost-monitoring-dashboard-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-cost-monitoring-dashboard-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/llm-cost-monitoring-dashboard-guide",
+        "date": "2026-06-06",
+        "description": "整理 LLM 成本监控看板设计方法，覆盖用户、功能、模型、token、错误率、缓存、预算告警和客户项目拆账。",
+        "noindex": true,
+        "slug": "llm-cost-monitoring-dashboard-guide",
+        "status": "draft",
+        "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": false,
+      "lane": "llm-deployment-and-serving",
+      "manualNextActions": [
+        "Review warning before publish: no public internal-link suggestion is attached yet.",
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review.",
+        "Review warning before publish: description may be thin for search snippets.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/llm-cost-monitoring-dashboard-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
+      "warningIssues": [
+        "no public internal-link suggestion is attached yet",
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review",
+        "description may be thin for search snippets"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-automation-project-pricing-scope-guide",
+        "date": "2026-06-06",
+        "description": "整理 AI 自动化项目报价思路，覆盖需求范围、工具选型、RAG、Agent、部署、维护、验收标准和风险边界。",
+        "noindex": true,
+        "slug": "ai-automation-project-pricing-scope-guide",
+        "status": "draft",
+        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "rag-knowledge-base-agent-memory",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Review warning before publish: description may be thin for search snippets.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually",
+        "description may be thin for search snippets"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/n8n-ai-agent-rag-memory-guide",
+        "date": "2026-06-06",
+        "description": "讲清 n8n AI Agent 接 RAG 和记忆的思路，覆盖知识库检索、短期上下文、长期偏好、状态存储、权限和测试。",
+        "noindex": true,
+        "slug": "n8n-ai-agent-rag-memory-guide",
+        "status": "draft",
+        "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "rag-knowledge-base-agent-memory",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/dify-workflow-error-handling-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/dify-workflow-error-handling-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/dify-workflow-error-handling-guide",
+        "date": "2026-06-06",
+        "description": "面向新手整理 Dify 工作流错误处理方法，覆盖输入变量校验、节点失败、条件分支、重试、人工兜底和上线前测试。",
+        "noindex": true,
+        "slug": "dify-workflow-error-handling-guide",
+        "status": "draft",
+        "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "nocode-ai-automation-deployment",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/dify-workflow-error-handling-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/dify-workflow-vs-agent-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/dify-workflow-vs-agent-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/dify-workflow-vs-agent-guide",
+        "date": "2026-06-06",
+        "description": "解释 Dify Workflow 与 Agent 的选择方法，覆盖固定流程、自由工具调用、知识库问答、人工审核、成本和上线风险。",
+        "noindex": true,
+        "slug": "dify-workflow-vs-agent-guide",
+        "status": "draft",
+        "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "nocode-ai-automation-deployment",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/dify-workflow-vs-agent-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/mcp-server-deployment-security-checklist.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/mcp-server-deployment-security-checklist.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/mcp-server-deployment-security-checklist",
+        "date": "2026-06-06",
+        "description": "整理 MCP Server 部署安全清单，覆盖本地与远程传输、工具白名单、凭据管理、权限边界、日志追踪和上线前测试。",
+        "noindex": true,
+        "slug": "mcp-server-deployment-security-checklist",
+        "status": "draft",
+        "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "llm-evals-observability-security",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/mcp-server-deployment-security-checklist.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/agent-tool-permission-safety-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/agent-tool-permission-safety-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/agent-tool-permission-safety-guide",
+        "date": "2026-06-06",
+        "description": "整理 AI Agent 调用工具前的权限控制清单，覆盖工具白名单、参数校验、人工审批、沙箱执行、失败回滚和审计日志。",
+        "noindex": true,
+        "slug": "agent-tool-permission-safety-guide",
+        "status": "draft",
+        "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "llm-evals-observability-security",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/agent-tool-permission-safety-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-api-key-security-rotation-guide",
+        "date": "2026-06-06",
+        "description": "整理 AI API Key 安全管理清单，覆盖环境变量、最小权限、服务端调用、密钥轮换、日志脱敏、泄露应急和客户交付。",
+        "noindex": true,
+        "slug": "ai-api-key-security-rotation-guide",
+        "status": "draft",
+        "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "ai-api-keys-limits-routing",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/product-manager-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/product-manager-ai-prompts-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/product-manager-ai-prompts-guide",
+        "date": "2026-06-06",
+        "description": "面向产品经理整理 AI 提示词模板，覆盖需求澄清、PRD 草稿、竞品分析、用户故事、验收标准、发布说明和风险复核。",
+        "noindex": true,
+        "slug": "product-manager-ai-prompts-guide",
+        "status": "draft",
+        "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": false,
+      "lane": "ai-service-pricing-delivery",
+      "manualNextActions": [
+        "Review warning before publish: no public internal-link suggestion is attached yet.",
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
+      "warningIssues": [
+        "no public internal-link suggestion is attached yet",
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/bentoml-llm-deployment-beginner-guide",
+        "date": "2026-06-05",
+        "description": "面向新手整理 BentoML 部署 LLM 的路线，覆盖 Service、本地运行、Bento、BentoCloud、OpenAI-compatible API、批量推理和上线边界。",
+        "noindex": true,
+        "slug": "bentoml-llm-deployment-beginner-guide",
+        "status": "draft",
+        "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+        "updatedAt": "2026-06-05"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": false,
+      "lane": "ai-service-pricing-delivery",
+      "manualNextActions": [
+        "Review warning before publish: no public internal-link suggestion is attached yet.",
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+      "warningIssues": [
+        "no public internal-link suggestion is attached yet",
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-api-rate-limit-debug-guide",
+        "date": "2026-06-06",
+        "description": "面向新手整理 Claude API rate limit reached 的排查方法，覆盖 token、RPM、上下文长度、重试、队列、降级和日志。",
+        "noindex": true,
+        "slug": "claude-api-rate-limit-debug-guide",
+        "status": "draft",
+        "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+        "updatedAt": "2026-06-06"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": true,
+      "lane": "ai-api-keys-limits-routing",
+      "manualNextActions": [
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+      "warningIssues": [
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    }
+  ]
+}

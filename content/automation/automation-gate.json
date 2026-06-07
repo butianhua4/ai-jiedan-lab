@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T04:08:50.217Z",
+  "generatedAt": "2026-06-07T04:19:19.985Z",
   "ok": true,
   "summary": {
-    "checks": 125,
+    "checks": 127,
     "failed": 0,
-    "passed": 125
+    "passed": 127
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=143, unsafeClaims=0, watchMentions=1588"
+      "detail": "filesScanned=145, unsafeClaims=0, watchMentions=1666"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -456,6 +456,16 @@
       "name": "search demand review pack keeps review actions human-gated",
       "ok": true,
       "detail": "ready=16, commands=16, sources=16, queries=16, factChecks=79"
+    },
+    {
+      "name": "search demand publication bridge is read-only and matches review pack",
+      "ok": true,
+      "detail": "items=16, reviewPackItems=16, blocking=0, warnings=16"
+    },
+    {
+      "name": "search demand publication bridge confirms manual approval readiness",
+      "ok": true,
+      "detail": "approvalReady=16, snippet=16, schema=16, source=16, links=13"
     },
     {
       "name": "broad search demand map is read-only and covers major demand themes",

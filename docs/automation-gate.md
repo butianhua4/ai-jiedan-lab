@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-07T04:08:50.217Z
+Generated at: 2026-06-07T04:19:19.985Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 125
-- Passed: 125
+- Checks: 127
+- Passed: 127
 - Failed: 0
 
 ## Checks
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=143, unsafeClaims=0, watchMentions=1588 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=145, unsafeClaims=0, watchMentions=1666 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, broadFirst=8, candidates=22 |
@@ -104,6 +104,8 @@ Overall: PASS
 | search demand intake packages sources, formats, and manual review boundaries | PASS | queries=81, sources=29, formats=32, queueMatches=33 |
 | search demand review pack is read-only and covers intake lanes | PASS | lanes=8, items=16, maxPerLane=2, unsafe=0 |
 | search demand review pack keeps review actions human-gated | PASS | ready=16, commands=16, sources=16, queries=16, factChecks=79 |
+| search demand publication bridge is read-only and matches review pack | PASS | items=16, reviewPackItems=16, blocking=0, warnings=16 |
+| search demand publication bridge confirms manual approval readiness | PASS | approvalReady=16, snippet=16, schema=16, source=16, links=13 |
 | broad search demand map is read-only and covers major demand themes | PASS | themes=10, readyThemes=10, uniqueCandidates=56 |
 | broad search demand map links demand, sources, and planned review waves | PASS | officialSources=13, reviewPackMatches=4, waveMatches=24, readyMatches=417 |
 | public coverage gap plan is read-only and covers every no-public broad theme | PASS | gapThemes=8, items=8, uniqueFiles=8, duplicateFiles=0 |

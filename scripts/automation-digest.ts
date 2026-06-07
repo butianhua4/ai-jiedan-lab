@@ -850,6 +850,39 @@ type SearchDemandReviewPack = {
   unsafeItems: unknown[];
 };
 
+type SearchDemandPublicationBridge = {
+  blockingItems: unknown[];
+  items: Array<{
+    blockingIssues: unknown[];
+    commandBoundary: { markReviewAfterHumanApproval: string; publishConfirm: string; publishDryRunAfterReview: string; stopBefore: string };
+    file: string;
+    humanApprovalReady: boolean;
+    indexingSafe: boolean;
+    internalLinkReady: boolean;
+    lane: string;
+    reviewPackReady: boolean;
+    schemaReady: boolean;
+    searchSnippetReady: boolean;
+    sourceReady: boolean;
+    title: string;
+    warningIssues: unknown[];
+  }>;
+  summary: {
+    blockingItems: number;
+    humanApprovalReadyItems: number;
+    indexingSafeItems: number;
+    internalLinkReadyItems: number;
+    items: number;
+    reviewPackItems: number;
+    reviewPackReadyItems: number;
+    schemaReadyItems: number;
+    searchSnippetReadyItems: number;
+    sourceReadyItems: number;
+    warningItems: number;
+  };
+  warningItems: unknown[];
+};
+
 type AutopilotBroadFreshnessTriage = {
   items: Array<{
     cluster: string;
@@ -1334,6 +1367,7 @@ const reports = {
   autopilotQueuedPlaybookBrief: readJson<AutopilotQueuedPlaybookBrief>("content/automation/autopilot-queued-playbook-brief.json"),
   autopilotBroadAiDemandBrief: readJson<AutopilotBroadAiDemandBrief>("content/automation/autopilot-broad-ai-demand-brief.json"),
   searchDemandReviewPack: readJson<SearchDemandReviewPack>("content/automation/search-demand-review-pack.json"),
+  searchDemandPublicationBridge: readJson<SearchDemandPublicationBridge>("content/automation/search-demand-publication-bridge.json"),
   autopilotBroadFreshnessTriage: readJson<AutopilotBroadFreshnessTriage>("content/automation/autopilot-broad-freshness-triage.json"),
   autopilotBroadPublishWaves: readJson<AutopilotBroadPublishWaves>("content/automation/autopilot-broad-publish-waves.json"),
   autopilotBroadWaveOptimization: readJson<AutopilotBroadWaveOptimization>("content/automation/autopilot-broad-wave-optimization.json"),
@@ -1572,6 +1606,22 @@ const payload = {
     unsafeItems: reports.searchDemandReviewPack.data?.summary.unsafeItems ?? null,
     unsafeItemList: reports.searchDemandReviewPack.data?.unsafeItems.slice(0, 8) ?? [],
     zeroPublicLaneItems: reports.searchDemandReviewPack.data?.summary.zeroPublicLaneItems ?? null,
+  },
+  searchDemandPublicationBridge: {
+    blockingItems: reports.searchDemandPublicationBridge.data?.summary.blockingItems ?? null,
+    blockingItemList: reports.searchDemandPublicationBridge.data?.blockingItems.slice(0, 8) ?? [],
+    humanApprovalReadyItems: reports.searchDemandPublicationBridge.data?.summary.humanApprovalReadyItems ?? null,
+    indexingSafeItems: reports.searchDemandPublicationBridge.data?.summary.indexingSafeItems ?? null,
+    internalLinkReadyItems: reports.searchDemandPublicationBridge.data?.summary.internalLinkReadyItems ?? null,
+    items: reports.searchDemandPublicationBridge.data?.summary.items ?? null,
+    itemsList: reports.searchDemandPublicationBridge.data?.items.slice(0, 16) ?? [],
+    reviewPackItems: reports.searchDemandPublicationBridge.data?.summary.reviewPackItems ?? null,
+    reviewPackReadyItems: reports.searchDemandPublicationBridge.data?.summary.reviewPackReadyItems ?? null,
+    schemaReadyItems: reports.searchDemandPublicationBridge.data?.summary.schemaReadyItems ?? null,
+    searchSnippetReadyItems: reports.searchDemandPublicationBridge.data?.summary.searchSnippetReadyItems ?? null,
+    sourceReadyItems: reports.searchDemandPublicationBridge.data?.summary.sourceReadyItems ?? null,
+    warningItems: reports.searchDemandPublicationBridge.data?.summary.warningItems ?? null,
+    warningItemList: reports.searchDemandPublicationBridge.data?.warningItems.slice(0, 8) ?? [],
   },
   autopilotBroadAiDemandBrief: {
     clusters: reports.autopilotBroadAiDemandBrief.data?.summary.clusters ?? null,
@@ -2072,6 +2122,9 @@ function buildNextActions() {
   if (!reports.searchDemandReviewPack.data || reports.searchDemandReviewPack.data.summary.unsafeItems > 0) {
     return ["Open docs/search-demand-review-pack.md and resolve unsafe search-demand review items before any mark:review command."];
   }
+  if (!reports.searchDemandPublicationBridge.data || reports.searchDemandPublicationBridge.data.summary.blockingItems > 0) {
+    return ["Open docs/search-demand-publication-bridge.md and resolve search-demand publication blockers before any mark:review command."];
+  }
   if (!reports.autopilotBroadAiDemandBrief.data || reports.autopilotBroadAiDemandBrief.data.summary.unsafeClusters > 0) {
     return ["Open docs/autopilot-broad-ai-demand-brief.md and resolve unsafe broad AI demand clusters before expanding review work."];
   }
@@ -2559,6 +2612,31 @@ function toMarkdown(data: typeof payload) {
     ...data.searchDemandReviewPack.itemsList.map(
       (item) =>
         `| ${item.priorityScore} | ${item.readyForHumanReview} | ${item.safeDraft} | ${item.lane} | ${item.publicMatches} | ${item.reviewQueueMatched} | ${item.officialSourceTargets.length} | ${item.searchQueries.length} | ${Boolean(item.publicInternalLinkSuggestion)} | ${item.warningIssues.length} | ${item.commandBoundary.markReviewAfterHumanApproval.includes("--confirm-human")} | ${item.commandBoundary.publishConfirm} | ${item.title} | ${item.file} |`,
+    ),
+    "",
+    "## Search Demand Publication Bridge",
+    "",
+    `- Items: ${data.searchDemandPublicationBridge.items}`,
+    `- Review pack items: ${data.searchDemandPublicationBridge.reviewPackItems}`,
+    `- Human approval ready items: ${data.searchDemandPublicationBridge.humanApprovalReadyItems}`,
+    `- Indexing-safe items: ${data.searchDemandPublicationBridge.indexingSafeItems}`,
+    `- Search snippet ready items: ${data.searchDemandPublicationBridge.searchSnippetReadyItems}`,
+    `- Schema ready items: ${data.searchDemandPublicationBridge.schemaReadyItems}`,
+    `- Source ready items: ${data.searchDemandPublicationBridge.sourceReadyItems}`,
+    `- Review-pack ready items: ${data.searchDemandPublicationBridge.reviewPackReadyItems}`,
+    `- Internal-link ready items: ${data.searchDemandPublicationBridge.internalLinkReadyItems}`,
+    `- Blocking items: ${data.searchDemandPublicationBridge.blockingItems}`,
+    `- Warning items: ${data.searchDemandPublicationBridge.warningItems}`,
+    "",
+    "Blocking search-demand bridge items:",
+    "",
+    ...(data.searchDemandPublicationBridge.blockingItemList.length ? data.searchDemandPublicationBridge.blockingItemList.map((item) => `- ${JSON.stringify(item)}`) : ["- none"]),
+    "",
+    "| Ready | Snippet | Schema | Source | Link | Draft safe | Review pack | Warnings | Publish confirm | Lane | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.searchDemandPublicationBridge.itemsList.map(
+      (item) =>
+        `| ${item.humanApprovalReady} | ${item.searchSnippetReady} | ${item.schemaReady} | ${item.sourceReady} | ${item.internalLinkReady} | ${item.indexingSafe} | ${item.reviewPackReady} | ${item.warningIssues.length} | ${item.commandBoundary.publishConfirm} | ${item.lane} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Autopilot Broad AI Demand Brief",
