@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-07T21:29:32.689Z
+Generated at: 2026-06-07T21:36:49.656Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 181
-- Passed: 181
+- Checks: 183
+- Passed: 183
 - Failed: 0
 
 ## Checks
@@ -30,6 +30,8 @@ Overall: PASS
 | project automation workflow excludes review and publish commands | PASS | forbiddenWorkflowCommands=0, checks=10/10 |
 | autopilot executive brief summarizes immediate execution priorities | PASS | public=15, immediate=3/3, boards=5 |
 | autopilot executive brief stays human-gated and publish-safe | PASS | unsafe=0, publishConfirm=0, publishableNow=0, routeWarnings=2 |
+| publication bottleneck report explains manual gate | PASS | public=15, publishableNow=0, immediateReady=3 |
+| publication bottleneck report stays publish-safe | PASS | unsafe=0, publishConfirm=0, preflightFailed=0, traffic=false |
 | mojibake remediation brief is read-only and article-safe | PASS | filesScanned=669, affected=77, metadataFields=9 |
 | mojibake remediation brief stays human-gated and publish-safe | PASS | unsafe=0, publishConfirm=0, traffic=false |
 | no non-published article is indexable | PASS |  |
@@ -37,7 +39,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=195, unsafeClaims=0, watchMentions=3511 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=197, unsafeClaims=0, watchMentions=3533 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit mirrors mojibake warnings without blocking | PASS | warnings=77, mojibake=77, publicMojibake=9, remediationAffected=77/9 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |

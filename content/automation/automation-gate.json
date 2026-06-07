@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T21:29:32.689Z",
+  "generatedAt": "2026-06-07T21:36:49.656Z",
   "ok": true,
   "summary": {
-    "checks": 181,
+    "checks": 183,
     "failed": 0,
-    "passed": 181
+    "passed": 183
   },
   "failed": [],
   "checks": [
@@ -88,6 +88,16 @@
       "detail": "unsafe=0, publishConfirm=0, publishableNow=0, routeWarnings=2"
     },
     {
+      "name": "publication bottleneck report explains manual gate",
+      "ok": true,
+      "detail": "public=15, publishableNow=0, immediateReady=3"
+    },
+    {
+      "name": "publication bottleneck report stays publish-safe",
+      "ok": true,
+      "detail": "unsafe=0, publishConfirm=0, preflightFailed=0, traffic=false"
+    },
+    {
       "name": "mojibake remediation brief is read-only and article-safe",
       "ok": true,
       "detail": "filesScanned=669, affected=77, metadataFields=9"
@@ -125,7 +135,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=195, unsafeClaims=0, watchMentions=3511"
+      "detail": "filesScanned=197, unsafeClaims=0, watchMentions=3533"
     },
     {
       "name": "content integrity audit is read-only and clean",

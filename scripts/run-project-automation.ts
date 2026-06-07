@@ -104,6 +104,7 @@ const tasks: Task[] = [
   { title: "Generate next batch approval route", args: ["run", "automation:next-batch-approval-route"] },
   { title: "Generate next batch route remediation pack", args: ["run", "automation:next-batch-route-remediation"] },
   { title: "Generate autopilot executive brief", args: ["run", "automation:autopilot-executive-brief"] },
+  { title: "Generate publication bottleneck report", args: ["run", "automation:publication-bottleneck"] },
   { title: "Generate mojibake remediation brief", args: ["run", "automation:mojibake-remediation"] },
   { title: "Run searchability check", args: ["run", "--silent", "searchability:check"], outputFile: "content/automation/searchability-check.json" },
   { title: "Run automation gate", args: ["run", "automation:gate"] },

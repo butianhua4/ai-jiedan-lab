@@ -76,6 +76,20 @@ async function main() {
     topApprovalActions?: Array<{ humanGate?: string; priority?: number }>;
     unsafeReasons?: unknown[];
   }>("content/automation/autopilot-executive-brief.json");
+  const publicationBottleneck = readJson<{
+    bottlenecks?: string[];
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; publishConfirmCommandsIncluded: number; trafficClaim: string };
+    nextHumanApproval?: unknown[];
+    summary: {
+      currentPublishableNow: number;
+      immediateApprovalReadyItems: number;
+      publicArticles: number;
+      publishConfirmCommandsIncluded: number;
+      reviewPreflightFailed: number;
+      trafficDataAvailable: boolean;
+      unsafeItems: number;
+    };
+  }>("content/automation/publication-bottleneck-report.json");
   const mojibakeRemediation = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
     items?: Array<{
@@ -2162,6 +2176,30 @@ async function main() {
         Boolean(executiveBrief.topApprovalActions?.every((item) => item.humanGate === "explicit human approval required" && typeof item.priority === "number")) &&
         Boolean(executiveBrief.boardActions?.every((item) => item.publishConfirm === "not-included")),
       detail: `unsafe=${executiveBrief.summary.unsafeItems}, publishConfirm=${executiveBrief.summary.publishConfirmCommandsIncluded}, publishableNow=${executiveBrief.summary.currentPublishableNow}, routeWarnings=${executiveBrief.summary.routeWarningItems}`,
+    },
+    {
+      name: "publication bottleneck report explains manual gate",
+      ok:
+        publicationBottleneck.guardrails.autoEditArticles === false &&
+        publicationBottleneck.guardrails.autoMarkReview === false &&
+        publicationBottleneck.guardrails.autoPublish === false &&
+        publicationBottleneck.guardrails.publishConfirmCommandsIncluded === 0 &&
+        publicationBottleneck.guardrails.trafficClaim === "not-included" &&
+        publicationBottleneck.summary.publicArticles === projectStatus.articles.publicPublished &&
+        publicationBottleneck.summary.currentPublishableNow === projectStatus.articles.publishableNow.length &&
+        publicationBottleneck.summary.immediateApprovalReadyItems === executiveBrief.summary.immediateApprovalReadyItems &&
+        Boolean(publicationBottleneck.bottlenecks?.some((item) => item.includes("explicit human approval"))),
+      detail: `public=${publicationBottleneck.summary.publicArticles}, publishableNow=${publicationBottleneck.summary.currentPublishableNow}, immediateReady=${publicationBottleneck.summary.immediateApprovalReadyItems}`,
+    },
+    {
+      name: "publication bottleneck report stays publish-safe",
+      ok:
+        publicationBottleneck.summary.unsafeItems === 0 &&
+        publicationBottleneck.summary.publishConfirmCommandsIncluded === 0 &&
+        publicationBottleneck.summary.reviewPreflightFailed === reviewPreflight.summary.failed &&
+        publicationBottleneck.summary.trafficDataAvailable === false &&
+        Boolean(publicationBottleneck.nextHumanApproval?.length && publicationBottleneck.nextHumanApproval.length >= 3),
+      detail: `unsafe=${publicationBottleneck.summary.unsafeItems}, publishConfirm=${publicationBottleneck.summary.publishConfirmCommandsIncluded}, preflightFailed=${publicationBottleneck.summary.reviewPreflightFailed}, traffic=${publicationBottleneck.summary.trafficDataAvailable}`,
     },
     {
       name: "mojibake remediation brief is read-only and article-safe",
