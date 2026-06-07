@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T14:54:32.805Z",
+  "generatedAt": "2026-06-07T15:08:38.929Z",
   "ok": true,
   "summary": {
-    "checks": 135,
+    "checks": 137,
     "failed": 0,
-    "passed": 135
+    "passed": 137
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=153, unsafeClaims=0, watchMentions=1876"
+      "detail": "filesScanned=155, unsafeClaims=0, watchMentions=1878"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -121,6 +121,16 @@
       "name": "source target health audit has reachable URLs for every covered review file",
       "ok": true,
       "detail": "checked=40, ok=39, failed=1, missingTargets=0, filesWithoutReachable=0"
+    },
+    {
+      "name": "source target remediation pack is read-only and mirrors source health counts",
+      "ok": true,
+      "detail": "items=19, failed=1/1, redirected=18/18"
+    },
+    {
+      "name": "source target remediation pack keeps every source fix human-gated",
+      "ok": true,
+      "detail": "ready=19, unsafe=0, gated=19"
     },
     {
       "name": "review action board is read-only and covers active review queues",

@@ -1,6 +1,6 @@
 # Source Target Health Audit
 
-Generated at: 2026-06-07T14:54:13.498Z
+Generated at: 2026-06-07T15:06:59.726Z
 
 This report is read-only. It verifies official source URLs used by review and public-gap candidates before any human approval step.
 
@@ -44,7 +44,7 @@ This report is read-only. It verifies official source URLs used by review and pu
 | OK | Status | URL | Final URL | References | Error |
 | --- | --- | --- | --- | --- | --- |
 | true | 200 | https://ai-sdk.dev/docs | https://ai-sdk.dev/docs/introduction | 30 |  |
-| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs | 4 |  |
+| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=tr | 4 |  |
 | true | 200 | https://docs.anthropic.com | https://platform.claude.com/docs/en/home | 5 |  |
 | true | 200 | https://docs.anthropic.com/ | https://platform.claude.com/docs/en/home | 2 |  |
 | true | 200 | https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview | https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview | 5 |  |
@@ -97,10 +97,10 @@ This report is read-only. It verifies official source URLs used by review and pu
 | true | 200 | https://adoption.microsoft.com/en-us/copilot/prompt-gallery/ | https://adoption.microsoft.com/en-us/copilot/prompt-gallery/ | 2 |  |
 | false |  | https://ai-prompts-pro.com/blog/ai-prompt-templates-business |  | 2 | TypeError |
 | true | 200 | https://ai-sdk.dev/docs | https://ai-sdk.dev/docs/introduction | 30 |  |
-| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs | 4 |  |
+| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=tr | 4 |  |
 | true | 200 | https://arxiv.org/abs/2603.10700 | https://arxiv.org/abs/2603.10700 | 2 |  |
-| true | 200 | https://arxiv.org/abs/2604.20598 | https://arxiv.org/abs/2604.20598 | 2 |  |
-| true | 200 | https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag | https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag | 2 |  |
+| true | 200 | https://arxiv.org/abs/2604.20598 | https://arxiv.org/abs/2604.20598 | 2 | AbortError |
+| true | 200 | https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag | https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag | 2 | AbortError |
 | true | 200 | https://docs.anthropic.com | https://platform.claude.com/docs/en/home | 5 |  |
 | true | 200 | https://docs.anthropic.com/ | https://platform.claude.com/docs/en/home | 2 |  |
 | true | 200 | https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview | https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview | 5 |  |
@@ -110,7 +110,7 @@ This report is read-only. It verifies official source URLs used by review and pu
 | true | 200 | https://docs.llamaindex.ai | https://developers.llamaindex.ai/python/framework/ | 7 |  |
 | true | 200 | https://docs.n8n.io | https://docs.n8n.io/ | 6 |  |
 | true | 200 | https://docs.n8n.io/ | https://docs.n8n.io/ | 2 |  |
-| true | 200 | https://docs.ollama.com | https://docs.ollama.com/ | 4 |  |
+| true | 200 | https://docs.ollama.com | https://docs.ollama.com/ | 4 | AbortError |
 | true | 200 | https://docs.ragas.io/ | https://docs.ragas.io/en/stable/ | 2 |  |
 | true | 200 | https://docs.runpod.io/serverless/vllm/get-started | https://docs.runpod.io/serverless/vllm/get-started | 2 |  |
 | true | 200 | https://docs.vllm.ai | https://docs.vllm.ai/en/latest/ | 7 |  |

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T14:54:13.498Z",
+  "generatedAt": "2026-06-07T15:06:59.726Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -268,7 +268,7 @@
       "url": "https://ai-sdk.dev/docs"
     },
     {
-      "finalUrl": "https://ai.google.dev/gemini-api/docs",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=tr",
       "ok": true,
       "references": [
         {
@@ -2394,7 +2394,7 @@
       "url": "https://ai-sdk.dev/docs"
     },
     {
-      "finalUrl": "https://ai.google.dev/gemini-api/docs",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=tr",
       "ok": true,
       "references": [
         {
@@ -2452,6 +2452,7 @@
       "url": "https://arxiv.org/abs/2603.10700"
     },
     {
+      "error": "AbortError",
       "finalUrl": "https://arxiv.org/abs/2604.20598",
       "ok": true,
       "references": [
@@ -2474,6 +2475,7 @@
       "url": "https://arxiv.org/abs/2604.20598"
     },
     {
+      "error": "AbortError",
       "finalUrl": "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag",
       "ok": true,
       "references": [
@@ -2835,6 +2837,7 @@
       "url": "https://docs.n8n.io/"
     },
     {
+      "error": "AbortError",
       "finalUrl": "https://docs.ollama.com/",
       "ok": true,
       "references": [

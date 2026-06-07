@@ -444,6 +444,41 @@ type SourceHealth = {
   };
 };
 
+type SourceTargetRemediationPack = {
+  items: Array<{
+    affectedFiles: string[];
+    error?: string;
+    finalUrl?: string;
+    kind: string;
+    manualActions: string[];
+    manualFixReady: boolean;
+    referenceCount: number;
+    replacementPlan: string[];
+    stopBefore: string;
+    unsafeReasons: string[];
+    url: string;
+  }>;
+  summary: {
+    failedUrlItems: number;
+    failedUrls: number;
+    humanGatedItems: number;
+    items: number;
+    itemsWithAffectedFiles: number;
+    itemsWithHumanChecklist: number;
+    itemsWithManualActions: number;
+    itemsWithReferences: number;
+    itemsWithReplacementPlan: number;
+    manualFixReadyItems: number;
+    redirectedUrlItems: number;
+    redirectedUrls: number;
+    sourceHealthCheckedUrls: number;
+    sourceHealthFailedUrls: number;
+    sourceHealthRedirectedUrls: number;
+    unsafeItems: number;
+  };
+  unsafeItems: unknown[];
+};
+
 type ReviewActionBoard = {
   nextTasks: Array<{
     file: string;
@@ -1471,6 +1506,7 @@ const reports = {
   contentIntegrity: readJson<ContentIntegrity>("content/automation/content-integrity-audit.json"),
   internalLinks: readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json"),
   sourceHealth: readJson<SourceHealth>("content/automation/source-target-health-audit.json"),
+  sourceTargetRemediation: readJson<SourceTargetRemediationPack>("content/automation/source-target-remediation-pack.json"),
   reviewActionBoard: readJson<ReviewActionBoard>("content/automation/review-action-board.json"),
   reviewPortfolioBoard: readJson<ReviewPortfolioBoard>("content/automation/review-portfolio-board.json"),
   autopilotReviewQueue: readJson<AutopilotReviewQueue>("content/automation/autopilot-review-queue.json"),
@@ -1554,6 +1590,19 @@ const payload = {
     redirectedUrls: reports.sourceHealth.data?.summary.redirectedUrls ?? null,
     sourceReferences: reports.sourceHealth.data?.summary.sourceReferences ?? null,
     uniqueUrls: reports.sourceHealth.data?.summary.uniqueUrls ?? null,
+  },
+  sourceTargetRemediation: {
+    failedUrlItems: reports.sourceTargetRemediation.data?.summary.failedUrlItems ?? null,
+    failedUrls: reports.sourceTargetRemediation.data?.summary.failedUrls ?? null,
+    humanGatedItems: reports.sourceTargetRemediation.data?.summary.humanGatedItems ?? null,
+    items: reports.sourceTargetRemediation.data?.summary.items ?? null,
+    itemsList: reports.sourceTargetRemediation.data?.items.slice(0, 8) ?? [],
+    manualFixReadyItems: reports.sourceTargetRemediation.data?.summary.manualFixReadyItems ?? null,
+    redirectedUrlItems: reports.sourceTargetRemediation.data?.summary.redirectedUrlItems ?? null,
+    redirectedUrls: reports.sourceTargetRemediation.data?.summary.redirectedUrls ?? null,
+    sourceHealthCheckedUrls: reports.sourceTargetRemediation.data?.summary.sourceHealthCheckedUrls ?? null,
+    unsafeItems: reports.sourceTargetRemediation.data?.summary.unsafeItems ?? null,
+    unsafeItemList: reports.sourceTargetRemediation.data?.unsafeItems.slice(0, 8) ?? [],
   },
   reviewActionBoard: {
     nextTasks: reports.reviewActionBoard.data?.nextTasks.slice(0, 6) ?? [],
@@ -2264,6 +2313,9 @@ function buildNextActions() {
   if (!reports.sourceHealth.data || reports.sourceHealth.data.summary.filesWithoutReachableSource > 0 || reports.sourceHealth.data.summary.missingUrlTargets > 0) {
     return ["Open docs/source-target-health-audit.md and replace missing or unreachable official source targets before manual review."];
   }
+  if (!reports.sourceTargetRemediation.data || reports.sourceTargetRemediation.data.summary.unsafeItems > 0) {
+    return ["Open docs/source-target-remediation-pack.md and resolve unsafe source URL remediation items before manual review."];
+  }
   if (!reports.reviewActionBoard.data || reports.reviewActionBoard.data.summary.unsafeTasks > 0) {
     return ["Open docs/review-action-board.md and resolve unsafe review tasks before any mark:review command."];
   }
@@ -2400,6 +2452,7 @@ function buildNextActions() {
     "Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.",
     "Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.",
     "Use docs/source-target-health-audit.md to confirm official source links are reachable before approving fast-changing AI guidance.",
+    "Use docs/source-target-remediation-pack.md to replace failed source URLs and confirm canonical redirected source URLs during human review.",
     "Use docs/review-action-board.md as the prioritized task board for Wave 1 and public-gap manual review.",
     "Use docs/review-portfolio-board.md to deduplicate Wave, public-gap, deployment, and prompt review candidates before assigning manual review.",
     "Use docs/autopilot-review-queue.md as the ordered next-10 manual review assignment queue.",
@@ -2505,6 +2558,29 @@ function toMarkdown(data: typeof payload) {
     ...(data.sourceHealth.redirectedChecks.length
       ? data.sourceHealth.redirectedChecks.map((item) => `- ${item.url} -> ${item.finalUrl || ""}`)
       : ["- none"]),
+    "",
+    "## Source Target Remediation",
+    "",
+    `- Items: ${data.sourceTargetRemediation.items}`,
+    `- Failed URL items: ${data.sourceTargetRemediation.failedUrlItems}`,
+    `- Redirected URL items: ${data.sourceTargetRemediation.redirectedUrlItems}`,
+    `- Manual-fix-ready items: ${data.sourceTargetRemediation.manualFixReadyItems}`,
+    `- Human-gated items: ${data.sourceTargetRemediation.humanGatedItems}`,
+    `- Unsafe items: ${data.sourceTargetRemediation.unsafeItems}`,
+    `- Source health checked URLs: ${data.sourceTargetRemediation.sourceHealthCheckedUrls}`,
+    "",
+    "Unsafe source remediation items:",
+    "",
+    ...(data.sourceTargetRemediation.unsafeItemList.length
+      ? data.sourceTargetRemediation.unsafeItemList.map((item) => `- ${JSON.stringify(item)}`)
+      : ["- none"]),
+    "",
+    "| Ready | Kind | References | Files | URL | Final URL / Issue |",
+    "| --- | --- | ---: | --- | --- | --- |",
+    ...data.sourceTargetRemediation.itemsList.map(
+      (item) =>
+        `| ${item.manualFixReady} | ${item.kind} | ${item.referenceCount} | ${item.affectedFiles.join("<br>")} | ${item.url} | ${item.finalUrl || item.error || "review manually"} |`,
+    ),
     "",
     "## Review Action Board",
     "",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T14:54:33.374Z",
+  "generatedAt": "2026-06-07T15:07:19.562Z",
   "failures": [],
   "ok": true,
   "tasks": [
@@ -40,6 +40,7 @@
     "Run public coverage gap preflight",
     "Generate public coverage gap decision pack",
     "Run source target health audit",
+    "Generate source target remediation pack",
     "Generate review action board",
     "Generate review portfolio board",
     "Generate review optimization brief",

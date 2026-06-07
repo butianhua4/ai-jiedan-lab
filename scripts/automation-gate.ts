@@ -534,10 +534,50 @@ async function main() {
       nextSourcePackFiles: number;
       okUrls: number;
       publicGapDecisionFiles: number;
+      redirectedUrls: number;
       sourceReferences: number;
       uniqueUrls: number;
     };
   }>("content/automation/source-target-health-audit.json");
+  const sourceTargetRemediationPack = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; stopBefore?: string; trafficClaim: string };
+    items?: Array<{
+      affectedFiles?: unknown[];
+      humanChecklist?: unknown[];
+      manualActions?: unknown[];
+      manualFixReady?: boolean;
+      referenceCount?: number;
+      replacementPlan?: unknown[];
+      stopBefore?: string;
+      unsafeReasons?: unknown[];
+    }>;
+    sourceEvidence?: {
+      sourceHealthSummary?: {
+        checkedUrls: number;
+        failedUrls: number;
+        redirectedUrls: number;
+      };
+    };
+    summary: {
+      failedUrlItems: number;
+      failedUrls: number;
+      humanGatedItems: number;
+      items: number;
+      itemsWithAffectedFiles: number;
+      itemsWithHumanChecklist: number;
+      itemsWithManualActions: number;
+      itemsWithReferences: number;
+      itemsWithReplacementPlan: number;
+      manualFixReadyItems: number;
+      redirectedUrlItems: number;
+      redirectedUrls: number;
+      sourceHealthCheckedUrls: number;
+      sourceHealthFailedUrls: number;
+      sourceHealthRedirectedUrls: number;
+      unsafeItems: number;
+    };
+    unsafeItems?: unknown[];
+  }>("content/automation/source-target-remediation-pack.json");
   const reviewActionBoard = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     summary: {
@@ -1463,6 +1503,52 @@ async function main() {
         sourceHealth.summary.okUrls > 0 &&
         sourceHealth.summary.sourceReferences >= sourceHealth.summary.filesCovered,
       detail: `checked=${sourceHealth.summary.checkedUrls}, ok=${sourceHealth.summary.okUrls}, failed=${sourceHealth.summary.failedUrls}, missingTargets=${sourceHealth.summary.missingUrlTargets}, filesWithoutReachable=${sourceHealth.summary.filesWithoutReachableSource}`,
+    },
+    {
+      name: "source target remediation pack is read-only and mirrors source health counts",
+      ok:
+        sourceTargetRemediationPack.guardrails.autoEditArticles === false &&
+        sourceTargetRemediationPack.guardrails.autoMarkReview === false &&
+        sourceTargetRemediationPack.guardrails.autoPublish === false &&
+        sourceTargetRemediationPack.guardrails.trafficClaim === "not-included" &&
+        sourceTargetRemediationPack.summary.failedUrls === sourceHealth.summary.failedUrls &&
+        sourceTargetRemediationPack.summary.redirectedUrls === sourceHealth.summary.redirectedUrls &&
+        sourceTargetRemediationPack.summary.failedUrlItems === sourceHealth.summary.failedUrls &&
+        sourceTargetRemediationPack.summary.redirectedUrlItems === sourceHealth.summary.redirectedUrls &&
+        sourceTargetRemediationPack.summary.items === sourceHealth.summary.failedUrls + sourceHealth.summary.redirectedUrls &&
+        sourceTargetRemediationPack.summary.sourceHealthCheckedUrls === sourceHealth.summary.checkedUrls &&
+        sourceTargetRemediationPack.summary.sourceHealthFailedUrls === sourceHealth.summary.failedUrls &&
+        sourceTargetRemediationPack.summary.sourceHealthRedirectedUrls === sourceHealth.summary.redirectedUrls &&
+        sourceTargetRemediationPack.sourceEvidence?.sourceHealthSummary?.failedUrls === sourceHealth.summary.failedUrls &&
+        sourceTargetRemediationPack.sourceEvidence?.sourceHealthSummary?.redirectedUrls === sourceHealth.summary.redirectedUrls,
+      detail: `items=${sourceTargetRemediationPack.summary.items}, failed=${sourceTargetRemediationPack.summary.failedUrlItems}/${sourceHealth.summary.failedUrls}, redirected=${sourceTargetRemediationPack.summary.redirectedUrlItems}/${sourceHealth.summary.redirectedUrls}`,
+    },
+    {
+      name: "source target remediation pack keeps every source fix human-gated",
+      ok:
+        sourceTargetRemediationPack.summary.unsafeItems === 0 &&
+        sourceTargetRemediationPack.summary.manualFixReadyItems === sourceTargetRemediationPack.summary.items &&
+        sourceTargetRemediationPack.summary.itemsWithReferences === sourceTargetRemediationPack.summary.items &&
+        sourceTargetRemediationPack.summary.itemsWithAffectedFiles === sourceTargetRemediationPack.summary.items &&
+        sourceTargetRemediationPack.summary.itemsWithManualActions === sourceTargetRemediationPack.summary.items &&
+        sourceTargetRemediationPack.summary.itemsWithReplacementPlan === sourceTargetRemediationPack.summary.items &&
+        sourceTargetRemediationPack.summary.itemsWithHumanChecklist === sourceTargetRemediationPack.summary.items &&
+        sourceTargetRemediationPack.summary.humanGatedItems === sourceTargetRemediationPack.summary.items &&
+        (sourceTargetRemediationPack.unsafeItems?.length || 0) === 0 &&
+        Boolean(
+          sourceTargetRemediationPack.items?.every(
+            (item) =>
+              item.manualFixReady === true &&
+              (item.referenceCount || 0) > 0 &&
+              (item.affectedFiles?.length || 0) > 0 &&
+              (item.manualActions?.length || 0) >= 3 &&
+              (item.replacementPlan?.length || 0) > 0 &&
+              (item.humanChecklist?.length || 0) >= 5 &&
+              (item.unsafeReasons?.length || 0) === 0 &&
+              item.stopBefore?.toLowerCase().includes("human"),
+          ),
+        ),
+      detail: `ready=${sourceTargetRemediationPack.summary.manualFixReadyItems}, unsafe=${sourceTargetRemediationPack.summary.unsafeItems}, gated=${sourceTargetRemediationPack.summary.humanGatedItems}`,
     },
     {
       name: "review action board is read-only and covers active review queues",

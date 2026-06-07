@@ -1,12 +1,12 @@
 # Automation Digest
 
-Generated at: 2026-06-07T14:54:33.323Z
+Generated at: 2026-06-07T15:08:38.843Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
 ## Health
 
-- Run ok: false
+- Run ok: true
 - Gate ok: true
 - Preflight ok: true
 - SEO ok: true
@@ -54,13 +54,38 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=tr
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/ -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - https://docs.dify.ai -> https://docs.dify.ai/en/use-dify/getting-started/introduction
 - https://docs.dify.ai/ -> https://docs.dify.ai/en/use-dify/getting-started/introduction
 - https://docs.helicone.ai/ -> https://docs.helicone.ai/getting-started/quick-start
+
+## Source Target Remediation
+
+- Items: 19
+- Failed URL items: 1
+- Redirected URL items: 18
+- Manual-fix-ready items: 19
+- Human-gated items: 19
+- Unsafe items: 0
+- Source health checked URLs: 40
+
+Unsafe source remediation items:
+
+- none
+
+| Ready | Kind | References | Files | URL | Final URL / Issue |
+| --- | --- | ---: | --- | --- | --- |
+| true | failed-url | 2 | content/blog/industry-ai-prompts-template-library-2026.mdx | https://ai-prompts-pro.com/blog/ai-prompt-templates-business | TypeError |
+| true | redirected-url | 30 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/education-ai-prompts-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx | https://ai-sdk.dev/docs | https://ai-sdk.dev/docs/introduction |
+| true | redirected-url | 30 | content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/education-ai-prompts-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx<br>content/blog/customer-service-ai-prompts-guide.mdx<br>content/blog/ecommerce-ai-prompts-guide.mdx | https://platform.openai.com/docs | https://developers.openai.com/api/docs |
+| true | redirected-url | 30 | content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/education-ai-prompts-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/customer-service-ai-prompts-guide.mdx<br>content/blog/ecommerce-ai-prompts-guide.mdx | https://platform.openai.com/docs/guides/prompt-engineering | https://developers.openai.com/api/docs/guides/prompt-engineering |
+| true | redirected-url | 29 | content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx<br>content/blog/customer-service-ai-prompts-guide.mdx<br>content/blog/ecommerce-ai-prompts-guide.mdx | https://platform.openai.com/docs/guides/retrieval | https://developers.openai.com/api/docs/guides/retrieval |
+| true | redirected-url | 18 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx | https://platform.openai.com/docs/guides/agents | https://developers.openai.com/api/docs/guides/agents |
+| true | redirected-url | 16 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/open-webui-functions-pipelines-deployment-guide.mdx | https://python.langchain.com/docs | https://docs.langchain.com/oss/python/langchain/overview |
+| true | redirected-url | 7 | content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx | https://docs.dify.ai | https://docs.dify.ai/en/use-dify/getting-started/introduction |
 
 ## Review Action Board
 
@@ -947,8 +972,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 153
-- Traffic claim watch mentions: 1876
+- Traffic claim files scanned: 155
+- Traffic claim watch mentions: 1878
 
 ## Public Surface Inventory
 
@@ -1388,6 +1413,7 @@ Public categories:
 - Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.
 - Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.
 - Use docs/source-target-health-audit.md to confirm official source links are reachable before approving fast-changing AI guidance.
+- Use docs/source-target-remediation-pack.md to replace failed source URLs and confirm canonical redirected source URLs during human review.
 - Use docs/review-action-board.md as the prioritized task board for Wave 1 and public-gap manual review.
 - Use docs/review-portfolio-board.md to deduplicate Wave, public-gap, deployment, and prompt review candidates before assigning manual review.
 - Use docs/autopilot-review-queue.md as the ordered next-10 manual review assignment queue.

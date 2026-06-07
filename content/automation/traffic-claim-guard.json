@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-07T14:53:36.072Z",
+  "generatedAt": "2026-06-07T15:06:19.654Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 153,
+    "filesScanned": 155,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 1876
+    "watchMentions": 1878
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -128,91 +128,91 @@
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 405,
+      "line": 430,
       "reason": "traffic-related mention",
       "text": "| 404 | 0 | 30 | 8 | 4 | 10 | 4 | nocode-ai-automation-deployment | This lane connects search traffic to services people can buy: automation setup, deployment, acceptance, and maintenance. |"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 408,
+      "line": 433,
       "reason": "traffic-related mention",
       "text": "| 306 | 4 | 222 | 8 | 3 | 10 | 4 | ai-service-pricing-delivery | This lane turns search demand into services without pretending the site already has traffic or revenue proof. |"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 507,
+      "line": 532,
       "reason": "traffic-related mention",
       "text": "| 313 | 0 | 32 | 6 | 3 | 5 | RAG、知识库、向量数据库和引用溯源 | RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。 |"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 509,
+      "line": 534,
       "reason": "traffic-related mention",
       "text": "| 307 | 0 | 36 | 6 | 3 | 5 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | 这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。 |"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 670,
+      "line": 695,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 940,
+      "line": 965,
       "reason": "traffic-related mention",
       "text": "## Traffic Evidence"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 942,
+      "line": 967,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 943,
+      "line": 968,
       "reason": "traffic-related mention",
       "text": "- Can claim traffic: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 945,
+      "line": 970,
       "reason": "traffic-related mention",
       "text": "- Measured traffic sources: none"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 946,
+      "line": 971,
       "reason": "traffic-related mention",
       "text": "- Search Console verification evidence: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 949,
+      "line": 974,
       "reason": "traffic-related mention",
       "text": "- Unsupported traffic claims: 0"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 950,
+      "line": 975,
       "reason": "traffic-related mention",
       "text": "- Traffic claim files scanned: 153"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 951,
+      "line": 976,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 1875"
+      "text": "- Traffic claim watch mentions: 1876"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 964,
+      "line": 989,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1039,
+      "line": 1064,
       "reason": "traffic-related mention",
       "text": "| Dify、n8n、MCP 和无代码 AI 自动化 | 258 | 0 | 5 | 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 |"
     },
@@ -232,7 +232,7 @@
       "file": "docs/automation-gate.md",
       "line": 33,
       "reason": "traffic-related mention",
-      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=153, unsafeClaims=0, watchMentions=1875 |"
+      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=153, unsafeClaims=0, watchMentions=1876 |"
     },
     {
       "file": "docs/autopilot-approval-packet.md",
