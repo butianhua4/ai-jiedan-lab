@@ -81,12 +81,28 @@ const tasks: Task[] = [
   { title: "Generate manual review workbench", args: ["run", "automation:workbench"] },
   { title: "Run searchability check", args: ["run", "--silent", "searchability:check"], outputFile: "content/automation/searchability-check.json" },
   { title: "Run automation gate", args: ["run", "automation:gate"] },
-  { title: "Generate automation digest", args: ["run", "automation:digest"] },
 ];
 
 const failures: string[] = [];
+const digestTask: Task = { title: "Generate automation digest", args: ["run", "automation:digest"] };
 
 for (const task of tasks) {
+  runTask(task);
+}
+
+const summaryPath = path.join(process.cwd(), "content", "automation", "automation-run-summary.json");
+writeSummary();
+console.log(`\nAutomation summary written to content/automation/automation-run-summary.json`);
+
+runTask(digestTask);
+writeSummary();
+
+if (failures.length) {
+  console.error(JSON.stringify(toSummary(), null, 2));
+  process.exitCode = 1;
+}
+
+function runTask(task: Task) {
   console.log(`\n== ${task.title} ==`);
   const command = isWindows ? "cmd.exe" : "npm";
   const args = isWindows ? ["/d", "/s", "/c", "npm", ...task.args] : task.args;
@@ -109,26 +125,23 @@ for (const task of tasks) {
   }
 }
 
-const summary = {
-  generatedAt: new Date().toISOString(),
-  failures,
-  ok: failures.length === 0,
-  tasks: tasks.map((task) => task.title),
-};
-
-const summaryPath = path.join(process.cwd(), "content", "automation", "automation-run-summary.json");
-fs.mkdirSync(path.dirname(summaryPath), { recursive: true });
-fs.writeFileSync(summaryPath, `${JSON.stringify(summary, null, 2)}\n`, "utf8");
-console.log(`\nAutomation summary written to content/automation/automation-run-summary.json`);
-
-if (failures.length) {
-  console.error(JSON.stringify(summary, null, 2));
-  process.exitCode = 1;
-}
-
 function writeOutput(relativeFile: string, output: string) {
   const target = path.join(process.cwd(), relativeFile);
   fs.mkdirSync(path.dirname(target), { recursive: true });
   fs.writeFileSync(target, output.endsWith("\n") ? output : `${output}\n`, "utf8");
   console.log(`wrote ${relativeFile}`);
+}
+
+function writeSummary() {
+  fs.mkdirSync(path.dirname(summaryPath), { recursive: true });
+  fs.writeFileSync(summaryPath, `${JSON.stringify(toSummary(), null, 2)}\n`, "utf8");
+}
+
+function toSummary() {
+  return {
+    generatedAt: new Date().toISOString(),
+    failures,
+    ok: failures.length === 0,
+    tasks: [...tasks.map((task) => task.title), digestTask.title],
+  };
 }

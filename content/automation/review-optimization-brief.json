@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T16:14:58.472Z",
+  "generatedAt": "2026-06-07T16:39:01.566Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -275,7 +275,7 @@
         "url": "/blog/codex-code-review-delivery-checklist"
       },
       "kind": "public-gap-review",
-      "priority": 798,
+      "priority": 801,
       "proposedDescription": "面向新手整理大模型部署路径，讲清 API 调用、托管推理端点、私有化部署、vLLM/TGI/SGLang、成本、延迟、安全和验收。",
       "proposedOpeningAdditions": [
         "在开头 200 字内自然回答一次“大模型部署教程”这个搜索意图，先给结论再展开步骤。",
@@ -649,7 +649,7 @@
         "url": "/blog/codex-code-review-delivery-checklist"
       },
       "kind": "public-gap-review",
-      "priority": 798,
+      "priority": 801,
       "proposedDescription": "面向新手整理大模型部署路径，讲清 API 调用、托管推理端点、私有化部署、vLLM/TGI/SGLang、成本、延迟、安全和验收。",
       "proposedOpeningAdditions": [
         "在开头 200 字内自然回答一次“大模型部署教程”这个搜索意图，先给结论再展开步骤。",
@@ -789,7 +789,7 @@
         "url": "/blog/build-first-webpage-with-codex"
       },
       "kind": "public-gap-review",
-      "priority": 767,
+      "priority": 768,
       "proposedDescription": "面向准备落地 Open WebUI Functions Pipelines 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
       "proposedOpeningAdditions": [
         "在开头 200 字内自然回答一次“local LLM deployment”这个搜索意图，先给结论再展开步骤。",
@@ -1083,7 +1083,7 @@
         "url": "/blog/first-upwork-project-pricing-checklist"
       },
       "kind": "public-gap-review",
-      "priority": 712,
+      "priority": 714,
       "proposedDescription": "面向准备落地 Agent 工具权限控制 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
       "proposedOpeningAdditions": [
         "在开头 200 字内自然回答一次“LLM observability 教程”这个搜索意图，先给结论再展开步骤。",
@@ -1132,7 +1132,7 @@
         "url": "/blog/codex-code-review-delivery-checklist"
       },
       "kind": "public-gap-review",
-      "priority": 711,
+      "priority": 712,
       "proposedDescription": "面向准备落地 BentoML LLM 部署 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
       "proposedOpeningAdditions": [
         "在开头 200 字内自然回答一次“vLLM deployment tutorial”这个搜索意图，先给结论再展开步骤。",

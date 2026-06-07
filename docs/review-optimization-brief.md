@@ -1,6 +1,6 @@
 # Review Optimization Brief
 
-Generated at: 2026-06-07T16:14:58.472Z
+Generated at: 2026-06-07T16:39:01.566Z
 
 This report is read-only. It converts review warnings into copydesk suggestions for human review.
 
@@ -35,7 +35,7 @@ This report is read-only. It converts review warnings into copydesk suggestions 
 | 1002 | wave-3 | 7 | 4 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | 806 | public-gap-wave-1 | 9 | 4 | /blog/codex-vercel-deploy-preflight-checklist | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 801 | public-gap-wave-1 | 7 | 4 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| 798 | public-gap-wave-1 | 6 | 2 | /blog/codex-code-review-delivery-checklist | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| 801 | public-gap-wave-1 | 6 | 2 | /blog/codex-code-review-delivery-checklist | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | 781 | public-gap-wave-2 | 10 | 0 | /blog/build-first-webpage-with-codex | 客服 AI 模型选型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 769 | public-gap-wave-2 | 9 | 3 | /blog/build-first-webpage-with-codex | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 
@@ -48,17 +48,17 @@ This report is read-only. It converts review warnings into copydesk suggestions 
 | 1002 | wave-3 | 7 | 4 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | 806 | public-gap-wave-1 | 9 | 4 | /blog/codex-vercel-deploy-preflight-checklist | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 801 | public-gap-wave-1 | 7 | 4 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| 798 | public-gap-wave-1 | 6 | 2 | /blog/codex-code-review-delivery-checklist | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| 801 | public-gap-wave-1 | 6 | 2 | /blog/codex-code-review-delivery-checklist | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | 781 | public-gap-wave-2 | 10 | 0 | /blog/build-first-webpage-with-codex | 客服 AI 模型选型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 769 | public-gap-wave-2 | 9 | 3 | /blog/build-first-webpage-with-codex | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| 767 | public-gap-wave-2 | 12 | 0 | /blog/build-first-webpage-with-codex | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| 768 | public-gap-wave-2 | 12 | 0 | /blog/build-first-webpage-with-codex | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 | 759 | public-gap-wave-2 | 8 | n/a | /blog/build-first-webpage-with-codex | n8n AI Agent 知识库记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 | 748 | public-gap-wave-3 | 13 | 1 | /blog/first-upwork-project-pricing-checklist | AI 自动化项目报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | 747 | public-gap-wave-4 | 7 | n/a | /blog/codex-code-review-delivery-checklist | AI API Key 安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | 744 | public-gap-wave-3 | 12 | 0 | /blog/vercel-env-variable-missing-beginner-guide | Dify 工作流错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | 735 | public-gap-wave-3 | 8 | n/a | /blog/vercel-env-variable-missing-beginner-guide | MCP Server 部署安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
-| 712 | public-gap-wave-4 | 10 | n/a | /blog/first-upwork-project-pricing-checklist | Agent 工具权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
-| 711 | public-gap-wave-4 | 11 | n/a | /blog/codex-code-review-delivery-checklist | BentoML LLM 部署：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
+| 714 | public-gap-wave-4 | 10 | n/a | /blog/first-upwork-project-pricing-checklist | Agent 工具权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+| 712 | public-gap-wave-4 | 11 | n/a | /blog/codex-code-review-delivery-checklist | BentoML LLM 部署：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
 
 ## Per-Article Suggestions
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T16:15:14.921Z",
+  "generatedAt": "2026-06-07T16:39:17.982Z",
   "ok": true,
   "summary": {
     "checks": 140,
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=157, unsafeClaims=0, watchMentions=2030"
+      "detail": "filesScanned=157, unsafeClaims=0, watchMentions=2029"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -120,12 +120,12 @@
     {
       "name": "source target health audit has reachable URLs for every covered review file",
       "ok": true,
-      "detail": "checked=40, ok=37, failed=3, missingTargets=0, filesWithoutReachable=0"
+      "detail": "checked=40, ok=39, failed=1, missingTargets=0, filesWithoutReachable=0"
     },
     {
       "name": "source target remediation pack is read-only and mirrors source health counts",
       "ok": true,
-      "detail": "items=19, failed=3/3, redirected=16/16"
+      "detail": "items=19, failed=1/1, redirected=18/18"
     },
     {
       "name": "source target remediation pack keeps every source fix human-gated",

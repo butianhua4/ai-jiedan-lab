@@ -1,12 +1,12 @@
 # Automation Digest
 
-Generated at: 2026-06-07T16:15:15.458Z
+Generated at: 2026-06-07T16:39:18.497Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
 ## Health
 
-- Run ok: false
+- Run ok: true
 - Gate ok: true
 - Preflight ok: true
 - SEO ok: true
@@ -42,16 +42,14 @@ This digest is read-only. It summarizes automation reports and does not publish 
 - Source references: 261
 - Unique URLs: 40
 - Checked URLs: 40
-- OK URLs: 37
-- Failed URLs: 3
+- OK URLs: 39
+- Failed URLs: 1
 - Missing URL targets: 0
-- Redirected URLs: 16
+- Redirected URLs: 18
 
 Failed checks:
 
 - https://ai-prompts-pro.com/blog/ai-prompt-templates-business (TypeError)
-- https://docs.ragas.io/ (502)
-- https://docs.vllm.ai (AbortError)
 
 Redirect samples:
 
@@ -67,8 +65,8 @@ Redirect samples:
 ## Source Target Remediation
 
 - Items: 19
-- Failed URL items: 3
-- Redirected URL items: 16
+- Failed URL items: 1
+- Redirected URL items: 18
 - Manual-fix-ready items: 19
 - Human-gated items: 19
 - Unsafe items: 0
@@ -80,14 +78,14 @@ Unsafe source remediation items:
 
 | Ready | Kind | References | Files | URL | Final URL / Issue |
 | --- | --- | ---: | --- | --- | --- |
-| true | failed-url | 7 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/bentoml-llm-deployment-beginner-guide.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx | https://docs.vllm.ai | AbortError |
 | true | failed-url | 2 | content/blog/industry-ai-prompts-template-library-2026.mdx | https://ai-prompts-pro.com/blog/ai-prompt-templates-business | TypeError |
-| true | failed-url | 2 | content/blog/agent-tool-permission-safety-guide.mdx | https://docs.ragas.io/ | https://docs.ragas.io/ |
 | true | redirected-url | 30 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/education-ai-prompts-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx | https://ai-sdk.dev/docs | https://ai-sdk.dev/docs/introduction |
 | true | redirected-url | 30 | content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/education-ai-prompts-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx<br>content/blog/customer-service-ai-prompts-guide.mdx<br>content/blog/ecommerce-ai-prompts-guide.mdx | https://platform.openai.com/docs | https://developers.openai.com/api/docs |
 | true | redirected-url | 30 | content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/education-ai-prompts-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/customer-service-ai-prompts-guide.mdx<br>content/blog/ecommerce-ai-prompts-guide.mdx | https://platform.openai.com/docs/guides/prompt-engineering | https://developers.openai.com/api/docs/guides/prompt-engineering |
 | true | redirected-url | 29 | content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx<br>content/blog/customer-service-ai-prompts-guide.mdx<br>content/blog/ecommerce-ai-prompts-guide.mdx | https://platform.openai.com/docs/guides/retrieval | https://developers.openai.com/api/docs/guides/retrieval |
 | true | redirected-url | 18 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx | https://platform.openai.com/docs/guides/agents | https://developers.openai.com/api/docs/guides/agents |
+| true | redirected-url | 16 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/open-webui-functions-pipelines-deployment-guide.mdx | https://python.langchain.com/docs | https://docs.langchain.com/oss/python/langchain/overview |
+| true | redirected-url | 7 | content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx | https://docs.dify.ai | https://docs.dify.ai/en/use-dify/getting-started/introduction |
 
 ## Review Action Board
 
@@ -108,7 +106,7 @@ Unsafe tasks:
 | true | 1002 | wave-approval | wave-3 | 24 | 0 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | true | 806 | public-gap-review | public-gap-wave-1 | 26 | 3 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 801 | public-gap-review | public-gap-wave-1 | 24 | 2 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | 798 | public-gap-review | public-gap-wave-1 | 27 | 2 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| true | 801 | public-gap-review | public-gap-wave-1 | 27 | 2 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 
 ## Review Portfolio Board
 
@@ -754,14 +752,14 @@ Unsafe first coverage launch items:
 
 | Cluster | Exact seeds | Exact queries | Source targets | Reachable sources | Review actions |
 | --- | --- | --- | --- | --- | --- |
-| 开源大模型部署：Ollama、vLLM、TGI、RunPod | 0 | 2 | 27 | 24 | 12 |
+| 开源大模型部署：Ollama、vLLM、TGI、RunPod | 0 | 2 | 27 | 27 | 12 |
 | Agent 部署、工具调用和生产安全 | 0 | 4 | 26 | 26 | 12 |
 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres | 0 | n/a | 6 | 6 | 12 |
 | RAG、知识库、向量数据库和引用溯源 | 0 | 0 | 29 | 29 | 15 |
 | 全行业 AI 提示词和工作流模板 | 1 | 4 | 24 | 22 | 11 |
 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | 0 | n/a | 6 | 6 | 12 |
 | AI API 接入、限流、成本和多模型路由 | 1 | n/a | 36 | 36 | 12 |
-| LLM 观测、评测、日志和上线后质量 | 0 | n/a | 6 | 4 | 13 |
+| LLM 观测、评测、日志和上线后质量 | 0 | n/a | 6 | 6 | 13 |
 
 ## Review Optimization Brief
 
@@ -779,7 +777,7 @@ Unsafe first coverage launch items:
 | 1002 | wave-3 | 4 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | 806 | public-gap-wave-1 | 4 | /blog/codex-vercel-deploy-preflight-checklist | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 801 | public-gap-wave-1 | 4 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| 798 | public-gap-wave-1 | 2 | /blog/codex-code-review-delivery-checklist | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| 801 | public-gap-wave-1 | 2 | /blog/codex-code-review-delivery-checklist | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | 781 | public-gap-wave-2 | 0 | /blog/build-first-webpage-with-codex | 客服 AI 模型选型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 769 | public-gap-wave-2 | 3 | /blog/build-first-webpage-with-codex | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 
@@ -977,7 +975,7 @@ Next review files:
 - Failed checks: 0
 - Unsupported traffic claims: 0
 - Traffic claim files scanned: 157
-- Traffic claim watch mentions: 2030
+- Traffic claim watch mentions: 2029
 
 ## Public Surface Inventory
 
@@ -1410,9 +1408,9 @@ Public categories:
 | true | high | 2026-06-06 | 29/29 | 12 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | high | 2026-06-06 | 26/26 | 12 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | high | 2026-06-06 | 22/24 | 12 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | high | 2026-06-06 | 24/27 | 12 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| true | high | 2026-06-06 | 27/27 | 12 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | true | high | 2026-06-06 | 11/11 | 12 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| true | high | 2026-06-06 | 10/11 | 12 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| true | high | 2026-06-06 | 11/11 | 12 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 | true | high | 2026-06-06 | 6/6 | 12 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 | true | high | 2026-06-06 | 12/12 | 12 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 

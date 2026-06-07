@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T16:15:15.458Z",
+  "generatedAt": "2026-06-07T16:39:18.497Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -8,7 +8,7 @@
     "gateOk": true,
     "missingReports": [],
     "preflightOk": true,
-    "runOk": false,
+    "runOk": true,
     "searchabilityScore": 100,
     "seoOk": true,
     "trafficDataAvailable": false
@@ -59,95 +59,16 @@
           }
         ],
         "url": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business"
-      },
-      {
-        "error": "AbortError",
-        "finalUrl": "https://docs.ragas.io/",
-        "ok": false,
-        "references": [
-          {
-            "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-            "label": "https://docs.ragas.io/",
-            "scope": "public-gap-decision",
-            "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
-            "url": "https://docs.ragas.io/"
-          },
-          {
-            "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-            "label": "https://docs.ragas.io/",
-            "scope": "broad-first-coverage",
-            "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
-            "url": "https://docs.ragas.io/"
-          }
-        ],
-        "status": 502,
-        "url": "https://docs.ragas.io/"
-      },
-      {
-        "error": "AbortError",
-        "ok": false,
-        "references": [
-          {
-            "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
-            "label": "vLLM docs: https://docs.vllm.ai",
-            "scope": "public-gap-decision",
-            "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
-            "url": "https://docs.vllm.ai"
-          },
-          {
-            "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-            "label": "https://docs.vllm.ai",
-            "scope": "public-gap-decision",
-            "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-            "url": "https://docs.vllm.ai"
-          },
-          {
-            "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-            "label": "vLLM docs: https://docs.vllm.ai",
-            "scope": "public-gap-decision",
-            "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
-            "url": "https://docs.vllm.ai"
-          },
-          {
-            "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
-            "label": "vLLM docs: https://docs.vllm.ai",
-            "scope": "next-source-pack",
-            "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
-            "url": "https://docs.vllm.ai"
-          },
-          {
-            "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
-            "label": "vLLM docs: https://docs.vllm.ai",
-            "scope": "next-source-pack",
-            "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
-            "url": "https://docs.vllm.ai"
-          },
-          {
-            "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-            "label": "vLLM docs: https://docs.vllm.ai",
-            "scope": "next-source-pack",
-            "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-            "url": "https://docs.vllm.ai"
-          },
-          {
-            "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-            "label": "https://docs.vllm.ai",
-            "scope": "broad-first-coverage",
-            "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-            "url": "https://docs.vllm.ai"
-          }
-        ],
-        "url": "https://docs.vllm.ai"
       }
     ],
-    "failedUrls": 3,
+    "failedUrls": 1,
     "filesCovered": 23,
     "filesWithReachableSource": 23,
     "filesWithoutReachableSource": 0,
     "filesWithoutReachableSourceList": [],
     "missingUrlTargets": 0,
     "nextSourcePackFiles": 19,
-    "okUrls": 37,
+    "okUrls": 39,
     "publicGapDecisionFiles": 13,
     "redirectedChecks": [
       {
@@ -448,7 +369,6 @@
         "url": "https://docs.anthropic.com"
       },
       {
-        "error": "AbortError",
         "finalUrl": "https://platform.claude.com/docs/en/home",
         "ok": true,
         "references": [
@@ -615,119 +535,16 @@
         "url": "https://docs.helicone.ai/"
       }
     ],
-    "redirectedUrls": 16,
+    "redirectedUrls": 18,
     "sourceReferences": 261,
     "uniqueUrls": 40
   },
   "sourceTargetRemediation": {
-    "failedUrlItems": 3,
-    "failedUrls": 3,
+    "failedUrlItems": 1,
+    "failedUrls": 1,
     "humanGatedItems": 19,
     "items": 19,
     "itemsList": [
-      {
-        "affectedFiles": [
-          "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
-          "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-          "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-          "content/blog/local-llm-vram-not-enough-guide.mdx",
-          "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx"
-        ],
-        "affectedScopes": [
-          "public-gap-decision",
-          "next-source-pack",
-          "broad-first-coverage"
-        ],
-        "affectedTitles": [
-          "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
-          "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-          "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
-          "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
-          "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit"
-        ],
-        "error": "AbortError",
-        "humanChecklist": [
-          "Review URL: https://docs.vllm.ai.",
-          "Automation error observed: AbortError.",
-          "Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.",
-          "If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.",
-          "Confirm every affected draft still has at least one reachable source for the claim family before mark:review.",
-          "Do not approve a fast-changing AI, SDK, deployment, pricing, or model claim if it depends only on this failed URL.",
-          "Prefer another reachable official source already present for the same affected file when it covers the same claim.",
-          "If no existing source covers the claim, manually find a current official source before approval.",
-          "If no reliable source exists, rewrite or remove the dependent claim instead of substituting a weak source.",
-          "Keep article status, noindex, and humanReviewRequired unchanged until explicit approval.",
-          "Publishing remains separate and is not included in this remediation pack."
-        ],
-        "kind": "failed-url",
-        "manualActions": [
-          "Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.",
-          "If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.",
-          "Confirm every affected draft still has at least one reachable source for the claim family before mark:review.",
-          "Do not approve a fast-changing AI, SDK, deployment, pricing, or model claim if it depends only on this failed URL."
-        ],
-        "manualFixReady": true,
-        "referenceCount": 7,
-        "references": [
-          {
-            "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
-            "label": "vLLM docs: https://docs.vllm.ai",
-            "scope": "public-gap-decision",
-            "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
-            "url": "https://docs.vllm.ai"
-          },
-          {
-            "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-            "label": "https://docs.vllm.ai",
-            "scope": "public-gap-decision",
-            "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-            "url": "https://docs.vllm.ai"
-          },
-          {
-            "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-            "label": "vLLM docs: https://docs.vllm.ai",
-            "scope": "public-gap-decision",
-            "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
-            "url": "https://docs.vllm.ai"
-          },
-          {
-            "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
-            "label": "vLLM docs: https://docs.vllm.ai",
-            "scope": "next-source-pack",
-            "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
-            "url": "https://docs.vllm.ai"
-          },
-          {
-            "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
-            "label": "vLLM docs: https://docs.vllm.ai",
-            "scope": "next-source-pack",
-            "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
-            "url": "https://docs.vllm.ai"
-          },
-          {
-            "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-            "label": "vLLM docs: https://docs.vllm.ai",
-            "scope": "next-source-pack",
-            "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-            "url": "https://docs.vllm.ai"
-          },
-          {
-            "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-            "label": "https://docs.vllm.ai",
-            "scope": "broad-first-coverage",
-            "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-            "url": "https://docs.vllm.ai"
-          }
-        ],
-        "replacementPlan": [
-          "Prefer another reachable official source already present for the same affected file when it covers the same claim.",
-          "If no existing source covers the claim, manually find a current official source before approval.",
-          "If no reliable source exists, rewrite or remove the dependent claim instead of substituting a weak source."
-        ],
-        "stopBefore": "Stop before human approval if this failed URL is the only evidence for any fast-changing claim.",
-        "unsafeReasons": [],
-        "url": "https://docs.vllm.ai"
-      },
       {
         "affectedFiles": [
           "content/blog/industry-ai-prompts-template-library-2026.mdx"
@@ -786,69 +603,6 @@
         "stopBefore": "Stop before human approval if this failed URL is the only evidence for any fast-changing claim.",
         "unsafeReasons": [],
         "url": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business"
-      },
-      {
-        "affectedFiles": [
-          "content/blog/agent-tool-permission-safety-guide.mdx"
-        ],
-        "affectedScopes": [
-          "public-gap-decision",
-          "broad-first-coverage"
-        ],
-        "affectedTitles": [
-          "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志"
-        ],
-        "error": "AbortError",
-        "finalUrl": "https://docs.ragas.io/",
-        "humanChecklist": [
-          "Review URL: https://docs.ragas.io/.",
-          "Review final URL: https://docs.ragas.io/.",
-          "HTTP status observed by automation: 502.",
-          "Automation error observed: AbortError.",
-          "Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.",
-          "If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.",
-          "Confirm every affected draft still has at least one reachable source for the claim family before mark:review.",
-          "Do not approve a fast-changing AI, SDK, deployment, pricing, or model claim if it depends only on this failed URL.",
-          "Prefer another reachable official source already present for the same affected file when it covers the same claim.",
-          "If no existing source covers the claim, manually find a current official source before approval.",
-          "If no reliable source exists, rewrite or remove the dependent claim instead of substituting a weak source.",
-          "Keep article status, noindex, and humanReviewRequired unchanged until explicit approval.",
-          "Publishing remains separate and is not included in this remediation pack."
-        ],
-        "kind": "failed-url",
-        "manualActions": [
-          "Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.",
-          "If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.",
-          "Confirm every affected draft still has at least one reachable source for the claim family before mark:review.",
-          "Do not approve a fast-changing AI, SDK, deployment, pricing, or model claim if it depends only on this failed URL."
-        ],
-        "manualFixReady": true,
-        "referenceCount": 2,
-        "references": [
-          {
-            "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-            "label": "https://docs.ragas.io/",
-            "scope": "public-gap-decision",
-            "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
-            "url": "https://docs.ragas.io/"
-          },
-          {
-            "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-            "label": "https://docs.ragas.io/",
-            "scope": "broad-first-coverage",
-            "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
-            "url": "https://docs.ragas.io/"
-          }
-        ],
-        "replacementPlan": [
-          "Prefer another reachable official source already present for the same affected file when it covers the same claim.",
-          "If no existing source covers the claim, manually find a current official source before approval.",
-          "If no reliable source exists, rewrite or remove the dependent claim instead of substituting a weak source."
-        ],
-        "status": 502,
-        "stopBefore": "Stop before human approval if this failed URL is the only evidence for any fast-changing claim.",
-        "unsafeReasons": [],
-        "url": "https://docs.ragas.io/"
       },
       {
         "affectedFiles": [
@@ -2194,11 +1948,288 @@
         "stopBefore": "Stop before human approval until a reviewer confirms the final redirected URL is canonical and content-equivalent.",
         "unsafeReasons": [],
         "url": "https://platform.openai.com/docs/guides/agents"
+      },
+      {
+        "affectedFiles": [
+          "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "content/blog/ai-agent-memory-rag-design-guide.mdx",
+          "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+          "content/blog/dify-workflow-error-handling-guide.mdx",
+          "content/blog/dify-workflow-vs-agent-guide.mdx",
+          "content/blog/open-webui-functions-pipelines-deployment-guide.mdx"
+        ],
+        "affectedScopes": [
+          "public-gap-decision",
+          "next-source-pack",
+          "broad-first-coverage"
+        ],
+        "affectedTitles": [
+          "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+          "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+          "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+          "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+          "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流"
+        ],
+        "finalUrl": "https://docs.langchain.com/oss/python/langchain/overview",
+        "humanChecklist": [
+          "Review URL: https://python.langchain.com/docs.",
+          "Review final URL: https://docs.langchain.com/oss/python/langchain/overview.",
+          "HTTP status observed by automation: 200.",
+          "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
+          "If the final URL is the canonical destination, update the source target during human review.",
+          "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
+          "Confirm the affected draft still cites source material that matches its implementation-sensitive claims.",
+          "Prefer the final URL when it is canonical, current, and content-equivalent.",
+          "Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
+          "Replace the source if the redirect weakens specificity or points to a general landing page.",
+          "Keep article status, noindex, and humanReviewRequired unchanged until explicit approval.",
+          "Publishing remains separate and is not included in this remediation pack."
+        ],
+        "kind": "redirected-url",
+        "manualActions": [
+          "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
+          "If the final URL is the canonical destination, update the source target during human review.",
+          "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
+          "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
+        ],
+        "manualFixReady": true,
+        "referenceCount": 16,
+        "references": [
+          {
+            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+            "label": "LangChain docs: https://python.langchain.com/docs",
+            "scope": "public-gap-decision",
+            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+            "url": "https://python.langchain.com/docs"
+          },
+          {
+            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+            "label": "https://python.langchain.com/docs",
+            "scope": "public-gap-decision",
+            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+            "url": "https://python.langchain.com/docs"
+          },
+          {
+            "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+            "label": "LangChain docs: https://python.langchain.com/docs",
+            "scope": "public-gap-decision",
+            "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+            "url": "https://python.langchain.com/docs"
+          },
+          {
+            "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+            "label": "https://python.langchain.com/docs",
+            "scope": "public-gap-decision",
+            "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+            "url": "https://python.langchain.com/docs"
+          },
+          {
+            "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+            "label": "LangChain docs: https://python.langchain.com/docs",
+            "scope": "public-gap-decision",
+            "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+            "url": "https://python.langchain.com/docs"
+          },
+          {
+            "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+            "label": "https://python.langchain.com/docs",
+            "scope": "public-gap-decision",
+            "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+            "url": "https://python.langchain.com/docs"
+          },
+          {
+            "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+            "label": "LangChain docs: https://python.langchain.com/docs",
+            "scope": "next-source-pack",
+            "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+            "url": "https://python.langchain.com/docs"
+          },
+          {
+            "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+            "label": "LangChain docs: https://python.langchain.com/docs",
+            "scope": "next-source-pack",
+            "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+            "url": "https://python.langchain.com/docs"
+          },
+          {
+            "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+            "label": "LangChain docs: https://python.langchain.com/docs",
+            "scope": "next-source-pack",
+            "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+            "url": "https://python.langchain.com/docs"
+          },
+          {
+            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+            "label": "LangChain docs: https://python.langchain.com/docs",
+            "scope": "next-source-pack",
+            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+            "url": "https://python.langchain.com/docs"
+          },
+          {
+            "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+            "label": "LangChain docs: https://python.langchain.com/docs",
+            "scope": "next-source-pack",
+            "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+            "url": "https://python.langchain.com/docs"
+          },
+          {
+            "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+            "label": "LangChain docs: https://python.langchain.com/docs",
+            "scope": "next-source-pack",
+            "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+            "url": "https://python.langchain.com/docs"
+          },
+          {
+            "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+            "label": "LangChain docs: https://python.langchain.com/docs",
+            "scope": "next-source-pack",
+            "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+            "url": "https://python.langchain.com/docs"
+          },
+          {
+            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+            "label": "https://python.langchain.com/docs",
+            "scope": "broad-first-coverage",
+            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+            "url": "https://python.langchain.com/docs"
+          },
+          {
+            "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+            "label": "https://python.langchain.com/docs",
+            "scope": "broad-first-coverage",
+            "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+            "url": "https://python.langchain.com/docs"
+          },
+          {
+            "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+            "label": "https://python.langchain.com/docs",
+            "scope": "broad-first-coverage",
+            "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+            "url": "https://python.langchain.com/docs"
+          }
+        ],
+        "replacementPlan": [
+          "Prefer the final URL when it is canonical, current, and content-equivalent.",
+          "Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
+          "Replace the source if the redirect weakens specificity or points to a general landing page."
+        ],
+        "status": 200,
+        "stopBefore": "Stop before human approval until a reviewer confirms the final redirected URL is canonical and content-equivalent.",
+        "unsafeReasons": [],
+        "url": "https://python.langchain.com/docs"
+      },
+      {
+        "affectedFiles": [
+          "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+          "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "content/blog/dify-workflow-error-handling-guide.mdx",
+          "content/blog/dify-workflow-vs-agent-guide.mdx"
+        ],
+        "affectedScopes": [
+          "public-gap-decision",
+          "next-source-pack",
+          "broad-first-coverage"
+        ],
+        "affectedTitles": [
+          "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+          "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+          "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核"
+        ],
+        "finalUrl": "https://docs.dify.ai/en/use-dify/getting-started/introduction",
+        "humanChecklist": [
+          "Review URL: https://docs.dify.ai.",
+          "Review final URL: https://docs.dify.ai/en/use-dify/getting-started/introduction.",
+          "HTTP status observed by automation: 200.",
+          "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
+          "If the final URL is the canonical destination, update the source target during human review.",
+          "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
+          "Confirm the affected draft still cites source material that matches its implementation-sensitive claims.",
+          "Prefer the final URL when it is canonical, current, and content-equivalent.",
+          "Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
+          "Replace the source if the redirect weakens specificity or points to a general landing page.",
+          "Keep article status, noindex, and humanReviewRequired unchanged until explicit approval.",
+          "Publishing remains separate and is not included in this remediation pack."
+        ],
+        "kind": "redirected-url",
+        "manualActions": [
+          "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
+          "If the final URL is the canonical destination, update the source target during human review.",
+          "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
+          "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
+        ],
+        "manualFixReady": true,
+        "referenceCount": 7,
+        "references": [
+          {
+            "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+            "label": "Dify docs: https://docs.dify.ai",
+            "scope": "public-gap-decision",
+            "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+            "url": "https://docs.dify.ai"
+          },
+          {
+            "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+            "label": "https://docs.dify.ai",
+            "scope": "public-gap-decision",
+            "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+            "url": "https://docs.dify.ai"
+          },
+          {
+            "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+            "label": "Dify docs: https://docs.dify.ai",
+            "scope": "next-source-pack",
+            "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+            "url": "https://docs.dify.ai"
+          },
+          {
+            "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+            "label": "Dify docs: https://docs.dify.ai",
+            "scope": "next-source-pack",
+            "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+            "url": "https://docs.dify.ai"
+          },
+          {
+            "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+            "label": "Dify docs: https://docs.dify.ai",
+            "scope": "next-source-pack",
+            "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+            "url": "https://docs.dify.ai"
+          },
+          {
+            "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+            "label": "Dify docs: https://docs.dify.ai",
+            "scope": "next-source-pack",
+            "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+            "url": "https://docs.dify.ai"
+          },
+          {
+            "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+            "label": "https://docs.dify.ai",
+            "scope": "broad-first-coverage",
+            "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+            "url": "https://docs.dify.ai"
+          }
+        ],
+        "replacementPlan": [
+          "Prefer the final URL when it is canonical, current, and content-equivalent.",
+          "Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
+          "Replace the source if the redirect weakens specificity or points to a general landing page."
+        ],
+        "status": 200,
+        "stopBefore": "Stop before human approval until a reviewer confirms the final redirected URL is canonical and content-equivalent.",
+        "unsafeReasons": [],
+        "url": "https://docs.dify.ai"
       }
     ],
     "manualFixReadyItems": 19,
-    "redirectedUrlItems": 16,
-    "redirectedUrls": 16,
+    "redirectedUrlItems": 18,
+    "redirectedUrls": 18,
     "sourceHealthCheckedUrls": 40,
     "unsafeItems": 0,
     "unsafeItemList": []
@@ -2353,7 +2384,7 @@
         },
         "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
         "kind": "public-gap-review",
-        "priority": 798,
+        "priority": 801,
         "ready": true,
         "scope": "public-gap-wave-1",
         "sourceTargets": 27,
@@ -18283,7 +18314,7 @@
           "url": "/blog/codex-code-review-delivery-checklist"
         },
         "kind": "public-gap-review",
-        "priority": 798,
+        "priority": 801,
         "proposedDescription": "面向新手整理大模型部署路径，讲清 API 调用、托管推理端点、私有化部署、vLLM/TGI/SGLang、成本、延迟、安全和验收。",
         "proposedOpeningAdditions": [
           "在开头 200 字内自然回答一次“大模型部署教程”这个搜索意图，先给结论再展开步骤。",
@@ -18902,7 +18933,7 @@
           "https://www.spheron.network/blog/llm-deployment-guide/"
         ],
         "readyForFreshnessReview": true,
-        "reachableSources": 24,
+        "reachableSources": 27,
         "reviewFocus": [
           "核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异",
           "不要承诺本地部署一定更省钱或更稳定",
@@ -19055,7 +19086,7 @@
           "https://docs.n8n.io"
         ],
         "readyForFreshnessReview": true,
-        "reachableSources": 10,
+        "reachableSources": 11,
         "reviewFocus": [
           "hardware sizing",
           "model size and quantization",
@@ -21272,7 +21303,7 @@
     "filesScanned": 157,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 2030
+    "watchMentions": 2029
   },
   "publicSurfaceInventory": {
     "broadCoverage": [
@@ -22543,7 +22574,7 @@
         },
         "sourceSignals": {
           "launchSourceTargets": 10,
-          "reachableSources": 24,
+          "reachableSources": 27,
           "sourceTargets": 27
         },
         "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
@@ -22946,7 +22977,7 @@
         },
         "sourceSignals": {
           "launchSourceTargets": 3,
-          "reachableSources": 4,
+          "reachableSources": 6,
           "sourceTargets": 6
         },
         "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",

@@ -1,6 +1,6 @@
 # Review Action Board
 
-Generated at: 2026-06-07T16:14:57.387Z
+Generated at: 2026-06-07T16:39:00.481Z
 
 This board is read-only. It turns review automation reports into a prioritized human task queue.
 
@@ -44,7 +44,7 @@ This board is read-only. It turns review automation reports into a prioritized h
 | true | 1002 | wave-approval | wave-3 | 24 | 0 | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | true | 806 | public-gap-review | public-gap-wave-1 | 26 | 3 | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 801 | public-gap-review | public-gap-wave-1 | 24 | 2 | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | 798 | public-gap-review | public-gap-wave-1 | 27 | 2 | none | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| true | 801 | public-gap-review | public-gap-wave-1 | 27 | 2 | none | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 
 ## All Tasks
 
@@ -55,17 +55,17 @@ This board is read-only. It turns review automation reports into a prioritized h
 | true | 1002 | wave-approval | wave-3 | 24 | 0 | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | true | 806 | public-gap-review | public-gap-wave-1 | 26 | 3 | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 801 | public-gap-review | public-gap-wave-1 | 24 | 2 | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | 798 | public-gap-review | public-gap-wave-1 | 27 | 2 | none | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| true | 801 | public-gap-review | public-gap-wave-1 | 27 | 2 | none | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | true | 781 | public-gap-review | public-gap-wave-2 | 29 | 6 | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | 769 | public-gap-review | public-gap-wave-2 | 11 | 3 | none | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| true | 767 | public-gap-review | public-gap-wave-2 | 11 | 5 | none | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| true | 768 | public-gap-review | public-gap-wave-2 | 11 | 5 | none | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 | true | 759 | public-gap-review | public-gap-wave-2 | 6 | 3 | none | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 | true | 748 | public-gap-review | public-gap-wave-3 | 12 | 7 | none | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | true | 747 | public-gap-review | public-gap-wave-4 | 36 | 3 | none | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | true | 744 | public-gap-review | public-gap-wave-3 | 9 | 5 | none | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | true | 735 | public-gap-review | public-gap-wave-3 | 6 | 3 | none | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
-| true | 712 | public-gap-review | public-gap-wave-4 | 6 | 4 | none | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
-| true | 711 | public-gap-review | public-gap-wave-4 | 2 | 4 | none | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
+| true | 714 | public-gap-review | public-gap-wave-4 | 6 | 4 | none | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+| true | 712 | public-gap-review | public-gap-wave-4 | 2 | 4 | none | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
 
 ## Per-Task Actions
 
@@ -215,7 +215,7 @@ Command boundary:
 - Kind: public-gap-review
 - Scope: public-gap-wave-1
 - Ready: true
-- Priority: 798
+- Priority: 801
 
 Action items:
 
@@ -307,7 +307,7 @@ Command boundary:
 - Kind: public-gap-review
 - Scope: public-gap-wave-2
 - Ready: true
-- Priority: 767
+- Priority: 768
 
 Action items:
 
@@ -497,7 +497,7 @@ Command boundary:
 - Kind: public-gap-review
 - Scope: public-gap-wave-4
 - Ready: true
-- Priority: 712
+- Priority: 714
 
 Action items:
 
@@ -529,7 +529,7 @@ Command boundary:
 - Kind: public-gap-review
 - Scope: public-gap-wave-4
 - Ready: true
-- Priority: 711
+- Priority: 712
 
 Action items:
 

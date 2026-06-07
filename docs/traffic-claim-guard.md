@@ -1,5 +1,5 @@
 # Traffic Claim Guard
-Generated at: 2026-06-07T16:04:22.421Z
+Generated at: 2026-06-07T16:28:25.575Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
@@ -8,7 +8,7 @@ This guard scans operational reports and docs for unsupported claims that real t
 - filesScanned: 157
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 2030
+- watchMentions: 2029
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -33,24 +33,24 @@ None.
 | docs/ai-deployment-review-pack.md | 562 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
 | docs/ai-deployment-review-pack.md | 618 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
 | docs/automation-digest.md | 14 | - Traffic data available: false |
-| docs/automation-digest.md | 432 | \| 404 \| 0 \| 30 \| 8 \| 4 \| 10 \| 4 \| nocode-ai-automation-deployment \| This lane connects search traffic to services people can buy: automation setup, deployment, acceptance, and maintenance. \| |
-| docs/automation-digest.md | 435 | \| 306 \| 4 \| 222 \| 8 \| 3 \| 10 \| 4 \| ai-service-pricing-delivery \| This lane turns search demand into services without pretending the site already has traffic or revenue proof. \| |
-| docs/automation-digest.md | 534 | \| 313 \| 0 \| 32 \| 6 \| 3 \| 5 \| RAG、知识库、向量数据库和引用溯源 \| RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。 \| |
-| docs/automation-digest.md | 536 | \| 307 \| 0 \| 36 \| 6 \| 3 \| 5 \| Dify、n8n、Coze、Flowise、MCP 自动化部署 \| 这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。 \| |
-| docs/automation-digest.md | 697 | - Traffic data available: false |
-| docs/automation-digest.md | 967 | ## Traffic Evidence |
-| docs/automation-digest.md | 969 | - Traffic data available: false |
-| docs/automation-digest.md | 970 | - Can claim traffic: false |
-| docs/automation-digest.md | 972 | - Measured traffic sources: none |
-| docs/automation-digest.md | 973 | - Search Console verification evidence: false |
-| docs/automation-digest.md | 976 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 977 | - Traffic claim files scanned: 157 |
-| docs/automation-digest.md | 978 | - Traffic claim watch mentions: 2029 |
-| docs/automation-digest.md | 991 | - Traffic data available: false |
-| docs/automation-digest.md | 1066 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
+| docs/automation-digest.md | 434 | \| 404 \| 0 \| 30 \| 8 \| 4 \| 10 \| 4 \| nocode-ai-automation-deployment \| This lane connects search traffic to services people can buy: automation setup, deployment, acceptance, and maintenance. \| |
+| docs/automation-digest.md | 437 | \| 306 \| 4 \| 222 \| 8 \| 3 \| 10 \| 4 \| ai-service-pricing-delivery \| This lane turns search demand into services without pretending the site already has traffic or revenue proof. \| |
+| docs/automation-digest.md | 536 | \| 313 \| 0 \| 32 \| 6 \| 3 \| 5 \| RAG、知识库、向量数据库和引用溯源 \| RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。 \| |
+| docs/automation-digest.md | 538 | \| 307 \| 0 \| 36 \| 6 \| 3 \| 5 \| Dify、n8n、Coze、Flowise、MCP 自动化部署 \| 这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。 \| |
+| docs/automation-digest.md | 699 | - Traffic data available: false |
+| docs/automation-digest.md | 969 | ## Traffic Evidence |
+| docs/automation-digest.md | 971 | - Traffic data available: false |
+| docs/automation-digest.md | 972 | - Can claim traffic: false |
+| docs/automation-digest.md | 974 | - Measured traffic sources: none |
+| docs/automation-digest.md | 975 | - Search Console verification evidence: false |
+| docs/automation-digest.md | 978 | - Unsupported traffic claims: 0 |
+| docs/automation-digest.md | 979 | - Traffic claim files scanned: 157 |
+| docs/automation-digest.md | 980 | - Traffic claim watch mentions: 2030 |
+| docs/automation-digest.md | 993 | - Traffic data available: false |
+| docs/automation-digest.md | 1068 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
 | docs/automation-gate.md | 31 | \| traffic evidence audit passed and is read-only \| PASS \| failedChecks=0, measuredTrafficSources=0 \| |
 | docs/automation-gate.md | 32 | \| traffic is not claimed without measured metrics \| PASS \| trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 \| |
-| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=157, unsafeClaims=0, watchMentions=2029 \| |
+| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=157, unsafeClaims=0, watchMentions=2030 \| |
 | docs/autopilot-approval-packet.md | 18 | - Traffic data available: false |
 | docs/autopilot-approval-packet.md | 19 | - Can claim traffic: false |
 | docs/autopilot-approval-packet.md | 102 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
