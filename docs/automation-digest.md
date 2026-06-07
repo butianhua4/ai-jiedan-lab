@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T01:36:18.250Z
+Generated at: 2026-06-07T01:42:27.499Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -53,7 +53,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=zh-cn
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - https://docs.dify.ai -> https://docs.dify.ai/en/use-dify/getting-started/introduction
@@ -248,6 +248,36 @@ Unsafe human-review playbook items:
 | true | true | 19 | 43 | 6 | true | not-included | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | true | 21 | 43 | 6 | true | not-included | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 
+## Autopilot Review Sprint Board
+
+- Items: 10
+- Ready for sprint: 10
+- Safe draft items: 10
+- Ready with playbook: 3
+- Queued for playbook: 7
+- Items needing search query: 1
+- Items with command boundary: 10
+- With search queries: 9
+- With source targets: 10
+- Unsafe items: 0
+
+Unsafe sprint items:
+
+- none
+
+| Order | Ready | Stage | Lane | Sources | Queries | Mark-review gated | Publish confirm | Title | File |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | true | ready-with-playbook | industry-prompt | 9 | 8 | true | not-included | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| 2 | true | ready-with-playbook | ai-deployment | 6 | 8 | true | not-included | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 3 | true | queued-for-playbook | wave-review | 7 | 0 | true | not-included | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 4 | true | ready-with-playbook | ai-deployment | 5 | 8 | true | not-included | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| 5 | true | queued-for-playbook | ai-deployment | 4 | 8 | true | not-included | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| 6 | true | queued-for-playbook | ai-deployment | 3 | 8 | true | not-included | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| 7 | true | queued-for-playbook | ai-deployment | 2 | 8 | true | not-included | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 8 | true | queued-for-playbook | ai-deployment | 2 | 8 | true | not-included | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
+| 9 | true | queued-for-playbook | public-coverage-gap | 2 | 4 | true | not-included | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| 10 | true | queued-for-playbook | industry-prompt | 5 | 4 | true | not-included | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
+
 ## Review Optimization Brief
 
 - Briefs: 11
@@ -345,8 +375,8 @@ Unsafe human-review playbook items:
 | deployment: RAG、知识库和向量检索 | 348 | 0 | 5 |
 | content-backlog: RAG、知识库和向量检索 | 342 | 0 | 5 |
 | deployment: Agent 部署、工具调用和工作流 | 338 | 0 | 5 |
-| content-backlog: Agent 部署、工具调用和记忆 | 334 | 0 | 5 |
 | content-backlog: 全行业 AI 提示词和工作流模板 | 334 | 0 | 5 |
+| content-backlog: Agent 部署、工具调用和记忆 | 334 | 0 | 5 |
 | industry-prompt: 全行业提示词模板库 | 324 | 0 | 4 |
 
 Next review files:
@@ -443,8 +473,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 119
-- Traffic claim watch mentions: 940
+- Traffic claim files scanned: 121
+- Traffic claim watch mentions: 1024
 
 ## Preflight
 
@@ -806,7 +836,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-07T01:36:16.328Z
+- Latest check: 2026-06-07T01:42:16.969Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
@@ -836,6 +866,7 @@ Next review files:
 - Use docs/autopilot-internal-link-brief.md to add one contextual public internal link during human review.
 - Use docs/autopilot-source-verification-brief.md to verify top-3 official sources and fast-changing claims during human review.
 - Use docs/autopilot-human-review-playbook.md as the merged top-3 checklist before any mark:review command.
+- Use docs/autopilot-review-sprint-board.md as the next-10 manual review sprint order.
 - Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.
 - If approved by a human, run mark:review with --confirm-human for approved files only.
 - Publish only status=review articles in a 1-3 article batch after a dry-run.

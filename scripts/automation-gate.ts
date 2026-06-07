@@ -619,6 +619,35 @@ async function main() {
       unsafeItems: number;
     };
   }>("content/automation/autopilot-human-review-playbook.json");
+  const autopilotReviewSprintBoard = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    items?: Array<{
+      commandBoundary?: { markReviewAfterHumanApproval?: string; publishConfirm?: string; publishDryRunAfterReview?: string };
+      playbookStage?: string;
+      readyForSprint?: boolean;
+      reviewChecklist?: unknown[];
+      safeDraft?: boolean;
+      searchQueries?: number;
+      sourceTargets?: number;
+    }>;
+    sourceEvidence: {
+      autopilotQueueUnsafeItems: number;
+      humanReviewPlaybookUnsafeItems: number;
+      queueNextAssignments: number;
+    };
+    summary: {
+      items: number;
+      itemsNeedingSearchQuery: number;
+      itemsWithCommandBoundary: number;
+      queuedForPlaybook: number;
+      readyForSprint: number;
+      readyWithPlaybook: number;
+      safeDraftItems: number;
+      unsafeItems: number;
+      withSearchQueries: number;
+      withSourceTargets: number;
+    };
+  }>("content/automation/autopilot-review-sprint-board.json");
   const reviewOptimizationBrief = readJson<{
     briefs?: Array<{
       file: string;
@@ -1152,6 +1181,45 @@ async function main() {
           ),
         ),
       detail: `commands=${autopilotHumanReviewPlaybook.summary.itemsWithCommandBoundary}, search=${autopilotHumanReviewPlaybook.summary.itemsWithSearchActions}, source=${autopilotHumanReviewPlaybook.summary.itemsWithSourceActions}, links=${autopilotHumanReviewPlaybook.summary.itemsWithInternalLinkActions}`,
+    },
+    {
+      name: "autopilot review sprint board covers next assignments",
+      ok:
+        autopilotReviewSprintBoard.guardrails.autoEditArticles === false &&
+        autopilotReviewSprintBoard.guardrails.autoMarkReview === false &&
+        autopilotReviewSprintBoard.guardrails.autoPublish === false &&
+        autopilotReviewSprintBoard.sourceEvidence.autopilotQueueUnsafeItems === 0 &&
+        autopilotReviewSprintBoard.sourceEvidence.humanReviewPlaybookUnsafeItems === 0 &&
+        autopilotReviewSprintBoard.sourceEvidence.queueNextAssignments === autopilotReviewQueue.summary.nextAssignments &&
+        autopilotReviewSprintBoard.summary.items === autopilotReviewQueue.summary.nextAssignments &&
+        autopilotReviewSprintBoard.summary.readyWithPlaybook === autopilotHumanReviewPlaybook.summary.items &&
+        autopilotReviewSprintBoard.summary.queuedForPlaybook === autopilotReviewSprintBoard.summary.items - autopilotReviewSprintBoard.summary.readyWithPlaybook &&
+        autopilotReviewSprintBoard.summary.itemsNeedingSearchQuery === autopilotReviewSprintBoard.summary.items - autopilotReviewSprintBoard.summary.withSearchQueries &&
+        autopilotReviewSprintBoard.summary.unsafeItems === 0,
+      detail: `items=${autopilotReviewSprintBoard.summary.items}, readyWithPlaybook=${autopilotReviewSprintBoard.summary.readyWithPlaybook}, queued=${autopilotReviewSprintBoard.summary.queuedForPlaybook}, needsQuery=${autopilotReviewSprintBoard.summary.itemsNeedingSearchQuery}, unsafe=${autopilotReviewSprintBoard.summary.unsafeItems}`,
+    },
+    {
+      name: "autopilot review sprint board keeps sprint actions human-gated",
+      ok:
+        autopilotReviewSprintBoard.summary.readyForSprint === autopilotReviewSprintBoard.summary.items &&
+        autopilotReviewSprintBoard.summary.safeDraftItems === autopilotReviewSprintBoard.summary.items &&
+        autopilotReviewSprintBoard.summary.itemsWithCommandBoundary === autopilotReviewSprintBoard.summary.items &&
+        autopilotReviewSprintBoard.summary.withSearchQueries > 0 &&
+        autopilotReviewSprintBoard.summary.withSourceTargets === autopilotReviewSprintBoard.summary.items &&
+        Boolean(
+          autopilotReviewSprintBoard.items?.every(
+            (item) =>
+              item.readyForSprint === true &&
+              item.safeDraft === true &&
+              (item.reviewChecklist?.length || 0) > 0 &&
+              (item.sourceTargets || 0) > 0 &&
+              item.commandBoundary?.markReviewAfterHumanApproval?.includes("--confirm-human") &&
+              !item.commandBoundary?.publishDryRunAfterReview?.includes("--confirm") &&
+              item.commandBoundary?.publishConfirm === "not-included" &&
+              (item.playbookStage === "ready-with-playbook" || item.playbookStage === "queued-for-playbook"),
+          ),
+        ),
+      detail: `ready=${autopilotReviewSprintBoard.summary.readyForSprint}, commands=${autopilotReviewSprintBoard.summary.itemsWithCommandBoundary}, queries=${autopilotReviewSprintBoard.summary.withSearchQueries}, sources=${autopilotReviewSprintBoard.summary.withSourceTargets}`,
     },
     {
       name: "review optimization brief is read-only and covers ready action-board tasks",

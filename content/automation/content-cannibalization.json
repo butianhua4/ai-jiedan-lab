@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T01:36:01.694Z",
+  "generatedAt": "2026-06-07T01:41:03.264Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This is a warning report for manual review. It does not change article status or block drafts by itself."
@@ -55,20 +55,20 @@
     },
     {
       "files": [
-        "content/blog/build-first-webpage-with-codex.mdx",
-        "content/blog/codex-codex-4-34.mdx"
+        "content/blog/codex-codex-4-38.mdx",
+        "content/blog/codex-generated-code-review-guide.mdx"
       ],
-      "groupKey": "codex 怎么做第一个网页",
+      "groupKey": "codex 生成代码后怎么审核",
       "publishedCount": 1,
       "reason": "same primary keyword",
       "reviewBatchOverlap": [],
       "statuses": {
-        "published": 1,
-        "draft": 1
+        "draft": 1,
+        "published": 1
       },
       "titles": [
-        "Codex 怎么做第一个网页",
-        "Codex 怎么做第一个网页：新手练习流程"
+        "Codex 生成代码后怎么审核",
+        "Codex 生成代码后怎么审核：新手检查清单"
       ]
     },
     {
@@ -91,20 +91,20 @@
     },
     {
       "files": [
-        "content/blog/codex-codex-4-38.mdx",
-        "content/blog/codex-generated-code-review-guide.mdx"
+        "content/blog/build-first-webpage-with-codex.mdx",
+        "content/blog/codex-codex-4-34.mdx"
       ],
-      "groupKey": "codex 生成代码后怎么审核",
+      "groupKey": "codex 怎么做第一个网页",
       "publishedCount": 1,
       "reason": "same primary keyword",
       "reviewBatchOverlap": [],
       "statuses": {
-        "draft": 1,
-        "published": 1
+        "published": 1,
+        "draft": 1
       },
       "titles": [
-        "Codex 生成代码后怎么审核",
-        "Codex 生成代码后怎么审核：新手检查清单"
+        "Codex 怎么做第一个网页",
+        "Codex 怎么做第一个网页：新手练习流程"
       ]
     },
     {

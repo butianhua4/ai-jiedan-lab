@@ -524,6 +524,37 @@ type AutopilotHumanReviewPlaybook = {
   unsafeItems: unknown[];
 };
 
+type AutopilotReviewSprintBoard = {
+  items: Array<{
+    commandBoundary: { markReviewAfterHumanApproval: string; publishConfirm: string; publishDryRunAfterReview: string };
+    file: string;
+    lane: string;
+    playbookStage: string;
+    readyForSprint: boolean;
+    reviewChecklist: unknown[];
+    safeDraft: boolean;
+    searchQueries: number;
+    sourceTargets: number;
+    sprintOrder: number;
+    title: string;
+  }>;
+  queuedForPlaybook: unknown[];
+  readyWithPlaybook: unknown[];
+  summary: {
+    items: number;
+    itemsNeedingSearchQuery: number;
+    itemsWithCommandBoundary: number;
+    queuedForPlaybook: number;
+    readyForSprint: number;
+    readyWithPlaybook: number;
+    safeDraftItems: number;
+    unsafeItems: number;
+    withSearchQueries: number;
+    withSourceTargets: number;
+  };
+  unsafeItems: unknown[];
+};
+
 type ReviewOptimizationBrief = {
   nextBriefs: Array<{
     file: string;
@@ -900,6 +931,7 @@ const reports = {
   autopilotInternalLinkBrief: readJson<AutopilotInternalLinkBrief>("content/automation/autopilot-internal-link-brief.json"),
   autopilotSourceVerificationBrief: readJson<AutopilotSourceVerificationBrief>("content/automation/autopilot-source-verification-brief.json"),
   autopilotHumanReviewPlaybook: readJson<AutopilotHumanReviewPlaybook>("content/automation/autopilot-human-review-playbook.json"),
+  autopilotReviewSprintBoard: readJson<AutopilotReviewSprintBoard>("content/automation/autopilot-review-sprint-board.json"),
   reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
   reviewCannibalizationBrief: readJson<ReviewCannibalizationBrief>("content/automation/review-cannibalization-brief.json"),
   reviewFreshnessBrief: readJson<ReviewFreshnessBrief>("content/automation/review-freshness-brief.json"),
@@ -1052,6 +1084,20 @@ const payload = {
     safeDraftItems: reports.autopilotHumanReviewPlaybook.data?.summary.safeDraftItems ?? null,
     unsafeItems: reports.autopilotHumanReviewPlaybook.data?.summary.unsafeItems ?? null,
     unsafeItemList: reports.autopilotHumanReviewPlaybook.data?.unsafeItems.slice(0, 8) ?? [],
+  },
+  autopilotReviewSprintBoard: {
+    items: reports.autopilotReviewSprintBoard.data?.summary.items ?? null,
+    itemsList: reports.autopilotReviewSprintBoard.data?.items.slice(0, 10) ?? [],
+    itemsNeedingSearchQuery: reports.autopilotReviewSprintBoard.data?.summary.itemsNeedingSearchQuery ?? null,
+    itemsWithCommandBoundary: reports.autopilotReviewSprintBoard.data?.summary.itemsWithCommandBoundary ?? null,
+    queuedForPlaybook: reports.autopilotReviewSprintBoard.data?.summary.queuedForPlaybook ?? null,
+    readyForSprint: reports.autopilotReviewSprintBoard.data?.summary.readyForSprint ?? null,
+    readyWithPlaybook: reports.autopilotReviewSprintBoard.data?.summary.readyWithPlaybook ?? null,
+    safeDraftItems: reports.autopilotReviewSprintBoard.data?.summary.safeDraftItems ?? null,
+    unsafeItems: reports.autopilotReviewSprintBoard.data?.summary.unsafeItems ?? null,
+    unsafeItemList: reports.autopilotReviewSprintBoard.data?.unsafeItems.slice(0, 8) ?? [],
+    withSearchQueries: reports.autopilotReviewSprintBoard.data?.summary.withSearchQueries ?? null,
+    withSourceTargets: reports.autopilotReviewSprintBoard.data?.summary.withSourceTargets ?? null,
   },
   reviewOptimizationBrief: {
     briefs: reports.reviewOptimizationBrief.data?.summary.briefs ?? null,
@@ -1418,6 +1464,9 @@ function buildNextActions() {
   if (!reports.autopilotHumanReviewPlaybook.data || reports.autopilotHumanReviewPlaybook.data.summary.unsafeItems > 0) {
     return ["Open docs/autopilot-human-review-playbook.md and resolve unsafe human-review playbook items before any mark:review command."];
   }
+  if (!reports.autopilotReviewSprintBoard.data || reports.autopilotReviewSprintBoard.data.summary.unsafeItems > 0) {
+    return ["Open docs/autopilot-review-sprint-board.md and resolve unsafe sprint items before assigning manual review work."];
+  }
   if (!reports.reviewOptimizationBrief.data || reports.reviewOptimizationBrief.data.summary.unsafeCommands > 0) {
     return ["Open docs/review-optimization-brief.md and resolve unsafe or missing copydesk guidance before manual review."];
   }
@@ -1487,6 +1536,7 @@ function buildNextActions() {
     "Use docs/autopilot-internal-link-brief.md to add one contextual public internal link during human review.",
     "Use docs/autopilot-source-verification-brief.md to verify top-3 official sources and fast-changing claims during human review.",
     "Use docs/autopilot-human-review-playbook.md as the merged top-3 checklist before any mark:review command.",
+    "Use docs/autopilot-review-sprint-board.md as the next-10 manual review sprint order.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
     "If approved by a human, run mark:review with --confirm-human for approved files only.",
     "Publish only status=review articles in a 1-3 article batch after a dry-run.",
@@ -1749,6 +1799,30 @@ function toMarkdown(data: typeof payload) {
     ...data.autopilotHumanReviewPlaybook.itemsList.map(
       (item) =>
         `| ${item.readyForHumanReview} | ${item.safeDraft} | ${item.searchActions.length} | ${item.sourceActions.length} | ${item.internalLinkActions.length} | ${item.manualOnlyCommands.markReviewAfterHumanApproval.includes("--confirm-human")} | ${item.manualOnlyCommands.publishConfirm} | ${item.title} | ${item.file} |`,
+    ),
+    "",
+    "## Autopilot Review Sprint Board",
+    "",
+    `- Items: ${data.autopilotReviewSprintBoard.items}`,
+    `- Ready for sprint: ${data.autopilotReviewSprintBoard.readyForSprint}`,
+    `- Safe draft items: ${data.autopilotReviewSprintBoard.safeDraftItems}`,
+    `- Ready with playbook: ${data.autopilotReviewSprintBoard.readyWithPlaybook}`,
+    `- Queued for playbook: ${data.autopilotReviewSprintBoard.queuedForPlaybook}`,
+    `- Items needing search query: ${data.autopilotReviewSprintBoard.itemsNeedingSearchQuery}`,
+    `- Items with command boundary: ${data.autopilotReviewSprintBoard.itemsWithCommandBoundary}`,
+    `- With search queries: ${data.autopilotReviewSprintBoard.withSearchQueries}`,
+    `- With source targets: ${data.autopilotReviewSprintBoard.withSourceTargets}`,
+    `- Unsafe items: ${data.autopilotReviewSprintBoard.unsafeItems}`,
+    "",
+    "Unsafe sprint items:",
+    "",
+    ...(data.autopilotReviewSprintBoard.unsafeItemList.length ? data.autopilotReviewSprintBoard.unsafeItemList.map((item) => `- ${JSON.stringify(item)}`) : ["- none"]),
+    "",
+    "| Order | Ready | Stage | Lane | Sources | Queries | Mark-review gated | Publish confirm | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.autopilotReviewSprintBoard.itemsList.map(
+      (item) =>
+        `| ${item.sprintOrder} | ${item.readyForSprint} | ${item.playbookStage} | ${item.lane} | ${item.sourceTargets} | ${item.searchQueries} | ${item.commandBoundary.markReviewAfterHumanApproval.includes("--confirm-human")} | ${item.commandBoundary.publishConfirm} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Review Optimization Brief",

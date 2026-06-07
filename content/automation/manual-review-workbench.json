@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T01:36:06.817Z",
+  "generatedAt": "2026-06-07T01:41:09.699Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -287,13 +287,13 @@
       },
       {
         "candidates": 5,
-        "lane": "content-backlog: Agent 部署、工具调用和记忆",
+        "lane": "content-backlog: 全行业 AI 提示词和工作流模板",
         "priorityScore": 334,
         "publicMatches": 0
       },
       {
         "candidates": 5,
-        "lane": "content-backlog: 全行业 AI 提示词和工作流模板",
+        "lane": "content-backlog: Agent 部署、工具调用和记忆",
         "priorityScore": 334,
         "publicMatches": 0
       },
@@ -815,10 +815,10 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 119,
+    "filesScanned": 121,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 940
+    "watchMentions": 1004
   },
   "contentIntegrity": {
     "allIssueItems": 0,

@@ -1,14 +1,14 @@
 # Traffic Claim Guard
-Generated at: 2026-06-07T01:36:17.338Z
+Generated at: 2026-06-07T01:42:00.738Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
 - Note: This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples.
 ## Summary
-- filesScanned: 119
+- filesScanned: 121
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 940
+- watchMentions: 1024
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -20,10 +20,6 @@ None.
 | README.md | 250 | 4. 每次只发布 1-3 篇人工审核文章，观察收录和点击。 |
 | README.md | 276 | - Google Search Console 提交清单：`docs/search-console-setup.md` |
 | app/llms.txt/route.ts | 47 | "- The site does not claim real traffic, impressions, income guarantees, or automatic publishing.", |
-| docs/NEXT_ACTIONS.md | 24 | ## 4. 收款和流量收益 |
-| docs/NEXT_ACTIONS.md | 29 | - 稳定流量后再接联盟链接和广告。 |
-| docs/NEXT_ACTIONS.md | 46 | - 有 5 篇以上人工审核公开文章：注册 Google Search Console。 |
-| docs/NEXT_ACTIONS.md | 47 | - 有稳定访问：开启 Vercel Web Analytics 或 Google Analytics。 |
 | docs/ai-deployment-coverage.md | 11 | - Note: This coverage matrix is read-only. It organizes deployment, Agent, RAG, and model infrastructure drafts for manual review and does not claim measured traffic. |
 | docs/ai-deployment-review-pack.md | 17 | - Traffic note: Search queries are broad intent seeds, not measured traffic, rankings, clicks, impressions, or income. |
 | docs/ai-deployment-review-pack.md | 113 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
@@ -37,18 +33,18 @@ None.
 | docs/ai-deployment-review-pack.md | 562 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
 | docs/ai-deployment-review-pack.md | 618 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
 | docs/automation-digest.md | 14 | - Traffic data available: false |
-| docs/automation-digest.md | 436 | ## Traffic Evidence |
-| docs/automation-digest.md | 438 | - Traffic data available: false |
-| docs/automation-digest.md | 439 | - Can claim traffic: false |
-| docs/automation-digest.md | 441 | - Measured traffic sources: none |
-| docs/automation-digest.md | 442 | - Search Console verification evidence: false |
-| docs/automation-digest.md | 445 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 446 | - Traffic claim files scanned: 119 |
-| docs/automation-digest.md | 447 | - Traffic claim watch mentions: 940 |
-| docs/automation-digest.md | 483 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
+| docs/automation-digest.md | 466 | ## Traffic Evidence |
+| docs/automation-digest.md | 468 | - Traffic data available: false |
+| docs/automation-digest.md | 469 | - Can claim traffic: false |
+| docs/automation-digest.md | 471 | - Measured traffic sources: none |
+| docs/automation-digest.md | 472 | - Search Console verification evidence: false |
+| docs/automation-digest.md | 475 | - Unsupported traffic claims: 0 |
+| docs/automation-digest.md | 476 | - Traffic claim files scanned: 121 |
+| docs/automation-digest.md | 477 | - Traffic claim watch mentions: 1004 |
+| docs/automation-digest.md | 513 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
 | docs/automation-gate.md | 31 | \| traffic evidence audit passed and is read-only \| PASS \| failedChecks=0, measuredTrafficSources=0 \| |
 | docs/automation-gate.md | 32 | \| traffic is not claimed without measured metrics \| PASS \| trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 \| |
-| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=119, unsafeClaims=0, watchMentions=940 \| |
+| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=121, unsafeClaims=0, watchMentions=1004 \| |
 | docs/autopilot-approval-packet.md | 18 | - Traffic data available: false |
 | docs/autopilot-approval-packet.md | 19 | - Can claim traffic: false |
 | docs/autopilot-approval-packet.md | 95 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
@@ -76,24 +72,28 @@ None.
 | docs/autopilot-review-queue.md | 186 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
 | docs/autopilot-review-queue.md | 203 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
 | docs/autopilot-review-queue.md | 218 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
-| docs/autopilot-search-intent-brief.md | 19 | - Traffic data available: false |
-| docs/autopilot-search-intent-brief.md | 20 | - Can claim traffic: false |
-| docs/autopilot-search-intent-brief.md | 36 | - Exact query hits and token hits are local text checks. They do not claim search volume, ranking, impressions, clicks, or traffic. |
-| docs/autopilot-source-verification-brief.md | 19 | - Traffic data available: false |
-| docs/autopilot-source-verification-brief.md | 20 | - Can claim traffic: false |
-| docs/autopilot-source-verification-brief.md | 67 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
-| docs/autopilot-source-verification-brief.md | 129 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
-| docs/autopilot-source-verification-brief.md | 192 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
-| docs/broad-search-demand-map.md | 5 | This report is read-only. It turns broad user-search demand areas into a review and content-gap map. It does not publish, mark review, claim keyword volume, or claim traffic. |
-| docs/broad-search-demand-map.md | 12 | - Note: Read-only broad-demand map. It prioritizes likely user-search themes from the local content inventory and official source targets; it does not claim keyword volume, rankings, clicks, or traffic. |
-| docs/broad-search-demand-map.md | 123 | \| 31 \| 100 \| informational \| 医疗 AI 提示词 \| 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 \| content/blog/healthcare-admin-ai-prompts-guide.mdx \| |
-| docs/content-freshness.md | 10 | - Note: This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status. |
-| docs/content-opportunity-backlog.md | 5 | This backlog is read-only. It does not publish articles, mark review, or claim measured traffic. |
-| docs/content-opportunity-backlog.md | 10 | - Note: This backlog is based on local content inventory and broad search intent themes only. It does not claim traffic, impressions, keyword volume, or ranking data. |
-| docs/content-opportunity-backlog.md | 28 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 22 \| 5 \| informational \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
-| docs/content-opportunity-backlog.md | 36 | - Search demand note: Broad search-intent theme, not measured traffic or keyword volume. |
-| docs/content-opportunity-backlog.md | 66 | - Search demand note: Broad search-intent theme, not measured traffic or keyword volume. |
-| docs/content-opportunity-backlog.md | 96 | - Search demand note: Broad search-intent theme, not measured traffic or keyword volume. |
+| docs/autopilot-review-sprint-board.md | 19 | - Traffic data available: false |
+| docs/autopilot-review-sprint-board.md | 20 | - Can claim traffic: false |
+| docs/autopilot-review-sprint-board.md | 83 | - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported. |
+| docs/autopilot-review-sprint-board.md | 90 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
+| docs/autopilot-review-sprint-board.md | 109 | - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported. |
+| docs/autopilot-review-sprint-board.md | 116 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
+| docs/autopilot-review-sprint-board.md | 135 | - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported. |
+| docs/autopilot-review-sprint-board.md | 142 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
+| docs/autopilot-review-sprint-board.md | 161 | - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported. |
+| docs/autopilot-review-sprint-board.md | 168 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
+| docs/autopilot-review-sprint-board.md | 187 | - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported. |
+| docs/autopilot-review-sprint-board.md | 194 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
+| docs/autopilot-review-sprint-board.md | 213 | - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported. |
+| docs/autopilot-review-sprint-board.md | 220 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
+| docs/autopilot-review-sprint-board.md | 239 | - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported. |
+| docs/autopilot-review-sprint-board.md | 246 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
+| docs/autopilot-review-sprint-board.md | 265 | - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported. |
+| docs/autopilot-review-sprint-board.md | 272 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
+| docs/autopilot-review-sprint-board.md | 291 | - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported. |
+| docs/autopilot-review-sprint-board.md | 298 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
+| docs/autopilot-review-sprint-board.md | 317 | - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported. |
+| docs/autopilot-review-sprint-board.md | 322 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
 ## Next Actions
 - Keep saying that live/search surfaces are healthy, not that traffic exists.
 - Only report traffic after an audited source provides clicks, impressions, visits, or pageviews.

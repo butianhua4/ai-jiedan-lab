@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-07T01:36:17.338Z",
+  "generatedAt": "2026-06-07T01:42:00.738Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 119,
+    "filesScanned": 121,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 940
+    "watchMentions": 1024
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -47,30 +47,6 @@
       "line": 47,
       "reason": "traffic-related mention",
       "text": "\"- The site does not claim real traffic, impressions, income guarantees, or automatic publishing.\","
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 24,
-      "reason": "traffic-related mention",
-      "text": "## 4. 收款和流量收益"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 29,
-      "reason": "traffic-related mention",
-      "text": "- 稳定流量后再接联盟链接和广告。"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 46,
-      "reason": "traffic-related mention",
-      "text": "- 有 5 篇以上人工审核公开文章：注册 Google Search Console。"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 47,
-      "reason": "traffic-related mention",
-      "text": "- 有稳定访问：开启 Vercel Web Analytics 或 Google Analytics。"
     },
     {
       "file": "docs/ai-deployment-coverage.md",
@@ -152,55 +128,55 @@
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 436,
+      "line": 466,
       "reason": "traffic-related mention",
       "text": "## Traffic Evidence"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 438,
+      "line": 468,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 439,
+      "line": 469,
       "reason": "traffic-related mention",
       "text": "- Can claim traffic: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 441,
+      "line": 471,
       "reason": "traffic-related mention",
       "text": "- Measured traffic sources: none"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 442,
+      "line": 472,
       "reason": "traffic-related mention",
       "text": "- Search Console verification evidence: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 445,
+      "line": 475,
       "reason": "traffic-related mention",
       "text": "- Unsupported traffic claims: 0"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 446,
+      "line": 476,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 119"
+      "text": "- Traffic claim files scanned: 121"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 447,
+      "line": 477,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 940"
+      "text": "- Traffic claim watch mentions: 1004"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 483,
+      "line": 513,
       "reason": "traffic-related mention",
       "text": "| Dify、n8n、MCP 和无代码 AI 自动化 | 258 | 0 | 5 | 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 |"
     },
@@ -220,7 +196,7 @@
       "file": "docs/automation-gate.md",
       "line": 33,
       "reason": "traffic-related mention",
-      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=119, unsafeClaims=0, watchMentions=940 |"
+      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=121, unsafeClaims=0, watchMentions=1004 |"
     },
     {
       "file": "docs/autopilot-approval-packet.md",
@@ -385,112 +361,136 @@
       "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
     },
     {
-      "file": "docs/autopilot-search-intent-brief.md",
+      "file": "docs/autopilot-review-sprint-board.md",
       "line": 19,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
-      "file": "docs/autopilot-search-intent-brief.md",
+      "file": "docs/autopilot-review-sprint-board.md",
       "line": 20,
       "reason": "traffic-related mention",
       "text": "- Can claim traffic: false"
     },
     {
-      "file": "docs/autopilot-search-intent-brief.md",
-      "line": 36,
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 83,
       "reason": "traffic-related mention",
-      "text": "- Exact query hits and token hits are local text checks. They do not claim search volume, ranking, impressions, clicks, or traffic."
+      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
     },
     {
-      "file": "docs/autopilot-source-verification-brief.md",
-      "line": 19,
-      "reason": "traffic-related mention",
-      "text": "- Traffic data available: false"
-    },
-    {
-      "file": "docs/autopilot-source-verification-brief.md",
-      "line": 20,
-      "reason": "traffic-related mention",
-      "text": "- Can claim traffic: false"
-    },
-    {
-      "file": "docs/autopilot-source-verification-brief.md",
-      "line": 67,
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 90,
       "reason": "traffic-related mention",
       "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
     },
     {
-      "file": "docs/autopilot-source-verification-brief.md",
-      "line": 129,
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 109,
+      "reason": "traffic-related mention",
+      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
+    },
+    {
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 116,
       "reason": "traffic-related mention",
       "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
     },
     {
-      "file": "docs/autopilot-source-verification-brief.md",
-      "line": 192,
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 135,
+      "reason": "traffic-related mention",
+      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
+    },
+    {
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 142,
       "reason": "traffic-related mention",
       "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
     },
     {
-      "file": "docs/broad-search-demand-map.md",
-      "line": 5,
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 161,
       "reason": "traffic-related mention",
-      "text": "This report is read-only. It turns broad user-search demand areas into a review and content-gap map. It does not publish, mark review, claim keyword volume, or claim traffic."
+      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
     },
     {
-      "file": "docs/broad-search-demand-map.md",
-      "line": 12,
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 168,
       "reason": "traffic-related mention",
-      "text": "- Note: Read-only broad-demand map. It prioritizes likely user-search themes from the local content inventory and official source targets; it does not claim keyword volume, rankings, clicks, or traffic."
+      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
     },
     {
-      "file": "docs/broad-search-demand-map.md",
-      "line": 123,
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 187,
       "reason": "traffic-related mention",
-      "text": "| 31 | 100 | informational | 医疗 AI 提示词 | 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 | content/blog/healthcare-admin-ai-prompts-guide.mdx |"
+      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
     },
     {
-      "file": "docs/content-freshness.md",
-      "line": 10,
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 194,
       "reason": "traffic-related mention",
-      "text": "- Note: This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status."
+      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
     },
     {
-      "file": "docs/content-opportunity-backlog.md",
-      "line": 5,
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 213,
       "reason": "traffic-related mention",
-      "text": "This backlog is read-only. It does not publish articles, mark review, or claim measured traffic."
+      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
     },
     {
-      "file": "docs/content-opportunity-backlog.md",
-      "line": 10,
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 220,
       "reason": "traffic-related mention",
-      "text": "- Note: This backlog is based on local content inventory and broad search intent themes only. It does not claim traffic, impressions, keyword volume, or ranking data."
+      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
     },
     {
-      "file": "docs/content-opportunity-backlog.md",
-      "line": 28,
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 239,
       "reason": "traffic-related mention",
-      "text": "| Dify、n8n、MCP 和无代码 AI 自动化 | 258 | 0 | 22 | 5 | informational | 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 |"
+      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
     },
     {
-      "file": "docs/content-opportunity-backlog.md",
-      "line": 36,
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 246,
       "reason": "traffic-related mention",
-      "text": "- Search demand note: Broad search-intent theme, not measured traffic or keyword volume."
+      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
     },
     {
-      "file": "docs/content-opportunity-backlog.md",
-      "line": 66,
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 265,
       "reason": "traffic-related mention",
-      "text": "- Search demand note: Broad search-intent theme, not measured traffic or keyword volume."
+      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
     },
     {
-      "file": "docs/content-opportunity-backlog.md",
-      "line": 96,
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 272,
       "reason": "traffic-related mention",
-      "text": "- Search demand note: Broad search-intent theme, not measured traffic or keyword volume."
+      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
+    },
+    {
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 291,
+      "reason": "traffic-related mention",
+      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
+    },
+    {
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 298,
+      "reason": "traffic-related mention",
+      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
+    },
+    {
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 317,
+      "reason": "traffic-related mention",
+      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
+    },
+    {
+      "file": "docs/autopilot-review-sprint-board.md",
+      "line": 322,
+      "reason": "traffic-related mention",
+      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
     }
   ],
   "nextActions": [

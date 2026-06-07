@@ -58,6 +58,7 @@ const tasks: Task[] = [
   { title: "Generate autopilot internal link brief", args: ["run", "automation:autopilot-internal-links"] },
   { title: "Generate autopilot source verification brief", args: ["run", "automation:autopilot-source-verification"] },
   { title: "Generate autopilot human review playbook", args: ["run", "automation:autopilot-human-review"] },
+  { title: "Generate autopilot review sprint board", args: ["run", "automation:autopilot-review-sprint"] },
   { title: "Generate review coverage report", args: ["run", "automation:review-coverage"] },
   { title: "Generate manual review workbench", args: ["run", "automation:workbench"] },
   { title: "Run searchability check", args: ["run", "--silent", "searchability:check"], outputFile: "content/automation/searchability-check.json" },
