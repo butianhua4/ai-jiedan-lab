@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T03:58:35.654Z",
+  "generatedAt": "2026-06-07T04:07:44.434Z",
   "failures": [],
   "ok": true,
   "tasks": [
@@ -31,6 +31,7 @@
     "Generate search query coverage",
     "Run search query match audit",
     "Generate search demand intake",
+    "Generate search demand review pack",
     "Generate broad search demand map",
     "Generate AI deployment review pack",
     "Generate industry prompt review pack",

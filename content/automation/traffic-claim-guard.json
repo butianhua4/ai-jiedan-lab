@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-07T03:59:41.382Z",
+  "generatedAt": "2026-06-07T04:08:48.930Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 141,
+    "filesScanned": 143,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 1521
+    "watchMentions": 1588
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -140,79 +140,79 @@
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 381,
+      "line": 421,
       "reason": "traffic-related mention",
       "text": "| 313 | 0 | 32 | 6 | 3 | 5 | RAG、知识库、向量数据库和引用溯源 | RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。 |"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 383,
+      "line": 423,
       "reason": "traffic-related mention",
       "text": "| 307 | 0 | 36 | 6 | 3 | 5 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | 这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。 |"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 501,
+      "line": 541,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 754,
+      "line": 794,
       "reason": "traffic-related mention",
       "text": "## Traffic Evidence"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 756,
+      "line": 796,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 757,
+      "line": 797,
       "reason": "traffic-related mention",
       "text": "- Can claim traffic: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 759,
+      "line": 799,
       "reason": "traffic-related mention",
       "text": "- Measured traffic sources: none"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 760,
+      "line": 800,
       "reason": "traffic-related mention",
       "text": "- Search Console verification evidence: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 763,
+      "line": 803,
       "reason": "traffic-related mention",
       "text": "- Unsupported traffic claims: 0"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 764,
+      "line": 804,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 141"
+      "text": "- Traffic claim files scanned: 143"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 765,
+      "line": 805,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 1521"
+      "text": "- Traffic claim watch mentions: 1588"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 778,
+      "line": 818,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 853,
+      "line": 893,
       "reason": "traffic-related mention",
       "text": "| Dify、n8n、MCP 和无代码 AI 自动化 | 258 | 0 | 5 | 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 |"
     },
@@ -232,7 +232,7 @@
       "file": "docs/automation-gate.md",
       "line": 33,
       "reason": "traffic-related mention",
-      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=141, unsafeClaims=0, watchMentions=1521 |"
+      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=143, unsafeClaims=0, watchMentions=1588 |"
     },
     {
       "file": "docs/autopilot-approval-packet.md",

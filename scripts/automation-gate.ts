@@ -216,6 +216,45 @@ async function main() {
     };
     unsafeLanes?: unknown[];
   }>("content/automation/search-demand-intake.json");
+  const searchDemandReviewPack = readJson<{
+    guardrails: { autoCreateArticles: boolean; autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    items?: Array<{
+      commandBoundary?: {
+        markReviewAfterHumanApproval?: string;
+        publishConfirm?: string;
+        publishDryRunAfterReview?: string;
+        stopBefore?: string;
+      };
+      factCheckQueries?: unknown[];
+      humanReviewChecklist?: unknown[];
+      manualReviewFocus?: unknown[];
+      officialSourceTargets?: unknown[];
+      publicInternalLinkSuggestion?: unknown;
+      readyForHumanReview?: boolean;
+      safeDraft?: boolean;
+      searchQueries?: unknown[];
+      stopBefore?: string;
+    }>;
+    laneSummaries?: Array<{ items?: number; lane?: string; unsafeItems?: number }>;
+    summary: {
+      factCheckQueries: number;
+      items: number;
+      itemsPerLaneMax: number;
+      itemsWithCommandBoundary: number;
+      itemsWithHumanChecklist: number;
+      itemsWithInternalLinkSuggestion: number;
+      itemsWithManualReviewFocus: number;
+      itemsWithOfficialSources: number;
+      itemsWithSearchQueries: number;
+      lanes: number;
+      readyItems: number;
+      reviewQueueMatchedItems: number;
+      safeDraftItems: number;
+      unsafeItems: number;
+      zeroPublicLaneItems: number;
+    };
+    unsafeItems?: unknown[];
+  }>("content/automation/search-demand-review-pack.json");
   const broadSearchDemand = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     sourceEvidence?: { officialSources?: unknown[] };
@@ -2239,6 +2278,50 @@ async function main() {
           ),
         ),
       detail: `queries=${searchDemandIntake.summary.searchQueries}, sources=${searchDemandIntake.summary.officialSourceTargets}, formats=${searchDemandIntake.summary.contentFormats}, queueMatches=${searchDemandIntake.summary.reviewQueueMatches}`,
+    },
+    {
+      name: "search demand review pack is read-only and covers intake lanes",
+      ok:
+        searchDemandReviewPack.guardrails.autoCreateArticles === false &&
+        searchDemandReviewPack.guardrails.autoEditArticles === false &&
+        searchDemandReviewPack.guardrails.autoMarkReview === false &&
+        searchDemandReviewPack.guardrails.autoPublish === false &&
+        searchDemandReviewPack.guardrails.trafficClaim === "not-included" &&
+        searchDemandReviewPack.summary.lanes === searchDemandIntake.summary.lanes &&
+        searchDemandReviewPack.summary.items >= searchDemandIntake.summary.lanes * 2 &&
+        searchDemandReviewPack.summary.itemsPerLaneMax <= 2 &&
+        searchDemandReviewPack.summary.unsafeItems === 0,
+      detail: `lanes=${searchDemandReviewPack.summary.lanes}, items=${searchDemandReviewPack.summary.items}, maxPerLane=${searchDemandReviewPack.summary.itemsPerLaneMax}, unsafe=${searchDemandReviewPack.summary.unsafeItems}`,
+    },
+    {
+      name: "search demand review pack keeps review actions human-gated",
+      ok:
+        searchDemandReviewPack.summary.readyItems === searchDemandReviewPack.summary.items &&
+        searchDemandReviewPack.summary.safeDraftItems === searchDemandReviewPack.summary.items &&
+        searchDemandReviewPack.summary.itemsWithCommandBoundary === searchDemandReviewPack.summary.items &&
+        searchDemandReviewPack.summary.itemsWithHumanChecklist === searchDemandReviewPack.summary.items &&
+        searchDemandReviewPack.summary.itemsWithManualReviewFocus === searchDemandReviewPack.summary.items &&
+        searchDemandReviewPack.summary.itemsWithOfficialSources === searchDemandReviewPack.summary.items &&
+        searchDemandReviewPack.summary.itemsWithSearchQueries === searchDemandReviewPack.summary.items &&
+        searchDemandReviewPack.summary.factCheckQueries >= searchDemandReviewPack.summary.items * 4 &&
+        searchDemandReviewPack.summary.zeroPublicLaneItems >= searchDemandIntake.summary.lanesWithoutPublicCoverage &&
+        Boolean(
+          searchDemandReviewPack.items?.every(
+            (item) =>
+              item.readyForHumanReview === true &&
+              item.safeDraft === true &&
+              (item.searchQueries?.length || 0) >= 8 &&
+              (item.officialSourceTargets?.length || 0) >= 3 &&
+              (item.factCheckQueries?.length || 0) > 0 &&
+              (item.humanReviewChecklist?.length || 0) >= 6 &&
+              (item.manualReviewFocus?.length || 0) >= 4 &&
+              item.commandBoundary?.markReviewAfterHumanApproval?.includes("--confirm-human") &&
+              !item.commandBoundary?.publishDryRunAfterReview?.includes("--confirm") &&
+              item.commandBoundary?.publishConfirm === "not-included" &&
+              item.stopBefore?.includes("explicit human approval"),
+          ),
+        ),
+      detail: `ready=${searchDemandReviewPack.summary.readyItems}, commands=${searchDemandReviewPack.summary.itemsWithCommandBoundary}, sources=${searchDemandReviewPack.summary.itemsWithOfficialSources}, queries=${searchDemandReviewPack.summary.itemsWithSearchQueries}, factChecks=${searchDemandReviewPack.summary.factCheckQueries}`,
     },
     {
       name: "broad search demand map is read-only and covers major demand themes",

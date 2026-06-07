@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T03:59:43.144Z",
+  "generatedAt": "2026-06-07T04:08:50.801Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -290,7 +290,7 @@
         "url": "https://ai-sdk.dev/docs"
       },
       {
-        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=pt-br",
+        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=id",
         "ok": true,
         "references": [
           {
@@ -6720,6 +6720,1406 @@
     "searchQueries": 81,
     "unsafeLanes": 0,
     "unsafeLaneList": []
+  },
+  "searchDemandReviewPack": {
+    "factCheckQueries": 79,
+    "items": 16,
+    "itemsList": [
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "contentFormats": [
+          "agent deployment guide",
+          "tool permission checklist",
+          "MCP server checklist",
+          "human approval workflow"
+        ],
+        "factCheckQueries": [
+          "AI Agent 部署 official docs latest",
+          "AI Agent 部署 current limitations",
+          "AI Agent deployment tutorial official docs latest",
+          "agent tool calling tutorial official docs latest",
+          "OpenAI Agents SDK guide official docs latest",
+          "Vercel AI SDK agent official docs latest",
+          "MCP server deployment official docs latest",
+          "agent tool permission checklist official docs latest"
+        ],
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "humanReviewChecklist": [
+          "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+          "Verify source targets for lane: agent-deployment-tools-mcp.",
+          "Check the article directly answers the primary search phrase: AI Agent deployment tutorial.",
+          "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+          "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+          "Approve or replace internal link suggestion: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+          "Publishing remains separate and requires explicit approval."
+        ],
+        "lane": "agent-deployment-tools-mcp",
+        "manualReviewFocus": [
+          "Confirm tool permissions, allowlists, audit logs, and human approval steps.",
+          "Treat MCP and tool calling as security-sensitive.",
+          "Include fallback and incident handling before any production claim.",
+          "Verify framework names and current docs before approval."
+        ],
+        "officialSourceTargets": [
+          "OpenAI Agents SDK docs: https://openai.github.io/openai-agents-python/",
+          "OpenAI Agents guide: https://platform.openai.com/docs/guides/agents",
+          "Vercel AI SDK agents docs: https://ai-sdk.dev/docs/agents",
+          "Model Context Protocol security best practices: https://modelcontextprotocol.io/specification/draft/basic/security_best_practices"
+        ],
+        "priorityScore": 689,
+        "publicInternalLinkSuggestion": {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, vercel, 部署, 上线, 检查, 新手",
+          "score": 35,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        "publicMatches": 0,
+        "readyForHumanReview": true,
+        "reviewQueueMatched": true,
+        "safeDraft": true,
+        "searchQueries": [
+          "AI Agent deployment tutorial",
+          "agent tool calling tutorial",
+          "OpenAI Agents SDK guide",
+          "Vercel AI SDK agent",
+          "MCP server deployment",
+          "agent tool permission checklist",
+          "AI Agent 部署教程",
+          "Agent 工具调用教程",
+          "MCP 服务器部署",
+          "Agent 权限控制"
+        ],
+        "sourceHealth": {
+          "hasReachableSource": true,
+          "reachableUrls": []
+        },
+        "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "userProblem": "People want agents to act, but production content must start with permissions, tools, logs, and human gates.",
+        "warningIssues": [
+          "warning: source health has no per-file reachable URL list; verify official source targets manually"
+        ]
+      },
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "contentFormats": [
+          "agent deployment guide",
+          "tool permission checklist",
+          "MCP server checklist",
+          "human approval workflow"
+        ],
+        "factCheckQueries": [
+          "AI Agent 记忆 official docs latest",
+          "AI Agent 记忆 current limitations",
+          "AI Agent deployment tutorial official docs latest",
+          "agent tool calling tutorial official docs latest",
+          "OpenAI Agents SDK guide official docs latest",
+          "Vercel AI SDK agent official docs latest",
+          "MCP server deployment official docs latest",
+          "agent tool permission checklist official docs latest"
+        ],
+        "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+        "humanReviewChecklist": [
+          "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+          "Verify source targets for lane: agent-deployment-tools-mcp.",
+          "Check the article directly answers the primary search phrase: AI Agent deployment tutorial.",
+          "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+          "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+          "Approve or replace internal link suggestion: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
+          "Publishing remains separate and requires explicit approval."
+        ],
+        "lane": "agent-deployment-tools-mcp",
+        "manualReviewFocus": [
+          "Confirm tool permissions, allowlists, audit logs, and human approval steps.",
+          "Treat MCP and tool calling as security-sensitive.",
+          "Include fallback and incident handling before any production claim.",
+          "Verify framework names and current docs before approval."
+        ],
+        "officialSourceTargets": [
+          "OpenAI Agents SDK docs: https://openai.github.io/openai-agents-python/",
+          "OpenAI Agents guide: https://platform.openai.com/docs/guides/agents",
+          "Vercel AI SDK agents docs: https://ai-sdk.dev/docs/agents",
+          "Model Context Protocol security best practices: https://modelcontextprotocol.io/specification/draft/basic/security_best_practices"
+        ],
+        "priorityScore": 689,
+        "publicInternalLinkSuggestion": {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 一个, 么做, 接单",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        "publicMatches": 0,
+        "readyForHumanReview": true,
+        "reviewQueueMatched": true,
+        "safeDraft": true,
+        "searchQueries": [
+          "AI Agent deployment tutorial",
+          "agent tool calling tutorial",
+          "OpenAI Agents SDK guide",
+          "Vercel AI SDK agent",
+          "MCP server deployment",
+          "agent tool permission checklist",
+          "AI Agent 部署教程",
+          "Agent 工具调用教程",
+          "MCP 服务器部署",
+          "Agent 权限控制"
+        ],
+        "sourceHealth": {
+          "hasReachableSource": true,
+          "reachableUrls": []
+        },
+        "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+        "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+        "userProblem": "People want agents to act, but production content must start with permissions, tools, logs, and human gates.",
+        "warningIssues": [
+          "warning: source health has no per-file reachable URL list; verify official source targets manually"
+        ]
+      },
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "contentFormats": [
+          "prompt library",
+          "department workflow pack",
+          "copy-and-paste template",
+          "quality checklist"
+        ],
+        "factCheckQueries": [
+          "全行业 AI 提示词模板 official docs latest",
+          "全行业 AI 提示词模板 current limitations",
+          "AI prompt templates for business official docs latest",
+          "ChatGPT prompts for work official docs latest",
+          "industry AI prompts official docs latest",
+          "sales AI prompts official docs latest",
+          "customer service AI prompts official docs latest",
+          "HR AI prompts official docs latest"
+        ],
+        "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "humanReviewChecklist": [
+          "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+          "Verify source targets for lane: cross-industry-ai-prompts.",
+          "Check the article directly answers the primary search phrase: AI prompt templates for business.",
+          "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+          "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+          "Approve or replace internal link suggestion: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner).",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+          "Publishing remains separate and requires explicit approval."
+        ],
+        "lane": "cross-industry-ai-prompts",
+        "manualReviewFocus": [
+          "Every prompt needs input fields, output format, and quality criteria.",
+          "High-risk domains need a human review boundary.",
+          "Do not claim revenue, conversion, legal, medical, or employment outcomes.",
+          "Prefer practical workflow prompts over generic one-line prompts."
+        ],
+        "officialSourceTargets": [
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+          "OpenAI prompt generation guide: https://platform.openai.com/docs/guides/prompt-generation",
+          "Anthropic prompt engineering docs: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+        ],
+        "priorityScore": 685,
+        "publicInternalLinkSuggestion": {
+          "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+          "reason": "keyword overlap: proposal, 客户沟通, 怎么, 客户, 需求, 户沟",
+          "score": 32,
+          "slug": "upwork-client-requirements-analysis-beginner",
+          "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+          "url": "/blog/upwork-client-requirements-analysis-beginner"
+        },
+        "publicMatches": 0,
+        "readyForHumanReview": true,
+        "reviewQueueMatched": true,
+        "safeDraft": true,
+        "searchQueries": [
+          "AI prompt templates for business",
+          "ChatGPT prompts for work",
+          "industry AI prompts",
+          "sales AI prompts",
+          "customer service AI prompts",
+          "HR AI prompts",
+          "finance AI prompts",
+          "marketing AI prompt templates",
+          "全行业 AI 提示词",
+          "ChatGPT 提示词大全",
+          "销售 AI 提示词",
+          "客服 AI 提示词"
+        ],
+        "sourceHealth": {
+          "hasReachableSource": true,
+          "reachableUrls": []
+        },
+        "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+        "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+        "userProblem": "People search for ready-to-use AI prompts by role, but useful articles need workflow context and review boundaries.",
+        "warningIssues": [
+          "warning: source health has no per-file reachable URL list; verify official source targets manually"
+        ]
+      },
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "contentFormats": [
+          "prompt library",
+          "department workflow pack",
+          "copy-and-paste template",
+          "quality checklist"
+        ],
+        "factCheckQueries": [
+          "客服 AI 模型选型 official docs latest",
+          "客服 AI 模型选型 current limitations",
+          "AI prompt templates for business official docs latest",
+          "ChatGPT prompts for work official docs latest",
+          "industry AI prompts official docs latest",
+          "sales AI prompts official docs latest",
+          "customer service AI prompts official docs latest",
+          "HR AI prompts official docs latest"
+        ],
+        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "humanReviewChecklist": [
+          "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+          "Verify source targets for lane: cross-industry-ai-prompts.",
+          "Check the article directly answers the primary search phrase: AI prompt templates for business.",
+          "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+          "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+          "Approve or replace internal link suggestion: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
+          "Publishing remains separate and requires explicit approval."
+        ],
+        "lane": "cross-industry-ai-prompts",
+        "manualReviewFocus": [
+          "Every prompt needs input fields, output format, and quality criteria.",
+          "High-risk domains need a human review boundary.",
+          "Do not claim revenue, conversion, legal, medical, or employment outcomes.",
+          "Prefer practical workflow prompts over generic one-line prompts."
+        ],
+        "officialSourceTargets": [
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+          "OpenAI prompt generation guide: https://platform.openai.com/docs/guides/prompt-generation",
+          "Anthropic prompt engineering docs: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+        ],
+        "priorityScore": 679,
+        "publicInternalLinkSuggestion": {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 一个, 怎么, 么做, 第一",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        "publicMatches": 0,
+        "readyForHumanReview": true,
+        "reviewQueueMatched": true,
+        "safeDraft": true,
+        "searchQueries": [
+          "AI prompt templates for business",
+          "ChatGPT prompts for work",
+          "industry AI prompts",
+          "sales AI prompts",
+          "customer service AI prompts",
+          "HR AI prompts",
+          "finance AI prompts",
+          "marketing AI prompt templates",
+          "全行业 AI 提示词",
+          "ChatGPT 提示词大全",
+          "销售 AI 提示词",
+          "客服 AI 提示词"
+        ],
+        "sourceHealth": {
+          "hasReachableSource": true,
+          "reachableUrls": []
+        },
+        "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+        "userProblem": "People search for ready-to-use AI prompts by role, but useful articles need workflow context and review boundaries.",
+        "warningIssues": [
+          "warning: source health has no per-file reachable URL list; verify official source targets manually"
+        ]
+      },
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "contentFormats": [
+          "deployment tutorial",
+          "provider comparison",
+          "cost checklist",
+          "troubleshooting playbook"
+        ],
+        "factCheckQueries": [
+          "大模型部署 official docs latest",
+          "大模型部署 current limitations",
+          "large language model deployment tutorial official docs latest",
+          "vLLM deployment tutorial official docs latest",
+          "Hugging Face TGI deployment official docs latest",
+          "RunPod vLLM serverless official docs latest",
+          "Ollama local model tutorial official docs latest",
+          "local LLM deployment official docs latest"
+        ],
+        "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+        "humanReviewChecklist": [
+          "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+          "Verify source targets for lane: llm-deployment-and-serving.",
+          "Check the article directly answers the primary search phrase: large language model deployment tutorial.",
+          "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+          "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+          "Approve or replace internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
+          "Publishing remains separate and requires explicit approval."
+        ],
+        "lane": "llm-deployment-and-serving",
+        "manualReviewFocus": [
+          "Verify current model serving commands, endpoints, and version names.",
+          "Separate local testing from production serving.",
+          "Cover GPU memory, latency, concurrency, logs, rollback, and cost limits.",
+          "Avoid claiming that self-hosting is always cheaper or more stable."
+        ],
+        "officialSourceTargets": [
+          "vLLM docs: https://docs.vllm.ai/",
+          "Hugging Face docs: https://huggingface.co/docs",
+          "RunPod serverless vLLM docs: https://docs.runpod.io/serverless/vllm/get-started",
+          "Ollama docs: https://docs.ollama.com/"
+        ],
+        "priorityScore": 677,
+        "publicInternalLinkSuggestion": {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 检查, 新手, 查清, 清单",
+          "score": 31,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        "publicMatches": 0,
+        "readyForHumanReview": true,
+        "reviewQueueMatched": true,
+        "safeDraft": true,
+        "searchQueries": [
+          "large language model deployment tutorial",
+          "vLLM deployment tutorial",
+          "Hugging Face TGI deployment",
+          "RunPod vLLM serverless",
+          "Ollama local model tutorial",
+          "local LLM deployment",
+          "大模型部署教程",
+          "本地大模型部署",
+          "vLLM 部署教程",
+          "Ollama 本地部署教程"
+        ],
+        "sourceHealth": {
+          "hasReachableSource": true,
+          "reachableUrls": []
+        },
+        "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+        "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+        "userProblem": "Searchers want a model running, then need API access, cost control, and failure handling.",
+        "warningIssues": [
+          "warning: source health has no per-file reachable URL list; verify official source targets manually"
+        ]
+      },
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-cost-monitoring-dashboard-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-cost-monitoring-dashboard-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "contentFormats": [
+          "deployment tutorial",
+          "provider comparison",
+          "cost checklist",
+          "troubleshooting playbook"
+        ],
+        "factCheckQueries": [
+          "大模型成本监控 official docs latest",
+          "大模型成本监控 current limitations",
+          "large language model deployment tutorial official docs latest",
+          "vLLM deployment tutorial official docs latest",
+          "Hugging Face TGI deployment official docs latest",
+          "RunPod vLLM serverless official docs latest",
+          "Ollama local model tutorial official docs latest",
+          "local LLM deployment official docs latest"
+        ],
+        "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
+        "humanReviewChecklist": [
+          "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+          "Verify source targets for lane: llm-deployment-and-serving.",
+          "Check the article directly answers the primary search phrase: large language model deployment tutorial.",
+          "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+          "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+          "Add one relevant public internal link or document why no link is appropriate.",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/llm-cost-monitoring-dashboard-guide.mdx --confirm-human",
+          "Publishing remains separate and requires explicit approval."
+        ],
+        "lane": "llm-deployment-and-serving",
+        "manualReviewFocus": [
+          "Verify current model serving commands, endpoints, and version names.",
+          "Separate local testing from production serving.",
+          "Cover GPU memory, latency, concurrency, logs, rollback, and cost limits.",
+          "Avoid claiming that self-hosting is always cheaper or more stable."
+        ],
+        "officialSourceTargets": [
+          "vLLM docs: https://docs.vllm.ai/",
+          "Hugging Face docs: https://huggingface.co/docs",
+          "RunPod serverless vLLM docs: https://docs.runpod.io/serverless/vllm/get-started",
+          "Ollama docs: https://docs.ollama.com/"
+        ],
+        "priorityScore": 671,
+        "publicInternalLinkSuggestion": null,
+        "publicMatches": 0,
+        "readyForHumanReview": true,
+        "reviewQueueMatched": true,
+        "safeDraft": true,
+        "searchQueries": [
+          "large language model deployment tutorial",
+          "vLLM deployment tutorial",
+          "Hugging Face TGI deployment",
+          "RunPod vLLM serverless",
+          "Ollama local model tutorial",
+          "local LLM deployment",
+          "大模型部署教程",
+          "本地大模型部署",
+          "vLLM 部署教程",
+          "Ollama 本地部署教程"
+        ],
+        "sourceHealth": {
+          "hasReachableSource": true,
+          "reachableUrls": []
+        },
+        "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+        "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
+        "userProblem": "Searchers want a model running, then need API access, cost control, and failure handling.",
+        "warningIssues": [
+          "warning: source health has no per-file reachable URL list; verify official source targets manually",
+          "warning: no public internal-link suggestion found; add or explicitly reject one during human review"
+        ]
+      },
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "contentFormats": [
+          "RAG architecture guide",
+          "memory schema checklist",
+          "pgvector tutorial",
+          "privacy and deletion checklist"
+        ],
+        "factCheckQueries": [
+          "AI 自动化项目报价 official docs latest",
+          "AI 自动化项目报价 current limitations",
+          "RAG knowledge base tutorial official docs latest",
+          "AI agent memory official docs latest",
+          "agent long term memory official docs latest",
+          "pgvector agent memory official docs latest",
+          "vector database RAG official docs latest",
+          "RAG evaluation tutorial official docs latest"
+        ],
+        "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "humanReviewChecklist": [
+          "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+          "Verify source targets for lane: rag-knowledge-base-agent-memory.",
+          "Check the article directly answers the primary search phrase: RAG knowledge base tutorial.",
+          "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+          "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+          "Approve or replace internal link suggestion: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
+          "Publishing remains separate and requires explicit approval."
+        ],
+        "lane": "rag-knowledge-base-agent-memory",
+        "manualReviewFocus": [
+          "Separate knowledge-base RAG from user memory.",
+          "Require citations, deletion, dedupe, retention, and privacy boundaries.",
+          "Do not present vector search as durable memory by itself.",
+          "Add evaluation steps for retrieval misses and hallucinated citations."
+        ],
+        "officialSourceTargets": [
+          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+          "LangChain retrieval docs: https://python.langchain.com/docs/concepts/retrieval/",
+          "LlamaIndex docs: https://docs.llamaindex.ai/",
+          "Supabase pgvector docs: https://supabase.com/docs/guides/database/extensions/pgvector"
+        ],
+        "priorityScore": 662,
+        "publicInternalLinkSuggestion": {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 报价, 项目, 目怎, 怎么, 么报, 范围",
+          "score": 40,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        "publicMatches": 0,
+        "readyForHumanReview": true,
+        "reviewQueueMatched": true,
+        "safeDraft": true,
+        "searchQueries": [
+          "RAG knowledge base tutorial",
+          "AI agent memory",
+          "agent long term memory",
+          "pgvector agent memory",
+          "vector database RAG",
+          "RAG evaluation tutorial",
+          "AI Agent 记忆怎么做",
+          "RAG 知识库搭建教程",
+          "向量数据库 教程",
+          "智能体 长期记忆"
+        ],
+        "sourceHealth": {
+          "hasReachableSource": true,
+          "reachableUrls": []
+        },
+        "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+        "userProblem": "Searchers mix RAG, vector databases, and memory, so content needs clear boundaries and safety controls.",
+        "warningIssues": [
+          "warning: source health has no per-file reachable URL list; verify official source targets manually"
+        ]
+      },
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "contentFormats": [
+          "RAG architecture guide",
+          "memory schema checklist",
+          "pgvector tutorial",
+          "privacy and deletion checklist"
+        ],
+        "factCheckQueries": [
+          "n8n AI Agent 知识库记忆 official docs latest",
+          "n8n AI Agent 知识库记忆 current limitations",
+          "RAG knowledge base tutorial official docs latest",
+          "AI agent memory official docs latest",
+          "agent long term memory official docs latest",
+          "pgvector agent memory official docs latest",
+          "vector database RAG official docs latest",
+          "RAG evaluation tutorial official docs latest"
+        ],
+        "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+        "humanReviewChecklist": [
+          "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+          "Verify source targets for lane: rag-knowledge-base-agent-memory.",
+          "Check the article directly answers the primary search phrase: RAG knowledge base tutorial.",
+          "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+          "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+          "Approve or replace internal link suggestion: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human",
+          "Publishing remains separate and requires explicit approval."
+        ],
+        "lane": "rag-knowledge-base-agent-memory",
+        "manualReviewFocus": [
+          "Separate knowledge-base RAG from user memory.",
+          "Require citations, deletion, dedupe, retention, and privacy boundaries.",
+          "Do not present vector search as durable memory by itself.",
+          "Add evaluation steps for retrieval misses and hallucinated citations."
+        ],
+        "officialSourceTargets": [
+          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+          "LangChain retrieval docs: https://python.langchain.com/docs/concepts/retrieval/",
+          "LlamaIndex docs: https://docs.llamaindex.ai/",
+          "Supabase pgvector docs: https://supabase.com/docs/guides/database/extensions/pgvector"
+        ],
+        "priorityScore": 662,
+        "publicInternalLinkSuggestion": {
+          "file": "content/blog/build-first-webpage-with-codex.mdx",
+          "reason": "keyword overlap: ai, 怎么, 接单, 第一, 一个",
+          "score": 23,
+          "slug": "build-first-webpage-with-codex",
+          "title": "Codex 怎么做第一个网页",
+          "url": "/blog/build-first-webpage-with-codex"
+        },
+        "publicMatches": 0,
+        "readyForHumanReview": true,
+        "reviewQueueMatched": true,
+        "safeDraft": true,
+        "searchQueries": [
+          "RAG knowledge base tutorial",
+          "AI agent memory",
+          "agent long term memory",
+          "pgvector agent memory",
+          "vector database RAG",
+          "RAG evaluation tutorial",
+          "AI Agent 记忆怎么做",
+          "RAG 知识库搭建教程",
+          "向量数据库 教程",
+          "智能体 长期记忆"
+        ],
+        "sourceHealth": {
+          "hasReachableSource": true,
+          "reachableUrls": []
+        },
+        "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+        "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+        "userProblem": "Searchers mix RAG, vector databases, and memory, so content needs clear boundaries and safety controls.",
+        "warningIssues": [
+          "warning: source health has no per-file reachable URL list; verify official source targets manually"
+        ]
+      },
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/dify-workflow-error-handling-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/dify-workflow-error-handling-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "contentFormats": [
+          "no-code deployment guide",
+          "self-hosting checklist",
+          "webhook security guide",
+          "client delivery SOP"
+        ],
+        "factCheckQueries": [
+          "Dify 工作流错误处理 official docs latest",
+          "Dify 工作流错误处理 current limitations",
+          "Dify deployment tutorial official docs latest",
+          "n8n AI agent tutorial official docs latest",
+          "Flowise local deployment official docs latest",
+          "Coze bot publish tutorial official docs latest",
+          "MCP tutorial official docs latest",
+          "AI automation workflow official docs latest"
+        ],
+        "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+        "humanReviewChecklist": [
+          "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+          "Verify source targets for lane: nocode-ai-automation-deployment.",
+          "Check the article directly answers the primary search phrase: Dify deployment tutorial.",
+          "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+          "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+          "Approve or replace internal link suggestion: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/dify-workflow-error-handling-guide.mdx --confirm-human",
+          "Publishing remains separate and requires explicit approval."
+        ],
+        "lane": "nocode-ai-automation-deployment",
+        "manualReviewFocus": [
+          "Verify connector, credential, webhook, and self-hosting limits.",
+          "Avoid unsafe scraping, spam, or bypassing platform rules.",
+          "Include client acceptance criteria and manual fallback.",
+          "Keep credentials and customer data out of logs and prompts."
+        ],
+        "officialSourceTargets": [
+          "Dify docs: https://docs.dify.ai/",
+          "n8n docs: https://docs.n8n.io/",
+          "Flowise docs: https://docs.flowiseai.com/",
+          "Model Context Protocol docs: https://modelcontextprotocol.io/docs"
+        ],
+        "priorityScore": 642,
+        "publicInternalLinkSuggestion": {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 变量, 部署, next, 怎么, 失败, 新手",
+          "score": 48,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        },
+        "publicMatches": 0,
+        "readyForHumanReview": true,
+        "reviewQueueMatched": true,
+        "safeDraft": true,
+        "searchQueries": [
+          "Dify deployment tutorial",
+          "n8n AI agent tutorial",
+          "Flowise local deployment",
+          "Coze bot publish tutorial",
+          "MCP tutorial",
+          "AI automation workflow",
+          "Dify 部署教程",
+          "n8n AI 自动化教程",
+          "Flowise 本地部署",
+          "MCP 使用教程"
+        ],
+        "sourceHealth": {
+          "hasReachableSource": true,
+          "reachableUrls": []
+        },
+        "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+        "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+        "userProblem": "This lane connects search traffic to services people can buy: automation setup, deployment, acceptance, and maintenance.",
+        "warningIssues": [
+          "warning: source health has no per-file reachable URL list; verify official source targets manually"
+        ]
+      },
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/dify-workflow-vs-agent-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/dify-workflow-vs-agent-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "contentFormats": [
+          "no-code deployment guide",
+          "self-hosting checklist",
+          "webhook security guide",
+          "client delivery SOP"
+        ],
+        "factCheckQueries": [
+          "Dify Workflow 和 Agent 区别 official docs latest",
+          "Dify Workflow 和 Agent 区别 current limitations",
+          "Dify deployment tutorial official docs latest",
+          "n8n AI agent tutorial official docs latest",
+          "Flowise local deployment official docs latest",
+          "Coze bot publish tutorial official docs latest",
+          "MCP tutorial official docs latest",
+          "AI automation workflow official docs latest"
+        ],
+        "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+        "humanReviewChecklist": [
+          "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+          "Verify source targets for lane: nocode-ai-automation-deployment.",
+          "Check the article directly answers the primary search phrase: Dify deployment tutorial.",
+          "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+          "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+          "Approve or replace internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/dify-workflow-vs-agent-guide.mdx --confirm-human",
+          "Publishing remains separate and requires explicit approval."
+        ],
+        "lane": "nocode-ai-automation-deployment",
+        "manualReviewFocus": [
+          "Verify connector, credential, webhook, and self-hosting limits.",
+          "Avoid unsafe scraping, spam, or bypassing platform rules.",
+          "Include client acceptance criteria and manual fallback.",
+          "Keep credentials and customer data out of logs and prompts."
+        ],
+        "officialSourceTargets": [
+          "Dify docs: https://docs.dify.ai/",
+          "n8n docs: https://docs.n8n.io/",
+          "Flowise docs: https://docs.flowiseai.com/",
+          "Model Context Protocol docs: https://modelcontextprotocol.io/docs"
+        ],
+        "priorityScore": 642,
+        "publicInternalLinkSuggestion": {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 审核, 生成, 交付",
+          "score": 23,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        "publicMatches": 0,
+        "readyForHumanReview": true,
+        "reviewQueueMatched": true,
+        "safeDraft": true,
+        "searchQueries": [
+          "Dify deployment tutorial",
+          "n8n AI agent tutorial",
+          "Flowise local deployment",
+          "Coze bot publish tutorial",
+          "MCP tutorial",
+          "AI automation workflow",
+          "Dify 部署教程",
+          "n8n AI 自动化教程",
+          "Flowise 本地部署",
+          "MCP 使用教程"
+        ],
+        "sourceHealth": {
+          "hasReachableSource": true,
+          "reachableUrls": []
+        },
+        "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+        "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+        "userProblem": "This lane connects search traffic to services people can buy: automation setup, deployment, acceptance, and maintenance.",
+        "warningIssues": [
+          "warning: source health has no per-file reachable URL list; verify official source targets manually"
+        ]
+      },
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/mcp-server-deployment-security-checklist.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/mcp-server-deployment-security-checklist.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "contentFormats": [
+          "observability guide",
+          "evaluation checklist",
+          "RAG test plan",
+          "incident review template"
+        ],
+        "factCheckQueries": [
+          "MCP Server 部署安全 official docs latest",
+          "MCP Server 部署安全 current limitations",
+          "LLM observability tutorial official docs latest",
+          "RAG evaluation tutorial official docs latest",
+          "AI agent logs official docs latest",
+          "prompt injection defense official docs latest",
+          "promptfoo tutorial official docs latest",
+          "LangSmith tutorial official docs latest"
+        ],
+        "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+        "humanReviewChecklist": [
+          "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+          "Verify source targets for lane: llm-evals-observability-security.",
+          "Check the article directly answers the primary search phrase: LLM observability tutorial.",
+          "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+          "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+          "Approve or replace internal link suggestion: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/mcp-server-deployment-security-checklist.mdx --confirm-human",
+          "Publishing remains separate and requires explicit approval."
+        ],
+        "lane": "llm-evals-observability-security",
+        "manualReviewFocus": [
+          "Separate evaluation scores from guarantees.",
+          "Include test datasets, traces, logs, cost, latency, and privacy limits.",
+          "Cover prompt injection and retrieval failures for RAG/agent systems.",
+          "Add human sampling and rollback criteria."
+        ],
+        "officialSourceTargets": [
+          "OpenAI evals guide: https://platform.openai.com/docs/guides/evals",
+          "promptfoo docs: https://www.promptfoo.dev/docs/intro/",
+          "Ragas docs: https://docs.ragas.io/",
+          "LangSmith docs: https://docs.smith.langchain.com/"
+        ],
+        "priorityScore": 610,
+        "publicInternalLinkSuggestion": {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 部署, 怎么, 新手, 提示, 环境, 境变",
+          "score": 32,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        },
+        "publicMatches": 0,
+        "readyForHumanReview": true,
+        "reviewQueueMatched": true,
+        "safeDraft": true,
+        "searchQueries": [
+          "LLM observability tutorial",
+          "RAG evaluation tutorial",
+          "AI agent logs",
+          "prompt injection defense",
+          "promptfoo tutorial",
+          "LangSmith tutorial",
+          "LLM 评测教程",
+          "RAG 评估教程",
+          "AI 应用日志监控",
+          "提示词注入防护"
+        ],
+        "sourceHealth": {
+          "hasReachableSource": true,
+          "reachableUrls": []
+        },
+        "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+        "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+        "userProblem": "As content moves past deployment, searchers need quality, logs, evals, and security operations.",
+        "warningIssues": [
+          "warning: source health has no per-file reachable URL list; verify official source targets manually"
+        ]
+      },
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/agent-tool-permission-safety-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/agent-tool-permission-safety-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "contentFormats": [
+          "observability guide",
+          "evaluation checklist",
+          "RAG test plan",
+          "incident review template"
+        ],
+        "factCheckQueries": [
+          "Agent 工具权限控制 official docs latest",
+          "Agent 工具权限控制 current limitations",
+          "LLM observability tutorial official docs latest",
+          "RAG evaluation tutorial official docs latest",
+          "AI agent logs official docs latest",
+          "prompt injection defense official docs latest",
+          "promptfoo tutorial official docs latest",
+          "LangSmith tutorial official docs latest"
+        ],
+        "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+        "humanReviewChecklist": [
+          "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+          "Verify source targets for lane: llm-evals-observability-security.",
+          "Check the article directly answers the primary search phrase: LLM observability tutorial.",
+          "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+          "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+          "Approve or replace internal link suggestion: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/agent-tool-permission-safety-guide.mdx --confirm-human",
+          "Publishing remains separate and requires explicit approval."
+        ],
+        "lane": "llm-evals-observability-security",
+        "manualReviewFocus": [
+          "Separate evaluation scores from guarantees.",
+          "Include test datasets, traces, logs, cost, latency, and privacy limits.",
+          "Cover prompt injection and retrieval failures for RAG/agent systems.",
+          "Add human sampling and rollback criteria."
+        ],
+        "officialSourceTargets": [
+          "OpenAI evals guide: https://platform.openai.com/docs/guides/evals",
+          "promptfoo docs: https://www.promptfoo.dev/docs/intro/",
+          "Ragas docs: https://docs.ragas.io/",
+          "LangSmith docs: https://docs.smith.langchain.com/"
+        ],
+        "priorityScore": 609,
+        "publicInternalLinkSuggestion": {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 怎么, 新手, 指南, 项目, 一个, 自由",
+          "score": 28,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
+        },
+        "publicMatches": 0,
+        "readyForHumanReview": true,
+        "reviewQueueMatched": true,
+        "safeDraft": true,
+        "searchQueries": [
+          "LLM observability tutorial",
+          "RAG evaluation tutorial",
+          "AI agent logs",
+          "prompt injection defense",
+          "promptfoo tutorial",
+          "LangSmith tutorial",
+          "LLM 评测教程",
+          "RAG 评估教程",
+          "AI 应用日志监控",
+          "提示词注入防护"
+        ],
+        "sourceHealth": {
+          "hasReachableSource": true,
+          "reachableUrls": []
+        },
+        "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+        "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+        "userProblem": "As content moves past deployment, searchers need quality, logs, evals, and security operations.",
+        "warningIssues": [
+          "warning: source health has no per-file reachable URL list; verify official source targets manually"
+        ]
+      },
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "contentFormats": [
+          "API integration guide",
+          "rate-limit troubleshooting",
+          "key security checklist",
+          "multi-provider routing checklist"
+        ],
+        "factCheckQueries": [
+          "AI API Key 安全管理 official docs latest",
+          "AI API Key 安全管理 current limitations",
+          "OpenAI API integration tutorial official docs latest",
+          "Claude API rate limit official docs latest",
+          "Gemini API tutorial official docs latest",
+          "OpenRouter API tutorial official docs latest",
+          "AI API key security official docs latest",
+          "multi model AI routing official docs latest"
+        ],
+        "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+        "humanReviewChecklist": [
+          "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+          "Verify source targets for lane: ai-api-keys-limits-routing.",
+          "Check the article directly answers the primary search phrase: OpenAI API integration tutorial.",
+          "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+          "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+          "Approve or replace internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
+          "Publishing remains separate and requires explicit approval."
+        ],
+        "lane": "ai-api-keys-limits-routing",
+        "manualReviewFocus": [
+          "Verify current API docs, SDK names, endpoint behavior, and rate-limit language.",
+          "Never expose client keys; use server-side proxies and environment variables.",
+          "Add retries, backoff, queues, cost caps, and log redaction.",
+          "Do not invent pricing, limits, or model capabilities."
+        ],
+        "officialSourceTargets": [
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "Anthropic docs: https://docs.anthropic.com/",
+          "Google Gemini API docs: https://ai.google.dev/gemini-api/docs",
+          "Vercel AI Gateway docs: https://vercel.com/docs/ai-gateway"
+        ],
+        "priorityScore": 484,
+        "publicInternalLinkSuggestion": {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, 怎么, 新手, 代码, 检查, 交付",
+          "score": 31,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        "publicMatches": 1,
+        "readyForHumanReview": true,
+        "reviewQueueMatched": true,
+        "safeDraft": true,
+        "searchQueries": [
+          "OpenAI API integration tutorial",
+          "Claude API rate limit",
+          "Gemini API tutorial",
+          "OpenRouter API tutorial",
+          "AI API key security",
+          "multi model AI routing",
+          "OpenAI API 接入教程",
+          "Claude API 限流",
+          "Gemini API 教程",
+          "AI API Key 安全"
+        ],
+        "sourceHealth": {
+          "hasReachableSource": true,
+          "reachableUrls": []
+        },
+        "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+        "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+        "userProblem": "API integration is a beginner search lane and a production risk lane at the same time.",
+        "warningIssues": [
+          "warning: source health has no per-file reachable URL list; verify official source targets manually"
+        ]
+      },
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/product-manager-ai-prompts-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "contentFormats": [
+          "pricing checklist",
+          "proposal template",
+          "acceptance criteria",
+          "maintenance scope"
+        ],
+        "factCheckQueries": [
+          "产品经理 AI 提示词 official docs latest",
+          "产品经理 AI 提示词 current limitations",
+          "AI automation project pricing official docs latest",
+          "AI agent project scope official docs latest",
+          "RAG project quote official docs latest",
+          "Dify n8n project pricing official docs latest",
+          "AI deployment proposal template official docs latest",
+          "AI service delivery checklist official docs latest"
+        ],
+        "file": "content/blog/product-manager-ai-prompts-guide.mdx",
+        "humanReviewChecklist": [
+          "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+          "Verify source targets for lane: ai-service-pricing-delivery.",
+          "Check the article directly answers the primary search phrase: AI automation project pricing.",
+          "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+          "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+          "Add one relevant public internal link or document why no link is appropriate.",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
+          "Publishing remains separate and requires explicit approval."
+        ],
+        "lane": "ai-service-pricing-delivery",
+        "manualReviewFocus": [
+          "Define scope, deliverables, acceptance, maintenance, and handoff.",
+          "Do not promise traffic, revenue, ranking, or model accuracy.",
+          "Tie packages to low-risk implementation work.",
+          "Add client-side approvals for account access, data, and production changes."
+        ],
+        "officialSourceTargets": [
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+          "Dify docs: https://docs.dify.ai/",
+          "n8n docs: https://docs.n8n.io/"
+        ],
+        "priorityScore": 462,
+        "publicInternalLinkSuggestion": null,
+        "publicMatches": 4,
+        "readyForHumanReview": true,
+        "reviewQueueMatched": true,
+        "safeDraft": true,
+        "searchQueries": [
+          "AI automation project pricing",
+          "AI agent project scope",
+          "RAG project quote",
+          "Dify n8n project pricing",
+          "AI deployment proposal template",
+          "AI service delivery checklist",
+          "AI 自动化项目报价",
+          "AI Agent 项目报价",
+          "RAG 项目 报价",
+          "AI 项目验收清单"
+        ],
+        "sourceHealth": {
+          "hasReachableSource": true,
+          "reachableUrls": []
+        },
+        "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+        "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
+        "userProblem": "This lane turns search demand into services without pretending the site already has traffic or revenue proof.",
+        "warningIssues": [
+          "warning: source health has no per-file reachable URL list; verify official source targets manually",
+          "warning: no public internal-link suggestion found; add or explicitly reject one during human review"
+        ]
+      },
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "contentFormats": [
+          "pricing checklist",
+          "proposal template",
+          "acceptance criteria",
+          "maintenance scope"
+        ],
+        "factCheckQueries": [
+          "BentoML LLM 部署 official docs latest",
+          "BentoML LLM 部署 current limitations",
+          "AI automation project pricing official docs latest",
+          "AI agent project scope official docs latest",
+          "RAG project quote official docs latest",
+          "Dify n8n project pricing official docs latest",
+          "AI deployment proposal template official docs latest",
+          "AI service delivery checklist official docs latest"
+        ],
+        "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+        "humanReviewChecklist": [
+          "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+          "Verify source targets for lane: ai-service-pricing-delivery.",
+          "Check the article directly answers the primary search phrase: AI automation project pricing.",
+          "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+          "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+          "Add one relevant public internal link or document why no link is appropriate.",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
+          "Publishing remains separate and requires explicit approval."
+        ],
+        "lane": "ai-service-pricing-delivery",
+        "manualReviewFocus": [
+          "Define scope, deliverables, acceptance, maintenance, and handoff.",
+          "Do not promise traffic, revenue, ranking, or model accuracy.",
+          "Tie packages to low-risk implementation work.",
+          "Add client-side approvals for account access, data, and production changes."
+        ],
+        "officialSourceTargets": [
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+          "Dify docs: https://docs.dify.ai/",
+          "n8n docs: https://docs.n8n.io/"
+        ],
+        "priorityScore": 460,
+        "publicInternalLinkSuggestion": null,
+        "publicMatches": 4,
+        "readyForHumanReview": true,
+        "reviewQueueMatched": true,
+        "safeDraft": true,
+        "searchQueries": [
+          "AI automation project pricing",
+          "AI agent project scope",
+          "RAG project quote",
+          "Dify n8n project pricing",
+          "AI deployment proposal template",
+          "AI service delivery checklist",
+          "AI 自动化项目报价",
+          "AI Agent 项目报价",
+          "RAG 项目 报价",
+          "AI 项目验收清单"
+        ],
+        "sourceHealth": {
+          "hasReachableSource": true,
+          "reachableUrls": []
+        },
+        "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+        "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+        "userProblem": "This lane turns search demand into services without pretending the site already has traffic or revenue proof.",
+        "warningIssues": [
+          "warning: source health has no per-file reachable URL list; verify official source targets manually",
+          "warning: no public internal-link suggestion found; add or explicitly reject one during human review"
+        ]
+      },
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        },
+        "contentFormats": [
+          "API integration guide",
+          "rate-limit troubleshooting",
+          "key security checklist",
+          "multi-provider routing checklist"
+        ],
+        "factCheckQueries": [
+          "Claude API rate limit reached official docs latest",
+          "Claude API rate limit reached current limitations",
+          "OpenAI API integration tutorial official docs latest",
+          "Claude API rate limit official docs latest",
+          "Gemini API tutorial official docs latest",
+          "OpenRouter API tutorial official docs latest",
+          "AI API key security official docs latest",
+          "multi model AI routing official docs latest"
+        ],
+        "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+        "humanReviewChecklist": [
+          "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+          "Verify source targets for lane: ai-api-keys-limits-routing.",
+          "Check the article directly answers the primary search phrase: OpenAI API integration tutorial.",
+          "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+          "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+          "Approve or replace internal link suggestion: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).",
+          "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human",
+          "Publishing remains separate and requires explicit approval."
+        ],
+        "lane": "ai-api-keys-limits-routing",
+        "manualReviewFocus": [
+          "Verify current API docs, SDK names, endpoint behavior, and rate-limit language.",
+          "Never expose client keys; use server-side proxies and environment variables.",
+          "Add retries, backoff, queues, cost caps, and log redaction.",
+          "Do not invent pricing, limits, or model capabilities."
+        ],
+        "officialSourceTargets": [
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "Anthropic docs: https://docs.anthropic.com/",
+          "Google Gemini API docs: https://ai.google.dev/gemini-api/docs",
+          "Vercel AI Gateway docs: https://vercel.com/docs/ai-gateway"
+        ],
+        "priorityScore": 459,
+        "publicInternalLinkSuggestion": {
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "reason": "keyword overlap: 部署, 怎么, 么办, 新手, 失败, 环境",
+          "score": 28,
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "url": "/blog/vercel-env-variable-missing-beginner-guide"
+        },
+        "publicMatches": 1,
+        "readyForHumanReview": true,
+        "reviewQueueMatched": false,
+        "safeDraft": true,
+        "searchQueries": [
+          "OpenAI API integration tutorial",
+          "Claude API rate limit",
+          "Gemini API tutorial",
+          "OpenRouter API tutorial",
+          "AI API key security",
+          "multi model AI routing",
+          "OpenAI API 接入教程",
+          "Claude API 限流",
+          "Gemini API 教程",
+          "AI API Key 安全"
+        ],
+        "sourceHealth": {
+          "hasReachableSource": true,
+          "reachableUrls": []
+        },
+        "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+        "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+        "userProblem": "API integration is a beginner search lane and a production risk lane at the same time.",
+        "warningIssues": [
+          "warning: source health has no per-file reachable URL list; verify official source targets manually"
+        ]
+      }
+    ],
+    "itemsPerLaneMax": 2,
+    "itemsWithCommandBoundary": 16,
+    "itemsWithHumanChecklist": 16,
+    "itemsWithInternalLinkSuggestion": 13,
+    "itemsWithManualReviewFocus": 16,
+    "itemsWithOfficialSources": 16,
+    "itemsWithSearchQueries": 16,
+    "laneSummaries": [
+      {
+        "lane": "agent-deployment-tools-mcp",
+        "items": 2,
+        "publicMatches": 0,
+        "readyCandidates": 8,
+        "reviewQueueMatches": 7,
+        "unsafeItems": 0
+      },
+      {
+        "lane": "cross-industry-ai-prompts",
+        "items": 2,
+        "publicMatches": 0,
+        "readyCandidates": 8,
+        "reviewQueueMatches": 5,
+        "unsafeItems": 0
+      },
+      {
+        "lane": "llm-deployment-and-serving",
+        "items": 2,
+        "publicMatches": 0,
+        "readyCandidates": 8,
+        "reviewQueueMatches": 5,
+        "unsafeItems": 0
+      },
+      {
+        "lane": "rag-knowledge-base-agent-memory",
+        "items": 2,
+        "publicMatches": 0,
+        "readyCandidates": 8,
+        "reviewQueueMatches": 5,
+        "unsafeItems": 0
+      },
+      {
+        "lane": "nocode-ai-automation-deployment",
+        "items": 2,
+        "publicMatches": 0,
+        "readyCandidates": 8,
+        "reviewQueueMatches": 4,
+        "unsafeItems": 0
+      },
+      {
+        "lane": "llm-evals-observability-security",
+        "items": 2,
+        "publicMatches": 0,
+        "readyCandidates": 8,
+        "reviewQueueMatches": 2,
+        "unsafeItems": 0
+      },
+      {
+        "lane": "ai-api-keys-limits-routing",
+        "items": 2,
+        "publicMatches": 1,
+        "readyCandidates": 8,
+        "reviewQueueMatches": 2,
+        "unsafeItems": 0
+      },
+      {
+        "lane": "ai-service-pricing-delivery",
+        "items": 2,
+        "publicMatches": 4,
+        "readyCandidates": 8,
+        "reviewQueueMatches": 3,
+        "unsafeItems": 0
+      }
+    ],
+    "lanes": 8,
+    "readyItems": 16,
+    "reviewQueueMatchedItems": 15,
+    "safeDraftItems": 16,
+    "unsafeItems": 0,
+    "unsafeItemList": [],
+    "zeroPublicLaneItems": 12
   },
   "autopilotBroadAiDemandBrief": {
     "clusters": 8,
@@ -15017,10 +16417,10 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 141,
+    "filesScanned": 143,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 1521
+    "watchMentions": 1588
   },
   "publicSurfaceInventory": {
     "broadCoverage": [
@@ -25667,7 +27067,7 @@
   "liveSearch": {
     "checkedArticles": 15,
     "failedChecks": [],
-    "generatedAt": "2026-06-07T03:59:39.303Z",
+    "generatedAt": "2026-06-07T04:08:46.848Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 15,
