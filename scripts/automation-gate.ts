@@ -781,6 +781,37 @@ async function main() {
     };
     unsafeItems?: unknown[];
   }>("content/automation/autopilot-broad-freshness-triage.json");
+  const autopilotBroadPublishWaves = readJson<{
+    guardrails: {
+      autoEditArticles: boolean;
+      autoMarkReview: boolean;
+      autoPublish: boolean;
+      trafficClaim: string;
+    };
+    summary: {
+      currentPublicPublished: number;
+      items: number;
+      itemsPerWaveMax: number;
+      readyItems: number;
+      safeDraftItems: number;
+      unsafeItems: number;
+      unsafeWaves: number;
+      uniqueFiles: number;
+      waves: number;
+      wavesReadyForHumanApproval: number;
+    };
+    waves?: Array<{
+      commandBoundary?: {
+        markReviewCommandsAfterHumanApproval?: string[];
+        publishConfirm?: string;
+        publishDryRunAfterReview?: string[];
+      };
+      humanApprovalRequired?: boolean;
+      items?: Array<{ readyForHumanFreshnessReview?: boolean; safeDraft?: boolean }>;
+      readyItems?: number;
+      unsafeItems?: number;
+    }>;
+  }>("content/automation/autopilot-broad-publish-waves.json");
   const reviewOptimizationBrief = readJson<{
     briefs?: Array<{
       file: string;
@@ -1506,6 +1537,45 @@ async function main() {
           ),
         ),
       detail: `ready=${autopilotBroadFreshnessTriage.summary.readyItems}, factChecks=${autopilotBroadFreshnessTriage.summary.itemsWithHumanFactChecks}, sources=${autopilotBroadFreshnessTriage.summary.itemsWithSourceTargets}`,
+    },
+    {
+      name: "autopilot broad publish waves are read-only and small-batch",
+      ok:
+        autopilotBroadPublishWaves.guardrails.autoEditArticles === false &&
+        autopilotBroadPublishWaves.guardrails.autoMarkReview === false &&
+        autopilotBroadPublishWaves.guardrails.autoPublish === false &&
+        autopilotBroadPublishWaves.guardrails.trafficClaim === "not-included" &&
+        autopilotBroadPublishWaves.summary.items >= Math.min(12, autopilotBroadFreshnessTriage.summary.items) &&
+        autopilotBroadPublishWaves.summary.items <= autopilotBroadFreshnessTriage.summary.items &&
+        autopilotBroadPublishWaves.summary.itemsPerWaveMax <= 3 &&
+        autopilotBroadPublishWaves.summary.waves >= 4 &&
+        autopilotBroadPublishWaves.summary.unsafeItems === 0 &&
+        autopilotBroadPublishWaves.summary.unsafeWaves === 0,
+      detail: `waves=${autopilotBroadPublishWaves.summary.waves}, items=${autopilotBroadPublishWaves.summary.items}, maxPerWave=${autopilotBroadPublishWaves.summary.itemsPerWaveMax}, unsafe=${autopilotBroadPublishWaves.summary.unsafeItems}`,
+    },
+    {
+      name: "autopilot broad publish waves preserve human approval command boundaries",
+      ok:
+        autopilotBroadPublishWaves.summary.readyItems === autopilotBroadPublishWaves.summary.items &&
+        autopilotBroadPublishWaves.summary.safeDraftItems === autopilotBroadPublishWaves.summary.items &&
+        autopilotBroadPublishWaves.summary.uniqueFiles === autopilotBroadPublishWaves.summary.items &&
+        autopilotBroadPublishWaves.summary.wavesReadyForHumanApproval === autopilotBroadPublishWaves.summary.waves &&
+        Boolean(
+          autopilotBroadPublishWaves.waves?.every(
+            (wave) =>
+              wave.humanApprovalRequired === true &&
+              wave.readyItems === wave.items?.length &&
+              wave.unsafeItems === 0 &&
+              (wave.items?.length || 0) <= 3 &&
+              (wave.commandBoundary?.markReviewCommandsAfterHumanApproval?.length || 0) === (wave.items?.length || 0) &&
+              (wave.commandBoundary?.publishDryRunAfterReview?.length || 0) === (wave.items?.length || 0) &&
+              wave.commandBoundary?.markReviewCommandsAfterHumanApproval?.every((command) => command.includes("--confirm-human")) &&
+              wave.commandBoundary?.publishDryRunAfterReview?.every((command) => !command.includes("--confirm")) &&
+              wave.commandBoundary?.publishConfirm === "not-included" &&
+              wave.items?.every((item) => item.readyForHumanFreshnessReview === true && item.safeDraft === true),
+          ),
+        ),
+      detail: `ready=${autopilotBroadPublishWaves.summary.readyItems}, safe=${autopilotBroadPublishWaves.summary.safeDraftItems}, approvalWaves=${autopilotBroadPublishWaves.summary.wavesReadyForHumanApproval}`,
     },
     {
       name: "review optimization brief is read-only and covers ready action-board tasks",

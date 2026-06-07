@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T02:26:52.762Z",
+  "generatedAt": "2026-06-07T02:40:41.714Z",
   "failures": [],
   "ok": true,
   "tasks": [
@@ -55,6 +55,7 @@
     "Generate autopilot queued playbook brief",
     "Generate autopilot broad AI demand brief",
     "Generate autopilot broad freshness triage",
+    "Generate autopilot broad publish waves",
     "Generate review coverage report",
     "Generate manual review workbench",
     "Run searchability check",

@@ -1,6 +1,6 @@
 # Review Freshness Brief
 
-Generated at: 2026-06-07T02:26:42.003Z
+Generated at: 2026-06-07T02:40:30.428Z
 
 This report is read-only. It converts freshness risk into human fact-check tasks for current review candidates.
 
@@ -16,7 +16,7 @@ This report is read-only. It converts freshness risk into human fact-check tasks
 
 - Action board ready tasks: 11
 - Unique action files: 9
-- Content freshness generated at: 2026-06-07T02:26:41.474Z
+- Content freshness generated at: 2026-06-07T02:40:29.926Z
 - Source health summary: {"checkedUrls":18,"currentReviewFiles":3,"failedUrls":0,"filesCovered":20,"filesWithReachableSource":20,"filesWithoutReachableSource":0,"missingUrlTargets":0,"nextSourcePackFiles":19,"okUrls":18,"publicGapDecisionFiles":8,"redirectedUrls":13,"sourceReferences":147,"uniqueUrls":18}
 
 ## Summary

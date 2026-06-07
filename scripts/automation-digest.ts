@@ -683,6 +683,41 @@ type AutopilotBroadFreshnessTriage = {
   unsafeItems: unknown[];
 };
 
+type AutopilotBroadPublishWaves = {
+  nextWave: {
+    clusters: string[];
+    files: string[];
+    projectedPublicPublishedAfterApproval: number;
+    readyItems: number;
+    theme: string;
+    unsafeItems: number;
+    wave: number;
+  } | null;
+  summary: {
+    clustersCovered: number;
+    currentPublicPublished: number;
+    items: number;
+    itemsPerWaveMax: number;
+    readyItems: number;
+    safeDraftItems: number;
+    unsafeItems: number;
+    unsafeWaves: number;
+    uniqueFiles: number;
+    waves: number;
+    wavesReadyForHumanApproval: number;
+  };
+  unsafeWaves: unknown[];
+  waves: Array<{
+    clusters: string[];
+    files: string[];
+    projectedPublicPublishedAfterApproval: number;
+    readyItems: number;
+    theme: string;
+    unsafeItems: number;
+    wave: number;
+  }>;
+};
+
 type ReviewOptimizationBrief = {
   nextBriefs: Array<{
     file: string;
@@ -1064,6 +1099,7 @@ const reports = {
   autopilotQueuedPlaybookBrief: readJson<AutopilotQueuedPlaybookBrief>("content/automation/autopilot-queued-playbook-brief.json"),
   autopilotBroadAiDemandBrief: readJson<AutopilotBroadAiDemandBrief>("content/automation/autopilot-broad-ai-demand-brief.json"),
   autopilotBroadFreshnessTriage: readJson<AutopilotBroadFreshnessTriage>("content/automation/autopilot-broad-freshness-triage.json"),
+  autopilotBroadPublishWaves: readJson<AutopilotBroadPublishWaves>("content/automation/autopilot-broad-publish-waves.json"),
   reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
   reviewCannibalizationBrief: readJson<ReviewCannibalizationBrief>("content/automation/review-cannibalization-brief.json"),
   reviewFreshnessBrief: readJson<ReviewFreshnessBrief>("content/automation/review-freshness-brief.json"),
@@ -1292,6 +1328,22 @@ const payload = {
     unsafeItems: reports.autopilotBroadFreshnessTriage.data?.summary.unsafeItems ?? null,
     unsafeItemList: reports.autopilotBroadFreshnessTriage.data?.unsafeItems.slice(0, 8) ?? [],
     uniqueFiles: reports.autopilotBroadFreshnessTriage.data?.summary.uniqueFiles ?? null,
+  },
+  autopilotBroadPublishWaves: {
+    clustersCovered: reports.autopilotBroadPublishWaves.data?.summary.clustersCovered ?? null,
+    currentPublicPublished: reports.autopilotBroadPublishWaves.data?.summary.currentPublicPublished ?? null,
+    items: reports.autopilotBroadPublishWaves.data?.summary.items ?? null,
+    itemsPerWaveMax: reports.autopilotBroadPublishWaves.data?.summary.itemsPerWaveMax ?? null,
+    nextWave: reports.autopilotBroadPublishWaves.data?.nextWave ?? null,
+    readyItems: reports.autopilotBroadPublishWaves.data?.summary.readyItems ?? null,
+    safeDraftItems: reports.autopilotBroadPublishWaves.data?.summary.safeDraftItems ?? null,
+    unsafeItems: reports.autopilotBroadPublishWaves.data?.summary.unsafeItems ?? null,
+    unsafeWaves: reports.autopilotBroadPublishWaves.data?.summary.unsafeWaves ?? null,
+    unsafeWaveList: reports.autopilotBroadPublishWaves.data?.unsafeWaves.slice(0, 8) ?? [],
+    uniqueFiles: reports.autopilotBroadPublishWaves.data?.summary.uniqueFiles ?? null,
+    waves: reports.autopilotBroadPublishWaves.data?.summary.waves ?? null,
+    wavesList: reports.autopilotBroadPublishWaves.data?.waves.slice(0, 8) ?? [],
+    wavesReadyForHumanApproval: reports.autopilotBroadPublishWaves.data?.summary.wavesReadyForHumanApproval ?? null,
   },
   reviewOptimizationBrief: {
     briefs: reports.reviewOptimizationBrief.data?.summary.briefs ?? null,
@@ -1673,6 +1725,9 @@ function buildNextActions() {
   if (!reports.autopilotBroadFreshnessTriage.data || reports.autopilotBroadFreshnessTriage.data.summary.unsafeItems > 0) {
     return ["Open docs/autopilot-broad-freshness-triage.md and resolve unsafe broad freshness triage items before expanding review work."];
   }
+  if (!reports.autopilotBroadPublishWaves.data || reports.autopilotBroadPublishWaves.data.summary.unsafeItems > 0 || reports.autopilotBroadPublishWaves.data.summary.unsafeWaves > 0) {
+    return ["Open docs/autopilot-broad-publish-waves.md and resolve unsafe broad publish waves before any approval action."];
+  }
   if (!reports.reviewOptimizationBrief.data || reports.reviewOptimizationBrief.data.summary.unsafeCommands > 0) {
     return ["Open docs/review-optimization-brief.md and resolve unsafe or missing copydesk guidance before manual review."];
   }
@@ -1747,6 +1802,7 @@ function buildNextActions() {
     "Use docs/autopilot-queued-playbook-brief.md to review the 7 queued sprint items with merged search, source, freshness, and link actions.",
     "Use docs/autopilot-broad-ai-demand-brief.md to prioritize broad AI deployment, Agent, memory, RAG, and industry prompt themes.",
     "Use docs/autopilot-broad-freshness-triage.md to fact-check high-demand AI drafts before any approval action.",
+    "Use docs/autopilot-broad-publish-waves.md to review 1-3 high-demand AI drafts per human-approved batch.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
     "If approved by a human, run mark:review with --confirm-human for approved files only.",
     "Publish only status=review articles in a 1-3 article batch after a dry-run.",
@@ -2135,6 +2191,35 @@ function toMarkdown(data: typeof payload) {
     ...data.autopilotBroadFreshnessTriage.itemsList.map(
       (item) =>
         `| ${item.readyForHumanFreshnessReview} | ${item.safeDraft} | ${item.freshnessPriority} | ${item.freshnessRisk} | ${item.publicMatches} | ${item.searchQueries.length} | ${item.sourceTargets.length} | ${item.humanFactCheckChecklist.length} | ${item.cluster} | ${item.title} | ${item.file} |`,
+    ),
+    "",
+    "## Autopilot Broad Publish Waves",
+    "",
+    `- Current public published: ${data.autopilotBroadPublishWaves.currentPublicPublished}`,
+    `- Waves: ${data.autopilotBroadPublishWaves.waves}`,
+    `- Waves ready for human approval: ${data.autopilotBroadPublishWaves.wavesReadyForHumanApproval}`,
+    `- Items: ${data.autopilotBroadPublishWaves.items}`,
+    `- Ready items: ${data.autopilotBroadPublishWaves.readyItems}`,
+    `- Safe draft items: ${data.autopilotBroadPublishWaves.safeDraftItems}`,
+    `- Unique files: ${data.autopilotBroadPublishWaves.uniqueFiles}`,
+    `- Clusters covered: ${data.autopilotBroadPublishWaves.clustersCovered}`,
+    `- Max items per wave: ${data.autopilotBroadPublishWaves.itemsPerWaveMax}`,
+    `- Unsafe items: ${data.autopilotBroadPublishWaves.unsafeItems}`,
+    `- Unsafe waves: ${data.autopilotBroadPublishWaves.unsafeWaves}`,
+    "",
+    "Unsafe broad publish waves:",
+    "",
+    ...(data.autopilotBroadPublishWaves.unsafeWaveList.length ? data.autopilotBroadPublishWaves.unsafeWaveList.map((item) => `- ${JSON.stringify(item)}`) : ["- none"]),
+    "",
+    data.autopilotBroadPublishWaves.nextWave
+      ? `Next wave: ${data.autopilotBroadPublishWaves.nextWave.wave} - ${data.autopilotBroadPublishWaves.nextWave.theme}`
+      : "Next wave: missing",
+    "",
+    "| Wave | Ready | Unsafe | Projected public | Theme | Files |",
+    "| --- | --- | --- | --- | --- | --- |",
+    ...data.autopilotBroadPublishWaves.wavesList.map(
+      (wave) =>
+        `| ${wave.wave} | ${wave.readyItems}/${wave.files.length} | ${wave.unsafeItems} | ${wave.projectedPublicPublishedAfterApproval} | ${wave.theme} | ${wave.files.join("<br>")} |`,
     ),
     "",
     "## Review Optimization Brief",

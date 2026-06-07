@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T02:29:35.747Z
+Generated at: 2026-06-07T02:42:13.761Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -53,7 +53,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=zh-cn
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - https://docs.dify.ai -> https://docs.dify.ai/en/use-dify/getting-started/introduction
@@ -388,6 +388,37 @@ Unsafe broad freshness triage items:
 | true | true | 427 | high | 0 | 5 | 8 | 16 | Agent 部署、工具调用和生产安全 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | true | 427 | high | 0 | 5 | 10 | 16 | Agent 部署、工具调用和生产安全 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 
+## Autopilot Broad Publish Waves
+
+- Current public published: 15
+- Waves: 8
+- Waves ready for human approval: 8
+- Items: 24
+- Ready items: 24
+- Safe draft items: 24
+- Unique files: 24
+- Clusters covered: 7
+- Max items per wave: 3
+- Unsafe items: 0
+- Unsafe waves: 0
+
+Unsafe broad publish waves:
+
+- none
+
+Next wave: 1 - 开源大模型部署：Ollama、vLLM、TGI、RunPod + Agent 部署、工具调用和生产安全 + Agent 记忆：短期记忆、长期记忆、RAG、Postgres
+
+| Wave | Ready | Unsafe | Projected public | Theme | Files |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 3/3 | 0 | 18 | 开源大模型部署：Ollama、vLLM、TGI、RunPod + Agent 部署、工具调用和生产安全 + Agent 记忆：短期记忆、长期记忆、RAG、Postgres | content/blog/bentoml-llm-deployment-beginner-guide.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/agent-memory-postgres-schema-guide.mdx |
+| 2 | 3/3 | 0 | 18 | RAG、知识库、向量数据库和引用溯源 + 全行业 AI 提示词和工作流模板 + Dify、n8n、Coze、Flowise、MCP 自动化部署 | content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/mcp-server-deployment-security-checklist.mdx |
+| 3 | 3/3 | 0 | 18 | AI API 接入、限流、成本和多模型路由 + 开源大模型部署：Ollama、vLLM、TGI、RunPod + Agent 部署、工具调用和生产安全 | content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx |
+| 4 | 3/3 | 0 | 18 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres + 全行业 AI 提示词和工作流模板 + Dify、n8n、Coze、Flowise、MCP 自动化部署 | content/blog/n8n-ai-agent-rag-memory-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/n8n-ai-agent-webhook-production-guide.mdx |
+| 5 | 3/3 | 0 | 18 | AI API 接入、限流、成本和多模型路由 + 开源大模型部署：Ollama、vLLM、TGI、RunPod + Agent 部署、工具调用和生产安全 | content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/llm-api-rate-limit-retry-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 6 | 3/3 | 0 | 18 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres + AI API 接入、限流、成本和多模型路由 + 开源大模型部署：Ollama、vLLM、TGI、RunPod | content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/helicone-llm-observability-guide.mdx<br>content/blog/llm-cost-monitoring-dashboard-guide.mdx |
+| 7 | 3/3 | 0 | 18 | Agent 部署、工具调用和生产安全 + Agent 记忆：短期记忆、长期记忆、RAG、Postgres + 开源大模型部署：Ollama、vLLM、TGI、RunPod | content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/rag-citation-source-trace-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| 8 | 3/3 | 0 | 18 | Agent 部署、工具调用和生产安全 + 开源大模型部署：Ollama、vLLM、TGI、RunPod | content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/enterprise-im-ai-agent-integration-guide.mdx |
+
 ## Review Optimization Brief
 
 - Briefs: 11
@@ -583,8 +614,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 129
-- Traffic claim watch mentions: 1198
+- Traffic claim files scanned: 131
+- Traffic claim watch mentions: 1229
 
 ## Preflight
 
@@ -946,7 +977,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-07T02:29:13.960Z
+- Latest check: 2026-06-07T02:42:01.493Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
@@ -981,6 +1012,7 @@ Next review files:
 - Use docs/autopilot-queued-playbook-brief.md to review the 7 queued sprint items with merged search, source, freshness, and link actions.
 - Use docs/autopilot-broad-ai-demand-brief.md to prioritize broad AI deployment, Agent, memory, RAG, and industry prompt themes.
 - Use docs/autopilot-broad-freshness-triage.md to fact-check high-demand AI drafts before any approval action.
+- Use docs/autopilot-broad-publish-waves.md to review 1-3 high-demand AI drafts per human-approved batch.
 - Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.
 - If approved by a human, run mark:review with --confirm-human for approved files only.
 - Publish only status=review articles in a 1-3 article batch after a dry-run.
