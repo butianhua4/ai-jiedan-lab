@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T15:36:20.064Z",
+  "generatedAt": "2026-06-07T16:15:01.913Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -16,7 +16,7 @@
       "stopBefore": "Every mark:review command requires explicit human approval. publish --confirm commands are intentionally not included."
     },
     "actionBoardReadyTasks": 16,
-    "contentFreshnessGeneratedAt": "2026-06-07T15:36:19.541Z",
+    "contentFreshnessGeneratedAt": "2026-06-07T16:15:01.429Z",
     "contentFreshnessGuardrails": {
       "autoPublish": false,
       "note": "This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status."
@@ -25,15 +25,15 @@
       "checkedUrls": 40,
       "broadFirstCoverageFiles": 8,
       "currentReviewFiles": 3,
-      "failedUrls": 1,
+      "failedUrls": 3,
       "filesCovered": 23,
       "filesWithReachableSource": 23,
       "filesWithoutReachableSource": 0,
       "missingUrlTargets": 0,
       "nextSourcePackFiles": 19,
-      "okUrls": 39,
+      "okUrls": 37,
       "publicGapDecisionFiles": 13,
-      "redirectedUrls": 18,
+      "redirectedUrls": 16,
       "sourceReferences": 261,
       "uniqueUrls": 40
     },
@@ -305,7 +305,7 @@
         "https://www.spheron.network/blog/llm-deployment-guide/"
       ],
       "readyForFreshnessReview": true,
-      "reachableSources": 27,
+      "reachableSources": 24,
       "reviewFocus": [
         "核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异",
         "不要承诺本地部署一定更省钱或更稳定",
@@ -458,7 +458,7 @@
         "https://docs.n8n.io"
       ],
       "readyForFreshnessReview": true,
-      "reachableSources": 11,
+      "reachableSources": 10,
       "reviewFocus": [
         "hardware sizing",
         "model size and quantization",
@@ -882,7 +882,7 @@
         "https://docs.helicone.ai/"
       ],
       "readyForFreshnessReview": true,
-      "reachableSources": 6,
+      "reachableSources": 4,
       "reviewFocus": [
         "不要把评测分数写成绝对质量保证",
         "明确日志隐私、数据脱敏和留存边界",
@@ -941,7 +941,7 @@
         "https://huggingface.co/docs"
       ],
       "readyForFreshnessReview": true,
-      "reachableSources": 2,
+      "reachableSources": 1,
       "reviewFocus": [
         "serving framework versions",
         "cold starts and concurrency",
@@ -1241,7 +1241,7 @@
         "https://www.spheron.network/blog/llm-deployment-guide/"
       ],
       "readyForFreshnessReview": true,
-      "reachableSources": 27,
+      "reachableSources": 24,
       "reviewFocus": [
         "核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异",
         "不要承诺本地部署一定更省钱或更稳定",
@@ -1394,7 +1394,7 @@
         "https://docs.n8n.io"
       ],
       "readyForFreshnessReview": true,
-      "reachableSources": 11,
+      "reachableSources": 10,
       "reviewFocus": [
         "hardware sizing",
         "model size and quantization",
@@ -1818,7 +1818,7 @@
         "https://docs.helicone.ai/"
       ],
       "readyForFreshnessReview": true,
-      "reachableSources": 6,
+      "reachableSources": 4,
       "reviewFocus": [
         "不要把评测分数写成绝对质量保证",
         "明确日志隐私、数据脱敏和留存边界",
@@ -1877,7 +1877,7 @@
         "https://huggingface.co/docs"
       ],
       "readyForFreshnessReview": true,
-      "reachableSources": 2,
+      "reachableSources": 1,
       "reviewFocus": [
         "serving framework versions",
         "cold starts and concurrency",

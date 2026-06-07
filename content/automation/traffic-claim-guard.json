@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-07T15:35:34.731Z",
+  "generatedAt": "2026-06-07T16:04:22.421Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 155,
+    "filesScanned": 157,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 1879
+    "watchMentions": 2030
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -196,13 +196,13 @@
       "file": "docs/automation-digest.md",
       "line": 977,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 155"
+      "text": "- Traffic claim files scanned: 157"
     },
     {
       "file": "docs/automation-digest.md",
       "line": 978,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 1878"
+      "text": "- Traffic claim watch mentions: 2029"
     },
     {
       "file": "docs/automation-digest.md",
@@ -232,7 +232,7 @@
       "file": "docs/automation-gate.md",
       "line": 33,
       "reason": "traffic-related mention",
-      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=155, unsafeClaims=0, watchMentions=1878 |"
+      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=157, unsafeClaims=0, watchMentions=2029 |"
     },
     {
       "file": "docs/autopilot-approval-packet.md",

@@ -1,6 +1,6 @@
 # Traffic Evidence Audit
 
-Generated at: 2026-06-07T15:38:28.701Z
+Generated at: 2026-06-07T16:04:21.818Z
 
 This report separates live-site health from measured traffic. It does not claim visits, clicks, impressions, rankings, or revenue.
 

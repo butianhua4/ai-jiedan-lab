@@ -1,14 +1,14 @@
 # Traffic Claim Guard
-Generated at: 2026-06-07T15:35:34.731Z
+Generated at: 2026-06-07T16:04:22.421Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
 - Note: This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples.
 ## Summary
-- filesScanned: 155
+- filesScanned: 157
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 1879
+- watchMentions: 2030
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -44,13 +44,13 @@ None.
 | docs/automation-digest.md | 972 | - Measured traffic sources: none |
 | docs/automation-digest.md | 973 | - Search Console verification evidence: false |
 | docs/automation-digest.md | 976 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 977 | - Traffic claim files scanned: 155 |
-| docs/automation-digest.md | 978 | - Traffic claim watch mentions: 1878 |
+| docs/automation-digest.md | 977 | - Traffic claim files scanned: 157 |
+| docs/automation-digest.md | 978 | - Traffic claim watch mentions: 2029 |
 | docs/automation-digest.md | 991 | - Traffic data available: false |
 | docs/automation-digest.md | 1066 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
 | docs/automation-gate.md | 31 | \| traffic evidence audit passed and is read-only \| PASS \| failedChecks=0, measuredTrafficSources=0 \| |
 | docs/automation-gate.md | 32 | \| traffic is not claimed without measured metrics \| PASS \| trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 \| |
-| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=155, unsafeClaims=0, watchMentions=1878 \| |
+| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=157, unsafeClaims=0, watchMentions=2029 \| |
 | docs/autopilot-approval-packet.md | 18 | - Traffic data available: false |
 | docs/autopilot-approval-packet.md | 19 | - Can claim traffic: false |
 | docs/autopilot-approval-packet.md | 102 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |

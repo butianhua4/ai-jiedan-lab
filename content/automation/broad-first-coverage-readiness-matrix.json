@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T15:36:29.445Z",
+  "generatedAt": "2026-06-07T16:15:11.245Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,7 +10,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "launchPackGeneratedAt": "2026-06-07T15:36:28.964Z",
+    "launchPackGeneratedAt": "2026-06-07T16:15:10.770Z",
     "launchPackGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -116,7 +116,7 @@
       },
       "sourceSignals": {
         "launchSourceTargets": 10,
-        "reachableSources": 27,
+        "reachableSources": 24,
         "sourceTargets": 27
       },
       "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
@@ -519,7 +519,7 @@
       },
       "sourceSignals": {
         "launchSourceTargets": 3,
-        "reachableSources": 6,
+        "reachableSources": 4,
         "sourceTargets": 6
       },
       "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
@@ -580,7 +580,7 @@
       },
       "sourceSignals": {
         "launchSourceTargets": 10,
-        "reachableSources": 27,
+        "reachableSources": 24,
         "sourceTargets": 27
       },
       "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
@@ -983,7 +983,7 @@
       },
       "sourceSignals": {
         "launchSourceTargets": 3,
-        "reachableSources": 6,
+        "reachableSources": 4,
         "sourceTargets": 6
       },
       "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",

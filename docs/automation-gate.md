@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-07T15:39:05.963Z
+Generated at: 2026-06-07T16:15:14.921Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 137
-- Passed: 137
+- Checks: 140
+- Passed: 140
 - Failed: 0
 
 ## Checks
@@ -30,14 +30,14 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=155, unsafeClaims=0, watchMentions=1879 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=157, unsafeClaims=0, watchMentions=2030 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, broadFirst=8, candidates=22 |
 | internal link opportunity audit has public suggestions for Wave 1 | PASS | wave=3, broadFirstMissing=0, waveMissing=0, candidateMissing=0 |
 | source target health audit is read-only and covers review source scopes | PASS | broadFirst=8, current=3, publicGap=13, next=19, files=23 |
-| source target health audit has reachable URLs for every covered review file | PASS | checked=40, ok=39, failed=1, missingTargets=0, filesWithoutReachable=0 |
-| source target remediation pack is read-only and mirrors source health counts | PASS | items=19, failed=1/1, redirected=18/18 |
+| source target health audit has reachable URLs for every covered review file | PASS | checked=40, ok=37, failed=3, missingTargets=0, filesWithoutReachable=0 |
+| source target remediation pack is read-only and mirrors source health counts | PASS | items=19, failed=3/3, redirected=16/16 |
 | source target remediation pack keeps every source fix human-gated | PASS | ready=19, unsafe=0, gated=19 |
 | review action board is read-only and covers active review queues | PASS | tasks=16, wave=3, publicGap=13 |
 | review action board tasks are ready and preserve command boundaries | PASS | ready=16, unsafe=0 |
@@ -98,6 +98,9 @@ Overall: PASS
 | industry prompt candidates stay draft and non-indexable | PASS | unsafeCandidateItems=0 |
 | industry prompt review pack is read-only and deduplicated | PASS | items=12, unique=12, duplicates=0 |
 | industry prompt review pack has source-backed human review boundaries | PASS | safe=12, sources=12, commands=12, publicPrompt=0 |
+| industry prompt opportunity board is broad and read-only | PASS | opportunities=12, lanes=12, queries=60 |
+| industry prompt opportunity board has sources, structure, and human boundaries | PASS | safe=true, sources=12, structure=12, modules=60 |
+| industry prompt opportunity board connects to reviewable content | PASS | withReviewCandidate=11, zeroPublic=12 |
 | search intent lane map is read-only and broad | PASS | lanes=12, highPriority=12, withReadyDrafts=12 |
 | search intent lane map includes sources, review focus, and safe candidates | PASS | readyDraftMatches=233, noPublicCoverage=10, notReadyMatched=355 |
 | search intent approval packet is read-only and covers current wave plus next gaps | PASS | currentWave=3, nextGap=6, nextGapLanes=3 |

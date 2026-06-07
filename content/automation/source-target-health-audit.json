@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T15:36:12.127Z",
+  "generatedAt": "2026-06-07T16:05:04.359Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -11,15 +11,15 @@
     "checkedUrls": 40,
     "broadFirstCoverageFiles": 8,
     "currentReviewFiles": 3,
-    "failedUrls": 1,
+    "failedUrls": 3,
     "filesCovered": 23,
     "filesWithReachableSource": 23,
     "filesWithoutReachableSource": 0,
     "missingUrlTargets": 0,
     "nextSourcePackFiles": 19,
-    "okUrls": 39,
+    "okUrls": 37,
     "publicGapDecisionFiles": 13,
-    "redirectedUrls": 18,
+    "redirectedUrls": 16,
     "sourceReferences": 261,
     "uniqueUrls": 40
   },
@@ -46,6 +46,85 @@
         }
       ],
       "url": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business"
+    },
+    {
+      "error": "AbortError",
+      "finalUrl": "https://docs.ragas.io/",
+      "ok": false,
+      "references": [
+        {
+          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+          "label": "https://docs.ragas.io/",
+          "scope": "public-gap-decision",
+          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+          "url": "https://docs.ragas.io/"
+        },
+        {
+          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+          "label": "https://docs.ragas.io/",
+          "scope": "broad-first-coverage",
+          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+          "url": "https://docs.ragas.io/"
+        }
+      ],
+      "status": 502,
+      "url": "https://docs.ragas.io/"
+    },
+    {
+      "error": "AbortError",
+      "ok": false,
+      "references": [
+        {
+          "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+          "label": "vLLM docs: https://docs.vllm.ai",
+          "scope": "public-gap-decision",
+          "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://docs.vllm.ai",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+          "label": "vLLM docs: https://docs.vllm.ai",
+          "scope": "public-gap-decision",
+          "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
+          "label": "vLLM docs: https://docs.vllm.ai",
+          "scope": "next-source-pack",
+          "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+          "label": "vLLM docs: https://docs.vllm.ai",
+          "scope": "next-source-pack",
+          "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "vLLM docs: https://docs.vllm.ai",
+          "scope": "next-source-pack",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://docs.vllm.ai",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://docs.vllm.ai"
+        }
+      ],
+      "url": "https://docs.vllm.ai"
     }
   ],
   "redirectedChecks": [
@@ -304,7 +383,6 @@
       "url": "https://ai.google.dev/docs"
     },
     {
-      "error": "AbortError",
       "finalUrl": "https://platform.claude.com/docs/en/home",
       "ok": true,
       "references": [
@@ -348,6 +426,7 @@
       "url": "https://docs.anthropic.com"
     },
     {
+      "error": "AbortError",
       "finalUrl": "https://platform.claude.com/docs/en/home",
       "ok": true,
       "references": [
@@ -569,85 +648,6 @@
       ],
       "status": 200,
       "url": "https://docs.llamaindex.ai"
-    },
-    {
-      "finalUrl": "https://docs.ragas.io/en/stable/",
-      "ok": true,
-      "references": [
-        {
-          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-          "label": "https://docs.ragas.io/",
-          "scope": "public-gap-decision",
-          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
-          "url": "https://docs.ragas.io/"
-        },
-        {
-          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-          "label": "https://docs.ragas.io/",
-          "scope": "broad-first-coverage",
-          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
-          "url": "https://docs.ragas.io/"
-        }
-      ],
-      "status": 200,
-      "url": "https://docs.ragas.io/"
-    },
-    {
-      "finalUrl": "https://docs.vllm.ai/en/latest/",
-      "ok": true,
-      "references": [
-        {
-          "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
-          "label": "vLLM docs: https://docs.vllm.ai",
-          "scope": "public-gap-decision",
-          "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
-          "url": "https://docs.vllm.ai"
-        },
-        {
-          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-          "label": "https://docs.vllm.ai",
-          "scope": "public-gap-decision",
-          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-          "url": "https://docs.vllm.ai"
-        },
-        {
-          "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-          "label": "vLLM docs: https://docs.vllm.ai",
-          "scope": "public-gap-decision",
-          "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
-          "url": "https://docs.vllm.ai"
-        },
-        {
-          "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
-          "label": "vLLM docs: https://docs.vllm.ai",
-          "scope": "next-source-pack",
-          "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
-          "url": "https://docs.vllm.ai"
-        },
-        {
-          "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
-          "label": "vLLM docs: https://docs.vllm.ai",
-          "scope": "next-source-pack",
-          "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
-          "url": "https://docs.vllm.ai"
-        },
-        {
-          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-          "label": "vLLM docs: https://docs.vllm.ai",
-          "scope": "next-source-pack",
-          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-          "url": "https://docs.vllm.ai"
-        },
-        {
-          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-          "label": "https://docs.vllm.ai",
-          "scope": "broad-first-coverage",
-          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-          "url": "https://docs.vllm.ai"
-        }
-      ],
-      "status": 200,
-      "url": "https://docs.vllm.ai"
     },
     {
       "finalUrl": "https://modelcontextprotocol.io/docs/getting-started/intro",
@@ -1598,7 +1598,7 @@
   "files": [
     {
       "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-      "reachableSources": 6,
+      "reachableSources": 4,
       "scopes": [
         "broad-first-coverage",
         "public-gap-decision"
@@ -1810,7 +1810,7 @@
     },
     {
       "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-      "reachableSources": 2,
+      "reachableSources": 1,
       "scopes": [
         "public-gap-decision"
       ],
@@ -1961,7 +1961,7 @@
     },
     {
       "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
-      "reachableSources": 5,
+      "reachableSources": 4,
       "scopes": [
         "next-source-pack"
       ],
@@ -2015,7 +2015,7 @@
     },
     {
       "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-      "reachableSources": 27,
+      "reachableSources": 24,
       "scopes": [
         "broad-first-coverage",
         "next-source-pack",
@@ -2055,7 +2055,7 @@
     },
     {
       "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
-      "reachableSources": 7,
+      "reachableSources": 6,
       "scopes": [
         "next-source-pack"
       ],
@@ -2109,7 +2109,7 @@
     },
     {
       "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
-      "reachableSources": 11,
+      "reachableSources": 10,
       "scopes": [
         "next-source-pack",
         "public-gap-decision"
@@ -2496,7 +2496,6 @@
       "url": "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
     },
     {
-      "error": "AbortError",
       "finalUrl": "https://platform.claude.com/docs/en/home",
       "ok": true,
       "references": [
@@ -2540,6 +2539,7 @@
       "url": "https://docs.anthropic.com"
     },
     {
+      "error": "AbortError",
       "finalUrl": "https://platform.claude.com/docs/en/home",
       "ok": true,
       "references": [
@@ -2871,8 +2871,9 @@
       "url": "https://docs.ollama.com"
     },
     {
-      "finalUrl": "https://docs.ragas.io/en/stable/",
-      "ok": true,
+      "error": "AbortError",
+      "finalUrl": "https://docs.ragas.io/",
+      "ok": false,
       "references": [
         {
           "file": "content/blog/agent-tool-permission-safety-guide.mdx",
@@ -2889,7 +2890,7 @@
           "url": "https://docs.ragas.io/"
         }
       ],
-      "status": 200,
+      "status": 502,
       "url": "https://docs.ragas.io/"
     },
     {
@@ -2915,8 +2916,8 @@
       "url": "https://docs.runpod.io/serverless/vllm/get-started"
     },
     {
-      "finalUrl": "https://docs.vllm.ai/en/latest/",
-      "ok": true,
+      "error": "AbortError",
+      "ok": false,
       "references": [
         {
           "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
@@ -2968,7 +2969,6 @@
           "url": "https://docs.vllm.ai"
         }
       ],
-      "status": 200,
       "url": "https://docs.vllm.ai"
     },
     {

@@ -94,6 +94,39 @@ type PromptReviewPack = {
   };
 };
 
+type IndustryPromptOpportunityBoard = {
+  items: Array<{
+    deliverable: string;
+    existingReviewCandidates: unknown[];
+    lane: string;
+    primaryQuery: string;
+    priorityScore: number;
+    publicMatches: number;
+    searchQueryFamilies: number;
+  }>;
+  summary: {
+    departmentLanes: number;
+    itemsWithHumanBoundary: number;
+    itemsWithInputOutputStructure: number;
+    itemsWithReviewPackCandidate: number;
+    itemsWithSourceTargets: number;
+    opportunities: number;
+    promptModules: number;
+    searchQueryFamilies: number;
+    unsafeItems: number;
+    zeroPublicCoverageItems: number;
+  };
+  topOpportunities: Array<{
+    deliverable: string;
+    existingReviewCandidates: unknown[];
+    lane: string;
+    primaryQuery: string;
+    priorityScore: number;
+    publicMatches: number;
+    searchQueryFamilies: number;
+  }>;
+};
+
 type DeploymentCoverage = {
   coverage: Array<{
     candidates: unknown[];
@@ -1476,6 +1509,7 @@ const reports = {
   publicCoverageGapDecisionPack: readJson<PublicCoverageGapDecisionPack>("content/automation/public-coverage-gap-decision-pack.json"),
   promptCoverage: readJson<PromptCoverage>("content/automation/industry-prompt-coverage.json"),
   promptReviewPack: readJson<PromptReviewPack>("content/automation/industry-prompt-review-pack.json"),
+  industryPromptOpportunityBoard: readJson<IndustryPromptOpportunityBoard>("content/automation/industry-prompt-opportunity-board.json"),
   gate: readJson<{ ok: boolean; summary: { checks: number; failed: number; passed: number } }>("content/automation/automation-gate.json"),
   liveSearch: readJson<{
     articles: { checked: number; failed: unknown[]; missingFromSitemap: string[]; publicCount: number };
@@ -2236,6 +2270,19 @@ const payload = {
     unsafeItems: reports.promptReviewPack.data?.summary.unsafeItems ?? null,
     uniqueFiles: reports.promptReviewPack.data?.summary.uniqueFiles ?? null,
   },
+  industryPromptOpportunityBoard: {
+    departmentLanes: reports.industryPromptOpportunityBoard.data?.summary.departmentLanes ?? null,
+    itemsWithHumanBoundary: reports.industryPromptOpportunityBoard.data?.summary.itemsWithHumanBoundary ?? null,
+    itemsWithInputOutputStructure: reports.industryPromptOpportunityBoard.data?.summary.itemsWithInputOutputStructure ?? null,
+    itemsWithReviewPackCandidate: reports.industryPromptOpportunityBoard.data?.summary.itemsWithReviewPackCandidate ?? null,
+    itemsWithSourceTargets: reports.industryPromptOpportunityBoard.data?.summary.itemsWithSourceTargets ?? null,
+    opportunities: reports.industryPromptOpportunityBoard.data?.summary.opportunities ?? null,
+    promptModules: reports.industryPromptOpportunityBoard.data?.summary.promptModules ?? null,
+    searchQueryFamilies: reports.industryPromptOpportunityBoard.data?.summary.searchQueryFamilies ?? null,
+    top: reports.industryPromptOpportunityBoard.data?.topOpportunities ?? [],
+    unsafeItems: reports.industryPromptOpportunityBoard.data?.summary.unsafeItems ?? null,
+    zeroPublicCoverageItems: reports.industryPromptOpportunityBoard.data?.summary.zeroPublicCoverageItems ?? null,
+  },
   cannibalization: {
     conflicts: reports.cannibalization.data?.summary.conflicts ?? null,
     reviewBatchConflicts: reports.cannibalization.data?.summary.reviewBatchConflicts ?? null,
@@ -2431,6 +2478,9 @@ function buildNextActions() {
   if (!reports.promptReviewPack.data || reports.promptReviewPack.data.summary.unsafeItems > 0 || reports.promptReviewPack.data.summary.duplicateFiles > 0) {
     return ["Open docs/industry-prompt-review-pack.md and resolve prompt review pack safety or duplicate-file issues before manual review."];
   }
+  if (!reports.industryPromptOpportunityBoard.data || reports.industryPromptOpportunityBoard.data.summary.unsafeItems > 0) {
+    return ["Open docs/industry-prompt-opportunity-board.md and resolve prompt opportunity board safety issues before manual review."];
+  }
   if (!reports.broadSearchDemand.data || reports.broadSearchDemand.data.summary.themesWithReadyDrafts !== reports.broadSearchDemand.data.summary.themes) {
     return ["Open docs/broad-search-demand-map.md and ensure every broad demand theme has ready draft candidates."];
   }
@@ -2455,6 +2505,7 @@ function buildNextActions() {
     "Use docs/public-coverage-gap-decision-pack.md to review the 8 broad-demand public gap candidates and their optimization actions.",
     "Use docs/ai-deployment-review-pack.md to review the 10 deployment, Agent, RAG, memory, API, and infrastructure candidates.",
     "Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.",
+    "Use docs/industry-prompt-opportunity-board.md to turn broad department prompt searches into specific prompt-pack page ideas.",
     "Use docs/next-review-source-pack.md to fact-check official sources for the roadmap's next review files.",
     "Use docs/source-target-health-audit.md to confirm official source links are reachable before approving fast-changing AI guidance.",
     "Use docs/source-target-remediation-pack.md to replace failed source URLs and confirm canonical redirected source URLs during human review.",
@@ -3683,6 +3734,25 @@ function toMarkdown(data: typeof payload) {
     "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
     ...data.promptReviewPack.top.map((item) => (
       `| ${item.readyForHumanReview} | ${item.safeDraft} | ${item.priorityScore} | ${item.publicMatches} | ${item.sourceTargets.length} | ${item.searchQueries.length} | ${item.industry} | ${item.title} | ${item.file} |`
+    )),
+    "",
+    "## Industry Prompt Opportunity Board",
+    "",
+    `- Opportunities: ${data.industryPromptOpportunityBoard.opportunities}`,
+    `- Department lanes: ${data.industryPromptOpportunityBoard.departmentLanes}`,
+    `- Search query families: ${data.industryPromptOpportunityBoard.searchQueryFamilies}`,
+    `- Prompt modules: ${data.industryPromptOpportunityBoard.promptModules}`,
+    `- Items with source targets: ${data.industryPromptOpportunityBoard.itemsWithSourceTargets}`,
+    `- Items with human boundary: ${data.industryPromptOpportunityBoard.itemsWithHumanBoundary}`,
+    `- Items with input/output structure: ${data.industryPromptOpportunityBoard.itemsWithInputOutputStructure}`,
+    `- Items with review-pack candidate: ${data.industryPromptOpportunityBoard.itemsWithReviewPackCandidate}`,
+    `- Zero-public-coverage items: ${data.industryPromptOpportunityBoard.zeroPublicCoverageItems}`,
+    `- Unsafe items: ${data.industryPromptOpportunityBoard.unsafeItems}`,
+    "",
+    "| Score | Public | Review candidates | Query families | Lane | Primary query | Deliverable |",
+    "| --- | --- | --- | --- | --- | --- | --- |",
+    ...data.industryPromptOpportunityBoard.top.map((item) => (
+      `| ${item.priorityScore} | ${item.publicMatches} | ${item.existingReviewCandidates.length} | ${item.searchQueryFamilies} | ${item.lane} | ${item.primaryQuery} | ${item.deliverable} |`
     )),
     "",
     "## Cannibalization Warnings",

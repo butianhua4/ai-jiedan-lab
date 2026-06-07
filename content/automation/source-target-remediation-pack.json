@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T15:36:14.855Z",
+  "generatedAt": "2026-06-07T16:14:56.880Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "sourceHealthGeneratedAt": "2026-06-07T15:36:12.127Z",
+    "sourceHealthGeneratedAt": "2026-06-07T16:05:04.359Z",
     "sourceHealthGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -21,22 +21,22 @@
       "checkedUrls": 40,
       "broadFirstCoverageFiles": 8,
       "currentReviewFiles": 3,
-      "failedUrls": 1,
+      "failedUrls": 3,
       "filesCovered": 23,
       "filesWithReachableSource": 23,
       "filesWithoutReachableSource": 0,
       "missingUrlTargets": 0,
       "nextSourcePackFiles": 19,
-      "okUrls": 39,
+      "okUrls": 37,
       "publicGapDecisionFiles": 13,
-      "redirectedUrls": 18,
+      "redirectedUrls": 16,
       "sourceReferences": 261,
       "uniqueUrls": 40
     }
   },
   "summary": {
-    "failedUrlItems": 1,
-    "failedUrls": 1,
+    "failedUrlItems": 3,
+    "failedUrls": 3,
     "humanGatedItems": 19,
     "items": 19,
     "itemsWithAffectedFiles": 19,
@@ -45,16 +45,119 @@
     "itemsWithReferences": 19,
     "itemsWithReplacementPlan": 19,
     "manualFixReadyItems": 19,
-    "redirectedUrlItems": 18,
-    "redirectedUrls": 18,
+    "redirectedUrlItems": 16,
+    "redirectedUrls": 16,
     "sourceHealthCheckedUrls": 40,
-    "sourceHealthFailedUrls": 1,
-    "sourceHealthRedirectedUrls": 18,
+    "sourceHealthFailedUrls": 3,
+    "sourceHealthRedirectedUrls": 16,
     "trafficDataAvailable": false,
     "unsafeItems": 0
   },
   "unsafeItems": [],
   "items": [
+    {
+      "affectedFiles": [
+        "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+        "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+        "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+        "content/blog/local-llm-vram-not-enough-guide.mdx",
+        "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx"
+      ],
+      "affectedScopes": [
+        "public-gap-decision",
+        "next-source-pack",
+        "broad-first-coverage"
+      ],
+      "affectedTitles": [
+        "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+        "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+        "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+        "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
+        "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit"
+      ],
+      "error": "AbortError",
+      "humanChecklist": [
+        "Review URL: https://docs.vllm.ai.",
+        "Automation error observed: AbortError.",
+        "Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.",
+        "If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.",
+        "Confirm every affected draft still has at least one reachable source for the claim family before mark:review.",
+        "Do not approve a fast-changing AI, SDK, deployment, pricing, or model claim if it depends only on this failed URL.",
+        "Prefer another reachable official source already present for the same affected file when it covers the same claim.",
+        "If no existing source covers the claim, manually find a current official source before approval.",
+        "If no reliable source exists, rewrite or remove the dependent claim instead of substituting a weak source.",
+        "Keep article status, noindex, and humanReviewRequired unchanged until explicit approval.",
+        "Publishing remains separate and is not included in this remediation pack."
+      ],
+      "kind": "failed-url",
+      "manualActions": [
+        "Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.",
+        "If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.",
+        "Confirm every affected draft still has at least one reachable source for the claim family before mark:review.",
+        "Do not approve a fast-changing AI, SDK, deployment, pricing, or model claim if it depends only on this failed URL."
+      ],
+      "manualFixReady": true,
+      "referenceCount": 7,
+      "references": [
+        {
+          "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+          "label": "vLLM docs: https://docs.vllm.ai",
+          "scope": "public-gap-decision",
+          "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://docs.vllm.ai",
+          "scope": "public-gap-decision",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+          "label": "vLLM docs: https://docs.vllm.ai",
+          "scope": "public-gap-decision",
+          "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
+          "label": "vLLM docs: https://docs.vllm.ai",
+          "scope": "next-source-pack",
+          "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+          "label": "vLLM docs: https://docs.vllm.ai",
+          "scope": "next-source-pack",
+          "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "vLLM docs: https://docs.vllm.ai",
+          "scope": "next-source-pack",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "label": "https://docs.vllm.ai",
+          "scope": "broad-first-coverage",
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "url": "https://docs.vllm.ai"
+        }
+      ],
+      "replacementPlan": [
+        "Prefer another reachable official source already present for the same affected file when it covers the same claim.",
+        "If no existing source covers the claim, manually find a current official source before approval.",
+        "If no reliable source exists, rewrite or remove the dependent claim instead of substituting a weak source."
+      ],
+      "stopBefore": "Stop before human approval if this failed URL is the only evidence for any fast-changing claim.",
+      "unsafeReasons": [],
+      "url": "https://docs.vllm.ai"
+    },
     {
       "affectedFiles": [
         "content/blog/industry-ai-prompts-template-library-2026.mdx"
@@ -113,6 +216,69 @@
       "stopBefore": "Stop before human approval if this failed URL is the only evidence for any fast-changing claim.",
       "unsafeReasons": [],
       "url": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business"
+    },
+    {
+      "affectedFiles": [
+        "content/blog/agent-tool-permission-safety-guide.mdx"
+      ],
+      "affectedScopes": [
+        "public-gap-decision",
+        "broad-first-coverage"
+      ],
+      "affectedTitles": [
+        "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志"
+      ],
+      "error": "AbortError",
+      "finalUrl": "https://docs.ragas.io/",
+      "humanChecklist": [
+        "Review URL: https://docs.ragas.io/.",
+        "Review final URL: https://docs.ragas.io/.",
+        "HTTP status observed by automation: 502.",
+        "Automation error observed: AbortError.",
+        "Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.",
+        "If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.",
+        "Confirm every affected draft still has at least one reachable source for the claim family before mark:review.",
+        "Do not approve a fast-changing AI, SDK, deployment, pricing, or model claim if it depends only on this failed URL.",
+        "Prefer another reachable official source already present for the same affected file when it covers the same claim.",
+        "If no existing source covers the claim, manually find a current official source before approval.",
+        "If no reliable source exists, rewrite or remove the dependent claim instead of substituting a weak source.",
+        "Keep article status, noindex, and humanReviewRequired unchanged until explicit approval.",
+        "Publishing remains separate and is not included in this remediation pack."
+      ],
+      "kind": "failed-url",
+      "manualActions": [
+        "Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.",
+        "If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.",
+        "Confirm every affected draft still has at least one reachable source for the claim family before mark:review.",
+        "Do not approve a fast-changing AI, SDK, deployment, pricing, or model claim if it depends only on this failed URL."
+      ],
+      "manualFixReady": true,
+      "referenceCount": 2,
+      "references": [
+        {
+          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+          "label": "https://docs.ragas.io/",
+          "scope": "public-gap-decision",
+          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+          "url": "https://docs.ragas.io/"
+        },
+        {
+          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+          "label": "https://docs.ragas.io/",
+          "scope": "broad-first-coverage",
+          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+          "url": "https://docs.ragas.io/"
+        }
+      ],
+      "replacementPlan": [
+        "Prefer another reachable official source already present for the same affected file when it covers the same claim.",
+        "If no existing source covers the claim, manually find a current official source before approval.",
+        "If no reliable source exists, rewrite or remove the dependent claim instead of substituting a weak source."
+      ],
+      "status": 502,
+      "stopBefore": "Stop before human approval if this failed URL is the only evidence for any fast-changing claim.",
+      "unsafeReasons": [],
+      "url": "https://docs.ragas.io/"
     },
     {
       "affectedFiles": [
@@ -1841,111 +2007,6 @@
     },
     {
       "affectedFiles": [
-        "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
-        "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-        "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-        "content/blog/local-llm-vram-not-enough-guide.mdx",
-        "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx"
-      ],
-      "affectedScopes": [
-        "public-gap-decision",
-        "next-source-pack",
-        "broad-first-coverage"
-      ],
-      "affectedTitles": [
-        "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
-        "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-        "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
-        "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
-        "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit"
-      ],
-      "finalUrl": "https://docs.vllm.ai/en/latest/",
-      "humanChecklist": [
-        "Review URL: https://docs.vllm.ai.",
-        "Review final URL: https://docs.vllm.ai/en/latest/.",
-        "HTTP status observed by automation: 200.",
-        "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
-        "If the final URL is the canonical destination, update the source target during human review.",
-        "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
-        "Confirm the affected draft still cites source material that matches its implementation-sensitive claims.",
-        "Prefer the final URL when it is canonical, current, and content-equivalent.",
-        "Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
-        "Replace the source if the redirect weakens specificity or points to a general landing page.",
-        "Keep article status, noindex, and humanReviewRequired unchanged until explicit approval.",
-        "Publishing remains separate and is not included in this remediation pack."
-      ],
-      "kind": "redirected-url",
-      "manualActions": [
-        "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
-        "If the final URL is the canonical destination, update the source target during human review.",
-        "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
-        "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
-      ],
-      "manualFixReady": true,
-      "referenceCount": 7,
-      "references": [
-        {
-          "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
-          "label": "vLLM docs: https://docs.vllm.ai",
-          "scope": "public-gap-decision",
-          "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
-          "url": "https://docs.vllm.ai"
-        },
-        {
-          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-          "label": "https://docs.vllm.ai",
-          "scope": "public-gap-decision",
-          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-          "url": "https://docs.vllm.ai"
-        },
-        {
-          "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-          "label": "vLLM docs: https://docs.vllm.ai",
-          "scope": "public-gap-decision",
-          "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
-          "url": "https://docs.vllm.ai"
-        },
-        {
-          "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
-          "label": "vLLM docs: https://docs.vllm.ai",
-          "scope": "next-source-pack",
-          "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
-          "url": "https://docs.vllm.ai"
-        },
-        {
-          "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
-          "label": "vLLM docs: https://docs.vllm.ai",
-          "scope": "next-source-pack",
-          "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
-          "url": "https://docs.vllm.ai"
-        },
-        {
-          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-          "label": "vLLM docs: https://docs.vllm.ai",
-          "scope": "next-source-pack",
-          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-          "url": "https://docs.vllm.ai"
-        },
-        {
-          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-          "label": "https://docs.vllm.ai",
-          "scope": "broad-first-coverage",
-          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-          "url": "https://docs.vllm.ai"
-        }
-      ],
-      "replacementPlan": [
-        "Prefer the final URL when it is canonical, current, and content-equivalent.",
-        "Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
-        "Replace the source if the redirect weakens specificity or points to a general landing page."
-      ],
-      "status": 200,
-      "stopBefore": "Stop before human approval until a reviewer confirms the final redirected URL is canonical and content-equivalent.",
-      "unsafeReasons": [],
-      "url": "https://docs.vllm.ai"
-    },
-    {
-      "affectedFiles": [
         "content/blog/ai-api-key-security-rotation-guide.mdx",
         "content/blog/claude-api-rate-limit-debug-guide.mdx",
         "content/blog/gemini-api-rate-limit-debug-guide.mdx"
@@ -1960,13 +2021,11 @@
         "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
         "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型"
       ],
-      "error": "AbortError",
       "finalUrl": "https://platform.claude.com/docs/en/home",
       "humanChecklist": [
         "Review URL: https://docs.anthropic.com.",
         "Review final URL: https://platform.claude.com/docs/en/home.",
         "HTTP status observed by automation: 200.",
-        "Automation error observed: AbortError.",
         "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
         "If the final URL is the canonical destination, update the source target during human review.",
         "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
@@ -2209,11 +2268,13 @@
       "affectedTitles": [
         "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
       ],
+      "error": "AbortError",
       "finalUrl": "https://platform.claude.com/docs/en/home",
       "humanChecklist": [
         "Review URL: https://docs.anthropic.com/.",
         "Review final URL: https://platform.claude.com/docs/en/home.",
         "HTTP status observed by automation: 200.",
+        "Automation error observed: AbortError.",
         "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
         "If the final URL is the canonical destination, update the source target during human review.",
         "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
@@ -2380,67 +2441,6 @@
       "stopBefore": "Stop before human approval until a reviewer confirms the final redirected URL is canonical and content-equivalent.",
       "unsafeReasons": [],
       "url": "https://docs.helicone.ai/"
-    },
-    {
-      "affectedFiles": [
-        "content/blog/agent-tool-permission-safety-guide.mdx"
-      ],
-      "affectedScopes": [
-        "public-gap-decision",
-        "broad-first-coverage"
-      ],
-      "affectedTitles": [
-        "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志"
-      ],
-      "finalUrl": "https://docs.ragas.io/en/stable/",
-      "humanChecklist": [
-        "Review URL: https://docs.ragas.io/.",
-        "Review final URL: https://docs.ragas.io/en/stable/.",
-        "HTTP status observed by automation: 200.",
-        "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
-        "If the final URL is the canonical destination, update the source target during human review.",
-        "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
-        "Confirm the affected draft still cites source material that matches its implementation-sensitive claims.",
-        "Prefer the final URL when it is canonical, current, and content-equivalent.",
-        "Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
-        "Replace the source if the redirect weakens specificity or points to a general landing page.",
-        "Keep article status, noindex, and humanReviewRequired unchanged until explicit approval.",
-        "Publishing remains separate and is not included in this remediation pack."
-      ],
-      "kind": "redirected-url",
-      "manualActions": [
-        "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
-        "If the final URL is the canonical destination, update the source target during human review.",
-        "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
-        "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
-      ],
-      "manualFixReady": true,
-      "referenceCount": 2,
-      "references": [
-        {
-          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-          "label": "https://docs.ragas.io/",
-          "scope": "public-gap-decision",
-          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
-          "url": "https://docs.ragas.io/"
-        },
-        {
-          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-          "label": "https://docs.ragas.io/",
-          "scope": "broad-first-coverage",
-          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
-          "url": "https://docs.ragas.io/"
-        }
-      ],
-      "replacementPlan": [
-        "Prefer the final URL when it is canonical, current, and content-equivalent.",
-        "Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
-        "Replace the source if the redirect weakens specificity or points to a general landing page."
-      ],
-      "status": 200,
-      "stopBefore": "Stop before human approval until a reviewer confirms the final redirected URL is canonical and content-equivalent.",
-      "unsafeReasons": [],
-      "url": "https://docs.ragas.io/"
     },
     {
       "affectedFiles": [

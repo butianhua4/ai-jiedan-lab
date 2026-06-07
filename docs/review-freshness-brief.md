@@ -1,6 +1,6 @@
 # Review Freshness Brief
 
-Generated at: 2026-06-07T15:36:20.064Z
+Generated at: 2026-06-07T16:15:01.913Z
 
 This report is read-only. It converts freshness risk into human fact-check tasks for current review candidates.
 
@@ -16,8 +16,8 @@ This report is read-only. It converts freshness risk into human fact-check tasks
 
 - Action board ready tasks: 16
 - Unique action files: 13
-- Content freshness generated at: 2026-06-07T15:36:19.541Z
-- Source health summary: {"checkedUrls":40,"broadFirstCoverageFiles":8,"currentReviewFiles":3,"failedUrls":1,"filesCovered":23,"filesWithReachableSource":23,"filesWithoutReachableSource":0,"missingUrlTargets":0,"nextSourcePackFiles":19,"okUrls":39,"publicGapDecisionFiles":13,"redirectedUrls":18,"sourceReferences":261,"uniqueUrls":40}
+- Content freshness generated at: 2026-06-07T16:15:01.429Z
+- Source health summary: {"checkedUrls":40,"broadFirstCoverageFiles":8,"currentReviewFiles":3,"failedUrls":3,"filesCovered":23,"filesWithReachableSource":23,"filesWithoutReachableSource":0,"missingUrlTargets":0,"nextSourcePackFiles":19,"okUrls":37,"publicGapDecisionFiles":13,"redirectedUrls":16,"sourceReferences":261,"uniqueUrls":40}
 
 ## Summary
 
@@ -40,16 +40,16 @@ This report is read-only. It converts freshness risk into human fact-check tasks
 | true | high | 2026-06-06 | 29/29 | 12 | action-board, current-review, public-gap | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | high | 2026-06-06 | 26/26 | 12 | action-board, current-review, public-gap | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | high | 2026-06-06 | 22/24 | 12 | action-board, current-review, public-gap | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | high | 2026-06-06 | 27/27 | 12 | action-board, public-gap | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| true | high | 2026-06-06 | 24/27 | 12 | action-board, public-gap | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | true | high | 2026-06-06 | 11/11 | 12 | action-board, public-gap | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| true | high | 2026-06-06 | 11/11 | 12 | action-board, public-gap | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| true | high | 2026-06-06 | 10/11 | 12 | action-board, public-gap | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 | true | high | 2026-06-06 | 6/6 | 12 | action-board, public-gap | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 | true | high | 2026-06-06 | 12/12 | 12 | action-board, public-gap | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | true | high | 2026-06-06 | 36/36 | 12 | action-board, public-gap | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | true | high | 2026-06-06 | 9/9 | 11 | action-board, public-gap | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | true | high | 2026-06-06 | 6/6 | 8 | action-board, public-gap | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
-| true | high | 2026-06-06 | 6/6 | 8 | action-board, public-gap | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
-| true | high | 2026-06-05 | 2/2 | 9 | action-board, public-gap | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
+| true | high | 2026-06-06 | 4/6 | 8 | action-board, public-gap | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+| true | high | 2026-06-05 | 1/2 | 9 | action-board, public-gap | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
 
 ## All Items
 
@@ -58,16 +58,16 @@ This report is read-only. It converts freshness risk into human fact-check tasks
 | true | high | 2026-06-06 | 29/29 | 12 | action-board, current-review, public-gap | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | high | 2026-06-06 | 26/26 | 12 | action-board, current-review, public-gap | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | high | 2026-06-06 | 22/24 | 12 | action-board, current-review, public-gap | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | high | 2026-06-06 | 27/27 | 12 | action-board, public-gap | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| true | high | 2026-06-06 | 24/27 | 12 | action-board, public-gap | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | true | high | 2026-06-06 | 11/11 | 12 | action-board, public-gap | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| true | high | 2026-06-06 | 11/11 | 12 | action-board, public-gap | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| true | high | 2026-06-06 | 10/11 | 12 | action-board, public-gap | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 | true | high | 2026-06-06 | 6/6 | 12 | action-board, public-gap | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 | true | high | 2026-06-06 | 12/12 | 12 | action-board, public-gap | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | true | high | 2026-06-06 | 36/36 | 12 | action-board, public-gap | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | true | high | 2026-06-06 | 9/9 | 11 | action-board, public-gap | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | true | high | 2026-06-06 | 6/6 | 8 | action-board, public-gap | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
-| true | high | 2026-06-06 | 6/6 | 8 | action-board, public-gap | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
-| true | high | 2026-06-05 | 2/2 | 9 | action-board, public-gap | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
+| true | high | 2026-06-06 | 4/6 | 8 | action-board, public-gap | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+| true | high | 2026-06-05 | 1/2 | 9 | action-board, public-gap | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
 
 ## Per-Candidate Freshness Checklist
 
@@ -247,7 +247,7 @@ Human review checklist:
 - File: content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx
 - Freshness risk: high
 - Updated at: 2026-06-06
-- Reachable sources: 27/27
+- Reachable sources: 24/27
 
 Risk reasons:
 
@@ -361,7 +361,7 @@ Human review checklist:
 - File: content/blog/open-webui-functions-pipelines-deployment-guide.mdx
 - Freshness risk: high
 - Updated at: 2026-06-06
-- Reachable sources: 11/11
+- Reachable sources: 10/11
 
 Risk reasons:
 
@@ -679,7 +679,7 @@ Human review checklist:
 - File: content/blog/agent-tool-permission-safety-guide.mdx
 - Freshness risk: high
 - Updated at: 2026-06-06
-- Reachable sources: 6/6
+- Reachable sources: 4/6
 
 Risk reasons:
 
@@ -719,7 +719,7 @@ Human review checklist:
 - File: content/blog/bentoml-llm-deployment-beginner-guide.mdx
 - Freshness risk: high
 - Updated at: 2026-06-05
-- Reachable sources: 2/2
+- Reachable sources: 1/2
 
 Risk reasons:
 

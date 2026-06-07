@@ -1,6 +1,6 @@
 # Broad First Coverage Readiness Matrix
 
-Generated at: 2026-06-07T15:36:29.445Z
+Generated at: 2026-06-07T16:15:11.245Z
 
 ## Guardrails
 
@@ -53,7 +53,7 @@ Generated at: 2026-06-07T15:36:29.445Z
 - Title: 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查
 - Readiness score: 70
 - Search signals: launchQueries=5, exactSeedMatches=0, seedFamilies=5, exactQueryMatches=2, queryFamilies=7
-- Source signals: launchTargets=10, reportTargets=27, reachable=27
+- Source signals: launchTargets=10, reportTargets=27, reachable=24
 - Mark review boundary: `npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human`
 - Publish dry-run boundary: `npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx`
 
@@ -280,7 +280,7 @@ Warnings:
 - Title: Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志
 - Readiness score: 60
 - Search signals: launchQueries=5, exactSeedMatches=0, seedFamilies=1, exactQueryMatches=n/a, queryFamilies=n/a
-- Source signals: launchTargets=3, reportTargets=6, reachable=6
+- Source signals: launchTargets=3, reportTargets=6, reachable=4
 - Mark review boundary: `npm run mark:review -- --file=content/blog/agent-tool-permission-safety-guide.mdx --confirm-human`
 - Publish dry-run boundary: `npm run publish:articles -- --file=content/blog/agent-tool-permission-safety-guide.mdx`
 

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T15:39:05.963Z",
+  "generatedAt": "2026-06-07T16:15:14.921Z",
   "ok": true,
   "summary": {
-    "checks": 137,
+    "checks": 140,
     "failed": 0,
-    "passed": 137
+    "passed": 140
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=155, unsafeClaims=0, watchMentions=1879"
+      "detail": "filesScanned=157, unsafeClaims=0, watchMentions=2030"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -120,12 +120,12 @@
     {
       "name": "source target health audit has reachable URLs for every covered review file",
       "ok": true,
-      "detail": "checked=40, ok=39, failed=1, missingTargets=0, filesWithoutReachable=0"
+      "detail": "checked=40, ok=37, failed=3, missingTargets=0, filesWithoutReachable=0"
     },
     {
       "name": "source target remediation pack is read-only and mirrors source health counts",
       "ok": true,
-      "detail": "items=19, failed=1/1, redirected=18/18"
+      "detail": "items=19, failed=3/3, redirected=16/16"
     },
     {
       "name": "source target remediation pack keeps every source fix human-gated",
@@ -426,6 +426,21 @@
       "name": "industry prompt review pack has source-backed human review boundaries",
       "ok": true,
       "detail": "safe=12, sources=12, commands=12, publicPrompt=0"
+    },
+    {
+      "name": "industry prompt opportunity board is broad and read-only",
+      "ok": true,
+      "detail": "opportunities=12, lanes=12, queries=60"
+    },
+    {
+      "name": "industry prompt opportunity board has sources, structure, and human boundaries",
+      "ok": true,
+      "detail": "safe=true, sources=12, structure=12, modules=60"
+    },
+    {
+      "name": "industry prompt opportunity board connects to reviewable content",
+      "ok": true,
+      "detail": "withReviewCandidate=11, zeroPublic=12"
     },
     {
       "name": "search intent lane map is read-only and broad",
