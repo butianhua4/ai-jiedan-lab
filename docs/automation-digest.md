@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T02:06:28.675Z
+Generated at: 2026-06-07T02:17:46.803Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -53,7 +53,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=es-419
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=fr
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - https://docs.dify.ai -> https://docs.dify.ai/en/use-dify/getting-started/introduction
@@ -330,6 +330,32 @@ Unsafe queued playbook items:
 | 9 | true | true | 12/8 | 8/12 | 3 | 9 | true | not-included | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | 10 | true | true | 12/8 | 8/12 | 3 | 19 | true | not-included | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
 
+## Autopilot Broad AI Demand Brief
+
+- Clusters: 8
+- Clusters with ready candidates: 8
+- Clusters without public coverage: 8
+- External source signals: 24
+- Ready candidate files: 33
+- Review-ready drafts: 633
+- Public articles: 15
+- Unsafe clusters: 0
+
+Unsafe broad AI demand clusters:
+
+- none
+
+| Score | Public | Drafts | Ready | Sources | Queries | Cluster | Why |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 321 | 0 | 31 | 6 | 3 | 5 | 开源大模型部署：Ollama、vLLM、TGI、RunPod | 这是比网页部署更宽的入口词，搜索者通常已经有明确问题：跑不起来、太慢、太贵、API 接不上。 |
+| 317 | 0 | 35 | 6 | 3 | 5 | Agent 部署、工具调用和生产安全 | Agent 是当前 AI 应用搜索里的大词，但文章必须从权限、状态和人工接管切入，才能比泛泛介绍更有用。 |
+| 315 | 0 | 28 | 6 | 3 | 5 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres | 用户明确点名“记忆板块”，这个方向能从技术教程、架构设计、隐私合规三个层面持续扩展。 |
+| 313 | 0 | 32 | 6 | 3 | 5 | RAG、知识库、向量数据库和引用溯源 | RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。 |
+| 311 | 0 | 27 | 6 | 3 | 6 | 全行业 AI 提示词和工作流模板 | 这是用户特别要求的“全行业使用 AI 的提示词”，搜索面宽，适合先做总入口，再拆岗位长尾。 |
+| 307 | 0 | 36 | 6 | 3 | 5 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | 这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。 |
+| 293 | 0 | 15 | 6 | 3 | 5 | AI API 接入、限流、成本和多模型路由 | API 接入和报错是明确搜索意图，能和工具页、报价页、部署教程形成内链闭环。 |
+| 287 | 0 | 13 | 6 | 3 | 5 | LLM 观测、评测、日志和上线后质量 | 部署之后的质量和成本问题会持续出现，适合承接更成熟的搜索需求，也能提高文章可信度。 |
+
 ## Review Optimization Brief
 
 - Briefs: 11
@@ -525,8 +551,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 125
-- Traffic claim watch mentions: 1059
+- Traffic claim files scanned: 127
+- Traffic claim watch mentions: 1127
 
 ## Preflight
 
@@ -888,7 +914,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-07T01:54:38.293Z
+- Latest check: 2026-06-07T02:06:44.815Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
@@ -921,6 +947,7 @@ Next review files:
 - Use docs/autopilot-review-sprint-board.md as the next-10 manual review sprint order.
 - Use docs/autopilot-search-query-gap-brief.md to fill next-10 search-query gaps during manual review.
 - Use docs/autopilot-queued-playbook-brief.md to review the 7 queued sprint items with merged search, source, freshness, and link actions.
+- Use docs/autopilot-broad-ai-demand-brief.md to prioritize broad AI deployment, Agent, memory, RAG, and industry prompt themes.
 - Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.
 - If approved by a human, run mark:review with --confirm-human for approved files only.
 - Publish only status=review articles in a 1-3 article batch after a dry-run.

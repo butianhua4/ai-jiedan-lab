@@ -720,6 +720,33 @@ async function main() {
     };
     unsafeItems?: unknown[];
   }>("content/automation/autopilot-queued-playbook-brief.json");
+  const autopilotBroadAiDemandBrief = readJson<{
+    clusters?: Array<{
+      contentAngles?: unknown[];
+      readyCandidates?: unknown[];
+      reviewFocus?: unknown[];
+      searchQueries?: unknown[];
+      sourceSignals?: unknown[];
+    }>;
+    guardrails: {
+      autoCreateArticles: boolean;
+      autoEditArticles: boolean;
+      autoMarkReview: boolean;
+      autoPublish: boolean;
+      trafficClaim: string;
+    };
+    summary: {
+      clusters: number;
+      clustersWithReadyCandidates: number;
+      clustersWithoutPublicCoverage: number;
+      externalSourceSignals: number;
+      publicArticles: number;
+      readyCandidateFiles: number;
+      reviewReadyDrafts: number;
+      unsafeClusters: number;
+    };
+    unsafeClusters?: unknown[];
+  }>("content/automation/autopilot-broad-ai-demand-brief.json");
   const reviewOptimizationBrief = readJson<{
     briefs?: Array<{
       file: string;
@@ -1377,6 +1404,34 @@ async function main() {
           ),
         ),
       detail: `ready=${autopilotQueuedPlaybookBrief.summary.readyItems}, search=${autopilotQueuedPlaybookBrief.summary.itemsWithSearchActions}, source=${autopilotQueuedPlaybookBrief.summary.itemsWithSourceActions}, links=${autopilotQueuedPlaybookBrief.summary.itemsWithInternalLinkSuggestions}`,
+    },
+    {
+      name: "autopilot broad AI demand brief is read-only and source-backed",
+      ok:
+        autopilotBroadAiDemandBrief.guardrails.autoCreateArticles === false &&
+        autopilotBroadAiDemandBrief.guardrails.autoEditArticles === false &&
+        autopilotBroadAiDemandBrief.guardrails.autoMarkReview === false &&
+        autopilotBroadAiDemandBrief.guardrails.autoPublish === false &&
+        autopilotBroadAiDemandBrief.guardrails.trafficClaim === "not-included" &&
+        autopilotBroadAiDemandBrief.summary.clusters >= 8 &&
+        autopilotBroadAiDemandBrief.summary.externalSourceSignals >= autopilotBroadAiDemandBrief.summary.clusters * 2 &&
+        autopilotBroadAiDemandBrief.summary.readyCandidateFiles >= autopilotBroadAiDemandBrief.summary.clusters &&
+        autopilotBroadAiDemandBrief.summary.unsafeClusters === 0,
+      detail: `clusters=${autopilotBroadAiDemandBrief.summary.clusters}, sources=${autopilotBroadAiDemandBrief.summary.externalSourceSignals}, readyFiles=${autopilotBroadAiDemandBrief.summary.readyCandidateFiles}, unsafe=${autopilotBroadAiDemandBrief.summary.unsafeClusters}`,
+    },
+    {
+      name: "autopilot broad AI demand brief covers broad search lanes",
+      ok: Boolean(
+        autopilotBroadAiDemandBrief.clusters?.every(
+          (cluster) =>
+            (cluster.searchQueries?.length || 0) >= 4 &&
+            (cluster.sourceSignals?.length || 0) >= 2 &&
+            (cluster.contentAngles?.length || 0) >= 3 &&
+            (cluster.reviewFocus?.length || 0) >= 3 &&
+            (cluster.readyCandidates?.length || 0) > 0,
+        ),
+      ),
+      detail: `clusters=${autopilotBroadAiDemandBrief.summary.clusters}, withoutPublic=${autopilotBroadAiDemandBrief.summary.clustersWithoutPublicCoverage}, withReady=${autopilotBroadAiDemandBrief.summary.clustersWithReadyCandidates}`,
     },
     {
       name: "review optimization brief is read-only and covers ready action-board tasks",

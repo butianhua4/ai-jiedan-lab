@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-07T02:06:28.712Z
+Generated at: 2026-06-07T02:17:46.881Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 107
-- Passed: 107
+- Checks: 109
+- Passed: 109
 - Failed: 0
 
 ## Checks
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=125, unsafeClaims=0, watchMentions=1059 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=127, unsafeClaims=0, watchMentions=1127 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, candidates=19 |
@@ -59,6 +59,8 @@ Overall: PASS
 | autopilot search query gap brief has source-backed manual query suggestions | PASS | ready=1, coverage=1, recommended=10, sources=1 |
 | autopilot queued playbook brief covers queued sprint items | PASS | items=7, queued=7, unsafe=0 |
 | autopilot queued playbook brief has complete human-gated actions | PASS | ready=7, search=7, source=7, links=7 |
+| autopilot broad AI demand brief is read-only and source-backed | PASS | clusters=8, sources=24, readyFiles=33, unsafe=0 |
+| autopilot broad AI demand brief covers broad search lanes | PASS | clusters=8, withoutPublic=8, withReady=8 |
 | review optimization brief is read-only and covers ready action-board tasks | PASS | briefs=11, ready=11, unsafeCommands=0 |
 | review optimization brief has actionable copydesk guidance | PASS | withAction=11, missingPublicLinkItems=10, exactQueryWeak=3 |
 | search snippet readiness audit is read-only and covers public plus expansion items | PASS | public=15, expansion=19, scoped=34 |

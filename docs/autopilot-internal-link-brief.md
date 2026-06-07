@@ -1,6 +1,6 @@
 # Autopilot Internal Link Brief
 
-Generated at: 2026-06-07T02:04:30.481Z
+Generated at: 2026-06-07T02:16:24.594Z
 
 This report is read-only. It packages public internal-link suggestions for the top autopilot approval packet items.
 

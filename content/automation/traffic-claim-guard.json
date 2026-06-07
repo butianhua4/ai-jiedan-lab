@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-07T02:06:56.277Z",
+  "generatedAt": "2026-06-07T02:16:54.031Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 125,
+    "filesScanned": 127,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 1086
+    "watchMentions": 1127
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -128,55 +128,67 @@
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 518,
+      "line": 353,
+      "reason": "traffic-related mention",
+      "text": "| 313 | 0 | 32 | 6 | 3 | 5 | RAG、知识库、向量数据库和引用溯源 | RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。 |"
+    },
+    {
+      "file": "docs/automation-digest.md",
+      "line": 355,
+      "reason": "traffic-related mention",
+      "text": "| 307 | 0 | 36 | 6 | 3 | 5 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | 这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。 |"
+    },
+    {
+      "file": "docs/automation-digest.md",
+      "line": 544,
       "reason": "traffic-related mention",
       "text": "## Traffic Evidence"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 520,
+      "line": 546,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 521,
+      "line": 547,
       "reason": "traffic-related mention",
       "text": "- Can claim traffic: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 523,
+      "line": 549,
       "reason": "traffic-related mention",
       "text": "- Measured traffic sources: none"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 524,
+      "line": 550,
       "reason": "traffic-related mention",
       "text": "- Search Console verification evidence: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 527,
+      "line": 553,
       "reason": "traffic-related mention",
       "text": "- Unsupported traffic claims: 0"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 528,
+      "line": 554,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 125"
+      "text": "- Traffic claim files scanned: 127"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 529,
+      "line": 555,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 1059"
+      "text": "- Traffic claim watch mentions: 1114"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 565,
+      "line": 591,
       "reason": "traffic-related mention",
       "text": "| Dify、n8n、MCP 和无代码 AI 自动化 | 258 | 0 | 5 | 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 |"
     },
@@ -196,7 +208,7 @@
       "file": "docs/automation-gate.md",
       "line": 33,
       "reason": "traffic-related mention",
-      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=125, unsafeClaims=0, watchMentions=1059 |"
+      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=127, unsafeClaims=0, watchMentions=1114 |"
     },
     {
       "file": "docs/autopilot-approval-packet.md",
@@ -227,6 +239,90 @@
       "line": 204,
       "reason": "traffic-related mention",
       "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
+    },
+    {
+      "file": "docs/autopilot-broad-ai-demand-brief.md",
+      "line": 13,
+      "reason": "traffic-related mention",
+      "text": "- Traffic claim: not-included"
+    },
+    {
+      "file": "docs/autopilot-broad-ai-demand-brief.md",
+      "line": 14,
+      "reason": "traffic-related mention",
+      "text": "- Note: Read-only broad AI demand brief. It prioritizes likely search-demand themes from local inventory plus external source signals, but does not claim measured traffic or keyword volume."
+    },
+    {
+      "file": "docs/autopilot-broad-ai-demand-brief.md",
+      "line": 30,
+      "reason": "traffic-related mention",
+      "text": "- Do not create traffic claims from this report; connect Search Console or Analytics before reporting impressions or clicks."
+    },
+    {
+      "file": "docs/autopilot-broad-ai-demand-brief.md",
+      "line": 45,
+      "reason": "traffic-related mention",
+      "text": "| 313 | 0 | 32 | 6 | 3 | 5 | RAG、知识库、向量数据库和引用溯源 | 企业知识库、客服机器人、内部搜索、文档问答负责人 | RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。 |"
+    },
+    {
+      "file": "docs/autopilot-broad-ai-demand-brief.md",
+      "line": 47,
+      "reason": "traffic-related mention",
+      "text": "| 307 | 0 | 36 | 6 | 3 | 5 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | 低代码/无代码自动化接单者、内部工具负责人、小团队运营 | 这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。 |"
+    },
+    {
+      "file": "docs/autopilot-broad-ai-demand-brief.md",
+      "line": 57,
+      "reason": "traffic-related mention",
+      "text": "- Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue."
+    },
+    {
+      "file": "docs/autopilot-broad-ai-demand-brief.md",
+      "line": 103,
+      "reason": "traffic-related mention",
+      "text": "- Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue."
+    },
+    {
+      "file": "docs/autopilot-broad-ai-demand-brief.md",
+      "line": 149,
+      "reason": "traffic-related mention",
+      "text": "- Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue."
+    },
+    {
+      "file": "docs/autopilot-broad-ai-demand-brief.md",
+      "line": 195,
+      "reason": "traffic-related mention",
+      "text": "- Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue."
+    },
+    {
+      "file": "docs/autopilot-broad-ai-demand-brief.md",
+      "line": 241,
+      "reason": "traffic-related mention",
+      "text": "- Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue."
+    },
+    {
+      "file": "docs/autopilot-broad-ai-demand-brief.md",
+      "line": 280,
+      "reason": "traffic-related mention",
+      "text": "| 31 | 100 | informational | 医疗 AI 提示词 | 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 | content/blog/healthcare-admin-ai-prompts-guide.mdx |"
+    },
+    {
+      "file": "docs/autopilot-broad-ai-demand-brief.md",
+      "line": 288,
+      "reason": "traffic-related mention",
+      "text": "- Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue."
+    },
+    {
+      "file": "docs/autopilot-broad-ai-demand-brief.md",
+      "line": 334,
+      "reason": "traffic-related mention",
+      "text": "- Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue."
+    },
+    {
+      "file": "docs/autopilot-broad-ai-demand-brief.md",
+      "line": 380,
+      "reason": "traffic-related mention",
+      "text": "- Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue."
     },
     {
       "file": "docs/autopilot-human-review-playbook.md",
@@ -395,102 +491,6 @@
       "line": 19,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 20,
-      "reason": "traffic-related mention",
-      "text": "- Can claim traffic: false"
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 83,
-      "reason": "traffic-related mention",
-      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 90,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 109,
-      "reason": "traffic-related mention",
-      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 116,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 135,
-      "reason": "traffic-related mention",
-      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 142,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 161,
-      "reason": "traffic-related mention",
-      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 168,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 187,
-      "reason": "traffic-related mention",
-      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 194,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 213,
-      "reason": "traffic-related mention",
-      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 220,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 239,
-      "reason": "traffic-related mention",
-      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 246,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 265,
-      "reason": "traffic-related mention",
-      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
     }
   ],
   "nextActions": [

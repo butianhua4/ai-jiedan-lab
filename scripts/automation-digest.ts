@@ -621,6 +621,33 @@ type AutopilotQueuedPlaybookBrief = {
   unsafeItems: unknown[];
 };
 
+type AutopilotBroadAiDemandBrief = {
+  clusters: Array<{
+    audience: string;
+    cluster: string;
+    contentAngles: unknown[];
+    draftMatches: number;
+    gapScore: number;
+    publicMatches: number;
+    readyCandidates: unknown[];
+    reviewFocus: unknown[];
+    searchQueries: unknown[];
+    sourceSignals: unknown[];
+    why: string;
+  }>;
+  summary: {
+    clusters: number;
+    clustersWithReadyCandidates: number;
+    clustersWithoutPublicCoverage: number;
+    externalSourceSignals: number;
+    publicArticles: number;
+    readyCandidateFiles: number;
+    reviewReadyDrafts: number;
+    unsafeClusters: number;
+  };
+  unsafeClusters: unknown[];
+};
+
 type ReviewOptimizationBrief = {
   nextBriefs: Array<{
     file: string;
@@ -1000,6 +1027,7 @@ const reports = {
   autopilotReviewSprintBoard: readJson<AutopilotReviewSprintBoard>("content/automation/autopilot-review-sprint-board.json"),
   autopilotSearchQueryGapBrief: readJson<AutopilotSearchQueryGapBrief>("content/automation/autopilot-search-query-gap-brief.json"),
   autopilotQueuedPlaybookBrief: readJson<AutopilotQueuedPlaybookBrief>("content/automation/autopilot-queued-playbook-brief.json"),
+  autopilotBroadAiDemandBrief: readJson<AutopilotBroadAiDemandBrief>("content/automation/autopilot-broad-ai-demand-brief.json"),
   reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
   reviewCannibalizationBrief: readJson<ReviewCannibalizationBrief>("content/automation/review-cannibalization-brief.json"),
   reviewFreshnessBrief: readJson<ReviewFreshnessBrief>("content/automation/review-freshness-brief.json"),
@@ -1198,6 +1226,18 @@ const payload = {
     safeDraftItems: reports.autopilotQueuedPlaybookBrief.data?.summary.safeDraftItems ?? null,
     unsafeItems: reports.autopilotQueuedPlaybookBrief.data?.summary.unsafeItems ?? null,
     unsafeItemList: reports.autopilotQueuedPlaybookBrief.data?.unsafeItems.slice(0, 8) ?? [],
+  },
+  autopilotBroadAiDemandBrief: {
+    clusters: reports.autopilotBroadAiDemandBrief.data?.summary.clusters ?? null,
+    clustersList: reports.autopilotBroadAiDemandBrief.data?.clusters.slice(0, 8) ?? [],
+    clustersWithReadyCandidates: reports.autopilotBroadAiDemandBrief.data?.summary.clustersWithReadyCandidates ?? null,
+    clustersWithoutPublicCoverage: reports.autopilotBroadAiDemandBrief.data?.summary.clustersWithoutPublicCoverage ?? null,
+    externalSourceSignals: reports.autopilotBroadAiDemandBrief.data?.summary.externalSourceSignals ?? null,
+    publicArticles: reports.autopilotBroadAiDemandBrief.data?.summary.publicArticles ?? null,
+    readyCandidateFiles: reports.autopilotBroadAiDemandBrief.data?.summary.readyCandidateFiles ?? null,
+    reviewReadyDrafts: reports.autopilotBroadAiDemandBrief.data?.summary.reviewReadyDrafts ?? null,
+    unsafeClusters: reports.autopilotBroadAiDemandBrief.data?.summary.unsafeClusters ?? null,
+    unsafeClusterList: reports.autopilotBroadAiDemandBrief.data?.unsafeClusters.slice(0, 8) ?? [],
   },
   reviewOptimizationBrief: {
     briefs: reports.reviewOptimizationBrief.data?.summary.briefs ?? null,
@@ -1573,6 +1613,9 @@ function buildNextActions() {
   if (!reports.autopilotQueuedPlaybookBrief.data || reports.autopilotQueuedPlaybookBrief.data.summary.unsafeItems > 0) {
     return ["Open docs/autopilot-queued-playbook-brief.md and resolve unsafe queued playbook items before manual review."];
   }
+  if (!reports.autopilotBroadAiDemandBrief.data || reports.autopilotBroadAiDemandBrief.data.summary.unsafeClusters > 0) {
+    return ["Open docs/autopilot-broad-ai-demand-brief.md and resolve unsafe broad AI demand clusters before expanding review work."];
+  }
   if (!reports.reviewOptimizationBrief.data || reports.reviewOptimizationBrief.data.summary.unsafeCommands > 0) {
     return ["Open docs/review-optimization-brief.md and resolve unsafe or missing copydesk guidance before manual review."];
   }
@@ -1645,6 +1688,7 @@ function buildNextActions() {
     "Use docs/autopilot-review-sprint-board.md as the next-10 manual review sprint order.",
     "Use docs/autopilot-search-query-gap-brief.md to fill next-10 search-query gaps during manual review.",
     "Use docs/autopilot-queued-playbook-brief.md to review the 7 queued sprint items with merged search, source, freshness, and link actions.",
+    "Use docs/autopilot-broad-ai-demand-brief.md to prioritize broad AI deployment, Agent, memory, RAG, and industry prompt themes.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
     "If approved by a human, run mark:review with --confirm-human for approved files only.",
     "Publish only status=review articles in a 1-3 article batch after a dry-run.",
@@ -1983,6 +2027,28 @@ function toMarkdown(data: typeof payload) {
     ...data.autopilotQueuedPlaybookBrief.itemsList.map(
       (item) =>
         `| ${item.sprintOrder} | ${item.readyForHumanReview} | ${item.safeDraft} | ${item.searchQueries.length}/${item.searchActions.length} | ${item.sourceTargets.length}/${item.sourceActions.length} | ${item.internalLinkSuggestions.length} | ${item.riskReviewChecklist.length} | ${item.manualOnlyCommands.markReviewAfterHumanApproval.includes("--confirm-human")} | ${item.manualOnlyCommands.publishConfirm} | ${item.title} | ${item.file} |`,
+    ),
+    "",
+    "## Autopilot Broad AI Demand Brief",
+    "",
+    `- Clusters: ${data.autopilotBroadAiDemandBrief.clusters}`,
+    `- Clusters with ready candidates: ${data.autopilotBroadAiDemandBrief.clustersWithReadyCandidates}`,
+    `- Clusters without public coverage: ${data.autopilotBroadAiDemandBrief.clustersWithoutPublicCoverage}`,
+    `- External source signals: ${data.autopilotBroadAiDemandBrief.externalSourceSignals}`,
+    `- Ready candidate files: ${data.autopilotBroadAiDemandBrief.readyCandidateFiles}`,
+    `- Review-ready drafts: ${data.autopilotBroadAiDemandBrief.reviewReadyDrafts}`,
+    `- Public articles: ${data.autopilotBroadAiDemandBrief.publicArticles}`,
+    `- Unsafe clusters: ${data.autopilotBroadAiDemandBrief.unsafeClusters}`,
+    "",
+    "Unsafe broad AI demand clusters:",
+    "",
+    ...(data.autopilotBroadAiDemandBrief.unsafeClusterList.length ? data.autopilotBroadAiDemandBrief.unsafeClusterList.map((item) => `- ${JSON.stringify(item)}`) : ["- none"]),
+    "",
+    "| Score | Public | Drafts | Ready | Sources | Queries | Cluster | Why |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.autopilotBroadAiDemandBrief.clustersList.map(
+      (cluster) =>
+        `| ${cluster.gapScore} | ${cluster.publicMatches} | ${cluster.draftMatches} | ${cluster.readyCandidates.length} | ${cluster.sourceSignals.length} | ${cluster.searchQueries.length} | ${cluster.cluster} | ${cluster.why} |`,
     ),
     "",
     "## Review Optimization Brief",

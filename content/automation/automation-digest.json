@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T02:06:28.675Z",
+  "generatedAt": "2026-06-07T02:17:46.803Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -195,7 +195,7 @@
         "url": "https://ai-sdk.dev/docs"
       },
       {
-        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=es-419",
+        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=fr",
         "ok": true,
         "references": [
           {
@@ -5000,6 +5000,1084 @@
     "unsafeItems": 0,
     "unsafeItemList": []
   },
+  "autopilotBroadAiDemandBrief": {
+    "clusters": 8,
+    "clustersList": [
+      {
+        "audience": "想把开源大模型真正跑起来的人：开发者、独立站站长、AI 工具创业者",
+        "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
+        "contentAngles": [
+          "本地先跑通：Ollama、LM Studio、llama.cpp 的入门边界",
+          "生产推理服务：vLLM、TGI、RunPod Serverless 的选择",
+          "成本和延迟：GPU、并发、量化、上下文长度的检查表",
+          "OpenAI-compatible API：如何接入现有前端或 Agent"
+        ],
+        "draftMatches": 31,
+        "gapScore": 321,
+        "publicMatches": 0,
+        "readyCandidates": [
+          {
+            "category": "AI 部署",
+            "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "大模型部署",
+            "publishBatch": 40,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "llm-deployment-huggingface-inference-endpoints-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "大模型成本监控",
+            "publishBatch": 34,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "llm-cost-monitoring-dashboard-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/llm-api-rate-limit-retry-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "大模型 API 限流重试",
+            "publishBatch": 32,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "llm-api-rate-limit-retry-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "大模型 API 限流和重试怎么做：429、队列、退避和降级方案"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "本地部署大模型显存不够",
+            "publishBatch": 32,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "local-llm-vram-not-enough-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型"
+          },
+          {
+            "category": "AI 基建",
+            "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "BentoML LLM 部署",
+            "publishBatch": 29,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "bentoml-llm-deployment-beginner-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收"
+          },
+          {
+            "category": "AI 基建",
+            "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "Docker 使用 NVIDIA GPU",
+            "publishBatch": 29,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "gpu-docker-nvidia-container-toolkit-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit"
+          }
+        ],
+        "reviewFocus": [
+          "核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异",
+          "不要承诺本地部署一定更省钱或更稳定",
+          "必须包含 smoke check、回滚、日志、限流和成本边界"
+        ],
+        "searchDemandNote": "External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue.",
+        "searchQueries": [
+          "大模型部署教程",
+          "Ollama 本地部署教程",
+          "vLLM 部署教程",
+          "RunPod vLLM serverless",
+          "Hugging Face TGI 部署"
+        ],
+        "sourceSignals": [
+          {
+            "note": "RunPod 文档把 vLLM Serverless 当成独立部署路径，适合做一篇从 endpoint 到 API 调用的教程。",
+            "title": "Deploy vLLM on Runpod Serverless",
+            "type": "official-doc",
+            "url": "https://docs.runpod.io/serverless/vllm/get-started"
+          },
+          {
+            "note": "RunPod 2026 指南覆盖 vLLM Docker、模型加载和生产调优，适合补充 GPU/容器部署角度。",
+            "title": "Deploy vLLM with Docker on Runpod",
+            "type": "vendor-guide",
+            "url": "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker"
+          },
+          {
+            "note": "LLM 部署类搜索结果集中出现 Ollama、vLLM、TGI、GPU cloud、MLOps 等组合词。",
+            "title": "From Prototype to Production: A Complete LLM Deployment Guide",
+            "type": "search-result",
+            "url": "https://www.spheron.network/blog/llm-deployment-guide/"
+          }
+        ],
+        "why": "这是比网页部署更宽的入口词，搜索者通常已经有明确问题：跑不起来、太慢、太贵、API 接不上。"
+      },
+      {
+        "audience": "正在把聊天机器人升级成业务 Agent、工作流或内部工具的人",
+        "cluster": "Agent 部署、工具调用和生产安全",
+        "contentAngles": [
+          "Agent 和普通 Chatbot 的区别",
+          "工具调用 allowlist、权限、审计日志和人审",
+          "Vercel AI SDK、LangGraph、CrewAI、AutoGen 的入门对比",
+          "Agent 上线后的观测、失败回退和人工接管"
+        ],
+        "draftMatches": 35,
+        "gapScore": 317,
+        "publicMatches": 0,
+        "readyCandidates": [
+          {
+            "category": "AI Agent",
+            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "AI Agent 部署",
+            "publishBatch": 40,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+          },
+          {
+            "category": "AI 记忆",
+            "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "AI Agent 记忆",
+            "publishBatch": 40,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "ai-agent-memory-rag-design-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
+          },
+          {
+            "category": "接单报价",
+            "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "AI 自动化项目报价",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "ai-automation-project-pricing-scope-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "Dify 工作流错误处理",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "dify-workflow-error-handling-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "Dify Workflow 和 Agent 区别",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "dify-workflow-vs-agent-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/enterprise-im-ai-agent-integration-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "企业微信 飞书 Slack AI Agent",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "enterprise-im-ai-agent-integration-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管"
+          }
+        ],
+        "reviewFocus": [
+          "不要写成全自动替人完成高风险业务",
+          "明确工具权限、人工确认、日志和失败处理",
+          "核对 SDK/API 的当前名称和部署方式"
+        ],
+        "searchDemandNote": "External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue.",
+        "searchQueries": [
+          "AI Agent 部署教程",
+          "Agent 工具调用教程",
+          "AI Agent 生产环境",
+          "LangGraph Agent 入门",
+          "CrewAI 部署教程"
+        ],
+        "sourceSignals": [
+          {
+            "note": "Agent 和工具调用正在从 demo 走向生产，部署文章需要强调权限和人工审批。",
+            "title": "Vercel AI SDK documentation",
+            "type": "official-doc",
+            "url": "https://ai-sdk.dev/docs"
+          },
+          {
+            "note": "OpenAI Agents SDK 是 Agent 主题的官方信号源，适合核对工具、handoff、guardrail 等概念。",
+            "title": "OpenAI Agents SDK",
+            "type": "official-doc",
+            "url": "https://openai.github.io/openai-agents-python/"
+          },
+          {
+            "note": "LangGraph 是 Agent 工作流搜索中的高频框架，适合做工程化和状态图解释。",
+            "title": "LangGraph documentation",
+            "type": "official-doc",
+            "url": "https://langchain-ai.github.io/langgraph/"
+          }
+        ],
+        "why": "Agent 是当前 AI 应用搜索里的大词，但文章必须从权限、状态和人工接管切入，才能比泛泛介绍更有用。"
+      },
+      {
+        "audience": "想让 Agent 记住用户、项目、偏好和流程的开发者与团队",
+        "cluster": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
+        "contentAngles": [
+          "记忆不是简单向量库：facts、events、procedures 的拆分",
+          "Postgres/pgvector 记忆表结构",
+          "RAG 知识库和用户记忆的边界",
+          "记忆清理、去重、过期、隐私和撤回"
+        ],
+        "draftMatches": 28,
+        "gapScore": 315,
+        "publicMatches": 0,
+        "readyCandidates": [
+          {
+            "category": "AI 记忆",
+            "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "AI Agent 记忆",
+            "publishBatch": 40,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "ai-agent-memory-rag-design-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
+          },
+          {
+            "category": "接单报价",
+            "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "AI 自动化项目报价",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "ai-automation-project-pricing-scope-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "n8n AI Agent 知识库记忆",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "n8n-ai-agent-rag-memory-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "Open WebUI Functions Pipelines",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "open-webui-functions-pipelines-deployment-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流"
+          },
+          {
+            "category": "AI 基建",
+            "file": "content/blog/agent-memory-postgres-schema-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "Agent 记忆数据库设计",
+            "publishBatch": 32,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "agent-memory-postgres-schema-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则"
+          },
+          {
+            "category": "AI 基建",
+            "file": "content/blog/rag-citation-source-trace-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "RAG 引用来源",
+            "publishBatch": 32,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "rag-citation-source-trace-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "RAG 怎么显示引用来源：文档名、页码、片段和可信度"
+          }
+        ],
+        "reviewFocus": [
+          "区分知识库 RAG 和用户记忆",
+          "必须有隐私、删除、去重、引用和人工纠错边界",
+          "避免宣称记忆层能自动解决幻觉"
+        ],
+        "searchDemandNote": "External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue.",
+        "searchQueries": [
+          "AI Agent 记忆怎么做",
+          "Agent memory RAG",
+          "AI Agent 长期记忆",
+          "pgvector Agent memory",
+          "RAG 和记忆区别"
+        ],
+        "sourceSignals": [
+          {
+            "note": "2026 RAG/Agent 讨论明显关注 structured memory、temporal/confidence/relationship 等维度。",
+            "title": "Self-Aware Vector Embeddings for Retrieval-Augmented Generation",
+            "type": "research",
+            "url": "https://arxiv.org/abs/2604.20598"
+          },
+          {
+            "note": "社区讨论集中在“vector DB 不是 memory”，适合做反常识型解释文章。",
+            "title": "Vector dbs aren't memory",
+            "type": "community",
+            "url": "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/"
+          },
+          {
+            "note": "RAG 记忆教程开始把 pgvector、agent orchestration 和 retrieval strategy 放在一起讲。",
+            "title": "Memory and RAG Tutorial",
+            "type": "official-doc",
+            "url": "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
+          }
+        ],
+        "why": "用户明确点名“记忆板块”，这个方向能从技术教程、架构设计、隐私合规三个层面持续扩展。"
+      },
+      {
+        "audience": "企业知识库、客服机器人、内部搜索、文档问答负责人",
+        "cluster": "RAG、知识库、向量数据库和引用溯源",
+        "contentAngles": [
+          "RAG 知识库搭建流程：清洗、切分、嵌入、召回、引用",
+          "Chroma、Qdrant、Pinecone、Supabase pgvector 的选择",
+          "检索不到内容、引用错误、上下文太贵的排查",
+          "RAG 评测：测试集、Ragas、promptfoo、人工抽检"
+        ],
+        "draftMatches": 32,
+        "gapScore": 313,
+        "publicMatches": 0,
+        "readyCandidates": [
+          {
+            "category": "AI 记忆",
+            "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "AI Agent 记忆",
+            "publishBatch": 40,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "ai-agent-memory-rag-design-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "客服 AI 模型选型",
+            "publishBatch": 34,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "ai-model-selection-customer-service-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
+          },
+          {
+            "category": "接单报价",
+            "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "AI 自动化项目报价",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "ai-automation-project-pricing-scope-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "n8n AI Agent 知识库记忆",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "n8n-ai-agent-rag-memory-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "Open WebUI Functions Pipelines",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "open-webui-functions-pipelines-deployment-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流"
+          },
+          {
+            "category": "AI 基建",
+            "file": "content/blog/rag-citation-source-trace-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "RAG 引用来源",
+            "publishBatch": 32,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "rag-citation-source-trace-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "RAG 怎么显示引用来源：文档名、页码、片段和可信度"
+          }
+        ],
+        "reviewFocus": [
+          "把 RAG、微调、提示词模板区分清楚",
+          "必须写明引用、来源、权限和失败兜底",
+          "不要把 demo 成功写成生产质量保证"
+        ],
+        "searchDemandNote": "External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue.",
+        "searchQueries": [
+          "RAG 知识库搭建教程",
+          "向量数据库教程",
+          "企业知识库 AI 部署",
+          "RAG 检索不到内容",
+          "RAG 评测教程"
+        ],
+        "sourceSignals": [
+          {
+            "note": "RAG 生产讨论关注 deterministic ingestion、structured storage 和 retrieval 失败问题。",
+            "title": "Is anyone still running pure vector RAG in production in 2026",
+            "type": "community",
+            "url": "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/"
+          },
+          {
+            "note": "结构化 linked data 作为 agent retrieval memory layer，是 RAG 内容升级的研究信号。",
+            "title": "Structured Linked Data as a Memory Layer for Agent-Orchestrated Retrieval",
+            "type": "research",
+            "url": "https://arxiv.org/abs/2603.10700"
+          },
+          {
+            "note": "RAG 工程主题天然能和 vector database、knowledge base、agent memory 相互内链。",
+            "title": "Pinecone RAG learning center",
+            "type": "official-doc",
+            "url": "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+          }
+        ],
+        "why": "RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。"
+      },
+      {
+        "audience": "运营、销售、客服、HR、教育、财务、法务、产品等非技术岗位",
+        "cluster": "全行业 AI 提示词和工作流模板",
+        "contentAngles": [
+          "按岗位给可复制提示词：销售、客服、运营、HR、财务、教育",
+          "从提示词升级到工作流：输入字段、输出格式、质检、反例",
+          "提示词库版本管理、团队知识库和审批",
+          "行业提示词包如何变成可售模板或服务入口"
+        ],
+        "draftMatches": 27,
+        "gapScore": 311,
+        "publicMatches": 0,
+        "readyCandidates": [
+          {
+            "category": "AI 提示词",
+            "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "全行业 AI 提示词模板",
+            "publishBatch": 40,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "industry-ai-prompts-template-library-2026",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "客服 AI 模型选型",
+            "publishBatch": 34,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "ai-model-selection-customer-service-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
+          },
+          {
+            "category": "AI 提示词",
+            "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "团队 AI 提示词库",
+            "publishBatch": 32,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "ai-prompt-library-team-knowledge-base-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用"
+          },
+          {
+            "category": "AI 提示词",
+            "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "数据分析 AI 提示词",
+            "publishBatch": 31,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "data-analysis-ai-prompts-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要"
+          },
+          {
+            "category": "AI 提示词",
+            "file": "content/blog/education-ai-prompts-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "教育 AI 提示词",
+            "publishBatch": 31,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "education-ai-prompts-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "教育 AI 提示词模板：备课、教案、测验、反馈和学习计划"
+          },
+          {
+            "category": "AI 提示词",
+            "file": "content/blog/healthcare-admin-ai-prompts-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "医疗 AI 提示词",
+            "publishBatch": 31,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "healthcare-admin-ai-prompts-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写"
+          }
+        ],
+        "reviewFocus": [
+          "避免空泛万能提示词，必须给输入字段、输出结构和质检标准",
+          "高风险行业必须保留专业判断和人工复核",
+          "不要承诺转化率、收入或法律/医疗结果"
+        ],
+        "searchDemandNote": "External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue.",
+        "searchQueries": [
+          "AI 提示词大全",
+          "销售 AI 提示词",
+          "客服 AI 提示词",
+          "HR AI 提示词",
+          "运营 AI 提示词",
+          "企业 AI 提示词模板"
+        ],
+        "sourceSignals": [
+          {
+            "note": "2026 商业提示词搜索结果集中覆盖 sales、marketing、support、HR、operations 等岗位。",
+            "title": "AI Prompt Templates for Business",
+            "type": "search-result",
+            "url": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business"
+          },
+          {
+            "note": "提示词库类页面通常按业务职能分类，说明“全行业/全岗位”入口值得做集合页。",
+            "title": "Business Prompt Templates",
+            "type": "search-result",
+            "url": "https://sensara.io/prompts/"
+          },
+          {
+            "note": "销售提示词结果强调 discovery call brief、客户痛点和 follow-up，适合做可交付工作流。",
+            "title": "AI Prompts for Sales",
+            "type": "search-result",
+            "url": "https://www.mrprompts.ai/learn/ai-prompts-for-sales"
+          }
+        ],
+        "why": "这是用户特别要求的“全行业使用 AI 的提示词”，搜索面宽，适合先做总入口，再拆岗位长尾。"
+      },
+      {
+        "audience": "低代码/无代码自动化接单者、内部工具负责人、小团队运营",
+        "cluster": "Dify、n8n、Coze、Flowise、MCP 自动化部署",
+        "contentAngles": [
+          "Dify workflow 和 Agent 怎么选",
+          "n8n AI Agent webhook、知识库和记忆",
+          "MCP server 部署安全和工具白名单",
+          "无代码自动化项目怎么报价、验收和运维"
+        ],
+        "draftMatches": 36,
+        "gapScore": 307,
+        "publicMatches": 0,
+        "readyCandidates": [
+          {
+            "category": "接单报价",
+            "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "AI 自动化项目报价",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "ai-automation-project-pricing-scope-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "Dify 工作流错误处理",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "dify-workflow-error-handling-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "Dify Workflow 和 Agent 区别",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "dify-workflow-vs-agent-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核"
+          },
+          {
+            "category": "AI 基建",
+            "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "MCP Server 部署安全",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "mcp-server-deployment-security-checklist",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "n8n AI Agent 知识库记忆",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "n8n-ai-agent-rag-memory-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/n8n-ai-agent-webhook-production-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "n8n AI Agent Webhook",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "n8n-ai-agent-webhook-production-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试"
+          }
+        ],
+        "reviewFocus": [
+          "核对平台连接器、webhook、权限和部署限制",
+          "避免鼓励群发、绕过平台规则或抓取隐私数据",
+          "写清楚人工审批和客户验收边界"
+        ],
+        "searchDemandNote": "External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue.",
+        "searchQueries": [
+          "Dify 部署教程",
+          "n8n AI 自动化教程",
+          "MCP 使用教程",
+          "Flowise 本地部署",
+          "Coze Bot 发布"
+        ],
+        "sourceSignals": [
+          {
+            "note": "Dify 官方文档可用于核对 workflow、knowledge、model provider 等术语。",
+            "title": "Dify documentation",
+            "type": "official-doc",
+            "url": "https://docs.dify.ai/"
+          },
+          {
+            "note": "n8n 官方文档覆盖 AI Agent、webhook、credentials，适合核对安全边界。",
+            "title": "n8n documentation",
+            "type": "official-doc",
+            "url": "https://docs.n8n.io/"
+          },
+          {
+            "note": "MCP 官方文档是工具协议和 server/client 概念的事实来源。",
+            "title": "Model Context Protocol documentation",
+            "type": "official-doc",
+            "url": "https://modelcontextprotocol.io/docs"
+          }
+        ],
+        "why": "这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。"
+      },
+      {
+        "audience": "需要把 AI API 接进产品、网站、SaaS 原型的人",
+        "cluster": "AI API 接入、限流、成本和多模型路由",
+        "contentAngles": [
+          "OpenAI/Claude/Gemini/OpenRouter API 接入",
+          "rate limit、重试、降级、队列和缓存",
+          "多模型 fallback、router、AI Gateway",
+          "API key 安全、环境变量、日志脱敏"
+        ],
+        "draftMatches": 15,
+        "gapScore": 293,
+        "publicMatches": 0,
+        "readyCandidates": [
+          {
+            "category": "AI 部署",
+            "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "AI API Key 安全管理",
+            "publishBatch": 34,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "ai-api-key-security-rotation-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "Claude API rate limit reached",
+            "publishBatch": 34,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "claude-api-rate-limit-debug-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "Gemini API 限流",
+            "publishBatch": 34,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "gemini-api-rate-limit-debug-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/multi-model-router-fallback-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "多模型 Router 降级",
+            "publishBatch": 34,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "multi-model-router-fallback-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估"
+          },
+          {
+            "category": "AI 部署",
+            "file": "content/blog/llm-api-rate-limit-retry-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "大模型 API 限流重试",
+            "publishBatch": 32,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "llm-api-rate-limit-retry-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "大模型 API 限流和重试怎么做：429、队列、退避和降级方案"
+          },
+          {
+            "category": "AI 基建",
+            "file": "content/blog/helicone-llm-observability-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "Helicone LLM Observability",
+            "publishBatch": 28,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "helicone-llm-observability-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住"
+          }
+        ],
+        "reviewFocus": [
+          "核对 SDK 名称、API endpoint、限流概念和错误码",
+          "必须强调密钥安全、服务端代理和日志脱敏",
+          "不要虚构价格或模型能力"
+        ],
+        "searchDemandNote": "External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue.",
+        "searchQueries": [
+          "OpenAI API 接入教程",
+          "Claude API rate limit",
+          "Gemini API 限流",
+          "OpenRouter API 教程",
+          "AI API key 安全"
+        ],
+        "sourceSignals": [
+          {
+            "note": "OpenAI API 文档是模型、responses、tool calling 和 key 管理的事实源。",
+            "title": "OpenAI API documentation",
+            "type": "official-doc",
+            "url": "https://platform.openai.com/docs"
+          },
+          {
+            "note": "Anthropic 文档可核对 Claude API、rate limit 和 SDK 细节。",
+            "title": "Anthropic Claude API documentation",
+            "type": "official-doc",
+            "url": "https://docs.anthropic.com/"
+          },
+          {
+            "note": "Vercel AI Gateway 和多 provider 路由适合做成本、fallback、可观测性专题。",
+            "title": "Vercel AI Gateway",
+            "type": "official-doc",
+            "url": "https://vercel.com/docs/ai-gateway"
+          }
+        ],
+        "why": "API 接入和报错是明确搜索意图，能和工具页、报价页、部署教程形成内链闭环。"
+      },
+      {
+        "audience": "准备把 AI 应用交付给客户或团队使用的人",
+        "cluster": "LLM 观测、评测、日志和上线后质量",
+        "contentAngles": [
+          "Promptfoo、Ragas、LangSmith、Helicone、Phoenix 的用途",
+          "上线前测试集和人工抽检",
+          "日志、成本、延迟、错误率和用户反馈",
+          "RAG/Agent 失败案例复盘模板"
+        ],
+        "draftMatches": 13,
+        "gapScore": 287,
+        "publicMatches": 0,
+        "readyCandidates": [
+          {
+            "category": "AI 基建",
+            "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "MCP Server 部署安全",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "mcp-server-deployment-security-checklist",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单"
+          },
+          {
+            "category": "AI 基建",
+            "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "Agent 工具权限控制",
+            "publishBatch": 32,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "agent-tool-permission-safety-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志"
+          },
+          {
+            "category": "AI 基建",
+            "file": "content/blog/arize-phoenix-llm-observability-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "Arize Phoenix LLM Tracing",
+            "publishBatch": 28,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "arize-phoenix-llm-observability-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "Arize Phoenix 怎么做 LLM Tracing：OpenTelemetry、评测和排错入门"
+          },
+          {
+            "category": "AI 基建",
+            "file": "content/blog/helicone-llm-observability-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "Helicone LLM Observability",
+            "publishBatch": 28,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "helicone-llm-observability-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住"
+          },
+          {
+            "category": "AI 基建",
+            "file": "content/blog/langsmith-observability-evaluation-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "LangSmith Observability",
+            "publishBatch": 28,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "langsmith-observability-evaluation-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent"
+          },
+          {
+            "category": "AI 基建",
+            "file": "content/blog/promptfoo-llm-evaluation-beginner-guide.mdx",
+            "humanReviewRequired": true,
+            "noindex": true,
+            "primaryKeyword": "promptfoo LLM 评测",
+            "publishBatch": 28,
+            "qualityScore": 100,
+            "searchIntent": "informational",
+            "slug": "promptfoo-llm-evaluation-beginner-guide",
+            "sourceNotes": true,
+            "status": "draft",
+            "title": "promptfoo 怎么做 LLM 评测：提示词、模型和 Agent 都要有测试用例"
+          }
+        ],
+        "reviewFocus": [
+          "不要把评测分数写成绝对质量保证",
+          "明确日志隐私、数据脱敏和留存边界",
+          "给出人工抽检和回滚流程"
+        ],
+        "searchDemandNote": "External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue.",
+        "searchQueries": [
+          "LLM observability 教程",
+          "RAG 评测教程",
+          "promptfoo 入门",
+          "LangSmith 教程",
+          "AI 应用日志监控"
+        ],
+        "sourceSignals": [
+          {
+            "note": "Promptfoo 是 LLM eval 搜索中的常见工具，适合做上线前测试专题。",
+            "title": "promptfoo documentation",
+            "type": "official-doc",
+            "url": "https://www.promptfoo.dev/docs/intro/"
+          },
+          {
+            "note": "Ragas 是 RAG 评测主题的事实源之一。",
+            "title": "Ragas documentation",
+            "type": "official-doc",
+            "url": "https://docs.ragas.io/"
+          },
+          {
+            "note": "Helicone 覆盖 LLM observability、cost、latency、logs，适合做运维类内容。",
+            "title": "Helicone documentation",
+            "type": "official-doc",
+            "url": "https://docs.helicone.ai/"
+          }
+        ],
+        "why": "部署之后的质量和成本问题会持续出现，适合承接更成熟的搜索需求，也能提高文章可信度。"
+      }
+    ],
+    "clustersWithReadyCandidates": 8,
+    "clustersWithoutPublicCoverage": 8,
+    "externalSourceSignals": 24,
+    "publicArticles": 15,
+    "readyCandidateFiles": 33,
+    "reviewReadyDrafts": 633,
+    "unsafeClusters": 0,
+    "unsafeClusterList": []
+  },
   "reviewOptimizationBrief": {
     "briefs": 11,
     "briefsWithAction": 11,
@@ -8023,10 +9101,10 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 125,
+    "filesScanned": 127,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 1059
+    "watchMentions": 1127
   },
   "preflight": {
     "checked": 3,
@@ -16870,7 +17948,7 @@
   "liveSearch": {
     "checkedArticles": 15,
     "failedChecks": [],
-    "generatedAt": "2026-06-07T01:54:38.293Z",
+    "generatedAt": "2026-06-07T02:06:44.815Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 15,
@@ -16942,6 +18020,7 @@
     "Use docs/autopilot-review-sprint-board.md as the next-10 manual review sprint order.",
     "Use docs/autopilot-search-query-gap-brief.md to fill next-10 search-query gaps during manual review.",
     "Use docs/autopilot-queued-playbook-brief.md to review the 7 queued sprint items with merged search, source, freshness, and link actions.",
+    "Use docs/autopilot-broad-ai-demand-brief.md to prioritize broad AI deployment, Agent, memory, RAG, and industry prompt themes.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
     "If approved by a human, run mark:review with --confirm-human for approved files only.",
     "Publish only status=review articles in a 1-3 article batch after a dry-run."
