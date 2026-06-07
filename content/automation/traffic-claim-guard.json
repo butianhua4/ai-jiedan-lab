@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-07T01:42:00.738Z",
+  "generatedAt": "2026-06-07T01:54:21.409Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 121,
+    "filesScanned": 123,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 1024
+    "watchMentions": 1027
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -128,55 +128,55 @@
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 466,
+      "line": 487,
       "reason": "traffic-related mention",
       "text": "## Traffic Evidence"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 468,
+      "line": 489,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 469,
+      "line": 490,
       "reason": "traffic-related mention",
       "text": "- Can claim traffic: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 471,
+      "line": 492,
       "reason": "traffic-related mention",
       "text": "- Measured traffic sources: none"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 472,
+      "line": 493,
       "reason": "traffic-related mention",
       "text": "- Search Console verification evidence: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 475,
+      "line": 496,
       "reason": "traffic-related mention",
       "text": "- Unsupported traffic claims: 0"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 476,
+      "line": 497,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 121"
+      "text": "- Traffic claim files scanned: 123"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 477,
+      "line": 498,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 1004"
+      "text": "- Traffic claim watch mentions: 1026"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 513,
+      "line": 534,
       "reason": "traffic-related mention",
       "text": "| Dify、n8n、MCP 和无代码 AI 自动化 | 258 | 0 | 5 | 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 |"
     },
@@ -196,7 +196,7 @@
       "file": "docs/automation-gate.md",
       "line": 33,
       "reason": "traffic-related mention",
-      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=121, unsafeClaims=0, watchMentions=1004 |"
+      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=123, unsafeClaims=0, watchMentions=1026 |"
     },
     {
       "file": "docs/autopilot-approval-packet.md",

@@ -648,6 +648,39 @@ async function main() {
       withSourceTargets: number;
     };
   }>("content/automation/autopilot-review-sprint-board.json");
+  const autopilotSearchQueryGapBrief = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    items?: Array<{
+      commandBoundary?: { markReviewAfterHumanApproval?: string; publishConfirm?: string; publishDryRunAfterReview?: string };
+      factCheckQueries?: unknown[];
+      officialSourceTargets?: unknown[];
+      readyForManualSearchQueryReview?: boolean;
+      recommendedSearchQueries?: unknown[];
+      reviewChecklist?: unknown[];
+      safeDraft?: boolean;
+      sourceEvidence?: unknown[];
+    }>;
+    sourceEvidence: {
+      nextReviewSourcePackItems: number;
+      searchQueryCoverageItems: number;
+      sprintBoardItemsNeedingSearchQuery: number;
+      sprintBoardUnsafeItems: number;
+      waveApprovalPacketItems: number;
+    };
+    summary: {
+      items: number;
+      itemsWithCommandBoundary: number;
+      itemsWithCoverageEvidence: number;
+      itemsWithFactCheckQueries: number;
+      itemsWithOfficialSources: number;
+      itemsWithRecommendedQueries: number;
+      readyItems: number;
+      safeDraftItems: number;
+      totalRecommendedQueries: number;
+      unsafeItems: number;
+    };
+    unsafeItems?: unknown[];
+  }>("content/automation/autopilot-search-query-gap-brief.json");
   const reviewOptimizationBrief = readJson<{
     briefs?: Array<{
       file: string;
@@ -1220,6 +1253,45 @@ async function main() {
           ),
         ),
       detail: `ready=${autopilotReviewSprintBoard.summary.readyForSprint}, commands=${autopilotReviewSprintBoard.summary.itemsWithCommandBoundary}, queries=${autopilotReviewSprintBoard.summary.withSearchQueries}, sources=${autopilotReviewSprintBoard.summary.withSourceTargets}`,
+    },
+    {
+      name: "autopilot search query gap brief covers sprint query gaps",
+      ok:
+        autopilotSearchQueryGapBrief.guardrails.autoEditArticles === false &&
+        autopilotSearchQueryGapBrief.guardrails.autoMarkReview === false &&
+        autopilotSearchQueryGapBrief.guardrails.autoPublish === false &&
+        autopilotSearchQueryGapBrief.sourceEvidence.sprintBoardUnsafeItems === 0 &&
+        autopilotSearchQueryGapBrief.sourceEvidence.sprintBoardItemsNeedingSearchQuery === autopilotReviewSprintBoard.summary.itemsNeedingSearchQuery &&
+        autopilotSearchQueryGapBrief.summary.items === autopilotReviewSprintBoard.summary.itemsNeedingSearchQuery &&
+        autopilotSearchQueryGapBrief.summary.unsafeItems === 0,
+      detail: `items=${autopilotSearchQueryGapBrief.summary.items}, sprintNeedsQuery=${autopilotReviewSprintBoard.summary.itemsNeedingSearchQuery}, unsafe=${autopilotSearchQueryGapBrief.summary.unsafeItems}`,
+    },
+    {
+      name: "autopilot search query gap brief has source-backed manual query suggestions",
+      ok:
+        autopilotSearchQueryGapBrief.summary.readyItems === autopilotSearchQueryGapBrief.summary.items &&
+        autopilotSearchQueryGapBrief.summary.safeDraftItems === autopilotSearchQueryGapBrief.summary.items &&
+        autopilotSearchQueryGapBrief.summary.itemsWithCommandBoundary === autopilotSearchQueryGapBrief.summary.items &&
+        autopilotSearchQueryGapBrief.summary.itemsWithCoverageEvidence === autopilotSearchQueryGapBrief.summary.items &&
+        autopilotSearchQueryGapBrief.summary.itemsWithFactCheckQueries === autopilotSearchQueryGapBrief.summary.items &&
+        autopilotSearchQueryGapBrief.summary.itemsWithOfficialSources === autopilotSearchQueryGapBrief.summary.items &&
+        autopilotSearchQueryGapBrief.summary.itemsWithRecommendedQueries === autopilotSearchQueryGapBrief.summary.items &&
+        Boolean(
+          autopilotSearchQueryGapBrief.items?.every(
+            (item) =>
+              item.readyForManualSearchQueryReview === true &&
+              item.safeDraft === true &&
+              (item.sourceEvidence?.length || 0) > 0 &&
+              (item.recommendedSearchQueries?.length || 0) >= 6 &&
+              (item.factCheckQueries?.length || 0) > 0 &&
+              (item.officialSourceTargets?.length || 0) > 0 &&
+              (item.reviewChecklist?.length || 0) >= 5 &&
+              item.commandBoundary?.markReviewAfterHumanApproval?.includes("--confirm-human") &&
+              !item.commandBoundary?.publishDryRunAfterReview?.includes("--confirm") &&
+              item.commandBoundary?.publishConfirm === "not-included",
+          ),
+        ),
+      detail: `ready=${autopilotSearchQueryGapBrief.summary.readyItems}, coverage=${autopilotSearchQueryGapBrief.summary.itemsWithCoverageEvidence}, recommended=${autopilotSearchQueryGapBrief.summary.totalRecommendedQueries}, sources=${autopilotSearchQueryGapBrief.summary.itemsWithOfficialSources}`,
     },
     {
       name: "review optimization brief is read-only and covers ready action-board tasks",

@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-07T01:42:27.530Z
+Generated at: 2026-06-07T01:54:48.725Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 103
-- Passed: 103
+- Checks: 105
+- Passed: 105
 - Failed: 0
 
 ## Checks
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=121, unsafeClaims=0, watchMentions=1024 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=123, unsafeClaims=0, watchMentions=1027 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, candidates=19 |
@@ -55,6 +55,8 @@ Overall: PASS
 | autopilot human review playbook keeps actions human-gated | PASS | commands=3, search=3, source=3, links=3 |
 | autopilot review sprint board covers next assignments | PASS | items=10, readyWithPlaybook=3, queued=7, needsQuery=1, unsafe=0 |
 | autopilot review sprint board keeps sprint actions human-gated | PASS | ready=10, commands=10, queries=9, sources=10 |
+| autopilot search query gap brief covers sprint query gaps | PASS | items=1, sprintNeedsQuery=1, unsafe=0 |
+| autopilot search query gap brief has source-backed manual query suggestions | PASS | ready=1, coverage=1, recommended=10, sources=1 |
 | review optimization brief is read-only and covers ready action-board tasks | PASS | briefs=11, ready=11, unsafeCommands=0 |
 | review optimization brief has actionable copydesk guidance | PASS | withAction=11, missingPublicLinkItems=10, exactQueryWeak=3 |
 | search snippet readiness audit is read-only and covers public plus expansion items | PASS | public=15, expansion=19, scoped=34 |

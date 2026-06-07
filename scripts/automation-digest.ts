@@ -555,6 +555,36 @@ type AutopilotReviewSprintBoard = {
   unsafeItems: unknown[];
 };
 
+type AutopilotSearchQueryGapBrief = {
+  items: Array<{
+    commandBoundary: { markReviewAfterHumanApproval: string; publishConfirm: string; publishDryRunAfterReview: string };
+    coverageLane: string;
+    factCheckQueries: unknown[];
+    file: string;
+    officialSourceTargets: unknown[];
+    primaryKeyword: string;
+    readyForManualSearchQueryReview: boolean;
+    recommendedSearchQueries: string[];
+    safeDraft: boolean;
+    sourceEvidence: unknown[];
+    sprintOrder: number;
+    title: string;
+  }>;
+  summary: {
+    items: number;
+    itemsWithCommandBoundary: number;
+    itemsWithCoverageEvidence: number;
+    itemsWithFactCheckQueries: number;
+    itemsWithOfficialSources: number;
+    itemsWithRecommendedQueries: number;
+    readyItems: number;
+    safeDraftItems: number;
+    totalRecommendedQueries: number;
+    unsafeItems: number;
+  };
+  unsafeItems: unknown[];
+};
+
 type ReviewOptimizationBrief = {
   nextBriefs: Array<{
     file: string;
@@ -932,6 +962,7 @@ const reports = {
   autopilotSourceVerificationBrief: readJson<AutopilotSourceVerificationBrief>("content/automation/autopilot-source-verification-brief.json"),
   autopilotHumanReviewPlaybook: readJson<AutopilotHumanReviewPlaybook>("content/automation/autopilot-human-review-playbook.json"),
   autopilotReviewSprintBoard: readJson<AutopilotReviewSprintBoard>("content/automation/autopilot-review-sprint-board.json"),
+  autopilotSearchQueryGapBrief: readJson<AutopilotSearchQueryGapBrief>("content/automation/autopilot-search-query-gap-brief.json"),
   reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
   reviewCannibalizationBrief: readJson<ReviewCannibalizationBrief>("content/automation/review-cannibalization-brief.json"),
   reviewFreshnessBrief: readJson<ReviewFreshnessBrief>("content/automation/review-freshness-brief.json"),
@@ -1098,6 +1129,20 @@ const payload = {
     unsafeItemList: reports.autopilotReviewSprintBoard.data?.unsafeItems.slice(0, 8) ?? [],
     withSearchQueries: reports.autopilotReviewSprintBoard.data?.summary.withSearchQueries ?? null,
     withSourceTargets: reports.autopilotReviewSprintBoard.data?.summary.withSourceTargets ?? null,
+  },
+  autopilotSearchQueryGapBrief: {
+    items: reports.autopilotSearchQueryGapBrief.data?.summary.items ?? null,
+    itemsList: reports.autopilotSearchQueryGapBrief.data?.items.slice(0, 5) ?? [],
+    itemsWithCommandBoundary: reports.autopilotSearchQueryGapBrief.data?.summary.itemsWithCommandBoundary ?? null,
+    itemsWithCoverageEvidence: reports.autopilotSearchQueryGapBrief.data?.summary.itemsWithCoverageEvidence ?? null,
+    itemsWithFactCheckQueries: reports.autopilotSearchQueryGapBrief.data?.summary.itemsWithFactCheckQueries ?? null,
+    itemsWithOfficialSources: reports.autopilotSearchQueryGapBrief.data?.summary.itemsWithOfficialSources ?? null,
+    itemsWithRecommendedQueries: reports.autopilotSearchQueryGapBrief.data?.summary.itemsWithRecommendedQueries ?? null,
+    readyItems: reports.autopilotSearchQueryGapBrief.data?.summary.readyItems ?? null,
+    safeDraftItems: reports.autopilotSearchQueryGapBrief.data?.summary.safeDraftItems ?? null,
+    totalRecommendedQueries: reports.autopilotSearchQueryGapBrief.data?.summary.totalRecommendedQueries ?? null,
+    unsafeItems: reports.autopilotSearchQueryGapBrief.data?.summary.unsafeItems ?? null,
+    unsafeItemList: reports.autopilotSearchQueryGapBrief.data?.unsafeItems.slice(0, 8) ?? [],
   },
   reviewOptimizationBrief: {
     briefs: reports.reviewOptimizationBrief.data?.summary.briefs ?? null,
@@ -1467,6 +1512,9 @@ function buildNextActions() {
   if (!reports.autopilotReviewSprintBoard.data || reports.autopilotReviewSprintBoard.data.summary.unsafeItems > 0) {
     return ["Open docs/autopilot-review-sprint-board.md and resolve unsafe sprint items before assigning manual review work."];
   }
+  if (!reports.autopilotSearchQueryGapBrief.data || reports.autopilotSearchQueryGapBrief.data.summary.unsafeItems > 0) {
+    return ["Open docs/autopilot-search-query-gap-brief.md and resolve unsafe search-query gap items before manual review."];
+  }
   if (!reports.reviewOptimizationBrief.data || reports.reviewOptimizationBrief.data.summary.unsafeCommands > 0) {
     return ["Open docs/review-optimization-brief.md and resolve unsafe or missing copydesk guidance before manual review."];
   }
@@ -1537,6 +1585,7 @@ function buildNextActions() {
     "Use docs/autopilot-source-verification-brief.md to verify top-3 official sources and fast-changing claims during human review.",
     "Use docs/autopilot-human-review-playbook.md as the merged top-3 checklist before any mark:review command.",
     "Use docs/autopilot-review-sprint-board.md as the next-10 manual review sprint order.",
+    "Use docs/autopilot-search-query-gap-brief.md to fill next-10 search-query gaps during manual review.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
     "If approved by a human, run mark:review with --confirm-human for approved files only.",
     "Publish only status=review articles in a 1-3 article batch after a dry-run.",
@@ -1823,6 +1872,30 @@ function toMarkdown(data: typeof payload) {
     ...data.autopilotReviewSprintBoard.itemsList.map(
       (item) =>
         `| ${item.sprintOrder} | ${item.readyForSprint} | ${item.playbookStage} | ${item.lane} | ${item.sourceTargets} | ${item.searchQueries} | ${item.commandBoundary.markReviewAfterHumanApproval.includes("--confirm-human")} | ${item.commandBoundary.publishConfirm} | ${item.title} | ${item.file} |`,
+    ),
+    "",
+    "## Autopilot Search Query Gap Brief",
+    "",
+    `- Items: ${data.autopilotSearchQueryGapBrief.items}`,
+    `- Ready items: ${data.autopilotSearchQueryGapBrief.readyItems}`,
+    `- Safe draft items: ${data.autopilotSearchQueryGapBrief.safeDraftItems}`,
+    `- Items with command boundary: ${data.autopilotSearchQueryGapBrief.itemsWithCommandBoundary}`,
+    `- Items with coverage evidence: ${data.autopilotSearchQueryGapBrief.itemsWithCoverageEvidence}`,
+    `- Items with fact-check queries: ${data.autopilotSearchQueryGapBrief.itemsWithFactCheckQueries}`,
+    `- Items with official sources: ${data.autopilotSearchQueryGapBrief.itemsWithOfficialSources}`,
+    `- Items with recommended queries: ${data.autopilotSearchQueryGapBrief.itemsWithRecommendedQueries}`,
+    `- Total recommended queries: ${data.autopilotSearchQueryGapBrief.totalRecommendedQueries}`,
+    `- Unsafe items: ${data.autopilotSearchQueryGapBrief.unsafeItems}`,
+    "",
+    "Unsafe search-query gap items:",
+    "",
+    ...(data.autopilotSearchQueryGapBrief.unsafeItemList.length ? data.autopilotSearchQueryGapBrief.unsafeItemList.map((item) => `- ${JSON.stringify(item)}`) : ["- none"]),
+    "",
+    "| Order | Ready | Sources | Queries | Primary keyword | Coverage lane | Mark-review gated | Publish confirm | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.autopilotSearchQueryGapBrief.itemsList.map(
+      (item) =>
+        `| ${item.sprintOrder} | ${item.readyForManualSearchQueryReview} | ${item.officialSourceTargets.length} | ${item.recommendedSearchQueries.length} | ${item.primaryKeyword} | ${item.coverageLane} | ${item.commandBoundary.markReviewAfterHumanApproval.includes("--confirm-human")} | ${item.commandBoundary.publishConfirm} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Review Optimization Brief",

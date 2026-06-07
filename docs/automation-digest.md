@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T01:42:27.499Z
+Generated at: 2026-06-07T01:54:48.635Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -278,6 +278,27 @@ Unsafe sprint items:
 | 9 | true | queued-for-playbook | public-coverage-gap | 2 | 4 | true | not-included | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | 10 | true | queued-for-playbook | industry-prompt | 5 | 4 | true | not-included | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
 
+## Autopilot Search Query Gap Brief
+
+- Items: 1
+- Ready items: 1
+- Safe draft items: 1
+- Items with command boundary: 1
+- Items with coverage evidence: 1
+- Items with fact-check queries: 1
+- Items with official sources: 1
+- Items with recommended queries: 1
+- Total recommended queries: 10
+- Unsafe items: 0
+
+Unsafe search-query gap items:
+
+- none
+
+| Order | Ready | Sources | Queries | Primary keyword | Coverage lane | Mark-review gated | Publish confirm | Title | File |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 3 | true | 7 | 10 | 客服 AI 模型选型 | Cross-industry AI prompt templates and reusable prompt libraries | true | not-included | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+
 ## Review Optimization Brief
 
 - Briefs: 11
@@ -473,8 +494,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 121
-- Traffic claim watch mentions: 1024
+- Traffic claim files scanned: 123
+- Traffic claim watch mentions: 1027
 
 ## Preflight
 
@@ -836,7 +857,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-07T01:42:16.969Z
+- Latest check: 2026-06-07T01:54:38.293Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
@@ -867,6 +888,7 @@ Next review files:
 - Use docs/autopilot-source-verification-brief.md to verify top-3 official sources and fast-changing claims during human review.
 - Use docs/autopilot-human-review-playbook.md as the merged top-3 checklist before any mark:review command.
 - Use docs/autopilot-review-sprint-board.md as the next-10 manual review sprint order.
+- Use docs/autopilot-search-query-gap-brief.md to fill next-10 search-query gaps during manual review.
 - Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.
 - If approved by a human, run mark:review with --confirm-human for approved files only.
 - Publish only status=review articles in a 1-3 article batch after a dry-run.
