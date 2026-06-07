@@ -36,6 +36,23 @@ async function main() {
   const searchability = readJson<{ failedItems: unknown[]; score: number; summary?: { checks: number } }>("content/automation/searchability-check.json");
   const reviewPreflight = readJson<{ ok: boolean; summary: { failed: number } }>("content/automation/review-preflight.json");
   const sanitize = readJson<{ changedFiles: number; totalReplacements: number }>("content/automation/draft-guardrail-sanitize.json");
+  const workflowAudit = readJson<{
+    guardrails: { autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    summary: {
+      automationWorkflowPresent: boolean;
+      checks: number;
+      contentCheckWorkflowPresent: boolean;
+      failed: number;
+      forbiddenWorkflowCommands: number;
+      manualDispatchEnabled: boolean;
+      passed: number;
+      pushMainEnabled: boolean;
+      reportArtifactEnabled: boolean;
+      scheduledReportCommitGated: boolean;
+      scheduleCount: number;
+      trafficDataAvailable: boolean;
+    };
+  }>("content/automation/project-automation-workflow-audit.json");
   const opportunityMap = readJson<{ reviewBatches?: Array<{ candidates?: unknown[] }>; totals: { reviewReadyDrafts: number } }>(
     "content/automation/seo-opportunity-map.json",
   );
@@ -2031,6 +2048,30 @@ async function main() {
       name: "draft guardrail sanitizer is clean",
       ok: sanitize.changedFiles === 0 && sanitize.totalReplacements === 0,
       detail: `changedFiles=${sanitize.changedFiles}, totalReplacements=${sanitize.totalReplacements}`,
+    },
+    {
+      name: "project automation workflow is scheduled and report-visible",
+      ok:
+        workflowAudit.guardrails.autoMarkReview === false &&
+        workflowAudit.guardrails.autoPublish === false &&
+        workflowAudit.guardrails.trafficClaim === "not-included" &&
+        workflowAudit.summary.failed === 0 &&
+        workflowAudit.summary.automationWorkflowPresent === true &&
+        workflowAudit.summary.contentCheckWorkflowPresent === true &&
+        workflowAudit.summary.pushMainEnabled === true &&
+        workflowAudit.summary.manualDispatchEnabled === true &&
+        workflowAudit.summary.scheduleCount >= 4 &&
+        workflowAudit.summary.reportArtifactEnabled === true &&
+        workflowAudit.summary.scheduledReportCommitGated === true,
+      detail: `scheduleCount=${workflowAudit.summary.scheduleCount}, artifact=${workflowAudit.summary.reportArtifactEnabled}, reportCommitGated=${workflowAudit.summary.scheduledReportCommitGated}`,
+    },
+    {
+      name: "project automation workflow excludes review and publish commands",
+      ok:
+        workflowAudit.summary.forbiddenWorkflowCommands === 0 &&
+        workflowAudit.summary.trafficDataAvailable === false &&
+        workflowAudit.summary.passed === workflowAudit.summary.checks,
+      detail: `forbiddenWorkflowCommands=${workflowAudit.summary.forbiddenWorkflowCommands}, checks=${workflowAudit.summary.passed}/${workflowAudit.summary.checks}`,
     },
     {
       name: "no non-published article is indexable",

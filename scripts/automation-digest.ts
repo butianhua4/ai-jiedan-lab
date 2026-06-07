@@ -8,6 +8,23 @@ type Report<T> = {
   path: string;
 };
 
+type WorkflowAudit = {
+  summary: {
+    automationWorkflowPresent: boolean;
+    checks: number;
+    contentCheckWorkflowPresent: boolean;
+    failed: number;
+    forbiddenWorkflowCommands: number;
+    manualDispatchEnabled: boolean;
+    passed: number;
+    pushMainEnabled: boolean;
+    reportArtifactEnabled: boolean;
+    scheduledReportCommitGated: boolean;
+    scheduleCount: number;
+    trafficDataAvailable: boolean;
+  };
+};
+
 type ReviewCandidate = {
   cluster: string;
   file: string;
@@ -2151,6 +2168,7 @@ const reports = {
   freshness: readJson<{ summary: { currentReviewItems: number; highRisk: number; mediumRisk: number; plannedReviewItems: number } }>(
     "content/automation/content-freshness.json",
   ),
+  workflowAudit: readJson<WorkflowAudit>("content/automation/project-automation-workflow-audit.json"),
   contentBacklog: readJson<{ opportunities: ContentOpportunity[]; totals: { topics: number; topicsWithReadyCandidates: number } }>(
     "content/automation/content-opportunity-backlog.json",
   ),
@@ -2280,6 +2298,20 @@ const payload = {
     searchabilityScore: reports.searchability.data?.score ?? null,
     seoOk: reports.seo.data?.ok ?? false,
     trafficDataAvailable: reports.trafficEvidence.data?.summary.trafficDataAvailable ?? false,
+  },
+  workflowAudit: {
+    automationWorkflowPresent: reports.workflowAudit.data?.summary.automationWorkflowPresent ?? null,
+    checks: reports.workflowAudit.data?.summary.checks ?? null,
+    contentCheckWorkflowPresent: reports.workflowAudit.data?.summary.contentCheckWorkflowPresent ?? null,
+    failed: reports.workflowAudit.data?.summary.failed ?? null,
+    forbiddenWorkflowCommands: reports.workflowAudit.data?.summary.forbiddenWorkflowCommands ?? null,
+    manualDispatchEnabled: reports.workflowAudit.data?.summary.manualDispatchEnabled ?? null,
+    passed: reports.workflowAudit.data?.summary.passed ?? null,
+    pushMainEnabled: reports.workflowAudit.data?.summary.pushMainEnabled ?? null,
+    reportArtifactEnabled: reports.workflowAudit.data?.summary.reportArtifactEnabled ?? null,
+    scheduledReportCommitGated: reports.workflowAudit.data?.summary.scheduledReportCommitGated ?? null,
+    scheduleCount: reports.workflowAudit.data?.summary.scheduleCount ?? null,
+    trafficDataAvailable: reports.workflowAudit.data?.summary.trafficDataAvailable ?? null,
   },
   contentIntegrity: reports.contentIntegrity.data?.summary ?? null,
   internalLinks: reports.internalLinks.data?.summary ?? null,
@@ -3324,6 +3356,9 @@ function readJson<T>(relativePath: string): Report<T> {
 function buildNextActions() {
   if (missingReports.length) return [`Fix missing reports: ${missingReports.join(", ")}`];
   if (!reports.gate.data?.ok) return ["Open docs/automation-gate.md and fix failed checks before any review or publish action."];
+  if (!reports.workflowAudit.data || reports.workflowAudit.data.summary.failed > 0 || reports.workflowAudit.data.summary.forbiddenWorkflowCommands > 0) {
+    return ["Open docs/project-automation-workflow-audit.md and fix scheduled automation workflow safety before relying on autopilot runs."];
+  }
   if (!reports.preflight.data?.ok) return ["Open docs/review-preflight.md and resolve candidate issues before marking review."];
   if (!reports.nextReviewSourcePack.data || reports.nextReviewSourcePack.data.summary.unsafeItems > 0) {
     return ["Open docs/next-review-source-pack.md and resolve source-pack guardrail issues before manual review."];
@@ -3576,6 +3611,7 @@ function buildNextActions() {
     return ["Open docs/review-coverage-report.md and regenerate coverage for all planned review candidates."];
   }
   return [
+    "Use docs/project-automation-workflow-audit.md to confirm scheduled project automation is active and still publish-safe.",
     "Manually review the three recommended drafts in docs/review-preflight.md.",
     "Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.",
     "Use docs/wave-publish-simulation.md to see the exact post-approval mark-review and publish dry-run path.",
@@ -3631,6 +3667,19 @@ function toMarkdown(data: typeof payload) {
     `- Searchability score: ${data.health.searchabilityScore}`,
     `- Traffic data available: ${data.health.trafficDataAvailable}`,
     `- Missing reports: ${data.health.missingReports.length ? data.health.missingReports.join(", ") : "none"}`,
+    "",
+    "## Project Automation Workflow",
+    "",
+    `- Automation workflow present: ${data.workflowAudit.automationWorkflowPresent}`,
+    `- Content check workflow present: ${data.workflowAudit.contentCheckWorkflowPresent}`,
+    `- Push main enabled: ${data.workflowAudit.pushMainEnabled}`,
+    `- Manual dispatch enabled: ${data.workflowAudit.manualDispatchEnabled}`,
+    `- Scheduled runs per day: ${data.workflowAudit.scheduleCount}`,
+    `- Report artifact enabled: ${data.workflowAudit.reportArtifactEnabled}`,
+    `- Scheduled report commit gated: ${data.workflowAudit.scheduledReportCommitGated}`,
+    `- Forbidden workflow commands: ${data.workflowAudit.forbiddenWorkflowCommands}`,
+    `- Checks passed: ${data.workflowAudit.passed}/${data.workflowAudit.checks}`,
+    `- Traffic data available: ${data.workflowAudit.trafficDataAvailable}`,
     "",
     "## Content Integrity",
     "",

@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T20:29:47.123Z
+Generated at: 2026-06-07T20:39:20.266Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -13,6 +13,19 @@ This digest is read-only. It summarizes automation reports and does not publish 
 - Searchability score: 100
 - Traffic data available: false
 - Missing reports: none
+
+## Project Automation Workflow
+
+- Automation workflow present: true
+- Content check workflow present: true
+- Push main enabled: true
+- Manual dispatch enabled: true
+- Scheduled runs per day: 4
+- Report artifact enabled: true
+- Scheduled report commit gated: true
+- Forbidden workflow commands: 0
+- Checks passed: 10/10
+- Traffic data available: false
 
 ## Content Integrity
 
@@ -1181,8 +1194,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 189
-- Traffic claim watch mentions: 3473
+- Traffic claim files scanned: 191
+- Traffic claim watch mentions: 3479
 
 ## Public Surface Inventory
 
@@ -1963,6 +1976,7 @@ Public categories:
 
 ## Next Actions
 
+- Use docs/project-automation-workflow-audit.md to confirm scheduled project automation is active and still publish-safe.
 - Manually review the three recommended drafts in docs/review-preflight.md.
 - Use docs/wave-approval-packet.md as the focused Wave 1 approval packet.
 - Use docs/wave-publish-simulation.md to see the exact post-approval mark-review and publish dry-run path.

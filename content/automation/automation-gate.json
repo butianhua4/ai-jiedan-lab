@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T20:29:46.553Z",
+  "generatedAt": "2026-06-07T20:39:19.707Z",
   "ok": true,
   "summary": {
-    "checks": 173,
+    "checks": 175,
     "failed": 0,
-    "passed": 173
+    "passed": 175
   },
   "failed": [],
   "checks": [
@@ -63,6 +63,16 @@
       "detail": "changedFiles=0, totalReplacements=0"
     },
     {
+      "name": "project automation workflow is scheduled and report-visible",
+      "ok": true,
+      "detail": "scheduleCount=4, artifact=true, reportCommitGated=true"
+    },
+    {
+      "name": "project automation workflow excludes review and publish commands",
+      "ok": true,
+      "detail": "forbiddenWorkflowCommands=0, checks=10/10"
+    },
+    {
       "name": "no non-published article is indexable",
       "ok": true,
       "detail": ""
@@ -90,7 +100,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=189, unsafeClaims=0, watchMentions=3473"
+      "detail": "filesScanned=191, unsafeClaims=0, watchMentions=3479"
     },
     {
       "name": "content integrity audit is read-only and clean",

@@ -17,6 +17,7 @@ const tasks: Task[] = [
   { title: "Generate review queue", args: ["run", "automation:review", "--", "--limit=25"] },
   { title: "Generate publish readiness pack", args: ["run", "automation:publish-pack", "--", "--limit=3"] },
   { title: "Run review candidate preflight", args: ["run", "automation:review-preflight"] },
+  { title: "Audit project automation workflow", args: ["run", "automation:workflow-audit"] },
   { title: "Generate project status", args: ["run", "--silent", "project:status"], outputFile: "content/automation/project-status.json" },
   { title: "Run traffic evidence audit", args: ["run", "traffic:evidence", "--", "--url=https://ai-jiedan-lab.vercel.app", "--fetch-retries=5", "--fetch-timeout-ms=15000"] },
   { title: "Run traffic claim guard", args: ["run", "traffic:claim-guard"] },

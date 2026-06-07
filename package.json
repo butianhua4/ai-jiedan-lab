@@ -22,6 +22,7 @@
     "content:review-queue": "tsx scripts/content-review-queue.ts",
     "content:opportunities": "tsx scripts/content-opportunity-backlog.ts",
     "automation:all": "tsx scripts/run-project-automation.ts",
+    "automation:workflow-audit": "tsx scripts/project-automation-workflow-audit.ts",
     "automation:digest": "tsx scripts/automation-digest.ts",
     "automation:review": "tsx scripts/review-automation.ts",
     "automation:review-plan": "tsx scripts/review-batch-plan.ts",

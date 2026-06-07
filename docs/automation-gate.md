@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-07T20:29:46.553Z
+Generated at: 2026-06-07T20:39:19.707Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 173
-- Passed: 173
+- Checks: 175
+- Passed: 175
 - Failed: 0
 
 ## Checks
@@ -25,12 +25,14 @@ Overall: PASS
 | searchability check passed | PASS | score=100, failed=0 |
 | searchability check covers llms.txt | PASS | checks=13 |
 | draft guardrail sanitizer is clean | PASS | changedFiles=0, totalReplacements=0 |
+| project automation workflow is scheduled and report-visible | PASS | scheduleCount=4, artifact=true, reportCommitGated=true |
+| project automation workflow excludes review and publish commands | PASS | forbiddenWorkflowCommands=0, checks=10/10 |
 | no non-published article is indexable | PASS |  |
 | all published articles are indexable | PASS |  |
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=189, unsafeClaims=0, watchMentions=3473 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=191, unsafeClaims=0, watchMentions=3479 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, broadFirst=8, candidates=22 |
