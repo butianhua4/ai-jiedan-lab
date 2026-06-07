@@ -1,0 +1,466 @@
+{
+  "generatedAt": "2026-06-07T20:29:12.555Z",
+  "guardrails": {
+    "autoCreateArticles": false,
+    "autoEditArticles": false,
+    "autoMarkReview": false,
+    "autoPublish": false,
+    "note": "Read-only memory and RAG sprint board. It turns broad RAG, knowledge base, vector search, Agent memory, privacy, and evaluation demand into manual review lanes.",
+    "stopBefore": "Stop before article creation, article edits, mark:review, publish dry-run, or publish confirm until a human approves exact files and changes.",
+    "trafficClaim": "not-included"
+  },
+  "sourceEvidence": {
+    "deploymentReviewGeneratedAt": "2026-06-07T20:29:11.535Z",
+    "deploymentReviewSummary": {
+      "deploymentPublicArticles": 3,
+      "duplicateFiles": 0,
+      "items": 10,
+      "itemsWithChecklists": 10,
+      "itemsWithCommandBoundary": 10,
+      "itemsWithOfficialSources": 10,
+      "itemsWithSearchQueries": 10,
+      "reviewReadyDeploymentDrafts": 208,
+      "safeDraftItems": 10,
+      "topicsCovered": 10,
+      "topicsWithoutPublicCoverage": 8,
+      "unsafeItems": 0,
+      "uniqueFiles": 10
+    },
+    "officialSources": [
+      "Anthropic docs: https://docs.anthropic.com",
+      "Dify docs: https://docs.dify.ai",
+      "Hugging Face docs: https://huggingface.co/docs",
+      "LangChain docs: https://python.langchain.com/docs",
+      "LlamaIndex docs: https://docs.llamaindex.ai",
+      "n8n docs: https://docs.n8n.io",
+      "Ollama docs: https://docs.ollama.com",
+      "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+      "OpenAI API docs: https://platform.openai.com/docs",
+      "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+      "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+      "vLLM docs: https://docs.vllm.ai"
+    ],
+    "trafficNote": "Search queries are planning seeds only; no traffic, ranking, impression, click, conversion, revenue, benchmark, latency, or cost claim is made."
+  },
+  "summary": {
+    "candidateItems": 4,
+    "decisionChecks": 39,
+    "deploymentPublicArticles": 3,
+    "howToLanes": 2,
+    "itemsPerWave": 3,
+    "lanes": 6,
+    "lanesWithCandidateFiles": 2,
+    "privacyLanes": 1,
+    "publishConfirmCommandsIncluded": 0,
+    "readyCandidates": 4,
+    "readyLanes": 6,
+    "searchQueries": 24,
+    "sourceTargets": 6,
+    "trafficDataAvailable": false,
+    "unsafeItems": 0,
+    "vectorLanes": 1,
+    "waves": 2
+  },
+  "unsafeItems": [],
+  "waves": [
+    {
+      "audience": [
+        "第一次给企业或客服系统做知识库问答的人",
+        "正在做 Agent、但分不清上下文、状态和长期记忆的人",
+        "需要把文档、客服话术、SOP 接入问答系统的运营和开发者"
+      ],
+      "candidateFiles": [
+        "content/blog/ai-agent-memory-rag-design-guide.mdx"
+      ],
+      "decisionChecks": [
+        "State the user problem first: knowledge base setup, Agent memory, document ingestion, vector retrieval, evaluation, or privacy.",
+        "Separate implementation steps from conceptual explanation so beginners can scan the article.",
+        "Require citations or source links for retrieval output claims.",
+        "Call out privacy, permission, retention, and deletion boundaries before any production recommendation.",
+        "Keep article candidates draft/noindex/humanReviewRequired until explicit approval.",
+        "Do not claim traffic, ranking, accuracy, latency, or cost savings without measured evidence."
+      ],
+      "items": 3,
+      "readyItems": 3,
+      "searchQueries": [
+        "RAG 知识库搭建教程",
+        "企业知识库 AI 部署",
+        "客服知识库 AI 怎么做",
+        "RAG 和知识库区别",
+        "AI Agent 记忆怎么做",
+        "AI Agent 长期记忆",
+        "Agent memory RAG 区别",
+        "智能体记忆设计",
+        "RAG 文档切分怎么做",
+        "知识库 chunk size 怎么设置",
+        "RAG 文档上传流程",
+        "文档向量化教程"
+      ],
+      "unsafeItems": 0,
+      "wave": 1
+    },
+    {
+      "audience": [
+        "纠结用哪种向量数据库、索引和检索方式的人",
+        "已经做出知识库 demo、但回答不准的人",
+        "要在企业内部上线知识库、担心权限和隐私的人"
+      ],
+      "candidateFiles": [
+        "content/blog/ai-agent-memory-rag-design-guide.mdx"
+      ],
+      "decisionChecks": [
+        "State the user problem first: knowledge base setup, Agent memory, document ingestion, vector retrieval, evaluation, or privacy.",
+        "Separate implementation steps from conceptual explanation so beginners can scan the article.",
+        "Require citations or source links for retrieval output claims.",
+        "Call out privacy, permission, retention, and deletion boundaries before any production recommendation.",
+        "Keep article candidates draft/noindex/humanReviewRequired until explicit approval.",
+        "Do not claim traffic, ranking, accuracy, latency, or cost savings without measured evidence.",
+        "Compare vector database options by data size, hosting, filtering, metadata, and operations burden.",
+        "Require an evaluation loop for test questions, expected citations, false positives, and hallucination review.",
+        "Require access-control, data-retention, audit-log, and human-escalation checks."
+      ],
+      "items": 3,
+      "readyItems": 3,
+      "searchQueries": [
+        "向量数据库怎么选",
+        "RAG 向量数据库教程",
+        "Pinecone Milvus Chroma 区别",
+        "pgvector RAG 教程",
+        "RAG 评测怎么做",
+        "RAG 幻觉怎么解决",
+        "知识库回答不准怎么办",
+        "RAG 引用来源怎么做",
+        "企业知识库权限怎么做",
+        "AI 记忆隐私风险",
+        "RAG 数据权限控制",
+        "Agent 记忆保留多久"
+      ],
+      "unsafeItems": 0,
+      "wave": 2
+    }
+  ],
+  "lanes": [
+    {
+      "audience": "第一次给企业或客服系统做知识库问答的人",
+      "candidateFiles": [
+        "content/blog/ai-agent-memory-rag-design-guide.mdx"
+      ],
+      "decisionChecks": [
+        "State the user problem first: knowledge base setup, Agent memory, document ingestion, vector retrieval, evaluation, or privacy.",
+        "Separate implementation steps from conceptual explanation so beginners can scan the article.",
+        "Require citations or source links for retrieval output claims.",
+        "Call out privacy, permission, retention, and deletion boundaries before any production recommendation.",
+        "Keep article candidates draft/noindex/humanReviewRequired until explicit approval.",
+        "Do not claim traffic, ranking, accuracy, latency, or cost savings without measured evidence."
+      ],
+      "intent": "how-to",
+      "laneId": "rag-knowledge-base-setup",
+      "priorityScore": 410,
+      "publicMatches": 0,
+      "searchQueries": [
+        "RAG 知识库搭建教程",
+        "企业知识库 AI 部署",
+        "客服知识库 AI 怎么做",
+        "RAG 和知识库区别"
+      ],
+      "sourceTargets": [
+        "LangChain docs: https://python.langchain.com/docs",
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "LangChain memory docs: https://docs.langchain.com/oss/python/deepagents/long-term-memory"
+      ],
+      "sprintWave": 1,
+      "title": "RAG 知识库搭建教程",
+      "unsafeReasons": []
+    },
+    {
+      "audience": "正在做 Agent、但分不清上下文、状态和长期记忆的人",
+      "candidateFiles": [],
+      "decisionChecks": [
+        "State the user problem first: knowledge base setup, Agent memory, document ingestion, vector retrieval, evaluation, or privacy.",
+        "Separate implementation steps from conceptual explanation so beginners can scan the article.",
+        "Require citations or source links for retrieval output claims.",
+        "Call out privacy, permission, retention, and deletion boundaries before any production recommendation.",
+        "Keep article candidates draft/noindex/humanReviewRequired until explicit approval.",
+        "Do not claim traffic, ranking, accuracy, latency, or cost savings without measured evidence."
+      ],
+      "intent": "concept-and-design",
+      "laneId": "agent-long-term-memory",
+      "priorityScore": 405,
+      "publicMatches": 0,
+      "searchQueries": [
+        "AI Agent 记忆怎么做",
+        "AI Agent 长期记忆",
+        "Agent memory RAG 区别",
+        "智能体记忆设计"
+      ],
+      "sourceTargets": [
+        "LangChain docs: https://python.langchain.com/docs",
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "LangChain memory docs: https://docs.langchain.com/oss/python/deepagents/long-term-memory"
+      ],
+      "sprintWave": 1,
+      "title": "AI Agent 长期记忆设计",
+      "unsafeReasons": []
+    },
+    {
+      "audience": "需要把文档、客服话术、SOP 接入问答系统的运营和开发者",
+      "candidateFiles": [],
+      "decisionChecks": [
+        "State the user problem first: knowledge base setup, Agent memory, document ingestion, vector retrieval, evaluation, or privacy.",
+        "Separate implementation steps from conceptual explanation so beginners can scan the article.",
+        "Require citations or source links for retrieval output claims.",
+        "Call out privacy, permission, retention, and deletion boundaries before any production recommendation.",
+        "Keep article candidates draft/noindex/humanReviewRequired until explicit approval.",
+        "Do not claim traffic, ranking, accuracy, latency, or cost savings without measured evidence."
+      ],
+      "intent": "implementation",
+      "laneId": "document-ingestion-chunking",
+      "priorityScore": 395,
+      "publicMatches": 0,
+      "searchQueries": [
+        "RAG 文档切分怎么做",
+        "知识库 chunk size 怎么设置",
+        "RAG 文档上传流程",
+        "文档向量化教程"
+      ],
+      "sourceTargets": [
+        "LangChain docs: https://python.langchain.com/docs",
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "LangChain memory docs: https://docs.langchain.com/oss/python/deepagents/long-term-memory"
+      ],
+      "sprintWave": 1,
+      "title": "RAG 文档切分和入库流程",
+      "unsafeReasons": []
+    },
+    {
+      "audience": "纠结用哪种向量数据库、索引和检索方式的人",
+      "candidateFiles": [],
+      "decisionChecks": [
+        "State the user problem first: knowledge base setup, Agent memory, document ingestion, vector retrieval, evaluation, or privacy.",
+        "Separate implementation steps from conceptual explanation so beginners can scan the article.",
+        "Require citations or source links for retrieval output claims.",
+        "Call out privacy, permission, retention, and deletion boundaries before any production recommendation.",
+        "Keep article candidates draft/noindex/humanReviewRequired until explicit approval.",
+        "Do not claim traffic, ranking, accuracy, latency, or cost savings without measured evidence.",
+        "Compare vector database options by data size, hosting, filtering, metadata, and operations burden."
+      ],
+      "intent": "comparison",
+      "laneId": "vector-database-selection",
+      "priorityScore": 385,
+      "publicMatches": 0,
+      "searchQueries": [
+        "向量数据库怎么选",
+        "RAG 向量数据库教程",
+        "Pinecone Milvus Chroma 区别",
+        "pgvector RAG 教程"
+      ],
+      "sourceTargets": [
+        "LangChain docs: https://python.langchain.com/docs",
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "LangChain memory docs: https://docs.langchain.com/oss/python/deepagents/long-term-memory"
+      ],
+      "sprintWave": 2,
+      "title": "向量数据库和检索方案选择",
+      "unsafeReasons": []
+    },
+    {
+      "audience": "已经做出知识库 demo、但回答不准的人",
+      "candidateFiles": [
+        "content/blog/ai-agent-memory-rag-design-guide.mdx"
+      ],
+      "decisionChecks": [
+        "State the user problem first: knowledge base setup, Agent memory, document ingestion, vector retrieval, evaluation, or privacy.",
+        "Separate implementation steps from conceptual explanation so beginners can scan the article.",
+        "Require citations or source links for retrieval output claims.",
+        "Call out privacy, permission, retention, and deletion boundaries before any production recommendation.",
+        "Keep article candidates draft/noindex/humanReviewRequired until explicit approval.",
+        "Do not claim traffic, ranking, accuracy, latency, or cost savings without measured evidence.",
+        "Require an evaluation loop for test questions, expected citations, false positives, and hallucination review."
+      ],
+      "intent": "troubleshooting",
+      "laneId": "rag-evaluation-hallucination",
+      "priorityScore": 380,
+      "publicMatches": 0,
+      "searchQueries": [
+        "RAG 评测怎么做",
+        "RAG 幻觉怎么解决",
+        "知识库回答不准怎么办",
+        "RAG 引用来源怎么做"
+      ],
+      "sourceTargets": [
+        "LangChain docs: https://python.langchain.com/docs",
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "LangChain memory docs: https://docs.langchain.com/oss/python/deepagents/long-term-memory"
+      ],
+      "sprintWave": 2,
+      "title": "RAG 评测、引用和幻觉控制",
+      "unsafeReasons": []
+    },
+    {
+      "audience": "要在企业内部上线知识库、担心权限和隐私的人",
+      "candidateFiles": [],
+      "decisionChecks": [
+        "State the user problem first: knowledge base setup, Agent memory, document ingestion, vector retrieval, evaluation, or privacy.",
+        "Separate implementation steps from conceptual explanation so beginners can scan the article.",
+        "Require citations or source links for retrieval output claims.",
+        "Call out privacy, permission, retention, and deletion boundaries before any production recommendation.",
+        "Keep article candidates draft/noindex/humanReviewRequired until explicit approval.",
+        "Do not claim traffic, ranking, accuracy, latency, or cost savings without measured evidence.",
+        "Require access-control, data-retention, audit-log, and human-escalation checks."
+      ],
+      "intent": "risk-and-governance",
+      "laneId": "memory-privacy-permission",
+      "priorityScore": 370,
+      "publicMatches": 0,
+      "searchQueries": [
+        "企业知识库权限怎么做",
+        "AI 记忆隐私风险",
+        "RAG 数据权限控制",
+        "Agent 记忆保留多久"
+      ],
+      "sourceTargets": [
+        "LangChain docs: https://python.langchain.com/docs",
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "LangChain memory docs: https://docs.langchain.com/oss/python/deepagents/long-term-memory"
+      ],
+      "sprintWave": 2,
+      "title": "企业知识库权限、隐私和记忆保留",
+      "unsafeReasons": []
+    }
+  ],
+  "candidates": [
+    {
+      "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+      "matchedLanes": [
+        "rag-knowledge-base-setup",
+        "rag-evaluation-hallucination"
+      ],
+      "priorityScore": 378,
+      "publishConfirm": "not-included",
+      "readyForMemorySprint": true,
+      "reviewActions": [
+        "Confirm the article explains the difference between prompt context, short-term state, long-term memory, and RAG retrieval.",
+        "Verify chunking, embedding, retrieval, reranking, and citation claims against official or primary docs before human approval.",
+        "Add a failure section for stale documents, hallucinated answers, missing citations, and permission leakage.",
+        "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.",
+        "Do not include publish confirm commands in the handoff.",
+        "Do not claim measured traffic, ranking, conversion, answer accuracy, latency, or cost without evidence."
+      ],
+      "searchQueries": [
+        "RAG 知识库搭建教程",
+        "企业知识库 AI 部署",
+        "向量数据库 RAG 教程",
+        "RAG 评测怎么做"
+      ],
+      "sourceTargets": [
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "LangChain docs: https://python.langchain.com/docs",
+        "LlamaIndex docs: https://docs.llamaindex.ai",
+        "Hugging Face docs: https://huggingface.co/docs"
+      ],
+      "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+      "unsafeReasons": []
+    },
+    {
+      "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+      "matchedLanes": [],
+      "priorityScore": 374,
+      "publishConfirm": "not-included",
+      "readyForMemorySprint": true,
+      "reviewActions": [
+        "Confirm the article explains the difference between prompt context, short-term state, long-term memory, and RAG retrieval.",
+        "Verify chunking, embedding, retrieval, reranking, and citation claims against official or primary docs before human approval.",
+        "Add a failure section for stale documents, hallucinated answers, missing citations, and permission leakage.",
+        "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.",
+        "Do not include publish confirm commands in the handoff.",
+        "Do not claim measured traffic, ranking, conversion, answer accuracy, latency, or cost without evidence."
+      ],
+      "searchQueries": [
+        "本地部署大模型教程",
+        "Ollama 本地部署",
+        "Open WebUI Ollama 部署",
+        "本地大模型显存不够"
+      ],
+      "sourceTargets": [
+        "Ollama docs: https://docs.ollama.com",
+        "vLLM docs: https://docs.vllm.ai",
+        "Hugging Face docs: https://huggingface.co/docs"
+      ],
+      "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+      "unsafeReasons": []
+    },
+    {
+      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+      "matchedLanes": [],
+      "priorityScore": 370,
+      "publishConfirm": "not-included",
+      "readyForMemorySprint": true,
+      "reviewActions": [
+        "Confirm the article explains the difference between prompt context, short-term state, long-term memory, and RAG retrieval.",
+        "Verify chunking, embedding, retrieval, reranking, and citation claims against official or primary docs before human approval.",
+        "Add a failure section for stale documents, hallucinated answers, missing citations, and permission leakage.",
+        "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.",
+        "Do not include publish confirm commands in the handoff.",
+        "Do not claim measured traffic, ranking, conversion, answer accuracy, latency, or cost without evidence."
+      ],
+      "searchQueries": [
+        "Dify 部署教程",
+        "n8n AI Agent 自托管",
+        "Flowise 本地部署",
+        "Dify 工作流错误处理"
+      ],
+      "sourceTargets": [
+        "Dify docs: https://docs.dify.ai",
+        "n8n docs: https://docs.n8n.io"
+      ],
+      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+      "unsafeReasons": []
+    },
+    {
+      "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+      "matchedLanes": [],
+      "priorityScore": 366,
+      "publishConfirm": "not-included",
+      "readyForMemorySprint": true,
+      "reviewActions": [
+        "Confirm the article explains the difference between prompt context, short-term state, long-term memory, and RAG retrieval.",
+        "Verify chunking, embedding, retrieval, reranking, and citation claims against official or primary docs before human approval.",
+        "Add a failure section for stale documents, hallucinated answers, missing citations, and permission leakage.",
+        "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.",
+        "Do not include publish confirm commands in the handoff.",
+        "Do not claim measured traffic, ranking, conversion, answer accuracy, latency, or cost without evidence."
+      ],
+      "searchQueries": [
+        "LLM observability 教程",
+        "Agent 可观测性",
+        "RAG 评测",
+        "promptfoo LLM 评测"
+      ],
+      "sourceTargets": [
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "LangChain docs: https://python.langchain.com/docs",
+        "LlamaIndex docs: https://docs.llamaindex.ai"
+      ],
+      "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+      "unsafeReasons": []
+    }
+  ]
+}

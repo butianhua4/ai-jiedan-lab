@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T20:18:28.477Z",
+  "generatedAt": "2026-06-07T20:29:46.553Z",
   "ok": true,
   "summary": {
-    "checks": 171,
+    "checks": 173,
     "failed": 0,
-    "passed": 171
+    "passed": 173
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=187, unsafeClaims=0, watchMentions=3436"
+      "detail": "filesScanned=189, unsafeClaims=0, watchMentions=3473"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -461,6 +461,16 @@
       "name": "AI deployment sprint board keeps deployment work human-gated and publish-safe",
       "ok": true,
       "detail": "ready=10, actions=147, unsafe=0, publishConfirm=0"
+    },
+    {
+      "name": "memory RAG sprint board covers broad searchable memory demand",
+      "ok": true,
+      "detail": "lanes=6, queries=24, sources=6, waves=2"
+    },
+    {
+      "name": "memory RAG sprint board keeps memory work human-gated and publish-safe",
+      "ok": true,
+      "detail": "candidates=4, ready=4, checks=39, unsafe=0"
     },
     {
       "name": "industry prompt coverage has broad reviewable coverage",

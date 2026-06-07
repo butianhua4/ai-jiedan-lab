@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T20:18:29.041Z
+Generated at: 2026-06-07T20:29:47.123Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -93,7 +93,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=ja
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/ -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
@@ -1181,8 +1181,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 187
-- Traffic claim watch mentions: 3436
+- Traffic claim files scanned: 189
+- Traffic claim watch mentions: 3473
 
 ## Public Surface Inventory
 
@@ -1433,6 +1433,46 @@ Public categories:
 | 4 | true | 364 | deployment-ops | manual-deployment-review | 0 | 14 | 4 | 2 | 企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管 | content/blog/enterprise-im-ai-agent-integration-guide.mdx |
 | 5 | true | 274 | model-serving | model-serving-runtime | 2 | 15 | 4 | 3 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | 5 | true | 252 | api-integration | api-service-integration | 2 | 15 | 4 | 2 | 用 Claude Code 排查客户报错时怎么做才稳 | content/blog/claude-code-error-debug.mdx |
+
+## Memory RAG Sprint Board
+
+- Lanes: 6
+- Ready lanes: 6
+- Candidate items: 4
+- Ready candidates: 4
+- Waves: 2
+- Items per wave: 3
+- How-to lanes: 2
+- Vector lanes: 1
+- Privacy lanes: 1
+- Lanes with candidate files: 2
+- Search queries: 24
+- Source targets: 6
+- Decision checks: 39
+- Publish confirm commands included: 0
+- Traffic data available: false
+- Unsafe items: 0
+
+| Wave | Ready | Candidate files | Search queries |
+| ---: | ---: | --- | --- |
+| 1 | 3/3 | content/blog/ai-agent-memory-rag-design-guide.mdx | RAG 知识库搭建教程<br>企业知识库 AI 部署<br>客服知识库 AI 怎么做<br>RAG 和知识库区别<br>AI Agent 记忆怎么做<br>AI Agent 长期记忆 |
+| 2 | 3/3 | content/blog/ai-agent-memory-rag-design-guide.mdx | 向量数据库怎么选<br>RAG 向量数据库教程<br>Pinecone Milvus Chroma 区别<br>pgvector RAG 教程<br>RAG 评测怎么做<br>RAG 幻觉怎么解决 |
+
+| Wave | Score | Intent | Lane | Candidate files | Queries | Sources | Title |
+| ---: | ---: | --- | --- | --- | ---: | ---: | --- |
+| 1 | 410 | how-to | rag-knowledge-base-setup | content/blog/ai-agent-memory-rag-design-guide.mdx | 4 | 6 | RAG 知识库搭建教程 |
+| 1 | 405 | concept-and-design | agent-long-term-memory | none | 4 | 6 | AI Agent 长期记忆设计 |
+| 1 | 395 | implementation | document-ingestion-chunking | none | 4 | 6 | RAG 文档切分和入库流程 |
+| 2 | 385 | comparison | vector-database-selection | none | 4 | 6 | 向量数据库和检索方案选择 |
+| 2 | 380 | troubleshooting | rag-evaluation-hallucination | content/blog/ai-agent-memory-rag-design-guide.mdx | 4 | 6 | RAG 评测、引用和幻觉控制 |
+| 2 | 370 | risk-and-governance | memory-privacy-permission | none | 4 | 6 | 企业知识库权限、隐私和记忆保留 |
+
+| Ready | Score | Lanes | Queries | Sources | Title | File |
+| --- | ---: | --- | ---: | ---: | --- | --- |
+| true | 378 | rag-knowledge-base-setup, rag-evaluation-hallucination | 4 | 4 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| true | 374 | memory-adjacent | 4 | 3 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| true | 370 | memory-adjacent | 4 | 2 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| true | 366 | memory-adjacent | 4 | 3 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 
 ## Broad Search Demand Map
 
@@ -1930,6 +1970,7 @@ Public categories:
 - Use docs/public-surface-inventory.md to confirm what is public now and which broad AI clusters still have zero public coverage.
 - Use docs/public-coverage-gap-decision-pack.md to review the 8 broad-demand public gap candidates and their optimization actions.
 - Use docs/ai-deployment-review-pack.md to review the 10 deployment, Agent, RAG, memory, API, and infrastructure candidates.
+- Use docs/memory-rag-sprint-board.md to prioritize RAG, knowledge base, vector search, Agent memory, evaluation, and privacy content lanes.
 - Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.
 - Use docs/industry-prompt-opportunity-board.md to turn broad department prompt searches into specific prompt-pack page ideas.
 - Use docs/industry-prompt-module-pack.md to deepen each department prompt page with reusable input/output prompt blueprints.

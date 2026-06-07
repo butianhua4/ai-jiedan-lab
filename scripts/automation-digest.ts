@@ -253,6 +253,61 @@ type DeploymentSprintBoard = {
   }>;
 };
 
+type MemoryRagSprintBoard = {
+  candidates: Array<{
+    file: string;
+    matchedLanes: string[];
+    priorityScore: number;
+    publishConfirm: string;
+    readyForMemorySprint: boolean;
+    reviewActions: unknown[];
+    searchQueries: string[];
+    sourceTargets: string[];
+    title: string;
+    unsafeReasons: string[];
+  }>;
+  lanes: Array<{
+    audience: string;
+    candidateFiles: string[];
+    decisionChecks: string[];
+    intent: string;
+    laneId: string;
+    priorityScore: number;
+    searchQueries: string[];
+    sourceTargets: string[];
+    sprintWave: number;
+    title: string;
+    unsafeReasons: string[];
+  }>;
+  summary: {
+    candidateItems: number;
+    decisionChecks: number;
+    deploymentPublicArticles: number;
+    howToLanes: number;
+    itemsPerWave: number;
+    lanes: number;
+    lanesWithCandidateFiles: number;
+    privacyLanes: number;
+    publishConfirmCommandsIncluded: number;
+    readyCandidates: number;
+    readyLanes: number;
+    searchQueries: number;
+    sourceTargets: number;
+    trafficDataAvailable: boolean;
+    unsafeItems: number;
+    vectorLanes: number;
+    waves: number;
+  };
+  waves: Array<{
+    candidateFiles: string[];
+    items: number;
+    readyItems: number;
+    searchQueries: string[];
+    unsafeItems: number;
+    wave: number;
+  }>;
+};
+
 type ReviewRoadmap = {
   lanes: Array<{
     candidates: unknown[];
@@ -2102,6 +2157,7 @@ const reports = {
   deploymentCoverage: readJson<DeploymentCoverage>("content/automation/ai-deployment-coverage.json"),
   deploymentReviewPack: readJson<DeploymentReviewPack>("content/automation/ai-deployment-review-pack.json"),
   deploymentSprintBoard: readJson<DeploymentSprintBoard>("content/automation/ai-deployment-sprint-board.json"),
+  memoryRagSprintBoard: readJson<MemoryRagSprintBoard>("content/automation/memory-rag-sprint-board.json"),
   searchDemandIntake: readJson<SearchDemandIntake>("content/automation/search-demand-intake.json"),
   broadSearchDemand: readJson<BroadSearchDemand>("content/automation/broad-search-demand-map.json"),
   massAiSearchMatrix: readJson<MassAiSearchMatrix>("content/automation/mass-ai-search-action-matrix.json"),
@@ -2963,6 +3019,27 @@ const payload = {
     unsafeItems: reports.deploymentSprintBoard.data?.summary.unsafeItems ?? null,
     waves: reports.deploymentSprintBoard.data?.waves ?? [],
   },
+  memoryRagSprintBoard: {
+    candidateItems: reports.memoryRagSprintBoard.data?.summary.candidateItems ?? null,
+    decisionChecks: reports.memoryRagSprintBoard.data?.summary.decisionChecks ?? null,
+    deploymentPublicArticles: reports.memoryRagSprintBoard.data?.summary.deploymentPublicArticles ?? null,
+    howToLanes: reports.memoryRagSprintBoard.data?.summary.howToLanes ?? null,
+    itemsPerWave: reports.memoryRagSprintBoard.data?.summary.itemsPerWave ?? null,
+    lanes: reports.memoryRagSprintBoard.data?.summary.lanes ?? null,
+    lanesWithCandidateFiles: reports.memoryRagSprintBoard.data?.summary.lanesWithCandidateFiles ?? null,
+    privacyLanes: reports.memoryRagSprintBoard.data?.summary.privacyLanes ?? null,
+    publishConfirmCommandsIncluded: reports.memoryRagSprintBoard.data?.summary.publishConfirmCommandsIncluded ?? null,
+    readyCandidates: reports.memoryRagSprintBoard.data?.summary.readyCandidates ?? null,
+    readyLanes: reports.memoryRagSprintBoard.data?.summary.readyLanes ?? null,
+    searchQueries: reports.memoryRagSprintBoard.data?.summary.searchQueries ?? null,
+    sourceTargets: reports.memoryRagSprintBoard.data?.summary.sourceTargets ?? null,
+    topCandidates: reports.memoryRagSprintBoard.data?.candidates.slice(0, 8) ?? [],
+    topLanes: reports.memoryRagSprintBoard.data?.lanes.slice(0, 8) ?? [],
+    trafficDataAvailable: reports.memoryRagSprintBoard.data?.summary.trafficDataAvailable ?? null,
+    unsafeItems: reports.memoryRagSprintBoard.data?.summary.unsafeItems ?? null,
+    vectorLanes: reports.memoryRagSprintBoard.data?.summary.vectorLanes ?? null,
+    waves: reports.memoryRagSprintBoard.data?.waves ?? [],
+  },
   broadSearchDemand: {
     maxGapScore: reports.broadSearchDemand.data?.summary.maxGapScore ?? null,
     missingSubtopics: reports.broadSearchDemand.data?.summary.missingSubtopics ?? null,
@@ -3467,6 +3544,13 @@ function buildNextActions() {
   ) {
     return ["Open docs/ai-deployment-sprint-board.md and resolve deployment sprint issues before manual review."];
   }
+  if (
+    !reports.memoryRagSprintBoard.data ||
+    reports.memoryRagSprintBoard.data.summary.unsafeItems > 0 ||
+    reports.memoryRagSprintBoard.data.summary.publishConfirmCommandsIncluded > 0
+  ) {
+    return ["Open docs/memory-rag-sprint-board.md and resolve memory/RAG sprint issues before manual review."];
+  }
   if (!reports.promptReviewPack.data || reports.promptReviewPack.data.summary.unsafeItems > 0 || reports.promptReviewPack.data.summary.duplicateFiles > 0) {
     return ["Open docs/industry-prompt-review-pack.md and resolve prompt review pack safety or duplicate-file issues before manual review."];
   }
@@ -3499,6 +3583,7 @@ function buildNextActions() {
     "Use docs/public-surface-inventory.md to confirm what is public now and which broad AI clusters still have zero public coverage.",
     "Use docs/public-coverage-gap-decision-pack.md to review the 8 broad-demand public gap candidates and their optimization actions.",
     "Use docs/ai-deployment-review-pack.md to review the 10 deployment, Agent, RAG, memory, API, and infrastructure candidates.",
+    "Use docs/memory-rag-sprint-board.md to prioritize RAG, knowledge base, vector search, Agent memory, evaluation, and privacy content lanes.",
     "Use docs/industry-prompt-review-pack.md to review the 12 deduplicated high-demand industry prompt candidates.",
     "Use docs/industry-prompt-opportunity-board.md to turn broad department prompt searches into specific prompt-pack page ideas.",
     "Use docs/industry-prompt-module-pack.md to deepen each department prompt page with reusable input/output prompt blueprints.",
@@ -4809,6 +4894,45 @@ function toMarkdown(data: typeof payload) {
     ...data.deploymentSprintBoard.top.map(
       (item) =>
         `| ${item.sprintWave} | ${item.readyForDeploymentSprint} | ${item.priorityScore} | ${item.deploymentLane} | ${item.implementationMode} | ${item.publicMatches} | ${item.actionCount} | ${item.searchQueries.length} | ${item.sourceTargets.length} | ${item.title} | ${item.file} |`,
+    ),
+    "",
+    "## Memory RAG Sprint Board",
+    "",
+    `- Lanes: ${data.memoryRagSprintBoard.lanes}`,
+    `- Ready lanes: ${data.memoryRagSprintBoard.readyLanes}`,
+    `- Candidate items: ${data.memoryRagSprintBoard.candidateItems}`,
+    `- Ready candidates: ${data.memoryRagSprintBoard.readyCandidates}`,
+    `- Waves: ${data.memoryRagSprintBoard.waves.length}`,
+    `- Items per wave: ${data.memoryRagSprintBoard.itemsPerWave}`,
+    `- How-to lanes: ${data.memoryRagSprintBoard.howToLanes}`,
+    `- Vector lanes: ${data.memoryRagSprintBoard.vectorLanes}`,
+    `- Privacy lanes: ${data.memoryRagSprintBoard.privacyLanes}`,
+    `- Lanes with candidate files: ${data.memoryRagSprintBoard.lanesWithCandidateFiles}`,
+    `- Search queries: ${data.memoryRagSprintBoard.searchQueries}`,
+    `- Source targets: ${data.memoryRagSprintBoard.sourceTargets}`,
+    `- Decision checks: ${data.memoryRagSprintBoard.decisionChecks}`,
+    `- Publish confirm commands included: ${data.memoryRagSprintBoard.publishConfirmCommandsIncluded}`,
+    `- Traffic data available: ${data.memoryRagSprintBoard.trafficDataAvailable}`,
+    `- Unsafe items: ${data.memoryRagSprintBoard.unsafeItems}`,
+    "",
+    "| Wave | Ready | Candidate files | Search queries |",
+    "| ---: | ---: | --- | --- |",
+    ...data.memoryRagSprintBoard.waves.map(
+      (wave) => `| ${wave.wave} | ${wave.readyItems}/${wave.items} | ${wave.candidateFiles.join("<br>") || "none"} | ${wave.searchQueries.slice(0, 6).join("<br>")} |`,
+    ),
+    "",
+    "| Wave | Score | Intent | Lane | Candidate files | Queries | Sources | Title |",
+    "| ---: | ---: | --- | --- | --- | ---: | ---: | --- |",
+    ...data.memoryRagSprintBoard.topLanes.map(
+      (lane) =>
+        `| ${lane.sprintWave} | ${lane.priorityScore} | ${lane.intent} | ${lane.laneId} | ${lane.candidateFiles.join("<br>") || "none"} | ${lane.searchQueries.length} | ${lane.sourceTargets.length} | ${lane.title} |`,
+    ),
+    "",
+    "| Ready | Score | Lanes | Queries | Sources | Title | File |",
+    "| --- | ---: | --- | ---: | ---: | --- | --- |",
+    ...data.memoryRagSprintBoard.topCandidates.map(
+      (item) =>
+        `| ${item.readyForMemorySprint} | ${item.priorityScore} | ${item.matchedLanes.join(", ") || "memory-adjacent"} | ${item.searchQueries.length} | ${item.sourceTargets.length} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Broad Search Demand Map",

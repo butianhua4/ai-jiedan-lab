@@ -125,6 +125,45 @@ async function main() {
     unsafeItems?: unknown[];
     waves?: Array<{ actionItems?: number; items?: number; readyItems?: number; unsafeItems?: number }>;
   }>("content/automation/ai-deployment-sprint-board.json");
+  const memoryRagSprintBoard = readJson<{
+    candidates?: Array<{
+      publishConfirm?: string;
+      readyForMemorySprint?: boolean;
+      reviewActions?: unknown[];
+      searchQueries?: unknown[];
+      sourceTargets?: unknown[];
+      unsafeReasons?: unknown[];
+    }>;
+    guardrails: { autoCreateArticles: boolean; autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    lanes?: Array<{
+      candidateFiles?: unknown[];
+      decisionChecks?: unknown[];
+      searchQueries?: unknown[];
+      sourceTargets?: unknown[];
+      unsafeReasons?: unknown[];
+    }>;
+    summary: {
+      candidateItems: number;
+      decisionChecks: number;
+      deploymentPublicArticles: number;
+      howToLanes: number;
+      itemsPerWave: number;
+      lanes: number;
+      lanesWithCandidateFiles: number;
+      privacyLanes: number;
+      publishConfirmCommandsIncluded: number;
+      readyCandidates: number;
+      readyLanes: number;
+      searchQueries: number;
+      sourceTargets: number;
+      trafficDataAvailable: boolean;
+      unsafeItems: number;
+      vectorLanes: number;
+      waves: number;
+    };
+    unsafeItems?: unknown[];
+    waves?: Array<{ items?: number; readyItems?: number; unsafeItems?: number }>;
+  }>("content/automation/memory-rag-sprint-board.json");
   const promptCoverage = readJson<{
     coverage?: Array<{ candidates?: unknown[]; searchQueries?: unknown[]; sourceTargets?: unknown[] }>;
     guardrails: { autoMarkReview: boolean; autoPublish: boolean };
@@ -3313,6 +3352,56 @@ async function main() {
         ) &&
         Boolean(deploymentSprintBoard.waves?.every((wave) => wave.readyItems === wave.items && (wave.unsafeItems || 0) === 0 && (wave.actionItems || 0) >= (wave.items || 0) * 10)),
       detail: `ready=${deploymentSprintBoard.summary.readyForDeploymentSprint}, actions=${deploymentSprintBoard.summary.actionItems}, unsafe=${deploymentSprintBoard.summary.unsafeItems}, publishConfirm=${deploymentSprintBoard.summary.publishConfirmCommandsIncluded}`,
+    },
+    {
+      name: "memory RAG sprint board covers broad searchable memory demand",
+      ok:
+        memoryRagSprintBoard.guardrails.autoCreateArticles === false &&
+        memoryRagSprintBoard.guardrails.autoEditArticles === false &&
+        memoryRagSprintBoard.guardrails.autoMarkReview === false &&
+        memoryRagSprintBoard.guardrails.autoPublish === false &&
+        memoryRagSprintBoard.guardrails.trafficClaim === "not-included" &&
+        memoryRagSprintBoard.summary.lanes >= 6 &&
+        memoryRagSprintBoard.summary.readyLanes === memoryRagSprintBoard.summary.lanes &&
+        memoryRagSprintBoard.summary.howToLanes >= 2 &&
+        memoryRagSprintBoard.summary.vectorLanes >= 1 &&
+        memoryRagSprintBoard.summary.privacyLanes >= 1 &&
+        memoryRagSprintBoard.summary.searchQueries >= 24 &&
+        memoryRagSprintBoard.summary.sourceTargets >= 2 &&
+        memoryRagSprintBoard.summary.waves >= 2 &&
+        memoryRagSprintBoard.summary.trafficDataAvailable === false,
+      detail: `lanes=${memoryRagSprintBoard.summary.lanes}, queries=${memoryRagSprintBoard.summary.searchQueries}, sources=${memoryRagSprintBoard.summary.sourceTargets}, waves=${memoryRagSprintBoard.summary.waves}`,
+    },
+    {
+      name: "memory RAG sprint board keeps memory work human-gated and publish-safe",
+      ok:
+        memoryRagSprintBoard.summary.unsafeItems === 0 &&
+        (memoryRagSprintBoard.unsafeItems?.length || 0) === 0 &&
+        memoryRagSprintBoard.summary.publishConfirmCommandsIncluded === 0 &&
+        memoryRagSprintBoard.summary.readyCandidates === memoryRagSprintBoard.summary.candidateItems &&
+        memoryRagSprintBoard.summary.decisionChecks >= memoryRagSprintBoard.summary.lanes * 6 &&
+        Boolean(
+          memoryRagSprintBoard.lanes?.every(
+            (lane) =>
+              (lane.unsafeReasons?.length || 0) === 0 &&
+              (lane.decisionChecks?.length || 0) >= 6 &&
+              (lane.searchQueries?.length || 0) >= 4 &&
+              (lane.sourceTargets?.length || 0) >= 2,
+          ),
+        ) &&
+        Boolean(
+          memoryRagSprintBoard.candidates?.every(
+            (item) =>
+              item.readyForMemorySprint === true &&
+              item.publishConfirm === "not-included" &&
+              (item.unsafeReasons?.length || 0) === 0 &&
+              (item.reviewActions?.length || 0) >= 6 &&
+              (item.searchQueries?.length || 0) >= 3 &&
+              (item.sourceTargets?.length || 0) >= 2,
+          ),
+        ) &&
+        Boolean(memoryRagSprintBoard.waves?.every((wave) => wave.readyItems === wave.items && (wave.unsafeItems || 0) === 0)),
+      detail: `candidates=${memoryRagSprintBoard.summary.candidateItems}, ready=${memoryRagSprintBoard.summary.readyCandidates}, checks=${memoryRagSprintBoard.summary.decisionChecks}, unsafe=${memoryRagSprintBoard.summary.unsafeItems}`,
     },
     {
       name: "industry prompt coverage has broad reviewable coverage",

@@ -49,6 +49,7 @@ const tasks: Task[] = [
   { title: "Generate mass AI search action matrix", args: ["run", "automation:mass-ai-search-matrix"] },
   { title: "Generate AI deployment review pack", args: ["run", "automation:ai-deployment-review-pack"] },
   { title: "Generate AI deployment sprint board", args: ["run", "automation:ai-deployment-sprint"] },
+  { title: "Generate memory RAG sprint board", args: ["run", "automation:memory-rag-sprint"] },
   { title: "Generate industry prompt review pack", args: ["run", "automation:industry-prompt-review-pack"] },
   { title: "Generate industry prompt opportunity board", args: ["run", "automation:industry-prompt-opportunity-board"] },
   { title: "Generate industry prompt module pack", args: ["run", "automation:industry-prompt-module-pack"] },
