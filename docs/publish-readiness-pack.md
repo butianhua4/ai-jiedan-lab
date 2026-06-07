@@ -1,6 +1,6 @@
 # Publish Readiness Pack
 
-Generated at: 2026-06-07T01:52:28.008Z
+Generated at: 2026-06-07T02:03:55.798Z
 
 This pack organizes manual review work. It does not publish articles or change article status.
 

@@ -1,14 +1,14 @@
 # Traffic Claim Guard
-Generated at: 2026-06-07T01:54:21.409Z
+Generated at: 2026-06-07T02:06:56.277Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
 - Note: This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples.
 ## Summary
-- filesScanned: 123
+- filesScanned: 125
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 1027
+- watchMentions: 1086
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -33,18 +33,18 @@ None.
 | docs/ai-deployment-review-pack.md | 562 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
 | docs/ai-deployment-review-pack.md | 618 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
 | docs/automation-digest.md | 14 | - Traffic data available: false |
-| docs/automation-digest.md | 487 | ## Traffic Evidence |
-| docs/automation-digest.md | 489 | - Traffic data available: false |
-| docs/automation-digest.md | 490 | - Can claim traffic: false |
-| docs/automation-digest.md | 492 | - Measured traffic sources: none |
-| docs/automation-digest.md | 493 | - Search Console verification evidence: false |
-| docs/automation-digest.md | 496 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 497 | - Traffic claim files scanned: 123 |
-| docs/automation-digest.md | 498 | - Traffic claim watch mentions: 1026 |
-| docs/automation-digest.md | 534 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
+| docs/automation-digest.md | 518 | ## Traffic Evidence |
+| docs/automation-digest.md | 520 | - Traffic data available: false |
+| docs/automation-digest.md | 521 | - Can claim traffic: false |
+| docs/automation-digest.md | 523 | - Measured traffic sources: none |
+| docs/automation-digest.md | 524 | - Search Console verification evidence: false |
+| docs/automation-digest.md | 527 | - Unsupported traffic claims: 0 |
+| docs/automation-digest.md | 528 | - Traffic claim files scanned: 125 |
+| docs/automation-digest.md | 529 | - Traffic claim watch mentions: 1059 |
+| docs/automation-digest.md | 565 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
 | docs/automation-gate.md | 31 | \| traffic evidence audit passed and is read-only \| PASS \| failedChecks=0, measuredTrafficSources=0 \| |
 | docs/automation-gate.md | 32 | \| traffic is not claimed without measured metrics \| PASS \| trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 \| |
-| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=123, unsafeClaims=0, watchMentions=1026 \| |
+| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=125, unsafeClaims=0, watchMentions=1059 \| |
 | docs/autopilot-approval-packet.md | 18 | - Traffic data available: false |
 | docs/autopilot-approval-packet.md | 19 | - Can claim traffic: false |
 | docs/autopilot-approval-packet.md | 95 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
@@ -60,6 +60,11 @@ None.
 | docs/autopilot-human-review-playbook.md | 215 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
 | docs/autopilot-internal-link-brief.md | 19 | - Traffic data available: false |
 | docs/autopilot-internal-link-brief.md | 20 | - Can claim traffic: false |
+| docs/autopilot-queued-playbook-brief.md | 109 | - No traffic, ranking, revenue, benchmark, cost, latency, or stability claim is approved without measured evidence. |
+| docs/autopilot-queued-playbook-brief.md | 224 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
+| docs/autopilot-queued-playbook-brief.md | 328 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
+| docs/autopilot-queued-playbook-brief.md | 391 | - No traffic, ranking, revenue, benchmark, cost, latency, or stability claim is approved without measured evidence. |
+| docs/autopilot-queued-playbook-brief.md | 442 | - No fabricated metrics, rankings, traffic, income, or client results. |
 | docs/autopilot-review-queue.md | 18 | - Traffic data available: false |
 | docs/autopilot-review-queue.md | 19 | - Can claim traffic: false |
 | docs/autopilot-review-queue.md | 67 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
@@ -89,11 +94,6 @@ None.
 | docs/autopilot-review-sprint-board.md | 239 | - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported. |
 | docs/autopilot-review-sprint-board.md | 246 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
 | docs/autopilot-review-sprint-board.md | 265 | - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported. |
-| docs/autopilot-review-sprint-board.md | 272 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
-| docs/autopilot-review-sprint-board.md | 291 | - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported. |
-| docs/autopilot-review-sprint-board.md | 298 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
-| docs/autopilot-review-sprint-board.md | 317 | - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported. |
-| docs/autopilot-review-sprint-board.md | 322 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
 ## Next Actions
 - Keep saying that live/search surfaces are healthy, not that traffic exists.
 - Only report traffic after an audited source provides clicks, impressions, visits, or pageviews.

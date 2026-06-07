@@ -585,6 +585,42 @@ type AutopilotSearchQueryGapBrief = {
   unsafeItems: unknown[];
 };
 
+type AutopilotQueuedPlaybookBrief = {
+  items: Array<{
+    commandBoundary: { markReviewAfterHumanApproval: string; publishConfirm: string; publishDryRunAfterReview: string };
+    file: string;
+    internalLinkSuggestions: unknown[];
+    manualOnlyCommands: { markReviewAfterHumanApproval: string; publishConfirm: string; publishDryRunAfterReview: string };
+    readyForHumanReview: boolean;
+    riskReviewChecklist: unknown[];
+    safeDraft: boolean;
+    searchActions: unknown[];
+    searchQueries: unknown[];
+    sourceActions: unknown[];
+    sourceEvidence: unknown[];
+    sourceTargets: unknown[];
+    sprintOrder: number;
+    title: string;
+  }>;
+  summary: {
+    items: number;
+    itemsWithCommandBoundary: number;
+    itemsWithFactCheckQueries: number;
+    itemsWithInternalLinkSuggestions: number;
+    itemsWithOptimizationActions: number;
+    itemsWithRiskChecklist: number;
+    itemsWithSearchActions: number;
+    itemsWithSearchQueries: number;
+    itemsWithSourceActions: number;
+    itemsWithSourceEvidence: number;
+    itemsWithSourceTargets: number;
+    readyItems: number;
+    safeDraftItems: number;
+    unsafeItems: number;
+  };
+  unsafeItems: unknown[];
+};
+
 type ReviewOptimizationBrief = {
   nextBriefs: Array<{
     file: string;
@@ -963,6 +999,7 @@ const reports = {
   autopilotHumanReviewPlaybook: readJson<AutopilotHumanReviewPlaybook>("content/automation/autopilot-human-review-playbook.json"),
   autopilotReviewSprintBoard: readJson<AutopilotReviewSprintBoard>("content/automation/autopilot-review-sprint-board.json"),
   autopilotSearchQueryGapBrief: readJson<AutopilotSearchQueryGapBrief>("content/automation/autopilot-search-query-gap-brief.json"),
+  autopilotQueuedPlaybookBrief: readJson<AutopilotQueuedPlaybookBrief>("content/automation/autopilot-queued-playbook-brief.json"),
   reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
   reviewCannibalizationBrief: readJson<ReviewCannibalizationBrief>("content/automation/review-cannibalization-brief.json"),
   reviewFreshnessBrief: readJson<ReviewFreshnessBrief>("content/automation/review-freshness-brief.json"),
@@ -1143,6 +1180,24 @@ const payload = {
     totalRecommendedQueries: reports.autopilotSearchQueryGapBrief.data?.summary.totalRecommendedQueries ?? null,
     unsafeItems: reports.autopilotSearchQueryGapBrief.data?.summary.unsafeItems ?? null,
     unsafeItemList: reports.autopilotSearchQueryGapBrief.data?.unsafeItems.slice(0, 8) ?? [],
+  },
+  autopilotQueuedPlaybookBrief: {
+    items: reports.autopilotQueuedPlaybookBrief.data?.summary.items ?? null,
+    itemsList: reports.autopilotQueuedPlaybookBrief.data?.items.slice(0, 7) ?? [],
+    itemsWithCommandBoundary: reports.autopilotQueuedPlaybookBrief.data?.summary.itemsWithCommandBoundary ?? null,
+    itemsWithFactCheckQueries: reports.autopilotQueuedPlaybookBrief.data?.summary.itemsWithFactCheckQueries ?? null,
+    itemsWithInternalLinkSuggestions: reports.autopilotQueuedPlaybookBrief.data?.summary.itemsWithInternalLinkSuggestions ?? null,
+    itemsWithOptimizationActions: reports.autopilotQueuedPlaybookBrief.data?.summary.itemsWithOptimizationActions ?? null,
+    itemsWithRiskChecklist: reports.autopilotQueuedPlaybookBrief.data?.summary.itemsWithRiskChecklist ?? null,
+    itemsWithSearchActions: reports.autopilotQueuedPlaybookBrief.data?.summary.itemsWithSearchActions ?? null,
+    itemsWithSearchQueries: reports.autopilotQueuedPlaybookBrief.data?.summary.itemsWithSearchQueries ?? null,
+    itemsWithSourceActions: reports.autopilotQueuedPlaybookBrief.data?.summary.itemsWithSourceActions ?? null,
+    itemsWithSourceEvidence: reports.autopilotQueuedPlaybookBrief.data?.summary.itemsWithSourceEvidence ?? null,
+    itemsWithSourceTargets: reports.autopilotQueuedPlaybookBrief.data?.summary.itemsWithSourceTargets ?? null,
+    readyItems: reports.autopilotQueuedPlaybookBrief.data?.summary.readyItems ?? null,
+    safeDraftItems: reports.autopilotQueuedPlaybookBrief.data?.summary.safeDraftItems ?? null,
+    unsafeItems: reports.autopilotQueuedPlaybookBrief.data?.summary.unsafeItems ?? null,
+    unsafeItemList: reports.autopilotQueuedPlaybookBrief.data?.unsafeItems.slice(0, 8) ?? [],
   },
   reviewOptimizationBrief: {
     briefs: reports.reviewOptimizationBrief.data?.summary.briefs ?? null,
@@ -1515,6 +1570,9 @@ function buildNextActions() {
   if (!reports.autopilotSearchQueryGapBrief.data || reports.autopilotSearchQueryGapBrief.data.summary.unsafeItems > 0) {
     return ["Open docs/autopilot-search-query-gap-brief.md and resolve unsafe search-query gap items before manual review."];
   }
+  if (!reports.autopilotQueuedPlaybookBrief.data || reports.autopilotQueuedPlaybookBrief.data.summary.unsafeItems > 0) {
+    return ["Open docs/autopilot-queued-playbook-brief.md and resolve unsafe queued playbook items before manual review."];
+  }
   if (!reports.reviewOptimizationBrief.data || reports.reviewOptimizationBrief.data.summary.unsafeCommands > 0) {
     return ["Open docs/review-optimization-brief.md and resolve unsafe or missing copydesk guidance before manual review."];
   }
@@ -1586,6 +1644,7 @@ function buildNextActions() {
     "Use docs/autopilot-human-review-playbook.md as the merged top-3 checklist before any mark:review command.",
     "Use docs/autopilot-review-sprint-board.md as the next-10 manual review sprint order.",
     "Use docs/autopilot-search-query-gap-brief.md to fill next-10 search-query gaps during manual review.",
+    "Use docs/autopilot-queued-playbook-brief.md to review the 7 queued sprint items with merged search, source, freshness, and link actions.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
     "If approved by a human, run mark:review with --confirm-human for approved files only.",
     "Publish only status=review articles in a 1-3 article batch after a dry-run.",
@@ -1896,6 +1955,34 @@ function toMarkdown(data: typeof payload) {
     ...data.autopilotSearchQueryGapBrief.itemsList.map(
       (item) =>
         `| ${item.sprintOrder} | ${item.readyForManualSearchQueryReview} | ${item.officialSourceTargets.length} | ${item.recommendedSearchQueries.length} | ${item.primaryKeyword} | ${item.coverageLane} | ${item.commandBoundary.markReviewAfterHumanApproval.includes("--confirm-human")} | ${item.commandBoundary.publishConfirm} | ${item.title} | ${item.file} |`,
+    ),
+    "",
+    "## Autopilot Queued Playbook Brief",
+    "",
+    `- Items: ${data.autopilotQueuedPlaybookBrief.items}`,
+    `- Ready items: ${data.autopilotQueuedPlaybookBrief.readyItems}`,
+    `- Safe draft items: ${data.autopilotQueuedPlaybookBrief.safeDraftItems}`,
+    `- Items with command boundary: ${data.autopilotQueuedPlaybookBrief.itemsWithCommandBoundary}`,
+    `- Items with search actions: ${data.autopilotQueuedPlaybookBrief.itemsWithSearchActions}`,
+    `- Items with search queries: ${data.autopilotQueuedPlaybookBrief.itemsWithSearchQueries}`,
+    `- Items with source actions: ${data.autopilotQueuedPlaybookBrief.itemsWithSourceActions}`,
+    `- Items with source targets: ${data.autopilotQueuedPlaybookBrief.itemsWithSourceTargets}`,
+    `- Items with source evidence: ${data.autopilotQueuedPlaybookBrief.itemsWithSourceEvidence}`,
+    `- Items with fact-check queries: ${data.autopilotQueuedPlaybookBrief.itemsWithFactCheckQueries}`,
+    `- Items with risk checklist: ${data.autopilotQueuedPlaybookBrief.itemsWithRiskChecklist}`,
+    `- Items with internal-link suggestions: ${data.autopilotQueuedPlaybookBrief.itemsWithInternalLinkSuggestions}`,
+    `- Items with optimization actions: ${data.autopilotQueuedPlaybookBrief.itemsWithOptimizationActions}`,
+    `- Unsafe items: ${data.autopilotQueuedPlaybookBrief.unsafeItems}`,
+    "",
+    "Unsafe queued playbook items:",
+    "",
+    ...(data.autopilotQueuedPlaybookBrief.unsafeItemList.length ? data.autopilotQueuedPlaybookBrief.unsafeItemList.map((item) => `- ${JSON.stringify(item)}`) : ["- none"]),
+    "",
+    "| Order | Ready | Safe | Search | Sources | Links | Risk checks | Mark-review gated | Publish confirm | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.autopilotQueuedPlaybookBrief.itemsList.map(
+      (item) =>
+        `| ${item.sprintOrder} | ${item.readyForHumanReview} | ${item.safeDraft} | ${item.searchQueries.length}/${item.searchActions.length} | ${item.sourceTargets.length}/${item.sourceActions.length} | ${item.internalLinkSuggestions.length} | ${item.riskReviewChecklist.length} | ${item.manualOnlyCommands.markReviewAfterHumanApproval.includes("--confirm-human")} | ${item.manualOnlyCommands.publishConfirm} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Review Optimization Brief",

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T01:54:48.725Z",
+  "generatedAt": "2026-06-07T02:06:28.712Z",
   "ok": true,
   "summary": {
-    "checks": 105,
+    "checks": 107,
     "failed": 0,
-    "passed": 105
+    "passed": 107
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=123, unsafeClaims=0, watchMentions=1027"
+      "detail": "filesScanned=125, unsafeClaims=0, watchMentions=1059"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -221,6 +221,16 @@
       "name": "autopilot search query gap brief has source-backed manual query suggestions",
       "ok": true,
       "detail": "ready=1, coverage=1, recommended=10, sources=1"
+    },
+    {
+      "name": "autopilot queued playbook brief covers queued sprint items",
+      "ok": true,
+      "detail": "items=7, queued=7, unsafe=0"
+    },
+    {
+      "name": "autopilot queued playbook brief has complete human-gated actions",
+      "ok": true,
+      "detail": "ready=7, search=7, source=7, links=7"
     },
     {
       "name": "review optimization brief is read-only and covers ready action-board tasks",

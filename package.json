@@ -42,6 +42,7 @@
     "automation:autopilot-human-review": "tsx scripts/autopilot-human-review-playbook.ts",
     "automation:autopilot-review-sprint": "tsx scripts/autopilot-review-sprint-board.ts",
     "automation:autopilot-search-query-gap": "tsx scripts/autopilot-search-query-gap-brief.ts",
+    "automation:autopilot-queued-playbook": "tsx scripts/autopilot-queued-playbook-brief.ts",
     "automation:review-optimization-brief": "tsx scripts/review-optimization-brief.ts",
     "automation:review-cannibalization-brief": "tsx scripts/review-cannibalization-brief.ts",
     "automation:review-freshness-brief": "tsx scripts/review-freshness-brief.ts",

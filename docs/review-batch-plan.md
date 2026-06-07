@@ -1,6 +1,6 @@
 # Review Batch Plan
 
-Generated at: 2026-06-07T01:52:40.565Z
+Generated at: 2026-06-07T02:04:06.949Z
 
 This is a manual review plan. It does not publish articles or change article status.
 

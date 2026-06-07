@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-07T01:54:21.409Z",
+  "generatedAt": "2026-06-07T02:06:56.277Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 123,
+    "filesScanned": 125,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 1027
+    "watchMentions": 1086
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -128,55 +128,55 @@
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 487,
+      "line": 518,
       "reason": "traffic-related mention",
       "text": "## Traffic Evidence"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 489,
+      "line": 520,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 490,
+      "line": 521,
       "reason": "traffic-related mention",
       "text": "- Can claim traffic: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 492,
+      "line": 523,
       "reason": "traffic-related mention",
       "text": "- Measured traffic sources: none"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 493,
+      "line": 524,
       "reason": "traffic-related mention",
       "text": "- Search Console verification evidence: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 496,
+      "line": 527,
       "reason": "traffic-related mention",
       "text": "- Unsupported traffic claims: 0"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 497,
+      "line": 528,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 123"
+      "text": "- Traffic claim files scanned: 125"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 498,
+      "line": 529,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 1026"
+      "text": "- Traffic claim watch mentions: 1059"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 534,
+      "line": 565,
       "reason": "traffic-related mention",
       "text": "| Dify、n8n、MCP 和无代码 AI 自动化 | 258 | 0 | 5 | 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 |"
     },
@@ -196,7 +196,7 @@
       "file": "docs/automation-gate.md",
       "line": 33,
       "reason": "traffic-related mention",
-      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=123, unsafeClaims=0, watchMentions=1026 |"
+      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=125, unsafeClaims=0, watchMentions=1059 |"
     },
     {
       "file": "docs/autopilot-approval-packet.md",
@@ -287,6 +287,36 @@
       "line": 20,
       "reason": "traffic-related mention",
       "text": "- Can claim traffic: false"
+    },
+    {
+      "file": "docs/autopilot-queued-playbook-brief.md",
+      "line": 109,
+      "reason": "traffic-related mention",
+      "text": "- No traffic, ranking, revenue, benchmark, cost, latency, or stability claim is approved without measured evidence."
+    },
+    {
+      "file": "docs/autopilot-queued-playbook-brief.md",
+      "line": 224,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim."
+    },
+    {
+      "file": "docs/autopilot-queued-playbook-brief.md",
+      "line": 328,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim."
+    },
+    {
+      "file": "docs/autopilot-queued-playbook-brief.md",
+      "line": 391,
+      "reason": "traffic-related mention",
+      "text": "- No traffic, ranking, revenue, benchmark, cost, latency, or stability claim is approved without measured evidence."
+    },
+    {
+      "file": "docs/autopilot-queued-playbook-brief.md",
+      "line": 442,
+      "reason": "traffic-related mention",
+      "text": "- No fabricated metrics, rankings, traffic, income, or client results."
     },
     {
       "file": "docs/autopilot-review-queue.md",
@@ -461,36 +491,6 @@
       "line": 265,
       "reason": "traffic-related mention",
       "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 272,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 291,
-      "reason": "traffic-related mention",
-      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 298,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 317,
-      "reason": "traffic-related mention",
-      "text": "- Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported."
-    },
-    {
-      "file": "docs/autopilot-review-sprint-board.md",
-      "line": 322,
-      "reason": "traffic-related mention",
-      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
     }
   ],
   "nextActions": [

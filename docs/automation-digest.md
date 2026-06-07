@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T01:54:48.635Z
+Generated at: 2026-06-07T02:06:28.675Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -53,7 +53,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=es-419
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - https://docs.dify.ai -> https://docs.dify.ai/en/use-dify/getting-started/introduction
@@ -299,6 +299,37 @@ Unsafe search-query gap items:
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 3 | true | 7 | 10 | 客服 AI 模型选型 | Cross-industry AI prompt templates and reusable prompt libraries | true | not-included | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
+## Autopilot Queued Playbook Brief
+
+- Items: 7
+- Ready items: 7
+- Safe draft items: 7
+- Items with command boundary: 7
+- Items with search actions: 7
+- Items with search queries: 7
+- Items with source actions: 7
+- Items with source targets: 7
+- Items with source evidence: 7
+- Items with fact-check queries: 7
+- Items with risk checklist: 7
+- Items with internal-link suggestions: 7
+- Items with optimization actions: 6
+- Unsafe items: 0
+
+Unsafe queued playbook items:
+
+- none
+
+| Order | Ready | Safe | Search | Sources | Links | Risk checks | Mark-review gated | Publish confirm | Title | File |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 3 | true | true | 12/9 | 7/11 | 3 | 8 | true | not-included | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 5 | true | true | 12/8 | 8/12 | 3 | 23 | true | not-included | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| 6 | true | true | 12/8 | 9/13 | 3 | 21 | true | not-included | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| 7 | true | true | 12/8 | 10/14 | 3 | 22 | true | not-included | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 8 | true | true | 8/8 | 2/6 | 1 | 15 | true | not-included | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
+| 9 | true | true | 12/8 | 8/12 | 3 | 9 | true | not-included | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| 10 | true | true | 12/8 | 8/12 | 3 | 19 | true | not-included | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
+
 ## Review Optimization Brief
 
 - Briefs: 11
@@ -494,8 +525,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 123
-- Traffic claim watch mentions: 1027
+- Traffic claim files scanned: 125
+- Traffic claim watch mentions: 1059
 
 ## Preflight
 
@@ -889,6 +920,7 @@ Next review files:
 - Use docs/autopilot-human-review-playbook.md as the merged top-3 checklist before any mark:review command.
 - Use docs/autopilot-review-sprint-board.md as the next-10 manual review sprint order.
 - Use docs/autopilot-search-query-gap-brief.md to fill next-10 search-query gaps during manual review.
+- Use docs/autopilot-queued-playbook-brief.md to review the 7 queued sprint items with merged search, source, freshness, and link actions.
 - Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.
 - If approved by a human, run mark:review with --confirm-human for approved files only.
 - Publish only status=review articles in a 1-3 article batch after a dry-run.
