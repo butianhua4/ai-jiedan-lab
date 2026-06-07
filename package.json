@@ -60,6 +60,7 @@
     "automation:review-cannibalization-brief": "tsx scripts/review-cannibalization-brief.ts",
     "automation:review-collision-decision-pack": "tsx scripts/review-collision-decision-pack.ts",
     "automation:review-freshness-brief": "tsx scripts/review-freshness-brief.ts",
+    "automation:public-search-refresh": "tsx scripts/public-search-refresh-pack.ts",
     "automation:seo-warning-remediation": "tsx scripts/seo-warning-remediation-pack.ts",
     "automation:gate": "tsx scripts/automation-gate.ts",
     "automation:publish-pack": "tsx scripts/publish-readiness-pack.ts",

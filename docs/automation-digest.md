@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T18:58:58.687Z
+Generated at: 2026-06-07T19:07:59.130Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -54,7 +54,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=th
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=es-419
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/ -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
@@ -1091,8 +1091,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 173
-- Traffic claim watch mentions: 3078
+- Traffic claim files scanned: 175
+- Traffic claim watch mentions: 3206
 
 ## Public Surface Inventory
 
@@ -1145,6 +1145,41 @@ Public categories:
 | 307 | 0 | 6 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx |
 | 293 | 0 | 6 | AI API 接入、限流、成本和多模型路由 | content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx |
 | 287 | 0 | 6 | LLM 观测、评测、日志和上线后质量 | content/blog/mcp-server-deployment-security-checklist.mdx<br>content/blog/agent-tool-permission-safety-guide.mdx<br>content/blog/arize-phoenix-llm-observability-guide.mdx |
+
+## Public Search Refresh Pack
+
+- Public articles: 15
+- Items: 15
+- Ready for human refresh review: 15
+- High-priority items: 12
+- SEO warning items: 8
+- Short-description items: 9
+- Cannibalization items: 6
+- Action items: 114
+- Live missing from sitemap: 0
+- Published but noindexed: 0
+- Measured traffic sources: 0
+- Publish confirm commands included: 0
+- Traffic data available: false
+- Unsafe items: 0
+
+| Ready | Score | Actions | SEO | Freshness | Conflicts | Desc | Category | Title | File |
+| --- | ---: | ---: | --- | --- | ---: | ---: | --- | --- | --- |
+| true | 165 | 9 | true | high | 1 | 102 | 报错解决 | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx |
+| true | 165 | 9 | true | high | 1 | 104 | Codex 新手教程 | Codex 和 Claude Code 怎么选：新手对比清单 | content/blog/codex-vs-claude-code-beginner-checklist.mdx |
+| true | 160 | 9 | true | high | 0 | 72 | 报价指南 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
+| true | 160 | 9 | true | high | 0 | 82 | 收款工具 | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
+| true | 160 | 9 | true | high | 0 | 80 | Upwork 新手 | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
+| true | 160 | 9 | true | high | 0 | 87 | 部署教程 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | content/blog/vercel-env-variable-missing-beginner-guide.mdx |
+| true | 150 | 8 | true | high | 0 | 101 | Codex 新手教程 | Codex 和 GitHub 怎么配合：提交代码前检查 | content/blog/codex-github-before-commit-checklist.mdx |
+| true | 150 | 8 | true | high | 0 | 101 | Codex 新手教程 | Codex 部署 Vercel 前检查什么：上线前清单 | content/blog/codex-vercel-deploy-preflight-checklist.mdx |
+| true | 145 | 7 | false | high | 1 | 88 | Codex 新手教程 | Codex 怎么做第一个网页 | content/blog/build-first-webpage-with-codex.mdx |
+| true | 145 | 7 | false | high | 1 | 89 | Codex 新手教程 | Codex 生成代码后怎么审核 | content/blog/codex-generated-code-review-guide.mdx |
+| true | 145 | 7 | false | high | 1 | 87 | Codex 新手教程 | Codex 安装失败怎么办 | content/blog/codex-install-failed-beginner-fix.mdx |
+| true | 145 | 7 | false | high | 1 | 89 | Codex 新手教程 | Codex 是什么新手怎么开始 | content/blog/what-is-codex-beginner-start.mdx |
+| true | 130 | 6 | false | high | 0 | 64 | Upwork 新手 | Upwork 客户需求太模糊怎么办：新手分析和追问清单 | content/blog/upwork-client-requirements-analysis-beginner.mdx |
+| true | 120 | 5 | false | high | 0 | 97 | Codex 新手教程 | Codex 生成代码后怎么审核：交付前检查清单 | content/blog/codex-code-review-delivery-checklist.mdx |
+| true | 120 | 5 | false | high | 0 | 102 | Codex 新手教程 | Codex 接 Upwork 小单怎么判断：风险检查清单 | content/blog/codex-upwork-small-job-risk-checklist.mdx |
 
 ## Preflight
 

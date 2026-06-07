@@ -660,6 +660,36 @@ async function main() {
     uncoveredBroadClusters?: unknown[];
     unsafeItems?: unknown[];
   }>("content/automation/public-surface-inventory.json");
+  const publicSearchRefreshPack = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    summary: {
+      actionItems: number;
+      cannibalizationItems: number;
+      highPriorityItems: number;
+      items: number;
+      itemsReadyForHumanRefreshReview: number;
+      liveMissingFromSitemap: number | null;
+      measuredTrafficSources: number;
+      publicArticles: number;
+      publishConfirmCommandsIncluded: number;
+      publishedButNoindexed: number;
+      seoWarningItems: number;
+      shortDescriptionItems: number;
+      trafficDataAvailable: boolean;
+      unsafeItems: number;
+    };
+    topItems?: Array<{
+      actionCount?: number;
+      cannibalizationConflicts?: unknown[];
+      commandBoundary?: { editAfterHumanApproval?: string; markReview?: string; publishConfirm?: string; stopBefore?: string };
+      freshnessRisk?: unknown;
+      readyForHumanRefreshReview?: boolean;
+      seoWarning?: unknown;
+      trafficClaim?: string;
+      unsafeReasons?: unknown[];
+    }>;
+    unsafeItems?: unknown[];
+  }>("content/automation/public-search-refresh-pack.json");
   const trafficEvidence = readJson<{
     guardrails: { autoPublish: boolean };
     summary: {
@@ -3963,6 +3993,46 @@ async function main() {
           ),
         ),
       detail: `clusters=${publicSurfaceInventory.summary.broadClusters}, zeroPublic=${publicSurfaceInventory.summary.broadClustersWithoutPublicCoverage}`,
+    },
+    {
+      name: "public search refresh pack is read-only and covers all public pages",
+      ok:
+        publicSearchRefreshPack.guardrails.autoEditArticles === false &&
+        publicSearchRefreshPack.guardrails.autoMarkReview === false &&
+        publicSearchRefreshPack.guardrails.autoPublish === false &&
+        publicSearchRefreshPack.guardrails.trafficClaim === "not-included" &&
+        publicSearchRefreshPack.summary.items === publicSurfaceInventory.summary.publicArticles &&
+        publicSearchRefreshPack.summary.publicArticles === publicSurfaceInventory.summary.publicArticles &&
+        publicSearchRefreshPack.summary.liveMissingFromSitemap === publicSurfaceInventory.summary.liveMissingFromSitemap &&
+        publicSearchRefreshPack.summary.publishedButNoindexed === publicSurfaceInventory.summary.publishedButNoindexed &&
+        publicSearchRefreshPack.summary.seoWarningItems === seoWarningRemediation.summary.publicItems &&
+        publicSearchRefreshPack.summary.measuredTrafficSources === trafficEvidence.summary.measuredTrafficSources &&
+        publicSearchRefreshPack.summary.trafficDataAvailable === false,
+      detail: `items=${publicSearchRefreshPack.summary.items}, public=${publicSearchRefreshPack.summary.publicArticles}, seo=${publicSearchRefreshPack.summary.seoWarningItems}, measuredTraffic=${publicSearchRefreshPack.summary.measuredTrafficSources}`,
+    },
+    {
+      name: "public search refresh pack keeps public edits human-gated and action-ready",
+      ok:
+        publicSearchRefreshPack.summary.unsafeItems === 0 &&
+        (publicSearchRefreshPack.unsafeItems?.length || 0) === 0 &&
+        publicSearchRefreshPack.summary.itemsReadyForHumanRefreshReview === publicSearchRefreshPack.summary.items &&
+        publicSearchRefreshPack.summary.actionItems >= publicSearchRefreshPack.summary.items * 5 &&
+        publicSearchRefreshPack.summary.publishConfirmCommandsIncluded === 0 &&
+        publicSearchRefreshPack.summary.highPriorityItems > 0 &&
+        publicSearchRefreshPack.summary.shortDescriptionItems > 0 &&
+        Boolean(
+          publicSearchRefreshPack.topItems?.every(
+            (item) =>
+              item.readyForHumanRefreshReview === true &&
+              (item.unsafeReasons?.length || 0) === 0 &&
+              (item.actionCount || 0) >= 5 &&
+              item.commandBoundary?.editAfterHumanApproval === "manual-only" &&
+              item.commandBoundary?.markReview === "not-applicable-public-page" &&
+              item.commandBoundary?.publishConfirm === "not-included" &&
+              item.trafficClaim === "not-included",
+          ),
+        ),
+      detail: `ready=${publicSearchRefreshPack.summary.itemsReadyForHumanRefreshReview}, actions=${publicSearchRefreshPack.summary.actionItems}, highPriority=${publicSearchRefreshPack.summary.highPriorityItems}, shortDescriptions=${publicSearchRefreshPack.summary.shortDescriptionItems}, publishConfirm=${publicSearchRefreshPack.summary.publishConfirmCommandsIncluded}`,
     },
     {
       name: "manual review workbench is ready and stops before publishing",

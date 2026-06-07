@@ -366,6 +366,40 @@ type PublicSurfaceInventory = {
   }>;
 };
 
+type PublicSearchRefreshPack = {
+  summary: {
+    actionItems: number;
+    cannibalizationItems: number;
+    highPriorityItems: number;
+    items: number;
+    itemsReadyForHumanRefreshReview: number;
+    liveMissingFromSitemap: number | null;
+    measuredTrafficSources: number;
+    publicArticles: number;
+    publishConfirmCommandsIncluded: number;
+    publishedButNoindexed: number;
+    seoWarningItems: number;
+    shortDescriptionItems: number;
+    trafficDataAvailable: boolean;
+    unsafeItems: number;
+  };
+  topItems: Array<{
+    actionCount: number;
+    cannibalizationConflicts: unknown[];
+    category: string;
+    commandBoundary: { editAfterHumanApproval: string; markReview: string; publishConfirm: string };
+    descriptionLength: number;
+    file: string;
+    freshnessRisk: { riskLevel?: string } | null;
+    priorityScore: number;
+    readyForHumanRefreshReview: boolean;
+    seoWarning: unknown | null;
+    title: string;
+    trafficClaim: string;
+    unsafeReasons: unknown[];
+  }>;
+};
+
 type BroadFirstCoverageLaunchPack = {
   items: Array<{
     category: string;
@@ -1826,6 +1860,7 @@ const reports = {
   trafficEvidence: readJson<TrafficEvidence>("content/automation/traffic-evidence-audit.json"),
   trafficClaimGuard: readJson<TrafficClaimGuard>("content/automation/traffic-claim-guard.json"),
   publicSurfaceInventory: readJson<PublicSurfaceInventory>("content/automation/public-surface-inventory.json"),
+  publicSearchRefreshPack: readJson<PublicSearchRefreshPack>("content/automation/public-search-refresh-pack.json"),
   contentIntegrity: readJson<ContentIntegrity>("content/automation/content-integrity-audit.json"),
   internalLinks: readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json"),
   sourceHealth: readJson<SourceHealth>("content/automation/source-target-health-audit.json"),
@@ -2407,6 +2442,23 @@ const payload = {
     uncoveredBroadClusters: reports.publicSurfaceInventory.data?.uncoveredBroadClusters.slice(0, 8) ?? [],
     unsafeItems: reports.publicSurfaceInventory.data?.summary.unsafeItems ?? null,
   },
+  publicSearchRefreshPack: {
+    actionItems: reports.publicSearchRefreshPack.data?.summary.actionItems ?? null,
+    cannibalizationItems: reports.publicSearchRefreshPack.data?.summary.cannibalizationItems ?? null,
+    highPriorityItems: reports.publicSearchRefreshPack.data?.summary.highPriorityItems ?? null,
+    items: reports.publicSearchRefreshPack.data?.summary.items ?? null,
+    itemsReadyForHumanRefreshReview: reports.publicSearchRefreshPack.data?.summary.itemsReadyForHumanRefreshReview ?? null,
+    liveMissingFromSitemap: reports.publicSearchRefreshPack.data?.summary.liveMissingFromSitemap ?? null,
+    measuredTrafficSources: reports.publicSearchRefreshPack.data?.summary.measuredTrafficSources ?? null,
+    publicArticles: reports.publicSearchRefreshPack.data?.summary.publicArticles ?? null,
+    publishConfirmCommandsIncluded: reports.publicSearchRefreshPack.data?.summary.publishConfirmCommandsIncluded ?? null,
+    publishedButNoindexed: reports.publicSearchRefreshPack.data?.summary.publishedButNoindexed ?? null,
+    seoWarningItems: reports.publicSearchRefreshPack.data?.summary.seoWarningItems ?? null,
+    shortDescriptionItems: reports.publicSearchRefreshPack.data?.summary.shortDescriptionItems ?? null,
+    top: reports.publicSearchRefreshPack.data?.topItems ?? [],
+    trafficDataAvailable: reports.publicSearchRefreshPack.data?.summary.trafficDataAvailable ?? null,
+    unsafeItems: reports.publicSearchRefreshPack.data?.summary.unsafeItems ?? null,
+  },
   broadFirstCoverageLaunchPack: {
     clustersSelected: reports.broadFirstCoverageLaunchPack.data?.summary.clustersSelected ?? null,
     commandBoundaries: reports.broadFirstCoverageLaunchPack.data?.summary.commandBoundaries ?? null,
@@ -2803,6 +2855,13 @@ function buildNextActions() {
   }
   if (!reports.publicSurfaceInventory.data || reports.publicSurfaceInventory.data.summary.unsafeItems > 0) {
     return ["Open docs/public-surface-inventory.md and resolve public surface inventory issues before choosing the next review batch."];
+  }
+  if (
+    !reports.publicSearchRefreshPack.data ||
+    reports.publicSearchRefreshPack.data.summary.unsafeItems > 0 ||
+    reports.publicSearchRefreshPack.data.summary.publishConfirmCommandsIncluded > 0
+  ) {
+    return ["Open docs/public-search-refresh-pack.md and resolve public search refresh issues before editing public pages."];
   }
   if (!reports.contentIntegrity.data || reports.contentIntegrity.data.summary.blockingItems > 0) {
     return ["Open docs/content-integrity-audit.md and fix content integrity blockers before any review or publish action."];
@@ -4060,6 +4119,30 @@ function toMarkdown(data: typeof payload) {
     "| --- | --- | --- | --- | --- |",
     ...data.publicSurfaceInventory.broadCoverage.map(
       (cluster) => `| ${cluster.gapScore} | ${cluster.publicMatches} | ${cluster.readyCandidates} | ${cluster.cluster} | ${cluster.suggestedFiles.join("<br>")} |`,
+    ),
+    "",
+    "## Public Search Refresh Pack",
+    "",
+    `- Public articles: ${data.publicSearchRefreshPack.publicArticles}`,
+    `- Items: ${data.publicSearchRefreshPack.items}`,
+    `- Ready for human refresh review: ${data.publicSearchRefreshPack.itemsReadyForHumanRefreshReview}`,
+    `- High-priority items: ${data.publicSearchRefreshPack.highPriorityItems}`,
+    `- SEO warning items: ${data.publicSearchRefreshPack.seoWarningItems}`,
+    `- Short-description items: ${data.publicSearchRefreshPack.shortDescriptionItems}`,
+    `- Cannibalization items: ${data.publicSearchRefreshPack.cannibalizationItems}`,
+    `- Action items: ${data.publicSearchRefreshPack.actionItems}`,
+    `- Live missing from sitemap: ${data.publicSearchRefreshPack.liveMissingFromSitemap}`,
+    `- Published but noindexed: ${data.publicSearchRefreshPack.publishedButNoindexed}`,
+    `- Measured traffic sources: ${data.publicSearchRefreshPack.measuredTrafficSources}`,
+    `- Publish confirm commands included: ${data.publicSearchRefreshPack.publishConfirmCommandsIncluded}`,
+    `- Traffic data available: ${data.publicSearchRefreshPack.trafficDataAvailable}`,
+    `- Unsafe items: ${data.publicSearchRefreshPack.unsafeItems}`,
+    "",
+    "| Ready | Score | Actions | SEO | Freshness | Conflicts | Desc | Category | Title | File |",
+    "| --- | ---: | ---: | --- | --- | ---: | ---: | --- | --- | --- |",
+    ...data.publicSearchRefreshPack.top.map(
+      (item) =>
+        `| ${item.readyForHumanRefreshReview} | ${item.priorityScore} | ${item.actionCount} | ${Boolean(item.seoWarning)} | ${item.freshnessRisk?.riskLevel || "none"} | ${item.cannibalizationConflicts.length} | ${item.descriptionLength} | ${item.category} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Preflight",

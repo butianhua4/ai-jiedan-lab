@@ -1,0 +1,2637 @@
+{
+  "generatedAt": "2026-06-07T19:07:44.714Z",
+  "guardrails": {
+    "autoEditArticles": false,
+    "autoMarkReview": false,
+    "autoPublish": false,
+    "note": "Read-only public search refresh pack. It prioritizes public-page SEO refresh work without editing pages or claiming traffic.",
+    "stopBefore": "Stop before public-page metadata, body, canonical, source, or link edits until a human approves the exact change.",
+    "trafficClaim": "not-included"
+  },
+  "sourceEvidence": {
+    "cannibalizationGeneratedAt": "2026-06-07T19:07:41.903Z",
+    "cannibalizationSummary": {
+      "articleCount": 669,
+      "conflicts": 200,
+      "keywordConflicts": 11,
+      "reviewBatchConflicts": 0,
+      "slugStemConflicts": 177,
+      "titleStemConflicts": 12
+    },
+    "freshnessGeneratedAt": "2026-06-07T19:07:43.687Z",
+    "freshnessSummary": {
+      "articlesChecked": 669,
+      "currentReviewItems": 3,
+      "highRisk": 570,
+      "items": 666,
+      "mediumRisk": 96,
+      "plannedReviewItems": 9
+    },
+    "publicSurfaceGeneratedAt": "2026-06-07T19:07:09.874Z",
+    "publicSurfaceSummary": {
+      "broadClusters": 8,
+      "broadClustersWithoutPublicCoverage": 8,
+      "broadReadyCandidateFiles": 33,
+      "liveArticlesChecked": 15,
+      "liveMissingFromSitemap": 0,
+      "livePublicCount": 15,
+      "liveSitemapUrls": 85,
+      "projectPublicPublished": 15,
+      "publicArticles": 15,
+      "publicCategories": 6,
+      "publicTags": 31,
+      "publishedButNoindexed": 0,
+      "nonPublishedIndexable": 0,
+      "trafficDataAvailable": false,
+      "unsafeItems": 0
+    },
+    "seoWarningsGeneratedAt": "2026-06-07T19:07:13.637Z",
+    "seoWarningsSummary": {
+      "blockingItems": 0,
+      "draftItems": 8,
+      "humanGatedItems": 16,
+      "items": 16,
+      "itemsWithHumanChecklist": 16,
+      "itemsWithManualActions": 16,
+      "publicItems": 8,
+      "recommendedItems": 1,
+      "schemaWarningItems": 7,
+      "snippetWarningItems": 13,
+      "trafficDataAvailable": false,
+      "unsafeItems": 0,
+      "warningItems": 16,
+      "waveItems": 1
+    },
+    "trafficEvidenceGeneratedAt": "2026-06-07T19:07:08.629Z",
+    "trafficEvidenceSummary": {
+      "canClaimTraffic": false,
+      "claimableMetrics": 0,
+      "failedChecks": 0,
+      "measuredTrafficSources": 0,
+      "searchConsoleVerificationEvidence": false,
+      "trafficDataAvailable": false
+    },
+    "trafficNote": "No measured traffic, ranking, impression, click, conversion, or revenue claim is made."
+  },
+  "summary": {
+    "actionItems": 114,
+    "cannibalizationItems": 6,
+    "highPriorityItems": 12,
+    "items": 15,
+    "itemsReadyForHumanRefreshReview": 15,
+    "liveMissingFromSitemap": 0,
+    "measuredTrafficSources": 0,
+    "publicArticles": 15,
+    "publishConfirmCommandsIncluded": 0,
+    "publishedButNoindexed": 0,
+    "seoWarningItems": 8,
+    "shortDescriptionItems": 9,
+    "trafficDataAvailable": false,
+    "unsafeItems": 0
+  },
+  "unsafeItems": [],
+  "topItems": [
+    {
+      "actionCount": 9,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: Codex npm install 报错怎么办.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Cannibalization check: review same primary keyword conflict \"codex npm install 报错怎么办\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [
+        {
+          "files": [
+            "content/blog/codex-codex-npm-install-1-3.mdx",
+            "content/blog/codex-codex-npm-install-4-33.mdx",
+            "content/blog/codex-npm-install-error-beginner-fix.mdx"
+          ],
+          "groupKey": "codex npm install 报错怎么办",
+          "publishedCount": 1,
+          "reason": "same primary keyword",
+          "reviewBatchOverlap": [],
+          "statuses": {
+            "archived": 1,
+            "draft": 1,
+            "published": 1
+          },
+          "titles": [
+            "Codex npm install 报错怎么办",
+            "Codex npm install 报错怎么办：新手诊断流程",
+            "Codex 项目 npm install 报错怎么办：新手排查步骤"
+          ]
+        }
+      ],
+      "category": "报错解决",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 102,
+      "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
+      "freshnessRisk": {
+        "category": "报错解决",
+        "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
+        "primaryKeyword": "Codex npm install 报错怎么办",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: api",
+          "fast-changing technical term: claude",
+          "fast-changing technical term: key",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
+        "updatedAt": "2026-06-02"
+      },
+      "priorityScore": 165,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/codex-npm-install-error-beginner-fix.mdx.",
+          "Review status: published.",
+          "Confirm primary keyword intent: Codex npm install 报错怎么办.",
+          "Snippet warning: primary keyword is not an exact title substring.",
+          "Structured-data warning: contentType is uncommon: troubleshooting.",
+          "Check whether the title can naturally include the exact primary keyword: Codex npm install 报错怎么办.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Check whether the title can naturally include the exact primary keyword: Codex npm install 报错怎么办.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "primaryKeyword": "Codex npm install 报错怎么办",
+        "priority": 63,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [
+          "contentType is uncommon: troubleshooting"
+        ],
+        "snippetWarnings": [
+          "primary keyword is not an exact title substring"
+        ],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
+        "unsafeReasons": []
+      },
+      "slug": "codex-npm-install-error-beginner-fix",
+      "tags": [
+        "Codex",
+        "npm install",
+        "Node.js",
+        "报错解决"
+      ],
+      "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "actionCount": 9,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "SEO warning: Confirm the contentType value matches the actual article format and category.",
+        "SEO warning: If the value is intentionally uncommon, document that decision during human review.",
+        "SEO warning: If the value is accidental, replace it with the closest established content type before approval.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Cannibalization check: review similar slug stem conflict \"codex-claude-code-beginner\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [
+        {
+          "files": [
+            "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
+            "content/blog/codex-vs-claude-code-beginner.mdx"
+          ],
+          "groupKey": "codex-claude-code-beginner",
+          "publishedCount": 1,
+          "reason": "similar slug stem",
+          "reviewBatchOverlap": [],
+          "statuses": {
+            "published": 1,
+            "draft": 1
+          },
+          "titles": [
+            "Codex 和 Claude Code 怎么选：新手对比清单",
+            "Codex 和 Claude Code 新手怎么选"
+          ]
+        }
+      ],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 104,
+      "file": "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
+        "primaryKeyword": "Codex 和 Claude Code 怎么选：新手对比清单",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 和 Claude Code 怎么选：新手对比清单",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 165,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/codex-vs-claude-code-beginner-checklist.mdx.",
+          "Review status: published.",
+          "Structured-data warning: contentType is uncommon: comparison.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "priority": 55,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [
+          "contentType is uncommon: comparison"
+        ],
+        "snippetWarnings": [],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "Codex 和 Claude Code 怎么选：新手对比清单",
+        "unsafeReasons": []
+      },
+      "slug": "codex-vs-claude-code-beginner-checklist",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 和 Claude Code 怎么选：新手对比清单",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 和 Claude Code 怎么选：新手对比清单",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "actionCount": 9,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: 第一个 Upwork 项目怎么报价.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "报价指南",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 72,
+      "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+      "freshnessRisk": {
+        "category": "报价指南",
+        "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+        "primaryKeyword": "第一个 Upwork 项目怎么报价",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价"
+        ],
+        "status": "published",
+        "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+        "updatedAt": "2026-06-02"
+      },
+      "priorityScore": 160,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/first-upwork-project-pricing-checklist.mdx.",
+          "Review status: published.",
+          "Confirm primary keyword intent: 第一个 Upwork 项目怎么报价.",
+          "Snippet warning: primary keyword is not an exact title substring.",
+          "Structured-data warning: contentType is uncommon: pricing-guide.",
+          "Check whether the title can naturally include the exact primary keyword: 第一个 Upwork 项目怎么报价.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Check whether the title can naturally include the exact primary keyword: 第一个 Upwork 项目怎么报价.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "primaryKeyword": "第一个 Upwork 项目怎么报价",
+        "priority": 63,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [
+          "contentType is uncommon: pricing-guide"
+        ],
+        "snippetWarnings": [
+          "primary keyword is not an exact title substring"
+        ],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+        "unsafeReasons": []
+      },
+      "slug": "first-upwork-project-pricing-checklist",
+      "tags": [
+        "Upwork",
+        "报价",
+        "自由职业",
+        "新手接单"
+      ],
+      "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "actionCount": 9,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: Payoneer Wise PayPal 区别.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "收款工具",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 82,
+      "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+      "freshnessRisk": {
+        "category": "收款工具",
+        "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+        "primaryKeyword": "Payoneer Wise PayPal 区别",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价"
+        ],
+        "status": "published",
+        "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+        "updatedAt": "2026-06-02"
+      },
+      "priorityScore": 160,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/payoneer-wise-paypal-beginner-comparison.mdx.",
+          "Review status: published.",
+          "Confirm primary keyword intent: Payoneer Wise PayPal 区别.",
+          "Snippet warning: primary keyword is not an exact title substring.",
+          "Structured-data warning: contentType is uncommon: comparison.",
+          "Check whether the title can naturally include the exact primary keyword: Payoneer Wise PayPal 区别.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Check whether the title can naturally include the exact primary keyword: Payoneer Wise PayPal 区别.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "primaryKeyword": "Payoneer Wise PayPal 区别",
+        "priority": 63,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [
+          "contentType is uncommon: comparison"
+        ],
+        "snippetWarnings": [
+          "primary keyword is not an exact title substring"
+        ],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+        "unsafeReasons": []
+      },
+      "slug": "payoneer-wise-paypal-beginner-comparison",
+      "tags": [
+        "Payoneer",
+        "Wise",
+        "PayPal",
+        "跨境收款"
+      ],
+      "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "actionCount": 9,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: Upwork Proposal 没人回怎么办.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "Upwork 新手",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 80,
+      "file": "content/blog/upwork-proposal-no-reply-checklist.mdx",
+      "freshnessRisk": {
+        "category": "Upwork 新手",
+        "file": "content/blog/upwork-proposal-no-reply-checklist.mdx",
+        "primaryKeyword": "Upwork Proposal 没人回怎么办",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 运营"
+        ],
+        "status": "published",
+        "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
+        "updatedAt": "2026-06-02"
+      },
+      "priorityScore": 160,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/upwork-proposal-no-reply-checklist.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/upwork-proposal-no-reply-checklist.mdx.",
+          "Review status: published.",
+          "Confirm primary keyword intent: Upwork Proposal 没人回怎么办.",
+          "Snippet warning: primary keyword is not an exact title substring.",
+          "Check whether the title can naturally include the exact primary keyword: Upwork Proposal 没人回怎么办.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Check whether the title can naturally include the exact primary keyword: Upwork Proposal 没人回怎么办.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "primaryKeyword": "Upwork Proposal 没人回怎么办",
+        "priority": 58,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [],
+        "snippetWarnings": [
+          "primary keyword is not an exact title substring"
+        ],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
+        "unsafeReasons": []
+      },
+      "slug": "upwork-proposal-no-reply-checklist",
+      "tags": [
+        "Upwork",
+        "Proposal",
+        "新手接单",
+        "自由职业"
+      ],
+      "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "actionCount": 9,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: Vercel 环境变量缺失怎么办.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "部署教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 87,
+      "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+      "freshnessRisk": {
+        "category": "部署教程",
+        "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+        "primaryKeyword": "Vercel 环境变量缺失怎么办",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: api",
+          "fast-changing technical term: claude",
+          "fast-changing technical term: key",
+          "fast-changing technical term: openai",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价"
+        ],
+        "status": "published",
+        "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+        "updatedAt": "2026-06-02"
+      },
+      "priorityScore": 160,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/vercel-env-variable-missing-beginner-guide.mdx.",
+          "Review status: published.",
+          "Confirm primary keyword intent: Vercel 环境变量缺失怎么办.",
+          "Snippet warning: primary keyword is not an exact title substring.",
+          "Structured-data warning: contentType is uncommon: troubleshooting.",
+          "Check whether the title can naturally include the exact primary keyword: Vercel 环境变量缺失怎么办.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Check whether the title can naturally include the exact primary keyword: Vercel 环境变量缺失怎么办.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "primaryKeyword": "Vercel 环境变量缺失怎么办",
+        "priority": 63,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [
+          "contentType is uncommon: troubleshooting"
+        ],
+        "snippetWarnings": [
+          "primary keyword is not an exact title substring"
+        ],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+        "unsafeReasons": []
+      },
+      "slug": "vercel-env-variable-missing-beginner-guide",
+      "tags": [
+        "Vercel",
+        "环境变量",
+        "Next.js",
+        "部署失败"
+      ],
+      "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "actionCount": 8,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "SEO warning: Confirm the contentType value matches the actual article format and category.",
+        "SEO warning: If the value is intentionally uncommon, document that decision during human review.",
+        "SEO warning: If the value is accidental, replace it with the closest established content type before approval.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 101,
+      "file": "content/blog/codex-github-before-commit-checklist.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/codex-github-before-commit-checklist.mdx",
+        "primaryKeyword": "Codex 和 GitHub 怎么配合：提交代码前检查",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 150,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/codex-github-before-commit-checklist.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/codex-github-before-commit-checklist.mdx.",
+          "Review status: published.",
+          "Structured-data warning: contentType is uncommon: pricing-guide.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "priority": 55,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [
+          "contentType is uncommon: pricing-guide"
+        ],
+        "snippetWarnings": [],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
+        "unsafeReasons": []
+      },
+      "slug": "codex-github-before-commit-checklist",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 和 GitHub 怎么配合：提交代码前检查",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "actionCount": 8,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "SEO warning: Confirm the contentType value matches the actual article format and category.",
+        "SEO warning: If the value is intentionally uncommon, document that decision during human review.",
+        "SEO warning: If the value is accidental, replace it with the closest established content type before approval.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 101,
+      "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+        "primaryKeyword": "Codex 部署 Vercel 前检查什么：上线前清单",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 150,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/codex-vercel-deploy-preflight-checklist.mdx.",
+          "Review status: published.",
+          "Structured-data warning: contentType is uncommon: roadmap.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "priority": 55,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [
+          "contentType is uncommon: roadmap"
+        ],
+        "snippetWarnings": [],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+        "unsafeReasons": []
+      },
+      "slug": "codex-vercel-deploy-preflight-checklist",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 部署 Vercel 前检查什么：上线前清单",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "actionCount": 7,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Cannibalization check: review same primary keyword conflict \"codex 怎么做第一个网页\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [
+        {
+          "files": [
+            "content/blog/build-first-webpage-with-codex.mdx",
+            "content/blog/codex-codex-4-34.mdx"
+          ],
+          "groupKey": "codex 怎么做第一个网页",
+          "publishedCount": 1,
+          "reason": "same primary keyword",
+          "reviewBatchOverlap": [],
+          "statuses": {
+            "published": 1,
+            "draft": 1
+          },
+          "titles": [
+            "Codex 怎么做第一个网页",
+            "Codex 怎么做第一个网页：新手练习流程"
+          ]
+        }
+      ],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 88,
+      "file": "content/blog/build-first-webpage-with-codex.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/build-first-webpage-with-codex.mdx",
+        "primaryKeyword": "Codex 怎么做第一个网页",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 怎么做第一个网页",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 145,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": null,
+      "slug": "build-first-webpage-with-codex",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 怎么做第一个网页",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 怎么做第一个网页",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "actionCount": 7,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Cannibalization check: review same primary keyword conflict \"codex 生成代码后怎么审核\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [
+        {
+          "files": [
+            "content/blog/codex-codex-4-38.mdx",
+            "content/blog/codex-generated-code-review-guide.mdx"
+          ],
+          "groupKey": "codex 生成代码后怎么审核",
+          "publishedCount": 1,
+          "reason": "same primary keyword",
+          "reviewBatchOverlap": [],
+          "statuses": {
+            "draft": 1,
+            "published": 1
+          },
+          "titles": [
+            "Codex 生成代码后怎么审核",
+            "Codex 生成代码后怎么审核：新手检查清单"
+          ]
+        }
+      ],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 89,
+      "file": "content/blog/codex-generated-code-review-guide.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/codex-generated-code-review-guide.mdx",
+        "primaryKeyword": "Codex 生成代码后怎么审核",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: api",
+          "fast-changing technical term: claude",
+          "fast-changing technical term: key",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 生成代码后怎么审核",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 145,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": null,
+      "slug": "codex-generated-code-review-guide",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 生成代码后怎么审核",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 生成代码后怎么审核",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "actionCount": 7,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Cannibalization check: review same primary keyword conflict \"codex 安装失败怎么办\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [
+        {
+          "files": [
+            "content/blog/codex-codex-4-32.mdx",
+            "content/blog/codex-install-failed-beginner-fix.mdx"
+          ],
+          "groupKey": "codex 安装失败怎么办",
+          "publishedCount": 1,
+          "reason": "same primary keyword",
+          "reviewBatchOverlap": [],
+          "statuses": {
+            "draft": 1,
+            "published": 1
+          },
+          "titles": [
+            "Codex 安装失败怎么办",
+            "Codex 安装失败怎么办：新手排查清单"
+          ]
+        }
+      ],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 87,
+      "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+        "primaryKeyword": "Codex 安装失败怎么办",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 安装失败怎么办",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 145,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": null,
+      "slug": "codex-install-failed-beginner-fix",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 安装失败怎么办",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 安装失败怎么办",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "actionCount": 7,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Cannibalization check: review same primary keyword conflict \"codex 是什么新手怎么开始\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [
+        {
+          "files": [
+            "content/blog/codex-codex-4-31.mdx",
+            "content/blog/what-is-codex-beginner-start.mdx"
+          ],
+          "groupKey": "codex 是什么新手怎么开始",
+          "publishedCount": 1,
+          "reason": "same primary keyword",
+          "reviewBatchOverlap": [],
+          "statuses": {
+            "draft": 1,
+            "published": 1
+          },
+          "titles": [
+            "Codex 是什么新手怎么开始",
+            "Codex 是什么：新手怎么开始"
+          ]
+        }
+      ],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 89,
+      "file": "content/blog/what-is-codex-beginner-start.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/what-is-codex-beginner-start.mdx",
+        "primaryKeyword": "Codex 是什么新手怎么开始",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 是什么新手怎么开始",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 145,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": null,
+      "slug": "what-is-codex-beginner-start",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 是什么新手怎么开始",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 是什么新手怎么开始",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "actionCount": 6,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "Upwork 新手",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 64,
+      "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+      "freshnessRisk": {
+        "category": "Upwork 新手",
+        "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+        "primaryKeyword": "Upwork 客户需求太模糊怎么办",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价"
+        ],
+        "status": "published",
+        "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+        "updatedAt": "2026-06-02"
+      },
+      "priorityScore": 130,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": null,
+      "slug": "upwork-client-requirements-analysis-beginner",
+      "tags": [
+        "Upwork",
+        "客户沟通",
+        "需求分析",
+        "Proposal"
+      ],
+      "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "actionCount": 5,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 97,
+      "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+        "primaryKeyword": "Codex 生成代码后怎么审核：交付前检查清单",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 生成代码后怎么审核：交付前检查清单",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 120,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": null,
+      "slug": "codex-code-review-delivery-checklist",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 生成代码后怎么审核：交付前检查清单",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 生成代码后怎么审核：交付前检查清单",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "actionCount": 5,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 102,
+      "file": "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+        "primaryKeyword": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 120,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": null,
+      "slug": "codex-upwork-small-job-risk-checklist",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 接 Upwork 小单怎么判断：风险检查清单",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    }
+  ],
+  "items": [
+    {
+      "actionCount": 9,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: Codex npm install 报错怎么办.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Cannibalization check: review same primary keyword conflict \"codex npm install 报错怎么办\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [
+        {
+          "files": [
+            "content/blog/codex-codex-npm-install-1-3.mdx",
+            "content/blog/codex-codex-npm-install-4-33.mdx",
+            "content/blog/codex-npm-install-error-beginner-fix.mdx"
+          ],
+          "groupKey": "codex npm install 报错怎么办",
+          "publishedCount": 1,
+          "reason": "same primary keyword",
+          "reviewBatchOverlap": [],
+          "statuses": {
+            "archived": 1,
+            "draft": 1,
+            "published": 1
+          },
+          "titles": [
+            "Codex npm install 报错怎么办",
+            "Codex npm install 报错怎么办：新手诊断流程",
+            "Codex 项目 npm install 报错怎么办：新手排查步骤"
+          ]
+        }
+      ],
+      "category": "报错解决",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 102,
+      "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
+      "freshnessRisk": {
+        "category": "报错解决",
+        "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
+        "primaryKeyword": "Codex npm install 报错怎么办",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: api",
+          "fast-changing technical term: claude",
+          "fast-changing technical term: key",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
+        "updatedAt": "2026-06-02"
+      },
+      "priorityScore": 165,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/codex-npm-install-error-beginner-fix.mdx.",
+          "Review status: published.",
+          "Confirm primary keyword intent: Codex npm install 报错怎么办.",
+          "Snippet warning: primary keyword is not an exact title substring.",
+          "Structured-data warning: contentType is uncommon: troubleshooting.",
+          "Check whether the title can naturally include the exact primary keyword: Codex npm install 报错怎么办.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Check whether the title can naturally include the exact primary keyword: Codex npm install 报错怎么办.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "primaryKeyword": "Codex npm install 报错怎么办",
+        "priority": 63,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [
+          "contentType is uncommon: troubleshooting"
+        ],
+        "snippetWarnings": [
+          "primary keyword is not an exact title substring"
+        ],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
+        "unsafeReasons": []
+      },
+      "slug": "codex-npm-install-error-beginner-fix",
+      "tags": [
+        "Codex",
+        "npm install",
+        "Node.js",
+        "报错解决"
+      ],
+      "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "actionCount": 9,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "SEO warning: Confirm the contentType value matches the actual article format and category.",
+        "SEO warning: If the value is intentionally uncommon, document that decision during human review.",
+        "SEO warning: If the value is accidental, replace it with the closest established content type before approval.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Cannibalization check: review similar slug stem conflict \"codex-claude-code-beginner\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [
+        {
+          "files": [
+            "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
+            "content/blog/codex-vs-claude-code-beginner.mdx"
+          ],
+          "groupKey": "codex-claude-code-beginner",
+          "publishedCount": 1,
+          "reason": "similar slug stem",
+          "reviewBatchOverlap": [],
+          "statuses": {
+            "published": 1,
+            "draft": 1
+          },
+          "titles": [
+            "Codex 和 Claude Code 怎么选：新手对比清单",
+            "Codex 和 Claude Code 新手怎么选"
+          ]
+        }
+      ],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 104,
+      "file": "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
+        "primaryKeyword": "Codex 和 Claude Code 怎么选：新手对比清单",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 和 Claude Code 怎么选：新手对比清单",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 165,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/codex-vs-claude-code-beginner-checklist.mdx.",
+          "Review status: published.",
+          "Structured-data warning: contentType is uncommon: comparison.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "priority": 55,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [
+          "contentType is uncommon: comparison"
+        ],
+        "snippetWarnings": [],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "Codex 和 Claude Code 怎么选：新手对比清单",
+        "unsafeReasons": []
+      },
+      "slug": "codex-vs-claude-code-beginner-checklist",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 和 Claude Code 怎么选：新手对比清单",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 和 Claude Code 怎么选：新手对比清单",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "actionCount": 9,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: 第一个 Upwork 项目怎么报价.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "报价指南",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 72,
+      "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+      "freshnessRisk": {
+        "category": "报价指南",
+        "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+        "primaryKeyword": "第一个 Upwork 项目怎么报价",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价"
+        ],
+        "status": "published",
+        "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+        "updatedAt": "2026-06-02"
+      },
+      "priorityScore": 160,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/first-upwork-project-pricing-checklist.mdx.",
+          "Review status: published.",
+          "Confirm primary keyword intent: 第一个 Upwork 项目怎么报价.",
+          "Snippet warning: primary keyword is not an exact title substring.",
+          "Structured-data warning: contentType is uncommon: pricing-guide.",
+          "Check whether the title can naturally include the exact primary keyword: 第一个 Upwork 项目怎么报价.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Check whether the title can naturally include the exact primary keyword: 第一个 Upwork 项目怎么报价.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "primaryKeyword": "第一个 Upwork 项目怎么报价",
+        "priority": 63,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [
+          "contentType is uncommon: pricing-guide"
+        ],
+        "snippetWarnings": [
+          "primary keyword is not an exact title substring"
+        ],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+        "unsafeReasons": []
+      },
+      "slug": "first-upwork-project-pricing-checklist",
+      "tags": [
+        "Upwork",
+        "报价",
+        "自由职业",
+        "新手接单"
+      ],
+      "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "actionCount": 9,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: Payoneer Wise PayPal 区别.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "收款工具",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 82,
+      "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+      "freshnessRisk": {
+        "category": "收款工具",
+        "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+        "primaryKeyword": "Payoneer Wise PayPal 区别",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价"
+        ],
+        "status": "published",
+        "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+        "updatedAt": "2026-06-02"
+      },
+      "priorityScore": 160,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/payoneer-wise-paypal-beginner-comparison.mdx.",
+          "Review status: published.",
+          "Confirm primary keyword intent: Payoneer Wise PayPal 区别.",
+          "Snippet warning: primary keyword is not an exact title substring.",
+          "Structured-data warning: contentType is uncommon: comparison.",
+          "Check whether the title can naturally include the exact primary keyword: Payoneer Wise PayPal 区别.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Check whether the title can naturally include the exact primary keyword: Payoneer Wise PayPal 区别.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "primaryKeyword": "Payoneer Wise PayPal 区别",
+        "priority": 63,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [
+          "contentType is uncommon: comparison"
+        ],
+        "snippetWarnings": [
+          "primary keyword is not an exact title substring"
+        ],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+        "unsafeReasons": []
+      },
+      "slug": "payoneer-wise-paypal-beginner-comparison",
+      "tags": [
+        "Payoneer",
+        "Wise",
+        "PayPal",
+        "跨境收款"
+      ],
+      "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "actionCount": 9,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: Upwork Proposal 没人回怎么办.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "Upwork 新手",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 80,
+      "file": "content/blog/upwork-proposal-no-reply-checklist.mdx",
+      "freshnessRisk": {
+        "category": "Upwork 新手",
+        "file": "content/blog/upwork-proposal-no-reply-checklist.mdx",
+        "primaryKeyword": "Upwork Proposal 没人回怎么办",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 运营"
+        ],
+        "status": "published",
+        "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
+        "updatedAt": "2026-06-02"
+      },
+      "priorityScore": 160,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/upwork-proposal-no-reply-checklist.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/upwork-proposal-no-reply-checklist.mdx.",
+          "Review status: published.",
+          "Confirm primary keyword intent: Upwork Proposal 没人回怎么办.",
+          "Snippet warning: primary keyword is not an exact title substring.",
+          "Check whether the title can naturally include the exact primary keyword: Upwork Proposal 没人回怎么办.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Check whether the title can naturally include the exact primary keyword: Upwork Proposal 没人回怎么办.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "primaryKeyword": "Upwork Proposal 没人回怎么办",
+        "priority": 58,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [],
+        "snippetWarnings": [
+          "primary keyword is not an exact title substring"
+        ],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
+        "unsafeReasons": []
+      },
+      "slug": "upwork-proposal-no-reply-checklist",
+      "tags": [
+        "Upwork",
+        "Proposal",
+        "新手接单",
+        "自由职业"
+      ],
+      "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "actionCount": 9,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: Vercel 环境变量缺失怎么办.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "部署教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 87,
+      "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+      "freshnessRisk": {
+        "category": "部署教程",
+        "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+        "primaryKeyword": "Vercel 环境变量缺失怎么办",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: api",
+          "fast-changing technical term: claude",
+          "fast-changing technical term: key",
+          "fast-changing technical term: openai",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价"
+        ],
+        "status": "published",
+        "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+        "updatedAt": "2026-06-02"
+      },
+      "priorityScore": 160,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/vercel-env-variable-missing-beginner-guide.mdx.",
+          "Review status: published.",
+          "Confirm primary keyword intent: Vercel 环境变量缺失怎么办.",
+          "Snippet warning: primary keyword is not an exact title substring.",
+          "Structured-data warning: contentType is uncommon: troubleshooting.",
+          "Check whether the title can naturally include the exact primary keyword: Vercel 环境变量缺失怎么办.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Check whether the title can naturally include the exact primary keyword: Vercel 环境变量缺失怎么办.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "primaryKeyword": "Vercel 环境变量缺失怎么办",
+        "priority": 63,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [
+          "contentType is uncommon: troubleshooting"
+        ],
+        "snippetWarnings": [
+          "primary keyword is not an exact title substring"
+        ],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+        "unsafeReasons": []
+      },
+      "slug": "vercel-env-variable-missing-beginner-guide",
+      "tags": [
+        "Vercel",
+        "环境变量",
+        "Next.js",
+        "部署失败"
+      ],
+      "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "actionCount": 8,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "SEO warning: Confirm the contentType value matches the actual article format and category.",
+        "SEO warning: If the value is intentionally uncommon, document that decision during human review.",
+        "SEO warning: If the value is accidental, replace it with the closest established content type before approval.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 101,
+      "file": "content/blog/codex-github-before-commit-checklist.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/codex-github-before-commit-checklist.mdx",
+        "primaryKeyword": "Codex 和 GitHub 怎么配合：提交代码前检查",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 150,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/codex-github-before-commit-checklist.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/codex-github-before-commit-checklist.mdx.",
+          "Review status: published.",
+          "Structured-data warning: contentType is uncommon: pricing-guide.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "priority": 55,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [
+          "contentType is uncommon: pricing-guide"
+        ],
+        "snippetWarnings": [],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
+        "unsafeReasons": []
+      },
+      "slug": "codex-github-before-commit-checklist",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 和 GitHub 怎么配合：提交代码前检查",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "actionCount": 8,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "SEO warning: Confirm the contentType value matches the actual article format and category.",
+        "SEO warning: If the value is intentionally uncommon, document that decision during human review.",
+        "SEO warning: If the value is accidental, replace it with the closest established content type before approval.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 101,
+      "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+        "primaryKeyword": "Codex 部署 Vercel 前检查什么：上线前清单",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 150,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/codex-vercel-deploy-preflight-checklist.mdx.",
+          "Review status: published.",
+          "Structured-data warning: contentType is uncommon: roadmap.",
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Confirm the contentType value matches the actual article format and category.",
+          "If the value is intentionally uncommon, document that decision during human review.",
+          "If the value is accidental, replace it with the closest established content type before approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "priority": 55,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [
+          "contentType is uncommon: roadmap"
+        ],
+        "snippetWarnings": [],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+        "unsafeReasons": []
+      },
+      "slug": "codex-vercel-deploy-preflight-checklist",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 部署 Vercel 前检查什么：上线前清单",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "actionCount": 7,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Cannibalization check: review same primary keyword conflict \"codex 怎么做第一个网页\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [
+        {
+          "files": [
+            "content/blog/build-first-webpage-with-codex.mdx",
+            "content/blog/codex-codex-4-34.mdx"
+          ],
+          "groupKey": "codex 怎么做第一个网页",
+          "publishedCount": 1,
+          "reason": "same primary keyword",
+          "reviewBatchOverlap": [],
+          "statuses": {
+            "published": 1,
+            "draft": 1
+          },
+          "titles": [
+            "Codex 怎么做第一个网页",
+            "Codex 怎么做第一个网页：新手练习流程"
+          ]
+        }
+      ],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 88,
+      "file": "content/blog/build-first-webpage-with-codex.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/build-first-webpage-with-codex.mdx",
+        "primaryKeyword": "Codex 怎么做第一个网页",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 怎么做第一个网页",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 145,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": null,
+      "slug": "build-first-webpage-with-codex",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 怎么做第一个网页",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 怎么做第一个网页",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "actionCount": 7,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Cannibalization check: review same primary keyword conflict \"codex 生成代码后怎么审核\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [
+        {
+          "files": [
+            "content/blog/codex-codex-4-38.mdx",
+            "content/blog/codex-generated-code-review-guide.mdx"
+          ],
+          "groupKey": "codex 生成代码后怎么审核",
+          "publishedCount": 1,
+          "reason": "same primary keyword",
+          "reviewBatchOverlap": [],
+          "statuses": {
+            "draft": 1,
+            "published": 1
+          },
+          "titles": [
+            "Codex 生成代码后怎么审核",
+            "Codex 生成代码后怎么审核：新手检查清单"
+          ]
+        }
+      ],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 89,
+      "file": "content/blog/codex-generated-code-review-guide.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/codex-generated-code-review-guide.mdx",
+        "primaryKeyword": "Codex 生成代码后怎么审核",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: api",
+          "fast-changing technical term: claude",
+          "fast-changing technical term: key",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 生成代码后怎么审核",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 145,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": null,
+      "slug": "codex-generated-code-review-guide",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 生成代码后怎么审核",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 生成代码后怎么审核",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "actionCount": 7,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Cannibalization check: review same primary keyword conflict \"codex 安装失败怎么办\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [
+        {
+          "files": [
+            "content/blog/codex-codex-4-32.mdx",
+            "content/blog/codex-install-failed-beginner-fix.mdx"
+          ],
+          "groupKey": "codex 安装失败怎么办",
+          "publishedCount": 1,
+          "reason": "same primary keyword",
+          "reviewBatchOverlap": [],
+          "statuses": {
+            "draft": 1,
+            "published": 1
+          },
+          "titles": [
+            "Codex 安装失败怎么办",
+            "Codex 安装失败怎么办：新手排查清单"
+          ]
+        }
+      ],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 87,
+      "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+        "primaryKeyword": "Codex 安装失败怎么办",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 安装失败怎么办",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 145,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": null,
+      "slug": "codex-install-failed-beginner-fix",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 安装失败怎么办",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 安装失败怎么办",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "actionCount": 7,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Cannibalization check: review same primary keyword conflict \"codex 是什么新手怎么开始\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [
+        {
+          "files": [
+            "content/blog/codex-codex-4-31.mdx",
+            "content/blog/what-is-codex-beginner-start.mdx"
+          ],
+          "groupKey": "codex 是什么新手怎么开始",
+          "publishedCount": 1,
+          "reason": "same primary keyword",
+          "reviewBatchOverlap": [],
+          "statuses": {
+            "draft": 1,
+            "published": 1
+          },
+          "titles": [
+            "Codex 是什么新手怎么开始",
+            "Codex 是什么：新手怎么开始"
+          ]
+        }
+      ],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 89,
+      "file": "content/blog/what-is-codex-beginner-start.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/what-is-codex-beginner-start.mdx",
+        "primaryKeyword": "Codex 是什么新手怎么开始",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 是什么新手怎么开始",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 145,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": null,
+      "slug": "what-is-codex-beginner-start",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 是什么新手怎么开始",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 是什么新手怎么开始",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "actionCount": 6,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "Upwork 新手",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 64,
+      "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+      "freshnessRisk": {
+        "category": "Upwork 新手",
+        "file": "content/blog/upwork-client-requirements-analysis-beginner.mdx",
+        "primaryKeyword": "Upwork 客户需求太模糊怎么办",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价"
+        ],
+        "status": "published",
+        "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+        "updatedAt": "2026-06-02"
+      },
+      "priorityScore": 130,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": null,
+      "slug": "upwork-client-requirements-analysis-beginner",
+      "tags": [
+        "Upwork",
+        "客户沟通",
+        "需求分析",
+        "Proposal"
+      ],
+      "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "actionCount": 5,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 97,
+      "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+        "primaryKeyword": "Codex 生成代码后怎么审核：交付前检查清单",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 生成代码后怎么审核：交付前检查清单",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 120,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": null,
+      "slug": "codex-code-review-delivery-checklist",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 生成代码后怎么审核：交付前检查清单",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 生成代码后怎么审核：交付前检查清单",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    },
+    {
+      "actionCount": 5,
+      "actions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded."
+      ],
+      "cannibalizationConflicts": [],
+      "category": "Codex 新手教程",
+      "commandBoundary": {
+        "editAfterHumanApproval": "manual-only",
+        "markReview": "not-applicable-public-page",
+        "publishConfirm": "not-included",
+        "stopBefore": "Public page refresh requires explicit human approval for exact metadata, body, source, canonical, or link edits."
+      },
+      "descriptionLength": 102,
+      "file": "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+      "freshnessRisk": {
+        "category": "Codex 新手教程",
+        "file": "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+        "primaryKeyword": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+        "reviewContext": [],
+        "riskLevel": "high",
+        "riskReasons": [
+          "fast-changing technical term: claude",
+          "fast-changing technical term: vercel",
+          "fast-changing technical term: 部署",
+          "review-sensitive term: 工具",
+          "review-sensitive term: 报价",
+          "review-sensitive term: 自动化"
+        ],
+        "status": "published",
+        "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+        "updatedAt": "2026-06-01"
+      },
+      "priorityScore": 120,
+      "readyForHumanRefreshReview": true,
+      "seoWarning": null,
+      "slug": "codex-upwork-small-job-risk-checklist",
+      "tags": [
+        "Codex 新手教程",
+        "Codex 接 Upwork 小单怎么判断：风险检查清单",
+        "AI 接单",
+        "新手教程"
+      ],
+      "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+      "trafficClaim": "not-included",
+      "unsafeReasons": [],
+      "updatedAt": "2026-06-01"
+    }
+  ]
+}
