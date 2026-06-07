@@ -1592,6 +1592,41 @@ type PopularAiPromptPlaybook = {
   }>;
 };
 
+type PopularPromptApprovalBridge = {
+  summary: {
+    approvalQueueItems: number;
+    approvalQueueReadyItems: number;
+    bridgeItems: number;
+    bridgeItemsReadyForHumanReviewPrep: number;
+    commandBoundaries: number;
+    lanes: number;
+    lanesAlreadyInApprovalQueue: number;
+    lanesWithNextCandidates: number;
+    lanesWithReadyNextCandidates: number;
+    playbookItems: number;
+    playbookReadyItems: number;
+    promptTemplatesReferenced: number;
+    publishConfirmCommandsIncluded: number;
+    reviewCandidatePool: number;
+    searchQueriesReferenced: number;
+    trafficDataAvailable: boolean;
+    unsafeItems: number;
+    uniqueFiles: number;
+  };
+  topItems: Array<{
+    articleState: { humanReviewRequired: boolean; noindex: boolean; qualityScore: number; sourceNotes: boolean; status: string };
+    file: string;
+    laneTitle: string;
+    opportunityScore: number;
+    promptTemplates: number;
+    readyForHumanReviewPrep: boolean;
+    searchQueries: string[];
+    sourceTargets: string[];
+    title: string;
+    unsafeReasons: string[];
+  }>;
+};
+
 type PublicCoverageGapPlan = {
   items: Array<{
     file: string;
@@ -1709,6 +1744,7 @@ const reports = {
   broadSearchDemand: readJson<BroadSearchDemand>("content/automation/broad-search-demand-map.json"),
   massAiSearchMatrix: readJson<MassAiSearchMatrix>("content/automation/mass-ai-search-action-matrix.json"),
   popularAiPromptPlaybook: readJson<PopularAiPromptPlaybook>("content/automation/popular-ai-prompt-playbook.json"),
+  popularPromptApprovalBridge: readJson<PopularPromptApprovalBridge>("content/automation/popular-prompt-approval-bridge.json"),
   publicCoverageGapPlan: readJson<PublicCoverageGapPlan>("content/automation/public-coverage-gap-plan.json"),
   publicCoverageGapPreflight: readJson<PublicCoverageGapPreflight>("content/automation/public-coverage-gap-preflight.json"),
   publicCoverageGapDecisionPack: readJson<PublicCoverageGapDecisionPack>("content/automation/public-coverage-gap-decision-pack.json"),
@@ -2471,6 +2507,27 @@ const payload = {
     uniqueCandidateFiles: reports.popularAiPromptPlaybook.data?.summary.uniqueCandidateFiles ?? null,
     unsafeItems: reports.popularAiPromptPlaybook.data?.summary.unsafeItems ?? null,
   },
+  popularPromptApprovalBridge: {
+    approvalQueueItems: reports.popularPromptApprovalBridge.data?.summary.approvalQueueItems ?? null,
+    approvalQueueReadyItems: reports.popularPromptApprovalBridge.data?.summary.approvalQueueReadyItems ?? null,
+    bridgeItems: reports.popularPromptApprovalBridge.data?.summary.bridgeItems ?? null,
+    bridgeItemsReadyForHumanReviewPrep: reports.popularPromptApprovalBridge.data?.summary.bridgeItemsReadyForHumanReviewPrep ?? null,
+    commandBoundaries: reports.popularPromptApprovalBridge.data?.summary.commandBoundaries ?? null,
+    lanes: reports.popularPromptApprovalBridge.data?.summary.lanes ?? null,
+    lanesAlreadyInApprovalQueue: reports.popularPromptApprovalBridge.data?.summary.lanesAlreadyInApprovalQueue ?? null,
+    lanesWithNextCandidates: reports.popularPromptApprovalBridge.data?.summary.lanesWithNextCandidates ?? null,
+    lanesWithReadyNextCandidates: reports.popularPromptApprovalBridge.data?.summary.lanesWithReadyNextCandidates ?? null,
+    playbookItems: reports.popularPromptApprovalBridge.data?.summary.playbookItems ?? null,
+    playbookReadyItems: reports.popularPromptApprovalBridge.data?.summary.playbookReadyItems ?? null,
+    promptTemplatesReferenced: reports.popularPromptApprovalBridge.data?.summary.promptTemplatesReferenced ?? null,
+    publishConfirmCommandsIncluded: reports.popularPromptApprovalBridge.data?.summary.publishConfirmCommandsIncluded ?? null,
+    reviewCandidatePool: reports.popularPromptApprovalBridge.data?.summary.reviewCandidatePool ?? null,
+    searchQueriesReferenced: reports.popularPromptApprovalBridge.data?.summary.searchQueriesReferenced ?? null,
+    top: reports.popularPromptApprovalBridge.data?.topItems ?? [],
+    trafficDataAvailable: reports.popularPromptApprovalBridge.data?.summary.trafficDataAvailable ?? null,
+    unsafeItems: reports.popularPromptApprovalBridge.data?.summary.unsafeItems ?? null,
+    uniqueFiles: reports.popularPromptApprovalBridge.data?.summary.uniqueFiles ?? null,
+  },
   publicCoverageGapPlan: {
     duplicateFiles: reports.publicCoverageGapPlan.data?.summary.duplicateFiles ?? null,
     gapThemes: reports.publicCoverageGapPlan.data?.summary.gapThemes ?? null,
@@ -2773,6 +2830,13 @@ function buildNextActions() {
     reports.popularAiPromptPlaybook.data.summary.publishConfirmCommandsIncluded > 0
   ) {
     return ["Open docs/popular-ai-prompt-playbook.md and resolve popular AI prompt playbook guardrail issues before manual review."];
+  }
+  if (
+    !reports.popularPromptApprovalBridge.data ||
+    reports.popularPromptApprovalBridge.data.summary.unsafeItems > 0 ||
+    reports.popularPromptApprovalBridge.data.summary.publishConfirmCommandsIncluded > 0
+  ) {
+    return ["Open docs/popular-prompt-approval-bridge.md and resolve popular prompt approval bridge guardrail issues before manual review."];
   }
   if (!reports.broadFirstCoverageLaunchPack.data || reports.broadFirstCoverageLaunchPack.data.summary.unsafeItems > 0) {
     return ["Open docs/broad-first-coverage-launch-pack.md and resolve unsafe first-coverage launch candidates before any approval action."];
@@ -4026,6 +4090,32 @@ function toMarkdown(data: typeof payload) {
     "| --- | ---: | ---: | ---: | ---: | ---: | --- | --- |",
     ...data.popularAiPromptPlaybook.top.map((item) => (
       `| ${item.readyForHumanReviewPrep} | ${item.candidateFiles.length} | ${item.promptTemplates.length} | ${item.searchQueries.length} | ${item.sourceTargets.length} | ${item.publicMatches} | ${item.title} | ${item.audience} |`
+    )),
+    "",
+    "## Popular Prompt Approval Bridge",
+    "",
+    `- Playbook items: ${data.popularPromptApprovalBridge.playbookItems}`,
+    `- Playbook ready items: ${data.popularPromptApprovalBridge.playbookReadyItems}`,
+    `- Lanes: ${data.popularPromptApprovalBridge.lanes}`,
+    `- Lanes with next candidates: ${data.popularPromptApprovalBridge.lanesWithNextCandidates}`,
+    `- Lanes with ready next candidates: ${data.popularPromptApprovalBridge.lanesWithReadyNextCandidates}`,
+    `- Lanes already in approval queue: ${data.popularPromptApprovalBridge.lanesAlreadyInApprovalQueue}`,
+    `- Bridge items: ${data.popularPromptApprovalBridge.bridgeItems}`,
+    `- Ready bridge items: ${data.popularPromptApprovalBridge.bridgeItemsReadyForHumanReviewPrep}`,
+    `- Unique files: ${data.popularPromptApprovalBridge.uniqueFiles}`,
+    `- Prompt templates referenced: ${data.popularPromptApprovalBridge.promptTemplatesReferenced}`,
+    `- Search queries referenced: ${data.popularPromptApprovalBridge.searchQueriesReferenced}`,
+    `- Review candidate pool: ${data.popularPromptApprovalBridge.reviewCandidatePool}`,
+    `- Approval queue items: ${data.popularPromptApprovalBridge.approvalQueueItems}`,
+    `- Approval queue ready items: ${data.popularPromptApprovalBridge.approvalQueueReadyItems}`,
+    `- Publish confirm commands included: ${data.popularPromptApprovalBridge.publishConfirmCommandsIncluded}`,
+    `- Traffic data available: ${data.popularPromptApprovalBridge.trafficDataAvailable}`,
+    `- Unsafe items: ${data.popularPromptApprovalBridge.unsafeItems}`,
+    "",
+    "| Ready | Score | Templates | Queries | Sources | State | Lane | Title | File |",
+    "| --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- |",
+    ...data.popularPromptApprovalBridge.top.map((item) => (
+      `| ${item.readyForHumanReviewPrep} | ${item.opportunityScore} | ${item.promptTemplates} | ${item.searchQueries.length} | ${item.sourceTargets.length} | ${item.articleState.status}/${item.articleState.noindex ? "noindex" : "index"} | ${item.laneTitle} | ${item.title} | ${item.file} |`
     )),
     "",
     "## Public Coverage Gap Plan",

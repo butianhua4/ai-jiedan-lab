@@ -51,6 +51,7 @@ const tasks: Task[] = [
   { title: "Generate industry prompt opportunity board", args: ["run", "automation:industry-prompt-opportunity-board"] },
   { title: "Generate industry prompt module pack", args: ["run", "automation:industry-prompt-module-pack"] },
   { title: "Generate popular AI prompt playbook", args: ["run", "automation:popular-ai-prompt-playbook"] },
+  { title: "Generate popular prompt approval bridge", args: ["run", "automation:popular-prompt-approval-bridge"] },
   { title: "Generate public coverage gap plan", args: ["run", "automation:public-gap-plan"] },
   { title: "Run public coverage gap preflight", args: ["run", "automation:public-gap-preflight"] },
   { title: "Generate public coverage gap decision pack", args: ["run", "automation:public-gap-decision-pack"] },

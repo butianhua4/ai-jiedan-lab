@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T18:30:55.113Z",
+  "generatedAt": "2026-06-07T18:49:22.488Z",
   "ok": true,
   "summary": {
-    "checks": 153,
+    "checks": 155,
     "failed": 0,
-    "passed": 153
+    "passed": 155
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=169, unsafeClaims=0, watchMentions=2997"
+      "detail": "filesScanned=171, unsafeClaims=0, watchMentions=3062"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -591,6 +591,16 @@
       "name": "popular AI prompt playbook keeps templates human-gated and publish-safe",
       "ok": true,
       "detail": "ready=10, templates=50, queries=127, uniqueFiles=21, publishConfirm=0"
+    },
+    {
+      "name": "popular prompt approval bridge is read-only and covers every popular prompt lane",
+      "ok": true,
+      "detail": "lanes=10, next=10, readyNext=10, alreadyQueued=9"
+    },
+    {
+      "name": "popular prompt approval bridge keeps next candidates human-gated and publish-safe",
+      "ok": true,
+      "detail": "items=27, ready=27, templates=135, uniqueFiles=10, publishConfirm=0"
     },
     {
       "name": "public coverage gap plan is read-only and covers every no-public broad theme",

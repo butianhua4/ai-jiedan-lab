@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T18:30:55.638Z
+Generated at: 2026-06-07T18:49:23.020Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -54,7 +54,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=zh-tw
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=pt-br
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/ -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
@@ -1061,8 +1061,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 169
-- Traffic claim watch mentions: 2997
+- Traffic claim files scanned: 171
+- Traffic claim watch mentions: 3062
 
 ## Public Surface Inventory
 
@@ -1270,6 +1270,41 @@ Public categories:
 | true | 10 | 5 | 18 | 12 | 0 | AI Agent 部署、工具调用和上线排错提示词 | 想部署 Agent 的独立开发者、创业团队和技术运营 |
 | true | 10 | 5 | 18 | 12 | 0 | 大模型部署、本地模型和 API 排错提示词 | 部署大模型 API、本地模型、推理服务和 AI 应用的开发者 |
 | true | 10 | 5 | 18 | 12 | 0 | Agent 记忆、知识库和 RAG 提示词 | 做客服 Agent、个人助理、知识库问答和长期任务 Agent 的团队 |
+
+## Popular Prompt Approval Bridge
+
+- Playbook items: 10
+- Playbook ready items: 10
+- Lanes: 10
+- Lanes with next candidates: 10
+- Lanes with ready next candidates: 10
+- Lanes already in approval queue: 9
+- Bridge items: 27
+- Ready bridge items: 27
+- Unique files: 10
+- Prompt templates referenced: 135
+- Search queries referenced: 100
+- Review candidate pool: 633
+- Approval queue items: 8
+- Approval queue ready items: 8
+- Publish confirm commands included: 0
+- Traffic data available: false
+- Unsafe items: 0
+
+| Ready | Score | Templates | Queries | Sources | State | Lane | Title | File |
+| --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- |
+| true | 253 | 5 | 10 | 8 | draft/noindex | ChatGPT 提示词大全和万能公式 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| true | 253 | 5 | 10 | 8 | draft/noindex | ChatGPT 提示词大全和万能公式 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
+| true | 252 | 5 | 10 | 8 | draft/noindex | ChatGPT 提示词大全和万能公式 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
+| true | 119 | 5 | 10 | 8 | draft/noindex | AI 办公提示词：Word、Excel、PPT、邮件和会议 | 人力招聘 AI 提示词模板：JD、简历初筛、面试题和培训材料 | content/blog/hr-recruiting-ai-prompts-guide.mdx |
+| true | 260 | 5 | 10 | 8 | draft/noindex | Excel 和数据分析 AI 提示词 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| true | 253 | 5 | 10 | 8 | draft/noindex | Excel 和数据分析 AI 提示词 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| true | 253 | 5 | 10 | 8 | draft/noindex | Excel 和数据分析 AI 提示词 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| true | 123 | 5 | 10 | 7 | draft/noindex | 小红书、短视频和直播脚本 AI 提示词 | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
+| true | 123 | 5 | 10 | 7 | draft/noindex | 小红书、短视频和直播脚本 AI 提示词 | 营销 AI 提示词模板：选题、广告文案、SEO 和活动复盘怎么写 | content/blog/marketing-ai-prompts-guide.mdx |
+| true | 253 | 5 | 10 | 8 | draft/noindex | 电商客服、售后和直播卖货 AI 提示词 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| true | 253 | 5 | 10 | 8 | draft/noindex | 电商客服、售后和直播卖货 AI 提示词 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
+| true | 252 | 5 | 10 | 8 | draft/noindex | 电商客服、售后和直播卖货 AI 提示词 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
 
 ## Public Coverage Gap Plan
 

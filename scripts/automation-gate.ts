@@ -439,6 +439,42 @@ async function main() {
       unsafeItems: number;
     };
   }>("content/automation/popular-ai-prompt-playbook.json");
+  const popularPromptApprovalBridge = readJson<{
+    guardrails: { autoCreateArticles: boolean; autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    lanes?: Array<{
+      alreadyInApprovalQueue?: unknown[];
+      nextCandidates?: unknown[];
+      readyNextCandidates?: number;
+      searchQueries?: unknown[];
+    }>;
+    summary: {
+      bridgeItems: number;
+      bridgeItemsReadyForHumanReviewPrep: number;
+      commandBoundaries: number;
+      lanes: number;
+      lanesAlreadyInApprovalQueue: number;
+      lanesWithNextCandidates: number;
+      lanesWithReadyNextCandidates: number;
+      playbookItems: number;
+      playbookReadyItems: number;
+      promptTemplatesReferenced: number;
+      publishConfirmCommandsIncluded: number;
+      reviewCandidatePool: number;
+      searchQueriesReferenced: number;
+      trafficDataAvailable: boolean;
+      unsafeItems: number;
+      uniqueFiles: number;
+    };
+    topItems?: Array<{
+      articleState?: { humanReviewRequired?: boolean; noindex?: boolean; qualityScore?: number; sourceNotes?: boolean; status?: string };
+      commandBoundary?: { markReviewAfterHumanApproval?: string; publishConfirm?: string; publishDryRunAfterReview?: string; stopBefore?: string };
+      promptTemplates?: number;
+      readyForHumanReviewPrep?: boolean;
+      searchQueries?: unknown[];
+      sourceTargets?: unknown[];
+      unsafeReasons?: unknown[];
+    }>;
+  }>("content/automation/popular-prompt-approval-bridge.json");
   const publicCoverageGapPlan = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     items?: Array<{ noindex?: boolean; readyForManualReview?: boolean; safeDraft?: boolean; searchSeeds?: unknown[]; sourceTargets?: unknown[] }>;
@@ -3394,6 +3430,53 @@ async function main() {
           ),
         ),
       detail: `ready=${popularAiPromptPlaybook.summary.itemsReadyForHumanReviewPrep}, templates=${popularAiPromptPlaybook.summary.promptTemplates}, queries=${popularAiPromptPlaybook.summary.searchQueries}, uniqueFiles=${popularAiPromptPlaybook.summary.uniqueCandidateFiles}, publishConfirm=${popularAiPromptPlaybook.summary.publishConfirmCommandsIncluded}`,
+    },
+    {
+      name: "popular prompt approval bridge is read-only and covers every popular prompt lane",
+      ok:
+        popularPromptApprovalBridge.guardrails.autoCreateArticles === false &&
+        popularPromptApprovalBridge.guardrails.autoEditArticles === false &&
+        popularPromptApprovalBridge.guardrails.autoMarkReview === false &&
+        popularPromptApprovalBridge.guardrails.autoPublish === false &&
+        popularPromptApprovalBridge.guardrails.trafficClaim === "not-included" &&
+        popularPromptApprovalBridge.summary.lanes === popularAiPromptPlaybook.summary.items &&
+        popularPromptApprovalBridge.summary.playbookItems === popularAiPromptPlaybook.summary.items &&
+        popularPromptApprovalBridge.summary.playbookReadyItems === popularAiPromptPlaybook.summary.itemsReadyForHumanReviewPrep &&
+        popularPromptApprovalBridge.summary.lanesWithNextCandidates === popularPromptApprovalBridge.summary.lanes &&
+        popularPromptApprovalBridge.summary.lanesWithReadyNextCandidates === popularPromptApprovalBridge.summary.lanes &&
+        popularPromptApprovalBridge.summary.trafficDataAvailable === false,
+      detail: `lanes=${popularPromptApprovalBridge.summary.lanes}, next=${popularPromptApprovalBridge.summary.lanesWithNextCandidates}, readyNext=${popularPromptApprovalBridge.summary.lanesWithReadyNextCandidates}, alreadyQueued=${popularPromptApprovalBridge.summary.lanesAlreadyInApprovalQueue}`,
+    },
+    {
+      name: "popular prompt approval bridge keeps next candidates human-gated and publish-safe",
+      ok:
+        popularPromptApprovalBridge.summary.unsafeItems === 0 &&
+        popularPromptApprovalBridge.summary.bridgeItems > 0 &&
+        popularPromptApprovalBridge.summary.bridgeItemsReadyForHumanReviewPrep === popularPromptApprovalBridge.summary.bridgeItems &&
+        popularPromptApprovalBridge.summary.commandBoundaries === popularPromptApprovalBridge.summary.bridgeItems &&
+        popularPromptApprovalBridge.summary.publishConfirmCommandsIncluded === 0 &&
+        popularPromptApprovalBridge.summary.uniqueFiles > 0 &&
+        popularPromptApprovalBridge.summary.promptTemplatesReferenced >= popularPromptApprovalBridge.summary.bridgeItems * 5 &&
+        popularPromptApprovalBridge.summary.searchQueriesReferenced >= 50 &&
+        Boolean(
+          popularPromptApprovalBridge.topItems?.every(
+            (item) =>
+              item.readyForHumanReviewPrep === true &&
+              (item.unsafeReasons?.length || 0) === 0 &&
+              item.articleState?.status === "draft" &&
+              item.articleState?.noindex === true &&
+              item.articleState?.humanReviewRequired === true &&
+              item.articleState?.sourceNotes === true &&
+              (item.articleState?.qualityScore || 0) >= 100 &&
+              item.commandBoundary?.markReviewAfterHumanApproval?.includes("--confirm-human") &&
+              !item.commandBoundary?.publishDryRunAfterReview?.includes("--confirm") &&
+              item.commandBoundary?.publishConfirm === "not-included" &&
+              (item.sourceTargets?.length || 0) > 0 &&
+              (item.searchQueries?.length || 0) >= 5 &&
+              (item.promptTemplates || 0) >= 5,
+          ),
+        ),
+      detail: `items=${popularPromptApprovalBridge.summary.bridgeItems}, ready=${popularPromptApprovalBridge.summary.bridgeItemsReadyForHumanReviewPrep}, templates=${popularPromptApprovalBridge.summary.promptTemplatesReferenced}, uniqueFiles=${popularPromptApprovalBridge.summary.uniqueFiles}, publishConfirm=${popularPromptApprovalBridge.summary.publishConfirmCommandsIncluded}`,
     },
     {
       name: "public coverage gap plan is read-only and covers every no-public broad theme",
