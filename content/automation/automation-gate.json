@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T15:13:27.706Z",
+  "generatedAt": "2026-06-07T15:39:05.963Z",
   "ok": true,
   "summary": {
     "checks": 137,
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=155, unsafeClaims=0, watchMentions=1878"
+      "detail": "filesScanned=155, unsafeClaims=0, watchMentions=1879"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -220,7 +220,7 @@
     {
       "name": "autopilot approval remediation pack has actionable human fixes",
       "ok": true,
-      "detail": "commands=3, links=3, search=3, source=3"
+      "detail": "commands=3, links=3, search=3, source=3, sourceUrlFixes=3/34"
     },
     {
       "name": "autopilot review sprint board covers next assignments",

@@ -10,6 +10,8 @@ type Check = {
 };
 
 const base = normalizeBase(readArg("url") || readArg("base") || site.url);
+const fetchRetries = Math.max(1, Number(readArg("fetch-retries") || 3));
+const fetchTimeoutMs = Math.max(1000, Number(readArg("fetch-timeout-ms") || 8000));
 
 async function main() {
   const packageJson = readJson<{ dependencies?: Record<string, string>; devDependencies?: Record<string, string> }>("package.json");
@@ -37,6 +39,7 @@ async function main() {
     vercelAnalyticsSnippet: /@vercel\/analytics|Vercel Analytics|_vercel\/insights/.test(sourceText),
   };
   const liveEvidence = {
+    attempts: live.attempts,
     fetched: live.fetched,
     googleAnalyticsSnippet: /googletagmanager\.com\/gtag|google-analytics\.com|gtag\(|G-[A-Z0-9]+/.test(live.html),
     googleSiteVerificationMeta: live.html.includes("google-site-verification"),
@@ -54,7 +57,7 @@ async function main() {
     {
       name: "live homepage fetched",
       ok: live.fetched && live.status === 200,
-      detail: live.fetched ? `${live.status}` : live.error || "not fetched",
+      detail: live.fetched ? `${live.status} after ${live.attempts} attempt(s)` : `${live.error || "not fetched"} after ${live.attempts} attempt(s)`,
     },
     {
       name: "traffic data is not claimed without measured source",
@@ -109,22 +112,40 @@ async function main() {
 }
 
 async function fetchLiveEvidence() {
-  try {
-    const response = await fetch(base);
-    return {
-      error: "",
-      fetched: true,
-      html: await response.text(),
-      status: response.status,
-    };
-  } catch (error) {
-    return {
-      error: error instanceof Error ? error.message : String(error),
-      fetched: false,
-      html: "",
-      status: 0,
-    };
+  let lastError = "";
+  for (let attempt = 1; attempt <= fetchRetries; attempt += 1) {
+    let timeout: ReturnType<typeof setTimeout> | undefined;
+    try {
+      const controller = new AbortController();
+      timeout = setTimeout(() => controller.abort(), fetchTimeoutMs);
+      const response = await fetch(base, { signal: controller.signal });
+      const html = await response.text();
+      return {
+        attempts: attempt,
+        error: "",
+        fetched: true,
+        html,
+        status: response.status,
+      };
+    } catch (error) {
+      lastError = error instanceof Error ? error.message : String(error);
+      if (attempt < fetchRetries) await delay(750 * attempt);
+    } finally {
+      if (timeout) clearTimeout(timeout);
+    }
   }
+
+  return {
+    attempts: fetchRetries,
+    error: lastError,
+    fetched: false,
+    html: "",
+    status: 0,
+  };
+}
+
+function delay(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 function buildNextActions(measuredTrafficSourceCount: number, searchConsoleVerificationEvidence: boolean) {

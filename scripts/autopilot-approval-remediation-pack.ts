@@ -53,6 +53,24 @@ type SourceVerificationBrief = {
   summary: { unsafeItems: number };
 };
 
+type SourceTargetRemediationPack = {
+  items: Array<{
+    affectedFiles: string[];
+    finalUrl?: string;
+    kind: string;
+    manualActions: string[];
+    manualFixReady: boolean;
+    replacementPlan: string[];
+    unsafeReasons: string[];
+    url: string;
+  }>;
+  summary: {
+    items: number;
+    manualFixReadyItems: number;
+    unsafeItems: number;
+  };
+};
+
 type HumanReviewPlaybook = {
   items: Array<{
     file: string;
@@ -85,6 +103,7 @@ type RemediationItem = {
   remediationReasons: string[];
   searchFixes: string[];
   sourceChecks: string[];
+  sourceUrlFixes: string[];
   title: string;
   unsafeReasons: string[];
 };
@@ -94,17 +113,34 @@ function main() {
   const search = readJson<SearchIntentBrief>("content/automation/autopilot-search-intent-brief.json");
   const links = readJson<InternalLinkBrief>("content/automation/autopilot-internal-link-brief.json");
   const source = readJson<SourceVerificationBrief>("content/automation/autopilot-source-verification-brief.json");
+  const sourceTargetRemediation = readJson<SourceTargetRemediationPack>("content/automation/source-target-remediation-pack.json");
   const playbook = readJson<HumanReviewPlaybook>("content/automation/autopilot-human-review-playbook.json");
   const optimization = readJson<OptimizationBrief>("content/automation/review-optimization-brief.json");
 
   const searchByFile = new Map(search.items.map((item) => [item.file, item]));
   const linksByFile = new Map(links.items.map((item) => [item.file, item]));
   const sourceByFile = new Map(source.items.map((item) => [item.file, item]));
+  const sourceTargetRemediationByFile = new Map<string, SourceTargetRemediationPack["items"]>();
+  for (const item of sourceTargetRemediation.items) {
+    for (const file of item.affectedFiles) {
+      const current = sourceTargetRemediationByFile.get(file) || [];
+      current.push(item);
+      sourceTargetRemediationByFile.set(file, current);
+    }
+  }
   const playbookByFile = new Map(playbook.items.map((item) => [item.file, item]));
   const optimizationByFile = new Map(optimization.briefs.map((item) => [item.file, item]));
 
   const items = approval.items.map((item) =>
-    toRemediationItem(item, searchByFile.get(item.file), linksByFile.get(item.file), sourceByFile.get(item.file), playbookByFile.get(item.file), optimizationByFile.get(item.file)),
+    toRemediationItem(
+      item,
+      searchByFile.get(item.file),
+      linksByFile.get(item.file),
+      sourceByFile.get(item.file),
+      sourceTargetRemediationByFile.get(item.file) || [],
+      playbookByFile.get(item.file),
+      optimizationByFile.get(item.file),
+    ),
   );
   const unsafeItems = items.filter((item) => item.unsafeReasons.length > 0);
 
@@ -128,6 +164,10 @@ function main() {
       searchIntentUnsafeItems: search.summary.unsafeItems,
       searchWeakItems: search.summary.searchWeakItems,
       sourceVerificationUnsafeItems: source.summary.unsafeItems,
+      sourceTargetRemediationItems: sourceTargetRemediation.summary.items,
+      sourceTargetRemediationUnsafeItems: sourceTargetRemediation.summary.unsafeItems,
+      sourceTargetRemediationManualFixReadyItems: sourceTargetRemediation.summary.manualFixReadyItems,
+      approvalItemsWithSourceUrlRemediation: items.filter((item) => item.sourceUrlFixes.length > 0).length,
       humanReviewPlaybookUnsafeItems: playbook.summary.unsafeItems,
     },
     summary: {
@@ -138,7 +178,9 @@ function main() {
       itemsWithRemediationReasons: items.filter((item) => item.remediationReasons.length > 0).length,
       itemsWithSearchFixes: items.filter((item) => item.searchFixes.length > 0).length,
       itemsWithSourceChecks: items.filter((item) => item.sourceChecks.length > 0).length,
+      itemsWithSourceUrlFixes: items.filter((item) => item.sourceUrlFixes.length > 0).length,
       manualFixReadyItems: items.filter((item) => item.manualFixReady).length,
+      sourceUrlFixActions: items.reduce((sum, item) => sum + item.sourceUrlFixes.length, 0),
       unsafeItems: unsafeItems.length,
     },
     unsafeItems,
@@ -160,6 +202,7 @@ function toRemediationItem(
   searchItem: SearchIntentBrief["items"][number] | undefined,
   linkItem: InternalLinkBrief["items"][number] | undefined,
   sourceItem: SourceVerificationBrief["items"][number] | undefined,
+  sourceTargetItems: SourceTargetRemediationPack["items"],
   playbookItem: HumanReviewPlaybook["items"][number] | undefined,
   optimizationItem: OptimizationBrief["briefs"][number] | undefined,
 ): RemediationItem {
@@ -179,7 +222,17 @@ function toRemediationItem(
     ...(optimizationItem?.proposedOpeningAdditions || []).slice(0, 4),
     ...(playbookItem?.searchActions || []).slice(0, 6),
   ]);
+  const sourceUrlFixes = dedupe(
+    sourceTargetItems.flatMap((item) => [
+      item.kind === "failed-url"
+        ? `Resolve failed source URL before approval: ${item.url}.`
+        : `Confirm source redirect before approval: ${item.url} -> ${item.finalUrl || "missing final URL"}.`,
+      ...item.manualActions.slice(0, 2).map((action) => `Source URL action: ${action}`),
+      ...item.replacementPlan.slice(0, 2).map((step) => `Source replacement plan: ${step}`),
+    ]),
+  );
   const sourceChecks = dedupe([
+    ...sourceUrlFixes,
     ...(sourceItem?.uniqueReachableUrls || []).slice(0, 5).map((url) => `Open source URL: ${url}.`),
     ...(sourceItem?.factCheckQueries || []).slice(0, 5).map((query) => `Fact-check query: ${query}.`),
     ...(sourceItem?.riskReviewChecklist || []).slice(0, 5),
@@ -188,6 +241,7 @@ function toRemediationItem(
   const remediationReasons = dedupe([
     linkItem?.linksToPublicArticles === 0 ? "approval candidate has no current link to a published article" : "",
     (searchItem?.searchWeaknesses || []).length > 0 ? `${searchItem?.searchWeaknesses.length} search-intent weakness(es) need human copy review` : "",
+    sourceUrlFixes.length > 0 ? `${sourceUrlFixes.length} source URL remediation action(s) need human confirmation` : "",
     optimizationItem?.warningRemediation?.length ? "copydesk warning remediation exists" : "",
   ]);
   const unsafeReasons = [
@@ -195,6 +249,7 @@ function toRemediationItem(
     hasCommandBoundary(commandBoundary) ? "" : "manual command boundary is missing or unsafe",
     playbookItem?.readyForHumanReview === true ? "" : "human review playbook item is not ready",
     sourceItem && sourceItem.reachableSources > 0 ? "" : "no reachable source evidence attached",
+    sourceTargetItems.every((item) => item.manualFixReady && item.unsafeReasons.length === 0) ? "" : "source URL remediation item is unsafe",
     internalLinkFixes.length > 0 ? "" : "no internal-link remediation action attached",
     searchFixes.length > 0 ? "" : "no search remediation action attached",
     sourceChecks.length > 0 ? "" : "no source verification action attached",
@@ -207,6 +262,7 @@ function toRemediationItem(
       ...remediationReasons.map((reason) => `Review reason: ${reason}.`),
       "Apply or explicitly reject the internal-link suggestion before mark:review.",
       "Resolve or explicitly accept search-intent weaknesses before mark:review.",
+      ...(sourceUrlFixes.length ? ["Resolve or explicitly accept source URL remediation actions before mark:review."] : []),
       "Verify source URLs and fact-check queries before mark:review.",
       "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
       `Only after explicit human approval, run: ${commandBoundary.markReviewAfterHumanApproval}`,
@@ -217,6 +273,7 @@ function toRemediationItem(
     remediationReasons,
     searchFixes,
     sourceChecks,
+    sourceUrlFixes,
     title: approvalItem.title,
     unsafeReasons,
   };
@@ -331,6 +388,10 @@ function itemSection(item: RemediationItem) {
     "Source checks:",
     "",
     ...item.sourceChecks.map((action) => `- ${action}`),
+    "",
+    "Source URL fixes:",
+    "",
+    ...(item.sourceUrlFixes.length ? item.sourceUrlFixes.map((action) => `- ${action}`) : ["- none"]),
     "",
     "Human checklist:",
     "",

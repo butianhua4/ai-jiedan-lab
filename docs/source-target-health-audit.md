@@ -1,6 +1,6 @@
 # Source Target Health Audit
 
-Generated at: 2026-06-07T15:13:02.252Z
+Generated at: 2026-06-07T15:36:12.127Z
 
 This report is read-only. It verifies official source URLs used by review and public-gap candidates before any human approval step.
 
@@ -45,7 +45,7 @@ This report is read-only. It verifies official source URLs used by review and pu
 | --- | --- | --- | --- | --- | --- |
 | true | 200 | https://ai-sdk.dev/docs | https://ai-sdk.dev/docs/introduction | 30 |  |
 | true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs | 4 |  |
-| true | 200 | https://docs.anthropic.com | https://platform.claude.com/docs/en/home | 5 |  |
+| true | 200 | https://docs.anthropic.com | https://platform.claude.com/docs/en/home | 5 | AbortError |
 | true | 200 | https://docs.anthropic.com/ | https://platform.claude.com/docs/en/home | 2 |  |
 | true | 200 | https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview | https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview | 5 |  |
 | true | 200 | https://docs.dify.ai | https://docs.dify.ai/en/use-dify/getting-started/introduction | 7 |  |
@@ -101,7 +101,7 @@ This report is read-only. It verifies official source URLs used by review and pu
 | true | 200 | https://arxiv.org/abs/2603.10700 | https://arxiv.org/abs/2603.10700 | 2 |  |
 | true | 200 | https://arxiv.org/abs/2604.20598 | https://arxiv.org/abs/2604.20598 | 2 |  |
 | true | 200 | https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag | https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag | 2 |  |
-| true | 200 | https://docs.anthropic.com | https://platform.claude.com/docs/en/home | 5 |  |
+| true | 200 | https://docs.anthropic.com | https://platform.claude.com/docs/en/home | 5 | AbortError |
 | true | 200 | https://docs.anthropic.com/ | https://platform.claude.com/docs/en/home | 2 |  |
 | true | 200 | https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview | https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview | 5 |  |
 | true | 200 | https://docs.dify.ai | https://docs.dify.ai/en/use-dify/getting-started/introduction | 7 |  |
@@ -130,7 +130,7 @@ This report is read-only. It verifies official source URLs used by review and pu
 | true | 200 | https://www.mrprompts.ai/learn/ai-prompts-for-sales | https://www.mrprompts.ai/learn/ai-prompts-for-sales | 2 |  |
 | true | 200 | https://www.pinecone.io/learn/retrieval-augmented-generation/ | https://www.pinecone.io/learn/retrieval-augmented-generation/ | 2 |  |
 | true | 200 | https://www.promptfoo.dev/docs/intro/ | https://www.promptfoo.dev/docs/intro/ | 2 |  |
-| true | 403 | https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/ | https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/ | 2 |  |
-| true | 403 | https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/ | https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/ | 2 |  |
+| true | 200 | https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/ | https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/ | 2 |  |
+| true | 200 | https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/ | https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/ | 2 |  |
 | true | 200 | https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker | https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker | 2 |  |
 | true | 200 | https://www.spheron.network/blog/llm-deployment-guide/ | https://www.spheron.network/blog/llm-deployment-guide/ | 2 |  |

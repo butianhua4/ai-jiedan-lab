@@ -1,6 +1,6 @@
 # Source Target Remediation Pack
 
-Generated at: 2026-06-07T15:08:38.759Z
+Generated at: 2026-06-07T15:36:14.855Z
 
 This pack is read-only. It does not edit articles, mark review, publish, or claim traffic.
 
@@ -31,7 +31,7 @@ This pack is read-only. It does not edit articles, mark review, publish, or clai
 | true | redirected-url | 7 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/bentoml-llm-deployment-beginner-guide.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx | https://docs.vllm.ai | https://docs.vllm.ai/en/latest/ |
 | true | redirected-url | 5 | content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx | https://docs.anthropic.com | https://platform.claude.com/docs/en/home |
 | true | redirected-url | 5 | content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/customer-service-ai-prompts-guide.mdx<br>content/blog/ecommerce-ai-prompts-guide.mdx | https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview | https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview |
-| true | redirected-url | 4 | content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=tr |
+| true | redirected-url | 4 | content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs |
 | true | redirected-url | 2 | content/blog/ai-api-key-security-rotation-guide.mdx | https://docs.anthropic.com/ | https://platform.claude.com/docs/en/home |
 | true | redirected-url | 2 | content/blog/mcp-server-deployment-security-checklist.mdx | https://docs.dify.ai/ | https://docs.dify.ai/en/use-dify/getting-started/introduction |
 | true | redirected-url | 2 | content/blog/agent-tool-permission-safety-guide.mdx | https://docs.helicone.ai/ | https://docs.helicone.ai/getting-started/quick-start |
@@ -294,7 +294,6 @@ Human checklist:
 - Review URL: https://docs.dify.ai.
 - Review final URL: https://docs.dify.ai/en/use-dify/getting-started/introduction.
 - HTTP status observed by automation: 200.
-- Automation error observed: AbortError.
 - Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.
 - If the final URL is the canonical destination, update the source target during human review.
 - If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.
@@ -394,6 +393,7 @@ Human checklist:
 - Review URL: https://docs.anthropic.com.
 - Review final URL: https://platform.claude.com/docs/en/home.
 - HTTP status observed by automation: 200.
+- Automation error observed: AbortError.
 - Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.
 - If the final URL is the canonical destination, update the source target during human review.
 - If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.
@@ -458,7 +458,7 @@ Replacement plan:
 Human checklist:
 
 - Review URL: https://ai.google.dev/docs.
-- Review final URL: https://ai.google.dev/gemini-api/docs?hl=tr.
+- Review final URL: https://ai.google.dev/gemini-api/docs.
 - HTTP status observed by automation: 200.
 - Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.
 - If the final URL is the canonical destination, update the source target during human review.

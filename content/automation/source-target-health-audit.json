@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T15:13:02.252Z",
+  "generatedAt": "2026-06-07T15:36:12.127Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -304,6 +304,7 @@
       "url": "https://ai.google.dev/docs"
     },
     {
+      "error": "AbortError",
       "finalUrl": "https://platform.claude.com/docs/en/home",
       "ok": true,
       "references": [
@@ -2495,6 +2496,7 @@
       "url": "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
     },
     {
+      "error": "AbortError",
       "finalUrl": "https://platform.claude.com/docs/en/home",
       "ok": true,
       "references": [
@@ -4208,7 +4210,7 @@
           "url": "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/"
         }
       ],
-      "status": 403,
+      "status": 200,
       "url": "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/"
     },
     {
@@ -4230,7 +4232,7 @@
           "url": "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/"
         }
       ],
-      "status": 403,
+      "status": 200,
       "url": "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/"
     },
     {

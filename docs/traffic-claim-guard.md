@@ -1,5 +1,5 @@
 # Traffic Claim Guard
-Generated at: 2026-06-07T15:13:25.733Z
+Generated at: 2026-06-07T15:35:34.731Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
@@ -8,7 +8,7 @@ This guard scans operational reports and docs for unsupported claims that real t
 - filesScanned: 155
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 1878
+- watchMentions: 1879
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -20,10 +20,6 @@ None.
 | README.md | 250 | 4. 每次只发布 1-3 篇人工审核文章，观察收录和点击。 |
 | README.md | 276 | - Google Search Console 提交清单：`docs/search-console-setup.md` |
 | app/llms.txt/route.ts | 47 | "- The site does not claim real traffic, impressions, income guarantees, or automatic publishing.", |
-| docs/NEXT_ACTIONS.md | 24 | ## 4. 收款和流量收益 |
-| docs/NEXT_ACTIONS.md | 29 | - 稳定流量后再接联盟链接和广告。 |
-| docs/NEXT_ACTIONS.md | 46 | - 有 5 篇以上人工审核公开文章：注册 Google Search Console。 |
-| docs/NEXT_ACTIONS.md | 47 | - 有稳定访问：开启 Vercel Web Analytics 或 Google Analytics。 |
 | docs/ai-deployment-coverage.md | 11 | - Note: This coverage matrix is read-only. It organizes deployment, Agent, RAG, and model infrastructure drafts for manual review and does not claim measured traffic. |
 | docs/ai-deployment-review-pack.md | 17 | - Traffic note: Search queries are broad intent seeds, not measured traffic, rankings, clicks, impressions, or income. |
 | docs/ai-deployment-review-pack.md | 113 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
@@ -37,21 +33,21 @@ None.
 | docs/ai-deployment-review-pack.md | 562 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
 | docs/ai-deployment-review-pack.md | 618 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
 | docs/automation-digest.md | 14 | - Traffic data available: false |
-| docs/automation-digest.md | 430 | \| 404 \| 0 \| 30 \| 8 \| 4 \| 10 \| 4 \| nocode-ai-automation-deployment \| This lane connects search traffic to services people can buy: automation setup, deployment, acceptance, and maintenance. \| |
-| docs/automation-digest.md | 433 | \| 306 \| 4 \| 222 \| 8 \| 3 \| 10 \| 4 \| ai-service-pricing-delivery \| This lane turns search demand into services without pretending the site already has traffic or revenue proof. \| |
-| docs/automation-digest.md | 532 | \| 313 \| 0 \| 32 \| 6 \| 3 \| 5 \| RAG、知识库、向量数据库和引用溯源 \| RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。 \| |
-| docs/automation-digest.md | 534 | \| 307 \| 0 \| 36 \| 6 \| 3 \| 5 \| Dify、n8n、Coze、Flowise、MCP 自动化部署 \| 这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。 \| |
-| docs/automation-digest.md | 695 | - Traffic data available: false |
-| docs/automation-digest.md | 965 | ## Traffic Evidence |
-| docs/automation-digest.md | 967 | - Traffic data available: false |
-| docs/automation-digest.md | 968 | - Can claim traffic: false |
-| docs/automation-digest.md | 970 | - Measured traffic sources: none |
-| docs/automation-digest.md | 971 | - Search Console verification evidence: false |
-| docs/automation-digest.md | 974 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 975 | - Traffic claim files scanned: 155 |
-| docs/automation-digest.md | 976 | - Traffic claim watch mentions: 1878 |
-| docs/automation-digest.md | 989 | - Traffic data available: false |
-| docs/automation-digest.md | 1064 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
+| docs/automation-digest.md | 432 | \| 404 \| 0 \| 30 \| 8 \| 4 \| 10 \| 4 \| nocode-ai-automation-deployment \| This lane connects search traffic to services people can buy: automation setup, deployment, acceptance, and maintenance. \| |
+| docs/automation-digest.md | 435 | \| 306 \| 4 \| 222 \| 8 \| 3 \| 10 \| 4 \| ai-service-pricing-delivery \| This lane turns search demand into services without pretending the site already has traffic or revenue proof. \| |
+| docs/automation-digest.md | 534 | \| 313 \| 0 \| 32 \| 6 \| 3 \| 5 \| RAG、知识库、向量数据库和引用溯源 \| RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。 \| |
+| docs/automation-digest.md | 536 | \| 307 \| 0 \| 36 \| 6 \| 3 \| 5 \| Dify、n8n、Coze、Flowise、MCP 自动化部署 \| 这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。 \| |
+| docs/automation-digest.md | 697 | - Traffic data available: false |
+| docs/automation-digest.md | 967 | ## Traffic Evidence |
+| docs/automation-digest.md | 969 | - Traffic data available: false |
+| docs/automation-digest.md | 970 | - Can claim traffic: false |
+| docs/automation-digest.md | 972 | - Measured traffic sources: none |
+| docs/automation-digest.md | 973 | - Search Console verification evidence: false |
+| docs/automation-digest.md | 976 | - Unsupported traffic claims: 0 |
+| docs/automation-digest.md | 977 | - Traffic claim files scanned: 155 |
+| docs/automation-digest.md | 978 | - Traffic claim watch mentions: 1878 |
+| docs/automation-digest.md | 991 | - Traffic data available: false |
+| docs/automation-digest.md | 1066 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
 | docs/automation-gate.md | 31 | \| traffic evidence audit passed and is read-only \| PASS \| failedChecks=0, measuredTrafficSources=0 \| |
 | docs/automation-gate.md | 32 | \| traffic is not claimed without measured metrics \| PASS \| trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 \| |
 | docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=155, unsafeClaims=0, watchMentions=1878 \| |
@@ -63,12 +59,12 @@ None.
 | docs/autopilot-approval-remediation-pack.md | 12 | - Traffic claim: not-included |
 | docs/autopilot-approval-remediation-pack.md | 20 | - Traffic data available: false |
 | docs/autopilot-approval-remediation-pack.md | 21 | - Can claim traffic: false |
-| docs/autopilot-approval-remediation-pack.md | 126 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
-| docs/autopilot-approval-remediation-pack.md | 136 | - Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported. |
-| docs/autopilot-approval-remediation-pack.md | 199 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
-| docs/autopilot-approval-remediation-pack.md | 208 | - Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported. |
-| docs/autopilot-approval-remediation-pack.md | 277 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
-| docs/autopilot-approval-remediation-pack.md | 287 | - Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported. |
+| docs/autopilot-approval-remediation-pack.md | 143 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
+| docs/autopilot-approval-remediation-pack.md | 168 | - Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported. |
+| docs/autopilot-approval-remediation-pack.md | 246 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
+| docs/autopilot-approval-remediation-pack.md | 274 | - Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported. |
+| docs/autopilot-approval-remediation-pack.md | 354 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
+| docs/autopilot-approval-remediation-pack.md | 379 | - Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported. |
 | docs/autopilot-broad-ai-demand-brief.md | 13 | - Traffic claim: not-included |
 | docs/autopilot-broad-ai-demand-brief.md | 14 | - Note: Read-only broad AI demand brief. It prioritizes likely search-demand themes from local inventory plus external source signals, but does not claim measured traffic or keyword volume. |
 | docs/autopilot-broad-ai-demand-brief.md | 30 | - Do not create traffic claims from this report; connect Search Console or Analytics before reporting impressions or clicks. |
@@ -94,6 +90,10 @@ None.
 | docs/autopilot-broad-freshness-triage.md | 461 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
 | docs/autopilot-broad-freshness-triage.md | 531 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
 | docs/autopilot-broad-freshness-triage.md | 603 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
+| docs/autopilot-broad-freshness-triage.md | 661 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
+| docs/autopilot-broad-freshness-triage.md | 717 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
+| docs/autopilot-broad-freshness-triage.md | 767 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
+| docs/autopilot-broad-freshness-triage.md | 815 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
 ## Next Actions
 - Keep saying that live/search surfaces are healthy, not that traffic exists.
 - Only report traffic after an audited source provides clicks, impressions, visits, or pageviews.

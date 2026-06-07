@@ -792,15 +792,20 @@ async function main() {
       remediationReasons?: unknown[];
       searchFixes?: unknown[];
       sourceChecks?: unknown[];
+      sourceUrlFixes?: unknown[];
       unsafeReasons?: unknown[];
     }>;
     sourceEvidence: {
+      approvalItemsWithSourceUrlRemediation: number;
       approvalPacketUnsafeItems: number;
       humanReviewPlaybookUnsafeItems: number;
       internalLinkUnsafeItems: number;
       optimizationUnsafeCommands: number;
       searchIntentUnsafeItems: number;
       sourceVerificationUnsafeItems: number;
+      sourceTargetRemediationItems: number;
+      sourceTargetRemediationManualFixReadyItems: number;
+      sourceTargetRemediationUnsafeItems: number;
     };
     summary: {
       approvalItems: number;
@@ -810,7 +815,9 @@ async function main() {
       itemsWithRemediationReasons: number;
       itemsWithSearchFixes: number;
       itemsWithSourceChecks: number;
+      itemsWithSourceUrlFixes: number;
       manualFixReadyItems: number;
+      sourceUrlFixActions: number;
       unsafeItems: number;
     };
   }>("content/automation/autopilot-approval-remediation-pack.json");
@@ -1826,6 +1833,10 @@ async function main() {
         autopilotApprovalRemediation.sourceEvidence.searchIntentUnsafeItems === 0 &&
         autopilotApprovalRemediation.sourceEvidence.internalLinkUnsafeItems === 0 &&
         autopilotApprovalRemediation.sourceEvidence.sourceVerificationUnsafeItems === 0 &&
+        autopilotApprovalRemediation.sourceEvidence.sourceTargetRemediationItems === sourceTargetRemediationPack.summary.items &&
+        autopilotApprovalRemediation.sourceEvidence.sourceTargetRemediationUnsafeItems === 0 &&
+        autopilotApprovalRemediation.sourceEvidence.sourceTargetRemediationManualFixReadyItems === sourceTargetRemediationPack.summary.manualFixReadyItems &&
+        autopilotApprovalRemediation.sourceEvidence.approvalItemsWithSourceUrlRemediation === autopilotApprovalRemediation.summary.itemsWithSourceUrlFixes &&
         autopilotApprovalRemediation.sourceEvidence.humanReviewPlaybookUnsafeItems === 0 &&
         autopilotApprovalRemediation.sourceEvidence.optimizationUnsafeCommands === 0 &&
         autopilotApprovalRemediation.summary.unsafeItems === 0,
@@ -1839,6 +1850,8 @@ async function main() {
         autopilotApprovalRemediation.summary.itemsWithInternalLinkFixes === autopilotApprovalRemediation.summary.items &&
         autopilotApprovalRemediation.summary.itemsWithSearchFixes === autopilotApprovalRemediation.summary.items &&
         autopilotApprovalRemediation.summary.itemsWithSourceChecks === autopilotApprovalRemediation.summary.items &&
+        (sourceTargetRemediationPack.summary.items === 0 || autopilotApprovalRemediation.summary.itemsWithSourceUrlFixes > 0) &&
+        (sourceTargetRemediationPack.summary.items === 0 || autopilotApprovalRemediation.summary.sourceUrlFixActions > 0) &&
         autopilotApprovalRemediation.summary.itemsWithRemediationReasons === autopilotApprovalRemediation.summary.items &&
         Boolean(
           autopilotApprovalRemediation.items?.every(
@@ -1849,13 +1862,14 @@ async function main() {
               (item.internalLinkFixes?.length || 0) > 0 &&
               (item.searchFixes?.length || 0) > 0 &&
               (item.sourceChecks?.length || 0) > 0 &&
+              ((item.sourceUrlFixes?.length || 0) === 0 || item.humanChecklist?.some((check) => String(check).includes("source URL remediation"))) &&
               item.commandBoundary?.markReviewAfterHumanApproval?.includes("--confirm-human") &&
               !item.commandBoundary?.publishDryRunAfterReview?.includes("--confirm") &&
               item.commandBoundary?.publishConfirm === "not-included" &&
               item.commandBoundary?.stopBefore?.includes("explicit"),
           ),
         ),
-      detail: `commands=${autopilotApprovalRemediation.summary.itemsWithCommandBoundary}, links=${autopilotApprovalRemediation.summary.itemsWithInternalLinkFixes}, search=${autopilotApprovalRemediation.summary.itemsWithSearchFixes}, source=${autopilotApprovalRemediation.summary.itemsWithSourceChecks}`,
+      detail: `commands=${autopilotApprovalRemediation.summary.itemsWithCommandBoundary}, links=${autopilotApprovalRemediation.summary.itemsWithInternalLinkFixes}, search=${autopilotApprovalRemediation.summary.itemsWithSearchFixes}, source=${autopilotApprovalRemediation.summary.itemsWithSourceChecks}, sourceUrlFixes=${autopilotApprovalRemediation.summary.itemsWithSourceUrlFixes}/${autopilotApprovalRemediation.summary.sourceUrlFixActions}`,
     },
     {
       name: "autopilot review sprint board covers next assignments",

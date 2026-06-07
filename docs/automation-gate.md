@@ -1,6 +1,6 @@
 # Automation Gate
 
-Generated at: 2026-06-07T15:13:27.706Z
+Generated at: 2026-06-07T15:39:05.963Z
 
 Overall: PASS
 
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=155, unsafeClaims=0, watchMentions=1878 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=155, unsafeClaims=0, watchMentions=1879 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, broadFirst=8, candidates=22 |
@@ -56,7 +56,7 @@ Overall: PASS
 | autopilot human review playbook covers approval packet | PASS | items=3, ready=3, unsafe=0 |
 | autopilot human review playbook keeps actions human-gated | PASS | commands=3, search=3, source=3, links=3 |
 | autopilot approval remediation pack covers approval packet | PASS | items=3, ready=3, unsafe=0 |
-| autopilot approval remediation pack has actionable human fixes | PASS | commands=3, links=3, search=3, source=3 |
+| autopilot approval remediation pack has actionable human fixes | PASS | commands=3, links=3, search=3, source=3, sourceUrlFixes=3/34 |
 | autopilot review sprint board covers next assignments | PASS | items=10, readyWithPlaybook=3, queued=7, needsQuery=0, unsafe=0 |
 | autopilot review sprint board keeps sprint actions human-gated | PASS | ready=10, commands=10, queries=10, sources=10 |
 | autopilot search query gap brief covers sprint query gaps | PASS | items=0, sprintNeedsQuery=0, unsafe=0 |

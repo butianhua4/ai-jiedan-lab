@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T15:13:27.129Z",
+  "generatedAt": "2026-06-07T15:36:29.445Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,7 +10,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "launchPackGeneratedAt": "2026-06-07T15:13:26.719Z",
+    "launchPackGeneratedAt": "2026-06-07T15:36:28.964Z",
     "launchPackGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,

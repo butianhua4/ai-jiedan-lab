@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T15:13:02.747Z",
+  "generatedAt": "2026-06-07T15:36:14.855Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "sourceHealthGeneratedAt": "2026-06-07T15:13:02.252Z",
+    "sourceHealthGeneratedAt": "2026-06-07T15:36:12.127Z",
     "sourceHealthGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -1960,11 +1960,13 @@
         "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
         "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型"
       ],
+      "error": "AbortError",
       "finalUrl": "https://platform.claude.com/docs/en/home",
       "humanChecklist": [
         "Review URL: https://docs.anthropic.com.",
         "Review final URL: https://platform.claude.com/docs/en/home.",
         "HTTP status observed by automation: 200.",
+        "Automation error observed: AbortError.",
         "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
         "If the final URL is the canonical destination, update the source target during human review.",
         "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",

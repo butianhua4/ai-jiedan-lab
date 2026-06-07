@@ -1,6 +1,6 @@
 # Autopilot Approval Remediation Pack
 
-Generated at: 2026-06-07T15:07:09.457Z
+Generated at: 2026-06-07T15:38:27.009Z
 
 This report is read-only. It consolidates approval-packet search, internal-link, source, and copydesk fixes before human review.
 
@@ -29,7 +29,9 @@ This report is read-only. It consolidates approval-packet search, internal-link,
 - itemsWithRemediationReasons: 3
 - itemsWithSearchFixes: 3
 - itemsWithSourceChecks: 3
+- itemsWithSourceUrlFixes: 3
 - manualFixReadyItems: 3
+- sourceUrlFixActions: 34
 - unsafeItems: 0
 
 ## Source Evidence
@@ -42,6 +44,10 @@ This report is read-only. It consolidates approval-packet search, internal-link,
 - searchIntentUnsafeItems: 0
 - searchWeakItems: 2
 - sourceVerificationUnsafeItems: 0
+- sourceTargetRemediationItems: 19
+- sourceTargetRemediationUnsafeItems: 0
+- sourceTargetRemediationManualFixReadyItems: 19
+- approvalItemsWithSourceUrlRemediation: 3
 - humanReviewPlaybookUnsafeItems: 0
 
 ## Unsafe Items
@@ -52,9 +58,9 @@ This report is read-only. It consolidates approval-packet search, internal-link,
 
 | Ready | Reasons | Search fixes | Link fixes | Source checks | Publish confirm | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | 3 | 15 | 9 | 21 | not-included | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | 2 | 10 | 9 | 21 | not-included | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | 3 | 15 | 9 | 21 | not-included | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 4 | 15 | 9 | 31 | not-included | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | 3 | 10 | 9 | 35 | not-included | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | 4 | 15 | 9 | 31 | not-included | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
 ## Per-Item Checklist
 
@@ -69,6 +75,7 @@ Reasons:
 
 - approval candidate has no current link to a published article
 - 3 search-intent weakness(es) need human copy review
+- 10 source URL remediation action(s) need human confirmation
 - copydesk warning remediation exists
 
 Internal-link fixes:
@@ -103,6 +110,16 @@ Search fixes:
 
 Source checks:
 
+- Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.
+- Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.
+- Source URL action: If the final URL is the canonical destination, update the source target during human review.
+- Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.
+- Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.
+- Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.
+- Confirm source redirect before approval: https://python.langchain.com/docs -> https://docs.langchain.com/oss/python/langchain/overview.
 - Open source URL: https://ai-sdk.dev/docs.
 - Open source URL: https://platform.openai.com/docs/guides/agents.
 - Open source URL: https://python.langchain.com/docs.
@@ -125,13 +142,28 @@ Source checks:
 - Complete freshness checklist for fast-changing AI/tool guidance.
 - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.
 
+Source URL fixes:
+
+- Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.
+- Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.
+- Source URL action: If the final URL is the canonical destination, update the source target during human review.
+- Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.
+- Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.
+- Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.
+- Confirm source redirect before approval: https://python.langchain.com/docs -> https://docs.langchain.com/oss/python/langchain/overview.
+
 Human checklist:
 
 - Review reason: approval candidate has no current link to a published article.
 - Review reason: 3 search-intent weakness(es) need human copy review.
+- Review reason: 10 source URL remediation action(s) need human confirmation.
 - Review reason: copydesk warning remediation exists.
 - Apply or explicitly reject the internal-link suggestion before mark:review.
 - Resolve or explicitly accept search-intent weaknesses before mark:review.
+- Resolve or explicitly accept source URL remediation actions before mark:review.
 - Verify source URLs and fact-check queries before mark:review.
 - Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.
 - Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human
@@ -147,6 +179,7 @@ Human checklist:
 Reasons:
 
 - approval candidate has no current link to a published article
+- 14 source URL remediation action(s) need human confirmation
 - copydesk warning remediation exists
 
 Internal-link fixes:
@@ -176,6 +209,20 @@ Search fixes:
 
 Source checks:
 
+- Resolve failed source URL before approval: https://ai-prompts-pro.com/blog/ai-prompt-templates-business.
+- Source URL action: Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.
+- Source URL action: If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.
+- Source replacement plan: Prefer another reachable official source already present for the same affected file when it covers the same claim.
+- Source replacement plan: If no existing source covers the claim, manually find a current official source before approval.
+- Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.
+- Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.
+- Source URL action: If the final URL is the canonical destination, update the source target during human review.
+- Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.
+- Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.
+- Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.
+- Confirm source redirect before approval: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview.
 - Open source URL: https://platform.openai.com/docs.
 - Open source URL: https://platform.openai.com/docs/guides/prompt-engineering.
 - Open source URL: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview.
@@ -198,12 +245,31 @@ Source checks:
 - Complete freshness checklist for fast-changing AI/tool guidance.
 - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.
 
+Source URL fixes:
+
+- Resolve failed source URL before approval: https://ai-prompts-pro.com/blog/ai-prompt-templates-business.
+- Source URL action: Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.
+- Source URL action: If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.
+- Source replacement plan: Prefer another reachable official source already present for the same affected file when it covers the same claim.
+- Source replacement plan: If no existing source covers the claim, manually find a current official source before approval.
+- Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.
+- Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.
+- Source URL action: If the final URL is the canonical destination, update the source target during human review.
+- Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.
+- Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.
+- Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.
+- Confirm source redirect before approval: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview.
+
 Human checklist:
 
 - Review reason: approval candidate has no current link to a published article.
+- Review reason: 14 source URL remediation action(s) need human confirmation.
 - Review reason: copydesk warning remediation exists.
 - Apply or explicitly reject the internal-link suggestion before mark:review.
 - Resolve or explicitly accept search-intent weaknesses before mark:review.
+- Resolve or explicitly accept source URL remediation actions before mark:review.
 - Verify source URLs and fact-check queries before mark:review.
 - Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.
 - Only after explicit human approval, run: npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human
@@ -220,6 +286,7 @@ Reasons:
 
 - approval candidate has no current link to a published article
 - 4 search-intent weakness(es) need human copy review
+- 10 source URL remediation action(s) need human confirmation
 - copydesk warning remediation exists
 
 Internal-link fixes:
@@ -254,6 +321,16 @@ Search fixes:
 
 Source checks:
 
+- Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.
+- Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.
+- Source URL action: If the final URL is the canonical destination, update the source target during human review.
+- Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.
+- Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.
+- Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.
+- Confirm source redirect before approval: https://python.langchain.com/docs -> https://docs.langchain.com/oss/python/langchain/overview.
+- Confirm source redirect before approval: https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/.
 - Open source URL: https://platform.openai.com/docs/guides/retrieval.
 - Open source URL: https://platform.openai.com/docs/guides/prompt-engineering.
 - Open source URL: https://python.langchain.com/docs.
@@ -276,13 +353,28 @@ Source checks:
 - Complete freshness checklist for fast-changing AI/tool guidance.
 - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.
 
+Source URL fixes:
+
+- Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.
+- Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.
+- Source URL action: If the final URL is the canonical destination, update the source target during human review.
+- Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.
+- Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.
+- Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.
+- Confirm source redirect before approval: https://python.langchain.com/docs -> https://docs.langchain.com/oss/python/langchain/overview.
+- Confirm source redirect before approval: https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/.
+
 Human checklist:
 
 - Review reason: approval candidate has no current link to a published article.
 - Review reason: 4 search-intent weakness(es) need human copy review.
+- Review reason: 10 source URL remediation action(s) need human confirmation.
 - Review reason: copydesk warning remediation exists.
 - Apply or explicitly reject the internal-link suggestion before mark:review.
 - Resolve or explicitly accept search-intent weaknesses before mark:review.
+- Resolve or explicitly accept source URL remediation actions before mark:review.
 - Verify source URLs and fact-check queries before mark:review.
 - Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.
 - Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human

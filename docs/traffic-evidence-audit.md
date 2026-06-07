@@ -1,6 +1,6 @@
 # Traffic Evidence Audit
 
-Generated at: 2026-06-07T15:13:25.152Z
+Generated at: 2026-06-07T15:38:28.701Z
 
 This report separates live-site health from measured traffic. It does not claim visits, clicks, impressions, rankings, or revenue.
 
@@ -38,6 +38,7 @@ Code:
 
 Live HTML:
 
+- attempts: 1
 - fetched: true
 - googleAnalyticsSnippet: false
 - googleSiteVerificationMeta: false
@@ -48,7 +49,7 @@ Live HTML:
 
 | Check | Status | Detail |
 | --- | --- | --- |
-| live homepage fetched | PASS | 200 |
+| live homepage fetched | PASS | 200 after 1 attempt(s) |
 | traffic data is not claimed without measured source | PASS | measuredTrafficSources=0, claimableMetrics=0 |
 | search console status is evidence-based | PASS | no verification evidence detected in env or live HTML |
 | privacy page mentions analytics possibility | PASS | privacy notice should be reviewed before adding tracking scripts |

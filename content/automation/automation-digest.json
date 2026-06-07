@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T15:13:28.150Z",
+  "generatedAt": "2026-06-07T15:39:05.883Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -326,6 +326,7 @@
         "url": "https://ai.google.dev/docs"
       },
       {
+        "error": "AbortError",
         "finalUrl": "https://platform.claude.com/docs/en/home",
         "ok": true,
         "references": [
@@ -5098,9 +5099,11 @@
         "humanChecklist": [
           "Review reason: approval candidate has no current link to a published article.",
           "Review reason: 3 search-intent weakness(es) need human copy review.",
+          "Review reason: 10 source URL remediation action(s) need human confirmation.",
           "Review reason: copydesk warning remediation exists.",
           "Apply or explicitly reject the internal-link suggestion before mark:review.",
           "Resolve or explicitly accept search-intent weaknesses before mark:review.",
+          "Resolve or explicitly accept source URL remediation actions before mark:review.",
           "Verify source URLs and fact-check queries before mark:review.",
           "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
           "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
@@ -5121,6 +5124,7 @@
         "remediationReasons": [
           "approval candidate has no current link to a published article",
           "3 search-intent weakness(es) need human copy review",
+          "10 source URL remediation action(s) need human confirmation",
           "copydesk warning remediation exists"
         ],
         "searchFixes": [
@@ -5141,6 +5145,16 @@
           "Resolve search-intent weakness: no exact search query appears in title."
         ],
         "sourceChecks": [
+          "Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.",
+          "Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
+          "Source URL action: If the final URL is the canonical destination, update the source target during human review.",
+          "Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.",
+          "Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
+          "Confirm source redirect before approval: https://python.langchain.com/docs -> https://docs.langchain.com/oss/python/langchain/overview.",
           "Open source URL: https://ai-sdk.dev/docs.",
           "Open source URL: https://platform.openai.com/docs/guides/agents.",
           "Open source URL: https://python.langchain.com/docs.",
@@ -5163,6 +5177,18 @@
           "Complete freshness checklist for fast-changing AI/tool guidance.",
           "Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
         ],
+        "sourceUrlFixes": [
+          "Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.",
+          "Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
+          "Source URL action: If the final URL is the canonical destination, update the source target during human review.",
+          "Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.",
+          "Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
+          "Confirm source redirect before approval: https://python.langchain.com/docs -> https://docs.langchain.com/oss/python/langchain/overview."
+        ],
         "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
         "unsafeReasons": []
       },
@@ -5176,9 +5202,11 @@
         "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
         "humanChecklist": [
           "Review reason: approval candidate has no current link to a published article.",
+          "Review reason: 14 source URL remediation action(s) need human confirmation.",
           "Review reason: copydesk warning remediation exists.",
           "Apply or explicitly reject the internal-link suggestion before mark:review.",
           "Resolve or explicitly accept search-intent weaknesses before mark:review.",
+          "Resolve or explicitly accept source URL remediation actions before mark:review.",
           "Verify source URLs and fact-check queries before mark:review.",
           "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
           "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
@@ -5198,6 +5226,7 @@
         "manualFixReady": true,
         "remediationReasons": [
           "approval candidate has no current link to a published article",
+          "14 source URL remediation action(s) need human confirmation",
           "copydesk warning remediation exists"
         ],
         "searchFixes": [
@@ -5213,6 +5242,20 @@
           "Review proposed meta description option: 整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。."
         ],
         "sourceChecks": [
+          "Resolve failed source URL before approval: https://ai-prompts-pro.com/blog/ai-prompt-templates-business.",
+          "Source URL action: Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.",
+          "Source URL action: If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.",
+          "Source replacement plan: Prefer another reachable official source already present for the same affected file when it covers the same claim.",
+          "Source replacement plan: If no existing source covers the claim, manually find a current official source before approval.",
+          "Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.",
+          "Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
+          "Source URL action: If the final URL is the canonical destination, update the source target during human review.",
+          "Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.",
+          "Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
+          "Confirm source redirect before approval: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview.",
           "Open source URL: https://platform.openai.com/docs.",
           "Open source URL: https://platform.openai.com/docs/guides/prompt-engineering.",
           "Open source URL: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview.",
@@ -5235,6 +5278,22 @@
           "Complete freshness checklist for fast-changing AI/tool guidance.",
           "Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
         ],
+        "sourceUrlFixes": [
+          "Resolve failed source URL before approval: https://ai-prompts-pro.com/blog/ai-prompt-templates-business.",
+          "Source URL action: Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.",
+          "Source URL action: If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.",
+          "Source replacement plan: Prefer another reachable official source already present for the same affected file when it covers the same claim.",
+          "Source replacement plan: If no existing source covers the claim, manually find a current official source before approval.",
+          "Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.",
+          "Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
+          "Source URL action: If the final URL is the canonical destination, update the source target during human review.",
+          "Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.",
+          "Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
+          "Confirm source redirect before approval: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview."
+        ],
         "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
         "unsafeReasons": []
       },
@@ -5249,9 +5308,11 @@
         "humanChecklist": [
           "Review reason: approval candidate has no current link to a published article.",
           "Review reason: 4 search-intent weakness(es) need human copy review.",
+          "Review reason: 10 source URL remediation action(s) need human confirmation.",
           "Review reason: copydesk warning remediation exists.",
           "Apply or explicitly reject the internal-link suggestion before mark:review.",
           "Resolve or explicitly accept search-intent weaknesses before mark:review.",
+          "Resolve or explicitly accept source URL remediation actions before mark:review.",
           "Verify source URLs and fact-check queries before mark:review.",
           "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
           "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
@@ -5272,6 +5333,7 @@
         "remediationReasons": [
           "approval candidate has no current link to a published article",
           "4 search-intent weakness(es) need human copy review",
+          "10 source URL remediation action(s) need human confirmation",
           "copydesk warning remediation exists"
         ],
         "searchFixes": [
@@ -5292,6 +5354,16 @@
           "Confirm the opening directly answers primary query: RAG 知识库搭建教程."
         ],
         "sourceChecks": [
+          "Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.",
+          "Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
+          "Source URL action: If the final URL is the canonical destination, update the source target during human review.",
+          "Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.",
+          "Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
+          "Confirm source redirect before approval: https://python.langchain.com/docs -> https://docs.langchain.com/oss/python/langchain/overview.",
+          "Confirm source redirect before approval: https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/.",
           "Open source URL: https://platform.openai.com/docs/guides/retrieval.",
           "Open source URL: https://platform.openai.com/docs/guides/prompt-engineering.",
           "Open source URL: https://python.langchain.com/docs.",
@@ -5314,6 +5386,18 @@
           "Complete freshness checklist for fast-changing AI/tool guidance.",
           "Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
         ],
+        "sourceUrlFixes": [
+          "Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.",
+          "Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
+          "Source URL action: If the final URL is the canonical destination, update the source target during human review.",
+          "Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.",
+          "Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.",
+          "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
+          "Confirm source redirect before approval: https://python.langchain.com/docs -> https://docs.langchain.com/oss/python/langchain/overview.",
+          "Confirm source redirect before approval: https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/."
+        ],
         "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
         "unsafeReasons": []
       }
@@ -5323,7 +5407,9 @@
     "itemsWithRemediationReasons": 3,
     "itemsWithSearchFixes": 3,
     "itemsWithSourceChecks": 3,
+    "itemsWithSourceUrlFixes": 3,
     "manualFixReadyItems": 3,
+    "sourceUrlFixActions": 34,
     "unsafeItems": 0,
     "unsafeItemList": []
   },
@@ -17302,18 +17388,18 @@
         ],
         "internalLinkFixes": [
           "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-          "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-          "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-          "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).",
+          "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+          "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+          "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).",
           "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
           "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
         ],
         "manualFixReady": true,
         "publicLinkPlan": [
           "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-          "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-          "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-          "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide)."
+          "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+          "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+          "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide)."
         ],
         "remediationReasons": [
           "broad AI wave item needs human remediation before approval",
@@ -17459,18 +17545,18 @@
         ],
         "internalLinkFixes": [
           "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-          "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-          "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-          "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).",
+          "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+          "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+          "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).",
           "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
           "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
         ],
         "manualFixReady": true,
         "publicLinkPlan": [
           "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-          "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-          "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-          "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide)."
+          "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+          "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+          "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide)."
         ],
         "remediationReasons": [
           "broad AI wave item needs human remediation before approval",
@@ -19784,100 +19870,6 @@
       {
         "candidates": [
           {
-            "category": "AI Agent",
-            "currentPack": true,
-            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-            "plannedBatch": true,
-            "primaryKeyword": "AI Agent 部署",
-            "publishBatch": 40,
-            "qualityScore": 100,
-            "safeDraft": true,
-            "searchIntent": "informational",
-            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
-          },
-          {
-            "category": "AI 记忆",
-            "currentPack": false,
-            "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
-            "plannedBatch": true,
-            "primaryKeyword": "AI Agent 记忆",
-            "publishBatch": 40,
-            "qualityScore": 100,
-            "safeDraft": true,
-            "searchIntent": "informational",
-            "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
-          },
-          {
-            "category": "接单报价",
-            "currentPack": false,
-            "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-            "plannedBatch": true,
-            "primaryKeyword": "AI 自动化项目报价",
-            "publishBatch": 33,
-            "qualityScore": 100,
-            "safeDraft": true,
-            "searchIntent": "informational",
-            "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
-          },
-          {
-            "category": "AI 部署",
-            "currentPack": false,
-            "file": "content/blog/dify-workflow-error-handling-guide.mdx",
-            "plannedBatch": false,
-            "primaryKeyword": "Dify 工作流错误处理",
-            "publishBatch": 33,
-            "qualityScore": 100,
-            "safeDraft": true,
-            "searchIntent": "informational",
-            "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底"
-          },
-          {
-            "category": "AI 部署",
-            "currentPack": false,
-            "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
-            "plannedBatch": false,
-            "primaryKeyword": "Dify Workflow 和 Agent 区别",
-            "publishBatch": 33,
-            "qualityScore": 100,
-            "safeDraft": true,
-            "searchIntent": "informational",
-            "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核"
-          }
-        ],
-        "currentPackCandidates": 1,
-        "draftMatches": 5,
-        "lane": "content-backlog: Agent 部署、工具调用和记忆",
-        "missingPublicCoverage": false,
-        "plannedBatchCandidates": 3,
-        "priorityScore": 334,
-        "publicMatches": 0,
-        "rationale": "Agent、记忆和工作流是高频 AI 应用词，但需要清楚解释边界和落地步骤。",
-        "reviewFocus": [
-          "解释工具调用和多步执行边界",
-          "明确记忆、状态和人工确认的安全边界",
-          "避免承诺全自动完成业务结果"
-        ],
-        "searchQueries": [
-          "AI Agent 部署教程",
-          "Agent 记忆怎么做",
-          "AI Agent 工具调用教程",
-          "AI 工作流部署"
-        ],
-        "sourceTargets": [
-          "OpenAI API docs: https://platform.openai.com/docs",
-          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
-          "Vercel AI SDK docs: https://ai-sdk.dev/docs"
-        ],
-        "workflowAngles": [
-          "search intent",
-          "fact review",
-          "risk language",
-          "internal links"
-        ]
-      },
-      {
-        "candidates": [
-          {
             "category": "AI 提示词",
             "currentPack": true,
             "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
@@ -19957,6 +19949,100 @@
           "客服 AI 提示词",
           "运营 AI 提示词",
           "HR AI 提示词"
+        ],
+        "sourceTargets": [
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs"
+        ],
+        "workflowAngles": [
+          "search intent",
+          "fact review",
+          "risk language",
+          "internal links"
+        ]
+      },
+      {
+        "candidates": [
+          {
+            "category": "AI Agent",
+            "currentPack": true,
+            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+            "plannedBatch": true,
+            "primaryKeyword": "AI Agent 部署",
+            "publishBatch": 40,
+            "qualityScore": 100,
+            "safeDraft": true,
+            "searchIntent": "informational",
+            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+          },
+          {
+            "category": "AI 记忆",
+            "currentPack": false,
+            "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+            "plannedBatch": true,
+            "primaryKeyword": "AI Agent 记忆",
+            "publishBatch": 40,
+            "qualityScore": 100,
+            "safeDraft": true,
+            "searchIntent": "informational",
+            "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
+          },
+          {
+            "category": "接单报价",
+            "currentPack": false,
+            "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+            "plannedBatch": true,
+            "primaryKeyword": "AI 自动化项目报价",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "safeDraft": true,
+            "searchIntent": "informational",
+            "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
+          },
+          {
+            "category": "AI 部署",
+            "currentPack": false,
+            "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+            "plannedBatch": false,
+            "primaryKeyword": "Dify 工作流错误处理",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "safeDraft": true,
+            "searchIntent": "informational",
+            "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底"
+          },
+          {
+            "category": "AI 部署",
+            "currentPack": false,
+            "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+            "plannedBatch": false,
+            "primaryKeyword": "Dify Workflow 和 Agent 区别",
+            "publishBatch": 33,
+            "qualityScore": 100,
+            "safeDraft": true,
+            "searchIntent": "informational",
+            "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核"
+          }
+        ],
+        "currentPackCandidates": 1,
+        "draftMatches": 5,
+        "lane": "content-backlog: Agent 部署、工具调用和记忆",
+        "missingPublicCoverage": false,
+        "plannedBatchCandidates": 3,
+        "priorityScore": 334,
+        "publicMatches": 0,
+        "rationale": "Agent、记忆和工作流是高频 AI 应用词，但需要清楚解释边界和落地步骤。",
+        "reviewFocus": [
+          "解释工具调用和多步执行边界",
+          "明确记忆、状态和人工确认的安全边界",
+          "避免承诺全自动完成业务结果"
+        ],
+        "searchQueries": [
+          "AI Agent 部署教程",
+          "Agent 记忆怎么做",
+          "AI Agent 工具调用教程",
+          "AI 工作流部署"
         ],
         "sourceTargets": [
           "OpenAI API docs: https://platform.openai.com/docs",
@@ -21218,7 +21304,7 @@
     "filesScanned": 155,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 1878
+    "watchMentions": 1879
   },
   "publicSurfaceInventory": {
     "broadCoverage": [
@@ -21376,14 +21462,70 @@
     "publicArticles": 15,
     "publicCategories": 6,
     "publicCategoryCounts": {
-      "Codex 新手教程": 9,
-      "Upwork 新手": 2,
-      "报价指南": 1,
       "报错解决": 1,
+      "报价指南": 1,
+      "部署教程": 1,
       "收款工具": 1,
-      "部署教程": 1
+      "Codex 新手教程": 9,
+      "Upwork 新手": 2
     },
     "publicItems": [
+      {
+        "category": "报错解决",
+        "descriptionLength": 102,
+        "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
+        "slug": "codex-npm-install-error-beginner-fix",
+        "tags": [
+          "Codex",
+          "npm install",
+          "Node.js",
+          "报错解决"
+        ],
+        "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
+        "updatedAt": "2026-06-02"
+      },
+      {
+        "category": "报价指南",
+        "descriptionLength": 72,
+        "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+        "slug": "first-upwork-project-pricing-checklist",
+        "tags": [
+          "Upwork",
+          "报价",
+          "自由职业",
+          "新手接单"
+        ],
+        "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+        "updatedAt": "2026-06-02"
+      },
+      {
+        "category": "部署教程",
+        "descriptionLength": 87,
+        "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+        "slug": "vercel-env-variable-missing-beginner-guide",
+        "tags": [
+          "Vercel",
+          "环境变量",
+          "Next.js",
+          "部署失败"
+        ],
+        "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+        "updatedAt": "2026-06-02"
+      },
+      {
+        "category": "收款工具",
+        "descriptionLength": 82,
+        "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+        "slug": "payoneer-wise-paypal-beginner-comparison",
+        "tags": [
+          "Payoneer",
+          "Wise",
+          "PayPal",
+          "跨境收款"
+        ],
+        "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+        "updatedAt": "2026-06-02"
+      },
       {
         "category": "Codex 新手教程",
         "descriptionLength": 88,
@@ -21537,66 +21679,26 @@
         ],
         "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
         "updatedAt": "2026-06-02"
-      },
-      {
-        "category": "报价指南",
-        "descriptionLength": 72,
-        "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
-        "slug": "first-upwork-project-pricing-checklist",
-        "tags": [
-          "Upwork",
-          "报价",
-          "自由职业",
-          "新手接单"
-        ],
-        "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
-        "updatedAt": "2026-06-02"
-      },
-      {
-        "category": "报错解决",
-        "descriptionLength": 102,
-        "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
-        "slug": "codex-npm-install-error-beginner-fix",
-        "tags": [
-          "Codex",
-          "npm install",
-          "Node.js",
-          "报错解决"
-        ],
-        "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
-        "updatedAt": "2026-06-02"
-      },
-      {
-        "category": "收款工具",
-        "descriptionLength": 82,
-        "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
-        "slug": "payoneer-wise-paypal-beginner-comparison",
-        "tags": [
-          "Payoneer",
-          "Wise",
-          "PayPal",
-          "跨境收款"
-        ],
-        "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
-        "updatedAt": "2026-06-02"
-      },
-      {
-        "category": "部署教程",
-        "descriptionLength": 87,
-        "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
-        "slug": "vercel-env-variable-missing-beginner-guide",
-        "tags": [
-          "Vercel",
-          "环境变量",
-          "Next.js",
-          "部署失败"
-        ],
-        "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
-        "updatedAt": "2026-06-02"
       }
     ],
     "publicTags": 31,
     "publicTagCounts": {
+      "Codex": 1,
+      "npm install": 1,
+      "Node.js": 1,
+      "报错解决": 1,
+      "Upwork": 3,
+      "报价": 1,
+      "自由职业": 2,
+      "新手接单": 2,
+      "Vercel": 1,
+      "环境变量": 1,
+      "Next.js": 1,
+      "部署失败": 1,
+      "Payoneer": 1,
+      "Wise": 1,
+      "PayPal": 1,
+      "跨境收款": 1,
       "Codex 新手教程": 9,
       "Codex 怎么做第一个网页": 1,
       "AI 接单": 9,
@@ -21609,25 +21711,9 @@
       "Codex 部署 Vercel 前检查什么：上线前清单": 1,
       "Codex 和 Claude Code 怎么选：新手对比清单": 1,
       "Codex 是什么新手怎么开始": 1,
-      "Upwork": 3,
       "客户沟通": 1,
       "需求分析": 1,
-      "Proposal": 2,
-      "新手接单": 2,
-      "自由职业": 2,
-      "报价": 1,
-      "Codex": 1,
-      "npm install": 1,
-      "Node.js": 1,
-      "报错解决": 1,
-      "Payoneer": 1,
-      "Wise": 1,
-      "PayPal": 1,
-      "跨境收款": 1,
-      "Vercel": 1,
-      "环境变量": 1,
-      "Next.js": 1,
-      "部署失败": 1
+      "Proposal": 2
     },
     "trafficDataAvailable": false,
     "uncoveredBroadClusters": [

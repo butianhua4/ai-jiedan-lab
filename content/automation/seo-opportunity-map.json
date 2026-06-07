@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T15:12:47.018Z",
+  "generatedAt": "2026-06-07T15:35:39.678Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This report uses local content metadata only. It does not claim real traffic or Search Console impressions."
@@ -43,13 +43,13 @@
       "published": 0
     },
     {
-      "category": "AI 自由职业路线",
+      "category": "模板和清单",
       "reason": "has review-ready drafts but no public article yet",
       "reviewReadyDrafts": 44,
       "published": 0
     },
     {
-      "category": "模板和清单",
+      "category": "AI 自由职业路线",
       "reason": "has review-ready drafts but no public article yet",
       "reviewReadyDrafts": 44,
       "published": 0
@@ -376,14 +376,14 @@
       "total": 58
     },
     {
-      "category": "AI 自由职业路线",
+      "category": "模板和清单",
       "drafts": 44,
       "published": 0,
       "reviewReadyDrafts": 44,
       "total": 44
     },
     {
-      "category": "模板和清单",
+      "category": "AI 自由职业路线",
       "drafts": 44,
       "published": 0,
       "reviewReadyDrafts": 44,
@@ -411,14 +411,14 @@
       "total": 18
     },
     {
-      "category": "AI 部署",
+      "category": "新手教程",
       "drafts": 17,
       "published": 0,
       "reviewReadyDrafts": 17,
       "total": 17
     },
     {
-      "category": "新手教程",
+      "category": "AI 部署",
       "drafts": 17,
       "published": 0,
       "reviewReadyDrafts": 17,
@@ -437,6 +437,13 @@
       "published": 0,
       "reviewReadyDrafts": 8,
       "total": 8
+    },
+    {
+      "category": "工具对比",
+      "drafts": 4,
+      "published": 0,
+      "reviewReadyDrafts": 4,
+      "total": 4
     },
     {
       "category": "Claude Code 新手教程",
@@ -467,13 +474,6 @@
       "total": 4
     },
     {
-      "category": "工具对比",
-      "drafts": 4,
-      "published": 0,
-      "reviewReadyDrafts": 4,
-      "total": 4
-    },
-    {
       "category": "新手路线",
       "drafts": 3,
       "published": 0,
@@ -481,14 +481,7 @@
       "total": 3
     },
     {
-      "category": "Proposal",
-      "drafts": 2,
-      "published": 0,
-      "reviewReadyDrafts": 2,
-      "total": 2
-    },
-    {
-      "category": "作品集",
+      "category": "工具选择",
       "drafts": 2,
       "published": 0,
       "reviewReadyDrafts": 2,
@@ -502,14 +495,21 @@
       "total": 2
     },
     {
-      "category": "工具选择",
+      "category": "作品集",
       "drafts": 2,
       "published": 0,
       "reviewReadyDrafts": 2,
       "total": 2
     },
     {
-      "category": "AI Agent",
+      "category": "Proposal",
+      "drafts": 2,
+      "published": 0,
+      "reviewReadyDrafts": 2,
+      "total": 2
+    },
+    {
+      "category": "接单报价",
       "drafts": 1,
       "published": 0,
       "reviewReadyDrafts": 1,
@@ -523,7 +523,7 @@
       "total": 1
     },
     {
-      "category": "接单报价",
+      "category": "AI Agent",
       "drafts": 1,
       "published": 0,
       "reviewReadyDrafts": 1,

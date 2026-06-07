@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T15:13:15.616Z",
+  "generatedAt": "2026-06-07T15:36:28.473Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "broadWaveOptimizationGeneratedAt": "2026-06-07T15:13:15.146Z",
+    "broadWaveOptimizationGeneratedAt": "2026-06-07T15:36:27.985Z",
     "broadWaveOptimizationGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -124,18 +124,18 @@
       ],
       "internalLinkFixes": [
         "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).",
+        "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+        "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).",
         "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
         "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
       ],
       "manualFixReady": true,
       "publicLinkPlan": [
         "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide)."
+        "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+        "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide)."
       ],
       "remediationReasons": [
         "broad AI wave item needs human remediation before approval",
@@ -281,18 +281,18 @@
       ],
       "internalLinkFixes": [
         "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).",
+        "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+        "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).",
         "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
         "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
       ],
       "manualFixReady": true,
       "publicLinkPlan": [
         "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide)."
+        "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+        "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide)."
       ],
       "remediationReasons": [
         "broad AI wave item needs human remediation before approval",
@@ -986,18 +986,18 @@
       ],
       "internalLinkFixes": [
         "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).",
+        "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+        "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).",
         "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
         "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
       ],
       "manualFixReady": true,
       "publicLinkPlan": [
         "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide)."
+        "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+        "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide)."
       ],
       "remediationReasons": [
         "broad AI wave item needs human remediation before approval",
@@ -1143,18 +1143,18 @@
       ],
       "internalLinkFixes": [
         "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).",
+        "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+        "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).",
         "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
         "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
       ],
       "manualFixReady": true,
       "publicLinkPlan": [
         "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide)."
+        "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+        "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide)."
       ],
       "remediationReasons": [
         "broad AI wave item needs human remediation before approval",
@@ -1385,18 +1385,18 @@
       ],
       "internalLinkFixes": [
         "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).",
+        "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+        "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).",
         "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
         "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
       ],
       "manualFixReady": true,
       "publicLinkPlan": [
         "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide)."
+        "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+        "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide)."
       ],
       "remediationReasons": [
         "broad AI wave item needs human remediation before approval",
@@ -1461,18 +1461,18 @@
       ],
       "internalLinkFixes": [
         "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).",
+        "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+        "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).",
         "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
         "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
       ],
       "manualFixReady": true,
       "publicLinkPlan": [
         "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide)."
+        "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+        "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide)."
       ],
       "remediationReasons": [
         "broad AI wave item needs human remediation before approval",
@@ -1619,18 +1619,18 @@
       ],
       "internalLinkFixes": [
         "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).",
+        "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+        "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).",
         "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
         "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
       ],
       "manualFixReady": true,
       "publicLinkPlan": [
         "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide)."
+        "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+        "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide)."
       ],
       "remediationReasons": [
         "broad AI wave item needs human remediation before approval",
@@ -1938,18 +1938,18 @@
       ],
       "internalLinkFixes": [
         "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).",
+        "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+        "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).",
         "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
         "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
       ],
       "manualFixReady": true,
       "publicLinkPlan": [
         "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide)."
+        "Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).",
+        "Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide)."
       ],
       "remediationReasons": [
         "broad AI wave item needs human remediation before approval",

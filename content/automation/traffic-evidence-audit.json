@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T15:13:25.152Z",
+  "generatedAt": "2026-06-07T15:38:28.701Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This audit checks evidence for traffic measurement. It does not claim visits, clicks, impressions, rankings, or Search Console performance data."
@@ -27,6 +27,7 @@
     "vercelAnalyticsSnippet": false
   },
   "liveEvidence": {
+    "attempts": 1,
     "fetched": true,
     "googleAnalyticsSnippet": false,
     "googleSiteVerificationMeta": false,
@@ -37,7 +38,7 @@
     {
       "name": "live homepage fetched",
       "ok": true,
-      "detail": "200"
+      "detail": "200 after 1 attempt(s)"
     },
     {
       "name": "traffic data is not claimed without measured source",

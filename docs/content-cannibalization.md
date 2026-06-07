@@ -1,6 +1,6 @@
 # Content Cannibalization Check
 
-Generated at: 2026-06-07T15:13:05.342Z
+Generated at: 2026-06-07T15:36:17.621Z
 
 This warning report helps manual reviewers avoid publishing multiple articles that compete for the same search intent.
 
@@ -29,9 +29,9 @@ This warning report helps manual reviewers avoid publishing multiple articles th
 | --- | --- | --- | --- | --- |
 | same primary keyword | codex npm install 报错怎么办 | 1 | {"archived":1,"draft":1,"published":1} | content/blog/codex-codex-npm-install-1-3.mdx<br>content/blog/codex-codex-npm-install-4-33.mdx<br>content/blog/codex-npm-install-error-beginner-fix.mdx |
 | same primary keyword | codex 安装失败怎么办 | 1 | {"draft":1,"published":1} | content/blog/codex-codex-4-32.mdx<br>content/blog/codex-install-failed-beginner-fix.mdx |
-| same primary keyword | codex 怎么做第一个网页 | 1 | {"published":1,"draft":1} | content/blog/build-first-webpage-with-codex.mdx<br>content/blog/codex-codex-4-34.mdx |
-| same primary keyword | codex 是什么新手怎么开始 | 1 | {"draft":1,"published":1} | content/blog/codex-codex-4-31.mdx<br>content/blog/what-is-codex-beginner-start.mdx |
 | same primary keyword | codex 生成代码后怎么审核 | 1 | {"draft":1,"published":1} | content/blog/codex-codex-4-38.mdx<br>content/blog/codex-generated-code-review-guide.mdx |
+| same primary keyword | codex 是什么新手怎么开始 | 1 | {"draft":1,"published":1} | content/blog/codex-codex-4-31.mdx<br>content/blog/what-is-codex-beginner-start.mdx |
+| same primary keyword | codex 怎么做第一个网页 | 1 | {"published":1,"draft":1} | content/blog/build-first-webpage-with-codex.mdx<br>content/blog/codex-codex-4-34.mdx |
 | similar slug stem | codex-claude-code-beginner | 1 | {"published":1,"draft":1} | content/blog/codex-vs-claude-code-beginner-checklist.mdx<br>content/blog/codex-vs-claude-code-beginner.mdx |
 | similar slug stem | codex-codex | 0 | {"archived":7,"draft":4} | content/blog/codex-codex-2-11.mdx<br>content/blog/codex-codex-2-12.mdx<br>content/blog/codex-codex-2-14.mdx<br>content/blog/codex-codex-2-18.mdx<br>content/blog/codex-codex-3-21.mdx<br>content/blog/codex-codex-3-22.mdx<br>content/blog/codex-codex-3-24.mdx<br>content/blog/codex-codex-4-31.mdx<br>content/blog/codex-codex-4-32.mdx<br>content/blog/codex-codex-4-34.mdx<br>content/blog/codex-codex-4-38.mdx |
 | similar slug stem | claude-code-automation-human-review | 0 | {"draft":4} | content/blog/claude-code-automation-human-review-checklist.mdx<br>content/blog/claude-code-automation-human-review-freelance-scope.mdx<br>content/blog/claude-code-automation-human-review-mistakes.mdx<br>content/blog/claude-code-automation-human-review.mdx |

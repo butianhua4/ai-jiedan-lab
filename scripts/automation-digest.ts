@@ -702,6 +702,7 @@ type AutopilotApprovalRemediationPack = {
     remediationReasons: unknown[];
     searchFixes: unknown[];
     sourceChecks: unknown[];
+    sourceUrlFixes: unknown[];
     title: string;
   }>;
   summary: {
@@ -712,7 +713,9 @@ type AutopilotApprovalRemediationPack = {
     itemsWithRemediationReasons: number;
     itemsWithSearchFixes: number;
     itemsWithSourceChecks: number;
+    itemsWithSourceUrlFixes: number;
     manualFixReadyItems: number;
+    sourceUrlFixActions: number;
     unsafeItems: number;
   };
   unsafeItems: unknown[];
@@ -1706,7 +1709,9 @@ const payload = {
     itemsWithRemediationReasons: reports.autopilotApprovalRemediation.data?.summary.itemsWithRemediationReasons ?? null,
     itemsWithSearchFixes: reports.autopilotApprovalRemediation.data?.summary.itemsWithSearchFixes ?? null,
     itemsWithSourceChecks: reports.autopilotApprovalRemediation.data?.summary.itemsWithSourceChecks ?? null,
+    itemsWithSourceUrlFixes: reports.autopilotApprovalRemediation.data?.summary.itemsWithSourceUrlFixes ?? null,
     manualFixReadyItems: reports.autopilotApprovalRemediation.data?.summary.manualFixReadyItems ?? null,
+    sourceUrlFixActions: reports.autopilotApprovalRemediation.data?.summary.sourceUrlFixActions ?? null,
     unsafeItems: reports.autopilotApprovalRemediation.data?.summary.unsafeItems ?? null,
     unsafeItemList: reports.autopilotApprovalRemediation.data?.unsafeItems.slice(0, 8) ?? [],
   },
@@ -2768,17 +2773,19 @@ function toMarkdown(data: typeof payload) {
     `- Items with internal-link fixes: ${data.autopilotApprovalRemediation.itemsWithInternalLinkFixes}`,
     `- Items with search fixes: ${data.autopilotApprovalRemediation.itemsWithSearchFixes}`,
     `- Items with source checks: ${data.autopilotApprovalRemediation.itemsWithSourceChecks}`,
+    `- Items with source URL fixes: ${data.autopilotApprovalRemediation.itemsWithSourceUrlFixes}`,
+    `- Source URL fix actions: ${data.autopilotApprovalRemediation.sourceUrlFixActions}`,
     `- Unsafe items: ${data.autopilotApprovalRemediation.unsafeItems}`,
     "",
     "Unsafe approval remediation items:",
     "",
     ...(data.autopilotApprovalRemediation.unsafeItemList.length ? data.autopilotApprovalRemediation.unsafeItemList.map((item) => `- ${JSON.stringify(item)}`) : ["- none"]),
     "",
-    "| Ready | Reasons | Search fixes | Link fixes | Source checks | Mark-review gated | Publish confirm | Title | File |",
-    "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    "| Ready | Reasons | Search fixes | Link fixes | Source checks | URL fixes | Mark-review gated | Publish confirm | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
     ...data.autopilotApprovalRemediation.itemsList.map(
       (item) =>
-        `| ${item.manualFixReady} | ${item.remediationReasons.length} | ${item.searchFixes.length} | ${item.internalLinkFixes.length} | ${item.sourceChecks.length} | ${item.commandBoundary.markReviewAfterHumanApproval.includes("--confirm-human")} | ${item.commandBoundary.publishConfirm} | ${item.title} | ${item.file} |`,
+        `| ${item.manualFixReady} | ${item.remediationReasons.length} | ${item.searchFixes.length} | ${item.internalLinkFixes.length} | ${item.sourceChecks.length} | ${item.sourceUrlFixes.length} | ${item.commandBoundary.markReviewAfterHumanApproval.includes("--confirm-human")} | ${item.commandBoundary.publishConfirm} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Autopilot Review Sprint Board",

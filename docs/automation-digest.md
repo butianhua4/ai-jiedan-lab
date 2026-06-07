@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T15:13:28.150Z
+Generated at: 2026-06-07T15:39:05.883Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -285,17 +285,19 @@ Unsafe human-review playbook items:
 - Items with internal-link fixes: 3
 - Items with search fixes: 3
 - Items with source checks: 3
+- Items with source URL fixes: 3
+- Source URL fix actions: 34
 - Unsafe items: 0
 
 Unsafe approval remediation items:
 
 - none
 
-| Ready | Reasons | Search fixes | Link fixes | Source checks | Mark-review gated | Publish confirm | Title | File |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | 3 | 15 | 9 | 21 | true | not-included | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | 2 | 10 | 9 | 21 | true | not-included | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | 3 | 15 | 9 | 21 | true | not-included | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| Ready | Reasons | Search fixes | Link fixes | Source checks | URL fixes | Mark-review gated | Publish confirm | Title | File |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| true | 4 | 15 | 9 | 31 | 10 | true | not-included | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | 3 | 10 | 9 | 35 | 14 | true | not-included | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | 4 | 15 | 9 | 31 | 10 | true | not-included | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
 ## Autopilot Review Sprint Board
 
@@ -874,8 +876,8 @@ Unsafe first coverage launch items:
 | deployment: RAG、知识库和向量检索 | 348 | 0 | 5 |
 | content-backlog: RAG、知识库和向量检索 | 342 | 0 | 5 |
 | deployment: Agent 部署、工具调用和工作流 | 338 | 0 | 5 |
-| content-backlog: Agent 部署、工具调用和记忆 | 334 | 0 | 5 |
 | content-backlog: 全行业 AI 提示词和工作流模板 | 334 | 0 | 5 |
+| content-backlog: Agent 部署、工具调用和记忆 | 334 | 0 | 5 |
 | industry-prompt: 全行业提示词模板库 | 324 | 0 | 4 |
 
 Next review files:
@@ -973,7 +975,7 @@ Next review files:
 - Failed checks: 0
 - Unsupported traffic claims: 0
 - Traffic claim files scanned: 155
-- Traffic claim watch mentions: 1878
+- Traffic claim watch mentions: 1879
 
 ## Public Surface Inventory
 
@@ -993,13 +995,17 @@ Public categories:
 
 - Codex 新手教程: 9
 - Upwork 新手: 2
-- 报价指南: 1
 - 报错解决: 1
-- 收款工具: 1
+- 报价指南: 1
 - 部署教程: 1
+- 收款工具: 1
 
 | Category | Updated | Tags | Title | URL |
 | --- | --- | --- | --- | --- |
+| 报错解决 | 2026-06-02 | 4 | Codex 项目 npm install 报错怎么办：新手排查步骤 | /blog/codex-npm-install-error-beginner-fix |
+| 报价指南 | 2026-06-02 | 4 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | /blog/first-upwork-project-pricing-checklist |
+| 部署教程 | 2026-06-02 | 4 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | /blog/vercel-env-variable-missing-beginner-guide |
+| 收款工具 | 2026-06-02 | 4 | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | /blog/payoneer-wise-paypal-beginner-comparison |
 | Codex 新手教程 | 2026-06-01 | 4 | Codex 怎么做第一个网页 | /blog/build-first-webpage-with-codex |
 | Codex 新手教程 | 2026-06-01 | 4 | Codex 生成代码后怎么审核：交付前检查清单 | /blog/codex-code-review-delivery-checklist |
 | Codex 新手教程 | 2026-06-01 | 4 | Codex 生成代码后怎么审核 | /blog/codex-generated-code-review-guide |
@@ -1011,10 +1017,6 @@ Public categories:
 | Codex 新手教程 | 2026-06-01 | 4 | Codex 是什么新手怎么开始 | /blog/what-is-codex-beginner-start |
 | Upwork 新手 | 2026-06-02 | 4 | Upwork 客户需求太模糊怎么办：新手分析和追问清单 | /blog/upwork-client-requirements-analysis-beginner |
 | Upwork 新手 | 2026-06-02 | 4 | Upwork Proposal 发出去没人回怎么办：新手检查清单 | /blog/upwork-proposal-no-reply-checklist |
-| 报价指南 | 2026-06-02 | 4 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | /blog/first-upwork-project-pricing-checklist |
-| 报错解决 | 2026-06-02 | 4 | Codex 项目 npm install 报错怎么办：新手排查步骤 | /blog/codex-npm-install-error-beginner-fix |
-| 收款工具 | 2026-06-02 | 4 | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | /blog/payoneer-wise-paypal-beginner-comparison |
-| 部署教程 | 2026-06-02 | 4 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | /blog/vercel-env-variable-missing-beginner-guide |
 
 | Gap score | Public | Ready candidates | Cluster | Suggested files |
 | --- | --- | --- | --- | --- |
