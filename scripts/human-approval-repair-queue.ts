@@ -68,6 +68,17 @@ type RepairTask = {
   title: string;
 };
 
+type MinimumRepairPath = {
+  categories: string[];
+  file: string;
+  markReviewAfterExplicitApproval: string;
+  nextDecision: DecisionMatrix["rows"][number]["nextDecision"];
+  publishConfirm: "not-included";
+  taskCount: number;
+  tasks: Array<Pick<RepairTask, "action" | "category" | "priority" | "proofRequired" | "severity" | "taskId">>;
+  title: string;
+};
+
 function main() {
   const matrix = readJson<DecisionMatrix>("content/automation/human-approval-decision-matrix.json");
   const remediation = readJson<ApprovalRemediationPack>("content/automation/autopilot-approval-remediation-pack.json");
@@ -76,6 +87,7 @@ function main() {
   const remediationByFile = byFile(remediation.items);
   const mojibakeByFile = byFile(mojibake.items);
   const tasks = matrix.rows.flatMap((row) => buildTasks(row, remediationByFile.get(row.file), mojibakeByFile.get(row.file)));
+  const minimumRepairPaths = buildMinimumRepairPaths(tasks);
   const unsafeTasks = tasks.filter((task) => task.autoEditable !== false || task.humanGate !== true || task.publishConfirm !== "not-included");
   const filesWithTasks = new Set(tasks.map((task) => task.file));
   const blockerFiles = new Set(tasks.filter((task) => task.severity === "blocker").map((task) => task.file));
@@ -105,6 +117,8 @@ function main() {
       blockerTasks: tasks.filter((task) => task.severity === "blocker").length,
       filesWithTasks: filesWithTasks.size,
       humanGatedTasks: tasks.filter((task) => task.humanGate === true).length,
+      minimumPathFiles: minimumRepairPaths.length,
+      minimumPathTasks: minimumRepairPaths.reduce((sum, path) => sum + path.taskCount, 0),
       publishConfirmCommandsIncluded: 0,
       repairBeforeReviewItems: matrix.summary.repairBeforeReviewItems,
       tasks: tasks.length,
@@ -113,6 +127,7 @@ function main() {
       trafficDataAvailable: matrix.publishingBoundary.trafficDataAvailable,
       unsafeItems: unsafeTasks.length,
     },
+    minimumRepairPaths,
     unsafeTasks,
     tasks,
   };
@@ -128,7 +143,7 @@ function main() {
 }
 
 function buildTasks(row: DecisionMatrix["rows"][number], remediation: ApprovalRemediationPack["items"][number] | undefined, mojibake: MojibakeRemediationBrief["items"][number] | undefined) {
-  const title = articleLabel(row.file);
+  const title = articleLabel(row.file, row.title);
   const tasks: Omit<RepairTask, "taskId">[] = [];
   const hasEncodingEvidence = Boolean(mojibake || containsMojibake(row.title));
 
@@ -178,7 +193,8 @@ function buildTasks(row: DecisionMatrix["rows"][number], remediation: ApprovalRe
     .map((task, index) => ({ ...task, taskId: `${task.file.replace(/^content\/blog\//, "").replace(/\.[^.]+$/, "").toUpperCase()}-${String(index + 1).padStart(2, "0")}` }));
 }
 
-function articleLabel(file: string) {
+function articleLabel(file: string, matrixTitle: string) {
+  if (matrixTitle && !containsMojibake(matrixTitle)) return matrixTitle.trim();
   try {
     const article = readArticle(file);
     const title = String(article.data.title || "").trim();
@@ -233,7 +249,43 @@ function proofFor(category: RepairTask["category"]) {
   return proofs[category];
 }
 
+function buildMinimumRepairPaths(tasks: RepairTask[]): MinimumRepairPath[] {
+  const grouped = new Map<string, RepairTask[]>();
+  for (const task of tasks) grouped.set(task.file, [...(grouped.get(task.file) || []), task]);
+
+  return [...grouped.entries()].map(([file, fileTasks]) => {
+    const selected = selectRepresentativeTasks(fileTasks);
+    return {
+      categories: selected.map((task) => task.category),
+      file,
+      markReviewAfterExplicitApproval: fileTasks[0]?.commandBoundary || "missing",
+      nextDecision: fileTasks[0]?.nextDecision || "defer",
+      publishConfirm: "not-included",
+      taskCount: selected.length,
+      tasks: selected.map((task) => ({
+        action: task.action,
+        category: task.category,
+        priority: task.priority,
+        proofRequired: task.proofRequired,
+        severity: task.severity,
+        taskId: task.taskId,
+      })),
+      title: fileTasks[0]?.title || file,
+    };
+  });
+}
+
+function selectRepresentativeTasks(tasks: RepairTask[]) {
+  const orderedCategories: RepairTask["category"][] = ["encoding-integrity", "source-url", "source-review", "search-intent", "internal-link", "copydesk", "approval-boundary"];
+  return orderedCategories
+    .map((category) => tasks.filter((task) => task.category === category).sort((a, b) => b.priority - a.priority || a.action.length - b.action.length)[0])
+    .filter(Boolean) as RepairTask[];
+}
+
 function containsMojibake(text: string) {
+  const markers = ["閮", "鎬", "庝", "箞", "鍋", "氾", "細", "鐢", "嗚", "銆", "妫€", "锟", "�", "€"];
+  const markerHits = markers.filter((marker) => text.includes(marker)).length;
+  if (markerHits >= 0) return markerHits >= 2 || /[A-Za-z0-9]?\?/.test(text);
   const suspiciousHits = text.match(/[�€鈥銆鎬鐨鍙鍏瀹琛屽簱閮ョ讲璇嗗垪锛]/g) || [];
   return suspiciousHits.length >= 2 || /[A-Za-z0-9]?\?/.test(text);
 }
@@ -269,6 +321,8 @@ function toMarkdown(payload: {
     blockerTasks: number;
     filesWithTasks: number;
     humanGatedTasks: number;
+    minimumPathFiles: number;
+    minimumPathTasks: number;
     publishConfirmCommandsIncluded: number;
     repairBeforeReviewItems: number;
     tasks: number;
@@ -277,6 +331,7 @@ function toMarkdown(payload: {
     trafficDataAvailable: boolean;
     unsafeItems: number;
   };
+  minimumRepairPaths: MinimumRepairPath[];
   tasks: RepairTask[];
   unsafeTasks: RepairTask[];
 }) {
@@ -309,6 +364,7 @@ function toMarkdown(payload: {
     `- Repair-before-review items: ${payload.summary.repairBeforeReviewItems}`,
     `- Files with tasks: ${payload.summary.filesWithTasks}`,
     `- Tasks: ${payload.summary.tasks}`,
+    `- Minimum path files/tasks: ${payload.summary.minimumPathFiles}/${payload.summary.minimumPathTasks}`,
     `- Blocker files/tasks: ${payload.summary.blockerFiles}/${payload.summary.blockerTasks}`,
     `- Human-gated tasks: ${payload.summary.humanGatedTasks}`,
     `- Unsafe items: ${payload.summary.unsafeItems}`,
@@ -323,6 +379,10 @@ function toMarkdown(payload: {
     "## Unsafe Tasks",
     "",
     ...taskTable(payload.unsafeTasks),
+    "",
+    "## Minimum Repair Paths",
+    "",
+    ...minimumPathSections(payload.minimumRepairPaths),
     "",
     "## Top Repair Tasks",
     "",
@@ -342,6 +402,25 @@ function taskTable(tasks: RepairTask[]) {
     "| ---: | --- | --- | --- | --- | --- | --- |",
     ...tasks.map((task) => `| ${task.priority} | ${task.severity} | ${task.category} | ${escapeMd(task.action)} | ${escapeMd(task.proofRequired)} | ${escapeMd(task.title)} | ${task.file} |`),
   ];
+}
+
+function minimumPathSections(paths: MinimumRepairPath[]) {
+  if (!paths.length) return ["- none"];
+  return paths.flatMap((path) => [
+    `### ${escapeMd(path.title)}`,
+    "",
+    `- File: ${path.file}`,
+    `- Minimum tasks: ${path.taskCount}`,
+    `- Categories: ${path.categories.join(", ")}`,
+    `- Next decision: ${path.nextDecision}`,
+    `- Mark review command after explicit approval: \`${path.markReviewAfterExplicitApproval}\``,
+    `- Publish confirm: ${path.publishConfirm}`,
+    "",
+    "| Priority | Severity | Category | Action | Proof required |",
+    "| ---: | --- | --- | --- | --- |",
+    ...path.tasks.map((task) => `| ${task.priority} | ${task.severity} | ${task.category} | ${escapeMd(task.action)} | ${escapeMd(task.proofRequired)} |`),
+    "",
+  ]);
 }
 
 function byFileSections(tasks: RepairTask[]) {

@@ -1,6 +1,6 @@
 # Human Approval Repair Queue
 
-Generated at: 2026-06-07T22:06:53.432Z
+Generated at: 2026-06-07T22:17:10.307Z
 
 This report is read-only. It breaks repair-before-review candidates into task-level work and stops before any status change.
 
@@ -26,6 +26,7 @@ This report is read-only. It breaks repair-before-review candidates into task-le
 - Repair-before-review items: 3
 - Files with tasks: 3
 - Tasks: 57
+- Minimum path files/tasks: 3/18
 - Blocker files/tasks: 0/0
 - Human-gated tasks: 57
 - Unsafe items: 0
@@ -45,6 +46,63 @@ This report is read-only. It breaks repair-before-review candidates into task-le
 ## Unsafe Tasks
 
 - none
+
+## Minimum Repair Paths
+
+### AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查
+
+- File: content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
+- Minimum tasks: 6
+- Categories: source-url, source-review, search-intent, internal-link, copydesk, approval-boundary
+- Next decision: repair-before-review
+- Mark review command after explicit approval: `npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human`
+- Publish confirm: not-included
+
+| Priority | Severity | Category | Action | Proof required |
+| ---: | --- | --- | --- | --- |
+| 2143 | high | source-url | Verify source URLs and fact-check queries before mark:review. | Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent. |
+| 2083 | high | source-review | Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported. | Reviewer records source/fact-check confirmation and removes unsupported claims. |
+| 1983 | medium | search-intent | Resolve search weakness: no exact search query appears in title. | Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body. |
+| 1943 | medium | internal-link | Apply or explicitly reject the internal-link suggestion before mark:review. | Draft contains at least one contextual link to a currently published relevant article. |
+| 1903 | medium | copydesk | Review reason: copydesk warning remediation exists. | Reviewer resolves or explicitly accepts copydesk warning without weakening guardrails. |
+| 1843 | medium | approval-boundary | Publishing remains a separate explicit approval step. | Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval. |
+
+### 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用
+
+- File: content/blog/industry-ai-prompts-template-library-2026.mdx
+- Minimum tasks: 6
+- Categories: source-url, source-review, search-intent, internal-link, copydesk, approval-boundary
+- Next decision: repair-before-review
+- Mark review command after explicit approval: `npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human`
+- Publish confirm: not-included
+
+| Priority | Severity | Category | Action | Proof required |
+| ---: | --- | --- | --- | --- |
+| 2143 | high | source-url | Verify source URLs and fact-check queries before mark:review. | Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent. |
+| 2083 | high | source-review | Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported. | Reviewer records source/fact-check confirmation and removes unsupported claims. |
+| 1983 | medium | search-intent | Resolve or explicitly accept search-intent weaknesses before mark:review. | Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body. |
+| 1943 | medium | internal-link | Apply or explicitly reject the internal-link suggestion before mark:review. | Draft contains at least one contextual link to a currently published relevant article. |
+| 1903 | medium | copydesk | Review reason: copydesk warning remediation exists. | Reviewer resolves or explicitly accepts copydesk warning without weakening guardrails. |
+| 1843 | medium | approval-boundary | Publishing remains a separate explicit approval step. | Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval. |
+
+### 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
+
+- File: content/blog/ai-model-selection-customer-service-guide.mdx
+- Minimum tasks: 6
+- Categories: source-url, source-review, search-intent, internal-link, copydesk, approval-boundary
+- Next decision: repair-before-review
+- Mark review command after explicit approval: `npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human`
+- Publish confirm: not-included
+
+| Priority | Severity | Category | Action | Proof required |
+| ---: | --- | --- | --- | --- |
+| 2018 | high | source-url | Verify source URLs and fact-check queries before mark:review. | Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent. |
+| 1958 | high | source-review | Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported. | Reviewer records source/fact-check confirmation and removes unsupported claims. |
+| 1858 | medium | search-intent | Resolve search weakness: no exact search query appears in title. | Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body. |
+| 1818 | medium | internal-link | Apply or explicitly reject the internal-link suggestion before mark:review. | Draft contains at least one contextual link to a currently published relevant article. |
+| 1778 | medium | copydesk | Review reason: copydesk warning remediation exists. | Reviewer resolves or explicitly accepts copydesk warning without weakening guardrails. |
+| 1718 | medium | approval-boundary | Publishing remains a separate explicit approval step. | Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval. |
+
 
 ## Top Repair Tasks
 

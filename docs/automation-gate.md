@@ -1,6 +1,6 @@
 # Automation Gate
 
-Generated at: 2026-06-07T22:07:06.662Z
+Generated at: 2026-06-07T22:17:23.228Z
 
 Overall: PASS
 
@@ -39,7 +39,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=201, unsafeClaims=0, watchMentions=3583 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=201, unsafeClaims=0, watchMentions=3592 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit mirrors mojibake warnings without blocking | PASS | warnings=77, mojibake=77, publicMojibake=9, remediationAffected=77/9 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
@@ -73,8 +73,8 @@ Overall: PASS
 | autopilot approval remediation pack has actionable human fixes | PASS | commands=3, links=3, search=3, source=3, sourceUrlFixes=3/34 |
 | human approval decision matrix covers approval packet | PASS | rows=3, approvals=3, unsafe=0 |
 | human approval decision matrix stays human-gated and decision-ready | PASS | commands=3, repairs=3, branches=9, publishConfirm=0 |
-| human approval repair queue covers decision matrix | PASS | files=3, tasks=57, blockers=0/0, unsafe=0 |
-| human approval repair queue stays manual and non-publishing | PASS | humanGated=57/57, publishConfirm=0 |
+| human approval repair queue covers decision matrix | PASS | files=3, tasks=57, minimum=3/18, blockers=0/0, unsafe=0 |
+| human approval repair queue stays manual and non-publishing | PASS | humanGated=57/57, minimum=3/18, publishConfirm=0 |
 | autopilot review sprint board covers next assignments | PASS | items=10, readyWithPlaybook=3, queued=7, needsQuery=0, unsafe=0 |
 | autopilot review sprint board keeps sprint actions human-gated | PASS | ready=10, commands=10, queries=10, sources=10 |
 | autopilot search query gap brief covers sprint query gaps | PASS | items=0, sprintNeedsQuery=0, unsafe=0 |

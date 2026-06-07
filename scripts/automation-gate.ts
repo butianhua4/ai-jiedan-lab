@@ -1395,6 +1395,8 @@ async function main() {
       blockerTasks: number;
       filesWithTasks: number;
       humanGatedTasks: number;
+      minimumPathFiles: number;
+      minimumPathTasks: number;
       publishConfirmCommandsIncluded: number;
       repairBeforeReviewItems: number;
       tasks: number;
@@ -1408,6 +1410,13 @@ async function main() {
       humanGate?: boolean;
       publishConfirm?: string;
       severity?: string;
+    }>;
+    minimumRepairPaths?: Array<{
+      file?: string;
+      markReviewAfterExplicitApproval?: string;
+      publishConfirm?: string;
+      taskCount?: number;
+      tasks?: unknown[];
     }>;
     unsafeTasks?: unknown[];
   }>("content/automation/human-approval-repair-queue.json");
@@ -2914,9 +2923,12 @@ async function main() {
         humanApprovalRepairQueue.summary.approvalItems === humanApprovalDecisionMatrix.summary.approvalItems &&
         humanApprovalRepairQueue.summary.repairBeforeReviewItems === humanApprovalDecisionMatrix.summary.repairBeforeReviewItems &&
         humanApprovalRepairQueue.summary.filesWithTasks === humanApprovalDecisionMatrix.summary.decisionRows &&
+        humanApprovalRepairQueue.summary.minimumPathFiles === humanApprovalDecisionMatrix.summary.decisionRows &&
+        humanApprovalRepairQueue.summary.minimumPathTasks >= humanApprovalRepairQueue.summary.minimumPathFiles &&
+        humanApprovalRepairQueue.summary.minimumPathTasks < humanApprovalRepairQueue.summary.tasks &&
         humanApprovalRepairQueue.summary.tasks > humanApprovalDecisionMatrix.summary.decisionRows &&
         humanApprovalRepairQueue.summary.unsafeItems === 0,
-      detail: `files=${humanApprovalRepairQueue.summary.filesWithTasks}, tasks=${humanApprovalRepairQueue.summary.tasks}, blockers=${humanApprovalRepairQueue.summary.blockerFiles}/${humanApprovalRepairQueue.summary.blockerTasks}, unsafe=${humanApprovalRepairQueue.summary.unsafeItems}`,
+      detail: `files=${humanApprovalRepairQueue.summary.filesWithTasks}, tasks=${humanApprovalRepairQueue.summary.tasks}, minimum=${humanApprovalRepairQueue.summary.minimumPathFiles}/${humanApprovalRepairQueue.summary.minimumPathTasks}, blockers=${humanApprovalRepairQueue.summary.blockerFiles}/${humanApprovalRepairQueue.summary.blockerTasks}, unsafe=${humanApprovalRepairQueue.summary.unsafeItems}`,
     },
     {
       name: "human approval repair queue stays manual and non-publishing",
@@ -2927,6 +2939,15 @@ async function main() {
         humanApprovalRepairQueue.summary.publishConfirmCommandsIncluded === 0 &&
         humanApprovalRepairQueue.summary.humanGatedTasks === humanApprovalRepairQueue.summary.tasks &&
         Boolean(
+          humanApprovalRepairQueue.minimumRepairPaths?.every(
+            (item) =>
+              item.publishConfirm === "not-included" &&
+              item.markReviewAfterExplicitApproval?.includes("--confirm-human") &&
+              (item.taskCount || 0) > 0 &&
+              (item.tasks?.length || 0) === item.taskCount,
+          ),
+        ) &&
+        Boolean(
           humanApprovalRepairQueue.tasks?.every(
             (item) =>
               item.autoEditable === false &&
@@ -2936,7 +2957,7 @@ async function main() {
               ["blocker", "high", "medium"].includes(String(item.severity)),
           ),
         ),
-      detail: `humanGated=${humanApprovalRepairQueue.summary.humanGatedTasks}/${humanApprovalRepairQueue.summary.tasks}, publishConfirm=${humanApprovalRepairQueue.summary.publishConfirmCommandsIncluded}`,
+      detail: `humanGated=${humanApprovalRepairQueue.summary.humanGatedTasks}/${humanApprovalRepairQueue.summary.tasks}, minimum=${humanApprovalRepairQueue.summary.minimumPathFiles}/${humanApprovalRepairQueue.summary.minimumPathTasks}, publishConfirm=${humanApprovalRepairQueue.summary.publishConfirmCommandsIncluded}`,
     },
     {
       name: "autopilot review sprint board covers next assignments",

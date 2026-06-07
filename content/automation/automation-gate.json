@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T22:07:06.662Z",
+  "generatedAt": "2026-06-07T22:17:23.228Z",
   "ok": true,
   "summary": {
     "checks": 187,
@@ -135,7 +135,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=201, unsafeClaims=0, watchMentions=3583"
+      "detail": "filesScanned=201, unsafeClaims=0, watchMentions=3592"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -305,12 +305,12 @@
     {
       "name": "human approval repair queue covers decision matrix",
       "ok": true,
-      "detail": "files=3, tasks=57, blockers=0/0, unsafe=0"
+      "detail": "files=3, tasks=57, minimum=3/18, blockers=0/0, unsafe=0"
     },
     {
       "name": "human approval repair queue stays manual and non-publishing",
       "ok": true,
-      "detail": "humanGated=57/57, publishConfirm=0"
+      "detail": "humanGated=57/57, minimum=3/18, publishConfirm=0"
     },
     {
       "name": "autopilot review sprint board covers next assignments",

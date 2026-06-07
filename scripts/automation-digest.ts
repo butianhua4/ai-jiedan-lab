@@ -138,6 +138,8 @@ type HumanApprovalRepairQueue = {
     blockerTasks: number;
     filesWithTasks: number;
     humanGatedTasks: number;
+    minimumPathFiles: number;
+    minimumPathTasks: number;
     publishConfirmCommandsIncluded: number;
     repairBeforeReviewItems: number;
     tasks: number;
@@ -146,6 +148,12 @@ type HumanApprovalRepairQueue = {
     trafficDataAvailable: boolean;
     unsafeItems: number;
   };
+  minimumRepairPaths: Array<{
+    categories: string[];
+    file: string;
+    taskCount: number;
+    title: string;
+  }>;
   tasks: Array<{
     action: string;
     category: string;
@@ -2555,11 +2563,14 @@ const payload = {
     blockerTasks: reports.humanApprovalRepairQueue.data?.summary.blockerTasks ?? null,
     filesWithTasks: reports.humanApprovalRepairQueue.data?.summary.filesWithTasks ?? null,
     humanGatedTasks: reports.humanApprovalRepairQueue.data?.summary.humanGatedTasks ?? null,
+    minimumPathFiles: reports.humanApprovalRepairQueue.data?.summary.minimumPathFiles ?? null,
+    minimumPathTasks: reports.humanApprovalRepairQueue.data?.summary.minimumPathTasks ?? null,
     publishConfirmCommandsIncluded: reports.humanApprovalRepairQueue.data?.summary.publishConfirmCommandsIncluded ?? null,
     repairBeforeReviewItems: reports.humanApprovalRepairQueue.data?.summary.repairBeforeReviewItems ?? null,
     tasks: reports.humanApprovalRepairQueue.data?.summary.tasks ?? null,
     tasksByCategory: reports.humanApprovalRepairQueue.data?.summary.tasksByCategory ?? {},
     tasksBySeverity: reports.humanApprovalRepairQueue.data?.summary.tasksBySeverity ?? {},
+    minimumPaths: reports.humanApprovalRepairQueue.data?.minimumRepairPaths ?? [],
     top: reports.humanApprovalRepairQueue.data?.tasks.slice(0, 8) ?? [],
     trafficDataAvailable: reports.humanApprovalRepairQueue.data?.summary.trafficDataAvailable ?? null,
     unsafeItems: reports.humanApprovalRepairQueue.data?.summary.unsafeItems ?? null,
@@ -4066,6 +4077,7 @@ function toMarkdown(data: typeof payload) {
     `- Repair before review items: ${data.humanApprovalRepairQueue.repairBeforeReviewItems}`,
     `- Files with tasks: ${data.humanApprovalRepairQueue.filesWithTasks}`,
     `- Tasks: ${data.humanApprovalRepairQueue.tasks}`,
+    `- Minimum path files/tasks: ${data.humanApprovalRepairQueue.minimumPathFiles}/${data.humanApprovalRepairQueue.minimumPathTasks}`,
     `- Blocker files/tasks: ${data.humanApprovalRepairQueue.blockerFiles}/${data.humanApprovalRepairQueue.blockerTasks}`,
     `- Human-gated tasks: ${data.humanApprovalRepairQueue.humanGatedTasks}`,
     `- Publish confirm commands included: ${data.humanApprovalRepairQueue.publishConfirmCommandsIncluded}`,
@@ -4073,6 +4085,12 @@ function toMarkdown(data: typeof payload) {
     `- Unsafe items: ${data.humanApprovalRepairQueue.unsafeItems}`,
     `- Tasks by category: ${JSON.stringify(data.humanApprovalRepairQueue.tasksByCategory)}`,
     `- Tasks by severity: ${JSON.stringify(data.humanApprovalRepairQueue.tasksBySeverity)}`,
+    "",
+    "| Minimum tasks | Categories | Title | File |",
+    "| ---: | --- | --- | --- |",
+    ...data.humanApprovalRepairQueue.minimumPaths.map(
+      (item) => `| ${item.taskCount} | ${item.categories.join(", ")} | ${String(item.title).replace(/\|/g, "\\|")} | ${item.file} |`,
+    ),
     "",
     "| Priority | Severity | Category | Action | Title | File |",
     "| ---: | --- | --- | --- | --- | --- |",
