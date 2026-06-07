@@ -53,6 +53,58 @@ type ExecutiveBrief = {
   }>;
 };
 
+type PublicationBottleneck = {
+  bottlenecks: string[];
+  immediateApprovalQueue: Array<{
+    file: string;
+    priorityScore: number;
+    title: string;
+    unsafeReasons?: string[];
+  }>;
+  nextBatchWarnings: Array<{
+    actionCount: number;
+    file: string;
+    priorityScore: number;
+    routeWarnings: string[];
+    title: string;
+  }>;
+  nextHumanApproval: Array<{
+    file?: string;
+    humanGate: string;
+    priority: number;
+    reason: string;
+    title: string;
+  }>;
+  publicRefreshWarnings: Array<{
+    actionCount: number;
+    file: string;
+    priorityScore: number;
+    refreshReasons: string[];
+    title: string;
+  }>;
+  summary: {
+    approvalBacklogItems: number;
+    contentIntegrityBlockingItems: number;
+    contentIntegrityWarningItems: number;
+    currentPublishableNow: number;
+    immediateApprovalItems: number;
+    immediateApprovalReadyItems: number;
+    nextBatchActionItems: number;
+    nextBatchWarningItems: number;
+    publicArticles: number;
+    publicMojibakeWarningItems: number;
+    publicRefreshActionItems: number;
+    publishConfirmCommandsIncluded: number;
+    reviewPreflightFailed: number;
+    reviewPreflightMojibakeWarningItems: number;
+    reviewPreflightPassed: number;
+    reviewPreflightWarningItems: number;
+    statusCounts: Record<string, number>;
+    trafficDataAvailable: boolean;
+    unsafeItems: number;
+  };
+};
+
 type MojibakeRemediationBrief = {
   items: Array<{
     file: string;
@@ -2236,6 +2288,7 @@ const reports = {
   ),
   workflowAudit: readJson<WorkflowAudit>("content/automation/project-automation-workflow-audit.json"),
   executiveBrief: readJson<ExecutiveBrief>("content/automation/autopilot-executive-brief.json"),
+  publicationBottleneck: readJson<PublicationBottleneck>("content/automation/publication-bottleneck-report.json"),
   mojibakeRemediation: readJson<MojibakeRemediationBrief>("content/automation/mojibake-remediation-brief.json"),
   contentBacklog: readJson<{ opportunities: ContentOpportunity[]; totals: { topics: number; topicsWithReadyCandidates: number } }>(
     "content/automation/content-opportunity-backlog.json",
@@ -2400,6 +2453,32 @@ const payload = {
     boardActions: reports.executiveBrief.data?.boardActions ?? [],
     routeWarnings: reports.executiveBrief.data?.routeWarnings ?? [],
     topApprovalActions: reports.executiveBrief.data?.topApprovalActions ?? [],
+  },
+  publicationBottleneck: {
+    approvalBacklogItems: reports.publicationBottleneck.data?.summary.approvalBacklogItems ?? null,
+    bottlenecks: reports.publicationBottleneck.data?.bottlenecks ?? [],
+    contentIntegrityBlockingItems: reports.publicationBottleneck.data?.summary.contentIntegrityBlockingItems ?? null,
+    contentIntegrityWarningItems: reports.publicationBottleneck.data?.summary.contentIntegrityWarningItems ?? null,
+    currentPublishableNow: reports.publicationBottleneck.data?.summary.currentPublishableNow ?? null,
+    immediateApprovalItems: reports.publicationBottleneck.data?.summary.immediateApprovalItems ?? null,
+    immediateApprovalQueue: reports.publicationBottleneck.data?.immediateApprovalQueue.slice(0, 5) ?? [],
+    immediateApprovalReadyItems: reports.publicationBottleneck.data?.summary.immediateApprovalReadyItems ?? null,
+    nextBatchActionItems: reports.publicationBottleneck.data?.summary.nextBatchActionItems ?? null,
+    nextBatchWarningItems: reports.publicationBottleneck.data?.summary.nextBatchWarningItems ?? null,
+    nextBatchWarnings: reports.publicationBottleneck.data?.nextBatchWarnings.slice(0, 5) ?? [],
+    nextHumanApproval: reports.publicationBottleneck.data?.nextHumanApproval.slice(0, 5) ?? [],
+    publicArticles: reports.publicationBottleneck.data?.summary.publicArticles ?? null,
+    publicMojibakeWarningItems: reports.publicationBottleneck.data?.summary.publicMojibakeWarningItems ?? null,
+    publicRefreshActionItems: reports.publicationBottleneck.data?.summary.publicRefreshActionItems ?? null,
+    publicRefreshWarnings: reports.publicationBottleneck.data?.publicRefreshWarnings.slice(0, 5) ?? [],
+    publishConfirmCommandsIncluded: reports.publicationBottleneck.data?.summary.publishConfirmCommandsIncluded ?? null,
+    reviewPreflightFailed: reports.publicationBottleneck.data?.summary.reviewPreflightFailed ?? null,
+    reviewPreflightMojibakeWarningItems: reports.publicationBottleneck.data?.summary.reviewPreflightMojibakeWarningItems ?? null,
+    reviewPreflightPassed: reports.publicationBottleneck.data?.summary.reviewPreflightPassed ?? null,
+    reviewPreflightWarningItems: reports.publicationBottleneck.data?.summary.reviewPreflightWarningItems ?? null,
+    statusCounts: reports.publicationBottleneck.data?.summary.statusCounts ?? {},
+    trafficDataAvailable: reports.publicationBottleneck.data?.summary.trafficDataAvailable ?? null,
+    unsafeItems: reports.publicationBottleneck.data?.summary.unsafeItems ?? null,
   },
   mojibakeRemediation: {
     affectedDraftFiles: reports.mojibakeRemediation.data?.summary.affectedDraftFiles ?? null,
@@ -3467,6 +3546,13 @@ function buildNextActions() {
     return ["Open docs/autopilot-executive-brief.md and resolve executive brief safety issues before assigning review work."];
   }
   if (
+    !reports.publicationBottleneck.data ||
+    reports.publicationBottleneck.data.summary.unsafeItems > 0 ||
+    reports.publicationBottleneck.data.summary.publishConfirmCommandsIncluded > 0
+  ) {
+    return ["Open docs/publication-bottleneck-report.md and resolve publication gate reporting issues before assigning review work."];
+  }
+  if (
     !reports.mojibakeRemediation.data ||
     reports.mojibakeRemediation.data.summary.unsafeItems > 0 ||
     reports.mojibakeRemediation.data.summary.publishConfirmCommandsIncluded > 0
@@ -3820,6 +3906,43 @@ function toMarkdown(data: typeof payload) {
     "| Board | Action |",
     "| --- | --- |",
     ...data.executiveBrief.boardActions.map((item) => `| ${item.title} | ${item.action} |`),
+    "",
+    "## Publication Bottlenecks",
+    "",
+    `- Public articles: ${data.publicationBottleneck.publicArticles}`,
+    `- Status counts: ${JSON.stringify(data.publicationBottleneck.statusCounts)}`,
+    `- Current publishable now: ${data.publicationBottleneck.currentPublishableNow}`,
+    `- Immediate approval items: ${data.publicationBottleneck.immediateApprovalReadyItems}/${data.publicationBottleneck.immediateApprovalItems}`,
+    `- Approval backlog items: ${data.publicationBottleneck.approvalBacklogItems}`,
+    `- Review preflight passed/failed: ${data.publicationBottleneck.reviewPreflightPassed}/${data.publicationBottleneck.reviewPreflightFailed}`,
+    `- Review preflight warning items: ${data.publicationBottleneck.reviewPreflightWarningItems}`,
+    `- Content integrity warning/blocking items: ${data.publicationBottleneck.contentIntegrityWarningItems}/${data.publicationBottleneck.contentIntegrityBlockingItems}`,
+    `- Public mojibake warning items: ${data.publicationBottleneck.publicMojibakeWarningItems}`,
+    `- Next batch warning/action items: ${data.publicationBottleneck.nextBatchWarningItems}/${data.publicationBottleneck.nextBatchActionItems}`,
+    `- Public refresh action items: ${data.publicationBottleneck.publicRefreshActionItems}`,
+    `- Publish confirm commands included: ${data.publicationBottleneck.publishConfirmCommandsIncluded}`,
+    `- Traffic data available: ${data.publicationBottleneck.trafficDataAvailable}`,
+    `- Unsafe items: ${data.publicationBottleneck.unsafeItems}`,
+    "",
+    "### Bottleneck Reasons",
+    "",
+    ...(data.publicationBottleneck.bottlenecks.length ? data.publicationBottleneck.bottlenecks.map((item) => `- ${item}`) : ["- none"]),
+    "",
+    "### Next Human Approval",
+    "",
+    "| Priority | Gate | Reason | Title | File |",
+    "| ---: | --- | --- | --- | --- |",
+    ...data.publicationBottleneck.nextHumanApproval.map(
+      (item) => `| ${item.priority} | ${item.humanGate} | ${item.reason} | ${item.title} | ${item.file || "n/a"} |`,
+    ),
+    "",
+    "### Next Batch Warnings",
+    "",
+    "| Priority | Actions | Warnings | Title | File |",
+    "| ---: | ---: | --- | --- | --- |",
+    ...data.publicationBottleneck.nextBatchWarnings.map(
+      (item) => `| ${item.priorityScore} | ${item.actionCount} | ${item.routeWarnings.join("<br>") || "none"} | ${item.title} | ${item.file} |`,
+    ),
     "",
     "## Mojibake Remediation Brief",
     "",

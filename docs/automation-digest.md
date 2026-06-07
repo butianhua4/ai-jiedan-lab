@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T21:29:33.240Z
+Generated at: 2026-06-07T21:43:03.126Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -54,6 +54,47 @@ This digest is read-only. It summarizes automation reports and does not publish 
 | AI deployment | Use docs/ai-deployment-sprint-board.md to prioritize deployment, Agent, model-serving, and API tutorial candidates. |
 | Memory/RAG | Use docs/memory-rag-sprint-board.md to prioritize RAG, knowledge base, vector search, memory, evaluation, and privacy lanes. |
 | Popular prompts | Use docs/popular-prompt-sprint-board.md to prioritize high-demand prompt playbook lanes. |
+
+## Publication Bottlenecks
+
+- Public articles: 15
+- Status counts: {"draft":633,"published":15,"archived":21}
+- Current publishable now: 0
+- Immediate approval items: 3/3
+- Approval backlog items: 5
+- Review preflight passed/failed: 3/0
+- Review preflight warning items: 0
+- Content integrity warning/blocking items: 77/0
+- Public mojibake warning items: 9
+- Next batch warning/action items: 3/34
+- Public refresh action items: 181
+- Publish confirm commands included: 0
+- Traffic data available: false
+- Unsafe items: 0
+
+### Bottleneck Reasons
+
+- No article is publishable without explicit human approval.
+- 3 draft article(s) are ready for human approval before mark:review.
+- 3 next-batch route item(s) still need SEO/query/freshness remediation review.
+- 9 public article(s) need garbled-copy refresh before traffic work is credible.
+- Traffic data is unavailable, so traffic claims remain blocked.
+
+### Next Human Approval
+
+| Priority | Gate | Reason | Title | File |
+| ---: | --- | --- | --- | --- |
+| 777 | explicit human approval required | Immediate Wave 1; projected public count after human approval is 18. | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 773 | explicit human approval required | Immediate Wave 1; projected public count after human approval is 18. | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 769 | explicit human approval required | Immediate Wave 1; projected public count after human approval is 18. | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+
+### Next Batch Warnings
+
+| Priority | Actions | Warnings | Title | File |
+| ---: | ---: | --- | --- | --- |
+| 872 | 15 | not yet matched in human approval clearance pack<br>no copydesk optimization brief matched<br>search query match warning exists | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 820 | 10 | not yet matched in human approval clearance pack | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| 798 | 9 | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 
 ## Mojibake Remediation Brief
 
@@ -1248,8 +1289,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 195
-- Traffic claim watch mentions: 3511
+- Traffic claim files scanned: 197
+- Traffic claim watch mentions: 3551
 
 ## Public Surface Inventory
 
