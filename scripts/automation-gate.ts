@@ -910,6 +910,45 @@ async function main() {
     unsafeItems?: unknown[];
     waves?: Array<{ actionItems?: number; items?: number; readyItems?: number; unsafeItems?: number }>;
   }>("content/automation/public-refresh-sprint-board.json");
+  const publicSearchRefreshSessionPack = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    sessions?: Array<{
+      actionCount?: number;
+      commandBoundary?: { editAfterHumanApproval?: string; markReview?: string; publishConfirm?: string; stopBefore?: string };
+      files?: unknown[];
+      items?: unknown[];
+      readyItems?: number;
+      refreshReasons?: unknown[];
+      unsafeItems?: number;
+      wave?: number;
+    }>;
+    sourceEvidence: {
+      measuredTrafficSources: number;
+      publicRefreshSprintActions: number;
+      publicRefreshSprintItems: number;
+      publicRefreshSprintUnsafeItems: number;
+      publicSearchRefreshActions: number;
+      publicSearchRefreshItems: number;
+      publicSearchRefreshUnsafeItems: number;
+      publicSurfaceArticles: number;
+      publicSurfaceMissingFromSitemap: number | null;
+      publicSurfaceUnsafeItems: number;
+      trafficDataAvailable: boolean;
+    };
+    summary: {
+      actionItems: number;
+      filesCovered: number;
+      highPriorityItems: number;
+      liveMissingFromSitemap: number | null;
+      publicArticles: number;
+      publishConfirmCommandsIncluded: number;
+      readyItems: number;
+      sessions: number;
+      trafficDataAvailable: boolean;
+      unsafeItems: number;
+    };
+    unsafeSessions?: unknown[];
+  }>("content/automation/public-search-refresh-session-pack.json");
   const trafficEvidence = readJson<{
     guardrails: { autoPublish: boolean };
     summary: {
@@ -5169,6 +5208,54 @@ async function main() {
         ) &&
         Boolean(publicRefreshSprintBoard.waves?.every((wave) => wave.readyItems === wave.items && (wave.unsafeItems || 0) === 0 && (wave.actionItems || 0) >= (wave.items || 0) * 5)),
       detail: `ready=${publicRefreshSprintBoard.summary.itemsReadyForPublicRefreshSprint}, actions=${publicRefreshSprintBoard.summary.actionItems}, unsafe=${publicRefreshSprintBoard.summary.unsafeItems}, publishConfirm=${publicRefreshSprintBoard.summary.publishConfirmCommandsIncluded}`,
+    },
+    {
+      name: "public search refresh session pack covers public sprint waves",
+      ok:
+        publicSearchRefreshSessionPack.guardrails.autoEditArticles === false &&
+        publicSearchRefreshSessionPack.guardrails.autoMarkReview === false &&
+        publicSearchRefreshSessionPack.guardrails.autoPublish === false &&
+        publicSearchRefreshSessionPack.guardrails.trafficClaim === "not-included" &&
+        publicSearchRefreshSessionPack.sourceEvidence.publicRefreshSprintItems === publicRefreshSprintBoard.summary.items &&
+        publicSearchRefreshSessionPack.sourceEvidence.publicRefreshSprintActions === publicRefreshSprintBoard.summary.actionItems &&
+        publicSearchRefreshSessionPack.sourceEvidence.publicRefreshSprintUnsafeItems === 0 &&
+        publicSearchRefreshSessionPack.sourceEvidence.publicSearchRefreshItems === publicSearchRefreshPack.summary.items &&
+        publicSearchRefreshSessionPack.sourceEvidence.publicSearchRefreshActions === publicSearchRefreshPack.summary.actionItems &&
+        publicSearchRefreshSessionPack.sourceEvidence.publicSearchRefreshUnsafeItems === 0 &&
+        publicSearchRefreshSessionPack.sourceEvidence.publicSurfaceArticles === publicSurfaceInventory.summary.publicArticles &&
+        publicSearchRefreshSessionPack.sourceEvidence.publicSurfaceMissingFromSitemap === publicSurfaceInventory.summary.liveMissingFromSitemap &&
+        publicSearchRefreshSessionPack.sourceEvidence.publicSurfaceUnsafeItems === 0 &&
+        publicSearchRefreshSessionPack.sourceEvidence.measuredTrafficSources === trafficEvidence.summary.measuredTrafficSources &&
+        publicSearchRefreshSessionPack.summary.publicArticles === publicSurfaceInventory.summary.publicArticles &&
+        publicSearchRefreshSessionPack.summary.filesCovered === publicRefreshSprintBoard.summary.items &&
+        publicSearchRefreshSessionPack.summary.sessions === publicRefreshSprintBoard.summary.waves &&
+        publicSearchRefreshSessionPack.summary.actionItems === publicRefreshSprintBoard.summary.actionItems &&
+        publicSearchRefreshSessionPack.summary.readyItems === publicRefreshSprintBoard.summary.itemsReadyForPublicRefreshSprint,
+      detail: `sessions=${publicSearchRefreshSessionPack.summary.sessions}, files=${publicSearchRefreshSessionPack.summary.filesCovered}, actions=${publicSearchRefreshSessionPack.summary.actionItems}, ready=${publicSearchRefreshSessionPack.summary.readyItems}`,
+    },
+    {
+      name: "public search refresh session pack stays manual and non-publishing",
+      ok:
+        publicSearchRefreshSessionPack.summary.unsafeItems === 0 &&
+        (publicSearchRefreshSessionPack.unsafeSessions?.length || 0) === 0 &&
+        publicSearchRefreshSessionPack.summary.publishConfirmCommandsIncluded === 0 &&
+        publicSearchRefreshSessionPack.summary.trafficDataAvailable === false &&
+        publicSearchRefreshSessionPack.summary.liveMissingFromSitemap === 0 &&
+        publicSearchRefreshSessionPack.summary.actionItems >= publicSearchRefreshSessionPack.summary.filesCovered * 5 &&
+        Boolean(
+          publicSearchRefreshSessionPack.sessions?.every(
+            (session) =>
+              session.commandBoundary?.editAfterHumanApproval === "manual-only" &&
+              session.commandBoundary?.markReview === "not-applicable-public-page" &&
+              session.commandBoundary?.publishConfirm === "not-included" &&
+              session.commandBoundary?.stopBefore?.toLowerCase().includes("human approves") &&
+              (session.files?.length || 0) === (session.items?.length || 0) &&
+              session.readyItems === session.items?.length &&
+              (session.actionCount || 0) >= (session.items?.length || 0) * 5 &&
+              (session.unsafeItems || 0) === 0,
+          ),
+        ),
+      detail: `unsafe=${publicSearchRefreshSessionPack.summary.unsafeItems}, publishConfirm=${publicSearchRefreshSessionPack.summary.publishConfirmCommandsIncluded}, traffic=${publicSearchRefreshSessionPack.summary.trafficDataAvailable}`,
     },
     {
       name: "manual review workbench is ready and stops before publishing",

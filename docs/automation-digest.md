@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T22:49:17.524Z
+Generated at: 2026-06-07T22:58:39.942Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -316,7 +316,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=zh-cn
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/ -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
@@ -1404,8 +1404,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 207
-- Traffic claim watch mentions: 3650
+- Traffic claim files scanned: 209
+- Traffic claim watch mentions: 3753
 
 ## Public Surface Inventory
 
@@ -1538,6 +1538,31 @@ Public categories:
 | 5 | true | 160 | 11 | 87 | seo-warning, short-description, freshness-high, high-priority | not-included | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | content/blog/vercel-env-variable-missing-beginner-guide.mdx |
 | 5 | true | 145 | 12 | 89 | short-description, cannibalization, freshness-high, high-priority | not-included | Codex 生成代码后怎么审核 | content/blog/codex-generated-code-review-guide.mdx |
 | 5 | true | 130 | 11 | 64 | short-description, freshness-high | not-included | Upwork 客户需求太模糊怎么办：新手分析和追问清单 | content/blog/upwork-client-requirements-analysis-beginner.mdx |
+
+## Public Search Refresh Session Pack
+
+- Public articles: 15
+- Sessions: 5
+- Files covered: 15
+- Ready items: 15
+- Action items: 181
+- High-priority items: 14
+- SEO warning sessions: 4
+- Short-description sessions: 5
+- Mojibake sessions: 3
+- Cannibalization sessions: 5
+- Live missing from sitemap: 0
+- Publish confirm commands included: 0
+- Traffic data available: false
+- Unsafe items: 0
+
+| Wave | Session | Ready | Actions | High priority | Reasons | Files |
+| ---: | --- | ---: | ---: | ---: | --- | --- |
+| 1 | public search refresh wave 1 | 3/3 | 38 | 3 | mojibake-public, seo-warning, cannibalization, freshness-high, high-priority, short-description | content/blog/codex-vs-claude-code-beginner-checklist.mdx<br>content/blog/first-upwork-project-pricing-checklist.mdx<br>content/blog/codex-github-before-commit-checklist.mdx |
+| 2 | public search refresh wave 2 | 3/3 | 40 | 3 | mojibake-public, seo-warning, freshness-high, high-priority, short-description, cannibalization | content/blog/codex-vercel-deploy-preflight-checklist.mdx<br>content/blog/build-first-webpage-with-codex.mdx<br>content/blog/codex-install-failed-beginner-fix.mdx |
+| 3 | public search refresh wave 3 | 3/3 | 36 | 3 | mojibake-public, short-description, cannibalization, freshness-high, high-priority | content/blog/what-is-codex-beginner-start.mdx<br>content/blog/codex-code-review-delivery-checklist.mdx<br>content/blog/codex-upwork-small-job-risk-checklist.mdx |
+| 4 | public search refresh wave 4 | 3/3 | 33 | 3 | seo-warning, cannibalization, freshness-high, high-priority, short-description | content/blog/codex-npm-install-error-beginner-fix.mdx<br>content/blog/payoneer-wise-paypal-beginner-comparison.mdx<br>content/blog/upwork-proposal-no-reply-checklist.mdx |
+| 5 | public search refresh wave 5 | 3/3 | 34 | 2 | seo-warning, short-description, freshness-high, high-priority, cannibalization | content/blog/vercel-env-variable-missing-beginner-guide.mdx<br>content/blog/codex-generated-code-review-guide.mdx<br>content/blog/upwork-client-requirements-analysis-beginner.mdx |
 
 ## Preflight
 

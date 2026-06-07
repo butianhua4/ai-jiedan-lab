@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-07T22:49:16.993Z
+Generated at: 2026-06-07T22:58:39.367Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 193
-- Passed: 193
+- Checks: 195
+- Passed: 195
 - Failed: 0
 
 ## Checks
@@ -39,7 +39,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=207, unsafeClaims=0, watchMentions=3650 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=209, unsafeClaims=0, watchMentions=3753 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit mirrors mojibake warnings without blocking | PASS | warnings=77, mojibake=77, publicMojibake=9, remediationAffected=77/9 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
@@ -201,6 +201,8 @@ Overall: PASS
 | public search refresh pack keeps public edits human-gated and action-ready | PASS | ready=15, actions=114, highPriority=12, shortDescriptions=9, publishConfirm=0 |
 | public refresh sprint board covers public refresh pack | PASS | items=15, public=15, waves=5, mojibakePublic=9, seo=8, shortDescriptions=9 |
 | public refresh sprint board keeps public edits manual and publish-confirm-free | PASS | ready=15, actions=181, unsafe=0, publishConfirm=0 |
+| public search refresh session pack covers public sprint waves | PASS | sessions=5, files=15, actions=181, ready=15 |
+| public search refresh session pack stays manual and non-publishing | PASS | unsafe=0, publishConfirm=0, traffic=false |
 | manual review workbench is ready and stops before publishing | PASS | currentItemsCovered=3, publishableNow=0 |
 | manual review workbench includes SEO warning remediation | PASS | workbenchSeo=16, remediation=16, unsafe=0 |
 | next batch approval route matches manual review workbench | PASS | batch=1, items=3, workbenchItems=3, public=15, publishable=0 |

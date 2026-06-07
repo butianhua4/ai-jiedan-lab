@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T22:49:16.993Z",
+  "generatedAt": "2026-06-07T22:58:39.367Z",
   "ok": true,
   "summary": {
-    "checks": 193,
+    "checks": 195,
     "failed": 0,
-    "passed": 193
+    "passed": 195
   },
   "failed": [],
   "checks": [
@@ -135,7 +135,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=207, unsafeClaims=0, watchMentions=3650"
+      "detail": "filesScanned=209, unsafeClaims=0, watchMentions=3753"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -941,6 +941,16 @@
       "name": "public refresh sprint board keeps public edits manual and publish-confirm-free",
       "ok": true,
       "detail": "ready=15, actions=181, unsafe=0, publishConfirm=0"
+    },
+    {
+      "name": "public search refresh session pack covers public sprint waves",
+      "ok": true,
+      "detail": "sessions=5, files=15, actions=181, ready=15"
+    },
+    {
+      "name": "public search refresh session pack stays manual and non-publishing",
+      "ok": true,
+      "detail": "unsafe=0, publishConfirm=0, traffic=false"
     },
     {
       "name": "manual review workbench is ready and stops before publishing",

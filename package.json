@@ -73,6 +73,7 @@
     "automation:review-freshness-brief": "tsx scripts/review-freshness-brief.ts",
     "automation:public-search-refresh": "tsx scripts/public-search-refresh-pack.ts",
     "automation:public-refresh-sprint": "tsx scripts/public-refresh-sprint-board.ts",
+    "automation:public-search-refresh-session-pack": "tsx scripts/public-search-refresh-session-pack.ts",
     "automation:seo-warning-remediation": "tsx scripts/seo-warning-remediation-pack.ts",
     "automation:gate": "tsx scripts/automation-gate.ts",
     "automation:publish-pack": "tsx scripts/publish-readiness-pack.ts",
