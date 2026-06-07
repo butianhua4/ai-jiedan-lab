@@ -307,6 +307,43 @@ type PublicSurfaceInventory = {
   }>;
 };
 
+type BroadFirstCoverageLaunchPack = {
+  items: Array<{
+    category: string;
+    cluster: string;
+    commandBoundary: {
+      markReviewAfterHumanApproval: string;
+      publishConfirm: string;
+      publishDryRunAfterReview: string;
+    };
+    file: string;
+    gapScore: number;
+    humanFactCheckChecklist: unknown[];
+    readyForFirstCoverageReview: boolean;
+    safeDraft: boolean;
+    searchQueries: string[];
+    sourceTargets: string[];
+    title: string;
+    triageFreshnessRisk: string | null;
+    unsafeReasons: unknown[];
+  }>;
+  summary: {
+    clustersSelected: number;
+    commandBoundaries: number;
+    firstCoverageTarget: number;
+    itemsWithFactCheckChecklist: number;
+    itemsWithSearchQueries: number;
+    itemsWithSourceTargets: number;
+    publicArticlesBeforeLaunch: number;
+    safeDraftItems: number;
+    trafficDataAvailable: boolean;
+    uniqueFiles: number;
+    unsafeItems: number;
+    zeroPublicClusters: number;
+  };
+  unsafeItems: unknown[];
+};
+
 type ContentIntegrity = {
   summary: {
     allIssueItems: number;
@@ -1174,6 +1211,7 @@ const reports = {
   autopilotBroadFreshnessTriage: readJson<AutopilotBroadFreshnessTriage>("content/automation/autopilot-broad-freshness-triage.json"),
   autopilotBroadPublishWaves: readJson<AutopilotBroadPublishWaves>("content/automation/autopilot-broad-publish-waves.json"),
   autopilotBroadWaveOptimization: readJson<AutopilotBroadWaveOptimization>("content/automation/autopilot-broad-wave-optimization.json"),
+  broadFirstCoverageLaunchPack: readJson<BroadFirstCoverageLaunchPack>("content/automation/broad-first-coverage-launch-pack.json"),
   reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
   reviewCannibalizationBrief: readJson<ReviewCannibalizationBrief>("content/automation/review-cannibalization-brief.json"),
   reviewFreshnessBrief: readJson<ReviewFreshnessBrief>("content/automation/review-freshness-brief.json"),
@@ -1561,6 +1599,22 @@ const payload = {
     uncoveredBroadClusters: reports.publicSurfaceInventory.data?.uncoveredBroadClusters.slice(0, 8) ?? [],
     unsafeItems: reports.publicSurfaceInventory.data?.summary.unsafeItems ?? null,
   },
+  broadFirstCoverageLaunchPack: {
+    clustersSelected: reports.broadFirstCoverageLaunchPack.data?.summary.clustersSelected ?? null,
+    commandBoundaries: reports.broadFirstCoverageLaunchPack.data?.summary.commandBoundaries ?? null,
+    firstCoverageTarget: reports.broadFirstCoverageLaunchPack.data?.summary.firstCoverageTarget ?? null,
+    items: reports.broadFirstCoverageLaunchPack.data?.items ?? [],
+    itemsWithFactCheckChecklist: reports.broadFirstCoverageLaunchPack.data?.summary.itemsWithFactCheckChecklist ?? null,
+    itemsWithSearchQueries: reports.broadFirstCoverageLaunchPack.data?.summary.itemsWithSearchQueries ?? null,
+    itemsWithSourceTargets: reports.broadFirstCoverageLaunchPack.data?.summary.itemsWithSourceTargets ?? null,
+    publicArticlesBeforeLaunch: reports.broadFirstCoverageLaunchPack.data?.summary.publicArticlesBeforeLaunch ?? null,
+    safeDraftItems: reports.broadFirstCoverageLaunchPack.data?.summary.safeDraftItems ?? null,
+    trafficDataAvailable: reports.broadFirstCoverageLaunchPack.data?.summary.trafficDataAvailable ?? false,
+    uniqueFiles: reports.broadFirstCoverageLaunchPack.data?.summary.uniqueFiles ?? null,
+    unsafeItems: reports.broadFirstCoverageLaunchPack.data?.summary.unsafeItems ?? null,
+    unsafeItemList: reports.broadFirstCoverageLaunchPack.data?.unsafeItems ?? [],
+    zeroPublicClusters: reports.broadFirstCoverageLaunchPack.data?.summary.zeroPublicClusters ?? null,
+  },
   preflight: {
     checked: reports.preflight.data?.summary.checked ?? null,
     failed: reports.preflight.data?.summary.failed ?? null,
@@ -1842,6 +1896,9 @@ function buildNextActions() {
   if (!reports.autopilotBroadWaveOptimization.data || reports.autopilotBroadWaveOptimization.data.summary.unsafeItems > 0) {
     return ["Open docs/autopilot-broad-wave-optimization.md and resolve unsafe broad wave optimization items before any approval action."];
   }
+  if (!reports.broadFirstCoverageLaunchPack.data || reports.broadFirstCoverageLaunchPack.data.summary.unsafeItems > 0) {
+    return ["Open docs/broad-first-coverage-launch-pack.md and resolve unsafe first-coverage launch candidates before any approval action."];
+  }
   if (!reports.reviewOptimizationBrief.data || reports.reviewOptimizationBrief.data.summary.unsafeCommands > 0) {
     return ["Open docs/review-optimization-brief.md and resolve unsafe or missing copydesk guidance before manual review."];
   }
@@ -1919,6 +1976,7 @@ function buildNextActions() {
     "Use docs/autopilot-broad-freshness-triage.md to fact-check high-demand AI drafts before any approval action.",
     "Use docs/autopilot-broad-publish-waves.md to review 1-3 high-demand AI drafts per human-approved batch.",
     "Use docs/autopilot-broad-wave-optimization.md to apply SEO snippet, opening, internal-link, and risk-language improvements during human review.",
+    "Use docs/broad-first-coverage-launch-pack.md to review one first-coverage candidate for each broad AI cluster with zero public coverage.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
     "If approved by a human, run mark:review with --confirm-human for approved files only.",
     "Publish only status=review articles in a 1-3 article batch after a dry-run.",
@@ -2367,6 +2425,40 @@ function toMarkdown(data: typeof payload) {
     ...data.autopilotBroadWaveOptimization.itemsList.map(
       (item) =>
         `| ${item.wave} | ${item.readyForHumanOptimizationReview} | ${item.publicLinkSuggestion ? item.publicLinkSuggestion.url : "missing"} | ${item.articleSignals.h2Count} | ${item.articleSignals.descriptionLength} | ${item.actionChecklist.length} | ${item.warningRemediation.length} | ${item.title} | ${item.file} |`,
+    ),
+    "",
+    "## Broad First Coverage Launch Pack",
+    "",
+    `- Zero-public clusters: ${data.broadFirstCoverageLaunchPack.zeroPublicClusters}`,
+    `- First coverage target: ${data.broadFirstCoverageLaunchPack.firstCoverageTarget}`,
+    `- Clusters selected: ${data.broadFirstCoverageLaunchPack.clustersSelected}`,
+    `- Unique files: ${data.broadFirstCoverageLaunchPack.uniqueFiles}`,
+    `- Safe draft items: ${data.broadFirstCoverageLaunchPack.safeDraftItems}`,
+    `- Items with search queries: ${data.broadFirstCoverageLaunchPack.itemsWithSearchQueries}`,
+    `- Items with source targets: ${data.broadFirstCoverageLaunchPack.itemsWithSourceTargets}`,
+    `- Items with fact-check checklist: ${data.broadFirstCoverageLaunchPack.itemsWithFactCheckChecklist}`,
+    `- Command boundaries: ${data.broadFirstCoverageLaunchPack.commandBoundaries}`,
+    `- Traffic data available: ${data.broadFirstCoverageLaunchPack.trafficDataAvailable}`,
+    `- Unsafe items: ${data.broadFirstCoverageLaunchPack.unsafeItems}`,
+    "",
+    "Unsafe first coverage launch items:",
+    "",
+    ...(data.broadFirstCoverageLaunchPack.unsafeItemList.length
+      ? data.broadFirstCoverageLaunchPack.unsafeItemList.map((item) => `- ${JSON.stringify(item)}`)
+      : ["- none"]),
+    "",
+    "| Ready | Safe | Gap | Queries | Sources | Checks | Risk | Cluster | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.broadFirstCoverageLaunchPack.items.map(
+      (item) =>
+        `| ${item.readyForFirstCoverageReview} | ${item.safeDraft} | ${item.gapScore} | ${item.searchQueries.length} | ${item.sourceTargets.length} | ${item.humanFactCheckChecklist.length} | ${item.triageFreshnessRisk || "n/a"} | ${item.cluster} | ${item.title} | ${item.file} |`,
+    ),
+    "",
+    "| Cluster | Mark review after human approval | Publish dry-run after review | Publish confirm |",
+    "| --- | --- | --- | --- |",
+    ...data.broadFirstCoverageLaunchPack.items.map(
+      (item) =>
+        `| ${item.cluster} | \`${item.commandBoundary.markReviewAfterHumanApproval}\` | \`${item.commandBoundary.publishDryRunAfterReview}\` | ${item.commandBoundary.publishConfirm} |`,
     ),
     "",
     "## Review Optimization Brief",

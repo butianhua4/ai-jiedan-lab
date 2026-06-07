@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-07T03:05:04.306Z
+Generated at: 2026-06-07T03:17:58.611Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 117
-- Passed: 117
+- Checks: 119
+- Passed: 119
 - Failed: 0
 
 ## Checks
@@ -30,7 +30,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=135, unsafeClaims=0, watchMentions=1311 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=137, unsafeClaims=0, watchMentions=1376 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=15, expansion=19, candidates=19 |
@@ -67,6 +67,8 @@ Overall: PASS
 | autopilot broad publish waves preserve human approval command boundaries | PASS | ready=24, safe=24, approvalWaves=8 |
 | autopilot broad wave optimization is read-only and covers publish waves | PASS | items=24, waves=8, readyWaves=8, unsafe=0 |
 | autopilot broad wave optimization has actionable SEO and approval guidance | PASS | ready=24, checklists=24, links=14 |
+| broad first coverage launch pack is read-only and covers zero-public clusters | PASS | selected=8, zeroPublic=8, unique=8, unsafe=0 |
+| broad first coverage launch pack preserves human review boundaries | PASS | safe=8, commands=8, sources=8, checks=8 |
 | review optimization brief is read-only and covers ready action-board tasks | PASS | briefs=11, ready=11, unsafeCommands=0 |
 | review optimization brief has actionable copydesk guidance | PASS | withAction=11, missingPublicLinkItems=10, exactQueryWeak=3 |
 | search snippet readiness audit is read-only and covers public plus expansion items | PASS | public=15, expansion=19, scoped=34 |

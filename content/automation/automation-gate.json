@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T03:05:04.306Z",
+  "generatedAt": "2026-06-07T03:17:58.611Z",
   "ok": true,
   "summary": {
-    "checks": 117,
+    "checks": 119,
     "failed": 0,
-    "passed": 117
+    "passed": 119
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=135, unsafeClaims=0, watchMentions=1311"
+      "detail": "filesScanned=137, unsafeClaims=0, watchMentions=1376"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -271,6 +271,16 @@
       "name": "autopilot broad wave optimization has actionable SEO and approval guidance",
       "ok": true,
       "detail": "ready=24, checklists=24, links=14"
+    },
+    {
+      "name": "broad first coverage launch pack is read-only and covers zero-public clusters",
+      "ok": true,
+      "detail": "selected=8, zeroPublic=8, unique=8, unsafe=0"
+    },
+    {
+      "name": "broad first coverage launch pack preserves human review boundaries",
+      "ok": true,
+      "detail": "safe=8, commands=8, sources=8, checks=8"
     },
     {
       "name": "review optimization brief is read-only and covers ready action-board tasks",

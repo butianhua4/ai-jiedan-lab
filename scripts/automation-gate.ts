@@ -864,6 +864,45 @@ async function main() {
     };
     waveSummaries?: Array<{ items?: number; readyItems?: number; unsafeItems?: number }>;
   }>("content/automation/autopilot-broad-wave-optimization.json");
+  const broadFirstCoverageLaunchPack = readJson<{
+    guardrails: {
+      autoCreateArticles: boolean;
+      autoEditArticles: boolean;
+      autoMarkReview: boolean;
+      autoPublish: boolean;
+      trafficClaim: string;
+    };
+    items?: Array<{
+      commandBoundary?: { markReviewAfterHumanApproval?: string; publishConfirm?: string; publishDryRunAfterReview?: string };
+      contentAngles?: unknown[];
+      humanFactCheckChecklist?: unknown[];
+      humanReviewRequired?: boolean;
+      noindex?: boolean;
+      readyForFirstCoverageReview?: boolean;
+      reviewFocus?: unknown[];
+      safeDraft?: boolean;
+      searchQueries?: unknown[];
+      sourceTargets?: unknown[];
+      status?: string;
+      unsafeReasons?: unknown[];
+    }>;
+    summary: {
+      clustersSelected: number;
+      commandBoundaries: number;
+      firstCoverageTarget: number;
+      humanReviewRequiredItems: number;
+      itemsWithContentAngles: number;
+      itemsWithFactCheckChecklist: number;
+      itemsWithReviewFocus: number;
+      itemsWithSearchQueries: number;
+      itemsWithSourceTargets: number;
+      safeDraftItems: number;
+      trafficDataAvailable: boolean;
+      uniqueFiles: number;
+      unsafeItems: number;
+      zeroPublicClusters: number;
+    };
+  }>("content/automation/broad-first-coverage-launch-pack.json");
   const reviewOptimizationBrief = readJson<{
     briefs?: Array<{
       file: string;
@@ -1664,8 +1703,56 @@ async function main() {
               item.commandBoundary?.publishConfirm === "not-included" &&
               (item.unsafeReasons?.length || 0) === 0,
           ),
-        ),
+      ),
       detail: `ready=${autopilotBroadWaveOptimization.summary.readyItems}, checklists=${autopilotBroadWaveOptimization.summary.itemsWithActionChecklist}, links=${autopilotBroadWaveOptimization.summary.itemsWithPublicLinkSuggestion}`,
+    },
+    {
+      name: "broad first coverage launch pack is read-only and covers zero-public clusters",
+      ok:
+        broadFirstCoverageLaunchPack.guardrails.autoCreateArticles === false &&
+        broadFirstCoverageLaunchPack.guardrails.autoEditArticles === false &&
+        broadFirstCoverageLaunchPack.guardrails.autoMarkReview === false &&
+        broadFirstCoverageLaunchPack.guardrails.autoPublish === false &&
+        broadFirstCoverageLaunchPack.guardrails.trafficClaim === "not-included" &&
+        broadFirstCoverageLaunchPack.summary.zeroPublicClusters === autopilotBroadAiDemandBrief.summary.clustersWithoutPublicCoverage &&
+        broadFirstCoverageLaunchPack.summary.firstCoverageTarget === publicSurfaceInventory.summary.broadClustersWithoutPublicCoverage &&
+        broadFirstCoverageLaunchPack.summary.clustersSelected === broadFirstCoverageLaunchPack.summary.zeroPublicClusters &&
+        broadFirstCoverageLaunchPack.summary.uniqueFiles === broadFirstCoverageLaunchPack.summary.clustersSelected &&
+        broadFirstCoverageLaunchPack.summary.unsafeItems === 0 &&
+        broadFirstCoverageLaunchPack.summary.trafficDataAvailable === false,
+      detail: `selected=${broadFirstCoverageLaunchPack.summary.clustersSelected}, zeroPublic=${broadFirstCoverageLaunchPack.summary.zeroPublicClusters}, unique=${broadFirstCoverageLaunchPack.summary.uniqueFiles}, unsafe=${broadFirstCoverageLaunchPack.summary.unsafeItems}`,
+    },
+    {
+      name: "broad first coverage launch pack preserves human review boundaries",
+      ok:
+        broadFirstCoverageLaunchPack.summary.safeDraftItems === broadFirstCoverageLaunchPack.summary.clustersSelected &&
+        broadFirstCoverageLaunchPack.summary.humanReviewRequiredItems === broadFirstCoverageLaunchPack.summary.clustersSelected &&
+        broadFirstCoverageLaunchPack.summary.commandBoundaries === broadFirstCoverageLaunchPack.summary.clustersSelected &&
+        broadFirstCoverageLaunchPack.summary.itemsWithSearchQueries === broadFirstCoverageLaunchPack.summary.clustersSelected &&
+        broadFirstCoverageLaunchPack.summary.itemsWithSourceTargets === broadFirstCoverageLaunchPack.summary.clustersSelected &&
+        broadFirstCoverageLaunchPack.summary.itemsWithReviewFocus === broadFirstCoverageLaunchPack.summary.clustersSelected &&
+        broadFirstCoverageLaunchPack.summary.itemsWithFactCheckChecklist === broadFirstCoverageLaunchPack.summary.clustersSelected &&
+        broadFirstCoverageLaunchPack.summary.itemsWithContentAngles === broadFirstCoverageLaunchPack.summary.clustersSelected &&
+        Boolean(
+          broadFirstCoverageLaunchPack.items?.every(
+            (item) =>
+              item.readyForFirstCoverageReview === true &&
+              item.safeDraft === true &&
+              item.status === "draft" &&
+              item.noindex === true &&
+              item.humanReviewRequired === true &&
+              (item.searchQueries?.length || 0) >= 4 &&
+              (item.sourceTargets?.length || 0) > 0 &&
+              (item.reviewFocus?.length || 0) >= 3 &&
+              (item.contentAngles?.length || 0) >= 3 &&
+              (item.humanFactCheckChecklist?.length || 0) >= 6 &&
+              (item.unsafeReasons?.length || 0) === 0 &&
+              item.commandBoundary?.markReviewAfterHumanApproval?.includes("--confirm-human") &&
+              !item.commandBoundary?.publishDryRunAfterReview?.includes("--confirm") &&
+              item.commandBoundary?.publishConfirm === "not-included",
+          ),
+        ),
+      detail: `safe=${broadFirstCoverageLaunchPack.summary.safeDraftItems}, commands=${broadFirstCoverageLaunchPack.summary.commandBoundaries}, sources=${broadFirstCoverageLaunchPack.summary.itemsWithSourceTargets}, checks=${broadFirstCoverageLaunchPack.summary.itemsWithFactCheckChecklist}`,
     },
     {
       name: "review optimization brief is read-only and covers ready action-board tasks",

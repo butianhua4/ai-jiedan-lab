@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T03:05:12.431Z
+Generated at: 2026-06-07T03:17:59.152Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -53,7 +53,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=pt-br
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - https://docs.dify.ai -> https://docs.dify.ai/en/use-dify/getting-started/introduction
@@ -459,6 +459,46 @@ Unsafe broad wave optimization items:
 | 3 | true | /blog/codex-code-review-delivery-checklist | 11 | 59 | 15 | 2 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | 3 | true | /blog/vercel-env-variable-missing-beginner-guide | 11 | 102 | 15 | 2 | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
 
+## Broad First Coverage Launch Pack
+
+- Zero-public clusters: 8
+- First coverage target: 8
+- Clusters selected: 8
+- Unique files: 8
+- Safe draft items: 8
+- Items with search queries: 8
+- Items with source targets: 8
+- Items with fact-check checklist: 8
+- Command boundaries: 8
+- Traffic data available: false
+- Unsafe items: 0
+
+Unsafe first coverage launch items:
+
+- none
+
+| Ready | Safe | Gap | Queries | Sources | Checks | Risk | Cluster | Title | File |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| true | true | 321 | 5 | 10 | 24 | high | 开源大模型部署：Ollama、vLLM、TGI、RunPod | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| true | true | 317 | 5 | 8 | 27 | high | Agent 部署、工具调用和生产安全 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | true | 315 | 5 | 3 | 24 | high | Agent 记忆：短期记忆、长期记忆、RAG、Postgres | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
+| true | true | 313 | 5 | 10 | 27 | high | RAG、知识库、向量数据库和引用溯源 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | true | 311 | 6 | 8 | 27 | high | 全行业 AI 提示词和工作流模板 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | true | 307 | 5 | 3 | 20 | high | Dify、n8n、Coze、Flowise、MCP 自动化部署 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
+| true | true | 293 | 5 | 12 | 22 | high | AI API 接入、限流、成本和多模型路由 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| true | true | 287 | 5 | 3 | 14 | n/a | LLM 观测、评测、日志和上线后质量 | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+
+| Cluster | Mark review after human approval | Publish dry-run after review | Publish confirm |
+| --- | --- | --- | --- |
+| 开源大模型部署：Ollama、vLLM、TGI、RunPod | `npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human` | `npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx` | not-included |
+| Agent 部署、工具调用和生产安全 | `npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human` | `npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx` | not-included |
+| Agent 记忆：短期记忆、长期记忆、RAG、Postgres | `npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human` | `npm run publish:articles -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx` | not-included |
+| RAG、知识库、向量数据库和引用溯源 | `npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human` | `npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx` | not-included |
+| 全行业 AI 提示词和工作流模板 | `npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human` | `npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx` | not-included |
+| Dify、n8n、Coze、Flowise、MCP 自动化部署 | `npm run mark:review -- --file=content/blog/mcp-server-deployment-security-checklist.mdx --confirm-human` | `npm run publish:articles -- --file=content/blog/mcp-server-deployment-security-checklist.mdx` | not-included |
+| AI API 接入、限流、成本和多模型路由 | `npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human` | `npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx` | not-included |
+| LLM 观测、评测、日志和上线后质量 | `npm run mark:review -- --file=content/blog/agent-tool-permission-safety-guide.mdx --confirm-human` | `npm run publish:articles -- --file=content/blog/agent-tool-permission-safety-guide.mdx` | not-included |
+
 ## Review Optimization Brief
 
 - Briefs: 11
@@ -654,8 +694,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 135
-- Traffic claim watch mentions: 1311
+- Traffic claim files scanned: 137
+- Traffic claim watch mentions: 1376
 
 ## Public Surface Inventory
 
@@ -1069,7 +1109,7 @@ Public categories:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-07T03:04:49.905Z
+- Latest check: 2026-06-07T03:17:46.305Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
@@ -1107,6 +1147,7 @@ Public categories:
 - Use docs/autopilot-broad-freshness-triage.md to fact-check high-demand AI drafts before any approval action.
 - Use docs/autopilot-broad-publish-waves.md to review 1-3 high-demand AI drafts per human-approved batch.
 - Use docs/autopilot-broad-wave-optimization.md to apply SEO snippet, opening, internal-link, and risk-language improvements during human review.
+- Use docs/broad-first-coverage-launch-pack.md to review one first-coverage candidate for each broad AI cluster with zero public coverage.
 - Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.
 - If approved by a human, run mark:review with --confirm-human for approved files only.
 - Publish only status=review articles in a 1-3 article batch after a dry-run.

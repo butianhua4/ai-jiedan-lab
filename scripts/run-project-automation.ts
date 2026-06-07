@@ -66,6 +66,7 @@ const tasks: Task[] = [
   { title: "Generate autopilot broad freshness triage", args: ["run", "automation:autopilot-broad-freshness"] },
   { title: "Generate autopilot broad publish waves", args: ["run", "automation:autopilot-broad-waves"] },
   { title: "Generate autopilot broad wave optimization", args: ["run", "automation:autopilot-broad-wave-optimization"] },
+  { title: "Generate broad first coverage launch pack", args: ["run", "automation:broad-first-coverage-launch"] },
   { title: "Generate review coverage report", args: ["run", "automation:review-coverage"] },
   { title: "Generate manual review workbench", args: ["run", "automation:workbench"] },
   { title: "Run searchability check", args: ["run", "--silent", "searchability:check"], outputFile: "content/automation/searchability-check.json" },
