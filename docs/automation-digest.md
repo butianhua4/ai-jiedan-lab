@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T01:17:22.144Z
+Generated at: 2026-06-07T01:27:20.640Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -53,7 +53,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=vi
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=it
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - https://docs.dify.ai -> https://docs.dify.ai/en/use-dify/getting-started/introduction
@@ -226,6 +226,27 @@ Unsafe source-verification items:
 | true | true | 5 | 10 | 20 | 15 | 10 | https://platform.openai.com/docs | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | true | true | 6 | 6 | 21 | 15 | 10 | https://ai-sdk.dev/docs | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | true | 10 | 10 | 16 | 9 | 6 | https://platform.openai.com/docs/guides/agents | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+
+## Autopilot Human Review Playbook
+
+- Items: 3
+- Ready items: 3
+- Safe draft items: 3
+- Items with command boundary: 3
+- Items with search actions: 3
+- Items with source actions: 3
+- Items with internal-link actions: 3
+- Unsafe items: 0
+
+Unsafe human-review playbook items:
+
+- none
+
+| Ready | Safe | Search actions | Source actions | Link actions | Mark-review gated | Publish confirm | Title | File |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| true | true | 13 | 42 | 6 | true | not-included | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | true | 19 | 43 | 6 | true | not-included | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | true | 21 | 43 | 6 | true | not-included | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 
 ## Review Optimization Brief
 
@@ -422,8 +443,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 117
-- Traffic claim watch mentions: 918
+- Traffic claim files scanned: 119
+- Traffic claim watch mentions: 940
 
 ## Preflight
 
@@ -785,7 +806,7 @@ Next review files:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-07T01:16:51.625Z
+- Latest check: 2026-06-07T01:26:44.697Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85
@@ -814,6 +835,7 @@ Next review files:
 - Use docs/autopilot-search-intent-brief.md to tune top-3 search-intent wording during human review.
 - Use docs/autopilot-internal-link-brief.md to add one contextual public internal link during human review.
 - Use docs/autopilot-source-verification-brief.md to verify top-3 official sources and fast-changing claims during human review.
+- Use docs/autopilot-human-review-playbook.md as the merged top-3 checklist before any mark:review command.
 - Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.
 - If approved by a human, run mark:review with --confirm-human for approved files only.
 - Publish only status=review articles in a 1-3 article batch after a dry-run.

@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-07T01:17:12.578Z",
+  "generatedAt": "2026-06-07T01:27:10.269Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 117,
+    "filesScanned": 119,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 918
+    "watchMentions": 940
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -128,55 +128,55 @@
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 415,
+      "line": 436,
       "reason": "traffic-related mention",
       "text": "## Traffic Evidence"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 417,
+      "line": 438,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 418,
+      "line": 439,
       "reason": "traffic-related mention",
       "text": "- Can claim traffic: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 420,
+      "line": 441,
       "reason": "traffic-related mention",
       "text": "- Measured traffic sources: none"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 421,
+      "line": 442,
       "reason": "traffic-related mention",
       "text": "- Search Console verification evidence: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 424,
+      "line": 445,
       "reason": "traffic-related mention",
       "text": "- Unsupported traffic claims: 0"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 425,
+      "line": 446,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 117"
+      "text": "- Traffic claim files scanned: 119"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 426,
+      "line": 447,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 918"
+      "text": "- Traffic claim watch mentions: 940"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 462,
+      "line": 483,
       "reason": "traffic-related mention",
       "text": "| Dify、n8n、MCP 和无代码 AI 自动化 | 258 | 0 | 5 | 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 |"
     },
@@ -196,7 +196,7 @@
       "file": "docs/automation-gate.md",
       "line": 33,
       "reason": "traffic-related mention",
-      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=117, unsafeClaims=0, watchMentions=918 |"
+      "text": "| traffic claim guard found no unsupported claims | PASS | filesScanned=119, unsafeClaims=0, watchMentions=940 |"
     },
     {
       "file": "docs/autopilot-approval-packet.md",
@@ -225,6 +225,54 @@
     {
       "file": "docs/autopilot-approval-packet.md",
       "line": 204,
+      "reason": "traffic-related mention",
+      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
+    },
+    {
+      "file": "docs/autopilot-human-review-playbook.md",
+      "line": 19,
+      "reason": "traffic-related mention",
+      "text": "- Traffic data available: false"
+    },
+    {
+      "file": "docs/autopilot-human-review-playbook.md",
+      "line": 20,
+      "reason": "traffic-related mention",
+      "text": "- Can claim traffic: false"
+    },
+    {
+      "file": "docs/autopilot-human-review-playbook.md",
+      "line": 68,
+      "reason": "traffic-related mention",
+      "text": "- Do not claim traffic, ranking, revenue, or conversion lift without measured evidence."
+    },
+    {
+      "file": "docs/autopilot-human-review-playbook.md",
+      "line": 93,
+      "reason": "traffic-related mention",
+      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
+    },
+    {
+      "file": "docs/autopilot-human-review-playbook.md",
+      "line": 128,
+      "reason": "traffic-related mention",
+      "text": "- Do not claim traffic, ranking, revenue, or conversion lift without measured evidence."
+    },
+    {
+      "file": "docs/autopilot-human-review-playbook.md",
+      "line": 154,
+      "reason": "traffic-related mention",
+      "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
+    },
+    {
+      "file": "docs/autopilot-human-review-playbook.md",
+      "line": 189,
+      "reason": "traffic-related mention",
+      "text": "- Do not claim traffic, ranking, revenue, or conversion lift without measured evidence."
+    },
+    {
+      "file": "docs/autopilot-human-review-playbook.md",
+      "line": 215,
       "reason": "traffic-related mention",
       "text": "- Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
     },
@@ -443,54 +491,6 @@
       "line": 217,
       "reason": "traffic-related mention",
       "text": "- Search demand note: Broad search-intent theme, not measured traffic or keyword volume."
-    },
-    {
-      "file": "docs/github-workflow.md",
-      "line": 77,
-      "reason": "traffic-related mention",
-      "text": "5. 关闭不需要的访问保护"
-    },
-    {
-      "file": "docs/industry-prompt-coverage.md",
-      "line": 11,
-      "reason": "traffic-related mention",
-      "text": "- Note: This coverage matrix is read-only. It organizes broad industry prompt drafts for manual review and does not claim measured traffic."
-    },
-    {
-      "file": "docs/industry-prompt-coverage.md",
-      "line": 53,
-      "reason": "traffic-related mention",
-      "text": "| 医疗行政 | 169 | 0 | 1 | 1 | 医疗 AI 提示词<br>病历摘要 AI prompt | 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 |"
-    },
-    {
-      "file": "docs/industry-prompt-coverage.md",
-      "line": 98,
-      "reason": "traffic-related mention",
-      "text": "| 31 | 100 | informational | 医疗 AI 提示词 | 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 | content/blog/healthcare-admin-ai-prompts-guide.mdx |"
-    },
-    {
-      "file": "docs/industry-prompt-coverage.md",
-      "line": 550,
-      "reason": "traffic-related mention",
-      "text": "- 随访问卷"
-    },
-    {
-      "file": "docs/industry-prompt-coverage.md",
-      "line": 558,
-      "reason": "traffic-related mention",
-      "text": "- 随访问卷 AI 提示词"
-    },
-    {
-      "file": "docs/industry-prompt-coverage.md",
-      "line": 579,
-      "reason": "traffic-related mention",
-      "text": "| 31 | 100 | informational | 医疗 AI 提示词 | 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 | content/blog/healthcare-admin-ai-prompts-guide.mdx |"
-    },
-    {
-      "file": "docs/industry-prompt-review-pack.md",
-      "line": 17,
-      "reason": "traffic-related mention",
-      "text": "- Traffic note: Search queries are broad intent seeds, not measured traffic, rankings, clicks, impressions, or income."
     }
   ],
   "nextActions": [

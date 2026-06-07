@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T01:16:23.319Z",
+  "generatedAt": "2026-06-07T01:26:15.897Z",
   "failures": [],
   "ok": true,
   "tasks": [
@@ -49,6 +49,7 @@
     "Generate autopilot search intent brief",
     "Generate autopilot internal link brief",
     "Generate autopilot source verification brief",
+    "Generate autopilot human review playbook",
     "Generate review coverage report",
     "Generate manual review workbench",
     "Run searchability check",

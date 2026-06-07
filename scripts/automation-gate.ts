@@ -590,6 +590,35 @@ async function main() {
       unsafeItems: number;
     };
   }>("content/automation/autopilot-source-verification-brief.json");
+  const autopilotHumanReviewPlaybook = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    items?: Array<{
+      internalLinkActions?: unknown[];
+      manualOnlyCommands?: { markReviewAfterHumanApproval?: string; publishConfirm?: string; publishDryRunAfterReview?: string };
+      readyForHumanReview?: boolean;
+      safeDraft?: boolean;
+      searchActions?: unknown[];
+      sourceActions?: unknown[];
+    }>;
+    sourceEvidence: {
+      approvalPacketUnsafeItems: number;
+      internalLinkUnsafeItems: number;
+      optimizationUnsafeCommands: number;
+      searchIntentUnsafeItems: number;
+      sourceVerificationUnsafeItems: number;
+    };
+    summary: {
+      approvalItems: number;
+      items: number;
+      itemsWithCommandBoundary: number;
+      itemsWithInternalLinkActions: number;
+      itemsWithSearchActions: number;
+      itemsWithSourceActions: number;
+      readyItems: number;
+      safeDraftItems: number;
+      unsafeItems: number;
+    };
+  }>("content/automation/autopilot-human-review-playbook.json");
   const reviewOptimizationBrief = readJson<{
     briefs?: Array<{
       file: string;
@@ -1083,6 +1112,46 @@ async function main() {
           ),
         ),
       detail: `reachableItems=${autopilotSourceVerificationBrief.summary.itemsWithReachableSources}, official=${autopilotSourceVerificationBrief.summary.itemsWithOfficialSources}, factChecks=${autopilotSourceVerificationBrief.summary.itemsWithFactCheckQueries}, approvalChecks=${autopilotSourceVerificationBrief.summary.itemsWithApprovalChecklist}`,
+    },
+    {
+      name: "autopilot human review playbook covers approval packet",
+      ok:
+        autopilotHumanReviewPlaybook.guardrails.autoEditArticles === false &&
+        autopilotHumanReviewPlaybook.guardrails.autoMarkReview === false &&
+        autopilotHumanReviewPlaybook.guardrails.autoPublish === false &&
+        autopilotHumanReviewPlaybook.summary.approvalItems === autopilotApprovalPacket.summary.items &&
+        autopilotHumanReviewPlaybook.summary.items === autopilotApprovalPacket.summary.items &&
+        autopilotHumanReviewPlaybook.sourceEvidence.approvalPacketUnsafeItems === 0 &&
+        autopilotHumanReviewPlaybook.sourceEvidence.searchIntentUnsafeItems === 0 &&
+        autopilotHumanReviewPlaybook.sourceEvidence.internalLinkUnsafeItems === 0 &&
+        autopilotHumanReviewPlaybook.sourceEvidence.sourceVerificationUnsafeItems === 0 &&
+        autopilotHumanReviewPlaybook.sourceEvidence.optimizationUnsafeCommands === 0 &&
+        autopilotHumanReviewPlaybook.summary.unsafeItems === 0,
+      detail: `items=${autopilotHumanReviewPlaybook.summary.items}, ready=${autopilotHumanReviewPlaybook.summary.readyItems}, unsafe=${autopilotHumanReviewPlaybook.summary.unsafeItems}`,
+    },
+    {
+      name: "autopilot human review playbook keeps actions human-gated",
+      ok:
+        autopilotHumanReviewPlaybook.summary.readyItems === autopilotHumanReviewPlaybook.summary.items &&
+        autopilotHumanReviewPlaybook.summary.safeDraftItems === autopilotHumanReviewPlaybook.summary.items &&
+        autopilotHumanReviewPlaybook.summary.itemsWithCommandBoundary === autopilotHumanReviewPlaybook.summary.items &&
+        autopilotHumanReviewPlaybook.summary.itemsWithSearchActions === autopilotHumanReviewPlaybook.summary.items &&
+        autopilotHumanReviewPlaybook.summary.itemsWithSourceActions === autopilotHumanReviewPlaybook.summary.items &&
+        autopilotHumanReviewPlaybook.summary.itemsWithInternalLinkActions === autopilotHumanReviewPlaybook.summary.items &&
+        Boolean(
+          autopilotHumanReviewPlaybook.items?.every(
+            (item) =>
+              item.readyForHumanReview === true &&
+              item.safeDraft === true &&
+              (item.searchActions?.length || 0) > 0 &&
+              (item.sourceActions?.length || 0) > 0 &&
+              (item.internalLinkActions?.length || 0) > 0 &&
+              item.manualOnlyCommands?.markReviewAfterHumanApproval?.includes("--confirm-human") &&
+              !item.manualOnlyCommands?.publishDryRunAfterReview?.includes("--confirm") &&
+              item.manualOnlyCommands?.publishConfirm === "not-included",
+          ),
+        ),
+      detail: `commands=${autopilotHumanReviewPlaybook.summary.itemsWithCommandBoundary}, search=${autopilotHumanReviewPlaybook.summary.itemsWithSearchActions}, source=${autopilotHumanReviewPlaybook.summary.itemsWithSourceActions}, links=${autopilotHumanReviewPlaybook.summary.itemsWithInternalLinkActions}`,
     },
     {
       name: "review optimization brief is read-only and covers ready action-board tasks",

@@ -1,14 +1,14 @@
 # Traffic Claim Guard
-Generated at: 2026-06-07T01:17:12.578Z
+Generated at: 2026-06-07T01:27:10.269Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
 - Note: This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples.
 ## Summary
-- filesScanned: 117
+- filesScanned: 119
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 918
+- watchMentions: 940
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -33,23 +33,31 @@ None.
 | docs/ai-deployment-review-pack.md | 562 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
 | docs/ai-deployment-review-pack.md | 618 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
 | docs/automation-digest.md | 14 | - Traffic data available: false |
-| docs/automation-digest.md | 415 | ## Traffic Evidence |
-| docs/automation-digest.md | 417 | - Traffic data available: false |
-| docs/automation-digest.md | 418 | - Can claim traffic: false |
-| docs/automation-digest.md | 420 | - Measured traffic sources: none |
-| docs/automation-digest.md | 421 | - Search Console verification evidence: false |
-| docs/automation-digest.md | 424 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 425 | - Traffic claim files scanned: 117 |
-| docs/automation-digest.md | 426 | - Traffic claim watch mentions: 918 |
-| docs/automation-digest.md | 462 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
+| docs/automation-digest.md | 436 | ## Traffic Evidence |
+| docs/automation-digest.md | 438 | - Traffic data available: false |
+| docs/automation-digest.md | 439 | - Can claim traffic: false |
+| docs/automation-digest.md | 441 | - Measured traffic sources: none |
+| docs/automation-digest.md | 442 | - Search Console verification evidence: false |
+| docs/automation-digest.md | 445 | - Unsupported traffic claims: 0 |
+| docs/automation-digest.md | 446 | - Traffic claim files scanned: 119 |
+| docs/automation-digest.md | 447 | - Traffic claim watch mentions: 940 |
+| docs/automation-digest.md | 483 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
 | docs/automation-gate.md | 31 | \| traffic evidence audit passed and is read-only \| PASS \| failedChecks=0, measuredTrafficSources=0 \| |
 | docs/automation-gate.md | 32 | \| traffic is not claimed without measured metrics \| PASS \| trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 \| |
-| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=117, unsafeClaims=0, watchMentions=918 \| |
+| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=119, unsafeClaims=0, watchMentions=940 \| |
 | docs/autopilot-approval-packet.md | 18 | - Traffic data available: false |
 | docs/autopilot-approval-packet.md | 19 | - Can claim traffic: false |
 | docs/autopilot-approval-packet.md | 95 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
 | docs/autopilot-approval-packet.md | 150 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
 | docs/autopilot-approval-packet.md | 204 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
+| docs/autopilot-human-review-playbook.md | 19 | - Traffic data available: false |
+| docs/autopilot-human-review-playbook.md | 20 | - Can claim traffic: false |
+| docs/autopilot-human-review-playbook.md | 68 | - Do not claim traffic, ranking, revenue, or conversion lift without measured evidence. |
+| docs/autopilot-human-review-playbook.md | 93 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
+| docs/autopilot-human-review-playbook.md | 128 | - Do not claim traffic, ranking, revenue, or conversion lift without measured evidence. |
+| docs/autopilot-human-review-playbook.md | 154 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
+| docs/autopilot-human-review-playbook.md | 189 | - Do not claim traffic, ranking, revenue, or conversion lift without measured evidence. |
+| docs/autopilot-human-review-playbook.md | 215 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
 | docs/autopilot-internal-link-brief.md | 19 | - Traffic data available: false |
 | docs/autopilot-internal-link-brief.md | 20 | - Can claim traffic: false |
 | docs/autopilot-review-queue.md | 18 | - Traffic data available: false |
@@ -86,14 +94,6 @@ None.
 | docs/content-opportunity-backlog.md | 157 | - Search demand note: Broad search-intent theme, not measured traffic or keyword volume. |
 | docs/content-opportunity-backlog.md | 187 | - Search demand note: Broad search-intent theme, not measured traffic or keyword volume. |
 | docs/content-opportunity-backlog.md | 217 | - Search demand note: Broad search-intent theme, not measured traffic or keyword volume. |
-| docs/github-workflow.md | 77 | 5. 关闭不需要的访问保护 |
-| docs/industry-prompt-coverage.md | 11 | - Note: This coverage matrix is read-only. It organizes broad industry prompt drafts for manual review and does not claim measured traffic. |
-| docs/industry-prompt-coverage.md | 53 | \| 医疗行政 \| 169 \| 0 \| 1 \| 1 \| 医疗 AI 提示词<br>病历摘要 AI prompt \| 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 \| |
-| docs/industry-prompt-coverage.md | 98 | \| 31 \| 100 \| informational \| 医疗 AI 提示词 \| 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 \| content/blog/healthcare-admin-ai-prompts-guide.mdx \| |
-| docs/industry-prompt-coverage.md | 550 | - 随访问卷 |
-| docs/industry-prompt-coverage.md | 558 | - 随访问卷 AI 提示词 |
-| docs/industry-prompt-coverage.md | 579 | \| 31 \| 100 \| informational \| 医疗 AI 提示词 \| 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 \| content/blog/healthcare-admin-ai-prompts-guide.mdx \| |
-| docs/industry-prompt-review-pack.md | 17 | - Traffic note: Search queries are broad intent seeds, not measured traffic, rankings, clicks, impressions, or income. |
 ## Next Actions
 - Keep saying that live/search surfaces are healthy, not that traffic exists.
 - Only report traffic after an audited source provides clicks, impressions, visits, or pageviews.

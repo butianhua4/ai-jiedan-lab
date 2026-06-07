@@ -39,6 +39,7 @@
     "automation:autopilot-search-intent": "tsx scripts/autopilot-search-intent-brief.ts",
     "automation:autopilot-internal-links": "tsx scripts/autopilot-internal-link-brief.ts",
     "automation:autopilot-source-verification": "tsx scripts/autopilot-source-verification-brief.ts",
+    "automation:autopilot-human-review": "tsx scripts/autopilot-human-review-playbook.ts",
     "automation:review-optimization-brief": "tsx scripts/review-optimization-brief.ts",
     "automation:review-cannibalization-brief": "tsx scripts/review-cannibalization-brief.ts",
     "automation:review-freshness-brief": "tsx scripts/review-freshness-brief.ts",

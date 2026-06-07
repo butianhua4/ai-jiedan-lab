@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T01:17:22.265Z",
+  "generatedAt": "2026-06-07T01:27:20.737Z",
   "ok": true,
   "summary": {
-    "checks": 99,
+    "checks": 101,
     "failed": 0,
-    "passed": 99
+    "passed": 101
   },
   "failed": [],
   "checks": [
@@ -90,7 +90,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=117, unsafeClaims=0, watchMentions=918"
+      "detail": "filesScanned=119, unsafeClaims=0, watchMentions=940"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -191,6 +191,16 @@
       "name": "autopilot source verification brief provides source-backed review tasks",
       "ok": true,
       "detail": "reachableItems=3, official=3, factChecks=3, approvalChecks=3"
+    },
+    {
+      "name": "autopilot human review playbook covers approval packet",
+      "ok": true,
+      "detail": "items=3, ready=3, unsafe=0"
+    },
+    {
+      "name": "autopilot human review playbook keeps actions human-gated",
+      "ok": true,
+      "detail": "commands=3, search=3, source=3, links=3"
     },
     {
       "name": "review optimization brief is read-only and covers ready action-board tasks",

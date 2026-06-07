@@ -499,6 +499,31 @@ type AutopilotSourceVerificationBrief = {
   unsafeItems: unknown[];
 };
 
+type AutopilotHumanReviewPlaybook = {
+  items: Array<{
+    file: string;
+    internalLinkActions: unknown[];
+    manualOnlyCommands: { markReviewAfterHumanApproval: string; publishConfirm: string; publishDryRunAfterReview: string };
+    readyForHumanReview: boolean;
+    safeDraft: boolean;
+    searchActions: unknown[];
+    sourceActions: unknown[];
+    title: string;
+  }>;
+  summary: {
+    approvalItems: number;
+    items: number;
+    itemsWithCommandBoundary: number;
+    itemsWithInternalLinkActions: number;
+    itemsWithSearchActions: number;
+    itemsWithSourceActions: number;
+    readyItems: number;
+    safeDraftItems: number;
+    unsafeItems: number;
+  };
+  unsafeItems: unknown[];
+};
+
 type ReviewOptimizationBrief = {
   nextBriefs: Array<{
     file: string;
@@ -874,6 +899,7 @@ const reports = {
   autopilotSearchIntentBrief: readJson<AutopilotSearchIntentBrief>("content/automation/autopilot-search-intent-brief.json"),
   autopilotInternalLinkBrief: readJson<AutopilotInternalLinkBrief>("content/automation/autopilot-internal-link-brief.json"),
   autopilotSourceVerificationBrief: readJson<AutopilotSourceVerificationBrief>("content/automation/autopilot-source-verification-brief.json"),
+  autopilotHumanReviewPlaybook: readJson<AutopilotHumanReviewPlaybook>("content/automation/autopilot-human-review-playbook.json"),
   reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
   reviewCannibalizationBrief: readJson<ReviewCannibalizationBrief>("content/automation/review-cannibalization-brief.json"),
   reviewFreshnessBrief: readJson<ReviewFreshnessBrief>("content/automation/review-freshness-brief.json"),
@@ -1014,6 +1040,18 @@ const payload = {
     totalReachableSources: reports.autopilotSourceVerificationBrief.data?.summary.totalReachableSources ?? null,
     unsafeItems: reports.autopilotSourceVerificationBrief.data?.summary.unsafeItems ?? null,
     unsafeItemList: reports.autopilotSourceVerificationBrief.data?.unsafeItems.slice(0, 8) ?? [],
+  },
+  autopilotHumanReviewPlaybook: {
+    items: reports.autopilotHumanReviewPlaybook.data?.summary.items ?? null,
+    itemsList: reports.autopilotHumanReviewPlaybook.data?.items.slice(0, 3) ?? [],
+    itemsWithCommandBoundary: reports.autopilotHumanReviewPlaybook.data?.summary.itemsWithCommandBoundary ?? null,
+    itemsWithInternalLinkActions: reports.autopilotHumanReviewPlaybook.data?.summary.itemsWithInternalLinkActions ?? null,
+    itemsWithSearchActions: reports.autopilotHumanReviewPlaybook.data?.summary.itemsWithSearchActions ?? null,
+    itemsWithSourceActions: reports.autopilotHumanReviewPlaybook.data?.summary.itemsWithSourceActions ?? null,
+    readyItems: reports.autopilotHumanReviewPlaybook.data?.summary.readyItems ?? null,
+    safeDraftItems: reports.autopilotHumanReviewPlaybook.data?.summary.safeDraftItems ?? null,
+    unsafeItems: reports.autopilotHumanReviewPlaybook.data?.summary.unsafeItems ?? null,
+    unsafeItemList: reports.autopilotHumanReviewPlaybook.data?.unsafeItems.slice(0, 8) ?? [],
   },
   reviewOptimizationBrief: {
     briefs: reports.reviewOptimizationBrief.data?.summary.briefs ?? null,
@@ -1377,6 +1415,9 @@ function buildNextActions() {
   if (!reports.autopilotSourceVerificationBrief.data || reports.autopilotSourceVerificationBrief.data.summary.unsafeItems > 0) {
     return ["Open docs/autopilot-source-verification-brief.md and resolve unsafe source-verification packet items before any mark:review command."];
   }
+  if (!reports.autopilotHumanReviewPlaybook.data || reports.autopilotHumanReviewPlaybook.data.summary.unsafeItems > 0) {
+    return ["Open docs/autopilot-human-review-playbook.md and resolve unsafe human-review playbook items before any mark:review command."];
+  }
   if (!reports.reviewOptimizationBrief.data || reports.reviewOptimizationBrief.data.summary.unsafeCommands > 0) {
     return ["Open docs/review-optimization-brief.md and resolve unsafe or missing copydesk guidance before manual review."];
   }
@@ -1445,6 +1486,7 @@ function buildNextActions() {
     "Use docs/autopilot-search-intent-brief.md to tune top-3 search-intent wording during human review.",
     "Use docs/autopilot-internal-link-brief.md to add one contextual public internal link during human review.",
     "Use docs/autopilot-source-verification-brief.md to verify top-3 official sources and fast-changing claims during human review.",
+    "Use docs/autopilot-human-review-playbook.md as the merged top-3 checklist before any mark:review command.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
     "If approved by a human, run mark:review with --confirm-human for approved files only.",
     "Publish only status=review articles in a 1-3 article batch after a dry-run.",
@@ -1685,6 +1727,28 @@ function toMarkdown(data: typeof payload) {
     ...data.autopilotSourceVerificationBrief.itemsList.map(
       (item) =>
         `| ${item.readyForHumanReview} | ${item.safeDraft} | ${item.reachableSources} | ${item.officialSourceTargets.length} | ${item.factCheckQueries.length} | ${item.approvalChecklist.length} | ${item.riskReviewChecklist.length} | ${item.uniqueReachableUrls[0] || "none"} | ${item.title} | ${item.file} |`,
+    ),
+    "",
+    "## Autopilot Human Review Playbook",
+    "",
+    `- Items: ${data.autopilotHumanReviewPlaybook.items}`,
+    `- Ready items: ${data.autopilotHumanReviewPlaybook.readyItems}`,
+    `- Safe draft items: ${data.autopilotHumanReviewPlaybook.safeDraftItems}`,
+    `- Items with command boundary: ${data.autopilotHumanReviewPlaybook.itemsWithCommandBoundary}`,
+    `- Items with search actions: ${data.autopilotHumanReviewPlaybook.itemsWithSearchActions}`,
+    `- Items with source actions: ${data.autopilotHumanReviewPlaybook.itemsWithSourceActions}`,
+    `- Items with internal-link actions: ${data.autopilotHumanReviewPlaybook.itemsWithInternalLinkActions}`,
+    `- Unsafe items: ${data.autopilotHumanReviewPlaybook.unsafeItems}`,
+    "",
+    "Unsafe human-review playbook items:",
+    "",
+    ...(data.autopilotHumanReviewPlaybook.unsafeItemList.length ? data.autopilotHumanReviewPlaybook.unsafeItemList.map((item) => `- ${JSON.stringify(item)}`) : ["- none"]),
+    "",
+    "| Ready | Safe | Search actions | Source actions | Link actions | Mark-review gated | Publish confirm | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.autopilotHumanReviewPlaybook.itemsList.map(
+      (item) =>
+        `| ${item.readyForHumanReview} | ${item.safeDraft} | ${item.searchActions.length} | ${item.sourceActions.length} | ${item.internalLinkActions.length} | ${item.manualOnlyCommands.markReviewAfterHumanApproval.includes("--confirm-human")} | ${item.manualOnlyCommands.publishConfirm} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Review Optimization Brief",
