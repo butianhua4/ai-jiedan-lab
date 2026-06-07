@@ -1,0 +1,344 @@
+{
+  "generatedAt": "2026-06-07T01:16:19.157Z",
+  "guardrails": {
+    "autoEditArticles": false,
+    "autoMarkReview": false,
+    "autoPublish": false,
+    "note": "Read-only source verification brief for the autopilot approval packet. It packages source evidence and human fact-check tasks without editing articles.",
+    "stopBefore": "Open and verify sources during human review only. Do not mark review or publish without explicit approval."
+  },
+  "boundaries": {
+    "canClaimTraffic": false,
+    "publicPublished": 15,
+    "publishableNow": 0,
+    "trafficDataAvailable": false
+  },
+  "sourceEvidence": {
+    "healthSummary": {
+      "checkedUrls": 18,
+      "currentReviewFiles": 3,
+      "failedUrls": 0,
+      "filesCovered": 20,
+      "filesWithReachableSource": 20,
+      "filesWithoutReachableSource": 0,
+      "missingUrlTargets": 0,
+      "nextSourcePackFiles": 19,
+      "okUrls": 18,
+      "publicGapDecisionFiles": 8,
+      "redirectedUrls": 13,
+      "sourceReferences": 147,
+      "uniqueUrls": 18
+    },
+    "packetUnsafeItems": 0
+  },
+  "summary": {
+    "approvalItems": 3,
+    "items": 3,
+    "itemsWithApprovalChecklist": 3,
+    "itemsWithFactCheckQueries": 3,
+    "itemsWithOfficialSources": 3,
+    "itemsWithReachableSources": 3,
+    "packetUnsafeItems": 0,
+    "totalReachableSources": 21,
+    "unsafeItems": 0
+  },
+  "unsafeItems": [],
+  "items": [
+    {
+      "approvalChecklist": [
+        "Article remains draft before approval: true",
+        "Article remains noindex before approval: true",
+        "Human review is required: true",
+        "Quality score is at least 100: true",
+        "Source notes are present: true",
+        "Article has at least one internal link: true",
+        "Opening section directly answers the search query.",
+        "Reviewer can explain why this article should be public now instead of staying draft.",
+        "Article remains draft: true",
+        "Article remains noindex: true",
+        "Human review flag is present: true",
+        "Article has internal links: true",
+        "Reviewer confirms the article answers one clear search intent.",
+        "Reviewer confirms factual claims against official docs before any status change.",
+        "Human confirms every fast-changing AI, API, deployment, prompt, pricing, and security claim against the listed official sources."
+      ],
+      "factCheckQueries": [
+        "全行业 AI 提示词模板 官方文档 最新",
+        "全行业 AI 提示词模板 official docs latest",
+        "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 事实核对",
+        "AI 提示词 平台限制 官方文档",
+        "AI 提示词大全",
+        "销售 AI 提示词",
+        "客服 AI 提示词",
+        "运营 AI 提示词",
+        "全行业 AI 提示词模板 official documentation current limits",
+        "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 fact check official docs",
+        "AI 提示词 official docs limits pricing changelog",
+        "HR AI 提示词",
+        "ChatGPT prompts for business official docs fact check",
+        "AI prompt template library official docs fact check",
+        "industry AI prompts official docs fact check",
+        "best AI prompts for work official docs fact check",
+        "AI 提示词大全 official docs fact check",
+        "ChatGPT 提示词模板 official docs fact check",
+        "全行业 AI 提示词 official docs fact check",
+        "AI prompt library official docs fact check"
+      ],
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "officialSourceTargets": [
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation",
+        "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
+        "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/",
+        "OpenAI docs: https://platform.openai.com/docs"
+      ],
+      "readyForHumanReview": true,
+      "reachableSources": 5,
+      "riskReviewChecklist": [
+        "No income, ranking, approval, or client acquisition guarantee.",
+        "No instruction to bypass platform rules, payments, messaging, or review systems.",
+        "No API key, credential, private customer data, or account detail is included.",
+        "Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.",
+        "Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.",
+        "Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts.",
+        "No instruction to bypass platform, payment, messaging, account, or review rules.",
+        "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
+        "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
+        "Prompt examples include input context, output criteria, review rules, and adaptation notes."
+      ],
+      "safeDraft": true,
+      "sourceHealthScopes": [
+        "current-review",
+        "next-source-pack",
+        "public-gap-decision"
+      ],
+      "sourceTargets": 8,
+      "sourceTypes": [
+        "prompt",
+        "public-gap",
+        "wave"
+      ],
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "uniqueReachableUrls": [
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/retrieval"
+      ],
+      "verificationFocus": [
+        "Verify 9 official source target(s).",
+        "Check 8 search query seed(s).",
+        "Review 20 combined checklist signal(s).",
+        "Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: ChatGPT prompts for business.; Add one contextual link to a published article before approval..",
+        "Complete freshness checklist for fast-changing AI/tool guidance.",
+        "Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.",
+        "Open official source and verify current wording: OpenAI API docs: https://platform.openai.com/docs",
+        "Open official source and verify current wording: OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+        "Open official source and verify current wording: Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "Open official source and verify current wording: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "Open official source and verify current wording: OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
+        "Reject or rewrite unsupported claims before any mark:review command.",
+        "Keep the article draft/noindex until explicit approval."
+      ]
+    },
+    {
+      "approvalChecklist": [
+        "Article remains draft before approval: true",
+        "Article remains noindex before approval: true",
+        "Human review is required: true",
+        "Quality score is at least 100: true",
+        "Source notes are present: true",
+        "Article has at least one internal link: true",
+        "Opening section directly answers the search query.",
+        "Reviewer can explain why this article should be public now instead of staying draft.",
+        "Article remains draft: true",
+        "Article remains noindex: true",
+        "Human review flag is present: true",
+        "Article has internal links: true",
+        "Reviewer confirms the article answers one clear search intent.",
+        "Reviewer confirms factual claims against official docs before any status change.",
+        "Human confirms every fast-changing AI, API, deployment, prompt, pricing, and security claim against the listed official sources."
+      ],
+      "factCheckQueries": [
+        "AI Agent 部署 官方文档 最新",
+        "AI Agent 部署 official docs latest",
+        "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 事实核对",
+        "AI Agent 平台限制 官方文档",
+        "AI Agent 部署教程",
+        "Agent 记忆怎么做",
+        "AI Agent 工具调用教程",
+        "AI 工作流部署",
+        "AI Agent 部署 official documentation current limits",
+        "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 fact check official docs",
+        "AI Agent official docs limits pricing changelog",
+        "Agent 工具调用教程",
+        "Agent 人工审核流程",
+        "AI Agent deployment tutorial official docs fact check",
+        "agent tool calling tutorial official docs fact check",
+        "OpenAI Agents SDK beginner guide official docs fact check",
+        "Vercel AI SDK agent official docs fact check",
+        "AI Agent 部署教程 official docs fact check",
+        "Agent 工具调用教程 official docs fact check",
+        "AI 工作流部署 official docs fact check",
+        "Agent 人工审核流程 official docs fact check"
+      ],
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "officialSourceTargets": [
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "LangChain docs: https://python.langchain.com/docs",
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
+      ],
+      "readyForHumanReview": true,
+      "reachableSources": 6,
+      "riskReviewChecklist": [
+        "No income, ranking, approval, or client acquisition guarantee.",
+        "No instruction to bypass platform rules, payments, messaging, or review systems.",
+        "No API key, credential, private customer data, or account detail is included.",
+        "Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.",
+        "Automation claims include human approval, permissions, logging, and rollback boundaries.",
+        "Deployment guidance includes environment variables, rate limits, smoke checks, and failure handling.",
+        "No instruction to bypass platform, payment, messaging, account, or review rules.",
+        "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
+        "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
+        "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps."
+      ],
+      "safeDraft": true,
+      "sourceHealthScopes": [
+        "current-review",
+        "next-source-pack",
+        "public-gap-decision"
+      ],
+      "sourceTargets": 10,
+      "sourceTypes": [
+        "deployment",
+        "public-gap",
+        "wave"
+      ],
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "uniqueReachableUrls": [
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://python.langchain.com/docs",
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://platform.openai.com/docs/guides/prompt-engineering"
+      ],
+      "verificationFocus": [
+        "Verify 6 official source target(s).",
+        "Check 8 search query seed(s).",
+        "Review 22 combined checklist signal(s).",
+        "Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: AI Agent deployment tutorial.; Add one contextual link to a published article before approval..",
+        "Complete freshness checklist for fast-changing AI/tool guidance.",
+        "Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.",
+        "Open official source and verify current wording: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "Open official source and verify current wording: Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "Open official source and verify current wording: LangChain docs: https://python.langchain.com/docs",
+        "Open official source and verify current wording: OpenAI API docs: https://platform.openai.com/docs",
+        "Open official source and verify current wording: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "Reject or rewrite unsupported claims before any mark:review command.",
+        "Keep the article draft/noindex until explicit approval."
+      ]
+    },
+    {
+      "approvalChecklist": [
+        "Article remains draft: true",
+        "Article remains noindex: true",
+        "Human review flag is present: true",
+        "Quality score is at least 100: true",
+        "Source notes are present: true",
+        "Article has internal links: true",
+        "Reviewer confirms the article answers one clear search intent.",
+        "Reviewer confirms factual claims against official docs before any status change.",
+        "Human confirms every fast-changing AI, API, deployment, prompt, pricing, and security claim against the listed official sources."
+      ],
+      "factCheckQueries": [
+        "AI API Key 安全管理 official docs latest",
+        "AI API Key 安全管理 official documentation current limits",
+        "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 fact check official docs",
+        "AI 部署 official docs limits pricing changelog",
+        "OpenAI API Next.js",
+        "Claude API 接入",
+        "Gemini API Next.js",
+        "API rate limit 怎么办",
+        "LLM observability official docs fact check",
+        "RAG evaluation official docs fact check",
+        "AI agent logs official docs fact check",
+        "prompt injection defense official docs fact check",
+        "OpenAI API Next.js official docs fact check",
+        "Claude API 接入 official docs fact check",
+        "Gemini API Next.js official docs fact check",
+        "API rate limit 怎么办 official docs fact check"
+      ],
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "officialSourceTargets": [
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "LangChain docs: https://python.langchain.com/docs",
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "Anthropic docs: https://docs.anthropic.com",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "Google AI docs: https://ai.google.dev/docs",
+        "Dify docs: https://docs.dify.ai",
+        "n8n docs: https://docs.n8n.io",
+        "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
+      ],
+      "readyForHumanReview": true,
+      "reachableSources": 10,
+      "riskReviewChecklist": [
+        "No income, ranking, approval, or client acquisition guarantee.",
+        "No instruction to bypass platform, payment, messaging, account, or review rules.",
+        "No API key, credential, private customer data, or account detail is included.",
+        "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
+        "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
+        "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps."
+      ],
+      "safeDraft": true,
+      "sourceHealthScopes": [
+        "next-source-pack",
+        "public-gap-decision"
+      ],
+      "sourceTargets": 12,
+      "sourceTypes": [
+        "deployment",
+        "public-gap"
+      ],
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "uniqueReachableUrls": [
+        "https://platform.openai.com/docs/guides/agents",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://python.langchain.com/docs",
+        "https://platform.openai.com/docs",
+        "https://docs.anthropic.com",
+        "https://ai-sdk.dev/docs",
+        "https://ai.google.dev/docs",
+        "https://docs.dify.ai",
+        "https://docs.n8n.io",
+        "https://platform.openai.com/docs/guides/prompt-engineering"
+      ],
+      "verificationFocus": [
+        "Verify 5 official source target(s).",
+        "Check 8 search query seed(s).",
+        "Review 17 combined checklist signal(s).",
+        "Apply copydesk remediation: Check whether the primary keyword can appear naturally in the title without making the title stiff.; Rewrite the meta description to name the reader, outcome, and search phrase: LLM observability..",
+        "Complete freshness checklist for fast-changing AI/tool guidance.",
+        "Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.",
+        "Open official source and verify current wording: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "Open official source and verify current wording: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "Open official source and verify current wording: LangChain docs: https://python.langchain.com/docs",
+        "Open official source and verify current wording: OpenAI API docs: https://platform.openai.com/docs",
+        "Open official source and verify current wording: Anthropic docs: https://docs.anthropic.com",
+        "Reject or rewrite unsupported claims before any mark:review command.",
+        "Keep the article draft/noindex until explicit approval."
+      ]
+    }
+  ]
+}

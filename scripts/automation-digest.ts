@@ -472,6 +472,33 @@ type AutopilotInternalLinkBrief = {
   unsafeItems: unknown[];
 };
 
+type AutopilotSourceVerificationBrief = {
+  items: Array<{
+    approvalChecklist: unknown[];
+    factCheckQueries: unknown[];
+    file: string;
+    officialSourceTargets: unknown[];
+    readyForHumanReview: boolean;
+    reachableSources: number;
+    riskReviewChecklist: unknown[];
+    safeDraft: boolean;
+    title: string;
+    uniqueReachableUrls: string[];
+  }>;
+  summary: {
+    approvalItems: number;
+    items: number;
+    itemsWithApprovalChecklist: number;
+    itemsWithFactCheckQueries: number;
+    itemsWithOfficialSources: number;
+    itemsWithReachableSources: number;
+    packetUnsafeItems: number;
+    totalReachableSources: number;
+    unsafeItems: number;
+  };
+  unsafeItems: unknown[];
+};
+
 type ReviewOptimizationBrief = {
   nextBriefs: Array<{
     file: string;
@@ -846,6 +873,7 @@ const reports = {
   autopilotApprovalPacket: readJson<AutopilotApprovalPacket>("content/automation/autopilot-approval-packet.json"),
   autopilotSearchIntentBrief: readJson<AutopilotSearchIntentBrief>("content/automation/autopilot-search-intent-brief.json"),
   autopilotInternalLinkBrief: readJson<AutopilotInternalLinkBrief>("content/automation/autopilot-internal-link-brief.json"),
+  autopilotSourceVerificationBrief: readJson<AutopilotSourceVerificationBrief>("content/automation/autopilot-source-verification-brief.json"),
   reviewOptimizationBrief: readJson<ReviewOptimizationBrief>("content/automation/review-optimization-brief.json"),
   reviewCannibalizationBrief: readJson<ReviewCannibalizationBrief>("content/automation/review-cannibalization-brief.json"),
   reviewFreshnessBrief: readJson<ReviewFreshnessBrief>("content/automation/review-freshness-brief.json"),
@@ -974,6 +1002,18 @@ const payload = {
     publicArticles: reports.autopilotInternalLinkBrief.data?.summary.publicArticles ?? null,
     unsafeItems: reports.autopilotInternalLinkBrief.data?.summary.unsafeItems ?? null,
     unsafeItemList: reports.autopilotInternalLinkBrief.data?.unsafeItems.slice(0, 8) ?? [],
+  },
+  autopilotSourceVerificationBrief: {
+    items: reports.autopilotSourceVerificationBrief.data?.summary.items ?? null,
+    itemsList: reports.autopilotSourceVerificationBrief.data?.items.slice(0, 3) ?? [],
+    itemsWithApprovalChecklist: reports.autopilotSourceVerificationBrief.data?.summary.itemsWithApprovalChecklist ?? null,
+    itemsWithFactCheckQueries: reports.autopilotSourceVerificationBrief.data?.summary.itemsWithFactCheckQueries ?? null,
+    itemsWithOfficialSources: reports.autopilotSourceVerificationBrief.data?.summary.itemsWithOfficialSources ?? null,
+    itemsWithReachableSources: reports.autopilotSourceVerificationBrief.data?.summary.itemsWithReachableSources ?? null,
+    packetUnsafeItems: reports.autopilotSourceVerificationBrief.data?.summary.packetUnsafeItems ?? null,
+    totalReachableSources: reports.autopilotSourceVerificationBrief.data?.summary.totalReachableSources ?? null,
+    unsafeItems: reports.autopilotSourceVerificationBrief.data?.summary.unsafeItems ?? null,
+    unsafeItemList: reports.autopilotSourceVerificationBrief.data?.unsafeItems.slice(0, 8) ?? [],
   },
   reviewOptimizationBrief: {
     briefs: reports.reviewOptimizationBrief.data?.summary.briefs ?? null,
@@ -1334,6 +1374,9 @@ function buildNextActions() {
   if (!reports.autopilotInternalLinkBrief.data || reports.autopilotInternalLinkBrief.data.summary.unsafeItems > 0) {
     return ["Open docs/autopilot-internal-link-brief.md and resolve unsafe internal-link packet items before any mark:review command."];
   }
+  if (!reports.autopilotSourceVerificationBrief.data || reports.autopilotSourceVerificationBrief.data.summary.unsafeItems > 0) {
+    return ["Open docs/autopilot-source-verification-brief.md and resolve unsafe source-verification packet items before any mark:review command."];
+  }
   if (!reports.reviewOptimizationBrief.data || reports.reviewOptimizationBrief.data.summary.unsafeCommands > 0) {
     return ["Open docs/review-optimization-brief.md and resolve unsafe or missing copydesk guidance before manual review."];
   }
@@ -1401,6 +1444,7 @@ function buildNextActions() {
     "Use docs/autopilot-approval-packet.md as the top-3 packet for human approval.",
     "Use docs/autopilot-search-intent-brief.md to tune top-3 search-intent wording during human review.",
     "Use docs/autopilot-internal-link-brief.md to add one contextual public internal link during human review.",
+    "Use docs/autopilot-source-verification-brief.md to verify top-3 official sources and fast-changing claims during human review.",
     "Use docs/review-coverage-report.md to inspect source, freshness, risk, and approval checks for all planned batches.",
     "If approved by a human, run mark:review with --confirm-human for approved files only.",
     "Publish only status=review articles in a 1-3 article batch after a dry-run.",
@@ -1619,6 +1663,28 @@ function toMarkdown(data: typeof payload) {
     ...data.autopilotInternalLinkBrief.itemsList.map(
       (item) =>
         `| ${item.readyForHumanReview} | ${item.safeDraft} | ${item.currentInternalLinks} | ${item.linksToPublicArticles} | ${item.suggestions.length} | ${item.suggestions[0]?.url || "none"} | ${item.title} | ${item.file} |`,
+    ),
+    "",
+    "## Autopilot Source Verification Brief",
+    "",
+    `- Items: ${data.autopilotSourceVerificationBrief.items}`,
+    `- Items with reachable sources: ${data.autopilotSourceVerificationBrief.itemsWithReachableSources}`,
+    `- Items with official sources: ${data.autopilotSourceVerificationBrief.itemsWithOfficialSources}`,
+    `- Items with fact-check queries: ${data.autopilotSourceVerificationBrief.itemsWithFactCheckQueries}`,
+    `- Items with approval checklist: ${data.autopilotSourceVerificationBrief.itemsWithApprovalChecklist}`,
+    `- Total reachable sources: ${data.autopilotSourceVerificationBrief.totalReachableSources}`,
+    `- Packet unsafe items: ${data.autopilotSourceVerificationBrief.packetUnsafeItems}`,
+    `- Unsafe items: ${data.autopilotSourceVerificationBrief.unsafeItems}`,
+    "",
+    "Unsafe source-verification items:",
+    "",
+    ...(data.autopilotSourceVerificationBrief.unsafeItemList.length ? data.autopilotSourceVerificationBrief.unsafeItemList.map((item) => `- ${JSON.stringify(item)}`) : ["- none"]),
+    "",
+    "| Ready | Safe | Reachable sources | Official sources | Fact checks | Approval checks | Risk checks | First reachable URL | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...data.autopilotSourceVerificationBrief.itemsList.map(
+      (item) =>
+        `| ${item.readyForHumanReview} | ${item.safeDraft} | ${item.reachableSources} | ${item.officialSourceTargets.length} | ${item.factCheckQueries.length} | ${item.approvalChecklist.length} | ${item.riskReviewChecklist.length} | ${item.uniqueReachableUrls[0] || "none"} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Review Optimization Brief",

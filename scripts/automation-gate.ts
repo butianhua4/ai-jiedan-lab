@@ -567,6 +567,29 @@ async function main() {
       unsafeItems: number;
     };
   }>("content/automation/autopilot-internal-link-brief.json");
+  const autopilotSourceVerificationBrief = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
+    items?: Array<{
+      approvalChecklist?: unknown[];
+      factCheckQueries?: unknown[];
+      officialSourceTargets?: unknown[];
+      readyForHumanReview?: boolean;
+      reachableSources?: number;
+      riskReviewChecklist?: unknown[];
+      safeDraft?: boolean;
+    }>;
+    summary: {
+      approvalItems: number;
+      items: number;
+      itemsWithApprovalChecklist: number;
+      itemsWithFactCheckQueries: number;
+      itemsWithOfficialSources: number;
+      itemsWithReachableSources: number;
+      packetUnsafeItems: number;
+      totalReachableSources: number;
+      unsafeItems: number;
+    };
+  }>("content/automation/autopilot-source-verification-brief.json");
   const reviewOptimizationBrief = readJson<{
     briefs?: Array<{
       file: string;
@@ -1026,6 +1049,40 @@ async function main() {
           ),
         ),
       detail: `suggestions=${autopilotInternalLinkBrief.summary.itemsWithSuggestions}, missingCurrentPublicLink=${autopilotInternalLinkBrief.summary.itemsMissingCurrentPublicLink}, alreadyLinked=${autopilotInternalLinkBrief.summary.itemsAlreadyLinkedToPublic}`,
+    },
+    {
+      name: "autopilot source verification brief covers approval packet",
+      ok:
+        autopilotSourceVerificationBrief.guardrails.autoEditArticles === false &&
+        autopilotSourceVerificationBrief.guardrails.autoMarkReview === false &&
+        autopilotSourceVerificationBrief.guardrails.autoPublish === false &&
+        autopilotSourceVerificationBrief.summary.approvalItems === autopilotApprovalPacket.summary.items &&
+        autopilotSourceVerificationBrief.summary.items === autopilotApprovalPacket.summary.items &&
+        autopilotSourceVerificationBrief.summary.packetUnsafeItems === 0 &&
+        autopilotSourceVerificationBrief.summary.unsafeItems === 0 &&
+        autopilotSourceVerificationBrief.summary.totalReachableSources > 0,
+      detail: `items=${autopilotSourceVerificationBrief.summary.items}, reachable=${autopilotSourceVerificationBrief.summary.totalReachableSources}, unsafe=${autopilotSourceVerificationBrief.summary.unsafeItems}`,
+    },
+    {
+      name: "autopilot source verification brief provides source-backed review tasks",
+      ok:
+        autopilotSourceVerificationBrief.summary.itemsWithReachableSources === autopilotSourceVerificationBrief.summary.items &&
+        autopilotSourceVerificationBrief.summary.itemsWithOfficialSources === autopilotSourceVerificationBrief.summary.items &&
+        autopilotSourceVerificationBrief.summary.itemsWithFactCheckQueries === autopilotSourceVerificationBrief.summary.items &&
+        autopilotSourceVerificationBrief.summary.itemsWithApprovalChecklist === autopilotSourceVerificationBrief.summary.items &&
+        Boolean(
+          autopilotSourceVerificationBrief.items?.every(
+            (item) =>
+              item.readyForHumanReview === true &&
+              item.safeDraft === true &&
+              (item.reachableSources || 0) > 0 &&
+              (item.officialSourceTargets?.length || 0) > 0 &&
+              (item.factCheckQueries?.length || 0) > 0 &&
+              (item.approvalChecklist?.length || 0) > 0 &&
+              (item.riskReviewChecklist?.length || 0) > 0,
+          ),
+        ),
+      detail: `reachableItems=${autopilotSourceVerificationBrief.summary.itemsWithReachableSources}, official=${autopilotSourceVerificationBrief.summary.itemsWithOfficialSources}, factChecks=${autopilotSourceVerificationBrief.summary.itemsWithFactCheckQueries}, approvalChecks=${autopilotSourceVerificationBrief.summary.itemsWithApprovalChecklist}`,
     },
     {
       name: "review optimization brief is read-only and covers ready action-board tasks",

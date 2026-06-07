@@ -57,7 +57,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/automation docs/ai-deployment-coverage.md docs/ai-deployment-review-pack.md docs/autopilot-approval-packet.md docs/autopilot-internal-link-brief.md docs/autopilot-review-queue.md docs/autopilot-search-intent-brief.md docs/automation-digest.md docs/automation-gate.md docs/broad-search-demand-map.md docs/content-cannibalization.md docs/content-freshness.md docs/content-integrity-audit.md docs/content-opportunity-backlog.md docs/industry-prompt-coverage.md docs/industry-prompt-review-pack.md docs/internal-link-opportunity-audit.md docs/live-search-surface.md docs/manual-review-workbench.md docs/next-review-source-pack.md docs/public-coverage-gap-decision-pack.md docs/public-coverage-gap-plan.md docs/public-coverage-gap-preflight.md docs/public-expansion-queue.md docs/publish-readiness-pack.md docs/review-action-board.md docs/review-cannibalization-brief.md docs/review-freshness-brief.md docs/review-optimization-brief.md docs/review-portfolio-board.md docs/review-automation.md docs/review-batch-plan.md docs/review-coverage-report.md docs/review-preflight.md docs/review-priority-roadmap.md docs/search-intent-approval-packet.md docs/search-intent-lane-map.md docs/search-intent-wave-planner.md docs/search-query-coverage.md docs/search-query-match-audit.md docs/search-snippet-readiness-audit.md docs/seo-opportunity-map.md docs/source-target-health-audit.md docs/structured-data-readiness-audit.md docs/traffic-claim-guard.md docs/traffic-evidence-audit.md docs/wave-approval-packet.md docs/wave-publish-simulation.md
+          git add content/automation docs/ai-deployment-coverage.md docs/ai-deployment-review-pack.md docs/autopilot-approval-packet.md docs/autopilot-internal-link-brief.md docs/autopilot-review-queue.md docs/autopilot-search-intent-brief.md docs/autopilot-source-verification-brief.md docs/automation-digest.md docs/automation-gate.md docs/broad-search-demand-map.md docs/content-cannibalization.md docs/content-freshness.md docs/content-integrity-audit.md docs/content-opportunity-backlog.md docs/industry-prompt-coverage.md docs/industry-prompt-review-pack.md docs/internal-link-opportunity-audit.md docs/live-search-surface.md docs/manual-review-workbench.md docs/next-review-source-pack.md docs/public-coverage-gap-decision-pack.md docs/public-coverage-gap-plan.md docs/public-coverage-gap-preflight.md docs/public-expansion-queue.md docs/publish-readiness-pack.md docs/review-action-board.md docs/review-cannibalization-brief.md docs/review-freshness-brief.md docs/review-optimization-brief.md docs/review-portfolio-board.md docs/review-automation.md docs/review-batch-plan.md docs/review-coverage-report.md docs/review-preflight.md docs/review-priority-roadmap.md docs/search-intent-approval-packet.md docs/search-intent-lane-map.md docs/search-intent-wave-planner.md docs/search-query-coverage.md docs/search-query-match-audit.md docs/search-snippet-readiness-audit.md docs/seo-opportunity-map.md docs/source-target-health-audit.md docs/structured-data-readiness-audit.md docs/traffic-claim-guard.md docs/traffic-evidence-audit.md docs/wave-approval-packet.md docs/wave-publish-simulation.md
           if git diff --cached --quiet; then
             echo "No automation report changes to commit."
           else
@@ -93,6 +93,7 @@ jobs:
             content/automation/autopilot-approval-packet.json
             content/automation/autopilot-search-intent-brief.json
             content/automation/autopilot-internal-link-brief.json
+            content/automation/autopilot-source-verification-brief.json
             content/automation/review-cannibalization-brief.json
             content/automation/review-freshness-brief.json
             content/automation/review-optimization-brief.json
@@ -172,6 +173,7 @@ jobs:
             docs/autopilot-approval-packet.md
             docs/autopilot-search-intent-brief.md
             docs/autopilot-internal-link-brief.md
+            docs/autopilot-source-verification-brief.md
             docs/review-cannibalization-brief.md
             docs/review-freshness-brief.md
             docs/review-optimization-brief.md
