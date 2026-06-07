@@ -1420,6 +1420,43 @@ async function main() {
     }>;
     unsafeTasks?: unknown[];
   }>("content/automation/human-approval-repair-queue.json");
+  const humanApprovalRepairRoute = readJson<{
+    guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    publishingBoundary: {
+      currentPublicPublished: number;
+      currentPublishableNow: number;
+      publishConfirmCommandsIncluded: number;
+      trafficDataAvailable: boolean;
+    };
+    routeItems?: Array<{
+      manualOnlyCommands?: { markReviewAfterExplicitApproval?: string; rerunAfterRepair?: unknown[] };
+      minimumPathTasks?: unknown[];
+      publishConfirm?: string;
+      repairSessions?: unknown[];
+      unsafeReasons?: unknown[];
+    }>;
+    sourceEvidence: {
+      decisionMatrixItems: number;
+      decisionMatrixRepairItems: number;
+      decisionMatrixUnsafeItems: number;
+      repairQueueFullTasks: number;
+      repairQueueMinimumPathFiles: number;
+      repairQueueMinimumPathTasks: number;
+      repairQueueUnsafeItems: number;
+    };
+    summary: {
+      filesRouted: number;
+      highRiskTasks: number;
+      minimumPathTasks: number;
+      nextRepairFile: string | null;
+      publishConfirmCommandsIncluded: number;
+      repairBeforeReviewItems: number;
+      routeSessions: number;
+      trafficDataAvailable: boolean;
+      unsafeItems: number;
+    };
+    unsafeItems?: unknown[];
+  }>("content/automation/human-approval-repair-route.json");
   const autopilotReviewSprintBoard = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean };
     items?: Array<{
@@ -2958,6 +2995,47 @@ async function main() {
           ),
         ),
       detail: `humanGated=${humanApprovalRepairQueue.summary.humanGatedTasks}/${humanApprovalRepairQueue.summary.tasks}, minimum=${humanApprovalRepairQueue.summary.minimumPathFiles}/${humanApprovalRepairQueue.summary.minimumPathTasks}, publishConfirm=${humanApprovalRepairQueue.summary.publishConfirmCommandsIncluded}`,
+    },
+    {
+      name: "human approval repair route covers repair queue",
+      ok:
+        humanApprovalRepairRoute.guardrails.autoEditArticles === false &&
+        humanApprovalRepairRoute.guardrails.autoMarkReview === false &&
+        humanApprovalRepairRoute.guardrails.autoPublish === false &&
+        humanApprovalRepairRoute.guardrails.trafficClaim === "not-included" &&
+        humanApprovalRepairRoute.sourceEvidence.decisionMatrixItems === humanApprovalDecisionMatrix.summary.decisionRows &&
+        humanApprovalRepairRoute.sourceEvidence.decisionMatrixRepairItems === humanApprovalDecisionMatrix.summary.repairBeforeReviewItems &&
+        humanApprovalRepairRoute.sourceEvidence.decisionMatrixUnsafeItems === 0 &&
+        humanApprovalRepairRoute.sourceEvidence.repairQueueFullTasks === humanApprovalRepairQueue.summary.tasks &&
+        humanApprovalRepairRoute.sourceEvidence.repairQueueMinimumPathFiles === humanApprovalRepairQueue.summary.minimumPathFiles &&
+        humanApprovalRepairRoute.sourceEvidence.repairQueueMinimumPathTasks === humanApprovalRepairQueue.summary.minimumPathTasks &&
+        humanApprovalRepairRoute.sourceEvidence.repairQueueUnsafeItems === 0 &&
+        humanApprovalRepairRoute.summary.filesRouted === humanApprovalRepairQueue.summary.minimumPathFiles &&
+        humanApprovalRepairRoute.summary.minimumPathTasks === humanApprovalRepairQueue.summary.minimumPathTasks &&
+        humanApprovalRepairRoute.summary.repairBeforeReviewItems === humanApprovalDecisionMatrix.summary.repairBeforeReviewItems &&
+        humanApprovalRepairRoute.summary.unsafeItems === 0,
+      detail: `files=${humanApprovalRepairRoute.summary.filesRouted}, minimumTasks=${humanApprovalRepairRoute.summary.minimumPathTasks}, sessions=${humanApprovalRepairRoute.summary.routeSessions}, next=${humanApprovalRepairRoute.summary.nextRepairFile || "none"}`,
+    },
+    {
+      name: "human approval repair route stays manual and non-publishing",
+      ok:
+        humanApprovalRepairRoute.publishingBoundary.currentPublicPublished === projectStatus.articles.publicPublished &&
+        humanApprovalRepairRoute.publishingBoundary.currentPublishableNow === projectStatus.articles.publishableNow.length &&
+        humanApprovalRepairRoute.publishingBoundary.publishConfirmCommandsIncluded === 0 &&
+        humanApprovalRepairRoute.summary.publishConfirmCommandsIncluded === 0 &&
+        humanApprovalRepairRoute.summary.routeSessions >= humanApprovalRepairRoute.summary.filesRouted &&
+        Boolean(
+          humanApprovalRepairRoute.routeItems?.every(
+            (item) =>
+              item.publishConfirm === "not-included" &&
+              item.manualOnlyCommands?.markReviewAfterExplicitApproval?.includes("--confirm-human") &&
+              (item.manualOnlyCommands?.rerunAfterRepair?.length || 0) >= 3 &&
+              (item.minimumPathTasks?.length || 0) > 0 &&
+              (item.repairSessions?.length || 0) > 0 &&
+              (item.unsafeReasons?.length || 0) === 0,
+          ),
+        ),
+      detail: `sessions=${humanApprovalRepairRoute.summary.routeSessions}, publishConfirm=${humanApprovalRepairRoute.summary.publishConfirmCommandsIncluded}, highRisk=${humanApprovalRepairRoute.summary.highRiskTasks}`,
     },
     {
       name: "autopilot review sprint board covers next assignments",

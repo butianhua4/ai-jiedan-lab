@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T22:17:23.765Z
+Generated at: 2026-06-07T22:27:05.341Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -149,6 +149,25 @@ This digest is read-only. It summarizes automation reports and does not publish 
 | 1983 | medium | search-intent | Resolve or explicitly accept search weakness: no exact search query appears in title. | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 1983 | medium | search-intent | Resolve or explicitly accept search weakness: no exact search query appears in description. | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 
+## Human Approval Repair Route
+
+- Files routed: 3
+- Repair before review items: 3
+- Minimum path tasks: 18
+- Route sessions: 12
+- High-risk tasks: 6
+- Next repair title: AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查
+- Next repair file: content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
+- Publish confirm commands included: 0
+- Traffic data available: false
+- Unsafe items: 0
+
+| Rank | High risk | Min tasks | Sessions | Lane | Primary query | Title | File |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- |
+| 1943 | 2 | 6 | 4 | ai-deployment | AI Agent deployment tutorial | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 1939 | 2 | 6 | 4 | industry-prompt | ChatGPT prompts for business | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| 1819 | 2 | 6 | 4 | public-coverage-gap | RAG 知识库搭建教程 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+
 ## Mojibake Remediation Brief
 
 - Files scanned: 669
@@ -254,7 +273,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=ru
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/ -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
@@ -1342,8 +1361,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 201
-- Traffic claim watch mentions: 3592
+- Traffic claim files scanned: 203
+- Traffic claim watch mentions: 3615
 
 ## Public Surface Inventory
 

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-07T22:17:23.228Z",
+  "generatedAt": "2026-06-07T22:27:04.824Z",
   "ok": true,
   "summary": {
-    "checks": 187,
+    "checks": 189,
     "failed": 0,
-    "passed": 187
+    "passed": 189
   },
   "failed": [],
   "checks": [
@@ -135,7 +135,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=201, unsafeClaims=0, watchMentions=3592"
+      "detail": "filesScanned=203, unsafeClaims=0, watchMentions=3615"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -311,6 +311,16 @@
       "name": "human approval repair queue stays manual and non-publishing",
       "ok": true,
       "detail": "humanGated=57/57, minimum=3/18, publishConfirm=0"
+    },
+    {
+      "name": "human approval repair route covers repair queue",
+      "ok": true,
+      "detail": "files=3, minimumTasks=18, sessions=12, next=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx"
+    },
+    {
+      "name": "human approval repair route stays manual and non-publishing",
+      "ok": true,
+      "detail": "sessions=12, publishConfirm=0, highRisk=6"
     },
     {
       "name": "autopilot review sprint board covers next assignments",

@@ -165,6 +165,31 @@ type HumanApprovalRepairQueue = {
   }>;
 };
 
+type HumanApprovalRepairRoute = {
+  routeItems: Array<{
+    file: string;
+    highRiskTasks: number;
+    lane: string;
+    minimumPathTasks: unknown[];
+    primaryQuery: string;
+    repairSessions: unknown[];
+    routeRank: number;
+    title: string;
+  }>;
+  summary: {
+    filesRouted: number;
+    highRiskTasks: number;
+    minimumPathTasks: number;
+    nextRepairFile: string | null;
+    nextRepairTitle: string | null;
+    publishConfirmCommandsIncluded: number;
+    repairBeforeReviewItems: number;
+    routeSessions: number;
+    trafficDataAvailable: boolean;
+    unsafeItems: number;
+  };
+};
+
 type MojibakeRemediationBrief = {
   items: Array<{
     file: string;
@@ -2368,6 +2393,7 @@ const reports = {
   publicCoverageGapDecisionPack: readJson<PublicCoverageGapDecisionPack>("content/automation/public-coverage-gap-decision-pack.json"),
   humanApprovalDecisionMatrix: readJson<HumanApprovalDecisionMatrix>("content/automation/human-approval-decision-matrix.json"),
   humanApprovalRepairQueue: readJson<HumanApprovalRepairQueue>("content/automation/human-approval-repair-queue.json"),
+  humanApprovalRepairRoute: readJson<HumanApprovalRepairRoute>("content/automation/human-approval-repair-route.json"),
   promptCoverage: readJson<PromptCoverage>("content/automation/industry-prompt-coverage.json"),
   promptReviewPack: readJson<PromptReviewPack>("content/automation/industry-prompt-review-pack.json"),
   industryPromptOpportunityBoard: readJson<IndustryPromptOpportunityBoard>("content/automation/industry-prompt-opportunity-board.json"),
@@ -2574,6 +2600,19 @@ const payload = {
     top: reports.humanApprovalRepairQueue.data?.tasks.slice(0, 8) ?? [],
     trafficDataAvailable: reports.humanApprovalRepairQueue.data?.summary.trafficDataAvailable ?? null,
     unsafeItems: reports.humanApprovalRepairQueue.data?.summary.unsafeItems ?? null,
+  },
+  humanApprovalRepairRoute: {
+    filesRouted: reports.humanApprovalRepairRoute.data?.summary.filesRouted ?? null,
+    highRiskTasks: reports.humanApprovalRepairRoute.data?.summary.highRiskTasks ?? null,
+    minimumPathTasks: reports.humanApprovalRepairRoute.data?.summary.minimumPathTasks ?? null,
+    nextRepairFile: reports.humanApprovalRepairRoute.data?.summary.nextRepairFile ?? null,
+    nextRepairTitle: reports.humanApprovalRepairRoute.data?.summary.nextRepairTitle ?? null,
+    publishConfirmCommandsIncluded: reports.humanApprovalRepairRoute.data?.summary.publishConfirmCommandsIncluded ?? null,
+    repairBeforeReviewItems: reports.humanApprovalRepairRoute.data?.summary.repairBeforeReviewItems ?? null,
+    routeSessions: reports.humanApprovalRepairRoute.data?.summary.routeSessions ?? null,
+    top: reports.humanApprovalRepairRoute.data?.routeItems.slice(0, 5) ?? [],
+    trafficDataAvailable: reports.humanApprovalRepairRoute.data?.summary.trafficDataAvailable ?? null,
+    unsafeItems: reports.humanApprovalRepairRoute.data?.summary.unsafeItems ?? null,
   },
   mojibakeRemediation: {
     affectedDraftFiles: reports.mojibakeRemediation.data?.summary.affectedDraftFiles ?? null,
@@ -3658,6 +3697,13 @@ function buildNextActions() {
     return ["Open docs/human-approval-repair-queue.md and resolve repair queue guardrail issues before assigning draft repair work."];
   }
   if (
+    !reports.humanApprovalRepairRoute.data ||
+    reports.humanApprovalRepairRoute.data.summary.unsafeItems > 0 ||
+    reports.humanApprovalRepairRoute.data.summary.publishConfirmCommandsIncluded > 0
+  ) {
+    return ["Open docs/human-approval-repair-route.md and resolve repair route guardrail issues before assigning manual repair sessions."];
+  }
+  if (
     !reports.mojibakeRemediation.data ||
     reports.mojibakeRemediation.data.summary.unsafeItems > 0 ||
     reports.mojibakeRemediation.data.summary.publishConfirmCommandsIncluded > 0
@@ -4096,6 +4142,26 @@ function toMarkdown(data: typeof payload) {
     "| ---: | --- | --- | --- | --- | --- |",
     ...data.humanApprovalRepairQueue.top.map(
       (item) => `| ${item.priority} | ${item.severity} | ${item.category} | ${String(item.action).replace(/\|/g, "\\|")} | ${String(item.title).replace(/\|/g, "\\|")} | ${item.file} |`,
+    ),
+    "",
+    "## Human Approval Repair Route",
+    "",
+    `- Files routed: ${data.humanApprovalRepairRoute.filesRouted}`,
+    `- Repair before review items: ${data.humanApprovalRepairRoute.repairBeforeReviewItems}`,
+    `- Minimum path tasks: ${data.humanApprovalRepairRoute.minimumPathTasks}`,
+    `- Route sessions: ${data.humanApprovalRepairRoute.routeSessions}`,
+    `- High-risk tasks: ${data.humanApprovalRepairRoute.highRiskTasks}`,
+    `- Next repair title: ${data.humanApprovalRepairRoute.nextRepairTitle}`,
+    `- Next repair file: ${data.humanApprovalRepairRoute.nextRepairFile}`,
+    `- Publish confirm commands included: ${data.humanApprovalRepairRoute.publishConfirmCommandsIncluded}`,
+    `- Traffic data available: ${data.humanApprovalRepairRoute.trafficDataAvailable}`,
+    `- Unsafe items: ${data.humanApprovalRepairRoute.unsafeItems}`,
+    "",
+    "| Rank | High risk | Min tasks | Sessions | Lane | Primary query | Title | File |",
+    "| ---: | ---: | ---: | ---: | --- | --- | --- | --- |",
+    ...data.humanApprovalRepairRoute.top.map(
+      (item) =>
+        `| ${item.routeRank} | ${item.highRiskTasks} | ${item.minimumPathTasks.length} | ${item.repairSessions.length} | ${item.lane} | ${String(item.primaryQuery).replace(/\|/g, "\\|")} | ${String(item.title).replace(/\|/g, "\\|")} | ${item.file} |`,
     ),
     "",
     "## Mojibake Remediation Brief",
