@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T18:04:34.790Z",
+  "generatedAt": "2026-06-08T01:39:42.960Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -8,7 +8,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "broadDemandGeneratedAt": "2026-06-07T17:54:48.039Z",
+    "broadDemandGeneratedAt": "2026-06-08T01:39:22.331Z",
     "broadDemandGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -27,7 +27,7 @@
       "reviewReadyDrafts": 633,
       "unsafeClusters": 0
     },
-    "liveSearchGeneratedAt": "2026-06-07T15:13:24.614Z",
+    "liveSearchGeneratedAt": "2026-06-08T01:39:41.201Z",
     "liveSearchOk": true,
     "projectStatusPublicPublished": 15,
     "projectStatusTotalFiles": 669,
@@ -57,62 +57,6 @@
   },
   "unsafeItems": [],
   "publicItems": [
-    {
-      "category": "报错解决",
-      "descriptionLength": 102,
-      "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
-      "slug": "codex-npm-install-error-beginner-fix",
-      "tags": [
-        "Codex",
-        "npm install",
-        "Node.js",
-        "报错解决"
-      ],
-      "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
-      "updatedAt": "2026-06-02"
-    },
-    {
-      "category": "报价指南",
-      "descriptionLength": 72,
-      "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
-      "slug": "first-upwork-project-pricing-checklist",
-      "tags": [
-        "Upwork",
-        "报价",
-        "自由职业",
-        "新手接单"
-      ],
-      "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
-      "updatedAt": "2026-06-02"
-    },
-    {
-      "category": "部署教程",
-      "descriptionLength": 87,
-      "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
-      "slug": "vercel-env-variable-missing-beginner-guide",
-      "tags": [
-        "Vercel",
-        "环境变量",
-        "Next.js",
-        "部署失败"
-      ],
-      "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
-      "updatedAt": "2026-06-02"
-    },
-    {
-      "category": "收款工具",
-      "descriptionLength": 82,
-      "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
-      "slug": "payoneer-wise-paypal-beginner-comparison",
-      "tags": [
-        "Payoneer",
-        "Wise",
-        "PayPal",
-        "跨境收款"
-      ],
-      "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
-      "updatedAt": "2026-06-02"
-    },
     {
       "category": "Codex 新手教程",
       "descriptionLength": 88,
@@ -266,33 +210,73 @@
       ],
       "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
       "updatedAt": "2026-06-02"
+    },
+    {
+      "category": "报价指南",
+      "descriptionLength": 72,
+      "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+      "slug": "first-upwork-project-pricing-checklist",
+      "tags": [
+        "Upwork",
+        "报价",
+        "自由职业",
+        "新手接单"
+      ],
+      "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "category": "报错解决",
+      "descriptionLength": 102,
+      "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
+      "slug": "codex-npm-install-error-beginner-fix",
+      "tags": [
+        "Codex",
+        "npm install",
+        "Node.js",
+        "报错解决"
+      ],
+      "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "category": "收款工具",
+      "descriptionLength": 82,
+      "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+      "slug": "payoneer-wise-paypal-beginner-comparison",
+      "tags": [
+        "Payoneer",
+        "Wise",
+        "PayPal",
+        "跨境收款"
+      ],
+      "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+      "updatedAt": "2026-06-02"
+    },
+    {
+      "category": "部署教程",
+      "descriptionLength": 87,
+      "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+      "slug": "vercel-env-variable-missing-beginner-guide",
+      "tags": [
+        "Vercel",
+        "环境变量",
+        "Next.js",
+        "部署失败"
+      ],
+      "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+      "updatedAt": "2026-06-02"
     }
   ],
   "publicCategoryCounts": {
-    "报错解决": 1,
-    "报价指南": 1,
-    "部署教程": 1,
-    "收款工具": 1,
     "Codex 新手教程": 9,
-    "Upwork 新手": 2
+    "Upwork 新手": 2,
+    "报价指南": 1,
+    "报错解决": 1,
+    "收款工具": 1,
+    "部署教程": 1
   },
   "publicTagCounts": {
-    "Codex": 1,
-    "npm install": 1,
-    "Node.js": 1,
-    "报错解决": 1,
-    "Upwork": 3,
-    "报价": 1,
-    "自由职业": 2,
-    "新手接单": 2,
-    "Vercel": 1,
-    "环境变量": 1,
-    "Next.js": 1,
-    "部署失败": 1,
-    "Payoneer": 1,
-    "Wise": 1,
-    "PayPal": 1,
-    "跨境收款": 1,
     "Codex 新手教程": 9,
     "Codex 怎么做第一个网页": 1,
     "AI 接单": 9,
@@ -305,9 +289,25 @@
     "Codex 部署 Vercel 前检查什么：上线前清单": 1,
     "Codex 和 Claude Code 怎么选：新手对比清单": 1,
     "Codex 是什么新手怎么开始": 1,
+    "Upwork": 3,
     "客户沟通": 1,
     "需求分析": 1,
-    "Proposal": 2
+    "Proposal": 2,
+    "新手接单": 2,
+    "自由职业": 2,
+    "报价": 1,
+    "Codex": 1,
+    "npm install": 1,
+    "Node.js": 1,
+    "报错解决": 1,
+    "Payoneer": 1,
+    "Wise": 1,
+    "PayPal": 1,
+    "跨境收款": 1,
+    "Vercel": 1,
+    "环境变量": 1,
+    "Next.js": 1,
+    "部署失败": 1
   },
   "broadCoverage": [
     {

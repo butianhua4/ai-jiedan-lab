@@ -1,14 +1,14 @@
 # Traffic Claim Guard
-Generated at: 2026-06-07T18:04:34.162Z
+Generated at: 2026-06-08T01:39:42.377Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
 - Note: This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples.
 ## Summary
-- filesScanned: 167
+- filesScanned: 209
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 2622
+- watchMentions: 3753
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -20,6 +20,10 @@ None.
 | README.md | 250 | 4. 每次只发布 1-3 篇人工审核文章，观察收录和点击。 |
 | README.md | 276 | - Google Search Console 提交清单：`docs/search-console-setup.md` |
 | app/llms.txt/route.ts | 47 | "- The site does not claim real traffic, impressions, income guarantees, or automatic publishing.", |
+| docs/NEXT_ACTIONS.md | 24 | ## 4. 收款和流量收益 |
+| docs/NEXT_ACTIONS.md | 29 | - 稳定流量后再接联盟链接和广告。 |
+| docs/NEXT_ACTIONS.md | 46 | - 有 5 篇以上人工审核公开文章：注册 Google Search Console。 |
+| docs/NEXT_ACTIONS.md | 47 | - 有稳定访问：开启 Vercel Web Analytics 或 Google Analytics。 |
 | docs/ai-deployment-coverage.md | 11 | - Note: This coverage matrix is read-only. It organizes deployment, Agent, RAG, and model infrastructure drafts for manual review and does not claim measured traffic. |
 | docs/ai-deployment-review-pack.md | 17 | - Traffic note: Search queries are broad intent seeds, not measured traffic, rankings, clicks, impressions, or income. |
 | docs/ai-deployment-review-pack.md | 113 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
@@ -32,68 +36,64 @@ None.
 | docs/ai-deployment-review-pack.md | 506 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
 | docs/ai-deployment-review-pack.md | 562 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
 | docs/ai-deployment-review-pack.md | 618 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
+| docs/ai-deployment-sprint-board.md | 14 | - Traffic claim: not-included |
+| docs/ai-deployment-sprint-board.md | 38 | - trafficDataAvailable: false |
+| docs/ai-deployment-sprint-board.md | 88 | - Do not claim traffic, ranking, revenue, latency, benchmark, cost savings, or uptime without measured evidence. |
+| docs/ai-deployment-sprint-board.md | 127 | - Do not claim traffic, ranking, revenue, latency, benchmark, cost savings, or uptime without measured evidence. |
+| docs/ai-deployment-sprint-board.md | 167 | - Do not claim traffic, ranking, revenue, latency, benchmark, cost savings, or uptime without measured evidence. |
+| docs/ai-deployment-sprint-board.md | 206 | - Do not claim traffic, ranking, revenue, latency, benchmark, cost savings, or uptime without measured evidence. |
+| docs/ai-deployment-sprint-board.md | 244 | - Do not claim traffic, ranking, revenue, latency, benchmark, cost savings, or uptime without measured evidence. |
+| docs/ai-deployment-sprint-board.md | 281 | - Do not claim traffic, ranking, revenue, latency, benchmark, cost savings, or uptime without measured evidence. |
+| docs/ai-deployment-sprint-board.md | 319 | - Do not claim traffic, ranking, revenue, latency, benchmark, cost savings, or uptime without measured evidence. |
+| docs/ai-deployment-sprint-board.md | 357 | - Do not claim traffic, ranking, revenue, latency, benchmark, cost savings, or uptime without measured evidence. |
+| docs/ai-deployment-sprint-board.md | 394 | - Do not claim traffic, ranking, revenue, latency, benchmark, cost savings, or uptime without measured evidence. |
+| docs/ai-deployment-sprint-board.md | 433 | - Do not claim traffic, ranking, revenue, latency, benchmark, cost savings, or uptime without measured evidence. |
 | docs/automation-digest.md | 14 | - Traffic data available: false |
-| docs/automation-digest.md | 461 | \| 404 \| 0 \| 30 \| 8 \| 4 \| 10 \| 4 \| nocode-ai-automation-deployment \| This lane connects search traffic to services people can buy: automation setup, deployment, acceptance, and maintenance. \| |
-| docs/automation-digest.md | 464 | \| 306 \| 4 \| 222 \| 8 \| 3 \| 10 \| 4 \| ai-service-pricing-delivery \| This lane turns search demand into services without pretending the site already has traffic or revenue proof. \| |
-| docs/automation-digest.md | 563 | \| 313 \| 0 \| 32 \| 6 \| 3 \| 5 \| RAG、知识库、向量数据库和引用溯源 \| RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。 \| |
-| docs/automation-digest.md | 565 | \| 307 \| 0 \| 36 \| 6 \| 3 \| 5 \| Dify、n8n、Coze、Flowise、MCP 自动化部署 \| 这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。 \| |
-| docs/automation-digest.md | 726 | - Traffic data available: false |
-| docs/automation-digest.md | 807 | - Traffic data available: false |
-| docs/automation-digest.md | 901 | - Traffic data available: false |
-| docs/automation-digest.md | 1053 | ## Traffic Evidence |
-| docs/automation-digest.md | 1055 | - Traffic data available: false |
-| docs/automation-digest.md | 1056 | - Can claim traffic: false |
-| docs/automation-digest.md | 1058 | - Measured traffic sources: none |
-| docs/automation-digest.md | 1059 | - Search Console verification evidence: false |
-| docs/automation-digest.md | 1062 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 1063 | - Traffic claim files scanned: 165 |
-| docs/automation-digest.md | 1064 | - Traffic claim watch mentions: 2565 |
-| docs/automation-digest.md | 1077 | - Traffic data available: false |
-| docs/automation-digest.md | 1152 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
-| docs/automation-digest.md | 1228 | - Traffic data available: false |
-| docs/automation-gate.md | 31 | \| traffic evidence audit passed and is read-only \| PASS \| failedChecks=0, measuredTrafficSources=0 \| |
-| docs/automation-gate.md | 32 | \| traffic is not claimed without measured metrics \| PASS \| trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 \| |
-| docs/automation-gate.md | 33 | \| traffic claim guard found no unsupported claims \| PASS \| filesScanned=165, unsafeClaims=0, watchMentions=2565 \| |
-| docs/automation-gate.md | 130 | \| mass AI search action matrix is read-only and covers broad themes \| PASS \| items=8/8, broad=10, unique=45, traffic=false \| |
-| docs/autopilot-approval-packet.md | 18 | - Traffic data available: false |
-| docs/autopilot-approval-packet.md | 19 | - Can claim traffic: false |
-| docs/autopilot-approval-packet.md | 102 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
-| docs/autopilot-approval-packet.md | 170 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
-| docs/autopilot-approval-packet.md | 233 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
-| docs/autopilot-approval-remediation-pack.md | 12 | - Traffic claim: not-included |
-| docs/autopilot-approval-remediation-pack.md | 20 | - Traffic data available: false |
-| docs/autopilot-approval-remediation-pack.md | 21 | - Can claim traffic: false |
-| docs/autopilot-approval-remediation-pack.md | 143 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
-| docs/autopilot-approval-remediation-pack.md | 168 | - Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported. |
-| docs/autopilot-approval-remediation-pack.md | 246 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
-| docs/autopilot-approval-remediation-pack.md | 274 | - Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported. |
-| docs/autopilot-approval-remediation-pack.md | 354 | - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence. |
-| docs/autopilot-approval-remediation-pack.md | 379 | - Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported. |
-| docs/autopilot-broad-ai-demand-brief.md | 13 | - Traffic claim: not-included |
-| docs/autopilot-broad-ai-demand-brief.md | 14 | - Note: Read-only broad AI demand brief. It prioritizes likely search-demand themes from local inventory plus external source signals, but does not claim measured traffic or keyword volume. |
-| docs/autopilot-broad-ai-demand-brief.md | 30 | - Do not create traffic claims from this report; connect Search Console or Analytics before reporting impressions or clicks. |
-| docs/autopilot-broad-ai-demand-brief.md | 45 | \| 313 \| 0 \| 32 \| 6 \| 3 \| 5 \| RAG、知识库、向量数据库和引用溯源 \| 企业知识库、客服机器人、内部搜索、文档问答负责人 \| RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。 \| |
-| docs/autopilot-broad-ai-demand-brief.md | 47 | \| 307 \| 0 \| 36 \| 6 \| 3 \| 5 \| Dify、n8n、Coze、Flowise、MCP 自动化部署 \| 低代码/无代码自动化接单者、内部工具负责人、小团队运营 \| 这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。 \| |
-| docs/autopilot-broad-ai-demand-brief.md | 57 | - Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue. |
-| docs/autopilot-broad-ai-demand-brief.md | 103 | - Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue. |
-| docs/autopilot-broad-ai-demand-brief.md | 149 | - Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue. |
-| docs/autopilot-broad-ai-demand-brief.md | 195 | - Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue. |
-| docs/autopilot-broad-ai-demand-brief.md | 241 | - Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue. |
-| docs/autopilot-broad-ai-demand-brief.md | 280 | \| 31 \| 100 \| informational \| 医疗 AI 提示词 \| 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 \| content/blog/healthcare-admin-ai-prompts-guide.mdx \| |
-| docs/autopilot-broad-ai-demand-brief.md | 288 | - Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue. |
-| docs/autopilot-broad-ai-demand-brief.md | 334 | - Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue. |
-| docs/autopilot-broad-ai-demand-brief.md | 380 | - Search demand note: External signals are source/research/search-result cues only; they are not measured keyword volume, rankings, impressions, clicks, traffic, or revenue. |
-| docs/autopilot-broad-freshness-triage.md | 12 | - Traffic claim: not-included |
-| docs/autopilot-broad-freshness-triage.md | 14 | - Note: Read-only broad freshness triage. It prioritizes high-demand AI draft candidates for human fact-checking and does not edit, mark review, publish, or claim traffic. |
-| docs/autopilot-broad-freshness-triage.md | 121 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
-| docs/autopilot-broad-freshness-triage.md | 177 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
-| docs/autopilot-broad-freshness-triage.md | 229 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
-| docs/autopilot-broad-freshness-triage.md | 279 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
-| docs/autopilot-broad-freshness-triage.md | 336 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
-| docs/autopilot-broad-freshness-triage.md | 395 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
-| docs/autopilot-broad-freshness-triage.md | 461 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
-| docs/autopilot-broad-freshness-triage.md | 531 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
-| docs/autopilot-broad-freshness-triage.md | 603 | - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence. |
+| docs/automation-digest.md | 28 | - Traffic data available: false |
+| docs/automation-digest.md | 41 | - Traffic data available: false |
+| docs/automation-digest.md | 53 | \| Public refresh \| Use docs/public-refresh-sprint-board.md to refresh existing public articles without claiming traffic. \| |
+| docs/automation-digest.md | 72 | - Traffic data available: false |
+| docs/automation-digest.md | 80 | - 9 public article(s) need garbled-copy refresh before traffic work is credible. |
+| docs/automation-digest.md | 81 | - Traffic data is unavailable, so traffic claims remain blocked. |
+| docs/automation-digest.md | 111 | - Traffic data available: false |
+| docs/automation-digest.md | 130 | - Traffic data available: false |
+| docs/automation-digest.md | 148 | \| 2083 \| high \| source-review \| Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported. \| AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 \| content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx \| |
+| docs/automation-digest.md | 162 | - Traffic data available: false |
+| docs/automation-digest.md | 184 | - Traffic data available: false |
+| docs/automation-digest.md | 205 | - Traffic data available: false |
+| docs/automation-digest.md | 223 | - Traffic data available: false |
+| docs/automation-digest.md | 268 | - Traffic data available: false |
+| docs/automation-digest.md | 723 | \| 404 \| 0 \| 30 \| 8 \| 4 \| 10 \| 4 \| nocode-ai-automation-deployment \| This lane connects search traffic to services people can buy: automation setup, deployment, acceptance, and maintenance. \| |
+| docs/automation-digest.md | 726 | \| 306 \| 4 \| 222 \| 8 \| 3 \| 10 \| 4 \| ai-service-pricing-delivery \| This lane turns search demand into services without pretending the site already has traffic or revenue proof. \| |
+| docs/automation-digest.md | 825 | \| 313 \| 0 \| 32 \| 6 \| 3 \| 5 \| RAG、知识库、向量数据库和引用溯源 \| RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。 \| |
+| docs/automation-digest.md | 827 | \| 307 \| 0 \| 36 \| 6 \| 3 \| 5 \| Dify、n8n、Coze、Flowise、MCP 自动化部署 \| 这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。 \| |
+| docs/automation-digest.md | 988 | - Traffic data available: false |
+| docs/automation-digest.md | 1070 | - Traffic data available: false |
+| docs/automation-digest.md | 1100 | - Traffic data available: false |
+| docs/automation-digest.md | 1131 | - Traffic data available: false |
+| docs/automation-digest.md | 1156 | - Traffic data available: false |
+| docs/automation-digest.md | 1245 | - Traffic data available: false |
+| docs/automation-digest.md | 1397 | ## Traffic Evidence |
+| docs/automation-digest.md | 1399 | - Traffic data available: false |
+| docs/automation-digest.md | 1400 | - Can claim traffic: false |
+| docs/automation-digest.md | 1402 | - Measured traffic sources: none |
+| docs/automation-digest.md | 1403 | - Search Console verification evidence: false |
+| docs/automation-digest.md | 1406 | - Unsupported traffic claims: 0 |
+| docs/automation-digest.md | 1407 | - Traffic claim files scanned: 209 |
+| docs/automation-digest.md | 1408 | - Traffic claim watch mentions: 3540 |
+| docs/automation-digest.md | 1421 | - Traffic data available: false |
+| docs/automation-digest.md | 1474 | - Measured traffic sources: 0 |
+| docs/automation-digest.md | 1476 | - Traffic data available: false |
+| docs/automation-digest.md | 1513 | - Traffic data available: false |
+| docs/automation-digest.md | 1556 | - Traffic data available: false |
+| docs/automation-digest.md | 1603 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
+| docs/automation-digest.md | 1664 | - Traffic data available: false |
+| docs/automation-digest.md | 1704 | - Traffic data available: false |
+| docs/automation-digest.md | 1763 | - Traffic data available: false |
+| docs/automation-digest.md | 1792 | - Traffic data available: false |
+| docs/automation-digest.md | 1825 | - Traffic data available: false |
+| docs/automation-digest.md | 1860 | - Traffic data available: false |
+| docs/automation-gate.md | 34 | \| publication bottleneck report stays publish-safe \| PASS \| unsafe=0, publishConfirm=0, preflightFailed=0, traffic=false \| |
 ## Next Actions
 - Keep saying that live/search surfaces are healthy, not that traffic exists.
 - Only report traffic after an audited source provides clicks, impressions, visits, or pageviews.

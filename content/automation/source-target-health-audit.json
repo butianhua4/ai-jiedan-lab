@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T18:05:02.218Z",
+  "generatedAt": "2026-06-08T01:39:06.653Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -4208,7 +4208,7 @@
           "url": "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/"
         }
       ],
-      "status": 200,
+      "status": 403,
       "url": "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/"
     },
     {
@@ -4230,7 +4230,7 @@
           "url": "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/"
         }
       ],
-      "status": 200,
+      "status": 403,
       "url": "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/"
     },
     {

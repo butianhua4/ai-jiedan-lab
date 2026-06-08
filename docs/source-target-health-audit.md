@@ -1,6 +1,6 @@
 # Source Target Health Audit
 
-Generated at: 2026-06-07T18:05:02.218Z
+Generated at: 2026-06-08T01:39:06.653Z
 
 This report is read-only. It verifies official source URLs used by review and public-gap candidates before any human approval step.
 
@@ -130,7 +130,7 @@ This report is read-only. It verifies official source URLs used by review and pu
 | true | 200 | https://www.mrprompts.ai/learn/ai-prompts-for-sales | https://www.mrprompts.ai/learn/ai-prompts-for-sales | 2 |  |
 | true | 200 | https://www.pinecone.io/learn/retrieval-augmented-generation/ | https://www.pinecone.io/learn/retrieval-augmented-generation/ | 2 |  |
 | true | 200 | https://www.promptfoo.dev/docs/intro/ | https://www.promptfoo.dev/docs/intro/ | 2 |  |
-| true | 200 | https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/ | https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/ | 2 |  |
-| true | 200 | https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/ | https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/ | 2 |  |
+| true | 403 | https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/ | https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/ | 2 |  |
+| true | 403 | https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/ | https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/ | 2 |  |
 | true | 200 | https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker | https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker | 2 |  |
 | true | 200 | https://www.spheron.network/blog/llm-deployment-guide/ | https://www.spheron.network/blog/llm-deployment-guide/ | 2 |  |

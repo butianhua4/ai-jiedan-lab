@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-07T22:58:39.942Z
+Generated at: 2026-06-08T01:39:44.887Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -1306,8 +1306,8 @@ Unsafe SEO warning remediation items:
 | deployment: RAG、知识库和向量检索 | 348 | 0 | 5 |
 | content-backlog: RAG、知识库和向量检索 | 342 | 0 | 5 |
 | deployment: Agent 部署、工具调用和工作流 | 338 | 0 | 5 |
-| content-backlog: 全行业 AI 提示词和工作流模板 | 334 | 0 | 5 |
 | content-backlog: Agent 部署、工具调用和记忆 | 334 | 0 | 5 |
+| content-backlog: 全行业 AI 提示词和工作流模板 | 334 | 0 | 5 |
 | industry-prompt: 全行业提示词模板库 | 324 | 0 | 4 |
 
 Next review files:
@@ -1425,17 +1425,13 @@ Public categories:
 
 - Codex 新手教程: 9
 - Upwork 新手: 2
-- 报错解决: 1
 - 报价指南: 1
-- 部署教程: 1
+- 报错解决: 1
 - 收款工具: 1
+- 部署教程: 1
 
 | Category | Updated | Tags | Title | URL |
 | --- | --- | --- | --- | --- |
-| 报错解决 | 2026-06-02 | 4 | Codex 项目 npm install 报错怎么办：新手排查步骤 | /blog/codex-npm-install-error-beginner-fix |
-| 报价指南 | 2026-06-02 | 4 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | /blog/first-upwork-project-pricing-checklist |
-| 部署教程 | 2026-06-02 | 4 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | /blog/vercel-env-variable-missing-beginner-guide |
-| 收款工具 | 2026-06-02 | 4 | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | /blog/payoneer-wise-paypal-beginner-comparison |
 | Codex 新手教程 | 2026-06-01 | 4 | Codex 怎么做第一个网页 | /blog/build-first-webpage-with-codex |
 | Codex 新手教程 | 2026-06-01 | 4 | Codex 生成代码后怎么审核：交付前检查清单 | /blog/codex-code-review-delivery-checklist |
 | Codex 新手教程 | 2026-06-01 | 4 | Codex 生成代码后怎么审核 | /blog/codex-generated-code-review-guide |
@@ -1447,6 +1443,10 @@ Public categories:
 | Codex 新手教程 | 2026-06-01 | 4 | Codex 是什么新手怎么开始 | /blog/what-is-codex-beginner-start |
 | Upwork 新手 | 2026-06-02 | 4 | Upwork 客户需求太模糊怎么办：新手分析和追问清单 | /blog/upwork-client-requirements-analysis-beginner |
 | Upwork 新手 | 2026-06-02 | 4 | Upwork Proposal 发出去没人回怎么办：新手检查清单 | /blog/upwork-proposal-no-reply-checklist |
+| 报价指南 | 2026-06-02 | 4 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | /blog/first-upwork-project-pricing-checklist |
+| 报错解决 | 2026-06-02 | 4 | Codex 项目 npm install 报错怎么办：新手排查步骤 | /blog/codex-npm-install-error-beginner-fix |
+| 收款工具 | 2026-06-02 | 4 | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | /blog/payoneer-wise-paypal-beginner-comparison |
+| 部署教程 | 2026-06-02 | 4 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | /blog/vercel-env-variable-missing-beginner-guide |
 
 | Gap score | Public | Ready candidates | Cluster | Suggested files |
 | --- | --- | --- | --- | --- |
@@ -2196,7 +2196,7 @@ Public categories:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-07T15:13:24.614Z
+- Latest check: 2026-06-08T01:39:41.201Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85

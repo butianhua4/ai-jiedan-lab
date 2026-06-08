@@ -1,6 +1,6 @@
 # Human Approval Repair Progress
 
-Generated at: 2026-06-07T22:39:56.618Z
+Generated at: 2026-06-08T01:39:19.167Z
 
 This report is read-only. It tracks whether repair-route categories are still open, blocked, evidence-ready, resolved, or manual-only.
 

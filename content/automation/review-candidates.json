@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T18:04:29.999Z",
+  "generatedAt": "2026-06-08T01:38:38.142Z",
   "guardrails": {
     "autoPublish": false,
     "nextHumanAction": "Open each candidate, verify facts and risk language, then run mark:review with --confirm-human for approved files.",

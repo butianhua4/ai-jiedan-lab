@@ -1,6 +1,6 @@
 # Human Approval Decision Matrix
 
-Generated at: 2026-06-07T21:54:27.099Z
+Generated at: 2026-06-08T01:39:17.749Z
 
 This report is read-only. It gives reviewers one decision row per approval candidate and stops before mark:review or publish.
 

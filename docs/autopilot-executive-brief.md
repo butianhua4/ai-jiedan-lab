@@ -1,6 +1,6 @@
 # Autopilot Executive Brief
 
-Generated at: 2026-06-07T20:48:47.054Z
+Generated at: 2026-06-08T01:39:28.559Z
 
 This report is read-only. It compresses the current automation reports into the next human-gated execution priorities.
 
@@ -53,7 +53,7 @@ This report is read-only. It compresses the current automation reports into the 
 | Board | Publish confirm | Action | Key summary |
 | --- | --- | --- | --- |
 | Internal links | not-included | Use docs/internal-link-sprint-board.md to add one contextual public link per candidate during manual review. | actionItems=176; broadFirstCoverageItems=8; candidateItems=22; candidateItemsMissingPublicLinkSuggestion=0; candidateItemsWithPublicSuggestions=22; candidatesWithoutCurrentPublicLinks=21; expansionItems=19; items=22 |
-| Public refresh | not-included | Use docs/public-refresh-sprint-board.md to refresh existing public articles without claiming traffic. | actionItems=163; cannibalizationItems=6; highPriorityItems=12; items=15; itemsPerWave=3; itemsReadyForPublicRefreshSprint=15; liveMissingFromSitemap=0; publicArticles=15 |
+| Public refresh | not-included | Use docs/public-refresh-sprint-board.md to refresh existing public articles without claiming traffic. | actionItems=181; cannibalizationItems=6; highPriorityItems=14; items=15; itemsPerWave=3; itemsReadyForPublicRefreshSprint=15; liveMissingFromSitemap=0; mojibakePublicItems=9 |
 | AI deployment | not-included | Use docs/ai-deployment-sprint-board.md to prioritize deployment, Agent, model-serving, and API tutorial candidates. | actionItems=147; agentItems=1; apiIntegrationItems=1; automationPlatformItems=1; deploymentPublicArticles=3; highPriorityItems=8; implementationModes=7; items=10 |
 | Memory/RAG | not-included | Use docs/memory-rag-sprint-board.md to prioritize RAG, knowledge base, vector search, memory, evaluation, and privacy lanes. | candidateItems=4; decisionChecks=39; deploymentPublicArticles=3; howToLanes=2; itemsPerWave=3; lanes=6; lanesWithCandidateFiles=2; privacyLanes=1 |
 | Popular prompts | not-included | Use docs/popular-prompt-sprint-board.md to prioritize high-demand prompt playbook lanes. | actionItems=90; bridgeItems=27; candidateFiles=21; highPriorityItems=10; industryBuckets=4; items=10; itemsPerWave=2; lanesReadyForPromptSprint=10 |

@@ -1,6 +1,6 @@
 # Autopilot Broad Wave Remediation Pack
 
-Generated at: 2026-06-07T18:05:16.559Z
+Generated at: 2026-06-08T01:39:24.272Z
 
 This report is read-only. It turns broad AI publish-wave optimization items into manual remediation cards and keeps article edits, mark-review, and publishing human-gated.
 
@@ -30,7 +30,7 @@ This report is read-only. It turns broad AI publish-wave optimization items into
 
 ## Source Evidence
 
-- broadWaveOptimizationGeneratedAt: "2026-06-07T18:05:16.059Z"
+- broadWaveOptimizationGeneratedAt: "2026-06-08T01:39:23.789Z"
 - broadWaveOptimizationGuardrails: {"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"note":"Read-only optimization brief for broad publish waves. It proposes SEO, snippet, opening, internal-link, and risk-language checks without editing article files.","stopBefore":"Apply any copy or link changes only during human review. Do not mark review or publish automatically.","trafficClaim":"not-included"}
 - broadWaveOptimizationItems: 24
 - broadWaveOptimizationReadyItems: 24
@@ -97,9 +97,9 @@ This report is read-only. It turns broad AI publish-wave optimization items into
 Public-link plan:
 
 - No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.
-- Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).
-- Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
-- Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).
+- Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
+- Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
+- Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).
 
 Search fixes:
 
@@ -225,9 +225,9 @@ Human checklist:
 Public-link plan:
 
 - No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.
-- Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).
-- Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
-- Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).
+- Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
+- Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
+- Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).
 
 Search fixes:
 
@@ -803,9 +803,9 @@ Human checklist:
 Public-link plan:
 
 - No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.
-- Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).
-- Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
-- Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).
+- Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
+- Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
+- Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).
 
 Search fixes:
 
@@ -931,9 +931,9 @@ Human checklist:
 Public-link plan:
 
 - No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.
-- Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).
-- Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
-- Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).
+- Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
+- Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
+- Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).
 
 Search fixes:
 
@@ -1125,9 +1125,9 @@ Human checklist:
 Public-link plan:
 
 - No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.
-- Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).
-- Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
-- Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).
+- Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
+- Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
+- Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).
 
 Search fixes:
 
@@ -1185,9 +1185,9 @@ Human checklist:
 Public-link plan:
 
 - No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.
-- Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).
-- Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
-- Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).
+- Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
+- Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
+- Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).
 
 Search fixes:
 
@@ -1314,9 +1314,9 @@ Human checklist:
 Public-link plan:
 
 - No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.
-- Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).
-- Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
-- Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).
+- Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
+- Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
+- Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).
 
 Search fixes:
 
@@ -1576,9 +1576,9 @@ Human checklist:
 Public-link plan:
 
 - No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.
-- Fallback public link candidate: Codex 项目 npm install 报错怎么办：新手排查步骤 (/blog/codex-npm-install-error-beginner-fix).
-- Fallback public link candidate: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
-- Fallback public link candidate: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).
+- Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
+- Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
+- Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).
 
 Search fixes:
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T20:48:47.054Z",
+  "generatedAt": "2026-06-08T01:39:28.559Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -100,13 +100,14 @@
       "action": "Use docs/public-refresh-sprint-board.md to refresh existing public articles without claiming traffic.",
       "publishConfirm": "not-included",
       "summary": {
-        "actionItems": 163,
+        "actionItems": 181,
         "cannibalizationItems": 6,
-        "highPriorityItems": 12,
+        "highPriorityItems": 14,
         "items": 15,
         "itemsPerWave": 3,
         "itemsReadyForPublicRefreshSprint": 15,
         "liveMissingFromSitemap": 0,
+        "mojibakePublicItems": 9,
         "publicArticles": 15,
         "publishConfirmCommandsIncluded": 0,
         "publishedButNoindexed": 0,

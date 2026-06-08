@@ -1,6 +1,6 @@
 # SEO Opportunity Map
 
-Generated at: 2026-06-07T18:04:39.418Z
+Generated at: 2026-06-08T01:38:47.955Z
 
 This report ranks local content opportunities. It does not use or claim real traffic, impressions, or keyword volume.
 
@@ -26,8 +26,8 @@ This report ranks local content opportunities. It does not use or claim real tra
 | Upwork 新手 | 2 | 78 | has enough review-ready drafts for a small manual publishing batch |
 | Codex 新手教程 | 9 | 74 | has enough review-ready drafts for a small manual publishing batch |
 | 工具流程 | 0 | 58 | has review-ready drafts but no public article yet |
-| 模板和清单 | 0 | 44 | has review-ready drafts but no public article yet |
 | AI 自由职业路线 | 0 | 44 | has review-ready drafts but no public article yet |
+| 模板和清单 | 0 | 44 | has review-ready drafts but no public article yet |
 | 收款工具 | 1 | 40 | has enough review-ready drafts for a small manual publishing batch |
 
 ## Suggested Review Batches
@@ -140,27 +140,27 @@ These are manual-review batches only. They do not change status or publish anyth
 | Upwork 新手 | 2 | 78 | 78 | 80 |
 | Codex 新手教程 | 9 | 74 | 74 | 104 |
 | 工具流程 | 0 | 58 | 58 | 58 |
-| 模板和清单 | 0 | 44 | 44 | 44 |
 | AI 自由职业路线 | 0 | 44 | 44 | 44 |
+| 模板和清单 | 0 | 44 | 44 | 44 |
 | 收款工具 | 1 | 40 | 40 | 41 |
 | 工具导航 | 0 | 29 | 29 | 29 |
 | AI 提示词 | 0 | 18 | 18 | 18 |
-| 新手教程 | 0 | 17 | 17 | 17 |
 | AI 部署 | 0 | 17 | 17 | 17 |
+| 新手教程 | 0 | 17 | 17 | 17 |
 | 接单平台 | 0 | 12 | 12 | 12 |
 | AI 工具 | 0 | 8 | 8 | 8 |
-| 工具对比 | 0 | 4 | 4 | 4 |
 | Claude Code 新手教程 | 0 | 4 | 4 | 4 |
 | Deployment | 0 | 4 | 4 | 4 |
 | Troubleshooting | 0 | 4 | 4 | 4 |
 | Upwork 新手教程 | 0 | 4 | 4 | 4 |
+| 工具对比 | 0 | 4 | 4 | 4 |
 | 新手路线 | 0 | 3 | 3 | 3 |
-| 工具选择 | 0 | 2 | 2 | 2 |
-| 客户沟通 | 0 | 2 | 2 | 2 |
-| 作品集 | 0 | 2 | 2 | 2 |
 | Proposal | 0 | 2 | 2 | 2 |
-| 接单报价 | 0 | 1 | 1 | 1 |
-| AI 记忆 | 0 | 1 | 1 | 1 |
+| 作品集 | 0 | 2 | 2 | 2 |
+| 客户沟通 | 0 | 2 | 2 | 2 |
+| 工具选择 | 0 | 2 | 2 | 2 |
 | AI Agent | 0 | 1 | 1 | 1 |
+| AI 记忆 | 0 | 1 | 1 | 1 |
+| 接单报价 | 0 | 1 | 1 | 1 |
 | 报价指南 | 1 | 2 | 2 | 3 |
 | 部署教程 | 1 | 0 | 0 | 1 |

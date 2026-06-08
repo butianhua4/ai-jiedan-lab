@@ -1,6 +1,6 @@
 # Public Surface Inventory
 
-Generated at: 2026-06-07T18:04:34.790Z
+Generated at: 2026-06-08T01:39:42.960Z
 
 ## Guardrails
 
@@ -35,36 +35,32 @@ Generated at: 2026-06-07T18:04:34.790Z
 | --- | --- |
 | Codex 新手教程 | 9 |
 | Upwork 新手 | 2 |
-| 报错解决 | 1 |
 | 报价指南 | 1 |
-| 部署教程 | 1 |
+| 报错解决 | 1 |
 | 收款工具 | 1 |
+| 部署教程 | 1 |
 
 ## Top Public Tags
 
 | Tag | Public articles |
 | --- | --- |
-| 新手教程 | 9 |
 | AI 接单 | 9 |
 | Codex 新手教程 | 9 |
+| 新手教程 | 9 |
 | Upwork | 3 |
+| Proposal | 2 |
 | 新手接单 | 2 |
 | 自由职业 | 2 |
-| Proposal | 2 |
-| 报错解决 | 1 |
-| 报价 | 1 |
-| 部署失败 | 1 |
-| 环境变量 | 1 |
-| 客户沟通 | 1 |
+| Codex | 1 |
+| Codex 和 Claude Code 怎么选：新手对比清单 | 1 |
+| Codex 和 GitHub 怎么配合：提交代码前检查 | 1 |
+| Codex 安装失败怎么办 | 1 |
+| Codex 怎么做第一个网页 | 1 |
 
 ## Public Articles
 
 | Category | Updated | Description | Tags | Title | URL |
 | --- | --- | --- | --- | --- | --- |
-| 报错解决 | 2026-06-02 | 102 | 4 | Codex 项目 npm install 报错怎么办：新手排查步骤 | /blog/codex-npm-install-error-beginner-fix |
-| 报价指南 | 2026-06-02 | 72 | 4 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | /blog/first-upwork-project-pricing-checklist |
-| 部署教程 | 2026-06-02 | 87 | 4 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | /blog/vercel-env-variable-missing-beginner-guide |
-| 收款工具 | 2026-06-02 | 82 | 4 | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | /blog/payoneer-wise-paypal-beginner-comparison |
 | Codex 新手教程 | 2026-06-01 | 88 | 4 | Codex 怎么做第一个网页 | /blog/build-first-webpage-with-codex |
 | Codex 新手教程 | 2026-06-01 | 97 | 4 | Codex 生成代码后怎么审核：交付前检查清单 | /blog/codex-code-review-delivery-checklist |
 | Codex 新手教程 | 2026-06-01 | 89 | 4 | Codex 生成代码后怎么审核 | /blog/codex-generated-code-review-guide |
@@ -76,6 +72,10 @@ Generated at: 2026-06-07T18:04:34.790Z
 | Codex 新手教程 | 2026-06-01 | 89 | 4 | Codex 是什么新手怎么开始 | /blog/what-is-codex-beginner-start |
 | Upwork 新手 | 2026-06-02 | 64 | 4 | Upwork 客户需求太模糊怎么办：新手分析和追问清单 | /blog/upwork-client-requirements-analysis-beginner |
 | Upwork 新手 | 2026-06-02 | 80 | 4 | Upwork Proposal 发出去没人回怎么办：新手检查清单 | /blog/upwork-proposal-no-reply-checklist |
+| 报价指南 | 2026-06-02 | 72 | 4 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | /blog/first-upwork-project-pricing-checklist |
+| 报错解决 | 2026-06-02 | 102 | 4 | Codex 项目 npm install 报错怎么办：新手排查步骤 | /blog/codex-npm-install-error-beginner-fix |
+| 收款工具 | 2026-06-02 | 82 | 4 | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | /blog/payoneer-wise-paypal-beginner-comparison |
+| 部署教程 | 2026-06-02 | 87 | 4 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | /blog/vercel-env-variable-missing-beginner-guide |
 
 ## Broad AI Demand Gaps
 

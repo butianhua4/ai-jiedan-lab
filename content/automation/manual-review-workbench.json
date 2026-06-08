@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T18:05:19.108Z",
+  "generatedAt": "2026-06-08T01:39:27.145Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -287,13 +287,13 @@
       },
       {
         "candidates": 5,
-        "lane": "content-backlog: 全行业 AI 提示词和工作流模板",
+        "lane": "content-backlog: Agent 部署、工具调用和记忆",
         "priorityScore": 334,
         "publicMatches": 0
       },
       {
         "candidates": 5,
-        "lane": "content-backlog: Agent 部署、工具调用和记忆",
+        "lane": "content-backlog: 全行业 AI 提示词和工作流模板",
         "priorityScore": 334,
         "publicMatches": 0
       },
@@ -815,19 +815,22 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 167,
+    "filesScanned": 209,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 2622
+    "watchMentions": 3540
   },
   "contentIntegrity": {
     "allIssueItems": 0,
     "blockingItems": 0,
     "expansionItems": 19,
     "filesScanned": 669,
+    "mojibakeWarningItems": 77,
     "publicItems": 15,
+    "publicMojibakeWarningItems": 9,
     "recommendedItems": 3,
-    "waveItems": 3
+    "waveItems": 3,
+    "warningItems": 77
   },
   "internalLinks": {
     "summary": {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T18:05:13.776Z",
+  "generatedAt": "2026-06-08T01:39:21.510Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "queuedPlaybookGeneratedAt": "2026-06-07T18:05:13.254Z",
+    "queuedPlaybookGeneratedAt": "2026-06-08T01:39:21.049Z",
     "queuedPlaybookGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,

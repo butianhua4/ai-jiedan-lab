@@ -1,6 +1,6 @@
 # Industry Prompt Opportunity Board
 
-Generated at: 2026-06-07T18:04:51.384Z
+Generated at: 2026-06-08T01:39:01.041Z
 
 This report is read-only. It turns broad business prompt demand into specific page ideas and prompt-pack review targets.
 
