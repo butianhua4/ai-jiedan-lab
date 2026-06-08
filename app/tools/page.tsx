@@ -14,6 +14,11 @@ export default function ToolsPage() {
       href: "/tools/ppt-planner",
     },
     {
+      title: "AI 表格一键整理与清洗助手",
+      description: "粘贴 CSV、Excel 或表格文本，整理空格、空值、重复行、字段类型，并生成可复制 CSV。",
+      href: "/tools/spreadsheet-cleaner",
+    },
+    {
       title: "Upwork Proposal 生成器",
       description: "根据客户需求生成谨慎可改的英文投标草稿，并提示风险、追问问题和报价方向。",
       href: "/tools/proposal-generator",

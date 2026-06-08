@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-08T06:19:32.170Z
+Generated at: 2026-06-08T06:51:54.416Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -1425,10 +1425,10 @@ Public categories:
 
 - Codex 新手教程: 9
 - Upwork 新手: 2
-- 报价指南: 1
 - 报错解决: 1
-- 收款工具: 1
+- 报价指南: 1
 - 部署教程: 1
+- 收款工具: 1
 
 | Category | Updated | Tags | Title | URL |
 | --- | --- | --- | --- | --- |
@@ -1567,7 +1567,7 @@ Public categories:
 ## Tool Market Opportunity Map
 
 - Opportunities: 8
-- Existing tools: 4
+- Existing tools: 5
 - CN-first opportunities: 2
 - Global-first opportunities: 2
 - Dual-track opportunities: 4
@@ -1581,7 +1581,7 @@ Public categories:
 | Score | Track | Public | Tools | Content candidates | CN queries | EN queries | Title | Next asset |
 | ---: | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
 | 144 | dual-track | 0 | 1 | 1 | 5 | 5 | PPT 策划与美观排版助手 | Refresh the existing tool page and add article-to-tool internal links. |
-| 153 | dual-track | 0 | 0 | 7 | 5 | 5 | 表格一键整理与清洗助手 | Build a lightweight interactive tool page before expanding another generic article. |
+| 143 | dual-track | 0 | 1 | 7 | 5 | 5 | 表格一键整理与清洗助手 | Refresh the existing tool page and add article-to-tool internal links. |
 | 148 | cn-first | 0 | 0 | 8 | 5 | 5 | 全行业 AI 提示词工作流生成器 | Build a lightweight interactive tool page before expanding another generic article. |
 | 137 | dual-track | 2 | 0 | 8 | 5 | 5 | Agent 部署与工具权限规划器 | Build a lightweight interactive tool page before expanding another generic article. |
 | 146 | global-first | 0 | 0 | 8 | 5 | 5 | 大模型部署成本与路径选择器 | Build a lightweight interactive tool page before expanding another generic article. |

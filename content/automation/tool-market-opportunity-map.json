@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T06:19:05.502Z",
+  "generatedAt": "2026-06-08T06:51:38.844Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -43,7 +43,8 @@
       "error-explainer",
       "ppt-planner",
       "pricing-calculator",
-      "proposal-generator"
+      "proposal-generator",
+      "spreadsheet-cleaner"
     ],
     "liveMissingFromSitemap": 0,
     "publicArticles": 15,
@@ -62,7 +63,7 @@
   "summary": {
     "cnFirstOpportunities": 2,
     "dualTrackOpportunities": 4,
-    "existingTools": 4,
+    "existingTools": 5,
     "globalFirstOpportunities": 2,
     "opportunities": 8,
     "platformRegistrationsNeedingHuman": 5,
@@ -229,10 +230,12 @@
           "title": "Upwork 投标复盘表怎么记录"
         }
       ],
-      "existingToolMatches": [],
+      "existingToolMatches": [
+        "spreadsheet-cleaner"
+      ],
       "publicMatches": [],
-      "priorityScore": 153,
-      "recommendedNextAsset": "Build a lightweight interactive tool page before expanding another generic article.",
+      "priorityScore": 143,
+      "recommendedNextAsset": "Refresh the existing tool page and add article-to-tool internal links.",
       "safetyBoundary": {
         "autoCreateArticles": false,
         "autoEditPublicArticles": false,
