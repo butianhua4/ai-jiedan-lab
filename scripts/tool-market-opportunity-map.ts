@@ -115,7 +115,7 @@ const opportunities: ToolOpportunitySeed[] = [
     marketTrack: "global-first",
     whyNow: "大模型部署是项目当前高优先级内容缺口，英文搜索可带来更高商业意图，中文教程可做入门入口。",
     searchTerms: ["llm", "ollama", "vllm", "tgi", "runpod", "huggingface", "gpu"],
-    existingToolTerms: ["llm", "gpu", "deployment", "cost"],
+    existingToolTerms: ["llm", "gpu", "vllm", "ollama", "runpod", "huggingface", "cost"],
     cnQueries: ["大模型部署教程", "Ollama 本地部署教程", "vLLM 部署教程", "RunPod vLLM serverless", "Hugging Face TGI 部署"],
     enQueries: ["LLM deployment tutorial", "Ollama local deployment", "vLLM deployment", "RunPod vLLM serverless", "Hugging Face TGI deploy"],
     mvp: [

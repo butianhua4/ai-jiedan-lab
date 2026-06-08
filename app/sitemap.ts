@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tools/ppt-planner",
     "/tools/spreadsheet-cleaner",
     "/tools/industry-prompt-builder",
+    "/tools/agent-deployment-planner",
     "/tools/error-explainer",
     "/tools/pricing-calculator",
     "/templates",

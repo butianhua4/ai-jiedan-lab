@@ -24,6 +24,11 @@ export default function ToolsPage() {
       href: "/tools/industry-prompt-builder",
     },
     {
+      title: "Agent 部署与工具权限规划器",
+      description: "输入目标、平台、工具、数据敏感度和写入权限，生成上线架构、权限矩阵和回滚清单。",
+      href: "/tools/agent-deployment-planner",
+    },
+    {
       title: "Upwork Proposal 生成器",
       description: "根据客户需求生成谨慎可改的英文投标草稿，并提示风险、追问问题和报价方向。",
       href: "/tools/proposal-generator",
