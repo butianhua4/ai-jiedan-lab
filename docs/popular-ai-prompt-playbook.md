@@ -1,6 +1,6 @@
 # Popular AI Prompt Playbook
 
-Generated at: 2026-06-08T01:39:01.994Z
+Generated at: 2026-06-08T06:18:52.231Z
 
 This report is read-only. It maps broad, commonly searched AI prompt topics to existing candidate drafts, official sources, and human-review prompt templates.
 

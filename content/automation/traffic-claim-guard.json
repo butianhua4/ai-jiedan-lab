@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-08T01:39:42.377Z",
+  "generatedAt": "2026-06-08T06:19:29.677Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 209,
+    "filesScanned": 211,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 3753
+    "watchMentions": 3792
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -406,13 +406,13 @@
       "file": "docs/automation-digest.md",
       "line": 1407,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 209"
+      "text": "- Traffic claim files scanned: 211"
     },
     {
       "file": "docs/automation-digest.md",
       "line": 1408,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 3540"
+      "text": "- Traffic claim watch mentions: 3781"
     },
     {
       "file": "docs/automation-digest.md",
@@ -446,31 +446,37 @@
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1603,
+      "line": 1578,
+      "reason": "traffic-related mention",
+      "text": "- Traffic data available: false"
+    },
+    {
+      "file": "docs/automation-digest.md",
+      "line": 1594,
+      "reason": "traffic-related mention",
+      "text": "| google-search-console | global | true | https://support.google.com/webmasters/answer/9008080 | Verify site ownership, then submit sitemap in Search Console. |"
+    },
+    {
+      "file": "docs/automation-digest.md",
+      "line": 1636,
       "reason": "traffic-related mention",
       "text": "| Dify、n8n、MCP 和无代码 AI 自动化 | 258 | 0 | 5 | 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 |"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1664,
+      "line": 1697,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1704,
+      "line": 1737,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1763,
-      "reason": "traffic-related mention",
-      "text": "- Traffic data available: false"
-    },
-    {
-      "file": "docs/automation-digest.md",
-      "line": 1792,
+      "line": 1796,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
@@ -482,15 +488,9 @@
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1860,
+      "line": 1858,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
-    },
-    {
-      "file": "docs/automation-gate.md",
-      "line": 34,
-      "reason": "traffic-related mention",
-      "text": "| publication bottleneck report stays publish-safe | PASS | unsafe=0, publishConfirm=0, preflightFailed=0, traffic=false |"
     }
   ],
   "nextActions": [

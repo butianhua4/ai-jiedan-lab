@@ -1,14 +1,14 @@
 # Traffic Claim Guard
-Generated at: 2026-06-08T01:39:42.377Z
+Generated at: 2026-06-08T06:19:29.677Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
 - Note: This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples.
 ## Summary
-- filesScanned: 209
+- filesScanned: 211
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 3753
+- watchMentions: 3792
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -79,21 +79,21 @@ None.
 | docs/automation-digest.md | 1402 | - Measured traffic sources: none |
 | docs/automation-digest.md | 1403 | - Search Console verification evidence: false |
 | docs/automation-digest.md | 1406 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 1407 | - Traffic claim files scanned: 209 |
-| docs/automation-digest.md | 1408 | - Traffic claim watch mentions: 3540 |
+| docs/automation-digest.md | 1407 | - Traffic claim files scanned: 211 |
+| docs/automation-digest.md | 1408 | - Traffic claim watch mentions: 3781 |
 | docs/automation-digest.md | 1421 | - Traffic data available: false |
 | docs/automation-digest.md | 1474 | - Measured traffic sources: 0 |
 | docs/automation-digest.md | 1476 | - Traffic data available: false |
 | docs/automation-digest.md | 1513 | - Traffic data available: false |
 | docs/automation-digest.md | 1556 | - Traffic data available: false |
-| docs/automation-digest.md | 1603 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
-| docs/automation-digest.md | 1664 | - Traffic data available: false |
-| docs/automation-digest.md | 1704 | - Traffic data available: false |
-| docs/automation-digest.md | 1763 | - Traffic data available: false |
-| docs/automation-digest.md | 1792 | - Traffic data available: false |
+| docs/automation-digest.md | 1578 | - Traffic data available: false |
+| docs/automation-digest.md | 1594 | \| google-search-console \| global \| true \| https://support.google.com/webmasters/answer/9008080 \| Verify site ownership, then submit sitemap in Search Console. \| |
+| docs/automation-digest.md | 1636 | \| Dify、n8n、MCP 和无代码 AI 自动化 \| 258 \| 0 \| 5 \| 无代码 AI 自动化容易吸引搜索流量，也最需要平台规则和权限边界提醒。 \| |
+| docs/automation-digest.md | 1697 | - Traffic data available: false |
+| docs/automation-digest.md | 1737 | - Traffic data available: false |
+| docs/automation-digest.md | 1796 | - Traffic data available: false |
 | docs/automation-digest.md | 1825 | - Traffic data available: false |
-| docs/automation-digest.md | 1860 | - Traffic data available: false |
-| docs/automation-gate.md | 34 | \| publication bottleneck report stays publish-safe \| PASS \| unsafe=0, publishConfirm=0, preflightFailed=0, traffic=false \| |
+| docs/automation-digest.md | 1858 | - Traffic data available: false |
 ## Next Actions
 - Keep saying that live/search surfaces are healthy, not that traffic exists.
 - Only report traffic after an audited source provides clicks, impressions, visits, or pageviews.

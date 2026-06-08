@@ -1,6 +1,6 @@
 # Public Surface Inventory
 
-Generated at: 2026-06-08T01:39:42.960Z
+Generated at: 2026-06-08T06:19:30.237Z
 
 ## Guardrails
 
@@ -15,7 +15,7 @@ Generated at: 2026-06-08T01:39:42.960Z
 - liveArticlesChecked: 15
 - liveMissingFromSitemap: 0
 - livePublicCount: 15
-- liveSitemapUrls: 85
+- liveSitemapUrls: 86
 - projectPublicPublished: 15
 - publicArticles: 15
 - publicCategories: 6

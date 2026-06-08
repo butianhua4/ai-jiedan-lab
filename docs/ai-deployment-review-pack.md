@@ -1,6 +1,6 @@
 # AI Deployment Review Pack
 
-Generated at: 2026-06-08T01:38:59.105Z
+Generated at: 2026-06-08T06:18:49.406Z
 
 This report is read-only. It turns AI deployment, Agent, RAG, memory, API, and infrastructure coverage into a deduplicated human review queue.
 

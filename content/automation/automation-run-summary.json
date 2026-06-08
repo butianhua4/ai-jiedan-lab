@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T01:39:33.036Z",
+  "generatedAt": "2026-06-08T06:19:24.226Z",
   "failures": [],
   "ok": true,
   "tasks": [
@@ -65,6 +65,7 @@
     "Generate public search refresh pack",
     "Generate public refresh sprint board",
     "Generate public search refresh session pack",
+    "Generate tool market opportunity map",
     "Generate autopilot review queue",
     "Generate autopilot approval packet",
     "Generate autopilot search intent brief",

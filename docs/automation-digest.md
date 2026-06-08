@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-08T04:08:35.831Z
+Generated at: 2026-06-08T06:19:32.170Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -316,7 +316,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=fa
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/ -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
@@ -1404,15 +1404,15 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 209
-- Traffic claim watch mentions: 3753
+- Traffic claim files scanned: 211
+- Traffic claim watch mentions: 3792
 
 ## Public Surface Inventory
 
 - Public articles: 15
 - Project public published: 15
 - Live public count: 15
-- Live sitemap URLs: 85
+- Live sitemap URLs: 86
 - Live missing from sitemap: 0
 - Public categories: 6
 - Public tags: 31
@@ -1425,10 +1425,10 @@ Public categories:
 
 - Codex 新手教程: 9
 - Upwork 新手: 2
-- 报错解决: 1
 - 报价指南: 1
-- 部署教程: 1
+- 报错解决: 1
 - 收款工具: 1
+- 部署教程: 1
 
 | Category | Updated | Tags | Title | URL |
 | --- | --- | --- | --- | --- |
@@ -1567,7 +1567,7 @@ Public categories:
 ## Tool Market Opportunity Map
 
 - Opportunities: 8
-- Existing tools: 3
+- Existing tools: 4
 - CN-first opportunities: 2
 - Global-first opportunities: 2
 - Dual-track opportunities: 4
@@ -1580,7 +1580,7 @@ Public categories:
 
 | Score | Track | Public | Tools | Content candidates | CN queries | EN queries | Title | Next asset |
 | ---: | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| 154 | dual-track | 0 | 0 | 1 | 5 | 5 | PPT 策划与美观排版助手 | Build a lightweight interactive tool page before expanding another generic article. |
+| 144 | dual-track | 0 | 1 | 1 | 5 | 5 | PPT 策划与美观排版助手 | Refresh the existing tool page and add article-to-tool internal links. |
 | 153 | dual-track | 0 | 0 | 7 | 5 | 5 | 表格一键整理与清洗助手 | Build a lightweight interactive tool page before expanding another generic article. |
 | 148 | cn-first | 0 | 0 | 8 | 5 | 5 | 全行业 AI 提示词工作流生成器 | Build a lightweight interactive tool page before expanding another generic article. |
 | 137 | dual-track | 2 | 0 | 8 | 5 | 5 | Agent 部署与工具权限规划器 | Build a lightweight interactive tool page before expanding another generic article. |
@@ -2229,10 +2229,10 @@ Public categories:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-08T01:39:41.201Z
+- Latest check: 2026-06-08T06:19:28.439Z
 - Ok: true
 - Public articles checked: 15
-- Sitemap URLs: 85
+- Sitemap URLs: 86
 - Failed checks: none
 
 ## Manual Review Workbench

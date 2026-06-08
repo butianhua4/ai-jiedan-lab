@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T01:39:07.129Z",
+  "generatedAt": "2026-06-08T06:18:58.001Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "sourceHealthGeneratedAt": "2026-06-08T01:39:06.653Z",
+    "sourceHealthGeneratedAt": "2026-06-08T06:18:57.508Z",
     "sourceHealthGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -2228,10 +2228,10 @@
         "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
         "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型"
       ],
-      "finalUrl": "https://ai.google.dev/gemini-api/docs",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=fa",
       "humanChecklist": [
         "Review URL: https://ai.google.dev/docs.",
-        "Review final URL: https://ai.google.dev/gemini-api/docs.",
+        "Review final URL: https://ai.google.dev/gemini-api/docs?hl=fa.",
         "HTTP status observed by automation: 200.",
         "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
         "If the final URL is the canonical destination, update the source target during human review.",
