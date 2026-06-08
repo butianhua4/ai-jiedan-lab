@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T06:19:18.419Z",
+  "generatedAt": "2026-06-08T12:15:52.869Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -19,7 +19,7 @@
     "failedChecks": [],
     "ok": true,
     "publicCount": 15,
-    "sitemapUrlCount": 85
+    "sitemapUrlCount": 86
   },
   "reviewPlan": {
     "plannedBatches": 3,
@@ -818,7 +818,7 @@
     "filesScanned": 211,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 3781
+    "watchMentions": 3792
   },
   "contentIntegrity": {
     "allIssueItems": 0,

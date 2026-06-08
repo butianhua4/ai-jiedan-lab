@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T06:19:03.928Z",
+  "generatedAt": "2026-06-08T12:15:38.156Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "cannibalizationGeneratedAt": "2026-06-08T06:19:01.088Z",
+    "cannibalizationGeneratedAt": "2026-06-08T12:15:35.345Z",
     "cannibalizationSummary": {
       "articleCount": 669,
       "conflicts": 200,
@@ -18,7 +18,7 @@
       "slugStemConflicts": 177,
       "titleStemConflicts": 12
     },
-    "freshnessGeneratedAt": "2026-06-08T06:19:02.972Z",
+    "freshnessGeneratedAt": "2026-06-08T12:15:37.203Z",
     "freshnessSummary": {
       "articlesChecked": 669,
       "currentReviewItems": 3,
@@ -27,7 +27,7 @@
       "mediumRisk": 96,
       "plannedReviewItems": 9
     },
-    "publicSurfaceGeneratedAt": "2026-06-08T06:18:33.208Z",
+    "publicSurfaceGeneratedAt": "2026-06-08T12:15:07.245Z",
     "publicSurfaceSummary": {
       "broadClusters": 8,
       "broadClustersWithoutPublicCoverage": 8,
@@ -35,7 +35,7 @@
       "liveArticlesChecked": 15,
       "liveMissingFromSitemap": 0,
       "livePublicCount": 15,
-      "liveSitemapUrls": 85,
+      "liveSitemapUrls": 86,
       "projectPublicPublished": 15,
       "publicArticles": 15,
       "publicCategories": 6,
@@ -45,7 +45,7 @@
       "trafficDataAvailable": false,
       "unsafeItems": 0
     },
-    "seoWarningsGeneratedAt": "2026-06-08T06:18:37.636Z",
+    "seoWarningsGeneratedAt": "2026-06-08T12:15:11.692Z",
     "seoWarningsSummary": {
       "blockingItems": 0,
       "draftItems": 8,
@@ -62,7 +62,7 @@
       "warningItems": 16,
       "waveItems": 1
     },
-    "trafficEvidenceGeneratedAt": "2026-06-08T06:18:31.889Z",
+    "trafficEvidenceGeneratedAt": "2026-06-08T12:15:05.916Z",
     "trafficEvidenceSummary": {
       "canClaimTraffic": false,
       "claimableMetrics": 0,

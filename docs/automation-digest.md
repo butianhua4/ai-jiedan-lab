@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-08T08:58:27.173Z
+Generated at: 2026-06-08T12:16:07.741Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -316,7 +316,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=fa
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/ -> https://platform.claude.com/docs/en/home
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview -> https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
@@ -1412,7 +1412,7 @@ Next review files:
 - Public articles: 15
 - Project public published: 15
 - Live public count: 15
-- Live sitemap URLs: 86
+- Live sitemap URLs: 89
 - Live missing from sitemap: 0
 - Public categories: 6
 - Public tags: 31
@@ -1425,10 +1425,10 @@ Public categories:
 
 - Codex 新手教程: 9
 - Upwork 新手: 2
-- 报错解决: 1
 - 报价指南: 1
-- 部署教程: 1
+- 报错解决: 1
 - 收款工具: 1
+- 部署教程: 1
 
 | Category | Updated | Tags | Title | URL |
 | --- | --- | --- | --- | --- |
@@ -2229,10 +2229,10 @@ Public categories:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-08T06:19:28.439Z
+- Latest check: 2026-06-08T12:16:04.067Z
 - Ok: true
 - Public articles checked: 15
-- Sitemap URLs: 86
+- Sitemap URLs: 89
 - Failed checks: none
 
 ## Manual Review Workbench

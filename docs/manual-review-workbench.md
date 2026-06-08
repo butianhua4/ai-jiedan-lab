@@ -1,6 +1,6 @@
 # Manual Review Workbench
 
-Generated at: 2026-06-08T06:19:18.419Z
+Generated at: 2026-06-08T12:15:52.869Z
 
 This workbench is read-only. It does not publish articles or mark drafts for review.
 
@@ -21,7 +21,7 @@ This workbench is read-only. It does not publish articles or mark drafts for rev
 
 - Ok: true
 - Public articles: 15
-- Sitemap URLs: 85
+- Sitemap URLs: 86
 - Failed checks: none
 
 ## Next Batch
@@ -193,7 +193,7 @@ Next review files:
 - Failed checks: 0
 - Unsupported traffic claims: 0
 - Traffic claim files scanned: 211
-- Traffic claim watch mentions: 3781
+- Traffic claim watch mentions: 3792
 
 ## Content Integrity
 

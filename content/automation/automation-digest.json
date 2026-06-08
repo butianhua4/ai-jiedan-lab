@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T06:19:32.170Z",
+  "generatedAt": "2026-06-08T12:16:07.741Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -8473,7 +8473,7 @@
         "url": "https://ai-sdk.dev/docs"
       },
       {
-        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=fa",
+        "finalUrl": "https://ai.google.dev/gemini-api/docs",
         "ok": true,
         "references": [
           {
@@ -30466,7 +30466,7 @@
     "broadClustersWithoutPublicCoverage": 8,
     "liveMissingFromSitemap": 0,
     "livePublicCount": 15,
-    "liveSitemapUrls": 86,
+    "liveSitemapUrls": 89,
     "projectPublicPublished": 15,
     "publicArticles": 15,
     "publicCategories": 6,
@@ -33422,7 +33422,7 @@
   "toolMarketOpportunityMap": {
     "cnFirstOpportunities": 2,
     "dualTrackOpportunities": 4,
-    "existingTools": 4,
+    "existingTools": 7,
     "globalFirstOpportunities": 2,
     "opportunities": 8,
     "platformRegistrationsNeedingHuman": 5,
@@ -33581,10 +33581,12 @@
             "title": "Upwork 投标复盘表怎么记录"
           }
         ],
-        "existingToolMatches": [],
+        "existingToolMatches": [
+          "spreadsheet-cleaner"
+        ],
         "publicMatches": [],
-        "priorityScore": 153,
-        "recommendedNextAsset": "Build a lightweight interactive tool page before expanding another generic article.",
+        "priorityScore": 143,
+        "recommendedNextAsset": "Refresh the existing tool page and add article-to-tool internal links.",
         "safetyBoundary": {
           "autoCreateArticles": false,
           "autoEditPublicArticles": false,
@@ -33687,10 +33689,12 @@
             "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断"
           }
         ],
-        "existingToolMatches": [],
+        "existingToolMatches": [
+          "industry-prompt-builder"
+        ],
         "publicMatches": [],
-        "priorityScore": 148,
-        "recommendedNextAsset": "Build a lightweight interactive tool page before expanding another generic article.",
+        "priorityScore": 138,
+        "recommendedNextAsset": "Refresh the existing tool page and add article-to-tool internal links.",
         "safetyBoundary": {
           "autoCreateArticles": false,
           "autoEditPublicArticles": false,
@@ -33796,7 +33800,9 @@
             "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志"
           }
         ],
-        "existingToolMatches": [],
+        "existingToolMatches": [
+          "agent-deployment-planner"
+        ],
         "publicMatches": [
           {
             "category": "Codex 新手教程",
@@ -33827,8 +33833,8 @@
             "updatedAt": "2026-06-02"
           }
         ],
-        "priorityScore": 137,
-        "recommendedNextAsset": "Build a lightweight interactive tool page before expanding another generic article.",
+        "priorityScore": 127,
+        "recommendedNextAsset": "Refresh the existing tool page and add article-to-tool internal links.",
         "safetyBoundary": {
           "autoCreateArticles": false,
           "autoEditPublicArticles": false,
@@ -33856,7 +33862,10 @@
         "existingToolTerms": [
           "llm",
           "gpu",
-          "deployment",
+          "vllm",
+          "ollama",
+          "runpod",
+          "huggingface",
           "cost"
         ],
         "cnQueries": [
@@ -58624,11 +58633,11 @@
   "liveSearch": {
     "checkedArticles": 15,
     "failedChecks": [],
-    "generatedAt": "2026-06-08T06:19:28.439Z",
+    "generatedAt": "2026-06-08T12:16:04.067Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 15,
-    "sitemapUrlCount": 86
+    "sitemapUrlCount": 89
   },
   "workbench": {
     "currentItemsCovered": 3,

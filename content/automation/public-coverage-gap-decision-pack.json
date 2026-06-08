@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T06:18:54.882Z",
+  "generatedAt": "2026-06-08T12:15:29.115Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -8,7 +8,7 @@
     "stopBefore": "Only use these commands after explicit human approval. Never run mark:review --confirm-human or publish:articles --confirm automatically."
   },
   "sourceEvidence": {
-    "preflightGeneratedAt": "2026-06-08T06:18:54.416Z",
+    "preflightGeneratedAt": "2026-06-08T12:15:28.656Z",
     "preflightGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
