@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-08T01:39:44.887Z
+Generated at: 2026-06-08T02:02:21.863Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -1306,8 +1306,8 @@ Unsafe SEO warning remediation items:
 | deployment: RAG、知识库和向量检索 | 348 | 0 | 5 |
 | content-backlog: RAG、知识库和向量检索 | 342 | 0 | 5 |
 | deployment: Agent 部署、工具调用和工作流 | 338 | 0 | 5 |
-| content-backlog: Agent 部署、工具调用和记忆 | 334 | 0 | 5 |
 | content-backlog: 全行业 AI 提示词和工作流模板 | 334 | 0 | 5 |
+| content-backlog: Agent 部署、工具调用和记忆 | 334 | 0 | 5 |
 | industry-prompt: 全行业提示词模板库 | 324 | 0 | 4 |
 
 Next review files:
@@ -1404,8 +1404,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 209
-- Traffic claim watch mentions: 3753
+- Traffic claim files scanned: 211
+- Traffic claim watch mentions: 3792
 
 ## Public Surface Inventory
 
@@ -1425,13 +1425,17 @@ Public categories:
 
 - Codex 新手教程: 9
 - Upwork 新手: 2
-- 报价指南: 1
 - 报错解决: 1
-- 收款工具: 1
+- 报价指南: 1
 - 部署教程: 1
+- 收款工具: 1
 
 | Category | Updated | Tags | Title | URL |
 | --- | --- | --- | --- | --- |
+| 报错解决 | 2026-06-02 | 4 | Codex 项目 npm install 报错怎么办：新手排查步骤 | /blog/codex-npm-install-error-beginner-fix |
+| 报价指南 | 2026-06-02 | 4 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | /blog/first-upwork-project-pricing-checklist |
+| 部署教程 | 2026-06-02 | 4 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | /blog/vercel-env-variable-missing-beginner-guide |
+| 收款工具 | 2026-06-02 | 4 | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | /blog/payoneer-wise-paypal-beginner-comparison |
 | Codex 新手教程 | 2026-06-01 | 4 | Codex 怎么做第一个网页 | /blog/build-first-webpage-with-codex |
 | Codex 新手教程 | 2026-06-01 | 4 | Codex 生成代码后怎么审核：交付前检查清单 | /blog/codex-code-review-delivery-checklist |
 | Codex 新手教程 | 2026-06-01 | 4 | Codex 生成代码后怎么审核 | /blog/codex-generated-code-review-guide |
@@ -1443,10 +1447,6 @@ Public categories:
 | Codex 新手教程 | 2026-06-01 | 4 | Codex 是什么新手怎么开始 | /blog/what-is-codex-beginner-start |
 | Upwork 新手 | 2026-06-02 | 4 | Upwork 客户需求太模糊怎么办：新手分析和追问清单 | /blog/upwork-client-requirements-analysis-beginner |
 | Upwork 新手 | 2026-06-02 | 4 | Upwork Proposal 发出去没人回怎么办：新手检查清单 | /blog/upwork-proposal-no-reply-checklist |
-| 报价指南 | 2026-06-02 | 4 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | /blog/first-upwork-project-pricing-checklist |
-| 报错解决 | 2026-06-02 | 4 | Codex 项目 npm install 报错怎么办：新手排查步骤 | /blog/codex-npm-install-error-beginner-fix |
-| 收款工具 | 2026-06-02 | 4 | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | /blog/payoneer-wise-paypal-beginner-comparison |
-| 部署教程 | 2026-06-02 | 4 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | /blog/vercel-env-variable-missing-beginner-guide |
 
 | Gap score | Public | Ready candidates | Cluster | Suggested files |
 | --- | --- | --- | --- | --- |
@@ -1563,6 +1563,39 @@ Public categories:
 | 3 | public search refresh wave 3 | 3/3 | 36 | 3 | mojibake-public, short-description, cannibalization, freshness-high, high-priority | content/blog/what-is-codex-beginner-start.mdx<br>content/blog/codex-code-review-delivery-checklist.mdx<br>content/blog/codex-upwork-small-job-risk-checklist.mdx |
 | 4 | public search refresh wave 4 | 3/3 | 33 | 3 | seo-warning, cannibalization, freshness-high, high-priority, short-description | content/blog/codex-npm-install-error-beginner-fix.mdx<br>content/blog/payoneer-wise-paypal-beginner-comparison.mdx<br>content/blog/upwork-proposal-no-reply-checklist.mdx |
 | 5 | public search refresh wave 5 | 3/3 | 34 | 2 | seo-warning, short-description, freshness-high, high-priority, cannibalization | content/blog/vercel-env-variable-missing-beginner-guide.mdx<br>content/blog/codex-generated-code-review-guide.mdx<br>content/blog/upwork-client-requirements-analysis-beginner.mdx |
+
+## Tool Market Opportunity Map
+
+- Opportunities: 8
+- Existing tools: 3
+- CN-first opportunities: 2
+- Global-first opportunities: 2
+- Dual-track opportunities: 4
+- Searched keyword families: 80
+- Platform registrations needing human account: 5
+- Public articles: 15
+- Publish confirm commands included: 0
+- Traffic data available: false
+- Unsafe items: 0
+
+| Score | Track | Public | Tools | Content candidates | CN queries | EN queries | Title | Next asset |
+| ---: | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| 154 | dual-track | 0 | 0 | 1 | 5 | 5 | PPT 策划与美观排版助手 | Build a lightweight interactive tool page before expanding another generic article. |
+| 153 | dual-track | 0 | 0 | 7 | 5 | 5 | 表格一键整理与清洗助手 | Build a lightweight interactive tool page before expanding another generic article. |
+| 148 | cn-first | 0 | 0 | 8 | 5 | 5 | 全行业 AI 提示词工作流生成器 | Build a lightweight interactive tool page before expanding another generic article. |
+| 137 | dual-track | 2 | 0 | 8 | 5 | 5 | Agent 部署与工具权限规划器 | Build a lightweight interactive tool page before expanding another generic article. |
+| 146 | global-first | 0 | 0 | 8 | 5 | 5 | 大模型部署成本与路径选择器 | Build a lightweight interactive tool page before expanding another generic article. |
+| 149 | dual-track | 0 | 0 | 8 | 5 | 5 | Agent 记忆与 RAG 架构规划器 | Build a lightweight interactive tool page before expanding another generic article. |
+| 144 | global-first | 0 | 0 | 8 | 5 | 5 | AI API 接入、限流与成本路由检查器 | Build a lightweight interactive tool page before expanding another generic article. |
+| 143 | cn-first | 0 | 0 | 3 | 5 | 5 | 公开文章标题、描述与内链刷新助手 | Build a lightweight interactive tool page before expanding another generic article. |
+
+| Platform | Market | Human account | Official URL | Next action |
+| --- | --- | --- | --- | --- |
+| google-search-console | global | true | https://support.google.com/webmasters/answer/9008080 | Verify site ownership, then submit sitemap in Search Console. |
+| bing-webmaster-tools | global-and-cn-edge | true | https://www.bing.com/webmasters/help/sitemaps-3b5cf6ed | Add verified site, submit sitemap, and use URL submission for high-priority pages. |
+| baidu-search-resource-platform | cn | true | https://ziyuan.baidu.com/dailysubmit/index | Register/login, verify site, then submit priority URLs where the platform allows it. |
+| wechat-zhihu-xiaohongshu-bilibili | cn-distribution | true | manual-platform-registration | Reserve brand accounts and repost tool-led tutorials; treat them as distribution, not canonical SEO. |
+| product-hunt-github-reddit-hacker-news | global-distribution | true | manual-platform-registration | Use only after tool pages are usable; launch one tool at a time with English examples. |
 
 ## Preflight
 
@@ -2196,7 +2229,7 @@ Public categories:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-08T01:39:41.201Z
+- Latest check: 2026-06-07T15:13:24.614Z
 - Ok: true
 - Public articles checked: 15
 - Sitemap URLs: 85

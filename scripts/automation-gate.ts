@@ -949,6 +949,48 @@ async function main() {
     };
     unsafeSessions?: unknown[];
   }>("content/automation/public-search-refresh-session-pack.json");
+  const toolMarketOpportunityMap = readJson<{
+    currentSurface: {
+      existingTools: string[];
+      liveMissingFromSitemap: number | null;
+      measuredTrafficSources: number;
+      publicArticles: number;
+      trafficDataAvailable: boolean;
+      unsafeItems: number;
+    };
+    guardrails: { autoCreateArticles: boolean; autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
+    opportunities?: Array<{
+      cnQueries?: unknown[];
+      contentBridgeCandidates?: unknown[];
+      enQueries?: unknown[];
+      existingToolMatches?: unknown[];
+      id?: string;
+      publicMatches?: unknown[];
+      safetyBoundary?: {
+        autoCreateArticles?: boolean;
+        autoEditPublicArticles?: boolean;
+        autoPublish?: boolean;
+        humanReviewRequired?: boolean;
+        publishConfirm?: string;
+        trafficClaim?: string;
+      };
+    }>;
+    platformRegistrationChecklist?: Array<{ needsHumanAccount?: boolean }>;
+    summary: {
+      cnFirstOpportunities: number;
+      dualTrackOpportunities: number;
+      existingTools: number;
+      globalFirstOpportunities: number;
+      opportunities: number;
+      platformRegistrationsNeedingHuman: number;
+      publicArticles: number;
+      publishConfirmCommandsIncluded: number;
+      searchedKeywordFamilies: number;
+      trafficDataAvailable: boolean;
+      unsafeItems: number;
+    };
+    unsafeItems?: unknown[];
+  }>("content/automation/tool-market-opportunity-map.json");
   const trafficEvidence = readJson<{
     guardrails: { autoPublish: boolean };
     summary: {
@@ -5256,6 +5298,53 @@ async function main() {
           ),
         ),
       detail: `unsafe=${publicSearchRefreshSessionPack.summary.unsafeItems}, publishConfirm=${publicSearchRefreshSessionPack.summary.publishConfirmCommandsIncluded}, traffic=${publicSearchRefreshSessionPack.summary.trafficDataAvailable}`,
+    },
+    {
+      name: "tool market opportunity map covers broad tool demand safely",
+      ok:
+        toolMarketOpportunityMap.guardrails.autoCreateArticles === false &&
+        toolMarketOpportunityMap.guardrails.autoEditArticles === false &&
+        toolMarketOpportunityMap.guardrails.autoMarkReview === false &&
+        toolMarketOpportunityMap.guardrails.autoPublish === false &&
+        toolMarketOpportunityMap.guardrails.trafficClaim === "not-included" &&
+        toolMarketOpportunityMap.currentSurface.publicArticles === publicSurfaceInventory.summary.publicArticles &&
+        toolMarketOpportunityMap.currentSurface.liveMissingFromSitemap === publicSurfaceInventory.summary.liveMissingFromSitemap &&
+        toolMarketOpportunityMap.currentSurface.measuredTrafficSources === trafficEvidence.summary.measuredTrafficSources &&
+        toolMarketOpportunityMap.summary.publicArticles === publicSurfaceInventory.summary.publicArticles &&
+        toolMarketOpportunityMap.summary.existingTools === toolMarketOpportunityMap.currentSurface.existingTools.length &&
+        toolMarketOpportunityMap.summary.opportunities >= 6 &&
+        toolMarketOpportunityMap.summary.dualTrackOpportunities >= 3 &&
+        toolMarketOpportunityMap.summary.cnFirstOpportunities >= 1 &&
+        toolMarketOpportunityMap.summary.globalFirstOpportunities >= 1 &&
+        toolMarketOpportunityMap.summary.searchedKeywordFamilies >= toolMarketOpportunityMap.summary.opportunities * 8,
+      detail: `opportunities=${toolMarketOpportunityMap.summary.opportunities}, tools=${toolMarketOpportunityMap.summary.existingTools}, queries=${toolMarketOpportunityMap.summary.searchedKeywordFamilies}, public=${toolMarketOpportunityMap.summary.publicArticles}`,
+    },
+    {
+      name: "tool market opportunity map includes PPT, spreadsheet and registration actions without publishing",
+      ok:
+        toolMarketOpportunityMap.summary.unsafeItems === 0 &&
+        (toolMarketOpportunityMap.unsafeItems?.length || 0) === 0 &&
+        toolMarketOpportunityMap.summary.publishConfirmCommandsIncluded === 0 &&
+        toolMarketOpportunityMap.summary.trafficDataAvailable === false &&
+        toolMarketOpportunityMap.summary.platformRegistrationsNeedingHuman >= 3 &&
+        Boolean(toolMarketOpportunityMap.opportunities?.some((item) => item.id === "ppt-planner-layout-generator" && (item.cnQueries?.length || 0) >= 5 && (item.enQueries?.length || 0) >= 5)) &&
+        Boolean(toolMarketOpportunityMap.opportunities?.some((item) => item.id === "spreadsheet-cleanup-assistant" && (item.cnQueries?.length || 0) >= 5 && (item.enQueries?.length || 0) >= 5)) &&
+        Boolean(
+          toolMarketOpportunityMap.opportunities?.every(
+            (item) =>
+              item.safetyBoundary?.autoCreateArticles === false &&
+              item.safetyBoundary?.autoEditPublicArticles === false &&
+              item.safetyBoundary?.autoPublish === false &&
+              item.safetyBoundary?.humanReviewRequired === true &&
+              item.safetyBoundary?.publishConfirm === "not-included" &&
+              item.safetyBoundary?.trafficClaim === "not-included" &&
+              (item.contentBridgeCandidates?.length || 0) >= 0 &&
+              (item.publicMatches?.length || 0) >= 0 &&
+              (item.existingToolMatches?.length || 0) >= 0,
+          ),
+        ) &&
+        Boolean(toolMarketOpportunityMap.platformRegistrationChecklist?.every((item) => item.needsHumanAccount === true)),
+      detail: `registrations=${toolMarketOpportunityMap.summary.platformRegistrationsNeedingHuman}, unsafe=${toolMarketOpportunityMap.summary.unsafeItems}, publishConfirm=${toolMarketOpportunityMap.summary.publishConfirmCommandsIncluded}, traffic=${toolMarketOpportunityMap.summary.trafficDataAvailable}`,
     },
     {
       name: "manual review workbench is ready and stops before publishing",

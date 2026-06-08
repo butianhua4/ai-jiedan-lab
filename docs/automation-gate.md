@@ -1,13 +1,13 @@
 # Automation Gate
 
-Generated at: 2026-06-08T01:39:44.427Z
+Generated at: 2026-06-08T02:02:21.292Z
 
 Overall: PASS
 
 ## Summary
 
-- Checks: 195
-- Passed: 195
+- Checks: 197
+- Passed: 197
 - Failed: 0
 
 ## Checks
@@ -39,7 +39,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=209, unsafeClaims=0, watchMentions=3753 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=211, unsafeClaims=0, watchMentions=3792 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit mirrors mojibake warnings without blocking | PASS | warnings=77, mojibake=77, publicMojibake=9, remediationAffected=77/9 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
@@ -203,6 +203,8 @@ Overall: PASS
 | public refresh sprint board keeps public edits manual and publish-confirm-free | PASS | ready=15, actions=181, unsafe=0, publishConfirm=0 |
 | public search refresh session pack covers public sprint waves | PASS | sessions=5, files=15, actions=181, ready=15 |
 | public search refresh session pack stays manual and non-publishing | PASS | unsafe=0, publishConfirm=0, traffic=false |
+| tool market opportunity map covers broad tool demand safely | PASS | opportunities=8, tools=3, queries=80, public=15 |
+| tool market opportunity map includes PPT, spreadsheet and registration actions without publishing | PASS | registrations=5, unsafe=0, publishConfirm=0, traffic=false |
 | manual review workbench is ready and stops before publishing | PASS | currentItemsCovered=3, publishableNow=0 |
 | manual review workbench includes SEO warning remediation | PASS | workbenchSeo=16, remediation=16, unsafe=0 |
 | next batch approval route matches manual review workbench | PASS | batch=1, items=3, workbenchItems=3, public=15, publishable=0 |

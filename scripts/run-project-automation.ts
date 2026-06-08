@@ -80,6 +80,7 @@ const tasks: Task[] = [
   { title: "Generate public search refresh pack", args: ["run", "automation:public-search-refresh"] },
   { title: "Generate public refresh sprint board", args: ["run", "automation:public-refresh-sprint"] },
   { title: "Generate public search refresh session pack", args: ["run", "automation:public-search-refresh-session-pack"] },
+  { title: "Generate tool market opportunity map", args: ["run", "automation:tool-market-opportunity"] },
   { title: "Generate autopilot review queue", args: ["run", "automation:autopilot-review-queue"] },
   { title: "Generate autopilot approval packet", args: ["run", "automation:autopilot-approval-packet"] },
   { title: "Generate autopilot search intent brief", args: ["run", "automation:autopilot-search-intent"] },

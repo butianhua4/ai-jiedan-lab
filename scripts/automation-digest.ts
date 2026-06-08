@@ -862,6 +862,41 @@ type PublicSearchRefreshSessionPack = {
   };
 };
 
+type ToolMarketOpportunityMap = {
+  opportunities: Array<{
+    cnQueries: string[];
+    contentBridgeCandidates: unknown[];
+    enQueries: string[];
+    existingToolMatches: string[];
+    id: string;
+    marketTrack: string;
+    priorityScore: number;
+    publicMatches: unknown[];
+    recommendedNextAsset: string;
+    title: string;
+  }>;
+  platformRegistrationChecklist: Array<{
+    id: string;
+    market: string;
+    needsHumanAccount: boolean;
+    nextAction: string;
+    officialUrl: string;
+  }>;
+  summary: {
+    cnFirstOpportunities: number;
+    dualTrackOpportunities: number;
+    existingTools: number;
+    globalFirstOpportunities: number;
+    opportunities: number;
+    platformRegistrationsNeedingHuman: number;
+    publicArticles: number;
+    publishConfirmCommandsIncluded: number;
+    searchedKeywordFamilies: number;
+    trafficDataAvailable: boolean;
+    unsafeItems: number;
+  };
+};
+
 type BroadFirstCoverageLaunchPack = {
   items: Array<{
     category: string;
@@ -2531,6 +2566,7 @@ const reports = {
   publicSearchRefreshPack: readJson<PublicSearchRefreshPack>("content/automation/public-search-refresh-pack.json"),
   publicRefreshSprintBoard: readJson<PublicRefreshSprintBoard>("content/automation/public-refresh-sprint-board.json"),
   publicSearchRefreshSessionPack: readJson<PublicSearchRefreshSessionPack>("content/automation/public-search-refresh-session-pack.json"),
+  toolMarketOpportunityMap: readJson<ToolMarketOpportunityMap>("content/automation/tool-market-opportunity-map.json"),
   contentIntegrity: readJson<ContentIntegrity>("content/automation/content-integrity-audit.json"),
   internalLinks: readJson<InternalLinks>("content/automation/internal-link-opportunity-audit.json"),
   internalLinkSprintBoard: readJson<InternalLinkSprintBoard>("content/automation/internal-link-sprint-board.json"),
@@ -3333,6 +3369,21 @@ const payload = {
     trafficDataAvailable: reports.publicSearchRefreshSessionPack.data?.summary.trafficDataAvailable ?? null,
     unsafeItems: reports.publicSearchRefreshSessionPack.data?.summary.unsafeItems ?? null,
   },
+  toolMarketOpportunityMap: {
+    cnFirstOpportunities: reports.toolMarketOpportunityMap.data?.summary.cnFirstOpportunities ?? null,
+    dualTrackOpportunities: reports.toolMarketOpportunityMap.data?.summary.dualTrackOpportunities ?? null,
+    existingTools: reports.toolMarketOpportunityMap.data?.summary.existingTools ?? null,
+    globalFirstOpportunities: reports.toolMarketOpportunityMap.data?.summary.globalFirstOpportunities ?? null,
+    opportunities: reports.toolMarketOpportunityMap.data?.summary.opportunities ?? null,
+    platformRegistrationsNeedingHuman: reports.toolMarketOpportunityMap.data?.summary.platformRegistrationsNeedingHuman ?? null,
+    publicArticles: reports.toolMarketOpportunityMap.data?.summary.publicArticles ?? null,
+    publishConfirmCommandsIncluded: reports.toolMarketOpportunityMap.data?.summary.publishConfirmCommandsIncluded ?? null,
+    searchedKeywordFamilies: reports.toolMarketOpportunityMap.data?.summary.searchedKeywordFamilies ?? null,
+    top: reports.toolMarketOpportunityMap.data?.opportunities.slice(0, 8) ?? [],
+    trafficDataAvailable: reports.toolMarketOpportunityMap.data?.summary.trafficDataAvailable ?? null,
+    unsafeItems: reports.toolMarketOpportunityMap.data?.summary.unsafeItems ?? null,
+    registrations: reports.toolMarketOpportunityMap.data?.platformRegistrationChecklist ?? [],
+  },
   broadFirstCoverageLaunchPack: {
     clustersSelected: reports.broadFirstCoverageLaunchPack.data?.summary.clustersSelected ?? null,
     commandBoundaries: reports.broadFirstCoverageLaunchPack.data?.summary.commandBoundaries ?? null,
@@ -3915,6 +3966,13 @@ function buildNextActions() {
     reports.publicSearchRefreshSessionPack.data.summary.publishConfirmCommandsIncluded > 0
   ) {
     return ["Open docs/public-search-refresh-session-pack.md and resolve public refresh session issues before editing public pages."];
+  }
+  if (
+    !reports.toolMarketOpportunityMap.data ||
+    reports.toolMarketOpportunityMap.data.summary.unsafeItems > 0 ||
+    reports.toolMarketOpportunityMap.data.summary.publishConfirmCommandsIncluded > 0
+  ) {
+    return ["Open docs/tool-market-opportunity-map.md and resolve tool market opportunity guardrail issues before building new public tools."];
   }
   if (!reports.contentIntegrity.data || reports.contentIntegrity.data.summary.blockingItems > 0) {
     return ["Open docs/content-integrity-audit.md and fix content integrity blockers before any review or publish action."];
@@ -5596,6 +5654,33 @@ function toMarkdown(data: typeof payload) {
     ...data.publicSearchRefreshSessionPack.top.map(
       (session) =>
         `| ${session.wave} | ${session.sessionName} | ${session.readyItems}/${session.files.length} | ${session.actionCount} | ${session.highPriorityItems} | ${session.refreshReasons.join(", ") || "none"} | ${session.files.join("<br>")} |`,
+    ),
+    "",
+    "## Tool Market Opportunity Map",
+    "",
+    `- Opportunities: ${data.toolMarketOpportunityMap.opportunities}`,
+    `- Existing tools: ${data.toolMarketOpportunityMap.existingTools}`,
+    `- CN-first opportunities: ${data.toolMarketOpportunityMap.cnFirstOpportunities}`,
+    `- Global-first opportunities: ${data.toolMarketOpportunityMap.globalFirstOpportunities}`,
+    `- Dual-track opportunities: ${data.toolMarketOpportunityMap.dualTrackOpportunities}`,
+    `- Searched keyword families: ${data.toolMarketOpportunityMap.searchedKeywordFamilies}`,
+    `- Platform registrations needing human account: ${data.toolMarketOpportunityMap.platformRegistrationsNeedingHuman}`,
+    `- Public articles: ${data.toolMarketOpportunityMap.publicArticles}`,
+    `- Publish confirm commands included: ${data.toolMarketOpportunityMap.publishConfirmCommandsIncluded}`,
+    `- Traffic data available: ${data.toolMarketOpportunityMap.trafficDataAvailable}`,
+    `- Unsafe items: ${data.toolMarketOpportunityMap.unsafeItems}`,
+    "",
+    "| Score | Track | Public | Tools | Content candidates | CN queries | EN queries | Title | Next asset |",
+    "| ---: | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |",
+    ...data.toolMarketOpportunityMap.top.map(
+      (item) =>
+        `| ${item.priorityScore} | ${item.marketTrack} | ${item.publicMatches.length} | ${item.existingToolMatches.length} | ${item.contentBridgeCandidates.length} | ${item.cnQueries.length} | ${item.enQueries.length} | ${item.title} | ${item.recommendedNextAsset} |`,
+    ),
+    "",
+    "| Platform | Market | Human account | Official URL | Next action |",
+    "| --- | --- | --- | --- | --- |",
+    ...data.toolMarketOpportunityMap.registrations.map(
+      (item) => `| ${item.id} | ${item.market} | ${item.needsHumanAccount} | ${item.officialUrl} | ${item.nextAction} |`,
     ),
     "",
     "## Preflight",
