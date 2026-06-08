@@ -1,6 +1,6 @@
 # Automation Gate
 
-Generated at: 2026-06-08T02:02:21.292Z
+Generated at: 2026-06-08T04:08:35.987Z
 
 Overall: PASS
 
@@ -39,7 +39,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=211, unsafeClaims=0, watchMentions=3792 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=209, unsafeClaims=0, watchMentions=3753 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit mirrors mojibake warnings without blocking | PASS | warnings=77, mojibake=77, publicMojibake=9, remediationAffected=77/9 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |

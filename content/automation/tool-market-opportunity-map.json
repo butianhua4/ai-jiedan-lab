@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T02:02:01.612Z",
+  "generatedAt": "2026-06-08T04:08:35.848Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -41,6 +41,7 @@
   "currentSurface": {
     "existingTools": [
       "error-explainer",
+      "ppt-planner",
       "pricing-calculator",
       "proposal-generator"
     ],
@@ -61,7 +62,7 @@
   "summary": {
     "cnFirstOpportunities": 2,
     "dualTrackOpportunities": 4,
-    "existingTools": 3,
+    "existingTools": 4,
     "globalFirstOpportunities": 2,
     "opportunities": 8,
     "platformRegistrationsNeedingHuman": 5,
@@ -122,10 +123,12 @@
           "title": "AI 做 PPT 怎么开始：新手从大纲到成稿的流程"
         }
       ],
-      "existingToolMatches": [],
+      "existingToolMatches": [
+        "ppt-planner"
+      ],
       "publicMatches": [],
-      "priorityScore": 154,
-      "recommendedNextAsset": "Build a lightweight interactive tool page before expanding another generic article.",
+      "priorityScore": 144,
+      "recommendedNextAsset": "Refresh the existing tool page and add article-to-tool internal links.",
       "safetyBoundary": {
         "autoCreateArticles": false,
         "autoEditPublicArticles": false,
@@ -444,20 +447,6 @@
       "existingToolMatches": [],
       "publicMatches": [
         {
-          "category": "部署教程",
-          "descriptionLength": 87,
-          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
-          "slug": "vercel-env-variable-missing-beginner-guide",
-          "tags": [
-            "Vercel",
-            "环境变量",
-            "Next.js",
-            "部署失败"
-          ],
-          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
-          "updatedAt": "2026-06-02"
-        },
-        {
           "category": "Codex 新手教程",
           "descriptionLength": 101,
           "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
@@ -470,6 +459,20 @@
           ],
           "title": "Codex 部署 Vercel 前检查什么：上线前清单",
           "updatedAt": "2026-06-01"
+        },
+        {
+          "category": "部署教程",
+          "descriptionLength": 87,
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "tags": [
+            "Vercel",
+            "环境变量",
+            "Next.js",
+            "部署失败"
+          ],
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "updatedAt": "2026-06-02"
         }
       ],
       "priorityScore": 137,

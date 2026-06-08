@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T02:02:21.292Z",
+  "generatedAt": "2026-06-08T04:08:35.987Z",
   "ok": true,
   "summary": {
     "checks": 197,
@@ -135,7 +135,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=211, unsafeClaims=0, watchMentions=3792"
+      "detail": "filesScanned=209, unsafeClaims=0, watchMentions=3753"
     },
     {
       "name": "content integrity audit is read-only and clean",

@@ -1,6 +1,6 @@
 # Tool Market Opportunity Map
 
-Generated at: 2026-06-08T02:02:01.612Z
+Generated at: 2026-06-08T04:08:35.848Z
 
 ## Guardrails
 
@@ -14,7 +14,7 @@ Generated at: 2026-06-08T02:02:01.612Z
 ## Current Surface
 
 - Public articles: 15
-- Existing tools: error-explainer, pricing-calculator, proposal-generator
+- Existing tools: error-explainer, ppt-planner, pricing-calculator, proposal-generator
 - Live missing from sitemap: 0
 - Measured traffic sources: 0
 - Traffic data available: false
@@ -24,7 +24,7 @@ Generated at: 2026-06-08T02:02:01.612Z
 
 - cnFirstOpportunities: 2
 - dualTrackOpportunities: 4
-- existingTools: 3
+- existingTools: 4
 - globalFirstOpportunities: 2
 - opportunities: 8
 - platformRegistrationsNeedingHuman: 5
@@ -53,7 +53,7 @@ Generated at: 2026-06-08T02:02:01.612Z
 
 | Score | Track | Public | Tool | Content candidates | Title | Next asset |
 | ---: | --- | ---: | ---: | ---: | --- | --- |
-| 154 | dual-track | 0 | 0 | 1 | PPT 策划与美观排版助手 | Build a lightweight interactive tool page before expanding another generic article. |
+| 144 | dual-track | 0 | 1 | 1 | PPT 策划与美观排版助手 | Refresh the existing tool page and add article-to-tool internal links. |
 | 153 | dual-track | 0 | 0 | 7 | 表格一键整理与清洗助手 | Build a lightweight interactive tool page before expanding another generic article. |
 | 148 | cn-first | 0 | 0 | 8 | 全行业 AI 提示词工作流生成器 | Build a lightweight interactive tool page before expanding another generic article. |
 | 137 | dual-track | 2 | 0 | 8 | Agent 部署与工具权限规划器 | Build a lightweight interactive tool page before expanding another generic article. |
