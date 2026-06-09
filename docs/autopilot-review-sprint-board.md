@@ -1,6 +1,6 @@
 # Autopilot Review Sprint Board
 
-Generated at: 2026-06-09T01:27:15.124Z
+Generated at: 2026-06-09T05:46:05.992Z
 
 This report is read-only. It plans the next 10 manual review assignments and keeps all status changes human-gated.
 
