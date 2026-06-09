@@ -1,6 +1,6 @@
 # Publication Bottleneck Report
 
-Generated at: 2026-06-09T10:47:47.443Z
+Generated at: 2026-06-09T16:19:29.865Z
 
 This report is read-only. It explains why public article growth is gated and what to review next.
 

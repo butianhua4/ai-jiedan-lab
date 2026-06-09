@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09T10:47:25.236Z",
+  "generatedAt": "2026-06-09T16:19:07.685Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "No measured traffic, rankings, clicks, impressions, or revenue are claimed."
   },
   "sourceEvidence": {
-    "remediationGeneratedAt": "2026-06-09T10:47:24.763Z",
+    "remediationGeneratedAt": "2026-06-09T16:19:07.208Z",
     "remediationGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -1188,11 +1188,11 @@
         "Keep the article draft/noindex/humanReviewRequired until approval."
       ],
       "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-      "finalUrl": "https://ai.google.dev/gemini-api/docs",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=es-419",
       "kind": "redirected-url",
       "manualChecklist": [
         "Original URL: https://ai.google.dev/docs",
-        "Final URL: https://ai.google.dev/gemini-api/docs",
+        "Final URL: https://ai.google.dev/gemini-api/docs?hl=es-419",
         "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
         "Confirm the replacement source covers the exact claim family.",
         "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
@@ -3286,11 +3286,11 @@
         "Keep the article draft/noindex/humanReviewRequired until approval."
       ],
       "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
-      "finalUrl": "https://ai.google.dev/gemini-api/docs",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=es-419",
       "kind": "redirected-url",
       "manualChecklist": [
         "Original URL: https://ai.google.dev/docs",
-        "Final URL: https://ai.google.dev/gemini-api/docs",
+        "Final URL: https://ai.google.dev/gemini-api/docs?hl=es-419",
         "Scopes: next-source-pack",
         "Confirm the replacement source covers the exact claim family.",
         "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",

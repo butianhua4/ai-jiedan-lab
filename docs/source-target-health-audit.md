@@ -1,6 +1,6 @@
 # Source Target Health Audit
 
-Generated at: 2026-06-09T10:47:24.290Z
+Generated at: 2026-06-09T16:19:06.684Z
 
 This report is read-only. It verifies official source URLs used by review and public-gap candidates before any human approval step.
 
@@ -44,7 +44,7 @@ This report is read-only. It verifies official source URLs used by review and pu
 | OK | Status | URL | Final URL | References | Error |
 | --- | --- | --- | --- | --- | --- |
 | true | 200 | https://ai-sdk.dev/docs | https://ai-sdk.dev/docs/introduction | 30 |  |
-| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs | 4 |  |
+| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=es-419 | 4 |  |
 | true | 200 | https://docs.anthropic.com | https://platform.claude.com/docs/en/home | 5 |  |
 | true | 200 | https://docs.anthropic.com/ | https://platform.claude.com/docs/en/home | 2 |  |
 | true | 200 | https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview | https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview | 5 |  |
@@ -97,7 +97,7 @@ This report is read-only. It verifies official source URLs used by review and pu
 | true | 200 | https://adoption.microsoft.com/en-us/copilot/prompt-gallery/ | https://adoption.microsoft.com/en-us/copilot/prompt-gallery/ | 2 |  |
 | false |  | https://ai-prompts-pro.com/blog/ai-prompt-templates-business |  | 2 | TypeError |
 | true | 200 | https://ai-sdk.dev/docs | https://ai-sdk.dev/docs/introduction | 30 |  |
-| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs | 4 |  |
+| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=es-419 | 4 |  |
 | true | 200 | https://arxiv.org/abs/2603.10700 | https://arxiv.org/abs/2603.10700 | 2 |  |
 | true | 200 | https://arxiv.org/abs/2604.20598 | https://arxiv.org/abs/2604.20598 | 2 |  |
 | true | 200 | https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag | https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag | 2 |  |
