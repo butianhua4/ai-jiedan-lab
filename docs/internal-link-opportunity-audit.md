@@ -1,6 +1,6 @@
 # Internal Link Opportunity Audit
 
-Generated at: 2026-06-09T05:45:29.766Z
+Generated at: 2026-06-09T10:47:01.363Z
 
 This report is read-only. It suggests public internal links for review candidates before any publishing action.
 

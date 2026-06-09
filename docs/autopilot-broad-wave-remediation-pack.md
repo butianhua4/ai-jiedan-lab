@@ -1,6 +1,6 @@
 # Autopilot Broad Wave Remediation Pack
 
-Generated at: 2026-06-09T05:46:10.132Z
+Generated at: 2026-06-09T10:47:42.665Z
 
 This report is read-only. It turns broad AI publish-wave optimization items into manual remediation cards and keeps article edits, mark-review, and publishing human-gated.
 
@@ -30,7 +30,7 @@ This report is read-only. It turns broad AI publish-wave optimization items into
 
 ## Source Evidence
 
-- broadWaveOptimizationGeneratedAt: "2026-06-09T05:46:09.649Z"
+- broadWaveOptimizationGeneratedAt: "2026-06-09T10:47:42.191Z"
 - broadWaveOptimizationGuardrails: {"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"note":"Read-only optimization brief for broad publish waves. It proposes SEO, snippet, opening, internal-link, and risk-language checks without editing article files.","stopBefore":"Apply any copy or link changes only during human review. Do not mark review or publish automatically.","trafficClaim":"not-included"}
 - broadWaveOptimizationItems: 24
 - broadWaveOptimizationReadyItems: 24
