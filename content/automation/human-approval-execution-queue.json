@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09T16:19:26.481Z",
+  "generatedAt": "2026-06-10T01:35:44.313Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "firstCoverageGeneratedAt": "2026-06-09T16:19:25.982Z",
+    "firstCoverageGeneratedAt": "2026-06-10T01:35:43.817Z",
     "firstCoverageSummary": {
       "blockingItems": 0,
       "commandBoundaries": 8,
@@ -29,7 +29,7 @@
       "warningItems": 8,
       "zeroPublicClusters": 8
     },
-    "massAiSearchMatrixGeneratedAt": "2026-06-09T16:18:59.089Z",
+    "massAiSearchMatrixGeneratedAt": "2026-06-10T01:35:15.535Z",
     "massAiSearchMatrixSummary": {
       "commandBoundaries": 10,
       "deploymentBridgedThemes": 6,
@@ -50,7 +50,7 @@
       "unsafeItems": 0,
       "waves": 3
     },
-    "popularAiPromptPlaybookGeneratedAt": "2026-06-09T16:19:02.485Z",
+    "popularAiPromptPlaybookGeneratedAt": "2026-06-10T01:35:18.863Z",
     "popularAiPromptPlaybookSummary": {
       "agentDeploymentLanes": 3,
       "broadWorkPromptLanes": 3,
@@ -72,7 +72,7 @@
       "uniqueCandidateFiles": 21,
       "unsafeItems": 0
     },
-    "seoWarningGeneratedAt": "2026-06-09T16:18:47.636Z",
+    "seoWarningGeneratedAt": "2026-06-10T01:35:03.942Z",
     "seoWarningSummary": {
       "blockingItems": 0,
       "draftItems": 8,
@@ -89,7 +89,7 @@
       "warningItems": 16,
       "waveItems": 1
     },
-    "sourceReplacementGeneratedAt": "2026-06-09T16:19:07.685Z",
+    "sourceReplacementGeneratedAt": "2026-06-10T01:35:25.419Z",
     "sourceReplacementSummary": {
       "affectedFiles": 22,
       "failedDecisionItems": 1,
@@ -105,14 +105,14 @@
       "sourceRemediationUnsafeItems": 0,
       "unsafeItems": 0
     },
-    "waveApprovalGeneratedAt": "2026-06-09T16:18:54.040Z",
+    "waveApprovalGeneratedAt": "2026-06-10T01:35:10.440Z",
     "waveApprovalSummary": {
       "items": 3,
       "readyForHumanReview": 3,
       "unsafeItems": 0,
       "wave": 1
     },
-    "wavePublishSimulationGeneratedAt": "2026-06-09T16:19:09.611Z",
+    "wavePublishSimulationGeneratedAt": "2026-06-10T01:35:27.364Z",
     "wavePublishSimulationSummary": {
       "currentlyPublishable": 0,
       "items": 3,
