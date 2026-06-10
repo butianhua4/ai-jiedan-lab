@@ -1,6 +1,6 @@
 # Human Approval Repair Session Pack
 
-Generated at: 2026-06-10T01:35:38.228Z
+Generated at: 2026-06-10T06:00:26.698Z
 
 This report is read-only. It packages the next manual repair session for each routed file and stops before article edits, mark:review, or publishing.
 

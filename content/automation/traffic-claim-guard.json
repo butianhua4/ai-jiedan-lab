@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T01:35:58.561Z",
+  "generatedAt": "2026-06-10T06:00:50.713Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."

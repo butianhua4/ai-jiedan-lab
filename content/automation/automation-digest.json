@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T01:36:01.065Z",
+  "generatedAt": "2026-06-10T06:00:53.318Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -8473,7 +8473,7 @@
         "url": "https://ai-sdk.dev/docs"
       },
       {
-        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=id",
+        "finalUrl": "https://ai.google.dev/gemini-api/docs",
         "ok": true,
         "references": [
           {
@@ -58633,7 +58633,7 @@
   "liveSearch": {
     "checkedArticles": 15,
     "failedChecks": [],
-    "generatedAt": "2026-06-10T01:35:57.293Z",
+    "generatedAt": "2026-06-10T06:00:49.478Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 15,

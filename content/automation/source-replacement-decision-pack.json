@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T01:35:25.419Z",
+  "generatedAt": "2026-06-10T06:00:13.973Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "No measured traffic, rankings, clicks, impressions, or revenue are claimed."
   },
   "sourceEvidence": {
-    "remediationGeneratedAt": "2026-06-10T01:35:24.941Z",
+    "remediationGeneratedAt": "2026-06-10T06:00:13.503Z",
     "remediationGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -1188,11 +1188,11 @@
         "Keep the article draft/noindex/humanReviewRequired until approval."
       ],
       "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=id",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs",
       "kind": "redirected-url",
       "manualChecklist": [
         "Original URL: https://ai.google.dev/docs",
-        "Final URL: https://ai.google.dev/gemini-api/docs?hl=id",
+        "Final URL: https://ai.google.dev/gemini-api/docs",
         "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
         "Confirm the replacement source covers the exact claim family.",
         "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
@@ -3286,11 +3286,11 @@
         "Keep the article draft/noindex/humanReviewRequired until approval."
       ],
       "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
-      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=id",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs",
       "kind": "redirected-url",
       "manualChecklist": [
         "Original URL: https://ai.google.dev/docs",
-        "Final URL: https://ai.google.dev/gemini-api/docs?hl=id",
+        "Final URL: https://ai.google.dev/gemini-api/docs",
         "Scopes: next-source-pack",
         "Confirm the replacement source covers the exact claim family.",
         "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
