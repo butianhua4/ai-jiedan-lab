@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T11:57:08.929Z",
+  "generatedAt": "2026-06-11T17:07:15.067Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "sourceHealthGeneratedAt": "2026-06-11T11:57:08.427Z",
+    "sourceHealthGeneratedAt": "2026-06-11T17:07:14.589Z",
     "sourceHealthGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,

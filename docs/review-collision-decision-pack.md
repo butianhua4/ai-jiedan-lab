@@ -1,6 +1,6 @@
 # Review Collision Decision Pack
 
-Generated at: 2026-06-11T11:57:13.381Z
+Generated at: 2026-06-11T17:07:19.375Z
 
 This report is read-only. It turns high cannibalization risk into a manual decision pack and stops before mark:review or publish.
 
@@ -28,7 +28,7 @@ This report is read-only. It turns high cannibalization risk into a manual decis
 
 ## Source Evidence
 
-- cannibalizationGeneratedAt: "2026-06-11T11:57:12.911Z"
+- cannibalizationGeneratedAt: "2026-06-11T17:07:18.899Z"
 - cannibalizationGuardrails: {"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"note":"Read-only cannibalization brief for current review candidates. It does not edit titles, slugs, keywords, status, noindex, or publishing state.","stopBefore":"Use recommendations during human review only. Publishing still requires separate explicit approval."}
 - cannibalizationSummary: {"candidateFiles":13,"highRiskItems":1,"highRiskPublishedItems":0,"highRiskReviewOnlyItems":1,"items":13,"itemsWithPublishedComparison":0,"itemsWithReviewComparison":1,"mediumRiskItems":0,"unsafeCommands":0}
 - queueBlockedItems: 1
