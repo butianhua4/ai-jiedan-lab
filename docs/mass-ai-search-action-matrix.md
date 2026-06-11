@@ -1,6 +1,6 @@
 # Mass AI Search Action Matrix
 
-Generated at: 2026-06-11T06:17:35.614Z
+Generated at: 2026-06-11T11:57:00.201Z
 
 This report is read-only. It turns broad AI search demand into human-review waves across AI deployment, Agent deployment, RAG, memory, no-code automation, AI API operations, observability, and cross-industry prompt libraries.
 
@@ -37,12 +37,12 @@ This report is read-only. It turns broad AI search demand into human-review wave
 
 ## Source Evidence
 
-- broadSearchDemandGeneratedAt: "2026-06-11T06:17:35.123Z"
+- broadSearchDemandGeneratedAt: "2026-06-11T11:56:59.685Z"
 - broadSearchDemandGuardrails: {"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"note":"Read-only broad-demand map. It prioritizes likely user-search themes from the local content inventory and official source targets; it does not claim keyword volume, rankings, clicks, or traffic."}
 - broadSearchDemandSummary: {"themes":10,"themesWithReadyDrafts":10,"themesWithoutPublicCoverage":8,"totalReadyDraftMatches":417,"uniqueCandidateFiles":56,"reviewPackThemeMatches":4,"plannedWaveThemeMatches":24,"missingSubtopics":25,"maxGapScore":388}
-- deploymentReviewGeneratedAt: "2026-06-11T01:45:28.674Z"
+- deploymentReviewGeneratedAt: "2026-06-11T06:17:36.089Z"
 - deploymentReviewSummary: {"deploymentPublicArticles":3,"duplicateFiles":0,"items":10,"itemsWithChecklists":10,"itemsWithCommandBoundary":10,"itemsWithOfficialSources":10,"itemsWithSearchQueries":10,"reviewReadyDeploymentDrafts":208,"safeDraftItems":10,"topicsCovered":10,"topicsWithoutPublicCoverage":8,"unsafeItems":0,"uniqueFiles":10}
-- industryPromptModuleGeneratedAt: "2026-06-11T01:45:31.063Z"
+- industryPromptModuleGeneratedAt: "2026-06-11T06:17:38.419Z"
 - industryPromptModuleSummary: {"humanGatedItems":12,"items":12,"itemsWithCopyPrompts":12,"itemsWithInputOutputStructure":12,"itemsWithReviewPackCandidate":11,"itemsWithRiskControls":12,"itemsWithSourceTargets":12,"modulesPerOpportunityMax":5,"modulesPerOpportunityMin":5,"promptBlueprints":60,"sourceOpportunityModules":60,"sourceOpportunityUnsafeItems":0,"sourceReviewPackUnsafeItems":0,"unsafeItems":0,"zeroPublicCoverageItems":12}
 - officialSourceSignals: ["Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview","Dify docs: https://docs.dify.ai","Hugging Face docs: https://huggingface.co/docs","LangChain docs: https://python.langchain.com/docs","LlamaIndex docs: https://docs.llamaindex.ai","n8n docs: https://docs.n8n.io","Ollama docs: https://docs.ollama.com","OpenAI Agents docs: https://platform.openai.com/docs/guides/agents","OpenAI API docs: https://platform.openai.com/docs","OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering","OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval","Vercel AI SDK docs: https://ai-sdk.dev/docs","vLLM docs: https://docs.vllm.ai"]
 - trafficNote: "Search seeds and gap scores are editorial planning signals only; this matrix does not claim keyword volume, rankings, impressions, clicks, traffic, or revenue."

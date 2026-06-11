@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T06:18:16.972Z",
+  "generatedAt": "2026-06-11T11:57:42.334Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -8,7 +8,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "broadDemandGeneratedAt": "2026-06-11T06:17:59.403Z",
+    "broadDemandGeneratedAt": "2026-06-11T11:57:24.924Z",
     "broadDemandGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -27,7 +27,7 @@
       "reviewReadyDrafts": 633,
       "unsafeClusters": 0
     },
-    "liveSearchGeneratedAt": "2026-06-11T06:18:15.186Z",
+    "liveSearchGeneratedAt": "2026-06-11T11:57:40.581Z",
     "liveSearchOk": true,
     "projectStatusPublicPublished": 15,
     "projectStatusTotalFiles": 669,

@@ -1,6 +1,6 @@
 # Autopilot Approval Packet
 
-Generated at: 2026-06-11T06:17:52.228Z
+Generated at: 2026-06-11T11:57:17.550Z
 
 This packet is read-only. It packages the top autopilot review assignments for human approval and does not change article status.
 

@@ -1,6 +1,6 @@
 # Autopilot Broad Wave Optimization
 
-Generated at: 2026-06-11T06:18:00.828Z
+Generated at: 2026-06-11T11:57:26.418Z
 
 ## Guardrails
 
