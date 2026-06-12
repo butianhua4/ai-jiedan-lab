@@ -16,7 +16,7 @@ const fitItems = [
 ];
 
 const notFitItems = [
-  "承诺接单成功或承诺固定收入",
+  "承诺成交成功或承诺固定收入",
   "代写虚假经历、虚假案例或虚假评价",
   "引导 Upwork / Fiverr 客户站外付款",
   "批量群发未经审核的 Proposal",
@@ -38,7 +38,7 @@ export default function ContactPage() {
         <p className="text-sm font-medium text-brand">人工协助预留</p>
         <h1 className="mt-2 text-3xl font-bold text-ink md:text-4xl">联系我</h1>
         <p className="mt-4 max-w-3xl text-gray-600">
-          第一版不接在线支付，也不承诺接单结果。联系页主要用于少量人工协助：帮你判断问题、整理下一步、检查配置和风险。长期目标仍然是用工具、模板和内容降低重复人工。
+          第一版不接在线支付，也不承诺成交结果。联系页主要用于少量人工协助：帮你判断问题、整理下一步、检查配置和风险。长期目标仍然是用工具、模板和内容降低重复人工。
         </p>
         <div className="mt-6 grid gap-3 sm:grid-cols-3">
           <Link className="rounded-md bg-brand px-4 py-3 text-center text-sm font-semibold text-white" href="/tools/error-explainer">

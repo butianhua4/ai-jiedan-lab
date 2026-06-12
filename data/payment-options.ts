@@ -12,9 +12,9 @@ export const paymentOptions: PaymentOption[] = [
     name: "平台内收款",
     stage: "接 Upwork / Fiverr 项目时优先",
     bestFor: "客户来自 Upwork、Fiverr 等自由职业平台的服务订单。",
-    setupWhen: "只要开始在对应平台接单，就按平台规则绑定官方支持的收款方式。",
+    setupWhen: "只要开始在对应平台承接项目，就按平台规则绑定官方支持的收款方式。",
     notes: "不要引导平台客户站外付款。这样做可能违反平台规则，也会增加账号风险。",
-    registrationNeed: "需要注册对应接单平台，并按平台要求完成身份和收款设置。",
+    registrationNeed: "需要注册对应自由职业平台，并按平台要求完成身份和收款设置。",
   },
   {
     name: "Payoneer",

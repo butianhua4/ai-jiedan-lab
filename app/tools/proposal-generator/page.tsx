@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/tools/proposal-generator" },
   openGraph: {
     title: "Upwork Proposal 生成器",
-    description: "生成谨慎可修改的英文投标草稿，适合 AI 接单新手练习。",
+    description: "生成谨慎可修改的英文投标草稿，适合 AI 工具新手练习。",
     url: "/tools/proposal-generator",
   },
 };

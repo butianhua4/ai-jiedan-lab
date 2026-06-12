@@ -20,7 +20,7 @@ export default function SpreadsheetCleanerPage() {
         <p className="text-sm font-medium text-brand">Excel / CSV / 表格清洗</p>
         <h1 className="mt-2 break-words text-3xl font-bold text-ink">AI 表格一键整理与清洗助手</h1>
         <p className="mt-3 max-w-3xl text-gray-600">
-          粘贴 CSV、Excel 复制内容或普通表格文本，先做空格整理、空值标记、重复行检查、字段类型判断和 CSV 输出。适合运营、销售、客服、财务助理和接单数据整理场景。
+          粘贴 CSV、Excel 复制内容或普通表格文本，先做空格整理、空值标记、重复行检查、字段类型判断和 CSV 输出。适合运营、销售、客服、财务助理和项目数据整理场景。
         </p>
       </section>
       <SpreadsheetCleanerClient />

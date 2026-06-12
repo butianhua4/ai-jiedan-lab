@@ -11,7 +11,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 是什么，新手第一天应该怎么用",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -57,7 +57,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 是什么，新手第一天应该怎么用：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -103,7 +103,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 是什么，新手第一天应该怎么用：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -139,21 +139,21 @@ export const contentPlan500 = [
   },
   {
     "id": 4,
-    "title": "Codex 是什么，新手第一天应该怎么用：接单前怎么判断能不能做",
+    "title": "Codex 是什么，新手第一天应该怎么用：使用前怎么判断是否适合",
     "slug": "codex-first-day-guide-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 是什么，新手第一天应该怎么用：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 是什么，新手第一天应该怎么用：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 是什么，新手第一天应该怎么用：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 是什么，新手第一天应该怎么用：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -195,7 +195,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 安装前需要准备哪些环境",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -241,7 +241,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 安装前需要准备哪些环境：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -287,7 +287,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 安装前需要准备哪些环境：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -323,21 +323,21 @@ export const contentPlan500 = [
   },
   {
     "id": 8,
-    "title": "Codex 安装前需要准备哪些环境：接单前怎么判断能不能做",
+    "title": "Codex 安装前需要准备哪些环境：使用前怎么判断是否适合",
     "slug": "codex-install-prerequisites-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 安装前需要准备哪些环境：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 安装前需要准备哪些环境：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 安装前需要准备哪些环境：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 安装前需要准备哪些环境：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -379,7 +379,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 在 Windows 上安装失败怎么办",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -425,7 +425,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 在 Windows 上安装失败怎么办：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -471,7 +471,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 在 Windows 上安装失败怎么办：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -507,21 +507,21 @@ export const contentPlan500 = [
   },
   {
     "id": 12,
-    "title": "Codex 在 Windows 上安装失败怎么办：接单前怎么判断能不能做",
+    "title": "Codex 在 Windows 上安装失败怎么办：使用前怎么判断是否适合",
     "slug": "codex-windows-install-failed-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 在 Windows 上安装失败怎么办：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 在 Windows 上安装失败怎么办：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 在 Windows 上安装失败怎么办：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 在 Windows 上安装失败怎么办：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -563,7 +563,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex npm install 报错怎么排查",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -609,7 +609,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex npm install 报错怎么排查：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -655,7 +655,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex npm install 报错怎么排查：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -691,21 +691,21 @@ export const contentPlan500 = [
   },
   {
     "id": 16,
-    "title": "Codex npm install 报错怎么排查：接单前怎么判断能不能做",
+    "title": "Codex npm install 报错怎么排查：使用前怎么判断是否适合",
     "slug": "codex-npm-install-errors-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex npm install 报错怎么排查：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex npm install 报错怎么排查：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex npm install 报错怎么排查：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex npm install 报错怎么排查：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -747,7 +747,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 怎么做第一个落地页",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -793,7 +793,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 怎么做第一个落地页：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -839,7 +839,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 怎么做第一个落地页：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -875,21 +875,21 @@ export const contentPlan500 = [
   },
   {
     "id": 20,
-    "title": "Codex 怎么做第一个落地页：接单前怎么判断能不能做",
+    "title": "Codex 怎么做第一个落地页：使用前怎么判断是否适合",
     "slug": "codex-first-landing-page-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 怎么做第一个落地页：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 怎么做第一个落地页：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 怎么做第一个落地页：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 怎么做第一个落地页：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -931,7 +931,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 修 CSS 间距和响应式问题怎么做",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -977,7 +977,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 修 CSS 间距和响应式问题怎么做：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -1023,7 +1023,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 修 CSS 间距和响应式问题怎么做：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -1059,21 +1059,21 @@ export const contentPlan500 = [
   },
   {
     "id": 24,
-    "title": "Codex 修 CSS 间距和响应式问题怎么做：接单前怎么判断能不能做",
+    "title": "Codex 修 CSS 间距和响应式问题怎么做：使用前怎么判断是否适合",
     "slug": "codex-css-spacing-responsive-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 修 CSS 间距和响应式问题怎么做：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 修 CSS 间距和响应式问题怎么做：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 修 CSS 间距和响应式问题怎么做：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 修 CSS 间距和响应式问题怎么做：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -1115,7 +1115,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 生成代码后怎么人工审核",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -1161,7 +1161,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 生成代码后怎么人工审核：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -1207,7 +1207,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 生成代码后怎么人工审核：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -1243,21 +1243,21 @@ export const contentPlan500 = [
   },
   {
     "id": 28,
-    "title": "Codex 生成代码后怎么人工审核：接单前怎么判断能不能做",
+    "title": "Codex 生成代码后怎么人工审核：使用前怎么判断是否适合",
     "slug": "codex-review-generated-code-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 生成代码后怎么人工审核：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 生成代码后怎么人工审核：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 生成代码后怎么人工审核：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 生成代码后怎么人工审核：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -1299,7 +1299,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 和 GitHub 怎么配合提交代码",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "GitHub",
       "Codex"
@@ -1346,7 +1346,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 和 GitHub 怎么配合提交代码：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "GitHub",
       "Codex"
@@ -1393,7 +1393,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 和 GitHub 怎么配合提交代码：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "GitHub",
       "Codex"
@@ -1430,22 +1430,22 @@ export const contentPlan500 = [
   },
   {
     "id": 32,
-    "title": "Codex 和 GitHub 怎么配合提交代码：接单前怎么判断能不能做",
+    "title": "Codex 和 GitHub 怎么配合提交代码：使用前怎么判断是否适合",
     "slug": "codex-github-workflow-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 和 GitHub 怎么配合提交代码：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 和 GitHub 怎么配合提交代码：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "GitHub",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 和 GitHub 怎么配合提交代码：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 和 GitHub 怎么配合提交代码：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -1487,7 +1487,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 和 Vercel 怎么配合部署小网站",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署",
       "Codex"
@@ -1534,7 +1534,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 和 Vercel 怎么配合部署小网站：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署",
       "Codex"
@@ -1581,7 +1581,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 和 Vercel 怎么配合部署小网站：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署",
       "Codex"
@@ -1618,22 +1618,22 @@ export const contentPlan500 = [
   },
   {
     "id": 36,
-    "title": "Codex 和 Vercel 怎么配合部署小网站：接单前怎么判断能不能做",
+    "title": "Codex 和 Vercel 怎么配合部署小网站：使用前怎么判断是否适合",
     "slug": "codex-vercel-deployment-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 和 Vercel 怎么配合部署小网站：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 和 Vercel 怎么配合部署小网站：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 和 Vercel 怎么配合部署小网站：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 和 Vercel 怎么配合部署小网站：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -1675,7 +1675,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 接 Upwork 小单前怎么判断风险",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Upwork 新手",
       "Codex"
@@ -1722,7 +1722,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 接 Upwork 小单前怎么判断风险：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Upwork 新手",
       "Codex"
@@ -1769,7 +1769,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 接 Upwork 小单前怎么判断风险：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Upwork 新手",
       "Codex"
@@ -1806,22 +1806,22 @@ export const contentPlan500 = [
   },
   {
     "id": 40,
-    "title": "Codex 接 Upwork 小单前怎么判断风险：接单前怎么判断能不能做",
+    "title": "Codex 接 Upwork 小单前怎么判断风险：使用前怎么判断是否适合",
     "slug": "codex-upwork-job-risk-check-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "intermediate",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 接 Upwork 小单前怎么判断风险：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 接 Upwork 小单前怎么判断风险：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Upwork 新手",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 接 Upwork 小单前怎么判断风险：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 接 Upwork 小单前怎么判断风险：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -1863,7 +1863,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 修改现有网页 UI 的安全流程",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -1909,7 +1909,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 修改现有网页 UI 的安全流程：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -1955,7 +1955,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 修改现有网页 UI 的安全流程：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -1991,21 +1991,21 @@ export const contentPlan500 = [
   },
   {
     "id": 44,
-    "title": "Codex 修改现有网页 UI 的安全流程：接单前怎么判断能不能做",
+    "title": "Codex 修改现有网页 UI 的安全流程：使用前怎么判断是否适合",
     "slug": "codex-edit-existing-ui-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 修改现有网页 UI 的安全流程：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 修改现有网页 UI 的安全流程：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 修改现有网页 UI 的安全流程：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 修改现有网页 UI 的安全流程：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -2047,7 +2047,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 修 bug 时如何保留回滚记录",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -2093,7 +2093,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 修 bug 时如何保留回滚记录：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -2139,7 +2139,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 修 bug 时如何保留回滚记录：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -2175,21 +2175,21 @@ export const contentPlan500 = [
   },
   {
     "id": 48,
-    "title": "Codex 修 bug 时如何保留回滚记录：接单前怎么判断能不能做",
+    "title": "Codex 修 bug 时如何保留回滚记录：使用前怎么判断是否适合",
     "slug": "codex-bugfix-rollback-record-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 修 bug 时如何保留回滚记录：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 修 bug 时如何保留回滚记录：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 修 bug 时如何保留回滚记录：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 修 bug 时如何保留回滚记录：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -2231,7 +2231,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 处理客户需求不清楚时怎么提问",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -2277,7 +2277,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 处理客户需求不清楚时怎么提问：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -2323,7 +2323,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 处理客户需求不清楚时怎么提问：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -2359,21 +2359,21 @@ export const contentPlan500 = [
   },
   {
     "id": 52,
-    "title": "Codex 处理客户需求不清楚时怎么提问：接单前怎么判断能不能做",
+    "title": "Codex 处理客户需求不清楚时怎么提问：使用前怎么判断是否适合",
     "slug": "codex-client-requirement-questions-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 处理客户需求不清楚时怎么提问：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 处理客户需求不清楚时怎么提问：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 处理客户需求不清楚时怎么提问：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 处理客户需求不清楚时怎么提问：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -2415,7 +2415,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 做小网站交付前检查什么",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -2461,7 +2461,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 做小网站交付前检查什么：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -2507,7 +2507,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 做小网站交付前检查什么：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -2543,21 +2543,21 @@ export const contentPlan500 = [
   },
   {
     "id": 56,
-    "title": "Codex 做小网站交付前检查什么：接单前怎么判断能不能做",
+    "title": "Codex 做小网站交付前检查什么：使用前怎么判断是否适合",
     "slug": "codex-small-website-delivery-check-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 做小网站交付前检查什么：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 做小网站交付前检查什么：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 做小网站交付前检查什么：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 做小网站交付前检查什么：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -2599,7 +2599,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 如何避免把密钥写进代码",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -2645,7 +2645,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 如何避免把密钥写进代码：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -2691,7 +2691,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 如何避免把密钥写进代码：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -2727,21 +2727,21 @@ export const contentPlan500 = [
   },
   {
     "id": 60,
-    "title": "Codex 如何避免把密钥写进代码：接单前怎么判断能不能做",
+    "title": "Codex 如何避免把密钥写进代码：使用前怎么判断是否适合",
     "slug": "codex-avoid-secret-leak-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "intermediate",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 如何避免把密钥写进代码：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 如何避免把密钥写进代码：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 如何避免把密钥写进代码：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 如何避免把密钥写进代码：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -2783,7 +2783,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 改 Tailwind 页面时怎么检查移动端",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -2829,7 +2829,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 改 Tailwind 页面时怎么检查移动端：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -2875,7 +2875,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 改 Tailwind 页面时怎么检查移动端：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -2911,21 +2911,21 @@ export const contentPlan500 = [
   },
   {
     "id": 64,
-    "title": "Codex 改 Tailwind 页面时怎么检查移动端：接单前怎么判断能不能做",
+    "title": "Codex 改 Tailwind 页面时怎么检查移动端：使用前怎么判断是否适合",
     "slug": "codex-tailwind-mobile-check-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 改 Tailwind 页面时怎么检查移动端：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 改 Tailwind 页面时怎么检查移动端：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 改 Tailwind 页面时怎么检查移动端：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 改 Tailwind 页面时怎么检查移动端：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -2967,7 +2967,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 生成 README 后怎么检查真实性",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -3013,7 +3013,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 生成 README 后怎么检查真实性：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -3059,7 +3059,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 生成 README 后怎么检查真实性：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -3095,21 +3095,21 @@ export const contentPlan500 = [
   },
   {
     "id": 68,
-    "title": "Codex 生成 README 后怎么检查真实性：接单前怎么判断能不能做",
+    "title": "Codex 生成 README 后怎么检查真实性：使用前怎么判断是否适合",
     "slug": "codex-readme-review-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 生成 README 后怎么检查真实性：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 生成 README 后怎么检查真实性：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 生成 README 后怎么检查真实性：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 生成 README 后怎么检查真实性：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -3151,7 +3151,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 做作品集页面怎么准备素材",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -3197,7 +3197,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 做作品集页面怎么准备素材：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -3243,7 +3243,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 做作品集页面怎么准备素材：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -3279,21 +3279,21 @@ export const contentPlan500 = [
   },
   {
     "id": 72,
-    "title": "Codex 做作品集页面怎么准备素材：接单前怎么判断能不能做",
+    "title": "Codex 做作品集页面怎么准备素材：使用前怎么判断是否适合",
     "slug": "codex-portfolio-page-assets-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 做作品集页面怎么准备素材：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 做作品集页面怎么准备素材：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 做作品集页面怎么准备素材：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 做作品集页面怎么准备素材：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -3335,7 +3335,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 和 Cursor 哪个更适合新手改网页",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -3381,7 +3381,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 和 Cursor 哪个更适合新手改网页：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -3427,7 +3427,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 和 Cursor 哪个更适合新手改网页：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -3463,21 +3463,21 @@ export const contentPlan500 = [
   },
   {
     "id": 76,
-    "title": "Codex 和 Cursor 哪个更适合新手改网页：接单前怎么判断能不能做",
+    "title": "Codex 和 Cursor 哪个更适合新手改网页：使用前怎么判断是否适合",
     "slug": "codex-vs-cursor-web-editing-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 和 Cursor 哪个更适合新手改网页：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 和 Cursor 哪个更适合新手改网页：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 和 Cursor 哪个更适合新手改网页：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 和 Cursor 哪个更适合新手改网页：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -3519,7 +3519,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 自动化开发流程哪些步骤不能省",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -3565,7 +3565,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 自动化开发流程哪些步骤不能省：新手检查清单",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -3611,7 +3611,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 自动化开发流程哪些步骤不能省：常见错误和解决步骤",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -3647,21 +3647,21 @@ export const contentPlan500 = [
   },
   {
     "id": 80,
-    "title": "Codex 自动化开发流程哪些步骤不能省：接单前怎么判断能不能做",
+    "title": "Codex 自动化开发流程哪些步骤不能省：使用前怎么判断是否适合",
     "slug": "codex-automation-steps-not-skip-freelance-scope",
     "category": "Codex 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Codex 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Codex 自动化开发流程哪些步骤不能省：接单前怎么判断能不能做",
+    "primaryKeyword": "Codex 自动化开发流程哪些步骤不能省：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Codex 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
-    "problem": "新手搜索“Codex 自动化开发流程哪些步骤不能省：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Codex 自动化开发流程哪些步骤不能省：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -3703,7 +3703,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 是什么，新手适合用来做什么",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -3749,7 +3749,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 是什么，新手适合用来做什么：新手检查清单",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -3795,7 +3795,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 是什么，新手适合用来做什么：常见错误和解决步骤",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -3831,21 +3831,21 @@ export const contentPlan500 = [
   },
   {
     "id": 84,
-    "title": "Claude Code 是什么，新手适合用来做什么：接单前怎么判断能不能做",
+    "title": "Claude Code 是什么，新手适合用来做什么：使用前怎么判断是否适合",
     "slug": "claude-code-beginner-use-cases-freelance-scope",
     "category": "Claude Code 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Claude Code 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Claude Code 是什么，新手适合用来做什么：接单前怎么判断能不能做",
+    "primaryKeyword": "Claude Code 是什么，新手适合用来做什么：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
-    "problem": "新手搜索“Claude Code 是什么，新手适合用来做什么：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Claude Code 是什么，新手适合用来做什么：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -3887,7 +3887,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 安装前需要准备什么",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -3933,7 +3933,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 安装前需要准备什么：新手检查清单",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -3979,7 +3979,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 安装前需要准备什么：常见错误和解决步骤",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -4015,21 +4015,21 @@ export const contentPlan500 = [
   },
   {
     "id": 88,
-    "title": "Claude Code 安装前需要准备什么：接单前怎么判断能不能做",
+    "title": "Claude Code 安装前需要准备什么：使用前怎么判断是否适合",
     "slug": "claude-code-install-prerequisites-freelance-scope",
     "category": "Claude Code 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Claude Code 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Claude Code 安装前需要准备什么：接单前怎么判断能不能做",
+    "primaryKeyword": "Claude Code 安装前需要准备什么：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
-    "problem": "新手搜索“Claude Code 安装前需要准备什么：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Claude Code 安装前需要准备什么：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -4071,7 +4071,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 常用命令怎么理解",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -4117,7 +4117,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 常用命令怎么理解：新手检查清单",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -4163,7 +4163,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 常用命令怎么理解：常见错误和解决步骤",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -4199,21 +4199,21 @@ export const contentPlan500 = [
   },
   {
     "id": 92,
-    "title": "Claude Code 常用命令怎么理解：接单前怎么判断能不能做",
+    "title": "Claude Code 常用命令怎么理解：使用前怎么判断是否适合",
     "slug": "claude-code-common-commands-freelance-scope",
     "category": "Claude Code 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Claude Code 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Claude Code 常用命令怎么理解：接单前怎么判断能不能做",
+    "primaryKeyword": "Claude Code 常用命令怎么理解：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
-    "problem": "新手搜索“Claude Code 常用命令怎么理解：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Claude Code 常用命令怎么理解：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -4255,7 +4255,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 修 bug 前怎么描述问题",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -4301,7 +4301,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 修 bug 前怎么描述问题：新手检查清单",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -4347,7 +4347,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 修 bug 前怎么描述问题：常见错误和解决步骤",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -4383,21 +4383,21 @@ export const contentPlan500 = [
   },
   {
     "id": 96,
-    "title": "Claude Code 修 bug 前怎么描述问题：接单前怎么判断能不能做",
+    "title": "Claude Code 修 bug 前怎么描述问题：使用前怎么判断是否适合",
     "slug": "claude-code-bug-prompt-freelance-scope",
     "category": "Claude Code 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Claude Code 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Claude Code 修 bug 前怎么描述问题：接单前怎么判断能不能做",
+    "primaryKeyword": "Claude Code 修 bug 前怎么描述问题：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
-    "problem": "新手搜索“Claude Code 修 bug 前怎么描述问题：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Claude Code 修 bug 前怎么描述问题：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -4439,7 +4439,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 做小项目怎么拆任务",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -4485,7 +4485,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 做小项目怎么拆任务：新手检查清单",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -4531,7 +4531,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 做小项目怎么拆任务：常见错误和解决步骤",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -4567,21 +4567,21 @@ export const contentPlan500 = [
   },
   {
     "id": 100,
-    "title": "Claude Code 做小项目怎么拆任务：接单前怎么判断能不能做",
+    "title": "Claude Code 做小项目怎么拆任务：使用前怎么判断是否适合",
     "slug": "claude-code-small-project-tasks-freelance-scope",
     "category": "Claude Code 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Claude Code 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Claude Code 做小项目怎么拆任务：接单前怎么判断能不能做",
+    "primaryKeyword": "Claude Code 做小项目怎么拆任务：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
-    "problem": "新手搜索“Claude Code 做小项目怎么拆任务：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Claude Code 做小项目怎么拆任务：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -4623,7 +4623,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 和 Codex 哪个适合网页修改",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex",
       "Claude Code"
@@ -4670,7 +4670,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 和 Codex 哪个适合网页修改：新手检查清单",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex",
       "Claude Code"
@@ -4717,7 +4717,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 和 Codex 哪个适合网页修改：常见错误和解决步骤",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex",
       "Claude Code"
@@ -4754,22 +4754,22 @@ export const contentPlan500 = [
   },
   {
     "id": 104,
-    "title": "Claude Code 和 Codex 哪个适合网页修改：接单前怎么判断能不能做",
+    "title": "Claude Code 和 Codex 哪个适合网页修改：使用前怎么判断是否适合",
     "slug": "claude-code-vs-codex-web-editing-freelance-scope",
     "category": "Claude Code 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Claude Code 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Claude Code 和 Codex 哪个适合网页修改：接单前怎么判断能不能做",
+    "primaryKeyword": "Claude Code 和 Codex 哪个适合网页修改：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex",
       "Claude Code"
     ],
-    "problem": "新手搜索“Claude Code 和 Codex 哪个适合网页修改：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Claude Code 和 Codex 哪个适合网页修改：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -4811,7 +4811,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 报错看不懂怎么排查",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -4857,7 +4857,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 报错看不懂怎么排查：新手检查清单",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -4903,7 +4903,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 报错看不懂怎么排查：常见错误和解决步骤",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -4939,21 +4939,21 @@ export const contentPlan500 = [
   },
   {
     "id": 108,
-    "title": "Claude Code 报错看不懂怎么排查：接单前怎么判断能不能做",
+    "title": "Claude Code 报错看不懂怎么排查：使用前怎么判断是否适合",
     "slug": "claude-code-error-debug-freelance-scope",
     "category": "Claude Code 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Claude Code 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Claude Code 报错看不懂怎么排查：接单前怎么判断能不能做",
+    "primaryKeyword": "Claude Code 报错看不懂怎么排查：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
-    "problem": "新手搜索“Claude Code 报错看不懂怎么排查：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Claude Code 报错看不懂怎么排查：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -4995,7 +4995,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 自动化哪些事情需要人工确认",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -5041,7 +5041,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 自动化哪些事情需要人工确认：新手检查清单",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -5087,7 +5087,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 自动化哪些事情需要人工确认：常见错误和解决步骤",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -5123,21 +5123,21 @@ export const contentPlan500 = [
   },
   {
     "id": 112,
-    "title": "Claude Code 自动化哪些事情需要人工确认：接单前怎么判断能不能做",
+    "title": "Claude Code 自动化哪些事情需要人工确认：使用前怎么判断是否适合",
     "slug": "claude-code-automation-human-review-freelance-scope",
     "category": "Claude Code 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Claude Code 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Claude Code 自动化哪些事情需要人工确认：接单前怎么判断能不能做",
+    "primaryKeyword": "Claude Code 自动化哪些事情需要人工确认：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
-    "problem": "新手搜索“Claude Code 自动化哪些事情需要人工确认：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Claude Code 自动化哪些事情需要人工确认：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -5179,7 +5179,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 适合接哪些低风险小单",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -5225,7 +5225,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 适合接哪些低风险小单：新手检查清单",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -5271,7 +5271,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 适合接哪些低风险小单：常见错误和解决步骤",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -5307,21 +5307,21 @@ export const contentPlan500 = [
   },
   {
     "id": 116,
-    "title": "Claude Code 适合接哪些低风险小单：接单前怎么判断能不能做",
+    "title": "Claude Code 适合接哪些低风险小单：使用前怎么判断是否适合",
     "slug": "claude-code-low-risk-freelance-jobs-freelance-scope",
     "category": "Claude Code 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Claude Code 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Claude Code 适合接哪些低风险小单：接单前怎么判断能不能做",
+    "primaryKeyword": "Claude Code 适合接哪些低风险小单：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
-    "problem": "新手搜索“Claude Code 适合接哪些低风险小单：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Claude Code 适合接哪些低风险小单：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -5363,7 +5363,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 新手最容易踩哪些坑",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -5409,7 +5409,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 新手最容易踩哪些坑：新手检查清单",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -5455,7 +5455,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 新手最容易踩哪些坑：常见错误和解决步骤",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -5491,21 +5491,21 @@ export const contentPlan500 = [
   },
   {
     "id": 120,
-    "title": "Claude Code 新手最容易踩哪些坑：接单前怎么判断能不能做",
+    "title": "Claude Code 新手最容易踩哪些坑：使用前怎么判断是否适合",
     "slug": "claude-code-beginner-mistakes-freelance-scope",
     "category": "Claude Code 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Claude Code 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Claude Code 新手最容易踩哪些坑：接单前怎么判断能不能做",
+    "primaryKeyword": "Claude Code 新手最容易踩哪些坑：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
-    "problem": "新手搜索“Claude Code 新手最容易踩哪些坑：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Claude Code 新手最容易踩哪些坑：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -5547,7 +5547,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 改 Next.js 页面怎么检查",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -5593,7 +5593,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 改 Next.js 页面怎么检查：新手检查清单",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -5639,7 +5639,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 改 Next.js 页面怎么检查：常见错误和解决步骤",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -5675,21 +5675,21 @@ export const contentPlan500 = [
   },
   {
     "id": 124,
-    "title": "Claude Code 改 Next.js 页面怎么检查：接单前怎么判断能不能做",
+    "title": "Claude Code 改 Next.js 页面怎么检查：使用前怎么判断是否适合",
     "slug": "claude-code-nextjs-page-check-freelance-scope",
     "category": "Claude Code 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Claude Code 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Claude Code 改 Next.js 页面怎么检查：接单前怎么判断能不能做",
+    "primaryKeyword": "Claude Code 改 Next.js 页面怎么检查：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
-    "problem": "新手搜索“Claude Code 改 Next.js 页面怎么检查：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Claude Code 改 Next.js 页面怎么检查：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -5731,7 +5731,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 生成 Proposal 草稿怎么复核",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -5777,7 +5777,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 生成 Proposal 草稿怎么复核：新手检查清单",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -5823,7 +5823,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 生成 Proposal 草稿怎么复核：常见错误和解决步骤",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -5859,21 +5859,21 @@ export const contentPlan500 = [
   },
   {
     "id": 128,
-    "title": "Claude Code 生成 Proposal 草稿怎么复核：接单前怎么判断能不能做",
+    "title": "Claude Code 生成 Proposal 草稿怎么复核：使用前怎么判断是否适合",
     "slug": "claude-code-proposal-review-freelance-scope",
     "category": "Claude Code 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Claude Code 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Claude Code 生成 Proposal 草稿怎么复核：接单前怎么判断能不能做",
+    "primaryKeyword": "Claude Code 生成 Proposal 草稿怎么复核：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
-    "problem": "新手搜索“Claude Code 生成 Proposal 草稿怎么复核：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Claude Code 生成 Proposal 草稿怎么复核：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -5915,7 +5915,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 和 GitHub 配合怎么避免乱改文件",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "GitHub",
       "Claude Code"
@@ -5962,7 +5962,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 和 GitHub 配合怎么避免乱改文件：新手检查清单",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "GitHub",
       "Claude Code"
@@ -6009,7 +6009,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 和 GitHub 配合怎么避免乱改文件：常见错误和解决步骤",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "GitHub",
       "Claude Code"
@@ -6046,22 +6046,22 @@ export const contentPlan500 = [
   },
   {
     "id": 132,
-    "title": "Claude Code 和 GitHub 配合怎么避免乱改文件：接单前怎么判断能不能做",
+    "title": "Claude Code 和 GitHub 配合怎么避免乱改文件：使用前怎么判断是否适合",
     "slug": "claude-code-github-file-scope-freelance-scope",
     "category": "Claude Code 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Claude Code 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Claude Code 和 GitHub 配合怎么避免乱改文件：接单前怎么判断能不能做",
+    "primaryKeyword": "Claude Code 和 GitHub 配合怎么避免乱改文件：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "GitHub",
       "Claude Code"
     ],
-    "problem": "新手搜索“Claude Code 和 GitHub 配合怎么避免乱改文件：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Claude Code 和 GitHub 配合怎么避免乱改文件：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -6103,7 +6103,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 处理客户英文需求怎么提问",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -6149,7 +6149,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 处理客户英文需求怎么提问：新手检查清单",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -6195,7 +6195,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 处理客户英文需求怎么提问：常见错误和解决步骤",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -6231,21 +6231,21 @@ export const contentPlan500 = [
   },
   {
     "id": 136,
-    "title": "Claude Code 处理客户英文需求怎么提问：接单前怎么判断能不能做",
+    "title": "Claude Code 处理客户英文需求怎么提问：使用前怎么判断是否适合",
     "slug": "claude-code-client-questions-freelance-scope",
     "category": "Claude Code 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Claude Code 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Claude Code 处理客户英文需求怎么提问：接单前怎么判断能不能做",
+    "primaryKeyword": "Claude Code 处理客户英文需求怎么提问：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
-    "problem": "新手搜索“Claude Code 处理客户英文需求怎么提问：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Claude Code 处理客户英文需求怎么提问：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -6287,7 +6287,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 做交付说明应该写什么",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -6333,7 +6333,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 做交付说明应该写什么：新手检查清单",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -6379,7 +6379,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Claude Code 做交付说明应该写什么：常见错误和解决步骤",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -6415,21 +6415,21 @@ export const contentPlan500 = [
   },
   {
     "id": 140,
-    "title": "Claude Code 做交付说明应该写什么：接单前怎么判断能不能做",
+    "title": "Claude Code 做交付说明应该写什么：使用前怎么判断是否适合",
     "slug": "claude-code-delivery-note-freelance-scope",
     "category": "Claude Code 新手教程",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "Claude Code 新手教程方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Claude Code 做交付说明应该写什么：接单前怎么判断能不能做",
+    "primaryKeyword": "Claude Code 做交付说明应该写什么：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "Claude Code 新手教程",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
-    "problem": "新手搜索“Claude Code 做交付说明应该写什么：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Claude Code 做交付说明应该写什么：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -6471,7 +6471,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 新手注册前要准备哪些资料",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 新手注册前要准备哪些资料”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -6516,7 +6516,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 新手注册前要准备哪些资料：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 新手注册前要准备哪些资料：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -6561,7 +6561,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 新手注册前要准备哪些资料：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 新手注册前要准备哪些资料：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -6606,7 +6606,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 个人简介怎么写才真实可信",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 个人简介怎么写才真实可信”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -6651,7 +6651,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 个人简介怎么写才真实可信：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 个人简介怎么写才真实可信：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -6696,7 +6696,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 个人简介怎么写才真实可信：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 个人简介怎么写才真实可信：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -6741,7 +6741,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork Proposal 开头怎么写不空泛",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork Proposal 开头怎么写不空泛”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -6786,7 +6786,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork Proposal 开头怎么写不空泛：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork Proposal 开头怎么写不空泛：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -6831,7 +6831,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork Proposal 开头怎么写不空泛：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork Proposal 开头怎么写不空泛：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -6876,7 +6876,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 第一个项目报价怎么保守估算",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 第一个项目报价怎么保守估算”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -6921,7 +6921,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 第一个项目报价怎么保守估算：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 第一个项目报价怎么保守估算：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -6966,7 +6966,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 第一个项目报价怎么保守估算：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 第一个项目报价怎么保守估算：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7011,7 +7011,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户需求太短怎么提问",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 客户需求太短怎么提问”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7056,7 +7056,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户需求太短怎么提问：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 客户需求太短怎么提问：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7101,7 +7101,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户需求太短怎么提问：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 客户需求太短怎么提问：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7146,7 +7146,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 哪些小网站任务适合 AI 新手",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 哪些小网站任务适合 AI 新手”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7191,7 +7191,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 哪些小网站任务适合 AI 新手：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 哪些小网站任务适合 AI 新手：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7236,7 +7236,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 哪些小网站任务适合 AI 新手：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 哪些小网站任务适合 AI 新手：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7281,7 +7281,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 免费测试项目怎么判断风险",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 免费测试项目怎么判断风险”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7326,7 +7326,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 免费测试项目怎么判断风险：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 免费测试项目怎么判断风险：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7371,7 +7371,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 免费测试项目怎么判断风险：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 免费测试项目怎么判断风险：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7416,7 +7416,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 站外沟通要求怎么处理",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 站外沟通要求怎么处理”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7461,7 +7461,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 站外沟通要求怎么处理：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 站外沟通要求怎么处理：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7506,7 +7506,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 站外沟通要求怎么处理：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 站外沟通要求怎么处理：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7551,7 +7551,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 小单交付前要确认什么",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 小单交付前要确认什么”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7596,7 +7596,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 小单交付前要确认什么：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 小单交付前要确认什么：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7641,7 +7641,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 小单交付前要确认什么：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 小单交付前要确认什么：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7686,7 +7686,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 如何积累第一个真实评价",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 如何积累第一个真实评价”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7731,7 +7731,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 如何积累第一个真实评价：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 如何积累第一个真实评价：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7776,7 +7776,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 如何积累第一个真实评价：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 如何积累第一个真实评价：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7821,7 +7821,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 作品集没有案例怎么办",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 作品集没有案例怎么办”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7866,7 +7866,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 作品集没有案例怎么办：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 作品集没有案例怎么办：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7911,7 +7911,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 作品集没有案例怎么办：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 作品集没有案例怎么办：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -7956,7 +7956,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 英文回复客户怎么写更稳妥",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 英文回复客户怎么写更稳妥”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8001,7 +8001,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 英文回复客户怎么写更稳妥：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 英文回复客户怎么写更稳妥：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8046,7 +8046,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 英文回复客户怎么写更稳妥：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 英文回复客户怎么写更稳妥：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8091,7 +8091,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户需求分析怎么做",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 客户需求分析怎么做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8136,7 +8136,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户需求分析怎么做：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 客户需求分析怎么做：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8181,7 +8181,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户需求分析怎么做：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 客户需求分析怎么做：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8226,7 +8226,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 低预算加急项目要不要投",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 低预算加急项目要不要投”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8271,7 +8271,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 低预算加急项目要不要投：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 低预算加急项目要不要投：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8316,7 +8316,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 低预算加急项目要不要投：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 低预算加急项目要不要投：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8361,7 +8361,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 固定价和小时价怎么选",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 固定价和小时价怎么选”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8406,7 +8406,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 固定价和小时价怎么选：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 固定价和小时价怎么选：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8451,7 +8451,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 固定价和小时价怎么选：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 固定价和小时价怎么选：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8496,7 +8496,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork Proposal 里哪些承诺不能写",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork Proposal 里哪些承诺不能写”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8541,7 +8541,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork Proposal 里哪些承诺不能写：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork Proposal 里哪些承诺不能写：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8586,7 +8586,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork Proposal 里哪些承诺不能写：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork Proposal 里哪些承诺不能写：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8631,7 +8631,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 新手如何筛掉高风险客户",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 新手如何筛掉高风险客户”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8676,7 +8676,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 新手如何筛掉高风险客户：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 新手如何筛掉高风险客户：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8721,7 +8721,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 新手如何筛掉高风险客户：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 新手如何筛掉高风险客户：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8766,7 +8766,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 网站修改单怎么估工时",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 网站修改单怎么估工时”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8811,7 +8811,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 网站修改单怎么估工时：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 网站修改单怎么估工时：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8856,7 +8856,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 网站修改单怎么估工时：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 网站修改单怎么估工时：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8901,7 +8901,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork Bug 修复单怎么写交付边界",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork Bug 修复单怎么写交付边界”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8946,7 +8946,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork Bug 修复单怎么写交付边界：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork Bug 修复单怎么写交付边界：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -8991,7 +8991,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork Bug 修复单怎么写交付边界：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork Bug 修复单怎么写交付边界：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9036,7 +9036,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork AI 工具配置单怎么判断能不能做",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork AI 工具配置单怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9081,7 +9081,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork AI 工具配置单怎么判断能不能做：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork AI 工具配置单怎么判断能不能做：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9126,7 +9126,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork AI 工具配置单怎么判断能不能做：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork AI 工具配置单怎么判断能不能做：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9171,7 +9171,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 数据整理项目有哪些隐私风险",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 数据整理项目有哪些隐私风险”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9216,7 +9216,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 数据整理项目有哪些隐私风险：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 数据整理项目有哪些隐私风险：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9261,7 +9261,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 数据整理项目有哪些隐私风险：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 数据整理项目有哪些隐私风险：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9306,7 +9306,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户要求快速上线怎么沟通",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 客户要求快速上线怎么沟通”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9351,7 +9351,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户要求快速上线怎么沟通：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 客户要求快速上线怎么沟通：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9396,7 +9396,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户要求快速上线怎么沟通：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 客户要求快速上线怎么沟通：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9441,7 +9441,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 新手每天投几个项目更合理",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 新手每天投几个项目更合理”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9486,7 +9486,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 新手每天投几个项目更合理：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 新手每天投几个项目更合理：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9531,7 +9531,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 新手每天投几个项目更合理：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 新手每天投几个项目更合理：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9576,7 +9576,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 被忽略后怎么复盘 Proposal",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 被忽略后怎么复盘 Proposal”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9621,7 +9621,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 被忽略后怎么复盘 Proposal：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 被忽略后怎么复盘 Proposal：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9666,7 +9666,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 被忽略后怎么复盘 Proposal：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 被忽略后怎么复盘 Proposal：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9711,7 +9711,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 小项目完成后怎么写交付说明",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 小项目完成后怎么写交付说明”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9756,7 +9756,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 小项目完成后怎么写交付说明：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 小项目完成后怎么写交付说明：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9801,7 +9801,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 小项目完成后怎么写交付说明：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 小项目完成后怎么写交付说明：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9846,7 +9846,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户改需求怎么处理",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 客户改需求怎么处理”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9891,7 +9891,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户改需求怎么处理：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 客户改需求怎么处理：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9936,7 +9936,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户改需求怎么处理：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 客户改需求怎么处理：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -9981,7 +9981,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 新手如何避免虚假包装",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 新手如何避免虚假包装”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -10026,7 +10026,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 新手如何避免虚假包装：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 新手如何避免虚假包装：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -10071,7 +10071,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 新手如何避免虚假包装：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 新手如何避免虚假包装：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -10106,20 +10106,20 @@ export const contentPlan500 = [
   },
   {
     "id": 222,
-    "title": "Upwork 和 Fiverr 新手接单节奏有什么不同",
+    "title": "Upwork 和 Fiverr 新手使用 AI 工具节奏有什么不同",
     "slug": "upwork-vs-fiverr-beginner-rhythm",
     "category": "Upwork 新手",
     "contentType": "tutorial",
     "difficulty": "beginner",
     "targetReader": "Upwork 新手方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "Upwork 和 Fiverr 新手接单节奏有什么不同",
+    "primaryKeyword": "Upwork 和 Fiverr 新手使用 AI 工具节奏有什么不同",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“Upwork 和 Fiverr 新手接单节奏有什么不同”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Upwork 和 Fiverr 新手使用 AI 工具节奏有什么不同”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -10151,20 +10151,20 @@ export const contentPlan500 = [
   },
   {
     "id": 223,
-    "title": "Upwork 和 Fiverr 新手接单节奏有什么不同：新手检查清单",
+    "title": "Upwork 和 Fiverr 新手使用 AI 工具节奏有什么不同：新手检查清单",
     "slug": "upwork-vs-fiverr-beginner-rhythm-checklist",
     "category": "Upwork 新手",
     "contentType": "checklist",
     "difficulty": "beginner",
     "targetReader": "Upwork 新手方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "Upwork 和 Fiverr 新手接单节奏有什么不同：新手检查清单",
+    "primaryKeyword": "Upwork 和 Fiverr 新手使用 AI 工具节奏有什么不同：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“Upwork 和 Fiverr 新手接单节奏有什么不同：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Upwork 和 Fiverr 新手使用 AI 工具节奏有什么不同：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -10196,20 +10196,20 @@ export const contentPlan500 = [
   },
   {
     "id": 224,
-    "title": "Upwork 和 Fiverr 新手接单节奏有什么不同：常见错误和解决步骤",
+    "title": "Upwork 和 Fiverr 新手使用 AI 工具节奏有什么不同：常见错误和解决步骤",
     "slug": "upwork-vs-fiverr-beginner-rhythm-mistakes",
     "category": "Upwork 新手",
     "contentType": "troubleshooting",
     "difficulty": "beginner",
     "targetReader": "Upwork 新手方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "Upwork 和 Fiverr 新手接单节奏有什么不同：常见错误和解决步骤",
+    "primaryKeyword": "Upwork 和 Fiverr 新手使用 AI 工具节奏有什么不同：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“Upwork 和 Fiverr 新手接单节奏有什么不同：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Upwork 和 Fiverr 新手使用 AI 工具节奏有什么不同：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -10251,7 +10251,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 项目开始前要保存哪些记录",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 项目开始前要保存哪些记录”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -10296,7 +10296,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 项目开始前要保存哪些记录：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 项目开始前要保存哪些记录：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -10341,7 +10341,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 项目开始前要保存哪些记录：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 项目开始前要保存哪些记录：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -10386,7 +10386,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户迟迟不确认怎么办",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 客户迟迟不确认怎么办”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -10431,7 +10431,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户迟迟不确认怎么办：新手检查清单",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 客户迟迟不确认怎么办：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -10476,7 +10476,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户迟迟不确认怎么办：常见错误和解决步骤",
     "secondaryKeywords": [
       "Upwork 新手",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Upwork 客户迟迟不确认怎么办：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -10511,20 +10511,20 @@ export const contentPlan500 = [
   },
   {
     "id": 231,
-    "title": "不会编程怎么开始 AI 接单练习",
+    "title": "不会编程怎么开始 AI 工具教程练习",
     "slug": "no-code-ai-freelance-start",
     "category": "AI 自由职业路线",
     "contentType": "tutorial",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "不会编程怎么开始 AI 接单练习",
+    "primaryKeyword": "不会编程怎么开始 AI 工具教程练习",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“不会编程怎么开始 AI 接单练习”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“不会编程怎么开始 AI 工具教程练习”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -10556,20 +10556,20 @@ export const contentPlan500 = [
   },
   {
     "id": 232,
-    "title": "不会编程怎么开始 AI 接单练习：新手检查清单",
+    "title": "不会编程怎么开始 AI 工具教程练习：新手检查清单",
     "slug": "no-code-ai-freelance-start-checklist",
     "category": "AI 自由职业路线",
     "contentType": "checklist",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "不会编程怎么开始 AI 接单练习：新手检查清单",
+    "primaryKeyword": "不会编程怎么开始 AI 工具教程练习：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“不会编程怎么开始 AI 接单练习：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“不会编程怎么开始 AI 工具教程练习：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -10601,20 +10601,20 @@ export const contentPlan500 = [
   },
   {
     "id": 233,
-    "title": "不会编程怎么开始 AI 接单练习：常见错误和解决步骤",
+    "title": "不会编程怎么开始 AI 工具教程练习：常见错误和解决步骤",
     "slug": "no-code-ai-freelance-start-mistakes",
     "category": "AI 自由职业路线",
     "contentType": "troubleshooting",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "不会编程怎么开始 AI 接单练习：常见错误和解决步骤",
+    "primaryKeyword": "不会编程怎么开始 AI 工具教程练习：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“不会编程怎么开始 AI 接单练习：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“不会编程怎么开始 AI 工具教程练习：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -10646,20 +10646,20 @@ export const contentPlan500 = [
   },
   {
     "id": 234,
-    "title": "AI 接单新手 7 天准备什么",
+    "title": "AI 工具新手 7 天准备什么",
     "slug": "ai-freelance-first-7-days",
     "category": "AI 自由职业路线",
     "contentType": "tutorial",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单新手 7 天准备什么",
+    "primaryKeyword": "AI 工具新手 7 天准备什么",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单新手 7 天准备什么”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具新手 7 天准备什么”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -10691,20 +10691,20 @@ export const contentPlan500 = [
   },
   {
     "id": 235,
-    "title": "AI 接单新手 7 天准备什么：新手检查清单",
+    "title": "AI 工具新手 7 天准备什么：新手检查清单",
     "slug": "ai-freelance-first-7-days-checklist",
     "category": "AI 自由职业路线",
     "contentType": "checklist",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单新手 7 天准备什么：新手检查清单",
+    "primaryKeyword": "AI 工具新手 7 天准备什么：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单新手 7 天准备什么：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具新手 7 天准备什么：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -10736,20 +10736,20 @@ export const contentPlan500 = [
   },
   {
     "id": 236,
-    "title": "AI 接单新手 7 天准备什么：常见错误和解决步骤",
+    "title": "AI 工具新手 7 天准备什么：常见错误和解决步骤",
     "slug": "ai-freelance-first-7-days-mistakes",
     "category": "AI 自由职业路线",
     "contentType": "troubleshooting",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单新手 7 天准备什么：常见错误和解决步骤",
+    "primaryKeyword": "AI 工具新手 7 天准备什么：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单新手 7 天准备什么：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具新手 7 天准备什么：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -10791,7 +10791,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 辅助交付和完全自动交付有什么区别",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 辅助交付和完全自动交付有什么区别”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -10836,7 +10836,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 辅助交付和完全自动交付有什么区别：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 辅助交付和完全自动交付有什么区别：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -10881,7 +10881,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 辅助交付和完全自动交付有什么区别：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 辅助交付和完全自动交付有什么区别：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -10916,20 +10916,20 @@ export const contentPlan500 = [
   },
   {
     "id": 240,
-    "title": "AI 自动化接单有哪些合规风险",
+    "title": "AI 自动化项目有哪些合规风险",
     "slug": "ai-freelance-automation-compliance-risk",
     "category": "AI 自由职业路线",
     "contentType": "tutorial",
     "difficulty": "intermediate",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 自动化接单有哪些合规风险",
+    "primaryKeyword": "AI 自动化项目有哪些合规风险",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 自动化接单有哪些合规风险”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 自动化项目有哪些合规风险”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -10961,20 +10961,20 @@ export const contentPlan500 = [
   },
   {
     "id": 241,
-    "title": "AI 自动化接单有哪些合规风险：新手检查清单",
+    "title": "AI 自动化项目有哪些合规风险：新手检查清单",
     "slug": "ai-freelance-automation-compliance-risk-checklist",
     "category": "AI 自由职业路线",
     "contentType": "checklist",
     "difficulty": "intermediate",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 自动化接单有哪些合规风险：新手检查清单",
+    "primaryKeyword": "AI 自动化项目有哪些合规风险：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 自动化接单有哪些合规风险：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 自动化项目有哪些合规风险：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -11006,20 +11006,20 @@ export const contentPlan500 = [
   },
   {
     "id": 242,
-    "title": "AI 自动化接单有哪些合规风险：常见错误和解决步骤",
+    "title": "AI 自动化项目有哪些合规风险：常见错误和解决步骤",
     "slug": "ai-freelance-automation-compliance-risk-mistakes",
     "category": "AI 自由职业路线",
     "contentType": "troubleshooting",
     "difficulty": "intermediate",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 自动化接单有哪些合规风险：常见错误和解决步骤",
+    "primaryKeyword": "AI 自动化项目有哪些合规风险：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 自动化接单有哪些合规风险：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 自动化项目有哪些合规风险：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -11061,7 +11061,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 工具组合怎么从免费开始",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 工具组合怎么从免费开始”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -11106,7 +11106,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 工具组合怎么从免费开始：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 工具组合怎么从免费开始：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -11151,7 +11151,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 工具组合怎么从免费开始：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 工具组合怎么从免费开始：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -11186,20 +11186,20 @@ export const contentPlan500 = [
   },
   {
     "id": 246,
-    "title": "新手 30 天 AI 接单计划怎么执行",
+    "title": "新手 30 天 AI 工具教程计划怎么执行",
     "slug": "ai-freelance-30-day-execution",
     "category": "AI 自由职业路线",
     "contentType": "tutorial",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "新手 30 天 AI 接单计划怎么执行",
+    "primaryKeyword": "新手 30 天 AI 工具教程计划怎么执行",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“新手 30 天 AI 接单计划怎么执行”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“新手 30 天 AI 工具教程计划怎么执行”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -11231,20 +11231,20 @@ export const contentPlan500 = [
   },
   {
     "id": 247,
-    "title": "新手 30 天 AI 接单计划怎么执行：新手检查清单",
+    "title": "新手 30 天 AI 工具教程计划怎么执行：新手检查清单",
     "slug": "ai-freelance-30-day-execution-checklist",
     "category": "AI 自由职业路线",
     "contentType": "checklist",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "新手 30 天 AI 接单计划怎么执行：新手检查清单",
+    "primaryKeyword": "新手 30 天 AI 工具教程计划怎么执行：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“新手 30 天 AI 接单计划怎么执行：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“新手 30 天 AI 工具教程计划怎么执行：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -11276,20 +11276,20 @@ export const contentPlan500 = [
   },
   {
     "id": 248,
-    "title": "新手 30 天 AI 接单计划怎么执行：常见错误和解决步骤",
+    "title": "新手 30 天 AI 工具教程计划怎么执行：常见错误和解决步骤",
     "slug": "ai-freelance-30-day-execution-mistakes",
     "category": "AI 自由职业路线",
     "contentType": "troubleshooting",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "新手 30 天 AI 接单计划怎么执行：常见错误和解决步骤",
+    "primaryKeyword": "新手 30 天 AI 工具教程计划怎么执行：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“新手 30 天 AI 接单计划怎么执行：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“新手 30 天 AI 工具教程计划怎么执行：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -11331,7 +11331,7 @@ export const contentPlan500 = [
     "primaryKeyword": "小项目训练应该选哪些题目",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“小项目训练应该选哪些题目”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -11376,7 +11376,7 @@ export const contentPlan500 = [
     "primaryKeyword": "小项目训练应该选哪些题目：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“小项目训练应该选哪些题目：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -11421,7 +11421,7 @@ export const contentPlan500 = [
     "primaryKeyword": "小项目训练应该选哪些题目：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“小项目训练应该选哪些题目：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -11466,7 +11466,7 @@ export const contentPlan500 = [
     "primaryKeyword": "第一个作品集案例怎么做才真实",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“第一个作品集案例怎么做才真实”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -11511,7 +11511,7 @@ export const contentPlan500 = [
     "primaryKeyword": "第一个作品集案例怎么做才真实：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“第一个作品集案例怎么做才真实：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -11556,7 +11556,7 @@ export const contentPlan500 = [
     "primaryKeyword": "第一个作品集案例怎么做才真实：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“第一个作品集案例怎么做才真实：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -11591,20 +11591,20 @@ export const contentPlan500 = [
   },
   {
     "id": 255,
-    "title": "AI 接单技能提升路线怎么排",
+    "title": "AI 工具教程技能提升路线怎么排",
     "slug": "ai-freelance-skill-roadmap",
     "category": "AI 自由职业路线",
     "contentType": "tutorial",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单技能提升路线怎么排",
+    "primaryKeyword": "AI 工具教程技能提升路线怎么排",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单技能提升路线怎么排”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程技能提升路线怎么排”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -11636,20 +11636,20 @@ export const contentPlan500 = [
   },
   {
     "id": 256,
-    "title": "AI 接单技能提升路线怎么排：新手检查清单",
+    "title": "AI 工具教程技能提升路线怎么排：新手检查清单",
     "slug": "ai-freelance-skill-roadmap-checklist",
     "category": "AI 自由职业路线",
     "contentType": "checklist",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单技能提升路线怎么排：新手检查清单",
+    "primaryKeyword": "AI 工具教程技能提升路线怎么排：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单技能提升路线怎么排：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程技能提升路线怎么排：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -11681,20 +11681,20 @@ export const contentPlan500 = [
   },
   {
     "id": 257,
-    "title": "AI 接单技能提升路线怎么排：常见错误和解决步骤",
+    "title": "AI 工具教程技能提升路线怎么排：常见错误和解决步骤",
     "slug": "ai-freelance-skill-roadmap-mistakes",
     "category": "AI 自由职业路线",
     "contentType": "troubleshooting",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单技能提升路线怎么排：常见错误和解决步骤",
+    "primaryKeyword": "AI 工具教程技能提升路线怎么排：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单技能提升路线怎么排：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程技能提升路线怎么排：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -11736,7 +11736,7 @@ export const contentPlan500 = [
     "primaryKeyword": "从零到第一单之前要完成哪些准备",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“从零到第一单之前要完成哪些准备”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -11781,7 +11781,7 @@ export const contentPlan500 = [
     "primaryKeyword": "从零到第一单之前要完成哪些准备：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“从零到第一单之前要完成哪些准备：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -11826,7 +11826,7 @@ export const contentPlan500 = [
     "primaryKeyword": "从零到第一单之前要完成哪些准备：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“从零到第一单之前要完成哪些准备：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -11871,7 +11871,7 @@ export const contentPlan500 = [
     "primaryKeyword": "不会写代码怎么交付一个小网站",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“不会写代码怎么交付一个小网站”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -11916,7 +11916,7 @@ export const contentPlan500 = [
     "primaryKeyword": "不会写代码怎么交付一个小网站：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“不会写代码怎么交付一个小网站：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -11961,7 +11961,7 @@ export const contentPlan500 = [
     "primaryKeyword": "不会写代码怎么交付一个小网站：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“不会写代码怎么交付一个小网站：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -11996,20 +11996,20 @@ export const contentPlan500 = [
   },
   {
     "id": 264,
-    "title": "AI 接单为什么需要人工复核",
+    "title": "AI 工具教程为什么需要人工复核",
     "slug": "why-ai-freelance-needs-human-review",
     "category": "AI 自由职业路线",
     "contentType": "tutorial",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单为什么需要人工复核",
+    "primaryKeyword": "AI 工具教程为什么需要人工复核",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单为什么需要人工复核”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程为什么需要人工复核”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -12041,20 +12041,20 @@ export const contentPlan500 = [
   },
   {
     "id": 265,
-    "title": "AI 接单为什么需要人工复核：新手检查清单",
+    "title": "AI 工具教程为什么需要人工复核：新手检查清单",
     "slug": "why-ai-freelance-needs-human-review-checklist",
     "category": "AI 自由职业路线",
     "contentType": "checklist",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单为什么需要人工复核：新手检查清单",
+    "primaryKeyword": "AI 工具教程为什么需要人工复核：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单为什么需要人工复核：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程为什么需要人工复核：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -12086,20 +12086,20 @@ export const contentPlan500 = [
   },
   {
     "id": 266,
-    "title": "AI 接单为什么需要人工复核：常见错误和解决步骤",
+    "title": "AI 工具教程为什么需要人工复核：常见错误和解决步骤",
     "slug": "why-ai-freelance-needs-human-review-mistakes",
     "category": "AI 自由职业路线",
     "contentType": "troubleshooting",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单为什么需要人工复核：常见错误和解决步骤",
+    "primaryKeyword": "AI 工具教程为什么需要人工复核：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单为什么需要人工复核：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程为什么需要人工复核：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -12131,20 +12131,20 @@ export const contentPlan500 = [
   },
   {
     "id": 267,
-    "title": "新手如何记录每天的接单练习",
+    "title": "新手如何记录每天的项目练习",
     "slug": "daily-ai-freelance-practice-log",
     "category": "AI 自由职业路线",
     "contentType": "tutorial",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "新手如何记录每天的接单练习",
+    "primaryKeyword": "新手如何记录每天的项目练习",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“新手如何记录每天的接单练习”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“新手如何记录每天的项目练习”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -12176,20 +12176,20 @@ export const contentPlan500 = [
   },
   {
     "id": 268,
-    "title": "新手如何记录每天的接单练习：新手检查清单",
+    "title": "新手如何记录每天的项目练习：新手检查清单",
     "slug": "daily-ai-freelance-practice-log-checklist",
     "category": "AI 自由职业路线",
     "contentType": "checklist",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "新手如何记录每天的接单练习：新手检查清单",
+    "primaryKeyword": "新手如何记录每天的项目练习：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“新手如何记录每天的接单练习：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“新手如何记录每天的项目练习：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -12221,20 +12221,20 @@ export const contentPlan500 = [
   },
   {
     "id": 269,
-    "title": "新手如何记录每天的接单练习：常见错误和解决步骤",
+    "title": "新手如何记录每天的项目练习：常见错误和解决步骤",
     "slug": "daily-ai-freelance-practice-log-mistakes",
     "category": "AI 自由职业路线",
     "contentType": "troubleshooting",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "新手如何记录每天的接单练习：常见错误和解决步骤",
+    "primaryKeyword": "新手如何记录每天的项目练习：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“新手如何记录每天的接单练习：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“新手如何记录每天的项目练习：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -12266,20 +12266,20 @@ export const contentPlan500 = [
   },
   {
     "id": 270,
-    "title": "AI 接单失败后怎么复盘",
+    "title": "AI 工具教程失败后怎么复盘",
     "slug": "ai-freelance-failure-review",
     "category": "AI 自由职业路线",
     "contentType": "tutorial",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单失败后怎么复盘",
+    "primaryKeyword": "AI 工具教程失败后怎么复盘",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单失败后怎么复盘”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程失败后怎么复盘”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -12311,20 +12311,20 @@ export const contentPlan500 = [
   },
   {
     "id": 271,
-    "title": "AI 接单失败后怎么复盘：新手检查清单",
+    "title": "AI 工具教程失败后怎么复盘：新手检查清单",
     "slug": "ai-freelance-failure-review-checklist",
     "category": "AI 自由职业路线",
     "contentType": "checklist",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单失败后怎么复盘：新手检查清单",
+    "primaryKeyword": "AI 工具教程失败后怎么复盘：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单失败后怎么复盘：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程失败后怎么复盘：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -12356,20 +12356,20 @@ export const contentPlan500 = [
   },
   {
     "id": 272,
-    "title": "AI 接单失败后怎么复盘：常见错误和解决步骤",
+    "title": "AI 工具教程失败后怎么复盘：常见错误和解决步骤",
     "slug": "ai-freelance-failure-review-mistakes",
     "category": "AI 自由职业路线",
     "contentType": "troubleshooting",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单失败后怎么复盘：常见错误和解决步骤",
+    "primaryKeyword": "AI 工具教程失败后怎么复盘：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单失败后怎么复盘：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程失败后怎么复盘：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -12411,7 +12411,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 新手如何判断自己能不能接项目",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 新手如何判断自己能不能接项目”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -12456,7 +12456,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 新手如何判断自己能不能接项目：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 新手如何判断自己能不能接项目：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -12501,7 +12501,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 新手如何判断自己能不能接项目：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 新手如何判断自己能不能接项目：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -12536,20 +12536,20 @@ export const contentPlan500 = [
   },
   {
     "id": 276,
-    "title": "AI 接单常见误区有哪些",
+    "title": "AI 工具教程常见误区有哪些",
     "slug": "ai-freelance-common-misconceptions",
     "category": "AI 自由职业路线",
     "contentType": "tutorial",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单常见误区有哪些",
+    "primaryKeyword": "AI 工具教程常见误区有哪些",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单常见误区有哪些”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程常见误区有哪些”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -12581,20 +12581,20 @@ export const contentPlan500 = [
   },
   {
     "id": 277,
-    "title": "AI 接单常见误区有哪些：新手检查清单",
+    "title": "AI 工具教程常见误区有哪些：新手检查清单",
     "slug": "ai-freelance-common-misconceptions-checklist",
     "category": "AI 自由职业路线",
     "contentType": "checklist",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单常见误区有哪些：新手检查清单",
+    "primaryKeyword": "AI 工具教程常见误区有哪些：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单常见误区有哪些：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程常见误区有哪些：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -12626,20 +12626,20 @@ export const contentPlan500 = [
   },
   {
     "id": 278,
-    "title": "AI 接单常见误区有哪些：常见错误和解决步骤",
+    "title": "AI 工具教程常见误区有哪些：常见错误和解决步骤",
     "slug": "ai-freelance-common-misconceptions-mistakes",
     "category": "AI 自由职业路线",
     "contentType": "troubleshooting",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单常见误区有哪些：常见错误和解决步骤",
+    "primaryKeyword": "AI 工具教程常见误区有哪些：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单常见误区有哪些：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程常见误区有哪些：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -12681,7 +12681,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 工具输出不稳定怎么降低风险",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 工具输出不稳定怎么降低风险”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -12726,7 +12726,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 工具输出不稳定怎么降低风险：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 工具输出不稳定怎么降低风险：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -12771,7 +12771,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 工具输出不稳定怎么降低风险：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 工具输出不稳定怎么降低风险：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -12816,7 +12816,7 @@ export const contentPlan500 = [
     "primaryKeyword": "自由职业新手怎么和客户确认范围",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“自由职业新手怎么和客户确认范围”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -12861,7 +12861,7 @@ export const contentPlan500 = [
     "primaryKeyword": "自由职业新手怎么和客户确认范围：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“自由职业新手怎么和客户确认范围：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -12906,7 +12906,7 @@ export const contentPlan500 = [
     "primaryKeyword": "自由职业新手怎么和客户确认范围：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“自由职业新手怎么和客户确认范围：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -12941,20 +12941,20 @@ export const contentPlan500 = [
   },
   {
     "id": 285,
-    "title": "AI 接单服务页文案怎么写真实",
+    "title": "AI 工具教程服务页文案怎么写真实",
     "slug": "ai-freelance-service-page-copy",
     "category": "AI 自由职业路线",
     "contentType": "tutorial",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单服务页文案怎么写真实",
+    "primaryKeyword": "AI 工具教程服务页文案怎么写真实",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单服务页文案怎么写真实”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程服务页文案怎么写真实”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -12986,20 +12986,20 @@ export const contentPlan500 = [
   },
   {
     "id": 286,
-    "title": "AI 接单服务页文案怎么写真实：新手检查清单",
+    "title": "AI 工具教程服务页文案怎么写真实：新手检查清单",
     "slug": "ai-freelance-service-page-copy-checklist",
     "category": "AI 自由职业路线",
     "contentType": "checklist",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单服务页文案怎么写真实：新手检查清单",
+    "primaryKeyword": "AI 工具教程服务页文案怎么写真实：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单服务页文案怎么写真实：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程服务页文案怎么写真实：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -13031,20 +13031,20 @@ export const contentPlan500 = [
   },
   {
     "id": 287,
-    "title": "AI 接单服务页文案怎么写真实：常见错误和解决步骤",
+    "title": "AI 工具教程服务页文案怎么写真实：常见错误和解决步骤",
     "slug": "ai-freelance-service-page-copy-mistakes",
     "category": "AI 自由职业路线",
     "contentType": "troubleshooting",
     "difficulty": "beginner",
     "targetReader": "AI 自由职业路线方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单服务页文案怎么写真实：常见错误和解决步骤",
+    "primaryKeyword": "AI 工具教程服务页文案怎么写真实：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单服务页文案怎么写真实：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程服务页文案怎么写真实：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -13086,7 +13086,7 @@ export const contentPlan500 = [
     "primaryKeyword": "没有客户时怎么做练习项目",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“没有客户时怎么做练习项目”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -13131,7 +13131,7 @@ export const contentPlan500 = [
     "primaryKeyword": "没有客户时怎么做练习项目：新手检查清单",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“没有客户时怎么做练习项目：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -13176,7 +13176,7 @@ export const contentPlan500 = [
     "primaryKeyword": "没有客户时怎么做练习项目：常见错误和解决步骤",
     "secondaryKeywords": [
       "AI 自由职业路线",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“没有客户时怎么做练习项目：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -13221,7 +13221,7 @@ export const contentPlan500 = [
     "primaryKeyword": "npm command not found 怎么解决",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“npm command not found 怎么解决”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -13266,7 +13266,7 @@ export const contentPlan500 = [
     "primaryKeyword": "npm command not found 怎么解决：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“npm command not found 怎么解决：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -13311,7 +13311,7 @@ export const contentPlan500 = [
     "primaryKeyword": "npm command not found 怎么解决：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“npm command not found 怎么解决：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -13346,20 +13346,20 @@ export const contentPlan500 = [
   },
   {
     "id": 294,
-    "title": "npm command not found 怎么解决：接单前怎么判断能不能做",
+    "title": "npm command not found 怎么解决：使用前怎么判断是否适合",
     "slug": "npm-command-not-found-fix-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "npm command not found 怎么解决：接单前怎么判断能不能做",
+    "primaryKeyword": "npm command not found 怎么解决：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“npm command not found 怎么解决：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“npm command not found 怎么解决：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -13401,7 +13401,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Node 版本不匹配怎么排查",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Node 版本不匹配怎么排查”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -13446,7 +13446,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Node 版本不匹配怎么排查：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Node 版本不匹配怎么排查：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -13491,7 +13491,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Node 版本不匹配怎么排查：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Node 版本不匹配怎么排查：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -13526,20 +13526,20 @@ export const contentPlan500 = [
   },
   {
     "id": 298,
-    "title": "Node 版本不匹配怎么排查：接单前怎么判断能不能做",
+    "title": "Node 版本不匹配怎么排查：使用前怎么判断是否适合",
     "slug": "node-version-mismatch-fix-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Node 版本不匹配怎么排查：接单前怎么判断能不能做",
+    "primaryKeyword": "Node 版本不匹配怎么排查：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“Node 版本不匹配怎么排查：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Node 版本不匹配怎么排查：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -13581,7 +13581,7 @@ export const contentPlan500 = [
     "primaryKeyword": "module not found 报错怎么定位文件",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“module not found 报错怎么定位文件”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -13626,7 +13626,7 @@ export const contentPlan500 = [
     "primaryKeyword": "module not found 报错怎么定位文件：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“module not found 报错怎么定位文件：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -13671,7 +13671,7 @@ export const contentPlan500 = [
     "primaryKeyword": "module not found 报错怎么定位文件：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“module not found 报错怎么定位文件：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -13706,20 +13706,20 @@ export const contentPlan500 = [
   },
   {
     "id": 302,
-    "title": "module not found 报错怎么定位文件：接单前怎么判断能不能做",
+    "title": "module not found 报错怎么定位文件：使用前怎么判断是否适合",
     "slug": "module-not-found-debug-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "module not found 报错怎么定位文件：接单前怎么判断能不能做",
+    "primaryKeyword": "module not found 报错怎么定位文件：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“module not found 报错怎么定位文件：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“module not found 报错怎么定位文件：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -13761,7 +13761,7 @@ export const contentPlan500 = [
     "primaryKeyword": "permission denied 报错新手怎么处理",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“permission denied 报错新手怎么处理”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -13806,7 +13806,7 @@ export const contentPlan500 = [
     "primaryKeyword": "permission denied 报错新手怎么处理：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“permission denied 报错新手怎么处理：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -13851,7 +13851,7 @@ export const contentPlan500 = [
     "primaryKeyword": "permission denied 报错新手怎么处理：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“permission denied 报错新手怎么处理：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -13886,20 +13886,20 @@ export const contentPlan500 = [
   },
   {
     "id": 306,
-    "title": "permission denied 报错新手怎么处理：接单前怎么判断能不能做",
+    "title": "permission denied 报错新手怎么处理：使用前怎么判断是否适合",
     "slug": "permission-denied-fix-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "permission denied 报错新手怎么处理：接单前怎么判断能不能做",
+    "primaryKeyword": "permission denied 报错新手怎么处理：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“permission denied 报错新手怎么处理：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“permission denied 报错新手怎么处理：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -13941,7 +13941,7 @@ export const contentPlan500 = [
     "primaryKeyword": "git authentication failed 怎么解决",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“git authentication failed 怎么解决”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -13986,7 +13986,7 @@ export const contentPlan500 = [
     "primaryKeyword": "git authentication failed 怎么解决：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“git authentication failed 怎么解决：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -14031,7 +14031,7 @@ export const contentPlan500 = [
     "primaryKeyword": "git authentication failed 怎么解决：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“git authentication failed 怎么解决：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -14066,20 +14066,20 @@ export const contentPlan500 = [
   },
   {
     "id": 310,
-    "title": "git authentication failed 怎么解决：接单前怎么判断能不能做",
+    "title": "git authentication failed 怎么解决：使用前怎么判断是否适合",
     "slug": "git-authentication-failed-fix-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "git authentication failed 怎么解决：接单前怎么判断能不能做",
+    "primaryKeyword": "git authentication failed 怎么解决：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“git authentication failed 怎么解决：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“git authentication failed 怎么解决：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -14121,7 +14121,7 @@ export const contentPlan500 = [
     "primaryKeyword": "failed to push some refs 怎么排查",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“failed to push some refs 怎么排查”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -14166,7 +14166,7 @@ export const contentPlan500 = [
     "primaryKeyword": "failed to push some refs 怎么排查：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“failed to push some refs 怎么排查：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -14211,7 +14211,7 @@ export const contentPlan500 = [
     "primaryKeyword": "failed to push some refs 怎么排查：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“failed to push some refs 怎么排查：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -14246,20 +14246,20 @@ export const contentPlan500 = [
   },
   {
     "id": 314,
-    "title": "failed to push some refs 怎么排查：接单前怎么判断能不能做",
+    "title": "failed to push some refs 怎么排查：使用前怎么判断是否适合",
     "slug": "failed-to-push-some-refs-fix-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "failed to push some refs 怎么排查：接单前怎么判断能不能做",
+    "primaryKeyword": "failed to push some refs 怎么排查：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“failed to push some refs 怎么排查：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“failed to push some refs 怎么排查：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -14301,7 +14301,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Vercel build failed 常见原因有哪些",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署"
     ],
@@ -14347,7 +14347,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Vercel build failed 常见原因有哪些：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署"
     ],
@@ -14393,7 +14393,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Vercel build failed 常见原因有哪些：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署"
     ],
@@ -14429,21 +14429,21 @@ export const contentPlan500 = [
   },
   {
     "id": 318,
-    "title": "Vercel build failed 常见原因有哪些：接单前怎么判断能不能做",
+    "title": "Vercel build failed 常见原因有哪些：使用前怎么判断是否适合",
     "slug": "vercel-build-failed-causes-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Vercel build failed 常见原因有哪些：接单前怎么判断能不能做",
+    "primaryKeyword": "Vercel build failed 常见原因有哪些：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署"
     ],
-    "problem": "新手搜索“Vercel build failed 常见原因有哪些：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Vercel build failed 常见原因有哪些：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -14485,7 +14485,7 @@ export const contentPlan500 = [
     "primaryKeyword": "dependency conflict 依赖冲突怎么处理",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“dependency conflict 依赖冲突怎么处理”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -14530,7 +14530,7 @@ export const contentPlan500 = [
     "primaryKeyword": "dependency conflict 依赖冲突怎么处理：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“dependency conflict 依赖冲突怎么处理：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -14575,7 +14575,7 @@ export const contentPlan500 = [
     "primaryKeyword": "dependency conflict 依赖冲突怎么处理：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“dependency conflict 依赖冲突怎么处理：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -14610,20 +14610,20 @@ export const contentPlan500 = [
   },
   {
     "id": 322,
-    "title": "dependency conflict 依赖冲突怎么处理：接单前怎么判断能不能做",
+    "title": "dependency conflict 依赖冲突怎么处理：使用前怎么判断是否适合",
     "slug": "dependency-conflict-fix-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "dependency conflict 依赖冲突怎么处理：接单前怎么判断能不能做",
+    "primaryKeyword": "dependency conflict 依赖冲突怎么处理：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“dependency conflict 依赖冲突怎么处理：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“dependency conflict 依赖冲突怎么处理：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -14665,7 +14665,7 @@ export const contentPlan500 = [
     "primaryKeyword": "环境变量 missing 怎么排查",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“环境变量 missing 怎么排查”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -14710,7 +14710,7 @@ export const contentPlan500 = [
     "primaryKeyword": "环境变量 missing 怎么排查：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“环境变量 missing 怎么排查：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -14755,7 +14755,7 @@ export const contentPlan500 = [
     "primaryKeyword": "环境变量 missing 怎么排查：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“环境变量 missing 怎么排查：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -14790,20 +14790,20 @@ export const contentPlan500 = [
   },
   {
     "id": 326,
-    "title": "环境变量 missing 怎么排查：接单前怎么判断能不能做",
+    "title": "环境变量 missing 怎么排查：使用前怎么判断是否适合",
     "slug": "env-variable-missing-fix-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "intermediate",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "环境变量 missing 怎么排查：接单前怎么判断能不能做",
+    "primaryKeyword": "环境变量 missing 怎么排查：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“环境变量 missing 怎么排查：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“环境变量 missing 怎么排查：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -14845,7 +14845,7 @@ export const contentPlan500 = [
     "primaryKeyword": "port already in use 怎么释放端口",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“port already in use 怎么释放端口”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -14890,7 +14890,7 @@ export const contentPlan500 = [
     "primaryKeyword": "port already in use 怎么释放端口：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“port already in use 怎么释放端口：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -14935,7 +14935,7 @@ export const contentPlan500 = [
     "primaryKeyword": "port already in use 怎么释放端口：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“port already in use 怎么释放端口：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -14970,20 +14970,20 @@ export const contentPlan500 = [
   },
   {
     "id": 330,
-    "title": "port already in use 怎么释放端口：接单前怎么判断能不能做",
+    "title": "port already in use 怎么释放端口：使用前怎么判断是否适合",
     "slug": "port-already-in-use-fix-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "port already in use 怎么释放端口：接单前怎么判断能不能做",
+    "primaryKeyword": "port already in use 怎么释放端口：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“port already in use 怎么释放端口：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“port already in use 怎么释放端口：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -15025,7 +15025,7 @@ export const contentPlan500 = [
     "primaryKeyword": "TypeScript error 看不懂怎么办",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“TypeScript error 看不懂怎么办”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -15070,7 +15070,7 @@ export const contentPlan500 = [
     "primaryKeyword": "TypeScript error 看不懂怎么办：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“TypeScript error 看不懂怎么办：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -15115,7 +15115,7 @@ export const contentPlan500 = [
     "primaryKeyword": "TypeScript error 看不懂怎么办：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“TypeScript error 看不懂怎么办：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -15150,20 +15150,20 @@ export const contentPlan500 = [
   },
   {
     "id": 334,
-    "title": "TypeScript error 看不懂怎么办：接单前怎么判断能不能做",
+    "title": "TypeScript error 看不懂怎么办：使用前怎么判断是否适合",
     "slug": "typescript-error-beginner-debug-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "TypeScript error 看不懂怎么办：接单前怎么判断能不能做",
+    "primaryKeyword": "TypeScript error 看不懂怎么办：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“TypeScript error 看不懂怎么办：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“TypeScript error 看不懂怎么办：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -15205,7 +15205,7 @@ export const contentPlan500 = [
     "primaryKeyword": "ESLint error 要不要直接关闭",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“ESLint error 要不要直接关闭”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -15250,7 +15250,7 @@ export const contentPlan500 = [
     "primaryKeyword": "ESLint error 要不要直接关闭：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“ESLint error 要不要直接关闭：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -15295,7 +15295,7 @@ export const contentPlan500 = [
     "primaryKeyword": "ESLint error 要不要直接关闭：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“ESLint error 要不要直接关闭：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -15330,20 +15330,20 @@ export const contentPlan500 = [
   },
   {
     "id": 338,
-    "title": "ESLint error 要不要直接关闭：接单前怎么判断能不能做",
+    "title": "ESLint error 要不要直接关闭：使用前怎么判断是否适合",
     "slug": "eslint-error-should-not-disable-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "ESLint error 要不要直接关闭：接单前怎么判断能不能做",
+    "primaryKeyword": "ESLint error 要不要直接关闭：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“ESLint error 要不要直接关闭：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“ESLint error 要不要直接关闭：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -15385,7 +15385,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Next.js hydration error 怎么排查",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Next.js hydration error 怎么排查”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -15430,7 +15430,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Next.js hydration error 怎么排查：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Next.js hydration error 怎么排查：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -15475,7 +15475,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Next.js hydration error 怎么排查：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Next.js hydration error 怎么排查：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -15510,20 +15510,20 @@ export const contentPlan500 = [
   },
   {
     "id": 342,
-    "title": "Next.js hydration error 怎么排查：接单前怎么判断能不能做",
+    "title": "Next.js hydration error 怎么排查：使用前怎么判断是否适合",
     "slug": "nextjs-hydration-error-debug-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Next.js hydration error 怎么排查：接单前怎么判断能不能做",
+    "primaryKeyword": "Next.js hydration error 怎么排查：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“Next.js hydration error 怎么排查：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Next.js hydration error 怎么排查：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -15565,7 +15565,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Tailwind 样式不生效怎么检查",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Tailwind 样式不生效怎么检查”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -15610,7 +15610,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Tailwind 样式不生效怎么检查：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Tailwind 样式不生效怎么检查：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -15655,7 +15655,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Tailwind 样式不生效怎么检查：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Tailwind 样式不生效怎么检查：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -15690,20 +15690,20 @@ export const contentPlan500 = [
   },
   {
     "id": 346,
-    "title": "Tailwind 样式不生效怎么检查：接单前怎么判断能不能做",
+    "title": "Tailwind 样式不生效怎么检查：使用前怎么判断是否适合",
     "slug": "tailwind-styles-not-working-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Tailwind 样式不生效怎么检查：接单前怎么判断能不能做",
+    "primaryKeyword": "Tailwind 样式不生效怎么检查：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“Tailwind 样式不生效怎么检查：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Tailwind 样式不生效怎么检查：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -15745,7 +15745,7 @@ export const contentPlan500 = [
     "primaryKeyword": "API Key 无效或缺失怎么处理",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“API Key 无效或缺失怎么处理”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -15790,7 +15790,7 @@ export const contentPlan500 = [
     "primaryKeyword": "API Key 无效或缺失怎么处理：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“API Key 无效或缺失怎么处理：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -15835,7 +15835,7 @@ export const contentPlan500 = [
     "primaryKeyword": "API Key 无效或缺失怎么处理：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“API Key 无效或缺失怎么处理：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -15870,20 +15870,20 @@ export const contentPlan500 = [
   },
   {
     "id": 350,
-    "title": "API Key 无效或缺失怎么处理：接单前怎么判断能不能做",
+    "title": "API Key 无效或缺失怎么处理：使用前怎么判断是否适合",
     "slug": "api-key-invalid-or-missing-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "intermediate",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "API Key 无效或缺失怎么处理：接单前怎么判断能不能做",
+    "primaryKeyword": "API Key 无效或缺失怎么处理：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“API Key 无效或缺失怎么处理：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“API Key 无效或缺失怎么处理：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -15925,7 +15925,7 @@ export const contentPlan500 = [
     "primaryKeyword": "GitHub Actions build 失败怎么看日志",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "GitHub"
     ],
@@ -15971,7 +15971,7 @@ export const contentPlan500 = [
     "primaryKeyword": "GitHub Actions build 失败怎么看日志：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "GitHub"
     ],
@@ -16017,7 +16017,7 @@ export const contentPlan500 = [
     "primaryKeyword": "GitHub Actions build 失败怎么看日志：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "GitHub"
     ],
@@ -16053,21 +16053,21 @@ export const contentPlan500 = [
   },
   {
     "id": 354,
-    "title": "GitHub Actions build 失败怎么看日志：接单前怎么判断能不能做",
+    "title": "GitHub Actions build 失败怎么看日志：使用前怎么判断是否适合",
     "slug": "github-actions-build-log-debug-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "GitHub Actions build 失败怎么看日志：接单前怎么判断能不能做",
+    "primaryKeyword": "GitHub Actions build 失败怎么看日志：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "GitHub"
     ],
-    "problem": "新手搜索“GitHub Actions build 失败怎么看日志：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“GitHub Actions build 失败怎么看日志：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -16109,7 +16109,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Vercel 404 部署成功但页面打不开怎么办",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署"
     ],
@@ -16155,7 +16155,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Vercel 404 部署成功但页面打不开怎么办：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署"
     ],
@@ -16201,7 +16201,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Vercel 404 部署成功但页面打不开怎么办：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署"
     ],
@@ -16237,21 +16237,21 @@ export const contentPlan500 = [
   },
   {
     "id": 358,
-    "title": "Vercel 404 部署成功但页面打不开怎么办：接单前怎么判断能不能做",
+    "title": "Vercel 404 部署成功但页面打不开怎么办：使用前怎么判断是否适合",
     "slug": "vercel-404-after-deploy-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Vercel 404 部署成功但页面打不开怎么办：接单前怎么判断能不能做",
+    "primaryKeyword": "Vercel 404 部署成功但页面打不开怎么办：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署"
     ],
-    "problem": "新手搜索“Vercel 404 部署成功但页面打不开怎么办：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Vercel 404 部署成功但页面打不开怎么办：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -16293,7 +16293,7 @@ export const contentPlan500 = [
     "primaryKeyword": "npm run dev 能跑但 build 失败怎么办",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“npm run dev 能跑但 build 失败怎么办”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -16338,7 +16338,7 @@ export const contentPlan500 = [
     "primaryKeyword": "npm run dev 能跑但 build 失败怎么办：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“npm run dev 能跑但 build 失败怎么办：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -16383,7 +16383,7 @@ export const contentPlan500 = [
     "primaryKeyword": "npm run dev 能跑但 build 失败怎么办：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“npm run dev 能跑但 build 失败怎么办：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -16418,20 +16418,20 @@ export const contentPlan500 = [
   },
   {
     "id": 362,
-    "title": "npm run dev 能跑但 build 失败怎么办：接单前怎么判断能不能做",
+    "title": "npm run dev 能跑但 build 失败怎么办：使用前怎么判断是否适合",
     "slug": "dev-works-build-fails-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "npm run dev 能跑但 build 失败怎么办：接单前怎么判断能不能做",
+    "primaryKeyword": "npm run dev 能跑但 build 失败怎么办：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“npm run dev 能跑但 build 失败怎么办：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“npm run dev 能跑但 build 失败怎么办：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -16473,7 +16473,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Windows 路径和权限导致安装失败怎么办",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Windows 路径和权限导致安装失败怎么办”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -16518,7 +16518,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Windows 路径和权限导致安装失败怎么办：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Windows 路径和权限导致安装失败怎么办：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -16563,7 +16563,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Windows 路径和权限导致安装失败怎么办：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Windows 路径和权限导致安装失败怎么办：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -16598,20 +16598,20 @@ export const contentPlan500 = [
   },
   {
     "id": 366,
-    "title": "Windows 路径和权限导致安装失败怎么办：接单前怎么判断能不能做",
+    "title": "Windows 路径和权限导致安装失败怎么办：使用前怎么判断是否适合",
     "slug": "windows-path-permission-install-fix-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "Windows 路径和权限导致安装失败怎么办：接单前怎么判断能不能做",
+    "primaryKeyword": "Windows 路径和权限导致安装失败怎么办：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“Windows 路径和权限导致安装失败怎么办：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Windows 路径和权限导致安装失败怎么办：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -16653,7 +16653,7 @@ export const contentPlan500 = [
     "primaryKeyword": "package lock 冲突怎么安全处理",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“package lock 冲突怎么安全处理”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -16698,7 +16698,7 @@ export const contentPlan500 = [
     "primaryKeyword": "package lock 冲突怎么安全处理：新手检查清单",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“package lock 冲突怎么安全处理：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -16743,7 +16743,7 @@ export const contentPlan500 = [
     "primaryKeyword": "package lock 冲突怎么安全处理：常见错误和解决步骤",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“package lock 冲突怎么安全处理：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -16778,20 +16778,20 @@ export const contentPlan500 = [
   },
   {
     "id": 370,
-    "title": "package lock 冲突怎么安全处理：接单前怎么判断能不能做",
+    "title": "package lock 冲突怎么安全处理：使用前怎么判断是否适合",
     "slug": "package-lock-conflict-fix-freelance-scope",
     "category": "报错解决",
     "contentType": "case-study",
     "difficulty": "beginner",
     "targetReader": "报错解决方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "commercial",
-    "primaryKeyword": "package lock 冲突怎么安全处理：接单前怎么判断能不能做",
+    "primaryKeyword": "package lock 冲突怎么安全处理：使用前怎么判断是否适合",
     "secondaryKeywords": [
       "报错解决",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“package lock 冲突怎么安全处理：接单前怎么判断能不能做”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“package lock 冲突怎么安全处理：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -16833,7 +16833,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Payoneer 适合新手自由职业收款吗",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Payoneer 适合新手自由职业收款吗”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -16878,7 +16878,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Payoneer 适合新手自由职业收款吗：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Payoneer 适合新手自由职业收款吗：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -16923,7 +16923,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Wise 收款和换汇适合什么情况",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Wise 收款和换汇适合什么情况”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -16968,7 +16968,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Wise 收款和换汇适合什么情况：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Wise 收款和换汇适合什么情况：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17013,7 +17013,7 @@ export const contentPlan500 = [
     "primaryKeyword": "PayPal 收款有哪些常见限制",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“PayPal 收款有哪些常见限制”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17058,7 +17058,7 @@ export const contentPlan500 = [
     "primaryKeyword": "PayPal 收款有哪些常见限制：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“PayPal 收款有哪些常见限制：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17103,7 +17103,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Stripe 适合卖模板还是服务",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Stripe 适合卖模板还是服务”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17148,7 +17148,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Stripe 适合卖模板还是服务：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Stripe 适合卖模板还是服务：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17193,7 +17193,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Gumroad 卖模板前要准备什么",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Gumroad 卖模板前要准备什么”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17238,7 +17238,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Gumroad 卖模板前要准备什么：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Gumroad 卖模板前要准备什么：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17283,7 +17283,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Lemon Squeezy 适合数字产品吗",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Lemon Squeezy 适合数字产品吗”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17328,7 +17328,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Lemon Squeezy 适合数字产品吗：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Lemon Squeezy 适合数字产品吗：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17373,7 +17373,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Paddle 和 Stripe 有什么区别",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Paddle 和 Stripe 有什么区别”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17418,7 +17418,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Paddle 和 Stripe 有什么区别：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Paddle 和 Stripe 有什么区别：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17463,7 +17463,7 @@ export const contentPlan500 = [
     "primaryKeyword": "银行卡绑定收款平台要注意什么",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“银行卡绑定收款平台要注意什么”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17508,7 +17508,7 @@ export const contentPlan500 = [
     "primaryKeyword": "银行卡绑定收款平台要注意什么：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“银行卡绑定收款平台要注意什么：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17553,7 +17553,7 @@ export const contentPlan500 = [
     "primaryKeyword": "海外收款手续费怎么估算",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“海外收款手续费怎么估算”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17598,7 +17598,7 @@ export const contentPlan500 = [
     "primaryKeyword": "海外收款手续费怎么估算：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“海外收款手续费怎么估算：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17643,7 +17643,7 @@ export const contentPlan500 = [
     "primaryKeyword": "平台内收款和站外收款怎么区分",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“平台内收款和站外收款怎么区分”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17688,7 +17688,7 @@ export const contentPlan500 = [
     "primaryKeyword": "平台内收款和站外收款怎么区分：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“平台内收款和站外收款怎么区分：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17733,7 +17733,7 @@ export const contentPlan500 = [
     "primaryKeyword": "订阅支付失败怎么和客户沟通",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“订阅支付失败怎么和客户沟通”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17778,7 +17778,7 @@ export const contentPlan500 = [
     "primaryKeyword": "订阅支付失败怎么和客户沟通：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“订阅支付失败怎么和客户沟通：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17823,7 +17823,7 @@ export const contentPlan500 = [
     "primaryKeyword": "收款账户资料不一致有什么风险",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“收款账户资料不一致有什么风险”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17868,7 +17868,7 @@ export const contentPlan500 = [
     "primaryKeyword": "收款账户资料不一致有什么风险：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“收款账户资料不一致有什么风险：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17913,7 +17913,7 @@ export const contentPlan500 = [
     "primaryKeyword": "自由职业第一笔收款前要确认什么",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“自由职业第一笔收款前要确认什么”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -17958,7 +17958,7 @@ export const contentPlan500 = [
     "primaryKeyword": "自由职业第一笔收款前要确认什么：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“自由职业第一笔收款前要确认什么：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -18003,7 +18003,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Payoneer Wise PayPal 怎么选择",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Payoneer Wise PayPal 怎么选择”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -18048,7 +18048,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Payoneer Wise PayPal 怎么选择：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Payoneer Wise PayPal 怎么选择：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -18093,7 +18093,7 @@ export const contentPlan500 = [
     "primaryKeyword": "模板下载站什么时候接付费平台",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“模板下载站什么时候接付费平台”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -18138,7 +18138,7 @@ export const contentPlan500 = [
     "primaryKeyword": "模板下载站什么时候接付费平台：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“模板下载站什么时候接付费平台：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -18183,7 +18183,7 @@ export const contentPlan500 = [
     "primaryKeyword": "人工服务先用什么方式收款更稳妥",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“人工服务先用什么方式收款更稳妥”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -18228,7 +18228,7 @@ export const contentPlan500 = [
     "primaryKeyword": "人工服务先用什么方式收款更稳妥：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“人工服务先用什么方式收款更稳妥：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -18273,7 +18273,7 @@ export const contentPlan500 = [
     "primaryKeyword": "联盟链接收入和服务收入有什么区别",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“联盟链接收入和服务收入有什么区别”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -18318,7 +18318,7 @@ export const contentPlan500 = [
     "primaryKeyword": "联盟链接收入和服务收入有什么区别：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“联盟链接收入和服务收入有什么区别：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -18363,7 +18363,7 @@ export const contentPlan500 = [
     "primaryKeyword": "广告收入要等到什么时候再接",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“广告收入要等到什么时候再接”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -18408,7 +18408,7 @@ export const contentPlan500 = [
     "primaryKeyword": "广告收入要等到什么时候再接：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“广告收入要等到什么时候再接：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -18453,7 +18453,7 @@ export const contentPlan500 = [
     "primaryKeyword": "收款页面需要写哪些免责声明",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“收款页面需要写哪些免责声明”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -18498,7 +18498,7 @@ export const contentPlan500 = [
     "primaryKeyword": "收款页面需要写哪些免责声明：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“收款页面需要写哪些免责声明：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -18543,7 +18543,7 @@ export const contentPlan500 = [
     "primaryKeyword": "数字模板退款规则怎么写更清楚",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“数字模板退款规则怎么写更清楚”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -18588,7 +18588,7 @@ export const contentPlan500 = [
     "primaryKeyword": "数字模板退款规则怎么写更清楚：新手检查清单",
     "secondaryKeywords": [
       "收款工具",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“数字模板退款规则怎么写更清楚：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -18633,7 +18633,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 和 Claude Code 新手怎么选",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex",
       "Claude Code"
@@ -18680,7 +18680,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 和 Claude Code 新手怎么选：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex",
       "Claude Code"
@@ -18727,7 +18727,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Cursor 和 Codex 改网页有什么区别",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -18773,7 +18773,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Cursor 和 Codex 改网页有什么区别：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -18819,7 +18819,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Vercel 和 Netlify 部署小网站怎么选",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署"
     ],
@@ -18865,7 +18865,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Vercel 和 Netlify 部署小网站怎么选：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署"
     ],
@@ -18911,7 +18911,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Wise 和 Payoneer 收款怎么选",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Wise 和 Payoneer 收款怎么选”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -18956,7 +18956,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Wise 和 Payoneer 收款怎么选：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Wise 和 Payoneer 收款怎么选：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -19001,7 +19001,7 @@ export const contentPlan500 = [
     "primaryKeyword": "PayPal 和 Payoneer 哪个适合新手",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“PayPal 和 Payoneer 哪个适合新手”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -19046,7 +19046,7 @@ export const contentPlan500 = [
     "primaryKeyword": "PayPal 和 Payoneer 哪个适合新手：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“PayPal 和 Payoneer 哪个适合新手：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -19091,7 +19091,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 和 Fiverr 哪个适合 AI 新手",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Upwork 新手"
     ],
@@ -19137,7 +19137,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 和 Fiverr 哪个适合 AI 新手：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Upwork 新手"
     ],
@@ -19183,7 +19183,7 @@ export const contentPlan500 = [
     "primaryKeyword": "ChatGPT 和 Claude 写 Proposal 哪个更稳",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -19229,7 +19229,7 @@ export const contentPlan500 = [
     "primaryKeyword": "ChatGPT 和 Claude 写 Proposal 哪个更稳：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Claude Code"
     ],
@@ -19275,7 +19275,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Make 和 Zapier 自动化怎么选",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Make 和 Zapier 自动化怎么选”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -19320,7 +19320,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Make 和 Zapier 自动化怎么选：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Make 和 Zapier 自动化怎么选：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -19355,20 +19355,20 @@ export const contentPlan500 = [
   },
   {
     "id": 427,
-    "title": "Notion 管理接单流程怎么用",
+    "title": "Notion 管理项目流程怎么用",
     "slug": "notion-freelance-workflow",
     "category": "工具导航",
     "contentType": "tutorial",
     "difficulty": "beginner",
     "targetReader": "工具导航方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "Notion 管理接单流程怎么用",
+    "primaryKeyword": "Notion 管理项目流程怎么用",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“Notion 管理接单流程怎么用”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Notion 管理项目流程怎么用”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -19400,20 +19400,20 @@ export const contentPlan500 = [
   },
   {
     "id": 428,
-    "title": "Notion 管理接单流程怎么用：新手检查清单",
+    "title": "Notion 管理项目流程怎么用：新手检查清单",
     "slug": "notion-freelance-workflow-checklist",
     "category": "工具导航",
     "contentType": "checklist",
     "difficulty": "beginner",
     "targetReader": "工具导航方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "Notion 管理接单流程怎么用：新手检查清单",
+    "primaryKeyword": "Notion 管理项目流程怎么用：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“Notion 管理接单流程怎么用：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“Notion 管理项目流程怎么用：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -19455,7 +19455,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Canva 做作品集封面要注意什么",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Canva 做作品集封面要注意什么”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -19500,7 +19500,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Canva 做作品集封面要注意什么：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Canva 做作品集封面要注意什么：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -19545,7 +19545,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Google Search Console 新站怎么用",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Google Search Console 新站怎么用”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -19590,7 +19590,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Google Search Console 新站怎么用：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Google Search Console 新站怎么用：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -19635,7 +19635,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Google Analytics 什么时候再接入",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Google Analytics 什么时候再接入”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -19680,7 +19680,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Google Analytics 什么时候再接入：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Google Analytics 什么时候再接入：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -19725,7 +19725,7 @@ export const contentPlan500 = [
     "primaryKeyword": "GitHub 和 Vercel 为什么适合新手建站",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署",
       "GitHub"
@@ -19772,7 +19772,7 @@ export const contentPlan500 = [
     "primaryKeyword": "GitHub 和 Vercel 为什么适合新手建站：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署",
       "GitHub"
@@ -19819,7 +19819,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Cloudflare 和 Namecheap 域名怎么选",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Cloudflare 和 Namecheap 域名怎么选”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -19864,7 +19864,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Cloudflare 和 Namecheap 域名怎么选：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Cloudflare 和 Namecheap 域名怎么选：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -19909,7 +19909,7 @@ export const contentPlan500 = [
     "primaryKeyword": "ChatGPT Codex Claude Code 怎么分工",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex",
       "Claude Code"
@@ -19956,7 +19956,7 @@ export const contentPlan500 = [
     "primaryKeyword": "ChatGPT Codex Claude Code 怎么分工：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex",
       "Claude Code"
@@ -20003,7 +20003,7 @@ export const contentPlan500 = [
     "primaryKeyword": "SEO 工具新手先用哪些免费功能",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“SEO 工具新手先用哪些免费功能”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -20048,7 +20048,7 @@ export const contentPlan500 = [
     "primaryKeyword": "SEO 工具新手先用哪些免费功能：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“SEO 工具新手先用哪些免费功能：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -20093,7 +20093,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 写代码工具推荐前要看哪些风险",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 写代码工具推荐前要看哪些风险”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -20138,7 +20138,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 写代码工具推荐前要看哪些风险：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 写代码工具推荐前要看哪些风险：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -20183,7 +20183,7 @@ export const contentPlan500 = [
     "primaryKeyword": "自由职业平台工具栈怎么搭配",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“自由职业平台工具栈怎么搭配”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -20228,7 +20228,7 @@ export const contentPlan500 = [
     "primaryKeyword": "自由职业平台工具栈怎么搭配：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“自由职业平台工具栈怎么搭配：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -20273,7 +20273,7 @@ export const contentPlan500 = [
     "primaryKeyword": "模板下载站需要哪些基础工具",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“模板下载站需要哪些基础工具”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -20318,7 +20318,7 @@ export const contentPlan500 = [
     "primaryKeyword": "模板下载站需要哪些基础工具：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“模板下载站需要哪些基础工具：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -20363,7 +20363,7 @@ export const contentPlan500 = [
     "primaryKeyword": "新手不要一开始购买哪些工具",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“新手不要一开始购买哪些工具”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -20408,7 +20408,7 @@ export const contentPlan500 = [
     "primaryKeyword": "新手不要一开始购买哪些工具：新手检查清单",
     "secondaryKeywords": [
       "工具导航",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“新手不要一开始购买哪些工具：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -20453,7 +20453,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork Proposal 新手模板怎么改",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Upwork 新手"
     ],
@@ -20499,7 +20499,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork Proposal 新手模板怎么改：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Upwork 新手"
     ],
@@ -20545,7 +20545,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户问题清单怎么使用",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Upwork 新手"
     ],
@@ -20591,7 +20591,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 客户问题清单怎么使用：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Upwork 新手"
     ],
@@ -20637,7 +20637,7 @@ export const contentPlan500 = [
     "primaryKeyword": "自由职业报价单模板怎么填写",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“自由职业报价单模板怎么填写”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -20682,7 +20682,7 @@ export const contentPlan500 = [
     "primaryKeyword": "自由职业报价单模板怎么填写：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“自由职业报价单模板怎么填写：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -20727,7 +20727,7 @@ export const contentPlan500 = [
     "primaryKeyword": "项目交付检查清单应该包含什么",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“项目交付检查清单应该包含什么”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -20772,7 +20772,7 @@ export const contentPlan500 = [
     "primaryKeyword": "项目交付检查清单应该包含什么：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“项目交付检查清单应该包含什么：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -20817,7 +20817,7 @@ export const contentPlan500 = [
     "primaryKeyword": "客户需求沟通表怎么问才清楚",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“客户需求沟通表怎么问才清楚”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -20862,7 +20862,7 @@ export const contentPlan500 = [
     "primaryKeyword": "客户需求沟通表怎么问才清楚：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“客户需求沟通表怎么问才清楚：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -20897,20 +20897,20 @@ export const contentPlan500 = [
   },
   {
     "id": 461,
-    "title": "AI 接单每日执行表怎么安排",
+    "title": "AI 工具教程每日执行表怎么安排",
     "slug": "ai-freelance-daily-planner",
     "category": "模板和清单",
     "contentType": "tutorial",
     "difficulty": "beginner",
     "targetReader": "模板和清单方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单每日执行表怎么安排",
+    "primaryKeyword": "AI 工具教程每日执行表怎么安排",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单每日执行表怎么安排”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程每日执行表怎么安排”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -20942,20 +20942,20 @@ export const contentPlan500 = [
   },
   {
     "id": 462,
-    "title": "AI 接单每日执行表怎么安排：新手检查清单",
+    "title": "AI 工具教程每日执行表怎么安排：新手检查清单",
     "slug": "ai-freelance-daily-planner-checklist",
     "category": "模板和清单",
     "contentType": "checklist",
     "difficulty": "beginner",
     "targetReader": "模板和清单方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "AI 接单每日执行表怎么安排：新手检查清单",
+    "primaryKeyword": "AI 工具教程每日执行表怎么安排：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“AI 接单每日执行表怎么安排：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“AI 工具教程每日执行表怎么安排：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -20997,7 +20997,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 项目启动检查表怎么用",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -21043,7 +21043,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Codex 项目启动检查表怎么用：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Codex"
     ],
@@ -21089,7 +21089,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Vercel 部署检查表怎么写",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署"
     ],
@@ -21135,7 +21135,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Vercel 部署检查表怎么写：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Vercel 部署"
     ],
@@ -21181,7 +21181,7 @@ export const contentPlan500 = [
     "primaryKeyword": "GitHub 常用命令表新手怎么记",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "GitHub"
     ],
@@ -21227,7 +21227,7 @@ export const contentPlan500 = [
     "primaryKeyword": "GitHub 常用命令表新手怎么记：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "GitHub"
     ],
@@ -21273,7 +21273,7 @@ export const contentPlan500 = [
     "primaryKeyword": "作品集页面文案模板怎么写真实",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“作品集页面文案模板怎么写真实”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -21318,7 +21318,7 @@ export const contentPlan500 = [
     "primaryKeyword": "作品集页面文案模板怎么写真实：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“作品集页面文案模板怎么写真实：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -21363,7 +21363,7 @@ export const contentPlan500 = [
     "primaryKeyword": "英文客户回复模板怎么避免夸大",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“英文客户回复模板怎么避免夸大”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -21408,7 +21408,7 @@ export const contentPlan500 = [
     "primaryKeyword": "英文客户回复模板怎么避免夸大：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“英文客户回复模板怎么避免夸大：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -21453,7 +21453,7 @@ export const contentPlan500 = [
     "primaryKeyword": "项目复盘模板怎么记录问题",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“项目复盘模板怎么记录问题”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -21498,7 +21498,7 @@ export const contentPlan500 = [
     "primaryKeyword": "项目复盘模板怎么记录问题：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“项目复盘模板怎么记录问题：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -21543,7 +21543,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Bug 修复交付说明模板怎么写",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Bug 修复交付说明模板怎么写”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -21588,7 +21588,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Bug 修复交付说明模板怎么写：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“Bug 修复交付说明模板怎么写：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -21633,7 +21633,7 @@ export const contentPlan500 = [
     "primaryKeyword": "网站修改需求确认模板怎么用",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“网站修改需求确认模板怎么用”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -21678,7 +21678,7 @@ export const contentPlan500 = [
     "primaryKeyword": "网站修改需求确认模板怎么用：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“网站修改需求确认模板怎么用：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -21723,7 +21723,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 工具配置服务清单怎么写",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 工具配置服务清单怎么写”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -21768,7 +21768,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 工具配置服务清单怎么写：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 工具配置服务清单怎么写：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -21813,7 +21813,7 @@ export const contentPlan500 = [
     "primaryKeyword": "报价邮件模板怎么表达不确定范围",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“报价邮件模板怎么表达不确定范围”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -21858,7 +21858,7 @@ export const contentPlan500 = [
     "primaryKeyword": "报价邮件模板怎么表达不确定范围：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“报价邮件模板怎么表达不确定范围：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -21903,7 +21903,7 @@ export const contentPlan500 = [
     "primaryKeyword": "客户验收清单怎么减少返工",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“客户验收清单怎么减少返工”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -21948,7 +21948,7 @@ export const contentPlan500 = [
     "primaryKeyword": "客户验收清单怎么减少返工：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“客户验收清单怎么减少返工：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -21983,20 +21983,20 @@ export const contentPlan500 = [
   },
   {
     "id": 485,
-    "title": "接单前风险评估表怎么填",
+    "title": "项目前风险评估表怎么填",
     "slug": "pre-project-risk-assessment-template",
     "category": "模板和清单",
     "contentType": "tutorial",
     "difficulty": "intermediate",
     "targetReader": "模板和清单方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "接单前风险评估表怎么填",
+    "primaryKeyword": "项目前风险评估表怎么填",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“接单前风险评估表怎么填”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“项目前风险评估表怎么填”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -22028,20 +22028,20 @@ export const contentPlan500 = [
   },
   {
     "id": 486,
-    "title": "接单前风险评估表怎么填：新手检查清单",
+    "title": "项目前风险评估表怎么填：新手检查清单",
     "slug": "pre-project-risk-assessment-template-checklist",
     "category": "模板和清单",
     "contentType": "checklist",
     "difficulty": "intermediate",
     "targetReader": "模板和清单方向的中文新手，需要谨慎、可执行、可审核的步骤",
     "searchIntent": "informational",
-    "primaryKeyword": "接单前风险评估表怎么填：新手检查清单",
+    "primaryKeyword": "项目前风险评估表怎么填：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
-    "problem": "新手搜索“接单前风险评估表怎么填：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
+    "problem": "新手搜索“项目前风险评估表怎么填：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
     "promise": "读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
     "outline": [
       "直接回答这个问题",
@@ -22083,7 +22083,7 @@ export const contentPlan500 = [
     "primaryKeyword": "模板下载页 CTA 文案怎么写",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“模板下载页 CTA 文案怎么写”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -22128,7 +22128,7 @@ export const contentPlan500 = [
     "primaryKeyword": "模板下载页 CTA 文案怎么写：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“模板下载页 CTA 文案怎么写：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -22173,7 +22173,7 @@ export const contentPlan500 = [
     "primaryKeyword": "服务咨询表单问题怎么设计",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“服务咨询表单问题怎么设计”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -22218,7 +22218,7 @@ export const contentPlan500 = [
     "primaryKeyword": "服务咨询表单问题怎么设计：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“服务咨询表单问题怎么设计：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -22263,7 +22263,7 @@ export const contentPlan500 = [
     "primaryKeyword": "新手练习项目记录表怎么用",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“新手练习项目记录表怎么用”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -22308,7 +22308,7 @@ export const contentPlan500 = [
     "primaryKeyword": "新手练习项目记录表怎么用：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“新手练习项目记录表怎么用：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -22353,7 +22353,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 生成内容人工审核表怎么设计",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 生成内容人工审核表怎么设计”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -22398,7 +22398,7 @@ export const contentPlan500 = [
     "primaryKeyword": "AI 生成内容人工审核表怎么设计：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“AI 生成内容人工审核表怎么设计：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -22443,7 +22443,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 投标复盘表怎么记录",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Upwork 新手"
     ],
@@ -22489,7 +22489,7 @@ export const contentPlan500 = [
     "primaryKeyword": "Upwork 投标复盘表怎么记录：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程",
       "Upwork 新手"
     ],
@@ -22535,7 +22535,7 @@ export const contentPlan500 = [
     "primaryKeyword": "小网站上线检查 SOP 怎么写",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“小网站上线检查 SOP 怎么写”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -22580,7 +22580,7 @@ export const contentPlan500 = [
     "primaryKeyword": "小网站上线检查 SOP 怎么写：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“小网站上线检查 SOP 怎么写：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -22625,7 +22625,7 @@ export const contentPlan500 = [
     "primaryKeyword": "自由职业每周复盘模板怎么用",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“自由职业每周复盘模板怎么用”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",
@@ -22670,7 +22670,7 @@ export const contentPlan500 = [
     "primaryKeyword": "自由职业每周复盘模板怎么用：新手检查清单",
     "secondaryKeywords": [
       "模板和清单",
-      "AI 接单",
+      "AI 工具教程",
       "新手教程"
     ],
     "problem": "新手搜索“自由职业每周复盘模板怎么用：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。",

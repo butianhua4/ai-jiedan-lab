@@ -69,7 +69,7 @@ const tasks = [
 
 export const metadata: Metadata = {
   title: "AI 提示词库：销售、客服、运营、HR、电商、教育常用 Prompt",
-  description: "整理全行业常用 AI 提示词模板，覆盖销售、客服、运营、HR、电商、教育、财务、开发和接单交付场景，并提供可复制 Prompt 结构。",
+  description: "整理全行业常用 AI 提示词模板，覆盖销售、客服、运营、HR、电商、教育、财务、开发和项目交付场景，并提供可复制 Prompt 结构。",
   alternates: { canonical: "/prompts" },
   openGraph: {
     title: "AI 提示词库：全行业常用 Prompt 模板",
@@ -143,7 +143,7 @@ export default function PromptsPage() {
         </Link>
         <Link className="rounded-lg border border-gray-200 bg-white p-5 shadow-sm transition hover:border-brand/50" href="/blog">
           <h2 className="text-lg font-semibold text-ink">继续看教程</h2>
-          <p className="mt-2 text-sm leading-6 text-gray-600">从公开文章里找部署、接单、报价和排错流程。</p>
+          <p className="mt-2 text-sm leading-6 text-gray-600">从公开文章里找部署、项目、报价和排错流程。</p>
         </Link>
       </section>
     </main>

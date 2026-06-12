@@ -11,8 +11,8 @@ const toolTargets = [
   {
     href: "/tools/pricing-calculator",
     label: "项目报价助手",
-    description: "按工时、难度、沟通成本和平台抽成估算接单报价。",
-    terms: ["报价", "pricing", "price", "预算", "proposal", "upwork", "fiverr", "接单"],
+    description: "按工时、难度、沟通成本和平台抽成估算项目报价。",
+    terms: ["报价", "pricing", "price", "预算", "proposal", "upwork", "fiverr", "项目"],
   },
   {
     href: "/tools/proposal-generator",

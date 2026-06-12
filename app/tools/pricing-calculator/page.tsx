@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/tools/pricing-calculator" },
   openGraph: {
     title: "项目报价助手",
-    description: "给 AI 接单新手一个谨慎的报价参考范围。",
+    description: "给 AI 工具新手一个谨慎的报价参考范围。",
     url: "/tools/pricing-calculator",
   },
 };

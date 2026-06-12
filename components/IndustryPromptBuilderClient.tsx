@@ -103,7 +103,7 @@ export function IndustryPromptBuilderClient() {
   const [depth, setDepth] = useState<Depth>("standard");
   const [task, setTask] = useState(industryDefaults.marketing.task);
   const [inputs, setInputs] = useState(industryDefaults.marketing.inputs);
-  const [audience, setAudience] = useState("小团队负责人、接单者或一线执行同事");
+  const [audience, setAudience] = useState("小团队负责人、自由职业者或一线执行同事");
   const [tone, setTone] = useState("清晰、具体、不过度承诺，适合直接交付给同事继续改");
 
   const selected = industryDefaults[industry];
@@ -222,7 +222,7 @@ export function IndustryPromptBuilderClient() {
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div>
               <h2 className="text-xl font-semibold text-ink">生成结果</h2>
-              <p className="mt-1 text-sm leading-6 text-gray-600">一套提示词包含执行、质检和沉淀 SOP 三段，更适合团队复用和接单交付。</p>
+              <p className="mt-1 text-sm leading-6 text-gray-600">一套提示词包含执行、质检和沉淀 SOP 三段，更适合团队复用和项目交付。</p>
             </div>
             <CopyButton label="复制全部" text={allPrompts} />
           </div>

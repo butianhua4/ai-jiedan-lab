@@ -17,7 +17,7 @@ const intents: Array<[Intent, string]> = [
 
 const audiences: Array<[Audience, string]> = [
   ["beginner", "新手"],
-  ["freelancer", "接单者"],
+  ["freelancer", "自由职业者"],
   ["developer", "开发者"],
   ["operator", "运营/助理"],
   ["founder", "创业者/负责人"],
@@ -66,13 +66,13 @@ const linkTargets = [
   { href: "/tools/memory-rag-architecture-planner", keywords: ["rag", "向量", "记忆", "知识库", "检索"], label: "Agent 记忆与 RAG 架构规划器" },
   { href: "/tools/api-routing-cost-checker", keywords: ["api", "限流", "rate limit", "key", "成本", "路由"], label: "AI API 限流与成本路由检查器" },
   { href: "/tools/error-explainer", keywords: ["报错", "error", "npm", "vercel", "typescript"], label: "Codex 报错解释器" },
-  { href: "/tools/pricing-calculator", keywords: ["报价", "价格", "接单", "预算", "工时"], label: "项目报价助手" },
+  { href: "/tools/pricing-calculator", keywords: ["报价", "价格", "项目", "预算", "工时"], label: "项目报价助手" },
   { href: "/templates", keywords: ["模板", "下载", "proposal", "清单"], label: "新手模板包" },
 ];
 
 export function PublicSeoRefreshAssistantClient() {
   const [title, setTitle] = useState("Agent 记忆怎么设计：短期记忆、长期记忆和 RAG 怎么分工");
-  const [summary, setSummary] = useState("面向准备上线 Agent 的开发者和接单者，解释短期记忆、长期记忆、RAG 知识库、向量检索、隐私删除和人工复核边界。");
+  const [summary, setSummary] = useState("面向准备上线 Agent 的开发者和自由职业者，解释短期记忆、长期记忆、RAG 知识库、向量检索、隐私删除和人工复核边界。");
   const [keywords, setKeywords] = useState("Agent 记忆, RAG, 向量数据库, 长期记忆, AI Agent 部署");
   const [intent, setIntent] = useState<Intent>("howto");
   const [audience, setAudience] = useState<Audience>("developer");
