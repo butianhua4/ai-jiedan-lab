@@ -27,6 +27,7 @@ function buildLlmsTxt() {
     "",
     `- [Home](${base}/): AI 接单实验室首页`,
     `- [Blog](${base}/blog): Published tutorials and guides`,
+    `- [Prompts](${base}/prompts): AI prompt library for common industry workflows`,
     `- [Tools](${base}/tools): AI tools directory`,
     `- [Templates](${base}/templates): Downloadable templates`,
     `- [Roadmap](${base}/roadmap): AI 接单 30 天路线图`,

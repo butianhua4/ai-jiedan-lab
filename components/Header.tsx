@@ -5,7 +5,7 @@ const nav = [
   ["/blog", "新手教程"],
   ["/tools/ppt-planner", "PPT 策划"],
   ["/tools/spreadsheet-cleaner", "表格整理"],
-  ["/tools/industry-prompt-builder", "AI 提示词"],
+  ["/prompts", "提示词库"],
   ["/tools/agent-deployment-planner", "Agent 部署"],
   ["/tools/llm-deployment-cost-planner", "大模型部署"],
   ["/tools/memory-rag-architecture-planner", "记忆/RAG"],
