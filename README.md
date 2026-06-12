@@ -139,6 +139,7 @@ npm run traffic:evidence
 - `docs/manual-review-checklist.md`
 - `docs/seo-searchability-audit.md`
 - `docs/search-console-setup.md`
+- `docs/platform-connection-status.md`
 
 ## 重要边界
 
