@@ -5,6 +5,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { ServiceCTA } from "@/components/ServiceCTA";
 import { TagBadge } from "@/components/Badges";
 import { ToolCTA } from "@/components/ToolCTA";
+import { ArticleToolLinks } from "@/components/ArticleToolLinks";
 import { getAllPosts, getPostBySlug, renderMarkdown, slugify } from "@/lib/blog";
 import { site } from "@/data/site";
 
@@ -85,6 +86,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             className="prose prose-lg mt-8 max-w-none prose-a:text-brand prose-a:no-underline hover:prose-a:underline prose-pre:rounded-lg prose-pre:bg-slate-950 prose-pre:text-slate-100"
             dangerouslySetInnerHTML={{ __html: renderMarkdown(stripTopHeading(post.content)) }}
           />
+
+          <ArticleToolLinks post={post} />
 
           <div className="mt-10">
             <ToolCTA title="读完这篇后可以直接使用工具" />
