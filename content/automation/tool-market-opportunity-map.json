@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T02:43:27.519Z",
+  "generatedAt": "2026-06-12T03:04:07.417Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -44,6 +44,7 @@
       "error-explainer",
       "industry-prompt-builder",
       "llm-deployment-cost-planner",
+      "memory-rag-architecture-planner",
       "ppt-planner",
       "pricing-calculator",
       "proposal-generator",
@@ -66,7 +67,7 @@
   "summary": {
     "cnFirstOpportunities": 2,
     "dualTrackOpportunities": 4,
-    "existingTools": 8,
+    "existingTools": 9,
     "globalFirstOpportunities": 2,
     "opportunities": 8,
     "platformRegistrationsNeedingHuman": 5,
@@ -708,10 +709,12 @@
           "title": "Dify metadata filtering 怎么用：让知识库检索更可控"
         }
       ],
-      "existingToolMatches": [],
+      "existingToolMatches": [
+        "memory-rag-architecture-planner"
+      ],
       "publicMatches": [],
-      "priorityScore": 149,
-      "recommendedNextAsset": "Build a lightweight interactive tool page before expanding another generic article.",
+      "priorityScore": 139,
+      "recommendedNextAsset": "Refresh the existing tool page and add article-to-tool internal links.",
       "safetyBoundary": {
         "autoCreateArticles": false,
         "autoEditPublicArticles": false,

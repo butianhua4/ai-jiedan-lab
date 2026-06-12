@@ -34,6 +34,11 @@ export default function ToolsPage() {
       href: "/tools/llm-deployment-cost-planner",
     },
     {
+      title: "Agent 记忆与 RAG 架构规划器",
+      description: "按场景、资料来源、更新频率和隐私等级，生成短期记忆、长期记忆、RAG 管线和删除机制。",
+      href: "/tools/memory-rag-architecture-planner",
+    },
+    {
       title: "Upwork Proposal 生成器",
       description: "根据客户需求生成谨慎可改的英文投标草稿，并提示风险、追问问题和报价方向。",
       href: "/tools/proposal-generator",

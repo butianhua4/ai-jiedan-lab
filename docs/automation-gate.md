@@ -1,6 +1,6 @@
 # Automation Gate
 
-Generated at: 2026-06-12T02:43:39.683Z
+Generated at: 2026-06-12T03:04:29.806Z
 
 Overall: PASS
 
@@ -203,7 +203,7 @@ Overall: PASS
 | public refresh sprint board keeps public edits manual and publish-confirm-free | PASS | ready=15, actions=181, unsafe=0, publishConfirm=0 |
 | public search refresh session pack covers public sprint waves | PASS | sessions=5, files=15, actions=181, ready=15 |
 | public search refresh session pack stays manual and non-publishing | PASS | unsafe=0, publishConfirm=0, traffic=false |
-| tool market opportunity map covers broad tool demand safely | PASS | opportunities=8, tools=8, queries=80, public=15 |
+| tool market opportunity map covers broad tool demand safely | PASS | opportunities=8, tools=9, queries=80, public=15 |
 | tool market opportunity map includes PPT, spreadsheet and registration actions without publishing | PASS | registrations=5, unsafe=0, publishConfirm=0, traffic=false |
 | manual review workbench is ready and stops before publishing | PASS | currentItemsCovered=3, publishableNow=0 |
 | manual review workbench includes SEO warning remediation | PASS | workbenchSeo=16, remediation=16, unsafe=0 |

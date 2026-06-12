@@ -8,6 +8,7 @@ const nav = [
   ["/tools/industry-prompt-builder", "AI 提示词"],
   ["/tools/agent-deployment-planner", "Agent 部署"],
   ["/tools/llm-deployment-cost-planner", "大模型部署"],
+  ["/tools/memory-rag-architecture-planner", "记忆/RAG"],
   ["/tools/proposal-generator", "Proposal 生成器"],
   ["/tools/error-explainer", "报错解释器"],
   ["/tools/pricing-calculator", "报价助手"],

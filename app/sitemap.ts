@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tools/industry-prompt-builder",
     "/tools/agent-deployment-planner",
     "/tools/llm-deployment-cost-planner",
+    "/tools/memory-rag-architecture-planner",
     "/tools/error-explainer",
     "/tools/pricing-calculator",
     "/templates",
