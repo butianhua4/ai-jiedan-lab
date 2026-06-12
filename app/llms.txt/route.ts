@@ -27,6 +27,7 @@ function buildLlmsTxt() {
     "",
     `- [Home](${base}/): AI 接单实验室首页`,
     `- [Blog](${base}/blog): Published tutorials and guides`,
+    `- [Deployments](${base}/deployments): AI deployment guide for web apps, LLMs, agents, RAG, and API routing`,
     `- [Prompts](${base}/prompts): AI prompt library for common industry workflows`,
     `- [Tools](${base}/tools): AI tools directory`,
     `- [Templates](${base}/templates): Downloadable templates`,
