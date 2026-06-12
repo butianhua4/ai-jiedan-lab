@@ -99,7 +99,7 @@ const opportunities: ToolOpportunitySeed[] = [
     marketTrack: "dual-track",
     whyNow: "项目公开面仍缺 Agent 部署覆盖，搜索需求包含工具调用、权限、生产安全和平台部署。",
     searchTerms: ["agent", "langgraph", "crewai", "tool calling", "mcp", "部署"],
-    existingToolTerms: ["agent", "mcp", "deployment"],
+    existingToolTerms: ["agent", "mcp", "langgraph", "crewai"],
     cnQueries: ["AI Agent 部署教程", "Agent 工具调用教程", "MCP 使用教程", "LangGraph Agent 入门", "CrewAI 部署教程"],
     enQueries: ["AI agent deployment", "agent tool calling tutorial", "MCP server deployment", "LangGraph agent tutorial", "CrewAI deployment"],
     mvp: [
@@ -115,7 +115,7 @@ const opportunities: ToolOpportunitySeed[] = [
     marketTrack: "global-first",
     whyNow: "大模型部署是项目当前高优先级内容缺口，英文搜索可带来更高商业意图，中文教程可做入门入口。",
     searchTerms: ["llm", "ollama", "vllm", "tgi", "runpod", "huggingface", "gpu"],
-    existingToolTerms: ["llm", "gpu", "vllm", "ollama", "runpod", "huggingface", "cost"],
+    existingToolTerms: ["llm", "gpu", "vllm", "ollama", "runpod", "huggingface"],
     cnQueries: ["大模型部署教程", "Ollama 本地部署教程", "vLLM 部署教程", "RunPod vLLM serverless", "Hugging Face TGI 部署"],
     enQueries: ["LLM deployment tutorial", "Ollama local deployment", "vLLM deployment", "RunPod vLLM serverless", "Hugging Face TGI deploy"],
     mvp: [
@@ -147,7 +147,7 @@ const opportunities: ToolOpportunitySeed[] = [
     marketTrack: "global-first",
     whyNow: "API 接入、限流、密钥安全、多模型路由和成本控制是搜索高意图问题，容易转化为咨询或模板。",
     searchTerms: ["api", "rate limit", "openrouter", "cost", "routing", "key"],
-    existingToolTerms: ["api", "cost", "key", "route"],
+    existingToolTerms: ["api", "openrouter", "rate-limit", "key", "route"],
     cnQueries: ["OpenAI API 接入教程", "Claude API 限流", "Gemini API 限流", "OpenRouter API 教程", "AI API key 安全"],
     enQueries: ["OpenAI API integration", "Claude API rate limit", "Gemini API rate limit", "OpenRouter API tutorial", "AI API key security"],
     mvp: [

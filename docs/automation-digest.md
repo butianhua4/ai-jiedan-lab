@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-12T01:43:19.451Z
+Generated at: 2026-06-12T02:43:52.448Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -1425,10 +1425,10 @@ Public categories:
 
 - Codex 新手教程: 9
 - Upwork 新手: 2
-- 报价指南: 1
 - 报错解决: 1
-- 收款工具: 1
+- 报价指南: 1
 - 部署教程: 1
+- 收款工具: 1
 
 | Category | Updated | Tags | Title | URL |
 | --- | --- | --- | --- | --- |
@@ -1567,7 +1567,7 @@ Public categories:
 ## Tool Market Opportunity Map
 
 - Opportunities: 8
-- Existing tools: 7
+- Existing tools: 8
 - CN-first opportunities: 2
 - Global-first opportunities: 2
 - Dual-track opportunities: 4
@@ -1584,7 +1584,7 @@ Public categories:
 | 143 | dual-track | 0 | 1 | 7 | 5 | 5 | 表格一键整理与清洗助手 | Refresh the existing tool page and add article-to-tool internal links. |
 | 138 | cn-first | 0 | 1 | 8 | 5 | 5 | 全行业 AI 提示词工作流生成器 | Refresh the existing tool page and add article-to-tool internal links. |
 | 127 | dual-track | 2 | 1 | 8 | 5 | 5 | Agent 部署与工具权限规划器 | Refresh the existing tool page and add article-to-tool internal links. |
-| 146 | global-first | 0 | 0 | 8 | 5 | 5 | 大模型部署成本与路径选择器 | Build a lightweight interactive tool page before expanding another generic article. |
+| 136 | global-first | 0 | 1 | 8 | 5 | 5 | 大模型部署成本与路径选择器 | Refresh the existing tool page and add article-to-tool internal links. |
 | 149 | dual-track | 0 | 0 | 8 | 5 | 5 | Agent 记忆与 RAG 架构规划器 | Build a lightweight interactive tool page before expanding another generic article. |
 | 144 | global-first | 0 | 0 | 8 | 5 | 5 | AI API 接入、限流与成本路由检查器 | Build a lightweight interactive tool page before expanding another generic article. |
 | 143 | cn-first | 0 | 0 | 3 | 5 | 5 | 公开文章标题、描述与内链刷新助手 | Build a lightweight interactive tool page before expanding another generic article. |

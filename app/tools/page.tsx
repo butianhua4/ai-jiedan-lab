@@ -29,6 +29,11 @@ export default function ToolsPage() {
       href: "/tools/agent-deployment-planner",
     },
     {
+      title: "大模型部署成本与路径选择器",
+      description: "按模型规模、并发、上下文、API 单价和 GPU 单价，粗估部署成本并选择 API、Ollama、vLLM 或 Serverless GPU。",
+      href: "/tools/llm-deployment-cost-planner",
+    },
+    {
       title: "Upwork Proposal 生成器",
       description: "根据客户需求生成谨慎可改的英文投标草稿，并提示风险、追问问题和报价方向。",
       href: "/tools/proposal-generator",

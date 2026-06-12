@@ -1,6 +1,6 @@
 # Tool Market Opportunity Map
 
-Generated at: 2026-06-12T01:42:51.964Z
+Generated at: 2026-06-12T02:43:27.519Z
 
 ## Guardrails
 
@@ -14,7 +14,7 @@ Generated at: 2026-06-12T01:42:51.964Z
 ## Current Surface
 
 - Public articles: 15
-- Existing tools: agent-deployment-planner, error-explainer, industry-prompt-builder, ppt-planner, pricing-calculator, proposal-generator, spreadsheet-cleaner
+- Existing tools: agent-deployment-planner, error-explainer, industry-prompt-builder, llm-deployment-cost-planner, ppt-planner, pricing-calculator, proposal-generator, spreadsheet-cleaner
 - Live missing from sitemap: 0
 - Measured traffic sources: 0
 - Traffic data available: false
@@ -24,7 +24,7 @@ Generated at: 2026-06-12T01:42:51.964Z
 
 - cnFirstOpportunities: 2
 - dualTrackOpportunities: 4
-- existingTools: 7
+- existingTools: 8
 - globalFirstOpportunities: 2
 - opportunities: 8
 - platformRegistrationsNeedingHuman: 5
@@ -57,7 +57,7 @@ Generated at: 2026-06-12T01:42:51.964Z
 | 143 | dual-track | 0 | 1 | 7 | 表格一键整理与清洗助手 | Refresh the existing tool page and add article-to-tool internal links. |
 | 138 | cn-first | 0 | 1 | 8 | 全行业 AI 提示词工作流生成器 | Refresh the existing tool page and add article-to-tool internal links. |
 | 127 | dual-track | 2 | 1 | 8 | Agent 部署与工具权限规划器 | Refresh the existing tool page and add article-to-tool internal links. |
-| 146 | global-first | 0 | 0 | 8 | 大模型部署成本与路径选择器 | Build a lightweight interactive tool page before expanding another generic article. |
+| 136 | global-first | 0 | 1 | 8 | 大模型部署成本与路径选择器 | Refresh the existing tool page and add article-to-tool internal links. |
 | 149 | dual-track | 0 | 0 | 8 | Agent 记忆与 RAG 架构规划器 | Build a lightweight interactive tool page before expanding another generic article. |
 | 144 | global-first | 0 | 0 | 8 | AI API 接入、限流与成本路由检查器 | Build a lightweight interactive tool page before expanding another generic article. |
 | 143 | cn-first | 0 | 0 | 3 | 公开文章标题、描述与内链刷新助手 | Build a lightweight interactive tool page before expanding another generic article. |
