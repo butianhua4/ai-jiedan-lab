@@ -1,6 +1,6 @@
 # Human Approval Execution Queue
 
-Generated at: 2026-06-11T17:07:34.273Z
+Generated at: 2026-06-12T01:43:03.571Z
 
 This queue is read-only. It consolidates the next manual approval actions that can increase public article count, while stopping before article edits, mark-review execution, and publish confirmation.
 
@@ -37,19 +37,19 @@ This queue is read-only. It consolidates the next manual approval actions that c
 
 ## Source Evidence
 
-- firstCoverageGeneratedAt: "2026-06-11T17:07:33.780Z"
+- firstCoverageGeneratedAt: "2026-06-12T01:43:03.074Z"
 - firstCoverageSummary: {"blockingItems":0,"commandBoundaries":8,"firstCoverageItems":8,"freshnessReadyItems":8,"integrityReadyItems":8,"itemsWithPublicLinkPath":8,"launchPackItems":8,"preflightReadyItems":8,"queryReadyItems":8,"schemaReadyItems":8,"snippetReadyItems":8,"sourceReadyItems":8,"trafficDataAvailable":false,"uniqueFiles":8,"unsafeItems":0,"warningItems":8,"zeroPublicClusters":8}
-- massAiSearchMatrixGeneratedAt: "2026-06-11T17:07:06.286Z"
+- massAiSearchMatrixGeneratedAt: "2026-06-12T01:42:32.902Z"
 - massAiSearchMatrixSummary: {"commandBoundaries":10,"deploymentBridgedThemes":6,"humanGatedItems":8,"items":8,"itemsReadyForHumanReviewPrep":8,"itemsWithCandidateFiles":8,"itemsWithHumanReviewActions":8,"itemsWithSearchSeeds":8,"itemsWithSourceTargets":8,"promptBlueprintSamples":10,"promptBridgedThemes":2,"sourceBroadThemes":10,"sourceTopThemes":8,"themesWithoutPublicCoverage":8,"trafficDataAvailable":false,"uniqueCandidateFiles":45,"unsafeItems":0,"waves":3}
-- popularAiPromptPlaybookGeneratedAt: "2026-06-11T17:07:09.620Z"
+- popularAiPromptPlaybookGeneratedAt: "2026-06-12T01:42:36.214Z"
 - popularAiPromptPlaybookSummary: {"agentDeploymentLanes":3,"broadWorkPromptLanes":3,"commandBoundaries":10,"deploymentBridgeItems":6,"humanGatedItems":10,"items":10,"itemsReadyForHumanReviewPrep":10,"itemsWithCandidateFiles":10,"itemsWithOfficialSources":10,"memoryLanes":1,"officialSources":12,"promptModuleBridgeItems":7,"promptTemplates":50,"publishConfirmCommandsIncluded":0,"searchQueries":127,"sourceTargets":22,"trafficDataAvailable":false,"uniqueCandidateFiles":21,"unsafeItems":0}
-- seoWarningGeneratedAt: "2026-06-11T17:06:54.965Z"
+- seoWarningGeneratedAt: "2026-06-12T01:42:21.621Z"
 - seoWarningSummary: {"blockingItems":0,"draftItems":8,"humanGatedItems":16,"items":16,"itemsWithHumanChecklist":16,"itemsWithManualActions":16,"publicItems":8,"recommendedItems":1,"schemaWarningItems":7,"snippetWarningItems":13,"trafficDataAvailable":false,"unsafeItems":0,"warningItems":16,"waveItems":1}
-- sourceReplacementGeneratedAt: "2026-06-11T17:07:15.546Z"
+- sourceReplacementGeneratedAt: "2026-06-12T01:42:45.048Z"
 - sourceReplacementSummary: {"affectedFiles":22,"failedDecisionItems":1,"humanGatedItems":113,"items":113,"itemsWithDecisionOptions":113,"itemsWithManualChecklist":113,"itemsWithRecommendedCandidate":1,"officialRecommendedCandidates":1,"redirectedDecisionItems":112,"replacementCandidateOptions":8,"sourceRemediationItems":19,"sourceRemediationUnsafeItems":0,"unsafeItems":0}
-- waveApprovalGeneratedAt: "2026-06-11T17:07:01.279Z"
+- waveApprovalGeneratedAt: "2026-06-12T01:42:27.938Z"
 - waveApprovalSummary: {"items":3,"readyForHumanReview":3,"unsafeItems":0,"wave":1}
-- wavePublishSimulationGeneratedAt: "2026-06-11T17:07:17.503Z"
+- wavePublishSimulationGeneratedAt: "2026-06-12T01:42:46.972Z"
 - wavePublishSimulationSummary: {"currentlyPublishable":0,"items":3,"projectedPublicPublishedAfterWave":18,"projectedPublishableAfterHumanApproval":3,"publicPublishedBeforeWave":15,"readyForHumanApproval":3,"unsafeItems":0,"wave":1}
 - trafficNote: "No measured traffic, rankings, impressions, clicks, or revenue data is available or claimed."
 
