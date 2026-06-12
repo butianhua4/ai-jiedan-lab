@@ -1,6 +1,6 @@
 # Search Snippet Readiness Audit
 
-Generated at: 2026-06-12T06:12:59.072Z
+Generated at: 2026-06-12T14:34:02.371Z
 
 This report is read-only. It checks titles, descriptions, slugs, and indexing boundaries for public and publish-candidate snippets.
 
@@ -56,7 +56,7 @@ This report is read-only. It checks titles, descriptions, slugs, and indexing bo
 | public | 27 | 101 | none | none | codex-vercel-deploy-preflight-checklist | Codex 部署 Vercel 前检查什么：上线前清单 | content/blog/codex-vercel-deploy-preflight-checklist.mdx |
 | public | 30 | 104 | none | none | codex-vs-claude-code-beginner-checklist | Codex 和 Claude Code 怎么选：新手对比清单 | content/blog/codex-vs-claude-code-beginner-checklist.mdx |
 | public | 28 | 72 | none | primary keyword is not an exact title substring | first-upwork-project-pricing-checklist | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
-| public | 39 | 82 | none | primary keyword is not an exact title substring | payoneer-wise-paypal-beginner-comparison | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
+| public | 39 | 82 | none | primary keyword is not an exact title substring | payoneer-wise-paypal-beginner-comparison | Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
 | public | 27 | 64 | none | none | upwork-client-requirements-analysis-beginner | Upwork 客户需求太模糊怎么办：新手分析和追问清单 | content/blog/upwork-client-requirements-analysis-beginner.mdx |
 | public | 32 | 80 | none | primary keyword is not an exact title substring | upwork-proposal-no-reply-checklist | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
 | public | 27 | 87 | none | primary keyword is not an exact title substring | vercel-env-variable-missing-beginner-guide | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | content/blog/vercel-env-variable-missing-beginner-guide.mdx |
@@ -76,6 +76,6 @@ This report is read-only. It checks titles, descriptions, slugs, and indexing bo
 | public | 28 | 72 | none | primary keyword is not an exact title substring | first-upwork-project-pricing-checklist | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
 | expansion | 48 | 102 | none | primary keyword is not an exact title substring | gpu-docker-nvidia-container-toolkit-guide | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
 | expansion | 52 | 80 | none | primary keyword is not an exact title substring | open-webui-functions-pipelines-deployment-guide | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
-| public | 39 | 82 | none | primary keyword is not an exact title substring | payoneer-wise-paypal-beginner-comparison | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
+| public | 39 | 82 | none | primary keyword is not an exact title substring | payoneer-wise-paypal-beginner-comparison | Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
 | public | 32 | 80 | none | primary keyword is not an exact title substring | upwork-proposal-no-reply-checklist | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
 | public | 27 | 87 | none | primary keyword is not an exact title substring | vercel-env-variable-missing-beginner-guide | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | content/blog/vercel-env-variable-missing-beginner-guide.mdx |

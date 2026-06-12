@@ -9,8 +9,8 @@ tags:
   - "报错解决"
   - "Node.js"
   - "版本不匹配"
-  - "AI 接单"
-author: "AI 接单实验室"
+  - "AI 工具实践"
+author: "AI 工具指南"
 status: "draft"
 contentType: "tutorial"
 difficulty: "beginner"
@@ -21,7 +21,7 @@ secondaryKeywords:
   - "Node version mismatch"
   - "npm install 报错"
   - "部署失败"
-  - "AI 接单"
+  - "AI 工具实践"
 sourceNotes: "人工重写版本；公开前仍需人工复核 Node 版本策略、包管理器命令、部署平台设置和客户环境边界。"
 humanReviewRequired: true
 reviewChecklist:
@@ -121,7 +121,7 @@ npm install
 
 ## 什么时候不要继续改
 
-如果你发现项目声明互相矛盾，比如 `package.json` 写 Node 18，`.nvmrc` 写 Node 20，CI 又写 Node 22，先不要任选一个继续修。此时要把冲突列出来，请项目负责人确认标准版本。新手接单时，这一步很重要，因为版本标准属于项目约定，不是个人偏好。
+如果你发现项目声明互相矛盾，比如 `package.json` 写 Node 18，`.nvmrc` 写 Node 20，CI 又写 Node 22，先不要任选一个继续修。此时要把冲突列出来，请项目负责人确认标准版本。新手项目练习时，这一步很重要，因为版本标准属于项目约定，不是个人偏好。
 
 如果客户只是让你“先改到能跑”，也要说明风险：本地跑通不等于 CI 和部署也会通过。你可以先给一个诊断结论和建议版本，再等客户确认是否同步修改仓库配置、CI 配置和部署平台。
 

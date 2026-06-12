@@ -1,27 +1,27 @@
 ---
-title: "git authentication failed 接单前怎么判断能不能做"
+title: "git authentication failed 使用前怎么判断是否适合"
 slug: "git-authentication-failed-fix-freelance-scope"
-description: "从接单角度判断 git authentication failed 是否适合新手处理：区分本地配置、平台权限、客户授权、token 安全、SSH key 和组织规则。"
+description: "从项目角度判断 git authentication failed 是否适合新手处理：区分本地配置、平台权限、客户授权、token 安全、SSH key 和组织规则。"
 date: "2026-06-03"
 updatedAt: "2026-06-03"
 category: "报错解决"
 tags:
   - "报错解决"
   - "Git"
-  - "接单边界"
-  - "AI 接单"
-author: "AI 接单实验室"
+  - "项目边界"
+  - "AI 工具实践"
+author: "AI 工具指南"
 status: "draft"
 contentType: "freelance-scope"
 difficulty: "beginner"
 targetReader: "准备接 Git 认证失败小单、需要判断权限和安全边界的新手"
 searchIntent: "commercial"
-primaryKeyword: "git authentication failed 接单前怎么判断能不能做"
+primaryKeyword: "git authentication failed 使用前怎么判断是否适合"
 secondaryKeywords:
   - "git push authentication failed"
   - "客户仓库权限"
   - "GitHub token"
-  - "AI 接单"
+  - "AI 工具实践"
 sourceNotes: "人工重写版本；公开前仍需人工复核平台认证规则、客户授权、token 安全和报价建议。"
 humanReviewRequired: true
 reviewChecklist:
@@ -45,11 +45,11 @@ canonical: "https://ai-jiedan-lab.vercel.app/blog/git-authentication-failed-fix-
 noindex: true
 ---
 
-# git authentication failed 接单前怎么判断能不能做
+# git authentication failed 使用前怎么判断是否适合
 
-`git authentication failed` 可以是很小的配置问题，也可以是客户仓库权限和安全授权问题。接单前要先判断：你要解决的是本地连接方式，还是客户账号和组织权限。
+`git authentication failed` 可以是很小的配置问题，也可以是客户仓库权限和安全授权问题。项目前要先判断：你要解决的是本地连接方式，还是客户账号和组织权限。
 
-如果你只想学习排查顺序，可以先看 [git authentication failed 怎么解决](/blog/git-authentication-failed-fix)。这一篇重点讲新手接单边界：哪些能做，哪些需要客户自己操作，哪些应该暂缓。
+如果你只想学习排查顺序，可以先看 [git authentication failed 怎么解决](/blog/git-authentication-failed-fix)。这一篇重点讲新手项目练习边界：哪些能做，哪些需要客户自己操作，哪些应该暂缓。
 
 ## 适合谁
 
@@ -65,7 +65,7 @@ noindex: true
 
 ## 风险提醒
 
-接单时最大的风险是凭据责任。只要你接收了客户密码、私钥或长期 token，就需要承担保管、泄漏、撤销和误用的风险。对新手来说，这不是合适的服务边界。
+做项目时最大的风险是凭据责任。只要你接收了客户密码、私钥或长期 token，就需要承担保管、泄漏、撤销和误用的风险。对新手来说，这不是合适的服务边界。
 
 第二个风险是组织权限。客户个人可以邀请你进仓库，但组织可能还有 SSO、二次验证、IP 限制或审核规则。你不能保证所有权限立刻可用。
 
@@ -129,12 +129,12 @@ Fix:
 
 示例记录可以这样写：明日等待客户在 GitHub 仓库中添加协作者权限；收到授权后先运行 `git fetch origin` 验证读取权限，再确认是否允许 push 或创建 PR。这样你没有暂停工作，而是把外部授权边界放到了正确位置。
 
-如果客户迟迟不确认授权，你仍然可以交付诊断结果和建议流程。接单时要把“诊断完成”和“远端操作完成”分开，否则很容易因为客户权限未准备好而让自己的交付看起来像没进展。
+如果客户迟迟不确认授权，你仍然可以交付诊断结果和建议流程。做项目时要把“诊断完成”和“远端操作完成”分开，否则很容易因为客户权限未准备好而让自己的交付看起来像没进展。
 
 ## CTA：下一步
 
-接单前用 [项目报价助手](/tools/pricing-calculator) 把诊断和修复拆开，再用 [模板库](/templates) 写客户授权确认问题。具体报错可以先交给 [报错解释器](/tools/error-explainer) 拆解。
+项目前用 [项目报价助手](/tools/pricing-calculator) 把诊断和修复拆开，再用 [模板库](/templates) 写客户授权确认问题。具体报错可以先交给 [报错解释器](/tools/error-explainer) 拆解。
 
 ## 免责声明
 
-本文是学习和接单范围判断，不构成法律、安全或职业承诺。客户仓库、账号权限、令牌、SSH key、组织授权和平台规则，需要结合真实项目和客户授权人工判断。
+本文是学习和项目范围判断，不构成法律、安全或职业承诺。客户仓库、账号权限、令牌、SSH key、组织授权和平台规则，需要结合真实项目和客户授权人工判断。

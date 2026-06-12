@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:12:59.687Z",
+  "generatedAt": "2026-06-12T14:34:02.329Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -20,7 +20,7 @@
   "blockingItems": [],
   "warningItems": [
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-github-before-commit-checklist",
       "category": "Codex 新手教程",
       "contentType": "pricing-guide",
@@ -33,7 +33,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-01",
         "datePublished": "2026-06-01",
@@ -53,7 +53,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 和 GitHub 怎么配合：提交代码前检查",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-npm-install-error-beginner-fix",
       "category": "报错解决",
       "contentType": "troubleshooting",
@@ -76,7 +76,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-02",
         "datePublished": "2026-06-02",
@@ -106,7 +106,7 @@
       ]
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-vercel-deploy-preflight-checklist",
       "category": "Codex 新手教程",
       "contentType": "roadmap",
@@ -119,7 +119,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-01",
         "datePublished": "2026-06-01",
@@ -139,7 +139,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 部署 Vercel 前检查什么：上线前清单",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 部署 Vercel 前检查什么：上线前清单",
@@ -149,7 +149,7 @@
       ]
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-vs-claude-code-beginner-checklist",
       "category": "Codex 新手教程",
       "contentType": "comparison",
@@ -162,7 +162,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-01",
         "datePublished": "2026-06-01",
@@ -182,7 +182,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 和 Claude Code 怎么选：新手对比清单",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 和 Claude Code 怎么选：新手对比清单",
@@ -192,7 +192,7 @@
       ]
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/first-upwork-project-pricing-checklist",
       "category": "报价指南",
       "contentType": "pricing-guide",
@@ -205,7 +205,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-02",
         "datePublished": "2026-06-02",
@@ -226,7 +226,7 @@
         "Upwork",
         "报价",
         "自由职业",
-        "新手接单"
+        "新手项目练习"
       ],
       "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
       "updatedAt": "2026-06-02",
@@ -235,7 +235,7 @@
       ]
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/payoneer-wise-paypal-beginner-comparison",
       "category": "收款工具",
       "contentType": "comparison",
@@ -248,12 +248,12 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-02",
         "datePublished": "2026-06-02",
         "description": "Payoneer、Wise、PayPal 都可能用于跨境收款，但适用场景、费用、平台支持和账户风险不同。本文用新手能理解的方式说明差异，并提醒先遵守平台内收款规则。",
-        "headline": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+        "headline": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -271,14 +271,14 @@
         "PayPal",
         "跨境收款"
       ],
-      "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+      "title": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
       "updatedAt": "2026-06-02",
       "warnings": [
         "contentType is uncommon: comparison"
       ]
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/vercel-env-variable-missing-beginner-guide",
       "category": "部署教程",
       "contentType": "troubleshooting",
@@ -291,7 +291,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-02",
         "datePublished": "2026-06-02",
@@ -323,7 +323,7 @@
   ],
   "publicItems": [
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/build-first-webpage-with-codex",
       "category": "Codex 新手教程",
       "contentType": "tutorial",
@@ -336,7 +336,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-01",
         "datePublished": "2026-06-01",
@@ -356,7 +356,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 怎么做第一个网页",
-        "AI 接单",
+        "AI 工具教程",
         "新手教程"
       ],
       "title": "Codex 怎么做第一个网页",
@@ -364,7 +364,7 @@
       "warnings": []
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-code-review-delivery-checklist",
       "category": "Codex 新手教程",
       "contentType": "tutorial",
@@ -377,7 +377,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-01",
         "datePublished": "2026-06-01",
@@ -397,7 +397,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 生成代码后怎么审核：交付前检查清单",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 生成代码后怎么审核：交付前检查清单",
@@ -405,7 +405,7 @@
       "warnings": []
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-generated-code-review-guide",
       "category": "Codex 新手教程",
       "contentType": "checklist",
@@ -418,7 +418,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-01",
         "datePublished": "2026-06-01",
@@ -438,7 +438,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 生成代码后怎么审核",
-        "AI 接单",
+        "AI 工具教程",
         "新手教程"
       ],
       "title": "Codex 生成代码后怎么审核",
@@ -446,7 +446,7 @@
       "warnings": []
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-github-before-commit-checklist",
       "category": "Codex 新手教程",
       "contentType": "pricing-guide",
@@ -459,7 +459,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-01",
         "datePublished": "2026-06-01",
@@ -479,7 +479,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 和 GitHub 怎么配合：提交代码前检查",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
@@ -489,7 +489,7 @@
       ]
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-install-failed-beginner-fix",
       "category": "Codex 新手教程",
       "contentType": "checklist",
@@ -502,7 +502,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-01",
         "datePublished": "2026-06-01",
@@ -522,7 +522,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 安装失败怎么办",
-        "AI 接单",
+        "AI 工具教程",
         "新手教程"
       ],
       "title": "Codex 安装失败怎么办",
@@ -530,7 +530,7 @@
       "warnings": []
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-npm-install-error-beginner-fix",
       "category": "报错解决",
       "contentType": "troubleshooting",
@@ -543,7 +543,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-02",
         "datePublished": "2026-06-02",
@@ -573,7 +573,7 @@
       ]
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-upwork-small-job-risk-checklist",
       "category": "Codex 新手教程",
       "contentType": "checklist",
@@ -586,7 +586,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-01",
         "datePublished": "2026-06-01",
@@ -606,7 +606,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 接 Upwork 小单怎么判断：风险检查清单",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
@@ -614,7 +614,7 @@
       "warnings": []
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-vercel-deploy-preflight-checklist",
       "category": "Codex 新手教程",
       "contentType": "roadmap",
@@ -627,7 +627,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-01",
         "datePublished": "2026-06-01",
@@ -647,7 +647,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 部署 Vercel 前检查什么：上线前清单",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 部署 Vercel 前检查什么：上线前清单",
@@ -657,7 +657,7 @@
       ]
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-vs-claude-code-beginner-checklist",
       "category": "Codex 新手教程",
       "contentType": "comparison",
@@ -670,7 +670,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-01",
         "datePublished": "2026-06-01",
@@ -690,7 +690,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 和 Claude Code 怎么选：新手对比清单",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 和 Claude Code 怎么选：新手对比清单",
@@ -700,7 +700,7 @@
       ]
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/first-upwork-project-pricing-checklist",
       "category": "报价指南",
       "contentType": "pricing-guide",
@@ -713,7 +713,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-02",
         "datePublished": "2026-06-02",
@@ -734,7 +734,7 @@
         "Upwork",
         "报价",
         "自由职业",
-        "新手接单"
+        "新手项目练习"
       ],
       "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
       "updatedAt": "2026-06-02",
@@ -743,7 +743,7 @@
       ]
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/payoneer-wise-paypal-beginner-comparison",
       "category": "收款工具",
       "contentType": "comparison",
@@ -756,12 +756,12 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-02",
         "datePublished": "2026-06-02",
         "description": "Payoneer、Wise、PayPal 都可能用于跨境收款，但适用场景、费用、平台支持和账户风险不同。本文用新手能理解的方式说明差异，并提醒先遵守平台内收款规则。",
-        "headline": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+        "headline": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -779,14 +779,14 @@
         "PayPal",
         "跨境收款"
       ],
-      "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+      "title": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
       "updatedAt": "2026-06-02",
       "warnings": [
         "contentType is uncommon: comparison"
       ]
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/upwork-client-requirements-analysis-beginner",
       "category": "Upwork 新手",
       "contentType": "checklist",
@@ -799,7 +799,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-02",
         "datePublished": "2026-06-02",
@@ -827,7 +827,7 @@
       "warnings": []
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/upwork-proposal-no-reply-checklist",
       "category": "Upwork 新手",
       "contentType": "checklist",
@@ -840,7 +840,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-02",
         "datePublished": "2026-06-02",
@@ -860,7 +860,7 @@
       "tags": [
         "Upwork",
         "Proposal",
-        "新手接单",
+        "新手项目练习",
         "自由职业"
       ],
       "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
@@ -868,7 +868,7 @@
       "warnings": []
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/vercel-env-variable-missing-beginner-guide",
       "category": "部署教程",
       "contentType": "troubleshooting",
@@ -881,7 +881,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-02",
         "datePublished": "2026-06-02",
@@ -911,7 +911,7 @@
       ]
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/what-is-codex-beginner-start",
       "category": "Codex 新手教程",
       "contentType": "tutorial",
@@ -924,7 +924,7 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
         "dateModified": "2026-06-01",
         "datePublished": "2026-06-01",
@@ -944,7 +944,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 是什么新手怎么开始",
-        "AI 接单",
+        "AI 工具教程",
         "新手教程"
       ],
       "title": "Codex 是什么新手怎么开始",
@@ -954,7 +954,7 @@
   ],
   "recommendedItems": [
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-agent-deployment-vercel-ai-sdk-guide",
       "category": "AI Agent",
       "contentType": "tutorial",
@@ -967,9 +967,9 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
-        "dateModified": "2026-06-06",
+        "dateModified": "2026-06-12",
         "datePublished": "2026-06-06",
         "description": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
         "headline": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
@@ -993,11 +993,11 @@
         "AI 部署"
       ],
       "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "updatedAt": "2026-06-06",
+      "updatedAt": "2026-06-12",
       "warnings": []
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-model-selection-customer-service-guide",
       "category": "AI 部署",
       "contentType": "tutorial",
@@ -1010,9 +1010,9 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
-        "dateModified": "2026-06-06",
+        "dateModified": "2026-06-12",
         "datePublished": "2026-06-06",
         "description": "整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。",
         "headline": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
@@ -1036,11 +1036,11 @@
         "AI Agent"
       ],
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-      "updatedAt": "2026-06-06",
+      "updatedAt": "2026-06-12",
       "warnings": []
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/industry-ai-prompts-template-library-2026",
       "category": "AI 提示词",
       "contentType": "tutorial",
@@ -1053,9 +1053,9 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
-        "dateModified": "2026-06-06",
+        "dateModified": "2026-06-12",
         "datePublished": "2026-06-06",
         "description": "整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。",
         "headline": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
@@ -1079,13 +1079,13 @@
         "SOP"
       ],
       "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-      "updatedAt": "2026-06-06",
+      "updatedAt": "2026-06-12",
       "warnings": []
     }
   ],
   "waveItems": [
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-agent-deployment-vercel-ai-sdk-guide",
       "category": "AI Agent",
       "contentType": "tutorial",
@@ -1098,9 +1098,9 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
-        "dateModified": "2026-06-06",
+        "dateModified": "2026-06-12",
         "datePublished": "2026-06-06",
         "description": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
         "headline": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
@@ -1124,11 +1124,11 @@
         "AI 部署"
       ],
       "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "updatedAt": "2026-06-06",
+      "updatedAt": "2026-06-12",
       "warnings": []
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-model-selection-customer-service-guide",
       "category": "AI 部署",
       "contentType": "tutorial",
@@ -1141,9 +1141,9 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
-        "dateModified": "2026-06-06",
+        "dateModified": "2026-06-12",
         "datePublished": "2026-06-06",
         "description": "整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。",
         "headline": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
@@ -1167,11 +1167,11 @@
         "AI Agent"
       ],
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-      "updatedAt": "2026-06-06",
+      "updatedAt": "2026-06-12",
       "warnings": []
     },
     {
-      "author": "AI 接单实验室",
+      "author": "AI 工具指南",
       "canonical": "https://ai-jiedan-lab.vercel.app/blog/industry-ai-prompts-template-library-2026",
       "category": "AI 提示词",
       "contentType": "tutorial",
@@ -1184,9 +1184,9 @@
         "@type": "Article",
         "author": {
           "@type": "Organization",
-          "name": "AI 接单实验室"
+          "name": "AI 工具指南"
         },
-        "dateModified": "2026-06-06",
+        "dateModified": "2026-06-12",
         "datePublished": "2026-06-06",
         "description": "整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。",
         "headline": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
@@ -1210,7 +1210,7 @@
         "SOP"
       ],
       "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-      "updatedAt": "2026-06-06",
+      "updatedAt": "2026-06-12",
       "warnings": []
     }
   ]

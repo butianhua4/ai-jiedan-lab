@@ -9,8 +9,8 @@ tags:
   - "Codex"
   - "npm install"
   - "报错排查"
-  - "AI 接单"
-author: "AI 接单实验室"
+  - "AI 工具实践"
+author: "AI 工具指南"
 status: "draft"
 contentType: "tutorial"
 difficulty: "beginner"
@@ -21,7 +21,7 @@ secondaryKeywords:
   - "npm install 报错"
   - "Codex 报错排查"
   - "Node 依赖安装"
-  - "AI 接单"
+  - "AI 工具实践"
 sourceNotes: "人工重写草稿；发布前仍需人工复核真实案例、工具功能变化、平台规则和安全边界。"
 humanReviewRequired: true
 reviewChecklist:
@@ -49,7 +49,7 @@ noindex: true
 
 `npm install` 失败是新手最常见的前端卡点之一。它可能来自 Node 版本、包管理器、lockfile、网络、权限、原生依赖、项目目录或私有包授权。Codex 能帮助你解释日志、列出可能原因、生成下一步验证命令，但不能替你跳过人工判断。排查 npm 报错的核心不是“多试几条命令”，而是少改变量、保留证据、逐步缩小范围。
 
-这篇文章适合自己的练习项目，也适合接单前做初步诊断。若你还没检查本地环境，先读 [安装 Codex 前要准备什么](/blog/codex-install-prerequisites)；若只想逐项确认，可以看 [npm install 报错检查清单](/blog/codex-npm-install-errors-checklist)。
+这篇文章适合自己的练习项目，也适合项目前做初步诊断。若你还没检查本地环境，先读 [安装 Codex 前要准备什么](/blog/codex-install-prerequisites)；若只想逐项确认，可以看 [npm install 报错检查清单](/blog/codex-npm-install-errors-checklist)。
 
 ## 适合谁
 
@@ -67,7 +67,7 @@ noindex: true
 
 npm install 报错排查最大的风险是“越修越多”。你删除 `node_modules`、删除 lockfile、切换镜像、升级 Node、升级依赖，每一步都可能改变项目状态。如果没有记录，后面很难说明到底是哪一步导致新问题。
 
-接单场景还要特别注意私有包和账号权限。遇到需要登录 npm registry、访问私有仓库、配置 token、使用客户 VPN 或代理的情况，应先让客户确认授权和操作方式，不要用自己的账号替代。
+项目场景还要特别注意私有包和账号权限。遇到需要登录 npm registry、访问私有仓库、配置 token、使用客户 VPN 或代理的情况，应先让客户确认授权和操作方式，不要用自己的账号替代。
 
 ## 具体步骤
 
@@ -113,7 +113,7 @@ npm install 报错排查最大的风险是“越修越多”。你删除 `node_m
 
 自己的练习项目可以大胆一些，但也要保留边界。你可以尝试不同 Node 版本、记录安装结果、比较 lockfile 是否变化，再把过程整理成作品集中的排查案例。相关案例素材可以参考 [作品集素材准备](/blog/codex-portfolio-page-assets)。
 
-复盘时不要只写最后成功的命令，也要写失败路径。接单能力的一部分，就是能从失败里提炼判断：哪些是低风险验证，哪些需要客户确认，哪些超出了当前能力。
+复盘时不要只写最后成功的命令，也要写失败路径。项目判断能力的一部分，就是能从失败里提炼判断：哪些是低风险验证，哪些需要客户确认，哪些超出了当前能力。
 
 ## CTA：下一步
 

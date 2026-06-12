@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:00.157Z",
+  "generatedAt": "2026-06-12T14:37:17.417Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "searchSnippetAuditGeneratedAt": "2026-06-12T06:12:59.072Z",
+    "searchSnippetAuditGeneratedAt": "2026-06-12T14:34:02.371Z",
     "searchSnippetSummary": {
       "blockingItems": 0,
       "expansionItems": 19,
@@ -20,7 +20,7 @@
       "waveItems": 3,
       "waveItemsWithBlockingIssues": 0
     },
-    "structuredDataAuditGeneratedAt": "2026-06-12T06:12:59.687Z",
+    "structuredDataAuditGeneratedAt": "2026-06-12T14:34:02.329Z",
     "structuredDataSummary": {
       "blockingItems": 0,
       "expansionItems": 19,
@@ -241,7 +241,7 @@
       ],
       "status": "published",
       "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
-      "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+      "title": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
       "unsafeReasons": []
     },
     {

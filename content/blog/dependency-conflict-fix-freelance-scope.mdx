@@ -1,27 +1,27 @@
 ---
-title: "dependency conflict 依赖冲突接单前怎么判断能不能做"
+title: "dependency conflict 依赖冲突使用前怎么判断是否适合"
 slug: "dependency-conflict-fix-freelance-scope"
-description: "用接单视角判断依赖冲突任务能不能接：看日志、仓库权限、锁文件、验证命令、客户授权、生产风险和交付边界，先诊断再承诺修复。"
+description: "用项目视角判断依赖冲突任务能不能接：看日志、仓库权限、锁文件、验证命令、客户授权、生产风险和交付边界，先诊断再承诺修复。"
 date: "2026-06-03"
 updatedAt: "2026-06-03"
 category: "报错解决"
 tags:
   - "报错解决"
   - "依赖冲突"
-  - "AI 接单"
+  - "AI 工具实践"
   - "项目诊断"
-author: "AI 接单实验室"
+author: "AI 工具指南"
 status: "draft"
 contentType: "case-study"
 difficulty: "beginner"
 targetReader: "想承接 npm、yarn、pnpm 依赖冲突排查小单的新手。"
 searchIntent: "commercial"
-primaryKeyword: "dependency conflict 依赖冲突接单前怎么判断能不能做"
+primaryKeyword: "dependency conflict 依赖冲突使用前怎么判断是否适合"
 secondaryKeywords:
-  - "依赖冲突接单"
-  - "npm 报错接单"
+  - "依赖冲突项目"
+  - "npm 报错项目"
   - "项目跑不起来"
-  - "AI 接单"
+  - "AI 工具实践"
 sourceNotes: "人工重写草稿；公开前仍需人工复核 npm、yarn、pnpm 版本差异、项目真实日志、官方文档和客户授权边界。"
 humanReviewRequired: true
 reviewChecklist:
@@ -45,7 +45,7 @@ canonical: "https://ai-jiedan-lab.vercel.app/blog/dependency-conflict-fix-freela
 noindex: true
 ---
 
-# dependency conflict 依赖冲突接单前怎么判断能不能做
+# dependency conflict 依赖冲突使用前怎么判断是否适合
 
 依赖冲突排查可以做成小型技术服务，但新手不能直接承诺“我一定修好”。客户说项目 `npm install` 失败，背后可能只是一个 peer dependency 冲突，也可能是老项目、私有包源、公司代理、Node 版本、锁文件损坏、CI 配置或生产部署问题。
 
@@ -65,7 +65,7 @@ noindex: true
 
 ## 风险提醒
 
-依赖冲突的接单风险是“看起来小，影响面大”。你改一个包版本，可能影响构建、组件、样式、服务端渲染、测试和部署。客户验收时看的不是安装命令，而是项目是否仍然正常工作。
+依赖冲突的项目风险是“看起来小，影响面大”。你改一个包版本，可能影响构建、组件、样式、服务端渲染、测试和部署。客户验收时看的不是安装命令，而是项目是否仍然正常工作。
 
 另一个风险是账号和数据边界。需要登录客户仓库、私有 registry、部署平台或包管理服务时，先写成待确认事项。不要让客户直接把账号密码或 token 发给你，也不要用自己的账号替客户长期维护。
 
@@ -130,4 +130,4 @@ noindex: true
 
 ## 免责声明
 
-本文是学习和接单边界整理，不构成法律、财务、安全或职业承诺。依赖版本、包管理器行为和项目约束会变化，实际修复必须结合项目文档、真实日志、测试结果和客户授权判断。
+本文是学习和项目边界整理，不构成法律、财务、安全或职业承诺。依赖版本、包管理器行为和项目约束会变化，实际修复必须结合项目文档、真实日志、测试结果和客户授权判断。

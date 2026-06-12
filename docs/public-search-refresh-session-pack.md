@@ -1,6 +1,6 @@
 # Public Search Refresh Session Pack
 
-Generated at: 2026-06-12T06:13:26.951Z
+Generated at: 2026-06-12T14:37:25.123Z
 
 This report is read-only. It turns public refresh waves into manual SEO refresh sessions without editing public pages or claiming traffic.
 
@@ -219,7 +219,7 @@ Top actions:
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
 | 165 | 11 | 102 | seo-warning, cannibalization, freshness-high, high-priority | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx |
-| 160 | 11 | 82 | seo-warning, short-description, freshness-high, high-priority | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
+| 160 | 11 | 82 | seo-warning, short-description, freshness-high, high-priority | Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
 | 160 | 11 | 80 | seo-warning, short-description, freshness-high, high-priority | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
 
 Top actions:
@@ -235,7 +235,7 @@ Top actions:
 - Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
 - Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.
 
-#### Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看
+#### Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.

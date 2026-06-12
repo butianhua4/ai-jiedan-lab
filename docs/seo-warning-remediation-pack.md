@@ -1,6 +1,6 @@
 # SEO Warning Remediation Pack
 
-Generated at: 2026-06-12T06:13:00.157Z
+Generated at: 2026-06-12T14:37:17.417Z
 
 This pack is read-only. It turns search snippet and structured-data warnings into human-review actions without editing articles, marking review, publishing, or claiming traffic.
 
@@ -24,7 +24,7 @@ This pack is read-only. It turns search snippet and structured-data warnings int
 | 86 | true | draft | expansion, recommended, wave-1 | 2 | 0 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 63 | true | published | public | 1 | 1 | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx |
 | 63 | true | published | public | 1 | 1 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
-| 63 | true | published | public | 1 | 1 | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
+| 63 | true | published | public | 1 | 1 | Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
 | 63 | true | published | public | 1 | 1 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | content/blog/vercel-env-variable-missing-beginner-guide.mdx |
 | 58 | true | published | public | 1 | 0 | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
 | 55 | true | published | public | 0 | 1 | Codex 和 GitHub 怎么配合：提交代码前检查 | content/blog/codex-github-before-commit-checklist.mdx |
@@ -154,7 +154,7 @@ Human checklist:
 - For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.
 - Do not mark review or publish from this remediation pack.
 
-### Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看
+### Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看
 
 - File: content/blog/payoneer-wise-paypal-beginner-comparison.mdx
 - Status: published

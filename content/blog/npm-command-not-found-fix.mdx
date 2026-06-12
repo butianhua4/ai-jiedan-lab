@@ -1,7 +1,7 @@
 ---
 title: "npm command not found 怎么解决"
 slug: "npm-command-not-found-fix"
-description: "新手遇到 npm command not found 时，先确认 Node.js 是否安装、npm 是否随 Node 可用、终端 PATH 是否刷新、项目是否要求 pnpm 或 yarn。本文给出本地排查步骤和接单边界。"
+description: "新手遇到 npm command not found 时，先确认 Node.js 是否安装、npm 是否随 Node 可用、终端 PATH 是否刷新、项目是否要求 pnpm 或 yarn。本文给出本地排查步骤和项目边界。"
 date: "2026-06-03"
 updatedAt: "2026-06-03"
 category: "报错解决"
@@ -9,8 +9,8 @@ tags:
   - "报错解决"
   - "npm"
   - "Node.js"
-  - "AI 接单"
-author: "AI 接单实验室"
+  - "AI 工具实践"
+author: "AI 工具指南"
 status: "draft"
 contentType: "tutorial"
 difficulty: "beginner"
@@ -55,7 +55,7 @@ noindex: true
 
 适合刚开始学习 Node.js、Next.js、React、Vite 或 AI 辅助改网页的新手。你可能只是运行 `npm install` 或 `npm run build` 时看到报错，不确定是电脑问题还是项目问题。
 
-也适合接单前做初步诊断的人。客户发来一张报错截图时，你可以先判断这是本地环境问题、远程 CI 问题，还是项目包管理器不一致。
+也适合项目前做初步诊断的人。客户发来一张报错截图时，你可以先判断这是本地环境问题、远程 CI 问题，还是项目包管理器不一致。
 
 ## 不适合谁
 
@@ -86,7 +86,7 @@ npm -v
 
 第四步，确认项目要求。看 `package.json`、README、锁文件。如果项目有 `pnpm-lock.yaml`，可能应该用 pnpm；有 `yarn.lock`，可能应该用 yarn。不要只因为教程写 npm 就强行使用 npm。
 
-第五步，记录结果。把每条命令和输出写下来。接单时，能给客户一份清楚的诊断记录，比只说“环境不对”更有价值。
+第五步，记录结果。把每条命令和输出写下来。做项目时，能给客户一份清楚的诊断记录，比只说“环境不对”更有价值。
 
 ## Windows 怎么查
 
@@ -143,7 +143,7 @@ which npm
 
 ## CTA：下一步
 
-先把 `node -v`、`npm -v`、终端类型和项目锁文件记录下来。需要拆报错可以用 [报错解释器](/tools/error-explainer)，需要估算接单范围可以用 [项目报价助手](/tools/pricing-calculator)。
+先把 `node -v`、`npm -v`、终端类型和项目锁文件记录下来。需要拆报错可以用 [报错解释器](/tools/error-explainer)，需要估算项目范围可以用 [项目报价助手](/tools/pricing-calculator)。
 
 ## 免责声明
 

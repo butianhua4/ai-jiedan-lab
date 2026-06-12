@@ -1,27 +1,27 @@
 ---
-title: "module not found 接单前怎么判断能不能做"
+title: "module not found 使用前怎么判断是否适合"
 slug: "module-not-found-debug-freelance-scope"
-description: "从接单角度判断 module not found 是否适合新手处理：区分本地路径错误、依赖缺失、路径别名、私有包权限、客户漏文件和构建环境差异。"
+description: "从项目角度判断 module not found 是否适合新手处理：区分本地路径错误、依赖缺失、路径别名、私有包权限、客户漏文件和构建环境差异。"
 date: "2026-06-03"
 updatedAt: "2026-06-03"
 category: "报错解决"
 tags:
   - "报错解决"
   - "module not found"
-  - "接单边界"
-  - "AI 接单"
-author: "AI 接单实验室"
+  - "项目边界"
+  - "AI 工具实践"
+author: "AI 工具指南"
 status: "draft"
 contentType: "freelance-scope"
 difficulty: "beginner"
 targetReader: "准备接模块找不到排查小单、需要判断范围和客户授权边界的新手"
 searchIntent: "commercial"
-primaryKeyword: "module not found 接单前怎么判断能不能做"
+primaryKeyword: "module not found 使用前怎么判断是否适合"
 secondaryKeywords:
   - "模块找不到"
-  - "前端接单"
+  - "前端项目"
   - "依赖安装"
-  - "AI 接单"
+  - "AI 工具实践"
 sourceNotes: "人工重写版本；公开前仍需人工复核框架差异、私有包授权、客户仓库权限和报价建议。"
 humanReviewRequired: true
 reviewChecklist:
@@ -45,11 +45,11 @@ canonical: "https://ai-jiedan-lab.vercel.app/blog/module-not-found-debug-freelan
 noindex: true
 ---
 
-# module not found 接单前怎么判断能不能做
+# module not found 使用前怎么判断是否适合
 
-`module not found` 很适合做新手报错排查练习，但不是所有情况都适合直接接单。它可能只是路径大小写错误，也可能是客户仓库缺文件、私有包没有权限、构建环境和本地不一致。
+`module not found` 很适合做新手报错排查练习，但不是所有情况都适合直接项目。它可能只是路径大小写错误，也可能是客户仓库缺文件、私有包没有权限、构建环境和本地不一致。
 
-如果你只想学习排查顺序，可以先看 [module not found 报错怎么定位文件](/blog/module-not-found-debug)。这一篇重点讲接单前怎么判断范围和风险。
+如果你只想学习排查顺序，可以先看 [module not found 报错怎么定位文件](/blog/module-not-found-debug)。这一篇重点讲项目前怎么判断范围和风险。
 
 ## 适合谁
 
@@ -65,13 +65,13 @@ noindex: true
 
 ## 风险提醒
 
-接单时要防止把客户材料缺失当成自己的修复任务。比如客户没有提交某个组件、没有授权私有包、没有提供子模块或内部 registry 权限，这些需要客户补齐。
+做项目时要防止把客户材料缺失当成自己的修复任务。比如客户没有提交某个组件、没有授权私有包、没有提供子模块或内部 registry 权限，这些需要客户补齐。
 
 不要要求客户把私有包 token、仓库密码或内部源码发到聊天里。授权应该通过平台和仓库权限完成。
 
 ## 具体步骤
 
-### 1. 接单前要材料
+### 1. 项目前要材料
 
 至少要客户提供：
 
@@ -131,12 +131,12 @@ Fix:
 
 交付边界可以写成：本次先定位缺失模块和原因类型，普通路径或公开依赖问题可继续修复；私有包、客户漏文件、内部 registry、仓库权限问题需要客户确认后再继续。
 
-这样写不会显得退缩，反而能让客户知道你在保护项目材料和访问权限。新手接单时，清楚边界比盲目承诺更可靠。
+这样写不会显得退缩，反而能让客户知道你在保护项目材料和访问权限。新手项目练习时，清楚边界比盲目承诺更可靠。
 
 ## CTA：下一步
 
-接单前先用 [项目报价助手](/tools/pricing-calculator) 拆诊断和修复范围，再用 [模板库](/templates) 写客户确认问题。具体报错可以用 [报错解释器](/tools/error-explainer) 拆解。
+项目前先用 [项目报价助手](/tools/pricing-calculator) 拆诊断和修复范围，再用 [模板库](/templates) 写客户确认问题。具体报错可以用 [报错解释器](/tools/error-explainer) 拆解。
 
 ## 免责声明
 
-本文是学习和接单范围判断，不构成法律、安全或职业承诺。真实客户项目需要结合仓库权限、依赖来源、私有包授权、构建环境和人工复核判断。
+本文是学习和项目范围判断，不构成法律、安全或职业承诺。真实客户项目需要结合仓库权限、依赖来源、私有包授权、构建环境和人工复核判断。

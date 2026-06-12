@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:23.195Z",
+  "generatedAt": "2026-06-12T14:36:26.034Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This is a warning report for manual review. It does not change article status or block drafts by itself."
@@ -55,20 +55,20 @@
     },
     {
       "files": [
-        "content/blog/build-first-webpage-with-codex.mdx",
-        "content/blog/codex-codex-4-34.mdx"
+        "content/blog/codex-codex-4-38.mdx",
+        "content/blog/codex-generated-code-review-guide.mdx"
       ],
-      "groupKey": "codex 怎么做第一个网页",
+      "groupKey": "codex 生成代码后怎么审核",
       "publishedCount": 1,
       "reason": "same primary keyword",
       "reviewBatchOverlap": [],
       "statuses": {
-        "published": 1,
-        "draft": 1
+        "draft": 1,
+        "published": 1
       },
       "titles": [
-        "Codex 怎么做第一个网页",
-        "Codex 怎么做第一个网页：新手练习流程"
+        "Codex 生成代码后怎么审核",
+        "Codex 生成代码后怎么审核：新手检查清单"
       ]
     },
     {
@@ -91,20 +91,20 @@
     },
     {
       "files": [
-        "content/blog/codex-codex-4-38.mdx",
-        "content/blog/codex-generated-code-review-guide.mdx"
+        "content/blog/build-first-webpage-with-codex.mdx",
+        "content/blog/codex-codex-4-34.mdx"
       ],
-      "groupKey": "codex 生成代码后怎么审核",
+      "groupKey": "codex 怎么做第一个网页",
       "publishedCount": 1,
       "reason": "same primary keyword",
       "reviewBatchOverlap": [],
       "statuses": {
-        "draft": 1,
-        "published": 1
+        "published": 1,
+        "draft": 1
       },
       "titles": [
-        "Codex 生成代码后怎么审核",
-        "Codex 生成代码后怎么审核：新手检查清单"
+        "Codex 怎么做第一个网页",
+        "Codex 怎么做第一个网页：新手练习流程"
       ]
     },
     {
@@ -178,8 +178,8 @@
       "titles": [
         "Claude Code 自动化为什么必须有人审",
         "Claude Code 自动化人工审核检查清单",
-        "Claude Code 自动化接单前怎么判断能不能做",
-        "Claude Code 自动化最容易忽略的人工审核错误"
+        "Claude Code 自动化最容易忽略的人工审核错误",
+        "Claude Code 自动化项目前怎么判断能不能做"
       ]
     },
     {
@@ -198,9 +198,9 @@
       },
       "titles": [
         "Claude Code 新手使用场景检查清单",
-        "Claude Code 新手接单前怎么判断使用场景",
-        "Claude Code 新手适合用在哪些接单场景",
-        "Claude Code 新手选使用场景时的常见错误"
+        "Claude Code 新手适合用在哪些项目场景",
+        "Claude Code 新手选使用场景时的常见错误",
+        "Claude Code 新手项目练习前怎么判断使用场景"
       ]
     },
     {
@@ -219,8 +219,8 @@
       },
       "titles": [
         "Claude Code 和 Codex 哪个适合网页修改",
+        "Claude Code 和 Codex 网页修改使用前怎么判断是否适合",
         "Claude Code 和 Codex 网页修改常见错误",
-        "Claude Code 和 Codex 网页修改接单前怎么判断能不能做",
         "Claude Code 和 Codex 网页修改新手检查清单"
       ]
     },
@@ -240,7 +240,7 @@
       },
       "titles": [
         "Claude Code GitHub 文件范围检查清单",
-        "Claude Code 看 GitHub 文件哪些适合写进接单范围",
+        "Claude Code 看 GitHub 文件哪些适合写进项目范围",
         "Claude Code 看 GitHub 文件时的常见范围错误",
         "客户给 GitHub 文件时用 Claude Code 怎么限定范围"
       ]
@@ -260,9 +260,9 @@
         "draft": 4
       },
       "titles": [
-        "Claude Code 低风险小单哪些适合写进接单范围",
-        "Claude Code 低风险接单常见错误",
-        "Claude Code 低风险接单检查清单",
+        "Claude Code 低风险小单哪些适合写进项目范围",
+        "Claude Code 低风险项目常见错误",
+        "Claude Code 低风险项目检查清单",
         "Claude Code 新手适合先接哪些低风险小单"
       ]
     },
@@ -282,7 +282,7 @@
       },
       "titles": [
         "Claude Code Next.js 页面检查清单",
-        "Claude Code 检查 Next.js 页面哪些适合写进接单范围",
+        "Claude Code 检查 Next.js 页面哪些适合写进项目范围",
         "Claude Code 检查 Next.js 页面时的常见错误",
         "用 Claude Code 检查 Next.js 页面小问题怎么做"
       ]
@@ -302,10 +302,10 @@
         "draft": 4
       },
       "titles": [
-        "Claude Code 小项目任务哪些适合写进接单范围",
+        "Claude Code 小项目任务哪些适合写进项目范围",
         "Claude Code 小项目任务检查清单",
-        "Claude Code 小项目接单常见错误",
-        "哪些小项目任务适合用 Claude Code 辅助接单"
+        "Claude Code 小项目常见错误",
+        "哪些小项目任务适合用 Claude Code 辅助项目"
       ]
     },
     {
@@ -323,7 +323,7 @@
         "draft": 4
       },
       "titles": [
-        "Codex 自动化开发接单前怎么判断能不能做",
+        "Codex 自动化开发使用前怎么判断是否适合",
         "Codex 自动化开发流程哪些步骤不能省",
         "Codex 自动化开发流程常见错误",
         "Codex 自动化开发流程新手检查清单"
@@ -348,7 +348,7 @@
         "Codex 修 CSS bug 的流程",
         "Codex 修 CSS bug 的流程：场景 2",
         "Codex 修 CSS bug 的流程：场景 3",
-        "Codex 修 CSS bug 的流程：新手接单边界"
+        "Codex 修 CSS bug 的流程：新手项目练习边界"
       ]
     },
     {
@@ -390,7 +390,7 @@
       "titles": [
         "小网站交付前检查清单",
         "小网站交付检查常见错误和修复顺序",
-        "小网站交付检查接单能不能接",
+        "小网站交付检查项目能不能接",
         "用 Codex 做小网站交付前检查"
       ]
     },
@@ -430,9 +430,9 @@
         "draft": 4
       },
       "titles": [
+        "ESLint error 使用前怎么判断是否适合",
         "ESLint error 处理检查清单",
         "ESLint error 常见错误和解决步骤",
-        "ESLint error 接单前怎么判断能不能做",
         "ESLint error 要不要直接关闭"
       ]
     },
@@ -451,10 +451,10 @@
         "draft": 4
       },
       "titles": [
+        "failed to push some refs 使用前怎么判断是否适合",
         "failed to push some refs 常见错误和解决步骤",
         "failed to push some refs 怎么排查",
-        "failed to push some refs 排查检查清单",
-        "failed to push some refs 接单前怎么判断能不能做"
+        "failed to push some refs 排查检查清单"
       ]
     },
     {
@@ -472,10 +472,10 @@
         "draft": 4
       },
       "titles": [
+        "failed to push some refs 使用前怎么判断是否适合",
         "failed to push some refs 常见错误和解决步骤",
         "failed to push some refs 怎么排查",
-        "failed to push some refs 排查检查清单",
-        "failed to push some refs 接单前怎么判断能不能做"
+        "failed to push some refs 排查检查清单"
       ]
     },
     {
@@ -493,9 +493,9 @@
         "draft": 4
       },
       "titles": [
+        "GitHub Actions build 失败使用前怎么判断是否适合",
         "GitHub Actions build 失败常见错误和解决步骤",
         "GitHub Actions build 失败怎么看日志",
-        "GitHub Actions build 失败接单前怎么判断能不能做",
         "GitHub Actions build 失败日志检查清单"
       ]
     },
@@ -515,8 +515,8 @@
       },
       "titles": [
         "Next.js hydration error 怎么排查",
+        "Next.js hydration error 怎么排查：使用前怎么判断是否适合",
         "Next.js hydration error 怎么排查：常见错误和解决步骤",
-        "Next.js hydration error 怎么排查：接单前怎么判断能不能做",
         "Next.js hydration error 怎么排查：新手检查清单"
       ]
     },
@@ -535,9 +535,9 @@
         "draft": 4
       },
       "titles": [
+        "npm run dev 能跑但 build 失败使用前怎么判断是否适合",
         "npm run dev 能跑但 build 失败常见错误和解决步骤",
         "npm run dev 能跑但 build 失败怎么办",
-        "npm run dev 能跑但 build 失败接单前怎么判断能不能做",
         "npm run dev 能跑但 build 失败检查清单"
       ]
     },
@@ -556,10 +556,10 @@
         "draft": 4
       },
       "titles": [
+        "npm command not found 使用前怎么判断是否适合",
         "npm command not found 常见错误和修正方法",
         "npm command not found 怎么解决",
-        "npm command not found 排查检查清单",
-        "npm command not found 接单前怎么判断能不能做"
+        "npm command not found 排查检查清单"
       ]
     },
     {
@@ -578,8 +578,8 @@
       },
       "titles": [
         "Windows 路径和权限导致安装失败怎么办",
+        "Windows 路径和权限导致安装失败怎么办：使用前怎么判断是否适合",
         "Windows 路径和权限导致安装失败怎么办：常见错误和解决步骤",
-        "Windows 路径和权限导致安装失败怎么办：接单前怎么判断能不能做",
         "Windows 路径和权限导致安装失败怎么办：新手检查清单"
       ]
     },
@@ -673,7 +673,7 @@
         "draft": 3
       },
       "titles": [
-        "Claude Code 检查 Next.js 页面哪些适合写进接单范围",
+        "Claude Code 检查 Next.js 页面哪些适合写进项目范围",
         "Claude Code 检查 Next.js 页面时的常见错误",
         "用 Claude Code 检查 Next.js 页面小问题怎么做"
       ]
@@ -730,9 +730,9 @@
         "draft": 3
       },
       "titles": [
-        "Claude Code 接单前问客户时的常见错误",
-        "Claude Code 接单客户问题检查清单",
-        "用 Claude Code 接单前要问客户哪些问题"
+        "Claude Code 项目前问客户时的常见错误",
+        "Claude Code 项目客户问题检查清单",
+        "用 Claude Code 项目前要问客户哪些问题"
       ]
     },
     {
@@ -750,7 +750,7 @@
       },
       "titles": [
         "Claude Code 常用命令检查清单",
-        "Claude Code 新手常用命令怎么整理成接单笔记",
+        "Claude Code 新手常用命令怎么整理成项目笔记",
         "Claude Code 新手运行常用命令时的常见错误"
       ]
     },
@@ -770,7 +770,7 @@
       "titles": [
         "Claude Code 交付说明常见错误",
         "Claude Code 交付说明检查清单",
-        "用 Claude Code 接单后交付说明怎么写"
+        "用 Claude Code 项目后交付说明怎么写"
       ]
     },
     {
@@ -827,7 +827,7 @@
       "titles": [
         "Claude Code Proposal 审阅检查清单",
         "Claude Code 审阅 Proposal 时的常见错误",
-        "用 Claude Code 审阅接单 Proposal 时要看什么"
+        "用 Claude Code 审阅项目 Proposal 时要看什么"
       ]
     },
     {
@@ -844,9 +844,9 @@
         "draft": 3
       },
       "titles": [
-        "不会编程开始 AI 接单练习：常见错误和解决步骤",
-        "不会编程开始 AI 接单练习：新手检查清单",
-        "不会编程怎么开始 AI 接单练习"
+        "不会编程开始 AI 项目练习：常见错误和解决步骤",
+        "不会编程开始 AI 项目练习：新手检查清单",
+        "不会编程怎么开始 AI 项目练习"
       ]
     },
     {
@@ -863,9 +863,9 @@
         "draft": 3
       },
       "titles": [
-        "Codex 处理客户项目的密钥安全检查清单",
-        "Codex 接单时如何避免把密钥写进代码",
-        "Codex 接单时常见密钥泄露错误和修复顺序"
+        "Codex 做项目时如何避免把密钥写进代码",
+        "Codex 做项目时常见密钥泄露错误和修复顺序",
+        "Codex 处理客户项目的密钥安全检查清单"
       ]
     },
     {
@@ -1266,9 +1266,9 @@
         "draft": 3
       },
       "titles": [
-        "新手如何记录每天的接单练习",
-        "每天接单练习记录常见错误和解决步骤",
-        "每天接单练习记录检查清单"
+        "新手如何记录每天的项目练习",
+        "每天项目练习记录常见错误和解决步骤",
+        "每天项目练习记录检查清单"
       ]
     },
     {
@@ -1380,9 +1380,9 @@
         "draft": 3
       },
       "titles": [
-        "AI 自动化接单合规风险检查清单",
-        "AI 自动化接单常见合规错误和解决步骤",
-        "AI 自动化接单有哪些合规风险"
+        "AI 自动化项目合规风险检查清单",
+        "AI 自动化项目常见合规错误和解决步骤",
+        "AI 自动化项目有哪些合规风险"
       ]
     },
     {
@@ -1418,9 +1418,9 @@
         "draft": 3
       },
       "titles": [
-        "AI 接单常见误区有哪些",
-        "AI 接单常见误区自查清单",
-        "AI 接单误区的常见错误和解决步骤"
+        "AI 工具实践常见误区有哪些",
+        "AI 工具实践常见误区自查清单",
+        "AI 工具实践误区的常见错误和解决步骤"
       ]
     },
     {
@@ -1437,9 +1437,9 @@
         "draft": 3
       },
       "titles": [
-        "新手 30 天 AI 接单执行检查清单",
-        "新手 30 天 AI 接单计划常见执行错误",
-        "新手 30 天 AI 接单计划怎么执行"
+        "新手 30 天 AI 工具实践执行检查清单",
+        "新手 30 天 AI 工具实践计划常见执行错误",
+        "新手 30 天 AI 工具实践计划怎么执行"
       ]
     },
     {
@@ -1456,9 +1456,9 @@
         "draft": 3
       },
       "titles": [
-        "AI 接单失败复盘常见错误",
-        "AI 接单失败复盘怎么做",
-        "AI 接单失败复盘检查清单"
+        "AI 项目失败复盘常见错误",
+        "AI 项目失败复盘怎么做",
+        "AI 项目失败复盘检查清单"
       ]
     },
     {
@@ -1475,9 +1475,9 @@
         "draft": 3
       },
       "titles": [
-        "AI 接单新手 7 天准备什么",
-        "AI 接单新手 7 天准备常见错误",
-        "AI 接单新手 7 天准备检查清单"
+        "AI 工具新手 7 天准备什么",
+        "AI 工具新手 7 天准备常见错误",
+        "AI 工具新手 7 天准备检查清单"
       ]
     },
     {
@@ -1494,9 +1494,9 @@
         "draft": 3
       },
       "titles": [
-        "AI 接单服务页文案常见错误",
-        "AI 接单服务页文案怎么写真诚",
-        "AI 接单服务页文案检查清单"
+        "AI 服务页文案常见错误",
+        "AI 服务页文案怎么写真诚",
+        "AI 服务页文案检查清单"
       ]
     },
     {
@@ -1513,9 +1513,9 @@
         "draft": 3
       },
       "titles": [
-        "AI 接单技能路线图常见错误",
-        "AI 接单新手技能路线图怎么排",
-        "AI 接单新手技能路线图检查清单"
+        "AI 工具技能路线图常见错误",
+        "AI 工具新手技能路线图怎么排",
+        "AI 工具新手技能路线图检查清单"
       ]
     },
     {

@@ -9,8 +9,8 @@ tags:
   - "报错解决"
   - "Git"
   - "故障排查"
-  - "AI 接单"
-author: "AI 接单实验室"
+  - "AI 工具实践"
+author: "AI 工具指南"
 status: "draft"
 contentType: "troubleshooting"
 difficulty: "beginner"
@@ -21,7 +21,7 @@ secondaryKeywords:
   - "git push 报错"
   - "Git 冲突"
   - "远端分支"
-  - "AI 接单"
+  - "AI 工具实践"
 sourceNotes: "人工重写版本；公开前仍需人工复核 Git 命令、客户仓库权限和冲突处理建议。"
 humanReviewRequired: true
 reviewChecklist:
@@ -67,7 +67,7 @@ noindex: true
 
 错误处理可能让一个小问题变成大问题。比如原本只是远端领先，你却强行覆盖；原本只是没有权限，你却修改了不该改的远端地址；原本应该开 PR，你却试图直接推到受保护分支。
 
-接单时要把“不能直接推送”的原因分清楚。技术问题可以继续排查，授权和流程问题需要客户确认，不能混在一起。
+做项目时要把“不能直接推送”的原因分清楚。技术问题可以继续排查，授权和流程问题需要客户确认，不能混在一起。
 
 ## 具体步骤
 
@@ -104,7 +104,7 @@ git remote -v
 
 如果报错里出现 permission、authentication、protected branch 或 review required，重点不是合并代码，而是确认权限和流程。你可以完成本地提交，但远端推送需要对应授权。
 
-接单时可以把这类问题写成清楚的客户说明：本地修复已完成，当前远端限制直接推送，请确认是否授权功能分支、PR 或其他交付方式。
+做项目时可以把这类问题写成清楚的客户说明：本地修复已完成，当前远端限制直接推送，请确认是否授权功能分支、PR 或其他交付方式。
 
 ### 错误五：没有保存现场
 

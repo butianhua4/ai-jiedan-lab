@@ -1,6 +1,6 @@
 # Public Refresh Sprint Board
 
-Generated at: 2026-06-12T06:13:26.478Z
+Generated at: 2026-06-12T14:37:17.636Z
 
 This report is read-only. It groups public pages into manual SEO refresh waves without editing pages or claiming traffic.
 
@@ -60,7 +60,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 | 3 | true | 200 | 11 | 97 | mojibake-public, freshness-high | not-included | Codex 生成代码后怎么审核：交付前检查清单 | content/blog/codex-code-review-delivery-checklist.mdx |
 | 3 | true | 200 | 11 | 102 | mojibake-public, freshness-high | not-included | Codex 接 Upwork 小单怎么判断：风险检查清单 | content/blog/codex-upwork-small-job-risk-checklist.mdx |
 | 4 | true | 165 | 11 | 102 | seo-warning, cannibalization, freshness-high, high-priority | not-included | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx |
-| 4 | true | 160 | 11 | 82 | seo-warning, short-description, freshness-high, high-priority | not-included | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
+| 4 | true | 160 | 11 | 82 | seo-warning, short-description, freshness-high, high-priority | not-included | Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
 | 4 | true | 160 | 11 | 80 | seo-warning, short-description, freshness-high, high-priority | not-included | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
 | 5 | true | 160 | 11 | 87 | seo-warning, short-description, freshness-high, high-priority | not-included | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | content/blog/vercel-env-variable-missing-beginner-guide.mdx |
 | 5 | true | 145 | 12 | 89 | short-description, cannibalization, freshness-high, high-priority | not-included | Codex 生成代码后怎么审核 | content/blog/codex-generated-code-review-guide.mdx |
@@ -283,7 +283,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 - Apply edits manually only after approval; publish confirm remains excluded.
 
-### Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看
+### Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看
 
 - File: content/blog/payoneer-wise-paypal-beginner-comparison.mdx
 - Wave: 4

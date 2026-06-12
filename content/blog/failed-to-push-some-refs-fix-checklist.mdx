@@ -9,19 +9,19 @@ tags:
   - "报错解决"
   - "Git"
   - "检查清单"
-  - "AI 接单"
-author: "AI 接单实验室"
+  - "AI 工具实践"
+author: "AI 工具指南"
 status: "draft"
 contentType: "checklist"
 difficulty: "beginner"
-targetReader: "需要逐项检查 Git 推送失败原因的新手和接单练习者"
+targetReader: "需要逐项检查 Git 推送失败原因的新手和项目练习者"
 searchIntent: "informational"
 primaryKeyword: "failed to push some refs 排查检查清单"
 secondaryKeywords:
   - "git push 报错"
   - "Git 检查清单"
   - "远端分支"
-  - "AI 接单"
+  - "AI 工具实践"
 sourceNotes: "人工重写版本；公开前仍需人工复核 Git 命令、客户仓库流程和平台权限边界。"
 humanReviewRequired: true
 reviewChecklist:
@@ -53,7 +53,7 @@ noindex: true
 
 适合已经有本地提交，但不知道为什么推不到 GitHub、GitLab 或客户远端仓库的新手。你不需要一次理解所有 Git 原理，但需要按顺序确认当前分支、远端状态和权限边界。
 
-也适合接单前做自检。很多小任务最后都要交付代码，如果你不会描述推送失败原因，客户很难判断是你本地操作问题，还是仓库权限和流程问题。
+也适合项目前做自检。很多小任务最后都要交付代码，如果你不会描述推送失败原因，客户很难判断是你本地操作问题，还是仓库权限和流程问题。
 
 ## 不适合谁
 
@@ -141,7 +141,7 @@ git push -u origin fix-push-error-notes
 
 如果同步远端后出现冲突，不要只写“已解决冲突”。至少记录冲突文件、保留了哪一边逻辑、是否手动合并、合并后运行了什么验证命令。客户项目里，冲突往往代表两个人改了同一块业务逻辑，不能只追求 Git 状态变绿。
 
-处理冲突前可以先创建一个备份分支，例如 `backup-before-rebase`。这不是为了复杂化流程，而是为了在判断出错时能回到原始状态。新手接单时，这一步尤其有价值，因为你需要给客户证明自己没有把远端历史弄乱。
+处理冲突前可以先创建一个备份分支，例如 `backup-before-rebase`。这不是为了复杂化流程，而是为了在判断出错时能回到原始状态。新手项目练习时，这一步尤其有价值，因为你需要给客户证明自己没有把远端历史弄乱。
 
 如果你无法判断冲突内容，就把交付范围改成诊断说明：列出冲突文件、可能影响的功能、需要客户或原作者确认的地方。能清楚停下来，也是一种合格交付。
 

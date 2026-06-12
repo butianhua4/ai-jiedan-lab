@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:25.052Z",
+  "generatedAt": "2026-06-12T14:36:25.973Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status."
@@ -35,7 +35,7 @@
       ],
       "status": "draft",
       "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "updatedAt": "2026-06-06"
+      "updatedAt": "2026-06-12"
     },
     {
       "category": "AI 部署",
@@ -56,7 +56,7 @@
       ],
       "status": "draft",
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-      "updatedAt": "2026-06-06"
+      "updatedAt": "2026-06-12"
     },
     {
       "category": "AI 提示词",
@@ -75,34 +75,10 @@
       ],
       "status": "draft",
       "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-      "updatedAt": "2026-06-06"
+      "updatedAt": "2026-06-12"
     }
   ],
   "plannedReviewItems": [
-    {
-      "category": "AI Agent",
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-      "primaryKeyword": "AI Agent 部署",
-      "reviewContext": [],
-      "riskLevel": "high",
-      "riskReasons": [
-        "fast-changing technical term: api",
-        "fast-changing technical term: agent",
-        "fast-changing technical term: model",
-        "fast-changing technical term: vercel",
-        "fast-changing technical term: 部署",
-        "fast-changing technical term: 模型",
-        "fast-changing technical term: 知识库",
-        "review-sensitive term: 工具",
-        "review-sensitive term: 报价",
-        "review-sensitive term: 客服",
-        "review-sensitive term: 销售",
-        "review-sensitive term: 自动化"
-      ],
-      "status": "draft",
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "updatedAt": "2026-06-06"
-    },
     {
       "category": "AI 记忆",
       "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
@@ -129,7 +105,7 @@
       "updatedAt": "2026-06-06"
     },
     {
-      "category": "接单报价",
+      "category": "项目报价",
       "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
       "primaryKeyword": "AI 自动化项目报价",
       "reviewContext": [],
@@ -154,27 +130,6 @@
       "updatedAt": "2026-06-06"
     },
     {
-      "category": "AI 部署",
-      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-      "primaryKeyword": "客服 AI 模型选型",
-      "reviewContext": [],
-      "riskLevel": "high",
-      "riskReasons": [
-        "fast-changing technical term: model",
-        "fast-changing technical term: rag",
-        "fast-changing technical term: 部署",
-        "fast-changing technical term: 模型",
-        "fast-changing technical term: 知识库",
-        "review-sensitive term: prompt",
-        "review-sensitive term: 提示词",
-        "review-sensitive term: 工具",
-        "review-sensitive term: 客服"
-      ],
-      "status": "draft",
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-      "updatedAt": "2026-06-06"
-    },
-    {
       "category": "AI 提示词",
       "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
       "primaryKeyword": "团队 AI 提示词库",
@@ -190,47 +145,6 @@
       ],
       "status": "draft",
       "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
-      "updatedAt": "2026-06-06"
-    },
-    {
-      "category": "AI 提示词",
-      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
-      "primaryKeyword": "全行业 AI 提示词模板",
-      "reviewContext": [],
-      "riskLevel": "high",
-      "riskReasons": [
-        "fast-changing technical term: 模型",
-        "fast-changing technical term: 知识库",
-        "review-sensitive term: prompt",
-        "review-sensitive term: 提示词",
-        "review-sensitive term: 工具",
-        "review-sensitive term: 报价",
-        "review-sensitive term: 客服"
-      ],
-      "status": "draft",
-      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-      "updatedAt": "2026-06-06"
-    },
-    {
-      "category": "AI 部署",
-      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-      "primaryKeyword": "n8n AI Agent 知识库记忆",
-      "reviewContext": [],
-      "riskLevel": "high",
-      "riskReasons": [
-        "fast-changing technical term: agent",
-        "fast-changing technical term: n8n",
-        "fast-changing technical term: rag",
-        "fast-changing technical term: 部署",
-        "fast-changing technical term: 模型",
-        "fast-changing technical term: 知识库",
-        "review-sensitive term: 工具",
-        "review-sensitive term: 客服",
-        "review-sensitive term: 销售",
-        "review-sensitive term: 自动化"
-      ],
-      "status": "draft",
-      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
       "updatedAt": "2026-06-06"
     },
     {
@@ -256,6 +170,92 @@
       "updatedAt": "2026-06-06"
     },
     {
+      "category": "AI Agent",
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "primaryKeyword": "AI Agent 部署",
+      "reviewContext": [],
+      "riskLevel": "high",
+      "riskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: agent",
+        "fast-changing technical term: model",
+        "fast-changing technical term: vercel",
+        "fast-changing technical term: 部署",
+        "fast-changing technical term: 模型",
+        "fast-changing technical term: 知识库",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 报价",
+        "review-sensitive term: 客服",
+        "review-sensitive term: 销售",
+        "review-sensitive term: 自动化"
+      ],
+      "status": "draft",
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "updatedAt": "2026-06-12"
+    },
+    {
+      "category": "AI 部署",
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "primaryKeyword": "客服 AI 模型选型",
+      "reviewContext": [],
+      "riskLevel": "high",
+      "riskReasons": [
+        "fast-changing technical term: model",
+        "fast-changing technical term: rag",
+        "fast-changing technical term: 部署",
+        "fast-changing technical term: 模型",
+        "fast-changing technical term: 知识库",
+        "review-sensitive term: prompt",
+        "review-sensitive term: 提示词",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 客服"
+      ],
+      "status": "draft",
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "updatedAt": "2026-06-12"
+    },
+    {
+      "category": "AI 提示词",
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "primaryKeyword": "全行业 AI 提示词模板",
+      "reviewContext": [],
+      "riskLevel": "high",
+      "riskReasons": [
+        "fast-changing technical term: 模型",
+        "fast-changing technical term: 知识库",
+        "review-sensitive term: prompt",
+        "review-sensitive term: 提示词",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 报价",
+        "review-sensitive term: 客服"
+      ],
+      "status": "draft",
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "updatedAt": "2026-06-12"
+    },
+    {
+      "category": "AI 部署",
+      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+      "primaryKeyword": "n8n AI Agent 知识库记忆",
+      "reviewContext": [],
+      "riskLevel": "high",
+      "riskReasons": [
+        "fast-changing technical term: agent",
+        "fast-changing technical term: n8n",
+        "fast-changing technical term: rag",
+        "fast-changing technical term: 部署",
+        "fast-changing technical term: 模型",
+        "fast-changing technical term: 知识库",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 客服",
+        "review-sensitive term: 销售",
+        "review-sensitive term: 自动化"
+      ],
+      "status": "draft",
+      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+      "updatedAt": "2026-06-12"
+    },
+    {
       "category": "AI 提示词",
       "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
       "primaryKeyword": "数据分析 AI 提示词",
@@ -269,7 +269,7 @@
       ],
       "status": "draft",
       "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
-      "updatedAt": "2026-06-06"
+      "updatedAt": "2026-06-12"
     }
   ],
   "items": [
@@ -485,7 +485,7 @@
         "review-sensitive term: 报价"
       ],
       "status": "published",
-      "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+      "title": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
       "updatedAt": "2026-06-02"
     },
     {
@@ -759,7 +759,7 @@
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-30-day-execution-checklist.mdx",
-      "primaryKeyword": "新手 30 天 AI 接单执行检查清单",
+      "primaryKeyword": "新手 30 天 AI 工具实践执行检查清单",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -770,13 +770,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "新手 30 天 AI 接单执行检查清单",
+      "title": "新手 30 天 AI 工具实践执行检查清单",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-30-day-execution-mistakes.mdx",
-      "primaryKeyword": "新手 30 天 AI 接单计划常见错误",
+      "primaryKeyword": "新手 30 天 AI 工具实践计划常见错误",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -786,13 +786,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "新手 30 天 AI 接单计划常见执行错误",
+      "title": "新手 30 天 AI 工具实践计划常见执行错误",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-30-day-execution.mdx",
-      "primaryKeyword": "新手 30 天 AI 接单计划怎么执行",
+      "primaryKeyword": "新手 30 天 AI 工具实践计划怎么执行",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -806,13 +806,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "新手 30 天 AI 接单计划怎么执行",
+      "title": "新手 30 天 AI 工具实践计划怎么执行",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-automation-compliance-risk-checklist.mdx",
-      "primaryKeyword": "AI 自动化接单合规风险检查清单",
+      "primaryKeyword": "AI 自动化项目合规风险检查清单",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -827,13 +827,13 @@
         "review-sensitive term: workflow"
       ],
       "status": "draft",
-      "title": "AI 自动化接单合规风险检查清单",
+      "title": "AI 自动化项目合规风险检查清单",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx",
-      "primaryKeyword": "AI 自动化接单合规错误",
+      "primaryKeyword": "AI 自动化项目合规错误",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -848,13 +848,13 @@
         "review-sensitive term: workflow"
       ],
       "status": "draft",
-      "title": "AI 自动化接单常见合规错误和解决步骤",
+      "title": "AI 自动化项目常见合规错误和解决步骤",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-automation-compliance-risk.mdx",
-      "primaryKeyword": "AI 自动化接单有哪些合规风险",
+      "primaryKeyword": "AI 自动化项目有哪些合规风险",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -869,13 +869,13 @@
         "review-sensitive term: workflow"
       ],
       "status": "draft",
-      "title": "AI 自动化接单有哪些合规风险",
+      "title": "AI 自动化项目有哪些合规风险",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-common-misconceptions-mistakes.mdx",
-      "primaryKeyword": "AI 接单误区常见错误",
+      "primaryKeyword": "AI 工具实践误区常见错误",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -886,13 +886,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 接单误区的常见错误和解决步骤",
+      "title": "AI 工具实践误区的常见错误和解决步骤",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-common-misconceptions.mdx",
-      "primaryKeyword": "AI 接单常见误区有哪些",
+      "primaryKeyword": "AI 工具实践常见误区有哪些",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -903,13 +903,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 接单常见误区有哪些",
+      "title": "AI 工具实践常见误区有哪些",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "模板和清单",
       "file": "content/blog/ai-freelance-daily-planner-checklist.mdx",
-      "primaryKeyword": "AI 接单每日执行表检查清单",
+      "primaryKeyword": "AI 工具学习每日执行表检查清单",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -918,13 +918,13 @@
         "review-sensitive term: 工具"
       ],
       "status": "draft",
-      "title": "AI 接单每日执行表检查清单",
+      "title": "AI 工具学习每日执行表检查清单",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "模板和清单",
       "file": "content/blog/ai-freelance-daily-planner.mdx",
-      "primaryKeyword": "AI 接单每日执行表怎么安排",
+      "primaryKeyword": "AI 工具学习每日执行表怎么安排",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -933,13 +933,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 接单每日执行表怎么安排",
+      "title": "AI 工具学习每日执行表怎么安排",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-failure-review-checklist.mdx",
-      "primaryKeyword": "AI 接单失败复盘检查清单",
+      "primaryKeyword": "AI 项目失败复盘检查清单",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -948,13 +948,13 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "AI 接单失败复盘检查清单",
+      "title": "AI 项目失败复盘检查清单",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-failure-review-mistakes.mdx",
-      "primaryKeyword": "AI 接单失败复盘常见错误",
+      "primaryKeyword": "AI 项目失败复盘常见错误",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -963,13 +963,13 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "AI 接单失败复盘常见错误",
+      "title": "AI 项目失败复盘常见错误",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-failure-review.mdx",
-      "primaryKeyword": "AI 接单失败复盘",
+      "primaryKeyword": "AI 项目失败复盘",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -980,13 +980,13 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "AI 接单失败复盘怎么做",
+      "title": "AI 项目失败复盘怎么做",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-first-7-days-checklist.mdx",
-      "primaryKeyword": "AI 接单新手 7 天准备检查清单",
+      "primaryKeyword": "AI 工具新手 7 天准备检查清单",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -997,13 +997,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 接单新手 7 天准备检查清单",
+      "title": "AI 工具新手 7 天准备检查清单",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-first-7-days-mistakes.mdx",
-      "primaryKeyword": "AI 接单新手 7 天准备常见错误",
+      "primaryKeyword": "AI 工具新手 7 天准备常见错误",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1014,13 +1014,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 接单新手 7 天准备常见错误",
+      "title": "AI 工具新手 7 天准备常见错误",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-first-7-days.mdx",
-      "primaryKeyword": "AI 接单新手 7 天准备什么",
+      "primaryKeyword": "AI 工具新手 7 天准备什么",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1033,13 +1033,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 接单新手 7 天准备什么",
+      "title": "AI 工具新手 7 天准备什么",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-service-page-copy-checklist.mdx",
-      "primaryKeyword": "AI 接单服务页文案检查清单",
+      "primaryKeyword": "AI 服务页文案检查清单",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1049,13 +1049,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 接单服务页文案检查清单",
+      "title": "AI 服务页文案检查清单",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-service-page-copy-mistakes.mdx",
-      "primaryKeyword": "AI 接单服务页文案常见错误",
+      "primaryKeyword": "AI 服务页文案常见错误",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1067,13 +1067,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 接单服务页文案常见错误",
+      "title": "AI 服务页文案常见错误",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-service-page-copy.mdx",
-      "primaryKeyword": "AI 接单服务页文案",
+      "primaryKeyword": "AI 服务页文案",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1082,13 +1082,13 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "AI 接单服务页文案怎么写真诚",
+      "title": "AI 服务页文案怎么写真诚",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-skill-roadmap-checklist.mdx",
-      "primaryKeyword": "AI 接单新手技能路线图检查清单",
+      "primaryKeyword": "AI 工具新手技能路线图检查清单",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1099,13 +1099,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 接单新手技能路线图检查清单",
+      "title": "AI 工具新手技能路线图检查清单",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-skill-roadmap-mistakes.mdx",
-      "primaryKeyword": "AI 接单技能路线图常见错误",
+      "primaryKeyword": "AI 工具技能路线图常见错误",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1116,13 +1116,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 接单技能路线图常见错误",
+      "title": "AI 工具技能路线图常见错误",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-freelance-skill-roadmap.mdx",
-      "primaryKeyword": "AI 接单新手技能路线图",
+      "primaryKeyword": "AI 工具新手技能路线图",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1134,7 +1134,7 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 接单新手技能路线图怎么排",
+      "title": "AI 工具新手技能路线图怎么排",
       "updatedAt": "2026-06-03"
     },
     {
@@ -1187,7 +1187,7 @@
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-small-project-practice-topics-checklist.mdx",
-      "primaryKeyword": "AI 接单练习项目检查清单",
+      "primaryKeyword": "AI 项目练习项目检查清单",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1195,13 +1195,13 @@
         "review-sensitive term: 工具"
       ],
       "status": "draft",
-      "title": "AI 接单练习小项目选题检查清单",
+      "title": "AI 小项目练习选题检查清单",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-small-project-practice-topics-mistakes.mdx",
-      "primaryKeyword": "AI 接单练习项目常见错误",
+      "primaryKeyword": "AI 项目练习项目常见错误",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1210,13 +1210,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 接单练习小项目常见错误",
+      "title": "AI 小项目练习常见错误",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-small-project-practice-topics.mdx",
-      "primaryKeyword": "AI 接单练习小项目",
+      "primaryKeyword": "AI 小项目练习",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1226,7 +1226,7 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 接单新手练习小项目选什么",
+      "title": "AI 工具新手练习小项目选什么",
       "updatedAt": "2026-06-03"
     },
     {
@@ -1246,13 +1246,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 工具配置服务接单检查清单",
+      "title": "AI 工具配置服务项目检查清单",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "模板和清单",
       "file": "content/blog/ai-tool-setup-service-checklist.mdx",
-      "primaryKeyword": "AI 工具配置服务接单清单",
+      "primaryKeyword": "AI 工具配置服务项目清单",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1266,13 +1266,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 工具配置服务接单清单怎么写",
+      "title": "AI 工具配置服务项目清单怎么写",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-tools-stack-free-start-checklist.mdx",
-      "primaryKeyword": "AI 接单免费工具栈检查清单",
+      "primaryKeyword": "AI 免费工具栈检查清单",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1280,13 +1280,13 @@
         "review-sensitive term: 工具"
       ],
       "status": "draft",
-      "title": "AI 接单免费工具栈检查清单",
+      "title": "AI 免费工具栈检查清单",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-tools-stack-free-start-mistakes.mdx",
-      "primaryKeyword": "AI 接单免费工具栈常见错误",
+      "primaryKeyword": "AI 免费工具栈常见错误",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1296,13 +1296,13 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 接单免费工具栈常见错误",
+      "title": "AI 免费工具栈常见错误",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "AI 自由职业路线",
       "file": "content/blog/ai-tools-stack-free-start.mdx",
-      "primaryKeyword": "AI 接单免费工具栈",
+      "primaryKeyword": "AI 免费工具栈",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1314,7 +1314,7 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "AI 接单新手免费工具栈怎么选",
+      "title": "AI 工具新手免费工具栈怎么选",
       "updatedAt": "2026-06-03"
     },
     {
@@ -1339,7 +1339,7 @@
     {
       "category": "报错解决",
       "file": "content/blog/api-key-invalid-or-missing-freelance-scope.mdx",
-      "primaryKeyword": "API Key 无效或缺失接单范围",
+      "primaryKeyword": "API Key 无效或缺失项目范围",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1352,7 +1352,7 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "API Key 无效或缺失：接单前怎么判断能不能做",
+      "title": "API Key 无效或缺失：使用前怎么判断是否适合",
       "updatedAt": "2026-06-03"
     },
     {
@@ -1433,6 +1433,7 @@
         "fast-changing technical term: api",
         "fast-changing technical term: key",
         "fast-changing technical term: 部署",
+        "review-sensitive term: 工具",
         "review-sensitive term: 报价"
       ],
       "status": "draft",
@@ -1452,7 +1453,7 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "Canva 作品集封面怎么做更适合 AI 接单新手",
+      "title": "Canva 作品集封面怎么做更适合 AI 工具新手",
       "updatedAt": "2026-06-03"
     },
     {
@@ -1488,7 +1489,7 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "ChatGPT、Codex 和 Claude 怎么分工做 AI 接单流程",
+      "title": "ChatGPT、Codex 和 Claude 怎么分工做 AI 工具实践流程",
       "updatedAt": "2026-06-03"
     },
     {
@@ -1541,7 +1542,7 @@
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-automation-human-review-freelance-scope.mdx",
-      "primaryKeyword": "Claude Code 自动化接单范围",
+      "primaryKeyword": "Claude Code 自动化项目范围",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1551,7 +1552,7 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "Claude Code 自动化接单前怎么判断能不能做",
+      "title": "Claude Code 自动化项目前怎么判断能不能做",
       "updatedAt": "2026-06-03"
     },
     {
@@ -1607,7 +1608,7 @@
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-beginner-mistakes-freelance-scope.mdx",
-      "primaryKeyword": "Claude Code 接单范围",
+      "primaryKeyword": "Claude Code 项目范围",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1618,7 +1619,7 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "Claude Code 接单前怎么判断范围",
+      "title": "Claude Code 项目前怎么判断范围",
       "updatedAt": "2026-06-03"
     },
     {
@@ -1675,7 +1676,7 @@
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-beginner-use-cases-freelance-scope.mdx",
-      "primaryKeyword": "Claude Code 使用场景接单范围",
+      "primaryKeyword": "Claude Code 使用场景项目范围",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1685,7 +1686,7 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "Claude Code 新手接单前怎么判断使用场景",
+      "title": "Claude Code 新手项目练习前怎么判断使用场景",
       "updatedAt": "2026-06-03"
     },
     {
@@ -1716,7 +1717,7 @@
         "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "Claude Code 新手适合用在哪些接单场景",
+      "title": "Claude Code 新手适合用在哪些项目场景",
       "updatedAt": "2026-06-03"
     },
     {
@@ -1739,7 +1740,7 @@
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-bug-prompt-freelance-scope.mdx",
-      "primaryKeyword": "Claude Code bug prompt 接单范围",
+      "primaryKeyword": "Claude Code bug prompt 项目范围",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1750,7 +1751,7 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "Claude Code Bug Prompt 接单前怎么判断范围",
+      "title": "Claude Code Bug Prompt 项目前怎么判断范围",
       "updatedAt": "2026-06-03"
     },
     {
@@ -1800,13 +1801,13 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "Claude Code 接单客户问题检查清单",
+      "title": "Claude Code 项目客户问题检查清单",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-client-questions-freelance-scope.mdx",
-      "primaryKeyword": "Claude Code 客户问题接单范围",
+      "primaryKeyword": "Claude Code 客户问题项目范围",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1817,13 +1818,13 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "Claude Code 接单前客户问题不清楚时怎么判断范围",
+      "title": "Claude Code 项目前客户问题不清楚时怎么判断范围",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-client-questions-mistakes.mdx",
-      "primaryKeyword": "Claude Code 接单客户沟通常见错误",
+      "primaryKeyword": "Claude Code 项目客户沟通常见错误",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1834,13 +1835,13 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "Claude Code 接单前问客户时的常见错误",
+      "title": "Claude Code 项目前问客户时的常见错误",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-client-questions.mdx",
-      "primaryKeyword": "Claude Code 接单客户问题",
+      "primaryKeyword": "Claude Code 项目客户问题",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1851,7 +1852,7 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "用 Claude Code 接单前要问客户哪些问题",
+      "title": "用 Claude Code 项目前要问客户哪些问题",
       "updatedAt": "2026-06-03"
     },
     {
@@ -1872,7 +1873,7 @@
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-common-commands-freelance-scope.mdx",
-      "primaryKeyword": "Claude Code 常用命令接单范围",
+      "primaryKeyword": "Claude Code 常用命令项目范围",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1882,7 +1883,7 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "Claude Code 常用命令哪些适合写进接单范围",
+      "title": "Claude Code 常用命令哪些适合写进项目范围",
       "updatedAt": "2026-06-03"
     },
     {
@@ -1914,7 +1915,7 @@
         "review-sensitive term: 工具"
       ],
       "status": "draft",
-      "title": "Claude Code 新手常用命令怎么整理成接单笔记",
+      "title": "Claude Code 新手常用命令怎么整理成项目笔记",
       "updatedAt": "2026-06-03"
     },
     {
@@ -1936,7 +1937,7 @@
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-delivery-note-freelance-scope.mdx",
-      "primaryKeyword": "Claude Code 交付说明接单范围",
+      "primaryKeyword": "Claude Code 交付说明项目范围",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -1946,7 +1947,7 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "Claude Code 交付说明哪些内容适合写进接单范围",
+      "title": "Claude Code 交付说明哪些内容适合写进项目范围",
       "updatedAt": "2026-06-03"
     },
     {
@@ -1977,7 +1978,7 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "用 Claude Code 接单后交付说明怎么写",
+      "title": "用 Claude Code 项目后交付说明怎么写",
       "updatedAt": "2026-06-03"
     },
     {
@@ -1999,7 +2000,7 @@
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-error-debug-freelance-scope.mdx",
-      "primaryKeyword": "Claude Code 错误排查接单范围",
+      "primaryKeyword": "Claude Code 错误排查项目范围",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -2009,7 +2010,7 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "Claude Code 错误排查哪些适合写进接单范围",
+      "title": "Claude Code 错误排查哪些适合写进项目范围",
       "updatedAt": "2026-06-03"
     },
     {
@@ -2061,7 +2062,7 @@
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-github-file-scope-freelance-scope.mdx",
-      "primaryKeyword": "Claude Code GitHub 文件接单范围",
+      "primaryKeyword": "Claude Code GitHub 文件项目范围",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -2071,7 +2072,7 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "Claude Code 看 GitHub 文件哪些适合写进接单范围",
+      "title": "Claude Code 看 GitHub 文件哪些适合写进项目范围",
       "updatedAt": "2026-06-03"
     },
     {
@@ -2122,7 +2123,7 @@
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-install-prerequisites-freelance-scope.mdx",
-      "primaryKeyword": "Claude Code 安装准备接单范围",
+      "primaryKeyword": "Claude Code 安装准备项目范围",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -2132,7 +2133,7 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "Claude Code 安装准备哪些适合写进接单范围",
+      "title": "Claude Code 安装准备哪些适合写进项目范围",
       "updatedAt": "2026-06-03"
     },
     {
@@ -2168,7 +2169,7 @@
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-low-risk-freelance-jobs-checklist.mdx",
-      "primaryKeyword": "Claude Code 低风险接单检查清单",
+      "primaryKeyword": "Claude Code 低风险项目检查清单",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -2178,13 +2179,13 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "Claude Code 低风险接单检查清单",
+      "title": "Claude Code 低风险项目检查清单",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-low-risk-freelance-jobs-freelance-scope.mdx",
-      "primaryKeyword": "Claude Code 低风险小单接单范围",
+      "primaryKeyword": "Claude Code 低风险小单项目范围",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -2194,13 +2195,13 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "Claude Code 低风险小单哪些适合写进接单范围",
+      "title": "Claude Code 低风险小单哪些适合写进项目范围",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-low-risk-freelance-jobs-mistakes.mdx",
-      "primaryKeyword": "Claude Code 低风险接单错误",
+      "primaryKeyword": "Claude Code 低风险项目错误",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -2210,13 +2211,13 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "Claude Code 低风险接单常见错误",
+      "title": "Claude Code 低风险项目常见错误",
       "updatedAt": "2026-06-03"
     },
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-low-risk-freelance-jobs.mdx",
-      "primaryKeyword": "Claude Code 低风险接单",
+      "primaryKeyword": "Claude Code 低风险项目",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -2246,7 +2247,7 @@
     {
       "category": "工具流程",
       "file": "content/blog/claude-code-nextjs-page-check-freelance-scope.mdx",
-      "primaryKeyword": "Claude Code Next.js 页面检查接单范围",
+      "primaryKeyword": "Claude Code Next.js 页面检查项目范围",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
@@ -2256,7 +2257,7 @@
         "review-sensitive term: 报价"
       ],
       "status": "draft",
-      "title": "Claude Code 检查 Next.js 页面哪些适合写进接单范围",
+      "title": "Claude Code 检查 Next.js 页面哪些适合写进项目范围",
       "updatedAt": "2026-06-03"
     },
     {

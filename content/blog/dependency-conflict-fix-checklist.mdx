@@ -1,7 +1,7 @@
 ---
 title: "dependency conflict 依赖冲突处理检查清单"
 slug: "dependency-conflict-fix-checklist"
-description: "一份给新手的 dependency conflict 依赖冲突检查清单，覆盖报错、包管理器、锁文件、peer dependency、Node 版本、验证命令和接单暂停条件。"
+description: "一份给新手的 dependency conflict 依赖冲突检查清单，覆盖报错、包管理器、锁文件、peer dependency、Node 版本、验证命令和项目暂停条件。"
 date: "2026-06-03"
 updatedAt: "2026-06-03"
 category: "报错解决"
@@ -10,7 +10,7 @@ tags:
   - "依赖冲突"
   - "npm"
   - "检查清单"
-author: "AI 接单实验室"
+author: "AI 工具指南"
 status: "draft"
 contentType: "checklist"
 difficulty: "beginner"
@@ -21,7 +21,7 @@ secondaryKeywords:
   - "npm dependency conflict"
   - "peer dependency"
   - "依赖冲突检查"
-  - "AI 接单"
+  - "AI 工具实践"
 sourceNotes: "人工重写草稿；公开前仍需人工复核 npm、yarn、pnpm 版本差异、项目真实日志、官方文档和客户授权边界。"
 humanReviewRequired: true
 reviewChecklist:
@@ -51,7 +51,7 @@ noindex: true
 
 ## 适合谁
 
-适合安装项目时遇到 `ERESOLVE`、`peer dependency`、`dependency tree`、版本不兼容、构建失败的新手。你可以把这份清单放到文档、表格或接单诊断记录里。
+适合安装项目时遇到 `ERESOLVE`、`peer dependency`、`dependency tree`、版本不兼容、构建失败的新手。你可以把这份清单放到文档、表格或项目诊断记录里。
 
 也适合做客户项目初步排查的人。清单可以帮你先交付诊断，而不是在边界不清时直接改依赖树。
 
@@ -133,7 +133,7 @@ noindex: true
 
 交付记录至少写七项：报错、冲突包、原因判断、尝试动作、改动文件、验证结果、剩余风险。如果没有改代码，也可以交付“依赖冲突诊断报告”，但要说明哪些事项需要客户确认。
 
-接单时可以把服务分成两档：第一档只诊断并给建议；第二档在客户授权后调整依赖并验证。不要把两档混成一个模糊承诺。
+做项目时可以把服务分成两档：第一档只诊断并给建议；第二档在客户授权后调整依赖并验证。不要把两档混成一个模糊承诺。
 
 ## 判断结论怎么分级
 

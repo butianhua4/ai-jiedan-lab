@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:26.003Z",
+  "generatedAt": "2026-06-12T14:37:24.623Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "cannibalizationGeneratedAt": "2026-06-12T06:13:23.195Z",
+    "cannibalizationGeneratedAt": "2026-06-12T14:36:26.034Z",
     "cannibalizationSummary": {
       "articleCount": 669,
       "conflicts": 200,
@@ -18,7 +18,7 @@
       "slugStemConflicts": 177,
       "titleStemConflicts": 12
     },
-    "freshnessGeneratedAt": "2026-06-12T06:13:25.052Z",
+    "freshnessGeneratedAt": "2026-06-12T14:36:25.973Z",
     "freshnessSummary": {
       "articlesChecked": 669,
       "currentReviewItems": 3,
@@ -27,7 +27,7 @@
       "mediumRisk": 96,
       "plannedReviewItems": 9
     },
-    "publicSurfaceGeneratedAt": "2026-06-12T06:12:55.703Z",
+    "publicSurfaceGeneratedAt": "2026-06-12T14:34:29.953Z",
     "publicSurfaceSummary": {
       "broadClusters": 8,
       "broadClustersWithoutPublicCoverage": 8,
@@ -35,17 +35,17 @@
       "liveArticlesChecked": 15,
       "liveMissingFromSitemap": 0,
       "livePublicCount": 15,
-      "liveSitemapUrls": 89,
+      "liveSitemapUrls": 96,
       "projectPublicPublished": 15,
       "publicArticles": 15,
       "publicCategories": 6,
-      "publicTags": 31,
+      "publicTags": 32,
       "publishedButNoindexed": 0,
       "nonPublishedIndexable": 0,
       "trafficDataAvailable": false,
       "unsafeItems": 0
     },
-    "seoWarningsGeneratedAt": "2026-06-12T06:13:00.157Z",
+    "seoWarningsGeneratedAt": "2026-06-12T14:37:17.417Z",
     "seoWarningsSummary": {
       "blockingItems": 0,
       "draftItems": 8,
@@ -62,7 +62,7 @@
       "warningItems": 16,
       "waveItems": 1
     },
-    "trafficEvidenceGeneratedAt": "2026-06-12T06:12:54.292Z",
+    "trafficEvidenceGeneratedAt": "2026-06-12T06:13:52.922Z",
     "trafficEvidenceSummary": {
       "canClaimTraffic": false,
       "claimableMetrics": 0,
@@ -321,7 +321,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 和 Claude Code 怎么选：新手对比清单",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 和 Claude Code 怎么选：新手对比清单",
@@ -423,7 +423,7 @@
         "Upwork",
         "报价",
         "自由职业",
-        "新手接单"
+        "新手项目练习"
       ],
       "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
       "trafficClaim": "not-included",
@@ -465,7 +465,7 @@
           "review-sensitive term: 报价"
         ],
         "status": "published",
-        "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+        "title": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
         "updatedAt": "2026-06-02"
       },
       "priorityScore": 160,
@@ -515,7 +515,7 @@
         ],
         "status": "published",
         "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
-        "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+        "title": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
         "unsafeReasons": []
       },
       "slug": "payoneer-wise-paypal-beginner-comparison",
@@ -525,7 +525,7 @@
         "PayPal",
         "跨境收款"
       ],
-      "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+      "title": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
       "trafficClaim": "not-included",
       "unsafeReasons": [],
       "updatedAt": "2026-06-02"
@@ -616,7 +616,7 @@
       "tags": [
         "Upwork",
         "Proposal",
-        "新手接单",
+        "新手项目练习",
         "自由职业"
       ],
       "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
@@ -812,7 +812,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 和 GitHub 怎么配合：提交代码前检查",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
@@ -903,7 +903,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 部署 Vercel 前检查什么：上线前清单",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 部署 Vercel 前检查什么：上线前清单",
@@ -976,7 +976,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 怎么做第一个网页",
-        "AI 接单",
+        "AI 工具教程",
         "新手教程"
       ],
       "title": "Codex 怎么做第一个网页",
@@ -1051,7 +1051,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 生成代码后怎么审核",
-        "AI 接单",
+        "AI 工具教程",
         "新手教程"
       ],
       "title": "Codex 生成代码后怎么审核",
@@ -1124,7 +1124,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 安装失败怎么办",
-        "AI 接单",
+        "AI 工具教程",
         "新手教程"
       ],
       "title": "Codex 安装失败怎么办",
@@ -1197,7 +1197,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 是什么新手怎么开始",
-        "AI 接单",
+        "AI 工具教程",
         "新手教程"
       ],
       "title": "Codex 是什么新手怎么开始",
@@ -1301,7 +1301,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 生成代码后怎么审核：交付前检查清单",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 生成代码后怎么审核：交付前检查清单",
@@ -1353,7 +1353,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 接 Upwork 小单怎么判断：风险检查清单",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
@@ -1593,7 +1593,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 和 Claude Code 怎么选：新手对比清单",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 和 Claude Code 怎么选：新手对比清单",
@@ -1695,7 +1695,7 @@
         "Upwork",
         "报价",
         "自由职业",
-        "新手接单"
+        "新手项目练习"
       ],
       "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
       "trafficClaim": "not-included",
@@ -1737,7 +1737,7 @@
           "review-sensitive term: 报价"
         ],
         "status": "published",
-        "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+        "title": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
         "updatedAt": "2026-06-02"
       },
       "priorityScore": 160,
@@ -1787,7 +1787,7 @@
         ],
         "status": "published",
         "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
-        "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+        "title": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
         "unsafeReasons": []
       },
       "slug": "payoneer-wise-paypal-beginner-comparison",
@@ -1797,7 +1797,7 @@
         "PayPal",
         "跨境收款"
       ],
-      "title": "Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看",
+      "title": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
       "trafficClaim": "not-included",
       "unsafeReasons": [],
       "updatedAt": "2026-06-02"
@@ -1888,7 +1888,7 @@
       "tags": [
         "Upwork",
         "Proposal",
-        "新手接单",
+        "新手项目练习",
         "自由职业"
       ],
       "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
@@ -2084,7 +2084,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 和 GitHub 怎么配合：提交代码前检查",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
@@ -2175,7 +2175,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 部署 Vercel 前检查什么：上线前清单",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 部署 Vercel 前检查什么：上线前清单",
@@ -2248,7 +2248,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 怎么做第一个网页",
-        "AI 接单",
+        "AI 工具教程",
         "新手教程"
       ],
       "title": "Codex 怎么做第一个网页",
@@ -2323,7 +2323,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 生成代码后怎么审核",
-        "AI 接单",
+        "AI 工具教程",
         "新手教程"
       ],
       "title": "Codex 生成代码后怎么审核",
@@ -2396,7 +2396,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 安装失败怎么办",
-        "AI 接单",
+        "AI 工具教程",
         "新手教程"
       ],
       "title": "Codex 安装失败怎么办",
@@ -2469,7 +2469,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 是什么新手怎么开始",
-        "AI 接单",
+        "AI 工具教程",
         "新手教程"
       ],
       "title": "Codex 是什么新手怎么开始",
@@ -2573,7 +2573,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 生成代码后怎么审核：交付前检查清单",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 生成代码后怎么审核：交付前检查清单",
@@ -2625,7 +2625,7 @@
       "tags": [
         "Codex 新手教程",
         "Codex 接 Upwork 小单怎么判断：风险检查清单",
-        "AI 接单",
+        "AI 工具实践",
         "新手教程"
       ],
       "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",

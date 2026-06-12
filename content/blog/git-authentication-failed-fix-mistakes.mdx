@@ -9,8 +9,8 @@ tags:
   - "报错解决"
   - "Git"
   - "故障排查"
-  - "AI 接单"
-author: "AI 接单实验室"
+  - "AI 工具实践"
+author: "AI 工具指南"
 status: "draft"
 contentType: "troubleshooting"
 difficulty: "beginner"
@@ -21,7 +21,7 @@ secondaryKeywords:
   - "git push authentication failed"
   - "GitHub token"
   - "SSH key"
-  - "AI 接单"
+  - "AI 工具实践"
 sourceNotes: "人工重写版本；公开前仍需人工复核平台认证规则、令牌安全、SSH 配置和客户授权边界。"
 humanReviewRequired: true
 reviewChecklist:
@@ -67,7 +67,7 @@ noindex: true
 
 认证失败处理里的最大风险，是把敏感凭据暴露在错误地方。token 不能写进代码，不能发到群聊，不能贴到公开 issue，也不能作为交付文档的一部分。
 
-第二个风险是权限过大。一个全权限 token 可能不仅能访问当前仓库，还能访问组织内其他资源。接单时应坚持最小权限、短有效期、任务结束后撤销。
+第二个风险是权限过大。一个全权限 token 可能不仅能访问当前仓库，还能访问组织内其他资源。做项目时应坚持最小权限、短有效期、任务结束后撤销。
 
 ## 具体步骤
 
@@ -131,7 +131,7 @@ The local Git command is failing at authentication, not at code validation. Plea
 
 新手常犯的错误是只删除表面内容。比如 token 被提交到 Git 历史里，只删除当前文件并不代表历史记录里没有痕迹。客户项目里，这类情况应升级为安全事件，让客户或有经验的人一起确认处理方式。
 
-如果你只是接单协助者，要把自己能做和不能做写清楚。你可以帮助整理泄漏位置、建议撤销凭据、说明后续验证步骤，但不要承诺替客户完成所有安全响应。需要平台管理员、组织负责人或客户账号所有者操作的部分，应列为客户侧事项。
+如果你只是项目协助者，要把自己能做和不能做写清楚。你可以帮助整理泄漏位置、建议撤销凭据、说明后续验证步骤，但不要承诺替客户完成所有安全响应。需要平台管理员、组织负责人或客户账号所有者操作的部分，应列为客户侧事项。
 
 ## CTA：下一步
 

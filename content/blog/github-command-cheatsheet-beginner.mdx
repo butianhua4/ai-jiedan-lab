@@ -1,7 +1,7 @@
 ---
 title: "GitHub 常用命令表新手怎么记"
 slug: "github-command-cheatsheet-beginner"
-description: "新手记 GitHub 常用命令时，不要背一长串，而要按场景记：查看状态、拉取更新、暂存、提交、推送、查看差异和处理冲突。本文给出安全练习顺序和接单前注意事项。"
+description: "新手记 GitHub 常用命令时，不要背一长串，而要按场景记：查看状态、拉取更新、暂存、提交、推送、查看差异和处理冲突。本文给出安全练习顺序和项目前注意事项。"
 date: "2026-06-03"
 updatedAt: "2026-06-03"
 category: "工具导航"
@@ -9,8 +9,8 @@ tags:
   - "GitHub"
   - "Git"
   - "新手教程"
-  - "AI 接单"
-author: "AI 接单实验室"
+  - "AI 工具实践"
+author: "AI 工具指南"
 status: "draft"
 contentType: "tutorial"
 difficulty: "beginner"
@@ -99,7 +99,7 @@ git push
 
 `git status` 是你的安全带。每次改动前、提交前、提交后都可以看一眼。它会告诉你哪些文件已修改、哪些文件已暂存、当前分支是否领先或落后。
 
-`git diff` 是你的复核工具。它告诉你具体改了什么。接单时，所有不能解释的 diff 都应该暂停处理。
+`git diff` 是你的复核工具。它告诉你具体改了什么。做项目时，所有不能解释的 diff 都应该暂停处理。
 
 ## 同步远程代码
 
@@ -150,7 +150,7 @@ git add content/blog/example.mdx
 
 这样能降低误提交无关内容的风险。
 
-## 接单前怎么练
+## 项目前怎么练
 
 第一天练 `status` 和 `diff`。第二天练 `add` 和 `commit`。第三天练 `push` 到自己的测试仓库。第四天练创建分支。第五天练写一条清楚的提交说明和 PR 描述。
 

@@ -1,6 +1,6 @@
 # Public Search Refresh Pack
 
-Generated at: 2026-06-12T06:13:26.003Z
+Generated at: 2026-06-12T14:37:24.623Z
 
 This report is read-only. It prioritizes public-page refresh work for search visibility without editing pages or claiming traffic.
 
@@ -41,7 +41,7 @@ This report is read-only. It prioritizes public-page refresh work for search vis
 | true | 165 | 9 | true | high | 1 | 102 | 报错解决 | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx |
 | true | 165 | 9 | true | high | 1 | 104 | Codex 新手教程 | Codex 和 Claude Code 怎么选：新手对比清单 | content/blog/codex-vs-claude-code-beginner-checklist.mdx |
 | true | 160 | 9 | true | high | 0 | 72 | 报价指南 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
-| true | 160 | 9 | true | high | 0 | 82 | 收款工具 | Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
+| true | 160 | 9 | true | high | 0 | 82 | 收款工具 | Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
 | true | 160 | 9 | true | high | 0 | 80 | Upwork 新手 | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
 | true | 160 | 9 | true | high | 0 | 87 | 部署教程 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | content/blog/vercel-env-variable-missing-beginner-guide.mdx |
 | true | 150 | 8 | true | high | 0 | 101 | Codex 新手教程 | Codex 和 GitHub 怎么配合：提交代码前检查 | content/blog/codex-github-before-commit-checklist.mdx |
@@ -113,7 +113,7 @@ This report is read-only. It prioritizes public-page refresh work for search vis
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 
-### Payoneer、Wise、PayPal 有什么区别：AI 接单新手收款前先看
+### Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看
 
 - File: content/blog/payoneer-wise-paypal-beginner-comparison.mdx
 - Score: 160
