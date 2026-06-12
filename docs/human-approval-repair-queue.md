@@ -1,6 +1,6 @@
 # Human Approval Repair Queue
 
-Generated at: 2026-06-12T06:13:31.826Z
+Generated at: 2026-06-12T16:32:28.237Z
 
 This report is read-only. It breaks repair-before-review candidates into task-level work and stops before any status change.
 
@@ -122,7 +122,7 @@ This report is read-only. It breaks repair-before-review candidates into task-le
 | 1983 | medium | search-intent | Review reason: 3 search-intent weakness(es) need human copy review. | Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body. | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 1983 | medium | search-intent | Resolve or explicitly accept search-intent weaknesses before mark:review. | Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body. | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 1943 | medium | internal-link | Add at least one contextual link to a currently published article before approval. | Draft contains at least one contextual link to a currently published relevant article. | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| 1943 | medium | internal-link | Suggested public link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) - keyword overlap: ai, vercel, 部署, 上线, 检查, 新手. | Draft contains at least one contextual link to a currently published relevant article. | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 1943 | medium | internal-link | Suggested public link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) - keyword overlap: ai, vercel, 部署, 工具, 上线, 检查. | Draft contains at least one contextual link to a currently published relevant article. | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 1943 | medium | internal-link | Review reason: approval candidate has no current link to a published article. | Draft contains at least one contextual link to a currently published relevant article. | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 1943 | medium | internal-link | Apply or explicitly reject the internal-link suggestion before mark:review. | Draft contains at least one contextual link to a currently published relevant article. | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 1943 | medium | internal-link | Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human | Draft contains at least one contextual link to a currently published relevant article. | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
@@ -162,7 +162,7 @@ This report is read-only. It breaks repair-before-review candidates into task-le
 - [medium] search-intent: Review reason: 3 search-intent weakness(es) need human copy review.
 - [medium] search-intent: Resolve or explicitly accept search-intent weaknesses before mark:review.
 - [medium] internal-link: Add at least one contextual link to a currently published article before approval.
-- [medium] internal-link: Suggested public link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) - keyword overlap: ai, vercel, 部署, 上线, 检查, 新手.
+- [medium] internal-link: Suggested public link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) - keyword overlap: ai, vercel, 部署, 工具, 上线, 检查.
 - [medium] internal-link: Review reason: approval candidate has no current link to a published article.
 - [medium] internal-link: Apply or explicitly reject the internal-link suggestion before mark:review.
 - [medium] internal-link: Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human
@@ -202,7 +202,7 @@ This report is read-only. It breaks repair-before-review candidates into task-le
 
 - [high] source-url: Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.
 - [high] source-url: Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.
-- [high] source-url: Review reason: 10 source URL remediation action(s) need human confirmation.
+- [high] source-url: Review reason: 11 source URL remediation action(s) need human confirmation.
 - [high] source-url: Resolve or explicitly accept source URL remediation actions before mark:review.
 - [high] source-url: Verify source URLs and fact-check queries before mark:review.
 - [high] source-review: Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.

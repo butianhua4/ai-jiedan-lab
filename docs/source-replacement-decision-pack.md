@@ -1,6 +1,6 @@
 # Source Replacement Decision Pack
 
-Generated at: 2026-06-12T06:13:20.631Z
+Generated at: 2026-06-12T16:32:16.761Z
 
 This report is read-only. It turns source URL remediation into per-file human replacement decisions.
 
@@ -24,13 +24,13 @@ This report is read-only. It turns source URL remediation into per-file human re
 
 - affectedFiles: 22
 - failedDecisionItems: 1
-- humanGatedItems: 113
-- items: 113
-- itemsWithDecisionOptions: 113
-- itemsWithManualChecklist: 113
+- humanGatedItems: 114
+- items: 114
+- itemsWithDecisionOptions: 114
+- itemsWithManualChecklist: 114
 - itemsWithRecommendedCandidate: 1
 - officialRecommendedCandidates: 1
-- redirectedDecisionItems: 112
+- redirectedDecisionItems: 113
 - replacementCandidateOptions: 8
 - sourceRemediationItems: 19
 - sourceRemediationUnsafeItems: 0

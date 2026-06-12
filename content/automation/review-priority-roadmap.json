@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:05.001Z",
+  "generatedAt": "2026-06-12T16:32:00.805Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -64,7 +64,7 @@
           "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
         },
         {
-          "category": "接单报价",
+          "category": "项目报价",
           "currentPack": false,
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "plannedBatch": true,
@@ -161,7 +161,7 @@
           "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
         },
         {
-          "category": "接单报价",
+          "category": "项目报价",
           "currentPack": false,
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "plannedBatch": true,
@@ -255,7 +255,7 @@
           "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
         },
         {
-          "category": "接单报价",
+          "category": "项目报价",
           "currentPack": false,
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "plannedBatch": true,
@@ -350,7 +350,7 @@
           "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
         },
         {
-          "category": "接单报价",
+          "category": "项目报价",
           "currentPack": false,
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "plannedBatch": true,
@@ -599,7 +599,7 @@
     {
       "candidates": [
         {
-          "category": "接单报价",
+          "category": "项目报价",
           "currentPack": false,
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "plannedBatch": true,
@@ -693,7 +693,7 @@
     {
       "candidates": [
         {
-          "category": "接单报价",
+          "category": "项目报价",
           "currentPack": false,
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "plannedBatch": true,

@@ -1,6 +1,6 @@
 # Popular Prompt Approval Bridge
 
-Generated at: 2026-06-12T14:47:05.061Z
+Generated at: 2026-06-12T16:32:11.396Z
 
 This report is read-only. It turns popular AI prompt lanes into safe next human-review candidates without editing, marking review, or publishing.
 
@@ -39,9 +39,9 @@ This report is read-only. It turns popular AI prompt lanes into safe next human-
 
 - approvalQueueGeneratedAt: "2026-06-12T06:13:39.288Z"
 - approvalQueueSummary: {"backlogItems":5,"commandBoundaries":8,"humanGatedItems":8,"immediateApprovalItems":3,"immediateApprovalReadyItems":3,"items":8,"itemsReadyForHumanApproval":8,"itemsWithFailedSourceDecision":1,"itemsWithMassSearchTheme":6,"itemsWithPopularPromptLane":5,"itemsWithSeoWarnings":2,"itemsWithSourceReplacementDecisions":7,"publishConfirmCommandsIncluded":0,"trafficDataAvailable":false,"unsafeItems":0}
-- playbookGeneratedAt: "2026-06-12T06:13:14.917Z"
+- playbookGeneratedAt: "2026-06-12T16:32:10.881Z"
 - playbookSummary: {"agentDeploymentLanes":3,"broadWorkPromptLanes":3,"commandBoundaries":10,"deploymentBridgeItems":6,"humanGatedItems":10,"items":10,"itemsReadyForHumanReviewPrep":10,"itemsWithCandidateFiles":10,"itemsWithOfficialSources":10,"memoryLanes":1,"officialSources":12,"promptModuleBridgeItems":7,"promptTemplates":50,"publishConfirmCommandsIncluded":0,"searchQueries":127,"sourceTargets":22,"trafficDataAvailable":false,"uniqueCandidateFiles":21,"unsafeItems":0}
-- reviewCandidatesGeneratedAt: "2026-06-12T06:12:51.405Z"
+- reviewCandidatesGeneratedAt: "2026-06-12T16:31:46.775Z"
 - reviewCandidatesCounts: {"candidates":633,"returned":25,"rejected":{"status:published":15,"status:archived":21}}
 - trafficNote: "No traffic, ranking, impression, click, conversion, or revenue claim is made."
 
@@ -143,11 +143,11 @@ This report is read-only. It turns popular AI prompt lanes into safe next human-
 ### 销售话术、报价和方案书 AI 提示词
 
 - Lane ID: sales-proposal-prompts
-- Audience: 销售、BD、自由职业者、咨询顾问和接单人
-- Demand reason: 写报价、写方案、写跟进邮件直接对应接单变现，是项目商业目标里的强入口。
+- Audience: 销售、BD、自由职业者和咨询顾问
+- Demand reason: 写报价、写方案、写跟进邮件直接对应项目转化，是项目商业目标里的强入口。
 - Already in approval queue: content/blog/industry-ai-prompts-template-library-2026.mdx; content/blog/ai-model-selection-customer-service-guide.mdx
 - Ready next candidates: 3/3
-- Search queries: AI 销售话术提示词; ChatGPT 写报价单; AI 方案书提示词; 客户跟进邮件 prompt; 自由职业接单报价提示词; AI 写商业 proposal; 销售异议处理提示词; AI 客户需求分析; ChatGPT 写项目方案; AI 写投标方案提示词
+- Search queries: AI 销售话术提示词; ChatGPT 写报价单; AI 方案书提示词; 客户跟进邮件 prompt; 自由职业项目报价提示词; AI 写商业 proposal; 销售异议处理提示词; AI 客户需求分析; ChatGPT 写项目方案; AI 写投标方案提示词
 
 | Ready | Score | Templates | Sources | Title | File |
 | --- | ---: | ---: | ---: | --- | --- |

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:40.715Z",
+  "generatedAt": "2026-06-12T16:32:37.323Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -19,7 +19,7 @@
     "failedChecks": [],
     "ok": true,
     "publicCount": 15,
-    "sitemapUrlCount": 89
+    "sitemapUrlCount": 96
   },
   "reviewPlan": {
     "plannedBatches": 3,
@@ -52,7 +52,7 @@
           "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
         },
         {
-          "category": "接单报价",
+          "category": "项目报价",
           "cluster": "Agent and memory",
           "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
@@ -210,6 +210,8 @@
           "why": "很多团队会搜索知识库 AI，但真正需要的是可审核、可引用、可质检的方案。"
         },
         "officialSourceTargets": [
+          "OpenAI docs: https://platform.openai.com/docs",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
           "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
           "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
         ],
@@ -332,10 +334,10 @@
         "currentPack": true,
         "factCheckQueries": 8,
         "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-        "officialSourceTargets": 7,
+        "officialSourceTargets": 8,
         "plannedBatch": true,
         "qualityScore": 100,
-        "riskReviewChecklist": 6,
+        "riskReviewChecklist": 8,
         "safeDraft": true,
         "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
       },
@@ -412,7 +414,7 @@
             "internalStatus": "draft",
             "lane": "deployment: RAG、知识库和向量检索",
             "noindex": true,
-            "officialSourceTargets": 7,
+            "officialSourceTargets": 8,
             "plannedBatch": true,
             "primaryKeyword": "客服 AI 模型选型",
             "priorityScore": 777,
@@ -421,7 +423,7 @@
             "qualityScore": 100,
             "reviewBatch": 2,
             "reviewBatchTopic": "RAG、知识库和向量检索",
-            "riskReviewChecklist": 6,
+            "riskReviewChecklist": 8,
             "safeDraft": true,
             "searchIntent": "informational",
             "sourcePackReady": true,
@@ -751,8 +753,8 @@
       {
         "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
         "readyForHumanReview": true,
-        "riskChecks": 6,
-        "sources": 7,
+        "riskChecks": 8,
+        "sources": 8,
         "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
       },
       {
@@ -815,10 +817,10 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 211,
+    "filesScanned": 219,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 3792
+    "watchMentions": 3832
   },
   "contentIntegrity": {
     "allIssueItems": 0,
@@ -860,8 +862,8 @@
             "url": "/blog/build-first-webpage-with-codex"
           },
           {
-            "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
-            "url": "/blog/first-upwork-project-pricing-checklist"
+            "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
+            "url": "/blog/codex-upwork-small-job-risk-checklist"
           }
         ],
         "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
@@ -978,7 +980,7 @@
           "AI 部署"
         ],
         "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-        "updatedAt": "2026-06-06",
+        "updatedAt": "2026-06-12",
         "warnings": []
       },
       {
@@ -994,7 +996,7 @@
           "AI Agent"
         ],
         "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-        "updatedAt": "2026-06-06",
+        "updatedAt": "2026-06-12",
         "warnings": []
       },
       {
@@ -1010,7 +1012,7 @@
           "SOP"
         ],
         "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-        "updatedAt": "2026-06-06",
+        "updatedAt": "2026-06-12",
         "warnings": []
       }
     ]
@@ -1266,7 +1268,7 @@
       "lanesWithReadyDrafts": 12,
       "lanesWithoutPublicCoverage": 10,
       "maxPriorityScore": 386,
-      "notReadyMatchedDrafts": 355,
+      "notReadyMatchedDrafts": 321,
       "totalReadyDraftMatches": 233
     },
     "topLanes": [
@@ -1406,19 +1408,11 @@
       "currentWaveItems": 3,
       "currentWaveReady": 3,
       "nextGapItems": 6,
-      "nextGapLanes": 3,
+      "nextGapLanes": 4,
       "unsafeItems": 0,
       "wave": 1
     },
     "nextGapItems": [
-      {
-        "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
-        "lanePriorityScore": 386,
-        "laneTitle": "Cross-industry AI prompt templates and reusable prompt libraries",
-        "primaryKeyword": "团队 AI 提示词库",
-        "readyForHumanReview": true,
-        "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用"
-      },
       {
         "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
         "lanePriorityScore": 386,
@@ -1428,20 +1422,20 @@
         "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要"
       },
       {
-        "file": "content/blog/dify-workflow-error-handling-guide.mdx",
-        "lanePriorityScore": 366,
-        "laneTitle": "Business department AI workflows across sales, support, ops, HR, finance, legal, and education",
-        "primaryKeyword": "Dify 工作流错误处理",
+        "file": "content/blog/education-ai-prompts-guide.mdx",
+        "lanePriorityScore": 386,
+        "laneTitle": "Cross-industry AI prompt templates and reusable prompt libraries",
+        "primaryKeyword": "教育 AI 提示词",
         "readyForHumanReview": true,
-        "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底"
+        "title": "教育 AI 提示词模板：备课、教案、测验、反馈和学习计划"
       },
       {
-        "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+        "file": "content/blog/customer-service-ai-prompts-guide.mdx",
         "lanePriorityScore": 366,
         "laneTitle": "Business department AI workflows across sales, support, ops, HR, finance, legal, and education",
-        "primaryKeyword": "Open WebUI Functions Pipelines",
+        "primaryKeyword": "客服 AI 提示词",
         "readyForHumanReview": true,
-        "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流"
+        "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断"
       },
       {
         "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
@@ -1458,6 +1452,14 @@
         "primaryKeyword": "AI 自动化项目报价",
         "readyForHumanReview": true,
         "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
+      },
+      {
+        "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+        "lanePriorityScore": 330,
+        "laneTitle": "Large model deployment, LLM serving, and GPU infrastructure",
+        "primaryKeyword": "大模型部署",
+        "readyForHumanReview": true,
+        "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查"
       }
     ]
   },
@@ -1468,7 +1470,7 @@
       "plannedItems": 12,
       "readyItems": 12,
       "uniqueFiles": 12,
-      "uniqueLanes": 6,
+      "uniqueLanes": 7,
       "unsafeItems": 0,
       "sourceLaneMapItems": 233,
       "sourceApprovalNextGapItems": 6
@@ -1487,9 +1489,9 @@
       },
       {
         "files": [
-          "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
           "content/blog/data-analysis-ai-prompts-guide.mdx",
-          "content/blog/dify-workflow-error-handling-guide.mdx"
+          "content/blog/education-ai-prompts-guide.mdx",
+          "content/blog/customer-service-ai-prompts-guide.mdx"
         ],
         "focus": "Cross-industry AI prompt templates and reusable prompt libraries + Business department AI workflows across sales, support, ops, HR, finance, legal, and education",
         "laneCount": 2,
@@ -1498,22 +1500,22 @@
       },
       {
         "files": [
-          "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
           "content/blog/ai-agent-memory-rag-design-guide.mdx",
-          "content/blog/ai-automation-project-pricing-scope-guide.mdx"
+          "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+          "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx"
         ],
-        "focus": "Business department AI workflows across sales, support, ops, HR, finance, legal, and education + AI Agent deployment, tool calling, and production workflow",
+        "focus": "AI Agent deployment, tool calling, and production workflow + Large model deployment, LLM serving, and GPU infrastructure",
         "laneCount": 2,
         "readyItems": 3,
         "wave": 3
       },
       {
         "files": [
-          "content/blog/customer-service-ai-prompts-guide.mdx",
-          "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-          "content/blog/dify-workflow-vs-agent-guide.mdx"
+          "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+          "content/blog/dify-workflow-error-handling-guide.mdx",
+          "content/blog/ai-api-key-security-rotation-guide.mdx"
         ],
-        "focus": "RAG, knowledge base, and Agent memory + Large model deployment, LLM serving, and GPU infrastructure + Dify, n8n, no-code AI automation, and workflow deployment",
+        "focus": "RAG, knowledge base, and Agent memory + Dify, n8n, no-code AI automation, and workflow deployment + Model API integration, rate limits, and multi-model fallback",
         "laneCount": 3,
         "readyItems": 3,
         "wave": 4
@@ -1530,8 +1532,8 @@
       "readyItems": 12,
       "unsafeItems": 0,
       "uniqueFiles": 12,
-      "uniqueLanes": 6,
-      "uniqueQueries": 360
+      "uniqueLanes": 7,
+      "uniqueQueries": 365
     },
     "topItems": [
       {
@@ -1562,15 +1564,6 @@
         "wave": 1
       },
       {
-        "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
-        "laneTitle": "Cross-industry AI prompt templates and reusable prompt libraries",
-        "primaryKeyword": "团队 AI 提示词库",
-        "queryCount": 35,
-        "readyForManualReview": true,
-        "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
-        "wave": 2
-      },
-      {
         "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
         "laneTitle": "Cross-industry AI prompt templates and reusable prompt libraries",
         "primaryKeyword": "数据分析 AI 提示词",
@@ -1580,22 +1573,22 @@
         "wave": 2
       },
       {
-        "file": "content/blog/dify-workflow-error-handling-guide.mdx",
-        "laneTitle": "Business department AI workflows across sales, support, ops, HR, finance, legal, and education",
-        "primaryKeyword": "Dify 工作流错误处理",
-        "queryCount": 36,
+        "file": "content/blog/education-ai-prompts-guide.mdx",
+        "laneTitle": "Cross-industry AI prompt templates and reusable prompt libraries",
+        "primaryKeyword": "教育 AI 提示词",
+        "queryCount": 35,
         "readyForManualReview": true,
-        "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+        "title": "教育 AI 提示词模板：备课、教案、测验、反馈和学习计划",
         "wave": 2
       },
       {
-        "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+        "file": "content/blog/customer-service-ai-prompts-guide.mdx",
         "laneTitle": "Business department AI workflows across sales, support, ops, HR, finance, legal, and education",
-        "primaryKeyword": "Open WebUI Functions Pipelines",
+        "primaryKeyword": "客服 AI 提示词",
         "queryCount": 36,
         "readyForManualReview": true,
-        "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
-        "wave": 3
+        "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
+        "wave": 2
       },
       {
         "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
@@ -1616,44 +1609,53 @@
         "wave": 3
       },
       {
-        "file": "content/blog/customer-service-ai-prompts-guide.mdx",
-        "laneTitle": "RAG, knowledge base, and Agent memory",
-        "primaryKeyword": "客服 AI 提示词",
-        "queryCount": 35,
-        "readyForManualReview": true,
-        "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
-        "wave": 4
-      },
-      {
         "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
         "laneTitle": "Large model deployment, LLM serving, and GPU infrastructure",
         "primaryKeyword": "大模型部署",
         "queryCount": 35,
         "readyForManualReview": true,
         "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+        "wave": 3
+      },
+      {
+        "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+        "laneTitle": "RAG, knowledge base, and Agent memory",
+        "primaryKeyword": "Open WebUI Functions Pipelines",
+        "queryCount": 35,
+        "readyForManualReview": true,
+        "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
         "wave": 4
       },
       {
-        "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+        "file": "content/blog/dify-workflow-error-handling-guide.mdx",
         "laneTitle": "Dify, n8n, no-code AI automation, and workflow deployment",
-        "primaryKeyword": "Dify Workflow 和 Agent 区别",
+        "primaryKeyword": "Dify 工作流错误处理",
         "queryCount": 35,
         "readyForManualReview": true,
-        "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+        "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+        "wave": 4
+      },
+      {
+        "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+        "laneTitle": "Model API integration, rate limits, and multi-model fallback",
+        "primaryKeyword": "AI API Key 安全管理",
+        "queryCount": 30,
+        "readyForManualReview": true,
+        "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
         "wave": 4
       }
     ]
   },
   "searchQueryMatch": {
     "summary": {
-      "averageExactMatches": 1.42,
-      "averageMatchedFamilies": 7,
+      "averageExactMatches": 1.75,
+      "averageMatchedFamilies": 6.92,
       "blockingItems": 0,
       "items": 12,
       "queryCoverageItems": 12,
-      "queryCoverageUniqueQueries": 360,
+      "queryCoverageUniqueQueries": 365,
       "readyItems": 12,
-      "warningItems": 8
+      "warningItems": 7
     },
     "topItems": [
       {
@@ -1694,19 +1696,6 @@
       {
         "descriptionHit": true,
         "exactQueryMatches": 1,
-        "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
-        "matchedFamilies": 7,
-        "readyForManualReview": true,
-        "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
-        "titleHit": true,
-        "warningIssues": [
-          "few exact query variant matches in article text"
-        ],
-        "wave": 2
-      },
-      {
-        "descriptionHit": true,
-        "exactQueryMatches": 1,
         "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
         "matchedFamilies": 7,
         "readyForManualReview": true,
@@ -1719,11 +1708,11 @@
       },
       {
         "descriptionHit": true,
-        "exactQueryMatches": 0,
-        "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+        "exactQueryMatches": 1,
+        "file": "content/blog/education-ai-prompts-guide.mdx",
         "matchedFamilies": 7,
         "readyForManualReview": true,
-        "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+        "title": "教育 AI 提示词模板：备课、教案、测验、反馈和学习计划",
         "titleHit": true,
         "warningIssues": [
           "few exact query variant matches in article text"
@@ -1732,20 +1721,18 @@
       },
       {
         "descriptionHit": true,
-        "exactQueryMatches": 0,
-        "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+        "exactQueryMatches": 2,
+        "file": "content/blog/customer-service-ai-prompts-guide.mdx",
         "matchedFamilies": 7,
         "readyForManualReview": true,
-        "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+        "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
         "titleHit": true,
-        "warningIssues": [
-          "few exact query variant matches in article text"
-        ],
-        "wave": 3
+        "warningIssues": [],
+        "wave": 2
       },
       {
         "descriptionHit": true,
-        "exactQueryMatches": 3,
+        "exactQueryMatches": 4,
         "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
         "matchedFamilies": 7,
         "readyForManualReview": true,
@@ -1769,11 +1756,36 @@
       },
       {
         "descriptionHit": true,
-        "exactQueryMatches": 1,
-        "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+        "exactQueryMatches": 2,
+        "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
         "matchedFamilies": 7,
         "readyForManualReview": true,
-        "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
+        "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+        "titleHit": true,
+        "warningIssues": [],
+        "wave": 3
+      },
+      {
+        "descriptionHit": true,
+        "exactQueryMatches": 0,
+        "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+        "matchedFamilies": 6,
+        "readyForManualReview": true,
+        "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+        "titleHit": true,
+        "warningIssues": [
+          "few exact query variant matches in article text",
+          "missing query-family signals: intentSeeds"
+        ],
+        "wave": 4
+      },
+      {
+        "descriptionHit": true,
+        "exactQueryMatches": 1,
+        "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+        "matchedFamilies": 7,
+        "readyForManualReview": true,
+        "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
         "titleHit": true,
         "warningIssues": [
           "few exact query variant matches in article text"
@@ -1782,22 +1794,11 @@
       },
       {
         "descriptionHit": true,
-        "exactQueryMatches": 2,
-        "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+        "exactQueryMatches": 1,
+        "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
         "matchedFamilies": 7,
         "readyForManualReview": true,
-        "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-        "titleHit": true,
-        "warningIssues": [],
-        "wave": 4
-      },
-      {
-        "descriptionHit": true,
-        "exactQueryMatches": 0,
-        "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
-        "matchedFamilies": 7,
-        "readyForManualReview": true,
-        "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+        "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
         "titleHit": true,
         "warningIssues": [
           "few exact query variant matches in article text"

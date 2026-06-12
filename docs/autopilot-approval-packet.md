@@ -1,6 +1,6 @@
 # Autopilot Approval Packet
 
-Generated at: 2026-06-12T06:13:28.530Z
+Generated at: 2026-06-12T16:32:24.873Z
 
 This packet is read-only. It packages the top autopilot review assignments for human approval and does not change article status.
 
@@ -38,7 +38,7 @@ This packet is read-only. It packages the top autopilot review assignments for h
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | 1723 | ai-deployment | draft | true | 14 | 11 | 8 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 1723 | industry-prompt | draft | true | 17 | 13 | 8 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | 1598 | public-coverage-gap | draft | true | 17 | 5 | 8 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 1598 | public-coverage-gap | draft | true | 18 | 5 | 8 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
 ## Item Review Notes
 
@@ -49,7 +49,7 @@ This packet is read-only. It packages the top autopilot review assignments for h
 - Status: draft
 - Description: 面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。
 - Source types: deployment, public-gap, wave
-- Quality score: 90
+- Quality score: 100
 
 Search queries:
 
@@ -114,7 +114,7 @@ Command boundary:
 - Status: draft
 - Description: 整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。
 - Source types: prompt, public-gap, wave
-- Quality score: 90
+- Quality score: 100
 
 Search queries:
 
@@ -182,7 +182,7 @@ Command boundary:
 - Status: draft
 - Description: 整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。
 - Source types: public-gap, wave
-- Quality score: 86
+- Quality score: 100
 
 Search queries:
 
@@ -199,6 +199,7 @@ Official source targets:
 - LlamaIndex docs: https://docs.llamaindex.ai
 - Hugging Face docs: https://huggingface.co/docs
 - OpenAI API docs: https://platform.openai.com/docs
+- OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
 - Vercel AI SDK docs: https://ai-sdk.dev/docs
 - OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 - https://platform.openai.com/docs/guides/retrieval
@@ -225,9 +226,9 @@ Headings:
 
 Human review focus:
 
-- Verify 17 official source target(s).
+- Verify 18 official source target(s).
 - Check 5 search query seed(s).
-- Review 10 combined checklist signal(s).
+- Review 12 combined checklist signal(s).
 - Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..
 - Complete freshness checklist for fast-changing AI/tool guidance.
 - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.

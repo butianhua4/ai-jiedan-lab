@@ -1,6 +1,6 @@
 # Review Cannibalization Brief
 
-Generated at: 2026-06-12T06:13:23.932Z
+Generated at: 2026-06-12T16:32:20.144Z
 
 This report is read-only. It checks current review candidates against published and nearby draft articles before human approval.
 
@@ -16,7 +16,7 @@ This report is read-only. It checks current review candidates against published 
 
 - Action board ready tasks: 16
 - Unique action files: 13
-- Content cannibalization generated at: 2026-06-12T06:13:23.195Z
+- Content cannibalization generated at: 2026-06-12T16:32:19.373Z
 - Global cannibalization summary: {"articleCount":669,"conflicts":200,"keywordConflicts":11,"reviewBatchConflicts":0,"slugStemConflicts":177,"titleStemConflicts":12}
 
 ## Summary
@@ -54,8 +54,8 @@ This report is read-only. It checks current review candidates against published 
 | low | monitor-only | 0 | 0 | No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article. | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | low | monitor-only | 0 | 0 | No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article. | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 | low | monitor-only | 0 | 0 | No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article. | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
-| low | monitor-only | 0 | 0 | No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article. | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | low | monitor-only | 0 | 0 | No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article. | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| low | monitor-only | 0 | 0 | No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article. | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | low | monitor-only | 0 | 0 | No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article. | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | low | monitor-only | 0 | 0 | No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article. | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | low | monitor-only | 0 | 0 | No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article. | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
@@ -231,30 +231,6 @@ Human review checklist:
 - Document why this can remain a separate article.
 - If both articles stay, add a clear internal-link relationship: pillar, comparison, implementation detail, or troubleshooting follow-up.
 
-### AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围
-
-- File: content/blog/ai-automation-project-pricing-scope-guide.mdx
-- Primary keyword: AI 自动化项目报价
-- Risk: low
-- Decision: monitor-only
-- Recommendation: No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article.
-
-Closest published articles:
-
-- none
-
-Closest draft/review articles:
-
-- none
-
-Human review checklist:
-
-- Confirm the candidate owns a distinct search intent: AI 自动化项目报价.
-- No close published article found; still confirm the title is not a duplicate promise.
-- No close draft/review candidate found.
-- Document why this can remain a separate article.
-- If both articles stay, add a clear internal-link relationship: pillar, comparison, implementation detail, or troubleshooting follow-up.
-
 ### AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急
 
 - File: content/blog/ai-api-key-security-rotation-guide.mdx
@@ -274,6 +250,30 @@ Closest draft/review articles:
 Human review checklist:
 
 - Confirm the candidate owns a distinct search intent: AI API Key 安全管理.
+- No close published article found; still confirm the title is not a duplicate promise.
+- No close draft/review candidate found.
+- Document why this can remain a separate article.
+- If both articles stay, add a clear internal-link relationship: pillar, comparison, implementation detail, or troubleshooting follow-up.
+
+### AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围
+
+- File: content/blog/ai-automation-project-pricing-scope-guide.mdx
+- Primary keyword: AI 自动化项目报价
+- Risk: low
+- Decision: monitor-only
+- Recommendation: No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article.
+
+Closest published articles:
+
+- none
+
+Closest draft/review articles:
+
+- none
+
+Human review checklist:
+
+- Confirm the candidate owns a distinct search intent: AI 自动化项目报价.
 - No close published article found; still confirm the title is not a duplicate promise.
 - No close draft/review candidate found.
 - Document why this can remain a separate article.

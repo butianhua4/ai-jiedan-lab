@@ -1,6 +1,6 @@
 # Autopilot Queued Playbook Brief
 
-Generated at: 2026-06-12T06:13:34.635Z
+Generated at: 2026-06-12T16:32:31.139Z
 
 This report is read-only. It prepares the queued-for-playbook sprint items for manual review and keeps all status changes human-gated.
 
@@ -56,7 +56,7 @@ This report is read-only. It prepares the queued-for-playbook sprint items for m
 
 - File: content/blog/ai-api-key-security-rotation-guide.mdx
 - Primary keyword: AI API Key 安全管理
-- Source evidence: next-review-source-pack, review-portfolio-board, review-action-board, review-optimization-brief, review-freshness-brief, review-cannibalization-brief, internal-link-opportunity-audit, ai-deployment-review-pack
+- Source evidence: next-review-source-pack, search-query-coverage, review-portfolio-board, review-action-board, review-optimization-brief, review-freshness-brief, review-cannibalization-brief, internal-link-opportunity-audit, ai-deployment-review-pack
 - Manual mark-review command after approval: npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human
 - Publish dry-run only after review: npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx
 - Publish confirm: not-included
@@ -90,7 +90,7 @@ Optimization actions:
 - 在相关段落加入公开内链：Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)。
 - Check whether the primary keyword can appear naturally in the title without making the title stiff.
 - Decide whether missing subtopics should become a short section or a follow-up article.
-- Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.
+- Add one FAQ or checklist line that uses a high-intent query variant such as: LLM observability.
 
 Internal link suggestions:
 
@@ -152,8 +152,8 @@ Optimization actions:
 Internal link suggestions:
 
 - Vercel 提示环境变量缺失怎么办：新手部署检查流程: /blog/vercel-env-variable-missing-beginner-guide
-- 第一个 Upwork 小项目怎么报价：新手范围和底价检查: /blog/first-upwork-project-pricing-checklist
 - Codex 怎么做第一个网页: /blog/build-first-webpage-with-codex
+- Codex 生成代码后怎么审核：交付前检查清单: /blog/codex-code-review-delivery-checklist
 
 Risk checklist:
 
@@ -201,16 +201,16 @@ Optimization actions:
 
 - 在开头 200 字内自然回答一次“RAG knowledge base tutorial”这个搜索意图，先给结论再展开步骤。
 - 补一个小节或提示框覆盖缺口：knowledge base、vector database。
-- 在相关段落加入公开内链：Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)。
+- 在相关段落加入公开内链：Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)。
 - Rewrite the meta description to name the reader, outcome, and search phrase: RAG knowledge base tutorial.
 - Add one contextual link to a published article before approval.
 - Decide whether missing subtopics should become a short section or a follow-up article.
 
 Internal link suggestions:
 
-- Codex 怎么做第一个网页: /blog/build-first-webpage-with-codex
 - Codex 生成代码后怎么审核：交付前检查清单: /blog/codex-code-review-delivery-checklist
 - Codex 和 GitHub 怎么配合：提交代码前检查: /blog/codex-github-before-commit-checklist
+- Codex 部署 Vercel 前检查什么：上线前清单: /blog/codex-vercel-deploy-preflight-checklist
 
 Risk checklist:
 
@@ -315,16 +315,16 @@ Optimization actions:
 
 - 在开头 200 字内自然回答一次“Dify deployment tutorial”这个搜索意图，先给结论再展开步骤。
 - 补一个小节或提示框覆盖缺口：self hosted、connector。
-- 在相关段落加入公开内链：第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist)。
+- 在相关段落加入公开内链：Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)。
 - Rewrite the meta description to name the reader, outcome, and search phrase: Dify deployment tutorial.
 - Check whether the primary keyword can appear naturally in the title without making the title stiff.
 - Add one contextual link to a published article before approval.
 
 Internal link suggestions:
 
-- 第一个 Upwork 小项目怎么报价：新手范围和底价检查: /blog/first-upwork-project-pricing-checklist
 - Codex 生成代码后怎么审核：交付前检查清单: /blog/codex-code-review-delivery-checklist
 - Codex 部署 Vercel 前检查什么：上线前清单: /blog/codex-vercel-deploy-preflight-checklist
+- 第一个 Upwork 小项目怎么报价：新手范围和底价检查: /blog/first-upwork-project-pricing-checklist
 
 Risk checklist:
 
@@ -420,7 +420,7 @@ Source actions:
 Optimization actions:
 
 - 在开头 200 字内自然回答一次“LLM observability 教程”这个搜索意图，先给结论再展开步骤。
-- 在相关段落加入公开内链：第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist)。
+- 在相关段落加入公开内链：Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)。
 - Check whether the primary keyword can appear naturally in the title without making the title stiff.
 - Rewrite the meta description to name the reader, outcome, and search phrase: LLM observability 教程.
 - Resolve or explicitly accept during human review: few search-seed token families appear in article text.
@@ -428,9 +428,9 @@ Optimization actions:
 
 Internal link suggestions:
 
+- Codex 生成代码后怎么审核：交付前检查清单: /blog/codex-code-review-delivery-checklist
 - 第一个 Upwork 小项目怎么报价：新手范围和底价检查: /blog/first-upwork-project-pricing-checklist
 - Vercel 提示环境变量缺失怎么办：新手部署检查流程: /blog/vercel-env-variable-missing-beginner-guide
-- Codex 生成代码后怎么审核：交付前检查清单: /blog/codex-code-review-delivery-checklist
 
 Risk checklist:
 

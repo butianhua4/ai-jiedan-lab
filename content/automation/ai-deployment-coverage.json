@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:02.581Z",
+  "generatedAt": "2026-06-12T16:31:58.312Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -58,7 +58,7 @@
           "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
         },
         {
-          "category": "接单报价",
+          "category": "项目报价",
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "primaryKeyword": "AI 自动化项目报价",
           "publishBatch": 33,
@@ -136,7 +136,7 @@
           "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
         },
         {
-          "category": "接单报价",
+          "category": "项目报价",
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "primaryKeyword": "AI 自动化项目报价",
           "publishBatch": 33,
@@ -276,7 +276,7 @@
       "audience": "用 Dify、n8n、Flowise、Coze 做自动化和知识库的人",
       "candidates": [
         {
-          "category": "接单报价",
+          "category": "项目报价",
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "primaryKeyword": "AI 自动化项目报价",
           "publishBatch": 33,
@@ -659,7 +659,7 @@
       ]
     },
     {
-      "audience": "想把 AI 应用上线的新手开发者、独立站站长、接单服务者",
+      "audience": "想把 AI 应用上线的新手开发者、独立站站长、AI 服务提供者",
       "candidates": [
         {
           "category": "AI Agent",
@@ -810,7 +810,7 @@
         "复现",
         "修复顺序",
         "验证命令",
-        "接单边界"
+        "项目边界"
       ]
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:37.839Z",
+  "generatedAt": "2026-06-12T16:32:34.395Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "broadWaveOptimizationGeneratedAt": "2026-06-12T06:13:37.358Z",
+    "broadWaveOptimizationGeneratedAt": "2026-06-12T16:32:33.906Z",
     "broadWaveOptimizationGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -397,16 +397,17 @@
         "Confirm article naturally answers search query: RAG 评测教程."
       ],
       "sourceChecks": [
+        "Verify implementation-sensitive claims against source: https://platform.openai.com/docs.",
+        "Verify implementation-sensitive claims against source: https://ai-sdk.dev/docs.",
         "Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/retrieval.",
         "Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/prompt-engineering.",
         "Verify implementation-sensitive claims against source: https://python.langchain.com/docs.",
         "Verify implementation-sensitive claims against source: https://docs.llamaindex.ai.",
         "Verify implementation-sensitive claims against source: https://huggingface.co/docs.",
-        "Verify implementation-sensitive claims against source: https://platform.openai.com/docs.",
-        "Verify implementation-sensitive claims against source: https://ai-sdk.dev/docs.",
         "Verify implementation-sensitive claims against source: https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/.",
         "Verify implementation-sensitive claims against source: https://arxiv.org/abs/2603.10700.",
         "Verify implementation-sensitive claims against source: https://www.pinecone.io/learn/retrieval-augmented-generation/.",
+        "Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/agents.",
         "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources."
       ],
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
@@ -750,13 +751,13 @@
         "Publishing remains a separate explicit approval step."
       ],
       "internalLinkFixes": [
-        "Use suggested public link: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+        "Use suggested public link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
         "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
       ],
       "manualFixReady": true,
       "publicLinkPlan": [
-        "Use suggested public link: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)."
+        "Use suggested public link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)."
       ],
       "remediationReasons": [
         "broad AI wave item needs human remediation before approval",
@@ -1220,13 +1221,13 @@
         "Publishing remains a separate explicit approval step."
       ],
       "internalLinkFixes": [
-        "Use suggested public link: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Use suggested public link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
         "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
       ],
       "manualFixReady": true,
       "publicLinkPlan": [
-        "Use suggested public link: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist)."
+        "Use suggested public link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)."
       ],
       "remediationReasons": [
         "broad AI wave item needs human remediation before approval",

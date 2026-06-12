@@ -1,6 +1,6 @@
 # Search Demand Review Pack
 
-Generated at: 2026-06-12T06:13:09.678Z
+Generated at: 2026-06-12T16:32:05.580Z
 
 This report is read-only. It converts high-search-demand lanes into manual review packets and stops before status changes or publishing.
 
@@ -27,16 +27,16 @@ This report is read-only. It converts high-search-demand lanes into manual revie
 - itemsWithSearchQueries: 16
 - lanes: 8
 - readyItems: 16
-- reviewQueueMatchedItems: 15
+- reviewQueueMatchedItems: 14
 - safeDraftItems: 16
 - unsafeItems: 0
 - zeroPublicLaneItems: 12
 
 ## Source Evidence
 
-- intakeGeneratedAt: "2026-06-12T06:13:09.208Z"
+- intakeGeneratedAt: "2026-06-12T16:32:05.096Z"
 - intakeGuardrails: {"autoCreateArticles":false,"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"trafficClaim":"not-included","note":"Read-only search-demand intake. Search queries are editorial seeds, not measured keyword volume, rankings, impressions, clicks, traffic, or revenue."}
-- intakeSummary: {"contentFormats":32,"lanes":8,"lanesWithPublicCoverage":2,"lanesWithoutPublicCoverage":6,"lanesWithReadyCandidates":8,"officialSourceTargets":29,"readyCandidateFiles":45,"reviewQueueMatches":33,"searchQueries":81,"unsafeLanes":0}
+- intakeSummary: {"contentFormats":32,"lanes":8,"lanesWithPublicCoverage":2,"lanesWithoutPublicCoverage":6,"lanesWithReadyCandidates":8,"officialSourceTargets":29,"readyCandidateFiles":43,"reviewQueueMatches":33,"searchQueries":81,"unsafeLanes":0}
 - sourceHealthFilesWithoutReachableSource: 0
 - trafficNote: "Search queries are editorial demand seeds, not measured keyword volume, ranking, impressions, clicks, traffic, or revenue."
 
@@ -74,9 +74,9 @@ This report is read-only. It converts high-search-demand lanes into manual revie
 | 610 | true | llm-evals-observability-security | 0 | true | 4 | 10 | true | 1 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | 609 | true | llm-evals-observability-security | 0 | true | 4 | 10 | true | 1 | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
 | 484 | true | ai-api-keys-limits-routing | 1 | true | 4 | 10 | true | 1 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
-| 462 | true | ai-service-pricing-delivery | 4 | true | 4 | 10 | false | 2 | 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准 | content/blog/product-manager-ai-prompts-guide.mdx |
-| 460 | true | ai-service-pricing-delivery | 4 | true | 4 | 10 | false | 2 | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
+| 463 | true | ai-service-pricing-delivery | 4 | true | 4 | 10 | false | 2 | Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则 | content/blog/agent-memory-postgres-schema-guide.mdx |
 | 459 | true | ai-api-keys-limits-routing | 1 | false | 4 | 10 | true | 1 | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
+| 437 | true | ai-service-pricing-delivery | 4 | false | 4 | 10 | false | 2 | 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准 | content/blog/product-manager-ai-prompts-guide.mdx |
 
 ## Manual Review Checklists
 
@@ -156,7 +156,7 @@ Human review checklist:
 - Check the article directly answers the primary search phrase: AI Agent deployment tutorial.
 - Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.
 - Confirm all commands, credentials, API keys, and customer data examples are safe.
-- Approve or replace internal link suggestion: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
+- Approve or replace internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
 - Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human
 - Publishing remains separate and requires explicit approval.
 
@@ -367,7 +367,7 @@ Human review checklist:
 - Check the article directly answers the primary search phrase: RAG knowledge base tutorial.
 - Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.
 - Confirm all commands, credentials, API keys, and customer data examples are safe.
-- Approve or replace internal link suggestion: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
+- Approve or replace internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
 - Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human
 - Publishing remains separate and requires explicit approval.
 
@@ -577,7 +577,7 @@ Human review checklist:
 - Check the article directly answers the primary search phrase: LLM observability tutorial.
 - Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.
 - Confirm all commands, credentials, API keys, and customer data examples are safe.
-- Approve or replace internal link suggestion: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
+- Approve or replace internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
 - Only after explicit human approval, run: npm run mark:review -- --file=content/blog/agent-tool-permission-safety-guide.mdx --confirm-human
 - Publishing remains separate and requires explicit approval.
 
@@ -627,13 +627,13 @@ Warnings:
 
 - warning: source health has no per-file reachable URL list; verify official source targets manually
 
-### 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准
+### Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则
 
-- File: content/blog/product-manager-ai-prompts-guide.mdx
+- File: content/blog/agent-memory-postgres-schema-guide.mdx
 - Lane: ai-service-pricing-delivery
 - Stop before: Stop before mark:review and stop before publish. Both require explicit human approval.
-- Manual mark-review command: `npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human`
-- Publish dry-run command after review: `npm run publish:articles -- --file=content/blog/product-manager-ai-prompts-guide.mdx`
+- Manual mark-review command: `npm run mark:review -- --file=content/blog/agent-memory-postgres-schema-guide.mdx --confirm-human`
+- Publish dry-run command after review: `npm run publish:articles -- --file=content/blog/agent-memory-postgres-schema-guide.mdx`
 - Publish confirm: not-included
 
 Search queries:
@@ -662,50 +662,7 @@ Human review checklist:
 - Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.
 - Confirm all commands, credentials, API keys, and customer data examples are safe.
 - Add one relevant public internal link or document why no link is appropriate.
-- Only after explicit human approval, run: npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human
-- Publishing remains separate and requires explicit approval.
-
-Warnings:
-
-- warning: source health has no per-file reachable URL list; verify official source targets manually
-- warning: no public internal-link suggestion found; add or explicitly reject one during human review
-
-### BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收
-
-- File: content/blog/bentoml-llm-deployment-beginner-guide.mdx
-- Lane: ai-service-pricing-delivery
-- Stop before: Stop before mark:review and stop before publish. Both require explicit human approval.
-- Manual mark-review command: `npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human`
-- Publish dry-run command after review: `npm run publish:articles -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx`
-- Publish confirm: not-included
-
-Search queries:
-
-- AI automation project pricing
-- AI agent project scope
-- RAG project quote
-- Dify n8n project pricing
-- AI deployment proposal template
-- AI service delivery checklist
-- AI 自动化项目报价
-- AI Agent 项目报价
-
-Official source targets:
-
-- OpenAI API docs: https://platform.openai.com/docs
-- Vercel AI SDK docs: https://ai-sdk.dev/docs
-- Dify docs: https://docs.dify.ai/
-- n8n docs: https://docs.n8n.io/
-
-Human review checklist:
-
-- Confirm the article is still draft, noindex=true, and humanReviewRequired=true.
-- Verify source targets for lane: ai-service-pricing-delivery.
-- Check the article directly answers the primary search phrase: AI automation project pricing.
-- Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.
-- Confirm all commands, credentials, API keys, and customer data examples are safe.
-- Add one relevant public internal link or document why no link is appropriate.
-- Only after explicit human approval, run: npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human
+- Only after explicit human approval, run: npm run mark:review -- --file=content/blog/agent-memory-postgres-schema-guide.mdx --confirm-human
 - Publishing remains separate and requires explicit approval.
 
 Warnings:
@@ -754,4 +711,47 @@ Human review checklist:
 Warnings:
 
 - warning: source health has no per-file reachable URL list; verify official source targets manually
+
+### 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准
+
+- File: content/blog/product-manager-ai-prompts-guide.mdx
+- Lane: ai-service-pricing-delivery
+- Stop before: Stop before mark:review and stop before publish. Both require explicit human approval.
+- Manual mark-review command: `npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human`
+- Publish dry-run command after review: `npm run publish:articles -- --file=content/blog/product-manager-ai-prompts-guide.mdx`
+- Publish confirm: not-included
+
+Search queries:
+
+- AI automation project pricing
+- AI agent project scope
+- RAG project quote
+- Dify n8n project pricing
+- AI deployment proposal template
+- AI service delivery checklist
+- AI 自动化项目报价
+- AI Agent 项目报价
+
+Official source targets:
+
+- OpenAI API docs: https://platform.openai.com/docs
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
+- Dify docs: https://docs.dify.ai/
+- n8n docs: https://docs.n8n.io/
+
+Human review checklist:
+
+- Confirm the article is still draft, noindex=true, and humanReviewRequired=true.
+- Verify source targets for lane: ai-service-pricing-delivery.
+- Check the article directly answers the primary search phrase: AI automation project pricing.
+- Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.
+- Confirm all commands, credentials, API keys, and customer data examples are safe.
+- Add one relevant public internal link or document why no link is appropriate.
+- Only after explicit human approval, run: npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human
+- Publishing remains separate and requires explicit approval.
+
+Warnings:
+
+- warning: source health has no per-file reachable URL list; verify official source targets manually
+- warning: no public internal-link suggestion found; add or explicitly reject one during human review
 

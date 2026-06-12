@@ -1,6 +1,6 @@
 # Autopilot Queued Remediation Pack
 
-Generated at: 2026-06-12T06:13:35.107Z
+Generated at: 2026-06-12T16:32:31.612Z
 
 This report is read-only. It turns queued playbook items into manual remediation cards and keeps article edits, mark-review, and publishing human-gated.
 
@@ -25,7 +25,7 @@ This report is read-only. It turns queued playbook items into manual remediation
 
 ## Source Evidence
 
-- queuedPlaybookGeneratedAt: "2026-06-12T06:13:34.635Z"
+- queuedPlaybookGeneratedAt: "2026-06-12T16:32:31.139Z"
 - queuedPlaybookGuardrails: {"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"note":"Read-only merged playbook for next-10 queued-for-playbook sprint items. It prepares human review without changing article status.","stopBefore":"Use this report for manual review only. mark:review requires explicit human approval per file; publish --confirm is not included."}
 - queuedPlaybookItems: 7
 - queuedPlaybookReadyItems: 7
@@ -42,10 +42,10 @@ This report is read-only. It turns queued playbook items into manual remediation
 
 | Order | Ready | Reasons | Search fixes | Source checks | Link fixes | Risk checks | Mark-review gated | Publish confirm | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 4 | true | 5 | 17 | 40 | 4 | 50 | true | not-included | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| 4 | true | 5 | 17 | 40 | 4 | 51 | true | not-included | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | 5 | true | 5 | 17 | 22 | 4 | 43 | true | not-included | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | 6 | true | 5 | 17 | 26 | 4 | 55 | true | not-included | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| 7 | true | 5 | 17 | 27 | 4 | 57 | true | not-included | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| 7 | true | 5 | 17 | 27 | 4 | 59 | true | not-included | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 | 8 | true | 5 | 17 | 28 | 4 | 60 | true | not-included | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | 9 | true | 5 | 17 | 14 | 2 | 47 | true | not-included | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
 | 10 | true | 5 | 10 | 15 | 4 | 34 | true | not-included | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
@@ -55,7 +55,7 @@ This report is read-only. It turns queued playbook items into manual remediation
 ### 4. AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急
 
 - File: content/blog/ai-api-key-security-rotation-guide.mdx
-- Source evidence: next-review-source-pack, review-portfolio-board, review-action-board, review-optimization-brief, review-freshness-brief, review-cannibalization-brief, internal-link-opportunity-audit, ai-deployment-review-pack
+- Source evidence: next-review-source-pack, search-query-coverage, review-portfolio-board, review-action-board, review-optimization-brief, review-freshness-brief, review-cannibalization-brief, internal-link-opportunity-audit, ai-deployment-review-pack
 - Manual mark-review command: `npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human`
 - Publish dry-run command after review: `npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx`
 - Publish confirm: not-included
@@ -157,8 +157,8 @@ Source checks:
 Internal-link fixes:
 
 - Add or explicitly reject public internal link: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).
-- Add or explicitly reject public internal link: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
 - Add or explicitly reject public internal link: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
+- Add or explicitly reject public internal link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
 - Confirm the link anchor is contextual and does not interrupt the tutorial flow.
 
 Risk checks:
@@ -224,9 +224,9 @@ Source checks:
 
 Internal-link fixes:
 
-- Add or explicitly reject public internal link: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
 - Add or explicitly reject public internal link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
 - Add or explicitly reject public internal link: Codex 和 GitHub 怎么配合：提交代码前检查 (/blog/codex-github-before-commit-checklist).
+- Add or explicitly reject public internal link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).
 - Confirm the link anchor is contextual and does not interrupt the tutorial flow.
 
 Risk checks:
@@ -360,9 +360,9 @@ Source checks:
 
 Internal-link fixes:
 
-- Add or explicitly reject public internal link: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
 - Add or explicitly reject public internal link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
 - Add or explicitly reject public internal link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).
+- Add or explicitly reject public internal link: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
 - Confirm the link anchor is contextual and does not interrupt the tutorial flow.
 
 Risk checks:
@@ -494,9 +494,9 @@ Source checks:
 
 Internal-link fixes:
 
+- Add or explicitly reject public internal link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
 - Add or explicitly reject public internal link: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
 - Add or explicitly reject public internal link: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).
-- Add or explicitly reject public internal link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
 - Confirm the link anchor is contextual and does not interrupt the tutorial flow.
 
 Risk checks:

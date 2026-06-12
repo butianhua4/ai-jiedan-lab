@@ -1,6 +1,6 @@
 # Mojibake Remediation Brief
 
-Generated at: 2026-06-12T06:13:43.254Z
+Generated at: 2026-06-12T16:32:39.897Z
 
 Read-only queue for likely garbled Chinese article metadata and body excerpts. It does not edit articles, mark review, publish, or claim traffic.
 
@@ -45,7 +45,7 @@ Read-only queue for likely garbled Chinese article metadata and body excerpts. I
 | 128 | published | false | false | false | internal-link-sprint | bodyExcerpt | content/blog/codex-upwork-small-job-risk-checklist.mdx |
 | 128 | published | false | false | false | internal-link-sprint | bodyExcerpt | content/blog/codex-vercel-deploy-preflight-checklist.mdx |
 | 128 | published | false | false | false | internal-link-sprint | bodyExcerpt | content/blog/codex-vs-claude-code-beginner-checklist.mdx |
-| 86 | draft | true | false | false | none | bodyExcerpt | content/blog/ai-ppt-beginner-guide.mdx |
+| 100 | draft | true | false | false | none | bodyExcerpt | content/blog/ai-ppt-beginner-guide.mdx |
 | 86 | draft | true | false | false | none | description, bodyExcerpt | content/blog/ai-tools-recommendation-beginner.mdx |
 | 86 | draft | true | false | false | none | bodyExcerpt | content/blog/dify-metadata-filtering-rag-guide.mdx |
 | 86 | draft | true | false | false | none | bodyExcerpt | content/blog/llm-cost-monitoring-dashboard-guide.mdx |

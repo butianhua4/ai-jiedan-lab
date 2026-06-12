@@ -1,6 +1,6 @@
 # Autopilot Approval Remediation Pack
 
-Generated at: 2026-06-12T06:13:30.888Z
+Generated at: 2026-06-12T16:32:27.270Z
 
 This report is read-only. It consolidates approval-packet search, internal-link, source, and copydesk fixes before human review.
 
@@ -31,7 +31,7 @@ This report is read-only. It consolidates approval-packet search, internal-link,
 - itemsWithSourceChecks: 3
 - itemsWithSourceUrlFixes: 3
 - manualFixReadyItems: 3
-- sourceUrlFixActions: 34
+- sourceUrlFixActions: 35
 - unsafeItems: 0
 
 ## Source Evidence
@@ -60,7 +60,7 @@ This report is read-only. It consolidates approval-packet search, internal-link,
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | 4 | 15 | 9 | 31 | not-included | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 3 | 10 | 9 | 35 | not-included | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | 4 | 15 | 9 | 31 | not-included | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 4 | 15 | 9 | 32 | not-included | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
 ## Per-Item Checklist
 
@@ -81,9 +81,9 @@ Reasons:
 Internal-link fixes:
 
 - Add at least one contextual link to a currently published article before approval.
-- Suggested public link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) - keyword overlap: ai, vercel, 部署, 上线, 检查, 新手.
-- Suggested public link: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) - keyword overlap: ai, 怎么, 么做, 新手, 网页, 一个.
-- Suggested public link: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist) - keyword overlap: 怎么, 检查, 项目, 新手, 一个, 第一.
+- Suggested public link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) - keyword overlap: ai, vercel, 部署, 工具, 上线, 检查.
+- Suggested public link: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) - keyword overlap: ai, 怎么, 么做, 工具, 新手, 网页.
+- Suggested public link: Codex 接 Upwork 小单怎么判断：风险检查清单 (/blog/codex-upwork-small-job-risk-checklist) - keyword overlap: ai, 怎么, 工具, 检查, 新手, 判断.
 - Copydesk public link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).
 - Add one contextual public article link during human review.
 - Review 5 suggested public link target(s).
@@ -186,8 +186,8 @@ Internal-link fixes:
 
 - Add at least one contextual link to a currently published article before approval.
 - Suggested public link: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner) - keyword overlap: proposal, 客户沟通, 怎么, 客户, 需求, 户沟.
-- Suggested public link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist) - keyword overlap: ai, 怎么, 审核, 接单, 生成, 交付.
-- Suggested public link: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) - keyword overlap: ai, 怎么, 么做, 接单, 第一.
+- Suggested public link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist) - keyword overlap: ai, 怎么, 审核, 生成, 交付, 工具.
+- Suggested public link: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) - keyword overlap: ai, 怎么, 么做, 第一, 工具.
 - Copydesk public link: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner).
 - Add one contextual public article link during human review.
 - Review 5 suggested public link target(s).
@@ -286,7 +286,7 @@ Reasons:
 
 - approval candidate has no current link to a published article
 - 4 search-intent weakness(es) need human copy review
-- 10 source URL remediation action(s) need human confirmation
+- 11 source URL remediation action(s) need human confirmation
 - copydesk warning remediation exists
 
 Internal-link fixes:
@@ -329,13 +329,14 @@ Source checks:
 - Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.
 - Confirm source redirect before approval: https://python.langchain.com/docs -> https://docs.langchain.com/oss/python/langchain/overview.
 - Confirm source redirect before approval: https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/.
+- Open source URL: https://platform.openai.com/docs.
+- Open source URL: https://ai-sdk.dev/docs.
 - Open source URL: https://platform.openai.com/docs/guides/retrieval.
 - Open source URL: https://platform.openai.com/docs/guides/prompt-engineering.
 - Open source URL: https://python.langchain.com/docs.
-- Open source URL: https://docs.llamaindex.ai.
-- Open source URL: https://huggingface.co/docs.
 - Fact-check query: 客服 AI 模型选型 官方文档 最新.
 - Fact-check query: 客服 AI 模型选型 official docs latest.
 - Fact-check query: 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 事实核对.
@@ -346,9 +347,9 @@ Source checks:
 - No API key, credential, private customer data, or account detail is included.
 - Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.
 - Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.
-- Verify 17 official source target(s).
+- Verify 18 official source target(s).
 - Check 5 search query seed(s).
-- Review 10 combined checklist signal(s).
+- Review 12 combined checklist signal(s).
 - Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..
 - Complete freshness checklist for fast-changing AI/tool guidance.
 - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.
@@ -363,6 +364,7 @@ Source URL fixes:
 - Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.
 - Confirm source redirect before approval: https://python.langchain.com/docs -> https://docs.langchain.com/oss/python/langchain/overview.
 - Confirm source redirect before approval: https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/.
 
@@ -370,7 +372,7 @@ Human checklist:
 
 - Review reason: approval candidate has no current link to a published article.
 - Review reason: 4 search-intent weakness(es) need human copy review.
-- Review reason: 10 source URL remediation action(s) need human confirmation.
+- Review reason: 11 source URL remediation action(s) need human confirmation.
 - Review reason: copydesk warning remediation exists.
 - Apply or explicitly reject the internal-link suggestion before mark:review.
 - Resolve or explicitly accept search-intent weaknesses before mark:review.

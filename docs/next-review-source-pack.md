@@ -1,6 +1,6 @@
 # Next Review Source Pack
 
-Generated at: 2026-06-12T06:13:05.498Z
+Generated at: 2026-06-12T16:32:01.323Z
 
 This pack is read-only. It prepares official-source, fact-check, approval, and risk-review work for the roadmap's next review files.
 
@@ -27,7 +27,7 @@ This pack is read-only. It prepares official-source, fact-check, approval, and r
 | Safe | Current | Planned | Score | Sources | Queries | Risk checks | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | false | true | 100 | 8 | 8 | 8 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| true | true | true | 100 | 7 | 8 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | true | true | 100 | 8 | 8 | 8 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | false | true | 100 | 10 | 8 | 7 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | true | true | true | 100 | 6 | 8 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | true | true | 100 | 4 | 9 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
@@ -58,7 +58,7 @@ This pack is read-only. It prepares official-source, fact-check, approval, and r
 - Status: draft
 - Safe draft: true
 - Source notes present: true
-- Chinese chars: 1701
+- Chinese chars: 1951
 - Internal links: 6
 
 Approval checklist:
@@ -147,6 +147,7 @@ Official source targets:
 - LlamaIndex docs: https://docs.llamaindex.ai
 - Hugging Face docs: https://huggingface.co/docs
 - OpenAI API docs: https://platform.openai.com/docs
+- OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
 - Vercel AI SDK docs: https://ai-sdk.dev/docs
 - OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 
@@ -167,7 +168,9 @@ Risk review checklist:
 - No instruction to bypass platform, payment, messaging, account, or review rules.
 - No API key, credential, private customer data, or account detail is included.
 - Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.
+- Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.
 - RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.
+- Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.
 - Prompt examples include input context, output criteria, review rules, and adaptation notes.
 
 Workflow angles:
@@ -184,14 +187,14 @@ Workflow angles:
 - File: content/blog/ai-automation-project-pricing-scope-guide.mdx
 - Lane: deployment: RAG、知识库和向量检索
 - Lane priority score: 348
-- Category: 接单报价
+- Category: 项目报价
 - Primary keyword: AI 自动化项目报价
 - Search intent: informational
 - Publish batch: 33
 - Status: draft
 - Safe draft: true
 - Source notes present: true
-- Chinese chars: 1303
+- Chinese chars: 1305
 - Internal links: 4
 
 Approval checklist:
@@ -223,7 +226,7 @@ Fact-check queries:
 - AI 自动化项目报价 official docs latest
 - AI 自动化项目报价 official documentation current limits
 - AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 fact check official docs
-- 接单报价 official docs limits pricing changelog
+- 项目报价 official docs limits pricing changelog
 - RAG 知识库搭建教程
 - 企业知识库 AI 部署
 - 向量数据库 RAG 教程

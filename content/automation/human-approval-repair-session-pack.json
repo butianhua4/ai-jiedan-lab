@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:33.224Z",
+  "generatedAt": "2026-06-12T16:32:29.676Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -15,7 +15,7 @@
     "progressOpenCategories": 11,
     "progressUnsafeItems": 0,
     "remediationItems": 3,
-    "remediationSourceUrlFixActions": 34,
+    "remediationSourceUrlFixActions": 35,
     "remediationUnsafeItems": 0,
     "routeFiles": 3,
     "routeSessions": 12,
@@ -35,10 +35,10 @@
     "publishConfirmCommandsIncluded": 0,
     "readyForHumanApprovalAfterRepair": 0,
     "searchActions": 0,
-    "sessionActions": 192,
-    "sourceReviewActions": 130,
-    "sourceTargetUrlItems": 18,
-    "sourceUrlActions": 62,
+    "sessionActions": 194,
+    "sourceReviewActions": 131,
+    "sourceTargetUrlItems": 19,
+    "sourceUrlActions": 63,
     "trafficDataAvailable": false,
     "unsafeItems": 0
   },
@@ -147,10 +147,10 @@
         {
           "affectedFiles": [
             "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+            "content/blog/ai-model-selection-customer-service-guide.mdx",
             "content/blog/industry-ai-prompts-template-library-2026.mdx",
             "content/blog/dify-workflow-error-handling-guide.mdx",
             "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-            "content/blog/ai-model-selection-customer-service-guide.mdx",
             "content/blog/ai-api-key-security-rotation-guide.mdx",
             "content/blog/ai-agent-memory-rag-design-guide.mdx",
             "content/blog/ai-automation-project-pricing-scope-guide.mdx",
@@ -172,10 +172,10 @@
           ],
           "affectedTitles": [
             "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
             "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
             "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
             "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
             "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
@@ -212,13 +212,20 @@
             "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
           ],
           "manualFixReady": true,
-          "referenceCount": 30,
+          "referenceCount": 31,
           "references": [
             {
               "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
               "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
               "scope": "current-review",
               "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+              "url": "https://ai-sdk.dev/docs"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+              "scope": "current-review",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://ai-sdk.dev/docs"
             },
             {
@@ -257,17 +264,17 @@
               "url": "https://ai-sdk.dev/docs"
             },
             {
-              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-              "label": "https://ai-sdk.dev/docs",
-              "scope": "public-gap-decision",
-              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-              "url": "https://ai-sdk.dev/docs"
-            },
-            {
               "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
               "label": "https://ai-sdk.dev/docs",
               "scope": "public-gap-decision",
               "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://ai-sdk.dev/docs"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "https://ai-sdk.dev/docs",
+              "scope": "public-gap-decision",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://ai-sdk.dev/docs"
             },
             {
@@ -439,9 +446,9 @@
         {
           "affectedFiles": [
             "content/blog/industry-ai-prompts-template-library-2026.mdx",
+            "content/blog/ai-model-selection-customer-service-guide.mdx",
             "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
             "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-            "content/blog/ai-model-selection-customer-service-guide.mdx",
             "content/blog/ai-api-key-security-rotation-guide.mdx",
             "content/blog/ai-agent-memory-rag-design-guide.mdx",
             "content/blog/ai-automation-project-pricing-scope-guide.mdx",
@@ -466,9 +473,9 @@
           ],
           "affectedTitles": [
             "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
             "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
             "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
             "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
@@ -508,13 +515,20 @@
             "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
           ],
           "manualFixReady": true,
-          "referenceCount": 30,
+          "referenceCount": 31,
           "references": [
             {
               "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
               "label": "OpenAI docs: https://platform.openai.com/docs",
               "scope": "current-review",
               "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+              "url": "https://platform.openai.com/docs"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "OpenAI docs: https://platform.openai.com/docs",
+              "scope": "current-review",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://platform.openai.com/docs"
             },
             {
@@ -539,17 +553,17 @@
               "url": "https://platform.openai.com/docs"
             },
             {
-              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-              "label": "https://platform.openai.com/docs",
-              "scope": "public-gap-decision",
-              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-              "url": "https://platform.openai.com/docs"
-            },
-            {
               "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
               "label": "https://platform.openai.com/docs",
               "scope": "public-gap-decision",
               "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://platform.openai.com/docs"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "https://platform.openai.com/docs",
+              "scope": "public-gap-decision",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://platform.openai.com/docs"
             },
             {
@@ -846,17 +860,17 @@
               "url": "https://platform.openai.com/docs/guides/prompt-engineering"
             },
             {
-              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-              "label": "https://platform.openai.com/docs/guides/prompt-engineering",
-              "scope": "public-gap-decision",
-              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-              "url": "https://platform.openai.com/docs/guides/prompt-engineering"
-            },
-            {
               "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
               "label": "https://platform.openai.com/docs/guides/prompt-engineering",
               "scope": "public-gap-decision",
               "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+              "scope": "public-gap-decision",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://platform.openai.com/docs/guides/prompt-engineering"
             },
             {
@@ -1122,13 +1136,6 @@
               "url": "https://platform.openai.com/docs/guides/retrieval"
             },
             {
-              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-              "label": "https://platform.openai.com/docs/guides/retrieval",
-              "scope": "public-gap-decision",
-              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-              "url": "https://platform.openai.com/docs/guides/retrieval"
-            },
-            {
               "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
               "label": "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
               "scope": "public-gap-decision",
@@ -1140,6 +1147,13 @@
               "label": "https://platform.openai.com/docs/guides/retrieval",
               "scope": "public-gap-decision",
               "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://platform.openai.com/docs/guides/retrieval"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "https://platform.openai.com/docs/guides/retrieval",
+              "scope": "public-gap-decision",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://platform.openai.com/docs/guides/retrieval"
             },
             {
@@ -1307,6 +1321,7 @@
             "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
             "content/blog/ai-api-key-security-rotation-guide.mdx",
             "content/blog/ai-agent-memory-rag-design-guide.mdx",
+            "content/blog/ai-model-selection-customer-service-guide.mdx",
             "content/blog/ai-automation-project-pricing-scope-guide.mdx",
             "content/blog/dify-workflow-error-handling-guide.mdx",
             "content/blog/dify-workflow-vs-agent-guide.mdx",
@@ -1324,6 +1339,7 @@
             "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
             "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
             "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
             "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
             "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
@@ -1354,7 +1370,7 @@
             "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
           ],
           "manualFixReady": true,
-          "referenceCount": 18,
+          "referenceCount": 19,
           "references": [
             {
               "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
@@ -1396,6 +1412,13 @@
               "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
               "scope": "next-source-pack",
               "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+              "scope": "next-source-pack",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://platform.openai.com/docs/guides/agents"
             },
             {
@@ -1498,8 +1521,8 @@
           "affectedFiles": [
             "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
             "content/blog/ai-agent-memory-rag-design-guide.mdx",
-            "content/blog/ai-model-selection-customer-service-guide.mdx",
             "content/blog/ai-api-key-security-rotation-guide.mdx",
+            "content/blog/ai-model-selection-customer-service-guide.mdx",
             "content/blog/ai-automation-project-pricing-scope-guide.mdx",
             "content/blog/dify-workflow-error-handling-guide.mdx",
             "content/blog/dify-workflow-vs-agent-guide.mdx",
@@ -1513,8 +1536,8 @@
           "affectedTitles": [
             "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
             "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
-            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
             "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
             "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
@@ -1567,13 +1590,6 @@
               "url": "https://python.langchain.com/docs"
             },
             {
-              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-              "label": "https://python.langchain.com/docs",
-              "scope": "public-gap-decision",
-              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-              "url": "https://python.langchain.com/docs"
-            },
-            {
               "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
               "label": "LangChain docs: https://python.langchain.com/docs",
               "scope": "public-gap-decision",
@@ -1585,6 +1601,13 @@
               "label": "https://python.langchain.com/docs",
               "scope": "public-gap-decision",
               "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://python.langchain.com/docs"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "https://python.langchain.com/docs",
+              "scope": "public-gap-decision",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://python.langchain.com/docs"
             },
             {
@@ -1939,10 +1962,10 @@
         {
           "affectedFiles": [
             "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+            "content/blog/ai-model-selection-customer-service-guide.mdx",
             "content/blog/industry-ai-prompts-template-library-2026.mdx",
             "content/blog/dify-workflow-error-handling-guide.mdx",
             "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-            "content/blog/ai-model-selection-customer-service-guide.mdx",
             "content/blog/ai-api-key-security-rotation-guide.mdx",
             "content/blog/ai-agent-memory-rag-design-guide.mdx",
             "content/blog/ai-automation-project-pricing-scope-guide.mdx",
@@ -1964,10 +1987,10 @@
           ],
           "affectedTitles": [
             "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
             "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
             "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
             "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
             "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
@@ -2004,13 +2027,20 @@
             "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
           ],
           "manualFixReady": true,
-          "referenceCount": 30,
+          "referenceCount": 31,
           "references": [
             {
               "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
               "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
               "scope": "current-review",
               "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+              "url": "https://ai-sdk.dev/docs"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+              "scope": "current-review",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://ai-sdk.dev/docs"
             },
             {
@@ -2049,17 +2079,17 @@
               "url": "https://ai-sdk.dev/docs"
             },
             {
-              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-              "label": "https://ai-sdk.dev/docs",
-              "scope": "public-gap-decision",
-              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-              "url": "https://ai-sdk.dev/docs"
-            },
-            {
               "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
               "label": "https://ai-sdk.dev/docs",
               "scope": "public-gap-decision",
               "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://ai-sdk.dev/docs"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "https://ai-sdk.dev/docs",
+              "scope": "public-gap-decision",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://ai-sdk.dev/docs"
             },
             {
@@ -2231,9 +2261,9 @@
         {
           "affectedFiles": [
             "content/blog/industry-ai-prompts-template-library-2026.mdx",
+            "content/blog/ai-model-selection-customer-service-guide.mdx",
             "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
             "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-            "content/blog/ai-model-selection-customer-service-guide.mdx",
             "content/blog/ai-api-key-security-rotation-guide.mdx",
             "content/blog/ai-agent-memory-rag-design-guide.mdx",
             "content/blog/ai-automation-project-pricing-scope-guide.mdx",
@@ -2258,9 +2288,9 @@
           ],
           "affectedTitles": [
             "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
             "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
             "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
             "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
@@ -2300,13 +2330,20 @@
             "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
           ],
           "manualFixReady": true,
-          "referenceCount": 30,
+          "referenceCount": 31,
           "references": [
             {
               "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
               "label": "OpenAI docs: https://platform.openai.com/docs",
               "scope": "current-review",
               "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+              "url": "https://platform.openai.com/docs"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "OpenAI docs: https://platform.openai.com/docs",
+              "scope": "current-review",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://platform.openai.com/docs"
             },
             {
@@ -2331,17 +2368,17 @@
               "url": "https://platform.openai.com/docs"
             },
             {
-              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-              "label": "https://platform.openai.com/docs",
-              "scope": "public-gap-decision",
-              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-              "url": "https://platform.openai.com/docs"
-            },
-            {
               "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
               "label": "https://platform.openai.com/docs",
               "scope": "public-gap-decision",
               "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://platform.openai.com/docs"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "https://platform.openai.com/docs",
+              "scope": "public-gap-decision",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://platform.openai.com/docs"
             },
             {
@@ -2638,17 +2675,17 @@
               "url": "https://platform.openai.com/docs/guides/prompt-engineering"
             },
             {
-              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-              "label": "https://platform.openai.com/docs/guides/prompt-engineering",
-              "scope": "public-gap-decision",
-              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-              "url": "https://platform.openai.com/docs/guides/prompt-engineering"
-            },
-            {
               "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
               "label": "https://platform.openai.com/docs/guides/prompt-engineering",
               "scope": "public-gap-decision",
               "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+              "scope": "public-gap-decision",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://platform.openai.com/docs/guides/prompt-engineering"
             },
             {
@@ -2914,13 +2951,6 @@
               "url": "https://platform.openai.com/docs/guides/retrieval"
             },
             {
-              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-              "label": "https://platform.openai.com/docs/guides/retrieval",
-              "scope": "public-gap-decision",
-              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-              "url": "https://platform.openai.com/docs/guides/retrieval"
-            },
-            {
               "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
               "label": "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
               "scope": "public-gap-decision",
@@ -2932,6 +2962,13 @@
               "label": "https://platform.openai.com/docs/guides/retrieval",
               "scope": "public-gap-decision",
               "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://platform.openai.com/docs/guides/retrieval"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "https://platform.openai.com/docs/guides/retrieval",
+              "scope": "public-gap-decision",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://platform.openai.com/docs/guides/retrieval"
             },
             {
@@ -3279,13 +3316,14 @@
         "Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.",
         "Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.",
         "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
+        "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
         "Confirm source redirect before approval: https://python.langchain.com/docs -> https://docs.langchain.com/oss/python/langchain/overview.",
         "Confirm source redirect before approval: https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/.",
+        "Open source URL: https://platform.openai.com/docs.",
+        "Open source URL: https://ai-sdk.dev/docs.",
         "Open source URL: https://platform.openai.com/docs/guides/retrieval.",
         "Open source URL: https://platform.openai.com/docs/guides/prompt-engineering.",
         "Open source URL: https://python.langchain.com/docs.",
-        "Open source URL: https://docs.llamaindex.ai.",
-        "Open source URL: https://huggingface.co/docs.",
         "Fact-check query: 客服 AI 模型选型 官方文档 最新.",
         "Fact-check query: 客服 AI 模型选型 official docs latest.",
         "Fact-check query: 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 事实核对.",
@@ -3296,9 +3334,9 @@
         "No API key, credential, private customer data, or account detail is included.",
         "Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.",
         "Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.",
-        "Verify 17 official source target(s).",
+        "Verify 18 official source target(s).",
         "Check 5 search query seed(s).",
-        "Review 10 combined checklist signal(s).",
+        "Review 12 combined checklist signal(s).",
         "Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..",
         "Complete freshness checklist for fast-changing AI/tool guidance.",
         "Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.",
@@ -3318,10 +3356,10 @@
         {
           "affectedFiles": [
             "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+            "content/blog/ai-model-selection-customer-service-guide.mdx",
             "content/blog/industry-ai-prompts-template-library-2026.mdx",
             "content/blog/dify-workflow-error-handling-guide.mdx",
             "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-            "content/blog/ai-model-selection-customer-service-guide.mdx",
             "content/blog/ai-api-key-security-rotation-guide.mdx",
             "content/blog/ai-agent-memory-rag-design-guide.mdx",
             "content/blog/ai-automation-project-pricing-scope-guide.mdx",
@@ -3343,10 +3381,10 @@
           ],
           "affectedTitles": [
             "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
             "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
             "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
             "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
             "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
@@ -3383,13 +3421,20 @@
             "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
           ],
           "manualFixReady": true,
-          "referenceCount": 30,
+          "referenceCount": 31,
           "references": [
             {
               "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
               "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
               "scope": "current-review",
               "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+              "url": "https://ai-sdk.dev/docs"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+              "scope": "current-review",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://ai-sdk.dev/docs"
             },
             {
@@ -3428,17 +3473,17 @@
               "url": "https://ai-sdk.dev/docs"
             },
             {
-              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-              "label": "https://ai-sdk.dev/docs",
-              "scope": "public-gap-decision",
-              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-              "url": "https://ai-sdk.dev/docs"
-            },
-            {
               "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
               "label": "https://ai-sdk.dev/docs",
               "scope": "public-gap-decision",
               "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://ai-sdk.dev/docs"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "https://ai-sdk.dev/docs",
+              "scope": "public-gap-decision",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://ai-sdk.dev/docs"
             },
             {
@@ -3610,9 +3655,9 @@
         {
           "affectedFiles": [
             "content/blog/industry-ai-prompts-template-library-2026.mdx",
+            "content/blog/ai-model-selection-customer-service-guide.mdx",
             "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
             "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-            "content/blog/ai-model-selection-customer-service-guide.mdx",
             "content/blog/ai-api-key-security-rotation-guide.mdx",
             "content/blog/ai-agent-memory-rag-design-guide.mdx",
             "content/blog/ai-automation-project-pricing-scope-guide.mdx",
@@ -3637,9 +3682,9 @@
           ],
           "affectedTitles": [
             "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
             "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
             "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
             "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
@@ -3679,13 +3724,20 @@
             "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
           ],
           "manualFixReady": true,
-          "referenceCount": 30,
+          "referenceCount": 31,
           "references": [
             {
               "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
               "label": "OpenAI docs: https://platform.openai.com/docs",
               "scope": "current-review",
               "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+              "url": "https://platform.openai.com/docs"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "OpenAI docs: https://platform.openai.com/docs",
+              "scope": "current-review",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://platform.openai.com/docs"
             },
             {
@@ -3710,17 +3762,17 @@
               "url": "https://platform.openai.com/docs"
             },
             {
-              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-              "label": "https://platform.openai.com/docs",
-              "scope": "public-gap-decision",
-              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-              "url": "https://platform.openai.com/docs"
-            },
-            {
               "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
               "label": "https://platform.openai.com/docs",
               "scope": "public-gap-decision",
               "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://platform.openai.com/docs"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "https://platform.openai.com/docs",
+              "scope": "public-gap-decision",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://platform.openai.com/docs"
             },
             {
@@ -4017,17 +4069,17 @@
               "url": "https://platform.openai.com/docs/guides/prompt-engineering"
             },
             {
-              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-              "label": "https://platform.openai.com/docs/guides/prompt-engineering",
-              "scope": "public-gap-decision",
-              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-              "url": "https://platform.openai.com/docs/guides/prompt-engineering"
-            },
-            {
               "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
               "label": "https://platform.openai.com/docs/guides/prompt-engineering",
               "scope": "public-gap-decision",
               "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+              "scope": "public-gap-decision",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://platform.openai.com/docs/guides/prompt-engineering"
             },
             {
@@ -4293,13 +4345,6 @@
               "url": "https://platform.openai.com/docs/guides/retrieval"
             },
             {
-              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-              "label": "https://platform.openai.com/docs/guides/retrieval",
-              "scope": "public-gap-decision",
-              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-              "url": "https://platform.openai.com/docs/guides/retrieval"
-            },
-            {
               "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
               "label": "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
               "scope": "public-gap-decision",
@@ -4311,6 +4356,13 @@
               "label": "https://platform.openai.com/docs/guides/retrieval",
               "scope": "public-gap-decision",
               "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://platform.openai.com/docs/guides/retrieval"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "https://platform.openai.com/docs/guides/retrieval",
+              "scope": "public-gap-decision",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://platform.openai.com/docs/guides/retrieval"
             },
             {
@@ -4475,9 +4527,211 @@
         {
           "affectedFiles": [
             "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+            "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+            "content/blog/ai-api-key-security-rotation-guide.mdx",
             "content/blog/ai-agent-memory-rag-design-guide.mdx",
             "content/blog/ai-model-selection-customer-service-guide.mdx",
+            "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+            "content/blog/dify-workflow-error-handling-guide.mdx",
+            "content/blog/dify-workflow-vs-agent-guide.mdx",
+            "content/blog/local-llm-vram-not-enough-guide.mdx",
+            "content/blog/claude-api-rate-limit-debug-guide.mdx",
+            "content/blog/gemini-api-rate-limit-debug-guide.mdx"
+          ],
+          "affectedScopes": [
+            "public-gap-decision",
+            "next-source-pack",
+            "broad-first-coverage"
+          ],
+          "affectedTitles": [
+            "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+            "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+            "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+            "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+            "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+            "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+            "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+            "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
+            "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+            "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型"
+          ],
+          "finalUrl": "https://developers.openai.com/api/docs/guides/agents",
+          "humanChecklist": [
+            "Review URL: https://platform.openai.com/docs/guides/agents.",
+            "Review final URL: https://developers.openai.com/api/docs/guides/agents.",
+            "HTTP status observed by automation: 200.",
+            "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
+            "If the final URL is the canonical destination, update the source target during human review.",
+            "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
+            "Confirm the affected draft still cites source material that matches its implementation-sensitive claims.",
+            "Prefer the final URL when it is canonical, current, and content-equivalent.",
+            "Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
+            "Replace the source if the redirect weakens specificity or points to a general landing page.",
+            "Keep article status, noindex, and humanReviewRequired unchanged until explicit approval.",
+            "Publishing remains separate and is not included in this remediation pack."
+          ],
+          "kind": "redirected-url",
+          "manualActions": [
+            "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
+            "If the final URL is the canonical destination, update the source target during human review.",
+            "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
+            "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
+          ],
+          "manualFixReady": true,
+          "referenceCount": 19,
+          "references": [
+            {
+              "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+              "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+              "scope": "public-gap-decision",
+              "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+              "label": "https://platform.openai.com/docs/guides/agents",
+              "scope": "public-gap-decision",
+              "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+              "label": "https://platform.openai.com/docs/guides/agents",
+              "scope": "public-gap-decision",
+              "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+              "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+              "scope": "public-gap-decision",
+              "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+              "label": "https://platform.openai.com/docs/guides/agents",
+              "scope": "public-gap-decision",
+              "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+              "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+              "scope": "next-source-pack",
+              "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+              "scope": "next-source-pack",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+              "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+              "scope": "next-source-pack",
+              "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+              "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+              "scope": "next-source-pack",
+              "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+              "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+              "scope": "next-source-pack",
+              "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+              "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+              "scope": "next-source-pack",
+              "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
+              "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+              "scope": "next-source-pack",
+              "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+              "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+              "scope": "next-source-pack",
+              "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+              "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+              "scope": "next-source-pack",
+              "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+              "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+              "scope": "next-source-pack",
+              "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
+              "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+              "scope": "next-source-pack",
+              "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+              "label": "https://platform.openai.com/docs/guides/agents",
+              "scope": "broad-first-coverage",
+              "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+              "label": "https://platform.openai.com/docs/guides/agents",
+              "scope": "broad-first-coverage",
+              "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            },
+            {
+              "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+              "label": "https://platform.openai.com/docs/guides/agents",
+              "scope": "broad-first-coverage",
+              "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://platform.openai.com/docs/guides/agents"
+            }
+          ],
+          "replacementCandidates": [],
+          "replacementPlan": [
+            "Prefer the final URL when it is canonical, current, and content-equivalent.",
+            "Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
+            "Replace the source if the redirect weakens specificity or points to a general landing page."
+          ],
+          "status": 200,
+          "stopBefore": "Stop before human approval until a reviewer confirms the final redirected URL is canonical and content-equivalent.",
+          "unsafeReasons": [],
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
+          "affectedFiles": [
+            "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+            "content/blog/ai-agent-memory-rag-design-guide.mdx",
             "content/blog/ai-api-key-security-rotation-guide.mdx",
+            "content/blog/ai-model-selection-customer-service-guide.mdx",
             "content/blog/ai-automation-project-pricing-scope-guide.mdx",
             "content/blog/dify-workflow-error-handling-guide.mdx",
             "content/blog/dify-workflow-vs-agent-guide.mdx",
@@ -4491,8 +4745,8 @@
           "affectedTitles": [
             "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
             "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
-            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+            "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
             "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
             "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
@@ -4545,13 +4799,6 @@
               "url": "https://python.langchain.com/docs"
             },
             {
-              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-              "label": "https://python.langchain.com/docs",
-              "scope": "public-gap-decision",
-              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-              "url": "https://python.langchain.com/docs"
-            },
-            {
               "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
               "label": "LangChain docs: https://python.langchain.com/docs",
               "scope": "public-gap-decision",
@@ -4563,6 +4810,13 @@
               "label": "https://python.langchain.com/docs",
               "scope": "public-gap-decision",
               "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+              "url": "https://python.langchain.com/docs"
+            },
+            {
+              "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "label": "https://python.langchain.com/docs",
+              "scope": "public-gap-decision",
+              "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
               "url": "https://python.langchain.com/docs"
             },
             {
@@ -4761,6 +5015,7 @@
         "Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.",
         "Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.",
         "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
+        "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
         "Confirm source redirect before approval: https://python.langchain.com/docs -> https://docs.langchain.com/oss/python/langchain/overview.",
         "Confirm source redirect before approval: https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/.",
         "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",

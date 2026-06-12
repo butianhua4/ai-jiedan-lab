@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:21.615Z",
+  "generatedAt": "2026-06-12T16:32:17.749Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -169,7 +169,7 @@
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "humanActionPlan": [
         "Review source lanes together: public-gap, wave.",
-        "Verify 17 official source target(s) before any approval.",
+        "Verify 18 official source target(s) before any approval.",
         "Check search intent against 5 query seed(s).",
         "Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.",
         "Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.",
@@ -177,7 +177,7 @@
       ],
       "priorityScore": 1250,
       "readyForHumanReview": true,
-      "reviewChecklistCount": 10,
+      "reviewChecklistCount": 12,
       "safeDraft": true,
       "searchQueries": [
         "RAG 知识库搭建教程",
@@ -192,6 +192,7 @@
         "LlamaIndex docs: https://docs.llamaindex.ai",
         "Hugging Face docs: https://huggingface.co/docs",
         "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
         "https://platform.openai.com/docs/guides/retrieval",
@@ -669,7 +670,7 @@
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "humanActionPlan": [
         "Review source lanes together: public-gap, wave.",
-        "Verify 17 official source target(s) before any approval.",
+        "Verify 18 official source target(s) before any approval.",
         "Check search intent against 5 query seed(s).",
         "Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.",
         "Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.",
@@ -677,7 +678,7 @@
       ],
       "priorityScore": 1250,
       "readyForHumanReview": true,
-      "reviewChecklistCount": 10,
+      "reviewChecklistCount": 12,
       "safeDraft": true,
       "searchQueries": [
         "RAG 知识库搭建教程",
@@ -692,6 +693,7 @@
         "LlamaIndex docs: https://docs.llamaindex.ai",
         "Hugging Face docs: https://huggingface.co/docs",
         "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
         "https://platform.openai.com/docs/guides/retrieval",
@@ -1081,7 +1083,7 @@
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "humanActionPlan": [
         "Review source lanes together: public-gap, wave.",
-        "Verify 17 official source target(s) before any approval.",
+        "Verify 18 official source target(s) before any approval.",
         "Check search intent against 5 query seed(s).",
         "Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.",
         "Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.",
@@ -1089,7 +1091,7 @@
       ],
       "priorityScore": 1250,
       "readyForHumanReview": true,
-      "reviewChecklistCount": 10,
+      "reviewChecklistCount": 12,
       "safeDraft": true,
       "searchQueries": [
         "RAG 知识库搭建教程",
@@ -1104,6 +1106,7 @@
         "LlamaIndex docs: https://docs.llamaindex.ai",
         "Hugging Face docs: https://huggingface.co/docs",
         "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
         "https://platform.openai.com/docs/guides/retrieval",

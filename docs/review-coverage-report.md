@@ -1,6 +1,6 @@
 # Review Coverage Report
 
-Generated at: 2026-06-12T06:13:40.243Z
+Generated at: 2026-06-12T16:32:36.833Z
 
 This report expands manual review coverage across the planned candidate batches. It is read-only and does not publish or mark review.
 
@@ -36,9 +36,9 @@ This report expands manual review coverage across the planned candidate batches.
 | Batch | Pack | Risk | Quality | Status | Noindex | Human Review | Sources | Queries | Checks | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | current | high | 100 | draft | true | true | 1 | 8 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| 1 | planned | high | 100 | draft | true | true | 3 | 7 | 8 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| 1 | planned | high | 100 | draft | true | true | 4 | 7 | 8 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | 1 | planned | high | 100 | draft | true | true | 3 | 7 | 7 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
-| 2 | current | high | 100 | draft | true | true | 2 | 8 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 2 | current | high | 100 | draft | true | true | 4 | 8 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 2 | planned | high | 100 | draft | true | true | 2 | 7 | 6 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 | 2 | planned | high | 100 | draft | true | true | 4 | 7 | 6 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 | 3 | current | high | 100 | draft | true | true | 2 | 8 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
@@ -111,7 +111,7 @@ Review focus:
 - Search intent: informational
 - Opportunity score: 260
 - Opportunity reason: Agent and memory cluster; no public article in cluster; no public article in category
-- Chinese chars: 1701
+- Chinese chars: 1951
 - Internal links: 6
 - Freshness risk: high
 
@@ -120,6 +120,7 @@ Official source targets:
 - OpenAI docs: https://platform.openai.com/docs
 - Vercel AI SDK docs: https://ai-sdk.dev/docs
 - OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
+- GitHub docs: https://docs.github.com
 
 Fact-check queries:
 
@@ -164,13 +165,13 @@ Review focus:
 
 - File: content/blog/ai-automation-project-pricing-scope-guide.mdx
 - Topic: Agent 部署、工具调用和记忆
-- Category: 接单报价
+- Category: 项目报价
 - Cluster: Agent and memory
 - Primary keyword: AI 自动化项目报价
 - Search intent: informational
 - Opportunity score: 253
 - Opportunity reason: Agent and memory cluster; no public article in cluster; no public article in category
-- Chinese chars: 1303
+- Chinese chars: 1305
 - Internal links: 4
 - Freshness risk: high
 
@@ -234,6 +235,8 @@ Review focus:
 
 Official source targets:
 
+- OpenAI docs: https://platform.openai.com/docs
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
 - OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
 - OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 
@@ -285,7 +288,7 @@ Review focus:
 - Search intent: informational
 - Opportunity score: 253
 - Opportunity reason: Agent and memory cluster; no public article in cluster; no public article in category
-- Chinese chars: 1268
+- Chinese chars: 1266
 - Internal links: 5
 - Freshness risk: high
 

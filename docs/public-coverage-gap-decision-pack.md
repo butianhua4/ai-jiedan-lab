@@ -1,6 +1,6 @@
 # Public Coverage Gap Decision Pack
 
-Generated at: 2026-06-12T06:13:17.520Z
+Generated at: 2026-06-12T16:32:13.568Z
 
 This report is read-only. It turns public coverage gap preflight warnings into human review decisions and explicit command boundaries.
 
@@ -14,7 +14,7 @@ This report is read-only. It turns public coverage gap preflight warnings into h
 
 ## Source Evidence
 
-- Preflight generated at: 2026-06-12T06:13:17.057Z
+- Preflight generated at: 2026-06-12T16:32:13.087Z
 - Traffic note: Search seeds and link suggestions are editorial signals, not measured rankings, impressions, clicks, traffic, or income.
 - Preflight summary: {"blockingItems":0,"broadFirstCoverageItems":8,"broadFirstCoveragePreflightItems":8,"items":13,"planItems":8,"planReadyItems":8,"planUnsafeItems":0,"planWaves":4,"readyItems":13,"structuredDataReadyItems":13,"uniqueFiles":13,"warningItems":13,"withPublicLinkSuggestions":13,"withSeedMatches":12}
 
@@ -52,17 +52,17 @@ This report is read-only. It turns public coverage gap preflight warnings into h
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | human-review-ready-with-optimizations | medium | 11 | 0/9 | /blog/codex-vercel-deploy-preflight-checklist | 3 | Agent deployment, tool calling, and production workflows | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 1 | human-review-ready-with-optimizations | medium | 10 | 1/9 | /blog/upwork-client-requirements-analysis-beginner | 2 | Cross-industry AI prompt templates | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| 2 | human-review-ready-with-optimizations | medium | 3 | 0/4 | /blog/build-first-webpage-with-codex | 3 | RAG, knowledge base, and agent memory | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| 2 | human-review-ready-with-optimizations | medium | 3 | 0/4 | /blog/codex-code-review-delivery-checklist | 3 | RAG, knowledge base, and agent memory | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | 2 | human-review-ready-with-optimizations | medium | 3 | 0/3 | /blog/build-first-webpage-with-codex | 4 | Local and open-source model deployment | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
-| 3 | human-review-ready-with-optimizations | medium | 2 | 0/3 | /blog/first-upwork-project-pricing-checklist | 5 | Dify, n8n, Flowise, and no-code AI automation | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 3 | human-review-ready-with-optimizations | medium | 2 | 0/3 | /blog/codex-code-review-delivery-checklist | 5 | Dify, n8n, Flowise, and no-code AI automation | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | 3 | human-review-ready-with-optimizations | medium | 2 | 0/2 | /blog/vercel-env-variable-missing-beginner-guide | 4 | Business AI workflows and SOP templates | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | 1 | human-review-ready-with-optimizations | medium | 10 | 0/5 | /blog/codex-code-review-delivery-checklist | 2 | 开源大模型部署：Ollama、vLLM、TGI、RunPod | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| 4 | human-review-ready-with-optimizations | low | 15 | 1/6 | /blog/codex-code-review-delivery-checklist | 2 | LLM evaluation, observability, and security | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | 2 | human-review-ready-with-optimizations | medium | 3 | 0/5 | /blog/build-first-webpage-with-codex | 3 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 | 2 | human-review-ready-with-optimizations | medium | 10 | 0/5 | /blog/build-first-webpage-with-codex | 4 | RAG、知识库、向量数据库和引用溯源 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| 4 | human-review-ready-with-optimizations | low | 15 | 1/6 | /blog/codex-code-review-delivery-checklist | 2 | LLM evaluation, observability, and security | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | 4 | human-review-ready-with-optimizations | medium | 2 | 0/4 | /blog/codex-code-review-delivery-checklist | 4 | LLM serving, GPU, and managed inference | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
 | 3 | human-review-ready-with-optimizations | medium | 3 | 0/5 | /blog/vercel-env-variable-missing-beginner-guide | 3 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
-| 4 | human-review-ready-with-optimizations | medium | 3 | 0/1 | /blog/first-upwork-project-pricing-checklist | 4 | LLM 观测、评测、日志和上线后质量 | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+| 4 | human-review-ready-with-optimizations | medium | 3 | 0/1 | /blog/codex-code-review-delivery-checklist | 4 | LLM 观测、评测、日志和上线后质量 | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
 
 ## Per-Item Review Packets
 
@@ -181,7 +181,7 @@ Commands after explicit approval:
 - Decision: human-review-ready-with-optimizations
 - Risk level: medium
 - Stop before: Stop before mark:review and stop before publish. Both require explicit human approval.
-- Public link suggestion: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)
+- Public link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)
 
 Review focus:
 
@@ -199,7 +199,7 @@ Source targets:
 Suggested optimizations:
 
 - During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.
-- Review the suggested public internal link before publishing: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
+- Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
 - Decide whether missing subtopics belong in this article or should become separate follow-up drafts.
 
 Human decision checklist:
@@ -268,7 +268,7 @@ Commands after explicit approval:
 - Decision: human-review-ready-with-optimizations
 - Risk level: medium
 - Stop before: Stop before mark:review and stop before publish. Both require explicit human approval.
-- Public link suggestion: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist)
+- Public link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)
 
 Review focus:
 
@@ -287,7 +287,7 @@ Suggested optimizations:
 - Tighten the meta description so it states the search intent, audience, and outcome clearly.
 - Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.
 - During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.
-- Review the suggested public internal link before publishing: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
+- Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
 - Decide whether missing subtopics belong in this article or should become separate follow-up drafts.
 
 Human decision checklist:
@@ -395,6 +395,63 @@ Commands after explicit approval:
 - Mark review: `npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human`
 - Publish dry-run: `npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx`
 
+### AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急
+
+- File: content/blog/ai-api-key-security-rotation-guide.mdx
+- Theme: LLM evaluation, observability, and security
+- Wave: 4
+- Decision: human-review-ready-with-optimizations
+- Risk level: low
+- Stop before: Stop before mark:review and stop before publish. Both require explicit human approval.
+- Public link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)
+
+Review focus:
+
+- traces and logs
+- evaluation datasets
+- prompt injection
+- cost and quality drift
+- 核对 SDK 名称、API endpoint、限流概念和错误码
+- 必须强调密钥安全、服务端代理和日志脱敏
+- 不要虚构价格或模型能力
+
+Source targets:
+
+- OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
+- OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
+- LangChain docs: https://python.langchain.com/docs
+- https://platform.openai.com/docs/guides/agents
+- https://platform.openai.com/docs/guides/retrieval
+- https://python.langchain.com/docs
+- https://platform.openai.com/docs
+- https://docs.anthropic.com
+- https://ai-sdk.dev/docs
+- https://ai.google.dev/docs
+- https://docs.dify.ai
+- https://docs.n8n.io
+- https://platform.openai.com/docs/guides/prompt-engineering
+- https://docs.anthropic.com/
+- https://vercel.com/docs/ai-gateway
+
+Suggested optimizations:
+
+- Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.
+- Decide whether missing subtopics belong in this article or should become separate follow-up drafts.
+
+Human decision checklist:
+
+- Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.
+- Verify source targets and remove or rewrite any unsupported claims.
+- Decide whether the warning issues must be fixed before mark:review.
+- Choose one public internal link suggestion or document why no link should be added.
+- Confirm the article does not claim measured traffic, rankings, impressions, clicks, revenue, or income.
+- Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval.
+
+Commands after explicit approval:
+
+- Mark review: `npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human`
+- Publish dry-run: `npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx`
+
 ### n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储
 
 - File: content/blog/n8n-ai-agent-rag-memory-guide.mdx
@@ -486,63 +543,6 @@ Commands after explicit approval:
 
 - Mark review: `npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human`
 - Publish dry-run: `npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx`
-
-### AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急
-
-- File: content/blog/ai-api-key-security-rotation-guide.mdx
-- Theme: LLM evaluation, observability, and security
-- Wave: 4
-- Decision: human-review-ready-with-optimizations
-- Risk level: low
-- Stop before: Stop before mark:review and stop before publish. Both require explicit human approval.
-- Public link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)
-
-Review focus:
-
-- traces and logs
-- evaluation datasets
-- prompt injection
-- cost and quality drift
-- 核对 SDK 名称、API endpoint、限流概念和错误码
-- 必须强调密钥安全、服务端代理和日志脱敏
-- 不要虚构价格或模型能力
-
-Source targets:
-
-- OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
-- OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
-- LangChain docs: https://python.langchain.com/docs
-- https://platform.openai.com/docs/guides/agents
-- https://platform.openai.com/docs/guides/retrieval
-- https://python.langchain.com/docs
-- https://platform.openai.com/docs
-- https://docs.anthropic.com
-- https://ai-sdk.dev/docs
-- https://ai.google.dev/docs
-- https://docs.dify.ai
-- https://docs.n8n.io
-- https://platform.openai.com/docs/guides/prompt-engineering
-- https://docs.anthropic.com/
-- https://vercel.com/docs/ai-gateway
-
-Suggested optimizations:
-
-- Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.
-- Decide whether missing subtopics belong in this article or should become separate follow-up drafts.
-
-Human decision checklist:
-
-- Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.
-- Verify source targets and remove or rewrite any unsupported claims.
-- Decide whether the warning issues must be fixed before mark:review.
-- Choose one public internal link suggestion or document why no link should be added.
-- Confirm the article does not claim measured traffic, rankings, impressions, clicks, revenue, or income.
-- Only after human approval, run the mark:review command manually; publishing still requires a separate explicit approval.
-
-Commands after explicit approval:
-
-- Mark review: `npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human`
-- Publish dry-run: `npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx`
 
 ### BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收
 
@@ -637,7 +637,7 @@ Commands after explicit approval:
 - Decision: human-review-ready-with-optimizations
 - Risk level: medium
 - Stop before: Stop before mark:review and stop before publish. Both require explicit human approval.
-- Public link suggestion: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist)
+- Public link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)
 
 Review focus:
 
@@ -656,7 +656,7 @@ Suggested optimizations:
 - Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.
 - During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.
 - Add or approve one concrete subsection that matches the target search intent without keyword stuffing.
-- Review the suggested public internal link before publishing: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
+- Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
 
 Human decision checklist:
 

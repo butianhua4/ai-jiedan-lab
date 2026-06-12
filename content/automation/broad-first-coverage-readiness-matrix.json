@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:54.971Z",
+  "generatedAt": "2026-06-12T16:32:53.174Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,7 +10,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "launchPackGeneratedAt": "2026-06-12T06:13:54.556Z",
+    "launchPackGeneratedAt": "2026-06-12T16:32:52.736Z",
     "launchPackGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -289,9 +289,9 @@
         "seedFamilyMatches": 5
       },
       "sourceSignals": {
-        "launchSourceTargets": 10,
-        "reachableSources": 29,
-        "sourceTargets": 29
+        "launchSourceTargets": 11,
+        "reachableSources": 32,
+        "sourceTargets": 32
       },
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "warningIssues": [
@@ -433,7 +433,7 @@
         "hasPublicLinkPath": true,
         "integrityReady": true,
         "preflightReady": true,
-        "queryReady": null,
+        "queryReady": true,
         "schemaReady": true,
         "snippetReady": true,
         "sourceReady": true
@@ -448,15 +448,15 @@
         "Review snippet warnings for title, description, slug, and primary keyword alignment.",
         "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
         "Resolve or explicitly accept warning: theme still has missing subtopics: logs, prompt injection, cost tracking.",
-        "Resolve or explicitly accept warning: no search-query-match record; rely on launch search queries and public-gap seed evidence.",
+        "Resolve or explicitly accept warning: few exact query variant matches in article text.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "searchSignals": {
-        "exactQueryMatches": null,
+        "exactQueryMatches": 1,
         "exactSeedMatches": 1,
-        "matchedFamilies": null,
+        "matchedFamilies": 7,
         "searchQueries": 5,
         "seedFamilyMatches": 6
       },
@@ -469,7 +469,7 @@
       "warningIssues": [
         "primary keyword is not an exact title substring",
         "theme still has missing subtopics: logs, prompt injection, cost tracking",
-        "no search-query-match record; rely on launch search queries and public-gap seed evidence"
+        "few exact query variant matches in article text"
       ]
     },
     {
@@ -753,9 +753,9 @@
         "seedFamilyMatches": 5
       },
       "sourceSignals": {
-        "launchSourceTargets": 10,
-        "reachableSources": 29,
-        "sourceTargets": 29
+        "launchSourceTargets": 11,
+        "reachableSources": 32,
+        "sourceTargets": 32
       },
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "warningIssues": [
@@ -897,7 +897,7 @@
         "hasPublicLinkPath": true,
         "integrityReady": true,
         "preflightReady": true,
-        "queryReady": null,
+        "queryReady": true,
         "schemaReady": true,
         "snippetReady": true,
         "sourceReady": true
@@ -912,15 +912,15 @@
         "Review snippet warnings for title, description, slug, and primary keyword alignment.",
         "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
         "Resolve or explicitly accept warning: theme still has missing subtopics: logs, prompt injection, cost tracking.",
-        "Resolve or explicitly accept warning: no search-query-match record; rely on launch search queries and public-gap seed evidence.",
+        "Resolve or explicitly accept warning: few exact query variant matches in article text.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "searchSignals": {
-        "exactQueryMatches": null,
+        "exactQueryMatches": 1,
         "exactSeedMatches": 1,
-        "matchedFamilies": null,
+        "matchedFamilies": 7,
         "searchQueries": 5,
         "seedFamilyMatches": 6
       },
@@ -933,7 +933,7 @@
       "warningIssues": [
         "primary keyword is not an exact title substring",
         "theme still has missing subtopics: logs, prompt injection, cost tracking",
-        "no search-query-match record; rely on launch search queries and public-gap seed evidence"
+        "few exact query variant matches in article text"
       ]
     },
     {

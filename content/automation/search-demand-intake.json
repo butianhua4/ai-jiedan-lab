@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:09.208Z",
+  "generatedAt": "2026-06-12T16:32:05.096Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -15,7 +15,7 @@
     "lanesWithoutPublicCoverage": 6,
     "lanesWithReadyCandidates": 8,
     "officialSourceTargets": 29,
-    "readyCandidateFiles": 45,
+    "readyCandidateFiles": 43,
     "reviewQueueMatches": 33,
     "searchQueries": 81,
     "unsafeLanes": 0
@@ -121,7 +121,7 @@
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
         },
         {
-          "category": "接单报价",
+          "category": "项目报价",
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "humanReviewRequired": true,
           "noindex": true,
@@ -606,7 +606,7 @@
           "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
         },
         {
-          "category": "接单报价",
+          "category": "项目报价",
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "humanReviewRequired": true,
           "noindex": true,
@@ -743,7 +743,7 @@
       "publicMatches": 0,
       "readyCandidates": [
         {
-          "category": "接单报价",
+          "category": "项目报价",
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "humanReviewRequired": true,
           "noindex": true,
@@ -1231,16 +1231,30 @@
         "验收",
         "交付",
         "freelance",
-        "接单",
+        "项目",
         "maintenance"
       ],
       "userProblem": "This lane turns search demand into services without pretending the site already has traffic or revenue proof.",
-      "draftMatches": 222,
+      "draftMatches": 232,
       "intakeScore": 306,
       "publicMatches": 4,
       "readyCandidates": [
         {
-          "category": "接单报价",
+          "category": "AI 部署",
+          "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
+          "humanReviewRequired": true,
+          "noindex": true,
+          "primaryKeyword": "大模型成本监控",
+          "publishBatch": 34,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "slug": "llm-cost-monitoring-dashboard-guide",
+          "sourceNotes": true,
+          "status": "draft",
+          "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账"
+        },
+        {
+          "category": "项目报价",
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "humanReviewRequired": true,
           "noindex": true,
@@ -1252,6 +1266,20 @@
           "sourceNotes": true,
           "status": "draft",
           "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
+        },
+        {
+          "category": "AI 基建",
+          "file": "content/blog/agent-memory-postgres-schema-guide.mdx",
+          "humanReviewRequired": true,
+          "noindex": true,
+          "primaryKeyword": "Agent 记忆数据库设计",
+          "publishBatch": 32,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "slug": "agent-memory-postgres-schema-guide",
+          "sourceNotes": true,
+          "status": "draft",
+          "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则"
         },
         {
           "category": "AI 提示词",
@@ -1296,6 +1324,20 @@
           "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收"
         },
         {
+          "category": "AI 基建",
+          "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
+          "humanReviewRequired": true,
+          "noindex": true,
+          "primaryKeyword": "RAG 向量数据库怎么选",
+          "publishBatch": 25,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "slug": "vector-database-selection-for-rag-guide",
+          "sourceNotes": true,
+          "status": "draft",
+          "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界"
+        },
+        {
           "category": "模板和清单",
           "file": "content/blog/ai-tool-setup-service-checklist-checklist.mdx",
           "humanReviewRequired": true,
@@ -1307,49 +1349,7 @@
           "slug": "ai-tool-setup-service-checklist-checklist",
           "sourceNotes": true,
           "status": "draft",
-          "title": "AI 工具配置服务接单检查清单"
-        },
-        {
-          "category": "模板和清单",
-          "file": "content/blog/ai-tool-setup-service-checklist.mdx",
-          "humanReviewRequired": true,
-          "noindex": true,
-          "primaryKeyword": "AI 工具配置服务接单清单",
-          "publishBatch": 20,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "slug": "ai-tool-setup-service-checklist",
-          "sourceNotes": true,
-          "status": "draft",
-          "title": "AI 工具配置服务接单清单怎么写"
-        },
-        {
-          "category": "模板和清单",
-          "file": "content/blog/bugfix-delivery-note-template-checklist.mdx",
-          "humanReviewRequired": true,
-          "noindex": true,
-          "primaryKeyword": "Bug 修复交付前检查清单",
-          "publishBatch": 20,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "slug": "bugfix-delivery-note-template-checklist",
-          "sourceNotes": true,
-          "status": "draft",
-          "title": "Bug 修复交付前检查清单"
-        },
-        {
-          "category": "模板和清单",
-          "file": "content/blog/bugfix-delivery-note-template.mdx",
-          "humanReviewRequired": true,
-          "noindex": true,
-          "primaryKeyword": "Bug 修复交付说明模板",
-          "publishBatch": 20,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "slug": "bugfix-delivery-note-template",
-          "sourceNotes": true,
-          "status": "draft",
-          "title": "Bug 修复交付说明模板怎么写"
+          "title": "AI 工具配置服务项目检查清单"
         }
       ],
       "reviewQueueMatches": 3

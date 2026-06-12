@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T14:47:05.061Z",
+  "generatedAt": "2026-06-12T16:32:11.396Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -28,7 +28,7 @@
       "trafficDataAvailable": false,
       "unsafeItems": 0
     },
-    "playbookGeneratedAt": "2026-06-12T06:13:14.917Z",
+    "playbookGeneratedAt": "2026-06-12T16:32:10.881Z",
     "playbookSummary": {
       "agentDeploymentLanes": 3,
       "broadWorkPromptLanes": 3,
@@ -50,7 +50,7 @@
       "uniqueCandidateFiles": 21,
       "unsafeItems": 0
     },
-    "reviewCandidatesGeneratedAt": "2026-06-12T06:12:51.405Z",
+    "reviewCandidatesGeneratedAt": "2026-06-12T16:31:46.775Z",
     "reviewCandidatesCounts": {
       "candidates": 633,
       "returned": 25,
@@ -1461,9 +1461,9 @@
         "content/blog/industry-ai-prompts-template-library-2026.mdx",
         "content/blog/ai-model-selection-customer-service-guide.mdx"
       ],
-      "audience": "销售、BD、自由职业者、咨询顾问和接单人",
+      "audience": "销售、BD、自由职业者和咨询顾问",
       "candidatesConsidered": 10,
-      "demandReason": "写报价、写方案、写跟进邮件直接对应接单变现，是项目商业目标里的强入口。",
+      "demandReason": "写报价、写方案、写跟进邮件直接对应项目转化，是项目商业目标里的强入口。",
       "laneId": "sales-proposal-prompts",
       "laneTitle": "销售话术、报价和方案书 AI 提示词",
       "nextCandidates": [
@@ -1499,7 +1499,7 @@
             "ChatGPT 写报价单",
             "AI 方案书提示词",
             "客户跟进邮件 prompt",
-            "自由职业接单报价提示词",
+            "自由职业项目报价提示词",
             "AI 写商业 proposal",
             "销售异议处理提示词",
             "AI 客户需求分析",
@@ -1551,7 +1551,7 @@
             "ChatGPT 写报价单",
             "AI 方案书提示词",
             "客户跟进邮件 prompt",
-            "自由职业接单报价提示词",
+            "自由职业项目报价提示词",
             "AI 写商业 proposal",
             "销售异议处理提示词",
             "AI 客户需求分析",
@@ -1603,7 +1603,7 @@
             "ChatGPT 写报价单",
             "AI 方案书提示词",
             "客户跟进邮件 prompt",
-            "自由职业接单报价提示词",
+            "自由职业项目报价提示词",
             "AI 写商业 proposal",
             "销售异议处理提示词",
             "AI 客户需求分析",
@@ -1630,7 +1630,7 @@
         "ChatGPT 写报价单",
         "AI 方案书提示词",
         "客户跟进邮件 prompt",
-        "自由职业接单报价提示词",
+        "自由职业项目报价提示词",
         "AI 写商业 proposal",
         "销售异议处理提示词",
         "AI 客户需求分析",

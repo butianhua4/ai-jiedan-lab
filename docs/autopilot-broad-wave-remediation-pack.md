@@ -1,6 +1,6 @@
 # Autopilot Broad Wave Remediation Pack
 
-Generated at: 2026-06-12T06:13:37.839Z
+Generated at: 2026-06-12T16:32:34.395Z
 
 This report is read-only. It turns broad AI publish-wave optimization items into manual remediation cards and keeps article edits, mark-review, and publishing human-gated.
 
@@ -30,7 +30,7 @@ This report is read-only. It turns broad AI publish-wave optimization items into
 
 ## Source Evidence
 
-- broadWaveOptimizationGeneratedAt: "2026-06-12T06:13:37.358Z"
+- broadWaveOptimizationGeneratedAt: "2026-06-12T16:32:33.906Z"
 - broadWaveOptimizationGuardrails: {"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"note":"Read-only optimization brief for broad publish waves. It proposes SEO, snippet, opening, internal-link, and risk-language checks without editing article files.","stopBefore":"Apply any copy or link changes only during human review. Do not mark review or publish automatically.","trafficClaim":"not-included"}
 - broadWaveOptimizationItems: 24
 - broadWaveOptimizationReadyItems: 24
@@ -63,7 +63,7 @@ This report is read-only. It turns broad AI publish-wave optimization items into
 | 1 | true | 5 | 12 | 6 | 6 | 4 | 1 | 5 | true | not-included | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
 | 1 | true | 5 | 12 | 9 | 3 | 1 | 3 | 7 | true | not-included | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 1 | true | 5 | 12 | 4 | 6 | 4 | 2 | 6 | true | not-included | Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则 | content/blog/agent-memory-postgres-schema-guide.mdx |
-| 2 | true | 5 | 12 | 11 | 3 | 1 | 3 | 7 | true | not-included | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 2 | true | 5 | 12 | 12 | 3 | 1 | 3 | 7 | true | not-included | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 2 | true | 5 | 13 | 8 | 3 | 1 | 3 | 7 | true | not-included | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
 | 2 | true | 5 | 12 | 4 | 3 | 1 | 3 | 7 | true | not-included | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | 3 | true | 5 | 12 | 13 | 3 | 1 | 2 | 6 | true | not-included | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
@@ -303,13 +303,13 @@ Search fixes:
 
 Source checks:
 
+- Verify implementation-sensitive claims against source: https://platform.openai.com/docs.
+- Verify implementation-sensitive claims against source: https://ai-sdk.dev/docs.
 - Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/retrieval.
 - Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/prompt-engineering.
 - Verify implementation-sensitive claims against source: https://python.langchain.com/docs.
 - Verify implementation-sensitive claims against source: https://docs.llamaindex.ai.
 - Verify implementation-sensitive claims against source: https://huggingface.co/docs.
-- Verify implementation-sensitive claims against source: https://platform.openai.com/docs.
-- Verify implementation-sensitive claims against source: https://ai-sdk.dev/docs.
 - Verify implementation-sensitive claims against source: https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/.
 - Verify implementation-sensitive claims against source: https://arxiv.org/abs/2603.10700.
 - Verify implementation-sensitive claims against source: https://www.pinecone.io/learn/retrieval-augmented-generation/.
@@ -608,7 +608,7 @@ Human checklist:
 
 Public-link plan:
 
-- Use suggested public link: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
+- Use suggested public link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
 
 Search fixes:
 
@@ -992,7 +992,7 @@ Human checklist:
 
 Public-link plan:
 
-- Use suggested public link: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).
+- Use suggested public link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
 
 Search fixes:
 

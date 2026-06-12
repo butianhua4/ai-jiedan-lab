@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:19.657Z",
+  "generatedAt": "2026-06-12T16:32:15.784Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -20,7 +20,7 @@
     "okUrls": 39,
     "publicGapDecisionFiles": 13,
     "redirectedUrls": 18,
-    "sourceReferences": 261,
+    "sourceReferences": 264,
     "uniqueUrls": 40
   },
   "missingUrlTargets": [],
@@ -61,6 +61,13 @@
           "url": "https://ai-sdk.dev/docs"
         },
         {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+          "scope": "current-review",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
           "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
           "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
           "scope": "public-gap-decision",
@@ -96,17 +103,17 @@
           "url": "https://ai-sdk.dev/docs"
         },
         {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "label": "https://ai-sdk.dev/docs",
-          "scope": "public-gap-decision",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "https://ai-sdk.dev/docs"
-        },
-        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "https://ai-sdk.dev/docs",
           "scope": "public-gap-decision",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
           "url": "https://ai-sdk.dev/docs"
         },
         {
@@ -268,7 +275,7 @@
       "url": "https://ai-sdk.dev/docs"
     },
     {
-      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=ko",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=pl",
       "ok": true,
       "references": [
         {
@@ -682,6 +689,13 @@
           "url": "https://platform.openai.com/docs"
         },
         {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "OpenAI docs: https://platform.openai.com/docs",
+          "scope": "current-review",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
           "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
           "label": "https://platform.openai.com/docs",
           "scope": "public-gap-decision",
@@ -703,17 +717,17 @@
           "url": "https://platform.openai.com/docs"
         },
         {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "label": "https://platform.openai.com/docs",
-          "scope": "public-gap-decision",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "https://platform.openai.com/docs"
-        },
-        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "https://platform.openai.com/docs",
           "scope": "public-gap-decision",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
           "url": "https://platform.openai.com/docs"
         },
         {
@@ -935,6 +949,13 @@
           "url": "https://platform.openai.com/docs/guides/agents"
         },
         {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+          "scope": "next-source-pack",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "scope": "next-source-pack",
@@ -1076,17 +1097,17 @@
           "url": "https://platform.openai.com/docs/guides/prompt-engineering"
         },
         {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
-          "scope": "public-gap-decision",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
-        },
-        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "https://platform.openai.com/docs/guides/prompt-engineering",
           "scope": "public-gap-decision",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
           "url": "https://platform.openai.com/docs/guides/prompt-engineering"
         },
         {
@@ -1302,13 +1323,6 @@
           "url": "https://platform.openai.com/docs/guides/retrieval"
         },
         {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "label": "https://platform.openai.com/docs/guides/retrieval",
-          "scope": "public-gap-decision",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "https://platform.openai.com/docs/guides/retrieval"
-        },
-        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
           "scope": "public-gap-decision",
@@ -1320,6 +1334,13 @@
           "label": "https://platform.openai.com/docs/guides/retrieval",
           "scope": "public-gap-decision",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
           "url": "https://platform.openai.com/docs/guides/retrieval"
         },
         {
@@ -1499,13 +1520,6 @@
           "url": "https://python.langchain.com/docs"
         },
         {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "label": "https://python.langchain.com/docs",
-          "scope": "public-gap-decision",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "https://python.langchain.com/docs"
-        },
-        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "LangChain docs: https://python.langchain.com/docs",
           "scope": "public-gap-decision",
@@ -1517,6 +1531,13 @@
           "label": "https://python.langchain.com/docs",
           "scope": "public-gap-decision",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://python.langchain.com/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://python.langchain.com/docs",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
           "url": "https://python.langchain.com/docs"
         },
         {
@@ -1751,16 +1772,18 @@
     },
     {
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-      "reachableSources": 29,
+      "reachableSources": 32,
       "scopes": [
         "broad-first-coverage",
         "current-review",
         "next-source-pack",
         "public-gap-decision"
       ],
-      "sourceTargets": 29,
+      "sourceTargets": 32,
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "urls": [
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://platform.openai.com/docs/guides/retrieval",
@@ -1778,6 +1801,7 @@
         "https://docs.llamaindex.ai",
         "https://huggingface.co/docs",
         "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/agents",
         "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://platform.openai.com/docs/guides/retrieval",
@@ -2186,6 +2210,13 @@
           "url": "https://ai-sdk.dev/docs"
         },
         {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+          "scope": "current-review",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
           "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
           "label": "Vercel AI SDK docs: https://ai-sdk.dev/docs",
           "scope": "public-gap-decision",
@@ -2221,17 +2252,17 @@
           "url": "https://ai-sdk.dev/docs"
         },
         {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "label": "https://ai-sdk.dev/docs",
-          "scope": "public-gap-decision",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "https://ai-sdk.dev/docs"
-        },
-        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "https://ai-sdk.dev/docs",
           "scope": "public-gap-decision",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://ai-sdk.dev/docs",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
           "url": "https://ai-sdk.dev/docs"
         },
         {
@@ -2393,7 +2424,7 @@
       "url": "https://ai-sdk.dev/docs"
     },
     {
-      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=ko",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=pl",
       "ok": true,
       "references": [
         {
@@ -3065,7 +3096,7 @@
           "url": "https://huggingface.co/docs"
         }
       ],
-      "status": 200,
+      "status": 429,
       "url": "https://huggingface.co/docs"
     },
     {
@@ -3146,6 +3177,13 @@
           "url": "https://platform.openai.com/docs"
         },
         {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "OpenAI docs: https://platform.openai.com/docs",
+          "scope": "current-review",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
           "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
           "label": "https://platform.openai.com/docs",
           "scope": "public-gap-decision",
@@ -3167,17 +3205,17 @@
           "url": "https://platform.openai.com/docs"
         },
         {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "label": "https://platform.openai.com/docs",
-          "scope": "public-gap-decision",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "https://platform.openai.com/docs"
-        },
-        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "https://platform.openai.com/docs",
           "scope": "public-gap-decision",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
           "url": "https://platform.openai.com/docs"
         },
         {
@@ -3399,6 +3437,13 @@
           "url": "https://platform.openai.com/docs/guides/agents"
         },
         {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+          "scope": "next-source-pack",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "scope": "next-source-pack",
@@ -3540,17 +3585,17 @@
           "url": "https://platform.openai.com/docs/guides/prompt-engineering"
         },
         {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
-          "scope": "public-gap-decision",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
-        },
-        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "https://platform.openai.com/docs/guides/prompt-engineering",
           "scope": "public-gap-decision",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
           "url": "https://platform.openai.com/docs/guides/prompt-engineering"
         },
         {
@@ -3766,13 +3811,6 @@
           "url": "https://platform.openai.com/docs/guides/retrieval"
         },
         {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "label": "https://platform.openai.com/docs/guides/retrieval",
-          "scope": "public-gap-decision",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "https://platform.openai.com/docs/guides/retrieval"
-        },
-        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
           "scope": "public-gap-decision",
@@ -3784,6 +3822,13 @@
           "label": "https://platform.openai.com/docs/guides/retrieval",
           "scope": "public-gap-decision",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://platform.openai.com/docs/guides/retrieval"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/retrieval",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
           "url": "https://platform.openai.com/docs/guides/retrieval"
         },
         {
@@ -3963,13 +4008,6 @@
           "url": "https://python.langchain.com/docs"
         },
         {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "label": "https://python.langchain.com/docs",
-          "scope": "public-gap-decision",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "https://python.langchain.com/docs"
-        },
-        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "label": "LangChain docs: https://python.langchain.com/docs",
           "scope": "public-gap-decision",
@@ -3981,6 +4019,13 @@
           "label": "https://python.langchain.com/docs",
           "scope": "public-gap-decision",
           "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "url": "https://python.langchain.com/docs"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://python.langchain.com/docs",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
           "url": "https://python.langchain.com/docs"
         },
         {

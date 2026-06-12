@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:21.120Z",
+  "generatedAt": "2026-06-12T16:32:17.252Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -29,7 +29,7 @@
     "okUrls": 39,
     "publicGapDecisionFiles": 13,
     "redirectedUrls": 18,
-    "sourceReferences": 261,
+    "sourceReferences": 264,
     "uniqueUrls": 40
   },
   "trafficBoundary": {
@@ -50,7 +50,7 @@
     {
       "actionItems": [
         "Read the article end to end and confirm the opening answer matches search intent.",
-        "Open 2 official source target(s) and verify fast-changing claims.",
+        "Open 4 official source target(s) and verify fast-changing claims.",
         "Run through 6 risk review checks.",
         "Choose or reject public internal link suggestion: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
         "Resolve or explicitly accept snippet/structured-data warnings before mark:review."
@@ -64,10 +64,10 @@
       },
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "kind": "wave-approval",
-      "priority": 1029,
+      "priority": 1032,
       "ready": true,
       "scope": "wave-1",
-      "sourceTargets": 29,
+      "sourceTargets": 32,
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "warnings": [
         "description may be thin for search snippets",
@@ -210,7 +210,7 @@
     {
       "actionItems": [
         "Read the article end to end and confirm the opening answer matches search intent.",
-        "Open 2 official source target(s) and verify fast-changing claims.",
+        "Open 4 official source target(s) and verify fast-changing claims.",
         "Run through 6 risk review checks.",
         "Choose or reject public internal link suggestion: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
         "Resolve or explicitly accept snippet/structured-data warnings before mark:review."
@@ -224,10 +224,10 @@
       },
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "kind": "wave-approval",
-      "priority": 1029,
+      "priority": 1032,
       "ready": true,
       "scope": "wave-1",
-      "sourceTargets": 29,
+      "sourceTargets": 32,
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "warnings": [
         "description may be thin for search snippets",
@@ -384,10 +384,10 @@
       },
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "kind": "public-gap-review",
-      "priority": 781,
+      "priority": 783,
       "ready": true,
       "scope": "public-gap-wave-2",
-      "sourceTargets": 29,
+      "sourceTargets": 32,
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "warnings": [
         "description may be thin for search snippets",
@@ -403,9 +403,9 @@
         "Review theme gap: RAG, knowledge base, and agent memory.",
         "Verify 3 source target(s) and source freshness.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
-        "Review the suggested public internal link before publishing: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+        "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Decide whether missing subtopics belong in this article or should become separate follow-up drafts.",
-        "Choose or reject public internal link suggestion: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)."
+        "Choose or reject public internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)."
       ],
       "blockers": [],
       "commandBoundary": {
@@ -477,7 +477,7 @@
       },
       "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
       "kind": "public-gap-review",
-      "priority": 759,
+      "priority": 758,
       "ready": true,
       "scope": "public-gap-wave-2",
       "sourceTargets": 6,
@@ -490,13 +490,41 @@
     },
     {
       "actionItems": [
+        "Review theme gap: LLM evaluation, observability, and security.",
+        "Verify 15 source target(s) and source freshness.",
+        "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts.",
+        "Choose or reject public internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)."
+      ],
+      "blockers": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "kind": "public-gap-review",
+      "priority": 749,
+      "ready": true,
+      "scope": "public-gap-wave-4",
+      "sourceTargets": 36,
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "warnings": [
+        "primary keyword is not an exact title substring",
+        "theme still has missing subtopics: logs, prompt injection, cost tracking",
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "actionItems": [
         "Review theme gap: Dify, n8n, Flowise, and no-code AI automation.",
         "Verify 2 source target(s) and source freshness.",
         "Tighten the meta description so it states the search intent, audience, and outcome clearly.",
         "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
-        "Review the suggested public internal link before publishing: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
-        "Choose or reject public internal link suggestion: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist)."
+        "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
+        "Choose or reject public internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)."
       ],
       "blockers": [],
       "commandBoundary": {
@@ -519,34 +547,6 @@
         "article currently has no links to published articles",
         "theme still has missing subtopics: self hosted, connector",
         "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "actionItems": [
-        "Review theme gap: LLM evaluation, observability, and security.",
-        "Verify 15 source target(s) and source freshness.",
-        "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
-        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts.",
-        "Choose or reject public internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)."
-      ],
-      "blockers": [],
-      "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx",
-        "publishConfirm": "not-included",
-        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
-      },
-      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-      "kind": "public-gap-review",
-      "priority": 747,
-      "ready": true,
-      "scope": "public-gap-wave-4",
-      "sourceTargets": 36,
-      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
-      "warnings": [
-        "primary keyword is not an exact title substring",
-        "theme still has missing subtopics: logs, prompt injection, cost tracking",
         "primary keyword is not an exact title substring"
       ]
     },
@@ -618,8 +618,8 @@
         "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
         "Add or approve one concrete subsection that matches the target search intent without keyword stuffing.",
-        "Review the suggested public internal link before publishing: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
-        "Choose or reject public internal link suggestion: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist)."
+        "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
+        "Choose or reject public internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)."
       ],
       "blockers": [],
       "commandBoundary": {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:05.498Z",
+  "generatedAt": "2026-06-12T16:32:01.323Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -73,7 +73,7 @@
       "sourceNotesPresent": true,
       "status": "draft",
       "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
-      "wordCountChinese": 1701,
+      "wordCountChinese": 1951,
       "workflowAngles": [
         "文档清洗",
         "chunk",
@@ -116,6 +116,7 @@
         "LlamaIndex docs: https://docs.llamaindex.ai",
         "Hugging Face docs: https://huggingface.co/docs",
         "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
       ],
@@ -128,7 +129,9 @@
         "No instruction to bypass platform, payment, messaging, account, or review rules.",
         "No API key, credential, private customer data, or account detail is included.",
         "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
+        "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
         "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
+        "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.",
         "Prompt examples include input context, output criteria, review rules, and adaptation notes."
       ],
       "safeDraft": true,
@@ -157,13 +160,13 @@
         "Reviewer confirms the article answers one clear search intent.",
         "Reviewer confirms factual claims against official docs before any status change."
       ],
-      "category": "接单报价",
+      "category": "项目报价",
       "currentPack": false,
       "factCheckQueries": [
         "AI 自动化项目报价 official docs latest",
         "AI 自动化项目报价 official documentation current limits",
         "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 fact check official docs",
-        "接单报价 official docs limits pricing changelog",
+        "项目报价 official docs limits pricing changelog",
         "RAG 知识库搭建教程",
         "企业知识库 AI 部署",
         "向量数据库 RAG 教程",
@@ -203,7 +206,7 @@
       "sourceNotesPresent": true,
       "status": "draft",
       "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
-      "wordCountChinese": 1303,
+      "wordCountChinese": 1305,
       "workflowAngles": [
         "文档清洗",
         "chunk",

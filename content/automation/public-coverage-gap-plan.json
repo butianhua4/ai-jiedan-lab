@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:16.383Z",
+  "generatedAt": "2026-06-12T16:32:12.397Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -39,7 +39,7 @@
         {
           "approvalWave": 1,
           "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-          "gapScore": 388,
+          "gapScore": 382,
           "humanReviewCommandAfterApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
           "missingSubtopics": [
             "tool calling",
@@ -135,7 +135,7 @@
         {
           "approvalWave": 2,
           "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
-          "gapScore": 352,
+          "gapScore": 346,
           "humanReviewCommandAfterApproval": "npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
           "missingSubtopics": [
             "knowledge base",
@@ -232,7 +232,7 @@
         {
           "approvalWave": 3,
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-          "gapScore": 330,
+          "gapScore": 324,
           "humanReviewCommandAfterApproval": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
           "missingSubtopics": [
             "self hosted",
@@ -271,7 +271,7 @@
         {
           "approvalWave": 3,
           "file": "content/blog/dify-workflow-error-handling-guide.mdx",
-          "gapScore": 328,
+          "gapScore": 322,
           "humanReviewCommandAfterApproval": "npm run mark:review -- --file=content/blog/dify-workflow-error-handling-guide.mdx --confirm-human",
           "missingSubtopics": [
             "support",
@@ -318,11 +318,52 @@
     },
     {
       "files": [
-        "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-        "content/blog/ai-api-key-security-rotation-guide.mdx"
+        "content/blog/ai-api-key-security-rotation-guide.mdx",
+        "content/blog/bentoml-llm-deployment-beginner-guide.mdx"
       ],
-      "focus": "LLM serving, GPU, and managed inference + LLM evaluation, observability, and security",
+      "focus": "LLM evaluation, observability, and security + LLM serving, GPU, and managed inference",
       "items": [
+        {
+          "approvalWave": 4,
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "gapScore": 318,
+          "humanReviewCommandAfterApproval": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
+          "missingSubtopics": [
+            "logs",
+            "prompt injection",
+            "cost tracking"
+          ],
+          "noindex": true,
+          "primaryKeyword": "AI API Key 安全管理",
+          "publicMatches": 0,
+          "publishBatch": 34,
+          "publishDryRunCommandAfterReview": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx",
+          "qualityScore": 100,
+          "readyForManualReview": true,
+          "reviewFocus": [
+            "traces and logs",
+            "evaluation datasets",
+            "prompt injection",
+            "cost and quality drift"
+          ],
+          "safeDraft": true,
+          "searchIntent": "informational",
+          "searchSeeds": [
+            "LLM observability",
+            "RAG evaluation",
+            "AI agent logs",
+            "prompt injection defense"
+          ],
+          "sourceNotes": true,
+          "sourceTargets": [
+            "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+            "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+            "LangChain docs: https://python.langchain.com/docs"
+          ],
+          "themeId": "evals-observability-security",
+          "themeTitle": "LLM evaluation, observability, and security",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
+        },
         {
           "approvalWave": 4,
           "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
@@ -361,53 +402,12 @@
           "themeId": "llm-serving-gpu",
           "themeTitle": "LLM serving, GPU, and managed inference",
           "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收"
-        },
-        {
-          "approvalWave": 4,
-          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-          "gapScore": 312,
-          "humanReviewCommandAfterApproval": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
-          "missingSubtopics": [
-            "logs",
-            "prompt injection",
-            "cost tracking"
-          ],
-          "noindex": true,
-          "primaryKeyword": "AI API Key 安全管理",
-          "publicMatches": 0,
-          "publishBatch": 34,
-          "publishDryRunCommandAfterReview": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx",
-          "qualityScore": 100,
-          "readyForManualReview": true,
-          "reviewFocus": [
-            "traces and logs",
-            "evaluation datasets",
-            "prompt injection",
-            "cost and quality drift"
-          ],
-          "safeDraft": true,
-          "searchIntent": "informational",
-          "searchSeeds": [
-            "LLM observability",
-            "RAG evaluation",
-            "AI agent logs",
-            "prompt injection defense"
-          ],
-          "sourceNotes": true,
-          "sourceTargets": [
-            "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
-            "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
-            "LangChain docs: https://python.langchain.com/docs"
-          ],
-          "themeId": "evals-observability-security",
-          "themeTitle": "LLM evaluation, observability, and security",
-          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
         }
       ],
       "readyItems": 2,
       "themes": [
-        "LLM serving, GPU, and managed inference",
-        "LLM evaluation, observability, and security"
+        "LLM evaluation, observability, and security",
+        "LLM serving, GPU, and managed inference"
       ],
       "wave": 4
     }
@@ -416,7 +416,7 @@
     {
       "approvalWave": 1,
       "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-      "gapScore": 388,
+      "gapScore": 382,
       "humanReviewCommandAfterApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
       "missingSubtopics": [
         "tool calling",
@@ -497,7 +497,7 @@
     {
       "approvalWave": 2,
       "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
-      "gapScore": 352,
+      "gapScore": 346,
       "humanReviewCommandAfterApproval": "npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
       "missingSubtopics": [
         "knowledge base",
@@ -579,7 +579,7 @@
     {
       "approvalWave": 3,
       "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-      "gapScore": 330,
+      "gapScore": 324,
       "humanReviewCommandAfterApproval": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
       "missingSubtopics": [
         "self hosted",
@@ -618,7 +618,7 @@
     {
       "approvalWave": 3,
       "file": "content/blog/dify-workflow-error-handling-guide.mdx",
-      "gapScore": 328,
+      "gapScore": 322,
       "humanReviewCommandAfterApproval": "npm run mark:review -- --file=content/blog/dify-workflow-error-handling-guide.mdx --confirm-human",
       "missingSubtopics": [
         "support",
@@ -654,6 +654,47 @@
       "themeId": "business-ai-workflows",
       "themeTitle": "Business AI workflows and SOP templates",
       "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底"
+    },
+    {
+      "approvalWave": 4,
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "gapScore": 318,
+      "humanReviewCommandAfterApproval": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
+      "missingSubtopics": [
+        "logs",
+        "prompt injection",
+        "cost tracking"
+      ],
+      "noindex": true,
+      "primaryKeyword": "AI API Key 安全管理",
+      "publicMatches": 0,
+      "publishBatch": 34,
+      "publishDryRunCommandAfterReview": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx",
+      "qualityScore": 100,
+      "readyForManualReview": true,
+      "reviewFocus": [
+        "traces and logs",
+        "evaluation datasets",
+        "prompt injection",
+        "cost and quality drift"
+      ],
+      "safeDraft": true,
+      "searchIntent": "informational",
+      "searchSeeds": [
+        "LLM observability",
+        "RAG evaluation",
+        "AI agent logs",
+        "prompt injection defense"
+      ],
+      "sourceNotes": true,
+      "sourceTargets": [
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "LangChain docs: https://python.langchain.com/docs"
+      ],
+      "themeId": "evals-observability-security",
+      "themeTitle": "LLM evaluation, observability, and security",
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
     },
     {
       "approvalWave": 4,
@@ -693,47 +734,6 @@
       "themeId": "llm-serving-gpu",
       "themeTitle": "LLM serving, GPU, and managed inference",
       "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收"
-    },
-    {
-      "approvalWave": 4,
-      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-      "gapScore": 312,
-      "humanReviewCommandAfterApproval": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
-      "missingSubtopics": [
-        "logs",
-        "prompt injection",
-        "cost tracking"
-      ],
-      "noindex": true,
-      "primaryKeyword": "AI API Key 安全管理",
-      "publicMatches": 0,
-      "publishBatch": 34,
-      "publishDryRunCommandAfterReview": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx",
-      "qualityScore": 100,
-      "readyForManualReview": true,
-      "reviewFocus": [
-        "traces and logs",
-        "evaluation datasets",
-        "prompt injection",
-        "cost and quality drift"
-      ],
-      "safeDraft": true,
-      "searchIntent": "informational",
-      "searchSeeds": [
-        "LLM observability",
-        "RAG evaluation",
-        "AI agent logs",
-        "prompt injection defense"
-      ],
-      "sourceNotes": true,
-      "sourceTargets": [
-        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
-        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
-        "LangChain docs: https://python.langchain.com/docs"
-      ],
-      "themeId": "evals-observability-security",
-      "themeTitle": "LLM evaluation, observability, and security",
-      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
     }
   ]
 }

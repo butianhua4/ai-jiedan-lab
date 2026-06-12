@@ -1,6 +1,6 @@
 # Internal Link Opportunity Audit
 
-Generated at: 2026-06-12T06:12:57.031Z
+Generated at: 2026-06-12T16:31:52.701Z
 
 This report is read-only. It suggests public internal links for review candidates before any publishing action.
 
@@ -36,7 +36,7 @@ This report is read-only. It suggests public internal links for review candidate
 
 | Scopes | Public links now | Suggestions | Top suggestion | Title | File |
 | --- | --- | --- | --- | --- | --- |
-| broad-first-coverage | 0/3 | 5 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist) | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+| broad-first-coverage | 0/3 | 5 | Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist) | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
 | broad-first-coverage, expansion, recommended, wave-1 | 0/6 | 5 | Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | broad-first-coverage, expansion | 1/3 | 5 | Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist) | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | broad-first-coverage, expansion, recommended, wave-1 | 0/4 | 5 | Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
@@ -61,11 +61,11 @@ This report is read-only. It suggests public internal links for review candidate
 
 | Scopes | Public links now | Suggestions | Top suggestion | Title | File |
 | --- | --- | --- | --- | --- | --- |
-| broad-first-coverage | 0/3 | 5 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist) | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+| broad-first-coverage | 0/3 | 5 | Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist) | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
 | broad-first-coverage, expansion, recommended, wave-1 | 0/6 | 5 | Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| expansion | 0/6 | 5 | Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| expansion | 0/6 | 5 | Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist) | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | broad-first-coverage, expansion | 1/3 | 5 | Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist) | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
-| expansion | 0/3 | 5 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist) | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| expansion | 0/3 | 5 | Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist) | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | broad-first-coverage, expansion, recommended, wave-1 | 0/4 | 5 | Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | expansion | 0/3 | 5 | Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist) | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
 | expansion | 0/3 | 5 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide) | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |

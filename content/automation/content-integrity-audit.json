@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:12:56.390Z",
+  "generatedAt": "2026-06-12T16:31:52.057Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -282,8 +282,8 @@
       "issues": [],
       "scope": [],
       "status": "draft",
-      "title": "AI 工具练习小项目选题检查清单",
-      "titleLength": 16,
+      "title": "AI 小项目练习选题检查清单",
+      "titleLength": 14,
       "warnings": [
         "possible mojibake or replacement character"
       ]
@@ -375,12 +375,12 @@
       ]
     },
     {
-      "descriptionLength": 70,
+      "descriptionLength": 71,
       "file": "content/blog/claude-code-beginner-use-cases.mdx",
       "issues": [],
       "scope": [],
       "status": "draft",
-      "title": "Claude Code 新手适合用在哪些接单场景",
+      "title": "Claude Code 新手适合用在哪些项目场景",
       "titleLength": 24,
       "warnings": [
         "possible mojibake or replacement character"
@@ -428,7 +428,7 @@
       "issues": [],
       "scope": [],
       "status": "draft",
-      "title": "Claude Code 新手常用命令怎么整理成接单笔记",
+      "title": "Claude Code 新手常用命令怎么整理成项目笔记",
       "titleLength": 27,
       "warnings": [
         "possible mojibake or replacement character"
@@ -464,7 +464,7 @@
       "issues": [],
       "scope": [],
       "status": "draft",
-      "title": "哪些小项目任务适合用 Claude Code 辅助接单",
+      "title": "哪些小项目任务适合用 Claude Code 辅助项目",
       "titleLength": 27,
       "warnings": [
         "possible mojibake or replacement character"
@@ -802,7 +802,7 @@
       "issues": [],
       "scope": [],
       "status": "draft",
-      "title": "Codex 怎么做第一个落地页：接单前怎么判断能不能做",
+      "title": "Codex 怎么做第一个落地页：使用前怎么判断是否适合",
       "titleLength": 27,
       "warnings": [
         "possible mojibake or replacement character"
@@ -944,7 +944,7 @@
       "issues": [],
       "scope": [],
       "status": "draft",
-      "title": "新手如何记录每天的接单练习",
+      "title": "新手如何记录每天的项目练习",
       "titleLength": 13,
       "warnings": [
         "possible mojibake or replacement character"
@@ -1030,7 +1030,7 @@
       "issues": [],
       "scope": [],
       "status": "draft",
-      "title": "module not found 接单前怎么判断能不能做",
+      "title": "module not found 使用前怎么判断是否适合",
       "titleLength": 28,
       "warnings": [
         "possible mojibake or replacement character"
@@ -1054,7 +1054,7 @@
       "issues": [],
       "scope": [],
       "status": "draft",
-      "title": "Node 版本不匹配接单前怎么判断能不能做",
+      "title": "Node 版本不匹配使用前怎么判断是否适合",
       "titleLength": 21,
       "warnings": [
         "possible mojibake or replacement character"
@@ -1150,7 +1150,7 @@
       "issues": [],
       "scope": [],
       "status": "draft",
-      "title": "TypeScript 报错新手怎么排查：接单前怎么判断能不能做",
+      "title": "TypeScript 报错新手怎么排查：使用前怎么判断是否适合",
       "titleLength": 31,
       "warnings": [
         "possible mojibake or replacement character"

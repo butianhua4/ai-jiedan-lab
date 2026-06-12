@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:25.523Z",
+  "generatedAt": "2026-06-12T16:32:21.776Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -16,7 +16,7 @@
       "stopBefore": "Every mark:review command requires explicit human approval. publish --confirm commands are intentionally not included."
     },
     "actionBoardReadyTasks": 16,
-    "contentFreshnessGeneratedAt": "2026-06-12T06:13:25.052Z",
+    "contentFreshnessGeneratedAt": "2026-06-12T16:32:21.282Z",
     "contentFreshnessGuardrails": {
       "autoPublish": false,
       "note": "This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status."
@@ -34,7 +34,7 @@
       "okUrls": 39,
       "publicGapDecisionFiles": 13,
       "redirectedUrls": 18,
-      "sourceReferences": 261,
+      "sourceReferences": 264,
       "uniqueUrls": 40
     },
     "uniqueActionFiles": 13
@@ -51,7 +51,7 @@
   "blockedItems": [],
   "highRiskItems": [
     {
-      "articleUpdatedAt": "2026-06-06",
+      "articleUpdatedAt": "2026-06-12",
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "freshnessRisk": "high",
       "humanReviewChecklist": [
@@ -62,6 +62,8 @@
         "Only after human approval, run mark:review manually; publishing still requires separate explicit approval."
       ],
       "officialSourceTargets": [
+        "OpenAI docs: https://platform.openai.com/docs",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
         "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
         "https://platform.openai.com/docs/guides/retrieval",
@@ -73,10 +75,11 @@
         "https://ai-sdk.dev/docs",
         "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
         "https://arxiv.org/abs/2603.10700",
-        "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+        "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+        "https://platform.openai.com/docs/guides/agents"
       ],
       "readyForFreshnessReview": true,
-      "reachableSources": 29,
+      "reachableSources": 32,
       "reviewFocus": [
         "把 RAG、微调、提示词模板区分清楚",
         "必须写明引用、来源、权限和失败兜底",
@@ -105,7 +108,7 @@
         "current-review",
         "public-gap"
       ],
-      "sourceTargets": 29,
+      "sourceTargets": 32,
       "staleSensitiveChecks": [
         "客服 AI 模型选型 官方文档 最新",
         "客服 AI 模型选型 official docs latest",
@@ -129,7 +132,7 @@
       ]
     },
     {
-      "articleUpdatedAt": "2026-06-06",
+      "articleUpdatedAt": "2026-06-12",
       "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
       "freshnessRisk": "high",
       "humanReviewChecklist": [
@@ -208,7 +211,7 @@
       ]
     },
     {
-      "articleUpdatedAt": "2026-06-06",
+      "articleUpdatedAt": "2026-06-12",
       "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
       "freshnessRisk": "high",
       "humanReviewChecklist": [
@@ -282,7 +285,7 @@
       ]
     },
     {
-      "articleUpdatedAt": "2026-06-06",
+      "articleUpdatedAt": "2026-06-12",
       "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
       "freshnessRisk": "high",
       "humanReviewChecklist": [
@@ -511,7 +514,7 @@
       ]
     },
     {
-      "articleUpdatedAt": "2026-06-06",
+      "articleUpdatedAt": "2026-06-12",
       "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
       "freshnessRisk": "high",
       "humanReviewChecklist": [
@@ -576,6 +579,83 @@
         "primary keyword is not an exact title substring",
         "no exact search-seed phrase appears in title, description, or body",
         "article currently has no links to published articles"
+      ]
+    },
+    {
+      "articleUpdatedAt": "2026-06-06",
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "freshnessRisk": "high",
+      "humanReviewChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Open official source targets and verify current product names, APIs, limits, pricing-sensitive wording, and workflow boundaries.",
+        "Rewrite or remove any unsupported claim before mark:review.",
+        "Confirm no traffic, ranking, revenue, client acquisition, or guaranteed result claim was introduced.",
+        "Only after human approval, run mark:review manually; publishing still requires separate explicit approval."
+      ],
+      "officialSourceTargets": [
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "LangChain docs: https://python.langchain.com/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://python.langchain.com/docs",
+        "https://platform.openai.com/docs",
+        "https://docs.anthropic.com",
+        "https://ai-sdk.dev/docs",
+        "https://ai.google.dev/docs",
+        "https://docs.dify.ai",
+        "https://docs.n8n.io",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://docs.anthropic.com/",
+        "https://vercel.com/docs/ai-gateway"
+      ],
+      "readyForFreshnessReview": true,
+      "reachableSources": 36,
+      "reviewFocus": [
+        "traces and logs",
+        "evaluation datasets",
+        "prompt injection",
+        "cost and quality drift",
+        "核对 SDK 名称、API endpoint、限流概念和错误码",
+        "必须强调密钥安全、服务端代理和日志脱敏",
+        "不要虚构价格或模型能力",
+        "api",
+        "agent",
+        "dify"
+      ],
+      "riskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: agent",
+        "fast-changing technical term: dify",
+        "fast-changing technical term: gemini",
+        "fast-changing technical term: key",
+        "fast-changing technical term: n8n",
+        "fast-changing technical term: openai",
+        "fast-changing technical term: vercel"
+      ],
+      "scope": [
+        "action-board",
+        "public-gap"
+      ],
+      "sourceTargets": 36,
+      "staleSensitiveChecks": [
+        "Confirm current official guidance for api.",
+        "Confirm current official guidance for agent.",
+        "Confirm current official guidance for dify.",
+        "Confirm current official guidance for gemini.",
+        "Confirm current official guidance for key.",
+        "Confirm current official guidance for n8n.",
+        "Confirm current official guidance for openai.",
+        "Confirm current official guidance for vercel.",
+        "Open and verify official source: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents.",
+        "Open and verify official source: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval.",
+        "Open and verify official source: LangChain docs: https://python.langchain.com/docs.",
+        "Open and verify official source: https://platform.openai.com/docs/guides/agents."
+      ],
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "warningIssues": [
+        "primary keyword is not an exact title substring",
+        "theme still has missing subtopics: logs, prompt injection, cost tracking"
       ]
     },
     {
@@ -658,83 +738,6 @@
         "no exact search-seed phrase appears in title, description, or body",
         "article currently has no links to published articles",
         "theme still has missing subtopics: self hosted, connector"
-      ]
-    },
-    {
-      "articleUpdatedAt": "2026-06-06",
-      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-      "freshnessRisk": "high",
-      "humanReviewChecklist": [
-        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
-        "Open official source targets and verify current product names, APIs, limits, pricing-sensitive wording, and workflow boundaries.",
-        "Rewrite or remove any unsupported claim before mark:review.",
-        "Confirm no traffic, ranking, revenue, client acquisition, or guaranteed result claim was introduced.",
-        "Only after human approval, run mark:review manually; publishing still requires separate explicit approval."
-      ],
-      "officialSourceTargets": [
-        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
-        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
-        "LangChain docs: https://python.langchain.com/docs",
-        "https://platform.openai.com/docs/guides/agents",
-        "https://platform.openai.com/docs/guides/retrieval",
-        "https://python.langchain.com/docs",
-        "https://platform.openai.com/docs",
-        "https://docs.anthropic.com",
-        "https://ai-sdk.dev/docs",
-        "https://ai.google.dev/docs",
-        "https://docs.dify.ai",
-        "https://docs.n8n.io",
-        "https://platform.openai.com/docs/guides/prompt-engineering",
-        "https://docs.anthropic.com/",
-        "https://vercel.com/docs/ai-gateway"
-      ],
-      "readyForFreshnessReview": true,
-      "reachableSources": 36,
-      "reviewFocus": [
-        "traces and logs",
-        "evaluation datasets",
-        "prompt injection",
-        "cost and quality drift",
-        "核对 SDK 名称、API endpoint、限流概念和错误码",
-        "必须强调密钥安全、服务端代理和日志脱敏",
-        "不要虚构价格或模型能力",
-        "api",
-        "agent",
-        "dify"
-      ],
-      "riskReasons": [
-        "fast-changing technical term: api",
-        "fast-changing technical term: agent",
-        "fast-changing technical term: dify",
-        "fast-changing technical term: gemini",
-        "fast-changing technical term: key",
-        "fast-changing technical term: n8n",
-        "fast-changing technical term: openai",
-        "fast-changing technical term: vercel"
-      ],
-      "scope": [
-        "action-board",
-        "public-gap"
-      ],
-      "sourceTargets": 36,
-      "staleSensitiveChecks": [
-        "Confirm current official guidance for api.",
-        "Confirm current official guidance for agent.",
-        "Confirm current official guidance for dify.",
-        "Confirm current official guidance for gemini.",
-        "Confirm current official guidance for key.",
-        "Confirm current official guidance for n8n.",
-        "Confirm current official guidance for openai.",
-        "Confirm current official guidance for vercel.",
-        "Open and verify official source: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents.",
-        "Open and verify official source: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval.",
-        "Open and verify official source: LangChain docs: https://python.langchain.com/docs.",
-        "Open and verify official source: https://platform.openai.com/docs/guides/agents."
-      ],
-      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
-      "warningIssues": [
-        "primary keyword is not an exact title substring",
-        "theme still has missing subtopics: logs, prompt injection, cost tracking"
       ]
     },
     {
@@ -987,7 +990,7 @@
   ],
   "items": [
     {
-      "articleUpdatedAt": "2026-06-06",
+      "articleUpdatedAt": "2026-06-12",
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "freshnessRisk": "high",
       "humanReviewChecklist": [
@@ -998,6 +1001,8 @@
         "Only after human approval, run mark:review manually; publishing still requires separate explicit approval."
       ],
       "officialSourceTargets": [
+        "OpenAI docs: https://platform.openai.com/docs",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
         "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
         "https://platform.openai.com/docs/guides/retrieval",
@@ -1009,10 +1014,11 @@
         "https://ai-sdk.dev/docs",
         "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
         "https://arxiv.org/abs/2603.10700",
-        "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+        "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+        "https://platform.openai.com/docs/guides/agents"
       ],
       "readyForFreshnessReview": true,
-      "reachableSources": 29,
+      "reachableSources": 32,
       "reviewFocus": [
         "把 RAG、微调、提示词模板区分清楚",
         "必须写明引用、来源、权限和失败兜底",
@@ -1041,7 +1047,7 @@
         "current-review",
         "public-gap"
       ],
-      "sourceTargets": 29,
+      "sourceTargets": 32,
       "staleSensitiveChecks": [
         "客服 AI 模型选型 官方文档 最新",
         "客服 AI 模型选型 official docs latest",
@@ -1065,7 +1071,7 @@
       ]
     },
     {
-      "articleUpdatedAt": "2026-06-06",
+      "articleUpdatedAt": "2026-06-12",
       "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
       "freshnessRisk": "high",
       "humanReviewChecklist": [
@@ -1144,7 +1150,7 @@
       ]
     },
     {
-      "articleUpdatedAt": "2026-06-06",
+      "articleUpdatedAt": "2026-06-12",
       "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
       "freshnessRisk": "high",
       "humanReviewChecklist": [
@@ -1218,7 +1224,7 @@
       ]
     },
     {
-      "articleUpdatedAt": "2026-06-06",
+      "articleUpdatedAt": "2026-06-12",
       "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
       "freshnessRisk": "high",
       "humanReviewChecklist": [
@@ -1447,7 +1453,7 @@
       ]
     },
     {
-      "articleUpdatedAt": "2026-06-06",
+      "articleUpdatedAt": "2026-06-12",
       "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
       "freshnessRisk": "high",
       "humanReviewChecklist": [
@@ -1512,6 +1518,83 @@
         "primary keyword is not an exact title substring",
         "no exact search-seed phrase appears in title, description, or body",
         "article currently has no links to published articles"
+      ]
+    },
+    {
+      "articleUpdatedAt": "2026-06-06",
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "freshnessRisk": "high",
+      "humanReviewChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Open official source targets and verify current product names, APIs, limits, pricing-sensitive wording, and workflow boundaries.",
+        "Rewrite or remove any unsupported claim before mark:review.",
+        "Confirm no traffic, ranking, revenue, client acquisition, or guaranteed result claim was introduced.",
+        "Only after human approval, run mark:review manually; publishing still requires separate explicit approval."
+      ],
+      "officialSourceTargets": [
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "LangChain docs: https://python.langchain.com/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://python.langchain.com/docs",
+        "https://platform.openai.com/docs",
+        "https://docs.anthropic.com",
+        "https://ai-sdk.dev/docs",
+        "https://ai.google.dev/docs",
+        "https://docs.dify.ai",
+        "https://docs.n8n.io",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://docs.anthropic.com/",
+        "https://vercel.com/docs/ai-gateway"
+      ],
+      "readyForFreshnessReview": true,
+      "reachableSources": 36,
+      "reviewFocus": [
+        "traces and logs",
+        "evaluation datasets",
+        "prompt injection",
+        "cost and quality drift",
+        "核对 SDK 名称、API endpoint、限流概念和错误码",
+        "必须强调密钥安全、服务端代理和日志脱敏",
+        "不要虚构价格或模型能力",
+        "api",
+        "agent",
+        "dify"
+      ],
+      "riskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: agent",
+        "fast-changing technical term: dify",
+        "fast-changing technical term: gemini",
+        "fast-changing technical term: key",
+        "fast-changing technical term: n8n",
+        "fast-changing technical term: openai",
+        "fast-changing technical term: vercel"
+      ],
+      "scope": [
+        "action-board",
+        "public-gap"
+      ],
+      "sourceTargets": 36,
+      "staleSensitiveChecks": [
+        "Confirm current official guidance for api.",
+        "Confirm current official guidance for agent.",
+        "Confirm current official guidance for dify.",
+        "Confirm current official guidance for gemini.",
+        "Confirm current official guidance for key.",
+        "Confirm current official guidance for n8n.",
+        "Confirm current official guidance for openai.",
+        "Confirm current official guidance for vercel.",
+        "Open and verify official source: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents.",
+        "Open and verify official source: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval.",
+        "Open and verify official source: LangChain docs: https://python.langchain.com/docs.",
+        "Open and verify official source: https://platform.openai.com/docs/guides/agents."
+      ],
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "warningIssues": [
+        "primary keyword is not an exact title substring",
+        "theme still has missing subtopics: logs, prompt injection, cost tracking"
       ]
     },
     {
@@ -1594,83 +1677,6 @@
         "no exact search-seed phrase appears in title, description, or body",
         "article currently has no links to published articles",
         "theme still has missing subtopics: self hosted, connector"
-      ]
-    },
-    {
-      "articleUpdatedAt": "2026-06-06",
-      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-      "freshnessRisk": "high",
-      "humanReviewChecklist": [
-        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
-        "Open official source targets and verify current product names, APIs, limits, pricing-sensitive wording, and workflow boundaries.",
-        "Rewrite or remove any unsupported claim before mark:review.",
-        "Confirm no traffic, ranking, revenue, client acquisition, or guaranteed result claim was introduced.",
-        "Only after human approval, run mark:review manually; publishing still requires separate explicit approval."
-      ],
-      "officialSourceTargets": [
-        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
-        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
-        "LangChain docs: https://python.langchain.com/docs",
-        "https://platform.openai.com/docs/guides/agents",
-        "https://platform.openai.com/docs/guides/retrieval",
-        "https://python.langchain.com/docs",
-        "https://platform.openai.com/docs",
-        "https://docs.anthropic.com",
-        "https://ai-sdk.dev/docs",
-        "https://ai.google.dev/docs",
-        "https://docs.dify.ai",
-        "https://docs.n8n.io",
-        "https://platform.openai.com/docs/guides/prompt-engineering",
-        "https://docs.anthropic.com/",
-        "https://vercel.com/docs/ai-gateway"
-      ],
-      "readyForFreshnessReview": true,
-      "reachableSources": 36,
-      "reviewFocus": [
-        "traces and logs",
-        "evaluation datasets",
-        "prompt injection",
-        "cost and quality drift",
-        "核对 SDK 名称、API endpoint、限流概念和错误码",
-        "必须强调密钥安全、服务端代理和日志脱敏",
-        "不要虚构价格或模型能力",
-        "api",
-        "agent",
-        "dify"
-      ],
-      "riskReasons": [
-        "fast-changing technical term: api",
-        "fast-changing technical term: agent",
-        "fast-changing technical term: dify",
-        "fast-changing technical term: gemini",
-        "fast-changing technical term: key",
-        "fast-changing technical term: n8n",
-        "fast-changing technical term: openai",
-        "fast-changing technical term: vercel"
-      ],
-      "scope": [
-        "action-board",
-        "public-gap"
-      ],
-      "sourceTargets": 36,
-      "staleSensitiveChecks": [
-        "Confirm current official guidance for api.",
-        "Confirm current official guidance for agent.",
-        "Confirm current official guidance for dify.",
-        "Confirm current official guidance for gemini.",
-        "Confirm current official guidance for key.",
-        "Confirm current official guidance for n8n.",
-        "Confirm current official guidance for openai.",
-        "Confirm current official guidance for vercel.",
-        "Open and verify official source: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents.",
-        "Open and verify official source: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval.",
-        "Open and verify official source: LangChain docs: https://python.langchain.com/docs.",
-        "Open and verify official source: https://platform.openai.com/docs/guides/agents."
-      ],
-      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
-      "warningIssues": [
-        "primary keyword is not an exact title substring",
-        "theme still has missing subtopics: logs, prompt injection, cost tracking"
       ]
     },
     {

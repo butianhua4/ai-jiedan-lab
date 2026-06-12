@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:10.166Z",
+  "generatedAt": "2026-06-12T16:32:06.074Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,7 +10,7 @@
     "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval."
   },
   "sourceEvidence": {
-    "reviewPackGeneratedAt": "2026-06-12T06:13:09.678Z",
+    "reviewPackGeneratedAt": "2026-06-12T16:32:05.580Z",
     "reviewPackGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -32,7 +32,7 @@
       "itemsWithSearchQueries": 16,
       "lanes": 8,
       "readyItems": 16,
-      "reviewQueueMatchedItems": 15,
+      "reviewQueueMatchedItems": 14,
       "safeDraftItems": 16,
       "unsafeItems": 0,
       "zeroPublicLaneItems": 12
@@ -73,7 +73,7 @@
         "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
         "status": "draft",
         "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-        "updatedAt": "2026-06-06"
+        "updatedAt": "2026-06-12"
       },
       "humanApprovalReady": true,
       "indexingSafe": true,
@@ -151,7 +151,7 @@
         "slug": "industry-ai-prompts-template-library-2026",
         "status": "draft",
         "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-        "updatedAt": "2026-06-06"
+        "updatedAt": "2026-06-12"
       },
       "humanApprovalReady": true,
       "indexingSafe": true,
@@ -190,7 +190,7 @@
         "slug": "ai-model-selection-customer-service-guide",
         "status": "draft",
         "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-        "updatedAt": "2026-06-06"
+        "updatedAt": "2026-06-12"
       },
       "humanApprovalReady": true,
       "indexingSafe": true,
@@ -231,7 +231,7 @@
         "slug": "llm-deployment-huggingface-inference-endpoints-guide",
         "status": "draft",
         "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-        "updatedAt": "2026-06-06"
+        "updatedAt": "2026-06-12"
       },
       "humanApprovalReady": true,
       "indexingSafe": true,
@@ -354,7 +354,7 @@
         "slug": "n8n-ai-agent-rag-memory-guide",
         "status": "draft",
         "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
-        "updatedAt": "2026-06-06"
+        "updatedAt": "2026-06-12"
       },
       "humanApprovalReady": true,
       "indexingSafe": true,
@@ -574,20 +574,20 @@
     {
       "blockingIssues": [],
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/product-manager-ai-prompts-guide.mdx",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/agent-memory-postgres-schema-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/agent-memory-postgres-schema-guide.mdx",
         "publishConfirm": "not-included",
         "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
       },
-      "file": "content/blog/product-manager-ai-prompts-guide.mdx",
+      "file": "content/blog/agent-memory-postgres-schema-guide.mdx",
       "frontMatter": {
-        "canonical": "https://ai-jiedan-lab.vercel.app/blog/product-manager-ai-prompts-guide",
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/agent-memory-postgres-schema-guide",
         "date": "2026-06-06",
-        "description": "面向产品经理整理 AI 提示词模板，覆盖需求澄清、PRD 草稿、竞品分析、用户故事、验收标准、发布说明和风险复核。",
+        "description": "面向新手整理 Agent 记忆落库设计，覆盖短期会话、长期偏好、项目事实、来源记录、过期时间、删除入口和人工复核。",
         "noindex": true,
-        "slug": "product-manager-ai-prompts-guide",
+        "slug": "agent-memory-postgres-schema-guide",
         "status": "draft",
-        "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
+        "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
         "updatedAt": "2026-06-06"
       },
       "humanApprovalReady": true,
@@ -599,55 +599,14 @@
         "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review.",
         "Verify official sources and fact-check queries manually.",
         "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
-        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/agent-memory-postgres-schema-guide.mdx --confirm-human",
         "Publishing remains a separate explicit approval step."
       ],
       "reviewPackReady": true,
       "schemaReady": true,
       "searchSnippetReady": true,
       "sourceReady": true,
-      "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
-      "warningIssues": [
-        "no public internal-link suggestion is attached yet",
-        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review"
-      ]
-    },
-    {
-      "blockingIssues": [],
-      "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-        "publishConfirm": "not-included",
-        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
-      },
-      "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-      "frontMatter": {
-        "canonical": "https://ai-jiedan-lab.vercel.app/blog/bentoml-llm-deployment-beginner-guide",
-        "date": "2026-06-05",
-        "description": "面向新手整理 BentoML 部署 LLM 的路线，覆盖 Service、本地运行、Bento、BentoCloud、OpenAI-compatible API、批量推理和上线边界。",
-        "noindex": true,
-        "slug": "bentoml-llm-deployment-beginner-guide",
-        "status": "draft",
-        "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
-        "updatedAt": "2026-06-05"
-      },
-      "humanApprovalReady": true,
-      "indexingSafe": true,
-      "internalLinkReady": false,
-      "lane": "ai-service-pricing-delivery",
-      "manualNextActions": [
-        "Review warning before publish: no public internal-link suggestion is attached yet.",
-        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review.",
-        "Verify official sources and fact-check queries manually.",
-        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
-        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
-        "Publishing remains a separate explicit approval step."
-      ],
-      "reviewPackReady": true,
-      "schemaReady": true,
-      "searchSnippetReady": true,
-      "sourceReady": true,
-      "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+      "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
       "warningIssues": [
         "no public internal-link suggestion is attached yet",
         "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review"
@@ -690,6 +649,47 @@
       "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
       "warningIssues": [
         "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/product-manager-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/product-manager-ai-prompts-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/product-manager-ai-prompts-guide",
+        "date": "2026-06-06",
+        "description": "面向产品经理整理 AI 提示词模板，覆盖需求澄清、PRD 草稿、竞品分析、用户故事、验收标准、发布说明和风险复核。",
+        "noindex": true,
+        "slug": "product-manager-ai-prompts-guide",
+        "status": "draft",
+        "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
+        "updatedAt": "2026-06-12"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": false,
+      "lane": "ai-service-pricing-delivery",
+      "manualNextActions": [
+        "Review warning before publish: no public internal-link suggestion is attached yet.",
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
+      "warningIssues": [
+        "no public internal-link suggestion is attached yet",
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review"
       ]
     }
   ],
@@ -711,7 +711,7 @@
         "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
         "status": "draft",
         "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-        "updatedAt": "2026-06-06"
+        "updatedAt": "2026-06-12"
       },
       "humanApprovalReady": true,
       "indexingSafe": true,
@@ -789,7 +789,7 @@
         "slug": "industry-ai-prompts-template-library-2026",
         "status": "draft",
         "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-        "updatedAt": "2026-06-06"
+        "updatedAt": "2026-06-12"
       },
       "humanApprovalReady": true,
       "indexingSafe": true,
@@ -828,7 +828,7 @@
         "slug": "ai-model-selection-customer-service-guide",
         "status": "draft",
         "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-        "updatedAt": "2026-06-06"
+        "updatedAt": "2026-06-12"
       },
       "humanApprovalReady": true,
       "indexingSafe": true,
@@ -869,7 +869,7 @@
         "slug": "llm-deployment-huggingface-inference-endpoints-guide",
         "status": "draft",
         "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-        "updatedAt": "2026-06-06"
+        "updatedAt": "2026-06-12"
       },
       "humanApprovalReady": true,
       "indexingSafe": true,
@@ -992,7 +992,7 @@
         "slug": "n8n-ai-agent-rag-memory-guide",
         "status": "draft",
         "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
-        "updatedAt": "2026-06-06"
+        "updatedAt": "2026-06-12"
       },
       "humanApprovalReady": true,
       "indexingSafe": true,
@@ -1212,20 +1212,20 @@
     {
       "blockingIssues": [],
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/product-manager-ai-prompts-guide.mdx",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/agent-memory-postgres-schema-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/agent-memory-postgres-schema-guide.mdx",
         "publishConfirm": "not-included",
         "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
       },
-      "file": "content/blog/product-manager-ai-prompts-guide.mdx",
+      "file": "content/blog/agent-memory-postgres-schema-guide.mdx",
       "frontMatter": {
-        "canonical": "https://ai-jiedan-lab.vercel.app/blog/product-manager-ai-prompts-guide",
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/agent-memory-postgres-schema-guide",
         "date": "2026-06-06",
-        "description": "面向产品经理整理 AI 提示词模板，覆盖需求澄清、PRD 草稿、竞品分析、用户故事、验收标准、发布说明和风险复核。",
+        "description": "面向新手整理 Agent 记忆落库设计，覆盖短期会话、长期偏好、项目事实、来源记录、过期时间、删除入口和人工复核。",
         "noindex": true,
-        "slug": "product-manager-ai-prompts-guide",
+        "slug": "agent-memory-postgres-schema-guide",
         "status": "draft",
-        "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
+        "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
         "updatedAt": "2026-06-06"
       },
       "humanApprovalReady": true,
@@ -1237,55 +1237,14 @@
         "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review.",
         "Verify official sources and fact-check queries manually.",
         "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
-        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/agent-memory-postgres-schema-guide.mdx --confirm-human",
         "Publishing remains a separate explicit approval step."
       ],
       "reviewPackReady": true,
       "schemaReady": true,
       "searchSnippetReady": true,
       "sourceReady": true,
-      "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
-      "warningIssues": [
-        "no public internal-link suggestion is attached yet",
-        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review"
-      ]
-    },
-    {
-      "blockingIssues": [],
-      "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-        "publishConfirm": "not-included",
-        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
-      },
-      "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-      "frontMatter": {
-        "canonical": "https://ai-jiedan-lab.vercel.app/blog/bentoml-llm-deployment-beginner-guide",
-        "date": "2026-06-05",
-        "description": "面向新手整理 BentoML 部署 LLM 的路线，覆盖 Service、本地运行、Bento、BentoCloud、OpenAI-compatible API、批量推理和上线边界。",
-        "noindex": true,
-        "slug": "bentoml-llm-deployment-beginner-guide",
-        "status": "draft",
-        "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
-        "updatedAt": "2026-06-05"
-      },
-      "humanApprovalReady": true,
-      "indexingSafe": true,
-      "internalLinkReady": false,
-      "lane": "ai-service-pricing-delivery",
-      "manualNextActions": [
-        "Review warning before publish: no public internal-link suggestion is attached yet.",
-        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review.",
-        "Verify official sources and fact-check queries manually.",
-        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
-        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
-        "Publishing remains a separate explicit approval step."
-      ],
-      "reviewPackReady": true,
-      "schemaReady": true,
-      "searchSnippetReady": true,
-      "sourceReady": true,
-      "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+      "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
       "warningIssues": [
         "no public internal-link suggestion is attached yet",
         "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review"
@@ -1328,6 +1287,47 @@
       "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
       "warningIssues": [
         "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "blockingIssues": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/product-manager-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "file": "content/blog/product-manager-ai-prompts-guide.mdx",
+      "frontMatter": {
+        "canonical": "https://ai-jiedan-lab.vercel.app/blog/product-manager-ai-prompts-guide",
+        "date": "2026-06-06",
+        "description": "面向产品经理整理 AI 提示词模板，覆盖需求澄清、PRD 草稿、竞品分析、用户故事、验收标准、发布说明和风险复核。",
+        "noindex": true,
+        "slug": "product-manager-ai-prompts-guide",
+        "status": "draft",
+        "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
+        "updatedAt": "2026-06-12"
+      },
+      "humanApprovalReady": true,
+      "indexingSafe": true,
+      "internalLinkReady": false,
+      "lane": "ai-service-pricing-delivery",
+      "manualNextActions": [
+        "Review warning before publish: no public internal-link suggestion is attached yet.",
+        "Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review.",
+        "Verify official sources and fact-check queries manually.",
+        "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
+        "Publishing remains a separate explicit approval step."
+      ],
+      "reviewPackReady": true,
+      "schemaReady": true,
+      "searchSnippetReady": true,
+      "sourceReady": true,
+      "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
+      "warningIssues": [
+        "no public internal-link suggestion is attached yet",
+        "review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review"
       ]
     }
   ]

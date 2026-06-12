@@ -1,6 +1,6 @@
 # Autopilot Broad Publish Waves
 
-Generated at: 2026-06-12T06:13:36.877Z
+Generated at: 2026-06-12T16:32:33.423Z
 
 ## Guardrails
 
@@ -59,7 +59,7 @@ Generated at: 2026-06-12T06:13:36.877Z
 
 | Order | Risk | Checks | Sources | Queries | Title | File |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | high | 16 | 10 | 5 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 1 | high | 16 | 11 | 5 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 2 | high | 16 | 7 | 6 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
 | 3 | high | 13 | 3 | 5 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 

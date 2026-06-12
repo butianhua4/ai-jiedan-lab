@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:11.496Z",
+  "generatedAt": "2026-06-12T16:32:07.424Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,7 +10,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "broadSearchDemandGeneratedAt": "2026-06-12T06:13:10.979Z",
+    "broadSearchDemandGeneratedAt": "2026-06-12T16:32:06.902Z",
     "broadSearchDemandGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -24,11 +24,11 @@
       "totalReadyDraftMatches": 417,
       "uniqueCandidateFiles": 56,
       "reviewPackThemeMatches": 4,
-      "plannedWaveThemeMatches": 24,
+      "plannedWaveThemeMatches": 22,
       "missingSubtopics": 25,
-      "maxGapScore": 388
+      "maxGapScore": 382
     },
-    "deploymentReviewGeneratedAt": "2026-06-12T01:42:33.381Z",
+    "deploymentReviewGeneratedAt": "2026-06-12T14:52:26.815Z",
     "deploymentReviewSummary": {
       "deploymentPublicArticles": 3,
       "duplicateFiles": 0,
@@ -44,7 +44,7 @@
       "unsafeItems": 0,
       "uniqueFiles": 10
     },
-    "industryPromptModuleGeneratedAt": "2026-06-12T01:42:35.735Z",
+    "industryPromptModuleGeneratedAt": "2026-06-12T06:13:14.351Z",
     "industryPromptModuleSummary": {
       "humanGatedItems": 12,
       "items": 12,
@@ -1031,138 +1031,6 @@
     {
       "articleSignals": [
         {
-          "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-          "humanReviewRequired": true,
-          "noindex": true,
-          "qualityScore": 100,
-          "sourceNotes": true,
-          "status": "draft"
-        },
-        {
-          "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
-          "humanReviewRequired": true,
-          "noindex": true,
-          "qualityScore": 100,
-          "sourceNotes": true,
-          "status": "draft"
-        },
-        {
-          "file": "content/blog/huggingface-tgi-deployment-guide.mdx",
-          "humanReviewRequired": true,
-          "noindex": true,
-          "qualityScore": 100,
-          "sourceNotes": true,
-          "status": "draft"
-        },
-        {
-          "file": "content/blog/kubernetes-gpu-llm-deployment-guide.mdx",
-          "humanReviewRequired": true,
-          "noindex": true,
-          "qualityScore": 100,
-          "sourceNotes": true,
-          "status": "draft"
-        },
-        {
-          "file": "content/blog/modal-serverless-gpu-llm-guide.mdx",
-          "humanReviewRequired": true,
-          "noindex": true,
-          "qualityScore": 100,
-          "sourceNotes": true,
-          "status": "draft"
-        },
-        {
-          "file": "content/blog/ray-serve-llm-deployment-guide.mdx",
-          "humanReviewRequired": true,
-          "noindex": true,
-          "qualityScore": 100,
-          "sourceNotes": true,
-          "status": "draft"
-        }
-      ],
-      "bridgeSources": [
-        "content/automation/broad-search-demand-map.json",
-        "content/automation/ai-deployment-review-pack.json"
-      ],
-      "candidateFiles": [
-        "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-        "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
-        "content/blog/huggingface-tgi-deployment-guide.mdx",
-        "content/blog/kubernetes-gpu-llm-deployment-guide.mdx",
-        "content/blog/modal-serverless-gpu-llm-guide.mdx",
-        "content/blog/ray-serve-llm-deployment-guide.mdx",
-        "content/blog/runpod-serverless-llm-deployment-guide.mdx",
-        "content/blog/tensorrt-llm-beginner-guide.mdx"
-      ],
-      "commandBoundaries": [
-        {
-          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
-          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-          "publishConfirm": "not-included",
-          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
-        }
-      ],
-      "deploymentMatches": 1,
-      "editorialWave": 3,
-      "humanReviewActions": [
-        "Confirm every candidate is still draft, noindex, and humanReviewRequired before any approval action.",
-        "Verify current official docs before approving model names, APIs, SDKs, deployment commands, memory/RAG behavior, and tool permissions.",
-        "Check the article answers a broad search intent directly, not only a narrow implementation note.",
-        "Remove or rewrite unsupported claims about traffic, ranking, revenue, benchmark, latency, cost, reliability, legal outcomes, medical outcomes, hiring outcomes, or conversion.",
-        "Confirm human approval, audit logs, rollback, privacy, and escalation boundaries are explicit where the topic touches agents, tools, customer data, or business operations.",
-        "Only after explicit human approval, run mark:review manually for a specific file. Publishing remains a separate explicit approval step.",
-        "Apply theme review focus: serving framework versions.",
-        "Apply theme review focus: cold starts and concurrency.",
-        "Apply theme review focus: GPU cost.",
-        "Apply theme review focus: autoscaling and monitoring.",
-        "Use deployment review candidate: content/blog/bentoml-llm-deployment-beginner-guide.mdx.",
-        "Open source target for manual fact review: vLLM docs: https://docs.vllm.ai.",
-        "Open source target for manual fact review: Hugging Face docs: https://huggingface.co/docs.",
-        "Confirm the draft answers search seed: vLLM deployment tutorial.",
-        "Confirm the draft answers search seed: Hugging Face TGI deployment.",
-        "Confirm the draft answers search seed: RunPod serverless LLM.",
-        "Confirm the draft answers search seed: serverless GPU LLM deployment.",
-        "Confirm the draft answers search seed: vLLM 部署教程."
-      ],
-      "lane": "model-deployment",
-      "massSearchIntent": "first public coverage for a broad AI search theme",
-      "missingSubtopics": [
-        "concurrency",
-        "autoscaling"
-      ],
-      "promptBlueprintSamples": [],
-      "promptModuleMatches": 0,
-      "publicMatches": 0,
-      "readyCandidateFiles": 8,
-      "readyForHumanReviewPrep": true,
-      "reviewFocus": [
-        "serving framework versions",
-        "cold starts and concurrency",
-        "GPU cost",
-        "autoscaling and monitoring",
-        "Deployment review: LLM Serving、GPU 和托管推理."
-      ],
-      "searchSeeds": [
-        "vLLM deployment tutorial",
-        "Hugging Face TGI deployment",
-        "RunPod serverless LLM",
-        "serverless GPU LLM deployment",
-        "vLLM 部署教程",
-        "TGI 部署教程",
-        "RunPod Serverless 大模型部署",
-        "Modal Serverless GPU LLM"
-      ],
-      "sourceTargets": [
-        "vLLM docs: https://docs.vllm.ai",
-        "Hugging Face docs: https://huggingface.co/docs"
-      ],
-      "themeId": "llm-serving-gpu",
-      "themeTitle": "LLM serving, GPU, and managed inference",
-      "trafficClaim": "not-included",
-      "unsafeReasons": []
-    },
-    {
-      "articleSignals": [
-        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "humanReviewRequired": true,
           "noindex": true,
@@ -1296,6 +1164,138 @@
       ],
       "themeId": "evals-observability-security",
       "themeTitle": "LLM evaluation, observability, and security",
+      "trafficClaim": "not-included",
+      "unsafeReasons": []
+    },
+    {
+      "articleSignals": [
+        {
+          "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+          "humanReviewRequired": true,
+          "noindex": true,
+          "qualityScore": 100,
+          "sourceNotes": true,
+          "status": "draft"
+        },
+        {
+          "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+          "humanReviewRequired": true,
+          "noindex": true,
+          "qualityScore": 100,
+          "sourceNotes": true,
+          "status": "draft"
+        },
+        {
+          "file": "content/blog/huggingface-tgi-deployment-guide.mdx",
+          "humanReviewRequired": true,
+          "noindex": true,
+          "qualityScore": 100,
+          "sourceNotes": true,
+          "status": "draft"
+        },
+        {
+          "file": "content/blog/kubernetes-gpu-llm-deployment-guide.mdx",
+          "humanReviewRequired": true,
+          "noindex": true,
+          "qualityScore": 100,
+          "sourceNotes": true,
+          "status": "draft"
+        },
+        {
+          "file": "content/blog/modal-serverless-gpu-llm-guide.mdx",
+          "humanReviewRequired": true,
+          "noindex": true,
+          "qualityScore": 100,
+          "sourceNotes": true,
+          "status": "draft"
+        },
+        {
+          "file": "content/blog/ray-serve-llm-deployment-guide.mdx",
+          "humanReviewRequired": true,
+          "noindex": true,
+          "qualityScore": 100,
+          "sourceNotes": true,
+          "status": "draft"
+        }
+      ],
+      "bridgeSources": [
+        "content/automation/broad-search-demand-map.json",
+        "content/automation/ai-deployment-review-pack.json"
+      ],
+      "candidateFiles": [
+        "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+        "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+        "content/blog/huggingface-tgi-deployment-guide.mdx",
+        "content/blog/kubernetes-gpu-llm-deployment-guide.mdx",
+        "content/blog/modal-serverless-gpu-llm-guide.mdx",
+        "content/blog/ray-serve-llm-deployment-guide.mdx",
+        "content/blog/runpod-serverless-llm-deployment-guide.mdx",
+        "content/blog/tensorrt-llm-beginner-guide.mdx"
+      ],
+      "commandBoundaries": [
+        {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        }
+      ],
+      "deploymentMatches": 1,
+      "editorialWave": 3,
+      "humanReviewActions": [
+        "Confirm every candidate is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify current official docs before approving model names, APIs, SDKs, deployment commands, memory/RAG behavior, and tool permissions.",
+        "Check the article answers a broad search intent directly, not only a narrow implementation note.",
+        "Remove or rewrite unsupported claims about traffic, ranking, revenue, benchmark, latency, cost, reliability, legal outcomes, medical outcomes, hiring outcomes, or conversion.",
+        "Confirm human approval, audit logs, rollback, privacy, and escalation boundaries are explicit where the topic touches agents, tools, customer data, or business operations.",
+        "Only after explicit human approval, run mark:review manually for a specific file. Publishing remains a separate explicit approval step.",
+        "Apply theme review focus: serving framework versions.",
+        "Apply theme review focus: cold starts and concurrency.",
+        "Apply theme review focus: GPU cost.",
+        "Apply theme review focus: autoscaling and monitoring.",
+        "Use deployment review candidate: content/blog/bentoml-llm-deployment-beginner-guide.mdx.",
+        "Open source target for manual fact review: vLLM docs: https://docs.vllm.ai.",
+        "Open source target for manual fact review: Hugging Face docs: https://huggingface.co/docs.",
+        "Confirm the draft answers search seed: vLLM deployment tutorial.",
+        "Confirm the draft answers search seed: Hugging Face TGI deployment.",
+        "Confirm the draft answers search seed: RunPod serverless LLM.",
+        "Confirm the draft answers search seed: serverless GPU LLM deployment.",
+        "Confirm the draft answers search seed: vLLM 部署教程."
+      ],
+      "lane": "model-deployment",
+      "massSearchIntent": "first public coverage for a broad AI search theme",
+      "missingSubtopics": [
+        "concurrency",
+        "autoscaling"
+      ],
+      "promptBlueprintSamples": [],
+      "promptModuleMatches": 0,
+      "publicMatches": 0,
+      "readyCandidateFiles": 8,
+      "readyForHumanReviewPrep": true,
+      "reviewFocus": [
+        "serving framework versions",
+        "cold starts and concurrency",
+        "GPU cost",
+        "autoscaling and monitoring",
+        "Deployment review: LLM Serving、GPU 和托管推理."
+      ],
+      "searchSeeds": [
+        "vLLM deployment tutorial",
+        "Hugging Face TGI deployment",
+        "RunPod serverless LLM",
+        "serverless GPU LLM deployment",
+        "vLLM 部署教程",
+        "TGI 部署教程",
+        "RunPod Serverless 大模型部署",
+        "Modal Serverless GPU LLM"
+      ],
+      "sourceTargets": [
+        "vLLM docs: https://docs.vllm.ai",
+        "Hugging Face docs: https://huggingface.co/docs"
+      ],
+      "themeId": "llm-serving-gpu",
+      "themeTitle": "LLM serving, GPU, and managed inference",
       "trafficClaim": "not-included",
       "unsafeReasons": []
     }
@@ -2231,138 +2231,6 @@
     {
       "articleSignals": [
         {
-          "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-          "humanReviewRequired": true,
-          "noindex": true,
-          "qualityScore": 100,
-          "sourceNotes": true,
-          "status": "draft"
-        },
-        {
-          "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
-          "humanReviewRequired": true,
-          "noindex": true,
-          "qualityScore": 100,
-          "sourceNotes": true,
-          "status": "draft"
-        },
-        {
-          "file": "content/blog/huggingface-tgi-deployment-guide.mdx",
-          "humanReviewRequired": true,
-          "noindex": true,
-          "qualityScore": 100,
-          "sourceNotes": true,
-          "status": "draft"
-        },
-        {
-          "file": "content/blog/kubernetes-gpu-llm-deployment-guide.mdx",
-          "humanReviewRequired": true,
-          "noindex": true,
-          "qualityScore": 100,
-          "sourceNotes": true,
-          "status": "draft"
-        },
-        {
-          "file": "content/blog/modal-serverless-gpu-llm-guide.mdx",
-          "humanReviewRequired": true,
-          "noindex": true,
-          "qualityScore": 100,
-          "sourceNotes": true,
-          "status": "draft"
-        },
-        {
-          "file": "content/blog/ray-serve-llm-deployment-guide.mdx",
-          "humanReviewRequired": true,
-          "noindex": true,
-          "qualityScore": 100,
-          "sourceNotes": true,
-          "status": "draft"
-        }
-      ],
-      "bridgeSources": [
-        "content/automation/broad-search-demand-map.json",
-        "content/automation/ai-deployment-review-pack.json"
-      ],
-      "candidateFiles": [
-        "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-        "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
-        "content/blog/huggingface-tgi-deployment-guide.mdx",
-        "content/blog/kubernetes-gpu-llm-deployment-guide.mdx",
-        "content/blog/modal-serverless-gpu-llm-guide.mdx",
-        "content/blog/ray-serve-llm-deployment-guide.mdx",
-        "content/blog/runpod-serverless-llm-deployment-guide.mdx",
-        "content/blog/tensorrt-llm-beginner-guide.mdx"
-      ],
-      "commandBoundaries": [
-        {
-          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
-          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-          "publishConfirm": "not-included",
-          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
-        }
-      ],
-      "deploymentMatches": 1,
-      "editorialWave": 3,
-      "humanReviewActions": [
-        "Confirm every candidate is still draft, noindex, and humanReviewRequired before any approval action.",
-        "Verify current official docs before approving model names, APIs, SDKs, deployment commands, memory/RAG behavior, and tool permissions.",
-        "Check the article answers a broad search intent directly, not only a narrow implementation note.",
-        "Remove or rewrite unsupported claims about traffic, ranking, revenue, benchmark, latency, cost, reliability, legal outcomes, medical outcomes, hiring outcomes, or conversion.",
-        "Confirm human approval, audit logs, rollback, privacy, and escalation boundaries are explicit where the topic touches agents, tools, customer data, or business operations.",
-        "Only after explicit human approval, run mark:review manually for a specific file. Publishing remains a separate explicit approval step.",
-        "Apply theme review focus: serving framework versions.",
-        "Apply theme review focus: cold starts and concurrency.",
-        "Apply theme review focus: GPU cost.",
-        "Apply theme review focus: autoscaling and monitoring.",
-        "Use deployment review candidate: content/blog/bentoml-llm-deployment-beginner-guide.mdx.",
-        "Open source target for manual fact review: vLLM docs: https://docs.vllm.ai.",
-        "Open source target for manual fact review: Hugging Face docs: https://huggingface.co/docs.",
-        "Confirm the draft answers search seed: vLLM deployment tutorial.",
-        "Confirm the draft answers search seed: Hugging Face TGI deployment.",
-        "Confirm the draft answers search seed: RunPod serverless LLM.",
-        "Confirm the draft answers search seed: serverless GPU LLM deployment.",
-        "Confirm the draft answers search seed: vLLM 部署教程."
-      ],
-      "lane": "model-deployment",
-      "massSearchIntent": "first public coverage for a broad AI search theme",
-      "missingSubtopics": [
-        "concurrency",
-        "autoscaling"
-      ],
-      "promptBlueprintSamples": [],
-      "promptModuleMatches": 0,
-      "publicMatches": 0,
-      "readyCandidateFiles": 8,
-      "readyForHumanReviewPrep": true,
-      "reviewFocus": [
-        "serving framework versions",
-        "cold starts and concurrency",
-        "GPU cost",
-        "autoscaling and monitoring",
-        "Deployment review: LLM Serving、GPU 和托管推理."
-      ],
-      "searchSeeds": [
-        "vLLM deployment tutorial",
-        "Hugging Face TGI deployment",
-        "RunPod serverless LLM",
-        "serverless GPU LLM deployment",
-        "vLLM 部署教程",
-        "TGI 部署教程",
-        "RunPod Serverless 大模型部署",
-        "Modal Serverless GPU LLM"
-      ],
-      "sourceTargets": [
-        "vLLM docs: https://docs.vllm.ai",
-        "Hugging Face docs: https://huggingface.co/docs"
-      ],
-      "themeId": "llm-serving-gpu",
-      "themeTitle": "LLM serving, GPU, and managed inference",
-      "trafficClaim": "not-included",
-      "unsafeReasons": []
-    },
-    {
-      "articleSignals": [
-        {
           "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
           "humanReviewRequired": true,
           "noindex": true,
@@ -2496,6 +2364,138 @@
       ],
       "themeId": "evals-observability-security",
       "themeTitle": "LLM evaluation, observability, and security",
+      "trafficClaim": "not-included",
+      "unsafeReasons": []
+    },
+    {
+      "articleSignals": [
+        {
+          "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+          "humanReviewRequired": true,
+          "noindex": true,
+          "qualityScore": 100,
+          "sourceNotes": true,
+          "status": "draft"
+        },
+        {
+          "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+          "humanReviewRequired": true,
+          "noindex": true,
+          "qualityScore": 100,
+          "sourceNotes": true,
+          "status": "draft"
+        },
+        {
+          "file": "content/blog/huggingface-tgi-deployment-guide.mdx",
+          "humanReviewRequired": true,
+          "noindex": true,
+          "qualityScore": 100,
+          "sourceNotes": true,
+          "status": "draft"
+        },
+        {
+          "file": "content/blog/kubernetes-gpu-llm-deployment-guide.mdx",
+          "humanReviewRequired": true,
+          "noindex": true,
+          "qualityScore": 100,
+          "sourceNotes": true,
+          "status": "draft"
+        },
+        {
+          "file": "content/blog/modal-serverless-gpu-llm-guide.mdx",
+          "humanReviewRequired": true,
+          "noindex": true,
+          "qualityScore": 100,
+          "sourceNotes": true,
+          "status": "draft"
+        },
+        {
+          "file": "content/blog/ray-serve-llm-deployment-guide.mdx",
+          "humanReviewRequired": true,
+          "noindex": true,
+          "qualityScore": 100,
+          "sourceNotes": true,
+          "status": "draft"
+        }
+      ],
+      "bridgeSources": [
+        "content/automation/broad-search-demand-map.json",
+        "content/automation/ai-deployment-review-pack.json"
+      ],
+      "candidateFiles": [
+        "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+        "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+        "content/blog/huggingface-tgi-deployment-guide.mdx",
+        "content/blog/kubernetes-gpu-llm-deployment-guide.mdx",
+        "content/blog/modal-serverless-gpu-llm-guide.mdx",
+        "content/blog/ray-serve-llm-deployment-guide.mdx",
+        "content/blog/runpod-serverless-llm-deployment-guide.mdx",
+        "content/blog/tensorrt-llm-beginner-guide.mdx"
+      ],
+      "commandBoundaries": [
+        {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx",
+          "publishConfirm": "not-included",
+          "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+        }
+      ],
+      "deploymentMatches": 1,
+      "editorialWave": 3,
+      "humanReviewActions": [
+        "Confirm every candidate is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify current official docs before approving model names, APIs, SDKs, deployment commands, memory/RAG behavior, and tool permissions.",
+        "Check the article answers a broad search intent directly, not only a narrow implementation note.",
+        "Remove or rewrite unsupported claims about traffic, ranking, revenue, benchmark, latency, cost, reliability, legal outcomes, medical outcomes, hiring outcomes, or conversion.",
+        "Confirm human approval, audit logs, rollback, privacy, and escalation boundaries are explicit where the topic touches agents, tools, customer data, or business operations.",
+        "Only after explicit human approval, run mark:review manually for a specific file. Publishing remains a separate explicit approval step.",
+        "Apply theme review focus: serving framework versions.",
+        "Apply theme review focus: cold starts and concurrency.",
+        "Apply theme review focus: GPU cost.",
+        "Apply theme review focus: autoscaling and monitoring.",
+        "Use deployment review candidate: content/blog/bentoml-llm-deployment-beginner-guide.mdx.",
+        "Open source target for manual fact review: vLLM docs: https://docs.vllm.ai.",
+        "Open source target for manual fact review: Hugging Face docs: https://huggingface.co/docs.",
+        "Confirm the draft answers search seed: vLLM deployment tutorial.",
+        "Confirm the draft answers search seed: Hugging Face TGI deployment.",
+        "Confirm the draft answers search seed: RunPod serverless LLM.",
+        "Confirm the draft answers search seed: serverless GPU LLM deployment.",
+        "Confirm the draft answers search seed: vLLM 部署教程."
+      ],
+      "lane": "model-deployment",
+      "massSearchIntent": "first public coverage for a broad AI search theme",
+      "missingSubtopics": [
+        "concurrency",
+        "autoscaling"
+      ],
+      "promptBlueprintSamples": [],
+      "promptModuleMatches": 0,
+      "publicMatches": 0,
+      "readyCandidateFiles": 8,
+      "readyForHumanReviewPrep": true,
+      "reviewFocus": [
+        "serving framework versions",
+        "cold starts and concurrency",
+        "GPU cost",
+        "autoscaling and monitoring",
+        "Deployment review: LLM Serving、GPU 和托管推理."
+      ],
+      "searchSeeds": [
+        "vLLM deployment tutorial",
+        "Hugging Face TGI deployment",
+        "RunPod serverless LLM",
+        "serverless GPU LLM deployment",
+        "vLLM 部署教程",
+        "TGI 部署教程",
+        "RunPod Serverless 大模型部署",
+        "Modal Serverless GPU LLM"
+      ],
+      "sourceTargets": [
+        "vLLM docs: https://docs.vllm.ai",
+        "Hugging Face docs: https://huggingface.co/docs"
+      ],
+      "themeId": "llm-serving-gpu",
+      "themeTitle": "LLM serving, GPU, and managed inference",
       "trafficClaim": "not-included",
       "unsafeReasons": []
     }

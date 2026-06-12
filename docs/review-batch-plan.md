@@ -1,6 +1,6 @@
 # Review Batch Plan
 
-Generated at: 2026-06-12T06:13:04.499Z
+Generated at: 2026-06-12T16:32:00.283Z
 
 This is a manual review plan. It does not publish articles or change article status.
 
@@ -40,7 +40,7 @@ Review focus:
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 260 | 100 | 40 | Agent and memory | AI Agent | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 2 | 260 | 100 | 40 | Agent and memory | AI 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| 3 | 253 | 100 | 33 | Agent and memory | 接单报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 3 | 253 | 100 | 33 | Agent and memory | 项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 
 Dry-run commands:
 

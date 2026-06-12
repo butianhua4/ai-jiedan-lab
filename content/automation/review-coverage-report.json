@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:40.243Z",
+  "generatedAt": "2026-06-12T16:32:36.833Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -153,7 +153,8 @@
       "officialSourceTargets": [
         "OpenAI docs: https://platform.openai.com/docs",
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "GitHub docs: https://docs.github.com"
       ],
       "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
       "opportunityScore": 260,
@@ -181,7 +182,7 @@
       "status": "draft",
       "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
       "topic": "Agent 部署、工具调用和记忆",
-      "wordCountChinese": 1701
+      "wordCountChinese": 1951
     },
     {
       "approvalChecklist": [
@@ -194,7 +195,7 @@
         "Reviewer confirms the article should enter review before any status change command runs."
       ],
       "batch": 1,
-      "category": "接单报价",
+      "category": "项目报价",
       "cluster": "Agent and memory",
       "currentPackCovered": false,
       "factCheckQueries": [
@@ -256,7 +257,7 @@
       "status": "draft",
       "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
       "topic": "Agent 部署、工具调用和记忆",
-      "wordCountChinese": 1303
+      "wordCountChinese": 1305
     },
     {
       "approvalChecklist": [
@@ -299,6 +300,8 @@
       "internalLinks": 4,
       "noindex": true,
       "officialSourceTargets": [
+        "OpenAI docs: https://platform.openai.com/docs",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
         "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
       ],
@@ -396,7 +399,7 @@
       "status": "draft",
       "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
       "topic": "RAG、知识库和向量检索",
-      "wordCountChinese": 1268
+      "wordCountChinese": 1266
     },
     {
       "approvalChecklist": [

@@ -1,6 +1,6 @@
 # Source Target Health Audit
 
-Generated at: 2026-06-12T06:13:19.657Z
+Generated at: 2026-06-12T16:32:15.784Z
 
 This report is read-only. It verifies official source URLs used by review and public-gap candidates before any human approval step.
 
@@ -26,7 +26,7 @@ This report is read-only. It verifies official source URLs used by review and pu
 - okUrls: 39
 - publicGapDecisionFiles: 13
 - redirectedUrls: 18
-- sourceReferences: 261
+- sourceReferences: 264
 - uniqueUrls: 40
 
 ## Files Without Reachable Source
@@ -43,8 +43,8 @@ This report is read-only. It verifies official source URLs used by review and pu
 
 | OK | Status | URL | Final URL | References | Error |
 | --- | --- | --- | --- | --- | --- |
-| true | 200 | https://ai-sdk.dev/docs | https://ai-sdk.dev/docs/introduction | 30 |  |
-| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=ko | 4 |  |
+| true | 200 | https://ai-sdk.dev/docs | https://ai-sdk.dev/docs/introduction | 31 |  |
+| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=pl | 4 |  |
 | true | 200 | https://docs.anthropic.com | https://platform.claude.com/docs/en/home | 5 |  |
 | true | 200 | https://docs.anthropic.com/ | https://platform.claude.com/docs/en/home | 2 |  |
 | true | 200 | https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview | https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview | 5 |  |
@@ -55,8 +55,8 @@ This report is read-only. It verifies official source URLs used by review and pu
 | true | 200 | https://docs.ragas.io/ | https://docs.ragas.io/en/stable/ | 2 |  |
 | true | 200 | https://docs.vllm.ai | https://docs.vllm.ai/en/latest/ | 7 |  |
 | true | 200 | https://modelcontextprotocol.io/docs | https://modelcontextprotocol.io/docs/getting-started/intro | 2 |  |
-| true | 200 | https://platform.openai.com/docs | https://developers.openai.com/api/docs | 30 |  |
-| true | 200 | https://platform.openai.com/docs/guides/agents | https://developers.openai.com/api/docs/guides/agents | 18 |  |
+| true | 200 | https://platform.openai.com/docs | https://developers.openai.com/api/docs | 31 |  |
+| true | 200 | https://platform.openai.com/docs/guides/agents | https://developers.openai.com/api/docs/guides/agents | 19 |  |
 | true | 200 | https://platform.openai.com/docs/guides/prompt-engineering | https://developers.openai.com/api/docs/guides/prompt-engineering | 30 |  |
 | true | 200 | https://platform.openai.com/docs/guides/prompt-generation | https://developers.openai.com/api/docs/guides/prompt-generation | 2 |  |
 | true | 200 | https://platform.openai.com/docs/guides/retrieval | https://developers.openai.com/api/docs/guides/retrieval | 29 |  |
@@ -71,7 +71,7 @@ This report is read-only. It verifies official source URLs used by review and pu
 | 11 | 11 | next-source-pack, public-gap-decision | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx | https://platform.openai.com/docs/guides/retrieval<br>https://python.langchain.com/docs<br>https://docs.llamaindex.ai<br>https://platform.openai.com/docs/guides/retrieval<br>https://python.langchain.com/docs<br>https://docs.llamaindex.ai<br>https://huggingface.co/docs<br>https://platform.openai.com/docs<br>https://platform.openai.com/docs/guides/agents<br>https://ai-sdk.dev/docs<br>https://platform.openai.com/docs/guides/prompt-engineering |
 | 36 | 36 | broad-first-coverage, next-source-pack, public-gap-decision | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx | https://platform.openai.com/docs/guides/agents<br>https://platform.openai.com/docs/guides/retrieval<br>https://python.langchain.com/docs<br>https://platform.openai.com/docs/guides/agents<br>https://platform.openai.com/docs/guides/retrieval<br>https://python.langchain.com/docs<br>https://platform.openai.com/docs<br>https://docs.anthropic.com<br>https://ai-sdk.dev/docs<br>https://ai.google.dev/docs<br>https://docs.dify.ai<br>https://docs.n8n.io<br>https://platform.openai.com/docs/guides/prompt-engineering<br>https://docs.anthropic.com/<br>https://vercel.com/docs/ai-gateway<br>https://platform.openai.com/docs<br>https://docs.anthropic.com<br>https://platform.openai.com/docs/guides/agents<br>https://ai-sdk.dev/docs<br>https://ai.google.dev/docs<br>https://docs.dify.ai<br>https://docs.n8n.io<br>https://platform.openai.com/docs/guides/retrieval<br>https://platform.openai.com/docs/guides/prompt-engineering<br>https://platform.openai.com/docs/guides/agents<br>https://platform.openai.com/docs/guides/retrieval<br>https://python.langchain.com/docs<br>https://platform.openai.com/docs<br>https://docs.anthropic.com<br>https://ai-sdk.dev/docs<br>https://ai.google.dev/docs<br>https://docs.dify.ai<br>https://docs.n8n.io<br>https://platform.openai.com/docs/guides/prompt-engineering<br>https://docs.anthropic.com/<br>https://vercel.com/docs/ai-gateway |
 | 12 | 12 | next-source-pack, public-gap-decision | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx | https://docs.dify.ai<br>https://docs.n8n.io<br>https://platform.openai.com/docs/guides/retrieval<br>https://python.langchain.com/docs<br>https://docs.llamaindex.ai<br>https://huggingface.co/docs<br>https://platform.openai.com/docs<br>https://platform.openai.com/docs/guides/agents<br>https://ai-sdk.dev/docs<br>https://docs.dify.ai<br>https://docs.n8n.io<br>https://platform.openai.com/docs/guides/prompt-engineering |
-| 29 | 29 | broad-first-coverage, current-review, next-source-pack, public-gap-decision | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx | https://platform.openai.com/docs/guides/retrieval<br>https://platform.openai.com/docs/guides/prompt-engineering<br>https://platform.openai.com/docs/guides/retrieval<br>https://platform.openai.com/docs/guides/prompt-engineering<br>https://python.langchain.com/docs<br>https://docs.llamaindex.ai<br>https://huggingface.co/docs<br>https://platform.openai.com/docs<br>https://ai-sdk.dev/docs<br>https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/<br>https://arxiv.org/abs/2603.10700<br>https://www.pinecone.io/learn/retrieval-augmented-generation/<br>https://platform.openai.com/docs/guides/retrieval<br>https://python.langchain.com/docs<br>https://docs.llamaindex.ai<br>https://huggingface.co/docs<br>https://platform.openai.com/docs<br>https://ai-sdk.dev/docs<br>https://platform.openai.com/docs/guides/prompt-engineering<br>https://platform.openai.com/docs/guides/retrieval<br>https://platform.openai.com/docs/guides/prompt-engineering<br>https://python.langchain.com/docs<br>https://docs.llamaindex.ai<br>https://huggingface.co/docs<br>https://platform.openai.com/docs<br>https://ai-sdk.dev/docs<br>https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/<br>https://arxiv.org/abs/2603.10700<br>https://www.pinecone.io/learn/retrieval-augmented-generation/ |
+| 32 | 32 | broad-first-coverage, current-review, next-source-pack, public-gap-decision | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx | https://platform.openai.com/docs<br>https://ai-sdk.dev/docs<br>https://platform.openai.com/docs/guides/retrieval<br>https://platform.openai.com/docs/guides/prompt-engineering<br>https://platform.openai.com/docs/guides/retrieval<br>https://platform.openai.com/docs/guides/prompt-engineering<br>https://python.langchain.com/docs<br>https://docs.llamaindex.ai<br>https://huggingface.co/docs<br>https://platform.openai.com/docs<br>https://ai-sdk.dev/docs<br>https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/<br>https://arxiv.org/abs/2603.10700<br>https://www.pinecone.io/learn/retrieval-augmented-generation/<br>https://platform.openai.com/docs/guides/retrieval<br>https://python.langchain.com/docs<br>https://docs.llamaindex.ai<br>https://huggingface.co/docs<br>https://platform.openai.com/docs<br>https://platform.openai.com/docs/guides/agents<br>https://ai-sdk.dev/docs<br>https://platform.openai.com/docs/guides/prompt-engineering<br>https://platform.openai.com/docs/guides/retrieval<br>https://platform.openai.com/docs/guides/prompt-engineering<br>https://python.langchain.com/docs<br>https://docs.llamaindex.ai<br>https://huggingface.co/docs<br>https://platform.openai.com/docs<br>https://ai-sdk.dev/docs<br>https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/<br>https://arxiv.org/abs/2603.10700<br>https://www.pinecone.io/learn/retrieval-augmented-generation/ |
 | 4 | 4 | next-source-pack | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx | https://platform.openai.com/docs<br>https://platform.openai.com/docs/guides/prompt-engineering<br>https://ai-sdk.dev/docs<br>https://platform.openai.com/docs/guides/retrieval |
 | 2 | 2 | public-gap-decision | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx | https://docs.vllm.ai<br>https://huggingface.co/docs |
 | 6 | 6 | next-source-pack | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx | https://platform.openai.com/docs<br>https://docs.anthropic.com<br>https://platform.openai.com/docs/guides/agents<br>https://ai-sdk.dev/docs<br>https://platform.openai.com/docs/guides/retrieval<br>https://platform.openai.com/docs/guides/prompt-engineering |
@@ -96,8 +96,8 @@ This report is read-only. It verifies official source URLs used by review and pu
 | --- | --- | --- | --- | --- | --- |
 | true | 200 | https://adoption.microsoft.com/en-us/copilot/prompt-gallery/ | https://adoption.microsoft.com/en-us/copilot/prompt-gallery/ | 2 |  |
 | false |  | https://ai-prompts-pro.com/blog/ai-prompt-templates-business |  | 2 | TypeError |
-| true | 200 | https://ai-sdk.dev/docs | https://ai-sdk.dev/docs/introduction | 30 |  |
-| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=ko | 4 |  |
+| true | 200 | https://ai-sdk.dev/docs | https://ai-sdk.dev/docs/introduction | 31 |  |
+| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=pl | 4 |  |
 | true | 200 | https://arxiv.org/abs/2603.10700 | https://arxiv.org/abs/2603.10700 | 2 |  |
 | true | 200 | https://arxiv.org/abs/2604.20598 | https://arxiv.org/abs/2604.20598 | 2 |  |
 | true | 200 | https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag | https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag | 2 |  |
@@ -114,12 +114,12 @@ This report is read-only. It verifies official source URLs used by review and pu
 | true | 200 | https://docs.ragas.io/ | https://docs.ragas.io/en/stable/ | 2 |  |
 | true | 200 | https://docs.runpod.io/serverless/vllm/get-started | https://docs.runpod.io/serverless/vllm/get-started | 2 |  |
 | true | 200 | https://docs.vllm.ai | https://docs.vllm.ai/en/latest/ | 7 |  |
-| true | 200 | https://huggingface.co/docs | https://huggingface.co/docs | 13 |  |
+| true | 429 | https://huggingface.co/docs | https://huggingface.co/docs | 13 |  |
 | true | 200 | https://langchain-ai.github.io/langgraph/ | https://langchain-ai.github.io/langgraph/ | 2 |  |
 | true | 200 | https://modelcontextprotocol.io/docs | https://modelcontextprotocol.io/docs/getting-started/intro | 2 |  |
 | true | 200 | https://openai.github.io/openai-agents-python/ | https://openai.github.io/openai-agents-python/ | 2 |  |
-| true | 200 | https://platform.openai.com/docs | https://developers.openai.com/api/docs | 30 |  |
-| true | 200 | https://platform.openai.com/docs/guides/agents | https://developers.openai.com/api/docs/guides/agents | 18 |  |
+| true | 200 | https://platform.openai.com/docs | https://developers.openai.com/api/docs | 31 |  |
+| true | 200 | https://platform.openai.com/docs/guides/agents | https://developers.openai.com/api/docs/guides/agents | 19 |  |
 | true | 200 | https://platform.openai.com/docs/guides/prompt-engineering | https://developers.openai.com/api/docs/guides/prompt-engineering | 30 |  |
 | true | 200 | https://platform.openai.com/docs/guides/prompt-generation | https://developers.openai.com/api/docs/guides/prompt-generation | 2 |  |
 | true | 200 | https://platform.openai.com/docs/guides/retrieval | https://developers.openai.com/api/docs/guides/retrieval | 29 |  |

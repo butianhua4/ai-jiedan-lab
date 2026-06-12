@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:08.367Z",
+  "generatedAt": "2026-06-12T16:32:04.268Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -8,14 +8,14 @@
     "stopBefore": "Use review suggestions during human review. Do not change status or publish without explicit human approval."
   },
   "summary": {
-    "averageExactMatches": 1.42,
-    "averageMatchedFamilies": 7,
+    "averageExactMatches": 1.75,
+    "averageMatchedFamilies": 6.92,
     "blockingItems": 0,
     "items": 12,
     "queryCoverageItems": 12,
-    "queryCoverageUniqueQueries": 360,
+    "queryCoverageUniqueQueries": 365,
     "readyItems": 12,
-    "warningItems": 8
+    "warningItems": 7
   },
   "sourceEvidence": {
     "queryCoverageGuardrails": {
@@ -77,41 +77,6 @@
       },
       "descriptionHit": true,
       "exactQueryMatches": 1,
-      "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
-      "headingFamilyMatches": {
-        "howTo": true,
-        "deployment": false,
-        "template": false,
-        "comparison": false,
-        "risk": true,
-        "costOps": true,
-        "intentSeeds": false
-      },
-      "matchedFamilies": 7,
-      "primaryKeyword": "团队 AI 提示词库",
-      "queryCount": 35,
-      "readyForManualReview": true,
-      "reviewSuggestions": [],
-      "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
-      "titleHit": true,
-      "warningIssues": [
-        "few exact query variant matches in article text"
-      ],
-      "wave": 2
-    },
-    {
-      "blockingIssues": [],
-      "bodyFamilyMatches": {
-        "howTo": true,
-        "deployment": true,
-        "template": true,
-        "comparison": true,
-        "risk": true,
-        "costOps": true,
-        "intentSeeds": true
-      },
-      "descriptionHit": true,
-      "exactQueryMatches": 1,
       "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
       "headingFamilyMatches": {
         "howTo": true,
@@ -146,8 +111,8 @@
         "intentSeeds": true
       },
       "descriptionHit": true,
-      "exactQueryMatches": 0,
-      "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+      "exactQueryMatches": 1,
+      "file": "content/blog/education-ai-prompts-guide.mdx",
       "headingFamilyMatches": {
         "howTo": true,
         "deployment": false,
@@ -158,51 +123,16 @@
         "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "Dify 工作流错误处理",
-      "queryCount": 36,
+      "primaryKeyword": "教育 AI 提示词",
+      "queryCount": 35,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+      "title": "教育 AI 提示词模板：备课、教案、测验、反馈和学习计划",
       "titleHit": true,
       "warningIssues": [
         "few exact query variant matches in article text"
       ],
       "wave": 2
-    },
-    {
-      "blockingIssues": [],
-      "bodyFamilyMatches": {
-        "howTo": true,
-        "deployment": true,
-        "template": true,
-        "comparison": true,
-        "risk": true,
-        "costOps": true,
-        "intentSeeds": true
-      },
-      "descriptionHit": true,
-      "exactQueryMatches": 0,
-      "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
-      "headingFamilyMatches": {
-        "howTo": true,
-        "deployment": true,
-        "template": true,
-        "comparison": true,
-        "risk": true,
-        "costOps": true,
-        "intentSeeds": false
-      },
-      "matchedFamilies": 7,
-      "primaryKeyword": "Open WebUI Functions Pipelines",
-      "queryCount": 36,
-      "readyForManualReview": true,
-      "reviewSuggestions": [],
-      "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
-      "titleHit": true,
-      "warningIssues": [
-        "few exact query variant matches in article text"
-      ],
-      "wave": 3
     },
     {
       "blockingIssues": [],
@@ -248,11 +178,49 @@
         "comparison": true,
         "risk": true,
         "costOps": true,
+        "intentSeeds": false
+      },
+      "descriptionHit": true,
+      "exactQueryMatches": 0,
+      "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+      "headingFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
+        "template": true,
+        "comparison": true,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": false
+      },
+      "matchedFamilies": 6,
+      "primaryKeyword": "Open WebUI Functions Pipelines",
+      "queryCount": 35,
+      "readyForManualReview": true,
+      "reviewSuggestions": [
+        "人工审核时检查是否自然覆盖核心搜索种子词，不要硬塞关键词。"
+      ],
+      "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+      "titleHit": true,
+      "warningIssues": [
+        "few exact query variant matches in article text",
+        "missing query-family signals: intentSeeds"
+      ],
+      "wave": 4
+    },
+    {
+      "blockingIssues": [],
+      "bodyFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
+        "template": true,
+        "comparison": true,
+        "risk": true,
+        "costOps": true,
         "intentSeeds": true
       },
       "descriptionHit": true,
       "exactQueryMatches": 1,
-      "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+      "file": "content/blog/dify-workflow-error-handling-guide.mdx",
       "headingFamilyMatches": {
         "howTo": true,
         "deployment": false,
@@ -263,11 +231,11 @@
         "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "客服 AI 提示词",
+      "primaryKeyword": "Dify 工作流错误处理",
       "queryCount": 35,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
+      "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
       "titleHit": true,
       "warningIssues": [
         "few exact query variant matches in article text"
@@ -286,23 +254,23 @@
         "intentSeeds": true
       },
       "descriptionHit": true,
-      "exactQueryMatches": 0,
-      "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+      "exactQueryMatches": 1,
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
       "headingFamilyMatches": {
         "howTo": true,
-        "deployment": true,
-        "template": true,
-        "comparison": true,
+        "deployment": false,
+        "template": false,
+        "comparison": false,
         "risk": true,
         "costOps": true,
         "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "Dify Workflow 和 Agent 区别",
-      "queryCount": 35,
+      "primaryKeyword": "AI API Key 安全管理",
+      "queryCount": 30,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
       "titleHit": true,
       "warningIssues": [
         "few exact query variant matches in article text"
@@ -425,41 +393,6 @@
       },
       "descriptionHit": true,
       "exactQueryMatches": 1,
-      "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
-      "headingFamilyMatches": {
-        "howTo": true,
-        "deployment": false,
-        "template": false,
-        "comparison": false,
-        "risk": true,
-        "costOps": true,
-        "intentSeeds": false
-      },
-      "matchedFamilies": 7,
-      "primaryKeyword": "团队 AI 提示词库",
-      "queryCount": 35,
-      "readyForManualReview": true,
-      "reviewSuggestions": [],
-      "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
-      "titleHit": true,
-      "warningIssues": [
-        "few exact query variant matches in article text"
-      ],
-      "wave": 2
-    },
-    {
-      "blockingIssues": [],
-      "bodyFamilyMatches": {
-        "howTo": true,
-        "deployment": true,
-        "template": true,
-        "comparison": true,
-        "risk": true,
-        "costOps": true,
-        "intentSeeds": true
-      },
-      "descriptionHit": true,
-      "exactQueryMatches": 1,
       "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
       "headingFamilyMatches": {
         "howTo": true,
@@ -494,8 +427,8 @@
         "intentSeeds": true
       },
       "descriptionHit": true,
-      "exactQueryMatches": 0,
-      "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+      "exactQueryMatches": 1,
+      "file": "content/blog/education-ai-prompts-guide.mdx",
       "headingFamilyMatches": {
         "howTo": true,
         "deployment": false,
@@ -506,11 +439,11 @@
         "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "Dify 工作流错误处理",
-      "queryCount": 36,
+      "primaryKeyword": "教育 AI 提示词",
+      "queryCount": 35,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+      "title": "教育 AI 提示词模板：备课、教案、测验、反馈和学习计划",
       "titleHit": true,
       "warningIssues": [
         "few exact query variant matches in article text"
@@ -529,28 +462,26 @@
         "intentSeeds": true
       },
       "descriptionHit": true,
-      "exactQueryMatches": 0,
-      "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+      "exactQueryMatches": 2,
+      "file": "content/blog/customer-service-ai-prompts-guide.mdx",
       "headingFamilyMatches": {
         "howTo": true,
-        "deployment": true,
-        "template": true,
-        "comparison": true,
+        "deployment": false,
+        "template": false,
+        "comparison": false,
         "risk": true,
-        "costOps": true,
+        "costOps": false,
         "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "Open WebUI Functions Pipelines",
+      "primaryKeyword": "客服 AI 提示词",
       "queryCount": 36,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+      "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
       "titleHit": true,
-      "warningIssues": [
-        "few exact query variant matches in article text"
-      ],
-      "wave": 3
+      "warningIssues": [],
+      "wave": 2
     },
     {
       "blockingIssues": [],
@@ -564,7 +495,7 @@
         "intentSeeds": true
       },
       "descriptionHit": true,
-      "exactQueryMatches": 3,
+      "exactQueryMatches": 4,
       "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
       "headingFamilyMatches": {
         "howTo": true,
@@ -632,41 +563,6 @@
         "intentSeeds": true
       },
       "descriptionHit": true,
-      "exactQueryMatches": 1,
-      "file": "content/blog/customer-service-ai-prompts-guide.mdx",
-      "headingFamilyMatches": {
-        "howTo": true,
-        "deployment": false,
-        "template": false,
-        "comparison": false,
-        "risk": true,
-        "costOps": false,
-        "intentSeeds": false
-      },
-      "matchedFamilies": 7,
-      "primaryKeyword": "客服 AI 提示词",
-      "queryCount": 35,
-      "readyForManualReview": true,
-      "reviewSuggestions": [],
-      "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
-      "titleHit": true,
-      "warningIssues": [
-        "few exact query variant matches in article text"
-      ],
-      "wave": 4
-    },
-    {
-      "blockingIssues": [],
-      "bodyFamilyMatches": {
-        "howTo": true,
-        "deployment": true,
-        "template": true,
-        "comparison": true,
-        "risk": true,
-        "costOps": true,
-        "intentSeeds": true
-      },
-      "descriptionHit": true,
       "exactQueryMatches": 2,
       "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
       "headingFamilyMatches": {
@@ -686,6 +582,44 @@
       "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
       "titleHit": true,
       "warningIssues": [],
+      "wave": 3
+    },
+    {
+      "blockingIssues": [],
+      "bodyFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
+        "template": true,
+        "comparison": true,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": false
+      },
+      "descriptionHit": true,
+      "exactQueryMatches": 0,
+      "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+      "headingFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
+        "template": true,
+        "comparison": true,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": false
+      },
+      "matchedFamilies": 6,
+      "primaryKeyword": "Open WebUI Functions Pipelines",
+      "queryCount": 35,
+      "readyForManualReview": true,
+      "reviewSuggestions": [
+        "人工审核时检查是否自然覆盖核心搜索种子词，不要硬塞关键词。"
+      ],
+      "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+      "titleHit": true,
+      "warningIssues": [
+        "few exact query variant matches in article text",
+        "missing query-family signals: intentSeeds"
+      ],
       "wave": 4
     },
     {
@@ -700,23 +634,58 @@
         "intentSeeds": true
       },
       "descriptionHit": true,
-      "exactQueryMatches": 0,
-      "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+      "exactQueryMatches": 1,
+      "file": "content/blog/dify-workflow-error-handling-guide.mdx",
       "headingFamilyMatches": {
+        "howTo": true,
+        "deployment": false,
+        "template": false,
+        "comparison": false,
+        "risk": true,
+        "costOps": false,
+        "intentSeeds": false
+      },
+      "matchedFamilies": 7,
+      "primaryKeyword": "Dify 工作流错误处理",
+      "queryCount": 35,
+      "readyForManualReview": true,
+      "reviewSuggestions": [],
+      "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+      "titleHit": true,
+      "warningIssues": [
+        "few exact query variant matches in article text"
+      ],
+      "wave": 4
+    },
+    {
+      "blockingIssues": [],
+      "bodyFamilyMatches": {
         "howTo": true,
         "deployment": true,
         "template": true,
         "comparison": true,
         "risk": true,
         "costOps": true,
+        "intentSeeds": true
+      },
+      "descriptionHit": true,
+      "exactQueryMatches": 1,
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "headingFamilyMatches": {
+        "howTo": true,
+        "deployment": false,
+        "template": false,
+        "comparison": false,
+        "risk": true,
+        "costOps": true,
         "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "Dify Workflow 和 Agent 区别",
-      "queryCount": 35,
+      "primaryKeyword": "AI API Key 安全管理",
+      "queryCount": 30,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
       "titleHit": true,
       "warningIssues": [
         "few exact query variant matches in article text"

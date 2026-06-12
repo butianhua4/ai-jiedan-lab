@@ -1,6 +1,6 @@
 # Next Batch Approval Route
 
-Generated at: 2026-06-12T06:13:41.192Z
+Generated at: 2026-06-12T16:32:37.809Z
 
 This report is read-only. It converts the manual review workbench next batch into per-article approval routes without editing articles or changing publishing state.
 
@@ -105,7 +105,7 @@ This report is read-only. It converts the manual review workbench next batch int
 - Run manual fact checks for: AI Agent 记忆 official docs latest | AI Agent 记忆 official documentation current limits | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 fact check official docs.
 - Use 35 query variants to check title, description, headings, and first-screen answer fit.
 - Review copydesk meta description proposal before approving the draft.
-- Review public internal link path: Codex 怎么做第一个网页.
+- Review public internal link path: Codex 生成代码后怎么审核：交付前检查清单.
 - Freshness checks: Confirm current official guidance for api. | Confirm current official guidance for agent. | Confirm current official guidance for model..
 - Resolve route warnings before approval: not yet matched in human approval clearance pack.
 - After human approval only: npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human
@@ -118,7 +118,7 @@ This report is read-only. It converts the manual review workbench next batch int
 - Ready for human route review: true
 - Priority score: 722
 - Cluster: Agent and memory
-- Category: 接单报价
+- Category: 项目报价
 - Publish confirm: not-included
 - Dry-run mark review: npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx
 - Human approval mark review: npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human

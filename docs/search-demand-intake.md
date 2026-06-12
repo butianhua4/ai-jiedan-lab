@@ -1,6 +1,6 @@
 # Search Demand Intake
 
-Generated at: 2026-06-12T06:13:09.208Z
+Generated at: 2026-06-12T16:32:05.096Z
 
 This report is read-only. It turns broad user search behavior into review lanes for AI prompts, LLM deployment, Agent deployment, memory, RAG, no-code automation, API operations, observability, and AI service packaging.
 
@@ -21,7 +21,7 @@ This report is read-only. It turns broad user search behavior into review lanes 
 - lanesWithoutPublicCoverage: 6
 - lanesWithReadyCandidates: 8
 - officialSourceTargets: 29
-- readyCandidateFiles: 45
+- readyCandidateFiles: 43
 - reviewQueueMatches: 33
 - searchQueries: 81
 - unsafeLanes: 0
@@ -48,7 +48,7 @@ This report is read-only. It turns broad user search behavior into review lanes 
 | 404 | 0 | 30 | 8 | 4 | 10 | 4 | nocode-ai-automation-deployment | This lane connects search traffic to services people can buy: automation setup, deployment, acceptance, and maintenance. |
 | 372 | 0 | 14 | 8 | 2 | 10 | 4 | llm-evals-observability-security | As content moves past deployment, searchers need quality, logs, evals, and security operations. |
 | 325 | 1 | 97 | 8 | 2 | 10 | 4 | ai-api-keys-limits-routing | API integration is a beginner search lane and a production risk lane at the same time. |
-| 306 | 4 | 222 | 8 | 3 | 10 | 4 | ai-service-pricing-delivery | This lane turns search demand into services without pretending the site already has traffic or revenue proof. |
+| 306 | 4 | 232 | 8 | 3 | 10 | 4 | ai-service-pricing-delivery | This lane turns search demand into services without pretending the site already has traffic or revenue proof. |
 
 ## agent-deployment-tools-mcp
 
@@ -450,7 +450,7 @@ Ready candidates:
 - User problem: This lane turns search demand into services without pretending the site already has traffic or revenue proof.
 - Intake score: 306
 - Public matches: 4
-- Draft matches: 222
+- Draft matches: 232
 - Review queue matches: 3
 
 Search queries:
@@ -491,11 +491,11 @@ Ready candidates:
 
 | Batch | Score | Intent | Keyword | Title | File |
 | --- | --- | --- | --- | --- | --- |
+| 34 | 100 | informational | 大模型成本监控 | 大模型成本监控怎么做：按用户、功能、模型和项目拆账 | content/blog/llm-cost-monitoring-dashboard-guide.mdx |
 | 33 | 100 | informational | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 32 | 100 | informational | Agent 记忆数据库设计 | Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则 | content/blog/agent-memory-postgres-schema-guide.mdx |
 | 31 | 100 | informational | 产品经理 AI 提示词 | 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准 | content/blog/product-manager-ai-prompts-guide.mdx |
 | 29 | 100 | informational | BentoML LLM 部署 | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
 | 29 | 100 | informational | TensorRT-LLM 入门 | TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收 | content/blog/tensorrt-llm-beginner-guide.mdx |
-| 20 | 100 | informational | AI 工具配置服务检查清单 | AI 工具配置服务接单检查清单 | content/blog/ai-tool-setup-service-checklist-checklist.mdx |
-| 20 | 100 | informational | AI 工具配置服务接单清单 | AI 工具配置服务接单清单怎么写 | content/blog/ai-tool-setup-service-checklist.mdx |
-| 20 | 100 | informational | Bug 修复交付前检查清单 | Bug 修复交付前检查清单 | content/blog/bugfix-delivery-note-template-checklist.mdx |
-| 20 | 100 | informational | Bug 修复交付说明模板 | Bug 修复交付说明模板怎么写 | content/blog/bugfix-delivery-note-template.mdx |
+| 25 | 100 | informational | RAG 向量数据库怎么选 | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| 20 | 100 | informational | AI 工具配置服务检查清单 | AI 工具配置服务项目检查清单 | content/blog/ai-tool-setup-service-checklist-checklist.mdx |

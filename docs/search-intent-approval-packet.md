@@ -1,6 +1,6 @@
 # Search Intent Approval Packet
 
-Generated at: 2026-06-12T06:13:06.960Z
+Generated at: 2026-06-12T16:32:02.798Z
 
 This packet is read-only. It turns the broad search-intent lane map into a focused human approval queue. It does not mark review, publish, or change noindex.
 
@@ -17,7 +17,7 @@ This packet is read-only. It turns the broad search-intent lane map into a focus
 - currentWaveItems: 3
 - currentWaveReady: 3
 - nextGapItems: 6
-- nextGapLanes: 3
+- nextGapLanes: 4
 - unsafeItems: 0
 - wave: 1
 
@@ -41,12 +41,12 @@ This packet is read-only. It turns the broad search-intent lane map into a focus
 
 | Ready | Wave 1 | Current pack | Lane score | Quality | Batch | Lane | Primary keyword | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | false | false | 386 | 100 | 32 | Cross-industry AI prompt templates and reusable prompt libraries | 团队 AI 提示词库 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
 | true | false | false | 386 | 100 | 31 | Cross-industry AI prompt templates and reusable prompt libraries | 数据分析 AI 提示词 | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
-| true | false | false | 366 | 100 | 33 | Business department AI workflows across sales, support, ops, HR, finance, legal, and education | Dify 工作流错误处理 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
-| true | false | false | 366 | 100 | 33 | Business department AI workflows across sales, support, ops, HR, finance, legal, and education | Open WebUI Functions Pipelines | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| true | false | false | 386 | 100 | 31 | Cross-industry AI prompt templates and reusable prompt libraries | 教育 AI 提示词 | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
+| true | false | false | 366 | 100 | 30 | Business department AI workflows across sales, support, ops, HR, finance, legal, and education | 客服 AI 提示词 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
 | true | false | false | 358 | 100 | 40 | AI Agent deployment, tool calling, and production workflow | AI Agent 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | true | false | false | 358 | 100 | 33 | AI Agent deployment, tool calling, and production workflow | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| true | false | false | 330 | 100 | 40 | Large model deployment, LLM serving, and GPU infrastructure | 大模型部署 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 
 ## Current Wave Detail
 
@@ -57,7 +57,7 @@ This packet is read-only. It turns the broad search-intent lane map into a focus
 - Audience: Teams trying to build reusable prompt libraries instead of one-off prompts.
 - Priority reason: demandScore=10; no public coverage; readyDrafts=23; currentPack=2; wave1=2
 - Description: 整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。
-- Source notes: 参考 OpenAI prompt engineering 官方指南、团队知识库实践和行业 SOP 设计经验整理；正式公开前需要人工核对示例、行业边界和敏感内容。
+- Source notes: 已于 2026-06-12 按 OpenAI 官方 prompt engineering / prompt guidance 文档核对提示词结构原则；结合团队知识库实践和行业 SOP 设计经验整理。正式公开前仍需人工核对示例、行业边界和敏感内容。
 - Chinese chars: 1862
 
 Intent seeds:
@@ -113,7 +113,7 @@ npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-lib
 - Audience: Teams trying to build reusable prompt libraries instead of one-off prompts.
 - Priority reason: demandScore=10; no public coverage; readyDrafts=23; currentPack=2; wave1=2
 - Description: 整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。
-- Source notes: 结合多模型路由、RAG、客服提示词和生产客服系统风险整理；正式发布前需要人工核对具体平台规则。
+- Source notes: 已于 2026-06-12 按 OpenAI Agents guardrails / human review 文档和 Vercel AI SDK tool calling / agent 文档核对高风险动作、人工接管、工具调用边界；结合多模型路由、RAG、客服提示词和生产客服系统风险整理。正式发布前仍需人工核对具体平台规则。
 - Chinese chars: 1232
 
 Intent seeds:
@@ -169,7 +169,7 @@ npm run publish:articles -- --file=content/blog/ai-model-selection-customer-serv
 - Audience: Developers and teams trying to move beyond chatbots into production agents.
 - Priority reason: demandScore=10; no public coverage; readyDrafts=27; currentPack=1; wave1=1
 - Description: 面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。
-- Source notes: 参考 Vercel 官方 AI SDK Agent 文档和实际 Web 应用部署流程整理；正式公开前需要人工核对 API 示例、版本和平台限制。
+- Source notes: 已于 2026-06-12 按 Vercel AI SDK 官方 Agents、ToolLoopAgent、tool calling、human-in-the-loop 文档核对核心概念；结合实际 Web 应用部署流程整理。正式公开前仍需人工复核 API 示例、版本和平台限制。
 - Chinese chars: 1540
 
 Intent seeds:
@@ -219,70 +219,14 @@ npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sd
 
 ## Next Gap Detail
 
-### 1. 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用
-
-- File: content/blog/ai-prompt-library-team-knowledge-base-guide.mdx
-- Lane: Cross-industry AI prompt templates and reusable prompt libraries
-- Audience: Teams trying to build reusable prompt libraries instead of one-off prompts.
-- Priority reason: demandScore=10; no public coverage; readyDrafts=23; currentPack=2; wave1=2
-- Description: 讲清团队提示词库的搭建方式，覆盖行业分类、版本管理、示例输出、适用边界、审核流程、失败案例和工具导航。
-- Source notes: 参考 OpenAI prompt engineering 最佳实践、Microsoft Copilot 提示词建议和团队知识管理经验整理；正式发布前需要人工核对示例。
-- Chinese chars: 1269
-
-Intent seeds:
-
-- AI 提示词大全
-- ChatGPT 提示词模板
-- 全行业 AI 提示词
-- AI prompt library
-
-Review focus:
-
-- input fields
-- output format
-- quality checks
-- risk disclaimers
-- versioning
-
-Source targets:
-
-- OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering
-- OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation
-- Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
-- Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/
-
-Risk checks:
-
-- No measured traffic, ranking, income, approval, or client acquisition claim is made without evidence.
-- No API key, private customer data, credential, or bypass instruction is included.
-- Fast-changing model names, quotas, pricing, limits, and platform features are checked against official docs.
-- Prompt templates include input context, output criteria, human review rules, and adaptation notes.
-
-Approval checks:
-
-- Article remains draft: true
-- Article remains noindex: true
-- Human review flag is present: true
-- Source notes are present: true
-- Quality check passed: true
-- Reviewer verifies official sources before any status change.
-- Reviewer confirms the article answers one broad search intent without unsupported traffic or income claims.
-
-Commands after explicit human approval:
-
-```bash
-npm run mark:review -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx --confirm-human
-npm run publish:articles -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx
-```
-
-### 2. 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要
+### 1. 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要
 
 - File: content/blog/data-analysis-ai-prompts-guide.mdx
 - Lane: Cross-industry AI prompt templates and reusable prompt libraries
 - Audience: Teams trying to build reusable prompt libraries instead of one-off prompts.
 - Priority reason: demandScore=10; no public coverage; readyDrafts=23; currentPack=2; wave1=2
 - Description: 面向数据分析和业务团队整理 AI 提示词模板，覆盖指标解释、SQL 思路、异常排查、报表摘要、实验复盘和人工核对边界。
-- Source notes: 参考 OpenAI 提示词最佳实践和生成式 AI 在数据分析、运营和软件辅助中的常见用法整理；正式发布前需要人工核对数据安全、SQL 方言和业务口径。
+- Source notes: 已于 2026-06-12 按 OpenAI 官方 Prompt Engineering、Text Generation 和 Structured Outputs 相关文档核对输出格式、结构化结果和复核原则；结合指标解释、SQL 思路、异常排查和报告摘要流程整理。正式公开前仍需人工核对数据安全、SQL 方言、业务口径和敏感信息处理。
 - Chinese chars: 1229
 
 Intent seeds:
@@ -331,15 +275,71 @@ npm run mark:review -- --file=content/blog/data-analysis-ai-prompts-guide.mdx --
 npm run publish:articles -- --file=content/blog/data-analysis-ai-prompts-guide.mdx
 ```
 
-### 3. Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底
+### 2. 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划
 
-- File: content/blog/dify-workflow-error-handling-guide.mdx
+- File: content/blog/education-ai-prompts-guide.mdx
+- Lane: Cross-industry AI prompt templates and reusable prompt libraries
+- Audience: Teams trying to build reusable prompt libraries instead of one-off prompts.
+- Priority reason: demandScore=10; no public coverage; readyDrafts=23; currentPack=2; wave1=2
+- Description: 面向教育培训和教师整理 AI 提示词模板，覆盖备课、教案、测验题、学生反馈、学习计划、课程运营和人工复核边界。
+- Source notes: 已于 2026-06-12 按 OpenAI 官方 Prompt Engineering、Text Generation 和 Safety Best Practices 文档核对提示词结构、输出约束和人工复核原则；结合备课、教案、测验、反馈和学习计划流程整理。正式公开前仍需人工核对学校政策、学生隐私、年龄段适配和具体课程要求。
+- Chinese chars: 1243
+
+Intent seeds:
+
+- AI 提示词大全
+- ChatGPT 提示词模板
+- 全行业 AI 提示词
+- AI prompt library
+
+Review focus:
+
+- input fields
+- output format
+- quality checks
+- risk disclaimers
+- versioning
+
+Source targets:
+
+- OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering
+- OpenAI prompt generation: https://platform.openai.com/docs/guides/prompt-generation
+- Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
+- Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/
+
+Risk checks:
+
+- No measured traffic, ranking, income, approval, or client acquisition claim is made without evidence.
+- No API key, private customer data, credential, or bypass instruction is included.
+- Fast-changing model names, quotas, pricing, limits, and platform features are checked against official docs.
+- Prompt templates include input context, output criteria, human review rules, and adaptation notes.
+
+Approval checks:
+
+- Article remains draft: true
+- Article remains noindex: true
+- Human review flag is present: true
+- Source notes are present: true
+- Quality check passed: true
+- Reviewer verifies official sources before any status change.
+- Reviewer confirms the article answers one broad search intent without unsupported traffic or income claims.
+
+Commands after explicit human approval:
+
+```bash
+npm run mark:review -- --file=content/blog/education-ai-prompts-guide.mdx --confirm-human
+npm run publish:articles -- --file=content/blog/education-ai-prompts-guide.mdx
+```
+
+### 3. 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断
+
+- File: content/blog/customer-service-ai-prompts-guide.mdx
 - Lane: Business department AI workflows across sales, support, ops, HR, finance, legal, and education
 - Audience: Business teams deciding how to use AI across departments.
 - Priority reason: demandScore=9; no public coverage; readyDrafts=16; currentPack=2; wave1=2
-- Description: 面向新手整理 Dify 工作流错误处理方法，覆盖输入变量校验、节点失败、条件分支、重试、人工兜底和上线前测试。
-- Source notes: 参考 Dify Workflow 节点、变量和应用 DSL 官方文档整理；正式发布前需要人工核对 Dify 最新界面和节点名称。
-- Chinese chars: 1366
+- Description: 面向客服和售后团队整理 AI 提示词模板，覆盖客户回复、工单分类、情绪安抚、问题升级、知识库问答和人工复核边界。
+- Source notes: 已于 2026-06-12 按 OpenAI 官方 Prompt Engineering 文档核对提示词结构、角色、输入约束和输出格式；结合客服工单分类、升级判断、隐私最小化和人工复核流程整理。正式公开前仍需人工核对行业售后政策、敏感信息处理和隐私要求。
+- Chinese chars: 1212
 
 Intent seeds:
 
@@ -381,73 +381,19 @@ Approval checks:
 Commands after explicit human approval:
 
 ```bash
-npm run mark:review -- --file=content/blog/dify-workflow-error-handling-guide.mdx --confirm-human
-npm run publish:articles -- --file=content/blog/dify-workflow-error-handling-guide.mdx
+npm run mark:review -- --file=content/blog/customer-service-ai-prompts-guide.mdx --confirm-human
+npm run publish:articles -- --file=content/blog/customer-service-ai-prompts-guide.mdx
 ```
 
-### 4. Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流
-
-- File: content/blog/open-webui-functions-pipelines-deployment-guide.mdx
-- Lane: Business department AI workflows across sales, support, ops, HR, finance, legal, and education
-- Audience: Business teams deciding how to use AI across departments.
-- Priority reason: demandScore=9; no public coverage; readyDrafts=16; currentPack=2; wave1=2
-- Description: 整理 Open WebUI Functions 与 Pipelines 的使用边界，覆盖 provider 接入、RAG、消息过滤、外部工作流、安全和部署检查。
-- Source notes: 参考 Open WebUI Functions、Pipelines、Pipes 官方文档整理；正式发布前需要人工核对版本和安全提示。
-- Chinese chars: 1263
-
-Intent seeds:
-
-- 企业 AI 应用场景
-- AI 工作流模板
-- 销售 AI 提示词
-- 客服 AI 提示词
-- 运营 AI 提示词
-
-Review focus:
-
-- role-specific input fields
-- approval owner
-- risk boundaries
-- measurable output format
-
-Source targets:
-
-- OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering
-- Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/
-
-Risk checks:
-
-- No measured traffic, ranking, income, approval, or client acquisition claim is made without evidence.
-- No API key, private customer data, credential, or bypass instruction is included.
-- Fast-changing model names, quotas, pricing, limits, and platform features are checked against official docs.
-- Department workflows identify approval owner, sensitive decisions, and human handoff points.
-
-Approval checks:
-
-- Article remains draft: true
-- Article remains noindex: true
-- Human review flag is present: true
-- Source notes are present: true
-- Quality check passed: true
-- Reviewer verifies official sources before any status change.
-- Reviewer confirms the article answers one broad search intent without unsupported traffic or income claims.
-
-Commands after explicit human approval:
-
-```bash
-npm run mark:review -- --file=content/blog/open-webui-functions-pipelines-deployment-guide.mdx --confirm-human
-npm run publish:articles -- --file=content/blog/open-webui-functions-pipelines-deployment-guide.mdx
-```
-
-### 5. AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界
+### 4. AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界
 
 - File: content/blog/ai-agent-memory-rag-design-guide.mdx
 - Lane: AI Agent deployment, tool calling, and production workflow
 - Audience: Developers and teams trying to move beyond chatbots into production agents.
 - Priority reason: demandScore=10; no public coverage; readyDrafts=27; currentPack=1; wave1=1
 - Description: 解释 AI Agent 记忆和 RAG 的区别，覆盖短期记忆、长期记忆、知识库检索、引用来源、更新机制、隐私和验收检查。
-- Source notes: 参考 OpenAI Agents SDK memory 文档、OpenAI prompt engineering 中关于 RAG 和上下文的说明，以及知识库系统交付经验整理；正式公开前需要人工核对 SDK 版本和隐私建议。
-- Chinese chars: 1701
+- Source notes: 已于 2026-06-12 对照 OpenAI Agents SDK Sessions / Memory、OpenAI file search、Vercel AI SDK Agents / tool calling / human-in-the-loop 文档补充边界；正式公开前仍需人工核对 SDK 版本、隐私建议和 API 名称。
+- Chinese chars: 1951
 
 Intent seeds:
 
@@ -494,15 +440,15 @@ npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx 
 npm run publish:articles -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx
 ```
 
-### 6. AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围
+### 5. AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围
 
 - File: content/blog/ai-automation-project-pricing-scope-guide.mdx
 - Lane: AI Agent deployment, tool calling, and production workflow
 - Audience: Developers and teams trying to move beyond chatbots into production agents.
 - Priority reason: demandScore=10; no public coverage; readyDrafts=27; currentPack=1; wave1=1
 - Description: 整理 AI 自动化项目报价思路，覆盖需求范围、工具选型、RAG、Agent、部署、维护、验收标准和风险边界。
-- Source notes: 结合 Dify、n8n、RAG、Agent 部署内容和接单报价经验整理；正式发布前需要人工核对市场价格和交付边界。
-- Chinese chars: 1303
+- Source notes: 结合 Dify、n8n、RAG、Agent 部署内容和项目报价经验整理；正式发布前需要人工核对市场价格和交付边界。
+- Chinese chars: 1305
 
 Intent seeds:
 
@@ -547,4 +493,59 @@ Commands after explicit human approval:
 ```bash
 npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human
 npm run publish:articles -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx
+```
+
+### 6. 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查
+
+- File: content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx
+- Lane: Large model deployment, LLM serving, and GPU infrastructure
+- Audience: Developers, solo builders, and companies deciding where and how to run models.
+- Priority reason: demandScore=10; no public coverage; readyDrafts=29
+- Description: 面向新手整理大模型部署路径，讲清 API 调用、托管推理端点、私有化部署、vLLM/TGI/SGLang、成本、延迟、安全和验收。
+- Source notes: 已于 2026-06-12 按 Hugging Face Inference Endpoints 官方文档核对托管推理端点、实例选择和部署边界；结合 API、私有化和成本检查经验整理。正式公开前仍需人工核对价格、区域、引擎支持和最新限制。
+- Chinese chars: 1537
+
+Intent seeds:
+
+- 大模型部署教程
+- LLM deployment
+- vLLM 部署
+- Hugging Face TGI 部署
+
+Review focus:
+
+- GPU and memory requirements
+- serving framework versions
+- cold start and concurrency
+- cost boundaries
+
+Source targets:
+
+- Hugging Face docs: https://huggingface.co/docs
+- vLLM docs: https://docs.vllm.ai
+- OpenAI API docs: https://platform.openai.com/docs
+- Modal docs: https://modal.com/docs
+
+Risk checks:
+
+- No measured traffic, ranking, income, approval, or client acquisition claim is made without evidence.
+- No API key, private customer data, credential, or bypass instruction is included.
+- Fast-changing model names, quotas, pricing, limits, and platform features are checked against official docs.
+- GPU, memory, serving, concurrency, cold-start, and cost tradeoffs are framed as checks, not guarantees.
+
+Approval checks:
+
+- Article remains draft: true
+- Article remains noindex: true
+- Human review flag is present: true
+- Source notes are present: true
+- Quality check passed: true
+- Reviewer verifies official sources before any status change.
+- Reviewer confirms the article answers one broad search intent without unsupported traffic or income claims.
+
+Commands after explicit human approval:
+
+```bash
+npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human
+npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx
 ```

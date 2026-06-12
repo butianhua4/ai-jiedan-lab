@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:10.979Z",
+  "generatedAt": "2026-06-12T16:32:06.902Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -31,9 +31,9 @@
     "totalReadyDraftMatches": 417,
     "uniqueCandidateFiles": 56,
     "reviewPackThemeMatches": 4,
-    "plannedWaveThemeMatches": 24,
+    "plannedWaveThemeMatches": 22,
     "missingSubtopics": 25,
-    "maxGapScore": 388
+    "maxGapScore": 382
   },
   "topThemes": [
     {
@@ -141,14 +141,14 @@
         }
       ],
       "draftMatches": 35,
-      "gapScore": 388,
+      "gapScore": 382,
       "missingSubtopics": [
         "tool calling",
         "human review",
         "permissions",
         "logs"
       ],
-      "plannedWaveMatches": 5,
+      "plannedWaveMatches": 4,
       "publicMatches": 0,
       "readyDrafts": 35,
       "reviewPackMatches": 1
@@ -380,12 +380,12 @@
         }
       ],
       "draftMatches": 32,
-      "gapScore": 352,
+      "gapScore": 346,
       "missingSubtopics": [
         "knowledge base",
         "vector database"
       ],
-      "plannedWaveMatches": 4,
+      "plannedWaveMatches": 3,
       "publicMatches": 0,
       "readyDrafts": 32,
       "reviewPackMatches": 0
@@ -611,12 +611,12 @@
         }
       ],
       "draftMatches": 23,
-      "gapScore": 330,
+      "gapScore": 324,
       "missingSubtopics": [
         "self hosted",
         "connector"
       ],
-      "plannedWaveMatches": 3,
+      "plannedWaveMatches": 2,
       "publicMatches": 0,
       "readyDrafts": 23,
       "reviewPackMatches": 0
@@ -726,15 +726,132 @@
         }
       ],
       "draftMatches": 15,
-      "gapScore": 328,
+      "gapScore": 322,
       "missingSubtopics": [
         "support",
         "product",
         "weekly report"
       ],
-      "plannedWaveMatches": 2,
+      "plannedWaveMatches": 1,
       "publicMatches": 0,
       "readyDrafts": 15,
+      "reviewPackMatches": 0
+    },
+    {
+      "audience": "Teams putting agents and RAG into production and needing evidence that outputs are reliable.",
+      "id": "evals-observability-security",
+      "priority": 84,
+      "reviewFocus": [
+        "traces and logs",
+        "evaluation datasets",
+        "prompt injection",
+        "cost and quality drift"
+      ],
+      "searchSeeds": [
+        "LLM observability",
+        "RAG evaluation",
+        "AI agent logs",
+        "prompt injection defense"
+      ],
+      "sourceTargets": [
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "LangChain docs: https://python.langchain.com/docs"
+      ],
+      "subtopics": [
+        "observability",
+        "evaluation",
+        "logs",
+        "prompt injection",
+        "security",
+        "cost tracking"
+      ],
+      "terms": [
+        "observability",
+        "eval",
+        "evaluation",
+        "prompt injection",
+        "security",
+        "logs",
+        "tracing"
+      ],
+      "title": "LLM evaluation, observability, and security",
+      "candidateDrafts": [
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "primaryKeyword": "AI API Key 安全管理",
+          "publishBatch": 34,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
+        },
+        {
+          "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+          "primaryKeyword": "MCP Server 部署安全",
+          "publishBatch": 33,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单"
+        },
+        {
+          "file": "content/blog/arize-phoenix-llm-observability-guide.mdx",
+          "primaryKeyword": "Arize Phoenix LLM Tracing",
+          "publishBatch": 28,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "title": "Arize Phoenix 怎么做 LLM Tracing：OpenTelemetry、评测和排错入门"
+        },
+        {
+          "file": "content/blog/helicone-llm-observability-guide.mdx",
+          "primaryKeyword": "Helicone LLM Observability",
+          "publishBatch": 28,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "title": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住"
+        },
+        {
+          "file": "content/blog/langsmith-observability-evaluation-guide.mdx",
+          "primaryKeyword": "LangSmith Observability",
+          "publishBatch": 28,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "title": "LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent"
+        },
+        {
+          "file": "content/blog/openai-agents-sdk-beginner-guide.mdx",
+          "primaryKeyword": "OpenAI Agents SDK 入门",
+          "publishBatch": 28,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "title": "OpenAI Agents SDK 怎么入门：Tools、Handoffs 和 Tracing 先分清"
+        },
+        {
+          "file": "content/blog/promptfoo-llm-evaluation-beginner-guide.mdx",
+          "primaryKeyword": "promptfoo LLM 评测",
+          "publishBatch": 28,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "title": "promptfoo 怎么做 LLM 评测：提示词、模型和 Agent 都要有测试用例"
+        },
+        {
+          "file": "content/blog/ragas-rag-evaluation-beginner-guide.mdx",
+          "primaryKeyword": "Ragas RAG 评测",
+          "publishBatch": 28,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "title": "Ragas 怎么评测 RAG：Faithfulness、Context 和测试集先建好"
+        }
+      ],
+      "draftMatches": 11,
+      "gapScore": 318,
+      "missingSubtopics": [
+        "logs",
+        "prompt injection",
+        "cost tracking"
+      ],
+      "plannedWaveMatches": 1,
+      "publicMatches": 0,
+      "readyDrafts": 11,
       "reviewPackMatches": 0
     },
     {
@@ -850,123 +967,6 @@
       "plannedWaveMatches": 0,
       "publicMatches": 0,
       "readyDrafts": 9,
-      "reviewPackMatches": 0
-    },
-    {
-      "audience": "Teams putting agents and RAG into production and needing evidence that outputs are reliable.",
-      "id": "evals-observability-security",
-      "priority": 84,
-      "reviewFocus": [
-        "traces and logs",
-        "evaluation datasets",
-        "prompt injection",
-        "cost and quality drift"
-      ],
-      "searchSeeds": [
-        "LLM observability",
-        "RAG evaluation",
-        "AI agent logs",
-        "prompt injection defense"
-      ],
-      "sourceTargets": [
-        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
-        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
-        "LangChain docs: https://python.langchain.com/docs"
-      ],
-      "subtopics": [
-        "observability",
-        "evaluation",
-        "logs",
-        "prompt injection",
-        "security",
-        "cost tracking"
-      ],
-      "terms": [
-        "observability",
-        "eval",
-        "evaluation",
-        "prompt injection",
-        "security",
-        "logs",
-        "tracing"
-      ],
-      "title": "LLM evaluation, observability, and security",
-      "candidateDrafts": [
-        {
-          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-          "primaryKeyword": "AI API Key 安全管理",
-          "publishBatch": 34,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
-        },
-        {
-          "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
-          "primaryKeyword": "MCP Server 部署安全",
-          "publishBatch": 33,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单"
-        },
-        {
-          "file": "content/blog/arize-phoenix-llm-observability-guide.mdx",
-          "primaryKeyword": "Arize Phoenix LLM Tracing",
-          "publishBatch": 28,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "title": "Arize Phoenix 怎么做 LLM Tracing：OpenTelemetry、评测和排错入门"
-        },
-        {
-          "file": "content/blog/helicone-llm-observability-guide.mdx",
-          "primaryKeyword": "Helicone LLM Observability",
-          "publishBatch": 28,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "title": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住"
-        },
-        {
-          "file": "content/blog/langsmith-observability-evaluation-guide.mdx",
-          "primaryKeyword": "LangSmith Observability",
-          "publishBatch": 28,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "title": "LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent"
-        },
-        {
-          "file": "content/blog/openai-agents-sdk-beginner-guide.mdx",
-          "primaryKeyword": "OpenAI Agents SDK 入门",
-          "publishBatch": 28,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "title": "OpenAI Agents SDK 怎么入门：Tools、Handoffs 和 Tracing 先分清"
-        },
-        {
-          "file": "content/blog/promptfoo-llm-evaluation-beginner-guide.mdx",
-          "primaryKeyword": "promptfoo LLM 评测",
-          "publishBatch": 28,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "title": "promptfoo 怎么做 LLM 评测：提示词、模型和 Agent 都要有测试用例"
-        },
-        {
-          "file": "content/blog/ragas-rag-evaluation-beginner-guide.mdx",
-          "primaryKeyword": "Ragas RAG 评测",
-          "publishBatch": 28,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "title": "Ragas 怎么评测 RAG：Faithfulness、Context 和测试集先建好"
-        }
-      ],
-      "draftMatches": 11,
-      "gapScore": 312,
-      "missingSubtopics": [
-        "logs",
-        "prompt injection",
-        "cost tracking"
-      ],
-      "plannedWaveMatches": 0,
-      "publicMatches": 0,
-      "readyDrafts": 11,
       "reviewPackMatches": 0
     }
   ],
@@ -1076,14 +1076,14 @@
         }
       ],
       "draftMatches": 35,
-      "gapScore": 388,
+      "gapScore": 382,
       "missingSubtopics": [
         "tool calling",
         "human review",
         "permissions",
         "logs"
       ],
-      "plannedWaveMatches": 5,
+      "plannedWaveMatches": 4,
       "publicMatches": 0,
       "readyDrafts": 35,
       "reviewPackMatches": 1
@@ -1315,12 +1315,12 @@
         }
       ],
       "draftMatches": 32,
-      "gapScore": 352,
+      "gapScore": 346,
       "missingSubtopics": [
         "knowledge base",
         "vector database"
       ],
-      "plannedWaveMatches": 4,
+      "plannedWaveMatches": 3,
       "publicMatches": 0,
       "readyDrafts": 32,
       "reviewPackMatches": 0
@@ -1546,12 +1546,12 @@
         }
       ],
       "draftMatches": 23,
-      "gapScore": 330,
+      "gapScore": 324,
       "missingSubtopics": [
         "self hosted",
         "connector"
       ],
-      "plannedWaveMatches": 3,
+      "plannedWaveMatches": 2,
       "publicMatches": 0,
       "readyDrafts": 23,
       "reviewPackMatches": 0
@@ -1661,15 +1661,132 @@
         }
       ],
       "draftMatches": 15,
-      "gapScore": 328,
+      "gapScore": 322,
       "missingSubtopics": [
         "support",
         "product",
         "weekly report"
       ],
-      "plannedWaveMatches": 2,
+      "plannedWaveMatches": 1,
       "publicMatches": 0,
       "readyDrafts": 15,
+      "reviewPackMatches": 0
+    },
+    {
+      "audience": "Teams putting agents and RAG into production and needing evidence that outputs are reliable.",
+      "id": "evals-observability-security",
+      "priority": 84,
+      "reviewFocus": [
+        "traces and logs",
+        "evaluation datasets",
+        "prompt injection",
+        "cost and quality drift"
+      ],
+      "searchSeeds": [
+        "LLM observability",
+        "RAG evaluation",
+        "AI agent logs",
+        "prompt injection defense"
+      ],
+      "sourceTargets": [
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "LangChain docs: https://python.langchain.com/docs"
+      ],
+      "subtopics": [
+        "observability",
+        "evaluation",
+        "logs",
+        "prompt injection",
+        "security",
+        "cost tracking"
+      ],
+      "terms": [
+        "observability",
+        "eval",
+        "evaluation",
+        "prompt injection",
+        "security",
+        "logs",
+        "tracing"
+      ],
+      "title": "LLM evaluation, observability, and security",
+      "candidateDrafts": [
+        {
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "primaryKeyword": "AI API Key 安全管理",
+          "publishBatch": 34,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
+        },
+        {
+          "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+          "primaryKeyword": "MCP Server 部署安全",
+          "publishBatch": 33,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单"
+        },
+        {
+          "file": "content/blog/arize-phoenix-llm-observability-guide.mdx",
+          "primaryKeyword": "Arize Phoenix LLM Tracing",
+          "publishBatch": 28,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "title": "Arize Phoenix 怎么做 LLM Tracing：OpenTelemetry、评测和排错入门"
+        },
+        {
+          "file": "content/blog/helicone-llm-observability-guide.mdx",
+          "primaryKeyword": "Helicone LLM Observability",
+          "publishBatch": 28,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "title": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住"
+        },
+        {
+          "file": "content/blog/langsmith-observability-evaluation-guide.mdx",
+          "primaryKeyword": "LangSmith Observability",
+          "publishBatch": 28,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "title": "LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent"
+        },
+        {
+          "file": "content/blog/openai-agents-sdk-beginner-guide.mdx",
+          "primaryKeyword": "OpenAI Agents SDK 入门",
+          "publishBatch": 28,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "title": "OpenAI Agents SDK 怎么入门：Tools、Handoffs 和 Tracing 先分清"
+        },
+        {
+          "file": "content/blog/promptfoo-llm-evaluation-beginner-guide.mdx",
+          "primaryKeyword": "promptfoo LLM 评测",
+          "publishBatch": 28,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "title": "promptfoo 怎么做 LLM 评测：提示词、模型和 Agent 都要有测试用例"
+        },
+        {
+          "file": "content/blog/ragas-rag-evaluation-beginner-guide.mdx",
+          "primaryKeyword": "Ragas RAG 评测",
+          "publishBatch": 28,
+          "qualityScore": 100,
+          "searchIntent": "informational",
+          "title": "Ragas 怎么评测 RAG：Faithfulness、Context 和测试集先建好"
+        }
+      ],
+      "draftMatches": 11,
+      "gapScore": 318,
+      "missingSubtopics": [
+        "logs",
+        "prompt injection",
+        "cost tracking"
+      ],
+      "plannedWaveMatches": 1,
+      "publicMatches": 0,
+      "readyDrafts": 11,
       "reviewPackMatches": 0
     },
     {
@@ -1788,123 +1905,6 @@
       "reviewPackMatches": 0
     },
     {
-      "audience": "Teams putting agents and RAG into production and needing evidence that outputs are reliable.",
-      "id": "evals-observability-security",
-      "priority": 84,
-      "reviewFocus": [
-        "traces and logs",
-        "evaluation datasets",
-        "prompt injection",
-        "cost and quality drift"
-      ],
-      "searchSeeds": [
-        "LLM observability",
-        "RAG evaluation",
-        "AI agent logs",
-        "prompt injection defense"
-      ],
-      "sourceTargets": [
-        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
-        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
-        "LangChain docs: https://python.langchain.com/docs"
-      ],
-      "subtopics": [
-        "observability",
-        "evaluation",
-        "logs",
-        "prompt injection",
-        "security",
-        "cost tracking"
-      ],
-      "terms": [
-        "observability",
-        "eval",
-        "evaluation",
-        "prompt injection",
-        "security",
-        "logs",
-        "tracing"
-      ],
-      "title": "LLM evaluation, observability, and security",
-      "candidateDrafts": [
-        {
-          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-          "primaryKeyword": "AI API Key 安全管理",
-          "publishBatch": 34,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
-        },
-        {
-          "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
-          "primaryKeyword": "MCP Server 部署安全",
-          "publishBatch": 33,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单"
-        },
-        {
-          "file": "content/blog/arize-phoenix-llm-observability-guide.mdx",
-          "primaryKeyword": "Arize Phoenix LLM Tracing",
-          "publishBatch": 28,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "title": "Arize Phoenix 怎么做 LLM Tracing：OpenTelemetry、评测和排错入门"
-        },
-        {
-          "file": "content/blog/helicone-llm-observability-guide.mdx",
-          "primaryKeyword": "Helicone LLM Observability",
-          "publishBatch": 28,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "title": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住"
-        },
-        {
-          "file": "content/blog/langsmith-observability-evaluation-guide.mdx",
-          "primaryKeyword": "LangSmith Observability",
-          "publishBatch": 28,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "title": "LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent"
-        },
-        {
-          "file": "content/blog/openai-agents-sdk-beginner-guide.mdx",
-          "primaryKeyword": "OpenAI Agents SDK 入门",
-          "publishBatch": 28,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "title": "OpenAI Agents SDK 怎么入门：Tools、Handoffs 和 Tracing 先分清"
-        },
-        {
-          "file": "content/blog/promptfoo-llm-evaluation-beginner-guide.mdx",
-          "primaryKeyword": "promptfoo LLM 评测",
-          "publishBatch": 28,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "title": "promptfoo 怎么做 LLM 评测：提示词、模型和 Agent 都要有测试用例"
-        },
-        {
-          "file": "content/blog/ragas-rag-evaluation-beginner-guide.mdx",
-          "primaryKeyword": "Ragas RAG 评测",
-          "publishBatch": 28,
-          "qualityScore": 100,
-          "searchIntent": "informational",
-          "title": "Ragas 怎么评测 RAG：Faithfulness、Context 和测试集先建好"
-        }
-      ],
-      "draftMatches": 11,
-      "gapScore": 312,
-      "missingSubtopics": [
-        "logs",
-        "prompt injection",
-        "cost tracking"
-      ],
-      "plannedWaveMatches": 0,
-      "publicMatches": 0,
-      "readyDrafts": 11,
-      "reviewPackMatches": 0
-    },
-    {
       "audience": "Beginners and teams searching how to put AI apps, model APIs, and agent tools online.",
       "id": "ai-app-and-api-deployment",
       "priority": 100,
@@ -2009,12 +2009,12 @@
         }
       ],
       "draftMatches": 51,
-      "gapScore": 304,
+      "gapScore": 310,
       "missingSubtopics": [
         "smoke check",
         "rollback"
       ],
-      "plannedWaveMatches": 3,
+      "plannedWaveMatches": 4,
       "publicMatches": 2,
       "readyDrafts": 51,
       "reviewPackMatches": 1
@@ -2085,43 +2085,43 @@
         },
         {
           "file": "content/blog/claude-code-automation-human-review-freelance-scope.mdx",
-          "primaryKeyword": "Claude Code 自动化接单范围",
+          "primaryKeyword": "Claude Code 自动化项目范围",
           "publishBatch": 20,
           "qualityScore": 100,
           "searchIntent": "commercial",
-          "title": "Claude Code 自动化接单前怎么判断能不能做"
+          "title": "Claude Code 自动化项目前怎么判断能不能做"
         },
         {
           "file": "content/blog/claude-code-beginner-mistakes-freelance-scope.mdx",
-          "primaryKeyword": "Claude Code 接单范围",
+          "primaryKeyword": "Claude Code 项目范围",
           "publishBatch": 20,
           "qualityScore": 100,
           "searchIntent": "commercial",
-          "title": "Claude Code 接单前怎么判断范围"
+          "title": "Claude Code 项目前怎么判断范围"
         },
         {
           "file": "content/blog/claude-code-beginner-use-cases-freelance-scope.mdx",
-          "primaryKeyword": "Claude Code 使用场景接单范围",
+          "primaryKeyword": "Claude Code 使用场景项目范围",
           "publishBatch": 20,
           "qualityScore": 100,
           "searchIntent": "commercial",
-          "title": "Claude Code 新手接单前怎么判断使用场景"
+          "title": "Claude Code 新手项目练习前怎么判断使用场景"
         },
         {
           "file": "content/blog/claude-code-bug-prompt-freelance-scope.mdx",
-          "primaryKeyword": "Claude Code bug prompt 接单范围",
+          "primaryKeyword": "Claude Code bug prompt 项目范围",
           "publishBatch": 20,
           "qualityScore": 100,
           "searchIntent": "commercial",
-          "title": "Claude Code Bug Prompt 接单前怎么判断范围"
+          "title": "Claude Code Bug Prompt 项目前怎么判断范围"
         },
         {
           "file": "content/blog/claude-code-client-questions-freelance-scope.mdx",
-          "primaryKeyword": "Claude Code 客户问题接单范围",
+          "primaryKeyword": "Claude Code 客户问题项目范围",
           "publishBatch": 20,
           "qualityScore": 100,
           "searchIntent": "commercial",
-          "title": "Claude Code 接单前客户问题不清楚时怎么判断范围"
+          "title": "Claude Code 项目前客户问题不清楚时怎么判断范围"
         }
       ],
       "draftMatches": 160,

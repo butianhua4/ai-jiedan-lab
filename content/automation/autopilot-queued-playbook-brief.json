@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:34.635Z",
+  "generatedAt": "2026-06-12T16:32:31.139Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -129,6 +129,7 @@
         "在相关段落加入公开内链：Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)。",
         "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
         "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "Add one FAQ or checklist line that uses a high-intent query variant such as: LLM observability.",
         "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
         "Decide whether missing subtopics belong in this article or should become separate follow-up drafts.",
         "Consider reviewed title: AI API Key 安全管理：环境变量、权限、轮换、泄露应急",
@@ -225,6 +226,7 @@
       ],
       "sourceEvidence": [
         "next-review-source-pack",
+        "search-query-coverage",
         "review-portfolio-board",
         "review-action-board",
         "review-optimization-brief",
@@ -276,6 +278,7 @@
         "Open and verify official source: https://platform.openai.com/docs/guides/agents.",
         "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
         "Decide whether missing subtopics should become a short section or a follow-up article.",
+        "Add one FAQ or checklist line that uses a high-intent query variant such as: LLM observability.",
         "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
         "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
       ]
@@ -348,20 +351,20 @@
           "url": "/blog/vercel-env-variable-missing-beginner-guide"
         },
         {
-          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
-          "reason": "keyword overlap: 怎么, 新手, 指南, 项目, 范围, 一个",
-          "score": 28,
-          "slug": "first-upwork-project-pricing-checklist",
-          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
-          "url": "/blog/first-upwork-project-pricing-checklist"
-        },
-        {
           "file": "content/blog/build-first-webpage-with-codex.mdx",
-          "reason": "keyword overlap: ai, codex, 怎么, 新手, 一个, 第一",
-          "score": 27,
+          "reason": "keyword overlap: ai, codex, 工具, 怎么, 新手, 一个",
+          "score": 31,
           "slug": "build-first-webpage-with-codex",
           "title": "Codex 怎么做第一个网页",
           "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+          "reason": "keyword overlap: ai, codex, 工具, 怎么, 新手, 交付",
+          "score": 31,
+          "slug": "codex-code-review-delivery-checklist",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
         }
       ],
       "manualOnlyCommands": {
@@ -491,9 +494,9 @@
         "Review theme gap: RAG, knowledge base, and agent memory.",
         "Verify 3 source target(s) and source freshness.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
-        "Review the suggested public internal link before publishing: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+        "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Decide whether missing subtopics belong in this article or should become separate follow-up drafts.",
-        "Choose or reject public internal link suggestion: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+        "Choose or reject public internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Review source lanes together: deployment, public-gap.",
         "Verify 4 official source target(s) before any approval.",
         "Check search intent against 6 query seed(s).",
@@ -554,25 +557,25 @@
       "internalLinkSuggestions": [
         {
           "currentPublicLinks": 0,
-          "reason": "keyword overlap: ai, 怎么, 一个, 么做, 接单",
-          "title": "Codex 怎么做第一个网页",
-          "url": "/blog/build-first-webpage-with-codex"
-        },
-        {
-          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
-          "reason": "keyword overlap: ai, 怎么, 代码, 接单, 检查",
-          "score": 23,
-          "slug": "codex-code-review-delivery-checklist",
+          "reason": "keyword overlap: ai, 怎么, 代码, 工具, 具实, 实践",
           "title": "Codex 生成代码后怎么审核：交付前检查清单",
           "url": "/blog/codex-code-review-delivery-checklist"
         },
         {
           "file": "content/blog/codex-github-before-commit-checklist.mdx",
-          "reason": "keyword overlap: ai, 怎么, 代码, 接单, 检查",
-          "score": 23,
+          "reason": "keyword overlap: ai, 怎么, 代码, 工具, 具实, 实践",
+          "score": 31,
           "slug": "codex-github-before-commit-checklist",
           "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
           "url": "/blog/codex-github-before-commit-checklist"
+        },
+        {
+          "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "reason": "keyword overlap: ai, 部署, 什么, 工具, 具实, 实践",
+          "score": 31,
+          "slug": "codex-vercel-deploy-preflight-checklist",
+          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+          "url": "/blog/codex-vercel-deploy-preflight-checklist"
         }
       ],
       "manualOnlyCommands": {
@@ -584,12 +587,12 @@
       "optimizationActions": [
         "在开头 200 字内自然回答一次“RAG knowledge base tutorial”这个搜索意图，先给结论再展开步骤。",
         "补一个小节或提示框覆盖缺口：knowledge base、vector database。",
-        "在相关段落加入公开内链：Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)。",
+        "在相关段落加入公开内链：Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)。",
         "Rewrite the meta description to name the reader, outcome, and search phrase: RAG knowledge base tutorial.",
         "Add one contextual link to a published article before approval.",
         "Decide whether missing subtopics should become a short section or a follow-up article.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
-        "Review the suggested public internal link before publishing: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+        "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Decide whether missing subtopics belong in this article or should become separate follow-up drafts.",
         "Consider reviewed title: AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
         "Consider reviewed description: 解释 AI Agent 记忆和 RAG 的区别，覆盖短期记忆、长期记忆、知识库检索、引用来源、更新机制、隐私和验收检查。"
@@ -715,7 +718,7 @@
         "Add one contextual link to a published article before approval.",
         "Decide whether missing subtopics should become a short section or a follow-up article.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
-        "Review the suggested public internal link before publishing: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+        "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
       ]
     },
@@ -788,22 +791,22 @@
       "internalLinkSuggestions": [
         {
           "currentPublicLinks": 0,
-          "reason": "keyword overlap: ai, 怎么, 一个, 第一",
+          "reason": "keyword overlap: ai, 怎么, 一个, 工具, 第一",
           "title": "Codex 怎么做第一个网页",
           "url": "/blog/build-first-webpage-with-codex"
         },
         {
           "file": "content/blog/codex-code-review-delivery-checklist.mdx",
-          "reason": "keyword overlap: ai, 怎么, 代码, 交付",
-          "score": 19,
+          "reason": "keyword overlap: ai, 怎么, 代码, 工具, 交付",
+          "score": 23,
           "slug": "codex-code-review-delivery-checklist",
           "title": "Codex 生成代码后怎么审核：交付前检查清单",
           "url": "/blog/codex-code-review-delivery-checklist"
         },
         {
           "file": "content/blog/codex-generated-code-review-guide.mdx",
-          "reason": "keyword overlap: ai, 怎么, 代码",
-          "score": 15,
+          "reason": "keyword overlap: ai, 怎么, 代码, 工具",
+          "score": 19,
           "slug": "codex-generated-code-review-guide",
           "title": "Codex 生成代码后怎么审核",
           "url": "/blog/codex-generated-code-review-guide"
@@ -824,10 +827,12 @@
         "Add one contextual link to a published article before approval.",
         "Decide whether missing subtopics should become a short section or a follow-up article.",
         "Add one FAQ or checklist line that uses a high-intent query variant such as: local LLM deployment.",
+        "Resolve or explicitly accept during human review: missing query-family signals: intentSeeds.",
         "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
         "Review the suggested public internal link before publishing: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
         "Decide whether missing subtopics belong in this article or should become separate follow-up drafts.",
+        "人工审核时检查是否自然覆盖核心搜索种子词，不要硬塞关键词。",
         "Consider reviewed title: Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
         "Consider reviewed description: 面向准备落地 Open WebUI Functions Pipelines 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。"
       ],
@@ -955,10 +960,12 @@
         "Add one contextual link to a published article before approval.",
         "Decide whether missing subtopics should become a short section or a follow-up article.",
         "Add one FAQ or checklist line that uses a high-intent query variant such as: local LLM deployment.",
+        "Resolve or explicitly accept during human review: missing query-family signals: intentSeeds.",
         "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
         "Review the suggested public internal link before publishing: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+        "Decide whether missing subtopics belong in this article or should become separate follow-up drafts.",
+        "人工审核时检查是否自然覆盖核心搜索种子词，不要硬塞关键词。"
       ]
     },
     {
@@ -968,8 +975,8 @@
         "Tighten the meta description so it states the search intent, audience, and outcome clearly.",
         "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
-        "Review the suggested public internal link before publishing: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
-        "Choose or reject public internal link suggestion: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
+        "Choose or reject public internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Review source lanes together: deployment, public-gap.",
         "Verify 2 official source target(s) before any approval.",
         "Check search intent against 6 query seed(s).",
@@ -1001,7 +1008,7 @@
         "AI 自动化项目报价 official docs latest",
         "AI 自动化项目报价 official documentation current limits",
         "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 fact check official docs",
-        "接单报价 official docs limits pricing changelog",
+        "项目报价 official docs limits pricing changelog",
         "RAG 知识库搭建教程",
         "企业知识库 AI 部署",
         "向量数据库 RAG 教程",
@@ -1030,25 +1037,25 @@
       "internalLinkSuggestions": [
         {
           "currentPublicLinks": 0,
-          "reason": "keyword overlap: 报价, 项目, 目怎, 怎么, 么报, 范围",
-          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
-          "url": "/blog/first-upwork-project-pricing-checklist"
-        },
-        {
-          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
-          "reason": "keyword overlap: ai, 怎么, 接单, 交付, 清单, 新手",
-          "score": 35,
-          "slug": "codex-code-review-delivery-checklist",
+          "reason": "keyword overlap: ai, 怎么, 工具, 具实, 实践, 交付",
           "title": "Codex 生成代码后怎么审核：交付前检查清单",
           "url": "/blog/codex-code-review-delivery-checklist"
         },
         {
           "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
-          "reason": "keyword overlap: ai, 部署, 接单, 什么, 清单, 新手",
-          "score": 31,
+          "reason": "keyword overlap: ai, 部署, 什么, 工具, 具实, 实践",
+          "score": 39,
           "slug": "codex-vercel-deploy-preflight-checklist",
           "title": "Codex 部署 Vercel 前检查什么：上线前清单",
           "url": "/blog/codex-vercel-deploy-preflight-checklist"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+          "reason": "keyword overlap: 报价, 项目, 目怎, 怎么, 么报, 范围",
+          "score": 36,
+          "slug": "first-upwork-project-pricing-checklist",
+          "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
+          "url": "/blog/first-upwork-project-pricing-checklist"
         }
       ],
       "manualOnlyCommands": {
@@ -1060,7 +1067,7 @@
       "optimizationActions": [
         "在开头 200 字内自然回答一次“Dify deployment tutorial”这个搜索意图，先给结论再展开步骤。",
         "补一个小节或提示框覆盖缺口：self hosted、connector。",
-        "在相关段落加入公开内链：第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist)。",
+        "在相关段落加入公开内链：Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)。",
         "Rewrite the meta description to name the reader, outcome, and search phrase: Dify deployment tutorial.",
         "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
         "Add one contextual link to a published article before approval.",
@@ -1069,7 +1076,7 @@
         "Tighten the meta description so it states the search intent, audience, and outcome clearly.",
         "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
-        "Review the suggested public internal link before publishing: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Decide whether missing subtopics belong in this article or should become separate follow-up drafts.",
         "Consider reviewed title: AI 自动化项目报价：Dify、n8n、RAG、Agent 和维护范围",
         "Consider reviewed description: 面向准备落地 AI 自动化项目报价 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。"
@@ -1153,7 +1160,7 @@
         "Run or manually check fact-check query: AI 自动化项目报价 official docs latest",
         "Run or manually check fact-check query: AI 自动化项目报价 official documentation current limits",
         "Run or manually check fact-check query: AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 fact check official docs",
-        "Run or manually check fact-check query: 接单报价 official docs limits pricing changelog"
+        "Run or manually check fact-check query: 项目报价 official docs limits pricing changelog"
       ],
       "sourceEvidence": [
         "next-review-source-pack",
@@ -1206,7 +1213,7 @@
         "Tighten the meta description so it states the search intent, audience, and outcome clearly.",
         "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
-        "Review the suggested public internal link before publishing: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
       ]
     },
@@ -1274,7 +1281,7 @@
       "internalLinkSuggestions": [
         {
           "currentPublicLinks": 0,
-          "reason": "keyword overlap: ai, 怎么, 交付, 清单, 代码, 生成",
+          "reason": "keyword overlap: ai, 怎么, 工具, 交付, 清单, 代码",
           "title": "Codex 生成代码后怎么审核：交付前检查清单",
           "url": "/blog/codex-code-review-delivery-checklist"
         }
@@ -1406,8 +1413,8 @@
         "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
         "Add or approve one concrete subsection that matches the target search intent without keyword stuffing.",
-        "Review the suggested public internal link before publishing: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
-        "Choose or reject public internal link suggestion: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
+        "Choose or reject public internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Review source lanes together: public-gap.",
         "Verify 3 official source target(s) before any approval.",
         "Check search intent against 5 query seed(s).",
@@ -1459,7 +1466,15 @@
       "internalLinkSuggestions": [
         {
           "currentPublicLinks": 0,
+          "reason": "keyword overlap: ai, 工具, 怎么, 生成, 清单, 新手",
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
+        },
+        {
+          "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
           "reason": "keyword overlap: 怎么, 新手, 指南, 项目, 一个, 自由",
+          "score": 28,
+          "slug": "first-upwork-project-pricing-checklist",
           "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
           "url": "/blog/first-upwork-project-pricing-checklist"
         },
@@ -1470,14 +1485,6 @@
           "slug": "vercel-env-variable-missing-beginner-guide",
           "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
           "url": "/blog/vercel-env-variable-missing-beginner-guide"
-        },
-        {
-          "file": "content/blog/codex-code-review-delivery-checklist.mdx",
-          "reason": "keyword overlap: ai, 怎么, 生成, 清单, 新手, 代码",
-          "score": 27,
-          "slug": "codex-code-review-delivery-checklist",
-          "title": "Codex 生成代码后怎么审核：交付前检查清单",
-          "url": "/blog/codex-code-review-delivery-checklist"
         }
       ],
       "manualOnlyCommands": {
@@ -1488,7 +1495,7 @@
       },
       "optimizationActions": [
         "在开头 200 字内自然回答一次“LLM observability 教程”这个搜索意图，先给结论再展开步骤。",
-        "在相关段落加入公开内链：第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist)。",
+        "在相关段落加入公开内链：Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)。",
         "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
         "Rewrite the meta description to name the reader, outcome, and search phrase: LLM observability 教程.",
         "Resolve or explicitly accept during human review: few search-seed token families appear in article text.",
@@ -1496,7 +1503,7 @@
         "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
         "Add or approve one concrete subsection that matches the target search intent without keyword stuffing.",
-        "Review the suggested public internal link before publishing: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Consider reviewed title: Agent 工具权限控制：白名单、审批、沙箱和日志",
         "Consider reviewed description: 面向准备落地 Agent 工具权限控制 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。"
       ],
@@ -1579,7 +1586,7 @@
         "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
         "Add or approve one concrete subsection that matches the target search intent without keyword stuffing.",
-        "Review the suggested public internal link before publishing: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist)."
+        "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)."
       ]
     }
   ]

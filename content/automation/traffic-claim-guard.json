@@ -1,46 +1,40 @@
 {
-  "generatedAt": "2026-06-12T06:13:53.567Z",
+  "generatedAt": "2026-06-12T16:32:51.725Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
   },
   "summary": {
-    "filesScanned": 211,
+    "filesScanned": 219,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 3792
+    "watchMentions": 3828
   },
   "unsafeClaims": [],
   "watchMentions": [
     {
       "file": "README.md",
-      "line": 39,
+      "line": 5,
       "reason": "traffic-related mention",
-      "text": "`live:check` 负责确认主要页面、文章、sitemap 和 robots 能访问。`searchability:check` 负责更细的 SEO 可搜索度检查，包括英文 URL、canonical、Open Graph、JSON-LD、meta description、sitemap 收录范围和草稿泄漏。"
+      "text": "这个仓库同时包含一个公开网站和一套内容生产/审核自动化系统。目标不是做一个只卖工具的页面，而是把真实用户会搜索的问题整理成可访问、可复查、可持续扩展的工具与教程库。"
     },
     {
       "file": "README.md",
-      "line": 41,
+      "line": 117,
       "reason": "traffic-related mention",
-      "text": "当前站点已通过基础可搜索度检查，但 Google 是否收录还需要提交 Google Search Console 后观察。相关记录见 `docs/seo-searchability-audit.md` 和 `docs/search-console-setup.md`。"
+      "text": "npm run traffic:evidence"
     },
     {
       "file": "README.md",
-      "line": 43,
+      "line": 147,
       "reason": "traffic-related mention",
-      "text": "拿到 Google Search Console HTML tag 的 `content` 验证码后，可以先检查验证准备度："
+      "text": "- 不承诺搜索排名、收入、成交转化成功率或平台曝光"
     },
     {
       "file": "README.md",
-      "line": 250,
+      "line": 159,
       "reason": "traffic-related mention",
-      "text": "4. 每次只发布 1-3 篇人工审核文章，观察收录和点击。"
-    },
-    {
-      "file": "README.md",
-      "line": 276,
-      "reason": "traffic-related mention",
-      "text": "- Google Search Console 提交清单：`docs/search-console-setup.md`"
+      "text": "- 在有真实数据后接入 Search Console、Analytics、模板销售和联盟链接"
     },
     {
       "file": "app/llms.txt/route.ts",
@@ -316,7 +310,7 @@
       "file": "docs/automation-digest.md",
       "line": 726,
       "reason": "traffic-related mention",
-      "text": "| 306 | 4 | 222 | 8 | 3 | 10 | 4 | ai-service-pricing-delivery | This lane turns search demand into services without pretending the site already has traffic or revenue proof. |"
+      "text": "| 306 | 4 | 232 | 8 | 3 | 10 | 4 | ai-service-pricing-delivery | This lane turns search demand into services without pretending the site already has traffic or revenue proof. |"
     },
     {
       "file": "docs/automation-digest.md",
@@ -406,13 +400,13 @@
       "file": "docs/automation-digest.md",
       "line": 1407,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 211"
+      "text": "- Traffic claim files scanned: 219"
     },
     {
       "file": "docs/automation-digest.md",
       "line": 1408,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 3792"
+      "text": "- Traffic claim watch mentions: 3832"
     },
     {
       "file": "docs/automation-digest.md",
@@ -489,6 +483,12 @@
     {
       "file": "docs/automation-digest.md",
       "line": 1858,
+      "reason": "traffic-related mention",
+      "text": "- Traffic data available: false"
+    },
+    {
+      "file": "docs/automation-digest.md",
+      "line": 1893,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     }

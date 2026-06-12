@@ -1,6 +1,6 @@
 # Popular Prompt Sprint Board
 
-Generated at: 2026-06-12T06:13:15.912Z
+Generated at: 2026-06-12T16:32:11.890Z
 
 This report is read-only. It groups broad industry AI prompt lanes into manual review waves without creating, editing, reviewing, or publishing articles.
 
@@ -45,7 +45,7 @@ This report is read-only. It groups broad industry AI prompt lanes into manual r
 | 1 | 2/2 | 2 | 18 | agent-deployment | content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/mcp-server-deployment-security-checklist.mdx<br>content/blog/n8n-ai-agent-rag-memory-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx | AI Agent 记忆怎么做<br>Agent memory prompt<br>RAG 知识库提示词<br>LangChain long term memory<br>OpenAI Agents SDK memory<br>AI 客服知识库 prompt |
 | 2 | 2/2 | 2 | 18 | office-data, agent-deployment | content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/mcp-server-deployment-security-checklist.mdx<br>content/blog/n8n-ai-agent-rag-memory-guide.mdx | Excel AI 提示词<br>ChatGPT 分析表格数据<br>AI 数据分析提示词<br>销售数据分析 prompt<br>财务报表 AI 分析提示词<br>Excel 透视表 AI 教程 |
 | 3 | 2/2 | 2 | 18 | commerce-service | content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx | ChatGPT 提示词大全<br>ChatGPT 怎么提问效果最好<br>AI 提示词万能公式<br>提示词模板 免费<br>Copilot prompt examples<br>Gemini prompt guide |
-| 4 | 2/2 | 2 | 18 | commerce-service | content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/education-ai-prompts-guide.mdx | AI 销售话术提示词<br>ChatGPT 写报价单<br>AI 方案书提示词<br>客户跟进邮件 prompt<br>自由职业接单报价提示词<br>AI 写商业 proposal |
+| 4 | 2/2 | 2 | 18 | commerce-service | content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/education-ai-prompts-guide.mdx | AI 销售话术提示词<br>ChatGPT 写报价单<br>AI 方案书提示词<br>客户跟进邮件 prompt<br>自由职业项目报价提示词<br>AI 写商业 proposal |
 | 5 | 2/2 | 2 | 18 | content-marketing, office-data | content/blog/ecommerce-ai-prompts-guide.mdx<br>content/blog/marketing-ai-prompts-guide.mdx<br>content/blog/hr-recruiting-ai-prompts-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx | 小红书 AI 提示词<br>ChatGPT 小红书文案<br>短视频脚本 AI 提示词<br>直播带货话术 AI<br>AI 爆款标题提示词<br>抖音脚本 prompt |
 
 ## Sprint Items
@@ -384,8 +384,8 @@ Source targets:
 - Industry bucket: commerce-service
 - Ready for prompt sprint: true
 - Publish confirm: not-included
-- Audience: 销售、BD、自由职业者、咨询顾问和接单人
-- Demand reason: 写报价、写方案、写跟进邮件直接对应接单变现，是项目商业目标里的强入口。
+- Audience: 销售、BD、自由职业者和咨询顾问
+- Demand reason: 写报价、写方案、写跟进邮件直接对应项目转化，是项目商业目标里的强入口。
 
 Review actions:
 - Keep this as a manual review sprint; do not create or edit articles automatically.
@@ -403,7 +403,7 @@ Search queries:
 - ChatGPT 写报价单
 - AI 方案书提示词
 - 客户跟进邮件 prompt
-- 自由职业接单报价提示词
+- 自由职业项目报价提示词
 - AI 写商业 proposal
 - 销售异议处理提示词
 - AI 客户需求分析

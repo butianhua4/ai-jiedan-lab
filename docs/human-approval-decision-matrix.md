@@ -1,6 +1,6 @@
 # Human Approval Decision Matrix
 
-Generated at: 2026-06-12T06:13:31.363Z
+Generated at: 2026-06-12T16:32:27.754Z
 
 This report is read-only. It gives reviewers one decision row per approval candidate and stops before mark:review or publish.
 
@@ -51,7 +51,7 @@ This report is read-only. It gives reviewers one decision row per approval candi
 | --- | ---: | --- | --- | --- | --- | ---: | --- | --- | --- |
 | repair-before-review | 1723 | true | 3 weakness(es) | true | true | 10 | AI Agent deployment tutorial | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | repair-before-review | 1723 | true | ready | true | true | 10 | ChatGPT prompts for business | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| repair-before-review | 1598 | true | 4 weakness(es) | true | true | 10 | RAG 知识库搭建教程 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| repair-before-review | 1598 | true | 4 weakness(es) | true | true | 12 | RAG 知识库搭建教程 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
 ## Repair Before Approval
 
@@ -68,7 +68,7 @@ This report is read-only. It gives reviewers one decision row per approval candi
 - Resolve or explicitly accept search weakness: no exact search query appears in description.
 - Resolve or explicitly accept search weakness: no exact search query appears in headings or body.
 - Add at least one contextual link to a currently published article before approval.
-- Suggested public link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) - keyword overlap: ai, vercel, 部署, 上线, 检查, 新手.
+- Suggested public link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) - keyword overlap: ai, vercel, 部署, 工具, 上线, 检查.
 - Resolve search weakness: no exact search query appears in title.
 - Resolve search weakness: no exact search query appears in description.
 - Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.
@@ -97,7 +97,7 @@ This report is read-only. It gives reviewers one decision row per approval candi
 - Mark review after approval: npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human
 - Publish confirm: not-included
 - Defer if: none
-- Remediation reasons: approval candidate has no current link to a published article; 4 search-intent weakness(es) need human copy review; 10 source URL remediation action(s) need human confirmation; copydesk warning remediation exists
+- Remediation reasons: approval candidate has no current link to a published article; 4 search-intent weakness(es) need human copy review; 11 source URL remediation action(s) need human confirmation; copydesk warning remediation exists
 
 - Resolve or explicitly accept search weakness: no exact search query appears in title.
 - Resolve or explicitly accept search weakness: no exact search query appears in description.

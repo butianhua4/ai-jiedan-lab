@@ -1,6 +1,6 @@
 # Human Approval Execution Queue
 
-Generated at: 2026-06-12T06:13:39.288Z
+Generated at: 2026-06-12T16:32:35.869Z
 
 This queue is read-only. It consolidates the next manual approval actions that can increase public article count, while stopping before article edits, mark-review execution, and publish confirmation.
 
@@ -37,19 +37,19 @@ This queue is read-only. It consolidates the next manual approval actions that c
 
 ## Source Evidence
 
-- firstCoverageGeneratedAt: "2026-06-12T06:13:38.791Z"
+- firstCoverageGeneratedAt: "2026-06-12T16:32:35.365Z"
 - firstCoverageSummary: {"blockingItems":0,"commandBoundaries":8,"firstCoverageItems":8,"freshnessReadyItems":8,"integrityReadyItems":8,"itemsWithPublicLinkPath":8,"launchPackItems":8,"preflightReadyItems":8,"queryReadyItems":8,"schemaReadyItems":8,"snippetReadyItems":8,"sourceReadyItems":8,"trafficDataAvailable":false,"uniqueFiles":8,"unsafeItems":0,"warningItems":8,"zeroPublicClusters":8}
-- massAiSearchMatrixGeneratedAt: "2026-06-12T06:13:11.496Z"
+- massAiSearchMatrixGeneratedAt: "2026-06-12T16:32:07.424Z"
 - massAiSearchMatrixSummary: {"commandBoundaries":10,"deploymentBridgedThemes":6,"humanGatedItems":8,"items":8,"itemsReadyForHumanReviewPrep":8,"itemsWithCandidateFiles":8,"itemsWithHumanReviewActions":8,"itemsWithSearchSeeds":8,"itemsWithSourceTargets":8,"promptBlueprintSamples":10,"promptBridgedThemes":2,"sourceBroadThemes":10,"sourceTopThemes":8,"themesWithoutPublicCoverage":8,"trafficDataAvailable":false,"uniqueCandidateFiles":45,"unsafeItems":0,"waves":3}
-- popularAiPromptPlaybookGeneratedAt: "2026-06-12T06:13:14.917Z"
+- popularAiPromptPlaybookGeneratedAt: "2026-06-12T16:32:10.881Z"
 - popularAiPromptPlaybookSummary: {"agentDeploymentLanes":3,"broadWorkPromptLanes":3,"commandBoundaries":10,"deploymentBridgeItems":6,"humanGatedItems":10,"items":10,"itemsReadyForHumanReviewPrep":10,"itemsWithCandidateFiles":10,"itemsWithOfficialSources":10,"memoryLanes":1,"officialSources":12,"promptModuleBridgeItems":7,"promptTemplates":50,"publishConfirmCommandsIncluded":0,"searchQueries":127,"sourceTargets":22,"trafficDataAvailable":false,"uniqueCandidateFiles":21,"unsafeItems":0}
-- seoWarningGeneratedAt: "2026-06-12T06:13:00.157Z"
+- seoWarningGeneratedAt: "2026-06-12T16:31:55.876Z"
 - seoWarningSummary: {"blockingItems":0,"draftItems":8,"humanGatedItems":16,"items":16,"itemsWithHumanChecklist":16,"itemsWithManualActions":16,"publicItems":8,"recommendedItems":1,"schemaWarningItems":7,"snippetWarningItems":13,"trafficDataAvailable":false,"unsafeItems":0,"warningItems":16,"waveItems":1}
-- sourceReplacementGeneratedAt: "2026-06-12T06:13:20.631Z"
-- sourceReplacementSummary: {"affectedFiles":22,"failedDecisionItems":1,"humanGatedItems":113,"items":113,"itemsWithDecisionOptions":113,"itemsWithManualChecklist":113,"itemsWithRecommendedCandidate":1,"officialRecommendedCandidates":1,"redirectedDecisionItems":112,"replacementCandidateOptions":8,"sourceRemediationItems":19,"sourceRemediationUnsafeItems":0,"unsafeItems":0}
-- waveApprovalGeneratedAt: "2026-06-12T06:13:06.478Z"
+- sourceReplacementGeneratedAt: "2026-06-12T16:32:16.761Z"
+- sourceReplacementSummary: {"affectedFiles":22,"failedDecisionItems":1,"humanGatedItems":114,"items":114,"itemsWithDecisionOptions":114,"itemsWithManualChecklist":114,"itemsWithRecommendedCandidate":1,"officialRecommendedCandidates":1,"redirectedDecisionItems":113,"replacementCandidateOptions":8,"sourceRemediationItems":19,"sourceRemediationUnsafeItems":0,"unsafeItems":0}
+- waveApprovalGeneratedAt: "2026-06-12T16:32:02.310Z"
 - waveApprovalSummary: {"items":3,"readyForHumanReview":3,"unsafeItems":0,"wave":1}
-- wavePublishSimulationGeneratedAt: "2026-06-12T06:13:22.565Z"
+- wavePublishSimulationGeneratedAt: "2026-06-12T16:32:18.731Z"
 - wavePublishSimulationSummary: {"currentlyPublishable":0,"items":3,"projectedPublicPublishedAfterWave":18,"projectedPublishableAfterHumanApproval":3,"publicPublishedBeforeWave":15,"readyForHumanApproval":3,"unsafeItems":0,"wave":1}
 - trafficNote: "No measured traffic, rankings, impressions, clicks, or revenue data is available or claimed."
 
@@ -61,7 +61,7 @@ This queue is read-only. It consolidates the next manual approval actions that c
 
 | Stage | Ready | Priority | SEO | Source decisions | Mass themes | Prompt lanes | Status | Title | File |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- | --- |
-| draft-needs-human-approval | true | 777 | 1 | 6 | 1 | 5 | draft | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| draft-needs-human-approval | true | 777 | 1 | 7 | 1 | 5 | draft | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | draft-needs-human-approval | true | 773 | 0 | 6 | 1 | 4 | draft | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | draft-needs-human-approval | true | 769 | 0 | 6 | 1 | 6 | draft | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | first-coverage-backlog | true | 70 | 0 | 6 | 0 | 0 | draft | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
@@ -110,6 +110,7 @@ Source replacement decisions:
 - redirected-url: https://ai-sdk.dev/docs -> review manually
 - redirected-url: https://docs.llamaindex.ai -> review manually
 - redirected-url: https://platform.openai.com/docs -> review manually
+- redirected-url: https://platform.openai.com/docs/guides/agents -> review manually
 - redirected-url: https://platform.openai.com/docs/guides/prompt-engineering -> review manually
 - redirected-url: https://platform.openai.com/docs/guides/retrieval -> review manually
 - redirected-url: https://python.langchain.com/docs -> review manually
@@ -133,7 +134,9 @@ Human checklist:
 - No instruction to bypass platform, payment, messaging, account, or review rules.
 - No API key, credential, private customer data, or account detail is included.
 - Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.
+- Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.
 - RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.
+- Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.
 - Prompt examples include input context, output criteria, review rules, and adaptation notes.
 - Fact-check query before approval: 客服 AI 模型选型 official docs latest.
 - Fact-check query before approval: 客服 AI 模型选型 official documentation current limits.
@@ -146,7 +149,7 @@ Human checklist:
 - Verify official source before approval: LlamaIndex docs: https://docs.llamaindex.ai.
 - Verify official source before approval: Hugging Face docs: https://huggingface.co/docs.
 - Verify official source before approval: OpenAI API docs: https://platform.openai.com/docs.
-- Verify official source before approval: Vercel AI SDK docs: https://ai-sdk.dev/docs.
+- Verify official source before approval: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents.
 
 ### AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查
 
@@ -357,7 +360,7 @@ Human checklist:
 - Review snippet warnings for title, description, slug, and primary keyword alignment.
 - Resolve or explicitly accept warning: primary keyword is not an exact title substring.
 - Resolve or explicitly accept warning: theme still has missing subtopics: logs, prompt injection, cost tracking.
-- Resolve or explicitly accept warning: no search-query-match record; rely on launch search queries and public-gap seed evidence.
+- Resolve or explicitly accept warning: few exact query variant matches in article text.
 - Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.
 - Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.
 - Confirm the article answers the cluster's first public entry search intent without keyword stuffing.

@@ -1,6 +1,6 @@
 # Next Batch Route Remediation Pack
 
-Generated at: 2026-06-12T06:13:41.661Z
+Generated at: 2026-06-12T16:32:38.287Z
 
 This report is read-only. It converts next-batch route warnings into manual remediation tasks without editing articles or changing review/publish state.
 
@@ -91,7 +91,7 @@ This report is read-only. It converts next-batch route warnings into manual reme
 - Use the route report as planning evidence only; do not run mark:review or publish from this pack.
 - Check why this file is not matched in the human approval clearance pack, then decide whether it should enter the next approval queue or remain queued.
 - Review the existing proposed meta description and accept, rewrite, or reject it explicitly.
-- Review the suggested public internal link: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
+- Review the suggested public internal link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
 - Re-open official sources for fast-changing tool, model, API, pricing, limit, and deployment claims before approval.
 - Verify at least the first official source targets: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval | LangChain docs: https://python.langchain.com/docs | LlamaIndex docs: https://docs.llamaindex.ai.
 - After explicit human approval only: npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human

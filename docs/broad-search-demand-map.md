@@ -1,6 +1,6 @@
 # Broad Search Demand Map
 
-Generated at: 2026-06-12T06:13:10.979Z
+Generated at: 2026-06-12T16:32:06.902Z
 
 This report is read-only. It turns broad user-search demand areas into a review and content-gap map. It does not publish, mark review, claim keyword volume, or claim traffic.
 
@@ -19,32 +19,32 @@ This report is read-only. It turns broad user-search demand areas into a review 
 - totalReadyDraftMatches: 417
 - uniqueCandidateFiles: 56
 - reviewPackThemeMatches: 4
-- plannedWaveThemeMatches: 24
+- plannedWaveThemeMatches: 22
 - missingSubtopics: 25
-- maxGapScore: 388
+- maxGapScore: 382
 
 ## Top Themes
 
 | Score | Priority | Public | Drafts | Ready | Review pack | Planned wave | Missing subtopics | Theme |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 388 | 98 | 0 | 35 | 35 | 1 | 5 | tool calling, human review, permissions, logs | Agent deployment, tool calling, and production workflows |
+| 382 | 98 | 0 | 35 | 35 | 1 | 4 | tool calling, human review, permissions, logs | Agent deployment, tool calling, and production workflows |
 | 378 | 100 | 0 | 66 | 66 | 2 | 5 | customer service | Cross-industry AI prompt templates |
-| 352 | 96 | 0 | 32 | 32 | 0 | 4 | knowledge base, vector database | RAG, knowledge base, and agent memory |
+| 346 | 96 | 0 | 32 | 32 | 0 | 3 | knowledge base, vector database | RAG, knowledge base, and agent memory |
 | 342 | 92 | 0 | 15 | 15 | 0 | 1 | gpu memory, quantization, local api, model download | Local and open-source model deployment |
-| 330 | 88 | 0 | 23 | 23 | 0 | 3 | self hosted, connector | Dify, n8n, Flowise, and no-code AI automation |
-| 328 | 86 | 0 | 15 | 15 | 0 | 2 | support, product, weekly report | Business AI workflows and SOP templates |
+| 324 | 88 | 0 | 23 | 23 | 0 | 2 | self hosted, connector | Dify, n8n, Flowise, and no-code AI automation |
+| 322 | 86 | 0 | 15 | 15 | 0 | 1 | support, product, weekly report | Business AI workflows and SOP templates |
+| 318 | 84 | 0 | 11 | 11 | 0 | 1 | logs, prompt injection, cost tracking | LLM evaluation, observability, and security |
 | 312 | 90 | 0 | 9 | 9 | 0 | 0 | concurrency, autoscaling | LLM serving, GPU, and managed inference |
-| 312 | 84 | 0 | 11 | 11 | 0 | 0 | logs, prompt injection, cost tracking | LLM evaluation, observability, and security |
 
 ## Agent deployment, tool calling, and production workflows
 
 - ID: agent-deployment-and-tools
 - Audience: Developers moving from chatbot demos to production agents and workflow automation.
-- Gap score: 388
+- Gap score: 382
 - Public matches: 0
 - Ready drafts: 35
 - Review pack matches: 1
-- Planned wave matches: 5
+- Planned wave matches: 4
 - Missing subtopics: tool calling, human review, permissions, logs
 
 Search seeds:
@@ -128,11 +128,11 @@ Ready draft candidates:
 
 - ID: rag-knowledge-memory
 - Audience: Support, operations, and internal knowledge teams building document Q&A and memory features.
-- Gap score: 352
+- Gap score: 346
 - Public matches: 0
 - Ready drafts: 32
 - Review pack matches: 0
-- Planned wave matches: 4
+- Planned wave matches: 3
 - Missing subtopics: knowledge base, vector database
 
 Search seeds:
@@ -216,11 +216,11 @@ Ready draft candidates:
 
 - ID: nocode-ai-automation
 - Audience: No-code builders and operators using Dify, n8n, Flowise, Coze, and webhooks.
-- Gap score: 330
+- Gap score: 324
 - Public matches: 0
 - Ready drafts: 23
 - Review pack matches: 0
-- Planned wave matches: 3
+- Planned wave matches: 2
 - Missing subtopics: self hosted, connector
 
 Search seeds:
@@ -259,11 +259,11 @@ Ready draft candidates:
 
 - ID: business-ai-workflows
 - Audience: Teams deciding where AI actually fits across sales, support, operations, HR, finance, and product.
-- Gap score: 328
+- Gap score: 322
 - Public matches: 0
 - Ready drafts: 15
 - Review pack matches: 0
-- Planned wave matches: 2
+- Planned wave matches: 1
 - Missing subtopics: support, product, weekly report
 
 Search seeds:
@@ -297,6 +297,50 @@ Ready draft candidates:
 | 20 | 100 | informational | ChatGPT Codex Claude 工作流 | ChatGPT、Codex 和 Claude 怎么分工做 AI 工具实践流程 | content/blog/chatgpt-codex-claude-workflow.mdx |
 | 20 | 100 | informational | ChatGPT Codex Claude 工作流检查清单 | ChatGPT、Codex 和 Claude 工作流检查清单 | content/blog/chatgpt-codex-claude-workflow-checklist.mdx |
 | 20 | 100 | informational | 小网站上线检查 SOP 怎么写 | 小网站上线检查 SOP 怎么写 | content/blog/small-site-launch-sop.mdx |
+
+## LLM evaluation, observability, and security
+
+- ID: evals-observability-security
+- Audience: Teams putting agents and RAG into production and needing evidence that outputs are reliable.
+- Gap score: 318
+- Public matches: 0
+- Ready drafts: 11
+- Review pack matches: 0
+- Planned wave matches: 1
+- Missing subtopics: logs, prompt injection, cost tracking
+
+Search seeds:
+
+- LLM observability
+- RAG evaluation
+- AI agent logs
+- prompt injection defense
+
+Review focus:
+
+- traces and logs
+- evaluation datasets
+- prompt injection
+- cost and quality drift
+
+Source targets:
+
+- OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
+- OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
+- LangChain docs: https://python.langchain.com/docs
+
+Ready draft candidates:
+
+| Batch | Score | Intent | Keyword | Title | File |
+| --- | --- | --- | --- | --- | --- |
+| 34 | 100 | informational | AI API Key 安全管理 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| 33 | 100 | informational | MCP Server 部署安全 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
+| 28 | 100 | informational | Arize Phoenix LLM Tracing | Arize Phoenix 怎么做 LLM Tracing：OpenTelemetry、评测和排错入门 | content/blog/arize-phoenix-llm-observability-guide.mdx |
+| 28 | 100 | informational | Helicone LLM Observability | Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住 | content/blog/helicone-llm-observability-guide.mdx |
+| 28 | 100 | informational | LangSmith Observability | LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent | content/blog/langsmith-observability-evaluation-guide.mdx |
+| 28 | 100 | informational | OpenAI Agents SDK 入门 | OpenAI Agents SDK 怎么入门：Tools、Handoffs 和 Tracing 先分清 | content/blog/openai-agents-sdk-beginner-guide.mdx |
+| 28 | 100 | informational | promptfoo LLM 评测 | promptfoo 怎么做 LLM 评测：提示词、模型和 Agent 都要有测试用例 | content/blog/promptfoo-llm-evaluation-beginner-guide.mdx |
+| 28 | 100 | informational | Ragas RAG 评测 | Ragas 怎么评测 RAG：Faithfulness、Context 和测试集先建好 | content/blog/ragas-rag-evaluation-beginner-guide.mdx |
 
 ## LLM serving, GPU, and managed inference
 
@@ -341,61 +385,17 @@ Ready draft candidates:
 | 29 | 100 | informational | RunPod Serverless 大模型部署 | RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界 | content/blog/runpod-serverless-llm-deployment-guide.mdx |
 | 29 | 100 | informational | TensorRT-LLM 入门 | TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收 | content/blog/tensorrt-llm-beginner-guide.mdx |
 
-## LLM evaluation, observability, and security
-
-- ID: evals-observability-security
-- Audience: Teams putting agents and RAG into production and needing evidence that outputs are reliable.
-- Gap score: 312
-- Public matches: 0
-- Ready drafts: 11
-- Review pack matches: 0
-- Planned wave matches: 0
-- Missing subtopics: logs, prompt injection, cost tracking
-
-Search seeds:
-
-- LLM observability
-- RAG evaluation
-- AI agent logs
-- prompt injection defense
-
-Review focus:
-
-- traces and logs
-- evaluation datasets
-- prompt injection
-- cost and quality drift
-
-Source targets:
-
-- OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
-- OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
-- LangChain docs: https://python.langchain.com/docs
-
-Ready draft candidates:
-
-| Batch | Score | Intent | Keyword | Title | File |
-| --- | --- | --- | --- | --- | --- |
-| 34 | 100 | informational | AI API Key 安全管理 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
-| 33 | 100 | informational | MCP Server 部署安全 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
-| 28 | 100 | informational | Arize Phoenix LLM Tracing | Arize Phoenix 怎么做 LLM Tracing：OpenTelemetry、评测和排错入门 | content/blog/arize-phoenix-llm-observability-guide.mdx |
-| 28 | 100 | informational | Helicone LLM Observability | Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住 | content/blog/helicone-llm-observability-guide.mdx |
-| 28 | 100 | informational | LangSmith Observability | LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent | content/blog/langsmith-observability-evaluation-guide.mdx |
-| 28 | 100 | informational | OpenAI Agents SDK 入门 | OpenAI Agents SDK 怎么入门：Tools、Handoffs 和 Tracing 先分清 | content/blog/openai-agents-sdk-beginner-guide.mdx |
-| 28 | 100 | informational | promptfoo LLM 评测 | promptfoo 怎么做 LLM 评测：提示词、模型和 Agent 都要有测试用例 | content/blog/promptfoo-llm-evaluation-beginner-guide.mdx |
-| 28 | 100 | informational | Ragas RAG 评测 | Ragas 怎么评测 RAG：Faithfulness、Context 和测试集先建好 | content/blog/ragas-rag-evaluation-beginner-guide.mdx |
-
 ## All Themes
 
 | Score | Priority | Public | Drafts | Ready | Review pack | Planned wave | Missing subtopics | Theme |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 388 | 98 | 0 | 35 | 35 | 1 | 5 | tool calling, human review, permissions, logs | Agent deployment, tool calling, and production workflows |
+| 382 | 98 | 0 | 35 | 35 | 1 | 4 | tool calling, human review, permissions, logs | Agent deployment, tool calling, and production workflows |
 | 378 | 100 | 0 | 66 | 66 | 2 | 5 | customer service | Cross-industry AI prompt templates |
-| 352 | 96 | 0 | 32 | 32 | 0 | 4 | knowledge base, vector database | RAG, knowledge base, and agent memory |
+| 346 | 96 | 0 | 32 | 32 | 0 | 3 | knowledge base, vector database | RAG, knowledge base, and agent memory |
 | 342 | 92 | 0 | 15 | 15 | 0 | 1 | gpu memory, quantization, local api, model download | Local and open-source model deployment |
-| 330 | 88 | 0 | 23 | 23 | 0 | 3 | self hosted, connector | Dify, n8n, Flowise, and no-code AI automation |
-| 328 | 86 | 0 | 15 | 15 | 0 | 2 | support, product, weekly report | Business AI workflows and SOP templates |
+| 324 | 88 | 0 | 23 | 23 | 0 | 2 | self hosted, connector | Dify, n8n, Flowise, and no-code AI automation |
+| 322 | 86 | 0 | 15 | 15 | 0 | 1 | support, product, weekly report | Business AI workflows and SOP templates |
+| 318 | 84 | 0 | 11 | 11 | 0 | 1 | logs, prompt injection, cost tracking | LLM evaluation, observability, and security |
 | 312 | 90 | 0 | 9 | 9 | 0 | 0 | concurrency, autoscaling | LLM serving, GPU, and managed inference |
-| 312 | 84 | 0 | 11 | 11 | 0 | 0 | logs, prompt injection, cost tracking | LLM evaluation, observability, and security |
-| 304 | 100 | 2 | 51 | 51 | 1 | 3 | smoke check, rollback | AI app and model API deployment |
+| 310 | 100 | 2 | 51 | 51 | 1 | 4 | smoke check, rollback | AI app and model API deployment |
 | 242 | 80 | 2 | 160 | 160 | 0 | 1 | maintenance, handoff | AI service pricing, scope, and delivery |

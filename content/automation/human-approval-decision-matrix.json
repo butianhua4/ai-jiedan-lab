@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:31.363Z",
+  "generatedAt": "2026-06-12T16:32:27.754Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -68,7 +68,7 @@
         "Resolve or explicitly accept search weakness: no exact search query appears in description.",
         "Resolve or explicitly accept search weakness: no exact search query appears in headings or body.",
         "Add at least one contextual link to a currently published article before approval.",
-        "Suggested public link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) - keyword overlap: ai, vercel, 部署, 上线, 检查, 新手.",
+        "Suggested public link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) - keyword overlap: ai, vercel, 部署, 工具, 上线, 检查.",
         "Resolve search weakness: no exact search query appears in title.",
         "Resolve search weakness: no exact search query appears in description.",
         "Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.",
@@ -142,7 +142,7 @@
       "remediationReasons": [
         "approval candidate has no current link to a published article",
         "4 search-intent weakness(es) need human copy review",
-        "10 source URL remediation action(s) need human confirmation",
+        "11 source URL remediation action(s) need human confirmation",
         "copydesk warning remediation exists"
       ],
       "repairBeforeApproval": [
@@ -157,7 +157,7 @@
         "Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.",
         "Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent."
       ],
-      "riskChecks": 10,
+      "riskChecks": 12,
       "searchReady": false,
       "searchWeaknesses": [
         "no exact search query appears in title",

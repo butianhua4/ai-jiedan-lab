@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:42.587Z",
+  "generatedAt": "2026-06-12T16:32:39.215Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -97,7 +97,9 @@
         "No instruction to bypass platform, payment, messaging, account, or review rules.",
         "No API key, credential, private customer data, or account detail is included.",
         "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
+        "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
         "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
+        "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.",
         "Prompt examples include input context, output criteria, review rules, and adaptation notes.",
         "Fact-check query before approval: 客服 AI 模型选型 official docs latest.",
         "Fact-check query before approval: 客服 AI 模型选型 official documentation current limits.",
@@ -110,7 +112,7 @@
         "Verify official source before approval: LlamaIndex docs: https://docs.llamaindex.ai.",
         "Verify official source before approval: Hugging Face docs: https://huggingface.co/docs.",
         "Verify official source before approval: OpenAI API docs: https://platform.openai.com/docs.",
-        "Verify official source before approval: Vercel AI SDK docs: https://ai-sdk.dev/docs."
+        "Verify official source before approval: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents."
       ],
       "massSearchThemes": [
         {
@@ -187,6 +189,11 @@
         {
           "kind": "redirected-url",
           "originalUrl": "https://platform.openai.com/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/agents",
           "recommendedCandidate": null
         },
         {
@@ -504,7 +511,7 @@
         "Use the route report as planning evidence only; do not run mark:review or publish from this pack.",
         "Check why this file is not matched in the human approval clearance pack, then decide whether it should enter the next approval queue or remain queued.",
         "Review the existing proposed meta description and accept, rewrite, or reject it explicitly.",
-        "Review the suggested public internal link: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+        "Review the suggested public internal link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Re-open official sources for fast-changing tool, model, API, pricing, limit, and deployment claims before approval.",
         "Verify at least the first official source targets: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval | LangChain docs: https://python.langchain.com/docs | LlamaIndex docs: https://docs.llamaindex.ai.",
         "After explicit human approval only: npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",

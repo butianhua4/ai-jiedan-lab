@@ -1,6 +1,6 @@
 # Content Integrity Audit
 
-Generated at: 2026-06-12T06:12:56.390Z
+Generated at: 2026-06-12T16:31:52.057Z
 
 This report is read-only. It checks article metadata, encoding integrity, and indexing boundaries before review or publishing.
 
@@ -72,7 +72,7 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | Status | Scope | Title chars | Description chars | Issues | Warnings | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | draft | all | 25 | 56 | none | possible mojibake or replacement character | AI 做 PPT 怎么开始：新手从大纲到成稿的流程 | content/blog/ai-ppt-beginner-guide.mdx |
-| draft | all | 16 | 52 | none | possible mojibake or replacement character | AI 工具练习小项目选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
+| draft | all | 14 | 52 | none | possible mojibake or replacement character | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
 | draft | all | 20 | 54 | none | possible mojibake or replacement character | AI 工具推荐怎么选：新手别一开始买太多 | content/blog/ai-tools-recommendation-beginner.mdx |
 | draft | all | 16 | 56 | none | possible mojibake or replacement character | 第一次接 AI 小单前要准备什么 | content/blog/before-first-ai-freelance-job.mdx |
 | published | public | 14 | 88 | none | possible mojibake or replacement character | Codex 怎么做第一个网页 | content/blog/build-first-webpage-with-codex.mdx |
@@ -80,14 +80,14 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | draft | all | 20 | 59 | none | possible mojibake or replacement character | Claude Code 新手使用检查清单 | content/blog/claude-code-beginner-mistakes-checklist.mdx |
 | draft | all | 23 | 68 | none | possible mojibake or replacement character | Claude Code 新手常见错误和修正方法 | content/blog/claude-code-beginner-mistakes-mistakes.mdx |
 | draft | all | 22 | 60 | none | possible mojibake or replacement character | Claude Code 新手使用场景检查清单 | content/blog/claude-code-beginner-use-cases-checklist.mdx |
-| draft | all | 24 | 70 | none | possible mojibake or replacement character | Claude Code 新手适合用在哪些接单场景 | content/blog/claude-code-beginner-use-cases.mdx |
+| draft | all | 24 | 71 | none | possible mojibake or replacement character | Claude Code 新手适合用在哪些项目场景 | content/blog/claude-code-beginner-use-cases.mdx |
 | draft | all | 27 | 70 | none | possible mojibake or replacement character | Claude Code Bug Prompt 常见错误 | content/blog/claude-code-bug-prompt-mistakes.mdx |
 | draft | all | 30 | 74 | none | possible mojibake or replacement character | Claude Code 修 bug 的 prompt 怎么写 | content/blog/claude-code-bug-prompt.mdx |
 | draft | all | 26 | 61 | none | possible mojibake or replacement character | Claude Code 新手运行常用命令时的常见错误 | content/blog/claude-code-common-commands-mistakes.mdx |
-| draft | all | 27 | 72 | none | possible mojibake or replacement character | Claude Code 新手常用命令怎么整理成接单笔记 | content/blog/claude-code-common-commands.mdx |
+| draft | all | 27 | 72 | none | possible mojibake or replacement character | Claude Code 新手常用命令怎么整理成项目笔记 | content/blog/claude-code-common-commands.mdx |
 | draft | all | 24 | 65 | none | possible mojibake or replacement character | Claude Code 排查客户报错时的常见错误 | content/blog/claude-code-error-debug-mistakes.mdx |
 | draft | all | 31 | 75 | none | possible mojibake or replacement character | Claude Code 看 GitHub 文件时的常见范围错误 | content/blog/claude-code-github-file-scope-mistakes.mdx |
-| draft | all | 27 | 75 | none | possible mojibake or replacement character | 哪些小项目任务适合用 Claude Code 辅助接单 | content/blog/claude-code-small-project-tasks.mdx |
+| draft | all | 27 | 75 | none | possible mojibake or replacement character | 哪些小项目任务适合用 Claude Code 辅助项目 | content/blog/claude-code-small-project-tasks.mdx |
 | draft | all | 30 | 48 | none | possible mojibake or replacement character | Claude Code 和 Codex 网页修改新手检查清单 | content/blog/claude-code-vs-codex-web-editing-checklist.mdx |
 | draft | all | 17 | 56 | none | possible mojibake or replacement character | Codex 自动化开发流程常见错误 | content/blog/codex-automation-steps-not-skip-mistakes.mdx |
 | draft | all | 20 | 65 | none | possible mojibake or replacement character | Codex 自动化开发流程哪些步骤不能省 | content/blog/codex-automation-steps-not-skip.mdx |
@@ -115,7 +115,7 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | archived | all | 26 | 100 | none | possible mojibake or replacement character | Codex 部署 Vercel 前检查什么：场景 2 | content/blog/codex-codex-vercel-2-17.mdx |
 | draft | all | 25 | 73 | none | possible mojibake or replacement character | Codex 修改现有网页 UI 常见错误和修复顺序 | content/blog/codex-edit-existing-ui-mistakes.mdx |
 | draft | all | 27 | 50 | none | possible mojibake or replacement character | Codex 是什么，新手第一天应该怎么用：新手检查清单 | content/blog/codex-first-day-guide-checklist.mdx |
-| draft | all | 27 | 62 | none | possible mojibake or replacement character | Codex 怎么做第一个落地页：接单前怎么判断能不能做 | content/blog/codex-first-landing-page-freelance-scope.mdx |
+| draft | all | 27 | 62 | none | possible mojibake or replacement character | Codex 怎么做第一个落地页：使用前怎么判断是否适合 | content/blog/codex-first-landing-page-freelance-scope.mdx |
 | published | public | 27 | 101 | none | possible mojibake or replacement character | Codex 和 GitHub 怎么配合：提交代码前检查 | content/blog/codex-github-before-commit-checklist.mdx |
 | published | public | 13 | 87 | none | possible mojibake or replacement character | Codex 安装失败怎么办 | content/blog/codex-install-failed-beginner-fix.mdx |
 | draft | all | 16 | 60 | none | possible mojibake or replacement character | Codex 安装前置条件检查清单 | content/blog/codex-install-prerequisites-checklist.mdx |
@@ -126,16 +126,16 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 28 | 102 | none | possible mojibake or replacement character | Codex 接 Upwork 小单怎么判断：风险检查清单 | content/blog/codex-upwork-small-job-risk-checklist.mdx |
 | published | public | 27 | 101 | none | possible mojibake or replacement character | Codex 部署 Vercel 前检查什么：上线前清单 | content/blog/codex-vercel-deploy-preflight-checklist.mdx |
 | published | public | 30 | 104 | none | possible mojibake or replacement character | Codex 和 Claude Code 怎么选：新手对比清单 | content/blog/codex-vs-claude-code-beginner-checklist.mdx |
-| draft | all | 13 | 72 | none | possible mojibake or replacement character | 新手如何记录每天的接单练习 | content/blog/daily-ai-freelance-practice-log.mdx |
+| draft | all | 13 | 72 | none | possible mojibake or replacement character | 新手如何记录每天的项目练习 | content/blog/daily-ai-freelance-practice-log.mdx |
 | draft | all | 37 | 69 | none | possible mojibake or replacement character | Dify metadata filtering 怎么用：让知识库检索更可控 | content/blog/dify-metadata-filtering-rag-guide.mdx |
 | published | public | 28 | 72 | none | possible mojibake or replacement character | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
 | draft | all | 35 | 91 | none | possible mojibake or replacement character | git authentication failed 常见错误和解决步骤 | content/blog/git-authentication-failed-fix-mistakes.mdx |
 | draft | all | 30 | 91 | none | possible mojibake or replacement character | git authentication failed 怎么解决 | content/blog/git-authentication-failed-fix.mdx |
 | draft | all | 29 | 91 | none | possible mojibake or replacement character | GitHub Actions build 失败日志检查清单 | content/blog/github-actions-build-log-debug-checklist.mdx |
 | draft | all | 25 | 54 | none | possible mojibake or replacement character | 大模型成本监控怎么做：按用户、功能、模型和项目拆账 | content/blog/llm-cost-monitoring-dashboard-guide.mdx |
-| draft | all | 28 | 72 | none | possible mojibake or replacement character | module not found 接单前怎么判断能不能做 | content/blog/module-not-found-debug-freelance-scope.mdx |
+| draft | all | 28 | 72 | none | possible mojibake or replacement character | module not found 使用前怎么判断是否适合 | content/blog/module-not-found-debug-freelance-scope.mdx |
 | draft | all | 26 | 78 | none | possible mojibake or replacement character | module not found 常见错误和解决步骤 | content/blog/module-not-found-debug-mistakes.mdx |
-| draft | all | 21 | 58 | none | possible mojibake or replacement character | Node 版本不匹配接单前怎么判断能不能做 | content/blog/node-version-mismatch-fix-freelance-scope.mdx |
+| draft | all | 21 | 58 | none | possible mojibake or replacement character | Node 版本不匹配使用前怎么判断是否适合 | content/blog/node-version-mismatch-fix-freelance-scope.mdx |
 | draft | all | 19 | 75 | none | possible mojibake or replacement character | Node 版本不匹配常见错误和解决步骤 | content/blog/node-version-mismatch-fix-mistakes.mdx |
 | draft | all | 14 | 91 | none | possible mojibake or replacement character | Node 版本不匹配怎么排查 | content/blog/node-version-mismatch-fix.mdx |
 | draft | all | 33 | 73 | none | possible mojibake or replacement character | permission denied 报错新手怎么处理：新手检查清单 | content/blog/permission-denied-fix-checklist.mdx |
@@ -143,7 +143,7 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | draft | all | 26 | 59 | none | possible mojibake or replacement character | RAG 提示词注入怎么防：知识库不能盲目信任文档内容 | content/blog/rag-prompt-injection-defense-guide.mdx |
 | draft | all | 41 | 95 | none | possible mojibake or replacement character | Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门 | content/blog/ray-serve-llm-deployment-guide.mdx |
 | draft | all | 26 | 68 | none | possible mojibake or replacement character | TypeScript 报错新手怎么排查：新手检查清单 | content/blog/typescript-error-beginner-debug-checklist.mdx |
-| draft | all | 31 | 71 | none | possible mojibake or replacement character | TypeScript 报错新手怎么排查：接单前怎么判断能不能做 | content/blog/typescript-error-beginner-debug-freelance-scope.mdx |
+| draft | all | 31 | 71 | none | possible mojibake or replacement character | TypeScript 报错新手怎么排查：使用前怎么判断是否适合 | content/blog/typescript-error-beginner-debug-freelance-scope.mdx |
 | draft | all | 24 | 62 | none | possible mojibake or replacement character | Upwork 新手怎么避免假作品集：新手检查清单 | content/blog/upwork-avoid-fake-portfolio-checklist.mdx |
 | draft | all | 17 | 62 | none | possible mojibake or replacement character | Upwork 新手怎么避免假作品集 | content/blog/upwork-avoid-fake-portfolio.mdx |
 | draft | all | 24 | 69 | none | possible mojibake or replacement character | Upwork 客户不确认需求怎么办：新手检查清单 | content/blog/upwork-client-no-confirmation-checklist.mdx |

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:14.917Z",
+  "generatedAt": "2026-06-12T16:32:10.881Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -26,7 +26,7 @@
       "https://openai.github.io/openai-agents-js/guides/sandbox-agents/memory/",
       "https://docs.langchain.com/oss/python/deepagents/long-term-memory"
     ],
-    "massMatrixGeneratedAt": "2026-06-12T06:13:11.496Z",
+    "massMatrixGeneratedAt": "2026-06-12T16:32:07.424Z",
     "massMatrixSummary": {
       "commandBoundaries": 10,
       "deploymentBridgedThemes": 6,
@@ -47,7 +47,7 @@
       "unsafeItems": 0,
       "waves": 3
     },
-    "promptModuleGeneratedAt": "2026-06-12T06:13:14.351Z",
+    "promptModuleGeneratedAt": "2026-06-12T16:32:10.383Z",
     "promptModuleSummary": {
       "humanGatedItems": 12,
       "items": 12,
@@ -65,7 +65,7 @@
       "unsafeItems": 0,
       "zeroPublicCoverageItems": 12
     },
-    "deploymentReviewGeneratedAt": "2026-06-12T06:13:11.982Z",
+    "deploymentReviewGeneratedAt": "2026-06-12T16:32:07.936Z",
     "deploymentReviewSummary": {
       "deploymentPublicArticles": 3,
       "duplicateFiles": 0,
@@ -1409,9 +1409,9 @@
         "把客户输入拆成目标、预算、交付物、时间、风险。",
         "输出不直接替用户承诺成交，只生成可复核草稿。",
         "将报价依据、范围边界、增项条件写清楚。",
-        "可以和现有接单报价、Proposal 工具形成内链。"
+        "可以和现有项目报价、Proposal 工具形成内链。"
       ],
-      "audience": "销售、BD、自由职业者、咨询顾问和接单人",
+      "audience": "销售、BD、自由职业者和咨询顾问",
       "commandBoundary": {
         "markReviewAfterHumanApproval": "npm run mark:review -- --confirm-human <file>",
         "publishConfirm": "not-included",
@@ -1430,7 +1430,7 @@
         "content/blog/dify-workflow-error-handling-guide.mdx",
         "content/blog/dify-workflow-vs-agent-guide.mdx"
       ],
-      "demandReason": "写报价、写方案、写跟进邮件直接对应接单变现，是项目商业目标里的强入口。",
+      "demandReason": "写报价、写方案、写跟进邮件直接对应项目转化，是项目商业目标里的强入口。",
       "deploymentBridgeFiles": [
         "content/blog/ai-automation-project-pricing-scope-guide.mdx"
       ],
@@ -1439,7 +1439,7 @@
         "销售",
         "报价",
         "方案",
-        "接单",
+        "项目",
         "proposal",
         "邮件",
         "客户"
@@ -1450,7 +1450,7 @@
       ],
       "promptTemplates": [
         {
-          "copyPrompt": "你是一个面向「销售、BD、自由职业者、咨询顾问和接单人」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「需求澄清」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 1 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
+          "copyPrompt": "你是一个面向「销售、BD、自由职业者和咨询顾问」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「需求澄清」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 1 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
           "inputFields": [
             "目标",
             "背景资料",
@@ -1483,7 +1483,7 @@
           "useCase": "需求澄清"
         },
         {
-          "copyPrompt": "你是一个面向「销售、BD、自由职业者、咨询顾问和接单人」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「报价解释」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 2 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
+          "copyPrompt": "你是一个面向「销售、BD、自由职业者和咨询顾问」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「报价解释」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 2 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
           "inputFields": [
             "目标",
             "背景资料",
@@ -1516,7 +1516,7 @@
           "useCase": "报价解释"
         },
         {
-          "copyPrompt": "你是一个面向「销售、BD、自由职业者、咨询顾问和接单人」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「方案大纲」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 3 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
+          "copyPrompt": "你是一个面向「销售、BD、自由职业者和咨询顾问」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「方案大纲」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 3 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
           "inputFields": [
             "目标",
             "背景资料",
@@ -1549,7 +1549,7 @@
           "useCase": "方案大纲"
         },
         {
-          "copyPrompt": "你是一个面向「销售、BD、自由职业者、咨询顾问和接单人」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「跟进邮件」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 4 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
+          "copyPrompt": "你是一个面向「销售、BD、自由职业者和咨询顾问」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「跟进邮件」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 4 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
           "inputFields": [
             "目标",
             "背景资料",
@@ -1582,7 +1582,7 @@
           "useCase": "跟进邮件"
         },
         {
-          "copyPrompt": "你是一个面向「销售、BD、自由职业者、咨询顾问和接单人」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「异议处理」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 5 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
+          "copyPrompt": "你是一个面向「销售、BD、自由职业者和咨询顾问」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「异议处理」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 5 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
           "inputFields": [
             "目标",
             "背景资料",
@@ -1628,7 +1628,7 @@
         "ChatGPT 写报价单",
         "AI 方案书提示词",
         "客户跟进邮件 prompt",
-        "自由职业接单报价提示词",
+        "自由职业项目报价提示词",
         "AI 写商业 proposal",
         "销售异议处理提示词",
         "AI 客户需求分析",
@@ -2191,8 +2191,8 @@
         "RAG, knowledge base, and agent memory",
         "Local and open-source model deployment",
         "Dify, n8n, Flowise, and no-code AI automation",
-        "LLM serving, GPU, and managed inference",
-        "LLM evaluation, observability, and security"
+        "LLM evaluation, observability, and security",
+        "LLM serving, GPU, and managed inference"
       ],
       "title": "AI Agent 部署、工具调用和上线排错提示词",
       "trafficClaim": "not-included",
@@ -2464,8 +2464,8 @@
         "RAG, knowledge base, and agent memory",
         "Local and open-source model deployment",
         "Dify, n8n, Flowise, and no-code AI automation",
-        "LLM serving, GPU, and managed inference",
-        "LLM evaluation, observability, and security"
+        "LLM evaluation, observability, and security",
+        "LLM serving, GPU, and managed inference"
       ],
       "title": "大模型部署、本地模型和 API 排错提示词",
       "trafficClaim": "not-included",
@@ -2742,8 +2742,8 @@
         "Local and open-source model deployment",
         "Dify, n8n, Flowise, and no-code AI automation",
         "Business AI workflows and SOP templates",
-        "LLM serving, GPU, and managed inference",
-        "LLM evaluation, observability, and security"
+        "LLM evaluation, observability, and security",
+        "LLM serving, GPU, and managed inference"
       ],
       "title": "Agent 记忆、知识库和 RAG 提示词",
       "trafficClaim": "not-included",
@@ -4055,9 +4055,9 @@
         "把客户输入拆成目标、预算、交付物、时间、风险。",
         "输出不直接替用户承诺成交，只生成可复核草稿。",
         "将报价依据、范围边界、增项条件写清楚。",
-        "可以和现有接单报价、Proposal 工具形成内链。"
+        "可以和现有项目报价、Proposal 工具形成内链。"
       ],
-      "audience": "销售、BD、自由职业者、咨询顾问和接单人",
+      "audience": "销售、BD、自由职业者和咨询顾问",
       "commandBoundary": {
         "markReviewAfterHumanApproval": "npm run mark:review -- --confirm-human <file>",
         "publishConfirm": "not-included",
@@ -4076,7 +4076,7 @@
         "content/blog/dify-workflow-error-handling-guide.mdx",
         "content/blog/dify-workflow-vs-agent-guide.mdx"
       ],
-      "demandReason": "写报价、写方案、写跟进邮件直接对应接单变现，是项目商业目标里的强入口。",
+      "demandReason": "写报价、写方案、写跟进邮件直接对应项目转化，是项目商业目标里的强入口。",
       "deploymentBridgeFiles": [
         "content/blog/ai-automation-project-pricing-scope-guide.mdx"
       ],
@@ -4085,7 +4085,7 @@
         "销售",
         "报价",
         "方案",
-        "接单",
+        "项目",
         "proposal",
         "邮件",
         "客户"
@@ -4096,7 +4096,7 @@
       ],
       "promptTemplates": [
         {
-          "copyPrompt": "你是一个面向「销售、BD、自由职业者、咨询顾问和接单人」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「需求澄清」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 1 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
+          "copyPrompt": "你是一个面向「销售、BD、自由职业者和咨询顾问」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「需求澄清」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 1 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
           "inputFields": [
             "目标",
             "背景资料",
@@ -4129,7 +4129,7 @@
           "useCase": "需求澄清"
         },
         {
-          "copyPrompt": "你是一个面向「销售、BD、自由职业者、咨询顾问和接单人」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「报价解释」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 2 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
+          "copyPrompt": "你是一个面向「销售、BD、自由职业者和咨询顾问」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「报价解释」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 2 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
           "inputFields": [
             "目标",
             "背景资料",
@@ -4162,7 +4162,7 @@
           "useCase": "报价解释"
         },
         {
-          "copyPrompt": "你是一个面向「销售、BD、自由职业者、咨询顾问和接单人」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「方案大纲」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 3 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
+          "copyPrompt": "你是一个面向「销售、BD、自由职业者和咨询顾问」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「方案大纲」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 3 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
           "inputFields": [
             "目标",
             "背景资料",
@@ -4195,7 +4195,7 @@
           "useCase": "方案大纲"
         },
         {
-          "copyPrompt": "你是一个面向「销售、BD、自由职业者、咨询顾问和接单人」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「跟进邮件」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 4 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
+          "copyPrompt": "你是一个面向「销售、BD、自由职业者和咨询顾问」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「跟进邮件」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 4 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
           "inputFields": [
             "目标",
             "背景资料",
@@ -4228,7 +4228,7 @@
           "useCase": "跟进邮件"
         },
         {
-          "copyPrompt": "你是一个面向「销售、BD、自由职业者、咨询顾问和接单人」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「异议处理」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 5 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
+          "copyPrompt": "你是一个面向「销售、BD、自由职业者和咨询顾问」的 AI 工作流助手，现在要处理「销售话术、报价和方案书 AI 提示词」中的「异议处理」场景。\n请只使用我提供的事实，不要编造案例、数字、客户承诺、搜索量、排名、收入或转化结果；缺失信息统一写 UNKNOWN。\n输入变量：{{目标}}、{{背景资料}}、{{受众}}、{{已有内容或数据}}、{{限制条件}}、{{期望格式}}。\n请输出这些模块：结论草稿、执行步骤、风险和缺失信息、人工复核点、下一步追问。\n搜索意图参考：AI 销售话术提示词；ChatGPT 写报价单；AI 方案书提示词；客户跟进邮件 prompt。\n质量要求：只使用用户输入的事实，不补编数据、案例、报价、排名、法律或医学结论。 缺少信息时写 UNKNOWN，并列出需要补充的问题。 输出必须可扫描，包含标题、列表、风险、下一步。 涉及客户承诺、财务、法务、招聘筛选、医疗健康或生产部署时必须标记人工复核。\n风险边界：Do not claim measured traffic, rankings, revenue, conversion lift, or guaranteed outcomes. Ask for missing facts instead of inventing them. Keep every article candidate draft/noindex/humanReviewRequired until explicit approval. Stop before mark:review and stop before publish.\n这是第 5 个模板，最终内容只能作为人工审核文章素材，不能自动发布。",
           "inputFields": [
             "目标",
             "背景资料",
@@ -4274,7 +4274,7 @@
         "ChatGPT 写报价单",
         "AI 方案书提示词",
         "客户跟进邮件 prompt",
-        "自由职业接单报价提示词",
+        "自由职业项目报价提示词",
         "AI 写商业 proposal",
         "销售异议处理提示词",
         "AI 客户需求分析",
@@ -4837,8 +4837,8 @@
         "RAG, knowledge base, and agent memory",
         "Local and open-source model deployment",
         "Dify, n8n, Flowise, and no-code AI automation",
-        "LLM serving, GPU, and managed inference",
-        "LLM evaluation, observability, and security"
+        "LLM evaluation, observability, and security",
+        "LLM serving, GPU, and managed inference"
       ],
       "title": "AI Agent 部署、工具调用和上线排错提示词",
       "trafficClaim": "not-included",
@@ -5110,8 +5110,8 @@
         "RAG, knowledge base, and agent memory",
         "Local and open-source model deployment",
         "Dify, n8n, Flowise, and no-code AI automation",
-        "LLM serving, GPU, and managed inference",
-        "LLM evaluation, observability, and security"
+        "LLM evaluation, observability, and security",
+        "LLM serving, GPU, and managed inference"
       ],
       "title": "大模型部署、本地模型和 API 排错提示词",
       "trafficClaim": "not-included",
@@ -5388,8 +5388,8 @@
         "Local and open-source model deployment",
         "Dify, n8n, Flowise, and no-code AI automation",
         "Business AI workflows and SOP templates",
-        "LLM serving, GPU, and managed inference",
-        "LLM evaluation, observability, and security"
+        "LLM evaluation, observability, and security",
+        "LLM serving, GPU, and managed inference"
       ],
       "title": "Agent 记忆、知识库和 RAG 提示词",
       "trafficClaim": "not-included",

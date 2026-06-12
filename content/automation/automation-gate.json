@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:55.602Z",
+  "generatedAt": "2026-06-12T16:32:53.809Z",
   "ok": true,
   "summary": {
     "checks": 197,
@@ -135,7 +135,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=211, unsafeClaims=0, watchMentions=3792"
+      "detail": "filesScanned=219, unsafeClaims=0, watchMentions=3828"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -195,12 +195,12 @@
     {
       "name": "source replacement decision pack is read-only and mirrors remediation counts",
       "ok": true,
-      "detail": "decisions=113, remediation=19, failed=1/1, redirected=112/18"
+      "detail": "decisions=114, remediation=19, failed=1/1, redirected=113/18"
     },
     {
       "name": "source replacement decision pack keeps file-level decisions human-gated",
       "ok": true,
-      "detail": "unsafe=0, gated=113, recommended=1, official=1"
+      "detail": "unsafe=0, gated=114, recommended=1, official=1"
     },
     {
       "name": "review action board is read-only and covers active review queues",
@@ -265,7 +265,7 @@
     {
       "name": "autopilot source verification brief covers approval packet",
       "ok": true,
-      "detail": "items=3, reachable=25, unsafe=0"
+      "detail": "items=3, reachable=26, unsafe=0"
     },
     {
       "name": "autopilot source verification brief provides source-backed review tasks",
@@ -290,7 +290,7 @@
     {
       "name": "autopilot approval remediation pack has actionable human fixes",
       "ok": true,
-      "detail": "commands=3, links=3, search=3, source=3, sourceUrlFixes=3/34"
+      "detail": "commands=3, links=3, search=3, source=3, sourceUrlFixes=3/35"
     },
     {
       "name": "human approval decision matrix covers approval packet",
@@ -335,7 +335,7 @@
     {
       "name": "human approval repair session pack covers current repair progress",
       "ok": true,
-      "detail": "files=3, actions=192, sourceUrl=62, sourceTargets=18"
+      "detail": "files=3, actions=194, sourceUrl=63, sourceTargets=19"
     },
     {
       "name": "human approval repair session pack stays manual and non-publishing",
@@ -480,7 +480,7 @@
     {
       "name": "review optimization brief has actionable copydesk guidance",
       "ok": true,
-      "detail": "withAction=16, missingPublicLinkItems=15, exactQueryWeak=4"
+      "detail": "withAction=16, missingPublicLinkItems=15, exactQueryWeak=3"
     },
     {
       "name": "search snippet readiness audit is read-only and covers public plus expansion items",
@@ -630,12 +630,12 @@
     {
       "name": "search intent lane map includes sources, review focus, and safe candidates",
       "ok": true,
-      "detail": "readyDraftMatches=233, noPublicCoverage=10, notReadyMatched=355"
+      "detail": "readyDraftMatches=233, noPublicCoverage=10, notReadyMatched=321"
     },
     {
       "name": "search intent approval packet is read-only and covers current wave plus next gaps",
       "ok": true,
-      "detail": "currentWave=3, nextGap=6, nextGapLanes=3"
+      "detail": "currentWave=3, nextGap=6, nextGapLanes=4"
     },
     {
       "name": "search intent approval packet has no unsafe items and includes review context",
@@ -645,7 +645,7 @@
     {
       "name": "search intent wave planner is read-only and continuous",
       "ok": true,
-      "detail": "waves=4, items=12, files=12, lanes=6"
+      "detail": "waves=4, items=12, files=12, lanes=7"
     },
     {
       "name": "search intent wave planner keeps all items safe for manual review",
@@ -655,27 +655,27 @@
     {
       "name": "search query coverage is read-only and matches planned waves",
       "ok": true,
-      "detail": "items=12, waves=4, files=12, lanes=6"
+      "detail": "items=12, waves=4, files=12, lanes=7"
     },
     {
       "name": "search query coverage has broad user-search variants",
       "ok": true,
-      "detail": "uniqueQueries=360, ready=12, unsafe=0"
+      "detail": "uniqueQueries=365, ready=12, unsafe=0"
     },
     {
       "name": "search query match audit is read-only and covers query plan",
       "ok": true,
-      "detail": "items=12, ready=12, warnings=8"
+      "detail": "items=12, ready=12, warnings=7"
     },
     {
       "name": "search query match audit has no blocking search-alignment issues",
       "ok": true,
-      "detail": "blocking=0, averageFamilies=7"
+      "detail": "blocking=0, averageFamilies=6.92"
     },
     {
       "name": "search demand intake is read-only and covers broad user-search lanes",
       "ok": true,
-      "detail": "lanes=8, readyLanes=8, readyFiles=45, unsafe=0"
+      "detail": "lanes=8, readyLanes=8, readyFiles=43, unsafe=0"
     },
     {
       "name": "search demand intake packages sources, formats, and manual review boundaries",
@@ -710,7 +710,7 @@
     {
       "name": "broad search demand map links demand, sources, and planned review waves",
       "ok": true,
-      "detail": "officialSources=13, reviewPackMatches=4, waveMatches=24, readyMatches=417"
+      "detail": "officialSources=13, reviewPackMatches=4, waveMatches=22, readyMatches=417"
     },
     {
       "name": "mass AI search action matrix is read-only and covers broad themes",

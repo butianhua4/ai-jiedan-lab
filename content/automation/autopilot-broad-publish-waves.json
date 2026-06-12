@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:36.877Z",
+  "generatedAt": "2026-06-12T16:32:33.423Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -10,7 +10,7 @@
   },
   "sourceEvidence": {
     "projectStatusPublicPublished": 15,
-    "triageGeneratedAt": "2026-06-12T06:13:36.401Z",
+    "triageGeneratedAt": "2026-06-12T16:32:32.937Z",
     "triageGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -154,7 +154,7 @@
         "reviewOrder": 1
       },
       {
-        "articleUpdatedAt": "2026-06-06",
+        "articleUpdatedAt": "2026-06-12",
         "cluster": "Agent 部署、工具调用和生产安全",
         "commandBoundary": {
           "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
@@ -470,7 +470,7 @@
           "reviewOrder": 1
         },
         {
-          "articleUpdatedAt": "2026-06-06",
+          "articleUpdatedAt": "2026-06-12",
           "cluster": "Agent 部署、工具调用和生产安全",
           "commandBoundary": {
             "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
@@ -707,7 +707,7 @@
       "humanApprovalRequired": true,
       "items": [
         {
-          "articleUpdatedAt": "2026-06-06",
+          "articleUpdatedAt": "2026-06-12",
           "cluster": "RAG、知识库、向量数据库和引用溯源",
           "commandBoundary": {
             "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
@@ -732,8 +732,8 @@
             "Apply review focus: 把 RAG、微调、提示词模板区分清楚.",
             "Apply review focus: 必须写明引用、来源、权限和失败兜底.",
             "Apply review focus: 不要把 demo 成功写成生产质量保证.",
-            "Open source target and verify current guidance: https://platform.openai.com/docs/guides/retrieval.",
-            "Open source target and verify current guidance: https://platform.openai.com/docs/guides/prompt-engineering."
+            "Open source target and verify current guidance: https://platform.openai.com/docs.",
+            "Open source target and verify current guidance: https://ai-sdk.dev/docs."
           ],
           "publicMatches": 0,
           "readyForHumanFreshnessReview": true,
@@ -782,16 +782,17 @@
             }
           ],
           "sourceTargets": [
+            "https://platform.openai.com/docs",
+            "https://ai-sdk.dev/docs",
             "https://platform.openai.com/docs/guides/retrieval",
             "https://platform.openai.com/docs/guides/prompt-engineering",
             "https://python.langchain.com/docs",
             "https://docs.llamaindex.ai",
             "https://huggingface.co/docs",
-            "https://platform.openai.com/docs",
-            "https://ai-sdk.dev/docs",
             "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
             "https://arxiv.org/abs/2603.10700",
-            "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+            "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+            "https://platform.openai.com/docs/guides/agents"
           ],
           "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
           "reviewOrder": 1
@@ -983,18 +984,18 @@
         "Dify 部署教程"
       ],
       "sourceTargets": [
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://python.langchain.com/docs",
         "https://docs.llamaindex.ai",
         "https://huggingface.co/docs",
-        "https://platform.openai.com/docs",
-        "https://ai-sdk.dev/docs",
         "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
         "https://arxiv.org/abs/2603.10700",
         "https://www.pinecone.io/learn/retrieval-augmented-generation/",
-        "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
-        "https://sensara.io/prompts/"
+        "https://platform.openai.com/docs/guides/agents",
+        "https://ai-prompts-pro.com/blog/ai-prompt-templates-business"
       ],
       "theme": "RAG、知识库、向量数据库和引用溯源 + 全行业 AI 提示词和工作流模板 + Dify、n8n、Coze、Flowise、MCP 自动化部署",
       "unsafeItems": 0,
@@ -1357,7 +1358,7 @@
       "humanApprovalRequired": true,
       "items": [
         {
-          "articleUpdatedAt": "2026-06-06",
+          "articleUpdatedAt": "2026-06-12",
           "cluster": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
           "commandBoundary": {
             "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human",
@@ -1441,7 +1442,7 @@
           "reviewOrder": 1
         },
         {
-          "articleUpdatedAt": "2026-06-06",
+          "articleUpdatedAt": "2026-06-12",
           "cluster": "全行业 AI 提示词和工作流模板",
           "commandBoundary": {
             "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
@@ -2462,7 +2463,7 @@
           "reviewOrder": 2
         },
         {
-          "articleUpdatedAt": "2026-06-06",
+          "articleUpdatedAt": "2026-06-12",
           "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
           "commandBoundary": {
             "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",

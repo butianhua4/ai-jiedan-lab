@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:01.778Z",
+  "generatedAt": "2026-06-12T16:31:57.500Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This backlog is based on local content inventory and broad search intent themes only. It does not claim traffic, impressions, keyword volume, or ranking data."
@@ -40,7 +40,7 @@
           "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
         },
         {
-          "category": "接单报价",
+          "category": "项目报价",
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "primaryKeyword": "AI 自动化项目报价",
           "publishBatch": 33,
@@ -110,7 +110,7 @@
           "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
         },
         {
-          "category": "接单报价",
+          "category": "项目报价",
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "primaryKeyword": "AI 自动化项目报价",
           "publishBatch": 33,
@@ -294,7 +294,7 @@
       "why": "本地模型部署搜索需求强，但信息变化快，必须保留人工事实核对。"
     },
     {
-      "audience": "正在做自动化接单、内部工具和 SaaS 原型的人",
+      "audience": "正在做自动化项目、内部工具和 SaaS 原型的人",
       "cluster": "No-code AI automation",
       "draftMatches": 22,
       "gapScore": 258,
@@ -303,7 +303,7 @@
       "publicMatches": 0,
       "readyCandidates": [
         {
-          "category": "接单报价",
+          "category": "项目报价",
           "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "primaryKeyword": "AI 自动化项目报价",
           "publishBatch": 33,

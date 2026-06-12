@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:09.678Z",
+  "generatedAt": "2026-06-12T16:32:05.580Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,7 +10,7 @@
     "stopBefore": "All commands are manual-only and require explicit human approval."
   },
   "sourceEvidence": {
-    "intakeGeneratedAt": "2026-06-12T06:13:09.208Z",
+    "intakeGeneratedAt": "2026-06-12T16:32:05.096Z",
     "intakeGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -26,7 +26,7 @@
       "lanesWithoutPublicCoverage": 6,
       "lanesWithReadyCandidates": 8,
       "officialSourceTargets": 29,
-      "readyCandidateFiles": 45,
+      "readyCandidateFiles": 43,
       "reviewQueueMatches": 33,
       "searchQueries": 81,
       "unsafeLanes": 0
@@ -46,7 +46,7 @@
     "itemsWithSearchQueries": 16,
     "lanes": 8,
     "readyItems": 16,
-    "reviewQueueMatchedItems": 15,
+    "reviewQueueMatchedItems": 14,
     "safeDraftItems": 16,
     "unsafeItems": 0,
     "zeroPublicLaneItems": 12
@@ -169,8 +169,8 @@
       "priorityScore": 689,
       "publicInternalLinkSuggestion": {
         "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
-        "reason": "keyword overlap: ai, vercel, 部署, 上线, 检查, 新手",
-        "score": 35,
+        "reason": "keyword overlap: ai, vercel, 部署, 工具, 上线, 检查",
+        "score": 39,
         "slug": "codex-vercel-deploy-preflight-checklist",
         "title": "Codex 部署 Vercel 前检查什么：上线前清单",
         "url": "/blog/codex-vercel-deploy-preflight-checklist"
@@ -232,7 +232,7 @@
         "Check the article directly answers the primary search phrase: AI Agent deployment tutorial.",
         "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
         "Confirm all commands, credentials, API keys, and customer data examples are safe.",
-        "Approve or replace internal link suggestion: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+        "Approve or replace internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
         "Publishing remains separate and requires explicit approval."
       ],
@@ -251,12 +251,12 @@
       ],
       "priorityScore": 689,
       "publicInternalLinkSuggestion": {
-        "file": "content/blog/build-first-webpage-with-codex.mdx",
-        "reason": "keyword overlap: ai, 怎么, 一个, 么做, 接单",
-        "score": 23,
-        "slug": "build-first-webpage-with-codex",
-        "title": "Codex 怎么做第一个网页",
-        "url": "/blog/build-first-webpage-with-codex"
+        "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+        "reason": "keyword overlap: ai, 怎么, 代码, 工具, 具实, 实践",
+        "score": 31,
+        "slug": "codex-code-review-delivery-checklist",
+        "title": "Codex 生成代码后怎么审核：交付前检查清单",
+        "url": "/blog/codex-code-review-delivery-checklist"
       },
       "publicMatches": 0,
       "readyForHumanReview": true,
@@ -645,7 +645,7 @@
         "Check the article directly answers the primary search phrase: RAG knowledge base tutorial.",
         "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
         "Confirm all commands, credentials, API keys, and customer data examples are safe.",
-        "Approve or replace internal link suggestion: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Approve or replace internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
         "Publishing remains separate and requires explicit approval."
       ],
@@ -664,12 +664,12 @@
       ],
       "priorityScore": 662,
       "publicInternalLinkSuggestion": {
-        "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
-        "reason": "keyword overlap: 报价, 项目, 目怎, 怎么, 么报, 范围",
-        "score": 40,
-        "slug": "first-upwork-project-pricing-checklist",
-        "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
-        "url": "/blog/first-upwork-project-pricing-checklist"
+        "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+        "reason": "keyword overlap: ai, 怎么, 工具, 具实, 实践, 交付",
+        "score": 43,
+        "slug": "codex-code-review-delivery-checklist",
+        "title": "Codex 生成代码后怎么审核：交付前检查清单",
+        "url": "/blog/codex-code-review-delivery-checklist"
       },
       "publicMatches": 0,
       "readyForHumanReview": true,
@@ -748,7 +748,7 @@
       "priorityScore": 662,
       "publicInternalLinkSuggestion": {
         "file": "content/blog/build-first-webpage-with-codex.mdx",
-        "reason": "keyword overlap: ai, 怎么, 接单, 第一, 一个",
+        "reason": "keyword overlap: ai, 怎么, 工具, 第一, 一个",
         "score": 23,
         "slug": "build-first-webpage-with-codex",
         "title": "Codex 怎么做第一个网页",
@@ -914,8 +914,8 @@
       "priorityScore": 642,
       "publicInternalLinkSuggestion": {
         "file": "content/blog/codex-code-review-delivery-checklist.mdx",
-        "reason": "keyword overlap: ai, 怎么, 审核, 生成, 交付",
-        "score": 23,
+        "reason": "keyword overlap: ai, 怎么, 工具, 审核, 生成, 交付",
+        "score": 27,
         "slug": "codex-code-review-delivery-checklist",
         "title": "Codex 生成代码后怎么审核：交付前检查清单",
         "url": "/blog/codex-code-review-delivery-checklist"
@@ -1060,7 +1060,7 @@
         "Check the article directly answers the primary search phrase: LLM observability tutorial.",
         "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
         "Confirm all commands, credentials, API keys, and customer data examples are safe.",
-        "Approve or replace internal link suggestion: 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist).",
+        "Approve or replace internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/agent-tool-permission-safety-guide.mdx --confirm-human",
         "Publishing remains separate and requires explicit approval."
       ],
@@ -1079,12 +1079,12 @@
       ],
       "priorityScore": 609,
       "publicInternalLinkSuggestion": {
-        "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
-        "reason": "keyword overlap: 怎么, 新手, 指南, 项目, 一个, 自由",
-        "score": 28,
-        "slug": "first-upwork-project-pricing-checklist",
-        "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
-        "url": "/blog/first-upwork-project-pricing-checklist"
+        "file": "content/blog/codex-code-review-delivery-checklist.mdx",
+        "reason": "keyword overlap: ai, 工具, 怎么, 生成, 清单, 新手",
+        "score": 31,
+        "slug": "codex-code-review-delivery-checklist",
+        "title": "Codex 生成代码后怎么审核：交付前检查清单",
+        "url": "/blog/codex-code-review-delivery-checklist"
       },
       "publicMatches": 0,
       "readyForHumanReview": true,
@@ -1198,8 +1198,8 @@
     },
     {
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/product-manager-ai-prompts-guide.mdx",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/agent-memory-postgres-schema-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/agent-memory-postgres-schema-guide.mdx",
         "publishConfirm": "not-included",
         "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
       },
@@ -1210,8 +1210,8 @@
         "maintenance scope"
       ],
       "factCheckQueries": [
-        "产品经理 AI 提示词 official docs latest",
-        "产品经理 AI 提示词 current limitations",
+        "Agent 记忆数据库设计 official docs latest",
+        "Agent 记忆数据库设计 current limitations",
         "AI automation project pricing official docs latest",
         "AI agent project scope official docs latest",
         "RAG project quote official docs latest",
@@ -1219,7 +1219,7 @@
         "AI deployment proposal template official docs latest",
         "AI service delivery checklist official docs latest"
       ],
-      "file": "content/blog/product-manager-ai-prompts-guide.mdx",
+      "file": "content/blog/agent-memory-postgres-schema-guide.mdx",
       "humanReviewChecklist": [
         "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
         "Verify source targets for lane: ai-service-pricing-delivery.",
@@ -1227,7 +1227,7 @@
         "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
         "Confirm all commands, credentials, API keys, and customer data examples are safe.",
         "Add one relevant public internal link or document why no link is appropriate.",
-        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/agent-memory-postgres-schema-guide.mdx --confirm-human",
         "Publishing remains separate and requires explicit approval."
       ],
       "lane": "ai-service-pricing-delivery",
@@ -1243,7 +1243,7 @@
         "Dify docs: https://docs.dify.ai/",
         "n8n docs: https://docs.n8n.io/"
       ],
-      "priorityScore": 462,
+      "priorityScore": 463,
       "publicInternalLinkSuggestion": null,
       "publicMatches": 4,
       "readyForHumanReview": true,
@@ -1266,84 +1266,7 @@
         "reachableUrls": []
       },
       "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
-      "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
-      "userProblem": "This lane turns search demand into services without pretending the site already has traffic or revenue proof.",
-      "warningIssues": [
-        "warning: source health has no per-file reachable URL list; verify official source targets manually",
-        "warning: no public internal-link suggestion found; add or explicitly reject one during human review"
-      ]
-    },
-    {
-      "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-        "publishConfirm": "not-included",
-        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
-      },
-      "contentFormats": [
-        "pricing checklist",
-        "proposal template",
-        "acceptance criteria",
-        "maintenance scope"
-      ],
-      "factCheckQueries": [
-        "BentoML LLM 部署 official docs latest",
-        "BentoML LLM 部署 current limitations",
-        "AI automation project pricing official docs latest",
-        "AI agent project scope official docs latest",
-        "RAG project quote official docs latest",
-        "Dify n8n project pricing official docs latest",
-        "AI deployment proposal template official docs latest",
-        "AI service delivery checklist official docs latest"
-      ],
-      "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-      "humanReviewChecklist": [
-        "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
-        "Verify source targets for lane: ai-service-pricing-delivery.",
-        "Check the article directly answers the primary search phrase: AI automation project pricing.",
-        "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
-        "Confirm all commands, credentials, API keys, and customer data examples are safe.",
-        "Add one relevant public internal link or document why no link is appropriate.",
-        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human",
-        "Publishing remains separate and requires explicit approval."
-      ],
-      "lane": "ai-service-pricing-delivery",
-      "manualReviewFocus": [
-        "Define scope, deliverables, acceptance, maintenance, and handoff.",
-        "Do not promise traffic, revenue, ranking, or model accuracy.",
-        "Tie packages to low-risk implementation work.",
-        "Add client-side approvals for account access, data, and production changes."
-      ],
-      "officialSourceTargets": [
-        "OpenAI API docs: https://platform.openai.com/docs",
-        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-        "Dify docs: https://docs.dify.ai/",
-        "n8n docs: https://docs.n8n.io/"
-      ],
-      "priorityScore": 460,
-      "publicInternalLinkSuggestion": null,
-      "publicMatches": 4,
-      "readyForHumanReview": true,
-      "reviewQueueMatched": true,
-      "safeDraft": true,
-      "searchQueries": [
-        "AI automation project pricing",
-        "AI agent project scope",
-        "RAG project quote",
-        "Dify n8n project pricing",
-        "AI deployment proposal template",
-        "AI service delivery checklist",
-        "AI 自动化项目报价",
-        "AI Agent 项目报价",
-        "RAG 项目 报价",
-        "AI 项目验收清单"
-      ],
-      "sourceHealth": {
-        "hasReachableSource": true,
-        "reachableUrls": []
-      },
-      "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
-      "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+      "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
       "userProblem": "This lane turns search demand into services without pretending the site already has traffic or revenue proof.",
       "warningIssues": [
         "warning: source health has no per-file reachable URL list; verify official source targets manually",
@@ -1431,6 +1354,83 @@
       "userProblem": "API integration is a beginner search lane and a production risk lane at the same time.",
       "warningIssues": [
         "warning: source health has no per-file reachable URL list; verify official source targets manually"
+      ]
+    },
+    {
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/product-manager-ai-prompts-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."
+      },
+      "contentFormats": [
+        "pricing checklist",
+        "proposal template",
+        "acceptance criteria",
+        "maintenance scope"
+      ],
+      "factCheckQueries": [
+        "产品经理 AI 提示词 official docs latest",
+        "产品经理 AI 提示词 current limitations",
+        "AI automation project pricing official docs latest",
+        "AI agent project scope official docs latest",
+        "RAG project quote official docs latest",
+        "Dify n8n project pricing official docs latest",
+        "AI deployment proposal template official docs latest",
+        "AI service delivery checklist official docs latest"
+      ],
+      "file": "content/blog/product-manager-ai-prompts-guide.mdx",
+      "humanReviewChecklist": [
+        "Confirm the article is still draft, noindex=true, and humanReviewRequired=true.",
+        "Verify source targets for lane: ai-service-pricing-delivery.",
+        "Check the article directly answers the primary search phrase: AI automation project pricing.",
+        "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
+        "Confirm all commands, credentials, API keys, and customer data examples are safe.",
+        "Add one relevant public internal link or document why no link is appropriate.",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human",
+        "Publishing remains separate and requires explicit approval."
+      ],
+      "lane": "ai-service-pricing-delivery",
+      "manualReviewFocus": [
+        "Define scope, deliverables, acceptance, maintenance, and handoff.",
+        "Do not promise traffic, revenue, ranking, or model accuracy.",
+        "Tie packages to low-risk implementation work.",
+        "Add client-side approvals for account access, data, and production changes."
+      ],
+      "officialSourceTargets": [
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "Dify docs: https://docs.dify.ai/",
+        "n8n docs: https://docs.n8n.io/"
+      ],
+      "priorityScore": 437,
+      "publicInternalLinkSuggestion": null,
+      "publicMatches": 4,
+      "readyForHumanReview": true,
+      "reviewQueueMatched": false,
+      "safeDraft": true,
+      "searchQueries": [
+        "AI automation project pricing",
+        "AI agent project scope",
+        "RAG project quote",
+        "Dify n8n project pricing",
+        "AI deployment proposal template",
+        "AI service delivery checklist",
+        "AI 自动化项目报价",
+        "AI Agent 项目报价",
+        "RAG 项目 报价",
+        "AI 项目验收清单"
+      ],
+      "sourceHealth": {
+        "hasReachableSource": true,
+        "reachableUrls": []
+      },
+      "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval.",
+      "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
+      "userProblem": "This lane turns search demand into services without pretending the site already has traffic or revenue proof.",
+      "warningIssues": [
+        "warning: source health has no per-file reachable URL list; verify official source targets manually",
+        "warning: no public internal-link suggestion found; add or explicitly reject one during human review"
       ]
     }
   ]

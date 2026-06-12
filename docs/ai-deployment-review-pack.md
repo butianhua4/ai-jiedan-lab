@@ -1,6 +1,6 @@
 # AI Deployment Review Pack
 
-Generated at: 2026-06-12T14:52:26.815Z
+Generated at: 2026-06-12T16:32:07.936Z
 
 This report is read-only. It turns AI deployment, Agent, RAG, memory, API, and infrastructure coverage into a deduplicated human review queue.
 
@@ -56,7 +56,7 @@ This report is read-only. It turns AI deployment, Agent, RAG, memory, API, and i
 | true | true | 380 | 0 | 3 | 4 | Agent 部署、工具调用和工作流 | AI Agent | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | true | 378 | 0 | 4 | 4 | RAG、知识库和向量检索 | AI 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | true | true | 374 | 0 | 3 | 4 | 本地模型和开源模型部署 | AI 部署 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
-| true | true | 370 | 0 | 2 | 4 | Dify、n8n、Flowise 和无代码 AI 自动化 | 接单报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| true | true | 370 | 0 | 2 | 4 | Dify、n8n、Flowise 和无代码 AI 自动化 | 项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | true | true | 368 | 0 | 2 | 4 | 模型 API 接入、限流和多模型降级 | AI 部署 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | true | true | 367 | 0 | 2 | 4 | LLM Serving、GPU 和托管推理 | AI 基建 | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
 
@@ -67,7 +67,7 @@ This report is read-only. It turns AI deployment, Agent, RAG, memory, API, and i
 | true | true | 380 | 0 | 3 | 4 | Agent 部署、工具调用和工作流 | AI Agent | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | true | 378 | 0 | 4 | 4 | RAG、知识库和向量检索 | AI 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | true | true | 374 | 0 | 3 | 4 | 本地模型和开源模型部署 | AI 部署 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
-| true | true | 370 | 0 | 2 | 4 | Dify、n8n、Flowise 和无代码 AI 自动化 | 接单报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| true | true | 370 | 0 | 2 | 4 | Dify、n8n、Flowise 和无代码 AI 自动化 | 项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | true | true | 368 | 0 | 2 | 4 | 模型 API 接入、限流和多模型降级 | AI 部署 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | true | true | 367 | 0 | 2 | 4 | LLM Serving、GPU 和托管推理 | AI 基建 | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
 | true | true | 366 | 0 | 3 | 4 | LLM 观测、评测和上线质量 | AI 基建 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
@@ -249,7 +249,7 @@ Command boundary:
 ### Dify、n8n、Flowise 和无代码 AI 自动化: AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围
 
 - File: content/blog/ai-automation-project-pricing-scope-guide.mdx
-- Category: 接单报价
+- Category: 项目报价
 - Primary keyword: AI 自动化项目报价
 - Ready for human review: true
 - Safe draft: true
@@ -604,7 +604,7 @@ Workflow angles:
 - 复现
 - 修复顺序
 - 验证命令
-- 接单边界
+- 项目边界
 
 Review focus:
 

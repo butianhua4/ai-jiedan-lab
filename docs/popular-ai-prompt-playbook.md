@@ -1,6 +1,6 @@
 # Popular AI Prompt Playbook
 
-Generated at: 2026-06-12T06:13:14.917Z
+Generated at: 2026-06-12T16:32:10.881Z
 
 This report is read-only. It maps broad, commonly searched AI prompt topics to existing candidate drafts, official sources, and human-review prompt templates.
 
@@ -63,7 +63,7 @@ This report is read-only. It maps broad, commonly searched AI prompt topics to e
 | true | 10 | 5 | 12 | 0 | Excel 和数据分析 AI 提示词 | 运营、财务助理、电商数据、销售管理和数据分析初学者 |
 | true | 2 | 5 | 7 | 0 | 小红书、短视频和直播脚本 AI 提示词 | 自媒体、短视频运营、电商主播、本地生活商家 |
 | true | 10 | 5 | 11 | 0 | 电商客服、售后和直播卖货 AI 提示词 | 淘宝、拼多多、抖店、独立站商家和客服团队 |
-| true | 10 | 5 | 12 | 0 | 销售话术、报价和方案书 AI 提示词 | 销售、BD、自由职业者、咨询顾问和接单人 |
+| true | 10 | 5 | 12 | 0 | 销售话术、报价和方案书 AI 提示词 | 销售、BD、自由职业者和咨询顾问 |
 | true | 9 | 5 | 9 | 0 | 简历优化、招聘和 HR AI 提示词 | 求职者、HR、招聘负责人和团队管理者 |
 | true | 10 | 5 | 12 | 0 | AI Agent 部署、工具调用和上线排错提示词 | 想部署 Agent 的独立开发者、创业团队和技术运营 |
 | true | 10 | 5 | 12 | 0 | 大模型部署、本地模型和 API 排错提示词 | 部署大模型 API、本地模型、推理服务和 AI 应用的开发者 |
@@ -220,8 +220,8 @@ Prompt templates:
 
 - Lane: sales-proposal-prompts
 - Ready for human review prep: true
-- Demand reason: 写报价、写方案、写跟进邮件直接对应接单变现，是项目商业目标里的强入口。
-- Search queries: AI 销售话术提示词; ChatGPT 写报价单; AI 方案书提示词; 客户跟进邮件 prompt; 自由职业接单报价提示词; AI 写商业 proposal; 销售异议处理提示词; AI 客户需求分析; ChatGPT 写项目方案; AI 写投标方案提示词; ChatGPT prompts for business; AI prompt template library; industry AI prompts; best AI prompts for work; 客服 AI 提示词; customer support AI prompts; 售后回复 AI prompt; support ticket classification prompt
+- Demand reason: 写报价、写方案、写跟进邮件直接对应项目转化，是项目商业目标里的强入口。
+- Search queries: AI 销售话术提示词; ChatGPT 写报价单; AI 方案书提示词; 客户跟进邮件 prompt; 自由职业项目报价提示词; AI 写商业 proposal; 销售异议处理提示词; AI 客户需求分析; ChatGPT 写项目方案; AI 写投标方案提示词; ChatGPT prompts for business; AI prompt template library; industry AI prompts; best AI prompts for work; 客服 AI 提示词; customer support AI prompts; 售后回复 AI prompt; support ticket classification prompt
 - Candidate files: content/blog/industry-ai-prompts-template-library-2026.mdx; content/blog/ai-model-selection-customer-service-guide.mdx; content/blog/ai-prompt-library-team-knowledge-base-guide.mdx; content/blog/data-analysis-ai-prompts-guide.mdx; content/blog/education-ai-prompts-guide.mdx; content/blog/healthcare-admin-ai-prompts-guide.mdx; content/blog/manufacturing-ai-prompts-guide.mdx; content/blog/operations-ai-prompts-guide.mdx; content/blog/dify-workflow-error-handling-guide.mdx; content/blog/dify-workflow-vs-agent-guide.mdx
 - Deployment bridge files: content/blog/ai-automation-project-pricing-scope-guide.mdx
 - Prompt module bridge files: content/blog/industry-ai-prompts-template-library-2026.mdx; content/blog/sales-ai-prompts-guide.mdx
@@ -235,7 +235,7 @@ Article angles:
 - 把客户输入拆成目标、预算、交付物、时间、风险。
 - 输出不直接替用户承诺成交，只生成可复核草稿。
 - 将报价依据、范围边界、增项条件写清楚。
-- 可以和现有接单报价、Proposal 工具形成内链。
+- 可以和现有项目报价、Proposal 工具形成内链。
 
 Prompt templates:
 

@@ -1,6 +1,6 @@
 # Search Demand Publication Bridge
 
-Generated at: 2026-06-12T06:13:10.166Z
+Generated at: 2026-06-12T16:32:06.074Z
 
 This report is read-only. It maps search-demand review candidates to SEO, source, internal-link, and manual publication readiness while stopping before review or publish commands.
 
@@ -30,9 +30,9 @@ This report is read-only. It maps search-demand review candidates to SEO, source
 
 ## Source Evidence
 
-- reviewPackGeneratedAt: "2026-06-12T06:13:09.678Z"
+- reviewPackGeneratedAt: "2026-06-12T16:32:05.580Z"
 - reviewPackGuardrails: {"autoCreateArticles":false,"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"trafficClaim":"not-included","note":"Read-only review pack for high-search-demand lanes. It packages manual review work but never edits article files, marks review, or publishes.","stopBefore":"All commands are manual-only and require explicit human approval."}
-- reviewPackSummary: {"factCheckQueries":79,"items":16,"itemsPerLaneMax":2,"itemsWithCommandBoundary":16,"itemsWithHumanChecklist":16,"itemsWithInternalLinkSuggestion":13,"itemsWithManualReviewFocus":16,"itemsWithOfficialSources":16,"itemsWithSearchQueries":16,"lanes":8,"readyItems":16,"reviewQueueMatchedItems":15,"safeDraftItems":16,"unsafeItems":0,"zeroPublicLaneItems":12}
+- reviewPackSummary: {"factCheckQueries":79,"items":16,"itemsPerLaneMax":2,"itemsWithCommandBoundary":16,"itemsWithHumanChecklist":16,"itemsWithInternalLinkSuggestion":13,"itemsWithManualReviewFocus":16,"itemsWithOfficialSources":16,"itemsWithSearchQueries":16,"lanes":8,"readyItems":16,"reviewQueueMatchedItems":14,"safeDraftItems":16,"unsafeItems":0,"zeroPublicLaneItems":12}
 - sourceHealthFilesWithoutReachableSource: 0
 - sourceHealthMissingUrlTargets: 0
 - trafficNote: "This report evaluates readiness only; it does not claim keyword volume, rankings, impressions, clicks, traffic, or revenue."
@@ -58,9 +58,9 @@ This report is read-only. It maps search-demand review candidates to SEO, source
 | true | true | true | true | true | true | 0 | 1 | llm-evals-observability-security | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | true | true | true | true | true | true | 0 | 1 | llm-evals-observability-security | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
 | true | true | true | true | true | true | 0 | 1 | ai-api-keys-limits-routing | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
-| true | true | true | true | false | true | 0 | 2 | ai-service-pricing-delivery | 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准 | content/blog/product-manager-ai-prompts-guide.mdx |
-| true | true | true | true | false | true | 0 | 2 | ai-service-pricing-delivery | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
+| true | true | true | true | false | true | 0 | 2 | ai-service-pricing-delivery | Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则 | content/blog/agent-memory-postgres-schema-guide.mdx |
 | true | true | true | true | true | true | 0 | 1 | ai-api-keys-limits-routing | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
+| true | true | true | true | false | true | 0 | 2 | ai-service-pricing-delivery | 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准 | content/blog/product-manager-ai-prompts-guide.mdx |
 
 ## All Items
 
@@ -79,9 +79,9 @@ This report is read-only. It maps search-demand review candidates to SEO, source
 | true | true | true | true | true | true | 0 | 1 | llm-evals-observability-security | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | true | true | true | true | true | true | 0 | 1 | llm-evals-observability-security | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
 | true | true | true | true | true | true | 0 | 1 | ai-api-keys-limits-routing | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
-| true | true | true | true | false | true | 0 | 2 | ai-service-pricing-delivery | 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准 | content/blog/product-manager-ai-prompts-guide.mdx |
-| true | true | true | true | false | true | 0 | 2 | ai-service-pricing-delivery | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
+| true | true | true | true | false | true | 0 | 2 | ai-service-pricing-delivery | Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则 | content/blog/agent-memory-postgres-schema-guide.mdx |
 | true | true | true | true | true | true | 0 | 1 | ai-api-keys-limits-routing | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
+| true | true | true | true | false | true | 0 | 2 | ai-service-pricing-delivery | 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准 | content/blog/product-manager-ai-prompts-guide.mdx |
 
 ## Manual Next Actions
 
@@ -271,34 +271,19 @@ This report is read-only. It maps search-demand review candidates to SEO, source
 - Only after explicit human approval, run: npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human
 - Publishing remains a separate explicit approval step.
 
-### 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准
+### Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则
 
-- File: content/blog/product-manager-ai-prompts-guide.mdx
+- File: content/blog/agent-memory-postgres-schema-guide.mdx
 - Lane: ai-service-pricing-delivery
-- Manual mark-review command: `npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human`
-- Publish dry-run command after review: `npm run publish:articles -- --file=content/blog/product-manager-ai-prompts-guide.mdx`
+- Manual mark-review command: `npm run mark:review -- --file=content/blog/agent-memory-postgres-schema-guide.mdx --confirm-human`
+- Publish dry-run command after review: `npm run publish:articles -- --file=content/blog/agent-memory-postgres-schema-guide.mdx`
 - Publish confirm: not-included
 
 - Review warning before publish: no public internal-link suggestion is attached yet.
 - Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review.
 - Verify official sources and fact-check queries manually.
 - Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.
-- Only after explicit human approval, run: npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human
-- Publishing remains a separate explicit approval step.
-
-### BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收
-
-- File: content/blog/bentoml-llm-deployment-beginner-guide.mdx
-- Lane: ai-service-pricing-delivery
-- Manual mark-review command: `npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human`
-- Publish dry-run command after review: `npm run publish:articles -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx`
-- Publish confirm: not-included
-
-- Review warning before publish: no public internal-link suggestion is attached yet.
-- Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review.
-- Verify official sources and fact-check queries manually.
-- Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.
-- Only after explicit human approval, run: npm run mark:review -- --file=content/blog/bentoml-llm-deployment-beginner-guide.mdx --confirm-human
+- Only after explicit human approval, run: npm run mark:review -- --file=content/blog/agent-memory-postgres-schema-guide.mdx --confirm-human
 - Publishing remains a separate explicit approval step.
 
 ### Claude API Rate limit reached 怎么办：限流、上下文、重试和降级
@@ -313,5 +298,20 @@ This report is read-only. It maps search-demand review candidates to SEO, source
 - Verify official sources and fact-check queries manually.
 - Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.
 - Only after explicit human approval, run: npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human
+- Publishing remains a separate explicit approval step.
+
+### 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准
+
+- File: content/blog/product-manager-ai-prompts-guide.mdx
+- Lane: ai-service-pricing-delivery
+- Manual mark-review command: `npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human`
+- Publish dry-run command after review: `npm run publish:articles -- --file=content/blog/product-manager-ai-prompts-guide.mdx`
+- Publish confirm: not-included
+
+- Review warning before publish: no public internal-link suggestion is attached yet.
+- Review warning before publish: review pack warnings: warning: source health has no per-file reachable URL list; verify official source targets manually; warning: no public internal-link suggestion found; add or explicitly reject one during human review.
+- Verify official sources and fact-check queries manually.
+- Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.
+- Only after explicit human approval, run: npm run mark:review -- --file=content/blog/product-manager-ai-prompts-guide.mdx --confirm-human
 - Publishing remains a separate explicit approval step.
 

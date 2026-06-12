@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:39.761Z",
+  "generatedAt": "2026-06-12T16:32:36.340Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "approvalQueueGeneratedAt": "2026-06-12T06:13:39.288Z",
+    "approvalQueueGeneratedAt": "2026-06-12T16:32:35.869Z",
     "approvalQueueSummary": {
       "backlogItems": 5,
       "commandBoundaries": 8,
@@ -27,32 +27,32 @@
       "trafficDataAvailable": false,
       "unsafeItems": 0
     },
-    "copydeskGeneratedAt": "2026-06-12T06:13:22.096Z",
+    "copydeskGeneratedAt": "2026-06-12T16:32:18.250Z",
     "copydeskSummary": {
       "briefs": 16,
       "briefsWithAction": 16,
-      "exactQueryWeakItems": 4,
+      "exactQueryWeakItems": 3,
       "missingPublicLinkItems": 15,
       "readyBriefs": 16,
       "unsafeCommands": 0
     },
-    "sourceReplacementGeneratedAt": "2026-06-12T06:13:20.631Z",
+    "sourceReplacementGeneratedAt": "2026-06-12T16:32:16.761Z",
     "sourceReplacementSummary": {
       "affectedFiles": 22,
       "failedDecisionItems": 1,
-      "humanGatedItems": 113,
-      "items": 113,
-      "itemsWithDecisionOptions": 113,
-      "itemsWithManualChecklist": 113,
+      "humanGatedItems": 114,
+      "items": 114,
+      "itemsWithDecisionOptions": 114,
+      "itemsWithManualChecklist": 114,
       "itemsWithRecommendedCandidate": 1,
       "officialRecommendedCandidates": 1,
-      "redirectedDecisionItems": 112,
+      "redirectedDecisionItems": 113,
       "replacementCandidateOptions": 8,
       "sourceRemediationItems": 19,
       "sourceRemediationUnsafeItems": 0,
       "unsafeItems": 0
     },
-    "seoWarningGeneratedAt": "2026-06-12T06:13:00.157Z",
+    "seoWarningGeneratedAt": "2026-06-12T16:31:55.876Z",
     "seoWarningSummary": {
       "blockingItems": 0,
       "draftItems": 8,
@@ -132,7 +132,7 @@
           "url": "/blog/build-first-webpage-with-codex"
         },
         "kind": "public-gap-review",
-        "priority": 781,
+        "priority": 783,
         "proposedDescription": "面向准备落地 客服 AI 模型选型 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
         "proposedOpeningAdditions": [
           "在开头 200 字内自然回答一次“RAG 知识库搭建教程”这个搜索意图，先给结论再展开步骤。",
@@ -266,7 +266,7 @@
         "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
         "internalLink": {
           "currentPublicLinks": 0,
-          "reason": "keyword overlap: ai, vercel, 部署, 上线, 检查, 新手",
+          "reason": "keyword overlap: ai, vercel, 部署, 工具, 上线, 检查",
           "title": "Codex 部署 Vercel 前检查什么：上线前清单",
           "url": "/blog/codex-vercel-deploy-preflight-checklist"
         },

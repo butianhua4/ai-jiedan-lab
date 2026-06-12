@@ -1,6 +1,6 @@
 # Human Approval Repair Progress
 
-Generated at: 2026-06-12T06:13:32.749Z
+Generated at: 2026-06-12T16:32:29.205Z
 
 This report is read-only. It tracks whether repair-route categories are still open, blocked, evidence-ready, resolved, or manual-only.
 
@@ -54,7 +54,7 @@ This report is read-only. It tracks whether repair-route categories are still op
 - searchIntentUnsafeItems: 0
 - sourceVerificationItems: 3
 - sourceVerificationUnsafeItems: 0
-- sourceUrlFixActions: 34
+- sourceUrlFixActions: 35
 - remediationUnsafeItems: 0
 
 ## Unsafe Items
@@ -113,7 +113,7 @@ This report is read-only. It tracks whether repair-route categories are still op
 
 | Category | Status | Detail | Next action | Proof required |
 | --- | --- | --- | --- | --- |
-| source-url | open | 10 source URL remediation action(s) still need human confirmation. | Open each failed source URL manually, replace dead URLs with accessible canonical sources, then rerun automation. | Reviewer confirms final source URLs are canonical or replaced with accessible equivalents. |
+| source-url | open | 11 source URL remediation action(s) still need human confirmation. | Open each failed source URL manually, replace dead URLs with accessible canonical sources, then rerun automation. | Reviewer confirms final source URLs are canonical or replaced with accessible equivalents. |
 | source-review | evidence-ready | Source review evidence is ready, but human confirmation is still required before mark:review. | Human reviewer verifies fast-changing claims against the listed sources. | Reviewer records source/fact-check confirmation and removes unsupported claims. |
 | search-intent | open | 4 search-intent weakness(es) remain. | Adjust title, description, opening, heading, or body so the accepted query appears naturally. | Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body. |
 | internal-link | open | No current link to a published article. | Add one useful contextual link to a currently published relevant article. | Draft contains at least one contextual link to a currently published relevant article. |

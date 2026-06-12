@@ -1,6 +1,6 @@
 # Broad First Coverage Launch Pack
 
-Generated at: 2026-06-12T06:13:54.556Z
+Generated at: 2026-06-12T16:32:52.736Z
 
 ## Guardrails
 
@@ -37,7 +37,7 @@ Generated at: 2026-06-12T06:13:54.556Z
 | true | 321 | 5 | 10 | 24 | 开源大模型部署：Ollama、vLLM、TGI、RunPod | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | true | 317 | 5 | 8 | 27 | Agent 部署、工具调用和生产安全 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 315 | 5 | 3 | 24 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
-| true | 313 | 5 | 10 | 27 | RAG、知识库、向量数据库和引用溯源 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 313 | 5 | 11 | 27 | RAG、知识库、向量数据库和引用溯源 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | 311 | 6 | 8 | 27 | 全行业 AI 提示词和工作流模板 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | true | 307 | 5 | 3 | 20 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | true | 293 | 5 | 12 | 22 | AI API 接入、限流、成本和多模型路由 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
@@ -242,16 +242,17 @@ Search queries:
 
 Source targets:
 
+- https://platform.openai.com/docs
+- https://ai-sdk.dev/docs
 - https://platform.openai.com/docs/guides/retrieval
 - https://platform.openai.com/docs/guides/prompt-engineering
 - https://python.langchain.com/docs
 - https://docs.llamaindex.ai
 - https://huggingface.co/docs
-- https://platform.openai.com/docs
-- https://ai-sdk.dev/docs
 - https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/
 - https://arxiv.org/abs/2603.10700
 - https://www.pinecone.io/learn/retrieval-augmented-generation/
+- https://platform.openai.com/docs/guides/agents
 
 Human fact-check checklist:
 
@@ -274,12 +275,12 @@ Human fact-check checklist:
 - Apply review focus: 把 RAG、微调、提示词模板区分清楚.
 - Apply review focus: 必须写明引用、来源、权限和失败兜底.
 - Apply review focus: 不要把 demo 成功写成生产质量保证.
+- Open source target and verify current guidance: https://platform.openai.com/docs.
+- Open source target and verify current guidance: https://ai-sdk.dev/docs.
 - Open source target and verify current guidance: https://platform.openai.com/docs/guides/retrieval.
 - Open source target and verify current guidance: https://platform.openai.com/docs/guides/prompt-engineering.
 - Open source target and verify current guidance: https://python.langchain.com/docs.
 - Open source target and verify current guidance: https://docs.llamaindex.ai.
-- Open source target and verify current guidance: https://huggingface.co/docs.
-- Open source target and verify current guidance: https://platform.openai.com/docs.
 - Confirm this first-coverage candidate fits cluster: RAG、知识库、向量数据库和引用溯源.
 - Confirm target primary keyword is appropriate: 客服 AI 模型选型.
 

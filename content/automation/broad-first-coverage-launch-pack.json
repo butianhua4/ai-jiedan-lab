@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:54.556Z",
+  "generatedAt": "2026-06-12T16:32:52.736Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,7 +10,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "demandBriefGeneratedAt": "2026-06-12T06:13:35.904Z",
+    "demandBriefGeneratedAt": "2026-06-12T16:32:32.428Z",
     "demandBriefGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -29,7 +29,7 @@
       "reviewReadyDrafts": 633,
       "unsafeClusters": 0
     },
-    "freshnessTriageGeneratedAt": "2026-06-12T06:13:36.401Z",
+    "freshnessTriageGeneratedAt": "2026-06-12T16:32:32.937Z",
     "freshnessTriageGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -54,7 +54,7 @@
       "unsafeItems": 0,
       "uniqueFiles": 24
     },
-    "publicSurfaceGeneratedAt": "2026-06-12T06:13:54.135Z",
+    "publicSurfaceGeneratedAt": "2026-06-12T16:32:52.301Z",
     "publicSurfaceGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -73,7 +73,7 @@
       "projectPublicPublished": 15,
       "publicArticles": 15,
       "publicCategories": 6,
-      "publicTags": 31,
+      "publicTags": 32,
       "publishedButNoindexed": 0,
       "nonPublishedIndexable": 0,
       "trafficDataAvailable": false,
@@ -151,7 +151,7 @@
       "launchReason": "这是比网页部署更宽的入口词，搜索者通常已经有明确问题：跑不起来、太慢、太贵、API 接不上。",
       "noindex": true,
       "primaryKeyword": "大模型部署",
-      "qualityScore": 90,
+      "qualityScore": 100,
       "readyForFirstCoverageReview": true,
       "reviewFocus": [
         "核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异",
@@ -238,7 +238,7 @@
       "launchReason": "Agent 是当前 AI 应用搜索里的大词，但文章必须从权限、状态和人工接管切入，才能比泛泛介绍更有用。",
       "noindex": true,
       "primaryKeyword": "AI Agent 部署",
-      "qualityScore": 90,
+      "qualityScore": 100,
       "readyForFirstCoverageReview": true,
       "reviewFocus": [
         "不要写成全自动替人完成高风险业务",
@@ -272,7 +272,7 @@
     {
       "articleSignals": {
         "h2Count": 11,
-        "wordCountApprox": 1794
+        "wordCountApprox": 1792
       },
       "category": "AI 部署",
       "cluster": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
@@ -320,7 +320,7 @@
       "launchReason": "用户明确点名“记忆板块”，这个方向能从技术教程、架构设计、隐私合规三个层面持续扩展。",
       "noindex": true,
       "primaryKeyword": "n8n AI Agent 知识库记忆",
-      "qualityScore": 86,
+      "qualityScore": 100,
       "readyForFirstCoverageReview": true,
       "reviewFocus": [
         "区分知识库 RAG 和用户记忆",
@@ -387,12 +387,12 @@
         "Apply review focus: 把 RAG、微调、提示词模板区分清楚.",
         "Apply review focus: 必须写明引用、来源、权限和失败兜底.",
         "Apply review focus: 不要把 demo 成功写成生产质量保证.",
+        "Open source target and verify current guidance: https://platform.openai.com/docs.",
+        "Open source target and verify current guidance: https://ai-sdk.dev/docs.",
         "Open source target and verify current guidance: https://platform.openai.com/docs/guides/retrieval.",
         "Open source target and verify current guidance: https://platform.openai.com/docs/guides/prompt-engineering.",
         "Open source target and verify current guidance: https://python.langchain.com/docs.",
         "Open source target and verify current guidance: https://docs.llamaindex.ai.",
-        "Open source target and verify current guidance: https://huggingface.co/docs.",
-        "Open source target and verify current guidance: https://platform.openai.com/docs.",
         "Confirm this first-coverage candidate fits cluster: RAG、知识库、向量数据库和引用溯源.",
         "Confirm target primary keyword is appropriate: 客服 AI 模型选型."
       ],
@@ -400,7 +400,7 @@
       "launchReason": "RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。",
       "noindex": true,
       "primaryKeyword": "客服 AI 模型选型",
-      "qualityScore": 86,
+      "qualityScore": 100,
       "readyForFirstCoverageReview": true,
       "reviewFocus": [
         "把 RAG、微调、提示词模板区分清楚",
@@ -416,16 +416,17 @@
         "RAG 评测教程"
       ],
       "sourceTargets": [
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://python.langchain.com/docs",
         "https://docs.llamaindex.ai",
         "https://huggingface.co/docs",
-        "https://platform.openai.com/docs",
-        "https://ai-sdk.dev/docs",
         "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
         "https://arxiv.org/abs/2603.10700",
-        "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+        "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+        "https://platform.openai.com/docs/guides/agents"
       ],
       "status": "draft",
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
@@ -487,7 +488,7 @@
       "launchReason": "这是用户特别要求的“全行业使用 AI 的提示词”，搜索面宽，适合先做总入口，再拆岗位长尾。",
       "noindex": true,
       "primaryKeyword": "全行业 AI 提示词模板",
-      "qualityScore": 90,
+      "qualityScore": 100,
       "readyForFirstCoverageReview": true,
       "reviewFocus": [
         "避免空泛万能提示词，必须给输入字段、输出结构和质检标准",

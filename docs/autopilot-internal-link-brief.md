@@ -1,6 +1,6 @@
 # Autopilot Internal Link Brief
 
-Generated at: 2026-06-12T06:13:29.486Z
+Generated at: 2026-06-12T16:32:25.834Z
 
 This report is read-only. It packages public internal-link suggestions for the top autopilot approval packet items.
 
@@ -63,11 +63,11 @@ Human review focus:
 
 Suggested public links:
 
-- Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) - keyword overlap: ai, vercel, 部署, 上线, 检查, 新手
-- Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) - keyword overlap: ai, 怎么, 么做, 新手, 网页, 一个
+- Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) - keyword overlap: ai, vercel, 部署, 工具, 上线, 检查
+- Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) - keyword overlap: ai, 怎么, 么做, 工具, 新手, 网页
+- Codex 接 Upwork 小单怎么判断：风险检查清单 (/blog/codex-upwork-small-job-risk-checklist) - keyword overlap: ai, 怎么, 工具, 检查, 新手, 判断
 - 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (/blog/first-upwork-project-pricing-checklist) - keyword overlap: 怎么, 检查, 项目, 新手, 一个, 第一
 - Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看 (/blog/payoneer-wise-paypal-beginner-comparison) - keyword overlap: ai, 工具, 新手, 什么, 有什, 么区
-- Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide) - keyword overlap: vercel, 部署, 怎么, 检查, 新手, 署检
 
 ### 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用
 
@@ -84,10 +84,10 @@ Human review focus:
 Suggested public links:
 
 - Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner) - keyword overlap: proposal, 客户沟通, 怎么, 客户, 需求, 户沟
-- Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist) - keyword overlap: ai, 怎么, 审核, 接单, 生成, 交付
-- Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) - keyword overlap: ai, 怎么, 么做, 接单, 第一
-- Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide) - keyword overlap: ai, 怎么, 审核, 接单, 生成
-- Codex 安装失败怎么办 (/blog/codex-install-failed-beginner-fix) - keyword overlap: ai, 怎么, 失败, 接单
+- Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist) - keyword overlap: ai, 怎么, 审核, 生成, 交付, 工具
+- Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) - keyword overlap: ai, 怎么, 么做, 第一, 工具
+- Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide) - keyword overlap: ai, 怎么, 审核, 生成, 工具
+- Codex 安装失败怎么办 (/blog/codex-install-failed-beginner-fix) - keyword overlap: ai, 怎么, 失败, 工具
 
 ### 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
 

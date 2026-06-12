@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:43.254Z",
+  "generatedAt": "2026-06-12T16:32:39.897Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -347,7 +347,7 @@
       "metadataHits": [],
       "noindex": true,
       "preserveStatus": true,
-      "priorityScore": 86,
+      "priorityScore": 100,
       "publishConfirm": "not-included",
       "queueSignals": {
         "inExecutiveTop": false,
@@ -558,7 +558,7 @@
         "lanes": []
       },
       "status": "draft",
-      "title": "AI 工具练习小项目选题检查清单"
+      "title": "AI 小项目练习选题检查清单"
     },
     {
       "bodyHit": {
@@ -566,7 +566,7 @@
         "markers": [
           "冒"
         ],
-        "sample": "不要为了拿下第一单就接受所有要求。第一次接单最重要的是形成可复用流程，而不是冒险碰高权限任务。凡是涉及客户账号、密钥、付款、隐私数据和生产环境的需求，都应该先暂停确认。"
+        "sample": "不要为了拿下第一单就接受所有要求。第一次项目最重要的是形成可复用流程，而不是冒险碰高权限任务。凡是涉及客户账号、密钥、付款、隐私数据和生产环境的需求，都应该先暂停确认。"
       },
       "file": "content/blog/before-first-ai-freelance-job.mdx",
       "humanReviewRequired": true,
@@ -744,7 +744,7 @@
         "lanes": []
       },
       "status": "draft",
-      "title": "Claude Code 新手适合用在哪些接单场景"
+      "title": "Claude Code 新手适合用在哪些项目场景"
     },
     {
       "bodyHit": {
@@ -880,7 +880,7 @@
         "lanes": []
       },
       "status": "draft",
-      "title": "Claude Code 新手常用命令怎么整理成接单笔记"
+      "title": "Claude Code 新手常用命令怎么整理成项目笔记"
     },
     {
       "bodyHit": {
@@ -981,7 +981,7 @@
         "lanes": []
       },
       "status": "draft",
-      "title": "哪些小项目任务适合用 Claude Code 辅助接单"
+      "title": "哪些小项目任务适合用 Claude Code 辅助项目"
     },
     {
       "bodyHit": {
@@ -1772,7 +1772,7 @@
         "markers": [
           "盲"
         ],
-        "sample": "这份清单适合边做边勾选。你不需要第一天就学完所有开发知识，只要能让 Codex 解释项目、完成一个小修改、跑一次检查、写下记录，就已经比盲目接单稳很多。"
+        "sample": "这份清单适合边做边勾选。你不需要第一天就学完所有开发知识，只要能让 Codex 解释项目、完成一个小修改、跑一次检查、写下记录，就已经比盲目项目稳很多。"
       },
       "file": "content/blog/codex-first-day-guide-checklist.mdx",
       "humanReviewRequired": true,
@@ -1803,7 +1803,7 @@
         "markers": [
           "冒"
         ],
-        "sample": "如果你已经能用 Codex 做一个练习落地页，下一步很容易冒出一个念头：这种项目是不是可以去 Upwork 或 Fiverr 接单？先给结论：可以研究，但不要急着投。落地页看起来简单，实际包含需求理解、文案边界、视觉还原、移动端适配、部署方式、客户验收和后续修改。"
+        "sample": "如果你已经能用 Codex 做一个练习落地页，下一步很容易冒出一个念头：这种项目是不是可以去 Upwork 或 Fiverr 项目？先给结论：可以研究，但不要急着投。落地页看起来简单，实际包含需求理解、文案边界、视觉还原、移动端适配、部署方式、客户验收和后续修改。"
       },
       "file": "content/blog/codex-first-landing-page-freelance-scope.mdx",
       "humanReviewRequired": true,
@@ -1826,7 +1826,7 @@
         "lanes": []
       },
       "status": "draft",
-      "title": "Codex 怎么做第一个落地页：接单前怎么判断能不能做"
+      "title": "Codex 怎么做第一个落地页：使用前怎么判断是否适合"
     },
     {
       "bodyHit": {
@@ -1834,7 +1834,7 @@
         "markers": [
           "盲"
         ],
-        "sample": "这个结论能帮助你避免盲目尝试。接单场景里，它也能变成客户沟通材料。"
+        "sample": "这个结论能帮助你避免盲目尝试。项目场景里，它也能变成客户沟通材料。"
       },
       "file": "content/blog/codex-install-prerequisites-checklist.mdx",
       "humanReviewRequired": true,
@@ -2020,7 +2020,7 @@
         "lanes": []
       },
       "status": "draft",
-      "title": "新手如何记录每天的接单练习"
+      "title": "新手如何记录每天的项目练习"
     },
     {
       "bodyHit": {
@@ -2121,7 +2121,7 @@
         "markers": [
           "盲"
         ],
-        "sample": "这样写不会显得退缩，反而能让客户知道你在保护项目材料和访问权限。新手接单时，清楚边界比盲目承诺更可靠。"
+        "sample": "这样写不会显得退缩，反而能让客户知道你在保护项目材料和访问权限。新手项目练习时，清楚边界比盲目承诺更可靠。"
       },
       "file": "content/blog/module-not-found-debug-freelance-scope.mdx",
       "humanReviewRequired": true,
@@ -2144,7 +2144,7 @@
         "lanes": []
       },
       "status": "draft",
-      "title": "module not found 接单前怎么判断能不能做"
+      "title": "module not found 使用前怎么判断是否适合"
     },
     {
       "bodyHit": {
@@ -2206,7 +2206,7 @@
         "lanes": []
       },
       "status": "draft",
-      "title": "Node 版本不匹配接单前怎么判断能不能做"
+      "title": "Node 版本不匹配使用前怎么判断是否适合"
     },
     {
       "bodyHit": {
@@ -2406,7 +2406,7 @@
         "lanes": []
       },
       "status": "draft",
-      "title": "TypeScript 报错新手怎么排查：接单前怎么判断能不能做"
+      "title": "TypeScript 报错新手怎么排查：使用前怎么判断是否适合"
     },
     {
       "bodyHit": {

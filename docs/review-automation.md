@@ -1,6 +1,6 @@
 # Review Automation Queue
 
-Generated at: 2026-06-12T06:12:51.405Z
+Generated at: 2026-06-12T16:31:46.775Z
 
 This automation does not publish articles. It only ranks safe-looking draft candidates for human review.
 
@@ -54,7 +54,7 @@ npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-g
 | 2 | 260 | 100 | 40 | Agent and memory | AI 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | 3 | 260 | 100 | 40 | Industry AI prompts | AI 提示词 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | 4 | 254 | 100 | 34 | RAG and knowledge base | AI 部署 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| 5 | 253 | 100 | 33 | Agent and memory | 接单报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 5 | 253 | 100 | 33 | Agent and memory | 项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | 6 | 253 | 100 | 33 | Agent and memory | AI 部署 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | 7 | 253 | 100 | 33 | Agent and memory | AI 部署 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
 | 8 | 253 | 100 | 33 | Agent and memory | AI 部署 | 企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管 | content/blog/enterprise-im-ai-agent-integration-guide.mdx |

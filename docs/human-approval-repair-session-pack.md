@@ -1,6 +1,6 @@
 # Human Approval Repair Session Pack
 
-Generated at: 2026-06-12T06:13:33.224Z
+Generated at: 2026-06-12T16:32:29.676Z
 
 This report is read-only. It packages the next manual repair session for each routed file and stops before article edits, mark:review, or publishing.
 
@@ -21,10 +21,10 @@ This report is read-only. It packages the next manual repair session for each ro
 - publishConfirmCommandsIncluded: 0
 - readyForHumanApprovalAfterRepair: 0
 - searchActions: 0
-- sessionActions: 192
-- sourceReviewActions: 130
-- sourceTargetUrlItems: 18
-- sourceUrlActions: 62
+- sessionActions: 194
+- sourceReviewActions: 131
+- sourceTargetUrlItems: 19
+- sourceUrlActions: 63
 - trafficDataAvailable: false
 - unsafeItems: 0
 
@@ -36,7 +36,7 @@ This report is read-only. It packages the next manual repair session for each ro
 - progressOpenCategories: 11
 - progressUnsafeItems: 0
 - remediationItems: 3
-- remediationSourceUrlFixActions: 34
+- remediationSourceUrlFixActions: 35
 - remediationUnsafeItems: 0
 - routeFiles: 3
 - routeSessions: 12
@@ -59,7 +59,7 @@ This report is read-only. It packages the next manual repair session for each ro
 | ---: | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
 | 1943 | source verification first | source-url, search-intent, internal-link, copydesk | 17 | 6 | 0 | 0 | 0 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 1939 | source verification first | source-url, internal-link, copydesk | 28 | 6 | 0 | 0 | 0 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| 1819 | source verification first | source-url, search-intent, internal-link, copydesk | 17 | 6 | 0 | 0 | 0 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 1819 | source verification first | source-url, search-intent, internal-link, copydesk | 18 | 7 | 0 | 0 | 0 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
 ## Session Details
 
@@ -297,6 +297,7 @@ Source URL actions:
 - Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.
 - Confirm source redirect before approval: https://python.langchain.com/docs -> https://docs.langchain.com/oss/python/langchain/overview.
 - Confirm source redirect before approval: https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/.
 - Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.
@@ -313,6 +314,7 @@ Source target URL items:
 - [redirected-url] https://platform.openai.com/docs -> https://developers.openai.com/api/docs; replacements=0
 - [redirected-url] https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering; replacements=0
 - [redirected-url] https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval; replacements=0
+- [redirected-url] https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents; replacements=0
 - [redirected-url] https://python.langchain.com/docs -> https://docs.langchain.com/oss/python/langchain/overview; replacements=0
 - [redirected-url] https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/; replacements=0
 
@@ -326,13 +328,14 @@ Source review actions:
 - Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.
+- Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.
 - Confirm source redirect before approval: https://python.langchain.com/docs -> https://docs.langchain.com/oss/python/langchain/overview.
 - Confirm source redirect before approval: https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/.
+- Open source URL: https://platform.openai.com/docs.
+- Open source URL: https://ai-sdk.dev/docs.
 - Open source URL: https://platform.openai.com/docs/guides/retrieval.
 - Open source URL: https://platform.openai.com/docs/guides/prompt-engineering.
 - Open source URL: https://python.langchain.com/docs.
-- Open source URL: https://docs.llamaindex.ai.
-- Open source URL: https://huggingface.co/docs.
 - Fact-check query: 客服 AI 模型选型 官方文档 最新.
 - Fact-check query: 客服 AI 模型选型 official docs latest.
 - Fact-check query: 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 事实核对.
@@ -343,9 +346,9 @@ Source review actions:
 - No API key, credential, private customer data, or account detail is included.
 - Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.
 - Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.
-- Verify 17 official source target(s).
+- Verify 18 official source target(s).
 - Check 5 search query seed(s).
-- Review 10 combined checklist signal(s).
+- Review 12 combined checklist signal(s).
 - Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..
 - Complete freshness checklist for fast-changing AI/tool guidance.
 - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.

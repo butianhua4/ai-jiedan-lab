@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:22.565Z",
+  "generatedAt": "2026-06-12T16:32:18.731Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -46,12 +46,12 @@
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "humanReviewRequired": true,
       "noindex": true,
-      "officialSourceTargets": 7,
+      "officialSourceTargets": 8,
       "projectedPublishableAfterHumanApproval": true,
       "qualityIssues": [],
       "qualityScore": 100,
       "readyForHumanApproval": true,
-      "riskReviewChecklist": 6,
+      "riskReviewChecklist": 8,
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:39.288Z",
+  "generatedAt": "2026-06-12T16:32:35.869Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "firstCoverageGeneratedAt": "2026-06-12T06:13:38.791Z",
+    "firstCoverageGeneratedAt": "2026-06-12T16:32:35.365Z",
     "firstCoverageSummary": {
       "blockingItems": 0,
       "commandBoundaries": 8,
@@ -29,7 +29,7 @@
       "warningItems": 8,
       "zeroPublicClusters": 8
     },
-    "massAiSearchMatrixGeneratedAt": "2026-06-12T06:13:11.496Z",
+    "massAiSearchMatrixGeneratedAt": "2026-06-12T16:32:07.424Z",
     "massAiSearchMatrixSummary": {
       "commandBoundaries": 10,
       "deploymentBridgedThemes": 6,
@@ -50,7 +50,7 @@
       "unsafeItems": 0,
       "waves": 3
     },
-    "popularAiPromptPlaybookGeneratedAt": "2026-06-12T06:13:14.917Z",
+    "popularAiPromptPlaybookGeneratedAt": "2026-06-12T16:32:10.881Z",
     "popularAiPromptPlaybookSummary": {
       "agentDeploymentLanes": 3,
       "broadWorkPromptLanes": 3,
@@ -72,7 +72,7 @@
       "uniqueCandidateFiles": 21,
       "unsafeItems": 0
     },
-    "seoWarningGeneratedAt": "2026-06-12T06:13:00.157Z",
+    "seoWarningGeneratedAt": "2026-06-12T16:31:55.876Z",
     "seoWarningSummary": {
       "blockingItems": 0,
       "draftItems": 8,
@@ -89,30 +89,30 @@
       "warningItems": 16,
       "waveItems": 1
     },
-    "sourceReplacementGeneratedAt": "2026-06-12T06:13:20.631Z",
+    "sourceReplacementGeneratedAt": "2026-06-12T16:32:16.761Z",
     "sourceReplacementSummary": {
       "affectedFiles": 22,
       "failedDecisionItems": 1,
-      "humanGatedItems": 113,
-      "items": 113,
-      "itemsWithDecisionOptions": 113,
-      "itemsWithManualChecklist": 113,
+      "humanGatedItems": 114,
+      "items": 114,
+      "itemsWithDecisionOptions": 114,
+      "itemsWithManualChecklist": 114,
       "itemsWithRecommendedCandidate": 1,
       "officialRecommendedCandidates": 1,
-      "redirectedDecisionItems": 112,
+      "redirectedDecisionItems": 113,
       "replacementCandidateOptions": 8,
       "sourceRemediationItems": 19,
       "sourceRemediationUnsafeItems": 0,
       "unsafeItems": 0
     },
-    "waveApprovalGeneratedAt": "2026-06-12T06:13:06.478Z",
+    "waveApprovalGeneratedAt": "2026-06-12T16:32:02.310Z",
     "waveApprovalSummary": {
       "items": 3,
       "readyForHumanReview": 3,
       "unsafeItems": 0,
       "wave": 1
     },
-    "wavePublishSimulationGeneratedAt": "2026-06-12T06:13:22.565Z",
+    "wavePublishSimulationGeneratedAt": "2026-06-12T16:32:18.731Z",
     "wavePublishSimulationSummary": {
       "currentlyPublishable": 0,
       "items": 3,
@@ -180,7 +180,9 @@
         "No instruction to bypass platform, payment, messaging, account, or review rules.",
         "No API key, credential, private customer data, or account detail is included.",
         "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
+        "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
         "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
+        "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.",
         "Prompt examples include input context, output criteria, review rules, and adaptation notes.",
         "Fact-check query before approval: 客服 AI 模型选型 official docs latest.",
         "Fact-check query before approval: 客服 AI 模型选型 official documentation current limits.",
@@ -193,7 +195,7 @@
         "Verify official source before approval: LlamaIndex docs: https://docs.llamaindex.ai.",
         "Verify official source before approval: Hugging Face docs: https://huggingface.co/docs.",
         "Verify official source before approval: OpenAI API docs: https://platform.openai.com/docs.",
-        "Verify official source before approval: Vercel AI SDK docs: https://ai-sdk.dev/docs."
+        "Verify official source before approval: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents."
       ],
       "massSearchThemes": [
         {
@@ -270,6 +272,11 @@
         {
           "kind": "redirected-url",
           "originalUrl": "https://platform.openai.com/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/agents",
           "recommendedCandidate": null
         },
         {
@@ -810,7 +817,7 @@
         "Review snippet warnings for title, description, slug, and primary keyword alignment.",
         "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
         "Resolve or explicitly accept warning: theme still has missing subtopics: logs, prompt injection, cost tracking.",
-        "Resolve or explicitly accept warning: no search-query-match record; rely on launch search queries and public-gap seed evidence.",
+        "Resolve or explicitly accept warning: few exact query variant matches in article text.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
@@ -982,7 +989,9 @@
         "No instruction to bypass platform, payment, messaging, account, or review rules.",
         "No API key, credential, private customer data, or account detail is included.",
         "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
+        "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
         "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
+        "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.",
         "Prompt examples include input context, output criteria, review rules, and adaptation notes.",
         "Fact-check query before approval: 客服 AI 模型选型 official docs latest.",
         "Fact-check query before approval: 客服 AI 模型选型 official documentation current limits.",
@@ -995,7 +1004,7 @@
         "Verify official source before approval: LlamaIndex docs: https://docs.llamaindex.ai.",
         "Verify official source before approval: Hugging Face docs: https://huggingface.co/docs.",
         "Verify official source before approval: OpenAI API docs: https://platform.openai.com/docs.",
-        "Verify official source before approval: Vercel AI SDK docs: https://ai-sdk.dev/docs."
+        "Verify official source before approval: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents."
       ],
       "massSearchThemes": [
         {
@@ -1072,6 +1081,11 @@
         {
           "kind": "redirected-url",
           "originalUrl": "https://platform.openai.com/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/agents",
           "recommendedCandidate": null
         },
         {
@@ -1438,7 +1452,7 @@
         "Review snippet warnings for title, description, slug, and primary keyword alignment.",
         "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
         "Resolve or explicitly accept warning: theme still has missing subtopics: logs, prompt injection, cost tracking.",
-        "Resolve or explicitly accept warning: no search-query-match record; rely on launch search queries and public-gap seed evidence.",
+        "Resolve or explicitly accept warning: few exact query variant matches in article text.",
         "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
         "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
         "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."

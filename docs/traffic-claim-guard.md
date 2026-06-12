@@ -1,24 +1,23 @@
 # Traffic Claim Guard
-Generated at: 2026-06-12T06:13:53.567Z
+Generated at: 2026-06-12T16:32:51.725Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
 - Note: This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples.
 ## Summary
-- filesScanned: 211
+- filesScanned: 219
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 3792
+- watchMentions: 3828
 ## Unsafe Claims
 None.
 ## Watch Mentions
 | File | Line | Text |
 | --- | --- | --- |
-| README.md | 39 | `live:check` 负责确认主要页面、文章、sitemap 和 robots 能访问。`searchability:check` 负责更细的 SEO 可搜索度检查，包括英文 URL、canonical、Open Graph、JSON-LD、meta description、sitemap 收录范围和草稿泄漏。 |
-| README.md | 41 | 当前站点已通过基础可搜索度检查，但 Google 是否收录还需要提交 Google Search Console 后观察。相关记录见 `docs/seo-searchability-audit.md` 和 `docs/search-console-setup.md`。 |
-| README.md | 43 | 拿到 Google Search Console HTML tag 的 `content` 验证码后，可以先检查验证准备度： |
-| README.md | 250 | 4. 每次只发布 1-3 篇人工审核文章，观察收录和点击。 |
-| README.md | 276 | - Google Search Console 提交清单：`docs/search-console-setup.md` |
+| README.md | 5 | 这个仓库同时包含一个公开网站和一套内容生产/审核自动化系统。目标不是做一个只卖工具的页面，而是把真实用户会搜索的问题整理成可访问、可复查、可持续扩展的工具与教程库。 |
+| README.md | 117 | npm run traffic:evidence |
+| README.md | 147 | - 不承诺搜索排名、收入、成交转化成功率或平台曝光 |
+| README.md | 159 | - 在有真实数据后接入 Search Console、Analytics、模板销售和联盟链接 |
 | app/llms.txt/route.ts | 50 | "- The site does not claim real traffic, impressions, income guarantees, or automatic publishing.", |
 | docs/NEXT_ACTIONS.md | 24 | ## 4. 收款和流量收益 |
 | docs/NEXT_ACTIONS.md | 29 | - 稳定流量后再接联盟链接和广告。 |
@@ -64,7 +63,7 @@ None.
 | docs/automation-digest.md | 223 | - Traffic data available: false |
 | docs/automation-digest.md | 268 | - Traffic data available: false |
 | docs/automation-digest.md | 723 | \| 404 \| 0 \| 30 \| 8 \| 4 \| 10 \| 4 \| nocode-ai-automation-deployment \| This lane connects search traffic to services people can buy: automation setup, deployment, acceptance, and maintenance. \| |
-| docs/automation-digest.md | 726 | \| 306 \| 4 \| 222 \| 8 \| 3 \| 10 \| 4 \| ai-service-pricing-delivery \| This lane turns search demand into services without pretending the site already has traffic or revenue proof. \| |
+| docs/automation-digest.md | 726 | \| 306 \| 4 \| 232 \| 8 \| 3 \| 10 \| 4 \| ai-service-pricing-delivery \| This lane turns search demand into services without pretending the site already has traffic or revenue proof. \| |
 | docs/automation-digest.md | 825 | \| 313 \| 0 \| 32 \| 6 \| 3 \| 5 \| RAG、知识库、向量数据库和引用溯源 \| RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。 \| |
 | docs/automation-digest.md | 827 | \| 307 \| 0 \| 36 \| 6 \| 3 \| 5 \| Dify、n8n、Coze、Flowise、MCP 自动化部署 \| 这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。 \| |
 | docs/automation-digest.md | 988 | - Traffic data available: false |
@@ -79,8 +78,8 @@ None.
 | docs/automation-digest.md | 1402 | - Measured traffic sources: none |
 | docs/automation-digest.md | 1403 | - Search Console verification evidence: false |
 | docs/automation-digest.md | 1406 | - Unsupported traffic claims: 0 |
-| docs/automation-digest.md | 1407 | - Traffic claim files scanned: 211 |
-| docs/automation-digest.md | 1408 | - Traffic claim watch mentions: 3792 |
+| docs/automation-digest.md | 1407 | - Traffic claim files scanned: 219 |
+| docs/automation-digest.md | 1408 | - Traffic claim watch mentions: 3832 |
 | docs/automation-digest.md | 1421 | - Traffic data available: false |
 | docs/automation-digest.md | 1474 | - Measured traffic sources: 0 |
 | docs/automation-digest.md | 1476 | - Traffic data available: false |
@@ -94,6 +93,7 @@ None.
 | docs/automation-digest.md | 1796 | - Traffic data available: false |
 | docs/automation-digest.md | 1825 | - Traffic data available: false |
 | docs/automation-digest.md | 1858 | - Traffic data available: false |
+| docs/automation-digest.md | 1893 | - Traffic data available: false |
 ## Next Actions
 - Keep saying that live/search surfaces are healthy, not that traffic exists.
 - Only report traffic after an audited source provides clicks, impressions, visits, or pageviews.

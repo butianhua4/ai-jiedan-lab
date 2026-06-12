@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:36.401Z",
+  "generatedAt": "2026-06-12T16:32:32.937Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "broadDemandGeneratedAt": "2026-06-12T06:13:35.904Z",
+    "broadDemandGeneratedAt": "2026-06-12T16:32:32.428Z",
     "broadDemandGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -28,7 +28,7 @@
       "reviewReadyDrafts": 633,
       "unsafeClusters": 0
     },
-    "contentFreshnessGeneratedAt": "2026-06-12T06:13:25.052Z",
+    "contentFreshnessGeneratedAt": "2026-06-12T16:32:21.282Z",
     "contentFreshnessGuardrails": {
       "autoPublish": false,
       "note": "This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status."
@@ -54,7 +54,7 @@
       "okUrls": 39,
       "publicGapDecisionFiles": 13,
       "redirectedUrls": 18,
-      "sourceReferences": 261,
+      "sourceReferences": 264,
       "uniqueUrls": 40
     },
     "triageSource": "autopilot-broad-ai-demand readyCandidates joined with content-freshness risk and source health URLs"
@@ -382,89 +382,6 @@
       "articleUpdatedAt": "2026-06-06",
       "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-        "publishConfirm": "not-included"
-      },
-      "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-      "freshnessPriority": 431,
-      "freshnessRisk": "high",
-      "humanFactCheckChecklist": [
-        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
-        "Verify current official docs for product names, APIs, model names, SDK behavior, deployment commands, and version-sensitive details.",
-        "Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.",
-        "Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.",
-        "Rewrite or remove any unsupported fast-changing claim before running mark:review.",
-        "Verify freshness risk: fast-changing broad-demand term: api.",
-        "Verify freshness risk: fast-changing broad-demand term: vllm.",
-        "Verify freshness risk: fast-changing broad-demand term: ollama.",
-        "Apply review focus: 核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异.",
-        "Apply review focus: 不要承诺本地部署一定更省钱或更稳定.",
-        "Apply review focus: 必须包含 smoke check、回滚、日志、限流和成本边界.",
-        "Open source target and verify current guidance: https://platform.openai.com/docs.",
-        "Open source target and verify current guidance: https://platform.openai.com/docs/guides/prompt-engineering.",
-        "Open source target and verify current guidance: https://ai-sdk.dev/docs.",
-        "Open source target and verify current guidance: https://platform.openai.com/docs/guides/agents.",
-        "Open source target and verify current guidance: https://docs.vllm.ai."
-      ],
-      "publicMatches": 0,
-      "readyForHumanFreshnessReview": true,
-      "reviewFocus": [
-        "核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异",
-        "不要承诺本地部署一定更省钱或更稳定",
-        "必须包含 smoke check、回滚、日志、限流和成本边界"
-      ],
-      "riskReasons": [
-        "fast-changing broad-demand term: api",
-        "fast-changing broad-demand term: vllm",
-        "fast-changing broad-demand term: ollama"
-      ],
-      "safeDraft": true,
-      "searchQueries": [
-        "大模型部署教程",
-        "Ollama 本地部署教程",
-        "vLLM 部署教程",
-        "RunPod vLLM serverless",
-        "Hugging Face TGI 部署"
-      ],
-      "sourceSignals": [
-        {
-          "note": "RunPod 文档把 vLLM Serverless 当成独立部署路径，适合做一篇从 endpoint 到 API 调用的教程。",
-          "title": "Deploy vLLM on Runpod Serverless",
-          "type": "official-doc",
-          "url": "https://docs.runpod.io/serverless/vllm/get-started"
-        },
-        {
-          "note": "RunPod 2026 指南覆盖 vLLM Docker、模型加载和生产调优，适合补充 GPU/容器部署角度。",
-          "title": "Deploy vLLM with Docker on Runpod",
-          "type": "vendor-guide",
-          "url": "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker"
-        },
-        {
-          "note": "LLM 部署类搜索结果集中出现 Ollama、vLLM、TGI、GPU cloud、MLOps 等组合词。",
-          "title": "From Prototype to Production: A Complete LLM Deployment Guide",
-          "type": "search-result",
-          "url": "https://www.spheron.network/blog/llm-deployment-guide/"
-        }
-      ],
-      "sourceTargets": [
-        "https://platform.openai.com/docs",
-        "https://platform.openai.com/docs/guides/prompt-engineering",
-        "https://ai-sdk.dev/docs",
-        "https://platform.openai.com/docs/guides/agents",
-        "https://docs.vllm.ai",
-        "https://huggingface.co/docs",
-        "https://platform.openai.com/docs/guides/retrieval",
-        "https://docs.runpod.io/serverless/vllm/get-started",
-        "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
-        "https://www.spheron.network/blog/llm-deployment-guide/"
-      ],
-      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查"
-    },
-    {
-      "articleUpdatedAt": "2026-06-06",
-      "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
-      "commandBoundary": {
         "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/local-llm-vram-not-enough-guide.mdx --confirm-human",
         "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/local-llm-vram-not-enough-guide.mdx",
         "publishConfirm": "not-included"
@@ -543,15 +460,15 @@
       "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型"
     },
     {
-      "articleUpdatedAt": "2026-06-06",
-      "cluster": "Agent 部署、工具调用和生产安全",
+      "articleUpdatedAt": "2026-06-12",
+      "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
         "publishConfirm": "not-included"
       },
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-      "freshnessPriority": 427,
+      "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+      "freshnessPriority": 431,
       "freshnessRisk": "high",
       "humanFactCheckChecklist": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
@@ -559,78 +476,71 @@
         "Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.",
         "Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.",
         "Rewrite or remove any unsupported fast-changing claim before running mark:review.",
-        "Verify freshness risk: fast-changing technical term: api.",
-        "Verify freshness risk: fast-changing technical term: agent.",
-        "Verify freshness risk: fast-changing technical term: model.",
-        "Verify freshness risk: fast-changing technical term: vercel.",
-        "Verify freshness risk: fast-changing technical term: 部署.",
-        "Verify freshness risk: fast-changing technical term: 模型.",
-        "Apply review focus: 不要写成全自动替人完成高风险业务.",
-        "Apply review focus: 明确工具权限、人工确认、日志和失败处理.",
-        "Apply review focus: 核对 SDK/API 的当前名称和部署方式.",
+        "Verify freshness risk: fast-changing broad-demand term: api.",
+        "Verify freshness risk: fast-changing broad-demand term: vllm.",
+        "Verify freshness risk: fast-changing broad-demand term: ollama.",
+        "Apply review focus: 核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异.",
+        "Apply review focus: 不要承诺本地部署一定更省钱或更稳定.",
+        "Apply review focus: 必须包含 smoke check、回滚、日志、限流和成本边界.",
+        "Open source target and verify current guidance: https://platform.openai.com/docs.",
+        "Open source target and verify current guidance: https://platform.openai.com/docs/guides/prompt-engineering.",
         "Open source target and verify current guidance: https://ai-sdk.dev/docs.",
-        "Open source target and verify current guidance: https://platform.openai.com/docs/guides/agents."
+        "Open source target and verify current guidance: https://platform.openai.com/docs/guides/agents.",
+        "Open source target and verify current guidance: https://docs.vllm.ai."
       ],
       "publicMatches": 0,
       "readyForHumanFreshnessReview": true,
       "reviewFocus": [
-        "不要写成全自动替人完成高风险业务",
-        "明确工具权限、人工确认、日志和失败处理",
-        "核对 SDK/API 的当前名称和部署方式"
+        "核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异",
+        "不要承诺本地部署一定更省钱或更稳定",
+        "必须包含 smoke check、回滚、日志、限流和成本边界"
       ],
       "riskReasons": [
-        "fast-changing technical term: api",
-        "fast-changing technical term: agent",
-        "fast-changing technical term: model",
-        "fast-changing technical term: vercel",
-        "fast-changing technical term: 部署",
-        "fast-changing technical term: 模型",
-        "fast-changing technical term: 知识库",
-        "review-sensitive term: 工具",
-        "review-sensitive term: 报价",
-        "review-sensitive term: 客服",
-        "review-sensitive term: 销售",
-        "review-sensitive term: 自动化"
+        "fast-changing broad-demand term: api",
+        "fast-changing broad-demand term: vllm",
+        "fast-changing broad-demand term: ollama"
       ],
       "safeDraft": true,
       "searchQueries": [
-        "AI Agent 部署教程",
-        "Agent 工具调用教程",
-        "AI Agent 生产环境",
-        "LangGraph Agent 入门",
-        "CrewAI 部署教程"
+        "大模型部署教程",
+        "Ollama 本地部署教程",
+        "vLLM 部署教程",
+        "RunPod vLLM serverless",
+        "Hugging Face TGI 部署"
       ],
       "sourceSignals": [
         {
-          "note": "Agent 和工具调用正在从 demo 走向生产，部署文章需要强调权限和人工审批。",
-          "title": "Vercel AI SDK documentation",
+          "note": "RunPod 文档把 vLLM Serverless 当成独立部署路径，适合做一篇从 endpoint 到 API 调用的教程。",
+          "title": "Deploy vLLM on Runpod Serverless",
           "type": "official-doc",
-          "url": "https://ai-sdk.dev/docs"
+          "url": "https://docs.runpod.io/serverless/vllm/get-started"
         },
         {
-          "note": "OpenAI Agents SDK 是 Agent 主题的官方信号源，适合核对工具、handoff、guardrail 等概念。",
-          "title": "OpenAI Agents SDK",
-          "type": "official-doc",
-          "url": "https://openai.github.io/openai-agents-python/"
+          "note": "RunPod 2026 指南覆盖 vLLM Docker、模型加载和生产调优，适合补充 GPU/容器部署角度。",
+          "title": "Deploy vLLM with Docker on Runpod",
+          "type": "vendor-guide",
+          "url": "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker"
         },
         {
-          "note": "LangGraph 是 Agent 工作流搜索中的高频框架，适合做工程化和状态图解释。",
-          "title": "LangGraph documentation",
-          "type": "official-doc",
-          "url": "https://langchain-ai.github.io/langgraph/"
+          "note": "LLM 部署类搜索结果集中出现 Ollama、vLLM、TGI、GPU cloud、MLOps 等组合词。",
+          "title": "From Prototype to Production: A Complete LLM Deployment Guide",
+          "type": "search-result",
+          "url": "https://www.spheron.network/blog/llm-deployment-guide/"
         }
       ],
       "sourceTargets": [
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/agents",
-        "https://python.langchain.com/docs",
-        "https://platform.openai.com/docs",
+        "https://docs.vllm.ai",
+        "https://huggingface.co/docs",
         "https://platform.openai.com/docs/guides/retrieval",
-        "https://platform.openai.com/docs/guides/prompt-engineering",
-        "https://openai.github.io/openai-agents-python/",
-        "https://langchain-ai.github.io/langgraph/"
+        "https://docs.runpod.io/serverless/vllm/get-started",
+        "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+        "https://www.spheron.network/blog/llm-deployment-guide/"
       ],
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查"
     },
     {
       "articleUpdatedAt": "2026-06-06",
@@ -724,6 +634,101 @@
         "https://langchain-ai.github.io/langgraph/"
       ],
       "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
+    },
+    {
+      "articleUpdatedAt": "2026-06-06",
+      "cluster": "Agent 部署、工具调用和生产安全",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+      "freshnessPriority": 427,
+      "freshnessRisk": "high",
+      "humanFactCheckChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify current official docs for product names, APIs, model names, SDK behavior, deployment commands, and version-sensitive details.",
+        "Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.",
+        "Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.",
+        "Rewrite or remove any unsupported fast-changing claim before running mark:review.",
+        "Verify freshness risk: fast-changing technical term: api.",
+        "Verify freshness risk: fast-changing technical term: agent.",
+        "Verify freshness risk: fast-changing technical term: dify.",
+        "Verify freshness risk: fast-changing technical term: n8n.",
+        "Verify freshness risk: fast-changing technical term: rag.",
+        "Verify freshness risk: fast-changing technical term: 部署.",
+        "Apply review focus: 不要写成全自动替人完成高风险业务.",
+        "Apply review focus: 明确工具权限、人工确认、日志和失败处理.",
+        "Apply review focus: 核对 SDK/API 的当前名称和部署方式.",
+        "Open source target and verify current guidance: https://docs.dify.ai.",
+        "Open source target and verify current guidance: https://docs.n8n.io."
+      ],
+      "publicMatches": 0,
+      "readyForHumanFreshnessReview": true,
+      "reviewFocus": [
+        "不要写成全自动替人完成高风险业务",
+        "明确工具权限、人工确认、日志和失败处理",
+        "核对 SDK/API 的当前名称和部署方式"
+      ],
+      "riskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: agent",
+        "fast-changing technical term: dify",
+        "fast-changing technical term: n8n",
+        "fast-changing technical term: rag",
+        "fast-changing technical term: 部署",
+        "fast-changing technical term: 模型",
+        "fast-changing technical term: 知识库",
+        "review-sensitive term: 提示词",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 报价",
+        "review-sensitive term: 客服",
+        "review-sensitive term: 销售"
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "AI Agent 部署教程",
+        "Agent 工具调用教程",
+        "AI Agent 生产环境",
+        "LangGraph Agent 入门",
+        "CrewAI 部署教程"
+      ],
+      "sourceSignals": [
+        {
+          "note": "Agent 和工具调用正在从 demo 走向生产，部署文章需要强调权限和人工审批。",
+          "title": "Vercel AI SDK documentation",
+          "type": "official-doc",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "note": "OpenAI Agents SDK 是 Agent 主题的官方信号源，适合核对工具、handoff、guardrail 等概念。",
+          "title": "OpenAI Agents SDK",
+          "type": "official-doc",
+          "url": "https://openai.github.io/openai-agents-python/"
+        },
+        {
+          "note": "LangGraph 是 Agent 工作流搜索中的高频框架，适合做工程化和状态图解释。",
+          "title": "LangGraph documentation",
+          "type": "official-doc",
+          "url": "https://langchain-ai.github.io/langgraph/"
+        }
+      ],
+      "sourceTargets": [
+        "https://docs.dify.ai",
+        "https://docs.n8n.io",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://python.langchain.com/docs",
+        "https://docs.llamaindex.ai",
+        "https://huggingface.co/docs",
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://openai.github.io/openai-agents-python/",
+        "https://langchain-ai.github.io/langgraph/"
+      ],
+      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
     }
   ],
   "items": [
@@ -1032,89 +1037,6 @@
       "articleUpdatedAt": "2026-06-06",
       "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-        "publishConfirm": "not-included"
-      },
-      "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-      "freshnessPriority": 431,
-      "freshnessRisk": "high",
-      "humanFactCheckChecklist": [
-        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
-        "Verify current official docs for product names, APIs, model names, SDK behavior, deployment commands, and version-sensitive details.",
-        "Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.",
-        "Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.",
-        "Rewrite or remove any unsupported fast-changing claim before running mark:review.",
-        "Verify freshness risk: fast-changing broad-demand term: api.",
-        "Verify freshness risk: fast-changing broad-demand term: vllm.",
-        "Verify freshness risk: fast-changing broad-demand term: ollama.",
-        "Apply review focus: 核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异.",
-        "Apply review focus: 不要承诺本地部署一定更省钱或更稳定.",
-        "Apply review focus: 必须包含 smoke check、回滚、日志、限流和成本边界.",
-        "Open source target and verify current guidance: https://platform.openai.com/docs.",
-        "Open source target and verify current guidance: https://platform.openai.com/docs/guides/prompt-engineering.",
-        "Open source target and verify current guidance: https://ai-sdk.dev/docs.",
-        "Open source target and verify current guidance: https://platform.openai.com/docs/guides/agents.",
-        "Open source target and verify current guidance: https://docs.vllm.ai."
-      ],
-      "publicMatches": 0,
-      "readyForHumanFreshnessReview": true,
-      "reviewFocus": [
-        "核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异",
-        "不要承诺本地部署一定更省钱或更稳定",
-        "必须包含 smoke check、回滚、日志、限流和成本边界"
-      ],
-      "riskReasons": [
-        "fast-changing broad-demand term: api",
-        "fast-changing broad-demand term: vllm",
-        "fast-changing broad-demand term: ollama"
-      ],
-      "safeDraft": true,
-      "searchQueries": [
-        "大模型部署教程",
-        "Ollama 本地部署教程",
-        "vLLM 部署教程",
-        "RunPod vLLM serverless",
-        "Hugging Face TGI 部署"
-      ],
-      "sourceSignals": [
-        {
-          "note": "RunPod 文档把 vLLM Serverless 当成独立部署路径，适合做一篇从 endpoint 到 API 调用的教程。",
-          "title": "Deploy vLLM on Runpod Serverless",
-          "type": "official-doc",
-          "url": "https://docs.runpod.io/serverless/vllm/get-started"
-        },
-        {
-          "note": "RunPod 2026 指南覆盖 vLLM Docker、模型加载和生产调优，适合补充 GPU/容器部署角度。",
-          "title": "Deploy vLLM with Docker on Runpod",
-          "type": "vendor-guide",
-          "url": "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker"
-        },
-        {
-          "note": "LLM 部署类搜索结果集中出现 Ollama、vLLM、TGI、GPU cloud、MLOps 等组合词。",
-          "title": "From Prototype to Production: A Complete LLM Deployment Guide",
-          "type": "search-result",
-          "url": "https://www.spheron.network/blog/llm-deployment-guide/"
-        }
-      ],
-      "sourceTargets": [
-        "https://platform.openai.com/docs",
-        "https://platform.openai.com/docs/guides/prompt-engineering",
-        "https://ai-sdk.dev/docs",
-        "https://platform.openai.com/docs/guides/agents",
-        "https://docs.vllm.ai",
-        "https://huggingface.co/docs",
-        "https://platform.openai.com/docs/guides/retrieval",
-        "https://docs.runpod.io/serverless/vllm/get-started",
-        "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
-        "https://www.spheron.network/blog/llm-deployment-guide/"
-      ],
-      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查"
-    },
-    {
-      "articleUpdatedAt": "2026-06-06",
-      "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
-      "commandBoundary": {
         "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/local-llm-vram-not-enough-guide.mdx --confirm-human",
         "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/local-llm-vram-not-enough-guide.mdx",
         "publishConfirm": "not-included"
@@ -1193,15 +1115,15 @@
       "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型"
     },
     {
-      "articleUpdatedAt": "2026-06-06",
-      "cluster": "Agent 部署、工具调用和生产安全",
+      "articleUpdatedAt": "2026-06-12",
+      "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
         "publishConfirm": "not-included"
       },
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-      "freshnessPriority": 427,
+      "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+      "freshnessPriority": 431,
       "freshnessRisk": "high",
       "humanFactCheckChecklist": [
         "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
@@ -1209,78 +1131,71 @@
         "Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.",
         "Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.",
         "Rewrite or remove any unsupported fast-changing claim before running mark:review.",
-        "Verify freshness risk: fast-changing technical term: api.",
-        "Verify freshness risk: fast-changing technical term: agent.",
-        "Verify freshness risk: fast-changing technical term: model.",
-        "Verify freshness risk: fast-changing technical term: vercel.",
-        "Verify freshness risk: fast-changing technical term: 部署.",
-        "Verify freshness risk: fast-changing technical term: 模型.",
-        "Apply review focus: 不要写成全自动替人完成高风险业务.",
-        "Apply review focus: 明确工具权限、人工确认、日志和失败处理.",
-        "Apply review focus: 核对 SDK/API 的当前名称和部署方式.",
+        "Verify freshness risk: fast-changing broad-demand term: api.",
+        "Verify freshness risk: fast-changing broad-demand term: vllm.",
+        "Verify freshness risk: fast-changing broad-demand term: ollama.",
+        "Apply review focus: 核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异.",
+        "Apply review focus: 不要承诺本地部署一定更省钱或更稳定.",
+        "Apply review focus: 必须包含 smoke check、回滚、日志、限流和成本边界.",
+        "Open source target and verify current guidance: https://platform.openai.com/docs.",
+        "Open source target and verify current guidance: https://platform.openai.com/docs/guides/prompt-engineering.",
         "Open source target and verify current guidance: https://ai-sdk.dev/docs.",
-        "Open source target and verify current guidance: https://platform.openai.com/docs/guides/agents."
+        "Open source target and verify current guidance: https://platform.openai.com/docs/guides/agents.",
+        "Open source target and verify current guidance: https://docs.vllm.ai."
       ],
       "publicMatches": 0,
       "readyForHumanFreshnessReview": true,
       "reviewFocus": [
-        "不要写成全自动替人完成高风险业务",
-        "明确工具权限、人工确认、日志和失败处理",
-        "核对 SDK/API 的当前名称和部署方式"
+        "核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异",
+        "不要承诺本地部署一定更省钱或更稳定",
+        "必须包含 smoke check、回滚、日志、限流和成本边界"
       ],
       "riskReasons": [
-        "fast-changing technical term: api",
-        "fast-changing technical term: agent",
-        "fast-changing technical term: model",
-        "fast-changing technical term: vercel",
-        "fast-changing technical term: 部署",
-        "fast-changing technical term: 模型",
-        "fast-changing technical term: 知识库",
-        "review-sensitive term: 工具",
-        "review-sensitive term: 报价",
-        "review-sensitive term: 客服",
-        "review-sensitive term: 销售",
-        "review-sensitive term: 自动化"
+        "fast-changing broad-demand term: api",
+        "fast-changing broad-demand term: vllm",
+        "fast-changing broad-demand term: ollama"
       ],
       "safeDraft": true,
       "searchQueries": [
-        "AI Agent 部署教程",
-        "Agent 工具调用教程",
-        "AI Agent 生产环境",
-        "LangGraph Agent 入门",
-        "CrewAI 部署教程"
+        "大模型部署教程",
+        "Ollama 本地部署教程",
+        "vLLM 部署教程",
+        "RunPod vLLM serverless",
+        "Hugging Face TGI 部署"
       ],
       "sourceSignals": [
         {
-          "note": "Agent 和工具调用正在从 demo 走向生产，部署文章需要强调权限和人工审批。",
-          "title": "Vercel AI SDK documentation",
+          "note": "RunPod 文档把 vLLM Serverless 当成独立部署路径，适合做一篇从 endpoint 到 API 调用的教程。",
+          "title": "Deploy vLLM on Runpod Serverless",
           "type": "official-doc",
-          "url": "https://ai-sdk.dev/docs"
+          "url": "https://docs.runpod.io/serverless/vllm/get-started"
         },
         {
-          "note": "OpenAI Agents SDK 是 Agent 主题的官方信号源，适合核对工具、handoff、guardrail 等概念。",
-          "title": "OpenAI Agents SDK",
-          "type": "official-doc",
-          "url": "https://openai.github.io/openai-agents-python/"
+          "note": "RunPod 2026 指南覆盖 vLLM Docker、模型加载和生产调优，适合补充 GPU/容器部署角度。",
+          "title": "Deploy vLLM with Docker on Runpod",
+          "type": "vendor-guide",
+          "url": "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker"
         },
         {
-          "note": "LangGraph 是 Agent 工作流搜索中的高频框架，适合做工程化和状态图解释。",
-          "title": "LangGraph documentation",
-          "type": "official-doc",
-          "url": "https://langchain-ai.github.io/langgraph/"
+          "note": "LLM 部署类搜索结果集中出现 Ollama、vLLM、TGI、GPU cloud、MLOps 等组合词。",
+          "title": "From Prototype to Production: A Complete LLM Deployment Guide",
+          "type": "search-result",
+          "url": "https://www.spheron.network/blog/llm-deployment-guide/"
         }
       ],
       "sourceTargets": [
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/agents",
-        "https://python.langchain.com/docs",
-        "https://platform.openai.com/docs",
+        "https://docs.vllm.ai",
+        "https://huggingface.co/docs",
         "https://platform.openai.com/docs/guides/retrieval",
-        "https://platform.openai.com/docs/guides/prompt-engineering",
-        "https://openai.github.io/openai-agents-python/",
-        "https://langchain-ai.github.io/langgraph/"
+        "https://docs.runpod.io/serverless/vllm/get-started",
+        "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
+        "https://www.spheron.network/blog/llm-deployment-guide/"
       ],
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查"
     },
     {
       "articleUpdatedAt": "2026-06-06",
@@ -1700,6 +1615,96 @@
       "title": "企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管"
     },
     {
+      "articleUpdatedAt": "2026-06-12",
+      "cluster": "Agent 部署、工具调用和生产安全",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "freshnessPriority": 427,
+      "freshnessRisk": "high",
+      "humanFactCheckChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify current official docs for product names, APIs, model names, SDK behavior, deployment commands, and version-sensitive details.",
+        "Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.",
+        "Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.",
+        "Rewrite or remove any unsupported fast-changing claim before running mark:review.",
+        "Verify freshness risk: fast-changing technical term: api.",
+        "Verify freshness risk: fast-changing technical term: agent.",
+        "Verify freshness risk: fast-changing technical term: model.",
+        "Verify freshness risk: fast-changing technical term: vercel.",
+        "Verify freshness risk: fast-changing technical term: 部署.",
+        "Verify freshness risk: fast-changing technical term: 模型.",
+        "Apply review focus: 不要写成全自动替人完成高风险业务.",
+        "Apply review focus: 明确工具权限、人工确认、日志和失败处理.",
+        "Apply review focus: 核对 SDK/API 的当前名称和部署方式.",
+        "Open source target and verify current guidance: https://ai-sdk.dev/docs.",
+        "Open source target and verify current guidance: https://platform.openai.com/docs/guides/agents."
+      ],
+      "publicMatches": 0,
+      "readyForHumanFreshnessReview": true,
+      "reviewFocus": [
+        "不要写成全自动替人完成高风险业务",
+        "明确工具权限、人工确认、日志和失败处理",
+        "核对 SDK/API 的当前名称和部署方式"
+      ],
+      "riskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: agent",
+        "fast-changing technical term: model",
+        "fast-changing technical term: vercel",
+        "fast-changing technical term: 部署",
+        "fast-changing technical term: 模型",
+        "fast-changing technical term: 知识库",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 报价",
+        "review-sensitive term: 客服",
+        "review-sensitive term: 销售",
+        "review-sensitive term: 自动化"
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "AI Agent 部署教程",
+        "Agent 工具调用教程",
+        "AI Agent 生产环境",
+        "LangGraph Agent 入门",
+        "CrewAI 部署教程"
+      ],
+      "sourceSignals": [
+        {
+          "note": "Agent 和工具调用正在从 demo 走向生产，部署文章需要强调权限和人工审批。",
+          "title": "Vercel AI SDK documentation",
+          "type": "official-doc",
+          "url": "https://ai-sdk.dev/docs"
+        },
+        {
+          "note": "OpenAI Agents SDK 是 Agent 主题的官方信号源，适合核对工具、handoff、guardrail 等概念。",
+          "title": "OpenAI Agents SDK",
+          "type": "official-doc",
+          "url": "https://openai.github.io/openai-agents-python/"
+        },
+        {
+          "note": "LangGraph 是 Agent 工作流搜索中的高频框架，适合做工程化和状态图解释。",
+          "title": "LangGraph documentation",
+          "type": "official-doc",
+          "url": "https://langchain-ai.github.io/langgraph/"
+        }
+      ],
+      "sourceTargets": [
+        "https://ai-sdk.dev/docs",
+        "https://platform.openai.com/docs/guides/agents",
+        "https://python.langchain.com/docs",
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://openai.github.io/openai-agents-python/",
+        "https://langchain-ai.github.io/langgraph/"
+      ],
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+    },
+    {
       "articleUpdatedAt": "2026-06-06",
       "cluster": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
       "commandBoundary": {
@@ -1770,89 +1775,6 @@
         "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
       ],
       "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则"
-    },
-    {
-      "articleUpdatedAt": "2026-06-06",
-      "cluster": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
-      "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-        "publishConfirm": "not-included"
-      },
-      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-      "freshnessPriority": 425,
-      "freshnessRisk": "high",
-      "humanFactCheckChecklist": [
-        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
-        "Verify current official docs for product names, APIs, model names, SDK behavior, deployment commands, and version-sensitive details.",
-        "Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.",
-        "Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.",
-        "Rewrite or remove any unsupported fast-changing claim before running mark:review.",
-        "Verify freshness risk: fast-changing technical term: agent.",
-        "Verify freshness risk: fast-changing technical term: n8n.",
-        "Verify freshness risk: fast-changing technical term: rag.",
-        "Verify freshness risk: fast-changing technical term: 部署.",
-        "Verify freshness risk: fast-changing technical term: 模型.",
-        "Verify freshness risk: fast-changing technical term: 知识库.",
-        "Apply review focus: 区分知识库 RAG 和用户记忆.",
-        "Apply review focus: 必须有隐私、删除、去重、引用和人工纠错边界.",
-        "Apply review focus: 避免宣称记忆层能自动解决幻觉.",
-        "Open source target and verify current guidance: https://arxiv.org/abs/2604.20598.",
-        "Open source target and verify current guidance: https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/."
-      ],
-      "publicMatches": 0,
-      "readyForHumanFreshnessReview": true,
-      "reviewFocus": [
-        "区分知识库 RAG 和用户记忆",
-        "必须有隐私、删除、去重、引用和人工纠错边界",
-        "避免宣称记忆层能自动解决幻觉"
-      ],
-      "riskReasons": [
-        "fast-changing technical term: agent",
-        "fast-changing technical term: n8n",
-        "fast-changing technical term: rag",
-        "fast-changing technical term: 部署",
-        "fast-changing technical term: 模型",
-        "fast-changing technical term: 知识库",
-        "review-sensitive term: 工具",
-        "review-sensitive term: 客服",
-        "review-sensitive term: 销售",
-        "review-sensitive term: 自动化"
-      ],
-      "safeDraft": true,
-      "searchQueries": [
-        "AI Agent 记忆怎么做",
-        "Agent memory RAG",
-        "AI Agent 长期记忆",
-        "pgvector Agent memory",
-        "RAG 和记忆区别"
-      ],
-      "sourceSignals": [
-        {
-          "note": "2026 RAG/Agent 讨论明显关注 structured memory、temporal/confidence/relationship 等维度。",
-          "title": "Self-Aware Vector Embeddings for Retrieval-Augmented Generation",
-          "type": "research",
-          "url": "https://arxiv.org/abs/2604.20598"
-        },
-        {
-          "note": "社区讨论集中在“vector DB 不是 memory”，适合做反常识型解释文章。",
-          "title": "Vector dbs aren't memory",
-          "type": "community",
-          "url": "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/"
-        },
-        {
-          "note": "RAG 记忆教程开始把 pgvector、agent orchestration 和 retrieval strategy 放在一起讲。",
-          "title": "Memory and RAG Tutorial",
-          "type": "official-doc",
-          "url": "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
-        }
-      ],
-      "sourceTargets": [
-        "https://arxiv.org/abs/2604.20598",
-        "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/",
-        "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
-      ],
-      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储"
     },
     {
       "articleUpdatedAt": "2026-06-06",
@@ -2019,7 +1941,90 @@
       "title": "RAG 怎么显示引用来源：文档名、页码、片段和可信度"
     },
     {
-      "articleUpdatedAt": "2026-06-06",
+      "articleUpdatedAt": "2026-06-12",
+      "cluster": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+      "freshnessPriority": 425,
+      "freshnessRisk": "high",
+      "humanFactCheckChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify current official docs for product names, APIs, model names, SDK behavior, deployment commands, and version-sensitive details.",
+        "Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.",
+        "Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.",
+        "Rewrite or remove any unsupported fast-changing claim before running mark:review.",
+        "Verify freshness risk: fast-changing technical term: agent.",
+        "Verify freshness risk: fast-changing technical term: n8n.",
+        "Verify freshness risk: fast-changing technical term: rag.",
+        "Verify freshness risk: fast-changing technical term: 部署.",
+        "Verify freshness risk: fast-changing technical term: 模型.",
+        "Verify freshness risk: fast-changing technical term: 知识库.",
+        "Apply review focus: 区分知识库 RAG 和用户记忆.",
+        "Apply review focus: 必须有隐私、删除、去重、引用和人工纠错边界.",
+        "Apply review focus: 避免宣称记忆层能自动解决幻觉.",
+        "Open source target and verify current guidance: https://arxiv.org/abs/2604.20598.",
+        "Open source target and verify current guidance: https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/."
+      ],
+      "publicMatches": 0,
+      "readyForHumanFreshnessReview": true,
+      "reviewFocus": [
+        "区分知识库 RAG 和用户记忆",
+        "必须有隐私、删除、去重、引用和人工纠错边界",
+        "避免宣称记忆层能自动解决幻觉"
+      ],
+      "riskReasons": [
+        "fast-changing technical term: agent",
+        "fast-changing technical term: n8n",
+        "fast-changing technical term: rag",
+        "fast-changing technical term: 部署",
+        "fast-changing technical term: 模型",
+        "fast-changing technical term: 知识库",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 客服",
+        "review-sensitive term: 销售",
+        "review-sensitive term: 自动化"
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "AI Agent 记忆怎么做",
+        "Agent memory RAG",
+        "AI Agent 长期记忆",
+        "pgvector Agent memory",
+        "RAG 和记忆区别"
+      ],
+      "sourceSignals": [
+        {
+          "note": "2026 RAG/Agent 讨论明显关注 structured memory、temporal/confidence/relationship 等维度。",
+          "title": "Self-Aware Vector Embeddings for Retrieval-Augmented Generation",
+          "type": "research",
+          "url": "https://arxiv.org/abs/2604.20598"
+        },
+        {
+          "note": "社区讨论集中在“vector DB 不是 memory”，适合做反常识型解释文章。",
+          "title": "Vector dbs aren't memory",
+          "type": "community",
+          "url": "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/"
+        },
+        {
+          "note": "RAG 记忆教程开始把 pgvector、agent orchestration 和 retrieval strategy 放在一起讲。",
+          "title": "Memory and RAG Tutorial",
+          "type": "official-doc",
+          "url": "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
+        }
+      ],
+      "sourceTargets": [
+        "https://arxiv.org/abs/2604.20598",
+        "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/",
+        "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
+      ],
+      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储"
+    },
+    {
+      "articleUpdatedAt": "2026-06-12",
       "cluster": "RAG、知识库、向量数据库和引用溯源",
       "commandBoundary": {
         "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
@@ -2044,8 +2049,8 @@
         "Apply review focus: 把 RAG、微调、提示词模板区分清楚.",
         "Apply review focus: 必须写明引用、来源、权限和失败兜底.",
         "Apply review focus: 不要把 demo 成功写成生产质量保证.",
-        "Open source target and verify current guidance: https://platform.openai.com/docs/guides/retrieval.",
-        "Open source target and verify current guidance: https://platform.openai.com/docs/guides/prompt-engineering."
+        "Open source target and verify current guidance: https://platform.openai.com/docs.",
+        "Open source target and verify current guidance: https://ai-sdk.dev/docs."
       ],
       "publicMatches": 0,
       "readyForHumanFreshnessReview": true,
@@ -2094,16 +2099,17 @@
         }
       ],
       "sourceTargets": [
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://python.langchain.com/docs",
         "https://docs.llamaindex.ai",
         "https://huggingface.co/docs",
-        "https://platform.openai.com/docs",
-        "https://ai-sdk.dev/docs",
         "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
         "https://arxiv.org/abs/2603.10700",
-        "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+        "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+        "https://platform.openai.com/docs/guides/agents"
       ],
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
     },
@@ -2192,7 +2198,7 @@
       "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用"
     },
     {
-      "articleUpdatedAt": "2026-06-06",
+      "articleUpdatedAt": "2026-06-12",
       "cluster": "全行业 AI 提示词和工作流模板",
       "commandBoundary": {
         "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",

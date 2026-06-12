@@ -1,6 +1,6 @@
 # Search Intent Lane Map
 
-Generated at: 2026-06-12T06:13:04.026Z
+Generated at: 2026-06-12T16:31:59.804Z
 
 This report is read-only. It maps broad AI search-intent lanes to existing public articles and safe draft candidates. It does not claim keyword volume, impressions, clicks, or traffic.
 
@@ -26,7 +26,7 @@ This report is read-only. It maps broad AI search-intent lanes to existing publi
 - lanesWithReadyDrafts: 12
 - lanesWithoutPublicCoverage: 10
 - maxPriorityScore: 386
-- notReadyMatchedDrafts: 355
+- notReadyMatchedDrafts: 321
 - totalReadyDraftMatches: 233
 
 ## Top Lanes
@@ -70,14 +70,14 @@ Matched safe draft candidates:
 
 | Current | Wave 1 | Expansion | Score | Batch | Category | Primary keyword | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | true | true | 90 | 40 | AI 提示词 | 全行业 AI 提示词模板 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | true | true | 86 | 34 | AI 部署 | 客服 AI 模型选型 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | true | true | 100 | 40 | AI 提示词 | 全行业 AI 提示词模板 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | true | true | 100 | 34 | AI 部署 | 客服 AI 模型选型 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| false | false | true | 100 | 31 | AI 提示词 | 数据分析 AI 提示词 | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
+| false | false | true | 100 | 31 | AI 提示词 | 教育 AI 提示词 | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
+| false | false | true | 100 | 30 | AI 提示词 | 客服 AI 提示词 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
+| false | false | true | 100 | 30 | AI 提示词 | 电商 AI 提示词 | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
 | false | false | true | 86 | 32 | AI 提示词 | 团队 AI 提示词库 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
-| false | false | true | 86 | 31 | AI 提示词 | 数据分析 AI 提示词 | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
-| false | false | true | 86 | 31 | AI 提示词 | 教育 AI 提示词 | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
-| false | false | true | 86 | 30 | AI 提示词 | 客服 AI 提示词 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
-| false | false | true | 86 | 30 | AI 提示词 | 电商 AI 提示词 | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
-| false | false | false | 86 | 31 | AI 提示词 | 医疗 AI 提示词 | 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 | content/blog/healthcare-admin-ai-prompts-guide.mdx |
+| false | false | false | 100 | 31 | AI 提示词 | 运营 AI 提示词 | 运营 AI 提示词模板：周报、SOP、活动计划、复盘和数据解释 | content/blog/operations-ai-prompts-guide.mdx |
 
 ## Business department AI workflows across sales, support, ops, HR, finance, legal, and education
 
@@ -104,14 +104,14 @@ Matched safe draft candidates:
 
 | Current | Wave 1 | Expansion | Score | Batch | Category | Primary keyword | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | true | true | 90 | 40 | AI 提示词 | 全行业 AI 提示词模板 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | true | true | 86 | 34 | AI 部署 | 客服 AI 模型选型 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | true | true | 100 | 40 | AI 提示词 | 全行业 AI 提示词模板 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | true | true | 100 | 34 | AI 部署 | 客服 AI 模型选型 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| false | false | true | 100 | 31 | AI 提示词 | 教育 AI 提示词 | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
+| false | false | true | 100 | 30 | AI 提示词 | 客服 AI 提示词 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
+| false | false | true | 100 | 30 | AI 提示词 | 电商 AI 提示词 | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
 | false | false | true | 86 | 33 | AI 部署 | Dify 工作流错误处理 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | false | false | true | 86 | 33 | AI 部署 | Open WebUI Functions Pipelines | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
-| false | false | true | 86 | 31 | AI 提示词 | 教育 AI 提示词 | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
-| false | false | true | 86 | 30 | AI 提示词 | 客服 AI 提示词 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
-| false | false | true | 86 | 30 | AI 提示词 | 电商 AI 提示词 | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
-| false | false | false | 86 | 31 | AI 提示词 | 制造业 AI 提示词 | 制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘 | content/blog/manufacturing-ai-prompts-guide.mdx |
+| false | false | false | 100 | 31 | AI 提示词 | 运营 AI 提示词 | 运营 AI 提示词模板：周报、SOP、活动计划、复盘和数据解释 | content/blog/operations-ai-prompts-guide.mdx |
 
 ## AI Agent deployment, tool calling, and production workflow
 
@@ -140,14 +140,14 @@ Matched safe draft candidates:
 
 | Current | Wave 1 | Expansion | Score | Batch | Category | Primary keyword | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | true | true | 90 | 40 | AI Agent | AI Agent 部署 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| false | false | true | 90 | 40 | AI 记忆 | AI Agent 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| false | false | true | 86 | 33 | 接单报价 | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| true | true | true | 100 | 40 | AI Agent | AI Agent 部署 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| false | false | true | 100 | 40 | AI 记忆 | AI Agent 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| false | false | true | 86 | 33 | 项目报价 | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | false | false | true | 86 | 33 | AI 部署 | Dify 工作流错误处理 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | false | false | true | 86 | 33 | AI 部署 | Dify Workflow 和 Agent 区别 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
-| false | false | false | 86 | 33 | AI 部署 | 企业微信 飞书 Slack AI Agent | 企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管 | content/blog/enterprise-im-ai-agent-integration-guide.mdx |
-| false | false | false | 86 | 33 | AI 部署 | n8n AI Agent 知识库记忆 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
-| false | false | false | 86 | 33 | AI 部署 | n8n AI Agent Webhook | n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试 | content/blog/n8n-ai-agent-webhook-production-guide.mdx |
+| false | false | false | 100 | 33 | AI 部署 | n8n AI Agent 知识库记忆 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
+| false | false | false | 100 | 23 | AI 基建 | Agent 生产上线 | Agent 生产上线检查表：权限、日志、成本和人工确认 | content/blog/agent-production-deployment-checklist.mdx |
+| false | false | false | 100 | 21 | AI 基建 | Agent 记忆 | Agent 记忆怎么设计：短期记忆、长期记忆和用户偏好 | content/blog/agent-memory-design-guide.mdx |
 
 ## RAG, knowledge base, and Agent memory
 
@@ -176,14 +176,14 @@ Matched safe draft candidates:
 
 | Current | Wave 1 | Expansion | Score | Batch | Category | Primary keyword | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | true | true | 86 | 34 | AI 部署 | 客服 AI 模型选型 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| false | false | true | 90 | 40 | AI 记忆 | AI Agent 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| false | false | true | 86 | 33 | 接单报价 | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| true | true | true | 100 | 34 | AI 部署 | 客服 AI 模型选型 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| false | false | true | 100 | 40 | AI 记忆 | AI Agent 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| false | false | true | 100 | 30 | AI 提示词 | 客服 AI 提示词 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
+| false | false | true | 86 | 33 | 项目报价 | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | false | false | true | 86 | 33 | AI 部署 | Open WebUI Functions Pipelines | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
-| false | false | true | 86 | 30 | AI 提示词 | 客服 AI 提示词 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
-| false | false | false | 86 | 33 | AI 部署 | n8n AI Agent 知识库记忆 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
-| false | false | false | 86 | 32 | AI 基建 | Agent 记忆数据库设计 | Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则 | content/blog/agent-memory-postgres-schema-guide.mdx |
-| false | false | false | 86 | 32 | AI 基建 | RAG 引用来源 | RAG 怎么显示引用来源：文档名、页码、片段和可信度 | content/blog/rag-citation-source-trace-guide.mdx |
+| false | false | false | 100 | 33 | AI 部署 | n8n AI Agent 知识库记忆 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
+| false | false | false | 100 | 25 | AI 基建 | RAG 向量数据库怎么选 | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| false | false | false | 100 | 21 | AI 基建 | Agent 记忆 | Agent 记忆怎么设计：短期记忆、长期记忆和用户偏好 | content/blog/agent-memory-design-guide.mdx |
 
 ## Large model deployment, LLM serving, and GPU infrastructure
 
@@ -212,14 +212,14 @@ Matched safe draft candidates:
 
 | Current | Wave 1 | Expansion | Score | Batch | Category | Primary keyword | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| false | false | true | 90 | 40 | AI 部署 | 大模型部署 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| false | false | true | 100 | 40 | AI 部署 | 大模型部署 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | false | false | true | 86 | 32 | AI 部署 | 本地部署大模型显存不够 | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 | content/blog/local-llm-vram-not-enough-guide.mdx |
 | false | false | true | 86 | 29 | AI 基建 | Docker 使用 NVIDIA GPU | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
+| false | false | false | 100 | 21 | AI 基建 | 大模型部署成本 | 大模型部署成本和延迟怎么估算：上线前检查清单 | content/blog/llm-serving-cost-latency-checklist.mdx |
 | false | false | false | 86 | 34 | AI 部署 | 大模型成本监控 | 大模型成本监控怎么做：按用户、功能、模型和项目拆账 | content/blog/llm-cost-monitoring-dashboard-guide.mdx |
 | false | false | false | 86 | 32 | AI 部署 | 大模型 API 限流重试 | 大模型 API 限流和重试怎么做：429、队列、退避和降级方案 | content/blog/llm-api-rate-limit-retry-guide.mdx |
 | false | false | false | 86 | 29 | AI 基建 | BentoML LLM 部署 | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
 | false | false | false | 86 | 29 | AI 基建 | Hugging Face TGI 部署 | Hugging Face TGI 怎么部署：Text Generation Inference 入门检查表 | content/blog/huggingface-tgi-deployment-guide.mdx |
-| false | false | false | 86 | 29 | AI 基建 | Kubernetes GPU 大模型部署 | Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界 | content/blog/kubernetes-gpu-llm-deployment-guide.mdx |
 
 ## Dify, n8n, no-code AI automation, and workflow deployment
 
@@ -247,11 +247,11 @@ Matched safe draft candidates:
 
 | Current | Wave 1 | Expansion | Score | Batch | Category | Primary keyword | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| false | false | true | 86 | 33 | 接单报价 | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| false | false | true | 86 | 33 | 项目报价 | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | false | false | true | 86 | 33 | AI 部署 | Dify 工作流错误处理 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | false | false | true | 86 | 33 | AI 部署 | Dify Workflow 和 Agent 区别 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
 | false | false | true | 86 | 33 | AI 部署 | Open WebUI Functions Pipelines | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
-| false | false | false | 86 | 33 | AI 部署 | n8n AI Agent 知识库记忆 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
+| false | false | false | 100 | 33 | AI 部署 | n8n AI Agent 知识库记忆 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 | false | false | false | 86 | 33 | AI 部署 | n8n AI Agent Webhook | n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试 | content/blog/n8n-ai-agent-webhook-production-guide.mdx |
 | false | false | false | 86 | 26 | AI 基建 | Dify 接入 Ollama | Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试 | content/blog/dify-ollama-local-model-guide.mdx |
 | false | false | false | 86 | 26 | AI 基建 | Dify 接 OpenAI API | Dify 怎么接 OpenAI API：模型供应商、LLM 节点和费用边界 | content/blog/dify-openai-api-provider-guide.mdx |
@@ -283,11 +283,11 @@ Matched safe draft candidates:
 
 | Current | Wave 1 | Expansion | Score | Batch | Category | Primary keyword | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| false | false | true | 90 | 40 | AI 部署 | 大模型部署 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| false | false | true | 100 | 40 | AI 部署 | 大模型部署 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | false | false | true | 86 | 34 | AI 部署 | AI API Key 安全管理 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | false | false | true | 86 | 34 | AI 部署 | Claude API rate limit reached | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
 | false | false | true | 86 | 34 | AI 部署 | Gemini API 限流 | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | content/blog/gemini-api-rate-limit-debug-guide.mdx |
-| false | false | false | 86 | 34 | AI 部署 | 多模型 Router 降级 | 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 | content/blog/multi-model-router-fallback-guide.mdx |
+| false | false | false | 100 | 34 | AI 部署 | 多模型 Router 降级 | 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 | content/blog/multi-model-router-fallback-guide.mdx |
 | false | false | false | 86 | 34 | AI 部署 | OpenAI Batch API | OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制 | content/blog/openai-batch-api-cost-guide.mdx |
 | false | false | false | 86 | 34 | AI 部署 | Vercel AI Gateway 多模型 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 | false | false | false | 86 | 32 | AI 部署 | 大模型 API 限流重试 | 大模型 API 限流和重试怎么做：429、队列、退避和降级方案 | content/blog/llm-api-rate-limit-retry-guide.mdx |
@@ -342,4 +342,4 @@ Matched safe draft candidates:
 | 282 | 8 | 0 | 9 | 0 | 0 | 1 | 9 | MCP, tool permissions, and enterprise integration safety | demandScore=8; no public coverage; readyDrafts=9 |
 | 278 | 8 | 0 | 13 | 0 | 0 | 0 | 2 | LLM observability, evaluation, and production quality | demandScore=8; no public coverage; readyDrafts=13 |
 | 200 | 8 | 3 | 13 | 0 | 0 | 4 | 92 | AI app deployment errors and beginner troubleshooting | demandScore=8; public coverage=3; readyDrafts=13 |
-| 188 | 8 | 3 | 11 | 0 | 0 | 1 | 206 | AI automation service pricing, scope, and delivery checklist | demandScore=8; public coverage=3; readyDrafts=11 |
+| 196 | 8 | 2 | 11 | 0 | 0 | 1 | 172 | AI automation service pricing, scope, and delivery checklist | demandScore=8; public coverage=2; readyDrafts=11 |

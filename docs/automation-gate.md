@@ -1,6 +1,6 @@
 # Automation Gate
 
-Generated at: 2026-06-12T06:13:55.602Z
+Generated at: 2026-06-12T16:32:53.809Z
 
 Overall: PASS
 
@@ -39,7 +39,7 @@ Overall: PASS
 | project status still stops before publishing | PASS | publicPublished=15, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=211, unsafeClaims=0, watchMentions=3792 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=219, unsafeClaims=0, watchMentions=3828 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit mirrors mojibake warnings without blocking | PASS | warnings=77, mojibake=77, publicMojibake=9, remediationAffected=77/9 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=15, recommended=3, wave=3 |
@@ -51,8 +51,8 @@ Overall: PASS
 | source target health audit has reachable URLs for every covered review file | PASS | checked=40, ok=39, failed=1, missingTargets=0, filesWithoutReachable=0 |
 | source target remediation pack is read-only and mirrors source health counts | PASS | items=19, failed=1/1, redirected=18/18 |
 | source target remediation pack keeps every source fix human-gated | PASS | ready=19, unsafe=0, gated=19, replacementCandidates=8 |
-| source replacement decision pack is read-only and mirrors remediation counts | PASS | decisions=113, remediation=19, failed=1/1, redirected=112/18 |
-| source replacement decision pack keeps file-level decisions human-gated | PASS | unsafe=0, gated=113, recommended=1, official=1 |
+| source replacement decision pack is read-only and mirrors remediation counts | PASS | decisions=114, remediation=19, failed=1/1, redirected=113/18 |
+| source replacement decision pack keeps file-level decisions human-gated | PASS | unsafe=0, gated=114, recommended=1, official=1 |
 | review action board is read-only and covers active review queues | PASS | tasks=16, wave=3, publicGap=13 |
 | review action board tasks are ready and preserve command boundaries | PASS | ready=16, unsafe=0 |
 | review portfolio board deduplicates all review packs | PASS | sourceCandidates=38, uniqueItems=26, duplicates=12, multiSource=10 |
@@ -65,12 +65,12 @@ Overall: PASS
 | autopilot search intent brief produces human review suggestions | PASS | title=1, description=1, heading=0, body=1 |
 | autopilot internal link brief covers approval packet | PASS | items=3, public=15, unsafe=0 |
 | autopilot internal link brief provides public link suggestions | PASS | suggestions=3, missingCurrentPublicLink=3, alreadyLinked=0 |
-| autopilot source verification brief covers approval packet | PASS | items=3, reachable=25, unsafe=0 |
+| autopilot source verification brief covers approval packet | PASS | items=3, reachable=26, unsafe=0 |
 | autopilot source verification brief provides source-backed review tasks | PASS | reachableItems=3, official=3, factChecks=3, approvalChecks=3 |
 | autopilot human review playbook covers approval packet | PASS | items=3, ready=3, unsafe=0 |
 | autopilot human review playbook keeps actions human-gated | PASS | commands=3, search=3, source=3, links=3 |
 | autopilot approval remediation pack covers approval packet | PASS | items=3, ready=3, unsafe=0 |
-| autopilot approval remediation pack has actionable human fixes | PASS | commands=3, links=3, search=3, source=3, sourceUrlFixes=3/34 |
+| autopilot approval remediation pack has actionable human fixes | PASS | commands=3, links=3, search=3, source=3, sourceUrlFixes=3/35 |
 | human approval decision matrix covers approval packet | PASS | rows=3, approvals=3, unsafe=0 |
 | human approval decision matrix stays human-gated and decision-ready | PASS | commands=3, repairs=3, branches=9, publishConfirm=0 |
 | human approval repair queue covers decision matrix | PASS | files=3, tasks=57, minimum=3/18, blockers=0/0, unsafe=0 |
@@ -79,7 +79,7 @@ Overall: PASS
 | human approval repair route stays manual and non-publishing | PASS | sessions=12, publishConfirm=0, highRisk=6 |
 | human approval repair progress covers repair route | PASS | files=3, categories=18, open=11, blocked=0 |
 | human approval repair progress stays manual and non-publishing | PASS | readyAfterRepair=0, open=11, evidenceReady=3, publishConfirm=0 |
-| human approval repair session pack covers current repair progress | PASS | files=3, actions=192, sourceUrl=62, sourceTargets=18 |
+| human approval repair session pack covers current repair progress | PASS | files=3, actions=194, sourceUrl=63, sourceTargets=19 |
 | human approval repair session pack stays manual and non-publishing | PASS | unsafe=0, publishConfirm=0, readyAfterRepair=0 |
 | autopilot review sprint board covers next assignments | PASS | items=10, readyWithPlaybook=3, queued=7, needsQuery=0, unsafe=0 |
 | autopilot review sprint board keeps sprint actions human-gated | PASS | ready=10, commands=10, queries=10, sources=10 |
@@ -108,7 +108,7 @@ Overall: PASS
 | human approval clearance pack is read-only and covers the full approval queue | PASS | items=8, immediate=3, backlog=5, failedSources=1, seo=2 |
 | human approval clearance pack keeps all work human-gated and action-ready | PASS | ready=8, actions=63, sourceDecisions=3, copydesk=4, publishConfirm=0 |
 | review optimization brief is read-only and covers ready action-board tasks | PASS | briefs=16, ready=16, unsafeCommands=0 |
-| review optimization brief has actionable copydesk guidance | PASS | withAction=16, missingPublicLinkItems=15, exactQueryWeak=4 |
+| review optimization brief has actionable copydesk guidance | PASS | withAction=16, missingPublicLinkItems=15, exactQueryWeak=3 |
 | search snippet readiness audit is read-only and covers public plus expansion items | PASS | public=15, expansion=19, scoped=34 |
 | search snippet readiness audit has no blocking Wave 1 issues | PASS | blocking=0, wave=3, waveBlocking=0, warnings=13 |
 | structured data readiness audit is read-only and covers public plus expansion items | PASS | public=15, expansion=19, scoped=34 |
@@ -138,23 +138,23 @@ Overall: PASS
 | industry prompt module pack is read-only and mirrors opportunity modules | PASS | items=12/12, blueprints=60/60 |
 | industry prompt module pack has reusable prompt blueprints and human gates | PASS | safe=true, gated=12, copyPrompts=12, reviewBridge=11 |
 | search intent lane map is read-only and broad | PASS | lanes=12, highPriority=12, withReadyDrafts=12 |
-| search intent lane map includes sources, review focus, and safe candidates | PASS | readyDraftMatches=233, noPublicCoverage=10, notReadyMatched=355 |
-| search intent approval packet is read-only and covers current wave plus next gaps | PASS | currentWave=3, nextGap=6, nextGapLanes=3 |
+| search intent lane map includes sources, review focus, and safe candidates | PASS | readyDraftMatches=233, noPublicCoverage=10, notReadyMatched=321 |
+| search intent approval packet is read-only and covers current wave plus next gaps | PASS | currentWave=3, nextGap=6, nextGapLanes=4 |
 | search intent approval packet has no unsafe items and includes review context | PASS | unsafe=0, currentReady=3, nextGap=6 |
-| search intent wave planner is read-only and continuous | PASS | waves=4, items=12, files=12, lanes=6 |
+| search intent wave planner is read-only and continuous | PASS | waves=4, items=12, files=12, lanes=7 |
 | search intent wave planner keeps all items safe for manual review | PASS | unsafe=0, ready=12, planned=12 |
-| search query coverage is read-only and matches planned waves | PASS | items=12, waves=4, files=12, lanes=6 |
-| search query coverage has broad user-search variants | PASS | uniqueQueries=360, ready=12, unsafe=0 |
-| search query match audit is read-only and covers query plan | PASS | items=12, ready=12, warnings=8 |
-| search query match audit has no blocking search-alignment issues | PASS | blocking=0, averageFamilies=7 |
-| search demand intake is read-only and covers broad user-search lanes | PASS | lanes=8, readyLanes=8, readyFiles=45, unsafe=0 |
+| search query coverage is read-only and matches planned waves | PASS | items=12, waves=4, files=12, lanes=7 |
+| search query coverage has broad user-search variants | PASS | uniqueQueries=365, ready=12, unsafe=0 |
+| search query match audit is read-only and covers query plan | PASS | items=12, ready=12, warnings=7 |
+| search query match audit has no blocking search-alignment issues | PASS | blocking=0, averageFamilies=6.92 |
+| search demand intake is read-only and covers broad user-search lanes | PASS | lanes=8, readyLanes=8, readyFiles=43, unsafe=0 |
 | search demand intake packages sources, formats, and manual review boundaries | PASS | queries=81, sources=29, formats=32, queueMatches=33 |
 | search demand review pack is read-only and covers intake lanes | PASS | lanes=8, items=16, maxPerLane=2, unsafe=0 |
 | search demand review pack keeps review actions human-gated | PASS | ready=16, commands=16, sources=16, queries=16, factChecks=79 |
 | search demand publication bridge is read-only and matches review pack | PASS | items=16, reviewPackItems=16, blocking=0, warnings=16 |
 | search demand publication bridge confirms manual approval readiness | PASS | approvalReady=16, snippet=16, schema=16, source=16, links=13 |
 | broad search demand map is read-only and covers major demand themes | PASS | themes=10, readyThemes=10, uniqueCandidates=56 |
-| broad search demand map links demand, sources, and planned review waves | PASS | officialSources=13, reviewPackMatches=4, waveMatches=24, readyMatches=417 |
+| broad search demand map links demand, sources, and planned review waves | PASS | officialSources=13, reviewPackMatches=4, waveMatches=22, readyMatches=417 |
 | mass AI search action matrix is read-only and covers broad themes | PASS | items=8/8, broad=10, unique=45, traffic=false |
 | mass AI search action matrix keeps prompt and deployment work human-gated | PASS | ready=8, deploy=6, prompt=2, unsafe=0 |
 | popular AI prompt playbook is read-only and covers broad prompt demand | PASS | items=10, work=3, agent=3, memory=1, sources=12 |

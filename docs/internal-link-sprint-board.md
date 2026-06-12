@@ -1,6 +1,6 @@
 # Internal Link Sprint Board
 
-Generated at: 2026-06-12T06:12:57.515Z
+Generated at: 2026-06-12T16:31:53.184Z
 
 This report is read-only. It turns public-link suggestions into manual internal-link review waves without editing article bodies.
 
@@ -58,13 +58,13 @@ This report is read-only. It turns public-link suggestions into manual internal-
 | 1 | true | 294 | 0 | 3 | broad-first-coverage, expansion, recommended, wave-1 | /blog/build-first-webpage-with-codex | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 1 | true | 156 | 0 | 3 | broad-first-coverage, expansion | /blog/codex-code-review-delivery-checklist | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | 2 | true | 130 | 0 | 3 | broad-first-coverage | /blog/build-first-webpage-with-codex | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
-| 2 | true | 128 | 0 | 3 | broad-first-coverage | /blog/first-upwork-project-pricing-checklist | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+| 2 | true | 128 | 0 | 3 | broad-first-coverage | /blog/codex-code-review-delivery-checklist | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
 | 2 | true | 128 | 0 | 3 | broad-first-coverage | /blog/vercel-env-variable-missing-beginner-guide | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | 2 | true | 113 | 1 | 3 | broad-first-coverage, expansion | /blog/codex-code-review-delivery-checklist | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
-| 3 | true | 111 | 0 | 3 | expansion | /blog/build-first-webpage-with-codex | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| 3 | true | 111 | 0 | 3 | expansion | /blog/codex-code-review-delivery-checklist | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | 3 | true | 110 | 0 | 3 | expansion | /blog/codex-code-review-delivery-checklist | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
 | 3 | true | 109 | 0 | 3 | expansion | /blog/vercel-env-variable-missing-beginner-guide | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
-| 3 | true | 108 | 0 | 3 | expansion | /blog/first-upwork-project-pricing-checklist | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 3 | true | 108 | 0 | 3 | expansion | /blog/codex-code-review-delivery-checklist | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | 4 | true | 108 | 0 | 3 | expansion | /blog/codex-code-review-delivery-checklist | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
 | 4 | true | 108 | 0 | 3 | expansion | /blog/vercel-env-variable-missing-beginner-guide | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
 | 4 | true | 108 | 0 | 3 | expansion | /blog/codex-code-review-delivery-checklist | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
@@ -97,9 +97,9 @@ Link actions:
 - Candidate currently links to 0 public article(s).
 
 Suggested public links:
-- /blog/codex-vercel-deploy-preflight-checklist - Codex 部署 Vercel 前检查什么：上线前清单 (keyword overlap: ai, vercel, 部署, 上线, 检查, 新手)
-- /blog/build-first-webpage-with-codex - Codex 怎么做第一个网页 (keyword overlap: ai, 怎么, 么做, 新手, 网页, 一个)
-- /blog/first-upwork-project-pricing-checklist - 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (keyword overlap: 怎么, 检查, 项目, 新手, 一个, 第一)
+- /blog/codex-vercel-deploy-preflight-checklist - Codex 部署 Vercel 前检查什么：上线前清单 (keyword overlap: ai, vercel, 部署, 工具, 上线, 检查)
+- /blog/build-first-webpage-with-codex - Codex 怎么做第一个网页 (keyword overlap: ai, 怎么, 么做, 工具, 新手, 网页)
+- /blog/codex-upwork-small-job-risk-checklist - Codex 接 Upwork 小单怎么判断：风险检查清单 (keyword overlap: ai, 怎么, 工具, 检查, 新手, 判断)
 
 ### 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用
 
@@ -121,8 +121,8 @@ Link actions:
 
 Suggested public links:
 - /blog/upwork-client-requirements-analysis-beginner - Upwork 客户需求太模糊怎么办：新手分析和追问清单 (keyword overlap: proposal, 客户沟通, 怎么, 客户, 需求, 户沟)
-- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 审核, 接单, 生成, 交付)
-- /blog/build-first-webpage-with-codex - Codex 怎么做第一个网页 (keyword overlap: ai, 怎么, 么做, 接单, 第一)
+- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 审核, 生成, 交付, 工具)
+- /blog/build-first-webpage-with-codex - Codex 怎么做第一个网页 (keyword overlap: ai, 怎么, 么做, 第一, 工具)
 
 ### 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
 
@@ -189,9 +189,9 @@ Link actions:
 - Candidate currently links to 0 public article(s).
 
 Suggested public links:
-- /blog/build-first-webpage-with-codex - Codex 怎么做第一个网页 (keyword overlap: ai, 怎么, 接单, 第一, 一个)
-- /blog/what-is-codex-beginner-start - Codex 是什么新手怎么开始 (keyword overlap: ai, 怎么, 开始, 什么, 接单)
-- /blog/first-upwork-project-pricing-checklist - 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (keyword overlap: 怎么, 项目, 接单, 第一, 一个)
+- /blog/build-first-webpage-with-codex - Codex 怎么做第一个网页 (keyword overlap: ai, 怎么, 工具, 第一, 一个)
+- /blog/what-is-codex-beginner-start - Codex 是什么新手怎么开始 (keyword overlap: ai, 怎么, 工具, 开始, 什么)
+- /blog/codex-github-before-commit-checklist - Codex 和 GitHub 怎么配合：提交代码前检查 (keyword overlap: ai, 怎么, 工具, 提交)
 
 ### Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志
 
@@ -199,7 +199,7 @@ Suggested public links:
 - Wave: 2
 - Ready for internal link sprint: true
 - Publish confirm: not-included
-- Anchor prompt: When a paragraph mentions the related workflow, add one natural link to /blog/first-upwork-project-pricing-checklist using reader-first anchor text, not keyword stuffing.
+- Anchor prompt: When a paragraph mentions the related workflow, add one natural link to /blog/codex-code-review-delivery-checklist using reader-first anchor text, not keyword stuffing.
 
 Link actions:
 - Keep this as a manual article-body edit; do not auto-insert links.
@@ -208,13 +208,13 @@ Link actions:
 - Prefer links that help the reader move from a draft tutorial to an already public beginner page.
 - Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.
 - After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.
-- Primary suggested target: /blog/first-upwork-project-pricing-checklist.
+- Primary suggested target: /blog/codex-code-review-delivery-checklist.
 - Candidate currently links to 0 public article(s).
 
 Suggested public links:
+- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 工具, 怎么, 生成, 清单, 新手)
 - /blog/first-upwork-project-pricing-checklist - 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (keyword overlap: 怎么, 新手, 指南, 项目, 一个, 自由)
 - /blog/vercel-env-variable-missing-beginner-guide - Vercel 提示环境变量缺失怎么办：新手部署检查流程 (keyword overlap: 怎么, 环境, 失败, 流程, 部署, 新手)
-- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 生成, 清单, 新手, 代码)
 
 ### MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单
 
@@ -236,8 +236,8 @@ Link actions:
 
 Suggested public links:
 - /blog/vercel-env-variable-missing-beginner-guide - Vercel 提示环境变量缺失怎么办：新手部署检查流程 (keyword overlap: 部署, 怎么, 新手, 提示, 环境, 境变)
-- /blog/first-upwork-project-pricing-checklist - 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (keyword overlap: 怎么, 新手, 指南, 项目, 范围, 一个)
-- /blog/build-first-webpage-with-codex - Codex 怎么做第一个网页 (keyword overlap: ai, codex, 怎么, 新手, 一个, 第一)
+- /blog/build-first-webpage-with-codex - Codex 怎么做第一个网页 (keyword overlap: ai, codex, 工具, 怎么, 新手, 一个)
+- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, codex, 工具, 怎么, 新手, 交付)
 
 ### AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急
 
@@ -268,7 +268,7 @@ Suggested public links:
 - Wave: 3
 - Ready for internal link sprint: true
 - Publish confirm: not-included
-- Anchor prompt: When a paragraph mentions the related workflow, add one natural link to /blog/build-first-webpage-with-codex using reader-first anchor text, not keyword stuffing.
+- Anchor prompt: When a paragraph mentions the related workflow, add one natural link to /blog/codex-code-review-delivery-checklist using reader-first anchor text, not keyword stuffing.
 
 Link actions:
 - Keep this as a manual article-body edit; do not auto-insert links.
@@ -277,13 +277,13 @@ Link actions:
 - Prefer links that help the reader move from a draft tutorial to an already public beginner page.
 - Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.
 - After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.
-- Primary suggested target: /blog/build-first-webpage-with-codex.
+- Primary suggested target: /blog/codex-code-review-delivery-checklist.
 - Candidate currently links to 0 public article(s).
 
 Suggested public links:
-- /blog/build-first-webpage-with-codex - Codex 怎么做第一个网页 (keyword overlap: ai, 怎么, 一个, 么做, 接单)
-- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 代码, 接单, 检查)
-- /blog/codex-github-before-commit-checklist - Codex 和 GitHub 怎么配合：提交代码前检查 (keyword overlap: ai, 怎么, 代码, 接单, 检查)
+- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 代码, 工具, 具实, 实践)
+- /blog/codex-github-before-commit-checklist - Codex 和 GitHub 怎么配合：提交代码前检查 (keyword overlap: ai, 怎么, 代码, 工具, 具实, 实践)
+- /blog/codex-vercel-deploy-preflight-checklist - Codex 部署 Vercel 前检查什么：上线前清单 (keyword overlap: ai, 部署, 什么, 工具, 具实, 实践)
 
 ### Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核
 
@@ -304,9 +304,9 @@ Link actions:
 - Candidate currently links to 0 public article(s).
 
 Suggested public links:
-- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 审核, 生成, 交付)
-- /blog/codex-vercel-deploy-preflight-checklist - Codex 部署 Vercel 前检查什么：上线前清单 (keyword overlap: ai, 部署, 上线, 什么, 线前)
-- /blog/codex-vs-claude-code-beginner-checklist - Codex 和 Claude Code 怎么选：新手对比清单 (keyword overlap: 怎么选, ai, 对比, 怎么, 么选)
+- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 工具, 审核, 生成, 交付)
+- /blog/codex-vercel-deploy-preflight-checklist - Codex 部署 Vercel 前检查什么：上线前清单 (keyword overlap: ai, 部署, 工具, 上线, 什么, 线前)
+- /blog/codex-vs-claude-code-beginner-checklist - Codex 和 Claude Code 怎么选：新手对比清单 (keyword overlap: 怎么选, ai, 对比, 怎么, 么选, 工具)
 
 ### Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底
 
@@ -329,7 +329,7 @@ Link actions:
 Suggested public links:
 - /blog/vercel-env-variable-missing-beginner-guide - Vercel 提示环境变量缺失怎么办：新手部署检查流程 (keyword overlap: 变量, 部署, next, 怎么, 失败, 新手)
 - /blog/first-upwork-project-pricing-checklist - 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (keyword overlap: 怎么, 指南, 新手, 一个, 项目, 第一)
-- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 代码, 生成, 交付, 新手)
+- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 代码, 生成, 工具, 交付)
 
 ### AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围
 
@@ -337,7 +337,7 @@ Suggested public links:
 - Wave: 3
 - Ready for internal link sprint: true
 - Publish confirm: not-included
-- Anchor prompt: When a paragraph mentions the related workflow, add one natural link to /blog/first-upwork-project-pricing-checklist using reader-first anchor text, not keyword stuffing.
+- Anchor prompt: When a paragraph mentions the related workflow, add one natural link to /blog/codex-code-review-delivery-checklist using reader-first anchor text, not keyword stuffing.
 
 Link actions:
 - Keep this as a manual article-body edit; do not auto-insert links.
@@ -346,13 +346,13 @@ Link actions:
 - Prefer links that help the reader move from a draft tutorial to an already public beginner page.
 - Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.
 - After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.
-- Primary suggested target: /blog/first-upwork-project-pricing-checklist.
+- Primary suggested target: /blog/codex-code-review-delivery-checklist.
 - Candidate currently links to 0 public article(s).
 
 Suggested public links:
+- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 工具, 具实, 实践, 交付)
+- /blog/codex-vercel-deploy-preflight-checklist - Codex 部署 Vercel 前检查什么：上线前清单 (keyword overlap: ai, 部署, 什么, 工具, 具实, 实践)
 - /blog/first-upwork-project-pricing-checklist - 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (keyword overlap: 报价, 项目, 目怎, 怎么, 么报, 范围)
-- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 接单, 交付, 清单, 新手)
-- /blog/codex-vercel-deploy-preflight-checklist - Codex 部署 Vercel 前检查什么：上线前清单 (keyword overlap: ai, 部署, 接单, 什么, 清单, 新手)
 
 ### 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用
 
@@ -373,9 +373,9 @@ Link actions:
 - Candidate currently links to 0 public article(s).
 
 Suggested public links:
-- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 审核, 接单, 交付, 生成)
-- /blog/first-upwork-project-pricing-checklist - 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (keyword overlap: 怎么, 一个, 接单, 范围, 围和, 第一)
-- /blog/codex-generated-code-review-guide - Codex 生成代码后怎么审核 (keyword overlap: ai, 怎么, 审核, 接单, 生成, 代码)
+- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 审核, 交付, 生成, 代码)
+- /blog/first-upwork-project-pricing-checklist - 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (keyword overlap: 怎么, 一个, 项目, 范围, 围和, 第一)
+- /blog/codex-generated-code-review-guide - Codex 生成代码后怎么审核 (keyword overlap: ai, 怎么, 审核, 生成, 代码)
 
 ### Claude API Rate limit reached 怎么办：限流、上下文、重试和降级
 
@@ -442,9 +442,9 @@ Link actions:
 - Candidate currently links to 0 public article(s).
 
 Suggested public links:
-- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 审核, 代码, 生成)
-- /blog/codex-generated-code-review-guide - Codex 生成代码后怎么审核 (keyword overlap: ai, 审核, 代码, 生成)
-- /blog/first-upwork-project-pricing-checklist - 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (keyword overlap: 范围, 项目, 一个)
+- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 审核, 工具, 代码, 生成)
+- /blog/codex-generated-code-review-guide - Codex 生成代码后怎么审核 (keyword overlap: ai, 审核, 工具, 代码, 生成)
+- /blog/build-first-webpage-with-codex - Codex 怎么做第一个网页 (keyword overlap: ai, 工具, 一个)
 
 ### 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复
 
@@ -488,9 +488,9 @@ Link actions:
 - Candidate currently links to 0 public article(s).
 
 Suggested public links:
-- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 生成, 清单, 检查)
-- /blog/first-upwork-project-pricing-checklist - 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (keyword overlap: 范围, 围和, 自由, 检查)
-- /blog/codex-upwork-small-job-risk-checklist - Codex 接 Upwork 小单怎么判断：风险检查清单 (keyword overlap: ai, 清单, 检查)
+- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 生成, 清单, 工具, 检查)
+- /blog/first-upwork-project-pricing-checklist - 第一个 Upwork 小项目怎么报价：新手范围和底价检查 (keyword overlap: 范围, 练习, 围和, 自由, 检查)
+- /blog/codex-upwork-small-job-risk-checklist - Codex 接 Upwork 小单怎么判断：风险检查清单 (keyword overlap: ai, 清单, 工具, 检查)
 
 ### Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型
 
@@ -558,8 +558,8 @@ Link actions:
 
 Suggested public links:
 - /blog/codex-install-failed-beginner-fix - Codex 安装失败怎么办 (keyword overlap: ai, 怎么, 么办, 新手, 安装, 失败)
+- /blog/build-first-webpage-with-codex - Codex 怎么做第一个网页 (keyword overlap: ai, 怎么, 新手, 一个, 工具)
 - /blog/codex-npm-install-error-beginner-fix - Codex 项目 npm install 报错怎么办：新手排查步骤 (keyword overlap: 怎么, 么办, 报错, 新手, 解决)
-- /blog/vercel-env-variable-missing-beginner-guide - Vercel 提示环境变量缺失怎么办：新手部署检查流程 (keyword overlap: 部署, 怎么, 么办, 新手, 失败)
 
 ### Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流
 
@@ -580,6 +580,6 @@ Link actions:
 - Candidate currently links to 0 public article(s).
 
 Suggested public links:
-- /blog/build-first-webpage-with-codex - Codex 怎么做第一个网页 (keyword overlap: ai, 怎么, 一个, 第一)
-- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 代码, 交付)
-- /blog/codex-generated-code-review-guide - Codex 生成代码后怎么审核 (keyword overlap: ai, 怎么, 代码)
+- /blog/build-first-webpage-with-codex - Codex 怎么做第一个网页 (keyword overlap: ai, 怎么, 一个, 工具, 第一)
+- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 代码, 工具, 交付)
+- /blog/codex-generated-code-review-guide - Codex 生成代码后怎么审核 (keyword overlap: ai, 怎么, 代码, 工具)

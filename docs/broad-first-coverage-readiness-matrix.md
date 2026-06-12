@@ -1,6 +1,6 @@
 # Broad First Coverage Readiness Matrix
 
-Generated at: 2026-06-12T06:13:54.971Z
+Generated at: 2026-06-12T16:32:53.174Z
 
 ## Guardrails
 
@@ -42,7 +42,7 @@ Generated at: 2026-06-12T06:13:54.971Z
 | 56 | true | true | true | true | true | true | true | 6 | RAG、知识库、向量数据库和引用溯源 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 70 | true | true | true | true | true | true | true | 3 | 全行业 AI 提示词和工作流模板 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | 64 | true | true | true | true | true | n/a | true | 5 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
-| 68 | true | true | true | true | true | n/a | true | 3 | AI API 接入、限流、成本和多模型路由 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| 68 | true | true | true | true | true | true | true | 3 | AI API 接入、限流、成本和多模型路由 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | 60 | true | true | true | true | true | n/a | true | 6 | LLM 观测、评测、日志和上线后质量 | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
 
 ## Review Actions
@@ -149,7 +149,7 @@ Warnings:
 - Title: 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
 - Readiness score: 56
 - Search signals: launchQueries=5, exactSeedMatches=0, seedFamilies=5, exactQueryMatches=0, queryFamilies=7
-- Source signals: launchTargets=10, reportTargets=29, reachable=29
+- Source signals: launchTargets=11, reportTargets=32, reachable=32
 - Mark review boundary: `npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human`
 - Publish dry-run boundary: `npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx`
 
@@ -248,7 +248,7 @@ Warnings:
 - File: content/blog/ai-api-key-security-rotation-guide.mdx
 - Title: AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急
 - Readiness score: 68
-- Search signals: launchQueries=5, exactSeedMatches=1, seedFamilies=6, exactQueryMatches=n/a, queryFamilies=n/a
+- Search signals: launchQueries=5, exactSeedMatches=1, seedFamilies=6, exactQueryMatches=1, queryFamilies=7
 - Source signals: launchTargets=12, reportTargets=36, reachable=36
 - Mark review boundary: `npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human`
 - Publish dry-run boundary: `npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx`
@@ -263,7 +263,7 @@ Actions:
 - Review snippet warnings for title, description, slug, and primary keyword alignment.
 - Resolve or explicitly accept warning: primary keyword is not an exact title substring.
 - Resolve or explicitly accept warning: theme still has missing subtopics: logs, prompt injection, cost tracking.
-- Resolve or explicitly accept warning: no search-query-match record; rely on launch search queries and public-gap seed evidence.
+- Resolve or explicitly accept warning: few exact query variant matches in article text.
 - Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.
 - Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.
 - Confirm the article answers the cluster's first public entry search intent without keyword stuffing.
@@ -272,7 +272,7 @@ Warnings:
 
 - primary keyword is not an exact title substring
 - theme still has missing subtopics: logs, prompt injection, cost tracking
-- no search-query-match record; rely on launch search queries and public-gap seed evidence
+- few exact query variant matches in article text
 
 ### LLM 观测、评测、日志和上线后质量
 

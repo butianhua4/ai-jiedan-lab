@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:32.749Z",
+  "generatedAt": "2026-06-12T16:32:29.205Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -30,7 +30,7 @@
     "searchIntentUnsafeItems": 0,
     "sourceVerificationItems": 3,
     "sourceVerificationUnsafeItems": 0,
-    "sourceUrlFixActions": 34,
+    "sourceUrlFixActions": 35,
     "remediationUnsafeItems": 0
   },
   "summary": {
@@ -306,9 +306,9 @@
       "categories": [
         {
           "category": "source-url",
-          "detail": "10 source URL remediation action(s) still need human confirmation.",
+          "detail": "11 source URL remediation action(s) still need human confirmation.",
           "evidence": {
-            "sourceUrlFixes": 10
+            "sourceUrlFixes": 11
           },
           "nextAction": "Open each failed source URL manually, replace dead URLs with accessible canonical sources, then rerun automation.",
           "proofRequired": "Reviewer confirms final source URLs are canonical or replaced with accessible equivalents.",
@@ -320,9 +320,9 @@
           "evidence": {
             "approvalChecks": 15,
             "factCheckQueries": 18,
-            "reachableSources": 10,
+            "reachableSources": 11,
             "readyForHumanReview": true,
-            "riskChecks": 10
+            "riskChecks": 12
           },
           "nextAction": "Human reviewer verifies fast-changing claims against the listed sources.",
           "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",

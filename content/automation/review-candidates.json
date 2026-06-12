@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:12:51.405Z",
+  "generatedAt": "2026-06-12T16:31:46.775Z",
   "guardrails": {
     "autoPublish": false,
     "nextHumanAction": "Open each candidate, verify facts and risk language, then run mark:review with --confirm-human for approved files.",
@@ -145,7 +145,7 @@
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
     },
     {
-      "category": "接单报价",
+      "category": "项目报价",
       "cluster": "Agent and memory",
       "dryRunCommand": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
       "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
@@ -154,7 +154,7 @@
       "opportunityScore": 253,
       "publishBatch": 33,
       "qualityScore": 100,
-      "reason": "batch 33; 接单报价; Agent and memory cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
+      "reason": "batch 33; 项目报价; Agent and memory cluster; no public article in cluster; no public article in category; quality passed; needs human fact/risk review before mark:review",
       "reviewCommand": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
       "slug": "ai-automation-project-pricing-scope-guide",
       "sourceNotes": true,

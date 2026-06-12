@@ -1,6 +1,6 @@
 # Public Expansion Queue
 
-Generated at: 2026-06-12T06:13:05.988Z
+Generated at: 2026-06-12T16:32:01.828Z
 
 This queue is read-only. It ranks drafts for manual approval waves so public coverage can expand without bypassing review.
 
@@ -32,7 +32,7 @@ This queue is read-only. It ranks drafts for manual approval waves so public cov
 
 | Score | Pack | Planned | Sources | Queries | Risk | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 777 | true | true | 7 | 8 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 777 | true | true | 8 | 8 | 8 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 773 | true | true | 6 | 8 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 769 | true | true | 4 | 9 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 

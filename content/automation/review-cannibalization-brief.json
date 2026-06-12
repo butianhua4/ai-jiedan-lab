@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:23.932Z",
+  "generatedAt": "2026-06-12T16:32:20.144Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -16,7 +16,7 @@
       "stopBefore": "Every mark:review command requires explicit human approval. publish --confirm commands are intentionally not included."
     },
     "actionBoardReadyTasks": 16,
-    "contentCannibalizationGeneratedAt": "2026-06-12T06:13:23.195Z",
+    "contentCannibalizationGeneratedAt": "2026-06-12T16:32:19.373Z",
     "contentCannibalizationSummary": {
       "articleCount": 669,
       "conflicts": 200,
@@ -484,48 +484,6 @@
     },
     {
       "candidate": {
-        "category": "接单报价",
-        "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-        "primaryKeyword": "AI 自动化项目报价",
-        "searchIntent": "informational",
-        "slug": "ai-automation-project-pricing-scope-guide",
-        "status": "draft",
-        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
-        "tokens": [
-          "ai",
-          "自动化项目怎么报价",
-          "dify",
-          "n8n",
-          "rag",
-          "agent",
-          "和维护范围",
-          "ai",
-          "自动化项目报价",
-          "ai",
-          "automation",
-          "project",
-          "pricing",
-          "scope",
-          "接单报价"
-        ]
-      },
-      "decision": "monitor-only",
-      "highestPublishedScore": 0,
-      "highestReviewScore": 0,
-      "humanReviewChecklist": [
-        "Confirm the candidate owns a distinct search intent: AI 自动化项目报价.",
-        "No close published article found; still confirm the title is not a duplicate promise.",
-        "No close draft/review candidate found.",
-        "Document why this can remain a separate article.",
-        "If both articles stay, add a clear internal-link relationship: pillar, comparison, implementation detail, or troubleshooting follow-up."
-      ],
-      "publishedSimilar": [],
-      "recommendation": "No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article.",
-      "reviewSimilar": [],
-      "riskLevel": "low"
-    },
-    {
-      "candidate": {
         "category": "AI 部署",
         "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
         "primaryKeyword": "AI API Key 安全管理",
@@ -560,6 +518,48 @@
       "highestReviewScore": 0,
       "humanReviewChecklist": [
         "Confirm the candidate owns a distinct search intent: AI API Key 安全管理.",
+        "No close published article found; still confirm the title is not a duplicate promise.",
+        "No close draft/review candidate found.",
+        "Document why this can remain a separate article.",
+        "If both articles stay, add a clear internal-link relationship: pillar, comparison, implementation detail, or troubleshooting follow-up."
+      ],
+      "publishedSimilar": [],
+      "recommendation": "No strong cannibalization risk detected for current public coverage; keep the candidate as a distinct article.",
+      "reviewSimilar": [],
+      "riskLevel": "low"
+    },
+    {
+      "candidate": {
+        "category": "项目报价",
+        "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "primaryKeyword": "AI 自动化项目报价",
+        "searchIntent": "informational",
+        "slug": "ai-automation-project-pricing-scope-guide",
+        "status": "draft",
+        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+        "tokens": [
+          "ai",
+          "自动化项目怎么报价",
+          "dify",
+          "n8n",
+          "rag",
+          "agent",
+          "和维护范围",
+          "ai",
+          "自动化项目报价",
+          "ai",
+          "automation",
+          "project",
+          "pricing",
+          "scope",
+          "项目报价"
+        ]
+      },
+      "decision": "monitor-only",
+      "highestPublishedScore": 0,
+      "highestReviewScore": 0,
+      "humanReviewChecklist": [
+        "Confirm the candidate owns a distinct search intent: AI 自动化项目报价.",
         "No close published article found; still confirm the title is not a duplicate promise.",
         "No close draft/review candidate found.",
         "Document why this can remain a separate article.",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:20.631Z",
+  "generatedAt": "2026-06-12T16:32:16.761Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "No measured traffic, rankings, clicks, impressions, or revenue are claimed."
   },
   "sourceEvidence": {
-    "remediationGeneratedAt": "2026-06-12T06:13:20.129Z",
+    "remediationGeneratedAt": "2026-06-12T16:32:16.266Z",
     "remediationGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -44,13 +44,13 @@
   "summary": {
     "affectedFiles": 22,
     "failedDecisionItems": 1,
-    "humanGatedItems": 113,
-    "items": 113,
-    "itemsWithDecisionOptions": 113,
-    "itemsWithManualChecklist": 113,
+    "humanGatedItems": 114,
+    "items": 114,
+    "itemsWithDecisionOptions": 114,
+    "itemsWithManualChecklist": 114,
     "itemsWithRecommendedCandidate": 1,
     "officialRecommendedCandidates": 1,
-    "redirectedDecisionItems": 112,
+    "redirectedDecisionItems": 113,
     "replacementCandidateOptions": 8,
     "sourceRemediationItems": 19,
     "sourceRemediationUnsafeItems": 0,
@@ -1188,11 +1188,11 @@
         "Keep the article draft/noindex/humanReviewRequired until approval."
       ],
       "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=ko",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=pl",
       "kind": "redirected-url",
       "manualChecklist": [
         "Original URL: https://ai.google.dev/docs",
-        "Final URL: https://ai.google.dev/gemini-api/docs?hl=ko",
+        "Final URL: https://ai.google.dev/gemini-api/docs?hl=pl",
         "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
         "Confirm the replacement source covers the exact claim family.",
         "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
@@ -1762,7 +1762,7 @@
       "manualChecklist": [
         "Original URL: https://ai-sdk.dev/docs",
         "Final URL: https://ai-sdk.dev/docs/introduction",
-        "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
+        "Scopes: current-review, public-gap-decision, next-source-pack, broad-first-coverage",
         "Confirm the replacement source covers the exact claim family.",
         "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
         "Use prompt-library sources only as market/category evidence.",
@@ -1771,10 +1771,11 @@
       "originalUrl": "https://ai-sdk.dev/docs",
       "recommendedCandidate": null,
       "referenceLabels": [
-        "https://ai-sdk.dev/docs",
-        "Vercel AI SDK docs: https://ai-sdk.dev/docs"
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "https://ai-sdk.dev/docs"
       ],
       "scopes": [
+        "current-review",
         "public-gap-decision",
         "next-source-pack",
         "broad-first-coverage"
@@ -1832,7 +1833,7 @@
       "manualChecklist": [
         "Original URL: https://platform.openai.com/docs",
         "Final URL: https://developers.openai.com/api/docs",
-        "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
+        "Scopes: current-review, public-gap-decision, next-source-pack, broad-first-coverage",
         "Confirm the replacement source covers the exact claim family.",
         "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
         "Use prompt-library sources only as market/category evidence.",
@@ -1841,13 +1842,47 @@
       "originalUrl": "https://platform.openai.com/docs",
       "recommendedCandidate": null,
       "referenceLabels": [
+        "OpenAI docs: https://platform.openai.com/docs",
         "https://platform.openai.com/docs",
         "OpenAI API docs: https://platform.openai.com/docs"
       ],
       "scopes": [
+        "current-review",
         "public-gap-decision",
         "next-source-pack",
         "broad-first-coverage"
+      ],
+      "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "unsafeReasons": []
+    },
+    {
+      "alternatives": [],
+      "decisionOptions": [
+        "Approve the redirected final URL as canonical if it is content-equivalent.",
+        "Replace the original URL with the final URL during human review if the redirect is stable.",
+        "Find a more specific official source if the redirect lands on a generic page.",
+        "Keep the article draft/noindex/humanReviewRequired until approval."
+      ],
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "finalUrl": "https://developers.openai.com/api/docs/guides/agents",
+      "kind": "redirected-url",
+      "manualChecklist": [
+        "Original URL: https://platform.openai.com/docs/guides/agents",
+        "Final URL: https://developers.openai.com/api/docs/guides/agents",
+        "Scopes: next-source-pack",
+        "Confirm the replacement source covers the exact claim family.",
+        "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+        "Use prompt-library sources only as market/category evidence.",
+        "Do not run mark:review or publish commands from this decision pack."
+      ],
+      "originalUrl": "https://platform.openai.com/docs/guides/agents",
+      "recommendedCandidate": null,
+      "referenceLabels": [
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents"
+      ],
+      "scopes": [
+        "next-source-pack"
       ],
       "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
@@ -3286,11 +3321,11 @@
         "Keep the article draft/noindex/humanReviewRequired until approval."
       ],
       "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
-      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=ko",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=pl",
       "kind": "redirected-url",
       "manualChecklist": [
         "Original URL: https://ai.google.dev/docs",
-        "Final URL: https://ai.google.dev/gemini-api/docs?hl=ko",
+        "Final URL: https://ai.google.dev/gemini-api/docs?hl=pl",
         "Scopes: next-source-pack",
         "Confirm the replacement source covers the exact claim family.",
         "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",

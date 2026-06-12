@@ -1,6 +1,6 @@
 # Mass AI Search Action Matrix
 
-Generated at: 2026-06-12T06:13:11.496Z
+Generated at: 2026-06-12T16:32:07.424Z
 
 This report is read-only. It turns broad AI search demand into human-review waves across AI deployment, Agent deployment, RAG, memory, no-code automation, AI API operations, observability, and cross-industry prompt libraries.
 
@@ -37,12 +37,12 @@ This report is read-only. It turns broad AI search demand into human-review wave
 
 ## Source Evidence
 
-- broadSearchDemandGeneratedAt: "2026-06-12T06:13:10.979Z"
+- broadSearchDemandGeneratedAt: "2026-06-12T16:32:06.902Z"
 - broadSearchDemandGuardrails: {"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"note":"Read-only broad-demand map. It prioritizes likely user-search themes from the local content inventory and official source targets; it does not claim keyword volume, rankings, clicks, or traffic."}
-- broadSearchDemandSummary: {"themes":10,"themesWithReadyDrafts":10,"themesWithoutPublicCoverage":8,"totalReadyDraftMatches":417,"uniqueCandidateFiles":56,"reviewPackThemeMatches":4,"plannedWaveThemeMatches":24,"missingSubtopics":25,"maxGapScore":388}
-- deploymentReviewGeneratedAt: "2026-06-12T01:42:33.381Z"
+- broadSearchDemandSummary: {"themes":10,"themesWithReadyDrafts":10,"themesWithoutPublicCoverage":8,"totalReadyDraftMatches":417,"uniqueCandidateFiles":56,"reviewPackThemeMatches":4,"plannedWaveThemeMatches":22,"missingSubtopics":25,"maxGapScore":382}
+- deploymentReviewGeneratedAt: "2026-06-12T14:52:26.815Z"
 - deploymentReviewSummary: {"deploymentPublicArticles":3,"duplicateFiles":0,"items":10,"itemsWithChecklists":10,"itemsWithCommandBoundary":10,"itemsWithOfficialSources":10,"itemsWithSearchQueries":10,"reviewReadyDeploymentDrafts":208,"safeDraftItems":10,"topicsCovered":10,"topicsWithoutPublicCoverage":8,"unsafeItems":0,"uniqueFiles":10}
-- industryPromptModuleGeneratedAt: "2026-06-12T01:42:35.735Z"
+- industryPromptModuleGeneratedAt: "2026-06-12T06:13:14.351Z"
 - industryPromptModuleSummary: {"humanGatedItems":12,"items":12,"itemsWithCopyPrompts":12,"itemsWithInputOutputStructure":12,"itemsWithReviewPackCandidate":11,"itemsWithRiskControls":12,"itemsWithSourceTargets":12,"modulesPerOpportunityMax":5,"modulesPerOpportunityMin":5,"promptBlueprints":60,"sourceOpportunityModules":60,"sourceOpportunityUnsafeItems":0,"sourceReviewPackUnsafeItems":0,"unsafeItems":0,"zeroPublicCoverageItems":12}
 - officialSourceSignals: ["Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview","Dify docs: https://docs.dify.ai","Hugging Face docs: https://huggingface.co/docs","LangChain docs: https://python.langchain.com/docs","LlamaIndex docs: https://docs.llamaindex.ai","n8n docs: https://docs.n8n.io","Ollama docs: https://docs.ollama.com","OpenAI Agents docs: https://platform.openai.com/docs/guides/agents","OpenAI API docs: https://platform.openai.com/docs","OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering","OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval","Vercel AI SDK docs: https://ai-sdk.dev/docs","vLLM docs: https://docs.vllm.ai"]
 - trafficNote: "Search seeds and gap scores are editorial planning signals only; this matrix does not claim keyword volume, rankings, impressions, clicks, traffic, or revenue."
@@ -61,8 +61,8 @@ This report is read-only. It turns broad AI search demand into human-review wave
 | 2 | true | 0 | 8 | 3 | 8 | 1 | 0 | rag-memory | Local and open-source model deployment |
 | 2 | true | 0 | 8 | 2 | 8 | 1 | 0 | agent-deployment | Dify, n8n, Flowise, and no-code AI automation |
 | 2 | true | 0 | 8 | 7 | 14 | 0 | 2 | broad-ai-operations | Business AI workflows and SOP templates |
-| 3 | true | 0 | 8 | 2 | 8 | 1 | 0 | model-deployment | LLM serving, GPU, and managed inference |
 | 3 | true | 0 | 8 | 5 | 8 | 1 | 0 | prompt-library | LLM evaluation, observability, and security |
+| 3 | true | 0 | 8 | 2 | 8 | 1 | 0 | model-deployment | LLM serving, GPU, and managed inference |
 
 ## Wave Details
 
@@ -442,56 +442,6 @@ Prompt blueprint samples:
 - prospect research brief: 销售 AI 提示词 - prospect research brief
 - discovery call planner: 销售 AI 提示词 - discovery call planner
 
-### Wave 3: LLM serving, GPU, and managed inference
-
-- Lane: model-deployment
-- Intent: first public coverage for a broad AI search theme
-- Traffic claim: not-included
-- Public matches: 0
-- Candidate files: content/blog/bentoml-llm-deployment-beginner-guide.mdx, content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx, content/blog/huggingface-tgi-deployment-guide.mdx, content/blog/kubernetes-gpu-llm-deployment-guide.mdx, content/blog/modal-serverless-gpu-llm-guide.mdx, content/blog/ray-serve-llm-deployment-guide.mdx, content/blog/runpod-serverless-llm-deployment-guide.mdx, content/blog/tensorrt-llm-beginner-guide.mdx
-- Bridge sources: content/automation/broad-search-demand-map.json, content/automation/ai-deployment-review-pack.json
-
-Search seeds:
-
-- vLLM deployment tutorial
-- Hugging Face TGI deployment
-- RunPod serverless LLM
-- serverless GPU LLM deployment
-- vLLM 部署教程
-- TGI 部署教程
-- RunPod Serverless 大模型部署
-- Modal Serverless GPU LLM
-
-Source targets:
-
-- vLLM docs: https://docs.vllm.ai
-- Hugging Face docs: https://huggingface.co/docs
-
-Human review actions:
-
-- Confirm every candidate is still draft, noindex, and humanReviewRequired before any approval action.
-- Verify current official docs before approving model names, APIs, SDKs, deployment commands, memory/RAG behavior, and tool permissions.
-- Check the article answers a broad search intent directly, not only a narrow implementation note.
-- Remove or rewrite unsupported claims about traffic, ranking, revenue, benchmark, latency, cost, reliability, legal outcomes, medical outcomes, hiring outcomes, or conversion.
-- Confirm human approval, audit logs, rollback, privacy, and escalation boundaries are explicit where the topic touches agents, tools, customer data, or business operations.
-- Only after explicit human approval, run mark:review manually for a specific file. Publishing remains a separate explicit approval step.
-- Apply theme review focus: serving framework versions.
-- Apply theme review focus: cold starts and concurrency.
-- Apply theme review focus: GPU cost.
-- Apply theme review focus: autoscaling and monitoring.
-- Use deployment review candidate: content/blog/bentoml-llm-deployment-beginner-guide.mdx.
-- Open source target for manual fact review: vLLM docs: https://docs.vllm.ai.
-- Open source target for manual fact review: Hugging Face docs: https://huggingface.co/docs.
-- Confirm the draft answers search seed: vLLM deployment tutorial.
-- Confirm the draft answers search seed: Hugging Face TGI deployment.
-- Confirm the draft answers search seed: RunPod serverless LLM.
-- Confirm the draft answers search seed: serverless GPU LLM deployment.
-- Confirm the draft answers search seed: vLLM 部署教程.
-
-Prompt blueprint samples:
-
-- none
-
 ### Wave 3: LLM evaluation, observability, and security
 
 - Lane: prompt-library
@@ -543,6 +493,56 @@ Human review actions:
 - Confirm the draft answers search seed: AI agent logs.
 - Confirm the draft answers search seed: prompt injection defense.
 - Confirm the draft answers search seed: OpenAI API Next.js.
+
+Prompt blueprint samples:
+
+- none
+
+### Wave 3: LLM serving, GPU, and managed inference
+
+- Lane: model-deployment
+- Intent: first public coverage for a broad AI search theme
+- Traffic claim: not-included
+- Public matches: 0
+- Candidate files: content/blog/bentoml-llm-deployment-beginner-guide.mdx, content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx, content/blog/huggingface-tgi-deployment-guide.mdx, content/blog/kubernetes-gpu-llm-deployment-guide.mdx, content/blog/modal-serverless-gpu-llm-guide.mdx, content/blog/ray-serve-llm-deployment-guide.mdx, content/blog/runpod-serverless-llm-deployment-guide.mdx, content/blog/tensorrt-llm-beginner-guide.mdx
+- Bridge sources: content/automation/broad-search-demand-map.json, content/automation/ai-deployment-review-pack.json
+
+Search seeds:
+
+- vLLM deployment tutorial
+- Hugging Face TGI deployment
+- RunPod serverless LLM
+- serverless GPU LLM deployment
+- vLLM 部署教程
+- TGI 部署教程
+- RunPod Serverless 大模型部署
+- Modal Serverless GPU LLM
+
+Source targets:
+
+- vLLM docs: https://docs.vllm.ai
+- Hugging Face docs: https://huggingface.co/docs
+
+Human review actions:
+
+- Confirm every candidate is still draft, noindex, and humanReviewRequired before any approval action.
+- Verify current official docs before approving model names, APIs, SDKs, deployment commands, memory/RAG behavior, and tool permissions.
+- Check the article answers a broad search intent directly, not only a narrow implementation note.
+- Remove or rewrite unsupported claims about traffic, ranking, revenue, benchmark, latency, cost, reliability, legal outcomes, medical outcomes, hiring outcomes, or conversion.
+- Confirm human approval, audit logs, rollback, privacy, and escalation boundaries are explicit where the topic touches agents, tools, customer data, or business operations.
+- Only after explicit human approval, run mark:review manually for a specific file. Publishing remains a separate explicit approval step.
+- Apply theme review focus: serving framework versions.
+- Apply theme review focus: cold starts and concurrency.
+- Apply theme review focus: GPU cost.
+- Apply theme review focus: autoscaling and monitoring.
+- Use deployment review candidate: content/blog/bentoml-llm-deployment-beginner-guide.mdx.
+- Open source target for manual fact review: vLLM docs: https://docs.vllm.ai.
+- Open source target for manual fact review: Hugging Face docs: https://huggingface.co/docs.
+- Confirm the draft answers search seed: vLLM deployment tutorial.
+- Confirm the draft answers search seed: Hugging Face TGI deployment.
+- Confirm the draft answers search seed: RunPod serverless LLM.
+- Confirm the draft answers search seed: serverless GPU LLM deployment.
+- Confirm the draft answers search seed: vLLM 部署教程.
 
 Prompt blueprint samples:
 

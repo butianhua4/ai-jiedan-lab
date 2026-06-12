@@ -1,6 +1,6 @@
 # Review Optimization Brief
 
-Generated at: 2026-06-12T06:13:22.096Z
+Generated at: 2026-06-12T16:32:18.250Z
 
 This report is read-only. It converts review warnings into copydesk suggestions for human review.
 
@@ -21,7 +21,7 @@ This report is read-only. It converts review warnings into copydesk suggestions 
 
 - briefs: 16
 - briefsWithAction: 16
-- exactQueryWeakItems: 4
+- exactQueryWeakItems: 3
 - missingPublicLinkItems: 15
 - readyBriefs: 16
 - unsafeCommands: 0
@@ -30,34 +30,34 @@ This report is read-only. It converts review warnings into copydesk suggestions 
 
 | Priority | Scope | Actions | Exact queries | Link | Proposed title | File |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1029 | wave-1 | 10 | 0 | /blog/build-first-webpage-with-codex | 客服 AI 模型选型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 1032 | wave-1 | 10 | 0 | /blog/build-first-webpage-with-codex | 客服 AI 模型选型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 1016 | wave-2 | 9 | 4 | /blog/codex-vercel-deploy-preflight-checklist | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 1002 | wave-3 | 7 | 4 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | 806 | public-gap-wave-1 | 9 | 4 | /blog/codex-vercel-deploy-preflight-checklist | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 801 | public-gap-wave-1 | 7 | 4 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | 801 | public-gap-wave-1 | 6 | 2 | /blog/codex-code-review-delivery-checklist | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
-| 781 | public-gap-wave-2 | 10 | 0 | /blog/build-first-webpage-with-codex | 客服 AI 模型选型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| 769 | public-gap-wave-2 | 9 | 3 | /blog/build-first-webpage-with-codex | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| 783 | public-gap-wave-2 | 10 | 0 | /blog/build-first-webpage-with-codex | 客服 AI 模型选型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 769 | public-gap-wave-2 | 9 | 4 | /blog/codex-code-review-delivery-checklist | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 
 ## All Briefs
 
 | Priority | Scope | Actions | Exact queries | Link | Proposed title | File |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1029 | wave-1 | 10 | 0 | /blog/build-first-webpage-with-codex | 客服 AI 模型选型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 1032 | wave-1 | 10 | 0 | /blog/build-first-webpage-with-codex | 客服 AI 模型选型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 1016 | wave-2 | 9 | 4 | /blog/codex-vercel-deploy-preflight-checklist | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 1002 | wave-3 | 7 | 4 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | 806 | public-gap-wave-1 | 9 | 4 | /blog/codex-vercel-deploy-preflight-checklist | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 801 | public-gap-wave-1 | 7 | 4 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | 801 | public-gap-wave-1 | 6 | 2 | /blog/codex-code-review-delivery-checklist | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
-| 781 | public-gap-wave-2 | 10 | 0 | /blog/build-first-webpage-with-codex | 客服 AI 模型选型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| 769 | public-gap-wave-2 | 9 | 3 | /blog/build-first-webpage-with-codex | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| 768 | public-gap-wave-2 | 12 | 0 | /blog/build-first-webpage-with-codex | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
-| 759 | public-gap-wave-2 | 8 | n/a | /blog/build-first-webpage-with-codex | n8n AI Agent 知识库记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
-| 748 | public-gap-wave-3 | 13 | 1 | /blog/first-upwork-project-pricing-checklist | AI 自动化项目报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
-| 747 | public-gap-wave-4 | 7 | n/a | /blog/codex-code-review-delivery-checklist | AI API Key 安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
-| 744 | public-gap-wave-3 | 12 | 0 | /blog/vercel-env-variable-missing-beginner-guide | Dify 工作流错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| 783 | public-gap-wave-2 | 10 | 0 | /blog/build-first-webpage-with-codex | 客服 AI 模型选型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 769 | public-gap-wave-2 | 9 | 4 | /blog/codex-code-review-delivery-checklist | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| 768 | public-gap-wave-2 | 14 | 0 | /blog/build-first-webpage-with-codex | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| 758 | public-gap-wave-2 | 8 | n/a | /blog/build-first-webpage-with-codex | n8n AI Agent 知识库记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
+| 749 | public-gap-wave-4 | 8 | 1 | /blog/codex-code-review-delivery-checklist | AI API Key 安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| 748 | public-gap-wave-3 | 13 | 1 | /blog/codex-code-review-delivery-checklist | AI 自动化项目报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 744 | public-gap-wave-3 | 12 | 1 | /blog/vercel-env-variable-missing-beginner-guide | Dify 工作流错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | 735 | public-gap-wave-3 | 8 | n/a | /blog/vercel-env-variable-missing-beginner-guide | MCP Server 部署安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
-| 714 | public-gap-wave-4 | 10 | n/a | /blog/first-upwork-project-pricing-checklist | Agent 工具权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+| 714 | public-gap-wave-4 | 10 | n/a | /blog/codex-code-review-delivery-checklist | Agent 工具权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
 | 712 | public-gap-wave-4 | 11 | n/a | /blog/codex-code-review-delivery-checklist | BentoML LLM 部署：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
 
 ## Per-Article Suggestions
@@ -231,14 +231,14 @@ Warning remediation:
 - Scope: public-gap-wave-2
 - Proposed title: AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界
 - Proposed description: 解释 AI Agent 记忆和 RAG 的区别，覆盖短期记忆、长期记忆、知识库检索、引用来源、更新机制、隐私和验收检查。
-- Search evidence: exact=3, families=7, titleHit=true, descriptionHit=true
-- Internal link: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)
+- Search evidence: exact=4, families=7, titleHit=true, descriptionHit=true
+- Internal link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)
 
 Opening additions:
 
 - 在开头 200 字内自然回答一次“RAG knowledge base tutorial”这个搜索意图，先给结论再展开步骤。
 - 补一个小节或提示框覆盖缺口：knowledge base、vector database。
-- 在相关段落加入公开内链：Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)。
+- 在相关段落加入公开内链：Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)。
 
 Warning remediation:
 
@@ -246,6 +246,6 @@ Warning remediation:
 - Add one contextual link to a published article before approval.
 - Decide whether missing subtopics should become a short section or a follow-up article.
 - During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.
-- Review the suggested public internal link before publishing: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
+- Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
 - Decide whether missing subtopics belong in this article or should become separate follow-up drafts.
 

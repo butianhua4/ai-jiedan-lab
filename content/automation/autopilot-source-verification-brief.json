@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:13:29.944Z",
+  "generatedAt": "2026-06-12T16:32:26.298Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -27,7 +27,7 @@
       "okUrls": 39,
       "publicGapDecisionFiles": 13,
       "redirectedUrls": 18,
-      "sourceReferences": 261,
+      "sourceReferences": 264,
       "uniqueUrls": 40
     },
     "packetUnsafeItems": 0
@@ -40,7 +40,7 @@
     "itemsWithOfficialSources": 3,
     "itemsWithReachableSources": 3,
     "packetUnsafeItems": 0,
-    "totalReachableSources": 25,
+    "totalReachableSources": 26,
     "unsafeItems": 0
   },
   "unsafeItems": [],
@@ -324,6 +324,7 @@
         "LlamaIndex docs: https://docs.llamaindex.ai",
         "Hugging Face docs: https://huggingface.co/docs",
         "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
         "https://platform.openai.com/docs/guides/retrieval",
@@ -335,10 +336,11 @@
         "https://ai-sdk.dev/docs",
         "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
         "https://arxiv.org/abs/2603.10700",
-        "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+        "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+        "OpenAI docs: https://platform.openai.com/docs"
       ],
       "readyForHumanReview": true,
-      "reachableSources": 10,
+      "reachableSources": 11,
       "riskReviewChecklist": [
         "No income, ranking, approval, or client acquisition guarantee.",
         "No instruction to bypass platform rules, payments, messaging, or review systems.",
@@ -348,7 +350,9 @@
         "Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts.",
         "No instruction to bypass platform, payment, messaging, account, or review rules.",
         "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
+        "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
         "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
+        "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.",
         "Prompt examples include input context, output criteria, review rules, and adaptation notes."
       ],
       "safeDraft": true,
@@ -358,28 +362,29 @@
         "next-source-pack",
         "public-gap-decision"
       ],
-      "sourceTargets": 29,
+      "sourceTargets": 32,
       "sourceTypes": [
         "public-gap",
         "wave"
       ],
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "uniqueReachableUrls": [
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://python.langchain.com/docs",
         "https://docs.llamaindex.ai",
         "https://huggingface.co/docs",
-        "https://platform.openai.com/docs",
-        "https://ai-sdk.dev/docs",
         "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
         "https://arxiv.org/abs/2603.10700",
-        "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+        "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+        "https://platform.openai.com/docs/guides/agents"
       ],
       "verificationFocus": [
-        "Verify 17 official source target(s).",
+        "Verify 18 official source target(s).",
         "Check 5 search query seed(s).",
-        "Review 10 combined checklist signal(s).",
+        "Review 12 combined checklist signal(s).",
         "Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..",
         "Complete freshness checklist for fast-changing AI/tool guidance.",
         "Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.",

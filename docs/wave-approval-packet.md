@@ -1,6 +1,6 @@
 # Wave Approval Packet
 
-Generated at: 2026-06-12T06:13:06.478Z
+Generated at: 2026-06-12T16:32:02.310Z
 
 Approval wave: 1
 
@@ -30,7 +30,7 @@ This packet is read-only. It consolidates the queue and source-pack checks for t
 
 | Ready | Score | Quality | Sources | Queries | Risk | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | 777 | 100 | 7 | 8 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 777 | 100 | 8 | 8 | 8 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | 773 | 100 | 6 | 8 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 769 | 100 | 4 | 9 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
@@ -48,7 +48,7 @@ This packet is read-only. It consolidates the queue and source-pack checks for t
 - Chinese chars: 1232
 - Internal links: 4
 - Description: 整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。
-- Source notes: 结合多模型路由、RAG、客服提示词和生产客服系统风险整理；正式发布前需要人工核对具体平台规则。
+- Source notes: 已于 2026-06-12 按 OpenAI Agents guardrails / human review 文档和 Vercel AI SDK tool calling / agent 文档核对高风险动作、人工接管、工具调用边界；结合多模型路由、RAG、客服提示词和生产客服系统风险整理。正式发布前仍需人工核对具体平台规则。
 
 Approval checklist:
 
@@ -68,6 +68,7 @@ Official source targets:
 - LlamaIndex docs: https://docs.llamaindex.ai
 - Hugging Face docs: https://huggingface.co/docs
 - OpenAI API docs: https://platform.openai.com/docs
+- OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
 - Vercel AI SDK docs: https://ai-sdk.dev/docs
 - OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 
@@ -88,7 +89,9 @@ Risk review checklist:
 - No instruction to bypass platform, payment, messaging, account, or review rules.
 - No API key, credential, private customer data, or account detail is included.
 - Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.
+- Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.
 - RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.
+- Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.
 - Prompt examples include input context, output criteria, review rules, and adaptation notes.
 
 Workflow angles:
@@ -125,7 +128,7 @@ npm run publish:articles -- --file=content/blog/ai-model-selection-customer-serv
 - Chinese chars: 1540
 - Internal links: 6
 - Description: 面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。
-- Source notes: 参考 Vercel 官方 AI SDK Agent 文档和实际 Web 应用部署流程整理；正式公开前需要人工核对 API 示例、版本和平台限制。
+- Source notes: 已于 2026-06-12 按 Vercel AI SDK 官方 Agents、ToolLoopAgent、tool calling、human-in-the-loop 文档核对核心概念；结合实际 Web 应用部署流程整理。正式公开前仍需人工复核 API 示例、版本和平台限制。
 
 Approval checklist:
 
@@ -200,7 +203,7 @@ npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sd
 - Chinese chars: 1862
 - Internal links: 6
 - Description: 整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。
-- Source notes: 参考 OpenAI prompt engineering 官方指南、团队知识库实践和行业 SOP 设计经验整理；正式公开前需要人工核对示例、行业边界和敏感内容。
+- Source notes: 已于 2026-06-12 按 OpenAI 官方 prompt engineering / prompt guidance 文档核对提示词结构原则；结合团队知识库实践和行业 SOP 设计经验整理。正式公开前仍需人工核对示例、行业边界和敏感内容。
 
 Approval checklist:
 

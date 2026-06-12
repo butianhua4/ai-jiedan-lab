@@ -1,6 +1,6 @@
 # AI Deployment Coverage
 
-Generated at: 2026-06-12T06:13:02.581Z
+Generated at: 2026-06-12T16:31:58.312Z
 
 This report is read-only. It organizes deployment, Agent, RAG, and model infrastructure drafts for manual review and does not publish anything.
 
@@ -94,7 +94,7 @@ Ready candidates:
 | --- | --- | --- | --- | --- | --- | --- |
 | 40 | 100 | AI Agent | informational | AI Agent 部署 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 40 | 100 | AI 记忆 | informational | AI Agent 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| 33 | 100 | 接单报价 | informational | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 33 | 100 | 项目报价 | informational | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | 33 | 100 | AI 部署 | informational | Dify 工作流错误处理 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | 33 | 100 | AI 部署 | informational | Dify Workflow 和 Agent 区别 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
 
@@ -138,7 +138,7 @@ Ready candidates:
 | --- | --- | --- | --- | --- | --- | --- |
 | 40 | 100 | AI 记忆 | informational | AI Agent 记忆 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | 34 | 100 | AI 部署 | informational | 客服 AI 模型选型 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| 33 | 100 | 接单报价 | informational | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 33 | 100 | 项目报价 | informational | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | 33 | 100 | AI 部署 | informational | n8n AI Agent 知识库记忆 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 | 33 | 100 | AI 部署 | informational | Open WebUI Functions Pipelines | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 
@@ -219,7 +219,7 @@ Ready candidates:
 
 | Batch | Score | Category | Intent | Keyword | Title | File |
 | --- | --- | --- | --- | --- | --- | --- |
-| 33 | 100 | 接单报价 | informational | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 33 | 100 | 项目报价 | informational | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | 33 | 100 | AI 部署 | informational | Dify 工作流错误处理 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | 33 | 100 | AI 部署 | informational | Dify Workflow 和 Agent 区别 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
 | 33 | 100 | AI 部署 | informational | n8n AI Agent 知识库记忆 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
@@ -392,7 +392,7 @@ Ready candidates:
 
 ## 大模型和 AI 应用部署
 
-- Audience: 想把 AI 应用上线的新手开发者、独立站站长、接单服务者
+- Audience: 想把 AI 应用上线的新手开发者、独立站站长、AI 服务提供者
 - Next action: Use these draft candidates in manual review; keep status=draft/noindex until explicit approval.
 
 Workflow angles:
@@ -443,7 +443,7 @@ Workflow angles:
 - 复现
 - 修复顺序
 - 验证命令
-- 接单边界
+- 项目边界
 
 Search queries to cover:
 
