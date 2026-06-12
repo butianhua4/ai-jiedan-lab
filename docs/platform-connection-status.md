@@ -10,11 +10,12 @@ Connected and usable:
 
 - GitHub: repository, commits, issue templates, pull request template, and public project documentation.
 - Vercel: production deployment at https://ai-jiedan-lab.vercel.app.
+- Google Search Console: user-provided screenshot on 2026-06-12 shows the `https://ai-jiedan-lab.vercel.app/` property exists, with Search Console overview, page indexing, and messages visible.
 - Local automation: content status checks, review queue generation, review packs, searchability checks, traffic evidence guardrails.
 
 Ready but not fully connected:
 
-- Google Search Console: homepage, robots.txt, sitemap.xml, and public URLs are reachable, but verification is not ready because `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` is missing.
+- Local Search Console verification automation: homepage, robots.txt, sitemap.xml, and public URLs are reachable, but the local readiness script still reports missing `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`. This means the project cannot prove the verification token from env/live HTML, not that the Search Console property does not exist.
 
 Not connected yet:
 
@@ -23,9 +24,17 @@ Not connected yet:
 - Payoneer, Wise, PayPal, or Stripe: wait until manual service inquiries or paid-template demand appear.
 - Additional publishing platforms: prepare content exports first; do not mass-publish unreviewed drafts.
 
-## Search Console Readiness
+## Search Console Status
 
-The latest readiness check against `https://ai-jiedan-lab.vercel.app` shows:
+User-provided Search Console evidence from 2026-06-12 shows:
+
+- The `https://ai-jiedan-lab.vercel.app/` property is present in Google Search Console.
+- Search Console overview is available.
+- Performance summary currently shows 0 Google Search clicks.
+- Indexing summary shows 3 indexed pages and 1 unindexed page.
+- Search Console messages include property setup, monitoring results, and a notice about pages not being indexed.
+
+The local readiness check against `https://ai-jiedan-lab.vercel.app` still shows:
 
 - Homepage returns 200.
 - `robots.txt` returns 200.
@@ -34,7 +43,7 @@ The latest readiness check against `https://ai-jiedan-lab.vercel.app` shows:
 - Sitemap contains public URLs.
 - Missing item: `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`.
 
-Next step: create a Google Search Console property for the production URL, copy the HTML tag `content` value, and set it as `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` in Vercel environment variables. After redeploying, rerun:
+Next step: keep the existing Search Console property. If the HTML tag token is available, optionally set it as `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` in Vercel so local automation can verify the same evidence. After redeploying, rerun:
 
 ```bash
 npm run search-console:check -- --url=https://ai-jiedan-lab.vercel.app
@@ -44,11 +53,12 @@ npm run search-console:check -- --url=https://ai-jiedan-lab.vercel.app
 
 Current traffic-data status:
 
-- No Search Console performance export is connected.
+- Search Console UI evidence exists, but no export or API-backed measured traffic file is connected to the repository.
 - No Analytics or Vercel Web Analytics data source is connected.
-- No measured impressions, clicks, visits, rankings, or revenue can be claimed.
+- From the user-provided Search Console screenshot, the current visible click count is 0.
+- No measured visits, rankings, or revenue can be claimed.
 
-The correct public statement is: the site is live and indexable at the technical level, but there is no measured traffic evidence yet.
+The correct public statement is: the site is live, Search Console is set up, some pages are indexed, but there is no proven search traffic yet.
 
 ## Article Publication Status
 
@@ -73,12 +83,12 @@ Automation can prepare candidates, but it should not mark drafts as reviewed or 
 
 ## Immediate Next Steps
 
-1. Connect Google Search Console by adding `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` in Vercel.
-2. Manually review the first 5 priority-5 candidates listed in `docs/review-pack.md` and `docs/review-opinions.md`.
-3. For each approved article, add real verification notes: screenshots, command output, demo link, source note, or concrete operating example.
-4. Move only approved articles into review status.
-5. Publish only 1 to 3 articles per batch, then check live pages, sitemap, and internal links.
-6. After Search Console has data, report impressions and clicks from measured exports only.
+1. Use the existing Search Console property to inspect the unindexed URL and reason.
+2. Move the first approved review-entry batch into review status.
+3. Publish only 1 to 3 approved articles per batch, then check live pages, sitemap, and internal links.
+4. Submit the sitemap or request inspection for newly published URLs in Search Console.
+5. After Search Console has measurable impressions/clicks, report only those measured numbers.
+6. Optionally add `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` in Vercel so local automation can detect verification evidence.
 
 ## Platform Strategy
 
