@@ -44,6 +44,11 @@ export default function ToolsPage() {
       href: "/tools/api-routing-cost-checker",
     },
     {
+      title: "公开文章标题、描述与内链刷新助手",
+      description: "输入标题、摘要、关键词和搜索意图，生成 SEO 标题候选、Meta 描述、内链建议和人工检查清单。",
+      href: "/tools/public-seo-refresh-assistant",
+    },
+    {
       title: "Upwork Proposal 生成器",
       description: "根据客户需求生成谨慎可改的英文投标草稿，并提示风险、追问问题和报价方向。",
       href: "/tools/proposal-generator",

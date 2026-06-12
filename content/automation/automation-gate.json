@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T03:18:35.853Z",
+  "generatedAt": "2026-06-12T03:28:55.269Z",
   "ok": true,
   "summary": {
     "checks": 197,
@@ -955,7 +955,7 @@
     {
       "name": "tool market opportunity map covers broad tool demand safely",
       "ok": true,
-      "detail": "opportunities=8, tools=10, queries=80, public=15"
+      "detail": "opportunities=8, tools=11, queries=80, public=15"
     },
     {
       "name": "tool market opportunity map includes PPT, spreadsheet and registration actions without publishing",

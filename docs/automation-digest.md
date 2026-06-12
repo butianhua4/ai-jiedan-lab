@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-12T03:18:53.861Z
+Generated at: 2026-06-12T03:29:14.377Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -1567,7 +1567,7 @@ Public categories:
 ## Tool Market Opportunity Map
 
 - Opportunities: 8
-- Existing tools: 10
+- Existing tools: 11
 - CN-first opportunities: 2
 - Global-first opportunities: 2
 - Dual-track opportunities: 4
@@ -1587,7 +1587,7 @@ Public categories:
 | 136 | global-first | 0 | 1 | 8 | 5 | 5 | 大模型部署成本与路径选择器 | Refresh the existing tool page and add article-to-tool internal links. |
 | 139 | dual-track | 0 | 1 | 8 | 5 | 5 | Agent 记忆与 RAG 架构规划器 | Refresh the existing tool page and add article-to-tool internal links. |
 | 134 | global-first | 0 | 1 | 8 | 5 | 5 | AI API 接入、限流与成本路由检查器 | Refresh the existing tool page and add article-to-tool internal links. |
-| 143 | cn-first | 0 | 0 | 3 | 5 | 5 | 公开文章标题、描述与内链刷新助手 | Build a lightweight interactive tool page before expanding another generic article. |
+| 133 | cn-first | 0 | 1 | 3 | 5 | 5 | 公开文章标题、描述与内链刷新助手 | Refresh the existing tool page and add article-to-tool internal links. |
 
 | Platform | Market | Human account | Official URL | Next action |
 | --- | --- | --- | --- | --- |

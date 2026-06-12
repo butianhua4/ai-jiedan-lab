@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T03:18:19.708Z",
+  "generatedAt": "2026-06-12T03:28:34.882Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -49,6 +49,7 @@
       "ppt-planner",
       "pricing-calculator",
       "proposal-generator",
+      "public-seo-refresh-assistant",
       "spreadsheet-cleaner"
     ],
     "liveMissingFromSitemap": 0,
@@ -68,7 +69,7 @@
   "summary": {
     "cnFirstOpportunities": 2,
     "dualTrackOpportunities": 4,
-    "existingTools": 10,
+    "existingTools": 11,
     "globalFirstOpportunities": 2,
     "opportunities": 8,
     "platformRegistrationsNeedingHuman": 5,
@@ -897,10 +898,12 @@
           "title": "营销 AI 提示词模板：选题、广告文案、SEO 和活动复盘怎么写"
         }
       ],
-      "existingToolMatches": [],
+      "existingToolMatches": [
+        "public-seo-refresh-assistant"
+      ],
       "publicMatches": [],
-      "priorityScore": 143,
-      "recommendedNextAsset": "Build a lightweight interactive tool page before expanding another generic article.",
+      "priorityScore": 133,
+      "recommendedNextAsset": "Refresh the existing tool page and add article-to-tool internal links.",
       "safetyBoundary": {
         "autoCreateArticles": false,
         "autoEditPublicArticles": false,
