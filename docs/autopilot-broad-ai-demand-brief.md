@@ -1,6 +1,6 @@
 # Autopilot Broad AI Demand Brief
 
-Generated at: 2026-06-12T06:13:35.904Z
+Generated at: 2026-06-12T14:47:05.205Z
 
 This report is read-only. It widens content planning beyond website deployment into LLM deployment, Agent deployment, memory, RAG, no-code automation, AI API operations, observability, and industry prompt packs.
 
@@ -44,7 +44,7 @@ This report is read-only. It widens content planning beyond website deployment i
 | 315 | 0 | 28 | 6 | 3 | 5 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres | 想让 Agent 记住用户、项目、偏好和流程的开发者与团队 | 用户明确点名“记忆板块”，这个方向能从技术教程、架构设计、隐私合规三个层面持续扩展。 |
 | 313 | 0 | 32 | 6 | 3 | 5 | RAG、知识库、向量数据库和引用溯源 | 企业知识库、客服机器人、内部搜索、文档问答负责人 | RAG 是搜索面很宽的稳定主题，适合承接企业知识库、客服、内部文档问答和 Agent 记忆流量。 |
 | 311 | 0 | 27 | 6 | 3 | 6 | 全行业 AI 提示词和工作流模板 | 运营、销售、客服、HR、教育、财务、法务、产品等非技术岗位 | 这是用户特别要求的“全行业使用 AI 的提示词”，搜索面宽，适合先做总入口，再拆岗位长尾。 |
-| 307 | 0 | 36 | 6 | 3 | 5 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | 低代码/无代码自动化接单者、内部工具负责人、小团队运营 | 这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。 |
+| 307 | 0 | 36 | 6 | 3 | 5 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | 低代码/无代码自动化项目者、内部工具负责人、小团队运营 | 这类词同时覆盖搜索流量和可售服务，适合从教程、报价、验收、风控四个角度铺内容。 |
 | 293 | 0 | 15 | 6 | 3 | 5 | AI API 接入、限流、成本和多模型路由 | 需要把 AI API 接进产品、网站、SaaS 原型的人 | API 接入和报错是明确搜索意图，能和工具页、报价页、部署教程形成内链闭环。 |
 | 287 | 0 | 13 | 6 | 3 | 5 | LLM 观测、评测、日志和上线后质量 | 准备把 AI 应用交付给客户或团队使用的人 | 部署之后的质量和成本问题会持续出现，适合承接更成熟的搜索需求，也能提高文章可信度。 |
 
@@ -281,7 +281,7 @@ Ready draft candidates:
 
 ## Dify、n8n、Coze、Flowise、MCP 自动化部署
 
-- Audience: 低代码/无代码自动化接单者、内部工具负责人、小团队运营
+- Audience: 低代码/无代码自动化项目者、内部工具负责人、小团队运营
 - Gap score: 307
 - Public matches: 0
 - Draft matches: 36

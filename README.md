@@ -137,6 +137,7 @@ npm run traffic:evidence
 - `.github/PULL_REQUEST_TEMPLATE.md`
 - `.github/ISSUE_TEMPLATE/content-task.yml`
 - `docs/manual-review-checklist.md`
+- `docs/next-public-content-expansion-plan-2026-06-12.md`
 - `docs/seo-searchability-audit.md`
 - `docs/search-console-setup.md`
 - `docs/platform-connection-status.md`

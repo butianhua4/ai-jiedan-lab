@@ -1,6 +1,6 @@
 # Popular Prompt Approval Bridge
 
-Generated at: 2026-06-12T06:13:15.435Z
+Generated at: 2026-06-12T14:47:05.061Z
 
 This report is read-only. It turns popular AI prompt lanes into safe next human-review candidates without editing, marking review, or publishing.
 
@@ -37,7 +37,7 @@ This report is read-only. It turns popular AI prompt lanes into safe next human-
 
 ## Source Evidence
 
-- approvalQueueGeneratedAt: "2026-06-12T01:43:03.571Z"
+- approvalQueueGeneratedAt: "2026-06-12T06:13:39.288Z"
 - approvalQueueSummary: {"backlogItems":5,"commandBoundaries":8,"humanGatedItems":8,"immediateApprovalItems":3,"immediateApprovalReadyItems":3,"items":8,"itemsReadyForHumanApproval":8,"itemsWithFailedSourceDecision":1,"itemsWithMassSearchTheme":6,"itemsWithPopularPromptLane":5,"itemsWithSeoWarnings":2,"itemsWithSourceReplacementDecisions":7,"publishConfirmCommandsIncluded":0,"trafficDataAvailable":false,"unsafeItems":0}
 - playbookGeneratedAt: "2026-06-12T06:13:14.917Z"
 - playbookSummary: {"agentDeploymentLanes":3,"broadWorkPromptLanes":3,"commandBoundaries":10,"deploymentBridgeItems":6,"humanGatedItems":10,"items":10,"itemsReadyForHumanReviewPrep":10,"itemsWithCandidateFiles":10,"itemsWithOfficialSources":10,"memoryLanes":1,"officialSources":12,"promptModuleBridgeItems":7,"promptTemplates":50,"publishConfirmCommandsIncluded":0,"searchQueries":127,"sourceTargets":22,"trafficDataAvailable":false,"uniqueCandidateFiles":21,"unsafeItems":0}

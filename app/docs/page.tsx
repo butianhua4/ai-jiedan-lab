@@ -38,6 +38,11 @@ const docs = [
     href: "/docs/manual-review-checklist",
   },
   {
+    title: "下一批公开内容扩展计划",
+    description: "整理部署、Agent、RAG、办公 AI 和行业提示词的下一批人工复核候选。",
+    href: "/docs/next-public-content-expansion-plan-2026-06-12",
+  },
+  {
     title: "安全自动化计划",
     description: "说明 OpenClaw / Codex 可以自动化什么，以及禁止自动化什么。",
     href: "/docs/automation-plan",

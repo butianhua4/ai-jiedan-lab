@@ -35,6 +35,11 @@ const docs = {
     title: "人工审核清单",
     description: "文章发布前必须检查的内容质量和合规项目。",
   },
+  "next-public-content-expansion-plan-2026-06-12": {
+    file: "next-public-content-expansion-plan-2026-06-12.md",
+    title: "下一批公开内容扩展计划",
+    description: "部署、Agent、RAG、办公 AI 和行业提示词的下一批人工复核候选。",
+  },
   "post-deploy-checklist": {
     file: "post-deploy-checklist.md",
     title: "上线后检查清单",
