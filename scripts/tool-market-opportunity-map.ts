@@ -47,7 +47,7 @@ const opportunities: ToolOpportunitySeed[] = [
   {
     id: "ppt-planner-layout-generator",
     title: "PPT 策划与美观排版助手",
-    audience: "学生、运营、销售、创业者、接单交付者",
+    audience: "学生、运营、销售、创业者、项目交付者",
     marketTrack: "dual-track",
     whyNow: "搜索结果里 PPT 用户反复强调一键生成、自动排版、美化、PPTX 导出和可编辑性；单纯给大纲不够，要给页面级版式方案。",
     searchTerms: ["ppt", "presentation", "slides", "deck"],
@@ -63,7 +63,7 @@ const opportunities: ToolOpportunitySeed[] = [
   {
     id: "spreadsheet-cleanup-assistant",
     title: "表格一键整理与清洗助手",
-    audience: "运营、财务、HR、跨境卖家、客服主管、接单数据整理场景",
+    audience: "运营、财务、HR、跨境卖家、客服主管、项目数据整理场景",
     marketTrack: "dual-track",
     whyNow: "Excel、Google Sheets 和 Copilot/Gemini 都在强调表格生成、公式、透视表、数据分析，说明表格整理是高频办公需求。",
     searchTerms: ["excel", "spreadsheet", "sheet", "csv", "table", "formula"],
@@ -95,7 +95,7 @@ const opportunities: ToolOpportunitySeed[] = [
   {
     id: "agent-deployment-planner",
     title: "Agent 部署与工具权限规划器",
-    audience: "AI 应用开发者、自动化接单者、企业内部工具负责人",
+    audience: "AI 应用开发者、自动化项目负责人、企业内部工具负责人",
     marketTrack: "dual-track",
     whyNow: "项目公开面仍缺 Agent 部署覆盖，搜索需求包含工具调用、权限、生产安全和平台部署。",
     searchTerms: ["agent", "langgraph", "crewai", "tool calling", "mcp", "部署"],
@@ -143,7 +143,7 @@ const opportunities: ToolOpportunitySeed[] = [
   {
     id: "ai-api-routing-cost-checker",
     title: "AI API 接入、限流与成本路由检查器",
-    audience: "SaaS、内部工具、接单项目开发者",
+    audience: "SaaS、内部工具、客户项目开发者",
     marketTrack: "global-first",
     whyNow: "API 接入、限流、密钥安全、多模型路由和成本控制是搜索高意图问题，容易转化为咨询或模板。",
     searchTerms: ["api", "rate limit", "openrouter", "cost", "routing", "key"],

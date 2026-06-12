@@ -70,7 +70,7 @@ const officialSources = {
 
 const topics: TopicSeed[] = [
   {
-    audience: "想把 AI 应用上线的新手开发者、独立站站长、接单服务者",
+    audience: "想把 AI 应用上线的新手开发者、独立站站长、AI 服务提供者",
     priority: 100,
     reviewFocus: ["核对当前官方部署文档", "检查环境变量、API Key、限流、日志、回滚和 smoke check", "避免承诺一次部署就稳定运行"],
     searchQueries: ["大模型部署教程", "AI 应用部署教程", "OpenAI API 部署教程", "Vercel AI SDK 部署"],
@@ -167,7 +167,7 @@ const topics: TopicSeed[] = [
     sourceTargets: [officialSources.vercelAiSdk, officialSources.openaiApi],
     terms: ["build failed", "404", "invalid", "missing", "API Key 无效", "环境变量", "部署失败", "报错"],
     topic: "AI 应用部署报错和排查",
-    workflowAngles: ["错误日志", "复现", "修复顺序", "验证命令", "接单边界"],
+    workflowAngles: ["错误日志", "复现", "修复顺序", "验证命令", "项目边界"],
   },
 ];
 

@@ -294,7 +294,7 @@ const demandLanes: DemandLaneSeed[] = [
       "RAG 项目 报价",
       "AI 项目验收清单",
     ],
-    terms: ["pricing", "报价", "proposal", "quote", "scope", "验收", "交付", "freelance", "接单", "maintenance"],
+    terms: ["pricing", "报价", "proposal", "quote", "scope", "验收", "交付", "freelance", "项目", "maintenance"],
     userProblem: "This lane turns search demand into services without pretending the site already has traffic or revenue proof.",
   },
 ];

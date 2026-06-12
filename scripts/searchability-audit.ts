@@ -68,7 +68,7 @@ async function main() {
   });
   checks.push({
     name: "llms.txt route renders",
-    ok: llmsText.includes("AI 接单实验室") && llmsText.includes("Draft and noindex articles are intentionally excluded"),
+    ok: llmsText.includes("AI 工具指南") && llmsText.includes("Draft and noindex articles are intentionally excluded"),
   });
   checks.push({
     name: "llms.txt route uses canonical base",

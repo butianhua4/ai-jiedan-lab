@@ -112,7 +112,7 @@ const topics: TopicSeed[] = [
     why: "本地模型部署搜索需求强，但信息变化快，必须保留人工事实核对。",
   },
   {
-    audience: "正在做自动化接单、内部工具和 SaaS 原型的人",
+    audience: "正在做自动化项目、内部工具和 SaaS 原型的人",
     cluster: "No-code AI automation",
     intent: "informational",
     priority: 78,

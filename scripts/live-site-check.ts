@@ -9,14 +9,14 @@ const jsonOutput = readArg("json") || readArg("jsonOutput");
 const markdownOutput = readArg("markdown") || readArg("markdownOutput");
 
 const checks = [
-  ["/", "AI 接单实验室"],
+  ["/", "AI 工具指南"],
   ["/blog", "新手教程"],
   ["/tools", "AI 工具导航"],
   ["/tools/proposal-generator", "Upwork Proposal 生成器"],
   ["/tools/error-explainer", "Codex 报错解释器"],
   ["/tools/pricing-calculator", "项目报价助手"],
   ["/templates", "模板下载"],
-  ["/roadmap", "AI 接单 30 天路线图"],
+  ["/roadmap", "AI 工具学习 30 天路线图"],
   ["/sitemap.xml", "<urlset"],
   ["/robots.txt", "Sitemap"],
   ["/llms.txt", "Draft and noindex articles are intentionally excluded"],

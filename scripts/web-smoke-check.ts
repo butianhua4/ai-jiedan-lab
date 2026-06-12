@@ -1,7 +1,7 @@
 import { spawn } from "child_process";
 
 const checks = [
-  ["/", "AI 接单实验室"],
+  ["/", "AI 工具指南"],
   ["/tools/proposal-generator", "Upwork Proposal 生成器"],
   ["/tools/error-explainer", "Codex 报错解释器"],
   ["/tools/pricing-calculator", "项目报价助手"],

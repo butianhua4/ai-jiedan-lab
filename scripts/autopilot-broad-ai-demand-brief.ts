@@ -249,7 +249,7 @@ const demandClusters: DemandClusterSeed[] = [
     why: "这是用户特别要求的“全行业使用 AI 的提示词”，搜索面宽，适合先做总入口，再拆岗位长尾。",
   },
   {
-    audience: "低代码/无代码自动化接单者、内部工具负责人、小团队运营",
+    audience: "低代码/无代码自动化项目者、内部工具负责人、小团队运营",
     cluster: "Dify、n8n、Coze、Flowise、MCP 自动化部署",
     contentAngles: [
       "Dify workflow 和 Agent 怎么选",

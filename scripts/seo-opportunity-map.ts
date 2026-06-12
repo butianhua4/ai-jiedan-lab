@@ -58,7 +58,7 @@ const clusters = [
   { name: "RAG and knowledge base", terms: ["RAG", "知识库", "向量", "vector", "Chroma", "检索", "引用"] },
   { name: "Industry AI prompts", terms: ["提示词", "prompt", "客服", "数据分析", "销售", "运营", "HR", "财务", "行业"] },
   { name: "Troubleshooting", terms: ["报错", "错误", "failed", "Error", "404", "invalid", "missing", "npm", "install", "debug"] },
-  { name: "Freelance monetization", terms: ["Upwork", "Fiverr", "Proposal", "报价", "接单", "客户", "收款", "Payoneer", "Wise", "PayPal"] },
+  { name: "Freelance monetization", terms: ["Upwork", "Fiverr", "Proposal", "报价", "项目", "客户", "收款", "Payoneer", "Wise", "PayPal"] },
 ] as const;
 
 async function main() {
