@@ -1,6 +1,6 @@
 # Autopilot Human Review Playbook
 
-Generated at: 2026-06-12T16:32:26.777Z
+Generated at: 2026-06-13T01:37:27.787Z
 
 This report is read-only. It merges the top autopilot approval packet with search, source, internal-link, and copydesk tasks for human review.
 
@@ -205,7 +205,7 @@ Search and copydesk actions:
 
 Source verification actions:
 
-- Verify 18 official source target(s).
+- Verify 19 official source target(s).
 - Check 5 search query seed(s).
 - Review 12 combined checklist signal(s).
 - Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..

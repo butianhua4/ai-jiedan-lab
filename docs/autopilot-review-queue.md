@@ -1,6 +1,6 @@
 # Autopilot Review Queue
 
-Generated at: 2026-06-12T16:32:24.391Z
+Generated at: 2026-06-13T01:37:25.366Z
 
 This report is read-only. It ranks the next manual review assignments and stops before article status changes.
 
@@ -45,7 +45,7 @@ This report is read-only. It ranks the next manual review assignments and stops 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | 1723 | ai-deployment | deployment, public-gap, wave | 14 | 11 | 0 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 1723 | industry-prompt | prompt, public-gap, wave | 17 | 13 | 0 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | 1598 | public-coverage-gap | public-gap, wave | 18 | 5 | 0 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 1598 | public-coverage-gap | public-gap, wave | 19 | 5 | 0 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | 1348 | ai-deployment | deployment, public-gap | 17 | 13 | 0 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | true | 1278 | ai-deployment | deployment, public-gap | 6 | 9 | 0 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | true | 1238 | ai-deployment | deployment, public-gap | 4 | 8 | 0 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
@@ -100,7 +100,7 @@ Focus:
 
 Focus:
 
-- Verify 18 official source target(s).
+- Verify 19 official source target(s).
 - Check 5 search query seed(s).
 - Review 12 combined checklist signal(s).
 - Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..
@@ -233,7 +233,7 @@ Focus:
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | 1723 | ai-deployment | deployment, public-gap, wave | 14 | 11 | 0 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 1723 | industry-prompt | prompt, public-gap, wave | 17 | 13 | 0 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | 1598 | public-coverage-gap | public-gap, wave | 18 | 5 | 0 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 1598 | public-coverage-gap | public-gap, wave | 19 | 5 | 0 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | 1348 | ai-deployment | deployment, public-gap | 17 | 13 | 0 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | true | 1278 | ai-deployment | deployment, public-gap | 6 | 9 | 0 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | true | 1238 | ai-deployment | deployment, public-gap | 4 | 8 | 0 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |

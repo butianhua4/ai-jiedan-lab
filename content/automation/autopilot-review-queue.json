@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T16:32:24.391Z",
+  "generatedAt": "2026-06-13T01:37:25.366Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -172,7 +172,7 @@
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "humanActionPlan": [
         "Review source lanes together: public-gap, wave.",
-        "Verify 18 official source target(s) before any approval.",
+        "Verify 19 official source target(s) before any approval.",
         "Check search intent against 5 query seed(s).",
         "Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.",
         "Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.",
@@ -180,7 +180,7 @@
       ],
       "readyForAssignment": true,
       "reviewFocus": [
-        "Verify 18 official source target(s).",
+        "Verify 19 official source target(s).",
         "Check 5 search query seed(s).",
         "Review 12 combined checklist signal(s).",
         "Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..",
@@ -204,16 +204,17 @@
         "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://python.langchain.com/docs",
         "https://docs.llamaindex.ai",
         "https://huggingface.co/docs",
-        "https://platform.openai.com/docs",
-        "https://ai-sdk.dev/docs",
         "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
         "https://arxiv.org/abs/2603.10700",
-        "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+        "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+        "https://platform.openai.com/docs/guides/agents"
       ],
       "sourceTypes": [
         "public-gap",
@@ -804,7 +805,7 @@
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "humanActionPlan": [
         "Review source lanes together: public-gap, wave.",
-        "Verify 18 official source target(s) before any approval.",
+        "Verify 19 official source target(s) before any approval.",
         "Check search intent against 5 query seed(s).",
         "Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.",
         "Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.",
@@ -812,7 +813,7 @@
       ],
       "readyForAssignment": true,
       "reviewFocus": [
-        "Verify 18 official source target(s).",
+        "Verify 19 official source target(s).",
         "Check 5 search query seed(s).",
         "Review 12 combined checklist signal(s).",
         "Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..",
@@ -836,16 +837,17 @@
         "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://python.langchain.com/docs",
         "https://docs.llamaindex.ai",
         "https://huggingface.co/docs",
-        "https://platform.openai.com/docs",
-        "https://ai-sdk.dev/docs",
         "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
         "https://arxiv.org/abs/2603.10700",
-        "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+        "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+        "https://platform.openai.com/docs/guides/agents"
       ],
       "sourceTypes": [
         "public-gap",

@@ -1,6 +1,6 @@
 # Review Action Board
 
-Generated at: 2026-06-12T16:32:17.252Z
+Generated at: 2026-06-13T01:37:18.091Z
 
 This board is read-only. It turns review automation reports into a prioritized human task queue.
 
@@ -39,7 +39,7 @@ This board is read-only. It turns review automation reports into a prioritized h
 
 | Ready | Priority | Kind | Scope | Sources | Warnings | Blockers | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | 1032 | wave-approval | wave-1 | 32 | 2 | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 1034 | wave-approval | wave-1 | 34 | 2 | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | 1016 | wave-approval | wave-2 | 26 | 0 | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 1002 | wave-approval | wave-3 | 24 | 0 | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | true | 806 | public-gap-review | public-gap-wave-1 | 26 | 3 | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
@@ -50,13 +50,13 @@ This board is read-only. It turns review automation reports into a prioritized h
 
 | Ready | Priority | Kind | Scope | Sources | Warnings | Blockers | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | 1032 | wave-approval | wave-1 | 32 | 2 | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 1034 | wave-approval | wave-1 | 34 | 2 | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | 1016 | wave-approval | wave-2 | 26 | 0 | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 1002 | wave-approval | wave-3 | 24 | 0 | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | true | 806 | public-gap-review | public-gap-wave-1 | 26 | 3 | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 801 | public-gap-review | public-gap-wave-1 | 24 | 2 | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | true | 801 | public-gap-review | public-gap-wave-1 | 27 | 2 | none | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
-| true | 783 | public-gap-review | public-gap-wave-2 | 32 | 6 | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 785 | public-gap-review | public-gap-wave-2 | 34 | 6 | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | 769 | public-gap-review | public-gap-wave-2 | 11 | 3 | none | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | true | 768 | public-gap-review | public-gap-wave-2 | 11 | 5 | none | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 | true | 758 | public-gap-review | public-gap-wave-2 | 6 | 3 | none | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
@@ -75,7 +75,7 @@ This board is read-only. It turns review automation reports into a prioritized h
 - Kind: wave-approval
 - Scope: wave-1
 - Ready: true
-- Priority: 1032
+- Priority: 1034
 
 Action items:
 
@@ -243,12 +243,12 @@ Command boundary:
 - Kind: public-gap-review
 - Scope: public-gap-wave-2
 - Ready: true
-- Priority: 783
+- Priority: 785
 
 Action items:
 
 - Review theme gap: RAG、知识库、向量数据库和引用溯源.
-- Verify 10 source target(s) and source freshness.
+- Verify 11 source target(s) and source freshness.
 - Tighten the meta description so it states the search intent, audience, and outcome clearly.
 - Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.
 - During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.

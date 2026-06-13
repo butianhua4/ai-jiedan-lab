@@ -1,5 +1,5 @@
 # Traffic Claim Guard
-Generated at: 2026-06-12T16:32:51.725Z
+Generated at: 2026-06-13T01:37:50.783Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
@@ -79,7 +79,7 @@ None.
 | docs/automation-digest.md | 1403 | - Search Console verification evidence: false |
 | docs/automation-digest.md | 1406 | - Unsupported traffic claims: 0 |
 | docs/automation-digest.md | 1407 | - Traffic claim files scanned: 219 |
-| docs/automation-digest.md | 1408 | - Traffic claim watch mentions: 3832 |
+| docs/automation-digest.md | 1408 | - Traffic claim watch mentions: 3828 |
 | docs/automation-digest.md | 1421 | - Traffic data available: false |
 | docs/automation-digest.md | 1474 | - Measured traffic sources: 0 |
 | docs/automation-digest.md | 1476 | - Traffic data available: false |

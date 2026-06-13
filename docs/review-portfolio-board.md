@@ -1,6 +1,6 @@
 # Review Portfolio Board
 
-Generated at: 2026-06-12T16:32:17.749Z
+Generated at: 2026-06-13T01:37:18.603Z
 
 This report is read-only. It deduplicates review candidates across Wave, public-gap, deployment, and industry-prompt packs.
 
@@ -48,7 +48,7 @@ This report is read-only. It deduplicates review candidates across Wave, public-
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | true | 1275 | deployment, public-gap, wave | 14 | 11 | 22 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | true | 1275 | prompt, public-gap, wave | 17 | 13 | 19 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | true | 1250 | public-gap, wave | 18 | 5 | 12 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | true | 1250 | public-gap, wave | 19 | 5 | 12 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | true | 950 | deployment, public-gap | 4 | 8 | 16 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | true | true | 950 | deployment, public-gap | 17 | 13 | 15 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | true | true | 950 | deployment, public-gap | 2 | 8 | 18 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
@@ -63,7 +63,7 @@ This report is read-only. It deduplicates review candidates across Wave, public-
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | true | 1275 | deployment, public-gap, wave | 14 | 11 | 22 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | true | 1275 | prompt, public-gap, wave | 17 | 13 | 19 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | true | 1250 | public-gap, wave | 18 | 5 | 12 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | true | 1250 | public-gap, wave | 19 | 5 | 12 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | true | 950 | deployment, public-gap | 4 | 8 | 16 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | true | true | 950 | deployment, public-gap | 17 | 13 | 15 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | true | true | 950 | deployment, public-gap | 2 | 8 | 18 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
@@ -76,7 +76,7 @@ This report is read-only. It deduplicates review candidates across Wave, public-
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | true | 1275 | deployment, public-gap, wave | 14 | 11 | 22 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | true | 1275 | prompt, public-gap, wave | 17 | 13 | 19 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | true | 1250 | public-gap, wave | 18 | 5 | 12 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | true | 1250 | public-gap, wave | 19 | 5 | 12 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | true | 950 | deployment, public-gap | 4 | 8 | 16 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | true | true | 950 | deployment, public-gap | 17 | 13 | 15 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | true | true | 950 | deployment, public-gap | 2 | 8 | 18 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
@@ -157,7 +157,7 @@ Command boundary:
 Human action plan:
 
 - Review source lanes together: public-gap, wave.
-- Verify 18 official source target(s) before any approval.
+- Verify 19 official source target(s) before any approval.
 - Check search intent against 5 query seed(s).
 - Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.
 - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.

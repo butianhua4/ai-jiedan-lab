@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T16:32:21.776Z",
+  "generatedAt": "2026-06-13T01:37:22.726Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -16,7 +16,7 @@
       "stopBefore": "Every mark:review command requires explicit human approval. publish --confirm commands are intentionally not included."
     },
     "actionBoardReadyTasks": 16,
-    "contentFreshnessGeneratedAt": "2026-06-12T16:32:21.282Z",
+    "contentFreshnessGeneratedAt": "2026-06-13T01:37:22.226Z",
     "contentFreshnessGuardrails": {
       "autoPublish": false,
       "note": "This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status."
@@ -34,7 +34,7 @@
       "okUrls": 39,
       "publicGapDecisionFiles": 13,
       "redirectedUrls": 18,
-      "sourceReferences": 264,
+      "sourceReferences": 266,
       "uniqueUrls": 40
     },
     "uniqueActionFiles": 13
@@ -66,20 +66,20 @@
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
         "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://python.langchain.com/docs",
         "https://docs.llamaindex.ai",
         "https://huggingface.co/docs",
-        "https://platform.openai.com/docs",
-        "https://ai-sdk.dev/docs",
         "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
         "https://arxiv.org/abs/2603.10700",
         "https://www.pinecone.io/learn/retrieval-augmented-generation/",
         "https://platform.openai.com/docs/guides/agents"
       ],
       "readyForFreshnessReview": true,
-      "reachableSources": 32,
+      "reachableSources": 34,
       "reviewFocus": [
         "把 RAG、微调、提示词模板区分清楚",
         "必须写明引用、来源、权限和失败兜底",
@@ -108,7 +108,7 @@
         "current-review",
         "public-gap"
       ],
-      "sourceTargets": 32,
+      "sourceTargets": 34,
       "staleSensitiveChecks": [
         "客服 AI 模型选型 官方文档 最新",
         "客服 AI 模型选型 official docs latest",
@@ -1005,20 +1005,20 @@
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
         "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://python.langchain.com/docs",
         "https://docs.llamaindex.ai",
         "https://huggingface.co/docs",
-        "https://platform.openai.com/docs",
-        "https://ai-sdk.dev/docs",
         "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
         "https://arxiv.org/abs/2603.10700",
         "https://www.pinecone.io/learn/retrieval-augmented-generation/",
         "https://platform.openai.com/docs/guides/agents"
       ],
       "readyForFreshnessReview": true,
-      "reachableSources": 32,
+      "reachableSources": 34,
       "reviewFocus": [
         "把 RAG、微调、提示词模板区分清楚",
         "必须写明引用、来源、权限和失败兜底",
@@ -1047,7 +1047,7 @@
         "current-review",
         "public-gap"
       ],
-      "sourceTargets": 32,
+      "sourceTargets": 34,
       "staleSensitiveChecks": [
         "客服 AI 模型选型 官方文档 最新",
         "客服 AI 模型选型 official docs latest",

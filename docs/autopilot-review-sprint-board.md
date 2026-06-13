@@ -1,6 +1,6 @@
 # Autopilot Review Sprint Board
 
-Generated at: 2026-06-12T16:32:30.172Z
+Generated at: 2026-06-13T01:37:31.174Z
 
 This report is read-only. It plans the next 10 manual review assignments and keeps all status changes human-gated.
 
@@ -48,7 +48,7 @@ This report is read-only. It plans the next 10 manual review assignments and kee
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | true | ready-with-playbook | ai-deployment | 1723 | 14 | 11 | true | not-included | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 2 | true | ready-with-playbook | industry-prompt | 1723 | 17 | 13 | true | not-included | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| 3 | true | ready-with-playbook | public-coverage-gap | 1598 | 18 | 5 | true | not-included | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 3 | true | ready-with-playbook | public-coverage-gap | 1598 | 19 | 5 | true | not-included | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
 ## Queued For Playbook
 
@@ -129,12 +129,12 @@ Checklist:
 
 - Use merged playbook actions: 22 search, 45 source, 6 link.
 - Review source lanes together: public-gap, wave.
-- Verify 18 official source target(s) before any approval.
+- Verify 19 official source target(s) before any approval.
 - Check search intent against 5 query seed(s).
 - Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.
 - Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.
 - Run mark:review only after explicit human approval; publishing requires a separate explicit approval.
-- Verify 18 official source target(s).
+- Verify 19 official source target(s).
 - Check 5 search query seed(s).
 - Review 12 combined checklist signal(s).
 - Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..

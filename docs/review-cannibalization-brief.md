@@ -1,6 +1,6 @@
 # Review Cannibalization Brief
 
-Generated at: 2026-06-12T16:32:20.144Z
+Generated at: 2026-06-13T01:37:21.056Z
 
 This report is read-only. It checks current review candidates against published and nearby draft articles before human approval.
 
@@ -16,7 +16,7 @@ This report is read-only. It checks current review candidates against published 
 
 - Action board ready tasks: 16
 - Unique action files: 13
-- Content cannibalization generated at: 2026-06-12T16:32:19.373Z
+- Content cannibalization generated at: 2026-06-13T01:37:20.276Z
 - Global cannibalization summary: {"articleCount":669,"conflicts":200,"keywordConflicts":11,"reviewBatchConflicts":0,"slugStemConflicts":177,"titleStemConflicts":12}
 
 ## Summary

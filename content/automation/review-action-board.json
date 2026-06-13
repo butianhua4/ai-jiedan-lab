@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T16:32:17.252Z",
+  "generatedAt": "2026-06-13T01:37:18.091Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -29,7 +29,7 @@
     "okUrls": 39,
     "publicGapDecisionFiles": 13,
     "redirectedUrls": 18,
-    "sourceReferences": 264,
+    "sourceReferences": 266,
     "uniqueUrls": 40
   },
   "trafficBoundary": {
@@ -64,10 +64,10 @@
       },
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "kind": "wave-approval",
-      "priority": 1032,
+      "priority": 1034,
       "ready": true,
       "scope": "wave-1",
-      "sourceTargets": 32,
+      "sourceTargets": 34,
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "warnings": [
         "description may be thin for search snippets",
@@ -224,10 +224,10 @@
       },
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "kind": "wave-approval",
-      "priority": 1032,
+      "priority": 1034,
       "ready": true,
       "scope": "wave-1",
-      "sourceTargets": 32,
+      "sourceTargets": 34,
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "warnings": [
         "description may be thin for search snippets",
@@ -368,7 +368,7 @@
     {
       "actionItems": [
         "Review theme gap: RAG、知识库、向量数据库和引用溯源.",
-        "Verify 10 source target(s) and source freshness.",
+        "Verify 11 source target(s) and source freshness.",
         "Tighten the meta description so it states the search intent, audience, and outcome clearly.",
         "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
@@ -384,10 +384,10 @@
       },
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "kind": "public-gap-review",
-      "priority": 783,
+      "priority": 785,
       "ready": true,
       "scope": "public-gap-wave-2",
-      "sourceTargets": 32,
+      "sourceTargets": 34,
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "warnings": [
         "description may be thin for search snippets",

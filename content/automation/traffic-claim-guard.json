@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T16:32:51.725Z",
+  "generatedAt": "2026-06-13T01:37:50.783Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
@@ -406,7 +406,7 @@
       "file": "docs/automation-digest.md",
       "line": 1408,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 3832"
+      "text": "- Traffic claim watch mentions: 3828"
     },
     {
       "file": "docs/automation-digest.md",

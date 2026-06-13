@@ -1,6 +1,6 @@
 # Human Approval Repair Session Pack
 
-Generated at: 2026-06-12T16:32:29.676Z
+Generated at: 2026-06-13T01:37:30.683Z
 
 This report is read-only. It packages the next manual repair session for each routed file and stops before article edits, mark:review, or publishing.
 
@@ -346,7 +346,7 @@ Source review actions:
 - No API key, credential, private customer data, or account detail is included.
 - Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.
 - Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.
-- Verify 18 official source target(s).
+- Verify 19 official source target(s).
 - Check 5 search query seed(s).
 - Review 12 combined checklist signal(s).
 - Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..

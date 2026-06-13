@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T16:32:32.937Z",
+  "generatedAt": "2026-06-13T01:37:33.996Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "broadDemandGeneratedAt": "2026-06-12T16:32:32.428Z",
+    "broadDemandGeneratedAt": "2026-06-13T01:37:33.489Z",
     "broadDemandGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -28,7 +28,7 @@
       "reviewReadyDrafts": 633,
       "unsafeClusters": 0
     },
-    "contentFreshnessGeneratedAt": "2026-06-12T16:32:21.282Z",
+    "contentFreshnessGeneratedAt": "2026-06-13T01:37:22.226Z",
     "contentFreshnessGuardrails": {
       "autoPublish": false,
       "note": "This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status."
@@ -54,7 +54,7 @@
       "okUrls": 39,
       "publicGapDecisionFiles": 13,
       "redirectedUrls": 18,
-      "sourceReferences": 264,
+      "sourceReferences": 266,
       "uniqueUrls": 40
     },
     "triageSource": "autopilot-broad-ai-demand readyCandidates joined with content-freshness risk and source health URLs"

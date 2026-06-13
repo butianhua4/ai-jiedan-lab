@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T16:32:13.087Z",
+  "generatedAt": "2026-06-13T01:37:13.824Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -1030,16 +1030,17 @@
       "seedFamilyMatches": 5,
       "slug": "ai-model-selection-customer-service-guide",
       "sourceTargets": [
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://python.langchain.com/docs",
         "https://docs.llamaindex.ai",
         "https://huggingface.co/docs",
-        "https://platform.openai.com/docs",
-        "https://ai-sdk.dev/docs",
         "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
         "https://arxiv.org/abs/2603.10700",
-        "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+        "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+        "https://platform.openai.com/docs/guides/agents"
       ],
       "status": "draft",
       "structuredDataReady": true,
@@ -2211,16 +2212,17 @@
       "seedFamilyMatches": 5,
       "slug": "ai-model-selection-customer-service-guide",
       "sourceTargets": [
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://python.langchain.com/docs",
         "https://docs.llamaindex.ai",
         "https://huggingface.co/docs",
-        "https://platform.openai.com/docs",
-        "https://ai-sdk.dev/docs",
         "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
         "https://arxiv.org/abs/2603.10700",
-        "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+        "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+        "https://platform.openai.com/docs/guides/agents"
       ],
       "status": "draft",
       "structuredDataReady": true,

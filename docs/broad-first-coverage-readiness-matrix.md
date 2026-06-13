@@ -1,6 +1,6 @@
 # Broad First Coverage Readiness Matrix
 
-Generated at: 2026-06-12T16:32:53.174Z
+Generated at: 2026-06-13T01:37:52.230Z
 
 ## Guardrails
 
@@ -149,7 +149,7 @@ Warnings:
 - Title: 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
 - Readiness score: 56
 - Search signals: launchQueries=5, exactSeedMatches=0, seedFamilies=5, exactQueryMatches=0, queryFamilies=7
-- Source signals: launchTargets=11, reportTargets=32, reachable=32
+- Source signals: launchTargets=11, reportTargets=34, reachable=34
 - Mark review boundary: `npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human`
 - Publish dry-run boundary: `npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx`
 

@@ -1,6 +1,6 @@
 # Autopilot Source Verification Brief
 
-Generated at: 2026-06-12T16:32:26.298Z
+Generated at: 2026-06-13T01:37:27.311Z
 
 This report is read-only. It packages source verification work for the top autopilot approval packet items.
 
@@ -33,7 +33,7 @@ This report is read-only. It packages source verification work for the top autop
 
 ## Source Evidence
 
-- Source health summary: {"checkedUrls":40,"broadFirstCoverageFiles":8,"currentReviewFiles":3,"failedUrls":1,"filesCovered":23,"filesWithReachableSource":23,"filesWithoutReachableSource":0,"missingUrlTargets":0,"nextSourcePackFiles":19,"okUrls":39,"publicGapDecisionFiles":13,"redirectedUrls":18,"sourceReferences":264,"uniqueUrls":40}
+- Source health summary: {"checkedUrls":40,"broadFirstCoverageFiles":8,"currentReviewFiles":3,"failedUrls":1,"filesCovered":23,"filesWithReachableSource":23,"filesWithoutReachableSource":0,"missingUrlTargets":0,"nextSourcePackFiles":19,"okUrls":39,"publicGapDecisionFiles":13,"redirectedUrls":18,"sourceReferences":266,"uniqueUrls":40}
 - Packet unsafe items: 0
 
 ## Unsafe Items
@@ -46,7 +46,7 @@ This report is read-only. It packages source verification work for the top autop
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | true | 8 | 14 | 24 | 15 | 10 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | true | 7 | 18 | 25 | 15 | 10 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | true | 11 | 19 | 18 | 15 | 12 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | true | 11 | 20 | 18 | 15 | 12 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
 ## Per-Item Verification Tasks
 
@@ -188,7 +188,7 @@ Approval checklist:
 
 Verification focus:
 
-- Verify 18 official source target(s).
+- Verify 19 official source target(s).
 - Check 5 search query seed(s).
 - Review 12 combined checklist signal(s).
 - Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..

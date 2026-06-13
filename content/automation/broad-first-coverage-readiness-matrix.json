@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T16:32:53.174Z",
+  "generatedAt": "2026-06-13T01:37:52.230Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,7 +10,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "launchPackGeneratedAt": "2026-06-12T16:32:52.736Z",
+    "launchPackGeneratedAt": "2026-06-13T01:37:51.794Z",
     "launchPackGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -290,8 +290,8 @@
       },
       "sourceSignals": {
         "launchSourceTargets": 11,
-        "reachableSources": 32,
-        "sourceTargets": 32
+        "reachableSources": 34,
+        "sourceTargets": 34
       },
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "warningIssues": [
@@ -754,8 +754,8 @@
       },
       "sourceSignals": {
         "launchSourceTargets": 11,
-        "reachableSources": 32,
-        "sourceTargets": 32
+        "reachableSources": 34,
+        "sourceTargets": 34
       },
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "warningIssues": [

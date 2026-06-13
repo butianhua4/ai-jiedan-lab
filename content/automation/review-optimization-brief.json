@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T16:32:18.250Z",
+  "generatedAt": "2026-06-13T01:37:19.117Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -43,7 +43,7 @@
         "url": "/blog/build-first-webpage-with-codex"
       },
       "kind": "wave-approval",
-      "priority": 1032,
+      "priority": 1034,
       "proposedDescription": "面向准备落地 客服 AI 模型选型 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
       "proposedOpeningAdditions": [
         "在开头 200 字内自然回答一次“RAG 知识库搭建教程”这个搜索意图，先给结论再展开步骤。",
@@ -318,7 +318,7 @@
         "url": "/blog/build-first-webpage-with-codex"
       },
       "kind": "public-gap-review",
-      "priority": 783,
+      "priority": 785,
       "proposedDescription": "面向准备落地 客服 AI 模型选型 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
       "proposedOpeningAdditions": [
         "在开头 200 字内自然回答一次“RAG 知识库搭建教程”这个搜索意图，先给结论再展开步骤。",
@@ -417,7 +417,7 @@
         "url": "/blog/build-first-webpage-with-codex"
       },
       "kind": "wave-approval",
-      "priority": 1032,
+      "priority": 1034,
       "proposedDescription": "面向准备落地 客服 AI 模型选型 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
       "proposedOpeningAdditions": [
         "在开头 200 字内自然回答一次“RAG 知识库搭建教程”这个搜索意图，先给结论再展开步骤。",
@@ -692,7 +692,7 @@
         "url": "/blog/build-first-webpage-with-codex"
       },
       "kind": "public-gap-review",
-      "priority": 783,
+      "priority": 785,
       "proposedDescription": "面向准备落地 客服 AI 模型选型 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
       "proposedOpeningAdditions": [
         "在开头 200 字内自然回答一次“RAG 知识库搭建教程”这个搜索意图，先给结论再展开步骤。",

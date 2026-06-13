@@ -1,6 +1,6 @@
 # Review Freshness Brief
 
-Generated at: 2026-06-12T16:32:21.776Z
+Generated at: 2026-06-13T01:37:22.726Z
 
 This report is read-only. It converts freshness risk into human fact-check tasks for current review candidates.
 
@@ -16,8 +16,8 @@ This report is read-only. It converts freshness risk into human fact-check tasks
 
 - Action board ready tasks: 16
 - Unique action files: 13
-- Content freshness generated at: 2026-06-12T16:32:21.282Z
-- Source health summary: {"checkedUrls":40,"broadFirstCoverageFiles":8,"currentReviewFiles":3,"failedUrls":1,"filesCovered":23,"filesWithReachableSource":23,"filesWithoutReachableSource":0,"missingUrlTargets":0,"nextSourcePackFiles":19,"okUrls":39,"publicGapDecisionFiles":13,"redirectedUrls":18,"sourceReferences":264,"uniqueUrls":40}
+- Content freshness generated at: 2026-06-13T01:37:22.226Z
+- Source health summary: {"checkedUrls":40,"broadFirstCoverageFiles":8,"currentReviewFiles":3,"failedUrls":1,"filesCovered":23,"filesWithReachableSource":23,"filesWithoutReachableSource":0,"missingUrlTargets":0,"nextSourcePackFiles":19,"okUrls":39,"publicGapDecisionFiles":13,"redirectedUrls":18,"sourceReferences":266,"uniqueUrls":40}
 
 ## Summary
 
@@ -37,7 +37,7 @@ This report is read-only. It converts freshness risk into human fact-check tasks
 
 | Ready | Risk | Updated | Sources | Checks | Scope | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | high | 2026-06-12 | 32/32 | 12 | action-board, current-review, public-gap | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | high | 2026-06-12 | 34/34 | 12 | action-board, current-review, public-gap | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | high | 2026-06-12 | 26/26 | 12 | action-board, current-review, public-gap | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | high | 2026-06-12 | 22/24 | 12 | action-board, current-review, public-gap | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | true | high | 2026-06-12 | 27/27 | 12 | action-board, public-gap | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
@@ -55,7 +55,7 @@ This report is read-only. It converts freshness risk into human fact-check tasks
 
 | Ready | Risk | Updated | Sources | Checks | Scope | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | high | 2026-06-12 | 32/32 | 12 | action-board, current-review, public-gap | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | high | 2026-06-12 | 34/34 | 12 | action-board, current-review, public-gap | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | high | 2026-06-12 | 26/26 | 12 | action-board, current-review, public-gap | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | high | 2026-06-12 | 22/24 | 12 | action-board, current-review, public-gap | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | true | high | 2026-06-12 | 27/27 | 12 | action-board, public-gap | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
@@ -76,7 +76,7 @@ This report is read-only. It converts freshness risk into human fact-check tasks
 - File: content/blog/ai-model-selection-customer-service-guide.mdx
 - Freshness risk: high
 - Updated at: 2026-06-12
-- Reachable sources: 32/32
+- Reachable sources: 34/34
 
 Risk reasons:
 
@@ -96,13 +96,13 @@ Official source targets:
 - Vercel AI SDK docs: https://ai-sdk.dev/docs
 - OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
 - OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
+- https://platform.openai.com/docs
+- https://ai-sdk.dev/docs
 - https://platform.openai.com/docs/guides/retrieval
 - https://platform.openai.com/docs/guides/prompt-engineering
 - https://python.langchain.com/docs
 - https://docs.llamaindex.ai
 - https://huggingface.co/docs
-- https://platform.openai.com/docs
-- https://ai-sdk.dev/docs
 - https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/
 - https://arxiv.org/abs/2603.10700
 - https://www.pinecone.io/learn/retrieval-augmented-generation/

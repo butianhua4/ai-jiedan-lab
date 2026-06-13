@@ -1,6 +1,6 @@
 # Public Coverage Gap Decision Pack
 
-Generated at: 2026-06-12T16:32:13.568Z
+Generated at: 2026-06-13T01:37:14.305Z
 
 This report is read-only. It turns public coverage gap preflight warnings into human review decisions and explicit command boundaries.
 
@@ -14,7 +14,7 @@ This report is read-only. It turns public coverage gap preflight warnings into h
 
 ## Source Evidence
 
-- Preflight generated at: 2026-06-12T16:32:13.087Z
+- Preflight generated at: 2026-06-13T01:37:13.824Z
 - Traffic note: Search seeds and link suggestions are editorial signals, not measured rankings, impressions, clicks, traffic, or income.
 - Preflight summary: {"blockingItems":0,"broadFirstCoverageItems":8,"broadFirstCoveragePreflightItems":8,"items":13,"planItems":8,"planReadyItems":8,"planUnsafeItems":0,"planWaves":4,"readyItems":13,"structuredDataReadyItems":13,"uniqueFiles":13,"warningItems":13,"withPublicLinkSuggestions":13,"withSeedMatches":12}
 
@@ -59,7 +59,7 @@ This report is read-only. It turns public coverage gap preflight warnings into h
 | 1 | human-review-ready-with-optimizations | medium | 10 | 0/5 | /blog/codex-code-review-delivery-checklist | 2 | 开源大模型部署：Ollama、vLLM、TGI、RunPod | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | 4 | human-review-ready-with-optimizations | low | 15 | 1/6 | /blog/codex-code-review-delivery-checklist | 2 | LLM evaluation, observability, and security | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | 2 | human-review-ready-with-optimizations | medium | 3 | 0/5 | /blog/build-first-webpage-with-codex | 3 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
-| 2 | human-review-ready-with-optimizations | medium | 10 | 0/5 | /blog/build-first-webpage-with-codex | 4 | RAG、知识库、向量数据库和引用溯源 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 2 | human-review-ready-with-optimizations | medium | 11 | 0/5 | /blog/build-first-webpage-with-codex | 4 | RAG、知识库、向量数据库和引用溯源 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 4 | human-review-ready-with-optimizations | medium | 2 | 0/4 | /blog/codex-code-review-delivery-checklist | 4 | LLM serving, GPU, and managed inference | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
 | 3 | human-review-ready-with-optimizations | medium | 3 | 0/5 | /blog/vercel-env-variable-missing-beginner-guide | 3 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | 4 | human-review-ready-with-optimizations | medium | 3 | 0/1 | /blog/codex-code-review-delivery-checklist | 4 | LLM 观测、评测、日志和上线后质量 | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
@@ -512,16 +512,17 @@ Review focus:
 
 Source targets:
 
+- https://platform.openai.com/docs
+- https://ai-sdk.dev/docs
 - https://platform.openai.com/docs/guides/retrieval
 - https://platform.openai.com/docs/guides/prompt-engineering
 - https://python.langchain.com/docs
 - https://docs.llamaindex.ai
 - https://huggingface.co/docs
-- https://platform.openai.com/docs
-- https://ai-sdk.dev/docs
 - https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/
 - https://arxiv.org/abs/2603.10700
 - https://www.pinecone.io/learn/retrieval-augmented-generation/
+- https://platform.openai.com/docs/guides/agents
 
 Suggested optimizations:
 

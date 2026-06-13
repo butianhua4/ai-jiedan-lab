@@ -1,6 +1,6 @@
 # Manual Review Workbench
 
-Generated at: 2026-06-12T16:32:37.323Z
+Generated at: 2026-06-13T01:37:38.443Z
 
 This workbench is read-only. It does not publish articles or mark drafts for review.
 
@@ -193,7 +193,7 @@ Next review files:
 - Failed checks: 0
 - Unsupported traffic claims: 0
 - Traffic claim files scanned: 219
-- Traffic claim watch mentions: 3832
+- Traffic claim watch mentions: 3828
 
 ## Content Integrity
 

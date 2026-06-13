@@ -1,6 +1,6 @@
 # Autopilot Approval Packet
 
-Generated at: 2026-06-12T16:32:24.873Z
+Generated at: 2026-06-13T01:37:25.837Z
 
 This packet is read-only. It packages the top autopilot review assignments for human approval and does not change article status.
 
@@ -38,7 +38,7 @@ This packet is read-only. It packages the top autopilot review assignments for h
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | 1723 | ai-deployment | draft | true | 14 | 11 | 8 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 1723 | industry-prompt | draft | true | 17 | 13 | 8 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | 1598 | public-coverage-gap | draft | true | 18 | 5 | 8 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 1598 | public-coverage-gap | draft | true | 19 | 5 | 8 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
 ## Item Review Notes
 
@@ -202,16 +202,17 @@ Official source targets:
 - OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
 - Vercel AI SDK docs: https://ai-sdk.dev/docs
 - OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
+- https://platform.openai.com/docs
+- https://ai-sdk.dev/docs
 - https://platform.openai.com/docs/guides/retrieval
 - https://platform.openai.com/docs/guides/prompt-engineering
 - https://python.langchain.com/docs
 - https://docs.llamaindex.ai
 - https://huggingface.co/docs
-- https://platform.openai.com/docs
-- https://ai-sdk.dev/docs
 - https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/
 - https://arxiv.org/abs/2603.10700
 - https://www.pinecone.io/learn/retrieval-augmented-generation/
+- https://platform.openai.com/docs/guides/agents
 
 Headings:
 
@@ -226,7 +227,7 @@ Headings:
 
 Human review focus:
 
-- Verify 18 official source target(s).
+- Verify 19 official source target(s).
 - Check 5 search query seed(s).
 - Review 12 combined checklist signal(s).
 - Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..

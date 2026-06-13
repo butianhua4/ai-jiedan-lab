@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T16:32:37.323Z",
+  "generatedAt": "2026-06-13T01:37:38.443Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -820,7 +820,7 @@
     "filesScanned": 219,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 3832
+    "watchMentions": 3828
   },
   "contentIntegrity": {
     "allIssueItems": 0,

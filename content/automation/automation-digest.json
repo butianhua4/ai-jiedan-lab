@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T16:32:54.285Z",
+  "generatedAt": "2026-06-13T01:37:53.357Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -3707,8 +3707,8 @@
               "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
               "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
               "content/blog/ai-api-key-security-rotation-guide.mdx",
-              "content/blog/ai-agent-memory-rag-design-guide.mdx",
               "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "content/blog/ai-agent-memory-rag-design-guide.mdx",
               "content/blog/ai-automation-project-pricing-scope-guide.mdx",
               "content/blog/dify-workflow-error-handling-guide.mdx",
               "content/blog/dify-workflow-vs-agent-guide.mdx",
@@ -3725,8 +3725,8 @@
               "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
               "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
               "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
-              "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
               "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+              "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
               "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
               "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
               "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
@@ -3757,7 +3757,7 @@
               "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
             ],
             "manualFixReady": true,
-            "referenceCount": 19,
+            "referenceCount": 21,
             "references": [
               {
                 "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
@@ -3792,6 +3792,13 @@
                 "label": "https://platform.openai.com/docs/guides/agents",
                 "scope": "public-gap-decision",
                 "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+                "url": "https://platform.openai.com/docs/guides/agents"
+              },
+              {
+                "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+                "label": "https://platform.openai.com/docs/guides/agents",
+                "scope": "public-gap-decision",
+                "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
                 "url": "https://platform.openai.com/docs/guides/agents"
               },
               {
@@ -3883,6 +3890,13 @@
                 "label": "https://platform.openai.com/docs/guides/agents",
                 "scope": "broad-first-coverage",
                 "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+                "url": "https://platform.openai.com/docs/guides/agents"
+              },
+              {
+                "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+                "label": "https://platform.openai.com/docs/guides/agents",
+                "scope": "broad-first-coverage",
+                "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
                 "url": "https://platform.openai.com/docs/guides/agents"
               },
               {
@@ -5721,7 +5735,7 @@
           "No API key, credential, private customer data, or account detail is included.",
           "Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.",
           "Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.",
-          "Verify 18 official source target(s).",
+          "Verify 19 official source target(s).",
           "Check 5 search query seed(s).",
           "Review 12 combined checklist signal(s).",
           "Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..",
@@ -6916,8 +6930,8 @@
               "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
               "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
               "content/blog/ai-api-key-security-rotation-guide.mdx",
-              "content/blog/ai-agent-memory-rag-design-guide.mdx",
               "content/blog/ai-model-selection-customer-service-guide.mdx",
+              "content/blog/ai-agent-memory-rag-design-guide.mdx",
               "content/blog/ai-automation-project-pricing-scope-guide.mdx",
               "content/blog/dify-workflow-error-handling-guide.mdx",
               "content/blog/dify-workflow-vs-agent-guide.mdx",
@@ -6934,8 +6948,8 @@
               "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
               "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
               "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
-              "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
               "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+              "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
               "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
               "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
               "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
@@ -6966,7 +6980,7 @@
               "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
             ],
             "manualFixReady": true,
-            "referenceCount": 19,
+            "referenceCount": 21,
             "references": [
               {
                 "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
@@ -7001,6 +7015,13 @@
                 "label": "https://platform.openai.com/docs/guides/agents",
                 "scope": "public-gap-decision",
                 "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+                "url": "https://platform.openai.com/docs/guides/agents"
+              },
+              {
+                "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+                "label": "https://platform.openai.com/docs/guides/agents",
+                "scope": "public-gap-decision",
+                "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
                 "url": "https://platform.openai.com/docs/guides/agents"
               },
               {
@@ -7092,6 +7113,13 @@
                 "label": "https://platform.openai.com/docs/guides/agents",
                 "scope": "broad-first-coverage",
                 "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+                "url": "https://platform.openai.com/docs/guides/agents"
+              },
+              {
+                "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+                "label": "https://platform.openai.com/docs/guides/agents",
+                "scope": "broad-first-coverage",
+                "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
                 "url": "https://platform.openai.com/docs/guides/agents"
               },
               {
@@ -8742,7 +8770,7 @@
         "url": "https://ai-sdk.dev/docs"
       },
       {
-        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=pl",
+        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=ru",
         "ok": true,
         "references": [
           {
@@ -8988,7 +9016,7 @@
       }
     ],
     "redirectedUrls": 18,
-    "sourceReferences": 264,
+    "sourceReferences": 266,
     "uniqueUrls": 40
   },
   "sourceTargetRemediation": {
@@ -10316,8 +10344,8 @@
           "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
           "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
           "content/blog/ai-api-key-security-rotation-guide.mdx",
-          "content/blog/ai-agent-memory-rag-design-guide.mdx",
           "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "content/blog/ai-agent-memory-rag-design-guide.mdx",
           "content/blog/ai-automation-project-pricing-scope-guide.mdx",
           "content/blog/dify-workflow-error-handling-guide.mdx",
           "content/blog/dify-workflow-vs-agent-guide.mdx",
@@ -10334,8 +10362,8 @@
           "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
           "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
           "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
-          "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
           "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
           "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
           "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
           "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
@@ -10366,7 +10394,7 @@
           "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
         ],
         "manualFixReady": true,
-        "referenceCount": 19,
+        "referenceCount": 21,
         "references": [
           {
             "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
@@ -10401,6 +10429,13 @@
             "label": "https://platform.openai.com/docs/guides/agents",
             "scope": "public-gap-decision",
             "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+            "url": "https://platform.openai.com/docs/guides/agents"
+          },
+          {
+            "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+            "label": "https://platform.openai.com/docs/guides/agents",
+            "scope": "public-gap-decision",
+            "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "url": "https://platform.openai.com/docs/guides/agents"
           },
           {
@@ -10492,6 +10527,13 @@
             "label": "https://platform.openai.com/docs/guides/agents",
             "scope": "broad-first-coverage",
             "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+            "url": "https://platform.openai.com/docs/guides/agents"
+          },
+          {
+            "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+            "label": "https://platform.openai.com/docs/guides/agents",
+            "scope": "broad-first-coverage",
+            "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
             "url": "https://platform.openai.com/docs/guides/agents"
           },
           {
@@ -11183,10 +11225,10 @@
         },
         "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
         "kind": "wave-approval",
-        "priority": 1032,
+        "priority": 1034,
         "ready": true,
         "scope": "wave-1",
-        "sourceTargets": 32,
+        "sourceTargets": 34,
         "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
         "warnings": [
           "description may be thin for search snippets",
@@ -11468,7 +11510,7 @@
         "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
         "humanActionPlan": [
           "Review source lanes together: public-gap, wave.",
-          "Verify 18 official source target(s) before any approval.",
+          "Verify 19 official source target(s) before any approval.",
           "Check search intent against 5 query seed(s).",
           "Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.",
           "Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.",
@@ -11494,16 +11536,17 @@
           "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "Vercel AI SDK docs: https://ai-sdk.dev/docs",
           "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+          "https://platform.openai.com/docs",
+          "https://ai-sdk.dev/docs",
           "https://platform.openai.com/docs/guides/retrieval",
           "https://platform.openai.com/docs/guides/prompt-engineering",
           "https://python.langchain.com/docs",
           "https://docs.llamaindex.ai",
           "https://huggingface.co/docs",
-          "https://platform.openai.com/docs",
-          "https://ai-sdk.dev/docs",
           "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
           "https://arxiv.org/abs/2603.10700",
-          "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+          "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+          "https://platform.openai.com/docs/guides/agents"
         ],
         "sourceTypes": [
           "public-gap",
@@ -11881,7 +11924,7 @@
         "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
         "humanActionPlan": [
           "Review source lanes together: public-gap, wave.",
-          "Verify 18 official source target(s) before any approval.",
+          "Verify 19 official source target(s) before any approval.",
           "Check search intent against 5 query seed(s).",
           "Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.",
           "Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.",
@@ -11907,16 +11950,17 @@
           "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "Vercel AI SDK docs: https://ai-sdk.dev/docs",
           "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+          "https://platform.openai.com/docs",
+          "https://ai-sdk.dev/docs",
           "https://platform.openai.com/docs/guides/retrieval",
           "https://platform.openai.com/docs/guides/prompt-engineering",
           "https://python.langchain.com/docs",
           "https://docs.llamaindex.ai",
           "https://huggingface.co/docs",
-          "https://platform.openai.com/docs",
-          "https://ai-sdk.dev/docs",
           "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
           "https://arxiv.org/abs/2603.10700",
-          "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+          "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+          "https://platform.openai.com/docs/guides/agents"
         ],
         "sourceTypes": [
           "public-gap",
@@ -12327,7 +12371,7 @@
         "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
         "humanActionPlan": [
           "Review source lanes together: public-gap, wave.",
-          "Verify 18 official source target(s) before any approval.",
+          "Verify 19 official source target(s) before any approval.",
           "Check search intent against 5 query seed(s).",
           "Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.",
           "Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.",
@@ -12335,7 +12379,7 @@
         ],
         "readyForAssignment": true,
         "reviewFocus": [
-          "Verify 18 official source target(s).",
+          "Verify 19 official source target(s).",
           "Check 5 search query seed(s).",
           "Review 12 combined checklist signal(s).",
           "Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..",
@@ -12359,16 +12403,17 @@
           "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "Vercel AI SDK docs: https://ai-sdk.dev/docs",
           "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+          "https://platform.openai.com/docs",
+          "https://ai-sdk.dev/docs",
           "https://platform.openai.com/docs/guides/retrieval",
           "https://platform.openai.com/docs/guides/prompt-engineering",
           "https://python.langchain.com/docs",
           "https://docs.llamaindex.ai",
           "https://huggingface.co/docs",
-          "https://platform.openai.com/docs",
-          "https://ai-sdk.dev/docs",
           "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
           "https://arxiv.org/abs/2603.10700",
-          "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+          "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+          "https://platform.openai.com/docs/guides/agents"
         ],
         "sourceTypes": [
           "public-gap",
@@ -12939,7 +12984,7 @@
         ],
         "readyForHumanApproval": true,
         "reviewFocus": [
-          "Verify 18 official source target(s).",
+          "Verify 19 official source target(s).",
           "Check 5 search query seed(s).",
           "Review 12 combined checklist signal(s).",
           "Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..",
@@ -12962,16 +13007,17 @@
           "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "Vercel AI SDK docs: https://ai-sdk.dev/docs",
           "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+          "https://platform.openai.com/docs",
+          "https://ai-sdk.dev/docs",
           "https://platform.openai.com/docs/guides/retrieval",
           "https://platform.openai.com/docs/guides/prompt-engineering",
           "https://python.langchain.com/docs",
           "https://docs.llamaindex.ai",
           "https://huggingface.co/docs",
-          "https://platform.openai.com/docs",
-          "https://ai-sdk.dev/docs",
           "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
           "https://arxiv.org/abs/2603.10700",
-          "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+          "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+          "https://platform.openai.com/docs/guides/agents"
         ],
         "sourceTypes": [
           "public-gap",
@@ -13638,16 +13684,17 @@
           "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "Vercel AI SDK docs: https://ai-sdk.dev/docs",
           "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+          "https://platform.openai.com/docs",
+          "https://ai-sdk.dev/docs",
           "https://platform.openai.com/docs/guides/retrieval",
           "https://platform.openai.com/docs/guides/prompt-engineering",
           "https://python.langchain.com/docs",
           "https://docs.llamaindex.ai",
           "https://huggingface.co/docs",
-          "https://platform.openai.com/docs",
-          "https://ai-sdk.dev/docs",
           "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
           "https://arxiv.org/abs/2603.10700",
           "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+          "https://platform.openai.com/docs/guides/agents",
           "OpenAI docs: https://platform.openai.com/docs"
         ],
         "readyForHumanReview": true,
@@ -13673,7 +13720,7 @@
           "next-source-pack",
           "public-gap-decision"
         ],
-        "sourceTargets": 32,
+        "sourceTargets": 34,
         "sourceTypes": [
           "public-gap",
           "wave"
@@ -13693,7 +13740,7 @@
           "https://platform.openai.com/docs/guides/agents"
         ],
         "verificationFocus": [
-          "Verify 18 official source target(s).",
+          "Verify 19 official source target(s).",
           "Check 5 search query seed(s).",
           "Review 12 combined checklist signal(s).",
           "Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..",
@@ -13958,7 +14005,7 @@
           "Review the suggested public internal link before publishing: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)."
         ],
         "sourceActions": [
-          "Verify 18 official source target(s).",
+          "Verify 19 official source target(s).",
           "Check 5 search query seed(s).",
           "Review 12 combined checklist signal(s).",
           "Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..",
@@ -14318,7 +14365,7 @@
           "No API key, credential, private customer data, or account detail is included.",
           "Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.",
           "Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.",
-          "Verify 18 official source target(s).",
+          "Verify 19 official source target(s).",
           "Check 5 search query seed(s).",
           "Review 12 combined checklist signal(s).",
           "Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..",
@@ -14451,12 +14498,12 @@
         "reviewChecklist": [
           "Use merged playbook actions: 22 search, 45 source, 6 link.",
           "Review source lanes together: public-gap, wave.",
-          "Verify 18 official source target(s) before any approval.",
+          "Verify 19 official source target(s) before any approval.",
           "Check search intent against 5 query seed(s).",
           "Resolve or explicitly accept snippet, structured-data, freshness, and cannibalization warnings before mark:review.",
           "Confirm no traffic, ranking, revenue, benchmark, or stability claim is unsupported.",
           "Run mark:review only after explicit human approval; publishing requires a separate explicit approval.",
-          "Verify 18 official source target(s).",
+          "Verify 19 official source target(s).",
           "Check 5 search query seed(s).",
           "Review 12 combined checklist signal(s).",
           "Apply copydesk remediation: Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.; Check whether the primary keyword can appear naturally in the title without making the title stiff..",
@@ -14467,7 +14514,7 @@
         ],
         "safeDraft": true,
         "searchQueries": 5,
-        "sourceTargets": 18,
+        "sourceTargets": 19,
         "sourceTypes": [
           "public-gap",
           "wave"
@@ -27042,7 +27089,7 @@
           "url": "/blog/build-first-webpage-with-codex"
         },
         "kind": "wave-approval",
-        "priority": 1032,
+        "priority": 1034,
         "proposedDescription": "面向准备落地 客服 AI 模型选型 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
         "proposedOpeningAdditions": [
           "在开头 200 字内自然回答一次“RAG 知识库搭建教程”这个搜索意图，先给结论再展开步骤。",
@@ -27317,7 +27364,7 @@
           "url": "/blog/build-first-webpage-with-codex"
         },
         "kind": "public-gap-review",
-        "priority": 783,
+        "priority": 785,
         "proposedDescription": "面向准备落地 客服 AI 模型选型 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
         "proposedOpeningAdditions": [
           "在开头 200 字内自然回答一次“RAG 知识库搭建教程”这个搜索意图，先给结论再展开步骤。",
@@ -27654,20 +27701,20 @@
           "Vercel AI SDK docs: https://ai-sdk.dev/docs",
           "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
           "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
+          "https://platform.openai.com/docs",
+          "https://ai-sdk.dev/docs",
           "https://platform.openai.com/docs/guides/retrieval",
           "https://platform.openai.com/docs/guides/prompt-engineering",
           "https://python.langchain.com/docs",
           "https://docs.llamaindex.ai",
           "https://huggingface.co/docs",
-          "https://platform.openai.com/docs",
-          "https://ai-sdk.dev/docs",
           "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
           "https://arxiv.org/abs/2603.10700",
           "https://www.pinecone.io/learn/retrieval-augmented-generation/",
           "https://platform.openai.com/docs/guides/agents"
         ],
         "readyForFreshnessReview": true,
-        "reachableSources": 32,
+        "reachableSources": 34,
         "reviewFocus": [
           "把 RAG、微调、提示词模板区分清楚",
           "必须写明引用、来源、权限和失败兜底",
@@ -27696,7 +27743,7 @@
           "current-review",
           "public-gap"
         ],
-        "sourceTargets": 32,
+        "sourceTargets": 34,
         "staleSensitiveChecks": [
           "客服 AI 模型选型 官方文档 最新",
           "客服 AI 模型选型 official docs latest",
@@ -35517,8 +35564,8 @@
         },
         "sourceSignals": {
           "launchSourceTargets": 11,
-          "reachableSources": 32,
-          "sourceTargets": 32
+          "reachableSources": 34,
+          "sourceTargets": 34
         },
         "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
         "warningIssues": [
@@ -36653,7 +36700,7 @@
             "url": "/blog/build-first-webpage-with-codex"
           },
           "kind": "public-gap-review",
-          "priority": 783,
+          "priority": 785,
           "proposedDescription": "面向准备落地 客服 AI 模型选型 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
           "proposedOpeningAdditions": [
             "在开头 200 字内自然回答一次“RAG 知识库搭建教程”这个搜索意图，先给结论再展开步骤。",
@@ -59020,7 +59067,7 @@
   "liveSearch": {
     "checkedArticles": 15,
     "failedChecks": [],
-    "generatedAt": "2026-06-12T16:32:50.462Z",
+    "generatedAt": "2026-06-13T01:37:49.516Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 15,

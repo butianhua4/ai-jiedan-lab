@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T16:32:15.784Z",
+  "generatedAt": "2026-06-13T01:37:16.615Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -20,7 +20,7 @@
     "okUrls": 39,
     "publicGapDecisionFiles": 13,
     "redirectedUrls": 18,
-    "sourceReferences": 264,
+    "sourceReferences": 266,
     "uniqueUrls": 40
   },
   "missingUrlTargets": [],
@@ -275,7 +275,7 @@
       "url": "https://ai-sdk.dev/docs"
     },
     {
-      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=pl",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=ru",
       "ok": true,
       "references": [
         {
@@ -942,6 +942,13 @@
           "url": "https://platform.openai.com/docs/guides/agents"
         },
         {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/agents",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
           "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
           "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "scope": "next-source-pack",
@@ -1030,6 +1037,13 @@
           "label": "https://platform.openai.com/docs/guides/agents",
           "scope": "broad-first-coverage",
           "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/agents",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
           "url": "https://platform.openai.com/docs/guides/agents"
         },
         {
@@ -1772,30 +1786,31 @@
     },
     {
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-      "reachableSources": 32,
+      "reachableSources": 34,
       "scopes": [
         "broad-first-coverage",
         "current-review",
         "next-source-pack",
         "public-gap-decision"
       ],
-      "sourceTargets": 32,
+      "sourceTargets": 34,
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "urls": [
         "https://platform.openai.com/docs",
         "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://python.langchain.com/docs",
         "https://docs.llamaindex.ai",
         "https://huggingface.co/docs",
-        "https://platform.openai.com/docs",
-        "https://ai-sdk.dev/docs",
         "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
         "https://arxiv.org/abs/2603.10700",
         "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+        "https://platform.openai.com/docs/guides/agents",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://python.langchain.com/docs",
         "https://docs.llamaindex.ai",
@@ -1804,16 +1819,17 @@
         "https://platform.openai.com/docs/guides/agents",
         "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://platform.openai.com/docs",
+        "https://ai-sdk.dev/docs",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://python.langchain.com/docs",
         "https://docs.llamaindex.ai",
         "https://huggingface.co/docs",
-        "https://platform.openai.com/docs",
-        "https://ai-sdk.dev/docs",
         "https://www.reddit.com/r/Rag/comments/1t9v93f/is_anyone_still_running_pure_vector_rag_in/",
         "https://arxiv.org/abs/2603.10700",
-        "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+        "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+        "https://platform.openai.com/docs/guides/agents"
       ]
     },
     {
@@ -2424,7 +2440,7 @@
       "url": "https://ai-sdk.dev/docs"
     },
     {
-      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=pl",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=ru",
       "ok": true,
       "references": [
         {
@@ -3096,7 +3112,7 @@
           "url": "https://huggingface.co/docs"
         }
       ],
-      "status": 429,
+      "status": 200,
       "url": "https://huggingface.co/docs"
     },
     {
@@ -3430,6 +3446,13 @@
           "url": "https://platform.openai.com/docs/guides/agents"
         },
         {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/agents",
+          "scope": "public-gap-decision",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
           "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
           "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "scope": "next-source-pack",
@@ -3518,6 +3541,13 @@
           "label": "https://platform.openai.com/docs/guides/agents",
           "scope": "broad-first-coverage",
           "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "label": "https://platform.openai.com/docs/guides/agents",
+          "scope": "broad-first-coverage",
+          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
           "url": "https://platform.openai.com/docs/guides/agents"
         },
         {
