@@ -1,6 +1,6 @@
 # Review Optimization Brief
 
-Generated at: 2026-06-13T10:13:24.893Z
+Generated at: 2026-06-13T15:18:47.258Z
 
 This report is read-only. It converts review warnings into copydesk suggestions for human review.
 
@@ -35,7 +35,7 @@ This report is read-only. It converts review warnings into copydesk suggestions 
 | 1002 | wave-3 | 7 | 4 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | 806 | public-gap-wave-1 | 9 | 4 | /blog/codex-vercel-deploy-preflight-checklist | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 801 | public-gap-wave-1 | 7 | 4 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| 801 | public-gap-wave-1 | 6 | 2 | /blog/codex-code-review-delivery-checklist | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| 801 | public-gap-wave-1 | 6 | 2 | /blog/codex-vercel-deploy-preflight-checklist | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | 785 | public-gap-wave-2 | 10 | 0 | /blog/build-first-webpage-with-codex | 客服 AI 模型选型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 769 | public-gap-wave-2 | 9 | 4 | /blog/codex-code-review-delivery-checklist | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 
@@ -48,7 +48,7 @@ This report is read-only. It converts review warnings into copydesk suggestions 
 | 1002 | wave-3 | 7 | 4 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | 806 | public-gap-wave-1 | 9 | 4 | /blog/codex-vercel-deploy-preflight-checklist | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 801 | public-gap-wave-1 | 7 | 4 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| 801 | public-gap-wave-1 | 6 | 2 | /blog/codex-code-review-delivery-checklist | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| 801 | public-gap-wave-1 | 6 | 2 | /blog/codex-vercel-deploy-preflight-checklist | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | 785 | public-gap-wave-2 | 10 | 0 | /blog/build-first-webpage-with-codex | 客服 AI 模型选型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 769 | public-gap-wave-2 | 9 | 4 | /blog/codex-code-review-delivery-checklist | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | 768 | public-gap-wave-2 | 14 | 0 | /blog/build-first-webpage-with-codex | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
@@ -186,19 +186,19 @@ Warning remediation:
 - Proposed title: 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查
 - Proposed description: 面向新手整理大模型部署路径，讲清 API 调用、托管推理端点、私有化部署、vLLM/TGI/SGLang、成本、延迟、安全和验收。
 - Search evidence: exact=2, families=7, titleHit=true, descriptionHit=true
-- Internal link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)
+- Internal link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist)
 
 Opening additions:
 
 - 在开头 200 字内自然回答一次“大模型部署教程”这个搜索意图，先给结论再展开步骤。
-- 在相关段落加入公开内链：Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)。
+- 在相关段落加入公开内链：Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist)。
 
 Warning remediation:
 
 - Rewrite the meta description to name the reader, outcome, and search phrase: 大模型部署教程.
 - Add one contextual link to a published article before approval.
 - During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.
-- Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
+- Review the suggested public internal link before publishing: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).
 
 ### 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
 

@@ -1,6 +1,6 @@
 # Autopilot Broad Publish Waves
 
-Generated at: 2026-06-13T10:13:38.482Z
+Generated at: 2026-06-13T15:19:03.154Z
 
 ## Guardrails
 
@@ -27,9 +27,9 @@ Generated at: 2026-06-13T10:13:38.482Z
 | 1 | 3/3 | 18 | 开源大模型部署：Ollama、vLLM、TGI、RunPod + Agent 部署、工具调用和生产安全 + Agent 记忆：短期记忆、长期记忆、RAG、Postgres | content/blog/bentoml-llm-deployment-beginner-guide.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/agent-memory-postgres-schema-guide.mdx |
 | 2 | 3/3 | 18 | RAG、知识库、向量数据库和引用溯源 + 全行业 AI 提示词和工作流模板 + Dify、n8n、Coze、Flowise、MCP 自动化部署 | content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/mcp-server-deployment-security-checklist.mdx |
 | 3 | 3/3 | 18 | AI API 接入、限流、成本和多模型路由 + 开源大模型部署：Ollama、vLLM、TGI、RunPod + Agent 部署、工具调用和生产安全 | content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx |
-| 4 | 3/3 | 18 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres + 全行业 AI 提示词和工作流模板 + Dify、n8n、Coze、Flowise、MCP 自动化部署 | content/blog/n8n-ai-agent-rag-memory-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/n8n-ai-agent-webhook-production-guide.mdx |
-| 5 | 3/3 | 18 | AI API 接入、限流、成本和多模型路由 + 开源大模型部署：Ollama、vLLM、TGI、RunPod + Agent 部署、工具调用和生产安全 | content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/llm-api-rate-limit-retry-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx |
-| 6 | 3/3 | 18 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres + AI API 接入、限流、成本和多模型路由 + 开源大模型部署：Ollama、vLLM、TGI、RunPod | content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/helicone-llm-observability-guide.mdx<br>content/blog/llm-cost-monitoring-dashboard-guide.mdx |
+| 4 | 3/3 | 18 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres + 全行业 AI 提示词和工作流模板 + Dify、n8n、Coze、Flowise、MCP 自动化部署 | content/blog/n8n-ai-agent-rag-memory-guide.mdx<br>content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/n8n-ai-agent-webhook-production-guide.mdx |
+| 5 | 3/3 | 18 | AI API 接入、限流、成本和多模型路由 + 开源大模型部署：Ollama、vLLM、TGI、RunPod + Agent 部署、工具调用和生产安全 | content/blog/helicone-llm-observability-guide.mdx<br>content/blog/llm-api-rate-limit-retry-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 6 | 3/3 | 18 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres + 全行业 AI 提示词和工作流模板 + 开源大模型部署：Ollama、vLLM、TGI、RunPod | content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/llm-cost-monitoring-dashboard-guide.mdx |
 | 7 | 3/3 | 18 | Agent 部署、工具调用和生产安全 + Agent 记忆：短期记忆、长期记忆、RAG、Postgres + 开源大模型部署：Ollama、vLLM、TGI、RunPod | content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/rag-citation-source-trace-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | 8 | 3/3 | 18 | Agent 部署、工具调用和生产安全 + 开源大模型部署：Ollama、vLLM、TGI、RunPod | content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/enterprise-im-ai-agent-integration-guide.mdx |
 

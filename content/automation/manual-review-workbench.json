@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:41.966Z",
+  "generatedAt": "2026-06-13T15:19:07.222Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -168,7 +168,8 @@
           "No API key, credential, private customer data, or account detail is included.",
           "Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.",
           "Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.",
-          "Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts."
+          "Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts.",
+          "Deployment guidance includes environment variables, rate limits, smoke checks, and failure handling."
         ],
         "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
       },
@@ -980,7 +981,7 @@
           "AI 部署"
         ],
         "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-        "updatedAt": "2026-06-12",
+        "updatedAt": "2026-06-13",
         "warnings": []
       },
       {

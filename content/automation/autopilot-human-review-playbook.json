@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:32.594Z",
+  "generatedAt": "2026-06-13T15:18:56.287Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -203,8 +203,8 @@
         "Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.",
         "Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.",
         "Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts.",
+        "Deployment guidance includes environment variables, rate limits, smoke checks, and failure handling.",
         "No instruction to bypass platform, payment, messaging, account, or review rules.",
-        "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
         "Article remains draft before approval: true",
         "Article remains noindex before approval: true",
         "Human review is required: true",

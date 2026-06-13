@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:13.753Z",
+  "generatedAt": "2026-06-13T15:18:31.423Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,7 +10,7 @@
     "stopBefore": "Stop before mark:review and stop before publish. Both require explicit human approval."
   },
   "sourceEvidence": {
-    "reviewPackGeneratedAt": "2026-06-13T10:13:13.304Z",
+    "reviewPackGeneratedAt": "2026-06-13T15:18:30.917Z",
     "reviewPackGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -73,7 +73,7 @@
         "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
         "status": "draft",
         "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-        "updatedAt": "2026-06-12"
+        "updatedAt": "2026-06-13"
       },
       "humanApprovalReady": true,
       "indexingSafe": true,
@@ -231,7 +231,7 @@
         "slug": "llm-deployment-huggingface-inference-endpoints-guide",
         "status": "draft",
         "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-        "updatedAt": "2026-06-12"
+        "updatedAt": "2026-06-13"
       },
       "humanApprovalReady": true,
       "indexingSafe": true,
@@ -711,7 +711,7 @@
         "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
         "status": "draft",
         "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-        "updatedAt": "2026-06-12"
+        "updatedAt": "2026-06-13"
       },
       "humanApprovalReady": true,
       "indexingSafe": true,
@@ -869,7 +869,7 @@
         "slug": "llm-deployment-huggingface-inference-endpoints-guide",
         "status": "draft",
         "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-        "updatedAt": "2026-06-12"
+        "updatedAt": "2026-06-13"
       },
       "humanApprovalReady": true,
       "indexingSafe": true,

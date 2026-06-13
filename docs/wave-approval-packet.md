@@ -1,6 +1,6 @@
 # Wave Approval Packet
 
-Generated at: 2026-06-13T10:13:10.377Z
+Generated at: 2026-06-13T15:18:27.518Z
 
 Approval wave: 1
 
@@ -125,10 +125,10 @@ npm run publish:articles -- --file=content/blog/ai-model-selection-customer-serv
 - Ready for human review: true
 - Safe draft: true
 - Source pack ready: true
-- Chinese chars: 1540
+- Chinese chars: 2186
 - Internal links: 6
 - Description: 面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。
-- Source notes: 已于 2026-06-12 按 Vercel AI SDK 官方 Agents、ToolLoopAgent、tool calling、human-in-the-loop 文档核对核心概念；结合实际 Web 应用部署流程整理。正式公开前仍需人工复核 API 示例、版本和平台限制。
+- Source notes: 已于 2026-06-13 按 Vercel AI SDK 官方 ToolLoopAgent、tool calling、streamText、chatbot tool usage 文档核对核心概念；结合实际 Web 应用部署流程整理。正式公开前仍需人工复核 API 示例、版本和平台限制。
 
 Approval checklist:
 
@@ -200,7 +200,7 @@ npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sd
 - Ready for human review: true
 - Safe draft: true
 - Source pack ready: true
-- Chinese chars: 1862
+- Chinese chars: 2332
 - Internal links: 6
 - Description: 整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。
 - Source notes: 已于 2026-06-12 按 OpenAI 官方 prompt engineering / prompt guidance 文档核对提示词结构原则；结合团队知识库实践和行业 SOP 设计经验整理。正式公开前仍需人工核对示例、行业边界和敏感内容。

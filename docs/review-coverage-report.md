@@ -1,6 +1,6 @@
 # Review Coverage Report
 
-Generated at: 2026-06-13T10:13:41.531Z
+Generated at: 2026-06-13T15:19:06.713Z
 
 This report expands manual review coverage across the planned candidate batches. It is read-only and does not publish or mark review.
 
@@ -41,9 +41,9 @@ This report expands manual review coverage across the planned candidate batches.
 | 2 | current | high | 100 | draft | true | true | 4 | 8 | 6 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 2 | planned | high | 100 | draft | true | true | 2 | 7 | 6 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 | 2 | planned | high | 100 | draft | true | true | 4 | 7 | 6 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
-| 3 | current | high | 100 | draft | true | true | 2 | 8 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| 3 | current | high | 100 | draft | true | true | 2 | 8 | 7 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | 3 | planned | high | 100 | draft | true | true | 1 | 8 | 5 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
-| 3 | planned | medium | 100 | draft | true | true | 1 | 8 | 5 | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
+| 3 | planned | high | 100 | draft | true | true | 1 | 8 | 5 | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
 
 ## 1. AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查
 
@@ -55,7 +55,7 @@ This report expands manual review coverage across the planned candidate batches.
 - Search intent: informational
 - Opportunity score: 260
 - Opportunity reason: Agent and memory cluster; no public article in cluster; no public article in category
-- Chinese chars: 1540
+- Chinese chars: 2186
 - Internal links: 6
 - Freshness risk: high
 
@@ -402,7 +402,7 @@ Review focus:
 - Search intent: informational
 - Opportunity score: 260
 - Opportunity reason: Industry AI prompts cluster; no public article in cluster; no public article in category
-- Chinese chars: 1862
+- Chinese chars: 2332
 - Internal links: 6
 - Freshness risk: high
 
@@ -440,6 +440,7 @@ Risk review checklist:
 - Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.
 - Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.
 - Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts.
+- Deployment guidance includes environment variables, rate limits, smoke checks, and failure handling.
 
 Review focus:
 
@@ -514,9 +515,9 @@ Review focus:
 - Search intent: informational
 - Opportunity score: 251
 - Opportunity reason: Industry AI prompts cluster; no public article in cluster; no public article in category
-- Chinese chars: 1229
+- Chinese chars: 1524
 - Internal links: 3
-- Freshness risk: medium
+- Freshness risk: high
 
 Official source targets:
 

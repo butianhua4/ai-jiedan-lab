@@ -1,6 +1,6 @@
 # Autopilot Approval Packet
 
-Generated at: 2026-06-13T10:13:30.869Z
+Generated at: 2026-06-13T15:18:54.247Z
 
 This packet is read-only. It packages the top autopilot review assignments for human approval and does not change article status.
 
@@ -88,9 +88,9 @@ Headings:
 - Agent 和普通聊天机器人有什么区别
 - 具体步骤
 - 一个最小设计
+- 最小上线架构
+- 工具权限表
 - 部署时要检查什么
-- 常见错误
-- 风险提醒
 
 Human review focus:
 
@@ -157,8 +157,8 @@ Headings:
 - 可以优先做的行业分类
 - 具体步骤
 - 示例模板
-- 常见错误
-- 风险提醒
+- 失败反例
+- 人工复核来源
 
 Human review focus:
 

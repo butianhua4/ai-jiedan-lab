@@ -1,6 +1,6 @@
 # Autopilot Search Intent Brief
 
-Generated at: 2026-06-13T10:13:31.305Z
+Generated at: 2026-06-13T15:18:54.764Z
 
 This report is read-only. It checks search-intent coverage for the top autopilot approval packet items.
 
@@ -43,15 +43,15 @@ This report is read-only. It checks search-intent coverage for the top autopilot
 
 | Ready | Title hits | Description hits | Heading hits | Body hits | Token hits | Weaknesses | Primary query | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | 0 | 0 | 0 | 0 | 8 | 3 | AI Agent deployment tutorial | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | 0 | 0 | 0 | 0 | 9 | 3 | AI Agent deployment tutorial | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | 0 | 0 | 0 | 0 | 2 | 4 | RAG 知识库搭建教程 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
 ## All Items
 
 | Ready | Title hits | Description hits | Heading hits | Body hits | Token hits | Weaknesses | Primary query | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | 0 | 0 | 0 | 0 | 8 | 3 | AI Agent deployment tutorial | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | 1 | 1 | 0 | 3 | 11 | 0 | ChatGPT prompts for business | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | 0 | 0 | 0 | 0 | 9 | 3 | AI Agent deployment tutorial | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | 1 | 1 | 0 | 3 | 12 | 0 | ChatGPT prompts for business | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | true | 0 | 0 | 0 | 0 | 2 | 4 | RAG 知识库搭建教程 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
 ## Review Suggestions

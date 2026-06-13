@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:19.977Z",
+  "generatedAt": "2026-06-13T15:18:38.599Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -232,7 +232,7 @@
         "article currently has no links to published articles",
         "theme still has missing subtopics: tool calling, human review, permissions, logs"
       ],
-      "wordCountChinese": 1540
+      "wordCountChinese": 2186
     },
     {
       "approvalWave": 1,
@@ -334,7 +334,7 @@
         "article currently has no links to published articles",
         "theme still has missing subtopics: customer service"
       ],
-      "wordCountChinese": 1862
+      "wordCountChinese": 2332
     },
     {
       "approvalWave": 2,
@@ -699,12 +699,6 @@
       "primaryKeyword": "大模型部署",
       "publicLinkSuggestions": [
         {
-          "reason": "keyword overlap: ai, 怎么, 检查, 新手, 查清, 清单",
-          "score": 28,
-          "title": "Codex 生成代码后怎么审核：交付前检查清单",
-          "url": "/blog/codex-code-review-delivery-checklist"
-        },
-        {
           "reason": "keyword overlap: ai, 部署, 检查, 什么, 新手, 上线",
           "score": 28,
           "title": "Codex 部署 Vercel 前检查什么：上线前清单",
@@ -715,6 +709,12 @@
           "score": 24,
           "title": "Codex 怎么做第一个网页",
           "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "reason": "keyword overlap: ai, 怎么, 检查, 新手, 查清, 清单",
+          "score": 24,
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
         },
         {
           "reason": "keyword overlap: ai, 怎么, 检查, 新手, 查清, 清单",
@@ -772,7 +772,7 @@
         "no exact search-seed phrase appears in title, description, or body",
         "article currently has no links to published articles"
       ],
-      "wordCountChinese": 1537
+      "wordCountChinese": 2338
     },
     {
       "approvalWave": 4,
@@ -1414,7 +1414,7 @@
         "article currently has no links to published articles",
         "theme still has missing subtopics: tool calling, human review, permissions, logs"
       ],
-      "wordCountChinese": 1540
+      "wordCountChinese": 2186
     },
     {
       "approvalWave": 1,
@@ -1516,7 +1516,7 @@
         "article currently has no links to published articles",
         "theme still has missing subtopics: customer service"
       ],
-      "wordCountChinese": 1862
+      "wordCountChinese": 2332
     },
     {
       "approvalWave": 2,
@@ -1881,12 +1881,6 @@
       "primaryKeyword": "大模型部署",
       "publicLinkSuggestions": [
         {
-          "reason": "keyword overlap: ai, 怎么, 检查, 新手, 查清, 清单",
-          "score": 28,
-          "title": "Codex 生成代码后怎么审核：交付前检查清单",
-          "url": "/blog/codex-code-review-delivery-checklist"
-        },
-        {
           "reason": "keyword overlap: ai, 部署, 检查, 什么, 新手, 上线",
           "score": 28,
           "title": "Codex 部署 Vercel 前检查什么：上线前清单",
@@ -1897,6 +1891,12 @@
           "score": 24,
           "title": "Codex 怎么做第一个网页",
           "url": "/blog/build-first-webpage-with-codex"
+        },
+        {
+          "reason": "keyword overlap: ai, 怎么, 检查, 新手, 查清, 清单",
+          "score": 24,
+          "title": "Codex 生成代码后怎么审核：交付前检查清单",
+          "url": "/blog/codex-code-review-delivery-checklist"
         },
         {
           "reason": "keyword overlap: ai, 怎么, 检查, 新手, 查清, 清单",
@@ -1954,7 +1954,7 @@
         "no exact search-seed phrase appears in title, description, or body",
         "article currently has no links to published articles"
       ],
-      "wordCountChinese": 1537
+      "wordCountChinese": 2338
     },
     {
       "approvalWave": 4,

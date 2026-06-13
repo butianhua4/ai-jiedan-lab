@@ -1,6 +1,6 @@
 # Human Approval Decision Matrix
 
-Generated at: 2026-06-13T10:13:33.442Z
+Generated at: 2026-06-13T15:18:57.263Z
 
 This report is read-only. It gives reviewers one decision row per approval candidate and stops before mark:review or publish.
 
@@ -50,7 +50,7 @@ This report is read-only. It gives reviewers one decision row per approval candi
 | Decision | Score | Source | Search | Link | Fix ready | Risk checks | Primary query | Title | File |
 | --- | ---: | --- | --- | --- | --- | ---: | --- | --- | --- |
 | repair-before-review | 1723 | true | 3 weakness(es) | true | true | 10 | AI Agent deployment tutorial | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| repair-before-review | 1723 | true | ready | true | true | 10 | ChatGPT prompts for business | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| repair-before-review | 1723 | true | ready | true | true | 11 | ChatGPT prompts for business | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | repair-before-review | 1598 | true | 4 weakness(es) | true | true | 12 | RAG 知识库搭建教程 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
 ## Repair Before Approval

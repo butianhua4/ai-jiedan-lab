@@ -1,6 +1,6 @@
 # Structured Data Readiness Audit
 
-Generated at: 2026-06-13T10:13:04.150Z
+Generated at: 2026-06-13T15:18:20.317Z
 
 This report is read-only. It checks whether public and publish-candidate articles have the metadata needed to render Article JSON-LD safely later.
 
@@ -31,7 +31,7 @@ This report is read-only. It checks whether public and publish-candidate article
 
 | Scope | Issues | Warnings | Date | Updated | Tags | Content type | Difficulty | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-12 | AI Agent, Vercel AI SDK, 工具调用, AI 部署 | tutorial | intermediate | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-13 | AI Agent, Vercel AI SDK, 工具调用, AI 部署 | tutorial | intermediate | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-12 | 客服 AI, 模型选型, RAG, AI Agent | tutorial | beginner | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-12 | AI 提示词, 提示词模板, 行业 AI, SOP | tutorial | beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
@@ -39,7 +39,7 @@ This report is read-only. It checks whether public and publish-candidate article
 
 | Scope | Issues | Warnings | Date | Updated | Tags | Content type | Difficulty | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-12 | AI Agent, Vercel AI SDK, 工具调用, AI 部署 | tutorial | intermediate | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-13 | AI Agent, Vercel AI SDK, 工具调用, AI 部署 | tutorial | intermediate | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-12 | 客服 AI, 模型选型, RAG, AI Agent | tutorial | beginner | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-12 | AI 提示词, 提示词模板, 行业 AI, SOP | tutorial | beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
@@ -88,7 +88,7 @@ This report is read-only. It checks whether public and publish-candidate article
         "@type": "Organization",
         "name": "AI 工具指南"
       },
-      "dateModified": "2026-06-12",
+      "dateModified": "2026-06-13",
       "datePublished": "2026-06-06",
       "description": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
       "headline": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",

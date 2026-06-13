@@ -1,6 +1,6 @@
 # Autopilot Broad Wave Remediation Pack
 
-Generated at: 2026-06-13T10:13:39.356Z
+Generated at: 2026-06-13T15:19:04.172Z
 
 This report is read-only. It turns broad AI publish-wave optimization items into manual remediation cards and keeps article edits, mark-review, and publishing human-gated.
 
@@ -30,7 +30,7 @@ This report is read-only. It turns broad AI publish-wave optimization items into
 
 ## Source Evidence
 
-- broadWaveOptimizationGeneratedAt: "2026-06-13T10:13:38.920Z"
+- broadWaveOptimizationGeneratedAt: "2026-06-13T15:19:03.655Z"
 - broadWaveOptimizationGuardrails: {"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"note":"Read-only optimization brief for broad publish waves. It proposes SEO, snippet, opening, internal-link, and risk-language checks without editing article files.","stopBefore":"Apply any copy or link changes only during human review. Do not mark review or publish automatically.","trafficClaim":"not-included"}
 - broadWaveOptimizationItems: 24
 - broadWaveOptimizationReadyItems: 24
@@ -47,8 +47,8 @@ This report is read-only. It turns broad AI publish-wave optimization items into
 | 2 | 3/3 | 0 | 0 | 3 |
 | 3 | 3/3 | 0 | 0 | 3 |
 | 4 | 3/3 | 1 | 0 | 3 |
-| 5 | 3/3 | 1 | 0 | 3 |
-| 6 | 3/3 | 2 | 0 | 3 |
+| 5 | 3/3 | 2 | 0 | 3 |
+| 6 | 3/3 | 1 | 0 | 3 |
 | 7 | 3/3 | 1 | 0 | 3 |
 | 8 | 3/3 | 1 | 0 | 3 |
 
@@ -70,13 +70,13 @@ This report is read-only. It turns broad AI publish-wave optimization items into
 | 3 | true | 5 | 12 | 9 | 3 | 1 | 2 | 6 | true | not-included | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
 | 3 | true | 5 | 12 | 11 | 3 | 1 | 3 | 7 | true | not-included | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | 4 | true | 5 | 12 | 4 | 3 | 1 | 3 | 7 | true | not-included | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
-| 4 | true | 5 | 13 | 9 | 3 | 1 | 3 | 7 | true | not-included | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| 4 | true | 5 | 13 | 7 | 3 | 1 | 3 | 7 | true | not-included | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
 | 4 | true | 5 | 12 | 4 | 6 | 4 | 2 | 6 | true | not-included | n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试 | content/blog/n8n-ai-agent-webhook-production-guide.mdx |
-| 5 | true | 5 | 12 | 9 | 3 | 1 | 3 | 7 | true | not-included | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
+| 5 | true | 5 | 12 | 4 | 6 | 4 | 1 | 5 | true | not-included | Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住 | content/blog/helicone-llm-observability-guide.mdx |
 | 5 | true | 5 | 12 | 4 | 6 | 4 | 2 | 6 | true | not-included | 大模型 API 限流和重试怎么做：429、队列、退避和降级方案 | content/blog/llm-api-rate-limit-retry-guide.mdx |
 | 5 | true | 5 | 12 | 13 | 3 | 1 | 3 | 7 | true | not-included | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | 6 | true | 5 | 12 | 13 | 3 | 1 | 2 | 6 | true | not-included | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
-| 6 | true | 5 | 12 | 4 | 6 | 4 | 1 | 5 | true | not-included | Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住 | content/blog/helicone-llm-observability-guide.mdx |
+| 6 | true | 5 | 13 | 9 | 3 | 1 | 3 | 7 | true | not-included | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | 6 | true | 5 | 12 | 4 | 6 | 4 | 2 | 6 | true | not-included | 大模型成本监控怎么做：按用户、功能、模型和项目拆账 | content/blog/llm-cost-monitoring-dashboard-guide.mdx |
 | 7 | true | 5 | 12 | 10 | 3 | 1 | 3 | 7 | true | not-included | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | 7 | true | 5 | 12 | 4 | 6 | 4 | 2 | 6 | true | not-included | RAG 怎么显示引用来源：文档名、页码、片段和可信度 | content/blog/rag-citation-source-trace-guide.mdx |
@@ -727,16 +727,16 @@ Human checklist:
 - Only after explicit human approval, run: npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human
 - Publishing remains a separate explicit approval step.
 
-### Wave 4. 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用
+### Wave 4. 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要
 
-- File: content/blog/industry-ai-prompts-template-library-2026.mdx
-- Manual mark-review command: `npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human`
-- Publish dry-run command after review: `npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx`
+- File: content/blog/data-analysis-ai-prompts-guide.mdx
+- Manual mark-review command: `npm run mark:review -- --file=content/blog/data-analysis-ai-prompts-guide.mdx --confirm-human`
+- Publish dry-run command after review: `npm run publish:articles -- --file=content/blog/data-analysis-ai-prompts-guide.mdx`
 - Publish confirm: not-included
 
 Public-link plan:
 
-- Use suggested public link: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner).
+- Use suggested public link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
 
 Search fixes:
 
@@ -755,9 +755,7 @@ Source checks:
 
 - Verify implementation-sensitive claims against source: https://platform.openai.com/docs.
 - Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/prompt-engineering.
-- Verify implementation-sensitive claims against source: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview.
 - Verify implementation-sensitive claims against source: https://ai-sdk.dev/docs.
-- Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/retrieval.
 - Verify implementation-sensitive claims against source: https://ai-prompts-pro.com/blog/ai-prompt-templates-business.
 - Verify implementation-sensitive claims against source: https://sensara.io/prompts/.
 - Verify implementation-sensitive claims against source: https://www.mrprompts.ai/learn/ai-prompts-for-sales.
@@ -790,7 +788,7 @@ Human checklist:
 - Open source targets or run equivalent source checks before mark:review.
 - Choose, apply, or explicitly reject the public internal-link plan before mark:review.
 - Resolve warning and risk checks before mark:review.
-- Only after explicit human approval, run: npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human
+- Only after explicit human approval, run: npm run mark:review -- --file=content/blog/data-analysis-ai-prompts-guide.mdx --confirm-human
 - Publishing remains a separate explicit approval step.
 
 ### Wave 4. n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试
@@ -855,16 +853,19 @@ Human checklist:
 - Only after explicit human approval, run: npm run mark:review -- --file=content/blog/n8n-ai-agent-webhook-production-guide.mdx --confirm-human
 - Publishing remains a separate explicit approval step.
 
-### Wave 5. Claude API Rate limit reached 怎么办：限流、上下文、重试和降级
+### Wave 5. Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住
 
-- File: content/blog/claude-api-rate-limit-debug-guide.mdx
-- Manual mark-review command: `npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human`
-- Publish dry-run command after review: `npm run publish:articles -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx`
+- File: content/blog/helicone-llm-observability-guide.mdx
+- Manual mark-review command: `npm run mark:review -- --file=content/blog/helicone-llm-observability-guide.mdx --confirm-human`
+- Publish dry-run command after review: `npm run publish:articles -- --file=content/blog/helicone-llm-observability-guide.mdx`
 - Publish confirm: not-included
 
 Public-link plan:
 
-- Use suggested public link: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).
+- No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.
+- Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
+- Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
+- Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).
 
 Search fixes:
 
@@ -882,19 +883,12 @@ Search fixes:
 Source checks:
 
 - Verify implementation-sensitive claims against source: https://platform.openai.com/docs.
-- Verify implementation-sensitive claims against source: https://docs.anthropic.com.
-- Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/agents.
-- Verify implementation-sensitive claims against source: https://ai-sdk.dev/docs.
-- Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/retrieval.
-- Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/prompt-engineering.
 - Verify implementation-sensitive claims against source: https://docs.anthropic.com/.
 - Verify implementation-sensitive claims against source: https://vercel.com/docs/ai-gateway.
 - Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.
 
 Warning fixes:
 
-- Meta description is short; rewrite it before approval.
-- No current link to published articles; add one approved contextual public link.
 - Freshness risk is high; all implementation-sensitive claims need current source checks.
 
 Risk checks:
@@ -902,15 +896,13 @@ Risk checks:
 - Keep the meta description focused on audience, workflow, risk boundary, and review outcome.
 - Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.
 - Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.
-- Meta description is short; rewrite it before approval.
-- No current link to published articles; add one approved contextual public link.
 - Freshness risk is high; all implementation-sensitive claims need current source checks.
 - Reject unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.
 
 Human checklist:
 
 - Review reason: broad AI wave item needs human remediation before approval.
-- Review reason: specific public internal-link suggestion needs human acceptance or rejection.
+- Review reason: missing specific public internal-link suggestion needs human choice.
 - Review reason: warning remediation needs human sign-off.
 - Review reason: search-intent wording needs human copy review.
 - Review reason: source evidence needs human verification.
@@ -918,7 +910,7 @@ Human checklist:
 - Open source targets or run equivalent source checks before mark:review.
 - Choose, apply, or explicitly reject the public internal-link plan before mark:review.
 - Resolve warning and risk checks before mark:review.
-- Only after explicit human approval, run: npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human
+- Only after explicit human approval, run: npm run mark:review -- --file=content/blog/helicone-llm-observability-guide.mdx --confirm-human
 - Publishing remains a separate explicit approval step.
 
 ### Wave 5. 大模型 API 限流和重试怎么做：429、队列、退避和降级方案
@@ -1115,42 +1107,46 @@ Human checklist:
 - Only after explicit human approval, run: npm run mark:review -- --file=content/blog/open-webui-functions-pipelines-deployment-guide.mdx --confirm-human
 - Publishing remains a separate explicit approval step.
 
-### Wave 6. Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住
+### Wave 6. 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用
 
-- File: content/blog/helicone-llm-observability-guide.mdx
-- Manual mark-review command: `npm run mark:review -- --file=content/blog/helicone-llm-observability-guide.mdx --confirm-human`
-- Publish dry-run command after review: `npm run publish:articles -- --file=content/blog/helicone-llm-observability-guide.mdx`
+- File: content/blog/industry-ai-prompts-template-library-2026.mdx
+- Manual mark-review command: `npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human`
+- Publish dry-run command after review: `npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx`
 - Publish confirm: not-included
 
 Public-link plan:
 
-- No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.
-- Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
-- Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
-- Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).
+- Use suggested public link: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner).
 
 Search fixes:
 
-- Make the title and first paragraph answer this search intent explicitly: OpenAI API 接入教程.
+- Make the title and first paragraph answer this search intent explicitly: AI 提示词大全.
 - Keep the meta description focused on audience, workflow, risk boundary, and review outcome.
 - Add one exact or near-exact search query naturally in the opening or first H2.
-- Check search phrasing coverage: OpenAI API 接入教程.
-- Check search phrasing coverage: Claude API rate limit.
-- Check search phrasing coverage: Gemini API 限流.
-- Check search phrasing coverage: OpenRouter API 教程.
-- Confirm article naturally answers search query: OpenAI API 接入教程.
-- Confirm article naturally answers search query: Claude API rate limit.
-- Confirm article naturally answers search query: Gemini API 限流.
+- Check search phrasing coverage: AI 提示词大全.
+- Check search phrasing coverage: 销售 AI 提示词.
+- Check search phrasing coverage: 客服 AI 提示词.
+- Check search phrasing coverage: HR AI 提示词.
+- Confirm article naturally answers search query: AI 提示词大全.
+- Confirm article naturally answers search query: 销售 AI 提示词.
+- Confirm article naturally answers search query: 客服 AI 提示词.
 
 Source checks:
 
 - Verify implementation-sensitive claims against source: https://platform.openai.com/docs.
-- Verify implementation-sensitive claims against source: https://docs.anthropic.com/.
-- Verify implementation-sensitive claims against source: https://vercel.com/docs/ai-gateway.
+- Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/prompt-engineering.
+- Verify implementation-sensitive claims against source: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview.
+- Verify implementation-sensitive claims against source: https://ai-sdk.dev/docs.
+- Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/retrieval.
+- Verify implementation-sensitive claims against source: https://ai-prompts-pro.com/blog/ai-prompt-templates-business.
+- Verify implementation-sensitive claims against source: https://sensara.io/prompts/.
+- Verify implementation-sensitive claims against source: https://www.mrprompts.ai/learn/ai-prompts-for-sales.
 - Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.
 
 Warning fixes:
 
+- Meta description is short; rewrite it before approval.
+- No current link to published articles; add one approved contextual public link.
 - Freshness risk is high; all implementation-sensitive claims need current source checks.
 
 Risk checks:
@@ -1158,13 +1154,15 @@ Risk checks:
 - Keep the meta description focused on audience, workflow, risk boundary, and review outcome.
 - Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.
 - Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.
+- Meta description is short; rewrite it before approval.
+- No current link to published articles; add one approved contextual public link.
 - Freshness risk is high; all implementation-sensitive claims need current source checks.
 - Reject unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.
 
 Human checklist:
 
 - Review reason: broad AI wave item needs human remediation before approval.
-- Review reason: missing specific public internal-link suggestion needs human choice.
+- Review reason: specific public internal-link suggestion needs human acceptance or rejection.
 - Review reason: warning remediation needs human sign-off.
 - Review reason: search-intent wording needs human copy review.
 - Review reason: source evidence needs human verification.
@@ -1172,7 +1170,7 @@ Human checklist:
 - Open source targets or run equivalent source checks before mark:review.
 - Choose, apply, or explicitly reject the public internal-link plan before mark:review.
 - Resolve warning and risk checks before mark:review.
-- Only after explicit human approval, run: npm run mark:review -- --file=content/blog/helicone-llm-observability-guide.mdx --confirm-human
+- Only after explicit human approval, run: npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human
 - Publishing remains a separate explicit approval step.
 
 ### Wave 6. 大模型成本监控怎么做：按用户、功能、模型和项目拆账
@@ -1375,7 +1373,7 @@ Human checklist:
 
 Public-link plan:
 
-- Use suggested public link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
+- Use suggested public link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).
 
 Search fixes:
 

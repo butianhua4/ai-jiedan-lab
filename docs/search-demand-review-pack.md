@@ -1,6 +1,6 @@
 # Search Demand Review Pack
 
-Generated at: 2026-06-13T10:13:13.304Z
+Generated at: 2026-06-13T15:18:30.917Z
 
 This report is read-only. It converts high-search-demand lanes into manual review packets and stops before status changes or publishing.
 
@@ -34,7 +34,7 @@ This report is read-only. It converts high-search-demand lanes into manual revie
 
 ## Source Evidence
 
-- intakeGeneratedAt: "2026-06-13T10:13:12.876Z"
+- intakeGeneratedAt: "2026-06-13T15:18:30.409Z"
 - intakeGuardrails: {"autoCreateArticles":false,"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"trafficClaim":"not-included","note":"Read-only search-demand intake. Search queries are editorial seeds, not measured keyword volume, rankings, impressions, clicks, traffic, or revenue."}
 - intakeSummary: {"contentFormats":32,"lanes":8,"lanesWithPublicCoverage":2,"lanesWithoutPublicCoverage":6,"lanesWithReadyCandidates":8,"officialSourceTargets":29,"readyCandidateFiles":43,"reviewQueueMatches":33,"searchQueries":81,"unsafeLanes":0}
 - sourceHealthFilesWithoutReachableSource: 0
@@ -282,7 +282,7 @@ Human review checklist:
 - Check the article directly answers the primary search phrase: large language model deployment tutorial.
 - Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.
 - Confirm all commands, credentials, API keys, and customer data examples are safe.
-- Approve or replace internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
+- Approve or replace internal link suggestion: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).
 - Only after explicit human approval, run: npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human
 - Publishing remains separate and requires explicit approval.
 

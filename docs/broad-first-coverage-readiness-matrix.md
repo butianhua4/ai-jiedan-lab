@@ -1,6 +1,6 @@
 # Broad First Coverage Readiness Matrix
 
-Generated at: 2026-06-13T10:13:59.443Z
+Generated at: 2026-06-13T15:19:24.292Z
 
 ## Guardrails
 

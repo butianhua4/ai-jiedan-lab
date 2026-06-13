@@ -1,6 +1,6 @@
 # Review Freshness Brief
 
-Generated at: 2026-06-13T10:13:28.086Z
+Generated at: 2026-06-13T15:18:51.015Z
 
 This report is read-only. It converts freshness risk into human fact-check tasks for current review candidates.
 
@@ -16,8 +16,8 @@ This report is read-only. It converts freshness risk into human fact-check tasks
 
 - Action board ready tasks: 16
 - Unique action files: 13
-- Content freshness generated at: 2026-06-13T10:13:27.649Z
-- Source health summary: {"checkedUrls":40,"broadFirstCoverageFiles":8,"currentReviewFiles":3,"failedUrls":1,"filesCovered":23,"filesWithReachableSource":23,"filesWithoutReachableSource":0,"missingUrlTargets":0,"nextSourcePackFiles":19,"okUrls":39,"publicGapDecisionFiles":13,"redirectedUrls":18,"sourceReferences":266,"uniqueUrls":40}
+- Content freshness generated at: 2026-06-13T15:18:50.469Z
+- Source health summary: {"checkedUrls":40,"broadFirstCoverageFiles":8,"currentReviewFiles":3,"failedUrls":1,"filesCovered":23,"filesWithReachableSource":23,"filesWithoutReachableSource":0,"missingUrlTargets":0,"nextSourcePackFiles":19,"okUrls":39,"publicGapDecisionFiles":13,"redirectedUrls":18,"sourceReferences":267,"uniqueUrls":40}
 
 ## Summary
 
@@ -38,9 +38,9 @@ This report is read-only. It converts freshness risk into human fact-check tasks
 | Ready | Risk | Updated | Sources | Checks | Scope | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | high | 2026-06-12 | 34/34 | 12 | action-board, current-review, public-gap | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| true | high | 2026-06-12 | 26/26 | 12 | action-board, current-review, public-gap | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | high | 2026-06-13 | 26/26 | 12 | action-board, current-review, public-gap | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | high | 2026-06-12 | 22/24 | 12 | action-board, current-review, public-gap | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | high | 2026-06-12 | 27/27 | 12 | action-board, public-gap | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| true | high | 2026-06-13 | 27/27 | 12 | action-board, public-gap | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | true | high | 2026-06-06 | 11/11 | 12 | action-board, public-gap | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | true | high | 2026-06-06 | 11/11 | 12 | action-board, public-gap | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 | true | high | 2026-06-12 | 6/6 | 12 | action-board, public-gap | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
@@ -56,9 +56,9 @@ This report is read-only. It converts freshness risk into human fact-check tasks
 | Ready | Risk | Updated | Sources | Checks | Scope | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | high | 2026-06-12 | 34/34 | 12 | action-board, current-review, public-gap | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| true | high | 2026-06-12 | 26/26 | 12 | action-board, current-review, public-gap | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | high | 2026-06-13 | 26/26 | 12 | action-board, current-review, public-gap | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | true | high | 2026-06-12 | 22/24 | 12 | action-board, current-review, public-gap | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | high | 2026-06-12 | 27/27 | 12 | action-board, public-gap | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| true | high | 2026-06-13 | 27/27 | 12 | action-board, public-gap | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | true | high | 2026-06-06 | 11/11 | 12 | action-board, public-gap | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
 | true | high | 2026-06-06 | 11/11 | 12 | action-board, public-gap | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 | true | high | 2026-06-12 | 6/6 | 12 | action-board, public-gap | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
@@ -135,7 +135,7 @@ Human review checklist:
 
 - File: content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
 - Freshness risk: high
-- Updated at: 2026-06-12
+- Updated at: 2026-06-13
 - Reachable sources: 26/26
 
 Risk reasons:
@@ -199,6 +199,8 @@ Human review checklist:
 
 Risk reasons:
 
+- fast-changing technical term: api
+- fast-changing technical term: openai
 - fast-changing technical term: 模型
 - fast-changing technical term: 知识库
 - review-sensitive term: prompt
@@ -232,10 +234,10 @@ Freshness checks:
 - 销售 AI 提示词
 - 客服 AI 提示词
 - 运营 AI 提示词
+- Confirm current official guidance for api.
+- Confirm current official guidance for openai.
 - Confirm current official guidance for 模型.
 - Confirm current official guidance for 知识库.
-- Confirm current official guidance for prompt.
-- Confirm current official guidance for 提示词.
 
 Human review checklist:
 
@@ -249,7 +251,7 @@ Human review checklist:
 
 - File: content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx
 - Freshness risk: high
-- Updated at: 2026-06-12
+- Updated at: 2026-06-13
 - Reachable sources: 27/27
 
 Risk reasons:

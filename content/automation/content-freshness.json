@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:27.649Z",
+  "generatedAt": "2026-06-13T15:18:50.469Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status."
@@ -7,36 +7,12 @@
   "summary": {
     "articlesChecked": 669,
     "currentReviewItems": 3,
-    "highRisk": 570,
+    "highRisk": 573,
     "items": 666,
-    "mediumRisk": 96,
+    "mediumRisk": 93,
     "plannedReviewItems": 9
   },
   "currentReviewItems": [
-    {
-      "category": "AI Agent",
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-      "primaryKeyword": "AI Agent 部署",
-      "reviewContext": [],
-      "riskLevel": "high",
-      "riskReasons": [
-        "fast-changing technical term: api",
-        "fast-changing technical term: agent",
-        "fast-changing technical term: model",
-        "fast-changing technical term: vercel",
-        "fast-changing technical term: 部署",
-        "fast-changing technical term: 模型",
-        "fast-changing technical term: 知识库",
-        "review-sensitive term: 工具",
-        "review-sensitive term: 报价",
-        "review-sensitive term: 客服",
-        "review-sensitive term: 销售",
-        "review-sensitive term: 自动化"
-      ],
-      "status": "draft",
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "updatedAt": "2026-06-12"
-    },
     {
       "category": "AI 部署",
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
@@ -65,6 +41,8 @@
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: openai",
         "fast-changing technical term: 模型",
         "fast-changing technical term: 知识库",
         "review-sensitive term: prompt",
@@ -76,6 +54,30 @@
       "status": "draft",
       "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
       "updatedAt": "2026-06-12"
+    },
+    {
+      "category": "AI Agent",
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "primaryKeyword": "AI Agent 部署",
+      "reviewContext": [],
+      "riskLevel": "high",
+      "riskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: agent",
+        "fast-changing technical term: model",
+        "fast-changing technical term: vercel",
+        "fast-changing technical term: 部署",
+        "fast-changing technical term: 模型",
+        "fast-changing technical term: 知识库",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 报价",
+        "review-sensitive term: 客服",
+        "review-sensitive term: 销售",
+        "review-sensitive term: 自动化"
+      ],
+      "status": "draft",
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "updatedAt": "2026-06-13"
     }
   ],
   "plannedReviewItems": [
@@ -170,30 +172,6 @@
       "updatedAt": "2026-06-06"
     },
     {
-      "category": "AI Agent",
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-      "primaryKeyword": "AI Agent 部署",
-      "reviewContext": [],
-      "riskLevel": "high",
-      "riskReasons": [
-        "fast-changing technical term: api",
-        "fast-changing technical term: agent",
-        "fast-changing technical term: model",
-        "fast-changing technical term: vercel",
-        "fast-changing technical term: 部署",
-        "fast-changing technical term: 模型",
-        "fast-changing technical term: 知识库",
-        "review-sensitive term: 工具",
-        "review-sensitive term: 报价",
-        "review-sensitive term: 客服",
-        "review-sensitive term: 销售",
-        "review-sensitive term: 自动化"
-      ],
-      "status": "draft",
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "updatedAt": "2026-06-12"
-    },
-    {
       "category": "AI 部署",
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "primaryKeyword": "客服 AI 模型选型",
@@ -216,11 +194,31 @@
     },
     {
       "category": "AI 提示词",
+      "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
+      "primaryKeyword": "数据分析 AI 提示词",
+      "reviewContext": [],
+      "riskLevel": "high",
+      "riskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: openai",
+        "review-sensitive term: prompt",
+        "review-sensitive term: 提示词",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 运营"
+      ],
+      "status": "draft",
+      "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
+      "updatedAt": "2026-06-12"
+    },
+    {
+      "category": "AI 提示词",
       "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
       "primaryKeyword": "全行业 AI 提示词模板",
       "reviewContext": [],
       "riskLevel": "high",
       "riskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: openai",
         "fast-changing technical term: 模型",
         "fast-changing technical term: 知识库",
         "review-sensitive term: prompt",
@@ -256,20 +254,28 @@
       "updatedAt": "2026-06-12"
     },
     {
-      "category": "AI 提示词",
-      "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
-      "primaryKeyword": "数据分析 AI 提示词",
+      "category": "AI Agent",
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "primaryKeyword": "AI Agent 部署",
       "reviewContext": [],
-      "riskLevel": "medium",
+      "riskLevel": "high",
       "riskReasons": [
-        "review-sensitive term: prompt",
-        "review-sensitive term: 提示词",
+        "fast-changing technical term: api",
+        "fast-changing technical term: agent",
+        "fast-changing technical term: model",
+        "fast-changing technical term: vercel",
+        "fast-changing technical term: 部署",
+        "fast-changing technical term: 模型",
+        "fast-changing technical term: 知识库",
         "review-sensitive term: 工具",
-        "review-sensitive term: 运营"
+        "review-sensitive term: 报价",
+        "review-sensitive term: 客服",
+        "review-sensitive term: 销售",
+        "review-sensitive term: 自动化"
       ],
       "status": "draft",
-      "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
-      "updatedAt": "2026-06-12"
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "updatedAt": "2026-06-13"
     }
   ],
   "items": [

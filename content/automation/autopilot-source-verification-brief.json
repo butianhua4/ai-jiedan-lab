@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:32.162Z",
+  "generatedAt": "2026-06-13T15:18:55.790Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -27,7 +27,7 @@
       "okUrls": 39,
       "publicGapDecisionFiles": 13,
       "redirectedUrls": 18,
-      "sourceReferences": 266,
+      "sourceReferences": 267,
       "uniqueUrls": 40
     },
     "packetUnsafeItems": 0
@@ -235,6 +235,7 @@
         "Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.",
         "Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.",
         "Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts.",
+        "Deployment guidance includes environment variables, rate limits, smoke checks, and failure handling.",
         "No instruction to bypass platform, payment, messaging, account, or review rules.",
         "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
         "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",

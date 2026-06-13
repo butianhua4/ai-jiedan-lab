@@ -1,6 +1,6 @@
 # Public Expansion Queue
 
-Generated at: 2026-06-13T10:13:09.939Z
+Generated at: 2026-06-13T15:18:26.999Z
 
 This queue is read-only. It ranks drafts for manual approval waves so public coverage can expand without bypassing review.
 
@@ -154,7 +154,7 @@ npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-gui
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 423 | true | false | 6 | 8 | 5 | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
 | 423 | true | false | 6 | 8 | 5 | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | content/blog/gemini-api-rate-limit-debug-guide.mdx |
-| 411 | true | false | 8 | 8 | 6 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
+| 411 | true | false | 9 | 8 | 7 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
 
 Human approval commands:
 

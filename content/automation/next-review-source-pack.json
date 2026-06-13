@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:09.483Z",
+  "generatedAt": "2026-06-13T15:18:26.475Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -268,7 +268,7 @@
       "sourceNotesPresent": true,
       "status": "draft",
       "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "wordCountChinese": 1540,
+      "wordCountChinese": 2186,
       "workflowAngles": [
         "工具白名单",
         "多步执行",
@@ -328,7 +328,7 @@
       "sourceNotesPresent": true,
       "status": "draft",
       "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-      "wordCountChinese": 1862,
+      "wordCountChinese": 2332,
       "workflowAngles": [
         "search intent",
         "fact review",
@@ -443,7 +443,7 @@
       "sourceNotesPresent": true,
       "status": "draft",
       "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
-      "wordCountChinese": 1229,
+      "wordCountChinese": 1524,
       "workflowAngles": [
         "search intent",
         "fact review",
@@ -872,7 +872,7 @@
       "sourceNotesPresent": true,
       "status": "draft",
       "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-      "wordCountChinese": 1537,
+      "wordCountChinese": 2338,
       "workflowAngles": [
         "search intent",
         "fact review",
@@ -1098,6 +1098,7 @@
         "Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615",
         "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/",
         "OpenAI API docs: https://platform.openai.com/docs",
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
         "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
         "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
       ],
@@ -1110,6 +1111,7 @@
         "No instruction to bypass platform, payment, messaging, account, or review rules.",
         "No API key, credential, private customer data, or account detail is included.",
         "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
+        "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
         "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
         "Prompt examples include input context, output criteria, review rules, and adaptation notes."
       ],
@@ -1118,7 +1120,7 @@
       "sourceNotesPresent": true,
       "status": "draft",
       "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
-      "wordCountChinese": 1212,
+      "wordCountChinese": 1745,
       "workflowAngles": [
         "回复草稿",
         "工单分类",
@@ -1179,7 +1181,7 @@
       "sourceNotesPresent": true,
       "status": "draft",
       "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复",
-      "wordCountChinese": 1250,
+      "wordCountChinese": 1645,
       "workflowAngles": [
         "回复草稿",
         "工单分类",

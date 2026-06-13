@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:12:56.613Z",
+  "generatedAt": "2026-06-13T15:18:11.957Z",
   "guardrails": {
     "autoPublish": false,
     "requiredHumanAction": "Read the article, verify factual claims and risk language, then mark review manually.",
@@ -81,9 +81,9 @@
       ],
       "searchIntent": "informational",
       "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
-      "sourceNotes": "已于 2026-06-12 按 Vercel AI SDK 官方 Agents、ToolLoopAgent、tool calling、human-in-the-loop 文档核对核心概念；结合实际 Web 应用部署流程整理。正式公开前仍需人工复核 API 示例、版本和平台限制。",
+      "sourceNotes": "已于 2026-06-13 按 Vercel AI SDK 官方 ToolLoopAgent、tool calling、streamText、chatbot tool usage 文档核对核心概念；结合实际 Web 应用部署流程整理。正式公开前仍需人工复核 API 示例、版本和平台限制。",
       "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "wordCountChinese": 1540
+      "wordCountChinese": 2186
     },
     {
       "category": "AI 提示词",
@@ -144,7 +144,8 @@
         "No API key, credential, private customer data, or account detail is included.",
         "Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.",
         "Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.",
-        "Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts."
+        "Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts.",
+        "Deployment guidance includes environment variables, rate limits, smoke checks, and failure handling."
       ],
       "reviewFocus": [
         "Verify the opening answer matches the title and search intent.",
@@ -160,7 +161,7 @@
       "slug": "industry-ai-prompts-template-library-2026",
       "sourceNotes": "已于 2026-06-12 按 OpenAI 官方 prompt engineering / prompt guidance 文档核对提示词结构原则；结合团队知识库实践和行业 SOP 设计经验整理。正式公开前仍需人工核对示例、行业边界和敏感内容。",
       "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-      "wordCountChinese": 1862
+      "wordCountChinese": 2332
     },
     {
       "category": "AI 部署",

@@ -1,6 +1,6 @@
 # Review Action Board
 
-Generated at: 2026-06-13T10:13:23.980Z
+Generated at: 2026-06-13T15:18:46.216Z
 
 This board is read-only. It turns review automation reports into a prioritized human task queue.
 
@@ -136,7 +136,7 @@ Action items:
 
 - Read the article end to end and confirm the opening answer matches search intent.
 - Open 2 official source target(s) and verify fast-changing claims.
-- Run through 6 risk review checks.
+- Run through 7 risk review checks.
 - Choose or reject public internal link suggestion: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner).
 - Confirm snippet and structured-data checks remain clean.
 
@@ -222,8 +222,8 @@ Action items:
 - Review theme gap: 开源大模型部署：Ollama、vLLM、TGI、RunPod.
 - Verify 10 source target(s) and source freshness.
 - During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.
-- Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
-- Choose or reject public internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
+- Review the suggested public internal link before publishing: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).
+- Choose or reject public internal link suggestion: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).
 
 Warnings:
 

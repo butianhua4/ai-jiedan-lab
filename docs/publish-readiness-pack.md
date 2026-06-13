@@ -1,6 +1,6 @@
 # Publish Readiness Pack
 
-Generated at: 2026-06-13T10:12:56.613Z
+Generated at: 2026-06-13T15:18:11.957Z
 
 This pack organizes manual review work. It does not publish articles or change article status.
 
@@ -27,10 +27,10 @@ This pack organizes manual review work. It does not publish articles or change a
 - Opportunity reason: Agent and memory cluster; no public article in cluster; no public article in category
 - Matched content opportunity: Agent 部署、工具调用和记忆
 - Opportunity why: Agent、记忆和工作流是高频 AI 应用词，但需要清楚解释边界和落地步骤。
-- Chinese chars: 1540
+- Chinese chars: 2186
 - Internal links: 6
 - Description: 面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。
-- Source notes: 已于 2026-06-12 按 Vercel AI SDK 官方 Agents、ToolLoopAgent、tool calling、human-in-the-loop 文档核对核心概念；结合实际 Web 应用部署流程整理。正式公开前仍需人工复核 API 示例、版本和平台限制。
+- Source notes: 已于 2026-06-13 按 Vercel AI SDK 官方 ToolLoopAgent、tool calling、streamText、chatbot tool usage 文档核对核心概念；结合实际 Web 应用部署流程整理。正式公开前仍需人工复核 API 示例、版本和平台限制。
 
 Human decision checklist:
 
@@ -99,7 +99,7 @@ npm run live:check -- --url=https://ai-jiedan-lab.vercel.app
 - Opportunity reason: Industry AI prompts cluster; no public article in cluster; no public article in category
 - Matched content opportunity: 全行业 AI 提示词和工作流模板
 - Opportunity why: 提示词类内容搜索面宽，但需要从模板升级成行业流程，才更适合长期收录。
-- Chinese chars: 1862
+- Chinese chars: 2332
 - Internal links: 6
 - Description: 整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。
 - Source notes: 已于 2026-06-12 按 OpenAI 官方 prompt engineering / prompt guidance 文档核对提示词结构原则；结合团队知识库实践和行业 SOP 设计经验整理。正式公开前仍需人工核对示例、行业边界和敏感内容。
@@ -123,6 +123,7 @@ Risk review checklist:
 - Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.
 - Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.
 - Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts.
+- Deployment guidance includes environment variables, rate limits, smoke checks, and failure handling.
 
 Review focus:
 

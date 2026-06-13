@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:33.442Z",
+  "generatedAt": "2026-06-13T15:18:57.263Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -115,7 +115,7 @@
         "Resolve failed source URL before approval: https://ai-prompts-pro.com/blog/ai-prompt-templates-business.",
         "Source URL action: Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent."
       ],
-      "riskChecks": 10,
+      "riskChecks": 11,
       "searchReady": true,
       "searchWeaknesses": [],
       "sourceReady": true,

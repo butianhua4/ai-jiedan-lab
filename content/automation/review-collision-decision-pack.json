@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:27.066Z",
+  "generatedAt": "2026-06-13T15:18:49.781Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "stopBefore": "Stop before mark:review. If a reviewer keeps both articles, the angle and internal-link relationship must be explicit first."
   },
   "sourceEvidence": {
-    "cannibalizationGeneratedAt": "2026-06-13T10:13:26.624Z",
+    "cannibalizationGeneratedAt": "2026-06-13T15:18:49.285Z",
     "cannibalizationGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -75,11 +75,11 @@
           "适合谁",
           "不适合谁",
           "常见部署路径",
+          "先用哪条路径",
           "具体步骤",
+          "推理引擎怎么选",
           "成本怎么估",
-          "验收要看什么",
-          "常见错误",
-          "风险提醒"
+          "验收要看什么"
         ],
         "role": "provider-specific deployment option: own Hugging Face endpoints, hosted inference, engine choice, cost checks, and production acceptance."
       },
@@ -129,7 +129,7 @@
         "Candidate role to preserve: provider-specific deployment option: own Hugging Face endpoints, hosted inference, engine choice, cost checks, and production acceptance.",
         "Closest article role to preserve: pillar explainer: own beginner route selection across API, local deployment, and private deployment.",
         "Consider copydesk addition during human review: 在开头 200 字内自然回答一次“大模型部署教程”这个搜索意图，先给结论再展开步骤。",
-        "Consider copydesk addition during human review: 在相关段落加入公开内链：Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)。",
+        "Consider copydesk addition during human review: 在相关段落加入公开内链：Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist)。",
         "If keeping both drafts, add a clear cross-link relationship during human review.",
         "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
         "Publishing remains a separate explicit approval step."
@@ -181,7 +181,7 @@
         "Rewrite the meta description to name the reader, outcome, and search phrase: 大模型部署教程.",
         "Add one contextual link to a published article before approval.",
         "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
-        "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)."
+        "Review the suggested public internal link before publishing: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist)."
       ]
     }
   ]

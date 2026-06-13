@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:11.238Z",
+  "generatedAt": "2026-06-13T15:18:28.534Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -101,7 +101,7 @@
           "status": "draft",
           "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
           "wave1": true,
-          "wordCountChinese": 1862,
+          "wordCountChinese": 2332,
           "workflowAngles": [
             "industry taxonomy",
             "input schema",
@@ -226,7 +226,7 @@
           ],
           "safeDraft": true,
           "searchIntent": "informational",
-          "sourceNotes": "已于 2026-06-12 按 Vercel AI SDK 官方 Agents、ToolLoopAgent、tool calling、human-in-the-loop 文档核对核心概念；结合实际 Web 应用部署流程整理。正式公开前仍需人工复核 API 示例、版本和平台限制。",
+          "sourceNotes": "已于 2026-06-13 按 Vercel AI SDK 官方 ToolLoopAgent、tool calling、streamText、chatbot tool usage 文档核对核心概念；结合实际 Web 应用部署流程整理。正式公开前仍需人工复核 API 示例、版本和平台限制。",
           "sourceTargets": [
             "OpenAI Agents: https://platform.openai.com/docs/guides/agents",
             "OpenAI Agents SDK: https://platform.openai.com/docs/guides/agents-sdk",
@@ -236,7 +236,7 @@
           "status": "draft",
           "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
           "wave1": true,
-          "wordCountChinese": 1540,
+          "wordCountChinese": 2186,
           "workflowAngles": [
             "tool calling",
             "multi-step execution",
@@ -329,7 +329,7 @@
           "status": "draft",
           "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
           "wave1": false,
-          "wordCountChinese": 1229,
+          "wordCountChinese": 1524,
           "workflowAngles": [
             "industry taxonomy",
             "input schema",
@@ -455,7 +455,7 @@
           ],
           "safeDraft": true,
           "searchIntent": "informational",
-          "sourceNotes": "已于 2026-06-12 按 OpenAI 官方 Prompt Engineering 文档核对提示词结构、角色、输入约束和输出格式；结合客服工单分类、升级判断、隐私最小化和人工复核流程整理。正式公开前仍需人工核对行业售后政策、敏感信息处理和隐私要求。",
+          "sourceNotes": "已于 2026-06-13 按 OpenAI 官方 Prompt Engineering、Text generation、Safety best practices、Agent safety 文档核对提示词结构、输入约束、输出格式、敏感动作和人工复核边界；结合客服工单分类、升级判断、隐私最小化和人工复核流程整理。正式公开前仍需人工核对行业售后政策、敏感信息处理和隐私要求。",
           "sourceTargets": [
             "OpenAI prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering",
             "Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
@@ -463,7 +463,7 @@
           "status": "draft",
           "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
           "wave1": false,
-          "wordCountChinese": 1212,
+          "wordCountChinese": 1745,
           "workflowAngles": [
             "department workflows",
             "SOP",
@@ -679,7 +679,7 @@
           ],
           "safeDraft": true,
           "searchIntent": "informational",
-          "sourceNotes": "已于 2026-06-12 按 Hugging Face Inference Endpoints 官方文档核对托管推理端点、实例选择和部署边界；结合 API、私有化和成本检查经验整理。正式公开前仍需人工核对价格、区域、引擎支持和最新限制。",
+          "sourceNotes": "已于 2026-06-13 按 Hugging Face Inference Endpoints 官方文档核对托管推理端点、实例选择、自动伸缩、安全、价格和推理引擎边界；结合 API、私有化和成本检查经验整理。正式公开前仍需人工核对价格、区域、引擎支持和最新限制。",
           "sourceTargets": [
             "Hugging Face docs: https://huggingface.co/docs",
             "vLLM docs: https://docs.vllm.ai",
@@ -689,7 +689,7 @@
           "status": "draft",
           "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
           "wave1": false,
-          "wordCountChinese": 1537,
+          "wordCountChinese": 2338,
           "workflowAngles": [
             "GPU sizing",
             "serving API",

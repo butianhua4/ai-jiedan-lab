@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:13.304Z",
+  "generatedAt": "2026-06-13T15:18:30.917Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,7 +10,7 @@
     "stopBefore": "All commands are manual-only and require explicit human approval."
   },
   "sourceEvidence": {
-    "intakeGeneratedAt": "2026-06-13T10:13:12.876Z",
+    "intakeGeneratedAt": "2026-06-13T15:18:30.409Z",
     "intakeGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -485,7 +485,7 @@
         "Check the article directly answers the primary search phrase: large language model deployment tutorial.",
         "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
         "Confirm all commands, credentials, API keys, and customer data examples are safe.",
-        "Approve or replace internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
+        "Approve or replace internal link suggestion: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).",
         "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
         "Publishing remains separate and requires explicit approval."
       ],
@@ -504,12 +504,12 @@
       ],
       "priorityScore": 677,
       "publicInternalLinkSuggestion": {
-        "file": "content/blog/codex-code-review-delivery-checklist.mdx",
-        "reason": "keyword overlap: ai, 怎么, 检查, 新手, 查清, 清单",
+        "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+        "reason": "keyword overlap: ai, 部署, 检查, 什么, 新手, 上线",
         "score": 31,
-        "slug": "codex-code-review-delivery-checklist",
-        "title": "Codex 生成代码后怎么审核：交付前检查清单",
-        "url": "/blog/codex-code-review-delivery-checklist"
+        "slug": "codex-vercel-deploy-preflight-checklist",
+        "title": "Codex 部署 Vercel 前检查什么：上线前清单",
+        "url": "/blog/codex-vercel-deploy-preflight-checklist"
       },
       "publicMatches": 0,
       "readyForHumanReview": true,

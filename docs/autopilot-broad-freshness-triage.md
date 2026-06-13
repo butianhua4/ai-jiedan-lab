@@ -1,6 +1,6 @@
 # Autopilot Broad Freshness Triage
 
-Generated at: 2026-06-13T10:13:38.049Z
+Generated at: 2026-06-13T15:19:02.644Z
 
 This report is read-only. It prioritizes high-demand AI draft candidates for human freshness review before any approval or publish action.
 
@@ -15,9 +15,9 @@ This report is read-only. It prioritizes high-demand AI draft candidates for hum
 
 ## Source Evidence
 
-- Broad demand generated at: 2026-06-13T10:13:37.601Z
-- Content freshness generated at: 2026-06-13T10:13:27.649Z
-- Source health summary: {"checkedUrls":40,"broadFirstCoverageFiles":8,"currentReviewFiles":3,"failedUrls":1,"filesCovered":23,"filesWithReachableSource":23,"filesWithoutReachableSource":0,"missingUrlTargets":0,"nextSourcePackFiles":19,"okUrls":39,"publicGapDecisionFiles":13,"redirectedUrls":18,"sourceReferences":266,"uniqueUrls":40}
+- Broad demand generated at: 2026-06-13T15:19:02.108Z
+- Content freshness generated at: 2026-06-13T15:18:50.469Z
+- Source health summary: {"checkedUrls":40,"broadFirstCoverageFiles":8,"currentReviewFiles":3,"failedUrls":1,"filesCovered":23,"filesWithReachableSource":23,"filesWithoutReachableSource":0,"missingUrlTargets":0,"nextSourcePackFiles":19,"okUrls":39,"publicGapDecisionFiles":13,"redirectedUrls":18,"sourceReferences":267,"uniqueUrls":40}
 - Triage source: autopilot-broad-ai-demand readyCandidates joined with content-freshness risk and source health URLs
 
 ## Summary
@@ -76,12 +76,12 @@ This report is read-only. It prioritizes high-demand AI draft candidates for hum
 | true | true | 425 | high | 0 | 5 | 3 | 16 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 | true | true | 423 | high | 0 | 5 | 11 | 16 | RAG、知识库、向量数据库和引用溯源 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | true | true | 421 | high | 0 | 6 | 7 | 16 | 全行业 AI 提示词和工作流模板 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
+| true | true | 421 | high | 0 | 6 | 6 | 16 | 全行业 AI 提示词和工作流模板 | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
 | true | true | 421 | high | 0 | 6 | 8 | 16 | 全行业 AI 提示词和工作流模板 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | true | true | 417 | high | 0 | 5 | 3 | 13 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | true | true | 417 | high | 0 | 5 | 3 | 14 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试 | content/blog/n8n-ai-agent-webhook-production-guide.mdx |
 | true | true | 403 | high | 0 | 5 | 3 | 12 | AI API 接入、限流、成本和多模型路由 | Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住 | content/blog/helicone-llm-observability-guide.mdx |
 | true | true | 403 | high | 0 | 5 | 12 | 14 | AI API 接入、限流、成本和多模型路由 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
-| true | true | 403 | high | 0 | 5 | 8 | 14 | AI API 接入、限流、成本和多模型路由 | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
 
 ## Per-Item Freshness Packets
 
@@ -357,7 +357,7 @@ Command boundary:
 - File: content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx
 - Freshness risk: high
 - Freshness priority: 431
-- Article updated at: 2026-06-12
+- Article updated at: 2026-06-13
 - Ready for human freshness review: true
 
 Search queries:
@@ -719,7 +719,7 @@ Command boundary:
 - File: content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
 - Freshness risk: high
 - Freshness priority: 427
-- Article updated at: 2026-06-12
+- Article updated at: 2026-06-13
 - Ready for human freshness review: true
 
 Search queries:
@@ -1136,6 +1136,66 @@ Command boundary:
 - Publish dry-run after review: `npm run publish:articles -- --file=content/blog/ai-prompt-library-team-knowledge-base-guide.mdx`
 - Publish confirm: not-included
 
+### 全行业 AI 提示词和工作流模板: 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要
+
+- File: content/blog/data-analysis-ai-prompts-guide.mdx
+- Freshness risk: high
+- Freshness priority: 421
+- Article updated at: 2026-06-12
+- Ready for human freshness review: true
+
+Search queries:
+
+- AI 提示词大全
+- 销售 AI 提示词
+- 客服 AI 提示词
+- HR AI 提示词
+- 运营 AI 提示词
+- 企业 AI 提示词模板
+
+Risk reasons:
+
+- fast-changing technical term: api
+- fast-changing technical term: openai
+- review-sensitive term: prompt
+- review-sensitive term: 提示词
+- review-sensitive term: 工具
+- review-sensitive term: 运营
+
+Source targets:
+
+- https://platform.openai.com/docs
+- https://platform.openai.com/docs/guides/prompt-engineering
+- https://ai-sdk.dev/docs
+- https://ai-prompts-pro.com/blog/ai-prompt-templates-business
+- https://sensara.io/prompts/
+- https://www.mrprompts.ai/learn/ai-prompts-for-sales
+
+Human fact-check checklist:
+
+- Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.
+- Verify current official docs for product names, APIs, model names, SDK behavior, deployment commands, and version-sensitive details.
+- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.
+- Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.
+- Rewrite or remove any unsupported fast-changing claim before running mark:review.
+- Verify freshness risk: fast-changing technical term: api.
+- Verify freshness risk: fast-changing technical term: openai.
+- Verify freshness risk: review-sensitive term: prompt.
+- Verify freshness risk: review-sensitive term: 提示词.
+- Verify freshness risk: review-sensitive term: 工具.
+- Verify freshness risk: review-sensitive term: 运营.
+- Apply review focus: 避免空泛万能提示词，必须给输入字段、输出结构和质检标准.
+- Apply review focus: 高风险行业必须保留专业判断和人工复核.
+- Apply review focus: 不要承诺转化率、收入或法律/医疗结果.
+- Open source target and verify current guidance: https://platform.openai.com/docs.
+- Open source target and verify current guidance: https://platform.openai.com/docs/guides/prompt-engineering.
+
+Command boundary:
+
+- Mark review after human approval: `npm run mark:review -- --file=content/blog/data-analysis-ai-prompts-guide.mdx --confirm-human`
+- Publish dry-run after review: `npm run publish:articles -- --file=content/blog/data-analysis-ai-prompts-guide.mdx`
+- Publish confirm: not-included
+
 ### 全行业 AI 提示词和工作流模板: 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用
 
 - File: content/blog/industry-ai-prompts-template-library-2026.mdx
@@ -1155,6 +1215,8 @@ Search queries:
 
 Risk reasons:
 
+- fast-changing technical term: api
+- fast-changing technical term: openai
 - fast-changing technical term: 模型
 - fast-changing technical term: 知识库
 - review-sensitive term: prompt
@@ -1181,12 +1243,12 @@ Human fact-check checklist:
 - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.
 - Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.
 - Rewrite or remove any unsupported fast-changing claim before running mark:review.
+- Verify freshness risk: fast-changing technical term: api.
+- Verify freshness risk: fast-changing technical term: openai.
 - Verify freshness risk: fast-changing technical term: 模型.
 - Verify freshness risk: fast-changing technical term: 知识库.
 - Verify freshness risk: review-sensitive term: prompt.
 - Verify freshness risk: review-sensitive term: 提示词.
-- Verify freshness risk: review-sensitive term: 工具.
-- Verify freshness risk: review-sensitive term: 报价.
 - Apply review focus: 避免空泛万能提示词，必须给输入字段、输出结构和质检标准.
 - Apply review focus: 高风险行业必须保留专业判断和人工复核.
 - Apply review focus: 不要承诺转化率、收入或法律/医疗结果.
@@ -1402,59 +1464,5 @@ Command boundary:
 
 - Mark review after human approval: `npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human`
 - Publish dry-run after review: `npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx`
-- Publish confirm: not-included
-
-### AI API 接入、限流、成本和多模型路由: Claude API Rate limit reached 怎么办：限流、上下文、重试和降级
-
-- File: content/blog/claude-api-rate-limit-debug-guide.mdx
-- Freshness risk: high
-- Freshness priority: 403
-- Article updated at: 2026-06-06
-- Ready for human freshness review: true
-
-Search queries:
-
-- OpenAI API 接入教程
-- Claude API rate limit
-- Gemini API 限流
-- OpenRouter API 教程
-- AI API key 安全
-
-Risk reasons:
-
-- fast-changing broad-demand term: api
-
-Source targets:
-
-- https://platform.openai.com/docs
-- https://docs.anthropic.com
-- https://platform.openai.com/docs/guides/agents
-- https://ai-sdk.dev/docs
-- https://platform.openai.com/docs/guides/retrieval
-- https://platform.openai.com/docs/guides/prompt-engineering
-- https://docs.anthropic.com/
-- https://vercel.com/docs/ai-gateway
-
-Human fact-check checklist:
-
-- Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.
-- Verify current official docs for product names, APIs, model names, SDK behavior, deployment commands, and version-sensitive details.
-- Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.
-- Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.
-- Rewrite or remove any unsupported fast-changing claim before running mark:review.
-- Verify freshness risk: fast-changing broad-demand term: api.
-- Apply review focus: 核对 SDK 名称、API endpoint、限流概念和错误码.
-- Apply review focus: 必须强调密钥安全、服务端代理和日志脱敏.
-- Apply review focus: 不要虚构价格或模型能力.
-- Open source target and verify current guidance: https://platform.openai.com/docs.
-- Open source target and verify current guidance: https://docs.anthropic.com.
-- Open source target and verify current guidance: https://platform.openai.com/docs/guides/agents.
-- Open source target and verify current guidance: https://ai-sdk.dev/docs.
-- Open source target and verify current guidance: https://platform.openai.com/docs/guides/retrieval.
-
-Command boundary:
-
-- Mark review after human approval: `npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human`
-- Publish dry-run after review: `npm run publish:articles -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx`
 - Publish confirm: not-included
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:41.531Z",
+  "generatedAt": "2026-06-13T15:19:06.713Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -105,7 +105,7 @@
       "status": "draft",
       "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
       "topic": "Agent 部署、工具调用和记忆",
-      "wordCountChinese": 1540
+      "wordCountChinese": 2186
     },
     {
       "approvalChecklist": [
@@ -500,6 +500,8 @@
       "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
       "freshnessRiskLevel": "high",
       "freshnessRiskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: openai",
         "fast-changing technical term: 模型",
         "fast-changing technical term: 知识库",
         "review-sensitive term: prompt",
@@ -532,14 +534,15 @@
         "No API key, credential, private customer data, or account detail is included.",
         "Fast-changing tool limits, pricing, model names, and deployment steps are verified against official docs.",
         "Knowledge base claims distinguish retrieval quality, citations, and hallucination risk.",
-        "Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts."
+        "Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts.",
+        "Deployment guidance includes environment variables, rate limits, smoke checks, and failure handling."
       ],
       "searchIntent": "informational",
       "sourceNotesPresent": true,
       "status": "draft",
       "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
       "topic": "全行业 AI 提示词和工作流模板",
-      "wordCountChinese": 1862
+      "wordCountChinese": 2332
     },
     {
       "approvalChecklist": [
@@ -631,8 +634,10 @@
         "HR AI 提示词"
       ],
       "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
-      "freshnessRiskLevel": "medium",
+      "freshnessRiskLevel": "high",
       "freshnessRiskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: openai",
         "review-sensitive term: prompt",
         "review-sensitive term: 提示词",
         "review-sensitive term: 工具",
@@ -667,7 +672,7 @@
       "status": "draft",
       "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
       "topic": "全行业 AI 提示词和工作流模板",
-      "wordCountChinese": 1229
+      "wordCountChinese": 1524
     }
   ]
 }

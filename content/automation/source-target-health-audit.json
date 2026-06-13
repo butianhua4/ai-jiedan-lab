@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:22.653Z",
+  "generatedAt": "2026-06-13T15:18:44.700Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -20,7 +20,7 @@
     "okUrls": 39,
     "publicGapDecisionFiles": 13,
     "redirectedUrls": 18,
-    "sourceReferences": 266,
+    "sourceReferences": 267,
     "uniqueUrls": 40
   },
   "missingUrlTargets": [],
@@ -275,7 +275,7 @@
       "url": "https://ai-sdk.dev/docs"
     },
     {
-      "finalUrl": "https://ai.google.dev/gemini-api/docs",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=fa",
       "ok": true,
       "references": [
         {
@@ -652,7 +652,7 @@
           "url": "https://docs.vllm.ai"
         }
       ],
-      "status": 429,
+      "status": 200,
       "url": "https://docs.vllm.ai"
     },
     {
@@ -1023,6 +1023,13 @@
           "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "scope": "next-source-pack",
           "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
+          "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+          "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+          "scope": "next-source-pack",
+          "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
           "url": "https://platform.openai.com/docs/guides/agents"
         },
         {
@@ -1879,11 +1886,11 @@
     },
     {
       "file": "content/blog/customer-service-ai-prompts-guide.mdx",
-      "reachableSources": 8,
+      "reachableSources": 9,
       "scopes": [
         "next-source-pack"
       ],
-      "sourceTargets": 8,
+      "sourceTargets": 9,
       "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
       "urls": [
         "https://platform.openai.com/docs/guides/prompt-engineering",
@@ -1892,6 +1899,7 @@
         "https://support.google.com/docs/answer/15013615",
         "https://adoption.microsoft.com/en-us/copilot/prompt-gallery/",
         "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/agents",
         "https://platform.openai.com/docs/guides/retrieval",
         "https://platform.openai.com/docs/guides/prompt-engineering"
       ]
@@ -2440,7 +2448,7 @@
       "url": "https://ai-sdk.dev/docs"
     },
     {
-      "finalUrl": "https://ai.google.dev/gemini-api/docs",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=fa",
       "ok": true,
       "references": [
         {
@@ -3013,7 +3021,7 @@
           "url": "https://docs.vllm.ai"
         }
       ],
-      "status": 429,
+      "status": 200,
       "url": "https://docs.vllm.ai"
     },
     {
@@ -3527,6 +3535,13 @@
           "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "scope": "next-source-pack",
           "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
+          "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+          "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+          "scope": "next-source-pack",
+          "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
           "url": "https://platform.openai.com/docs/guides/agents"
         },
         {

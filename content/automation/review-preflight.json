@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:12:57.030Z",
+  "generatedAt": "2026-06-13T15:18:12.455Z",
   "guardrails": {
     "autoMarkReview": false,
     "note": "This preflight only checks whether recommended drafts are ready for human review. It does not change article status."
@@ -23,7 +23,7 @@
       "qualityScore": 100,
       "status": "draft",
       "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "wordCountChinese": 1540
+      "wordCountChinese": 2186
     },
     {
       "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
@@ -34,7 +34,7 @@
       "qualityScore": 100,
       "status": "draft",
       "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-      "wordCountChinese": 1862
+      "wordCountChinese": 2332
     },
     {
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",

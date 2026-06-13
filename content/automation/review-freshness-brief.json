@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:28.086Z",
+  "generatedAt": "2026-06-13T15:18:51.015Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -16,7 +16,7 @@
       "stopBefore": "Every mark:review command requires explicit human approval. publish --confirm commands are intentionally not included."
     },
     "actionBoardReadyTasks": 16,
-    "contentFreshnessGeneratedAt": "2026-06-13T10:13:27.649Z",
+    "contentFreshnessGeneratedAt": "2026-06-13T15:18:50.469Z",
     "contentFreshnessGuardrails": {
       "autoPublish": false,
       "note": "This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status."
@@ -34,7 +34,7 @@
       "okUrls": 39,
       "publicGapDecisionFiles": 13,
       "redirectedUrls": 18,
-      "sourceReferences": 266,
+      "sourceReferences": 267,
       "uniqueUrls": 40
     },
     "uniqueActionFiles": 13
@@ -132,7 +132,7 @@
       ]
     },
     {
-      "articleUpdatedAt": "2026-06-12",
+      "articleUpdatedAt": "2026-06-13",
       "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
       "freshnessRisk": "high",
       "humanReviewChecklist": [
@@ -246,10 +246,12 @@
         "避免空泛万能提示词，必须给输入字段、输出结构和质检标准",
         "高风险行业必须保留专业判断和人工复核",
         "不要承诺转化率、收入或法律/医疗结果",
-        "模型",
-        "知识库"
+        "api",
+        "openai"
       ],
       "riskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: openai",
         "fast-changing technical term: 模型",
         "fast-changing technical term: 知识库",
         "review-sensitive term: prompt",
@@ -273,10 +275,10 @@
         "销售 AI 提示词",
         "客服 AI 提示词",
         "运营 AI 提示词",
+        "Confirm current official guidance for api.",
+        "Confirm current official guidance for openai.",
         "Confirm current official guidance for 模型.",
-        "Confirm current official guidance for 知识库.",
-        "Confirm current official guidance for prompt.",
-        "Confirm current official guidance for 提示词."
+        "Confirm current official guidance for 知识库."
       ],
       "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
       "warningIssues": [
@@ -285,7 +287,7 @@
       ]
     },
     {
-      "articleUpdatedAt": "2026-06-12",
+      "articleUpdatedAt": "2026-06-13",
       "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
       "freshnessRisk": "high",
       "humanReviewChecklist": [
@@ -1071,7 +1073,7 @@
       ]
     },
     {
-      "articleUpdatedAt": "2026-06-12",
+      "articleUpdatedAt": "2026-06-13",
       "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
       "freshnessRisk": "high",
       "humanReviewChecklist": [
@@ -1185,10 +1187,12 @@
         "避免空泛万能提示词，必须给输入字段、输出结构和质检标准",
         "高风险行业必须保留专业判断和人工复核",
         "不要承诺转化率、收入或法律/医疗结果",
-        "模型",
-        "知识库"
+        "api",
+        "openai"
       ],
       "riskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: openai",
         "fast-changing technical term: 模型",
         "fast-changing technical term: 知识库",
         "review-sensitive term: prompt",
@@ -1212,10 +1216,10 @@
         "销售 AI 提示词",
         "客服 AI 提示词",
         "运营 AI 提示词",
+        "Confirm current official guidance for api.",
+        "Confirm current official guidance for openai.",
         "Confirm current official guidance for 模型.",
-        "Confirm current official guidance for 知识库.",
-        "Confirm current official guidance for prompt.",
-        "Confirm current official guidance for 提示词."
+        "Confirm current official guidance for 知识库."
       ],
       "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
       "warningIssues": [
@@ -1224,7 +1228,7 @@
       ]
     },
     {
-      "articleUpdatedAt": "2026-06-12",
+      "articleUpdatedAt": "2026-06-13",
       "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
       "freshnessRisk": "high",
       "humanReviewChecklist": [

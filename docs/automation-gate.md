@@ -1,6 +1,6 @@
 # Automation Gate
 
-Generated at: 2026-06-13T10:14:00.001Z
+Generated at: 2026-06-13T15:19:24.945Z
 
 Overall: PASS
 
@@ -51,8 +51,8 @@ Overall: PASS
 | source target health audit has reachable URLs for every covered review file | PASS | checked=40, ok=39, failed=1, missingTargets=0, filesWithoutReachable=0 |
 | source target remediation pack is read-only and mirrors source health counts | PASS | items=19, failed=1/1, redirected=18/18 |
 | source target remediation pack keeps every source fix human-gated | PASS | ready=19, unsafe=0, gated=19, replacementCandidates=8 |
-| source replacement decision pack is read-only and mirrors remediation counts | PASS | decisions=114, remediation=19, failed=1/1, redirected=113/18 |
-| source replacement decision pack keeps file-level decisions human-gated | PASS | unsafe=0, gated=114, recommended=1, official=1 |
+| source replacement decision pack is read-only and mirrors remediation counts | PASS | decisions=115, remediation=19, failed=1/1, redirected=114/18 |
+| source replacement decision pack keeps file-level decisions human-gated | PASS | unsafe=0, gated=115, recommended=1, official=1 |
 | review action board is read-only and covers active review queues | PASS | tasks=16, wave=3, publicGap=13 |
 | review action board tasks are ready and preserve command boundaries | PASS | ready=16, unsafe=0 |
 | review portfolio board deduplicates all review packs | PASS | sourceCandidates=38, uniqueItems=26, duplicates=12, multiSource=10 |
@@ -174,7 +174,7 @@ Overall: PASS
 | review cannibalization brief keeps publish candidates differentiated | PASS | highRisk=1, highPublished=0, highReviewOnly=1, mediumRisk=0, publishedComparisons=0, reviewComparisons=1 |
 | review collision decision pack is read-only and covers high-risk overlaps | PASS | decisionItems=1, highRisk=1, blocking=0, unsafe=0 |
 | review collision decision pack keeps collision approvals human-gated | PASS | ready=1, commandBoundary=1, reviewOnly=1, published=0, blockedMatched=1 |
-| content freshness check covers review items | PASS | highRisk=570, currentReviewItems=3, plannedReviewItems=9 |
+| content freshness check covers review items | PASS | highRisk=573, currentReviewItems=3, plannedReviewItems=9 |
 | review freshness brief is read-only and covers unique action-board files | PASS | items=13, uniqueActionFiles=13, unsafeCommands=0 |
 | review freshness brief has source-backed human fact-check tasks | PASS | ready=13, blocked=0, highRisk=13, withSources=13 |
 | review coverage report covers planned candidates | PASS | planned=9, items=9, missingCoverage=0 |

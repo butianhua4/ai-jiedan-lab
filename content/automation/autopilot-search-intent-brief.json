@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:31.305Z",
+  "generatedAt": "2026-06-13T15:18:54.764Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -35,7 +35,7 @@
       "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
       "headingQueryHits": [],
       "primaryQuery": "AI Agent deployment tutorial",
-      "queryTokenHits": 8,
+      "queryTokenHits": 9,
       "readyForHumanReview": true,
       "reviewSuggestions": [
         "During human review, consider whether the title can naturally include: AI Agent deployment tutorial.",
@@ -103,7 +103,7 @@
       "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
       "headingQueryHits": [],
       "primaryQuery": "AI Agent deployment tutorial",
-      "queryTokenHits": 8,
+      "queryTokenHits": 9,
       "readyForHumanReview": true,
       "reviewSuggestions": [
         "During human review, consider whether the title can naturally include: AI Agent deployment tutorial.",
@@ -144,7 +144,7 @@
       "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
       "headingQueryHits": [],
       "primaryQuery": "ChatGPT prompts for business",
-      "queryTokenHits": 11,
+      "queryTokenHits": 12,
       "readyForHumanReview": true,
       "reviewSuggestions": [
         "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval."

@@ -1,6 +1,6 @@
 # Broad First Coverage Launch Pack
 
-Generated at: 2026-06-13T10:13:59.071Z
+Generated at: 2026-06-13T15:19:23.849Z
 
 ## Guardrails
 
@@ -325,12 +325,12 @@ Human fact-check checklist:
 - Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.
 - Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.
 - Rewrite or remove any unsupported fast-changing claim before running mark:review.
+- Verify freshness risk: fast-changing technical term: api.
+- Verify freshness risk: fast-changing technical term: openai.
 - Verify freshness risk: fast-changing technical term: 模型.
 - Verify freshness risk: fast-changing technical term: 知识库.
 - Verify freshness risk: review-sensitive term: prompt.
 - Verify freshness risk: review-sensitive term: 提示词.
-- Verify freshness risk: review-sensitive term: 工具.
-- Verify freshness risk: review-sensitive term: 报价.
 - Apply review focus: 避免空泛万能提示词，必须给输入字段、输出结构和质检标准.
 - Apply review focus: 高风险行业必须保留专业判断和人工复核.
 - Apply review focus: 不要承诺转化率、收入或法律/医疗结果.

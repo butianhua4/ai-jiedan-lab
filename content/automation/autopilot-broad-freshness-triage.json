@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:38.049Z",
+  "generatedAt": "2026-06-13T15:19:02.644Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "broadDemandGeneratedAt": "2026-06-13T10:13:37.601Z",
+    "broadDemandGeneratedAt": "2026-06-13T15:19:02.108Z",
     "broadDemandGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -28,7 +28,7 @@
       "reviewReadyDrafts": 633,
       "unsafeClusters": 0
     },
-    "contentFreshnessGeneratedAt": "2026-06-13T10:13:27.649Z",
+    "contentFreshnessGeneratedAt": "2026-06-13T15:18:50.469Z",
     "contentFreshnessGuardrails": {
       "autoPublish": false,
       "note": "This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status."
@@ -36,9 +36,9 @@
     "contentFreshnessSummary": {
       "articlesChecked": 669,
       "currentReviewItems": 3,
-      "highRisk": 570,
+      "highRisk": 573,
       "items": 666,
-      "mediumRisk": 96,
+      "mediumRisk": 93,
       "plannedReviewItems": 9
     },
     "sourceHealthSummary": {
@@ -54,7 +54,7 @@
       "okUrls": 39,
       "publicGapDecisionFiles": 13,
       "redirectedUrls": 18,
-      "sourceReferences": 266,
+      "sourceReferences": 267,
       "uniqueUrls": 40
     },
     "triageSource": "autopilot-broad-ai-demand readyCandidates joined with content-freshness risk and source health URLs"
@@ -460,7 +460,7 @@
       "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型"
     },
     {
-      "articleUpdatedAt": "2026-06-12",
+      "articleUpdatedAt": "2026-06-13",
       "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
       "commandBoundary": {
         "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
@@ -1115,7 +1115,7 @@
       "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型"
     },
     {
-      "articleUpdatedAt": "2026-06-12",
+      "articleUpdatedAt": "2026-06-13",
       "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
       "commandBoundary": {
         "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
@@ -1615,7 +1615,7 @@
       "title": "企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管"
     },
     {
-      "articleUpdatedAt": "2026-06-12",
+      "articleUpdatedAt": "2026-06-13",
       "cluster": "Agent 部署、工具调用和生产安全",
       "commandBoundary": {
         "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
@@ -2201,11 +2201,11 @@
       "articleUpdatedAt": "2026-06-12",
       "cluster": "全行业 AI 提示词和工作流模板",
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/data-analysis-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/data-analysis-ai-prompts-guide.mdx",
         "publishConfirm": "not-included"
       },
-      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
       "freshnessPriority": 421,
       "freshnessRisk": "high",
       "humanFactCheckChecklist": [
@@ -2214,12 +2214,12 @@
         "Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.",
         "Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.",
         "Rewrite or remove any unsupported fast-changing claim before running mark:review.",
-        "Verify freshness risk: fast-changing technical term: 模型.",
-        "Verify freshness risk: fast-changing technical term: 知识库.",
+        "Verify freshness risk: fast-changing technical term: api.",
+        "Verify freshness risk: fast-changing technical term: openai.",
         "Verify freshness risk: review-sensitive term: prompt.",
         "Verify freshness risk: review-sensitive term: 提示词.",
         "Verify freshness risk: review-sensitive term: 工具.",
-        "Verify freshness risk: review-sensitive term: 报价.",
+        "Verify freshness risk: review-sensitive term: 运营.",
         "Apply review focus: 避免空泛万能提示词，必须给输入字段、输出结构和质检标准.",
         "Apply review focus: 高风险行业必须保留专业判断和人工复核.",
         "Apply review focus: 不要承诺转化率、收入或法律/医疗结果.",
@@ -2234,6 +2234,91 @@
         "不要承诺转化率、收入或法律/医疗结果"
       ],
       "riskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: openai",
+        "review-sensitive term: prompt",
+        "review-sensitive term: 提示词",
+        "review-sensitive term: 工具",
+        "review-sensitive term: 运营"
+      ],
+      "safeDraft": true,
+      "searchQueries": [
+        "AI 提示词大全",
+        "销售 AI 提示词",
+        "客服 AI 提示词",
+        "HR AI 提示词",
+        "运营 AI 提示词",
+        "企业 AI 提示词模板"
+      ],
+      "sourceSignals": [
+        {
+          "note": "2026 商业提示词搜索结果集中覆盖 sales、marketing、support、HR、operations 等岗位。",
+          "title": "AI Prompt Templates for Business",
+          "type": "search-result",
+          "url": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business"
+        },
+        {
+          "note": "提示词库类页面通常按业务职能分类，说明“全行业/全岗位”入口值得做集合页。",
+          "title": "Business Prompt Templates",
+          "type": "search-result",
+          "url": "https://sensara.io/prompts/"
+        },
+        {
+          "note": "销售提示词结果强调 discovery call brief、客户痛点和 follow-up，适合做可交付工作流。",
+          "title": "AI Prompts for Sales",
+          "type": "search-result",
+          "url": "https://www.mrprompts.ai/learn/ai-prompts-for-sales"
+        }
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs",
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://ai-sdk.dev/docs",
+        "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
+        "https://sensara.io/prompts/",
+        "https://www.mrprompts.ai/learn/ai-prompts-for-sales"
+      ],
+      "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要"
+    },
+    {
+      "articleUpdatedAt": "2026-06-12",
+      "cluster": "全行业 AI 提示词和工作流模板",
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "publishConfirm": "not-included"
+      },
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "freshnessPriority": 421,
+      "freshnessRisk": "high",
+      "humanFactCheckChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Verify current official docs for product names, APIs, model names, SDK behavior, deployment commands, and version-sensitive details.",
+        "Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.",
+        "Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.",
+        "Rewrite or remove any unsupported fast-changing claim before running mark:review.",
+        "Verify freshness risk: fast-changing technical term: api.",
+        "Verify freshness risk: fast-changing technical term: openai.",
+        "Verify freshness risk: fast-changing technical term: 模型.",
+        "Verify freshness risk: fast-changing technical term: 知识库.",
+        "Verify freshness risk: review-sensitive term: prompt.",
+        "Verify freshness risk: review-sensitive term: 提示词.",
+        "Apply review focus: 避免空泛万能提示词，必须给输入字段、输出结构和质检标准.",
+        "Apply review focus: 高风险行业必须保留专业判断和人工复核.",
+        "Apply review focus: 不要承诺转化率、收入或法律/医疗结果.",
+        "Open source target and verify current guidance: https://platform.openai.com/docs.",
+        "Open source target and verify current guidance: https://platform.openai.com/docs/guides/prompt-engineering."
+      ],
+      "publicMatches": 0,
+      "readyForHumanFreshnessReview": true,
+      "reviewFocus": [
+        "避免空泛万能提示词，必须给输入字段、输出结构和质检标准",
+        "高风险行业必须保留专业判断和人工复核",
+        "不要承诺转化率、收入或法律/医疗结果"
+      ],
+      "riskReasons": [
+        "fast-changing technical term: api",
+        "fast-changing technical term: openai",
         "fast-changing technical term: 模型",
         "fast-changing technical term: 知识库",
         "review-sensitive term: prompt",
@@ -2579,83 +2664,6 @@
         "https://vercel.com/docs/ai-gateway"
       ],
       "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
-    },
-    {
-      "articleUpdatedAt": "2026-06-06",
-      "cluster": "AI API 接入、限流、成本和多模型路由",
-      "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx",
-        "publishConfirm": "not-included"
-      },
-      "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
-      "freshnessPriority": 403,
-      "freshnessRisk": "high",
-      "humanFactCheckChecklist": [
-        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
-        "Verify current official docs for product names, APIs, model names, SDK behavior, deployment commands, and version-sensitive details.",
-        "Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.",
-        "Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.",
-        "Rewrite or remove any unsupported fast-changing claim before running mark:review.",
-        "Verify freshness risk: fast-changing broad-demand term: api.",
-        "Apply review focus: 核对 SDK 名称、API endpoint、限流概念和错误码.",
-        "Apply review focus: 必须强调密钥安全、服务端代理和日志脱敏.",
-        "Apply review focus: 不要虚构价格或模型能力.",
-        "Open source target and verify current guidance: https://platform.openai.com/docs.",
-        "Open source target and verify current guidance: https://docs.anthropic.com.",
-        "Open source target and verify current guidance: https://platform.openai.com/docs/guides/agents.",
-        "Open source target and verify current guidance: https://ai-sdk.dev/docs.",
-        "Open source target and verify current guidance: https://platform.openai.com/docs/guides/retrieval."
-      ],
-      "publicMatches": 0,
-      "readyForHumanFreshnessReview": true,
-      "reviewFocus": [
-        "核对 SDK 名称、API endpoint、限流概念和错误码",
-        "必须强调密钥安全、服务端代理和日志脱敏",
-        "不要虚构价格或模型能力"
-      ],
-      "riskReasons": [
-        "fast-changing broad-demand term: api"
-      ],
-      "safeDraft": true,
-      "searchQueries": [
-        "OpenAI API 接入教程",
-        "Claude API rate limit",
-        "Gemini API 限流",
-        "OpenRouter API 教程",
-        "AI API key 安全"
-      ],
-      "sourceSignals": [
-        {
-          "note": "OpenAI API 文档是模型、responses、tool calling 和 key 管理的事实源。",
-          "title": "OpenAI API documentation",
-          "type": "official-doc",
-          "url": "https://platform.openai.com/docs"
-        },
-        {
-          "note": "Anthropic 文档可核对 Claude API、rate limit 和 SDK 细节。",
-          "title": "Anthropic Claude API documentation",
-          "type": "official-doc",
-          "url": "https://docs.anthropic.com/"
-        },
-        {
-          "note": "Vercel AI Gateway 和多 provider 路由适合做成本、fallback、可观测性专题。",
-          "title": "Vercel AI Gateway",
-          "type": "official-doc",
-          "url": "https://vercel.com/docs/ai-gateway"
-        }
-      ],
-      "sourceTargets": [
-        "https://platform.openai.com/docs",
-        "https://docs.anthropic.com",
-        "https://platform.openai.com/docs/guides/agents",
-        "https://ai-sdk.dev/docs",
-        "https://platform.openai.com/docs/guides/retrieval",
-        "https://platform.openai.com/docs/guides/prompt-engineering",
-        "https://docs.anthropic.com/",
-        "https://vercel.com/docs/ai-gateway"
-      ],
-      "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级"
     }
   ]
 }

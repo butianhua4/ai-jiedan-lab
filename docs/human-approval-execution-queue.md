@@ -1,6 +1,6 @@
 # Human Approval Execution Queue
 
-Generated at: 2026-06-13T10:13:40.661Z
+Generated at: 2026-06-13T15:19:05.691Z
 
 This queue is read-only. It consolidates the next manual approval actions that can increase public article count, while stopping before article edits, mark-review execution, and publish confirmation.
 
@@ -37,19 +37,19 @@ This queue is read-only. It consolidates the next manual approval actions that c
 
 ## Source Evidence
 
-- firstCoverageGeneratedAt: "2026-06-13T10:13:40.217Z"
+- firstCoverageGeneratedAt: "2026-06-13T15:19:05.178Z"
 - firstCoverageSummary: {"blockingItems":0,"commandBoundaries":8,"firstCoverageItems":8,"freshnessReadyItems":8,"integrityReadyItems":8,"itemsWithPublicLinkPath":8,"launchPackItems":8,"preflightReadyItems":8,"queryReadyItems":8,"schemaReadyItems":8,"snippetReadyItems":8,"sourceReadyItems":8,"trafficDataAvailable":false,"uniqueFiles":8,"unsafeItems":0,"warningItems":8,"zeroPublicClusters":8}
-- massAiSearchMatrixGeneratedAt: "2026-06-13T10:13:14.979Z"
+- massAiSearchMatrixGeneratedAt: "2026-06-13T15:18:32.823Z"
 - massAiSearchMatrixSummary: {"commandBoundaries":10,"deploymentBridgedThemes":6,"humanGatedItems":8,"items":8,"itemsReadyForHumanReviewPrep":8,"itemsWithCandidateFiles":8,"itemsWithHumanReviewActions":8,"itemsWithSearchSeeds":8,"itemsWithSourceTargets":8,"promptBlueprintSamples":10,"promptBridgedThemes":2,"sourceBroadThemes":10,"sourceTopThemes":8,"themesWithoutPublicCoverage":8,"trafficDataAvailable":false,"uniqueCandidateFiles":45,"unsafeItems":0,"waves":3}
-- popularAiPromptPlaybookGeneratedAt: "2026-06-13T10:13:18.018Z"
+- popularAiPromptPlaybookGeneratedAt: "2026-06-13T15:18:36.352Z"
 - popularAiPromptPlaybookSummary: {"agentDeploymentLanes":3,"broadWorkPromptLanes":3,"commandBoundaries":10,"deploymentBridgeItems":6,"humanGatedItems":10,"items":10,"itemsReadyForHumanReviewPrep":10,"itemsWithCandidateFiles":10,"itemsWithOfficialSources":10,"memoryLanes":1,"officialSources":12,"promptModuleBridgeItems":7,"promptTemplates":50,"publishConfirmCommandsIncluded":0,"searchQueries":127,"sourceTargets":22,"trafficDataAvailable":false,"uniqueCandidateFiles":21,"unsafeItems":0}
-- seoWarningGeneratedAt: "2026-06-13T10:13:04.578Z"
+- seoWarningGeneratedAt: "2026-06-13T15:18:20.817Z"
 - seoWarningSummary: {"blockingItems":0,"draftItems":8,"humanGatedItems":16,"items":16,"itemsWithHumanChecklist":16,"itemsWithManualActions":16,"publicItems":8,"recommendedItems":1,"schemaWarningItems":7,"snippetWarningItems":13,"trafficDataAvailable":false,"unsafeItems":0,"warningItems":16,"waveItems":1}
-- sourceReplacementGeneratedAt: "2026-06-13T10:13:23.544Z"
-- sourceReplacementSummary: {"affectedFiles":22,"failedDecisionItems":1,"humanGatedItems":114,"items":114,"itemsWithDecisionOptions":114,"itemsWithManualChecklist":114,"itemsWithRecommendedCandidate":1,"officialRecommendedCandidates":1,"redirectedDecisionItems":113,"replacementCandidateOptions":8,"sourceRemediationItems":19,"sourceRemediationUnsafeItems":0,"unsafeItems":0}
-- waveApprovalGeneratedAt: "2026-06-13T10:13:10.377Z"
+- sourceReplacementGeneratedAt: "2026-06-13T15:18:45.709Z"
+- sourceReplacementSummary: {"affectedFiles":22,"failedDecisionItems":1,"humanGatedItems":115,"items":115,"itemsWithDecisionOptions":115,"itemsWithManualChecklist":115,"itemsWithRecommendedCandidate":1,"officialRecommendedCandidates":1,"redirectedDecisionItems":114,"replacementCandidateOptions":8,"sourceRemediationItems":19,"sourceRemediationUnsafeItems":0,"unsafeItems":0}
+- waveApprovalGeneratedAt: "2026-06-13T15:18:27.518Z"
 - waveApprovalSummary: {"items":3,"readyForHumanReview":3,"unsafeItems":0,"wave":1}
-- wavePublishSimulationGeneratedAt: "2026-06-13T10:13:25.332Z"
+- wavePublishSimulationGeneratedAt: "2026-06-13T15:18:47.786Z"
 - wavePublishSimulationSummary: {"currentlyPublishable":0,"items":3,"projectedPublicPublishedAfterWave":18,"projectedPublishableAfterHumanApproval":3,"publicPublishedBeforeWave":15,"readyForHumanApproval":3,"unsafeItems":0,"wave":1}
 - trafficNote: "No measured traffic, rankings, impressions, clicks, or revenue data is available or claimed."
 

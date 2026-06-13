@@ -1,6 +1,6 @@
 # Public Coverage Gap Decision Pack
 
-Generated at: 2026-06-13T10:13:20.411Z
+Generated at: 2026-06-13T15:18:39.095Z
 
 This report is read-only. It turns public coverage gap preflight warnings into human review decisions and explicit command boundaries.
 
@@ -14,7 +14,7 @@ This report is read-only. It turns public coverage gap preflight warnings into h
 
 ## Source Evidence
 
-- Preflight generated at: 2026-06-13T10:13:19.977Z
+- Preflight generated at: 2026-06-13T15:18:38.599Z
 - Traffic note: Search seeds and link suggestions are editorial signals, not measured rankings, impressions, clicks, traffic, or income.
 - Preflight summary: {"blockingItems":0,"broadFirstCoverageItems":8,"broadFirstCoveragePreflightItems":8,"items":13,"planItems":8,"planReadyItems":8,"planUnsafeItems":0,"planWaves":4,"readyItems":13,"structuredDataReadyItems":13,"uniqueFiles":13,"warningItems":13,"withPublicLinkSuggestions":13,"withSeedMatches":12}
 
@@ -56,7 +56,7 @@ This report is read-only. It turns public coverage gap preflight warnings into h
 | 2 | human-review-ready-with-optimizations | medium | 3 | 0/3 | /blog/build-first-webpage-with-codex | 4 | Local and open-source model deployment | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 | 3 | human-review-ready-with-optimizations | medium | 2 | 0/3 | /blog/codex-code-review-delivery-checklist | 5 | Dify, n8n, Flowise, and no-code AI automation | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | 3 | human-review-ready-with-optimizations | medium | 2 | 0/2 | /blog/vercel-env-variable-missing-beginner-guide | 4 | Business AI workflows and SOP templates | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
-| 1 | human-review-ready-with-optimizations | medium | 10 | 0/5 | /blog/codex-code-review-delivery-checklist | 2 | 开源大模型部署：Ollama、vLLM、TGI、RunPod | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| 1 | human-review-ready-with-optimizations | medium | 10 | 0/5 | /blog/codex-vercel-deploy-preflight-checklist | 2 | 开源大模型部署：Ollama、vLLM、TGI、RunPod | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | 4 | human-review-ready-with-optimizations | low | 15 | 1/6 | /blog/codex-code-review-delivery-checklist | 2 | LLM evaluation, observability, and security | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | 2 | human-review-ready-with-optimizations | medium | 3 | 0/5 | /blog/build-first-webpage-with-codex | 3 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 | 2 | human-review-ready-with-optimizations | medium | 11 | 0/5 | /blog/build-first-webpage-with-codex | 4 | RAG、知识库、向量数据库和引用溯源 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
@@ -355,7 +355,7 @@ Commands after explicit approval:
 - Decision: human-review-ready-with-optimizations
 - Risk level: medium
 - Stop before: Stop before mark:review and stop before publish. Both require explicit human approval.
-- Public link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)
+- Public link suggestion: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist)
 
 Review focus:
 
@@ -379,7 +379,7 @@ Source targets:
 Suggested optimizations:
 
 - During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.
-- Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
+- Review the suggested public internal link before publishing: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).
 
 Human decision checklist:
 

@@ -1,6 +1,6 @@
 # Internal Link Opportunity Audit
 
-Generated at: 2026-06-13T10:13:01.674Z
+Generated at: 2026-06-13T15:18:17.469Z
 
 This report is read-only. It suggests public internal links for review candidates before any publishing action.
 
@@ -41,7 +41,7 @@ This report is read-only. It suggests public internal links for review candidate
 | broad-first-coverage, expansion | 1/3 | 5 | Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist) | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | broad-first-coverage, expansion, recommended, wave-1 | 0/4 | 5 | Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | broad-first-coverage, expansion, recommended, wave-1 | 0/5 | 5 | Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner) | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| broad-first-coverage, expansion | 0/6 | 5 | Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist) | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| broad-first-coverage, expansion | 0/6 | 5 | Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | broad-first-coverage | 0/3 | 5 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide) | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | broad-first-coverage | 0/5 | 5 | Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 
@@ -78,7 +78,7 @@ This report is read-only. It suggests public internal links for review candidate
 | expansion | 0/3 | 5 | Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | content/blog/gemini-api-rate-limit-debug-guide.mdx |
 | expansion | 0/3 | 5 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide) | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
 | broad-first-coverage, expansion, recommended, wave-1 | 0/5 | 5 | Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner) | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| broad-first-coverage, expansion | 0/6 | 5 | Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist) | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| broad-first-coverage, expansion | 0/6 | 5 | Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | expansion | 0/3 | 5 | Codex 安装失败怎么办 (/blog/codex-install-failed-beginner-fix) | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 | content/blog/local-llm-vram-not-enough-guide.mdx |
 | broad-first-coverage | 0/3 | 5 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide) | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | broad-first-coverage | 0/5 | 5 | Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |

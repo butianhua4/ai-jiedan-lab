@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:23.544Z",
+  "generatedAt": "2026-06-13T15:18:45.709Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "No measured traffic, rankings, clicks, impressions, or revenue are claimed."
   },
   "sourceEvidence": {
-    "remediationGeneratedAt": "2026-06-13T10:13:23.093Z",
+    "remediationGeneratedAt": "2026-06-13T15:18:45.206Z",
     "remediationGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -44,13 +44,13 @@
   "summary": {
     "affectedFiles": 22,
     "failedDecisionItems": 1,
-    "humanGatedItems": 114,
-    "items": 114,
-    "itemsWithDecisionOptions": 114,
-    "itemsWithManualChecklist": 114,
+    "humanGatedItems": 115,
+    "items": 115,
+    "itemsWithDecisionOptions": 115,
+    "itemsWithManualChecklist": 115,
     "itemsWithRecommendedCandidate": 1,
     "officialRecommendedCandidates": 1,
-    "redirectedDecisionItems": 113,
+    "redirectedDecisionItems": 114,
     "replacementCandidateOptions": 8,
     "sourceRemediationItems": 19,
     "sourceRemediationUnsafeItems": 0,
@@ -1188,11 +1188,11 @@
         "Keep the article draft/noindex/humanReviewRequired until approval."
       ],
       "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-      "finalUrl": "https://ai.google.dev/gemini-api/docs",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=fa",
       "kind": "redirected-url",
       "manualChecklist": [
         "Original URL: https://ai.google.dev/docs",
-        "Final URL: https://ai.google.dev/gemini-api/docs",
+        "Final URL: https://ai.google.dev/gemini-api/docs?hl=fa",
         "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
         "Confirm the replacement source covers the exact claim family.",
         "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
@@ -2423,6 +2423,38 @@
         "Keep the article draft/noindex/humanReviewRequired until approval."
       ],
       "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+      "finalUrl": "https://developers.openai.com/api/docs/guides/agents",
+      "kind": "redirected-url",
+      "manualChecklist": [
+        "Original URL: https://platform.openai.com/docs/guides/agents",
+        "Final URL: https://developers.openai.com/api/docs/guides/agents",
+        "Scopes: next-source-pack",
+        "Confirm the replacement source covers the exact claim family.",
+        "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+        "Use prompt-library sources only as market/category evidence.",
+        "Do not run mark:review or publish commands from this decision pack."
+      ],
+      "originalUrl": "https://platform.openai.com/docs/guides/agents",
+      "recommendedCandidate": null,
+      "referenceLabels": [
+        "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents"
+      ],
+      "scopes": [
+        "next-source-pack"
+      ],
+      "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+      "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
+      "unsafeReasons": []
+    },
+    {
+      "alternatives": [],
+      "decisionOptions": [
+        "Approve the redirected final URL as canonical if it is content-equivalent.",
+        "Replace the original URL with the final URL during human review if the redirect is stable.",
+        "Find a more specific official source if the redirect lands on a generic page.",
+        "Keep the article draft/noindex/humanReviewRequired until approval."
+      ],
+      "file": "content/blog/customer-service-ai-prompts-guide.mdx",
       "finalUrl": "https://developers.openai.com/api/docs/guides/prompt-engineering",
       "kind": "redirected-url",
       "manualChecklist": [
@@ -3324,11 +3356,11 @@
         "Keep the article draft/noindex/humanReviewRequired until approval."
       ],
       "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
-      "finalUrl": "https://ai.google.dev/gemini-api/docs",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=fa",
       "kind": "redirected-url",
       "manualChecklist": [
         "Original URL: https://ai.google.dev/docs",
-        "Final URL: https://ai.google.dev/gemini-api/docs",
+        "Final URL: https://ai.google.dev/gemini-api/docs?hl=fa",
         "Scopes: next-source-pack",
         "Confirm the replacement source covers the exact claim family.",
         "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",

@@ -1,6 +1,6 @@
 # Manual Review Workbench
 
-Generated at: 2026-06-13T10:13:41.966Z
+Generated at: 2026-06-13T15:19:07.222Z
 
 This workbench is read-only. It does not publish articles or mark drafts for review.
 
@@ -56,7 +56,7 @@ This workbench is read-only. It does not publish articles or mark drafts for rev
 - Official source targets: 2
 - Fact-check queries: 8
 - Human decision checks: 8
-- Risk checks: 6
+- Risk checks: 7
 
 ### 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
 
@@ -244,7 +244,7 @@ Next review files:
 
 | Date | Updated | Tags | Type | Difficulty | Issues | Warnings | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-06-06 | 2026-06-12 | AI Agent, Vercel AI SDK, 工具调用, AI 部署 | tutorial | intermediate | none | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 2026-06-06 | 2026-06-13 | AI Agent, Vercel AI SDK, 工具调用, AI 部署 | tutorial | intermediate | none | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 2026-06-06 | 2026-06-12 | 客服 AI, 模型选型, RAG, AI Agent | tutorial | beginner | none | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 2026-06-06 | 2026-06-12 | AI 提示词, 提示词模板, 行业 AI, SOP | tutorial | beginner | none | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 

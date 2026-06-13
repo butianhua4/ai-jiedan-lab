@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:38.482Z",
+  "generatedAt": "2026-06-13T15:19:03.154Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -10,7 +10,7 @@
   },
   "sourceEvidence": {
     "projectStatusPublicPublished": 15,
-    "triageGeneratedAt": "2026-06-13T10:13:38.049Z",
+    "triageGeneratedAt": "2026-06-13T15:19:02.644Z",
     "triageGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -154,7 +154,7 @@
         "reviewOrder": 1
       },
       {
-        "articleUpdatedAt": "2026-06-12",
+        "articleUpdatedAt": "2026-06-13",
         "cluster": "Agent 部署、工具调用和生产安全",
         "commandBoundary": {
           "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
@@ -470,7 +470,7 @@
           "reviewOrder": 1
         },
         {
-          "articleUpdatedAt": "2026-06-12",
+          "articleUpdatedAt": "2026-06-13",
           "cluster": "Agent 部署、工具调用和生产安全",
           "commandBoundary": {
             "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
@@ -1334,12 +1334,12 @@
       "commandBoundary": {
         "markReviewCommandsAfterHumanApproval": [
           "npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human",
-          "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+          "npm run mark:review -- --file=content/blog/data-analysis-ai-prompts-guide.mdx --confirm-human",
           "npm run mark:review -- --file=content/blog/n8n-ai-agent-webhook-production-guide.mdx --confirm-human"
         ],
         "publishDryRunAfterReview": [
           "npm run publish:articles -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-          "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "npm run publish:articles -- --file=content/blog/data-analysis-ai-prompts-guide.mdx",
           "npm run publish:articles -- --file=content/blog/n8n-ai-agent-webhook-production-guide.mdx"
         ],
         "publishConfirm": "not-included",
@@ -1352,7 +1352,7 @@
       ],
       "files": [
         "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-        "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "content/blog/data-analysis-ai-prompts-guide.mdx",
         "content/blog/n8n-ai-agent-webhook-production-guide.mdx"
       ],
       "humanApprovalRequired": true,
@@ -1445,11 +1445,11 @@
           "articleUpdatedAt": "2026-06-12",
           "cluster": "全行业 AI 提示词和工作流模板",
           "commandBoundary": {
-            "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
-            "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+            "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/data-analysis-ai-prompts-guide.mdx --confirm-human",
+            "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/data-analysis-ai-prompts-guide.mdx",
             "publishConfirm": "not-included"
           },
-          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
           "freshnessPriority": 421,
           "freshnessRisk": "high",
           "humanFactCheckChecklist": [
@@ -1458,12 +1458,12 @@
             "Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.",
             "Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.",
             "Rewrite or remove any unsupported fast-changing claim before running mark:review.",
-            "Verify freshness risk: fast-changing technical term: 模型.",
-            "Verify freshness risk: fast-changing technical term: 知识库.",
+            "Verify freshness risk: fast-changing technical term: api.",
+            "Verify freshness risk: fast-changing technical term: openai.",
             "Verify freshness risk: review-sensitive term: prompt.",
             "Verify freshness risk: review-sensitive term: 提示词.",
             "Verify freshness risk: review-sensitive term: 工具.",
-            "Verify freshness risk: review-sensitive term: 报价.",
+            "Verify freshness risk: review-sensitive term: 运营.",
             "Apply review focus: 避免空泛万能提示词，必须给输入字段、输出结构和质检标准.",
             "Apply review focus: 高风险行业必须保留专业判断和人工复核.",
             "Apply review focus: 不要承诺转化率、收入或法律/医疗结果.",
@@ -1478,13 +1478,12 @@
             "不要承诺转化率、收入或法律/医疗结果"
           ],
           "riskReasons": [
-            "fast-changing technical term: 模型",
-            "fast-changing technical term: 知识库",
+            "fast-changing technical term: api",
+            "fast-changing technical term: openai",
             "review-sensitive term: prompt",
             "review-sensitive term: 提示词",
             "review-sensitive term: 工具",
-            "review-sensitive term: 报价",
-            "review-sensitive term: 客服"
+            "review-sensitive term: 运营"
           ],
           "safeDraft": true,
           "searchQueries": [
@@ -1518,14 +1517,12 @@
           "sourceTargets": [
             "https://platform.openai.com/docs",
             "https://platform.openai.com/docs/guides/prompt-engineering",
-            "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
             "https://ai-sdk.dev/docs",
-            "https://platform.openai.com/docs/guides/retrieval",
             "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
             "https://sensara.io/prompts/",
             "https://www.mrprompts.ai/learn/ai-prompts-for-sales"
           ],
-          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+          "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
           "reviewOrder": 2
         },
         {
@@ -1637,13 +1634,13 @@
         "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag",
         "https://platform.openai.com/docs",
         "https://platform.openai.com/docs/guides/prompt-engineering",
-        "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
         "https://ai-sdk.dev/docs",
-        "https://platform.openai.com/docs/guides/retrieval",
         "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
         "https://sensara.io/prompts/",
         "https://www.mrprompts.ai/learn/ai-prompts-for-sales",
-        "https://docs.dify.ai/"
+        "https://docs.dify.ai/",
+        "https://docs.n8n.io/",
+        "https://modelcontextprotocol.io/docs"
       ],
       "theme": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres + 全行业 AI 提示词和工作流模板 + Dify、n8n、Coze、Flowise、MCP 自动化部署",
       "unsafeItems": 0,
@@ -1652,12 +1649,12 @@
     {
       "commandBoundary": {
         "markReviewCommandsAfterHumanApproval": [
-          "npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human",
+          "npm run mark:review -- --file=content/blog/helicone-llm-observability-guide.mdx --confirm-human",
           "npm run mark:review -- --file=content/blog/llm-api-rate-limit-retry-guide.mdx --confirm-human",
           "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human"
         ],
         "publishDryRunAfterReview": [
-          "npm run publish:articles -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx",
+          "npm run publish:articles -- --file=content/blog/helicone-llm-observability-guide.mdx",
           "npm run publish:articles -- --file=content/blog/llm-api-rate-limit-retry-guide.mdx",
           "npm run publish:articles -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx"
         ],
@@ -1670,21 +1667,21 @@
         "Agent 部署、工具调用和生产安全"
       ],
       "files": [
-        "content/blog/claude-api-rate-limit-debug-guide.mdx",
+        "content/blog/helicone-llm-observability-guide.mdx",
         "content/blog/llm-api-rate-limit-retry-guide.mdx",
         "content/blog/ai-automation-project-pricing-scope-guide.mdx"
       ],
       "humanApprovalRequired": true,
       "items": [
         {
-          "articleUpdatedAt": "2026-06-06",
+          "articleUpdatedAt": "2026-06-05",
           "cluster": "AI API 接入、限流、成本和多模型路由",
           "commandBoundary": {
-            "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human",
-            "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx",
+            "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/helicone-llm-observability-guide.mdx --confirm-human",
+            "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/helicone-llm-observability-guide.mdx",
             "publishConfirm": "not-included"
           },
-          "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+          "file": "content/blog/helicone-llm-observability-guide.mdx",
           "freshnessPriority": 403,
           "freshnessRisk": "high",
           "humanFactCheckChecklist": [
@@ -1698,10 +1695,8 @@
             "Apply review focus: 必须强调密钥安全、服务端代理和日志脱敏.",
             "Apply review focus: 不要虚构价格或模型能力.",
             "Open source target and verify current guidance: https://platform.openai.com/docs.",
-            "Open source target and verify current guidance: https://docs.anthropic.com.",
-            "Open source target and verify current guidance: https://platform.openai.com/docs/guides/agents.",
-            "Open source target and verify current guidance: https://ai-sdk.dev/docs.",
-            "Open source target and verify current guidance: https://platform.openai.com/docs/guides/retrieval."
+            "Open source target and verify current guidance: https://docs.anthropic.com/.",
+            "Open source target and verify current guidance: https://vercel.com/docs/ai-gateway."
           ],
           "publicMatches": 0,
           "readyForHumanFreshnessReview": true,
@@ -1743,15 +1738,10 @@
           ],
           "sourceTargets": [
             "https://platform.openai.com/docs",
-            "https://docs.anthropic.com",
-            "https://platform.openai.com/docs/guides/agents",
-            "https://ai-sdk.dev/docs",
-            "https://platform.openai.com/docs/guides/retrieval",
-            "https://platform.openai.com/docs/guides/prompt-engineering",
             "https://docs.anthropic.com/",
             "https://vercel.com/docs/ai-gateway"
           ],
-          "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+          "title": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住",
           "reviewOrder": 1
         },
         {
@@ -1955,17 +1945,17 @@
       ],
       "sourceTargets": [
         "https://platform.openai.com/docs",
-        "https://docs.anthropic.com",
-        "https://platform.openai.com/docs/guides/agents",
-        "https://ai-sdk.dev/docs",
-        "https://platform.openai.com/docs/guides/retrieval",
-        "https://platform.openai.com/docs/guides/prompt-engineering",
         "https://docs.anthropic.com/",
         "https://vercel.com/docs/ai-gateway",
         "https://docs.runpod.io/serverless/vllm/get-started",
         "https://www.runpod.io/articles/guides/deploy-vllm-runpod-docker",
         "https://www.spheron.network/blog/llm-deployment-guide/",
-        "https://docs.dify.ai"
+        "https://docs.dify.ai",
+        "https://docs.n8n.io",
+        "https://platform.openai.com/docs/guides/retrieval",
+        "https://python.langchain.com/docs",
+        "https://docs.llamaindex.ai",
+        "https://huggingface.co/docs"
       ],
       "theme": "AI API 接入、限流、成本和多模型路由 + 开源大模型部署：Ollama、vLLM、TGI、RunPod + Agent 部署、工具调用和生产安全",
       "unsafeItems": 0,
@@ -1975,12 +1965,12 @@
       "commandBoundary": {
         "markReviewCommandsAfterHumanApproval": [
           "npm run mark:review -- --file=content/blog/open-webui-functions-pipelines-deployment-guide.mdx --confirm-human",
-          "npm run mark:review -- --file=content/blog/helicone-llm-observability-guide.mdx --confirm-human",
+          "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
           "npm run mark:review -- --file=content/blog/llm-cost-monitoring-dashboard-guide.mdx --confirm-human"
         ],
         "publishDryRunAfterReview": [
           "npm run publish:articles -- --file=content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
-          "npm run publish:articles -- --file=content/blog/helicone-llm-observability-guide.mdx",
+          "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
           "npm run publish:articles -- --file=content/blog/llm-cost-monitoring-dashboard-guide.mdx"
         ],
         "publishConfirm": "not-included",
@@ -1988,12 +1978,12 @@
       },
       "clusters": [
         "Agent 记忆：短期记忆、长期记忆、RAG、Postgres",
-        "AI API 接入、限流、成本和多模型路由",
+        "全行业 AI 提示词和工作流模板",
         "开源大模型部署：Ollama、vLLM、TGI、RunPod"
       ],
       "files": [
         "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
-        "content/blog/helicone-llm-observability-guide.mdx",
+        "content/blog/industry-ai-prompts-template-library-2026.mdx",
         "content/blog/llm-cost-monitoring-dashboard-guide.mdx"
       ],
       "humanApprovalRequired": true,
@@ -2092,15 +2082,15 @@
           "reviewOrder": 1
         },
         {
-          "articleUpdatedAt": "2026-06-05",
-          "cluster": "AI API 接入、限流、成本和多模型路由",
+          "articleUpdatedAt": "2026-06-12",
+          "cluster": "全行业 AI 提示词和工作流模板",
           "commandBoundary": {
-            "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/helicone-llm-observability-guide.mdx --confirm-human",
-            "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/helicone-llm-observability-guide.mdx",
+            "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+            "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
             "publishConfirm": "not-included"
           },
-          "file": "content/blog/helicone-llm-observability-guide.mdx",
-          "freshnessPriority": 403,
+          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "freshnessPriority": 421,
           "freshnessRisk": "high",
           "humanFactCheckChecklist": [
             "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
@@ -2108,58 +2098,76 @@
             "Check that pricing, quota, latency, benchmark, ranking, traffic, and revenue language is absent unless backed by current evidence.",
             "Confirm every Agent, tool-calling, memory, RAG, automation, or prompt workflow keeps a human review boundary.",
             "Rewrite or remove any unsupported fast-changing claim before running mark:review.",
-            "Verify freshness risk: fast-changing broad-demand term: api.",
-            "Apply review focus: 核对 SDK 名称、API endpoint、限流概念和错误码.",
-            "Apply review focus: 必须强调密钥安全、服务端代理和日志脱敏.",
-            "Apply review focus: 不要虚构价格或模型能力.",
+            "Verify freshness risk: fast-changing technical term: api.",
+            "Verify freshness risk: fast-changing technical term: openai.",
+            "Verify freshness risk: fast-changing technical term: 模型.",
+            "Verify freshness risk: fast-changing technical term: 知识库.",
+            "Verify freshness risk: review-sensitive term: prompt.",
+            "Verify freshness risk: review-sensitive term: 提示词.",
+            "Apply review focus: 避免空泛万能提示词，必须给输入字段、输出结构和质检标准.",
+            "Apply review focus: 高风险行业必须保留专业判断和人工复核.",
+            "Apply review focus: 不要承诺转化率、收入或法律/医疗结果.",
             "Open source target and verify current guidance: https://platform.openai.com/docs.",
-            "Open source target and verify current guidance: https://docs.anthropic.com/.",
-            "Open source target and verify current guidance: https://vercel.com/docs/ai-gateway."
+            "Open source target and verify current guidance: https://platform.openai.com/docs/guides/prompt-engineering."
           ],
           "publicMatches": 0,
           "readyForHumanFreshnessReview": true,
           "reviewFocus": [
-            "核对 SDK 名称、API endpoint、限流概念和错误码",
-            "必须强调密钥安全、服务端代理和日志脱敏",
-            "不要虚构价格或模型能力"
+            "避免空泛万能提示词，必须给输入字段、输出结构和质检标准",
+            "高风险行业必须保留专业判断和人工复核",
+            "不要承诺转化率、收入或法律/医疗结果"
           ],
           "riskReasons": [
-            "fast-changing broad-demand term: api"
+            "fast-changing technical term: api",
+            "fast-changing technical term: openai",
+            "fast-changing technical term: 模型",
+            "fast-changing technical term: 知识库",
+            "review-sensitive term: prompt",
+            "review-sensitive term: 提示词",
+            "review-sensitive term: 工具",
+            "review-sensitive term: 报价",
+            "review-sensitive term: 客服"
           ],
           "safeDraft": true,
           "searchQueries": [
-            "OpenAI API 接入教程",
-            "Claude API rate limit",
-            "Gemini API 限流",
-            "OpenRouter API 教程",
-            "AI API key 安全"
+            "AI 提示词大全",
+            "销售 AI 提示词",
+            "客服 AI 提示词",
+            "HR AI 提示词",
+            "运营 AI 提示词",
+            "企业 AI 提示词模板"
           ],
           "sourceSignals": [
             {
-              "note": "OpenAI API 文档是模型、responses、tool calling 和 key 管理的事实源。",
-              "title": "OpenAI API documentation",
-              "type": "official-doc",
-              "url": "https://platform.openai.com/docs"
+              "note": "2026 商业提示词搜索结果集中覆盖 sales、marketing、support、HR、operations 等岗位。",
+              "title": "AI Prompt Templates for Business",
+              "type": "search-result",
+              "url": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business"
             },
             {
-              "note": "Anthropic 文档可核对 Claude API、rate limit 和 SDK 细节。",
-              "title": "Anthropic Claude API documentation",
-              "type": "official-doc",
-              "url": "https://docs.anthropic.com/"
+              "note": "提示词库类页面通常按业务职能分类，说明“全行业/全岗位”入口值得做集合页。",
+              "title": "Business Prompt Templates",
+              "type": "search-result",
+              "url": "https://sensara.io/prompts/"
             },
             {
-              "note": "Vercel AI Gateway 和多 provider 路由适合做成本、fallback、可观测性专题。",
-              "title": "Vercel AI Gateway",
-              "type": "official-doc",
-              "url": "https://vercel.com/docs/ai-gateway"
+              "note": "销售提示词结果强调 discovery call brief、客户痛点和 follow-up，适合做可交付工作流。",
+              "title": "AI Prompts for Sales",
+              "type": "search-result",
+              "url": "https://www.mrprompts.ai/learn/ai-prompts-for-sales"
             }
           ],
           "sourceTargets": [
             "https://platform.openai.com/docs",
-            "https://docs.anthropic.com/",
-            "https://vercel.com/docs/ai-gateway"
+            "https://platform.openai.com/docs/guides/prompt-engineering",
+            "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+            "https://ai-sdk.dev/docs",
+            "https://platform.openai.com/docs/guides/retrieval",
+            "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
+            "https://sensara.io/prompts/",
+            "https://www.mrprompts.ai/learn/ai-prompts-for-sales"
           ],
-          "title": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住",
+          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
           "reviewOrder": 2
         },
         {
@@ -2242,9 +2250,9 @@
         "区分知识库 RAG 和用户记忆",
         "必须有隐私、删除、去重、引用和人工纠错边界",
         "避免宣称记忆层能自动解决幻觉",
-        "核对 SDK 名称、API endpoint、限流概念和错误码",
-        "必须强调密钥安全、服务端代理和日志脱敏",
-        "不要虚构价格或模型能力",
+        "避免空泛万能提示词，必须给输入字段、输出结构和质检标准",
+        "高风险行业必须保留专业判断和人工复核",
+        "不要承诺转化率、收入或法律/医疗结果",
         "核对部署命令、模型名称、GPU/显存要求、API 路径和版本差异",
         "不要承诺本地部署一定更省钱或更稳定",
         "必须包含 smoke check、回滚、日志、限流和成本边界"
@@ -2255,13 +2263,13 @@
         "AI Agent 长期记忆",
         "pgvector Agent memory",
         "RAG 和记忆区别",
-        "OpenAI API 接入教程",
-        "Claude API rate limit",
-        "Gemini API 限流",
-        "OpenRouter API 教程",
-        "AI API key 安全",
-        "大模型部署教程",
-        "Ollama 本地部署教程"
+        "AI 提示词大全",
+        "销售 AI 提示词",
+        "客服 AI 提示词",
+        "HR AI 提示词",
+        "运营 AI 提示词",
+        "企业 AI 提示词模板",
+        "大模型部署教程"
       ],
       "sourceTargets": [
         "https://docs.ollama.com",
@@ -2277,7 +2285,7 @@
         "https://www.reddit.com/r/Rag/comments/1qjvqd4/vector_dbs_arent_memory_learned_this_the_hard_way/",
         "https://docs.agenticgokit.com/tutorials/getting-started/memory-and-rag"
       ],
-      "theme": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres + AI API 接入、限流、成本和多模型路由 + 开源大模型部署：Ollama、vLLM、TGI、RunPod",
+      "theme": "Agent 记忆：短期记忆、长期记忆、RAG、Postgres + 全行业 AI 提示词和工作流模板 + 开源大模型部署：Ollama、vLLM、TGI、RunPod",
       "unsafeItems": 0,
       "wave": 6
     },
@@ -2463,7 +2471,7 @@
           "reviewOrder": 2
         },
         {
-          "articleUpdatedAt": "2026-06-12",
+          "articleUpdatedAt": "2026-06-13",
           "cluster": "开源大模型部署：Ollama、vLLM、TGI、RunPod",
           "commandBoundary": {
             "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",

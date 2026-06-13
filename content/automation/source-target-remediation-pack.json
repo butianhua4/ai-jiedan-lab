@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:23.093Z",
+  "generatedAt": "2026-06-13T15:18:45.206Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "sourceHealthGeneratedAt": "2026-06-13T10:13:22.653Z",
+    "sourceHealthGeneratedAt": "2026-06-13T15:18:44.700Z",
     "sourceHealthGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -30,7 +30,7 @@
       "okUrls": 39,
       "publicGapDecisionFiles": 13,
       "redirectedUrls": 18,
-      "sourceReferences": 266,
+      "sourceReferences": 267,
       "uniqueUrls": 40
     }
   },
@@ -1382,7 +1382,8 @@
         "content/blog/dify-workflow-vs-agent-guide.mdx",
         "content/blog/local-llm-vram-not-enough-guide.mdx",
         "content/blog/claude-api-rate-limit-debug-guide.mdx",
-        "content/blog/gemini-api-rate-limit-debug-guide.mdx"
+        "content/blog/gemini-api-rate-limit-debug-guide.mdx",
+        "content/blog/customer-service-ai-prompts-guide.mdx"
       ],
       "affectedScopes": [
         "public-gap-decision",
@@ -1400,7 +1401,8 @@
         "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
         "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
         "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
-        "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型"
+        "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+        "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断"
       ],
       "finalUrl": "https://developers.openai.com/api/docs/guides/agents",
       "humanChecklist": [
@@ -1425,7 +1427,7 @@
         "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
       ],
       "manualFixReady": true,
-      "referenceCount": 21,
+      "referenceCount": 22,
       "references": [
         {
           "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
@@ -1544,6 +1546,13 @@
           "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "scope": "next-source-pack",
           "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+          "url": "https://platform.openai.com/docs/guides/agents"
+        },
+        {
+          "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+          "label": "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+          "scope": "next-source-pack",
+          "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
           "url": "https://platform.openai.com/docs/guides/agents"
         },
         {
@@ -1993,7 +2002,7 @@
       "humanChecklist": [
         "Review URL: https://docs.vllm.ai.",
         "Review final URL: https://docs.vllm.ai/en/latest/.",
-        "HTTP status observed by automation: 429.",
+        "HTTP status observed by automation: 200.",
         "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
         "If the final URL is the canonical destination, update the source target during human review.",
         "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
@@ -2070,7 +2079,7 @@
         "Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
         "Replace the source if the redirect weakens specificity or points to a general landing page."
       ],
-      "status": 429,
+      "status": 200,
       "stopBefore": "Stop before human approval until a reviewer confirms the final redirected URL is canonical and content-equivalent.",
       "unsafeReasons": [],
       "url": "https://docs.vllm.ai"
@@ -2265,10 +2274,10 @@
         "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
         "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型"
       ],
-      "finalUrl": "https://ai.google.dev/gemini-api/docs",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=fa",
       "humanChecklist": [
         "Review URL: https://ai.google.dev/docs.",
-        "Review final URL: https://ai.google.dev/gemini-api/docs.",
+        "Review final URL: https://ai.google.dev/gemini-api/docs?hl=fa.",
         "HTTP status observed by automation: 200.",
         "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
         "If the final URL is the canonical destination, update the source target during human review.",

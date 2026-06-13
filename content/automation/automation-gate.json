@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:14:00.001Z",
+  "generatedAt": "2026-06-13T15:19:24.945Z",
   "ok": true,
   "summary": {
     "checks": 197,
@@ -195,12 +195,12 @@
     {
       "name": "source replacement decision pack is read-only and mirrors remediation counts",
       "ok": true,
-      "detail": "decisions=114, remediation=19, failed=1/1, redirected=113/18"
+      "detail": "decisions=115, remediation=19, failed=1/1, redirected=114/18"
     },
     {
       "name": "source replacement decision pack keeps file-level decisions human-gated",
       "ok": true,
-      "detail": "unsafe=0, gated=114, recommended=1, official=1"
+      "detail": "unsafe=0, gated=115, recommended=1, official=1"
     },
     {
       "name": "review action board is read-only and covers active review queues",
@@ -810,7 +810,7 @@
     {
       "name": "content freshness check covers review items",
       "ok": true,
-      "detail": "highRisk=570, currentReviewItems=3, plannedReviewItems=9"
+      "detail": "highRisk=573, currentReviewItems=3, plannedReviewItems=9"
     },
     {
       "name": "review freshness brief is read-only and covers unique action-board files",

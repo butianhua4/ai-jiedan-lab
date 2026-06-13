@@ -1,6 +1,6 @@
 # Autopilot Source Verification Brief
 
-Generated at: 2026-06-13T10:13:32.162Z
+Generated at: 2026-06-13T15:18:55.790Z
 
 This report is read-only. It packages source verification work for the top autopilot approval packet items.
 
@@ -33,7 +33,7 @@ This report is read-only. It packages source verification work for the top autop
 
 ## Source Evidence
 
-- Source health summary: {"checkedUrls":40,"broadFirstCoverageFiles":8,"currentReviewFiles":3,"failedUrls":1,"filesCovered":23,"filesWithReachableSource":23,"filesWithoutReachableSource":0,"missingUrlTargets":0,"nextSourcePackFiles":19,"okUrls":39,"publicGapDecisionFiles":13,"redirectedUrls":18,"sourceReferences":266,"uniqueUrls":40}
+- Source health summary: {"checkedUrls":40,"broadFirstCoverageFiles":8,"currentReviewFiles":3,"failedUrls":1,"filesCovered":23,"filesWithReachableSource":23,"filesWithoutReachableSource":0,"missingUrlTargets":0,"nextSourcePackFiles":19,"okUrls":39,"publicGapDecisionFiles":13,"redirectedUrls":18,"sourceReferences":267,"uniqueUrls":40}
 - Packet unsafe items: 0
 
 ## Unsafe Items
@@ -45,7 +45,7 @@ This report is read-only. It packages source verification work for the top autop
 | Ready | Safe | Reachable sources | Official sources | Fact checks | Approval checks | Risk checks | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | true | 8 | 14 | 24 | 15 | 10 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | true | 7 | 18 | 25 | 15 | 10 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | true | 7 | 18 | 25 | 15 | 11 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | true | true | 11 | 20 | 18 | 15 | 12 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 
 ## Per-Item Verification Tasks

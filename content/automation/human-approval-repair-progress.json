@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:34.729Z",
+  "generatedAt": "2026-06-13T15:18:58.760Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -197,7 +197,7 @@
             "factCheckQueries": 25,
             "reachableSources": 7,
             "readyForHumanReview": true,
-            "riskChecks": 10
+            "riskChecks": 11
           },
           "nextAction": "Human reviewer verifies fast-changing claims against the listed sources.",
           "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",

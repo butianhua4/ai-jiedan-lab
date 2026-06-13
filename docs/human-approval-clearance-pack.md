@@ -1,6 +1,6 @@
 # Human Approval Clearance Pack
 
-Generated at: 2026-06-13T10:13:41.099Z
+Generated at: 2026-06-13T15:19:06.204Z
 
 This report is read-only. It consolidates the source, SEO, copydesk, and link checks needed before a human reviewer approves any mark:review action.
 
@@ -141,7 +141,7 @@ This report is read-only. It consolidates the source, SEO, copydesk, and link ch
 - Confirm the draft still answers one clear search intent.
 - Verify source-backed claims before any status change.
 - Keep status=draft, noindex=true, and humanReviewRequired=true until approval.
-- Review public internal link suggestion: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).
+- Review public internal link suggestion: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).
 - Review proposed meta description from copydesk brief before approval.
 - Run mark:review only after explicit human approval; publish confirm remains excluded.
 

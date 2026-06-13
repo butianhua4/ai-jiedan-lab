@@ -1,6 +1,6 @@
 # Next Review Source Pack
 
-Generated at: 2026-06-13T10:13:09.483Z
+Generated at: 2026-06-13T15:18:26.475Z
 
 This pack is read-only. It prepares official-source, fact-check, approval, and risk-review work for the roadmap's next review files.
 
@@ -43,7 +43,7 @@ This pack is read-only. It prepares official-source, fact-check, approval, and r
 | true | false | false | 100 | 9 | 8 | 6 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | true | false | false | 100 | 6 | 8 | 5 | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
 | true | false | false | 100 | 6 | 8 | 5 | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | content/blog/gemini-api-rate-limit-debug-guide.mdx |
-| true | false | false | 100 | 8 | 8 | 6 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
+| true | false | false | 100 | 9 | 8 | 7 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
 | true | false | false | 100 | 8 | 8 | 5 | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
 
 ## AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界
@@ -263,7 +263,7 @@ Workflow angles:
 - Status: draft
 - Safe draft: true
 - Source notes present: true
-- Chinese chars: 1540
+- Chinese chars: 2186
 - Internal links: 6
 
 Approval checklist:
@@ -326,7 +326,7 @@ Workflow angles:
 - Status: draft
 - Safe draft: true
 - Source notes present: true
-- Chinese chars: 1862
+- Chinese chars: 2332
 - Internal links: 6
 
 Approval checklist:
@@ -447,7 +447,7 @@ Workflow angles:
 - Status: draft
 - Safe draft: true
 - Source notes present: true
-- Chinese chars: 1229
+- Chinese chars: 1524
 - Internal links: 3
 
 Approval checklist:
@@ -885,7 +885,7 @@ Workflow angles:
 - Status: draft
 - Safe draft: true
 - Source notes present: true
-- Chinese chars: 1537
+- Chinese chars: 2338
 - Internal links: 6
 
 Approval checklist:
@@ -1139,7 +1139,7 @@ Workflow angles:
 - Status: draft
 - Safe draft: true
 - Source notes present: true
-- Chinese chars: 1212
+- Chinese chars: 1745
 - Internal links: 3
 
 Approval checklist:
@@ -1161,6 +1161,7 @@ Official source targets:
 - Google Gemini Workspace prompting: https://support.google.com/docs/answer/15013615
 - Microsoft Copilot prompt gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/
 - OpenAI API docs: https://platform.openai.com/docs
+- OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
 - OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
 - OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 
@@ -1181,6 +1182,7 @@ Risk review checklist:
 - No instruction to bypass platform, payment, messaging, account, or review rules.
 - No API key, credential, private customer data, or account detail is included.
 - Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.
+- Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.
 - RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.
 - Prompt examples include input context, output criteria, review rules, and adaptation notes.
 
@@ -1203,7 +1205,7 @@ Workflow angles:
 - Status: draft
 - Safe draft: true
 - Source notes present: true
-- Chinese chars: 1250
+- Chinese chars: 1645
 - Internal links: 3
 
 Approval checklist:

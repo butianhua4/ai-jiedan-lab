@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:39.356Z",
+  "generatedAt": "2026-06-13T15:19:04.172Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "broadWaveOptimizationGeneratedAt": "2026-06-13T10:13:38.920Z",
+    "broadWaveOptimizationGeneratedAt": "2026-06-13T15:19:03.655Z",
     "broadWaveOptimizationGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -75,14 +75,14 @@
     {
       "items": 3,
       "manualFixReadyItems": 3,
-      "missingSpecificLinkSuggestionItems": 1,
+      "missingSpecificLinkSuggestionItems": 2,
       "unsafeItems": 0,
       "wave": 5
     },
     {
       "items": 3,
       "manualFixReadyItems": 3,
-      "missingSpecificLinkSuggestionItems": 2,
+      "missingSpecificLinkSuggestionItems": 1,
       "unsafeItems": 0,
       "wave": 6
     },
@@ -887,11 +887,11 @@
     },
     {
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/data-analysis-ai-prompts-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/data-analysis-ai-prompts-guide.mdx",
         "publishConfirm": "not-included"
       },
-      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
       "humanChecklist": [
         "Review reason: broad AI wave item needs human remediation before approval.",
         "Review reason: specific public internal-link suggestion needs human acceptance or rejection.",
@@ -902,17 +902,17 @@
         "Open source targets or run equivalent source checks before mark:review.",
         "Choose, apply, or explicitly reject the public internal-link plan before mark:review.",
         "Resolve warning and risk checks before mark:review.",
-        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/data-analysis-ai-prompts-guide.mdx --confirm-human",
         "Publishing remains a separate explicit approval step."
       ],
       "internalLinkFixes": [
-        "Use suggested public link: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner).",
+        "Use suggested public link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
         "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
         "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
       ],
       "manualFixReady": true,
       "publicLinkPlan": [
-        "Use suggested public link: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner)."
+        "Use suggested public link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)."
       ],
       "remediationReasons": [
         "broad AI wave item needs human remediation before approval",
@@ -948,15 +948,13 @@
       "sourceChecks": [
         "Verify implementation-sensitive claims against source: https://platform.openai.com/docs.",
         "Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/prompt-engineering.",
-        "Verify implementation-sensitive claims against source: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview.",
         "Verify implementation-sensitive claims against source: https://ai-sdk.dev/docs.",
-        "Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/retrieval.",
         "Verify implementation-sensitive claims against source: https://ai-prompts-pro.com/blog/ai-prompt-templates-business.",
         "Verify implementation-sensitive claims against source: https://sensara.io/prompts/.",
         "Verify implementation-sensitive claims against source: https://www.mrprompts.ai/learn/ai-prompts-for-sales.",
         "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources."
       ],
-      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
       "unsafeReasons": [],
       "warningFixes": [
         "Meta description is short; rewrite it before approval.",
@@ -1045,14 +1043,14 @@
     },
     {
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/helicone-llm-observability-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/helicone-llm-observability-guide.mdx",
         "publishConfirm": "not-included"
       },
-      "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+      "file": "content/blog/helicone-llm-observability-guide.mdx",
       "humanChecklist": [
         "Review reason: broad AI wave item needs human remediation before approval.",
-        "Review reason: specific public internal-link suggestion needs human acceptance or rejection.",
+        "Review reason: missing specific public internal-link suggestion needs human choice.",
         "Review reason: warning remediation needs human sign-off.",
         "Review reason: search-intent wording needs human copy review.",
         "Review reason: source evidence needs human verification.",
@@ -1060,21 +1058,27 @@
         "Open source targets or run equivalent source checks before mark:review.",
         "Choose, apply, or explicitly reject the public internal-link plan before mark:review.",
         "Resolve warning and risk checks before mark:review.",
-        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/claude-api-rate-limit-debug-guide.mdx --confirm-human",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/helicone-llm-observability-guide.mdx --confirm-human",
         "Publishing remains a separate explicit approval step."
       ],
       "internalLinkFixes": [
-        "Use suggested public link: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide).",
+        "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
+        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
+        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).",
         "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
         "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
       ],
       "manualFixReady": true,
       "publicLinkPlan": [
-        "Use suggested public link: Vercel 提示环境变量缺失怎么办：新手部署检查流程 (/blog/vercel-env-variable-missing-beginner-guide)."
+        "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
+        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
+        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide)."
       ],
       "remediationReasons": [
         "broad AI wave item needs human remediation before approval",
-        "specific public internal-link suggestion needs human acceptance or rejection",
+        "missing specific public internal-link suggestion needs human choice",
         "warning remediation needs human sign-off",
         "search-intent wording needs human copy review",
         "source evidence needs human verification"
@@ -1083,8 +1087,6 @@
         "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
         "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
         "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
-        "Meta description is short; rewrite it before approval.",
-        "No current link to published articles; add one approved contextual public link.",
         "Freshness risk is high; all implementation-sensitive claims need current source checks.",
         "Reject unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims."
       ],
@@ -1104,20 +1106,13 @@
       ],
       "sourceChecks": [
         "Verify implementation-sensitive claims against source: https://platform.openai.com/docs.",
-        "Verify implementation-sensitive claims against source: https://docs.anthropic.com.",
-        "Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/agents.",
-        "Verify implementation-sensitive claims against source: https://ai-sdk.dev/docs.",
-        "Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/retrieval.",
-        "Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/prompt-engineering.",
         "Verify implementation-sensitive claims against source: https://docs.anthropic.com/.",
         "Verify implementation-sensitive claims against source: https://vercel.com/docs/ai-gateway.",
         "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources."
       ],
-      "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+      "title": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住",
       "unsafeReasons": [],
       "warningFixes": [
-        "Meta description is short; rewrite it before approval.",
-        "No current link to published articles; add one approved contextual public link.",
         "Freshness risk is high; all implementation-sensitive claims need current source checks."
       ],
       "wave": 5
@@ -1366,14 +1361,14 @@
     },
     {
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/helicone-llm-observability-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/helicone-llm-observability-guide.mdx",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
         "publishConfirm": "not-included"
       },
-      "file": "content/blog/helicone-llm-observability-guide.mdx",
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
       "humanChecklist": [
         "Review reason: broad AI wave item needs human remediation before approval.",
-        "Review reason: missing specific public internal-link suggestion needs human choice.",
+        "Review reason: specific public internal-link suggestion needs human acceptance or rejection.",
         "Review reason: warning remediation needs human sign-off.",
         "Review reason: search-intent wording needs human copy review.",
         "Review reason: source evidence needs human verification.",
@@ -1381,27 +1376,21 @@
         "Open source targets or run equivalent source checks before mark:review.",
         "Choose, apply, or explicitly reject the public internal-link plan before mark:review.",
         "Resolve warning and risk checks before mark:review.",
-        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/helicone-llm-observability-guide.mdx --confirm-human",
+        "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
         "Publishing remains a separate explicit approval step."
       ],
       "internalLinkFixes": [
-        "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide).",
+        "Use suggested public link: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner).",
         "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
         "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
       ],
       "manualFixReady": true,
       "publicLinkPlan": [
-        "No specific public link suggestion exists; human reviewer must choose a relevant published article or explicitly reject public linking for this draft.",
-        "Fallback public link candidate: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Fallback public link candidate: Codex 生成代码后怎么审核 (/blog/codex-generated-code-review-guide)."
+        "Use suggested public link: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner)."
       ],
       "remediationReasons": [
         "broad AI wave item needs human remediation before approval",
-        "missing specific public internal-link suggestion needs human choice",
+        "specific public internal-link suggestion needs human acceptance or rejection",
         "warning remediation needs human sign-off",
         "search-intent wording needs human copy review",
         "source evidence needs human verification"
@@ -1410,32 +1399,42 @@
         "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
         "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
         "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
+        "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
         "Freshness risk is high; all implementation-sensitive claims need current source checks.",
         "Reject unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims."
       ],
       "searchFixes": [
-        "Make the title and first paragraph answer this search intent explicitly: OpenAI API 接入教程.",
+        "Make the title and first paragraph answer this search intent explicitly: AI 提示词大全.",
         "Keep the meta description focused on audience, workflow, risk boundary, and review outcome.",
         "Add one exact or near-exact search query naturally in the opening or first H2.",
-        "Check search phrasing coverage: OpenAI API 接入教程.",
-        "Check search phrasing coverage: Claude API rate limit.",
-        "Check search phrasing coverage: Gemini API 限流.",
-        "Check search phrasing coverage: OpenRouter API 教程.",
-        "Confirm article naturally answers search query: OpenAI API 接入教程.",
-        "Confirm article naturally answers search query: Claude API rate limit.",
-        "Confirm article naturally answers search query: Gemini API 限流.",
-        "Confirm article naturally answers search query: OpenRouter API 教程.",
-        "Confirm article naturally answers search query: AI API key 安全."
+        "Check search phrasing coverage: AI 提示词大全.",
+        "Check search phrasing coverage: 销售 AI 提示词.",
+        "Check search phrasing coverage: 客服 AI 提示词.",
+        "Check search phrasing coverage: HR AI 提示词.",
+        "Confirm article naturally answers search query: AI 提示词大全.",
+        "Confirm article naturally answers search query: 销售 AI 提示词.",
+        "Confirm article naturally answers search query: 客服 AI 提示词.",
+        "Confirm article naturally answers search query: HR AI 提示词.",
+        "Confirm article naturally answers search query: 运营 AI 提示词.",
+        "Confirm article naturally answers search query: 企业 AI 提示词模板."
       ],
       "sourceChecks": [
         "Verify implementation-sensitive claims against source: https://platform.openai.com/docs.",
-        "Verify implementation-sensitive claims against source: https://docs.anthropic.com/.",
-        "Verify implementation-sensitive claims against source: https://vercel.com/docs/ai-gateway.",
+        "Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/prompt-engineering.",
+        "Verify implementation-sensitive claims against source: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview.",
+        "Verify implementation-sensitive claims against source: https://ai-sdk.dev/docs.",
+        "Verify implementation-sensitive claims against source: https://platform.openai.com/docs/guides/retrieval.",
+        "Verify implementation-sensitive claims against source: https://ai-prompts-pro.com/blog/ai-prompt-templates-business.",
+        "Verify implementation-sensitive claims against source: https://sensara.io/prompts/.",
+        "Verify implementation-sensitive claims against source: https://www.mrprompts.ai/learn/ai-prompts-for-sales.",
         "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources."
       ],
-      "title": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住",
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
       "unsafeReasons": [],
       "warningFixes": [
+        "Meta description is short; rewrite it before approval.",
+        "No current link to published articles; add one approved contextual public link.",
         "Freshness risk is high; all implementation-sensitive claims need current source checks."
       ],
       "wave": 6
@@ -1697,13 +1696,13 @@
         "Publishing remains a separate explicit approval step."
       ],
       "internalLinkFixes": [
-        "Use suggested public link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
+        "Use suggested public link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).",
         "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
         "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
       ],
       "manualFixReady": true,
       "publicLinkPlan": [
-        "Use suggested public link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)."
+        "Use suggested public link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist)."
       ],
       "remediationReasons": [
         "broad AI wave item needs human remediation before approval",

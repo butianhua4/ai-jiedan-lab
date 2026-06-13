@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T10:13:04.150Z",
+  "generatedAt": "2026-06-13T15:18:20.317Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -969,7 +969,7 @@
           "@type": "Organization",
           "name": "AI 工具指南"
         },
-        "dateModified": "2026-06-12",
+        "dateModified": "2026-06-13",
         "datePublished": "2026-06-06",
         "description": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
         "headline": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
@@ -993,7 +993,7 @@
         "AI 部署"
       ],
       "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "updatedAt": "2026-06-12",
+      "updatedAt": "2026-06-13",
       "warnings": []
     },
     {
@@ -1100,7 +1100,7 @@
           "@type": "Organization",
           "name": "AI 工具指南"
         },
-        "dateModified": "2026-06-12",
+        "dateModified": "2026-06-13",
         "datePublished": "2026-06-06",
         "description": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
         "headline": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
@@ -1124,7 +1124,7 @@
         "AI 部署"
       ],
       "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "updatedAt": "2026-06-12",
+      "updatedAt": "2026-06-13",
       "warnings": []
     },
     {

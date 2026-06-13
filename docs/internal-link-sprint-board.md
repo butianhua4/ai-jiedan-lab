@@ -1,6 +1,6 @@
 # Internal Link Sprint Board
 
-Generated at: 2026-06-13T10:13:02.096Z
+Generated at: 2026-06-13T15:18:17.976Z
 
 This report is read-only. It turns public-link suggestions into manual internal-link review waves without editing article bodies.
 
@@ -56,7 +56,7 @@ This report is read-only. It turns public-link suggestions into manual internal-
 | 1 | true | 296 | 0 | 3 | broad-first-coverage, expansion, recommended, wave-1 | /blog/codex-vercel-deploy-preflight-checklist | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 1 | true | 295 | 0 | 3 | broad-first-coverage, expansion, recommended, wave-1 | /blog/upwork-client-requirements-analysis-beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | 1 | true | 294 | 0 | 3 | broad-first-coverage, expansion, recommended, wave-1 | /blog/build-first-webpage-with-codex | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| 1 | true | 156 | 0 | 3 | broad-first-coverage, expansion | /blog/codex-code-review-delivery-checklist | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| 1 | true | 156 | 0 | 3 | broad-first-coverage, expansion | /blog/codex-vercel-deploy-preflight-checklist | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | 2 | true | 130 | 0 | 3 | broad-first-coverage | /blog/build-first-webpage-with-codex | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 | 2 | true | 128 | 0 | 3 | broad-first-coverage | /blog/codex-code-review-delivery-checklist | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
 | 2 | true | 128 | 0 | 3 | broad-first-coverage | /blog/vercel-env-variable-missing-beginner-guide | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
@@ -153,7 +153,7 @@ Suggested public links:
 - Wave: 1
 - Ready for internal link sprint: true
 - Publish confirm: not-included
-- Anchor prompt: When a paragraph mentions the related workflow, add one natural link to /blog/codex-code-review-delivery-checklist using reader-first anchor text, not keyword stuffing.
+- Anchor prompt: When a paragraph mentions the related workflow, add one natural link to /blog/codex-vercel-deploy-preflight-checklist using reader-first anchor text, not keyword stuffing.
 
 Link actions:
 - Keep this as a manual article-body edit; do not auto-insert links.
@@ -162,13 +162,13 @@ Link actions:
 - Prefer links that help the reader move from a draft tutorial to an already public beginner page.
 - Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.
 - After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.
-- Primary suggested target: /blog/codex-code-review-delivery-checklist.
+- Primary suggested target: /blog/codex-vercel-deploy-preflight-checklist.
 - Candidate currently links to 0 public article(s).
 
 Suggested public links:
-- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 检查, 新手, 查清, 清单)
 - /blog/codex-vercel-deploy-preflight-checklist - Codex 部署 Vercel 前检查什么：上线前清单 (keyword overlap: ai, 部署, 检查, 什么, 新手, 上线)
 - /blog/build-first-webpage-with-codex - Codex 怎么做第一个网页 (keyword overlap: ai, 怎么, 新手, 么做, 一个, 第一)
+- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 怎么, 检查, 新手, 查清, 清单)
 
 ### n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储
 
@@ -442,9 +442,9 @@ Link actions:
 - Candidate currently links to 0 public article(s).
 
 Suggested public links:
-- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 审核, 工具, 代码, 生成)
-- /blog/codex-generated-code-review-guide - Codex 生成代码后怎么审核 (keyword overlap: ai, 审核, 工具, 代码, 生成)
-- /blog/build-first-webpage-with-codex - Codex 怎么做第一个网页 (keyword overlap: ai, 工具, 一个)
+- /blog/codex-code-review-delivery-checklist - Codex 生成代码后怎么审核：交付前检查清单 (keyword overlap: ai, 审核, 工具, 代码, 检查)
+- /blog/codex-generated-code-review-guide - Codex 生成代码后怎么审核 (keyword overlap: ai, 审核, 工具, 代码)
+- /blog/codex-github-before-commit-checklist - Codex 和 GitHub 怎么配合：提交代码前检查 (keyword overlap: ai, 工具, 代码, 检查)
 
 ### 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复
 

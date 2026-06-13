@@ -1,6 +1,6 @@
 # Human Approval Repair Session Pack
 
-Generated at: 2026-06-13T10:13:35.156Z
+Generated at: 2026-06-13T15:18:59.255Z
 
 This report is read-only. It packages the next manual repair session for each routed file and stops before article edits, mark:review, or publishing.
 
@@ -250,8 +250,8 @@ Source review actions:
 - Complete freshness checklist for fast-changing AI/tool guidance.
 - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.
 - Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts.
+- Deployment guidance includes environment variables, rate limits, smoke checks, and failure handling.
 - No instruction to bypass platform, payment, messaging, account, or review rules.
-- Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.
 - Fact-check query: 全行业 AI 提示词模板 官方文档 最新
 - Fact-check query: 全行业 AI 提示词模板 official docs latest
 - Fact-check query: 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 事实核对

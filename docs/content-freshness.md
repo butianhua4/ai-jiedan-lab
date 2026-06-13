@@ -1,6 +1,6 @@
 # Content Freshness Check
 
-Generated at: 2026-06-13T10:13:27.649Z
+Generated at: 2026-06-13T15:18:50.469Z
 
 This report flags fast-changing content for manual fact review. It does not verify facts or publish anything.
 
@@ -13,8 +13,8 @@ This report flags fast-changing content for manual fact review. It does not veri
 
 - Articles checked: 669
 - Items flagged: 666
-- High risk: 570
-- Medium risk: 96
+- High risk: 573
+- Medium risk: 93
 - Current review items: 3
 - Planned review items: 9
 
@@ -22,9 +22,9 @@ This report flags fast-changing content for manual fact review. It does not veri
 
 | Risk | Updated | Category | Keyword | Title | File | Reasons |
 | --- | --- | --- | --- | --- | --- | --- |
-| high | 2026-06-12 | AI Agent | AI Agent 部署 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx | fast-changing technical term: api; fast-changing technical term: agent; fast-changing technical term: model; fast-changing technical term: vercel; fast-changing technical term: 部署 |
 | high | 2026-06-12 | AI 部署 | 客服 AI 模型选型 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx | fast-changing technical term: model; fast-changing technical term: rag; fast-changing technical term: 部署; fast-changing technical term: 模型; fast-changing technical term: 知识库 |
-| high | 2026-06-12 | AI 提示词 | 全行业 AI 提示词模板 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx | fast-changing technical term: 模型; fast-changing technical term: 知识库; review-sensitive term: prompt; review-sensitive term: 提示词; review-sensitive term: 工具 |
+| high | 2026-06-12 | AI 提示词 | 全行业 AI 提示词模板 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx | fast-changing technical term: api; fast-changing technical term: openai; fast-changing technical term: 模型; fast-changing technical term: 知识库; review-sensitive term: prompt |
+| high | 2026-06-13 | AI Agent | AI Agent 部署 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx | fast-changing technical term: api; fast-changing technical term: agent; fast-changing technical term: model; fast-changing technical term: vercel; fast-changing technical term: 部署 |
 
 ## Planned Review Items
 
@@ -34,11 +34,11 @@ This report flags fast-changing content for manual fact review. It does not veri
 | high | 2026-06-06 | 项目报价 | AI 自动化项目报价 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx | fast-changing technical term: api; fast-changing technical term: agent; fast-changing technical term: dify; fast-changing technical term: n8n; fast-changing technical term: rag |
 | high | 2026-06-06 | AI 提示词 | 团队 AI 提示词库 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx | fast-changing technical term: 模型; review-sensitive term: prompt; review-sensitive term: 提示词; review-sensitive term: 工具; review-sensitive term: 报价 |
 | high | 2026-06-06 | AI 部署 | Open WebUI Functions Pipelines | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx | fast-changing technical term: api; fast-changing technical term: n8n; fast-changing technical term: ollama; fast-changing technical term: openai; fast-changing technical term: rag |
-| high | 2026-06-12 | AI Agent | AI Agent 部署 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx | fast-changing technical term: api; fast-changing technical term: agent; fast-changing technical term: model; fast-changing technical term: vercel; fast-changing technical term: 部署 |
 | high | 2026-06-12 | AI 部署 | 客服 AI 模型选型 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx | fast-changing technical term: model; fast-changing technical term: rag; fast-changing technical term: 部署; fast-changing technical term: 模型; fast-changing technical term: 知识库 |
-| high | 2026-06-12 | AI 提示词 | 全行业 AI 提示词模板 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx | fast-changing technical term: 模型; fast-changing technical term: 知识库; review-sensitive term: prompt; review-sensitive term: 提示词; review-sensitive term: 工具 |
+| high | 2026-06-12 | AI 提示词 | 数据分析 AI 提示词 | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx | fast-changing technical term: api; fast-changing technical term: openai; review-sensitive term: prompt; review-sensitive term: 提示词; review-sensitive term: 工具 |
+| high | 2026-06-12 | AI 提示词 | 全行业 AI 提示词模板 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx | fast-changing technical term: api; fast-changing technical term: openai; fast-changing technical term: 模型; fast-changing technical term: 知识库; review-sensitive term: prompt |
 | high | 2026-06-12 | AI 部署 | n8n AI Agent 知识库记忆 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx | fast-changing technical term: agent; fast-changing technical term: n8n; fast-changing technical term: rag; fast-changing technical term: 部署; fast-changing technical term: 模型 |
-| medium | 2026-06-12 | AI 提示词 | 数据分析 AI 提示词 | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx | review-sensitive term: prompt; review-sensitive term: 提示词; review-sensitive term: 工具; review-sensitive term: 运营 |
+| high | 2026-06-13 | AI Agent | AI Agent 部署 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx | fast-changing technical term: api; fast-changing technical term: agent; fast-changing technical term: model; fast-changing technical term: vercel; fast-changing technical term: 部署 |
 
 ## Top Freshness Risks
 

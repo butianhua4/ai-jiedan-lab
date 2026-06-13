@@ -1,6 +1,6 @@
 # Memory RAG Sprint Board
 
-Generated at: 2026-06-13T10:13:16.266Z
+Generated at: 2026-06-13T15:18:34.318Z
 
 This report is read-only. It turns broad RAG, knowledge base, vector search, Agent memory, privacy, and evaluation demand into manual review lanes.
 
