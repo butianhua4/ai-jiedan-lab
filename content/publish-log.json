@@ -82,5 +82,29 @@
     "action": "publish",
     "slug": "open-webui-functions-pipelines-deployment-guide",
     "score": 100
+  },
+  {
+    "time": "2026-06-14T14:10:52.532Z",
+    "action": "publish",
+    "slug": "ai-automation-project-pricing-scope-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:10:53.062Z",
+    "action": "publish",
+    "slug": "dify-workflow-error-handling-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:10:53.619Z",
+    "action": "publish",
+    "slug": "ai-api-key-security-rotation-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:10:54.161Z",
+    "action": "publish",
+    "slug": "bentoml-llm-deployment-beginner-guide",
+    "score": 100
   }
 ]
