@@ -1,6 +1,6 @@
 # Search Intent Lane Map
 
-Generated at: 2026-06-14T01:41:14.798Z
+Generated at: 2026-06-14T06:15:54.720Z
 
 This report is read-only. It maps broad AI search-intent lanes to existing public articles and safe draft candidates. It does not claim keyword volume, impressions, clicks, or traffic.
 
@@ -77,7 +77,7 @@ Matched safe draft candidates:
 | false | false | true | 100 | 30 | AI 提示词 | 客服 AI 提示词 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
 | false | false | true | 100 | 30 | AI 提示词 | 电商 AI 提示词 | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
 | false | false | true | 86 | 32 | AI 提示词 | 团队 AI 提示词库 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
-| false | false | false | 100 | 31 | AI 提示词 | 运营 AI 提示词 | 运营 AI 提示词模板：周报、SOP、活动计划、复盘和数据解释 | content/blog/operations-ai-prompts-guide.mdx |
+| false | false | false | 100 | 31 | AI 提示词 | 制造业 AI 提示词 | 制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘 | content/blog/manufacturing-ai-prompts-guide.mdx |
 
 ## Business department AI workflows across sales, support, ops, HR, finance, legal, and education
 
@@ -111,7 +111,7 @@ Matched safe draft candidates:
 | false | false | true | 100 | 30 | AI 提示词 | 电商 AI 提示词 | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
 | false | false | true | 86 | 33 | AI 部署 | Dify 工作流错误处理 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
 | false | false | true | 86 | 33 | AI 部署 | Open WebUI Functions Pipelines | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
-| false | false | false | 100 | 31 | AI 提示词 | 运营 AI 提示词 | 运营 AI 提示词模板：周报、SOP、活动计划、复盘和数据解释 | content/blog/operations-ai-prompts-guide.mdx |
+| false | false | false | 100 | 31 | AI 提示词 | 制造业 AI 提示词 | 制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘 | content/blog/manufacturing-ai-prompts-guide.mdx |
 
 ## AI Agent deployment, tool calling, and production workflow
 

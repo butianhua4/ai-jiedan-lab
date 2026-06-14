@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T01:42:06.864Z",
+  "generatedAt": "2026-06-14T06:16:43.002Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -8788,7 +8788,7 @@
         "url": "https://ai-sdk.dev/docs"
       },
       {
-        "finalUrl": "https://ai.google.dev/gemini-api/docs",
+        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=fa",
         "ok": true,
         "references": [
           {
@@ -50384,15 +50384,15 @@
             "category": "AI 提示词",
             "currentPack": false,
             "expansionQueue": false,
-            "file": "content/blog/operations-ai-prompts-guide.mdx",
+            "file": "content/blog/manufacturing-ai-prompts-guide.mdx",
             "noindex": true,
-            "primaryKeyword": "运营 AI 提示词",
+            "primaryKeyword": "制造业 AI 提示词",
             "publishBatch": 31,
             "qualityScore": 100,
             "safeDraft": true,
             "searchIntent": "informational",
             "status": "draft",
-            "title": "运营 AI 提示词模板：周报、SOP、活动计划、复盘和数据解释",
+            "title": "制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘",
             "wave1": false
           }
         ],
@@ -50558,15 +50558,15 @@
             "category": "AI 提示词",
             "currentPack": false,
             "expansionQueue": false,
-            "file": "content/blog/operations-ai-prompts-guide.mdx",
+            "file": "content/blog/manufacturing-ai-prompts-guide.mdx",
             "noindex": true,
-            "primaryKeyword": "运营 AI 提示词",
+            "primaryKeyword": "制造业 AI 提示词",
             "publishBatch": 31,
             "qualityScore": 100,
             "safeDraft": true,
             "searchIntent": "informational",
             "status": "draft",
-            "title": "运营 AI 提示词模板：周报、SOP、活动计划、复盘和数据解释",
+            "title": "制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘",
             "wave1": false
           }
         ],
@@ -59105,7 +59105,7 @@
   "liveSearch": {
     "checkedArticles": 15,
     "failedChecks": [],
-    "generatedAt": "2026-06-14T01:42:03.104Z",
+    "generatedAt": "2026-06-14T06:16:39.346Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 15,

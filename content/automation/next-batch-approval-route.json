@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T01:41:53.278Z",
+  "generatedAt": "2026-06-14T06:16:32.066Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "clearanceGeneratedAt": "2026-06-14T01:41:51.797Z",
+    "clearanceGeneratedAt": "2026-06-14T06:16:30.629Z",
     "clearanceSummary": {
       "approvalItems": 8,
       "backlogItems": 5,
@@ -26,7 +26,7 @@
       "trafficDataAvailable": false,
       "unsafeItems": 0
     },
-    "collisionGeneratedAt": "2026-06-14T01:41:36.071Z",
+    "collisionGeneratedAt": "2026-06-14T06:16:15.337Z",
     "collisionSummary": {
       "blockedQueueMatchedItems": 1,
       "blockingItems": 0,
@@ -39,7 +39,7 @@
       "unsafeItems": 0,
       "warningItems": 1
     },
-    "freshnessGeneratedAt": "2026-06-14T01:41:37.200Z",
+    "freshnessGeneratedAt": "2026-06-14T06:16:16.467Z",
     "freshnessSummary": {
       "blockedItems": 0,
       "highRiskItems": 13,
@@ -49,7 +49,7 @@
       "readyItems": 13,
       "unsafeCommands": 0
     },
-    "nextReviewSourcePackGeneratedAt": "2026-06-14T01:41:16.323Z",
+    "nextReviewSourcePackGeneratedAt": "2026-06-14T06:15:56.190Z",
     "nextReviewSourcePackSummary": {
       "items": 19,
       "missingApprovalChecks": 0,
@@ -60,7 +60,7 @@
       "safeDraftItems": 19,
       "unsafeItems": 0
     },
-    "optimizationGeneratedAt": "2026-06-14T01:41:33.666Z",
+    "optimizationGeneratedAt": "2026-06-14T06:16:13.004Z",
     "optimizationSummary": {
       "briefs": 16,
       "briefsWithAction": 16,
@@ -69,7 +69,7 @@
       "readyBriefs": 16,
       "unsafeCommands": 0
     },
-    "queryCoverageGeneratedAt": "2026-06-14T01:41:18.779Z",
+    "queryCoverageGeneratedAt": "2026-06-14T06:15:58.592Z",
     "queryCoverageSummary": {
       "items": 12,
       "minFamiliesPerItem": 5,
@@ -82,7 +82,7 @@
       "uniqueLanes": 7,
       "uniqueQueries": 365
     },
-    "queryMatchGeneratedAt": "2026-06-14T01:41:19.276Z",
+    "queryMatchGeneratedAt": "2026-06-14T06:15:59.081Z",
     "queryMatchSummary": {
       "averageExactMatches": 1.75,
       "averageMatchedFamilies": 6.92,
@@ -93,14 +93,14 @@
       "readyItems": 12,
       "warningItems": 7
     },
-    "reviewBatchPlanGeneratedAt": "2026-06-14T01:41:15.301Z",
+    "reviewBatchPlanGeneratedAt": "2026-06-14T06:15:55.191Z",
     "reviewBatchPlanTotals": {
       "plannedBatches": 3,
       "plannedCandidates": 9,
       "sourceReviewCandidates": 25,
       "sourceOpportunities": 7
     },
-    "workbenchGeneratedAt": "2026-06-14T01:41:52.785Z",
+    "workbenchGeneratedAt": "2026-06-14T06:16:31.589Z",
     "trafficNote": "No measured traffic, ranking, impression, click, conversion, or revenue claim is made."
   },
   "publishingBoundary": {
