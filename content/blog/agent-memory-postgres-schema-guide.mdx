@@ -1,28 +1,30 @@
 ---
-title: "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则"
-slug: "agent-memory-postgres-schema-guide"
-description: "面向新手整理 Agent 记忆落库设计，覆盖短期会话、长期偏好、项目事实、来源记录、过期时间、删除入口和人工复核。"
-date: "2026-06-06"
-updatedAt: "2026-06-06"
-category: "AI 基建"
+title: Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则
+slug: agent-memory-postgres-schema-guide
+description: 面向新手整理 Agent 记忆落库设计，覆盖短期会话、长期偏好、项目事实、来源记录、过期时间、删除入口和人工复核。
+date: '2026-06-06'
+updatedAt: '2026-06-14'
+category: AI 基建
 tags:
-  - "Agent 记忆"
-  - "Postgres"
-  - "AI Agent"
-  - "长期记忆"
-author: "AI 工具指南"
-status: "draft"
-contentType: "tutorial"
-difficulty: "beginner"
-targetReader: "想给 Agent 做长期记忆但不知道数据库怎么设计的新手开发者"
-searchIntent: "informational"
-primaryKeyword: "Agent 记忆数据库设计"
+  - Agent 记忆
+  - Postgres
+  - AI Agent
+  - 长期记忆
+author: AI 工具指南
+status: published
+contentType: tutorial
+difficulty: beginner
+targetReader: 想给 Agent 做长期记忆但不知道数据库怎么设计的新手开发者
+searchIntent: informational
+primaryKeyword: Agent 记忆数据库设计
 secondaryKeywords:
-  - "Agent memory Postgres"
-  - "AI Agent 长期记忆"
-  - "用户偏好存储"
-  - "Agent 记忆表结构"
-sourceNotes: "参考 LangChain memory 概念、OpenAI Agents SDK memory 与 tracing 文档整理；正式发布前需要人工核对具体 SDK、数据库权限和隐私要求。"
+  - Agent memory Postgres
+  - AI Agent 长期记忆
+  - 用户偏好存储
+  - Agent 记忆表结构
+sourceNotes: >-
+  参考 LangChain memory 概念、OpenAI Agents SDK memory 与 tracing 文档整理；正式发布前需要人工核对具体
+  SDK、数据库权限和隐私要求。
 humanReviewRequired: true
 reviewChecklist:
   hasOriginalAngle: true
@@ -34,15 +36,15 @@ reviewChecklist:
   hasClearCTA: true
 monetization:
   affiliateSlots:
-    - "工具导航"
-  templateCTA: "下载 Agent 记忆表结构模板"
-  serviceCTA: "联系人工协助设计 Agent 记忆模块"
+    - 工具导航
+  templateCTA: 下载 Agent 记忆表结构模板
+  serviceCTA: 联系人工协助设计 Agent 记忆模块
   adSlots:
-    - "article-bottom"
-qualityScore: 86
+    - article-bottom
+qualityScore: 100
 publishBatch: 32
-canonical: "https://ai-jiedan-lab.vercel.app/blog/agent-memory-postgres-schema-guide"
-noindex: true
+canonical: 'https://ai-jiedan-lab.vercel.app/blog/agent-memory-postgres-schema-guide'
+noindex: false
 ---
 # Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则
 

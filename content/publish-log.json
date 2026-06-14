@@ -106,5 +106,605 @@
     "action": "publish",
     "slug": "bentoml-llm-deployment-beginner-guide",
     "score": 100
+  },
+  {
+    "time": "2026-06-14T14:13:56.359Z",
+    "action": "publish",
+    "slug": "ads-income-when-to-start-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:13:56.363Z",
+    "action": "publish",
+    "slug": "ads-income-when-to-start",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:13:56.365Z",
+    "action": "publish",
+    "slug": "affiliate-vs-service-income-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:13:56.368Z",
+    "action": "publish",
+    "slug": "affiliate-vs-service-income",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:13:56.369Z",
+    "action": "publish",
+    "slug": "agent-deployment-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:13:58.559Z",
+    "action": "publish",
+    "slug": "agent-human-review-loop-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:13:58.560Z",
+    "action": "publish",
+    "slug": "agent-memory-design-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:13:58.562Z",
+    "action": "publish",
+    "slug": "agent-memory-postgres-schema-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:13:58.563Z",
+    "action": "publish",
+    "slug": "agent-observability-logging-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:13:58.564Z",
+    "action": "publish",
+    "slug": "agent-production-deployment-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:00.925Z",
+    "action": "publish",
+    "slug": "agent-tool-calling-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:00.927Z",
+    "action": "publish",
+    "slug": "agent-tool-permission-safety-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:00.931Z",
+    "action": "publish",
+    "slug": "ai-assisted-vs-automated-delivery-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:00.932Z",
+    "action": "publish",
+    "slug": "ai-assisted-vs-automated-delivery-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:00.934Z",
+    "action": "publish",
+    "slug": "ai-assisted-vs-automated-delivery",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:03.100Z",
+    "action": "publish",
+    "slug": "ai-beginner-project-fit-check-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:03.101Z",
+    "action": "publish",
+    "slug": "ai-beginner-project-fit-check-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:03.102Z",
+    "action": "publish",
+    "slug": "ai-beginner-project-fit-check",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:03.104Z",
+    "action": "publish",
+    "slug": "ai-coding-tools-risk-check-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:03.105Z",
+    "action": "publish",
+    "slug": "ai-coding-tools-risk-check",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:05.407Z",
+    "action": "publish",
+    "slug": "ai-content-human-review-template-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:05.408Z",
+    "action": "publish",
+    "slug": "ai-content-human-review-template",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:05.410Z",
+    "action": "publish",
+    "slug": "ai-freelance-30-day-execution-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:05.411Z",
+    "action": "publish",
+    "slug": "ai-freelance-30-day-execution-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:05.412Z",
+    "action": "publish",
+    "slug": "ai-freelance-30-day-execution",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:07.589Z",
+    "action": "publish",
+    "slug": "ai-freelance-automation-compliance-risk-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:07.594Z",
+    "action": "publish",
+    "slug": "ai-freelance-automation-compliance-risk-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:07.596Z",
+    "action": "publish",
+    "slug": "ai-freelance-automation-compliance-risk",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:07.598Z",
+    "action": "publish",
+    "slug": "ai-freelance-common-misconceptions-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:07.600Z",
+    "action": "publish",
+    "slug": "ai-freelance-common-misconceptions-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:09.848Z",
+    "action": "publish",
+    "slug": "ai-freelance-common-misconceptions",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:09.850Z",
+    "action": "publish",
+    "slug": "ai-freelance-daily-planner-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:09.851Z",
+    "action": "publish",
+    "slug": "ai-freelance-daily-planner",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:09.852Z",
+    "action": "publish",
+    "slug": "ai-freelance-failure-review-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:09.853Z",
+    "action": "publish",
+    "slug": "ai-freelance-failure-review-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:12.098Z",
+    "action": "publish",
+    "slug": "ai-freelance-failure-review",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:12.099Z",
+    "action": "publish",
+    "slug": "ai-freelance-first-7-days-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:12.100Z",
+    "action": "publish",
+    "slug": "ai-freelance-first-7-days-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:12.102Z",
+    "action": "publish",
+    "slug": "ai-freelance-first-7-days",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:12.103Z",
+    "action": "publish",
+    "slug": "ai-freelance-service-page-copy-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:14.289Z",
+    "action": "publish",
+    "slug": "ai-freelance-service-page-copy-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:14.290Z",
+    "action": "publish",
+    "slug": "ai-freelance-service-page-copy",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:14.292Z",
+    "action": "publish",
+    "slug": "ai-freelance-skill-roadmap-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:14.293Z",
+    "action": "publish",
+    "slug": "ai-freelance-skill-roadmap-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:14.295Z",
+    "action": "publish",
+    "slug": "ai-freelance-skill-roadmap",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:16.498Z",
+    "action": "publish",
+    "slug": "ai-logo-design-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:16.500Z",
+    "action": "publish",
+    "slug": "ai-model-selection-customer-service-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:16.501Z",
+    "action": "publish",
+    "slug": "ai-output-unstable-risk-control-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:16.502Z",
+    "action": "publish",
+    "slug": "ai-output-unstable-risk-control-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:16.503Z",
+    "action": "publish",
+    "slug": "ai-output-unstable-risk-control",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:18.807Z",
+    "action": "publish",
+    "slug": "ai-ppt-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:18.809Z",
+    "action": "publish",
+    "slug": "ai-prompt-framework-business-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:18.811Z",
+    "action": "publish",
+    "slug": "ai-prompt-library-team-knowledge-base-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:18.813Z",
+    "action": "publish",
+    "slug": "ai-resume-cover-letter-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:18.814Z",
+    "action": "publish",
+    "slug": "ai-small-project-practice-topics-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:21.057Z",
+    "action": "publish",
+    "slug": "ai-small-project-practice-topics-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:21.059Z",
+    "action": "publish",
+    "slug": "ai-small-project-practice-topics",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:21.060Z",
+    "action": "publish",
+    "slug": "ai-tool-setup-service-checklist-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:21.062Z",
+    "action": "publish",
+    "slug": "ai-tool-setup-service-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:21.063Z",
+    "action": "publish",
+    "slug": "ai-tools-recommendation-beginner",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:23.463Z",
+    "action": "publish",
+    "slug": "ai-tools-stack-free-start-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:23.465Z",
+    "action": "publish",
+    "slug": "ai-tools-stack-free-start-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:23.467Z",
+    "action": "publish",
+    "slug": "ai-tools-stack-free-start",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:23.468Z",
+    "action": "publish",
+    "slug": "ai-video-tools-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:23.470Z",
+    "action": "publish",
+    "slug": "ai-website-builder-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:25.732Z",
+    "action": "publish",
+    "slug": "anythingllm-local-rag-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:25.734Z",
+    "action": "publish",
+    "slug": "api-key-invalid-or-missing-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:25.735Z",
+    "action": "publish",
+    "slug": "api-key-invalid-or-missing-freelance-scope",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:25.736Z",
+    "action": "publish",
+    "slug": "api-key-invalid-or-missing-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:25.737Z",
+    "action": "publish",
+    "slug": "api-key-invalid-or-missing",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:27.975Z",
+    "action": "publish",
+    "slug": "arize-phoenix-llm-observability-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:27.976Z",
+    "action": "publish",
+    "slug": "autogen-agent-framework-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:27.977Z",
+    "action": "publish",
+    "slug": "bank-card-payment-platform-risk-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:27.978Z",
+    "action": "publish",
+    "slug": "bank-card-payment-platform-risk",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:27.979Z",
+    "action": "publish",
+    "slug": "before-first-ai-freelance-job-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:30.106Z",
+    "action": "publish",
+    "slug": "before-first-ai-freelance-job-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:30.108Z",
+    "action": "publish",
+    "slug": "before-first-ai-freelance-job",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:30.109Z",
+    "action": "publish",
+    "slug": "bugfix-delivery-note-template-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:30.110Z",
+    "action": "publish",
+    "slug": "bugfix-delivery-note-template",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:30.112Z",
+    "action": "publish",
+    "slug": "canva-portfolio-cover-tips-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:32.550Z",
+    "action": "publish",
+    "slug": "canva-portfolio-cover-tips",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:32.551Z",
+    "action": "publish",
+    "slug": "chatgpt-codex-claude-workflow-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:32.553Z",
+    "action": "publish",
+    "slug": "chatgpt-codex-claude-workflow",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:32.555Z",
+    "action": "publish",
+    "slug": "chatgpt-how-to-use-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:32.556Z",
+    "action": "publish",
+    "slug": "chatgpt-prompt-template-beginner",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:34.852Z",
+    "action": "publish",
+    "slug": "chatgpt-vs-claude-proposal-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:34.854Z",
+    "action": "publish",
+    "slug": "chatgpt-vs-claude-proposal",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:34.855Z",
+    "action": "publish",
+    "slug": "chroma-vector-database-rag-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:34.856Z",
+    "action": "publish",
+    "slug": "claude-api-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:34.858Z",
+    "action": "publish",
+    "slug": "claude-api-rate-limit-debug-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:37.144Z",
+    "action": "publish",
+    "slug": "claude-code-automation-human-review-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:37.145Z",
+    "action": "publish",
+    "slug": "claude-code-automation-human-review-freelance-scope",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:37.147Z",
+    "action": "publish",
+    "slug": "claude-code-automation-human-review-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:37.148Z",
+    "action": "publish",
+    "slug": "claude-code-automation-human-review",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:37.149Z",
+    "action": "publish",
+    "slug": "claude-code-beginner-mistakes-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:39.394Z",
+    "action": "publish",
+    "slug": "claude-code-beginner-mistakes-freelance-scope",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:39.396Z",
+    "action": "publish",
+    "slug": "claude-code-beginner-mistakes-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:39.397Z",
+    "action": "publish",
+    "slug": "claude-code-beginner-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:39.399Z",
+    "action": "publish",
+    "slug": "claude-code-beginner-use-cases-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:14:39.401Z",
+    "action": "publish",
+    "slug": "claude-code-beginner-use-cases-freelance-scope",
+    "score": 100
   }
 ]
