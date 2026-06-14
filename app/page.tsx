@@ -22,10 +22,11 @@ export const metadata: Metadata = {
 };
 
 const trustItems = ["面向搜索", "人工审核", "工具优先", "不夸大收益"];
-const workflow = [
-  ["01", "找到任务场景", "先判断是办公、部署、提示词、RAG 还是项目交付问题。"],
-  ["02", "进入对应工具", "用工具生成草稿、清单、成本估算或排查步骤。"],
-  ["03", "人工复核上线", "检查事实、数据、隐私、平台规则和交付边界。"],
+const searchEntrances = [
+  ["提示词模板", "客服、销售、HR、营销、财务和软件开发场景。", "/prompts"],
+  ["AI 部署教程", "网页部署、大模型部署、Agent、API 和 RAG。", "/deployments"],
+  ["办公自动化", "PPT 策划、表格整理、简历、文案和资料处理。", "/office-ai"],
+  ["实用工具", "报价、Proposal、报错解释、成本估算和 SEO 刷新。", "/tools"],
 ];
 
 export default function Home() {
@@ -61,26 +62,26 @@ export default function Home() {
           <div className="min-w-0 max-w-full rounded-lg border border-gray-200 bg-white p-5 shadow-xl shadow-blue-100/60">
             <div className="flex items-center justify-between border-b pb-4">
               <div>
-                <p className="text-sm font-semibold text-ink">AI 工具工作台</p>
-                <p className="mt-1 text-xs text-gray-500">先找场景，再用工具，再复核</p>
+                <p className="text-sm font-semibold text-ink">热门搜索入口</p>
+                <p className="mt-1 text-xs text-gray-500">先找教程，再用工具和模板</p>
               </div>
-              <span className="rounded-md bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">人工审核</span>
+              <span className="rounded-md bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">持续更新</span>
             </div>
-            <div className="mt-5 space-y-3">
-              {workflow.map(([step, title, description]) => (
-                <div key={step} className="grid min-w-0 max-w-full grid-cols-[44px_minmax(0,1fr)] gap-3 rounded-md border bg-gray-50 p-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-md bg-white text-sm font-semibold text-brand shadow-sm">{step}</div>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2">
+              {searchEntrances.map(([title, description, href]) => (
+                <Link key={href} href={href} className="grid min-w-0 max-w-full grid-cols-[44px_minmax(0,1fr)] gap-3 rounded-md border bg-gray-50 p-4 transition hover:border-brand/40 hover:bg-white hover:shadow-sm">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-md bg-white text-sm font-semibold text-brand shadow-sm">AI</div>
                   <div className="min-w-0">
                     <h2 className="break-words text-sm font-semibold text-ink">{title}</h2>
                     <p className="mt-1 break-words text-sm leading-6 text-gray-600">{description}</p>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
             <div className="mt-5 min-w-0 break-all rounded-md bg-slate-950 p-4 font-mono text-xs leading-6 text-slate-200">
-              <p>risk: check_before_bid</p>
+              <p>content: search_first</p>
               <p>draft: human_review_required</p>
-              <p>publish: small_batch_only</p>
+              <p>tools: solve_real_problem</p>
             </div>
           </div>
         </div>
