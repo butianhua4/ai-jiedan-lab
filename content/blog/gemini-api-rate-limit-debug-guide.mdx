@@ -1,28 +1,30 @@
 ---
-title: "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型"
-slug: "gemini-api-rate-limit-debug-guide"
-description: "整理 Gemini API 限流排查方法，覆盖 RPM、TPM、请求峰值、上下文长度、队列、重试、降级和生产监控。"
-date: "2026-06-06"
-updatedAt: "2026-06-06"
-category: "AI 部署"
+title: Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型
+slug: gemini-api-rate-limit-debug-guide
+description: 整理 Gemini API 限流排查方法，覆盖 RPM、TPM、请求峰值、上下文长度、队列、重试、降级和生产监控。
+date: '2026-06-06'
+updatedAt: '2026-06-14'
+category: AI 部署
 tags:
-  - "Gemini API"
-  - "Google AI"
-  - "Rate limit"
-  - "AI API"
-author: "AI 工具指南"
-status: "draft"
-contentType: "tutorial"
-difficulty: "beginner"
-targetReader: "调用 Gemini API 时遇到限流、失败或峰值请求的新手开发者"
-searchIntent: "informational"
-primaryKeyword: "Gemini API 限流"
+  - Gemini API
+  - Google AI
+  - Rate limit
+  - AI API
+author: AI 工具指南
+status: published
+contentType: tutorial
+difficulty: beginner
+targetReader: 调用 Gemini API 时遇到限流、失败或峰值请求的新手开发者
+searchIntent: informational
+primaryKeyword: Gemini API 限流
 secondaryKeywords:
-  - "Gemini API rate limits"
-  - "Google AI API 429"
-  - "Gemini RPM TPM"
-  - "Gemini API 重试"
-sourceNotes: "参考 Google AI for Developers Gemini API rate limits 文档和常见 API 稳定性设计整理；正式发布前需要人工核对最新额度。"
+  - Gemini API rate limits
+  - Google AI API 429
+  - Gemini RPM TPM
+  - Gemini API 重试
+sourceNotes: >-
+  参考 Google AI for Developers Gemini API rate limits 文档和常见 API
+  稳定性设计整理；正式发布前需要人工核对最新额度。
 humanReviewRequired: true
 reviewChecklist:
   hasOriginalAngle: true
@@ -34,15 +36,15 @@ reviewChecklist:
   hasClearCTA: true
 monetization:
   affiliateSlots:
-    - "工具导航"
-  templateCTA: "下载 Gemini API 限流排查清单"
-  serviceCTA: "联系人工协助设计 Gemini API 稳定性方案"
+    - 工具导航
+  templateCTA: 下载 Gemini API 限流排查清单
+  serviceCTA: 联系人工协助设计 Gemini API 稳定性方案
   adSlots:
-    - "article-bottom"
-qualityScore: 86
+    - article-bottom
+qualityScore: 100
 publishBatch: 34
-canonical: "https://ai-jiedan-lab.vercel.app/blog/gemini-api-rate-limit-debug-guide"
-noindex: true
+canonical: 'https://ai-jiedan-lab.vercel.app/blog/gemini-api-rate-limit-debug-guide'
+noindex: false
 ---
 # Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型
 

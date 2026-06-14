@@ -1,28 +1,31 @@
 ---
-title: "多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估"
-slug: "multi-model-router-fallback-guide"
-description: "讲清多模型 Router 和 fallback 的设计方法，覆盖任务分类、主备模型、限流、成本、质量评估、日志和用户提示。"
-date: "2026-06-06"
-updatedAt: "2026-06-12"
-category: "AI 部署"
+title: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估
+slug: multi-model-router-fallback-guide
+description: 讲清多模型 Router 和 fallback 的设计方法，覆盖任务分类、主备模型、限流、成本、质量评估、日志和用户提示。
+date: '2026-06-06'
+updatedAt: '2026-06-14'
+category: AI 部署
 tags:
-  - "多模型"
-  - "AI Router"
-  - "Fallback"
-  - "AI 部署"
-author: "AI 工具指南"
-status: "draft"
-contentType: "tutorial"
-difficulty: "beginner"
-targetReader: "想给 AI 应用加入备用模型和自动降级的新手开发者"
-searchIntent: "informational"
-primaryKeyword: "多模型 Router 降级"
+  - 多模型
+  - AI Router
+  - Fallback
+  - AI 部署
+author: AI 工具指南
+status: published
+contentType: tutorial
+difficulty: beginner
+targetReader: 想给 AI 应用加入备用模型和自动降级的新手开发者
+searchIntent: informational
+primaryKeyword: 多模型 Router 降级
 secondaryKeywords:
-  - "AI model fallback"
-  - "LLM router"
-  - "多模型路由"
-  - "AI 模型切换"
-sourceNotes: "已于 2026-06-12 按 Vercel AI Gateway、Models & Providers、Provider Options 官方文档核对统一入口、多 provider、路由顺序、fallback、预算和用量监控能力；结合生产限流、重试和质量评估整理。正式公开前仍需人工核对具体平台能力、价格和模型可用性。"
+  - AI model fallback
+  - LLM router
+  - 多模型路由
+  - AI 模型切换
+sourceNotes: >-
+  已于 2026-06-12 按 Vercel AI Gateway、Models & Providers、Provider Options
+  官方文档核对统一入口、多
+  provider、路由顺序、fallback、预算和用量监控能力；结合生产限流、重试和质量评估整理。正式公开前仍需人工核对具体平台能力、价格和模型可用性。
 humanReviewRequired: true
 reviewChecklist:
   hasOriginalAngle: true
@@ -34,15 +37,15 @@ reviewChecklist:
   hasClearCTA: true
 monetization:
   affiliateSlots:
-    - "工具导航"
-  templateCTA: "下载多模型 Router 设计表"
-  serviceCTA: "联系人工协助设计模型降级方案"
+    - 工具导航
+  templateCTA: 下载多模型 Router 设计表
+  serviceCTA: 联系人工协助设计模型降级方案
   adSlots:
-    - "article-bottom"
+    - article-bottom
 qualityScore: 100
 publishBatch: 34
-canonical: "https://ai-jiedan-lab.vercel.app/blog/multi-model-router-fallback-guide"
-noindex: true
+canonical: 'https://ai-jiedan-lab.vercel.app/blog/multi-model-router-fallback-guide'
+noindex: false
 ---
 # 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估
 

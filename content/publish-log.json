@@ -1906,5 +1906,1067 @@
     "action": "publish",
     "slug": "first-freelance-payment-check-checklist",
     "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:40.733Z",
+    "action": "publish",
+    "slug": "first-freelance-payment-check",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:40.734Z",
+    "action": "publish",
+    "slug": "first-portfolio-case-realistic-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:40.735Z",
+    "action": "publish",
+    "slug": "first-portfolio-case-realistic-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:40.736Z",
+    "action": "publish",
+    "slug": "first-portfolio-case-realistic",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:40.738Z",
+    "action": "publish",
+    "slug": "flowise-local-deployment-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:42.857Z",
+    "action": "publish",
+    "slug": "flowise-ollama-local-rag-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:42.859Z",
+    "action": "publish",
+    "slug": "free-seo-tools-beginner-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:42.860Z",
+    "action": "publish",
+    "slug": "free-seo-tools-beginner",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:42.861Z",
+    "action": "publish",
+    "slug": "freelance-beginner-scope-confirmation-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:42.862Z",
+    "action": "publish",
+    "slug": "freelance-beginner-scope-confirmation-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:45.000Z",
+    "action": "publish",
+    "slug": "freelance-beginner-scope-confirmation",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:45.001Z",
+    "action": "publish",
+    "slug": "freelance-platform-tool-stack-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:45.002Z",
+    "action": "publish",
+    "slug": "freelance-platform-tool-stack",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:45.004Z",
+    "action": "publish",
+    "slug": "freelance-quote-template-fill-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:45.005Z",
+    "action": "publish",
+    "slug": "freelance-quote-template-fill",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:47.016Z",
+    "action": "publish",
+    "slug": "freelance-weekly-review-template-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:47.017Z",
+    "action": "publish",
+    "slug": "freelance-weekly-review-template",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:47.018Z",
+    "action": "publish",
+    "slug": "gemini-api-nextjs-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:47.019Z",
+    "action": "publish",
+    "slug": "gemini-api-rate-limit-debug-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:47.021Z",
+    "action": "publish",
+    "slug": "git-authentication-failed-fix-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:49.178Z",
+    "action": "publish",
+    "slug": "git-authentication-failed-fix-freelance-scope",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:49.179Z",
+    "action": "publish",
+    "slug": "git-authentication-failed-fix-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:49.180Z",
+    "action": "publish",
+    "slug": "git-authentication-failed-fix",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:49.181Z",
+    "action": "publish",
+    "slug": "github-actions-build-log-debug-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:49.182Z",
+    "action": "publish",
+    "slug": "github-actions-build-log-debug-freelance-scope",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:51.309Z",
+    "action": "publish",
+    "slug": "github-actions-build-log-debug-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:51.310Z",
+    "action": "publish",
+    "slug": "github-actions-build-log-debug",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:51.311Z",
+    "action": "publish",
+    "slug": "github-command-cheatsheet-beginner-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:51.312Z",
+    "action": "publish",
+    "slug": "github-command-cheatsheet-beginner",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:51.313Z",
+    "action": "publish",
+    "slug": "github-vercel-beginner-site-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:53.413Z",
+    "action": "publish",
+    "slug": "github-vercel-beginner-site",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:53.415Z",
+    "action": "publish",
+    "slug": "google-analytics-when-to-add-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:53.416Z",
+    "action": "publish",
+    "slug": "google-analytics-when-to-add",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:53.418Z",
+    "action": "publish",
+    "slug": "google-search-console-new-site-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:53.419Z",
+    "action": "publish",
+    "slug": "google-search-console-new-site",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:55.535Z",
+    "action": "publish",
+    "slug": "gpu-docker-nvidia-container-toolkit-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:55.536Z",
+    "action": "publish",
+    "slug": "groq-api-fast-llm-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:55.537Z",
+    "action": "publish",
+    "slug": "gumroad-template-selling-prep-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:55.538Z",
+    "action": "publish",
+    "slug": "gumroad-template-selling-prep",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:55.540Z",
+    "action": "publish",
+    "slug": "healthcare-admin-ai-prompts-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:57.603Z",
+    "action": "publish",
+    "slug": "helicone-llm-observability-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:57.605Z",
+    "action": "publish",
+    "slug": "hr-recruiting-ai-prompts-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:57.606Z",
+    "action": "publish",
+    "slug": "huggingface-spaces-ai-demo-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:57.607Z",
+    "action": "publish",
+    "slug": "huggingface-tgi-deployment-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:57.609Z",
+    "action": "publish",
+    "slug": "international-payment-fee-estimate-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:59.663Z",
+    "action": "publish",
+    "slug": "international-payment-fee-estimate",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:59.664Z",
+    "action": "publish",
+    "slug": "knowledge-base-permission-design-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:59.666Z",
+    "action": "publish",
+    "slug": "kubernetes-gpu-llm-deployment-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:59.667Z",
+    "action": "publish",
+    "slug": "langchain-rag-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:20:59.668Z",
+    "action": "publish",
+    "slug": "langgraph-agent-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:01.784Z",
+    "action": "publish",
+    "slug": "langsmith-observability-evaluation-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:01.785Z",
+    "action": "publish",
+    "slug": "legal-contract-ai-prompts-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:01.786Z",
+    "action": "publish",
+    "slug": "lemon-squeezy-digital-products-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:01.788Z",
+    "action": "publish",
+    "slug": "lemon-squeezy-digital-products",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:01.789Z",
+    "action": "publish",
+    "slug": "litellm-proxy-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:03.910Z",
+    "action": "publish",
+    "slug": "llama-cpp-server-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:03.911Z",
+    "action": "publish",
+    "slug": "llamaindex-rag-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:03.912Z",
+    "action": "publish",
+    "slug": "llm-api-integration-deployment-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:03.913Z",
+    "action": "publish",
+    "slug": "llm-api-rate-limit-retry-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:03.914Z",
+    "action": "publish",
+    "slug": "llm-cost-monitoring-dashboard-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:06.012Z",
+    "action": "publish",
+    "slug": "llm-deployment-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:06.014Z",
+    "action": "publish",
+    "slug": "llm-deployment-huggingface-inference-endpoints-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:06.015Z",
+    "action": "publish",
+    "slug": "llm-finetuning-vs-rag-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:06.016Z",
+    "action": "publish",
+    "slug": "llm-serving-cost-latency-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:06.017Z",
+    "action": "publish",
+    "slug": "lm-studio-local-api-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:08.195Z",
+    "action": "publish",
+    "slug": "local-llm-deployment-beginner",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:08.196Z",
+    "action": "publish",
+    "slug": "local-llm-vram-not-enough-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:08.198Z",
+    "action": "publish",
+    "slug": "make-vs-zapier-automation-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:08.199Z",
+    "action": "publish",
+    "slug": "make-vs-zapier-automation",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:08.200Z",
+    "action": "publish",
+    "slug": "manufacturing-ai-prompts-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:10.355Z",
+    "action": "publish",
+    "slug": "marketing-ai-prompts-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:10.356Z",
+    "action": "publish",
+    "slug": "mcp-beginner-guide-agent-tools",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:10.357Z",
+    "action": "publish",
+    "slug": "mcp-server-deployment-security-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:10.358Z",
+    "action": "publish",
+    "slug": "modal-serverless-gpu-llm-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:10.359Z",
+    "action": "publish",
+    "slug": "module-not-found-debug-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:12.425Z",
+    "action": "publish",
+    "slug": "module-not-found-debug-freelance-scope",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:12.426Z",
+    "action": "publish",
+    "slug": "module-not-found-debug-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:12.427Z",
+    "action": "publish",
+    "slug": "module-not-found-debug",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:12.428Z",
+    "action": "publish",
+    "slug": "multi-model-router-fallback-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:12.429Z",
+    "action": "publish",
+    "slug": "n8n-ai-agent-rag-memory-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:14.527Z",
+    "action": "publish",
+    "slug": "n8n-ai-agent-self-host-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:14.528Z",
+    "action": "publish",
+    "slug": "n8n-ai-agent-webhook-production-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:14.530Z",
+    "action": "publish",
+    "slug": "nextjs-hydration-error-debug-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:14.531Z",
+    "action": "publish",
+    "slug": "nextjs-hydration-error-debug-freelance-scope",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:14.532Z",
+    "action": "publish",
+    "slug": "nextjs-hydration-error-debug-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:16.625Z",
+    "action": "publish",
+    "slug": "nextjs-hydration-error-debug",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:16.626Z",
+    "action": "publish",
+    "slug": "no-code-ai-freelance-start-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:16.627Z",
+    "action": "publish",
+    "slug": "no-code-ai-freelance-start-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:16.628Z",
+    "action": "publish",
+    "slug": "no-code-ai-freelance-start",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:16.629Z",
+    "action": "publish",
+    "slug": "node-version-mismatch-fix-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:18.678Z",
+    "action": "publish",
+    "slug": "node-version-mismatch-fix-freelance-scope",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:18.679Z",
+    "action": "publish",
+    "slug": "node-version-mismatch-fix-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:18.680Z",
+    "action": "publish",
+    "slug": "node-version-mismatch-fix",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:18.681Z",
+    "action": "publish",
+    "slug": "notion-freelance-workflow-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:18.682Z",
+    "action": "publish",
+    "slug": "notion-freelance-workflow",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:20.809Z",
+    "action": "publish",
+    "slug": "npm-command-not-found-fix-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:20.811Z",
+    "action": "publish",
+    "slug": "npm-command-not-found-fix-freelance-scope",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:20.813Z",
+    "action": "publish",
+    "slug": "npm-command-not-found-fix-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:20.815Z",
+    "action": "publish",
+    "slug": "npm-command-not-found-fix",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:20.816Z",
+    "action": "publish",
+    "slug": "ollama-api-web-app-integration",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:22.929Z",
+    "action": "publish",
+    "slug": "ollama-local-model-deployment-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:22.931Z",
+    "action": "publish",
+    "slug": "open-webui-ollama-docker-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:22.932Z",
+    "action": "publish",
+    "slug": "openai-agents-sdk-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:22.933Z",
+    "action": "publish",
+    "slug": "openai-api-nextjs-route-handler-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:22.933Z",
+    "action": "publish",
+    "slug": "openai-batch-api-cost-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:24.981Z",
+    "action": "publish",
+    "slug": "openrouter-api-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:24.983Z",
+    "action": "publish",
+    "slug": "operations-ai-prompts-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:24.984Z",
+    "action": "publish",
+    "slug": "package-lock-conflict-fix-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:24.985Z",
+    "action": "publish",
+    "slug": "package-lock-conflict-fix-freelance-scope",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:24.986Z",
+    "action": "publish",
+    "slug": "package-lock-conflict-fix-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:27.100Z",
+    "action": "publish",
+    "slug": "package-lock-conflict-fix",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:27.101Z",
+    "action": "publish",
+    "slug": "paddle-vs-stripe-beginner-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:27.102Z",
+    "action": "publish",
+    "slug": "paddle-vs-stripe-beginner",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:27.104Z",
+    "action": "publish",
+    "slug": "payment-account-info-mismatch-risk-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:27.105Z",
+    "action": "publish",
+    "slug": "payment-account-info-mismatch-risk",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:29.184Z",
+    "action": "publish",
+    "slug": "payment-page-disclaimer-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:29.185Z",
+    "action": "publish",
+    "slug": "payment-page-disclaimer",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:29.186Z",
+    "action": "publish",
+    "slug": "payoneer-freelancer-beginner-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:29.187Z",
+    "action": "publish",
+    "slug": "payoneer-freelancer-beginner",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:29.188Z",
+    "action": "publish",
+    "slug": "payoneer-wise-paypal-choose-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:31.305Z",
+    "action": "publish",
+    "slug": "payoneer-wise-paypal-choose",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:31.307Z",
+    "action": "publish",
+    "slug": "paypal-freelancer-limits-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:31.308Z",
+    "action": "publish",
+    "slug": "paypal-freelancer-limits",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:31.309Z",
+    "action": "publish",
+    "slug": "paypal-vs-payoneer-beginner-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:31.310Z",
+    "action": "publish",
+    "slug": "paypal-vs-payoneer-beginner",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:33.773Z",
+    "action": "publish",
+    "slug": "permission-denied-fix-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:33.774Z",
+    "action": "publish",
+    "slug": "permission-denied-fix-freelance-scope",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:33.775Z",
+    "action": "publish",
+    "slug": "permission-denied-fix-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:33.776Z",
+    "action": "publish",
+    "slug": "permission-denied-fix",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:33.777Z",
+    "action": "publish",
+    "slug": "pinecone-rag-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:36.391Z",
+    "action": "publish",
+    "slug": "platform-payment-vs-direct-payment-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:36.393Z",
+    "action": "publish",
+    "slug": "platform-payment-vs-direct-payment",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:36.394Z",
+    "action": "publish",
+    "slug": "port-already-in-use-fix-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:36.396Z",
+    "action": "publish",
+    "slug": "port-already-in-use-fix-freelance-scope",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:36.397Z",
+    "action": "publish",
+    "slug": "port-already-in-use-fix-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:38.760Z",
+    "action": "publish",
+    "slug": "port-already-in-use-fix",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:38.761Z",
+    "action": "publish",
+    "slug": "portfolio-page-copy-template-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:38.762Z",
+    "action": "publish",
+    "slug": "portfolio-page-copy-template",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:38.763Z",
+    "action": "publish",
+    "slug": "practice-project-log-template-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:38.764Z",
+    "action": "publish",
+    "slug": "practice-project-log-template",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:41.360Z",
+    "action": "publish",
+    "slug": "practice-projects-before-clients-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:41.362Z",
+    "action": "publish",
+    "slug": "practice-projects-before-clients-mistakes",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:41.363Z",
+    "action": "publish",
+    "slug": "practice-projects-before-clients",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:41.364Z",
+    "action": "publish",
+    "slug": "pre-project-risk-assessment-template-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:41.366Z",
+    "action": "publish",
+    "slug": "pre-project-risk-assessment-template",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:43.956Z",
+    "action": "publish",
+    "slug": "product-manager-ai-prompts-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:43.957Z",
+    "action": "publish",
+    "slug": "project-delivery-checklist-items-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:43.959Z",
+    "action": "publish",
+    "slug": "project-delivery-checklist-items",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:43.960Z",
+    "action": "publish",
+    "slug": "project-retrospective-template-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:43.961Z",
+    "action": "publish",
+    "slug": "project-retrospective-template",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:46.407Z",
+    "action": "publish",
+    "slug": "promptfoo-llm-evaluation-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:46.408Z",
+    "action": "publish",
+    "slug": "qdrant-vector-database-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:46.409Z",
+    "action": "publish",
+    "slug": "quote-email-uncertain-scope-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:46.410Z",
+    "action": "publish",
+    "slug": "quote-email-uncertain-scope",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:46.411Z",
+    "action": "publish",
+    "slug": "rag-chunking-strategy-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:48.902Z",
+    "action": "publish",
+    "slug": "rag-citation-source-trace-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:48.903Z",
+    "action": "publish",
+    "slug": "rag-document-cleaning-before-upload-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:48.904Z",
+    "action": "publish",
+    "slug": "rag-evaluation-test-set-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:48.906Z",
+    "action": "publish",
+    "slug": "rag-knowledge-base-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:48.907Z",
+    "action": "publish",
+    "slug": "rag-prompt-injection-defense-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:51.628Z",
+    "action": "publish",
+    "slug": "rag-retrieval-no-context-debug-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:51.629Z",
+    "action": "publish",
+    "slug": "ragas-rag-evaluation-beginner-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:51.630Z",
+    "action": "publish",
+    "slug": "ray-serve-llm-deployment-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:51.631Z",
+    "action": "publish",
+    "slug": "real-estate-ai-prompts-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:51.632Z",
+    "action": "publish",
+    "slug": "replicate-api-ai-demo-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:54.256Z",
+    "action": "publish",
+    "slug": "runpod-serverless-llm-deployment-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:54.258Z",
+    "action": "publish",
+    "slug": "sales-ai-prompts-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:54.260Z",
+    "action": "publish",
+    "slug": "service-inquiry-form-questions-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:54.262Z",
+    "action": "publish",
+    "slug": "service-inquiry-form-questions",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:54.263Z",
+    "action": "publish",
+    "slug": "service-payment-method-beginner-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:56.835Z",
+    "action": "publish",
+    "slug": "service-payment-method-beginner",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:56.836Z",
+    "action": "publish",
+    "slug": "small-site-launch-sop-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:56.837Z",
+    "action": "publish",
+    "slug": "small-site-launch-sop",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:56.839Z",
+    "action": "publish",
+    "slug": "software-development-ai-prompts-guide",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:56.840Z",
+    "action": "publish",
+    "slug": "stripe-templates-vs-services-checklist",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:59.496Z",
+    "action": "publish",
+    "slug": "stripe-templates-vs-services",
+    "score": 100
+  },
+  {
+    "time": "2026-06-14T14:21:59.497Z",
+    "action": "publish",
+    "slug": "subscription-payment-failed-message-checklist",
+    "score": 100
   }
 ]

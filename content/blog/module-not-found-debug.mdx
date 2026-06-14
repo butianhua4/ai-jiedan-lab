@@ -1,28 +1,30 @@
 ---
-title: "module not found 报错怎么定位文件"
-slug: "module-not-found-debug"
-description: "新手遇到 module not found 时，不要立刻乱装包。本文按报错来源、导入语句、文件路径、大小写、依赖安装、路径别名和构建环境拆解定位流程，帮助你判断该改代码还是请客户补材料。"
-date: "2026-06-03"
-updatedAt: "2026-06-03"
-category: "报错解决"
+title: module not found 报错怎么定位文件
+slug: module-not-found-debug
+description: >-
+  新手遇到 module not found
+  时，不要立刻乱装包。本文按报错来源、导入语句、文件路径、大小写、依赖安装、路径别名和构建环境拆解定位流程，帮助你判断该改代码还是请客户补材料。
+date: '2026-06-03'
+updatedAt: '2026-06-14'
+category: 报错解决
 tags:
-  - "报错解决"
-  - "module not found"
-  - "前端调试"
-  - "AI 工具实践"
-author: "AI 工具指南"
-status: "draft"
-contentType: "tutorial"
-difficulty: "beginner"
-targetReader: "遇到 module not found、需要定位文件路径和依赖问题的新手"
-searchIntent: "informational"
-primaryKeyword: "module not found 报错怎么定位文件"
+  - 报错解决
+  - module not found
+  - 前端调试
+  - AI 工具实践
+author: AI 工具指南
+status: published
+contentType: tutorial
+difficulty: beginner
+targetReader: 遇到 module not found、需要定位文件路径和依赖问题的新手
+searchIntent: informational
+primaryKeyword: module not found 报错怎么定位文件
 secondaryKeywords:
-  - "模块找不到"
-  - "import 路径"
-  - "依赖安装"
-  - "AI 工具实践"
-sourceNotes: "人工重写版本；公开前仍需人工复核框架差异、路径别名、包管理器命令和客户仓库权限边界。"
+  - 模块找不到
+  - import 路径
+  - 依赖安装
+  - AI 工具实践
+sourceNotes: 人工重写版本；公开前仍需人工复核框架差异、路径别名、包管理器命令和客户仓库权限边界。
 humanReviewRequired: true
 reviewChecklist:
   hasOriginalAngle: true
@@ -34,17 +36,16 @@ reviewChecklist:
   hasClearCTA: true
 monetization:
   affiliateSlots:
-    - "工具导航"
-  templateCTA: "下载模板包"
-  serviceCTA: "联系人工协助"
+    - 工具导航
+  templateCTA: 下载模板包
+  serviceCTA: 联系人工协助
   adSlots:
-    - "article-bottom"
-qualityScore: 0
+    - article-bottom
+qualityScore: 100
 publishBatch: 13
-canonical: "https://ai-jiedan-lab.vercel.app/blog/module-not-found-debug"
-noindex: true
+canonical: 'https://ai-jiedan-lab.vercel.app/blog/module-not-found-debug'
+noindex: false
 ---
-
 # module not found 报错怎么定位文件
 
 `module not found` 的意思通常是构建工具找不到某个文件、包或路径别名。它可能出现在 Next.js、Vite、React、Node.js、TypeScript 或打包工具里。新手看到它时，最容易做错两件事：随便安装一个包，或者随便改导入路径。

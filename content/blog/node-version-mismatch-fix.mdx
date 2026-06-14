@@ -1,28 +1,30 @@
 ---
-title: "Node 版本不匹配怎么排查"
-slug: "node-version-mismatch-fix"
-description: "新手遇到 Node 版本不匹配时，先确认本地、CI、部署平台和 package.json 要求是否一致。本文按报错、当前版本、engines、锁文件、包管理器和客户环境拆解排查流程。"
-date: "2026-06-03"
-updatedAt: "2026-06-03"
-category: "报错解决"
+title: Node 版本不匹配怎么排查
+slug: node-version-mismatch-fix
+description: >-
+  新手遇到 Node 版本不匹配时，先确认本地、CI、部署平台和 package.json
+  要求是否一致。本文按报错、当前版本、engines、锁文件、包管理器和客户环境拆解排查流程。
+date: '2026-06-03'
+updatedAt: '2026-06-14'
+category: 报错解决
 tags:
-  - "报错解决"
-  - "Node.js"
-  - "版本不匹配"
-  - "AI 工具实践"
-author: "AI 工具指南"
-status: "draft"
-contentType: "tutorial"
-difficulty: "beginner"
-targetReader: "遇到 Node 版本不匹配、需要对齐本地和部署环境的新手"
-searchIntent: "informational"
-primaryKeyword: "Node 版本不匹配怎么排查"
+  - 报错解决
+  - Node.js
+  - 版本不匹配
+  - AI 工具实践
+author: AI 工具指南
+status: published
+contentType: tutorial
+difficulty: beginner
+targetReader: 遇到 Node 版本不匹配、需要对齐本地和部署环境的新手
+searchIntent: informational
+primaryKeyword: Node 版本不匹配怎么排查
 secondaryKeywords:
-  - "Node version mismatch"
-  - "npm install 报错"
-  - "部署失败"
-  - "AI 工具实践"
-sourceNotes: "人工重写版本；公开前仍需人工复核 Node 版本策略、包管理器命令、部署平台设置和客户环境边界。"
+  - Node version mismatch
+  - npm install 报错
+  - 部署失败
+  - AI 工具实践
+sourceNotes: 人工重写版本；公开前仍需人工复核 Node 版本策略、包管理器命令、部署平台设置和客户环境边界。
 humanReviewRequired: true
 reviewChecklist:
   hasOriginalAngle: true
@@ -34,17 +36,16 @@ reviewChecklist:
   hasClearCTA: true
 monetization:
   affiliateSlots:
-    - "工具导航"
-  templateCTA: "下载模板包"
-  serviceCTA: "联系人工协助"
+    - 工具导航
+  templateCTA: 下载模板包
+  serviceCTA: 联系人工协助
   adSlots:
-    - "article-bottom"
-qualityScore: 0
+    - article-bottom
+qualityScore: 100
 publishBatch: 13
-canonical: "https://ai-jiedan-lab.vercel.app/blog/node-version-mismatch-fix"
-noindex: true
+canonical: 'https://ai-jiedan-lab.vercel.app/blog/node-version-mismatch-fix'
+noindex: false
 ---
-
 # Node 版本不匹配怎么排查
 
 Node 版本不匹配经常表现为 `npm install` 失败、构建失败、CI 失败，或者本地能跑但部署平台失败。它不是一个单纯“升级到最新版本”就能解决的问题。项目可能要求 Node 18、20 或 22，不同依赖和框架也会有自己的兼容范围。

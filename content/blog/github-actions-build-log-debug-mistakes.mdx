@@ -1,28 +1,30 @@
 ---
-title: "GitHub Actions build 失败常见错误和解决步骤"
-slug: "github-actions-build-log-debug-mistakes"
-description: "整理新手排查 GitHub Actions build 失败时的常见错误：只看最后一行、改错 workflow、删除测试、泄露 secret、忽略客户权限，并给出更稳的解决顺序。"
-date: "2026-06-03"
-updatedAt: "2026-06-03"
-category: "报错解决"
+title: GitHub Actions build 失败常见错误和解决步骤
+slug: github-actions-build-log-debug-mistakes
+description: >-
+  整理新手排查 GitHub Actions build 失败时的常见错误：只看最后一行、改错 workflow、删除测试、泄露
+  secret、忽略客户权限，并给出更稳的解决顺序。
+date: '2026-06-03'
+updatedAt: '2026-06-14'
+category: 报错解决
 tags:
-  - "报错解决"
-  - "GitHub Actions"
-  - "故障排查"
-  - "AI 工具实践"
-author: "AI 工具指南"
-status: "draft"
-contentType: "troubleshooting"
-difficulty: "beginner"
-targetReader: "已经看到 GitHub Actions 红叉、但排查顺序容易混乱的新手"
-searchIntent: "informational"
-primaryKeyword: "GitHub Actions build 失败常见错误"
+  - 报错解决
+  - GitHub Actions
+  - 故障排查
+  - AI 工具实践
+author: AI 工具指南
+status: published
+contentType: troubleshooting
+difficulty: beginner
+targetReader: 已经看到 GitHub Actions 红叉、但排查顺序容易混乱的新手
+searchIntent: informational
+primaryKeyword: GitHub Actions build 失败常见错误
 secondaryKeywords:
-  - "GitHub Actions 日志"
-  - "CI build 失败"
-  - "部署失败"
-  - "AI 工具实践"
-sourceNotes: "人工重写版本；公开前仍需人工复核 GitHub Actions 界面、CI 命令、secret 安全和客户授权边界。"
+  - GitHub Actions 日志
+  - CI build 失败
+  - 部署失败
+  - AI 工具实践
+sourceNotes: 人工重写版本；公开前仍需人工复核 GitHub Actions 界面、CI 命令、secret 安全和客户授权边界。
 humanReviewRequired: true
 reviewChecklist:
   hasOriginalAngle: true
@@ -34,17 +36,16 @@ reviewChecklist:
   hasClearCTA: true
 monetization:
   affiliateSlots:
-    - "工具导航"
-  templateCTA: "下载模板包"
-  serviceCTA: "联系人工协助"
+    - 工具导航
+  templateCTA: 下载模板包
+  serviceCTA: 联系人工协助
   adSlots:
-    - "article-bottom"
-qualityScore: 0
+    - article-bottom
+qualityScore: 100
 publishBatch: 13
-canonical: "https://ai-jiedan-lab.vercel.app/blog/github-actions-build-log-debug-mistakes"
-noindex: true
+canonical: 'https://ai-jiedan-lab.vercel.app/blog/github-actions-build-log-debug-mistakes'
+noindex: false
 ---
-
 # GitHub Actions build 失败常见错误和解决步骤
 
 GitHub Actions build 失败时，新手最容易被红叉吓到，然后开始乱改配置。其实 CI 排查的第一步不是修改，而是定位：哪个 workflow、哪个 job、哪个 step、哪条关键错误。

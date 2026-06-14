@@ -1,28 +1,32 @@
 ---
-title: "Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界"
-slug: "kubernetes-gpu-llm-deployment-guide"
-description: "面向新手整理 Kubernetes 部署 GPU LLM 的基础检查点，覆盖 NVIDIA device plugin、nvidia.com/gpu、节点驱动、Pod 资源、日志和生产边界。"
-date: "2026-06-05"
-updatedAt: "2026-06-05"
-category: "AI 基建"
+title: Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界
+slug: kubernetes-gpu-llm-deployment-guide
+description: >-
+  面向新手整理 Kubernetes 部署 GPU LLM 的基础检查点，覆盖 NVIDIA device
+  plugin、nvidia.com/gpu、节点驱动、Pod 资源、日志和生产边界。
+date: '2026-06-05'
+updatedAt: '2026-06-14'
+category: AI 基建
 tags:
-  - "Kubernetes"
-  - "GPU"
-  - "Device Plugin"
-  - "大模型部署"
-author: "AI 工具指南"
-status: "draft"
-contentType: "tutorial"
-difficulty: "intermediate"
-targetReader: "想在 Kubernetes 集群里部署 GPU 大模型服务的新手进阶用户"
-searchIntent: "informational"
-primaryKeyword: "Kubernetes GPU 大模型部署"
+  - Kubernetes
+  - GPU
+  - Device Plugin
+  - 大模型部署
+author: AI 工具指南
+status: published
+contentType: tutorial
+difficulty: intermediate
+targetReader: 想在 Kubernetes 集群里部署 GPU 大模型服务的新手进阶用户
+searchIntent: informational
+primaryKeyword: Kubernetes GPU 大模型部署
 secondaryKeywords:
-  - "Kubernetes nvidia.com/gpu"
-  - "NVIDIA device plugin"
-  - "K8s GPU scheduling"
-  - "LLM Kubernetes deployment"
-sourceNotes: "参考 Kubernetes 官方 GPU scheduling 和 device plugin 文档方向整理；正式发布前需要人工核对最新 Kubernetes、NVIDIA plugin 和集群环境。"
+  - Kubernetes nvidia.com/gpu
+  - NVIDIA device plugin
+  - K8s GPU scheduling
+  - LLM Kubernetes deployment
+sourceNotes: >-
+  参考 Kubernetes 官方 GPU scheduling 和 device plugin 文档方向整理；正式发布前需要人工核对最新
+  Kubernetes、NVIDIA plugin 和集群环境。
 humanReviewRequired: true
 reviewChecklist:
   hasOriginalAngle: true
@@ -34,15 +38,15 @@ reviewChecklist:
   hasClearCTA: true
 monetization:
   affiliateSlots:
-    - "工具导航"
-  templateCTA: "下载 Kubernetes GPU 部署检查表"
-  serviceCTA: "联系人工协助评估 K8s GPU 集群"
+    - 工具导航
+  templateCTA: 下载 Kubernetes GPU 部署检查表
+  serviceCTA: 联系人工协助评估 K8s GPU 集群
   adSlots:
-    - "article-bottom"
-qualityScore: 86
+    - article-bottom
+qualityScore: 100
 publishBatch: 29
-canonical: "https://ai-jiedan-lab.vercel.app/blog/kubernetes-gpu-llm-deployment-guide"
-noindex: true
+canonical: 'https://ai-jiedan-lab.vercel.app/blog/kubernetes-gpu-llm-deployment-guide'
+noindex: false
 ---
 # Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界
 

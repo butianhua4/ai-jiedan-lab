@@ -1,28 +1,28 @@
 ---
-title: "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型"
-slug: "local-llm-vram-not-enough-guide"
-description: "面向新手解释本地部署大模型显存不够的排查思路，覆盖模型大小、量化、KV cache、上下文长度、并发、CPU offload 和模型选择。"
-date: "2026-06-06"
-updatedAt: "2026-06-06"
-category: "AI 部署"
+title: 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型
+slug: local-llm-vram-not-enough-guide
+description: 面向新手解释本地部署大模型显存不够的排查思路，覆盖模型大小、量化、KV cache、上下文长度、并发、CPU offload 和模型选择。
+date: '2026-06-06'
+updatedAt: '2026-06-14'
+category: AI 部署
 tags:
-  - "本地大模型"
-  - "显存"
-  - "vLLM"
-  - "量化"
-author: "AI 工具指南"
-status: "draft"
-contentType: "tutorial"
-difficulty: "beginner"
-targetReader: "本地跑模型遇到 CUDA OOM、显存不足或速度很慢的新手"
-searchIntent: "informational"
-primaryKeyword: "本地部署大模型显存不够"
+  - 本地大模型
+  - 显存
+  - vLLM
+  - 量化
+author: AI 工具指南
+status: published
+contentType: tutorial
+difficulty: beginner
+targetReader: 本地跑模型遇到 CUDA OOM、显存不足或速度很慢的新手
+searchIntent: informational
+primaryKeyword: 本地部署大模型显存不够
 secondaryKeywords:
-  - "大模型 CUDA OOM"
-  - "vLLM 显存不足"
-  - "LLM 量化"
-  - "本地模型显存"
-sourceNotes: "参考 vLLM quantization 文档、模型部署显存经验和本地推理常见排查方法整理；正式发布前需要人工核对具体框架参数。"
+  - 大模型 CUDA OOM
+  - vLLM 显存不足
+  - LLM 量化
+  - 本地模型显存
+sourceNotes: 参考 vLLM quantization 文档、模型部署显存经验和本地推理常见排查方法整理；正式发布前需要人工核对具体框架参数。
 humanReviewRequired: true
 reviewChecklist:
   hasOriginalAngle: true
@@ -34,15 +34,15 @@ reviewChecklist:
   hasClearCTA: true
 monetization:
   affiliateSlots:
-    - "工具导航"
-  templateCTA: "下载本地模型显存排查表"
-  serviceCTA: "联系人工协助选择本地模型部署方案"
+    - 工具导航
+  templateCTA: 下载本地模型显存排查表
+  serviceCTA: 联系人工协助选择本地模型部署方案
   adSlots:
-    - "article-bottom"
-qualityScore: 86
+    - article-bottom
+qualityScore: 100
 publishBatch: 32
-canonical: "https://ai-jiedan-lab.vercel.app/blog/local-llm-vram-not-enough-guide"
-noindex: true
+canonical: 'https://ai-jiedan-lab.vercel.app/blog/local-llm-vram-not-enough-guide'
+noindex: false
 ---
 # 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型
 

@@ -1,28 +1,30 @@
 ---
-title: "GitHub Actions build 失败怎么看日志"
-slug: "github-actions-build-log-debug"
-description: "新手遇到 GitHub Actions build 失败时，不要只看红叉。本文按 workflow、job、step、关键错误、环境变量、权限和本地复现拆解日志排查流程，帮助你判断下一步该修代码还是请客户补授权。"
-date: "2026-06-03"
-updatedAt: "2026-06-03"
-category: "报错解决"
+title: GitHub Actions build 失败怎么看日志
+slug: github-actions-build-log-debug
+description: >-
+  新手遇到 GitHub Actions build 失败时，不要只看红叉。本文按
+  workflow、job、step、关键错误、环境变量、权限和本地复现拆解日志排查流程，帮助你判断下一步该修代码还是请客户补授权。
+date: '2026-06-03'
+updatedAt: '2026-06-14'
+category: 报错解决
 tags:
-  - "报错解决"
-  - "GitHub Actions"
-  - "CI 日志"
-  - "AI 工具实践"
-author: "AI 工具指南"
-status: "draft"
-contentType: "tutorial"
-difficulty: "beginner"
-targetReader: "遇到 GitHub Actions 构建失败、需要从日志定位原因的新手"
-searchIntent: "informational"
-primaryKeyword: "GitHub Actions build 失败怎么看日志"
+  - 报错解决
+  - GitHub Actions
+  - CI 日志
+  - AI 工具实践
+author: AI 工具指南
+status: published
+contentType: tutorial
+difficulty: beginner
+targetReader: 遇到 GitHub Actions 构建失败、需要从日志定位原因的新手
+searchIntent: informational
+primaryKeyword: GitHub Actions build 失败怎么看日志
 secondaryKeywords:
-  - "GitHub Actions 日志"
-  - "CI build 失败"
-  - "部署失败"
-  - "AI 工具实践"
-sourceNotes: "人工重写版本；公开前仍需人工复核 GitHub Actions 界面、命令示例、客户授权边界和 CI 配置建议。"
+  - GitHub Actions 日志
+  - CI build 失败
+  - 部署失败
+  - AI 工具实践
+sourceNotes: 人工重写版本；公开前仍需人工复核 GitHub Actions 界面、命令示例、客户授权边界和 CI 配置建议。
 humanReviewRequired: true
 reviewChecklist:
   hasOriginalAngle: true
@@ -34,17 +36,16 @@ reviewChecklist:
   hasClearCTA: true
 monetization:
   affiliateSlots:
-    - "工具导航"
-  templateCTA: "下载模板包"
-  serviceCTA: "联系人工协助"
+    - 工具导航
+  templateCTA: 下载模板包
+  serviceCTA: 联系人工协助
   adSlots:
-    - "article-bottom"
-qualityScore: 0
+    - article-bottom
+qualityScore: 100
 publishBatch: 13
-canonical: "https://ai-jiedan-lab.vercel.app/blog/github-actions-build-log-debug"
-noindex: true
+canonical: 'https://ai-jiedan-lab.vercel.app/blog/github-actions-build-log-debug'
+noindex: false
 ---
-
 # GitHub Actions build 失败怎么看日志
 
 GitHub Actions build 失败时，红叉只是入口，真正有用的信息在 workflow、job、step 和错误上下文里。新手不要只把最后一行复制给 AI，也不要立刻修改一堆配置。先看哪一个步骤失败，再判断是依赖、测试、环境变量、权限、缓存还是部署平台问题。
