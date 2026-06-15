@@ -1,0 +1,5 @@
+{"timestamp":"2026-06-03T21:18:23.000+08:00","event":"generate content","level":"info","message":"content/content-log.json exists and records generated article files.","source":"content/content-log.json"}
+{"timestamp":"2026-06-14T22:21:59.000+08:00","event":"publish actions","level":"info","message":"content/publish-log.json exists and records article publish operations up to the 500 public article wave.","source":"content/publish-log.json"}
+{"timestamp":"2026-06-15T00:25:11.000+08:00","event":"build run","level":"info","message":".next/BUILD_ID exists after the latest successful local production build.","source":".next/BUILD_ID"}
+{"timestamp":"2026-06-15T00:27:22.000+08:00","event":"sitemap update","level":"info","message":".next/prerender-manifest.json exists after sitemap and static routes were generated during build.","source":".next/prerender-manifest.json"}
+{"timestamp":"2026-06-15T10:26:12.564+08:00","event":"build run","level":"info","message":"npm run build completed successfully after adding System Live Report routes.","source":"next build"}
