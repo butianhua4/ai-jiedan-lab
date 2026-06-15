@@ -1,9 +1,11 @@
 {
-  "generatedAt": "2026-06-14T10:39:37.026Z",
-  "ok": true,
+  "generatedAt": "2026-06-15T13:15:30.193Z",
+  "ok": false,
   "base": "https://ai-jiedan-lab.vercel.app",
   "fetchBase": "https://ai-jiedan-lab.vercel.app",
-  "failedChecks": [],
+  "failedChecks": [
+    "sitemap-leaks-drafts"
+  ],
   "pages": [
     {
       "path": "/",
@@ -57,6 +59,24 @@
       "path": "/sitemap.xml",
       "status": 200,
       "ok": true,
+      "expected": "<sitemapindex"
+    },
+    {
+      "path": "/sitemap-blog.xml",
+      "status": 200,
+      "ok": true,
+      "expected": "<urlset"
+    },
+    {
+      "path": "/sitemap-q.xml",
+      "status": 200,
+      "ok": true,
+      "expected": "<urlset"
+    },
+    {
+      "path": "/sitemap-cluster.xml",
+      "status": 200,
+      "ok": true,
       "expected": "<urlset"
     },
     {
@@ -73,15 +93,18 @@
     }
   ],
   "articles": {
-    "publicCount": 15,
-    "checked": 15,
+    "publicCount": 500,
+    "checked": 500,
     "failed": [],
     "missingFromSitemap": []
   },
   "sitemap": {
-    "urlCount": 96,
-    "usesBase": true,
-    "leaksDrafts": false
+    "blogUrlCount": 500,
+    "clusterUrlCount": 6,
+    "leaksDrafts": true,
+    "qUrlCount": 500,
+    "sitemapIndexCount": 4,
+    "usesBase": true
   },
   "robots": {
     "allowsAll": true,
@@ -90,6 +113,7 @@
   "llms": {
     "usesBase": true,
     "includesPublished": true,
+    "recentPostLimit": 30,
     "leaksDrafts": false
   },
   "canonical": {

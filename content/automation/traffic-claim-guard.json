@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T10:39:38.240Z",
+  "generatedAt": "2026-06-15T12:59:49.016Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
@@ -8,7 +8,7 @@
     "filesScanned": 219,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 3828
+    "watchMentions": 3829
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -41,30 +41,6 @@
       "line": 50,
       "reason": "traffic-related mention",
       "text": "\"- The site does not claim real traffic, impressions, income guarantees, or automatic publishing.\","
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 24,
-      "reason": "traffic-related mention",
-      "text": "## 4. 收款和流量收益"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 29,
-      "reason": "traffic-related mention",
-      "text": "- 稳定流量后再接联盟链接和广告。"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 46,
-      "reason": "traffic-related mention",
-      "text": "- 有 5 篇以上人工审核公开文章：注册 Google Search Console。"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 47,
-      "reason": "traffic-related mention",
-      "text": "- 有稳定访问：开启 Vercel Web Analytics 或 Google Analytics。"
     },
     {
       "file": "docs/ai-deployment-coverage.md",
@@ -491,6 +467,30 @@
       "line": 1893,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
+    },
+    {
+      "file": "docs/automation-gate.md",
+      "line": 34,
+      "reason": "traffic-related mention",
+      "text": "| publication bottleneck report stays publish-safe | PASS | unsafe=0, publishConfirm=0, preflightFailed=0, traffic=false |"
+    },
+    {
+      "file": "docs/automation-gate.md",
+      "line": 36,
+      "reason": "traffic-related mention",
+      "text": "| mojibake remediation brief stays human-gated and publish-safe | PASS | unsafe=0, publishConfirm=0, traffic=false |"
+    },
+    {
+      "file": "docs/automation-gate.md",
+      "line": 40,
+      "reason": "traffic-related mention",
+      "text": "| traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |"
+    },
+    {
+      "file": "docs/automation-gate.md",
+      "line": 41,
+      "reason": "traffic-related mention",
+      "text": "| traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |"
     }
   ],
   "nextActions": [

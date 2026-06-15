@@ -24,12 +24,31 @@ async function main() {
   ];
 
   if (readArg("url") || readArg("base")) {
-    const [home, robots, sitemap] = await Promise.all([fetchPage("/"), fetchPage("/robots.txt"), fetchPage("/sitemap.xml")]);
+    const [home, robots, sitemap, blogSitemap, qSitemap, clusterSitemap] = await Promise.all([
+      fetchPage("/"),
+      fetchPage("/robots.txt"),
+      fetchPage("/sitemap.xml"),
+      fetchPage("/sitemap-blog.xml"),
+      fetchPage("/sitemap-q.xml"),
+      fetchPage("/sitemap-cluster.xml"),
+    ]);
     checks.push({ name: "homepage returns 200", ok: home.status === 200, detail: `${home.status}` });
     checks.push({ name: "robots returns 200", ok: robots.status === 200, detail: `${robots.status}` });
-    checks.push({ name: "sitemap returns 200", ok: sitemap.status === 200, detail: `${sitemap.status}` });
+    checks.push({ name: "sitemap index returns 200", ok: sitemap.status === 200, detail: `${sitemap.status}` });
+    checks.push({ name: "blog sitemap returns 200", ok: blogSitemap.status === 200, detail: `${blogSitemap.status}` });
+    checks.push({ name: "q sitemap returns 200", ok: qSitemap.status === 200, detail: `${qSitemap.status}` });
+    checks.push({ name: "cluster sitemap returns 200", ok: clusterSitemap.status === 200, detail: `${clusterSitemap.status}` });
     checks.push({ name: "robots points to sitemap", ok: robots.text.includes(`${base}/sitemap.xml`) });
-    checks.push({ name: "sitemap has public urls", ok: (sitemap.text.match(/<loc>/g) || []).length > 10 });
+    checks.push({
+      name: "sitemap index points to layered sitemaps",
+      ok:
+        sitemap.text.includes(`${base}/sitemap-blog.xml`) &&
+        sitemap.text.includes(`${base}/sitemap-q.xml`) &&
+        sitemap.text.includes(`${base}/sitemap-cluster.xml`),
+    });
+    checks.push({ name: "blog sitemap has public urls", ok: (blogSitemap.text.match(/<url>/g) || []).length > 100 });
+    checks.push({ name: "q sitemap has public urls", ok: (qSitemap.text.match(/<url>/g) || []).length > 100 });
+    checks.push({ name: "cluster sitemap has public urls", ok: (clusterSitemap.text.match(/<url>/g) || []).length >= 5 });
 
     if (expectedToken) {
       checks.push({
