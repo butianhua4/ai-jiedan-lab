@@ -6,9 +6,10 @@ export default function robots(): MetadataRoute.Robots {
     rules: [{ userAgent: "*", allow: "/" }],
     sitemap: [
       `${site.url}/sitemap.xml`,
-      `${site.url}/sitemap-blog.xml`,
+      `${site.url}/sitemap-priority.xml`,
       `${site.url}/sitemap-q.xml`,
       `${site.url}/sitemap-cluster.xml`,
+      `${site.url}/sitemap-blog.xml`,
       `${site.url}/sitemap-static.xml`,
     ],
   };

@@ -1,4 +1,3 @@
-import { getCategorySlugs, getTagSlugs } from "@/lib/blog";
 import { tools } from "@/data/tools";
 import { sitemapUrlSet } from "@/lib/sitemap-xml";
 
@@ -30,8 +29,6 @@ export function GET() {
     "/monetization",
   ];
   const toolRoutes = tools.map((tool) => `/tools/${tool.slug}`);
-  const categoryRoutes = getCategorySlugs().map((slug) => `/category/${slug}`);
-  const tagRoutes = getTagSlugs().map((slug) => `/tag/${slug}`);
 
-  return sitemapUrlSet([...staticRoutes, ...toolRoutes, ...categoryRoutes, ...tagRoutes].map((path) => ({ path, lastModified: new Date() })));
+  return sitemapUrlSet([...staticRoutes, ...toolRoutes].map((path) => ({ path, lastModified: new Date() })));
 }
