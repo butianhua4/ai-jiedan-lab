@@ -3,6 +3,9 @@ import { getSitemapPriority } from "@/lib/sitemap-priority";
 import { sitemapUrlSet, type SitemapUrl } from "@/lib/sitemap-xml";
 import type { BlogPost } from "@/lib/types";
 
+export const dynamic = "force-static";
+export const revalidate = 86400;
+
 export function GET() {
   const qPriority = getSitemapPriority("q");
   const clusterPriority = getSitemapPriority("cluster");
