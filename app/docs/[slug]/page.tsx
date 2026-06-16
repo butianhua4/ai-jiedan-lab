@@ -50,6 +50,11 @@ const docs = {
     title: "Google Search Console 提交流程",
     description: "如何验证站点并提交 sitemap。",
   },
+  "search-console-status-2026-06-16": {
+    file: "search-console-status-2026-06-16.md",
+    title: "Search Console 状态 2026-06-16",
+    description: "记录 q 页面公开可见信号、SEO warming 阶段和下一步流量检测动作。",
+  },
   "tomorrow-registration-tasks": {
     file: "tomorrow-registration-tasks.md",
     title: "明日注册待办",

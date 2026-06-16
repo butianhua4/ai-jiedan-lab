@@ -28,6 +28,11 @@ const docs = [
     href: "/docs/search-console-setup",
   },
   {
+    title: "Search Console 状态 2026-06-16",
+    description: "记录 q 页面公开可见信号、warming 阶段和下一步流量检测动作。",
+    href: "/docs/search-console-status-2026-06-16",
+  },
+  {
     title: "上线后检查清单",
     description: "每次 Vercel 部署后检查页面、sitemap、robots、canonical 和草稿泄露。",
     href: "/docs/post-deploy-checklist",
