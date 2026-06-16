@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T05:16:45.429Z",
+  "generatedAt": "2026-06-16T18:18:15.565Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -8,14 +8,14 @@
     "stopBefore": "Use review suggestions during human review. Do not change status or publish without explicit human approval."
   },
   "summary": {
-    "averageExactMatches": 1.75,
-    "averageMatchedFamilies": 6.92,
+    "averageExactMatches": 0.5,
+    "averageMatchedFamilies": 6.75,
     "blockingItems": 0,
     "items": 12,
     "queryCoverageItems": 12,
-    "queryCoverageUniqueQueries": 365,
+    "queryCoverageUniqueQueries": 352,
     "readyItems": 12,
-    "warningItems": 7
+    "warningItems": 10
   },
   "sourceEvidence": {
     "queryCoverageGuardrails": {
@@ -42,22 +42,22 @@
       },
       "descriptionHit": true,
       "exactQueryMatches": 0,
-      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
       "headingFamilyMatches": {
         "howTo": true,
         "deployment": false,
         "template": false,
         "comparison": false,
         "risk": true,
-        "costOps": true,
+        "costOps": false,
         "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "客服 AI 模型选型",
+      "primaryKeyword": "RAG 向量数据库怎么选",
       "queryCount": 35,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
       "titleHit": true,
       "warningIssues": [
         "few exact query variant matches in article text"
@@ -76,23 +76,131 @@
         "intentSeeds": true
       },
       "descriptionHit": true,
-      "exactQueryMatches": 1,
-      "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
+      "exactQueryMatches": 0,
+      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
       "headingFamilyMatches": {
         "howTo": true,
         "deployment": false,
+        "template": false,
+        "comparison": false,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": false
+      },
+      "matchedFamilies": 7,
+      "primaryKeyword": "Vercel AI Gateway 多模型",
+      "queryCount": 30,
+      "readyForManualReview": true,
+      "reviewSuggestions": [],
+      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+      "titleHit": true,
+      "warningIssues": [
+        "few exact query variant matches in article text"
+      ],
+      "wave": 1
+    },
+    {
+      "blockingIssues": [],
+      "bodyFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
         "template": true,
+        "comparison": true,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": true
+      },
+      "descriptionHit": true,
+      "exactQueryMatches": 0,
+      "file": "content/blog/supabase-pgvector-rag-guide.mdx",
+      "headingFamilyMatches": {
+        "howTo": true,
+        "deployment": false,
+        "template": false,
         "comparison": false,
         "risk": true,
         "costOps": false,
         "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "数据分析 AI 提示词",
+      "primaryKeyword": "Supabase pgvector",
       "queryCount": 35,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
+      "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
+      "titleHit": true,
+      "warningIssues": [
+        "few exact query variant matches in article text"
+      ],
+      "wave": 1
+    },
+    {
+      "blockingIssues": [],
+      "bodyFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
+        "template": true,
+        "comparison": true,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": false
+      },
+      "descriptionHit": true,
+      "exactQueryMatches": 0,
+      "file": "content/blog/vllm-deployment-beginner-guide.mdx",
+      "headingFamilyMatches": {
+        "howTo": true,
+        "deployment": false,
+        "template": false,
+        "comparison": false,
+        "risk": true,
+        "costOps": false,
+        "intentSeeds": false
+      },
+      "matchedFamilies": 6,
+      "primaryKeyword": "vLLM 部署",
+      "queryCount": 30,
+      "readyForManualReview": true,
+      "reviewSuggestions": [
+        "人工审核时检查是否自然覆盖核心搜索种子词，不要硬塞关键词。"
+      ],
+      "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
+      "titleHit": true,
+      "warningIssues": [
+        "few exact query variant matches in article text",
+        "missing query-family signals: intentSeeds"
+      ],
+      "wave": 2
+    },
+    {
+      "blockingIssues": [],
+      "bodyFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
+        "template": true,
+        "comparison": true,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": true
+      },
+      "descriptionHit": true,
+      "exactQueryMatches": 0,
+      "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
+      "headingFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
+        "template": false,
+        "comparison": true,
+        "risk": true,
+        "costOps": false,
+        "intentSeeds": false
+      },
+      "matchedFamilies": 7,
+      "primaryKeyword": "Vercel AI SDK 聊天机器人部署",
+      "queryCount": 35,
+      "readyForManualReview": true,
+      "reviewSuggestions": [],
+      "title": "Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查",
       "titleHit": true,
       "warningIssues": [
         "few exact query variant matches in article text"
@@ -112,57 +220,22 @@
       },
       "descriptionHit": true,
       "exactQueryMatches": 1,
-      "file": "content/blog/education-ai-prompts-guide.mdx",
+      "file": "content/blog/vercel-404-after-deploy-checklist.mdx",
       "headingFamilyMatches": {
-        "howTo": true,
-        "deployment": false,
-        "template": false,
-        "comparison": false,
-        "risk": true,
-        "costOps": false,
-        "intentSeeds": false
-      },
-      "matchedFamilies": 7,
-      "primaryKeyword": "教育 AI 提示词",
-      "queryCount": 35,
-      "readyForManualReview": true,
-      "reviewSuggestions": [],
-      "title": "教育 AI 提示词模板：备课、教案、测验、反馈和学习计划",
-      "titleHit": true,
-      "warningIssues": [
-        "few exact query variant matches in article text"
-      ],
-      "wave": 2
-    },
-    {
-      "blockingIssues": [],
-      "bodyFamilyMatches": {
         "howTo": true,
         "deployment": true,
         "template": true,
         "comparison": true,
         "risk": true,
         "costOps": true,
-        "intentSeeds": true
-      },
-      "descriptionHit": true,
-      "exactQueryMatches": 1,
-      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-      "headingFamilyMatches": {
-        "howTo": true,
-        "deployment": false,
-        "template": false,
-        "comparison": false,
-        "risk": true,
-        "costOps": true,
         "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "AI 自动化项目报价",
-      "queryCount": 35,
+      "primaryKeyword": "Vercel 部署后 404 检查清单",
+      "queryCount": 30,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+      "title": "Vercel 部署后 404 检查清单：逐页验收更稳",
       "titleHit": true,
       "warningIssues": [
         "few exact query variant matches in article text"
@@ -182,8 +255,34 @@
       },
       "descriptionHit": true,
       "exactQueryMatches": 0,
-      "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+      "file": "content/blog/vercel-build-failed-causes-checklist.mdx",
       "headingFamilyMatches": {
+        "howTo": true,
+        "deployment": false,
+        "template": true,
+        "comparison": false,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": false
+      },
+      "matchedFamilies": 6,
+      "primaryKeyword": "Vercel build failed 排查清单",
+      "queryCount": 30,
+      "readyForManualReview": true,
+      "reviewSuggestions": [
+        "人工审核时检查是否自然覆盖核心搜索种子词，不要硬塞关键词。"
+      ],
+      "title": "Vercel build failed 排查清单：从日志到重新部署",
+      "titleHit": true,
+      "warningIssues": [
+        "few exact query variant matches in article text",
+        "missing query-family signals: intentSeeds"
+      ],
+      "wave": 3
+    },
+    {
+      "blockingIssues": [],
+      "bodyFamilyMatches": {
         "howTo": true,
         "deployment": true,
         "template": true,
@@ -192,20 +291,32 @@
         "costOps": true,
         "intentSeeds": false
       },
+      "descriptionHit": true,
+      "exactQueryMatches": 0,
+      "file": "content/blog/together-ai-api-beginner-guide.mdx",
+      "headingFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
+        "template": false,
+        "comparison": false,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": false
+      },
       "matchedFamilies": 6,
-      "primaryKeyword": "Open WebUI Functions Pipelines",
+      "primaryKeyword": "Together AI API 接入",
       "queryCount": 35,
       "readyForManualReview": true,
       "reviewSuggestions": [
         "人工审核时检查是否自然覆盖核心搜索种子词，不要硬塞关键词。"
       ],
-      "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+      "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
       "titleHit": true,
       "warningIssues": [
         "few exact query variant matches in article text",
         "missing query-family signals: intentSeeds"
       ],
-      "wave": 4
+      "wave": 3
     },
     {
       "blockingIssues": [],
@@ -220,22 +331,22 @@
       },
       "descriptionHit": true,
       "exactQueryMatches": 1,
-      "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+      "file": "content/blog/vector-database-beginner-guide.mdx",
       "headingFamilyMatches": {
         "howTo": true,
         "deployment": false,
         "template": false,
-        "comparison": false,
+        "comparison": true,
         "risk": true,
-        "costOps": false,
+        "costOps": true,
         "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "Dify 工作流错误处理",
+      "primaryKeyword": "向量数据库",
       "queryCount": 35,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+      "title": "向量数据库怎么选：新手先理解 embedding 和检索",
       "titleHit": true,
       "warningIssues": [
         "few exact query variant matches in article text"
@@ -254,23 +365,23 @@
         "intentSeeds": true
       },
       "descriptionHit": true,
-      "exactQueryMatches": 1,
-      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "exactQueryMatches": 0,
+      "file": "content/blog/vercel-build-failed-causes-freelance-scope.mdx",
       "headingFamilyMatches": {
         "howTo": true,
         "deployment": false,
         "template": false,
         "comparison": false,
         "risk": true,
-        "costOps": true,
+        "costOps": false,
         "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "AI API Key 安全管理",
+      "primaryKeyword": "Vercel build failed 项目",
       "queryCount": 30,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "title": "Vercel build failed 排查能不能项目：先看这 7 个边界",
       "titleHit": true,
       "warningIssues": [
         "few exact query variant matches in article text"
@@ -291,25 +402,27 @@
         "intentSeeds": true
       },
       "descriptionHit": true,
-      "exactQueryMatches": 4,
-      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "exactQueryMatches": 0,
+      "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
       "headingFamilyMatches": {
         "howTo": true,
         "deployment": false,
-        "template": true,
+        "template": false,
         "comparison": false,
         "risk": true,
         "costOps": false,
         "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "全行业 AI 提示词模板",
+      "primaryKeyword": "RAG 向量数据库怎么选",
       "queryCount": 35,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
       "titleHit": true,
-      "warningIssues": [],
+      "warningIssues": [
+        "few exact query variant matches in article text"
+      ],
       "wave": 1
     },
     {
@@ -325,7 +438,7 @@
       },
       "descriptionHit": true,
       "exactQueryMatches": 0,
-      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
       "headingFamilyMatches": {
         "howTo": true,
         "deployment": false,
@@ -336,11 +449,11 @@
         "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "客服 AI 模型选型",
-      "queryCount": 35,
+      "primaryKeyword": "Vercel AI Gateway 多模型",
+      "queryCount": 30,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
       "titleHit": true,
       "warningIssues": [
         "few exact query variant matches in article text"
@@ -359,25 +472,27 @@
         "intentSeeds": true
       },
       "descriptionHit": true,
-      "exactQueryMatches": 4,
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "exactQueryMatches": 0,
+      "file": "content/blog/supabase-pgvector-rag-guide.mdx",
       "headingFamilyMatches": {
         "howTo": true,
-        "deployment": true,
-        "template": true,
-        "comparison": true,
+        "deployment": false,
+        "template": false,
+        "comparison": false,
         "risk": true,
-        "costOps": true,
-        "intentSeeds": true
+        "costOps": false,
+        "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "AI Agent 部署",
+      "primaryKeyword": "Supabase pgvector",
       "queryCount": 35,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
       "titleHit": true,
-      "warningIssues": [],
+      "warningIssues": [
+        "few exact query variant matches in article text"
+      ],
       "wave": 1
     },
     {
@@ -392,197 +507,26 @@
         "intentSeeds": true
       },
       "descriptionHit": true,
-      "exactQueryMatches": 1,
-      "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
-      "headingFamilyMatches": {
-        "howTo": true,
-        "deployment": false,
-        "template": true,
-        "comparison": false,
-        "risk": true,
-        "costOps": false,
-        "intentSeeds": false
-      },
-      "matchedFamilies": 7,
-      "primaryKeyword": "数据分析 AI 提示词",
-      "queryCount": 35,
-      "readyForManualReview": true,
-      "reviewSuggestions": [],
-      "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
-      "titleHit": true,
-      "warningIssues": [
-        "few exact query variant matches in article text"
-      ],
-      "wave": 2
-    },
-    {
-      "blockingIssues": [],
-      "bodyFamilyMatches": {
-        "howTo": true,
-        "deployment": true,
-        "template": true,
-        "comparison": true,
-        "risk": true,
-        "costOps": true,
-        "intentSeeds": true
-      },
-      "descriptionHit": true,
-      "exactQueryMatches": 1,
-      "file": "content/blog/education-ai-prompts-guide.mdx",
-      "headingFamilyMatches": {
-        "howTo": true,
-        "deployment": false,
-        "template": false,
-        "comparison": false,
-        "risk": true,
-        "costOps": false,
-        "intentSeeds": false
-      },
-      "matchedFamilies": 7,
-      "primaryKeyword": "教育 AI 提示词",
-      "queryCount": 35,
-      "readyForManualReview": true,
-      "reviewSuggestions": [],
-      "title": "教育 AI 提示词模板：备课、教案、测验、反馈和学习计划",
-      "titleHit": true,
-      "warningIssues": [
-        "few exact query variant matches in article text"
-      ],
-      "wave": 2
-    },
-    {
-      "blockingIssues": [],
-      "bodyFamilyMatches": {
-        "howTo": true,
-        "deployment": true,
-        "template": true,
-        "comparison": true,
-        "risk": true,
-        "costOps": true,
-        "intentSeeds": true
-      },
-      "descriptionHit": true,
       "exactQueryMatches": 2,
-      "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+      "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
       "headingFamilyMatches": {
         "howTo": true,
-        "deployment": false,
-        "template": false,
+        "deployment": true,
+        "template": true,
         "comparison": false,
         "risk": true,
-        "costOps": false,
+        "costOps": true,
         "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "客服 AI 提示词",
-      "queryCount": 36,
+      "primaryKeyword": "TensorRT-LLM 入门",
+      "queryCount": 35,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
+      "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
       "titleHit": true,
       "warningIssues": [],
       "wave": 2
-    },
-    {
-      "blockingIssues": [],
-      "bodyFamilyMatches": {
-        "howTo": true,
-        "deployment": true,
-        "template": true,
-        "comparison": true,
-        "risk": true,
-        "costOps": true,
-        "intentSeeds": true
-      },
-      "descriptionHit": true,
-      "exactQueryMatches": 4,
-      "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
-      "headingFamilyMatches": {
-        "howTo": true,
-        "deployment": true,
-        "template": true,
-        "comparison": false,
-        "risk": true,
-        "costOps": true,
-        "intentSeeds": false
-      },
-      "matchedFamilies": 7,
-      "primaryKeyword": "AI Agent 记忆",
-      "queryCount": 35,
-      "readyForManualReview": true,
-      "reviewSuggestions": [],
-      "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
-      "titleHit": true,
-      "warningIssues": [],
-      "wave": 3
-    },
-    {
-      "blockingIssues": [],
-      "bodyFamilyMatches": {
-        "howTo": true,
-        "deployment": true,
-        "template": true,
-        "comparison": true,
-        "risk": true,
-        "costOps": true,
-        "intentSeeds": true
-      },
-      "descriptionHit": true,
-      "exactQueryMatches": 1,
-      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-      "headingFamilyMatches": {
-        "howTo": true,
-        "deployment": false,
-        "template": false,
-        "comparison": false,
-        "risk": true,
-        "costOps": true,
-        "intentSeeds": false
-      },
-      "matchedFamilies": 7,
-      "primaryKeyword": "AI 自动化项目报价",
-      "queryCount": 35,
-      "readyForManualReview": true,
-      "reviewSuggestions": [],
-      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
-      "titleHit": true,
-      "warningIssues": [
-        "few exact query variant matches in article text"
-      ],
-      "wave": 3
-    },
-    {
-      "blockingIssues": [],
-      "bodyFamilyMatches": {
-        "howTo": true,
-        "deployment": true,
-        "template": true,
-        "comparison": true,
-        "risk": true,
-        "costOps": true,
-        "intentSeeds": true
-      },
-      "descriptionHit": true,
-      "exactQueryMatches": 2,
-      "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-      "headingFamilyMatches": {
-        "howTo": true,
-        "deployment": true,
-        "template": true,
-        "comparison": true,
-        "risk": true,
-        "costOps": true,
-        "intentSeeds": false
-      },
-      "matchedFamilies": 7,
-      "primaryKeyword": "大模型部署",
-      "queryCount": 35,
-      "readyForManualReview": true,
-      "reviewSuggestions": [],
-      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-      "titleHit": true,
-      "warningIssues": [],
-      "wave": 3
     },
     {
       "blockingIssues": [],
@@ -597,30 +541,65 @@
       },
       "descriptionHit": true,
       "exactQueryMatches": 0,
-      "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+      "file": "content/blog/vllm-deployment-beginner-guide.mdx",
       "headingFamilyMatches": {
         "howTo": true,
-        "deployment": true,
-        "template": true,
-        "comparison": true,
+        "deployment": false,
+        "template": false,
+        "comparison": false,
         "risk": true,
-        "costOps": true,
+        "costOps": false,
         "intentSeeds": false
       },
       "matchedFamilies": 6,
-      "primaryKeyword": "Open WebUI Functions Pipelines",
-      "queryCount": 35,
+      "primaryKeyword": "vLLM 部署",
+      "queryCount": 30,
       "readyForManualReview": true,
       "reviewSuggestions": [
         "人工审核时检查是否自然覆盖核心搜索种子词，不要硬塞关键词。"
       ],
-      "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+      "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
       "titleHit": true,
       "warningIssues": [
         "few exact query variant matches in article text",
         "missing query-family signals: intentSeeds"
       ],
-      "wave": 4
+      "wave": 2
+    },
+    {
+      "blockingIssues": [],
+      "bodyFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
+        "template": true,
+        "comparison": true,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": true
+      },
+      "descriptionHit": true,
+      "exactQueryMatches": 0,
+      "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
+      "headingFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
+        "template": false,
+        "comparison": true,
+        "risk": true,
+        "costOps": false,
+        "intentSeeds": false
+      },
+      "matchedFamilies": 7,
+      "primaryKeyword": "Vercel AI SDK 聊天机器人部署",
+      "queryCount": 35,
+      "readyForManualReview": true,
+      "reviewSuggestions": [],
+      "title": "Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查",
+      "titleHit": true,
+      "warningIssues": [
+        "few exact query variant matches in article text"
+      ],
+      "wave": 2
     },
     {
       "blockingIssues": [],
@@ -635,7 +614,153 @@
       },
       "descriptionHit": true,
       "exactQueryMatches": 1,
-      "file": "content/blog/dify-workflow-error-handling-guide.mdx",
+      "file": "content/blog/vercel-404-after-deploy-checklist.mdx",
+      "headingFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
+        "template": true,
+        "comparison": true,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": false
+      },
+      "matchedFamilies": 7,
+      "primaryKeyword": "Vercel 部署后 404 检查清单",
+      "queryCount": 30,
+      "readyForManualReview": true,
+      "reviewSuggestions": [],
+      "title": "Vercel 部署后 404 检查清单：逐页验收更稳",
+      "titleHit": true,
+      "warningIssues": [
+        "few exact query variant matches in article text"
+      ],
+      "wave": 3
+    },
+    {
+      "blockingIssues": [],
+      "bodyFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
+        "template": true,
+        "comparison": true,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": false
+      },
+      "descriptionHit": true,
+      "exactQueryMatches": 0,
+      "file": "content/blog/vercel-build-failed-causes-checklist.mdx",
+      "headingFamilyMatches": {
+        "howTo": true,
+        "deployment": false,
+        "template": true,
+        "comparison": false,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": false
+      },
+      "matchedFamilies": 6,
+      "primaryKeyword": "Vercel build failed 排查清单",
+      "queryCount": 30,
+      "readyForManualReview": true,
+      "reviewSuggestions": [
+        "人工审核时检查是否自然覆盖核心搜索种子词，不要硬塞关键词。"
+      ],
+      "title": "Vercel build failed 排查清单：从日志到重新部署",
+      "titleHit": true,
+      "warningIssues": [
+        "few exact query variant matches in article text",
+        "missing query-family signals: intentSeeds"
+      ],
+      "wave": 3
+    },
+    {
+      "blockingIssues": [],
+      "bodyFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
+        "template": true,
+        "comparison": true,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": false
+      },
+      "descriptionHit": true,
+      "exactQueryMatches": 0,
+      "file": "content/blog/together-ai-api-beginner-guide.mdx",
+      "headingFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
+        "template": false,
+        "comparison": false,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": false
+      },
+      "matchedFamilies": 6,
+      "primaryKeyword": "Together AI API 接入",
+      "queryCount": 35,
+      "readyForManualReview": true,
+      "reviewSuggestions": [
+        "人工审核时检查是否自然覆盖核心搜索种子词，不要硬塞关键词。"
+      ],
+      "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
+      "titleHit": true,
+      "warningIssues": [
+        "few exact query variant matches in article text",
+        "missing query-family signals: intentSeeds"
+      ],
+      "wave": 3
+    },
+    {
+      "blockingIssues": [],
+      "bodyFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
+        "template": true,
+        "comparison": true,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": true
+      },
+      "descriptionHit": true,
+      "exactQueryMatches": 1,
+      "file": "content/blog/vector-database-beginner-guide.mdx",
+      "headingFamilyMatches": {
+        "howTo": true,
+        "deployment": false,
+        "template": false,
+        "comparison": true,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": false
+      },
+      "matchedFamilies": 7,
+      "primaryKeyword": "向量数据库",
+      "queryCount": 35,
+      "readyForManualReview": true,
+      "reviewSuggestions": [],
+      "title": "向量数据库怎么选：新手先理解 embedding 和检索",
+      "titleHit": true,
+      "warningIssues": [
+        "few exact query variant matches in article text"
+      ],
+      "wave": 4
+    },
+    {
+      "blockingIssues": [],
+      "bodyFamilyMatches": {
+        "howTo": true,
+        "deployment": true,
+        "template": true,
+        "comparison": true,
+        "risk": true,
+        "costOps": true,
+        "intentSeeds": true
+      },
+      "descriptionHit": true,
+      "exactQueryMatches": 0,
+      "file": "content/blog/vercel-build-failed-causes-freelance-scope.mdx",
       "headingFamilyMatches": {
         "howTo": true,
         "deployment": false,
@@ -646,11 +771,11 @@
         "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "Dify 工作流错误处理",
-      "queryCount": 35,
+      "primaryKeyword": "Vercel build failed 项目",
+      "queryCount": 30,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+      "title": "Vercel build failed 排查能不能项目：先看这 7 个边界",
       "titleHit": true,
       "warningIssues": [
         "few exact query variant matches in article text"
@@ -669,27 +794,25 @@
         "intentSeeds": true
       },
       "descriptionHit": true,
-      "exactQueryMatches": 1,
-      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "exactQueryMatches": 2,
+      "file": "content/blog/vercel-404-after-deploy.mdx",
       "headingFamilyMatches": {
         "howTo": true,
         "deployment": false,
         "template": false,
         "comparison": false,
         "risk": true,
-        "costOps": true,
+        "costOps": false,
         "intentSeeds": false
       },
       "matchedFamilies": 7,
-      "primaryKeyword": "AI API Key 安全管理",
+      "primaryKeyword": "Vercel 部署成功但 404",
       "queryCount": 30,
       "readyForManualReview": true,
       "reviewSuggestions": [],
-      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "title": "Vercel 部署成功但页面 404：新手排查顺序",
       "titleHit": true,
-      "warningIssues": [
-        "few exact query variant matches in article text"
-      ],
+      "warningIssues": [],
       "wave": 4
     }
   ]

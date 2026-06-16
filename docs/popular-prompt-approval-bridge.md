@@ -1,6 +1,6 @@
 # Popular Prompt Approval Bridge
 
-Generated at: 2026-06-16T12:27:21.958Z
+Generated at: 2026-06-16T18:18:22.565Z
 
 This report is read-only. It turns popular AI prompt lanes into safe next human-review candidates without editing, marking review, or publishing.
 
@@ -16,32 +16,32 @@ This report is read-only. It turns popular AI prompt lanes into safe next human-
 
 ## Summary
 
-- approvalQueueItems: 6
-- approvalQueueReadyItems: 6
-- bridgeItems: 13
-- bridgeItemsReadyForHumanReviewPrep: 7
-- commandBoundaries: 13
+- approvalQueueItems: 8
+- approvalQueueReadyItems: 8
+- bridgeItems: 15
+- bridgeItemsReadyForHumanReviewPrep: 9
+- commandBoundaries: 15
 - lanes: 10
-- lanesAlreadyInApprovalQueue: 5
+- lanesAlreadyInApprovalQueue: 0
 - lanesWithNextCandidates: 5
 - lanesWithReadyNextCandidates: 3
 - playbookItems: 10
 - playbookReadyItems: 3
-- promptTemplatesReferenced: 65
+- promptTemplatesReferenced: 75
 - publishConfirmCommandsIncluded: 0
 - reviewCandidatePool: 148
 - searchQueriesReferenced: 50
 - trafficDataAvailable: false
 - unsafeItems: 6
-- uniqueFiles: 7
+- uniqueFiles: 9
 
 ## Source Evidence
 
-- approvalQueueGeneratedAt: "2026-06-16T07:01:44.583Z"
-- approvalQueueSummary: {"backlogItems":3,"commandBoundaries":6,"humanGatedItems":6,"immediateApprovalItems":3,"immediateApprovalReadyItems":3,"items":6,"itemsReadyForHumanApproval":6,"itemsWithFailedSourceDecision":0,"itemsWithMassSearchTheme":5,"itemsWithPopularPromptLane":4,"itemsWithSeoWarnings":1,"itemsWithSourceReplacementDecisions":5,"publishConfirmCommandsIncluded":0,"trafficDataAvailable":false,"unsafeItems":0}
-- playbookGeneratedAt: "2026-06-16T12:27:21.442Z"
+- approvalQueueGeneratedAt: "2026-06-16T07:12:53.744Z"
+- approvalQueueSummary: {"backlogItems":5,"commandBoundaries":8,"humanGatedItems":8,"immediateApprovalItems":3,"immediateApprovalReadyItems":3,"items":8,"itemsReadyForHumanApproval":8,"itemsWithFailedSourceDecision":1,"itemsWithMassSearchTheme":6,"itemsWithPopularPromptLane":5,"itemsWithSeoWarnings":5,"itemsWithSourceReplacementDecisions":7,"publishConfirmCommandsIncluded":0,"trafficDataAvailable":false,"unsafeItems":0}
+- playbookGeneratedAt: "2026-06-16T18:18:22.043Z"
 - playbookSummary: {"agentDeploymentLanes":3,"broadWorkPromptLanes":3,"commandBoundaries":10,"deploymentBridgeItems":5,"humanGatedItems":10,"items":10,"itemsReadyForHumanReviewPrep":3,"itemsWithCandidateFiles":5,"itemsWithOfficialSources":10,"memoryLanes":1,"officialSources":12,"promptModuleBridgeItems":0,"promptTemplates":50,"publishConfirmCommandsIncluded":0,"searchQueries":139,"sourceTargets":22,"trafficDataAvailable":false,"uniqueCandidateFiles":21,"unsafeItems":7}
-- reviewCandidatesGeneratedAt: "2026-06-16T12:26:58.008Z"
+- reviewCandidatesGeneratedAt: "2026-06-16T18:17:58.059Z"
 - reviewCandidatesCounts: {"candidates":148,"returned":25,"rejected":{"status:published":500,"status:archived":21}}
 - trafficNote: "No traffic, ranking, impression, click, conversion, or revenue claim is made."
 
@@ -61,6 +61,8 @@ This report is read-only. It turns popular AI prompt lanes into safe next human-
 | true | 123 | 5 | 10 | ChatGPT 提示词大全和万能公式 | 模板下载站新手需要哪些工具：新手检查清单 | content/blog/template-download-site-tools-checklist.mdx |
 | true | 123 | 5 | 10 | ChatGPT 提示词大全和万能公式 | 模板站什么时候接入支付平台：新手检查清单 | content/blog/template-site-payment-platform-timing-checklist.mdx |
 | true | 123 | 5 | 10 | ChatGPT 提示词大全和万能公式 | 模板站什么时候接入支付平台 | content/blog/template-site-payment-platform-timing.mdx |
+| true | 65 | 5 | 10 | Excel 和数据分析 AI 提示词 | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| true | 64 | 5 | 10 | Excel 和数据分析 AI 提示词 | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
 | true | 61 | 5 | 10 | Excel 和数据分析 AI 提示词 | 向量数据库怎么选：新手先理解 embedding 和检索 | content/blog/vector-database-beginner-guide.mdx |
 | false | 123 | 5 | 10 | AI Agent 部署、工具调用和上线排错提示词 | Vercel 部署成功但页面 404：新手排查顺序 | content/blog/vercel-404-after-deploy.mdx |
 | false | 123 | 5 | 10 | AI Agent 部署、工具调用和上线排错提示词 | Vercel 部署检查表怎么写：新手检查清单 | content/blog/vercel-deploy-checklist-template-checklist.mdx |
@@ -68,8 +70,6 @@ This report is read-only. It turns popular AI prompt lanes into safe next human-
 | true | 123 | 5 | 10 | 大模型部署、本地模型和 API 排错提示词 | Vercel 部署成功但页面 404：新手排查顺序 | content/blog/vercel-404-after-deploy.mdx |
 | true | 123 | 5 | 10 | 大模型部署、本地模型和 API 排错提示词 | Vercel 部署检查表怎么写：新手检查清单 | content/blog/vercel-deploy-checklist-template-checklist.mdx |
 | true | 123 | 5 | 10 | 大模型部署、本地模型和 API 排错提示词 | Vercel 部署检查表怎么写：给新手的上线模板 | content/blog/vercel-deploy-checklist-template.mdx |
-| false | 123 | 5 | 10 | Agent 记忆、知识库和 RAG 提示词 | Vercel 部署成功但页面 404：新手排查顺序 | content/blog/vercel-404-after-deploy.mdx |
-| false | 123 | 5 | 10 | Agent 记忆、知识库和 RAG 提示词 | Vercel 部署检查表怎么写：新手检查清单 | content/blog/vercel-deploy-checklist-template-checklist.mdx |
 
 ## Lane Bridges
 
@@ -78,7 +78,7 @@ This report is read-only. It turns popular AI prompt lanes into safe next human-
 - Lane ID: chatgpt-prompt-daquan
 - Audience: 刚开始用 AI 的普通用户、学生、职场新人和小团队老板
 - Demand reason: 大多数人会先搜索提示词大全、ChatGPT 怎么提问、AI 指令模板，而不是先搜索框架名。
-- Already in approval queue: content/blog/vercel-ai-gateway-multi-provider-guide.mdx; content/blog/vercel-build-failed-causes-checklist.mdx
+- Already in approval queue: none
 - Ready next candidates: 3/3
 - Search queries: ChatGPT 提示词大全; ChatGPT 怎么提问效果最好; AI 提示词万能公式; 提示词模板 免费; Copilot prompt examples; Gemini prompt guide; prompt engineering guide; AI prompt examples for work; ChatGPT 指令怎么写; AI 提示词生成器怎么用
 
@@ -105,12 +105,14 @@ This report is read-only. It turns popular AI prompt lanes into safe next human-
 - Lane ID: excel-data-analysis-prompts
 - Audience: 运营、财务助理、电商数据、销售管理和数据分析初学者
 - Demand reason: 表格分析、数据透视、销售报表、异常值解释属于高频刚需，适合用模板承接搜索。
-- Already in approval queue: content/blog/together-ai-api-beginner-guide.mdx; content/blog/vector-database-selection-for-rag-guide.mdx; content/blog/supabase-pgvector-rag-guide.mdx
-- Ready next candidates: 1/1
+- Already in approval queue: none
+- Ready next candidates: 3/3
 - Search queries: Excel AI 提示词; ChatGPT 分析表格数据; AI 数据分析提示词; 销售数据分析 prompt; 财务报表 AI 分析提示词; Excel 透视表 AI 教程; 用 AI 找异常数据; ChatGPT 做数据分析怎么提问; AI 生成图表建议; 运营数据复盘提示词
 
 | Ready | Score | Templates | Sources | Title | File |
 | --- | ---: | ---: | ---: | --- | --- |
+| true | 65 | 5 | 8 | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| true | 64 | 5 | 8 | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
 | true | 61 | 5 | 8 | 向量数据库怎么选：新手先理解 embedding 和检索 | content/blog/vector-database-beginner-guide.mdx |
 
 ### 小红书、短视频和直播脚本 AI 提示词
@@ -166,7 +168,7 @@ This report is read-only. It turns popular AI prompt lanes into safe next human-
 - Lane ID: ai-agent-deploy-prompts
 - Audience: 想部署 Agent 的独立开发者、创业团队和技术运营
 - Demand reason: Agent 部署、工具调用、MCP、Vercel AI SDK 是技术增长入口，比单纯网页部署更贴近当前 AI 搜索。
-- Already in approval queue: content/blog/vercel-ai-gateway-multi-provider-guide.mdx; content/blog/together-ai-api-beginner-guide.mdx; content/blog/vector-database-selection-for-rag-guide.mdx
+- Already in approval queue: none
 - Ready next candidates: 0/3
 - Search queries: AI Agent 部署教程; Vercel AI SDK agent deploy; OpenAI Agents SDK 教程; AI Agent 工具调用提示词; MCP Agent 部署; Agent 上线排错 prompt; AI Agent human in the loop; AI Agent API route deploy; Agent 生产环境检查清单; AI Agent 怎么上线
 
@@ -181,7 +183,7 @@ This report is read-only. It turns popular AI prompt lanes into safe next human-
 - Lane ID: llm-deployment-troubleshooting-prompts
 - Audience: 部署大模型 API、本地模型、推理服务和 AI 应用的开发者
 - Demand reason: 大模型部署、API 报错、推理延迟、环境变量和日志排错会带来技术流量，且能和工具服务转化相连。
-- Already in approval queue: content/blog/vercel-ai-gateway-multi-provider-guide.mdx; content/blog/together-ai-api-beginner-guide.mdx; content/blog/vector-database-selection-for-rag-guide.mdx
+- Already in approval queue: none
 - Ready next candidates: 3/3
 - Search queries: 大模型部署教程; LLM API 报错排查; OpenAI API error prompt; AI 应用部署失败怎么办; 大模型推理服务排错; AI 环境变量配置教程; Vercel AI 应用部署错误; LLM 延迟优化检查清单; 模型 API 日志分析提示词; AI 项目上线 smoke test
 
@@ -196,7 +198,7 @@ This report is read-only. It turns popular AI prompt lanes into safe next human-
 - Lane ID: agent-memory-knowledge-base-prompts
 - Audience: 做客服 Agent、个人助理、知识库问答和长期任务 Agent 的团队
 - Demand reason: 记忆、知识库、RAG、长期上下文是用户已经明确要求扩展的板块，且 2026 年 Agent 资料持续更新。
-- Already in approval queue: content/blog/vercel-ai-gateway-multi-provider-guide.mdx; content/blog/together-ai-api-beginner-guide.mdx; content/blog/vector-database-selection-for-rag-guide.mdx
+- Already in approval queue: none
 - Ready next candidates: 0/3
 - Search queries: AI Agent 记忆怎么做; Agent memory prompt; RAG 知识库提示词; LangChain long term memory; OpenAI Agents SDK memory; AI 客服知识库 prompt; AI 助理长期记忆教程; 知识库问答提示词; Agent 记忆安全检查; AI memory retention policy
 

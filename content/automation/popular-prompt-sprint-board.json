@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T12:27:22.439Z",
+  "generatedAt": "2026-06-16T18:18:23.067Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,28 +10,28 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "approvalBridgeGeneratedAt": "2026-06-16T12:27:21.958Z",
+    "approvalBridgeGeneratedAt": "2026-06-16T18:18:22.565Z",
     "approvalBridgeSummary": {
-      "approvalQueueItems": 6,
-      "approvalQueueReadyItems": 6,
-      "bridgeItems": 13,
-      "bridgeItemsReadyForHumanReviewPrep": 7,
-      "commandBoundaries": 13,
+      "approvalQueueItems": 8,
+      "approvalQueueReadyItems": 8,
+      "bridgeItems": 15,
+      "bridgeItemsReadyForHumanReviewPrep": 9,
+      "commandBoundaries": 15,
       "lanes": 10,
-      "lanesAlreadyInApprovalQueue": 5,
+      "lanesAlreadyInApprovalQueue": 0,
       "lanesWithNextCandidates": 5,
       "lanesWithReadyNextCandidates": 3,
       "playbookItems": 10,
       "playbookReadyItems": 3,
-      "promptTemplatesReferenced": 65,
+      "promptTemplatesReferenced": 75,
       "publishConfirmCommandsIncluded": 0,
       "reviewCandidatePool": 148,
       "searchQueriesReferenced": 50,
       "trafficDataAvailable": false,
       "unsafeItems": 6,
-      "uniqueFiles": 7
+      "uniqueFiles": 9
     },
-    "playbookGeneratedAt": "2026-06-16T12:27:21.442Z",
+    "playbookGeneratedAt": "2026-06-16T18:18:22.043Z",
     "playbookGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -66,14 +66,14 @@
   },
   "summary": {
     "actionItems": 90,
-    "bridgeItems": 13,
+    "bridgeItems": 15,
     "candidateFiles": 21,
     "highPriorityItems": 5,
     "industryBuckets": 5,
     "items": 10,
     "itemsPerWave": 2,
     "lanesReadyForPromptSprint": 3,
-    "nextCandidateFiles": 7,
+    "nextCandidateFiles": 9,
     "playbookItems": 10,
     "promptTemplateSamples": 50,
     "promptTemplates": 50,
@@ -86,11 +86,7 @@
   "unsafeItems": [
     {
       "actionCount": 9,
-      "alreadyQueuedFiles": [
-        "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "content/blog/together-ai-api-beginner-guide.mdx",
-        "content/blog/vector-database-selection-for-rag-guide.mdx"
-      ],
+      "alreadyQueuedFiles": [],
       "audience": "做客服 Agent、个人助理、知识库问答和长期任务 Agent 的团队",
       "candidateFiles": [
         "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
@@ -159,22 +155,19 @@
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
       ],
-      "sprintPriorityScore": 129,
+      "sprintPriorityScore": 99,
       "sprintWave": 2,
       "title": "Agent 记忆、知识库和 RAG 提示词",
       "unsafeReasons": [
         "no candidate files attached",
         "popular prompt lane is not ready for human review prep",
+        "popular prompt lane has no queued or next candidate files",
         "popular prompt lane has unsafe next candidates"
       ]
     },
     {
       "actionCount": 9,
-      "alreadyQueuedFiles": [
-        "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "content/blog/together-ai-api-beginner-guide.mdx",
-        "content/blog/vector-database-selection-for-rag-guide.mdx"
-      ],
+      "alreadyQueuedFiles": [],
       "audience": "想部署 Agent 的独立开发者、创业团队和技术运营",
       "candidateFiles": [
         "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
@@ -243,12 +236,13 @@
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
       ],
-      "sprintPriorityScore": 129,
+      "sprintPriorityScore": 99,
       "sprintWave": 3,
       "title": "AI Agent 部署、工具调用和上线排错提示词",
       "unsafeReasons": [
         "no candidate files attached",
         "popular prompt lane is not ready for human review prep",
+        "popular prompt lane has no queued or next candidate files",
         "popular prompt lane has unsafe next candidates"
       ]
     },
@@ -579,41 +573,37 @@
     {
       "actionItems": 18,
       "candidateFiles": [
-        "content/blog/vercel-404-after-deploy.mdx",
-        "content/blog/vercel-deploy-checklist-template-checklist.mdx",
-        "content/blog/vercel-deploy-checklist-template.mdx",
-        "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "content/blog/together-ai-api-beginner-guide.mdx",
-        "content/blog/vector-database-selection-for-rag-guide.mdx",
         "content/blog/template-download-site-tools-checklist.mdx",
         "content/blog/template-site-payment-platform-timing-checklist.mdx",
         "content/blog/template-site-payment-platform-timing.mdx",
-        "content/blog/vercel-build-failed-causes-checklist.mdx"
+        "content/blog/vercel-404-after-deploy.mdx",
+        "content/blog/vercel-deploy-checklist-template-checklist.mdx",
+        "content/blog/vercel-deploy-checklist-template.mdx"
       ],
       "highPriorityItems": 2,
       "industryBuckets": [
-        "agent-deployment",
-        "commerce-service"
+        "commerce-service",
+        "agent-deployment"
       ],
       "items": 2,
       "readyItems": 2,
       "searchQueries": [
-        "大模型部署教程",
-        "LLM API 报错排查",
-        "OpenAI API error prompt",
-        "AI 应用部署失败怎么办",
-        "大模型推理服务排错",
-        "AI 环境变量配置教程",
-        "Vercel AI 应用部署错误",
-        "LLM 延迟优化检查清单",
-        "模型 API 日志分析提示词",
-        "AI 项目上线 smoke test",
-        "AI app deployment tutorial",
-        "OpenAI API deployment",
-        "Vercel AI SDK deployment",
-        "Claude API Next.js deployment",
         "ChatGPT 提示词大全",
-        "ChatGPT 怎么提问效果最好"
+        "ChatGPT 怎么提问效果最好",
+        "AI 提示词万能公式",
+        "提示词模板 免费",
+        "Copilot prompt examples",
+        "Gemini prompt guide",
+        "prompt engineering guide",
+        "AI prompt examples for work",
+        "ChatGPT 指令怎么写",
+        "AI 提示词生成器怎么用",
+        "ChatGPT prompts for business",
+        "AI prompt template library",
+        "industry AI prompts",
+        "best AI prompts for work",
+        "大模型部署教程",
+        "LLM API 报错排查"
       ],
       "unsafeItems": 0,
       "wave": 1
@@ -621,14 +611,12 @@
     {
       "actionItems": 18,
       "candidateFiles": [
-        "content/blog/vector-database-beginner-guide.mdx",
-        "content/blog/together-ai-api-beginner-guide.mdx",
         "content/blog/vector-database-selection-for-rag-guide.mdx",
         "content/blog/supabase-pgvector-rag-guide.mdx",
+        "content/blog/vector-database-beginner-guide.mdx",
         "content/blog/vercel-404-after-deploy.mdx",
         "content/blog/vercel-deploy-checklist-template-checklist.mdx",
-        "content/blog/vercel-deploy-checklist-template.mdx",
-        "content/blog/vercel-ai-gateway-multi-provider-guide.mdx"
+        "content/blog/vercel-deploy-checklist-template.mdx"
       ],
       "highPriorityItems": 2,
       "industryBuckets": [
@@ -663,10 +651,7 @@
       "candidateFiles": [
         "content/blog/vercel-404-after-deploy.mdx",
         "content/blog/vercel-deploy-checklist-template-checklist.mdx",
-        "content/blog/vercel-deploy-checklist-template.mdx",
-        "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "content/blog/together-ai-api-beginner-guide.mdx",
-        "content/blog/vector-database-selection-for-rag-guide.mdx"
+        "content/blog/vercel-deploy-checklist-template.mdx"
       ],
       "highPriorityItems": 1,
       "industryBuckets": [
@@ -762,90 +747,7 @@
   "items": [
     {
       "actionCount": 9,
-      "alreadyQueuedFiles": [
-        "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "content/blog/together-ai-api-beginner-guide.mdx",
-        "content/blog/vector-database-selection-for-rag-guide.mdx"
-      ],
-      "audience": "部署大模型 API、本地模型、推理服务和 AI 应用的开发者",
-      "candidateFiles": [
-        "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
-        "content/blog/vllm-deployment-beginner-guide.mdx",
-        "content/blog/vercel-deploy-checklist-template.mdx",
-        "content/blog/vercel-deploy-checklist-template-checklist.mdx",
-        "content/blog/vercel-vs-netlify-small-site.mdx",
-        "content/blog/vercel-vs-netlify-small-site-checklist.mdx",
-        "content/blog/vercel-404-after-deploy.mdx",
-        "content/blog/together-ai-api-beginner-guide.mdx",
-        "content/blog/vector-database-selection-for-rag-guide.mdx"
-      ],
-      "demandReason": "大模型部署、API 报错、推理延迟、环境变量和日志排错会带来技术流量，且能和工具服务转化相连。",
-      "industryBucket": "agent-deployment",
-      "laneId": "llm-deployment-troubleshooting-prompts",
-      "nextCandidateFiles": [
-        "content/blog/vercel-404-after-deploy.mdx",
-        "content/blog/vercel-deploy-checklist-template-checklist.mdx",
-        "content/blog/vercel-deploy-checklist-template.mdx"
-      ],
-      "promptTemplateSamples": [
-        "大模型部署、本地模型和 API 排错提示词 - 环境变量检查",
-        "大模型部署、本地模型和 API 排错提示词 - API 报错解释",
-        "大模型部署、本地模型和 API 排错提示词 - 推理延迟排查",
-        "大模型部署、本地模型和 API 排错提示词 - 日志摘要",
-        "大模型部署、本地模型和 API 排错提示词 - 上线回滚"
-      ],
-      "publicMatches": 38,
-      "publishConfirm": "not-included",
-      "readyForPromptSprint": true,
-      "reviewActions": [
-        "Keep this as a manual review sprint; do not create or edit articles automatically.",
-        "Use broad, common search phrasing from the lane queries before narrowing to tool-specific keywords.",
-        "Map one article to one dominant user job so prompt examples do not cannibalize adjacent lanes.",
-        "Verify every fast-changing model, product, platform, policy, pricing, API, and agent/memory claim against official sources.",
-        "Add practical prompt inputs, output format, failure checks, and human-review boundaries.",
-        "Do not claim traffic, ranking, conversion, revenue, or guaranteed productivity gains.",
-        "Keep candidate drafts as draft/noindex/humanReviewRequired until explicit approval.",
-        "Review next candidate files: content/blog/vercel-404-after-deploy.mdx, content/blog/vercel-deploy-checklist-template-checklist.mdx, content/blog/vercel-deploy-checklist-template.mdx.",
-        "Check source targets: https://platform.openai.com/docs/guides/prompt-engineering, https://vercel.com/docs/agents, https://platform.openai.com/docs/guides/agents-sdk."
-      ],
-      "searchQueries": [
-        "大模型部署教程",
-        "LLM API 报错排查",
-        "OpenAI API error prompt",
-        "AI 应用部署失败怎么办",
-        "大模型推理服务排错",
-        "AI 环境变量配置教程",
-        "Vercel AI 应用部署错误",
-        "LLM 延迟优化检查清单",
-        "模型 API 日志分析提示词",
-        "AI 项目上线 smoke test",
-        "AI app deployment tutorial",
-        "OpenAI API deployment",
-        "Vercel AI SDK deployment",
-        "Claude API Next.js deployment"
-      ],
-      "sourceTargets": [
-        "https://platform.openai.com/docs/guides/prompt-engineering",
-        "https://vercel.com/docs/agents",
-        "https://platform.openai.com/docs/guides/agents-sdk",
-        "https://openai.github.io/openai-agents-js/guides/sandbox-agents/memory/",
-        "https://docs.langchain.com/oss/python/deepagents/long-term-memory",
-        "OpenAI API docs: https://platform.openai.com/docs",
-        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
-      ],
-      "sprintPriorityScore": 174,
-      "sprintWave": 1,
-      "title": "大模型部署、本地模型和 API 排错提示词",
-      "unsafeReasons": []
-    },
-    {
-      "actionCount": 9,
-      "alreadyQueuedFiles": [
-        "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "content/blog/vercel-build-failed-causes-checklist.mdx"
-      ],
+      "alreadyQueuedFiles": [],
       "audience": "刚开始用 AI 的普通用户、学生、职场新人和小团队老板",
       "candidateFiles": [
         "content/blog/template-download-cta-copy.mdx",
@@ -914,18 +816,90 @@
         "https://ai.google.dev/gemini-api/docs/models/generative-models",
         "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
       ],
-      "sprintPriorityScore": 164,
+      "sprintPriorityScore": 144,
       "sprintWave": 1,
       "title": "ChatGPT 提示词大全和万能公式",
       "unsafeReasons": []
     },
     {
       "actionCount": 9,
-      "alreadyQueuedFiles": [
+      "alreadyQueuedFiles": [],
+      "audience": "部署大模型 API、本地模型、推理服务和 AI 应用的开发者",
+      "candidateFiles": [
+        "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+        "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
+        "content/blog/vllm-deployment-beginner-guide.mdx",
+        "content/blog/vercel-deploy-checklist-template.mdx",
+        "content/blog/vercel-deploy-checklist-template-checklist.mdx",
+        "content/blog/vercel-vs-netlify-small-site.mdx",
+        "content/blog/vercel-vs-netlify-small-site-checklist.mdx",
+        "content/blog/vercel-404-after-deploy.mdx",
         "content/blog/together-ai-api-beginner-guide.mdx",
-        "content/blog/vector-database-selection-for-rag-guide.mdx",
-        "content/blog/supabase-pgvector-rag-guide.mdx"
+        "content/blog/vector-database-selection-for-rag-guide.mdx"
       ],
+      "demandReason": "大模型部署、API 报错、推理延迟、环境变量和日志排错会带来技术流量，且能和工具服务转化相连。",
+      "industryBucket": "agent-deployment",
+      "laneId": "llm-deployment-troubleshooting-prompts",
+      "nextCandidateFiles": [
+        "content/blog/vercel-404-after-deploy.mdx",
+        "content/blog/vercel-deploy-checklist-template-checklist.mdx",
+        "content/blog/vercel-deploy-checklist-template.mdx"
+      ],
+      "promptTemplateSamples": [
+        "大模型部署、本地模型和 API 排错提示词 - 环境变量检查",
+        "大模型部署、本地模型和 API 排错提示词 - API 报错解释",
+        "大模型部署、本地模型和 API 排错提示词 - 推理延迟排查",
+        "大模型部署、本地模型和 API 排错提示词 - 日志摘要",
+        "大模型部署、本地模型和 API 排错提示词 - 上线回滚"
+      ],
+      "publicMatches": 38,
+      "publishConfirm": "not-included",
+      "readyForPromptSprint": true,
+      "reviewActions": [
+        "Keep this as a manual review sprint; do not create or edit articles automatically.",
+        "Use broad, common search phrasing from the lane queries before narrowing to tool-specific keywords.",
+        "Map one article to one dominant user job so prompt examples do not cannibalize adjacent lanes.",
+        "Verify every fast-changing model, product, platform, policy, pricing, API, and agent/memory claim against official sources.",
+        "Add practical prompt inputs, output format, failure checks, and human-review boundaries.",
+        "Do not claim traffic, ranking, conversion, revenue, or guaranteed productivity gains.",
+        "Keep candidate drafts as draft/noindex/humanReviewRequired until explicit approval.",
+        "Review next candidate files: content/blog/vercel-404-after-deploy.mdx, content/blog/vercel-deploy-checklist-template-checklist.mdx, content/blog/vercel-deploy-checklist-template.mdx.",
+        "Check source targets: https://platform.openai.com/docs/guides/prompt-engineering, https://vercel.com/docs/agents, https://platform.openai.com/docs/guides/agents-sdk."
+      ],
+      "searchQueries": [
+        "大模型部署教程",
+        "LLM API 报错排查",
+        "OpenAI API error prompt",
+        "AI 应用部署失败怎么办",
+        "大模型推理服务排错",
+        "AI 环境变量配置教程",
+        "Vercel AI 应用部署错误",
+        "LLM 延迟优化检查清单",
+        "模型 API 日志分析提示词",
+        "AI 项目上线 smoke test",
+        "AI app deployment tutorial",
+        "OpenAI API deployment",
+        "Vercel AI SDK deployment",
+        "Claude API Next.js deployment"
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://vercel.com/docs/agents",
+        "https://platform.openai.com/docs/guides/agents-sdk",
+        "https://openai.github.io/openai-agents-js/guides/sandbox-agents/memory/",
+        "https://docs.langchain.com/oss/python/deepagents/long-term-memory",
+        "OpenAI API docs: https://platform.openai.com/docs",
+        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+      ],
+      "sprintPriorityScore": 144,
+      "sprintWave": 1,
+      "title": "大模型部署、本地模型和 API 排错提示词",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 9,
+      "alreadyQueuedFiles": [],
       "audience": "运营、财务助理、电商数据、销售管理和数据分析初学者",
       "candidateFiles": [
         "content/blog/together-ai-api-beginner-guide.mdx",
@@ -937,6 +911,8 @@
       "industryBucket": "office-data",
       "laneId": "excel-data-analysis-prompts",
       "nextCandidateFiles": [
+        "content/blog/vector-database-selection-for-rag-guide.mdx",
+        "content/blog/supabase-pgvector-rag-guide.mdx",
         "content/blog/vector-database-beginner-guide.mdx"
       ],
       "promptTemplateSamples": [
@@ -957,7 +933,7 @@
         "Add practical prompt inputs, output format, failure checks, and human-review boundaries.",
         "Do not claim traffic, ranking, conversion, revenue, or guaranteed productivity gains.",
         "Keep candidate drafts as draft/noindex/humanReviewRequired until explicit approval.",
-        "Review next candidate files: content/blog/vector-database-beginner-guide.mdx.",
+        "Review next candidate files: content/blog/vector-database-selection-for-rag-guide.mdx, content/blog/supabase-pgvector-rag-guide.mdx, content/blog/vector-database-beginner-guide.mdx.",
         "Check source targets: https://platform.openai.com/docs/guides/prompt-engineering, https://platform.openai.com/docs/guides/prompting, https://support.microsoft.com/en-us/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5."
       ],
       "searchQueries": [
@@ -993,11 +969,7 @@
     },
     {
       "actionCount": 9,
-      "alreadyQueuedFiles": [
-        "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "content/blog/together-ai-api-beginner-guide.mdx",
-        "content/blog/vector-database-selection-for-rag-guide.mdx"
-      ],
+      "alreadyQueuedFiles": [],
       "audience": "做客服 Agent、个人助理、知识库问答和长期任务 Agent 的团队",
       "candidateFiles": [
         "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
@@ -1066,22 +1038,19 @@
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
       ],
-      "sprintPriorityScore": 129,
+      "sprintPriorityScore": 99,
       "sprintWave": 2,
       "title": "Agent 记忆、知识库和 RAG 提示词",
       "unsafeReasons": [
         "no candidate files attached",
         "popular prompt lane is not ready for human review prep",
+        "popular prompt lane has no queued or next candidate files",
         "popular prompt lane has unsafe next candidates"
       ]
     },
     {
       "actionCount": 9,
-      "alreadyQueuedFiles": [
-        "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "content/blog/together-ai-api-beginner-guide.mdx",
-        "content/blog/vector-database-selection-for-rag-guide.mdx"
-      ],
+      "alreadyQueuedFiles": [],
       "audience": "想部署 Agent 的独立开发者、创业团队和技术运营",
       "candidateFiles": [
         "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
@@ -1150,12 +1119,13 @@
         "Vercel AI SDK docs: https://ai-sdk.dev/docs",
         "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
       ],
-      "sprintPriorityScore": 129,
+      "sprintPriorityScore": 99,
       "sprintWave": 3,
       "title": "AI Agent 部署、工具调用和上线排错提示词",
       "unsafeReasons": [
         "no candidate files attached",
         "popular prompt lane is not ready for human review prep",
+        "popular prompt lane has no queued or next candidate files",
         "popular prompt lane has unsafe next candidates"
       ]
     },

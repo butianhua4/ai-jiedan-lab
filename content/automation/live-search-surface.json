@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T12:50:37.119Z",
+  "generatedAt": "2026-06-16T18:19:21.078Z",
   "ok": true,
   "base": "https://ai-jiedan-lab.vercel.app",
   "fetchBase": "https://ai-jiedan-lab.vercel.app",
@@ -101,7 +101,7 @@
     "clusterUrlCount": 6,
     "leaksDrafts": false,
     "qUrlCount": 500,
-    "sitemapIndexCount": 4,
+    "sitemapIndexCount": 5,
     "usesBase": true
   },
   "robots": {

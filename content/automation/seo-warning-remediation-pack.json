@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T05:22:47.160Z",
+  "generatedAt": "2026-06-16T18:18:07.244Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,25 +9,25 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "searchSnippetAuditGeneratedAt": "2026-06-16T05:17:29.890Z",
+    "searchSnippetAuditGeneratedAt": "2026-06-16T18:18:06.098Z",
     "searchSnippetSummary": {
       "blockingItems": 0,
-      "expansionItems": 19,
+      "expansionItems": 15,
       "publicItems": 500,
       "recommendedItems": 3,
-      "scopedItems": 500,
-      "warningItems": 199,
+      "scopedItems": 516,
+      "warningItems": 204,
       "waveItems": 3,
       "waveItemsWithBlockingIssues": 0
     },
-    "structuredDataAuditGeneratedAt": "2026-06-16T05:11:53.604Z",
+    "structuredDataAuditGeneratedAt": "2026-06-16T18:18:06.749Z",
     "structuredDataSummary": {
       "blockingItems": 0,
-      "expansionItems": 19,
-      "jsonLdPreviewItems": 500,
+      "expansionItems": 15,
+      "jsonLdPreviewItems": 516,
       "publicItems": 500,
       "recommendedItems": 3,
-      "scopedItems": 500,
+      "scopedItems": 516,
       "warningItems": 92,
       "waveItems": 3,
       "waveItemsWithBlockingIssues": 0
@@ -35,18 +35,18 @@
   },
   "summary": {
     "blockingItems": 0,
-    "draftItems": 0,
-    "humanGatedItems": 255,
-    "items": 255,
-    "itemsWithHumanChecklist": 255,
-    "itemsWithManualActions": 255,
+    "draftItems": 5,
+    "humanGatedItems": 260,
+    "items": 260,
+    "itemsWithHumanChecklist": 260,
+    "itemsWithManualActions": 260,
     "publicItems": 255,
     "recommendedItems": 1,
     "schemaWarningItems": 92,
-    "snippetWarningItems": 199,
+    "snippetWarningItems": 204,
     "trafficDataAvailable": false,
     "unsafeItems": 0,
-    "warningItems": 255,
+    "warningItems": 260,
     "waveItems": 1
   },
   "unsafeItems": [],
@@ -84,11 +84,9 @@
       ],
       "manualFixReady": true,
       "primaryKeyword": "客服 AI 模型选型",
-      "priority": 136,
+      "priority": 96,
       "scope": [
         "public",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "schemaWarnings": [],
@@ -183,8 +181,7 @@
       "primaryKeyword": "AI 自动化项目报价",
       "priority": 66,
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "schemaWarnings": [],
       "snippetWarnings": [
@@ -2648,8 +2645,7 @@
       "primaryKeyword": "AI API Key 安全管理",
       "priority": 58,
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "schemaWarnings": [],
       "snippetWarnings": [
@@ -3039,8 +3035,7 @@
       "primaryKeyword": "团队 AI 提示词库",
       "priority": 58,
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "schemaWarnings": [],
       "snippetWarnings": [
@@ -6433,8 +6428,7 @@
       "primaryKeyword": "Dify 工作流错误处理",
       "priority": 58,
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "schemaWarnings": [],
       "snippetWarnings": [
@@ -6473,8 +6467,7 @@
       "primaryKeyword": "Dify Workflow 和 Agent 区别",
       "priority": 58,
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "schemaWarnings": [],
       "snippetWarnings": [
@@ -6708,8 +6701,7 @@
       "primaryKeyword": "Docker 使用 NVIDIA GPU",
       "priority": 58,
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "schemaWarnings": [],
       "snippetWarnings": [
@@ -7567,8 +7559,7 @@
       "primaryKeyword": "Open WebUI Functions Pipelines",
       "priority": 58,
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "schemaWarnings": [],
       "snippetWarnings": [
@@ -10312,6 +10303,202 @@
       "status": "published",
       "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
       "title": "没有客户时做练习项目的常见错误",
+      "unsafeReasons": []
+    },
+    {
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
+        "publishConfirm": "not-included",
+        "publishDryRunAfterReview": "npm run publish:articles -- --dry-run"
+      },
+      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+      "humanChecklist": [
+        "Review file: content/blog/vercel-ai-gateway-multi-provider-guide.mdx.",
+        "Review status: draft.",
+        "Confirm primary keyword intent: Vercel AI Gateway 多模型.",
+        "Snippet warning: primary keyword is not an exact title substring.",
+        "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
+        "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
+        "Do not mark review or publish from this remediation pack."
+      ],
+      "manualActions": [
+        "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
+        "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
+      ],
+      "manualFixReady": true,
+      "primaryKeyword": "Vercel AI Gateway 多模型",
+      "priority": 48,
+      "scope": [
+        "expansion",
+        "recommended"
+      ],
+      "schemaWarnings": [],
+      "snippetWarnings": [
+        "primary keyword is not an exact title substring"
+      ],
+      "status": "draft",
+      "stopBefore": "Stop before human approval before changing draft metadata, mark:review, or publishing.",
+      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+      "unsafeReasons": []
+    },
+    {
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/tensorrt-llm-beginner-guide.mdx --confirm-human",
+        "publishConfirm": "not-included",
+        "publishDryRunAfterReview": "npm run publish:articles -- --dry-run"
+      },
+      "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
+      "humanChecklist": [
+        "Review file: content/blog/tensorrt-llm-beginner-guide.mdx.",
+        "Review status: draft.",
+        "Confirm primary keyword intent: TensorRT-LLM 入门.",
+        "Snippet warning: primary keyword is not an exact title substring.",
+        "Check whether the title can naturally include the exact primary keyword: TensorRT-LLM 入门.",
+        "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
+        "Do not mark review or publish from this remediation pack."
+      ],
+      "manualActions": [
+        "Check whether the title can naturally include the exact primary keyword: TensorRT-LLM 入门.",
+        "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
+      ],
+      "manualFixReady": true,
+      "primaryKeyword": "TensorRT-LLM 入门",
+      "priority": 8,
+      "scope": [
+        "expansion"
+      ],
+      "schemaWarnings": [],
+      "snippetWarnings": [
+        "primary keyword is not an exact title substring"
+      ],
+      "status": "draft",
+      "stopBefore": "Stop before human approval before changing draft metadata, mark:review, or publishing.",
+      "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
+      "unsafeReasons": []
+    },
+    {
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human",
+        "publishConfirm": "not-included",
+        "publishDryRunAfterReview": "npm run publish:articles -- --dry-run"
+      },
+      "file": "content/blog/together-ai-api-beginner-guide.mdx",
+      "humanChecklist": [
+        "Review file: content/blog/together-ai-api-beginner-guide.mdx.",
+        "Review status: draft.",
+        "Confirm primary keyword intent: Together AI API 接入.",
+        "Snippet warning: primary keyword is not an exact title substring.",
+        "Check whether the title can naturally include the exact primary keyword: Together AI API 接入.",
+        "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
+        "Do not mark review or publish from this remediation pack."
+      ],
+      "manualActions": [
+        "Check whether the title can naturally include the exact primary keyword: Together AI API 接入.",
+        "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
+      ],
+      "manualFixReady": true,
+      "primaryKeyword": "Together AI API 接入",
+      "priority": 8,
+      "scope": [
+        "expansion"
+      ],
+      "schemaWarnings": [],
+      "snippetWarnings": [
+        "primary keyword is not an exact title substring"
+      ],
+      "status": "draft",
+      "stopBefore": "Stop before human approval before changing draft metadata, mark:review, or publishing.",
+      "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
+      "unsafeReasons": []
+    },
+    {
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-404-after-deploy.mdx --confirm-human",
+        "publishConfirm": "not-included",
+        "publishDryRunAfterReview": "npm run publish:articles -- --dry-run"
+      },
+      "file": "content/blog/vercel-404-after-deploy.mdx",
+      "humanChecklist": [
+        "Review file: content/blog/vercel-404-after-deploy.mdx.",
+        "Review status: draft.",
+        "Confirm primary keyword intent: Vercel 部署成功但 404.",
+        "Snippet warning: primary keyword is not an exact title substring.",
+        "Check whether the title can naturally include the exact primary keyword: Vercel 部署成功但 404.",
+        "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
+        "Do not mark review or publish from this remediation pack."
+      ],
+      "manualActions": [
+        "Check whether the title can naturally include the exact primary keyword: Vercel 部署成功但 404.",
+        "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
+      ],
+      "manualFixReady": true,
+      "primaryKeyword": "Vercel 部署成功但 404",
+      "priority": 8,
+      "scope": [
+        "expansion"
+      ],
+      "schemaWarnings": [],
+      "snippetWarnings": [
+        "primary keyword is not an exact title substring"
+      ],
+      "status": "draft",
+      "stopBefore": "Stop before human approval before changing draft metadata, mark:review, or publishing.",
+      "title": "Vercel 部署成功但页面 404：新手排查顺序",
+      "unsafeReasons": []
+    },
+    {
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx --confirm-human",
+        "publishConfirm": "not-included",
+        "publishDryRunAfterReview": "npm run publish:articles -- --dry-run"
+      },
+      "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
+      "humanChecklist": [
+        "Review file: content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx.",
+        "Review status: draft.",
+        "Confirm primary keyword intent: Vercel AI SDK 聊天机器人部署.",
+        "Snippet warning: primary keyword is not an exact title substring.",
+        "Check whether the title can naturally include the exact primary keyword: Vercel AI SDK 聊天机器人部署.",
+        "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
+        "Do not mark review or publish from this remediation pack."
+      ],
+      "manualActions": [
+        "Check whether the title can naturally include the exact primary keyword: Vercel AI SDK 聊天机器人部署.",
+        "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
+      ],
+      "manualFixReady": true,
+      "primaryKeyword": "Vercel AI SDK 聊天机器人部署",
+      "priority": 8,
+      "scope": [
+        "expansion"
+      ],
+      "schemaWarnings": [],
+      "snippetWarnings": [
+        "primary keyword is not an exact title substring"
+      ],
+      "status": "draft",
+      "stopBefore": "Stop before human approval before changing draft metadata, mark:review, or publishing.",
+      "title": "Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查",
       "unsafeReasons": []
     }
   ]

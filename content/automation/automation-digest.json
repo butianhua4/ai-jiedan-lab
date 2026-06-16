@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T12:28:11.958Z",
+  "generatedAt": "2026-06-16T18:19:24.969Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -46,24 +46,24 @@
         "action": "Use docs/internal-link-sprint-board.md to add one contextual public link per candidate during manual review.",
         "publishConfirm": "not-included",
         "summary": {
-          "actionItems": 128,
+          "actionItems": 152,
           "broadFirstCoverageItems": 0,
-          "candidateItems": 16,
+          "candidateItems": 19,
           "candidateItemsMissingPublicLinkSuggestion": 0,
-          "candidateItemsWithPublicSuggestions": 16,
+          "candidateItemsWithPublicSuggestions": 19,
           "candidatesWithoutCurrentPublicLinks": 10,
           "expansionItems": 15,
-          "items": 16,
+          "items": 19,
           "itemsPerWave": 4,
           "publicArticles": 500,
           "publishConfirmCommandsIncluded": 0,
-          "readyForInternalLinkSprint": 16,
+          "readyForInternalLinkSprint": 19,
           "recommendedItems": 3,
-          "suggestedPublicLinks": 48,
+          "suggestedPublicLinks": 57,
           "trafficDataAvailable": false,
           "unsafeItems": 0,
           "waveItems": 3,
-          "waves": 4
+          "waves": 5
         },
         "title": "Internal links"
       },
@@ -148,14 +148,14 @@
         "publishConfirm": "not-included",
         "summary": {
           "actionItems": 90,
-          "bridgeItems": 13,
+          "bridgeItems": 15,
           "candidateFiles": 21,
           "highPriorityItems": 5,
           "industryBuckets": 5,
           "items": 10,
           "itemsPerWave": 2,
           "lanesReadyForPromptSprint": 3,
-          "nextCandidateFiles": 7,
+          "nextCandidateFiles": 9,
           "playbookItems": 10,
           "promptTemplateSamples": 50,
           "promptTemplates": 50,
@@ -249,6 +249,7 @@
           "sourceNotes": true,
           "status": "draft"
         },
+        "alreadyPublished": false,
         "blockers": [],
         "commandBoundary": {
           "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm-human",
@@ -360,6 +361,7 @@
           "sourceNotes": true,
           "status": "draft"
         },
+        "alreadyPublished": false,
         "blockers": [],
         "commandBoundary": {
           "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
@@ -484,6 +486,7 @@
           "sourceNotes": true,
           "status": "draft"
         },
+        "alreadyPublished": false,
         "blockers": [],
         "commandBoundary": {
           "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx --confirm-human",
@@ -2420,7 +2423,7 @@
           "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=vi.",
+          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=ko.",
           "Open source URL: https://platform.openai.com/docs.",
           "Open source URL: https://ai-sdk.dev/docs.",
           "Open source URL: https://docs.anthropic.com.",
@@ -3359,10 +3362,10 @@
             "affectedTitles": [
               "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
             ],
-            "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=vi",
+            "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=ko",
             "humanChecklist": [
               "Review URL: https://ai.google.dev/docs.",
-              "Review final URL: https://ai.google.dev/gemini-api/docs?hl=vi.",
+              "Review final URL: https://ai.google.dev/gemini-api/docs?hl=ko.",
               "HTTP status observed by automation: 200.",
               "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
               "If the final URL is the canonical destination, update the source target during human review.",
@@ -3422,7 +3425,7 @@
           "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=vi.",
+          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=ko.",
           "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
           "If the final URL is the canonical destination, update the source target during human review.",
           "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
@@ -4913,6 +4916,39 @@
         "bodyHit": {
           "field": "bodyExcerpt",
           "markers": [
+            "冒"
+          ],
+          "sample": "AI 应用刚上线时，大家关心效果；用起来以后，成本问题会很快冒出来。哪个功能最贵，哪个用户消耗最多，哪个模型延迟最高，哪个 Agent 反复调用工具，哪些请求应该缓存，哪些批量任务应该改成异步，这些问题如果没有成本监控，就只能靠猜。大模型成本看板不是财务报表，而是产品和工程优化工具。"
+        },
+        "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
+        "humanReviewRequired": true,
+        "manualActions": [
+          "Repair title and description into readable Chinese without changing slug or publish status.",
+          "Compare body excerpt against intended topic and rewrite only the garbled copy after human source review.",
+          "Verify sourceNotes and official source targets still match the repaired claim wording.",
+          "Keep draft/review/published status and noindex unchanged during remediation.",
+          "Rerun integrity, content quality, automation gate, and digest checks before any approval action."
+        ],
+        "metadataHits": [],
+        "noindex": false,
+        "preserveStatus": true,
+        "priorityScore": 140,
+        "publishConfirm": "not-included",
+        "queueSignals": {
+          "inExecutiveTop": false,
+          "inHumanApprovalImmediate": false,
+          "inReviewPortfolio": false,
+          "lanes": [
+            "internal-link-sprint"
+          ]
+        },
+        "status": "published",
+        "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账"
+      },
+      {
+        "bodyHit": {
+          "field": "bodyExcerpt",
+          "markers": [
             "盲"
           ],
           "sample": "如果任务只允许诊断，就不要承诺修复所有环境。交付物可以是版本差异表、建议目标版本、复测命令和客户待办。对新手来说，这种清楚的诊断单比盲目改生产平台更可靠。"
@@ -5112,45 +5148,6 @@
         },
         "status": "published",
         "title": "AI 小项目练习选题检查清单"
-      },
-      {
-        "bodyHit": {
-          "field": "bodyExcerpt",
-          "markers": [
-            "盲"
-          ],
-          "sample": "工具推荐最大的坑是盲目购买。你买了工具，不代表立刻有成果。先确定自己每周要完成什么任务，再根据任务选择工具。"
-        },
-        "file": "content/blog/ai-tools-recommendation-beginner.mdx",
-        "humanReviewRequired": true,
-        "manualActions": [
-          "Repair title and description into readable Chinese without changing slug or publish status.",
-          "Compare body excerpt against intended topic and rewrite only the garbled copy after human source review.",
-          "Verify sourceNotes and official source targets still match the repaired claim wording.",
-          "Keep draft/review/published status and noindex unchanged during remediation.",
-          "Rerun integrity, content quality, automation gate, and digest checks before any approval action."
-        ],
-        "metadataHits": [
-          {
-            "field": "description",
-            "markers": [
-              "盲"
-            ],
-            "sample": "面向新手整理 AI 工具推荐的选择方法，按写作、图片、PPT、网站、视频、代码和记录复盘分类，避免盲目购买。"
-          }
-        ],
-        "noindex": false,
-        "preserveStatus": true,
-        "priorityScore": 100,
-        "publishConfirm": "not-included",
-        "queueSignals": {
-          "inExecutiveTop": false,
-          "inHumanApprovalImmediate": false,
-          "inReviewPortfolio": false,
-          "lanes": []
-        },
-        "status": "published",
-        "title": "AI 工具推荐怎么选：新手别一开始买太多"
       }
     ],
     "trafficDataAvailable": false,
@@ -5171,9 +5168,9 @@
   "internalLinks": {
     "broadFirstCoverageItems": 0,
     "broadFirstCoverageItemsMissingPublicLinkSuggestion": 0,
-    "candidateItems": 16,
+    "candidateItems": 19,
     "candidateItemsMissingPublicLinkSuggestion": 0,
-    "candidateItemsWithPublicSuggestions": 16,
+    "candidateItemsWithPublicSuggestions": 19,
     "expansionItems": 15,
     "publicArticles": 500,
     "recommendedItems": 3,
@@ -5181,15 +5178,15 @@
     "waveItemsMissingPublicLinkSuggestion": 0
   },
   "internalLinkSprintBoard": {
-    "actionItems": 128,
-    "candidateItems": 16,
+    "actionItems": 152,
+    "candidateItems": 19,
     "candidatesWithoutCurrentPublicLinks": 10,
-    "items": 16,
+    "items": 19,
     "itemsPerWave": 4,
     "publicArticles": 500,
     "publishConfirmCommandsIncluded": 0,
-    "readyForInternalLinkSprint": 16,
-    "suggestedPublicLinks": 48,
+    "readyForInternalLinkSprint": 19,
+    "suggestedPublicLinks": 57,
     "top": [
       {
         "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/qdrant-vector-database-beginner-guide using reader-first anchor text, not keyword stuffing.",
@@ -5206,13 +5203,12 @@
           "Candidate currently links to 0 public article(s)."
         ],
         "linksToPublicArticles": 0,
-        "priorityScore": 248,
+        "priorityScore": 168,
         "publishConfirm": "not-included",
         "readyForInternalLinkSprint": true,
         "scopes": [
           "expansion",
-          "recommended",
-          "wave-1"
+          "recommended"
         ],
         "sprintWave": 1,
         "status": "draft",
@@ -5243,113 +5239,6 @@
           }
         ],
         "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
-        "unsafeReasons": []
-      },
-      {
-        "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/multi-model-router-fallback-guide using reader-first anchor text, not keyword stuffing.",
-        "currentInternalLinks": 3,
-        "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "linkActions": [
-          "Keep this as a manual article-body edit; do not auto-insert links.",
-          "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
-          "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
-          "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
-          "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
-          "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
-          "Primary suggested target: /blog/multi-model-router-fallback-guide.",
-          "Candidate currently links to 1 public article(s)."
-        ],
-        "linksToPublicArticles": 1,
-        "priorityScore": 208,
-        "publishConfirm": "not-included",
-        "readyForInternalLinkSprint": true,
-        "scopes": [
-          "expansion",
-          "recommended",
-          "wave-1"
-        ],
-        "sprintWave": 1,
-        "status": "draft",
-        "suggestedLinks": [
-          {
-            "file": "content/blog/multi-model-router-fallback-guide.mdx",
-            "reason": "same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做",
-            "score": 106,
-            "slug": "multi-model-router-fallback-guide",
-            "title": "多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估",
-            "url": "/blog/multi-model-router-fallback-guide"
-          },
-          {
-            "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
-            "reason": "same category: AI 部署; keyword overlap: ai, claude, 部署, 降级, api, 怎么",
-            "score": 74,
-            "slug": "claude-api-rate-limit-debug-guide",
-            "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
-            "url": "/blog/claude-api-rate-limit-debug-guide"
-          },
-          {
-            "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
-            "reason": "same category: AI 部署; keyword overlap: ai, gemini, 部署, 降级, api, 怎么",
-            "score": 74,
-            "slug": "gemini-api-rate-limit-debug-guide",
-            "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
-            "url": "/blog/gemini-api-rate-limit-debug-guide"
-          }
-        ],
-        "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
-        "unsafeReasons": []
-      },
-      {
-        "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/qdrant-vector-database-beginner-guide using reader-first anchor text, not keyword stuffing.",
-        "currentInternalLinks": 3,
-        "file": "content/blog/supabase-pgvector-rag-guide.mdx",
-        "linkActions": [
-          "Keep this as a manual article-body edit; do not auto-insert links.",
-          "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
-          "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
-          "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
-          "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
-          "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
-          "Primary suggested target: /blog/qdrant-vector-database-beginner-guide.",
-          "Candidate currently links to 1 public article(s)."
-        ],
-        "linksToPublicArticles": 1,
-        "priorityScore": 148,
-        "publishConfirm": "not-included",
-        "readyForInternalLinkSprint": true,
-        "scopes": [
-          "expansion",
-          "wave-1"
-        ],
-        "sprintWave": 1,
-        "status": "draft",
-        "suggestedLinks": [
-          {
-            "file": "content/blog/qdrant-vector-database-beginner-guide.mdx",
-            "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, ai, 基建, 向量数据库, 语义搜索, 向量",
-            "score": 114,
-            "slug": "qdrant-vector-database-beginner-guide",
-            "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-            "url": "/blog/qdrant-vector-database-beginner-guide"
-          },
-          {
-            "file": "content/blog/pinecone-rag-beginner-guide.mdx",
-            "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, 怎么开始, ai, 基建, 向量数据库, metadata",
-            "score": 110,
-            "slug": "pinecone-rag-beginner-guide",
-            "title": "Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试",
-            "url": "/blog/pinecone-rag-beginner-guide"
-          },
-          {
-            "file": "content/blog/chroma-vector-database-rag-guide.mdx",
-            "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 怎么",
-            "score": 98,
-            "slug": "chroma-vector-database-rag-guide",
-            "title": "Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection",
-            "url": "/blog/chroma-vector-database-rag-guide"
-          }
-        ],
-        "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
         "unsafeReasons": []
       },
       {
@@ -5402,6 +5291,215 @@
           }
         ],
         "title": "AI 工具新手不应该先买哪些工具",
+        "unsafeReasons": []
+      },
+      {
+        "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/multi-model-router-fallback-guide using reader-first anchor text, not keyword stuffing.",
+        "currentInternalLinks": 3,
+        "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+        "linkActions": [
+          "Keep this as a manual article-body edit; do not auto-insert links.",
+          "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+          "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+          "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+          "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+          "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+          "Primary suggested target: /blog/multi-model-router-fallback-guide.",
+          "Candidate currently links to 1 public article(s)."
+        ],
+        "linksToPublicArticles": 1,
+        "priorityScore": 128,
+        "publishConfirm": "not-included",
+        "readyForInternalLinkSprint": true,
+        "scopes": [
+          "expansion",
+          "recommended"
+        ],
+        "sprintWave": 1,
+        "status": "draft",
+        "suggestedLinks": [
+          {
+            "file": "content/blog/multi-model-router-fallback-guide.mdx",
+            "reason": "same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做",
+            "score": 106,
+            "slug": "multi-model-router-fallback-guide",
+            "title": "多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估",
+            "url": "/blog/multi-model-router-fallback-guide"
+          },
+          {
+            "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+            "reason": "same category: AI 部署; keyword overlap: ai, claude, 部署, 降级, api, 怎么",
+            "score": 74,
+            "slug": "claude-api-rate-limit-debug-guide",
+            "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+            "url": "/blog/claude-api-rate-limit-debug-guide"
+          },
+          {
+            "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
+            "reason": "same category: AI 部署; keyword overlap: ai, gemini, 部署, 降级, api, 怎么",
+            "score": 74,
+            "slug": "gemini-api-rate-limit-debug-guide",
+            "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+            "url": "/blog/gemini-api-rate-limit-debug-guide"
+          }
+        ],
+        "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+        "unsafeReasons": []
+      },
+      {
+        "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/codex-edit-existing-ui-freelance-scope using reader-first anchor text, not keyword stuffing.",
+        "currentInternalLinks": 6,
+        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "linkActions": [
+          "Keep this as a manual article-body edit; do not auto-insert links.",
+          "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+          "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+          "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+          "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+          "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+          "Primary suggested target: /blog/codex-edit-existing-ui-freelance-scope.",
+          "Candidate currently links to 2 public article(s)."
+        ],
+        "linksToPublicArticles": 2,
+        "priorityScore": 126,
+        "publishConfirm": "not-included",
+        "readyForInternalLinkSprint": true,
+        "scopes": [
+          "wave-1"
+        ],
+        "sprintWave": 1,
+        "status": "published",
+        "suggestedLinks": [
+          {
+            "file": "content/blog/codex-edit-existing-ui-freelance-scope.mdx",
+            "reason": "keyword overlap: ai, codex, 怎么, 工具, 项目, 能不",
+            "score": 71,
+            "slug": "codex-edit-existing-ui-freelance-scope",
+            "title": "Codex 修改现有网页 UI 使用前怎么判断是否适合",
+            "url": "/blog/codex-edit-existing-ui-freelance-scope"
+          },
+          {
+            "file": "content/blog/codex-client-requirement-questions-freelance-scope.mdx",
+            "reason": "keyword overlap: ai, codex, 怎么, 工具, 项目, 能不",
+            "score": 67,
+            "slug": "codex-client-requirement-questions-freelance-scope",
+            "title": "Codex 需求不清楚的任务使用前怎么判断是否适合",
+            "url": "/blog/codex-client-requirement-questions-freelance-scope"
+          },
+          {
+            "file": "content/blog/codex-bugfix-rollback-record-freelance-scope.mdx",
+            "reason": "keyword overlap: ai, codex, 怎么, 工具, 项目, 能不",
+            "score": 63,
+            "slug": "codex-bugfix-rollback-record-freelance-scope",
+            "title": "Codex 修 bug 任务使用前怎么判断是否适合",
+            "url": "/blog/codex-bugfix-rollback-record-freelance-scope"
+          }
+        ],
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "unsafeReasons": []
+      },
+      {
+        "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/sales-ai-prompts-guide using reader-first anchor text, not keyword stuffing.",
+        "currentInternalLinks": 6,
+        "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "linkActions": [
+          "Keep this as a manual article-body edit; do not auto-insert links.",
+          "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+          "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+          "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+          "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+          "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+          "Primary suggested target: /blog/sales-ai-prompts-guide.",
+          "Candidate currently links to 2 public article(s)."
+        ],
+        "linksToPublicArticles": 2,
+        "priorityScore": 126,
+        "publishConfirm": "not-included",
+        "readyForInternalLinkSprint": true,
+        "scopes": [
+          "wave-1"
+        ],
+        "sprintWave": 2,
+        "status": "published",
+        "suggestedLinks": [
+          {
+            "file": "content/blog/sales-ai-prompts-guide.mdx",
+            "reason": "same category: AI 提示词; keyword overlap: ai, 销售, 提示词, 提示词模板, 提示, 示词",
+            "score": 114,
+            "slug": "sales-ai-prompts-guide",
+            "title": "销售 AI 提示词模板：客户画像、跟进话术、异议处理和会议纪要",
+            "url": "/blog/sales-ai-prompts-guide"
+          },
+          {
+            "file": "content/blog/ai-prompt-framework-business-guide.mdx",
+            "reason": "same category: AI 提示词; shared tags: AI 提示词; keyword overlap: ai, 提示词, 行业, 全行, 提示, 示词",
+            "score": 90,
+            "slug": "ai-prompt-framework-business-guide",
+            "title": "AI 提示词怎么写才好用：全行业都能套的 5 段式框架",
+            "url": "/blog/ai-prompt-framework-business-guide"
+          },
+          {
+            "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+            "reason": "same category: AI 提示词; keyword overlap: ai, 客服, 提示词, 提示词模板, 提示, 示词",
+            "score": 90,
+            "slug": "customer-service-ai-prompts-guide",
+            "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
+            "url": "/blog/customer-service-ai-prompts-guide"
+          }
+        ],
+        "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+        "unsafeReasons": []
+      },
+      {
+        "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/n8n-ai-agent-rag-memory-guide using reader-first anchor text, not keyword stuffing.",
+        "currentInternalLinks": 4,
+        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "linkActions": [
+          "Keep this as a manual article-body edit; do not auto-insert links.",
+          "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
+          "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
+          "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
+          "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
+          "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
+          "Primary suggested target: /blog/n8n-ai-agent-rag-memory-guide.",
+          "Candidate currently links to 3 public article(s)."
+        ],
+        "linksToPublicArticles": 3,
+        "priorityScore": 124,
+        "publishConfirm": "not-included",
+        "readyForInternalLinkSprint": true,
+        "scopes": [
+          "wave-1"
+        ],
+        "sprintWave": 2,
+        "status": "published",
+        "suggestedLinks": [
+          {
+            "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+            "reason": "same category: AI 部署; shared tags: RAG, AI Agent; keyword overlap: ai, 部署, rag, agent, 知识, 识库",
+            "score": 86,
+            "slug": "n8n-ai-agent-rag-memory-guide",
+            "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+            "url": "/blog/n8n-ai-agent-rag-memory-guide"
+          },
+          {
+            "file": "content/blog/enterprise-im-ai-agent-integration-guide.mdx",
+            "reason": "same category: AI 部署; shared tags: AI Agent; keyword overlap: ai, 部署, agent, 人工, 怎么, 么接",
+            "score": 70,
+            "slug": "enterprise-im-ai-agent-integration-guide",
+            "title": "企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管",
+            "url": "/blog/enterprise-im-ai-agent-integration-guide"
+          },
+          {
+            "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
+            "reason": "same category: AI 部署; keyword overlap: ai, 成本, 部署, 模型, 怎么, 么做",
+            "score": 70,
+            "slug": "llm-cost-monitoring-dashboard-guide",
+            "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
+            "url": "/blog/llm-cost-monitoring-dashboard-guide"
+          }
+        ],
+        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
         "unsafeReasons": []
       },
       {
@@ -5529,7 +5627,7 @@
         "scopes": [
           "expansion"
         ],
-        "sprintWave": 2,
+        "sprintWave": 3,
         "status": "draft",
         "suggestedLinks": [
           {
@@ -5581,7 +5679,7 @@
         "scopes": [
           "expansion"
         ],
-        "sprintWave": 2,
+        "sprintWave": 3,
         "status": "draft",
         "suggestedLinks": [
           {
@@ -5715,110 +5813,6 @@
         ],
         "title": "Vercel 部署后 404 检查清单：逐页验收更稳",
         "unsafeReasons": []
-      },
-      {
-        "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/small-site-launch-sop-checklist using reader-first anchor text, not keyword stuffing.",
-        "currentInternalLinks": 3,
-        "file": "content/blog/vercel-deploy-checklist-template.mdx",
-        "linkActions": [
-          "Keep this as a manual article-body edit; do not auto-insert links.",
-          "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
-          "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
-          "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
-          "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
-          "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
-          "Primary suggested target: /blog/small-site-launch-sop-checklist.",
-          "Candidate currently links to 0 public article(s)."
-        ],
-        "linksToPublicArticles": 0,
-        "priorityScore": 108,
-        "publishConfirm": "not-included",
-        "readyForInternalLinkSprint": true,
-        "scopes": [
-          "expansion"
-        ],
-        "sprintWave": 3,
-        "status": "draft",
-        "suggestedLinks": [
-          {
-            "file": "content/blog/small-site-launch-sop-checklist.mdx",
-            "reason": "same category: 模板和清单; shared tags: AI 工具实践; keyword overlap: 模板和清单, ai, 工具实践, 检查, 怎么, 么写",
-            "score": 114,
-            "slug": "small-site-launch-sop-checklist",
-            "title": "小网站上线检查 SOP 怎么写：新手检查清单",
-            "url": "/blog/small-site-launch-sop-checklist"
-          },
-          {
-            "file": "content/blog/portfolio-page-copy-template-checklist.mdx",
-            "reason": "same category: 模板和清单; shared tags: AI 工具实践; keyword overlap: 模板和清单, ai, 工具实践, 检查, 怎么, 么写",
-            "score": 110,
-            "slug": "portfolio-page-copy-template-checklist",
-            "title": "作品集页面文案模板怎么写真实：新手检查清单",
-            "url": "/blog/portfolio-page-copy-template-checklist"
-          },
-          {
-            "file": "content/blog/practice-project-log-template-checklist.mdx",
-            "reason": "same category: 模板和清单; shared tags: AI 工具实践; keyword overlap: 模板和清单, ai, 工具实践, 检查, 表怎, 怎么",
-            "score": 110,
-            "slug": "practice-project-log-template-checklist",
-            "title": "新手练习项目记录表怎么用：新手检查清单",
-            "url": "/blog/practice-project-log-template-checklist"
-          }
-        ],
-        "title": "Vercel 部署检查表怎么写：给新手的上线模板",
-        "unsafeReasons": []
-      },
-      {
-        "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/nextjs-hydration-error-debug-freelance-scope using reader-first anchor text, not keyword stuffing.",
-        "currentInternalLinks": 2,
-        "file": "content/blog/vercel-404-after-deploy.mdx",
-        "linkActions": [
-          "Keep this as a manual article-body edit; do not auto-insert links.",
-          "Add at most one contextual public link during the first human review pass unless the reviewer approves more.",
-          "Use natural anchor text that matches the surrounding paragraph instead of exact-match stuffing.",
-          "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
-          "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
-          "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
-          "Primary suggested target: /blog/nextjs-hydration-error-debug-freelance-scope.",
-          "Candidate currently links to 0 public article(s)."
-        ],
-        "linksToPublicArticles": 0,
-        "priorityScore": 107,
-        "publishConfirm": "not-included",
-        "readyForInternalLinkSprint": true,
-        "scopes": [
-          "expansion"
-        ],
-        "sprintWave": 3,
-        "status": "draft",
-        "suggestedLinks": [
-          {
-            "file": "content/blog/nextjs-hydration-error-debug-freelance-scope.mdx",
-            "reason": "same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, 排查, ai, 工具实践, next, js",
-            "score": 98,
-            "slug": "nextjs-hydration-error-debug-freelance-scope",
-            "title": "Next.js hydration error 怎么排查：使用前怎么判断是否适合",
-            "url": "/blog/nextjs-hydration-error-debug-freelance-scope"
-          },
-          {
-            "file": "content/blog/node-version-mismatch-fix-freelance-scope.mdx",
-            "reason": "same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, ai, 工具实践, js, 报错, 错解",
-            "score": 98,
-            "slug": "node-version-mismatch-fix-freelance-scope",
-            "title": "Node 版本不匹配使用前怎么判断是否适合",
-            "url": "/blog/node-version-mismatch-fix-freelance-scope"
-          },
-          {
-            "file": "content/blog/node-version-mismatch-fix-mistakes.mdx",
-            "reason": "same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, 排查, ai, 工具实践, js, 报错",
-            "score": 98,
-            "slug": "node-version-mismatch-fix-mistakes",
-            "title": "Node 版本不匹配常见错误和解决步骤",
-            "url": "/blog/node-version-mismatch-fix-mistakes"
-          }
-        ],
-        "title": "Vercel 部署成功但页面 404：新手排查顺序",
-        "unsafeReasons": []
       }
     ],
     "trafficDataAvailable": false,
@@ -5829,9 +5823,9 @@
         "actionItems": 32,
         "files": [
           "content/blog/vector-database-selection-for-rag-guide.mdx",
+          "content/blog/tools-not-to-buy-first.mdx",
           "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-          "content/blog/supabase-pgvector-rag-guide.mdx",
-          "content/blog/tools-not-to-buy-first.mdx"
+          "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx"
         ],
         "items": 4,
         "readyItems": 4,
@@ -5847,14 +5841,15 @@
       {
         "actionItems": 32,
         "files": [
+          "content/blog/industry-ai-prompts-template-library-2026.mdx",
+          "content/blog/ai-model-selection-customer-service-guide.mdx",
           "content/blog/vercel-404-after-deploy-freelance-scope.mdx",
-          "content/blog/windows-path-permission-install-fix-checklist.mdx",
-          "content/blog/windows-path-permission-install-fix-freelance-scope.mdx",
-          "content/blog/windows-path-permission-install-fix.mdx"
+          "content/blog/windows-path-permission-install-fix-checklist.mdx"
         ],
         "items": 4,
         "readyItems": 4,
         "scopes": [
+          "wave-1",
           "expansion"
         ],
         "suggestedPublicLinks": 12,
@@ -5864,10 +5859,10 @@
       {
         "actionItems": 32,
         "files": [
+          "content/blog/windows-path-permission-install-fix-freelance-scope.mdx",
+          "content/blog/windows-path-permission-install-fix.mdx",
           "content/blog/subscription-payment-failed-message.mdx",
-          "content/blog/vercel-404-after-deploy-checklist.mdx",
-          "content/blog/vercel-deploy-checklist-template.mdx",
-          "content/blog/vercel-404-after-deploy.mdx"
+          "content/blog/vercel-404-after-deploy-checklist.mdx"
         ],
         "items": 4,
         "readyItems": 4,
@@ -5881,10 +5876,10 @@
       {
         "actionItems": 32,
         "files": [
+          "content/blog/vercel-deploy-checklist-template.mdx",
+          "content/blog/vercel-404-after-deploy.mdx",
           "content/blog/together-ai-api-beginner-guide.mdx",
-          "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
-          "content/blog/tensorrt-llm-beginner-guide.mdx",
-          "content/blog/vllm-deployment-beginner-guide.mdx"
+          "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx"
         ],
         "items": 4,
         "readyItems": 4,
@@ -5894,6 +5889,22 @@
         "suggestedPublicLinks": 12,
         "unsafeItems": 0,
         "wave": 4
+      },
+      {
+        "actionItems": 24,
+        "files": [
+          "content/blog/supabase-pgvector-rag-guide.mdx",
+          "content/blog/tensorrt-llm-beginner-guide.mdx",
+          "content/blog/vllm-deployment-beginner-guide.mdx"
+        ],
+        "items": 3,
+        "readyItems": 3,
+        "scopes": [
+          "expansion"
+        ],
+        "suggestedPublicLinks": 9,
+        "unsafeItems": 0,
+        "wave": 5
       }
     ]
   },
@@ -6040,7 +6051,7 @@
         "url": "https://ai-sdk.dev/docs"
       },
       {
-        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=vi",
+        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=ko",
         "ok": true,
         "references": [
           {
@@ -7376,10 +7387,10 @@
         "affectedTitles": [
           "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
         ],
-        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=vi",
+        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=ko",
         "humanChecklist": [
           "Review URL: https://ai.google.dev/docs.",
-          "Review final URL: https://ai.google.dev/gemini-api/docs?hl=vi.",
+          "Review final URL: https://ai.google.dev/gemini-api/docs?hl=ko.",
           "HTTP status observed by automation: 200.",
           "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
           "If the final URL is the canonical destination, update the source target during human review.",
@@ -9858,7 +9869,7 @@
           "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=vi.",
+          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=ko.",
           "Open source URL: https://platform.openai.com/docs.",
           "Open source URL: https://ai-sdk.dev/docs.",
           "Open source URL: https://docs.anthropic.com.",
@@ -9892,7 +9903,7 @@
           "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=vi."
+          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=ko."
         ],
         "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
         "unsafeReasons": []
@@ -11663,8 +11674,8 @@
           "TensorRT-LLM 入门落地步骤",
           "TensorRT-LLM 入门对比",
           "TensorRT-LLM 入门怎么选",
-          "TensorRT-LLM 入门模板",
-          "TensorRT-LLM 入门清单"
+          "vLLM 和 TGI 区别",
+          "RunPod 和 Modal 部署对比"
         ],
         "sourceActions": [
           "Verify official source: vLLM docs: https://docs.vllm.ai",
@@ -18843,43 +18854,50 @@
     "itemsList": [
       {
         "commandBoundary": {
-          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
           "publishConfirm": "not-included",
-          "publishDryRunAfterReview": "npm run publish:articles -- --dry-run"
+          "publishDryRunAfterReview": "not-applicable-public-page"
         },
-        "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
         "humanChecklist": [
-          "Review file: content/blog/vercel-ai-gateway-multi-provider-guide.mdx.",
-          "Review status: draft.",
-          "Confirm primary keyword intent: Vercel AI Gateway 多模型.",
+          "Review file: content/blog/ai-model-selection-customer-service-guide.mdx.",
+          "Review status: published.",
+          "Confirm primary keyword intent: 客服 AI 模型选型.",
+          "Snippet warning: description may be thin for search snippets.",
           "Snippet warning: primary keyword is not an exact title substring.",
-          "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
+          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
+          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
+          "Confirm description length remains suitable for search snippets after editing.",
+          "Check whether the title can naturally include the exact primary keyword: 客服 AI 模型选型.",
           "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
           "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
           "Do not mark review or publish from this remediation pack."
         ],
         "manualActions": [
-          "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
+          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
+          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
+          "Confirm description length remains suitable for search snippets after editing.",
+          "Check whether the title can naturally include the exact primary keyword: 客服 AI 模型选型.",
           "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
           "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
         ],
         "manualFixReady": true,
-        "primaryKeyword": "Vercel AI Gateway 多模型",
-        "priority": 78,
+        "primaryKeyword": "客服 AI 模型选型",
+        "priority": 96,
         "scope": [
-          "expansion",
-          "recommended",
+          "public",
           "wave-1"
         ],
         "schemaWarnings": [],
         "snippetWarnings": [
+          "description may be thin for search snippets",
           "primary keyword is not an exact title substring"
         ],
-        "status": "draft",
-        "stopBefore": "Stop before human approval before changing draft metadata, mark:review, or publishing.",
-        "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
         "unsafeReasons": []
       },
       {
@@ -19029,53 +19047,6 @@
           "publishConfirm": "not-included",
           "publishDryRunAfterReview": "not-applicable-public-page"
         },
-        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-        "humanChecklist": [
-          "Review file: content/blog/ai-model-selection-customer-service-guide.mdx.",
-          "Review status: published.",
-          "Confirm primary keyword intent: 客服 AI 模型选型.",
-          "Snippet warning: description may be thin for search snippets.",
-          "Snippet warning: primary keyword is not an exact title substring.",
-          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-          "Confirm description length remains suitable for search snippets after editing.",
-          "Check whether the title can naturally include the exact primary keyword: 客服 AI 模型选型.",
-          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
-          "Do not mark review or publish from this remediation pack."
-        ],
-        "manualActions": [
-          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-          "Confirm description length remains suitable for search snippets after editing.",
-          "Check whether the title can naturally include the exact primary keyword: 客服 AI 模型选型.",
-          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
-        ],
-        "manualFixReady": true,
-        "primaryKeyword": "客服 AI 模型选型",
-        "priority": 66,
-        "scope": [
-          "public"
-        ],
-        "schemaWarnings": [],
-        "snippetWarnings": [
-          "description may be thin for search snippets",
-          "primary keyword is not an exact title substring"
-        ],
-        "status": "published",
-        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
-        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-        "unsafeReasons": []
-      },
-      {
-        "commandBoundary": {
-          "markReviewAfterHumanApproval": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "publishDryRunAfterReview": "not-applicable-public-page"
-        },
         "file": "content/blog/ai-output-unstable-risk-control-checklist.mdx",
         "humanChecklist": [
           "Review file: content/blog/ai-output-unstable-risk-control-checklist.mdx.",
@@ -19209,6 +19180,53 @@
         "status": "published",
         "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
         "title": "AI 工具配置服务项目检查清单",
+        "unsafeReasons": []
+      },
+      {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "not-applicable-public-page"
+        },
+        "file": "content/blog/claude-code-vs-codex-web-editing-checklist.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/claude-code-vs-codex-web-editing-checklist.mdx.",
+          "Review status: published.",
+          "Confirm primary keyword intent: 网页修改 AI 工具检查清单.",
+          "Snippet warning: description may be thin for search snippets.",
+          "Snippet warning: primary keyword is not an exact title substring.",
+          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
+          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
+          "Confirm description length remains suitable for search snippets after editing.",
+          "Check whether the title can naturally include the exact primary keyword: 网页修改 AI 工具检查清单.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
+          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
+          "Confirm description length remains suitable for search snippets after editing.",
+          "Check whether the title can naturally include the exact primary keyword: 网页修改 AI 工具检查清单.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+        ],
+        "manualFixReady": true,
+        "primaryKeyword": "网页修改 AI 工具检查清单",
+        "priority": 66,
+        "scope": [
+          "public"
+        ],
+        "schemaWarnings": [],
+        "snippetWarnings": [
+          "description may be thin for search snippets",
+          "primary keyword is not an exact title substring"
+        ],
+        "status": "published",
+        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
+        "title": "Claude Code 和 Codex 网页修改新手检查清单",
         "unsafeReasons": []
       }
     ],
@@ -20877,6 +20895,7 @@
     "readyForHumanReview": 3,
     "top": [
       {
+        "alreadyPublished": false,
         "approvalChecklist": [
           "Article remains draft: true",
           "Article remains noindex: true",
@@ -20942,6 +20961,7 @@
         ]
       },
       {
+        "alreadyPublished": false,
         "approvalChecklist": [
           "Article remains draft: true",
           "Article remains noindex: true",
@@ -21005,6 +21025,7 @@
         ]
       },
       {
+        "alreadyPublished": false,
         "approvalChecklist": [
           "Article remains draft: true",
           "Article remains noindex: true",
@@ -21080,6 +21101,7 @@
     "readyForHumanApproval": 3,
     "top": [
       {
+        "alreadyPublished": false,
         "blockers": [],
         "commands": {
           "markReviewDryRun": "npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx",
@@ -21100,6 +21122,7 @@
         "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界"
       },
       {
+        "alreadyPublished": false,
         "blockers": [],
         "commands": {
           "markReviewDryRun": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
@@ -21120,6 +21143,7 @@
         "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
       },
       {
+        "alreadyPublished": false,
         "blockers": [],
         "commands": {
           "markReviewDryRun": "npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx",
@@ -21156,7 +21180,7 @@
     "filesScanned": 220,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 9544
+    "watchMentions": 9550
   },
   "publicSurfaceInventory": {
     "broadCoverage": [
@@ -54083,6 +54107,7 @@
           "sourceNotes": true,
           "status": "draft"
         },
+        "alreadyPublished": false,
         "blockers": [],
         "commandBoundary": {
           "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm-human",
@@ -54194,6 +54219,7 @@
           "sourceNotes": true,
           "status": "draft"
         },
+        "alreadyPublished": false,
         "blockers": [],
         "commandBoundary": {
           "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
@@ -54318,6 +54344,7 @@
           "sourceNotes": true,
           "status": "draft"
         },
+        "alreadyPublished": false,
         "blockers": [],
         "commandBoundary": {
           "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx --confirm-human",
@@ -54425,6 +54452,7 @@
     "sourceDecisionItems": 1,
     "top": [
       {
+        "alreadyPublished": false,
         "articleState": {
           "humanReviewRequired": true,
           "noindex": true,
@@ -54497,6 +54525,7 @@
         "unsafeReasons": []
       },
       {
+        "alreadyPublished": false,
         "articleState": {
           "humanReviewRequired": true,
           "noindex": true,
@@ -54594,11 +54623,10 @@
           ],
           "manualFixReady": true,
           "primaryKeyword": "Vercel AI Gateway 多模型",
-          "priority": 78,
+          "priority": 48,
           "scope": [
             "expansion",
-            "recommended",
-            "wave-1"
+            "recommended"
           ],
           "schemaWarnings": [],
           "snippetWarnings": [
@@ -54614,6 +54642,7 @@
         "unsafeReasons": []
       },
       {
+        "alreadyPublished": false,
         "articleState": {
           "humanReviewRequired": true,
           "noindex": true,
@@ -54862,6 +54891,7 @@
         ],
         "category": "AI 部署",
         "clearance": {
+          "alreadyPublished": false,
           "articleState": {
             "humanReviewRequired": true,
             "noindex": true,
@@ -54959,11 +54989,10 @@
             ],
             "manualFixReady": true,
             "primaryKeyword": "Vercel AI Gateway 多模型",
-            "priority": 78,
+            "priority": 48,
             "scope": [
               "expansion",
-              "recommended",
-              "wave-1"
+              "recommended"
             ],
             "schemaWarnings": [],
             "snippetWarnings": [
@@ -55222,11 +55251,10 @@
           ],
           "manualFixReady": true,
           "primaryKeyword": "Vercel AI Gateway 多模型",
-          "priority": 78,
+          "priority": 48,
           "scope": [
             "expansion",
-            "recommended",
-            "wave-1"
+            "recommended"
           ],
           "schemaWarnings": [],
           "snippetWarnings": [
@@ -61943,18 +61971,18 @@
     "unsafeItems": 7
   },
   "popularPromptApprovalBridge": {
-    "approvalQueueItems": 6,
-    "approvalQueueReadyItems": 6,
-    "bridgeItems": 13,
-    "bridgeItemsReadyForHumanReviewPrep": 7,
-    "commandBoundaries": 13,
+    "approvalQueueItems": 8,
+    "approvalQueueReadyItems": 8,
+    "bridgeItems": 15,
+    "bridgeItemsReadyForHumanReviewPrep": 9,
+    "commandBoundaries": 15,
     "lanes": 10,
-    "lanesAlreadyInApprovalQueue": 5,
+    "lanesAlreadyInApprovalQueue": 0,
     "lanesWithNextCandidates": 5,
     "lanesWithReadyNextCandidates": 3,
     "playbookItems": 10,
     "playbookReadyItems": 3,
-    "promptTemplatesReferenced": 65,
+    "promptTemplatesReferenced": 75,
     "publishConfirmCommandsIncluded": 0,
     "reviewCandidatePool": 148,
     "searchQueriesReferenced": 50,
@@ -62113,6 +62141,110 @@
           "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
         ],
         "title": "模板站什么时候接入支付平台",
+        "unsafeReasons": []
+      },
+      {
+        "articleState": {
+          "humanReviewRequired": true,
+          "noindex": true,
+          "qualityScore": 100,
+          "sourceNotes": true,
+          "status": "draft"
+        },
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm-human",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vector-database-selection-for-rag-guide.mdx",
+          "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
+        },
+        "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
+        "laneId": "excel-data-analysis-prompts",
+        "laneTitle": "Excel 和数据分析 AI 提示词",
+        "opportunityScore": 65,
+        "promptTemplates": 5,
+        "readyForHumanReviewPrep": true,
+        "reviewFocus": [
+          "Confirm the article answers this popular prompt lane instead of drifting into a narrow tool-only query.",
+          "Verify official sources before any status change.",
+          "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.",
+          "Do not claim traffic, rankings, revenue, conversion, or guaranteed outcomes.",
+          "Use the lane search queries as title, intro, and FAQ review prompts only after human review."
+        ],
+        "searchQueries": [
+          "Excel AI 提示词",
+          "ChatGPT 分析表格数据",
+          "AI 数据分析提示词",
+          "销售数据分析 prompt",
+          "财务报表 AI 分析提示词",
+          "Excel 透视表 AI 教程",
+          "用 AI 找异常数据",
+          "ChatGPT 做数据分析怎么提问",
+          "AI 生成图表建议",
+          "运营数据复盘提示词"
+        ],
+        "sourceTargets": [
+          "https://platform.openai.com/docs/guides/prompt-engineering",
+          "https://platform.openai.com/docs/guides/prompting",
+          "https://support.microsoft.com/en-us/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5",
+          "https://adoption.microsoft.com/en-us/copilot/prompt-gallery/",
+          "https://ai.google.dev/gemini-api/docs/models/generative-models",
+          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+          "LangChain docs: https://python.langchain.com/docs",
+          "LlamaIndex docs: https://docs.llamaindex.ai"
+        ],
+        "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
+        "unsafeReasons": []
+      },
+      {
+        "articleState": {
+          "humanReviewRequired": true,
+          "noindex": true,
+          "qualityScore": 100,
+          "sourceNotes": true,
+          "status": "draft"
+        },
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx --confirm-human",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/supabase-pgvector-rag-guide.mdx",
+          "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
+        },
+        "file": "content/blog/supabase-pgvector-rag-guide.mdx",
+        "laneId": "excel-data-analysis-prompts",
+        "laneTitle": "Excel 和数据分析 AI 提示词",
+        "opportunityScore": 64,
+        "promptTemplates": 5,
+        "readyForHumanReviewPrep": true,
+        "reviewFocus": [
+          "Confirm the article answers this popular prompt lane instead of drifting into a narrow tool-only query.",
+          "Verify official sources before any status change.",
+          "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.",
+          "Do not claim traffic, rankings, revenue, conversion, or guaranteed outcomes.",
+          "Use the lane search queries as title, intro, and FAQ review prompts only after human review."
+        ],
+        "searchQueries": [
+          "Excel AI 提示词",
+          "ChatGPT 分析表格数据",
+          "AI 数据分析提示词",
+          "销售数据分析 prompt",
+          "财务报表 AI 分析提示词",
+          "Excel 透视表 AI 教程",
+          "用 AI 找异常数据",
+          "ChatGPT 做数据分析怎么提问",
+          "AI 生成图表建议",
+          "运营数据复盘提示词"
+        ],
+        "sourceTargets": [
+          "https://platform.openai.com/docs/guides/prompt-engineering",
+          "https://platform.openai.com/docs/guides/prompting",
+          "https://support.microsoft.com/en-us/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5",
+          "https://adoption.microsoft.com/en-us/copilot/prompt-gallery/",
+          "https://ai.google.dev/gemini-api/docs/models/generative-models",
+          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+          "LangChain docs: https://python.langchain.com/docs",
+          "LlamaIndex docs: https://docs.llamaindex.ai"
+        ],
+        "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
         "unsafeReasons": []
       },
       {
@@ -62487,132 +62619,22 @@
         ],
         "title": "Vercel 部署检查表怎么写：给新手的上线模板",
         "unsafeReasons": []
-      },
-      {
-        "articleState": {
-          "humanReviewRequired": true,
-          "noindex": true,
-          "qualityScore": 100,
-          "sourceNotes": true,
-          "status": "draft"
-        },
-        "commandBoundary": {
-          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-404-after-deploy.mdx --confirm-human",
-          "publishConfirm": "not-included",
-          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vercel-404-after-deploy.mdx",
-          "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
-        },
-        "file": "content/blog/vercel-404-after-deploy.mdx",
-        "laneId": "agent-memory-knowledge-base-prompts",
-        "laneTitle": "Agent 记忆、知识库和 RAG 提示词",
-        "opportunityScore": 123,
-        "promptTemplates": 5,
-        "readyForHumanReviewPrep": false,
-        "reviewFocus": [
-          "Confirm the article answers this popular prompt lane instead of drifting into a narrow tool-only query.",
-          "Verify official sources before any status change.",
-          "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.",
-          "Do not claim traffic, rankings, revenue, conversion, or guaranteed outcomes.",
-          "Use the lane search queries as title, intro, and FAQ review prompts only after human review."
-        ],
-        "searchQueries": [
-          "AI Agent 记忆怎么做",
-          "Agent memory prompt",
-          "RAG 知识库提示词",
-          "LangChain long term memory",
-          "OpenAI Agents SDK memory",
-          "AI 客服知识库 prompt",
-          "AI 助理长期记忆教程",
-          "知识库问答提示词",
-          "Agent 记忆安全检查",
-          "AI memory retention policy"
-        ],
-        "sourceTargets": [
-          "https://openai.github.io/openai-agents-js/guides/sandbox-agents/memory/",
-          "https://docs.langchain.com/oss/python/deepagents/long-term-memory",
-          "https://platform.openai.com/docs/guides/agents-sdk",
-          "https://platform.openai.com/docs/guides/prompt-engineering",
-          "https://platform.openai.com/docs/guides/prompt-generation",
-          "OpenAI API docs: https://platform.openai.com/docs",
-          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-          "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
-        ],
-        "title": "Vercel 部署成功但页面 404：新手排查顺序",
-        "unsafeReasons": [
-          "popular prompt lane is not ready for human review prep",
-          "popular prompt lane has unsafe reasons"
-        ]
-      },
-      {
-        "articleState": {
-          "humanReviewRequired": true,
-          "noindex": true,
-          "qualityScore": 100,
-          "sourceNotes": true,
-          "status": "draft"
-        },
-        "commandBoundary": {
-          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-deploy-checklist-template-checklist.mdx --confirm-human",
-          "publishConfirm": "not-included",
-          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vercel-deploy-checklist-template-checklist.mdx",
-          "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
-        },
-        "file": "content/blog/vercel-deploy-checklist-template-checklist.mdx",
-        "laneId": "agent-memory-knowledge-base-prompts",
-        "laneTitle": "Agent 记忆、知识库和 RAG 提示词",
-        "opportunityScore": 123,
-        "promptTemplates": 5,
-        "readyForHumanReviewPrep": false,
-        "reviewFocus": [
-          "Confirm the article answers this popular prompt lane instead of drifting into a narrow tool-only query.",
-          "Verify official sources before any status change.",
-          "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.",
-          "Do not claim traffic, rankings, revenue, conversion, or guaranteed outcomes.",
-          "Use the lane search queries as title, intro, and FAQ review prompts only after human review."
-        ],
-        "searchQueries": [
-          "AI Agent 记忆怎么做",
-          "Agent memory prompt",
-          "RAG 知识库提示词",
-          "LangChain long term memory",
-          "OpenAI Agents SDK memory",
-          "AI 客服知识库 prompt",
-          "AI 助理长期记忆教程",
-          "知识库问答提示词",
-          "Agent 记忆安全检查",
-          "AI memory retention policy"
-        ],
-        "sourceTargets": [
-          "https://openai.github.io/openai-agents-js/guides/sandbox-agents/memory/",
-          "https://docs.langchain.com/oss/python/deepagents/long-term-memory",
-          "https://platform.openai.com/docs/guides/agents-sdk",
-          "https://platform.openai.com/docs/guides/prompt-engineering",
-          "https://platform.openai.com/docs/guides/prompt-generation",
-          "OpenAI API docs: https://platform.openai.com/docs",
-          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-          "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
-        ],
-        "title": "Vercel 部署检查表怎么写：新手检查清单",
-        "unsafeReasons": [
-          "popular prompt lane is not ready for human review prep",
-          "popular prompt lane has unsafe reasons"
-        ]
       }
     ],
     "trafficDataAvailable": false,
     "unsafeItems": 6,
-    "uniqueFiles": 7
+    "uniqueFiles": 9
   },
   "popularPromptSprintBoard": {
     "actionItems": 90,
-    "bridgeItems": 13,
+    "bridgeItems": 15,
     "candidateFiles": 21,
     "highPriorityItems": 5,
     "industryBuckets": 5,
     "items": 10,
     "itemsPerWave": 2,
     "lanesReadyForPromptSprint": 3,
-    "nextCandidateFiles": 7,
+    "nextCandidateFiles": 9,
     "playbookItems": 10,
     "promptTemplateSamples": 50,
     "promptTemplates": 50,
@@ -62621,90 +62643,7 @@
     "top": [
       {
         "actionCount": 9,
-        "alreadyQueuedFiles": [
-          "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-          "content/blog/together-ai-api-beginner-guide.mdx",
-          "content/blog/vector-database-selection-for-rag-guide.mdx"
-        ],
-        "audience": "部署大模型 API、本地模型、推理服务和 AI 应用的开发者",
-        "candidateFiles": [
-          "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-          "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
-          "content/blog/vllm-deployment-beginner-guide.mdx",
-          "content/blog/vercel-deploy-checklist-template.mdx",
-          "content/blog/vercel-deploy-checklist-template-checklist.mdx",
-          "content/blog/vercel-vs-netlify-small-site.mdx",
-          "content/blog/vercel-vs-netlify-small-site-checklist.mdx",
-          "content/blog/vercel-404-after-deploy.mdx",
-          "content/blog/together-ai-api-beginner-guide.mdx",
-          "content/blog/vector-database-selection-for-rag-guide.mdx"
-        ],
-        "demandReason": "大模型部署、API 报错、推理延迟、环境变量和日志排错会带来技术流量，且能和工具服务转化相连。",
-        "industryBucket": "agent-deployment",
-        "laneId": "llm-deployment-troubleshooting-prompts",
-        "nextCandidateFiles": [
-          "content/blog/vercel-404-after-deploy.mdx",
-          "content/blog/vercel-deploy-checklist-template-checklist.mdx",
-          "content/blog/vercel-deploy-checklist-template.mdx"
-        ],
-        "promptTemplateSamples": [
-          "大模型部署、本地模型和 API 排错提示词 - 环境变量检查",
-          "大模型部署、本地模型和 API 排错提示词 - API 报错解释",
-          "大模型部署、本地模型和 API 排错提示词 - 推理延迟排查",
-          "大模型部署、本地模型和 API 排错提示词 - 日志摘要",
-          "大模型部署、本地模型和 API 排错提示词 - 上线回滚"
-        ],
-        "publicMatches": 38,
-        "publishConfirm": "not-included",
-        "readyForPromptSprint": true,
-        "reviewActions": [
-          "Keep this as a manual review sprint; do not create or edit articles automatically.",
-          "Use broad, common search phrasing from the lane queries before narrowing to tool-specific keywords.",
-          "Map one article to one dominant user job so prompt examples do not cannibalize adjacent lanes.",
-          "Verify every fast-changing model, product, platform, policy, pricing, API, and agent/memory claim against official sources.",
-          "Add practical prompt inputs, output format, failure checks, and human-review boundaries.",
-          "Do not claim traffic, ranking, conversion, revenue, or guaranteed productivity gains.",
-          "Keep candidate drafts as draft/noindex/humanReviewRequired until explicit approval.",
-          "Review next candidate files: content/blog/vercel-404-after-deploy.mdx, content/blog/vercel-deploy-checklist-template-checklist.mdx, content/blog/vercel-deploy-checklist-template.mdx.",
-          "Check source targets: https://platform.openai.com/docs/guides/prompt-engineering, https://vercel.com/docs/agents, https://platform.openai.com/docs/guides/agents-sdk."
-        ],
-        "searchQueries": [
-          "大模型部署教程",
-          "LLM API 报错排查",
-          "OpenAI API error prompt",
-          "AI 应用部署失败怎么办",
-          "大模型推理服务排错",
-          "AI 环境变量配置教程",
-          "Vercel AI 应用部署错误",
-          "LLM 延迟优化检查清单",
-          "模型 API 日志分析提示词",
-          "AI 项目上线 smoke test",
-          "AI app deployment tutorial",
-          "OpenAI API deployment",
-          "Vercel AI SDK deployment",
-          "Claude API Next.js deployment"
-        ],
-        "sourceTargets": [
-          "https://platform.openai.com/docs/guides/prompt-engineering",
-          "https://vercel.com/docs/agents",
-          "https://platform.openai.com/docs/guides/agents-sdk",
-          "https://openai.github.io/openai-agents-js/guides/sandbox-agents/memory/",
-          "https://docs.langchain.com/oss/python/deepagents/long-term-memory",
-          "OpenAI API docs: https://platform.openai.com/docs",
-          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-          "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
-        ],
-        "sprintPriorityScore": 174,
-        "sprintWave": 1,
-        "title": "大模型部署、本地模型和 API 排错提示词",
-        "unsafeReasons": []
-      },
-      {
-        "actionCount": 9,
-        "alreadyQueuedFiles": [
-          "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-          "content/blog/vercel-build-failed-causes-checklist.mdx"
-        ],
+        "alreadyQueuedFiles": [],
         "audience": "刚开始用 AI 的普通用户、学生、职场新人和小团队老板",
         "candidateFiles": [
           "content/blog/template-download-cta-copy.mdx",
@@ -62773,18 +62712,90 @@
           "https://ai.google.dev/gemini-api/docs/models/generative-models",
           "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
         ],
-        "sprintPriorityScore": 164,
+        "sprintPriorityScore": 144,
         "sprintWave": 1,
         "title": "ChatGPT 提示词大全和万能公式",
         "unsafeReasons": []
       },
       {
         "actionCount": 9,
-        "alreadyQueuedFiles": [
+        "alreadyQueuedFiles": [],
+        "audience": "部署大模型 API、本地模型、推理服务和 AI 应用的开发者",
+        "candidateFiles": [
+          "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+          "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
+          "content/blog/vllm-deployment-beginner-guide.mdx",
+          "content/blog/vercel-deploy-checklist-template.mdx",
+          "content/blog/vercel-deploy-checklist-template-checklist.mdx",
+          "content/blog/vercel-vs-netlify-small-site.mdx",
+          "content/blog/vercel-vs-netlify-small-site-checklist.mdx",
+          "content/blog/vercel-404-after-deploy.mdx",
           "content/blog/together-ai-api-beginner-guide.mdx",
-          "content/blog/vector-database-selection-for-rag-guide.mdx",
-          "content/blog/supabase-pgvector-rag-guide.mdx"
+          "content/blog/vector-database-selection-for-rag-guide.mdx"
         ],
+        "demandReason": "大模型部署、API 报错、推理延迟、环境变量和日志排错会带来技术流量，且能和工具服务转化相连。",
+        "industryBucket": "agent-deployment",
+        "laneId": "llm-deployment-troubleshooting-prompts",
+        "nextCandidateFiles": [
+          "content/blog/vercel-404-after-deploy.mdx",
+          "content/blog/vercel-deploy-checklist-template-checklist.mdx",
+          "content/blog/vercel-deploy-checklist-template.mdx"
+        ],
+        "promptTemplateSamples": [
+          "大模型部署、本地模型和 API 排错提示词 - 环境变量检查",
+          "大模型部署、本地模型和 API 排错提示词 - API 报错解释",
+          "大模型部署、本地模型和 API 排错提示词 - 推理延迟排查",
+          "大模型部署、本地模型和 API 排错提示词 - 日志摘要",
+          "大模型部署、本地模型和 API 排错提示词 - 上线回滚"
+        ],
+        "publicMatches": 38,
+        "publishConfirm": "not-included",
+        "readyForPromptSprint": true,
+        "reviewActions": [
+          "Keep this as a manual review sprint; do not create or edit articles automatically.",
+          "Use broad, common search phrasing from the lane queries before narrowing to tool-specific keywords.",
+          "Map one article to one dominant user job so prompt examples do not cannibalize adjacent lanes.",
+          "Verify every fast-changing model, product, platform, policy, pricing, API, and agent/memory claim against official sources.",
+          "Add practical prompt inputs, output format, failure checks, and human-review boundaries.",
+          "Do not claim traffic, ranking, conversion, revenue, or guaranteed productivity gains.",
+          "Keep candidate drafts as draft/noindex/humanReviewRequired until explicit approval.",
+          "Review next candidate files: content/blog/vercel-404-after-deploy.mdx, content/blog/vercel-deploy-checklist-template-checklist.mdx, content/blog/vercel-deploy-checklist-template.mdx.",
+          "Check source targets: https://platform.openai.com/docs/guides/prompt-engineering, https://vercel.com/docs/agents, https://platform.openai.com/docs/guides/agents-sdk."
+        ],
+        "searchQueries": [
+          "大模型部署教程",
+          "LLM API 报错排查",
+          "OpenAI API error prompt",
+          "AI 应用部署失败怎么办",
+          "大模型推理服务排错",
+          "AI 环境变量配置教程",
+          "Vercel AI 应用部署错误",
+          "LLM 延迟优化检查清单",
+          "模型 API 日志分析提示词",
+          "AI 项目上线 smoke test",
+          "AI app deployment tutorial",
+          "OpenAI API deployment",
+          "Vercel AI SDK deployment",
+          "Claude API Next.js deployment"
+        ],
+        "sourceTargets": [
+          "https://platform.openai.com/docs/guides/prompt-engineering",
+          "https://vercel.com/docs/agents",
+          "https://platform.openai.com/docs/guides/agents-sdk",
+          "https://openai.github.io/openai-agents-js/guides/sandbox-agents/memory/",
+          "https://docs.langchain.com/oss/python/deepagents/long-term-memory",
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+          "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+        ],
+        "sprintPriorityScore": 144,
+        "sprintWave": 1,
+        "title": "大模型部署、本地模型和 API 排错提示词",
+        "unsafeReasons": []
+      },
+      {
+        "actionCount": 9,
+        "alreadyQueuedFiles": [],
         "audience": "运营、财务助理、电商数据、销售管理和数据分析初学者",
         "candidateFiles": [
           "content/blog/together-ai-api-beginner-guide.mdx",
@@ -62796,6 +62807,8 @@
         "industryBucket": "office-data",
         "laneId": "excel-data-analysis-prompts",
         "nextCandidateFiles": [
+          "content/blog/vector-database-selection-for-rag-guide.mdx",
+          "content/blog/supabase-pgvector-rag-guide.mdx",
           "content/blog/vector-database-beginner-guide.mdx"
         ],
         "promptTemplateSamples": [
@@ -62816,7 +62829,7 @@
           "Add practical prompt inputs, output format, failure checks, and human-review boundaries.",
           "Do not claim traffic, ranking, conversion, revenue, or guaranteed productivity gains.",
           "Keep candidate drafts as draft/noindex/humanReviewRequired until explicit approval.",
-          "Review next candidate files: content/blog/vector-database-beginner-guide.mdx.",
+          "Review next candidate files: content/blog/vector-database-selection-for-rag-guide.mdx, content/blog/supabase-pgvector-rag-guide.mdx, content/blog/vector-database-beginner-guide.mdx.",
           "Check source targets: https://platform.openai.com/docs/guides/prompt-engineering, https://platform.openai.com/docs/guides/prompting, https://support.microsoft.com/en-us/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5."
         ],
         "searchQueries": [
@@ -62852,11 +62865,7 @@
       },
       {
         "actionCount": 9,
-        "alreadyQueuedFiles": [
-          "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-          "content/blog/together-ai-api-beginner-guide.mdx",
-          "content/blog/vector-database-selection-for-rag-guide.mdx"
-        ],
+        "alreadyQueuedFiles": [],
         "audience": "做客服 Agent、个人助理、知识库问答和长期任务 Agent 的团队",
         "candidateFiles": [
           "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
@@ -62925,22 +62934,19 @@
           "Vercel AI SDK docs: https://ai-sdk.dev/docs",
           "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
         ],
-        "sprintPriorityScore": 129,
+        "sprintPriorityScore": 99,
         "sprintWave": 2,
         "title": "Agent 记忆、知识库和 RAG 提示词",
         "unsafeReasons": [
           "no candidate files attached",
           "popular prompt lane is not ready for human review prep",
+          "popular prompt lane has no queued or next candidate files",
           "popular prompt lane has unsafe next candidates"
         ]
       },
       {
         "actionCount": 9,
-        "alreadyQueuedFiles": [
-          "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-          "content/blog/together-ai-api-beginner-guide.mdx",
-          "content/blog/vector-database-selection-for-rag-guide.mdx"
-        ],
+        "alreadyQueuedFiles": [],
         "audience": "想部署 Agent 的独立开发者、创业团队和技术运营",
         "candidateFiles": [
           "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
@@ -63009,12 +63015,13 @@
           "Vercel AI SDK docs: https://ai-sdk.dev/docs",
           "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
         ],
-        "sprintPriorityScore": 129,
+        "sprintPriorityScore": 99,
         "sprintWave": 3,
         "title": "AI Agent 部署、工具调用和上线排错提示词",
         "unsafeReasons": [
           "no candidate files attached",
           "popular prompt lane is not ready for human review prep",
+          "popular prompt lane has no queued or next candidate files",
           "popular prompt lane has unsafe next candidates"
         ]
       },
@@ -63347,41 +63354,37 @@
       {
         "actionItems": 18,
         "candidateFiles": [
-          "content/blog/vercel-404-after-deploy.mdx",
-          "content/blog/vercel-deploy-checklist-template-checklist.mdx",
-          "content/blog/vercel-deploy-checklist-template.mdx",
-          "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-          "content/blog/together-ai-api-beginner-guide.mdx",
-          "content/blog/vector-database-selection-for-rag-guide.mdx",
           "content/blog/template-download-site-tools-checklist.mdx",
           "content/blog/template-site-payment-platform-timing-checklist.mdx",
           "content/blog/template-site-payment-platform-timing.mdx",
-          "content/blog/vercel-build-failed-causes-checklist.mdx"
+          "content/blog/vercel-404-after-deploy.mdx",
+          "content/blog/vercel-deploy-checklist-template-checklist.mdx",
+          "content/blog/vercel-deploy-checklist-template.mdx"
         ],
         "highPriorityItems": 2,
         "industryBuckets": [
-          "agent-deployment",
-          "commerce-service"
+          "commerce-service",
+          "agent-deployment"
         ],
         "items": 2,
         "readyItems": 2,
         "searchQueries": [
-          "大模型部署教程",
-          "LLM API 报错排查",
-          "OpenAI API error prompt",
-          "AI 应用部署失败怎么办",
-          "大模型推理服务排错",
-          "AI 环境变量配置教程",
-          "Vercel AI 应用部署错误",
-          "LLM 延迟优化检查清单",
-          "模型 API 日志分析提示词",
-          "AI 项目上线 smoke test",
-          "AI app deployment tutorial",
-          "OpenAI API deployment",
-          "Vercel AI SDK deployment",
-          "Claude API Next.js deployment",
           "ChatGPT 提示词大全",
-          "ChatGPT 怎么提问效果最好"
+          "ChatGPT 怎么提问效果最好",
+          "AI 提示词万能公式",
+          "提示词模板 免费",
+          "Copilot prompt examples",
+          "Gemini prompt guide",
+          "prompt engineering guide",
+          "AI prompt examples for work",
+          "ChatGPT 指令怎么写",
+          "AI 提示词生成器怎么用",
+          "ChatGPT prompts for business",
+          "AI prompt template library",
+          "industry AI prompts",
+          "best AI prompts for work",
+          "大模型部署教程",
+          "LLM API 报错排查"
         ],
         "unsafeItems": 0,
         "wave": 1
@@ -63389,14 +63392,12 @@
       {
         "actionItems": 18,
         "candidateFiles": [
-          "content/blog/vector-database-beginner-guide.mdx",
-          "content/blog/together-ai-api-beginner-guide.mdx",
           "content/blog/vector-database-selection-for-rag-guide.mdx",
           "content/blog/supabase-pgvector-rag-guide.mdx",
+          "content/blog/vector-database-beginner-guide.mdx",
           "content/blog/vercel-404-after-deploy.mdx",
           "content/blog/vercel-deploy-checklist-template-checklist.mdx",
-          "content/blog/vercel-deploy-checklist-template.mdx",
-          "content/blog/vercel-ai-gateway-multi-provider-guide.mdx"
+          "content/blog/vercel-deploy-checklist-template.mdx"
         ],
         "highPriorityItems": 2,
         "industryBuckets": [
@@ -63431,10 +63432,7 @@
         "candidateFiles": [
           "content/blog/vercel-404-after-deploy.mdx",
           "content/blog/vercel-deploy-checklist-template-checklist.mdx",
-          "content/blog/vercel-deploy-checklist-template.mdx",
-          "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-          "content/blog/together-ai-api-beginner-guide.mdx",
-          "content/blog/vector-database-selection-for-rag-guide.mdx"
+          "content/blog/vercel-deploy-checklist-template.mdx"
         ],
         "highPriorityItems": 1,
         "industryBuckets": [
@@ -63575,7 +63573,7 @@
     "lanes": 12,
     "lanesWithReadyDrafts": 7,
     "lanesWithoutPublicCoverage": 0,
-    "maxPriorityScore": 224,
+    "maxPriorityScore": 208,
     "notReadyMatchedDrafts": 57,
     "top": [
       {
@@ -63635,22 +63633,7 @@
             "searchIntent": "informational",
             "status": "draft",
             "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
-            "wave1": true
-          },
-          {
-            "category": "AI 基建",
-            "currentPack": false,
-            "expansionQueue": true,
-            "file": "content/blog/supabase-pgvector-rag-guide.mdx",
-            "noindex": true,
-            "primaryKeyword": "Supabase pgvector",
-            "publishBatch": 24,
-            "qualityScore": 86,
-            "safeDraft": true,
-            "searchIntent": "informational",
-            "status": "draft",
-            "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
-            "wave1": true
+            "wave1": false
           },
           {
             "category": "AI 基建",
@@ -63670,6 +63653,21 @@
           {
             "category": "AI 基建",
             "currentPack": false,
+            "expansionQueue": true,
+            "file": "content/blog/supabase-pgvector-rag-guide.mdx",
+            "noindex": true,
+            "primaryKeyword": "Supabase pgvector",
+            "publishBatch": 24,
+            "qualityScore": 86,
+            "safeDraft": true,
+            "searchIntent": "informational",
+            "status": "draft",
+            "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
+            "wave1": false
+          },
+          {
+            "category": "AI 基建",
+            "currentPack": false,
             "expansionQueue": false,
             "file": "content/blog/vector-database-beginner-guide.mdx",
             "noindex": true,
@@ -63684,139 +63682,11 @@
           }
         ],
         "publicCount": 31,
-        "priorityReason": "demandScore=10; public coverage=31; readyDrafts=4; currentPack=1; wave1=2",
-        "priorityScore": 224,
+        "priorityReason": "demandScore=10; public coverage=31; readyDrafts=4; currentPack=1",
+        "priorityScore": 208,
         "readyDraftCount": 4,
         "notReadyMatchedDrafts": 0,
-        "wave1Candidates": 2
-      },
-      {
-        "audience": "Freelancers and service sellers packaging AI automation work for clients.",
-        "demandScore": 8,
-        "id": "ai-service-pricing-scope",
-        "intentSeeds": [
-          "AI 自动化项目报价",
-          "AI Agent 项目",
-          "RAG 项目报价",
-          "Dify n8n 报价"
-        ],
-        "matchTerms": [
-          "报价",
-          "项目",
-          "scope",
-          "pricing",
-          "服务",
-          "项目",
-          "维护",
-          "验收",
-          "自动化"
-        ],
-        "reviewFocus": [
-          "scope boundaries",
-          "acceptance criteria",
-          "maintenance fee",
-          "risk disclaimers",
-          "no income guarantees"
-        ],
-        "sourceTargets": [
-          "OpenAI API docs: https://platform.openai.com/docs",
-          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-          "Dify docs: https://docs.dify.ai"
-        ],
-        "title": "AI automation service pricing, scope, and delivery checklist",
-        "workflowAngles": [
-          "scope",
-          "pricing",
-          "acceptance",
-          "maintenance",
-          "risk language"
-        ],
-        "candidateCount": 185,
-        "currentPackCandidates": 1,
-        "expansionCandidates": 4,
-        "matchedCandidates": [
-          {
-            "category": "AI 基建",
-            "currentPack": true,
-            "expansionQueue": true,
-            "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
-            "noindex": true,
-            "primaryKeyword": "RAG 向量数据库怎么选",
-            "publishBatch": 25,
-            "qualityScore": 100,
-            "safeDraft": true,
-            "searchIntent": "informational",
-            "status": "draft",
-            "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
-            "wave1": true
-          },
-          {
-            "category": "AI 基建",
-            "currentPack": false,
-            "expansionQueue": true,
-            "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
-            "noindex": true,
-            "primaryKeyword": "TensorRT-LLM 入门",
-            "publishBatch": 29,
-            "qualityScore": 86,
-            "safeDraft": true,
-            "searchIntent": "informational",
-            "status": "draft",
-            "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
-            "wave1": false
-          },
-          {
-            "category": "AI 基建",
-            "currentPack": false,
-            "expansionQueue": true,
-            "file": "content/blog/vllm-deployment-beginner-guide.mdx",
-            "noindex": true,
-            "primaryKeyword": "vLLM 部署",
-            "publishBatch": 22,
-            "qualityScore": 86,
-            "safeDraft": true,
-            "searchIntent": "informational",
-            "status": "draft",
-            "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
-            "wave1": false
-          },
-          {
-            "category": "报错解决",
-            "currentPack": false,
-            "expansionQueue": true,
-            "file": "content/blog/vercel-404-after-deploy-checklist.mdx",
-            "noindex": true,
-            "primaryKeyword": "Vercel 部署后 404 检查清单",
-            "publishBatch": 15,
-            "qualityScore": 86,
-            "safeDraft": true,
-            "searchIntent": "informational",
-            "status": "draft",
-            "title": "Vercel 部署后 404 检查清单：逐页验收更稳",
-            "wave1": false
-          },
-          {
-            "category": "报错解决",
-            "currentPack": false,
-            "expansionQueue": false,
-            "file": "content/blog/vercel-build-failed-causes-freelance-scope.mdx",
-            "noindex": true,
-            "primaryKeyword": "Vercel build failed 项目",
-            "publishBatch": 13,
-            "qualityScore": 86,
-            "safeDraft": true,
-            "searchIntent": "commercial",
-            "status": "draft",
-            "title": "Vercel build failed 排查能不能项目：先看这 7 个边界",
-            "wave1": false
-          }
-        ],
-        "publicCount": 141,
-        "priorityReason": "demandScore=8; public coverage=141; readyDrafts=5; currentPack=1; wave1=1",
-        "priorityScore": 186,
-        "readyDraftCount": 5,
-        "notReadyMatchedDrafts": 39,
-        "wave1Candidates": 1
+        "wave1Candidates": 0
       },
       {
         "audience": "Developers, solo builders, and companies deciding where and how to run models.",
@@ -63904,6 +63774,134 @@
         "wave1Candidates": 0
       },
       {
+        "audience": "Freelancers and service sellers packaging AI automation work for clients.",
+        "demandScore": 8,
+        "id": "ai-service-pricing-scope",
+        "intentSeeds": [
+          "AI 自动化项目报价",
+          "AI Agent 项目",
+          "RAG 项目报价",
+          "Dify n8n 报价"
+        ],
+        "matchTerms": [
+          "报价",
+          "项目",
+          "scope",
+          "pricing",
+          "服务",
+          "项目",
+          "维护",
+          "验收",
+          "自动化"
+        ],
+        "reviewFocus": [
+          "scope boundaries",
+          "acceptance criteria",
+          "maintenance fee",
+          "risk disclaimers",
+          "no income guarantees"
+        ],
+        "sourceTargets": [
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+          "Dify docs: https://docs.dify.ai"
+        ],
+        "title": "AI automation service pricing, scope, and delivery checklist",
+        "workflowAngles": [
+          "scope",
+          "pricing",
+          "acceptance",
+          "maintenance",
+          "risk language"
+        ],
+        "candidateCount": 185,
+        "currentPackCandidates": 1,
+        "expansionCandidates": 4,
+        "matchedCandidates": [
+          {
+            "category": "AI 基建",
+            "currentPack": true,
+            "expansionQueue": true,
+            "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
+            "noindex": true,
+            "primaryKeyword": "RAG 向量数据库怎么选",
+            "publishBatch": 25,
+            "qualityScore": 100,
+            "safeDraft": true,
+            "searchIntent": "informational",
+            "status": "draft",
+            "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
+            "wave1": false
+          },
+          {
+            "category": "AI 基建",
+            "currentPack": false,
+            "expansionQueue": true,
+            "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
+            "noindex": true,
+            "primaryKeyword": "TensorRT-LLM 入门",
+            "publishBatch": 29,
+            "qualityScore": 86,
+            "safeDraft": true,
+            "searchIntent": "informational",
+            "status": "draft",
+            "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
+            "wave1": false
+          },
+          {
+            "category": "AI 基建",
+            "currentPack": false,
+            "expansionQueue": true,
+            "file": "content/blog/vllm-deployment-beginner-guide.mdx",
+            "noindex": true,
+            "primaryKeyword": "vLLM 部署",
+            "publishBatch": 22,
+            "qualityScore": 86,
+            "safeDraft": true,
+            "searchIntent": "informational",
+            "status": "draft",
+            "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
+            "wave1": false
+          },
+          {
+            "category": "报错解决",
+            "currentPack": false,
+            "expansionQueue": true,
+            "file": "content/blog/vercel-404-after-deploy-checklist.mdx",
+            "noindex": true,
+            "primaryKeyword": "Vercel 部署后 404 检查清单",
+            "publishBatch": 15,
+            "qualityScore": 86,
+            "safeDraft": true,
+            "searchIntent": "informational",
+            "status": "draft",
+            "title": "Vercel 部署后 404 检查清单：逐页验收更稳",
+            "wave1": false
+          },
+          {
+            "category": "报错解决",
+            "currentPack": false,
+            "expansionQueue": false,
+            "file": "content/blog/vercel-build-failed-causes-freelance-scope.mdx",
+            "noindex": true,
+            "primaryKeyword": "Vercel build failed 项目",
+            "publishBatch": 13,
+            "qualityScore": 86,
+            "safeDraft": true,
+            "searchIntent": "commercial",
+            "status": "draft",
+            "title": "Vercel build failed 排查能不能项目：先看这 7 个边界",
+            "wave1": false
+          }
+        ],
+        "publicCount": 141,
+        "priorityReason": "demandScore=8; public coverage=141; readyDrafts=5; currentPack=1",
+        "priorityScore": 178,
+        "readyDraftCount": 5,
+        "notReadyMatchedDrafts": 39,
+        "wave1Candidates": 0
+      },
+      {
         "audience": "Developers integrating OpenAI, Claude, Gemini, OpenRouter, and multi-model routing.",
         "demandScore": 9,
         "id": "model-api-integration",
@@ -63962,7 +63960,7 @@
             "searchIntent": "informational",
             "status": "draft",
             "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
-            "wave1": true
+            "wave1": false
           },
           {
             "category": "AI 基建",
@@ -63981,11 +63979,11 @@
           }
         ],
         "publicCount": 28,
-        "priorityReason": "demandScore=9; public coverage=28; readyDrafts=2; currentPack=1; wave1=1",
-        "priorityScore": 180,
+        "priorityReason": "demandScore=9; public coverage=28; readyDrafts=2; currentPack=1",
+        "priorityScore": 172,
         "readyDraftCount": 2,
         "notReadyMatchedDrafts": 0,
-        "wave1Candidates": 1
+        "wave1Candidates": 0
       },
       {
         "audience": "Developers and teams trying to move beyond chatbots into production agents.",
@@ -64369,8 +64367,8 @@
             ],
             "laneAudience": "Teams building customer support bots, internal knowledge assistants, and document Q&A.",
             "laneId": "rag-knowledge-memory",
-            "lanePriorityReason": "demandScore=10; public coverage=31; readyDrafts=4; currentPack=1; wave1=2",
-            "lanePriorityScore": 224,
+            "lanePriorityReason": "demandScore=10; public coverage=31; readyDrafts=4; currentPack=1",
+            "lanePriorityScore": 208,
             "laneTitle": "RAG, knowledge base, and Agent memory",
             "noindex": true,
             "primaryKeyword": "RAG 向量数据库怎么选",
@@ -64402,7 +64400,7 @@
             ],
             "status": "draft",
             "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
-            "wave1": true,
+            "wave1": false,
             "wordCountChinese": 1209,
             "workflowAngles": [
               "document cleanup",
@@ -64436,8 +64434,8 @@
             ],
             "laneAudience": "Developers integrating OpenAI, Claude, Gemini, OpenRouter, and multi-model routing.",
             "laneId": "model-api-integration",
-            "lanePriorityReason": "demandScore=9; public coverage=28; readyDrafts=2; currentPack=1; wave1=1",
-            "lanePriorityScore": 180,
+            "lanePriorityReason": "demandScore=9; public coverage=28; readyDrafts=2; currentPack=1",
+            "lanePriorityScore": 172,
             "laneTitle": "Model API integration, rate limits, and multi-model fallback",
             "noindex": true,
             "primaryKeyword": "Vercel AI Gateway 多模型",
@@ -64469,7 +64467,7 @@
             ],
             "status": "draft",
             "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
-            "wave1": true,
+            "wave1": false,
             "wordCountChinese": 1246,
             "workflowAngles": [
               "server-side calls",
@@ -64503,8 +64501,8 @@
             ],
             "laneAudience": "Teams building customer support bots, internal knowledge assistants, and document Q&A.",
             "laneId": "rag-knowledge-memory",
-            "lanePriorityReason": "demandScore=10; public coverage=31; readyDrafts=4; currentPack=1; wave1=2",
-            "lanePriorityScore": 224,
+            "lanePriorityReason": "demandScore=10; public coverage=31; readyDrafts=4; currentPack=1",
+            "lanePriorityScore": 208,
             "laneTitle": "RAG, knowledge base, and Agent memory",
             "noindex": true,
             "primaryKeyword": "Supabase pgvector",
@@ -64536,7 +64534,7 @@
             ],
             "status": "draft",
             "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
-            "wave1": true,
+            "wave1": false,
             "wordCountChinese": 1255,
             "workflowAngles": [
               "document cleanup",
@@ -64570,15 +64568,59 @@
           "content/blog/vllm-deployment-beginner-guide.mdx",
           "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx"
         ],
-        "focus": "AI automation service pricing, scope, and delivery checklist + Large model deployment, LLM serving, and GPU infrastructure + AI Agent deployment, tool calling, and production workflow",
+        "focus": "Large model deployment, LLM serving, and GPU infrastructure + AI automation service pricing, scope, and delivery checklist + AI Agent deployment, tool calling, and production workflow",
         "items": [
           {
             "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
-            "laneId": "ai-service-pricing-scope",
-            "lanePriorityScore": 186,
-            "laneTitle": "AI automation service pricing, scope, and delivery checklist",
+            "laneId": "llm-deployment-serving",
+            "lanePriorityScore": 180,
+            "laneTitle": "Large model deployment, LLM serving, and GPU infrastructure",
             "primaryKeyword": "TensorRT-LLM 入门",
             "publishBatch": 29,
+            "qualityScore": 86,
+            "readyForHumanReview": true,
+            "riskChecks": [
+              "No measured traffic, ranking, income, approval, or client acquisition claim is made without evidence.",
+              "No API key, private customer data, credential, or bypass instruction is included.",
+              "Fast-changing model names, quotas, pricing, limits, and platform features are checked against official docs.",
+              "GPU, memory, serving, concurrency, cold-start, and cost tradeoffs are framed as checks, not guarantees."
+            ],
+            "safeDraft": true,
+            "sourceTargets": [
+              "Hugging Face docs: https://huggingface.co/docs",
+              "vLLM docs: https://docs.vllm.ai",
+              "OpenAI API docs: https://platform.openai.com/docs",
+              "Modal docs: https://modal.com/docs"
+            ],
+            "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
+            "intentSeeds": [
+              "大模型部署教程",
+              "LLM deployment",
+              "vLLM 部署",
+              "Hugging Face TGI 部署"
+            ],
+            "reviewFocus": [
+              "GPU and memory requirements",
+              "serving framework versions",
+              "cold start and concurrency",
+              "cost boundaries"
+            ],
+            "wave": 2,
+            "workflowAngles": [
+              "GPU sizing",
+              "serving API",
+              "quantization",
+              "autoscaling",
+              "cost control"
+            ]
+          },
+          {
+            "file": "content/blog/vllm-deployment-beginner-guide.mdx",
+            "laneId": "ai-service-pricing-scope",
+            "lanePriorityScore": 178,
+            "laneTitle": "AI automation service pricing, scope, and delivery checklist",
+            "primaryKeyword": "vLLM 部署",
+            "publishBatch": 22,
             "qualityScore": 86,
             "readyForHumanReview": true,
             "riskChecks": [
@@ -64593,7 +64635,7 @@
               "Vercel AI SDK docs: https://ai-sdk.dev/docs",
               "Dify docs: https://docs.dify.ai"
             ],
-            "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
+            "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
             "intentSeeds": [
               "AI 自动化项目报价",
               "AI Agent 项目",
@@ -64614,50 +64656,6 @@
               "acceptance",
               "maintenance",
               "risk language"
-            ]
-          },
-          {
-            "file": "content/blog/vllm-deployment-beginner-guide.mdx",
-            "laneId": "llm-deployment-serving",
-            "lanePriorityScore": 180,
-            "laneTitle": "Large model deployment, LLM serving, and GPU infrastructure",
-            "primaryKeyword": "vLLM 部署",
-            "publishBatch": 22,
-            "qualityScore": 86,
-            "readyForHumanReview": true,
-            "riskChecks": [
-              "No measured traffic, ranking, income, approval, or client acquisition claim is made without evidence.",
-              "No API key, private customer data, credential, or bypass instruction is included.",
-              "Fast-changing model names, quotas, pricing, limits, and platform features are checked against official docs.",
-              "GPU, memory, serving, concurrency, cold-start, and cost tradeoffs are framed as checks, not guarantees."
-            ],
-            "safeDraft": true,
-            "sourceTargets": [
-              "Hugging Face docs: https://huggingface.co/docs",
-              "vLLM docs: https://docs.vllm.ai",
-              "OpenAI API docs: https://platform.openai.com/docs",
-              "Modal docs: https://modal.com/docs"
-            ],
-            "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
-            "intentSeeds": [
-              "大模型部署教程",
-              "LLM deployment",
-              "vLLM 部署",
-              "Hugging Face TGI 部署"
-            ],
-            "reviewFocus": [
-              "GPU and memory requirements",
-              "serving framework versions",
-              "cold start and concurrency",
-              "cost boundaries"
-            ],
-            "wave": 2,
-            "workflowAngles": [
-              "GPU sizing",
-              "serving API",
-              "quantization",
-              "autoscaling",
-              "cost control"
             ]
           },
           {
@@ -64707,8 +64705,8 @@
         ],
         "laneCount": 3,
         "lanes": [
-          "AI automation service pricing, scope, and delivery checklist",
           "Large model deployment, LLM serving, and GPU infrastructure",
+          "AI automation service pricing, scope, and delivery checklist",
           "AI Agent deployment, tool calling, and production workflow"
         ],
         "readyItems": 3,
@@ -64716,8 +64714,8 @@
           "No measured traffic, ranking, income, approval, or client acquisition claim is made without evidence.",
           "No API key, private customer data, credential, or bypass instruction is included.",
           "Fast-changing model names, quotas, pricing, limits, and platform features are checked against official docs.",
-          "Article-specific operational and safety boundaries are explicit.",
           "GPU, memory, serving, concurrency, cold-start, and cost tradeoffs are framed as checks, not guarantees.",
+          "Article-specific operational and safety boundaries are explicit.",
           "Agent permissions, tool allowlists, human approval, logs, and rollback boundaries are explicit."
         ],
         "sourceTargetCount": 10,
@@ -64821,7 +64819,7 @@
           {
             "file": "content/blog/together-ai-api-beginner-guide.mdx",
             "laneId": "rag-knowledge-memory",
-            "lanePriorityScore": 224,
+            "lanePriorityScore": 208,
             "laneTitle": "RAG, knowledge base, and Agent memory",
             "primaryKeyword": "Together AI API 接入",
             "publishBatch": 27,
@@ -64891,7 +64889,7 @@
           {
             "file": "content/blog/vector-database-beginner-guide.mdx",
             "laneId": "rag-knowledge-memory",
-            "lanePriorityScore": 224,
+            "lanePriorityScore": 208,
             "laneTitle": "RAG, knowledge base, and Agent memory",
             "primaryKeyword": "向量数据库",
             "publishBatch": 21,
@@ -64935,7 +64933,7 @@
           {
             "file": "content/blog/vercel-build-failed-causes-freelance-scope.mdx",
             "laneId": "ai-service-pricing-scope",
-            "lanePriorityScore": 186,
+            "lanePriorityScore": 178,
             "laneTitle": "AI automation service pricing, scope, and delivery checklist",
             "primaryKeyword": "Vercel build failed 项目",
             "publishBatch": 13,
@@ -65227,10 +65225,10 @@
       {
         "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
         "gaps": [],
-        "laneId": "ai-service-pricing-scope",
-        "laneTitle": "AI automation service pricing, scope, and delivery checklist",
+        "laneId": "llm-deployment-serving",
+        "laneTitle": "Large model deployment, LLM serving, and GPU infrastructure",
         "primaryKeyword": "TensorRT-LLM 入门",
-        "queryCount": 30,
+        "queryCount": 35,
         "queryFamilies": {
           "howTo": [
             "TensorRT-LLM 入门怎么做",
@@ -65242,11 +65240,14 @@
             "TensorRT-LLM 入门部署",
             "TensorRT-LLM 入门工作流",
             "TensorRT-LLM 入门生产环境",
-            "TensorRT-LLM 入门 scope",
-            "TensorRT-LLM 入门 pricing",
-            "TensorRT-LLM 入门 acceptance",
-            "TensorRT-LLM 入门 maintenance",
-            "TensorRT-LLM 入门 risk language"
+            "大模型部署",
+            "LLM serving",
+            "GPU 部署",
+            "TensorRT-LLM 入门 GPU sizing",
+            "TensorRT-LLM 入门 serving API",
+            "TensorRT-LLM 入门 quantization",
+            "TensorRT-LLM 入门 autoscaling",
+            "TensorRT-LLM 入门 cost control"
           ],
           "template": [
             "TensorRT-LLM 入门模板",
@@ -65256,7 +65257,9 @@
           ],
           "comparison": [
             "TensorRT-LLM 入门对比",
-            "TensorRT-LLM 入门怎么选"
+            "TensorRT-LLM 入门怎么选",
+            "vLLM 和 TGI 区别",
+            "RunPod 和 Modal 部署对比"
           ],
           "risk": [
             "TensorRT-LLM 入门避坑",
@@ -65271,10 +65274,10 @@
             "TensorRT-LLM 入门上线检查"
           ],
           "intentSeeds": [
-            "AI 自动化项目报价",
-            "AI Agent 项目",
-            "RAG 项目报价",
-            "Dify n8n 报价"
+            "大模型部署教程",
+            "LLM deployment",
+            "vLLM 部署",
+            "Hugging Face TGI 部署"
           ]
         },
         "readyForManualReview": true,
@@ -65284,10 +65287,10 @@
       {
         "file": "content/blog/vllm-deployment-beginner-guide.mdx",
         "gaps": [],
-        "laneId": "llm-deployment-serving",
-        "laneTitle": "Large model deployment, LLM serving, and GPU infrastructure",
+        "laneId": "ai-service-pricing-scope",
+        "laneTitle": "AI automation service pricing, scope, and delivery checklist",
         "primaryKeyword": "vLLM 部署",
-        "queryCount": 35,
+        "queryCount": 30,
         "queryFamilies": {
           "howTo": [
             "vLLM 部署怎么做",
@@ -65299,14 +65302,11 @@
             "vLLM 部署部署",
             "vLLM 部署工作流",
             "vLLM 部署生产环境",
-            "大模型部署",
-            "LLM serving",
-            "GPU 部署",
-            "vLLM 部署 GPU sizing",
-            "vLLM 部署 serving API",
-            "vLLM 部署 quantization",
-            "vLLM 部署 autoscaling",
-            "vLLM 部署 cost control"
+            "vLLM 部署 scope",
+            "vLLM 部署 pricing",
+            "vLLM 部署 acceptance",
+            "vLLM 部署 maintenance",
+            "vLLM 部署 risk language"
           ],
           "template": [
             "vLLM 部署模板",
@@ -65316,9 +65316,7 @@
           ],
           "comparison": [
             "vLLM 部署对比",
-            "vLLM 部署怎么选",
-            "vLLM 和 TGI 区别",
-            "RunPod 和 Modal 部署对比"
+            "vLLM 部署怎么选"
           ],
           "risk": [
             "vLLM 部署避坑",
@@ -65333,10 +65331,10 @@
             "vLLM 部署上线检查"
           ],
           "intentSeeds": [
-            "大模型部署教程",
-            "LLM deployment",
-            "vLLM 部署",
-            "Hugging Face TGI 部署"
+            "AI 自动化项目报价",
+            "AI Agent 项目",
+            "RAG 项目报价",
+            "Dify n8n 报价"
           ]
         },
         "readyForManualReview": true,
@@ -65764,8 +65762,8 @@
     "uniqueQueries": 352
   },
   "searchQueryMatch": {
-    "averageExactMatches": 0.67,
-    "averageMatchedFamilies": 6.83,
+    "averageExactMatches": 0.5,
+    "averageMatchedFamilies": 6.75,
     "blockingItems": 0,
     "items": 12,
     "readyItems": 12,
@@ -65887,7 +65885,7 @@
           "intentSeeds": true
         },
         "descriptionHit": true,
-        "exactQueryMatches": 0,
+        "exactQueryMatches": 2,
         "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
         "headingFamilyMatches": {
           "howTo": true,
@@ -65900,14 +65898,12 @@
         },
         "matchedFamilies": 7,
         "primaryKeyword": "TensorRT-LLM 入门",
-        "queryCount": 30,
+        "queryCount": 35,
         "readyForManualReview": true,
         "reviewSuggestions": [],
         "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
         "titleHit": true,
-        "warningIssues": [
-          "few exact query variant matches in article text"
-        ],
+        "warningIssues": [],
         "wave": 2
       },
       {
@@ -65919,10 +65915,10 @@
           "comparison": true,
           "risk": true,
           "costOps": true,
-          "intentSeeds": true
+          "intentSeeds": false
         },
         "descriptionHit": true,
-        "exactQueryMatches": 4,
+        "exactQueryMatches": 0,
         "file": "content/blog/vllm-deployment-beginner-guide.mdx",
         "headingFamilyMatches": {
           "howTo": true,
@@ -65933,14 +65929,19 @@
           "costOps": false,
           "intentSeeds": false
         },
-        "matchedFamilies": 7,
+        "matchedFamilies": 6,
         "primaryKeyword": "vLLM 部署",
-        "queryCount": 35,
+        "queryCount": 30,
         "readyForManualReview": true,
-        "reviewSuggestions": [],
+        "reviewSuggestions": [
+          "人工审核时检查是否自然覆盖核心搜索种子词，不要硬塞关键词。"
+        ],
         "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
         "titleHit": true,
-        "warningIssues": [],
+        "warningIssues": [
+          "few exact query variant matches in article text",
+          "missing query-family signals: intentSeeds"
+        ],
         "wave": 2
       },
       {
@@ -68937,7 +68938,7 @@
   "liveSearch": {
     "checkedArticles": 500,
     "failedChecks": [],
-    "generatedAt": "2026-06-16T12:28:08.127Z",
+    "generatedAt": "2026-06-16T18:19:21.078Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 500

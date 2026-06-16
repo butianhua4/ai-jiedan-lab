@@ -1,6 +1,6 @@
 # Search Demand Intake
 
-Generated at: 2026-06-16T12:27:15.853Z
+Generated at: 2026-06-16T18:18:16.401Z
 
 This report is read-only. It turns broad user search behavior into review lanes for AI prompts, LLM deployment, Agent deployment, memory, RAG, no-code automation, API operations, observability, and AI service packaging.
 

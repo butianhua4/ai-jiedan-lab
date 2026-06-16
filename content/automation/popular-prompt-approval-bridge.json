@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T12:27:21.958Z",
+  "generatedAt": "2026-06-16T18:18:22.565Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,25 +10,25 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "approvalQueueGeneratedAt": "2026-06-16T07:01:44.583Z",
+    "approvalQueueGeneratedAt": "2026-06-16T07:12:53.744Z",
     "approvalQueueSummary": {
-      "backlogItems": 3,
-      "commandBoundaries": 6,
-      "humanGatedItems": 6,
+      "backlogItems": 5,
+      "commandBoundaries": 8,
+      "humanGatedItems": 8,
       "immediateApprovalItems": 3,
       "immediateApprovalReadyItems": 3,
-      "items": 6,
-      "itemsReadyForHumanApproval": 6,
-      "itemsWithFailedSourceDecision": 0,
-      "itemsWithMassSearchTheme": 5,
-      "itemsWithPopularPromptLane": 4,
-      "itemsWithSeoWarnings": 1,
-      "itemsWithSourceReplacementDecisions": 5,
+      "items": 8,
+      "itemsReadyForHumanApproval": 8,
+      "itemsWithFailedSourceDecision": 1,
+      "itemsWithMassSearchTheme": 6,
+      "itemsWithPopularPromptLane": 5,
+      "itemsWithSeoWarnings": 5,
+      "itemsWithSourceReplacementDecisions": 7,
       "publishConfirmCommandsIncluded": 0,
       "trafficDataAvailable": false,
       "unsafeItems": 0
     },
-    "playbookGeneratedAt": "2026-06-16T12:27:21.442Z",
+    "playbookGeneratedAt": "2026-06-16T18:18:22.043Z",
     "playbookSummary": {
       "agentDeploymentLanes": 3,
       "broadWorkPromptLanes": 3,
@@ -50,7 +50,7 @@
       "uniqueCandidateFiles": 21,
       "unsafeItems": 7
     },
-    "reviewCandidatesGeneratedAt": "2026-06-16T12:26:58.008Z",
+    "reviewCandidatesGeneratedAt": "2026-06-16T18:17:58.059Z",
     "reviewCandidatesCounts": {
       "candidates": 148,
       "returned": 25,
@@ -62,24 +62,24 @@
     "trafficNote": "No traffic, ranking, impression, click, conversion, or revenue claim is made."
   },
   "summary": {
-    "approvalQueueItems": 6,
-    "approvalQueueReadyItems": 6,
-    "bridgeItems": 13,
-    "bridgeItemsReadyForHumanReviewPrep": 7,
-    "commandBoundaries": 13,
+    "approvalQueueItems": 8,
+    "approvalQueueReadyItems": 8,
+    "bridgeItems": 15,
+    "bridgeItemsReadyForHumanReviewPrep": 9,
+    "commandBoundaries": 15,
     "lanes": 10,
-    "lanesAlreadyInApprovalQueue": 5,
+    "lanesAlreadyInApprovalQueue": 0,
     "lanesWithNextCandidates": 5,
     "lanesWithReadyNextCandidates": 3,
     "playbookItems": 10,
     "playbookReadyItems": 3,
-    "promptTemplatesReferenced": 65,
+    "promptTemplatesReferenced": 75,
     "publishConfirmCommandsIncluded": 0,
     "reviewCandidatePool": 148,
     "searchQueriesReferenced": 50,
     "trafficDataAvailable": false,
     "unsafeItems": 6,
-    "uniqueFiles": 7
+    "uniqueFiles": 9
   },
   "unsafeItems": [
     {
@@ -579,6 +579,110 @@
         "status": "draft"
       },
       "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm-human",
+        "publishConfirm": "not-included",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vector-database-selection-for-rag-guide.mdx",
+        "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
+      },
+      "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
+      "laneId": "excel-data-analysis-prompts",
+      "laneTitle": "Excel 和数据分析 AI 提示词",
+      "opportunityScore": 65,
+      "promptTemplates": 5,
+      "readyForHumanReviewPrep": true,
+      "reviewFocus": [
+        "Confirm the article answers this popular prompt lane instead of drifting into a narrow tool-only query.",
+        "Verify official sources before any status change.",
+        "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.",
+        "Do not claim traffic, rankings, revenue, conversion, or guaranteed outcomes.",
+        "Use the lane search queries as title, intro, and FAQ review prompts only after human review."
+      ],
+      "searchQueries": [
+        "Excel AI 提示词",
+        "ChatGPT 分析表格数据",
+        "AI 数据分析提示词",
+        "销售数据分析 prompt",
+        "财务报表 AI 分析提示词",
+        "Excel 透视表 AI 教程",
+        "用 AI 找异常数据",
+        "ChatGPT 做数据分析怎么提问",
+        "AI 生成图表建议",
+        "运营数据复盘提示词"
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://platform.openai.com/docs/guides/prompting",
+        "https://support.microsoft.com/en-us/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5",
+        "https://adoption.microsoft.com/en-us/copilot/prompt-gallery/",
+        "https://ai.google.dev/gemini-api/docs/models/generative-models",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "LangChain docs: https://python.langchain.com/docs",
+        "LlamaIndex docs: https://docs.llamaindex.ai"
+      ],
+      "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
+      "unsafeReasons": []
+    },
+    {
+      "articleState": {
+        "humanReviewRequired": true,
+        "noindex": true,
+        "qualityScore": 100,
+        "sourceNotes": true,
+        "status": "draft"
+      },
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx --confirm-human",
+        "publishConfirm": "not-included",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/supabase-pgvector-rag-guide.mdx",
+        "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
+      },
+      "file": "content/blog/supabase-pgvector-rag-guide.mdx",
+      "laneId": "excel-data-analysis-prompts",
+      "laneTitle": "Excel 和数据分析 AI 提示词",
+      "opportunityScore": 64,
+      "promptTemplates": 5,
+      "readyForHumanReviewPrep": true,
+      "reviewFocus": [
+        "Confirm the article answers this popular prompt lane instead of drifting into a narrow tool-only query.",
+        "Verify official sources before any status change.",
+        "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.",
+        "Do not claim traffic, rankings, revenue, conversion, or guaranteed outcomes.",
+        "Use the lane search queries as title, intro, and FAQ review prompts only after human review."
+      ],
+      "searchQueries": [
+        "Excel AI 提示词",
+        "ChatGPT 分析表格数据",
+        "AI 数据分析提示词",
+        "销售数据分析 prompt",
+        "财务报表 AI 分析提示词",
+        "Excel 透视表 AI 教程",
+        "用 AI 找异常数据",
+        "ChatGPT 做数据分析怎么提问",
+        "AI 生成图表建议",
+        "运营数据复盘提示词"
+      ],
+      "sourceTargets": [
+        "https://platform.openai.com/docs/guides/prompt-engineering",
+        "https://platform.openai.com/docs/guides/prompting",
+        "https://support.microsoft.com/en-us/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5",
+        "https://adoption.microsoft.com/en-us/copilot/prompt-gallery/",
+        "https://ai.google.dev/gemini-api/docs/models/generative-models",
+        "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+        "LangChain docs: https://python.langchain.com/docs",
+        "LlamaIndex docs: https://docs.llamaindex.ai"
+      ],
+      "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
+      "unsafeReasons": []
+    },
+    {
+      "articleState": {
+        "humanReviewRequired": true,
+        "noindex": true,
+        "qualityScore": 100,
+        "sourceNotes": true,
+        "status": "draft"
+      },
+      "commandBoundary": {
         "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vector-database-beginner-guide.mdx --confirm-human",
         "publishConfirm": "not-included",
         "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vector-database-beginner-guide.mdx",
@@ -942,124 +1046,11 @@
       ],
       "title": "Vercel 部署检查表怎么写：给新手的上线模板",
       "unsafeReasons": []
-    },
-    {
-      "articleState": {
-        "humanReviewRequired": true,
-        "noindex": true,
-        "qualityScore": 100,
-        "sourceNotes": true,
-        "status": "draft"
-      },
-      "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-404-after-deploy.mdx --confirm-human",
-        "publishConfirm": "not-included",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vercel-404-after-deploy.mdx",
-        "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
-      },
-      "file": "content/blog/vercel-404-after-deploy.mdx",
-      "laneId": "agent-memory-knowledge-base-prompts",
-      "laneTitle": "Agent 记忆、知识库和 RAG 提示词",
-      "opportunityScore": 123,
-      "promptTemplates": 5,
-      "readyForHumanReviewPrep": false,
-      "reviewFocus": [
-        "Confirm the article answers this popular prompt lane instead of drifting into a narrow tool-only query.",
-        "Verify official sources before any status change.",
-        "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.",
-        "Do not claim traffic, rankings, revenue, conversion, or guaranteed outcomes.",
-        "Use the lane search queries as title, intro, and FAQ review prompts only after human review."
-      ],
-      "searchQueries": [
-        "AI Agent 记忆怎么做",
-        "Agent memory prompt",
-        "RAG 知识库提示词",
-        "LangChain long term memory",
-        "OpenAI Agents SDK memory",
-        "AI 客服知识库 prompt",
-        "AI 助理长期记忆教程",
-        "知识库问答提示词",
-        "Agent 记忆安全检查",
-        "AI memory retention policy"
-      ],
-      "sourceTargets": [
-        "https://openai.github.io/openai-agents-js/guides/sandbox-agents/memory/",
-        "https://docs.langchain.com/oss/python/deepagents/long-term-memory",
-        "https://platform.openai.com/docs/guides/agents-sdk",
-        "https://platform.openai.com/docs/guides/prompt-engineering",
-        "https://platform.openai.com/docs/guides/prompt-generation",
-        "OpenAI API docs: https://platform.openai.com/docs",
-        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
-      ],
-      "title": "Vercel 部署成功但页面 404：新手排查顺序",
-      "unsafeReasons": [
-        "popular prompt lane is not ready for human review prep",
-        "popular prompt lane has unsafe reasons"
-      ]
-    },
-    {
-      "articleState": {
-        "humanReviewRequired": true,
-        "noindex": true,
-        "qualityScore": 100,
-        "sourceNotes": true,
-        "status": "draft"
-      },
-      "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-deploy-checklist-template-checklist.mdx --confirm-human",
-        "publishConfirm": "not-included",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vercel-deploy-checklist-template-checklist.mdx",
-        "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
-      },
-      "file": "content/blog/vercel-deploy-checklist-template-checklist.mdx",
-      "laneId": "agent-memory-knowledge-base-prompts",
-      "laneTitle": "Agent 记忆、知识库和 RAG 提示词",
-      "opportunityScore": 123,
-      "promptTemplates": 5,
-      "readyForHumanReviewPrep": false,
-      "reviewFocus": [
-        "Confirm the article answers this popular prompt lane instead of drifting into a narrow tool-only query.",
-        "Verify official sources before any status change.",
-        "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.",
-        "Do not claim traffic, rankings, revenue, conversion, or guaranteed outcomes.",
-        "Use the lane search queries as title, intro, and FAQ review prompts only after human review."
-      ],
-      "searchQueries": [
-        "AI Agent 记忆怎么做",
-        "Agent memory prompt",
-        "RAG 知识库提示词",
-        "LangChain long term memory",
-        "OpenAI Agents SDK memory",
-        "AI 客服知识库 prompt",
-        "AI 助理长期记忆教程",
-        "知识库问答提示词",
-        "Agent 记忆安全检查",
-        "AI memory retention policy"
-      ],
-      "sourceTargets": [
-        "https://openai.github.io/openai-agents-js/guides/sandbox-agents/memory/",
-        "https://docs.langchain.com/oss/python/deepagents/long-term-memory",
-        "https://platform.openai.com/docs/guides/agents-sdk",
-        "https://platform.openai.com/docs/guides/prompt-engineering",
-        "https://platform.openai.com/docs/guides/prompt-generation",
-        "OpenAI API docs: https://platform.openai.com/docs",
-        "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-        "Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
-      ],
-      "title": "Vercel 部署检查表怎么写：新手检查清单",
-      "unsafeReasons": [
-        "popular prompt lane is not ready for human review prep",
-        "popular prompt lane has unsafe reasons"
-      ]
     }
   ],
   "lanes": [
     {
-      "alreadyInApprovalQueue": [
-        "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "content/blog/vercel-build-failed-causes-checklist.mdx"
-      ],
+      "alreadyInApprovalQueue": [],
       "audience": "刚开始用 AI 的普通用户、学生、职场新人和小团队老板",
       "candidatesConsidered": 10,
       "demandReason": "大多数人会先搜索提示词大全、ChatGPT 怎么提问、AI 指令模板，而不是先搜索框架名。",
@@ -1260,17 +1251,117 @@
       ]
     },
     {
-      "alreadyInApprovalQueue": [
-        "content/blog/together-ai-api-beginner-guide.mdx",
-        "content/blog/vector-database-selection-for-rag-guide.mdx",
-        "content/blog/supabase-pgvector-rag-guide.mdx"
-      ],
+      "alreadyInApprovalQueue": [],
       "audience": "运营、财务助理、电商数据、销售管理和数据分析初学者",
       "candidatesConsidered": 4,
       "demandReason": "表格分析、数据透视、销售报表、异常值解释属于高频刚需，适合用模板承接搜索。",
       "laneId": "excel-data-analysis-prompts",
       "laneTitle": "Excel 和数据分析 AI 提示词",
       "nextCandidates": [
+        {
+          "articleState": {
+            "humanReviewRequired": true,
+            "noindex": true,
+            "qualityScore": 100,
+            "sourceNotes": true,
+            "status": "draft"
+          },
+          "commandBoundary": {
+            "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm-human",
+            "publishConfirm": "not-included",
+            "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vector-database-selection-for-rag-guide.mdx",
+            "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
+          },
+          "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
+          "laneId": "excel-data-analysis-prompts",
+          "laneTitle": "Excel 和数据分析 AI 提示词",
+          "opportunityScore": 65,
+          "promptTemplates": 5,
+          "readyForHumanReviewPrep": true,
+          "reviewFocus": [
+            "Confirm the article answers this popular prompt lane instead of drifting into a narrow tool-only query.",
+            "Verify official sources before any status change.",
+            "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.",
+            "Do not claim traffic, rankings, revenue, conversion, or guaranteed outcomes.",
+            "Use the lane search queries as title, intro, and FAQ review prompts only after human review."
+          ],
+          "searchQueries": [
+            "Excel AI 提示词",
+            "ChatGPT 分析表格数据",
+            "AI 数据分析提示词",
+            "销售数据分析 prompt",
+            "财务报表 AI 分析提示词",
+            "Excel 透视表 AI 教程",
+            "用 AI 找异常数据",
+            "ChatGPT 做数据分析怎么提问",
+            "AI 生成图表建议",
+            "运营数据复盘提示词"
+          ],
+          "sourceTargets": [
+            "https://platform.openai.com/docs/guides/prompt-engineering",
+            "https://platform.openai.com/docs/guides/prompting",
+            "https://support.microsoft.com/en-us/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5",
+            "https://adoption.microsoft.com/en-us/copilot/prompt-gallery/",
+            "https://ai.google.dev/gemini-api/docs/models/generative-models",
+            "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+            "LangChain docs: https://python.langchain.com/docs",
+            "LlamaIndex docs: https://docs.llamaindex.ai"
+          ],
+          "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
+          "unsafeReasons": []
+        },
+        {
+          "articleState": {
+            "humanReviewRequired": true,
+            "noindex": true,
+            "qualityScore": 100,
+            "sourceNotes": true,
+            "status": "draft"
+          },
+          "commandBoundary": {
+            "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx --confirm-human",
+            "publishConfirm": "not-included",
+            "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/supabase-pgvector-rag-guide.mdx",
+            "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
+          },
+          "file": "content/blog/supabase-pgvector-rag-guide.mdx",
+          "laneId": "excel-data-analysis-prompts",
+          "laneTitle": "Excel 和数据分析 AI 提示词",
+          "opportunityScore": 64,
+          "promptTemplates": 5,
+          "readyForHumanReviewPrep": true,
+          "reviewFocus": [
+            "Confirm the article answers this popular prompt lane instead of drifting into a narrow tool-only query.",
+            "Verify official sources before any status change.",
+            "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.",
+            "Do not claim traffic, rankings, revenue, conversion, or guaranteed outcomes.",
+            "Use the lane search queries as title, intro, and FAQ review prompts only after human review."
+          ],
+          "searchQueries": [
+            "Excel AI 提示词",
+            "ChatGPT 分析表格数据",
+            "AI 数据分析提示词",
+            "销售数据分析 prompt",
+            "财务报表 AI 分析提示词",
+            "Excel 透视表 AI 教程",
+            "用 AI 找异常数据",
+            "ChatGPT 做数据分析怎么提问",
+            "AI 生成图表建议",
+            "运营数据复盘提示词"
+          ],
+          "sourceTargets": [
+            "https://platform.openai.com/docs/guides/prompt-engineering",
+            "https://platform.openai.com/docs/guides/prompting",
+            "https://support.microsoft.com/en-us/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5",
+            "https://adoption.microsoft.com/en-us/copilot/prompt-gallery/",
+            "https://ai.google.dev/gemini-api/docs/models/generative-models",
+            "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+            "LangChain docs: https://python.langchain.com/docs",
+            "LlamaIndex docs: https://docs.llamaindex.ai"
+          ],
+          "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
+          "unsafeReasons": []
+        },
         {
           "articleState": {
             "humanReviewRequired": true,
@@ -1324,7 +1415,7 @@
           "unsafeReasons": []
         }
       ],
-      "readyNextCandidates": 1,
+      "readyNextCandidates": 3,
       "searchQueries": [
         "Excel AI 提示词",
         "ChatGPT 分析表格数据",
@@ -1427,11 +1518,7 @@
       ]
     },
     {
-      "alreadyInApprovalQueue": [
-        "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "content/blog/together-ai-api-beginner-guide.mdx",
-        "content/blog/vector-database-selection-for-rag-guide.mdx"
-      ],
+      "alreadyInApprovalQueue": [],
       "audience": "想部署 Agent 的独立开发者、创业团队和技术运营",
       "candidatesConsidered": 10,
       "demandReason": "Agent 部署、工具调用、MCP、Vercel AI SDK 是技术增长入口，比单纯网页部署更贴近当前 AI 搜索。",
@@ -1619,11 +1706,7 @@
       ]
     },
     {
-      "alreadyInApprovalQueue": [
-        "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "content/blog/together-ai-api-beginner-guide.mdx",
-        "content/blog/vector-database-selection-for-rag-guide.mdx"
-      ],
+      "alreadyInApprovalQueue": [],
       "audience": "部署大模型 API、本地模型、推理服务和 AI 应用的开发者",
       "candidatesConsidered": 10,
       "demandReason": "大模型部署、API 报错、推理延迟、环境变量和日志排错会带来技术流量，且能和工具服务转化相连。",
@@ -1802,11 +1885,7 @@
       ]
     },
     {
-      "alreadyInApprovalQueue": [
-        "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "content/blog/together-ai-api-beginner-guide.mdx",
-        "content/blog/vector-database-selection-for-rag-guide.mdx"
-      ],
+      "alreadyInApprovalQueue": [],
       "audience": "做客服 Agent、个人助理、知识库问答和长期任务 Agent 的团队",
       "candidatesConsidered": 10,
       "demandReason": "记忆、知识库、RAG、长期上下文是用户已经明确要求扩展的板块，且 2026 年 Agent 资料持续更新。",

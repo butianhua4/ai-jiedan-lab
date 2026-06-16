@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T05:24:13.817Z",
+  "generatedAt": "2026-06-16T18:18:49.532Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,17 +9,17 @@
     "trafficClaim": "not-included"
   },
   "summary": {
-    "approvalBacklogItems": 5,
+    "approvalBacklogItems": 0,
     "contentIntegrityBlockingItems": 0,
     "contentIntegrityWarningItems": 77,
     "currentPublishableNow": 0,
     "immediateApprovalItems": 3,
     "immediateApprovalReadyItems": 3,
-    "nextBatchActionItems": 34,
+    "nextBatchActionItems": 42,
     "nextBatchWarningItems": 3,
     "publicArticles": 500,
-    "publicMojibakeWarningItems": 9,
-    "publicRefreshActionItems": 181,
+    "publicMojibakeWarningItems": 51,
+    "publicRefreshActionItems": 5154,
     "publishConfirmCommandsIncluded": 0,
     "reviewPreflightFailed": 0,
     "reviewPreflightMojibakeWarningItems": 0,
@@ -37,33 +37,33 @@
     "No article is publishable without explicit human approval.",
     "3 draft article(s) are ready for human approval before mark:review.",
     "3 next-batch route item(s) still need SEO/query/freshness remediation review.",
-    "9 public article(s) need garbled-copy refresh before traffic work is credible.",
+    "51 public article(s) need garbled-copy refresh before traffic work is credible.",
     "Traffic data is unavailable, so traffic claims remain blocked."
   ],
   "nextHumanApproval": [
     {
       "action": "Human reviewer verifies sources, SEO warnings, internal link path, and risk language; stop before mark:review until approval.",
-      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
       "humanGate": "explicit human approval required",
-      "priority": 777,
-      "reason": "Immediate Wave 1; projected public count after human approval is 18.",
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
+      "priority": 446,
+      "reason": "Immediate Wave 1; projected public count after human approval is 503.",
+      "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界"
     },
     {
       "action": "Human reviewer verifies sources, SEO warnings, internal link path, and risk language; stop before mark:review until approval.",
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
       "humanGate": "explicit human approval required",
-      "priority": 773,
-      "reason": "Immediate Wave 1; projected public count after human approval is 18.",
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+      "priority": 439,
+      "reason": "Immediate Wave 1; projected public count after human approval is 503.",
+      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
     },
     {
       "action": "Human reviewer verifies sources, SEO warnings, internal link path, and risk language; stop before mark:review until approval.",
-      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "file": "content/blog/supabase-pgvector-rag-guide.mdx",
       "humanGate": "explicit human approval required",
-      "priority": 769,
-      "reason": "Immediate Wave 1; projected public count after human approval is 18.",
-      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+      "priority": 415,
+      "reason": "Immediate Wave 1; projected public count after human approval is 503.",
+      "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索"
     }
   ],
   "immediateApprovalQueue": [
@@ -75,15 +75,16 @@
         "sourceNotes": true,
         "status": "draft"
       },
+      "alreadyPublished": false,
       "blockers": [],
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm-human",
         "publishConfirm": "not-included",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vector-database-selection-for-rag-guide.mdx",
         "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
       },
       "currentStage": "draft-needs-human-approval",
-      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
       "humanChecklist": [
         "Article remains draft: true",
         "Article remains noindex: true",
@@ -99,12 +100,10 @@
         "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
         "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
         "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
-        "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.",
-        "Prompt examples include input context, output criteria, review rules, and adaptation notes.",
-        "Fact-check query before approval: 客服 AI 模型选型 official docs latest.",
-        "Fact-check query before approval: 客服 AI 模型选型 official documentation current limits.",
-        "Fact-check query before approval: 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 fact check official docs.",
-        "Fact-check query before approval: AI 部署 official docs limits pricing changelog.",
+        "Fact-check query before approval: RAG 向量数据库怎么选 official docs latest.",
+        "Fact-check query before approval: RAG 向量数据库怎么选 official documentation current limits.",
+        "Fact-check query before approval: RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 fact check official docs.",
+        "Fact-check query before approval: AI 基建 official docs limits pricing changelog.",
         "Fact-check query before approval: RAG 知识库搭建教程.",
         "Fact-check query before approval: 企业知识库 AI 部署.",
         "Verify official source before approval: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval.",
@@ -116,65 +115,30 @@
       ],
       "massSearchThemes": [
         {
-          "lane": "prompt-library",
-          "themeTitle": "Cross-industry AI prompt templates",
+          "lane": "agent-memory-rag",
+          "themeTitle": "RAG, knowledge base, and agent memory",
           "wave": 1
         }
       ],
       "popularPromptLanes": [
         {
-          "laneId": "chatgpt-prompt-daquan",
+          "laneId": "excel-data-analysis-prompts",
           "queries": 18,
           "templates": 5,
-          "title": "ChatGPT 提示词大全和万能公式"
+          "title": "Excel 和数据分析 AI 提示词"
         },
         {
-          "laneId": "ecommerce-customer-service-prompts",
+          "laneId": "llm-deployment-troubleshooting-prompts",
           "queries": 18,
           "templates": 5,
-          "title": "电商客服、售后和直播卖货 AI 提示词"
-        },
-        {
-          "laneId": "sales-proposal-prompts",
-          "queries": 18,
-          "templates": 5,
-          "title": "销售话术、报价和方案书 AI 提示词"
-        },
-        {
-          "laneId": "hr-resume-recruiting-prompts",
-          "queries": 18,
-          "templates": 5,
-          "title": "简历优化、招聘和 HR AI 提示词"
-        },
-        {
-          "laneId": "agent-memory-knowledge-base-prompts",
-          "queries": 18,
-          "templates": 5,
-          "title": "Agent 记忆、知识库和 RAG 提示词"
+          "title": "大模型部署、本地模型和 API 排错提示词"
         }
       ],
-      "priorityScore": 777,
+      "priorityScore": 446,
       "projectedPublishableAfterHumanApproval": true,
-      "publicImpact": "Immediate Wave 1; projected public count after human approval is 18.",
+      "publicImpact": "Immediate Wave 1; projected public count after human approval is 503.",
       "readyForHumanApproval": true,
-      "seoWarnings": [
-        {
-          "actions": [
-            "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-            "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-            "Confirm description length remains suitable for search snippets after editing.",
-            "Check whether the title can naturally include the exact primary keyword: 客服 AI 模型选型.",
-            "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-            "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-            "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
-          ],
-          "schemaWarnings": [],
-          "snippetWarnings": [
-            "description may be thin for search snippets",
-            "primary keyword is not an exact title substring"
-          ]
-        }
-      ],
+      "seoWarnings": [],
       "sourceReplacementDecisions": [
         {
           "kind": "redirected-url",
@@ -212,7 +176,7 @@
           "recommendedCandidate": null
         }
       ],
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
       "unsafeReasons": []
     },
     {
@@ -223,15 +187,16 @@
         "sourceNotes": true,
         "status": "draft"
       },
+      "alreadyPublished": false,
       "blockers": [],
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
         "publishConfirm": "not-included",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
         "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
       },
       "currentStage": "draft-needs-human-approval",
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
       "humanChecklist": [
         "Article remains draft: true",
         "Article remains noindex: true",
@@ -247,61 +212,72 @@
         "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
         "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
         "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.",
-        "Fact-check query before approval: AI Agent 部署 official docs latest.",
-        "Fact-check query before approval: AI Agent 部署 official documentation current limits.",
-        "Fact-check query before approval: AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 fact check official docs.",
-        "Fact-check query before approval: AI Agent official docs limits pricing changelog.",
-        "Fact-check query before approval: AI Agent 部署教程.",
-        "Fact-check query before approval: Agent 工具调用教程.",
-        "Verify official source before approval: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents.",
-        "Verify official source before approval: Vercel AI SDK docs: https://ai-sdk.dev/docs.",
-        "Verify official source before approval: LangChain docs: https://python.langchain.com/docs.",
+        "Fact-check query before approval: Vercel AI Gateway 多模型 official docs latest.",
+        "Fact-check query before approval: Vercel AI Gateway 多模型 official documentation current limits.",
+        "Fact-check query before approval: Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 fact check official docs.",
+        "Fact-check query before approval: AI 部署 official docs limits pricing changelog.",
+        "Fact-check query before approval: 大模型部署教程.",
+        "Fact-check query before approval: AI 应用部署教程.",
         "Verify official source before approval: OpenAI API docs: https://platform.openai.com/docs.",
-        "Verify official source before approval: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval.",
-        "Verify official source before approval: OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering."
+        "Verify official source before approval: Vercel AI SDK docs: https://ai-sdk.dev/docs.",
+        "Verify official source before approval: Anthropic docs: https://docs.anthropic.com.",
+        "Verify official source before approval: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents.",
+        "Verify official source before approval: Google AI docs: https://ai.google.dev/docs.",
+        "Verify official source before approval: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval."
       ],
       "massSearchThemes": [
         {
-          "lane": "agent-deployment",
-          "themeTitle": "Agent deployment, tool calling, and production workflows",
+          "lane": "model-deployment",
+          "themeTitle": "AI app and model API deployment",
           "wave": 1
         }
       ],
       "popularPromptLanes": [
         {
-          "laneId": "excel-data-analysis-prompts",
+          "laneId": "chatgpt-prompt-daquan",
           "queries": 18,
           "templates": 5,
-          "title": "Excel 和数据分析 AI 提示词"
-        },
-        {
-          "laneId": "ai-agent-deploy-prompts",
-          "queries": 18,
-          "templates": 5,
-          "title": "AI Agent 部署、工具调用和上线排错提示词"
+          "title": "ChatGPT 提示词大全和万能公式"
         },
         {
           "laneId": "llm-deployment-troubleshooting-prompts",
           "queries": 18,
           "templates": 5,
           "title": "大模型部署、本地模型和 API 排错提示词"
-        },
-        {
-          "laneId": "agent-memory-knowledge-base-prompts",
-          "queries": 18,
-          "templates": 5,
-          "title": "Agent 记忆、知识库和 RAG 提示词"
         }
       ],
-      "priorityScore": 773,
+      "priorityScore": 439,
       "projectedPublishableAfterHumanApproval": true,
-      "publicImpact": "Immediate Wave 1; projected public count after human approval is 18.",
+      "publicImpact": "Immediate Wave 1; projected public count after human approval is 503.",
       "readyForHumanApproval": true,
-      "seoWarnings": [],
+      "seoWarnings": [
+        {
+          "actions": [
+            "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
+            "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+            "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+            "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
+          ],
+          "schemaWarnings": [],
+          "snippetWarnings": [
+            "primary keyword is not an exact title substring"
+          ]
+        }
+      ],
       "sourceReplacementDecisions": [
         {
           "kind": "redirected-url",
           "originalUrl": "https://ai-sdk.dev/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://ai.google.dev/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://docs.anthropic.com",
           "recommendedCandidate": null
         },
         {
@@ -323,14 +299,9 @@
           "kind": "redirected-url",
           "originalUrl": "https://platform.openai.com/docs/guides/retrieval",
           "recommendedCandidate": null
-        },
-        {
-          "kind": "redirected-url",
-          "originalUrl": "https://python.langchain.com/docs",
-          "recommendedCandidate": null
         }
       ],
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
       "unsafeReasons": []
     },
     {
@@ -341,15 +312,16 @@
         "sourceNotes": true,
         "status": "draft"
       },
+      "alreadyPublished": false,
       "blockers": [],
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx --confirm-human",
         "publishConfirm": "not-included",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/supabase-pgvector-rag-guide.mdx",
         "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
       },
       "currentStage": "draft-needs-human-approval",
-      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "file": "content/blog/supabase-pgvector-rag-guide.mdx",
       "humanChecklist": [
         "Article remains draft: true",
         "Article remains noindex: true",
@@ -364,74 +336,40 @@
         "No API key, credential, private customer data, or account detail is included.",
         "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
         "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
-        "Prompt examples include input context, output criteria, review rules, and adaptation notes.",
-        "Fact-check query before approval: 全行业 AI 提示词模板 official docs latest.",
-        "Fact-check query before approval: 全行业 AI 提示词模板 official documentation current limits.",
-        "Fact-check query before approval: 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 fact check official docs.",
-        "Fact-check query before approval: AI 提示词 official docs limits pricing changelog.",
-        "Fact-check query before approval: AI 提示词大全.",
-        "Fact-check query before approval: 销售 AI 提示词.",
+        "Fact-check query before approval: Supabase pgvector official docs latest.",
+        "Fact-check query before approval: Supabase pgvector official documentation current limits.",
+        "Fact-check query before approval: Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 fact check official docs.",
+        "Fact-check query before approval: AI 基建 official docs limits pricing changelog.",
+        "Fact-check query before approval: RAG 知识库搭建教程.",
+        "Fact-check query before approval: 企业知识库 AI 部署.",
+        "Verify official source before approval: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval.",
+        "Verify official source before approval: LangChain docs: https://python.langchain.com/docs.",
+        "Verify official source before approval: LlamaIndex docs: https://docs.llamaindex.ai.",
+        "Verify official source before approval: Hugging Face docs: https://huggingface.co/docs.",
         "Verify official source before approval: OpenAI API docs: https://platform.openai.com/docs.",
-        "Verify official source before approval: OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering.",
-        "Verify official source before approval: Vercel AI SDK docs: https://ai-sdk.dev/docs.",
-        "Verify official source before approval: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval."
+        "Verify official source before approval: Vercel AI SDK docs: https://ai-sdk.dev/docs."
       ],
       "massSearchThemes": [
         {
-          "lane": "prompt-library",
-          "themeTitle": "Cross-industry AI prompt templates",
+          "lane": "agent-memory-rag",
+          "themeTitle": "RAG, knowledge base, and agent memory",
           "wave": 1
         }
       ],
       "popularPromptLanes": [
         {
-          "laneId": "chatgpt-prompt-daquan",
+          "laneId": "excel-data-analysis-prompts",
           "queries": 18,
           "templates": 5,
-          "title": "ChatGPT 提示词大全和万能公式"
-        },
-        {
-          "laneId": "office-copilot-prompts",
-          "queries": 14,
-          "templates": 5,
-          "title": "AI 办公提示词：Word、Excel、PPT、邮件和会议"
-        },
-        {
-          "laneId": "ecommerce-customer-service-prompts",
-          "queries": 18,
-          "templates": 5,
-          "title": "电商客服、售后和直播卖货 AI 提示词"
-        },
-        {
-          "laneId": "sales-proposal-prompts",
-          "queries": 18,
-          "templates": 5,
-          "title": "销售话术、报价和方案书 AI 提示词"
-        },
-        {
-          "laneId": "hr-resume-recruiting-prompts",
-          "queries": 18,
-          "templates": 5,
-          "title": "简历优化、招聘和 HR AI 提示词"
-        },
-        {
-          "laneId": "agent-memory-knowledge-base-prompts",
-          "queries": 18,
-          "templates": 5,
-          "title": "Agent 记忆、知识库和 RAG 提示词"
+          "title": "Excel 和数据分析 AI 提示词"
         }
       ],
-      "priorityScore": 769,
+      "priorityScore": 415,
       "projectedPublishableAfterHumanApproval": true,
-      "publicImpact": "Immediate Wave 1; projected public count after human approval is 18.",
+      "publicImpact": "Immediate Wave 1; projected public count after human approval is 503.",
       "readyForHumanApproval": true,
       "seoWarnings": [],
       "sourceReplacementDecisions": [
-        {
-          "kind": "failed-url",
-          "originalUrl": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
-          "recommendedCandidate": "Microsoft Copilot Prompt Gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
-        },
         {
           "kind": "redirected-url",
           "originalUrl": "https://ai-sdk.dev/docs",
@@ -439,7 +377,7 @@
         },
         {
           "kind": "redirected-url",
-          "originalUrl": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "originalUrl": "https://docs.llamaindex.ai",
           "recommendedCandidate": null
         },
         {
@@ -449,41 +387,74 @@
         },
         {
           "kind": "redirected-url",
-          "originalUrl": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "originalUrl": "https://platform.openai.com/docs/guides/retrieval",
           "recommendedCandidate": null
         },
         {
           "kind": "redirected-url",
-          "originalUrl": "https://platform.openai.com/docs/guides/retrieval",
+          "originalUrl": "https://python.langchain.com/docs",
           "recommendedCandidate": null
         }
       ],
-      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
       "unsafeReasons": []
     }
   ],
   "nextBatchWarnings": [
     {
-      "actionCount": 15,
-      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+      "actionCount": 14,
+      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+      "manualRemediationActions": [
+        "Keep status=draft, noindex=true, and humanReviewRequired=true while remediating this route.",
+        "Use the route report as planning evidence only; do not run mark:review or publish from this pack.",
+        "Review the existing proposed meta description and accept, rewrite, or reject it explicitly.",
+        "Review the suggested public internal link: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide).",
+        "Resolve or explicitly accept search wording warnings: few exact query variant matches in article text.",
+        "Check whether the exact query can appear naturally in title, description, a heading, or the opening paragraph without keyword stuffing.",
+        "SEO remediation: Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
+        "SEO remediation: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO remediation: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "SEO remediation: For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
+        "Verify at least the first official source targets: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.",
+        "After explicit human approval only: npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
+        "After review state only, publish dry-run without confirm: npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+        "Do not run publish:articles --confirm from this remediation pack."
+      ],
+      "priorityScore": 511,
+      "publishConfirm": "not-included",
+      "readyForRemediationReview": true,
+      "remediationKinds": [
+        "query-warning",
+        "seo-warning",
+        "route-warning"
+      ],
+      "routeReady": true,
+      "routeWarnings": [
+        "search query match warning exists"
+      ],
+      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 14,
+      "file": "content/blog/together-ai-api-beginner-guide.mdx",
       "manualRemediationActions": [
         "Keep status=draft, noindex=true, and humanReviewRequired=true while remediating this route.",
         "Use the route report as planning evidence only; do not run mark:review or publish from this pack.",
         "Check why this file is not matched in the human approval clearance pack, then decide whether it should enter the next approval queue or remain queued.",
         "Create or manually review copydesk guidance for title, meta description, opening answer, and public internal link before approval.",
-        "Resolve or explicitly accept search wording warnings: few exact query variant matches in article text.",
+        "Resolve or explicitly accept search wording warnings: few exact query variant matches in article text; missing query-family signals: intentSeeds.",
         "Check whether the exact query can appear naturally in title, description, a heading, or the opening paragraph without keyword stuffing.",
-        "SEO remediation: Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-        "SEO remediation: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-        "SEO remediation: Confirm description length remains suitable for search snippets after editing.",
-        "SEO remediation: Check whether the title can naturally include the exact primary keyword: AI 自动化项目报价.",
-        "Re-open official sources for fast-changing tool, model, API, pricing, limit, and deployment claims before approval.",
-        "Verify at least the first official source targets: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval | LangChain docs: https://python.langchain.com/docs | LlamaIndex docs: https://docs.llamaindex.ai.",
-        "After explicit human approval only: npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
-        "After review state only, publish dry-run without confirm: npm run publish:articles -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "SEO remediation: Check whether the title can naturally include the exact primary keyword: Together AI API 接入.",
+        "SEO remediation: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO remediation: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "SEO remediation: For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
+        "Verify at least the first official source targets: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.",
+        "After explicit human approval only: npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human",
+        "After review state only, publish dry-run without confirm: npm run publish:articles -- --file=content/blog/together-ai-api-beginner-guide.mdx",
         "Do not run publish:articles --confirm from this remediation pack."
       ],
-      "priorityScore": 872,
+      "priorityScore": 510,
       "publishConfirm": "not-included",
       "readyForRemediationReview": true,
       "remediationKinds": [
@@ -491,116 +462,59 @@
         "copydesk-gap",
         "query-warning",
         "seo-warning",
-        "freshness-warning",
         "route-warning"
       ],
       "routeReady": true,
       "routeWarnings": [
         "not yet matched in human approval clearance pack",
         "no copydesk optimization brief matched",
+        "no freshness brief matched",
         "search query match warning exists"
       ],
-      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+      "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
       "unsafeReasons": []
     },
     {
-      "actionCount": 10,
-      "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+      "actionCount": 14,
+      "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
       "manualRemediationActions": [
         "Keep status=draft, noindex=true, and humanReviewRequired=true while remediating this route.",
         "Use the route report as planning evidence only; do not run mark:review or publish from this pack.",
         "Check why this file is not matched in the human approval clearance pack, then decide whether it should enter the next approval queue or remain queued.",
-        "Review the existing proposed meta description and accept, rewrite, or reject it explicitly.",
-        "Review the suggested public internal link: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-        "Re-open official sources for fast-changing tool, model, API, pricing, limit, and deployment claims before approval.",
-        "Verify at least the first official source targets: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval | LangChain docs: https://python.langchain.com/docs | LlamaIndex docs: https://docs.llamaindex.ai.",
-        "After explicit human approval only: npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
-        "After review state only, publish dry-run without confirm: npm run publish:articles -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx",
+        "Create or manually review copydesk guidance for title, meta description, opening answer, and public internal link before approval.",
+        "Resolve or explicitly accept search wording warnings: few exact query variant matches in article text.",
+        "Check whether the exact query can appear naturally in title, description, a heading, or the opening paragraph without keyword stuffing.",
+        "SEO remediation: Check whether the title can naturally include the exact primary keyword: Vercel AI SDK 聊天机器人部署.",
+        "SEO remediation: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO remediation: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "SEO remediation: For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
+        "Verify at least the first official source targets: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.",
+        "After explicit human approval only: npm run mark:review -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx --confirm-human",
+        "After review state only, publish dry-run without confirm: npm run publish:articles -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
         "Do not run publish:articles --confirm from this remediation pack."
       ],
-      "priorityScore": 820,
+      "priorityScore": 509,
       "publishConfirm": "not-included",
       "readyForRemediationReview": true,
       "remediationKinds": [
         "clearance-gap",
-        "freshness-warning",
+        "copydesk-gap",
+        "query-warning",
+        "seo-warning",
         "route-warning"
       ],
       "routeReady": true,
       "routeWarnings": [
-        "not yet matched in human approval clearance pack"
+        "not yet matched in human approval clearance pack",
+        "no copydesk optimization brief matched",
+        "no freshness brief matched",
+        "search query match warning exists"
       ],
-      "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
-      "unsafeReasons": []
-    },
-    {
-      "actionCount": 9,
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-      "manualRemediationActions": [
-        "Keep status=draft, noindex=true, and humanReviewRequired=true while remediating this route.",
-        "Use the route report as planning evidence only; do not run mark:review or publish from this pack.",
-        "Review the existing proposed meta description and accept, rewrite, or reject it explicitly.",
-        "Review the suggested public internal link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).",
-        "Re-open official sources for fast-changing tool, model, API, pricing, limit, and deployment claims before approval.",
-        "Verify at least the first official source targets: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents | Vercel AI SDK docs: https://ai-sdk.dev/docs | LangChain docs: https://python.langchain.com/docs.",
-        "After explicit human approval only: npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
-        "After review state only, publish dry-run without confirm: npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-        "Do not run publish:articles --confirm from this remediation pack."
-      ],
-      "priorityScore": 798,
-      "publishConfirm": "not-included",
-      "readyForRemediationReview": true,
-      "remediationKinds": [
-        "freshness-warning"
-      ],
-      "routeReady": true,
-      "routeWarnings": [],
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "title": "Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查",
       "unsafeReasons": []
     }
   ],
   "publicRefreshWarnings": [
-    {
-      "actionCount": 13,
-      "category": "Codex 新手教程",
-      "descriptionLength": 104,
-      "file": "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
-      "priorityScore": 245,
-      "publishConfirm": "not-included",
-      "readyForPublicRefreshSprint": true,
-      "refreshActions": [
-        "Confirm the public page still answers one clear search intent before editing.",
-        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
-        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
-        "SEO warning: Confirm the contentType value matches the actual article format and category.",
-        "SEO warning: If the value is intentionally uncommon, document that decision during human review.",
-        "SEO warning: If the value is accidental, replace it with the closest established content type before approval.",
-        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
-        "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
-        "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
-        "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
-        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
-        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
-        "Apply edits manually only after approval; publish confirm remains excluded."
-      ],
-      "refreshReasons": [
-        "mojibake-public",
-        "seo-warning",
-        "cannibalization",
-        "freshness-high",
-        "high-priority"
-      ],
-      "mojibakeSignal": {
-        "fields": [
-          "bodyExcerpt"
-        ],
-        "sample": "常见错误一，是把 AI 生成的 Proposal 原文直接发送。这样很容易出现你不会做却承诺会做的内容。常见错误二，是看到客户预算低就盲目压价，结果沟通、修改和部署花掉更多时间。常见错误三，是忽略平台规则，例如诱导站外付款、批量骚扰式发送、虚假案例，这些都可能伤害账号安全。常见错误四，是没有保存交付过程，最后客户问起修改内容时说不清楚。"
-      },
-      "slug": "codex-vs-claude-code-beginner-checklist",
-      "sprintWave": 1,
-      "title": "Codex 和 Claude Code 怎么选：新手对比清单",
-      "unsafeReasons": []
-    },
     {
       "actionCount": 13,
       "category": "报价指南",
@@ -643,89 +557,11 @@
       "unsafeReasons": []
     },
     {
-      "actionCount": 12,
-      "category": "Codex 新手教程",
-      "descriptionLength": 101,
-      "file": "content/blog/codex-github-before-commit-checklist.mdx",
-      "priorityScore": 230,
-      "publishConfirm": "not-included",
-      "readyForPublicRefreshSprint": true,
-      "refreshActions": [
-        "Confirm the public page still answers one clear search intent before editing.",
-        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
-        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
-        "SEO warning: Confirm the contentType value matches the actual article format and category.",
-        "SEO warning: If the value is intentionally uncommon, document that decision during human review.",
-        "SEO warning: If the value is accidental, replace it with the closest established content type before approval.",
-        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
-        "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
-        "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
-        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
-        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
-        "Apply edits manually only after approval; publish confirm remains excluded."
-      ],
-      "refreshReasons": [
-        "mojibake-public",
-        "seo-warning",
-        "freshness-high",
-        "high-priority"
-      ],
-      "mojibakeSignal": {
-        "fields": [
-          "bodyExcerpt"
-        ],
-        "sample": "常见错误一，是把 AI 生成的 Proposal 原文直接发送。这样很容易出现你不会做却承诺会做的内容。常见错误二，是看到客户预算低就盲目压价，结果沟通、修改和部署花掉更多时间。常见错误三，是忽略平台规则，例如诱导站外付款、批量骚扰式发送、虚假案例，这些都可能伤害账号安全。常见错误四，是没有保存交付过程，最后客户问起修改内容时说不清楚。"
-      },
-      "slug": "codex-github-before-commit-checklist",
-      "sprintWave": 1,
-      "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
-      "unsafeReasons": []
-    },
-    {
-      "actionCount": 12,
-      "category": "Codex 新手教程",
-      "descriptionLength": 101,
-      "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
-      "priorityScore": 230,
-      "publishConfirm": "not-included",
-      "readyForPublicRefreshSprint": true,
-      "refreshActions": [
-        "Confirm the public page still answers one clear search intent before editing.",
-        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
-        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
-        "SEO warning: Confirm the contentType value matches the actual article format and category.",
-        "SEO warning: If the value is intentionally uncommon, document that decision during human review.",
-        "SEO warning: If the value is accidental, replace it with the closest established content type before approval.",
-        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
-        "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
-        "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
-        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
-        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
-        "Apply edits manually only after approval; publish confirm remains excluded."
-      ],
-      "refreshReasons": [
-        "mojibake-public",
-        "seo-warning",
-        "freshness-high",
-        "high-priority"
-      ],
-      "mojibakeSignal": {
-        "fields": [
-          "bodyExcerpt"
-        ],
-        "sample": "常见错误一，是把 AI 生成的 Proposal 原文直接发送。这样很容易出现你不会做却承诺会做的内容。常见错误二，是看到客户预算低就盲目压价，结果沟通、修改和部署花掉更多时间。常见错误三，是忽略平台规则，例如诱导站外付款、批量骚扰式发送、虚假案例，这些都可能伤害账号安全。常见错误四，是没有保存交付过程，最后客户问起修改内容时说不清楚。"
-      },
-      "slug": "codex-vercel-deploy-preflight-checklist",
-      "sprintWave": 2,
-      "title": "Codex 部署 Vercel 前检查什么：上线前清单",
-      "unsafeReasons": []
-    },
-    {
-      "actionCount": 14,
-      "category": "Codex 新手教程",
-      "descriptionLength": 88,
-      "file": "content/blog/build-first-webpage-with-codex.mdx",
-      "priorityScore": 225,
+      "actionCount": 13,
+      "category": "AI 自由职业路线",
+      "descriptionLength": 52,
+      "file": "content/blog/ai-small-project-practice-topics-checklist.mdx",
+      "priorityScore": 235,
       "publishConfirm": "not-included",
       "readyForPublicRefreshSprint": true,
       "refreshActions": [
@@ -733,33 +569,155 @@
         "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
         "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
         "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
-        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
-        "Cannibalization check: review same primary keyword conflict \"codex 怎么做第一个网页\" before expanding this page or approving related drafts.",
-        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.",
+        "SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
+        "SEO warning: Confirm description length remains suitable for search snippets after editing.",
         "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
         "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
         "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
         "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
-        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
         "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
         "Apply edits manually only after approval; publish confirm remains excluded."
       ],
       "refreshReasons": [
         "mojibake-public",
+        "seo-warning",
         "short-description",
         "cannibalization",
-        "freshness-high",
         "high-priority"
       ],
       "mojibakeSignal": {
         "fields": [
           "bodyExcerpt"
         ],
-        "sample": "常见错误一，是把 AI 生成的 Proposal 原文直接发送。这样很容易出现你不会做却承诺会做的内容。常见错误二，是看到客户预算低就盲目压价，结果沟通、修改和部署花掉更多时间。常见错误三，是忽略平台规则，例如诱导站外付款、批量骚扰式发送、虚假案例，这些都可能伤害账号安全。常见错误四，是没有保存交付过程，最后客户问起修改内容时说不清楚。"
+        "sample": "命中这些信号时，换一个低风险题目。练习不需要冒险。"
       },
-      "slug": "build-first-webpage-with-codex",
+      "slug": "ai-small-project-practice-topics-checklist",
+      "sprintWave": 1,
+      "title": "AI 小项目练习选题检查清单",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 13,
+      "category": "作品集",
+      "descriptionLength": 61,
+      "file": "content/blog/canva-portfolio-cover-tips-checklist.mdx",
+      "priorityScore": 235,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: Canva 作品集封面检查清单.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
+        "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
+        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+        "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "mojibake-public",
+        "seo-warning",
+        "short-description",
+        "cannibalization",
+        "high-priority"
+      ],
+      "mojibakeSignal": {
+        "fields": [
+          "bodyExcerpt"
+        ],
+        "sample": "不要用 AI 生成图像冒充真实项目结果。如果是 AI 辅助生成的视觉稿，要标明用途和限制。作品集的核心是你的过程和判断，不是让客户误以为所有画面都来自真实项目。"
+      },
+      "slug": "canva-portfolio-cover-tips-checklist",
+      "sprintWave": 1,
+      "title": "Canva 作品集封面发布前检查清单",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 13,
+      "category": "工具流程",
+      "descriptionLength": 59,
+      "file": "content/blog/claude-code-beginner-mistakes-checklist.mdx",
+      "priorityScore": 235,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 新手检查清单.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
+        "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
+        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+        "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "mojibake-public",
+        "seo-warning",
+        "short-description",
+        "cannibalization",
+        "high-priority"
+      ],
+      "mojibakeSignal": {
+        "fields": [
+          "bodyExcerpt"
+        ],
+        "sample": "诊断不是退缩。对新手来说，能判断“现在不能直接修”，比盲目接下高风险任务更专业。"
+      },
+      "slug": "claude-code-beginner-mistakes-checklist",
       "sprintWave": 2,
-      "title": "Codex 怎么做第一个网页",
+      "title": "Claude Code 新手使用检查清单",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 13,
+      "category": "工具流程",
+      "descriptionLength": 68,
+      "file": "content/blog/claude-code-beginner-mistakes-mistakes.mdx",
+      "priorityScore": 235,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 常见错误.",
+        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
+        "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
+        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+        "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "mojibake-public",
+        "seo-warning",
+        "short-description",
+        "cannibalization",
+        "high-priority"
+      ],
+      "mojibakeSignal": {
+        "fields": [
+          "bodyExcerpt"
+        ],
+        "sample": "如果检查失败，也要记录失败原因。失败不是坏事，它说明你还在验证，而不是盲目交付。客户看到清楚的失败记录和下一步建议，通常比看到一句含糊的“还在处理中”更容易理解。"
+      },
+      "slug": "claude-code-beginner-mistakes-mistakes",
+      "sprintWave": 2,
+      "title": "Claude Code 新手常见错误和修正方法",
       "unsafeReasons": []
     }
   ]

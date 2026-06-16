@@ -1,6 +1,6 @@
 # Search Query Coverage
 
-Generated at: 2026-06-16T05:11:54.587Z
+Generated at: 2026-06-16T18:18:15.068Z
 
 This report is read-only. It expands each planned review-wave article into user-search query variants for human review and SEO planning. It does not claim measured search volume.
 
@@ -23,7 +23,7 @@ This report is read-only. It expands each planned review-wave article into user-
 - unsafeItems: 0
 - uniqueFiles: 12
 - uniqueLanes: 7
-- uniqueQueries: 365
+- uniqueQueries: 352
 
 ## Source Evidence
 
@@ -33,660 +33,68 @@ This report is read-only. It expands each planned review-wave article into user-
 ## Wave 1: Current human approval packet
 
 - Items: 3
-- Query variants: 105
-
-| Ready | Queries | Lane | Primary keyword | Gaps | Title | File |
-| --- | --- | --- | --- | --- | --- | --- |
-| true | 35 | Cross-industry AI prompt templates and reusable prompt libraries | 全行业 AI 提示词模板 | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | 35 | Cross-industry AI prompt templates and reusable prompt libraries | 客服 AI 模型选型 | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| true | 35 | AI Agent deployment, tool calling, and production workflow | AI Agent 部署 | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-
-### 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用
-
-- File: content/blog/industry-ai-prompts-template-library-2026.mdx
-- Lane: Cross-industry AI prompt templates and reusable prompt libraries
-- Primary keyword: 全行业 AI 提示词模板
-
-howTo:
-
-- 全行业 AI 提示词模板怎么做
-- 全行业 AI 提示词模板教程
-- 全行业 AI 提示词模板新手教程
-- 全行业 AI 提示词模板落地步骤
-
-deployment:
-
-- 全行业 AI 提示词模板部署
-- 全行业 AI 提示词模板工作流
-- 全行业 AI 提示词模板生产环境
-- AI 提示词库
-- ChatGPT 提示词模板
-- 行业提示词
-- 全行业 AI 提示词模板 industry taxonomy
-- 全行业 AI 提示词模板 input schema
-- 全行业 AI 提示词模板 output format
-- 全行业 AI 提示词模板 review checklist
-- 全行业 AI 提示词模板 reuse rules
-
-template:
-
-- 全行业 AI 提示词模板模板
-- 全行业 AI 提示词模板清单
-- 全行业 AI 提示词模板SOP
-- 全行业 AI 提示词模板方案
-
-comparison:
-
-- 全行业 AI 提示词模板对比
-- 全行业 AI 提示词模板怎么选
-- 提示词模板和工作流区别
-- 行业提示词和通用提示词区别
-
-risk:
-
-- 全行业 AI 提示词模板避坑
-- 全行业 AI 提示词模板风险
-- 全行业 AI 提示词模板安全
-- 全行业 AI 提示词模板人工审核
-
-costOps:
-
-- 全行业 AI 提示词模板成本
-- 全行业 AI 提示词模板报价
-- 全行业 AI 提示词模板维护
-- 全行业 AI 提示词模板上线检查
-
-intentSeeds:
-
-- AI 提示词大全
-- ChatGPT 提示词模板
-- 全行业 AI 提示词
-- AI prompt library
-
-### 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
-
-- File: content/blog/ai-model-selection-customer-service-guide.mdx
-- Lane: Cross-industry AI prompt templates and reusable prompt libraries
-- Primary keyword: 客服 AI 模型选型
-
-howTo:
-
-- 客服 AI 模型选型怎么做
-- 客服 AI 模型选型教程
-- 客服 AI 模型选型新手教程
-- 客服 AI 模型选型落地步骤
-
-deployment:
-
-- 客服 AI 模型选型部署
-- 客服 AI 模型选型工作流
-- 客服 AI 模型选型生产环境
-- AI 提示词库
-- ChatGPT 提示词模板
-- 行业提示词
-- 客服 AI 模型选型 industry taxonomy
-- 客服 AI 模型选型 input schema
-- 客服 AI 模型选型 output format
-- 客服 AI 模型选型 review checklist
-- 客服 AI 模型选型 reuse rules
-
-template:
-
-- 客服 AI 模型选型模板
-- 客服 AI 模型选型清单
-- 客服 AI 模型选型SOP
-- 客服 AI 模型选型方案
-
-comparison:
-
-- 客服 AI 模型选型对比
-- 客服 AI 模型选型怎么选
-- 提示词模板和工作流区别
-- 行业提示词和通用提示词区别
-
-risk:
-
-- 客服 AI 模型选型避坑
-- 客服 AI 模型选型风险
-- 客服 AI 模型选型安全
-- 客服 AI 模型选型人工审核
-
-costOps:
-
-- 客服 AI 模型选型成本
-- 客服 AI 模型选型报价
-- 客服 AI 模型选型维护
-- 客服 AI 模型选型上线检查
-
-intentSeeds:
-
-- AI 提示词大全
-- ChatGPT 提示词模板
-- 全行业 AI 提示词
-- AI prompt library
-
-### AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查
-
-- File: content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
-- Lane: AI Agent deployment, tool calling, and production workflow
-- Primary keyword: AI Agent 部署
-
-howTo:
-
-- AI Agent 部署怎么做
-- AI Agent 部署教程
-- AI Agent 部署新手教程
-- AI Agent 部署落地步骤
-
-deployment:
-
-- AI Agent 部署部署
-- AI Agent 部署工作流
-- AI Agent 部署生产环境
-- AI Agent 部署
-- Agent 工具调用
-- Agent 上线检查
-- AI Agent 部署 tool calling
-- AI Agent 部署 multi-step execution
-- AI Agent 部署 human approval
-- AI Agent 部署 observability
-- AI Agent 部署 permissions
-
-template:
-
-- AI Agent 部署模板
-- AI Agent 部署清单
-- AI Agent 部署SOP
-- AI Agent 部署方案
-
-comparison:
-
-- AI Agent 部署对比
-- AI Agent 部署怎么选
-- AI Agent 和 Chatbot 区别
-- Vercel AI SDK Agent vs OpenAI Agents SDK
-
-risk:
-
-- AI Agent 部署避坑
-- AI Agent 部署风险
-- AI Agent 部署安全
-- AI Agent 部署人工审核
-
-costOps:
-
-- AI Agent 部署成本
-- AI Agent 部署报价
-- AI Agent 部署维护
-- AI Agent 部署上线检查
-
-intentSeeds:
-
-- AI Agent 部署
-- AI Agent 工具调用
-- Vercel AI SDK Agent
-- OpenAI Agents SDK
-
-## Wave 2: Cross-industry AI prompt templates and reusable prompt libraries + Business department AI workflows across sales, support, ops, HR, finance, legal, and education
-
-- Items: 3
-- Query variants: 106
-
-| Ready | Queries | Lane | Primary keyword | Gaps | Title | File |
-| --- | --- | --- | --- | --- | --- | --- |
-| true | 35 | Cross-industry AI prompt templates and reusable prompt libraries | 数据分析 AI 提示词 | none | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
-| true | 35 | Cross-industry AI prompt templates and reusable prompt libraries | 教育 AI 提示词 | none | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
-| true | 36 | Business department AI workflows across sales, support, ops, HR, finance, legal, and education | 客服 AI 提示词 | none | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
-
-### 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要
-
-- File: content/blog/data-analysis-ai-prompts-guide.mdx
-- Lane: Cross-industry AI prompt templates and reusable prompt libraries
-- Primary keyword: 数据分析 AI 提示词
-
-howTo:
-
-- 数据分析 AI 提示词怎么做
-- 数据分析 AI 提示词教程
-- 数据分析 AI 提示词新手教程
-- 数据分析 AI 提示词落地步骤
-
-deployment:
-
-- 数据分析 AI 提示词部署
-- 数据分析 AI 提示词工作流
-- 数据分析 AI 提示词生产环境
-- AI 提示词库
-- ChatGPT 提示词模板
-- 行业提示词
-- 数据分析 AI 提示词 industry taxonomy
-- 数据分析 AI 提示词 input schema
-- 数据分析 AI 提示词 output format
-- 数据分析 AI 提示词 review checklist
-- 数据分析 AI 提示词 reuse rules
-
-template:
-
-- 数据分析 AI 提示词模板
-- 数据分析 AI 提示词清单
-- 数据分析 AI 提示词SOP
-- 数据分析 AI 提示词方案
-
-comparison:
-
-- 数据分析 AI 提示词对比
-- 数据分析 AI 提示词怎么选
-- 提示词模板和工作流区别
-- 行业提示词和通用提示词区别
-
-risk:
-
-- 数据分析 AI 提示词避坑
-- 数据分析 AI 提示词风险
-- 数据分析 AI 提示词安全
-- 数据分析 AI 提示词人工审核
-
-costOps:
-
-- 数据分析 AI 提示词成本
-- 数据分析 AI 提示词报价
-- 数据分析 AI 提示词维护
-- 数据分析 AI 提示词上线检查
-
-intentSeeds:
-
-- AI 提示词大全
-- ChatGPT 提示词模板
-- 全行业 AI 提示词
-- AI prompt library
-
-### 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划
-
-- File: content/blog/education-ai-prompts-guide.mdx
-- Lane: Cross-industry AI prompt templates and reusable prompt libraries
-- Primary keyword: 教育 AI 提示词
-
-howTo:
-
-- 教育 AI 提示词怎么做
-- 教育 AI 提示词教程
-- 教育 AI 提示词新手教程
-- 教育 AI 提示词落地步骤
-
-deployment:
-
-- 教育 AI 提示词部署
-- 教育 AI 提示词工作流
-- 教育 AI 提示词生产环境
-- AI 提示词库
-- ChatGPT 提示词模板
-- 行业提示词
-- 教育 AI 提示词 industry taxonomy
-- 教育 AI 提示词 input schema
-- 教育 AI 提示词 output format
-- 教育 AI 提示词 review checklist
-- 教育 AI 提示词 reuse rules
-
-template:
-
-- 教育 AI 提示词模板
-- 教育 AI 提示词清单
-- 教育 AI 提示词SOP
-- 教育 AI 提示词方案
-
-comparison:
-
-- 教育 AI 提示词对比
-- 教育 AI 提示词怎么选
-- 提示词模板和工作流区别
-- 行业提示词和通用提示词区别
-
-risk:
-
-- 教育 AI 提示词避坑
-- 教育 AI 提示词风险
-- 教育 AI 提示词安全
-- 教育 AI 提示词人工审核
-
-costOps:
-
-- 教育 AI 提示词成本
-- 教育 AI 提示词报价
-- 教育 AI 提示词维护
-- 教育 AI 提示词上线检查
-
-intentSeeds:
-
-- AI 提示词大全
-- ChatGPT 提示词模板
-- 全行业 AI 提示词
-- AI prompt library
-
-### 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断
-
-- File: content/blog/customer-service-ai-prompts-guide.mdx
-- Lane: Business department AI workflows across sales, support, ops, HR, finance, legal, and education
-- Primary keyword: 客服 AI 提示词
-
-howTo:
-
-- 客服 AI 提示词怎么做
-- 客服 AI 提示词教程
-- 客服 AI 提示词新手教程
-- 客服 AI 提示词落地步骤
-
-deployment:
-
-- 客服 AI 提示词部署
-- 客服 AI 提示词工作流
-- 客服 AI 提示词生产环境
-- 企业 AI 工作流
-- 部门 AI SOP
-- 业务 AI 自动化
-- 客服 AI 提示词 department workflows
-- 客服 AI 提示词 SOP
-- 客服 AI 提示词 review owner
-- 客服 AI 提示词 handoff
-- 客服 AI 提示词 template library
-
-template:
-
-- 客服 AI 提示词模板
-- 客服 AI 提示词清单
-- 客服 AI 提示词SOP
-- 客服 AI 提示词方案
-
-comparison:
-
-- 客服 AI 提示词对比
-- 客服 AI 提示词怎么选
-- 销售 AI 和客服 AI 工作流区别
-- AI 工作流和自动化脚本区别
-
-risk:
-
-- 客服 AI 提示词避坑
-- 客服 AI 提示词风险
-- 客服 AI 提示词安全
-- 客服 AI 提示词人工审核
-
-costOps:
-
-- 客服 AI 提示词成本
-- 客服 AI 提示词报价
-- 客服 AI 提示词维护
-- 客服 AI 提示词上线检查
-
-intentSeeds:
-
-- 企业 AI 应用场景
-- AI 工作流模板
-- 销售 AI 提示词
-- 客服 AI 提示词
-- 运营 AI 提示词
-
-## Wave 3: AI Agent deployment, tool calling, and production workflow + Large model deployment, LLM serving, and GPU infrastructure
-
-- Items: 3
-- Query variants: 105
-
-| Ready | Queries | Lane | Primary keyword | Gaps | Title | File |
-| --- | --- | --- | --- | --- | --- | --- |
-| true | 35 | AI Agent deployment, tool calling, and production workflow | AI Agent 记忆 | none | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| true | 35 | AI Agent deployment, tool calling, and production workflow | AI 自动化项目报价 | none | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
-| true | 35 | Large model deployment, LLM serving, and GPU infrastructure | 大模型部署 | none | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
-
-### AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界
-
-- File: content/blog/ai-agent-memory-rag-design-guide.mdx
-- Lane: AI Agent deployment, tool calling, and production workflow
-- Primary keyword: AI Agent 记忆
-
-howTo:
-
-- AI Agent 记忆怎么做
-- AI Agent 记忆教程
-- AI Agent 记忆新手教程
-- AI Agent 记忆落地步骤
-
-deployment:
-
-- AI Agent 记忆部署
-- AI Agent 记忆工作流
-- AI Agent 记忆生产环境
-- AI Agent 部署
-- Agent 工具调用
-- Agent 上线检查
-- AI Agent 记忆 tool calling
-- AI Agent 记忆 multi-step execution
-- AI Agent 记忆 human approval
-- AI Agent 记忆 observability
-- AI Agent 记忆 permissions
-
-template:
-
-- AI Agent 记忆模板
-- AI Agent 记忆清单
-- AI Agent 记忆SOP
-- AI Agent 记忆方案
-
-comparison:
-
-- AI Agent 记忆对比
-- AI Agent 记忆怎么选
-- AI Agent 和 Chatbot 区别
-- Vercel AI SDK Agent vs OpenAI Agents SDK
-
-risk:
-
-- AI Agent 记忆避坑
-- AI Agent 记忆风险
-- AI Agent 记忆安全
-- AI Agent 记忆人工审核
-
-costOps:
-
-- AI Agent 记忆成本
-- AI Agent 记忆报价
-- AI Agent 记忆维护
-- AI Agent 记忆上线检查
-
-intentSeeds:
-
-- AI Agent 部署
-- AI Agent 工具调用
-- Vercel AI SDK Agent
-- OpenAI Agents SDK
-
-### AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围
-
-- File: content/blog/ai-automation-project-pricing-scope-guide.mdx
-- Lane: AI Agent deployment, tool calling, and production workflow
-- Primary keyword: AI 自动化项目报价
-
-howTo:
-
-- AI 自动化项目报价怎么做
-- AI 自动化项目报价教程
-- AI 自动化项目报价新手教程
-- AI 自动化项目报价落地步骤
-
-deployment:
-
-- AI 自动化项目报价部署
-- AI 自动化项目报价工作流
-- AI 自动化项目报价生产环境
-- AI Agent 部署
-- Agent 工具调用
-- Agent 上线检查
-- AI 自动化项目报价 tool calling
-- AI 自动化项目报价 multi-step execution
-- AI 自动化项目报价 human approval
-- AI 自动化项目报价 observability
-- AI 自动化项目报价 permissions
-
-template:
-
-- AI 自动化项目报价模板
-- AI 自动化项目报价清单
-- AI 自动化项目报价SOP
-- AI 自动化项目报价方案
-
-comparison:
-
-- AI 自动化项目报价对比
-- AI 自动化项目报价怎么选
-- AI Agent 和 Chatbot 区别
-- Vercel AI SDK Agent vs OpenAI Agents SDK
-
-risk:
-
-- AI 自动化项目报价避坑
-- AI 自动化项目报价风险
-- AI 自动化项目报价安全
-- AI 自动化项目报价人工审核
-
-costOps:
-
-- AI 自动化项目报价成本
-- AI 自动化项目报价报价
-- AI 自动化项目报价维护
-- AI 自动化项目报价上线检查
-
-intentSeeds:
-
-- AI Agent 部署
-- AI Agent 工具调用
-- Vercel AI SDK Agent
-- OpenAI Agents SDK
-
-### 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查
-
-- File: content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx
-- Lane: Large model deployment, LLM serving, and GPU infrastructure
-- Primary keyword: 大模型部署
-
-howTo:
-
-- 大模型部署怎么做
-- 大模型部署教程
-- 大模型部署新手教程
-- 大模型部署落地步骤
-
-deployment:
-
-- 大模型部署部署
-- 大模型部署工作流
-- 大模型部署生产环境
-- 大模型部署
-- LLM serving
-- GPU 部署
-- 大模型部署 GPU sizing
-- 大模型部署 serving API
-- 大模型部署 quantization
-- 大模型部署 autoscaling
-- 大模型部署 cost control
-
-template:
-
-- 大模型部署模板
-- 大模型部署清单
-- 大模型部署SOP
-- 大模型部署方案
-
-comparison:
-
-- 大模型部署对比
-- 大模型部署怎么选
-- vLLM 和 TGI 区别
-- RunPod 和 Modal 部署对比
-
-risk:
-
-- 大模型部署避坑
-- 大模型部署风险
-- 大模型部署安全
-- 大模型部署人工审核
-
-costOps:
-
-- 大模型部署成本
-- 大模型部署报价
-- 大模型部署维护
-- 大模型部署上线检查
-
-intentSeeds:
-
-- 大模型部署教程
-- LLM deployment
-- vLLM 部署
-- Hugging Face TGI 部署
-
-## Wave 4: RAG, knowledge base, and Agent memory + Dify, n8n, no-code AI automation, and workflow deployment + Model API integration, rate limits, and multi-model fallback
-
-- Items: 3
 - Query variants: 100
 
 | Ready | Queries | Lane | Primary keyword | Gaps | Title | File |
 | --- | --- | --- | --- | --- | --- | --- |
-| true | 35 | RAG, knowledge base, and Agent memory | Open WebUI Functions Pipelines | none | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
-| true | 35 | Dify, n8n, no-code AI automation, and workflow deployment | Dify 工作流错误处理 | none | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
-| true | 30 | Model API integration, rate limits, and multi-model fallback | AI API Key 安全管理 | none | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| true | 35 | RAG, knowledge base, and Agent memory | RAG 向量数据库怎么选 | none | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| true | 30 | Model API integration, rate limits, and multi-model fallback | Vercel AI Gateway 多模型 | none | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| true | 35 | RAG, knowledge base, and Agent memory | Supabase pgvector | none | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
 
-### Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流
+### RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界
 
-- File: content/blog/open-webui-functions-pipelines-deployment-guide.mdx
+- File: content/blog/vector-database-selection-for-rag-guide.mdx
 - Lane: RAG, knowledge base, and Agent memory
-- Primary keyword: Open WebUI Functions Pipelines
+- Primary keyword: RAG 向量数据库怎么选
 
 howTo:
 
-- Open WebUI Functions Pipelines怎么做
-- Open WebUI Functions Pipelines教程
-- Open WebUI Functions Pipelines新手教程
-- Open WebUI Functions Pipelines落地步骤
+- RAG 向量数据库怎么选怎么做
+- RAG 向量数据库怎么选教程
+- RAG 向量数据库怎么选新手教程
+- RAG 向量数据库怎么选落地步骤
 
 deployment:
 
-- Open WebUI Functions Pipelines部署
-- Open WebUI Functions Pipelines工作流
-- Open WebUI Functions Pipelines生产环境
+- RAG 向量数据库怎么选部署
+- RAG 向量数据库怎么选工作流
+- RAG 向量数据库怎么选生产环境
 - RAG 知识库搭建
 - Agent 记忆设计
 - 向量数据库检索
-- Open WebUI Functions Pipelines document cleanup
-- Open WebUI Functions Pipelines chunking
-- Open WebUI Functions Pipelines embedding
-- Open WebUI Functions Pipelines source citation
-- Open WebUI Functions Pipelines memory policy
+- RAG 向量数据库怎么选 document cleanup
+- RAG 向量数据库怎么选 chunking
+- RAG 向量数据库怎么选 embedding
+- RAG 向量数据库怎么选 source citation
+- RAG 向量数据库怎么选 memory policy
 
 template:
 
-- Open WebUI Functions Pipelines模板
-- Open WebUI Functions Pipelines清单
-- Open WebUI Functions PipelinesSOP
-- Open WebUI Functions Pipelines方案
+- RAG 向量数据库怎么选模板
+- RAG 向量数据库怎么选清单
+- RAG 向量数据库怎么选SOP
+- RAG 向量数据库怎么选方案
 
 comparison:
 
-- Open WebUI Functions Pipelines对比
-- Open WebUI Functions Pipelines怎么选
+- RAG 向量数据库怎么选对比
+- RAG 向量数据库怎么选怎么选
 - RAG 和微调区别
 - 知识库和长期记忆区别
 
 risk:
 
-- Open WebUI Functions Pipelines避坑
-- Open WebUI Functions Pipelines风险
-- Open WebUI Functions Pipelines安全
-- Open WebUI Functions Pipelines人工审核
+- RAG 向量数据库怎么选避坑
+- RAG 向量数据库怎么选风险
+- RAG 向量数据库怎么选安全
+- RAG 向量数据库怎么选人工审核
 
 costOps:
 
-- Open WebUI Functions Pipelines成本
-- Open WebUI Functions Pipelines报价
-- Open WebUI Functions Pipelines维护
-- Open WebUI Functions Pipelines上线检查
+- RAG 向量数据库怎么选成本
+- RAG 向量数据库怎么选报价
+- RAG 向量数据库怎么选维护
+- RAG 向量数据库怎么选上线检查
 
 intentSeeds:
 
@@ -695,117 +103,55 @@ intentSeeds:
 - 向量数据库教程
 - 企业知识库 AI
 
-### Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底
+### Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级
 
-- File: content/blog/dify-workflow-error-handling-guide.mdx
-- Lane: Dify, n8n, no-code AI automation, and workflow deployment
-- Primary keyword: Dify 工作流错误处理
-
-howTo:
-
-- Dify 工作流错误处理怎么做
-- Dify 工作流错误处理教程
-- Dify 工作流错误处理新手教程
-- Dify 工作流错误处理落地步骤
-
-deployment:
-
-- Dify 工作流错误处理部署
-- Dify 工作流错误处理工作流
-- Dify 工作流错误处理生产环境
-- Dify 工作流
-- n8n AI Agent
-- Webhook 自动化
-- Dify 工作流错误处理 self-hosting
-- Dify 工作流错误处理 webhook
-- Dify 工作流错误处理 auth
-- Dify 工作流错误处理 retry
-- Dify 工作流错误处理 human fallback
-
-template:
-
-- Dify 工作流错误处理模板
-- Dify 工作流错误处理清单
-- Dify 工作流错误处理SOP
-- Dify 工作流错误处理方案
-
-comparison:
-
-- Dify 工作流错误处理对比
-- Dify 工作流错误处理怎么选
-- Dify 和 n8n 区别
-- Dify 和 Flowise 对比
-
-risk:
-
-- Dify 工作流错误处理避坑
-- Dify 工作流错误处理风险
-- Dify 工作流错误处理安全
-- Dify 工作流错误处理人工审核
-
-costOps:
-
-- Dify 工作流错误处理成本
-- Dify 工作流错误处理报价
-- Dify 工作流错误处理维护
-- Dify 工作流错误处理上线检查
-
-intentSeeds:
-
-- Dify 部署教程
-- n8n AI Agent
-- AI 自动化工作流
-- Webhook AI Agent
-
-### AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急
-
-- File: content/blog/ai-api-key-security-rotation-guide.mdx
+- File: content/blog/vercel-ai-gateway-multi-provider-guide.mdx
 - Lane: Model API integration, rate limits, and multi-model fallback
-- Primary keyword: AI API Key 安全管理
+- Primary keyword: Vercel AI Gateway 多模型
 
 howTo:
 
-- AI API Key 安全管理怎么做
-- AI API Key 安全管理教程
-- AI API Key 安全管理新手教程
-- AI API Key 安全管理落地步骤
+- Vercel AI Gateway 多模型怎么做
+- Vercel AI Gateway 多模型教程
+- Vercel AI Gateway 多模型新手教程
+- Vercel AI Gateway 多模型落地步骤
 
 deployment:
 
-- AI API Key 安全管理部署
-- AI API Key 安全管理工作流
-- AI API Key 安全管理生产环境
-- AI API Key 安全管理 server-side calls
-- AI API Key 安全管理 rate limit retry
-- AI API Key 安全管理 fallback routing
-- AI API Key 安全管理 key rotation
-- AI API Key 安全管理 cost control
+- Vercel AI Gateway 多模型部署
+- Vercel AI Gateway 多模型工作流
+- Vercel AI Gateway 多模型生产环境
+- Vercel AI Gateway 多模型 server-side calls
+- Vercel AI Gateway 多模型 rate limit retry
+- Vercel AI Gateway 多模型 fallback routing
+- Vercel AI Gateway 多模型 key rotation
+- Vercel AI Gateway 多模型 cost control
 
 template:
 
-- AI API Key 安全管理模板
-- AI API Key 安全管理清单
-- AI API Key 安全管理SOP
-- AI API Key 安全管理方案
+- Vercel AI Gateway 多模型模板
+- Vercel AI Gateway 多模型清单
+- Vercel AI Gateway 多模型SOP
+- Vercel AI Gateway 多模型方案
 
 comparison:
 
-- AI API Key 安全管理对比
-- AI API Key 安全管理怎么选
+- Vercel AI Gateway 多模型对比
+- Vercel AI Gateway 多模型怎么选
 
 risk:
 
-- AI API Key 安全管理避坑
-- AI API Key 安全管理风险
-- AI API Key 安全管理安全
-- AI API Key 安全管理人工审核
+- Vercel AI Gateway 多模型避坑
+- Vercel AI Gateway 多模型风险
+- Vercel AI Gateway 多模型安全
+- Vercel AI Gateway 多模型人工审核
 
 costOps:
 
-- AI API Key 安全管理成本
-- AI API Key 安全管理报价
-- AI API Key 安全管理维护
-- AI API Key 安全管理上线检查
+- Vercel AI Gateway 多模型成本
+- Vercel AI Gateway 多模型报价
+- Vercel AI Gateway 多模型维护
+- Vercel AI Gateway 多模型上线检查
 
 intentSeeds:
 
@@ -813,3 +159,631 @@ intentSeeds:
 - Claude API 限流
 - Gemini API 限流
 - 多模型 Router 降级
+
+### Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索
+
+- File: content/blog/supabase-pgvector-rag-guide.mdx
+- Lane: RAG, knowledge base, and Agent memory
+- Primary keyword: Supabase pgvector
+
+howTo:
+
+- Supabase pgvector怎么做
+- Supabase pgvector教程
+- Supabase pgvector新手教程
+- Supabase pgvector落地步骤
+
+deployment:
+
+- Supabase pgvector部署
+- Supabase pgvector工作流
+- Supabase pgvector生产环境
+- RAG 知识库搭建
+- Agent 记忆设计
+- 向量数据库检索
+- Supabase pgvector document cleanup
+- Supabase pgvector chunking
+- Supabase pgvector embedding
+- Supabase pgvector source citation
+- Supabase pgvector memory policy
+
+template:
+
+- Supabase pgvector模板
+- Supabase pgvector清单
+- Supabase pgvectorSOP
+- Supabase pgvector方案
+
+comparison:
+
+- Supabase pgvector对比
+- Supabase pgvector怎么选
+- RAG 和微调区别
+- 知识库和长期记忆区别
+
+risk:
+
+- Supabase pgvector避坑
+- Supabase pgvector风险
+- Supabase pgvector安全
+- Supabase pgvector人工审核
+
+costOps:
+
+- Supabase pgvector成本
+- Supabase pgvector报价
+- Supabase pgvector维护
+- Supabase pgvector上线检查
+
+intentSeeds:
+
+- RAG 知识库搭建
+- AI Agent 记忆
+- 向量数据库教程
+- 企业知识库 AI
+
+## Wave 2: Large model deployment, LLM serving, and GPU infrastructure + AI automation service pricing, scope, and delivery checklist + AI Agent deployment, tool calling, and production workflow
+
+- Items: 3
+- Query variants: 100
+
+| Ready | Queries | Lane | Primary keyword | Gaps | Title | File |
+| --- | --- | --- | --- | --- | --- | --- |
+| true | 35 | Large model deployment, LLM serving, and GPU infrastructure | TensorRT-LLM 入门 | none | TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收 | content/blog/tensorrt-llm-beginner-guide.mdx |
+| true | 30 | AI automation service pricing, scope, and delivery checklist | vLLM 部署 | none | vLLM 部署适合什么场景：新手先看推理服务边界 | content/blog/vllm-deployment-beginner-guide.mdx |
+| true | 35 | AI Agent deployment, tool calling, and production workflow | Vercel AI SDK 聊天机器人部署 | none | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
+
+### TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收
+
+- File: content/blog/tensorrt-llm-beginner-guide.mdx
+- Lane: Large model deployment, LLM serving, and GPU infrastructure
+- Primary keyword: TensorRT-LLM 入门
+
+howTo:
+
+- TensorRT-LLM 入门怎么做
+- TensorRT-LLM 入门教程
+- TensorRT-LLM 入门新手教程
+- TensorRT-LLM 入门落地步骤
+
+deployment:
+
+- TensorRT-LLM 入门部署
+- TensorRT-LLM 入门工作流
+- TensorRT-LLM 入门生产环境
+- 大模型部署
+- LLM serving
+- GPU 部署
+- TensorRT-LLM 入门 GPU sizing
+- TensorRT-LLM 入门 serving API
+- TensorRT-LLM 入门 quantization
+- TensorRT-LLM 入门 autoscaling
+- TensorRT-LLM 入门 cost control
+
+template:
+
+- TensorRT-LLM 入门模板
+- TensorRT-LLM 入门清单
+- TensorRT-LLM 入门SOP
+- TensorRT-LLM 入门方案
+
+comparison:
+
+- TensorRT-LLM 入门对比
+- TensorRT-LLM 入门怎么选
+- vLLM 和 TGI 区别
+- RunPod 和 Modal 部署对比
+
+risk:
+
+- TensorRT-LLM 入门避坑
+- TensorRT-LLM 入门风险
+- TensorRT-LLM 入门安全
+- TensorRT-LLM 入门人工审核
+
+costOps:
+
+- TensorRT-LLM 入门成本
+- TensorRT-LLM 入门报价
+- TensorRT-LLM 入门维护
+- TensorRT-LLM 入门上线检查
+
+intentSeeds:
+
+- 大模型部署教程
+- LLM deployment
+- vLLM 部署
+- Hugging Face TGI 部署
+
+### vLLM 部署适合什么场景：新手先看推理服务边界
+
+- File: content/blog/vllm-deployment-beginner-guide.mdx
+- Lane: AI automation service pricing, scope, and delivery checklist
+- Primary keyword: vLLM 部署
+
+howTo:
+
+- vLLM 部署怎么做
+- vLLM 部署教程
+- vLLM 部署新手教程
+- vLLM 部署落地步骤
+
+deployment:
+
+- vLLM 部署部署
+- vLLM 部署工作流
+- vLLM 部署生产环境
+- vLLM 部署 scope
+- vLLM 部署 pricing
+- vLLM 部署 acceptance
+- vLLM 部署 maintenance
+- vLLM 部署 risk language
+
+template:
+
+- vLLM 部署模板
+- vLLM 部署清单
+- vLLM 部署SOP
+- vLLM 部署方案
+
+comparison:
+
+- vLLM 部署对比
+- vLLM 部署怎么选
+
+risk:
+
+- vLLM 部署避坑
+- vLLM 部署风险
+- vLLM 部署安全
+- vLLM 部署人工审核
+
+costOps:
+
+- vLLM 部署成本
+- vLLM 部署报价
+- vLLM 部署维护
+- vLLM 部署上线检查
+
+intentSeeds:
+
+- AI 自动化项目报价
+- AI Agent 项目
+- RAG 项目报价
+- Dify n8n 报价
+
+### Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查
+
+- File: content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx
+- Lane: AI Agent deployment, tool calling, and production workflow
+- Primary keyword: Vercel AI SDK 聊天机器人部署
+
+howTo:
+
+- Vercel AI SDK 聊天机器人部署怎么做
+- Vercel AI SDK 聊天机器人部署教程
+- Vercel AI SDK 聊天机器人部署新手教程
+- Vercel AI SDK 聊天机器人部署落地步骤
+
+deployment:
+
+- Vercel AI SDK 聊天机器人部署部署
+- Vercel AI SDK 聊天机器人部署工作流
+- Vercel AI SDK 聊天机器人部署生产环境
+- AI Agent 部署
+- Agent 工具调用
+- Agent 上线检查
+- Vercel AI SDK 聊天机器人部署 tool calling
+- Vercel AI SDK 聊天机器人部署 multi-step execution
+- Vercel AI SDK 聊天机器人部署 human approval
+- Vercel AI SDK 聊天机器人部署 observability
+- Vercel AI SDK 聊天机器人部署 permissions
+
+template:
+
+- Vercel AI SDK 聊天机器人部署模板
+- Vercel AI SDK 聊天机器人部署清单
+- Vercel AI SDK 聊天机器人部署SOP
+- Vercel AI SDK 聊天机器人部署方案
+
+comparison:
+
+- Vercel AI SDK 聊天机器人部署对比
+- Vercel AI SDK 聊天机器人部署怎么选
+- AI Agent 和 Chatbot 区别
+- Vercel AI SDK Agent vs OpenAI Agents SDK
+
+risk:
+
+- Vercel AI SDK 聊天机器人部署避坑
+- Vercel AI SDK 聊天机器人部署风险
+- Vercel AI SDK 聊天机器人部署安全
+- Vercel AI SDK 聊天机器人部署人工审核
+
+costOps:
+
+- Vercel AI SDK 聊天机器人部署成本
+- Vercel AI SDK 聊天机器人部署报价
+- Vercel AI SDK 聊天机器人部署维护
+- Vercel AI SDK 聊天机器人部署上线检查
+
+intentSeeds:
+
+- AI Agent 部署
+- AI Agent 工具调用
+- Vercel AI SDK Agent
+- OpenAI Agents SDK
+
+## Wave 3: AI app deployment errors and beginner troubleshooting + LLM observability, evaluation, and production quality + RAG, knowledge base, and Agent memory
+
+- Items: 3
+- Query variants: 95
+
+| Ready | Queries | Lane | Primary keyword | Gaps | Title | File |
+| --- | --- | --- | --- | --- | --- | --- |
+| true | 30 | AI app deployment errors and beginner troubleshooting | Vercel 部署后 404 检查清单 | none | Vercel 部署后 404 检查清单：逐页验收更稳 | content/blog/vercel-404-after-deploy-checklist.mdx |
+| true | 30 | LLM observability, evaluation, and production quality | Vercel build failed 排查清单 | none | Vercel build failed 排查清单：从日志到重新部署 | content/blog/vercel-build-failed-causes-checklist.mdx |
+| true | 35 | RAG, knowledge base, and Agent memory | Together AI API 接入 | none | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
+
+### Vercel 部署后 404 检查清单：逐页验收更稳
+
+- File: content/blog/vercel-404-after-deploy-checklist.mdx
+- Lane: AI app deployment errors and beginner troubleshooting
+- Primary keyword: Vercel 部署后 404 检查清单
+
+howTo:
+
+- Vercel 部署后 404 检查清单怎么做
+- Vercel 部署后 404 检查清单教程
+- Vercel 部署后 404 检查清单新手教程
+- Vercel 部署后 404 检查清单落地步骤
+
+deployment:
+
+- Vercel 部署后 404 检查清单部署
+- Vercel 部署后 404 检查清单工作流
+- Vercel 部署后 404 检查清单生产环境
+- Vercel 部署后 404 检查清单 error log
+- Vercel 部署后 404 检查清单 reproduction
+- Vercel 部署后 404 检查清单 fix sequence
+- Vercel 部署后 404 检查清单 verification
+- Vercel 部署后 404 检查清单 handoff boundary
+
+template:
+
+- Vercel 部署后 404 检查清单模板
+- Vercel 部署后 404 检查清单清单
+- Vercel 部署后 404 检查清单SOP
+- Vercel 部署后 404 检查清单方案
+
+comparison:
+
+- Vercel 部署后 404 检查清单对比
+- Vercel 部署后 404 检查清单怎么选
+
+risk:
+
+- Vercel 部署后 404 检查清单避坑
+- Vercel 部署后 404 检查清单风险
+- Vercel 部署后 404 检查清单安全
+- Vercel 部署后 404 检查清单人工审核
+
+costOps:
+
+- Vercel 部署后 404 检查清单成本
+- Vercel 部署后 404 检查清单报价
+- Vercel 部署后 404 检查清单维护
+- Vercel 部署后 404 检查清单上线检查
+
+intentSeeds:
+
+- Vercel build failed
+- API Key 无效
+- 环境变量缺失
+- npm command not found
+
+### Vercel build failed 排查清单：从日志到重新部署
+
+- File: content/blog/vercel-build-failed-causes-checklist.mdx
+- Lane: LLM observability, evaluation, and production quality
+- Primary keyword: Vercel build failed 排查清单
+
+howTo:
+
+- Vercel build failed 排查清单怎么做
+- Vercel build failed 排查清单教程
+- Vercel build failed 排查清单新手教程
+- Vercel build failed 排查清单落地步骤
+
+deployment:
+
+- Vercel build failed 排查清单部署
+- Vercel build failed 排查清单工作流
+- Vercel build failed 排查清单生产环境
+- Vercel build failed 排查清单 tracing
+- Vercel build failed 排查清单 eval sets
+- Vercel build failed 排查清单 cost tracking
+- Vercel build failed 排查清单 failure review
+- Vercel build failed 排查清单 quality scorecards
+
+template:
+
+- Vercel build failed 排查清单模板
+- Vercel build failed 排查清单清单
+- Vercel build failed 排查清单SOP
+- Vercel build failed 排查清单方案
+
+comparison:
+
+- Vercel build failed 排查清单对比
+- Vercel build failed 排查清单怎么选
+
+risk:
+
+- Vercel build failed 排查清单避坑
+- Vercel build failed 排查清单风险
+- Vercel build failed 排查清单安全
+- Vercel build failed 排查清单人工审核
+
+costOps:
+
+- Vercel build failed 排查清单成本
+- Vercel build failed 排查清单报价
+- Vercel build failed 排查清单维护
+- Vercel build failed 排查清单上线检查
+
+intentSeeds:
+
+- LLM observability
+- RAG 评测
+- Agent 可观测性
+- promptfoo LLM 评测
+
+### Together AI API 怎么接入：开源模型接口、embedding 和部署边界
+
+- File: content/blog/together-ai-api-beginner-guide.mdx
+- Lane: RAG, knowledge base, and Agent memory
+- Primary keyword: Together AI API 接入
+
+howTo:
+
+- Together AI API 接入怎么做
+- Together AI API 接入教程
+- Together AI API 接入新手教程
+- Together AI API 接入落地步骤
+
+deployment:
+
+- Together AI API 接入部署
+- Together AI API 接入工作流
+- Together AI API 接入生产环境
+- RAG 知识库搭建
+- Agent 记忆设计
+- 向量数据库检索
+- Together AI API 接入 document cleanup
+- Together AI API 接入 chunking
+- Together AI API 接入 embedding
+- Together AI API 接入 source citation
+- Together AI API 接入 memory policy
+
+template:
+
+- Together AI API 接入模板
+- Together AI API 接入清单
+- Together AI API 接入SOP
+- Together AI API 接入方案
+
+comparison:
+
+- Together AI API 接入对比
+- Together AI API 接入怎么选
+- RAG 和微调区别
+- 知识库和长期记忆区别
+
+risk:
+
+- Together AI API 接入避坑
+- Together AI API 接入风险
+- Together AI API 接入安全
+- Together AI API 接入人工审核
+
+costOps:
+
+- Together AI API 接入成本
+- Together AI API 接入报价
+- Together AI API 接入维护
+- Together AI API 接入上线检查
+
+intentSeeds:
+
+- RAG 知识库搭建
+- AI Agent 记忆
+- 向量数据库教程
+- 企业知识库 AI
+
+## Wave 4: RAG, knowledge base, and Agent memory + AI automation service pricing, scope, and delivery checklist + AI app deployment errors and beginner troubleshooting
+
+- Items: 3
+- Query variants: 95
+
+| Ready | Queries | Lane | Primary keyword | Gaps | Title | File |
+| --- | --- | --- | --- | --- | --- | --- |
+| true | 35 | RAG, knowledge base, and Agent memory | 向量数据库 | none | 向量数据库怎么选：新手先理解 embedding 和检索 | content/blog/vector-database-beginner-guide.mdx |
+| true | 30 | AI automation service pricing, scope, and delivery checklist | Vercel build failed 项目 | none | Vercel build failed 排查能不能项目：先看这 7 个边界 | content/blog/vercel-build-failed-causes-freelance-scope.mdx |
+| true | 30 | AI app deployment errors and beginner troubleshooting | Vercel 部署成功但 404 | none | Vercel 部署成功但页面 404：新手排查顺序 | content/blog/vercel-404-after-deploy.mdx |
+
+### 向量数据库怎么选：新手先理解 embedding 和检索
+
+- File: content/blog/vector-database-beginner-guide.mdx
+- Lane: RAG, knowledge base, and Agent memory
+- Primary keyword: 向量数据库
+
+howTo:
+
+- 向量数据库怎么做
+- 向量数据库教程
+- 向量数据库新手教程
+- 向量数据库落地步骤
+
+deployment:
+
+- 向量数据库部署
+- 向量数据库工作流
+- 向量数据库生产环境
+- RAG 知识库搭建
+- Agent 记忆设计
+- 向量数据库检索
+- 向量数据库 document cleanup
+- 向量数据库 chunking
+- 向量数据库 embedding
+- 向量数据库 source citation
+- 向量数据库 memory policy
+
+template:
+
+- 向量数据库模板
+- 向量数据库清单
+- 向量数据库SOP
+- 向量数据库方案
+
+comparison:
+
+- 向量数据库对比
+- 向量数据库怎么选
+- RAG 和微调区别
+- 知识库和长期记忆区别
+
+risk:
+
+- 向量数据库避坑
+- 向量数据库风险
+- 向量数据库安全
+- 向量数据库人工审核
+
+costOps:
+
+- 向量数据库成本
+- 向量数据库报价
+- 向量数据库维护
+- 向量数据库上线检查
+
+intentSeeds:
+
+- RAG 知识库搭建
+- AI Agent 记忆
+- 向量数据库教程
+- 企业知识库 AI
+
+### Vercel build failed 排查能不能项目：先看这 7 个边界
+
+- File: content/blog/vercel-build-failed-causes-freelance-scope.mdx
+- Lane: AI automation service pricing, scope, and delivery checklist
+- Primary keyword: Vercel build failed 项目
+
+howTo:
+
+- Vercel build failed 项目怎么做
+- Vercel build failed 项目教程
+- Vercel build failed 项目新手教程
+- Vercel build failed 项目落地步骤
+
+deployment:
+
+- Vercel build failed 项目部署
+- Vercel build failed 项目工作流
+- Vercel build failed 项目生产环境
+- Vercel build failed 项目 scope
+- Vercel build failed 项目 pricing
+- Vercel build failed 项目 acceptance
+- Vercel build failed 项目 maintenance
+- Vercel build failed 项目 risk language
+
+template:
+
+- Vercel build failed 项目模板
+- Vercel build failed 项目清单
+- Vercel build failed 项目SOP
+- Vercel build failed 项目方案
+
+comparison:
+
+- Vercel build failed 项目对比
+- Vercel build failed 项目怎么选
+
+risk:
+
+- Vercel build failed 项目避坑
+- Vercel build failed 项目风险
+- Vercel build failed 项目安全
+- Vercel build failed 项目人工审核
+
+costOps:
+
+- Vercel build failed 项目成本
+- Vercel build failed 项目报价
+- Vercel build failed 项目维护
+- Vercel build failed 项目上线检查
+
+intentSeeds:
+
+- AI 自动化项目报价
+- AI Agent 项目
+- RAG 项目报价
+- Dify n8n 报价
+
+### Vercel 部署成功但页面 404：新手排查顺序
+
+- File: content/blog/vercel-404-after-deploy.mdx
+- Lane: AI app deployment errors and beginner troubleshooting
+- Primary keyword: Vercel 部署成功但 404
+
+howTo:
+
+- Vercel 部署成功但 404怎么做
+- Vercel 部署成功但 404教程
+- Vercel 部署成功但 404新手教程
+- Vercel 部署成功但 404落地步骤
+
+deployment:
+
+- Vercel 部署成功但 404部署
+- Vercel 部署成功但 404工作流
+- Vercel 部署成功但 404生产环境
+- Vercel 部署成功但 404 error log
+- Vercel 部署成功但 404 reproduction
+- Vercel 部署成功但 404 fix sequence
+- Vercel 部署成功但 404 verification
+- Vercel 部署成功但 404 handoff boundary
+
+template:
+
+- Vercel 部署成功但 404模板
+- Vercel 部署成功但 404清单
+- Vercel 部署成功但 404SOP
+- Vercel 部署成功但 404方案
+
+comparison:
+
+- Vercel 部署成功但 404对比
+- Vercel 部署成功但 404怎么选
+
+risk:
+
+- Vercel 部署成功但 404避坑
+- Vercel 部署成功但 404风险
+- Vercel 部署成功但 404安全
+- Vercel 部署成功但 404人工审核
+
+costOps:
+
+- Vercel 部署成功但 404成本
+- Vercel 部署成功但 404报价
+- Vercel 部署成功但 404维护
+- Vercel 部署成功但 404上线检查
+
+intentSeeds:
+
+- Vercel build failed
+- API Key 无效
+- 环境变量缺失
+- npm command not found

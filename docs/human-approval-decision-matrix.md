@@ -1,6 +1,6 @@
 # Human Approval Decision Matrix
 
-Generated at: 2026-06-16T07:39:11.748Z
+Generated at: 2026-06-16T18:18:38.156Z
 
 This report is read-only. It gives reviewers one decision row per approval candidate and stops before mark:review or publish.
 
@@ -25,11 +25,11 @@ This report is read-only. It gives reviewers one decision row per approval candi
 - approvalItems: 3
 - approveAfterReviewItems: 0
 - decisionRows: 3
-- deferItems: 0
+- deferItems: 2
 - humanDecisionBranches: 9
-- repairBeforeReviewItems: 3
+- repairBeforeReviewItems: 1
 - rowsWithCommandBoundary: 3
-- rowsWithDeferCriteria: 0
+- rowsWithDeferCriteria: 2
 - rowsWithRepairActions: 3
 - sourceReadyRows: 3
 - trafficDataAvailable: false
@@ -40,8 +40,8 @@ This report is read-only. It gives reviewers one decision row per approval candi
 - approvalPacketItems: 3
 - approvalPacketUnsafeItems: 0
 - internalLinkUnsafeItems: 0
-- playbookUnsafeItems: 0
-- remediationUnsafeItems: 0
+- playbookUnsafeItems: 2
+- remediationUnsafeItems: 2
 - searchIntentUnsafeItems: 0
 - sourceVerificationUnsafeItems: 0
 
@@ -49,62 +49,63 @@ This report is read-only. It gives reviewers one decision row per approval candi
 
 | Decision | Score | Source | Search | Link | Fix ready | Risk checks | Primary query | Title | File |
 | --- | ---: | --- | --- | --- | --- | ---: | --- | --- | --- |
-| repair-before-review | 1723 | true | 3 weakness(es) | true | true | 10 | AI Agent deployment tutorial | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| repair-before-review | 1723 | true | ready | true | true | 11 | ChatGPT prompts for business | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| repair-before-review | 1598 | true | 4 weakness(es) | true | true | 12 | RAG 知识库搭建教程 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| repair-before-review | 1543 | true | 2 weakness(es) | true | true | 11 | 大模型部署教程 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| defer | 447 | true | 4 weakness(es) | true | false | 6 | RAG 知识库搭建教程 | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
+| defer | 417 | true | 2 weakness(es) | true | false | 5 | Vercel build failed | Vercel 部署成功但页面 404：新手排查顺序 | content/blog/vercel-404-after-deploy.mdx |
 
 ## Repair Before Approval
 
-### AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查
+### Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级
 
-- File: content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
+- File: content/blog/vercel-ai-gateway-multi-provider-guide.mdx
 - Current state: draft/noindex=true/humanReview=true
-- Mark review after approval: npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human
+- Mark review after approval: npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human
 - Publish confirm: not-included
 - Defer if: none
-- Remediation reasons: approval candidate has no current link to a published article; 3 search-intent weakness(es) need human copy review; 10 source URL remediation action(s) need human confirmation; copydesk warning remediation exists
+- Remediation reasons: 2 search-intent weakness(es) need human copy review; 11 source URL remediation action(s) need human confirmation; copydesk warning remediation exists
 
 - Resolve or explicitly accept search weakness: no exact search query appears in title.
 - Resolve or explicitly accept search weakness: no exact search query appears in description.
-- Resolve or explicitly accept search weakness: no exact search query appears in headings or body.
-- Add at least one contextual link to a currently published article before approval.
-- Suggested public link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) - keyword overlap: ai, vercel, 部署, 工具, 上线, 检查.
+- Suggested public link: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide) - same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做.
+- Suggested public link: Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 (/blog/claude-api-rate-limit-debug-guide) - same category: AI 部署; keyword overlap: ai, claude, 部署, 降级, api, 怎么.
 - Resolve search weakness: no exact search query appears in title.
 - Resolve search weakness: no exact search query appears in description.
 - Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.
 - Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.
 
-### 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用
+### Together AI API 怎么接入：开源模型接口、embedding 和部署边界
 
-- File: content/blog/industry-ai-prompts-template-library-2026.mdx
+- File: content/blog/together-ai-api-beginner-guide.mdx
 - Current state: draft/noindex=true/humanReview=true
-- Mark review after approval: npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human
+- Mark review after approval: npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human
 - Publish confirm: not-included
-- Defer if: none
-- Remediation reasons: approval candidate has no current link to a published article; 14 source URL remediation action(s) need human confirmation; copydesk warning remediation exists
-
-- Add at least one contextual link to a currently published article before approval.
-- Suggested public link: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner) - keyword overlap: proposal, 客户沟通, 怎么, 客户, 需求, 户沟.
-- Make the opening answer this query naturally: ChatGPT prompts for business.
-- Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.
-- Resolve failed source URL before approval: https://ai-prompts-pro.com/blog/ai-prompt-templates-business.
-- Source URL action: Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.
-
-### 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
-
-- File: content/blog/ai-model-selection-customer-service-guide.mdx
-- Current state: draft/noindex=true/humanReview=true
-- Mark review after approval: npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human
-- Publish confirm: not-included
-- Defer if: none
-- Remediation reasons: approval candidate has no current link to a published article; 4 search-intent weakness(es) need human copy review; 11 source URL remediation action(s) need human confirmation; copydesk warning remediation exists
+- Defer if: manual remediation pack is not ready
+- Remediation reasons: 4 search-intent weakness(es) need human copy review; 8 source URL remediation action(s) need human confirmation
 
 - Resolve or explicitly accept search weakness: no exact search query appears in title.
 - Resolve or explicitly accept search weakness: no exact search query appears in description.
 - Resolve or explicitly accept search weakness: no exact search query appears in headings or body.
 - Resolve or explicitly accept search weakness: few query tokens appear in searchable text.
+- Suggested public link: OpenRouter API 怎么接入：统一模型入口不是只换 Base URL (/blog/openrouter-api-beginner-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai.
+- Suggested public link: Groq API 怎么接入：高速推理适合什么 AI 应用 (/blog/groq-api-fast-llm-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai.
+- Resolve search weakness: no exact search query appears in title.
+- Resolve search weakness: no exact search query appears in description.
+- Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.
+- Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.
+
+### Vercel 部署成功但页面 404：新手排查顺序
+
+- File: content/blog/vercel-404-after-deploy.mdx
+- Current state: draft/noindex=true/humanReview=true
+- Mark review after approval: npm run mark:review -- --file=content/blog/vercel-404-after-deploy.mdx --confirm-human
+- Publish confirm: not-included
+- Defer if: manual remediation pack is not ready
+- Remediation reasons: approval candidate has no current link to a published article; 2 search-intent weakness(es) need human copy review; 7 source URL remediation action(s) need human confirmation
+
+- Resolve or explicitly accept search weakness: no exact search query appears in title.
+- Resolve or explicitly accept search weakness: no exact search query appears in description.
 - Add at least one contextual link to a currently published article before approval.
-- Suggested public link: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) - keyword overlap: ai, 一个, 怎么, 么做, 第一.
+- Suggested public link: Next.js hydration error 怎么排查：使用前怎么判断是否适合 (/blog/nextjs-hydration-error-debug-freelance-scope) - same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, 排查, ai, 工具实践, next, js.
 - Resolve search weakness: no exact search query appears in title.
 - Resolve search weakness: no exact search query appears in description.
 - Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.

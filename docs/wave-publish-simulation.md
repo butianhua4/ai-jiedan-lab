@@ -1,6 +1,6 @@
 # Wave Publish Simulation
 
-Generated at: 2026-06-16T06:47:11.322Z
+Generated at: 2026-06-16T18:18:29.338Z
 
 This simulation is read-only. It lists the post-approval path but does not change article status, noindex, or publishing state.
 
@@ -15,19 +15,19 @@ This simulation is read-only. It lists the post-approval path but does not chang
 
 - Wave: 1
 - Items: 3
-- Already published: 3
-- Ready for human approval: 0
+- Already published: 0
+- Ready for human approval: 3
 - Unsafe items: 0
 - Currently publishable: 0
 - Public published before wave: 500
-- Projected publishable after human approval: 0
-- Projected public published after wave: 500
+- Projected publishable after human approval: 3
+- Projected public published after wave: 503
 
 ## Publishing Boundary
 
 - Current public published: 500
 - Current publishable now: 0
-- Projected public published after wave: 500
+- Projected public published after wave: 503
 - Current status counts: {"published":500,"archived":21,"draft":148}
 
 ## Execution Plan
@@ -42,45 +42,20 @@ This simulation is read-only. It lists the post-approval path but does not chang
 
 | Already published | Ready | Status | Noindex | Human review flag | Score | Sources | Risk checks | Blockers | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | false | published | false | true | 100 | 8 | 8 | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| true | false | published | false | true | 100 | 6 | 6 | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | false | published | false | true | 100 | 4 | 6 | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| false | true | draft | true | true | 100 | 8 | 6 | none | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| false | true | draft | true | true | 100 | 7 | 6 | none | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| false | true | draft | true | true | 100 | 7 | 5 | none | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
 
-## 1. 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
+## 1. RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界
 
-- File: content/blog/ai-model-selection-customer-service-guide.mdx
-- Already published: true
-- Ready for human approval: false
-- Current status: published
-- Noindex: false
+- File: content/blog/vector-database-selection-for-rag-guide.mdx
+- Already published: false
+- Ready for human approval: true
+- Current status: draft
+- Noindex: true
 - Human review required: true
 - Quality score: 100
 - Official source targets: 8
-- Risk review checks: 8
-
-Blockers:
-
-- none
-
-Commands to run only after explicit human approval:
-
-```bash
-npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx
-npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human
-npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx
-npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm
-```
-
-## 2. AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查
-
-- File: content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
-- Already published: true
-- Ready for human approval: false
-- Current status: published
-- Noindex: false
-- Human review required: true
-- Quality score: 100
-- Official source targets: 6
 - Risk review checks: 6
 
 Blockers:
@@ -90,22 +65,22 @@ Blockers:
 Commands to run only after explicit human approval:
 
 ```bash
-npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
-npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human
-npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
-npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm
+npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx
+npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm-human
+npm run publish:articles -- --file=content/blog/vector-database-selection-for-rag-guide.mdx
+npm run publish:articles -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm
 ```
 
-## 3. 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用
+## 2. Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级
 
-- File: content/blog/industry-ai-prompts-template-library-2026.mdx
-- Already published: true
-- Ready for human approval: false
-- Current status: published
-- Noindex: false
+- File: content/blog/vercel-ai-gateway-multi-provider-guide.mdx
+- Already published: false
+- Ready for human approval: true
+- Current status: draft
+- Noindex: true
 - Human review required: true
 - Quality score: 100
-- Official source targets: 4
+- Official source targets: 7
 - Risk review checks: 6
 
 Blockers:
@@ -115,8 +90,33 @@ Blockers:
 Commands to run only after explicit human approval:
 
 ```bash
-npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx
-npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human
-npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx
-npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm
+npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx
+npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human
+npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx
+npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm
+```
+
+## 3. Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索
+
+- File: content/blog/supabase-pgvector-rag-guide.mdx
+- Already published: false
+- Ready for human approval: true
+- Current status: draft
+- Noindex: true
+- Human review required: true
+- Quality score: 100
+- Official source targets: 7
+- Risk review checks: 5
+
+Blockers:
+
+- none
+
+Commands to run only after explicit human approval:
+
+```bash
+npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx
+npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx --confirm-human
+npm run publish:articles -- --file=content/blog/supabase-pgvector-rag-guide.mdx
+npm run publish:articles -- --file=content/blog/supabase-pgvector-rag-guide.mdx --confirm
 ```

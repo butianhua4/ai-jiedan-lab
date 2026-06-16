@@ -1,6 +1,6 @@
 # Public Search Refresh Pack
 
-Generated at: 2026-06-16T05:24:15.872Z
+Generated at: 2026-06-16T18:18:32.722Z
 
 This report is read-only. It prioritizes public-page refresh work for search visibility without editing pages or claiming traffic.
 
@@ -15,9 +15,9 @@ This report is read-only. It prioritizes public-page refresh work for search vis
 
 ## Summary
 
-- actionItems: 3579
-- cannibalizationItems: 219
-- highPriorityItems: 273
+- actionItems: 3489
+- cannibalizationItems: 239
+- highPriorityItems: 247
 - items: 500
 - itemsReadyForHumanRefreshReview: 500
 - liveMissingFromSitemap: 0
@@ -38,30 +38,30 @@ This report is read-only. It prioritizes public-page refresh work for search vis
 
 | Ready | Score | Actions | SEO | Freshness | Conflicts | Desc | Category | Title | File |
 | --- | ---: | ---: | --- | --- | ---: | ---: | --- | --- | --- |
-| true | 190 | 11 | true | high | 2 | 74 | 工具流程 | Claude Code 检查 Next.js 页面哪些适合写进项目范围 | content/blog/claude-code-nextjs-page-check-freelance-scope.mdx |
-| true | 190 | 11 | true | high | 2 | 72 | 工具流程 | Claude Code 检查 Next.js 页面时的常见错误 | content/blog/claude-code-nextjs-page-check-mistakes.mdx |
-| true | 190 | 11 | true | high | 2 | 72 | 工具流程 | 用 Claude Code 检查 Next.js 页面小问题怎么做 | content/blog/claude-code-nextjs-page-check.mdx |
-| true | 175 | 10 | true | high | 1 | 49 | AI 自由职业路线 | AI 辅助交付和完全自动交付的检查清单 | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
-| true | 175 | 10 | true | high | 1 | 50 | AI 自由职业路线 | AI 辅助交付常见错误和解决步骤 | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx |
-| true | 175 | 10 | true | high | 1 | 47 | AI 自由职业路线 | AI 新手接项目前的项目适配检查清单 | content/blog/ai-beginner-project-fit-check-checklist.mdx |
-| true | 175 | 10 | true | high | 1 | 61 | AI 自由职业路线 | AI 新手判断接项目时的常见错误 | content/blog/ai-beginner-project-fit-check-mistakes.mdx |
-| true | 175 | 10 | true | high | 1 | 45 | AI 自由职业路线 | AI 新手如何判断自己能不能接项目 | content/blog/ai-beginner-project-fit-check.mdx |
-| true | 175 | 10 | true | high | 1 | 54 | AI 自由职业路线 | 新手 30 天 AI 工具实践执行检查清单 | content/blog/ai-freelance-30-day-execution-checklist.mdx |
-| true | 175 | 10 | true | high | 1 | 62 | AI 自由职业路线 | 新手 30 天 AI 工具实践计划常见执行错误 | content/blog/ai-freelance-30-day-execution-mistakes.mdx |
-| true | 175 | 10 | true | high | 1 | 48 | AI 自由职业路线 | AI 自动化项目合规风险检查清单 | content/blog/ai-freelance-automation-compliance-risk-checklist.mdx |
-| true | 175 | 10 | true | high | 1 | 57 | AI 自由职业路线 | AI 自动化项目常见合规错误和解决步骤 | content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx |
-| true | 175 | 10 | true | high | 1 | 57 | AI 自由职业路线 | AI 工具实践误区的常见错误和解决步骤 | content/blog/ai-freelance-common-misconceptions-mistakes.mdx |
-| true | 175 | 10 | true | high | 1 | 69 | AI 自由职业路线 | AI 项目失败复盘常见错误 | content/blog/ai-freelance-failure-review-mistakes.mdx |
-| true | 175 | 10 | true | high | 1 | 72 | AI 自由职业路线 | AI 工具新手 7 天准备常见错误 | content/blog/ai-freelance-first-7-days-mistakes.mdx |
+| true | 170 | 10 | true | none | 2 | 74 | 工具流程 | Claude Code 检查 Next.js 页面哪些适合写进项目范围 | content/blog/claude-code-nextjs-page-check-freelance-scope.mdx |
+| true | 170 | 10 | true | none | 2 | 72 | 工具流程 | Claude Code 检查 Next.js 页面时的常见错误 | content/blog/claude-code-nextjs-page-check-mistakes.mdx |
+| true | 170 | 10 | true | none | 2 | 72 | 工具流程 | 用 Claude Code 检查 Next.js 页面小问题怎么做 | content/blog/claude-code-nextjs-page-check.mdx |
+| true | 170 | 10 | true | none | 2 | 72 | 报错解决 | npm run dev 能跑但 build 失败常见错误和解决步骤 | content/blog/dev-works-build-fails-mistakes.mdx |
+| true | 170 | 10 | true | none | 2 | 76 | 报错解决 | failed to push some refs 使用前怎么判断是否适合 | content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx |
+| true | 170 | 10 | true | none | 2 | 77 | 报错解决 | failed to push some refs 常见错误和解决步骤 | content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
+| true | 170 | 10 | true | none | 2 | 79 | 报错解决 | Next.js hydration error 怎么排查：常见错误和解决步骤 | content/blog/nextjs-hydration-error-debug-mistakes.mdx |
+| true | 165 | 9 | true | high | 1 | 102 | 报错解决 | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx |
+| true | 160 | 9 | true | high | 0 | 72 | 报价指南 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
+| true | 160 | 9 | true | high | 0 | 82 | 收款工具 | Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
+| true | 160 | 9 | true | high | 0 | 80 | Upwork 新手 | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
+| true | 160 | 9 | true | high | 0 | 87 | 部署教程 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | content/blog/vercel-env-variable-missing-beginner-guide.mdx |
+| true | 155 | 9 | true | none | 1 | 66 | 收款工具 | 广告收入要等到什么时候再接 | content/blog/ads-income-when-to-start.mdx |
+| true | 155 | 9 | true | none | 1 | 69 | 收款工具 | 联盟链接收入和服务收入有什么区别：新手检查清单 | content/blog/affiliate-vs-service-income-checklist.mdx |
+| true | 155 | 9 | true | none | 1 | 52 | 收款工具 | 联盟链接收入和服务收入有什么区别 | content/blog/affiliate-vs-service-income.mdx |
 
 ## Item Actions
 
 ### Claude Code 检查 Next.js 页面哪些适合写进项目范围
 
 - File: content/blog/claude-code-nextjs-page-check-freelance-scope.mdx
-- Score: 190
+- Score: 170
 - SEO warning: true
-- Freshness risk: high
+- Freshness risk: none
 - Cannibalization conflicts: 2
 - Publish confirm: not-included
 
@@ -71,7 +71,6 @@ This report is read-only. It prioritizes public-page refresh work for search vis
 - SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code Next.js 页面检查项目范围.
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
 - Cannibalization check: review similar slug stem conflict "claude-code-nextjs-page-check" before expanding this page or approving related drafts.
 - Cannibalization check: review similar title stem conflict "claude code 检查 next js" before expanding this page or approving related drafts.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
@@ -80,9 +79,9 @@ This report is read-only. It prioritizes public-page refresh work for search vis
 ### Claude Code 检查 Next.js 页面时的常见错误
 
 - File: content/blog/claude-code-nextjs-page-check-mistakes.mdx
-- Score: 190
+- Score: 170
 - SEO warning: true
-- Freshness risk: high
+- Freshness risk: none
 - Cannibalization conflicts: 2
 - Publish confirm: not-included
 
@@ -92,7 +91,6 @@ This report is read-only. It prioritizes public-page refresh work for search vis
 - SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code Next.js 页面检查错误.
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
 - Cannibalization check: review similar slug stem conflict "claude-code-nextjs-page-check" before expanding this page or approving related drafts.
 - Cannibalization check: review similar title stem conflict "claude code 检查 next js" before expanding this page or approving related drafts.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
@@ -101,9 +99,9 @@ This report is read-only. It prioritizes public-page refresh work for search vis
 ### 用 Claude Code 检查 Next.js 页面小问题怎么做
 
 - File: content/blog/claude-code-nextjs-page-check.mdx
-- Score: 190
+- Score: 170
 - SEO warning: true
-- Freshness risk: high
+- Freshness risk: none
 - Cannibalization conflicts: 2
 - Publish confirm: not-included
 
@@ -113,219 +111,18 @@ This report is read-only. It prioritizes public-page refresh work for search vis
 - SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code Next.js 页面检查.
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
 - Cannibalization check: review similar slug stem conflict "claude-code-nextjs-page-check" before expanding this page or approving related drafts.
 - Cannibalization check: review similar title stem conflict "claude code 检查 next js" before expanding this page or approving related drafts.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 
-### AI 辅助交付和完全自动交付的检查清单
+### npm run dev 能跑但 build 失败常见错误和解决步骤
 
-- File: content/blog/ai-assisted-vs-automated-delivery-checklist.mdx
-- Score: 175
+- File: content/blog/dev-works-build-fails-mistakes.mdx
+- Score: 170
 - SEO warning: true
-- Freshness risk: high
-- Cannibalization conflicts: 1
-- Publish confirm: not-included
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- SEO warning: Confirm description length remains suitable for search snippets after editing.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "assisted-automated-delivery" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-
-### AI 辅助交付常见错误和解决步骤
-
-- File: content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx
-- Score: 175
-- SEO warning: true
-- Freshness risk: high
-- Cannibalization conflicts: 1
-- Publish confirm: not-included
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- SEO warning: Confirm description length remains suitable for search snippets after editing.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "assisted-automated-delivery" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-
-### AI 新手接项目前的项目适配检查清单
-
-- File: content/blog/ai-beginner-project-fit-check-checklist.mdx
-- Score: 175
-- SEO warning: true
-- Freshness risk: high
-- Cannibalization conflicts: 1
-- Publish confirm: not-included
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- SEO warning: Confirm description length remains suitable for search snippets after editing.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "beginner-project-fit-check" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-
-### AI 新手判断接项目时的常见错误
-
-- File: content/blog/ai-beginner-project-fit-check-mistakes.mdx
-- Score: 175
-- SEO warning: true
-- Freshness risk: high
-- Cannibalization conflicts: 1
-- Publish confirm: not-included
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: AI 新手判断接项目常见错误.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "beginner-project-fit-check" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-
-### AI 新手如何判断自己能不能接项目
-
-- File: content/blog/ai-beginner-project-fit-check.mdx
-- Score: 175
-- SEO warning: true
-- Freshness risk: high
-- Cannibalization conflicts: 1
-- Publish confirm: not-included
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- SEO warning: Confirm description length remains suitable for search snippets after editing.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "beginner-project-fit-check" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-
-### 新手 30 天 AI 工具实践执行检查清单
-
-- File: content/blog/ai-freelance-30-day-execution-checklist.mdx
-- Score: 175
-- SEO warning: true
-- Freshness risk: high
-- Cannibalization conflicts: 1
-- Publish confirm: not-included
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- SEO warning: Confirm description length remains suitable for search snippets after editing.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-day-execution" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-
-### 新手 30 天 AI 工具实践计划常见执行错误
-
-- File: content/blog/ai-freelance-30-day-execution-mistakes.mdx
-- Score: 175
-- SEO warning: true
-- Freshness risk: high
-- Cannibalization conflicts: 1
-- Publish confirm: not-included
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: 新手 30 天 AI 工具实践计划常见错误.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-day-execution" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-
-### AI 自动化项目合规风险检查清单
-
-- File: content/blog/ai-freelance-automation-compliance-risk-checklist.mdx
-- Score: 175
-- SEO warning: true
-- Freshness risk: high
-- Cannibalization conflicts: 1
-- Publish confirm: not-included
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- SEO warning: Confirm description length remains suitable for search snippets after editing.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-automation-compliance-risk" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-
-### AI 自动化项目常见合规错误和解决步骤
-
-- File: content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx
-- Score: 175
-- SEO warning: true
-- Freshness risk: high
-- Cannibalization conflicts: 1
-- Publish confirm: not-included
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: AI 自动化项目合规错误.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-automation-compliance-risk" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-
-### AI 工具实践误区的常见错误和解决步骤
-
-- File: content/blog/ai-freelance-common-misconceptions-mistakes.mdx
-- Score: 175
-- SEO warning: true
-- Freshness risk: high
-- Cannibalization conflicts: 1
-- Publish confirm: not-included
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: AI 工具实践误区常见错误.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-common-misconceptions" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-
-### AI 项目失败复盘常见错误
-
-- File: content/blog/ai-freelance-failure-review-mistakes.mdx
-- Score: 175
-- SEO warning: true
-- Freshness risk: high
-- Cannibalization conflicts: 1
+- Freshness risk: none
+- Cannibalization conflicts: 2
 - Publish confirm: not-included
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -334,18 +131,18 @@ This report is read-only. It prioritizes public-page refresh work for search vis
 - SEO warning: Confirm the contentType value matches the actual article format and category.
 - SEO warning: If the value is intentionally uncommon, document that decision during human review.
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-failure-review" before expanding this page or approving related drafts.
+- Cannibalization check: review similar title stem conflict "npm run dev 能跑但 build" before expanding this page or approving related drafts.
+- Cannibalization check: review similar slug stem conflict "dev-works-build-fails" before expanding this page or approving related drafts.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 
-### AI 工具新手 7 天准备常见错误
+### failed to push some refs 使用前怎么判断是否适合
 
-- File: content/blog/ai-freelance-first-7-days-mistakes.mdx
-- Score: 175
+- File: content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx
+- Score: 170
 - SEO warning: true
-- Freshness risk: high
-- Cannibalization conflicts: 1
+- Freshness risk: none
+- Cannibalization conflicts: 2
 - Publish confirm: not-included
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -354,7 +151,199 @@ This report is read-only. It prioritizes public-page refresh work for search vis
 - SEO warning: Confirm the contentType value matches the actual article format and category.
 - SEO warning: If the value is intentionally uncommon, document that decision during human review.
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Cannibalization check: review similar title stem conflict "failed to push some refs" before expanding this page or approving related drafts.
+- Cannibalization check: review similar slug stem conflict "failed-push-some-refs-fix" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+
+### failed to push some refs 常见错误和解决步骤
+
+- File: content/blog/failed-to-push-some-refs-fix-mistakes.mdx
+- Score: 170
+- SEO warning: true
+- Freshness risk: none
+- Cannibalization conflicts: 2
+- Publish confirm: not-included
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Cannibalization check: review similar title stem conflict "failed to push some refs" before expanding this page or approving related drafts.
+- Cannibalization check: review similar slug stem conflict "failed-push-some-refs-fix" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+
+### Next.js hydration error 怎么排查：常见错误和解决步骤
+
+- File: content/blog/nextjs-hydration-error-debug-mistakes.mdx
+- Score: 170
+- SEO warning: true
+- Freshness risk: none
+- Cannibalization conflicts: 2
+- Publish confirm: not-included
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Cannibalization check: review similar title stem conflict "next js hydration error 怎么排查" before expanding this page or approving related drafts.
+- Cannibalization check: review similar slug stem conflict "nextjs-hydration-error-debug" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+
+### Codex 项目 npm install 报错怎么办：新手排查步骤
+
+- File: content/blog/codex-npm-install-error-beginner-fix.mdx
+- Score: 165
+- SEO warning: true
+- Freshness risk: high
+- Cannibalization conflicts: 1
+- Publish confirm: not-included
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Codex npm install 报错怎么办.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-first-days" before expanding this page or approving related drafts.
+- Cannibalization check: review same primary keyword conflict "codex npm install 报错怎么办" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+
+### 第一个 Upwork 小项目怎么报价：新手范围和底价检查
+
+- File: content/blog/first-upwork-project-pricing-checklist.mdx
+- Score: 160
+- SEO warning: true
+- Freshness risk: high
+- Cannibalization conflicts: 0
+- Publish confirm: not-included
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: 第一个 Upwork 项目怎么报价.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+
+### Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看
+
+- File: content/blog/payoneer-wise-paypal-beginner-comparison.mdx
+- Score: 160
+- SEO warning: true
+- Freshness risk: high
+- Cannibalization conflicts: 0
+- Publish confirm: not-included
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Payoneer Wise PayPal 区别.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+
+### Upwork Proposal 发出去没人回怎么办：新手检查清单
+
+- File: content/blog/upwork-proposal-no-reply-checklist.mdx
+- Score: 160
+- SEO warning: true
+- Freshness risk: high
+- Cannibalization conflicts: 0
+- Publish confirm: not-included
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Upwork Proposal 没人回怎么办.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+
+### Vercel 提示环境变量缺失怎么办：新手部署检查流程
+
+- File: content/blog/vercel-env-variable-missing-beginner-guide.mdx
+- Score: 160
+- SEO warning: true
+- Freshness risk: high
+- Cannibalization conflicts: 0
+- Publish confirm: not-included
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Vercel 环境变量缺失怎么办.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+
+### 广告收入要等到什么时候再接
+
+- File: content/blog/ads-income-when-to-start.mdx
+- Score: 155
+- SEO warning: true
+- Freshness risk: none
+- Cannibalization conflicts: 1
+- Publish confirm: not-included
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: 广告收入什么时候开始.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Cannibalization check: review similar slug stem conflict "ads-income-when-start" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+
+### 联盟链接收入和服务收入有什么区别：新手检查清单
+
+- File: content/blog/affiliate-vs-service-income-checklist.mdx
+- Score: 155
+- SEO warning: true
+- Freshness risk: none
+- Cannibalization conflicts: 1
+- Publish confirm: not-included
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: 联盟链接收入和服务收入区别.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Cannibalization check: review similar slug stem conflict "affiliate-service-income" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+
+### 联盟链接收入和服务收入有什么区别
+
+- File: content/blog/affiliate-vs-service-income.mdx
+- Score: 155
+- SEO warning: true
+- Freshness risk: none
+- Cannibalization conflicts: 1
+- Publish confirm: not-included
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
+- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
+- SEO warning: Confirm description length remains suitable for search snippets after editing.
+- Cannibalization check: review similar slug stem conflict "affiliate-service-income" before expanding this page or approving related drafts.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.

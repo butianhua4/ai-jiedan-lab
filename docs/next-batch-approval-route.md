@@ -1,6 +1,6 @@
 # Next Batch Approval Route
 
-Generated at: 2026-06-16T05:25:12.827Z
+Generated at: 2026-06-16T18:18:48.116Z
 
 This report is read-only. It converts the manual review workbench next batch into per-article approval routes without editing articles or changing publishing state.
 
@@ -21,26 +21,26 @@ This report is read-only. It converts the manual review workbench next batch int
 
 ## Next Batch
 
-- Batch 1: Agent 部署、工具调用和记忆 (3 candidates)
-- Planned batch topic: Agent 部署、工具调用和记忆
+- Batch 1: 大模型和 AI 应用部署教程 (3 candidates)
+- Planned batch topic: 大模型和 AI 应用部署教程
 
 ## Summary
 
-- actionItems: 38
+- actionItems: 39
 - batchItems: 3
 - clearanceMatchedItems: 1
 - commandBoundaries: 3
-- copydeskMatchedItems: 2
+- copydeskMatchedItems: 1
 - currentPublicPublished: 500
 - currentPublishableNow: 0
-- freshnessMatchedItems: 3
+- freshnessMatchedItems: 1
 - itemsReadyForHumanRouteReview: 3
 - plannedBatchCandidates: 3
 - publishConfirmCommandsIncluded: 0
 - queryCoverageMatchedItems: 3
-- queryMatchWarningItems: 1
-- routeWarnings: 4
-- seoWarningItems: 1
+- queryMatchWarningItems: 3
+- routeWarnings: 9
+- seoWarningItems: 3
 - sourcePackMatchedItems: 3
 - trafficDataAvailable: false
 - unsafeItems: 0
@@ -53,88 +53,89 @@ This report is read-only. It converts the manual review workbench next batch int
 
 | Ready | Score | Actions | Warnings | Sources | Queries | SEO | Freshness | Copydesk | Title | File |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
-| true | 778 | 12 | 0 | 6 | 35 | false | high | true | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | 750 | 13 | 1 | 8 | 35 | false | high | true | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| true | 722 | 13 | 3 | 10 | 35 | true | high | false | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| true | 441 | 15 | 1 | 7 | 30 | true | high | true | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| true | 370 | 12 | 4 | 4 | 35 | true | none | false | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
+| true | 369 | 12 | 4 | 5 | 35 | true | none | false | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
 
 ## Item Actions
 
-### AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查
+### Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级
 
-- File: content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
+- File: content/blog/vercel-ai-gateway-multi-provider-guide.mdx
 - Ready for human route review: true
-- Priority score: 778
-- Cluster: Agent and memory
-- Category: AI Agent
+- Priority score: 441
+- Cluster: AI deployment
+- Category: AI 部署
 - Publish confirm: not-included
-- Dry-run mark review: npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
-- Human approval mark review: npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human
-- Publish dry-run: npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
-- Route warnings: none
+- Dry-run mark review: npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx
+- Human approval mark review: npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human
+- Publish dry-run: npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx
+- Route warnings: search query match warning exists
 
 - Confirm the article still targets the next batch topic before any status change.
 - Verify the opening section answers the likely user search query directly.
 - Keep the article draft, noindex, and humanReviewRequired until approval.
-- Verify official sources before review: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents | Vercel AI SDK docs: https://ai-sdk.dev/docs | LangChain docs: https://python.langchain.com/docs.
-- Run manual fact checks for: AI Agent 部署 official docs latest | AI Agent 部署 official documentation current limits | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 fact check official docs.
-- Use 35 query variants to check title, description, headings, and first-screen answer fit.
+- Verify official sources before review: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.
+- Run manual fact checks for: Vercel AI Gateway 多模型 official docs latest | Vercel AI Gateway 多模型 official documentation current limits | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 fact check official docs.
+- Use 30 query variants to check title, description, headings, and first-screen answer fit.
+- Search wording warnings: few exact query variant matches in article text.
+- SEO manual actions: Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型. | If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title. | Confirm the H1/title/description still answer the same search intent after any metadata change..
 - Review copydesk meta description proposal before approving the draft.
-- Review public internal link path: Codex 部署 Vercel 前检查什么：上线前清单.
-- Freshness checks: AI Agent 部署 官方文档 最新 | AI Agent 部署 official docs latest | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 事实核对.
-- After human approval only: npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human
-- After review state only, dry-run publish without confirm: npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
+- Review public internal link path: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估.
+- Freshness checks: Vercel AI Gateway 多模型 官方文档 最新 | Vercel AI Gateway 多模型 official docs latest | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 事实核对.
+- Resolve route warnings before approval: search query match warning exists.
+- After human approval only: npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human
+- After review state only, dry-run publish without confirm: npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx
 - Do not run publish:articles --confirm from this route.
 
-### AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界
+### Together AI API 怎么接入：开源模型接口、embedding 和部署边界
 
-- File: content/blog/ai-agent-memory-rag-design-guide.mdx
+- File: content/blog/together-ai-api-beginner-guide.mdx
 - Ready for human route review: true
-- Priority score: 750
-- Cluster: Agent and memory
-- Category: AI 记忆
+- Priority score: 370
+- Cluster: AI deployment
+- Category: AI 基建
 - Publish confirm: not-included
-- Dry-run mark review: npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx
-- Human approval mark review: npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human
-- Publish dry-run: npm run publish:articles -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx
-- Route warnings: not yet matched in human approval clearance pack
+- Dry-run mark review: npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx
+- Human approval mark review: npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human
+- Publish dry-run: npm run publish:articles -- --file=content/blog/together-ai-api-beginner-guide.mdx
+- Route warnings: not yet matched in human approval clearance pack; no copydesk optimization brief matched; no freshness brief matched; search query match warning exists
 
 - Confirm the article still targets the next batch topic before any status change.
 - Verify the opening section answers the likely user search query directly.
 - Keep the article draft, noindex, and humanReviewRequired until approval.
-- Verify official sources before review: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval | LangChain docs: https://python.langchain.com/docs | LlamaIndex docs: https://docs.llamaindex.ai.
-- Run manual fact checks for: AI Agent 记忆 official docs latest | AI Agent 记忆 official documentation current limits | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 fact check official docs.
+- Verify official sources before review: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.
+- Run manual fact checks for: Together AI API 接入 official docs latest | Together AI API 接入 official documentation current limits | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 fact check official docs.
 - Use 35 query variants to check title, description, headings, and first-screen answer fit.
-- Review copydesk meta description proposal before approving the draft.
-- Review public internal link path: Codex 生成代码后怎么审核：交付前检查清单.
-- Freshness checks: Confirm current official guidance for api. | Confirm current official guidance for agent. | Confirm current official guidance for model..
-- Resolve route warnings before approval: not yet matched in human approval clearance pack.
-- After human approval only: npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human
-- After review state only, dry-run publish without confirm: npm run publish:articles -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx
+- Search wording warnings: few exact query variant matches in article text; missing query-family signals: intentSeeds.
+- SEO manual actions: Check whether the title can naturally include the exact primary keyword: Together AI API 接入. | If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title. | Confirm the H1/title/description still answer the same search intent after any metadata change..
+- Resolve route warnings before approval: not yet matched in human approval clearance pack; no copydesk optimization brief matched; no freshness brief matched.
+- After human approval only: npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human
+- After review state only, dry-run publish without confirm: npm run publish:articles -- --file=content/blog/together-ai-api-beginner-guide.mdx
 - Do not run publish:articles --confirm from this route.
 
-### AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围
+### Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查
 
-- File: content/blog/ai-automation-project-pricing-scope-guide.mdx
+- File: content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx
 - Ready for human route review: true
-- Priority score: 722
-- Cluster: Agent and memory
-- Category: 项目报价
+- Priority score: 369
+- Cluster: AI deployment
+- Category: AI 基建
 - Publish confirm: not-included
-- Dry-run mark review: npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx
-- Human approval mark review: npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human
-- Publish dry-run: npm run publish:articles -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx
-- Route warnings: not yet matched in human approval clearance pack; no copydesk optimization brief matched; search query match warning exists
+- Dry-run mark review: npm run mark:review -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx
+- Human approval mark review: npm run mark:review -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx --confirm-human
+- Publish dry-run: npm run publish:articles -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx
+- Route warnings: not yet matched in human approval clearance pack; no copydesk optimization brief matched; no freshness brief matched; search query match warning exists
 
 - Confirm the article still targets the next batch topic before any status change.
 - Verify the opening section answers the likely user search query directly.
 - Keep the article draft, noindex, and humanReviewRequired until approval.
-- Verify official sources before review: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval | LangChain docs: https://python.langchain.com/docs | LlamaIndex docs: https://docs.llamaindex.ai.
-- Run manual fact checks for: AI 自动化项目报价 official docs latest | AI 自动化项目报价 official documentation current limits | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 fact check official docs.
+- Verify official sources before review: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.
+- Run manual fact checks for: Vercel AI SDK 聊天机器人部署 official docs latest | Vercel AI SDK 聊天机器人部署 official documentation current limits | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 fact check official docs.
 - Use 35 query variants to check title, description, headings, and first-screen answer fit.
 - Search wording warnings: few exact query variant matches in article text.
-- SEO manual actions: Expand the meta description with the user problem, outcome, and one concrete workflow term. | Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims. | Confirm description length remains suitable for search snippets after editing..
-- Freshness checks: Confirm current official guidance for api. | Confirm current official guidance for agent. | Confirm current official guidance for dify..
-- Resolve route warnings before approval: not yet matched in human approval clearance pack; no copydesk optimization brief matched; search query match warning exists.
-- After human approval only: npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human
-- After review state only, dry-run publish without confirm: npm run publish:articles -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx
+- SEO manual actions: Check whether the title can naturally include the exact primary keyword: Vercel AI SDK 聊天机器人部署. | If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title. | Confirm the H1/title/description still answer the same search intent after any metadata change..
+- Resolve route warnings before approval: not yet matched in human approval clearance pack; no copydesk optimization brief matched; no freshness brief matched.
+- After human approval only: npm run mark:review -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx --confirm-human
+- After review state only, dry-run publish without confirm: npm run publish:articles -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx
 - Do not run publish:articles --confirm from this route.

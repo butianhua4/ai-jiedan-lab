@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T05:11:53.604Z",
+  "generatedAt": "2026-06-16T18:18:06.749Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -8,11 +8,11 @@
   },
   "summary": {
     "blockingItems": 0,
-    "expansionItems": 19,
-    "jsonLdPreviewItems": 500,
+    "expansionItems": 15,
+    "jsonLdPreviewItems": 516,
     "publicItems": 500,
     "recommendedItems": 3,
-    "scopedItems": 500,
+    "scopedItems": 516,
     "warningItems": 92,
     "waveItems": 3,
     "waveItemsWithBlockingIssues": 0
@@ -4497,8 +4497,6 @@
       },
       "scope": [
         "public",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
@@ -4540,8 +4538,7 @@
         }
       },
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "ai-agent-memory-rag-design-guide",
       "status": "published",
@@ -4582,8 +4579,7 @@
         }
       },
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "ai-api-key-security-rotation-guide",
       "status": "published",
@@ -4749,8 +4745,7 @@
         }
       },
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "ai-automation-project-pricing-scope-guide",
       "status": "published",
@@ -6079,8 +6074,6 @@
       },
       "scope": [
         "public",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "slug": "ai-model-selection-customer-service-guide",
@@ -6329,8 +6322,7 @@
         }
       },
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "ai-prompt-library-team-knowledge-base-guide",
       "status": "published",
@@ -7942,8 +7934,7 @@
         }
       },
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "claude-api-rate-limit-debug-guide",
       "status": "published",
@@ -15131,8 +15122,7 @@
         }
       },
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "customer-service-ai-prompts-guide",
       "status": "published",
@@ -15298,8 +15288,7 @@
         }
       },
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "data-analysis-ai-prompts-guide",
       "status": "published",
@@ -16043,8 +16032,7 @@
         }
       },
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "dify-workflow-error-handling-guide",
       "status": "published",
@@ -16085,8 +16073,7 @@
         }
       },
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "dify-workflow-vs-agent-guide",
       "status": "published",
@@ -16209,8 +16196,7 @@
         }
       },
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "ecommerce-ai-prompts-guide",
       "status": "published",
@@ -16251,8 +16237,7 @@
         }
       },
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "education-ai-prompts-guide",
       "status": "published",
@@ -17865,8 +17850,7 @@
         }
       },
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "gemini-api-rate-limit-debug-guide",
       "status": "published",
@@ -18571,8 +18555,7 @@
         }
       },
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "gpu-docker-nvidia-container-toolkit-guide",
       "status": "published",
@@ -18942,8 +18925,6 @@
       },
       "scope": [
         "public",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "slug": "industry-ai-prompts-template-library-2026",
@@ -19682,8 +19663,7 @@
         }
       },
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "llm-deployment-huggingface-inference-endpoints-guide",
       "status": "published",
@@ -19888,8 +19868,7 @@
         }
       },
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "local-llm-vram-not-enough-guide",
       "status": "published",
@@ -21344,8 +21323,7 @@
         }
       },
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "open-webui-functions-pipelines-deployment-guide",
       "status": "published",
@@ -24710,12 +24688,12 @@
   "recommendedItems": [
     {
       "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-agent-deployment-vercel-ai-sdk-guide",
-      "category": "AI Agent",
+      "canonical": "https://ai-jiedan-lab.vercel.app/blog/tools-not-to-buy-first",
+      "category": "工具选择",
       "contentType": "tutorial",
-      "date": "2026-06-06",
-      "difficulty": "intermediate",
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "date": "2026-06-03",
+      "difficulty": "beginner",
+      "file": "content/blog/tools-not-to-buy-first.mdx",
       "issues": [],
       "jsonLdPreview": {
         "@context": "https://schema.org",
@@ -24724,42 +24702,81 @@
           "@type": "Organization",
           "name": "AI 工具指南"
         },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-06",
-        "description": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
-        "headline": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "dateModified": "2026-06-03",
+        "datePublished": "2026-06-03",
+        "description": "AI 工具新手不应该一开始购买复杂自动化、昂贵订阅、批量投放、会员系统和高级设计工具。先跑通作品集、沟通、报价、交付和复盘，再决定买什么。",
+        "headline": "AI 工具新手不应该先买哪些工具",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/ai-agent-deployment-vercel-ai-sdk-guide"
+          "@id": "https://ai-jiedan-lab.vercel.app/blog/tools-not-to-buy-first"
         }
       },
       "scope": [
-        "public",
-        "expansion",
-        "recommended",
-        "wave-1"
+        "recommended"
       ],
-      "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
-      "status": "published",
+      "slug": "tools-not-to-buy-first",
+      "status": "draft",
       "tags": [
-        "AI Agent",
-        "Vercel AI SDK",
-        "工具调用",
-        "AI 部署"
+        "工具选择",
+        "AI 工具实践",
+        "新手教程",
+        "成本控制"
       ],
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "updatedAt": "2026-06-14",
+      "title": "AI 工具新手不应该先买哪些工具",
+      "updatedAt": "2026-06-03",
       "warnings": []
     },
     {
       "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-model-selection-customer-service-guide",
+      "canonical": "https://ai-jiedan-lab.vercel.app/blog/vector-database-selection-for-rag-guide",
+      "category": "AI 基建",
+      "contentType": "tutorial",
+      "date": "2026-06-05",
+      "difficulty": "beginner",
+      "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
+      "issues": [],
+      "jsonLdPreview": {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "author": {
+          "@type": "Organization",
+          "name": "AI 工具指南"
+        },
+        "dateModified": "2026-06-12",
+        "datePublished": "2026-06-05",
+        "description": "面向新手整理 RAG 向量数据库选型思路，比较 pgvector、Qdrant、Milvus 等路线时应关注数据规模、权限、运维、成本和迁移。",
+        "headline": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://ai-jiedan-lab.vercel.app/blog/vector-database-selection-for-rag-guide"
+        }
+      },
+      "scope": [
+        "expansion",
+        "recommended"
+      ],
+      "slug": "vector-database-selection-for-rag-guide",
+      "status": "draft",
+      "tags": [
+        "向量数据库",
+        "RAG",
+        "pgvector",
+        "Qdrant"
+      ],
+      "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
+      "updatedAt": "2026-06-12",
+      "warnings": []
+    },
+    {
+      "author": "AI 工具指南",
+      "canonical": "https://ai-jiedan-lab.vercel.app/blog/vercel-ai-gateway-multi-provider-guide",
       "category": "AI 部署",
       "contentType": "tutorial",
       "date": "2026-06-06",
       "difficulty": "beginner",
-      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
       "issues": [],
       "jsonLdPreview": {
         "@context": "https://schema.org",
@@ -24768,76 +24785,30 @@
           "@type": "Organization",
           "name": "AI 工具指南"
         },
-        "dateModified": "2026-06-14",
+        "dateModified": "2026-06-06",
         "datePublished": "2026-06-06",
-        "description": "整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。",
-        "headline": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+        "description": "整理 Vercel AI Gateway 多模型接入思路，覆盖统一 API、provider 切换、日志、成本、降级、AI SDK 和上线检查。",
+        "headline": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/ai-model-selection-customer-service-guide"
+          "@id": "https://ai-jiedan-lab.vercel.app/blog/vercel-ai-gateway-multi-provider-guide"
         }
       },
       "scope": [
-        "public",
         "expansion",
-        "recommended",
-        "wave-1"
+        "recommended"
       ],
-      "slug": "ai-model-selection-customer-service-guide",
-      "status": "published",
+      "slug": "vercel-ai-gateway-multi-provider-guide",
+      "status": "draft",
       "tags": [
-        "客服 AI",
-        "模型选型",
-        "RAG",
-        "AI Agent"
+        "Vercel AI Gateway",
+        "AI SDK",
+        "多模型",
+        "AI 部署"
       ],
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-      "updatedAt": "2026-06-14",
-      "warnings": []
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/industry-ai-prompts-template-library-2026",
-      "category": "AI 提示词",
-      "contentType": "tutorial",
-      "date": "2026-06-06",
-      "difficulty": "beginner",
-      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-06",
-        "description": "整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。",
-        "headline": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/industry-ai-prompts-template-library-2026"
-        }
-      },
-      "scope": [
-        "public",
-        "expansion",
-        "recommended",
-        "wave-1"
-      ],
-      "slug": "industry-ai-prompts-template-library-2026",
-      "status": "published",
-      "tags": [
-        "AI 提示词",
-        "提示词模板",
-        "行业 AI",
-        "SOP"
-      ],
-      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-      "updatedAt": "2026-06-14",
+      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+      "updatedAt": "2026-06-06",
       "warnings": []
     }
   ],
@@ -24870,8 +24841,6 @@
       },
       "scope": [
         "public",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
@@ -24914,8 +24883,6 @@
       },
       "scope": [
         "public",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "slug": "ai-model-selection-customer-service-guide",
@@ -24958,8 +24925,6 @@
       },
       "scope": [
         "public",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "slug": "industry-ai-prompts-template-library-2026",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T12:27:14.092Z",
+  "generatedAt": "2026-06-16T18:18:14.594Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -66,8 +66,8 @@
           ],
           "laneAudience": "Teams building customer support bots, internal knowledge assistants, and document Q&A.",
           "laneId": "rag-knowledge-memory",
-          "lanePriorityReason": "demandScore=10; public coverage=31; readyDrafts=4; currentPack=1; wave1=2",
-          "lanePriorityScore": 224,
+          "lanePriorityReason": "demandScore=10; public coverage=31; readyDrafts=4; currentPack=1",
+          "lanePriorityScore": 208,
           "laneTitle": "RAG, knowledge base, and Agent memory",
           "noindex": true,
           "primaryKeyword": "RAG 向量数据库怎么选",
@@ -99,7 +99,7 @@
           ],
           "status": "draft",
           "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
-          "wave1": true,
+          "wave1": false,
           "wordCountChinese": 1209,
           "workflowAngles": [
             "document cleanup",
@@ -133,8 +133,8 @@
           ],
           "laneAudience": "Developers integrating OpenAI, Claude, Gemini, OpenRouter, and multi-model routing.",
           "laneId": "model-api-integration",
-          "lanePriorityReason": "demandScore=9; public coverage=28; readyDrafts=2; currentPack=1; wave1=1",
-          "lanePriorityScore": 180,
+          "lanePriorityReason": "demandScore=9; public coverage=28; readyDrafts=2; currentPack=1",
+          "lanePriorityScore": 172,
           "laneTitle": "Model API integration, rate limits, and multi-model fallback",
           "noindex": true,
           "primaryKeyword": "Vercel AI Gateway 多模型",
@@ -166,7 +166,7 @@
           ],
           "status": "draft",
           "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
-          "wave1": true,
+          "wave1": false,
           "wordCountChinese": 1246,
           "workflowAngles": [
             "server-side calls",
@@ -200,8 +200,8 @@
           ],
           "laneAudience": "Teams building customer support bots, internal knowledge assistants, and document Q&A.",
           "laneId": "rag-knowledge-memory",
-          "lanePriorityReason": "demandScore=10; public coverage=31; readyDrafts=4; currentPack=1; wave1=2",
-          "lanePriorityScore": 224,
+          "lanePriorityReason": "demandScore=10; public coverage=31; readyDrafts=4; currentPack=1",
+          "lanePriorityScore": 208,
           "laneTitle": "RAG, knowledge base, and Agent memory",
           "noindex": true,
           "primaryKeyword": "Supabase pgvector",
@@ -233,7 +233,7 @@
           ],
           "status": "draft",
           "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
-          "wave1": true,
+          "wave1": false,
           "wordCountChinese": 1255,
           "workflowAngles": [
             "document cleanup",
@@ -267,15 +267,59 @@
         "content/blog/vllm-deployment-beginner-guide.mdx",
         "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx"
       ],
-      "focus": "AI automation service pricing, scope, and delivery checklist + Large model deployment, LLM serving, and GPU infrastructure + AI Agent deployment, tool calling, and production workflow",
+      "focus": "Large model deployment, LLM serving, and GPU infrastructure + AI automation service pricing, scope, and delivery checklist + AI Agent deployment, tool calling, and production workflow",
       "items": [
         {
           "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
-          "laneId": "ai-service-pricing-scope",
-          "lanePriorityScore": 186,
-          "laneTitle": "AI automation service pricing, scope, and delivery checklist",
+          "laneId": "llm-deployment-serving",
+          "lanePriorityScore": 180,
+          "laneTitle": "Large model deployment, LLM serving, and GPU infrastructure",
           "primaryKeyword": "TensorRT-LLM 入门",
           "publishBatch": 29,
+          "qualityScore": 86,
+          "readyForHumanReview": true,
+          "riskChecks": [
+            "No measured traffic, ranking, income, approval, or client acquisition claim is made without evidence.",
+            "No API key, private customer data, credential, or bypass instruction is included.",
+            "Fast-changing model names, quotas, pricing, limits, and platform features are checked against official docs.",
+            "GPU, memory, serving, concurrency, cold-start, and cost tradeoffs are framed as checks, not guarantees."
+          ],
+          "safeDraft": true,
+          "sourceTargets": [
+            "Hugging Face docs: https://huggingface.co/docs",
+            "vLLM docs: https://docs.vllm.ai",
+            "OpenAI API docs: https://platform.openai.com/docs",
+            "Modal docs: https://modal.com/docs"
+          ],
+          "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
+          "intentSeeds": [
+            "大模型部署教程",
+            "LLM deployment",
+            "vLLM 部署",
+            "Hugging Face TGI 部署"
+          ],
+          "reviewFocus": [
+            "GPU and memory requirements",
+            "serving framework versions",
+            "cold start and concurrency",
+            "cost boundaries"
+          ],
+          "wave": 2,
+          "workflowAngles": [
+            "GPU sizing",
+            "serving API",
+            "quantization",
+            "autoscaling",
+            "cost control"
+          ]
+        },
+        {
+          "file": "content/blog/vllm-deployment-beginner-guide.mdx",
+          "laneId": "ai-service-pricing-scope",
+          "lanePriorityScore": 178,
+          "laneTitle": "AI automation service pricing, scope, and delivery checklist",
+          "primaryKeyword": "vLLM 部署",
+          "publishBatch": 22,
           "qualityScore": 86,
           "readyForHumanReview": true,
           "riskChecks": [
@@ -290,7 +334,7 @@
             "Vercel AI SDK docs: https://ai-sdk.dev/docs",
             "Dify docs: https://docs.dify.ai"
           ],
-          "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
+          "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
           "intentSeeds": [
             "AI 自动化项目报价",
             "AI Agent 项目",
@@ -311,50 +355,6 @@
             "acceptance",
             "maintenance",
             "risk language"
-          ]
-        },
-        {
-          "file": "content/blog/vllm-deployment-beginner-guide.mdx",
-          "laneId": "llm-deployment-serving",
-          "lanePriorityScore": 180,
-          "laneTitle": "Large model deployment, LLM serving, and GPU infrastructure",
-          "primaryKeyword": "vLLM 部署",
-          "publishBatch": 22,
-          "qualityScore": 86,
-          "readyForHumanReview": true,
-          "riskChecks": [
-            "No measured traffic, ranking, income, approval, or client acquisition claim is made without evidence.",
-            "No API key, private customer data, credential, or bypass instruction is included.",
-            "Fast-changing model names, quotas, pricing, limits, and platform features are checked against official docs.",
-            "GPU, memory, serving, concurrency, cold-start, and cost tradeoffs are framed as checks, not guarantees."
-          ],
-          "safeDraft": true,
-          "sourceTargets": [
-            "Hugging Face docs: https://huggingface.co/docs",
-            "vLLM docs: https://docs.vllm.ai",
-            "OpenAI API docs: https://platform.openai.com/docs",
-            "Modal docs: https://modal.com/docs"
-          ],
-          "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
-          "intentSeeds": [
-            "大模型部署教程",
-            "LLM deployment",
-            "vLLM 部署",
-            "Hugging Face TGI 部署"
-          ],
-          "reviewFocus": [
-            "GPU and memory requirements",
-            "serving framework versions",
-            "cold start and concurrency",
-            "cost boundaries"
-          ],
-          "wave": 2,
-          "workflowAngles": [
-            "GPU sizing",
-            "serving API",
-            "quantization",
-            "autoscaling",
-            "cost control"
           ]
         },
         {
@@ -404,8 +404,8 @@
       ],
       "laneCount": 3,
       "lanes": [
-        "AI automation service pricing, scope, and delivery checklist",
         "Large model deployment, LLM serving, and GPU infrastructure",
+        "AI automation service pricing, scope, and delivery checklist",
         "AI Agent deployment, tool calling, and production workflow"
       ],
       "readyItems": 3,
@@ -413,8 +413,8 @@
         "No measured traffic, ranking, income, approval, or client acquisition claim is made without evidence.",
         "No API key, private customer data, credential, or bypass instruction is included.",
         "Fast-changing model names, quotas, pricing, limits, and platform features are checked against official docs.",
-        "Article-specific operational and safety boundaries are explicit.",
         "GPU, memory, serving, concurrency, cold-start, and cost tradeoffs are framed as checks, not guarantees.",
+        "Article-specific operational and safety boundaries are explicit.",
         "Agent permissions, tool allowlists, human approval, logs, and rollback boundaries are explicit."
       ],
       "sourceTargetCount": 10,
@@ -518,7 +518,7 @@
         {
           "file": "content/blog/together-ai-api-beginner-guide.mdx",
           "laneId": "rag-knowledge-memory",
-          "lanePriorityScore": 224,
+          "lanePriorityScore": 208,
           "laneTitle": "RAG, knowledge base, and Agent memory",
           "primaryKeyword": "Together AI API 接入",
           "publishBatch": 27,
@@ -588,7 +588,7 @@
         {
           "file": "content/blog/vector-database-beginner-guide.mdx",
           "laneId": "rag-knowledge-memory",
-          "lanePriorityScore": 224,
+          "lanePriorityScore": 208,
           "laneTitle": "RAG, knowledge base, and Agent memory",
           "primaryKeyword": "向量数据库",
           "publishBatch": 21,
@@ -632,7 +632,7 @@
         {
           "file": "content/blog/vercel-build-failed-causes-freelance-scope.mdx",
           "laneId": "ai-service-pricing-scope",
-          "lanePriorityScore": 186,
+          "lanePriorityScore": 178,
           "laneTitle": "AI automation service pricing, scope, and delivery checklist",
           "primaryKeyword": "Vercel build failed 项目",
           "publishBatch": 13,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T07:14:54.012Z",
+  "generatedAt": "2026-06-16T18:18:46.638Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,64 +9,64 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "approvalQueueGeneratedAt": "2026-06-16T07:12:53.744Z",
+    "approvalQueueGeneratedAt": "2026-06-16T18:18:46.148Z",
     "approvalQueueSummary": {
-      "backlogItems": 5,
-      "commandBoundaries": 8,
-      "humanGatedItems": 8,
+      "backlogItems": 0,
+      "commandBoundaries": 3,
+      "humanGatedItems": 3,
       "immediateApprovalItems": 3,
       "immediateApprovalReadyItems": 3,
-      "items": 8,
-      "itemsReadyForHumanApproval": 8,
-      "itemsWithFailedSourceDecision": 1,
-      "itemsWithMassSearchTheme": 6,
-      "itemsWithPopularPromptLane": 5,
-      "itemsWithSeoWarnings": 5,
-      "itemsWithSourceReplacementDecisions": 7,
+      "items": 3,
+      "itemsReadyForHumanApproval": 3,
+      "itemsWithFailedSourceDecision": 0,
+      "itemsWithMassSearchTheme": 3,
+      "itemsWithPopularPromptLane": 3,
+      "itemsWithSeoWarnings": 1,
+      "itemsWithSourceReplacementDecisions": 3,
       "publishConfirmCommandsIncluded": 0,
       "trafficDataAvailable": false,
       "unsafeItems": 0
     },
-    "copydeskGeneratedAt": "2026-06-14T10:39:08.238Z",
+    "copydeskGeneratedAt": "2026-06-16T18:18:28.871Z",
     "copydeskSummary": {
-      "briefs": 16,
-      "briefsWithAction": 16,
-      "exactQueryWeakItems": 3,
-      "missingPublicLinkItems": 15,
-      "readyBriefs": 16,
+      "briefs": 2,
+      "briefsWithAction": 2,
+      "exactQueryWeakItems": 2,
+      "missingPublicLinkItems": 1,
+      "readyBriefs": 2,
       "unsafeCommands": 0
     },
-    "sourceReplacementGeneratedAt": "2026-06-14T10:39:06.777Z",
+    "sourceReplacementGeneratedAt": "2026-06-16T18:18:27.419Z",
     "sourceReplacementSummary": {
-      "affectedFiles": 22,
-      "failedDecisionItems": 1,
-      "humanGatedItems": 115,
-      "items": 115,
-      "itemsWithDecisionOptions": 115,
-      "itemsWithManualChecklist": 115,
-      "itemsWithRecommendedCandidate": 1,
-      "officialRecommendedCandidates": 1,
-      "redirectedDecisionItems": 114,
-      "replacementCandidateOptions": 8,
-      "sourceRemediationItems": 19,
+      "affectedFiles": 16,
+      "failedDecisionItems": 0,
+      "humanGatedItems": 71,
+      "items": 71,
+      "itemsWithDecisionOptions": 71,
+      "itemsWithManualChecklist": 71,
+      "itemsWithRecommendedCandidate": 0,
+      "officialRecommendedCandidates": 0,
+      "redirectedDecisionItems": 71,
+      "replacementCandidateOptions": 0,
+      "sourceRemediationItems": 10,
       "sourceRemediationUnsafeItems": 0,
       "unsafeItems": 0
     },
-    "seoWarningGeneratedAt": "2026-06-16T05:22:47.160Z",
+    "seoWarningGeneratedAt": "2026-06-16T18:18:07.244Z",
     "seoWarningSummary": {
       "blockingItems": 0,
-      "draftItems": 0,
-      "humanGatedItems": 255,
-      "items": 255,
-      "itemsWithHumanChecklist": 255,
-      "itemsWithManualActions": 255,
+      "draftItems": 5,
+      "humanGatedItems": 260,
+      "items": 260,
+      "itemsWithHumanChecklist": 260,
+      "itemsWithManualActions": 260,
       "publicItems": 255,
       "recommendedItems": 1,
       "schemaWarningItems": 92,
-      "snippetWarningItems": 199,
+      "snippetWarningItems": 204,
       "trafficDataAvailable": false,
       "unsafeItems": 0,
-      "warningItems": 255,
+      "warningItems": 260,
       "waveItems": 1
     },
     "trafficNote": "No measured traffic, ranking, impression, click, conversion, or revenue claim is made."
@@ -74,250 +74,251 @@
   "publishingBoundary": {
     "currentPublicPublished": 500,
     "currentPublishableNow": 0,
-    "projectedPublicPublishedAfterImmediateHumanApproval": 500,
+    "projectedPublicPublishedAfterImmediateHumanApproval": 503,
     "publishConfirmCommandsIncluded": 0
   },
   "summary": {
-    "approvalItems": 8,
-    "backlogItems": 5,
-    "clearanceActions": 72,
-    "copydeskBriefItems": 4,
-    "failedSourceDecisionItems": 1,
+    "approvalItems": 3,
+    "backlogItems": 0,
+    "clearanceActions": 28,
+    "copydeskBriefItems": 2,
+    "failedSourceDecisionItems": 0,
     "immediateItems": 3,
-    "itemsReadyForClearanceReview": 8,
-    "massSearchThemeItems": 6,
-    "popularPromptLaneItems": 5,
+    "itemsReadyForClearanceReview": 3,
+    "massSearchThemeItems": 3,
+    "popularPromptLaneItems": 3,
     "publishConfirmCommandsIncluded": 0,
-    "seoWarningItems": 5,
-    "sourceDecisionItems": 3,
+    "seoWarningItems": 1,
+    "sourceDecisionItems": 1,
     "trafficDataAvailable": false,
     "unsafeItems": 0
   },
   "unsafeItems": [],
   "items": [
     {
-      "alreadyPublished": true,
+      "alreadyPublished": false,
       "articleState": {
         "humanReviewRequired": true,
-        "noindex": false,
+        "noindex": true,
         "qualityScore": 100,
         "sourceNotes": true,
-        "status": "published"
+        "status": "draft"
       },
       "blockers": [],
       "clearanceActions": [
-        "Confirm the public page still answers one clear search intent.",
+        "Confirm the draft still answers one clear search intent.",
         "Verify source-backed claims before any status change.",
-        "Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements.",
-        "SEO: Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-        "SEO: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-        "SEO: Confirm description length remains suitable for search snippets after editing.",
-        "Review public internal link suggestion: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).",
+        "Keep status=draft, noindex=true, and humanReviewRequired=true until approval.",
+        "Review public internal link suggestion: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).",
         "Review proposed meta description from copydesk brief before approval.",
         "Check that popular prompt lane framing stays broad enough for real search demand.",
         "Check that mass-search theme framing is covered without stuffing keywords.",
         "Run mark:review only after explicit human approval; publish confirm remains excluded."
       ],
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm-human",
         "publishConfirm": "not-included",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vector-database-selection-for-rag-guide.mdx",
         "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
       },
       "copydeskBrief": {
-        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+        "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
         "internalLink": {
           "currentPublicLinks": 0,
-          "reason": "keyword overlap: ai, 一个, 怎么, 么做, 第一",
-          "title": "Codex 怎么做第一个网页",
-          "url": "/blog/build-first-webpage-with-codex"
+          "reason": "same category: AI 基建; shared tags: 向量数据库, RAG, Qdrant; keyword overlap: rag, qdrant, ai, 基建, 向量数据库, 过滤",
+          "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
+          "url": "/blog/qdrant-vector-database-beginner-guide"
         },
-        "kind": "public-gap-review",
-        "priority": 785,
-        "proposedDescription": "面向准备落地 客服 AI 模型选型 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
+        "kind": "wave-approval",
+        "priority": 1010,
+        "proposedDescription": "面向准备落地 RAG 向量数据库怎么选 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
         "proposedOpeningAdditions": [
-          "在开头 200 字内自然回答一次“RAG 知识库搭建教程”这个搜索意图，先给结论再展开步骤。",
-          "在相关段落加入公开内链：Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)。"
+          "在开头 200 字内自然回答一次“RAG 向量数据库怎么选”这个搜索意图，先给结论再展开步骤。",
+          "在相关段落加入公开内链：Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide)。"
         ],
-        "proposedTitle": "客服 AI 模型选型：速度、成本、知识库、转人工和质检",
+        "proposedTitle": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
         "ready": true,
-        "scope": "public-gap-wave-2",
+        "scope": "wave-1",
         "searchEvidence": {
           "descriptionHit": true,
           "exactQueryMatches": 0,
           "matchedFamilies": 7,
           "queryCount": 35,
-          "seedExamples": [
-            "RAG 知识库搭建教程",
-            "向量数据库教程",
-            "企业知识库 AI 部署",
-            "RAG 检索不到内容"
-          ],
+          "seedExamples": [],
           "titleHit": true
         },
         "sourceWarnings": [
-          "description may be thin for search snippets",
-          "primary keyword is not an exact title substring",
-          "no exact search-seed phrase appears in title, description, or body",
-          "article currently has no links to published articles",
           "few exact query variant matches in article text"
         ],
-        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+        "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
         "warningRemediation": [
-          "Rewrite the meta description to name the reader, outcome, and search phrase: RAG 知识库搭建教程.",
-          "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
-          "Add one contextual link to a published article before approval.",
-          "Add one FAQ or checklist line that uses a high-intent query variant such as: RAG 知识库搭建教程.",
-          "Tighten the meta description so it states the search intent, audience, and outcome clearly.",
-          "Check whether the title should include the primary keyword naturally, or whether the current wording better matches intent.",
-          "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
-          "Review the suggested public internal link before publishing: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex)."
+          "Add one FAQ or checklist line that uses a high-intent query variant such as: RAG 向量数据库怎么选."
         ]
       },
-      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
       "hasFailedSourceDecision": false,
       "immediate": true,
       "massSearchThemes": 1,
-      "popularPromptLanes": 5,
-      "priorityScore": 777,
+      "popularPromptLanes": 2,
+      "priorityScore": 446,
       "readyForHumanApproval": true,
       "readyForClearanceReview": true,
-      "seoWarning": {
-        "commandBoundary": {
-          "markReviewAfterHumanApproval": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "publishDryRunAfterReview": "not-applicable-public-page"
-        },
-        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-        "humanChecklist": [
-          "Review file: content/blog/ai-model-selection-customer-service-guide.mdx.",
-          "Review status: published.",
-          "Confirm primary keyword intent: 客服 AI 模型选型.",
-          "Snippet warning: description may be thin for search snippets.",
-          "Snippet warning: primary keyword is not an exact title substring.",
-          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-          "Confirm description length remains suitable for search snippets after editing.",
-          "Check whether the title can naturally include the exact primary keyword: 客服 AI 模型选型.",
-          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
-          "Do not mark review or publish from this remediation pack."
-        ],
-        "manualActions": [
-          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-          "Confirm description length remains suitable for search snippets after editing.",
-          "Check whether the title can naturally include the exact primary keyword: 客服 AI 模型选型.",
-          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
-        ],
-        "manualFixReady": true,
-        "primaryKeyword": "客服 AI 模型选型",
-        "priority": 136,
-        "scope": [
-          "public",
-          "expansion",
-          "recommended",
-          "wave-1"
-        ],
-        "schemaWarnings": [],
-        "snippetWarnings": [
-          "description may be thin for search snippets",
-          "primary keyword is not an exact title substring"
-        ],
-        "status": "published",
-        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
-        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-        "unsafeReasons": []
-      },
+      "seoWarning": null,
       "sourceDecisions": [],
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
       "unsafeReasons": []
     },
     {
-      "alreadyPublished": true,
+      "alreadyPublished": false,
       "articleState": {
         "humanReviewRequired": true,
-        "noindex": false,
+        "noindex": true,
         "qualityScore": 100,
         "sourceNotes": true,
-        "status": "published"
+        "status": "draft"
       },
       "blockers": [],
       "clearanceActions": [
-        "Confirm the public page still answers one clear search intent.",
+        "Confirm the draft still answers one clear search intent.",
         "Verify source-backed claims before any status change.",
-        "Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements.",
-        "Review redirect https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction and approve or replace during human review.",
-        "Review redirect https://platform.openai.com/docs -> https://developers.openai.com/api/docs and approve or replace during human review.",
-        "Review redirect https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents and approve or replace during human review.",
-        "Review public internal link suggestion: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).",
+        "Keep status=draft, noindex=true, and humanReviewRequired=true until approval.",
+        "SEO: Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
+        "SEO: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+        "SEO: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Review public internal link suggestion: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide).",
         "Review proposed meta description from copydesk brief before approval.",
         "Check that popular prompt lane framing stays broad enough for real search demand.",
         "Check that mass-search theme framing is covered without stuffing keywords.",
         "Run mark:review only after explicit human approval; publish confirm remains excluded."
       ],
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
         "publishConfirm": "not-included",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
         "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
       },
       "copydeskBrief": {
-        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
         "internalLink": {
-          "currentPublicLinks": 0,
-          "reason": "keyword overlap: ai, vercel, 部署, 工具, 上线, 检查",
-          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
-          "url": "/blog/codex-vercel-deploy-preflight-checklist"
+          "currentPublicLinks": 1,
+          "reason": "same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做",
+          "title": "多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估",
+          "url": "/blog/multi-model-router-fallback-guide"
         },
-        "kind": "public-gap-review",
-        "priority": 806,
-        "proposedDescription": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
+        "kind": "wave-approval",
+        "priority": 1002,
+        "proposedDescription": "整理 Vercel AI Gateway 多模型接入思路，覆盖统一 API、provider 切换、日志、成本、降级、AI SDK 和上线检查。",
         "proposedOpeningAdditions": [
-          "在开头 200 字内自然回答一次“AI Agent deployment tutorial”这个搜索意图，先给结论再展开步骤。",
-          "补一个小节或提示框覆盖缺口：tool calling、human review、permissions、logs。",
-          "在相关段落加入公开内链：Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist)。"
+          "在开头 200 字内自然回答一次“Vercel AI Gateway 多模型”这个搜索意图，先给结论再展开步骤。",
+          "在相关段落加入公开内链：多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide)。"
         ],
-        "proposedTitle": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "proposedTitle": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
         "ready": true,
-        "scope": "public-gap-wave-1",
+        "scope": "wave-2",
         "searchEvidence": {
           "descriptionHit": true,
-          "exactQueryMatches": 4,
+          "exactQueryMatches": 0,
           "matchedFamilies": 7,
-          "queryCount": 35,
-          "seedExamples": [
-            "AI Agent deployment tutorial",
-            "agent tool calling tutorial",
-            "OpenAI Agents SDK beginner guide",
-            "Vercel AI SDK agent"
-          ],
+          "queryCount": 30,
+          "seedExamples": [],
           "titleHit": true
         },
         "sourceWarnings": [
-          "no exact search-seed phrase appears in title, description, or body",
-          "article currently has no links to published articles",
-          "theme still has missing subtopics: tool calling, human review, permissions, logs"
+          "primary keyword is not an exact title substring",
+          "few exact query variant matches in article text"
         ],
-        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
         "warningRemediation": [
-          "Rewrite the meta description to name the reader, outcome, and search phrase: AI Agent deployment tutorial.",
-          "Add one contextual link to a published article before approval.",
-          "Decide whether missing subtopics should become a short section or a follow-up article.",
-          "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
-          "Review the suggested public internal link before publishing: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).",
-          "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+          "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
+          "Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型."
         ]
       },
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
       "hasFailedSourceDecision": false,
       "immediate": true,
       "massSearchThemes": 1,
-      "popularPromptLanes": 4,
-      "priorityScore": 773,
+      "popularPromptLanes": 2,
+      "priorityScore": 439,
+      "readyForHumanApproval": true,
+      "readyForClearanceReview": true,
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "npm run publish:articles -- --dry-run"
+        },
+        "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/vercel-ai-gateway-multi-provider-guide.mdx.",
+          "Review status: draft.",
+          "Confirm primary keyword intent: Vercel AI Gateway 多模型.",
+          "Snippet warning: primary keyword is not an exact title substring.",
+          "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
+        ],
+        "manualFixReady": true,
+        "primaryKeyword": "Vercel AI Gateway 多模型",
+        "priority": 48,
+        "scope": [
+          "expansion",
+          "recommended"
+        ],
+        "schemaWarnings": [],
+        "snippetWarnings": [
+          "primary keyword is not an exact title substring"
+        ],
+        "status": "draft",
+        "stopBefore": "Stop before human approval before changing draft metadata, mark:review, or publishing.",
+        "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+        "unsafeReasons": []
+      },
+      "sourceDecisions": [],
+      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+      "unsafeReasons": []
+    },
+    {
+      "alreadyPublished": false,
+      "articleState": {
+        "humanReviewRequired": true,
+        "noindex": true,
+        "qualityScore": 100,
+        "sourceNotes": true,
+        "status": "draft"
+      },
+      "blockers": [],
+      "clearanceActions": [
+        "Confirm the draft still answers one clear search intent.",
+        "Verify source-backed claims before any status change.",
+        "Keep status=draft, noindex=true, and humanReviewRequired=true until approval.",
+        "Review redirect https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction and approve or replace during human review.",
+        "Review redirect https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/ and approve or replace during human review.",
+        "Review redirect https://platform.openai.com/docs -> https://developers.openai.com/api/docs and approve or replace during human review.",
+        "Check that popular prompt lane framing stays broad enough for real search demand.",
+        "Check that mass-search theme framing is covered without stuffing keywords.",
+        "Run mark:review only after explicit human approval; publish confirm remains excluded."
+      ],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx --confirm-human",
+        "publishConfirm": "not-included",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/supabase-pgvector-rag-guide.mdx",
+        "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
+      },
+      "copydeskBrief": null,
+      "file": "content/blog/supabase-pgvector-rag-guide.mdx",
+      "hasFailedSourceDecision": false,
+      "immediate": true,
+      "massSearchThemes": 1,
+      "popularPromptLanes": 1,
+      "priorityScore": 415,
       "readyForHumanApproval": true,
       "readyForClearanceReview": true,
       "seoWarning": null,
@@ -330,13 +331,13 @@
             "Find a more specific official source if the redirect lands on a generic page.",
             "Keep the article draft/noindex/humanReviewRequired until approval."
           ],
-          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "file": "content/blog/supabase-pgvector-rag-guide.mdx",
           "finalUrl": "https://ai-sdk.dev/docs/introduction",
           "kind": "redirected-url",
           "manualChecklist": [
             "Original URL: https://ai-sdk.dev/docs",
             "Final URL: https://ai-sdk.dev/docs/introduction",
-            "Scopes: current-review, public-gap-decision, next-source-pack, broad-first-coverage",
+            "Scopes: next-source-pack",
             "Confirm the replacement source covers the exact claim family.",
             "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
             "Use prompt-library sources only as market/category evidence.",
@@ -345,17 +346,13 @@
           "originalUrl": "https://ai-sdk.dev/docs",
           "recommendedCandidate": null,
           "referenceLabels": [
-            "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-            "https://ai-sdk.dev/docs"
+            "Vercel AI SDK docs: https://ai-sdk.dev/docs"
           ],
           "scopes": [
-            "current-review",
-            "public-gap-decision",
-            "next-source-pack",
-            "broad-first-coverage"
+            "next-source-pack"
           ],
           "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
           "unsafeReasons": []
         },
         {
@@ -366,13 +363,45 @@
             "Find a more specific official source if the redirect lands on a generic page.",
             "Keep the article draft/noindex/humanReviewRequired until approval."
           ],
-          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "file": "content/blog/supabase-pgvector-rag-guide.mdx",
+          "finalUrl": "https://developers.llamaindex.ai/python/framework/",
+          "kind": "redirected-url",
+          "manualChecklist": [
+            "Original URL: https://docs.llamaindex.ai",
+            "Final URL: https://developers.llamaindex.ai/python/framework/",
+            "Scopes: next-source-pack",
+            "Confirm the replacement source covers the exact claim family.",
+            "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+            "Use prompt-library sources only as market/category evidence.",
+            "Do not run mark:review or publish commands from this decision pack."
+          ],
+          "originalUrl": "https://docs.llamaindex.ai",
+          "recommendedCandidate": null,
+          "referenceLabels": [
+            "LlamaIndex docs: https://docs.llamaindex.ai"
+          ],
+          "scopes": [
+            "next-source-pack"
+          ],
+          "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+          "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
+          "unsafeReasons": []
+        },
+        {
+          "alternatives": [],
+          "decisionOptions": [
+            "Approve the redirected final URL as canonical if it is content-equivalent.",
+            "Replace the original URL with the final URL during human review if the redirect is stable.",
+            "Find a more specific official source if the redirect lands on a generic page.",
+            "Keep the article draft/noindex/humanReviewRequired until approval."
+          ],
+          "file": "content/blog/supabase-pgvector-rag-guide.mdx",
           "finalUrl": "https://developers.openai.com/api/docs",
           "kind": "redirected-url",
           "manualChecklist": [
             "Original URL: https://platform.openai.com/docs",
             "Final URL: https://developers.openai.com/api/docs",
-            "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
+            "Scopes: next-source-pack",
             "Confirm the replacement source covers the exact claim family.",
             "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
             "Use prompt-library sources only as market/category evidence.",
@@ -381,16 +410,13 @@
           "originalUrl": "https://platform.openai.com/docs",
           "recommendedCandidate": null,
           "referenceLabels": [
-            "https://platform.openai.com/docs",
             "OpenAI API docs: https://platform.openai.com/docs"
           ],
           "scopes": [
-            "public-gap-decision",
-            "next-source-pack",
-            "broad-first-coverage"
+            "next-source-pack"
           ],
           "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
           "unsafeReasons": []
         },
         {
@@ -401,83 +427,13 @@
             "Find a more specific official source if the redirect lands on a generic page.",
             "Keep the article draft/noindex/humanReviewRequired until approval."
           ],
-          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-          "finalUrl": "https://developers.openai.com/api/docs/guides/agents",
-          "kind": "redirected-url",
-          "manualChecklist": [
-            "Original URL: https://platform.openai.com/docs/guides/agents",
-            "Final URL: https://developers.openai.com/api/docs/guides/agents",
-            "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
-            "Confirm the replacement source covers the exact claim family.",
-            "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
-            "Use prompt-library sources only as market/category evidence.",
-            "Do not run mark:review or publish commands from this decision pack."
-          ],
-          "originalUrl": "https://platform.openai.com/docs/guides/agents",
-          "recommendedCandidate": null,
-          "referenceLabels": [
-            "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
-            "https://platform.openai.com/docs/guides/agents"
-          ],
-          "scopes": [
-            "public-gap-decision",
-            "next-source-pack",
-            "broad-first-coverage"
-          ],
-          "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-          "unsafeReasons": []
-        },
-        {
-          "alternatives": [],
-          "decisionOptions": [
-            "Approve the redirected final URL as canonical if it is content-equivalent.",
-            "Replace the original URL with the final URL during human review if the redirect is stable.",
-            "Find a more specific official source if the redirect lands on a generic page.",
-            "Keep the article draft/noindex/humanReviewRequired until approval."
-          ],
-          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-          "finalUrl": "https://developers.openai.com/api/docs/guides/prompt-engineering",
-          "kind": "redirected-url",
-          "manualChecklist": [
-            "Original URL: https://platform.openai.com/docs/guides/prompt-engineering",
-            "Final URL: https://developers.openai.com/api/docs/guides/prompt-engineering",
-            "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
-            "Confirm the replacement source covers the exact claim family.",
-            "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
-            "Use prompt-library sources only as market/category evidence.",
-            "Do not run mark:review or publish commands from this decision pack."
-          ],
-          "originalUrl": "https://platform.openai.com/docs/guides/prompt-engineering",
-          "recommendedCandidate": null,
-          "referenceLabels": [
-            "https://platform.openai.com/docs/guides/prompt-engineering",
-            "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
-          ],
-          "scopes": [
-            "public-gap-decision",
-            "next-source-pack",
-            "broad-first-coverage"
-          ],
-          "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-          "unsafeReasons": []
-        },
-        {
-          "alternatives": [],
-          "decisionOptions": [
-            "Approve the redirected final URL as canonical if it is content-equivalent.",
-            "Replace the original URL with the final URL during human review if the redirect is stable.",
-            "Find a more specific official source if the redirect lands on a generic page.",
-            "Keep the article draft/noindex/humanReviewRequired until approval."
-          ],
-          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "file": "content/blog/supabase-pgvector-rag-guide.mdx",
           "finalUrl": "https://developers.openai.com/api/docs/guides/retrieval",
           "kind": "redirected-url",
           "manualChecklist": [
             "Original URL: https://platform.openai.com/docs/guides/retrieval",
             "Final URL: https://developers.openai.com/api/docs/guides/retrieval",
-            "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
+            "Scopes: next-source-pack",
             "Confirm the replacement source covers the exact claim family.",
             "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
             "Use prompt-library sources only as market/category evidence.",
@@ -486,16 +442,13 @@
           "originalUrl": "https://platform.openai.com/docs/guides/retrieval",
           "recommendedCandidate": null,
           "referenceLabels": [
-            "https://platform.openai.com/docs/guides/retrieval",
             "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
           ],
           "scopes": [
-            "public-gap-decision",
-            "next-source-pack",
-            "broad-first-coverage"
+            "next-source-pack"
           ],
           "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
           "unsafeReasons": []
         },
         {
@@ -506,13 +459,13 @@
             "Find a more specific official source if the redirect lands on a generic page.",
             "Keep the article draft/noindex/humanReviewRequired until approval."
           ],
-          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "file": "content/blog/supabase-pgvector-rag-guide.mdx",
           "finalUrl": "https://docs.langchain.com/oss/python/langchain/overview",
           "kind": "redirected-url",
           "manualChecklist": [
             "Original URL: https://python.langchain.com/docs",
             "Final URL: https://docs.langchain.com/oss/python/langchain/overview",
-            "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
+            "Scopes: next-source-pack",
             "Confirm the replacement source covers the exact claim family.",
             "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
             "Use prompt-library sources only as market/category evidence.",
@@ -521,671 +474,17 @@
           "originalUrl": "https://python.langchain.com/docs",
           "recommendedCandidate": null,
           "referenceLabels": [
-            "LangChain docs: https://python.langchain.com/docs",
-            "https://python.langchain.com/docs"
+            "LangChain docs: https://python.langchain.com/docs"
           ],
           "scopes": [
-            "public-gap-decision",
-            "next-source-pack",
-            "broad-first-coverage"
+            "next-source-pack"
           ],
           "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
           "unsafeReasons": []
         }
       ],
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "unsafeReasons": []
-    },
-    {
-      "alreadyPublished": true,
-      "articleState": {
-        "humanReviewRequired": true,
-        "noindex": false,
-        "qualityScore": 100,
-        "sourceNotes": true,
-        "status": "published"
-      },
-      "blockers": [],
-      "clearanceActions": [
-        "Confirm the public page still answers one clear search intent.",
-        "Verify source-backed claims before any status change.",
-        "Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements.",
-        "Resolve failed source URL https://ai-prompts-pro.com/blog/ai-prompt-templates-business; recommended candidate: Microsoft Copilot Prompt Gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/.",
-        "Review public internal link suggestion: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner).",
-        "Review proposed meta description from copydesk brief before approval.",
-        "Check that popular prompt lane framing stays broad enough for real search demand.",
-        "Check that mass-search theme framing is covered without stuffing keywords.",
-        "Run mark:review only after explicit human approval; publish confirm remains excluded."
-      ],
-      "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
-        "publishConfirm": "not-included",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
-        "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
-      },
-      "copydeskBrief": {
-        "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
-        "internalLink": {
-          "currentPublicLinks": 0,
-          "reason": "keyword overlap: proposal, 客户沟通, 怎么, 客户, 需求, 户沟",
-          "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单",
-          "url": "/blog/upwork-client-requirements-analysis-beginner"
-        },
-        "kind": "public-gap-review",
-        "priority": 801,
-        "proposedDescription": "整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。",
-        "proposedOpeningAdditions": [
-          "在开头 200 字内自然回答一次“ChatGPT prompts for business”这个搜索意图，先给结论再展开步骤。",
-          "补一个小节或提示框覆盖缺口：customer service。",
-          "在相关段落加入公开内链：Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner)。"
-        ],
-        "proposedTitle": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-        "ready": true,
-        "scope": "public-gap-wave-1",
-        "searchEvidence": {
-          "descriptionHit": true,
-          "exactQueryMatches": 4,
-          "matchedFamilies": 7,
-          "queryCount": 35,
-          "seedExamples": [
-            "ChatGPT prompts for business",
-            "AI prompt template library",
-            "industry AI prompts",
-            "best AI prompts for work"
-          ],
-          "titleHit": true
-        },
-        "sourceWarnings": [
-          "article currently has no links to published articles",
-          "theme still has missing subtopics: customer service"
-        ],
-        "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-        "warningRemediation": [
-          "Add one contextual link to a published article before approval.",
-          "Decide whether missing subtopics should become a short section or a follow-up article.",
-          "Review the suggested public internal link before publishing: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner).",
-          "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
-        ]
-      },
-      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
-      "hasFailedSourceDecision": true,
-      "immediate": true,
-      "massSearchThemes": 1,
-      "popularPromptLanes": 6,
-      "priorityScore": 769,
-      "readyForHumanApproval": true,
-      "readyForClearanceReview": true,
-      "seoWarning": null,
-      "sourceDecisions": [
-        {
-          "alternatives": [
-            {
-              "title": "OpenAI prompt engineering guide",
-              "url": "https://platform.openai.com/docs/guides/prompt-engineering",
-              "sourceType": "official-doc",
-              "reason": "Official OpenAI prompting guidance; useful for replacing generic prompt-template claims with source-backed practice notes.",
-              "appliesTo": [
-                "content/blog/industry-ai-prompts-template-library-2026.mdx"
-              ]
-            },
-            {
-              "title": "OpenAI prompt generation guide",
-              "url": "https://platform.openai.com/docs/guides/prompt-generation",
-              "sourceType": "official-doc",
-              "reason": "Official OpenAI guide for generating and improving prompts; useful for template-building and prompt-iteration claims.",
-              "appliesTo": [
-                "content/blog/industry-ai-prompts-template-library-2026.mdx"
-              ]
-            },
-            {
-              "title": "Google Workspace Gemini prompting guide",
-              "url": "https://support.google.com/docs/answer/15013615",
-              "sourceType": "official-doc",
-              "reason": "Official Google Workspace support page; useful for cross-checking business prompting language in Docs/Gemini workflows.",
-              "appliesTo": [
-                "content/blog/industry-ai-prompts-template-library-2026.mdx"
-              ]
-            },
-            {
-              "title": "FwdSlash prompt template",
-              "url": "https://www.fwdslash.ai/prompt-template",
-              "sourceType": "prompt-library",
-              "reason": "Prompt-template library signal; useful only as market/category evidence after official-source claims are separately covered.",
-              "appliesTo": [
-                "content/blog/industry-ai-prompts-template-library-2026.mdx"
-              ]
-            },
-            {
-              "title": "PromptFluent prompt browser",
-              "url": "https://www.promptfluent.com/browse",
-              "sourceType": "prompt-library",
-              "reason": "Prompt-library category signal; useful for seeing common prompt taxonomy and searchable user intent.",
-              "appliesTo": [
-                "content/blog/industry-ai-prompts-template-library-2026.mdx"
-              ]
-            },
-            {
-              "title": "Sensara prompt library",
-              "url": "https://sensara.io/prompts/",
-              "sourceType": "prompt-library",
-              "reason": "Prompt-library market signal; useful for validating that prompt-template content maps to discoverable query families.",
-              "appliesTo": [
-                "content/blog/industry-ai-prompts-template-library-2026.mdx"
-              ]
-            },
-            {
-              "title": "Pmtly prompt library",
-              "url": "https://pmtly.com/",
-              "sourceType": "prompt-library",
-              "reason": "Prompt-library market signal; useful only as supplemental evidence for category demand, not as authority for technical claims.",
-              "appliesTo": [
-                "content/blog/industry-ai-prompts-template-library-2026.mdx"
-              ]
-            }
-          ],
-          "decisionOptions": [
-            "Replace the failed URL with the recommended official source if it covers the same claim.",
-            "Use one market-signal alternative only for category-demand evidence, not for technical or policy authority.",
-            "Remove or rewrite the dependent claim if no source candidate covers it.",
-            "Keep the article draft/noindex/humanReviewRequired until approval."
-          ],
-          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
-          "kind": "failed-url",
-          "manualChecklist": [
-            "Original URL: https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
-            "Scopes: public-gap-decision, broad-first-coverage",
-            "Confirm the replacement source covers the exact claim family.",
-            "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
-            "Use prompt-library sources only as market/category evidence.",
-            "Do not run mark:review or publish commands from this decision pack."
-          ],
-          "originalUrl": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
-          "recommendedCandidate": {
-            "title": "Microsoft Copilot Prompt Gallery",
-            "url": "https://adoption.microsoft.com/en-us/copilot/prompt-gallery/",
-            "sourceType": "official-doc",
-            "reason": "Official Microsoft prompt gallery; useful for validating business prompt patterns and workplace use cases.",
-            "appliesTo": [
-              "content/blog/industry-ai-prompts-template-library-2026.mdx"
-            ]
-          },
-          "referenceLabels": [
-            "https://ai-prompts-pro.com/blog/ai-prompt-templates-business"
-          ],
-          "scopes": [
-            "public-gap-decision",
-            "broad-first-coverage"
-          ],
-          "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-          "unsafeReasons": []
-        }
-      ],
-      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-      "unsafeReasons": []
-    },
-    {
-      "alreadyPublished": true,
-      "articleState": {
-        "humanReviewRequired": true,
-        "noindex": false,
-        "qualityScore": 100,
-        "sourceNotes": true,
-        "status": "published"
-      },
-      "blockers": [],
-      "clearanceActions": [
-        "Confirm the public page still answers one clear search intent.",
-        "Verify source-backed claims before any status change.",
-        "Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements.",
-        "Review public internal link suggestion: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).",
-        "Review proposed meta description from copydesk brief before approval.",
-        "Run mark:review only after explicit human approval; publish confirm remains excluded."
-      ],
-      "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-        "publishConfirm": "not-included",
-        "stopBefore": "Run mark:review only after human source/fact approval. Run publish dry-run after review status. Do not run publish with --confirm here."
-      },
-      "copydeskBrief": {
-        "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-        "internalLink": {
-          "currentPublicLinks": 0,
-          "reason": "keyword overlap: ai, 部署, 检查, 什么, 新手, 上线",
-          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
-          "url": "/blog/codex-vercel-deploy-preflight-checklist"
-        },
-        "kind": "public-gap-review",
-        "priority": 801,
-        "proposedDescription": "面向新手整理大模型部署路径，讲清 API 调用、托管推理端点、私有化部署、vLLM/TGI/SGLang、成本、延迟、安全和验收。",
-        "proposedOpeningAdditions": [
-          "在开头 200 字内自然回答一次“大模型部署教程”这个搜索意图，先给结论再展开步骤。",
-          "在相关段落加入公开内链：Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist)。"
-        ],
-        "proposedTitle": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-        "ready": true,
-        "scope": "public-gap-wave-1",
-        "searchEvidence": {
-          "descriptionHit": true,
-          "exactQueryMatches": 2,
-          "matchedFamilies": 7,
-          "queryCount": 35,
-          "seedExamples": [
-            "大模型部署教程",
-            "Ollama 本地部署教程",
-            "vLLM 部署教程",
-            "RunPod vLLM serverless"
-          ],
-          "titleHit": true
-        },
-        "sourceWarnings": [
-          "no exact search-seed phrase appears in title, description, or body",
-          "article currently has no links to published articles"
-        ],
-        "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-        "warningRemediation": [
-          "Rewrite the meta description to name the reader, outcome, and search phrase: 大模型部署教程.",
-          "Add one contextual link to a published article before approval.",
-          "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
-          "Review the suggested public internal link before publishing: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist)."
-        ]
-      },
-      "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-      "hasFailedSourceDecision": false,
-      "immediate": false,
-      "massSearchThemes": 0,
-      "popularPromptLanes": 0,
-      "priorityScore": 70,
-      "readyForHumanApproval": true,
-      "readyForClearanceReview": true,
-      "seoWarning": null,
-      "sourceDecisions": [],
-      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-      "unsafeReasons": []
-    },
-    {
-      "alreadyPublished": true,
-      "articleState": {
-        "humanReviewRequired": true,
-        "noindex": false,
-        "qualityScore": 100,
-        "sourceNotes": true,
-        "status": "published"
-      },
-      "blockers": [],
-      "clearanceActions": [
-        "Confirm the public page still answers one clear search intent.",
-        "Verify source-backed claims before any status change.",
-        "Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements.",
-        "SEO: Check whether the title can naturally include the exact primary keyword: n8n AI Agent 知识库记忆.",
-        "SEO: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO: Confirm the H1/title/description still answer the same search intent after any metadata change.",
-        "Check that popular prompt lane framing stays broad enough for real search demand.",
-        "Check that mass-search theme framing is covered without stuffing keywords.",
-        "Run mark:review only after explicit human approval; publish confirm remains excluded."
-      ],
-      "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-        "publishConfirm": "not-included",
-        "stopBefore": "Run mark:review only after human source/fact approval. Run publish dry-run after review status. Do not run publish with --confirm here."
-      },
-      "copydeskBrief": null,
-      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-      "hasFailedSourceDecision": false,
-      "immediate": false,
-      "massSearchThemes": 3,
-      "popularPromptLanes": 4,
-      "priorityScore": 64,
-      "readyForHumanApproval": true,
-      "readyForClearanceReview": true,
-      "seoWarning": {
-        "commandBoundary": {
-          "markReviewAfterHumanApproval": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "publishDryRunAfterReview": "not-applicable-public-page"
-        },
-        "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-        "humanChecklist": [
-          "Review file: content/blog/n8n-ai-agent-rag-memory-guide.mdx.",
-          "Review status: published.",
-          "Confirm primary keyword intent: n8n AI Agent 知识库记忆.",
-          "Snippet warning: primary keyword is not an exact title substring.",
-          "Check whether the title can naturally include the exact primary keyword: n8n AI Agent 知识库记忆.",
-          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
-          "Do not mark review or publish from this remediation pack."
-        ],
-        "manualActions": [
-          "Check whether the title can naturally include the exact primary keyword: n8n AI Agent 知识库记忆.",
-          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
-        ],
-        "manualFixReady": true,
-        "primaryKeyword": "n8n AI Agent 知识库记忆",
-        "priority": 58,
-        "scope": [
-          "public"
-        ],
-        "schemaWarnings": [],
-        "snippetWarnings": [
-          "primary keyword is not an exact title substring"
-        ],
-        "status": "published",
-        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
-        "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
-        "unsafeReasons": []
-      },
-      "sourceDecisions": [],
-      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
-      "unsafeReasons": []
-    },
-    {
-      "alreadyPublished": true,
-      "articleState": {
-        "humanReviewRequired": true,
-        "noindex": false,
-        "qualityScore": 100,
-        "sourceNotes": true,
-        "status": "published"
-      },
-      "blockers": [],
-      "clearanceActions": [
-        "Confirm the public page still answers one clear search intent.",
-        "Verify source-backed claims before any status change.",
-        "Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements.",
-        "SEO: Check whether the title can naturally include the exact primary keyword: MCP Server 部署安全.",
-        "SEO: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO: Confirm the H1/title/description still answer the same search intent after any metadata change.",
-        "Check that popular prompt lane framing stays broad enough for real search demand.",
-        "Check that mass-search theme framing is covered without stuffing keywords.",
-        "Run mark:review only after explicit human approval; publish confirm remains excluded."
-      ],
-      "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/mcp-server-deployment-security-checklist.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/mcp-server-deployment-security-checklist.mdx",
-        "publishConfirm": "not-included",
-        "stopBefore": "Run mark:review only after human source/fact approval. Run publish dry-run after review status. Do not run publish with --confirm here."
-      },
-      "copydeskBrief": null,
-      "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
-      "hasFailedSourceDecision": false,
-      "immediate": false,
-      "massSearchThemes": 2,
-      "popularPromptLanes": 4,
-      "priorityScore": 64,
-      "readyForHumanApproval": true,
-      "readyForClearanceReview": true,
-      "seoWarning": {
-        "commandBoundary": {
-          "markReviewAfterHumanApproval": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "publishDryRunAfterReview": "not-applicable-public-page"
-        },
-        "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
-        "humanChecklist": [
-          "Review file: content/blog/mcp-server-deployment-security-checklist.mdx.",
-          "Review status: published.",
-          "Confirm primary keyword intent: MCP Server 部署安全.",
-          "Snippet warning: primary keyword is not an exact title substring.",
-          "Check whether the title can naturally include the exact primary keyword: MCP Server 部署安全.",
-          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
-          "Do not mark review or publish from this remediation pack."
-        ],
-        "manualActions": [
-          "Check whether the title can naturally include the exact primary keyword: MCP Server 部署安全.",
-          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
-        ],
-        "manualFixReady": true,
-        "primaryKeyword": "MCP Server 部署安全",
-        "priority": 58,
-        "scope": [
-          "public"
-        ],
-        "schemaWarnings": [],
-        "snippetWarnings": [
-          "primary keyword is not an exact title substring"
-        ],
-        "status": "published",
-        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
-        "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
-        "unsafeReasons": []
-      },
-      "sourceDecisions": [],
-      "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
-      "unsafeReasons": []
-    },
-    {
-      "alreadyPublished": true,
-      "articleState": {
-        "humanReviewRequired": true,
-        "noindex": false,
-        "qualityScore": 100,
-        "sourceNotes": true,
-        "status": "published"
-      },
-      "blockers": [],
-      "clearanceActions": [
-        "Confirm the public page still answers one clear search intent.",
-        "Verify source-backed claims before any status change.",
-        "Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements.",
-        "SEO: Check whether the title can naturally include the exact primary keyword: AI API Key 安全管理.",
-        "SEO: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO: Confirm the H1/title/description still answer the same search intent after any metadata change.",
-        "Check that mass-search theme framing is covered without stuffing keywords.",
-        "Run mark:review only after explicit human approval; publish confirm remains excluded."
-      ],
-      "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx",
-        "publishConfirm": "not-included",
-        "stopBefore": "Run mark:review only after human source/fact approval. Run publish dry-run after review status. Do not run publish with --confirm here."
-      },
-      "copydeskBrief": null,
-      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-      "hasFailedSourceDecision": false,
-      "immediate": false,
-      "massSearchThemes": 1,
-      "popularPromptLanes": 0,
-      "priorityScore": 68,
-      "readyForHumanApproval": true,
-      "readyForClearanceReview": true,
-      "seoWarning": {
-        "commandBoundary": {
-          "markReviewAfterHumanApproval": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "publishDryRunAfterReview": "not-applicable-public-page"
-        },
-        "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-        "humanChecklist": [
-          "Review file: content/blog/ai-api-key-security-rotation-guide.mdx.",
-          "Review status: published.",
-          "Confirm primary keyword intent: AI API Key 安全管理.",
-          "Snippet warning: primary keyword is not an exact title substring.",
-          "Check whether the title can naturally include the exact primary keyword: AI API Key 安全管理.",
-          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
-          "Do not mark review or publish from this remediation pack."
-        ],
-        "manualActions": [
-          "Check whether the title can naturally include the exact primary keyword: AI API Key 安全管理.",
-          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
-        ],
-        "manualFixReady": true,
-        "primaryKeyword": "AI API Key 安全管理",
-        "priority": 58,
-        "scope": [
-          "public",
-          "expansion"
-        ],
-        "schemaWarnings": [],
-        "snippetWarnings": [
-          "primary keyword is not an exact title substring"
-        ],
-        "status": "published",
-        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
-        "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
-        "unsafeReasons": []
-      },
-      "sourceDecisions": [],
-      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
-      "unsafeReasons": []
-    },
-    {
-      "alreadyPublished": true,
-      "articleState": {
-        "humanReviewRequired": true,
-        "noindex": false,
-        "qualityScore": 100,
-        "sourceNotes": true,
-        "status": "published"
-      },
-      "blockers": [],
-      "clearanceActions": [
-        "Confirm the public page still answers one clear search intent.",
-        "Verify source-backed claims before any status change.",
-        "Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements.",
-        "Review redirect https://docs.helicone.ai/ -> https://docs.helicone.ai/getting-started/quick-start and approve or replace during human review.",
-        "Review redirect https://docs.ragas.io/ -> https://docs.ragas.io/en/stable/ and approve or replace during human review.",
-        "SEO: Check whether the title can naturally include the exact primary keyword: Agent 工具权限控制.",
-        "SEO: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO: Confirm the H1/title/description still answer the same search intent after any metadata change.",
-        "Run mark:review only after explicit human approval; publish confirm remains excluded."
-      ],
-      "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/agent-tool-permission-safety-guide.mdx --confirm-human",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/agent-tool-permission-safety-guide.mdx",
-        "publishConfirm": "not-included",
-        "stopBefore": "Run mark:review only after human source/fact approval. Run publish dry-run after review status. Do not run publish with --confirm here."
-      },
-      "copydeskBrief": null,
-      "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-      "hasFailedSourceDecision": false,
-      "immediate": false,
-      "massSearchThemes": 0,
-      "popularPromptLanes": 0,
-      "priorityScore": 60,
-      "readyForHumanApproval": true,
-      "readyForClearanceReview": true,
-      "seoWarning": {
-        "commandBoundary": {
-          "markReviewAfterHumanApproval": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "publishDryRunAfterReview": "not-applicable-public-page"
-        },
-        "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-        "humanChecklist": [
-          "Review file: content/blog/agent-tool-permission-safety-guide.mdx.",
-          "Review status: published.",
-          "Confirm primary keyword intent: Agent 工具权限控制.",
-          "Snippet warning: primary keyword is not an exact title substring.",
-          "Check whether the title can naturally include the exact primary keyword: Agent 工具权限控制.",
-          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
-          "Do not mark review or publish from this remediation pack."
-        ],
-        "manualActions": [
-          "Check whether the title can naturally include the exact primary keyword: Agent 工具权限控制.",
-          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
-        ],
-        "manualFixReady": true,
-        "primaryKeyword": "Agent 工具权限控制",
-        "priority": 58,
-        "scope": [
-          "public"
-        ],
-        "schemaWarnings": [],
-        "snippetWarnings": [
-          "primary keyword is not an exact title substring"
-        ],
-        "status": "published",
-        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
-        "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
-        "unsafeReasons": []
-      },
-      "sourceDecisions": [
-        {
-          "alternatives": [],
-          "decisionOptions": [
-            "Approve the redirected final URL as canonical if it is content-equivalent.",
-            "Replace the original URL with the final URL during human review if the redirect is stable.",
-            "Find a more specific official source if the redirect lands on a generic page.",
-            "Keep the article draft/noindex/humanReviewRequired until approval."
-          ],
-          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-          "finalUrl": "https://docs.helicone.ai/getting-started/quick-start",
-          "kind": "redirected-url",
-          "manualChecklist": [
-            "Original URL: https://docs.helicone.ai/",
-            "Final URL: https://docs.helicone.ai/getting-started/quick-start",
-            "Scopes: public-gap-decision, broad-first-coverage",
-            "Confirm the replacement source covers the exact claim family.",
-            "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
-            "Use prompt-library sources only as market/category evidence.",
-            "Do not run mark:review or publish commands from this decision pack."
-          ],
-          "originalUrl": "https://docs.helicone.ai/",
-          "recommendedCandidate": null,
-          "referenceLabels": [
-            "https://docs.helicone.ai/"
-          ],
-          "scopes": [
-            "public-gap-decision",
-            "broad-first-coverage"
-          ],
-          "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
-          "unsafeReasons": []
-        },
-        {
-          "alternatives": [],
-          "decisionOptions": [
-            "Approve the redirected final URL as canonical if it is content-equivalent.",
-            "Replace the original URL with the final URL during human review if the redirect is stable.",
-            "Find a more specific official source if the redirect lands on a generic page.",
-            "Keep the article draft/noindex/humanReviewRequired until approval."
-          ],
-          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-          "finalUrl": "https://docs.ragas.io/en/stable/",
-          "kind": "redirected-url",
-          "manualChecklist": [
-            "Original URL: https://docs.ragas.io/",
-            "Final URL: https://docs.ragas.io/en/stable/",
-            "Scopes: public-gap-decision, broad-first-coverage",
-            "Confirm the replacement source covers the exact claim family.",
-            "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
-            "Use prompt-library sources only as market/category evidence.",
-            "Do not run mark:review or publish commands from this decision pack."
-          ],
-          "originalUrl": "https://docs.ragas.io/",
-          "recommendedCandidate": null,
-          "referenceLabels": [
-            "https://docs.ragas.io/"
-          ],
-          "scopes": [
-            "public-gap-decision",
-            "broad-first-coverage"
-          ],
-          "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
-          "unsafeReasons": []
-        }
-      ],
-      "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+      "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
       "unsafeReasons": []
     }
   ]

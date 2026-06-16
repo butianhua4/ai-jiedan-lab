@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T05:24:43.670Z",
+  "generatedAt": "2026-06-16T18:18:34.406Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -256,34 +256,6 @@
       ],
       "publicMatches": [
         {
-          "category": "工具导航",
-          "descriptionLength": 79,
-          "file": "content/blog/github-command-cheatsheet-beginner.mdx",
-          "slug": "github-command-cheatsheet-beginner",
-          "tags": [
-            "GitHub",
-            "Git",
-            "新手教程",
-            "AI 工具实践"
-          ],
-          "title": "GitHub 常用命令表新手怎么记",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "工具导航",
-          "descriptionLength": 83,
-          "file": "content/blog/github-command-cheatsheet-beginner-checklist.mdx",
-          "slug": "github-command-cheatsheet-beginner-checklist",
-          "tags": [
-            "GitHub",
-            "Git",
-            "检查清单",
-            "AI 工具实践"
-          ],
-          "title": "GitHub 常用命令新手检查清单",
-          "updatedAt": "2026-06-14"
-        },
-        {
           "category": "AI 自由职业路线",
           "descriptionLength": 62,
           "file": "content/blog/ai-output-unstable-risk-control.mdx",
@@ -323,6 +295,34 @@
             "人工审核"
           ],
           "title": "AI 输出不稳定风险控制常见错误",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "工具导航",
+          "descriptionLength": 79,
+          "file": "content/blog/github-command-cheatsheet-beginner.mdx",
+          "slug": "github-command-cheatsheet-beginner",
+          "tags": [
+            "GitHub",
+            "Git",
+            "新手教程",
+            "AI 工具实践"
+          ],
+          "title": "GitHub 常用命令表新手怎么记",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "工具导航",
+          "descriptionLength": 83,
+          "file": "content/blog/github-command-cheatsheet-beginner-checklist.mdx",
+          "slug": "github-command-cheatsheet-beginner-checklist",
+          "tags": [
+            "GitHub",
+            "Git",
+            "检查清单",
+            "AI 工具实践"
+          ],
+          "title": "GitHub 常用命令新手检查清单",
           "updatedAt": "2026-06-14"
         }
       ],
@@ -435,76 +435,6 @@
       ],
       "publicMatches": [
         {
-          "category": "工具流程",
-          "descriptionLength": 74,
-          "file": "content/blog/claude-code-bug-prompt.mdx",
-          "slug": "claude-code-bug-prompt",
-          "tags": [
-            "工具流程",
-            "Claude Code",
-            "Bug 修复",
-            "AI 工具实践"
-          ],
-          "title": "Claude Code 修 bug 的 prompt 怎么写",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "工具流程",
-          "descriptionLength": 67,
-          "file": "content/blog/claude-code-bug-prompt-checklist.mdx",
-          "slug": "claude-code-bug-prompt-checklist",
-          "tags": [
-            "工具流程",
-            "Claude Code",
-            "检查清单",
-            "Bug 修复"
-          ],
-          "title": "Claude Code Bug Prompt 检查清单",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "工具流程",
-          "descriptionLength": 73,
-          "file": "content/blog/claude-code-bug-prompt-freelance-scope.mdx",
-          "slug": "claude-code-bug-prompt-freelance-scope",
-          "tags": [
-            "工具流程",
-            "Claude Code",
-            "项目范围",
-            "Bug 修复"
-          ],
-          "title": "Claude Code Bug Prompt 项目前怎么判断范围",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "工具流程",
-          "descriptionLength": 70,
-          "file": "content/blog/claude-code-bug-prompt-mistakes.mdx",
-          "slug": "claude-code-bug-prompt-mistakes",
-          "tags": [
-            "工具流程",
-            "Claude Code",
-            "常见错误",
-            "Bug 修复"
-          ],
-          "title": "Claude Code Bug Prompt 常见错误",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 工具",
-          "descriptionLength": 56,
-          "file": "content/blog/chatgpt-prompt-template-beginner.mdx",
-          "slug": "chatgpt-prompt-template-beginner",
-          "tags": [
-            "ChatGPT",
-            "提示词",
-            "AI 工具",
-            "新手教程"
-          ],
-          "title": "ChatGPT 提示词怎么写：新手可复制的 5 段式模板",
-          "updatedAt": "2026-06-14"
-        },
-        {
           "category": "AI 基建",
           "descriptionLength": 96,
           "file": "content/blog/promptfoo-llm-evaluation-beginner-guide.mdx",
@@ -530,6 +460,20 @@
             "AI 基建"
           ],
           "title": "RAG 提示词注入怎么防：知识库不能盲目信任文档内容",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 工具",
+          "descriptionLength": 56,
+          "file": "content/blog/chatgpt-prompt-template-beginner.mdx",
+          "slug": "chatgpt-prompt-template-beginner",
+          "tags": [
+            "ChatGPT",
+            "提示词",
+            "AI 工具",
+            "新手教程"
+          ],
+          "title": "ChatGPT 提示词怎么写：新手可复制的 5 段式模板",
           "updatedAt": "2026-06-14"
         },
         {
@@ -783,6 +727,62 @@
           ],
           "title": "软件开发 AI 提示词模板：需求拆解、代码审查、Bug 排查和测试用例",
           "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "工具流程",
+          "descriptionLength": 74,
+          "file": "content/blog/claude-code-bug-prompt.mdx",
+          "slug": "claude-code-bug-prompt",
+          "tags": [
+            "工具流程",
+            "Claude Code",
+            "Bug 修复",
+            "AI 工具实践"
+          ],
+          "title": "Claude Code 修 bug 的 prompt 怎么写",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "工具流程",
+          "descriptionLength": 67,
+          "file": "content/blog/claude-code-bug-prompt-checklist.mdx",
+          "slug": "claude-code-bug-prompt-checklist",
+          "tags": [
+            "工具流程",
+            "Claude Code",
+            "检查清单",
+            "Bug 修复"
+          ],
+          "title": "Claude Code Bug Prompt 检查清单",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "工具流程",
+          "descriptionLength": 73,
+          "file": "content/blog/claude-code-bug-prompt-freelance-scope.mdx",
+          "slug": "claude-code-bug-prompt-freelance-scope",
+          "tags": [
+            "工具流程",
+            "Claude Code",
+            "项目范围",
+            "Bug 修复"
+          ],
+          "title": "Claude Code Bug Prompt 项目前怎么判断范围",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "工具流程",
+          "descriptionLength": 70,
+          "file": "content/blog/claude-code-bug-prompt-mistakes.mdx",
+          "slug": "claude-code-bug-prompt-mistakes",
+          "tags": [
+            "工具流程",
+            "Claude Code",
+            "常见错误",
+            "Bug 修复"
+          ],
+          "title": "Claude Code Bug Prompt 常见错误",
+          "updatedAt": "2026-06-14"
         }
       ],
       "priorityScore": 124,
@@ -898,115 +898,17 @@
       ],
       "publicMatches": [
         {
-          "category": "部署教程",
-          "descriptionLength": 87,
-          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
-          "slug": "vercel-env-variable-missing-beginner-guide",
-          "tags": [
-            "Vercel",
-            "环境变量",
-            "Next.js",
-            "部署失败"
-          ],
-          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
-          "updatedAt": "2026-06-02"
-        },
-        {
-          "category": "项目报价",
-          "descriptionLength": 54,
-          "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-          "slug": "ai-automation-project-pricing-scope-guide",
-          "tags": [
-            "AI 自动化",
-            "项目报价",
-            "Dify",
-            "n8n"
-          ],
-          "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 64,
-          "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
-          "slug": "dify-workflow-vs-agent-guide",
-          "tags": [
-            "Dify",
-            "Workflow",
-            "AI Agent",
-            "AI 应用"
-          ],
-          "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 57,
-          "file": "content/blog/enterprise-im-ai-agent-integration-guide.mdx",
-          "slug": "enterprise-im-ai-agent-integration-guide",
-          "tags": [
-            "AI Agent",
-            "企业微信",
-            "飞书",
-            "Slack"
-          ],
-          "title": "企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 65,
-          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-          "slug": "llm-deployment-huggingface-inference-endpoints-guide",
-          "tags": [
-            "大模型部署",
-            "Hugging Face",
-            "Inference Endpoints",
-            "vLLM"
-          ],
-          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
+          "category": "AI Agent",
           "descriptionLength": 69,
-          "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
-          "slug": "local-llm-vram-not-enough-guide",
+          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
           "tags": [
-            "本地大模型",
-            "显存",
-            "vLLM",
-            "量化"
-          ],
-          "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 59,
-          "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-          "slug": "n8n-ai-agent-rag-memory-guide",
-          "tags": [
-            "n8n",
             "AI Agent",
-            "RAG",
-            "记忆"
+            "Vercel AI SDK",
+            "工具调用",
+            "AI 部署"
           ],
-          "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 63,
-          "file": "content/blog/n8n-ai-agent-webhook-production-guide.mdx",
-          "slug": "n8n-ai-agent-webhook-production-guide",
-          "tags": [
-            "n8n",
-            "AI Agent",
-            "Webhook",
-            "自动化"
-          ],
-          "title": "n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试",
+          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
           "updatedAt": "2026-06-14"
         },
         {
@@ -1556,17 +1458,87 @@
           "updatedAt": "2026-06-14"
         },
         {
-          "category": "AI Agent",
-          "descriptionLength": 69,
-          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-          "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
+          "category": "AI 部署",
+          "descriptionLength": 64,
+          "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
+          "slug": "dify-workflow-vs-agent-guide",
+          "tags": [
+            "Dify",
+            "Workflow",
+            "AI Agent",
+            "AI 应用"
+          ],
+          "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 57,
+          "file": "content/blog/enterprise-im-ai-agent-integration-guide.mdx",
+          "slug": "enterprise-im-ai-agent-integration-guide",
           "tags": [
             "AI Agent",
-            "Vercel AI SDK",
-            "工具调用",
-            "AI 部署"
+            "企业微信",
+            "飞书",
+            "Slack"
           ],
-          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "title": "企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 65,
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "slug": "llm-deployment-huggingface-inference-endpoints-guide",
+          "tags": [
+            "大模型部署",
+            "Hugging Face",
+            "Inference Endpoints",
+            "vLLM"
+          ],
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 69,
+          "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
+          "slug": "local-llm-vram-not-enough-guide",
+          "tags": [
+            "本地大模型",
+            "显存",
+            "vLLM",
+            "量化"
+          ],
+          "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 59,
+          "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+          "slug": "n8n-ai-agent-rag-memory-guide",
+          "tags": [
+            "n8n",
+            "AI Agent",
+            "RAG",
+            "记忆"
+          ],
+          "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 63,
+          "file": "content/blog/n8n-ai-agent-webhook-production-guide.mdx",
+          "slug": "n8n-ai-agent-webhook-production-guide",
+          "tags": [
+            "n8n",
+            "AI Agent",
+            "Webhook",
+            "自动化"
+          ],
+          "title": "n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试",
           "updatedAt": "2026-06-14"
         },
         {
@@ -1651,6 +1623,34 @@
             "故障排查"
           ],
           "title": "Vercel 部署常见错误和修复顺序",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "部署教程",
+          "descriptionLength": 87,
+          "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "slug": "vercel-env-variable-missing-beginner-guide",
+          "tags": [
+            "Vercel",
+            "环境变量",
+            "Next.js",
+            "部署失败"
+          ],
+          "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+          "updatedAt": "2026-06-02"
+        },
+        {
+          "category": "项目报价",
+          "descriptionLength": 54,
+          "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+          "slug": "ai-automation-project-pricing-scope-guide",
+          "tags": [
+            "AI 自动化",
+            "项目报价",
+            "Dify",
+            "n8n"
+          ],
+          "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
           "updatedAt": "2026-06-14"
         }
       ],
@@ -1769,62 +1769,6 @@
         "llm-deployment-cost-planner"
       ],
       "publicMatches": [
-        {
-          "category": "AI 部署",
-          "descriptionLength": 56,
-          "file": "content/blog/llm-api-rate-limit-retry-guide.mdx",
-          "slug": "llm-api-rate-limit-retry-guide",
-          "tags": [
-            "大模型 API",
-            "限流",
-            "重试",
-            "AI 部署"
-          ],
-          "title": "大模型 API 限流和重试怎么做：429、队列、退避和降级方案",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 54,
-          "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
-          "slug": "llm-cost-monitoring-dashboard-guide",
-          "tags": [
-            "LLM 成本",
-            "AI 监控",
-            "Token",
-            "成本看板"
-          ],
-          "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 65,
-          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-          "slug": "llm-deployment-huggingface-inference-endpoints-guide",
-          "tags": [
-            "大模型部署",
-            "Hugging Face",
-            "Inference Endpoints",
-            "vLLM"
-          ],
-          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 69,
-          "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
-          "slug": "local-llm-vram-not-enough-guide",
-          "tags": [
-            "本地大模型",
-            "显存",
-            "vLLM",
-            "量化"
-          ],
-          "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
-          "updatedAt": "2026-06-14"
-        },
         {
           "category": "AI 基建",
           "descriptionLength": 66,
@@ -2174,6 +2118,62 @@
           ],
           "title": "RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界",
           "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 56,
+          "file": "content/blog/llm-api-rate-limit-retry-guide.mdx",
+          "slug": "llm-api-rate-limit-retry-guide",
+          "tags": [
+            "大模型 API",
+            "限流",
+            "重试",
+            "AI 部署"
+          ],
+          "title": "大模型 API 限流和重试怎么做：429、队列、退避和降级方案",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 54,
+          "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
+          "slug": "llm-cost-monitoring-dashboard-guide",
+          "tags": [
+            "LLM 成本",
+            "AI 监控",
+            "Token",
+            "成本看板"
+          ],
+          "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 65,
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "slug": "llm-deployment-huggingface-inference-endpoints-guide",
+          "tags": [
+            "大模型部署",
+            "Hugging Face",
+            "Inference Endpoints",
+            "vLLM"
+          ],
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 69,
+          "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
+          "slug": "local-llm-vram-not-enough-guide",
+          "tags": [
+            "本地大模型",
+            "显存",
+            "vLLM",
+            "量化"
+          ],
+          "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
+          "updatedAt": "2026-06-14"
         }
       ],
       "priorityScore": 122,
@@ -2287,48 +2287,6 @@
         "memory-rag-architecture-planner"
       ],
       "publicMatches": [
-        {
-          "category": "项目报价",
-          "descriptionLength": 54,
-          "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-          "slug": "ai-automation-project-pricing-scope-guide",
-          "tags": [
-            "AI 自动化",
-            "项目报价",
-            "Dify",
-            "n8n"
-          ],
-          "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 59,
-          "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-          "slug": "n8n-ai-agent-rag-memory-guide",
-          "tags": [
-            "n8n",
-            "AI Agent",
-            "RAG",
-            "记忆"
-          ],
-          "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 80,
-          "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
-          "slug": "open-webui-functions-pipelines-deployment-guide",
-          "tags": [
-            "Open WebUI",
-            "Functions",
-            "Pipelines",
-            "本地大模型"
-          ],
-          "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
-          "updatedAt": "2026-06-14"
-        },
         {
           "category": "AI 基建",
           "descriptionLength": 54,
@@ -2636,6 +2594,48 @@
           ],
           "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
           "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 59,
+          "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+          "slug": "n8n-ai-agent-rag-memory-guide",
+          "tags": [
+            "n8n",
+            "AI Agent",
+            "RAG",
+            "记忆"
+          ],
+          "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 80,
+          "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+          "slug": "open-webui-functions-pipelines-deployment-guide",
+          "tags": [
+            "Open WebUI",
+            "Functions",
+            "Pipelines",
+            "本地大模型"
+          ],
+          "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "项目报价",
+          "descriptionLength": 54,
+          "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+          "slug": "ai-automation-project-pricing-scope-guide",
+          "tags": [
+            "AI 自动化",
+            "项目报价",
+            "Dify",
+            "n8n"
+          ],
+          "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+          "updatedAt": "2026-06-14"
         }
       ],
       "priorityScore": 125,
@@ -2751,188 +2751,6 @@
         "api-routing-cost-checker"
       ],
       "publicMatches": [
-        {
-          "category": "报错解决",
-          "descriptionLength": 62,
-          "file": "content/blog/api-key-invalid-or-missing.mdx",
-          "slug": "api-key-invalid-or-missing",
-          "tags": [
-            "报错解决",
-            "API Key",
-            "AI 工具实践",
-            "新手教程"
-          ],
-          "title": "API Key 无效或缺失怎么处理",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "报错解决",
-          "descriptionLength": 59,
-          "file": "content/blog/api-key-invalid-or-missing-checklist.mdx",
-          "slug": "api-key-invalid-or-missing-checklist",
-          "tags": [
-            "报错解决",
-            "API Key",
-            "检查清单",
-            "AI 工具实践"
-          ],
-          "title": "API Key 无效或缺失排查清单",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "报错解决",
-          "descriptionLength": 62,
-          "file": "content/blog/api-key-invalid-or-missing-freelance-scope.mdx",
-          "slug": "api-key-invalid-or-missing-freelance-scope",
-          "tags": [
-            "报错解决",
-            "API Key",
-            "项目范围",
-            "AI 工具实践"
-          ],
-          "title": "API Key 无效或缺失：使用前怎么判断是否适合",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "报错解决",
-          "descriptionLength": 60,
-          "file": "content/blog/api-key-invalid-or-missing-mistakes.mdx",
-          "slug": "api-key-invalid-or-missing-mistakes",
-          "tags": [
-            "报错解决",
-            "API Key",
-            "常见错误",
-            "AI 工具实践"
-          ],
-          "title": "API Key 无效或缺失的常见错误和修复步骤",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "工具导航",
-          "descriptionLength": 74,
-          "file": "content/blog/make-vs-zapier-automation.mdx",
-          "slug": "make-vs-zapier-automation",
-          "tags": [
-            "工具导航",
-            "Make",
-            "Zapier",
-            "AI 工具实践"
-          ],
-          "title": "Make 和 Zapier 自动化怎么选",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "工具导航",
-          "descriptionLength": 72,
-          "file": "content/blog/make-vs-zapier-automation-checklist.mdx",
-          "slug": "make-vs-zapier-automation-checklist",
-          "tags": [
-            "工具导航",
-            "Make",
-            "Zapier",
-            "自动化清单"
-          ],
-          "title": "Make 和 Zapier 自动化新手检查清单",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 59,
-          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-          "slug": "ai-api-key-security-rotation-guide",
-          "tags": [
-            "API Key",
-            "AI 安全",
-            "环境变量",
-            "密钥管理"
-          ],
-          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 74,
-          "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
-          "slug": "claude-api-rate-limit-debug-guide",
-          "tags": [
-            "Claude API",
-            "Rate limit",
-            "AI API",
-            "限流"
-          ],
-          "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 57,
-          "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
-          "slug": "gemini-api-rate-limit-debug-guide",
-          "tags": [
-            "Gemini API",
-            "Google AI",
-            "Rate limit",
-            "AI API"
-          ],
-          "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 56,
-          "file": "content/blog/llm-api-rate-limit-retry-guide.mdx",
-          "slug": "llm-api-rate-limit-retry-guide",
-          "tags": [
-            "大模型 API",
-            "限流",
-            "重试",
-            "AI 部署"
-          ],
-          "title": "大模型 API 限流和重试怎么做：429、队列、退避和降级方案",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 54,
-          "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
-          "slug": "llm-cost-monitoring-dashboard-guide",
-          "tags": [
-            "LLM 成本",
-            "AI 监控",
-            "Token",
-            "成本看板"
-          ],
-          "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 65,
-          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-          "slug": "llm-deployment-huggingface-inference-endpoints-guide",
-          "tags": [
-            "大模型部署",
-            "Hugging Face",
-            "Inference Endpoints",
-            "vLLM"
-          ],
-          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 部署",
-          "descriptionLength": 61,
-          "file": "content/blog/openai-batch-api-cost-guide.mdx",
-          "slug": "openai-batch-api-cost-guide",
-          "tags": [
-            "OpenAI API",
-            "Batch API",
-            "AI 成本",
-            "批量处理"
-          ],
-          "title": "OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制",
-          "updatedAt": "2026-06-14"
-        },
         {
           "category": "AI 基建",
           "descriptionLength": 77,
@@ -3128,6 +2946,188 @@
           ],
           "title": "Replicate API 怎么做 AI Demo：模型调用、部署和费用边界",
           "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 59,
+          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+          "slug": "ai-api-key-security-rotation-guide",
+          "tags": [
+            "API Key",
+            "AI 安全",
+            "环境变量",
+            "密钥管理"
+          ],
+          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 74,
+          "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+          "slug": "claude-api-rate-limit-debug-guide",
+          "tags": [
+            "Claude API",
+            "Rate limit",
+            "AI API",
+            "限流"
+          ],
+          "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 57,
+          "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
+          "slug": "gemini-api-rate-limit-debug-guide",
+          "tags": [
+            "Gemini API",
+            "Google AI",
+            "Rate limit",
+            "AI API"
+          ],
+          "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 56,
+          "file": "content/blog/llm-api-rate-limit-retry-guide.mdx",
+          "slug": "llm-api-rate-limit-retry-guide",
+          "tags": [
+            "大模型 API",
+            "限流",
+            "重试",
+            "AI 部署"
+          ],
+          "title": "大模型 API 限流和重试怎么做：429、队列、退避和降级方案",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 54,
+          "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
+          "slug": "llm-cost-monitoring-dashboard-guide",
+          "tags": [
+            "LLM 成本",
+            "AI 监控",
+            "Token",
+            "成本看板"
+          ],
+          "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 65,
+          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+          "slug": "llm-deployment-huggingface-inference-endpoints-guide",
+          "tags": [
+            "大模型部署",
+            "Hugging Face",
+            "Inference Endpoints",
+            "vLLM"
+          ],
+          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "AI 部署",
+          "descriptionLength": 61,
+          "file": "content/blog/openai-batch-api-cost-guide.mdx",
+          "slug": "openai-batch-api-cost-guide",
+          "tags": [
+            "OpenAI API",
+            "Batch API",
+            "AI 成本",
+            "批量处理"
+          ],
+          "title": "OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "工具导航",
+          "descriptionLength": 74,
+          "file": "content/blog/make-vs-zapier-automation.mdx",
+          "slug": "make-vs-zapier-automation",
+          "tags": [
+            "工具导航",
+            "Make",
+            "Zapier",
+            "AI 工具实践"
+          ],
+          "title": "Make 和 Zapier 自动化怎么选",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "工具导航",
+          "descriptionLength": 72,
+          "file": "content/blog/make-vs-zapier-automation-checklist.mdx",
+          "slug": "make-vs-zapier-automation-checklist",
+          "tags": [
+            "工具导航",
+            "Make",
+            "Zapier",
+            "自动化清单"
+          ],
+          "title": "Make 和 Zapier 自动化新手检查清单",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "报错解决",
+          "descriptionLength": 62,
+          "file": "content/blog/api-key-invalid-or-missing.mdx",
+          "slug": "api-key-invalid-or-missing",
+          "tags": [
+            "报错解决",
+            "API Key",
+            "AI 工具实践",
+            "新手教程"
+          ],
+          "title": "API Key 无效或缺失怎么处理",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "报错解决",
+          "descriptionLength": 59,
+          "file": "content/blog/api-key-invalid-or-missing-checklist.mdx",
+          "slug": "api-key-invalid-or-missing-checklist",
+          "tags": [
+            "报错解决",
+            "API Key",
+            "检查清单",
+            "AI 工具实践"
+          ],
+          "title": "API Key 无效或缺失排查清单",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "报错解决",
+          "descriptionLength": 62,
+          "file": "content/blog/api-key-invalid-or-missing-freelance-scope.mdx",
+          "slug": "api-key-invalid-or-missing-freelance-scope",
+          "tags": [
+            "报错解决",
+            "API Key",
+            "项目范围",
+            "AI 工具实践"
+          ],
+          "title": "API Key 无效或缺失：使用前怎么判断是否适合",
+          "updatedAt": "2026-06-14"
+        },
+        {
+          "category": "报错解决",
+          "descriptionLength": 60,
+          "file": "content/blog/api-key-invalid-or-missing-mistakes.mdx",
+          "slug": "api-key-invalid-or-missing-mistakes",
+          "tags": [
+            "报错解决",
+            "API Key",
+            "常见错误",
+            "AI 工具实践"
+          ],
+          "title": "API Key 无效或缺失的常见错误和修复步骤",
+          "updatedAt": "2026-06-14"
         }
       ],
       "priorityScore": 120,
@@ -3205,6 +3205,20 @@
       ],
       "publicMatches": [
         {
+          "category": "AI 提示词",
+          "descriptionLength": 58,
+          "file": "content/blog/marketing-ai-prompts-guide.mdx",
+          "slug": "marketing-ai-prompts-guide",
+          "tags": [
+            "营销提示词",
+            "AI 文案",
+            "SEO",
+            "运营"
+          ],
+          "title": "营销 AI 提示词模板：选题、广告文案、SEO 和活动复盘怎么写",
+          "updatedAt": "2026-06-14"
+        },
+        {
           "category": "工具导航",
           "descriptionLength": 94,
           "file": "content/blog/free-seo-tools-beginner.mdx",
@@ -3230,20 +3244,6 @@
             "AI 工具实践"
           ],
           "title": "SEO 工具免费功能检查清单",
-          "updatedAt": "2026-06-14"
-        },
-        {
-          "category": "AI 提示词",
-          "descriptionLength": 58,
-          "file": "content/blog/marketing-ai-prompts-guide.mdx",
-          "slug": "marketing-ai-prompts-guide",
-          "tags": [
-            "营销提示词",
-            "AI 文案",
-            "SEO",
-            "运营"
-          ],
-          "title": "营销 AI 提示词模板：选题、广告文案、SEO 和活动复盘怎么写",
           "updatedAt": "2026-06-14"
         }
       ],

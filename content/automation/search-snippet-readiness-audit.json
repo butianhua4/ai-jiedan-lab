@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T05:17:29.890Z",
+  "generatedAt": "2026-06-16T18:18:06.098Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -8,11 +8,11 @@
   },
   "summary": {
     "blockingItems": 0,
-    "expansionItems": 19,
+    "expansionItems": 15,
     "publicItems": 500,
     "recommendedItems": 3,
-    "scopedItems": 500,
-    "warningItems": 199,
+    "scopedItems": 516,
+    "warningItems": 204,
     "waveItems": 3,
     "waveItemsWithBlockingIssues": 0
   },
@@ -144,8 +144,7 @@
       "issues": [],
       "primaryKeyword": "AI API Key 安全管理",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "ai-api-key-security-rotation-guide",
       "status": "published",
@@ -197,8 +196,7 @@
       "issues": [],
       "primaryKeyword": "AI 自动化项目报价",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "ai-automation-project-pricing-scope-guide",
       "status": "published",
@@ -422,8 +420,6 @@
       "primaryKeyword": "客服 AI 模型选型",
       "scope": [
         "public",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "slug": "ai-model-selection-customer-service-guide",
@@ -511,8 +507,7 @@
       "issues": [],
       "primaryKeyword": "团队 AI 提示词库",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "ai-prompt-library-team-knowledge-base-guide",
       "status": "published",
@@ -2507,8 +2502,7 @@
       "issues": [],
       "primaryKeyword": "Dify 工作流错误处理",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "dify-workflow-error-handling-guide",
       "status": "published",
@@ -2525,8 +2519,7 @@
       "issues": [],
       "primaryKeyword": "Dify Workflow 和 Agent 区别",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "dify-workflow-vs-agent-guide",
       "status": "published",
@@ -2645,8 +2638,7 @@
       "issues": [],
       "primaryKeyword": "Docker 使用 NVIDIA GPU",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "gpu-docker-nvidia-container-toolkit-guide",
       "status": "published",
@@ -3037,8 +3029,7 @@
       "issues": [],
       "primaryKeyword": "Open WebUI Functions Pipelines",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "open-webui-functions-pipelines-deployment-guide",
       "status": "published",
@@ -3390,6 +3381,40 @@
       ]
     },
     {
+      "description": "面向新手整理 TensorRT-LLM 入门判断，覆盖 NVIDIA GPU、模型支持、Quick Start、HTTP 请求、性能优化、部署成本和生产边界。",
+      "descriptionLength": 79,
+      "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "TensorRT-LLM 入门",
+      "scope": [
+        "expansion"
+      ],
+      "slug": "tensorrt-llm-beginner-guide",
+      "status": "draft",
+      "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
+      "titleLength": 40,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "面向新手整理 Together AI API 接入路线，覆盖 OpenAI-compatible 调用、开源模型选择、embedding、费用、限速、应用接入和客户项目边界。",
+      "descriptionLength": 87,
+      "file": "content/blog/together-ai-api-beginner-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "Together AI API 接入",
+      "scope": [
+        "expansion"
+      ],
+      "slug": "together-ai-api-beginner-guide",
+      "status": "draft",
+      "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
+      "titleLength": 43,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
       "description": "Upwork 新手投标后没人回复，通常不是一句话能解决的问题。本文帮你检查项目选择、开头文案、客户问题、报价边界和风险信号，避免用夸张承诺或批量复制的方式投标。",
       "descriptionLength": 80,
       "file": "content/blog/upwork-proposal-no-reply-checklist.mdx",
@@ -3402,6 +3427,58 @@
       "status": "published",
       "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
       "titleLength": 32,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "解释 Vercel 部署成功但访问页面 404 的常见原因，覆盖路由、输出目录、框架配置、根目录、动态路径、域名和上线后验收。",
+      "descriptionLength": 63,
+      "file": "content/blog/vercel-404-after-deploy.mdx",
+      "issues": [],
+      "primaryKeyword": "Vercel 部署成功但 404",
+      "scope": [
+        "expansion"
+      ],
+      "slug": "vercel-404-after-deploy",
+      "status": "draft",
+      "title": "Vercel 部署成功但页面 404：新手排查顺序",
+      "titleLength": 25,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "整理 Vercel AI Gateway 多模型接入思路，覆盖统一 API、provider 切换、日志、成本、降级、AI SDK 和上线检查。",
+      "descriptionLength": 72,
+      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "Vercel AI Gateway 多模型",
+      "scope": [
+        "expansion",
+        "recommended"
+      ],
+      "slug": "vercel-ai-gateway-multi-provider-guide",
+      "status": "draft",
+      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+      "titleLength": 51,
+      "warnings": [
+        "primary keyword is not an exact title substring"
+      ]
+    },
+    {
+      "description": "面向新手整理 Vercel AI SDK + Next.js 聊天机器人部署路线，覆盖 Route Handler、流式输出、模型 Provider、环境变量、限流和上线检查。",
+      "descriptionLength": 88,
+      "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "Vercel AI SDK 聊天机器人部署",
+      "scope": [
+        "expansion"
+      ],
+      "slug": "vercel-ai-sdk-chatbot-deploy-guide",
+      "status": "draft",
+      "title": "Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查",
+      "titleLength": 41,
       "warnings": [
         "primary keyword is not an exact title substring"
       ]
@@ -3627,8 +3704,6 @@
       "primaryKeyword": "AI Agent 部署",
       "scope": [
         "public",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
@@ -3644,8 +3719,7 @@
       "issues": [],
       "primaryKeyword": "AI Agent 记忆",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "ai-agent-memory-rag-design-guide",
       "status": "published",
@@ -3660,8 +3734,7 @@
       "issues": [],
       "primaryKeyword": "AI API Key 安全管理",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "ai-api-key-security-rotation-guide",
       "status": "published",
@@ -3728,8 +3801,7 @@
       "issues": [],
       "primaryKeyword": "AI 自动化项目报价",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "ai-automation-project-pricing-scope-guide",
       "status": "published",
@@ -4238,8 +4310,6 @@
       "primaryKeyword": "客服 AI 模型选型",
       "scope": [
         "public",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "slug": "ai-model-selection-customer-service-guide",
@@ -4342,8 +4412,7 @@
       "issues": [],
       "primaryKeyword": "团队 AI 提示词库",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "ai-prompt-library-team-knowledge-base-guide",
       "status": "published",
@@ -4980,8 +5049,7 @@
       "issues": [],
       "primaryKeyword": "Claude API rate limit reached",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "claude-api-rate-limit-debug-guide",
       "status": "published",
@@ -7756,8 +7824,7 @@
       "issues": [],
       "primaryKeyword": "客服 AI 提示词",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "customer-service-ai-prompts-guide",
       "status": "published",
@@ -7817,8 +7884,7 @@
       "issues": [],
       "primaryKeyword": "数据分析 AI 提示词",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "data-analysis-ai-prompts-guide",
       "status": "published",
@@ -8096,8 +8162,7 @@
       "issues": [],
       "primaryKeyword": "Dify 工作流错误处理",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "dify-workflow-error-handling-guide",
       "status": "published",
@@ -8114,8 +8179,7 @@
       "issues": [],
       "primaryKeyword": "Dify Workflow 和 Agent 区别",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "dify-workflow-vs-agent-guide",
       "status": "published",
@@ -8162,8 +8226,7 @@
       "issues": [],
       "primaryKeyword": "电商 AI 提示词",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "ecommerce-ai-prompts-guide",
       "status": "published",
@@ -8178,8 +8241,7 @@
       "issues": [],
       "primaryKeyword": "教育 AI 提示词",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "education-ai-prompts-guide",
       "status": "published",
@@ -8776,8 +8838,7 @@
       "issues": [],
       "primaryKeyword": "Gemini API 限流",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "gemini-api-rate-limit-debug-guide",
       "status": "published",
@@ -9032,8 +9093,7 @@
       "issues": [],
       "primaryKeyword": "Docker 使用 NVIDIA GPU",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "gpu-docker-nvidia-container-toolkit-guide",
       "status": "published",
@@ -9183,8 +9243,6 @@
       "primaryKeyword": "全行业 AI 提示词模板",
       "scope": [
         "public",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "slug": "industry-ai-prompts-template-library-2026",
@@ -9473,8 +9531,7 @@
       "issues": [],
       "primaryKeyword": "大模型部署",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "llm-deployment-huggingface-inference-endpoints-guide",
       "status": "published",
@@ -9551,8 +9608,7 @@
       "issues": [],
       "primaryKeyword": "本地部署大模型显存不够",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "local-llm-vram-not-enough-guide",
       "status": "published",
@@ -10089,8 +10145,7 @@
       "issues": [],
       "primaryKeyword": "Open WebUI Functions Pipelines",
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "slug": "open-webui-functions-pipelines-deployment-guide",
       "status": "published",
@@ -11363,61 +11418,53 @@
   ],
   "recommendedItems": [
     {
-      "description": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
+      "description": "AI 工具新手不应该一开始购买复杂自动化、昂贵订阅、批量投放、会员系统和高级设计工具。先跑通作品集、沟通、报价、交付和复盘，再决定买什么。",
       "descriptionLength": 69,
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "file": "content/blog/tools-not-to-buy-first.mdx",
       "issues": [],
-      "primaryKeyword": "AI Agent 部署",
+      "primaryKeyword": "AI 工具新手不应该先买哪些工具",
       "scope": [
-        "public",
-        "expansion",
-        "recommended",
-        "wave-1"
+        "recommended"
       ],
-      "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
-      "status": "published",
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "titleLength": 47,
+      "slug": "tools-not-to-buy-first",
+      "status": "draft",
+      "title": "AI 工具新手不应该先买哪些工具",
+      "titleLength": 16,
       "warnings": []
     },
     {
-      "description": "整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。",
-      "descriptionLength": 52,
-      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "description": "面向新手整理 RAG 向量数据库选型思路，比较 pgvector、Qdrant、Milvus 等路线时应关注数据规模、权限、运维、成本和迁移。",
+      "descriptionLength": 71,
+      "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
       "issues": [],
-      "primaryKeyword": "客服 AI 模型选型",
+      "primaryKeyword": "RAG 向量数据库怎么选",
       "scope": [
-        "public",
         "expansion",
-        "recommended",
-        "wave-1"
+        "recommended"
       ],
-      "slug": "ai-model-selection-customer-service-guide",
-      "status": "published",
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-      "titleLength": 29,
+      "slug": "vector-database-selection-for-rag-guide",
+      "status": "draft",
+      "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
+      "titleLength": 42,
+      "warnings": []
+    },
+    {
+      "description": "整理 Vercel AI Gateway 多模型接入思路，覆盖统一 API、provider 切换、日志、成本、降级、AI SDK 和上线检查。",
+      "descriptionLength": 72,
+      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+      "issues": [],
+      "primaryKeyword": "Vercel AI Gateway 多模型",
+      "scope": [
+        "expansion",
+        "recommended"
+      ],
+      "slug": "vercel-ai-gateway-multi-provider-guide",
+      "status": "draft",
+      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+      "titleLength": 51,
       "warnings": [
-        "description may be thin for search snippets",
         "primary keyword is not an exact title substring"
       ]
-    },
-    {
-      "description": "整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。",
-      "descriptionLength": 67,
-      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
-      "issues": [],
-      "primaryKeyword": "全行业 AI 提示词模板",
-      "scope": [
-        "public",
-        "expansion",
-        "recommended",
-        "wave-1"
-      ],
-      "slug": "industry-ai-prompts-template-library-2026",
-      "status": "published",
-      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-      "titleLength": 37,
-      "warnings": []
     }
   ],
   "waveItems": [
@@ -11429,8 +11476,6 @@
       "primaryKeyword": "AI Agent 部署",
       "scope": [
         "public",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "slug": "ai-agent-deployment-vercel-ai-sdk-guide",
@@ -11447,8 +11492,6 @@
       "primaryKeyword": "客服 AI 模型选型",
       "scope": [
         "public",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "slug": "ai-model-selection-customer-service-guide",
@@ -11468,8 +11511,6 @@
       "primaryKeyword": "全行业 AI 提示词模板",
       "scope": [
         "public",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "slug": "industry-ai-prompts-template-library-2026",

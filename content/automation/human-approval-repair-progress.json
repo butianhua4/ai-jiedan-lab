@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T07:40:01.553Z",
+  "generatedAt": "2026-06-16T18:18:39.554Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -16,48 +16,47 @@
   },
   "sourceEvidence": {
     "decisionMatrixItems": 3,
-    "decisionMatrixRepairItems": 3,
+    "decisionMatrixRepairItems": 1,
     "decisionMatrixUnsafeItems": 0,
     "internalLinkItems": 3,
     "internalLinkUnsafeItems": 0,
     "repairQueueMinimumPathFiles": 3,
-    "repairQueueMinimumPathTasks": 18,
+    "repairQueueMinimumPathTasks": 16,
     "repairQueueUnsafeItems": 0,
     "routeFiles": 3,
     "routeSessions": 12,
-    "routeUnsafeItems": 0,
+    "routeUnsafeItems": 2,
     "searchIntentItems": 3,
     "searchIntentUnsafeItems": 0,
     "sourceVerificationItems": 3,
     "sourceVerificationUnsafeItems": 0,
-    "sourceUrlFixActions": 35,
-    "remediationUnsafeItems": 0
+    "sourceUrlFixActions": 26,
+    "remediationUnsafeItems": 2
   },
   "summary": {
-    "blockedCategories": 0,
+    "blockedCategories": 2,
     "categoriesTracked": 18,
     "evidenceReadyCategories": 3,
     "filesReadyForHumanApprovalAfterRepair": 0,
     "filesTracked": 3,
-    "manualOnlyCategories": 3,
-    "nextRepairFile": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-    "nextRepairTitle": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-    "openCategories": 11,
+    "manualOnlyCategories": 1,
+    "nextRepairFile": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+    "nextRepairTitle": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+    "openCategories": 8,
     "publishConfirmCommandsIncluded": 0,
-    "resolvedCategories": 1,
+    "resolvedCategories": 4,
     "routeSessions": 12,
     "trafficDataAvailable": false,
-    "unsafeItems": 0
+    "unsafeItems": 2
   },
-  "unsafeItems": [],
-  "items": [
+  "unsafeItems": [
     {
       "categories": [
         {
           "category": "source-url",
-          "detail": "10 source URL remediation action(s) still need human confirmation.",
+          "detail": "8 source URL remediation action(s) still need human confirmation.",
           "evidence": {
-            "sourceUrlFixes": 10
+            "sourceUrlFixes": 8
           },
           "nextAction": "Open each failed source URL manually, replace dead URLs with accessible canonical sources, then rerun automation.",
           "proofRequired": "Reviewer confirms final source URLs are canonical or replaced with accessible equivalents.",
@@ -67,11 +66,11 @@
           "category": "source-review",
           "detail": "Source review evidence is ready, but human confirmation is still required before mark:review.",
           "evidence": {
-            "approvalChecks": 15,
-            "factCheckQueries": 24,
-            "reachableSources": 8,
+            "approvalChecks": 9,
+            "factCheckQueries": 12,
+            "reachableSources": 4,
             "readyForHumanReview": true,
-            "riskChecks": 10
+            "riskChecks": 6
           },
           "nextAction": "Human reviewer verifies fast-changing claims against the listed sources.",
           "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
@@ -79,14 +78,141 @@
         },
         {
           "category": "search-intent",
-          "detail": "3 search-intent weakness(es) remain.",
+          "detail": "4 search-intent weakness(es) remain.",
           "evidence": {
             "bodyHits": 0,
             "descriptionHits": 0,
             "headingHits": 0,
             "readyForHumanReview": true,
             "titleHits": 0,
-            "weaknesses": 3
+            "weaknesses": 4
+          },
+          "nextAction": "Adjust title, description, opening, heading, or body so the accepted query appears naturally.",
+          "proofRequired": "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body.",
+          "status": "open"
+        },
+        {
+          "category": "internal-link",
+          "detail": "At least one contextual public article link is present.",
+          "evidence": {
+            "linksToPublicArticles": 4,
+            "readyForHumanReview": true,
+            "safeDraft": true,
+            "suggestions": 5
+          },
+          "nextAction": "Keep the contextual public link if it helps the reader.",
+          "proofRequired": "Draft contains at least one contextual link to a currently published relevant article.",
+          "status": "resolved"
+        },
+        {
+          "category": "copydesk",
+          "detail": "No copydesk warning is listed in the remediation pack.",
+          "evidence": {
+            "humanChecklistItems": 9,
+            "remediationReasons": 2,
+            "warningDetected": false
+          },
+          "nextAction": "No copydesk action required.",
+          "proofRequired": "Reviewer resolves or explicitly accepts copydesk warning without weakening guardrails.",
+          "status": "resolved"
+        },
+        {
+          "category": "approval-boundary",
+          "detail": "Manual approval boundary has a blocking mismatch.",
+          "evidence": {
+            "commandSafe": true,
+            "currentState": "draft/noindex=true/humanReview=true",
+            "decisionSafe": false,
+            "publishSafe": true
+          },
+          "nextAction": "Fix command/status boundary before any review action.",
+          "proofRequired": "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval.",
+          "status": "blocked"
+        }
+      ],
+      "file": "content/blog/together-ai-api-beginner-guide.mdx",
+      "highRiskTasks": 2,
+      "lane": "ai-deployment",
+      "manualOnlyCommand": "npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human",
+      "nextManualSession": {
+        "categories": [
+          "source-url",
+          "source-review"
+        ],
+        "name": "source verification first",
+        "proofRequired": [
+          "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
+          "Reviewer records source/fact-check confirmation and removes unsupported claims."
+        ],
+        "tasks": [
+          {
+            "action": "Verify source URLs and fact-check queries before mark:review.",
+            "category": "source-url",
+            "priority": 867,
+            "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
+            "severity": "high",
+            "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-05"
+          },
+          {
+            "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+            "category": "source-review",
+            "priority": 807,
+            "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
+            "severity": "high",
+            "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-06"
+          }
+        ]
+      },
+      "openCategories": [
+        "source-url",
+        "search-intent",
+        "approval-boundary"
+      ],
+      "primaryQuery": "RAG 知识库搭建教程",
+      "publishConfirm": "not-included",
+      "readyForHumanApprovalAfterRepair": false,
+      "routeRank": 666,
+      "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
+      "unsafeReasons": [
+        "route unsafe reasons remain: route item is not marked repair-before-review: defer"
+      ]
+    },
+    {
+      "categories": [
+        {
+          "category": "source-url",
+          "detail": "7 source URL remediation action(s) still need human confirmation.",
+          "evidence": {
+            "sourceUrlFixes": 7
+          },
+          "nextAction": "Open each failed source URL manually, replace dead URLs with accessible canonical sources, then rerun automation.",
+          "proofRequired": "Reviewer confirms final source URLs are canonical or replaced with accessible equivalents.",
+          "status": "open"
+        },
+        {
+          "category": "source-review",
+          "detail": "Source review evidence is ready, but human confirmation is still required before mark:review.",
+          "evidence": {
+            "approvalChecks": 9,
+            "factCheckQueries": 12,
+            "reachableSources": 3,
+            "readyForHumanReview": true,
+            "riskChecks": 5
+          },
+          "nextAction": "Human reviewer verifies fast-changing claims against the listed sources.",
+          "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
+          "status": "evidence-ready"
+        },
+        {
+          "category": "search-intent",
+          "detail": "2 search-intent weakness(es) remain.",
+          "evidence": {
+            "bodyHits": 1,
+            "descriptionHits": 0,
+            "headingHits": 0,
+            "readyForHumanReview": true,
+            "titleHits": 0,
+            "weaknesses": 2
           },
           "nextAction": "Adjust title, description, opening, heading, or body so the accepted query appears naturally.",
           "proofRequired": "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body.",
@@ -107,34 +233,34 @@
         },
         {
           "category": "copydesk",
-          "detail": "Copydesk warning remediation still needs human acceptance or cleanup.",
+          "detail": "No copydesk warning is listed in the remediation pack.",
           "evidence": {
-            "humanChecklistItems": 11,
-            "remediationReasons": 4,
-            "warningDetected": true
+            "humanChecklistItems": 10,
+            "remediationReasons": 3,
+            "warningDetected": false
           },
-          "nextAction": "Resolve or explicitly accept the copydesk warning without weakening guardrails.",
+          "nextAction": "No copydesk action required.",
           "proofRequired": "Reviewer resolves or explicitly accepts copydesk warning without weakening guardrails.",
-          "status": "open"
+          "status": "resolved"
         },
         {
           "category": "approval-boundary",
-          "detail": "Manual approval boundary is intact and publish confirmation is not included.",
+          "detail": "Manual approval boundary has a blocking mismatch.",
           "evidence": {
             "commandSafe": true,
             "currentState": "draft/noindex=true/humanReview=true",
-            "decisionSafe": true,
+            "decisionSafe": false,
             "publishSafe": true
           },
-          "nextAction": "Do not run mark:review until explicit human approval per file.",
+          "nextAction": "Fix command/status boundary before any review action.",
           "proofRequired": "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval.",
-          "status": "manual-only"
+          "status": "blocked"
         }
       ],
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "file": "content/blog/vercel-404-after-deploy.mdx",
       "highRiskTasks": 2,
       "lane": "ai-deployment",
-      "manualOnlyCommand": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+      "manualOnlyCommand": "npm run mark:review -- --file=content/blog/vercel-404-after-deploy.mdx --confirm-human",
       "nextManualSession": {
         "categories": [
           "source-url",
@@ -149,18 +275,18 @@
           {
             "action": "Verify source URLs and fact-check queries before mark:review.",
             "category": "source-url",
-            "priority": 2143,
+            "priority": 837,
             "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
             "severity": "high",
-            "taskId": "AI-AGENT-DEPLOYMENT-VERCEL-AI-SDK-GUIDE-05"
+            "taskId": "VERCEL-404-AFTER-DEPLOY-05"
           },
           {
             "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
             "category": "source-review",
-            "priority": 2083,
+            "priority": 777,
             "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
             "severity": "high",
-            "taskId": "AI-AGENT-DEPLOYMENT-VERCEL-AI-SDK-GUIDE-06"
+            "taskId": "VERCEL-404-AFTER-DEPLOY-06"
           }
         ]
       },
@@ -168,22 +294,26 @@
         "source-url",
         "search-intent",
         "internal-link",
-        "copydesk"
+        "approval-boundary"
       ],
-      "primaryQuery": "AI Agent deployment tutorial",
+      "primaryQuery": "Vercel build failed",
       "publishConfirm": "not-included",
       "readyForHumanApprovalAfterRepair": false,
-      "routeRank": 1943,
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "unsafeReasons": []
-    },
+      "routeRank": 635,
+      "title": "Vercel 部署成功但页面 404：新手排查顺序",
+      "unsafeReasons": [
+        "route unsafe reasons remain: route item is not marked repair-before-review: defer"
+      ]
+    }
+  ],
+  "items": [
     {
       "categories": [
         {
           "category": "source-url",
-          "detail": "14 source URL remediation action(s) still need human confirmation.",
+          "detail": "11 source URL remediation action(s) still need human confirmation.",
           "evidence": {
-            "sourceUrlFixes": 14
+            "sourceUrlFixes": 11
           },
           "nextAction": "Open each failed source URL manually, replace dead URLs with accessible canonical sources, then rerun automation.",
           "proofRequired": "Reviewer confirms final source URLs are canonical or replaced with accessible equivalents.",
@@ -194,7 +324,7 @@
           "detail": "Source review evidence is ready, but human confirmation is still required before mark:review.",
           "evidence": {
             "approvalChecks": 15,
-            "factCheckQueries": 25,
+            "factCheckQueries": 17,
             "reachableSources": 7,
             "readyForHumanReview": true,
             "riskChecks": 11
@@ -205,31 +335,31 @@
         },
         {
           "category": "search-intent",
-          "detail": "Search intent weaknesses are resolved.",
+          "detail": "2 search-intent weakness(es) remain.",
           "evidence": {
-            "bodyHits": 3,
-            "descriptionHits": 1,
+            "bodyHits": 1,
+            "descriptionHits": 0,
             "headingHits": 0,
             "readyForHumanReview": true,
-            "titleHits": 1,
-            "weaknesses": 0
+            "titleHits": 0,
+            "weaknesses": 2
           },
-          "nextAction": "Keep query alignment unchanged for human review.",
+          "nextAction": "Adjust title, description, opening, heading, or body so the accepted query appears naturally.",
           "proofRequired": "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body.",
-          "status": "resolved"
+          "status": "open"
         },
         {
           "category": "internal-link",
-          "detail": "No current link to a published article.",
+          "detail": "At least one contextual public article link is present.",
           "evidence": {
-            "linksToPublicArticles": 0,
+            "linksToPublicArticles": 1,
             "readyForHumanReview": true,
             "safeDraft": true,
             "suggestions": 5
           },
-          "nextAction": "Add one useful contextual link to a currently published relevant article.",
+          "nextAction": "Keep the contextual public link if it helps the reader.",
           "proofRequired": "Draft contains at least one contextual link to a currently published relevant article.",
-          "status": "open"
+          "status": "resolved"
         },
         {
           "category": "copydesk",
@@ -257,10 +387,10 @@
           "status": "manual-only"
         }
       ],
-      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
       "highRiskTasks": 2,
-      "lane": "industry-prompt",
-      "manualOnlyCommand": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+      "lane": "ai-deployment",
+      "manualOnlyCommand": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
       "nextManualSession": {
         "categories": [
           "source-url",
@@ -275,40 +405,40 @@
           {
             "action": "Verify source URLs and fact-check queries before mark:review.",
             "category": "source-url",
-            "priority": 2143,
+            "priority": 1963,
             "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
             "severity": "high",
-            "taskId": "INDUSTRY-AI-PROMPTS-TEMPLATE-LIBRARY-2026-05"
+            "taskId": "VERCEL-AI-GATEWAY-MULTI-PROVIDER-GUIDE-05"
           },
           {
             "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
             "category": "source-review",
-            "priority": 2083,
+            "priority": 1903,
             "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
             "severity": "high",
-            "taskId": "INDUSTRY-AI-PROMPTS-TEMPLATE-LIBRARY-2026-06"
+            "taskId": "VERCEL-AI-GATEWAY-MULTI-PROVIDER-GUIDE-06"
           }
         ]
       },
       "openCategories": [
         "source-url",
-        "internal-link",
+        "search-intent",
         "copydesk"
       ],
-      "primaryQuery": "ChatGPT prompts for business",
+      "primaryQuery": "大模型部署教程",
       "publishConfirm": "not-included",
       "readyForHumanApprovalAfterRepair": false,
-      "routeRank": 1939,
-      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "routeRank": 1761,
+      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
       "unsafeReasons": []
     },
     {
       "categories": [
         {
           "category": "source-url",
-          "detail": "11 source URL remediation action(s) still need human confirmation.",
+          "detail": "8 source URL remediation action(s) still need human confirmation.",
           "evidence": {
-            "sourceUrlFixes": 11
+            "sourceUrlFixes": 8
           },
           "nextAction": "Open each failed source URL manually, replace dead URLs with accessible canonical sources, then rerun automation.",
           "proofRequired": "Reviewer confirms final source URLs are canonical or replaced with accessible equivalents.",
@@ -318,11 +448,11 @@
           "category": "source-review",
           "detail": "Source review evidence is ready, but human confirmation is still required before mark:review.",
           "evidence": {
-            "approvalChecks": 15,
-            "factCheckQueries": 18,
-            "reachableSources": 11,
+            "approvalChecks": 9,
+            "factCheckQueries": 12,
+            "reachableSources": 4,
             "readyForHumanReview": true,
-            "riskChecks": 12
+            "riskChecks": 6
           },
           "nextAction": "Human reviewer verifies fast-changing claims against the listed sources.",
           "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
@@ -345,47 +475,47 @@
         },
         {
           "category": "internal-link",
-          "detail": "No current link to a published article.",
+          "detail": "At least one contextual public article link is present.",
           "evidence": {
-            "linksToPublicArticles": 0,
+            "linksToPublicArticles": 4,
             "readyForHumanReview": true,
             "safeDraft": true,
             "suggestions": 5
           },
-          "nextAction": "Add one useful contextual link to a currently published relevant article.",
+          "nextAction": "Keep the contextual public link if it helps the reader.",
           "proofRequired": "Draft contains at least one contextual link to a currently published relevant article.",
-          "status": "open"
+          "status": "resolved"
         },
         {
           "category": "copydesk",
-          "detail": "Copydesk warning remediation still needs human acceptance or cleanup.",
+          "detail": "No copydesk warning is listed in the remediation pack.",
           "evidence": {
-            "humanChecklistItems": 11,
-            "remediationReasons": 4,
-            "warningDetected": true
+            "humanChecklistItems": 9,
+            "remediationReasons": 2,
+            "warningDetected": false
           },
-          "nextAction": "Resolve or explicitly accept the copydesk warning without weakening guardrails.",
+          "nextAction": "No copydesk action required.",
           "proofRequired": "Reviewer resolves or explicitly accepts copydesk warning without weakening guardrails.",
-          "status": "open"
+          "status": "resolved"
         },
         {
           "category": "approval-boundary",
-          "detail": "Manual approval boundary is intact and publish confirmation is not included.",
+          "detail": "Manual approval boundary has a blocking mismatch.",
           "evidence": {
             "commandSafe": true,
             "currentState": "draft/noindex=true/humanReview=true",
-            "decisionSafe": true,
+            "decisionSafe": false,
             "publishSafe": true
           },
-          "nextAction": "Do not run mark:review until explicit human approval per file.",
+          "nextAction": "Fix command/status boundary before any review action.",
           "proofRequired": "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval.",
-          "status": "manual-only"
+          "status": "blocked"
         }
       ],
-      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "file": "content/blog/together-ai-api-beginner-guide.mdx",
       "highRiskTasks": 2,
-      "lane": "public-coverage-gap",
-      "manualOnlyCommand": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
+      "lane": "ai-deployment",
+      "manualOnlyCommand": "npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human",
       "nextManualSession": {
         "categories": [
           "source-url",
@@ -400,18 +530,145 @@
           {
             "action": "Verify source URLs and fact-check queries before mark:review.",
             "category": "source-url",
-            "priority": 2018,
+            "priority": 867,
             "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
             "severity": "high",
-            "taskId": "AI-MODEL-SELECTION-CUSTOMER-SERVICE-GUIDE-05"
+            "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-05"
           },
           {
             "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
             "category": "source-review",
-            "priority": 1958,
+            "priority": 807,
             "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
             "severity": "high",
-            "taskId": "AI-MODEL-SELECTION-CUSTOMER-SERVICE-GUIDE-06"
+            "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-06"
+          }
+        ]
+      },
+      "openCategories": [
+        "source-url",
+        "search-intent",
+        "approval-boundary"
+      ],
+      "primaryQuery": "RAG 知识库搭建教程",
+      "publishConfirm": "not-included",
+      "readyForHumanApprovalAfterRepair": false,
+      "routeRank": 666,
+      "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
+      "unsafeReasons": [
+        "route unsafe reasons remain: route item is not marked repair-before-review: defer"
+      ]
+    },
+    {
+      "categories": [
+        {
+          "category": "source-url",
+          "detail": "7 source URL remediation action(s) still need human confirmation.",
+          "evidence": {
+            "sourceUrlFixes": 7
+          },
+          "nextAction": "Open each failed source URL manually, replace dead URLs with accessible canonical sources, then rerun automation.",
+          "proofRequired": "Reviewer confirms final source URLs are canonical or replaced with accessible equivalents.",
+          "status": "open"
+        },
+        {
+          "category": "source-review",
+          "detail": "Source review evidence is ready, but human confirmation is still required before mark:review.",
+          "evidence": {
+            "approvalChecks": 9,
+            "factCheckQueries": 12,
+            "reachableSources": 3,
+            "readyForHumanReview": true,
+            "riskChecks": 5
+          },
+          "nextAction": "Human reviewer verifies fast-changing claims against the listed sources.",
+          "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
+          "status": "evidence-ready"
+        },
+        {
+          "category": "search-intent",
+          "detail": "2 search-intent weakness(es) remain.",
+          "evidence": {
+            "bodyHits": 1,
+            "descriptionHits": 0,
+            "headingHits": 0,
+            "readyForHumanReview": true,
+            "titleHits": 0,
+            "weaknesses": 2
+          },
+          "nextAction": "Adjust title, description, opening, heading, or body so the accepted query appears naturally.",
+          "proofRequired": "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body.",
+          "status": "open"
+        },
+        {
+          "category": "internal-link",
+          "detail": "No current link to a published article.",
+          "evidence": {
+            "linksToPublicArticles": 0,
+            "readyForHumanReview": true,
+            "safeDraft": true,
+            "suggestions": 5
+          },
+          "nextAction": "Add one useful contextual link to a currently published relevant article.",
+          "proofRequired": "Draft contains at least one contextual link to a currently published relevant article.",
+          "status": "open"
+        },
+        {
+          "category": "copydesk",
+          "detail": "No copydesk warning is listed in the remediation pack.",
+          "evidence": {
+            "humanChecklistItems": 10,
+            "remediationReasons": 3,
+            "warningDetected": false
+          },
+          "nextAction": "No copydesk action required.",
+          "proofRequired": "Reviewer resolves or explicitly accepts copydesk warning without weakening guardrails.",
+          "status": "resolved"
+        },
+        {
+          "category": "approval-boundary",
+          "detail": "Manual approval boundary has a blocking mismatch.",
+          "evidence": {
+            "commandSafe": true,
+            "currentState": "draft/noindex=true/humanReview=true",
+            "decisionSafe": false,
+            "publishSafe": true
+          },
+          "nextAction": "Fix command/status boundary before any review action.",
+          "proofRequired": "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval.",
+          "status": "blocked"
+        }
+      ],
+      "file": "content/blog/vercel-404-after-deploy.mdx",
+      "highRiskTasks": 2,
+      "lane": "ai-deployment",
+      "manualOnlyCommand": "npm run mark:review -- --file=content/blog/vercel-404-after-deploy.mdx --confirm-human",
+      "nextManualSession": {
+        "categories": [
+          "source-url",
+          "source-review"
+        ],
+        "name": "source verification first",
+        "proofRequired": [
+          "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
+          "Reviewer records source/fact-check confirmation and removes unsupported claims."
+        ],
+        "tasks": [
+          {
+            "action": "Verify source URLs and fact-check queries before mark:review.",
+            "category": "source-url",
+            "priority": 837,
+            "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
+            "severity": "high",
+            "taskId": "VERCEL-404-AFTER-DEPLOY-05"
+          },
+          {
+            "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+            "category": "source-review",
+            "priority": 777,
+            "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
+            "severity": "high",
+            "taskId": "VERCEL-404-AFTER-DEPLOY-06"
           }
         ]
       },
@@ -419,14 +676,16 @@
         "source-url",
         "search-intent",
         "internal-link",
-        "copydesk"
+        "approval-boundary"
       ],
-      "primaryQuery": "RAG 知识库搭建教程",
+      "primaryQuery": "Vercel build failed",
       "publishConfirm": "not-included",
       "readyForHumanApprovalAfterRepair": false,
-      "routeRank": 1819,
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-      "unsafeReasons": []
+      "routeRank": 635,
+      "title": "Vercel 部署成功但页面 404：新手排查顺序",
+      "unsafeReasons": [
+        "route unsafe reasons remain: route item is not marked repair-before-review: defer"
+      ]
     }
   ]
 }

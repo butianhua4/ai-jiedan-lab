@@ -1,6 +1,6 @@
 # Source Target Remediation Pack
 
-Generated at: 2026-06-16T12:27:26.417Z
+Generated at: 2026-06-16T18:18:26.943Z
 
 This pack is read-only. It does not edit articles, mark review, publish, or claim traffic.
 
@@ -27,7 +27,7 @@ This pack is read-only. It does not edit articles, mark review, publish, or clai
 | true | redirected-url | 11 | 0 | content/blog/tools-not-to-buy-first.mdx<br>content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/together-ai-api-beginner-guide.mdx<br>content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx<br>content/blog/vercel-deploy-checklist-template.mdx<br>content/blog/vercel-404-after-deploy-freelance-scope.mdx<br>content/blog/windows-path-permission-install-fix.mdx<br>content/blog/windows-path-permission-install-fix-checklist.mdx<br>content/blog/windows-path-permission-install-fix-freelance-scope.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://docs.anthropic.com | https://platform.claude.com/docs/en/home |
 | true | redirected-url | 7 | 0 | content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/together-ai-api-beginner-guide.mdx<br>content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://platform.openai.com/docs/guides/retrieval | https://developers.openai.com/api/docs/guides/retrieval |
 | true | redirected-url | 5 | 0 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/windows-path-permission-install-fix-checklist.mdx<br>content/blog/windows-path-permission-install-fix-freelance-scope.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://platform.openai.com/docs/guides/agents | https://developers.openai.com/api/docs/guides/agents |
-| true | redirected-url | 2 | 0 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=vi |
+| true | redirected-url | 2 | 0 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=ko |
 | true | redirected-url | 2 | 0 | content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx | https://docs.llamaindex.ai | https://developers.llamaindex.ai/python/framework/ |
 | true | redirected-url | 2 | 0 | content/blog/tensorrt-llm-beginner-guide.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://docs.vllm.ai | https://docs.vllm.ai/en/latest/ |
 | true | redirected-url | 2 | 0 | content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx | https://python.langchain.com/docs | https://docs.langchain.com/oss/python/langchain/overview |
@@ -281,7 +281,7 @@ Replacement candidates:
 Human checklist:
 
 - Review URL: https://ai.google.dev/docs.
-- Review final URL: https://ai.google.dev/gemini-api/docs?hl=vi.
+- Review final URL: https://ai.google.dev/gemini-api/docs?hl=ko.
 - HTTP status observed by automation: 200.
 - Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.
 - If the final URL is the canonical destination, update the source target during human review.

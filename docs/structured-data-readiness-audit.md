@@ -1,6 +1,6 @@
 # Structured Data Readiness Audit
 
-Generated at: 2026-06-16T05:11:53.604Z
+Generated at: 2026-06-16T18:18:06.749Z
 
 This report is read-only. It checks whether public and publish-candidate articles have the metadata needed to render Article JSON-LD safely later.
 
@@ -14,11 +14,11 @@ This report is read-only. It checks whether public and publish-candidate article
 ## Summary
 
 - blockingItems: 0
-- expansionItems: 19
-- jsonLdPreviewItems: 500
+- expansionItems: 15
+- jsonLdPreviewItems: 516
 - publicItems: 500
 - recommendedItems: 3
-- scopedItems: 500
+- scopedItems: 516
 - warningItems: 92
 - waveItems: 3
 - waveItemsWithBlockingIssues: 0
@@ -31,17 +31,17 @@ This report is read-only. It checks whether public and publish-candidate article
 
 | Scope | Issues | Warnings | Date | Updated | Tags | Content type | Difficulty | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| public, expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-14 | AI Agent, Vercel AI SDK, 工具调用, AI 部署 | tutorial | intermediate | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| public, expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-14 | 客服 AI, 模型选型, RAG, AI Agent | tutorial | beginner | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| public, expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-14 | AI 提示词, 提示词模板, 行业 AI, SOP | tutorial | beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| public, wave-1 | none | none | 2026-06-06 | 2026-06-14 | AI Agent, Vercel AI SDK, 工具调用, AI 部署 | tutorial | intermediate | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| public, wave-1 | none | none | 2026-06-06 | 2026-06-14 | 客服 AI, 模型选型, RAG, AI Agent | tutorial | beginner | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| public, wave-1 | none | none | 2026-06-06 | 2026-06-14 | AI 提示词, 提示词模板, 行业 AI, SOP | tutorial | beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
 ## Recommended Items
 
 | Scope | Issues | Warnings | Date | Updated | Tags | Content type | Difficulty | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| public, expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-14 | AI Agent, Vercel AI SDK, 工具调用, AI 部署 | tutorial | intermediate | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| public, expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-14 | 客服 AI, 模型选型, RAG, AI Agent | tutorial | beginner | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| public, expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-14 | AI 提示词, 提示词模板, 行业 AI, SOP | tutorial | beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| recommended | none | none | 2026-06-03 | 2026-06-03 | 工具选择, AI 工具实践, 新手教程, 成本控制 | tutorial | beginner | AI 工具新手不应该先买哪些工具 | content/blog/tools-not-to-buy-first.mdx |
+| expansion, recommended | none | none | 2026-06-05 | 2026-06-12 | 向量数据库, RAG, pgvector, Qdrant | tutorial | beginner | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| expansion, recommended | none | none | 2026-06-06 | 2026-06-06 | Vercel AI Gateway, AI SDK, 多模型, AI 部署 | tutorial | beginner | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 
 ## Public Items
 
@@ -59,13 +59,13 @@ This report is read-only. It checks whether public and publish-candidate article
 | public | none | none | 2026-06-05 | 2026-06-14 | Agent 上线, AI Agent, 生产部署, AI 基建 | tutorial | beginner | Agent 生产上线检查表：权限、日志、成本和人工确认 | content/blog/agent-production-deployment-checklist.mdx |
 | public | none | none | 2026-06-04 | 2026-06-14 | Agent 工具调用, AI Agent, Tool Calling, AI 基建 | tutorial | beginner | Agent 工具调用怎么设计：读、写、执行要分清 | content/blog/agent-tool-calling-beginner-guide.mdx |
 | public | none | none | 2026-06-06 | 2026-06-14 | AI Agent, Tool Calling, 权限控制, 安全 | tutorial | beginner | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
-| public, expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-14 | AI Agent, Vercel AI SDK, 工具调用, AI 部署 | tutorial | intermediate | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| public, expansion | none | none | 2026-06-06 | 2026-06-14 | AI Agent, AI 记忆, RAG, 知识库 | tutorial | intermediate | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| public, expansion | none | none | 2026-06-06 | 2026-06-14 | API Key, AI 安全, 环境变量, 密钥管理 | tutorial | beginner | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| public, wave-1 | none | none | 2026-06-06 | 2026-06-14 | AI Agent, Vercel AI SDK, 工具调用, AI 部署 | tutorial | intermediate | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| public | none | none | 2026-06-06 | 2026-06-14 | AI Agent, AI 记忆, RAG, 知识库 | tutorial | intermediate | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| public | none | none | 2026-06-06 | 2026-06-14 | API Key, AI 安全, 环境变量, 密钥管理 | tutorial | beginner | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | AI 辅助交付, 交付检查清单, AI 工具实践, 人工审核 | checklist | beginner | AI 辅助交付和完全自动交付的检查清单 | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
 | public | none | contentType is uncommon: troubleshooting | 2026-06-03 | 2026-06-14 | AI 辅助交付, 交付错误, AI 工具实践, 新手避坑 | troubleshooting | beginner | AI 辅助交付常见错误和解决步骤 | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | AI 辅助交付, 自动化交付, AI 工具实践, 新手教程 | tutorial | beginner | AI 辅助交付和完全自动交付有什么区别 | content/blog/ai-assisted-vs-automated-delivery.mdx |
-| public, expansion | none | none | 2026-06-06 | 2026-06-14 | AI 自动化, 项目报价, Dify, n8n | tutorial | beginner | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| public | none | none | 2026-06-06 | 2026-06-14 | AI 自动化, 项目报价, Dify, n8n | tutorial | beginner | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | AI 工具实践, 项目检查清单, 新手项目练习, 交付边界 | checklist | beginner | AI 新手接项目前的项目适配检查清单 | content/blog/ai-beginner-project-fit-check-checklist.mdx |
 | public | none | contentType is uncommon: troubleshooting | 2026-06-03 | 2026-06-14 | AI 工具实践, 项目错误, 项目判断, 新手避坑 | troubleshooting | beginner | AI 新手判断接项目时的常见错误 | content/blog/ai-beginner-project-fit-check-mistakes.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | AI 工具实践, 项目判断, 新手项目练习, 风险评估 | tutorial | beginner | AI 新手如何判断自己能不能接项目 | content/blog/ai-beginner-project-fit-check.mdx |
@@ -97,13 +97,13 @@ This report is read-only. It checks whether public and publish-candidate article
 | public | none | contentType is uncommon: troubleshooting | 2026-06-03 | 2026-06-14 | AI 工具实践, 技能路线图, 常见错误, 新手教程 | troubleshooting | beginner | AI 工具技能路线图常见错误 | content/blog/ai-freelance-skill-roadmap-mistakes.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | AI 工具实践, 技能路线图, 新手教程, 自由职业 | tutorial | beginner | AI 工具新手技能路线图怎么排 | content/blog/ai-freelance-skill-roadmap.mdx |
 | public | none | none | 2026-06-04 | 2026-06-14 | AI Logo, 设计工具, Canva, 新手教程 | tutorial | beginner | AI 做 Logo 怎么开始：新手先别急着商用 | content/blog/ai-logo-design-beginner-guide.mdx |
-| public, expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-14 | 客服 AI, 模型选型, RAG, AI Agent | tutorial | beginner | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| public, wave-1 | none | none | 2026-06-06 | 2026-06-14 | 客服 AI, 模型选型, RAG, AI Agent | tutorial | beginner | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | AI 工具实践, 风险控制, 检查清单, 人工审核 | checklist | beginner | AI 输出不稳定风险控制检查清单 | content/blog/ai-output-unstable-risk-control-checklist.mdx |
 | public | none | contentType is uncommon: troubleshooting | 2026-06-03 | 2026-06-14 | AI 工具实践, 风险控制, 常见错误, 人工审核 | troubleshooting | beginner | AI 输出不稳定风险控制常见错误 | content/blog/ai-output-unstable-risk-control-mistakes.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | AI 工具实践, 风险控制, 人工审核, 交付验证 | tutorial | beginner | AI 输出不稳定怎么做风险控制 | content/blog/ai-output-unstable-risk-control.mdx |
 | public | none | none | 2026-06-04 | 2026-06-14 | AI PPT, ChatGPT, 办公效率, 新手教程 | tutorial | beginner | AI 做 PPT 怎么开始：新手从大纲到成稿的流程 | content/blog/ai-ppt-beginner-guide.mdx |
 | public | none | none | 2026-06-05 | 2026-06-14 | AI 提示词, ChatGPT, 业务效率, 人工复核 | tutorial | beginner | AI 提示词怎么写才好用：全行业都能套的 5 段式框架 | content/blog/ai-prompt-framework-business-guide.mdx |
-| public, expansion | none | none | 2026-06-06 | 2026-06-14 | 提示词库, 团队知识库, AI 提示词, SOP | tutorial | beginner | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
+| public | none | none | 2026-06-06 | 2026-06-14 | 提示词库, 团队知识库, AI 提示词, SOP | tutorial | beginner | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
 | public | none | none | 2026-06-04 | 2026-06-14 | AI 简历, ChatGPT, 求职信, 新手教程 | tutorial | beginner | AI 写简历和求职信怎么用：别让内容变得不真实 | content/blog/ai-resume-cover-letter-guide.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | AI 工具实践, 练习项目, 检查清单, 作品集 | checklist | beginner | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
 | public | none | contentType is uncommon: troubleshooting | 2026-06-03 | 2026-06-14 | AI 工具实践, 练习项目, 常见错误, 作品集 | troubleshooting | beginner | AI 小项目练习常见错误 | content/blog/ai-small-project-practice-topics-mistakes.mdx |
@@ -142,7 +142,7 @@ This report is read-only. It checks whether public and publish-candidate article
 | public | none | none | 2026-06-03 | 2026-06-14 | Proposal, ChatGPT, Claude, AI 工具实践 | tutorial | beginner | ChatGPT 和 Claude 写 Proposal 有什么区别 | content/blog/chatgpt-vs-claude-proposal.mdx |
 | public | none | none | 2026-06-05 | 2026-06-14 | Chroma, 向量数据库, RAG, 知识库 | tutorial | beginner | Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection | content/blog/chroma-vector-database-rag-guide.mdx |
 | public | none | none | 2026-06-05 | 2026-06-14 | Claude API, Anthropic, Messages API, AI 部署 | tutorial | beginner | Claude API 怎么接入：Messages API、费用和上下文边界 | content/blog/claude-api-beginner-guide.mdx |
-| public, expansion | none | none | 2026-06-06 | 2026-06-14 | Claude API, Rate limit, AI API, 限流 | tutorial | beginner | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
+| public | none | none | 2026-06-06 | 2026-06-14 | Claude API, Rate limit, AI API, 限流 | tutorial | beginner | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 工具流程, Claude Code, 人工审核, 检查清单 | checklist | beginner | Claude Code 自动化人工审核检查清单 | content/blog/claude-code-automation-human-review-checklist.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 工具流程, Claude Code, 项目范围, 人工审核 | case-study | beginner | Claude Code 自动化项目前怎么判断能不能做 | content/blog/claude-code-automation-human-review-freelance-scope.mdx |
 | public | none | contentType is uncommon: troubleshooting | 2026-06-03 | 2026-06-14 | 工具流程, Claude Code, 常见错误, 人工审核 | troubleshooting | beginner | Claude Code 自动化最容易忽略的人工审核错误 | content/blog/claude-code-automation-human-review-mistakes.mdx |
@@ -315,11 +315,11 @@ This report is read-only. It checks whether public and publish-candidate article
 | public | none | none | 2026-06-05 | 2026-06-14 | CrewAI, Agent, 多智能体, AI 部署 | tutorial | beginner | CrewAI Agent 怎么部署：从 Crew、Task 到生产监控边界 | content/blog/crewai-agent-deployment-beginner-guide.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 工具导航, Cursor, Codex, 检查清单 | checklist | beginner | Cursor 和 Codex 改网页检查清单 | content/blog/cursor-vs-codex-web-editing-checklist.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 工具导航, Cursor, Codex, AI 工具实践 | tutorial | beginner | Cursor 和 Codex 改网页有什么区别 | content/blog/cursor-vs-codex-web-editing.mdx |
-| public, expansion | none | none | 2026-06-05 | 2026-06-14 | 客服提示词, AI 客服, 工单分类, 售后 | tutorial | beginner | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
+| public | none | none | 2026-06-05 | 2026-06-14 | 客服提示词, AI 客服, 工单分类, 售后 | tutorial | beginner | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 新手教程, 检查清单, 练习记录, AI 工具实践 | checklist | beginner | 每天项目练习记录检查清单 | content/blog/daily-ai-freelance-practice-log-checklist.mdx |
 | public | none | contentType is uncommon: troubleshooting | 2026-06-03 | 2026-06-14 | 新手教程, 练习记录, 常见错误, AI 工具实践 | troubleshooting | beginner | 每天项目练习记录常见错误和解决步骤 | content/blog/daily-ai-freelance-practice-log-mistakes.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 新手教程, 练习记录, 作品集, AI 工具实践 | tutorial | beginner | 新手如何记录每天的项目练习 | content/blog/daily-ai-freelance-practice-log.mdx |
-| public, expansion | none | none | 2026-06-06 | 2026-06-14 | 数据分析, SQL, 指标分析, AI 提示词 | tutorial | beginner | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
+| public | none | none | 2026-06-06 | 2026-06-14 | 数据分析, SQL, 指标分析, AI 提示词 | tutorial | beginner | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 新手教程, 检查清单, 小网站交付, AI 工具实践 | checklist | beginner | 小网站交付检查清单 | content/blog/deliver-small-website-with-ai-no-code-checklist.mdx |
 | public | none | contentType is uncommon: troubleshooting | 2026-06-03 | 2026-06-14 | 新手教程, 小网站交付, 常见错误, AI 工具实践 | troubleshooting | beginner | 小网站交付常见错误和解决步骤 | content/blog/deliver-small-website-with-ai-no-code-mistakes.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 新手教程, 小网站交付, AI 工具, AI 工具实践 | tutorial | beginner | 不会写代码怎么交付一个小网站 | content/blog/deliver-small-website-with-ai-no-code.mdx |
@@ -337,12 +337,12 @@ This report is read-only. It checks whether public and publish-candidate article
 | public | none | none | 2026-06-05 | 2026-06-14 | Dify, metadata filtering, RAG, 知识库 | tutorial | beginner | Dify metadata filtering 怎么用：让知识库检索更可控 | content/blog/dify-metadata-filtering-rag-guide.mdx |
 | public | none | none | 2026-06-05 | 2026-06-14 | Dify, Ollama, 本地大模型, 知识库 | tutorial | beginner | Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试 | content/blog/dify-ollama-local-model-guide.mdx |
 | public | none | none | 2026-06-05 | 2026-06-14 | Dify, OpenAI API, 模型供应商, AI 应用 | tutorial | beginner | Dify 怎么接 OpenAI API：模型供应商、LLM 节点和费用边界 | content/blog/dify-openai-api-provider-guide.mdx |
-| public, expansion | none | none | 2026-06-06 | 2026-06-14 | Dify, AI 工作流, 错误处理, AI 部署 | tutorial | beginner | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
-| public, expansion | none | none | 2026-06-06 | 2026-06-14 | Dify, Workflow, AI Agent, AI 应用 | tutorial | beginner | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
+| public | none | none | 2026-06-06 | 2026-06-14 | Dify, AI 工作流, 错误处理, AI 部署 | tutorial | beginner | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| public | none | none | 2026-06-06 | 2026-06-14 | Dify, Workflow, AI Agent, AI 应用 | tutorial | beginner | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 数字模板, 退款规则, 检查清单, AI 工具实践 | checklist | beginner | 数字模板退款规则检查清单 | content/blog/digital-template-refund-policy-checklist.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 数字模板, 退款规则, 收款工具, AI 工具实践 | tutorial | beginner | 数字模板退款规则怎么写更清楚 | content/blog/digital-template-refund-policy.mdx |
-| public, expansion | none | none | 2026-06-05 | 2026-06-14 | 电商提示词, 商品文案, 评价分析, AI 电商 | tutorial | beginner | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
-| public, expansion | none | none | 2026-06-06 | 2026-06-14 | 教育提示词, 教案, 学习计划, AI 教育 | tutorial | beginner | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
+| public | none | none | 2026-06-05 | 2026-06-14 | 电商提示词, 商品文案, 评价分析, AI 电商 | tutorial | beginner | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
+| public | none | none | 2026-06-06 | 2026-06-14 | 教育提示词, 教案, 学习计划, AI 教育 | tutorial | beginner | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
 | public | none | none | 2026-06-04 | 2026-06-14 | Embedding, 向量检索, RAG, AI 基建 | tutorial | beginner | Embedding 模型怎么选：RAG 和向量检索别只看模型名 | content/blog/embedding-model-selection-guide.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 客户沟通, 英文回复, 检查清单, AI 工具实践 | checklist | beginner | 英文客户回复避免夸大检查清单 | content/blog/english-client-reply-template-honest-checklist.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 客户沟通, 英文回复, AI 工具实践, 新手教程 | tutorial | beginner | 英文客户回复模板怎么避免夸大 | content/blog/english-client-reply-template-honest.mdx |
@@ -381,7 +381,7 @@ This report is read-only. It checks whether public and publish-candidate article
 | public | none | none | 2026-06-03 | 2026-06-14 | 自由职业, 每周复盘, 检查清单, AI 工具实践 | checklist | beginner | 自由职业每周复盘检查清单 | content/blog/freelance-weekly-review-template-checklist.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 自由职业, 每周复盘, AI 工具实践, 新手教程 | tutorial | beginner | 自由职业每周复盘模板怎么用 | content/blog/freelance-weekly-review-template.mdx |
 | public | none | none | 2026-06-05 | 2026-06-14 | Gemini API, Next.js, Google AI, AI 部署 | tutorial | beginner | Gemini API 怎么接 Next.js：从 API Key 到服务端 Route Handler | content/blog/gemini-api-nextjs-guide.mdx |
-| public, expansion | none | none | 2026-06-06 | 2026-06-14 | Gemini API, Google AI, Rate limit, AI API | tutorial | beginner | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | content/blog/gemini-api-rate-limit-debug-guide.mdx |
+| public | none | none | 2026-06-06 | 2026-06-14 | Gemini API, Google AI, Rate limit, AI API | tutorial | beginner | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | content/blog/gemini-api-rate-limit-debug-guide.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 报错解决, Git, 检查清单, AI 工具实践 | checklist | beginner | git authentication failed 处理检查清单 | content/blog/git-authentication-failed-fix-checklist.mdx |
 | public | none | contentType is uncommon: freelance-scope | 2026-06-03 | 2026-06-14 | 报错解决, Git, 项目边界, AI 工具实践 | freelance-scope | beginner | git authentication failed 使用前怎么判断是否适合 | content/blog/git-authentication-failed-fix-freelance-scope.mdx |
 | public | none | contentType is uncommon: troubleshooting | 2026-06-03 | 2026-06-14 | 报错解决, Git, 故障排查, AI 工具实践 | troubleshooting | beginner | git authentication failed 常见错误和解决步骤 | content/blog/git-authentication-failed-fix-mistakes.mdx |
@@ -398,7 +398,7 @@ This report is read-only. It checks whether public and publish-candidate article
 | public | none | none | 2026-06-03 | 2026-06-14 | 工具导航, Google Analytics, 网站分析, AI 工具实践 | tutorial | beginner | Google Analytics 什么时候再接入 | content/blog/google-analytics-when-to-add.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 工具导航, Google Search Console, 检查清单, AI 工具实践 | checklist | beginner | Google Search Console 新站检查清单 | content/blog/google-search-console-new-site-checklist.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 工具导航, Google Search Console, SEO, AI 工具实践 | tutorial | beginner | Google Search Console 新站怎么用 | content/blog/google-search-console-new-site.mdx |
-| public, expansion | none | none | 2026-06-05 | 2026-06-14 | Docker, NVIDIA, GPU, 大模型部署 | tutorial | beginner | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
+| public | none | none | 2026-06-05 | 2026-06-14 | Docker, NVIDIA, GPU, 大模型部署 | tutorial | beginner | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
 | public | none | none | 2026-06-05 | 2026-06-14 | Groq, API, 高速推理, OpenAI Compatible | tutorial | beginner | Groq API 怎么接入：高速推理适合什么 AI 应用 | content/blog/groq-api-fast-llm-guide.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 收款工具, Gumroad, 检查清单, AI 工具实践 | checklist | beginner | Gumroad 卖模板前检查清单 | content/blog/gumroad-template-selling-prep-checklist.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 收款工具, Gumroad, 数字模板, AI 工具实践 | tutorial | beginner | Gumroad 卖模板前要准备什么 | content/blog/gumroad-template-selling-prep.mdx |
@@ -407,7 +407,7 @@ This report is read-only. It checks whether public and publish-candidate article
 | public | none | none | 2026-06-05 | 2026-06-14 | HR 提示词, 招聘, 简历筛选, 培训 | tutorial | beginner | 人力招聘 AI 提示词模板：JD、简历初筛、面试题和培训材料 | content/blog/hr-recruiting-ai-prompts-guide.mdx |
 | public | none | none | 2026-06-05 | 2026-06-14 | Hugging Face, Spaces, Gradio, AI Demo | tutorial | beginner | Hugging Face Spaces 怎么部署 AI Demo：Gradio、Docker 和公开边界 | content/blog/huggingface-spaces-ai-demo-guide.mdx |
 | public | none | none | 2026-06-05 | 2026-06-14 | Hugging Face, TGI, Text Generation Inference, LLM Serving | tutorial | beginner | Hugging Face TGI 怎么部署：Text Generation Inference 入门检查表 | content/blog/huggingface-tgi-deployment-guide.mdx |
-| public, expansion, recommended, wave-1 | none | none | 2026-06-06 | 2026-06-14 | AI 提示词, 提示词模板, 行业 AI, SOP | tutorial | beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| public, wave-1 | none | none | 2026-06-06 | 2026-06-14 | AI 提示词, 提示词模板, 行业 AI, SOP | tutorial | beginner | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 收款工具, 海外收款手续费, 报价检查, AI 工具实践 | checklist | beginner | 海外收款手续费怎么估算：新手检查清单 | content/blog/international-payment-fee-estimate-checklist.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 收款工具, 海外收款手续费, AI 工具实践, 新手教程 | tutorial | beginner | 海外收款手续费怎么估算 | content/blog/international-payment-fee-estimate.mdx |
 | public | none | none | 2026-06-04 | 2026-06-14 | 知识库权限, RAG, 企业知识库, AI 基建 | tutorial | beginner | AI 知识库权限怎么设计：别让检索结果越权 | content/blog/knowledge-base-permission-design-guide.mdx |
@@ -425,12 +425,12 @@ This report is read-only. It checks whether public and publish-candidate article
 | public | none | none | 2026-06-06 | 2026-06-14 | 大模型 API, 限流, 重试, AI 部署 | tutorial | beginner | 大模型 API 限流和重试怎么做：429、队列、退避和降级方案 | content/blog/llm-api-rate-limit-retry-guide.mdx |
 | public | none | none | 2026-06-06 | 2026-06-14 | LLM 成本, AI 监控, Token, 成本看板 | tutorial | beginner | 大模型成本监控怎么做：按用户、功能、模型和项目拆账 | content/blog/llm-cost-monitoring-dashboard-guide.mdx |
 | public | none | none | 2026-06-04 | 2026-06-14 | 大模型部署, LLM, AI 基建, 新手教程 | tutorial | beginner | 大模型部署是什么意思：API、本地和私有化怎么选 | content/blog/llm-deployment-beginner-guide.mdx |
-| public, expansion | none | none | 2026-06-06 | 2026-06-14 | 大模型部署, Hugging Face, Inference Endpoints, vLLM | tutorial | intermediate | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| public | none | none | 2026-06-06 | 2026-06-14 | 大模型部署, Hugging Face, Inference Endpoints, vLLM | tutorial | intermediate | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | public | none | none | 2026-06-04 | 2026-06-14 | 大模型微调, RAG, 知识库, AI 基建 | tutorial | beginner | 大模型微调和 RAG 怎么选：新手别把两件事混在一起 | content/blog/llm-finetuning-vs-rag-beginner-guide.mdx |
 | public | none | none | 2026-06-04 | 2026-06-14 | 大模型成本, LLM 延迟, AI 部署, 上线检查 | tutorial | beginner | 大模型部署成本和延迟怎么估算：上线前检查清单 | content/blog/llm-serving-cost-latency-checklist.mdx |
 | public | none | none | 2026-06-05 | 2026-06-14 | LM Studio, 本地大模型, OpenAI Compatible, API | tutorial | beginner | LM Studio 本地 API 怎么用：把本地模型变成 OpenAI 兼容接口 | content/blog/lm-studio-local-api-guide.mdx |
 | public | none | none | 2026-06-04 | 2026-06-14 | 本地部署大模型, LLM, Ollama, AI 基建 | tutorial | beginner | 本地部署大模型怎么开始：新手先看硬件、模型和用途 | content/blog/local-llm-deployment-beginner.mdx |
-| public, expansion | none | none | 2026-06-06 | 2026-06-14 | 本地大模型, 显存, vLLM, 量化 | tutorial | beginner | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 | content/blog/local-llm-vram-not-enough-guide.mdx |
+| public | none | none | 2026-06-06 | 2026-06-14 | 本地大模型, 显存, vLLM, 量化 | tutorial | beginner | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 | content/blog/local-llm-vram-not-enough-guide.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 工具导航, Make, Zapier, 自动化清单 | checklist | beginner | Make 和 Zapier 自动化新手检查清单 | content/blog/make-vs-zapier-automation-checklist.mdx |
 | public | none | none | 2026-06-03 | 2026-06-14 | 工具导航, Make, Zapier, AI 工具实践 | tutorial | beginner | Make 和 Zapier 自动化怎么选 | content/blog/make-vs-zapier-automation.mdx |
 | public | none | none | 2026-06-06 | 2026-06-14 | 制造业 AI, SOP, 质检, 生产复盘 | tutorial | beginner | 制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘 | content/blog/manufacturing-ai-prompts-guide.mdx |
@@ -465,7 +465,7 @@ This report is read-only. It checks whether public and publish-candidate article
 | public | none | none | 2026-06-03 | 2026-06-14 | 报错解决, npm, Node.js, AI 工具实践 | tutorial | beginner | npm command not found 怎么解决 | content/blog/npm-command-not-found-fix.mdx |
 | public | none | none | 2026-06-05 | 2026-06-14 | Ollama API, 本地模型, 网页应用, AI 基建 | tutorial | beginner | Ollama API 怎么接到网页应用：本地模型到前后端调用 | content/blog/ollama-api-web-app-integration.mdx |
 | public | none | none | 2026-06-04 | 2026-06-14 | Ollama, 本地部署大模型, LLM, AI 基建 | tutorial | beginner | Ollama 本地部署大模型怎么开始：新手检查清单 | content/blog/ollama-local-model-deployment-guide.mdx |
-| public, expansion | none | none | 2026-06-06 | 2026-06-14 | Open WebUI, Functions, Pipelines, 本地大模型 | tutorial | beginner | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| public | none | none | 2026-06-06 | 2026-06-14 | Open WebUI, Functions, Pipelines, 本地大模型 | tutorial | beginner | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 | public | none | none | 2026-06-05 | 2026-06-14 | Open WebUI, Ollama, Docker, 本地大模型 | tutorial | beginner | Open WebUI + Ollama 怎么部署：本地大模型网页聊天入门 | content/blog/open-webui-ollama-docker-guide.mdx |
 | public | none | none | 2026-06-05 | 2026-06-14 | OpenAI Agents SDK, Agent, Tracing, Tools | tutorial | beginner | OpenAI Agents SDK 怎么入门：Tools、Handoffs 和 Tracing 先分清 | content/blog/openai-agents-sdk-beginner-guide.mdx |
 | public | none | none | 2026-06-05 | 2026-06-14 | OpenAI API, Next.js, Route Handler, AI 应用 | tutorial | beginner | OpenAI API 接入 Next.js 怎么做：Route Handler 新手清单 | content/blog/openai-api-nextjs-route-handler-guide.mdx |

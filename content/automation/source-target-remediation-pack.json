@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T12:27:26.417Z",
+  "generatedAt": "2026-06-16T18:18:26.943Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "sourceHealthGeneratedAt": "2026-06-16T12:27:25.938Z",
+    "sourceHealthGeneratedAt": "2026-06-16T18:18:26.473Z",
     "sourceHealthGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -962,10 +962,10 @@
       "affectedTitles": [
         "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
       ],
-      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=vi",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=ko",
       "humanChecklist": [
         "Review URL: https://ai.google.dev/docs.",
-        "Review final URL: https://ai.google.dev/gemini-api/docs?hl=vi.",
+        "Review final URL: https://ai.google.dev/gemini-api/docs?hl=ko.",
         "HTTP status observed by automation: 200.",
         "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
         "If the final URL is the canonical destination, update the source target during human review.",

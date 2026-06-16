@@ -1,6 +1,6 @@
 # Public Search Refresh Session Pack
 
-Generated at: 2026-06-16T05:34:21.457Z
+Generated at: 2026-06-16T18:18:33.719Z
 
 This report is read-only. It turns public refresh waves into manual SEO refresh sessions without editing public pages or claiming traffic.
 
@@ -15,27 +15,27 @@ This report is read-only. It turns public refresh waves into manual SEO refresh 
 
 ## Summary
 
-- actionItems: 5237
-- cannibalizationSessions: 80
+- actionItems: 5154
+- cannibalizationSessions: 85
 - filesCovered: 500
-- highPriorityItems: 290
+- highPriorityItems: 268
 - liveMissingFromSitemap: 0
-- mojibakeSessions: 18
+- mojibakeSessions: 17
 - publicArticles: 500
 - publishConfirmCommandsIncluded: 0
 - readyItems: 500
-- seoWarningSessions: 89
+- seoWarningSessions: 86
 - sessions: 167
-- shortDescriptionSessions: 158
+- shortDescriptionSessions: 157
 - trafficDataAvailable: false
 - unsafeItems: 0
 
 ## Source Evidence
 
-- publicRefreshSprintActions: 5237
+- publicRefreshSprintActions: 5154
 - publicRefreshSprintItems: 500
 - publicRefreshSprintUnsafeItems: 0
-- publicSearchRefreshActions: 3579
+- publicSearchRefreshActions: 3489
 - publicSearchRefreshItems: 500
 - publicSearchRefreshUnsafeItems: 0
 - publicSurfaceArticles: 500
@@ -53,189 +53,238 @@ This report is read-only. It turns public refresh waves into manual SEO refresh 
 
 | Wave | Session | Ready | Actions | High priority | Reasons | Files |
 | ---: | --- | ---: | ---: | ---: | --- | --- |
-| 1 | public search refresh wave 1 | 3/3 | 42 | 3 | mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/claude-code-beginner-mistakes-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-mistakes.mdx<br>content/blog/claude-code-beginner-use-cases-checklist.mdx |
-| 2 | public search refresh wave 2 | 3/3 | 42 | 3 | mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/claude-code-beginner-use-cases.mdx<br>content/blog/claude-code-bug-prompt-mistakes.mdx<br>content/blog/claude-code-bug-prompt.mdx |
-| 3 | public search refresh wave 3 | 3/3 | 42 | 3 | mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/claude-code-common-commands-mistakes.mdx<br>content/blog/claude-code-common-commands.mdx<br>content/blog/claude-code-error-debug-mistakes.mdx |
-| 4 | public search refresh wave 4 | 3/3 | 40 | 3 | mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/claude-code-github-file-scope-mistakes.mdx<br>content/blog/codex-vs-claude-code-beginner-checklist.mdx<br>content/blog/ai-small-project-practice-topics-checklist.mdx |
-| 5 | public search refresh wave 5 | 3/3 | 39 | 3 | mojibake-public, seo-warning, short-description, freshness-high, high-priority, cannibalization | content/blog/first-upwork-project-pricing-checklist.mdx<br>content/blog/claude-code-small-project-tasks.mdx<br>content/blog/claude-code-vs-codex-web-editing-checklist.mdx |
+| 1 | public search refresh wave 1 | 3/3 | 39 | 3 | mojibake-public, seo-warning, short-description, freshness-high, high-priority, cannibalization | content/blog/first-upwork-project-pricing-checklist.mdx<br>content/blog/ai-small-project-practice-topics-checklist.mdx<br>content/blog/canva-portfolio-cover-tips-checklist.mdx |
+| 2 | public search refresh wave 2 | 3/3 | 39 | 3 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-beginner-mistakes-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-mistakes.mdx<br>content/blog/claude-code-beginner-use-cases-checklist.mdx |
+| 3 | public search refresh wave 3 | 3/3 | 39 | 3 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-beginner-use-cases.mdx<br>content/blog/claude-code-bug-prompt-mistakes.mdx<br>content/blog/claude-code-bug-prompt.mdx |
+| 4 | public search refresh wave 4 | 3/3 | 39 | 3 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-common-commands-mistakes.mdx<br>content/blog/claude-code-common-commands.mdx<br>content/blog/claude-code-error-debug-mistakes.mdx |
+| 5 | public search refresh wave 5 | 3/3 | 39 | 3 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-github-file-scope-mistakes.mdx<br>content/blog/claude-code-small-project-tasks.mdx<br>content/blog/claude-code-vs-codex-web-editing-checklist.mdx |
 | 6 | public search refresh wave 6 | 3/3 | 39 | 3 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/codex-automation-steps-not-skip-mistakes.mdx<br>content/blog/codex-edit-existing-ui-mistakes.mdx<br>content/blog/codex-first-day-guide-checklist.mdx |
 | 7 | public search refresh wave 7 | 3/3 | 39 | 3 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/codex-npm-install-errors-mistakes.mdx<br>content/blog/module-not-found-debug-mistakes.mdx<br>content/blog/node-version-mismatch-fix-mistakes.mdx |
-| 8 | public search refresh wave 8 | 3/3 | 36 | 3 | mojibake-public, seo-warning, freshness-high, high-priority, cannibalization | content/blog/codex-github-before-commit-checklist.mdx<br>content/blog/codex-vercel-deploy-preflight-checklist.mdx<br>content/blog/git-authentication-failed-fix-mistakes.mdx |
-| 9 | public search refresh wave 9 | 3/3 | 42 | 3 | mojibake-public, short-description, cannibalization, freshness-high, high-priority | content/blog/before-first-ai-freelance-job.mdx<br>content/blog/build-first-webpage-with-codex.mdx<br>content/blog/codex-install-failed-beginner-fix.mdx |
-| 10 | public search refresh wave 10 | 3/3 | 38 | 3 | mojibake-public, short-description, cannibalization, freshness-high, high-priority, seo-warning | content/blog/what-is-codex-beginner-start.mdx<br>content/blog/ai-tools-recommendation-beginner.mdx<br>content/blog/canva-portfolio-cover-tips-checklist.mdx |
-| 11 | public search refresh wave 11 | 3/3 | 36 | 3 | mojibake-public, seo-warning, short-description, high-priority | content/blog/llm-cost-monitoring-dashboard-guide.mdx<br>content/blog/module-not-found-debug-freelance-scope.mdx<br>content/blog/node-version-mismatch-fix-freelance-scope.mdx |
-| 12 | public search refresh wave 12 | 3/3 | 36 | 3 | mojibake-public, seo-warning, short-description, high-priority, cannibalization | content/blog/permission-denied-fix-mistakes.mdx<br>content/blog/ray-serve-llm-deployment-guide.mdx<br>content/blog/codex-automation-steps-not-skip.mdx |
+| 8 | public search refresh wave 8 | 3/3 | 37 | 3 | mojibake-public, seo-warning, short-description, cannibalization, high-priority, freshness-high | content/blog/permission-denied-fix-mistakes.mdx<br>content/blog/codex-github-before-commit-checklist.mdx<br>content/blog/codex-vercel-deploy-preflight-checklist.mdx |
+| 9 | public search refresh wave 9 | 3/3 | 36 | 3 | mojibake-public, seo-warning, freshness-high, high-priority, cannibalization, short-description | content/blog/codex-vs-claude-code-beginner-checklist.mdx<br>content/blog/git-authentication-failed-fix-mistakes.mdx<br>content/blog/ai-tools-recommendation-beginner.mdx |
+| 10 | public search refresh wave 10 | 3/3 | 36 | 3 | mojibake-public, seo-warning, short-description, high-priority | content/blog/llm-cost-monitoring-dashboard-guide.mdx<br>content/blog/module-not-found-debug-freelance-scope.mdx<br>content/blog/node-version-mismatch-fix-freelance-scope.mdx |
+| 11 | public search refresh wave 11 | 3/3 | 37 | 3 | mojibake-public, seo-warning, short-description, freshness-high | content/blog/ray-serve-llm-deployment-guide.mdx<br>content/blog/build-first-webpage-with-codex.mdx<br>content/blog/codex-install-failed-beginner-fix.mdx |
+| 12 | public search refresh wave 12 | 3/3 | 39 | 3 | mojibake-public, short-description, freshness-high, cannibalization | content/blog/what-is-codex-beginner-start.mdx<br>content/blog/before-first-ai-freelance-job.mdx<br>content/blog/codex-automation-steps-not-skip.mdx |
 | 13 | public search refresh wave 13 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-install-prerequisites-checklist.mdx<br>content/blog/codex-npm-install-errors.mdx<br>content/blog/codex-upwork-job-risk-check-freelance-scope.mdx |
-| 14 | public search refresh wave 14 | 3/3 | 37 | 3 | mojibake-public, short-description, cannibalization, freshness-high | content/blog/codex-upwork-job-risk-check.mdx<br>content/blog/daily-ai-freelance-practice-log.mdx<br>content/blog/codex-code-review-delivery-checklist.mdx |
-| 15 | public search refresh wave 15 | 3/3 | 33 | 3 | mojibake-public, freshness-high, cannibalization | content/blog/codex-upwork-small-job-risk-checklist.mdx<br>content/blog/git-authentication-failed-fix.mdx<br>content/blog/github-actions-build-log-debug-checklist.mdx |
-| 16 | public search refresh wave 16 | 3/3 | 35 | 3 | mojibake-public, cannibalization, seo-warning, short-description, freshness-high, high-priority | content/blog/node-version-mismatch-fix.mdx<br>content/blog/claude-code-nextjs-page-check-freelance-scope.mdx<br>content/blog/claude-code-nextjs-page-check-mistakes.mdx |
-| 17 | public search refresh wave 17 | 3/3 | 34 | 3 | seo-warning, short-description, cannibalization, freshness-high, high-priority, mojibake-public | content/blog/claude-code-nextjs-page-check.mdx<br>content/blog/ai-ppt-beginner-guide.mdx<br>content/blog/codex-first-landing-page-freelance-scope.mdx |
-| 18 | public search refresh wave 18 | 3/3 | 33 | 3 | mojibake-public, short-description | content/blog/dify-metadata-filtering-rag-guide.mdx<br>content/blog/permission-denied-fix-checklist.mdx<br>content/blog/rag-prompt-injection-defense-guide.mdx |
-| 19 | public search refresh wave 19 | 3/3 | 36 | 3 | seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx<br>content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx<br>content/blog/ai-beginner-project-fit-check-checklist.mdx |
-| 20 | public search refresh wave 20 | 3/3 | 36 | 3 | seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/ai-beginner-project-fit-check-mistakes.mdx<br>content/blog/ai-beginner-project-fit-check.mdx<br>content/blog/ai-freelance-30-day-execution-checklist.mdx |
-| 21 | public search refresh wave 21 | 3/3 | 36 | 3 | seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/ai-freelance-30-day-execution-mistakes.mdx<br>content/blog/ai-freelance-automation-compliance-risk-checklist.mdx<br>content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx |
-| 22 | public search refresh wave 22 | 3/3 | 36 | 3 | seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/ai-freelance-common-misconceptions-mistakes.mdx<br>content/blog/ai-freelance-failure-review-mistakes.mdx<br>content/blog/ai-freelance-first-7-days-mistakes.mdx |
-| 23 | public search refresh wave 23 | 3/3 | 36 | 3 | seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/ai-freelance-service-page-copy-mistakes.mdx<br>content/blog/ai-freelance-skill-roadmap-mistakes.mdx<br>content/blog/api-key-invalid-or-missing-mistakes.mdx |
-| 24 | public search refresh wave 24 | 3/3 | 36 | 3 | seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/claude-code-automation-human-review-checklist.mdx<br>content/blog/claude-code-automation-human-review-freelance-scope.mdx<br>content/blog/claude-code-automation-human-review-mistakes.mdx |
-| 25 | public search refresh wave 25 | 3/3 | 36 | 3 | seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/claude-code-automation-human-review.mdx<br>content/blog/claude-code-beginner-mistakes.mdx<br>content/blog/claude-code-beginner-use-cases-freelance-scope.mdx |
-| 26 | public search refresh wave 26 | 3/3 | 36 | 3 | seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/claude-code-beginner-use-cases-mistakes.mdx<br>content/blog/claude-code-client-questions-checklist.mdx<br>content/blog/claude-code-client-questions-mistakes.mdx |
-| 27 | public search refresh wave 27 | 3/3 | 36 | 3 | seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/claude-code-client-questions.mdx<br>content/blog/claude-code-common-commands-checklist.mdx<br>content/blog/claude-code-delivery-note-mistakes.mdx |
-| 28 | public search refresh wave 28 | 3/3 | 36 | 3 | seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/claude-code-delivery-note.mdx<br>content/blog/claude-code-error-debug.mdx<br>content/blog/claude-code-github-file-scope-checklist.mdx |
-| 29 | public search refresh wave 29 | 3/3 | 36 | 3 | seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/claude-code-github-file-scope-freelance-scope.mdx<br>content/blog/claude-code-github-file-scope.mdx<br>content/blog/claude-code-install-prerequisites-checklist.mdx |
-| 30 | public search refresh wave 30 | 3/3 | 36 | 3 | seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/claude-code-install-prerequisites-mistakes.mdx<br>content/blog/claude-code-install-prerequisites.mdx<br>content/blog/claude-code-low-risk-freelance-jobs-freelance-scope.mdx |
-| 31 | public search refresh wave 31 | 3/3 | 35 | 3 | seo-warning, short-description, cannibalization, freshness-high, high-priority | content/blog/claude-code-low-risk-freelance-jobs-mistakes.mdx<br>content/blog/claude-code-low-risk-freelance-jobs.mdx<br>content/blog/codex-codex-4-31.mdx |
-| 32 | public search refresh wave 32 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-codex-4-34.mdx<br>content/blog/dev-works-build-fails-mistakes.mdx<br>content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx |
-| 33 | public search refresh wave 33 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority, freshness-high | content/blog/failed-to-push-some-refs-fix-mistakes.mdx<br>content/blog/nextjs-hydration-error-debug-mistakes.mdx<br>content/blog/codex-npm-install-error-beginner-fix.mdx |
-| 34 | public search refresh wave 34 | 3/3 | 33 | 3 | seo-warning, short-description, freshness-high, high-priority | content/blog/affiliate-vs-service-income.mdx<br>content/blog/ai-coding-tools-risk-check-checklist.mdx<br>content/blog/ai-coding-tools-risk-check.mdx |
-| 35 | public search refresh wave 35 | 3/3 | 33 | 3 | seo-warning, short-description, freshness-high, high-priority | content/blog/ai-content-human-review-template.mdx<br>content/blog/ai-output-unstable-risk-control-checklist.mdx<br>content/blog/ai-output-unstable-risk-control-mistakes.mdx |
-| 36 | public search refresh wave 36 | 3/3 | 33 | 3 | seo-warning, short-description, freshness-high, high-priority | content/blog/ai-output-unstable-risk-control.mdx<br>content/blog/ai-small-project-practice-topics-mistakes.mdx<br>content/blog/ai-small-project-practice-topics.mdx |
-| 37 | public search refresh wave 37 | 3/3 | 33 | 3 | seo-warning, short-description, freshness-high, high-priority | content/blog/ai-tool-setup-service-checklist-checklist.mdx<br>content/blog/ai-tools-stack-free-start-mistakes.mdx<br>content/blog/ai-tools-stack-free-start.mdx |
-| 38 | public search refresh wave 38 | 3/3 | 33 | 3 | seo-warning, short-description, freshness-high, high-priority | content/blog/api-key-invalid-or-missing-freelance-scope.mdx<br>content/blog/bugfix-delivery-note-template-checklist.mdx<br>content/blog/bugfix-delivery-note-template.mdx |
-| 39 | public search refresh wave 39 | 3/3 | 33 | 3 | seo-warning, short-description, freshness-high, high-priority | content/blog/chatgpt-codex-claude-workflow-checklist.mdx<br>content/blog/chatgpt-codex-claude-workflow.mdx<br>content/blog/chatgpt-vs-claude-proposal-checklist.mdx |
-| 40 | public search refresh wave 40 | 3/3 | 33 | 3 | seo-warning, short-description, freshness-high, high-priority | content/blog/claude-code-beginner-mistakes-freelance-scope.mdx<br>content/blog/claude-code-bug-prompt-freelance-scope.mdx<br>content/blog/claude-code-client-questions-freelance-scope.mdx |
-| 41 | public search refresh wave 41 | 3/3 | 33 | 3 | seo-warning, short-description, freshness-high, high-priority | content/blog/claude-code-common-commands-freelance-scope.mdx<br>content/blog/claude-code-delivery-note-freelance-scope.mdx<br>content/blog/claude-code-error-debug-freelance-scope.mdx |
-| 42 | public search refresh wave 42 | 3/3 | 32 | 3 | seo-warning, short-description, freshness-high, high-priority, cannibalization | content/blog/claude-code-install-prerequisites-freelance-scope.mdx<br>content/blog/codex-codex-npm-install-4-33.mdx<br>content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
-| 43 | public search refresh wave 43 | 3/3 | 33 | 3 | seo-warning, short-description, freshness-high, high-priority, cannibalization | content/blog/upwork-proposal-no-reply-checklist.mdx<br>content/blog/vercel-env-variable-missing-beginner-guide.mdx<br>content/blog/before-first-ai-freelance-job-checklist.mdx |
-| 44 | public search refresh wave 44 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/before-first-ai-freelance-job-mistakes.mdx<br>content/blog/claude-code-proposal-review-checklist.mdx<br>content/blog/claude-code-proposal-review-mistakes.mdx |
-| 45 | public search refresh wave 45 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-proposal-review.mdx<br>content/blog/claude-code-small-project-tasks-checklist.mdx<br>content/blog/claude-code-small-project-tasks-freelance-scope.mdx |
-| 46 | public search refresh wave 46 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-small-project-tasks-mistakes.mdx<br>content/blog/claude-code-vs-codex-web-editing-freelance-scope.mdx<br>content/blog/claude-code-vs-codex-web-editing-mistakes.mdx |
-| 47 | public search refresh wave 47 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-vs-codex-web-editing.mdx<br>content/blog/codex-automation-steps-not-skip-checklist.mdx<br>content/blog/codex-automation-steps-not-skip-freelance-scope.mdx |
-| 48 | public search refresh wave 48 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-avoid-secret-leak-checklist.mdx<br>content/blog/codex-avoid-secret-leak-mistakes.mdx<br>content/blog/codex-avoid-secret-leak.mdx |
-| 49 | public search refresh wave 49 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-bugfix-rollback-record-checklist.mdx<br>content/blog/codex-bugfix-rollback-record-mistakes.mdx<br>content/blog/codex-bugfix-rollback-record.mdx |
-| 50 | public search refresh wave 50 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-client-requirement-questions-checklist.mdx<br>content/blog/codex-client-requirement-questions-mistakes.mdx<br>content/blog/codex-client-requirement-questions.mdx |
-| 51 | public search refresh wave 51 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-codex-claude-code-4-40.mdx<br>content/blog/codex-codex-css-bug-4-35.mdx<br>content/blog/codex-codex-github-4-36.mdx |
-| 52 | public search refresh wave 52 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-codex-upwork-4-39.mdx<br>content/blog/codex-edit-existing-ui-checklist.mdx<br>content/blog/codex-first-day-guide-mistakes.mdx |
-| 53 | public search refresh wave 53 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-first-landing-page-mistakes.mdx<br>content/blog/codex-github-workflow-checklist.mdx<br>content/blog/codex-github-workflow-mistakes.mdx |
-| 54 | public search refresh wave 54 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-github-workflow.mdx<br>content/blog/codex-install-prerequisites-mistakes.mdx<br>content/blog/codex-portfolio-page-assets-mistakes.mdx |
-| 55 | public search refresh wave 55 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-readme-review-mistakes.mdx<br>content/blog/codex-review-generated-code-checklist.mdx<br>content/blog/codex-review-generated-code-mistakes.mdx |
-| 56 | public search refresh wave 56 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-small-website-delivery-check-mistakes.mdx<br>content/blog/codex-tailwind-mobile-check-mistakes.mdx<br>content/blog/codex-upwork-job-risk-check-mistakes.mdx |
-| 57 | public search refresh wave 57 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-vercel-deployment-mistakes.mdx<br>content/blog/codex-vs-cursor-web-editing-mistakes.mdx<br>content/blog/codex-windows-install-failed-mistakes.mdx |
-| 58 | public search refresh wave 58 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/daily-ai-freelance-practice-log-mistakes.mdx<br>content/blog/deliver-small-website-with-ai-no-code-mistakes.mdx<br>content/blog/env-variable-missing-fix-mistakes.mdx |
-| 59 | public search refresh wave 59 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/eslint-error-should-not-disable-mistakes.mdx<br>content/blog/first-portfolio-case-realistic-mistakes.mdx<br>content/blog/freelance-beginner-scope-confirmation-mistakes.mdx |
-| 60 | public search refresh wave 60 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/github-actions-build-log-debug-freelance-scope.mdx<br>content/blog/github-actions-build-log-debug-mistakes.mdx<br>content/blog/no-code-ai-freelance-start-mistakes.mdx |
-| 61 | public search refresh wave 61 | 3/3 | 32 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/npm-command-not-found-fix-freelance-scope.mdx<br>content/blog/npm-command-not-found-fix-mistakes.mdx<br>content/blog/codex-css-spacing-responsive-mistakes.mdx |
-| 62 | public search refresh wave 62 | 3/3 | 34 | 3 | seo-warning, cannibalization, high-priority, short-description, freshness-high | content/blog/dependency-conflict-fix-mistakes.mdx<br>content/blog/ai-assisted-vs-automated-delivery.mdx<br>content/blog/ai-freelance-30-day-execution.mdx |
-| 63 | public search refresh wave 63 | 3/3 | 36 | 3 | short-description, cannibalization, freshness-high, high-priority | content/blog/ai-freelance-automation-compliance-risk.mdx<br>content/blog/ai-freelance-common-misconceptions.mdx<br>content/blog/ai-freelance-failure-review-checklist.mdx |
-| 64 | public search refresh wave 64 | 3/3 | 36 | 3 | short-description, cannibalization, freshness-high, high-priority | content/blog/ai-freelance-failure-review.mdx<br>content/blog/ai-freelance-first-7-days-checklist.mdx<br>content/blog/ai-freelance-first-7-days.mdx |
-| 65 | public search refresh wave 65 | 3/3 | 36 | 3 | short-description, cannibalization, freshness-high, high-priority | content/blog/ai-freelance-service-page-copy-checklist.mdx<br>content/blog/ai-freelance-service-page-copy.mdx<br>content/blog/ai-freelance-skill-roadmap-checklist.mdx |
-| 66 | public search refresh wave 66 | 3/3 | 36 | 3 | short-description, cannibalization, freshness-high, high-priority | content/blog/ai-freelance-skill-roadmap.mdx<br>content/blog/api-key-invalid-or-missing-checklist.mdx<br>content/blog/api-key-invalid-or-missing.mdx |
-| 67 | public search refresh wave 67 | 3/3 | 36 | 3 | short-description, cannibalization, freshness-high, high-priority | content/blog/claude-code-bug-prompt-checklist.mdx<br>content/blog/claude-code-delivery-note-checklist.mdx<br>content/blog/claude-code-error-debug-checklist.mdx |
-| 68 | public search refresh wave 68 | 3/3 | 36 | 3 | short-description, cannibalization, freshness-high, high-priority | content/blog/claude-code-low-risk-freelance-jobs-checklist.mdx<br>content/blog/claude-code-nextjs-page-check-checklist.mdx<br>content/blog/codex-generated-code-review-guide.mdx |
-| 69 | public search refresh wave 69 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/ads-income-when-to-start.mdx<br>content/blog/affiliate-vs-service-income-checklist.mdx<br>content/blog/agent-human-review-loop-guide.mdx |
-| 70 | public search refresh wave 70 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/agent-memory-design-guide.mdx<br>content/blog/agent-memory-postgres-schema-guide.mdx<br>content/blog/agent-tool-permission-safety-guide.mdx |
-| 71 | public search refresh wave 71 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/ai-logo-design-beginner-guide.mdx |
-| 72 | public search refresh wave 72 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-prompt-framework-business-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
-| 73 | public search refresh wave 73 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/ai-resume-cover-letter-guide.mdx<br>content/blog/ai-video-tools-beginner-guide.mdx<br>content/blog/ai-website-builder-beginner-guide.mdx |
-| 74 | public search refresh wave 74 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/anythingllm-local-rag-beginner-guide.mdx<br>content/blog/autogen-agent-framework-beginner-guide.mdx<br>content/blog/bank-card-payment-platform-risk-checklist.mdx |
-| 75 | public search refresh wave 75 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/claude-api-beginner-guide.mdx<br>content/blog/claude-code-proposal-review-freelance-scope.mdx<br>content/blog/client-acceptance-checklist-checklist.mdx |
-| 76 | public search refresh wave 76 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/client-acceptance-checklist.mdx<br>content/blog/client-requirement-form-questions-checklist.mdx<br>content/blog/client-requirement-form-questions.mdx |
-| 77 | public search refresh wave 77 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/cloudflare-workers-ai-beginner-guide.mdx<br>content/blog/codex-avoid-secret-leak-freelance-scope.mdx<br>content/blog/codex-bugfix-rollback-record-freelance-scope.mdx |
-| 78 | public search refresh wave 78 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/codex-client-requirement-questions-freelance-scope.mdx<br>content/blog/codex-edit-existing-ui-freelance-scope.mdx<br>content/blog/codex-first-day-guide-freelance-scope.mdx |
-| 79 | public search refresh wave 79 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/codex-github-workflow-freelance-scope.mdx<br>content/blog/codex-portfolio-page-assets-freelance-scope.mdx<br>content/blog/codex-project-start-checklist-checklist.mdx |
-| 80 | public search refresh wave 80 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/crewai-agent-deployment-beginner-guide.mdx<br>content/blog/dify-coze-flowise-agent-builder-comparison.mdx<br>content/blog/dify-docker-compose-self-host-guide.mdx |
-| 81 | public search refresh wave 81 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/dify-ollama-local-model-guide.mdx<br>content/blog/dify-openai-api-provider-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx |
-| 82 | public search refresh wave 82 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/enterprise-im-ai-agent-integration-guide.mdx<br>content/blog/fastgpt-knowledge-base-deployment-guide.mdx |
-| 83 | public search refresh wave 83 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/flowise-ollama-local-rag-checklist.mdx<br>content/blog/freelance-weekly-review-template-checklist.mdx<br>content/blog/gemini-api-nextjs-guide.mdx |
-| 84 | public search refresh wave 84 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/git-authentication-failed-fix-freelance-scope.mdx<br>content/blog/groq-api-fast-llm-guide.mdx<br>content/blog/healthcare-admin-ai-prompts-guide.mdx |
-| 85 | public search refresh wave 85 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/helicone-llm-observability-guide.mdx<br>content/blog/hr-recruiting-ai-prompts-guide.mdx<br>content/blog/huggingface-spaces-ai-demo-guide.mdx |
-| 86 | public search refresh wave 86 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/knowledge-base-permission-design-guide.mdx<br>content/blog/langchain-rag-beginner-guide.mdx<br>content/blog/langgraph-agent-beginner-guide.mdx |
-| 87 | public search refresh wave 87 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/litellm-proxy-beginner-guide.mdx<br>content/blog/llamaindex-rag-beginner-guide.mdx<br>content/blog/llm-api-rate-limit-retry-guide.mdx |
-| 88 | public search refresh wave 88 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/local-llm-deployment-beginner.mdx<br>content/blog/mcp-server-deployment-security-checklist.mdx<br>content/blog/multi-model-router-fallback-guide.mdx |
-| 89 | public search refresh wave 89 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/n8n-ai-agent-rag-memory-guide.mdx<br>content/blog/n8n-ai-agent-webhook-production-guide.mdx<br>content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
-| 90 | public search refresh wave 90 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/open-webui-ollama-docker-guide.mdx<br>content/blog/openai-api-nextjs-route-handler-guide.mdx<br>content/blog/openrouter-api-beginner-guide.mdx |
-| 91 | public search refresh wave 91 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/package-lock-conflict-fix-freelance-scope.mdx<br>content/blog/package-lock-conflict-fix-mistakes.mdx<br>content/blog/payment-account-info-mismatch-risk-checklist.mdx |
-| 92 | public search refresh wave 92 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/pinecone-rag-beginner-guide.mdx<br>content/blog/port-already-in-use-fix-freelance-scope.mdx<br>content/blog/port-already-in-use-fix-mistakes.mdx |
-| 93 | public search refresh wave 93 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/practice-projects-before-clients-mistakes.mdx<br>content/blog/quote-email-uncertain-scope-checklist.mdx<br>content/blog/rag-citation-source-trace-guide.mdx |
-| 94 | public search refresh wave 94 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/rag-document-cleaning-before-upload-guide.mdx<br>content/blog/rag-knowledge-base-beginner-guide.mdx<br>content/blog/runpod-serverless-llm-deployment-guide.mdx |
-| 95 | public search refresh wave 95 | 3/3 | 31 | 3 | seo-warning, short-description, high-priority, cannibalization | content/blog/small-site-launch-sop-checklist.mdx<br>content/blog/subscription-payment-failed-message-checklist.mdx<br>content/blog/codex-codex-4-32.mdx |
-| 96 | public search refresh wave 96 | 3/3 | 33 | 3 | short-description, cannibalization, high-priority | content/blog/codex-codex-4-38.mdx<br>content/blog/dev-works-build-fails-checklist.mdx<br>content/blog/dev-works-build-fails.mdx |
-| 97 | public search refresh wave 97 | 3/3 | 31 | 2 | short-description, cannibalization, high-priority, seo-warning | content/blog/failed-to-push-some-refs-fix-checklist.mdx<br>content/blog/nextjs-hydration-error-debug-checklist.mdx<br>content/blog/arize-phoenix-llm-observability-guide.mdx |
-| 98 | public search refresh wave 98 | 3/3 | 27 | 0 | seo-warning | content/blog/bentoml-llm-deployment-beginner-guide.mdx<br>content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx<br>content/blog/huggingface-tgi-deployment-guide.mdx |
-| 99 | public search refresh wave 99 | 3/3 | 27 | 0 | seo-warning | content/blog/kubernetes-gpu-llm-deployment-guide.mdx<br>content/blog/langsmith-observability-evaluation-guide.mdx<br>content/blog/modal-serverless-gpu-llm-guide.mdx |
-| 100 | public search refresh wave 100 | 3/3 | 27 | 0 | seo-warning | content/blog/openai-agents-sdk-beginner-guide.mdx<br>content/blog/promptfoo-llm-evaluation-beginner-guide.mdx<br>content/blog/ragas-rag-evaluation-beginner-guide.mdx |
-| 101 | public search refresh wave 101 | 3/3 | 31 | 0 | seo-warning, short-description, freshness-high | content/blog/replicate-api-ai-demo-guide.mdx<br>content/blog/ads-income-when-to-start-checklist.mdx<br>content/blog/ai-content-human-review-template-checklist.mdx |
-| 102 | public search refresh wave 102 | 3/3 | 33 | 0 | short-description, freshness-high | content/blog/ai-freelance-daily-planner-checklist.mdx<br>content/blog/ai-freelance-daily-planner.mdx<br>content/blog/ai-tool-setup-service-checklist.mdx |
-| 103 | public search refresh wave 103 | 3/3 | 33 | 0 | short-description, freshness-high | content/blog/ai-tools-stack-free-start-checklist.mdx<br>content/blog/canva-portfolio-cover-tips.mdx<br>content/blog/chatgpt-vs-claude-proposal.mdx |
-| 104 | public search refresh wave 104 | 3/3 | 31 | 0 | cannibalization, short-description, freshness-high | content/blog/failed-to-push-some-refs-fix.mdx<br>content/blog/nextjs-hydration-error-debug.mdx<br>content/blog/upwork-client-requirements-analysis-beginner.mdx |
-| 105 | public search refresh wave 105 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-common-misconceptions-checklist.mdx<br>content/blog/codex-codex-vercel-4-37.mdx<br>content/blog/codex-edit-existing-ui.mdx |
-| 106 | public search refresh wave 106 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-first-day-guide.mdx<br>content/blog/codex-first-landing-page-checklist.mdx<br>content/blog/codex-first-landing-page.mdx |
-| 107 | public search refresh wave 107 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-install-prerequisites.mdx<br>content/blog/codex-npm-install-errors-checklist.mdx<br>content/blog/codex-portfolio-page-assets-checklist.mdx |
-| 108 | public search refresh wave 108 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-portfolio-page-assets.mdx<br>content/blog/codex-readme-review-checklist.mdx<br>content/blog/codex-readme-review.mdx |
-| 109 | public search refresh wave 109 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-review-generated-code.mdx<br>content/blog/codex-small-website-delivery-check-checklist.mdx<br>content/blog/codex-small-website-delivery-check-freelance-scope.mdx |
-| 110 | public search refresh wave 110 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-small-website-delivery-check.mdx<br>content/blog/codex-tailwind-mobile-check-checklist.mdx<br>content/blog/codex-tailwind-mobile-check.mdx |
-| 111 | public search refresh wave 111 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-upwork-job-risk-check-checklist.mdx<br>content/blog/codex-vercel-deployment-checklist.mdx<br>content/blog/codex-vercel-deployment.mdx |
-| 112 | public search refresh wave 112 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-vs-claude-code-beginner.mdx<br>content/blog/codex-vs-cursor-web-editing-checklist.mdx<br>content/blog/codex-vs-cursor-web-editing.mdx |
-| 113 | public search refresh wave 113 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-windows-install-failed-checklist.mdx<br>content/blog/codex-windows-install-failed.mdx<br>content/blog/daily-ai-freelance-practice-log-checklist.mdx |
-| 114 | public search refresh wave 114 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/deliver-small-website-with-ai-no-code-checklist.mdx<br>content/blog/deliver-small-website-with-ai-no-code.mdx<br>content/blog/dependency-conflict-fix-checklist.mdx |
-| 115 | public search refresh wave 115 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/dev-works-build-fails-freelance-scope.mdx<br>content/blog/env-variable-missing-fix-checklist.mdx<br>content/blog/env-variable-missing-fix.mdx |
-| 116 | public search refresh wave 116 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/eslint-error-should-not-disable-checklist.mdx<br>content/blog/eslint-error-should-not-disable-freelance-scope.mdx<br>content/blog/eslint-error-should-not-disable.mdx |
-| 117 | public search refresh wave 117 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/first-portfolio-case-realistic-checklist.mdx<br>content/blog/first-portfolio-case-realistic.mdx<br>content/blog/freelance-beginner-scope-confirmation-checklist.mdx |
-| 118 | public search refresh wave 118 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/freelance-beginner-scope-confirmation.mdx<br>content/blog/git-authentication-failed-fix-checklist.mdx<br>content/blog/module-not-found-debug-checklist.mdx |
-| 119 | public search refresh wave 119 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/nextjs-hydration-error-debug-freelance-scope.mdx<br>content/blog/no-code-ai-freelance-start-checklist.mdx<br>content/blog/no-code-ai-freelance-start.mdx |
-| 120 | public search refresh wave 120 | 3/3 | 31 | 0 | short-description, cannibalization | content/blog/node-version-mismatch-fix-checklist.mdx<br>content/blog/npm-command-not-found-fix-checklist.mdx<br>content/blog/codex-css-spacing-responsive-checklist.mdx |
+| 14 | public search refresh wave 14 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-upwork-job-risk-check.mdx<br>content/blog/daily-ai-freelance-practice-log.mdx<br>content/blog/permission-denied-fix-checklist.mdx |
+| 15 | public search refresh wave 15 | 3/3 | 33 | 3 | mojibake-public, freshness-high, cannibalization | content/blog/codex-code-review-delivery-checklist.mdx<br>content/blog/codex-upwork-small-job-risk-checklist.mdx<br>content/blog/git-authentication-failed-fix.mdx |
+| 16 | public search refresh wave 16 | 3/3 | 33 | 3 | mojibake-public, cannibalization, short-description | content/blog/github-actions-build-log-debug-checklist.mdx<br>content/blog/node-version-mismatch-fix.mdx<br>content/blog/ai-ppt-beginner-guide.mdx |
+| 17 | public search refresh wave 17 | 3/3 | 33 | 3 | mojibake-public, short-description | content/blog/codex-first-landing-page-freelance-scope.mdx<br>content/blog/dify-metadata-filtering-rag-guide.mdx<br>content/blog/rag-prompt-injection-defense-guide.mdx |
+| 18 | public search refresh wave 18 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-nextjs-page-check-freelance-scope.mdx<br>content/blog/claude-code-nextjs-page-check-mistakes.mdx<br>content/blog/claude-code-nextjs-page-check.mdx |
+| 19 | public search refresh wave 19 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/dev-works-build-fails-mistakes.mdx<br>content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx<br>content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
+| 20 | public search refresh wave 20 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority, freshness-high | content/blog/nextjs-hydration-error-debug-mistakes.mdx<br>content/blog/codex-npm-install-error-beginner-fix.mdx<br>content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
+| 21 | public search refresh wave 21 | 3/3 | 33 | 3 | seo-warning, short-description, freshness-high, high-priority, cannibalization | content/blog/upwork-proposal-no-reply-checklist.mdx<br>content/blog/vercel-env-variable-missing-beginner-guide.mdx<br>content/blog/ads-income-when-to-start.mdx |
+| 22 | public search refresh wave 22 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/affiliate-vs-service-income-checklist.mdx<br>content/blog/affiliate-vs-service-income.mdx<br>content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
+| 23 | public search refresh wave 23 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx<br>content/blog/ai-beginner-project-fit-check-checklist.mdx<br>content/blog/ai-beginner-project-fit-check-mistakes.mdx |
+| 24 | public search refresh wave 24 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-beginner-project-fit-check.mdx<br>content/blog/ai-freelance-30-day-execution-checklist.mdx<br>content/blog/ai-freelance-30-day-execution-mistakes.mdx |
+| 25 | public search refresh wave 25 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-freelance-automation-compliance-risk-checklist.mdx<br>content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx<br>content/blog/ai-freelance-common-misconceptions-mistakes.mdx |
+| 26 | public search refresh wave 26 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-freelance-failure-review-mistakes.mdx<br>content/blog/ai-freelance-first-7-days-mistakes.mdx<br>content/blog/ai-freelance-service-page-copy-mistakes.mdx |
+| 27 | public search refresh wave 27 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-freelance-skill-roadmap-mistakes.mdx<br>content/blog/ai-output-unstable-risk-control-checklist.mdx<br>content/blog/ai-output-unstable-risk-control-mistakes.mdx |
+| 28 | public search refresh wave 28 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-output-unstable-risk-control.mdx<br>content/blog/ai-small-project-practice-topics-mistakes.mdx<br>content/blog/ai-small-project-practice-topics.mdx |
+| 29 | public search refresh wave 29 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-tools-stack-free-start-mistakes.mdx<br>content/blog/ai-tools-stack-free-start.mdx<br>content/blog/api-key-invalid-or-missing-mistakes.mdx |
+| 30 | public search refresh wave 30 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/bank-card-payment-platform-risk-checklist.mdx<br>content/blog/before-first-ai-freelance-job-checklist.mdx<br>content/blog/before-first-ai-freelance-job-mistakes.mdx |
+| 31 | public search refresh wave 31 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/bugfix-delivery-note-template-checklist.mdx<br>content/blog/bugfix-delivery-note-template.mdx<br>content/blog/claude-code-automation-human-review-checklist.mdx |
+| 32 | public search refresh wave 32 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-automation-human-review-freelance-scope.mdx<br>content/blog/claude-code-automation-human-review-mistakes.mdx<br>content/blog/claude-code-automation-human-review.mdx |
+| 33 | public search refresh wave 33 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-beginner-mistakes.mdx<br>content/blog/claude-code-beginner-use-cases-freelance-scope.mdx<br>content/blog/claude-code-beginner-use-cases-mistakes.mdx |
+| 34 | public search refresh wave 34 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-client-questions-checklist.mdx<br>content/blog/claude-code-client-questions-mistakes.mdx<br>content/blog/claude-code-client-questions.mdx |
+| 35 | public search refresh wave 35 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-common-commands-checklist.mdx<br>content/blog/claude-code-delivery-note-mistakes.mdx<br>content/blog/claude-code-delivery-note.mdx |
+| 36 | public search refresh wave 36 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-error-debug.mdx<br>content/blog/claude-code-github-file-scope-checklist.mdx<br>content/blog/claude-code-github-file-scope-freelance-scope.mdx |
+| 37 | public search refresh wave 37 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-github-file-scope.mdx<br>content/blog/claude-code-install-prerequisites-checklist.mdx<br>content/blog/claude-code-install-prerequisites-mistakes.mdx |
+| 38 | public search refresh wave 38 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-install-prerequisites.mdx<br>content/blog/claude-code-low-risk-freelance-jobs-freelance-scope.mdx<br>content/blog/claude-code-low-risk-freelance-jobs-mistakes.mdx |
+| 39 | public search refresh wave 39 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-low-risk-freelance-jobs.mdx<br>content/blog/claude-code-proposal-review-checklist.mdx<br>content/blog/claude-code-proposal-review-mistakes.mdx |
+| 40 | public search refresh wave 40 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-proposal-review.mdx<br>content/blog/claude-code-small-project-tasks-checklist.mdx<br>content/blog/claude-code-small-project-tasks-freelance-scope.mdx |
+| 41 | public search refresh wave 41 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-small-project-tasks-mistakes.mdx<br>content/blog/claude-code-vs-codex-web-editing-freelance-scope.mdx<br>content/blog/claude-code-vs-codex-web-editing-mistakes.mdx |
+| 42 | public search refresh wave 42 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-vs-codex-web-editing.mdx<br>content/blog/codex-automation-steps-not-skip-checklist.mdx<br>content/blog/codex-automation-steps-not-skip-freelance-scope.mdx |
+| 43 | public search refresh wave 43 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-avoid-secret-leak-checklist.mdx<br>content/blog/codex-avoid-secret-leak-mistakes.mdx<br>content/blog/codex-avoid-secret-leak.mdx |
+| 44 | public search refresh wave 44 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-bugfix-rollback-record-checklist.mdx<br>content/blog/codex-bugfix-rollback-record-mistakes.mdx<br>content/blog/codex-bugfix-rollback-record.mdx |
+| 45 | public search refresh wave 45 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-client-requirement-questions-checklist.mdx<br>content/blog/codex-client-requirement-questions-mistakes.mdx<br>content/blog/codex-client-requirement-questions.mdx |
+| 46 | public search refresh wave 46 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-codex-4-31.mdx<br>content/blog/codex-codex-4-34.mdx<br>content/blog/codex-edit-existing-ui-checklist.mdx |
+| 47 | public search refresh wave 47 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-first-day-guide-mistakes.mdx<br>content/blog/codex-first-landing-page-mistakes.mdx<br>content/blog/codex-github-workflow-checklist.mdx |
+| 48 | public search refresh wave 48 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-github-workflow-mistakes.mdx<br>content/blog/codex-github-workflow.mdx<br>content/blog/codex-install-prerequisites-mistakes.mdx |
+| 49 | public search refresh wave 49 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-portfolio-page-assets-mistakes.mdx<br>content/blog/codex-readme-review-mistakes.mdx<br>content/blog/codex-review-generated-code-checklist.mdx |
+| 50 | public search refresh wave 50 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-review-generated-code-mistakes.mdx<br>content/blog/codex-small-website-delivery-check-mistakes.mdx<br>content/blog/codex-tailwind-mobile-check-mistakes.mdx |
+| 51 | public search refresh wave 51 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-upwork-job-risk-check-mistakes.mdx<br>content/blog/codex-vercel-deployment-mistakes.mdx<br>content/blog/codex-vs-cursor-web-editing-mistakes.mdx |
+| 52 | public search refresh wave 52 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-windows-install-failed-mistakes.mdx<br>content/blog/daily-ai-freelance-practice-log-mistakes.mdx<br>content/blog/deliver-small-website-with-ai-no-code-mistakes.mdx |
+| 53 | public search refresh wave 53 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/env-variable-missing-fix-mistakes.mdx<br>content/blog/eslint-error-should-not-disable-mistakes.mdx<br>content/blog/first-portfolio-case-realistic-mistakes.mdx |
+| 54 | public search refresh wave 54 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/freelance-beginner-scope-confirmation-mistakes.mdx<br>content/blog/github-actions-build-log-debug-freelance-scope.mdx<br>content/blog/github-actions-build-log-debug-mistakes.mdx |
+| 55 | public search refresh wave 55 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/no-code-ai-freelance-start-mistakes.mdx<br>content/blog/npm-command-not-found-fix-freelance-scope.mdx<br>content/blog/npm-command-not-found-fix-mistakes.mdx |
+| 56 | public search refresh wave 56 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/package-lock-conflict-fix-mistakes.mdx<br>content/blog/port-already-in-use-fix-mistakes.mdx<br>content/blog/practice-projects-before-clients-mistakes.mdx |
+| 57 | public search refresh wave 57 | 3/3 | 30 | 3 | seo-warning, cannibalization, high-priority | content/blog/codex-codex-npm-install-4-33.mdx<br>content/blog/codex-css-spacing-responsive-mistakes.mdx<br>content/blog/dependency-conflict-fix-mistakes.mdx |
+| 58 | public search refresh wave 58 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/agent-human-review-loop-guide.mdx<br>content/blog/agent-memory-design-guide.mdx<br>content/blog/agent-memory-postgres-schema-guide.mdx |
+| 59 | public search refresh wave 59 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/agent-tool-permission-safety-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 60 | public search refresh wave 60 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/ai-coding-tools-risk-check-checklist.mdx<br>content/blog/ai-coding-tools-risk-check.mdx<br>content/blog/ai-content-human-review-template.mdx |
+| 61 | public search refresh wave 61 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/ai-logo-design-beginner-guide.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-prompt-framework-business-guide.mdx |
+| 62 | public search refresh wave 62 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/ai-resume-cover-letter-guide.mdx<br>content/blog/ai-tool-setup-service-checklist-checklist.mdx |
+| 63 | public search refresh wave 63 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/ai-video-tools-beginner-guide.mdx<br>content/blog/ai-website-builder-beginner-guide.mdx<br>content/blog/anythingllm-local-rag-beginner-guide.mdx |
+| 64 | public search refresh wave 64 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/api-key-invalid-or-missing-freelance-scope.mdx<br>content/blog/autogen-agent-framework-beginner-guide.mdx<br>content/blog/chatgpt-codex-claude-workflow-checklist.mdx |
+| 65 | public search refresh wave 65 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/chatgpt-codex-claude-workflow.mdx<br>content/blog/chatgpt-vs-claude-proposal-checklist.mdx<br>content/blog/claude-api-beginner-guide.mdx |
+| 66 | public search refresh wave 66 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/claude-code-beginner-mistakes-freelance-scope.mdx<br>content/blog/claude-code-bug-prompt-freelance-scope.mdx<br>content/blog/claude-code-client-questions-freelance-scope.mdx |
+| 67 | public search refresh wave 67 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/claude-code-common-commands-freelance-scope.mdx<br>content/blog/claude-code-delivery-note-freelance-scope.mdx<br>content/blog/claude-code-error-debug-freelance-scope.mdx |
+| 68 | public search refresh wave 68 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/claude-code-install-prerequisites-freelance-scope.mdx<br>content/blog/claude-code-proposal-review-freelance-scope.mdx<br>content/blog/client-acceptance-checklist-checklist.mdx |
+| 69 | public search refresh wave 69 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/client-acceptance-checklist.mdx<br>content/blog/client-requirement-form-questions-checklist.mdx<br>content/blog/client-requirement-form-questions.mdx |
+| 70 | public search refresh wave 70 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/cloudflare-workers-ai-beginner-guide.mdx<br>content/blog/codex-avoid-secret-leak-freelance-scope.mdx<br>content/blog/codex-bugfix-rollback-record-freelance-scope.mdx |
+| 71 | public search refresh wave 71 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/codex-client-requirement-questions-freelance-scope.mdx<br>content/blog/codex-codex-claude-code-4-40.mdx<br>content/blog/codex-codex-css-bug-4-35.mdx |
+| 72 | public search refresh wave 72 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/codex-codex-github-4-36.mdx<br>content/blog/codex-codex-upwork-4-39.mdx<br>content/blog/codex-edit-existing-ui-freelance-scope.mdx |
+| 73 | public search refresh wave 73 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/codex-first-day-guide-freelance-scope.mdx<br>content/blog/codex-github-workflow-freelance-scope.mdx<br>content/blog/codex-portfolio-page-assets-freelance-scope.mdx |
+| 74 | public search refresh wave 74 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/codex-project-start-checklist-checklist.mdx<br>content/blog/crewai-agent-deployment-beginner-guide.mdx<br>content/blog/dify-coze-flowise-agent-builder-comparison.mdx |
+| 75 | public search refresh wave 75 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/dify-docker-compose-self-host-guide.mdx<br>content/blog/dify-ollama-local-model-guide.mdx<br>content/blog/dify-openai-api-provider-guide.mdx |
+| 76 | public search refresh wave 76 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/enterprise-im-ai-agent-integration-guide.mdx |
+| 77 | public search refresh wave 77 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/fastgpt-knowledge-base-deployment-guide.mdx<br>content/blog/flowise-ollama-local-rag-checklist.mdx<br>content/blog/freelance-weekly-review-template-checklist.mdx |
+| 78 | public search refresh wave 78 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/gemini-api-nextjs-guide.mdx<br>content/blog/git-authentication-failed-fix-freelance-scope.mdx<br>content/blog/groq-api-fast-llm-guide.mdx |
+| 79 | public search refresh wave 79 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/healthcare-admin-ai-prompts-guide.mdx<br>content/blog/helicone-llm-observability-guide.mdx<br>content/blog/hr-recruiting-ai-prompts-guide.mdx |
+| 80 | public search refresh wave 80 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/huggingface-spaces-ai-demo-guide.mdx<br>content/blog/knowledge-base-permission-design-guide.mdx<br>content/blog/langchain-rag-beginner-guide.mdx |
+| 81 | public search refresh wave 81 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/langgraph-agent-beginner-guide.mdx<br>content/blog/litellm-proxy-beginner-guide.mdx<br>content/blog/llamaindex-rag-beginner-guide.mdx |
+| 82 | public search refresh wave 82 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/llm-api-rate-limit-retry-guide.mdx<br>content/blog/local-llm-deployment-beginner.mdx<br>content/blog/mcp-server-deployment-security-checklist.mdx |
+| 83 | public search refresh wave 83 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/multi-model-router-fallback-guide.mdx<br>content/blog/n8n-ai-agent-rag-memory-guide.mdx<br>content/blog/n8n-ai-agent-webhook-production-guide.mdx |
+| 84 | public search refresh wave 84 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/open-webui-ollama-docker-guide.mdx<br>content/blog/openai-api-nextjs-route-handler-guide.mdx |
+| 85 | public search refresh wave 85 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/openrouter-api-beginner-guide.mdx<br>content/blog/package-lock-conflict-fix-freelance-scope.mdx<br>content/blog/payment-account-info-mismatch-risk-checklist.mdx |
+| 86 | public search refresh wave 86 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/pinecone-rag-beginner-guide.mdx<br>content/blog/port-already-in-use-fix-freelance-scope.mdx<br>content/blog/quote-email-uncertain-scope-checklist.mdx |
+| 87 | public search refresh wave 87 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/rag-citation-source-trace-guide.mdx<br>content/blog/rag-document-cleaning-before-upload-guide.mdx<br>content/blog/rag-knowledge-base-beginner-guide.mdx |
+| 88 | public search refresh wave 88 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/runpod-serverless-llm-deployment-guide.mdx<br>content/blog/small-site-launch-sop-checklist.mdx<br>content/blog/subscription-payment-failed-message-checklist.mdx |
+| 89 | public search refresh wave 89 | 3/3 | 33 | 3 | short-description, cannibalization, high-priority | content/blog/dev-works-build-fails-checklist.mdx<br>content/blog/dev-works-build-fails.mdx<br>content/blog/failed-to-push-some-refs-fix-checklist.mdx |
+| 90 | public search refresh wave 90 | 3/3 | 29 | 1 | short-description, cannibalization, high-priority, seo-warning | content/blog/nextjs-hydration-error-debug-checklist.mdx<br>content/blog/arize-phoenix-llm-observability-guide.mdx<br>content/blog/bentoml-llm-deployment-beginner-guide.mdx |
+| 91 | public search refresh wave 91 | 3/3 | 27 | 0 | seo-warning | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx<br>content/blog/huggingface-tgi-deployment-guide.mdx<br>content/blog/kubernetes-gpu-llm-deployment-guide.mdx |
+| 92 | public search refresh wave 92 | 3/3 | 27 | 0 | seo-warning | content/blog/langsmith-observability-evaluation-guide.mdx<br>content/blog/modal-serverless-gpu-llm-guide.mdx<br>content/blog/openai-agents-sdk-beginner-guide.mdx |
+| 93 | public search refresh wave 93 | 3/3 | 27 | 0 | seo-warning | content/blog/promptfoo-llm-evaluation-beginner-guide.mdx<br>content/blog/ragas-rag-evaluation-beginner-guide.mdx<br>content/blog/replicate-api-ai-demo-guide.mdx |
+| 94 | public search refresh wave 94 | 3/3 | 31 | 0 | short-description, freshness-high, cannibalization | content/blog/codex-generated-code-review-guide.mdx<br>content/blog/failed-to-push-some-refs-fix.mdx<br>content/blog/nextjs-hydration-error-debug.mdx |
+| 95 | public search refresh wave 95 | 3/3 | 33 | 0 | short-description, freshness-high, cannibalization | content/blog/upwork-client-requirements-analysis-beginner.mdx<br>content/blog/ads-income-when-to-start-checklist.mdx<br>content/blog/ai-assisted-vs-automated-delivery.mdx |
+| 96 | public search refresh wave 96 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-30-day-execution.mdx<br>content/blog/ai-freelance-automation-compliance-risk.mdx<br>content/blog/ai-freelance-common-misconceptions-checklist.mdx |
+| 97 | public search refresh wave 97 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-common-misconceptions.mdx<br>content/blog/ai-freelance-failure-review-checklist.mdx<br>content/blog/ai-freelance-failure-review.mdx |
+| 98 | public search refresh wave 98 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-first-7-days-checklist.mdx<br>content/blog/ai-freelance-first-7-days.mdx<br>content/blog/ai-freelance-service-page-copy-checklist.mdx |
+| 99 | public search refresh wave 99 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-service-page-copy.mdx<br>content/blog/ai-freelance-skill-roadmap-checklist.mdx<br>content/blog/ai-freelance-skill-roadmap.mdx |
+| 100 | public search refresh wave 100 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-tools-stack-free-start-checklist.mdx<br>content/blog/api-key-invalid-or-missing-checklist.mdx<br>content/blog/api-key-invalid-or-missing.mdx |
+| 101 | public search refresh wave 101 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/bank-card-payment-platform-risk.mdx<br>content/blog/canva-portfolio-cover-tips.mdx<br>content/blog/claude-code-bug-prompt-checklist.mdx |
+| 102 | public search refresh wave 102 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-delivery-note-checklist.mdx<br>content/blog/claude-code-error-debug-checklist.mdx<br>content/blog/claude-code-low-risk-freelance-jobs-checklist.mdx |
+| 103 | public search refresh wave 103 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-nextjs-page-check-checklist.mdx<br>content/blog/codex-codex-4-32.mdx<br>content/blog/codex-codex-4-38.mdx |
+| 104 | public search refresh wave 104 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-edit-existing-ui.mdx<br>content/blog/codex-first-day-guide.mdx<br>content/blog/codex-first-landing-page-checklist.mdx |
+| 105 | public search refresh wave 105 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-first-landing-page.mdx<br>content/blog/codex-install-prerequisites.mdx<br>content/blog/codex-npm-install-errors-checklist.mdx |
+| 106 | public search refresh wave 106 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-portfolio-page-assets-checklist.mdx<br>content/blog/codex-portfolio-page-assets.mdx<br>content/blog/codex-readme-review-checklist.mdx |
+| 107 | public search refresh wave 107 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-readme-review.mdx<br>content/blog/codex-review-generated-code.mdx<br>content/blog/codex-small-website-delivery-check-checklist.mdx |
+| 108 | public search refresh wave 108 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-small-website-delivery-check-freelance-scope.mdx<br>content/blog/codex-small-website-delivery-check.mdx<br>content/blog/codex-tailwind-mobile-check-checklist.mdx |
+| 109 | public search refresh wave 109 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-tailwind-mobile-check.mdx<br>content/blog/codex-upwork-job-risk-check-checklist.mdx<br>content/blog/codex-vercel-deployment-checklist.mdx |
+| 110 | public search refresh wave 110 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-vercel-deployment.mdx<br>content/blog/codex-vs-cursor-web-editing-checklist.mdx<br>content/blog/codex-vs-cursor-web-editing.mdx |
+| 111 | public search refresh wave 111 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-windows-install-failed-checklist.mdx<br>content/blog/codex-windows-install-failed.mdx<br>content/blog/daily-ai-freelance-practice-log-checklist.mdx |
+| 112 | public search refresh wave 112 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/deliver-small-website-with-ai-no-code-checklist.mdx<br>content/blog/deliver-small-website-with-ai-no-code.mdx<br>content/blog/dependency-conflict-fix-checklist.mdx |
+| 113 | public search refresh wave 113 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/dev-works-build-fails-freelance-scope.mdx<br>content/blog/env-variable-missing-fix-checklist.mdx<br>content/blog/env-variable-missing-fix.mdx |
+| 114 | public search refresh wave 114 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/eslint-error-should-not-disable-checklist.mdx<br>content/blog/eslint-error-should-not-disable-freelance-scope.mdx<br>content/blog/eslint-error-should-not-disable.mdx |
+| 115 | public search refresh wave 115 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/first-portfolio-case-realistic-checklist.mdx<br>content/blog/first-portfolio-case-realistic.mdx<br>content/blog/freelance-beginner-scope-confirmation-checklist.mdx |
+| 116 | public search refresh wave 116 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/freelance-beginner-scope-confirmation.mdx<br>content/blog/git-authentication-failed-fix-checklist.mdx<br>content/blog/module-not-found-debug-checklist.mdx |
+| 117 | public search refresh wave 117 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/nextjs-hydration-error-debug-freelance-scope.mdx<br>content/blog/no-code-ai-freelance-start-checklist.mdx<br>content/blog/no-code-ai-freelance-start.mdx |
+| 118 | public search refresh wave 118 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/node-version-mismatch-fix-checklist.mdx<br>content/blog/npm-command-not-found-fix-checklist.mdx<br>content/blog/package-lock-conflict-fix-checklist.mdx |
+| 119 | public search refresh wave 119 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/package-lock-conflict-fix.mdx<br>content/blog/port-already-in-use-fix-checklist.mdx<br>content/blog/port-already-in-use-fix.mdx |
+| 120 | public search refresh wave 120 | 3/3 | 31 | 0 | short-description, cannibalization | content/blog/practice-projects-before-clients-checklist.mdx<br>content/blog/practice-projects-before-clients.mdx<br>content/blog/codex-css-spacing-responsive-checklist.mdx |
 | 121 | public search refresh wave 121 | 3/3 | 27 | 0 | cannibalization | content/blog/codex-css-spacing-responsive.mdx<br>content/blog/dependency-conflict-fix.mdx<br>content/blog/github-actions-build-log-debug.mdx |
-| 122 | public search refresh wave 122 | 3/3 | 27 | 0 | cannibalization, short-description | content/blog/module-not-found-debug.mdx<br>content/blog/npm-command-not-found-fix.mdx<br>content/blog/agent-deployment-beginner-guide.mdx |
-| 123 | public search refresh wave 123 | 3/3 | 27 | 0 | short-description | content/blog/agent-observability-logging-guide.mdx<br>content/blog/agent-production-deployment-checklist.mdx<br>content/blog/agent-tool-calling-beginner-guide.mdx |
-| 124 | public search refresh wave 124 | 3/3 | 27 | 0 | short-description | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/bank-card-payment-platform-risk.mdx |
-| 125 | public search refresh wave 125 | 3/3 | 27 | 0 | short-description | content/blog/chatgpt-how-to-use-beginner-guide.mdx<br>content/blog/chatgpt-prompt-template-beginner.mdx<br>content/blog/chroma-vector-database-rag-guide.mdx |
-| 126 | public search refresh wave 126 | 3/3 | 27 | 0 | short-description | content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/cloudflare-vs-namecheap-domain-checklist.mdx<br>content/blog/codex-install-prerequisites-freelance-scope.mdx |
-| 127 | public search refresh wave 127 | 3/3 | 27 | 0 | short-description | content/blog/codex-npm-install-errors-freelance-scope.mdx<br>content/blog/codex-project-start-checklist.mdx<br>content/blog/codex-readme-review-freelance-scope.mdx |
-| 128 | public search refresh wave 128 | 3/3 | 27 | 0 | short-description | content/blog/codex-review-generated-code-freelance-scope.mdx<br>content/blog/codex-tailwind-mobile-check-freelance-scope.mdx<br>content/blog/codex-vercel-deployment-freelance-scope.mdx |
-| 129 | public search refresh wave 129 | 3/3 | 27 | 0 | short-description | content/blog/codex-vs-cursor-web-editing-freelance-scope.mdx<br>content/blog/codex-windows-install-failed-freelance-scope.mdx<br>content/blog/coze-bot-publish-checklist.mdx |
-| 130 | public search refresh wave 130 | 3/3 | 27 | 0 | short-description | content/blog/cursor-vs-codex-web-editing-checklist.mdx<br>content/blog/customer-service-ai-prompts-guide.mdx<br>content/blog/data-analysis-ai-prompts-guide.mdx |
-| 131 | public search refresh wave 131 | 3/3 | 27 | 0 | short-description | content/blog/dependency-conflict-fix-freelance-scope.mdx<br>content/blog/dify-knowledge-base-beginner-guide.mdx<br>content/blog/digital-template-refund-policy-checklist.mdx |
-| 132 | public search refresh wave 132 | 3/3 | 27 | 0 | short-description | content/blog/ecommerce-ai-prompts-guide.mdx<br>content/blog/education-ai-prompts-guide.mdx<br>content/blog/embedding-model-selection-guide.mdx |
-| 133 | public search refresh wave 133 | 3/3 | 27 | 0 | short-description | content/blog/english-client-reply-template-honest-checklist.mdx<br>content/blog/english-client-reply-template-honest.mdx<br>content/blog/env-variable-missing-fix-freelance-scope.mdx |
-| 134 | public search refresh wave 134 | 3/3 | 27 | 0 | short-description | content/blog/finance-ai-prompts-guide.mdx<br>content/blog/first-freelance-payment-check-checklist.mdx<br>content/blog/first-freelance-payment-check.mdx |
-| 135 | public search refresh wave 135 | 3/3 | 27 | 0 | short-description | content/blog/flowise-local-deployment-beginner-guide.mdx<br>content/blog/freelance-platform-tool-stack-checklist.mdx<br>content/blog/freelance-platform-tool-stack.mdx |
-| 136 | public search refresh wave 136 | 3/3 | 27 | 0 | short-description | content/blog/freelance-quote-template-fill-checklist.mdx<br>content/blog/freelance-quote-template-fill.mdx<br>content/blog/freelance-weekly-review-template.mdx |
-| 137 | public search refresh wave 137 | 3/3 | 27 | 0 | short-description | content/blog/gemini-api-rate-limit-debug-guide.mdx<br>content/blog/github-command-cheatsheet-beginner-checklist.mdx<br>content/blog/github-command-cheatsheet-beginner.mdx |
-| 138 | public search refresh wave 138 | 3/3 | 27 | 0 | short-description | content/blog/github-vercel-beginner-site-checklist.mdx<br>content/blog/github-vercel-beginner-site.mdx<br>content/blog/google-analytics-when-to-add-checklist.mdx |
-| 139 | public search refresh wave 139 | 3/3 | 27 | 0 | short-description | content/blog/gumroad-template-selling-prep-checklist.mdx<br>content/blog/gumroad-template-selling-prep.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx |
-| 140 | public search refresh wave 140 | 3/3 | 27 | 0 | short-description | content/blog/international-payment-fee-estimate-checklist.mdx<br>content/blog/international-payment-fee-estimate.mdx<br>content/blog/legal-contract-ai-prompts-guide.mdx |
-| 141 | public search refresh wave 141 | 3/3 | 27 | 0 | short-description | content/blog/lemon-squeezy-digital-products-checklist.mdx<br>content/blog/lemon-squeezy-digital-products.mdx<br>content/blog/llama-cpp-server-beginner-guide.mdx |
-| 142 | public search refresh wave 142 | 3/3 | 27 | 0 | short-description | content/blog/llm-api-integration-deployment-checklist.mdx<br>content/blog/llm-deployment-beginner-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
-| 143 | public search refresh wave 143 | 3/3 | 27 | 0 | short-description | content/blog/llm-finetuning-vs-rag-beginner-guide.mdx<br>content/blog/llm-serving-cost-latency-checklist.mdx<br>content/blog/lm-studio-local-api-guide.mdx |
-| 144 | public search refresh wave 144 | 3/3 | 27 | 0 | short-description | content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/make-vs-zapier-automation-checklist.mdx<br>content/blog/make-vs-zapier-automation.mdx |
-| 145 | public search refresh wave 145 | 3/3 | 27 | 0 | short-description | content/blog/manufacturing-ai-prompts-guide.mdx<br>content/blog/marketing-ai-prompts-guide.mdx<br>content/blog/mcp-beginner-guide-agent-tools.mdx |
-| 146 | public search refresh wave 146 | 3/3 | 27 | 0 | short-description | content/blog/n8n-ai-agent-self-host-guide.mdx<br>content/blog/notion-freelance-workflow-checklist.mdx<br>content/blog/notion-freelance-workflow.mdx |
-| 147 | public search refresh wave 147 | 3/3 | 27 | 0 | short-description | content/blog/ollama-api-web-app-integration.mdx<br>content/blog/ollama-local-model-deployment-guide.mdx<br>content/blog/openai-batch-api-cost-guide.mdx |
-| 148 | public search refresh wave 148 | 3/3 | 27 | 0 | short-description | content/blog/operations-ai-prompts-guide.mdx<br>content/blog/package-lock-conflict-fix-checklist.mdx<br>content/blog/package-lock-conflict-fix.mdx |
-| 149 | public search refresh wave 149 | 3/3 | 27 | 0 | short-description | content/blog/paddle-vs-stripe-beginner-checklist.mdx<br>content/blog/paddle-vs-stripe-beginner.mdx<br>content/blog/payment-account-info-mismatch-risk.mdx |
-| 150 | public search refresh wave 150 | 3/3 | 27 | 0 | short-description | content/blog/payment-page-disclaimer-checklist.mdx<br>content/blog/payment-page-disclaimer.mdx<br>content/blog/payoneer-freelancer-beginner-checklist.mdx |
-| 151 | public search refresh wave 151 | 3/3 | 27 | 0 | short-description | content/blog/payoneer-freelancer-beginner.mdx<br>content/blog/payoneer-wise-paypal-choose-checklist.mdx<br>content/blog/payoneer-wise-paypal-choose.mdx |
-| 152 | public search refresh wave 152 | 3/3 | 27 | 0 | short-description | content/blog/paypal-freelancer-limits-checklist.mdx<br>content/blog/paypal-freelancer-limits.mdx<br>content/blog/paypal-vs-payoneer-beginner-checklist.mdx |
-| 153 | public search refresh wave 153 | 3/3 | 27 | 0 | short-description | content/blog/paypal-vs-payoneer-beginner.mdx<br>content/blog/permission-denied-fix-freelance-scope.mdx<br>content/blog/platform-payment-vs-direct-payment-checklist.mdx |
-| 154 | public search refresh wave 154 | 3/3 | 27 | 0 | short-description | content/blog/platform-payment-vs-direct-payment.mdx<br>content/blog/port-already-in-use-fix-checklist.mdx<br>content/blog/port-already-in-use-fix.mdx |
-| 155 | public search refresh wave 155 | 3/3 | 27 | 0 | short-description | content/blog/portfolio-page-copy-template-checklist.mdx<br>content/blog/portfolio-page-copy-template.mdx<br>content/blog/practice-project-log-template-checklist.mdx |
-| 156 | public search refresh wave 156 | 3/3 | 27 | 0 | short-description | content/blog/practice-project-log-template.mdx<br>content/blog/practice-projects-before-clients-checklist.mdx<br>content/blog/practice-projects-before-clients.mdx |
-| 157 | public search refresh wave 157 | 3/3 | 27 | 0 | short-description | content/blog/pre-project-risk-assessment-template-checklist.mdx<br>content/blog/pre-project-risk-assessment-template.mdx<br>content/blog/product-manager-ai-prompts-guide.mdx |
-| 158 | public search refresh wave 158 | 3/3 | 27 | 0 | short-description | content/blog/project-delivery-checklist-items-checklist.mdx<br>content/blog/project-delivery-checklist-items.mdx<br>content/blog/project-retrospective-template-checklist.mdx |
-| 159 | public search refresh wave 159 | 3/3 | 27 | 0 | short-description | content/blog/project-retrospective-template.mdx<br>content/blog/qdrant-vector-database-beginner-guide.mdx<br>content/blog/quote-email-uncertain-scope.mdx |
-| 160 | public search refresh wave 160 | 3/3 | 27 | 0 | short-description | content/blog/rag-chunking-strategy-guide.mdx<br>content/blog/rag-evaluation-test-set-guide.mdx<br>content/blog/rag-retrieval-no-context-debug-guide.mdx |
-| 161 | public search refresh wave 161 | 3/3 | 27 | 0 | short-description | content/blog/real-estate-ai-prompts-guide.mdx<br>content/blog/sales-ai-prompts-guide.mdx<br>content/blog/service-inquiry-form-questions-checklist.mdx |
-| 162 | public search refresh wave 162 | 3/3 | 27 | 0 | short-description | content/blog/service-inquiry-form-questions.mdx<br>content/blog/service-payment-method-beginner-checklist.mdx<br>content/blog/service-payment-method-beginner.mdx |
-| 163 | public search refresh wave 163 | 3/3 | 27 | 0 | short-description | content/blog/small-site-launch-sop.mdx<br>content/blog/software-development-ai-prompts-guide.mdx<br>content/blog/stripe-templates-vs-services-checklist.mdx |
-| 164 | public search refresh wave 164 | 3/3 | 23 | 0 | short-description | content/blog/stripe-templates-vs-services.mdx<br>content/blog/cloudflare-vs-namecheap-domain.mdx<br>content/blog/codex-css-spacing-responsive-freelance-scope.mdx |
-| 165 | public search refresh wave 165 | 3/3 | 21 | 0 | none | content/blog/cursor-vs-codex-web-editing.mdx<br>content/blog/digital-template-refund-policy.mdx<br>content/blog/free-seo-tools-beginner-checklist.mdx |
-| 166 | public search refresh wave 166 | 3/3 | 21 | 0 | none | content/blog/free-seo-tools-beginner.mdx<br>content/blog/google-analytics-when-to-add.mdx<br>content/blog/google-search-console-new-site-checklist.mdx |
-| 167 | public search refresh wave 167 | 2/2 | 14 | 0 | none | content/blog/google-search-console-new-site.mdx<br>content/blog/permission-denied-fix.mdx |
+| 122 | public search refresh wave 122 | 3/3 | 27 | 0 | cannibalization | content/blog/module-not-found-debug.mdx<br>content/blog/npm-command-not-found-fix.mdx<br>content/blog/permission-denied-fix.mdx |
+| 123 | public search refresh wave 123 | 3/3 | 27 | 0 | short-description | content/blog/agent-deployment-beginner-guide.mdx<br>content/blog/agent-observability-logging-guide.mdx<br>content/blog/agent-production-deployment-checklist.mdx |
+| 124 | public search refresh wave 124 | 3/3 | 27 | 0 | short-description | content/blog/agent-tool-calling-beginner-guide.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx |
+| 125 | public search refresh wave 125 | 3/3 | 27 | 0 | short-description | content/blog/ai-content-human-review-template-checklist.mdx<br>content/blog/ai-freelance-daily-planner-checklist.mdx<br>content/blog/ai-freelance-daily-planner.mdx |
+| 126 | public search refresh wave 126 | 3/3 | 27 | 0 | short-description | content/blog/ai-tool-setup-service-checklist.mdx<br>content/blog/chatgpt-how-to-use-beginner-guide.mdx<br>content/blog/chatgpt-prompt-template-beginner.mdx |
+| 127 | public search refresh wave 127 | 3/3 | 27 | 0 | short-description | content/blog/chatgpt-vs-claude-proposal.mdx<br>content/blog/chroma-vector-database-rag-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx |
+| 128 | public search refresh wave 128 | 3/3 | 27 | 0 | short-description | content/blog/cloudflare-vs-namecheap-domain-checklist.mdx<br>content/blog/codex-codex-vercel-4-37.mdx<br>content/blog/codex-install-prerequisites-freelance-scope.mdx |
+| 129 | public search refresh wave 129 | 3/3 | 27 | 0 | short-description | content/blog/codex-npm-install-errors-freelance-scope.mdx<br>content/blog/codex-project-start-checklist.mdx<br>content/blog/codex-readme-review-freelance-scope.mdx |
+| 130 | public search refresh wave 130 | 3/3 | 27 | 0 | short-description | content/blog/codex-review-generated-code-freelance-scope.mdx<br>content/blog/codex-tailwind-mobile-check-freelance-scope.mdx<br>content/blog/codex-vercel-deployment-freelance-scope.mdx |
+| 131 | public search refresh wave 131 | 3/3 | 27 | 0 | short-description | content/blog/codex-vs-claude-code-beginner.mdx<br>content/blog/codex-vs-cursor-web-editing-freelance-scope.mdx<br>content/blog/codex-windows-install-failed-freelance-scope.mdx |
+| 132 | public search refresh wave 132 | 3/3 | 27 | 0 | short-description | content/blog/coze-bot-publish-checklist.mdx<br>content/blog/cursor-vs-codex-web-editing-checklist.mdx<br>content/blog/customer-service-ai-prompts-guide.mdx |
+| 133 | public search refresh wave 133 | 3/3 | 27 | 0 | short-description | content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/dependency-conflict-fix-freelance-scope.mdx<br>content/blog/dify-knowledge-base-beginner-guide.mdx |
+| 134 | public search refresh wave 134 | 3/3 | 27 | 0 | short-description | content/blog/digital-template-refund-policy-checklist.mdx<br>content/blog/ecommerce-ai-prompts-guide.mdx<br>content/blog/education-ai-prompts-guide.mdx |
+| 135 | public search refresh wave 135 | 3/3 | 27 | 0 | short-description | content/blog/embedding-model-selection-guide.mdx<br>content/blog/english-client-reply-template-honest-checklist.mdx<br>content/blog/english-client-reply-template-honest.mdx |
+| 136 | public search refresh wave 136 | 3/3 | 27 | 0 | short-description | content/blog/env-variable-missing-fix-freelance-scope.mdx<br>content/blog/finance-ai-prompts-guide.mdx<br>content/blog/first-freelance-payment-check-checklist.mdx |
+| 137 | public search refresh wave 137 | 3/3 | 27 | 0 | short-description | content/blog/first-freelance-payment-check.mdx<br>content/blog/flowise-local-deployment-beginner-guide.mdx<br>content/blog/freelance-platform-tool-stack-checklist.mdx |
+| 138 | public search refresh wave 138 | 3/3 | 27 | 0 | short-description | content/blog/freelance-platform-tool-stack.mdx<br>content/blog/freelance-quote-template-fill-checklist.mdx<br>content/blog/freelance-quote-template-fill.mdx |
+| 139 | public search refresh wave 139 | 3/3 | 27 | 0 | short-description | content/blog/freelance-weekly-review-template.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx<br>content/blog/github-command-cheatsheet-beginner-checklist.mdx |
+| 140 | public search refresh wave 140 | 3/3 | 27 | 0 | short-description | content/blog/github-command-cheatsheet-beginner.mdx<br>content/blog/github-vercel-beginner-site-checklist.mdx<br>content/blog/github-vercel-beginner-site.mdx |
+| 141 | public search refresh wave 141 | 3/3 | 27 | 0 | short-description | content/blog/google-analytics-when-to-add-checklist.mdx<br>content/blog/gumroad-template-selling-prep-checklist.mdx<br>content/blog/gumroad-template-selling-prep.mdx |
+| 142 | public search refresh wave 142 | 3/3 | 27 | 0 | short-description | content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/international-payment-fee-estimate-checklist.mdx<br>content/blog/international-payment-fee-estimate.mdx |
+| 143 | public search refresh wave 143 | 3/3 | 27 | 0 | short-description | content/blog/legal-contract-ai-prompts-guide.mdx<br>content/blog/lemon-squeezy-digital-products-checklist.mdx<br>content/blog/lemon-squeezy-digital-products.mdx |
+| 144 | public search refresh wave 144 | 3/3 | 27 | 0 | short-description | content/blog/llama-cpp-server-beginner-guide.mdx<br>content/blog/llm-api-integration-deployment-checklist.mdx<br>content/blog/llm-deployment-beginner-guide.mdx |
+| 145 | public search refresh wave 145 | 3/3 | 27 | 0 | short-description | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/llm-finetuning-vs-rag-beginner-guide.mdx<br>content/blog/llm-serving-cost-latency-checklist.mdx |
+| 146 | public search refresh wave 146 | 3/3 | 27 | 0 | short-description | content/blog/lm-studio-local-api-guide.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/make-vs-zapier-automation-checklist.mdx |
+| 147 | public search refresh wave 147 | 3/3 | 27 | 0 | short-description | content/blog/make-vs-zapier-automation.mdx<br>content/blog/manufacturing-ai-prompts-guide.mdx<br>content/blog/marketing-ai-prompts-guide.mdx |
+| 148 | public search refresh wave 148 | 3/3 | 27 | 0 | short-description | content/blog/mcp-beginner-guide-agent-tools.mdx<br>content/blog/n8n-ai-agent-self-host-guide.mdx<br>content/blog/notion-freelance-workflow-checklist.mdx |
+| 149 | public search refresh wave 149 | 3/3 | 27 | 0 | short-description | content/blog/notion-freelance-workflow.mdx<br>content/blog/ollama-api-web-app-integration.mdx<br>content/blog/ollama-local-model-deployment-guide.mdx |
+| 150 | public search refresh wave 150 | 3/3 | 27 | 0 | short-description | content/blog/openai-batch-api-cost-guide.mdx<br>content/blog/operations-ai-prompts-guide.mdx<br>content/blog/paddle-vs-stripe-beginner-checklist.mdx |
+| 151 | public search refresh wave 151 | 3/3 | 27 | 0 | short-description | content/blog/paddle-vs-stripe-beginner.mdx<br>content/blog/payment-account-info-mismatch-risk.mdx<br>content/blog/payment-page-disclaimer-checklist.mdx |
+| 152 | public search refresh wave 152 | 3/3 | 27 | 0 | short-description | content/blog/payment-page-disclaimer.mdx<br>content/blog/payoneer-freelancer-beginner-checklist.mdx<br>content/blog/payoneer-freelancer-beginner.mdx |
+| 153 | public search refresh wave 153 | 3/3 | 27 | 0 | short-description | content/blog/payoneer-wise-paypal-choose-checklist.mdx<br>content/blog/payoneer-wise-paypal-choose.mdx<br>content/blog/paypal-freelancer-limits-checklist.mdx |
+| 154 | public search refresh wave 154 | 3/3 | 27 | 0 | short-description | content/blog/paypal-freelancer-limits.mdx<br>content/blog/paypal-vs-payoneer-beginner-checklist.mdx<br>content/blog/paypal-vs-payoneer-beginner.mdx |
+| 155 | public search refresh wave 155 | 3/3 | 27 | 0 | short-description | content/blog/permission-denied-fix-freelance-scope.mdx<br>content/blog/platform-payment-vs-direct-payment-checklist.mdx<br>content/blog/platform-payment-vs-direct-payment.mdx |
+| 156 | public search refresh wave 156 | 3/3 | 27 | 0 | short-description | content/blog/portfolio-page-copy-template-checklist.mdx<br>content/blog/portfolio-page-copy-template.mdx<br>content/blog/practice-project-log-template-checklist.mdx |
+| 157 | public search refresh wave 157 | 3/3 | 27 | 0 | short-description | content/blog/practice-project-log-template.mdx<br>content/blog/pre-project-risk-assessment-template-checklist.mdx<br>content/blog/pre-project-risk-assessment-template.mdx |
+| 158 | public search refresh wave 158 | 3/3 | 27 | 0 | short-description | content/blog/product-manager-ai-prompts-guide.mdx<br>content/blog/project-delivery-checklist-items-checklist.mdx<br>content/blog/project-delivery-checklist-items.mdx |
+| 159 | public search refresh wave 159 | 3/3 | 27 | 0 | short-description | content/blog/project-retrospective-template-checklist.mdx<br>content/blog/project-retrospective-template.mdx<br>content/blog/qdrant-vector-database-beginner-guide.mdx |
+| 160 | public search refresh wave 160 | 3/3 | 27 | 0 | short-description | content/blog/quote-email-uncertain-scope.mdx<br>content/blog/rag-chunking-strategy-guide.mdx<br>content/blog/rag-evaluation-test-set-guide.mdx |
+| 161 | public search refresh wave 161 | 3/3 | 27 | 0 | short-description | content/blog/rag-retrieval-no-context-debug-guide.mdx<br>content/blog/real-estate-ai-prompts-guide.mdx<br>content/blog/sales-ai-prompts-guide.mdx |
+| 162 | public search refresh wave 162 | 3/3 | 27 | 0 | short-description | content/blog/service-inquiry-form-questions-checklist.mdx<br>content/blog/service-inquiry-form-questions.mdx<br>content/blog/service-payment-method-beginner-checklist.mdx |
+| 163 | public search refresh wave 163 | 3/3 | 27 | 0 | short-description | content/blog/service-payment-method-beginner.mdx<br>content/blog/small-site-launch-sop.mdx<br>content/blog/software-development-ai-prompts-guide.mdx |
+| 164 | public search refresh wave 164 | 3/3 | 25 | 0 | short-description | content/blog/stripe-templates-vs-services-checklist.mdx<br>content/blog/stripe-templates-vs-services.mdx<br>content/blog/cloudflare-vs-namecheap-domain.mdx |
+| 165 | public search refresh wave 165 | 3/3 | 21 | 0 | none | content/blog/codex-css-spacing-responsive-freelance-scope.mdx<br>content/blog/cursor-vs-codex-web-editing.mdx<br>content/blog/digital-template-refund-policy.mdx |
+| 166 | public search refresh wave 166 | 3/3 | 21 | 0 | none | content/blog/free-seo-tools-beginner-checklist.mdx<br>content/blog/free-seo-tools-beginner.mdx<br>content/blog/google-analytics-when-to-add.mdx |
+| 167 | public search refresh wave 167 | 2/2 | 14 | 0 | none | content/blog/google-search-console-new-site-checklist.mdx<br>content/blog/google-search-console-new-site.mdx |
 
 ## Session Details
 
 ### public search refresh wave 1
 
 - Ready items: 3/3
-- Action items: 42
-- Refresh reasons: mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority
+- Action items: 39
+- Refresh reasons: mojibake-public, seo-warning, short-description, freshness-high, high-priority, cannibalization
 - Publish confirm: not-included
 - Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
-| 255 | 14 | 59 | mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 新手使用检查清单 | content/blog/claude-code-beginner-mistakes-checklist.mdx |
-| 255 | 14 | 68 | mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 新手常见错误和修正方法 | content/blog/claude-code-beginner-mistakes-mistakes.mdx |
-| 255 | 14 | 60 | mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 新手使用场景检查清单 | content/blog/claude-code-beginner-use-cases-checklist.mdx |
+| 240 | 13 | 72 | mojibake-public, seo-warning, short-description, freshness-high, high-priority | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
+| 235 | 13 | 52 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
+| 235 | 13 | 61 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | Canva 作品集封面发布前检查清单 | content/blog/canva-portfolio-cover-tips-checklist.mdx |
+
+Top actions:
+
+#### 第一个 Upwork 小项目怎么报价：新手范围和底价检查
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: 第一个 Upwork 项目怎么报价.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
+
+#### AI 小项目练习选题检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
+- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
+- SEO warning: Confirm description length remains suitable for search snippets after editing.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
+
+#### Canva 作品集封面发布前检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Canva 作品集封面检查清单.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
+
+### public search refresh wave 2
+
+- Ready items: 3/3
+- Action items: 39
+- Refresh reasons: mojibake-public, seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 235 | 13 | 59 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | Claude Code 新手使用检查清单 | content/blog/claude-code-beginner-mistakes-checklist.mdx |
+| 235 | 13 | 68 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | Claude Code 新手常见错误和修正方法 | content/blog/claude-code-beginner-mistakes-mistakes.mdx |
+| 235 | 13 | 60 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | Claude Code 新手使用场景检查清单 | content/blog/claude-code-beginner-use-cases-checklist.mdx |
 
 Top actions:
 
@@ -272,19 +321,19 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
-### public search refresh wave 2
+### public search refresh wave 3
 
 - Ready items: 3/3
-- Action items: 42
-- Refresh reasons: mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority
+- Action items: 39
+- Refresh reasons: mojibake-public, seo-warning, short-description, cannibalization, high-priority
 - Publish confirm: not-included
 - Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
-| 255 | 14 | 71 | mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 新手适合用在哪些项目场景 | content/blog/claude-code-beginner-use-cases.mdx |
-| 255 | 14 | 70 | mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code Bug Prompt 常见错误 | content/blog/claude-code-bug-prompt-mistakes.mdx |
-| 255 | 14 | 74 | mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 修 bug 的 prompt 怎么写 | content/blog/claude-code-bug-prompt.mdx |
+| 235 | 13 | 71 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | Claude Code 新手适合用在哪些项目场景 | content/blog/claude-code-beginner-use-cases.mdx |
+| 235 | 13 | 70 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | Claude Code Bug Prompt 常见错误 | content/blog/claude-code-bug-prompt-mistakes.mdx |
+| 235 | 13 | 74 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | Claude Code 修 bug 的 prompt 怎么写 | content/blog/claude-code-bug-prompt.mdx |
 
 Top actions:
 
@@ -321,19 +370,19 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Repair likely garbled public copy in description after comparing the intended topic and sources.
 
-### public search refresh wave 3
+### public search refresh wave 4
 
 - Ready items: 3/3
-- Action items: 42
-- Refresh reasons: mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority
+- Action items: 39
+- Refresh reasons: mojibake-public, seo-warning, short-description, cannibalization, high-priority
 - Publish confirm: not-included
 - Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
-| 255 | 14 | 61 | mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 新手运行常用命令时的常见错误 | content/blog/claude-code-common-commands-mistakes.mdx |
-| 255 | 14 | 72 | mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 新手常用命令怎么整理成项目笔记 | content/blog/claude-code-common-commands.mdx |
-| 255 | 14 | 65 | mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 排查客户报错时的常见错误 | content/blog/claude-code-error-debug-mistakes.mdx |
+| 235 | 13 | 61 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | Claude Code 新手运行常用命令时的常见错误 | content/blog/claude-code-common-commands-mistakes.mdx |
+| 235 | 13 | 72 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | Claude Code 新手常用命令怎么整理成项目笔记 | content/blog/claude-code-common-commands.mdx |
+| 235 | 13 | 65 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | Claude Code 排查客户报错时的常见错误 | content/blog/claude-code-error-debug-mistakes.mdx |
 
 Top actions:
 
@@ -370,19 +419,19 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Repair likely garbled public copy in description, bodyExcerpt after comparing the intended topic and sources.
 
-### public search refresh wave 4
+### public search refresh wave 5
 
 - Ready items: 3/3
-- Action items: 40
-- Refresh reasons: mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority
+- Action items: 39
+- Refresh reasons: mojibake-public, seo-warning, short-description, cannibalization, high-priority
 - Publish confirm: not-included
 - Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
-| 255 | 14 | 75 | mojibake-public, seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 看 GitHub 文件时的常见范围错误 | content/blog/claude-code-github-file-scope-mistakes.mdx |
-| 245 | 13 | 104 | mojibake-public, seo-warning, cannibalization, freshness-high, high-priority | Codex 和 Claude Code 怎么选：新手对比清单 | content/blog/codex-vs-claude-code-beginner-checklist.mdx |
-| 240 | 13 | 52 | mojibake-public, seo-warning, short-description, freshness-high, high-priority | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
+| 235 | 13 | 75 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | Claude Code 看 GitHub 文件时的常见范围错误 | content/blog/claude-code-github-file-scope-mistakes.mdx |
+| 235 | 13 | 75 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | 哪些小项目任务适合用 Claude Code 辅助项目 | content/blog/claude-code-small-project-tasks.mdx |
+| 235 | 13 | 48 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | Claude Code 和 Codex 网页修改新手检查清单 | content/blog/claude-code-vs-codex-web-editing-checklist.mdx |
 
 Top actions:
 
@@ -393,55 +442,6 @@ Top actions:
 - Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
 - Review the meta description for a clearer user problem, outcome, and concrete workflow term.
 - SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code GitHub 文件范围错误.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-
-#### Codex 和 Claude Code 怎么选：新手对比清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- SEO warning: Confirm the contentType value matches the actual article format and category.
-- SEO warning: If the value is intentionally uncommon, document that decision during human review.
-- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-
-#### AI 小项目练习选题检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- SEO warning: Confirm description length remains suitable for search snippets after editing.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-
-### public search refresh wave 5
-
-- Ready items: 3/3
-- Action items: 39
-- Refresh reasons: mojibake-public, seo-warning, short-description, freshness-high, high-priority, cannibalization
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 240 | 13 | 72 | mojibake-public, seo-warning, short-description, freshness-high, high-priority | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
-| 235 | 13 | 75 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | 哪些小项目任务适合用 Claude Code 辅助项目 | content/blog/claude-code-small-project-tasks.mdx |
-| 235 | 13 | 48 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | Claude Code 和 Codex 网页修改新手检查清单 | content/blog/claude-code-vs-codex-web-editing-checklist.mdx |
-
-Top actions:
-
-#### 第一个 Upwork 小项目怎么报价：新手范围和底价检查
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: 第一个 Upwork 项目怎么报价.
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
@@ -569,18 +569,29 @@ Top actions:
 ### public search refresh wave 8
 
 - Ready items: 3/3
-- Action items: 36
-- Refresh reasons: mojibake-public, seo-warning, freshness-high, high-priority, cannibalization
+- Action items: 37
+- Refresh reasons: mojibake-public, seo-warning, short-description, cannibalization, high-priority, freshness-high
 - Publish confirm: not-included
 - Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 235 | 13 | 73 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | permission denied 报错新手怎么处理：常见错误和解决步骤 | content/blog/permission-denied-fix-mistakes.mdx |
 | 230 | 12 | 101 | mojibake-public, seo-warning, freshness-high, high-priority | Codex 和 GitHub 怎么配合：提交代码前检查 | content/blog/codex-github-before-commit-checklist.mdx |
 | 230 | 12 | 101 | mojibake-public, seo-warning, freshness-high, high-priority | Codex 部署 Vercel 前检查什么：上线前清单 | content/blog/codex-vercel-deploy-preflight-checklist.mdx |
-| 225 | 12 | 91 | mojibake-public, seo-warning, cannibalization, high-priority | git authentication failed 常见错误和解决步骤 | content/blog/git-authentication-failed-fix-mistakes.mdx |
 
 Top actions:
+
+#### permission denied 报错新手怎么处理：常见错误和解决步骤
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Repair likely garbled public copy in description after comparing the intended topic and sources.
 
 #### Codex 和 GitHub 怎么配合：提交代码前检查
 
@@ -604,6 +615,33 @@ Top actions:
 - Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
+### public search refresh wave 9
+
+- Ready items: 3/3
+- Action items: 36
+- Refresh reasons: mojibake-public, seo-warning, freshness-high, high-priority, cannibalization, short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 230 | 12 | 104 | mojibake-public, seo-warning, freshness-high, high-priority | Codex 和 Claude Code 怎么选：新手对比清单 | content/blog/codex-vs-claude-code-beginner-checklist.mdx |
+| 225 | 12 | 91 | mojibake-public, seo-warning, cannibalization, high-priority | git authentication failed 常见错误和解决步骤 | content/blog/git-authentication-failed-fix-mistakes.mdx |
+| 220 | 12 | 54 | mojibake-public, seo-warning, short-description, high-priority | AI 工具推荐怎么选：新手别一开始买太多 | content/blog/ai-tools-recommendation-beginner.mdx |
+
+Top actions:
+
+#### Codex 和 Claude Code 怎么选：新手对比清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
+
 #### git authentication failed 常见错误和解决步骤
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -613,82 +651,6 @@ Top actions:
 - SEO warning: If the value is intentionally uncommon, document that decision during human review.
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Cannibalization check: review similar slug stem conflict "git-authentication-failed-fix" before expanding this page or approving related drafts.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-
-### public search refresh wave 9
-
-- Ready items: 3/3
-- Action items: 42
-- Refresh reasons: mojibake-public, short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 225 | 14 | 56 | mojibake-public, short-description, cannibalization, freshness-high, high-priority | 第一次接 AI 小单前要准备什么 | content/blog/before-first-ai-freelance-job.mdx |
-| 225 | 14 | 88 | mojibake-public, short-description, cannibalization, freshness-high, high-priority | Codex 怎么做第一个网页 | content/blog/build-first-webpage-with-codex.mdx |
-| 225 | 14 | 87 | mojibake-public, short-description, cannibalization, freshness-high, high-priority | Codex 安装失败怎么办 | content/blog/codex-install-failed-beginner-fix.mdx |
-
-Top actions:
-
-#### 第一次接 AI 小单前要准备什么
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "before-first-freelance-job" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-
-#### Codex 怎么做第一个网页
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review same primary keyword conflict "codex 怎么做第一个网页" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-
-#### Codex 安装失败怎么办
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review same primary keyword conflict "codex 安装失败怎么办" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-
-### public search refresh wave 10
-
-- Ready items: 3/3
-- Action items: 38
-- Refresh reasons: mojibake-public, short-description, cannibalization, freshness-high, high-priority, seo-warning
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 225 | 14 | 89 | mojibake-public, short-description, cannibalization, freshness-high, high-priority | Codex 是什么新手怎么开始 | content/blog/what-is-codex-beginner-start.mdx |
-| 220 | 12 | 54 | mojibake-public, seo-warning, short-description, high-priority | AI 工具推荐怎么选：新手别一开始买太多 | content/blog/ai-tools-recommendation-beginner.mdx |
-| 220 | 12 | 61 | mojibake-public, seo-warning, short-description, high-priority | Canva 作品集封面发布前检查清单 | content/blog/canva-portfolio-cover-tips-checklist.mdx |
-
-Top actions:
-
-#### Codex 是什么新手怎么开始
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review same primary keyword conflict "codex 是什么新手怎么开始" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
 #### AI 工具推荐怎么选：新手别一开始买太多
@@ -702,18 +664,7 @@ Top actions:
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Repair likely garbled public copy in description, bodyExcerpt after comparing the intended topic and sources.
 
-#### Canva 作品集封面发布前检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Canva 作品集封面检查清单.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-
-### public search refresh wave 11
+### public search refresh wave 10
 
 - Ready items: 3/3
 - Action items: 36
@@ -762,32 +713,21 @@ Top actions:
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
-### public search refresh wave 12
+### public search refresh wave 11
 
 - Ready items: 3/3
-- Action items: 36
-- Refresh reasons: mojibake-public, seo-warning, short-description, high-priority, cannibalization
+- Action items: 37
+- Refresh reasons: mojibake-public, seo-warning, short-description, freshness-high
 - Publish confirm: not-included
 - Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
-| 220 | 12 | 73 | mojibake-public, seo-warning, short-description, high-priority | permission denied 报错新手怎么处理：常见错误和解决步骤 | content/blog/permission-denied-fix-mistakes.mdx |
 | 210 | 11 | 95 | mojibake-public, seo-warning | Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门 | content/blog/ray-serve-llm-deployment-guide.mdx |
-| 205 | 13 | 65 | mojibake-public, short-description, cannibalization | Codex 自动化开发流程哪些步骤不能省 | content/blog/codex-automation-steps-not-skip.mdx |
+| 210 | 13 | 88 | mojibake-public, short-description, freshness-high | Codex 怎么做第一个网页 | content/blog/build-first-webpage-with-codex.mdx |
+| 210 | 13 | 87 | mojibake-public, short-description, freshness-high | Codex 安装失败怎么办 | content/blog/codex-install-failed-beginner-fix.mdx |
 
 Top actions:
-
-#### permission denied 报错新手怎么处理：常见错误和解决步骤
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Confirm the contentType value matches the actual article format and category.
-- SEO warning: If the value is intentionally uncommon, document that decision during human review.
-- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
-- Repair likely garbled public copy in description after comparing the intended topic and sources.
 
 #### Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门
 
@@ -798,6 +738,66 @@ Top actions:
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
+
+#### Codex 怎么做第一个网页
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
+
+#### Codex 安装失败怎么办
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
+
+### public search refresh wave 12
+
+- Ready items: 3/3
+- Action items: 39
+- Refresh reasons: mojibake-public, short-description, freshness-high, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 210 | 13 | 89 | mojibake-public, short-description, freshness-high | Codex 是什么新手怎么开始 | content/blog/what-is-codex-beginner-start.mdx |
+| 205 | 13 | 56 | mojibake-public, short-description, cannibalization | 第一次接 AI 小单前要准备什么 | content/blog/before-first-ai-freelance-job.mdx |
+| 205 | 13 | 65 | mojibake-public, short-description, cannibalization | Codex 自动化开发流程哪些步骤不能省 | content/blog/codex-automation-steps-not-skip.mdx |
+
+Top actions:
+
+#### Codex 是什么新手怎么开始
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
+
+#### 第一次接 AI 小单前要准备什么
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "before-first-freelance-job" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
 #### Codex 自动化开发流程哪些步骤不能省
@@ -863,8 +863,8 @@ Top actions:
 ### public search refresh wave 14
 
 - Ready items: 3/3
-- Action items: 37
-- Refresh reasons: mojibake-public, short-description, cannibalization, freshness-high
+- Action items: 39
+- Refresh reasons: mojibake-public, short-description, cannibalization
 - Publish confirm: not-included
 - Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
 
@@ -872,7 +872,7 @@ Top actions:
 | ---: | ---: | ---: | --- | --- | --- |
 | 205 | 13 | 75 | mojibake-public, short-description, cannibalization | 用 Codex 判断 Upwork 任务风险 | content/blog/codex-upwork-job-risk-check.mdx |
 | 205 | 13 | 72 | mojibake-public, short-description, cannibalization | 新手如何记录每天的项目练习 | content/blog/daily-ai-freelance-practice-log.mdx |
-| 200 | 11 | 97 | mojibake-public, freshness-high | Codex 生成代码后怎么审核：交付前检查清单 | content/blog/codex-code-review-delivery-checklist.mdx |
+| 205 | 13 | 73 | mojibake-public, short-description, cannibalization | permission denied 报错新手怎么处理：新手检查清单 | content/blog/permission-denied-fix-checklist.mdx |
 
 Top actions:
 
@@ -898,16 +898,16 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
-#### Codex 生成代码后怎么审核：交付前检查清单
+#### permission denied 报错新手怎么处理：新手检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
 - Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "permission-denied-fix" before expanding this page or approving related drafts.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-- Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
+- Repair likely garbled public copy in description after comparing the intended topic and sources.
 
 ### public search refresh wave 15
 
@@ -919,11 +919,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 200 | 11 | 97 | mojibake-public, freshness-high | Codex 生成代码后怎么审核：交付前检查清单 | content/blog/codex-code-review-delivery-checklist.mdx |
 | 200 | 11 | 102 | mojibake-public, freshness-high | Codex 接 Upwork 小单怎么判断：风险检查清单 | content/blog/codex-upwork-small-job-risk-checklist.mdx |
 | 195 | 11 | 91 | mojibake-public, cannibalization | git authentication failed 怎么解决 | content/blog/git-authentication-failed-fix.mdx |
-| 195 | 11 | 91 | mojibake-public, cannibalization | GitHub Actions build 失败日志检查清单 | content/blog/github-actions-build-log-debug-checklist.mdx |
 
 Top actions:
+
+#### Codex 生成代码后怎么审核：交付前检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
+- Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
 
 #### Codex 接 Upwork 小单怎么判断：风险检查清单
 
@@ -947,6 +958,22 @@ Top actions:
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 - Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
 
+### public search refresh wave 16
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: mojibake-public, cannibalization, short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 195 | 11 | 91 | mojibake-public, cannibalization | GitHub Actions build 失败日志检查清单 | content/blog/github-actions-build-log-debug-checklist.mdx |
+| 195 | 11 | 91 | mojibake-public, cannibalization | Node 版本不匹配怎么排查 | content/blog/node-version-mismatch-fix.mdx |
+| 190 | 11 | 56 | mojibake-public, short-description | AI 做 PPT 怎么开始：新手从大纲到成稿的流程 | content/blog/ai-ppt-beginner-guide.mdx |
+
+Top actions:
+
 #### GitHub Actions build 失败日志检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -958,22 +985,6 @@ Top actions:
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 - Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
 
-### public search refresh wave 16
-
-- Ready items: 3/3
-- Action items: 35
-- Refresh reasons: mojibake-public, cannibalization, seo-warning, short-description, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 195 | 11 | 91 | mojibake-public, cannibalization | Node 版本不匹配怎么排查 | content/blog/node-version-mismatch-fix.mdx |
-| 190 | 12 | 74 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 检查 Next.js 页面哪些适合写进项目范围 | content/blog/claude-code-nextjs-page-check-freelance-scope.mdx |
-| 190 | 12 | 72 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 检查 Next.js 页面时的常见错误 | content/blog/claude-code-nextjs-page-check-mistakes.mdx |
-
-Top actions:
-
 #### Node 版本不匹配怎么排查
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -984,6 +995,82 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 - Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
+
+#### AI 做 PPT 怎么开始：新手从大纲到成稿的流程
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
+- Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
+
+### public search refresh wave 17
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: mojibake-public, short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 190 | 11 | 62 | mojibake-public, short-description | Codex 怎么做第一个落地页：使用前怎么判断是否适合 | content/blog/codex-first-landing-page-freelance-scope.mdx |
+| 190 | 11 | 69 | mojibake-public, short-description | Dify metadata filtering 怎么用：让知识库检索更可控 | content/blog/dify-metadata-filtering-rag-guide.mdx |
+| 190 | 11 | 59 | mojibake-public, short-description | RAG 提示词注入怎么防：知识库不能盲目信任文档内容 | content/blog/rag-prompt-injection-defense-guide.mdx |
+
+Top actions:
+
+#### Codex 怎么做第一个落地页：使用前怎么判断是否适合
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
+- Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
+
+#### Dify metadata filtering 怎么用：让知识库检索更可控
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
+- Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
+
+#### RAG 提示词注入怎么防：知识库不能盲目信任文档内容
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in title, bodyExcerpt after comparing the intended topic and sources.
+- Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
+
+### public search refresh wave 18
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 170 | 11 | 74 | seo-warning, short-description, cannibalization, high-priority | Claude Code 检查 Next.js 页面哪些适合写进项目范围 | content/blog/claude-code-nextjs-page-check-freelance-scope.mdx |
+| 170 | 11 | 72 | seo-warning, short-description, cannibalization, high-priority | Claude Code 检查 Next.js 页面时的常见错误 | content/blog/claude-code-nextjs-page-check-mistakes.mdx |
+| 170 | 11 | 72 | seo-warning, short-description, cannibalization, high-priority | 用 Claude Code 检查 Next.js 页面小问题怎么做 | content/blog/claude-code-nextjs-page-check.mdx |
+
+Top actions:
 
 #### Claude Code 检查 Next.js 页面哪些适合写进项目范围
 
@@ -1007,22 +1094,6 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 17
-
-- Ready items: 3/3
-- Action items: 34
-- Refresh reasons: seo-warning, short-description, cannibalization, freshness-high, high-priority, mojibake-public
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 190 | 12 | 72 | seo-warning, short-description, cannibalization, freshness-high, high-priority | 用 Claude Code 检查 Next.js 页面小问题怎么做 | content/blog/claude-code-nextjs-page-check.mdx |
-| 190 | 11 | 56 | mojibake-public, short-description | AI 做 PPT 怎么开始：新手从大纲到成稿的流程 | content/blog/ai-ppt-beginner-guide.mdx |
-| 190 | 11 | 62 | mojibake-public, short-description | Codex 怎么做第一个落地页：使用前怎么判断是否适合 | content/blog/codex-first-landing-page-freelance-scope.mdx |
-
-Top actions:
-
 #### 用 Claude Code 检查 Next.js 页面小问题怎么做
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -1034,715 +1105,7 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-#### AI 做 PPT 怎么开始：新手从大纲到成稿的流程
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-- Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
-
-#### Codex 怎么做第一个落地页：使用前怎么判断是否适合
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-- Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
-
-### public search refresh wave 18
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: mojibake-public, short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 190 | 11 | 69 | mojibake-public, short-description | Dify metadata filtering 怎么用：让知识库检索更可控 | content/blog/dify-metadata-filtering-rag-guide.mdx |
-| 190 | 11 | 73 | mojibake-public, short-description | permission denied 报错新手怎么处理：新手检查清单 | content/blog/permission-denied-fix-checklist.mdx |
-| 190 | 11 | 59 | mojibake-public, short-description | RAG 提示词注入怎么防：知识库不能盲目信任文档内容 | content/blog/rag-prompt-injection-defense-guide.mdx |
-
-Top actions:
-
-#### Dify metadata filtering 怎么用：让知识库检索更可控
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-- Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
-
-#### permission denied 报错新手怎么处理：新手检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in description after comparing the intended topic and sources.
-- Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
-
-#### RAG 提示词注入怎么防：知识库不能盲目信任文档内容
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in title, bodyExcerpt after comparing the intended topic and sources.
-- Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
-
 ### public search refresh wave 19
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: seo-warning, short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 175 | 12 | 49 | seo-warning, short-description, cannibalization, freshness-high, high-priority | AI 辅助交付和完全自动交付的检查清单 | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
-| 175 | 12 | 50 | seo-warning, short-description, cannibalization, freshness-high, high-priority | AI 辅助交付常见错误和解决步骤 | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx |
-| 175 | 12 | 47 | seo-warning, short-description, cannibalization, freshness-high, high-priority | AI 新手接项目前的项目适配检查清单 | content/blog/ai-beginner-project-fit-check-checklist.mdx |
-
-Top actions:
-
-#### AI 辅助交付和完全自动交付的检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- SEO warning: Confirm description length remains suitable for search snippets after editing.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 辅助交付常见错误和解决步骤
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- SEO warning: Confirm description length remains suitable for search snippets after editing.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 新手接项目前的项目适配检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- SEO warning: Confirm description length remains suitable for search snippets after editing.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 20
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: seo-warning, short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 175 | 12 | 61 | seo-warning, short-description, cannibalization, freshness-high, high-priority | AI 新手判断接项目时的常见错误 | content/blog/ai-beginner-project-fit-check-mistakes.mdx |
-| 175 | 12 | 45 | seo-warning, short-description, cannibalization, freshness-high, high-priority | AI 新手如何判断自己能不能接项目 | content/blog/ai-beginner-project-fit-check.mdx |
-| 175 | 12 | 54 | seo-warning, short-description, cannibalization, freshness-high, high-priority | 新手 30 天 AI 工具实践执行检查清单 | content/blog/ai-freelance-30-day-execution-checklist.mdx |
-
-Top actions:
-
-#### AI 新手判断接项目时的常见错误
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: AI 新手判断接项目常见错误.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 新手如何判断自己能不能接项目
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- SEO warning: Confirm description length remains suitable for search snippets after editing.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### 新手 30 天 AI 工具实践执行检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- SEO warning: Confirm description length remains suitable for search snippets after editing.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 21
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: seo-warning, short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 175 | 12 | 62 | seo-warning, short-description, cannibalization, freshness-high, high-priority | 新手 30 天 AI 工具实践计划常见执行错误 | content/blog/ai-freelance-30-day-execution-mistakes.mdx |
-| 175 | 12 | 48 | seo-warning, short-description, cannibalization, freshness-high, high-priority | AI 自动化项目合规风险检查清单 | content/blog/ai-freelance-automation-compliance-risk-checklist.mdx |
-| 175 | 12 | 57 | seo-warning, short-description, cannibalization, freshness-high, high-priority | AI 自动化项目常见合规错误和解决步骤 | content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx |
-
-Top actions:
-
-#### 新手 30 天 AI 工具实践计划常见执行错误
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: 新手 30 天 AI 工具实践计划常见错误.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 自动化项目合规风险检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- SEO warning: Confirm description length remains suitable for search snippets after editing.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 自动化项目常见合规错误和解决步骤
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: AI 自动化项目合规错误.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 22
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: seo-warning, short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 175 | 12 | 57 | seo-warning, short-description, cannibalization, freshness-high, high-priority | AI 工具实践误区的常见错误和解决步骤 | content/blog/ai-freelance-common-misconceptions-mistakes.mdx |
-| 175 | 12 | 69 | seo-warning, short-description, cannibalization, freshness-high, high-priority | AI 项目失败复盘常见错误 | content/blog/ai-freelance-failure-review-mistakes.mdx |
-| 175 | 12 | 72 | seo-warning, short-description, cannibalization, freshness-high, high-priority | AI 工具新手 7 天准备常见错误 | content/blog/ai-freelance-first-7-days-mistakes.mdx |
-
-Top actions:
-
-#### AI 工具实践误区的常见错误和解决步骤
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: AI 工具实践误区常见错误.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 项目失败复盘常见错误
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Confirm the contentType value matches the actual article format and category.
-- SEO warning: If the value is intentionally uncommon, document that decision during human review.
-- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 工具新手 7 天准备常见错误
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Confirm the contentType value matches the actual article format and category.
-- SEO warning: If the value is intentionally uncommon, document that decision during human review.
-- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 23
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: seo-warning, short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 175 | 12 | 60 | seo-warning, short-description, cannibalization, freshness-high, high-priority | AI 服务页文案常见错误 | content/blog/ai-freelance-service-page-copy-mistakes.mdx |
-| 175 | 12 | 62 | seo-warning, short-description, cannibalization, freshness-high, high-priority | AI 工具技能路线图常见错误 | content/blog/ai-freelance-skill-roadmap-mistakes.mdx |
-| 175 | 12 | 60 | seo-warning, short-description, cannibalization, freshness-high, high-priority | API Key 无效或缺失的常见错误和修复步骤 | content/blog/api-key-invalid-or-missing-mistakes.mdx |
-
-Top actions:
-
-#### AI 服务页文案常见错误
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Confirm the contentType value matches the actual article format and category.
-- SEO warning: If the value is intentionally uncommon, document that decision during human review.
-- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 工具技能路线图常见错误
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Confirm the contentType value matches the actual article format and category.
-- SEO warning: If the value is intentionally uncommon, document that decision during human review.
-- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### API Key 无效或缺失的常见错误和修复步骤
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: API Key 无效或缺失常见错误.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 24
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: seo-warning, short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 175 | 12 | 60 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 自动化人工审核检查清单 | content/blog/claude-code-automation-human-review-checklist.mdx |
-| 175 | 12 | 63 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 自动化项目前怎么判断能不能做 | content/blog/claude-code-automation-human-review-freelance-scope.mdx |
-| 175 | 12 | 65 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 自动化最容易忽略的人工审核错误 | content/blog/claude-code-automation-human-review-mistakes.mdx |
-
-Top actions:
-
-#### Claude Code 自动化人工审核检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 自动化人工审核清单.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code 自动化项目前怎么判断能不能做
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 自动化项目范围.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code 自动化最容易忽略的人工审核错误
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 自动化审核错误.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 25
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: seo-warning, short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 175 | 12 | 72 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 自动化为什么必须有人审 | content/blog/claude-code-automation-human-review.mdx |
-| 175 | 12 | 74 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 新手最容易犯的错误 | content/blog/claude-code-beginner-mistakes.mdx |
-| 175 | 12 | 60 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 新手项目练习前怎么判断使用场景 | content/blog/claude-code-beginner-use-cases-freelance-scope.mdx |
-
-Top actions:
-
-#### Claude Code 自动化为什么必须有人审
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 自动化人工审核.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code 新手最容易犯的错误
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 新手错误.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code 新手项目练习前怎么判断使用场景
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 使用场景项目范围.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 26
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: seo-warning, short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 175 | 12 | 63 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 新手选使用场景时的常见错误 | content/blog/claude-code-beginner-use-cases-mistakes.mdx |
-| 175 | 12 | 62 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 项目客户问题检查清单 | content/blog/claude-code-client-questions-checklist.mdx |
-| 175 | 12 | 60 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 项目前问客户时的常见错误 | content/blog/claude-code-client-questions-mistakes.mdx |
-
-Top actions:
-
-#### Claude Code 新手选使用场景时的常见错误
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 使用场景常见错误.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code 项目客户问题检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 客户问题检查清单.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code 项目前问客户时的常见错误
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 项目客户沟通常见错误.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 27
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: seo-warning, short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 175 | 12 | 66 | seo-warning, short-description, cannibalization, freshness-high, high-priority | 用 Claude Code 项目前要问客户哪些问题 | content/blog/claude-code-client-questions.mdx |
-| 175 | 12 | 63 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 常用命令检查清单 | content/blog/claude-code-common-commands-checklist.mdx |
-| 175 | 12 | 63 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 交付说明常见错误 | content/blog/claude-code-delivery-note-mistakes.mdx |
-
-Top actions:
-
-#### 用 Claude Code 项目前要问客户哪些问题
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 项目客户问题.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code 常用命令检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 命令检查清单.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code 交付说明常见错误
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Confirm the contentType value matches the actual article format and category.
-- SEO warning: If the value is intentionally uncommon, document that decision during human review.
-- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 28
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: seo-warning, short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 175 | 12 | 70 | seo-warning, short-description, cannibalization, freshness-high, high-priority | 用 Claude Code 项目后交付说明怎么写 | content/blog/claude-code-delivery-note.mdx |
-| 175 | 12 | 64 | seo-warning, short-description, cannibalization, freshness-high, high-priority | 用 Claude Code 排查客户报错时怎么做才稳 | content/blog/claude-code-error-debug.mdx |
-| 175 | 12 | 69 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code GitHub 文件范围检查清单 | content/blog/claude-code-github-file-scope-checklist.mdx |
-
-Top actions:
-
-#### 用 Claude Code 项目后交付说明怎么写
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 交付说明.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### 用 Claude Code 排查客户报错时怎么做才稳
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 错误排查.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code GitHub 文件范围检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code GitHub 文件检查清单.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 29
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: seo-warning, short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 175 | 12 | 78 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 看 GitHub 文件哪些适合写进项目范围 | content/blog/claude-code-github-file-scope-freelance-scope.mdx |
-| 175 | 12 | 83 | seo-warning, short-description, cannibalization, freshness-high, high-priority | 客户给 GitHub 文件时用 Claude Code 怎么限定范围 | content/blog/claude-code-github-file-scope.mdx |
-| 175 | 12 | 67 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 安装前置条件检查清单 | content/blog/claude-code-install-prerequisites-checklist.mdx |
-
-Top actions:
-
-#### Claude Code 看 GitHub 文件哪些适合写进项目范围
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code GitHub 文件项目范围.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### 客户给 GitHub 文件时用 Claude Code 怎么限定范围
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code GitHub 文件范围.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code 安装前置条件检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 安装检查清单.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 30
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: seo-warning, short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 175 | 12 | 76 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 安装准备常见错误 | content/blog/claude-code-install-prerequisites-mistakes.mdx |
-| 175 | 12 | 72 | seo-warning, short-description, cannibalization, freshness-high, high-priority | 安装 Claude Code 前新手要先确认哪些条件 | content/blog/claude-code-install-prerequisites.mdx |
-| 175 | 12 | 78 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 低风险小单哪些适合写进项目范围 | content/blog/claude-code-low-risk-freelance-jobs-freelance-scope.mdx |
-
-Top actions:
-
-#### Claude Code 安装准备常见错误
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 安装准备错误.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### 安装 Claude Code 前新手要先确认哪些条件
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 安装前置条件.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code 低风险小单哪些适合写进项目范围
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 低风险小单项目范围.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 31
-
-- Ready items: 3/3
-- Action items: 35
-- Refresh reasons: seo-warning, short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 175 | 12 | 68 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 低风险项目常见错误 | content/blog/claude-code-low-risk-freelance-jobs-mistakes.mdx |
-| 175 | 12 | 74 | seo-warning, short-description, cannibalization, freshness-high, high-priority | Claude Code 新手适合先接哪些低风险小单 | content/blog/claude-code-low-risk-freelance-jobs.mdx |
-| 170 | 11 | 67 | seo-warning, short-description, cannibalization, high-priority | Codex 是什么：新手怎么开始 | content/blog/codex-codex-4-31.mdx |
-
-Top actions:
-
-#### Claude Code 低风险项目常见错误
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 低风险项目错误.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code 新手适合先接哪些低风险小单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 低风险项目.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Codex 是什么：新手怎么开始
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Codex 是什么新手怎么开始.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 32
 
 - Ready items: 3/3
 - Action items: 33
@@ -1752,22 +1115,11 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
-| 170 | 11 | 69 | seo-warning, short-description, cannibalization, high-priority | Codex 怎么做第一个网页：新手练习流程 | content/blog/codex-codex-4-34.mdx |
 | 170 | 11 | 72 | seo-warning, short-description, cannibalization, high-priority | npm run dev 能跑但 build 失败常见错误和解决步骤 | content/blog/dev-works-build-fails-mistakes.mdx |
 | 170 | 11 | 76 | seo-warning, short-description, cannibalization, high-priority | failed to push some refs 使用前怎么判断是否适合 | content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx |
+| 170 | 11 | 77 | seo-warning, short-description, cannibalization, high-priority | failed to push some refs 常见错误和解决步骤 | content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
 
 Top actions:
-
-#### Codex 怎么做第一个网页：新手练习流程
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Confirm the contentType value matches the actual article format and category.
-- SEO warning: If the value is intentionally uncommon, document that decision during human review.
-- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
 #### npm run dev 能跑但 build 失败常见错误和解决步骤
 
@@ -1791,22 +1143,6 @@ Top actions:
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 33
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: seo-warning, short-description, cannibalization, high-priority, freshness-high
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 170 | 11 | 77 | seo-warning, short-description, cannibalization, high-priority | failed to push some refs 常见错误和解决步骤 | content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
-| 170 | 11 | 79 | seo-warning, short-description, cannibalization, high-priority | Next.js hydration error 怎么排查：常见错误和解决步骤 | content/blog/nextjs-hydration-error-debug-mistakes.mdx |
-| 165 | 11 | 102 | seo-warning, cannibalization, freshness-high, high-priority | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx |
-
-Top actions:
-
 #### failed to push some refs 常见错误和解决步骤
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -1817,6 +1153,22 @@ Top actions:
 - SEO warning: If the value is intentionally uncommon, document that decision during human review.
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 20
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority, freshness-high
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 170 | 11 | 79 | seo-warning, short-description, cannibalization, high-priority | Next.js hydration error 怎么排查：常见错误和解决步骤 | content/blog/nextjs-hydration-error-debug-mistakes.mdx |
+| 165 | 11 | 102 | seo-warning, cannibalization, freshness-high, high-priority | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx |
+| 160 | 11 | 82 | seo-warning, short-description, freshness-high, high-priority | Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
+
+Top actions:
 
 #### Next.js hydration error 怎么排查：常见错误和解决步骤
 
@@ -1840,21 +1192,92 @@ Top actions:
 - Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
 - Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.
 
-### public search refresh wave 34
+#### Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Payoneer Wise PayPal 区别.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 21
 
 - Ready items: 3/3
 - Action items: 33
-- Refresh reasons: seo-warning, short-description, freshness-high, high-priority
+- Refresh reasons: seo-warning, short-description, freshness-high, high-priority, cannibalization
 - Publish confirm: not-included
 - Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
-| 160 | 11 | 52 | seo-warning, short-description, freshness-high, high-priority | 联盟链接收入和服务收入有什么区别 | content/blog/affiliate-vs-service-income.mdx |
-| 160 | 11 | 57 | seo-warning, short-description, freshness-high, high-priority | AI 编程工具使用前风险检查清单 | content/blog/ai-coding-tools-risk-check-checklist.mdx |
-| 160 | 11 | 71 | seo-warning, short-description, freshness-high, high-priority | AI 编程工具使用前要检查哪些风险 | content/blog/ai-coding-tools-risk-check.mdx |
+| 160 | 11 | 80 | seo-warning, short-description, freshness-high, high-priority | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
+| 160 | 11 | 87 | seo-warning, short-description, freshness-high, high-priority | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | content/blog/vercel-env-variable-missing-beginner-guide.mdx |
+| 155 | 11 | 66 | seo-warning, short-description, cannibalization, high-priority | 广告收入要等到什么时候再接 | content/blog/ads-income-when-to-start.mdx |
 
 Top actions:
+
+#### Upwork Proposal 发出去没人回怎么办：新手检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Upwork Proposal 没人回怎么办.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Vercel 提示环境变量缺失怎么办：新手部署检查流程
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Vercel 环境变量缺失怎么办.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### 广告收入要等到什么时候再接
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: 广告收入什么时候开始.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 22
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 69 | seo-warning, short-description, cannibalization, high-priority | 联盟链接收入和服务收入有什么区别：新手检查清单 | content/blog/affiliate-vs-service-income-checklist.mdx |
+| 155 | 11 | 52 | seo-warning, short-description, cannibalization, high-priority | 联盟链接收入和服务收入有什么区别 | content/blog/affiliate-vs-service-income.mdx |
+| 155 | 11 | 49 | seo-warning, short-description, cannibalization, high-priority | AI 辅助交付和完全自动交付的检查清单 | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
+
+Top actions:
+
+#### 联盟链接收入和服务收入有什么区别：新手检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: 联盟链接收入和服务收入区别.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
 #### 联盟链接收入和服务收入有什么区别
 
@@ -1867,45 +1290,7 @@ Top actions:
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-#### AI 编程工具使用前风险检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: AI 编程工具风险检查清单.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 编程工具使用前要检查哪些风险
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: AI 编程工具风险检查.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 35
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: seo-warning, short-description, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 160 | 11 | 54 | seo-warning, short-description, freshness-high, high-priority | AI 生成内容人工审核表怎么设计 | content/blog/ai-content-human-review-template.mdx |
-| 160 | 11 | 54 | seo-warning, short-description, freshness-high, high-priority | AI 输出不稳定风险控制检查清单 | content/blog/ai-output-unstable-risk-control-checklist.mdx |
-| 160 | 11 | 60 | seo-warning, short-description, freshness-high, high-priority | AI 输出不稳定风险控制常见错误 | content/blog/ai-output-unstable-risk-control-mistakes.mdx |
-
-Top actions:
-
-#### AI 生成内容人工审核表怎么设计
+#### AI 辅助交付和完全自动交付的检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
@@ -1914,6 +1299,229 @@ Top actions:
 - SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
 - SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 23
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 50 | seo-warning, short-description, cannibalization, high-priority | AI 辅助交付常见错误和解决步骤 | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx |
+| 155 | 11 | 47 | seo-warning, short-description, cannibalization, high-priority | AI 新手接项目前的项目适配检查清单 | content/blog/ai-beginner-project-fit-check-checklist.mdx |
+| 155 | 11 | 61 | seo-warning, short-description, cannibalization, high-priority | AI 新手判断接项目时的常见错误 | content/blog/ai-beginner-project-fit-check-mistakes.mdx |
+
+Top actions:
+
+#### AI 辅助交付常见错误和解决步骤
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
+- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
+- SEO warning: Confirm description length remains suitable for search snippets after editing.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 新手接项目前的项目适配检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
+- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
+- SEO warning: Confirm description length remains suitable for search snippets after editing.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 新手判断接项目时的常见错误
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: AI 新手判断接项目常见错误.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 24
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 45 | seo-warning, short-description, cannibalization, high-priority | AI 新手如何判断自己能不能接项目 | content/blog/ai-beginner-project-fit-check.mdx |
+| 155 | 11 | 54 | seo-warning, short-description, cannibalization, high-priority | 新手 30 天 AI 工具实践执行检查清单 | content/blog/ai-freelance-30-day-execution-checklist.mdx |
+| 155 | 11 | 62 | seo-warning, short-description, cannibalization, high-priority | 新手 30 天 AI 工具实践计划常见执行错误 | content/blog/ai-freelance-30-day-execution-mistakes.mdx |
+
+Top actions:
+
+#### AI 新手如何判断自己能不能接项目
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
+- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
+- SEO warning: Confirm description length remains suitable for search snippets after editing.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### 新手 30 天 AI 工具实践执行检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
+- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
+- SEO warning: Confirm description length remains suitable for search snippets after editing.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### 新手 30 天 AI 工具实践计划常见执行错误
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: 新手 30 天 AI 工具实践计划常见错误.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 25
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 48 | seo-warning, short-description, cannibalization, high-priority | AI 自动化项目合规风险检查清单 | content/blog/ai-freelance-automation-compliance-risk-checklist.mdx |
+| 155 | 11 | 57 | seo-warning, short-description, cannibalization, high-priority | AI 自动化项目常见合规错误和解决步骤 | content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx |
+| 155 | 11 | 57 | seo-warning, short-description, cannibalization, high-priority | AI 工具实践误区的常见错误和解决步骤 | content/blog/ai-freelance-common-misconceptions-mistakes.mdx |
+
+Top actions:
+
+#### AI 自动化项目合规风险检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
+- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
+- SEO warning: Confirm description length remains suitable for search snippets after editing.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 自动化项目常见合规错误和解决步骤
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: AI 自动化项目合规错误.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 工具实践误区的常见错误和解决步骤
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: AI 工具实践误区常见错误.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 26
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 69 | seo-warning, short-description, cannibalization, high-priority | AI 项目失败复盘常见错误 | content/blog/ai-freelance-failure-review-mistakes.mdx |
+| 155 | 11 | 72 | seo-warning, short-description, cannibalization, high-priority | AI 工具新手 7 天准备常见错误 | content/blog/ai-freelance-first-7-days-mistakes.mdx |
+| 155 | 11 | 60 | seo-warning, short-description, cannibalization, high-priority | AI 服务页文案常见错误 | content/blog/ai-freelance-service-page-copy-mistakes.mdx |
+
+Top actions:
+
+#### AI 项目失败复盘常见错误
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 工具新手 7 天准备常见错误
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 服务页文案常见错误
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 27
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 62 | seo-warning, short-description, cannibalization, high-priority | AI 工具技能路线图常见错误 | content/blog/ai-freelance-skill-roadmap-mistakes.mdx |
+| 155 | 11 | 54 | seo-warning, short-description, cannibalization, high-priority | AI 输出不稳定风险控制检查清单 | content/blog/ai-output-unstable-risk-control-checklist.mdx |
+| 155 | 11 | 60 | seo-warning, short-description, cannibalization, high-priority | AI 输出不稳定风险控制常见错误 | content/blog/ai-output-unstable-risk-control-mistakes.mdx |
+
+Top actions:
+
+#### AI 工具技能路线图常见错误
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
 #### AI 输出不稳定风险控制检查清单
@@ -1938,19 +1546,19 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 36
+### public search refresh wave 28
 
 - Ready items: 3/3
 - Action items: 33
-- Refresh reasons: seo-warning, short-description, freshness-high, high-priority
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
 - Publish confirm: not-included
 - Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
-| 160 | 11 | 62 | seo-warning, short-description, freshness-high, high-priority | AI 输出不稳定怎么做风险控制 | content/blog/ai-output-unstable-risk-control.mdx |
-| 160 | 11 | 64 | seo-warning, short-description, freshness-high, high-priority | AI 小项目练习常见错误 | content/blog/ai-small-project-practice-topics-mistakes.mdx |
-| 160 | 11 | 65 | seo-warning, short-description, freshness-high, high-priority | AI 工具新手练习小项目选什么 | content/blog/ai-small-project-practice-topics.mdx |
+| 155 | 11 | 62 | seo-warning, short-description, cannibalization, high-priority | AI 输出不稳定怎么做风险控制 | content/blog/ai-output-unstable-risk-control.mdx |
+| 155 | 11 | 64 | seo-warning, short-description, cannibalization, high-priority | AI 小项目练习常见错误 | content/blog/ai-small-project-practice-topics-mistakes.mdx |
+| 155 | 11 | 65 | seo-warning, short-description, cannibalization, high-priority | AI 工具新手练习小项目选什么 | content/blog/ai-small-project-practice-topics.mdx |
 
 Top actions:
 
@@ -1987,32 +1595,21 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 37
+### public search refresh wave 29
 
 - Ready items: 3/3
 - Action items: 33
-- Refresh reasons: seo-warning, short-description, freshness-high, high-priority
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
 - Publish confirm: not-included
 - Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
-| 160 | 11 | 54 | seo-warning, short-description, freshness-high, high-priority | AI 工具配置服务项目检查清单 | content/blog/ai-tool-setup-service-checklist-checklist.mdx |
-| 160 | 11 | 62 | seo-warning, short-description, freshness-high, high-priority | AI 免费工具栈常见错误 | content/blog/ai-tools-stack-free-start-mistakes.mdx |
-| 160 | 11 | 66 | seo-warning, short-description, freshness-high, high-priority | AI 工具新手免费工具栈怎么选 | content/blog/ai-tools-stack-free-start.mdx |
+| 155 | 11 | 62 | seo-warning, short-description, cannibalization, high-priority | AI 免费工具栈常见错误 | content/blog/ai-tools-stack-free-start-mistakes.mdx |
+| 155 | 11 | 66 | seo-warning, short-description, cannibalization, high-priority | AI 工具新手免费工具栈怎么选 | content/blog/ai-tools-stack-free-start.mdx |
+| 155 | 11 | 60 | seo-warning, short-description, cannibalization, high-priority | API Key 无效或缺失的常见错误和修复步骤 | content/blog/api-key-invalid-or-missing-mistakes.mdx |
 
 Top actions:
-
-#### AI 工具配置服务项目检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- SEO warning: Confirm description length remains suitable for search snippets after editing.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
 #### AI 免费工具栈常见错误
 
@@ -2036,32 +1633,81 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 38
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: seo-warning, short-description, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 160 | 11 | 62 | seo-warning, short-description, freshness-high, high-priority | API Key 无效或缺失：使用前怎么判断是否适合 | content/blog/api-key-invalid-or-missing-freelance-scope.mdx |
-| 160 | 11 | 54 | seo-warning, short-description, freshness-high, high-priority | Bug 修复交付前检查清单 | content/blog/bugfix-delivery-note-template-checklist.mdx |
-| 160 | 11 | 56 | seo-warning, short-description, freshness-high, high-priority | Bug 修复交付说明模板怎么写 | content/blog/bugfix-delivery-note-template.mdx |
-
-Top actions:
-
-#### API Key 无效或缺失：使用前怎么判断是否适合
+#### API Key 无效或缺失的常见错误和修复步骤
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
 - Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
 - Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: API Key 无效或缺失项目范围.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: API Key 无效或缺失常见错误.
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 30
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 56 | seo-warning, short-description, cannibalization, high-priority | 银行卡绑定收款平台要注意什么：新手检查清单 | content/blog/bank-card-payment-platform-risk-checklist.mdx |
+| 155 | 11 | 55 | seo-warning, short-description, cannibalization, high-priority | 第一次接 AI 小单前检查清单 | content/blog/before-first-ai-freelance-job-checklist.mdx |
+| 155 | 11 | 59 | seo-warning, short-description, cannibalization, high-priority | 第一次接 AI 小单前最容易犯的错误 | content/blog/before-first-ai-freelance-job-mistakes.mdx |
+
+Top actions:
+
+#### 银行卡绑定收款平台要注意什么：新手检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: 银行卡绑定收款平台注意事项.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### 第一次接 AI 小单前检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: 第一次 AI 工具实践检查清单.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### 第一次接 AI 小单前最容易犯的错误
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: 第一次接 AI 小单常见错误.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 31
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 54 | seo-warning, short-description, cannibalization, high-priority | Bug 修复交付前检查清单 | content/blog/bugfix-delivery-note-template-checklist.mdx |
+| 155 | 11 | 56 | seo-warning, short-description, cannibalization, high-priority | Bug 修复交付说明模板怎么写 | content/blog/bugfix-delivery-note-template.mdx |
+| 155 | 11 | 60 | seo-warning, short-description, cannibalization, high-priority | Claude Code 自动化人工审核检查清单 | content/blog/claude-code-automation-human-review-checklist.mdx |
+
+Top actions:
 
 #### Bug 修复交付前检查清单
 
@@ -2085,252 +1731,18 @@ Top actions:
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 39
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: seo-warning, short-description, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 160 | 11 | 57 | seo-warning, short-description, freshness-high, high-priority | ChatGPT、Codex 和 Claude 工作流检查清单 | content/blog/chatgpt-codex-claude-workflow-checklist.mdx |
-| 160 | 11 | 82 | seo-warning, short-description, freshness-high, high-priority | ChatGPT、Codex 和 Claude 怎么分工做 AI 工具实践流程 | content/blog/chatgpt-codex-claude-workflow.mdx |
-| 160 | 11 | 60 | seo-warning, short-description, freshness-high, high-priority | AI 生成 Proposal 发布前检查清单 | content/blog/chatgpt-vs-claude-proposal-checklist.mdx |
-
-Top actions:
-
-#### ChatGPT、Codex 和 Claude 工作流检查清单
+#### Claude Code 自动化人工审核检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
 - Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
 - Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: ChatGPT Codex Claude 工作流检查清单.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 自动化人工审核清单.
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-#### ChatGPT、Codex 和 Claude 怎么分工做 AI 工具实践流程
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: ChatGPT Codex Claude 工作流.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 生成 Proposal 发布前检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: AI 生成 Proposal 检查清单.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 40
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: seo-warning, short-description, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 160 | 11 | 61 | seo-warning, short-description, freshness-high, high-priority | Claude Code 项目前怎么判断范围 | content/blog/claude-code-beginner-mistakes-freelance-scope.mdx |
-| 160 | 11 | 73 | seo-warning, short-description, freshness-high, high-priority | Claude Code Bug Prompt 项目前怎么判断范围 | content/blog/claude-code-bug-prompt-freelance-scope.mdx |
-| 160 | 11 | 64 | seo-warning, short-description, freshness-high, high-priority | Claude Code 项目前客户问题不清楚时怎么判断范围 | content/blog/claude-code-client-questions-freelance-scope.mdx |
-
-Top actions:
-
-#### Claude Code 项目前怎么判断范围
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 项目范围.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code Bug Prompt 项目前怎么判断范围
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code bug prompt 项目范围.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code 项目前客户问题不清楚时怎么判断范围
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 客户问题项目范围.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 41
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: seo-warning, short-description, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 160 | 11 | 68 | seo-warning, short-description, freshness-high, high-priority | Claude Code 常用命令哪些适合写进项目范围 | content/blog/claude-code-common-commands-freelance-scope.mdx |
-| 160 | 11 | 70 | seo-warning, short-description, freshness-high, high-priority | Claude Code 交付说明哪些内容适合写进项目范围 | content/blog/claude-code-delivery-note-freelance-scope.mdx |
-| 160 | 11 | 69 | seo-warning, short-description, freshness-high, high-priority | Claude Code 错误排查哪些适合写进项目范围 | content/blog/claude-code-error-debug-freelance-scope.mdx |
-
-Top actions:
-
-#### Claude Code 常用命令哪些适合写进项目范围
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 常用命令项目范围.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code 交付说明哪些内容适合写进项目范围
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 交付说明项目范围.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code 错误排查哪些适合写进项目范围
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 错误排查项目范围.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 42
-
-- Ready items: 3/3
-- Action items: 32
-- Refresh reasons: seo-warning, short-description, freshness-high, high-priority, cannibalization
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 160 | 11 | 73 | seo-warning, short-description, freshness-high, high-priority | Claude Code 安装准备哪些适合写进项目范围 | content/blog/claude-code-install-prerequisites-freelance-scope.mdx |
-| 160 | 10 | 90 | seo-warning, cannibalization, high-priority | Codex npm install 报错怎么办：新手诊断流程 | content/blog/codex-codex-npm-install-4-33.mdx |
-| 160 | 11 | 82 | seo-warning, short-description, freshness-high, high-priority | Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
-
-Top actions:
-
-#### Claude Code 安装准备哪些适合写进项目范围
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 安装准备项目范围.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Codex npm install 报错怎么办：新手诊断流程
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- SEO warning: Confirm the contentType value matches the actual article format and category.
-- SEO warning: If the value is intentionally uncommon, document that decision during human review.
-- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
-- Cannibalization check: review same primary keyword conflict "codex npm install 报错怎么办" before expanding this page or approving related drafts.
-- Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.
-
-#### Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Payoneer Wise PayPal 区别.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 43
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: seo-warning, short-description, freshness-high, high-priority, cannibalization
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 160 | 11 | 80 | seo-warning, short-description, freshness-high, high-priority | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
-| 160 | 11 | 87 | seo-warning, short-description, freshness-high, high-priority | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | content/blog/vercel-env-variable-missing-beginner-guide.mdx |
-| 155 | 11 | 55 | seo-warning, short-description, cannibalization, high-priority | 第一次接 AI 小单前检查清单 | content/blog/before-first-ai-freelance-job-checklist.mdx |
-
-Top actions:
-
-#### Upwork Proposal 发出去没人回怎么办：新手检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Upwork Proposal 没人回怎么办.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Vercel 提示环境变量缺失怎么办：新手部署检查流程
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: Vercel 环境变量缺失怎么办.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### 第一次接 AI 小单前检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: 第一次 AI 工具实践检查清单.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 44
+### public search refresh wave 32
 
 - Ready items: 3/3
 - Action items: 33
@@ -2340,19 +1752,362 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
-| 155 | 11 | 59 | seo-warning, short-description, cannibalization, high-priority | 第一次接 AI 小单前最容易犯的错误 | content/blog/before-first-ai-freelance-job-mistakes.mdx |
-| 155 | 11 | 73 | seo-warning, short-description, cannibalization, high-priority | Claude Code Proposal 审阅检查清单 | content/blog/claude-code-proposal-review-checklist.mdx |
-| 155 | 11 | 75 | seo-warning, short-description, cannibalization, high-priority | Claude Code 审阅 Proposal 时的常见错误 | content/blog/claude-code-proposal-review-mistakes.mdx |
+| 155 | 11 | 63 | seo-warning, short-description, cannibalization, high-priority | Claude Code 自动化项目前怎么判断能不能做 | content/blog/claude-code-automation-human-review-freelance-scope.mdx |
+| 155 | 11 | 65 | seo-warning, short-description, cannibalization, high-priority | Claude Code 自动化最容易忽略的人工审核错误 | content/blog/claude-code-automation-human-review-mistakes.mdx |
+| 155 | 11 | 72 | seo-warning, short-description, cannibalization, high-priority | Claude Code 自动化为什么必须有人审 | content/blog/claude-code-automation-human-review.mdx |
 
 Top actions:
 
-#### 第一次接 AI 小单前最容易犯的错误
+#### Claude Code 自动化项目前怎么判断能不能做
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
 - Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
 - Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: 第一次接 AI 小单常见错误.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 自动化项目范围.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code 自动化最容易忽略的人工审核错误
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 自动化审核错误.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code 自动化为什么必须有人审
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 自动化人工审核.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 33
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 74 | seo-warning, short-description, cannibalization, high-priority | Claude Code 新手最容易犯的错误 | content/blog/claude-code-beginner-mistakes.mdx |
+| 155 | 11 | 60 | seo-warning, short-description, cannibalization, high-priority | Claude Code 新手项目练习前怎么判断使用场景 | content/blog/claude-code-beginner-use-cases-freelance-scope.mdx |
+| 155 | 11 | 63 | seo-warning, short-description, cannibalization, high-priority | Claude Code 新手选使用场景时的常见错误 | content/blog/claude-code-beginner-use-cases-mistakes.mdx |
+
+Top actions:
+
+#### Claude Code 新手最容易犯的错误
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 新手错误.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code 新手项目练习前怎么判断使用场景
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 使用场景项目范围.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code 新手选使用场景时的常见错误
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 使用场景常见错误.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 34
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 62 | seo-warning, short-description, cannibalization, high-priority | Claude Code 项目客户问题检查清单 | content/blog/claude-code-client-questions-checklist.mdx |
+| 155 | 11 | 60 | seo-warning, short-description, cannibalization, high-priority | Claude Code 项目前问客户时的常见错误 | content/blog/claude-code-client-questions-mistakes.mdx |
+| 155 | 11 | 66 | seo-warning, short-description, cannibalization, high-priority | 用 Claude Code 项目前要问客户哪些问题 | content/blog/claude-code-client-questions.mdx |
+
+Top actions:
+
+#### Claude Code 项目客户问题检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 客户问题检查清单.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code 项目前问客户时的常见错误
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 项目客户沟通常见错误.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### 用 Claude Code 项目前要问客户哪些问题
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 项目客户问题.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 35
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 63 | seo-warning, short-description, cannibalization, high-priority | Claude Code 常用命令检查清单 | content/blog/claude-code-common-commands-checklist.mdx |
+| 155 | 11 | 63 | seo-warning, short-description, cannibalization, high-priority | Claude Code 交付说明常见错误 | content/blog/claude-code-delivery-note-mistakes.mdx |
+| 155 | 11 | 70 | seo-warning, short-description, cannibalization, high-priority | 用 Claude Code 项目后交付说明怎么写 | content/blog/claude-code-delivery-note.mdx |
+
+Top actions:
+
+#### Claude Code 常用命令检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 命令检查清单.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code 交付说明常见错误
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### 用 Claude Code 项目后交付说明怎么写
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 交付说明.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 36
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 64 | seo-warning, short-description, cannibalization, high-priority | 用 Claude Code 排查客户报错时怎么做才稳 | content/blog/claude-code-error-debug.mdx |
+| 155 | 11 | 69 | seo-warning, short-description, cannibalization, high-priority | Claude Code GitHub 文件范围检查清单 | content/blog/claude-code-github-file-scope-checklist.mdx |
+| 155 | 11 | 78 | seo-warning, short-description, cannibalization, high-priority | Claude Code 看 GitHub 文件哪些适合写进项目范围 | content/blog/claude-code-github-file-scope-freelance-scope.mdx |
+
+Top actions:
+
+#### 用 Claude Code 排查客户报错时怎么做才稳
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 错误排查.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code GitHub 文件范围检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code GitHub 文件检查清单.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code 看 GitHub 文件哪些适合写进项目范围
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code GitHub 文件项目范围.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 37
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 83 | seo-warning, short-description, cannibalization, high-priority | 客户给 GitHub 文件时用 Claude Code 怎么限定范围 | content/blog/claude-code-github-file-scope.mdx |
+| 155 | 11 | 67 | seo-warning, short-description, cannibalization, high-priority | Claude Code 安装前置条件检查清单 | content/blog/claude-code-install-prerequisites-checklist.mdx |
+| 155 | 11 | 76 | seo-warning, short-description, cannibalization, high-priority | Claude Code 安装准备常见错误 | content/blog/claude-code-install-prerequisites-mistakes.mdx |
+
+Top actions:
+
+#### 客户给 GitHub 文件时用 Claude Code 怎么限定范围
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code GitHub 文件范围.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code 安装前置条件检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 安装检查清单.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code 安装准备常见错误
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 安装准备错误.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 38
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 72 | seo-warning, short-description, cannibalization, high-priority | 安装 Claude Code 前新手要先确认哪些条件 | content/blog/claude-code-install-prerequisites.mdx |
+| 155 | 11 | 78 | seo-warning, short-description, cannibalization, high-priority | Claude Code 低风险小单哪些适合写进项目范围 | content/blog/claude-code-low-risk-freelance-jobs-freelance-scope.mdx |
+| 155 | 11 | 68 | seo-warning, short-description, cannibalization, high-priority | Claude Code 低风险项目常见错误 | content/blog/claude-code-low-risk-freelance-jobs-mistakes.mdx |
+
+Top actions:
+
+#### 安装 Claude Code 前新手要先确认哪些条件
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 安装前置条件.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code 低风险小单哪些适合写进项目范围
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 低风险小单项目范围.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code 低风险项目常见错误
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 低风险项目错误.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 39
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 74 | seo-warning, short-description, cannibalization, high-priority | Claude Code 新手适合先接哪些低风险小单 | content/blog/claude-code-low-risk-freelance-jobs.mdx |
+| 155 | 11 | 73 | seo-warning, short-description, cannibalization, high-priority | Claude Code Proposal 审阅检查清单 | content/blog/claude-code-proposal-review-checklist.mdx |
+| 155 | 11 | 75 | seo-warning, short-description, cannibalization, high-priority | Claude Code 审阅 Proposal 时的常见错误 | content/blog/claude-code-proposal-review-mistakes.mdx |
+
+Top actions:
+
+#### Claude Code 新手适合先接哪些低风险小单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 低风险项目.
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
@@ -2379,7 +2134,7 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 45
+### public search refresh wave 40
 
 - Ready items: 3/3
 - Action items: 33
@@ -2428,7 +2183,7 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 46
+### public search refresh wave 41
 
 - Ready items: 3/3
 - Action items: 33
@@ -2477,7 +2232,7 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 47
+### public search refresh wave 42
 
 - Ready items: 3/3
 - Action items: 33
@@ -2526,7 +2281,7 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 48
+### public search refresh wave 43
 
 - Ready items: 3/3
 - Action items: 33
@@ -2575,7 +2330,7 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 49
+### public search refresh wave 44
 
 - Ready items: 3/3
 - Action items: 33
@@ -2624,7 +2379,7 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 50
+### public search refresh wave 45
 
 - Ready items: 3/3
 - Action items: 33
@@ -2673,7 +2428,7 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 51
+### public search refresh wave 46
 
 - Ready items: 3/3
 - Action items: 33
@@ -2683,62 +2438,24 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
-| 155 | 11 | 74 | seo-warning, short-description, cannibalization, high-priority | Codex 和 Claude Code 怎么选：新手判断模板 | content/blog/codex-codex-claude-code-4-40.mdx |
-| 155 | 11 | 68 | seo-warning, short-description, cannibalization, high-priority | Codex 修 CSS bug 的流程：新手项目练习边界 | content/blog/codex-codex-css-bug-4-35.mdx |
-| 155 | 11 | 80 | seo-warning, short-description, cannibalization, high-priority | Codex 和 GitHub 怎么配合：新手工作流 | content/blog/codex-codex-github-4-36.mdx |
-
-Top actions:
-
-#### Codex 和 Claude Code 怎么选：新手判断模板
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Confirm the contentType value matches the actual article format and category.
-- SEO warning: If the value is intentionally uncommon, document that decision during human review.
-- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Codex 修 CSS bug 的流程：新手项目练习边界
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Confirm the contentType value matches the actual article format and category.
-- SEO warning: If the value is intentionally uncommon, document that decision during human review.
-- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Codex 和 GitHub 怎么配合：新手工作流
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Confirm the contentType value matches the actual article format and category.
-- SEO warning: If the value is intentionally uncommon, document that decision during human review.
-- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 52
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 155 | 11 | 75 | seo-warning, short-description, cannibalization, high-priority | Codex 接 Upwork 小单怎么判断 | content/blog/codex-codex-upwork-4-39.mdx |
+| 155 | 11 | 67 | seo-warning, short-description, cannibalization, high-priority | Codex 是什么：新手怎么开始 | content/blog/codex-codex-4-31.mdx |
+| 155 | 11 | 69 | seo-warning, short-description, cannibalization, high-priority | Codex 怎么做第一个网页：新手练习流程 | content/blog/codex-codex-4-34.mdx |
 | 155 | 11 | 72 | seo-warning, short-description, cannibalization, high-priority | Codex 修改现有网页 UI 检查清单 | content/blog/codex-edit-existing-ui-checklist.mdx |
-| 155 | 11 | 63 | seo-warning, short-description, cannibalization, high-priority | Codex 是什么，新手第一天应该怎么用：常见错误和解决步骤 | content/blog/codex-first-day-guide-mistakes.mdx |
 
 Top actions:
 
-#### Codex 接 Upwork 小单怎么判断
+#### Codex 是什么：新手怎么开始
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Codex 是什么新手怎么开始.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Codex 怎么做第一个网页：新手练习流程
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
@@ -2760,6 +2477,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 47
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 63 | seo-warning, short-description, cannibalization, high-priority | Codex 是什么，新手第一天应该怎么用：常见错误和解决步骤 | content/blog/codex-first-day-guide-mistakes.mdx |
+| 155 | 11 | 59 | seo-warning, short-description, cannibalization, high-priority | Codex 怎么做第一个落地页：常见错误和解决步骤 | content/blog/codex-first-landing-page-mistakes.mdx |
+| 155 | 11 | 74 | seo-warning, short-description, cannibalization, high-priority | Codex GitHub 提交代码检查清单 | content/blog/codex-github-workflow-checklist.mdx |
+
+Top actions:
+
 #### Codex 是什么，新手第一天应该怎么用：常见错误和解决步骤
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -2770,22 +2503,6 @@ Top actions:
 - SEO warning: If the value is intentionally uncommon, document that decision during human review.
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 53
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 155 | 11 | 59 | seo-warning, short-description, cannibalization, high-priority | Codex 怎么做第一个落地页：常见错误和解决步骤 | content/blog/codex-first-landing-page-mistakes.mdx |
-| 155 | 11 | 74 | seo-warning, short-description, cannibalization, high-priority | Codex GitHub 提交代码检查清单 | content/blog/codex-github-workflow-checklist.mdx |
-| 155 | 11 | 78 | seo-warning, short-description, cannibalization, high-priority | Codex GitHub 工作流常见错误和修复顺序 | content/blog/codex-github-workflow-mistakes.mdx |
-
-Top actions:
 
 #### Codex 怎么做第一个落地页：常见错误和解决步骤
 
@@ -2809,6 +2526,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 48
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 78 | seo-warning, short-description, cannibalization, high-priority | Codex GitHub 工作流常见错误和修复顺序 | content/blog/codex-github-workflow-mistakes.mdx |
+| 155 | 11 | 84 | seo-warning, short-description, cannibalization, high-priority | Codex 和 GitHub 怎么配合提交代码 | content/blog/codex-github-workflow.mdx |
+| 155 | 11 | 70 | seo-warning, short-description, cannibalization, high-priority | Codex 安装前置条件常见错误和修复顺序 | content/blog/codex-install-prerequisites-mistakes.mdx |
+
+Top actions:
+
 #### Codex GitHub 工作流常见错误和修复顺序
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -2819,22 +2552,6 @@ Top actions:
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 54
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 155 | 11 | 84 | seo-warning, short-description, cannibalization, high-priority | Codex 和 GitHub 怎么配合提交代码 | content/blog/codex-github-workflow.mdx |
-| 155 | 11 | 70 | seo-warning, short-description, cannibalization, high-priority | Codex 安装前置条件常见错误和修复顺序 | content/blog/codex-install-prerequisites-mistakes.mdx |
-| 155 | 11 | 58 | seo-warning, short-description, cannibalization, high-priority | Codex 作品集素材常见错误和修复顺序 | content/blog/codex-portfolio-page-assets-mistakes.mdx |
-
-Top actions:
 
 #### Codex 和 GitHub 怎么配合提交代码
 
@@ -2858,6 +2575,22 @@ Top actions:
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 49
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 58 | seo-warning, short-description, cannibalization, high-priority | Codex 作品集素材常见错误和修复顺序 | content/blog/codex-portfolio-page-assets-mistakes.mdx |
+| 155 | 11 | 66 | seo-warning, short-description, cannibalization, high-priority | Codex README 审核常见错误和修复顺序 | content/blog/codex-readme-review-mistakes.mdx |
+| 155 | 11 | 49 | seo-warning, short-description, cannibalization, high-priority | Codex 生成代码后的人工审核检查清单 | content/blog/codex-review-generated-code-checklist.mdx |
+
+Top actions:
+
 #### Codex 作品集素材常见错误和修复顺序
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -2868,22 +2601,6 @@ Top actions:
 - SEO warning: If the value is intentionally uncommon, document that decision during human review.
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 55
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 155 | 11 | 66 | seo-warning, short-description, cannibalization, high-priority | Codex README 审核常见错误和修复顺序 | content/blog/codex-readme-review-mistakes.mdx |
-| 155 | 11 | 49 | seo-warning, short-description, cannibalization, high-priority | Codex 生成代码后的人工审核检查清单 | content/blog/codex-review-generated-code-checklist.mdx |
-| 155 | 11 | 56 | seo-warning, short-description, cannibalization, high-priority | Codex 代码审查常见错误和修复顺序 | content/blog/codex-review-generated-code-mistakes.mdx |
-
-Top actions:
 
 #### Codex README 审核常见错误和修复顺序
 
@@ -2907,6 +2624,22 @@ Top actions:
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 50
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 56 | seo-warning, short-description, cannibalization, high-priority | Codex 代码审查常见错误和修复顺序 | content/blog/codex-review-generated-code-mistakes.mdx |
+| 155 | 11 | 64 | seo-warning, short-description, cannibalization, high-priority | 小网站交付检查常见错误和修复顺序 | content/blog/codex-small-website-delivery-check-mistakes.mdx |
+| 155 | 11 | 80 | seo-warning, short-description, cannibalization, high-priority | Tailwind 移动端检查常见错误和修复顺序 | content/blog/codex-tailwind-mobile-check-mistakes.mdx |
+
+Top actions:
+
 #### Codex 代码审查常见错误和修复顺序
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -2917,22 +2650,6 @@ Top actions:
 - SEO warning: If the value is intentionally uncommon, document that decision during human review.
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 56
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 155 | 11 | 64 | seo-warning, short-description, cannibalization, high-priority | 小网站交付检查常见错误和修复顺序 | content/blog/codex-small-website-delivery-check-mistakes.mdx |
-| 155 | 11 | 80 | seo-warning, short-description, cannibalization, high-priority | Tailwind 移动端检查常见错误和修复顺序 | content/blog/codex-tailwind-mobile-check-mistakes.mdx |
-| 155 | 11 | 73 | seo-warning, short-description, cannibalization, high-priority | Upwork 任务风险判断常见错误和修复顺序 | content/blog/codex-upwork-job-risk-check-mistakes.mdx |
-
-Top actions:
 
 #### 小网站交付检查常见错误和修复顺序
 
@@ -2956,6 +2673,22 @@ Top actions:
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 51
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 73 | seo-warning, short-description, cannibalization, high-priority | Upwork 任务风险判断常见错误和修复顺序 | content/blog/codex-upwork-job-risk-check-mistakes.mdx |
+| 155 | 11 | 72 | seo-warning, short-description, cannibalization, high-priority | Vercel 部署常见错误和修复顺序 | content/blog/codex-vercel-deployment-mistakes.mdx |
+| 155 | 11 | 79 | seo-warning, short-description, cannibalization, high-priority | Codex 和 Cursor 改网页常见错误和修复顺序 | content/blog/codex-vs-cursor-web-editing-mistakes.mdx |
+
+Top actions:
+
 #### Upwork 任务风险判断常见错误和修复顺序
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -2966,22 +2699,6 @@ Top actions:
 - SEO warning: If the value is intentionally uncommon, document that decision during human review.
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 57
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 155 | 11 | 72 | seo-warning, short-description, cannibalization, high-priority | Vercel 部署常见错误和修复顺序 | content/blog/codex-vercel-deployment-mistakes.mdx |
-| 155 | 11 | 79 | seo-warning, short-description, cannibalization, high-priority | Codex 和 Cursor 改网页常见错误和修复顺序 | content/blog/codex-vs-cursor-web-editing-mistakes.mdx |
-| 155 | 11 | 72 | seo-warning, short-description, cannibalization, high-priority | Windows 安装 Codex 常见错误和修复顺序 | content/blog/codex-windows-install-failed-mistakes.mdx |
-
-Top actions:
 
 #### Vercel 部署常见错误和修复顺序
 
@@ -3005,6 +2722,22 @@ Top actions:
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 52
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 72 | seo-warning, short-description, cannibalization, high-priority | Windows 安装 Codex 常见错误和修复顺序 | content/blog/codex-windows-install-failed-mistakes.mdx |
+| 155 | 11 | 66 | seo-warning, short-description, cannibalization, high-priority | 每天项目练习记录常见错误和解决步骤 | content/blog/daily-ai-freelance-practice-log-mistakes.mdx |
+| 155 | 11 | 70 | seo-warning, short-description, cannibalization, high-priority | 小网站交付常见错误和解决步骤 | content/blog/deliver-small-website-with-ai-no-code-mistakes.mdx |
+
+Top actions:
+
 #### Windows 安装 Codex 常见错误和修复顺序
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -3015,22 +2748,6 @@ Top actions:
 - SEO warning: If the value is intentionally uncommon, document that decision during human review.
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 58
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 155 | 11 | 66 | seo-warning, short-description, cannibalization, high-priority | 每天项目练习记录常见错误和解决步骤 | content/blog/daily-ai-freelance-practice-log-mistakes.mdx |
-| 155 | 11 | 70 | seo-warning, short-description, cannibalization, high-priority | 小网站交付常见错误和解决步骤 | content/blog/deliver-small-website-with-ai-no-code-mistakes.mdx |
-| 155 | 11 | 70 | seo-warning, short-description, cannibalization, high-priority | 环境变量 missing 常见错误和解决步骤 | content/blog/env-variable-missing-fix-mistakes.mdx |
-
-Top actions:
 
 #### 每天项目练习记录常见错误和解决步骤
 
@@ -3054,6 +2771,22 @@ Top actions:
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 53
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 70 | seo-warning, short-description, cannibalization, high-priority | 环境变量 missing 常见错误和解决步骤 | content/blog/env-variable-missing-fix-mistakes.mdx |
+| 155 | 11 | 84 | seo-warning, short-description, cannibalization, high-priority | ESLint error 常见错误和解决步骤 | content/blog/eslint-error-should-not-disable-mistakes.mdx |
+| 155 | 11 | 70 | seo-warning, short-description, cannibalization, high-priority | 第一个作品集案例常见错误和修正方法 | content/blog/first-portfolio-case-realistic-mistakes.mdx |
+
+Top actions:
+
 #### 环境变量 missing 常见错误和解决步骤
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -3064,22 +2797,6 @@ Top actions:
 - SEO warning: If the value is intentionally uncommon, document that decision during human review.
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 59
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 155 | 11 | 84 | seo-warning, short-description, cannibalization, high-priority | ESLint error 常见错误和解决步骤 | content/blog/eslint-error-should-not-disable-mistakes.mdx |
-| 155 | 11 | 70 | seo-warning, short-description, cannibalization, high-priority | 第一个作品集案例常见错误和修正方法 | content/blog/first-portfolio-case-realistic-mistakes.mdx |
-| 155 | 11 | 66 | seo-warning, short-description, cannibalization, high-priority | 自由职业范围确认常见错误和解决步骤 | content/blog/freelance-beginner-scope-confirmation-mistakes.mdx |
-
-Top actions:
 
 #### ESLint error 常见错误和解决步骤
 
@@ -3103,6 +2820,22 @@ Top actions:
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 54
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 66 | seo-warning, short-description, cannibalization, high-priority | 自由职业范围确认常见错误和解决步骤 | content/blog/freelance-beginner-scope-confirmation-mistakes.mdx |
+| 155 | 11 | 78 | seo-warning, short-description, cannibalization, high-priority | GitHub Actions build 失败使用前怎么判断是否适合 | content/blog/github-actions-build-log-debug-freelance-scope.mdx |
+| 155 | 11 | 89 | seo-warning, short-description, cannibalization, high-priority | GitHub Actions build 失败常见错误和解决步骤 | content/blog/github-actions-build-log-debug-mistakes.mdx |
+
+Top actions:
+
 #### 自由职业范围确认常见错误和解决步骤
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -3113,22 +2846,6 @@ Top actions:
 - SEO warning: If the value is intentionally uncommon, document that decision during human review.
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 60
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 155 | 11 | 78 | seo-warning, short-description, cannibalization, high-priority | GitHub Actions build 失败使用前怎么判断是否适合 | content/blog/github-actions-build-log-debug-freelance-scope.mdx |
-| 155 | 11 | 89 | seo-warning, short-description, cannibalization, high-priority | GitHub Actions build 失败常见错误和解决步骤 | content/blog/github-actions-build-log-debug-mistakes.mdx |
-| 155 | 11 | 60 | seo-warning, short-description, cannibalization, high-priority | 不会编程开始 AI 项目练习：常见错误和解决步骤 | content/blog/no-code-ai-freelance-start-mistakes.mdx |
-
-Top actions:
 
 #### GitHub Actions build 失败使用前怎么判断是否适合
 
@@ -3152,6 +2869,22 @@ Top actions:
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 55
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 60 | seo-warning, short-description, cannibalization, high-priority | 不会编程开始 AI 项目练习：常见错误和解决步骤 | content/blog/no-code-ai-freelance-start-mistakes.mdx |
+| 155 | 11 | 79 | seo-warning, short-description, cannibalization, high-priority | npm command not found 使用前怎么判断是否适合 | content/blog/npm-command-not-found-fix-freelance-scope.mdx |
+| 155 | 11 | 84 | seo-warning, short-description, cannibalization, high-priority | npm command not found 常见错误和修正方法 | content/blog/npm-command-not-found-fix-mistakes.mdx |
+
+Top actions:
+
 #### 不会编程开始 AI 项目练习：常见错误和解决步骤
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -3162,22 +2895,6 @@ Top actions:
 - SEO warning: If the value is intentionally uncommon, document that decision during human review.
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 61
-
-- Ready items: 3/3
-- Action items: 32
-- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 155 | 11 | 79 | seo-warning, short-description, cannibalization, high-priority | npm command not found 使用前怎么判断是否适合 | content/blog/npm-command-not-found-fix-freelance-scope.mdx |
-| 155 | 11 | 84 | seo-warning, short-description, cannibalization, high-priority | npm command not found 常见错误和修正方法 | content/blog/npm-command-not-found-fix-mistakes.mdx |
-| 145 | 10 | 131 | seo-warning, cannibalization, high-priority | Codex 修 CSS 间距和响应式问题怎么做：常见错误和解决步骤 | content/blog/codex-css-spacing-responsive-mistakes.mdx |
-
-Top actions:
 
 #### npm command not found 使用前怎么判断是否适合
 
@@ -3201,6 +2918,82 @@ Top actions:
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 56
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: seo-warning, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 155 | 11 | 84 | seo-warning, short-description, cannibalization, high-priority | package lock 冲突常见错误和修正方法 | content/blog/package-lock-conflict-fix-mistakes.mdx |
+| 155 | 11 | 76 | seo-warning, short-description, cannibalization, high-priority | port already in use 常见错误和修正方法 | content/blog/port-already-in-use-fix-mistakes.mdx |
+| 155 | 11 | 62 | seo-warning, short-description, cannibalization, high-priority | 没有客户时做练习项目的常见错误 | content/blog/practice-projects-before-clients-mistakes.mdx |
+
+Top actions:
+
+#### package lock 冲突常见错误和修正方法
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### port already in use 常见错误和修正方法
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### 没有客户时做练习项目的常见错误
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 57
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 145 | 10 | 90 | seo-warning, cannibalization, high-priority | Codex npm install 报错怎么办：新手诊断流程 | content/blog/codex-codex-npm-install-4-33.mdx |
+| 145 | 10 | 131 | seo-warning, cannibalization, high-priority | Codex 修 CSS 间距和响应式问题怎么做：常见错误和解决步骤 | content/blog/codex-css-spacing-responsive-mistakes.mdx |
+| 145 | 10 | 92 | seo-warning, cannibalization, high-priority | dependency conflict 常见错误和解决步骤 | content/blog/dependency-conflict-fix-mistakes.mdx |
+
+Top actions:
+
+#### Codex npm install 报错怎么办：新手诊断流程
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Cannibalization check: review same primary keyword conflict "codex npm install 报错怎么办" before expanding this page or approving related drafts.
+- Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.
+
 #### Codex 修 CSS 间距和响应式问题怎么做：常见错误和解决步骤
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -3211,22 +3004,6 @@ Top actions:
 - SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Cannibalization check: review similar slug stem conflict "codex-css-spacing-responsive" before expanding this page or approving related drafts.
 - Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.
-
-### public search refresh wave 62
-
-- Ready items: 3/3
-- Action items: 34
-- Refresh reasons: seo-warning, cannibalization, high-priority, short-description, freshness-high
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 145 | 10 | 92 | seo-warning, cannibalization, high-priority | dependency conflict 常见错误和解决步骤 | content/blog/dependency-conflict-fix-mistakes.mdx |
-| 145 | 12 | 58 | short-description, cannibalization, freshness-high, high-priority | AI 辅助交付和完全自动交付有什么区别 | content/blog/ai-assisted-vs-automated-delivery.mdx |
-| 145 | 12 | 55 | short-description, cannibalization, freshness-high, high-priority | 新手 30 天 AI 工具实践计划怎么执行 | content/blog/ai-freelance-30-day-execution.mdx |
-
-Top actions:
 
 #### dependency conflict 常见错误和解决步骤
 
@@ -3239,323 +3016,7 @@ Top actions:
 - Cannibalization check: review similar slug stem conflict "dependency-conflict-fix" before expanding this page or approving related drafts.
 - Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.
 
-#### AI 辅助交付和完全自动交付有什么区别
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "assisted-automated-delivery" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### 新手 30 天 AI 工具实践计划怎么执行
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-day-execution" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 63
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 145 | 12 | 61 | short-description, cannibalization, freshness-high, high-priority | AI 自动化项目有哪些合规风险 | content/blog/ai-freelance-automation-compliance-risk.mdx |
-| 145 | 12 | 58 | short-description, cannibalization, freshness-high, high-priority | AI 工具实践常见误区有哪些 | content/blog/ai-freelance-common-misconceptions.mdx |
-| 145 | 12 | 55 | short-description, cannibalization, freshness-high, high-priority | AI 项目失败复盘检查清单 | content/blog/ai-freelance-failure-review-checklist.mdx |
-
-Top actions:
-
-#### AI 自动化项目有哪些合规风险
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-automation-compliance-risk" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 工具实践常见误区有哪些
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-common-misconceptions" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 项目失败复盘检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-failure-review" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 64
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 145 | 12 | 72 | short-description, cannibalization, freshness-high, high-priority | AI 项目失败复盘怎么做 | content/blog/ai-freelance-failure-review.mdx |
-| 145 | 12 | 60 | short-description, cannibalization, freshness-high, high-priority | AI 工具新手 7 天准备检查清单 | content/blog/ai-freelance-first-7-days-checklist.mdx |
-| 145 | 12 | 69 | short-description, cannibalization, freshness-high, high-priority | AI 工具新手 7 天准备什么 | content/blog/ai-freelance-first-7-days.mdx |
-
-Top actions:
-
-#### AI 项目失败复盘怎么做
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-failure-review" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 工具新手 7 天准备检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-first-days" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 工具新手 7 天准备什么
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-first-days" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 65
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 145 | 12 | 60 | short-description, cannibalization, freshness-high, high-priority | AI 服务页文案检查清单 | content/blog/ai-freelance-service-page-copy-checklist.mdx |
-| 145 | 12 | 69 | short-description, cannibalization, freshness-high, high-priority | AI 服务页文案怎么写真诚 | content/blog/ai-freelance-service-page-copy.mdx |
-| 145 | 12 | 63 | short-description, cannibalization, freshness-high, high-priority | AI 工具新手技能路线图检查清单 | content/blog/ai-freelance-skill-roadmap-checklist.mdx |
-
-Top actions:
-
-#### AI 服务页文案检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-service-page-copy" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 服务页文案怎么写真诚
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-service-page-copy" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 工具新手技能路线图检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-skill-roadmap" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 66
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 145 | 12 | 70 | short-description, cannibalization, freshness-high, high-priority | AI 工具新手技能路线图怎么排 | content/blog/ai-freelance-skill-roadmap.mdx |
-| 145 | 12 | 59 | short-description, cannibalization, freshness-high, high-priority | API Key 无效或缺失排查清单 | content/blog/api-key-invalid-or-missing-checklist.mdx |
-| 145 | 12 | 62 | short-description, cannibalization, freshness-high, high-priority | API Key 无效或缺失怎么处理 | content/blog/api-key-invalid-or-missing.mdx |
-
-Top actions:
-
-#### AI 工具新手技能路线图怎么排
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "freelance-skill-roadmap" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### API Key 无效或缺失排查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "api-key-invalid-missing" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### API Key 无效或缺失怎么处理
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "api-key-invalid-missing" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 67
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 145 | 12 | 67 | short-description, cannibalization, freshness-high, high-priority | Claude Code Bug Prompt 检查清单 | content/blog/claude-code-bug-prompt-checklist.mdx |
-| 145 | 12 | 62 | short-description, cannibalization, freshness-high, high-priority | Claude Code 交付说明检查清单 | content/blog/claude-code-delivery-note-checklist.mdx |
-| 145 | 12 | 65 | short-description, cannibalization, freshness-high, high-priority | Claude Code 错误排查检查清单 | content/blog/claude-code-error-debug-checklist.mdx |
-
-Top actions:
-
-#### Claude Code Bug Prompt 检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "claude-code-bug-prompt" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code 交付说明检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "claude-code-delivery-note" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code 错误排查检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "claude-code-error-debug" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 68
-
-- Ready items: 3/3
-- Action items: 36
-- Refresh reasons: short-description, cannibalization, freshness-high, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 145 | 12 | 63 | short-description, cannibalization, freshness-high, high-priority | Claude Code 低风险项目检查清单 | content/blog/claude-code-low-risk-freelance-jobs-checklist.mdx |
-| 145 | 12 | 66 | short-description, cannibalization, freshness-high, high-priority | Claude Code Next.js 页面检查清单 | content/blog/claude-code-nextjs-page-check-checklist.mdx |
-| 145 | 12 | 89 | short-description, cannibalization, freshness-high, high-priority | Codex 生成代码后怎么审核 | content/blog/codex-generated-code-review-guide.mdx |
-
-Top actions:
-
-#### Claude Code 低风险项目检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "claude-code-low-risk-freelance" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Claude Code Next.js 页面检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review similar slug stem conflict "claude-code-nextjs-page-check" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Codex 生成代码后怎么审核
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Cannibalization check: review same primary keyword conflict "codex 生成代码后怎么审核" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 69
+### public search refresh wave 58
 
 - Ready items: 3/3
 - Action items: 30
@@ -3565,33 +3026,11 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 66 | seo-warning, short-description, high-priority | 广告收入要等到什么时候再接 | content/blog/ads-income-when-to-start.mdx |
-| 140 | 10 | 69 | seo-warning, short-description, high-priority | 联盟链接收入和服务收入有什么区别：新手检查清单 | content/blog/affiliate-vs-service-income-checklist.mdx |
 | 140 | 10 | 53 | seo-warning, short-description, high-priority | Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认 | content/blog/agent-human-review-loop-guide.mdx |
+| 140 | 10 | 54 | seo-warning, short-description, high-priority | Agent 记忆怎么设计：短期记忆、长期记忆和用户偏好 | content/blog/agent-memory-design-guide.mdx |
+| 140 | 10 | 57 | seo-warning, short-description, high-priority | Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则 | content/blog/agent-memory-postgres-schema-guide.mdx |
 
 Top actions:
-
-#### 广告收入要等到什么时候再接
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: 广告收入什么时候开始.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### 联盟链接收入和服务收入有什么区别：新手检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: 联盟链接收入和服务收入区别.
-- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
 #### Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认
 
@@ -3603,22 +3042,6 @@ Top actions:
 - SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 70
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 54 | seo-warning, short-description, high-priority | Agent 记忆怎么设计：短期记忆、长期记忆和用户偏好 | content/blog/agent-memory-design-guide.mdx |
-| 140 | 10 | 57 | seo-warning, short-description, high-priority | Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则 | content/blog/agent-memory-postgres-schema-guide.mdx |
-| 140 | 10 | 58 | seo-warning, short-description, high-priority | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
-
-Top actions:
 
 #### Agent 记忆怎么设计：短期记忆、长期记忆和用户偏好
 
@@ -3642,6 +3065,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 59
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 58 | seo-warning, short-description, high-priority | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+| 140 | 10 | 59 | seo-warning, short-description, high-priority | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| 140 | 10 | 54 | seo-warning, short-description, high-priority | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+
+Top actions:
+
 #### Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -3652,22 +3091,6 @@ Top actions:
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 71
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 59 | seo-warning, short-description, high-priority | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
-| 140 | 10 | 54 | seo-warning, short-description, high-priority | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
-| 140 | 10 | 53 | seo-warning, short-description, high-priority | AI 做 Logo 怎么开始：新手先别急着商用 | content/blog/ai-logo-design-beginner-guide.mdx |
-
-Top actions:
 
 #### AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急
 
@@ -3691,7 +3114,45 @@ Top actions:
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-#### AI 做 Logo 怎么开始：新手先别急着商用
+### public search refresh wave 60
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 57 | seo-warning, short-description, high-priority | AI 编程工具使用前风险检查清单 | content/blog/ai-coding-tools-risk-check-checklist.mdx |
+| 140 | 10 | 71 | seo-warning, short-description, high-priority | AI 编程工具使用前要检查哪些风险 | content/blog/ai-coding-tools-risk-check.mdx |
+| 140 | 10 | 54 | seo-warning, short-description, high-priority | AI 生成内容人工审核表怎么设计 | content/blog/ai-content-human-review-template.mdx |
+
+Top actions:
+
+#### AI 编程工具使用前风险检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: AI 编程工具风险检查清单.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 编程工具使用前要检查哪些风险
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: AI 编程工具风险检查.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 生成内容人工审核表怎么设计
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
@@ -3702,7 +3163,7 @@ Top actions:
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 72
+### public search refresh wave 61
 
 - Ready items: 3/3
 - Action items: 30
@@ -3712,11 +3173,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 53 | seo-warning, short-description, high-priority | AI 做 Logo 怎么开始：新手先别急着商用 | content/blog/ai-logo-design-beginner-guide.mdx |
 | 140 | 10 | 52 | seo-warning, short-description, high-priority | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 140 | 10 | 52 | seo-warning, short-description, high-priority | AI 提示词怎么写才好用：全行业都能套的 5 段式框架 | content/blog/ai-prompt-framework-business-guide.mdx |
-| 140 | 10 | 51 | seo-warning, short-description, high-priority | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
 
 Top actions:
+
+#### AI 做 Logo 怎么开始：新手先别急着商用
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
+- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
+- SEO warning: Confirm description length remains suitable for search snippets after editing.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
 #### 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
 
@@ -3740,6 +3212,22 @@ Top actions:
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 62
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 51 | seo-warning, short-description, high-priority | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
+| 140 | 10 | 52 | seo-warning, short-description, high-priority | AI 写简历和求职信怎么用：别让内容变得不真实 | content/blog/ai-resume-cover-letter-guide.mdx |
+| 140 | 10 | 54 | seo-warning, short-description, high-priority | AI 工具配置服务项目检查清单 | content/blog/ai-tool-setup-service-checklist-checklist.mdx |
+
+Top actions:
+
 #### 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -3751,22 +3239,6 @@ Top actions:
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 73
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 52 | seo-warning, short-description, high-priority | AI 写简历和求职信怎么用：别让内容变得不真实 | content/blog/ai-resume-cover-letter-guide.mdx |
-| 140 | 10 | 50 | seo-warning, short-description, high-priority | AI 做视频怎么开始：脚本、配音、画面和发布检查 | content/blog/ai-video-tools-beginner-guide.mdx |
-| 140 | 10 | 54 | seo-warning, short-description, high-priority | AI 做网站怎么开始：新手从页面需求到上线检查 | content/blog/ai-website-builder-beginner-guide.mdx |
-
-Top actions:
-
 #### AI 写简历和求职信怎么用：别让内容变得不真实
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -3777,6 +3249,33 @@ Top actions:
 - SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 工具配置服务项目检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.
+- SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
+- SEO warning: Confirm description length remains suitable for search snippets after editing.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 63
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 50 | seo-warning, short-description, high-priority | AI 做视频怎么开始：脚本、配音、画面和发布检查 | content/blog/ai-video-tools-beginner-guide.mdx |
+| 140 | 10 | 54 | seo-warning, short-description, high-priority | AI 做网站怎么开始：新手从页面需求到上线检查 | content/blog/ai-website-builder-beginner-guide.mdx |
+| 140 | 10 | 66 | seo-warning, short-description, high-priority | AnythingLLM 怎么搭本地知识库：从文档聊天到 Agent 原型 | content/blog/anythingllm-local-rag-beginner-guide.mdx |
+
+Top actions:
 
 #### AI 做视频怎么开始：脚本、配音、画面和发布检查
 
@@ -3800,7 +3299,18 @@ Top actions:
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 74
+#### AnythingLLM 怎么搭本地知识库：从文档聊天到 Agent 原型
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: AnythingLLM 本地知识库.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 64
 
 - Ready items: 3/3
 - Action items: 30
@@ -3810,19 +3320,19 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 66 | seo-warning, short-description, high-priority | AnythingLLM 怎么搭本地知识库：从文档聊天到 Agent 原型 | content/blog/anythingllm-local-rag-beginner-guide.mdx |
+| 140 | 10 | 62 | seo-warning, short-description, high-priority | API Key 无效或缺失：使用前怎么判断是否适合 | content/blog/api-key-invalid-or-missing-freelance-scope.mdx |
 | 140 | 10 | 81 | seo-warning, short-description, high-priority | AutoGen / Microsoft Agent Framework 怎么入门：多 Agent 先看迁移和边界 | content/blog/autogen-agent-framework-beginner-guide.mdx |
-| 140 | 10 | 56 | seo-warning, short-description, high-priority | 银行卡绑定收款平台要注意什么：新手检查清单 | content/blog/bank-card-payment-platform-risk-checklist.mdx |
+| 140 | 10 | 57 | seo-warning, short-description, high-priority | ChatGPT、Codex 和 Claude 工作流检查清单 | content/blog/chatgpt-codex-claude-workflow-checklist.mdx |
 
 Top actions:
 
-#### AnythingLLM 怎么搭本地知识库：从文档聊天到 Agent 原型
+#### API Key 无效或缺失：使用前怎么判断是否适合
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
 - Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
 - Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: AnythingLLM 本地知识库.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: API Key 无效或缺失项目范围.
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
@@ -3838,18 +3348,18 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-#### 银行卡绑定收款平台要注意什么：新手检查清单
+#### ChatGPT、Codex 和 Claude 工作流检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
 - Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
 - Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Check whether the title can naturally include the exact primary keyword: 银行卡绑定收款平台注意事项.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: ChatGPT Codex Claude 工作流检查清单.
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 75
+### public search refresh wave 65
 
 - Ready items: 3/3
 - Action items: 30
@@ -3859,11 +3369,33 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 82 | seo-warning, short-description, high-priority | ChatGPT、Codex 和 Claude 怎么分工做 AI 工具实践流程 | content/blog/chatgpt-codex-claude-workflow.mdx |
+| 140 | 10 | 60 | seo-warning, short-description, high-priority | AI 生成 Proposal 发布前检查清单 | content/blog/chatgpt-vs-claude-proposal-checklist.mdx |
 | 140 | 10 | 77 | seo-warning, short-description, high-priority | Claude API 怎么接入：Messages API、费用和上下文边界 | content/blog/claude-api-beginner-guide.mdx |
-| 140 | 10 | 78 | seo-warning, short-description, high-priority | Claude Code Proposal 审阅哪些适合写进项目范围 | content/blog/claude-code-proposal-review-freelance-scope.mdx |
-| 140 | 10 | 47 | seo-warning, short-description, high-priority | 客户验收清单新手检查清单 | content/blog/client-acceptance-checklist-checklist.mdx |
 
 Top actions:
+
+#### ChatGPT、Codex 和 Claude 怎么分工做 AI 工具实践流程
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: ChatGPT Codex Claude 工作流.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 生成 Proposal 发布前检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: AI 生成 Proposal 检查清单.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
 #### Claude API 怎么接入：Messages API、费用和上下文边界
 
@@ -3872,6 +3404,131 @@ Top actions:
 - Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
 - Review the meta description for a clearer user problem, outcome, and concrete workflow term.
 - SEO warning: Check whether the title can naturally include the exact primary keyword: Claude API 接入.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 66
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 61 | seo-warning, short-description, high-priority | Claude Code 项目前怎么判断范围 | content/blog/claude-code-beginner-mistakes-freelance-scope.mdx |
+| 140 | 10 | 73 | seo-warning, short-description, high-priority | Claude Code Bug Prompt 项目前怎么判断范围 | content/blog/claude-code-bug-prompt-freelance-scope.mdx |
+| 140 | 10 | 64 | seo-warning, short-description, high-priority | Claude Code 项目前客户问题不清楚时怎么判断范围 | content/blog/claude-code-client-questions-freelance-scope.mdx |
+
+Top actions:
+
+#### Claude Code 项目前怎么判断范围
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 项目范围.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code Bug Prompt 项目前怎么判断范围
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code bug prompt 项目范围.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code 项目前客户问题不清楚时怎么判断范围
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 客户问题项目范围.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 67
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 68 | seo-warning, short-description, high-priority | Claude Code 常用命令哪些适合写进项目范围 | content/blog/claude-code-common-commands-freelance-scope.mdx |
+| 140 | 10 | 70 | seo-warning, short-description, high-priority | Claude Code 交付说明哪些内容适合写进项目范围 | content/blog/claude-code-delivery-note-freelance-scope.mdx |
+| 140 | 10 | 69 | seo-warning, short-description, high-priority | Claude Code 错误排查哪些适合写进项目范围 | content/blog/claude-code-error-debug-freelance-scope.mdx |
+
+Top actions:
+
+#### Claude Code 常用命令哪些适合写进项目范围
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 常用命令项目范围.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code 交付说明哪些内容适合写进项目范围
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 交付说明项目范围.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code 错误排查哪些适合写进项目范围
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 错误排查项目范围.
+- SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 68
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 73 | seo-warning, short-description, high-priority | Claude Code 安装准备哪些适合写进项目范围 | content/blog/claude-code-install-prerequisites-freelance-scope.mdx |
+| 140 | 10 | 78 | seo-warning, short-description, high-priority | Claude Code Proposal 审阅哪些适合写进项目范围 | content/blog/claude-code-proposal-review-freelance-scope.mdx |
+| 140 | 10 | 47 | seo-warning, short-description, high-priority | 客户验收清单新手检查清单 | content/blog/client-acceptance-checklist-checklist.mdx |
+
+Top actions:
+
+#### Claude Code 安装准备哪些适合写进项目范围
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 安装准备项目范围.
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
@@ -3898,7 +3555,7 @@ Top actions:
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 76
+### public search refresh wave 69
 
 - Ready items: 3/3
 - Action items: 30
@@ -3947,7 +3604,7 @@ Top actions:
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 77
+### public search refresh wave 70
 
 - Ready items: 3/3
 - Action items: 30
@@ -3996,7 +3653,7 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 78
+### public search refresh wave 71
 
 - Ready items: 3/3
 - Action items: 30
@@ -4007,8 +3664,8 @@ Top actions:
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
 | 140 | 10 | 64 | seo-warning, short-description, high-priority | Codex 需求不清楚的任务使用前怎么判断是否适合 | content/blog/codex-client-requirement-questions-freelance-scope.mdx |
-| 140 | 10 | 77 | seo-warning, short-description, high-priority | Codex 修改现有网页 UI 使用前怎么判断是否适合 | content/blog/codex-edit-existing-ui-freelance-scope.mdx |
-| 140 | 10 | 54 | seo-warning, short-description, high-priority | Codex 是什么，新手第一天应该怎么用：使用前怎么判断是否适合 | content/blog/codex-first-day-guide-freelance-scope.mdx |
+| 140 | 10 | 74 | seo-warning, short-description, high-priority | Codex 和 Claude Code 怎么选：新手判断模板 | content/blog/codex-codex-claude-code-4-40.mdx |
+| 140 | 10 | 68 | seo-warning, short-description, high-priority | Codex 修 CSS bug 的流程：新手项目练习边界 | content/blog/codex-codex-css-bug-4-35.mdx |
 
 Top actions:
 
@@ -4023,6 +3680,66 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+#### Codex 和 Claude Code 怎么选：新手判断模板
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Codex 修 CSS bug 的流程：新手项目练习边界
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 72
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 80 | seo-warning, short-description, high-priority | Codex 和 GitHub 怎么配合：新手工作流 | content/blog/codex-codex-github-4-36.mdx |
+| 140 | 10 | 75 | seo-warning, short-description, high-priority | Codex 接 Upwork 小单怎么判断 | content/blog/codex-codex-upwork-4-39.mdx |
+| 140 | 10 | 77 | seo-warning, short-description, high-priority | Codex 修改现有网页 UI 使用前怎么判断是否适合 | content/blog/codex-edit-existing-ui-freelance-scope.mdx |
+
+Top actions:
+
+#### Codex 和 GitHub 怎么配合：新手工作流
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Codex 接 Upwork 小单怎么判断
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- SEO warning: Confirm the contentType value matches the actual article format and category.
+- SEO warning: If the value is intentionally uncommon, document that decision during human review.
+- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
 #### Codex 修改现有网页 UI 使用前怎么判断是否适合
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4034,6 +3751,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 73
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 54 | seo-warning, short-description, high-priority | Codex 是什么，新手第一天应该怎么用：使用前怎么判断是否适合 | content/blog/codex-first-day-guide-freelance-scope.mdx |
+| 140 | 10 | 82 | seo-warning, short-description, high-priority | Codex GitHub 提交任务使用前怎么判断是否适合 | content/blog/codex-github-workflow-freelance-scope.mdx |
+| 140 | 10 | 54 | seo-warning, short-description, high-priority | 作品集素材整理项目能不能接 | content/blog/codex-portfolio-page-assets-freelance-scope.mdx |
+
+Top actions:
+
 #### Codex 是什么，新手第一天应该怎么用：使用前怎么判断是否适合
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4044,22 +3777,6 @@ Top actions:
 - SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 79
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 82 | seo-warning, short-description, high-priority | Codex GitHub 提交任务使用前怎么判断是否适合 | content/blog/codex-github-workflow-freelance-scope.mdx |
-| 140 | 10 | 54 | seo-warning, short-description, high-priority | 作品集素材整理项目能不能接 | content/blog/codex-portfolio-page-assets-freelance-scope.mdx |
-| 140 | 10 | 59 | seo-warning, short-description, high-priority | Codex 项目启动检查表：新手清单 | content/blog/codex-project-start-checklist-checklist.mdx |
-
-Top actions:
 
 #### Codex GitHub 提交任务使用前怎么判断是否适合
 
@@ -4083,6 +3800,22 @@ Top actions:
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 74
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 59 | seo-warning, short-description, high-priority | Codex 项目启动检查表：新手清单 | content/blog/codex-project-start-checklist-checklist.mdx |
+| 140 | 10 | 74 | seo-warning, short-description, high-priority | CrewAI Agent 怎么部署：从 Crew、Task 到生产监控边界 | content/blog/crewai-agent-deployment-beginner-guide.mdx |
+| 140 | 10 | 68 | seo-warning, short-description, high-priority | Dify、Coze、Flowise 怎么选：做 Agent 和知识库前先看边界 | content/blog/dify-coze-flowise-agent-builder-comparison.mdx |
+
+Top actions:
+
 #### Codex 项目启动检查表：新手清单
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4093,22 +3826,6 @@ Top actions:
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 80
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 74 | seo-warning, short-description, high-priority | CrewAI Agent 怎么部署：从 Crew、Task 到生产监控边界 | content/blog/crewai-agent-deployment-beginner-guide.mdx |
-| 140 | 10 | 68 | seo-warning, short-description, high-priority | Dify、Coze、Flowise 怎么选：做 Agent 和知识库前先看边界 | content/blog/dify-coze-flowise-agent-builder-comparison.mdx |
-| 140 | 10 | 70 | seo-warning, short-description, high-priority | Dify Docker Compose 自部署怎么做：新手先看这份边界清单 | content/blog/dify-docker-compose-self-host-guide.mdx |
-
-Top actions:
 
 #### CrewAI Agent 怎么部署：从 Crew、Task 到生产监控边界
 
@@ -4132,6 +3849,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 75
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 70 | seo-warning, short-description, high-priority | Dify Docker Compose 自部署怎么做：新手先看这份边界清单 | content/blog/dify-docker-compose-self-host-guide.mdx |
+| 140 | 10 | 78 | seo-warning, short-description, high-priority | Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试 | content/blog/dify-ollama-local-model-guide.mdx |
+| 140 | 10 | 73 | seo-warning, short-description, high-priority | Dify 怎么接 OpenAI API：模型供应商、LLM 节点和费用边界 | content/blog/dify-openai-api-provider-guide.mdx |
+
+Top actions:
+
 #### Dify Docker Compose 自部署怎么做：新手先看这份边界清单
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4142,22 +3875,6 @@ Top actions:
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 81
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 78 | seo-warning, short-description, high-priority | Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试 | content/blog/dify-ollama-local-model-guide.mdx |
-| 140 | 10 | 73 | seo-warning, short-description, high-priority | Dify 怎么接 OpenAI API：模型供应商、LLM 节点和费用边界 | content/blog/dify-openai-api-provider-guide.mdx |
-| 140 | 10 | 55 | seo-warning, short-description, high-priority | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
-
-Top actions:
 
 #### Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试
 
@@ -4181,6 +3898,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 76
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 55 | seo-warning, short-description, high-priority | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| 140 | 10 | 64 | seo-warning, short-description, high-priority | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
+| 140 | 10 | 57 | seo-warning, short-description, high-priority | 企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管 | content/blog/enterprise-im-ai-agent-integration-guide.mdx |
+
+Top actions:
+
 #### Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4191,22 +3924,6 @@ Top actions:
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 82
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 64 | seo-warning, short-description, high-priority | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
-| 140 | 10 | 57 | seo-warning, short-description, high-priority | 企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管 | content/blog/enterprise-im-ai-agent-integration-guide.mdx |
-| 140 | 10 | 70 | seo-warning, short-description, high-priority | FastGPT 知识库怎么部署：新手先分清自部署和检索参数 | content/blog/fastgpt-knowledge-base-deployment-guide.mdx |
-
-Top actions:
 
 #### Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核
 
@@ -4230,6 +3947,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 77
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 70 | seo-warning, short-description, high-priority | FastGPT 知识库怎么部署：新手先分清自部署和检索参数 | content/blog/fastgpt-knowledge-base-deployment-guide.mdx |
+| 140 | 10 | 73 | seo-warning, short-description, high-priority | Flowise 接 Ollama 做本地 RAG：新手先跑通最小链路 | content/blog/flowise-ollama-local-rag-checklist.mdx |
+| 140 | 10 | 52 | seo-warning, short-description, high-priority | 自由职业每周复盘检查清单 | content/blog/freelance-weekly-review-template-checklist.mdx |
+
+Top actions:
+
 #### FastGPT 知识库怎么部署：新手先分清自部署和检索参数
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4240,22 +3973,6 @@ Top actions:
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 83
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 73 | seo-warning, short-description, high-priority | Flowise 接 Ollama 做本地 RAG：新手先跑通最小链路 | content/blog/flowise-ollama-local-rag-checklist.mdx |
-| 140 | 10 | 52 | seo-warning, short-description, high-priority | 自由职业每周复盘检查清单 | content/blog/freelance-weekly-review-template-checklist.mdx |
-| 140 | 10 | 74 | seo-warning, short-description, high-priority | Gemini API 怎么接 Next.js：从 API Key 到服务端 Route Handler | content/blog/gemini-api-nextjs-guide.mdx |
-
-Top actions:
 
 #### Flowise 接 Ollama 做本地 RAG：新手先跑通最小链路
 
@@ -4279,6 +3996,22 @@ Top actions:
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 78
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 74 | seo-warning, short-description, high-priority | Gemini API 怎么接 Next.js：从 API Key 到服务端 Route Handler | content/blog/gemini-api-nextjs-guide.mdx |
+| 140 | 10 | 83 | seo-warning, short-description, high-priority | git authentication failed 使用前怎么判断是否适合 | content/blog/git-authentication-failed-fix-freelance-scope.mdx |
+| 140 | 10 | 74 | seo-warning, short-description, high-priority | Groq API 怎么接入：高速推理适合什么 AI 应用 | content/blog/groq-api-fast-llm-guide.mdx |
+
+Top actions:
+
 #### Gemini API 怎么接 Next.js：从 API Key 到服务端 Route Handler
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4289,22 +4022,6 @@ Top actions:
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 84
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 83 | seo-warning, short-description, high-priority | git authentication failed 使用前怎么判断是否适合 | content/blog/git-authentication-failed-fix-freelance-scope.mdx |
-| 140 | 10 | 74 | seo-warning, short-description, high-priority | Groq API 怎么接入：高速推理适合什么 AI 应用 | content/blog/groq-api-fast-llm-guide.mdx |
-| 140 | 10 | 59 | seo-warning, short-description, high-priority | 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 | content/blog/healthcare-admin-ai-prompts-guide.mdx |
-
-Top actions:
 
 #### git authentication failed 使用前怎么判断是否适合
 
@@ -4328,6 +4045,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 79
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 59 | seo-warning, short-description, high-priority | 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 | content/blog/healthcare-admin-ai-prompts-guide.mdx |
+| 140 | 10 | 82 | seo-warning, short-description, high-priority | Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住 | content/blog/helicone-llm-observability-guide.mdx |
+| 140 | 10 | 58 | seo-warning, short-description, high-priority | 人力招聘 AI 提示词模板：JD、简历初筛、面试题和培训材料 | content/blog/hr-recruiting-ai-prompts-guide.mdx |
+
+Top actions:
+
 #### 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4338,22 +4071,6 @@ Top actions:
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 85
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 82 | seo-warning, short-description, high-priority | Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住 | content/blog/helicone-llm-observability-guide.mdx |
-| 140 | 10 | 58 | seo-warning, short-description, high-priority | 人力招聘 AI 提示词模板：JD、简历初筛、面试题和培训材料 | content/blog/hr-recruiting-ai-prompts-guide.mdx |
-| 140 | 10 | 87 | seo-warning, short-description, high-priority | Hugging Face Spaces 怎么部署 AI Demo：Gradio、Docker 和公开边界 | content/blog/huggingface-spaces-ai-demo-guide.mdx |
-
-Top actions:
 
 #### Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住
 
@@ -4377,6 +4094,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 80
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 87 | seo-warning, short-description, high-priority | Hugging Face Spaces 怎么部署 AI Demo：Gradio、Docker 和公开边界 | content/blog/huggingface-spaces-ai-demo-guide.mdx |
+| 140 | 10 | 52 | seo-warning, short-description, high-priority | AI 知识库权限怎么设计：别让检索结果越权 | content/blog/knowledge-base-permission-design-guide.mdx |
+| 140 | 10 | 75 | seo-warning, short-description, high-priority | LangChain 做 RAG 怎么开始：新手先跑通检索链路 | content/blog/langchain-rag-beginner-guide.mdx |
+
+Top actions:
+
 #### Hugging Face Spaces 怎么部署 AI Demo：Gradio、Docker 和公开边界
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4387,22 +4120,6 @@ Top actions:
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 86
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 52 | seo-warning, short-description, high-priority | AI 知识库权限怎么设计：别让检索结果越权 | content/blog/knowledge-base-permission-design-guide.mdx |
-| 140 | 10 | 75 | seo-warning, short-description, high-priority | LangChain 做 RAG 怎么开始：新手先跑通检索链路 | content/blog/langchain-rag-beginner-guide.mdx |
-| 140 | 10 | 63 | seo-warning, short-description, high-priority | LangGraph Agent 怎么入门：把状态、工具和人工节点先想清楚 | content/blog/langgraph-agent-beginner-guide.mdx |
-
-Top actions:
 
 #### AI 知识库权限怎么设计：别让检索结果越权
 
@@ -4426,6 +4143,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 81
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 63 | seo-warning, short-description, high-priority | LangGraph Agent 怎么入门：把状态、工具和人工节点先想清楚 | content/blog/langgraph-agent-beginner-guide.mdx |
+| 140 | 10 | 83 | seo-warning, short-description, high-priority | LiteLLM Proxy 怎么部署：统一多个模型 API 前先管好预算和密钥 | content/blog/litellm-proxy-beginner-guide.mdx |
+| 140 | 10 | 67 | seo-warning, short-description, high-priority | LlamaIndex 做 RAG 怎么开始：Document、Node 和检索 | content/blog/llamaindex-rag-beginner-guide.mdx |
+
+Top actions:
+
 #### LangGraph Agent 怎么入门：把状态、工具和人工节点先想清楚
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4436,22 +4169,6 @@ Top actions:
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 87
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 83 | seo-warning, short-description, high-priority | LiteLLM Proxy 怎么部署：统一多个模型 API 前先管好预算和密钥 | content/blog/litellm-proxy-beginner-guide.mdx |
-| 140 | 10 | 67 | seo-warning, short-description, high-priority | LlamaIndex 做 RAG 怎么开始：Document、Node 和检索 | content/blog/llamaindex-rag-beginner-guide.mdx |
-| 140 | 10 | 56 | seo-warning, short-description, high-priority | 大模型 API 限流和重试怎么做：429、队列、退避和降级方案 | content/blog/llm-api-rate-limit-retry-guide.mdx |
-
-Top actions:
 
 #### LiteLLM Proxy 怎么部署：统一多个模型 API 前先管好预算和密钥
 
@@ -4475,6 +4192,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 82
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 56 | seo-warning, short-description, high-priority | 大模型 API 限流和重试怎么做：429、队列、退避和降级方案 | content/blog/llm-api-rate-limit-retry-guide.mdx |
+| 140 | 10 | 52 | seo-warning, short-description, high-priority | 本地部署大模型怎么开始：新手先看硬件、模型和用途 | content/blog/local-llm-deployment-beginner.mdx |
+| 140 | 10 | 58 | seo-warning, short-description, high-priority | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
+
+Top actions:
+
 #### 大模型 API 限流和重试怎么做：429、队列、退避和降级方案
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4485,22 +4218,6 @@ Top actions:
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 88
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 52 | seo-warning, short-description, high-priority | 本地部署大模型怎么开始：新手先看硬件、模型和用途 | content/blog/local-llm-deployment-beginner.mdx |
-| 140 | 10 | 58 | seo-warning, short-description, high-priority | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
-| 140 | 10 | 61 | seo-warning, short-description, high-priority | 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 | content/blog/multi-model-router-fallback-guide.mdx |
-
-Top actions:
 
 #### 本地部署大模型怎么开始：新手先看硬件、模型和用途
 
@@ -4524,6 +4241,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 83
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 61 | seo-warning, short-description, high-priority | 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 | content/blog/multi-model-router-fallback-guide.mdx |
+| 140 | 10 | 59 | seo-warning, short-description, high-priority | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
+| 140 | 10 | 63 | seo-warning, short-description, high-priority | n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试 | content/blog/n8n-ai-agent-webhook-production-guide.mdx |
+
+Top actions:
+
 #### 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4534,22 +4267,6 @@ Top actions:
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 89
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 59 | seo-warning, short-description, high-priority | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
-| 140 | 10 | 63 | seo-warning, short-description, high-priority | n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试 | content/blog/n8n-ai-agent-webhook-production-guide.mdx |
-| 140 | 10 | 80 | seo-warning, short-description, high-priority | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
-
-Top actions:
 
 #### n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储
 
@@ -4573,6 +4290,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 84
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 80 | seo-warning, short-description, high-priority | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| 140 | 10 | 79 | seo-warning, short-description, high-priority | Open WebUI + Ollama 怎么部署：本地大模型网页聊天入门 | content/blog/open-webui-ollama-docker-guide.mdx |
+| 140 | 10 | 87 | seo-warning, short-description, high-priority | OpenAI API 接入 Next.js 怎么做：Route Handler 新手清单 | content/blog/openai-api-nextjs-route-handler-guide.mdx |
+
+Top actions:
+
 #### Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4583,22 +4316,6 @@ Top actions:
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 90
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 79 | seo-warning, short-description, high-priority | Open WebUI + Ollama 怎么部署：本地大模型网页聊天入门 | content/blog/open-webui-ollama-docker-guide.mdx |
-| 140 | 10 | 87 | seo-warning, short-description, high-priority | OpenAI API 接入 Next.js 怎么做：Route Handler 新手清单 | content/blog/openai-api-nextjs-route-handler-guide.mdx |
-| 140 | 10 | 80 | seo-warning, short-description, high-priority | OpenRouter API 怎么接入：统一模型入口不是只换 Base URL | content/blog/openrouter-api-beginner-guide.mdx |
-
-Top actions:
 
 #### Open WebUI + Ollama 怎么部署：本地大模型网页聊天入门
 
@@ -4622,6 +4339,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 85
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 80 | seo-warning, short-description, high-priority | OpenRouter API 怎么接入：统一模型入口不是只换 Base URL | content/blog/openrouter-api-beginner-guide.mdx |
+| 140 | 10 | 75 | seo-warning, short-description, high-priority | package lock 冲突使用前怎么判断是否适合 | content/blog/package-lock-conflict-fix-freelance-scope.mdx |
+| 140 | 10 | 54 | seo-warning, short-description, high-priority | 收款账户资料不一致风险：新手检查清单 | content/blog/payment-account-info-mismatch-risk-checklist.mdx |
+
+Top actions:
+
 #### OpenRouter API 怎么接入：统一模型入口不是只换 Base URL
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4633,22 +4366,6 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 91
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 75 | seo-warning, short-description, high-priority | package lock 冲突使用前怎么判断是否适合 | content/blog/package-lock-conflict-fix-freelance-scope.mdx |
-| 140 | 10 | 84 | seo-warning, short-description, high-priority | package lock 冲突常见错误和修正方法 | content/blog/package-lock-conflict-fix-mistakes.mdx |
-| 140 | 10 | 54 | seo-warning, short-description, high-priority | 收款账户资料不一致风险：新手检查清单 | content/blog/payment-account-info-mismatch-risk-checklist.mdx |
-
-Top actions:
-
 #### package lock 冲突使用前怎么判断是否适合
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4658,17 +4375,6 @@ Top actions:
 - SEO warning: Check whether the title can naturally include the exact primary keyword: package lock 冲突项目前怎么判断.
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### package lock 冲突常见错误和修正方法
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Confirm the contentType value matches the actual article format and category.
-- SEO warning: If the value is intentionally uncommon, document that decision during human review.
-- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
 #### 收款账户资料不一致风险：新手检查清单
@@ -4682,7 +4388,7 @@ Top actions:
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 92
+### public search refresh wave 86
 
 - Ready items: 3/3
 - Action items: 30
@@ -4694,7 +4400,7 @@ Top actions:
 | ---: | ---: | ---: | --- | --- | --- |
 | 140 | 10 | 83 | seo-warning, short-description, high-priority | Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试 | content/blog/pinecone-rag-beginner-guide.mdx |
 | 140 | 10 | 79 | seo-warning, short-description, high-priority | port already in use 使用前怎么判断是否适合 | content/blog/port-already-in-use-fix-freelance-scope.mdx |
-| 140 | 10 | 76 | seo-warning, short-description, high-priority | port already in use 常见错误和修正方法 | content/blog/port-already-in-use-fix-mistakes.mdx |
+| 140 | 10 | 53 | seo-warning, short-description, high-priority | 报价邮件模板怎么表达不确定范围：新手检查清单 | content/blog/quote-email-uncertain-scope-checklist.mdx |
 
 Top actions:
 
@@ -4720,44 +4426,6 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-#### port already in use 常见错误和修正方法
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Confirm the contentType value matches the actual article format and category.
-- SEO warning: If the value is intentionally uncommon, document that decision during human review.
-- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 93
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 62 | seo-warning, short-description, high-priority | 没有客户时做练习项目的常见错误 | content/blog/practice-projects-before-clients-mistakes.mdx |
-| 140 | 10 | 53 | seo-warning, short-description, high-priority | 报价邮件模板怎么表达不确定范围：新手检查清单 | content/blog/quote-email-uncertain-scope-checklist.mdx |
-| 140 | 10 | 58 | seo-warning, short-description, high-priority | RAG 怎么显示引用来源：文档名、页码、片段和可信度 | content/blog/rag-citation-source-trace-guide.mdx |
-
-Top actions:
-
-#### 没有客户时做练习项目的常见错误
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- SEO warning: Confirm the contentType value matches the actual article format and category.
-- SEO warning: If the value is intentionally uncommon, document that decision during human review.
-- SEO warning: If the value is accidental, replace it with the closest established content type before approval.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
 #### 报价邮件模板怎么表达不确定范围：新手检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4769,6 +4437,22 @@ Top actions:
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 87
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 58 | seo-warning, short-description, high-priority | RAG 怎么显示引用来源：文档名、页码、片段和可信度 | content/blog/rag-citation-source-trace-guide.mdx |
+| 140 | 10 | 50 | seo-warning, short-description, high-priority | RAG 文档上传前怎么清洗：目录、页眉、表格、重复段落和版本号 | content/blog/rag-document-cleaning-before-upload-guide.mdx |
+| 140 | 10 | 50 | seo-warning, short-description, high-priority | RAG 知识库怎么搭：文档、切分、检索和回答复核 | content/blog/rag-knowledge-base-beginner-guide.mdx |
+
+Top actions:
+
 #### RAG 怎么显示引用来源：文档名、页码、片段和可信度
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4779,22 +4463,6 @@ Top actions:
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 94
-
-- Ready items: 3/3
-- Action items: 30
-- Refresh reasons: seo-warning, short-description, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 50 | seo-warning, short-description, high-priority | RAG 文档上传前怎么清洗：目录、页眉、表格、重复段落和版本号 | content/blog/rag-document-cleaning-before-upload-guide.mdx |
-| 140 | 10 | 50 | seo-warning, short-description, high-priority | RAG 知识库怎么搭：文档、切分、检索和回答复核 | content/blog/rag-knowledge-base-beginner-guide.mdx |
-| 140 | 10 | 85 | seo-warning, short-description, high-priority | RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界 | content/blog/runpod-serverless-llm-deployment-guide.mdx |
-
-Top actions:
 
 #### RAG 文档上传前怎么清洗：目录、页眉、表格、重复段落和版本号
 
@@ -4818,6 +4486,22 @@ Top actions:
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 88
+
+- Ready items: 3/3
+- Action items: 30
+- Refresh reasons: seo-warning, short-description, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 10 | 85 | seo-warning, short-description, high-priority | RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界 | content/blog/runpod-serverless-llm-deployment-guide.mdx |
+| 140 | 10 | 52 | seo-warning, short-description, high-priority | 小网站上线检查 SOP 怎么写：新手检查清单 | content/blog/small-site-launch-sop-checklist.mdx |
+| 140 | 10 | 54 | seo-warning, short-description, high-priority | 订阅支付失败怎么和客户沟通：新手检查清单 | content/blog/subscription-payment-failed-message-checklist.mdx |
+
+Top actions:
+
 #### RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4828,22 +4512,6 @@ Top actions:
 - SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 95
-
-- Ready items: 3/3
-- Action items: 31
-- Refresh reasons: seo-warning, short-description, high-priority, cannibalization
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 10 | 52 | seo-warning, short-description, high-priority | 小网站上线检查 SOP 怎么写：新手检查清单 | content/blog/small-site-launch-sop-checklist.mdx |
-| 140 | 10 | 54 | seo-warning, short-description, high-priority | 订阅支付失败怎么和客户沟通：新手检查清单 | content/blog/subscription-payment-failed-message-checklist.mdx |
-| 140 | 11 | 73 | short-description, cannibalization, high-priority | Codex 安装失败怎么办：新手排查清单 | content/blog/codex-codex-4-32.mdx |
-
-Top actions:
 
 #### 小网站上线检查 SOP 怎么写：新手检查清单
 
@@ -4867,18 +4535,7 @@ Top actions:
 - SEO warning: Confirm description length remains suitable for search snippets after editing.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-#### Codex 安装失败怎么办：新手排查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review same primary keyword conflict "codex 安装失败怎么办" before expanding this page or approving related drafts.
-- Cannibalization check: review similar slug stem conflict "codex-codex" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 96
+### public search refresh wave 89
 
 - Ready items: 3/3
 - Action items: 33
@@ -4888,22 +4545,11 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
-| 140 | 11 | 73 | short-description, cannibalization, high-priority | Codex 生成代码后怎么审核：新手检查清单 | content/blog/codex-codex-4-38.mdx |
 | 140 | 11 | 76 | short-description, cannibalization, high-priority | npm run dev 能跑但 build 失败检查清单 | content/blog/dev-works-build-fails-checklist.mdx |
 | 140 | 11 | 84 | short-description, cannibalization, high-priority | npm run dev 能跑但 build 失败怎么办 | content/blog/dev-works-build-fails.mdx |
+| 140 | 11 | 81 | short-description, cannibalization, high-priority | failed to push some refs 排查检查清单 | content/blog/failed-to-push-some-refs-fix-checklist.mdx |
 
 Top actions:
-
-#### Codex 生成代码后怎么审核：新手检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review same primary keyword conflict "codex 生成代码后怎么审核" before expanding this page or approving related drafts.
-- Cannibalization check: review similar slug stem conflict "codex-codex" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
 #### npm run dev 能跑但 build 失败检查清单
 
@@ -4927,22 +4573,6 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 97
-
-- Ready items: 3/3
-- Action items: 31
-- Refresh reasons: short-description, cannibalization, high-priority, seo-warning
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 11 | 81 | short-description, cannibalization, high-priority | failed to push some refs 排查检查清单 | content/blog/failed-to-push-some-refs-fix-checklist.mdx |
-| 140 | 11 | 83 | short-description, cannibalization, high-priority | Next.js hydration error 怎么排查：新手检查清单 | content/blog/nextjs-hydration-error-debug-checklist.mdx |
-| 130 | 9 | 104 | seo-warning | Arize Phoenix 怎么做 LLM Tracing：OpenTelemetry、评测和排错入门 | content/blog/arize-phoenix-llm-observability-guide.mdx |
-
-Top actions:
-
 #### failed to push some refs 排查检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -4953,6 +4583,22 @@ Top actions:
 - Cannibalization check: review similar slug stem conflict "failed-push-some-refs-fix" before expanding this page or approving related drafts.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 90
+
+- Ready items: 3/3
+- Action items: 29
+- Refresh reasons: short-description, cannibalization, high-priority, seo-warning
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 11 | 83 | short-description, cannibalization, high-priority | Next.js hydration error 怎么排查：新手检查清单 | content/blog/nextjs-hydration-error-debug-checklist.mdx |
+| 130 | 9 | 104 | seo-warning | Arize Phoenix 怎么做 LLM Tracing：OpenTelemetry、评测和排错入门 | content/blog/arize-phoenix-llm-observability-guide.mdx |
+| 130 | 9 | 91 | seo-warning | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
+
+Top actions:
 
 #### Next.js hydration error 怎么排查：新手检查清单
 
@@ -4976,22 +4622,6 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-### public search refresh wave 98
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: seo-warning
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 130 | 9 | 91 | seo-warning | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
-| 130 | 9 | 102 | seo-warning | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
-| 130 | 9 | 97 | seo-warning | Hugging Face TGI 怎么部署：Text Generation Inference 入门检查表 | content/blog/huggingface-tgi-deployment-guide.mdx |
-
-Top actions:
-
 #### BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -5002,6 +4632,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
+
+### public search refresh wave 91
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: seo-warning
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 130 | 9 | 102 | seo-warning | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
+| 130 | 9 | 97 | seo-warning | Hugging Face TGI 怎么部署：Text Generation Inference 入门检查表 | content/blog/huggingface-tgi-deployment-guide.mdx |
+| 130 | 9 | 95 | seo-warning | Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界 | content/blog/kubernetes-gpu-llm-deployment-guide.mdx |
+
+Top actions:
 
 #### Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit
 
@@ -5025,22 +4671,6 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-### public search refresh wave 99
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: seo-warning
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 130 | 9 | 95 | seo-warning | Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界 | content/blog/kubernetes-gpu-llm-deployment-guide.mdx |
-| 130 | 9 | 93 | seo-warning | LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent | content/blog/langsmith-observability-evaluation-guide.mdx |
-| 130 | 9 | 90 | seo-warning | Modal 怎么部署 Serverless GPU LLM：代码化环境和冷启动先评估 | content/blog/modal-serverless-gpu-llm-guide.mdx |
-
-Top actions:
-
 #### Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -5051,6 +4681,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
+
+### public search refresh wave 92
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: seo-warning
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 130 | 9 | 93 | seo-warning | LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent | content/blog/langsmith-observability-evaluation-guide.mdx |
+| 130 | 9 | 90 | seo-warning | Modal 怎么部署 Serverless GPU LLM：代码化环境和冷启动先评估 | content/blog/modal-serverless-gpu-llm-guide.mdx |
+| 130 | 9 | 90 | seo-warning | OpenAI Agents SDK 怎么入门：Tools、Handoffs 和 Tracing 先分清 | content/blog/openai-agents-sdk-beginner-guide.mdx |
+
+Top actions:
 
 #### LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent
 
@@ -5074,22 +4720,6 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-### public search refresh wave 100
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: seo-warning
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 130 | 9 | 90 | seo-warning | OpenAI Agents SDK 怎么入门：Tools、Handoffs 和 Tracing 先分清 | content/blog/openai-agents-sdk-beginner-guide.mdx |
-| 130 | 9 | 96 | seo-warning | promptfoo 怎么做 LLM 评测：提示词、模型和 Agent 都要有测试用例 | content/blog/promptfoo-llm-evaluation-beginner-guide.mdx |
-| 130 | 9 | 101 | seo-warning | Ragas 怎么评测 RAG：Faithfulness、Context 和测试集先建好 | content/blog/ragas-rag-evaluation-beginner-guide.mdx |
-
-Top actions:
-
 #### OpenAI Agents SDK 怎么入门：Tools、Handoffs 和 Tracing 先分清
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -5100,6 +4730,22 @@ Top actions:
 - SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
+
+### public search refresh wave 93
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: seo-warning
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 130 | 9 | 96 | seo-warning | promptfoo 怎么做 LLM 评测：提示词、模型和 Agent 都要有测试用例 | content/blog/promptfoo-llm-evaluation-beginner-guide.mdx |
+| 130 | 9 | 101 | seo-warning | Ragas 怎么评测 RAG：Faithfulness、Context 和测试集先建好 | content/blog/ragas-rag-evaluation-beginner-guide.mdx |
+| 130 | 9 | 90 | seo-warning | Replicate API 怎么做 AI Demo：模型调用、部署和费用边界 | content/blog/replicate-api-ai-demo-guide.mdx |
+
+Top actions:
 
 #### promptfoo 怎么做 LLM 评测：提示词、模型和 Agent 都要有测试用例
 
@@ -5123,22 +4769,6 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-### public search refresh wave 101
-
-- Ready items: 3/3
-- Action items: 31
-- Refresh reasons: seo-warning, short-description, freshness-high
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 130 | 9 | 90 | seo-warning | Replicate API 怎么做 AI Demo：模型调用、部署和费用边界 | content/blog/replicate-api-ai-demo-guide.mdx |
-| 130 | 11 | 63 | short-description, freshness-high | 广告收入要等到什么时候再接：新手检查清单 | content/blog/ads-income-when-to-start-checklist.mdx |
-| 130 | 11 | 63 | short-description, freshness-high | AI 生成内容人工审核表检查清单 | content/blog/ai-content-human-review-template-checklist.mdx |
-
-Top actions:
-
 #### Replicate API 怎么做 AI Demo：模型调用、部署和费用边界
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -5150,141 +4780,32 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-#### 广告收入要等到什么时候再接：新手检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 生成内容人工审核表检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 102
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: short-description, freshness-high
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 130 | 11 | 55 | short-description, freshness-high | AI 工具学习每日执行表检查清单 | content/blog/ai-freelance-daily-planner-checklist.mdx |
-| 130 | 11 | 55 | short-description, freshness-high | AI 工具学习每日执行表怎么安排 | content/blog/ai-freelance-daily-planner.mdx |
-| 130 | 11 | 63 | short-description, freshness-high | AI 工具配置服务项目清单怎么写 | content/blog/ai-tool-setup-service-checklist.mdx |
-
-Top actions:
-
-#### AI 工具学习每日执行表检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 工具学习每日执行表怎么安排
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 工具配置服务项目清单怎么写
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 103
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: short-description, freshness-high
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 130 | 11 | 58 | short-description, freshness-high | AI 免费工具栈检查清单 | content/blog/ai-tools-stack-free-start-checklist.mdx |
-| 130 | 11 | 63 | short-description, freshness-high | Canva 作品集封面怎么做更适合 AI 工具新手 | content/blog/canva-portfolio-cover-tips.mdx |
-| 130 | 11 | 80 | short-description, freshness-high | ChatGPT 和 Claude 写 Proposal 有什么区别 | content/blog/chatgpt-vs-claude-proposal.mdx |
-
-Top actions:
-
-#### AI 免费工具栈检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### Canva 作品集封面怎么做更适合 AI 工具新手
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### ChatGPT 和 Claude 写 Proposal 有什么区别
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 104
+### public search refresh wave 94
 
 - Ready items: 3/3
 - Action items: 31
-- Refresh reasons: cannibalization, short-description, freshness-high
+- Refresh reasons: short-description, freshness-high, cannibalization
 - Publish confirm: not-included
 - Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 130 | 11 | 89 | short-description, freshness-high | Codex 生成代码后怎么审核 | content/blog/codex-generated-code-review-guide.mdx |
 | 130 | 10 | 99 | cannibalization | failed to push some refs 怎么排查 | content/blog/failed-to-push-some-refs-fix.mdx |
 | 130 | 10 | 92 | cannibalization | Next.js hydration error 怎么排查 | content/blog/nextjs-hydration-error-debug.mdx |
-| 130 | 11 | 64 | short-description, freshness-high | Upwork 客户需求太模糊怎么办：新手分析和追问清单 | content/blog/upwork-client-requirements-analysis-beginner.mdx |
 
 Top actions:
+
+#### Codex 生成代码后怎么审核
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
 #### failed to push some refs 怎么排查
 
@@ -5308,6 +4829,22 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.
 
+### public search refresh wave 95
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, freshness-high, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 130 | 11 | 64 | short-description, freshness-high | Upwork 客户需求太模糊怎么办：新手分析和追问清单 | content/blog/upwork-client-requirements-analysis-beginner.mdx |
+| 125 | 11 | 63 | short-description, cannibalization | 广告收入要等到什么时候再接：新手检查清单 | content/blog/ads-income-when-to-start-checklist.mdx |
+| 125 | 11 | 58 | short-description, cannibalization | AI 辅助交付和完全自动交付有什么区别 | content/blog/ai-assisted-vs-automated-delivery.mdx |
+
+Top actions:
+
 #### Upwork 客户需求太模糊怎么办：新手分析和追问清单
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -5319,7 +4856,29 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 105
+#### 广告收入要等到什么时候再接：新手检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "ads-income-when-start" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 辅助交付和完全自动交付有什么区别
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "assisted-automated-delivery" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 96
 
 - Ready items: 3/3
 - Action items: 33
@@ -5329,11 +4888,33 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 55 | short-description, cannibalization | 新手 30 天 AI 工具实践计划怎么执行 | content/blog/ai-freelance-30-day-execution.mdx |
+| 125 | 11 | 61 | short-description, cannibalization | AI 自动化项目有哪些合规风险 | content/blog/ai-freelance-automation-compliance-risk.mdx |
 | 125 | 11 | 58 | short-description, cannibalization | AI 工具实践常见误区自查清单 | content/blog/ai-freelance-common-misconceptions-checklist.mdx |
-| 125 | 11 | 72 | short-description, cannibalization | Codex 部署 Vercel 前检查什么 | content/blog/codex-codex-vercel-4-37.mdx |
-| 125 | 11 | 80 | short-description, cannibalization | Codex 修改现有网页 UI 的安全流程 | content/blog/codex-edit-existing-ui.mdx |
 
 Top actions:
+
+#### 新手 30 天 AI 工具实践计划怎么执行
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "freelance-day-execution" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 自动化项目有哪些合规风险
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "freelance-automation-compliance-risk" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
 #### AI 工具实践常见误区自查清单
 
@@ -5346,16 +4927,364 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-#### Codex 部署 Vercel 前检查什么
+### public search refresh wave 97
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 58 | short-description, cannibalization | AI 工具实践常见误区有哪些 | content/blog/ai-freelance-common-misconceptions.mdx |
+| 125 | 11 | 55 | short-description, cannibalization | AI 项目失败复盘检查清单 | content/blog/ai-freelance-failure-review-checklist.mdx |
+| 125 | 11 | 72 | short-description, cannibalization | AI 项目失败复盘怎么做 | content/blog/ai-freelance-failure-review.mdx |
+
+Top actions:
+
+#### AI 工具实践常见误区有哪些
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
 - Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
 - Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar slug stem conflict "codex-codex-vercel" before expanding this page or approving related drafts.
+- Cannibalization check: review similar slug stem conflict "freelance-common-misconceptions" before expanding this page or approving related drafts.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 项目失败复盘检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "freelance-failure-review" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 项目失败复盘怎么做
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "freelance-failure-review" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 98
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 60 | short-description, cannibalization | AI 工具新手 7 天准备检查清单 | content/blog/ai-freelance-first-7-days-checklist.mdx |
+| 125 | 11 | 69 | short-description, cannibalization | AI 工具新手 7 天准备什么 | content/blog/ai-freelance-first-7-days.mdx |
+| 125 | 11 | 60 | short-description, cannibalization | AI 服务页文案检查清单 | content/blog/ai-freelance-service-page-copy-checklist.mdx |
+
+Top actions:
+
+#### AI 工具新手 7 天准备检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "freelance-first-days" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 工具新手 7 天准备什么
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "freelance-first-days" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 服务页文案检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "freelance-service-page-copy" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 99
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 69 | short-description, cannibalization | AI 服务页文案怎么写真诚 | content/blog/ai-freelance-service-page-copy.mdx |
+| 125 | 11 | 63 | short-description, cannibalization | AI 工具新手技能路线图检查清单 | content/blog/ai-freelance-skill-roadmap-checklist.mdx |
+| 125 | 11 | 70 | short-description, cannibalization | AI 工具新手技能路线图怎么排 | content/blog/ai-freelance-skill-roadmap.mdx |
+
+Top actions:
+
+#### AI 服务页文案怎么写真诚
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "freelance-service-page-copy" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 工具新手技能路线图检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "freelance-skill-roadmap" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### AI 工具新手技能路线图怎么排
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "freelance-skill-roadmap" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 100
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 58 | short-description, cannibalization | AI 免费工具栈检查清单 | content/blog/ai-tools-stack-free-start-checklist.mdx |
+| 125 | 11 | 59 | short-description, cannibalization | API Key 无效或缺失排查清单 | content/blog/api-key-invalid-or-missing-checklist.mdx |
+| 125 | 11 | 62 | short-description, cannibalization | API Key 无效或缺失怎么处理 | content/blog/api-key-invalid-or-missing.mdx |
+
+Top actions:
+
+#### AI 免费工具栈检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "tools-stack-free-start" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### API Key 无效或缺失排查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "api-key-invalid-missing" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### API Key 无效或缺失怎么处理
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "api-key-invalid-missing" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 101
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 64 | short-description, cannibalization | 银行卡绑定收款平台要注意什么 | content/blog/bank-card-payment-platform-risk.mdx |
+| 125 | 11 | 63 | short-description, cannibalization | Canva 作品集封面怎么做更适合 AI 工具新手 | content/blog/canva-portfolio-cover-tips.mdx |
+| 125 | 11 | 67 | short-description, cannibalization | Claude Code Bug Prompt 检查清单 | content/blog/claude-code-bug-prompt-checklist.mdx |
+
+Top actions:
+
+#### 银行卡绑定收款平台要注意什么
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "bank-card-payment-platform-risk" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Canva 作品集封面怎么做更适合 AI 工具新手
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "canva-portfolio-cover-tips" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code Bug Prompt 检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "claude-code-bug-prompt" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 102
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 62 | short-description, cannibalization | Claude Code 交付说明检查清单 | content/blog/claude-code-delivery-note-checklist.mdx |
+| 125 | 11 | 65 | short-description, cannibalization | Claude Code 错误排查检查清单 | content/blog/claude-code-error-debug-checklist.mdx |
+| 125 | 11 | 63 | short-description, cannibalization | Claude Code 低风险项目检查清单 | content/blog/claude-code-low-risk-freelance-jobs-checklist.mdx |
+
+Top actions:
+
+#### Claude Code 交付说明检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "claude-code-delivery-note" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code 错误排查检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "claude-code-error-debug" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Claude Code 低风险项目检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "claude-code-low-risk-freelance" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 103
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 66 | short-description, cannibalization | Claude Code Next.js 页面检查清单 | content/blog/claude-code-nextjs-page-check-checklist.mdx |
+| 125 | 11 | 73 | short-description, cannibalization | Codex 安装失败怎么办：新手排查清单 | content/blog/codex-codex-4-32.mdx |
+| 125 | 11 | 73 | short-description, cannibalization | Codex 生成代码后怎么审核：新手检查清单 | content/blog/codex-codex-4-38.mdx |
+
+Top actions:
+
+#### Claude Code Next.js 页面检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "claude-code-nextjs-page-check" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Codex 安装失败怎么办：新手排查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "codex-codex" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### Codex 生成代码后怎么审核：新手检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "codex-codex" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 104
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 80 | short-description, cannibalization | Codex 修改现有网页 UI 的安全流程 | content/blog/codex-edit-existing-ui.mdx |
+| 125 | 11 | 64 | short-description, cannibalization | Codex 是什么，新手第一天应该怎么用 | content/blog/codex-first-day-guide.mdx |
+| 125 | 11 | 60 | short-description, cannibalization | Codex 怎么做第一个落地页：新手检查清单 | content/blog/codex-first-landing-page-checklist.mdx |
+
+Top actions:
 
 #### Codex 修改现有网页 UI 的安全流程
 
@@ -5367,22 +5296,6 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 106
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: short-description, cannibalization
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 125 | 11 | 64 | short-description, cannibalization | Codex 是什么，新手第一天应该怎么用 | content/blog/codex-first-day-guide.mdx |
-| 125 | 11 | 60 | short-description, cannibalization | Codex 怎么做第一个落地页：新手检查清单 | content/blog/codex-first-landing-page-checklist.mdx |
-| 125 | 11 | 64 | short-description, cannibalization | Codex 怎么做第一个落地页 | content/blog/codex-first-landing-page.mdx |
-
-Top actions:
 
 #### Codex 是什么，新手第一天应该怎么用
 
@@ -5406,6 +5319,22 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 105
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 64 | short-description, cannibalization | Codex 怎么做第一个落地页 | content/blog/codex-first-landing-page.mdx |
+| 125 | 11 | 65 | short-description, cannibalization | 安装 Codex 前要准备什么 | content/blog/codex-install-prerequisites.mdx |
+| 125 | 11 | 73 | short-description, cannibalization | npm install 报错排查检查清单 | content/blog/codex-npm-install-errors-checklist.mdx |
+
+Top actions:
+
 #### Codex 怎么做第一个落地页
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -5416,22 +5345,6 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 107
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: short-description, cannibalization
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 125 | 11 | 65 | short-description, cannibalization | 安装 Codex 前要准备什么 | content/blog/codex-install-prerequisites.mdx |
-| 125 | 11 | 73 | short-description, cannibalization | npm install 报错排查检查清单 | content/blog/codex-npm-install-errors-checklist.mdx |
-| 125 | 11 | 60 | short-description, cannibalization | Codex 作品集页面素材检查清单 | content/blog/codex-portfolio-page-assets-checklist.mdx |
-
-Top actions:
 
 #### 安装 Codex 前要准备什么
 
@@ -5455,6 +5368,22 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 106
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 60 | short-description, cannibalization | Codex 作品集页面素材检查清单 | content/blog/codex-portfolio-page-assets-checklist.mdx |
+| 125 | 11 | 71 | short-description, cannibalization | 用 Codex 准备作品集页面素材 | content/blog/codex-portfolio-page-assets.mdx |
+| 125 | 11 | 67 | short-description, cannibalization | Codex README 审核检查清单 | content/blog/codex-readme-review-checklist.mdx |
+
+Top actions:
+
 #### Codex 作品集页面素材检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -5465,22 +5394,6 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 108
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: short-description, cannibalization
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 125 | 11 | 71 | short-description, cannibalization | 用 Codex 准备作品集页面素材 | content/blog/codex-portfolio-page-assets.mdx |
-| 125 | 11 | 67 | short-description, cannibalization | Codex README 审核检查清单 | content/blog/codex-readme-review-checklist.mdx |
-| 125 | 11 | 72 | short-description, cannibalization | 用 Codex 审核 README 怎么做 | content/blog/codex-readme-review.mdx |
-
-Top actions:
 
 #### 用 Codex 准备作品集页面素材
 
@@ -5504,6 +5417,22 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 107
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 72 | short-description, cannibalization | 用 Codex 审核 README 怎么做 | content/blog/codex-readme-review.mdx |
+| 125 | 11 | 65 | short-description, cannibalization | Codex 生成代码后怎么人工审核 | content/blog/codex-review-generated-code.mdx |
+| 125 | 11 | 61 | short-description, cannibalization | 小网站交付前检查清单 | content/blog/codex-small-website-delivery-check-checklist.mdx |
+
+Top actions:
+
 #### 用 Codex 审核 README 怎么做
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -5514,22 +5443,6 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 109
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: short-description, cannibalization
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 125 | 11 | 65 | short-description, cannibalization | Codex 生成代码后怎么人工审核 | content/blog/codex-review-generated-code.mdx |
-| 125 | 11 | 61 | short-description, cannibalization | 小网站交付前检查清单 | content/blog/codex-small-website-delivery-check-checklist.mdx |
-| 125 | 11 | 57 | short-description, cannibalization | 小网站交付检查项目能不能接 | content/blog/codex-small-website-delivery-check-freelance-scope.mdx |
-
-Top actions:
 
 #### Codex 生成代码后怎么人工审核
 
@@ -5553,6 +5466,22 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 108
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 57 | short-description, cannibalization | 小网站交付检查项目能不能接 | content/blog/codex-small-website-delivery-check-freelance-scope.mdx |
+| 125 | 11 | 73 | short-description, cannibalization | 用 Codex 做小网站交付前检查 | content/blog/codex-small-website-delivery-check.mdx |
+| 125 | 11 | 62 | short-description, cannibalization | Tailwind 移动端样式检查清单 | content/blog/codex-tailwind-mobile-check-checklist.mdx |
+
+Top actions:
+
 #### 小网站交付检查项目能不能接
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -5563,22 +5492,6 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 110
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: short-description, cannibalization
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 125 | 11 | 73 | short-description, cannibalization | 用 Codex 做小网站交付前检查 | content/blog/codex-small-website-delivery-check.mdx |
-| 125 | 11 | 62 | short-description, cannibalization | Tailwind 移动端样式检查清单 | content/blog/codex-tailwind-mobile-check-checklist.mdx |
-| 125 | 11 | 80 | short-description, cannibalization | 用 Codex 检查 Tailwind 移动端样式 | content/blog/codex-tailwind-mobile-check.mdx |
-
-Top actions:
 
 #### 用 Codex 做小网站交付前检查
 
@@ -5602,6 +5515,22 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 109
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 80 | short-description, cannibalization | 用 Codex 检查 Tailwind 移动端样式 | content/blog/codex-tailwind-mobile-check.mdx |
+| 125 | 11 | 67 | short-description, cannibalization | Upwork 任务风险检查清单 | content/blog/codex-upwork-job-risk-check-checklist.mdx |
+| 125 | 11 | 78 | short-description, cannibalization | Vercel 部署检查清单 | content/blog/codex-vercel-deployment-checklist.mdx |
+
+Top actions:
+
 #### 用 Codex 检查 Tailwind 移动端样式
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -5612,22 +5541,6 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 111
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: short-description, cannibalization
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 125 | 11 | 67 | short-description, cannibalization | Upwork 任务风险检查清单 | content/blog/codex-upwork-job-risk-check-checklist.mdx |
-| 125 | 11 | 78 | short-description, cannibalization | Vercel 部署检查清单 | content/blog/codex-vercel-deployment-checklist.mdx |
-| 125 | 11 | 82 | short-description, cannibalization | 用 Codex 检查 Vercel 部署问题 | content/blog/codex-vercel-deployment.mdx |
-
-Top actions:
 
 #### Upwork 任务风险检查清单
 
@@ -5651,18 +5564,7 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-#### 用 Codex 检查 Vercel 部署问题
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar slug stem conflict "codex-vercel-deployment" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 112
+### public search refresh wave 110
 
 - Ready items: 3/3
 - Action items: 33
@@ -5672,19 +5574,19 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
-| 125 | 11 | 72 | short-description, cannibalization | Codex 和 Claude Code 新手怎么选 | content/blog/codex-vs-claude-code-beginner.mdx |
+| 125 | 11 | 82 | short-description, cannibalization | 用 Codex 检查 Vercel 部署问题 | content/blog/codex-vercel-deployment.mdx |
 | 125 | 11 | 64 | short-description, cannibalization | Codex 和 Cursor 网页修改选择清单 | content/blog/codex-vs-cursor-web-editing-checklist.mdx |
 | 125 | 11 | 66 | short-description, cannibalization | Codex 和 Cursor 改网页怎么选 | content/blog/codex-vs-cursor-web-editing.mdx |
 
 Top actions:
 
-#### Codex 和 Claude Code 新手怎么选
+#### 用 Codex 检查 Vercel 部署问题
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
 - Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
 - Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar slug stem conflict "codex-claude-code-beginner" before expanding this page or approving related drafts.
+- Cannibalization check: review similar slug stem conflict "codex-vercel-deployment" before expanding this page or approving related drafts.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
@@ -5711,7 +5613,7 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 113
+### public search refresh wave 111
 
 - Ready items: 3/3
 - Action items: 33
@@ -5760,7 +5662,7 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 114
+### public search refresh wave 112
 
 - Ready items: 3/3
 - Action items: 33
@@ -5809,7 +5711,7 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 115
+### public search refresh wave 113
 
 - Ready items: 3/3
 - Action items: 33
@@ -5858,7 +5760,7 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 116
+### public search refresh wave 114
 
 - Ready items: 3/3
 - Action items: 33
@@ -5907,7 +5809,7 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 117
+### public search refresh wave 115
 
 - Ready items: 3/3
 - Action items: 33
@@ -5956,7 +5858,7 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 118
+### public search refresh wave 116
 
 - Ready items: 3/3
 - Action items: 33
@@ -6005,7 +5907,7 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 119
+### public search refresh wave 117
 
 - Ready items: 3/3
 - Action items: 33
@@ -6054,10 +5956,10 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 120
+### public search refresh wave 118
 
 - Ready items: 3/3
-- Action items: 31
+- Action items: 33
 - Refresh reasons: short-description, cannibalization
 - Publish confirm: not-included
 - Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
@@ -6066,7 +5968,7 @@ Top actions:
 | ---: | ---: | ---: | --- | --- | --- |
 | 125 | 11 | 87 | short-description, cannibalization | Node 版本不匹配排查检查清单 | content/blog/node-version-mismatch-fix-checklist.mdx |
 | 125 | 11 | 80 | short-description, cannibalization | npm command not found 排查检查清单 | content/blog/npm-command-not-found-fix-checklist.mdx |
-| 115 | 9 | 128 | cannibalization | Codex 修 CSS 间距和响应式问题怎么做：新手检查清单 | content/blog/codex-css-spacing-responsive-checklist.mdx |
+| 125 | 11 | 86 | short-description, cannibalization | package lock 冲突安全处理检查清单 | content/blog/package-lock-conflict-fix-checklist.mdx |
 
 Top actions:
 
@@ -6088,6 +5990,104 @@ Top actions:
 - Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
 - Review the meta description for a clearer user problem, outcome, and concrete workflow term.
 - Cannibalization check: review similar slug stem conflict "npm-command-not-found-fix" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### package lock 冲突安全处理检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "package-lock-conflict-fix" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 119
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 83 | short-description, cannibalization | package lock 冲突怎么安全处理 | content/blog/package-lock-conflict-fix.mdx |
+| 125 | 11 | 72 | short-description, cannibalization | port already in use 释放端口检查清单 | content/blog/port-already-in-use-fix-checklist.mdx |
+| 125 | 11 | 77 | short-description, cannibalization | port already in use 怎么释放端口 | content/blog/port-already-in-use-fix.mdx |
+
+Top actions:
+
+#### package lock 冲突怎么安全处理
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "package-lock-conflict-fix" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### port already in use 释放端口检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "port-already-use-fix" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### port already in use 怎么释放端口
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "port-already-use-fix" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+### public search refresh wave 120
+
+- Ready items: 3/3
+- Action items: 31
+- Refresh reasons: short-description, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 57 | short-description, cannibalization | 没有客户时练习项目检查清单 | content/blog/practice-projects-before-clients-checklist.mdx |
+| 125 | 11 | 75 | short-description, cannibalization | 没有客户时怎么做练习项目 | content/blog/practice-projects-before-clients.mdx |
+| 115 | 9 | 128 | cannibalization | Codex 修 CSS 间距和响应式问题怎么做：新手检查清单 | content/blog/codex-css-spacing-responsive-checklist.mdx |
+
+Top actions:
+
+#### 没有客户时练习项目检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "practice-projects-before-clients" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+
+#### 没有客户时怎么做练习项目
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "practice-projects-before-clients" before expanding this page or approving related drafts.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
@@ -6156,7 +6156,7 @@ Top actions:
 
 - Ready items: 3/3
 - Action items: 27
-- Refresh reasons: cannibalization, short-description
+- Refresh reasons: cannibalization
 - Publish confirm: not-included
 - Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
 
@@ -6164,7 +6164,7 @@ Top actions:
 | ---: | ---: | ---: | --- | --- | --- |
 | 115 | 9 | 93 | cannibalization | module not found 报错怎么定位文件 | content/blog/module-not-found-debug.mdx |
 | 115 | 9 | 110 | cannibalization | npm command not found 怎么解决 | content/blog/npm-command-not-found-fix.mdx |
-| 110 | 9 | 55 | short-description | Agent 部署怎么做：从聊天助手到可上线工作流 | content/blog/agent-deployment-beginner-guide.mdx |
+| 115 | 9 | 94 | cannibalization | permission denied 报错新手怎么处理 | content/blog/permission-denied-fix.mdx |
 
 Top actions:
 
@@ -6190,15 +6190,15 @@ Top actions:
 - Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-#### Agent 部署怎么做：从聊天助手到可上线工作流
+#### permission denied 报错新手怎么处理
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
 - Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "permission-denied-fix" before expanding this page or approving related drafts.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
 ### public search refresh wave 123
@@ -6211,11 +6211,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 55 | short-description | Agent 部署怎么做：从聊天助手到可上线工作流 | content/blog/agent-deployment-beginner-guide.mdx |
 | 110 | 9 | 58 | short-description | Agent 可观测性怎么做：日志、轨迹、成本和失败复盘 | content/blog/agent-observability-logging-guide.mdx |
 | 110 | 9 | 58 | short-description | Agent 生产上线检查表：权限、日志、成本和人工确认 | content/blog/agent-production-deployment-checklist.mdx |
-| 110 | 9 | 57 | short-description | Agent 工具调用怎么设计：读、写、执行要分清 | content/blog/agent-tool-calling-beginner-guide.mdx |
 
 Top actions:
+
+#### Agent 部署怎么做：从聊天助手到可上线工作流
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
 #### Agent 可观测性怎么做：日志、轨迹、成本和失败复盘
 
@@ -6239,17 +6250,6 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-#### Agent 工具调用怎么设计：读、写、执行要分清
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
 ### public search refresh wave 124
 
 - Ready items: 3/3
@@ -6260,11 +6260,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 57 | short-description | Agent 工具调用怎么设计：读、写、执行要分清 | content/blog/agent-tool-calling-beginner-guide.mdx |
 | 110 | 9 | 69 | short-description | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 | 110 | 9 | 60 | short-description | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| 110 | 9 | 64 | short-description | 银行卡绑定收款平台要注意什么 | content/blog/bank-card-payment-platform-risk.mdx |
 
 Top actions:
+
+#### Agent 工具调用怎么设计：读、写、执行要分清
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
 #### AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查
 
@@ -6288,17 +6299,6 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-#### 银行卡绑定收款平台要注意什么
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
 ### public search refresh wave 125
 
 - Ready items: 3/3
@@ -6309,11 +6309,71 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 61 | short-description | ChatGPT 怎么用：新手最常见的 7 个真实场景 | content/blog/chatgpt-how-to-use-beginner-guide.mdx |
-| 110 | 9 | 56 | short-description | ChatGPT 提示词怎么写：新手可复制的 5 段式模板 | content/blog/chatgpt-prompt-template-beginner.mdx |
-| 110 | 9 | 85 | short-description | Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection | content/blog/chroma-vector-database-rag-guide.mdx |
+| 110 | 9 | 63 | short-description | AI 生成内容人工审核表检查清单 | content/blog/ai-content-human-review-template-checklist.mdx |
+| 110 | 9 | 55 | short-description | AI 工具学习每日执行表检查清单 | content/blog/ai-freelance-daily-planner-checklist.mdx |
+| 110 | 9 | 55 | short-description | AI 工具学习每日执行表怎么安排 | content/blog/ai-freelance-daily-planner.mdx |
 
 Top actions:
+
+#### AI 生成内容人工审核表检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
+
+#### AI 工具学习每日执行表检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
+
+#### AI 工具学习每日执行表怎么安排
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
+
+### public search refresh wave 126
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 63 | short-description | AI 工具配置服务项目清单怎么写 | content/blog/ai-tool-setup-service-checklist.mdx |
+| 110 | 9 | 61 | short-description | ChatGPT 怎么用：新手最常见的 7 个真实场景 | content/blog/chatgpt-how-to-use-beginner-guide.mdx |
+| 110 | 9 | 56 | short-description | ChatGPT 提示词怎么写：新手可复制的 5 段式模板 | content/blog/chatgpt-prompt-template-beginner.mdx |
+
+Top actions:
+
+#### AI 工具配置服务项目清单怎么写
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
 #### ChatGPT 怎么用：新手最常见的 7 个真实场景
 
@@ -6337,7 +6397,23 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-#### Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection
+### public search refresh wave 127
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 80 | short-description | ChatGPT 和 Claude 写 Proposal 有什么区别 | content/blog/chatgpt-vs-claude-proposal.mdx |
+| 110 | 9 | 85 | short-description | Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection | content/blog/chroma-vector-database-rag-guide.mdx |
+| 110 | 9 | 74 | short-description | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
+
+Top actions:
+
+#### ChatGPT 和 Claude 写 Proposal 有什么区别
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
@@ -6348,21 +6424,16 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-### public search refresh wave 126
+#### Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection
 
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 74 | short-description | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
-| 110 | 9 | 74 | short-description | Cloudflare 和 Namecheap 域名选择检查清单 | content/blog/cloudflare-vs-namecheap-domain-checklist.mdx |
-| 110 | 9 | 60 | short-description | Codex 安装环境配置项目能不能接 | content/blog/codex-install-prerequisites-freelance-scope.mdx |
-
-Top actions:
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
 #### Claude API Rate limit reached 怎么办：限流、上下文、重试和降级
 
@@ -6375,7 +6446,34 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 128
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 74 | short-description | Cloudflare 和 Namecheap 域名选择检查清单 | content/blog/cloudflare-vs-namecheap-domain-checklist.mdx |
+| 110 | 9 | 72 | short-description | Codex 部署 Vercel 前检查什么 | content/blog/codex-codex-vercel-4-37.mdx |
+| 110 | 9 | 60 | short-description | Codex 安装环境配置项目能不能接 | content/blog/codex-install-prerequisites-freelance-scope.mdx |
+
+Top actions:
+
 #### Cloudflare 和 Namecheap 域名选择检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
+
+#### Codex 部署 Vercel 前检查什么
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
@@ -6397,7 +6495,7 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-### public search refresh wave 127
+### public search refresh wave 129
 
 - Ready items: 3/3
 - Action items: 27
@@ -6446,7 +6544,7 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-### public search refresh wave 128
+### public search refresh wave 130
 
 - Ready items: 3/3
 - Action items: 27
@@ -6495,7 +6593,7 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-### public search refresh wave 129
+### public search refresh wave 131
 
 - Ready items: 3/3
 - Action items: 27
@@ -6505,11 +6603,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 72 | short-description | Codex 和 Claude Code 新手怎么选 | content/blog/codex-vs-claude-code-beginner.mdx |
 | 110 | 9 | 65 | short-description | Codex 和 Cursor 网页修改项目能不能接 | content/blog/codex-vs-cursor-web-editing-freelance-scope.mdx |
 | 110 | 9 | 68 | short-description | Windows 安装失败排查项目能不能接 | content/blog/codex-windows-install-failed-freelance-scope.mdx |
-| 110 | 9 | 63 | short-description | Coze Bot 发布前检查什么：新手别只看能不能聊天 | content/blog/coze-bot-publish-checklist.mdx |
 
 Top actions:
+
+#### Codex 和 Claude Code 新手怎么选
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
 #### Codex 和 Cursor 网页修改项目能不能接
 
@@ -6533,6 +6642,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 132
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 63 | short-description | Coze Bot 发布前检查什么：新手别只看能不能聊天 | content/blog/coze-bot-publish-checklist.mdx |
+| 110 | 9 | 67 | short-description | Cursor 和 Codex 改网页检查清单 | content/blog/cursor-vs-codex-web-editing-checklist.mdx |
+| 110 | 9 | 56 | short-description | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
+
+Top actions:
+
 #### Coze Bot 发布前检查什么：新手别只看能不能聊天
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -6543,22 +6668,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 130
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 67 | short-description | Cursor 和 Codex 改网页检查清单 | content/blog/cursor-vs-codex-web-editing-checklist.mdx |
-| 110 | 9 | 56 | short-description | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
-| 110 | 9 | 59 | short-description | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
-
-Top actions:
 
 #### Cursor 和 Codex 改网页检查清单
 
@@ -6582,6 +6691,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 133
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 59 | short-description | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
+| 110 | 9 | 60 | short-description | dependency conflict 依赖冲突使用前怎么判断是否适合 | content/blog/dependency-conflict-fix-freelance-scope.mdx |
+| 110 | 9 | 70 | short-description | Dify 知识库怎么搭：从上传文档到 RAG 问答 | content/blog/dify-knowledge-base-beginner-guide.mdx |
+
+Top actions:
+
 #### 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -6592,22 +6717,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 131
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 60 | short-description | dependency conflict 依赖冲突使用前怎么判断是否适合 | content/blog/dependency-conflict-fix-freelance-scope.mdx |
-| 110 | 9 | 70 | short-description | Dify 知识库怎么搭：从上传文档到 RAG 问答 | content/blog/dify-knowledge-base-beginner-guide.mdx |
-| 110 | 9 | 74 | short-description | 数字模板退款规则检查清单 | content/blog/digital-template-refund-policy-checklist.mdx |
-
-Top actions:
 
 #### dependency conflict 依赖冲突使用前怎么判断是否适合
 
@@ -6631,6 +6740,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 134
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 74 | short-description | 数字模板退款规则检查清单 | content/blog/digital-template-refund-policy-checklist.mdx |
+| 110 | 9 | 56 | short-description | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
+| 110 | 9 | 55 | short-description | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
+
+Top actions:
+
 #### 数字模板退款规则检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -6641,22 +6766,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 132
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 56 | short-description | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
-| 110 | 9 | 55 | short-description | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
-| 110 | 9 | 57 | short-description | Embedding 模型怎么选：RAG 和向量检索别只看模型名 | content/blog/embedding-model-selection-guide.mdx |
-
-Top actions:
 
 #### 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复
 
@@ -6680,6 +6789,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 135
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 57 | short-description | Embedding 模型怎么选：RAG 和向量检索别只看模型名 | content/blog/embedding-model-selection-guide.mdx |
+| 110 | 9 | 58 | short-description | 英文客户回复避免夸大检查清单 | content/blog/english-client-reply-template-honest-checklist.mdx |
+| 110 | 9 | 81 | short-description | 英文客户回复模板怎么避免夸大 | content/blog/english-client-reply-template-honest.mdx |
+
+Top actions:
+
 #### Embedding 模型怎么选：RAG 和向量检索别只看模型名
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -6690,22 +6815,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 133
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 58 | short-description | 英文客户回复避免夸大检查清单 | content/blog/english-client-reply-template-honest-checklist.mdx |
-| 110 | 9 | 81 | short-description | 英文客户回复模板怎么避免夸大 | content/blog/english-client-reply-template-honest.mdx |
-| 110 | 9 | 60 | short-description | 环境变量 missing 使用前怎么判断是否适合 | content/blog/env-variable-missing-fix-freelance-scope.mdx |
-
-Top actions:
 
 #### 英文客户回复避免夸大检查清单
 
@@ -6729,6 +6838,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 136
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 60 | short-description | 环境变量 missing 使用前怎么判断是否适合 | content/blog/env-variable-missing-fix-freelance-scope.mdx |
+| 110 | 9 | 55 | short-description | 财务 AI 提示词模板：报表摘要、费用分类、预算复盘和风险清单 | content/blog/finance-ai-prompts-guide.mdx |
+| 110 | 9 | 75 | short-description | 自由职业第一笔收款检查清单 | content/blog/first-freelance-payment-check-checklist.mdx |
+
+Top actions:
+
 #### 环境变量 missing 使用前怎么判断是否适合
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -6739,22 +6864,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 134
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 55 | short-description | 财务 AI 提示词模板：报表摘要、费用分类、预算复盘和风险清单 | content/blog/finance-ai-prompts-guide.mdx |
-| 110 | 9 | 75 | short-description | 自由职业第一笔收款检查清单 | content/blog/first-freelance-payment-check-checklist.mdx |
-| 110 | 9 | 77 | short-description | 自由职业第一笔收款前要确认什么 | content/blog/first-freelance-payment-check.mdx |
-
-Top actions:
 
 #### 财务 AI 提示词模板：报表摘要、费用分类、预算复盘和风险清单
 
@@ -6778,6 +6887,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 137
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 77 | short-description | 自由职业第一笔收款前要确认什么 | content/blog/first-freelance-payment-check.mdx |
+| 110 | 9 | 68 | short-description | Flowise 本地部署怎么开始：新手先看数据和权限 | content/blog/flowise-local-deployment-beginner-guide.mdx |
+| 110 | 9 | 72 | short-description | 自由职业平台工具栈检查清单 | content/blog/freelance-platform-tool-stack-checklist.mdx |
+
+Top actions:
+
 #### 自由职业第一笔收款前要确认什么
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -6788,22 +6913,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 135
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 68 | short-description | Flowise 本地部署怎么开始：新手先看数据和权限 | content/blog/flowise-local-deployment-beginner-guide.mdx |
-| 110 | 9 | 72 | short-description | 自由职业平台工具栈检查清单 | content/blog/freelance-platform-tool-stack-checklist.mdx |
-| 110 | 9 | 87 | short-description | 自由职业平台工具栈怎么搭配 | content/blog/freelance-platform-tool-stack.mdx |
-
-Top actions:
 
 #### Flowise 本地部署怎么开始：新手先看数据和权限
 
@@ -6827,6 +6936,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 138
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 87 | short-description | 自由职业平台工具栈怎么搭配 | content/blog/freelance-platform-tool-stack.mdx |
+| 110 | 9 | 60 | short-description | 自由职业报价单填写检查清单 | content/blog/freelance-quote-template-fill-checklist.mdx |
+| 110 | 9 | 66 | short-description | 自由职业报价单模板怎么填写 | content/blog/freelance-quote-template-fill.mdx |
+
+Top actions:
+
 #### 自由职业平台工具栈怎么搭配
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -6837,22 +6962,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 136
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 60 | short-description | 自由职业报价单填写检查清单 | content/blog/freelance-quote-template-fill-checklist.mdx |
-| 110 | 9 | 66 | short-description | 自由职业报价单模板怎么填写 | content/blog/freelance-quote-template-fill.mdx |
-| 110 | 9 | 75 | short-description | 自由职业每周复盘模板怎么用 | content/blog/freelance-weekly-review-template.mdx |
-
-Top actions:
 
 #### 自由职业报价单填写检查清单
 
@@ -6876,6 +6985,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 139
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 75 | short-description | 自由职业每周复盘模板怎么用 | content/blog/freelance-weekly-review-template.mdx |
+| 110 | 9 | 57 | short-description | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | content/blog/gemini-api-rate-limit-debug-guide.mdx |
+| 110 | 9 | 83 | short-description | GitHub 常用命令新手检查清单 | content/blog/github-command-cheatsheet-beginner-checklist.mdx |
+
+Top actions:
+
 #### 自由职业每周复盘模板怎么用
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -6886,22 +7011,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 137
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 57 | short-description | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | content/blog/gemini-api-rate-limit-debug-guide.mdx |
-| 110 | 9 | 83 | short-description | GitHub 常用命令新手检查清单 | content/blog/github-command-cheatsheet-beginner-checklist.mdx |
-| 110 | 9 | 79 | short-description | GitHub 常用命令表新手怎么记 | content/blog/github-command-cheatsheet-beginner.mdx |
-
-Top actions:
 
 #### Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型
 
@@ -6925,6 +7034,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 140
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 79 | short-description | GitHub 常用命令表新手怎么记 | content/blog/github-command-cheatsheet-beginner.mdx |
+| 110 | 9 | 74 | short-description | GitHub 和 Vercel 新手建站检查清单 | content/blog/github-vercel-beginner-site-checklist.mdx |
+| 110 | 9 | 70 | short-description | GitHub 和 Vercel 为什么适合新手建站 | content/blog/github-vercel-beginner-site.mdx |
+
+Top actions:
+
 #### GitHub 常用命令表新手怎么记
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -6935,22 +7060,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 138
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 74 | short-description | GitHub 和 Vercel 新手建站检查清单 | content/blog/github-vercel-beginner-site-checklist.mdx |
-| 110 | 9 | 70 | short-description | GitHub 和 Vercel 为什么适合新手建站 | content/blog/github-vercel-beginner-site.mdx |
-| 110 | 9 | 78 | short-description | Google Analytics 接入前检查清单 | content/blog/google-analytics-when-to-add-checklist.mdx |
-
-Top actions:
 
 #### GitHub 和 Vercel 新手建站检查清单
 
@@ -6974,6 +7083,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 141
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 78 | short-description | Google Analytics 接入前检查清单 | content/blog/google-analytics-when-to-add-checklist.mdx |
+| 110 | 9 | 75 | short-description | Gumroad 卖模板前检查清单 | content/blog/gumroad-template-selling-prep-checklist.mdx |
+| 110 | 9 | 87 | short-description | Gumroad 卖模板前要准备什么 | content/blog/gumroad-template-selling-prep.mdx |
+
+Top actions:
+
 #### Google Analytics 接入前检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -6984,22 +7109,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 139
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 75 | short-description | Gumroad 卖模板前检查清单 | content/blog/gumroad-template-selling-prep-checklist.mdx |
-| 110 | 9 | 87 | short-description | Gumroad 卖模板前要准备什么 | content/blog/gumroad-template-selling-prep.mdx |
-| 110 | 9 | 67 | short-description | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-
-Top actions:
 
 #### Gumroad 卖模板前检查清单
 
@@ -7023,6 +7132,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 142
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 67 | short-description | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| 110 | 9 | 55 | short-description | 海外收款手续费怎么估算：新手检查清单 | content/blog/international-payment-fee-estimate-checklist.mdx |
+| 110 | 9 | 68 | short-description | 海外收款手续费怎么估算 | content/blog/international-payment-fee-estimate.mdx |
+
+Top actions:
+
 #### 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -7033,22 +7158,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 140
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 55 | short-description | 海外收款手续费怎么估算：新手检查清单 | content/blog/international-payment-fee-estimate-checklist.mdx |
-| 110 | 9 | 68 | short-description | 海外收款手续费怎么估算 | content/blog/international-payment-fee-estimate.mdx |
-| 110 | 9 | 57 | short-description | 法务合同 AI 提示词模板：条款摘要、风险清单和修改问题 | content/blog/legal-contract-ai-prompts-guide.mdx |
-
-Top actions:
 
 #### 海外收款手续费怎么估算：新手检查清单
 
@@ -7072,6 +7181,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 143
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 57 | short-description | 法务合同 AI 提示词模板：条款摘要、风险清单和修改问题 | content/blog/legal-contract-ai-prompts-guide.mdx |
+| 110 | 9 | 76 | short-description | Lemon Squeezy 数字产品检查清单 | content/blog/lemon-squeezy-digital-products-checklist.mdx |
+| 110 | 9 | 88 | short-description | Lemon Squeezy 适合数字产品吗 | content/blog/lemon-squeezy-digital-products.mdx |
+
+Top actions:
+
 #### 法务合同 AI 提示词模板：条款摘要、风险清单和修改问题
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -7082,22 +7207,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 141
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 76 | short-description | Lemon Squeezy 数字产品检查清单 | content/blog/lemon-squeezy-digital-products-checklist.mdx |
-| 110 | 9 | 88 | short-description | Lemon Squeezy 适合数字产品吗 | content/blog/lemon-squeezy-digital-products.mdx |
-| 110 | 9 | 73 | short-description | llama.cpp server 怎么用：本地 GGUF 模型 API 入门 | content/blog/llama-cpp-server-beginner-guide.mdx |
-
-Top actions:
 
 #### Lemon Squeezy 数字产品检查清单
 
@@ -7121,6 +7230,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 144
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 73 | short-description | llama.cpp server 怎么用：本地 GGUF 模型 API 入门 | content/blog/llama-cpp-server-beginner-guide.mdx |
+| 110 | 9 | 56 | short-description | 大模型 API 接入部署清单：上线前要检查什么 | content/blog/llm-api-integration-deployment-checklist.mdx |
+| 110 | 9 | 57 | short-description | 大模型部署是什么意思：API、本地和私有化怎么选 | content/blog/llm-deployment-beginner-guide.mdx |
+
+Top actions:
+
 #### llama.cpp server 怎么用：本地 GGUF 模型 API 入门
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -7131,22 +7256,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 142
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 56 | short-description | 大模型 API 接入部署清单：上线前要检查什么 | content/blog/llm-api-integration-deployment-checklist.mdx |
-| 110 | 9 | 57 | short-description | 大模型部署是什么意思：API、本地和私有化怎么选 | content/blog/llm-deployment-beginner-guide.mdx |
-| 110 | 9 | 65 | short-description | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
-
-Top actions:
 
 #### 大模型 API 接入部署清单：上线前要检查什么
 
@@ -7170,6 +7279,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 145
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 65 | short-description | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| 110 | 9 | 57 | short-description | 大模型微调和 RAG 怎么选：新手别把两件事混在一起 | content/blog/llm-finetuning-vs-rag-beginner-guide.mdx |
+| 110 | 9 | 60 | short-description | 大模型部署成本和延迟怎么估算：上线前检查清单 | content/blog/llm-serving-cost-latency-checklist.mdx |
+
+Top actions:
+
 #### 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -7180,22 +7305,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 143
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 57 | short-description | 大模型微调和 RAG 怎么选：新手别把两件事混在一起 | content/blog/llm-finetuning-vs-rag-beginner-guide.mdx |
-| 110 | 9 | 60 | short-description | 大模型部署成本和延迟怎么估算：上线前检查清单 | content/blog/llm-serving-cost-latency-checklist.mdx |
-| 110 | 9 | 83 | short-description | LM Studio 本地 API 怎么用：把本地模型变成 OpenAI 兼容接口 | content/blog/lm-studio-local-api-guide.mdx |
-
-Top actions:
 
 #### 大模型微调和 RAG 怎么选：新手别把两件事混在一起
 
@@ -7219,6 +7328,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 146
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 83 | short-description | LM Studio 本地 API 怎么用：把本地模型变成 OpenAI 兼容接口 | content/blog/lm-studio-local-api-guide.mdx |
+| 110 | 9 | 69 | short-description | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 | content/blog/local-llm-vram-not-enough-guide.mdx |
+| 110 | 9 | 72 | short-description | Make 和 Zapier 自动化新手检查清单 | content/blog/make-vs-zapier-automation-checklist.mdx |
+
+Top actions:
+
 #### LM Studio 本地 API 怎么用：把本地模型变成 OpenAI 兼容接口
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -7229,22 +7354,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 144
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 69 | short-description | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 | content/blog/local-llm-vram-not-enough-guide.mdx |
-| 110 | 9 | 72 | short-description | Make 和 Zapier 自动化新手检查清单 | content/blog/make-vs-zapier-automation-checklist.mdx |
-| 110 | 9 | 74 | short-description | Make 和 Zapier 自动化怎么选 | content/blog/make-vs-zapier-automation.mdx |
-
-Top actions:
 
 #### 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型
 
@@ -7268,6 +7377,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 147
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 74 | short-description | Make 和 Zapier 自动化怎么选 | content/blog/make-vs-zapier-automation.mdx |
+| 110 | 9 | 56 | short-description | 制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘 | content/blog/manufacturing-ai-prompts-guide.mdx |
+| 110 | 9 | 58 | short-description | 营销 AI 提示词模板：选题、广告文案、SEO 和活动复盘怎么写 | content/blog/marketing-ai-prompts-guide.mdx |
+
+Top actions:
+
 #### Make 和 Zapier 自动化怎么选
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -7278,22 +7403,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 145
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 56 | short-description | 制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘 | content/blog/manufacturing-ai-prompts-guide.mdx |
-| 110 | 9 | 58 | short-description | 营销 AI 提示词模板：选题、广告文案、SEO 和活动复盘怎么写 | content/blog/marketing-ai-prompts-guide.mdx |
-| 110 | 9 | 58 | short-description | MCP 是什么：为什么 Agent 需要标准化工具接口 | content/blog/mcp-beginner-guide-agent-tools.mdx |
-
-Top actions:
 
 #### 制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘
 
@@ -7317,6 +7426,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 148
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 58 | short-description | MCP 是什么：为什么 Agent 需要标准化工具接口 | content/blog/mcp-beginner-guide-agent-tools.mdx |
+| 110 | 9 | 70 | short-description | n8n AI Agent 自托管怎么开始：别只会拖节点，要先管边界 | content/blog/n8n-ai-agent-self-host-guide.mdx |
+| 110 | 9 | 62 | short-description | Notion 管理项目流程怎么用：新手检查清单 | content/blog/notion-freelance-workflow-checklist.mdx |
+
+Top actions:
+
 #### MCP 是什么：为什么 Agent 需要标准化工具接口
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -7327,22 +7452,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 146
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 70 | short-description | n8n AI Agent 自托管怎么开始：别只会拖节点，要先管边界 | content/blog/n8n-ai-agent-self-host-guide.mdx |
-| 110 | 9 | 62 | short-description | Notion 管理项目流程怎么用：新手检查清单 | content/blog/notion-freelance-workflow-checklist.mdx |
-| 110 | 9 | 74 | short-description | Notion 管理项目流程怎么用 | content/blog/notion-freelance-workflow.mdx |
-
-Top actions:
 
 #### n8n AI Agent 自托管怎么开始：别只会拖节点，要先管边界
 
@@ -7366,6 +7475,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 149
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 74 | short-description | Notion 管理项目流程怎么用 | content/blog/notion-freelance-workflow.mdx |
+| 110 | 9 | 61 | short-description | Ollama API 怎么接到网页应用：本地模型到前后端调用 | content/blog/ollama-api-web-app-integration.mdx |
+| 110 | 9 | 60 | short-description | Ollama 本地部署大模型怎么开始：新手检查清单 | content/blog/ollama-local-model-deployment-guide.mdx |
+
+Top actions:
+
 #### Notion 管理项目流程怎么用
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -7376,22 +7501,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 147
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 61 | short-description | Ollama API 怎么接到网页应用：本地模型到前后端调用 | content/blog/ollama-api-web-app-integration.mdx |
-| 110 | 9 | 60 | short-description | Ollama 本地部署大模型怎么开始：新手检查清单 | content/blog/ollama-local-model-deployment-guide.mdx |
-| 110 | 9 | 61 | short-description | OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制 | content/blog/openai-batch-api-cost-guide.mdx |
-
-Top actions:
 
 #### Ollama API 怎么接到网页应用：本地模型到前后端调用
 
@@ -7415,6 +7524,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 150
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 61 | short-description | OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制 | content/blog/openai-batch-api-cost-guide.mdx |
+| 110 | 9 | 57 | short-description | 运营 AI 提示词模板：周报、SOP、活动计划、复盘和数据解释 | content/blog/operations-ai-prompts-guide.mdx |
+| 110 | 9 | 67 | short-description | Paddle 和 Stripe 有什么区别：新手检查清单 | content/blog/paddle-vs-stripe-beginner-checklist.mdx |
+
+Top actions:
+
 #### OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -7425,22 +7550,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 148
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 57 | short-description | 运营 AI 提示词模板：周报、SOP、活动计划、复盘和数据解释 | content/blog/operations-ai-prompts-guide.mdx |
-| 110 | 9 | 86 | short-description | package lock 冲突安全处理检查清单 | content/blog/package-lock-conflict-fix-checklist.mdx |
-| 110 | 9 | 83 | short-description | package lock 冲突怎么安全处理 | content/blog/package-lock-conflict-fix.mdx |
-
-Top actions:
 
 #### 运营 AI 提示词模板：周报、SOP、活动计划、复盘和数据解释
 
@@ -7453,44 +7562,6 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-#### package lock 冲突安全处理检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-#### package lock 冲突怎么安全处理
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 149
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 67 | short-description | Paddle 和 Stripe 有什么区别：新手检查清单 | content/blog/paddle-vs-stripe-beginner-checklist.mdx |
-| 110 | 9 | 80 | short-description | Paddle 和 Stripe 有什么区别 | content/blog/paddle-vs-stripe-beginner.mdx |
-| 110 | 9 | 59 | short-description | 收款账户资料不一致有什么风险 | content/blog/payment-account-info-mismatch-risk.mdx |
-
-Top actions:
-
 #### Paddle 和 Stripe 有什么区别：新手检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -7501,6 +7572,22 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
+
+### public search refresh wave 151
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 80 | short-description | Paddle 和 Stripe 有什么区别 | content/blog/paddle-vs-stripe-beginner.mdx |
+| 110 | 9 | 59 | short-description | 收款账户资料不一致有什么风险 | content/blog/payment-account-info-mismatch-risk.mdx |
+| 110 | 9 | 60 | short-description | 收款页面免责声明：新手检查清单 | content/blog/payment-page-disclaimer-checklist.mdx |
+
+Top actions:
 
 #### Paddle 和 Stripe 有什么区别
 
@@ -7524,22 +7611,6 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-### public search refresh wave 150
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 60 | short-description | 收款页面免责声明：新手检查清单 | content/blog/payment-page-disclaimer-checklist.mdx |
-| 110 | 9 | 61 | short-description | 收款页面需要写哪些免责声明 | content/blog/payment-page-disclaimer.mdx |
-| 110 | 9 | 63 | short-description | Payoneer 适合新手自由职业收款吗：新手检查清单 | content/blog/payoneer-freelancer-beginner-checklist.mdx |
-
-Top actions:
-
 #### 收款页面免责声明：新手检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -7550,6 +7621,22 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
+
+### public search refresh wave 152
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 61 | short-description | 收款页面需要写哪些免责声明 | content/blog/payment-page-disclaimer.mdx |
+| 110 | 9 | 63 | short-description | Payoneer 适合新手自由职业收款吗：新手检查清单 | content/blog/payoneer-freelancer-beginner-checklist.mdx |
+| 110 | 9 | 76 | short-description | Payoneer 适合新手自由职业收款吗 | content/blog/payoneer-freelancer-beginner.mdx |
+
+Top actions:
 
 #### 收款页面需要写哪些免责声明
 
@@ -7573,22 +7660,6 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-### public search refresh wave 151
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 76 | short-description | Payoneer 适合新手自由职业收款吗 | content/blog/payoneer-freelancer-beginner.mdx |
-| 110 | 9 | 75 | short-description | Payoneer Wise PayPal 怎么选择：新手检查清单 | content/blog/payoneer-wise-paypal-choose-checklist.mdx |
-| 110 | 9 | 83 | short-description | Payoneer Wise PayPal 怎么选择 | content/blog/payoneer-wise-paypal-choose.mdx |
-
-Top actions:
-
 #### Payoneer 适合新手自由职业收款吗
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -7599,6 +7670,22 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
+
+### public search refresh wave 153
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 75 | short-description | Payoneer Wise PayPal 怎么选择：新手检查清单 | content/blog/payoneer-wise-paypal-choose-checklist.mdx |
+| 110 | 9 | 83 | short-description | Payoneer Wise PayPal 怎么选择 | content/blog/payoneer-wise-paypal-choose.mdx |
+| 110 | 9 | 60 | short-description | PayPal 收款有哪些常见限制：新手检查清单 | content/blog/paypal-freelancer-limits-checklist.mdx |
+
+Top actions:
 
 #### Payoneer Wise PayPal 怎么选择：新手检查清单
 
@@ -7622,22 +7709,6 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-### public search refresh wave 152
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 60 | short-description | PayPal 收款有哪些常见限制：新手检查清单 | content/blog/paypal-freelancer-limits-checklist.mdx |
-| 110 | 9 | 74 | short-description | PayPal 收款有哪些常见限制 | content/blog/paypal-freelancer-limits.mdx |
-| 110 | 9 | 70 | short-description | PayPal 和 Payoneer 哪个适合新手：新手检查清单 | content/blog/paypal-vs-payoneer-beginner-checklist.mdx |
-
-Top actions:
-
 #### PayPal 收款有哪些常见限制：新手检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -7648,6 +7719,22 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
+
+### public search refresh wave 154
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 74 | short-description | PayPal 收款有哪些常见限制 | content/blog/paypal-freelancer-limits.mdx |
+| 110 | 9 | 70 | short-description | PayPal 和 Payoneer 哪个适合新手：新手检查清单 | content/blog/paypal-vs-payoneer-beginner-checklist.mdx |
+| 110 | 9 | 80 | short-description | PayPal 和 Payoneer 哪个适合新手 | content/blog/paypal-vs-payoneer-beginner.mdx |
+
+Top actions:
 
 #### PayPal 收款有哪些常见限制
 
@@ -7671,22 +7758,6 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-### public search refresh wave 153
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 80 | short-description | PayPal 和 Payoneer 哪个适合新手 | content/blog/paypal-vs-payoneer-beginner.mdx |
-| 110 | 9 | 81 | short-description | permission denied 报错新手怎么处理：使用前怎么判断是否适合 | content/blog/permission-denied-fix-freelance-scope.mdx |
-| 110 | 9 | 60 | short-description | 平台内收款和直接收款：新手检查清单 | content/blog/platform-payment-vs-direct-payment-checklist.mdx |
-
-Top actions:
-
 #### PayPal 和 Payoneer 哪个适合新手
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -7697,6 +7768,22 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
+
+### public search refresh wave 155
+
+- Ready items: 3/3
+- Action items: 27
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 81 | short-description | permission denied 报错新手怎么处理：使用前怎么判断是否适合 | content/blog/permission-denied-fix-freelance-scope.mdx |
+| 110 | 9 | 60 | short-description | 平台内收款和直接收款：新手检查清单 | content/blog/platform-payment-vs-direct-payment-checklist.mdx |
+| 110 | 9 | 59 | short-description | 平台内收款和直接收款怎么区分 | content/blog/platform-payment-vs-direct-payment.mdx |
+
+Top actions:
 
 #### permission denied 报错新手怎么处理：使用前怎么判断是否适合
 
@@ -7720,22 +7807,6 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-### public search refresh wave 154
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 59 | short-description | 平台内收款和直接收款怎么区分 | content/blog/platform-payment-vs-direct-payment.mdx |
-| 110 | 9 | 72 | short-description | port already in use 释放端口检查清单 | content/blog/port-already-in-use-fix-checklist.mdx |
-| 110 | 9 | 77 | short-description | port already in use 怎么释放端口 | content/blog/port-already-in-use-fix.mdx |
-
-Top actions:
-
 #### 平台内收款和直接收款怎么区分
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -7747,29 +7818,7 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-#### port already in use 释放端口检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-#### port already in use 怎么释放端口
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 155
+### public search refresh wave 156
 
 - Ready items: 3/3
 - Action items: 27
@@ -7818,7 +7867,7 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-### public search refresh wave 156
+### public search refresh wave 157
 
 - Ready items: 3/3
 - Action items: 27
@@ -7829,8 +7878,8 @@ Top actions:
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
 | 110 | 9 | 62 | short-description | 新手练习项目记录表怎么用 | content/blog/practice-project-log-template.mdx |
-| 110 | 9 | 57 | short-description | 没有客户时练习项目检查清单 | content/blog/practice-projects-before-clients-checklist.mdx |
-| 110 | 9 | 75 | short-description | 没有客户时怎么做练习项目 | content/blog/practice-projects-before-clients.mdx |
+| 110 | 9 | 56 | short-description | 项目前风险评估表怎么填：新手检查清单 | content/blog/pre-project-risk-assessment-template-checklist.mdx |
+| 110 | 9 | 58 | short-description | 项目前风险评估表怎么填 | content/blog/pre-project-risk-assessment-template.mdx |
 
 Top actions:
 
@@ -7844,44 +7893,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-#### 没有客户时练习项目检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-#### 没有客户时怎么做练习项目
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 157
-
-- Ready items: 3/3
-- Action items: 27
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 56 | short-description | 项目前风险评估表怎么填：新手检查清单 | content/blog/pre-project-risk-assessment-template-checklist.mdx |
-| 110 | 9 | 58 | short-description | 项目前风险评估表怎么填 | content/blog/pre-project-risk-assessment-template.mdx |
-| 110 | 9 | 57 | short-description | 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准 | content/blog/product-manager-ai-prompts-guide.mdx |
-
-Top actions:
 
 #### 项目前风险评估表怎么填：新手检查清单
 
@@ -7905,17 +7916,6 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-#### 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
 ### public search refresh wave 158
 
 - Ready items: 3/3
@@ -7926,11 +7926,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 57 | short-description | 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准 | content/blog/product-manager-ai-prompts-guide.mdx |
 | 110 | 9 | 56 | short-description | 项目交付检查清单应该包含什么：新手检查清单 | content/blog/project-delivery-checklist-items-checklist.mdx |
 | 110 | 9 | 65 | short-description | 项目交付检查清单应该包含什么 | content/blog/project-delivery-checklist-items.mdx |
-| 110 | 9 | 58 | short-description | 项目复盘模板怎么记录问题：新手检查清单 | content/blog/project-retrospective-template-checklist.mdx |
 
 Top actions:
+
+#### 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
 #### 项目交付检查清单应该包含什么：新手检查清单
 
@@ -7954,17 +7965,6 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-#### 项目复盘模板怎么记录问题：新手检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
 ### public search refresh wave 159
 
 - Ready items: 3/3
@@ -7975,11 +7975,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 58 | short-description | 项目复盘模板怎么记录问题：新手检查清单 | content/blog/project-retrospective-template-checklist.mdx |
 | 110 | 9 | 58 | short-description | 项目复盘模板怎么记录问题 | content/blog/project-retrospective-template.mdx |
 | 110 | 9 | 66 | short-description | Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 | content/blog/qdrant-vector-database-beginner-guide.mdx |
-| 110 | 9 | 60 | short-description | 报价邮件模板怎么表达不确定范围 | content/blog/quote-email-uncertain-scope.mdx |
 
 Top actions:
+
+#### 项目复盘模板怎么记录问题：新手检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
 #### 项目复盘模板怎么记录问题
 
@@ -8003,17 +8014,6 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-#### 报价邮件模板怎么表达不确定范围
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
 ### public search refresh wave 160
 
 - Ready items: 3/3
@@ -8024,11 +8024,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 60 | short-description | 报价邮件模板怎么表达不确定范围 | content/blog/quote-email-uncertain-scope.mdx |
 | 110 | 9 | 63 | short-description | RAG 文档切分怎么做：chunk 太大太小都会影响检索 | content/blog/rag-chunking-strategy-guide.mdx |
 | 110 | 9 | 55 | short-description | RAG 评测怎么做：先准备一套真实测试问题 | content/blog/rag-evaluation-test-set-guide.mdx |
-| 110 | 9 | 74 | short-description | RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路 | content/blog/rag-retrieval-no-context-debug-guide.mdx |
 
 Top actions:
+
+#### 报价邮件模板怎么表达不确定范围
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
 #### RAG 文档切分怎么做：chunk 太大太小都会影响检索
 
@@ -8052,17 +8063,6 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-#### RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
 ### public search refresh wave 161
 
 - Ready items: 3/3
@@ -8073,11 +8073,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 74 | short-description | RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路 | content/blog/rag-retrieval-no-context-debug-guide.mdx |
 | 110 | 9 | 55 | short-description | 房产 AI 提示词模板：房源文案、客户需求分析、带看记录和风险提醒 | content/blog/real-estate-ai-prompts-guide.mdx |
 | 110 | 9 | 56 | short-description | 销售 AI 提示词模板：客户画像、跟进话术、异议处理和会议纪要 | content/blog/sales-ai-prompts-guide.mdx |
-| 110 | 9 | 60 | short-description | 服务咨询表单问题怎么设计：新手检查清单 | content/blog/service-inquiry-form-questions-checklist.mdx |
 
 Top actions:
+
+#### RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
 #### 房产 AI 提示词模板：房源文案、客户需求分析、带看记录和风险提醒
 
@@ -8101,17 +8112,6 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-#### 服务咨询表单问题怎么设计：新手检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
 ### public search refresh wave 162
 
 - Ready items: 3/3
@@ -8122,11 +8122,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 60 | short-description | 服务咨询表单问题怎么设计：新手检查清单 | content/blog/service-inquiry-form-questions-checklist.mdx |
 | 110 | 9 | 56 | short-description | 服务咨询表单问题怎么设计 | content/blog/service-inquiry-form-questions.mdx |
 | 110 | 9 | 55 | short-description | 人工服务先用什么方式收款更稳妥：新手检查清单 | content/blog/service-payment-method-beginner-checklist.mdx |
-| 110 | 9 | 65 | short-description | 人工服务先用什么方式收款更稳妥 | content/blog/service-payment-method-beginner.mdx |
 
 Top actions:
+
+#### 服务咨询表单问题怎么设计：新手检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
 #### 服务咨询表单问题怎么设计
 
@@ -8150,17 +8161,6 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
-#### 人工服务先用什么方式收款更稳妥
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
 ### public search refresh wave 163
 
 - Ready items: 3/3
@@ -8171,11 +8171,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 65 | short-description | 人工服务先用什么方式收款更稳妥 | content/blog/service-payment-method-beginner.mdx |
 | 110 | 9 | 60 | short-description | 小网站上线检查 SOP 怎么写 | content/blog/small-site-launch-sop.mdx |
 | 110 | 9 | 59 | short-description | 软件开发 AI 提示词模板：需求拆解、代码审查、Bug 排查和测试用例 | content/blog/software-development-ai-prompts-guide.mdx |
-| 110 | 9 | 81 | short-description | Stripe 适合卖模板还是服务：新手检查清单 | content/blog/stripe-templates-vs-services-checklist.mdx |
 
 Top actions:
+
+#### 人工服务先用什么方式收款更稳妥
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
 #### 小网站上线检查 SOP 怎么写
 
@@ -8199,6 +8210,22 @@ Top actions:
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 
+### public search refresh wave 164
+
+- Ready items: 3/3
+- Action items: 25
+- Refresh reasons: short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 110 | 9 | 81 | short-description | Stripe 适合卖模板还是服务：新手检查清单 | content/blog/stripe-templates-vs-services-checklist.mdx |
+| 110 | 9 | 77 | short-description | Stripe 适合卖模板还是服务 | content/blog/stripe-templates-vs-services.mdx |
+| 100 | 7 | 92 | none | Cloudflare 和 Namecheap 域名怎么选 | content/blog/cloudflare-vs-namecheap-domain.mdx |
+
+Top actions:
+
 #### Stripe 适合卖模板还是服务：新手检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -8209,22 +8236,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 164
-
-- Ready items: 3/3
-- Action items: 23
-- Refresh reasons: short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 110 | 9 | 77 | short-description | Stripe 适合卖模板还是服务 | content/blog/stripe-templates-vs-services.mdx |
-| 100 | 7 | 92 | none | Cloudflare 和 Namecheap 域名怎么选 | content/blog/cloudflare-vs-namecheap-domain.mdx |
-| 100 | 7 | 133 | none | Codex 修 CSS 间距和响应式问题怎么做：使用前怎么判断是否适合 | content/blog/codex-css-spacing-responsive-freelance-scope.mdx |
-
-Top actions:
 
 #### Stripe 适合卖模板还是服务
 
@@ -8247,16 +8258,6 @@ Top actions:
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 - Apply edits manually only after approval; publish confirm remains excluded.
 
-#### Codex 修 CSS 间距和响应式问题怎么做：使用前怎么判断是否适合
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-- Apply edits manually only after approval; publish confirm remains excluded.
-
 ### public search refresh wave 165
 
 - Ready items: 3/3
@@ -8267,11 +8268,21 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 100 | 7 | 133 | none | Codex 修 CSS 间距和响应式问题怎么做：使用前怎么判断是否适合 | content/blog/codex-css-spacing-responsive-freelance-scope.mdx |
 | 100 | 7 | 90 | none | Cursor 和 Codex 改网页有什么区别 | content/blog/cursor-vs-codex-web-editing.mdx |
 | 100 | 7 | 102 | none | 数字模板退款规则怎么写更清楚 | content/blog/digital-template-refund-policy.mdx |
-| 100 | 7 | 90 | none | SEO 工具免费功能检查清单 | content/blog/free-seo-tools-beginner-checklist.mdx |
 
 Top actions:
+
+#### Codex 修 CSS 间距和响应式问题怎么做：使用前怎么判断是否适合
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
+- Apply edits manually only after approval; publish confirm remains excluded.
 
 #### Cursor 和 Codex 改网页有什么区别
 
@@ -8293,16 +8304,6 @@ Top actions:
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 - Apply edits manually only after approval; publish confirm remains excluded.
 
-#### SEO 工具免费功能检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-- Apply edits manually only after approval; publish confirm remains excluded.
-
 ### public search refresh wave 166
 
 - Ready items: 3/3
@@ -8313,11 +8314,21 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 100 | 7 | 90 | none | SEO 工具免费功能检查清单 | content/blog/free-seo-tools-beginner-checklist.mdx |
 | 100 | 7 | 94 | none | SEO 工具新手先用哪些免费功能 | content/blog/free-seo-tools-beginner.mdx |
 | 100 | 7 | 90 | none | Google Analytics 什么时候再接入 | content/blog/google-analytics-when-to-add.mdx |
-| 100 | 7 | 101 | none | Google Search Console 新站检查清单 | content/blog/google-search-console-new-site-checklist.mdx |
 
 Top actions:
+
+#### SEO 工具免费功能检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
+- Apply edits manually only after approval; publish confirm remains excluded.
 
 #### SEO 工具新手先用哪些免费功能
 
@@ -8339,16 +8350,6 @@ Top actions:
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 - Apply edits manually only after approval; publish confirm remains excluded.
 
-#### Google Search Console 新站检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-- Apply edits manually only after approval; publish confirm remains excluded.
-
 ### public search refresh wave 167
 
 - Ready items: 2/2
@@ -8359,12 +8360,12 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 100 | 7 | 101 | none | Google Search Console 新站检查清单 | content/blog/google-search-console-new-site-checklist.mdx |
 | 100 | 7 | 100 | none | Google Search Console 新站怎么用 | content/blog/google-search-console-new-site.mdx |
-| 100 | 7 | 94 | none | permission denied 报错新手怎么处理 | content/blog/permission-denied-fix.mdx |
 
 Top actions:
 
-#### Google Search Console 新站怎么用
+#### Google Search Console 新站检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
@@ -8374,7 +8375,7 @@ Top actions:
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 - Apply edits manually only after approval; publish confirm remains excluded.
 
-#### permission denied 报错新手怎么处理
+#### Google Search Console 新站怎么用
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.

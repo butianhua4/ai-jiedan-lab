@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T05:24:15.009Z",
+  "generatedAt": "2026-06-16T18:18:03.148Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -8,7 +8,7 @@
   "summary": {
     "allIssueItems": 0,
     "blockingItems": 0,
-    "expansionItems": 19,
+    "expansionItems": 15,
     "filesScanned": 669,
     "mojibakeWarningItems": 77,
     "publicItems": 500,
@@ -170,9 +170,7 @@
       "issues": [],
       "scope": [
         "public",
-        "recommended",
-        "wave-1",
-        "expansion"
+        "wave-1"
       ],
       "status": "published",
       "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
@@ -184,8 +182,7 @@
       "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "status": "published",
       "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
@@ -197,8 +194,7 @@
       "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "status": "published",
       "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
@@ -246,8 +242,7 @@
       "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "status": "published",
       "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
@@ -632,9 +627,7 @@
       "issues": [],
       "scope": [
         "public",
-        "recommended",
-        "wave-1",
-        "expansion"
+        "wave-1"
       ],
       "status": "published",
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
@@ -708,8 +701,7 @@
       "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "status": "published",
       "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
@@ -1187,8 +1179,7 @@
       "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "status": "published",
       "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
@@ -3320,8 +3311,7 @@
       "file": "content/blog/customer-service-ai-prompts-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "status": "published",
       "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
@@ -3371,8 +3361,7 @@
       "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "status": "published",
       "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
@@ -3590,8 +3579,7 @@
       "file": "content/blog/dify-workflow-error-handling-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "status": "published",
       "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
@@ -3603,8 +3591,7 @@
       "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "status": "published",
       "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
@@ -3640,8 +3627,7 @@
       "file": "content/blog/ecommerce-ai-prompts-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "status": "published",
       "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复",
@@ -3653,8 +3639,7 @@
       "file": "content/blog/education-ai-prompts-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "status": "published",
       "title": "教育 AI 提示词模板：备课、教案、测验、反馈和学习计划",
@@ -4124,8 +4109,7 @@
       "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "status": "published",
       "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
@@ -4335,8 +4319,7 @@
       "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "status": "published",
       "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
@@ -4445,9 +4428,7 @@
       "issues": [],
       "scope": [
         "public",
-        "recommended",
-        "wave-1",
-        "expansion"
+        "wave-1"
       ],
       "status": "published",
       "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
@@ -4665,8 +4646,7 @@
       "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "status": "published",
       "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
@@ -4726,8 +4706,7 @@
       "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "status": "published",
       "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
@@ -5157,8 +5136,7 @@
       "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "expansion"
+        "public"
       ],
       "status": "published",
       "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
@@ -6151,47 +6129,40 @@
   "recommendedItems": [
     {
       "descriptionLength": 69,
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "file": "content/blog/tools-not-to-buy-first.mdx",
       "issues": [],
       "scope": [
-        "public",
-        "recommended",
-        "wave-1",
-        "expansion"
+        "recommended"
       ],
-      "status": "published",
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "titleLength": 47,
+      "status": "draft",
+      "title": "AI 工具新手不应该先买哪些工具",
+      "titleLength": 16,
       "warnings": []
     },
     {
-      "descriptionLength": 52,
-      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "descriptionLength": 71,
+      "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
         "recommended",
-        "wave-1",
         "expansion"
       ],
-      "status": "published",
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-      "titleLength": 29,
+      "status": "draft",
+      "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
+      "titleLength": 42,
       "warnings": []
     },
     {
-      "descriptionLength": 67,
-      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "descriptionLength": 72,
+      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
       "issues": [],
       "scope": [
-        "public",
         "recommended",
-        "wave-1",
         "expansion"
       ],
-      "status": "published",
-      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-      "titleLength": 37,
+      "status": "draft",
+      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+      "titleLength": 51,
       "warnings": []
     }
   ],
@@ -7230,9 +7201,7 @@
       "issues": [],
       "scope": [
         "public",
-        "recommended",
-        "wave-1",
-        "expansion"
+        "wave-1"
       ],
       "status": "published",
       "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
@@ -7245,9 +7214,7 @@
       "issues": [],
       "scope": [
         "public",
-        "recommended",
-        "wave-1",
-        "expansion"
+        "wave-1"
       ],
       "status": "published",
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
@@ -7260,9 +7227,7 @@
       "issues": [],
       "scope": [
         "public",
-        "recommended",
-        "wave-1",
-        "expansion"
+        "wave-1"
       ],
       "status": "published",
       "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",

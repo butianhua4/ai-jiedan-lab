@@ -1,6 +1,6 @@
 # Popular Prompt Sprint Board
 
-Generated at: 2026-06-16T12:27:22.439Z
+Generated at: 2026-06-16T18:18:23.067Z
 
 This report is read-only. It groups broad industry AI prompt lanes into manual review waves without creating, editing, reviewing, or publishing articles.
 
@@ -17,14 +17,14 @@ This report is read-only. It groups broad industry AI prompt lanes into manual r
 ## Summary
 
 - actionItems: 90
-- bridgeItems: 13
+- bridgeItems: 15
 - candidateFiles: 21
 - highPriorityItems: 5
 - industryBuckets: 5
 - items: 10
 - itemsPerWave: 2
 - lanesReadyForPromptSprint: 3
-- nextCandidateFiles: 7
+- nextCandidateFiles: 9
 - playbookItems: 10
 - promptTemplateSamples: 50
 - promptTemplates: 50
@@ -36,8 +36,8 @@ This report is read-only. It groups broad industry AI prompt lanes into manual r
 
 ## Unsafe Items
 
-- agent-memory-knowledge-base-prompts: no candidate files attached; popular prompt lane is not ready for human review prep; popular prompt lane has unsafe next candidates
-- ai-agent-deploy-prompts: no candidate files attached; popular prompt lane is not ready for human review prep; popular prompt lane has unsafe next candidates
+- agent-memory-knowledge-base-prompts: no candidate files attached; popular prompt lane is not ready for human review prep; popular prompt lane has no queued or next candidate files; popular prompt lane has unsafe next candidates
+- ai-agent-deploy-prompts: no candidate files attached; popular prompt lane is not ready for human review prep; popular prompt lane has no queued or next candidate files; popular prompt lane has unsafe next candidates
 - ecommerce-customer-service-prompts: No existing candidate draft bridge for this broad prompt lane.; popular prompt lane is not ready for human review prep; popular prompt lane has no queued or next candidate files
 - xiaohongshu-short-video-prompts: No existing candidate draft bridge for this broad prompt lane.; popular prompt lane is not ready for human review prep; popular prompt lane has no queued or next candidate files
 - office-copilot-prompts: No existing candidate draft bridge for this broad prompt lane.; popular prompt lane is not ready for human review prep; popular prompt lane has no queued or next candidate files
@@ -48,9 +48,9 @@ This report is read-only. It groups broad industry AI prompt lanes into manual r
 
 | Wave | Ready | High priority | Actions | Buckets | Candidate files | Search queries |
 | ---: | ---: | ---: | ---: | --- | --- | --- |
-| 1 | 2/2 | 2 | 18 | agent-deployment, commerce-service | content/blog/vercel-404-after-deploy.mdx<br>content/blog/vercel-deploy-checklist-template-checklist.mdx<br>content/blog/vercel-deploy-checklist-template.mdx<br>content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/together-ai-api-beginner-guide.mdx<br>content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/template-download-site-tools-checklist.mdx<br>content/blog/template-site-payment-platform-timing-checklist.mdx<br>content/blog/template-site-payment-platform-timing.mdx<br>content/blog/vercel-build-failed-causes-checklist.mdx | 大模型部署教程<br>LLM API 报错排查<br>OpenAI API error prompt<br>AI 应用部署失败怎么办<br>大模型推理服务排错<br>AI 环境变量配置教程 |
-| 2 | 1/2 | 2 | 18 | office-data, agent-deployment | content/blog/vector-database-beginner-guide.mdx<br>content/blog/together-ai-api-beginner-guide.mdx<br>content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx<br>content/blog/vercel-404-after-deploy.mdx<br>content/blog/vercel-deploy-checklist-template-checklist.mdx<br>content/blog/vercel-deploy-checklist-template.mdx<br>content/blog/vercel-ai-gateway-multi-provider-guide.mdx | Excel AI 提示词<br>ChatGPT 分析表格数据<br>AI 数据分析提示词<br>销售数据分析 prompt<br>财务报表 AI 分析提示词<br>Excel 透视表 AI 教程 |
-| 3 | 0/2 | 1 | 18 | agent-deployment, commerce-service | content/blog/vercel-404-after-deploy.mdx<br>content/blog/vercel-deploy-checklist-template-checklist.mdx<br>content/blog/vercel-deploy-checklist-template.mdx<br>content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/together-ai-api-beginner-guide.mdx<br>content/blog/vector-database-selection-for-rag-guide.mdx | AI Agent 部署教程<br>Vercel AI SDK agent deploy<br>OpenAI Agents SDK 教程<br>AI Agent 工具调用提示词<br>MCP Agent 部署<br>Agent 上线排错 prompt |
+| 1 | 2/2 | 2 | 18 | commerce-service, agent-deployment | content/blog/template-download-site-tools-checklist.mdx<br>content/blog/template-site-payment-platform-timing-checklist.mdx<br>content/blog/template-site-payment-platform-timing.mdx<br>content/blog/vercel-404-after-deploy.mdx<br>content/blog/vercel-deploy-checklist-template-checklist.mdx<br>content/blog/vercel-deploy-checklist-template.mdx | ChatGPT 提示词大全<br>ChatGPT 怎么提问效果最好<br>AI 提示词万能公式<br>提示词模板 免费<br>Copilot prompt examples<br>Gemini prompt guide |
+| 2 | 1/2 | 2 | 18 | office-data, agent-deployment | content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx<br>content/blog/vector-database-beginner-guide.mdx<br>content/blog/vercel-404-after-deploy.mdx<br>content/blog/vercel-deploy-checklist-template-checklist.mdx<br>content/blog/vercel-deploy-checklist-template.mdx | Excel AI 提示词<br>ChatGPT 分析表格数据<br>AI 数据分析提示词<br>销售数据分析 prompt<br>财务报表 AI 分析提示词<br>Excel 透视表 AI 教程 |
+| 3 | 0/2 | 1 | 18 | agent-deployment, commerce-service | content/blog/vercel-404-after-deploy.mdx<br>content/blog/vercel-deploy-checklist-template-checklist.mdx<br>content/blog/vercel-deploy-checklist-template.mdx | AI Agent 部署教程<br>Vercel AI SDK agent deploy<br>OpenAI Agents SDK 教程<br>AI Agent 工具调用提示词<br>MCP Agent 部署<br>Agent 上线排错 prompt |
 | 4 | 0/2 | 0 | 18 | content-marketing, office-data | none | 小红书 AI 提示词<br>ChatGPT 小红书文案<br>短视频脚本 AI 提示词<br>直播带货话术 AI<br>AI 爆款标题提示词<br>抖音脚本 prompt |
 | 5 | 0/2 | 0 | 18 | commerce-service, general-work-prompts | none | AI 销售话术提示词<br>ChatGPT 写报价单<br>AI 方案书提示词<br>客户跟进邮件 prompt<br>自由职业项目报价提示词<br>AI 写商业 proposal |
 
@@ -58,11 +58,11 @@ This report is read-only. It groups broad industry AI prompt lanes into manual r
 
 | Wave | Ready | Score | Bucket | Public matches | Actions | Search queries | Next files | Title |
 | ---: | --- | ---: | --- | ---: | ---: | ---: | --- | --- |
-| 1 | true | 174 | agent-deployment | 38 | 9 | 14 | content/blog/vercel-404-after-deploy.mdx<br>content/blog/vercel-deploy-checklist-template-checklist.mdx<br>content/blog/vercel-deploy-checklist-template.mdx | 大模型部署、本地模型和 API 排错提示词 |
-| 1 | true | 164 | commerce-service | 51 | 9 | 14 | content/blog/template-download-site-tools-checklist.mdx<br>content/blog/template-site-payment-platform-timing-checklist.mdx<br>content/blog/template-site-payment-platform-timing.mdx | ChatGPT 提示词大全和万能公式 |
-| 2 | true | 132 | office-data | 28 | 9 | 14 | content/blog/vector-database-beginner-guide.mdx | Excel 和数据分析 AI 提示词 |
-| 2 | false | 129 | agent-deployment | 117 | 9 | 14 | content/blog/vercel-404-after-deploy.mdx<br>content/blog/vercel-deploy-checklist-template-checklist.mdx<br>content/blog/vercel-deploy-checklist-template.mdx | Agent 记忆、知识库和 RAG 提示词 |
-| 3 | false | 129 | agent-deployment | 117 | 9 | 14 | content/blog/vercel-404-after-deploy.mdx<br>content/blog/vercel-deploy-checklist-template-checklist.mdx<br>content/blog/vercel-deploy-checklist-template.mdx | AI Agent 部署、工具调用和上线排错提示词 |
+| 1 | true | 144 | commerce-service | 51 | 9 | 14 | content/blog/template-download-site-tools-checklist.mdx<br>content/blog/template-site-payment-platform-timing-checklist.mdx<br>content/blog/template-site-payment-platform-timing.mdx | ChatGPT 提示词大全和万能公式 |
+| 1 | true | 144 | agent-deployment | 38 | 9 | 14 | content/blog/vercel-404-after-deploy.mdx<br>content/blog/vercel-deploy-checklist-template-checklist.mdx<br>content/blog/vercel-deploy-checklist-template.mdx | 大模型部署、本地模型和 API 排错提示词 |
+| 2 | true | 132 | office-data | 28 | 9 | 14 | content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx<br>content/blog/vector-database-beginner-guide.mdx | Excel 和数据分析 AI 提示词 |
+| 2 | false | 99 | agent-deployment | 117 | 9 | 14 | content/blog/vercel-404-after-deploy.mdx<br>content/blog/vercel-deploy-checklist-template-checklist.mdx<br>content/blog/vercel-deploy-checklist-template.mdx | Agent 记忆、知识库和 RAG 提示词 |
+| 3 | false | 99 | agent-deployment | 117 | 9 | 14 | content/blog/vercel-404-after-deploy.mdx<br>content/blog/vercel-deploy-checklist-template-checklist.mdx<br>content/blog/vercel-deploy-checklist-template.mdx | AI Agent 部署、工具调用和上线排错提示词 |
 | 3 | false | 79 | commerce-service | 3 | 9 | 14 | none | 电商客服、售后和直播卖货 AI 提示词 |
 | 4 | false | 79 | content-marketing | 1 | 9 | 14 | none | 小红书、短视频和直播脚本 AI 提示词 |
 | 4 | false | 67 | office-data | 2 | 9 | 14 | none | AI 办公提示词：Word、Excel、PPT、邮件和会议 |
@@ -70,58 +70,6 @@ This report is read-only. It groups broad industry AI prompt lanes into manual r
 | 5 | false | 64 | general-work-prompts | 2 | 9 | 13 | none | 简历优化、招聘和 HR AI 提示词 |
 
 ## Lane Actions
-
-### 大模型部署、本地模型和 API 排错提示词
-
-- Lane: llm-deployment-troubleshooting-prompts
-- Wave: 1
-- Industry bucket: agent-deployment
-- Ready for prompt sprint: true
-- Publish confirm: not-included
-- Audience: 部署大模型 API、本地模型、推理服务和 AI 应用的开发者
-- Demand reason: 大模型部署、API 报错、推理延迟、环境变量和日志排错会带来技术流量，且能和工具服务转化相连。
-
-Review actions:
-- Keep this as a manual review sprint; do not create or edit articles automatically.
-- Use broad, common search phrasing from the lane queries before narrowing to tool-specific keywords.
-- Map one article to one dominant user job so prompt examples do not cannibalize adjacent lanes.
-- Verify every fast-changing model, product, platform, policy, pricing, API, and agent/memory claim against official sources.
-- Add practical prompt inputs, output format, failure checks, and human-review boundaries.
-- Do not claim traffic, ranking, conversion, revenue, or guaranteed productivity gains.
-- Keep candidate drafts as draft/noindex/humanReviewRequired until explicit approval.
-- Review next candidate files: content/blog/vercel-404-after-deploy.mdx, content/blog/vercel-deploy-checklist-template-checklist.mdx, content/blog/vercel-deploy-checklist-template.mdx.
-- Check source targets: https://platform.openai.com/docs/guides/prompt-engineering, https://vercel.com/docs/agents, https://platform.openai.com/docs/guides/agents-sdk.
-
-Search queries:
-- 大模型部署教程
-- LLM API 报错排查
-- OpenAI API error prompt
-- AI 应用部署失败怎么办
-- 大模型推理服务排错
-- AI 环境变量配置教程
-- Vercel AI 应用部署错误
-- LLM 延迟优化检查清单
-- 模型 API 日志分析提示词
-- AI 项目上线 smoke test
-- AI app deployment tutorial
-- OpenAI API deployment
-
-Prompt template samples:
-- 大模型部署、本地模型和 API 排错提示词 - 环境变量检查
-- 大模型部署、本地模型和 API 排错提示词 - API 报错解释
-- 大模型部署、本地模型和 API 排错提示词 - 推理延迟排查
-- 大模型部署、本地模型和 API 排错提示词 - 日志摘要
-- 大模型部署、本地模型和 API 排错提示词 - 上线回滚
-
-Source targets:
-- https://platform.openai.com/docs/guides/prompt-engineering
-- https://vercel.com/docs/agents
-- https://platform.openai.com/docs/guides/agents-sdk
-- https://openai.github.io/openai-agents-js/guides/sandbox-agents/memory/
-- https://docs.langchain.com/oss/python/deepagents/long-term-memory
-- OpenAI API docs: https://platform.openai.com/docs
-- Vercel AI SDK docs: https://ai-sdk.dev/docs
-- Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
 
 ### ChatGPT 提示词大全和万能公式
 
@@ -175,6 +123,58 @@ Source targets:
 - https://ai.google.dev/gemini-api/docs/models/generative-models
 - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
 
+### 大模型部署、本地模型和 API 排错提示词
+
+- Lane: llm-deployment-troubleshooting-prompts
+- Wave: 1
+- Industry bucket: agent-deployment
+- Ready for prompt sprint: true
+- Publish confirm: not-included
+- Audience: 部署大模型 API、本地模型、推理服务和 AI 应用的开发者
+- Demand reason: 大模型部署、API 报错、推理延迟、环境变量和日志排错会带来技术流量，且能和工具服务转化相连。
+
+Review actions:
+- Keep this as a manual review sprint; do not create or edit articles automatically.
+- Use broad, common search phrasing from the lane queries before narrowing to tool-specific keywords.
+- Map one article to one dominant user job so prompt examples do not cannibalize adjacent lanes.
+- Verify every fast-changing model, product, platform, policy, pricing, API, and agent/memory claim against official sources.
+- Add practical prompt inputs, output format, failure checks, and human-review boundaries.
+- Do not claim traffic, ranking, conversion, revenue, or guaranteed productivity gains.
+- Keep candidate drafts as draft/noindex/humanReviewRequired until explicit approval.
+- Review next candidate files: content/blog/vercel-404-after-deploy.mdx, content/blog/vercel-deploy-checklist-template-checklist.mdx, content/blog/vercel-deploy-checklist-template.mdx.
+- Check source targets: https://platform.openai.com/docs/guides/prompt-engineering, https://vercel.com/docs/agents, https://platform.openai.com/docs/guides/agents-sdk.
+
+Search queries:
+- 大模型部署教程
+- LLM API 报错排查
+- OpenAI API error prompt
+- AI 应用部署失败怎么办
+- 大模型推理服务排错
+- AI 环境变量配置教程
+- Vercel AI 应用部署错误
+- LLM 延迟优化检查清单
+- 模型 API 日志分析提示词
+- AI 项目上线 smoke test
+- AI app deployment tutorial
+- OpenAI API deployment
+
+Prompt template samples:
+- 大模型部署、本地模型和 API 排错提示词 - 环境变量检查
+- 大模型部署、本地模型和 API 排错提示词 - API 报错解释
+- 大模型部署、本地模型和 API 排错提示词 - 推理延迟排查
+- 大模型部署、本地模型和 API 排错提示词 - 日志摘要
+- 大模型部署、本地模型和 API 排错提示词 - 上线回滚
+
+Source targets:
+- https://platform.openai.com/docs/guides/prompt-engineering
+- https://vercel.com/docs/agents
+- https://platform.openai.com/docs/guides/agents-sdk
+- https://openai.github.io/openai-agents-js/guides/sandbox-agents/memory/
+- https://docs.langchain.com/oss/python/deepagents/long-term-memory
+- OpenAI API docs: https://platform.openai.com/docs
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
+- Anthropic prompt engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
+
 ### Excel 和数据分析 AI 提示词
 
 - Lane: excel-data-analysis-prompts
@@ -193,7 +193,7 @@ Review actions:
 - Add practical prompt inputs, output format, failure checks, and human-review boundaries.
 - Do not claim traffic, ranking, conversion, revenue, or guaranteed productivity gains.
 - Keep candidate drafts as draft/noindex/humanReviewRequired until explicit approval.
-- Review next candidate files: content/blog/vector-database-beginner-guide.mdx.
+- Review next candidate files: content/blog/vector-database-selection-for-rag-guide.mdx, content/blog/supabase-pgvector-rag-guide.mdx, content/blog/vector-database-beginner-guide.mdx.
 - Check source targets: https://platform.openai.com/docs/guides/prompt-engineering, https://platform.openai.com/docs/guides/prompting, https://support.microsoft.com/en-us/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5.
 
 Search queries:

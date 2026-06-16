@@ -1,6 +1,6 @@
 # Human Approval Clearance Pack
 
-Generated at: 2026-06-16T07:14:54.012Z
+Generated at: 2026-06-16T18:18:46.638Z
 
 This report is read-only. It consolidates the source, SEO, copydesk, and link checks needed before a human reviewer approves any mark:review action.
 
@@ -17,23 +17,23 @@ This report is read-only. It consolidates the source, SEO, copydesk, and link ch
 
 - Current public published: 500
 - Current publishable now: 0
-- Projected public after immediate human approval: 500
+- Projected public after immediate human approval: 503
 - Publish confirm commands included: 0
 
 ## Summary
 
-- approvalItems: 8
-- backlogItems: 5
-- clearanceActions: 72
-- copydeskBriefItems: 4
-- failedSourceDecisionItems: 1
+- approvalItems: 3
+- backlogItems: 0
+- clearanceActions: 28
+- copydeskBriefItems: 2
+- failedSourceDecisionItems: 0
 - immediateItems: 3
-- itemsReadyForClearanceReview: 8
-- massSearchThemeItems: 6
-- popularPromptLaneItems: 5
+- itemsReadyForClearanceReview: 3
+- massSearchThemeItems: 3
+- popularPromptLaneItems: 3
 - publishConfirmCommandsIncluded: 0
-- seoWarningItems: 5
-- sourceDecisionItems: 3
+- seoWarningItems: 1
+- sourceDecisionItems: 1
 - trafficDataAvailable: false
 - unsafeItems: 0
 
@@ -45,197 +45,78 @@ This report is read-only. It consolidates the source, SEO, copydesk, and link ch
 
 | Already published | Immediate | Ready | Priority | Source decisions | Failed source | SEO | Copydesk | Popular lanes | Mass themes | Title | File |
 | --- | --- | --- | ---: | ---: | --- | --- | --- | ---: | ---: | --- | --- |
-| true | true | true | 777 | 0 | false | true | true | 5 | 1 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| true | true | true | 773 | 6 | false | false | true | 4 | 1 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| true | true | true | 769 | 1 | true | false | true | 6 | 1 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
-| true | false | true | 70 | 0 | false | false | true | 0 | 0 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
-| true | false | true | 64 | 0 | false | true | false | 4 | 3 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
-| true | false | true | 64 | 0 | false | true | false | 4 | 2 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
-| true | false | true | 68 | 0 | false | true | false | 0 | 1 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
-| true | false | true | 60 | 2 | false | true | false | 0 | 0 | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+| false | true | true | 446 | 0 | false | false | true | 2 | 1 | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| false | true | true | 439 | 0 | false | true | true | 2 | 1 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| false | true | true | 415 | 5 | false | false | false | 1 | 1 | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
 
 ## Item Actions
 
-### 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
+### RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界
 
-- File: content/blog/ai-model-selection-customer-service-guide.mdx
-- Already published: true
+- File: content/blog/vector-database-selection-for-rag-guide.mdx
+- Already published: false
+- Immediate: true
+- Ready for clearance review: true
+- Source decisions: 0
+- Failed source decision: false
+- SEO warning: false
+- Copydesk brief: true
+- Popular prompt lanes: 2
+- Mass search themes: 1
+
+- Confirm the draft still answers one clear search intent.
+- Verify source-backed claims before any status change.
+- Keep status=draft, noindex=true, and humanReviewRequired=true until approval.
+- Review public internal link suggestion: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).
+- Review proposed meta description from copydesk brief before approval.
+- Check that popular prompt lane framing stays broad enough for real search demand.
+- Check that mass-search theme framing is covered without stuffing keywords.
+- Run mark:review only after explicit human approval; publish confirm remains excluded.
+
+### Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级
+
+- File: content/blog/vercel-ai-gateway-multi-provider-guide.mdx
+- Already published: false
 - Immediate: true
 - Ready for clearance review: true
 - Source decisions: 0
 - Failed source decision: false
 - SEO warning: true
 - Copydesk brief: true
-- Popular prompt lanes: 5
+- Popular prompt lanes: 2
 - Mass search themes: 1
 
-- Confirm the public page still answers one clear search intent.
+- Confirm the draft still answers one clear search intent.
 - Verify source-backed claims before any status change.
-- Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements.
-- SEO: Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- SEO: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- SEO: Confirm description length remains suitable for search snippets after editing.
-- Review public internal link suggestion: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex).
+- Keep status=draft, noindex=true, and humanReviewRequired=true until approval.
+- SEO: Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.
+- SEO: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
+- SEO: Confirm the H1/title/description still answer the same search intent after any metadata change.
+- Review public internal link suggestion: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide).
 - Review proposed meta description from copydesk brief before approval.
 - Check that popular prompt lane framing stays broad enough for real search demand.
 - Check that mass-search theme framing is covered without stuffing keywords.
 - Run mark:review only after explicit human approval; publish confirm remains excluded.
 
-### AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查
+### Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索
 
-- File: content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
-- Already published: true
+- File: content/blog/supabase-pgvector-rag-guide.mdx
+- Already published: false
 - Immediate: true
 - Ready for clearance review: true
-- Source decisions: 6
+- Source decisions: 5
 - Failed source decision: false
 - SEO warning: false
-- Copydesk brief: true
-- Popular prompt lanes: 4
+- Copydesk brief: false
+- Popular prompt lanes: 1
 - Mass search themes: 1
 
-- Confirm the public page still answers one clear search intent.
+- Confirm the draft still answers one clear search intent.
 - Verify source-backed claims before any status change.
-- Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements.
+- Keep status=draft, noindex=true, and humanReviewRequired=true until approval.
 - Review redirect https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction and approve or replace during human review.
+- Review redirect https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/ and approve or replace during human review.
 - Review redirect https://platform.openai.com/docs -> https://developers.openai.com/api/docs and approve or replace during human review.
-- Review redirect https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents and approve or replace during human review.
-- Review public internal link suggestion: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).
-- Review proposed meta description from copydesk brief before approval.
 - Check that popular prompt lane framing stays broad enough for real search demand.
 - Check that mass-search theme framing is covered without stuffing keywords.
-- Run mark:review only after explicit human approval; publish confirm remains excluded.
-
-### 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用
-
-- File: content/blog/industry-ai-prompts-template-library-2026.mdx
-- Already published: true
-- Immediate: true
-- Ready for clearance review: true
-- Source decisions: 1
-- Failed source decision: true
-- SEO warning: false
-- Copydesk brief: true
-- Popular prompt lanes: 6
-- Mass search themes: 1
-
-- Confirm the public page still answers one clear search intent.
-- Verify source-backed claims before any status change.
-- Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements.
-- Resolve failed source URL https://ai-prompts-pro.com/blog/ai-prompt-templates-business; recommended candidate: Microsoft Copilot Prompt Gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/.
-- Review public internal link suggestion: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner).
-- Review proposed meta description from copydesk brief before approval.
-- Check that popular prompt lane framing stays broad enough for real search demand.
-- Check that mass-search theme framing is covered without stuffing keywords.
-- Run mark:review only after explicit human approval; publish confirm remains excluded.
-
-### 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查
-
-- File: content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx
-- Already published: true
-- Immediate: false
-- Ready for clearance review: true
-- Source decisions: 0
-- Failed source decision: false
-- SEO warning: false
-- Copydesk brief: true
-- Popular prompt lanes: 0
-- Mass search themes: 0
-
-- Confirm the public page still answers one clear search intent.
-- Verify source-backed claims before any status change.
-- Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements.
-- Review public internal link suggestion: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).
-- Review proposed meta description from copydesk brief before approval.
-- Run mark:review only after explicit human approval; publish confirm remains excluded.
-
-### n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储
-
-- File: content/blog/n8n-ai-agent-rag-memory-guide.mdx
-- Already published: true
-- Immediate: false
-- Ready for clearance review: true
-- Source decisions: 0
-- Failed source decision: false
-- SEO warning: true
-- Copydesk brief: false
-- Popular prompt lanes: 4
-- Mass search themes: 3
-
-- Confirm the public page still answers one clear search intent.
-- Verify source-backed claims before any status change.
-- Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements.
-- SEO: Check whether the title can naturally include the exact primary keyword: n8n AI Agent 知识库记忆.
-- SEO: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Check that popular prompt lane framing stays broad enough for real search demand.
-- Check that mass-search theme framing is covered without stuffing keywords.
-- Run mark:review only after explicit human approval; publish confirm remains excluded.
-
-### MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单
-
-- File: content/blog/mcp-server-deployment-security-checklist.mdx
-- Already published: true
-- Immediate: false
-- Ready for clearance review: true
-- Source decisions: 0
-- Failed source decision: false
-- SEO warning: true
-- Copydesk brief: false
-- Popular prompt lanes: 4
-- Mass search themes: 2
-
-- Confirm the public page still answers one clear search intent.
-- Verify source-backed claims before any status change.
-- Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements.
-- SEO: Check whether the title can naturally include the exact primary keyword: MCP Server 部署安全.
-- SEO: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Check that popular prompt lane framing stays broad enough for real search demand.
-- Check that mass-search theme framing is covered without stuffing keywords.
-- Run mark:review only after explicit human approval; publish confirm remains excluded.
-
-### AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急
-
-- File: content/blog/ai-api-key-security-rotation-guide.mdx
-- Already published: true
-- Immediate: false
-- Ready for clearance review: true
-- Source decisions: 0
-- Failed source decision: false
-- SEO warning: true
-- Copydesk brief: false
-- Popular prompt lanes: 0
-- Mass search themes: 1
-
-- Confirm the public page still answers one clear search intent.
-- Verify source-backed claims before any status change.
-- Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements.
-- SEO: Check whether the title can naturally include the exact primary keyword: AI API Key 安全管理.
-- SEO: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO: Confirm the H1/title/description still answer the same search intent after any metadata change.
-- Check that mass-search theme framing is covered without stuffing keywords.
-- Run mark:review only after explicit human approval; publish confirm remains excluded.
-
-### Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志
-
-- File: content/blog/agent-tool-permission-safety-guide.mdx
-- Already published: true
-- Immediate: false
-- Ready for clearance review: true
-- Source decisions: 2
-- Failed source decision: false
-- SEO warning: true
-- Copydesk brief: false
-- Popular prompt lanes: 0
-- Mass search themes: 0
-
-- Confirm the public page still answers one clear search intent.
-- Verify source-backed claims before any status change.
-- Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements.
-- Review redirect https://docs.helicone.ai/ -> https://docs.helicone.ai/getting-started/quick-start and approve or replace during human review.
-- Review redirect https://docs.ragas.io/ -> https://docs.ragas.io/en/stable/ and approve or replace during human review.
-- SEO: Check whether the title can naturally include the exact primary keyword: Agent 工具权限控制.
-- SEO: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Run mark:review only after explicit human approval; publish confirm remains excluded.

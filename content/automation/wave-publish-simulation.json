@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T06:47:11.322Z",
+  "generatedAt": "2026-06-16T18:18:29.338Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -8,12 +8,12 @@
   },
   "summary": {
     "currentlyPublishable": 0,
-    "alreadyPublished": 3,
+    "alreadyPublished": 0,
     "items": 3,
-    "projectedPublicPublishedAfterWave": 500,
-    "projectedPublishableAfterHumanApproval": 0,
+    "projectedPublicPublishedAfterWave": 503,
+    "projectedPublishableAfterHumanApproval": 3,
     "publicPublishedBeforeWave": 500,
-    "readyForHumanApproval": 0,
+    "readyForHumanApproval": 3,
     "unsafeItems": 0,
     "wave": 1
   },
@@ -25,7 +25,7 @@
     },
     "currentPublicPublished": 500,
     "currentPublishableNow": 0,
-    "projectedPublicPublishedAfterWave": 500
+    "projectedPublicPublishedAfterWave": 503
   },
   "executionPlan": {
     "beforeApproval": "Read docs/wave-approval-packet.md and this simulation. Do not run confirm commands until a human approves each file.",
@@ -36,67 +36,67 @@
   },
   "items": [
     {
-      "alreadyPublished": true,
+      "alreadyPublished": false,
       "blockers": [],
       "commands": {
-        "markReviewDryRun": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx",
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
-        "publishDryRunAfterReviewApproval": "npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx",
-        "publishConfirmAfterReviewApproval": "npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm"
+        "markReviewDryRun": "npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm-human",
+        "publishDryRunAfterReviewApproval": "npm run publish:articles -- --file=content/blog/vector-database-selection-for-rag-guide.mdx",
+        "publishConfirmAfterReviewApproval": "npm run publish:articles -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm"
       },
-      "currentStatus": "published",
-      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "currentStatus": "draft",
+      "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
       "humanReviewRequired": true,
-      "noindex": false,
+      "noindex": true,
       "officialSourceTargets": 8,
-      "projectedPublishableAfterHumanApproval": false,
+      "projectedPublishableAfterHumanApproval": true,
       "qualityIssues": [],
       "qualityScore": 100,
-      "readyForHumanApproval": false,
-      "riskReviewChecklist": 8,
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
+      "readyForHumanApproval": true,
+      "riskReviewChecklist": 6,
+      "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界"
     },
     {
-      "alreadyPublished": true,
+      "alreadyPublished": false,
       "blockers": [],
       "commands": {
-        "markReviewDryRun": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
-        "publishDryRunAfterReviewApproval": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-        "publishConfirmAfterReviewApproval": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm"
+        "markReviewDryRun": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
+        "publishDryRunAfterReviewApproval": "npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+        "publishConfirmAfterReviewApproval": "npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm"
       },
-      "currentStatus": "published",
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "currentStatus": "draft",
+      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
       "humanReviewRequired": true,
-      "noindex": false,
-      "officialSourceTargets": 6,
-      "projectedPublishableAfterHumanApproval": false,
+      "noindex": true,
+      "officialSourceTargets": 7,
+      "projectedPublishableAfterHumanApproval": true,
       "qualityIssues": [],
       "qualityScore": 100,
-      "readyForHumanApproval": false,
+      "readyForHumanApproval": true,
       "riskReviewChecklist": 6,
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
     },
     {
-      "alreadyPublished": true,
+      "alreadyPublished": false,
       "blockers": [],
       "commands": {
-        "markReviewDryRun": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
-        "publishDryRunAfterReviewApproval": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
-        "publishConfirmAfterReviewApproval": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm"
+        "markReviewDryRun": "npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx --confirm-human",
+        "publishDryRunAfterReviewApproval": "npm run publish:articles -- --file=content/blog/supabase-pgvector-rag-guide.mdx",
+        "publishConfirmAfterReviewApproval": "npm run publish:articles -- --file=content/blog/supabase-pgvector-rag-guide.mdx --confirm"
       },
-      "currentStatus": "published",
-      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "currentStatus": "draft",
+      "file": "content/blog/supabase-pgvector-rag-guide.mdx",
       "humanReviewRequired": true,
-      "noindex": false,
-      "officialSourceTargets": 4,
-      "projectedPublishableAfterHumanApproval": false,
+      "noindex": true,
+      "officialSourceTargets": 7,
+      "projectedPublishableAfterHumanApproval": true,
       "qualityIssues": [],
       "qualityScore": 100,
-      "readyForHumanApproval": false,
-      "riskReviewChecklist": 6,
-      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+      "readyForHumanApproval": true,
+      "riskReviewChecklist": 5,
+      "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索"
     }
   ]
 }

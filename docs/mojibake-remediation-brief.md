@@ -1,6 +1,6 @@
 # Mojibake Remediation Brief
 
-Generated at: 2026-06-16T05:26:29.082Z
+Generated at: 2026-06-16T18:18:50.228Z
 
 Read-only queue for likely garbled Chinese article metadata and body excerpts. It does not edit articles, mark review, publish, or claim traffic.
 
@@ -36,7 +36,12 @@ Read-only queue for likely garbled Chinese article metadata and body excerpts. I
 
 | Priority | Status | Noindex | Immediate | Executive | Lanes | Fields | File |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| 140 | published | false | false | false | internal-link-sprint | bodyExcerpt | content/blog/daily-ai-freelance-practice-log.mdx |
 | 140 | published | false | false | false | internal-link-sprint | bodyExcerpt | content/blog/llm-cost-monitoring-dashboard-guide.mdx |
+| 140 | published | false | false | false | internal-link-sprint | bodyExcerpt | content/blog/node-version-mismatch-fix-freelance-scope.mdx |
+| 140 | published | false | false | false | internal-link-sprint | description, bodyExcerpt | content/blog/node-version-mismatch-fix-mistakes.mdx |
+| 140 | published | false | false | false | internal-link-sprint | description | content/blog/permission-denied-fix-checklist.mdx |
+| 140 | published | false | false | false | internal-link-sprint | bodyExcerpt | content/blog/ray-serve-llm-deployment-guide.mdx |
 | 100 | published | false | false | false | none | bodyExcerpt | content/blog/ai-ppt-beginner-guide.mdx |
 | 100 | published | false | false | false | none | bodyExcerpt | content/blog/ai-small-project-practice-topics-checklist.mdx |
 | 100 | published | false | false | false | none | description, bodyExcerpt | content/blog/ai-tools-recommendation-beginner.mdx |
@@ -56,13 +61,16 @@ Read-only queue for likely garbled Chinese article metadata and body excerpts. I
 | 100 | published | false | false | false | none | bodyExcerpt | content/blog/claude-code-small-project-tasks.mdx |
 | 100 | published | false | false | false | none | bodyExcerpt | content/blog/claude-code-vs-codex-web-editing-checklist.mdx |
 | 100 | published | false | false | false | none | description, bodyExcerpt | content/blog/codex-automation-steps-not-skip-mistakes.mdx |
-| 100 | published | false | false | false | none | bodyExcerpt | content/blog/codex-automation-steps-not-skip.mdx |
-| 100 | published | false | false | false | none | bodyExcerpt | content/blog/codex-edit-existing-ui-mistakes.mdx |
-| 100 | published | false | false | false | none | bodyExcerpt | content/blog/codex-first-day-guide-checklist.mdx |
-| 100 | published | false | false | false | none | bodyExcerpt | content/blog/codex-first-landing-page-freelance-scope.mdx |
-| 100 | published | false | false | false | none | bodyExcerpt | content/blog/codex-install-failed-beginner-fix.mdx |
 
 ## Top Samples
+
+### content/blog/daily-ai-freelance-practice-log.mdx
+
+- Status/noindex: published/false
+- Preserve status: true
+- Publish confirm: not-included
+- Fields: bodyExcerpt
+- Sample: 不要只写“问了 AI”。要写清楚你给了什么上下文、AI 给了什么方案、你采纳了哪一部分、你拒绝了哪一部分。这样才能证明你不是盲目复制。
 
 ### content/blog/llm-cost-monitoring-dashboard-guide.mdx
 
@@ -71,6 +79,38 @@ Read-only queue for likely garbled Chinese article metadata and body excerpts. I
 - Publish confirm: not-included
 - Fields: bodyExcerpt
 - Sample: AI 应用刚上线时，大家关心效果；用起来以后，成本问题会很快冒出来。哪个功能最贵，哪个用户消耗最多，哪个模型延迟最高，哪个 Agent 反复调用工具，哪些请求应该缓存，哪些批量任务应该改成异步，这些问题如果没有成本监控，就只能靠猜。大模型成本看板不是财务报表，而是产品和工程优化工具。
+
+### content/blog/node-version-mismatch-fix-freelance-scope.mdx
+
+- Status/noindex: published/false
+- Preserve status: true
+- Publish confirm: not-included
+- Fields: bodyExcerpt
+- Sample: 如果任务只允许诊断，就不要承诺修复所有环境。交付物可以是版本差异表、建议目标版本、复测命令和客户待办。对新手来说，这种清楚的诊断单比盲目改生产平台更可靠。
+
+### content/blog/node-version-mismatch-fix-mistakes.mdx
+
+- Status/noindex: published/false
+- Preserve status: true
+- Publish confirm: not-included
+- Fields: description, bodyExcerpt
+- Sample: 整理新手处理 Node 版本不匹配时的常见错误：盲目升级、删除锁文件、混用包管理器、忽略 CI 和部署平台版本、把客户配置当代码问题，并给出修正步骤。
+
+### content/blog/permission-denied-fix-checklist.mdx
+
+- Status/noindex: published/false
+- Preserve status: true
+- Publish confirm: not-included
+- Fields: description
+- Sample: permission denied 报错处理前，新手要检查命令、路径、用户、权限类型、Git/SSH 账号、部署环境和客户授权边界，避免盲目提权。
+
+### content/blog/ray-serve-llm-deployment-guide.mdx
+
+- Status/noindex: published/false
+- Preserve status: true
+- Publish confirm: not-included
+- Fields: bodyExcerpt
+- Sample: 扩容前先看瓶颈在哪里。盲目加 GPU 不一定解决提示词过长、批处理不合理或模型选择不当的问题。
 
 ### content/blog/ai-ppt-beginner-guide.mdx
 
@@ -103,44 +143,4 @@ Read-only queue for likely garbled Chinese article metadata and body excerpts. I
 - Publish confirm: not-included
 - Fields: bodyExcerpt
 - Sample: 不要为了拿下第一单就接受所有要求。第一次项目最重要的是形成可复用流程，而不是冒险碰高权限任务。凡是涉及客户账号、密钥、付款、隐私数据和生产环境的需求，都应该先暂停确认。
-
-### content/blog/build-first-webpage-with-codex.mdx
-
-- Status/noindex: published/false
-- Preserve status: true
-- Publish confirm: not-included
-- Fields: bodyExcerpt
-- Sample: 常见错误一，是把 AI 生成的 Proposal 原文直接发送。这样很容易出现你不会做却承诺会做的内容。常见错误二，是看到客户预算低就盲目压价，结果沟通、修改和部署花掉更多时间。常见错误三，是忽略平台规则，例如诱导站外付款、批量骚扰式发送、虚假案例，这些都可能伤害账号安全。常见错误四，是没有保存交付过程，最后客户问起修改内容时说不清楚。
-
-### content/blog/canva-portfolio-cover-tips-checklist.mdx
-
-- Status/noindex: published/false
-- Preserve status: true
-- Publish confirm: not-included
-- Fields: bodyExcerpt
-- Sample: 不要用 AI 生成图像冒充真实项目结果。如果是 AI 辅助生成的视觉稿，要标明用途和限制。作品集的核心是你的过程和判断，不是让客户误以为所有画面都来自真实项目。
-
-### content/blog/claude-code-beginner-mistakes-checklist.mdx
-
-- Status/noindex: published/false
-- Preserve status: true
-- Publish confirm: not-included
-- Fields: bodyExcerpt
-- Sample: 诊断不是退缩。对新手来说，能判断“现在不能直接修”，比盲目接下高风险任务更专业。
-
-### content/blog/claude-code-beginner-mistakes-mistakes.mdx
-
-- Status/noindex: published/false
-- Preserve status: true
-- Publish confirm: not-included
-- Fields: bodyExcerpt
-- Sample: 如果检查失败，也要记录失败原因。失败不是坏事，它说明你还在验证，而不是盲目交付。客户看到清楚的失败记录和下一步建议，通常比看到一句含糊的“还在处理中”更容易理解。
-
-### content/blog/claude-code-beginner-use-cases-checklist.mdx
-
-- Status/noindex: published/false
-- Preserve status: true
-- Publish confirm: not-included
-- Fields: bodyExcerpt
-- Sample: 如果清单里有两三项回答不清楚，不要硬接。可以把任务降级为诊断：先阅读脱敏材料、整理可能原因、列出缺失信息和下一步建议。诊断比盲目修复更适合信息不足的情况。
 

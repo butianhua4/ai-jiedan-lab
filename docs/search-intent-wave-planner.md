@@ -1,6 +1,6 @@
 # Search Intent Wave Planner
 
-Generated at: 2026-06-16T12:27:14.092Z
+Generated at: 2026-06-16T18:18:14.594Z
 
 This report is read-only. It expands the current approval packet into a continuous human-review wave queue across broad AI search-intent lanes.
 
@@ -39,9 +39,9 @@ This report is read-only. It expands the current approval packet into a continuo
 
 | Ready | Safe draft | Lane score | Quality | Batch | Lane | Primary keyword | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | true | 224 | 100 | 25 | RAG, knowledge base, and Agent memory | RAG 向量数据库怎么选 | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| true | true | 180 | 100 | 34 | Model API integration, rate limits, and multi-model fallback | Vercel AI Gateway 多模型 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| true | true | 224 | 100 | 24 | RAG, knowledge base, and Agent memory | Supabase pgvector | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
+| true | true | 208 | 100 | 25 | RAG, knowledge base, and Agent memory | RAG 向量数据库怎么选 | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| true | true | 172 | 100 | 34 | Model API integration, rate limits, and multi-model fallback | Vercel AI Gateway 多模型 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| true | true | 208 | 100 | 24 | RAG, knowledge base, and Agent memory | Supabase pgvector | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
 
 Review focus:
 
@@ -73,7 +73,7 @@ Risk checks:
 - Retrieval quality, citations, memory retention, privacy, and hallucination risks are explicit.
 - Article-specific operational and safety boundaries are explicit.
 
-## Wave 2: AI automation service pricing, scope, and delivery checklist + Large model deployment, LLM serving, and GPU infrastructure + AI Agent deployment, tool calling, and production workflow
+## Wave 2: Large model deployment, LLM serving, and GPU infrastructure + AI automation service pricing, scope, and delivery checklist + AI Agent deployment, tool calling, and production workflow
 
 - Items: 3
 - Ready items: 3
@@ -82,21 +82,21 @@ Risk checks:
 
 | Ready | Safe draft | Lane score | Quality | Batch | Lane | Primary keyword | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | true | 186 | 86 | 29 | AI automation service pricing, scope, and delivery checklist | TensorRT-LLM 入门 | TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收 | content/blog/tensorrt-llm-beginner-guide.mdx |
-| true | true | 180 | 86 | 22 | Large model deployment, LLM serving, and GPU infrastructure | vLLM 部署 | vLLM 部署适合什么场景：新手先看推理服务边界 | content/blog/vllm-deployment-beginner-guide.mdx |
+| true | true | 180 | 86 | 29 | Large model deployment, LLM serving, and GPU infrastructure | TensorRT-LLM 入门 | TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收 | content/blog/tensorrt-llm-beginner-guide.mdx |
+| true | true | 178 | 86 | 22 | AI automation service pricing, scope, and delivery checklist | vLLM 部署 | vLLM 部署适合什么场景：新手先看推理服务边界 | content/blog/vllm-deployment-beginner-guide.mdx |
 | true | true | 170 | 86 | 26 | AI Agent deployment, tool calling, and production workflow | Vercel AI SDK 聊天机器人部署 | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
 
 Review focus:
 
+- GPU and memory requirements
+- serving framework versions
+- cold start and concurrency
+- cost boundaries
 - scope boundaries
 - acceptance criteria
 - maintenance fee
 - risk disclaimers
 - no income guarantees
-- GPU and memory requirements
-- serving framework versions
-- cold start and concurrency
-- cost boundaries
 - tool permission boundaries
 - loop control and stop conditions
 - human handoff
@@ -104,12 +104,12 @@ Review focus:
 
 Source targets:
 
-- OpenAI API docs: https://platform.openai.com/docs
-- Vercel AI SDK docs: https://ai-sdk.dev/docs
-- Dify docs: https://docs.dify.ai
 - Hugging Face docs: https://huggingface.co/docs
 - vLLM docs: https://docs.vllm.ai
+- OpenAI API docs: https://platform.openai.com/docs
 - Modal docs: https://modal.com/docs
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
+- Dify docs: https://docs.dify.ai
 - OpenAI Agents: https://platform.openai.com/docs/guides/agents
 - OpenAI Agents SDK: https://platform.openai.com/docs/guides/agents-sdk
 - Vercel AI SDK Agents: https://ai-sdk.dev/docs/agents
@@ -120,8 +120,8 @@ Risk checks:
 - No measured traffic, ranking, income, approval, or client acquisition claim is made without evidence.
 - No API key, private customer data, credential, or bypass instruction is included.
 - Fast-changing model names, quotas, pricing, limits, and platform features are checked against official docs.
-- Article-specific operational and safety boundaries are explicit.
 - GPU, memory, serving, concurrency, cold-start, and cost tradeoffs are framed as checks, not guarantees.
+- Article-specific operational and safety boundaries are explicit.
 - Agent permissions, tool allowlists, human approval, logs, and rollback boundaries are explicit.
 
 ## Wave 3: AI app deployment errors and beginner troubleshooting + LLM observability, evaluation, and production quality + RAG, knowledge base, and Agent memory
@@ -135,7 +135,7 @@ Risk checks:
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | true | 170 | 86 | 15 | AI app deployment errors and beginner troubleshooting | Vercel 部署后 404 检查清单 | Vercel 部署后 404 检查清单：逐页验收更稳 | content/blog/vercel-404-after-deploy-checklist.mdx |
 | true | true | 126 | 86 | 13 | LLM observability, evaluation, and production quality | Vercel build failed 排查清单 | Vercel build failed 排查清单：从日志到重新部署 | content/blog/vercel-build-failed-causes-checklist.mdx |
-| true | true | 224 | 86 | 27 | RAG, knowledge base, and Agent memory | Together AI API 接入 | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
+| true | true | 208 | 86 | 27 | RAG, knowledge base, and Agent memory | Together AI API 接入 | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
 
 Review focus:
 
@@ -183,8 +183,8 @@ Risk checks:
 
 | Ready | Safe draft | Lane score | Quality | Batch | Lane | Primary keyword | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | true | 224 | 86 | 21 | RAG, knowledge base, and Agent memory | 向量数据库 | 向量数据库怎么选：新手先理解 embedding 和检索 | content/blog/vector-database-beginner-guide.mdx |
-| true | true | 186 | 86 | 13 | AI automation service pricing, scope, and delivery checklist | Vercel build failed 项目 | Vercel build failed 排查能不能项目：先看这 7 个边界 | content/blog/vercel-build-failed-causes-freelance-scope.mdx |
+| true | true | 208 | 86 | 21 | RAG, knowledge base, and Agent memory | 向量数据库 | 向量数据库怎么选：新手先理解 embedding 和检索 | content/blog/vector-database-beginner-guide.mdx |
+| true | true | 178 | 86 | 13 | AI automation service pricing, scope, and delivery checklist | Vercel build failed 项目 | Vercel build failed 排查能不能项目：先看这 7 个边界 | content/blog/vercel-build-failed-causes-freelance-scope.mdx |
 | true | true | 170 | 86 | 15 | AI app deployment errors and beginner troubleshooting | Vercel 部署成功但 404 | Vercel 部署成功但页面 404：新手排查顺序 | content/blog/vercel-404-after-deploy.mdx |
 
 Review focus:

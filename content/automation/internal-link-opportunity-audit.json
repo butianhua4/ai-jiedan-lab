@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T05:22:47.489Z",
+  "generatedAt": "2026-06-16T18:18:04.006Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -7,12 +7,12 @@
     "note": "Read-only internal-link opportunity audit. It does not edit article body links or publish content."
   },
   "summary": {
-    "broadFirstCoverageItems": 8,
+    "broadFirstCoverageItems": 0,
     "broadFirstCoverageItemsMissingPublicLinkSuggestion": 0,
-    "candidateItems": 22,
+    "candidateItems": 19,
     "candidateItemsMissingPublicLinkSuggestion": 0,
-    "candidateItemsWithPublicSuggestions": 22,
-    "expansionItems": 19,
+    "candidateItemsWithPublicSuggestions": 19,
+    "expansionItems": 15,
     "publicArticles": 500,
     "recommendedItems": 3,
     "waveItems": 3,
@@ -20,67 +20,11 @@
   },
   "candidateItems": [
     {
-      "currentInternalLinks": 3,
-      "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-      "linksToPublicArticles": 2,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "broad-first-coverage"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent, 安全; keyword overlap: agent, ai, 基建, 安全, 工具, 怎么",
-          "score": 94,
-          "slug": "mcp-server-deployment-security-checklist",
-          "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
-          "url": "/blog/mcp-server-deployment-security-checklist"
-        },
-        {
-          "file": "content/blog/agent-human-review-loop-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent; keyword overlap: agent, ai, 基建, 怎么, 流程, 自动",
-          "score": 86,
-          "slug": "agent-human-review-loop-guide",
-          "title": "Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认",
-          "url": "/blog/agent-human-review-loop-guide"
-        },
-        {
-          "file": "content/blog/agent-deployment-beginner-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent; keyword overlap: agent, ai, 基建, 怎么, 么做, 上线",
-          "score": 78,
-          "slug": "agent-deployment-beginner-guide",
-          "title": "Agent 部署怎么做：从聊天助手到可上线工作流",
-          "url": "/blog/agent-deployment-beginner-guide"
-        },
-        {
-          "file": "content/blog/agent-memory-postgres-schema-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent; keyword overlap: agent, ai, 基建, 怎么, 数据, 据库",
-          "score": 74,
-          "slug": "agent-memory-postgres-schema-guide",
-          "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
-          "url": "/blog/agent-memory-postgres-schema-guide"
-        },
-        {
-          "file": "content/blog/n8n-ai-agent-self-host-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent; keyword overlap: agent, ai, 基建, 开始, 怎么, 边界",
-          "score": 74,
-          "slug": "n8n-ai-agent-self-host-guide",
-          "title": "n8n AI Agent 自托管怎么开始：别只会拖节点，要先管边界",
-          "url": "/blog/n8n-ai-agent-self-host-guide"
-        }
-      ],
-      "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志"
-    },
-    {
       "currentInternalLinks": 6,
       "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
       "linksToPublicArticles": 2,
       "missingPublicLinkSuggestion": false,
       "scopes": [
-        "broad-first-coverage",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "status": "published",
@@ -129,174 +73,11 @@
       "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
     },
     {
-      "currentInternalLinks": 6,
-      "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
-      "linksToPublicArticles": 3,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "expansion"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/agent-memory-design-guide.mdx",
-          "reason": "shared tags: AI Agent, RAG; keyword overlap: ai, agent, rag, 短期记忆, 记忆, 忆和",
-          "score": 76,
-          "slug": "agent-memory-design-guide",
-          "title": "Agent 记忆怎么设计：短期记忆、长期记忆和用户偏好",
-          "url": "/blog/agent-memory-design-guide"
-        },
-        {
-          "file": "content/blog/agent-memory-postgres-schema-guide.mdx",
-          "reason": "shared tags: AI Agent; keyword overlap: ai, agent, 怎么设计, 长期记忆, 记忆, 怎么",
-          "score": 72,
-          "slug": "agent-memory-postgres-schema-guide",
-          "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
-          "url": "/blog/agent-memory-postgres-schema-guide"
-        },
-        {
-          "file": "content/blog/rag-knowledge-base-beginner-guide.mdx",
-          "reason": "shared tags: RAG, 知识库; keyword overlap: ai, rag, 知识库, 怎么, 知识, 识库",
-          "score": 68,
-          "slug": "rag-knowledge-base-beginner-guide",
-          "title": "RAG 知识库怎么搭：文档、切分、检索和回答复核",
-          "url": "/blog/rag-knowledge-base-beginner-guide"
-        },
-        {
-          "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-          "reason": "shared tags: AI Agent, RAG; keyword overlap: ai, agent, rag, 记忆, 怎么, 知识",
-          "score": 60,
-          "slug": "n8n-ai-agent-rag-memory-guide",
-          "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
-          "url": "/blog/n8n-ai-agent-rag-memory-guide"
-        },
-        {
-          "file": "content/blog/rag-chunking-strategy-guide.mdx",
-          "reason": "shared tags: RAG, 知识库; keyword overlap: ai, rag, 知识库, 怎么, 知识, 识库",
-          "score": 60,
-          "slug": "rag-chunking-strategy-guide",
-          "title": "RAG 文档切分怎么做：chunk 太大太小都会影响检索",
-          "url": "/blog/rag-chunking-strategy-guide"
-        }
-      ],
-      "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界"
-    },
-    {
-      "currentInternalLinks": 3,
-      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-      "linksToPublicArticles": 2,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "broad-first-coverage",
-        "expansion"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/dify-workflow-error-handling-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, dify, 怎么, 变量, 重试",
-          "score": 78,
-          "slug": "dify-workflow-error-handling-guide",
-          "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
-          "url": "/blog/dify-workflow-error-handling-guide"
-        },
-        {
-          "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, 模型, 怎么, 项目, 大模",
-          "score": 74,
-          "slug": "llm-cost-monitoring-dashboard-guide",
-          "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
-          "url": "/blog/llm-cost-monitoring-dashboard-guide"
-        },
-        {
-          "file": "content/blog/n8n-ai-agent-webhook-production-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, agent, 队列, n8n, 怎么",
-          "score": 70,
-          "slug": "n8n-ai-agent-webhook-production-guide",
-          "title": "n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试",
-          "url": "/blog/n8n-ai-agent-webhook-production-guide"
-        },
-        {
-          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, api, 部署, 模型, 怎么, 大模",
-          "score": 66,
-          "slug": "llm-deployment-huggingface-inference-endpoints-guide",
-          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-          "url": "/blog/llm-deployment-huggingface-inference-endpoints-guide"
-        },
-        {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, agent, 知识库, 模型, 知识",
-          "score": 62,
-          "slug": "ai-model-selection-customer-service-guide",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "/blog/ai-model-selection-customer-service-guide"
-        }
-      ],
-      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
-    },
-    {
-      "currentInternalLinks": 3,
-      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-      "linksToPublicArticles": 1,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "expansion"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx",
-          "reason": "shared tags: AI 自动化; keyword overlap: ai, 自动化, 自动, 动化, 化项, 项目",
-          "score": 64,
-          "slug": "ai-freelance-automation-compliance-risk-mistakes",
-          "title": "AI 自动化项目常见合规错误和解决步骤",
-          "url": "/blog/ai-freelance-automation-compliance-risk-mistakes"
-        },
-        {
-          "file": "content/blog/dify-workflow-error-handling-guide.mdx",
-          "reason": "shared tags: Dify; keyword overlap: ai, dify, 工作流, 部署, 错误处理, 怎么",
-          "score": 64,
-          "slug": "dify-workflow-error-handling-guide",
-          "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
-          "url": "/blog/dify-workflow-error-handling-guide"
-        },
-        {
-          "file": "content/blog/codex-client-requirement-questions-freelance-scope.mdx",
-          "reason": "keyword overlap: ai, 项目, 怎么, 清楚, 工具, 具实",
-          "score": 63,
-          "slug": "codex-client-requirement-questions-freelance-scope",
-          "title": "Codex 需求不清楚的任务使用前怎么判断是否适合",
-          "url": "/blog/codex-client-requirement-questions-freelance-scope"
-        },
-        {
-          "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
-          "reason": "shared tags: Dify; keyword overlap: ai, dify, agent, 部署, 怎么, 工具",
-          "score": 60,
-          "slug": "dify-workflow-vs-agent-guide",
-          "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
-          "url": "/blog/dify-workflow-vs-agent-guide"
-        },
-        {
-          "file": "content/blog/enterprise-im-ai-agent-integration-guide.mdx",
-          "reason": "keyword overlap: ai, agent, 企业微信, 部署, 权限, 权限和人工接管",
-          "score": 60,
-          "slug": "enterprise-im-ai-agent-integration-guide",
-          "title": "企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管",
-          "url": "/blog/enterprise-im-ai-agent-integration-guide"
-        }
-      ],
-      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
-    },
-    {
       "currentInternalLinks": 4,
       "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "linksToPublicArticles": 3,
       "missingPublicLinkSuggestion": false,
       "scopes": [
-        "broad-first-coverage",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "status": "published",
@@ -345,1464 +126,1072 @@
       "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
     },
     {
-      "currentInternalLinks": 3,
-      "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
+      "currentInternalLinks": 6,
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
       "linksToPublicArticles": 2,
       "missingPublicLinkSuggestion": false,
       "scopes": [
-        "expansion"
+        "wave-1"
       ],
       "status": "published",
       "suggestions": [
         {
-          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
-          "reason": "same category: AI 提示词; shared tags: AI 提示词, SOP; keyword overlap: ai, 提示词, sop, 运营, 提示词模板, 销售",
+          "file": "content/blog/sales-ai-prompts-guide.mdx",
+          "reason": "same category: AI 提示词; keyword overlap: ai, 销售, 提示词, 提示词模板, 提示, 示词",
+          "score": 114,
+          "slug": "sales-ai-prompts-guide",
+          "title": "销售 AI 提示词模板：客户画像、跟进话术、异议处理和会议纪要",
+          "url": "/blog/sales-ai-prompts-guide"
+        },
+        {
+          "file": "content/blog/ai-prompt-framework-business-guide.mdx",
+          "reason": "same category: AI 提示词; shared tags: AI 提示词; keyword overlap: ai, 提示词, 行业, 全行, 提示, 示词",
+          "score": 90,
+          "slug": "ai-prompt-framework-business-guide",
+          "title": "AI 提示词怎么写才好用：全行业都能套的 5 段式框架",
+          "url": "/blog/ai-prompt-framework-business-guide"
+        },
+        {
+          "file": "content/blog/customer-service-ai-prompts-guide.mdx",
+          "reason": "same category: AI 提示词; keyword overlap: ai, 客服, 提示词, 提示词模板, 提示, 示词",
+          "score": 90,
+          "slug": "customer-service-ai-prompts-guide",
+          "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
+          "url": "/blog/customer-service-ai-prompts-guide"
+        },
+        {
+          "file": "content/blog/marketing-ai-prompts-guide.mdx",
+          "reason": "same category: AI 提示词; keyword overlap: ai, 运营, 提示词, 提示词模板, 广告文案, 提示",
+          "score": 90,
+          "slug": "marketing-ai-prompts-guide",
+          "title": "营销 AI 提示词模板：选题、广告文案、SEO 和活动复盘怎么写",
+          "url": "/blog/marketing-ai-prompts-guide"
+        },
+        {
+          "file": "content/blog/operations-ai-prompts-guide.mdx",
+          "reason": "same category: AI 提示词; shared tags: SOP; keyword overlap: ai, 运营, 提示词, 提示词模板, sop, 周报",
+          "score": 90,
+          "slug": "operations-ai-prompts-guide",
+          "title": "运营 AI 提示词模板：周报、SOP、活动计划、复盘和数据解释",
+          "url": "/blog/operations-ai-prompts-guide"
+        }
+      ],
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/subscription-payment-failed-message.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/subscription-payment-failed-message-checklist.mdx",
+          "reason": "same category: 收款工具; shared tags: 收款工具, 订阅支付, AI 工具实践, 新手教程; keyword overlap: 订阅支付失败怎么和客户沟通, 收款工具, 订阅支付, ai, 工具实践, 新手教程",
+          "score": 170,
+          "slug": "subscription-payment-failed-message-checklist",
+          "title": "订阅支付失败怎么和客户沟通：新手检查清单",
+          "url": "/blog/subscription-payment-failed-message-checklist"
+        },
+        {
+          "file": "content/blog/service-payment-method-beginner-checklist.mdx",
+          "reason": "same category: 收款工具; shared tags: 收款工具, AI 工具实践, 新手教程; keyword overlap: 收款工具, ai, 工具实践, 新手教程, 收款, 款工",
+          "score": 130,
+          "slug": "service-payment-method-beginner-checklist",
+          "title": "人工服务先用什么方式收款更稳妥：新手检查清单",
+          "url": "/blog/service-payment-method-beginner-checklist"
+        },
+        {
+          "file": "content/blog/service-payment-method-beginner.mdx",
+          "reason": "same category: 收款工具; shared tags: 收款工具, AI 工具实践, 新手教程; keyword overlap: 收款工具, ai, 工具实践, 新手教程, 收款, 款工",
+          "score": 126,
+          "slug": "service-payment-method-beginner",
+          "title": "人工服务先用什么方式收款更稳妥",
+          "url": "/blog/service-payment-method-beginner"
+        },
+        {
+          "file": "content/blog/international-payment-fee-estimate.mdx",
+          "reason": "same category: 收款工具; shared tags: 收款工具, AI 工具实践, 新手教程; keyword overlap: 收款工具, ai, 工具实践, 新手教程, 怎么, 收款",
           "score": 110,
-          "slug": "industry-ai-prompts-template-library-2026",
-          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-          "url": "/blog/industry-ai-prompts-template-library-2026"
+          "slug": "international-payment-fee-estimate",
+          "title": "海外收款手续费怎么估算",
+          "url": "/blog/international-payment-fee-estimate"
         },
         {
-          "file": "content/blog/real-estate-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词, 提示词模板, 房产, 房源文案, 模板",
+          "file": "content/blog/paddle-vs-stripe-beginner.mdx",
+          "reason": "same category: 收款工具; shared tags: 收款工具, AI 工具实践, 新手教程; keyword overlap: 收款工具, ai, 工具实践, 新手教程, 收款, 款工",
           "score": 106,
-          "slug": "real-estate-ai-prompts-guide",
-          "title": "房产 AI 提示词模板：房源文案、客户需求分析、带看记录和风险提醒",
-          "url": "/blog/real-estate-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/product-manager-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; shared tags: AI 提示词; keyword overlap: ai, 提示词, 提示词模板, 产品, 模板, 提示",
-          "score": 90,
-          "slug": "product-manager-ai-prompts-guide",
-          "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
-          "url": "/blog/product-manager-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/software-development-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词, 提示词模板, 代码审查, 模板, 提示",
-          "score": 90,
-          "slug": "software-development-ai-prompts-guide",
-          "title": "软件开发 AI 提示词模板：需求拆解、代码审查、Bug 排查和测试用例",
-          "url": "/blog/software-development-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; shared tags: AI 提示词; keyword overlap: ai, 提示词, 提示词模板, 模板, 提示, 示词",
-          "score": 86,
-          "slug": "data-analysis-ai-prompts-guide",
-          "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要",
-          "url": "/blog/data-analysis-ai-prompts-guide"
+          "slug": "paddle-vs-stripe-beginner",
+          "title": "Paddle 和 Stripe 有什么区别",
+          "url": "/blog/paddle-vs-stripe-beginner"
         }
       ],
-      "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用"
+      "title": "订阅支付失败怎么和客户沟通"
     },
     {
       "currentInternalLinks": 3,
-      "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
-      "linksToPublicArticles": 2,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "expansion"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: Rate limit, AI API; keyword overlap: api, rate, limit, 限流, ai, 部署",
-          "score": 102,
-          "slug": "gemini-api-rate-limit-debug-guide",
-          "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
-          "url": "/blog/gemini-api-rate-limit-debug-guide"
-        },
-        {
-          "file": "content/blog/dify-workflow-error-handling-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, 怎么, 重试, 试和, 么做",
-          "score": 74,
-          "slug": "dify-workflow-error-handling-guide",
-          "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
-          "url": "/blog/dify-workflow-error-handling-guide"
-        },
-        {
-          "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, token, 模型, 用户, 怎么",
-          "score": 74,
-          "slug": "llm-cost-monitoring-dashboard-guide",
-          "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
-          "url": "/blog/llm-cost-monitoring-dashboard-guide"
-        },
-        {
-          "file": "content/blog/openai-batch-api-cost-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: api, ai, 部署, 批量, 任务, 控制",
-          "score": 74,
-          "slug": "openai-batch-api-cost-guide",
-          "title": "OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制",
-          "url": "/blog/openai-batch-api-cost-guide"
-        },
-        {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, 模型, agent, 成本, 知识",
-          "score": 70,
-          "slug": "ai-model-selection-customer-service-guide",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "/blog/ai-model-selection-customer-service-guide"
-        }
-      ],
-      "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级"
-    },
-    {
-      "currentInternalLinks": 3,
-      "file": "content/blog/customer-service-ai-prompts-guide.mdx",
-      "linksToPublicArticles": 2,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "expansion"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: 客服, ai, 提示词模板, 提示词, 提示, 示词",
-          "score": 82,
-          "slug": "industry-ai-prompts-template-library-2026",
-          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-          "url": "/blog/industry-ai-prompts-template-library-2026"
-        },
-        {
-          "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词, 分类, 提示, 示词, 审核",
-          "score": 78,
-          "slug": "ai-prompt-library-team-knowledge-base-guide",
-          "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
-          "url": "/blog/ai-prompt-library-team-knowledge-base-guide"
-        },
-        {
-          "file": "content/blog/finance-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, 分类, 提示, 示词",
-          "score": 78,
-          "slug": "finance-ai-prompts-guide",
-          "title": "财务 AI 提示词模板：报表摘要、费用分类、预算复盘和风险清单",
-          "url": "/blog/finance-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/ecommerce-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, 售后, 提示, 示词",
-          "score": 70,
-          "slug": "ecommerce-ai-prompts-guide",
-          "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复",
-          "url": "/blog/ecommerce-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/healthcare-admin-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, 医疗, 提示, 示词",
-          "score": 70,
-          "slug": "healthcare-admin-ai-prompts-guide",
-          "title": "医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写",
-          "url": "/blog/healthcare-admin-ai-prompts-guide"
-        }
-      ],
-      "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断"
-    },
-    {
-      "currentInternalLinks": 3,
-      "file": "content/blog/data-analysis-ai-prompts-guide.mdx",
-      "linksToPublicArticles": 2,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "expansion"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/product-manager-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; shared tags: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, 产品经理, 用户, 分析",
-          "score": 94,
-          "slug": "product-manager-ai-prompts-guide",
-          "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
-          "url": "/blog/product-manager-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
-          "reason": "same category: AI 提示词; shared tags: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, 运营, 财务, 提示",
-          "score": 74,
-          "slug": "industry-ai-prompts-template-library-2026",
-          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-          "url": "/blog/industry-ai-prompts-template-library-2026"
-        },
-        {
-          "file": "content/blog/real-estate-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, 分析, 提示, 示词",
-          "score": 74,
-          "slug": "real-estate-ai-prompts-guide",
-          "title": "房产 AI 提示词模板：房源文案、客户需求分析、带看记录和风险提醒",
-          "url": "/blog/real-estate-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/software-development-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, 提示, 示词, 词模",
-          "score": 74,
-          "slug": "software-development-ai-prompts-guide",
-          "title": "软件开发 AI 提示词模板：需求拆解、代码审查、Bug 排查和测试用例",
-          "url": "/blog/software-development-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/legal-contract-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, 提示, 示词, 词模",
-          "score": 70,
-          "slug": "legal-contract-ai-prompts-guide",
-          "title": "法务合同 AI 提示词模板：条款摘要、风险清单和修改问题",
-          "url": "/blog/legal-contract-ai-prompts-guide"
-        }
-      ],
-      "title": "数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要"
-    },
-    {
-      "currentInternalLinks": 4,
-      "file": "content/blog/dify-workflow-error-handling-guide.mdx",
-      "linksToPublicArticles": 3,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "expansion"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: Dify; keyword overlap: dify, ai, 部署, agent, workflow, 怎么",
-          "score": 86,
-          "slug": "dify-workflow-vs-agent-guide",
-          "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
-          "url": "/blog/dify-workflow-vs-agent-guide"
-        },
-        {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, 知识库, 模型, agent, rag",
-          "score": 78,
-          "slug": "ai-model-selection-customer-service-guide",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "/blog/ai-model-selection-customer-service-guide"
-        },
-        {
-          "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, agent, rag, 怎么, 知识",
-          "score": 70,
-          "slug": "n8n-ai-agent-rag-memory-guide",
-          "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
-          "url": "/blog/n8n-ai-agent-rag-memory-guide"
-        },
-        {
-          "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, api, 怎么, 重试, 试和",
-          "score": 66,
-          "slug": "claude-api-rate-limit-debug-guide",
-          "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
-          "url": "/blog/claude-api-rate-limit-debug-guide"
-        },
-        {
-          "file": "content/blog/llm-api-rate-limit-retry-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: AI 部署; keyword overlap: ai, 部署, 模型, api, 怎么, 么做",
-          "score": 66,
-          "slug": "llm-api-rate-limit-retry-guide",
-          "title": "大模型 API 限流和重试怎么做：429、队列、退避和降级方案",
-          "url": "/blog/llm-api-rate-limit-retry-guide"
-        }
-      ],
-      "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底"
-    },
-    {
-      "currentInternalLinks": 5,
-      "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
-      "linksToPublicArticles": 4,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "expansion"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: AI Agent; keyword overlap: agent, ai, 部署, 人工, 模型, 成本",
-          "score": 78,
-          "slug": "ai-model-selection-customer-service-guide",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "/blog/ai-model-selection-customer-service-guide"
-        },
-        {
-          "file": "content/blog/dify-workflow-error-handling-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: Dify; keyword overlap: dify, ai, 部署, 怎么, 和人, 人工",
-          "score": 74,
-          "slug": "dify-workflow-error-handling-guide",
-          "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
-          "url": "/blog/dify-workflow-error-handling-guide"
-        },
-        {
-          "file": "content/blog/n8n-ai-agent-webhook-production-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: AI Agent; keyword overlap: agent, ai, 部署, 怎么, 上线, 自动",
-          "score": 74,
-          "slug": "n8n-ai-agent-webhook-production-guide",
-          "title": "n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试",
-          "url": "/blog/n8n-ai-agent-webhook-production-guide"
-        },
-        {
-          "file": "content/blog/openai-batch-api-cost-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, 适合, 任务, 成本, 控制",
-          "score": 74,
-          "slug": "openai-batch-api-cost-guide",
-          "title": "OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制",
-          "url": "/blog/openai-batch-api-cost-guide"
-        },
-        {
-          "file": "content/blog/enterprise-im-ai-agent-integration-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: AI Agent; keyword overlap: agent, ai, 部署, 怎么, 和人, 人工",
-          "score": 70,
-          "slug": "enterprise-im-ai-agent-integration-guide",
-          "title": "企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管",
-          "url": "/blog/enterprise-im-ai-agent-integration-guide"
-        }
-      ],
-      "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核"
-    },
-    {
-      "currentInternalLinks": 3,
-      "file": "content/blog/ecommerce-ai-prompts-guide.mdx",
-      "linksToPublicArticles": 2,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "expansion"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/real-estate-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, 提示, 示词, 词模",
-          "score": 78,
-          "slug": "real-estate-ai-prompts-guide",
-          "title": "房产 AI 提示词模板：房源文案、客户需求分析、带看记录和风险提醒",
-          "url": "/blog/real-estate-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, 客服, sop, 提示",
-          "score": 74,
-          "slug": "industry-ai-prompts-template-library-2026",
-          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-          "url": "/blog/industry-ai-prompts-template-library-2026"
-        },
-        {
-          "file": "content/blog/manufacturing-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, sop, 提示, 示词",
-          "score": 70,
-          "slug": "manufacturing-ai-prompts-guide",
-          "title": "制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘",
-          "url": "/blog/manufacturing-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/operations-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, sop, 提示, 示词",
-          "score": 70,
-          "slug": "operations-ai-prompts-guide",
-          "title": "运营 AI 提示词模板：周报、SOP、活动计划、复盘和数据解释",
-          "url": "/blog/operations-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/product-manager-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, 用户, 提示, 示词",
-          "score": 70,
-          "slug": "product-manager-ai-prompts-guide",
-          "title": "产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准",
-          "url": "/blog/product-manager-ai-prompts-guide"
-        }
-      ],
-      "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复"
-    },
-    {
-      "currentInternalLinks": 3,
-      "file": "content/blog/education-ai-prompts-guide.mdx",
-      "linksToPublicArticles": 2,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "expansion"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: 教育, ai, 提示词模板, 提示词, hr, 提示",
-          "score": 74,
-          "slug": "industry-ai-prompts-template-library-2026",
-          "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
-          "url": "/blog/industry-ai-prompts-template-library-2026"
-        },
-        {
-          "file": "content/blog/operations-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, 提示, 示词, 词模",
-          "score": 74,
-          "slug": "operations-ai-prompts-guide",
-          "title": "运营 AI 提示词模板：周报、SOP、活动计划、复盘和数据解释",
-          "url": "/blog/operations-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/healthcare-admin-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, 提示, 示词, 词模",
-          "score": 70,
-          "slug": "healthcare-admin-ai-prompts-guide",
-          "title": "医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写",
-          "url": "/blog/healthcare-admin-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/software-development-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, 提示, 示词, 词模",
-          "score": 70,
-          "slug": "software-development-ai-prompts-guide",
-          "title": "软件开发 AI 提示词模板：需求拆解、代码审查、Bug 排查和测试用例",
-          "url": "/blog/software-development-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/ecommerce-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 提示词模板, 提示词, 提示, 示词, 词模",
-          "score": 66,
-          "slug": "ecommerce-ai-prompts-guide",
-          "title": "电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复",
-          "url": "/blog/ecommerce-ai-prompts-guide"
-        }
-      ],
-      "title": "教育 AI 提示词模板：备课、教案、测验、反馈和学习计划"
-    },
-    {
-      "currentInternalLinks": 3,
-      "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
-      "linksToPublicArticles": 2,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "expansion"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: Rate limit, AI API; keyword overlap: api, ai, 部署, 限流, rate, limit",
-          "score": 94,
-          "slug": "claude-api-rate-limit-debug-guide",
-          "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
-          "url": "/blog/claude-api-rate-limit-debug-guide"
-        },
-        {
-          "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, token, 模型, 用户, 怎么",
-          "score": 74,
-          "slug": "llm-cost-monitoring-dashboard-guide",
-          "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
-          "url": "/blog/llm-cost-monitoring-dashboard-guide"
-        },
-        {
-          "file": "content/blog/openai-batch-api-cost-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: api, ai, 部署, 摘要, 批量, 处理",
-          "score": 74,
-          "slug": "openai-batch-api-cost-guide",
-          "title": "OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制",
-          "url": "/blog/openai-batch-api-cost-guide"
-        },
-        {
-          "file": "content/blog/n8n-ai-agent-webhook-production-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, agent, 怎么, 失败, 上线",
-          "score": 70,
-          "slug": "n8n-ai-agent-webhook-production-guide",
-          "title": "n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试",
-          "url": "/blog/n8n-ai-agent-webhook-production-guide"
-        },
-        {
-          "file": "content/blog/dify-workflow-error-handling-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, 流怎, 怎么, 处理, 重试",
-          "score": 66,
-          "slug": "dify-workflow-error-handling-guide",
-          "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
-          "url": "/blog/dify-workflow-error-handling-guide"
-        }
-      ],
-      "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型"
-    },
-    {
-      "currentInternalLinks": 3,
-      "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
+      "file": "content/blog/supabase-pgvector-rag-guide.mdx",
       "linksToPublicArticles": 1,
       "missingPublicLinkSuggestion": false,
       "scopes": [
         "expansion"
       ],
-      "status": "published",
+      "status": "draft",
       "suggestions": [
         {
-          "file": "content/blog/llm-deployment-beginner-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: 大模型部署; keyword overlap: ai, 基建, 大模型部署, 怎么, 大模, 模型",
+          "file": "content/blog/qdrant-vector-database-beginner-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, ai, 基建, 向量数据库, 语义搜索, 向量",
+          "score": 114,
+          "slug": "qdrant-vector-database-beginner-guide",
+          "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
+          "url": "/blog/qdrant-vector-database-beginner-guide"
+        },
+        {
+          "file": "content/blog/pinecone-rag-beginner-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, 怎么开始, ai, 基建, 向量数据库, metadata",
+          "score": 110,
+          "slug": "pinecone-rag-beginner-guide",
+          "title": "Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试",
+          "url": "/blog/pinecone-rag-beginner-guide"
+        },
+        {
+          "file": "content/blog/chroma-vector-database-rag-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 怎么",
+          "score": 98,
+          "slug": "chroma-vector-database-rag-guide",
+          "title": "Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection",
+          "url": "/blog/chroma-vector-database-rag-guide"
+        },
+        {
+          "file": "content/blog/rag-retrieval-no-context-debug-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 怎么",
+          "score": 98,
+          "slug": "rag-retrieval-no-context-debug-guide",
+          "title": "RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路",
+          "url": "/blog/rag-retrieval-no-context-debug-guide"
+        },
+        {
+          "file": "content/blog/knowledge-base-permission-design-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: RAG; keyword overlap: rag, ai, 基建, 权限, 怎么, 检索",
           "score": 86,
-          "slug": "llm-deployment-beginner-guide",
-          "title": "大模型部署是什么意思：API、本地和私有化怎么选",
-          "url": "/blog/llm-deployment-beginner-guide"
+          "slug": "knowledge-base-permission-design-guide",
+          "title": "AI 知识库权限怎么设计：别让检索结果越权",
+          "url": "/blog/knowledge-base-permission-design-guide"
+        }
+      ],
+      "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
+      "linksToPublicArticles": 1,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/local-llm-deployment-beginner.mdx",
+          "reason": "same category: AI 基建; keyword overlap: ai, 基建, llm, ollama, 硬件, 怎么",
+          "score": 82,
+          "slug": "local-llm-deployment-beginner",
+          "title": "本地部署大模型怎么开始：新手先看硬件、模型和用途",
+          "url": "/blog/local-llm-deployment-beginner"
         },
         {
-          "file": "content/blog/kubernetes-gpu-llm-deployment-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: GPU, 大模型部署; keyword overlap: gpu, ai, 基建, 大模型部署, 怎么, 大模",
-          "score": 82,
-          "slug": "kubernetes-gpu-llm-deployment-guide",
-          "title": "Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界",
-          "url": "/blog/kubernetes-gpu-llm-deployment-guide"
+          "file": "content/blog/llm-serving-cost-latency-checklist.mdx",
+          "reason": "same category: AI 基建; keyword overlap: ai, 基建, llm, 延迟, 怎么, 模型",
+          "score": 78,
+          "slug": "llm-serving-cost-latency-checklist",
+          "title": "大模型部署成本和延迟怎么估算：上线前检查清单",
+          "url": "/blog/llm-serving-cost-latency-checklist"
         },
         {
-          "file": "content/blog/open-webui-ollama-docker-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: Docker; keyword overlap: docker, ai, 基建, ollama, 怎么, 大模",
-          "score": 82,
-          "slug": "open-webui-ollama-docker-guide",
-          "title": "Open WebUI + Ollama 怎么部署：本地大模型网页聊天入门",
-          "url": "/blog/open-webui-ollama-docker-guide"
+          "file": "content/blog/ray-serve-llm-deployment-guide.mdx",
+          "reason": "same category: AI 基建; keyword overlap: ai, 基建, 入门, llm, vllm, ray",
+          "score": 74,
+          "slug": "ray-serve-llm-deployment-guide",
+          "title": "Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门",
+          "url": "/blog/ray-serve-llm-deployment-guide"
         },
         {
           "file": "content/blog/llama-cpp-server-beginner-guide.mdx",
-          "reason": "same category: AI 基建; keyword overlap: 怎么用, ai, 基建, llama, cpp, 怎么",
-          "score": 78,
+          "reason": "same category: AI 基建; keyword overlap: ai, 基建, 入门, 怎么用, llama, cpp",
+          "score": 70,
           "slug": "llama-cpp-server-beginner-guide",
           "title": "llama.cpp server 怎么用：本地 GGUF 模型 API 入门",
           "url": "/blog/llama-cpp-server-beginner-guide"
         },
         {
-          "file": "content/blog/runpod-serverless-llm-deployment-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: 大模型部署; keyword overlap: gpu, ai, 基建, 大模型部署, vllm, 怎么",
-          "score": 78,
-          "slug": "runpod-serverless-llm-deployment-guide",
-          "title": "RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界",
-          "url": "/blog/runpod-serverless-llm-deployment-guide"
+          "file": "content/blog/llm-api-integration-deployment-checklist.mdx",
+          "reason": "same category: AI 基建; keyword overlap: ai, 基建, llm, 模型, 大模, 部署",
+          "score": 70,
+          "slug": "llm-api-integration-deployment-checklist",
+          "title": "大模型 API 接入部署清单：上线前要检查什么",
+          "url": "/blog/llm-api-integration-deployment-checklist"
         }
       ],
-      "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit"
+      "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收"
     },
     {
-      "currentInternalLinks": 6,
-      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
-      "linksToPublicArticles": 2,
+      "currentInternalLinks": 5,
+      "file": "content/blog/together-ai-api-beginner-guide.mdx",
+      "linksToPublicArticles": 4,
       "missingPublicLinkSuggestion": false,
       "scopes": [
-        "broad-first-coverage",
-        "expansion",
-        "recommended",
-        "wave-1"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/sales-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 销售, 提示词, 提示词模板, 提示, 示词",
-          "score": 114,
-          "slug": "sales-ai-prompts-guide",
-          "title": "销售 AI 提示词模板：客户画像、跟进话术、异议处理和会议纪要",
-          "url": "/blog/sales-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/ai-prompt-framework-business-guide.mdx",
-          "reason": "same category: AI 提示词; shared tags: AI 提示词; keyword overlap: ai, 提示词, 行业, 全行, 提示, 示词",
-          "score": 90,
-          "slug": "ai-prompt-framework-business-guide",
-          "title": "AI 提示词怎么写才好用：全行业都能套的 5 段式框架",
-          "url": "/blog/ai-prompt-framework-business-guide"
-        },
-        {
-          "file": "content/blog/customer-service-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 客服, 提示词, 提示词模板, 提示, 示词",
-          "score": 90,
-          "slug": "customer-service-ai-prompts-guide",
-          "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
-          "url": "/blog/customer-service-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/marketing-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 运营, 提示词, 提示词模板, 广告文案, 提示",
-          "score": 90,
-          "slug": "marketing-ai-prompts-guide",
-          "title": "营销 AI 提示词模板：选题、广告文案、SEO 和活动复盘怎么写",
-          "url": "/blog/marketing-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/operations-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; shared tags: SOP; keyword overlap: ai, 运营, 提示词, 提示词模板, sop, 周报",
-          "score": 90,
-          "slug": "operations-ai-prompts-guide",
-          "title": "运营 AI 提示词模板：周报、SOP、活动计划、复盘和数据解释",
-          "url": "/blog/operations-ai-prompts-guide"
-        }
-      ],
-      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
-    },
-    {
-      "currentInternalLinks": 6,
-      "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-      "linksToPublicArticles": 2,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "broad-first-coverage",
         "expansion"
       ],
-      "status": "published",
+      "status": "draft",
       "suggestions": [
         {
-          "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: vLLM; keyword overlap: ai, 部署, vllm, 并发, 大模, 模型",
-          "score": 74,
-          "slug": "local-llm-vram-not-enough-guide",
-          "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
-          "url": "/blog/local-llm-vram-not-enough-guide"
+          "file": "content/blog/openrouter-api-beginner-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai",
+          "score": 90,
+          "slug": "openrouter-api-beginner-guide",
+          "title": "OpenRouter API 怎么接入：统一模型入口不是只换 Base URL",
+          "url": "/blog/openrouter-api-beginner-guide"
         },
         {
-          "file": "content/blog/openai-batch-api-cost-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: api, ai, 部署, 成本, 和成, 什么",
-          "score": 74,
-          "slug": "openai-batch-api-cost-guide",
-          "title": "OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制",
-          "url": "/blog/openai-batch-api-cost-guide"
+          "file": "content/blog/groq-api-fast-llm-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai",
+          "score": 86,
+          "slug": "groq-api-fast-llm-guide",
+          "title": "Groq API 怎么接入：高速推理适合什么 AI 应用",
+          "url": "/blog/groq-api-fast-llm-guide"
         },
         {
-          "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, 成本, 监控, 大模, 模型",
-          "score": 70,
-          "slug": "llm-cost-monitoring-dashboard-guide",
-          "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
-          "url": "/blog/llm-cost-monitoring-dashboard-guide"
+          "file": "content/blog/replicate-api-ai-demo-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: API; keyword overlap: ai, api, 基建, 模型, 怎么, 部署",
+          "score": 82,
+          "slug": "replicate-api-ai-demo-guide",
+          "title": "Replicate API 怎么做 AI Demo：模型调用、部署和费用边界",
+          "url": "/blog/replicate-api-ai-demo-guide"
         },
+        {
+          "file": "content/blog/claude-api-beginner-guide.mdx",
+          "reason": "same category: AI 基建; keyword overlap: ai, api, 怎么接入, 基建, 接入, 怎么",
+          "score": 78,
+          "slug": "claude-api-beginner-guide",
+          "title": "Claude API 怎么接入：Messages API、费用和上下文边界",
+          "url": "/blog/claude-api-beginner-guide"
+        },
+        {
+          "file": "content/blog/lm-studio-local-api-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: API; keyword overlap: ai, api, 基建, openai, compatible, 模型",
+          "score": 78,
+          "slug": "lm-studio-local-api-guide",
+          "title": "LM Studio 本地 API 怎么用：把本地模型变成 OpenAI 兼容接口",
+          "url": "/blog/lm-studio-local-api-guide"
+        }
+      ],
+      "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/tools-not-to-buy-first.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "recommended"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/codex-client-requirement-questions-freelance-scope.mdx",
+          "reason": "shared tags: AI 工具实践; keyword overlap: ai, 工具实践, 新手教程, codex, 工具, 新手",
+          "score": 91,
+          "slug": "codex-client-requirement-questions-freelance-scope",
+          "title": "Codex 需求不清楚的任务使用前怎么判断是否适合",
+          "url": "/blog/codex-client-requirement-questions-freelance-scope"
+        },
+        {
+          "file": "content/blog/daily-ai-freelance-practice-log.mdx",
+          "reason": "shared tags: AI 工具实践, 新手教程; keyword overlap: ai, 工具实践, 新手教程, 作品集, 工具, 新手",
+          "score": 88,
+          "slug": "daily-ai-freelance-practice-log",
+          "title": "新手如何记录每天的项目练习",
+          "url": "/blog/daily-ai-freelance-practice-log"
+        },
+        {
+          "file": "content/blog/first-portfolio-case-realistic-checklist.mdx",
+          "reason": "shared tags: AI 工具实践, 新手教程; keyword overlap: ai, 工具实践, 新手教程, 第一, 作品集, 工具",
+          "score": 88,
+          "slug": "first-portfolio-case-realistic-checklist",
+          "title": "第一个作品集案例真实性检查清单",
+          "url": "/blog/first-portfolio-case-realistic-checklist"
+        },
+        {
+          "file": "content/blog/codex-first-day-guide-freelance-scope.mdx",
+          "reason": "shared tags: AI 工具实践, 新手教程; keyword overlap: ai, 工具实践, 新手教程, codex, 第一, 工具",
+          "score": 87,
+          "slug": "codex-first-day-guide-freelance-scope",
+          "title": "Codex 是什么，新手第一天应该怎么用：使用前怎么判断是否适合",
+          "url": "/blog/codex-first-day-guide-freelance-scope"
+        },
+        {
+          "file": "content/blog/codex-first-landing-page-freelance-scope.mdx",
+          "reason": "shared tags: AI 工具实践, 新手教程; keyword overlap: ai, 工具实践, 新手教程, codex, 第一, 工具",
+          "score": 87,
+          "slug": "codex-first-landing-page-freelance-scope",
+          "title": "Codex 怎么做第一个落地页：使用前怎么判断是否适合",
+          "url": "/blog/codex-first-landing-page-freelance-scope"
+        }
+      ],
+      "title": "AI 工具新手不应该先买哪些工具"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion",
+        "recommended"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/qdrant-vector-database-beginner-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: 向量数据库, RAG, Qdrant; keyword overlap: rag, qdrant, ai, 基建, 向量数据库, 过滤",
+          "score": 118,
+          "slug": "qdrant-vector-database-beginner-guide",
+          "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
+          "url": "/blog/qdrant-vector-database-beginner-guide"
+        },
+        {
+          "file": "content/blog/rag-knowledge-base-beginner-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数",
+          "score": 106,
+          "slug": "rag-knowledge-base-beginner-guide",
+          "title": "RAG 知识库怎么搭：文档、切分、检索和回答复核",
+          "url": "/blog/rag-knowledge-base-beginner-guide"
+        },
+        {
+          "file": "content/blog/chroma-vector-database-rag-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, collection, 向量",
+          "score": 102,
+          "slug": "chroma-vector-database-rag-guide",
+          "title": "Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection",
+          "url": "/blog/chroma-vector-database-rag-guide"
+        },
+        {
+          "file": "content/blog/rag-retrieval-no-context-debug-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数",
+          "score": 102,
+          "slug": "rag-retrieval-no-context-debug-guide",
+          "title": "RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路",
+          "url": "/blog/rag-retrieval-no-context-debug-guide"
+        },
+        {
+          "file": "content/blog/pinecone-rag-beginner-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数",
+          "score": 94,
+          "slug": "pinecone-rag-beginner-guide",
+          "title": "Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试",
+          "url": "/blog/pinecone-rag-beginner-guide"
+        }
+      ],
+      "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/vercel-404-after-deploy-checklist.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/dev-works-build-fails-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, ai, 工具实践, build, 报错, 错解",
+          "score": 110,
+          "slug": "dev-works-build-fails-freelance-scope",
+          "title": "npm run dev 能跑但 build 失败使用前怎么判断是否适合",
+          "url": "/blog/dev-works-build-fails-freelance-scope"
+        },
+        {
+          "file": "content/blog/dependency-conflict-fix-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, ai, 工具实践, 报错, 错解, 解决",
+          "score": 106,
+          "slug": "dependency-conflict-fix-freelance-scope",
+          "title": "dependency conflict 依赖冲突使用前怎么判断是否适合",
+          "url": "/blog/dependency-conflict-fix-freelance-scope"
+        },
+        {
+          "file": "content/blog/env-variable-missing-fix-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, ai, 工具实践, 环境, 报错, 错解",
+          "score": 106,
+          "slug": "env-variable-missing-fix-freelance-scope",
+          "title": "环境变量 missing 使用前怎么判断是否适合",
+          "url": "/blog/env-variable-missing-fix-freelance-scope"
+        },
+        {
+          "file": "content/blog/github-actions-build-log-debug-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, ai, 工具实践, build, 报错, 错解",
+          "score": 106,
+          "slug": "github-actions-build-log-debug-freelance-scope",
+          "title": "GitHub Actions build 失败使用前怎么判断是否适合",
+          "url": "/blog/github-actions-build-log-debug-freelance-scope"
+        },
+        {
+          "file": "content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, ai, 工具实践, failed, 报错, 错解",
+          "score": 102,
+          "slug": "failed-to-push-some-refs-fix-freelance-scope",
+          "title": "failed to push some refs 使用前怎么判断是否适合",
+          "url": "/blog/failed-to-push-some-refs-fix-freelance-scope"
+        }
+      ],
+      "title": "Vercel 部署后 404 检查清单：逐页验收更稳"
+    },
+    {
+      "currentInternalLinks": 6,
+      "file": "content/blog/vercel-404-after-deploy-freelance-scope.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/permission-denied-fix-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践; keyword overlap: 使用前怎么判断是否适合, 报错解决, ai, 工具实践, 怎么, 使用",
+          "score": 154,
+          "slug": "permission-denied-fix-freelance-scope",
+          "title": "permission denied 报错新手怎么处理：使用前怎么判断是否适合",
+          "url": "/blog/permission-denied-fix-freelance-scope"
+        },
+        {
+          "file": "content/blog/nextjs-hydration-error-debug-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践; keyword overlap: 使用前怎么判断是否适合, 报错解决, ai, 工具实践, 怎么, 使用",
+          "score": 146,
+          "slug": "nextjs-hydration-error-debug-freelance-scope",
+          "title": "Next.js hydration error 怎么排查：使用前怎么判断是否适合",
+          "url": "/blog/nextjs-hydration-error-debug-freelance-scope"
+        },
+        {
+          "file": "content/blog/env-variable-missing-fix-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践; keyword overlap: 使用前怎么判断是否适合, 报错解决, ai, 工具实践, 怎么, 使用",
+          "score": 134,
+          "slug": "env-variable-missing-fix-freelance-scope",
+          "title": "环境变量 missing 使用前怎么判断是否适合",
+          "url": "/blog/env-variable-missing-fix-freelance-scope"
+        },
+        {
+          "file": "content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践; keyword overlap: 使用前怎么判断是否适合, 报错解决, ai, 工具实践, 怎么, 使用",
+          "score": 134,
+          "slug": "failed-to-push-some-refs-fix-freelance-scope",
+          "title": "failed to push some refs 使用前怎么判断是否适合",
+          "url": "/blog/failed-to-push-some-refs-fix-freelance-scope"
+        },
+        {
+          "file": "content/blog/git-authentication-failed-fix-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践; keyword overlap: 使用前怎么判断是否适合, 报错解决, ai, 工具实践, 怎么, 使用",
+          "score": 134,
+          "slug": "git-authentication-failed-fix-freelance-scope",
+          "title": "git authentication failed 使用前怎么判断是否适合",
+          "url": "/blog/git-authentication-failed-fix-freelance-scope"
+        }
+      ],
+      "title": "Vercel 404 部署成功但页面打不开怎么办：使用前怎么判断是否适合"
+    },
+    {
+      "currentInternalLinks": 2,
+      "file": "content/blog/vercel-404-after-deploy.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/nextjs-hydration-error-debug-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, 排查, ai, 工具实践, next, js",
+          "score": 98,
+          "slug": "nextjs-hydration-error-debug-freelance-scope",
+          "title": "Next.js hydration error 怎么排查：使用前怎么判断是否适合",
+          "url": "/blog/nextjs-hydration-error-debug-freelance-scope"
+        },
+        {
+          "file": "content/blog/node-version-mismatch-fix-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, ai, 工具实践, js, 报错, 错解",
+          "score": 98,
+          "slug": "node-version-mismatch-fix-freelance-scope",
+          "title": "Node 版本不匹配使用前怎么判断是否适合",
+          "url": "/blog/node-version-mismatch-fix-freelance-scope"
+        },
+        {
+          "file": "content/blog/node-version-mismatch-fix-mistakes.mdx",
+          "reason": "same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, 排查, ai, 工具实践, js, 报错",
+          "score": 98,
+          "slug": "node-version-mismatch-fix-mistakes",
+          "title": "Node 版本不匹配常见错误和解决步骤",
+          "url": "/blog/node-version-mismatch-fix-mistakes"
+        },
+        {
+          "file": "content/blog/dev-works-build-fails-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, ai, 工具实践, build, 报错, 错解",
+          "score": 94,
+          "slug": "dev-works-build-fails-freelance-scope",
+          "title": "npm run dev 能跑但 build 失败使用前怎么判断是否适合",
+          "url": "/blog/dev-works-build-fails-freelance-scope"
+        },
+        {
+          "file": "content/blog/dev-works-build-fails-mistakes.mdx",
+          "reason": "same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, 排查, ai, 工具实践, build, 报错",
+          "score": 94,
+          "slug": "dev-works-build-fails-mistakes",
+          "title": "npm run dev 能跑但 build 失败常见错误和解决步骤",
+          "url": "/blog/dev-works-build-fails-mistakes"
+        }
+      ],
+      "title": "Vercel 部署成功但页面 404：新手排查顺序"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+      "linksToPublicArticles": 1,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion",
+        "recommended"
+      ],
+      "status": "draft",
+      "suggestions": [
         {
           "file": "content/blog/multi-model-router-fallback-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, 成本, 模型, 怎么, 本和",
-          "score": 66,
+          "reason": "same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做",
+          "score": 106,
           "slug": "multi-model-router-fallback-guide",
           "title": "多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估",
           "url": "/blog/multi-model-router-fallback-guide"
         },
         {
-          "file": "content/blog/llm-deployment-beginner-guide.mdx",
-          "reason": "shared tags: 大模型部署; keyword overlap: api, ai, 部署, 大模型部署, 大模, 模型",
-          "score": 64,
-          "slug": "llm-deployment-beginner-guide",
-          "title": "大模型部署是什么意思：API、本地和私有化怎么选",
-          "url": "/blog/llm-deployment-beginner-guide"
-        }
-      ],
-      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查"
-    },
-    {
-      "currentInternalLinks": 3,
-      "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
-      "linksToPublicArticles": 1,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "expansion"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: vLLM; keyword overlap: ai, 部署, vllm, inference, api, 大模",
-          "score": 86,
-          "slug": "llm-deployment-huggingface-inference-endpoints-guide",
-          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-          "url": "/blog/llm-deployment-huggingface-inference-endpoints-guide"
-        },
-        {
-          "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: 本地大模型; keyword overlap: ai, 部署, 本地大模型, rag, 本地, 大模",
-          "score": 74,
-          "slug": "open-webui-functions-pipelines-deployment-guide",
-          "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
-          "url": "/blog/open-webui-functions-pipelines-deployment-guide"
-        },
-        {
           "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: 上下文, ai, 部署, api, 怎么, 么办",
-          "score": 62,
+          "reason": "same category: AI 部署; keyword overlap: ai, claude, 部署, 降级, api, 怎么",
+          "score": 74,
           "slug": "claude-api-rate-limit-debug-guide",
           "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
           "url": "/blog/claude-api-rate-limit-debug-guide"
         },
         {
+          "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
+          "reason": "same category: AI 部署; keyword overlap: ai, gemini, 部署, 降级, api, 怎么",
+          "score": 74,
+          "slug": "gemini-api-rate-limit-debug-guide",
+          "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+          "url": "/blog/gemini-api-rate-limit-debug-guide"
+        },
+        {
           "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, token, 大模, 模型, 怎么",
-          "score": 62,
+          "reason": "same category: AI 部署; keyword overlap: ai, 部署, 怎么, 么做, 模型, 成本",
+          "score": 74,
           "slug": "llm-cost-monitoring-dashboard-guide",
           "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
           "url": "/blog/llm-cost-monitoring-dashboard-guide"
         },
         {
-          "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, rag, agent, 怎么, 上下",
-          "score": 62,
-          "slug": "n8n-ai-agent-rag-memory-guide",
-          "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
-          "url": "/blog/n8n-ai-agent-rag-memory-guide"
+          "file": "content/blog/openai-batch-api-cost-guide.mdx",
+          "reason": "same category: AI 部署; keyword overlap: ai, openai, 部署, api, 任务, 适合",
+          "score": 74,
+          "slug": "openai-batch-api-cost-guide",
+          "title": "OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制",
+          "url": "/blog/openai-batch-api-cost-guide"
         }
       ],
-      "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型"
+      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
     },
     {
-      "currentInternalLinks": 3,
-      "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
-      "linksToPublicArticles": 2,
+      "currentInternalLinks": 4,
+      "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
+      "linksToPublicArticles": 1,
       "missingPublicLinkSuggestion": false,
       "scopes": [
-        "broad-first-coverage"
+        "expansion"
       ],
-      "status": "published",
+      "status": "draft",
       "suggestions": [
         {
-          "file": "content/blog/agent-human-review-loop-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent; keyword overlap: ai, 基建, agent, 怎么, 人工, 工审",
-          "score": 74,
-          "slug": "agent-human-review-loop-guide",
-          "title": "Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认",
-          "url": "/blog/agent-human-review-loop-guide"
+          "file": "content/blog/gemini-api-nextjs-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: Next.js, AI 部署; keyword overlap: ai, next, js, 基建, 部署, api",
+          "score": 94,
+          "slug": "gemini-api-nextjs-guide",
+          "title": "Gemini API 怎么接 Next.js：从 API Key 到服务端 Route Handler",
+          "url": "/blog/gemini-api-nextjs-guide"
         },
         {
-          "file": "content/blog/flowise-local-deployment-beginner-guide.mdx",
-          "reason": "same category: AI 基建; keyword overlap: 本地, 权限, ai, 基建, agent, 部署",
-          "score": 74,
-          "slug": "flowise-local-deployment-beginner-guide",
-          "title": "Flowise 本地部署怎么开始：新手先看数据和权限",
-          "url": "/blog/flowise-local-deployment-beginner-guide"
-        },
-        {
-          "file": "content/blog/agent-memory-postgres-schema-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent; keyword overlap: ai, 基建, agent, 怎么, 数据, 据库",
-          "score": 70,
-          "slug": "agent-memory-postgres-schema-guide",
-          "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
-          "url": "/blog/agent-memory-postgres-schema-guide"
-        },
-        {
-          "file": "content/blog/agent-production-deployment-checklist.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent; keyword overlap: 权限, ai, 基建, agent, 部署, 日志",
-          "score": 70,
-          "slug": "agent-production-deployment-checklist",
-          "title": "Agent 生产上线检查表：权限、日志、成本和人工确认",
-          "url": "/blog/agent-production-deployment-checklist"
-        },
-        {
-          "file": "content/blog/agent-tool-calling-beginner-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent; keyword overlap: ai, 基建, agent, 工具, 怎么, 执行",
-          "score": 70,
-          "slug": "agent-tool-calling-beginner-guide",
-          "title": "Agent 工具调用怎么设计：读、写、执行要分清",
-          "url": "/blog/agent-tool-calling-beginner-guide"
-        }
-      ],
-      "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单"
-    },
-    {
-      "currentInternalLinks": 5,
-      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-      "linksToPublicArticles": 4,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "broad-first-coverage"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
-          "reason": "shared tags: AI Agent, RAG; keyword overlap: ai, agent, rag, 记忆, 长期记忆, 怎么设计",
-          "score": 92,
-          "slug": "ai-agent-memory-rag-design-guide",
-          "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
-          "url": "/blog/ai-agent-memory-rag-design-guide"
-        },
-        {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: AI Agent, RAG; keyword overlap: ai, agent, rag, 部署, 客服, 知识",
+          "file": "content/blog/claude-api-beginner-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: AI 部署; keyword overlap: ai, 基建, 部署, api, 怎么, 和上",
           "score": 86,
-          "slug": "ai-model-selection-customer-service-guide",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "/blog/ai-model-selection-customer-service-guide"
+          "slug": "claude-api-beginner-guide",
+          "title": "Claude API 怎么接入：Messages API、费用和上下文边界",
+          "url": "/blog/claude-api-beginner-guide"
         },
         {
-          "file": "content/blog/n8n-ai-agent-webhook-production-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: n8n, AI Agent; keyword overlap: n8n, ai, agent, 部署, 怎么, 自动",
-          "score": 74,
-          "slug": "n8n-ai-agent-webhook-production-guide",
-          "title": "n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试",
-          "url": "/blog/n8n-ai-agent-webhook-production-guide"
+          "file": "content/blog/ollama-api-web-app-integration.mdx",
+          "reason": "same category: AI 基建; keyword overlap: ai, 基建, 模型, api, 本地, 怎么",
+          "score": 82,
+          "slug": "ollama-api-web-app-integration",
+          "title": "Ollama API 怎么接到网页应用：本地模型到前后端调用",
+          "url": "/blog/ollama-api-web-app-integration"
         },
         {
-          "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: AI Agent; keyword overlap: ai, agent, 部署, 怎么, 调用, 工具",
-          "score": 66,
-          "slug": "dify-workflow-vs-agent-guide",
-          "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
-          "url": "/blog/dify-workflow-vs-agent-guide"
+          "file": "content/blog/openrouter-api-beginner-guide.mdx",
+          "reason": "same category: AI 基建; keyword overlap: ai, 基建, 模型, openai, api, base",
+          "score": 82,
+          "slug": "openrouter-api-beginner-guide",
+          "title": "OpenRouter API 怎么接入：统一模型入口不是只换 Base URL",
+          "url": "/blog/openrouter-api-beginner-guide"
         },
         {
-          "file": "content/blog/enterprise-im-ai-agent-integration-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: AI Agent; keyword overlap: ai, agent, 部署, 怎么, 么接, 权限",
-          "score": 66,
-          "slug": "enterprise-im-ai-agent-integration-guide",
-          "title": "企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管",
-          "url": "/blog/enterprise-im-ai-agent-integration-guide"
+          "file": "content/blog/llm-serving-cost-latency-checklist.mdx",
+          "reason": "same category: AI 基建; shared tags: AI 部署; keyword overlap: ai, 基建, 部署, 模型, 延迟, 怎么",
+          "score": 78,
+          "slug": "llm-serving-cost-latency-checklist",
+          "title": "大模型部署成本和延迟怎么估算：上线前检查清单",
+          "url": "/blog/llm-serving-cost-latency-checklist"
         }
       ],
-      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储"
+      "title": "Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查"
     },
     {
       "currentInternalLinks": 3,
-      "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
+      "file": "content/blog/vercel-deploy-checklist-template.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/small-site-launch-sop-checklist.mdx",
+          "reason": "same category: 模板和清单; shared tags: AI 工具实践; keyword overlap: 模板和清单, ai, 工具实践, 检查, 怎么, 么写",
+          "score": 114,
+          "slug": "small-site-launch-sop-checklist",
+          "title": "小网站上线检查 SOP 怎么写：新手检查清单",
+          "url": "/blog/small-site-launch-sop-checklist"
+        },
+        {
+          "file": "content/blog/portfolio-page-copy-template-checklist.mdx",
+          "reason": "same category: 模板和清单; shared tags: AI 工具实践; keyword overlap: 模板和清单, ai, 工具实践, 检查, 怎么, 么写",
+          "score": 110,
+          "slug": "portfolio-page-copy-template-checklist",
+          "title": "作品集页面文案模板怎么写真实：新手检查清单",
+          "url": "/blog/portfolio-page-copy-template-checklist"
+        },
+        {
+          "file": "content/blog/practice-project-log-template-checklist.mdx",
+          "reason": "same category: 模板和清单; shared tags: AI 工具实践; keyword overlap: 模板和清单, ai, 工具实践, 检查, 表怎, 怎么",
+          "score": 110,
+          "slug": "practice-project-log-template-checklist",
+          "title": "新手练习项目记录表怎么用：新手检查清单",
+          "url": "/blog/practice-project-log-template-checklist"
+        },
+        {
+          "file": "content/blog/pre-project-risk-assessment-template-checklist.mdx",
+          "reason": "same category: 模板和清单; shared tags: AI 工具实践; keyword overlap: 模板和清单, ai, 工具实践, 检查, 表怎, 怎么",
+          "score": 110,
+          "slug": "pre-project-risk-assessment-template-checklist",
+          "title": "项目前风险评估表怎么填：新手检查清单",
+          "url": "/blog/pre-project-risk-assessment-template-checklist"
+        },
+        {
+          "file": "content/blog/project-retrospective-template-checklist.mdx",
+          "reason": "same category: 模板和清单; shared tags: AI 工具实践; keyword overlap: 模板和清单, ai, 工具实践, 检查, 怎么, 新手",
+          "score": 110,
+          "slug": "project-retrospective-template-checklist",
+          "title": "项目复盘模板怎么记录问题：新手检查清单",
+          "url": "/blog/project-retrospective-template-checklist"
+        }
+      ],
+      "title": "Vercel 部署检查表怎么写：给新手的上线模板"
+    },
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/vllm-deployment-beginner-guide.mdx",
       "linksToPublicArticles": 2,
       "missingPublicLinkSuggestion": false,
       "scopes": [
         "expansion"
       ],
-      "status": "published",
+      "status": "draft",
       "suggestions": [
         {
-          "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: 本地大模型; keyword overlap: ai, 部署, 本地大模型, 怎么, 模型, 本地",
-          "score": 70,
-          "slug": "local-llm-vram-not-enough-guide",
-          "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
-          "url": "/blog/local-llm-vram-not-enough-guide"
+          "file": "content/blog/local-llm-deployment-beginner.mdx",
+          "reason": "same category: AI 基建; shared tags: AI 基建; keyword overlap: ai, 基建, 部署, 硬件, ollama, 新手",
+          "score": 90,
+          "slug": "local-llm-deployment-beginner",
+          "title": "本地部署大模型怎么开始：新手先看硬件、模型和用途",
+          "url": "/blog/local-llm-deployment-beginner"
         },
         {
-          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, api, 怎么, 模型, 大模",
-          "score": 66,
-          "slug": "llm-deployment-huggingface-inference-endpoints-guide",
-          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-          "url": "/blog/llm-deployment-huggingface-inference-endpoints-guide"
+          "file": "content/blog/runpod-serverless-llm-deployment-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: vLLM, 大模型部署; keyword overlap: vllm, ai, 基建, 部署, 大模型部署, gpu",
+          "score": 90,
+          "slug": "runpod-serverless-llm-deployment-guide",
+          "title": "RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界",
+          "url": "/blog/runpod-serverless-llm-deployment-guide"
         },
         {
-          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, api, 怎么, 安全, 权限",
-          "score": 62,
-          "slug": "ai-api-key-security-rotation-guide",
-          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
-          "url": "/blog/ai-api-key-security-rotation-guide"
-        },
-        {
-          "file": "content/blog/openai-batch-api-cost-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, api, openai, 适合, 处理",
-          "score": 62,
-          "slug": "openai-batch-api-cost-guide",
-          "title": "OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制",
-          "url": "/blog/openai-batch-api-cost-guide"
-        },
-        {
-          "file": "content/blog/dify-ollama-local-model-guide.mdx",
-          "reason": "shared tags: 本地大模型; keyword overlap: ai, 本地大模型, ollama, 怎么, 模型, 本地",
-          "score": 60,
-          "slug": "dify-ollama-local-model-guide",
-          "title": "Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试",
-          "url": "/blog/dify-ollama-local-model-guide"
-        }
-      ],
-      "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流"
-    }
-  ],
-  "broadFirstCoverageItems": [
-    {
-      "currentInternalLinks": 3,
-      "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-      "linksToPublicArticles": 2,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "broad-first-coverage"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent, 安全; keyword overlap: agent, ai, 基建, 安全, 工具, 怎么",
-          "score": 94,
-          "slug": "mcp-server-deployment-security-checklist",
-          "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
-          "url": "/blog/mcp-server-deployment-security-checklist"
-        },
-        {
-          "file": "content/blog/agent-human-review-loop-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent; keyword overlap: agent, ai, 基建, 怎么, 流程, 自动",
+          "file": "content/blog/agent-production-deployment-checklist.mdx",
+          "reason": "same category: AI 基建; shared tags: AI 基建; keyword overlap: ai, 基建, 部署, 生产部署, agent, 成本",
           "score": 86,
-          "slug": "agent-human-review-loop-guide",
-          "title": "Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认",
-          "url": "/blog/agent-human-review-loop-guide"
+          "slug": "agent-production-deployment-checklist",
+          "title": "Agent 生产上线检查表：权限、日志、成本和人工确认",
+          "url": "/blog/agent-production-deployment-checklist"
         },
         {
-          "file": "content/blog/agent-deployment-beginner-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent; keyword overlap: agent, ai, 基建, 怎么, 么做, 上线",
+          "file": "content/blog/coze-bot-publish-checklist.mdx",
+          "reason": "same category: AI 基建; shared tags: AI 基建; keyword overlap: ai, 基建, agent, 什么, 新手, 发布",
+          "score": 82,
+          "slug": "coze-bot-publish-checklist",
+          "title": "Coze Bot 发布前检查什么：新手别只看能不能聊天",
+          "url": "/blog/coze-bot-publish-checklist"
+        },
+        {
+          "file": "content/blog/kubernetes-gpu-llm-deployment-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: 大模型部署; keyword overlap: ai, 基建, 部署, 大模型部署, gpu, 边界",
           "score": 78,
-          "slug": "agent-deployment-beginner-guide",
-          "title": "Agent 部署怎么做：从聊天助手到可上线工作流",
-          "url": "/blog/agent-deployment-beginner-guide"
-        },
-        {
-          "file": "content/blog/agent-memory-postgres-schema-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent; keyword overlap: agent, ai, 基建, 怎么, 数据, 据库",
-          "score": 74,
-          "slug": "agent-memory-postgres-schema-guide",
-          "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
-          "url": "/blog/agent-memory-postgres-schema-guide"
-        },
-        {
-          "file": "content/blog/n8n-ai-agent-self-host-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent; keyword overlap: agent, ai, 基建, 开始, 怎么, 边界",
-          "score": 74,
-          "slug": "n8n-ai-agent-self-host-guide",
-          "title": "n8n AI Agent 自托管怎么开始：别只会拖节点，要先管边界",
-          "url": "/blog/n8n-ai-agent-self-host-guide"
+          "slug": "kubernetes-gpu-llm-deployment-guide",
+          "title": "Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界",
+          "url": "/blog/kubernetes-gpu-llm-deployment-guide"
         }
       ],
-      "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志"
+      "title": "vLLM 部署适合什么场景：新手先看推理服务边界"
     },
     {
       "currentInternalLinks": 6,
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-      "linksToPublicArticles": 2,
+      "file": "content/blog/windows-path-permission-install-fix-checklist.mdx",
+      "linksToPublicArticles": 0,
       "missingPublicLinkSuggestion": false,
       "scopes": [
-        "broad-first-coverage",
-        "expansion",
-        "recommended",
-        "wave-1"
+        "expansion"
       ],
-      "status": "published",
+      "status": "draft",
       "suggestions": [
         {
-          "file": "content/blog/codex-edit-existing-ui-freelance-scope.mdx",
-          "reason": "keyword overlap: ai, codex, 怎么, 工具, 项目, 能不",
-          "score": 71,
-          "slug": "codex-edit-existing-ui-freelance-scope",
-          "title": "Codex 修改现有网页 UI 使用前怎么判断是否适合",
-          "url": "/blog/codex-edit-existing-ui-freelance-scope"
+          "file": "content/blog/permission-denied-fix-checklist.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践, 新手教程; keyword overlap: 新手检查清单, 报错解决, ai, 工具实践, 新手教程, 怎么",
+          "score": 134,
+          "slug": "permission-denied-fix-checklist",
+          "title": "permission denied 报错新手怎么处理：新手检查清单",
+          "url": "/blog/permission-denied-fix-checklist"
         },
         {
+          "file": "content/blog/permission-denied-fix-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践; keyword overlap: 报错解决, ai, 工具实践, 怎么, 新手, 报错",
+          "score": 130,
+          "slug": "permission-denied-fix-freelance-scope",
+          "title": "permission denied 报错新手怎么处理：使用前怎么判断是否适合",
+          "url": "/blog/permission-denied-fix-freelance-scope"
+        },
+        {
+          "file": "content/blog/nextjs-hydration-error-debug-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践; keyword overlap: 报错解决, ai, 工具实践, 怎么, 报错, 错解",
+          "score": 122,
+          "slug": "nextjs-hydration-error-debug-freelance-scope",
+          "title": "Next.js hydration error 怎么排查：使用前怎么判断是否适合",
+          "url": "/blog/nextjs-hydration-error-debug-freelance-scope"
+        },
+        {
+          "file": "content/blog/permission-denied-fix-mistakes.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践, 新手教程; keyword overlap: 报错解决, ai, 工具实践, 新手教程, 怎么, 新手",
+          "score": 122,
+          "slug": "permission-denied-fix-mistakes",
+          "title": "permission denied 报错新手怎么处理：常见错误和解决步骤",
+          "url": "/blog/permission-denied-fix-mistakes"
+        },
+        {
+          "file": "content/blog/github-actions-build-log-debug-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践; keyword overlap: 报错解决, ai, 工具实践, github, 失败, 怎么",
+          "score": 118,
+          "slug": "github-actions-build-log-debug-freelance-scope",
+          "title": "GitHub Actions build 失败使用前怎么判断是否适合",
+          "url": "/blog/github-actions-build-log-debug-freelance-scope"
+        }
+      ],
+      "title": "Windows 路径和权限导致安装失败怎么办：新手检查清单"
+    },
+    {
+      "currentInternalLinks": 6,
+      "file": "content/blog/windows-path-permission-install-fix-freelance-scope.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/permission-denied-fix-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践; keyword overlap: 使用前怎么判断是否适合, 报错解决, ai, 工具实践, 怎么, 使用",
+          "score": 154,
+          "slug": "permission-denied-fix-freelance-scope",
+          "title": "permission denied 报错新手怎么处理：使用前怎么判断是否适合",
+          "url": "/blog/permission-denied-fix-freelance-scope"
+        },
+        {
+          "file": "content/blog/nextjs-hydration-error-debug-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践; keyword overlap: 使用前怎么判断是否适合, 报错解决, ai, 工具实践, 怎么, 使用",
+          "score": 146,
+          "slug": "nextjs-hydration-error-debug-freelance-scope",
+          "title": "Next.js hydration error 怎么排查：使用前怎么判断是否适合",
+          "url": "/blog/nextjs-hydration-error-debug-freelance-scope"
+        },
+        {
+          "file": "content/blog/github-actions-build-log-debug-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践; keyword overlap: 报错解决, ai, 工具实践, github, 失败, 怎么",
+          "score": 138,
+          "slug": "github-actions-build-log-debug-freelance-scope",
+          "title": "GitHub Actions build 失败使用前怎么判断是否适合",
+          "url": "/blog/github-actions-build-log-debug-freelance-scope"
+        },
+        {
+          "file": "content/blog/env-variable-missing-fix-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践; keyword overlap: 使用前怎么判断是否适合, 报错解决, ai, 工具实践, 怎么, 使用",
+          "score": 134,
+          "slug": "env-variable-missing-fix-freelance-scope",
+          "title": "环境变量 missing 使用前怎么判断是否适合",
+          "url": "/blog/env-variable-missing-fix-freelance-scope"
+        },
+        {
+          "file": "content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践; keyword overlap: 使用前怎么判断是否适合, 报错解决, ai, 工具实践, 怎么, 使用",
+          "score": 134,
+          "slug": "failed-to-push-some-refs-fix-freelance-scope",
+          "title": "failed to push some refs 使用前怎么判断是否适合",
+          "url": "/blog/failed-to-push-some-refs-fix-freelance-scope"
+        }
+      ],
+      "title": "Windows 路径和权限导致安装失败怎么办：使用前怎么判断是否适合"
+    },
+    {
+      "currentInternalLinks": 6,
+      "file": "content/blog/windows-path-permission-install-fix.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "expansion"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
+          "file": "content/blog/permission-denied-fix-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践; keyword overlap: 报错解决, ai, 工具实践, 怎么, 报错, 错解",
+          "score": 130,
+          "slug": "permission-denied-fix-freelance-scope",
+          "title": "permission denied 报错新手怎么处理：使用前怎么判断是否适合",
+          "url": "/blog/permission-denied-fix-freelance-scope"
+        },
+        {
+          "file": "content/blog/nextjs-hydration-error-debug-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践; keyword overlap: 报错解决, ai, 工具实践, 怎么, 报错, 错解",
+          "score": 122,
+          "slug": "nextjs-hydration-error-debug-freelance-scope",
+          "title": "Next.js hydration error 怎么排查：使用前怎么判断是否适合",
+          "url": "/blog/nextjs-hydration-error-debug-freelance-scope"
+        },
+        {
+          "file": "content/blog/permission-denied-fix-checklist.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践, 新手教程; keyword overlap: 报错解决, ai, 工具实践, 新手教程, 怎么, 报错",
+          "score": 122,
+          "slug": "permission-denied-fix-checklist",
+          "title": "permission denied 报错新手怎么处理：新手检查清单",
+          "url": "/blog/permission-denied-fix-checklist"
+        },
+        {
+          "file": "content/blog/permission-denied-fix-mistakes.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践, 新手教程; keyword overlap: 报错解决, ai, 工具实践, 新手教程, 怎么, 报错",
+          "score": 122,
+          "slug": "permission-denied-fix-mistakes",
+          "title": "permission denied 报错新手怎么处理：常见错误和解决步骤",
+          "url": "/blog/permission-denied-fix-mistakes"
+        },
+        {
+          "file": "content/blog/github-actions-build-log-debug-freelance-scope.mdx",
+          "reason": "same category: 报错解决; shared tags: 报错解决, AI 工具实践; keyword overlap: 报错解决, ai, 工具实践, github, 失败, 怎么",
+          "score": 118,
+          "slug": "github-actions-build-log-debug-freelance-scope",
+          "title": "GitHub Actions build 失败使用前怎么判断是否适合",
+          "url": "/blog/github-actions-build-log-debug-freelance-scope"
+        }
+      ],
+      "title": "Windows 路径和权限导致安装失败怎么办"
+    }
+  ],
+  "broadFirstCoverageItems": [],
+  "missingSuggestions": [],
+  "recommendedItems": [
+    {
+      "currentInternalLinks": 3,
+      "file": "content/blog/tools-not-to-buy-first.mdx",
+      "linksToPublicArticles": 0,
+      "missingPublicLinkSuggestion": false,
+      "scopes": [
+        "recommended"
+      ],
+      "status": "draft",
+      "suggestions": [
+        {
           "file": "content/blog/codex-client-requirement-questions-freelance-scope.mdx",
-          "reason": "keyword overlap: ai, codex, 怎么, 工具, 项目, 能不",
-          "score": 67,
+          "reason": "shared tags: AI 工具实践; keyword overlap: ai, 工具实践, 新手教程, codex, 工具, 新手",
+          "score": 91,
           "slug": "codex-client-requirement-questions-freelance-scope",
           "title": "Codex 需求不清楚的任务使用前怎么判断是否适合",
           "url": "/blog/codex-client-requirement-questions-freelance-scope"
         },
         {
-          "file": "content/blog/codex-bugfix-rollback-record-freelance-scope.mdx",
-          "reason": "keyword overlap: ai, codex, 怎么, 工具, 项目, 能不",
-          "score": 63,
-          "slug": "codex-bugfix-rollback-record-freelance-scope",
-          "title": "Codex 修 bug 任务使用前怎么判断是否适合",
-          "url": "/blog/codex-bugfix-rollback-record-freelance-scope"
+          "file": "content/blog/daily-ai-freelance-practice-log.mdx",
+          "reason": "shared tags: AI 工具实践, 新手教程; keyword overlap: ai, 工具实践, 新手教程, 作品集, 工具, 新手",
+          "score": 88,
+          "slug": "daily-ai-freelance-practice-log",
+          "title": "新手如何记录每天的项目练习",
+          "url": "/blog/daily-ai-freelance-practice-log"
         },
         {
-          "file": "content/blog/codex-github-workflow-freelance-scope.mdx",
-          "reason": "keyword overlap: ai, codex, 怎么, 工具, 项目, 能不",
-          "score": 63,
-          "slug": "codex-github-workflow-freelance-scope",
-          "title": "Codex GitHub 提交任务使用前怎么判断是否适合",
-          "url": "/blog/codex-github-workflow-freelance-scope"
+          "file": "content/blog/first-portfolio-case-realistic-checklist.mdx",
+          "reason": "shared tags: AI 工具实践, 新手教程; keyword overlap: ai, 工具实践, 新手教程, 第一, 作品集, 工具",
+          "score": 88,
+          "slug": "first-portfolio-case-realistic-checklist",
+          "title": "第一个作品集案例真实性检查清单",
+          "url": "/blog/first-portfolio-case-realistic-checklist"
         },
         {
-          "file": "content/blog/agent-production-deployment-checklist.mdx",
-          "reason": "shared tags: AI Agent; keyword overlap: ai, agent, 部署, 权限, 上线, 线检",
-          "score": 60,
-          "slug": "agent-production-deployment-checklist",
-          "title": "Agent 生产上线检查表：权限、日志、成本和人工确认",
-          "url": "/blog/agent-production-deployment-checklist"
+          "file": "content/blog/codex-first-day-guide-freelance-scope.mdx",
+          "reason": "shared tags: AI 工具实践, 新手教程; keyword overlap: ai, 工具实践, 新手教程, codex, 第一, 工具",
+          "score": 87,
+          "slug": "codex-first-day-guide-freelance-scope",
+          "title": "Codex 是什么，新手第一天应该怎么用：使用前怎么判断是否适合",
+          "url": "/blog/codex-first-day-guide-freelance-scope"
+        },
+        {
+          "file": "content/blog/codex-first-landing-page-freelance-scope.mdx",
+          "reason": "shared tags: AI 工具实践, 新手教程; keyword overlap: ai, 工具实践, 新手教程, codex, 第一, 工具",
+          "score": 87,
+          "slug": "codex-first-landing-page-freelance-scope",
+          "title": "Codex 怎么做第一个落地页：使用前怎么判断是否适合",
+          "url": "/blog/codex-first-landing-page-freelance-scope"
         }
       ],
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
+      "title": "AI 工具新手不应该先买哪些工具"
     },
     {
       "currentInternalLinks": 3,
-      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-      "linksToPublicArticles": 2,
+      "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
+      "linksToPublicArticles": 0,
       "missingPublicLinkSuggestion": false,
       "scopes": [
-        "broad-first-coverage",
-        "expansion"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/dify-workflow-error-handling-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, dify, 怎么, 变量, 重试",
-          "score": 78,
-          "slug": "dify-workflow-error-handling-guide",
-          "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
-          "url": "/blog/dify-workflow-error-handling-guide"
-        },
-        {
-          "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, 模型, 怎么, 项目, 大模",
-          "score": 74,
-          "slug": "llm-cost-monitoring-dashboard-guide",
-          "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
-          "url": "/blog/llm-cost-monitoring-dashboard-guide"
-        },
-        {
-          "file": "content/blog/n8n-ai-agent-webhook-production-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, agent, 队列, n8n, 怎么",
-          "score": 70,
-          "slug": "n8n-ai-agent-webhook-production-guide",
-          "title": "n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试",
-          "url": "/blog/n8n-ai-agent-webhook-production-guide"
-        },
-        {
-          "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, api, 部署, 模型, 怎么, 大模",
-          "score": 66,
-          "slug": "llm-deployment-huggingface-inference-endpoints-guide",
-          "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
-          "url": "/blog/llm-deployment-huggingface-inference-endpoints-guide"
-        },
-        {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, agent, 知识库, 模型, 知识",
-          "score": 62,
-          "slug": "ai-model-selection-customer-service-guide",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "/blog/ai-model-selection-customer-service-guide"
-        }
-      ],
-      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急"
-    },
-    {
-      "currentInternalLinks": 4,
-      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-      "linksToPublicArticles": 3,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "broad-first-coverage",
         "expansion",
-        "recommended",
-        "wave-1"
+        "recommended"
       ],
-      "status": "published",
+      "status": "draft",
       "suggestions": [
         {
-          "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: RAG, AI Agent; keyword overlap: ai, 部署, rag, agent, 知识, 识库",
-          "score": 86,
-          "slug": "n8n-ai-agent-rag-memory-guide",
-          "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
-          "url": "/blog/n8n-ai-agent-rag-memory-guide"
+          "file": "content/blog/qdrant-vector-database-beginner-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: 向量数据库, RAG, Qdrant; keyword overlap: rag, qdrant, ai, 基建, 向量数据库, 过滤",
+          "score": 118,
+          "slug": "qdrant-vector-database-beginner-guide",
+          "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
+          "url": "/blog/qdrant-vector-database-beginner-guide"
         },
         {
-          "file": "content/blog/enterprise-im-ai-agent-integration-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: AI Agent; keyword overlap: ai, 部署, agent, 人工, 怎么, 么接",
-          "score": 70,
-          "slug": "enterprise-im-ai-agent-integration-guide",
-          "title": "企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管",
-          "url": "/blog/enterprise-im-ai-agent-integration-guide"
+          "file": "content/blog/rag-knowledge-base-beginner-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数",
+          "score": 106,
+          "slug": "rag-knowledge-base-beginner-guide",
+          "title": "RAG 知识库怎么搭：文档、切分、检索和回答复核",
+          "url": "/blog/rag-knowledge-base-beginner-guide"
         },
         {
-          "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 成本, 部署, 模型, 怎么, 么做",
-          "score": 70,
-          "slug": "llm-cost-monitoring-dashboard-guide",
-          "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
-          "url": "/blog/llm-cost-monitoring-dashboard-guide"
+          "file": "content/blog/chroma-vector-database-rag-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, collection, 向量",
+          "score": 102,
+          "slug": "chroma-vector-database-rag-guide",
+          "title": "Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection",
+          "url": "/blog/chroma-vector-database-rag-guide"
         },
         {
-          "file": "content/blog/openai-batch-api-cost-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 成本, 部署, 什么, 适合, 任务",
-          "score": 70,
-          "slug": "openai-batch-api-cost-guide",
-          "title": "OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制",
-          "url": "/blog/openai-batch-api-cost-guide"
+          "file": "content/blog/rag-retrieval-no-context-debug-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数",
+          "score": 102,
+          "slug": "rag-retrieval-no-context-debug-guide",
+          "title": "RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路",
+          "url": "/blog/rag-retrieval-no-context-debug-guide"
         },
         {
-          "file": "content/blog/dify-workflow-error-handling-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, 人工, 怎么, 么做, 处理",
-          "score": 66,
-          "slug": "dify-workflow-error-handling-guide",
-          "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
-          "url": "/blog/dify-workflow-error-handling-guide"
+          "file": "content/blog/pinecone-rag-beginner-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数",
+          "score": 94,
+          "slug": "pinecone-rag-beginner-guide",
+          "title": "Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试",
+          "url": "/blog/pinecone-rag-beginner-guide"
         }
       ],
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
+      "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界"
     },
     {
-      "currentInternalLinks": 6,
-      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
-      "linksToPublicArticles": 2,
+      "currentInternalLinks": 3,
+      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+      "linksToPublicArticles": 1,
       "missingPublicLinkSuggestion": false,
       "scopes": [
-        "broad-first-coverage",
         "expansion",
-        "recommended",
-        "wave-1"
+        "recommended"
       ],
-      "status": "published",
+      "status": "draft",
       "suggestions": [
-        {
-          "file": "content/blog/sales-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 销售, 提示词, 提示词模板, 提示, 示词",
-          "score": 114,
-          "slug": "sales-ai-prompts-guide",
-          "title": "销售 AI 提示词模板：客户画像、跟进话术、异议处理和会议纪要",
-          "url": "/blog/sales-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/ai-prompt-framework-business-guide.mdx",
-          "reason": "same category: AI 提示词; shared tags: AI 提示词; keyword overlap: ai, 提示词, 行业, 全行, 提示, 示词",
-          "score": 90,
-          "slug": "ai-prompt-framework-business-guide",
-          "title": "AI 提示词怎么写才好用：全行业都能套的 5 段式框架",
-          "url": "/blog/ai-prompt-framework-business-guide"
-        },
-        {
-          "file": "content/blog/customer-service-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 客服, 提示词, 提示词模板, 提示, 示词",
-          "score": 90,
-          "slug": "customer-service-ai-prompts-guide",
-          "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
-          "url": "/blog/customer-service-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/marketing-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 运营, 提示词, 提示词模板, 广告文案, 提示",
-          "score": 90,
-          "slug": "marketing-ai-prompts-guide",
-          "title": "营销 AI 提示词模板：选题、广告文案、SEO 和活动复盘怎么写",
-          "url": "/blog/marketing-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/operations-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; shared tags: SOP; keyword overlap: ai, 运营, 提示词, 提示词模板, sop, 周报",
-          "score": 90,
-          "slug": "operations-ai-prompts-guide",
-          "title": "运营 AI 提示词模板：周报、SOP、活动计划、复盘和数据解释",
-          "url": "/blog/operations-ai-prompts-guide"
-        }
-      ],
-      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
-    },
-    {
-      "currentInternalLinks": 6,
-      "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
-      "linksToPublicArticles": 2,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "broad-first-coverage",
-        "expansion"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/local-llm-vram-not-enough-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: vLLM; keyword overlap: ai, 部署, vllm, 并发, 大模, 模型",
-          "score": 74,
-          "slug": "local-llm-vram-not-enough-guide",
-          "title": "本地部署大模型显存不够怎么办：量化、上下文、并发和换模型",
-          "url": "/blog/local-llm-vram-not-enough-guide"
-        },
-        {
-          "file": "content/blog/openai-batch-api-cost-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: api, ai, 部署, 成本, 和成, 什么",
-          "score": 74,
-          "slug": "openai-batch-api-cost-guide",
-          "title": "OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制",
-          "url": "/blog/openai-batch-api-cost-guide"
-        },
-        {
-          "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, 成本, 监控, 大模, 模型",
-          "score": 70,
-          "slug": "llm-cost-monitoring-dashboard-guide",
-          "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
-          "url": "/blog/llm-cost-monitoring-dashboard-guide"
-        },
         {
           "file": "content/blog/multi-model-router-fallback-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, 成本, 模型, 怎么, 本和",
-          "score": 66,
+          "reason": "same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做",
+          "score": 106,
           "slug": "multi-model-router-fallback-guide",
           "title": "多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估",
           "url": "/blog/multi-model-router-fallback-guide"
         },
         {
-          "file": "content/blog/llm-deployment-beginner-guide.mdx",
-          "reason": "shared tags: 大模型部署; keyword overlap: api, ai, 部署, 大模型部署, 大模, 模型",
-          "score": 64,
-          "slug": "llm-deployment-beginner-guide",
-          "title": "大模型部署是什么意思：API、本地和私有化怎么选",
-          "url": "/blog/llm-deployment-beginner-guide"
-        }
-      ],
-      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查"
-    },
-    {
-      "currentInternalLinks": 3,
-      "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
-      "linksToPublicArticles": 2,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "broad-first-coverage"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/agent-human-review-loop-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent; keyword overlap: ai, 基建, agent, 怎么, 人工, 工审",
+          "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
+          "reason": "same category: AI 部署; keyword overlap: ai, claude, 部署, 降级, api, 怎么",
           "score": 74,
-          "slug": "agent-human-review-loop-guide",
-          "title": "Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认",
-          "url": "/blog/agent-human-review-loop-guide"
+          "slug": "claude-api-rate-limit-debug-guide",
+          "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+          "url": "/blog/claude-api-rate-limit-debug-guide"
         },
         {
-          "file": "content/blog/flowise-local-deployment-beginner-guide.mdx",
-          "reason": "same category: AI 基建; keyword overlap: 本地, 权限, ai, 基建, agent, 部署",
+          "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
+          "reason": "same category: AI 部署; keyword overlap: ai, gemini, 部署, 降级, api, 怎么",
           "score": 74,
-          "slug": "flowise-local-deployment-beginner-guide",
-          "title": "Flowise 本地部署怎么开始：新手先看数据和权限",
-          "url": "/blog/flowise-local-deployment-beginner-guide"
-        },
-        {
-          "file": "content/blog/agent-memory-postgres-schema-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent; keyword overlap: ai, 基建, agent, 怎么, 数据, 据库",
-          "score": 70,
-          "slug": "agent-memory-postgres-schema-guide",
-          "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
-          "url": "/blog/agent-memory-postgres-schema-guide"
-        },
-        {
-          "file": "content/blog/agent-production-deployment-checklist.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent; keyword overlap: 权限, ai, 基建, agent, 部署, 日志",
-          "score": 70,
-          "slug": "agent-production-deployment-checklist",
-          "title": "Agent 生产上线检查表：权限、日志、成本和人工确认",
-          "url": "/blog/agent-production-deployment-checklist"
-        },
-        {
-          "file": "content/blog/agent-tool-calling-beginner-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: AI Agent; keyword overlap: ai, 基建, agent, 工具, 怎么, 执行",
-          "score": 70,
-          "slug": "agent-tool-calling-beginner-guide",
-          "title": "Agent 工具调用怎么设计：读、写、执行要分清",
-          "url": "/blog/agent-tool-calling-beginner-guide"
-        }
-      ],
-      "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单"
-    },
-    {
-      "currentInternalLinks": 5,
-      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-      "linksToPublicArticles": 4,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "broad-first-coverage"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
-          "reason": "shared tags: AI Agent, RAG; keyword overlap: ai, agent, rag, 记忆, 长期记忆, 怎么设计",
-          "score": 92,
-          "slug": "ai-agent-memory-rag-design-guide",
-          "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
-          "url": "/blog/ai-agent-memory-rag-design-guide"
-        },
-        {
-          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: AI Agent, RAG; keyword overlap: ai, agent, rag, 部署, 客服, 知识",
-          "score": 86,
-          "slug": "ai-model-selection-customer-service-guide",
-          "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-          "url": "/blog/ai-model-selection-customer-service-guide"
-        },
-        {
-          "file": "content/blog/n8n-ai-agent-webhook-production-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: n8n, AI Agent; keyword overlap: n8n, ai, agent, 部署, 怎么, 自动",
-          "score": 74,
-          "slug": "n8n-ai-agent-webhook-production-guide",
-          "title": "n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试",
-          "url": "/blog/n8n-ai-agent-webhook-production-guide"
-        },
-        {
-          "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: AI Agent; keyword overlap: ai, agent, 部署, 怎么, 调用, 工具",
-          "score": 66,
-          "slug": "dify-workflow-vs-agent-guide",
-          "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
-          "url": "/blog/dify-workflow-vs-agent-guide"
-        },
-        {
-          "file": "content/blog/enterprise-im-ai-agent-integration-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: AI Agent; keyword overlap: ai, agent, 部署, 怎么, 么接, 权限",
-          "score": 66,
-          "slug": "enterprise-im-ai-agent-integration-guide",
-          "title": "企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管",
-          "url": "/blog/enterprise-im-ai-agent-integration-guide"
-        }
-      ],
-      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储"
-    }
-  ],
-  "missingSuggestions": [],
-  "recommendedItems": [
-    {
-      "currentInternalLinks": 6,
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-      "linksToPublicArticles": 2,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "broad-first-coverage",
-        "expansion",
-        "recommended",
-        "wave-1"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/codex-edit-existing-ui-freelance-scope.mdx",
-          "reason": "keyword overlap: ai, codex, 怎么, 工具, 项目, 能不",
-          "score": 71,
-          "slug": "codex-edit-existing-ui-freelance-scope",
-          "title": "Codex 修改现有网页 UI 使用前怎么判断是否适合",
-          "url": "/blog/codex-edit-existing-ui-freelance-scope"
-        },
-        {
-          "file": "content/blog/codex-client-requirement-questions-freelance-scope.mdx",
-          "reason": "keyword overlap: ai, codex, 怎么, 工具, 项目, 能不",
-          "score": 67,
-          "slug": "codex-client-requirement-questions-freelance-scope",
-          "title": "Codex 需求不清楚的任务使用前怎么判断是否适合",
-          "url": "/blog/codex-client-requirement-questions-freelance-scope"
-        },
-        {
-          "file": "content/blog/codex-bugfix-rollback-record-freelance-scope.mdx",
-          "reason": "keyword overlap: ai, codex, 怎么, 工具, 项目, 能不",
-          "score": 63,
-          "slug": "codex-bugfix-rollback-record-freelance-scope",
-          "title": "Codex 修 bug 任务使用前怎么判断是否适合",
-          "url": "/blog/codex-bugfix-rollback-record-freelance-scope"
-        },
-        {
-          "file": "content/blog/codex-github-workflow-freelance-scope.mdx",
-          "reason": "keyword overlap: ai, codex, 怎么, 工具, 项目, 能不",
-          "score": 63,
-          "slug": "codex-github-workflow-freelance-scope",
-          "title": "Codex GitHub 提交任务使用前怎么判断是否适合",
-          "url": "/blog/codex-github-workflow-freelance-scope"
-        },
-        {
-          "file": "content/blog/agent-production-deployment-checklist.mdx",
-          "reason": "shared tags: AI Agent; keyword overlap: ai, agent, 部署, 权限, 上线, 线检",
-          "score": 60,
-          "slug": "agent-production-deployment-checklist",
-          "title": "Agent 生产上线检查表：权限、日志、成本和人工确认",
-          "url": "/blog/agent-production-deployment-checklist"
-        }
-      ],
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
-    },
-    {
-      "currentInternalLinks": 4,
-      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-      "linksToPublicArticles": 3,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "broad-first-coverage",
-        "expansion",
-        "recommended",
-        "wave-1"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: RAG, AI Agent; keyword overlap: ai, 部署, rag, agent, 知识, 识库",
-          "score": 86,
-          "slug": "n8n-ai-agent-rag-memory-guide",
-          "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
-          "url": "/blog/n8n-ai-agent-rag-memory-guide"
-        },
-        {
-          "file": "content/blog/enterprise-im-ai-agent-integration-guide.mdx",
-          "reason": "same category: AI 部署; shared tags: AI Agent; keyword overlap: ai, 部署, agent, 人工, 怎么, 么接",
-          "score": 70,
-          "slug": "enterprise-im-ai-agent-integration-guide",
-          "title": "企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管",
-          "url": "/blog/enterprise-im-ai-agent-integration-guide"
+          "slug": "gemini-api-rate-limit-debug-guide",
+          "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+          "url": "/blog/gemini-api-rate-limit-debug-guide"
         },
         {
           "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 成本, 部署, 模型, 怎么, 么做",
-          "score": 70,
+          "reason": "same category: AI 部署; keyword overlap: ai, 部署, 怎么, 么做, 模型, 成本",
+          "score": 74,
           "slug": "llm-cost-monitoring-dashboard-guide",
           "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
           "url": "/blog/llm-cost-monitoring-dashboard-guide"
         },
         {
           "file": "content/blog/openai-batch-api-cost-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 成本, 部署, 什么, 适合, 任务",
-          "score": 70,
+          "reason": "same category: AI 部署; keyword overlap: ai, openai, 部署, api, 任务, 适合",
+          "score": 74,
           "slug": "openai-batch-api-cost-guide",
           "title": "OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制",
           "url": "/blog/openai-batch-api-cost-guide"
-        },
-        {
-          "file": "content/blog/dify-workflow-error-handling-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, 部署, 人工, 怎么, 么做, 处理",
-          "score": 66,
-          "slug": "dify-workflow-error-handling-guide",
-          "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
-          "url": "/blog/dify-workflow-error-handling-guide"
         }
       ],
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
-    },
-    {
-      "currentInternalLinks": 6,
-      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
-      "linksToPublicArticles": 2,
-      "missingPublicLinkSuggestion": false,
-      "scopes": [
-        "broad-first-coverage",
-        "expansion",
-        "recommended",
-        "wave-1"
-      ],
-      "status": "published",
-      "suggestions": [
-        {
-          "file": "content/blog/sales-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 销售, 提示词, 提示词模板, 提示, 示词",
-          "score": 114,
-          "slug": "sales-ai-prompts-guide",
-          "title": "销售 AI 提示词模板：客户画像、跟进话术、异议处理和会议纪要",
-          "url": "/blog/sales-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/ai-prompt-framework-business-guide.mdx",
-          "reason": "same category: AI 提示词; shared tags: AI 提示词; keyword overlap: ai, 提示词, 行业, 全行, 提示, 示词",
-          "score": 90,
-          "slug": "ai-prompt-framework-business-guide",
-          "title": "AI 提示词怎么写才好用：全行业都能套的 5 段式框架",
-          "url": "/blog/ai-prompt-framework-business-guide"
-        },
-        {
-          "file": "content/blog/customer-service-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 客服, 提示词, 提示词模板, 提示, 示词",
-          "score": 90,
-          "slug": "customer-service-ai-prompts-guide",
-          "title": "客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断",
-          "url": "/blog/customer-service-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/marketing-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; keyword overlap: ai, 运营, 提示词, 提示词模板, 广告文案, 提示",
-          "score": 90,
-          "slug": "marketing-ai-prompts-guide",
-          "title": "营销 AI 提示词模板：选题、广告文案、SEO 和活动复盘怎么写",
-          "url": "/blog/marketing-ai-prompts-guide"
-        },
-        {
-          "file": "content/blog/operations-ai-prompts-guide.mdx",
-          "reason": "same category: AI 提示词; shared tags: SOP; keyword overlap: ai, 运营, 提示词, 提示词模板, sop, 周报",
-          "score": 90,
-          "slug": "operations-ai-prompts-guide",
-          "title": "运营 AI 提示词模板：周报、SOP、活动计划、复盘和数据解释",
-          "url": "/blog/operations-ai-prompts-guide"
-        }
-      ],
-      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
     }
   ],
   "waveItems": [
@@ -1812,9 +1201,6 @@
       "linksToPublicArticles": 2,
       "missingPublicLinkSuggestion": false,
       "scopes": [
-        "broad-first-coverage",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "status": "published",
@@ -1868,9 +1254,6 @@
       "linksToPublicArticles": 3,
       "missingPublicLinkSuggestion": false,
       "scopes": [
-        "broad-first-coverage",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "status": "published",
@@ -1924,9 +1307,6 @@
       "linksToPublicArticles": 2,
       "missingPublicLinkSuggestion": false,
       "scopes": [
-        "broad-first-coverage",
-        "expansion",
-        "recommended",
         "wave-1"
       ],
       "status": "published",

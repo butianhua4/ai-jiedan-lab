@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T05:25:12.827Z",
+  "generatedAt": "2026-06-16T18:18:48.116Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,67 +9,67 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "clearanceGeneratedAt": "2026-06-14T10:39:25.961Z",
+    "clearanceGeneratedAt": "2026-06-16T18:18:46.638Z",
     "clearanceSummary": {
-      "approvalItems": 8,
-      "backlogItems": 5,
-      "clearanceActions": 63,
-      "copydeskBriefItems": 4,
-      "failedSourceDecisionItems": 1,
+      "approvalItems": 3,
+      "backlogItems": 0,
+      "clearanceActions": 28,
+      "copydeskBriefItems": 2,
+      "failedSourceDecisionItems": 0,
       "immediateItems": 3,
-      "itemsReadyForClearanceReview": 8,
-      "massSearchThemeItems": 6,
-      "popularPromptLaneItems": 5,
+      "itemsReadyForClearanceReview": 3,
+      "massSearchThemeItems": 3,
+      "popularPromptLaneItems": 3,
       "publishConfirmCommandsIncluded": 0,
-      "seoWarningItems": 2,
-      "sourceDecisionItems": 3,
+      "seoWarningItems": 1,
+      "sourceDecisionItems": 1,
       "trafficDataAvailable": false,
       "unsafeItems": 0
     },
-    "collisionGeneratedAt": "2026-06-14T10:39:10.562Z",
+    "collisionGeneratedAt": "2026-06-16T18:18:31.125Z",
     "collisionSummary": {
-      "blockedQueueMatchedItems": 1,
+      "blockedQueueMatchedItems": 0,
       "blockingItems": 0,
-      "decisionItems": 1,
-      "highRiskItems": 1,
-      "humanDecisionReadyItems": 1,
-      "itemsWithCommandBoundary": 1,
+      "decisionItems": 0,
+      "highRiskItems": 0,
+      "humanDecisionReadyItems": 0,
+      "itemsWithCommandBoundary": 0,
       "publishedCollisionItems": 0,
-      "reviewOnlyCollisionItems": 1,
+      "reviewOnlyCollisionItems": 0,
       "unsafeItems": 0,
-      "warningItems": 1
+      "warningItems": 0
     },
-    "freshnessGeneratedAt": "2026-06-14T10:39:11.668Z",
+    "freshnessGeneratedAt": "2026-06-16T18:18:32.248Z",
     "freshnessSummary": {
       "blockedItems": 0,
-      "highRiskItems": 13,
-      "items": 13,
-      "itemsWithOfficialSources": 13,
-      "itemsWithReachableSources": 13,
-      "readyItems": 13,
+      "highRiskItems": 2,
+      "items": 2,
+      "itemsWithOfficialSources": 2,
+      "itemsWithReachableSources": 2,
+      "readyItems": 2,
       "unsafeCommands": 0
     },
-    "nextReviewSourcePackGeneratedAt": "2026-06-14T10:38:51.310Z",
+    "nextReviewSourcePackGeneratedAt": "2026-06-16T18:18:12.681Z",
     "nextReviewSourcePackSummary": {
-      "items": 19,
+      "items": 15,
       "missingApprovalChecks": 0,
       "missingFactCheckQueries": 0,
       "missingOfficialSources": 0,
       "missingRiskChecks": 0,
-      "roadmapNextReviewFiles": 19,
-      "safeDraftItems": 19,
+      "roadmapNextReviewFiles": 15,
+      "safeDraftItems": 15,
       "unsafeItems": 0
     },
-    "optimizationGeneratedAt": "2026-06-14T10:39:08.238Z",
+    "optimizationGeneratedAt": "2026-06-16T18:18:28.871Z",
     "optimizationSummary": {
-      "briefs": 16,
-      "briefsWithAction": 16,
-      "exactQueryWeakItems": 3,
-      "missingPublicLinkItems": 15,
-      "readyBriefs": 16,
+      "briefs": 2,
+      "briefsWithAction": 2,
+      "exactQueryWeakItems": 2,
+      "missingPublicLinkItems": 1,
+      "readyBriefs": 2,
       "unsafeCommands": 0
     },
-    "queryCoverageGeneratedAt": "2026-06-16T05:11:54.587Z",
+    "queryCoverageGeneratedAt": "2026-06-16T18:18:15.068Z",
     "queryCoverageSummary": {
       "items": 12,
       "minFamiliesPerItem": 5,
@@ -80,27 +80,27 @@
       "unsafeItems": 0,
       "uniqueFiles": 12,
       "uniqueLanes": 7,
-      "uniqueQueries": 365
+      "uniqueQueries": 352
     },
-    "queryMatchGeneratedAt": "2026-06-16T05:16:45.429Z",
+    "queryMatchGeneratedAt": "2026-06-16T18:18:15.565Z",
     "queryMatchSummary": {
-      "averageExactMatches": 1.75,
-      "averageMatchedFamilies": 6.92,
+      "averageExactMatches": 0.5,
+      "averageMatchedFamilies": 6.75,
       "blockingItems": 0,
       "items": 12,
       "queryCoverageItems": 12,
-      "queryCoverageUniqueQueries": 365,
+      "queryCoverageUniqueQueries": 352,
       "readyItems": 12,
-      "warningItems": 7
+      "warningItems": 10
     },
-    "reviewBatchPlanGeneratedAt": "2026-06-14T10:38:50.319Z",
+    "reviewBatchPlanGeneratedAt": "2026-06-16T18:18:11.710Z",
     "reviewBatchPlanTotals": {
       "plannedBatches": 3,
-      "plannedCandidates": 9,
+      "plannedCandidates": 6,
       "sourceReviewCandidates": 25,
       "sourceOpportunities": 7
     },
-    "workbenchGeneratedAt": "2026-06-16T05:24:44.659Z",
+    "workbenchGeneratedAt": "2026-06-16T18:18:47.631Z",
     "trafficNote": "No measured traffic, ranking, impression, click, conversion, or revenue claim is made."
   },
   "publishingBoundary": {
@@ -111,25 +111,25 @@
   "nextBatch": {
     "batch": 1,
     "candidates": 3,
-    "topic": "Agent 部署、工具调用和记忆",
-    "plannedBatchTopic": "Agent 部署、工具调用和记忆"
+    "topic": "大模型和 AI 应用部署教程",
+    "plannedBatchTopic": "大模型和 AI 应用部署教程"
   },
   "summary": {
-    "actionItems": 38,
+    "actionItems": 39,
     "batchItems": 3,
     "clearanceMatchedItems": 1,
     "commandBoundaries": 3,
-    "copydeskMatchedItems": 2,
+    "copydeskMatchedItems": 1,
     "currentPublicPublished": 500,
     "currentPublishableNow": 0,
-    "freshnessMatchedItems": 3,
+    "freshnessMatchedItems": 1,
     "itemsReadyForHumanRouteReview": 3,
     "plannedBatchCandidates": 3,
     "publishConfirmCommandsIncluded": 0,
     "queryCoverageMatchedItems": 3,
-    "queryMatchWarningItems": 1,
-    "routeWarnings": 4,
-    "seoWarningItems": 1,
+    "queryMatchWarningItems": 3,
+    "routeWarnings": 9,
+    "seoWarningItems": 3,
     "sourcePackMatchedItems": 3,
     "trafficDataAvailable": false,
     "unsafeItems": 0
@@ -141,18 +141,22 @@
         "Confirm the article still targets the next batch topic before any status change.",
         "Verify the opening section answers the likely user search query directly.",
         "Keep the article draft, noindex, and humanReviewRequired until approval.",
-        "Verify official sources before review: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents | Vercel AI SDK docs: https://ai-sdk.dev/docs | LangChain docs: https://python.langchain.com/docs.",
-        "Run manual fact checks for: AI Agent 部署 official docs latest | AI Agent 部署 official documentation current limits | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 fact check official docs.",
-        "Use 35 query variants to check title, description, headings, and first-screen answer fit.",
+        "Verify official sources before review: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.",
+        "Run manual fact checks for: Vercel AI Gateway 多模型 official docs latest | Vercel AI Gateway 多模型 official documentation current limits | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 fact check official docs.",
+        "Use 30 query variants to check title, description, headings, and first-screen answer fit.",
+        "Search wording warnings: few exact query variant matches in article text.",
+        "SEO manual actions: Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型. | If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title. | Confirm the H1/title/description still answer the same search intent after any metadata change..",
         "Review copydesk meta description proposal before approving the draft.",
-        "Review public internal link path: Codex 部署 Vercel 前检查什么：上线前清单.",
-        "Freshness checks: AI Agent 部署 官方文档 最新 | AI Agent 部署 official docs latest | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 事实核对.",
-        "After human approval only: npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
-        "After review state only, dry-run publish without confirm: npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "Review public internal link path: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估.",
+        "Freshness checks: Vercel AI Gateway 多模型 官方文档 最新 | Vercel AI Gateway 多模型 official docs latest | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 事实核对.",
+        "Resolve route warnings before approval: search query match warning exists.",
+        "After human approval only: npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
+        "After review state only, dry-run publish without confirm: npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
         "Do not run publish:articles --confirm from this route."
       ],
-      "category": "AI Agent",
+      "category": "AI 部署",
       "clearance": {
+        "alreadyPublished": false,
         "articleState": {
           "humanReviewRequired": true,
           "noindex": true,
@@ -165,305 +169,121 @@
           "Confirm the draft still answers one clear search intent.",
           "Verify source-backed claims before any status change.",
           "Keep status=draft, noindex=true, and humanReviewRequired=true until approval.",
-          "Review redirect https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction and approve or replace during human review.",
-          "Review redirect https://platform.openai.com/docs -> https://developers.openai.com/api/docs and approve or replace during human review.",
-          "Review redirect https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents and approve or replace during human review.",
-          "Review public internal link suggestion: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).",
+          "SEO: Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
+          "SEO: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "SEO: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "Review public internal link suggestion: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide).",
           "Review proposed meta description from copydesk brief before approval.",
           "Check that popular prompt lane framing stays broad enough for real search demand.",
           "Check that mass-search theme framing is covered without stuffing keywords.",
           "Run mark:review only after explicit human approval; publish confirm remains excluded."
         ],
         "commandBoundary": {
-          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
           "publishConfirm": "not-included",
-          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
           "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
         },
         "copydeskBrief": {
-          "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+          "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
           "internalLink": {
-            "currentPublicLinks": 0,
-            "reason": "keyword overlap: ai, vercel, 部署, 工具, 上线, 检查",
-            "title": "Codex 部署 Vercel 前检查什么：上线前清单",
-            "url": "/blog/codex-vercel-deploy-preflight-checklist"
+            "currentPublicLinks": 1,
+            "reason": "same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做",
+            "title": "多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估",
+            "url": "/blog/multi-model-router-fallback-guide"
           },
-          "kind": "public-gap-review",
-          "priority": 806,
-          "proposedDescription": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
+          "kind": "wave-approval",
+          "priority": 1002,
+          "proposedDescription": "整理 Vercel AI Gateway 多模型接入思路，覆盖统一 API、provider 切换、日志、成本、降级、AI SDK 和上线检查。",
           "proposedOpeningAdditions": [
-            "在开头 200 字内自然回答一次“AI Agent deployment tutorial”这个搜索意图，先给结论再展开步骤。",
-            "补一个小节或提示框覆盖缺口：tool calling、human review、permissions、logs。",
-            "在相关段落加入公开内链：Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist)。"
+            "在开头 200 字内自然回答一次“Vercel AI Gateway 多模型”这个搜索意图，先给结论再展开步骤。",
+            "在相关段落加入公开内链：多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide)。"
           ],
-          "proposedTitle": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "proposedTitle": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
           "ready": true,
-          "scope": "public-gap-wave-1",
+          "scope": "wave-2",
           "searchEvidence": {
             "descriptionHit": true,
-            "exactQueryMatches": 4,
+            "exactQueryMatches": 0,
             "matchedFamilies": 7,
-            "queryCount": 35,
-            "seedExamples": [
-              "AI Agent deployment tutorial",
-              "agent tool calling tutorial",
-              "OpenAI Agents SDK beginner guide",
-              "Vercel AI SDK agent"
-            ],
+            "queryCount": 30,
+            "seedExamples": [],
             "titleHit": true
           },
           "sourceWarnings": [
-            "no exact search-seed phrase appears in title, description, or body",
-            "article currently has no links to published articles",
-            "theme still has missing subtopics: tool calling, human review, permissions, logs"
+            "primary keyword is not an exact title substring",
+            "few exact query variant matches in article text"
           ],
-          "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
           "warningRemediation": [
-            "Rewrite the meta description to name the reader, outcome, and search phrase: AI Agent deployment tutorial.",
-            "Add one contextual link to a published article before approval.",
-            "Decide whether missing subtopics should become a short section or a follow-up article.",
-            "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
-            "Review the suggested public internal link before publishing: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).",
-            "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
+            "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
+            "Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型."
           ]
         },
-        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
         "hasFailedSourceDecision": false,
         "immediate": true,
         "massSearchThemes": 1,
-        "popularPromptLanes": 4,
-        "priorityScore": 773,
+        "popularPromptLanes": 2,
+        "priorityScore": 439,
         "readyForHumanApproval": true,
         "readyForClearanceReview": true,
-        "seoWarning": null,
-        "sourceDecisions": [
-          {
-            "alternatives": [],
-            "decisionOptions": [
-              "Approve the redirected final URL as canonical if it is content-equivalent.",
-              "Replace the original URL with the final URL during human review if the redirect is stable.",
-              "Find a more specific official source if the redirect lands on a generic page.",
-              "Keep the article draft/noindex/humanReviewRequired until approval."
-            ],
-            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-            "finalUrl": "https://ai-sdk.dev/docs/introduction",
-            "kind": "redirected-url",
-            "manualChecklist": [
-              "Original URL: https://ai-sdk.dev/docs",
-              "Final URL: https://ai-sdk.dev/docs/introduction",
-              "Scopes: current-review, public-gap-decision, next-source-pack, broad-first-coverage",
-              "Confirm the replacement source covers the exact claim family.",
-              "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
-              "Use prompt-library sources only as market/category evidence.",
-              "Do not run mark:review or publish commands from this decision pack."
-            ],
-            "originalUrl": "https://ai-sdk.dev/docs",
-            "recommendedCandidate": null,
-            "referenceLabels": [
-              "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-              "https://ai-sdk.dev/docs"
-            ],
-            "scopes": [
-              "current-review",
-              "public-gap-decision",
-              "next-source-pack",
-              "broad-first-coverage"
-            ],
-            "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-            "unsafeReasons": []
+        "seoWarning": {
+          "commandBoundary": {
+            "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
+            "publishConfirm": "not-included",
+            "publishDryRunAfterReview": "npm run publish:articles -- --dry-run"
           },
-          {
-            "alternatives": [],
-            "decisionOptions": [
-              "Approve the redirected final URL as canonical if it is content-equivalent.",
-              "Replace the original URL with the final URL during human review if the redirect is stable.",
-              "Find a more specific official source if the redirect lands on a generic page.",
-              "Keep the article draft/noindex/humanReviewRequired until approval."
-            ],
-            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-            "finalUrl": "https://developers.openai.com/api/docs",
-            "kind": "redirected-url",
-            "manualChecklist": [
-              "Original URL: https://platform.openai.com/docs",
-              "Final URL: https://developers.openai.com/api/docs",
-              "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
-              "Confirm the replacement source covers the exact claim family.",
-              "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
-              "Use prompt-library sources only as market/category evidence.",
-              "Do not run mark:review or publish commands from this decision pack."
-            ],
-            "originalUrl": "https://platform.openai.com/docs",
-            "recommendedCandidate": null,
-            "referenceLabels": [
-              "https://platform.openai.com/docs",
-              "OpenAI API docs: https://platform.openai.com/docs"
-            ],
-            "scopes": [
-              "public-gap-decision",
-              "next-source-pack",
-              "broad-first-coverage"
-            ],
-            "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-            "unsafeReasons": []
-          },
-          {
-            "alternatives": [],
-            "decisionOptions": [
-              "Approve the redirected final URL as canonical if it is content-equivalent.",
-              "Replace the original URL with the final URL during human review if the redirect is stable.",
-              "Find a more specific official source if the redirect lands on a generic page.",
-              "Keep the article draft/noindex/humanReviewRequired until approval."
-            ],
-            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-            "finalUrl": "https://developers.openai.com/api/docs/guides/agents",
-            "kind": "redirected-url",
-            "manualChecklist": [
-              "Original URL: https://platform.openai.com/docs/guides/agents",
-              "Final URL: https://developers.openai.com/api/docs/guides/agents",
-              "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
-              "Confirm the replacement source covers the exact claim family.",
-              "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
-              "Use prompt-library sources only as market/category evidence.",
-              "Do not run mark:review or publish commands from this decision pack."
-            ],
-            "originalUrl": "https://platform.openai.com/docs/guides/agents",
-            "recommendedCandidate": null,
-            "referenceLabels": [
-              "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
-              "https://platform.openai.com/docs/guides/agents"
-            ],
-            "scopes": [
-              "public-gap-decision",
-              "next-source-pack",
-              "broad-first-coverage"
-            ],
-            "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-            "unsafeReasons": []
-          },
-          {
-            "alternatives": [],
-            "decisionOptions": [
-              "Approve the redirected final URL as canonical if it is content-equivalent.",
-              "Replace the original URL with the final URL during human review if the redirect is stable.",
-              "Find a more specific official source if the redirect lands on a generic page.",
-              "Keep the article draft/noindex/humanReviewRequired until approval."
-            ],
-            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-            "finalUrl": "https://developers.openai.com/api/docs/guides/prompt-engineering",
-            "kind": "redirected-url",
-            "manualChecklist": [
-              "Original URL: https://platform.openai.com/docs/guides/prompt-engineering",
-              "Final URL: https://developers.openai.com/api/docs/guides/prompt-engineering",
-              "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
-              "Confirm the replacement source covers the exact claim family.",
-              "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
-              "Use prompt-library sources only as market/category evidence.",
-              "Do not run mark:review or publish commands from this decision pack."
-            ],
-            "originalUrl": "https://platform.openai.com/docs/guides/prompt-engineering",
-            "recommendedCandidate": null,
-            "referenceLabels": [
-              "https://platform.openai.com/docs/guides/prompt-engineering",
-              "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
-            ],
-            "scopes": [
-              "public-gap-decision",
-              "next-source-pack",
-              "broad-first-coverage"
-            ],
-            "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-            "unsafeReasons": []
-          },
-          {
-            "alternatives": [],
-            "decisionOptions": [
-              "Approve the redirected final URL as canonical if it is content-equivalent.",
-              "Replace the original URL with the final URL during human review if the redirect is stable.",
-              "Find a more specific official source if the redirect lands on a generic page.",
-              "Keep the article draft/noindex/humanReviewRequired until approval."
-            ],
-            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-            "finalUrl": "https://developers.openai.com/api/docs/guides/retrieval",
-            "kind": "redirected-url",
-            "manualChecklist": [
-              "Original URL: https://platform.openai.com/docs/guides/retrieval",
-              "Final URL: https://developers.openai.com/api/docs/guides/retrieval",
-              "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
-              "Confirm the replacement source covers the exact claim family.",
-              "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
-              "Use prompt-library sources only as market/category evidence.",
-              "Do not run mark:review or publish commands from this decision pack."
-            ],
-            "originalUrl": "https://platform.openai.com/docs/guides/retrieval",
-            "recommendedCandidate": null,
-            "referenceLabels": [
-              "https://platform.openai.com/docs/guides/retrieval",
-              "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
-            ],
-            "scopes": [
-              "public-gap-decision",
-              "next-source-pack",
-              "broad-first-coverage"
-            ],
-            "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-            "unsafeReasons": []
-          },
-          {
-            "alternatives": [],
-            "decisionOptions": [
-              "Approve the redirected final URL as canonical if it is content-equivalent.",
-              "Replace the original URL with the final URL during human review if the redirect is stable.",
-              "Find a more specific official source if the redirect lands on a generic page.",
-              "Keep the article draft/noindex/humanReviewRequired until approval."
-            ],
-            "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-            "finalUrl": "https://docs.langchain.com/oss/python/langchain/overview",
-            "kind": "redirected-url",
-            "manualChecklist": [
-              "Original URL: https://python.langchain.com/docs",
-              "Final URL: https://docs.langchain.com/oss/python/langchain/overview",
-              "Scopes: public-gap-decision, next-source-pack, broad-first-coverage",
-              "Confirm the replacement source covers the exact claim family.",
-              "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
-              "Use prompt-library sources only as market/category evidence.",
-              "Do not run mark:review or publish commands from this decision pack."
-            ],
-            "originalUrl": "https://python.langchain.com/docs",
-            "recommendedCandidate": null,
-            "referenceLabels": [
-              "LangChain docs: https://python.langchain.com/docs",
-              "https://python.langchain.com/docs"
-            ],
-            "scopes": [
-              "public-gap-decision",
-              "next-source-pack",
-              "broad-first-coverage"
-            ],
-            "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-            "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-            "unsafeReasons": []
-          }
-        ],
-        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+          "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+          "humanChecklist": [
+            "Review file: content/blog/vercel-ai-gateway-multi-provider-guide.mdx.",
+            "Review status: draft.",
+            "Confirm primary keyword intent: Vercel AI Gateway 多模型.",
+            "Snippet warning: primary keyword is not an exact title substring.",
+            "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
+            "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+            "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+            "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
+            "Do not mark review or publish from this remediation pack."
+          ],
+          "manualActions": [
+            "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
+            "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+            "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+            "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
+          ],
+          "manualFixReady": true,
+          "primaryKeyword": "Vercel AI Gateway 多模型",
+          "priority": 48,
+          "scope": [
+            "expansion",
+            "recommended"
+          ],
+          "schemaWarnings": [],
+          "snippetWarnings": [
+            "primary keyword is not an exact title substring"
+          ],
+          "status": "draft",
+          "stopBefore": "Stop before human approval before changing draft metadata, mark:review, or publishing.",
+          "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+          "unsafeReasons": []
+        },
+        "sourceDecisions": [],
+        "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
         "unsafeReasons": []
       },
-      "cluster": "Agent and memory",
+      "cluster": "AI deployment",
       "commandBoundary": {
-        "dryRunMarkReview": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+        "dryRunMarkReview": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
         "publishConfirm": "not-included",
-        "publishDryRun": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "publishDryRun": "npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
         "stopBefore": "A human must approve exact content/source/metadata changes and then explicitly approve mark:review --confirm-human."
       },
-      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
       "freshness": {
-        "articleUpdatedAt": "2026-06-13",
-        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+        "articleUpdatedAt": "2026-06-06",
+        "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
         "freshnessRisk": "high",
         "humanReviewChecklist": [
           "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
@@ -473,784 +293,163 @@
           "Only after human approval, run mark:review manually; publishing still requires separate explicit approval."
         ],
         "officialSourceTargets": [
+          "OpenAI docs: https://platform.openai.com/docs",
           "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-          "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
-          "LangChain docs: https://python.langchain.com/docs",
-          "https://ai-sdk.dev/docs",
-          "https://platform.openai.com/docs/guides/agents",
-          "https://python.langchain.com/docs",
+          "Anthropic docs: https://docs.anthropic.com",
+          "Google AI docs: https://ai.google.dev/docs",
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering",
           "https://platform.openai.com/docs",
-          "https://platform.openai.com/docs/guides/retrieval",
+          "https://ai-sdk.dev/docs",
+          "https://docs.anthropic.com",
+          "https://ai.google.dev/docs",
           "https://platform.openai.com/docs/guides/prompt-engineering",
-          "https://openai.github.io/openai-agents-python/",
-          "https://langchain-ai.github.io/langgraph/"
-        ],
-        "readyForFreshnessReview": true,
-        "reachableSources": 26,
-        "reviewFocus": [
-          "tool permissions",
-          "multi-step state",
-          "human approval",
-          "observability and fallback paths",
-          "不要写成全自动替人完成高风险业务",
-          "明确工具权限、人工确认、日志和失败处理",
-          "核对 SDK/API 的当前名称和部署方式",
-          "api",
-          "agent",
-          "model"
-        ],
-        "riskReasons": [
-          "fast-changing technical term: api",
-          "fast-changing technical term: agent",
-          "fast-changing technical term: model",
-          "fast-changing technical term: vercel",
-          "fast-changing technical term: 部署",
-          "fast-changing technical term: 模型",
-          "fast-changing technical term: 知识库",
-          "review-sensitive term: 工具",
-          "review-sensitive term: 报价",
-          "review-sensitive term: 客服",
-          "review-sensitive term: 销售",
-          "review-sensitive term: 自动化"
-        ],
-        "scope": [
-          "action-board",
-          "current-review",
-          "public-gap"
-        ],
-        "sourceTargets": 26,
-        "staleSensitiveChecks": [
-          "AI Agent 部署 官方文档 最新",
-          "AI Agent 部署 official docs latest",
-          "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 事实核对",
-          "AI Agent 平台限制 官方文档",
-          "AI Agent 部署教程",
-          "Agent 记忆怎么做",
-          "AI Agent 工具调用教程",
-          "AI 工作流部署",
-          "Confirm current official guidance for api.",
-          "Confirm current official guidance for agent.",
-          "Confirm current official guidance for model.",
-          "Confirm current official guidance for vercel."
-        ],
-        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-        "warningIssues": [
-          "no exact search-seed phrase appears in title, description, or body",
-          "article currently has no links to published articles",
-          "theme still has missing subtopics: tool calling, human review, permissions, logs"
-        ]
-      },
-      "optimization": {
-        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-        "internalLink": {
-          "currentPublicLinks": 0,
-          "reason": "keyword overlap: ai, vercel, 部署, 工具, 上线, 检查",
-          "title": "Codex 部署 Vercel 前检查什么：上线前清单",
-          "url": "/blog/codex-vercel-deploy-preflight-checklist"
-        },
-        "kind": "public-gap-review",
-        "priority": 806,
-        "proposedDescription": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
-        "proposedOpeningAdditions": [
-          "在开头 200 字内自然回答一次“AI Agent deployment tutorial”这个搜索意图，先给结论再展开步骤。",
-          "补一个小节或提示框覆盖缺口：tool calling、human review、permissions、logs。",
-          "在相关段落加入公开内链：Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist)。"
-        ],
-        "proposedTitle": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-        "ready": true,
-        "scope": "public-gap-wave-1",
-        "searchEvidence": {
-          "descriptionHit": true,
-          "exactQueryMatches": 4,
-          "matchedFamilies": 7,
-          "queryCount": 35,
-          "seedExamples": [
-            "AI Agent deployment tutorial",
-            "agent tool calling tutorial",
-            "OpenAI Agents SDK beginner guide",
-            "Vercel AI SDK agent"
-          ],
-          "titleHit": true
-        },
-        "sourceWarnings": [
-          "no exact search-seed phrase appears in title, description, or body",
-          "article currently has no links to published articles",
-          "theme still has missing subtopics: tool calling, human review, permissions, logs"
-        ],
-        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-        "warningRemediation": [
-          "Rewrite the meta description to name the reader, outcome, and search phrase: AI Agent deployment tutorial.",
-          "Add one contextual link to a published article before approval.",
-          "Decide whether missing subtopics should become a short section or a follow-up article.",
-          "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
-          "Review the suggested public internal link before publishing: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist).",
-          "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
-        ]
-      },
-      "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
-      "opportunityScore": 260,
-      "priorityScore": 778,
-      "queryCoverage": {
-        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-        "gaps": [],
-        "laneId": "agent-deployment-tools",
-        "laneTitle": "AI Agent deployment, tool calling, and production workflow",
-        "primaryKeyword": "AI Agent 部署",
-        "queryCount": 35,
-        "queryFamilies": {
-          "howTo": [
-            "AI Agent 部署怎么做",
-            "AI Agent 部署教程",
-            "AI Agent 部署新手教程",
-            "AI Agent 部署落地步骤"
-          ],
-          "deployment": [
-            "AI Agent 部署部署",
-            "AI Agent 部署工作流",
-            "AI Agent 部署生产环境",
-            "AI Agent 部署",
-            "Agent 工具调用",
-            "Agent 上线检查",
-            "AI Agent 部署 tool calling",
-            "AI Agent 部署 multi-step execution",
-            "AI Agent 部署 human approval",
-            "AI Agent 部署 observability",
-            "AI Agent 部署 permissions"
-          ],
-          "template": [
-            "AI Agent 部署模板",
-            "AI Agent 部署清单",
-            "AI Agent 部署SOP",
-            "AI Agent 部署方案"
-          ],
-          "comparison": [
-            "AI Agent 部署对比",
-            "AI Agent 部署怎么选",
-            "AI Agent 和 Chatbot 区别",
-            "Vercel AI SDK Agent vs OpenAI Agents SDK"
-          ],
-          "risk": [
-            "AI Agent 部署避坑",
-            "AI Agent 部署风险",
-            "AI Agent 部署安全",
-            "AI Agent 部署人工审核"
-          ],
-          "costOps": [
-            "AI Agent 部署成本",
-            "AI Agent 部署报价",
-            "AI Agent 部署维护",
-            "AI Agent 部署上线检查"
-          ],
-          "intentSeeds": [
-            "AI Agent 部署",
-            "AI Agent 工具调用",
-            "Vercel AI SDK Agent",
-            "OpenAI Agents SDK"
-          ]
-        },
-        "readyForManualReview": true,
-        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-        "wave": 1
-      },
-      "queryMatch": {
-        "blockingIssues": [],
-        "bodyFamilyMatches": {
-          "howTo": true,
-          "deployment": true,
-          "template": true,
-          "comparison": true,
-          "risk": true,
-          "costOps": true,
-          "intentSeeds": true
-        },
-        "descriptionHit": true,
-        "exactQueryMatches": 4,
-        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-        "headingFamilyMatches": {
-          "howTo": true,
-          "deployment": true,
-          "template": true,
-          "comparison": true,
-          "risk": true,
-          "costOps": true,
-          "intentSeeds": true
-        },
-        "matchedFamilies": 7,
-        "primaryKeyword": "AI Agent 部署",
-        "queryCount": 35,
-        "readyForManualReview": true,
-        "reviewSuggestions": [],
-        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-        "titleHit": true,
-        "warningIssues": [],
-        "wave": 1
-      },
-      "readyForHumanRouteReview": true,
-      "routeWarnings": [],
-      "seoWarning": null,
-      "sourcePack": {
-        "approvalChecklist": [
-          "Article remains draft: true",
-          "Article remains noindex: true",
-          "Human review flag is present: true",
-          "Quality score is at least 100: true",
-          "Source notes are present: true",
-          "Article has internal links: true",
-          "Reviewer confirms the article answers one clear search intent.",
-          "Reviewer confirms factual claims against official docs before any status change."
-        ],
-        "category": "AI Agent",
-        "currentPack": true,
-        "factCheckQueries": [
-          "AI Agent 部署 official docs latest",
-          "AI Agent 部署 official documentation current limits",
-          "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 fact check official docs",
-          "AI Agent official docs limits pricing changelog",
-          "AI Agent 部署教程",
-          "Agent 工具调用教程",
-          "AI 工作流部署",
-          "Agent 人工审核流程"
-        ],
-        "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
-        "internalLinks": 6,
-        "lane": "deployment: Agent 部署、工具调用和工作流",
-        "lanePriorityScore": 338,
-        "officialSourceTargets": [
-          "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
-          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-          "LangChain docs: https://python.langchain.com/docs",
-          "OpenAI API docs: https://platform.openai.com/docs",
-          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
-          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
-        ],
-        "plannedBatch": true,
-        "primaryKeyword": "AI Agent 部署",
-        "publishBatch": 40,
-        "qualityScore": 100,
-        "riskReviewChecklist": [
-          "No income, ranking, approval, or client acquisition guarantee.",
-          "No instruction to bypass platform, payment, messaging, account, or review rules.",
-          "No API key, credential, private customer data, or account detail is included.",
-          "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
-          "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
-          "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps."
-        ],
-        "safeDraft": true,
-        "searchIntent": "informational",
-        "sourceNotesPresent": true,
-        "status": "draft",
-        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-        "wordCountChinese": 2186,
-        "workflowAngles": [
-          "工具白名单",
-          "多步执行",
-          "人工确认",
-          "失败重试",
-          "日志追踪"
-        ]
-      },
-      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
-      "unsafeReasons": []
-    },
-    {
-      "actions": [
-        "Confirm the article still targets the next batch topic before any status change.",
-        "Verify the opening section answers the likely user search query directly.",
-        "Keep the article draft, noindex, and humanReviewRequired until approval.",
-        "Verify official sources before review: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval | LangChain docs: https://python.langchain.com/docs | LlamaIndex docs: https://docs.llamaindex.ai.",
-        "Run manual fact checks for: AI Agent 记忆 official docs latest | AI Agent 记忆 official documentation current limits | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 fact check official docs.",
-        "Use 35 query variants to check title, description, headings, and first-screen answer fit.",
-        "Review copydesk meta description proposal before approving the draft.",
-        "Review public internal link path: Codex 生成代码后怎么审核：交付前检查清单.",
-        "Freshness checks: Confirm current official guidance for api. | Confirm current official guidance for agent. | Confirm current official guidance for model..",
-        "Resolve route warnings before approval: not yet matched in human approval clearance pack.",
-        "After human approval only: npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
-        "After review state only, dry-run publish without confirm: npm run publish:articles -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx",
-        "Do not run publish:articles --confirm from this route."
-      ],
-      "category": "AI 记忆",
-      "clearance": null,
-      "cluster": "Agent and memory",
-      "commandBoundary": {
-        "dryRunMarkReview": "npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx",
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx --confirm-human",
-        "publishConfirm": "not-included",
-        "publishDryRun": "npm run publish:articles -- --file=content/blog/ai-agent-memory-rag-design-guide.mdx",
-        "stopBefore": "A human must approve exact content/source/metadata changes and then explicitly approve mark:review --confirm-human."
-      },
-      "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
-      "freshness": {
-        "articleUpdatedAt": "2026-06-06",
-        "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
-        "freshnessRisk": "high",
-        "humanReviewChecklist": [
-          "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
-          "Open official source targets and verify current product names, APIs, limits, pricing-sensitive wording, and workflow boundaries.",
-          "Rewrite or remove any unsupported claim before mark:review.",
-          "Confirm no traffic, ranking, revenue, client acquisition, or guaranteed result claim was introduced.",
-          "Only after human approval, run mark:review manually; publishing still requires separate explicit approval."
-        ],
-        "officialSourceTargets": [
-          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
-          "LangChain docs: https://python.langchain.com/docs",
-          "LlamaIndex docs: https://docs.llamaindex.ai",
-          "https://platform.openai.com/docs/guides/retrieval",
-          "https://python.langchain.com/docs",
-          "https://docs.llamaindex.ai",
-          "https://huggingface.co/docs",
-          "https://platform.openai.com/docs",
           "https://platform.openai.com/docs/guides/agents",
-          "https://ai-sdk.dev/docs",
-          "https://platform.openai.com/docs/guides/prompt-engineering"
-        ],
-        "readyForFreshnessReview": true,
-        "reachableSources": 11,
-        "reviewFocus": [
-          "RAG versus fine-tuning",
-          "chunking and embeddings",
-          "citations",
-          "evaluation and privacy",
-          "api",
-          "agent",
-          "model",
-          "openai",
-          "rag",
-          "vercel"
-        ],
-        "riskReasons": [
-          "fast-changing technical term: api",
-          "fast-changing technical term: agent",
-          "fast-changing technical term: model",
-          "fast-changing technical term: openai",
-          "fast-changing technical term: rag",
-          "fast-changing technical term: vercel",
-          "fast-changing technical term: 部署",
-          "fast-changing technical term: 模型",
-          "review-sensitive term: prompt",
-          "review-sensitive term: 提示词",
-          "review-sensitive term: 工具",
-          "review-sensitive term: 报价",
-          "review-sensitive term: 客服"
-        ],
-        "scope": [
-          "action-board",
-          "public-gap"
-        ],
-        "sourceTargets": 11,
-        "staleSensitiveChecks": [
-          "Confirm current official guidance for api.",
-          "Confirm current official guidance for agent.",
-          "Confirm current official guidance for model.",
-          "Confirm current official guidance for openai.",
-          "Confirm current official guidance for rag.",
-          "Confirm current official guidance for vercel.",
-          "Confirm current official guidance for 部署.",
-          "Confirm current official guidance for 模型.",
-          "Confirm current official guidance for prompt.",
-          "Confirm current official guidance for 提示词.",
-          "Confirm current official guidance for 工具.",
-          "Confirm current official guidance for 报价."
-        ],
-        "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
-        "warningIssues": [
-          "no exact search-seed phrase appears in title, description, or body",
-          "article currently has no links to published articles",
-          "theme still has missing subtopics: knowledge base, vector database"
-        ]
-      },
-      "optimization": {
-        "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
-        "internalLink": {
-          "currentPublicLinks": 0,
-          "reason": "keyword overlap: ai, 怎么, 代码, 工具, 具实, 实践",
-          "title": "Codex 生成代码后怎么审核：交付前检查清单",
-          "url": "/blog/codex-code-review-delivery-checklist"
-        },
-        "kind": "public-gap-review",
-        "priority": 769,
-        "proposedDescription": "解释 AI Agent 记忆和 RAG 的区别，覆盖短期记忆、长期记忆、知识库检索、引用来源、更新机制、隐私和验收检查。",
-        "proposedOpeningAdditions": [
-          "在开头 200 字内自然回答一次“RAG knowledge base tutorial”这个搜索意图，先给结论再展开步骤。",
-          "补一个小节或提示框覆盖缺口：knowledge base、vector database。",
-          "在相关段落加入公开内链：Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist)。"
-        ],
-        "proposedTitle": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
-        "ready": true,
-        "scope": "public-gap-wave-2",
-        "searchEvidence": {
-          "descriptionHit": true,
-          "exactQueryMatches": 4,
-          "matchedFamilies": 7,
-          "queryCount": 35,
-          "seedExamples": [
-            "RAG knowledge base tutorial",
-            "AI agent memory",
-            "vector database RAG",
-            "enterprise knowledge base AI"
-          ],
-          "titleHit": true
-        },
-        "sourceWarnings": [
-          "no exact search-seed phrase appears in title, description, or body",
-          "article currently has no links to published articles",
-          "theme still has missing subtopics: knowledge base, vector database"
-        ],
-        "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
-        "warningRemediation": [
-          "Rewrite the meta description to name the reader, outcome, and search phrase: RAG knowledge base tutorial.",
-          "Add one contextual link to a published article before approval.",
-          "Decide whether missing subtopics should become a short section or a follow-up article.",
-          "During human review, decide whether the title, description, or opening section should naturally include one search-seed variant.",
-          "Review the suggested public internal link before publishing: Codex 生成代码后怎么审核：交付前检查清单 (/blog/codex-code-review-delivery-checklist).",
-          "Decide whether missing subtopics belong in this article or should become separate follow-up drafts."
-        ]
-      },
-      "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
-      "opportunityScore": 260,
-      "priorityScore": 750,
-      "queryCoverage": {
-        "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
-        "gaps": [],
-        "laneId": "agent-deployment-tools",
-        "laneTitle": "AI Agent deployment, tool calling, and production workflow",
-        "primaryKeyword": "AI Agent 记忆",
-        "queryCount": 35,
-        "queryFamilies": {
-          "howTo": [
-            "AI Agent 记忆怎么做",
-            "AI Agent 记忆教程",
-            "AI Agent 记忆新手教程",
-            "AI Agent 记忆落地步骤"
-          ],
-          "deployment": [
-            "AI Agent 记忆部署",
-            "AI Agent 记忆工作流",
-            "AI Agent 记忆生产环境",
-            "AI Agent 部署",
-            "Agent 工具调用",
-            "Agent 上线检查",
-            "AI Agent 记忆 tool calling",
-            "AI Agent 记忆 multi-step execution",
-            "AI Agent 记忆 human approval",
-            "AI Agent 记忆 observability",
-            "AI Agent 记忆 permissions"
-          ],
-          "template": [
-            "AI Agent 记忆模板",
-            "AI Agent 记忆清单",
-            "AI Agent 记忆SOP",
-            "AI Agent 记忆方案"
-          ],
-          "comparison": [
-            "AI Agent 记忆对比",
-            "AI Agent 记忆怎么选",
-            "AI Agent 和 Chatbot 区别",
-            "Vercel AI SDK Agent vs OpenAI Agents SDK"
-          ],
-          "risk": [
-            "AI Agent 记忆避坑",
-            "AI Agent 记忆风险",
-            "AI Agent 记忆安全",
-            "AI Agent 记忆人工审核"
-          ],
-          "costOps": [
-            "AI Agent 记忆成本",
-            "AI Agent 记忆报价",
-            "AI Agent 记忆维护",
-            "AI Agent 记忆上线检查"
-          ],
-          "intentSeeds": [
-            "AI Agent 部署",
-            "AI Agent 工具调用",
-            "Vercel AI SDK Agent",
-            "OpenAI Agents SDK"
-          ]
-        },
-        "readyForManualReview": true,
-        "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
-        "wave": 3
-      },
-      "queryMatch": {
-        "blockingIssues": [],
-        "bodyFamilyMatches": {
-          "howTo": true,
-          "deployment": true,
-          "template": true,
-          "comparison": true,
-          "risk": true,
-          "costOps": true,
-          "intentSeeds": true
-        },
-        "descriptionHit": true,
-        "exactQueryMatches": 4,
-        "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
-        "headingFamilyMatches": {
-          "howTo": true,
-          "deployment": true,
-          "template": true,
-          "comparison": false,
-          "risk": true,
-          "costOps": true,
-          "intentSeeds": false
-        },
-        "matchedFamilies": 7,
-        "primaryKeyword": "AI Agent 记忆",
-        "queryCount": 35,
-        "readyForManualReview": true,
-        "reviewSuggestions": [],
-        "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
-        "titleHit": true,
-        "warningIssues": [],
-        "wave": 3
-      },
-      "readyForHumanRouteReview": true,
-      "routeWarnings": [
-        "not yet matched in human approval clearance pack"
-      ],
-      "seoWarning": null,
-      "sourcePack": {
-        "approvalChecklist": [
-          "Article remains draft: true",
-          "Article remains noindex: true",
-          "Human review flag is present: true",
-          "Quality score is at least 100: true",
-          "Source notes are present: true",
-          "Article has internal links: true",
-          "Reviewer confirms the article answers one clear search intent.",
-          "Reviewer confirms factual claims against official docs before any status change."
-        ],
-        "category": "AI 记忆",
-        "currentPack": false,
-        "factCheckQueries": [
-          "AI Agent 记忆 official docs latest",
-          "AI Agent 记忆 official documentation current limits",
-          "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 fact check official docs",
-          "AI 记忆 official docs limits pricing changelog",
-          "RAG 知识库搭建教程",
-          "企业知识库 AI 部署",
-          "向量数据库 RAG 教程",
-          "RAG 评测怎么做"
-        ],
-        "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
-        "internalLinks": 6,
-        "lane": "deployment: RAG、知识库和向量检索",
-        "lanePriorityScore": 348,
-        "officialSourceTargets": [
-          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
-          "LangChain docs: https://python.langchain.com/docs",
-          "LlamaIndex docs: https://docs.llamaindex.ai",
-          "Hugging Face docs: https://huggingface.co/docs",
-          "OpenAI API docs: https://platform.openai.com/docs",
-          "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
-          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
-        ],
-        "plannedBatch": true,
-        "primaryKeyword": "AI Agent 记忆",
-        "publishBatch": 40,
-        "qualityScore": 100,
-        "riskReviewChecklist": [
-          "No income, ranking, approval, or client acquisition guarantee.",
-          "No instruction to bypass platform, payment, messaging, account, or review rules.",
-          "No API key, credential, private customer data, or account detail is included.",
-          "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
-          "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
-          "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
-          "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.",
-          "Prompt examples include input context, output criteria, review rules, and adaptation notes."
-        ],
-        "safeDraft": true,
-        "searchIntent": "informational",
-        "sourceNotesPresent": true,
-        "status": "draft",
-        "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
-        "wordCountChinese": 1951,
-        "workflowAngles": [
-          "文档清洗",
-          "chunk",
-          "embedding",
-          "metadata",
-          "引用来源",
-          "测试集"
-        ]
-      },
-      "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
-      "unsafeReasons": []
-    },
-    {
-      "actions": [
-        "Confirm the article still targets the next batch topic before any status change.",
-        "Verify the opening section answers the likely user search query directly.",
-        "Keep the article draft, noindex, and humanReviewRequired until approval.",
-        "Verify official sources before review: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval | LangChain docs: https://python.langchain.com/docs | LlamaIndex docs: https://docs.llamaindex.ai.",
-        "Run manual fact checks for: AI 自动化项目报价 official docs latest | AI 自动化项目报价 official documentation current limits | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 fact check official docs.",
-        "Use 35 query variants to check title, description, headings, and first-screen answer fit.",
-        "Search wording warnings: few exact query variant matches in article text.",
-        "SEO manual actions: Expand the meta description with the user problem, outcome, and one concrete workflow term. | Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims. | Confirm description length remains suitable for search snippets after editing..",
-        "Freshness checks: Confirm current official guidance for api. | Confirm current official guidance for agent. | Confirm current official guidance for dify..",
-        "Resolve route warnings before approval: not yet matched in human approval clearance pack; no copydesk optimization brief matched; search query match warning exists.",
-        "After human approval only: npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
-        "After review state only, dry-run publish without confirm: npm run publish:articles -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
-        "Do not run publish:articles --confirm from this route."
-      ],
-      "category": "项目报价",
-      "clearance": null,
-      "cluster": "Agent and memory",
-      "commandBoundary": {
-        "dryRunMarkReview": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx --confirm-human",
-        "publishConfirm": "not-included",
-        "publishDryRun": "npm run publish:articles -- --file=content/blog/ai-automation-project-pricing-scope-guide.mdx",
-        "stopBefore": "A human must approve exact content/source/metadata changes and then explicitly approve mark:review --confirm-human."
-      },
-      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-      "freshness": {
-        "articleUpdatedAt": "2026-06-06",
-        "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-        "freshnessRisk": "high",
-        "humanReviewChecklist": [
-          "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
-          "Open official source targets and verify current product names, APIs, limits, pricing-sensitive wording, and workflow boundaries.",
-          "Rewrite or remove any unsupported claim before mark:review.",
-          "Confirm no traffic, ranking, revenue, client acquisition, or guaranteed result claim was introduced.",
-          "Only after human approval, run mark:review manually; publishing still requires separate explicit approval."
-        ],
-        "officialSourceTargets": [
-          "Dify docs: https://docs.dify.ai",
-          "n8n docs: https://docs.n8n.io",
-          "https://docs.dify.ai",
-          "https://docs.n8n.io",
-          "https://platform.openai.com/docs/guides/retrieval",
-          "https://python.langchain.com/docs",
-          "https://docs.llamaindex.ai",
-          "https://huggingface.co/docs",
-          "https://platform.openai.com/docs",
-          "https://platform.openai.com/docs/guides/agents",
-          "https://ai-sdk.dev/docs",
-          "https://platform.openai.com/docs/guides/prompt-engineering"
+          "https://platform.openai.com/docs/guides/retrieval"
         ],
         "readyForFreshnessReview": true,
         "reachableSources": 12,
         "reviewFocus": [
-          "self-hosted versus cloud boundaries",
-          "webhook auth",
-          "connector failures",
-          "manual fallback",
           "api",
           "agent",
-          "dify",
-          "n8n",
-          "rag",
-          "部署"
+          "claude",
+          "gemini",
+          "openai",
+          "vercel",
+          "部署",
+          "大模型",
+          "提示词",
+          "工具"
         ],
         "riskReasons": [
           "fast-changing technical term: api",
           "fast-changing technical term: agent",
-          "fast-changing technical term: dify",
-          "fast-changing technical term: n8n",
-          "fast-changing technical term: rag",
+          "fast-changing technical term: claude",
+          "fast-changing technical term: gemini",
+          "fast-changing technical term: openai",
+          "fast-changing technical term: vercel",
           "fast-changing technical term: 部署",
-          "fast-changing technical term: 模型",
-          "fast-changing technical term: 知识库",
+          "fast-changing technical term: 大模型",
           "review-sensitive term: 提示词",
           "review-sensitive term: 工具",
-          "review-sensitive term: 报价",
-          "review-sensitive term: 客服",
-          "review-sensitive term: 销售"
+          "review-sensitive term: 客服"
         ],
         "scope": [
           "action-board",
-          "public-gap"
+          "current-review"
         ],
         "sourceTargets": 12,
         "staleSensitiveChecks": [
+          "Vercel AI Gateway 多模型 官方文档 最新",
+          "Vercel AI Gateway 多模型 official docs latest",
+          "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 事实核对",
+          "AI 部署 平台限制 官方文档",
+          "大模型部署教程",
+          "AI 应用部署 Vercel 教程",
+          "OpenAI API 部署教程",
+          "Claude API 部署教程",
           "Confirm current official guidance for api.",
           "Confirm current official guidance for agent.",
-          "Confirm current official guidance for dify.",
-          "Confirm current official guidance for n8n.",
-          "Confirm current official guidance for rag.",
-          "Confirm current official guidance for 部署.",
-          "Confirm current official guidance for 模型.",
-          "Confirm current official guidance for 知识库.",
-          "Confirm current official guidance for 提示词.",
-          "Confirm current official guidance for 工具.",
-          "Confirm current official guidance for 报价.",
-          "Confirm current official guidance for 客服."
+          "Confirm current official guidance for claude.",
+          "Confirm current official guidance for gemini."
         ],
-        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
-        "warningIssues": [
-          "description may be thin for search snippets",
+        "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+        "warningIssues": []
+      },
+      "optimization": {
+        "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+        "internalLink": {
+          "currentPublicLinks": 1,
+          "reason": "same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做",
+          "title": "多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估",
+          "url": "/blog/multi-model-router-fallback-guide"
+        },
+        "kind": "wave-approval",
+        "priority": 1002,
+        "proposedDescription": "整理 Vercel AI Gateway 多模型接入思路，覆盖统一 API、provider 切换、日志、成本、降级、AI SDK 和上线检查。",
+        "proposedOpeningAdditions": [
+          "在开头 200 字内自然回答一次“Vercel AI Gateway 多模型”这个搜索意图，先给结论再展开步骤。",
+          "在相关段落加入公开内链：多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide)。"
+        ],
+        "proposedTitle": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+        "ready": true,
+        "scope": "wave-2",
+        "searchEvidence": {
+          "descriptionHit": true,
+          "exactQueryMatches": 0,
+          "matchedFamilies": 7,
+          "queryCount": 30,
+          "seedExamples": [],
+          "titleHit": true
+        },
+        "sourceWarnings": [
           "primary keyword is not an exact title substring",
-          "no exact search-seed phrase appears in title, description, or body",
-          "article currently has no links to published articles",
-          "theme still has missing subtopics: self hosted, connector"
+          "few exact query variant matches in article text"
+        ],
+        "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+        "warningRemediation": [
+          "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
+          "Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型."
         ]
       },
-      "optimization": null,
-      "opportunityReason": "Agent and memory cluster; no public article in cluster; no public article in category",
-      "opportunityScore": 253,
-      "priorityScore": 722,
+      "opportunityReason": "AI deployment cluster; 114 public article(s) in cluster; 16 public article(s) in category",
+      "opportunityScore": 34,
+      "priorityScore": 441,
       "queryCoverage": {
-        "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
         "gaps": [],
-        "laneId": "agent-deployment-tools",
-        "laneTitle": "AI Agent deployment, tool calling, and production workflow",
-        "primaryKeyword": "AI 自动化项目报价",
-        "queryCount": 35,
+        "laneId": "model-api-integration",
+        "laneTitle": "Model API integration, rate limits, and multi-model fallback",
+        "primaryKeyword": "Vercel AI Gateway 多模型",
+        "queryCount": 30,
         "queryFamilies": {
           "howTo": [
-            "AI 自动化项目报价怎么做",
-            "AI 自动化项目报价教程",
-            "AI 自动化项目报价新手教程",
-            "AI 自动化项目报价落地步骤"
+            "Vercel AI Gateway 多模型怎么做",
+            "Vercel AI Gateway 多模型教程",
+            "Vercel AI Gateway 多模型新手教程",
+            "Vercel AI Gateway 多模型落地步骤"
           ],
           "deployment": [
-            "AI 自动化项目报价部署",
-            "AI 自动化项目报价工作流",
-            "AI 自动化项目报价生产环境",
-            "AI Agent 部署",
-            "Agent 工具调用",
-            "Agent 上线检查",
-            "AI 自动化项目报价 tool calling",
-            "AI 自动化项目报价 multi-step execution",
-            "AI 自动化项目报价 human approval",
-            "AI 自动化项目报价 observability",
-            "AI 自动化项目报价 permissions"
+            "Vercel AI Gateway 多模型部署",
+            "Vercel AI Gateway 多模型工作流",
+            "Vercel AI Gateway 多模型生产环境",
+            "Vercel AI Gateway 多模型 server-side calls",
+            "Vercel AI Gateway 多模型 rate limit retry",
+            "Vercel AI Gateway 多模型 fallback routing",
+            "Vercel AI Gateway 多模型 key rotation",
+            "Vercel AI Gateway 多模型 cost control"
           ],
           "template": [
-            "AI 自动化项目报价模板",
-            "AI 自动化项目报价清单",
-            "AI 自动化项目报价SOP",
-            "AI 自动化项目报价方案"
+            "Vercel AI Gateway 多模型模板",
+            "Vercel AI Gateway 多模型清单",
+            "Vercel AI Gateway 多模型SOP",
+            "Vercel AI Gateway 多模型方案"
           ],
           "comparison": [
-            "AI 自动化项目报价对比",
-            "AI 自动化项目报价怎么选",
-            "AI Agent 和 Chatbot 区别",
-            "Vercel AI SDK Agent vs OpenAI Agents SDK"
+            "Vercel AI Gateway 多模型对比",
+            "Vercel AI Gateway 多模型怎么选"
           ],
           "risk": [
-            "AI 自动化项目报价避坑",
-            "AI 自动化项目报价风险",
-            "AI 自动化项目报价安全",
-            "AI 自动化项目报价人工审核"
+            "Vercel AI Gateway 多模型避坑",
+            "Vercel AI Gateway 多模型风险",
+            "Vercel AI Gateway 多模型安全",
+            "Vercel AI Gateway 多模型人工审核"
           ],
           "costOps": [
-            "AI 自动化项目报价成本",
-            "AI 自动化项目报价报价",
-            "AI 自动化项目报价维护",
-            "AI 自动化项目报价上线检查"
+            "Vercel AI Gateway 多模型成本",
+            "Vercel AI Gateway 多模型报价",
+            "Vercel AI Gateway 多模型维护",
+            "Vercel AI Gateway 多模型上线检查"
           ],
           "intentSeeds": [
-            "AI Agent 部署",
-            "AI Agent 工具调用",
-            "Vercel AI SDK Agent",
-            "OpenAI Agents SDK"
+            "OpenAI API 接入",
+            "Claude API 限流",
+            "Gemini API 限流",
+            "多模型 Router 降级"
           ]
         },
         "readyForManualReview": true,
-        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
-        "wave": 3
+        "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+        "wave": 1
       },
       "queryMatch": {
         "blockingIssues": [],
@@ -1264,8 +463,8 @@
           "intentSeeds": true
         },
         "descriptionHit": true,
-        "exactQueryMatches": 1,
-        "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "exactQueryMatches": 0,
+        "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
         "headingFamilyMatches": {
           "howTo": true,
           "deployment": false,
@@ -1276,69 +475,59 @@
           "intentSeeds": false
         },
         "matchedFamilies": 7,
-        "primaryKeyword": "AI 自动化项目报价",
-        "queryCount": 35,
+        "primaryKeyword": "Vercel AI Gateway 多模型",
+        "queryCount": 30,
         "readyForManualReview": true,
         "reviewSuggestions": [],
-        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+        "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
         "titleHit": true,
         "warningIssues": [
           "few exact query variant matches in article text"
         ],
-        "wave": 3
+        "wave": 1
       },
       "readyForHumanRouteReview": true,
       "routeWarnings": [
-        "not yet matched in human approval clearance pack",
-        "no copydesk optimization brief matched",
         "search query match warning exists"
       ],
       "seoWarning": {
         "commandBoundary": {
-          "markReviewAfterHumanApproval": "not-applicable-public-page",
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
           "publishConfirm": "not-included",
-          "publishDryRunAfterReview": "not-applicable-public-page"
+          "publishDryRunAfterReview": "npm run publish:articles -- --dry-run"
         },
-        "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+        "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
         "humanChecklist": [
-          "Review file: content/blog/ai-automation-project-pricing-scope-guide.mdx.",
-          "Review status: published.",
-          "Confirm primary keyword intent: AI 自动化项目报价.",
-          "Snippet warning: description may be thin for search snippets.",
+          "Review file: content/blog/vercel-ai-gateway-multi-provider-guide.mdx.",
+          "Review status: draft.",
+          "Confirm primary keyword intent: Vercel AI Gateway 多模型.",
           "Snippet warning: primary keyword is not an exact title substring.",
-          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-          "Confirm description length remains suitable for search snippets after editing.",
-          "Check whether the title can naturally include the exact primary keyword: AI 自动化项目报价.",
+          "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
           "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
           "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.",
+          "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
           "Do not mark review or publish from this remediation pack."
         ],
         "manualActions": [
-          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-          "Confirm description length remains suitable for search snippets after editing.",
-          "Check whether the title can naturally include the exact primary keyword: AI 自动化项目报价.",
+          "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
           "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
           "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+          "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
         ],
         "manualFixReady": true,
-        "primaryKeyword": "AI 自动化项目报价",
-        "priority": 66,
+        "primaryKeyword": "Vercel AI Gateway 多模型",
+        "priority": 48,
         "scope": [
-          "public",
-          "expansion"
+          "expansion",
+          "recommended"
         ],
         "schemaWarnings": [],
         "snippetWarnings": [
-          "description may be thin for search snippets",
           "primary keyword is not an exact title substring"
         ],
-        "status": "published",
-        "stopBefore": "Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.",
-        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+        "status": "draft",
+        "stopBefore": "Stop before human approval before changing draft metadata, mark:review, or publishing.",
+        "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
         "unsafeReasons": []
       },
       "sourcePack": {
@@ -1352,37 +541,34 @@
           "Reviewer confirms the article answers one clear search intent.",
           "Reviewer confirms factual claims against official docs before any status change."
         ],
-        "category": "项目报价",
-        "currentPack": false,
+        "category": "AI 部署",
+        "currentPack": true,
         "factCheckQueries": [
-          "AI 自动化项目报价 official docs latest",
-          "AI 自动化项目报价 official documentation current limits",
-          "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 fact check official docs",
-          "项目报价 official docs limits pricing changelog",
-          "RAG 知识库搭建教程",
-          "企业知识库 AI 部署",
-          "向量数据库 RAG 教程",
-          "RAG 评测怎么做"
+          "Vercel AI Gateway 多模型 official docs latest",
+          "Vercel AI Gateway 多模型 official documentation current limits",
+          "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 fact check official docs",
+          "AI 部署 official docs limits pricing changelog",
+          "大模型部署教程",
+          "AI 应用部署教程",
+          "OpenAI API 部署教程",
+          "Vercel AI SDK 部署"
         ],
-        "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-        "internalLinks": 4,
-        "lane": "deployment: RAG、知识库和向量检索",
-        "lanePriorityScore": 348,
+        "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+        "internalLinks": 3,
+        "lane": "deployment: 大模型和 AI 应用部署",
+        "lanePriorityScore": 230,
         "officialSourceTargets": [
-          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
-          "LangChain docs: https://python.langchain.com/docs",
-          "LlamaIndex docs: https://docs.llamaindex.ai",
-          "Hugging Face docs: https://huggingface.co/docs",
           "OpenAI API docs: https://platform.openai.com/docs",
-          "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
           "Vercel AI SDK docs: https://ai-sdk.dev/docs",
-          "Dify docs: https://docs.dify.ai",
-          "n8n docs: https://docs.n8n.io",
+          "Anthropic docs: https://docs.anthropic.com",
+          "OpenAI Agents docs: https://platform.openai.com/docs/guides/agents",
+          "Google AI docs: https://ai.google.dev/docs",
+          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
           "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
         ],
         "plannedBatch": true,
-        "primaryKeyword": "AI 自动化项目报价",
-        "publishBatch": 33,
+        "primaryKeyword": "Vercel AI Gateway 多模型",
+        "publishBatch": 34,
         "qualityScore": 100,
         "riskReviewChecklist": [
           "No income, ranking, approval, or client acquisition guarantee.",
@@ -1390,6 +576,244 @@
           "No API key, credential, private customer data, or account detail is included.",
           "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
           "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
+          "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps."
+        ],
+        "safeDraft": true,
+        "searchIntent": "informational",
+        "sourceNotesPresent": true,
+        "status": "draft",
+        "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+        "wordCountChinese": 1246,
+        "workflowAngles": [
+          "环境变量",
+          "API Key",
+          "限流重试",
+          "上线检查",
+          "回滚"
+        ]
+      },
+      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+      "unsafeReasons": []
+    },
+    {
+      "actions": [
+        "Confirm the article still targets the next batch topic before any status change.",
+        "Verify the opening section answers the likely user search query directly.",
+        "Keep the article draft, noindex, and humanReviewRequired until approval.",
+        "Verify official sources before review: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.",
+        "Run manual fact checks for: Together AI API 接入 official docs latest | Together AI API 接入 official documentation current limits | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 fact check official docs.",
+        "Use 35 query variants to check title, description, headings, and first-screen answer fit.",
+        "Search wording warnings: few exact query variant matches in article text; missing query-family signals: intentSeeds.",
+        "SEO manual actions: Check whether the title can naturally include the exact primary keyword: Together AI API 接入. | If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title. | Confirm the H1/title/description still answer the same search intent after any metadata change..",
+        "Resolve route warnings before approval: not yet matched in human approval clearance pack; no copydesk optimization brief matched; no freshness brief matched.",
+        "After human approval only: npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human",
+        "After review state only, dry-run publish without confirm: npm run publish:articles -- --file=content/blog/together-ai-api-beginner-guide.mdx",
+        "Do not run publish:articles --confirm from this route."
+      ],
+      "category": "AI 基建",
+      "clearance": null,
+      "cluster": "AI deployment",
+      "commandBoundary": {
+        "dryRunMarkReview": "npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human",
+        "publishConfirm": "not-included",
+        "publishDryRun": "npm run publish:articles -- --file=content/blog/together-ai-api-beginner-guide.mdx",
+        "stopBefore": "A human must approve exact content/source/metadata changes and then explicitly approve mark:review --confirm-human."
+      },
+      "file": "content/blog/together-ai-api-beginner-guide.mdx",
+      "freshness": null,
+      "optimization": null,
+      "opportunityReason": "AI deployment cluster; 114 public article(s) in cluster; 71 public article(s) in category",
+      "opportunityScore": 27,
+      "priorityScore": 370,
+      "queryCoverage": {
+        "file": "content/blog/together-ai-api-beginner-guide.mdx",
+        "gaps": [],
+        "laneId": "rag-knowledge-memory",
+        "laneTitle": "RAG, knowledge base, and Agent memory",
+        "primaryKeyword": "Together AI API 接入",
+        "queryCount": 35,
+        "queryFamilies": {
+          "howTo": [
+            "Together AI API 接入怎么做",
+            "Together AI API 接入教程",
+            "Together AI API 接入新手教程",
+            "Together AI API 接入落地步骤"
+          ],
+          "deployment": [
+            "Together AI API 接入部署",
+            "Together AI API 接入工作流",
+            "Together AI API 接入生产环境",
+            "RAG 知识库搭建",
+            "Agent 记忆设计",
+            "向量数据库检索",
+            "Together AI API 接入 document cleanup",
+            "Together AI API 接入 chunking",
+            "Together AI API 接入 embedding",
+            "Together AI API 接入 source citation",
+            "Together AI API 接入 memory policy"
+          ],
+          "template": [
+            "Together AI API 接入模板",
+            "Together AI API 接入清单",
+            "Together AI API 接入SOP",
+            "Together AI API 接入方案"
+          ],
+          "comparison": [
+            "Together AI API 接入对比",
+            "Together AI API 接入怎么选",
+            "RAG 和微调区别",
+            "知识库和长期记忆区别"
+          ],
+          "risk": [
+            "Together AI API 接入避坑",
+            "Together AI API 接入风险",
+            "Together AI API 接入安全",
+            "Together AI API 接入人工审核"
+          ],
+          "costOps": [
+            "Together AI API 接入成本",
+            "Together AI API 接入报价",
+            "Together AI API 接入维护",
+            "Together AI API 接入上线检查"
+          ],
+          "intentSeeds": [
+            "RAG 知识库搭建",
+            "AI Agent 记忆",
+            "向量数据库教程",
+            "企业知识库 AI"
+          ]
+        },
+        "readyForManualReview": true,
+        "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
+        "wave": 3
+      },
+      "queryMatch": {
+        "blockingIssues": [],
+        "bodyFamilyMatches": {
+          "howTo": true,
+          "deployment": true,
+          "template": true,
+          "comparison": true,
+          "risk": true,
+          "costOps": true,
+          "intentSeeds": false
+        },
+        "descriptionHit": true,
+        "exactQueryMatches": 0,
+        "file": "content/blog/together-ai-api-beginner-guide.mdx",
+        "headingFamilyMatches": {
+          "howTo": true,
+          "deployment": true,
+          "template": false,
+          "comparison": false,
+          "risk": true,
+          "costOps": true,
+          "intentSeeds": false
+        },
+        "matchedFamilies": 6,
+        "primaryKeyword": "Together AI API 接入",
+        "queryCount": 35,
+        "readyForManualReview": true,
+        "reviewSuggestions": [
+          "人工审核时检查是否自然覆盖核心搜索种子词，不要硬塞关键词。"
+        ],
+        "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
+        "titleHit": true,
+        "warningIssues": [
+          "few exact query variant matches in article text",
+          "missing query-family signals: intentSeeds"
+        ],
+        "wave": 3
+      },
+      "readyForHumanRouteReview": true,
+      "routeWarnings": [
+        "not yet matched in human approval clearance pack",
+        "no copydesk optimization brief matched",
+        "no freshness brief matched",
+        "search query match warning exists"
+      ],
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "npm run publish:articles -- --dry-run"
+        },
+        "file": "content/blog/together-ai-api-beginner-guide.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/together-ai-api-beginner-guide.mdx.",
+          "Review status: draft.",
+          "Confirm primary keyword intent: Together AI API 接入.",
+          "Snippet warning: primary keyword is not an exact title substring.",
+          "Check whether the title can naturally include the exact primary keyword: Together AI API 接入.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Check whether the title can naturally include the exact primary keyword: Together AI API 接入.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
+        ],
+        "manualFixReady": true,
+        "primaryKeyword": "Together AI API 接入",
+        "priority": 8,
+        "scope": [
+          "expansion"
+        ],
+        "schemaWarnings": [],
+        "snippetWarnings": [
+          "primary keyword is not an exact title substring"
+        ],
+        "status": "draft",
+        "stopBefore": "Stop before human approval before changing draft metadata, mark:review, or publishing.",
+        "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
+        "unsafeReasons": []
+      },
+      "sourcePack": {
+        "approvalChecklist": [
+          "Article remains draft: true",
+          "Article remains noindex: true",
+          "Human review flag is present: true",
+          "Quality score is at least 100: true",
+          "Source notes are present: true",
+          "Article has internal links: true",
+          "Reviewer confirms the article answers one clear search intent.",
+          "Reviewer confirms factual claims against official docs before any status change."
+        ],
+        "category": "AI 基建",
+        "currentPack": false,
+        "factCheckQueries": [
+          "Together AI API 接入 official docs latest",
+          "Together AI API 接入 official documentation current limits",
+          "Together AI API 怎么接入：开源模型接口、embedding 和部署边界 fact check official docs",
+          "AI 基建 official docs limits pricing changelog",
+          "大模型部署教程",
+          "AI 应用部署教程",
+          "OpenAI API 部署教程",
+          "Vercel AI SDK 部署"
+        ],
+        "file": "content/blog/together-ai-api-beginner-guide.mdx",
+        "internalLinks": 5,
+        "lane": "deployment: 大模型和 AI 应用部署",
+        "lanePriorityScore": 230,
+        "officialSourceTargets": [
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+          "Anthropic docs: https://docs.anthropic.com",
+          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval"
+        ],
+        "plannedBatch": true,
+        "primaryKeyword": "Together AI API 接入",
+        "publishBatch": 27,
+        "qualityScore": 100,
+        "riskReviewChecklist": [
+          "No income, ranking, approval, or client acquisition guarantee.",
+          "No instruction to bypass platform, payment, messaging, account, or review rules.",
+          "No API key, credential, private customer data, or account detail is included.",
+          "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
           "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
           "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps."
         ],
@@ -1397,18 +821,253 @@
         "searchIntent": "informational",
         "sourceNotesPresent": true,
         "status": "draft",
-        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
-        "wordCountChinese": 1305,
+        "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
+        "wordCountChinese": 1239,
         "workflowAngles": [
-          "文档清洗",
-          "chunk",
-          "embedding",
-          "metadata",
-          "引用来源",
-          "测试集"
+          "环境变量",
+          "API Key",
+          "限流重试",
+          "上线检查",
+          "回滚"
         ]
       },
-      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+      "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
+      "unsafeReasons": []
+    },
+    {
+      "actions": [
+        "Confirm the article still targets the next batch topic before any status change.",
+        "Verify the opening section answers the likely user search query directly.",
+        "Keep the article draft, noindex, and humanReviewRequired until approval.",
+        "Verify official sources before review: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.",
+        "Run manual fact checks for: Vercel AI SDK 聊天机器人部署 official docs latest | Vercel AI SDK 聊天机器人部署 official documentation current limits | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 fact check official docs.",
+        "Use 35 query variants to check title, description, headings, and first-screen answer fit.",
+        "Search wording warnings: few exact query variant matches in article text.",
+        "SEO manual actions: Check whether the title can naturally include the exact primary keyword: Vercel AI SDK 聊天机器人部署. | If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title. | Confirm the H1/title/description still answer the same search intent after any metadata change..",
+        "Resolve route warnings before approval: not yet matched in human approval clearance pack; no copydesk optimization brief matched; no freshness brief matched.",
+        "After human approval only: npm run mark:review -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx --confirm-human",
+        "After review state only, dry-run publish without confirm: npm run publish:articles -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
+        "Do not run publish:articles --confirm from this route."
+      ],
+      "category": "AI 基建",
+      "clearance": null,
+      "cluster": "AI deployment",
+      "commandBoundary": {
+        "dryRunMarkReview": "npm run mark:review -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx --confirm-human",
+        "publishConfirm": "not-included",
+        "publishDryRun": "npm run publish:articles -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
+        "stopBefore": "A human must approve exact content/source/metadata changes and then explicitly approve mark:review --confirm-human."
+      },
+      "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
+      "freshness": null,
+      "optimization": null,
+      "opportunityReason": "AI deployment cluster; 114 public article(s) in cluster; 71 public article(s) in category",
+      "opportunityScore": 26,
+      "priorityScore": 369,
+      "queryCoverage": {
+        "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
+        "gaps": [],
+        "laneId": "agent-deployment-tools",
+        "laneTitle": "AI Agent deployment, tool calling, and production workflow",
+        "primaryKeyword": "Vercel AI SDK 聊天机器人部署",
+        "queryCount": 35,
+        "queryFamilies": {
+          "howTo": [
+            "Vercel AI SDK 聊天机器人部署怎么做",
+            "Vercel AI SDK 聊天机器人部署教程",
+            "Vercel AI SDK 聊天机器人部署新手教程",
+            "Vercel AI SDK 聊天机器人部署落地步骤"
+          ],
+          "deployment": [
+            "Vercel AI SDK 聊天机器人部署部署",
+            "Vercel AI SDK 聊天机器人部署工作流",
+            "Vercel AI SDK 聊天机器人部署生产环境",
+            "AI Agent 部署",
+            "Agent 工具调用",
+            "Agent 上线检查",
+            "Vercel AI SDK 聊天机器人部署 tool calling",
+            "Vercel AI SDK 聊天机器人部署 multi-step execution",
+            "Vercel AI SDK 聊天机器人部署 human approval",
+            "Vercel AI SDK 聊天机器人部署 observability",
+            "Vercel AI SDK 聊天机器人部署 permissions"
+          ],
+          "template": [
+            "Vercel AI SDK 聊天机器人部署模板",
+            "Vercel AI SDK 聊天机器人部署清单",
+            "Vercel AI SDK 聊天机器人部署SOP",
+            "Vercel AI SDK 聊天机器人部署方案"
+          ],
+          "comparison": [
+            "Vercel AI SDK 聊天机器人部署对比",
+            "Vercel AI SDK 聊天机器人部署怎么选",
+            "AI Agent 和 Chatbot 区别",
+            "Vercel AI SDK Agent vs OpenAI Agents SDK"
+          ],
+          "risk": [
+            "Vercel AI SDK 聊天机器人部署避坑",
+            "Vercel AI SDK 聊天机器人部署风险",
+            "Vercel AI SDK 聊天机器人部署安全",
+            "Vercel AI SDK 聊天机器人部署人工审核"
+          ],
+          "costOps": [
+            "Vercel AI SDK 聊天机器人部署成本",
+            "Vercel AI SDK 聊天机器人部署报价",
+            "Vercel AI SDK 聊天机器人部署维护",
+            "Vercel AI SDK 聊天机器人部署上线检查"
+          ],
+          "intentSeeds": [
+            "AI Agent 部署",
+            "AI Agent 工具调用",
+            "Vercel AI SDK Agent",
+            "OpenAI Agents SDK"
+          ]
+        },
+        "readyForManualReview": true,
+        "title": "Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查",
+        "wave": 2
+      },
+      "queryMatch": {
+        "blockingIssues": [],
+        "bodyFamilyMatches": {
+          "howTo": true,
+          "deployment": true,
+          "template": true,
+          "comparison": true,
+          "risk": true,
+          "costOps": true,
+          "intentSeeds": true
+        },
+        "descriptionHit": true,
+        "exactQueryMatches": 0,
+        "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
+        "headingFamilyMatches": {
+          "howTo": true,
+          "deployment": true,
+          "template": false,
+          "comparison": true,
+          "risk": true,
+          "costOps": false,
+          "intentSeeds": false
+        },
+        "matchedFamilies": 7,
+        "primaryKeyword": "Vercel AI SDK 聊天机器人部署",
+        "queryCount": 35,
+        "readyForManualReview": true,
+        "reviewSuggestions": [],
+        "title": "Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查",
+        "titleHit": true,
+        "warningIssues": [
+          "few exact query variant matches in article text"
+        ],
+        "wave": 2
+      },
+      "readyForHumanRouteReview": true,
+      "routeWarnings": [
+        "not yet matched in human approval clearance pack",
+        "no copydesk optimization brief matched",
+        "no freshness brief matched",
+        "search query match warning exists"
+      ],
+      "seoWarning": {
+        "commandBoundary": {
+          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx --confirm-human",
+          "publishConfirm": "not-included",
+          "publishDryRunAfterReview": "npm run publish:articles -- --dry-run"
+        },
+        "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
+        "humanChecklist": [
+          "Review file: content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx.",
+          "Review status: draft.",
+          "Confirm primary keyword intent: Vercel AI SDK 聊天机器人部署.",
+          "Snippet warning: primary keyword is not an exact title substring.",
+          "Check whether the title can naturally include the exact primary keyword: Vercel AI SDK 聊天机器人部署.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
+          "Do not mark review or publish from this remediation pack."
+        ],
+        "manualActions": [
+          "Check whether the title can naturally include the exact primary keyword: Vercel AI SDK 聊天机器人部署.",
+          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+          "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
+        ],
+        "manualFixReady": true,
+        "primaryKeyword": "Vercel AI SDK 聊天机器人部署",
+        "priority": 8,
+        "scope": [
+          "expansion"
+        ],
+        "schemaWarnings": [],
+        "snippetWarnings": [
+          "primary keyword is not an exact title substring"
+        ],
+        "status": "draft",
+        "stopBefore": "Stop before human approval before changing draft metadata, mark:review, or publishing.",
+        "title": "Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查",
+        "unsafeReasons": []
+      },
+      "sourcePack": {
+        "approvalChecklist": [
+          "Article remains draft: true",
+          "Article remains noindex: true",
+          "Human review flag is present: true",
+          "Quality score is at least 100: true",
+          "Source notes are present: true",
+          "Article has internal links: true",
+          "Reviewer confirms the article answers one clear search intent.",
+          "Reviewer confirms factual claims against official docs before any status change."
+        ],
+        "category": "AI 基建",
+        "currentPack": false,
+        "factCheckQueries": [
+          "Vercel AI SDK 聊天机器人部署 official docs latest",
+          "Vercel AI SDK 聊天机器人部署 official documentation current limits",
+          "Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 fact check official docs",
+          "AI 基建 official docs limits pricing changelog",
+          "大模型部署教程",
+          "AI 应用部署教程",
+          "OpenAI API 部署教程",
+          "Vercel AI SDK 部署"
+        ],
+        "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
+        "internalLinks": 4,
+        "lane": "deployment: 大模型和 AI 应用部署",
+        "lanePriorityScore": 230,
+        "officialSourceTargets": [
+          "OpenAI API docs: https://platform.openai.com/docs",
+          "Vercel AI SDK docs: https://ai-sdk.dev/docs",
+          "Anthropic docs: https://docs.anthropic.com",
+          "OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval",
+          "OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering"
+        ],
+        "plannedBatch": true,
+        "primaryKeyword": "Vercel AI SDK 聊天机器人部署",
+        "publishBatch": 26,
+        "qualityScore": 100,
+        "riskReviewChecklist": [
+          "No income, ranking, approval, or client acquisition guarantee.",
+          "No instruction to bypass platform, payment, messaging, account, or review rules.",
+          "No API key, credential, private customer data, or account detail is included.",
+          "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
+          "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps."
+        ],
+        "safeDraft": true,
+        "searchIntent": "informational",
+        "sourceNotesPresent": true,
+        "status": "draft",
+        "title": "Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查",
+        "wordCountChinese": 1329,
+        "workflowAngles": [
+          "环境变量",
+          "API Key",
+          "限流重试",
+          "上线检查",
+          "回滚"
+        ]
+      },
+      "title": "Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查",
       "unsafeReasons": []
     }
   ]
