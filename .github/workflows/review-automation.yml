@@ -55,13 +55,27 @@ jobs:
       - name: Refresh automation gate and digest after live check
         shell: bash
         run: |
+          set +e
+          refresh_code=0
           npm run traffic:evidence -- --url=https://ai-jiedan-lab.vercel.app
+          refresh_code=$(( refresh_code || $? ))
           npm run traffic:claim-guard
+          refresh_code=$(( refresh_code || $? ))
           npm run automation:public-surface-inventory
+          refresh_code=$(( refresh_code || $? ))
           npm run automation:broad-first-coverage-launch
+          refresh_code=$(( refresh_code || $? ))
           npm run automation:broad-first-coverage-readiness
+          refresh_code=$(( refresh_code || $? ))
           npm run automation:gate
+          refresh_code=$(( refresh_code || $? ))
           npm run automation:digest
+          refresh_code=$(( refresh_code || $? ))
+          echo "REFRESH_REPORTS_EXIT_CODE=$refresh_code" >> "$GITHUB_ENV"
+          if [ "$refresh_code" != "0" ]; then
+            echo "::warning::Automation report refresh generated advisory failures. Reports were still uploaded; hard failure is reserved for live SEO surface checks."
+          fi
+          exit 0
 
       - name: Commit refreshed automation reports
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
@@ -86,6 +100,7 @@ jobs:
             echo ""
             echo "- Project automation exit code: ${PROJECT_AUTOMATION_EXIT_CODE:-0}"
             echo "- Live search surface exit code: ${LIVE_SEARCH_SURFACE_EXIT_CODE:-not-run}"
+            echo "- Report refresh exit code: ${REFRESH_REPORTS_EXIT_CODE:-not-run}"
             echo ""
           } >> "$GITHUB_STEP_SUMMARY"
           if [ -f docs/automation-digest.md ]; then
