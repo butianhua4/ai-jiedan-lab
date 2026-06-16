@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T12:27:37.502Z",
+  "generatedAt": "2026-06-16T07:39:11.748Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -12,8 +12,8 @@
     "approvalPacketItems": 3,
     "approvalPacketUnsafeItems": 0,
     "internalLinkUnsafeItems": 0,
-    "playbookUnsafeItems": 2,
-    "remediationUnsafeItems": 2,
+    "playbookUnsafeItems": 0,
+    "remediationUnsafeItems": 0,
     "searchIntentUnsafeItems": 0,
     "sourceVerificationUnsafeItems": 0
   },
@@ -27,11 +27,11 @@
     "approvalItems": 3,
     "approveAfterReviewItems": 0,
     "decisionRows": 3,
-    "deferItems": 2,
+    "deferItems": 0,
     "humanDecisionBranches": 9,
-    "repairBeforeReviewItems": 1,
+    "repairBeforeReviewItems": 3,
     "rowsWithCommandBoundary": 3,
-    "rowsWithDeferCriteria": 2,
+    "rowsWithDeferCriteria": 0,
     "rowsWithRepairActions": 3,
     "sourceReadyRows": 3,
     "trafficDataAvailable": false,
@@ -40,11 +40,11 @@
   "unsafeRows": [],
   "rows": [
     {
-      "approveAfterHumanReviewCommand": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
-      "autopilotScore": 1543,
+      "approveAfterHumanReviewCommand": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
+      "autopilotScore": 1723,
       "currentState": "draft/noindex=true/humanReview=true",
       "deferIf": [],
-      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
       "humanDecisionBranches": [
         "Approve: reviewer confirms sources, search intent, internal link, risk language, and no unsupported traffic or outcome claims.",
         "Repair: reviewer applies the listed copy/search/source/link fixes, then reruns automation before approval.",
@@ -54,70 +54,110 @@
       "lane": "ai-deployment",
       "manualFixReady": true,
       "nextDecision": "repair-before-review",
-      "primaryQuery": "大模型部署教程",
+      "primaryQuery": "AI Agent deployment tutorial",
       "publishConfirm": "not-included",
       "readyForHumanApproval": true,
       "remediationReasons": [
-        "2 search-intent weakness(es) need human copy review",
-        "11 source URL remediation action(s) need human confirmation",
+        "approval candidate has no current link to a published article",
+        "3 search-intent weakness(es) need human copy review",
+        "10 source URL remediation action(s) need human confirmation",
         "copydesk warning remediation exists"
       ],
       "repairBeforeApproval": [
         "Resolve or explicitly accept search weakness: no exact search query appears in title.",
         "Resolve or explicitly accept search weakness: no exact search query appears in description.",
-        "Suggested public link: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide) - same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做.",
-        "Suggested public link: Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 (/blog/claude-api-rate-limit-debug-guide) - same category: AI 部署; keyword overlap: ai, claude, 部署, 降级, api, 怎么.",
+        "Resolve or explicitly accept search weakness: no exact search query appears in headings or body.",
+        "Add at least one contextual link to a currently published article before approval.",
+        "Suggested public link: Codex 部署 Vercel 前检查什么：上线前清单 (/blog/codex-vercel-deploy-preflight-checklist) - keyword overlap: ai, vercel, 部署, 工具, 上线, 检查.",
         "Resolve search weakness: no exact search query appears in title.",
         "Resolve search weakness: no exact search query appears in description.",
         "Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.",
         "Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent."
       ],
-      "riskChecks": 11,
+      "riskChecks": 10,
       "searchReady": false,
       "searchWeaknesses": [
         "no exact search query appears in title",
-        "no exact search query appears in description"
+        "no exact search query appears in description",
+        "no exact search query appears in headings or body"
       ],
       "sourceReady": true,
-      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
     },
     {
-      "approveAfterHumanReviewCommand": "npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human",
-      "autopilotScore": 447,
+      "approveAfterHumanReviewCommand": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+      "autopilotScore": 1723,
       "currentState": "draft/noindex=true/humanReview=true",
-      "deferIf": [
-        "manual remediation pack is not ready"
-      ],
-      "file": "content/blog/together-ai-api-beginner-guide.mdx",
+      "deferIf": [],
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
       "humanDecisionBranches": [
         "Approve: reviewer confirms sources, search intent, internal link, risk language, and no unsupported traffic or outcome claims.",
         "Repair: reviewer applies the listed copy/search/source/link fixes, then reruns automation before approval.",
         "Defer: reviewer cannot verify sources, search intent, or safety boundary confidently."
       ],
       "internalLinkReady": true,
-      "lane": "ai-deployment",
-      "manualFixReady": false,
-      "nextDecision": "defer",
+      "lane": "industry-prompt",
+      "manualFixReady": true,
+      "nextDecision": "repair-before-review",
+      "primaryQuery": "ChatGPT prompts for business",
+      "publishConfirm": "not-included",
+      "readyForHumanApproval": true,
+      "remediationReasons": [
+        "approval candidate has no current link to a published article",
+        "14 source URL remediation action(s) need human confirmation",
+        "copydesk warning remediation exists"
+      ],
+      "repairBeforeApproval": [
+        "Add at least one contextual link to a currently published article before approval.",
+        "Suggested public link: Upwork 客户需求太模糊怎么办：新手分析和追问清单 (/blog/upwork-client-requirements-analysis-beginner) - keyword overlap: proposal, 客户沟通, 怎么, 客户, 需求, 户沟.",
+        "Make the opening answer this query naturally: ChatGPT prompts for business.",
+        "Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.",
+        "Resolve failed source URL before approval: https://ai-prompts-pro.com/blog/ai-prompt-templates-business.",
+        "Source URL action: Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent."
+      ],
+      "riskChecks": 11,
+      "searchReady": true,
+      "searchWeaknesses": [],
+      "sourceReady": true,
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
+    },
+    {
+      "approveAfterHumanReviewCommand": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
+      "autopilotScore": 1598,
+      "currentState": "draft/noindex=true/humanReview=true",
+      "deferIf": [],
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "humanDecisionBranches": [
+        "Approve: reviewer confirms sources, search intent, internal link, risk language, and no unsupported traffic or outcome claims.",
+        "Repair: reviewer applies the listed copy/search/source/link fixes, then reruns automation before approval.",
+        "Defer: reviewer cannot verify sources, search intent, or safety boundary confidently."
+      ],
+      "internalLinkReady": true,
+      "lane": "public-coverage-gap",
+      "manualFixReady": true,
+      "nextDecision": "repair-before-review",
       "primaryQuery": "RAG 知识库搭建教程",
       "publishConfirm": "not-included",
-      "readyForHumanApproval": false,
+      "readyForHumanApproval": true,
       "remediationReasons": [
+        "approval candidate has no current link to a published article",
         "4 search-intent weakness(es) need human copy review",
-        "8 source URL remediation action(s) need human confirmation"
+        "11 source URL remediation action(s) need human confirmation",
+        "copydesk warning remediation exists"
       ],
       "repairBeforeApproval": [
         "Resolve or explicitly accept search weakness: no exact search query appears in title.",
         "Resolve or explicitly accept search weakness: no exact search query appears in description.",
         "Resolve or explicitly accept search weakness: no exact search query appears in headings or body.",
         "Resolve or explicitly accept search weakness: few query tokens appear in searchable text.",
-        "Suggested public link: OpenRouter API 怎么接入：统一模型入口不是只换 Base URL (/blog/openrouter-api-beginner-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai.",
-        "Suggested public link: Groq API 怎么接入：高速推理适合什么 AI 应用 (/blog/groq-api-fast-llm-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai.",
+        "Add at least one contextual link to a currently published article before approval.",
+        "Suggested public link: Codex 怎么做第一个网页 (/blog/build-first-webpage-with-codex) - keyword overlap: ai, 一个, 怎么, 么做, 第一.",
         "Resolve search weakness: no exact search query appears in title.",
         "Resolve search weakness: no exact search query appears in description.",
         "Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.",
         "Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent."
       ],
-      "riskChecks": 6,
+      "riskChecks": 12,
       "searchReady": false,
       "searchWeaknesses": [
         "no exact search query appears in title",
@@ -126,51 +166,7 @@
         "few query tokens appear in searchable text"
       ],
       "sourceReady": true,
-      "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界"
-    },
-    {
-      "approveAfterHumanReviewCommand": "npm run mark:review -- --file=content/blog/vercel-404-after-deploy.mdx --confirm-human",
-      "autopilotScore": 417,
-      "currentState": "draft/noindex=true/humanReview=true",
-      "deferIf": [
-        "manual remediation pack is not ready"
-      ],
-      "file": "content/blog/vercel-404-after-deploy.mdx",
-      "humanDecisionBranches": [
-        "Approve: reviewer confirms sources, search intent, internal link, risk language, and no unsupported traffic or outcome claims.",
-        "Repair: reviewer applies the listed copy/search/source/link fixes, then reruns automation before approval.",
-        "Defer: reviewer cannot verify sources, search intent, or safety boundary confidently."
-      ],
-      "internalLinkReady": true,
-      "lane": "ai-deployment",
-      "manualFixReady": false,
-      "nextDecision": "defer",
-      "primaryQuery": "Vercel build failed",
-      "publishConfirm": "not-included",
-      "readyForHumanApproval": false,
-      "remediationReasons": [
-        "approval candidate has no current link to a published article",
-        "2 search-intent weakness(es) need human copy review",
-        "7 source URL remediation action(s) need human confirmation"
-      ],
-      "repairBeforeApproval": [
-        "Resolve or explicitly accept search weakness: no exact search query appears in title.",
-        "Resolve or explicitly accept search weakness: no exact search query appears in description.",
-        "Add at least one contextual link to a currently published article before approval.",
-        "Suggested public link: Next.js hydration error 怎么排查：使用前怎么判断是否适合 (/blog/nextjs-hydration-error-debug-freelance-scope) - same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, 排查, ai, 工具实践, next, js.",
-        "Resolve search weakness: no exact search query appears in title.",
-        "Resolve search weakness: no exact search query appears in description.",
-        "Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.",
-        "Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent."
-      ],
-      "riskChecks": 5,
-      "searchReady": false,
-      "searchWeaknesses": [
-        "no exact search query appears in title",
-        "no exact search query appears in description"
-      ],
-      "sourceReady": true,
-      "title": "Vercel 部署成功但页面 404：新手排查顺序"
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
     }
   ]
 }

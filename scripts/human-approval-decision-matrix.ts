@@ -25,6 +25,13 @@ type ApprovalPacket = {
   summary: { items: number; queueUnsafeItems: number; readyForHumanApproval: number; unsafeItems: number };
 };
 
+type ProjectStatus = {
+  articles: {
+    publicPublished: number;
+    publishableNow: unknown[];
+  };
+};
+
 type HumanReviewPlaybook = {
   items: Array<{
     file: string;
@@ -106,6 +113,7 @@ type DecisionRow = {
 
 function main() {
   const approval = readJson<ApprovalPacket>("content/automation/autopilot-approval-packet.json");
+  const projectStatus = readJson<ProjectStatus>("content/automation/project-status.json");
   const playbook = readJson<HumanReviewPlaybook>("content/automation/autopilot-human-review-playbook.json");
   const search = readJson<SearchIntentBrief>("content/automation/autopilot-search-intent-brief.json");
   const links = readJson<InternalLinkBrief>("content/automation/autopilot-internal-link-brief.json");
@@ -151,8 +159,8 @@ function main() {
       sourceVerificationUnsafeItems: sources.summary.unsafeItems,
     },
     publishingBoundary: {
-      currentPublicPublished: approval.boundaries.publicPublished,
-      currentPublishableNow: approval.boundaries.publishableNow,
+      currentPublicPublished: projectStatus.articles.publicPublished,
+      currentPublishableNow: projectStatus.articles.publishableNow.length,
       publishConfirmCommandsIncluded: 0,
       trafficDataAvailable: approval.boundaries.trafficDataAvailable,
     },

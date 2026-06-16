@@ -1,31 +1,30 @@
 # SEO Warning Remediation Pack
 
-Generated at: 2026-06-16T12:27:06.835Z
+Generated at: 2026-06-16T05:22:47.160Z
 
 This pack is read-only. It turns search snippet and structured-data warnings into human-review actions without editing articles, marking review, publishing, or claiming traffic.
 
 ## Summary
 
-- Items: 260
+- Items: 255
 - Public items: 255
-- Draft items: 5
+- Draft items: 0
 - Recommended items: 1
 - Wave items: 1
-- Snippet warning items: 204
+- Snippet warning items: 199
 - Schema warning items: 92
 - Blocking items: 0
-- Manual-fix-ready items: 260
+- Manual-fix-ready items: 255
 - Unsafe items: 0
 
 ## Items
 
 | Priority | Ready | Status | Scope | Snippet warnings | Schema warnings | Title | File |
 | ---: | --- | --- | --- | ---: | ---: | --- | --- |
-| 78 | true | draft | expansion, recommended, wave-1 | 1 | 0 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| 136 | true | published | public, expansion, recommended, wave-1 | 2 | 0 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 66 | true | published | public | 2 | 0 | AI 辅助交付和完全自动交付的检查清单 | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
-| 66 | true | published | public | 2 | 0 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 66 | true | published | public, expansion | 2 | 0 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | 66 | true | published | public | 2 | 0 | AI 新手接项目前的项目适配检查清单 | content/blog/ai-beginner-project-fit-check-checklist.mdx |
-| 66 | true | published | public | 2 | 0 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | 66 | true | published | public | 2 | 0 | AI 输出不稳定风险控制检查清单 | content/blog/ai-output-unstable-risk-control-checklist.mdx |
 | 66 | true | published | public | 2 | 0 | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
 | 66 | true | published | public | 2 | 0 | AI 工具配置服务项目检查清单 | content/blog/ai-tool-setup-service-checklist-checklist.mdx |
@@ -77,7 +76,7 @@ This pack is read-only. It turns search snippet and structured-data warnings int
 | 58 | true | published | public | 1 | 0 | Agent 记忆怎么设计：短期记忆、长期记忆和用户偏好 | content/blog/agent-memory-design-guide.mdx |
 | 58 | true | published | public | 1 | 0 | Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则 | content/blog/agent-memory-postgres-schema-guide.mdx |
 | 58 | true | published | public | 1 | 0 | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
-| 58 | true | published | public | 1 | 0 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| 58 | true | published | public, expansion | 1 | 0 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | 58 | true | published | public | 1 | 0 | AI 新手如何判断自己能不能接项目 | content/blog/ai-beginner-project-fit-check.mdx |
 | 58 | true | published | public | 1 | 0 | AI 编程工具使用前风险检查清单 | content/blog/ai-coding-tools-risk-check-checklist.mdx |
 | 58 | true | published | public | 1 | 0 | AI 编程工具使用前要检查哪些风险 | content/blog/ai-coding-tools-risk-check.mdx |
@@ -87,7 +86,7 @@ This pack is read-only. It turns search snippet and structured-data warnings int
 | 58 | true | published | public | 1 | 0 | AI 做 Logo 怎么开始：新手先别急着商用 | content/blog/ai-logo-design-beginner-guide.mdx |
 | 58 | true | published | public | 1 | 0 | AI 输出不稳定怎么做风险控制 | content/blog/ai-output-unstable-risk-control.mdx |
 | 58 | true | published | public | 1 | 0 | AI 提示词怎么写才好用：全行业都能套的 5 段式框架 | content/blog/ai-prompt-framework-business-guide.mdx |
-| 58 | true | published | public | 1 | 0 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
+| 58 | true | published | public, expansion | 1 | 0 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
 | 58 | true | published | public | 1 | 0 | AI 写简历和求职信怎么用：别让内容变得不真实 | content/blog/ai-resume-cover-letter-guide.mdx |
 | 58 | true | published | public | 1 | 0 | AI 工具新手练习小项目选什么 | content/blog/ai-small-project-practice-topics.mdx |
 | 58 | true | published | public | 1 | 0 | AI 工具推荐怎么选：新手别一开始买太多 | content/blog/ai-tools-recommendation-beginner.mdx |
@@ -174,14 +173,14 @@ This pack is read-only. It turns search snippet and structured-data warnings int
 | 58 | true | published | public | 1 | 0 | Dify Docker Compose 自部署怎么做：新手先看这份边界清单 | content/blog/dify-docker-compose-self-host-guide.mdx |
 | 58 | true | published | public | 1 | 0 | Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试 | content/blog/dify-ollama-local-model-guide.mdx |
 | 58 | true | published | public | 1 | 0 | Dify 怎么接 OpenAI API：模型供应商、LLM 节点和费用边界 | content/blog/dify-openai-api-provider-guide.mdx |
-| 58 | true | published | public | 1 | 0 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
-| 58 | true | published | public | 1 | 0 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
+| 58 | true | published | public, expansion | 1 | 0 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| 58 | true | published | public, expansion | 1 | 0 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
 | 58 | true | published | public | 1 | 0 | 企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管 | content/blog/enterprise-im-ai-agent-integration-guide.mdx |
 | 58 | true | published | public | 1 | 0 | FastGPT 知识库怎么部署：新手先分清自部署和检索参数 | content/blog/fastgpt-knowledge-base-deployment-guide.mdx |
 | 58 | true | published | public | 1 | 0 | Flowise 接 Ollama 做本地 RAG：新手先跑通最小链路 | content/blog/flowise-ollama-local-rag-checklist.mdx |
 | 58 | true | published | public | 1 | 0 | 自由职业每周复盘检查清单 | content/blog/freelance-weekly-review-template-checklist.mdx |
 | 58 | true | published | public | 1 | 0 | Gemini API 怎么接 Next.js：从 API Key 到服务端 Route Handler | content/blog/gemini-api-nextjs-guide.mdx |
-| 58 | true | published | public | 1 | 0 | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
+| 58 | true | published | public, expansion | 1 | 0 | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
 | 58 | true | published | public | 1 | 0 | Groq API 怎么接入：高速推理适合什么 AI 应用 | content/blog/groq-api-fast-llm-guide.mdx |
 | 58 | true | published | public | 1 | 0 | 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 | content/blog/healthcare-admin-ai-prompts-guide.mdx |
 | 58 | true | published | public | 1 | 0 | Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住 | content/blog/helicone-llm-observability-guide.mdx |
@@ -203,7 +202,7 @@ This pack is read-only. It turns search snippet and structured-data warnings int
 | 58 | true | published | public | 1 | 0 | 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 | content/blog/multi-model-router-fallback-guide.mdx |
 | 58 | true | published | public | 1 | 0 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 | 58 | true | published | public | 1 | 0 | n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试 | content/blog/n8n-ai-agent-webhook-production-guide.mdx |
-| 58 | true | published | public | 1 | 0 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| 58 | true | published | public, expansion | 1 | 0 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 | 58 | true | published | public | 1 | 0 | Open WebUI + Ollama 怎么部署：本地大模型网页聊天入门 | content/blog/open-webui-ollama-docker-guide.mdx |
 | 58 | true | published | public | 1 | 0 | OpenAI Agents SDK 怎么入门：Tools、Handoffs 和 Tracing 先分清 | content/blog/openai-agents-sdk-beginner-guide.mdx |
 | 58 | true | published | public | 1 | 0 | OpenAI API 接入 Next.js 怎么做：Route Handler 新手清单 | content/blog/openai-api-nextjs-route-handler-guide.mdx |
@@ -277,41 +276,45 @@ This pack is read-only. It turns search snippet and structured-data warnings int
 | 55 | true | published | public | 0 | 1 | permission denied 报错新手怎么处理：常见错误和解决步骤 | content/blog/permission-denied-fix-mistakes.mdx |
 | 55 | true | published | public | 0 | 1 | port already in use 常见错误和修正方法 | content/blog/port-already-in-use-fix-mistakes.mdx |
 | 55 | true | published | public | 0 | 1 | 没有客户时做练习项目的常见错误 | content/blog/practice-projects-before-clients-mistakes.mdx |
-| 8 | true | draft | expansion | 1 | 0 | TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收 | content/blog/tensorrt-llm-beginner-guide.mdx |
-| 8 | true | draft | expansion | 1 | 0 | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
-| 8 | true | draft | expansion | 1 | 0 | Vercel 部署成功但页面 404：新手排查顺序 | content/blog/vercel-404-after-deploy.mdx |
-| 8 | true | draft | expansion | 1 | 0 | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
 
 ## Manual Actions
 
-### Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级
+### 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
 
-- File: content/blog/vercel-ai-gateway-multi-provider-guide.mdx
-- Status: draft
-- Stop before: Stop before human approval before changing draft metadata, mark:review, or publishing.
+- File: content/blog/ai-model-selection-customer-service-guide.mdx
+- Status: published
+- Stop before: Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.
 - Publish confirm: not-included
 
 Warnings:
 
+- Snippet: description may be thin for search snippets
 - Snippet: primary keyword is not an exact title substring
 
 Actions:
 
-- Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.
+- Expand the meta description with the user problem, outcome, and one concrete workflow term.
+- Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
+- Confirm description length remains suitable for search snippets after editing.
+- Check whether the title can naturally include the exact primary keyword: 客服 AI 模型选型.
 - If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - Confirm the H1/title/description still answer the same search intent after any metadata change.
-- For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.
+- For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.
 
 Human checklist:
 
-- Review file: content/blog/vercel-ai-gateway-multi-provider-guide.mdx.
-- Review status: draft.
-- Confirm primary keyword intent: Vercel AI Gateway 多模型.
+- Review file: content/blog/ai-model-selection-customer-service-guide.mdx.
+- Review status: published.
+- Confirm primary keyword intent: 客服 AI 模型选型.
+- Snippet warning: description may be thin for search snippets.
 - Snippet warning: primary keyword is not an exact title substring.
-- Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.
+- Expand the meta description with the user problem, outcome, and one concrete workflow term.
+- Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
+- Confirm description length remains suitable for search snippets after editing.
+- Check whether the title can naturally include the exact primary keyword: 客服 AI 模型选型.
 - If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - Confirm the H1/title/description still answer the same search intent after any metadata change.
-- For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.
+- For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.
 - Do not mark review or publish from this remediation pack.
 
 ### AI 辅助交付和完全自动交付的检查清单
@@ -423,44 +426,6 @@ Human checklist:
 - Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
 - Confirm description length remains suitable for search snippets after editing.
 - Check whether the title can naturally include the exact primary keyword: AI 新手接项目前检查清单.
-- If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- Confirm the H1/title/description still answer the same search intent after any metadata change.
-- For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.
-- Do not mark review or publish from this remediation pack.
-
-### 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
-
-- File: content/blog/ai-model-selection-customer-service-guide.mdx
-- Status: published
-- Stop before: Stop before human approval if a public page title, description, slug, canonical, or structured-data field would change.
-- Publish confirm: not-included
-
-Warnings:
-
-- Snippet: description may be thin for search snippets
-- Snippet: primary keyword is not an exact title substring
-
-Actions:
-
-- Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- Confirm description length remains suitable for search snippets after editing.
-- Check whether the title can naturally include the exact primary keyword: 客服 AI 模型选型.
-- If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- Confirm the H1/title/description still answer the same search intent after any metadata change.
-- For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.
-
-Human checklist:
-
-- Review file: content/blog/ai-model-selection-customer-service-guide.mdx.
-- Review status: published.
-- Confirm primary keyword intent: 客服 AI 模型选型.
-- Snippet warning: description may be thin for search snippets.
-- Snippet warning: primary keyword is not an exact title substring.
-- Expand the meta description with the user problem, outcome, and one concrete workflow term.
-- Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.
-- Confirm description length remains suitable for search snippets after editing.
-- Check whether the title can naturally include the exact primary keyword: 客服 AI 模型选型.
 - If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
 - Confirm the H1/title/description still answer the same search intent after any metadata change.
 - For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.
@@ -8290,125 +8255,5 @@ Human checklist:
 - If the value is intentionally uncommon, document that decision during human review.
 - If the value is accidental, replace it with the closest established content type before approval.
 - For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable.
-- Do not mark review or publish from this remediation pack.
-
-### TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收
-
-- File: content/blog/tensorrt-llm-beginner-guide.mdx
-- Status: draft
-- Stop before: Stop before human approval before changing draft metadata, mark:review, or publishing.
-- Publish confirm: not-included
-
-Warnings:
-
-- Snippet: primary keyword is not an exact title substring
-
-Actions:
-
-- Check whether the title can naturally include the exact primary keyword: TensorRT-LLM 入门.
-- If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- Confirm the H1/title/description still answer the same search intent after any metadata change.
-- For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.
-
-Human checklist:
-
-- Review file: content/blog/tensorrt-llm-beginner-guide.mdx.
-- Review status: draft.
-- Confirm primary keyword intent: TensorRT-LLM 入门.
-- Snippet warning: primary keyword is not an exact title substring.
-- Check whether the title can naturally include the exact primary keyword: TensorRT-LLM 入门.
-- If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- Confirm the H1/title/description still answer the same search intent after any metadata change.
-- For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.
-- Do not mark review or publish from this remediation pack.
-
-### Together AI API 怎么接入：开源模型接口、embedding 和部署边界
-
-- File: content/blog/together-ai-api-beginner-guide.mdx
-- Status: draft
-- Stop before: Stop before human approval before changing draft metadata, mark:review, or publishing.
-- Publish confirm: not-included
-
-Warnings:
-
-- Snippet: primary keyword is not an exact title substring
-
-Actions:
-
-- Check whether the title can naturally include the exact primary keyword: Together AI API 接入.
-- If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- Confirm the H1/title/description still answer the same search intent after any metadata change.
-- For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.
-
-Human checklist:
-
-- Review file: content/blog/together-ai-api-beginner-guide.mdx.
-- Review status: draft.
-- Confirm primary keyword intent: Together AI API 接入.
-- Snippet warning: primary keyword is not an exact title substring.
-- Check whether the title can naturally include the exact primary keyword: Together AI API 接入.
-- If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- Confirm the H1/title/description still answer the same search intent after any metadata change.
-- For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.
-- Do not mark review or publish from this remediation pack.
-
-### Vercel 部署成功但页面 404：新手排查顺序
-
-- File: content/blog/vercel-404-after-deploy.mdx
-- Status: draft
-- Stop before: Stop before human approval before changing draft metadata, mark:review, or publishing.
-- Publish confirm: not-included
-
-Warnings:
-
-- Snippet: primary keyword is not an exact title substring
-
-Actions:
-
-- Check whether the title can naturally include the exact primary keyword: Vercel 部署成功但 404.
-- If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- Confirm the H1/title/description still answer the same search intent after any metadata change.
-- For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.
-
-Human checklist:
-
-- Review file: content/blog/vercel-404-after-deploy.mdx.
-- Review status: draft.
-- Confirm primary keyword intent: Vercel 部署成功但 404.
-- Snippet warning: primary keyword is not an exact title substring.
-- Check whether the title can naturally include the exact primary keyword: Vercel 部署成功但 404.
-- If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- Confirm the H1/title/description still answer the same search intent after any metadata change.
-- For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.
-- Do not mark review or publish from this remediation pack.
-
-### Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查
-
-- File: content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx
-- Status: draft
-- Stop before: Stop before human approval before changing draft metadata, mark:review, or publishing.
-- Publish confirm: not-included
-
-Warnings:
-
-- Snippet: primary keyword is not an exact title substring
-
-Actions:
-
-- Check whether the title can naturally include the exact primary keyword: Vercel AI SDK 聊天机器人部署.
-- If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- Confirm the H1/title/description still answer the same search intent after any metadata change.
-- For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.
-
-Human checklist:
-
-- Review file: content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx.
-- Review status: draft.
-- Confirm primary keyword intent: Vercel AI SDK 聊天机器人部署.
-- Snippet warning: primary keyword is not an exact title substring.
-- Check whether the title can naturally include the exact primary keyword: Vercel AI SDK 聊天机器人部署.
-- If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- Confirm the H1/title/description still answer the same search intent after any metadata change.
-- For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.
 - Do not mark review or publish from this remediation pack.
 

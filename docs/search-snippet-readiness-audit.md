@@ -1,6 +1,6 @@
 # Search Snippet Readiness Audit
 
-Generated at: 2026-06-16T12:27:05.707Z
+Generated at: 2026-06-16T05:17:29.890Z
 
 This report is read-only. It checks titles, descriptions, slugs, and indexing boundaries for public and publish-candidate snippets.
 
@@ -14,11 +14,11 @@ This report is read-only. It checks titles, descriptions, slugs, and indexing bo
 ## Summary
 
 - blockingItems: 0
-- expansionItems: 15
+- expansionItems: 19
 - publicItems: 500
 - recommendedItems: 3
-- scopedItems: 516
-- warningItems: 204
+- scopedItems: 500
+- warningItems: 199
 - waveItems: 3
 - waveItemsWithBlockingIssues: 0
 
@@ -30,17 +30,17 @@ This report is read-only. It checks titles, descriptions, slugs, and indexing bo
 
 | Scope | Title chars | Description chars | Issues | Warnings | Slug | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| expansion, wave-1 | 44 | 83 | none | none | supabase-pgvector-rag-guide | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
-| expansion, recommended, wave-1 | 42 | 71 | none | none | vector-database-selection-for-rag-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| expansion, recommended, wave-1 | 51 | 72 | none | primary keyword is not an exact title substring | vercel-ai-gateway-multi-provider-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| public, expansion, recommended, wave-1 | 47 | 69 | none | none | ai-agent-deployment-vercel-ai-sdk-guide | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| public, expansion, recommended, wave-1 | 29 | 52 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-model-selection-customer-service-guide | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| public, expansion, recommended, wave-1 | 37 | 67 | none | none | industry-ai-prompts-template-library-2026 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
 ## Recommended Items
 
 | Scope | Title chars | Description chars | Issues | Warnings | Slug | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| recommended | 16 | 69 | none | none | tools-not-to-buy-first | AI 工具新手不应该先买哪些工具 | content/blog/tools-not-to-buy-first.mdx |
-| expansion, recommended, wave-1 | 42 | 71 | none | none | vector-database-selection-for-rag-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| expansion, recommended, wave-1 | 51 | 72 | none | primary keyword is not an exact title substring | vercel-ai-gateway-multi-provider-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| public, expansion, recommended, wave-1 | 47 | 69 | none | none | ai-agent-deployment-vercel-ai-sdk-guide | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| public, expansion, recommended, wave-1 | 29 | 52 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-model-selection-customer-service-guide | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| public, expansion, recommended, wave-1 | 37 | 67 | none | none | industry-ai-prompts-template-library-2026 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
 ## Public Items
 
@@ -58,13 +58,13 @@ This report is read-only. It checks titles, descriptions, slugs, and indexing bo
 | public | 27 | 58 | none | none | agent-production-deployment-checklist | Agent 生产上线检查表：权限、日志、成本和人工确认 | content/blog/agent-production-deployment-checklist.mdx |
 | public | 24 | 57 | none | none | agent-tool-calling-beginner-guide | Agent 工具调用怎么设计：读、写、执行要分清 | content/blog/agent-tool-calling-beginner-guide.mdx |
 | public | 29 | 58 | none | primary keyword is not an exact title substring | agent-tool-permission-safety-guide | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
-| public | 47 | 69 | none | none | ai-agent-deployment-vercel-ai-sdk-guide | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
-| public | 41 | 60 | none | none | ai-agent-memory-rag-design-guide | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
-| public | 33 | 59 | none | primary keyword is not an exact title substring | ai-api-key-security-rotation-guide | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| public, expansion, recommended, wave-1 | 47 | 69 | none | none | ai-agent-deployment-vercel-ai-sdk-guide | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| public, expansion | 41 | 60 | none | none | ai-agent-memory-rag-design-guide | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| public, expansion | 33 | 59 | none | primary keyword is not an exact title substring | ai-api-key-security-rotation-guide | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | public | 19 | 49 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-assisted-vs-automated-delivery-checklist | AI 辅助交付和完全自动交付的检查清单 | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
 | public | 16 | 50 | none | description may be thin for search snippets | ai-assisted-vs-automated-delivery-mistakes | AI 辅助交付常见错误和解决步骤 | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx |
 | public | 19 | 58 | none | none | ai-assisted-vs-automated-delivery | AI 辅助交付和完全自动交付有什么区别 | content/blog/ai-assisted-vs-automated-delivery.mdx |
-| public | 37 | 54 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-automation-project-pricing-scope-guide | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| public, expansion | 37 | 54 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-automation-project-pricing-scope-guide | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | public | 18 | 47 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-beginner-project-fit-check-checklist | AI 新手接项目前的项目适配检查清单 | content/blog/ai-beginner-project-fit-check-checklist.mdx |
 | public | 16 | 61 | none | primary keyword is not an exact title substring | ai-beginner-project-fit-check-mistakes | AI 新手判断接项目时的常见错误 | content/blog/ai-beginner-project-fit-check-mistakes.mdx |
 | public | 17 | 45 | none | description may be thin for search snippets | ai-beginner-project-fit-check | AI 新手如何判断自己能不能接项目 | content/blog/ai-beginner-project-fit-check.mdx |
@@ -96,13 +96,13 @@ This report is read-only. It checks titles, descriptions, slugs, and indexing bo
 | public | 14 | 62 | none | none | ai-freelance-skill-roadmap-mistakes | AI 工具技能路线图常见错误 | content/blog/ai-freelance-skill-roadmap-mistakes.mdx |
 | public | 15 | 70 | none | none | ai-freelance-skill-roadmap | AI 工具新手技能路线图怎么排 | content/blog/ai-freelance-skill-roadmap.mdx |
 | public | 23 | 53 | none | description may be thin for search snippets | ai-logo-design-beginner-guide | AI 做 Logo 怎么开始：新手先别急着商用 | content/blog/ai-logo-design-beginner-guide.mdx |
-| public | 29 | 52 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-model-selection-customer-service-guide | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| public, expansion, recommended, wave-1 | 29 | 52 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-model-selection-customer-service-guide | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | public | 16 | 54 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-output-unstable-risk-control-checklist | AI 输出不稳定风险控制检查清单 | content/blog/ai-output-unstable-risk-control-checklist.mdx |
 | public | 16 | 60 | none | primary keyword is not an exact title substring | ai-output-unstable-risk-control-mistakes | AI 输出不稳定风险控制常见错误 | content/blog/ai-output-unstable-risk-control-mistakes.mdx |
 | public | 15 | 62 | none | primary keyword is not an exact title substring | ai-output-unstable-risk-control | AI 输出不稳定怎么做风险控制 | content/blog/ai-output-unstable-risk-control.mdx |
 | public | 25 | 56 | none | none | ai-ppt-beginner-guide | AI 做 PPT 怎么开始：新手从大纲到成稿的流程 | content/blog/ai-ppt-beginner-guide.mdx |
 | public | 27 | 52 | none | description may be thin for search snippets | ai-prompt-framework-business-guide | AI 提示词怎么写才好用：全行业都能套的 5 段式框架 | content/blog/ai-prompt-framework-business-guide.mdx |
-| public | 28 | 51 | none | description may be thin for search snippets | ai-prompt-library-team-knowledge-base-guide | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
+| public, expansion | 28 | 51 | none | description may be thin for search snippets | ai-prompt-library-team-knowledge-base-guide | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
 | public | 23 | 52 | none | description may be thin for search snippets | ai-resume-cover-letter-guide | AI 写简历和求职信怎么用：别让内容变得不真实 | content/blog/ai-resume-cover-letter-guide.mdx |
 | public | 14 | 52 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-small-project-practice-topics-checklist | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
 | public | 12 | 64 | none | primary keyword is not an exact title substring | ai-small-project-practice-topics-mistakes | AI 小项目练习常见错误 | content/blog/ai-small-project-practice-topics-mistakes.mdx |
@@ -141,7 +141,7 @@ This report is read-only. It checks titles, descriptions, slugs, and indexing bo
 | public | 33 | 80 | none | none | chatgpt-vs-claude-proposal | ChatGPT 和 Claude 写 Proposal 有什么区别 | content/blog/chatgpt-vs-claude-proposal.mdx |
 | public | 39 | 85 | none | none | chroma-vector-database-rag-guide | Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection | content/blog/chroma-vector-database-rag-guide.mdx |
 | public | 37 | 77 | none | primary keyword is not an exact title substring | claude-api-beginner-guide | Claude API 怎么接入：Messages API、费用和上下文边界 | content/blog/claude-api-beginner-guide.mdx |
-| public | 46 | 74 | none | none | claude-api-rate-limit-debug-guide | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
+| public, expansion | 46 | 74 | none | none | claude-api-rate-limit-debug-guide | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
 | public | 23 | 60 | none | primary keyword is not an exact title substring | claude-code-automation-human-review-checklist | Claude Code 自动化人工审核检查清单 | content/blog/claude-code-automation-human-review-checklist.mdx |
 | public | 26 | 63 | none | primary keyword is not an exact title substring | claude-code-automation-human-review-freelance-scope | Claude Code 自动化项目前怎么判断能不能做 | content/blog/claude-code-automation-human-review-freelance-scope.mdx |
 | public | 27 | 65 | none | primary keyword is not an exact title substring | claude-code-automation-human-review-mistakes | Claude Code 自动化最容易忽略的人工审核错误 | content/blog/claude-code-automation-human-review-mistakes.mdx |
@@ -314,11 +314,11 @@ This report is read-only. It checks titles, descriptions, slugs, and indexing bo
 | public | 37 | 74 | none | primary keyword is not an exact title substring | crewai-agent-deployment-beginner-guide | CrewAI Agent 怎么部署：从 Crew、Task 到生产监控边界 | content/blog/crewai-agent-deployment-beginner-guide.mdx |
 | public | 22 | 67 | none | none | cursor-vs-codex-web-editing-checklist | Cursor 和 Codex 改网页检查清单 | content/blog/cursor-vs-codex-web-editing-checklist.mdx |
 | public | 23 | 90 | none | none | cursor-vs-codex-web-editing | Cursor 和 Codex 改网页有什么区别 | content/blog/cursor-vs-codex-web-editing.mdx |
-| public | 31 | 56 | none | none | customer-service-ai-prompts-guide | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
+| public, expansion | 31 | 56 | none | none | customer-service-ai-prompts-guide | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
 | public | 12 | 66 | none | none | daily-ai-freelance-practice-log-checklist | 每天项目练习记录检查清单 | content/blog/daily-ai-freelance-practice-log-checklist.mdx |
 | public | 17 | 66 | none | none | daily-ai-freelance-practice-log-mistakes | 每天项目练习记录常见错误和解决步骤 | content/blog/daily-ai-freelance-practice-log-mistakes.mdx |
 | public | 13 | 72 | none | none | daily-ai-freelance-practice-log | 新手如何记录每天的项目练习 | content/blog/daily-ai-freelance-practice-log.mdx |
-| public | 35 | 59 | none | none | data-analysis-ai-prompts-guide | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
+| public, expansion | 35 | 59 | none | none | data-analysis-ai-prompts-guide | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
 | public | 9 | 67 | none | none | deliver-small-website-with-ai-no-code-checklist | 小网站交付检查清单 | content/blog/deliver-small-website-with-ai-no-code-checklist.mdx |
 | public | 14 | 70 | none | none | deliver-small-website-with-ai-no-code-mistakes | 小网站交付常见错误和解决步骤 | content/blog/deliver-small-website-with-ai-no-code-mistakes.mdx |
 | public | 14 | 85 | none | none | deliver-small-website-with-ai-no-code | 不会写代码怎么交付一个小网站 | content/blog/deliver-small-website-with-ai-no-code.mdx |
@@ -336,12 +336,12 @@ This report is read-only. It checks titles, descriptions, slugs, and indexing bo
 | public | 37 | 69 | none | none | dify-metadata-filtering-rag-guide | Dify metadata filtering 怎么用：让知识库检索更可控 | content/blog/dify-metadata-filtering-rag-guide.mdx |
 | public | 33 | 78 | none | primary keyword is not an exact title substring | dify-ollama-local-model-guide | Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试 | content/blog/dify-ollama-local-model-guide.mdx |
 | public | 37 | 73 | none | primary keyword is not an exact title substring | dify-openai-api-provider-guide | Dify 怎么接 OpenAI API：模型供应商、LLM 节点和费用边界 | content/blog/dify-openai-api-provider-guide.mdx |
-| public | 29 | 55 | none | primary keyword is not an exact title substring | dify-workflow-error-handling-guide | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
-| public | 40 | 64 | none | primary keyword is not an exact title substring | dify-workflow-vs-agent-guide | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
+| public, expansion | 29 | 55 | none | primary keyword is not an exact title substring | dify-workflow-error-handling-guide | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| public, expansion | 40 | 64 | none | primary keyword is not an exact title substring | dify-workflow-vs-agent-guide | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
 | public | 12 | 74 | none | none | digital-template-refund-policy-checklist | 数字模板退款规则检查清单 | content/blog/digital-template-refund-policy-checklist.mdx |
 | public | 14 | 102 | none | none | digital-template-refund-policy | 数字模板退款规则怎么写更清楚 | content/blog/digital-template-refund-policy.mdx |
-| public | 30 | 56 | none | none | ecommerce-ai-prompts-guide | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
-| public | 28 | 55 | none | none | education-ai-prompts-guide | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
+| public, expansion | 30 | 56 | none | none | ecommerce-ai-prompts-guide | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
+| public, expansion | 28 | 55 | none | none | education-ai-prompts-guide | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
 | public | 31 | 57 | none | none | embedding-model-selection-guide | Embedding 模型怎么选：RAG 和向量检索别只看模型名 | content/blog/embedding-model-selection-guide.mdx |
 | public | 14 | 58 | none | none | english-client-reply-template-honest-checklist | 英文客户回复避免夸大检查清单 | content/blog/english-client-reply-template-honest-checklist.mdx |
 | public | 14 | 81 | none | none | english-client-reply-template-honest | 英文客户回复模板怎么避免夸大 | content/blog/english-client-reply-template-honest.mdx |
@@ -380,7 +380,7 @@ This report is read-only. It checks titles, descriptions, slugs, and indexing bo
 | public | 12 | 52 | none | description may be thin for search snippets | freelance-weekly-review-template-checklist | 自由职业每周复盘检查清单 | content/blog/freelance-weekly-review-template-checklist.mdx |
 | public | 13 | 75 | none | none | freelance-weekly-review-template | 自由职业每周复盘模板怎么用 | content/blog/freelance-weekly-review-template.mdx |
 | public | 51 | 74 | none | primary keyword is not an exact title substring | gemini-api-nextjs-guide | Gemini API 怎么接 Next.js：从 API Key 到服务端 Route Handler | content/blog/gemini-api-nextjs-guide.mdx |
-| public | 35 | 57 | none | none | gemini-api-rate-limit-debug-guide | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | content/blog/gemini-api-rate-limit-debug-guide.mdx |
+| public, expansion | 35 | 57 | none | none | gemini-api-rate-limit-debug-guide | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | content/blog/gemini-api-rate-limit-debug-guide.mdx |
 | public | 32 | 85 | none | none | git-authentication-failed-fix-checklist | git authentication failed 处理检查清单 | content/blog/git-authentication-failed-fix-checklist.mdx |
 | public | 37 | 83 | none | none | git-authentication-failed-fix-freelance-scope | git authentication failed 使用前怎么判断是否适合 | content/blog/git-authentication-failed-fix-freelance-scope.mdx |
 | public | 35 | 91 | none | none | git-authentication-failed-fix-mistakes | git authentication failed 常见错误和解决步骤 | content/blog/git-authentication-failed-fix-mistakes.mdx |
@@ -397,7 +397,7 @@ This report is read-only. It checks titles, descriptions, slugs, and indexing bo
 | public | 24 | 90 | none | none | google-analytics-when-to-add | Google Analytics 什么时候再接入 | content/blog/google-analytics-when-to-add.mdx |
 | public | 28 | 101 | none | none | google-search-console-new-site-checklist | Google Search Console 新站检查清单 | content/blog/google-search-console-new-site-checklist.mdx |
 | public | 27 | 100 | none | none | google-search-console-new-site | Google Search Console 新站怎么用 | content/blog/google-search-console-new-site.mdx |
-| public | 48 | 102 | none | primary keyword is not an exact title substring | gpu-docker-nvidia-container-toolkit-guide | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
+| public, expansion | 48 | 102 | none | primary keyword is not an exact title substring | gpu-docker-nvidia-container-toolkit-guide | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
 | public | 28 | 74 | none | primary keyword is not an exact title substring | groq-api-fast-llm-guide | Groq API 怎么接入：高速推理适合什么 AI 应用 | content/blog/groq-api-fast-llm-guide.mdx |
 | public | 16 | 75 | none | none | gumroad-template-selling-prep-checklist | Gumroad 卖模板前检查清单 | content/blog/gumroad-template-selling-prep-checklist.mdx |
 | public | 17 | 87 | none | none | gumroad-template-selling-prep | Gumroad 卖模板前要准备什么 | content/blog/gumroad-template-selling-prep.mdx |
@@ -406,7 +406,7 @@ This report is read-only. It checks titles, descriptions, slugs, and indexing bo
 | public | 30 | 58 | none | primary keyword is not an exact title substring | hr-recruiting-ai-prompts-guide | 人力招聘 AI 提示词模板：JD、简历初筛、面试题和培训材料 | content/blog/hr-recruiting-ai-prompts-guide.mdx |
 | public | 52 | 87 | none | primary keyword is not an exact title substring | huggingface-spaces-ai-demo-guide | Hugging Face Spaces 怎么部署 AI Demo：Gradio、Docker 和公开边界 | content/blog/huggingface-spaces-ai-demo-guide.mdx |
 | public | 53 | 97 | none | primary keyword is not an exact title substring | huggingface-tgi-deployment-guide | Hugging Face TGI 怎么部署：Text Generation Inference 入门检查表 | content/blog/huggingface-tgi-deployment-guide.mdx |
-| public | 37 | 67 | none | none | industry-ai-prompts-template-library-2026 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| public, expansion, recommended, wave-1 | 37 | 67 | none | none | industry-ai-prompts-template-library-2026 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 | public | 18 | 55 | none | none | international-payment-fee-estimate-checklist | 海外收款手续费怎么估算：新手检查清单 | content/blog/international-payment-fee-estimate-checklist.mdx |
 | public | 11 | 68 | none | none | international-payment-fee-estimate | 海外收款手续费怎么估算 | content/blog/international-payment-fee-estimate.mdx |
 | public | 21 | 52 | none | description may be thin for search snippets | knowledge-base-permission-design-guide | AI 知识库权限怎么设计：别让检索结果越权 | content/blog/knowledge-base-permission-design-guide.mdx |
@@ -424,12 +424,12 @@ This report is read-only. It checks titles, descriptions, slugs, and indexing bo
 | public | 31 | 56 | none | primary keyword is not an exact title substring | llm-api-rate-limit-retry-guide | 大模型 API 限流和重试怎么做：429、队列、退避和降级方案 | content/blog/llm-api-rate-limit-retry-guide.mdx |
 | public | 25 | 54 | none | description may be thin for search snippets | llm-cost-monitoring-dashboard-guide | 大模型成本监控怎么做：按用户、功能、模型和项目拆账 | content/blog/llm-cost-monitoring-dashboard-guide.mdx |
 | public | 24 | 57 | none | none | llm-deployment-beginner-guide | 大模型部署是什么意思：API、本地和私有化怎么选 | content/blog/llm-deployment-beginner-guide.mdx |
-| public | 54 | 65 | none | none | llm-deployment-huggingface-inference-endpoints-guide | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| public, expansion | 54 | 65 | none | none | llm-deployment-huggingface-inference-endpoints-guide | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | public | 26 | 57 | none | none | llm-finetuning-vs-rag-beginner-guide | 大模型微调和 RAG 怎么选：新手别把两件事混在一起 | content/blog/llm-finetuning-vs-rag-beginner-guide.mdx |
 | public | 22 | 60 | none | none | llm-serving-cost-latency-checklist | 大模型部署成本和延迟怎么估算：上线前检查清单 | content/blog/llm-serving-cost-latency-checklist.mdx |
 | public | 40 | 83 | none | none | lm-studio-local-api-guide | LM Studio 本地 API 怎么用：把本地模型变成 OpenAI 兼容接口 | content/blog/lm-studio-local-api-guide.mdx |
 | public | 24 | 52 | none | description may be thin for search snippets | local-llm-deployment-beginner | 本地部署大模型怎么开始：新手先看硬件、模型和用途 | content/blog/local-llm-deployment-beginner.mdx |
-| public | 28 | 69 | none | none | local-llm-vram-not-enough-guide | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 | content/blog/local-llm-vram-not-enough-guide.mdx |
+| public, expansion | 28 | 69 | none | none | local-llm-vram-not-enough-guide | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 | content/blog/local-llm-vram-not-enough-guide.mdx |
 | public | 23 | 72 | none | none | make-vs-zapier-automation-checklist | Make 和 Zapier 自动化新手检查清单 | content/blog/make-vs-zapier-automation-checklist.mdx |
 | public | 20 | 74 | none | none | make-vs-zapier-automation | Make 和 Zapier 自动化怎么选 | content/blog/make-vs-zapier-automation.mdx |
 | public | 31 | 56 | none | none | manufacturing-ai-prompts-guide | 制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘 | content/blog/manufacturing-ai-prompts-guide.mdx |
@@ -464,7 +464,7 @@ This report is read-only. It checks titles, descriptions, slugs, and indexing bo
 | public | 26 | 110 | none | none | npm-command-not-found-fix | npm command not found 怎么解决 | content/blog/npm-command-not-found-fix.mdx |
 | public | 30 | 61 | none | none | ollama-api-web-app-integration | Ollama API 怎么接到网页应用：本地模型到前后端调用 | content/blog/ollama-api-web-app-integration.mdx |
 | public | 25 | 60 | none | none | ollama-local-model-deployment-guide | Ollama 本地部署大模型怎么开始：新手检查清单 | content/blog/ollama-local-model-deployment-guide.mdx |
-| public | 52 | 80 | none | primary keyword is not an exact title substring | open-webui-functions-pipelines-deployment-guide | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| public, expansion | 52 | 80 | none | primary keyword is not an exact title substring | open-webui-functions-pipelines-deployment-guide | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
 | public | 36 | 79 | none | primary keyword is not an exact title substring | open-webui-ollama-docker-guide | Open WebUI + Ollama 怎么部署：本地大模型网页聊天入门 | content/blog/open-webui-ollama-docker-guide.mdx |
 | public | 51 | 90 | none | primary keyword is not an exact title substring | openai-agents-sdk-beginner-guide | OpenAI Agents SDK 怎么入门：Tools、Handoffs 和 Tracing 先分清 | content/blog/openai-agents-sdk-beginner-guide.mdx |
 | public | 44 | 87 | none | primary keyword is not an exact title substring | openai-api-nextjs-route-handler-guide | OpenAI API 接入 Next.js 怎么做：Route Handler 新手清单 | content/blog/openai-api-nextjs-route-handler-guide.mdx |
@@ -558,10 +558,10 @@ This report is read-only. It checks titles, descriptions, slugs, and indexing bo
 | public | 27 | 54 | none | description may be thin for search snippets | agent-memory-design-guide | Agent 记忆怎么设计：短期记忆、长期记忆和用户偏好 | content/blog/agent-memory-design-guide.mdx |
 | public | 38 | 57 | none | primary keyword is not an exact title substring | agent-memory-postgres-schema-guide | Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则 | content/blog/agent-memory-postgres-schema-guide.mdx |
 | public | 29 | 58 | none | primary keyword is not an exact title substring | agent-tool-permission-safety-guide | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
-| public | 33 | 59 | none | primary keyword is not an exact title substring | ai-api-key-security-rotation-guide | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| public, expansion | 33 | 59 | none | primary keyword is not an exact title substring | ai-api-key-security-rotation-guide | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 | public | 19 | 49 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-assisted-vs-automated-delivery-checklist | AI 辅助交付和完全自动交付的检查清单 | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
 | public | 16 | 50 | none | description may be thin for search snippets | ai-assisted-vs-automated-delivery-mistakes | AI 辅助交付常见错误和解决步骤 | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx |
-| public | 37 | 54 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-automation-project-pricing-scope-guide | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| public, expansion | 37 | 54 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-automation-project-pricing-scope-guide | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
 | public | 18 | 47 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-beginner-project-fit-check-checklist | AI 新手接项目前的项目适配检查清单 | content/blog/ai-beginner-project-fit-check-checklist.mdx |
 | public | 16 | 61 | none | primary keyword is not an exact title substring | ai-beginner-project-fit-check-mistakes | AI 新手判断接项目时的常见错误 | content/blog/ai-beginner-project-fit-check-mistakes.mdx |
 | public | 17 | 45 | none | description may be thin for search snippets | ai-beginner-project-fit-check | AI 新手如何判断自己能不能接项目 | content/blog/ai-beginner-project-fit-check.mdx |
@@ -574,12 +574,12 @@ This report is read-only. It checks titles, descriptions, slugs, and indexing bo
 | public | 19 | 57 | none | primary keyword is not an exact title substring | ai-freelance-automation-compliance-risk-mistakes | AI 自动化项目常见合规错误和解决步骤 | content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx |
 | public | 19 | 57 | none | primary keyword is not an exact title substring | ai-freelance-common-misconceptions-mistakes | AI 工具实践误区的常见错误和解决步骤 | content/blog/ai-freelance-common-misconceptions-mistakes.mdx |
 | public | 23 | 53 | none | description may be thin for search snippets | ai-logo-design-beginner-guide | AI 做 Logo 怎么开始：新手先别急着商用 | content/blog/ai-logo-design-beginner-guide.mdx |
-| public | 29 | 52 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-model-selection-customer-service-guide | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| public, expansion, recommended, wave-1 | 29 | 52 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-model-selection-customer-service-guide | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
 | public | 16 | 54 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-output-unstable-risk-control-checklist | AI 输出不稳定风险控制检查清单 | content/blog/ai-output-unstable-risk-control-checklist.mdx |
 | public | 16 | 60 | none | primary keyword is not an exact title substring | ai-output-unstable-risk-control-mistakes | AI 输出不稳定风险控制常见错误 | content/blog/ai-output-unstable-risk-control-mistakes.mdx |
 | public | 15 | 62 | none | primary keyword is not an exact title substring | ai-output-unstable-risk-control | AI 输出不稳定怎么做风险控制 | content/blog/ai-output-unstable-risk-control.mdx |
 | public | 27 | 52 | none | description may be thin for search snippets | ai-prompt-framework-business-guide | AI 提示词怎么写才好用：全行业都能套的 5 段式框架 | content/blog/ai-prompt-framework-business-guide.mdx |
-| public | 28 | 51 | none | description may be thin for search snippets | ai-prompt-library-team-knowledge-base-guide | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
+| public, expansion | 28 | 51 | none | description may be thin for search snippets | ai-prompt-library-team-knowledge-base-guide | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
 | public | 23 | 52 | none | description may be thin for search snippets | ai-resume-cover-letter-guide | AI 写简历和求职信怎么用：别让内容变得不真实 | content/blog/ai-resume-cover-letter-guide.mdx |
 | public | 14 | 52 | none | description may be thin for search snippets<br>primary keyword is not an exact title substring | ai-small-project-practice-topics-checklist | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
 | public | 12 | 64 | none | primary keyword is not an exact title substring | ai-small-project-practice-topics-mistakes | AI 小项目练习常见错误 | content/blog/ai-small-project-practice-topics-mistakes.mdx |

@@ -25,6 +25,7 @@ type SourcePackItem = {
 };
 
 type PacketItem = {
+  alreadyPublished: boolean;
   approvalChecklist: string[];
   description: string;
   factCheckQueries: string[];
@@ -60,7 +61,7 @@ function main() {
   const sourceItems = new Map(sourcePack.items.map((item) => [item.file, item]));
   const waveItems = queue.items.filter((item) => item.approvalWave === wave);
   const items = waveItems.map((item) => toPacketItem(item, sourceItems.get(item.file)));
-  const unsafeItems = items.filter((item) => !item.readyForHumanReview);
+  const unsafeItems = items.filter((item) => !item.readyForHumanReview && !item.alreadyPublished);
   const payload = {
     generatedAt: new Date().toISOString(),
     guardrails: {
@@ -70,6 +71,8 @@ function main() {
       stopBefore: "Run the listed mark:review commands only after explicit human approval for each file.",
     },
     summary: {
+      alreadyPublished: items.filter((item) => item.alreadyPublished).length,
+      completedOrReady: items.filter((item) => item.readyForHumanReview || item.alreadyPublished).length,
       items: items.length,
       readyForHumanReview: items.filter((item) => item.readyForHumanReview).length,
       unsafeItems: unsafeItems.length,
@@ -95,6 +98,7 @@ function toPacketItem(queueItem: QueueItem, sourceItem: SourcePackItem | undefin
   const data = article.data;
   const content = article.content;
   const safeDraft = data.status === "draft" && data.noindex === true && data.humanReviewRequired === true;
+  const alreadyPublished = data.status === "published" && data.noindex === false;
   const internalLinks = (content.match(/\]\(\//g) || []).length;
   const readyForHumanReview = Boolean(
     sourceItem &&
@@ -108,6 +112,7 @@ function toPacketItem(queueItem: QueueItem, sourceItem: SourcePackItem | undefin
   );
 
   return {
+    alreadyPublished,
     approvalChecklist: sourceItem?.approvalChecklist || [],
     description: String(data.description || ""),
     factCheckQueries: sourceItem?.factCheckQueries || [],
@@ -171,11 +176,11 @@ function toMarkdown(payload: {
     "",
     "## Decision Table",
     "",
-    "| Ready | Score | Quality | Sources | Queries | Risk | Title | File |",
-    "| --- | --- | --- | --- | --- | --- | --- | --- |",
+    "| Already published | Ready | Score | Quality | Sources | Queries | Risk | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
     ...payload.items.map(
       (item) =>
-        `| ${item.readyForHumanReview} | ${item.priorityScore} | ${item.qualityScore} | ${item.officialSourceTargets.length} | ${item.factCheckQueries.length} | ${item.riskReviewChecklist.length} | ${item.title} | ${item.file} |`,
+        `| ${item.alreadyPublished} | ${item.readyForHumanReview} | ${item.priorityScore} | ${item.qualityScore} | ${item.officialSourceTargets.length} | ${item.factCheckQueries.length} | ${item.riskReviewChecklist.length} | ${item.title} | ${item.file} |`,
     ),
     "",
   ];
@@ -185,6 +190,7 @@ function toMarkdown(payload: {
       `## ${index + 1}. ${item.title}`,
       "",
       `- File: ${item.file}`,
+      `- Already published: ${item.alreadyPublished}`,
       `- Lane: ${item.lane}`,
       `- Search intent: ${item.searchIntent}`,
       `- Publish batch: ${item.publishBatch ?? ""}`,

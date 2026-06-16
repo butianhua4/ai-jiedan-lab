@@ -1,6 +1,6 @@
 # Autopilot Executive Brief
 
-Generated at: 2026-06-16T12:27:48.149Z
+Generated at: 2026-06-16T05:24:12.756Z
 
 This report is read-only. It compresses the current automation reports into the next human-gated execution priorities.
 
@@ -15,17 +15,17 @@ This report is read-only. It compresses the current automation reports into the 
 
 ## Summary
 
-- approvalBacklogItems: 0
+- approvalBacklogItems: 5
 - automationRunsPerDay: 4
 - boardActionItems: 5
-- broadClustersWithoutPublicCoverage: 0
+- broadClustersWithoutPublicCoverage: 8
 - currentPublishableNow: 0
 - forbiddenWorkflowCommands: 0
 - immediateApprovalItems: 3
 - immediateApprovalReadyItems: 3
 - publicArticles: 500
 - publishConfirmCommandsIncluded: 0
-- routeWarningItems: 3
+- routeWarningItems: 2
 - trafficDataAvailable: false
 - unsafeItems: 0
 
@@ -37,24 +37,23 @@ This report is read-only. It compresses the current automation reports into the 
 
 | Priority | Human gate | Title | File | Action | Reason |
 | ---: | --- | --- | --- | --- | --- |
-| 446 | explicit human approval required | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx | Human reviewer verifies sources, SEO warnings, internal link path, and risk language; stop before mark:review until approval. | Immediate Wave 1; projected public count after human approval is 503. |
-| 439 | explicit human approval required | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx | Human reviewer verifies sources, SEO warnings, internal link path, and risk language; stop before mark:review until approval. | Immediate Wave 1; projected public count after human approval is 503. |
-| 415 | explicit human approval required | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx | Human reviewer verifies sources, SEO warnings, internal link path, and risk language; stop before mark:review until approval. | Immediate Wave 1; projected public count after human approval is 503. |
+| 777 | explicit human approval required | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx | Human reviewer verifies sources, SEO warnings, internal link path, and risk language; stop before mark:review until approval. | Immediate Wave 1; projected public count after human approval is 18. |
+| 773 | explicit human approval required | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx | Human reviewer verifies sources, SEO warnings, internal link path, and risk language; stop before mark:review until approval. | Immediate Wave 1; projected public count after human approval is 18. |
+| 769 | explicit human approval required | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx | Human reviewer verifies sources, SEO warnings, internal link path, and risk language; stop before mark:review until approval. | Immediate Wave 1; projected public count after human approval is 18. |
 
 ## Route Warnings To Clear
 
 | Priority | Title | File | Warnings |
 | ---: | --- | --- | --- |
-| 441 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx | search query match warning exists |
-| 370 | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx | not yet matched in human approval clearance pack<br>no copydesk optimization brief matched<br>no freshness brief matched<br>search query match warning exists |
-| 369 | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx | not yet matched in human approval clearance pack<br>no copydesk optimization brief matched<br>no freshness brief matched<br>search query match warning exists |
+| 750 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx | not yet matched in human approval clearance pack |
+| 722 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx | not yet matched in human approval clearance pack<br>no copydesk optimization brief matched<br>search query match warning exists |
 
 ## Board Actions
 
 | Board | Publish confirm | Action | Key summary |
 | --- | --- | --- | --- |
-| Internal links | not-included | Use docs/internal-link-sprint-board.md to add one contextual public link per candidate during manual review. | actionItems=128; broadFirstCoverageItems=0; candidateItems=16; candidateItemsMissingPublicLinkSuggestion=0; candidateItemsWithPublicSuggestions=16; candidatesWithoutCurrentPublicLinks=10; expansionItems=15; items=16 |
-| Public refresh | not-included | Use docs/public-refresh-sprint-board.md to refresh existing public articles without claiming traffic. | actionItems=5154; cannibalizationItems=239; highPriorityItems=268; items=500; itemsPerWave=3; itemsReadyForPublicRefreshSprint=500; liveMissingFromSitemap=0; mojibakePublicItems=51 |
-| AI deployment | not-included | Use docs/ai-deployment-sprint-board.md to prioritize deployment, Agent, model-serving, and API tutorial candidates. | actionItems=88; agentItems=0; apiIntegrationItems=2; automationPlatformItems=0; deploymentPublicArticles=179; highPriorityItems=0; implementationModes=4; items=6 |
-| Memory/RAG | not-included | Use docs/memory-rag-sprint-board.md to prioritize RAG, knowledge base, vector search, memory, evaluation, and privacy lanes. | candidateItems=2; decisionChecks=39; deploymentPublicArticles=179; howToLanes=2; itemsPerWave=3; lanes=6; lanesWithCandidateFiles=2; privacyLanes=1 |
-| Popular prompts | not-included | Use docs/popular-prompt-sprint-board.md to prioritize high-demand prompt playbook lanes. | actionItems=90; bridgeItems=13; candidateFiles=21; highPriorityItems=5; industryBuckets=5; items=10; itemsPerWave=2; lanesReadyForPromptSprint=3 |
+| Internal links | not-included | Use docs/internal-link-sprint-board.md to add one contextual public link per candidate during manual review. | actionItems=176; broadFirstCoverageItems=8; candidateItems=22; candidateItemsMissingPublicLinkSuggestion=0; candidateItemsWithPublicSuggestions=22; candidatesWithoutCurrentPublicLinks=0; expansionItems=19; items=22 |
+| Public refresh | not-included | Use docs/public-refresh-sprint-board.md to refresh existing public articles without claiming traffic. | actionItems=181; cannibalizationItems=6; highPriorityItems=14; items=15; itemsPerWave=3; itemsReadyForPublicRefreshSprint=15; liveMissingFromSitemap=0; mojibakePublicItems=9 |
+| AI deployment | not-included | Use docs/ai-deployment-sprint-board.md to prioritize deployment, Agent, model-serving, and API tutorial candidates. | actionItems=147; agentItems=1; apiIntegrationItems=1; automationPlatformItems=1; deploymentPublicArticles=3; highPriorityItems=8; implementationModes=7; items=10 |
+| Memory/RAG | not-included | Use docs/memory-rag-sprint-board.md to prioritize RAG, knowledge base, vector search, memory, evaluation, and privacy lanes. | candidateItems=4; decisionChecks=39; deploymentPublicArticles=3; howToLanes=2; itemsPerWave=3; lanes=6; lanesWithCandidateFiles=2; privacyLanes=1 |
+| Popular prompts | not-included | Use docs/popular-prompt-sprint-board.md to prioritize high-demand prompt playbook lanes. | actionItems=90; bridgeItems=27; candidateFiles=21; highPriorityItems=10; industryBuckets=4; items=10; itemsPerWave=2; lanesReadyForPromptSprint=10 |

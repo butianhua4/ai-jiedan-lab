@@ -11,6 +11,7 @@ type CommandBoundary = {
 };
 
 type WaveApprovalItem = {
+  alreadyPublished?: boolean;
   approvalChecklist: string[];
   factCheckQueries: string[];
   file: string;
@@ -28,7 +29,7 @@ type WaveApprovalPacket = {
   generatedAt: string;
   guardrails: { autoMarkReview: boolean; autoPublish: boolean; stopBefore: string };
   items: WaveApprovalItem[];
-  summary: { items: number; readyForHumanReview: number; unsafeItems: number; wave: number };
+  summary: { alreadyPublished?: number; completedOrReady?: number; items: number; readyForHumanReview: number; unsafeItems: number; wave: number };
   wave: number;
 };
 
@@ -36,6 +37,7 @@ type WavePublishSimulation = {
   generatedAt: string;
   guardrails: { autoMarkReview: boolean; autoPublish: boolean; stopBeforeHumanApproval: boolean };
   items: Array<{
+    alreadyPublished?: boolean;
     blockers: string[];
     commands: {
       markReviewAfterHumanApproval: string;
@@ -175,6 +177,7 @@ type ApprovalQueueItem = {
     sourceNotes: boolean;
     status: string;
   };
+  alreadyPublished: boolean;
   blockers: string[];
   commandBoundary: CommandBoundary;
   currentStage: "draft-needs-human-approval" | "first-coverage-backlog";
@@ -228,9 +231,9 @@ function main() {
         ...item.officialSourceTargets.slice(0, 6).map((target) => `Verify official source before approval: ${target}.`),
       ],
       priorityScore: item.priorityScore,
-      projectedPublishableAfterHumanApproval: simulationByFile.get(item.file)?.projectedPublishableAfterHumanApproval === true,
+      projectedPublishableAfterHumanApproval: item.alreadyPublished ? false : simulationByFile.get(item.file)?.projectedPublishableAfterHumanApproval === true,
       publicImpact: `Immediate Wave ${wavePacket.wave}; projected public count after human approval is ${publishSimulation.summary.projectedPublicPublishedAfterWave}.`,
-      readyForHumanApproval: item.readyForHumanReview && item.safeDraft && (simulationByFile.get(item.file)?.readyForHumanApproval ?? false),
+      readyForHumanApproval: Boolean(item.alreadyPublished) || (item.readyForHumanReview && item.safeDraft && (simulationByFile.get(item.file)?.readyForHumanApproval ?? false)),
       simulationBlockers: simulationByFile.get(item.file)?.blockers || [],
       sourceDecisions: sourceDecisionsByFile.get(item.file) || [],
       seoWarnings: seoWarningsByFile.get(item.file) || [],
@@ -359,6 +362,7 @@ function toApprovalQueueItem(input: {
     sourceNotes: Boolean(article.data.sourceNotes),
     status: String(article.data.status || ""),
   };
+  const alreadyPublished = articleState.status === "published" && articleState.noindex === false;
   const commandBoundary = {
     ...input.commandBoundary,
     publishConfirm: "not-included" as const,
@@ -376,6 +380,7 @@ function toApprovalQueueItem(input: {
   const blockers = [...input.simulationBlockers];
   const unsafeReasons = unsafeReasonsFor({
     articleState,
+    alreadyPublished,
     blockers,
     commandBoundary,
     humanChecklist: input.humanChecklist,
@@ -385,6 +390,7 @@ function toApprovalQueueItem(input: {
 
   return {
     articleState,
+    alreadyPublished,
     blockers,
     commandBoundary,
     currentStage: input.currentStage,
@@ -395,7 +401,7 @@ function toApprovalQueueItem(input: {
     priorityScore: input.priorityScore,
     projectedPublishableAfterHumanApproval: input.projectedPublishableAfterHumanApproval,
     publicImpact: input.publicImpact,
-    readyForHumanApproval: input.readyForHumanApproval && unsafeReasons.length === 0,
+    readyForHumanApproval: (input.readyForHumanApproval || alreadyPublished) && unsafeReasons.length === 0,
     seoWarnings,
     sourceReplacementDecisions,
     title: input.title,
@@ -404,6 +410,7 @@ function toApprovalQueueItem(input: {
 }
 
 function unsafeReasonsFor(input: {
+  alreadyPublished: boolean;
   articleState: ApprovalQueueItem["articleState"];
   blockers: string[];
   commandBoundary: CommandBoundary;
@@ -412,10 +419,10 @@ function unsafeReasonsFor(input: {
   sourceDecisions: SourceReplacementDecisionPack["items"];
 }) {
   const reasons: string[] = [];
-  if (!input.readyForHumanApproval) reasons.push("upstream report does not mark item ready for human approval");
+  if (!input.readyForHumanApproval && !input.alreadyPublished) reasons.push("upstream report does not mark item ready for human approval");
   if (input.blockers.length > 0) reasons.push(`simulation blockers present: ${input.blockers.join("; ")}`);
-  if (input.articleState.status !== "draft") reasons.push(`article status is ${input.articleState.status}, expected draft before mark:review`);
-  if (input.articleState.noindex !== true) reasons.push("article must remain noindex=true before review");
+  if (!input.alreadyPublished && input.articleState.status !== "draft") reasons.push(`article status is ${input.articleState.status}, expected draft before mark:review`);
+  if (!input.alreadyPublished && input.articleState.noindex !== true) reasons.push("article must remain noindex=true before review");
   if (input.articleState.humanReviewRequired !== true) reasons.push("article must keep humanReviewRequired=true before review");
   if (!input.articleState.sourceNotes) reasons.push("article is missing sourceNotes");
   if (input.articleState.qualityScore < 100) reasons.push(`qualityScore ${input.articleState.qualityScore} below 100`);

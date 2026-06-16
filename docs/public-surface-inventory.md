@@ -1,6 +1,6 @@
 # Public Surface Inventory
 
-Generated at: 2026-06-16T12:28:09.970Z
+Generated at: 2026-06-16T12:51:10.452Z
 
 ## Guardrails
 
@@ -10,8 +10,8 @@ Generated at: 2026-06-16T12:28:09.970Z
 ## Summary
 
 - broadClusters: 8
-- broadClustersWithoutPublicCoverage: 0
-- broadReadyCandidateFiles: 7
+- broadClustersWithoutPublicCoverage: 8
+- broadReadyCandidateFiles: 33
 - liveArticlesChecked: 500
 - liveMissingFromSitemap: 0
 - livePublicCount: 500
@@ -45,21 +45,21 @@ Generated at: 2026-06-16T12:28:09.970Z
 | 新手教程 | 17 |
 | AI 部署 | 16 |
 | AI 工具 | 8 |
+| 工具对比 | 4 |
 | Claude Code 新手教程 | 4 |
 | Deployment | 4 |
 | Troubleshooting | 4 |
 | Upwork 新手教程 | 4 |
-| 工具对比 | 4 |
 | 报价指南 | 3 |
 | 新手路线 | 3 |
+| 客户沟通 | 2 |
+| 作品集 | 2 |
 | Proposal | 2 |
 | Upwork 新手 | 2 |
-| 作品集 | 2 |
-| 客户沟通 | 2 |
-| AI Agent | 1 |
-| AI 记忆 | 1 |
 | 部署教程 | 1 |
 | 项目报价 | 1 |
+| AI 记忆 | 1 |
+| AI Agent | 1 |
 
 ## Top Public Tags
 
@@ -82,7 +82,271 @@ Generated at: 2026-06-16T12:28:09.970Z
 
 | Category | Updated | Description | Tags | Title | URL |
 | --- | --- | --- | --- | --- | --- |
-| AI Agent | 2026-06-14 | 69 | 4 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | /blog/ai-agent-deployment-vercel-ai-sdk-guide |
+| 报错解决 | 2026-06-14 | 62 | 4 | API Key 无效或缺失怎么处理 | /blog/api-key-invalid-or-missing |
+| 报错解决 | 2026-06-14 | 59 | 4 | API Key 无效或缺失排查清单 | /blog/api-key-invalid-or-missing-checklist |
+| 报错解决 | 2026-06-14 | 62 | 4 | API Key 无效或缺失：使用前怎么判断是否适合 | /blog/api-key-invalid-or-missing-freelance-scope |
+| 报错解决 | 2026-06-14 | 60 | 4 | API Key 无效或缺失的常见错误和修复步骤 | /blog/api-key-invalid-or-missing-mistakes |
+| 报错解决 | 2026-06-02 | 102 | 4 | Codex 项目 npm install 报错怎么办：新手排查步骤 | /blog/codex-npm-install-error-beginner-fix |
+| 报错解决 | 2026-06-14 | 99 | 4 | dependency conflict 依赖冲突怎么处理 | /blog/dependency-conflict-fix |
+| 报错解决 | 2026-06-14 | 86 | 4 | dependency conflict 依赖冲突处理检查清单 | /blog/dependency-conflict-fix-checklist |
+| 报错解决 | 2026-06-14 | 60 | 4 | dependency conflict 依赖冲突使用前怎么判断是否适合 | /blog/dependency-conflict-fix-freelance-scope |
+| 报错解决 | 2026-06-14 | 92 | 4 | dependency conflict 常见错误和解决步骤 | /blog/dependency-conflict-fix-mistakes |
+| 报错解决 | 2026-06-14 | 84 | 4 | npm run dev 能跑但 build 失败怎么办 | /blog/dev-works-build-fails |
+| 报错解决 | 2026-06-14 | 76 | 4 | npm run dev 能跑但 build 失败检查清单 | /blog/dev-works-build-fails-checklist |
+| 报错解决 | 2026-06-14 | 68 | 4 | npm run dev 能跑但 build 失败使用前怎么判断是否适合 | /blog/dev-works-build-fails-freelance-scope |
+| 报错解决 | 2026-06-14 | 72 | 4 | npm run dev 能跑但 build 失败常见错误和解决步骤 | /blog/dev-works-build-fails-mistakes |
+| 报错解决 | 2026-06-14 | 72 | 4 | 环境变量 missing 怎么排查 | /blog/env-variable-missing-fix |
+| 报错解决 | 2026-06-14 | 68 | 4 | 环境变量 missing 排查检查清单 | /blog/env-variable-missing-fix-checklist |
+| 报错解决 | 2026-06-14 | 60 | 4 | 环境变量 missing 使用前怎么判断是否适合 | /blog/env-variable-missing-fix-freelance-scope |
+| 报错解决 | 2026-06-14 | 70 | 4 | 环境变量 missing 常见错误和解决步骤 | /blog/env-variable-missing-fix-mistakes |
+| 报错解决 | 2026-06-14 | 73 | 4 | ESLint error 要不要直接关闭 | /blog/eslint-error-should-not-disable |
+| 报错解决 | 2026-06-14 | 63 | 4 | ESLint error 处理检查清单 | /blog/eslint-error-should-not-disable-checklist |
+| 报错解决 | 2026-06-14 | 68 | 4 | ESLint error 使用前怎么判断是否适合 | /blog/eslint-error-should-not-disable-freelance-scope |
+| 报错解决 | 2026-06-14 | 84 | 4 | ESLint error 常见错误和解决步骤 | /blog/eslint-error-should-not-disable-mistakes |
+| 报错解决 | 2026-06-14 | 99 | 4 | failed to push some refs 怎么排查 | /blog/failed-to-push-some-refs-fix |
+| 报错解决 | 2026-06-14 | 81 | 4 | failed to push some refs 排查检查清单 | /blog/failed-to-push-some-refs-fix-checklist |
+| 报错解决 | 2026-06-14 | 76 | 4 | failed to push some refs 使用前怎么判断是否适合 | /blog/failed-to-push-some-refs-fix-freelance-scope |
+| 报错解决 | 2026-06-14 | 77 | 4 | failed to push some refs 常见错误和解决步骤 | /blog/failed-to-push-some-refs-fix-mistakes |
+| 报错解决 | 2026-06-14 | 91 | 4 | git authentication failed 怎么解决 | /blog/git-authentication-failed-fix |
+| 报错解决 | 2026-06-14 | 85 | 4 | git authentication failed 处理检查清单 | /blog/git-authentication-failed-fix-checklist |
+| 报错解决 | 2026-06-14 | 83 | 4 | git authentication failed 使用前怎么判断是否适合 | /blog/git-authentication-failed-fix-freelance-scope |
+| 报错解决 | 2026-06-14 | 91 | 4 | git authentication failed 常见错误和解决步骤 | /blog/git-authentication-failed-fix-mistakes |
+| 报错解决 | 2026-06-14 | 106 | 4 | GitHub Actions build 失败怎么看日志 | /blog/github-actions-build-log-debug |
+| 报错解决 | 2026-06-14 | 91 | 4 | GitHub Actions build 失败日志检查清单 | /blog/github-actions-build-log-debug-checklist |
+| 报错解决 | 2026-06-14 | 78 | 4 | GitHub Actions build 失败使用前怎么判断是否适合 | /blog/github-actions-build-log-debug-freelance-scope |
+| 报错解决 | 2026-06-14 | 89 | 4 | GitHub Actions build 失败常见错误和解决步骤 | /blog/github-actions-build-log-debug-mistakes |
+| 报错解决 | 2026-06-14 | 93 | 4 | module not found 报错怎么定位文件 | /blog/module-not-found-debug |
+| 报错解决 | 2026-06-14 | 76 | 4 | module not found 报错定位检查清单 | /blog/module-not-found-debug-checklist |
+| 报错解决 | 2026-06-14 | 72 | 4 | module not found 使用前怎么判断是否适合 | /blog/module-not-found-debug-freelance-scope |
+| 报错解决 | 2026-06-14 | 78 | 4 | module not found 常见错误和解决步骤 | /blog/module-not-found-debug-mistakes |
+| 报错解决 | 2026-06-14 | 92 | 5 | Next.js hydration error 怎么排查 | /blog/nextjs-hydration-error-debug |
+| 报错解决 | 2026-06-14 | 83 | 5 | Next.js hydration error 怎么排查：新手检查清单 | /blog/nextjs-hydration-error-debug-checklist |
+| 报错解决 | 2026-06-14 | 87 | 4 | Next.js hydration error 怎么排查：使用前怎么判断是否适合 | /blog/nextjs-hydration-error-debug-freelance-scope |
+| 报错解决 | 2026-06-14 | 79 | 4 | Next.js hydration error 怎么排查：常见错误和解决步骤 | /blog/nextjs-hydration-error-debug-mistakes |
+| 报错解决 | 2026-06-14 | 91 | 4 | Node 版本不匹配怎么排查 | /blog/node-version-mismatch-fix |
+| 报错解决 | 2026-06-14 | 87 | 4 | Node 版本不匹配排查检查清单 | /blog/node-version-mismatch-fix-checklist |
+| 报错解决 | 2026-06-14 | 58 | 4 | Node 版本不匹配使用前怎么判断是否适合 | /blog/node-version-mismatch-fix-freelance-scope |
+| 报错解决 | 2026-06-14 | 75 | 4 | Node 版本不匹配常见错误和解决步骤 | /blog/node-version-mismatch-fix-mistakes |
+| 报错解决 | 2026-06-14 | 110 | 4 | npm command not found 怎么解决 | /blog/npm-command-not-found-fix |
+| 报错解决 | 2026-06-14 | 80 | 4 | npm command not found 排查检查清单 | /blog/npm-command-not-found-fix-checklist |
+| 报错解决 | 2026-06-14 | 79 | 4 | npm command not found 使用前怎么判断是否适合 | /blog/npm-command-not-found-fix-freelance-scope |
+| 报错解决 | 2026-06-14 | 84 | 4 | npm command not found 常见错误和修正方法 | /blog/npm-command-not-found-fix-mistakes |
+| 报错解决 | 2026-06-14 | 83 | 4 | package lock 冲突怎么安全处理 | /blog/package-lock-conflict-fix |
+| 报错解决 | 2026-06-14 | 86 | 4 | package lock 冲突安全处理检查清单 | /blog/package-lock-conflict-fix-checklist |
+| 报错解决 | 2026-06-14 | 75 | 4 | package lock 冲突使用前怎么判断是否适合 | /blog/package-lock-conflict-fix-freelance-scope |
+| 报错解决 | 2026-06-14 | 84 | 4 | package lock 冲突常见错误和修正方法 | /blog/package-lock-conflict-fix-mistakes |
+| 报错解决 | 2026-06-14 | 94 | 4 | permission denied 报错新手怎么处理 | /blog/permission-denied-fix |
+| 报错解决 | 2026-06-14 | 73 | 4 | permission denied 报错新手怎么处理：新手检查清单 | /blog/permission-denied-fix-checklist |
+| 报错解决 | 2026-06-14 | 81 | 4 | permission denied 报错新手怎么处理：使用前怎么判断是否适合 | /blog/permission-denied-fix-freelance-scope |
+| 报错解决 | 2026-06-14 | 73 | 4 | permission denied 报错新手怎么处理：常见错误和解决步骤 | /blog/permission-denied-fix-mistakes |
+| 报错解决 | 2026-06-14 | 77 | 4 | port already in use 怎么释放端口 | /blog/port-already-in-use-fix |
+| 报错解决 | 2026-06-14 | 72 | 4 | port already in use 释放端口检查清单 | /blog/port-already-in-use-fix-checklist |
+| 报错解决 | 2026-06-14 | 79 | 4 | port already in use 使用前怎么判断是否适合 | /blog/port-already-in-use-fix-freelance-scope |
+| 报错解决 | 2026-06-14 | 76 | 4 | port already in use 常见错误和修正方法 | /blog/port-already-in-use-fix-mistakes |
+| 报价指南 | 2026-06-02 | 72 | 4 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | /blog/first-upwork-project-pricing-checklist |
+| 报价指南 | 2026-06-14 | 66 | 4 | 自由职业报价单模板怎么填写 | /blog/freelance-quote-template-fill |
+| 报价指南 | 2026-06-14 | 60 | 4 | 自由职业报价单填写检查清单 | /blog/freelance-quote-template-fill-checklist |
+| 部署教程 | 2026-06-02 | 87 | 4 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | /blog/vercel-env-variable-missing-beginner-guide |
+| 工具导航 | 2026-06-14 | 92 | 5 | Cloudflare 和 Namecheap 域名怎么选 | /blog/cloudflare-vs-namecheap-domain |
+| 工具导航 | 2026-06-14 | 74 | 5 | Cloudflare 和 Namecheap 域名选择检查清单 | /blog/cloudflare-vs-namecheap-domain-checklist |
+| 工具导航 | 2026-06-14 | 72 | 4 | Codex 和 Claude Code 新手怎么选 | /blog/codex-vs-claude-code-beginner |
+| 工具导航 | 2026-06-14 | 90 | 4 | Cursor 和 Codex 改网页有什么区别 | /blog/cursor-vs-codex-web-editing |
+| 工具导航 | 2026-06-14 | 67 | 4 | Cursor 和 Codex 改网页检查清单 | /blog/cursor-vs-codex-web-editing-checklist |
+| 工具导航 | 2026-06-14 | 94 | 4 | SEO 工具新手先用哪些免费功能 | /blog/free-seo-tools-beginner |
+| 工具导航 | 2026-06-14 | 90 | 4 | SEO 工具免费功能检查清单 | /blog/free-seo-tools-beginner-checklist |
+| 工具导航 | 2026-06-14 | 87 | 4 | 自由职业平台工具栈怎么搭配 | /blog/freelance-platform-tool-stack |
+| 工具导航 | 2026-06-14 | 72 | 4 | 自由职业平台工具栈检查清单 | /blog/freelance-platform-tool-stack-checklist |
+| 工具导航 | 2026-06-14 | 79 | 4 | GitHub 常用命令表新手怎么记 | /blog/github-command-cheatsheet-beginner |
+| 工具导航 | 2026-06-14 | 83 | 4 | GitHub 常用命令新手检查清单 | /blog/github-command-cheatsheet-beginner-checklist |
+| 工具导航 | 2026-06-14 | 70 | 4 | GitHub 和 Vercel 为什么适合新手建站 | /blog/github-vercel-beginner-site |
+| 工具导航 | 2026-06-14 | 74 | 4 | GitHub 和 Vercel 新手建站检查清单 | /blog/github-vercel-beginner-site-checklist |
+| 工具导航 | 2026-06-14 | 90 | 4 | Google Analytics 什么时候再接入 | /blog/google-analytics-when-to-add |
+| 工具导航 | 2026-06-14 | 78 | 4 | Google Analytics 接入前检查清单 | /blog/google-analytics-when-to-add-checklist |
+| 工具导航 | 2026-06-14 | 100 | 4 | Google Search Console 新站怎么用 | /blog/google-search-console-new-site |
+| 工具导航 | 2026-06-14 | 101 | 4 | Google Search Console 新站检查清单 | /blog/google-search-console-new-site-checklist |
+| 工具导航 | 2026-06-14 | 74 | 4 | Make 和 Zapier 自动化怎么选 | /blog/make-vs-zapier-automation |
+| 工具导航 | 2026-06-14 | 72 | 4 | Make 和 Zapier 自动化新手检查清单 | /blog/make-vs-zapier-automation-checklist |
+| 工具导航 | 2026-06-14 | 74 | 5 | Notion 管理项目流程怎么用 | /blog/notion-freelance-workflow |
+| 工具导航 | 2026-06-14 | 62 | 5 | Notion 管理项目流程怎么用：新手检查清单 | /blog/notion-freelance-workflow-checklist |
+| 工具导航 | 2026-06-14 | 80 | 5 | PayPal 和 Payoneer 哪个适合新手 | /blog/paypal-vs-payoneer-beginner |
+| 工具导航 | 2026-06-14 | 70 | 5 | PayPal 和 Payoneer 哪个适合新手：新手检查清单 | /blog/paypal-vs-payoneer-beginner-checklist |
+| 工具对比 | 2026-06-14 | 66 | 4 | Codex 和 Cursor 改网页怎么选 | /blog/codex-vs-cursor-web-editing |
+| 工具对比 | 2026-06-14 | 64 | 4 | Codex 和 Cursor 网页修改选择清单 | /blog/codex-vs-cursor-web-editing-checklist |
+| 工具对比 | 2026-06-14 | 65 | 4 | Codex 和 Cursor 网页修改项目能不能接 | /blog/codex-vs-cursor-web-editing-freelance-scope |
+| 工具对比 | 2026-06-14 | 79 | 4 | Codex 和 Cursor 改网页常见错误和修复顺序 | /blog/codex-vs-cursor-web-editing-mistakes |
+| 工具流程 | 2026-06-14 | 82 | 5 | ChatGPT、Codex 和 Claude 怎么分工做 AI 工具实践流程 | /blog/chatgpt-codex-claude-workflow |
+| 工具流程 | 2026-06-14 | 57 | 5 | ChatGPT、Codex 和 Claude 工作流检查清单 | /blog/chatgpt-codex-claude-workflow-checklist |
+| 工具流程 | 2026-06-14 | 72 | 4 | Claude Code 自动化为什么必须有人审 | /blog/claude-code-automation-human-review |
+| 工具流程 | 2026-06-14 | 60 | 4 | Claude Code 自动化人工审核检查清单 | /blog/claude-code-automation-human-review-checklist |
+| 工具流程 | 2026-06-14 | 63 | 4 | Claude Code 自动化项目前怎么判断能不能做 | /blog/claude-code-automation-human-review-freelance-scope |
+| 工具流程 | 2026-06-14 | 65 | 4 | Claude Code 自动化最容易忽略的人工审核错误 | /blog/claude-code-automation-human-review-mistakes |
+| 工具流程 | 2026-06-14 | 74 | 4 | Claude Code 新手最容易犯的错误 | /blog/claude-code-beginner-mistakes |
+| 工具流程 | 2026-06-14 | 59 | 4 | Claude Code 新手使用检查清单 | /blog/claude-code-beginner-mistakes-checklist |
+| 工具流程 | 2026-06-14 | 61 | 4 | Claude Code 项目前怎么判断范围 | /blog/claude-code-beginner-mistakes-freelance-scope |
+| 工具流程 | 2026-06-14 | 68 | 4 | Claude Code 新手常见错误和修正方法 | /blog/claude-code-beginner-mistakes-mistakes |
+| 工具流程 | 2026-06-14 | 71 | 4 | Claude Code 新手适合用在哪些项目场景 | /blog/claude-code-beginner-use-cases |
+| 工具流程 | 2026-06-14 | 60 | 4 | Claude Code 新手使用场景检查清单 | /blog/claude-code-beginner-use-cases-checklist |
+| 工具流程 | 2026-06-14 | 60 | 4 | Claude Code 新手项目练习前怎么判断使用场景 | /blog/claude-code-beginner-use-cases-freelance-scope |
+| 工具流程 | 2026-06-14 | 63 | 4 | Claude Code 新手选使用场景时的常见错误 | /blog/claude-code-beginner-use-cases-mistakes |
+| 工具流程 | 2026-06-14 | 74 | 4 | Claude Code 修 bug 的 prompt 怎么写 | /blog/claude-code-bug-prompt |
+| 工具流程 | 2026-06-14 | 67 | 4 | Claude Code Bug Prompt 检查清单 | /blog/claude-code-bug-prompt-checklist |
+| 工具流程 | 2026-06-14 | 73 | 4 | Claude Code Bug Prompt 项目前怎么判断范围 | /blog/claude-code-bug-prompt-freelance-scope |
+| 工具流程 | 2026-06-14 | 70 | 4 | Claude Code Bug Prompt 常见错误 | /blog/claude-code-bug-prompt-mistakes |
+| 工具流程 | 2026-06-14 | 66 | 4 | 用 Claude Code 项目前要问客户哪些问题 | /blog/claude-code-client-questions |
+| 工具流程 | 2026-06-14 | 62 | 4 | Claude Code 项目客户问题检查清单 | /blog/claude-code-client-questions-checklist |
+| 工具流程 | 2026-06-14 | 64 | 4 | Claude Code 项目前客户问题不清楚时怎么判断范围 | /blog/claude-code-client-questions-freelance-scope |
+| 工具流程 | 2026-06-14 | 60 | 4 | Claude Code 项目前问客户时的常见错误 | /blog/claude-code-client-questions-mistakes |
+| 工具流程 | 2026-06-14 | 72 | 4 | Claude Code 新手常用命令怎么整理成项目笔记 | /blog/claude-code-common-commands |
+| 工具流程 | 2026-06-14 | 63 | 4 | Claude Code 常用命令检查清单 | /blog/claude-code-common-commands-checklist |
+| 工具流程 | 2026-06-14 | 68 | 4 | Claude Code 常用命令哪些适合写进项目范围 | /blog/claude-code-common-commands-freelance-scope |
+| 工具流程 | 2026-06-14 | 61 | 4 | Claude Code 新手运行常用命令时的常见错误 | /blog/claude-code-common-commands-mistakes |
+| 工具流程 | 2026-06-14 | 70 | 4 | 用 Claude Code 项目后交付说明怎么写 | /blog/claude-code-delivery-note |
+| 工具流程 | 2026-06-14 | 62 | 4 | Claude Code 交付说明检查清单 | /blog/claude-code-delivery-note-checklist |
+| 工具流程 | 2026-06-14 | 70 | 4 | Claude Code 交付说明哪些内容适合写进项目范围 | /blog/claude-code-delivery-note-freelance-scope |
+| 工具流程 | 2026-06-14 | 63 | 4 | Claude Code 交付说明常见错误 | /blog/claude-code-delivery-note-mistakes |
+| 工具流程 | 2026-06-14 | 64 | 4 | 用 Claude Code 排查客户报错时怎么做才稳 | /blog/claude-code-error-debug |
+| 工具流程 | 2026-06-14 | 65 | 4 | Claude Code 错误排查检查清单 | /blog/claude-code-error-debug-checklist |
+| 工具流程 | 2026-06-14 | 69 | 4 | Claude Code 错误排查哪些适合写进项目范围 | /blog/claude-code-error-debug-freelance-scope |
+| 工具流程 | 2026-06-14 | 65 | 4 | Claude Code 排查客户报错时的常见错误 | /blog/claude-code-error-debug-mistakes |
+| 工具流程 | 2026-06-14 | 83 | 4 | 客户给 GitHub 文件时用 Claude Code 怎么限定范围 | /blog/claude-code-github-file-scope |
+| 工具流程 | 2026-06-14 | 69 | 4 | Claude Code GitHub 文件范围检查清单 | /blog/claude-code-github-file-scope-checklist |
+| 工具流程 | 2026-06-14 | 78 | 4 | Claude Code 看 GitHub 文件哪些适合写进项目范围 | /blog/claude-code-github-file-scope-freelance-scope |
+| 工具流程 | 2026-06-14 | 75 | 4 | Claude Code 看 GitHub 文件时的常见范围错误 | /blog/claude-code-github-file-scope-mistakes |
+| 工具流程 | 2026-06-14 | 72 | 4 | 安装 Claude Code 前新手要先确认哪些条件 | /blog/claude-code-install-prerequisites |
+| 工具流程 | 2026-06-14 | 67 | 4 | Claude Code 安装前置条件检查清单 | /blog/claude-code-install-prerequisites-checklist |
+| 工具流程 | 2026-06-14 | 73 | 4 | Claude Code 安装准备哪些适合写进项目范围 | /blog/claude-code-install-prerequisites-freelance-scope |
+| 工具流程 | 2026-06-14 | 76 | 4 | Claude Code 安装准备常见错误 | /blog/claude-code-install-prerequisites-mistakes |
+| 工具流程 | 2026-06-14 | 74 | 4 | Claude Code 新手适合先接哪些低风险小单 | /blog/claude-code-low-risk-freelance-jobs |
+| 工具流程 | 2026-06-14 | 63 | 4 | Claude Code 低风险项目检查清单 | /blog/claude-code-low-risk-freelance-jobs-checklist |
+| 工具流程 | 2026-06-14 | 78 | 4 | Claude Code 低风险小单哪些适合写进项目范围 | /blog/claude-code-low-risk-freelance-jobs-freelance-scope |
+| 工具流程 | 2026-06-14 | 68 | 4 | Claude Code 低风险项目常见错误 | /blog/claude-code-low-risk-freelance-jobs-mistakes |
+| 工具流程 | 2026-06-14 | 72 | 4 | 用 Claude Code 检查 Next.js 页面小问题怎么做 | /blog/claude-code-nextjs-page-check |
+| 工具流程 | 2026-06-14 | 66 | 4 | Claude Code Next.js 页面检查清单 | /blog/claude-code-nextjs-page-check-checklist |
+| 工具流程 | 2026-06-14 | 74 | 4 | Claude Code 检查 Next.js 页面哪些适合写进项目范围 | /blog/claude-code-nextjs-page-check-freelance-scope |
+| 工具流程 | 2026-06-14 | 72 | 4 | Claude Code 检查 Next.js 页面时的常见错误 | /blog/claude-code-nextjs-page-check-mistakes |
+| 工具流程 | 2026-06-14 | 71 | 4 | 用 Claude Code 审阅项目 Proposal 时要看什么 | /blog/claude-code-proposal-review |
+| 工具流程 | 2026-06-14 | 73 | 4 | Claude Code Proposal 审阅检查清单 | /blog/claude-code-proposal-review-checklist |
+| 工具流程 | 2026-06-14 | 78 | 4 | Claude Code Proposal 审阅哪些适合写进项目范围 | /blog/claude-code-proposal-review-freelance-scope |
+| 工具流程 | 2026-06-14 | 75 | 4 | Claude Code 审阅 Proposal 时的常见错误 | /blog/claude-code-proposal-review-mistakes |
+| 工具流程 | 2026-06-14 | 75 | 4 | 哪些小项目任务适合用 Claude Code 辅助项目 | /blog/claude-code-small-project-tasks |
+| 工具流程 | 2026-06-14 | 69 | 4 | Claude Code 小项目任务检查清单 | /blog/claude-code-small-project-tasks-checklist |
+| 工具流程 | 2026-06-14 | 73 | 4 | Claude Code 小项目任务哪些适合写进项目范围 | /blog/claude-code-small-project-tasks-freelance-scope |
+| 工具流程 | 2026-06-14 | 65 | 4 | Claude Code 小项目常见错误 | /blog/claude-code-small-project-tasks-mistakes |
+| 客户沟通 | 2026-06-14 | 81 | 4 | 英文客户回复模板怎么避免夸大 | /blog/english-client-reply-template-honest |
+| 客户沟通 | 2026-06-14 | 58 | 4 | 英文客户回复避免夸大检查清单 | /blog/english-client-reply-template-honest-checklist |
+| 模板和清单 | 2026-06-14 | 54 | 4 | AI 生成内容人工审核表怎么设计 | /blog/ai-content-human-review-template |
+| 模板和清单 | 2026-06-14 | 63 | 4 | AI 生成内容人工审核表检查清单 | /blog/ai-content-human-review-template-checklist |
+| 模板和清单 | 2026-06-14 | 55 | 4 | AI 工具学习每日执行表怎么安排 | /blog/ai-freelance-daily-planner |
+| 模板和清单 | 2026-06-14 | 55 | 4 | AI 工具学习每日执行表检查清单 | /blog/ai-freelance-daily-planner-checklist |
+| 模板和清单 | 2026-06-14 | 63 | 4 | AI 工具配置服务项目清单怎么写 | /blog/ai-tool-setup-service-checklist |
+| 模板和清单 | 2026-06-14 | 54 | 4 | AI 工具配置服务项目检查清单 | /blog/ai-tool-setup-service-checklist-checklist |
+| 模板和清单 | 2026-06-14 | 56 | 4 | Bug 修复交付说明模板怎么写 | /blog/bugfix-delivery-note-template |
+| 模板和清单 | 2026-06-14 | 54 | 4 | Bug 修复交付前检查清单 | /blog/bugfix-delivery-note-template-checklist |
+| 模板和清单 | 2026-06-14 | 57 | 4 | 客户验收清单怎么减少返工 | /blog/client-acceptance-checklist |
+| 模板和清单 | 2026-06-14 | 47 | 4 | 客户验收清单新手检查清单 | /blog/client-acceptance-checklist-checklist |
+| 模板和清单 | 2026-06-14 | 52 | 4 | 客户需求沟通表怎么问才清楚 | /blog/client-requirement-form-questions |
+| 模板和清单 | 2026-06-14 | 47 | 4 | 客户需求沟通表新手检查清单 | /blog/client-requirement-form-questions-checklist |
+| 模板和清单 | 2026-06-14 | 63 | 4 | Codex 项目启动检查表怎么用 | /blog/codex-project-start-checklist |
+| 模板和清单 | 2026-06-14 | 59 | 5 | Codex 项目启动检查表：新手清单 | /blog/codex-project-start-checklist-checklist |
+| 模板和清单 | 2026-06-14 | 70 | 4 | 作品集页面文案模板怎么写真实 | /blog/portfolio-page-copy-template |
+| 模板和清单 | 2026-06-14 | 63 | 4 | 作品集页面文案模板怎么写真实：新手检查清单 | /blog/portfolio-page-copy-template-checklist |
+| 模板和清单 | 2026-06-14 | 62 | 4 | 新手练习项目记录表怎么用 | /blog/practice-project-log-template |
+| 模板和清单 | 2026-06-14 | 61 | 4 | 新手练习项目记录表怎么用：新手检查清单 | /blog/practice-project-log-template-checklist |
+| 模板和清单 | 2026-06-14 | 58 | 4 | 项目前风险评估表怎么填 | /blog/pre-project-risk-assessment-template |
+| 模板和清单 | 2026-06-14 | 56 | 4 | 项目前风险评估表怎么填：新手检查清单 | /blog/pre-project-risk-assessment-template-checklist |
+| 模板和清单 | 2026-06-14 | 65 | 4 | 项目交付检查清单应该包含什么 | /blog/project-delivery-checklist-items |
+| 模板和清单 | 2026-06-14 | 56 | 4 | 项目交付检查清单应该包含什么：新手检查清单 | /blog/project-delivery-checklist-items-checklist |
+| 模板和清单 | 2026-06-14 | 58 | 4 | 项目复盘模板怎么记录问题 | /blog/project-retrospective-template |
+| 模板和清单 | 2026-06-14 | 58 | 4 | 项目复盘模板怎么记录问题：新手检查清单 | /blog/project-retrospective-template-checklist |
+| 模板和清单 | 2026-06-14 | 60 | 4 | 报价邮件模板怎么表达不确定范围 | /blog/quote-email-uncertain-scope |
+| 模板和清单 | 2026-06-14 | 53 | 4 | 报价邮件模板怎么表达不确定范围：新手检查清单 | /blog/quote-email-uncertain-scope-checklist |
+| 模板和清单 | 2026-06-14 | 56 | 4 | 服务咨询表单问题怎么设计 | /blog/service-inquiry-form-questions |
+| 模板和清单 | 2026-06-14 | 60 | 4 | 服务咨询表单问题怎么设计：新手检查清单 | /blog/service-inquiry-form-questions-checklist |
+| 模板和清单 | 2026-06-14 | 60 | 4 | 小网站上线检查 SOP 怎么写 | /blog/small-site-launch-sop |
+| 模板和清单 | 2026-06-14 | 52 | 4 | 小网站上线检查 SOP 怎么写：新手检查清单 | /blog/small-site-launch-sop-checklist |
+| 收款工具 | 2026-06-14 | 66 | 4 | 广告收入要等到什么时候再接 | /blog/ads-income-when-to-start |
+| 收款工具 | 2026-06-14 | 63 | 4 | 广告收入要等到什么时候再接：新手检查清单 | /blog/ads-income-when-to-start-checklist |
+| 收款工具 | 2026-06-14 | 52 | 4 | 联盟链接收入和服务收入有什么区别 | /blog/affiliate-vs-service-income |
+| 收款工具 | 2026-06-14 | 69 | 4 | 联盟链接收入和服务收入有什么区别：新手检查清单 | /blog/affiliate-vs-service-income-checklist |
+| 收款工具 | 2026-06-14 | 64 | 4 | 银行卡绑定收款平台要注意什么 | /blog/bank-card-payment-platform-risk |
+| 收款工具 | 2026-06-14 | 56 | 4 | 银行卡绑定收款平台要注意什么：新手检查清单 | /blog/bank-card-payment-platform-risk-checklist |
+| 收款工具 | 2026-06-14 | 102 | 4 | 数字模板退款规则怎么写更清楚 | /blog/digital-template-refund-policy |
+| 收款工具 | 2026-06-14 | 74 | 4 | 数字模板退款规则检查清单 | /blog/digital-template-refund-policy-checklist |
+| 收款工具 | 2026-06-14 | 77 | 4 | 自由职业第一笔收款前要确认什么 | /blog/first-freelance-payment-check |
+| 收款工具 | 2026-06-14 | 75 | 4 | 自由职业第一笔收款检查清单 | /blog/first-freelance-payment-check-checklist |
+| 收款工具 | 2026-06-14 | 87 | 4 | Gumroad 卖模板前要准备什么 | /blog/gumroad-template-selling-prep |
+| 收款工具 | 2026-06-14 | 75 | 4 | Gumroad 卖模板前检查清单 | /blog/gumroad-template-selling-prep-checklist |
+| 收款工具 | 2026-06-14 | 68 | 4 | 海外收款手续费怎么估算 | /blog/international-payment-fee-estimate |
+| 收款工具 | 2026-06-14 | 55 | 4 | 海外收款手续费怎么估算：新手检查清单 | /blog/international-payment-fee-estimate-checklist |
+| 收款工具 | 2026-06-14 | 88 | 4 | Lemon Squeezy 适合数字产品吗 | /blog/lemon-squeezy-digital-products |
+| 收款工具 | 2026-06-14 | 76 | 4 | Lemon Squeezy 数字产品检查清单 | /blog/lemon-squeezy-digital-products-checklist |
+| 收款工具 | 2026-06-14 | 80 | 5 | Paddle 和 Stripe 有什么区别 | /blog/paddle-vs-stripe-beginner |
+| 收款工具 | 2026-06-14 | 67 | 5 | Paddle 和 Stripe 有什么区别：新手检查清单 | /blog/paddle-vs-stripe-beginner-checklist |
+| 收款工具 | 2026-06-14 | 59 | 4 | 收款账户资料不一致有什么风险 | /blog/payment-account-info-mismatch-risk |
+| 收款工具 | 2026-06-14 | 54 | 4 | 收款账户资料不一致风险：新手检查清单 | /blog/payment-account-info-mismatch-risk-checklist |
+| 收款工具 | 2026-06-14 | 61 | 4 | 收款页面需要写哪些免责声明 | /blog/payment-page-disclaimer |
+| 收款工具 | 2026-06-14 | 60 | 4 | 收款页面免责声明：新手检查清单 | /blog/payment-page-disclaimer-checklist |
+| 收款工具 | 2026-06-14 | 76 | 5 | Payoneer 适合新手自由职业收款吗 | /blog/payoneer-freelancer-beginner |
+| 收款工具 | 2026-06-14 | 63 | 5 | Payoneer 适合新手自由职业收款吗：新手检查清单 | /blog/payoneer-freelancer-beginner-checklist |
+| 收款工具 | 2026-06-02 | 82 | 4 | Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看 | /blog/payoneer-wise-paypal-beginner-comparison |
+| 收款工具 | 2026-06-14 | 83 | 5 | Payoneer Wise PayPal 怎么选择 | /blog/payoneer-wise-paypal-choose |
+| 收款工具 | 2026-06-14 | 75 | 5 | Payoneer Wise PayPal 怎么选择：新手检查清单 | /blog/payoneer-wise-paypal-choose-checklist |
+| 收款工具 | 2026-06-14 | 74 | 5 | PayPal 收款有哪些常见限制 | /blog/paypal-freelancer-limits |
+| 收款工具 | 2026-06-14 | 60 | 5 | PayPal 收款有哪些常见限制：新手检查清单 | /blog/paypal-freelancer-limits-checklist |
+| 收款工具 | 2026-06-14 | 59 | 4 | 平台内收款和直接收款怎么区分 | /blog/platform-payment-vs-direct-payment |
+| 收款工具 | 2026-06-14 | 60 | 4 | 平台内收款和直接收款：新手检查清单 | /blog/platform-payment-vs-direct-payment-checklist |
+| 收款工具 | 2026-06-14 | 65 | 4 | 人工服务先用什么方式收款更稳妥 | /blog/service-payment-method-beginner |
+| 收款工具 | 2026-06-14 | 55 | 4 | 人工服务先用什么方式收款更稳妥：新手检查清单 | /blog/service-payment-method-beginner-checklist |
+| 收款工具 | 2026-06-14 | 77 | 4 | Stripe 适合卖模板还是服务 | /blog/stripe-templates-vs-services |
+| 收款工具 | 2026-06-14 | 81 | 4 | Stripe 适合卖模板还是服务：新手检查清单 | /blog/stripe-templates-vs-services-checklist |
+| 收款工具 | 2026-06-14 | 54 | 4 | 订阅支付失败怎么和客户沟通：新手检查清单 | /blog/subscription-payment-failed-message-checklist |
+| 项目报价 | 2026-06-14 | 54 | 4 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | /blog/ai-automation-project-pricing-scope-guide |
+| 新手教程 | 2026-06-14 | 72 | 4 | 新手如何记录每天的项目练习 | /blog/daily-ai-freelance-practice-log |
+| 新手教程 | 2026-06-14 | 66 | 4 | 每天项目练习记录检查清单 | /blog/daily-ai-freelance-practice-log-checklist |
+| 新手教程 | 2026-06-14 | 66 | 4 | 每天项目练习记录常见错误和解决步骤 | /blog/daily-ai-freelance-practice-log-mistakes |
+| 新手教程 | 2026-06-14 | 85 | 4 | 不会写代码怎么交付一个小网站 | /blog/deliver-small-website-with-ai-no-code |
+| 新手教程 | 2026-06-14 | 67 | 4 | 小网站交付检查清单 | /blog/deliver-small-website-with-ai-no-code-checklist |
+| 新手教程 | 2026-06-14 | 70 | 4 | 小网站交付常见错误和解决步骤 | /blog/deliver-small-website-with-ai-no-code-mistakes |
+| 新手教程 | 2026-06-14 | 77 | 4 | 第一个作品集案例怎么做才真实 | /blog/first-portfolio-case-realistic |
+| 新手教程 | 2026-06-14 | 59 | 4 | 第一个作品集案例真实性检查清单 | /blog/first-portfolio-case-realistic-checklist |
+| 新手教程 | 2026-06-14 | 70 | 4 | 第一个作品集案例常见错误和修正方法 | /blog/first-portfolio-case-realistic-mistakes |
+| 新手教程 | 2026-06-14 | 73 | 4 | 自由职业新手怎么和客户确认范围 | /blog/freelance-beginner-scope-confirmation |
+| 新手教程 | 2026-06-14 | 61 | 4 | 自由职业范围确认检查清单 | /blog/freelance-beginner-scope-confirmation-checklist |
+| 新手教程 | 2026-06-14 | 66 | 4 | 自由职业范围确认常见错误和解决步骤 | /blog/freelance-beginner-scope-confirmation-mistakes |
+| 新手教程 | 2026-06-14 | 75 | 4 | 自由职业每周复盘模板怎么用 | /blog/freelance-weekly-review-template |
+| 新手教程 | 2026-06-14 | 52 | 4 | 自由职业每周复盘检查清单 | /blog/freelance-weekly-review-template-checklist |
+| 新手教程 | 2026-06-14 | 75 | 4 | 没有客户时怎么做练习项目 | /blog/practice-projects-before-clients |
+| 新手教程 | 2026-06-14 | 57 | 4 | 没有客户时练习项目检查清单 | /blog/practice-projects-before-clients-checklist |
+| 新手教程 | 2026-06-14 | 62 | 4 | 没有客户时做练习项目的常见错误 | /blog/practice-projects-before-clients-mistakes |
+| 新手路线 | 2026-06-14 | 56 | 4 | 第一次接 AI 小单前要准备什么 | /blog/before-first-ai-freelance-job |
+| 新手路线 | 2026-06-14 | 55 | 4 | 第一次接 AI 小单前检查清单 | /blog/before-first-ai-freelance-job-checklist |
+| 新手路线 | 2026-06-14 | 59 | 4 | 第一次接 AI 小单前最容易犯的错误 | /blog/before-first-ai-freelance-job-mistakes |
+| 作品集 | 2026-06-14 | 63 | 4 | Canva 作品集封面怎么做更适合 AI 工具新手 | /blog/canva-portfolio-cover-tips |
+| 作品集 | 2026-06-14 | 61 | 4 | Canva 作品集封面发布前检查清单 | /blog/canva-portfolio-cover-tips-checklist |
+| AI 部署 | 2026-06-14 | 59 | 4 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | /blog/ai-api-key-security-rotation-guide |
+| AI 部署 | 2026-06-14 | 52 | 4 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | /blog/ai-model-selection-customer-service-guide |
+| AI 部署 | 2026-06-14 | 74 | 4 | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | /blog/claude-api-rate-limit-debug-guide |
+| AI 部署 | 2026-06-14 | 55 | 4 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | /blog/dify-workflow-error-handling-guide |
+| AI 部署 | 2026-06-14 | 64 | 4 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | /blog/dify-workflow-vs-agent-guide |
+| AI 部署 | 2026-06-14 | 57 | 4 | 企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管 | /blog/enterprise-im-ai-agent-integration-guide |
+| AI 部署 | 2026-06-14 | 57 | 4 | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | /blog/gemini-api-rate-limit-debug-guide |
+| AI 部署 | 2026-06-14 | 56 | 4 | 大模型 API 限流和重试怎么做：429、队列、退避和降级方案 | /blog/llm-api-rate-limit-retry-guide |
+| AI 部署 | 2026-06-14 | 54 | 4 | 大模型成本监控怎么做：按用户、功能、模型和项目拆账 | /blog/llm-cost-monitoring-dashboard-guide |
+| AI 部署 | 2026-06-14 | 65 | 4 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | /blog/llm-deployment-huggingface-inference-endpoints-guide |
+| AI 部署 | 2026-06-14 | 69 | 4 | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 | /blog/local-llm-vram-not-enough-guide |
+| AI 部署 | 2026-06-14 | 61 | 4 | 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 | /blog/multi-model-router-fallback-guide |
+| AI 部署 | 2026-06-14 | 59 | 4 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | /blog/n8n-ai-agent-rag-memory-guide |
+| AI 部署 | 2026-06-14 | 63 | 4 | n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试 | /blog/n8n-ai-agent-webhook-production-guide |
+| AI 部署 | 2026-06-14 | 80 | 4 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | /blog/open-webui-functions-pipelines-deployment-guide |
+| AI 部署 | 2026-06-14 | 61 | 4 | OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制 | /blog/openai-batch-api-cost-guide |
+| AI 工具 | 2026-06-14 | 53 | 4 | AI 做 Logo 怎么开始：新手先别急着商用 | /blog/ai-logo-design-beginner-guide |
+| AI 工具 | 2026-06-14 | 56 | 4 | AI 做 PPT 怎么开始：新手从大纲到成稿的流程 | /blog/ai-ppt-beginner-guide |
+| AI 工具 | 2026-06-14 | 52 | 4 | AI 写简历和求职信怎么用：别让内容变得不真实 | /blog/ai-resume-cover-letter-guide |
+| AI 工具 | 2026-06-14 | 54 | 4 | AI 工具推荐怎么选：新手别一开始买太多 | /blog/ai-tools-recommendation-beginner |
+| AI 工具 | 2026-06-14 | 50 | 4 | AI 做视频怎么开始：脚本、配音、画面和发布检查 | /blog/ai-video-tools-beginner-guide |
+| AI 工具 | 2026-06-14 | 54 | 4 | AI 做网站怎么开始：新手从页面需求到上线检查 | /blog/ai-website-builder-beginner-guide |
+| AI 工具 | 2026-06-14 | 61 | 4 | ChatGPT 怎么用：新手最常见的 7 个真实场景 | /blog/chatgpt-how-to-use-beginner-guide |
+| AI 工具 | 2026-06-14 | 56 | 4 | ChatGPT 提示词怎么写：新手可复制的 5 段式模板 | /blog/chatgpt-prompt-template-beginner |
 | AI 基建 | 2026-06-14 | 55 | 4 | Agent 部署怎么做：从聊天助手到可上线工作流 | /blog/agent-deployment-beginner-guide |
 | AI 基建 | 2026-06-14 | 53 | 4 | Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认 | /blog/agent-human-review-loop-guide |
 | AI 基建 | 2026-06-14 | 54 | 4 | Agent 记忆怎么设计：短期记忆、长期记忆和用户偏好 | /blog/agent-memory-design-guide |
@@ -154,14 +418,7 @@ Generated at: 2026-06-16T12:28:09.970Z
 | AI 基建 | 2026-06-14 | 95 | 4 | Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门 | /blog/ray-serve-llm-deployment-guide |
 | AI 基建 | 2026-06-14 | 90 | 4 | Replicate API 怎么做 AI Demo：模型调用、部署和费用边界 | /blog/replicate-api-ai-demo-guide |
 | AI 基建 | 2026-06-14 | 85 | 4 | RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界 | /blog/runpod-serverless-llm-deployment-guide |
-| AI 工具 | 2026-06-14 | 53 | 4 | AI 做 Logo 怎么开始：新手先别急着商用 | /blog/ai-logo-design-beginner-guide |
-| AI 工具 | 2026-06-14 | 56 | 4 | AI 做 PPT 怎么开始：新手从大纲到成稿的流程 | /blog/ai-ppt-beginner-guide |
-| AI 工具 | 2026-06-14 | 52 | 4 | AI 写简历和求职信怎么用：别让内容变得不真实 | /blog/ai-resume-cover-letter-guide |
-| AI 工具 | 2026-06-14 | 54 | 4 | AI 工具推荐怎么选：新手别一开始买太多 | /blog/ai-tools-recommendation-beginner |
-| AI 工具 | 2026-06-14 | 50 | 4 | AI 做视频怎么开始：脚本、配音、画面和发布检查 | /blog/ai-video-tools-beginner-guide |
-| AI 工具 | 2026-06-14 | 54 | 4 | AI 做网站怎么开始：新手从页面需求到上线检查 | /blog/ai-website-builder-beginner-guide |
-| AI 工具 | 2026-06-14 | 61 | 4 | ChatGPT 怎么用：新手最常见的 7 个真实场景 | /blog/chatgpt-how-to-use-beginner-guide |
-| AI 工具 | 2026-06-14 | 56 | 4 | ChatGPT 提示词怎么写：新手可复制的 5 段式模板 | /blog/chatgpt-prompt-template-beginner |
+| AI 记忆 | 2026-06-14 | 60 | 4 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | /blog/ai-agent-memory-rag-design-guide |
 | AI 提示词 | 2026-06-14 | 52 | 4 | AI 提示词怎么写才好用：全行业都能套的 5 段式框架 | /blog/ai-prompt-framework-business-guide |
 | AI 提示词 | 2026-06-14 | 51 | 4 | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | /blog/ai-prompt-library-team-knowledge-base-guide |
 | AI 提示词 | 2026-06-14 | 56 | 4 | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | /blog/customer-service-ai-prompts-guide |
@@ -221,23 +478,7 @@ Generated at: 2026-06-16T12:28:09.970Z
 | AI 自由职业路线 | 2026-06-14 | 63 | 4 | 不会编程怎么开始 AI 项目练习 | /blog/no-code-ai-freelance-start |
 | AI 自由职业路线 | 2026-06-14 | 60 | 4 | 不会编程开始 AI 项目练习：新手检查清单 | /blog/no-code-ai-freelance-start-checklist |
 | AI 自由职业路线 | 2026-06-14 | 60 | 4 | 不会编程开始 AI 项目练习：常见错误和解决步骤 | /blog/no-code-ai-freelance-start-mistakes |
-| AI 记忆 | 2026-06-14 | 60 | 4 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | /blog/ai-agent-memory-rag-design-guide |
-| AI 部署 | 2026-06-14 | 59 | 4 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | /blog/ai-api-key-security-rotation-guide |
-| AI 部署 | 2026-06-14 | 52 | 4 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | /blog/ai-model-selection-customer-service-guide |
-| AI 部署 | 2026-06-14 | 74 | 4 | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | /blog/claude-api-rate-limit-debug-guide |
-| AI 部署 | 2026-06-14 | 55 | 4 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | /blog/dify-workflow-error-handling-guide |
-| AI 部署 | 2026-06-14 | 64 | 4 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | /blog/dify-workflow-vs-agent-guide |
-| AI 部署 | 2026-06-14 | 57 | 4 | 企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管 | /blog/enterprise-im-ai-agent-integration-guide |
-| AI 部署 | 2026-06-14 | 57 | 4 | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | /blog/gemini-api-rate-limit-debug-guide |
-| AI 部署 | 2026-06-14 | 56 | 4 | 大模型 API 限流和重试怎么做：429、队列、退避和降级方案 | /blog/llm-api-rate-limit-retry-guide |
-| AI 部署 | 2026-06-14 | 54 | 4 | 大模型成本监控怎么做：按用户、功能、模型和项目拆账 | /blog/llm-cost-monitoring-dashboard-guide |
-| AI 部署 | 2026-06-14 | 65 | 4 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | /blog/llm-deployment-huggingface-inference-endpoints-guide |
-| AI 部署 | 2026-06-14 | 69 | 4 | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 | /blog/local-llm-vram-not-enough-guide |
-| AI 部署 | 2026-06-14 | 61 | 4 | 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 | /blog/multi-model-router-fallback-guide |
-| AI 部署 | 2026-06-14 | 59 | 4 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | /blog/n8n-ai-agent-rag-memory-guide |
-| AI 部署 | 2026-06-14 | 63 | 4 | n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试 | /blog/n8n-ai-agent-webhook-production-guide |
-| AI 部署 | 2026-06-14 | 80 | 4 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | /blog/open-webui-functions-pipelines-deployment-guide |
-| AI 部署 | 2026-06-14 | 61 | 4 | OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制 | /blog/openai-batch-api-cost-guide |
+| AI Agent | 2026-06-14 | 69 | 4 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | /blog/ai-agent-deployment-vercel-ai-sdk-guide |
 | Claude Code 新手教程 | 2026-06-14 | 71 | 4 | Claude Code 和 Codex 哪个适合网页修改 | /blog/claude-code-vs-codex-web-editing |
 | Claude Code 新手教程 | 2026-06-14 | 48 | 4 | Claude Code 和 Codex 网页修改新手检查清单 | /blog/claude-code-vs-codex-web-editing-checklist |
 | Claude Code 新手教程 | 2026-06-14 | 69 | 4 | Claude Code 和 Codex 网页修改使用前怎么判断是否适合 | /blog/claude-code-vs-codex-web-editing-freelance-scope |
@@ -341,263 +582,30 @@ Generated at: 2026-06-16T12:28:09.970Z
 | Upwork 新手教程 | 2026-06-14 | 67 | 4 | Upwork 任务风险检查清单 | /blog/codex-upwork-job-risk-check-checklist |
 | Upwork 新手教程 | 2026-06-14 | 60 | 4 | Upwork 筛单风险判断能不能接 | /blog/codex-upwork-job-risk-check-freelance-scope |
 | Upwork 新手教程 | 2026-06-14 | 73 | 4 | Upwork 任务风险判断常见错误和修复顺序 | /blog/codex-upwork-job-risk-check-mistakes |
-| 作品集 | 2026-06-14 | 63 | 4 | Canva 作品集封面怎么做更适合 AI 工具新手 | /blog/canva-portfolio-cover-tips |
-| 作品集 | 2026-06-14 | 61 | 4 | Canva 作品集封面发布前检查清单 | /blog/canva-portfolio-cover-tips-checklist |
-| 客户沟通 | 2026-06-14 | 81 | 4 | 英文客户回复模板怎么避免夸大 | /blog/english-client-reply-template-honest |
-| 客户沟通 | 2026-06-14 | 58 | 4 | 英文客户回复避免夸大检查清单 | /blog/english-client-reply-template-honest-checklist |
-| 工具对比 | 2026-06-14 | 66 | 4 | Codex 和 Cursor 改网页怎么选 | /blog/codex-vs-cursor-web-editing |
-| 工具对比 | 2026-06-14 | 64 | 4 | Codex 和 Cursor 网页修改选择清单 | /blog/codex-vs-cursor-web-editing-checklist |
-| 工具对比 | 2026-06-14 | 65 | 4 | Codex 和 Cursor 网页修改项目能不能接 | /blog/codex-vs-cursor-web-editing-freelance-scope |
-| 工具对比 | 2026-06-14 | 79 | 4 | Codex 和 Cursor 改网页常见错误和修复顺序 | /blog/codex-vs-cursor-web-editing-mistakes |
-| 工具导航 | 2026-06-14 | 92 | 5 | Cloudflare 和 Namecheap 域名怎么选 | /blog/cloudflare-vs-namecheap-domain |
-| 工具导航 | 2026-06-14 | 74 | 5 | Cloudflare 和 Namecheap 域名选择检查清单 | /blog/cloudflare-vs-namecheap-domain-checklist |
-| 工具导航 | 2026-06-14 | 72 | 4 | Codex 和 Claude Code 新手怎么选 | /blog/codex-vs-claude-code-beginner |
-| 工具导航 | 2026-06-14 | 90 | 4 | Cursor 和 Codex 改网页有什么区别 | /blog/cursor-vs-codex-web-editing |
-| 工具导航 | 2026-06-14 | 67 | 4 | Cursor 和 Codex 改网页检查清单 | /blog/cursor-vs-codex-web-editing-checklist |
-| 工具导航 | 2026-06-14 | 94 | 4 | SEO 工具新手先用哪些免费功能 | /blog/free-seo-tools-beginner |
-| 工具导航 | 2026-06-14 | 90 | 4 | SEO 工具免费功能检查清单 | /blog/free-seo-tools-beginner-checklist |
-| 工具导航 | 2026-06-14 | 87 | 4 | 自由职业平台工具栈怎么搭配 | /blog/freelance-platform-tool-stack |
-| 工具导航 | 2026-06-14 | 72 | 4 | 自由职业平台工具栈检查清单 | /blog/freelance-platform-tool-stack-checklist |
-| 工具导航 | 2026-06-14 | 79 | 4 | GitHub 常用命令表新手怎么记 | /blog/github-command-cheatsheet-beginner |
-| 工具导航 | 2026-06-14 | 83 | 4 | GitHub 常用命令新手检查清单 | /blog/github-command-cheatsheet-beginner-checklist |
-| 工具导航 | 2026-06-14 | 70 | 4 | GitHub 和 Vercel 为什么适合新手建站 | /blog/github-vercel-beginner-site |
-| 工具导航 | 2026-06-14 | 74 | 4 | GitHub 和 Vercel 新手建站检查清单 | /blog/github-vercel-beginner-site-checklist |
-| 工具导航 | 2026-06-14 | 90 | 4 | Google Analytics 什么时候再接入 | /blog/google-analytics-when-to-add |
-| 工具导航 | 2026-06-14 | 78 | 4 | Google Analytics 接入前检查清单 | /blog/google-analytics-when-to-add-checklist |
-| 工具导航 | 2026-06-14 | 100 | 4 | Google Search Console 新站怎么用 | /blog/google-search-console-new-site |
-| 工具导航 | 2026-06-14 | 101 | 4 | Google Search Console 新站检查清单 | /blog/google-search-console-new-site-checklist |
-| 工具导航 | 2026-06-14 | 74 | 4 | Make 和 Zapier 自动化怎么选 | /blog/make-vs-zapier-automation |
-| 工具导航 | 2026-06-14 | 72 | 4 | Make 和 Zapier 自动化新手检查清单 | /blog/make-vs-zapier-automation-checklist |
-| 工具导航 | 2026-06-14 | 74 | 5 | Notion 管理项目流程怎么用 | /blog/notion-freelance-workflow |
-| 工具导航 | 2026-06-14 | 62 | 5 | Notion 管理项目流程怎么用：新手检查清单 | /blog/notion-freelance-workflow-checklist |
-| 工具导航 | 2026-06-14 | 80 | 5 | PayPal 和 Payoneer 哪个适合新手 | /blog/paypal-vs-payoneer-beginner |
-| 工具导航 | 2026-06-14 | 70 | 5 | PayPal 和 Payoneer 哪个适合新手：新手检查清单 | /blog/paypal-vs-payoneer-beginner-checklist |
-| 工具流程 | 2026-06-14 | 82 | 5 | ChatGPT、Codex 和 Claude 怎么分工做 AI 工具实践流程 | /blog/chatgpt-codex-claude-workflow |
-| 工具流程 | 2026-06-14 | 57 | 5 | ChatGPT、Codex 和 Claude 工作流检查清单 | /blog/chatgpt-codex-claude-workflow-checklist |
-| 工具流程 | 2026-06-14 | 72 | 4 | Claude Code 自动化为什么必须有人审 | /blog/claude-code-automation-human-review |
-| 工具流程 | 2026-06-14 | 60 | 4 | Claude Code 自动化人工审核检查清单 | /blog/claude-code-automation-human-review-checklist |
-| 工具流程 | 2026-06-14 | 63 | 4 | Claude Code 自动化项目前怎么判断能不能做 | /blog/claude-code-automation-human-review-freelance-scope |
-| 工具流程 | 2026-06-14 | 65 | 4 | Claude Code 自动化最容易忽略的人工审核错误 | /blog/claude-code-automation-human-review-mistakes |
-| 工具流程 | 2026-06-14 | 74 | 4 | Claude Code 新手最容易犯的错误 | /blog/claude-code-beginner-mistakes |
-| 工具流程 | 2026-06-14 | 59 | 4 | Claude Code 新手使用检查清单 | /blog/claude-code-beginner-mistakes-checklist |
-| 工具流程 | 2026-06-14 | 61 | 4 | Claude Code 项目前怎么判断范围 | /blog/claude-code-beginner-mistakes-freelance-scope |
-| 工具流程 | 2026-06-14 | 68 | 4 | Claude Code 新手常见错误和修正方法 | /blog/claude-code-beginner-mistakes-mistakes |
-| 工具流程 | 2026-06-14 | 71 | 4 | Claude Code 新手适合用在哪些项目场景 | /blog/claude-code-beginner-use-cases |
-| 工具流程 | 2026-06-14 | 60 | 4 | Claude Code 新手使用场景检查清单 | /blog/claude-code-beginner-use-cases-checklist |
-| 工具流程 | 2026-06-14 | 60 | 4 | Claude Code 新手项目练习前怎么判断使用场景 | /blog/claude-code-beginner-use-cases-freelance-scope |
-| 工具流程 | 2026-06-14 | 63 | 4 | Claude Code 新手选使用场景时的常见错误 | /blog/claude-code-beginner-use-cases-mistakes |
-| 工具流程 | 2026-06-14 | 74 | 4 | Claude Code 修 bug 的 prompt 怎么写 | /blog/claude-code-bug-prompt |
-| 工具流程 | 2026-06-14 | 67 | 4 | Claude Code Bug Prompt 检查清单 | /blog/claude-code-bug-prompt-checklist |
-| 工具流程 | 2026-06-14 | 73 | 4 | Claude Code Bug Prompt 项目前怎么判断范围 | /blog/claude-code-bug-prompt-freelance-scope |
-| 工具流程 | 2026-06-14 | 70 | 4 | Claude Code Bug Prompt 常见错误 | /blog/claude-code-bug-prompt-mistakes |
-| 工具流程 | 2026-06-14 | 66 | 4 | 用 Claude Code 项目前要问客户哪些问题 | /blog/claude-code-client-questions |
-| 工具流程 | 2026-06-14 | 62 | 4 | Claude Code 项目客户问题检查清单 | /blog/claude-code-client-questions-checklist |
-| 工具流程 | 2026-06-14 | 64 | 4 | Claude Code 项目前客户问题不清楚时怎么判断范围 | /blog/claude-code-client-questions-freelance-scope |
-| 工具流程 | 2026-06-14 | 60 | 4 | Claude Code 项目前问客户时的常见错误 | /blog/claude-code-client-questions-mistakes |
-| 工具流程 | 2026-06-14 | 72 | 4 | Claude Code 新手常用命令怎么整理成项目笔记 | /blog/claude-code-common-commands |
-| 工具流程 | 2026-06-14 | 63 | 4 | Claude Code 常用命令检查清单 | /blog/claude-code-common-commands-checklist |
-| 工具流程 | 2026-06-14 | 68 | 4 | Claude Code 常用命令哪些适合写进项目范围 | /blog/claude-code-common-commands-freelance-scope |
-| 工具流程 | 2026-06-14 | 61 | 4 | Claude Code 新手运行常用命令时的常见错误 | /blog/claude-code-common-commands-mistakes |
-| 工具流程 | 2026-06-14 | 70 | 4 | 用 Claude Code 项目后交付说明怎么写 | /blog/claude-code-delivery-note |
-| 工具流程 | 2026-06-14 | 62 | 4 | Claude Code 交付说明检查清单 | /blog/claude-code-delivery-note-checklist |
-| 工具流程 | 2026-06-14 | 70 | 4 | Claude Code 交付说明哪些内容适合写进项目范围 | /blog/claude-code-delivery-note-freelance-scope |
-| 工具流程 | 2026-06-14 | 63 | 4 | Claude Code 交付说明常见错误 | /blog/claude-code-delivery-note-mistakes |
-| 工具流程 | 2026-06-14 | 64 | 4 | 用 Claude Code 排查客户报错时怎么做才稳 | /blog/claude-code-error-debug |
-| 工具流程 | 2026-06-14 | 65 | 4 | Claude Code 错误排查检查清单 | /blog/claude-code-error-debug-checklist |
-| 工具流程 | 2026-06-14 | 69 | 4 | Claude Code 错误排查哪些适合写进项目范围 | /blog/claude-code-error-debug-freelance-scope |
-| 工具流程 | 2026-06-14 | 65 | 4 | Claude Code 排查客户报错时的常见错误 | /blog/claude-code-error-debug-mistakes |
-| 工具流程 | 2026-06-14 | 83 | 4 | 客户给 GitHub 文件时用 Claude Code 怎么限定范围 | /blog/claude-code-github-file-scope |
-| 工具流程 | 2026-06-14 | 69 | 4 | Claude Code GitHub 文件范围检查清单 | /blog/claude-code-github-file-scope-checklist |
-| 工具流程 | 2026-06-14 | 78 | 4 | Claude Code 看 GitHub 文件哪些适合写进项目范围 | /blog/claude-code-github-file-scope-freelance-scope |
-| 工具流程 | 2026-06-14 | 75 | 4 | Claude Code 看 GitHub 文件时的常见范围错误 | /blog/claude-code-github-file-scope-mistakes |
-| 工具流程 | 2026-06-14 | 72 | 4 | 安装 Claude Code 前新手要先确认哪些条件 | /blog/claude-code-install-prerequisites |
-| 工具流程 | 2026-06-14 | 67 | 4 | Claude Code 安装前置条件检查清单 | /blog/claude-code-install-prerequisites-checklist |
-| 工具流程 | 2026-06-14 | 73 | 4 | Claude Code 安装准备哪些适合写进项目范围 | /blog/claude-code-install-prerequisites-freelance-scope |
-| 工具流程 | 2026-06-14 | 76 | 4 | Claude Code 安装准备常见错误 | /blog/claude-code-install-prerequisites-mistakes |
-| 工具流程 | 2026-06-14 | 74 | 4 | Claude Code 新手适合先接哪些低风险小单 | /blog/claude-code-low-risk-freelance-jobs |
-| 工具流程 | 2026-06-14 | 63 | 4 | Claude Code 低风险项目检查清单 | /blog/claude-code-low-risk-freelance-jobs-checklist |
-| 工具流程 | 2026-06-14 | 78 | 4 | Claude Code 低风险小单哪些适合写进项目范围 | /blog/claude-code-low-risk-freelance-jobs-freelance-scope |
-| 工具流程 | 2026-06-14 | 68 | 4 | Claude Code 低风险项目常见错误 | /blog/claude-code-low-risk-freelance-jobs-mistakes |
-| 工具流程 | 2026-06-14 | 72 | 4 | 用 Claude Code 检查 Next.js 页面小问题怎么做 | /blog/claude-code-nextjs-page-check |
-| 工具流程 | 2026-06-14 | 66 | 4 | Claude Code Next.js 页面检查清单 | /blog/claude-code-nextjs-page-check-checklist |
-| 工具流程 | 2026-06-14 | 74 | 4 | Claude Code 检查 Next.js 页面哪些适合写进项目范围 | /blog/claude-code-nextjs-page-check-freelance-scope |
-| 工具流程 | 2026-06-14 | 72 | 4 | Claude Code 检查 Next.js 页面时的常见错误 | /blog/claude-code-nextjs-page-check-mistakes |
-| 工具流程 | 2026-06-14 | 71 | 4 | 用 Claude Code 审阅项目 Proposal 时要看什么 | /blog/claude-code-proposal-review |
-| 工具流程 | 2026-06-14 | 73 | 4 | Claude Code Proposal 审阅检查清单 | /blog/claude-code-proposal-review-checklist |
-| 工具流程 | 2026-06-14 | 78 | 4 | Claude Code Proposal 审阅哪些适合写进项目范围 | /blog/claude-code-proposal-review-freelance-scope |
-| 工具流程 | 2026-06-14 | 75 | 4 | Claude Code 审阅 Proposal 时的常见错误 | /blog/claude-code-proposal-review-mistakes |
-| 工具流程 | 2026-06-14 | 75 | 4 | 哪些小项目任务适合用 Claude Code 辅助项目 | /blog/claude-code-small-project-tasks |
-| 工具流程 | 2026-06-14 | 69 | 4 | Claude Code 小项目任务检查清单 | /blog/claude-code-small-project-tasks-checklist |
-| 工具流程 | 2026-06-14 | 73 | 4 | Claude Code 小项目任务哪些适合写进项目范围 | /blog/claude-code-small-project-tasks-freelance-scope |
-| 工具流程 | 2026-06-14 | 65 | 4 | Claude Code 小项目常见错误 | /blog/claude-code-small-project-tasks-mistakes |
-| 报价指南 | 2026-06-02 | 72 | 4 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | /blog/first-upwork-project-pricing-checklist |
-| 报价指南 | 2026-06-14 | 66 | 4 | 自由职业报价单模板怎么填写 | /blog/freelance-quote-template-fill |
-| 报价指南 | 2026-06-14 | 60 | 4 | 自由职业报价单填写检查清单 | /blog/freelance-quote-template-fill-checklist |
-| 报错解决 | 2026-06-14 | 62 | 4 | API Key 无效或缺失怎么处理 | /blog/api-key-invalid-or-missing |
-| 报错解决 | 2026-06-14 | 59 | 4 | API Key 无效或缺失排查清单 | /blog/api-key-invalid-or-missing-checklist |
-| 报错解决 | 2026-06-14 | 62 | 4 | API Key 无效或缺失：使用前怎么判断是否适合 | /blog/api-key-invalid-or-missing-freelance-scope |
-| 报错解决 | 2026-06-14 | 60 | 4 | API Key 无效或缺失的常见错误和修复步骤 | /blog/api-key-invalid-or-missing-mistakes |
-| 报错解决 | 2026-06-02 | 102 | 4 | Codex 项目 npm install 报错怎么办：新手排查步骤 | /blog/codex-npm-install-error-beginner-fix |
-| 报错解决 | 2026-06-14 | 99 | 4 | dependency conflict 依赖冲突怎么处理 | /blog/dependency-conflict-fix |
-| 报错解决 | 2026-06-14 | 86 | 4 | dependency conflict 依赖冲突处理检查清单 | /blog/dependency-conflict-fix-checklist |
-| 报错解决 | 2026-06-14 | 60 | 4 | dependency conflict 依赖冲突使用前怎么判断是否适合 | /blog/dependency-conflict-fix-freelance-scope |
-| 报错解决 | 2026-06-14 | 92 | 4 | dependency conflict 常见错误和解决步骤 | /blog/dependency-conflict-fix-mistakes |
-| 报错解决 | 2026-06-14 | 84 | 4 | npm run dev 能跑但 build 失败怎么办 | /blog/dev-works-build-fails |
-| 报错解决 | 2026-06-14 | 76 | 4 | npm run dev 能跑但 build 失败检查清单 | /blog/dev-works-build-fails-checklist |
-| 报错解决 | 2026-06-14 | 68 | 4 | npm run dev 能跑但 build 失败使用前怎么判断是否适合 | /blog/dev-works-build-fails-freelance-scope |
-| 报错解决 | 2026-06-14 | 72 | 4 | npm run dev 能跑但 build 失败常见错误和解决步骤 | /blog/dev-works-build-fails-mistakes |
-| 报错解决 | 2026-06-14 | 72 | 4 | 环境变量 missing 怎么排查 | /blog/env-variable-missing-fix |
-| 报错解决 | 2026-06-14 | 68 | 4 | 环境变量 missing 排查检查清单 | /blog/env-variable-missing-fix-checklist |
-| 报错解决 | 2026-06-14 | 60 | 4 | 环境变量 missing 使用前怎么判断是否适合 | /blog/env-variable-missing-fix-freelance-scope |
-| 报错解决 | 2026-06-14 | 70 | 4 | 环境变量 missing 常见错误和解决步骤 | /blog/env-variable-missing-fix-mistakes |
-| 报错解决 | 2026-06-14 | 73 | 4 | ESLint error 要不要直接关闭 | /blog/eslint-error-should-not-disable |
-| 报错解决 | 2026-06-14 | 63 | 4 | ESLint error 处理检查清单 | /blog/eslint-error-should-not-disable-checklist |
-| 报错解决 | 2026-06-14 | 68 | 4 | ESLint error 使用前怎么判断是否适合 | /blog/eslint-error-should-not-disable-freelance-scope |
-| 报错解决 | 2026-06-14 | 84 | 4 | ESLint error 常见错误和解决步骤 | /blog/eslint-error-should-not-disable-mistakes |
-| 报错解决 | 2026-06-14 | 99 | 4 | failed to push some refs 怎么排查 | /blog/failed-to-push-some-refs-fix |
-| 报错解决 | 2026-06-14 | 81 | 4 | failed to push some refs 排查检查清单 | /blog/failed-to-push-some-refs-fix-checklist |
-| 报错解决 | 2026-06-14 | 76 | 4 | failed to push some refs 使用前怎么判断是否适合 | /blog/failed-to-push-some-refs-fix-freelance-scope |
-| 报错解决 | 2026-06-14 | 77 | 4 | failed to push some refs 常见错误和解决步骤 | /blog/failed-to-push-some-refs-fix-mistakes |
-| 报错解决 | 2026-06-14 | 91 | 4 | git authentication failed 怎么解决 | /blog/git-authentication-failed-fix |
-| 报错解决 | 2026-06-14 | 85 | 4 | git authentication failed 处理检查清单 | /blog/git-authentication-failed-fix-checklist |
-| 报错解决 | 2026-06-14 | 83 | 4 | git authentication failed 使用前怎么判断是否适合 | /blog/git-authentication-failed-fix-freelance-scope |
-| 报错解决 | 2026-06-14 | 91 | 4 | git authentication failed 常见错误和解决步骤 | /blog/git-authentication-failed-fix-mistakes |
-| 报错解决 | 2026-06-14 | 106 | 4 | GitHub Actions build 失败怎么看日志 | /blog/github-actions-build-log-debug |
-| 报错解决 | 2026-06-14 | 91 | 4 | GitHub Actions build 失败日志检查清单 | /blog/github-actions-build-log-debug-checklist |
-| 报错解决 | 2026-06-14 | 78 | 4 | GitHub Actions build 失败使用前怎么判断是否适合 | /blog/github-actions-build-log-debug-freelance-scope |
-| 报错解决 | 2026-06-14 | 89 | 4 | GitHub Actions build 失败常见错误和解决步骤 | /blog/github-actions-build-log-debug-mistakes |
-| 报错解决 | 2026-06-14 | 93 | 4 | module not found 报错怎么定位文件 | /blog/module-not-found-debug |
-| 报错解决 | 2026-06-14 | 76 | 4 | module not found 报错定位检查清单 | /blog/module-not-found-debug-checklist |
-| 报错解决 | 2026-06-14 | 72 | 4 | module not found 使用前怎么判断是否适合 | /blog/module-not-found-debug-freelance-scope |
-| 报错解决 | 2026-06-14 | 78 | 4 | module not found 常见错误和解决步骤 | /blog/module-not-found-debug-mistakes |
-| 报错解决 | 2026-06-14 | 92 | 5 | Next.js hydration error 怎么排查 | /blog/nextjs-hydration-error-debug |
-| 报错解决 | 2026-06-14 | 83 | 5 | Next.js hydration error 怎么排查：新手检查清单 | /blog/nextjs-hydration-error-debug-checklist |
-| 报错解决 | 2026-06-14 | 87 | 4 | Next.js hydration error 怎么排查：使用前怎么判断是否适合 | /blog/nextjs-hydration-error-debug-freelance-scope |
-| 报错解决 | 2026-06-14 | 79 | 4 | Next.js hydration error 怎么排查：常见错误和解决步骤 | /blog/nextjs-hydration-error-debug-mistakes |
-| 报错解决 | 2026-06-14 | 91 | 4 | Node 版本不匹配怎么排查 | /blog/node-version-mismatch-fix |
-| 报错解决 | 2026-06-14 | 87 | 4 | Node 版本不匹配排查检查清单 | /blog/node-version-mismatch-fix-checklist |
-| 报错解决 | 2026-06-14 | 58 | 4 | Node 版本不匹配使用前怎么判断是否适合 | /blog/node-version-mismatch-fix-freelance-scope |
-| 报错解决 | 2026-06-14 | 75 | 4 | Node 版本不匹配常见错误和解决步骤 | /blog/node-version-mismatch-fix-mistakes |
-| 报错解决 | 2026-06-14 | 110 | 4 | npm command not found 怎么解决 | /blog/npm-command-not-found-fix |
-| 报错解决 | 2026-06-14 | 80 | 4 | npm command not found 排查检查清单 | /blog/npm-command-not-found-fix-checklist |
-| 报错解决 | 2026-06-14 | 79 | 4 | npm command not found 使用前怎么判断是否适合 | /blog/npm-command-not-found-fix-freelance-scope |
-| 报错解决 | 2026-06-14 | 84 | 4 | npm command not found 常见错误和修正方法 | /blog/npm-command-not-found-fix-mistakes |
-| 报错解决 | 2026-06-14 | 83 | 4 | package lock 冲突怎么安全处理 | /blog/package-lock-conflict-fix |
-| 报错解决 | 2026-06-14 | 86 | 4 | package lock 冲突安全处理检查清单 | /blog/package-lock-conflict-fix-checklist |
-| 报错解决 | 2026-06-14 | 75 | 4 | package lock 冲突使用前怎么判断是否适合 | /blog/package-lock-conflict-fix-freelance-scope |
-| 报错解决 | 2026-06-14 | 84 | 4 | package lock 冲突常见错误和修正方法 | /blog/package-lock-conflict-fix-mistakes |
-| 报错解决 | 2026-06-14 | 94 | 4 | permission denied 报错新手怎么处理 | /blog/permission-denied-fix |
-| 报错解决 | 2026-06-14 | 73 | 4 | permission denied 报错新手怎么处理：新手检查清单 | /blog/permission-denied-fix-checklist |
-| 报错解决 | 2026-06-14 | 81 | 4 | permission denied 报错新手怎么处理：使用前怎么判断是否适合 | /blog/permission-denied-fix-freelance-scope |
-| 报错解决 | 2026-06-14 | 73 | 4 | permission denied 报错新手怎么处理：常见错误和解决步骤 | /blog/permission-denied-fix-mistakes |
-| 报错解决 | 2026-06-14 | 77 | 4 | port already in use 怎么释放端口 | /blog/port-already-in-use-fix |
-| 报错解决 | 2026-06-14 | 72 | 4 | port already in use 释放端口检查清单 | /blog/port-already-in-use-fix-checklist |
-| 报错解决 | 2026-06-14 | 79 | 4 | port already in use 使用前怎么判断是否适合 | /blog/port-already-in-use-fix-freelance-scope |
-| 报错解决 | 2026-06-14 | 76 | 4 | port already in use 常见错误和修正方法 | /blog/port-already-in-use-fix-mistakes |
-| 收款工具 | 2026-06-14 | 66 | 4 | 广告收入要等到什么时候再接 | /blog/ads-income-when-to-start |
-| 收款工具 | 2026-06-14 | 63 | 4 | 广告收入要等到什么时候再接：新手检查清单 | /blog/ads-income-when-to-start-checklist |
-| 收款工具 | 2026-06-14 | 52 | 4 | 联盟链接收入和服务收入有什么区别 | /blog/affiliate-vs-service-income |
-| 收款工具 | 2026-06-14 | 69 | 4 | 联盟链接收入和服务收入有什么区别：新手检查清单 | /blog/affiliate-vs-service-income-checklist |
-| 收款工具 | 2026-06-14 | 64 | 4 | 银行卡绑定收款平台要注意什么 | /blog/bank-card-payment-platform-risk |
-| 收款工具 | 2026-06-14 | 56 | 4 | 银行卡绑定收款平台要注意什么：新手检查清单 | /blog/bank-card-payment-platform-risk-checklist |
-| 收款工具 | 2026-06-14 | 102 | 4 | 数字模板退款规则怎么写更清楚 | /blog/digital-template-refund-policy |
-| 收款工具 | 2026-06-14 | 74 | 4 | 数字模板退款规则检查清单 | /blog/digital-template-refund-policy-checklist |
-| 收款工具 | 2026-06-14 | 77 | 4 | 自由职业第一笔收款前要确认什么 | /blog/first-freelance-payment-check |
-| 收款工具 | 2026-06-14 | 75 | 4 | 自由职业第一笔收款检查清单 | /blog/first-freelance-payment-check-checklist |
-| 收款工具 | 2026-06-14 | 87 | 4 | Gumroad 卖模板前要准备什么 | /blog/gumroad-template-selling-prep |
-| 收款工具 | 2026-06-14 | 75 | 4 | Gumroad 卖模板前检查清单 | /blog/gumroad-template-selling-prep-checklist |
-| 收款工具 | 2026-06-14 | 68 | 4 | 海外收款手续费怎么估算 | /blog/international-payment-fee-estimate |
-| 收款工具 | 2026-06-14 | 55 | 4 | 海外收款手续费怎么估算：新手检查清单 | /blog/international-payment-fee-estimate-checklist |
-| 收款工具 | 2026-06-14 | 88 | 4 | Lemon Squeezy 适合数字产品吗 | /blog/lemon-squeezy-digital-products |
-| 收款工具 | 2026-06-14 | 76 | 4 | Lemon Squeezy 数字产品检查清单 | /blog/lemon-squeezy-digital-products-checklist |
-| 收款工具 | 2026-06-14 | 80 | 5 | Paddle 和 Stripe 有什么区别 | /blog/paddle-vs-stripe-beginner |
-| 收款工具 | 2026-06-14 | 67 | 5 | Paddle 和 Stripe 有什么区别：新手检查清单 | /blog/paddle-vs-stripe-beginner-checklist |
-| 收款工具 | 2026-06-14 | 59 | 4 | 收款账户资料不一致有什么风险 | /blog/payment-account-info-mismatch-risk |
-| 收款工具 | 2026-06-14 | 54 | 4 | 收款账户资料不一致风险：新手检查清单 | /blog/payment-account-info-mismatch-risk-checklist |
-| 收款工具 | 2026-06-14 | 61 | 4 | 收款页面需要写哪些免责声明 | /blog/payment-page-disclaimer |
-| 收款工具 | 2026-06-14 | 60 | 4 | 收款页面免责声明：新手检查清单 | /blog/payment-page-disclaimer-checklist |
-| 收款工具 | 2026-06-14 | 76 | 5 | Payoneer 适合新手自由职业收款吗 | /blog/payoneer-freelancer-beginner |
-| 收款工具 | 2026-06-14 | 63 | 5 | Payoneer 适合新手自由职业收款吗：新手检查清单 | /blog/payoneer-freelancer-beginner-checklist |
-| 收款工具 | 2026-06-02 | 82 | 4 | Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看 | /blog/payoneer-wise-paypal-beginner-comparison |
-| 收款工具 | 2026-06-14 | 83 | 5 | Payoneer Wise PayPal 怎么选择 | /blog/payoneer-wise-paypal-choose |
-| 收款工具 | 2026-06-14 | 75 | 5 | Payoneer Wise PayPal 怎么选择：新手检查清单 | /blog/payoneer-wise-paypal-choose-checklist |
-| 收款工具 | 2026-06-14 | 74 | 5 | PayPal 收款有哪些常见限制 | /blog/paypal-freelancer-limits |
-| 收款工具 | 2026-06-14 | 60 | 5 | PayPal 收款有哪些常见限制：新手检查清单 | /blog/paypal-freelancer-limits-checklist |
-| 收款工具 | 2026-06-14 | 59 | 4 | 平台内收款和直接收款怎么区分 | /blog/platform-payment-vs-direct-payment |
-| 收款工具 | 2026-06-14 | 60 | 4 | 平台内收款和直接收款：新手检查清单 | /blog/platform-payment-vs-direct-payment-checklist |
-| 收款工具 | 2026-06-14 | 65 | 4 | 人工服务先用什么方式收款更稳妥 | /blog/service-payment-method-beginner |
-| 收款工具 | 2026-06-14 | 55 | 4 | 人工服务先用什么方式收款更稳妥：新手检查清单 | /blog/service-payment-method-beginner-checklist |
-| 收款工具 | 2026-06-14 | 77 | 4 | Stripe 适合卖模板还是服务 | /blog/stripe-templates-vs-services |
-| 收款工具 | 2026-06-14 | 81 | 4 | Stripe 适合卖模板还是服务：新手检查清单 | /blog/stripe-templates-vs-services-checklist |
-| 收款工具 | 2026-06-14 | 54 | 4 | 订阅支付失败怎么和客户沟通：新手检查清单 | /blog/subscription-payment-failed-message-checklist |
-| 新手教程 | 2026-06-14 | 72 | 4 | 新手如何记录每天的项目练习 | /blog/daily-ai-freelance-practice-log |
-| 新手教程 | 2026-06-14 | 66 | 4 | 每天项目练习记录检查清单 | /blog/daily-ai-freelance-practice-log-checklist |
-| 新手教程 | 2026-06-14 | 66 | 4 | 每天项目练习记录常见错误和解决步骤 | /blog/daily-ai-freelance-practice-log-mistakes |
-| 新手教程 | 2026-06-14 | 85 | 4 | 不会写代码怎么交付一个小网站 | /blog/deliver-small-website-with-ai-no-code |
-| 新手教程 | 2026-06-14 | 67 | 4 | 小网站交付检查清单 | /blog/deliver-small-website-with-ai-no-code-checklist |
-| 新手教程 | 2026-06-14 | 70 | 4 | 小网站交付常见错误和解决步骤 | /blog/deliver-small-website-with-ai-no-code-mistakes |
-| 新手教程 | 2026-06-14 | 77 | 4 | 第一个作品集案例怎么做才真实 | /blog/first-portfolio-case-realistic |
-| 新手教程 | 2026-06-14 | 59 | 4 | 第一个作品集案例真实性检查清单 | /blog/first-portfolio-case-realistic-checklist |
-| 新手教程 | 2026-06-14 | 70 | 4 | 第一个作品集案例常见错误和修正方法 | /blog/first-portfolio-case-realistic-mistakes |
-| 新手教程 | 2026-06-14 | 73 | 4 | 自由职业新手怎么和客户确认范围 | /blog/freelance-beginner-scope-confirmation |
-| 新手教程 | 2026-06-14 | 61 | 4 | 自由职业范围确认检查清单 | /blog/freelance-beginner-scope-confirmation-checklist |
-| 新手教程 | 2026-06-14 | 66 | 4 | 自由职业范围确认常见错误和解决步骤 | /blog/freelance-beginner-scope-confirmation-mistakes |
-| 新手教程 | 2026-06-14 | 75 | 4 | 自由职业每周复盘模板怎么用 | /blog/freelance-weekly-review-template |
-| 新手教程 | 2026-06-14 | 52 | 4 | 自由职业每周复盘检查清单 | /blog/freelance-weekly-review-template-checklist |
-| 新手教程 | 2026-06-14 | 75 | 4 | 没有客户时怎么做练习项目 | /blog/practice-projects-before-clients |
-| 新手教程 | 2026-06-14 | 57 | 4 | 没有客户时练习项目检查清单 | /blog/practice-projects-before-clients-checklist |
-| 新手教程 | 2026-06-14 | 62 | 4 | 没有客户时做练习项目的常见错误 | /blog/practice-projects-before-clients-mistakes |
-| 新手路线 | 2026-06-14 | 56 | 4 | 第一次接 AI 小单前要准备什么 | /blog/before-first-ai-freelance-job |
-| 新手路线 | 2026-06-14 | 55 | 4 | 第一次接 AI 小单前检查清单 | /blog/before-first-ai-freelance-job-checklist |
-| 新手路线 | 2026-06-14 | 59 | 4 | 第一次接 AI 小单前最容易犯的错误 | /blog/before-first-ai-freelance-job-mistakes |
-| 模板和清单 | 2026-06-14 | 54 | 4 | AI 生成内容人工审核表怎么设计 | /blog/ai-content-human-review-template |
-| 模板和清单 | 2026-06-14 | 63 | 4 | AI 生成内容人工审核表检查清单 | /blog/ai-content-human-review-template-checklist |
-| 模板和清单 | 2026-06-14 | 55 | 4 | AI 工具学习每日执行表怎么安排 | /blog/ai-freelance-daily-planner |
-| 模板和清单 | 2026-06-14 | 55 | 4 | AI 工具学习每日执行表检查清单 | /blog/ai-freelance-daily-planner-checklist |
-| 模板和清单 | 2026-06-14 | 63 | 4 | AI 工具配置服务项目清单怎么写 | /blog/ai-tool-setup-service-checklist |
-| 模板和清单 | 2026-06-14 | 54 | 4 | AI 工具配置服务项目检查清单 | /blog/ai-tool-setup-service-checklist-checklist |
-| 模板和清单 | 2026-06-14 | 56 | 4 | Bug 修复交付说明模板怎么写 | /blog/bugfix-delivery-note-template |
-| 模板和清单 | 2026-06-14 | 54 | 4 | Bug 修复交付前检查清单 | /blog/bugfix-delivery-note-template-checklist |
-| 模板和清单 | 2026-06-14 | 57 | 4 | 客户验收清单怎么减少返工 | /blog/client-acceptance-checklist |
-| 模板和清单 | 2026-06-14 | 47 | 4 | 客户验收清单新手检查清单 | /blog/client-acceptance-checklist-checklist |
-| 模板和清单 | 2026-06-14 | 52 | 4 | 客户需求沟通表怎么问才清楚 | /blog/client-requirement-form-questions |
-| 模板和清单 | 2026-06-14 | 47 | 4 | 客户需求沟通表新手检查清单 | /blog/client-requirement-form-questions-checklist |
-| 模板和清单 | 2026-06-14 | 63 | 4 | Codex 项目启动检查表怎么用 | /blog/codex-project-start-checklist |
-| 模板和清单 | 2026-06-14 | 59 | 5 | Codex 项目启动检查表：新手清单 | /blog/codex-project-start-checklist-checklist |
-| 模板和清单 | 2026-06-14 | 70 | 4 | 作品集页面文案模板怎么写真实 | /blog/portfolio-page-copy-template |
-| 模板和清单 | 2026-06-14 | 63 | 4 | 作品集页面文案模板怎么写真实：新手检查清单 | /blog/portfolio-page-copy-template-checklist |
-| 模板和清单 | 2026-06-14 | 62 | 4 | 新手练习项目记录表怎么用 | /blog/practice-project-log-template |
-| 模板和清单 | 2026-06-14 | 61 | 4 | 新手练习项目记录表怎么用：新手检查清单 | /blog/practice-project-log-template-checklist |
-| 模板和清单 | 2026-06-14 | 58 | 4 | 项目前风险评估表怎么填 | /blog/pre-project-risk-assessment-template |
-| 模板和清单 | 2026-06-14 | 56 | 4 | 项目前风险评估表怎么填：新手检查清单 | /blog/pre-project-risk-assessment-template-checklist |
-| 模板和清单 | 2026-06-14 | 65 | 4 | 项目交付检查清单应该包含什么 | /blog/project-delivery-checklist-items |
-| 模板和清单 | 2026-06-14 | 56 | 4 | 项目交付检查清单应该包含什么：新手检查清单 | /blog/project-delivery-checklist-items-checklist |
-| 模板和清单 | 2026-06-14 | 58 | 4 | 项目复盘模板怎么记录问题 | /blog/project-retrospective-template |
-| 模板和清单 | 2026-06-14 | 58 | 4 | 项目复盘模板怎么记录问题：新手检查清单 | /blog/project-retrospective-template-checklist |
-| 模板和清单 | 2026-06-14 | 60 | 4 | 报价邮件模板怎么表达不确定范围 | /blog/quote-email-uncertain-scope |
-| 模板和清单 | 2026-06-14 | 53 | 4 | 报价邮件模板怎么表达不确定范围：新手检查清单 | /blog/quote-email-uncertain-scope-checklist |
-| 模板和清单 | 2026-06-14 | 56 | 4 | 服务咨询表单问题怎么设计 | /blog/service-inquiry-form-questions |
-| 模板和清单 | 2026-06-14 | 60 | 4 | 服务咨询表单问题怎么设计：新手检查清单 | /blog/service-inquiry-form-questions-checklist |
-| 模板和清单 | 2026-06-14 | 60 | 4 | 小网站上线检查 SOP 怎么写 | /blog/small-site-launch-sop |
-| 模板和清单 | 2026-06-14 | 52 | 4 | 小网站上线检查 SOP 怎么写：新手检查清单 | /blog/small-site-launch-sop-checklist |
-| 部署教程 | 2026-06-02 | 87 | 4 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | /blog/vercel-env-variable-missing-beginner-guide |
-| 项目报价 | 2026-06-14 | 54 | 4 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | /blog/ai-automation-project-pricing-scope-guide |
 
 ## Broad AI Demand Gaps
 
 | Gap score | Public | Ready candidates | Cluster | Search examples | Suggested files |
 | --- | --- | --- | --- | --- | --- |
-| 168 | 28 | 4 | RAG、知识库、向量数据库和引用溯源 | RAG 知识库搭建教程<br>向量数据库教程<br>企业知识库 AI 部署<br>RAG 检索不到内容<br>RAG 评测教程 | content/blog/together-ai-api-beginner-guide.mdx<br>content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx |
-| 157 | 25 | 3 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres | AI Agent 记忆怎么做<br>Agent memory RAG<br>AI Agent 长期记忆<br>pgvector Agent memory<br>RAG 和记忆区别 | content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx<br>content/blog/vector-database-beginner-guide.mdx |
-| 150 | 29 | 2 | 开源大模型部署：Ollama、vLLM、TGI、RunPod | 大模型部署教程<br>Ollama 本地部署教程<br>vLLM 部署教程<br>RunPod vLLM serverless<br>Hugging Face TGI 部署 | content/blog/tensorrt-llm-beginner-guide.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx |
-| 120 | 35 | 0 | Agent 部署、工具调用和生产安全 | AI Agent 部署教程<br>Agent 工具调用教程<br>AI Agent 生产环境<br>LangGraph Agent 入门<br>CrewAI 部署教程 |  |
-| 115 | 12 | 1 | LLM 观测、评测、日志和上线后质量 | LLM observability 教程<br>RAG 评测教程<br>promptfoo 入门<br>LangSmith 教程<br>AI 应用日志监控 | content/blog/vercel-build-failed-causes-checklist.mdx |
-| 114 | 27 | 0 | 全行业 AI 提示词和工作流模板 | AI 提示词大全<br>销售 AI 提示词<br>客服 AI 提示词<br>HR AI 提示词<br>运营 AI 提示词 |  |
-| 110 | 36 | 0 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | Dify 部署教程<br>n8n AI 自动化教程<br>MCP 使用教程<br>Flowise 本地部署<br>Coze Bot 发布 |  |
-| 106 | 15 | 0 | AI API 接入、限流、成本和多模型路由 | OpenAI API 接入教程<br>Claude API rate limit<br>Gemini API 限流<br>OpenRouter API 教程<br>AI API key 安全 |  |
+| 321 | 0 | 6 | 开源大模型部署：Ollama、vLLM、TGI、RunPod | 大模型部署教程<br>Ollama 本地部署教程<br>vLLM 部署教程<br>RunPod vLLM serverless<br>Hugging Face TGI 部署 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/llm-cost-monitoring-dashboard-guide.mdx<br>content/blog/llm-api-rate-limit-retry-guide.mdx |
+| 317 | 0 | 6 | Agent 部署、工具调用和生产安全 | AI Agent 部署教程<br>Agent 工具调用教程<br>AI Agent 生产环境<br>LangGraph Agent 入门<br>CrewAI 部署教程 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 315 | 0 | 6 | Agent 记忆：短期记忆、长期记忆、RAG、Postgres | AI Agent 记忆怎么做<br>Agent memory RAG<br>AI Agent 长期记忆<br>pgvector Agent memory<br>RAG 和记忆区别 | content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/n8n-ai-agent-rag-memory-guide.mdx |
+| 313 | 0 | 6 | RAG、知识库、向量数据库和引用溯源 | RAG 知识库搭建教程<br>向量数据库教程<br>企业知识库 AI 部署<br>RAG 检索不到内容<br>RAG 评测教程 | content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 311 | 0 | 6 | 全行业 AI 提示词和工作流模板 | AI 提示词大全<br>销售 AI 提示词<br>客服 AI 提示词<br>HR AI 提示词<br>运营 AI 提示词 | content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
+| 307 | 0 | 6 | Dify、n8n、Coze、Flowise、MCP 自动化部署 | Dify 部署教程<br>n8n AI 自动化教程<br>MCP 使用教程<br>Flowise 本地部署<br>Coze Bot 发布 | content/blog/ai-automation-project-pricing-scope-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx |
+| 293 | 0 | 6 | AI API 接入、限流、成本和多模型路由 | OpenAI API 接入教程<br>Claude API rate limit<br>Gemini API 限流<br>OpenRouter API 教程<br>AI API key 安全 | content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx |
+| 287 | 0 | 6 | LLM 观测、评测、日志和上线后质量 | LLM observability 教程<br>RAG 评测教程<br>promptfoo 入门<br>LangSmith 教程<br>AI 应用日志监控 | content/blog/mcp-server-deployment-security-checklist.mdx<br>content/blog/agent-tool-permission-safety-guide.mdx<br>content/blog/arize-phoenix-llm-observability-guide.mdx |
 
 ## Zero-Public Broad Clusters
 
+- 开源大模型部署：Ollama、vLLM、TGI、RunPod: 6 ready candidates
+- Agent 部署、工具调用和生产安全: 6 ready candidates
+- Agent 记忆：短期记忆、长期记忆、RAG、Postgres: 6 ready candidates
+- RAG、知识库、向量数据库和引用溯源: 6 ready candidates
+- 全行业 AI 提示词和工作流模板: 6 ready candidates
+- Dify、n8n、Coze、Flowise、MCP 自动化部署: 6 ready candidates
+- AI API 接入、限流、成本和多模型路由: 6 ready candidates
+- LLM 观测、评测、日志和上线后质量: 6 ready candidates
 
 ## Next Actions
 

@@ -15,7 +15,7 @@ export function SeoInternalLinks({ post }: { post: BlogPost }) {
           <h2 className="mt-1 text-xl font-semibold text-ink">继续沿着同一主题解决问题</h2>
         </div>
         <Link className="text-sm font-medium text-brand hover:underline" href={getClusterPath(cluster.slug)}>
-          进入{cluster.shortTitle}主题中心
+          进入 {cluster.shortTitle} 主题中心
         </Link>
       </div>
 

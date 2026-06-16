@@ -1,6 +1,6 @@
 # Internal Link Opportunity Audit
 
-Generated at: 2026-06-16T12:27:03.693Z
+Generated at: 2026-06-16T05:22:47.489Z
 
 This report is read-only. It suggests public internal links for review candidates before any publishing action.
 
@@ -13,12 +13,12 @@ This report is read-only. It suggests public internal links for review candidate
 
 ## Summary
 
-- broadFirstCoverageItems: 0
+- broadFirstCoverageItems: 8
 - broadFirstCoverageItemsMissingPublicLinkSuggestion: 0
-- candidateItems: 16
+- candidateItems: 22
 - candidateItemsMissingPublicLinkSuggestion: 0
-- candidateItemsWithPublicSuggestions: 16
-- expansionItems: 15
+- candidateItemsWithPublicSuggestions: 22
+- expansionItems: 19
 - publicArticles: 500
 - recommendedItems: 3
 - waveItems: 3
@@ -28,21 +28,30 @@ This report is read-only. It suggests public internal links for review candidate
 
 | Scopes | Public links now | Suggestions | Top suggestion | Title | File |
 | --- | --- | --- | --- | --- | --- |
-| expansion, wave-1 | 1/3 | 5 | Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide) | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
-| expansion, recommended, wave-1 | 0/3 | 5 | Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide) | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| expansion, recommended, wave-1 | 1/3 | 5 | 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide) | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| broad-first-coverage, expansion, recommended, wave-1 | 2/6 | 5 | Codex 修改现有网页 UI 使用前怎么判断是否适合 (/blog/codex-edit-existing-ui-freelance-scope) | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| broad-first-coverage, expansion, recommended, wave-1 | 3/4 | 5 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 (/blog/n8n-ai-agent-rag-memory-guide) | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| broad-first-coverage, expansion, recommended, wave-1 | 2/6 | 5 | 销售 AI 提示词模板：客户画像、跟进话术、异议处理和会议纪要 (/blog/sales-ai-prompts-guide) | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
 ## Broad First Coverage Items
 
-- none
+| Scopes | Public links now | Suggestions | Top suggestion | Title | File |
+| --- | --- | --- | --- | --- | --- |
+| broad-first-coverage | 2/3 | 5 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 (/blog/mcp-server-deployment-security-checklist) | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+| broad-first-coverage, expansion, recommended, wave-1 | 2/6 | 5 | Codex 修改现有网页 UI 使用前怎么判断是否适合 (/blog/codex-edit-existing-ui-freelance-scope) | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| broad-first-coverage, expansion | 2/3 | 5 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 (/blog/dify-workflow-error-handling-guide) | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| broad-first-coverage, expansion, recommended, wave-1 | 3/4 | 5 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 (/blog/n8n-ai-agent-rag-memory-guide) | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| broad-first-coverage, expansion, recommended, wave-1 | 2/6 | 5 | 销售 AI 提示词模板：客户画像、跟进话术、异议处理和会议纪要 (/blog/sales-ai-prompts-guide) | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| broad-first-coverage, expansion | 2/6 | 5 | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 (/blog/local-llm-vram-not-enough-guide) | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| broad-first-coverage | 2/3 | 5 | Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认 (/blog/agent-human-review-loop-guide) | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
+| broad-first-coverage | 4/5 | 5 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 (/blog/ai-agent-memory-rag-design-guide) | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
 
 ## Recommended Items
 
 | Scopes | Public links now | Suggestions | Top suggestion | Title | File |
 | --- | --- | --- | --- | --- | --- |
-| recommended | 0/3 | 5 | Codex 需求不清楚的任务使用前怎么判断是否适合 (/blog/codex-client-requirement-questions-freelance-scope) | AI 工具新手不应该先买哪些工具 | content/blog/tools-not-to-buy-first.mdx |
-| expansion, recommended, wave-1 | 0/3 | 5 | Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide) | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| expansion, recommended, wave-1 | 1/3 | 5 | 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide) | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| broad-first-coverage, expansion, recommended, wave-1 | 2/6 | 5 | Codex 修改现有网页 UI 使用前怎么判断是否适合 (/blog/codex-edit-existing-ui-freelance-scope) | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| broad-first-coverage, expansion, recommended, wave-1 | 3/4 | 5 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 (/blog/n8n-ai-agent-rag-memory-guide) | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| broad-first-coverage, expansion, recommended, wave-1 | 2/6 | 5 | 销售 AI 提示词模板：客户画像、跟进话术、异议处理和会议纪要 (/blog/sales-ai-prompts-guide) | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
 ## Missing Suggestions
 
@@ -52,19 +61,25 @@ This report is read-only. It suggests public internal links for review candidate
 
 | Scopes | Public links now | Suggestions | Top suggestion | Title | File |
 | --- | --- | --- | --- | --- | --- |
-| expansion | 0/3 | 5 | 订阅支付失败怎么和客户沟通：新手检查清单 (/blog/subscription-payment-failed-message-checklist) | 订阅支付失败怎么和客户沟通 | content/blog/subscription-payment-failed-message.mdx |
-| expansion, wave-1 | 1/3 | 5 | Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide) | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
-| expansion | 1/3 | 5 | 本地部署大模型怎么开始：新手先看硬件、模型和用途 (/blog/local-llm-deployment-beginner) | TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收 | content/blog/tensorrt-llm-beginner-guide.mdx |
-| expansion | 4/5 | 5 | OpenRouter API 怎么接入：统一模型入口不是只换 Base URL (/blog/openrouter-api-beginner-guide) | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
-| recommended | 0/3 | 5 | Codex 需求不清楚的任务使用前怎么判断是否适合 (/blog/codex-client-requirement-questions-freelance-scope) | AI 工具新手不应该先买哪些工具 | content/blog/tools-not-to-buy-first.mdx |
-| expansion, recommended, wave-1 | 0/3 | 5 | Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide) | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| expansion | 0/3 | 5 | npm run dev 能跑但 build 失败使用前怎么判断是否适合 (/blog/dev-works-build-fails-freelance-scope) | Vercel 部署后 404 检查清单：逐页验收更稳 | content/blog/vercel-404-after-deploy-checklist.mdx |
-| expansion | 0/6 | 5 | permission denied 报错新手怎么处理：使用前怎么判断是否适合 (/blog/permission-denied-fix-freelance-scope) | Vercel 404 部署成功但页面打不开怎么办：使用前怎么判断是否适合 | content/blog/vercel-404-after-deploy-freelance-scope.mdx |
-| expansion | 0/2 | 5 | Next.js hydration error 怎么排查：使用前怎么判断是否适合 (/blog/nextjs-hydration-error-debug-freelance-scope) | Vercel 部署成功但页面 404：新手排查顺序 | content/blog/vercel-404-after-deploy.mdx |
-| expansion, recommended, wave-1 | 1/3 | 5 | 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide) | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| expansion | 1/4 | 5 | Gemini API 怎么接 Next.js：从 API Key 到服务端 Route Handler (/blog/gemini-api-nextjs-guide) | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
-| expansion | 0/3 | 5 | 小网站上线检查 SOP 怎么写：新手检查清单 (/blog/small-site-launch-sop-checklist) | Vercel 部署检查表怎么写：给新手的上线模板 | content/blog/vercel-deploy-checklist-template.mdx |
-| expansion | 2/3 | 5 | 本地部署大模型怎么开始：新手先看硬件、模型和用途 (/blog/local-llm-deployment-beginner) | vLLM 部署适合什么场景：新手先看推理服务边界 | content/blog/vllm-deployment-beginner-guide.mdx |
-| expansion | 0/6 | 5 | permission denied 报错新手怎么处理：新手检查清单 (/blog/permission-denied-fix-checklist) | Windows 路径和权限导致安装失败怎么办：新手检查清单 | content/blog/windows-path-permission-install-fix-checklist.mdx |
-| expansion | 0/6 | 5 | permission denied 报错新手怎么处理：使用前怎么判断是否适合 (/blog/permission-denied-fix-freelance-scope) | Windows 路径和权限导致安装失败怎么办：使用前怎么判断是否适合 | content/blog/windows-path-permission-install-fix-freelance-scope.mdx |
-| expansion | 0/6 | 5 | permission denied 报错新手怎么处理：使用前怎么判断是否适合 (/blog/permission-denied-fix-freelance-scope) | Windows 路径和权限导致安装失败怎么办 | content/blog/windows-path-permission-install-fix.mdx |
+| broad-first-coverage | 2/3 | 5 | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 (/blog/mcp-server-deployment-security-checklist) | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | content/blog/agent-tool-permission-safety-guide.mdx |
+| broad-first-coverage, expansion, recommended, wave-1 | 2/6 | 5 | Codex 修改现有网页 UI 使用前怎么判断是否适合 (/blog/codex-edit-existing-ui-freelance-scope) | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| expansion | 3/6 | 5 | Agent 记忆怎么设计：短期记忆、长期记忆和用户偏好 (/blog/agent-memory-design-guide) | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| broad-first-coverage, expansion | 2/3 | 5 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 (/blog/dify-workflow-error-handling-guide) | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
+| expansion | 1/3 | 5 | AI 自动化项目常见合规错误和解决步骤 (/blog/ai-freelance-automation-compliance-risk-mistakes) | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| broad-first-coverage, expansion, recommended, wave-1 | 3/4 | 5 | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 (/blog/n8n-ai-agent-rag-memory-guide) | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| expansion | 2/3 | 5 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 (/blog/industry-ai-prompts-template-library-2026) | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
+| expansion | 2/3 | 5 | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 (/blog/gemini-api-rate-limit-debug-guide) | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | content/blog/claude-api-rate-limit-debug-guide.mdx |
+| expansion | 2/3 | 5 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 (/blog/industry-ai-prompts-template-library-2026) | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
+| expansion | 2/3 | 5 | 产品经理 AI 提示词模板：需求分析、PRD、竞品、用户故事和验收标准 (/blog/product-manager-ai-prompts-guide) | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
+| expansion | 3/4 | 5 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 (/blog/dify-workflow-vs-agent-guide) | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| expansion | 4/5 | 5 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 (/blog/ai-model-selection-customer-service-guide) | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | content/blog/dify-workflow-vs-agent-guide.mdx |
+| expansion | 2/3 | 5 | 房产 AI 提示词模板：房源文案、客户需求分析、带看记录和风险提醒 (/blog/real-estate-ai-prompts-guide) | 电商 AI 提示词模板：商品标题、详情页、评价分析和售后回复 | content/blog/ecommerce-ai-prompts-guide.mdx |
+| expansion | 2/3 | 5 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 (/blog/industry-ai-prompts-template-library-2026) | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
+| expansion | 2/3 | 5 | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 (/blog/claude-api-rate-limit-debug-guide) | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | content/blog/gemini-api-rate-limit-debug-guide.mdx |
+| expansion | 1/3 | 5 | 大模型部署是什么意思：API、本地和私有化怎么选 (/blog/llm-deployment-beginner-guide) | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
+| broad-first-coverage, expansion, recommended, wave-1 | 2/6 | 5 | 销售 AI 提示词模板：客户画像、跟进话术、异议处理和会议纪要 (/blog/sales-ai-prompts-guide) | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| broad-first-coverage, expansion | 2/6 | 5 | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 (/blog/local-llm-vram-not-enough-guide) | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| expansion | 1/3 | 5 | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 (/blog/llm-deployment-huggingface-inference-endpoints-guide) | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 | content/blog/local-llm-vram-not-enough-guide.mdx |
+| broad-first-coverage | 2/3 | 5 | Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认 (/blog/agent-human-review-loop-guide) | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
+| broad-first-coverage | 4/5 | 5 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 (/blog/ai-agent-memory-rag-design-guide) | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
+| expansion | 2/3 | 5 | 本地部署大模型显存不够怎么办：量化、上下文、并发和换模型 (/blog/local-llm-vram-not-enough-guide) | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T12:27:49.278Z",
+  "generatedAt": "2026-06-16T05:26:29.082Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -34,11 +34,11 @@
       "bodyHit": {
         "field": "bodyExcerpt",
         "markers": [
-          "盲"
+          "冒"
         ],
-        "sample": "不要只写“问了 AI”。要写清楚你给了什么上下文、AI 给了什么方案、你采纳了哪一部分、你拒绝了哪一部分。这样才能证明你不是盲目复制。"
+        "sample": "AI 应用刚上线时，大家关心效果；用起来以后，成本问题会很快冒出来。哪个功能最贵，哪个用户消耗最多，哪个模型延迟最高，哪个 Agent 反复调用工具，哪些请求应该缓存，哪些批量任务应该改成异步，这些问题如果没有成本监控，就只能靠猜。大模型成本看板不是财务报表，而是产品和工程优化工具。"
       },
-      "file": "content/blog/daily-ai-freelance-practice-log.mdx",
+      "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
       "humanReviewRequired": true,
       "manualActions": [
         "Repair title and description into readable Chinese without changing slug or publish status.",
@@ -61,149 +61,7 @@
         ]
       },
       "status": "published",
-      "title": "新手如何记录每天的项目练习"
-    },
-    {
-      "bodyHit": {
-        "field": "bodyExcerpt",
-        "markers": [
-          "盲"
-        ],
-        "sample": "如果任务只允许诊断，就不要承诺修复所有环境。交付物可以是版本差异表、建议目标版本、复测命令和客户待办。对新手来说，这种清楚的诊断单比盲目改生产平台更可靠。"
-      },
-      "file": "content/blog/node-version-mismatch-fix-freelance-scope.mdx",
-      "humanReviewRequired": true,
-      "manualActions": [
-        "Repair title and description into readable Chinese without changing slug or publish status.",
-        "Compare body excerpt against intended topic and rewrite only the garbled copy after human source review.",
-        "Verify sourceNotes and official source targets still match the repaired claim wording.",
-        "Keep draft/review/published status and noindex unchanged during remediation.",
-        "Rerun integrity, content quality, automation gate, and digest checks before any approval action."
-      ],
-      "metadataHits": [],
-      "noindex": false,
-      "preserveStatus": true,
-      "priorityScore": 140,
-      "publishConfirm": "not-included",
-      "queueSignals": {
-        "inExecutiveTop": false,
-        "inHumanApprovalImmediate": false,
-        "inReviewPortfolio": false,
-        "lanes": [
-          "internal-link-sprint"
-        ]
-      },
-      "status": "published",
-      "title": "Node 版本不匹配使用前怎么判断是否适合"
-    },
-    {
-      "bodyHit": {
-        "field": "bodyExcerpt",
-        "markers": [
-          "盲"
-        ],
-        "sample": "### 错误一：盲目升级到最新版"
-      },
-      "file": "content/blog/node-version-mismatch-fix-mistakes.mdx",
-      "humanReviewRequired": true,
-      "manualActions": [
-        "Repair title and description into readable Chinese without changing slug or publish status.",
-        "Compare body excerpt against intended topic and rewrite only the garbled copy after human source review.",
-        "Verify sourceNotes and official source targets still match the repaired claim wording.",
-        "Keep draft/review/published status and noindex unchanged during remediation.",
-        "Rerun integrity, content quality, automation gate, and digest checks before any approval action."
-      ],
-      "metadataHits": [
-        {
-          "field": "description",
-          "markers": [
-            "盲"
-          ],
-          "sample": "整理新手处理 Node 版本不匹配时的常见错误：盲目升级、删除锁文件、混用包管理器、忽略 CI 和部署平台版本、把客户配置当代码问题，并给出修正步骤。"
-        }
-      ],
-      "noindex": false,
-      "preserveStatus": true,
-      "priorityScore": 140,
-      "publishConfirm": "not-included",
-      "queueSignals": {
-        "inExecutiveTop": false,
-        "inHumanApprovalImmediate": false,
-        "inReviewPortfolio": false,
-        "lanes": [
-          "internal-link-sprint"
-        ]
-      },
-      "status": "published",
-      "title": "Node 版本不匹配常见错误和解决步骤"
-    },
-    {
-      "bodyHit": null,
-      "file": "content/blog/permission-denied-fix-checklist.mdx",
-      "humanReviewRequired": true,
-      "manualActions": [
-        "Repair title and description into readable Chinese without changing slug or publish status.",
-        "Compare body excerpt against intended topic and rewrite only the garbled copy after human source review.",
-        "Verify sourceNotes and official source targets still match the repaired claim wording.",
-        "Keep draft/review/published status and noindex unchanged during remediation.",
-        "Rerun integrity, content quality, automation gate, and digest checks before any approval action."
-      ],
-      "metadataHits": [
-        {
-          "field": "description",
-          "markers": [
-            "盲"
-          ],
-          "sample": "permission denied 报错处理前，新手要检查命令、路径、用户、权限类型、Git/SSH 账号、部署环境和客户授权边界，避免盲目提权。"
-        }
-      ],
-      "noindex": false,
-      "preserveStatus": true,
-      "priorityScore": 140,
-      "publishConfirm": "not-included",
-      "queueSignals": {
-        "inExecutiveTop": false,
-        "inHumanApprovalImmediate": false,
-        "inReviewPortfolio": false,
-        "lanes": [
-          "internal-link-sprint"
-        ]
-      },
-      "status": "published",
-      "title": "permission denied 报错新手怎么处理：新手检查清单"
-    },
-    {
-      "bodyHit": {
-        "field": "bodyExcerpt",
-        "markers": [
-          "盲"
-        ],
-        "sample": "扩容前先看瓶颈在哪里。盲目加 GPU 不一定解决提示词过长、批处理不合理或模型选择不当的问题。"
-      },
-      "file": "content/blog/ray-serve-llm-deployment-guide.mdx",
-      "humanReviewRequired": true,
-      "manualActions": [
-        "Repair title and description into readable Chinese without changing slug or publish status.",
-        "Compare body excerpt against intended topic and rewrite only the garbled copy after human source review.",
-        "Verify sourceNotes and official source targets still match the repaired claim wording.",
-        "Keep draft/review/published status and noindex unchanged during remediation.",
-        "Rerun integrity, content quality, automation gate, and digest checks before any approval action."
-      ],
-      "metadataHits": [],
-      "noindex": false,
-      "preserveStatus": true,
-      "priorityScore": 140,
-      "publishConfirm": "not-included",
-      "queueSignals": {
-        "inExecutiveTop": false,
-        "inHumanApprovalImmediate": false,
-        "inReviewPortfolio": false,
-        "lanes": [
-          "internal-link-sprint"
-        ]
-      },
-      "status": "published",
-      "title": "Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门"
+      "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账"
     },
     {
       "bodyHit": {
@@ -1152,6 +1010,37 @@
       "bodyHit": {
         "field": "bodyExcerpt",
         "markers": [
+          "盲"
+        ],
+        "sample": "不要只写“问了 AI”。要写清楚你给了什么上下文、AI 给了什么方案、你采纳了哪一部分、你拒绝了哪一部分。这样才能证明你不是盲目复制。"
+      },
+      "file": "content/blog/daily-ai-freelance-practice-log.mdx",
+      "humanReviewRequired": true,
+      "manualActions": [
+        "Repair title and description into readable Chinese without changing slug or publish status.",
+        "Compare body excerpt against intended topic and rewrite only the garbled copy after human source review.",
+        "Verify sourceNotes and official source targets still match the repaired claim wording.",
+        "Keep draft/review/published status and noindex unchanged during remediation.",
+        "Rerun integrity, content quality, automation gate, and digest checks before any approval action."
+      ],
+      "metadataHits": [],
+      "noindex": false,
+      "preserveStatus": true,
+      "priorityScore": 100,
+      "publishConfirm": "not-included",
+      "queueSignals": {
+        "inExecutiveTop": false,
+        "inHumanApprovalImmediate": false,
+        "inReviewPortfolio": false,
+        "lanes": []
+      },
+      "status": "published",
+      "title": "新手如何记录每天的项目练习"
+    },
+    {
+      "bodyHit": {
+        "field": "bodyExcerpt",
+        "markers": [
           "枚"
         ],
         "sample": "常见错误是字段设计太随意。比如同一个字段里同时出现“公开”“public”“外部可见”，过滤时就会漏掉一部分资料。metadata filtering 要求字段值稳定，最好提前约定枚举值和填写规则。"
@@ -1307,37 +1196,6 @@
       "bodyHit": {
         "field": "bodyExcerpt",
         "markers": [
-          "冒"
-        ],
-        "sample": "AI 应用刚上线时，大家关心效果；用起来以后，成本问题会很快冒出来。哪个功能最贵，哪个用户消耗最多，哪个模型延迟最高，哪个 Agent 反复调用工具，哪些请求应该缓存，哪些批量任务应该改成异步，这些问题如果没有成本监控，就只能靠猜。大模型成本看板不是财务报表，而是产品和工程优化工具。"
-      },
-      "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
-      "humanReviewRequired": true,
-      "manualActions": [
-        "Repair title and description into readable Chinese without changing slug or publish status.",
-        "Compare body excerpt against intended topic and rewrite only the garbled copy after human source review.",
-        "Verify sourceNotes and official source targets still match the repaired claim wording.",
-        "Keep draft/review/published status and noindex unchanged during remediation.",
-        "Rerun integrity, content quality, automation gate, and digest checks before any approval action."
-      ],
-      "metadataHits": [],
-      "noindex": false,
-      "preserveStatus": true,
-      "priorityScore": 100,
-      "publishConfirm": "not-included",
-      "queueSignals": {
-        "inExecutiveTop": false,
-        "inHumanApprovalImmediate": false,
-        "inReviewPortfolio": false,
-        "lanes": []
-      },
-      "status": "published",
-      "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账"
-    },
-    {
-      "bodyHit": {
-        "field": "bodyExcerpt",
-        "markers": [
           "盲"
         ],
         "sample": "这样写不会显得退缩，反而能让客户知道你在保护项目材料和访问权限。新手项目练习时，清楚边界比盲目承诺更可靠。"
@@ -1402,6 +1260,76 @@
         "markers": [
           "盲"
         ],
+        "sample": "如果任务只允许诊断，就不要承诺修复所有环境。交付物可以是版本差异表、建议目标版本、复测命令和客户待办。对新手来说，这种清楚的诊断单比盲目改生产平台更可靠。"
+      },
+      "file": "content/blog/node-version-mismatch-fix-freelance-scope.mdx",
+      "humanReviewRequired": true,
+      "manualActions": [
+        "Repair title and description into readable Chinese without changing slug or publish status.",
+        "Compare body excerpt against intended topic and rewrite only the garbled copy after human source review.",
+        "Verify sourceNotes and official source targets still match the repaired claim wording.",
+        "Keep draft/review/published status and noindex unchanged during remediation.",
+        "Rerun integrity, content quality, automation gate, and digest checks before any approval action."
+      ],
+      "metadataHits": [],
+      "noindex": false,
+      "preserveStatus": true,
+      "priorityScore": 100,
+      "publishConfirm": "not-included",
+      "queueSignals": {
+        "inExecutiveTop": false,
+        "inHumanApprovalImmediate": false,
+        "inReviewPortfolio": false,
+        "lanes": []
+      },
+      "status": "published",
+      "title": "Node 版本不匹配使用前怎么判断是否适合"
+    },
+    {
+      "bodyHit": {
+        "field": "bodyExcerpt",
+        "markers": [
+          "盲"
+        ],
+        "sample": "### 错误一：盲目升级到最新版"
+      },
+      "file": "content/blog/node-version-mismatch-fix-mistakes.mdx",
+      "humanReviewRequired": true,
+      "manualActions": [
+        "Repair title and description into readable Chinese without changing slug or publish status.",
+        "Compare body excerpt against intended topic and rewrite only the garbled copy after human source review.",
+        "Verify sourceNotes and official source targets still match the repaired claim wording.",
+        "Keep draft/review/published status and noindex unchanged during remediation.",
+        "Rerun integrity, content quality, automation gate, and digest checks before any approval action."
+      ],
+      "metadataHits": [
+        {
+          "field": "description",
+          "markers": [
+            "盲"
+          ],
+          "sample": "整理新手处理 Node 版本不匹配时的常见错误：盲目升级、删除锁文件、混用包管理器、忽略 CI 和部署平台版本、把客户配置当代码问题，并给出修正步骤。"
+        }
+      ],
+      "noindex": false,
+      "preserveStatus": true,
+      "priorityScore": 100,
+      "publishConfirm": "not-included",
+      "queueSignals": {
+        "inExecutiveTop": false,
+        "inHumanApprovalImmediate": false,
+        "inReviewPortfolio": false,
+        "lanes": []
+      },
+      "status": "published",
+      "title": "Node 版本不匹配常见错误和解决步骤"
+    },
+    {
+      "bodyHit": {
+        "field": "bodyExcerpt",
+        "markers": [
+          "盲"
+        ],
         "sample": "也适合准备接小单的人。客户常说“项目跑不起来”，但真实原因可能只是本地 Node 版本和项目要求不一致。你需要先诊断，而不是盲目改代码。"
       },
       "file": "content/blog/node-version-mismatch-fix.mdx",
@@ -1426,6 +1354,39 @@
       },
       "status": "published",
       "title": "Node 版本不匹配怎么排查"
+    },
+    {
+      "bodyHit": null,
+      "file": "content/blog/permission-denied-fix-checklist.mdx",
+      "humanReviewRequired": true,
+      "manualActions": [
+        "Repair title and description into readable Chinese without changing slug or publish status.",
+        "Compare body excerpt against intended topic and rewrite only the garbled copy after human source review.",
+        "Verify sourceNotes and official source targets still match the repaired claim wording.",
+        "Keep draft/review/published status and noindex unchanged during remediation.",
+        "Rerun integrity, content quality, automation gate, and digest checks before any approval action."
+      ],
+      "metadataHits": [
+        {
+          "field": "description",
+          "markers": [
+            "盲"
+          ],
+          "sample": "permission denied 报错处理前，新手要检查命令、路径、用户、权限类型、Git/SSH 账号、部署环境和客户授权边界，避免盲目提权。"
+        }
+      ],
+      "noindex": false,
+      "preserveStatus": true,
+      "priorityScore": 100,
+      "publishConfirm": "not-included",
+      "queueSignals": {
+        "inExecutiveTop": false,
+        "inHumanApprovalImmediate": false,
+        "inReviewPortfolio": false,
+        "lanes": []
+      },
+      "status": "published",
+      "title": "permission denied 报错新手怎么处理：新手检查清单"
     },
     {
       "bodyHit": null,
@@ -1498,6 +1459,37 @@
       },
       "status": "published",
       "title": "RAG 提示词注入怎么防：知识库不能盲目信任文档内容"
+    },
+    {
+      "bodyHit": {
+        "field": "bodyExcerpt",
+        "markers": [
+          "盲"
+        ],
+        "sample": "扩容前先看瓶颈在哪里。盲目加 GPU 不一定解决提示词过长、批处理不合理或模型选择不当的问题。"
+      },
+      "file": "content/blog/ray-serve-llm-deployment-guide.mdx",
+      "humanReviewRequired": true,
+      "manualActions": [
+        "Repair title and description into readable Chinese without changing slug or publish status.",
+        "Compare body excerpt against intended topic and rewrite only the garbled copy after human source review.",
+        "Verify sourceNotes and official source targets still match the repaired claim wording.",
+        "Keep draft/review/published status and noindex unchanged during remediation.",
+        "Rerun integrity, content quality, automation gate, and digest checks before any approval action."
+      ],
+      "metadataHits": [],
+      "noindex": false,
+      "preserveStatus": true,
+      "priorityScore": 100,
+      "publishConfirm": "not-included",
+      "queueSignals": {
+        "inExecutiveTop": false,
+        "inHumanApprovalImmediate": false,
+        "inReviewPortfolio": false,
+        "lanes": []
+      },
+      "status": "published",
+      "title": "Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门"
     },
     {
       "bodyHit": {

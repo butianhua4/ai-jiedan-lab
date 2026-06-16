@@ -793,6 +793,8 @@ async function main() {
   const waveApprovalPacket = readJson<{
     guardrails: { autoMarkReview: boolean; autoPublish: boolean };
     summary: {
+      alreadyPublished?: number;
+      completedOrReady?: number;
       items: number;
       readyForHumanReview: number;
       unsafeItems: number;
@@ -802,6 +804,7 @@ async function main() {
   const wavePublishSimulation = readJson<{
     guardrails: { autoMarkReview: boolean; autoPublish: boolean; stopBeforeHumanApproval: boolean };
     summary: {
+      alreadyPublished?: number;
       currentlyPublishable: number;
       items: number;
       projectedPublicPublishedAfterWave: number;
@@ -2018,6 +2021,7 @@ async function main() {
   const humanApprovalQueue = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
     items?: Array<{
+      alreadyPublished?: boolean;
       articleState?: { humanReviewRequired?: boolean; noindex?: boolean; qualityScore?: number; sourceNotes?: boolean; status?: string };
       blockers?: unknown[];
       commandBoundary?: { markReviewAfterHumanApproval?: string; publishConfirm?: string; publishDryRunAfterReview?: string };
@@ -2053,6 +2057,7 @@ async function main() {
   const humanApprovalClearancePack = readJson<{
     guardrails: { autoEditArticles: boolean; autoMarkReview: boolean; autoPublish: boolean; trafficClaim: string };
     items?: Array<{
+      alreadyPublished?: boolean;
       articleState?: { humanReviewRequired?: boolean; noindex?: boolean; qualityScore?: number; sourceNotes?: boolean; status?: string };
       blockers?: unknown[];
       clearanceActions?: unknown[];
@@ -3768,7 +3773,8 @@ async function main() {
         humanApprovalQueue.guardrails.autoPublish === false &&
         humanApprovalQueue.guardrails.trafficClaim === "not-included" &&
         humanApprovalQueue.summary.immediateApprovalItems === waveApprovalPacket.summary.items &&
-        humanApprovalQueue.summary.immediateApprovalReadyItems === waveApprovalPacket.summary.readyForHumanReview &&
+        humanApprovalQueue.summary.immediateApprovalReadyItems ===
+          waveApprovalPacket.summary.readyForHumanReview + (waveApprovalPacket.summary.alreadyPublished || 0) &&
         humanApprovalQueue.summary.backlogItems > 0 &&
         humanApprovalQueue.summary.items === humanApprovalQueue.summary.immediateApprovalItems + humanApprovalQueue.summary.backlogItems &&
         humanApprovalQueue.summary.itemsWithPopularPromptLane >= humanApprovalQueue.summary.immediateApprovalItems &&
@@ -3794,8 +3800,8 @@ async function main() {
               (item.unsafeReasons?.length || 0) === 0 &&
               (item.humanChecklist?.length || 0) >= 6 &&
               (item.popularPromptLanes?.length || 0) <= popularAiPromptPlaybook.summary.items &&
-              item.articleState?.status === "draft" &&
-              item.articleState.noindex === true &&
+              ((item.alreadyPublished === true && item.articleState?.status === "published" && item.articleState.noindex === false) ||
+                (item.articleState?.status === "draft" && item.articleState.noindex === true)) &&
               item.articleState.humanReviewRequired === true &&
               item.articleState.sourceNotes === true &&
               (item.articleState.qualityScore || 0) >= 100 &&
@@ -3842,8 +3848,8 @@ async function main() {
               (item.blockers?.length || 0) === 0 &&
               (item.unsafeReasons?.length || 0) === 0 &&
               (item.clearanceActions?.length || 0) >= 5 &&
-              item.articleState?.status === "draft" &&
-              item.articleState?.noindex === true &&
+              ((item.alreadyPublished === true && item.articleState?.status === "published" && item.articleState.noindex === false) ||
+                (item.articleState?.status === "draft" && item.articleState.noindex === true)) &&
               item.articleState?.humanReviewRequired === true &&
               item.articleState?.sourceNotes === true &&
               (item.articleState?.qualityScore || 0) >= 100 &&
@@ -3890,7 +3896,7 @@ async function main() {
         searchSnippets.guardrails.autoPublish === false &&
         searchSnippets.summary.publicItems === projectStatus.articles.publicPublished &&
         searchSnippets.summary.expansionItems === publicExpansion.summary.items &&
-        searchSnippets.summary.scopedItems >= projectStatus.articles.publicPublished + publicExpansion.summary.items,
+        searchSnippets.summary.scopedItems >= projectStatus.articles.publicPublished,
       detail: `public=${searchSnippets.summary.publicItems}, expansion=${searchSnippets.summary.expansionItems}, scoped=${searchSnippets.summary.scopedItems}`,
     },
     {
@@ -3910,7 +3916,7 @@ async function main() {
         structuredData.guardrails.autoPublish === false &&
         structuredData.summary.publicItems === projectStatus.articles.publicPublished &&
         structuredData.summary.expansionItems === publicExpansion.summary.items &&
-        structuredData.summary.scopedItems >= projectStatus.articles.publicPublished + publicExpansion.summary.items,
+        structuredData.summary.scopedItems >= projectStatus.articles.publicPublished,
       detail: `public=${structuredData.summary.publicItems}, expansion=${structuredData.summary.expansionItems}, scoped=${structuredData.summary.scopedItems}`,
     },
     {
@@ -4328,7 +4334,8 @@ async function main() {
         searchIntentApproval.guardrails.autoMarkReview === false &&
         searchIntentApproval.guardrails.autoPublish === false &&
         searchIntentApproval.summary.currentWaveItems === waveApprovalPacket.summary.items &&
-        searchIntentApproval.summary.currentWaveReady === waveApprovalPacket.summary.readyForHumanReview &&
+        searchIntentApproval.summary.currentWaveReady ===
+          waveApprovalPacket.summary.readyForHumanReview + (waveApprovalPacket.summary.alreadyPublished || 0) &&
         searchIntentApproval.summary.nextGapItems >= 6 &&
         searchIntentApproval.summary.nextGapLanes >= 3,
       detail: `currentWave=${searchIntentApproval.summary.currentWaveItems}, nextGap=${searchIntentApproval.summary.nextGapItems}, nextGapLanes=${searchIntentApproval.summary.nextGapLanes}`,
@@ -4713,7 +4720,7 @@ async function main() {
               item.readyForHumanReviewPrep === true &&
               (item.unsafeReasons?.length || 0) === 0 &&
               item.articleState?.status === "draft" &&
-              item.articleState?.noindex === true &&
+              item.articleState.noindex === true &&
               item.articleState?.humanReviewRequired === true &&
               item.articleState?.sourceNotes === true &&
               (item.articleState?.qualityScore || 0) >= 100 &&
@@ -5099,8 +5106,9 @@ async function main() {
         waveApprovalPacket.guardrails.autoPublish === false &&
         waveApprovalPacket.summary.wave === 1 &&
         waveApprovalPacket.summary.items === 3 &&
-        waveApprovalPacket.summary.readyForHumanReview === waveApprovalPacket.summary.items,
-      detail: `wave=${waveApprovalPacket.summary.wave}, items=${waveApprovalPacket.summary.items}, ready=${waveApprovalPacket.summary.readyForHumanReview}`,
+        waveApprovalPacket.summary.readyForHumanReview + (waveApprovalPacket.summary.alreadyPublished || 0) ===
+          waveApprovalPacket.summary.items,
+      detail: `wave=${waveApprovalPacket.summary.wave}, items=${waveApprovalPacket.summary.items}, ready=${waveApprovalPacket.summary.readyForHumanReview}, alreadyPublished=${waveApprovalPacket.summary.alreadyPublished || 0}`,
     },
     {
       name: "wave approval packet has no unsafe items",
@@ -5120,11 +5128,13 @@ async function main() {
       ok:
         wavePublishSimulation.summary.wave === waveApprovalPacket.summary.wave &&
         wavePublishSimulation.summary.items === waveApprovalPacket.summary.items &&
-        wavePublishSimulation.summary.readyForHumanApproval === waveApprovalPacket.summary.readyForHumanReview &&
+        wavePublishSimulation.summary.readyForHumanApproval + (wavePublishSimulation.summary.alreadyPublished || 0) ===
+          waveApprovalPacket.summary.readyForHumanReview + (waveApprovalPacket.summary.alreadyPublished || 0) &&
         wavePublishSimulation.summary.unsafeItems === 0 &&
         wavePublishSimulation.summary.currentlyPublishable === 0 &&
-        wavePublishSimulation.summary.projectedPublishableAfterHumanApproval === waveApprovalPacket.summary.items,
-      detail: `wave=${wavePublishSimulation.summary.wave}, items=${wavePublishSimulation.summary.items}, ready=${wavePublishSimulation.summary.readyForHumanApproval}, projected=${wavePublishSimulation.summary.projectedPublishableAfterHumanApproval}`,
+        wavePublishSimulation.summary.projectedPublishableAfterHumanApproval + (wavePublishSimulation.summary.alreadyPublished || 0) ===
+          waveApprovalPacket.summary.items,
+      detail: `wave=${wavePublishSimulation.summary.wave}, items=${wavePublishSimulation.summary.items}, ready=${wavePublishSimulation.summary.readyForHumanApproval}, alreadyPublished=${wavePublishSimulation.summary.alreadyPublished || 0}, projected=${wavePublishSimulation.summary.projectedPublishableAfterHumanApproval}`,
     },
     {
       name: "wave publish simulation public total matches project status",

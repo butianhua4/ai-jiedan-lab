@@ -47,7 +47,7 @@ jobs:
         shell: bash
         run: |
           set +e
-          npm run live:check -- --url=https://ai-jiedan-lab.vercel.app --json=content/automation/live-search-surface.json --markdown=docs/live-search-surface.md
+          npm run live:check -- --url=https://ai-jiedan-lab.vercel.app --json=content/automation/live-search-surface.json --markdown=docs/live-search-surface.md --article-concurrency=4 --fetch-retries=6 --fetch-timeout-ms=30000
           code=$?
           echo "LIVE_SEARCH_SURFACE_EXIT_CODE=$code" >> "$GITHUB_ENV"
           exit 0

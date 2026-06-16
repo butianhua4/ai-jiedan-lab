@@ -1,6 +1,6 @@
 # Publication Bottleneck Report
 
-Generated at: 2026-06-16T12:27:48.620Z
+Generated at: 2026-06-16T05:24:13.817Z
 
 This report is read-only. It explains why public article growth is gated and what to review next.
 
@@ -15,17 +15,17 @@ This report is read-only. It explains why public article growth is gated and wha
 
 ## Summary
 
-- approvalBacklogItems: 0
+- approvalBacklogItems: 5
 - contentIntegrityBlockingItems: 0
 - contentIntegrityWarningItems: 77
 - currentPublishableNow: 0
 - immediateApprovalItems: 3
 - immediateApprovalReadyItems: 3
-- nextBatchActionItems: 42
+- nextBatchActionItems: 34
 - nextBatchWarningItems: 3
 - publicArticles: 500
-- publicMojibakeWarningItems: 51
-- publicRefreshActionItems: 5154
+- publicMojibakeWarningItems: 9
+- publicRefreshActionItems: 181
 - publishConfirmCommandsIncluded: 0
 - reviewPreflightFailed: 0
 - reviewPreflightMojibakeWarningItems: 0
@@ -40,39 +40,39 @@ This report is read-only. It explains why public article growth is gated and wha
 - No article is publishable without explicit human approval.
 - 3 draft article(s) are ready for human approval before mark:review.
 - 3 next-batch route item(s) still need SEO/query/freshness remediation review.
-- 51 public article(s) need garbled-copy refresh before traffic work is credible.
+- 9 public article(s) need garbled-copy refresh before traffic work is credible.
 - Traffic data is unavailable, so traffic claims remain blocked.
 
 ## Next Human Approval
 
 | Priority | Gate | Reason | Title | File |
 | ---: | --- | --- | --- | --- |
-| 446 | explicit human approval required | Immediate Wave 1; projected public count after human approval is 503. | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| 439 | explicit human approval required | Immediate Wave 1; projected public count after human approval is 503. | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| 415 | explicit human approval required | Immediate Wave 1; projected public count after human approval is 503. | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
+| 777 | explicit human approval required | Immediate Wave 1; projected public count after human approval is 18. | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 773 | explicit human approval required | Immediate Wave 1; projected public count after human approval is 18. | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 769 | explicit human approval required | Immediate Wave 1; projected public count after human approval is 18. | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
 ## Immediate Approval Queue
 
 | Priority | Unsafe reasons | Title | File |
 | ---: | --- | --- | --- |
-| 446 | none | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| 439 | none | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| 415 | none | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
+| 777 | none | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| 773 | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 769 | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
 ## Next Batch Warnings
 
 | Priority | Actions | Warnings | Title | File |
 | ---: | ---: | --- | --- | --- |
-| 511 | 14 | search query match warning exists | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| 510 | 14 | not yet matched in human approval clearance pack<br>no copydesk optimization brief matched<br>no freshness brief matched<br>search query match warning exists | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
-| 509 | 14 | not yet matched in human approval clearance pack<br>no copydesk optimization brief matched<br>no freshness brief matched<br>search query match warning exists | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
+| 872 | 15 | not yet matched in human approval clearance pack<br>no copydesk optimization brief matched<br>search query match warning exists | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 820 | 10 | not yet matched in human approval clearance pack | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| 798 | 9 | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
 
 ## Public Refresh Warnings
 
 | Priority | Actions | Reasons | Title | File |
 | ---: | ---: | --- | --- | --- |
+| 245 | 13 | mojibake-public<br>seo-warning<br>cannibalization<br>freshness-high<br>high-priority | Codex 和 Claude Code 怎么选：新手对比清单 | content/blog/codex-vs-claude-code-beginner-checklist.mdx |
 | 240 | 13 | mojibake-public<br>seo-warning<br>short-description<br>freshness-high<br>high-priority | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
-| 235 | 13 | mojibake-public<br>seo-warning<br>short-description<br>cannibalization<br>high-priority | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
-| 235 | 13 | mojibake-public<br>seo-warning<br>short-description<br>cannibalization<br>high-priority | Canva 作品集封面发布前检查清单 | content/blog/canva-portfolio-cover-tips-checklist.mdx |
-| 235 | 13 | mojibake-public<br>seo-warning<br>short-description<br>cannibalization<br>high-priority | Claude Code 新手使用检查清单 | content/blog/claude-code-beginner-mistakes-checklist.mdx |
-| 235 | 13 | mojibake-public<br>seo-warning<br>short-description<br>cannibalization<br>high-priority | Claude Code 新手常见错误和修正方法 | content/blog/claude-code-beginner-mistakes-mistakes.mdx |
+| 230 | 12 | mojibake-public<br>seo-warning<br>freshness-high<br>high-priority | Codex 和 GitHub 怎么配合：提交代码前检查 | content/blog/codex-github-before-commit-checklist.mdx |
+| 230 | 12 | mojibake-public<br>seo-warning<br>freshness-high<br>high-priority | Codex 部署 Vercel 前检查什么：上线前清单 | content/blog/codex-vercel-deploy-preflight-checklist.mdx |
+| 225 | 14 | mojibake-public<br>short-description<br>cannibalization<br>freshness-high<br>high-priority | Codex 怎么做第一个网页 | content/blog/build-first-webpage-with-codex.mdx |

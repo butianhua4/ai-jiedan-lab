@@ -1,243 +1,12 @@
 {
-  "generatedAt": "2026-06-16T12:28:11.467Z",
-  "ok": false,
+  "generatedAt": "2026-06-16T12:51:10.598Z",
+  "ok": true,
   "summary": {
     "checks": 197,
-    "failed": 46,
-    "passed": 151
+    "failed": 0,
+    "passed": 197
   },
-  "failed": [
-    {
-      "name": "review batch plan stays manual and has candidates",
-      "ok": false,
-      "detail": "batches=3, candidates=6"
-    },
-    {
-      "name": "publish pack includes human decision and risk context",
-      "ok": false,
-      "detail": "content/blog/tools-not-to-buy-first.mdx"
-    },
-    {
-      "name": "internal link sprint board covers all linkable candidates",
-      "ok": false,
-      "detail": "items=16, waves=4, public=500, suggestions=48"
-    },
-    {
-      "name": "review action board tasks are ready and preserve command boundaries",
-      "ok": false,
-      "detail": "ready=2, unsafe=1"
-    },
-    {
-      "name": "autopilot human review playbook covers approval packet",
-      "ok": false,
-      "detail": "items=3, ready=1, unsafe=2"
-    },
-    {
-      "name": "autopilot human review playbook keeps actions human-gated",
-      "ok": false,
-      "detail": "commands=3, search=3, source=3, links=3"
-    },
-    {
-      "name": "autopilot approval remediation pack covers approval packet",
-      "ok": false,
-      "detail": "items=3, ready=1, unsafe=2"
-    },
-    {
-      "name": "autopilot approval remediation pack has actionable human fixes",
-      "ok": false,
-      "detail": "commands=3, links=3, search=3, source=3, sourceUrlFixes=3/26"
-    },
-    {
-      "name": "human approval decision matrix covers approval packet",
-      "ok": false,
-      "detail": "rows=3, approvals=3, unsafe=0"
-    },
-    {
-      "name": "human approval repair queue covers decision matrix",
-      "ok": false,
-      "detail": "files=3, tasks=55, minimum=3/16, blockers=0/0, unsafe=0"
-    },
-    {
-      "name": "human approval repair route covers repair queue",
-      "ok": false,
-      "detail": "files=3, minimumTasks=16, sessions=12, next=content/blog/vercel-ai-gateway-multi-provider-guide.mdx"
-    },
-    {
-      "name": "human approval repair route stays manual and non-publishing",
-      "ok": false,
-      "detail": "sessions=12, publishConfirm=0, highRisk=6"
-    },
-    {
-      "name": "human approval repair progress covers repair route",
-      "ok": false,
-      "detail": "files=3, categories=18, open=8, blocked=2"
-    },
-    {
-      "name": "human approval repair progress stays manual and non-publishing",
-      "ok": false,
-      "detail": "readyAfterRepair=0, open=8, evidenceReady=3, publishConfirm=0"
-    },
-    {
-      "name": "human approval repair session pack covers current repair progress",
-      "ok": false,
-      "detail": "files=3, actions=161, sourceUrl=47, sourceTargets=14"
-    },
-    {
-      "name": "human approval repair session pack stays manual and non-publishing",
-      "ok": false,
-      "detail": "unsafe=2, publishConfirm=0, readyAfterRepair=0"
-    },
-    {
-      "name": "autopilot review sprint board covers next assignments",
-      "ok": false,
-      "detail": "items=8, readyWithPlaybook=1, queued=7, needsQuery=2, unsafe=0"
-    },
-    {
-      "name": "autopilot queued playbook brief has complete human-gated actions",
-      "ok": false,
-      "detail": "ready=7, search=7, source=7, links=6"
-    },
-    {
-      "name": "autopilot broad AI demand brief is read-only and source-backed",
-      "ok": false,
-      "detail": "clusters=8, sources=24, readyFiles=7, unsafe=0"
-    },
-    {
-      "name": "autopilot broad AI demand brief covers broad search lanes",
-      "ok": false,
-      "detail": "clusters=8, withoutPublic=0, withReady=4"
-    },
-    {
-      "name": "autopilot broad freshness triage is read-only and prioritizes high-risk demand candidates",
-      "ok": false,
-      "detail": "items=7, highRisk=6, clusters=3, unsafe=0"
-    },
-    {
-      "name": "autopilot broad publish waves are read-only and small-batch",
-      "ok": false,
-      "detail": "waves=3, items=7, maxPerWave=3, unsafe=0"
-    },
-    {
-      "name": "human approval execution queue is read-only and covers approval wave",
-      "ok": false,
-      "detail": "items=3, immediate=3, backlog=0, promptLanes=3, projected=503"
-    },
-    {
-      "name": "AI deployment coverage has broad reviewable coverage",
-      "ok": false,
-      "detail": "topics=10, withCandidates=8, reviewReady=32, unique=18"
-    },
-    {
-      "name": "AI deployment review pack is read-only and covers deployment topics",
-      "ok": false,
-      "detail": "items=6, topics=6/10, unique=6, duplicates=0"
-    },
-    {
-      "name": "AI deployment sprint board covers deployment tutorials across lanes",
-      "ok": false,
-      "detail": "items=6, lanes=4, modes=4, queries=24, sources=10"
-    },
-    {
-      "name": "AI deployment sprint board keeps deployment work human-gated and publish-safe",
-      "ok": false,
-      "detail": "ready=6, actions=88, unsafe=0, publishConfirm=0"
-    },
-    {
-      "name": "industry prompt coverage has broad reviewable coverage",
-      "ok": false,
-      "detail": "industries=16, withCandidates=0, reviewReady=0, unique=0"
-    },
-    {
-      "name": "industry prompt review pack is read-only and deduplicated",
-      "ok": false,
-      "detail": "items=0, unique=0, duplicates=0"
-    },
-    {
-      "name": "industry prompt opportunity board connects to reviewable content",
-      "ok": false,
-      "detail": "withReviewCandidate=0, zeroPublic=0"
-    },
-    {
-      "name": "industry prompt module pack has reusable prompt blueprints and human gates",
-      "ok": false,
-      "detail": "safe=true, gated=12, copyPrompts=12, reviewBridge=0"
-    },
-    {
-      "name": "search intent lane map is read-only and broad",
-      "ok": false,
-      "detail": "lanes=12, highPriority=7, withReadyDrafts=7"
-    },
-    {
-      "name": "search intent lane map includes sources, review focus, and safe candidates",
-      "ok": false,
-      "detail": "readyDraftMatches=22, noPublicCoverage=0, notReadyMatched=57"
-    },
-    {
-      "name": "search intent approval packet is read-only and covers current wave plus next gaps",
-      "ok": false,
-      "detail": "currentWave=3, nextGap=0, nextGapLanes=0"
-    },
-    {
-      "name": "search demand intake is read-only and covers broad user-search lanes",
-      "ok": false,
-      "detail": "lanes=8, readyLanes=7, readyFiles=24, unsafe=1"
-    },
-    {
-      "name": "search demand intake packages sources, formats, and manual review boundaries",
-      "ok": false,
-      "detail": "queries=81, sources=29, formats=32, queueMatches=10"
-    },
-    {
-      "name": "search demand review pack is read-only and covers intake lanes",
-      "ok": false,
-      "detail": "lanes=8, items=11, maxPerLane=2, unsafe=0"
-    },
-    {
-      "name": "broad search demand map is read-only and covers major demand themes",
-      "ok": false,
-      "detail": "themes=10, readyThemes=6, uniqueCandidates=27"
-    },
-    {
-      "name": "broad search demand map links demand, sources, and planned review waves",
-      "ok": false,
-      "detail": "officialSources=13, reviewPackMatches=2, waveMatches=15, readyMatches=82"
-    },
-    {
-      "name": "mass AI search action matrix is read-only and covers broad themes",
-      "ok": false,
-      "detail": "items=8/8, broad=10, unique=27, traffic=false"
-    },
-    {
-      "name": "mass AI search action matrix keeps prompt and deployment work human-gated",
-      "ok": false,
-      "detail": "ready=6, deploy=4, prompt=0, unsafe=2"
-    },
-    {
-      "name": "popular AI prompt playbook keeps templates human-gated and publish-safe",
-      "ok": false,
-      "detail": "ready=3, templates=50, queries=139, uniqueFiles=21, publishConfirm=0"
-    },
-    {
-      "name": "popular prompt approval bridge is read-only and covers every popular prompt lane",
-      "ok": false,
-      "detail": "lanes=10, next=5, readyNext=3, alreadyQueued=5"
-    },
-    {
-      "name": "popular prompt approval bridge keeps next candidates human-gated and publish-safe",
-      "ok": false,
-      "detail": "items=13, ready=7, templates=65, uniqueFiles=7, publishConfirm=0"
-    },
-    {
-      "name": "popular prompt sprint board keeps prompt expansion manual and publish-safe",
-      "ok": false,
-      "detail": "ready=3, actions=90, nextFiles=7, publishConfirm=0"
-    },
-    {
-      "name": "public coverage gap plan keeps candidates safe for manual review",
-      "ok": false,
-      "detail": "ready=0, unsafe=0, waves=0"
-    }
-  ],
+  "failed": [],
   "checks": [
     {
       "name": "review automation never auto-publishes",
@@ -246,12 +15,12 @@
     {
       "name": "publish pack matches recommended review files",
       "ok": true,
-      "detail": "review=content/blog/tools-not-to-buy-first.mdx, content/blog/vector-database-selection-for-rag-guide.mdx, content/blog/vercel-ai-gateway-multi-provider-guide.mdx pack=content/blog/tools-not-to-buy-first.mdx, content/blog/vector-database-selection-for-rag-guide.mdx, content/blog/vercel-ai-gateway-multi-provider-guide.mdx"
+      "detail": "review=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx, content/blog/industry-ai-prompts-template-library-2026.mdx, content/blog/ai-model-selection-customer-service-guide.mdx pack=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx, content/blog/industry-ai-prompts-template-library-2026.mdx, content/blog/ai-model-selection-customer-service-guide.mdx"
     },
     {
       "name": "review batch plan stays manual and has candidates",
-      "ok": false,
-      "detail": "batches=3, candidates=6"
+      "ok": true,
+      "detail": "batches=3, candidates=9"
     },
     {
       "name": "publish pack includes source verification tasks",
@@ -260,8 +29,8 @@
     },
     {
       "name": "publish pack includes human decision and risk context",
-      "ok": false,
-      "detail": "content/blog/tools-not-to-buy-first.mdx"
+      "ok": true,
+      "detail": "3 item(s) covered"
     },
     {
       "name": "recommended review candidates pass preflight",
@@ -276,7 +45,7 @@
     {
       "name": "recommended review clusters are diverse",
       "ok": true,
-      "detail": "Other, RAG and knowledge base, AI deployment"
+      "detail": "Agent and memory, Industry AI prompts, RAG and knowledge base"
     },
     {
       "name": "SEO safety check passed",
@@ -316,7 +85,7 @@
     {
       "name": "autopilot executive brief stays human-gated and publish-safe",
       "ok": true,
-      "detail": "unsafe=0, publishConfirm=0, publishableNow=0, routeWarnings=3"
+      "detail": "unsafe=0, publishConfirm=0, publishableNow=0, routeWarnings=2"
     },
     {
       "name": "publication bottleneck report explains manual gate",
@@ -366,7 +135,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=220, unsafeClaims=0, watchMentions=9544"
+      "detail": "filesScanned=219, unsafeClaims=0, watchMentions=3829"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -386,7 +155,7 @@
     {
       "name": "internal link opportunity audit is read-only and covers expansion candidates",
       "ok": true,
-      "detail": "public=500, expansion=15, broadFirst=0, candidates=16"
+      "detail": "public=500, expansion=19, broadFirst=8, candidates=22"
     },
     {
       "name": "internal link opportunity audit has public suggestions for Wave 1",
@@ -395,73 +164,73 @@
     },
     {
       "name": "internal link sprint board covers all linkable candidates",
-      "ok": false,
-      "detail": "items=16, waves=4, public=500, suggestions=48"
+      "ok": true,
+      "detail": "items=22, waves=6, public=500, suggestions=66"
     },
     {
       "name": "internal link sprint board keeps link edits manual and publish-safe",
       "ok": true,
-      "detail": "ready=16, actions=128, unsafe=0, publishConfirm=0"
+      "detail": "ready=22, actions=176, unsafe=0, publishConfirm=0"
     },
     {
       "name": "source target health audit is read-only and covers review source scopes",
       "ok": true,
-      "detail": "broadFirst=0, current=3, publicGap=0, next=15, files=16"
+      "detail": "broadFirst=8, current=3, publicGap=13, next=19, files=23"
     },
     {
       "name": "source target health audit has reachable URLs for every covered review file",
       "ok": true,
-      "detail": "checked=14, ok=14, failed=0, missingTargets=0, filesWithoutReachable=0"
+      "detail": "checked=40, ok=39, failed=1, missingTargets=0, filesWithoutReachable=0"
     },
     {
       "name": "source target remediation pack is read-only and mirrors source health counts",
       "ok": true,
-      "detail": "items=10, failed=0/0, redirected=10/10"
+      "detail": "items=19, failed=1/1, redirected=18/18"
     },
     {
       "name": "source target remediation pack keeps every source fix human-gated",
       "ok": true,
-      "detail": "ready=10, unsafe=0, gated=10, replacementCandidates=0"
+      "detail": "ready=19, unsafe=0, gated=19, replacementCandidates=8"
     },
     {
       "name": "source replacement decision pack is read-only and mirrors remediation counts",
       "ok": true,
-      "detail": "decisions=71, remediation=10, failed=0/0, redirected=71/10"
+      "detail": "decisions=115, remediation=19, failed=1/1, redirected=114/18"
     },
     {
       "name": "source replacement decision pack keeps file-level decisions human-gated",
       "ok": true,
-      "detail": "unsafe=0, gated=71, recommended=0, official=0"
+      "detail": "unsafe=0, gated=115, recommended=1, official=1"
     },
     {
       "name": "review action board is read-only and covers active review queues",
       "ok": true,
-      "detail": "tasks=3, wave=3, publicGap=0"
+      "detail": "tasks=16, wave=3, publicGap=13"
     },
     {
       "name": "review action board tasks are ready and preserve command boundaries",
-      "ok": false,
-      "detail": "ready=2, unsafe=1"
+      "ok": true,
+      "detail": "ready=16, unsafe=0"
     },
     {
       "name": "review portfolio board deduplicates all review packs",
       "ok": true,
-      "detail": "sourceCandidates=9, uniqueItems=8, duplicates=1, multiSource=1"
+      "detail": "sourceCandidates=38, uniqueItems=26, duplicates=12, multiSource=10"
     },
     {
       "name": "review portfolio board keeps unique candidates safe and human-gated",
       "ok": true,
-      "detail": "ready=8, safe=8, sources=8, commands=8"
+      "detail": "ready=26, safe=26, sources=26, commands=26"
     },
     {
       "name": "autopilot review queue is read-only and covers portfolio candidates",
       "ok": true,
-      "detail": "items=8, next=8, sources=8"
+      "detail": "items=26, next=10, sources=26"
     },
     {
       "name": "autopilot review queue keeps assignments safe and human-gated",
       "ok": true,
-      "detail": "ready=8, blocked=0, safe=8, unsafe=0"
+      "detail": "ready=25, blocked=1, safe=26, unsafe=0"
     },
     {
       "name": "autopilot approval packet packages the top safe assignments",
@@ -476,27 +245,27 @@
     {
       "name": "autopilot search intent brief covers approval packet",
       "ok": true,
-      "detail": "items=3, weak=3, unsafe=0"
+      "detail": "items=3, weak=2, unsafe=0"
     },
     {
       "name": "autopilot search intent brief produces human review suggestions",
       "ok": true,
-      "detail": "title=0, description=0, heading=0, body=2"
+      "detail": "title=1, description=1, heading=0, body=1"
     },
     {
       "name": "autopilot internal link brief covers approval packet",
       "ok": true,
-      "detail": "items=3, public=500, unsafe=0"
+      "detail": "items=3, public=15, unsafe=0"
     },
     {
       "name": "autopilot internal link brief provides public link suggestions",
       "ok": true,
-      "detail": "suggestions=3, missingCurrentPublicLink=1, alreadyLinked=2"
+      "detail": "suggestions=3, missingCurrentPublicLink=3, alreadyLinked=0"
     },
     {
       "name": "autopilot source verification brief covers approval packet",
       "ok": true,
-      "detail": "items=3, reachable=14, unsafe=0"
+      "detail": "items=3, reachable=26, unsafe=0"
     },
     {
       "name": "autopilot source verification brief provides source-backed review tasks",
@@ -505,27 +274,27 @@
     },
     {
       "name": "autopilot human review playbook covers approval packet",
-      "ok": false,
-      "detail": "items=3, ready=1, unsafe=2"
+      "ok": true,
+      "detail": "items=3, ready=3, unsafe=0"
     },
     {
       "name": "autopilot human review playbook keeps actions human-gated",
-      "ok": false,
+      "ok": true,
       "detail": "commands=3, search=3, source=3, links=3"
     },
     {
       "name": "autopilot approval remediation pack covers approval packet",
-      "ok": false,
-      "detail": "items=3, ready=1, unsafe=2"
+      "ok": true,
+      "detail": "items=3, ready=3, unsafe=0"
     },
     {
       "name": "autopilot approval remediation pack has actionable human fixes",
-      "ok": false,
-      "detail": "commands=3, links=3, search=3, source=3, sourceUrlFixes=3/26"
+      "ok": true,
+      "detail": "commands=3, links=3, search=3, source=3, sourceUrlFixes=3/35"
     },
     {
       "name": "human approval decision matrix covers approval packet",
-      "ok": false,
+      "ok": true,
       "detail": "rows=3, approvals=3, unsafe=0"
     },
     {
@@ -535,63 +304,63 @@
     },
     {
       "name": "human approval repair queue covers decision matrix",
-      "ok": false,
-      "detail": "files=3, tasks=55, minimum=3/16, blockers=0/0, unsafe=0"
+      "ok": true,
+      "detail": "files=3, tasks=57, minimum=3/18, blockers=0/0, unsafe=0"
     },
     {
       "name": "human approval repair queue stays manual and non-publishing",
       "ok": true,
-      "detail": "humanGated=55/55, minimum=3/16, publishConfirm=0"
+      "detail": "humanGated=57/57, minimum=3/18, publishConfirm=0"
     },
     {
       "name": "human approval repair route covers repair queue",
-      "ok": false,
-      "detail": "files=3, minimumTasks=16, sessions=12, next=content/blog/vercel-ai-gateway-multi-provider-guide.mdx"
+      "ok": true,
+      "detail": "files=3, minimumTasks=18, sessions=12, next=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx"
     },
     {
       "name": "human approval repair route stays manual and non-publishing",
-      "ok": false,
+      "ok": true,
       "detail": "sessions=12, publishConfirm=0, highRisk=6"
     },
     {
       "name": "human approval repair progress covers repair route",
-      "ok": false,
-      "detail": "files=3, categories=18, open=8, blocked=2"
+      "ok": true,
+      "detail": "files=3, categories=18, open=11, blocked=0"
     },
     {
       "name": "human approval repair progress stays manual and non-publishing",
-      "ok": false,
-      "detail": "readyAfterRepair=0, open=8, evidenceReady=3, publishConfirm=0"
+      "ok": true,
+      "detail": "readyAfterRepair=0, open=11, evidenceReady=3, publishConfirm=0"
     },
     {
       "name": "human approval repair session pack covers current repair progress",
-      "ok": false,
-      "detail": "files=3, actions=161, sourceUrl=47, sourceTargets=14"
+      "ok": true,
+      "detail": "files=3, actions=194, sourceUrl=63, sourceTargets=19"
     },
     {
       "name": "human approval repair session pack stays manual and non-publishing",
-      "ok": false,
-      "detail": "unsafe=2, publishConfirm=0, readyAfterRepair=0"
+      "ok": true,
+      "detail": "unsafe=0, publishConfirm=0, readyAfterRepair=0"
     },
     {
       "name": "autopilot review sprint board covers next assignments",
-      "ok": false,
-      "detail": "items=8, readyWithPlaybook=1, queued=7, needsQuery=2, unsafe=0"
+      "ok": true,
+      "detail": "items=10, readyWithPlaybook=3, queued=7, needsQuery=0, unsafe=0"
     },
     {
       "name": "autopilot review sprint board keeps sprint actions human-gated",
       "ok": true,
-      "detail": "ready=8, commands=8, queries=6, sources=8"
+      "detail": "ready=10, commands=10, queries=10, sources=10"
     },
     {
       "name": "autopilot search query gap brief covers sprint query gaps",
       "ok": true,
-      "detail": "items=2, sprintNeedsQuery=2, unsafe=0"
+      "detail": "items=0, sprintNeedsQuery=0, unsafe=0"
     },
     {
       "name": "autopilot search query gap brief has source-backed manual query suggestions",
       "ok": true,
-      "detail": "ready=2, coverage=2, recommended=20, sources=2"
+      "detail": "ready=0, coverage=0, recommended=0, sources=0"
     },
     {
       "name": "autopilot queued playbook brief covers queued sprint items",
@@ -600,8 +369,8 @@
     },
     {
       "name": "autopilot queued playbook brief has complete human-gated actions",
-      "ok": false,
-      "detail": "ready=7, search=7, source=7, links=6"
+      "ok": true,
+      "detail": "ready=7, search=7, source=7, links=7"
     },
     {
       "name": "autopilot queued remediation pack covers queued playbook items",
@@ -615,153 +384,153 @@
     },
     {
       "name": "autopilot broad AI demand brief is read-only and source-backed",
-      "ok": false,
-      "detail": "clusters=8, sources=24, readyFiles=7, unsafe=0"
+      "ok": true,
+      "detail": "clusters=8, sources=24, readyFiles=33, unsafe=0"
     },
     {
       "name": "autopilot broad AI demand brief covers broad search lanes",
-      "ok": false,
-      "detail": "clusters=8, withoutPublic=0, withReady=4"
+      "ok": true,
+      "detail": "clusters=8, withoutPublic=8, withReady=8"
     },
     {
       "name": "autopilot broad freshness triage is read-only and prioritizes high-risk demand candidates",
-      "ok": false,
-      "detail": "items=7, highRisk=6, clusters=3, unsafe=0"
+      "ok": true,
+      "detail": "items=24, highRisk=24, clusters=7, unsafe=0"
     },
     {
       "name": "autopilot broad freshness triage has complete human fact-check packets",
       "ok": true,
-      "detail": "ready=7, factChecks=7, sources=7"
+      "detail": "ready=24, factChecks=24, sources=24"
     },
     {
       "name": "autopilot broad publish waves are read-only and small-batch",
-      "ok": false,
-      "detail": "waves=3, items=7, maxPerWave=3, unsafe=0"
+      "ok": true,
+      "detail": "waves=8, items=24, maxPerWave=3, unsafe=0"
     },
     {
       "name": "autopilot broad publish waves preserve human approval command boundaries",
       "ok": true,
-      "detail": "ready=7, safe=7, approvalWaves=3"
+      "detail": "ready=24, safe=24, approvalWaves=8"
     },
     {
       "name": "autopilot broad wave optimization is read-only and covers publish waves",
       "ok": true,
-      "detail": "items=7, waves=3, readyWaves=3, unsafe=0"
+      "detail": "items=24, waves=8, readyWaves=8, unsafe=0"
     },
     {
       "name": "autopilot broad wave optimization has actionable SEO and approval guidance",
       "ok": true,
-      "detail": "ready=7, checklists=7, links=5"
+      "detail": "ready=24, checklists=24, links=16"
     },
     {
       "name": "autopilot broad wave remediation pack covers optimization items",
       "ok": true,
-      "detail": "items=7, waves=3, readyWaves=3, unsafe=0"
+      "detail": "items=24, waves=8, readyWaves=8, unsafe=0"
     },
     {
       "name": "autopilot broad wave remediation pack has human-gated fixes",
       "ok": true,
-      "detail": "ready=7, search=7, source=7, linkPlan=7, missingSpecificLinks=2"
+      "detail": "ready=24, search=24, source=24, linkPlan=24, missingSpecificLinks=8"
     },
     {
       "name": "broad first coverage launch pack is read-only and covers zero-public clusters",
       "ok": true,
-      "detail": "selected=0, zeroPublic=0, unique=0, unsafe=0"
+      "detail": "selected=8, zeroPublic=8, unique=8, unsafe=0"
     },
     {
       "name": "broad first coverage launch pack preserves human review boundaries",
       "ok": true,
-      "detail": "safe=0, commands=0, sources=0, checks=0"
+      "detail": "safe=8, commands=8, sources=8, checks=8"
     },
     {
       "name": "broad first coverage readiness matrix is read-only and covers launch pack",
       "ok": true,
-      "detail": "items=0, unique=0, blocking=0, unsafe=0"
+      "detail": "items=8, unique=8, blocking=0, unsafe=0"
     },
     {
       "name": "broad first coverage readiness matrix has review evidence and command boundaries",
       "ok": true,
-      "detail": "commands=0, preflight=0, source=0, links=0"
+      "detail": "commands=8, preflight=8, source=8, links=8"
     },
     {
       "name": "human approval execution queue is read-only and covers approval wave",
-      "ok": false,
-      "detail": "items=3, immediate=3, backlog=0, promptLanes=3, projected=503"
+      "ok": true,
+      "detail": "items=8, immediate=3, backlog=5, promptLanes=5, projected=500"
     },
     {
       "name": "human approval execution queue stays human-gated and excludes publish confirm",
       "ok": true,
-      "detail": "ready=3, sourceDecisions=3, seoWarnings=1, promptLanes=3, publishConfirm=0"
+      "detail": "ready=8, sourceDecisions=7, seoWarnings=5, promptLanes=5, publishConfirm=0"
     },
     {
       "name": "human approval clearance pack is read-only and covers the full approval queue",
       "ok": true,
-      "detail": "items=3, immediate=3, backlog=0, failedSources=0, seo=1"
+      "detail": "items=8, immediate=3, backlog=5, failedSources=1, seo=5"
     },
     {
       "name": "human approval clearance pack keeps all work human-gated and action-ready",
       "ok": true,
-      "detail": "ready=3, actions=28, sourceDecisions=1, copydesk=2, publishConfirm=0"
+      "detail": "ready=8, actions=72, sourceDecisions=3, copydesk=4, publishConfirm=0"
     },
     {
       "name": "review optimization brief is read-only and covers ready action-board tasks",
       "ok": true,
-      "detail": "briefs=2, ready=2, unsafeCommands=0"
+      "detail": "briefs=16, ready=16, unsafeCommands=0"
     },
     {
       "name": "review optimization brief has actionable copydesk guidance",
       "ok": true,
-      "detail": "withAction=2, missingPublicLinkItems=1, exactQueryWeak=2"
+      "detail": "withAction=16, missingPublicLinkItems=15, exactQueryWeak=3"
     },
     {
       "name": "search snippet readiness audit is read-only and covers public plus expansion items",
       "ok": true,
-      "detail": "public=500, expansion=15, scoped=516"
+      "detail": "public=500, expansion=19, scoped=500"
     },
     {
       "name": "search snippet readiness audit has no blocking Wave 1 issues",
       "ok": true,
-      "detail": "blocking=0, wave=3, waveBlocking=0, warnings=204"
+      "detail": "blocking=0, wave=3, waveBlocking=0, warnings=199"
     },
     {
       "name": "structured data readiness audit is read-only and covers public plus expansion items",
       "ok": true,
-      "detail": "public=500, expansion=15, scoped=516"
+      "detail": "public=500, expansion=19, scoped=500"
     },
     {
       "name": "structured data readiness audit has JSON-LD previews and no blocking Wave 1 issues",
       "ok": true,
-      "detail": "blocking=0, previews=516, wave=3, waveBlocking=0, warnings=92"
+      "detail": "blocking=0, previews=500, wave=3, waveBlocking=0, warnings=92"
     },
     {
       "name": "SEO warning remediation pack is read-only and mirrors snippet/schema warnings",
       "ok": true,
-      "detail": "items=260, snippet=204/204, schema=92/92"
+      "detail": "items=255, snippet=199/199, schema=92/92"
     },
     {
       "name": "SEO warning remediation pack keeps every SEO fix human-gated",
       "ok": true,
-      "detail": "ready=260, public=255, draft=5, gated=260"
+      "detail": "ready=255, public=255, draft=0, gated=255"
     },
     {
       "name": "SEO opportunity map has review-ready drafts",
       "ok": true,
-      "detail": "reviewReadyDrafts=148"
+      "detail": "reviewReadyDrafts=633"
     },
     {
       "name": "SEO opportunity map includes manual review batches",
       "ok": true,
-      "detail": "batches=5"
+      "detail": "batches=6"
     },
     {
       "name": "content opportunity backlog has reviewable topics",
       "ok": true,
-      "detail": "topics=7, topicsWithReadyCandidates=4"
+      "detail": "topics=7, topicsWithReadyCandidates=7"
     },
     {
       "name": "AI deployment coverage has broad reviewable coverage",
-      "ok": false,
-      "detail": "topics=10, withCandidates=8, reviewReady=32, unique=18"
+      "ok": true,
+      "detail": "topics=10, withCandidates=10, reviewReady=208, unique=34"
     },
     {
       "name": "AI deployment coverage includes source and search review tasks",
@@ -775,23 +544,23 @@
     },
     {
       "name": "AI deployment review pack is read-only and covers deployment topics",
-      "ok": false,
-      "detail": "items=6, topics=6/10, unique=6, duplicates=0"
+      "ok": true,
+      "detail": "items=10, topics=10/10, unique=10, duplicates=0"
     },
     {
       "name": "AI deployment review pack has source-backed human review boundaries",
       "ok": true,
-      "detail": "safe=6, sources=6, commands=6"
+      "detail": "safe=10, sources=10, commands=10"
     },
     {
       "name": "AI deployment sprint board covers deployment tutorials across lanes",
-      "ok": false,
-      "detail": "items=6, lanes=4, modes=4, queries=24, sources=10"
+      "ok": true,
+      "detail": "items=10, lanes=7, modes=7, queries=40, sources=12"
     },
     {
       "name": "AI deployment sprint board keeps deployment work human-gated and publish-safe",
-      "ok": false,
-      "detail": "ready=6, actions=88, unsafe=0, publishConfirm=0"
+      "ok": true,
+      "detail": "ready=10, actions=147, unsafe=0, publishConfirm=0"
     },
     {
       "name": "memory RAG sprint board covers broad searchable memory demand",
@@ -801,12 +570,12 @@
     {
       "name": "memory RAG sprint board keeps memory work human-gated and publish-safe",
       "ok": true,
-      "detail": "candidates=2, ready=2, checks=39, unsafe=0"
+      "detail": "candidates=4, ready=4, checks=39, unsafe=0"
     },
     {
       "name": "industry prompt coverage has broad reviewable coverage",
-      "ok": false,
-      "detail": "industries=16, withCandidates=0, reviewReady=0, unique=0"
+      "ok": true,
+      "detail": "industries=16, withCandidates=16, reviewReady=25, unique=19"
     },
     {
       "name": "industry prompt coverage includes source and search review tasks",
@@ -820,13 +589,13 @@
     },
     {
       "name": "industry prompt review pack is read-only and deduplicated",
-      "ok": false,
-      "detail": "items=0, unique=0, duplicates=0"
+      "ok": true,
+      "detail": "items=12, unique=12, duplicates=0"
     },
     {
       "name": "industry prompt review pack has source-backed human review boundaries",
       "ok": true,
-      "detail": "safe=0, sources=0, commands=0, publicPrompt=25"
+      "detail": "safe=12, sources=12, commands=12, publicPrompt=0"
     },
     {
       "name": "industry prompt opportunity board is broad and read-only",
@@ -840,8 +609,8 @@
     },
     {
       "name": "industry prompt opportunity board connects to reviewable content",
-      "ok": false,
-      "detail": "withReviewCandidate=0, zeroPublic=0"
+      "ok": true,
+      "detail": "withReviewCandidate=11, zeroPublic=12"
     },
     {
       "name": "industry prompt module pack is read-only and mirrors opportunity modules",
@@ -850,28 +619,28 @@
     },
     {
       "name": "industry prompt module pack has reusable prompt blueprints and human gates",
-      "ok": false,
-      "detail": "safe=true, gated=12, copyPrompts=12, reviewBridge=0"
+      "ok": true,
+      "detail": "safe=true, gated=12, copyPrompts=12, reviewBridge=11"
     },
     {
       "name": "search intent lane map is read-only and broad",
-      "ok": false,
-      "detail": "lanes=12, highPriority=7, withReadyDrafts=7"
+      "ok": true,
+      "detail": "lanes=12, highPriority=12, withReadyDrafts=12"
     },
     {
       "name": "search intent lane map includes sources, review focus, and safe candidates",
-      "ok": false,
-      "detail": "readyDraftMatches=22, noPublicCoverage=0, notReadyMatched=57"
+      "ok": true,
+      "detail": "readyDraftMatches=233, noPublicCoverage=10, notReadyMatched=321"
     },
     {
       "name": "search intent approval packet is read-only and covers current wave plus next gaps",
-      "ok": false,
-      "detail": "currentWave=3, nextGap=0, nextGapLanes=0"
+      "ok": true,
+      "detail": "currentWave=3, nextGap=6, nextGapLanes=4"
     },
     {
       "name": "search intent approval packet has no unsafe items and includes review context",
       "ok": true,
-      "detail": "unsafe=0, currentReady=3, nextGap=0"
+      "detail": "unsafe=0, currentReady=3, nextGap=6"
     },
     {
       "name": "search intent wave planner is read-only and continuous",
@@ -891,67 +660,67 @@
     {
       "name": "search query coverage has broad user-search variants",
       "ok": true,
-      "detail": "uniqueQueries=352, ready=12, unsafe=0"
+      "detail": "uniqueQueries=365, ready=12, unsafe=0"
     },
     {
       "name": "search query match audit is read-only and covers query plan",
       "ok": true,
-      "detail": "items=12, ready=12, warnings=10"
+      "detail": "items=12, ready=12, warnings=7"
     },
     {
       "name": "search query match audit has no blocking search-alignment issues",
       "ok": true,
-      "detail": "blocking=0, averageFamilies=6.83"
+      "detail": "blocking=0, averageFamilies=6.92"
     },
     {
       "name": "search demand intake is read-only and covers broad user-search lanes",
-      "ok": false,
-      "detail": "lanes=8, readyLanes=7, readyFiles=24, unsafe=1"
+      "ok": true,
+      "detail": "lanes=8, readyLanes=8, readyFiles=43, unsafe=0"
     },
     {
       "name": "search demand intake packages sources, formats, and manual review boundaries",
-      "ok": false,
-      "detail": "queries=81, sources=29, formats=32, queueMatches=10"
+      "ok": true,
+      "detail": "queries=81, sources=29, formats=32, queueMatches=33"
     },
     {
       "name": "search demand review pack is read-only and covers intake lanes",
-      "ok": false,
-      "detail": "lanes=8, items=11, maxPerLane=2, unsafe=0"
+      "ok": true,
+      "detail": "lanes=8, items=16, maxPerLane=2, unsafe=0"
     },
     {
       "name": "search demand review pack keeps review actions human-gated",
       "ok": true,
-      "detail": "ready=11, commands=11, sources=11, queries=11, factChecks=63"
+      "detail": "ready=16, commands=16, sources=16, queries=16, factChecks=79"
     },
     {
       "name": "search demand publication bridge is read-only and matches review pack",
       "ok": true,
-      "detail": "items=11, reviewPackItems=11, blocking=0, warnings=11"
+      "detail": "items=16, reviewPackItems=16, blocking=0, warnings=16"
     },
     {
       "name": "search demand publication bridge confirms manual approval readiness",
       "ok": true,
-      "detail": "approvalReady=11, snippet=11, schema=11, source=11, links=7"
+      "detail": "approvalReady=16, snippet=16, schema=16, source=16, links=13"
     },
     {
       "name": "broad search demand map is read-only and covers major demand themes",
-      "ok": false,
-      "detail": "themes=10, readyThemes=6, uniqueCandidates=27"
+      "ok": true,
+      "detail": "themes=10, readyThemes=10, uniqueCandidates=56"
     },
     {
       "name": "broad search demand map links demand, sources, and planned review waves",
-      "ok": false,
-      "detail": "officialSources=13, reviewPackMatches=2, waveMatches=15, readyMatches=82"
+      "ok": true,
+      "detail": "officialSources=13, reviewPackMatches=4, waveMatches=22, readyMatches=417"
     },
     {
       "name": "mass AI search action matrix is read-only and covers broad themes",
-      "ok": false,
-      "detail": "items=8/8, broad=10, unique=27, traffic=false"
+      "ok": true,
+      "detail": "items=8/8, broad=10, unique=45, traffic=false"
     },
     {
       "name": "mass AI search action matrix keeps prompt and deployment work human-gated",
-      "ok": false,
-      "detail": "ready=6, deploy=4, prompt=0, unsafe=2"
+      "ok": true,
+      "detail": "ready=8, deploy=6, prompt=2, unsafe=0"
     },
     {
       "name": "popular AI prompt playbook is read-only and covers broad prompt demand",
@@ -960,58 +729,58 @@
     },
     {
       "name": "popular AI prompt playbook keeps templates human-gated and publish-safe",
-      "ok": false,
-      "detail": "ready=3, templates=50, queries=139, uniqueFiles=21, publishConfirm=0"
+      "ok": true,
+      "detail": "ready=10, templates=50, queries=127, uniqueFiles=21, publishConfirm=0"
     },
     {
       "name": "popular prompt approval bridge is read-only and covers every popular prompt lane",
-      "ok": false,
-      "detail": "lanes=10, next=5, readyNext=3, alreadyQueued=5"
+      "ok": true,
+      "detail": "lanes=10, next=10, readyNext=10, alreadyQueued=9"
     },
     {
       "name": "popular prompt approval bridge keeps next candidates human-gated and publish-safe",
-      "ok": false,
-      "detail": "items=13, ready=7, templates=65, uniqueFiles=7, publishConfirm=0"
+      "ok": true,
+      "detail": "items=27, ready=27, templates=135, uniqueFiles=10, publishConfirm=0"
     },
     {
       "name": "popular prompt sprint board covers every broad prompt lane",
       "ok": true,
-      "detail": "items=10, queries=123, buckets=5, waves=5"
+      "detail": "items=10, queries=115, buckets=4, waves=5"
     },
     {
       "name": "popular prompt sprint board keeps prompt expansion manual and publish-safe",
-      "ok": false,
-      "detail": "ready=3, actions=90, nextFiles=7, publishConfirm=0"
+      "ok": true,
+      "detail": "ready=10, actions=90, nextFiles=10, publishConfirm=0"
     },
     {
       "name": "public coverage gap plan is read-only and covers every no-public broad theme",
       "ok": true,
-      "detail": "gapThemes=0, items=0, uniqueFiles=0, duplicateFiles=0"
+      "detail": "gapThemes=8, items=8, uniqueFiles=8, duplicateFiles=0"
     },
     {
       "name": "public coverage gap plan keeps candidates safe for manual review",
-      "ok": false,
-      "detail": "ready=0, unsafe=0, waves=0"
+      "ok": true,
+      "detail": "ready=8, unsafe=0, waves=4"
     },
     {
       "name": "public coverage gap preflight is read-only and covers gap plan items",
       "ok": true,
-      "detail": "items=0, planItems=0, broadFirst=0, uniqueFiles=0"
+      "detail": "items=13, planItems=8, broadFirst=8, uniqueFiles=13"
     },
     {
       "name": "public coverage gap preflight has no blocking publish-readiness issues",
       "ok": true,
-      "detail": "blocking=0, ready=0, structured=0, seedMatches=0, warnings=0"
+      "detail": "blocking=0, ready=13, structured=13, seedMatches=12, warnings=13"
     },
     {
       "name": "public coverage gap decision pack is read-only and covers preflight items",
       "ok": true,
-      "detail": "items=0, ready=0, waves=0"
+      "detail": "items=13, ready=13, waves=4"
     },
     {
       "name": "public coverage gap decision pack has human review actions and command boundaries",
       "ok": true,
-      "detail": "blocking=0, unsafe=0, commandBoundary=0, optimizations=0"
+      "detail": "blocking=0, unsafe=0, commandBoundary=13, optimizations=13"
     },
     {
       "name": "content cannibalization check generated warning report",
@@ -1021,42 +790,42 @@
     {
       "name": "review cannibalization brief is read-only and covers unique action-board files",
       "ok": true,
-      "detail": "items=2, uniqueActionFiles=2, unsafeCommands=0"
+      "detail": "items=13, uniqueActionFiles=13, unsafeCommands=0"
     },
     {
       "name": "review cannibalization brief keeps publish candidates differentiated",
       "ok": true,
-      "detail": "highRisk=0, highPublished=0, highReviewOnly=0, mediumRisk=0, publishedComparisons=1, reviewComparisons=0"
+      "detail": "highRisk=1, highPublished=0, highReviewOnly=1, mediumRisk=0, publishedComparisons=0, reviewComparisons=1"
     },
     {
       "name": "review collision decision pack is read-only and covers high-risk overlaps",
       "ok": true,
-      "detail": "decisionItems=0, highRisk=0, blocking=0, unsafe=0"
+      "detail": "decisionItems=1, highRisk=1, blocking=0, unsafe=0"
     },
     {
       "name": "review collision decision pack keeps collision approvals human-gated",
       "ok": true,
-      "detail": "ready=0, commandBoundary=0, reviewOnly=0, published=0, blockedMatched=0"
+      "detail": "ready=1, commandBoundary=1, reviewOnly=1, published=0, blockedMatched=1"
     },
     {
       "name": "content freshness check covers review items",
       "ok": true,
-      "detail": "highRisk=573, currentReviewItems=3, plannedReviewItems=6"
+      "detail": "highRisk=573, currentReviewItems=3, plannedReviewItems=9"
     },
     {
       "name": "review freshness brief is read-only and covers unique action-board files",
       "ok": true,
-      "detail": "items=2, uniqueActionFiles=2, unsafeCommands=0"
+      "detail": "items=13, uniqueActionFiles=13, unsafeCommands=0"
     },
     {
       "name": "review freshness brief has source-backed human fact-check tasks",
       "ok": true,
-      "detail": "ready=2, blocked=0, highRisk=2, withSources=2"
+      "detail": "ready=13, blocked=0, highRisk=13, withSources=13"
     },
     {
       "name": "review coverage report covers planned candidates",
       "ok": true,
-      "detail": "planned=6, items=6, missingCoverage=0"
+      "detail": "planned=9, items=9, missingCoverage=0"
     },
     {
       "name": "review coverage includes source, fact-check, approval, and risk tasks",
@@ -1071,12 +840,12 @@
     {
       "name": "review priority roadmap has enough actionable lanes",
       "ok": true,
-      "detail": "lanes=9, uniqueNextReviewFiles=15"
+      "detail": "lanes=12, uniqueNextReviewFiles=19"
     },
     {
       "name": "review priority roadmap includes review context",
       "ok": true,
-      "detail": "lanes=9, nextReviewFiles=15"
+      "detail": "lanes=12, nextReviewFiles=19"
     },
     {
       "name": "review priority roadmap candidates stay safe",
@@ -1086,7 +855,7 @@
     {
       "name": "next review source pack covers roadmap files",
       "ok": true,
-      "detail": "items=15, roadmap=15"
+      "detail": "items=19, roadmap=19"
     },
     {
       "name": "next review source pack includes source, fact-check, approval, and risk tasks",
@@ -1096,17 +865,17 @@
     {
       "name": "next review source pack keeps candidates draft and non-indexable",
       "ok": true,
-      "detail": "unsafeItems=0, safeDraftItems=15"
+      "detail": "unsafeItems=0, safeDraftItems=19"
     },
     {
       "name": "public expansion queue is manual and covers roadmap files",
       "ok": true,
-      "detail": "items=15, waves=5, roadmap=15"
+      "detail": "items=19, waves=7, roadmap=19"
     },
     {
       "name": "public expansion queue only contains source-pack-ready safe drafts",
       "ok": true,
-      "detail": "unsafeItems=0, duplicateFiles=0, sourcePackReadyItems=15"
+      "detail": "unsafeItems=0, duplicateFiles=0, sourcePackReadyItems=19"
     },
     {
       "name": "public expansion queue stops before publishing",
@@ -1116,7 +885,7 @@
     {
       "name": "wave approval packet is manual and ready",
       "ok": true,
-      "detail": "wave=1, items=3, ready=3"
+      "detail": "wave=1, items=3, ready=0, alreadyPublished=3"
     },
     {
       "name": "wave approval packet has no unsafe items",
@@ -1131,12 +900,12 @@
     {
       "name": "wave publish simulation projects only approved Wave 1 items",
       "ok": true,
-      "detail": "wave=1, items=3, ready=3, projected=3"
+      "detail": "wave=1, items=3, ready=0, alreadyPublished=3, projected=0"
     },
     {
       "name": "wave publish simulation public total matches project status",
       "ok": true,
-      "detail": "current=500, projectedAfterApproval=3, projectedPublic=503"
+      "detail": "current=500, projectedAfterApproval=0, projectedPublic=500"
     },
     {
       "name": "live search surface check passed",
@@ -1151,7 +920,7 @@
     {
       "name": "public surface inventory identifies broad AI public gaps with candidates",
       "ok": true,
-      "detail": "clusters=8, zeroPublic=0"
+      "detail": "clusters=8, zeroPublic=8"
     },
     {
       "name": "public search refresh pack is read-only and covers all public pages",
@@ -1161,7 +930,7 @@
     {
       "name": "public search refresh pack keeps public edits human-gated and action-ready",
       "ok": true,
-      "detail": "ready=500, actions=3489, highPriority=247, shortDescriptions=457, publishConfirm=0"
+      "detail": "ready=500, actions=3579, highPriority=273, shortDescriptions=457, publishConfirm=0"
     },
     {
       "name": "public refresh sprint board covers public refresh pack",
@@ -1171,12 +940,12 @@
     {
       "name": "public refresh sprint board keeps public edits manual and publish-confirm-free",
       "ok": true,
-      "detail": "ready=500, actions=5154, unsafe=0, publishConfirm=0"
+      "detail": "ready=500, actions=5237, unsafe=0, publishConfirm=0"
     },
     {
       "name": "public search refresh session pack covers public sprint waves",
       "ok": true,
-      "detail": "sessions=167, files=500, actions=5154, ready=500"
+      "detail": "sessions=167, files=500, actions=5237, ready=500"
     },
     {
       "name": "public search refresh session pack stays manual and non-publishing",
@@ -1201,7 +970,7 @@
     {
       "name": "manual review workbench includes SEO warning remediation",
       "ok": true,
-      "detail": "workbenchSeo=260, remediation=260, unsafe=0"
+      "detail": "workbenchSeo=255, remediation=255, unsafe=0"
     },
     {
       "name": "next batch approval route matches manual review workbench",
@@ -1211,17 +980,17 @@
     {
       "name": "next batch approval route is human-gated and action-ready",
       "ok": true,
-      "detail": "ready=3, actions=39, sourcePack=3, queryCoverage=3, warnings=9, publishConfirm=0"
+      "detail": "ready=3, actions=38, sourcePack=3, queryCoverage=3, warnings=4, publishConfirm=0"
     },
     {
       "name": "next batch route remediation pack covers route warnings",
       "ok": true,
-      "detail": "batch=1, items=3, warningItems=3, routeWarnings=9, actions=42"
+      "detail": "batch=1, items=3, warningItems=3, routeWarnings=4, actions=34"
     },
     {
       "name": "next batch route remediation pack stays safe and publish-confirm-free",
       "ok": true,
-      "detail": "ready=3, unsafe=0, publishConfirm=0, clearanceGaps=2, copydeskGaps=2, queryWarnings=3, seoWarnings=3"
+      "detail": "ready=3, unsafe=0, publishConfirm=0, clearanceGaps=2, copydeskGaps=1, queryWarnings=1, seoWarnings=1"
     }
   ]
 }

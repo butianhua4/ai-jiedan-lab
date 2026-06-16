@@ -118,8 +118,10 @@ function toMatchItem(item: QueryCoverageItem): MatchItem {
   const titleHit = Boolean(normalizedPrimary && normalizedTitle.includes(normalizedPrimary)) || Boolean(normalizedTitleFromCoverage && normalizedTitle.includes(normalizedTitleFromCoverage.slice(0, 12)));
   const descriptionHit = Boolean(normalizedPrimary && normalizedDescription.includes(normalizedPrimary.slice(0, Math.min(8, normalizedPrimary.length)))) || keywordOverlap(item.primaryKeyword, description) >= 2;
   const safeDraft = data.status === "draft" && data.noindex === true && data.humanReviewRequired === true;
+  const safePublishedPage = data.status === "published" && data.noindex === false && data.humanReviewRequired === true;
+  const safeReviewTarget = safeDraft || safePublishedPage;
   const blockingIssues = [
-    safeDraft ? "" : "item is not a safe human-review draft",
+    safeReviewTarget ? "" : "item is neither a safe noindex draft nor a reviewed published page",
     item.readyForManualReview ? "" : "query coverage item is not ready",
     titleHit ? "" : "title does not clearly include the primary keyword",
     descriptionHit ? "" : "description does not clearly include the primary keyword",

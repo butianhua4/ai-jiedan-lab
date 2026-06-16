@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T12:27:45.319Z",
+  "generatedAt": "2026-06-16T07:12:53.744Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,117 +9,120 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "firstCoverageGeneratedAt": "2026-06-16T12:27:44.838Z",
+    "firstCoverageGeneratedAt": "2026-06-14T10:39:39.679Z",
     "firstCoverageSummary": {
       "blockingItems": 0,
-      "commandBoundaries": 0,
-      "firstCoverageItems": 0,
-      "freshnessReadyItems": 0,
-      "integrityReadyItems": 0,
-      "itemsWithPublicLinkPath": 0,
-      "launchPackItems": 0,
-      "preflightReadyItems": 0,
-      "queryReadyItems": 0,
-      "schemaReadyItems": 0,
-      "snippetReadyItems": 0,
-      "sourceReadyItems": 0,
+      "commandBoundaries": 8,
+      "firstCoverageItems": 8,
+      "freshnessReadyItems": 8,
+      "integrityReadyItems": 8,
+      "itemsWithPublicLinkPath": 8,
+      "launchPackItems": 8,
+      "preflightReadyItems": 8,
+      "queryReadyItems": 8,
+      "schemaReadyItems": 8,
+      "snippetReadyItems": 8,
+      "sourceReadyItems": 8,
       "trafficDataAvailable": false,
-      "uniqueFiles": 0,
+      "uniqueFiles": 8,
       "unsafeItems": 0,
-      "warningItems": 0,
-      "zeroPublicClusters": 0
+      "warningItems": 8,
+      "zeroPublicClusters": 8
     },
-    "massAiSearchMatrixGeneratedAt": "2026-06-16T12:27:18.113Z",
+    "massAiSearchMatrixGeneratedAt": "2026-06-14T10:38:57.286Z",
     "massAiSearchMatrixSummary": {
-      "commandBoundaries": 5,
-      "deploymentBridgedThemes": 4,
+      "commandBoundaries": 10,
+      "deploymentBridgedThemes": 6,
       "humanGatedItems": 8,
       "items": 8,
-      "itemsReadyForHumanReviewPrep": 6,
-      "itemsWithCandidateFiles": 6,
+      "itemsReadyForHumanReviewPrep": 8,
+      "itemsWithCandidateFiles": 8,
       "itemsWithHumanReviewActions": 8,
       "itemsWithSearchSeeds": 8,
       "itemsWithSourceTargets": 8,
-      "promptBlueprintSamples": 0,
-      "promptBridgedThemes": 0,
+      "promptBlueprintSamples": 10,
+      "promptBridgedThemes": 2,
       "sourceBroadThemes": 10,
       "sourceTopThemes": 8,
-      "themesWithoutPublicCoverage": 0,
+      "themesWithoutPublicCoverage": 8,
       "trafficDataAvailable": false,
-      "uniqueCandidateFiles": 27,
-      "unsafeItems": 2,
+      "uniqueCandidateFiles": 45,
+      "unsafeItems": 0,
       "waves": 3
     },
-    "popularAiPromptPlaybookGeneratedAt": "2026-06-16T12:27:21.442Z",
+    "popularAiPromptPlaybookGeneratedAt": "2026-06-14T10:39:00.694Z",
     "popularAiPromptPlaybookSummary": {
       "agentDeploymentLanes": 3,
       "broadWorkPromptLanes": 3,
       "commandBoundaries": 10,
-      "deploymentBridgeItems": 5,
+      "deploymentBridgeItems": 6,
       "humanGatedItems": 10,
       "items": 10,
-      "itemsReadyForHumanReviewPrep": 3,
-      "itemsWithCandidateFiles": 5,
+      "itemsReadyForHumanReviewPrep": 10,
+      "itemsWithCandidateFiles": 10,
       "itemsWithOfficialSources": 10,
       "memoryLanes": 1,
       "officialSources": 12,
-      "promptModuleBridgeItems": 0,
+      "promptModuleBridgeItems": 7,
       "promptTemplates": 50,
       "publishConfirmCommandsIncluded": 0,
-      "searchQueries": 139,
+      "searchQueries": 127,
       "sourceTargets": 22,
       "trafficDataAvailable": false,
       "uniqueCandidateFiles": 21,
-      "unsafeItems": 7
+      "unsafeItems": 0
     },
-    "seoWarningGeneratedAt": "2026-06-16T12:27:06.835Z",
+    "seoWarningGeneratedAt": "2026-06-16T05:22:47.160Z",
     "seoWarningSummary": {
       "blockingItems": 0,
-      "draftItems": 5,
-      "humanGatedItems": 260,
-      "items": 260,
-      "itemsWithHumanChecklist": 260,
-      "itemsWithManualActions": 260,
+      "draftItems": 0,
+      "humanGatedItems": 255,
+      "items": 255,
+      "itemsWithHumanChecklist": 255,
+      "itemsWithManualActions": 255,
       "publicItems": 255,
       "recommendedItems": 1,
       "schemaWarningItems": 92,
-      "snippetWarningItems": 204,
+      "snippetWarningItems": 199,
       "trafficDataAvailable": false,
       "unsafeItems": 0,
-      "warningItems": 260,
+      "warningItems": 255,
       "waveItems": 1
     },
-    "sourceReplacementGeneratedAt": "2026-06-16T12:27:26.883Z",
+    "sourceReplacementGeneratedAt": "2026-06-14T10:39:06.777Z",
     "sourceReplacementSummary": {
-      "affectedFiles": 16,
-      "failedDecisionItems": 0,
-      "humanGatedItems": 71,
-      "items": 71,
-      "itemsWithDecisionOptions": 71,
-      "itemsWithManualChecklist": 71,
-      "itemsWithRecommendedCandidate": 0,
-      "officialRecommendedCandidates": 0,
-      "redirectedDecisionItems": 71,
-      "replacementCandidateOptions": 0,
-      "sourceRemediationItems": 10,
+      "affectedFiles": 22,
+      "failedDecisionItems": 1,
+      "humanGatedItems": 115,
+      "items": 115,
+      "itemsWithDecisionOptions": 115,
+      "itemsWithManualChecklist": 115,
+      "itemsWithRecommendedCandidate": 1,
+      "officialRecommendedCandidates": 1,
+      "redirectedDecisionItems": 114,
+      "replacementCandidateOptions": 8,
+      "sourceRemediationItems": 19,
       "sourceRemediationUnsafeItems": 0,
       "unsafeItems": 0
     },
-    "waveApprovalGeneratedAt": "2026-06-16T12:27:13.153Z",
+    "waveApprovalGeneratedAt": "2026-06-16T06:41:56.457Z",
     "waveApprovalSummary": {
+      "alreadyPublished": 3,
+      "completedOrReady": 3,
       "items": 3,
-      "readyForHumanReview": 3,
+      "readyForHumanReview": 0,
       "unsafeItems": 0,
       "wave": 1
     },
-    "wavePublishSimulationGeneratedAt": "2026-06-16T12:27:28.776Z",
+    "wavePublishSimulationGeneratedAt": "2026-06-16T06:47:11.322Z",
     "wavePublishSimulationSummary": {
       "currentlyPublishable": 0,
+      "alreadyPublished": 3,
       "items": 3,
-      "projectedPublicPublishedAfterWave": 503,
-      "projectedPublishableAfterHumanApproval": 3,
+      "projectedPublicPublishedAfterWave": 500,
+      "projectedPublishableAfterHumanApproval": 0,
       "publicPublishedBeforeWave": 500,
-      "readyForHumanApproval": 3,
+      "readyForHumanApproval": 0,
       "unsafeItems": 0,
       "wave": 1
     },
@@ -128,22 +131,22 @@
   "publishingBoundary": {
     "currentPublicPublished": 500,
     "currentPublishableNow": 0,
-    "projectedPublicPublishedAfterImmediateHumanApproval": 503,
+    "projectedPublicPublishedAfterImmediateHumanApproval": 500,
     "publishConfirmCommandsIncluded": 0
   },
   "summary": {
-    "backlogItems": 0,
-    "commandBoundaries": 3,
-    "humanGatedItems": 3,
+    "backlogItems": 5,
+    "commandBoundaries": 8,
+    "humanGatedItems": 8,
     "immediateApprovalItems": 3,
     "immediateApprovalReadyItems": 3,
-    "items": 3,
-    "itemsReadyForHumanApproval": 3,
-    "itemsWithFailedSourceDecision": 0,
-    "itemsWithMassSearchTheme": 3,
-    "itemsWithPopularPromptLane": 3,
-    "itemsWithSeoWarnings": 1,
-    "itemsWithSourceReplacementDecisions": 3,
+    "items": 8,
+    "itemsReadyForHumanApproval": 8,
+    "itemsWithFailedSourceDecision": 1,
+    "itemsWithMassSearchTheme": 6,
+    "itemsWithPopularPromptLane": 5,
+    "itemsWithSeoWarnings": 5,
+    "itemsWithSourceReplacementDecisions": 7,
     "publishConfirmCommandsIncluded": 0,
     "trafficDataAvailable": false,
     "unsafeItems": 0
@@ -153,20 +156,21 @@
     {
       "articleState": {
         "humanReviewRequired": true,
-        "noindex": true,
+        "noindex": false,
         "qualityScore": 100,
         "sourceNotes": true,
-        "status": "draft"
+        "status": "published"
       },
+      "alreadyPublished": true,
       "blockers": [],
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm-human",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
         "publishConfirm": "not-included",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vector-database-selection-for-rag-guide.mdx",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx",
         "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
       },
       "currentStage": "draft-needs-human-approval",
-      "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "humanChecklist": [
         "Article remains draft: true",
         "Article remains noindex: true",
@@ -182,10 +186,12 @@
         "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
         "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
         "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
-        "Fact-check query before approval: RAG 向量数据库怎么选 official docs latest.",
-        "Fact-check query before approval: RAG 向量数据库怎么选 official documentation current limits.",
-        "Fact-check query before approval: RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 fact check official docs.",
-        "Fact-check query before approval: AI 基建 official docs limits pricing changelog.",
+        "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.",
+        "Prompt examples include input context, output criteria, review rules, and adaptation notes.",
+        "Fact-check query before approval: 客服 AI 模型选型 official docs latest.",
+        "Fact-check query before approval: 客服 AI 模型选型 official documentation current limits.",
+        "Fact-check query before approval: 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 fact check official docs.",
+        "Fact-check query before approval: AI 部署 official docs limits pricing changelog.",
         "Fact-check query before approval: RAG 知识库搭建教程.",
         "Fact-check query before approval: 企业知识库 AI 部署.",
         "Verify official source before approval: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval.",
@@ -197,30 +203,65 @@
       ],
       "massSearchThemes": [
         {
-          "lane": "agent-memory-rag",
-          "themeTitle": "RAG, knowledge base, and agent memory",
+          "lane": "prompt-library",
+          "themeTitle": "Cross-industry AI prompt templates",
           "wave": 1
         }
       ],
       "popularPromptLanes": [
         {
-          "laneId": "excel-data-analysis-prompts",
+          "laneId": "chatgpt-prompt-daquan",
           "queries": 18,
           "templates": 5,
-          "title": "Excel 和数据分析 AI 提示词"
+          "title": "ChatGPT 提示词大全和万能公式"
         },
         {
-          "laneId": "llm-deployment-troubleshooting-prompts",
+          "laneId": "ecommerce-customer-service-prompts",
           "queries": 18,
           "templates": 5,
-          "title": "大模型部署、本地模型和 API 排错提示词"
+          "title": "电商客服、售后和直播卖货 AI 提示词"
+        },
+        {
+          "laneId": "sales-proposal-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "销售话术、报价和方案书 AI 提示词"
+        },
+        {
+          "laneId": "hr-resume-recruiting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "简历优化、招聘和 HR AI 提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
         }
       ],
-      "priorityScore": 446,
-      "projectedPublishableAfterHumanApproval": true,
-      "publicImpact": "Immediate Wave 1; projected public count after human approval is 503.",
+      "priorityScore": 777,
+      "projectedPublishableAfterHumanApproval": false,
+      "publicImpact": "Immediate Wave 1; projected public count after human approval is 500.",
       "readyForHumanApproval": true,
-      "seoWarnings": [],
+      "seoWarnings": [
+        {
+          "actions": [
+            "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
+            "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
+            "Confirm description length remains suitable for search snippets after editing.",
+            "Check whether the title can naturally include the exact primary keyword: 客服 AI 模型选型.",
+            "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+            "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+            "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+          ],
+          "schemaWarnings": [],
+          "snippetWarnings": [
+            "description may be thin for search snippets",
+            "primary keyword is not an exact title substring"
+          ]
+        }
+      ],
       "sourceReplacementDecisions": [
         {
           "kind": "redirected-url",
@@ -258,26 +299,27 @@
           "recommendedCandidate": null
         }
       ],
-      "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "unsafeReasons": []
     },
     {
       "articleState": {
         "humanReviewRequired": true,
-        "noindex": true,
+        "noindex": false,
         "qualityScore": 100,
         "sourceNotes": true,
-        "status": "draft"
+        "status": "published"
       },
+      "alreadyPublished": true,
       "blockers": [],
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
         "publishConfirm": "not-included",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
         "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
       },
       "currentStage": "draft-needs-human-approval",
-      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
       "humanChecklist": [
         "Article remains draft: true",
         "Article remains noindex: true",
@@ -293,23 +335,140 @@
         "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
         "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
         "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.",
-        "Fact-check query before approval: Vercel AI Gateway 多模型 official docs latest.",
-        "Fact-check query before approval: Vercel AI Gateway 多模型 official documentation current limits.",
-        "Fact-check query before approval: Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 fact check official docs.",
-        "Fact-check query before approval: AI 部署 official docs limits pricing changelog.",
-        "Fact-check query before approval: 大模型部署教程.",
-        "Fact-check query before approval: AI 应用部署教程.",
-        "Verify official source before approval: OpenAI API docs: https://platform.openai.com/docs.",
-        "Verify official source before approval: Vercel AI SDK docs: https://ai-sdk.dev/docs.",
-        "Verify official source before approval: Anthropic docs: https://docs.anthropic.com.",
+        "Fact-check query before approval: AI Agent 部署 official docs latest.",
+        "Fact-check query before approval: AI Agent 部署 official documentation current limits.",
+        "Fact-check query before approval: AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 fact check official docs.",
+        "Fact-check query before approval: AI Agent official docs limits pricing changelog.",
+        "Fact-check query before approval: AI Agent 部署教程.",
+        "Fact-check query before approval: Agent 工具调用教程.",
         "Verify official source before approval: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents.",
-        "Verify official source before approval: Google AI docs: https://ai.google.dev/docs.",
+        "Verify official source before approval: Vercel AI SDK docs: https://ai-sdk.dev/docs.",
+        "Verify official source before approval: LangChain docs: https://python.langchain.com/docs.",
+        "Verify official source before approval: OpenAI API docs: https://platform.openai.com/docs.",
+        "Verify official source before approval: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval.",
+        "Verify official source before approval: OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering."
+      ],
+      "massSearchThemes": [
+        {
+          "lane": "agent-deployment",
+          "themeTitle": "Agent deployment, tool calling, and production workflows",
+          "wave": 1
+        }
+      ],
+      "popularPromptLanes": [
+        {
+          "laneId": "excel-data-analysis-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Excel 和数据分析 AI 提示词"
+        },
+        {
+          "laneId": "ai-agent-deploy-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "AI Agent 部署、工具调用和上线排错提示词"
+        },
+        {
+          "laneId": "llm-deployment-troubleshooting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "大模型部署、本地模型和 API 排错提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
+        }
+      ],
+      "priorityScore": 773,
+      "projectedPublishableAfterHumanApproval": false,
+      "publicImpact": "Immediate Wave 1; projected public count after human approval is 500.",
+      "readyForHumanApproval": true,
+      "seoWarnings": [],
+      "sourceReplacementDecisions": [
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://ai-sdk.dev/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/agents",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/retrieval",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://python.langchain.com/docs",
+          "recommendedCandidate": null
+        }
+      ],
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "unsafeReasons": []
+    },
+    {
+      "articleState": {
+        "humanReviewRequired": true,
+        "noindex": false,
+        "qualityScore": 100,
+        "sourceNotes": true,
+        "status": "published"
+      },
+      "alreadyPublished": true,
+      "blockers": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+        "publishConfirm": "not-included",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
+      },
+      "currentStage": "draft-needs-human-approval",
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "humanChecklist": [
+        "Article remains draft: true",
+        "Article remains noindex: true",
+        "Human review flag is present: true",
+        "Quality score is at least 100: true",
+        "Source notes are present: true",
+        "Article has internal links: true",
+        "Reviewer confirms the article answers one clear search intent.",
+        "Reviewer confirms factual claims against official docs before any status change.",
+        "No income, ranking, approval, or client acquisition guarantee.",
+        "No instruction to bypass platform, payment, messaging, account, or review rules.",
+        "No API key, credential, private customer data, or account detail is included.",
+        "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
+        "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
+        "Prompt examples include input context, output criteria, review rules, and adaptation notes.",
+        "Fact-check query before approval: 全行业 AI 提示词模板 official docs latest.",
+        "Fact-check query before approval: 全行业 AI 提示词模板 official documentation current limits.",
+        "Fact-check query before approval: 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 fact check official docs.",
+        "Fact-check query before approval: AI 提示词 official docs limits pricing changelog.",
+        "Fact-check query before approval: AI 提示词大全.",
+        "Fact-check query before approval: 销售 AI 提示词.",
+        "Verify official source before approval: OpenAI API docs: https://platform.openai.com/docs.",
+        "Verify official source before approval: OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering.",
+        "Verify official source before approval: Vercel AI SDK docs: https://ai-sdk.dev/docs.",
         "Verify official source before approval: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval."
       ],
       "massSearchThemes": [
         {
-          "lane": "model-deployment",
-          "themeTitle": "AI app and model API deployment",
+          "lane": "prompt-library",
+          "themeTitle": "Cross-industry AI prompt templates",
           "wave": 1
         }
       ],
@@ -321,23 +480,403 @@
           "title": "ChatGPT 提示词大全和万能公式"
         },
         {
+          "laneId": "office-copilot-prompts",
+          "queries": 14,
+          "templates": 5,
+          "title": "AI 办公提示词：Word、Excel、PPT、邮件和会议"
+        },
+        {
+          "laneId": "ecommerce-customer-service-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "电商客服、售后和直播卖货 AI 提示词"
+        },
+        {
+          "laneId": "sales-proposal-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "销售话术、报价和方案书 AI 提示词"
+        },
+        {
+          "laneId": "hr-resume-recruiting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "简历优化、招聘和 HR AI 提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
+        }
+      ],
+      "priorityScore": 769,
+      "projectedPublishableAfterHumanApproval": false,
+      "publicImpact": "Immediate Wave 1; projected public count after human approval is 500.",
+      "readyForHumanApproval": true,
+      "seoWarnings": [],
+      "sourceReplacementDecisions": [
+        {
+          "kind": "failed-url",
+          "originalUrl": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
+          "recommendedCandidate": "Microsoft Copilot Prompt Gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://ai-sdk.dev/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/retrieval",
+          "recommendedCandidate": null
+        }
+      ],
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "unsafeReasons": []
+    }
+  ],
+  "backlogItems": [
+    {
+      "articleState": {
+        "humanReviewRequired": true,
+        "noindex": false,
+        "qualityScore": 100,
+        "sourceNotes": true,
+        "status": "published"
+      },
+      "alreadyPublished": true,
+      "blockers": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Run mark:review only after human source/fact approval. Run publish dry-run after review status. Do not run publish with --confirm here."
+      },
+      "currentStage": "first-coverage-backlog",
+      "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+      "humanChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
+        "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
+        "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
+        "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
+        "Resolve or explicitly accept warning: candidate has no current links to public articles; use suggested public link during review.",
+        "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
+        "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
+        "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
+      ],
+      "massSearchThemes": [],
+      "popularPromptLanes": [],
+      "priorityScore": 70,
+      "projectedPublishableAfterHumanApproval": true,
+      "publicImpact": "First-coverage backlog for zero-public cluster: 开源大模型部署：Ollama、vLLM、TGI、RunPod.",
+      "readyForHumanApproval": true,
+      "seoWarnings": [],
+      "sourceReplacementDecisions": [
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://ai-sdk.dev/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://docs.vllm.ai",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/agents",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/retrieval",
+          "recommendedCandidate": null
+        }
+      ],
+      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+      "unsafeReasons": []
+    },
+    {
+      "articleState": {
+        "humanReviewRequired": true,
+        "noindex": false,
+        "qualityScore": 100,
+        "sourceNotes": true,
+        "status": "published"
+      },
+      "alreadyPublished": true,
+      "blockers": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Run mark:review only after human source/fact approval. Run publish dry-run after review status. Do not run publish with --confirm here."
+      },
+      "currentStage": "first-coverage-backlog",
+      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+      "humanChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
+        "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
+        "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
+        "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
+        "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
+        "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
+        "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
+        "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
+      ],
+      "massSearchThemes": [
+        {
+          "lane": "agent-deployment",
+          "themeTitle": "Agent deployment, tool calling, and production workflows",
+          "wave": 1
+        },
+        {
+          "lane": "agent-memory-rag",
+          "themeTitle": "RAG, knowledge base, and agent memory",
+          "wave": 1
+        },
+        {
+          "lane": "agent-deployment",
+          "themeTitle": "Dify, n8n, Flowise, and no-code AI automation",
+          "wave": 2
+        }
+      ],
+      "popularPromptLanes": [
+        {
+          "laneId": "excel-data-analysis-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Excel 和数据分析 AI 提示词"
+        },
+        {
+          "laneId": "ai-agent-deploy-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "AI Agent 部署、工具调用和上线排错提示词"
+        },
+        {
           "laneId": "llm-deployment-troubleshooting-prompts",
           "queries": 18,
           "templates": 5,
           "title": "大模型部署、本地模型和 API 排错提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
         }
       ],
-      "priorityScore": 439,
+      "priorityScore": 64,
       "projectedPublishableAfterHumanApproval": true,
-      "publicImpact": "Immediate Wave 1; projected public count after human approval is 503.",
+      "publicImpact": "First-coverage backlog for zero-public cluster: Agent 记忆：短期记忆、长期记忆、RAG、Postgres.",
       "readyForHumanApproval": true,
       "seoWarnings": [
         {
           "actions": [
-            "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
+            "Check whether the title can naturally include the exact primary keyword: n8n AI Agent 知识库记忆.",
             "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
             "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-            "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
+            "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+          ],
+          "schemaWarnings": [],
+          "snippetWarnings": [
+            "primary keyword is not an exact title substring"
+          ]
+        }
+      ],
+      "sourceReplacementDecisions": [],
+      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+      "unsafeReasons": []
+    },
+    {
+      "articleState": {
+        "humanReviewRequired": true,
+        "noindex": false,
+        "qualityScore": 100,
+        "sourceNotes": true,
+        "status": "published"
+      },
+      "alreadyPublished": true,
+      "blockers": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/mcp-server-deployment-security-checklist.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/mcp-server-deployment-security-checklist.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Run mark:review only after human source/fact approval. Run publish dry-run after review status. Do not run publish with --confirm here."
+      },
+      "currentStage": "first-coverage-backlog",
+      "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
+      "humanChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
+        "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
+        "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
+        "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
+        "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
+        "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
+        "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
+        "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
+      ],
+      "massSearchThemes": [
+        {
+          "lane": "agent-deployment",
+          "themeTitle": "Agent deployment, tool calling, and production workflows",
+          "wave": 1
+        },
+        {
+          "lane": "prompt-library",
+          "themeTitle": "LLM evaluation, observability, and security",
+          "wave": 3
+        }
+      ],
+      "popularPromptLanes": [
+        {
+          "laneId": "excel-data-analysis-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Excel 和数据分析 AI 提示词"
+        },
+        {
+          "laneId": "ai-agent-deploy-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "AI Agent 部署、工具调用和上线排错提示词"
+        },
+        {
+          "laneId": "llm-deployment-troubleshooting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "大模型部署、本地模型和 API 排错提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
+        }
+      ],
+      "priorityScore": 64,
+      "projectedPublishableAfterHumanApproval": true,
+      "publicImpact": "First-coverage backlog for zero-public cluster: Dify、n8n、Coze、Flowise、MCP 自动化部署.",
+      "readyForHumanApproval": true,
+      "seoWarnings": [
+        {
+          "actions": [
+            "Check whether the title can naturally include the exact primary keyword: MCP Server 部署安全.",
+            "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+            "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+            "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+          ],
+          "schemaWarnings": [],
+          "snippetWarnings": [
+            "primary keyword is not an exact title substring"
+          ]
+        }
+      ],
+      "sourceReplacementDecisions": [
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://docs.dify.ai/",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://modelcontextprotocol.io/docs",
+          "recommendedCandidate": null
+        }
+      ],
+      "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+      "unsafeReasons": []
+    },
+    {
+      "articleState": {
+        "humanReviewRequired": true,
+        "noindex": false,
+        "qualityScore": 100,
+        "sourceNotes": true,
+        "status": "published"
+      },
+      "alreadyPublished": true,
+      "blockers": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Run mark:review only after human source/fact approval. Run publish dry-run after review status. Do not run publish with --confirm here."
+      },
+      "currentStage": "first-coverage-backlog",
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "humanChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
+        "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
+        "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
+        "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Review snippet warnings for title, description, slug, and primary keyword alignment.",
+        "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
+        "Resolve or explicitly accept warning: theme still has missing subtopics: logs, prompt injection, cost tracking.",
+        "Resolve or explicitly accept warning: few exact query variant matches in article text.",
+        "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
+        "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
+        "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
+      ],
+      "massSearchThemes": [
+        {
+          "lane": "prompt-library",
+          "themeTitle": "LLM evaluation, observability, and security",
+          "wave": 3
+        }
+      ],
+      "popularPromptLanes": [],
+      "priorityScore": 68,
+      "projectedPublishableAfterHumanApproval": true,
+      "publicImpact": "First-coverage backlog for zero-public cluster: AI API 接入、限流、成本和多模型路由.",
+      "readyForHumanApproval": true,
+      "seoWarnings": [
+        {
+          "actions": [
+            "Check whether the title can naturally include the exact primary keyword: AI API Key 安全管理.",
+            "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+            "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+            "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
           ],
           "schemaWarnings": [],
           "snippetWarnings": [
@@ -363,6 +902,16 @@
         },
         {
           "kind": "redirected-url",
+          "originalUrl": "https://docs.anthropic.com/",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://docs.dify.ai",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
           "originalUrl": "https://platform.openai.com/docs",
           "recommendedCandidate": null
         },
@@ -380,95 +929,6 @@
           "kind": "redirected-url",
           "originalUrl": "https://platform.openai.com/docs/guides/retrieval",
           "recommendedCandidate": null
-        }
-      ],
-      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
-      "unsafeReasons": []
-    },
-    {
-      "articleState": {
-        "humanReviewRequired": true,
-        "noindex": true,
-        "qualityScore": 100,
-        "sourceNotes": true,
-        "status": "draft"
-      },
-      "blockers": [],
-      "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx --confirm-human",
-        "publishConfirm": "not-included",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/supabase-pgvector-rag-guide.mdx",
-        "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
-      },
-      "currentStage": "draft-needs-human-approval",
-      "file": "content/blog/supabase-pgvector-rag-guide.mdx",
-      "humanChecklist": [
-        "Article remains draft: true",
-        "Article remains noindex: true",
-        "Human review flag is present: true",
-        "Quality score is at least 100: true",
-        "Source notes are present: true",
-        "Article has internal links: true",
-        "Reviewer confirms the article answers one clear search intent.",
-        "Reviewer confirms factual claims against official docs before any status change.",
-        "No income, ranking, approval, or client acquisition guarantee.",
-        "No instruction to bypass platform, payment, messaging, account, or review rules.",
-        "No API key, credential, private customer data, or account detail is included.",
-        "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
-        "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
-        "Fact-check query before approval: Supabase pgvector official docs latest.",
-        "Fact-check query before approval: Supabase pgvector official documentation current limits.",
-        "Fact-check query before approval: Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 fact check official docs.",
-        "Fact-check query before approval: AI 基建 official docs limits pricing changelog.",
-        "Fact-check query before approval: RAG 知识库搭建教程.",
-        "Fact-check query before approval: 企业知识库 AI 部署.",
-        "Verify official source before approval: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval.",
-        "Verify official source before approval: LangChain docs: https://python.langchain.com/docs.",
-        "Verify official source before approval: LlamaIndex docs: https://docs.llamaindex.ai.",
-        "Verify official source before approval: Hugging Face docs: https://huggingface.co/docs.",
-        "Verify official source before approval: OpenAI API docs: https://platform.openai.com/docs.",
-        "Verify official source before approval: Vercel AI SDK docs: https://ai-sdk.dev/docs."
-      ],
-      "massSearchThemes": [
-        {
-          "lane": "agent-memory-rag",
-          "themeTitle": "RAG, knowledge base, and agent memory",
-          "wave": 1
-        }
-      ],
-      "popularPromptLanes": [
-        {
-          "laneId": "excel-data-analysis-prompts",
-          "queries": 18,
-          "templates": 5,
-          "title": "Excel 和数据分析 AI 提示词"
-        }
-      ],
-      "priorityScore": 415,
-      "projectedPublishableAfterHumanApproval": true,
-      "publicImpact": "Immediate Wave 1; projected public count after human approval is 503.",
-      "readyForHumanApproval": true,
-      "seoWarnings": [],
-      "sourceReplacementDecisions": [
-        {
-          "kind": "redirected-url",
-          "originalUrl": "https://ai-sdk.dev/docs",
-          "recommendedCandidate": null
-        },
-        {
-          "kind": "redirected-url",
-          "originalUrl": "https://docs.llamaindex.ai",
-          "recommendedCandidate": null
-        },
-        {
-          "kind": "redirected-url",
-          "originalUrl": "https://platform.openai.com/docs",
-          "recommendedCandidate": null
-        },
-        {
-          "kind": "redirected-url",
-          "originalUrl": "https://platform.openai.com/docs/guides/retrieval",
-          "recommendedCandidate": null
         },
         {
           "kind": "redirected-url",
@@ -476,29 +936,97 @@
           "recommendedCandidate": null
         }
       ],
-      "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "unsafeReasons": []
+    },
+    {
+      "articleState": {
+        "humanReviewRequired": true,
+        "noindex": false,
+        "qualityScore": 100,
+        "sourceNotes": true,
+        "status": "published"
+      },
+      "alreadyPublished": true,
+      "blockers": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/agent-tool-permission-safety-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/agent-tool-permission-safety-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Run mark:review only after human source/fact approval. Run publish dry-run after review status. Do not run publish with --confirm here."
+      },
+      "currentStage": "first-coverage-backlog",
+      "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+      "humanChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
+        "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
+        "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
+        "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
+        "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: few search-seed token families appear in article text.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
+        "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
+        "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
+        "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
+      ],
+      "massSearchThemes": [],
+      "popularPromptLanes": [],
+      "priorityScore": 60,
+      "projectedPublishableAfterHumanApproval": true,
+      "publicImpact": "First-coverage backlog for zero-public cluster: LLM 观测、评测、日志和上线后质量.",
+      "readyForHumanApproval": true,
+      "seoWarnings": [
+        {
+          "actions": [
+            "Check whether the title can naturally include the exact primary keyword: Agent 工具权限控制.",
+            "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+            "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+            "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+          ],
+          "schemaWarnings": [],
+          "snippetWarnings": [
+            "primary keyword is not an exact title substring"
+          ]
+        }
+      ],
+      "sourceReplacementDecisions": [
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://docs.helicone.ai/",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://docs.ragas.io/",
+          "recommendedCandidate": null
+        }
+      ],
+      "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
       "unsafeReasons": []
     }
   ],
-  "backlogItems": [],
   "items": [
     {
       "articleState": {
         "humanReviewRequired": true,
-        "noindex": true,
+        "noindex": false,
         "qualityScore": 100,
         "sourceNotes": true,
-        "status": "draft"
+        "status": "published"
       },
+      "alreadyPublished": true,
       "blockers": [],
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm-human",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
         "publishConfirm": "not-included",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vector-database-selection-for-rag-guide.mdx",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx",
         "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
       },
       "currentStage": "draft-needs-human-approval",
-      "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "humanChecklist": [
         "Article remains draft: true",
         "Article remains noindex: true",
@@ -514,10 +1042,12 @@
         "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
         "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
         "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
-        "Fact-check query before approval: RAG 向量数据库怎么选 official docs latest.",
-        "Fact-check query before approval: RAG 向量数据库怎么选 official documentation current limits.",
-        "Fact-check query before approval: RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 fact check official docs.",
-        "Fact-check query before approval: AI 基建 official docs limits pricing changelog.",
+        "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.",
+        "Prompt examples include input context, output criteria, review rules, and adaptation notes.",
+        "Fact-check query before approval: 客服 AI 模型选型 official docs latest.",
+        "Fact-check query before approval: 客服 AI 模型选型 official documentation current limits.",
+        "Fact-check query before approval: 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 fact check official docs.",
+        "Fact-check query before approval: AI 部署 official docs limits pricing changelog.",
         "Fact-check query before approval: RAG 知识库搭建教程.",
         "Fact-check query before approval: 企业知识库 AI 部署.",
         "Verify official source before approval: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval.",
@@ -529,30 +1059,65 @@
       ],
       "massSearchThemes": [
         {
-          "lane": "agent-memory-rag",
-          "themeTitle": "RAG, knowledge base, and agent memory",
+          "lane": "prompt-library",
+          "themeTitle": "Cross-industry AI prompt templates",
           "wave": 1
         }
       ],
       "popularPromptLanes": [
         {
-          "laneId": "excel-data-analysis-prompts",
+          "laneId": "chatgpt-prompt-daquan",
           "queries": 18,
           "templates": 5,
-          "title": "Excel 和数据分析 AI 提示词"
+          "title": "ChatGPT 提示词大全和万能公式"
         },
         {
-          "laneId": "llm-deployment-troubleshooting-prompts",
+          "laneId": "ecommerce-customer-service-prompts",
           "queries": 18,
           "templates": 5,
-          "title": "大模型部署、本地模型和 API 排错提示词"
+          "title": "电商客服、售后和直播卖货 AI 提示词"
+        },
+        {
+          "laneId": "sales-proposal-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "销售话术、报价和方案书 AI 提示词"
+        },
+        {
+          "laneId": "hr-resume-recruiting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "简历优化、招聘和 HR AI 提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
         }
       ],
-      "priorityScore": 446,
-      "projectedPublishableAfterHumanApproval": true,
-      "publicImpact": "Immediate Wave 1; projected public count after human approval is 503.",
+      "priorityScore": 777,
+      "projectedPublishableAfterHumanApproval": false,
+      "publicImpact": "Immediate Wave 1; projected public count after human approval is 500.",
       "readyForHumanApproval": true,
-      "seoWarnings": [],
+      "seoWarnings": [
+        {
+          "actions": [
+            "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
+            "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
+            "Confirm description length remains suitable for search snippets after editing.",
+            "Check whether the title can naturally include the exact primary keyword: 客服 AI 模型选型.",
+            "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+            "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+            "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+          ],
+          "schemaWarnings": [],
+          "snippetWarnings": [
+            "description may be thin for search snippets",
+            "primary keyword is not an exact title substring"
+          ]
+        }
+      ],
       "sourceReplacementDecisions": [
         {
           "kind": "redirected-url",
@@ -590,26 +1155,27 @@
           "recommendedCandidate": null
         }
       ],
-      "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
       "unsafeReasons": []
     },
     {
       "articleState": {
         "humanReviewRequired": true,
-        "noindex": true,
+        "noindex": false,
         "qualityScore": 100,
         "sourceNotes": true,
-        "status": "draft"
+        "status": "published"
       },
+      "alreadyPublished": true,
       "blockers": [],
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
         "publishConfirm": "not-included",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
         "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
       },
       "currentStage": "draft-needs-human-approval",
-      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
       "humanChecklist": [
         "Article remains draft: true",
         "Article remains noindex: true",
@@ -625,23 +1191,140 @@
         "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
         "Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.",
         "Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.",
-        "Fact-check query before approval: Vercel AI Gateway 多模型 official docs latest.",
-        "Fact-check query before approval: Vercel AI Gateway 多模型 official documentation current limits.",
-        "Fact-check query before approval: Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 fact check official docs.",
-        "Fact-check query before approval: AI 部署 official docs limits pricing changelog.",
-        "Fact-check query before approval: 大模型部署教程.",
-        "Fact-check query before approval: AI 应用部署教程.",
-        "Verify official source before approval: OpenAI API docs: https://platform.openai.com/docs.",
-        "Verify official source before approval: Vercel AI SDK docs: https://ai-sdk.dev/docs.",
-        "Verify official source before approval: Anthropic docs: https://docs.anthropic.com.",
+        "Fact-check query before approval: AI Agent 部署 official docs latest.",
+        "Fact-check query before approval: AI Agent 部署 official documentation current limits.",
+        "Fact-check query before approval: AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 fact check official docs.",
+        "Fact-check query before approval: AI Agent official docs limits pricing changelog.",
+        "Fact-check query before approval: AI Agent 部署教程.",
+        "Fact-check query before approval: Agent 工具调用教程.",
         "Verify official source before approval: OpenAI Agents docs: https://platform.openai.com/docs/guides/agents.",
-        "Verify official source before approval: Google AI docs: https://ai.google.dev/docs.",
+        "Verify official source before approval: Vercel AI SDK docs: https://ai-sdk.dev/docs.",
+        "Verify official source before approval: LangChain docs: https://python.langchain.com/docs.",
+        "Verify official source before approval: OpenAI API docs: https://platform.openai.com/docs.",
+        "Verify official source before approval: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval.",
+        "Verify official source before approval: OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering."
+      ],
+      "massSearchThemes": [
+        {
+          "lane": "agent-deployment",
+          "themeTitle": "Agent deployment, tool calling, and production workflows",
+          "wave": 1
+        }
+      ],
+      "popularPromptLanes": [
+        {
+          "laneId": "excel-data-analysis-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Excel 和数据分析 AI 提示词"
+        },
+        {
+          "laneId": "ai-agent-deploy-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "AI Agent 部署、工具调用和上线排错提示词"
+        },
+        {
+          "laneId": "llm-deployment-troubleshooting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "大模型部署、本地模型和 API 排错提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
+        }
+      ],
+      "priorityScore": 773,
+      "projectedPublishableAfterHumanApproval": false,
+      "publicImpact": "Immediate Wave 1; projected public count after human approval is 500.",
+      "readyForHumanApproval": true,
+      "seoWarnings": [],
+      "sourceReplacementDecisions": [
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://ai-sdk.dev/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/agents",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/retrieval",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://python.langchain.com/docs",
+          "recommendedCandidate": null
+        }
+      ],
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "unsafeReasons": []
+    },
+    {
+      "articleState": {
+        "humanReviewRequired": true,
+        "noindex": false,
+        "qualityScore": 100,
+        "sourceNotes": true,
+        "status": "published"
+      },
+      "alreadyPublished": true,
+      "blockers": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
+        "publishConfirm": "not-included",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx",
+        "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
+      },
+      "currentStage": "draft-needs-human-approval",
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "humanChecklist": [
+        "Article remains draft: true",
+        "Article remains noindex: true",
+        "Human review flag is present: true",
+        "Quality score is at least 100: true",
+        "Source notes are present: true",
+        "Article has internal links: true",
+        "Reviewer confirms the article answers one clear search intent.",
+        "Reviewer confirms factual claims against official docs before any status change.",
+        "No income, ranking, approval, or client acquisition guarantee.",
+        "No instruction to bypass platform, payment, messaging, account, or review rules.",
+        "No API key, credential, private customer data, or account detail is included.",
+        "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
+        "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
+        "Prompt examples include input context, output criteria, review rules, and adaptation notes.",
+        "Fact-check query before approval: 全行业 AI 提示词模板 official docs latest.",
+        "Fact-check query before approval: 全行业 AI 提示词模板 official documentation current limits.",
+        "Fact-check query before approval: 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 fact check official docs.",
+        "Fact-check query before approval: AI 提示词 official docs limits pricing changelog.",
+        "Fact-check query before approval: AI 提示词大全.",
+        "Fact-check query before approval: 销售 AI 提示词.",
+        "Verify official source before approval: OpenAI API docs: https://platform.openai.com/docs.",
+        "Verify official source before approval: OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering.",
+        "Verify official source before approval: Vercel AI SDK docs: https://ai-sdk.dev/docs.",
         "Verify official source before approval: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval."
       ],
       "massSearchThemes": [
         {
-          "lane": "model-deployment",
-          "themeTitle": "AI app and model API deployment",
+          "lane": "prompt-library",
+          "themeTitle": "Cross-industry AI prompt templates",
           "wave": 1
         }
       ],
@@ -653,23 +1336,201 @@
           "title": "ChatGPT 提示词大全和万能公式"
         },
         {
-          "laneId": "llm-deployment-troubleshooting-prompts",
+          "laneId": "office-copilot-prompts",
+          "queries": 14,
+          "templates": 5,
+          "title": "AI 办公提示词：Word、Excel、PPT、邮件和会议"
+        },
+        {
+          "laneId": "ecommerce-customer-service-prompts",
           "queries": 18,
           "templates": 5,
-          "title": "大模型部署、本地模型和 API 排错提示词"
+          "title": "电商客服、售后和直播卖货 AI 提示词"
+        },
+        {
+          "laneId": "sales-proposal-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "销售话术、报价和方案书 AI 提示词"
+        },
+        {
+          "laneId": "hr-resume-recruiting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "简历优化、招聘和 HR AI 提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
         }
       ],
-      "priorityScore": 439,
+      "priorityScore": 769,
+      "projectedPublishableAfterHumanApproval": false,
+      "publicImpact": "Immediate Wave 1; projected public count after human approval is 500.",
+      "readyForHumanApproval": true,
+      "seoWarnings": [],
+      "sourceReplacementDecisions": [
+        {
+          "kind": "failed-url",
+          "originalUrl": "https://ai-prompts-pro.com/blog/ai-prompt-templates-business",
+          "recommendedCandidate": "Microsoft Copilot Prompt Gallery: https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://ai-sdk.dev/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/retrieval",
+          "recommendedCandidate": null
+        }
+      ],
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "unsafeReasons": []
+    },
+    {
+      "articleState": {
+        "humanReviewRequired": true,
+        "noindex": false,
+        "qualityScore": 100,
+        "sourceNotes": true,
+        "status": "published"
+      },
+      "alreadyPublished": true,
+      "blockers": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Run mark:review only after human source/fact approval. Run publish dry-run after review status. Do not run publish with --confirm here."
+      },
+      "currentStage": "first-coverage-backlog",
+      "file": "content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx",
+      "humanChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
+        "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
+        "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
+        "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
+        "Resolve or explicitly accept warning: candidate has no current links to public articles; use suggested public link during review.",
+        "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
+        "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
+        "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
+      ],
+      "massSearchThemes": [],
+      "popularPromptLanes": [],
+      "priorityScore": 70,
       "projectedPublishableAfterHumanApproval": true,
-      "publicImpact": "Immediate Wave 1; projected public count after human approval is 503.",
+      "publicImpact": "First-coverage backlog for zero-public cluster: 开源大模型部署：Ollama、vLLM、TGI、RunPod.",
+      "readyForHumanApproval": true,
+      "seoWarnings": [],
+      "sourceReplacementDecisions": [
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://ai-sdk.dev/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://docs.vllm.ai",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/agents",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://platform.openai.com/docs/guides/retrieval",
+          "recommendedCandidate": null
+        }
+      ],
+      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+      "unsafeReasons": []
+    },
+    {
+      "articleState": {
+        "humanReviewRequired": true,
+        "noindex": false,
+        "qualityScore": 100,
+        "sourceNotes": true,
+        "status": "published"
+      },
+      "alreadyPublished": true,
+      "blockers": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/ai-api-key-security-rotation-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/ai-api-key-security-rotation-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Run mark:review only after human source/fact approval. Run publish dry-run after review status. Do not run publish with --confirm here."
+      },
+      "currentStage": "first-coverage-backlog",
+      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
+      "humanChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
+        "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
+        "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
+        "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Review snippet warnings for title, description, slug, and primary keyword alignment.",
+        "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
+        "Resolve or explicitly accept warning: theme still has missing subtopics: logs, prompt injection, cost tracking.",
+        "Resolve or explicitly accept warning: few exact query variant matches in article text.",
+        "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
+        "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
+        "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
+      ],
+      "massSearchThemes": [
+        {
+          "lane": "prompt-library",
+          "themeTitle": "LLM evaluation, observability, and security",
+          "wave": 3
+        }
+      ],
+      "popularPromptLanes": [],
+      "priorityScore": 68,
+      "projectedPublishableAfterHumanApproval": true,
+      "publicImpact": "First-coverage backlog for zero-public cluster: AI API 接入、限流、成本和多模型路由.",
       "readyForHumanApproval": true,
       "seoWarnings": [
         {
           "actions": [
-            "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
+            "Check whether the title can naturally include the exact primary keyword: AI API Key 安全管理.",
             "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
             "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-            "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
+            "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
           ],
           "schemaWarnings": [],
           "snippetWarnings": [
@@ -695,6 +1556,16 @@
         },
         {
           "kind": "redirected-url",
+          "originalUrl": "https://docs.anthropic.com/",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://docs.dify.ai",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
           "originalUrl": "https://platform.openai.com/docs",
           "recommendedCandidate": null
         },
@@ -712,60 +1583,58 @@
           "kind": "redirected-url",
           "originalUrl": "https://platform.openai.com/docs/guides/retrieval",
           "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://python.langchain.com/docs",
+          "recommendedCandidate": null
         }
       ],
-      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
       "unsafeReasons": []
     },
     {
       "articleState": {
         "humanReviewRequired": true,
-        "noindex": true,
+        "noindex": false,
         "qualityScore": 100,
         "sourceNotes": true,
-        "status": "draft"
+        "status": "published"
       },
+      "alreadyPublished": true,
       "blockers": [],
       "commandBoundary": {
-        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx --confirm-human",
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/mcp-server-deployment-security-checklist.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/mcp-server-deployment-security-checklist.mdx",
         "publishConfirm": "not-included",
-        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/supabase-pgvector-rag-guide.mdx",
-        "stopBefore": "Run mark:review only after explicit human approval. Publish dry-run only after review. Publish confirm is not included."
+        "stopBefore": "Run mark:review only after human source/fact approval. Run publish dry-run after review status. Do not run publish with --confirm here."
       },
-      "currentStage": "draft-needs-human-approval",
-      "file": "content/blog/supabase-pgvector-rag-guide.mdx",
+      "currentStage": "first-coverage-backlog",
+      "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
       "humanChecklist": [
-        "Article remains draft: true",
-        "Article remains noindex: true",
-        "Human review flag is present: true",
-        "Quality score is at least 100: true",
-        "Source notes are present: true",
-        "Article has internal links: true",
-        "Reviewer confirms the article answers one clear search intent.",
-        "Reviewer confirms factual claims against official docs before any status change.",
-        "No income, ranking, approval, or client acquisition guarantee.",
-        "No instruction to bypass platform, payment, messaging, account, or review rules.",
-        "No API key, credential, private customer data, or account detail is included.",
-        "Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.",
-        "RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.",
-        "Fact-check query before approval: Supabase pgvector official docs latest.",
-        "Fact-check query before approval: Supabase pgvector official documentation current limits.",
-        "Fact-check query before approval: Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 fact check official docs.",
-        "Fact-check query before approval: AI 基建 official docs limits pricing changelog.",
-        "Fact-check query before approval: RAG 知识库搭建教程.",
-        "Fact-check query before approval: 企业知识库 AI 部署.",
-        "Verify official source before approval: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval.",
-        "Verify official source before approval: LangChain docs: https://python.langchain.com/docs.",
-        "Verify official source before approval: LlamaIndex docs: https://docs.llamaindex.ai.",
-        "Verify official source before approval: Hugging Face docs: https://huggingface.co/docs.",
-        "Verify official source before approval: OpenAI API docs: https://platform.openai.com/docs.",
-        "Verify official source before approval: Vercel AI SDK docs: https://ai-sdk.dev/docs."
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
+        "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
+        "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
+        "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
+        "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
+        "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
+        "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
+        "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
       ],
       "massSearchThemes": [
         {
-          "lane": "agent-memory-rag",
-          "themeTitle": "RAG, knowledge base, and agent memory",
+          "lane": "agent-deployment",
+          "themeTitle": "Agent deployment, tool calling, and production workflows",
           "wave": 1
+        },
+        {
+          "lane": "prompt-library",
+          "themeTitle": "LLM evaluation, observability, and security",
+          "wave": 3
         }
       ],
       "popularPromptLanes": [
@@ -774,41 +1643,222 @@
           "queries": 18,
           "templates": 5,
           "title": "Excel 和数据分析 AI 提示词"
+        },
+        {
+          "laneId": "ai-agent-deploy-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "AI Agent 部署、工具调用和上线排错提示词"
+        },
+        {
+          "laneId": "llm-deployment-troubleshooting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "大模型部署、本地模型和 API 排错提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
         }
       ],
-      "priorityScore": 415,
+      "priorityScore": 64,
       "projectedPublishableAfterHumanApproval": true,
-      "publicImpact": "Immediate Wave 1; projected public count after human approval is 503.",
+      "publicImpact": "First-coverage backlog for zero-public cluster: Dify、n8n、Coze、Flowise、MCP 自动化部署.",
       "readyForHumanApproval": true,
-      "seoWarnings": [],
+      "seoWarnings": [
+        {
+          "actions": [
+            "Check whether the title can naturally include the exact primary keyword: MCP Server 部署安全.",
+            "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+            "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+            "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+          ],
+          "schemaWarnings": [],
+          "snippetWarnings": [
+            "primary keyword is not an exact title substring"
+          ]
+        }
+      ],
       "sourceReplacementDecisions": [
         {
           "kind": "redirected-url",
-          "originalUrl": "https://ai-sdk.dev/docs",
+          "originalUrl": "https://docs.dify.ai/",
           "recommendedCandidate": null
         },
         {
           "kind": "redirected-url",
-          "originalUrl": "https://docs.llamaindex.ai",
-          "recommendedCandidate": null
-        },
-        {
-          "kind": "redirected-url",
-          "originalUrl": "https://platform.openai.com/docs",
-          "recommendedCandidate": null
-        },
-        {
-          "kind": "redirected-url",
-          "originalUrl": "https://platform.openai.com/docs/guides/retrieval",
-          "recommendedCandidate": null
-        },
-        {
-          "kind": "redirected-url",
-          "originalUrl": "https://python.langchain.com/docs",
+          "originalUrl": "https://modelcontextprotocol.io/docs",
           "recommendedCandidate": null
         }
       ],
-      "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索",
+      "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+      "unsafeReasons": []
+    },
+    {
+      "articleState": {
+        "humanReviewRequired": true,
+        "noindex": false,
+        "qualityScore": 100,
+        "sourceNotes": true,
+        "status": "published"
+      },
+      "alreadyPublished": true,
+      "blockers": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Run mark:review only after human source/fact approval. Run publish dry-run after review status. Do not run publish with --confirm here."
+      },
+      "currentStage": "first-coverage-backlog",
+      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
+      "humanChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
+        "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
+        "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
+        "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
+        "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
+        "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
+        "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
+        "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
+      ],
+      "massSearchThemes": [
+        {
+          "lane": "agent-deployment",
+          "themeTitle": "Agent deployment, tool calling, and production workflows",
+          "wave": 1
+        },
+        {
+          "lane": "agent-memory-rag",
+          "themeTitle": "RAG, knowledge base, and agent memory",
+          "wave": 1
+        },
+        {
+          "lane": "agent-deployment",
+          "themeTitle": "Dify, n8n, Flowise, and no-code AI automation",
+          "wave": 2
+        }
+      ],
+      "popularPromptLanes": [
+        {
+          "laneId": "excel-data-analysis-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Excel 和数据分析 AI 提示词"
+        },
+        {
+          "laneId": "ai-agent-deploy-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "AI Agent 部署、工具调用和上线排错提示词"
+        },
+        {
+          "laneId": "llm-deployment-troubleshooting-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "大模型部署、本地模型和 API 排错提示词"
+        },
+        {
+          "laneId": "agent-memory-knowledge-base-prompts",
+          "queries": 18,
+          "templates": 5,
+          "title": "Agent 记忆、知识库和 RAG 提示词"
+        }
+      ],
+      "priorityScore": 64,
+      "projectedPublishableAfterHumanApproval": true,
+      "publicImpact": "First-coverage backlog for zero-public cluster: Agent 记忆：短期记忆、长期记忆、RAG、Postgres.",
+      "readyForHumanApproval": true,
+      "seoWarnings": [
+        {
+          "actions": [
+            "Check whether the title can naturally include the exact primary keyword: n8n AI Agent 知识库记忆.",
+            "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+            "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+            "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+          ],
+          "schemaWarnings": [],
+          "snippetWarnings": [
+            "primary keyword is not an exact title substring"
+          ]
+        }
+      ],
+      "sourceReplacementDecisions": [],
+      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
+      "unsafeReasons": []
+    },
+    {
+      "articleState": {
+        "humanReviewRequired": true,
+        "noindex": false,
+        "qualityScore": 100,
+        "sourceNotes": true,
+        "status": "published"
+      },
+      "alreadyPublished": true,
+      "blockers": [],
+      "commandBoundary": {
+        "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/agent-tool-permission-safety-guide.mdx --confirm-human",
+        "publishDryRunAfterReview": "npm run publish:articles -- --file=content/blog/agent-tool-permission-safety-guide.mdx",
+        "publishConfirm": "not-included",
+        "stopBefore": "Run mark:review only after human source/fact approval. Run publish dry-run after review status. Do not run publish with --confirm here."
+      },
+      "currentStage": "first-coverage-backlog",
+      "file": "content/blog/agent-tool-permission-safety-guide.mdx",
+      "humanChecklist": [
+        "Confirm the article is still draft, noindex, and humanReviewRequired before any approval action.",
+        "Open the source targets and verify current product names, APIs, commands, limits, and version-sensitive claims.",
+        "Remove unsupported traffic, ranking, revenue, cost-saving, latency, or reliability claims.",
+        "Run mark:review only after explicit human approval; do not publish with --confirm from this matrix.",
+        "Choose one suggested public internal link during review or document why it should remain unlinked.",
+        "Decide whether title, description, or opening copy should naturally include one search-seed phrase.",
+        "Resolve or explicitly accept warning: primary keyword is not an exact title substring.",
+        "Resolve or explicitly accept warning: no exact search-seed phrase appears in title, description, or body.",
+        "Resolve or explicitly accept warning: few search-seed token families appear in article text.",
+        "Resolve or explicitly accept warning: article currently has no links to published articles.",
+        "Verify current official docs for product names, APIs, model names, deployment commands, limits, and version-sensitive details.",
+        "Remove unsupported claims about measured traffic, rankings, impressions, clicks, revenue, cost savings, latency, or reliability.",
+        "Confirm the article answers the cluster's first public entry search intent without keyword stuffing."
+      ],
+      "massSearchThemes": [],
+      "popularPromptLanes": [],
+      "priorityScore": 60,
+      "projectedPublishableAfterHumanApproval": true,
+      "publicImpact": "First-coverage backlog for zero-public cluster: LLM 观测、评测、日志和上线后质量.",
+      "readyForHumanApproval": true,
+      "seoWarnings": [
+        {
+          "actions": [
+            "Check whether the title can naturally include the exact primary keyword: Agent 工具权限控制.",
+            "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
+            "Confirm the H1/title/description still answer the same search intent after any metadata change.",
+            "For published pages, make only deliberate SEO metadata edits and confirm the canonical URL remains stable."
+          ],
+          "schemaWarnings": [],
+          "snippetWarnings": [
+            "primary keyword is not an exact title substring"
+          ]
+        }
+      ],
+      "sourceReplacementDecisions": [
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://docs.helicone.ai/",
+          "recommendedCandidate": null
+        },
+        {
+          "kind": "redirected-url",
+          "originalUrl": "https://docs.ragas.io/",
+          "recommendedCandidate": null
+        }
+      ],
+      "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
       "unsafeReasons": []
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T12:27:38.431Z",
+  "generatedAt": "2026-06-16T07:39:58.332Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -16,357 +16,34 @@
   },
   "sourceEvidence": {
     "decisionMatrixItems": 3,
-    "decisionMatrixRepairItems": 1,
+    "decisionMatrixRepairItems": 3,
     "decisionMatrixUnsafeItems": 0,
-    "repairQueueFullTasks": 55,
+    "repairQueueFullTasks": 57,
     "repairQueueMinimumPathFiles": 3,
-    "repairQueueMinimumPathTasks": 16,
+    "repairQueueMinimumPathTasks": 18,
     "repairQueueUnsafeItems": 0
   },
   "summary": {
     "filesRouted": 3,
     "highRiskTasks": 6,
-    "minimumPathTasks": 16,
-    "nextRepairFile": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-    "nextRepairTitle": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+    "minimumPathTasks": 18,
+    "nextRepairFile": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+    "nextRepairTitle": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
     "publishConfirmCommandsIncluded": 0,
-    "repairBeforeReviewItems": 1,
+    "repairBeforeReviewItems": 3,
     "routeSessions": 12,
     "trafficDataAvailable": false,
-    "unsafeItems": 2
+    "unsafeItems": 0
   },
-  "unsafeItems": [
-    {
-      "file": "content/blog/together-ai-api-beginner-guide.mdx",
-      "fullTaskCount": 19,
-      "highRiskTasks": 2,
-      "lane": "ai-deployment",
-      "manualOnlyCommands": {
-        "markReviewAfterExplicitApproval": "npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human",
-        "rerunAfterRepair": [
-          "npm run automation:human-approval-repair-queue",
-          "npm run automation:human-approval-repair-route",
-          "npm run automation:gate",
-          "npm run automation:digest"
-        ]
-      },
-      "minimumPathCategories": [
-        "source-url",
-        "source-review",
-        "search-intent",
-        "internal-link",
-        "approval-boundary"
-      ],
-      "minimumPathTasks": [
-        {
-          "action": "Verify source URLs and fact-check queries before mark:review.",
-          "category": "source-url",
-          "priority": 867,
-          "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
-          "severity": "high",
-          "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-05"
-        },
-        {
-          "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
-          "category": "source-review",
-          "priority": 807,
-          "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
-          "severity": "high",
-          "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-06"
-        },
-        {
-          "action": "Resolve search weakness: no exact search query appears in title.",
-          "category": "search-intent",
-          "priority": 707,
-          "proofRequired": "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body.",
-          "severity": "medium",
-          "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-11"
-        },
-        {
-          "action": "Apply or explicitly reject the internal-link suggestion before mark:review.",
-          "category": "internal-link",
-          "priority": 667,
-          "proofRequired": "Draft contains at least one contextual link to a currently published relevant article.",
-          "severity": "medium",
-          "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-17"
-        },
-        {
-          "action": "Publishing remains a separate explicit approval step.",
-          "category": "approval-boundary",
-          "priority": 567,
-          "proofRequired": "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval.",
-          "severity": "medium",
-          "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-19"
-        }
-      ],
-      "nextDecision": "defer",
-      "primaryQuery": "RAG 知识库搭建教程",
-      "publishConfirm": "not-included",
-      "repairSessions": [
-        {
-          "categories": [
-            "source-url",
-            "source-review"
-          ],
-          "name": "source verification first",
-          "proofRequired": [
-            "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
-            "Reviewer records source/fact-check confirmation and removes unsupported claims."
-          ],
-          "tasks": [
-            {
-              "action": "Verify source URLs and fact-check queries before mark:review.",
-              "category": "source-url",
-              "priority": 867,
-              "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
-              "severity": "high",
-              "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-05"
-            },
-            {
-              "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
-              "category": "source-review",
-              "priority": 807,
-              "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
-              "severity": "high",
-              "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-06"
-            }
-          ]
-        },
-        {
-          "categories": [
-            "search-intent"
-          ],
-          "name": "search intent alignment",
-          "proofRequired": [
-            "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body."
-          ],
-          "tasks": [
-            {
-              "action": "Resolve search weakness: no exact search query appears in title.",
-              "category": "search-intent",
-              "priority": 707,
-              "proofRequired": "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body.",
-              "severity": "medium",
-              "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-11"
-            }
-          ]
-        },
-        {
-          "categories": [
-            "internal-link"
-          ],
-          "name": "public internal link insertion",
-          "proofRequired": [
-            "Draft contains at least one contextual link to a currently published relevant article."
-          ],
-          "tasks": [
-            {
-              "action": "Apply or explicitly reject the internal-link suggestion before mark:review.",
-              "category": "internal-link",
-              "priority": 667,
-              "proofRequired": "Draft contains at least one contextual link to a currently published relevant article.",
-              "severity": "medium",
-              "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-17"
-            }
-          ]
-        },
-        {
-          "categories": [
-            "copydesk",
-            "approval-boundary"
-          ],
-          "name": "copydesk and approval boundary",
-          "proofRequired": [
-            "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval."
-          ],
-          "tasks": [
-            {
-              "action": "Publishing remains a separate explicit approval step.",
-              "category": "approval-boundary",
-              "priority": 567,
-              "proofRequired": "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval.",
-              "severity": "medium",
-              "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-19"
-            }
-          ]
-        }
-      ],
-      "routeRank": 666,
-      "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
-      "unsafeReasons": [
-        "route item is not marked repair-before-review: defer"
-      ]
-    },
-    {
-      "file": "content/blog/vercel-404-after-deploy.mdx",
-      "fullTaskCount": 18,
-      "highRiskTasks": 2,
-      "lane": "ai-deployment",
-      "manualOnlyCommands": {
-        "markReviewAfterExplicitApproval": "npm run mark:review -- --file=content/blog/vercel-404-after-deploy.mdx --confirm-human",
-        "rerunAfterRepair": [
-          "npm run automation:human-approval-repair-queue",
-          "npm run automation:human-approval-repair-route",
-          "npm run automation:gate",
-          "npm run automation:digest"
-        ]
-      },
-      "minimumPathCategories": [
-        "source-url",
-        "source-review",
-        "search-intent",
-        "internal-link",
-        "approval-boundary"
-      ],
-      "minimumPathTasks": [
-        {
-          "action": "Verify source URLs and fact-check queries before mark:review.",
-          "category": "source-url",
-          "priority": 837,
-          "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
-          "severity": "high",
-          "taskId": "VERCEL-404-AFTER-DEPLOY-05"
-        },
-        {
-          "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
-          "category": "source-review",
-          "priority": 777,
-          "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
-          "severity": "high",
-          "taskId": "VERCEL-404-AFTER-DEPLOY-06"
-        },
-        {
-          "action": "Resolve search weakness: no exact search query appears in title.",
-          "category": "search-intent",
-          "priority": 677,
-          "proofRequired": "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body.",
-          "severity": "medium",
-          "taskId": "VERCEL-404-AFTER-DEPLOY-09"
-        },
-        {
-          "action": "Apply or explicitly reject the internal-link suggestion before mark:review.",
-          "category": "internal-link",
-          "priority": 637,
-          "proofRequired": "Draft contains at least one contextual link to a currently published relevant article.",
-          "severity": "medium",
-          "taskId": "VERCEL-404-AFTER-DEPLOY-16"
-        },
-        {
-          "action": "Publishing remains a separate explicit approval step.",
-          "category": "approval-boundary",
-          "priority": 537,
-          "proofRequired": "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval.",
-          "severity": "medium",
-          "taskId": "VERCEL-404-AFTER-DEPLOY-18"
-        }
-      ],
-      "nextDecision": "defer",
-      "primaryQuery": "Vercel build failed",
-      "publishConfirm": "not-included",
-      "repairSessions": [
-        {
-          "categories": [
-            "source-url",
-            "source-review"
-          ],
-          "name": "source verification first",
-          "proofRequired": [
-            "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
-            "Reviewer records source/fact-check confirmation and removes unsupported claims."
-          ],
-          "tasks": [
-            {
-              "action": "Verify source URLs and fact-check queries before mark:review.",
-              "category": "source-url",
-              "priority": 837,
-              "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
-              "severity": "high",
-              "taskId": "VERCEL-404-AFTER-DEPLOY-05"
-            },
-            {
-              "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
-              "category": "source-review",
-              "priority": 777,
-              "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
-              "severity": "high",
-              "taskId": "VERCEL-404-AFTER-DEPLOY-06"
-            }
-          ]
-        },
-        {
-          "categories": [
-            "search-intent"
-          ],
-          "name": "search intent alignment",
-          "proofRequired": [
-            "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body."
-          ],
-          "tasks": [
-            {
-              "action": "Resolve search weakness: no exact search query appears in title.",
-              "category": "search-intent",
-              "priority": 677,
-              "proofRequired": "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body.",
-              "severity": "medium",
-              "taskId": "VERCEL-404-AFTER-DEPLOY-09"
-            }
-          ]
-        },
-        {
-          "categories": [
-            "internal-link"
-          ],
-          "name": "public internal link insertion",
-          "proofRequired": [
-            "Draft contains at least one contextual link to a currently published relevant article."
-          ],
-          "tasks": [
-            {
-              "action": "Apply or explicitly reject the internal-link suggestion before mark:review.",
-              "category": "internal-link",
-              "priority": 637,
-              "proofRequired": "Draft contains at least one contextual link to a currently published relevant article.",
-              "severity": "medium",
-              "taskId": "VERCEL-404-AFTER-DEPLOY-16"
-            }
-          ]
-        },
-        {
-          "categories": [
-            "copydesk",
-            "approval-boundary"
-          ],
-          "name": "copydesk and approval boundary",
-          "proofRequired": [
-            "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval."
-          ],
-          "tasks": [
-            {
-              "action": "Publishing remains a separate explicit approval step.",
-              "category": "approval-boundary",
-              "priority": 537,
-              "proofRequired": "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval.",
-              "severity": "medium",
-              "taskId": "VERCEL-404-AFTER-DEPLOY-18"
-            }
-          ]
-        }
-      ],
-      "routeRank": 635,
-      "title": "Vercel 部署成功但页面 404：新手排查顺序",
-      "unsafeReasons": [
-        "route item is not marked repair-before-review: defer"
-      ]
-    }
-  ],
+  "unsafeItems": [],
   "routeItems": [
     {
-      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-      "fullTaskCount": 18,
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
+      "fullTaskCount": 20,
       "highRiskTasks": 2,
       "lane": "ai-deployment",
       "manualOnlyCommands": {
-        "markReviewAfterExplicitApproval": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
+        "markReviewAfterExplicitApproval": "npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human",
         "rerunAfterRepair": [
           "npm run automation:human-approval-repair-queue",
           "npm run automation:human-approval-repair-route",
@@ -386,54 +63,54 @@
         {
           "action": "Verify source URLs and fact-check queries before mark:review.",
           "category": "source-url",
-          "priority": 1963,
+          "priority": 2143,
           "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
           "severity": "high",
-          "taskId": "VERCEL-AI-GATEWAY-MULTI-PROVIDER-GUIDE-05"
+          "taskId": "AI-AGENT-DEPLOYMENT-VERCEL-AI-SDK-GUIDE-05"
         },
         {
           "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
           "category": "source-review",
-          "priority": 1903,
+          "priority": 2083,
           "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
           "severity": "high",
-          "taskId": "VERCEL-AI-GATEWAY-MULTI-PROVIDER-GUIDE-06"
+          "taskId": "AI-AGENT-DEPLOYMENT-VERCEL-AI-SDK-GUIDE-06"
         },
         {
           "action": "Resolve search weakness: no exact search query appears in title.",
           "category": "search-intent",
-          "priority": 1803,
+          "priority": 1983,
           "proofRequired": "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body.",
           "severity": "medium",
-          "taskId": "VERCEL-AI-GATEWAY-MULTI-PROVIDER-GUIDE-09"
+          "taskId": "AI-AGENT-DEPLOYMENT-VERCEL-AI-SDK-GUIDE-10"
         },
         {
           "action": "Apply or explicitly reject the internal-link suggestion before mark:review.",
           "category": "internal-link",
-          "priority": 1763,
+          "priority": 1943,
           "proofRequired": "Draft contains at least one contextual link to a currently published relevant article.",
           "severity": "medium",
-          "taskId": "VERCEL-AI-GATEWAY-MULTI-PROVIDER-GUIDE-15"
+          "taskId": "AI-AGENT-DEPLOYMENT-VERCEL-AI-SDK-GUIDE-17"
         },
         {
           "action": "Review reason: copydesk warning remediation exists.",
           "category": "copydesk",
-          "priority": 1723,
+          "priority": 1903,
           "proofRequired": "Reviewer resolves or explicitly accepts copydesk warning without weakening guardrails.",
           "severity": "medium",
-          "taskId": "VERCEL-AI-GATEWAY-MULTI-PROVIDER-GUIDE-17"
+          "taskId": "AI-AGENT-DEPLOYMENT-VERCEL-AI-SDK-GUIDE-19"
         },
         {
           "action": "Publishing remains a separate explicit approval step.",
           "category": "approval-boundary",
-          "priority": 1663,
+          "priority": 1843,
           "proofRequired": "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval.",
           "severity": "medium",
-          "taskId": "VERCEL-AI-GATEWAY-MULTI-PROVIDER-GUIDE-18"
+          "taskId": "AI-AGENT-DEPLOYMENT-VERCEL-AI-SDK-GUIDE-20"
         }
       ],
       "nextDecision": "repair-before-review",
-      "primaryQuery": "大模型部署教程",
+      "primaryQuery": "AI Agent deployment tutorial",
       "publishConfirm": "not-included",
       "repairSessions": [
         {
@@ -450,18 +127,18 @@
             {
               "action": "Verify source URLs and fact-check queries before mark:review.",
               "category": "source-url",
-              "priority": 1963,
+              "priority": 2143,
               "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
               "severity": "high",
-              "taskId": "VERCEL-AI-GATEWAY-MULTI-PROVIDER-GUIDE-05"
+              "taskId": "AI-AGENT-DEPLOYMENT-VERCEL-AI-SDK-GUIDE-05"
             },
             {
               "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
               "category": "source-review",
-              "priority": 1903,
+              "priority": 2083,
               "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
               "severity": "high",
-              "taskId": "VERCEL-AI-GATEWAY-MULTI-PROVIDER-GUIDE-06"
+              "taskId": "AI-AGENT-DEPLOYMENT-VERCEL-AI-SDK-GUIDE-06"
             }
           ]
         },
@@ -477,10 +154,10 @@
             {
               "action": "Resolve search weakness: no exact search query appears in title.",
               "category": "search-intent",
-              "priority": 1803,
+              "priority": 1983,
               "proofRequired": "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body.",
               "severity": "medium",
-              "taskId": "VERCEL-AI-GATEWAY-MULTI-PROVIDER-GUIDE-09"
+              "taskId": "AI-AGENT-DEPLOYMENT-VERCEL-AI-SDK-GUIDE-10"
             }
           ]
         },
@@ -496,10 +173,10 @@
             {
               "action": "Apply or explicitly reject the internal-link suggestion before mark:review.",
               "category": "internal-link",
-              "priority": 1763,
+              "priority": 1943,
               "proofRequired": "Draft contains at least one contextual link to a currently published relevant article.",
               "severity": "medium",
-              "taskId": "VERCEL-AI-GATEWAY-MULTI-PROVIDER-GUIDE-15"
+              "taskId": "AI-AGENT-DEPLOYMENT-VERCEL-AI-SDK-GUIDE-17"
             }
           ]
         },
@@ -517,33 +194,33 @@
             {
               "action": "Review reason: copydesk warning remediation exists.",
               "category": "copydesk",
-              "priority": 1723,
+              "priority": 1903,
               "proofRequired": "Reviewer resolves or explicitly accepts copydesk warning without weakening guardrails.",
               "severity": "medium",
-              "taskId": "VERCEL-AI-GATEWAY-MULTI-PROVIDER-GUIDE-17"
+              "taskId": "AI-AGENT-DEPLOYMENT-VERCEL-AI-SDK-GUIDE-19"
             },
             {
               "action": "Publishing remains a separate explicit approval step.",
               "category": "approval-boundary",
-              "priority": 1663,
+              "priority": 1843,
               "proofRequired": "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval.",
               "severity": "medium",
-              "taskId": "VERCEL-AI-GATEWAY-MULTI-PROVIDER-GUIDE-18"
+              "taskId": "AI-AGENT-DEPLOYMENT-VERCEL-AI-SDK-GUIDE-20"
             }
           ]
         }
       ],
-      "routeRank": 1761,
-      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+      "routeRank": 1943,
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
       "unsafeReasons": []
     },
     {
-      "file": "content/blog/together-ai-api-beginner-guide.mdx",
-      "fullTaskCount": 19,
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
+      "fullTaskCount": 16,
       "highRiskTasks": 2,
-      "lane": "ai-deployment",
+      "lane": "industry-prompt",
       "manualOnlyCommands": {
-        "markReviewAfterExplicitApproval": "npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human",
+        "markReviewAfterExplicitApproval": "npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human",
         "rerunAfterRepair": [
           "npm run automation:human-approval-repair-queue",
           "npm run automation:human-approval-repair-route",
@@ -556,51 +233,237 @@
         "source-review",
         "search-intent",
         "internal-link",
+        "copydesk",
         "approval-boundary"
       ],
       "minimumPathTasks": [
         {
           "action": "Verify source URLs and fact-check queries before mark:review.",
           "category": "source-url",
-          "priority": 867,
+          "priority": 2143,
           "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
           "severity": "high",
-          "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-05"
+          "taskId": "INDUSTRY-AI-PROMPTS-TEMPLATE-LIBRARY-2026-05"
         },
         {
           "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
           "category": "source-review",
-          "priority": 807,
+          "priority": 2083,
           "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
           "severity": "high",
-          "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-06"
+          "taskId": "INDUSTRY-AI-PROMPTS-TEMPLATE-LIBRARY-2026-06"
         },
         {
-          "action": "Resolve search weakness: no exact search query appears in title.",
+          "action": "Resolve or explicitly accept search-intent weaknesses before mark:review.",
           "category": "search-intent",
-          "priority": 707,
+          "priority": 1983,
           "proofRequired": "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body.",
           "severity": "medium",
-          "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-11"
+          "taskId": "INDUSTRY-AI-PROMPTS-TEMPLATE-LIBRARY-2026-08"
         },
         {
           "action": "Apply or explicitly reject the internal-link suggestion before mark:review.",
           "category": "internal-link",
-          "priority": 667,
+          "priority": 1943,
           "proofRequired": "Draft contains at least one contextual link to a currently published relevant article.",
           "severity": "medium",
-          "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-17"
+          "taskId": "INDUSTRY-AI-PROMPTS-TEMPLATE-LIBRARY-2026-12"
+        },
+        {
+          "action": "Review reason: copydesk warning remediation exists.",
+          "category": "copydesk",
+          "priority": 1903,
+          "proofRequired": "Reviewer resolves or explicitly accepts copydesk warning without weakening guardrails.",
+          "severity": "medium",
+          "taskId": "INDUSTRY-AI-PROMPTS-TEMPLATE-LIBRARY-2026-14"
         },
         {
           "action": "Publishing remains a separate explicit approval step.",
           "category": "approval-boundary",
-          "priority": 567,
+          "priority": 1843,
           "proofRequired": "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval.",
           "severity": "medium",
-          "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-19"
+          "taskId": "INDUSTRY-AI-PROMPTS-TEMPLATE-LIBRARY-2026-16"
         }
       ],
-      "nextDecision": "defer",
+      "nextDecision": "repair-before-review",
+      "primaryQuery": "ChatGPT prompts for business",
+      "publishConfirm": "not-included",
+      "repairSessions": [
+        {
+          "categories": [
+            "source-url",
+            "source-review"
+          ],
+          "name": "source verification first",
+          "proofRequired": [
+            "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
+            "Reviewer records source/fact-check confirmation and removes unsupported claims."
+          ],
+          "tasks": [
+            {
+              "action": "Verify source URLs and fact-check queries before mark:review.",
+              "category": "source-url",
+              "priority": 2143,
+              "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
+              "severity": "high",
+              "taskId": "INDUSTRY-AI-PROMPTS-TEMPLATE-LIBRARY-2026-05"
+            },
+            {
+              "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+              "category": "source-review",
+              "priority": 2083,
+              "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
+              "severity": "high",
+              "taskId": "INDUSTRY-AI-PROMPTS-TEMPLATE-LIBRARY-2026-06"
+            }
+          ]
+        },
+        {
+          "categories": [
+            "search-intent"
+          ],
+          "name": "search intent alignment",
+          "proofRequired": [
+            "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body."
+          ],
+          "tasks": [
+            {
+              "action": "Resolve or explicitly accept search-intent weaknesses before mark:review.",
+              "category": "search-intent",
+              "priority": 1983,
+              "proofRequired": "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body.",
+              "severity": "medium",
+              "taskId": "INDUSTRY-AI-PROMPTS-TEMPLATE-LIBRARY-2026-08"
+            }
+          ]
+        },
+        {
+          "categories": [
+            "internal-link"
+          ],
+          "name": "public internal link insertion",
+          "proofRequired": [
+            "Draft contains at least one contextual link to a currently published relevant article."
+          ],
+          "tasks": [
+            {
+              "action": "Apply or explicitly reject the internal-link suggestion before mark:review.",
+              "category": "internal-link",
+              "priority": 1943,
+              "proofRequired": "Draft contains at least one contextual link to a currently published relevant article.",
+              "severity": "medium",
+              "taskId": "INDUSTRY-AI-PROMPTS-TEMPLATE-LIBRARY-2026-12"
+            }
+          ]
+        },
+        {
+          "categories": [
+            "copydesk",
+            "approval-boundary"
+          ],
+          "name": "copydesk and approval boundary",
+          "proofRequired": [
+            "Reviewer resolves or explicitly accepts copydesk warning without weakening guardrails.",
+            "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval."
+          ],
+          "tasks": [
+            {
+              "action": "Review reason: copydesk warning remediation exists.",
+              "category": "copydesk",
+              "priority": 1903,
+              "proofRequired": "Reviewer resolves or explicitly accepts copydesk warning without weakening guardrails.",
+              "severity": "medium",
+              "taskId": "INDUSTRY-AI-PROMPTS-TEMPLATE-LIBRARY-2026-14"
+            },
+            {
+              "action": "Publishing remains a separate explicit approval step.",
+              "category": "approval-boundary",
+              "priority": 1843,
+              "proofRequired": "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval.",
+              "severity": "medium",
+              "taskId": "INDUSTRY-AI-PROMPTS-TEMPLATE-LIBRARY-2026-16"
+            }
+          ]
+        }
+      ],
+      "routeRank": 1939,
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用",
+      "unsafeReasons": []
+    },
+    {
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+      "fullTaskCount": 21,
+      "highRiskTasks": 2,
+      "lane": "public-coverage-gap",
+      "manualOnlyCommands": {
+        "markReviewAfterExplicitApproval": "npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human",
+        "rerunAfterRepair": [
+          "npm run automation:human-approval-repair-queue",
+          "npm run automation:human-approval-repair-route",
+          "npm run automation:gate",
+          "npm run automation:digest"
+        ]
+      },
+      "minimumPathCategories": [
+        "source-url",
+        "source-review",
+        "search-intent",
+        "internal-link",
+        "copydesk",
+        "approval-boundary"
+      ],
+      "minimumPathTasks": [
+        {
+          "action": "Verify source URLs and fact-check queries before mark:review.",
+          "category": "source-url",
+          "priority": 2018,
+          "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
+          "severity": "high",
+          "taskId": "AI-MODEL-SELECTION-CUSTOMER-SERVICE-GUIDE-05"
+        },
+        {
+          "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
+          "category": "source-review",
+          "priority": 1958,
+          "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
+          "severity": "high",
+          "taskId": "AI-MODEL-SELECTION-CUSTOMER-SERVICE-GUIDE-06"
+        },
+        {
+          "action": "Resolve search weakness: no exact search query appears in title.",
+          "category": "search-intent",
+          "priority": 1858,
+          "proofRequired": "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body.",
+          "severity": "medium",
+          "taskId": "AI-MODEL-SELECTION-CUSTOMER-SERVICE-GUIDE-11"
+        },
+        {
+          "action": "Apply or explicitly reject the internal-link suggestion before mark:review.",
+          "category": "internal-link",
+          "priority": 1818,
+          "proofRequired": "Draft contains at least one contextual link to a currently published relevant article.",
+          "severity": "medium",
+          "taskId": "AI-MODEL-SELECTION-CUSTOMER-SERVICE-GUIDE-18"
+        },
+        {
+          "action": "Review reason: copydesk warning remediation exists.",
+          "category": "copydesk",
+          "priority": 1778,
+          "proofRequired": "Reviewer resolves or explicitly accepts copydesk warning without weakening guardrails.",
+          "severity": "medium",
+          "taskId": "AI-MODEL-SELECTION-CUSTOMER-SERVICE-GUIDE-20"
+        },
+        {
+          "action": "Publishing remains a separate explicit approval step.",
+          "category": "approval-boundary",
+          "priority": 1718,
+          "proofRequired": "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval.",
+          "severity": "medium",
+          "taskId": "AI-MODEL-SELECTION-CUSTOMER-SERVICE-GUIDE-21"
+        }
+      ],
+      "nextDecision": "repair-before-review",
       "primaryQuery": "RAG 知识库搭建教程",
       "publishConfirm": "not-included",
       "repairSessions": [
@@ -618,18 +481,18 @@
             {
               "action": "Verify source URLs and fact-check queries before mark:review.",
               "category": "source-url",
-              "priority": 867,
+              "priority": 2018,
               "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
               "severity": "high",
-              "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-05"
+              "taskId": "AI-MODEL-SELECTION-CUSTOMER-SERVICE-GUIDE-05"
             },
             {
               "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
               "category": "source-review",
-              "priority": 807,
+              "priority": 1958,
               "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
               "severity": "high",
-              "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-06"
+              "taskId": "AI-MODEL-SELECTION-CUSTOMER-SERVICE-GUIDE-06"
             }
           ]
         },
@@ -645,10 +508,10 @@
             {
               "action": "Resolve search weakness: no exact search query appears in title.",
               "category": "search-intent",
-              "priority": 707,
+              "priority": 1858,
               "proofRequired": "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body.",
               "severity": "medium",
-              "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-11"
+              "taskId": "AI-MODEL-SELECTION-CUSTOMER-SERVICE-GUIDE-11"
             }
           ]
         },
@@ -664,10 +527,10 @@
             {
               "action": "Apply or explicitly reject the internal-link suggestion before mark:review.",
               "category": "internal-link",
-              "priority": 667,
+              "priority": 1818,
               "proofRequired": "Draft contains at least one contextual link to a currently published relevant article.",
               "severity": "medium",
-              "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-17"
+              "taskId": "AI-MODEL-SELECTION-CUSTOMER-SERVICE-GUIDE-18"
             }
           ]
         },
@@ -678,186 +541,32 @@
           ],
           "name": "copydesk and approval boundary",
           "proofRequired": [
+            "Reviewer resolves or explicitly accepts copydesk warning without weakening guardrails.",
             "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval."
           ],
           "tasks": [
             {
-              "action": "Publishing remains a separate explicit approval step.",
-              "category": "approval-boundary",
-              "priority": 567,
-              "proofRequired": "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval.",
+              "action": "Review reason: copydesk warning remediation exists.",
+              "category": "copydesk",
+              "priority": 1778,
+              "proofRequired": "Reviewer resolves or explicitly accepts copydesk warning without weakening guardrails.",
               "severity": "medium",
-              "taskId": "TOGETHER-AI-API-BEGINNER-GUIDE-19"
-            }
-          ]
-        }
-      ],
-      "routeRank": 666,
-      "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
-      "unsafeReasons": [
-        "route item is not marked repair-before-review: defer"
-      ]
-    },
-    {
-      "file": "content/blog/vercel-404-after-deploy.mdx",
-      "fullTaskCount": 18,
-      "highRiskTasks": 2,
-      "lane": "ai-deployment",
-      "manualOnlyCommands": {
-        "markReviewAfterExplicitApproval": "npm run mark:review -- --file=content/blog/vercel-404-after-deploy.mdx --confirm-human",
-        "rerunAfterRepair": [
-          "npm run automation:human-approval-repair-queue",
-          "npm run automation:human-approval-repair-route",
-          "npm run automation:gate",
-          "npm run automation:digest"
-        ]
-      },
-      "minimumPathCategories": [
-        "source-url",
-        "source-review",
-        "search-intent",
-        "internal-link",
-        "approval-boundary"
-      ],
-      "minimumPathTasks": [
-        {
-          "action": "Verify source URLs and fact-check queries before mark:review.",
-          "category": "source-url",
-          "priority": 837,
-          "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
-          "severity": "high",
-          "taskId": "VERCEL-404-AFTER-DEPLOY-05"
-        },
-        {
-          "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
-          "category": "source-review",
-          "priority": 777,
-          "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
-          "severity": "high",
-          "taskId": "VERCEL-404-AFTER-DEPLOY-06"
-        },
-        {
-          "action": "Resolve search weakness: no exact search query appears in title.",
-          "category": "search-intent",
-          "priority": 677,
-          "proofRequired": "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body.",
-          "severity": "medium",
-          "taskId": "VERCEL-404-AFTER-DEPLOY-09"
-        },
-        {
-          "action": "Apply or explicitly reject the internal-link suggestion before mark:review.",
-          "category": "internal-link",
-          "priority": 637,
-          "proofRequired": "Draft contains at least one contextual link to a currently published relevant article.",
-          "severity": "medium",
-          "taskId": "VERCEL-404-AFTER-DEPLOY-16"
-        },
-        {
-          "action": "Publishing remains a separate explicit approval step.",
-          "category": "approval-boundary",
-          "priority": 537,
-          "proofRequired": "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval.",
-          "severity": "medium",
-          "taskId": "VERCEL-404-AFTER-DEPLOY-18"
-        }
-      ],
-      "nextDecision": "defer",
-      "primaryQuery": "Vercel build failed",
-      "publishConfirm": "not-included",
-      "repairSessions": [
-        {
-          "categories": [
-            "source-url",
-            "source-review"
-          ],
-          "name": "source verification first",
-          "proofRequired": [
-            "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
-            "Reviewer records source/fact-check confirmation and removes unsupported claims."
-          ],
-          "tasks": [
-            {
-              "action": "Verify source URLs and fact-check queries before mark:review.",
-              "category": "source-url",
-              "priority": 837,
-              "proofRequired": "Reviewer confirms final source URL is canonical or replaces it with an accessible equivalent.",
-              "severity": "high",
-              "taskId": "VERCEL-404-AFTER-DEPLOY-05"
+              "taskId": "AI-MODEL-SELECTION-CUSTOMER-SERVICE-GUIDE-20"
             },
             {
-              "action": "Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.",
-              "category": "source-review",
-              "priority": 777,
-              "proofRequired": "Reviewer records source/fact-check confirmation and removes unsupported claims.",
-              "severity": "high",
-              "taskId": "VERCEL-404-AFTER-DEPLOY-06"
-            }
-          ]
-        },
-        {
-          "categories": [
-            "search-intent"
-          ],
-          "name": "search intent alignment",
-          "proofRequired": [
-            "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body."
-          ],
-          "tasks": [
-            {
-              "action": "Resolve search weakness: no exact search query appears in title.",
-              "category": "search-intent",
-              "priority": 677,
-              "proofRequired": "Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body.",
-              "severity": "medium",
-              "taskId": "VERCEL-404-AFTER-DEPLOY-09"
-            }
-          ]
-        },
-        {
-          "categories": [
-            "internal-link"
-          ],
-          "name": "public internal link insertion",
-          "proofRequired": [
-            "Draft contains at least one contextual link to a currently published relevant article."
-          ],
-          "tasks": [
-            {
-              "action": "Apply or explicitly reject the internal-link suggestion before mark:review.",
-              "category": "internal-link",
-              "priority": 637,
-              "proofRequired": "Draft contains at least one contextual link to a currently published relevant article.",
-              "severity": "medium",
-              "taskId": "VERCEL-404-AFTER-DEPLOY-16"
-            }
-          ]
-        },
-        {
-          "categories": [
-            "copydesk",
-            "approval-boundary"
-          ],
-          "name": "copydesk and approval boundary",
-          "proofRequired": [
-            "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval."
-          ],
-          "tasks": [
-            {
               "action": "Publishing remains a separate explicit approval step.",
               "category": "approval-boundary",
-              "priority": 537,
+              "priority": 1718,
               "proofRequired": "Draft remains status=draft, noindex=true, humanReviewRequired=true until explicit approval.",
               "severity": "medium",
-              "taskId": "VERCEL-404-AFTER-DEPLOY-18"
+              "taskId": "AI-MODEL-SELECTION-CUSTOMER-SERVICE-GUIDE-21"
             }
           ]
         }
       ],
-      "routeRank": 635,
-      "title": "Vercel 部署成功但页面 404：新手排查顺序",
-      "unsafeReasons": [
-        "route item is not marked repair-before-review: defer"
-      ]
+      "routeRank": 1819,
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "unsafeReasons": []
     }
   ]
 }

@@ -6,6 +6,7 @@ import { checkFile } from "./quality-core";
 type WaveApprovalPacket = {
   files: string[];
   items: Array<{
+    alreadyPublished?: boolean;
     factCheckQueries?: string[];
     file: string;
     officialSourceTargets?: string[];
@@ -30,6 +31,7 @@ type ProjectStatus = {
 };
 
 type SimulationItem = {
+  alreadyPublished: boolean;
   blockers: string[];
   commands: {
     markReviewDryRun: string;
@@ -56,6 +58,7 @@ function main() {
   const items = packet.items.map(toSimulationItem);
   const unsafeItems = items.filter((item) => item.blockers.length > 0);
   const readyForHumanApproval = items.filter((item) => item.readyForHumanApproval).length;
+  const alreadyPublished = items.filter((item) => item.alreadyPublished).length;
   const projectedPublishableAfterHumanApproval = items.filter((item) => item.projectedPublishableAfterHumanApproval).length;
 
   const payload = {
@@ -68,6 +71,7 @@ function main() {
     },
     summary: {
       currentlyPublishable: projectStatus.articles.publishableNow.length,
+      alreadyPublished,
       items: items.length,
       projectedPublicPublishedAfterWave: projectStatus.articles.publicPublished + projectedPublishableAfterHumanApproval,
       projectedPublishableAfterHumanApproval,
@@ -108,20 +112,23 @@ function toSimulationItem(packetItem: WaveApprovalPacket["items"][number]): Simu
   const currentStatus = String(article.data.status || "");
   const noindex = article.data.noindex === true;
   const humanReviewRequired = article.data.humanReviewRequired === true;
+  const alreadyPublished = currentStatus === "published" && article.data.noindex === false;
+  const draftReviewCandidate = currentStatus === "draft" && noindex;
   const blockers = [
-    currentStatus === "draft" ? "" : `status is ${currentStatus || "missing"}, expected draft before mark:review`,
-    noindex ? "" : "noindex must remain true before human approval",
+    alreadyPublished || draftReviewCandidate ? "" : `status is ${currentStatus || "missing"} with noindex=${noindex}, expected draft/noindex or already published`,
+    alreadyPublished || noindex ? "" : "noindex must remain true before human approval",
     humanReviewRequired ? "" : "humanReviewRequired must remain true before human approval",
-    packetItem.readyForHumanReview ? "" : "wave approval packet does not mark this item ready",
+    packetItem.readyForHumanReview || packetItem.alreadyPublished || alreadyPublished ? "" : "wave approval packet does not mark this item ready or complete",
     quality.qualityScore >= 80 ? "" : `qualityScore ${quality.qualityScore} below 80`,
     quality.failedItems.length ? `quality issues: ${quality.failedItems.join("; ")}` : "",
     (packetItem.officialSourceTargets?.length || 0) > 0 ? "" : "missing official source targets",
     (packetItem.factCheckQueries?.length || 0) > 0 ? "" : "missing fact-check queries",
     (packetItem.riskReviewChecklist?.length || 0) > 0 ? "" : "missing risk review checklist",
   ].filter(Boolean);
-  const readyForHumanApproval = blockers.length === 0;
+  const readyForHumanApproval = !alreadyPublished && blockers.length === 0;
 
   return {
+    alreadyPublished,
     blockers,
     commands: {
       markReviewDryRun: `npm run mark:review -- --file=${file}`,
@@ -151,7 +158,7 @@ function toMarkdown(payload: {
   executionPlan: Record<string, string>;
   generatedAt: string;
   guardrails: { autoMarkReview: boolean; autoPublish: boolean; note: string; stopBeforeHumanApproval: boolean };
-  items: SimulationItem[];
+    items: SimulationItem[];
   publishingBoundary: {
     currentPublicPublished: number;
     currentPublishableNow: number;
@@ -159,6 +166,7 @@ function toMarkdown(payload: {
     projectedPublicPublishedAfterWave: number;
   };
   summary: {
+    alreadyPublished: number;
     currentlyPublishable: number;
     items: number;
     projectedPublicPublishedAfterWave: number;
@@ -187,6 +195,7 @@ function toMarkdown(payload: {
     "",
     `- Wave: ${payload.summary.wave}`,
     `- Items: ${payload.summary.items}`,
+    `- Already published: ${payload.summary.alreadyPublished}`,
     `- Ready for human approval: ${payload.summary.readyForHumanApproval}`,
     `- Unsafe items: ${payload.summary.unsafeItems}`,
     `- Currently publishable: ${payload.summary.currentlyPublishable}`,
@@ -207,10 +216,10 @@ function toMarkdown(payload: {
     "",
     "## Decision Table",
     "",
-    "| Ready | Status | Noindex | Human review flag | Score | Sources | Risk checks | Blockers | Title | File |",
-    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    "| Already published | Ready | Status | Noindex | Human review flag | Score | Sources | Risk checks | Blockers | Title | File |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
     ...payload.items.map((item) => (
-      `| ${item.readyForHumanApproval} | ${item.currentStatus} | ${item.noindex} | ${item.humanReviewRequired} | ${item.qualityScore} | ${item.officialSourceTargets} | ${item.riskReviewChecklist} | ${item.blockers.length ? item.blockers.join("<br>") : "none"} | ${item.title} | ${item.file} |`
+      `| ${item.alreadyPublished} | ${item.readyForHumanApproval} | ${item.currentStatus} | ${item.noindex} | ${item.humanReviewRequired} | ${item.qualityScore} | ${item.officialSourceTargets} | ${item.riskReviewChecklist} | ${item.blockers.length ? item.blockers.join("<br>") : "none"} | ${item.title} | ${item.file} |`
     )),
     "",
   ];
@@ -220,6 +229,7 @@ function toMarkdown(payload: {
       `## ${index + 1}. ${item.title}`,
       "",
       `- File: ${item.file}`,
+      `- Already published: ${item.alreadyPublished}`,
       `- Ready for human approval: ${item.readyForHumanApproval}`,
       `- Current status: ${item.currentStatus}`,
       `- Noindex: ${item.noindex}`,

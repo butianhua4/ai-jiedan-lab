@@ -1,6 +1,6 @@
 # Search Query Match Audit
 
-Generated at: 2026-06-16T12:27:15.046Z
+Generated at: 2026-06-16T05:16:45.429Z
 
 This report is read-only. It checks whether planned query variants are visible in article metadata, headings, and body copy before human review.
 
@@ -14,14 +14,14 @@ This report is read-only. It checks whether planned query variants are visible i
 
 ## Summary
 
-- averageExactMatches: 0.67
-- averageMatchedFamilies: 6.83
+- averageExactMatches: 1.75
+- averageMatchedFamilies: 6.92
 - blockingItems: 0
 - items: 12
 - queryCoverageItems: 12
-- queryCoverageUniqueQueries: 352
+- queryCoverageUniqueQueries: 365
 - readyItems: 12
-- warningItems: 10
+- warningItems: 7
 
 ## Source Evidence
 
@@ -36,131 +36,97 @@ This report is read-only. It checks whether planned query variants are visible i
 
 | Ready | Wave | Title hit | Description hit | Exact queries | Families | Blocking | Warnings | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | 1 | true | true | 0/35 | 7 | none | few exact query variant matches in article text | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| true | 1 | true | true | 0/30 | 7 | none | few exact query variant matches in article text | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| true | 1 | true | true | 0/35 | 7 | none | few exact query variant matches in article text | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
-| true | 2 | true | true | 0/30 | 7 | none | few exact query variant matches in article text | TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收 | content/blog/tensorrt-llm-beginner-guide.mdx |
-| true | 2 | true | true | 0/35 | 7 | none | few exact query variant matches in article text | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
-| true | 3 | true | true | 1/30 | 7 | none | few exact query variant matches in article text | Vercel 部署后 404 检查清单：逐页验收更稳 | content/blog/vercel-404-after-deploy-checklist.mdx |
-| true | 3 | true | true | 0/30 | 6 | none | few exact query variant matches in article text<br>missing query-family signals: intentSeeds | Vercel build failed 排查清单：从日志到重新部署 | content/blog/vercel-build-failed-causes-checklist.mdx |
-| true | 3 | true | true | 0/35 | 6 | none | few exact query variant matches in article text<br>missing query-family signals: intentSeeds | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
-| true | 4 | true | true | 1/35 | 7 | none | few exact query variant matches in article text | 向量数据库怎么选：新手先理解 embedding 和检索 | content/blog/vector-database-beginner-guide.mdx |
-| true | 4 | true | true | 0/30 | 7 | none | few exact query variant matches in article text | Vercel build failed 排查能不能项目：先看这 7 个边界 | content/blog/vercel-build-failed-causes-freelance-scope.mdx |
+| true | 1 | true | true | 0/35 | 7 | none | few exact query variant matches in article text | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 2 | true | true | 1/35 | 7 | none | few exact query variant matches in article text | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
+| true | 2 | true | true | 1/35 | 7 | none | few exact query variant matches in article text | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
+| true | 3 | true | true | 1/35 | 7 | none | few exact query variant matches in article text | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| true | 4 | true | true | 0/35 | 6 | none | few exact query variant matches in article text<br>missing query-family signals: intentSeeds | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| true | 4 | true | true | 1/35 | 7 | none | few exact query variant matches in article text | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| true | 4 | true | true | 1/30 | 7 | none | few exact query variant matches in article text | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 
 ## All Items
 
 | Ready | Wave | Title hit | Description hit | Exact queries | Families | Blocking | Warnings | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | 1 | true | true | 0/35 | 7 | none | few exact query variant matches in article text | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| true | 1 | true | true | 0/30 | 7 | none | few exact query variant matches in article text | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| true | 1 | true | true | 0/35 | 7 | none | few exact query variant matches in article text | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
-| true | 2 | true | true | 0/30 | 7 | none | few exact query variant matches in article text | TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收 | content/blog/tensorrt-llm-beginner-guide.mdx |
-| true | 2 | true | true | 4/35 | 7 | none | none | vLLM 部署适合什么场景：新手先看推理服务边界 | content/blog/vllm-deployment-beginner-guide.mdx |
-| true | 2 | true | true | 0/35 | 7 | none | few exact query variant matches in article text | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
-| true | 3 | true | true | 1/30 | 7 | none | few exact query variant matches in article text | Vercel 部署后 404 检查清单：逐页验收更稳 | content/blog/vercel-404-after-deploy-checklist.mdx |
-| true | 3 | true | true | 0/30 | 6 | none | few exact query variant matches in article text<br>missing query-family signals: intentSeeds | Vercel build failed 排查清单：从日志到重新部署 | content/blog/vercel-build-failed-causes-checklist.mdx |
-| true | 3 | true | true | 0/35 | 6 | none | few exact query variant matches in article text<br>missing query-family signals: intentSeeds | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
-| true | 4 | true | true | 1/35 | 7 | none | few exact query variant matches in article text | 向量数据库怎么选：新手先理解 embedding 和检索 | content/blog/vector-database-beginner-guide.mdx |
-| true | 4 | true | true | 0/30 | 7 | none | few exact query variant matches in article text | Vercel build failed 排查能不能项目：先看这 7 个边界 | content/blog/vercel-build-failed-causes-freelance-scope.mdx |
-| true | 4 | true | true | 2/30 | 7 | none | none | Vercel 部署成功但页面 404：新手排查顺序 | content/blog/vercel-404-after-deploy.mdx |
+| true | 1 | true | true | 4/35 | 7 | none | none | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
+| true | 1 | true | true | 0/35 | 7 | none | few exact query variant matches in article text | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | 1 | true | true | 4/35 | 7 | none | none | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | 2 | true | true | 1/35 | 7 | none | few exact query variant matches in article text | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
+| true | 2 | true | true | 1/35 | 7 | none | few exact query variant matches in article text | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | content/blog/education-ai-prompts-guide.mdx |
+| true | 2 | true | true | 2/36 | 7 | none | none | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
+| true | 3 | true | true | 4/35 | 7 | none | none | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | content/blog/ai-agent-memory-rag-design-guide.mdx |
+| true | 3 | true | true | 1/35 | 7 | none | few exact query variant matches in article text | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| true | 3 | true | true | 2/35 | 7 | none | none | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| true | 4 | true | true | 0/35 | 6 | none | few exact query variant matches in article text<br>missing query-family signals: intentSeeds | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | content/blog/open-webui-functions-pipelines-deployment-guide.mdx |
+| true | 4 | true | true | 1/35 | 7 | none | few exact query variant matches in article text | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
+| true | 4 | true | true | 1/30 | 7 | none | few exact query variant matches in article text | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | content/blog/ai-api-key-security-rotation-guide.mdx |
 
-### RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界
+### 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
 
-- File: content/blog/vector-database-selection-for-rag-guide.mdx
+- File: content/blog/ai-model-selection-customer-service-guide.mdx
 - Wave: 1
-- Primary keyword: RAG 向量数据库怎么选
+- Primary keyword: 客服 AI 模型选型
 - Warning issues: few exact query variant matches in article text
 
 Review suggestions:
 
 
-### Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级
+### 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要
 
-- File: content/blog/vercel-ai-gateway-multi-provider-guide.mdx
-- Wave: 1
-- Primary keyword: Vercel AI Gateway 多模型
-- Warning issues: few exact query variant matches in article text
-
-Review suggestions:
-
-
-### Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索
-
-- File: content/blog/supabase-pgvector-rag-guide.mdx
-- Wave: 1
-- Primary keyword: Supabase pgvector
-- Warning issues: few exact query variant matches in article text
-
-Review suggestions:
-
-
-### TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收
-
-- File: content/blog/tensorrt-llm-beginner-guide.mdx
+- File: content/blog/data-analysis-ai-prompts-guide.mdx
 - Wave: 2
-- Primary keyword: TensorRT-LLM 入门
+- Primary keyword: 数据分析 AI 提示词
 - Warning issues: few exact query variant matches in article text
 
 Review suggestions:
 
 
-### Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查
+### 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划
 
-- File: content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx
+- File: content/blog/education-ai-prompts-guide.mdx
 - Wave: 2
-- Primary keyword: Vercel AI SDK 聊天机器人部署
+- Primary keyword: 教育 AI 提示词
 - Warning issues: few exact query variant matches in article text
 
 Review suggestions:
 
 
-### Vercel 部署后 404 检查清单：逐页验收更稳
+### AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围
 
-- File: content/blog/vercel-404-after-deploy-checklist.mdx
+- File: content/blog/ai-automation-project-pricing-scope-guide.mdx
 - Wave: 3
-- Primary keyword: Vercel 部署后 404 检查清单
+- Primary keyword: AI 自动化项目报价
 - Warning issues: few exact query variant matches in article text
 
 Review suggestions:
 
 
-### Vercel build failed 排查清单：从日志到重新部署
+### Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流
 
-- File: content/blog/vercel-build-failed-causes-checklist.mdx
-- Wave: 3
-- Primary keyword: Vercel build failed 排查清单
+- File: content/blog/open-webui-functions-pipelines-deployment-guide.mdx
+- Wave: 4
+- Primary keyword: Open WebUI Functions Pipelines
 - Warning issues: few exact query variant matches in article text; missing query-family signals: intentSeeds
 
 Review suggestions:
 
 - 人工审核时检查是否自然覆盖核心搜索种子词，不要硬塞关键词。
 
-### Together AI API 怎么接入：开源模型接口、embedding 和部署边界
+### Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底
 
-- File: content/blog/together-ai-api-beginner-guide.mdx
-- Wave: 3
-- Primary keyword: Together AI API 接入
-- Warning issues: few exact query variant matches in article text; missing query-family signals: intentSeeds
-
-Review suggestions:
-
-- 人工审核时检查是否自然覆盖核心搜索种子词，不要硬塞关键词。
-
-### 向量数据库怎么选：新手先理解 embedding 和检索
-
-- File: content/blog/vector-database-beginner-guide.mdx
+- File: content/blog/dify-workflow-error-handling-guide.mdx
 - Wave: 4
-- Primary keyword: 向量数据库
+- Primary keyword: Dify 工作流错误处理
 - Warning issues: few exact query variant matches in article text
 
 Review suggestions:
 
 
-### Vercel build failed 排查能不能项目：先看这 7 个边界
+### AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急
 
-- File: content/blog/vercel-build-failed-causes-freelance-scope.mdx
+- File: content/blog/ai-api-key-security-rotation-guide.mdx
 - Wave: 4
-- Primary keyword: Vercel build failed 项目
+- Primary keyword: AI API Key 安全管理
 - Warning issues: few exact query variant matches in article text
 
 Review suggestions:

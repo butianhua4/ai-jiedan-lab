@@ -1,6 +1,6 @@
 # Wave Approval Packet
 
-Generated at: 2026-06-16T12:27:13.153Z
+Generated at: 2026-06-16T06:41:56.457Z
 
 Approval wave: 1
 
@@ -15,40 +15,43 @@ This packet is read-only. It consolidates the queue and source-pack checks for t
 
 ## Summary
 
+- alreadyPublished: 3
+- completedOrReady: 3
 - items: 3
-- readyForHumanReview: 3
+- readyForHumanReview: 0
 - unsafeItems: 0
 - wave: 1
 
 ## Files
 
-- content/blog/vector-database-selection-for-rag-guide.mdx
-- content/blog/vercel-ai-gateway-multi-provider-guide.mdx
-- content/blog/supabase-pgvector-rag-guide.mdx
+- content/blog/ai-model-selection-customer-service-guide.mdx
+- content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
+- content/blog/industry-ai-prompts-template-library-2026.mdx
 
 ## Decision Table
 
-| Ready | Score | Quality | Sources | Queries | Risk | Title | File |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| true | 446 | 100 | 8 | 8 | 6 | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| true | 439 | 100 | 7 | 8 | 6 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| true | 415 | 100 | 7 | 8 | 5 | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
+| Already published | Ready | Score | Quality | Sources | Queries | Risk | Title | File |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| true | false | 777 | 100 | 8 | 8 | 8 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
+| true | false | 773 | 100 | 6 | 8 | 6 | AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 | content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| true | false | 769 | 100 | 4 | 9 | 6 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | content/blog/industry-ai-prompts-template-library-2026.mdx |
 
-## 1. RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界
+## 1. 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检
 
-- File: content/blog/vector-database-selection-for-rag-guide.mdx
+- File: content/blog/ai-model-selection-customer-service-guide.mdx
+- Already published: true
 - Lane: deployment: RAG、知识库和向量检索
 - Search intent: informational
-- Publish batch: 25
-- Priority score: 446
+- Publish batch: 34
+- Priority score: 777
 - Quality score: 100
-- Ready for human review: true
-- Safe draft: true
+- Ready for human review: false
+- Safe draft: false
 - Source pack ready: true
-- Chinese chars: 1209
-- Internal links: 3
-- Description: 面向新手整理 RAG 向量数据库选型思路，比较 pgvector、Qdrant、Milvus 等路线时应关注数据规模、权限、运维、成本和迁移。
-- Source notes: 已于 2026-06-12 按 Supabase pgvector 官方文档、Qdrant 和 Milvus 向量数据库官方文档核对基础能力；结合 RAG 项目边界、metadata filter、运维复杂度和迁移成本整理。正式公开前仍需人工核对最新能力、托管价格、区域和版本差异。
+- Chinese chars: 1232
+- Internal links: 4
+- Description: 整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。
+- Source notes: 已于 2026-06-12 按 OpenAI Agents guardrails / human review 文档和 Vercel AI SDK tool calling / agent 文档核对高风险动作、人工接管、工具调用边界；结合多模型路由、RAG、客服提示词和生产客服系统风险整理。正式发布前仍需人工核对具体平台规则。
 
 Approval checklist:
 
@@ -74,10 +77,10 @@ Official source targets:
 
 Fact-check queries:
 
-- RAG 向量数据库怎么选 official docs latest
-- RAG 向量数据库怎么选 official documentation current limits
-- RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 fact check official docs
-- AI 基建 official docs limits pricing changelog
+- 客服 AI 模型选型 official docs latest
+- 客服 AI 模型选型 official documentation current limits
+- 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 fact check official docs
+- AI 部署 official docs limits pricing changelog
 - RAG 知识库搭建教程
 - 企业知识库 AI 部署
 - 向量数据库 RAG 教程
@@ -91,6 +94,8 @@ Risk review checklist:
 - Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.
 - Agent or workflow claims include permissions, human approval, logging, failure handling, and rollback boundaries.
 - RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.
+- Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.
+- Prompt examples include input context, output criteria, review rules, and adaptation notes.
 
 Workflow angles:
 
@@ -108,25 +113,26 @@ Quality issues:
 Commands after explicit human approval:
 
 ```bash
-npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm-human
-npm run publish:articles -- --file=content/blog/vector-database-selection-for-rag-guide.mdx
+npm run mark:review -- --file=content/blog/ai-model-selection-customer-service-guide.mdx --confirm-human
+npm run publish:articles -- --file=content/blog/ai-model-selection-customer-service-guide.mdx
 ```
 
-## 2. Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级
+## 2. AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查
 
-- File: content/blog/vercel-ai-gateway-multi-provider-guide.mdx
-- Lane: deployment: 大模型和 AI 应用部署
+- File: content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
+- Already published: true
+- Lane: deployment: Agent 部署、工具调用和工作流
 - Search intent: informational
-- Publish batch: 34
-- Priority score: 439
+- Publish batch: 40
+- Priority score: 773
 - Quality score: 100
-- Ready for human review: true
-- Safe draft: true
+- Ready for human review: false
+- Safe draft: false
 - Source pack ready: true
-- Chinese chars: 1246
-- Internal links: 3
-- Description: 整理 Vercel AI Gateway 多模型接入思路，覆盖统一 API、provider 切换、日志、成本、降级、AI SDK 和上线检查。
-- Source notes: 参考 Vercel AI Gateway 官方文档、models and providers、provider options 和 capability 文档整理；正式发布前需要人工核对最新模型列表。
+- Chinese chars: 2396
+- Internal links: 6
+- Description: 面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。
+- Source notes: 已于 2026-06-13 按 Vercel AI SDK 官方 ToolLoopAgent、tool calling、streamText、chatbot tool usage 文档核对核心概念；结合实际 Web 应用部署流程整理。正式公开前仍需人工复核 API 示例、版本和平台限制。
 
 Approval checklist:
 
@@ -141,24 +147,23 @@ Approval checklist:
 
 Official source targets:
 
-- OpenAI API docs: https://platform.openai.com/docs
-- Vercel AI SDK docs: https://ai-sdk.dev/docs
-- Anthropic docs: https://docs.anthropic.com
 - OpenAI Agents docs: https://platform.openai.com/docs/guides/agents
-- Google AI docs: https://ai.google.dev/docs
+- Vercel AI SDK docs: https://ai-sdk.dev/docs
+- LangChain docs: https://python.langchain.com/docs
+- OpenAI API docs: https://platform.openai.com/docs
 - OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
 - OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 
 Fact-check queries:
 
-- Vercel AI Gateway 多模型 official docs latest
-- Vercel AI Gateway 多模型 official documentation current limits
-- Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 fact check official docs
-- AI 部署 official docs limits pricing changelog
-- 大模型部署教程
-- AI 应用部署教程
-- OpenAI API 部署教程
-- Vercel AI SDK 部署
+- AI Agent 部署 official docs latest
+- AI Agent 部署 official documentation current limits
+- AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查 fact check official docs
+- AI Agent official docs limits pricing changelog
+- AI Agent 部署教程
+- Agent 工具调用教程
+- AI 工作流部署
+- Agent 人工审核流程
 
 Risk review checklist:
 
@@ -171,11 +176,11 @@ Risk review checklist:
 
 Workflow angles:
 
-- 环境变量
-- API Key
-- 限流重试
-- 上线检查
-- 回滚
+- 工具白名单
+- 多步执行
+- 人工确认
+- 失败重试
+- 日志追踪
 
 Quality issues:
 
@@ -184,25 +189,26 @@ Quality issues:
 Commands after explicit human approval:
 
 ```bash
-npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human
-npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx
+npm run mark:review -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx --confirm-human
+npm run publish:articles -- --file=content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx
 ```
 
-## 3. Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索
+## 3. 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用
 
-- File: content/blog/supabase-pgvector-rag-guide.mdx
-- Lane: deployment: RAG、知识库和向量检索
+- File: content/blog/industry-ai-prompts-template-library-2026.mdx
+- Already published: true
+- Lane: content-backlog: 全行业 AI 提示词和工作流模板
 - Search intent: informational
-- Publish batch: 24
-- Priority score: 415
+- Publish batch: 40
+- Priority score: 769
 - Quality score: 100
-- Ready for human review: true
-- Safe draft: true
+- Ready for human review: false
+- Safe draft: false
 - Source pack ready: true
-- Chinese chars: 1255
-- Internal links: 3
-- Description: 面向新手整理 Supabase pgvector 做 RAG 的入门思路，覆盖 vector column、embedding、SQL 查询、权限、索引、成本和维护。
-- Source notes: 参考 Supabase AI & Vectors、vector columns、LangChain with Supabase 文档整理；正式发布前需要人工核对 pgvector 版本和 SQL 示例。
+- Chinese chars: 2638
+- Internal links: 7
+- Description: 整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。
+- Source notes: 已于 2026-06-12 按 OpenAI 官方 prompt engineering / prompt guidance 文档核对提示词结构原则；结合团队知识库实践和行业 SOP 设计经验整理。正式公开前仍需人工核对示例、行业边界和敏感内容。
 
 Approval checklist:
 
@@ -217,24 +223,22 @@ Approval checklist:
 
 Official source targets:
 
-- OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
-- LangChain docs: https://python.langchain.com/docs
-- LlamaIndex docs: https://docs.llamaindex.ai
-- Hugging Face docs: https://huggingface.co/docs
 - OpenAI API docs: https://platform.openai.com/docs
+- OpenAI prompt engineering guide: https://platform.openai.com/docs/guides/prompt-engineering
 - Vercel AI SDK docs: https://ai-sdk.dev/docs
-- LangChain docs: https://docs.langchain.com
+- OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval
 
 Fact-check queries:
 
-- Supabase pgvector official docs latest
-- Supabase pgvector official documentation current limits
-- Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 fact check official docs
-- AI 基建 official docs limits pricing changelog
-- RAG 知识库搭建教程
-- 企业知识库 AI 部署
-- 向量数据库 RAG 教程
-- RAG 评测怎么做
+- 全行业 AI 提示词模板 official docs latest
+- 全行业 AI 提示词模板 official documentation current limits
+- 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 fact check official docs
+- AI 提示词 official docs limits pricing changelog
+- AI 提示词大全
+- 销售 AI 提示词
+- 客服 AI 提示词
+- 运营 AI 提示词
+- HR AI 提示词
 
 Risk review checklist:
 
@@ -243,15 +247,14 @@ Risk review checklist:
 - No API key, credential, private customer data, or account detail is included.
 - Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.
 - RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.
+- Prompt examples include input context, output criteria, review rules, and adaptation notes.
 
 Workflow angles:
 
-- 文档清洗
-- chunk
-- embedding
-- metadata
-- 引用来源
-- 测试集
+- search intent
+- fact review
+- risk language
+- internal links
 
 Quality issues:
 
@@ -260,6 +263,6 @@ Quality issues:
 Commands after explicit human approval:
 
 ```bash
-npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx --confirm-human
-npm run publish:articles -- --file=content/blog/supabase-pgvector-rag-guide.mdx
+npm run mark:review -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx --confirm-human
+npm run publish:articles -- --file=content/blog/industry-ai-prompts-template-library-2026.mdx
 ```

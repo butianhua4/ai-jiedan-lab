@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T12:27:48.149Z",
+  "generatedAt": "2026-06-16T05:24:12.756Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,17 +9,17 @@
     "trafficClaim": "not-included"
   },
   "summary": {
-    "approvalBacklogItems": 0,
+    "approvalBacklogItems": 5,
     "automationRunsPerDay": 4,
     "boardActionItems": 5,
-    "broadClustersWithoutPublicCoverage": 0,
+    "broadClustersWithoutPublicCoverage": 8,
     "currentPublishableNow": 0,
     "forbiddenWorkflowCommands": 0,
     "immediateApprovalItems": 3,
     "immediateApprovalReadyItems": 3,
     "publicArticles": 500,
     "publishConfirmCommandsIncluded": 0,
-    "routeWarningItems": 3,
+    "routeWarningItems": 2,
     "trafficDataAvailable": false,
     "unsafeItems": 0
   },
@@ -27,57 +27,45 @@
   "topApprovalActions": [
     {
       "action": "Human reviewer verifies sources, SEO warnings, internal link path, and risk language; stop before mark:review until approval.",
-      "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
+      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
       "humanGate": "explicit human approval required",
-      "priority": 446,
-      "reason": "Immediate Wave 1; projected public count after human approval is 503.",
-      "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界"
+      "priority": 777,
+      "reason": "Immediate Wave 1; projected public count after human approval is 18.",
+      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
     },
     {
       "action": "Human reviewer verifies sources, SEO warnings, internal link path, and risk language; stop before mark:review until approval.",
-      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
+      "file": "content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx",
       "humanGate": "explicit human approval required",
-      "priority": 439,
-      "reason": "Immediate Wave 1; projected public count after human approval is 503.",
-      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
+      "priority": 773,
+      "reason": "Immediate Wave 1; projected public count after human approval is 18.",
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查"
     },
     {
       "action": "Human reviewer verifies sources, SEO warnings, internal link path, and risk language; stop before mark:review until approval.",
-      "file": "content/blog/supabase-pgvector-rag-guide.mdx",
+      "file": "content/blog/industry-ai-prompts-template-library-2026.mdx",
       "humanGate": "explicit human approval required",
-      "priority": 415,
-      "reason": "Immediate Wave 1; projected public count after human approval is 503.",
-      "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索"
+      "priority": 769,
+      "reason": "Immediate Wave 1; projected public count after human approval is 18.",
+      "title": "全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用"
     }
   ],
   "routeWarnings": [
     {
-      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-      "priorityScore": 441,
-      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
+      "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
+      "priorityScore": 750,
+      "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
       "warnings": [
-        "search query match warning exists"
+        "not yet matched in human approval clearance pack"
       ]
     },
     {
-      "file": "content/blog/together-ai-api-beginner-guide.mdx",
-      "priorityScore": 370,
-      "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
+      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
+      "priorityScore": 722,
+      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
       "warnings": [
         "not yet matched in human approval clearance pack",
         "no copydesk optimization brief matched",
-        "no freshness brief matched",
-        "search query match warning exists"
-      ]
-    },
-    {
-      "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
-      "priorityScore": 369,
-      "title": "Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查",
-      "warnings": [
-        "not yet matched in human approval clearance pack",
-        "no copydesk optimization brief matched",
-        "no freshness brief matched",
         "search query match warning exists"
       ]
     }
@@ -87,24 +75,24 @@
       "action": "Use docs/internal-link-sprint-board.md to add one contextual public link per candidate during manual review.",
       "publishConfirm": "not-included",
       "summary": {
-        "actionItems": 128,
-        "broadFirstCoverageItems": 0,
-        "candidateItems": 16,
+        "actionItems": 176,
+        "broadFirstCoverageItems": 8,
+        "candidateItems": 22,
         "candidateItemsMissingPublicLinkSuggestion": 0,
-        "candidateItemsWithPublicSuggestions": 16,
-        "candidatesWithoutCurrentPublicLinks": 10,
-        "expansionItems": 15,
-        "items": 16,
+        "candidateItemsWithPublicSuggestions": 22,
+        "candidatesWithoutCurrentPublicLinks": 0,
+        "expansionItems": 19,
+        "items": 22,
         "itemsPerWave": 4,
         "publicArticles": 500,
         "publishConfirmCommandsIncluded": 0,
-        "readyForInternalLinkSprint": 16,
+        "readyForInternalLinkSprint": 0,
         "recommendedItems": 3,
-        "suggestedPublicLinks": 48,
+        "suggestedPublicLinks": 66,
         "trafficDataAvailable": false,
-        "unsafeItems": 0,
+        "unsafeItems": 22,
         "waveItems": 3,
-        "waves": 4
+        "waves": 6
       },
       "title": "Internal links"
     },
@@ -112,22 +100,22 @@
       "action": "Use docs/public-refresh-sprint-board.md to refresh existing public articles without claiming traffic.",
       "publishConfirm": "not-included",
       "summary": {
-        "actionItems": 5154,
-        "cannibalizationItems": 239,
-        "highPriorityItems": 268,
-        "items": 500,
+        "actionItems": 181,
+        "cannibalizationItems": 6,
+        "highPriorityItems": 14,
+        "items": 15,
         "itemsPerWave": 3,
-        "itemsReadyForPublicRefreshSprint": 500,
+        "itemsReadyForPublicRefreshSprint": 15,
         "liveMissingFromSitemap": 0,
-        "mojibakePublicItems": 51,
-        "publicArticles": 500,
+        "mojibakePublicItems": 9,
+        "publicArticles": 15,
         "publishConfirmCommandsIncluded": 0,
         "publishedButNoindexed": 0,
-        "seoWarningItems": 255,
-        "shortDescriptionItems": 457,
+        "seoWarningItems": 8,
+        "shortDescriptionItems": 9,
         "trafficDataAvailable": false,
         "unsafeItems": 0,
-        "waves": 167
+        "waves": 5
       },
       "title": "Public refresh"
     },
@@ -135,28 +123,28 @@
       "action": "Use docs/ai-deployment-sprint-board.md to prioritize deployment, Agent, model-serving, and API tutorial candidates.",
       "publishConfirm": "not-included",
       "summary": {
-        "actionItems": 88,
-        "agentItems": 0,
-        "apiIntegrationItems": 2,
-        "automationPlatformItems": 0,
-        "deploymentPublicArticles": 179,
-        "highPriorityItems": 0,
-        "implementationModes": 4,
-        "items": 6,
+        "actionItems": 147,
+        "agentItems": 1,
+        "apiIntegrationItems": 1,
+        "automationPlatformItems": 1,
+        "deploymentPublicArticles": 3,
+        "highPriorityItems": 8,
+        "implementationModes": 7,
+        "items": 10,
         "itemsPerWave": 2,
-        "lanes": 4,
-        "localModelItems": 0,
+        "lanes": 7,
+        "localModelItems": 1,
         "memoryItems": 1,
-        "modelServingItems": 1,
+        "modelServingItems": 2,
         "publishConfirmCommandsIncluded": 0,
-        "readyForDeploymentSprint": 6,
-        "reviewPackItems": 6,
-        "searchQueries": 24,
-        "sourceTargets": 10,
-        "topicsWithoutPublicCoverage": 0,
+        "readyForDeploymentSprint": 10,
+        "reviewPackItems": 10,
+        "searchQueries": 40,
+        "sourceTargets": 12,
+        "topicsWithoutPublicCoverage": 8,
         "trafficDataAvailable": false,
         "unsafeItems": 0,
-        "waves": 3
+        "waves": 5
       },
       "title": "AI deployment"
     },
@@ -164,16 +152,16 @@
       "action": "Use docs/memory-rag-sprint-board.md to prioritize RAG, knowledge base, vector search, memory, evaluation, and privacy lanes.",
       "publishConfirm": "not-included",
       "summary": {
-        "candidateItems": 2,
+        "candidateItems": 4,
         "decisionChecks": 39,
-        "deploymentPublicArticles": 179,
+        "deploymentPublicArticles": 3,
         "howToLanes": 2,
         "itemsPerWave": 3,
         "lanes": 6,
         "lanesWithCandidateFiles": 2,
         "privacyLanes": 1,
         "publishConfirmCommandsIncluded": 0,
-        "readyCandidates": 2,
+        "readyCandidates": 4,
         "readyLanes": 6,
         "searchQueries": 24,
         "sourceTargets": 6,
@@ -189,21 +177,21 @@
       "publishConfirm": "not-included",
       "summary": {
         "actionItems": 90,
-        "bridgeItems": 13,
+        "bridgeItems": 27,
         "candidateFiles": 21,
-        "highPriorityItems": 5,
-        "industryBuckets": 5,
+        "highPriorityItems": 10,
+        "industryBuckets": 4,
         "items": 10,
         "itemsPerWave": 2,
-        "lanesReadyForPromptSprint": 3,
-        "nextCandidateFiles": 7,
+        "lanesReadyForPromptSprint": 10,
+        "nextCandidateFiles": 10,
         "playbookItems": 10,
         "promptTemplateSamples": 50,
         "promptTemplates": 50,
         "publishConfirmCommandsIncluded": 0,
-        "searchQueries": 123,
+        "searchQueries": 115,
         "trafficDataAvailable": false,
-        "unsafeItems": 7,
+        "unsafeItems": 0,
         "waves": 5
       },
       "title": "Popular prompts"

@@ -46,7 +46,7 @@ export const seoClusters: SeoCluster[] = [
     slug: "codex",
     title: "Codex AI 编程主题中心",
     shortTitle: "Codex",
-    description: "围绕 Codex 入门、代码审核、项目交付、部署前检查和接单边界建立的主题中心。",
+    description: "围绕 Codex 入门、代码审查、项目交付、部署前检查和接单边界建立的主题中心。",
     match: /codex/i,
   },
   {
@@ -264,8 +264,8 @@ export function getSeoGraph(): SeoGraph {
     const hasClusterLink = node.type === "cluster" || node.outgoing.includes(clusterPath);
     const hasRelatedLinks =
       node.type === "cluster" ||
-      node.outgoing.filter((path) => {
-        const target = nodes.get(path);
+      node.outgoing.filter((targetPath) => {
+        const target = nodes.get(targetPath);
         return target && target.clusterSlug === node.clusterSlug && target.path !== clusterPath;
       }).length >= 3;
     const reasons = [

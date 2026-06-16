@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   const post = findQuestionPost(category, slug);
   if (!post) return {};
 
-  const title = `${post.title}：快速解决方案`;
-  const description = `围绕“${post.title}”整理快速解决方案、详细步骤、风险提醒和深度文章入口。`;
+  const title = `${post.title}: 快速解决方案`;
+  const description = `围绕“${post.title}”整理快速解决方案、详细步骤、风险提示和深度文章入口。`;
 
   return {
     title,
@@ -69,7 +69,7 @@ export default async function QuestionPage({ params }: { params: Promise<{ categ
           <section className="rounded-lg border border-blue-100 bg-blue-50 p-5">
             <h2 className="text-xl font-semibold text-ink">快速解决方案</h2>
             <p className="mt-3 leading-8 text-gray-700">
-              先确认这属于 {cluster.shortTitle} 主题下的 {post.contentType} 问题，再按原文步骤检查环境、输入、权限和交付边界。需要完整背景时，继续阅读深度文章。
+              先确认这是 {cluster.shortTitle} 主题下的 {post.contentType} 问题，再按深度文章逐项检查环境、输入、权限和交付边界。需要完整背景时，继续阅读对应深度文章。
             </p>
             <Link className="mt-4 inline-flex rounded-md bg-brand px-4 py-2 text-sm font-semibold text-white" href={getBlogPath(post)}>
               阅读深度文章
@@ -94,14 +94,14 @@ export default async function QuestionPage({ params }: { params: Promise<{ categ
                 <code>{code}</code>
               </pre>
             ) : (
-              <p className="mt-3 rounded-md border border-gray-200 bg-white p-4 text-sm leading-7 text-gray-700">原始文章没有提供可复制命令块，因此这里不编造命令；请按深度文章里的检查步骤执行。</p>
+              <p className="mt-3 rounded-md border border-gray-200 bg-white p-4 text-sm leading-7 text-gray-700">原始文章没有提供可复制的命令块，因此这里不编造命令；请按深度文章里的检查步骤执行。</p>
             )}
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-ink">风险提示</h2>
             <p className="mt-3 leading-8 text-gray-700">
-              该问题需要人工确认真实项目环境、账号权限、平台规则和输出结果。不要把 AI 生成内容直接交付给客户，也不要承诺未经验证的收入或部署结果。
+              这个问题需要人工确认真实项目环境、账号权限、平台规则和输出结果。不要把 AI 生成内容直接交付给客户，也不要承诺未经验证的收入或部署结果。
             </p>
           </section>
         </article>
@@ -155,6 +155,6 @@ function extractSteps(content: string) {
   return [
     "先确认问题所属场景、工具版本、账号权限和输入材料是否完整。",
     "再根据深度文章逐项检查配置、日志、命令输出和人工审核边界。",
-    "最后记录修改前后结果，确认没有引入新的平台违规、隐私或交付风险。",
+    "最后记录修改前后的结果，确认没有引入新的平台违规、隐私或交付风险。",
   ];
 }

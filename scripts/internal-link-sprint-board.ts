@@ -157,7 +157,7 @@ function toSprintItem(candidate: InternalLinkCandidate): SprintItem {
 
 function unsafeReasonsFor(candidate: InternalLinkCandidate, suggestedLinks: LinkSuggestion[]) {
   const reasons: string[] = [];
-  if (candidate.status !== "draft") reasons.push(`candidate status is ${candidate.status}, expected draft`);
+  if (!["draft", "published"].includes(candidate.status)) reasons.push(`candidate status is ${candidate.status}, expected draft or published`);
   if (candidate.missingPublicLinkSuggestion) reasons.push("candidate is missing public link suggestions");
   if (suggestedLinks.length < 1) reasons.push("candidate has no suggested public link");
   if (candidate.scopes.length < 1) reasons.push("candidate has no review scope");

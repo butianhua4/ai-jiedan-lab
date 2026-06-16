@@ -9,6 +9,7 @@ type CommandBoundary = {
 };
 
 type ApprovalItem = {
+  alreadyPublished?: boolean;
   articleState?: { humanReviewRequired?: boolean; noindex?: boolean; qualityScore?: number; sourceNotes?: boolean; status?: string };
   blockers?: unknown[];
   commandBoundary?: CommandBoundary;
@@ -101,6 +102,7 @@ type ReviewOptimizationBrief = {
 };
 
 type ClearanceItem = {
+  alreadyPublished: boolean;
   articleState: ApprovalItem["articleState"];
   blockers: string[];
   clearanceActions: string[];
@@ -205,6 +207,7 @@ function toClearanceItem(
   const hasFailedSourceDecision = sourceDecisions.some((decision) => decision.kind === "failed-url");
   const unsafeReasons = unsafeReasonsFor(item, sourceDecisions, seoWarning, copydeskBrief);
   return {
+    alreadyPublished: item.alreadyPublished === true,
     articleState: item.articleState,
     blockers,
     clearanceActions: clearanceActionsFor(item, sourceDecisions, seoWarning, copydeskBrief),
@@ -227,9 +230,11 @@ function toClearanceItem(
 
 function clearanceActionsFor(item: ApprovalItem, sourceDecisions: SourceDecision[], seoWarning: SeoWarning | null, copydeskBrief: CopydeskBrief | null) {
   const actions = [
-    "Confirm the draft still answers one clear search intent.",
+    item.alreadyPublished === true ? "Confirm the public page still answers one clear search intent." : "Confirm the draft still answers one clear search intent.",
     "Verify source-backed claims before any status change.",
-    "Keep status=draft, noindex=true, and humanReviewRequired=true until approval.",
+    item.alreadyPublished === true
+      ? "Keep the published page indexable while applying only human-approved source, SEO, copydesk, or link improvements."
+      : "Keep status=draft, noindex=true, and humanReviewRequired=true until approval.",
   ];
   for (const decision of sourceDecisions.slice(0, 3)) {
     if (decision.kind === "failed-url") {
@@ -254,8 +259,9 @@ function clearanceActionsFor(item: ApprovalItem, sourceDecisions: SourceDecision
 
 function unsafeReasonsFor(item: ApprovalItem, sourceDecisions: SourceDecision[], seoWarning: SeoWarning | null, copydeskBrief: CopydeskBrief | null) {
   const reasons: string[] = [];
-  if (item.articleState?.status !== "draft") reasons.push(`article status is ${item.articleState?.status}, expected draft`);
-  if (item.articleState?.noindex !== true) reasons.push("article must remain noindex=true before approval");
+  const alreadyPublished = item.alreadyPublished === true && item.articleState?.status === "published" && item.articleState.noindex === false;
+  if (!alreadyPublished && item.articleState?.status !== "draft") reasons.push(`article status is ${item.articleState?.status}, expected draft`);
+  if (!alreadyPublished && item.articleState?.noindex !== true) reasons.push("article must remain noindex=true before approval");
   if (item.articleState?.humanReviewRequired !== true) reasons.push("article must keep humanReviewRequired=true before approval");
   if (item.articleState?.sourceNotes !== true) reasons.push("article must keep sourceNotes before approval");
   if ((item.articleState?.qualityScore || 0) < 100) reasons.push(`qualityScore ${item.articleState?.qualityScore || 0} below 100`);
@@ -331,11 +337,11 @@ function toMarkdown(payload: {
     "",
     "## Clearance Items",
     "",
-    "| Immediate | Ready | Priority | Source decisions | Failed source | SEO | Copydesk | Popular lanes | Mass themes | Title | File |",
-    "| --- | --- | ---: | ---: | --- | --- | --- | ---: | ---: | --- | --- |",
+    "| Already published | Immediate | Ready | Priority | Source decisions | Failed source | SEO | Copydesk | Popular lanes | Mass themes | Title | File |",
+    "| --- | --- | --- | ---: | ---: | --- | --- | --- | ---: | ---: | --- | --- |",
     ...payload.items.map(
       (item) =>
-        `| ${item.immediate} | ${item.readyForClearanceReview} | ${item.priorityScore} | ${item.sourceDecisions.length} | ${item.hasFailedSourceDecision} | ${Boolean(item.seoWarning)} | ${Boolean(item.copydeskBrief)} | ${item.popularPromptLanes} | ${item.massSearchThemes} | ${item.title} | ${item.file} |`,
+        `| ${item.alreadyPublished} | ${item.immediate} | ${item.readyForClearanceReview} | ${item.priorityScore} | ${item.sourceDecisions.length} | ${item.hasFailedSourceDecision} | ${Boolean(item.seoWarning)} | ${Boolean(item.copydeskBrief)} | ${item.popularPromptLanes} | ${item.massSearchThemes} | ${item.title} | ${item.file} |`,
     ),
     "",
     "## Item Actions",
@@ -344,6 +350,7 @@ function toMarkdown(payload: {
       `### ${item.title}`,
       "",
       `- File: ${item.file}`,
+      `- Already published: ${item.alreadyPublished}`,
       `- Immediate: ${item.immediate}`,
       `- Ready for clearance review: ${item.readyForClearanceReview}`,
       `- Source decisions: ${item.sourceDecisions.length}`,

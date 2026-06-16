@@ -7,9 +7,9 @@ const fetchBase = normalizeBase(readArg("url") || readArg("fetchBase") || defaul
 const canonicalBase = normalizeBase(readArg("canonical") || readArg("base") || defaultBase);
 const jsonOutput = readArg("json") || readArg("jsonOutput");
 const markdownOutput = readArg("markdown") || readArg("markdownOutput");
-const articleConcurrency = Math.max(1, Number(readArg("article-concurrency") || 12));
-const fetchRetries = Math.max(1, Number(readArg("fetch-retries") || 3));
-const fetchTimeoutMs = Math.max(1000, Number(readArg("fetch-timeout-ms") || 15000));
+const articleConcurrency = Math.max(1, Number(readArg("article-concurrency") || 4));
+const fetchRetries = Math.max(1, Number(readArg("fetch-retries") || 6));
+const fetchTimeoutMs = Math.max(1000, Number(readArg("fetch-timeout-ms") || 30000));
 
 const checks = [
   ["/", "AI 工具指南"],

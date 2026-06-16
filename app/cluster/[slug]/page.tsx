@@ -51,7 +51,7 @@ export default async function ClusterPage({ params }: { params: Promise<{ slug: 
             {questions.map((post) => (
               <Link className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition hover:border-brand/50" href={getQuestionPath(post)} key={post.slug}>
                 <h3 className="break-words text-base font-semibold leading-6 text-ink">{post.title}</h3>
-                <p className="mt-2 text-sm text-gray-500">进入问题页，再跳转深度文章</p>
+                <p className="mt-2 text-sm text-gray-500">进入问题页，再跳转到深度文章。</p>
               </Link>
             ))}
           </div>
