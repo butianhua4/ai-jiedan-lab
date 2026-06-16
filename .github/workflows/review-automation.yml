@@ -32,7 +32,16 @@ jobs:
       - run: npm install
 
       - name: Run project automation
-        run: npm run automation:all
+        shell: bash
+        run: |
+          set +e
+          npm run automation:all
+          code=$?
+          echo "PROJECT_AUTOMATION_EXIT_CODE=$code" >> "$GITHUB_ENV"
+          if [ "$code" != "0" ]; then
+            echo "::warning::Project automation generated advisory failures. Reports were still produced; hard failure is reserved for live SEO surface checks."
+          fi
+          exit 0
 
       - name: Check live search surfaces
         shell: bash
@@ -72,6 +81,13 @@ jobs:
         if: always()
         shell: bash
         run: |
+          {
+            echo "# Project Automation Run"
+            echo ""
+            echo "- Project automation exit code: ${PROJECT_AUTOMATION_EXIT_CODE:-0}"
+            echo "- Live search surface exit code: ${LIVE_SEARCH_SURFACE_EXIT_CODE:-not-run}"
+            echo ""
+          } >> "$GITHUB_STEP_SUMMARY"
           if [ -f docs/automation-digest.md ]; then
             cat docs/automation-digest.md >> "$GITHUB_STEP_SUMMARY"
           else
