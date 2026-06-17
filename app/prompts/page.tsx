@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import {
+  getBlogPath,
+  getClusterPath,
+  getPublishedSeoPosts,
+  getQuestionPath,
+  type SeoClusterSlug,
+  seoClusters,
+} from "@/lib/seo-graph";
 
 const industries = [
   {
@@ -67,6 +75,10 @@ const tasks = [
   "AI 制作 SOP 提示词",
 ];
 
+const promptSeoClusters = ["ai-tools", "upwork", "codex"] satisfies SeoClusterSlug[];
+const promptKeywordPattern =
+  /prompt|prompts|提示词|话术|文案|脚本|客服|销售|运营|hr|招聘|电商|教育|财务|法务|营销|产品|开发|代码|ppt|excel|spreadsheet|sop|template/i;
+
 export const metadata: Metadata = {
   title: "AI 提示词库：销售、客服、运营、HR、电商、教育常用 Prompt",
   description: "整理全行业常用 AI 提示词模板，覆盖销售、客服、运营、HR、电商、教育、财务、开发和项目交付场景，并提供可复制 Prompt 结构。",
@@ -79,6 +91,17 @@ export const metadata: Metadata = {
 };
 
 export default function PromptsPage() {
+  const clusterEntries = promptSeoClusters
+    .map((slug) => seoClusters.find((cluster) => cluster.slug === slug))
+    .filter((cluster): cluster is (typeof seoClusters)[number] => Boolean(cluster));
+  const promptPosts = getPublishedSeoPosts()
+    .filter((post) => promptKeywordPattern.test([post.slug, post.title, post.description, post.category, post.primaryKeyword, ...post.tags].join(" ")))
+    .sort((a, b) => promptRelevanceScore(b) - promptRelevanceScore(a) || a.slug.localeCompare(b.slug));
+  const promptQuestions = promptPosts.slice(0, 16);
+  const promptGuides = promptPosts
+    .filter((post) => post.contentType === "tutorial" || /提示词|prompt|template|模板/i.test([post.title, post.slug, post.category].join(" ")))
+    .slice(0, 10);
+
   return (
     <main className="mx-auto w-full max-w-6xl overflow-hidden px-4 py-12">
       <section className="rounded-lg border border-gray-200 bg-gradient-to-b from-emerald-50 to-white p-6 shadow-sm md:p-8">
@@ -98,6 +121,63 @@ export default function PromptsPage() {
             </Link>
           </div>
         </div>
+      </section>
+
+      <section className="mt-8 rounded-lg border border-gray-200 bg-white p-5 shadow-sm">
+        <div className="flex flex-col justify-between gap-3 md:flex-row md:items-end">
+          <div>
+            <h2 className="text-2xl font-bold text-ink">提示词主题中心</h2>
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              从行业提示词进入，再连接到 AI 工具、接单沟通和开发场景，让模板、问题页和深度教程互相传递权重。
+            </p>
+          </div>
+          <Link className="text-sm font-medium text-brand hover:underline" href="/tools/industry-prompt-builder">
+            生成行业提示词
+          </Link>
+        </div>
+        <div className="mt-5 grid gap-4 md:grid-cols-3">
+          {clusterEntries.map((cluster) => (
+            <Link
+              className="rounded-lg border border-gray-200 bg-gray-50 p-4 transition hover:border-brand/50 hover:bg-white"
+              href={getClusterPath(cluster.slug)}
+              key={cluster.slug}
+            >
+              <h3 className="text-base font-semibold text-ink">{cluster.shortTitle}</h3>
+              <p className="mt-2 text-sm leading-6 text-gray-600">{cluster.description}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="rounded-lg border border-gray-200 bg-white p-5 shadow-sm">
+          <h2 className="text-2xl font-bold text-ink">高频提示词问题入口</h2>
+          <p className="mt-2 text-sm leading-6 text-gray-600">
+            这些页面更接近搜索词本身，适合承接“怎么写、模板、行业场景、可复制”这类流量。
+          </p>
+          <div className="mt-5 grid gap-3 md:grid-cols-2">
+            {promptQuestions.map((post) => (
+              <Link
+                className="rounded-lg border border-gray-200 p-4 text-sm font-medium leading-6 text-ink transition hover:border-brand/50 hover:text-brand"
+                href={getQuestionPath(post)}
+                key={post.slug}
+              >
+                {post.title}
+              </Link>
+            ))}
+          </div>
+        </div>
+        <aside className="rounded-lg border border-gray-200 bg-white p-5 shadow-sm">
+          <h2 className="text-xl font-bold text-ink">深度提示词教程</h2>
+          <p className="mt-2 text-sm leading-6 text-gray-600">适合继续阅读、复制模板和整理成团队提示词库。</p>
+          <div className="mt-4 grid gap-3">
+            {promptGuides.map((post) => (
+              <Link className="text-sm font-medium leading-6 text-brand hover:underline" href={getBlogPath(post)} key={post.slug}>
+                {post.title}
+              </Link>
+            ))}
+          </div>
+        </aside>
       </section>
 
       <section className="mt-8">
@@ -148,4 +228,17 @@ export default function PromptsPage() {
       </section>
     </main>
   );
+}
+
+function promptRelevanceScore(post: ReturnType<typeof getPublishedSeoPosts>[number]) {
+  const title = post.title.toLowerCase();
+  const haystack = [post.slug, post.title, post.description, post.category, post.primaryKeyword, ...post.tags, ...post.secondaryKeywords]
+    .join(" ")
+    .toLowerCase();
+  let score = post.qualityScore || 0;
+  if (/提示词|prompt/.test(title)) score += 50;
+  if (/模板|template/.test(title)) score += 25;
+  if (/ai 提示词|ai prompts|industry/.test(haystack)) score += 20;
+  if (/销售|客服|运营|hr|招聘|电商|教育|财务|法务|营销|产品|开发|software|sales|customer/.test(haystack)) score += 10;
+  return score;
 }
