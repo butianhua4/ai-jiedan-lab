@@ -1,4 +1,4 @@
-import { getBlogPath, getClusterPath, getHighAuthorityPosts, getQuestionPath, seoClusters } from "@/lib/seo-graph";
+import { getBlogPath, getClusterPath, getHighAuthorityPosts, getHighPotentialQuestionPosts, getQuestionPath, seoClusters } from "@/lib/seo-graph";
 import { getSitemapPriority } from "@/lib/sitemap-priority";
 import { sitemapUrlSet, type SitemapUrl } from "@/lib/sitemap-xml";
 import type { BlogPost } from "@/lib/types";
@@ -19,7 +19,7 @@ export function GET() {
   };
 
   const entries: SitemapUrl[] = [];
-  const priorityPosts = uniquePosts(seoClusters.flatMap((cluster) => getHighAuthorityPosts(cluster.slug, 25)));
+  const priorityPosts = getHighPotentialQuestionPosts(150);
   const priorityBlogPosts = uniquePosts(seoClusters.flatMap((cluster) => getHighAuthorityPosts(cluster.slug, 5)));
 
   for (const path of ["", "/blog", "/deployments", "/office-ai", "/prompts", "/templates", "/tools"]) {

@@ -1,5 +1,13 @@
 import Link from "next/link";
 import { ContactForm } from "@/components/ContactForm";
+import {
+  getBlogPath,
+  getClusterPath,
+  getHighPotentialQuestionPosts,
+  getQuestionPath,
+  type SeoClusterSlug,
+  seoClusters,
+} from "@/lib/seo-graph";
 
 export const metadata = {
   title: "联系我",
@@ -31,7 +39,18 @@ const prepItems = [
   "你希望最终交付什么结果",
 ];
 
+const contactSeoClusters = ["codex", "upwork", "vercel", "node-js-errors", "ai-tools"] satisfies SeoClusterSlug[];
+const contactGuidePattern = /codex|upwork|proposal|pricing|vercel|deploy|error|failed|github|prompt|agent|rag|office|ppt|excel|报价|部署|报错|提示词|办公/i;
+
 export default function ContactPage() {
+  const clusterEntries = contactSeoClusters
+    .map((slug) => seoClusters.find((cluster) => cluster.slug === slug))
+    .filter((cluster): cluster is (typeof seoClusters)[number] => Boolean(cluster));
+  const contactQuestions = getHighPotentialQuestionPosts(18).filter((post) =>
+    contactGuidePattern.test([post.slug, post.title, post.description, post.category, post.primaryKeyword, ...post.tags].join(" ")),
+  );
+  const contactGuides = contactQuestions.slice(0, 8);
+
   return (
     <main className="mx-auto max-w-6xl px-4 py-12">
       <section className="rounded-lg border border-gray-200 bg-gradient-to-b from-blue-50 to-white p-6 shadow-sm md:p-8">
@@ -57,6 +76,70 @@ export default function ContactPage() {
         <InfoCard title="适合联系" items={fitItems} tone="blue" />
         <InfoCard title="暂不适合" items={notFitItems} tone="red" />
         <InfoCard title="先准备材料" items={prepItems} tone="green" />
+      </section>
+
+      <section className="mt-8 rounded-lg border border-gray-200 bg-white p-5 shadow-sm">
+        <div className="flex flex-col justify-between gap-3 md:flex-row md:items-end">
+          <div>
+            <h2 className="text-2xl font-bold text-ink">联系前先定位问题</h2>
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              大多数问题可以先从主题中心和问题页开始排查。确认仍然卡住后，再提交表单，沟通成本会低很多。
+            </p>
+          </div>
+          <Link className="text-sm font-medium text-brand hover:underline" href="/tools">
+            先看工具导航
+          </Link>
+        </div>
+        <div className="mt-5 grid gap-4 md:grid-cols-5">
+          {clusterEntries.map((cluster) => (
+            <Link
+              className="rounded-lg border border-gray-200 bg-gray-50 p-4 transition hover:border-brand/50 hover:bg-white"
+              href={getClusterPath(cluster.slug)}
+              key={cluster.slug}
+            >
+              <h3 className="text-base font-semibold text-ink">{cluster.shortTitle}</h3>
+              <p className="mt-2 line-clamp-3 text-sm leading-6 text-gray-600">{cluster.description}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="rounded-lg border border-gray-200 bg-white p-5 shadow-sm">
+          <div className="flex flex-col justify-between gap-3 md:flex-row md:items-end">
+            <div>
+              <h2 className="text-2xl font-bold text-ink">常见求助问题入口</h2>
+              <p className="mt-2 text-sm leading-6 text-gray-600">这些页面优先覆盖报错、部署、报价、Proposal、AI 工具和办公自动化问题，适合先自查。</p>
+            </div>
+            <Link className="text-sm font-medium text-brand hover:underline" href="/blog">
+              查看全部教程
+            </Link>
+          </div>
+          <div className="mt-5 grid gap-3 md:grid-cols-2">
+            {contactQuestions.slice(0, 12).map((post) => (
+              <Link
+                className="rounded-lg border border-gray-100 bg-gray-50 p-4 text-sm font-medium leading-6 text-ink transition hover:border-brand/50 hover:bg-white"
+                href={getQuestionPath(post)}
+                key={post.slug}
+              >
+                {post.title}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <aside className="rounded-lg border border-gray-200 bg-white p-5 shadow-sm">
+          <h2 className="text-xl font-bold text-ink">提交前建议阅读</h2>
+          <p className="mt-2 text-sm leading-6 text-gray-600">如果问题涉及客户、项目或部署，先看一篇完整教程再描述背景。</p>
+          <div className="mt-4 grid gap-3">
+            {contactGuides.map((post) => (
+              <Link className="rounded-md border border-gray-100 p-3 transition hover:border-brand/50" href={getBlogPath(post)} key={post.slug}>
+                <span className="block text-sm font-semibold leading-6 text-ink">{post.title}</span>
+                <span className="mt-1 block text-xs leading-5 text-gray-500">{post.category}</span>
+              </Link>
+            ))}
+          </div>
+        </aside>
       </section>
 
       <ContactForm />

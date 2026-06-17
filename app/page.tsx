@@ -7,7 +7,7 @@ import { site } from "@/data/site";
 import { templates } from "@/data/templates";
 import { tools } from "@/data/tools";
 import { getAllPosts } from "@/lib/blog";
-import { getClusterPath, getHighAuthorityPosts, getQuestionPath, seoClusters } from "@/lib/seo-graph";
+import { getClusterPath, getHighPotentialQuestionPosts, getQuestionPath, seoClusters } from "@/lib/seo-graph";
 
 export const metadata: Metadata = {
   title: site.name,
@@ -34,13 +34,7 @@ export default function Home() {
   const posts = getAllPosts(false).slice(0, 6);
   const featuredTools = tools.slice(0, 8);
   const featuredTemplates = templates.slice(0, 5);
-  const priorityQuestions = Array.from(
-    new Map(
-      seoClusters
-        .flatMap((cluster) => getHighAuthorityPosts(cluster.slug, 4))
-        .map((post) => [post.slug, post]),
-    ).values(),
-  ).slice(0, 12);
+  const priorityQuestions = getHighPotentialQuestionPosts(12);
 
   return (
     <main className="w-full max-w-full overflow-hidden">

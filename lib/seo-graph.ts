@@ -90,6 +90,8 @@ const clusterPriority: SeoClusterSlug[] = ["codex", "upwork", "vercel", "github"
 let publishedSeoPostsCache: BlogPost[] | null = null;
 const clusterCache = new Map<string, SeoCluster>();
 const relatedCache = new Map<string, BlogPost[]>();
+const highDemandIntentPattern =
+  /how|what|why|fix|error|failed|guide|tutorial|checklist|template|pricing|proposal|deploy|agent|rag|prompt|office|ppt|excel|spreadsheet|github|vercel|codex|upwork|怎么|如何|是什么|报错|失败|教程|清单|模板|报价|提示词|部署|办公|表格/i;
 
 export function getPublishedSeoPosts() {
   if (!publishedSeoPostsCache) publishedSeoPostsCache = getAllPosts(false);
@@ -182,6 +184,26 @@ export function getHighAuthorityPosts(slug: SeoClusterSlug, limit = 12) {
       const scoreB = (b.qualityScore || 0) + b.tags.length * 2 + (b.contentType === "tutorial" ? 10 : 0);
       return scoreB - scoreA || a.slug.localeCompare(b.slug);
     })
+    .slice(0, limit);
+}
+
+export function getHighPotentialQuestionPosts(limit = 48) {
+  const perClusterQuota = Math.max(3, Math.ceil(limit / seoClusters.length));
+  const selected = new Map<string, BlogPost>();
+
+  for (const cluster of seoClusters) {
+    for (const post of getPostsForCluster(cluster.slug).sort((a, b) => highPotentialScore(b) - highPotentialScore(a) || a.slug.localeCompare(b.slug)).slice(0, perClusterQuota)) {
+      selected.set(post.slug, post);
+    }
+  }
+
+  for (const post of getPublishedSeoPosts().sort((a, b) => highPotentialScore(b) - highPotentialScore(a) || a.slug.localeCompare(b.slug))) {
+    if (selected.size >= limit) break;
+    selected.set(post.slug, post);
+  }
+
+  return Array.from(selected.values())
+    .sort((a, b) => highPotentialScore(b) - highPotentialScore(a) || a.slug.localeCompare(b.slug))
     .slice(0, limit);
 }
 
@@ -342,6 +364,20 @@ function postSearchText(post: BlogPost) {
     .filter(Boolean)
     .join(" ")
     .toLowerCase();
+}
+
+function highPotentialScore(post: BlogPost) {
+  const text = postSearchText(post);
+  const intent = getIntentBucket(post);
+  const demandBoost = highDemandIntentPattern.test(text) ? 28 : 0;
+  const intentBoost = intent === "error" ? 24 : intent === "comparison" ? 18 : intent === "checklist" ? 18 : intent === "commercial" ? 16 : intent === "tool" ? 14 : 10;
+  const tutorialBoost = post.contentType === "tutorial" ? 14 : 0;
+  const searchIntentBoost = post.searchIntent ? 8 : 0;
+  const keywordBoost = post.primaryKeyword ? 8 : 0;
+  const secondaryBoost = Math.min(post.secondaryKeywords.length, 6) * 2;
+  const tagBoost = Math.min(post.tags.length, 8) * 2;
+  const qualityBoost = Math.round((post.qualityScore || 0) / 8);
+  return demandBoost + intentBoost + tutorialBoost + searchIntentBoost + keywordBoost + secondaryBoost + tagBoost + qualityBoost;
 }
 
 function terms(text: string) {

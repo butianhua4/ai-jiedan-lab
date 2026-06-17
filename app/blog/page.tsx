@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArticleCard } from "@/components/ArticleCard";
 import { ToolCTA } from "@/components/ToolCTA";
 import { getAllPosts, slugify } from "@/lib/blog";
-import { getClusterPath, getHighAuthorityPosts, getQuestionPath, seoClusters } from "@/lib/seo-graph";
+import { getClusterPath, getHighPotentialQuestionPosts, getQuestionPath, seoClusters } from "@/lib/seo-graph";
 
 export const metadata = {
   title: "新手教程",
@@ -12,13 +12,7 @@ export const metadata = {
 
 export default function BlogPage() {
   const posts = getAllPosts(false);
-  const priorityQuestions = Array.from(
-    new Map(
-      seoClusters
-        .flatMap((cluster) => getHighAuthorityPosts(cluster.slug, 3))
-        .map((post) => [post.slug, post]),
-    ).values(),
-  ).slice(0, 12);
+  const priorityQuestions = getHighPotentialQuestionPosts(12);
   const categories = Array.from(
     posts.reduce((map, post) => {
       map.set(post.category, (map.get(post.category) || 0) + 1);
