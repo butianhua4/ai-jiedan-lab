@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArticleCard } from "@/components/ArticleCard";
 import { ToolCTA } from "@/components/ToolCTA";
 import { getAllPosts, slugify } from "@/lib/blog";
+import { getClusterPath, getHighAuthorityPosts, getQuestionPath, seoClusters } from "@/lib/seo-graph";
 
 export const metadata = {
   title: "新手教程",
@@ -11,6 +12,13 @@ export const metadata = {
 
 export default function BlogPage() {
   const posts = getAllPosts(false);
+  const priorityQuestions = Array.from(
+    new Map(
+      seoClusters
+        .flatMap((cluster) => getHighAuthorityPosts(cluster.slug, 3))
+        .map((post) => [post.slug, post]),
+    ).values(),
+  ).slice(0, 12);
   const categories = Array.from(
     posts.reduce((map, post) => {
       map.set(post.category, (map.get(post.category) || 0) + 1);
@@ -36,6 +44,54 @@ export default function BlogPage() {
           <Link className="rounded-md border border-gray-300 bg-white px-4 py-3 text-center text-sm font-semibold text-ink" href="/templates">
             下载模板包
           </Link>
+        </div>
+      </section>
+
+      <section className="mt-8">
+        <div className="flex flex-col justify-between gap-3 md:flex-row md:items-end">
+          <div>
+            <h2 className="text-2xl font-bold text-ink">按主题中心阅读</h2>
+            <p className="mt-2 max-w-3xl text-sm leading-6 text-gray-600">
+              主题中心负责串联问题页和深度文章。先选主题，再进入具体问题，比直接翻 500 篇文章更快。
+            </p>
+          </div>
+        </div>
+        <div className="mt-4 grid gap-4 md:grid-cols-3">
+          {seoClusters.map((cluster) => (
+            <Link
+              key={cluster.slug}
+              href={getClusterPath(cluster.slug)}
+              className="rounded-lg border border-gray-200 bg-white p-5 shadow-sm transition hover:border-brand/50 hover:shadow-md"
+            >
+              <p className="text-sm font-medium text-brand">Topic Cluster</p>
+              <h3 className="mt-2 text-lg font-semibold text-ink">{cluster.shortTitle}</h3>
+              <p className="mt-2 line-clamp-3 text-sm leading-6 text-gray-600">{cluster.description}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-8">
+        <div className="flex flex-col justify-between gap-3 md:flex-row md:items-end">
+          <div>
+            <h2 className="text-2xl font-bold text-ink">先看高频问题</h2>
+            <p className="mt-2 max-w-3xl text-sm leading-6 text-gray-600">
+              这些问题页用于承接搜索意图，再链接到对应深度教程，适合从具体问题开始阅读。
+            </p>
+          </div>
+          <Link href="/deployments" className="text-sm font-medium text-brand">进入部署教程</Link>
+        </div>
+        <div className="mt-4 grid gap-3 md:grid-cols-2">
+          {priorityQuestions.map((post) => (
+            <Link
+              key={post.slug}
+              href={getQuestionPath(post)}
+              className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition hover:border-brand/50 hover:shadow-md"
+            >
+              <h3 className="break-words text-base font-semibold leading-6 text-ink">{post.title}</h3>
+              <p className="mt-2 text-sm leading-6 text-gray-600">{post.description}</p>
+            </Link>
+          ))}
         </div>
       </section>
 
