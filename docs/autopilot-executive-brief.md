@@ -1,6 +1,6 @@
 # Autopilot Executive Brief
 
-Generated at: 2026-06-17T12:06:47.240Z
+Generated at: 2026-06-17T16:47:49.658Z
 
 This report is read-only. It compresses the current automation reports into the next human-gated execution priorities.
 

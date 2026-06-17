@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T12:06:21.361Z",
+  "generatedAt": "2026-06-17T16:47:24.055Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,7 +10,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "approvalQueueGeneratedAt": "2026-06-17T06:38:44.565Z",
+    "approvalQueueGeneratedAt": "2026-06-17T12:06:44.378Z",
     "approvalQueueSummary": {
       "backlogItems": 0,
       "commandBoundaries": 3,
@@ -28,7 +28,7 @@
       "trafficDataAvailable": false,
       "unsafeItems": 0
     },
-    "playbookGeneratedAt": "2026-06-17T12:06:20.791Z",
+    "playbookGeneratedAt": "2026-06-17T16:47:23.553Z",
     "playbookSummary": {
       "agentDeploymentLanes": 3,
       "broadWorkPromptLanes": 3,
@@ -50,7 +50,7 @@
       "uniqueCandidateFiles": 21,
       "unsafeItems": 7
     },
-    "reviewCandidatesGeneratedAt": "2026-06-17T12:05:56.869Z",
+    "reviewCandidatesGeneratedAt": "2026-06-17T16:46:59.473Z",
     "reviewCandidatesCounts": {
       "candidates": 148,
       "returned": 25,

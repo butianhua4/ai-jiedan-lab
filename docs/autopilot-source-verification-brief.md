@@ -1,6 +1,6 @@
 # Autopilot Source Verification Brief
 
-Generated at: 2026-06-17T12:06:35.116Z
+Generated at: 2026-06-17T16:47:37.710Z
 
 This report is read-only. It packages source verification work for the top autopilot approval packet items.
 
