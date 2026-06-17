@@ -7,6 +7,7 @@ import { site } from "@/data/site";
 import { templates } from "@/data/templates";
 import { tools } from "@/data/tools";
 import { getAllPosts } from "@/lib/blog";
+import { getClusterPath, getHighAuthorityPosts, getQuestionPath, seoClusters } from "@/lib/seo-graph";
 
 export const metadata: Metadata = {
   title: site.name,
@@ -33,6 +34,13 @@ export default function Home() {
   const posts = getAllPosts(false).slice(0, 6);
   const featuredTools = tools.slice(0, 8);
   const featuredTemplates = templates.slice(0, 5);
+  const priorityQuestions = Array.from(
+    new Map(
+      seoClusters
+        .flatMap((cluster) => getHighAuthorityPosts(cluster.slug, 4))
+        .map((post) => [post.slug, post]),
+    ).values(),
+  ).slice(0, 12);
 
   return (
     <main className="w-full max-w-full overflow-hidden">
@@ -91,6 +99,47 @@ export default function Home() {
         {trustItems.map((item) => (
           <div key={item} className="rounded-lg border border-gray-200 bg-white p-4 text-center text-sm font-semibold text-ink shadow-sm">{item}</div>
         ))}
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-8">
+        <div className="flex flex-col justify-between gap-3 md:flex-row md:items-end">
+          <div>
+            <h2 className="text-2xl font-bold text-ink">核心主题入口</h2>
+            <p className="mt-2 max-w-2xl text-sm leading-6 text-gray-600">
+              从主题中心进入具体问题，再跳转到深度文章，方便用户按问题路径阅读，也让搜索引擎更容易理解站内结构。
+            </p>
+          </div>
+          <Link href="/blog" className="text-sm font-medium text-brand">查看全部教程</Link>
+        </div>
+        <div className="mt-5 grid gap-4 md:grid-cols-3">
+          {seoClusters.map((cluster) => (
+            <Link key={cluster.slug} href={getClusterPath(cluster.slug)} className="rounded-lg border border-gray-200 bg-white p-5 shadow-sm transition hover:border-brand/50 hover:shadow-md">
+              <p className="text-sm font-medium text-brand">Topic Cluster</p>
+              <h3 className="mt-2 break-words text-lg font-semibold text-ink">{cluster.shortTitle}</h3>
+              <p className="mt-2 line-clamp-3 text-sm leading-6 text-gray-600">{cluster.description}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-8">
+        <div className="flex flex-col justify-between gap-3 md:flex-row md:items-end">
+          <div>
+            <h2 className="text-2xl font-bold text-ink">热门问题入口</h2>
+            <p className="mt-2 max-w-2xl text-sm leading-6 text-gray-600">
+              优先展示 Agent、RAG、提示词、Codex 和部署相关问题页，这些页面负责承接搜索流量，再导向深度教程。
+            </p>
+          </div>
+          <Link href="/deployments" className="text-sm font-medium text-brand">进入部署教程</Link>
+        </div>
+        <div className="mt-5 grid gap-3 md:grid-cols-2">
+          {priorityQuestions.map((post) => (
+            <Link key={post.slug} href={getQuestionPath(post)} className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition hover:border-brand/50 hover:shadow-md">
+              <h3 className="break-words text-base font-semibold leading-6 text-ink">{post.title}</h3>
+              <p className="mt-2 text-sm leading-6 text-gray-600">{post.description}</p>
+            </Link>
+          ))}
+        </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-8">
