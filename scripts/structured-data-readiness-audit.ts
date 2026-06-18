@@ -48,6 +48,20 @@ type WaveApprovalPacket = {
 };
 
 const siteUrl = "https://ai-jiedan-lab.vercel.app";
+const commonContentTypes = [
+  "case-study",
+  "checklist",
+  "comparison",
+  "freelance-scope",
+  "guide",
+  "mistakes",
+  "pricing-guide",
+  "roadmap",
+  "template",
+  "tool-guide",
+  "troubleshooting",
+  "tutorial",
+];
 
 async function main() {
   const publicExpansion = readJson<PublicExpansionQueue>("content/automation/public-expansion-queue.json");
@@ -146,7 +160,7 @@ function toSchemaItem(file: string, expansionFiles: Set<string>, recommendedFile
     tags.length > 0 && tags.length < 2 ? "consider adding at least two tags for topical context" : "",
     description.length > 180 ? "description may be too long for reuse in structured data and snippets" : "",
     title.length > 110 ? "headline is long for structured data consumers" : "",
-    contentType && !["case-study", "checklist", "guide", "tutorial"].includes(contentType) ? `contentType is uncommon: ${contentType}` : "",
+    contentType && !commonContentTypes.includes(contentType) ? `contentType is uncommon: ${contentType}` : "",
     difficulty && !["beginner", "intermediate", "advanced"].includes(difficulty) ? `difficulty is uncommon: ${difficulty}` : "",
   ].filter(Boolean);
 

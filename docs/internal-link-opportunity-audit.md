@@ -1,6 +1,6 @@
 # Internal Link Opportunity Audit
 
-Generated at: 2026-06-18T18:14:18.177Z
+Generated at: 2026-06-18T18:38:33.117Z
 
 This report is read-only. It suggests public internal links for review candidates before any publishing action.
 
@@ -40,7 +40,7 @@ This report is read-only. It suggests public internal links for review candidate
 
 | Scopes | Public links now | Suggestions | Top suggestion | Title | File |
 | --- | --- | --- | --- | --- | --- |
-| recommended | 0/3 | 5 | Codex 需求不清楚的任务使用前怎么判断是否适合 (/blog/codex-client-requirement-questions-freelance-scope) | AI 工具新手不应该先买哪些工具 | content/blog/tools-not-to-buy-first.mdx |
+| recommended | 0/3 | 5 | AI 小项目练习选什么：新手从低风险任务开始 (/blog/ai-small-project-practice-topics) | AI 工具新手不应该先买哪些工具 | content/blog/tools-not-to-buy-first.mdx |
 | expansion, recommended, wave-1 | 0/3 | 5 | Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide) | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
 | expansion, recommended, wave-1 | 1/3 | 5 | 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide) | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 
@@ -56,7 +56,7 @@ This report is read-only. It suggests public internal links for review candidate
 | expansion, wave-1 | 1/3 | 5 | Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide) | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
 | expansion | 1/3 | 5 | 本地部署大模型怎么开始：新手先看硬件、模型和用途 (/blog/local-llm-deployment-beginner) | TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收 | content/blog/tensorrt-llm-beginner-guide.mdx |
 | expansion | 4/5 | 5 | OpenRouter API 怎么接入：统一模型入口不是只换 Base URL (/blog/openrouter-api-beginner-guide) | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
-| recommended | 0/3 | 5 | Codex 需求不清楚的任务使用前怎么判断是否适合 (/blog/codex-client-requirement-questions-freelance-scope) | AI 工具新手不应该先买哪些工具 | content/blog/tools-not-to-buy-first.mdx |
+| recommended | 0/3 | 5 | AI 小项目练习选什么：新手从低风险任务开始 (/blog/ai-small-project-practice-topics) | AI 工具新手不应该先买哪些工具 | content/blog/tools-not-to-buy-first.mdx |
 | expansion, recommended, wave-1 | 0/3 | 5 | Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide) | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
 | expansion | 0/3 | 5 | npm run dev 能跑但 build 失败使用前怎么判断是否适合 (/blog/dev-works-build-fails-freelance-scope) | Vercel 部署后 404 检查清单：逐页验收更稳 | content/blog/vercel-404-after-deploy-checklist.mdx |
 | expansion | 0/6 | 5 | permission denied 报错新手怎么处理：使用前怎么判断是否适合 (/blog/permission-denied-fix-freelance-scope) | Vercel 404 部署成功但页面打不开怎么办：使用前怎么判断是否适合 | content/blog/vercel-404-after-deploy-freelance-scope.mdx |

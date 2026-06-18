@@ -1,6 +1,6 @@
 # SEO Improvement Priority
 
-Generated at: 2026-06-18T18:14:43.287Z
+Generated at: 2026-06-18T18:43:39.649Z
 
 ## Guardrails
 
@@ -19,8 +19,8 @@ Generated at: 2026-06-18T18:14:43.287Z
 - indexNowUrls: 500
 - blockingItems: 0
 - publicMojibakeWarningItems: 0
-- snippetWarningItems: 204
-- schemaWarningItems: 92
+- snippetWarningItems: 0
+- schemaWarningItems: 0
 - internalLinkCandidateItems: 16
 - internalLinkRecommendedItems: 3
 - orphanPages: 0
@@ -64,44 +64,26 @@ Generated at: 2026-06-18T18:14:43.287Z
 ### 3. Search snippet CTR repair
 
 - Impact: high
-- Status: ready
+- Status: watch
 - Owner: content-fix
-- Evidence: 204 pages have snippet warnings, mostly title/keyword alignment.
+- Evidence: 0 pages have snippet warnings, mostly title/keyword alignment.
 - Action: Prioritize title and description rewrites for pages in the GSC top queue and pages with future impressions.
 
 | File/URL | Title | Warnings |
 | --- | --- | --- |
-| content/blog/ads-income-when-to-start.mdx | 广告收入要等到什么时候再接 | primary keyword is not an exact title substring |
-| content/blog/affiliate-vs-service-income-checklist.mdx | 联盟链接收入和服务收入有什么区别：新手检查清单 | primary keyword is not an exact title substring |
-| content/blog/affiliate-vs-service-income.mdx | 联盟链接收入和服务收入有什么区别 | description may be thin for search snippets |
-| content/blog/agent-human-review-loop-guide.mdx | Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认 | description may be thin for search snippets |
-| content/blog/agent-memory-design-guide.mdx | Agent 记忆怎么设计：短期记忆、长期记忆和用户偏好 | description may be thin for search snippets |
-| content/blog/agent-memory-postgres-schema-guide.mdx | Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则 | primary keyword is not an exact title substring |
-| content/blog/agent-tool-permission-safety-guide.mdx | Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | primary keyword is not an exact title substring |
-| content/blog/ai-api-key-security-rotation-guide.mdx | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | primary keyword is not an exact title substring |
-| content/blog/ai-assisted-vs-automated-delivery-checklist.mdx | AI 辅助交付和完全自动交付的检查清单 | description may be thin for search snippets; primary keyword is not an exact title substring |
-| content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx | AI 辅助交付常见错误和解决步骤 | description may be thin for search snippets |
+| none | none | none |
 
 ### 4. Structured data normalization
 
 - Impact: medium
-- Status: ready
+- Status: watch
 - Owner: automation
-- Evidence: 92 pages have schema warnings; current count is non-blocking.
+- Evidence: 0 pages have schema warnings; current count is non-blocking.
 - Action: Normalize uncommon contentType values and keep JSON-LD consistent across q, cluster, and blog pages.
 
 | File/URL | Title | Warnings |
 | --- | --- | --- |
-| content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx | AI 辅助交付常见错误和解决步骤 | contentType is uncommon: troubleshooting |
-| content/blog/ai-beginner-project-fit-check-mistakes.mdx | AI 新手判断接项目时的常见错误 | contentType is uncommon: troubleshooting |
-| content/blog/ai-freelance-30-day-execution-mistakes.mdx | 新手 30 天 AI 工具实践计划常见执行错误 | contentType is uncommon: troubleshooting |
-| content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx | AI 自动化项目常见合规错误和解决步骤 | contentType is uncommon: troubleshooting |
-| content/blog/ai-freelance-common-misconceptions-mistakes.mdx | AI 工具实践误区的常见错误和解决步骤 | contentType is uncommon: troubleshooting |
-| content/blog/ai-freelance-failure-review-mistakes.mdx | AI 项目失败复盘常见错误 | contentType is uncommon: troubleshooting |
-| content/blog/ai-freelance-first-7-days-mistakes.mdx | AI 工具新手 7 天准备常见错误 | contentType is uncommon: troubleshooting |
-| content/blog/ai-freelance-service-page-copy-mistakes.mdx | AI 服务页文案常见错误 | contentType is uncommon: troubleshooting |
-| content/blog/ai-freelance-skill-roadmap-mistakes.mdx | AI 工具技能路线图常见错误 | contentType is uncommon: troubleshooting |
-| content/blog/ai-output-unstable-risk-control-mistakes.mdx | AI 输出不稳定风险控制常见错误 | contentType is uncommon: troubleshooting |
+| none | none | none |
 
 ### 5. Internal-link opportunity queue
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T18:14:17.718Z",
+  "generatedAt": "2026-06-18T18:43:15.258Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -12,3495 +12,12 @@
     "publicItems": 500,
     "recommendedItems": 3,
     "scopedItems": 516,
-    "warningItems": 204,
+    "warningItems": 0,
     "waveItems": 3,
     "waveItemsWithBlockingIssues": 0
   },
   "blockingItems": [],
-  "warningItems": [
-    {
-      "description": "给 AI 工具新手看的广告收入启动判断：先确认内容质量、流量来源、合规披露、用户体验和数据记录，再决定是否在网站或模板页接入广告位。",
-      "descriptionLength": 66,
-      "file": "content/blog/ads-income-when-to-start.mdx",
-      "issues": [],
-      "primaryKeyword": "广告收入什么时候开始",
-      "scope": [
-        "public"
-      ],
-      "slug": "ads-income-when-to-start",
-      "status": "published",
-      "title": "广告收入要等到什么时候再接",
-      "titleLength": 13,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "给 AI 工具新手看的收入模式检查清单：区分联盟链接收入和服务收入，判断启动条件、记录证据、标注风险，避免把推荐、广告和交付服务混在一起。",
-      "descriptionLength": 69,
-      "file": "content/blog/affiliate-vs-service-income-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "联盟链接收入和服务收入区别",
-      "scope": [
-        "public"
-      ],
-      "slug": "affiliate-vs-service-income-checklist",
-      "status": "published",
-      "title": "联盟链接收入和服务收入有什么区别：新手检查清单",
-      "titleLength": 23,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "联盟链接更像长期内容收益，服务收入更像直接解决问题。本文用新手能执行的方式说明两者区别、适合阶段和风险。",
-      "descriptionLength": 52,
-      "file": "content/blog/affiliate-vs-service-income.mdx",
-      "issues": [],
-      "primaryKeyword": "联盟链接收入和服务收入有什么区别",
-      "scope": [
-        "public"
-      ],
-      "slug": "affiliate-vs-service-income",
-      "status": "published",
-      "title": "联盟链接收入和服务收入有什么区别",
-      "titleLength": 16,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "整理 Agent 人工审核流程设计方法，覆盖动作分级、确认摘要、审批队列、拒绝原因、重试策略和上线前测试。",
-      "descriptionLength": 53,
-      "file": "content/blog/agent-human-review-loop-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Agent 人工审核流程",
-      "scope": [
-        "public"
-      ],
-      "slug": "agent-human-review-loop-guide",
-      "status": "published",
-      "title": "Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认",
-      "titleLength": 33,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "解释 Agent 记忆设计的基础概念，覆盖短期上下文、长期记忆、用户偏好、知识库、权限、删除规则和隐私边界。",
-      "descriptionLength": 54,
-      "file": "content/blog/agent-memory-design-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Agent 记忆",
-      "scope": [
-        "public"
-      ],
-      "slug": "agent-memory-design-guide",
-      "status": "published",
-      "title": "Agent 记忆怎么设计：短期记忆、长期记忆和用户偏好",
-      "titleLength": 27,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "面向新手整理 Agent 记忆落库设计，覆盖短期会话、长期偏好、项目事实、来源记录、过期时间、删除入口和人工复核。",
-      "descriptionLength": 57,
-      "file": "content/blog/agent-memory-postgres-schema-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Agent 记忆数据库设计",
-      "scope": [
-        "public"
-      ],
-      "slug": "agent-memory-postgres-schema-guide",
-      "status": "published",
-      "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
-      "titleLength": 38,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 AI Agent 调用工具前的权限控制清单，覆盖工具白名单、参数校验、人工审批、沙箱执行、失败回滚和审计日志。",
-      "descriptionLength": 58,
-      "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Agent 工具权限控制",
-      "scope": [
-        "public"
-      ],
-      "slug": "agent-tool-permission-safety-guide",
-      "status": "published",
-      "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
-      "titleLength": 29,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 AI API Key 安全管理清单，覆盖环境变量、最小权限、服务端调用、密钥轮换、日志脱敏、泄露应急和客户交付。",
-      "descriptionLength": 59,
-      "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "AI API Key 安全管理",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-api-key-security-rotation-guide",
-      "status": "published",
-      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
-      "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份给新手的 AI 辅助交付检查清单：用来判断哪些步骤可以交给 AI 辅助，哪些步骤必须人工确认。",
-      "descriptionLength": 49,
-      "file": "content/blog/ai-assisted-vs-automated-delivery-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 辅助交付检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-assisted-vs-automated-delivery-checklist",
-      "status": "published",
-      "title": "AI 辅助交付和完全自动交付的检查清单",
-      "titleLength": 19,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 AI 辅助做项目时最容易犯的错误：直接复制输出、跳过测试、夸大承诺、忽略敏感数据和交付边界。",
-      "descriptionLength": 50,
-      "file": "content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 辅助交付常见错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-assisted-vs-automated-delivery-mistakes",
-      "status": "published",
-      "title": "AI 辅助交付常见错误和解决步骤",
-      "titleLength": 16,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "整理 AI 自动化项目报价思路，覆盖需求范围、工具选型、RAG、Agent、部署、维护、验收标准和风险边界。",
-      "descriptionLength": 54,
-      "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 自动化项目报价",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-automation-project-pricing-scope-guide",
-      "status": "published",
-      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
-      "titleLength": 37,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "AI 新手接项目前可以复制使用的检查清单：确认需求、材料、风险、验证方式、报价边界和交付说明。",
-      "descriptionLength": 47,
-      "file": "content/blog/ai-beginner-project-fit-check-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 新手接项目前检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-beginner-project-fit-check-checklist",
-      "status": "published",
-      "title": "AI 新手接项目前的项目适配检查清单",
-      "titleLength": 18,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "AI 新手判断能不能接项目时，常见错误包括只看预算、相信 simple、跳过材料检查、不会写边界和把学习任务当成交付任务。",
-      "descriptionLength": 61,
-      "file": "content/blog/ai-beginner-project-fit-check-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 新手判断接项目常见错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-beginner-project-fit-check-mistakes",
-      "status": "published",
-      "title": "AI 新手判断接项目时的常见错误",
-      "titleLength": 16,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "AI 新手接项目前，先用需求清晰度、风险等级、验证能力和交付边界四个维度判断自己能不能接。",
-      "descriptionLength": 45,
-      "file": "content/blog/ai-beginner-project-fit-check.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 新手如何判断自己能不能接项目",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-beginner-project-fit-check",
-      "status": "published",
-      "title": "AI 新手如何判断自己能不能接项目",
-      "titleLength": 17,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "一份给新手的 AI 编程工具风险检查清单，用来确认输入是否脱敏、修改范围是否可控、输出是否验证、交付边界是否清楚。",
-      "descriptionLength": 57,
-      "file": "content/blog/ai-coding-tools-risk-check-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 编程工具风险检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-coding-tools-risk-check-checklist",
-      "status": "published",
-      "title": "AI 编程工具使用前风险检查清单",
-      "titleLength": 16,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手使用 Codex、Claude Code、ChatGPT 等 AI 编程工具前，应先检查代码权限、敏感数据、客户环境、生成结果和交付责任。",
-      "descriptionLength": 71,
-      "file": "content/blog/ai-coding-tools-risk-check.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 编程工具风险检查",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-coding-tools-risk-check",
-      "status": "published",
-      "title": "AI 编程工具使用前要检查哪些风险",
-      "titleLength": 17,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "设计 AI 生成内容人工审核表时，应覆盖事实、原创性、平台规则、风险提示、SEO、内链、CTA 和发布状态。",
-      "descriptionLength": 54,
-      "file": "content/blog/ai-content-human-review-template.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 生成内容人工审核表怎么设计",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-content-human-review-template",
-      "status": "published",
-      "title": "AI 生成内容人工审核表怎么设计",
-      "titleLength": 16,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "一份可复制的新手 30 天 AI 工具实践执行检查清单，覆盖工具环境、每日练习、作品集、项目判断和人工审核。",
-      "descriptionLength": 54,
-      "file": "content/blog/ai-freelance-30-day-execution-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "新手 30 天 AI 工具实践执行检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-freelance-30-day-execution-checklist",
-      "status": "published",
-      "title": "新手 30 天 AI 工具实践执行检查清单",
-      "titleLength": 21,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "新手执行 30 天 AI 工具实践计划时，常见错误包括第一周急着投标、每天换工具、没有作品集、忽略人工审核和误接高风险项目。",
-      "descriptionLength": 62,
-      "file": "content/blog/ai-freelance-30-day-execution-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "新手 30 天 AI 工具实践计划常见错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-freelance-30-day-execution-mistakes",
-      "status": "published",
-      "title": "新手 30 天 AI 工具实践计划常见执行错误",
-      "titleLength": 23,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份给新手的 AI 自动化项目合规检查清单，用来区分可自动化、必须人工确认和不适合自动化的动作。",
-      "descriptionLength": 48,
-      "file": "content/blog/ai-freelance-automation-compliance-risk-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 自动化项目合规风险检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-freelance-automation-compliance-risk-checklist",
-      "status": "published",
-      "title": "AI 自动化项目合规风险检查清单",
-      "titleLength": 16,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "新手做 AI 自动化项目时常见的合规错误：未审核发布、自动承诺客户、混用敏感数据、缺少日志和误改 sitemap。",
-      "descriptionLength": 57,
-      "file": "content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 自动化项目合规错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-freelance-automation-compliance-risk-mistakes",
-      "status": "published",
-      "title": "AI 自动化项目常见合规错误和解决步骤",
-      "titleLength": 19,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "AI 工具新手常见错误包括过度相信工具、低估客户沟通、跳过审核、误把学习项目当交付项目，以及让自动化越过人工确认。",
-      "descriptionLength": 57,
-      "file": "content/blog/ai-freelance-common-misconceptions-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 工具实践误区常见错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-freelance-common-misconceptions-mistakes",
-      "status": "published",
-      "title": "AI 工具实践误区的常见错误和解决步骤",
-      "titleLength": 19,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "说明新手如何用 AI 辅助做 Logo，覆盖需求确认、风格关键词、草图方向、版权风险、商用检查和交付说明。",
-      "descriptionLength": 53,
-      "file": "content/blog/ai-logo-design-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 做 Logo",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-logo-design-beginner-guide",
-      "status": "published",
-      "title": "AI 做 Logo 怎么开始：新手先别急着商用",
-      "titleLength": 23,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。",
-      "descriptionLength": 52,
-      "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "客服 AI 模型选型",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-model-selection-customer-service-guide",
-      "status": "published",
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-      "titleLength": 29,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份给 AI 工具新手的输出稳定性检查清单，覆盖输入固定、版本保存、人工审核、抽样验证、交付说明和风险暂停。",
-      "descriptionLength": 54,
-      "file": "content/blog/ai-output-unstable-risk-control-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 输出不稳定检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-output-unstable-risk-control-checklist",
-      "status": "published",
-      "title": "AI 输出不稳定风险控制检查清单",
-      "titleLength": 16,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "AI 输出不稳定时，常见错误包括反复生成、不固定输入、让 AI 自审、没有验证记录、交付说明过度承诺。本文给出修正步骤。",
-      "descriptionLength": 60,
-      "file": "content/blog/ai-output-unstable-risk-control-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 输出不稳定常见错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-output-unstable-risk-control-mistakes",
-      "status": "published",
-      "title": "AI 输出不稳定风险控制常见错误",
-      "titleLength": 16,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "AI 工具实践时，输出不稳定不能靠多生成几次糊过去。本文给出输入固定、人工审核、抽样验证、版本记录和交付边界的风险控制流程。",
-      "descriptionLength": 62,
-      "file": "content/blog/ai-output-unstable-risk-control.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 输出不稳定风险控制",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-output-unstable-risk-control",
-      "status": "published",
-      "title": "AI 输出不稳定怎么做风险控制",
-      "titleLength": 15,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理全行业通用 AI 提示词框架，覆盖角色、任务、背景、约束、输出格式、复核清单和常见业务场景。",
-      "descriptionLength": 52,
-      "file": "content/blog/ai-prompt-framework-business-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 提示词怎么写",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-prompt-framework-business-guide",
-      "status": "published",
-      "title": "AI 提示词怎么写才好用：全行业都能套的 5 段式框架",
-      "titleLength": 27,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "讲清团队提示词库的搭建方式，覆盖行业分类、版本管理、示例输出、适用边界、审核流程、失败案例和工具导航。",
-      "descriptionLength": 51,
-      "file": "content/blog/ai-prompt-library-team-knowledge-base-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "团队 AI 提示词库",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-prompt-library-team-knowledge-base-guide",
-      "status": "published",
-      "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
-      "titleLength": 28,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "说明如何用 AI 辅助写简历和求职信，覆盖岗位分析、经历整理、量化表达、求职信初稿、人工核对和风险提醒。",
-      "descriptionLength": 52,
-      "file": "content/blog/ai-resume-cover-letter-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 写简历",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-resume-cover-letter-guide",
-      "status": "published",
-      "title": "AI 写简历和求职信怎么用：别让内容变得不真实",
-      "titleLength": 23,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "一份给 AI 工具新手的练习项目选题检查清单，帮助你确认题目是否低风险、可验证、可记录、适合作品集展示。",
-      "descriptionLength": 52,
-      "file": "content/blog/ai-small-project-practice-topics-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 项目练习项目检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-small-project-practice-topics-checklist",
-      "status": "published",
-      "title": "AI 小项目练习选题检查清单",
-      "titleLength": 14,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "AI 工具新手做练习项目时，常见错误包括选题太大、材料未授权、只展示截图、不写验证方式、把练习包装成客户案例。本文给出修正步骤。",
-      "descriptionLength": 64,
-      "file": "content/blog/ai-small-project-practice-topics-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 项目练习项目常见错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-small-project-practice-topics-mistakes",
-      "status": "published",
-      "title": "AI 小项目练习常见错误",
-      "titleLength": 12,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "AI 工具新手不要一开始就碰复杂项目。本文整理低风险练习小项目选题，帮助你从文案整理、页面小改、表格清洗、报错解释和交付说明开始。",
-      "descriptionLength": 65,
-      "file": "content/blog/ai-small-project-practice-topics.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 小项目练习",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-small-project-practice-topics",
-      "status": "published",
-      "title": "AI 工具新手练习小项目选什么",
-      "titleLength": 15,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份给新手使用的 AI 工具配置服务检查清单，用于确认需求、账号权限、配置范围、验收证据和交付后的维护边界。",
-      "descriptionLength": 54,
-      "file": "content/blog/ai-tool-setup-service-checklist-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 工具配置服务检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-tool-setup-service-checklist-checklist",
-      "status": "published",
-      "title": "AI 工具配置服务项目检查清单",
-      "titleLength": 15,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 AI 工具推荐的选择方法，按写作、图片、PPT、网站、视频、代码和记录复盘分类，避免盲目购买。",
-      "descriptionLength": 54,
-      "file": "content/blog/ai-tools-recommendation-beginner.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 工具推荐",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-tools-recommendation-beginner",
-      "status": "published",
-      "title": "AI 工具推荐怎么选：新手别一开始买太多",
-      "titleLength": 20,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "AI 工具新手不需要一开始购买很多工具。本文给出免费工具栈选择方法，覆盖需求整理、文案初稿、代码排查、页面检查、记录复盘和交付说明。",
-      "descriptionLength": 66,
-      "file": "content/blog/ai-tools-stack-free-start.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 免费工具栈",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-tools-stack-free-start",
-      "status": "published",
-      "title": "AI 工具新手免费工具栈怎么选",
-      "titleLength": 15,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手说明 AI 做视频的基础流程，覆盖选题、脚本、分镜、配音、字幕、画面素材、版权和发布前检查。",
-      "descriptionLength": 50,
-      "file": "content/blog/ai-video-tools-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 做视频",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-video-tools-beginner-guide",
-      "status": "published",
-      "title": "AI 做视频怎么开始：脚本、配音、画面和发布检查",
-      "titleLength": 24,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "面向新手说明 AI 做网站的流程，覆盖需求确认、页面结构、文案、设计、代码或无代码工具、部署上线和验收清单。",
-      "descriptionLength": 54,
-      "file": "content/blog/ai-website-builder-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 做网站",
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-website-builder-beginner-guide",
-      "status": "published",
-      "title": "AI 做网站怎么开始：新手从页面需求到上线检查",
-      "titleLength": 23,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "面向新手整理 AnythingLLM 本地知识库和 RAG 原型搭建思路，覆盖模型选择、文档导入、工作区、检索测试、权限和交付边界。",
-      "descriptionLength": 66,
-      "file": "content/blog/anythingllm-local-rag-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "AnythingLLM 本地知识库",
-      "scope": [
-        "public"
-      ],
-      "slug": "anythingllm-local-rag-beginner-guide",
-      "status": "published",
-      "title": "AnythingLLM 怎么搭本地知识库：从文档聊天到 Agent 原型",
-      "titleLength": 36,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "接到 API Key 无效或缺失的排错需求时，新手应先判断复现环境、授权方式、密钥安全、交付范围和验收标准，再决定是否报价。",
-      "descriptionLength": 62,
-      "file": "content/blog/api-key-invalid-or-missing-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "API Key 无效或缺失项目范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "api-key-invalid-or-missing-freelance-scope",
-      "status": "published",
-      "title": "API Key 无效或缺失：使用前怎么判断是否适合",
-      "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 API Key 无效或缺失排查中的常见错误：变量名不一致、没有重启服务、前端暴露密钥、线上变量遗漏、权限额度不足。",
-      "descriptionLength": 60,
-      "file": "content/blog/api-key-invalid-or-missing-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "API Key 无效或缺失常见错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "api-key-invalid-or-missing-mistakes",
-      "status": "published",
-      "title": "API Key 无效或缺失的常见错误和修复步骤",
-      "titleLength": 23,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Arize Phoenix LLM observability 入门，覆盖 tracing、OpenTelemetry、OpenInference、RAG/Agent 排错、评测和敏感数据边界。",
-      "descriptionLength": 104,
-      "file": "content/blog/arize-phoenix-llm-observability-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Arize Phoenix LLM Tracing",
-      "scope": [
-        "public"
-      ],
-      "slug": "arize-phoenix-llm-observability-guide",
-      "status": "published",
-      "title": "Arize Phoenix 怎么做 LLM Tracing：OpenTelemetry、评测和排错入门",
-      "titleLength": 51,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 AutoGen 与 Microsoft Agent Framework 的入门判断，覆盖多 Agent、工具、人类介入、迁移、日志、评测和生产边界。",
-      "descriptionLength": 81,
-      "file": "content/blog/autogen-agent-framework-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "AutoGen Agent 入门",
-      "scope": [
-        "public"
-      ],
-      "slug": "autogen-agent-framework-beginner-guide",
-      "status": "published",
-      "title": "AutoGen / Microsoft Agent Framework 怎么入门：多 Agent 先看迁移和边界",
-      "titleLength": 56,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "给 AI 工具新手看的银行卡绑定收款平台检查清单：核对平台身份、账户权限、提现规则、费用、隐私、记录和暂停条件。",
-      "descriptionLength": 56,
-      "file": "content/blog/bank-card-payment-platform-risk-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "银行卡绑定收款平台注意事项",
-      "scope": [
-        "public"
-      ],
-      "slug": "bank-card-payment-platform-risk-checklist",
-      "status": "published",
-      "title": "银行卡绑定收款平台要注意什么：新手检查清单",
-      "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份给新手使用的第一次 AI 工具实践检查清单，覆盖作品集、服务范围、客户问题、报价边界、交付记录和安全风险。",
-      "descriptionLength": 55,
-      "file": "content/blog/before-first-ai-freelance-job-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "第一次 AI 工具实践检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "before-first-ai-freelance-job-checklist",
-      "status": "published",
-      "title": "第一次接 AI 小单前检查清单",
-      "titleLength": 15,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理新手第一次接 AI 小单前常见错误：没有作品证据、范围写太大、报价不含修改、直接交 AI 输出、忽略客户权限风险。",
-      "descriptionLength": 59,
-      "file": "content/blog/before-first-ai-freelance-job-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "第一次接 AI 小单常见错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "before-first-ai-freelance-job-mistakes",
-      "status": "published",
-      "title": "第一次接 AI 小单前最容易犯的错误",
-      "titleLength": 18,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 BentoML 部署 LLM 的路线，覆盖 Service、本地运行、Bento、BentoCloud、OpenAI-compatible API、批量推理和上线边界。",
-      "descriptionLength": 91,
-      "file": "content/blog/bentoml-llm-deployment-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "BentoML LLM 部署",
-      "scope": [
-        "public"
-      ],
-      "slug": "bentoml-llm-deployment-beginner-guide",
-      "status": "published",
-      "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
-      "titleLength": 44,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份给新手使用的 bug 修复交付前检查清单，帮助确认原问题、修改范围、测试证据、未覆盖事项和客户验收边界。",
-      "descriptionLength": 54,
-      "file": "content/blog/bugfix-delivery-note-template-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Bug 修复交付前检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "bugfix-delivery-note-template-checklist",
-      "status": "published",
-      "title": "Bug 修复交付前检查清单",
-      "titleLength": 13,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "一份给 AI 工具新手使用的 Canva 作品集封面检查清单，覆盖标题、案例证据、素材授权、客户隐私、导出格式和封面文案。",
-      "descriptionLength": 61,
-      "file": "content/blog/canva-portfolio-cover-tips-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Canva 作品集封面检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "canva-portfolio-cover-tips-checklist",
-      "status": "published",
-      "title": "Canva 作品集封面发布前检查清单",
-      "titleLength": 18,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份给 AI 工具新手使用的多工具工作流检查清单，覆盖需求澄清、代码修改、长文复核、测试证据、隐私脱敏和交付说明。",
-      "descriptionLength": 57,
-      "file": "content/blog/chatgpt-codex-claude-workflow-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "ChatGPT Codex Claude 工作流检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "chatgpt-codex-claude-workflow-checklist",
-      "status": "published",
-      "title": "ChatGPT、Codex 和 Claude 工作流检查清单",
-      "titleLength": 30,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手把 ChatGPT、Codex 和 Claude 用在 AI 工具实践流程里时，应先分清需求澄清、代码修改、长文复核和人工验收边界，避免把 AI 输出直接交付。",
-      "descriptionLength": 82,
-      "file": "content/blog/chatgpt-codex-claude-workflow.mdx",
-      "issues": [],
-      "primaryKeyword": "ChatGPT Codex Claude 工作流",
-      "scope": [
-        "public"
-      ],
-      "slug": "chatgpt-codex-claude-workflow",
-      "status": "published",
-      "title": "ChatGPT、Codex 和 Claude 怎么分工做 AI 工具实践流程",
-      "titleLength": 38,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份给新手使用的 AI proposal 检查清单，帮助确认客户需求、服务范围、过度承诺、平台规则、隐私脱敏和人工复核。",
-      "descriptionLength": 60,
-      "file": "content/blog/chatgpt-vs-claude-proposal-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 生成 Proposal 检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "chatgpt-vs-claude-proposal-checklist",
-      "status": "published",
-      "title": "AI 生成 Proposal 发布前检查清单",
-      "titleLength": 22,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Claude API 接入思路，覆盖 Messages API、API Key、服务端调用、流式输出、Token 计数、费用和客户数据边界。",
-      "descriptionLength": 77,
-      "file": "content/blog/claude-api-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude API 接入",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-api-beginner-guide",
-      "status": "published",
-      "title": "Claude API 怎么接入：Messages API、费用和上下文边界",
-      "titleLength": 37,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份 Claude Code 自动化人工审核清单，覆盖任务范围、脱敏输入、diff 检查、测试证据、权限边界和交付说明。",
-      "descriptionLength": 60,
-      "file": "content/blog/claude-code-automation-human-review-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 自动化人工审核清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-automation-human-review-checklist",
-      "status": "published",
-      "title": "Claude Code 自动化人工审核检查清单",
-      "titleLength": 23,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 自动化项目前，应判断任务是否低风险、是否可复现、是否能人工审核、是否有测试证据和明确交付边界。",
-      "descriptionLength": 63,
-      "file": "content/blog/claude-code-automation-human-review-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 自动化项目范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-automation-human-review-freelance-scope",
-      "status": "published",
-      "title": "Claude Code 自动化项目前怎么判断能不能做",
-      "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 Claude Code 自动化中常见的人工审核错误：输入未脱敏、范围过大、不看 diff、不跑测试、交付说明缺少未覆盖范围。",
-      "descriptionLength": 65,
-      "file": "content/blog/claude-code-automation-human-review-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 自动化审核错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-automation-human-review-mistakes",
-      "status": "published",
-      "title": "Claude Code 自动化最容易忽略的人工审核错误",
-      "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 自动化处理代码、文档或排错任务时，必须保留人工审查、diff 检查、测试证据和权限边界，不能把工具输出直接交付。",
-      "descriptionLength": 72,
-      "file": "content/blog/claude-code-automation-human-review.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 自动化人工审核",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-automation-human-review",
-      "status": "published",
-      "title": "Claude Code 自动化为什么必须有人审",
-      "titleLength": 23,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份 Claude Code 新手检查清单，覆盖读仓库、缩小范围、查看 diff、运行测试、脱敏客户资料和写交付说明。",
-      "descriptionLength": 59,
-      "file": "content/blog/claude-code-beginner-mistakes-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 新手检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-beginner-mistakes-checklist",
-      "status": "published",
-      "title": "Claude Code 新手使用检查清单",
-      "titleLength": 20,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 接代码小单前，应先判断任务是否可复现、权限是否安全、修改范围是否清楚、测试证据是否可提供。",
-      "descriptionLength": 61,
-      "file": "content/blog/claude-code-beginner-mistakes-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 项目范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-beginner-mistakes-freelance-scope",
-      "status": "published",
-      "title": "Claude Code 项目前怎么判断范围",
-      "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 Claude Code 新手常见错误：不读上下文、直接接受改动、不看 diff、不跑检查、忽略客户权限和交付说明，并给出修正方法。",
-      "descriptionLength": 68,
-      "file": "content/blog/claude-code-beginner-mistakes-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 常见错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-beginner-mistakes-mistakes",
-      "status": "published",
-      "title": "Claude Code 新手常见错误和修正方法",
-      "titleLength": 23,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 做 AI 工具实践或练习项目时，最容易忽略仓库上下文、diff 检查、测试证据和权限边界。本文给出可执行的修正流程。",
-      "descriptionLength": 74,
-      "file": "content/blog/claude-code-beginner-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 新手错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-beginner-mistakes",
-      "status": "published",
-      "title": "Claude Code 新手最容易犯的错误",
-      "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份 Claude Code 新手使用场景检查清单，帮助判断任务是否低风险、可复现、可测试、可人工审核、可写清交付边界。",
-      "descriptionLength": 60,
-      "file": "content/blog/claude-code-beginner-use-cases-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 使用场景检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-beginner-use-cases-checklist",
-      "status": "published",
-      "title": "Claude Code 新手使用场景检查清单",
-      "titleLength": 22,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 项目前，应判断需求是否适合低风险自动化辅助：可复现、低权限、小范围、可测试、可交付说明。",
-      "descriptionLength": 60,
-      "file": "content/blog/claude-code-beginner-use-cases-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 使用场景项目范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-beginner-use-cases-freelance-scope",
-      "status": "published",
-      "title": "Claude Code 新手项目练习前怎么判断使用场景",
-      "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 Claude Code 新手选择使用场景时的常见错误：选高风险项目、忽略复现条件、低估权限风险、没有测试证据和交付边界。",
-      "descriptionLength": 63,
-      "file": "content/blog/claude-code-beginner-use-cases-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 使用场景常见错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-beginner-use-cases-mistakes",
-      "status": "published",
-      "title": "Claude Code 新手选使用场景时的常见错误",
-      "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手使用 Claude Code 做项目时，更适合从报错解释、代码阅读、低风险页面小改、配置文档和交付说明开始，而不是直接处理高权限生产项目。",
-      "descriptionLength": 71,
-      "file": "content/blog/claude-code-beginner-use-cases.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 新手使用场景",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-beginner-use-cases",
-      "status": "published",
-      "title": "Claude Code 新手适合用在哪些项目场景",
-      "titleLength": 24,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "接到客户 bug 需求时，新手应先判断是否能写出合格 Claude Code prompt：复现步骤、错误原文、环境、权限边界和验收方式是否齐全。",
-      "descriptionLength": 73,
-      "file": "content/blog/claude-code-bug-prompt-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code bug prompt 项目范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-bug-prompt-freelance-scope",
-      "status": "published",
-      "title": "Claude Code Bug Prompt 项目前怎么判断范围",
-      "titleLength": 32,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 修 bug 前，应把复现路径、错误原文、运行环境、预期结果、已尝试操作和安全边界写进 prompt，避免让工具盲猜。",
-      "descriptionLength": 74,
-      "file": "content/blog/claude-code-bug-prompt.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code bug prompt",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-bug-prompt",
-      "status": "published",
-      "title": "Claude Code 修 bug 的 prompt 怎么写",
-      "titleLength": 30,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份 Claude Code 项目客户问题检查清单，帮助新手确认复现步骤、错误原文、运行环境、权限边界、报价范围和验收方式。",
-      "descriptionLength": 62,
-      "file": "content/blog/claude-code-client-questions-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 客户问题检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-client-questions-checklist",
-      "status": "published",
-      "title": "Claude Code 项目客户问题检查清单",
-      "titleLength": 22,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "客户需求不清楚时，新手用 Claude Code 项目前应先判断是否能复现、是否低权限、是否可测试、是否适合诊断而不是直接修复。",
-      "descriptionLength": 64,
-      "file": "content/blog/claude-code-client-questions-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 客户问题项目范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-client-questions-freelance-scope",
-      "status": "published",
-      "title": "Claude Code 项目前客户问题不清楚时怎么判断范围",
-      "titleLength": 29,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 Claude Code 项目前客户沟通常见错误：不问复现步骤、不问环境、不问权限、不问验收、直接接受客户说很简单。",
-      "descriptionLength": 60,
-      "file": "content/blog/claude-code-client-questions-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 项目客户沟通常见错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-client-questions-mistakes",
-      "status": "published",
-      "title": "Claude Code 项目前问客户时的常见错误",
-      "titleLength": 24,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 辅助接代码小单前，应先向客户确认复现步骤、运行环境、权限边界、验收标准和未覆盖范围，再决定是否报价。",
-      "descriptionLength": 66,
-      "file": "content/blog/claude-code-client-questions.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 项目客户问题",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-client-questions",
-      "status": "published",
-      "title": "用 Claude Code 项目前要问客户哪些问题",
-      "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份 Claude Code 常用命令检查清单，帮助新手区分只读命令、本地验证命令、文件修改命令和高风险命令，再决定是否执行。",
-      "descriptionLength": 63,
-      "file": "content/blog/claude-code-common-commands-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 命令检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-common-commands-checklist",
-      "status": "published",
-      "title": "Claude Code 常用命令检查清单",
-      "titleLength": 20,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 做项目时，可以把只读排查、本地验证和交付说明写进范围，但应谨慎处理部署、数据库、环境变量和生产权限命令。",
-      "descriptionLength": 68,
-      "file": "content/blog/claude-code-common-commands-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 常用命令项目范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-common-commands-freelance-scope",
-      "status": "published",
-      "title": "Claude Code 常用命令哪些适合写进项目范围",
-      "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 Claude Code 新手运行常用命令时的常见错误：不看命令用途、不区分环境、不记录输出、把构建通过当成业务验收。",
-      "descriptionLength": 61,
-      "file": "content/blog/claude-code-common-commands-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 命令常见错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-common-commands-mistakes",
-      "status": "published",
-      "title": "Claude Code 新手运行常用命令时的常见错误",
-      "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手使用 Claude Code 接代码小单前，可以把 npm、git、构建、测试和日志命令整理成安全笔记，先在低权限环境验证，再写进交付说明。",
-      "descriptionLength": 72,
-      "file": "content/blog/claude-code-common-commands.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 常用命令",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-common-commands",
-      "status": "published",
-      "title": "Claude Code 新手常用命令怎么整理成项目笔记",
-      "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 做项目时，可以把修改摘要、验证结果、未覆盖范围和客户验收说明写进交付范围，但不应默认包含生产部署和长期维护。",
-      "descriptionLength": 70,
-      "file": "content/blog/claude-code-delivery-note-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 交付说明项目范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-delivery-note-freelance-scope",
-      "status": "published",
-      "title": "Claude Code 交付说明哪些内容适合写进项目范围",
-      "titleLength": 28,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 辅助完成代码小单后，交付说明应写清改了什么、怎么验证、哪些没覆盖、客户如何验收，避免一句已修好带来返工争议。",
-      "descriptionLength": 70,
-      "file": "content/blog/claude-code-delivery-note.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 交付说明",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-delivery-note",
-      "status": "published",
-      "title": "用 Claude Code 项目后交付说明怎么写",
-      "titleLength": 24,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 接客户报错小单时，可以把低权限诊断、错误整理和本地验证写进范围，但不应默认包含生产权限、数据库和长期维护。",
-      "descriptionLength": 69,
-      "file": "content/blog/claude-code-error-debug-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 错误排查项目范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-error-debug-freelance-scope",
-      "status": "published",
-      "title": "Claude Code 错误排查哪些适合写进项目范围",
-      "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理新手用 Claude Code 排查客户报错时的常见错误：不拿错误原文、不问复现环境、盲跑命令、暴露敏感日志、把诊断写成修复。",
-      "descriptionLength": 65,
-      "file": "content/blog/claude-code-error-debug-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 排查报错常见错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-error-debug-mistakes",
-      "status": "published",
-      "title": "Claude Code 排查客户报错时的常见错误",
-      "titleLength": 24,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 辅助排查客户报错时，应先确认复现步骤、错误原文、运行环境和权限边界，再用低风险命令整理诊断结论。",
-      "descriptionLength": 64,
-      "file": "content/blog/claude-code-error-debug.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 错误排查",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-error-debug",
-      "status": "published",
-      "title": "用 Claude Code 排查客户报错时怎么做才稳",
-      "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份 Claude Code GitHub 文件范围检查清单，帮助新手确认链接类型、分支版本、文件范围、只读边界、敏感信息和客户验收方式。",
-      "descriptionLength": 69,
-      "file": "content/blog/claude-code-github-file-scope-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code GitHub 文件检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-github-file-scope-checklist",
-      "status": "published",
-      "title": "Claude Code GitHub 文件范围检查清单",
-      "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 接 GitHub 文件检查小单时，可以写入只读诊断、文件范围、分支版本和交付说明，但不应默认包含全仓库审计、推送和生产配置。",
-      "descriptionLength": 78,
-      "file": "content/blog/claude-code-github-file-scope-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code GitHub 文件项目范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-github-file-scope-freelance-scope",
-      "status": "published",
-      "title": "Claude Code 看 GitHub 文件哪些适合写进项目范围",
-      "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理新手用 Claude Code 看客户 GitHub 文件时的常见范围错误：不问分支、不限文件、不确认只读、不脱敏、把单文件检查扩大成全仓库维护。",
-      "descriptionLength": 75,
-      "file": "content/blog/claude-code-github-file-scope-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code GitHub 文件范围错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-github-file-scope-mistakes",
-      "status": "published",
-      "title": "Claude Code 看 GitHub 文件时的常见范围错误",
-      "titleLength": 31,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 处理客户给的 GitHub 文件或仓库链接时，应先确认文件路径、分支、问题范围、只读边界和验收方式，避免把单文件检查扩大成全仓库维护。",
-      "descriptionLength": 83,
-      "file": "content/blog/claude-code-github-file-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code GitHub 文件范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-github-file-scope",
-      "status": "published",
-      "title": "客户给 GitHub 文件时用 Claude Code 怎么限定范围",
-      "titleLength": 34,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份 Claude Code 安装前置条件检查清单，帮助新手确认系统、终端、Node、Git、网络、测试项目、账号边界和客户项目权限。",
-      "descriptionLength": 67,
-      "file": "content/blog/claude-code-install-prerequisites-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 安装检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-install-prerequisites-checklist",
-      "status": "published",
-      "title": "Claude Code 安装前置条件检查清单",
-      "titleLength": 22,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 项目前，可以把本机环境确认、安装诊断、测试项目验证和交付说明写进范围，但不应默认包含客户账号、生产配置和长期维护。",
-      "descriptionLength": 73,
-      "file": "content/blog/claude-code-install-prerequisites-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 安装准备项目范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-install-prerequisites-freelance-scope",
-      "status": "published",
-      "title": "Claude Code 安装准备哪些适合写进项目范围",
-      "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理新手安装 Claude Code 前常见错误：不确认系统和终端、不看 Node 版本、不记录错误原文、直接在客户项目里试错、混淆安装问题和项目问题。",
-      "descriptionLength": 76,
-      "file": "content/blog/claude-code-install-prerequisites-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 安装准备错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-install-prerequisites-mistakes",
-      "status": "published",
-      "title": "Claude Code 安装准备常见错误",
-      "titleLength": 20,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手安装 Claude Code 前，应先确认系统、终端、Node.js、Git、项目权限、网络环境和测试项目，避免把安装问题误判成工具不可用。",
-      "descriptionLength": 72,
-      "file": "content/blog/claude-code-install-prerequisites.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 安装前置条件",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-install-prerequisites",
-      "status": "published",
-      "title": "安装 Claude Code 前新手要先确认哪些条件",
-      "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 接低风险小单时，可以把页面文案、单报错诊断、单文件检查、README 和交付说明写进范围，但不应默认包含生产权限和长期维护。",
-      "descriptionLength": 78,
-      "file": "content/blog/claude-code-low-risk-freelance-jobs-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 低风险小单项目范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-low-risk-freelance-jobs-freelance-scope",
-      "status": "published",
-      "title": "Claude Code 低风险小单哪些适合写进项目范围",
-      "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理新手用 Claude Code 判断低风险小单时的常见错误：只听客户说简单、不问权限、不写验收、忽略未覆盖范围、把诊断做成长期支持。",
-      "descriptionLength": 68,
-      "file": "content/blog/claude-code-low-risk-freelance-jobs-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 低风险项目错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-low-risk-freelance-jobs-mistakes",
-      "status": "published",
-      "title": "Claude Code 低风险项目常见错误",
-      "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 做项目时，应优先选择低权限、低影响、可复现、可验收的小任务，例如页面文案、单报错诊断、README 整理和交付说明。",
-      "descriptionLength": 74,
-      "file": "content/blog/claude-code-low-risk-freelance-jobs.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 低风险项目",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-low-risk-freelance-jobs",
-      "status": "published",
-      "title": "Claude Code 新手适合先接哪些低风险小单",
-      "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 接 Next.js 页面检查小单时，可以写入明确页面、组件、文案、样式和本地验证，但不应默认包含全站重构和生产权限。",
-      "descriptionLength": 74,
-      "file": "content/blog/claude-code-nextjs-page-check-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code Next.js 页面检查项目范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-nextjs-page-check-freelance-scope",
-      "status": "published",
-      "title": "Claude Code 检查 Next.js 页面哪些适合写进项目范围",
-      "titleLength": 35,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理新手用 Claude Code 检查 Next.js 页面时的常见错误：不问页面路径、不确认数据来源、不跑本地验证、把页面小改扩成全站重构。",
-      "descriptionLength": 72,
-      "file": "content/blog/claude-code-nextjs-page-check-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code Next.js 页面检查错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-nextjs-page-check-mistakes",
-      "status": "published",
-      "title": "Claude Code 检查 Next.js 页面时的常见错误",
-      "titleLength": 31,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 检查 Next.js 页面小问题时，应先确认页面路径、复现步骤、组件范围、数据来源和本地验证方式，再写交付说明。",
-      "descriptionLength": 72,
-      "file": "content/blog/claude-code-nextjs-page-check.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code Next.js 页面检查",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-nextjs-page-check",
-      "status": "published",
-      "title": "用 Claude Code 检查 Next.js 页面小问题怎么做",
-      "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份 Claude Code proposal 审阅检查清单，帮助新手发送报价前检查客户问题、服务范围、未覆盖范围、验证方式、追问问题和风险表达。",
-      "descriptionLength": 73,
-      "file": "content/blog/claude-code-proposal-review-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code proposal 检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-proposal-review-checklist",
-      "status": "published",
-      "title": "Claude Code Proposal 审阅检查清单",
-      "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 做 proposal 审阅服务时，可以写入范围检查、风险提示、追问问题和交付修改建议，但不应默认承诺成交、收益或平台外沟通。",
-      "descriptionLength": 78,
-      "file": "content/blog/claude-code-proposal-review-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code proposal 审阅项目范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-proposal-review-freelance-scope",
-      "status": "published",
-      "title": "Claude Code Proposal 审阅哪些适合写进项目范围",
-      "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理新手用 Claude Code 审阅 proposal 时的常见错误：直接发送 AI 初稿、过度承诺、不写未覆盖范围、暴露敏感信息、缺少客户追问。",
-      "descriptionLength": 75,
-      "file": "content/blog/claude-code-proposal-review-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code proposal 审阅错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-proposal-review-mistakes",
-      "status": "published",
-      "title": "Claude Code 审阅 Proposal 时的常见错误",
-      "titleLength": 30,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 辅助审阅项目 proposal 时，应重点检查客户问题、服务范围、风险边界、验证方式和交付说明，不写夸大承诺。",
-      "descriptionLength": 71,
-      "file": "content/blog/claude-code-proposal-review.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code proposal 审阅",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-proposal-review",
-      "status": "published",
-      "title": "用 Claude Code 审阅项目 Proposal 时要看什么",
-      "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份 Claude Code 小项目任务检查清单，帮助新手判断任务是否明确、低权限、可复现、可验证、可验收，避免接成长期维护或高风险项目。",
-      "descriptionLength": 69,
-      "file": "content/blog/claude-code-small-project-tasks-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 小项目检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-small-project-tasks-checklist",
-      "status": "published",
-      "title": "Claude Code 小项目任务检查清单",
-      "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 接小项目时，可以把单页面、单报错、单配置、单文档和交付说明写进范围，但不应默认包含生产部署、长期维护和高权限系统。",
-      "descriptionLength": 73,
-      "file": "content/blog/claude-code-small-project-tasks-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 小项目范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-small-project-tasks-freelance-scope",
-      "status": "published",
-      "title": "Claude Code 小项目任务哪些适合写进项目范围",
-      "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理新手用 Claude Code 接小项目时的常见错误：把模糊需求当小单、忽略权限、没有验收方式、把诊断写成修复、接成长期维护。",
-      "descriptionLength": 65,
-      "file": "content/blog/claude-code-small-project-tasks-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 小项目错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-small-project-tasks-mistakes",
-      "status": "published",
-      "title": "Claude Code 小项目常见错误",
-      "titleLength": 19,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Claude Code 接小项目任务时，应优先选择单页面、单报错、单配置、单文档这类低权限、可复现、可验收的任务，避免接长期维护和高风险系统。",
-      "descriptionLength": 75,
-      "file": "content/blog/claude-code-small-project-tasks.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 小项目任务",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-small-project-tasks",
-      "status": "published",
-      "title": "哪些小项目任务适合用 Claude Code 辅助项目",
-      "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "网页修改项目前的工具选择和安全检查清单：确认需求、仓库状态、验证命令、截图、交付边界和暂停条件。",
-      "descriptionLength": 48,
-      "file": "content/blog/claude-code-vs-codex-web-editing-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "网页修改 AI 工具检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-vs-codex-web-editing-checklist",
-      "status": "published",
-      "title": "Claude Code 和 Codex 网页修改新手检查清单",
-      "titleLength": 30,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "网页修改项目前的范围判断草稿：用 Claude Code 和 Codex 辅助拆需求，但先确认任务边界、风险等级、验证条件和客户待补材料。",
-      "descriptionLength": 69,
-      "file": "content/blog/claude-code-vs-codex-web-editing-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "网页修改项目范围判断",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-vs-codex-web-editing-freelance-scope",
-      "status": "published",
-      "title": "Claude Code 和 Codex 网页修改使用前怎么判断是否适合",
-      "titleLength": 35,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理新手用 Claude Code 或 Codex 做网页修改时常见的错误：需求没拆清、没跑构建、忽略移动端、误碰敏感配置和交付说明不足。",
-      "descriptionLength": 69,
-      "file": "content/blog/claude-code-vs-codex-web-editing-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code Codex 网页修改错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-vs-codex-web-editing-mistakes",
-      "status": "published",
-      "title": "Claude Code 和 Codex 网页修改常见错误",
-      "titleLength": 28,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "给 AI 工具新手看的网页修改工具选择指南：什么时候用 Claude Code，什么时候用 Codex，如何判断任务范围、验证结果和交付风险。",
-      "descriptionLength": 71,
-      "file": "content/blog/claude-code-vs-codex-web-editing.mdx",
-      "issues": [],
-      "primaryKeyword": "Claude Code 和 Codex 网页修改",
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-vs-codex-web-editing",
-      "status": "published",
-      "title": "Claude Code 和 Codex 哪个适合网页修改",
-      "titleLength": 28,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "客户验收清单的检查版：交付前核对范围、文件、截图、验证命令、客户确认项、未覆盖范围和返工边界。",
-      "descriptionLength": 47,
-      "file": "content/blog/client-acceptance-checklist-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "客户验收清单检查",
-      "scope": [
-        "public"
-      ],
-      "slug": "client-acceptance-checklist-checklist",
-      "status": "published",
-      "title": "客户验收清单新手检查清单",
-      "titleLength": 12,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "给 AI 工具新手看的客户验收清单写法：交付前明确范围、文件、截图、测试结果、未覆盖内容和修改规则，减少返工争议。",
-      "descriptionLength": 57,
-      "file": "content/blog/client-acceptance-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "客户验收清单减少返工",
-      "scope": [
-        "public"
-      ],
-      "slug": "client-acceptance-checklist",
-      "status": "published",
-      "title": "客户验收清单怎么减少返工",
-      "titleLength": 12,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "客户需求沟通表的检查清单版本：确认目标、材料、范围、权限、验收、截止时间、修改次数和暂停条件。",
-      "descriptionLength": 47,
-      "file": "content/blog/client-requirement-form-questions-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "客户需求沟通表检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "client-requirement-form-questions-checklist",
-      "status": "published",
-      "title": "客户需求沟通表新手检查清单",
-      "titleLength": 13,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "给 AI 工具新手看的客户需求沟通表写法：先问目标、素材、权限、范围、验收和风险，再决定是否报价和交付。",
-      "descriptionLength": 52,
-      "file": "content/blog/client-requirement-form-questions.mdx",
-      "issues": [],
-      "primaryKeyword": "客户需求沟通表怎么问",
-      "scope": [
-        "public"
-      ],
-      "slug": "client-requirement-form-questions",
-      "status": "published",
-      "title": "客户需求沟通表怎么问才清楚",
-      "titleLength": 13,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "面向新手整理 Cloudflare Workers AI 入门路线，覆盖 Worker 调用模型、API、Vectorize、AI Gateway、部署、限额、日志和上线风险。",
-      "descriptionLength": 88,
-      "file": "content/blog/cloudflare-workers-ai-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Cloudflare Workers AI 入门",
-      "scope": [
-        "public"
-      ],
-      "slug": "cloudflare-workers-ai-beginner-guide",
-      "status": "published",
-      "title": "Cloudflare Workers AI 怎么开始：边缘 AI 接口、成本和数据边界",
-      "titleLength": 43,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "Codex 自动化开发前后的检查清单：确认需求、权限、工作区、修改范围、命令验证、人工复核和交付记录。",
-      "descriptionLength": 51,
-      "file": "content/blog/codex-automation-steps-not-skip-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 自动化开发检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-automation-steps-not-skip-checklist",
-      "status": "published",
-      "title": "Codex 自动化开发流程新手检查清单",
-      "titleLength": 19,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "给 AI 工具新手看的 Codex 自动化开发项目范围判断：确认任务是否低风险、能否验证、是否需要权限、哪些步骤不能省。",
-      "descriptionLength": 60,
-      "file": "content/blog/codex-automation-steps-not-skip-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 自动化开发项目范围",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-automation-steps-not-skip-freelance-scope",
-      "status": "published",
-      "title": "Codex 自动化开发使用前怎么判断是否适合",
-      "titleLength": 22,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理新手用 Codex 做自动化开发时常见的错误：没确认需求、没看工作区、盲目执行命令、没跑验证、交付记录不足。",
-      "descriptionLength": 56,
-      "file": "content/blog/codex-automation-steps-not-skip-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 自动化开发错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-automation-steps-not-skip-mistakes",
-      "status": "published",
-      "title": "Codex 自动化开发流程常见错误",
-      "titleLength": 17,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份给 AI 工具新手使用的 Codex 密钥安全检查清单，覆盖材料接收、脱敏、工具上下文、diff 审核、提交记录、交付说明和人工复核。",
-      "descriptionLength": 69,
-      "file": "content/blog/codex-avoid-secret-leak-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 密钥安全检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-avoid-secret-leak-checklist",
-      "status": "published",
-      "title": "Codex 处理客户项目的密钥安全检查清单",
-      "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "给 AI 工具新手的范围判断指南：遇到密钥、账号权限、生产数据、支付配置和后台授权时，如何判断能不能接、怎么拆范围、哪些事项必须客户确认。",
-      "descriptionLength": 69,
-      "file": "content/blog/codex-avoid-secret-leak-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 密钥权限任务能不能接",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-avoid-secret-leak-freelance-scope",
-      "status": "published",
-      "title": "涉及密钥和权限的 Codex 任务能不能接",
-      "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 AI 工具新手使用 Codex 时常见的密钥泄露错误：复制 .env、提交日志、把 token 写进示例、忽略 git 历史、用生产环境测试，以及发现问题后的处理顺序。",
-      "descriptionLength": 87,
-      "file": "content/blog/codex-avoid-secret-leak-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 密钥泄露错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-avoid-secret-leak-mistakes",
-      "status": "published",
-      "title": "Codex 做项目时常见密钥泄露错误和修复顺序",
-      "titleLength": 23,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "给 AI 工具新手看的 Codex 密钥安全指南：如何识别密钥、脱敏材料、限制工具可见范围、检查 diff、处理提交记录，并在高风险操作前暂停让人工确认。",
-      "descriptionLength": 77,
-      "file": "content/blog/codex-avoid-secret-leak.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 避免密钥泄露",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-avoid-secret-leak",
-      "status": "published",
-      "title": "Codex 做项目时如何避免把密钥写进代码",
-      "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份给 AI 工具新手使用的 Codex 修 bug 检查清单，覆盖原始证据、工作区状态、修改范围、验证命令、回滚点、交付说明和人工复核。",
-      "descriptionLength": 69,
-      "file": "content/blog/codex-bugfix-rollback-record-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 修 bug 检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-bugfix-rollback-record-checklist",
-      "status": "published",
-      "title": "Codex 修 bug 回滚记录检查清单",
-      "titleLength": 20,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "给 AI 工具新手的 Codex 修 bug 范围判断指南：如何区分低风险小修、高风险生产问题、需要客户确认的授权事项，并把验证和回滚写进报价范围。",
-      "descriptionLength": 74,
-      "file": "content/blog/codex-bugfix-rollback-record-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 修 bug 任务能不能接",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-bugfix-rollback-record-freelance-scope",
-      "status": "published",
-      "title": "Codex 修 bug 任务使用前怎么判断是否适合",
-      "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 AI 工具新手用 Codex 修 bug 时常见错误：不看工作区、缺复现记录、改动范围过大、没有验证命令、忘记回滚点，以及发现问题后的修复顺序。",
-      "descriptionLength": 75,
-      "file": "content/blog/codex-bugfix-rollback-record-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 修 bug 回滚错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-bugfix-rollback-record-mistakes",
-      "status": "published",
-      "title": "Codex 修 bug 回滚记录常见错误和修复顺序",
-      "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "给 AI 工具新手看的 Codex 修 bug 回滚记录流程：修复前保存证据、确认工作区、限定修改范围、记录验证命令、保留回滚点，并在高风险变更前暂停复核。",
-      "descriptionLength": 78,
-      "file": "content/blog/codex-bugfix-rollback-record.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 修 bug 回滚记录",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-bugfix-rollback-record",
-      "status": "published",
-      "title": "Codex 修 bug 时如何保留回滚记录",
-      "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份给 AI 工具新手使用的客户需求澄清清单，覆盖目标、材料、验收、权限、风险、报价边界、交付记录和需要客户确认的事项。",
-      "descriptionLength": 60,
-      "file": "content/blog/codex-client-requirement-questions-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 客户需求澄清清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-client-requirement-questions-checklist",
-      "status": "published",
-      "title": "Codex 客户需求澄清问题检查清单",
-      "titleLength": 18,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "给 AI 工具新手的需求边界判断指南：客户需求不清楚时，如何判断能不能接、哪些问题必须补问、哪些风险要暂停，以及怎么写报价前提。",
-      "descriptionLength": 64,
-      "file": "content/blog/codex-client-requirement-questions-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 需求不清楚能不能接",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-client-requirement-questions-freelance-scope",
-      "status": "published",
-      "title": "Codex 需求不清楚的任务使用前怎么判断是否适合",
-      "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 AI 工具新手用 Codex 处理客户需求时常见错误：没问验收标准、没确认权限、直接报价、把模糊需求交给工具、忽略风险，以及补救顺序。",
-      "descriptionLength": 70,
-      "file": "content/blog/codex-client-requirement-questions-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 需求澄清错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-client-requirement-questions-mistakes",
-      "status": "published",
-      "title": "Codex 客户需求澄清常见错误和修复顺序",
-      "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "给 AI 工具新手看的 Codex 客户需求澄清指南：如何围绕目标、材料、权限、验收、风险和交付边界提问，避免在需求不清楚时直接报价或动手。",
-      "descriptionLength": 70,
-      "file": "content/blog/codex-client-requirement-questions.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 客户需求怎么提问",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-client-requirement-questions",
-      "status": "published",
-      "title": "Codex 处理客户需求不清楚时怎么提问",
-      "titleLength": 20,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手了解 Codex 时，不要先急着项目。先确认它能帮你做什么、不能替你做什么，再用一个小项目练习需求拆解、代码修改、测试和交付记录。",
-      "descriptionLength": 67,
-      "file": "content/blog/codex-codex-4-31.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 是什么新手怎么开始",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-codex-4-31",
-      "status": "published",
-      "title": "Codex 是什么：新手怎么开始",
-      "titleLength": 16,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份给 AI 工具新手使用的 Codex 网页 UI 修改检查清单，覆盖需求确认、截图留证、文件范围、样式来源、响应式验证、交付记录和人工复核。",
-      "descriptionLength": 72,
-      "file": "content/blog/codex-edit-existing-ui-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex UI 修改检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-edit-existing-ui-checklist",
-      "status": "published",
-      "title": "Codex 修改现有网页 UI 检查清单",
-      "titleLength": 20,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "给 AI 工具新手的 Codex UI 修改范围判断指南：如何区分小范围视觉修复、模糊重设计、高风险页面，以及怎么把截图、响应式验证和未覆盖范围写进报价。",
-      "descriptionLength": 77,
-      "file": "content/blog/codex-edit-existing-ui-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex UI 修改任务能不能接",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-edit-existing-ui-freelance-scope",
-      "status": "published",
-      "title": "Codex 修改现有网页 UI 使用前怎么判断是否适合",
-      "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 AI 工具新手用 Codex 修改现有网页 UI 时常见错误：没留截图、改动范围过大、忽略响应式、破坏设计系统、没写交付记录，以及补救顺序。",
-      "descriptionLength": 73,
-      "file": "content/blog/codex-edit-existing-ui-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 修改 UI 常见错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-edit-existing-ui-mistakes",
-      "status": "published",
-      "title": "Codex 修改现有网页 UI 常见错误和修复顺序",
-      "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "Codex 新手第一天检查清单：按环境、提问、最小修改、验证、记录和风险红线六步完成一次低风险练习。",
-      "descriptionLength": 50,
-      "file": "content/blog/codex-first-day-guide-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 是什么，新手第一天应该怎么用：新手检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-first-day-guide-checklist",
-      "status": "published",
-      "title": "Codex 是什么，新手第一天应该怎么用：新手检查清单",
-      "titleLength": 27,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "Codex 新手项目练习前判断指南：第一天哪些任务不能接，哪些练习后可以尝试，报价前必须确认哪些材料和风险。",
-      "descriptionLength": 54,
-      "file": "content/blog/codex-first-day-guide-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 是什么，新手第一天应该怎么用：使用前怎么判断是否适合",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-first-day-guide-freelance-scope",
-      "status": "published",
-      "title": "Codex 是什么，新手第一天应该怎么用：使用前怎么判断是否适合",
-      "titleLength": 32,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "一份给 AI 工具新手使用的 Codex + GitHub 检查清单，覆盖分支、diff、敏感文件、CI、提交信息、PR 描述、客户确认和回滚记录。",
-      "descriptionLength": 74,
-      "file": "content/blog/codex-github-workflow-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex GitHub 提交检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-github-workflow-checklist",
-      "status": "published",
-      "title": "Codex GitHub 提交代码检查清单",
-      "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "给 AI 工具新手的 Codex + GitHub 项目范围判断指南：如何区分普通代码提交、高风险仓库权限、CI/部署变更，并把分支、PR、验证和客户确认写进报价。",
-      "descriptionLength": 82,
-      "file": "content/blog/codex-github-workflow-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex GitHub 提交任务能不能接",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-github-workflow-freelance-scope",
-      "status": "published",
-      "title": "Codex GitHub 提交任务使用前怎么判断是否适合",
-      "titleLength": 28,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 AI 工具新手用 Codex 和 GitHub 提交代码时常见错误：直接推主分支、混入无关改动、没跑检查、提交敏感文件、PR 描述空泛，以及补救顺序。",
-      "descriptionLength": 78,
-      "file": "content/blog/codex-github-workflow-mistakes.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex GitHub 提交错误",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-github-workflow-mistakes",
-      "status": "published",
-      "title": "Codex GitHub 工作流常见错误和修复顺序",
-      "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "给 AI 工具新手看的 Codex + GitHub 提交流程：确认工作区、创建分支、限定修改范围、查看 diff、运行检查、写提交说明、开 PR，并避免直接推主分支。",
-      "descriptionLength": 84,
-      "file": "content/blog/codex-github-workflow.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex GitHub 提交代码",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-github-workflow",
-      "status": "published",
-      "title": "Codex 和 GitHub 怎么配合提交代码",
-      "titleLength": 23,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手用 Codex 接触 Next.js 或 Node.js 项目时，npm install 报错很常见。本文用可执行步骤解释如何判断 Node 版本、依赖冲突、网络和权限问题，避免在没有把握时承诺客户。",
-      "descriptionLength": 102,
-      "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex npm install 报错怎么办",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-npm-install-error-beginner-fix",
-      "status": "published",
-      "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
-      "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "用项目视角判断作品集素材整理任务能不能接：看客户授权、素材完整度、页面范围、截图处理、案例真实性和交付边界。",
-      "descriptionLength": 54,
-      "file": "content/blog/codex-portfolio-page-assets-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "作品集素材整理项目能不能接",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-portfolio-page-assets-freelance-scope",
-      "status": "published",
-      "title": "作品集素材整理项目能不能接",
-      "titleLength": 13,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "一份 Codex 项目启动新手清单，覆盖目标、仓库、分支、依赖、测试命令、权限边界、AI 提示词、交付记录和暂停条件。",
-      "descriptionLength": 59,
-      "file": "content/blog/codex-project-start-checklist-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 项目启动检查表新手清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-project-start-checklist-checklist",
-      "status": "published",
-      "title": "Codex 项目启动检查表：新手清单",
-      "titleLength": 18,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份给新手的 Codex 代码人工审核清单，覆盖需求、差异、依赖、测试、安全、交付记录和项目边界。",
-      "descriptionLength": 49,
-      "file": "content/blog/codex-review-generated-code-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Codex 生成代码后的人工审核检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-review-generated-code-checklist",
-      "status": "published",
-      "title": "Codex 生成代码后的人工审核检查清单",
-      "titleLength": 20,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "面向新手整理 CrewAI Agent 部署前后的检查点，覆盖 agent、task、crew、flow、工具、人工介入、日志、成本和生产上线边界。",
-      "descriptionLength": 74,
-      "file": "content/blog/crewai-agent-deployment-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "CrewAI Agent 部署",
-      "scope": [
-        "public"
-      ],
-      "slug": "crewai-agent-deployment-beginner-guide",
-      "status": "published",
-      "title": "CrewAI Agent 怎么部署：从 Crew、Task 到生产监控边界",
-      "titleLength": 37,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手比较 Dify、Coze、Flowise 等 Agent 和知识库搭建工具的选择思路，覆盖使用场景、权限、部署、数据和维护边界。",
-      "descriptionLength": 68,
-      "file": "content/blog/dify-coze-flowise-agent-builder-comparison.mdx",
-      "issues": [],
-      "primaryKeyword": "Dify Coze Flowise 怎么选",
-      "scope": [
-        "public"
-      ],
-      "slug": "dify-coze-flowise-agent-builder-comparison",
-      "status": "published",
-      "title": "Dify、Coze、Flowise 怎么选：做 Agent 和知识库前先看边界",
-      "titleLength": 39,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Dify Docker Compose 自部署前后的检查点，覆盖服务器、环境变量、数据库、向量库、模型供应商、备份和安全边界。",
-      "descriptionLength": 70,
-      "file": "content/blog/dify-docker-compose-self-host-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Dify Docker Compose 部署",
-      "scope": [
-        "public"
-      ],
-      "slug": "dify-docker-compose-self-host-guide",
-      "status": "published",
-      "title": "Dify Docker Compose 自部署怎么做：新手先看这份边界清单",
-      "titleLength": 37,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Dify 接入 Ollama 本地模型的检查点，覆盖 Ollama 服务、模型供应商配置、Docker 网络、LLM 节点、知识库和上线边界。",
-      "descriptionLength": 78,
-      "file": "content/blog/dify-ollama-local-model-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Dify 接入 Ollama",
-      "scope": [
-        "public"
-      ],
-      "slug": "dify-ollama-local-model-guide",
-      "status": "published",
-      "title": "Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试",
-      "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Dify 接入 OpenAI API 的流程和风险，覆盖模型供应商、API Key、LLM 节点、知识库、费用控制、日志和上线检查。",
-      "descriptionLength": 73,
-      "file": "content/blog/dify-openai-api-provider-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Dify 接 OpenAI API",
-      "scope": [
-        "public"
-      ],
-      "slug": "dify-openai-api-provider-guide",
-      "status": "published",
-      "title": "Dify 怎么接 OpenAI API：模型供应商、LLM 节点和费用边界",
-      "titleLength": 37,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Dify 工作流错误处理方法，覆盖输入变量校验、节点失败、条件分支、重试、人工兜底和上线前测试。",
-      "descriptionLength": 55,
-      "file": "content/blog/dify-workflow-error-handling-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Dify 工作流错误处理",
-      "scope": [
-        "public"
-      ],
-      "slug": "dify-workflow-error-handling-guide",
-      "status": "published",
-      "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
-      "titleLength": 29,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "解释 Dify Workflow 与 Agent 的选择方法，覆盖固定流程、自由工具调用、知识库问答、人工审核、成本和上线风险。",
-      "descriptionLength": 64,
-      "file": "content/blog/dify-workflow-vs-agent-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Dify Workflow 和 Agent 区别",
-      "scope": [
-        "public"
-      ],
-      "slug": "dify-workflow-vs-agent-guide",
-      "status": "published",
-      "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
-      "titleLength": 40,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理企业 IM 接 AI Agent 的通用方法，覆盖消息入口、用户身份、群聊权限、知识库、审批、日志和人工接管。",
-      "descriptionLength": 57,
-      "file": "content/blog/enterprise-im-ai-agent-integration-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "企业微信 飞书 Slack AI Agent",
-      "scope": [
-        "public"
-      ],
-      "slug": "enterprise-im-ai-agent-integration-guide",
-      "status": "published",
-      "title": "企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管",
-      "titleLength": 39,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 FastGPT 知识库和自部署入门检查点，覆盖 Docker Compose、模型接口、向量库、知识库参数、测试集和交付风险。",
-      "descriptionLength": 70,
-      "file": "content/blog/fastgpt-knowledge-base-deployment-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "FastGPT 知识库部署",
-      "scope": [
-        "public"
-      ],
-      "slug": "fastgpt-knowledge-base-deployment-guide",
-      "status": "published",
-      "title": "FastGPT 知识库怎么部署：新手先分清自部署和检索参数",
-      "titleLength": 29,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "新手给第一个 Upwork 项目报价时，不要只看别人报多少。本文从工时、沟通成本、平台抽成、修改次数和交付风险出发，给你一个谨慎的报价检查流程。",
-      "descriptionLength": 72,
-      "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "第一个 Upwork 项目怎么报价",
-      "scope": [
-        "public"
-      ],
-      "slug": "first-upwork-project-pricing-checklist",
-      "status": "published",
-      "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
-      "titleLength": 28,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Flowise 接 Ollama 做本地 RAG 的检查清单，覆盖本地模型、文档、embedding、向量库、检索、回答和安全边界。",
-      "descriptionLength": 73,
-      "file": "content/blog/flowise-ollama-local-rag-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Flowise Ollama RAG",
-      "scope": [
-        "public"
-      ],
-      "slug": "flowise-ollama-local-rag-checklist",
-      "status": "published",
-      "title": "Flowise 接 Ollama 做本地 RAG：新手先跑通最小链路",
-      "titleLength": 34,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份给新手使用的自由职业每周复盘检查清单，帮助记录已完成事项、证据、练习、客户待确认、风险和下周三件事。",
-      "descriptionLength": 52,
-      "file": "content/blog/freelance-weekly-review-template-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "自由职业每周复盘检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "freelance-weekly-review-template-checklist",
-      "status": "published",
-      "title": "自由职业每周复盘检查清单",
-      "titleLength": 12,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "面向新手整理 Gemini API 接入 Next.js 的流程，覆盖 API Key、服务端调用、环境变量、多模态输入、错误处理、费用和上线检查。",
-      "descriptionLength": 74,
-      "file": "content/blog/gemini-api-nextjs-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Gemini API Next.js",
-      "scope": [
-        "public"
-      ],
-      "slug": "gemini-api-nextjs-guide",
-      "status": "published",
-      "title": "Gemini API 怎么接 Next.js：从 API Key 到服务端 Route Handler",
-      "titleLength": 51,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Docker 使用 NVIDIA GPU 的部署检查点，覆盖驱动、NVIDIA Container Toolkit、Docker runtime、nvidia-smi、CUDA 镜像和排错。",
-      "descriptionLength": 102,
-      "file": "content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Docker 使用 NVIDIA GPU",
-      "scope": [
-        "public"
-      ],
-      "slug": "gpu-docker-nvidia-container-toolkit-guide",
-      "status": "published",
-      "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
-      "titleLength": 48,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Groq API 接入和使用边界，覆盖 OpenAI-compatible 接口、模型选择、响应速度、限速、费用、应用接入和上线检查。",
-      "descriptionLength": 74,
-      "file": "content/blog/groq-api-fast-llm-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Groq API 接入",
-      "scope": [
-        "public"
-      ],
-      "slug": "groq-api-fast-llm-guide",
-      "status": "published",
-      "title": "Groq API 怎么接入：高速推理适合什么 AI 应用",
-      "titleLength": 28,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向医疗行政和健康服务团队整理 AI 提示词模板，覆盖资料摘要、患者宣教、随访问卷、内部 SOP 和人工专业复核边界。",
-      "descriptionLength": 59,
-      "file": "content/blog/healthcare-admin-ai-prompts-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "医疗 AI 提示词",
-      "scope": [
-        "public"
-      ],
-      "slug": "healthcare-admin-ai-prompts-guide",
-      "status": "published",
-      "title": "医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写",
-      "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Helicone LLM 观测入门，覆盖 AI Gateway、OpenAI-compatible 接口、日志、成本、缓存、限流、错误排查和隐私边界。",
-      "descriptionLength": 82,
-      "file": "content/blog/helicone-llm-observability-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Helicone LLM Observability",
-      "scope": [
-        "public"
-      ],
-      "slug": "helicone-llm-observability-guide",
-      "status": "published",
-      "title": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住",
-      "titleLength": 39,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向 HR 和招聘团队整理 AI 提示词模板，覆盖岗位 JD、简历初筛、面试题、候选人沟通、入职培训和人工公平复核。",
-      "descriptionLength": 58,
-      "file": "content/blog/hr-recruiting-ai-prompts-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "HR AI 提示词",
-      "scope": [
-        "public"
-      ],
-      "slug": "hr-recruiting-ai-prompts-guide",
-      "status": "published",
-      "title": "人力招聘 AI 提示词模板：JD、简历初筛、面试题和培训材料",
-      "titleLength": 30,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Hugging Face Spaces 部署 AI Demo 的路线，覆盖 Gradio、Docker、Secrets、模型文件、公开访问、成本和客户演示边界。",
-      "descriptionLength": 87,
-      "file": "content/blog/huggingface-spaces-ai-demo-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Hugging Face Spaces 部署",
-      "scope": [
-        "public"
-      ],
-      "slug": "huggingface-spaces-ai-demo-guide",
-      "status": "published",
-      "title": "Hugging Face Spaces 怎么部署 AI Demo：Gradio、Docker 和公开边界",
-      "titleLength": 52,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Hugging Face Text Generation Inference 部署路线，覆盖 Docker、GPU、模型 ID、Messages API、流式输出、性能和上线风险。",
-      "descriptionLength": 97,
-      "file": "content/blog/huggingface-tgi-deployment-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Hugging Face TGI 部署",
-      "scope": [
-        "public"
-      ],
-      "slug": "huggingface-tgi-deployment-guide",
-      "status": "published",
-      "title": "Hugging Face TGI 怎么部署：Text Generation Inference 入门检查表",
-      "titleLength": 53,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "说明 AI 知识库权限设计的基础方法，覆盖文档分级、用户角色、检索过滤、引用来源、日志、删除和上线验收。",
-      "descriptionLength": 52,
-      "file": "content/blog/knowledge-base-permission-design-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "AI 知识库权限",
-      "scope": [
-        "public"
-      ],
-      "slug": "knowledge-base-permission-design-guide",
-      "status": "published",
-      "title": "AI 知识库权限怎么设计：别让检索结果越权",
-      "titleLength": 21,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "面向新手整理 Kubernetes 部署 GPU LLM 的基础检查点，覆盖 NVIDIA device plugin、nvidia.com/gpu、节点驱动、Pod 资源、日志和生产边界。",
-      "descriptionLength": 95,
-      "file": "content/blog/kubernetes-gpu-llm-deployment-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Kubernetes GPU 大模型部署",
-      "scope": [
-        "public"
-      ],
-      "slug": "kubernetes-gpu-llm-deployment-guide",
-      "status": "published",
-      "title": "Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界",
-      "titleLength": 47,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 LangChain 做 RAG 的入门流程，覆盖文档加载、切分、embedding、向量库、retriever、回答链、评测和上线边界。",
-      "descriptionLength": 75,
-      "file": "content/blog/langchain-rag-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "LangChain RAG",
-      "scope": [
-        "public"
-      ],
-      "slug": "langchain-rag-beginner-guide",
-      "status": "published",
-      "title": "LangChain 做 RAG 怎么开始：新手先跑通检索链路",
-      "titleLength": 30,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 LangGraph Agent 入门思路，覆盖状态图、工具调用、长流程、人工介入、可观测性、评测和生产部署边界。",
-      "descriptionLength": 63,
-      "file": "content/blog/langgraph-agent-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "LangGraph Agent 入门",
-      "scope": [
-        "public"
-      ],
-      "slug": "langgraph-agent-beginner-guide",
-      "status": "published",
-      "title": "LangGraph Agent 怎么入门：把状态、工具和人工节点先想清楚",
-      "titleLength": 36,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 LangSmith 观测和评测入门，覆盖 tracing、runs、datasets、evaluations、LangChain/LangGraph 应用、成本和上线排查。",
-      "descriptionLength": 93,
-      "file": "content/blog/langsmith-observability-evaluation-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "LangSmith Observability",
-      "scope": [
-        "public"
-      ],
-      "slug": "langsmith-observability-evaluation-guide",
-      "status": "published",
-      "title": "LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent",
-      "titleLength": 38,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 LiteLLM Proxy 的部署和使用边界，覆盖 OpenAI-compatible 接口、模型路由、API Key、预算、日志、团队使用和上线风险。",
-      "descriptionLength": 83,
-      "file": "content/blog/litellm-proxy-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "LiteLLM Proxy 部署",
-      "scope": [
-        "public"
-      ],
-      "slug": "litellm-proxy-beginner-guide",
-      "status": "published",
-      "title": "LiteLLM Proxy 怎么部署：统一多个模型 API 前先管好预算和密钥",
-      "titleLength": 39,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手解释 LlamaIndex 做 RAG 的基本流程，覆盖 Document、Node、索引、检索、引用、评测和知识库维护边界。",
-      "descriptionLength": 67,
-      "file": "content/blog/llamaindex-rag-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "LlamaIndex RAG",
-      "scope": [
-        "public"
-      ],
-      "slug": "llamaindex-rag-beginner-guide",
-      "status": "published",
-      "title": "LlamaIndex 做 RAG 怎么开始：Document、Node 和检索",
-      "titleLength": 39,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理大模型 API 限流与重试设计，覆盖 429 错误、速率限制、指数退避、请求队列、缓存、降级模型和用户提示。",
-      "descriptionLength": 56,
-      "file": "content/blog/llm-api-rate-limit-retry-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "大模型 API 限流重试",
-      "scope": [
-        "public"
-      ],
-      "slug": "llm-api-rate-limit-retry-guide",
-      "status": "published",
-      "title": "大模型 API 限流和重试怎么做：429、队列、退避和降级方案",
-      "titleLength": 31,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 LLM 成本监控看板设计方法，覆盖用户、功能、模型、token、错误率、缓存、预算告警和客户项目拆账。",
-      "descriptionLength": 54,
-      "file": "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "大模型成本监控",
-      "scope": [
-        "public"
-      ],
-      "slug": "llm-cost-monitoring-dashboard-guide",
-      "status": "published",
-      "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
-      "titleLength": 25,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "解释本地部署大模型的入门路径，覆盖硬件要求、模型大小、量化、推理工具、本地 API、隐私边界和常见误区。",
-      "descriptionLength": 52,
-      "file": "content/blog/local-llm-deployment-beginner.mdx",
-      "issues": [],
-      "primaryKeyword": "本地部署大模型",
-      "scope": [
-        "public"
-      ],
-      "slug": "local-llm-deployment-beginner",
-      "status": "published",
-      "title": "本地部署大模型怎么开始：新手先看硬件、模型和用途",
-      "titleLength": 24,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "整理 MCP Server 部署安全清单，覆盖本地与远程传输、工具白名单、凭据管理、权限边界、日志追踪和上线前测试。",
-      "descriptionLength": 58,
-      "file": "content/blog/mcp-server-deployment-security-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "MCP Server 部署安全",
-      "scope": [
-        "public"
-      ],
-      "slug": "mcp-server-deployment-security-checklist",
-      "status": "published",
-      "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
-      "titleLength": 36,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Modal Serverless GPU 部署 LLM 的路线，覆盖 image、function、GPU、volume、模型缓存、endpoint、费用和上线检查。",
-      "descriptionLength": 90,
-      "file": "content/blog/modal-serverless-gpu-llm-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Modal Serverless GPU LLM",
-      "scope": [
-        "public"
-      ],
-      "slug": "modal-serverless-gpu-llm-guide",
-      "status": "published",
-      "title": "Modal 怎么部署 Serverless GPU LLM：代码化环境和冷启动先评估",
-      "titleLength": 42,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "讲清多模型 Router 和 fallback 的设计方法，覆盖任务分类、主备模型、限流、成本、质量评估、日志和用户提示。",
-      "descriptionLength": 61,
-      "file": "content/blog/multi-model-router-fallback-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "多模型 Router 降级",
-      "scope": [
-        "public"
-      ],
-      "slug": "multi-model-router-fallback-guide",
-      "status": "published",
-      "title": "多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估",
-      "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "讲清 n8n AI Agent 接 RAG 和记忆的思路，覆盖知识库检索、短期上下文、长期偏好、状态存储、权限和测试。",
-      "descriptionLength": 59,
-      "file": "content/blog/n8n-ai-agent-rag-memory-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "n8n AI Agent 知识库记忆",
-      "scope": [
-        "public"
-      ],
-      "slug": "n8n-ai-agent-rag-memory-guide",
-      "status": "published",
-      "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
-      "titleLength": 35,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 n8n AI Agent 接 Webhook 的上线清单，覆盖触发方式、鉴权、输入校验、队列、失败重试、日志和人工接管。",
-      "descriptionLength": 63,
-      "file": "content/blog/n8n-ai-agent-webhook-production-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "n8n AI Agent Webhook",
-      "scope": [
-        "public"
-      ],
-      "slug": "n8n-ai-agent-webhook-production-guide",
-      "status": "published",
-      "title": "n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试",
-      "titleLength": 41,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "从项目角度判断 npm command not found 是否适合新手处理：区分本地环境、客户设备、CI、部署平台和项目包管理器，确认权限后再决定报价范围。",
-      "descriptionLength": 79,
-      "file": "content/blog/npm-command-not-found-fix-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "npm command not found 项目前怎么判断",
-      "scope": [
-        "public"
-      ],
-      "slug": "npm-command-not-found-fix-freelance-scope",
-      "status": "published",
-      "title": "npm command not found 使用前怎么判断是否适合",
-      "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 Open WebUI Functions 与 Pipelines 的使用边界，覆盖 provider 接入、RAG、消息过滤、外部工作流、安全和部署检查。",
-      "descriptionLength": 80,
-      "file": "content/blog/open-webui-functions-pipelines-deployment-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Open WebUI Functions Pipelines",
-      "scope": [
-        "public"
-      ],
-      "slug": "open-webui-functions-pipelines-deployment-guide",
-      "status": "published",
-      "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
-      "titleLength": 52,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Open WebUI 搭配 Ollama 的 Docker 部署思路，覆盖本机模型、Docker 网络、端口、模型连接、知识库测试和上线前检查。",
-      "descriptionLength": 79,
-      "file": "content/blog/open-webui-ollama-docker-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Open WebUI Ollama 部署",
-      "scope": [
-        "public"
-      ],
-      "slug": "open-webui-ollama-docker-guide",
-      "status": "published",
-      "title": "Open WebUI + Ollama 怎么部署：本地大模型网页聊天入门",
-      "titleLength": 36,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 OpenAI Agents SDK 入门路线，覆盖 agent、tools、handoffs、running agents、tracing、敏感数据、评测和上线边界。",
-      "descriptionLength": 90,
-      "file": "content/blog/openai-agents-sdk-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "OpenAI Agents SDK 入门",
-      "scope": [
-        "public"
-      ],
-      "slug": "openai-agents-sdk-beginner-guide",
-      "status": "published",
-      "title": "OpenAI Agents SDK 怎么入门：Tools、Handoffs 和 Tracing 先分清",
-      "titleLength": 51,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 OpenAI API 接入 Next.js 的基本流程，覆盖服务端 Route Handler、环境变量、Responses API、错误处理、成本和安全边界。",
-      "descriptionLength": 87,
-      "file": "content/blog/openai-api-nextjs-route-handler-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "OpenAI API Next.js",
-      "scope": [
-        "public"
-      ],
-      "slug": "openai-api-nextjs-route-handler-guide",
-      "status": "published",
-      "title": "OpenAI API 接入 Next.js 怎么做：Route Handler 新手清单",
-      "titleLength": 44,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 OpenRouter API 接入思路，覆盖 OpenAI-compatible 调用、模型选择、API Key、费用、路由、应用接入和上线风险。",
-      "descriptionLength": 80,
-      "file": "content/blog/openrouter-api-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "OpenRouter API 接入",
-      "scope": [
-        "public"
-      ],
-      "slug": "openrouter-api-beginner-guide",
-      "status": "published",
-      "title": "OpenRouter API 怎么接入：统一模型入口不是只换 Base URL",
-      "titleLength": 39,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "从项目角度判断 package-lock.json 冲突是否适合新手处理：确认包管理器、分支权限、依赖变更来源、验证命令、客户维护者确认和不包含事项。",
-      "descriptionLength": 75,
-      "file": "content/blog/package-lock-conflict-fix-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "package lock 冲突项目前怎么判断",
-      "scope": [
-        "public"
-      ],
-      "slug": "package-lock-conflict-fix-freelance-scope",
-      "status": "published",
-      "title": "package lock 冲突使用前怎么判断是否适合",
-      "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "一份收款账户资料一致性检查清单，帮助新手在收海外款前核对平台账户、合同主体、发票、税务、银行和客户付款说明。",
-      "descriptionLength": 54,
-      "file": "content/blog/payment-account-info-mismatch-risk-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "收款账户资料不一致风险：新手检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "payment-account-info-mismatch-risk-checklist",
-      "status": "published",
-      "title": "收款账户资料不一致风险：新手检查清单",
-      "titleLength": 18,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "Payoneer、Wise、PayPal 都可能用于跨境收款，但适用场景、费用、平台支持和账户风险不同。本文用新手能理解的方式说明差异，并提醒先遵守平台内收款规则。",
-      "descriptionLength": 82,
-      "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
-      "issues": [],
-      "primaryKeyword": "Payoneer Wise PayPal 区别",
-      "scope": [
-        "public"
-      ],
-      "slug": "payoneer-wise-paypal-beginner-comparison",
-      "status": "published",
-      "title": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
-      "titleLength": 39,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Pinecone 做 RAG 的入门路线，覆盖 index、embedding、metadata、query、Top K、权限、费用、测试集和上线边界。",
-      "descriptionLength": 83,
-      "file": "content/blog/pinecone-rag-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Pinecone RAG",
-      "scope": [
-        "public"
-      ],
-      "slug": "pinecone-rag-beginner-guide",
-      "status": "published",
-      "title": "Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试",
-      "titleLength": 37,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "从项目角度判断 port already in use 是否适合新手处理：区分本地开发、客户设备、远程服务器、Docker 和部署平台，确认权限后再决定范围。",
-      "descriptionLength": 79,
-      "file": "content/blog/port-already-in-use-fix-freelance-scope.mdx",
-      "issues": [],
-      "primaryKeyword": "port already in use 项目前怎么判断",
-      "scope": [
-        "public"
-      ],
-      "slug": "port-already-in-use-fix-freelance-scope",
-      "status": "published",
-      "title": "port already in use 使用前怎么判断是否适合",
-      "titleLength": 31,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 promptfoo 做 LLM 评测的路线，覆盖配置文件、providers、prompts、test cases、assertions、red teaming 和 CI 检查。",
-      "descriptionLength": 96,
-      "file": "content/blog/promptfoo-llm-evaluation-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "promptfoo LLM 评测",
-      "scope": [
-        "public"
-      ],
-      "slug": "promptfoo-llm-evaluation-beginner-guide",
-      "status": "published",
-      "title": "promptfoo 怎么做 LLM 评测：提示词、模型和 Agent 都要有测试用例",
-      "titleLength": 42,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "报价邮件发出前，要检查是否复述需求、列出未知信息、拆出诊断阶段、避免过度承诺，并说明客户需要补充哪些材料。",
-      "descriptionLength": 53,
-      "file": "content/blog/quote-email-uncertain-scope-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "报价邮件模板怎么表达不确定范围：新手检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "quote-email-uncertain-scope-checklist",
-      "status": "published",
-      "title": "报价邮件模板怎么表达不确定范围：新手检查清单",
-      "titleLength": 22,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "讲清 RAG 引用来源怎么设计，覆盖文档元数据、chunk 编号、页码、来源片段、回答引用、可信度和用户可追溯体验。",
-      "descriptionLength": 58,
-      "file": "content/blog/rag-citation-source-trace-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "RAG 引用来源",
-      "scope": [
-        "public"
-      ],
-      "slug": "rag-citation-source-trace-guide",
-      "status": "published",
-      "title": "RAG 怎么显示引用来源：文档名、页码、片段和可信度",
-      "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理知识库文档上传前的清洗步骤，覆盖目录、页眉页脚、扫描件、表格、重复段落、版本号、权限和测试问题。",
-      "descriptionLength": 50,
-      "file": "content/blog/rag-document-cleaning-before-upload-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "RAG 文档清洗",
-      "scope": [
-        "public"
-      ],
-      "slug": "rag-document-cleaning-before-upload-guide",
-      "status": "published",
-      "title": "RAG 文档上传前怎么清洗：目录、页眉、表格、重复段落和版本号",
-      "titleLength": 31,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手解释 RAG 知识库搭建流程，覆盖资料整理、文档切分、向量检索、权限、引用、评测和上线风险。",
-      "descriptionLength": 50,
-      "file": "content/blog/rag-knowledge-base-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "RAG 知识库",
-      "scope": [
-        "public"
-      ],
-      "slug": "rag-knowledge-base-beginner-guide",
-      "status": "published",
-      "title": "RAG 知识库怎么搭：文档、切分、检索和回答复核",
-      "titleLength": 24,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "面向新手整理 Ragas 做 RAG 评测的路线，覆盖 metrics、测试集、context precision/recall、faithfulness、answer relevance 和人工复核。",
-      "descriptionLength": 101,
-      "file": "content/blog/ragas-rag-evaluation-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Ragas RAG 评测",
-      "scope": [
-        "public"
-      ],
-      "slug": "ragas-rag-evaluation-beginner-guide",
-      "status": "published",
-      "title": "Ragas 怎么评测 RAG：Faithfulness、Context 和测试集先建好",
-      "titleLength": 43,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Ray Serve LLM 部署路线，覆盖 Ray cluster、Serve、vLLM backend、OpenAI-compatible app、多节点、多模型和生产边界。",
-      "descriptionLength": 95,
-      "file": "content/blog/ray-serve-llm-deployment-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Ray Serve LLM 部署",
-      "scope": [
-        "public"
-      ],
-      "slug": "ray-serve-llm-deployment-guide",
-      "status": "published",
-      "title": "Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门",
-      "titleLength": 41,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Replicate API 做 AI Demo 的流程，覆盖模型选择、prediction、deployment、Webhook、文件输入、费用、错误处理和客户演示。",
-      "descriptionLength": 90,
-      "file": "content/blog/replicate-api-ai-demo-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Replicate API 教程",
-      "scope": [
-        "public"
-      ],
-      "slug": "replicate-api-ai-demo-guide",
-      "status": "published",
-      "title": "Replicate API 怎么做 AI Demo：模型调用、部署和费用边界",
-      "titleLength": 38,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 RunPod Serverless 部署 LLM 的流程，覆盖 vLLM 模板、endpoint、worker、Docker、模型缓存、冷启动、日志和费用。",
-      "descriptionLength": 85,
-      "file": "content/blog/runpod-serverless-llm-deployment-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "RunPod Serverless 大模型部署",
-      "scope": [
-        "public"
-      ],
-      "slug": "runpod-serverless-llm-deployment-guide",
-      "status": "published",
-      "title": "RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界",
-      "titleLength": 48,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "小网站上线前，新手要逐项检查内容、链接、移动端、表单、SEO、安全、构建、部署、回滚和流量统计接入待办。",
-      "descriptionLength": 52,
-      "file": "content/blog/small-site-launch-sop-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "小网站上线检查 SOP 怎么写：新手检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "small-site-launch-sop-checklist",
-      "status": "published",
-      "title": "小网站上线检查 SOP 怎么写：新手检查清单",
-      "titleLength": 22,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "订阅支付失败沟通前，新手要检查失败原因、通知渠道、重试规则、客户动作、访问权限、敏感信息边界和人工复核责任。",
-      "descriptionLength": 54,
-      "file": "content/blog/subscription-payment-failed-message-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "订阅支付失败怎么和客户沟通：新手检查清单",
-      "scope": [
-        "public"
-      ],
-      "slug": "subscription-payment-failed-message-checklist",
-      "status": "published",
-      "title": "订阅支付失败怎么和客户沟通：新手检查清单",
-      "titleLength": 20,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
-    },
-    {
-      "description": "面向新手整理 TensorRT-LLM 入门判断，覆盖 NVIDIA GPU、模型支持、Quick Start、HTTP 请求、性能优化、部署成本和生产边界。",
-      "descriptionLength": 79,
-      "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "TensorRT-LLM 入门",
-      "scope": [
-        "expansion"
-      ],
-      "slug": "tensorrt-llm-beginner-guide",
-      "status": "draft",
-      "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
-      "titleLength": 40,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Together AI API 接入路线，覆盖 OpenAI-compatible 调用、开源模型选择、embedding、费用、限速、应用接入和客户项目边界。",
-      "descriptionLength": 87,
-      "file": "content/blog/together-ai-api-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Together AI API 接入",
-      "scope": [
-        "expansion"
-      ],
-      "slug": "together-ai-api-beginner-guide",
-      "status": "draft",
-      "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
-      "titleLength": 43,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "Upwork 新手投标后没人回复，通常不是一句话能解决的问题。本文帮你检查项目选择、开头文案、客户问题、报价边界和风险信号，避免用夸张承诺或批量复制的方式投标。",
-      "descriptionLength": 80,
-      "file": "content/blog/upwork-proposal-no-reply-checklist.mdx",
-      "issues": [],
-      "primaryKeyword": "Upwork Proposal 没人回怎么办",
-      "scope": [
-        "public"
-      ],
-      "slug": "upwork-proposal-no-reply-checklist",
-      "status": "published",
-      "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
-      "titleLength": 32,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "解释 Vercel 部署成功但访问页面 404 的常见原因，覆盖路由、输出目录、框架配置、根目录、动态路径、域名和上线后验收。",
-      "descriptionLength": 63,
-      "file": "content/blog/vercel-404-after-deploy.mdx",
-      "issues": [],
-      "primaryKeyword": "Vercel 部署成功但 404",
-      "scope": [
-        "expansion"
-      ],
-      "slug": "vercel-404-after-deploy",
-      "status": "draft",
-      "title": "Vercel 部署成功但页面 404：新手排查顺序",
-      "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "整理 Vercel AI Gateway 多模型接入思路，覆盖统一 API、provider 切换、日志、成本、降级、AI SDK 和上线检查。",
-      "descriptionLength": 72,
-      "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Vercel AI Gateway 多模型",
-      "scope": [
-        "expansion",
-        "recommended",
-        "wave-1"
-      ],
-      "slug": "vercel-ai-gateway-multi-provider-guide",
-      "status": "draft",
-      "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
-      "titleLength": 51,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "面向新手整理 Vercel AI SDK + Next.js 聊天机器人部署路线，覆盖 Route Handler、流式输出、模型 Provider、环境变量、限流和上线检查。",
-      "descriptionLength": 88,
-      "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Vercel AI SDK 聊天机器人部署",
-      "scope": [
-        "expansion"
-      ],
-      "slug": "vercel-ai-sdk-chatbot-deploy-guide",
-      "status": "draft",
-      "title": "Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查",
-      "titleLength": 41,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    },
-    {
-      "description": "Vercel 部署 Next.js 项目时经常因为环境变量缺失失败。本文解释什么是环境变量、如何看日志、如何使用 .env.example、什么时候不能让客户直接发真实密钥。",
-      "descriptionLength": 87,
-      "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
-      "issues": [],
-      "primaryKeyword": "Vercel 环境变量缺失怎么办",
-      "scope": [
-        "public"
-      ],
-      "slug": "vercel-env-variable-missing-beginner-guide",
-      "status": "published",
-      "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
-      "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
-    }
-  ],
+  "warningItems": [],
   "publicItems": [
     {
       "description": "新手做 AI 工具站或教程站时，不要一上线就急着塞广告。本文用检查清单说明什么时候适合接广告、什么时候应该先做内容和工具体验。",
@@ -3530,9 +47,7 @@
       "status": "published",
       "title": "广告收入要等到什么时候再接",
       "titleLength": 13,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手看的收入模式检查清单：区分联盟链接收入和服务收入，判断启动条件、记录证据、标注风险，避免把推荐、广告和交付服务混在一起。",
@@ -3547,9 +62,7 @@
       "status": "published",
       "title": "联盟链接收入和服务收入有什么区别：新手检查清单",
       "titleLength": 23,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "联盟链接更像长期内容收益，服务收入更像直接解决问题。本文用新手能执行的方式说明两者区别、适合阶段和风险。",
@@ -3564,9 +77,7 @@
       "status": "published",
       "title": "联盟链接收入和服务收入有什么区别",
       "titleLength": 16,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手解释 Agent 部署的基本流程，覆盖目标、工具权限、状态管理、记忆、日志、人工确认、测试和上线边界。",
@@ -3596,9 +107,7 @@
       "status": "published",
       "title": "Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认",
       "titleLength": 33,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "解释 Agent 记忆设计的基础概念，覆盖短期上下文、长期记忆、用户偏好、知识库、权限、删除规则和隐私边界。",
@@ -3613,9 +122,7 @@
       "status": "published",
       "title": "Agent 记忆怎么设计：短期记忆、长期记忆和用户偏好",
       "titleLength": 27,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 Agent 记忆落库设计，覆盖短期会话、长期偏好、项目事实、来源记录、过期时间、删除入口和人工复核。",
@@ -3628,11 +135,9 @@
       ],
       "slug": "agent-memory-postgres-schema-guide",
       "status": "published",
-      "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
-      "titleLength": 38,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Agent 记忆数据库怎么设计：Postgres 用户偏好、项目事实和过期规则",
+      "titleLength": 39,
+      "warnings": []
     },
     {
       "description": "面向新手整理 Agent 可观测性设计，覆盖日志、工具调用轨迹、模型输入输出、成本、延迟、错误、用户反馈和隐私边界。",
@@ -3692,9 +197,7 @@
       "status": "published",
       "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
       "titleLength": 29,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手解释 AI Agent 部署流程，覆盖 Vercel AI SDK、工具调用、多步执行、停止条件、日志、权限、人工接管和上线检查。",
@@ -3739,13 +242,11 @@
       "status": "published",
       "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
       "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
-      "description": "一份给新手的 AI 辅助交付检查清单：用来判断哪些步骤可以交给 AI 辅助，哪些步骤必须人工确认。",
-      "descriptionLength": 49,
+      "description": "一份给新手的 AI 辅助交付检查清单：判断哪些步骤可以交给 AI 辅助，哪些必须人工确认，并减少交付风险。",
+      "descriptionLength": 53,
       "file": "content/blog/ai-assisted-vs-automated-delivery-checklist.mdx",
       "issues": [],
       "primaryKeyword": "AI 辅助交付检查清单",
@@ -3756,10 +257,7 @@
       "status": "published",
       "title": "AI 辅助交付和完全自动交付的检查清单",
       "titleLength": 19,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 AI 辅助做项目时最容易犯的错误：直接复制输出、跳过测试、夸大承诺、忽略敏感数据和交付边界。",
@@ -3774,9 +272,7 @@
       "status": "published",
       "title": "AI 辅助交付常见错误和解决步骤",
       "titleLength": 16,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "AI 可以帮助整理需求、生成代码和检查报错，但不应该替代人的最终判断。本文说明 AI 辅助交付和完全自动交付的边界。",
@@ -3806,14 +302,11 @@
       "status": "published",
       "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
       "titleLength": 37,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
-      "description": "AI 新手接项目前可以复制使用的检查清单：确认需求、材料、风险、验证方式、报价边界和交付说明。",
-      "descriptionLength": 47,
+      "description": "AI 新手接项目前可以复制使用的检查清单：确认需求、材料、风险、验证方式、报价边界、交付说明和暂停条件。",
+      "descriptionLength": 52,
       "file": "content/blog/ai-beginner-project-fit-check-checklist.mdx",
       "issues": [],
       "primaryKeyword": "AI 新手接项目前检查清单",
@@ -3824,10 +317,7 @@
       "status": "published",
       "title": "AI 新手接项目前的项目适配检查清单",
       "titleLength": 18,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "AI 新手判断能不能接项目时，常见错误包括只看预算、相信 simple、跳过材料检查、不会写边界和把学习任务当成交付任务。",
@@ -3842,13 +332,11 @@
       "status": "published",
       "title": "AI 新手判断接项目时的常见错误",
       "titleLength": 16,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
-      "description": "AI 新手接项目前，先用需求清晰度、风险等级、验证能力和交付边界四个维度判断自己能不能接。",
-      "descriptionLength": 45,
+      "description": "AI 新手接项目前，先用需求清晰度、风险等级、验证能力和交付边界判断自己能不能接，避免盲目报价和交付失控。",
+      "descriptionLength": 53,
       "file": "content/blog/ai-beginner-project-fit-check.mdx",
       "issues": [],
       "primaryKeyword": "AI 新手如何判断自己能不能接项目",
@@ -3859,9 +347,7 @@
       "status": "published",
       "title": "AI 新手如何判断自己能不能接项目",
       "titleLength": 17,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "一份给新手的 AI 编程工具风险检查清单，用来确认输入是否脱敏、修改范围是否可控、输出是否验证、交付边界是否清楚。",
@@ -3876,9 +362,7 @@
       "status": "published",
       "title": "AI 编程工具使用前风险检查清单",
       "titleLength": 16,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手使用 Codex、Claude Code、ChatGPT 等 AI 编程工具前，应先检查代码权限、敏感数据、客户环境、生成结果和交付责任。",
@@ -3893,9 +377,7 @@
       "status": "published",
       "title": "AI 编程工具使用前要检查哪些风险",
       "titleLength": 17,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份可复制的 AI 生成内容人工审核表检查清单，覆盖 draft/noindex、事实核对、原创性、风险提醒、内链和发布结论。",
@@ -3925,9 +407,7 @@
       "status": "published",
       "title": "AI 生成内容人工审核表怎么设计",
       "titleLength": 16,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "一份可复制的新手 30 天 AI 工具实践执行检查清单，覆盖工具环境、每日练习、作品集、项目判断和人工审核。",
@@ -3942,9 +422,7 @@
       "status": "published",
       "title": "新手 30 天 AI 工具实践执行检查清单",
       "titleLength": 21,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "新手执行 30 天 AI 工具实践计划时，常见错误包括第一周急着投标、每天换工具、没有作品集、忽略人工审核和误接高风险项目。",
@@ -3959,9 +437,7 @@
       "status": "published",
       "title": "新手 30 天 AI 工具实践计划常见执行错误",
       "titleLength": 23,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手执行 30 天 AI 工具实践计划时，应先建立工具环境、练习低风险小项目、整理作品集，再谨慎评估是否投标。",
@@ -3979,8 +455,8 @@
       "warnings": []
     },
     {
-      "description": "一份给新手的 AI 自动化项目合规检查清单，用来区分可自动化、必须人工确认和不适合自动化的动作。",
-      "descriptionLength": 48,
+      "description": "一份给新手的 AI 自动化项目合规检查清单，用来区分可自动化、必须人工确认、不适合自动化的动作和交付边界。",
+      "descriptionLength": 53,
       "file": "content/blog/ai-freelance-automation-compliance-risk-checklist.mdx",
       "issues": [],
       "primaryKeyword": "AI 自动化项目合规风险检查清单",
@@ -3991,9 +467,7 @@
       "status": "published",
       "title": "AI 自动化项目合规风险检查清单",
       "titleLength": 16,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "新手做 AI 自动化项目时常见的合规错误：未审核发布、自动承诺客户、混用敏感数据、缺少日志和误改 sitemap。",
@@ -4008,9 +482,7 @@
       "status": "published",
       "title": "AI 自动化项目常见合规错误和解决步骤",
       "titleLength": 19,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "AI 自动化可以帮助整理选题、草稿和检查清单，但不能替代人工审核、平台规则判断和客户沟通。本文列出新手必须避开的合规风险。",
@@ -4055,9 +527,7 @@
       "status": "published",
       "title": "AI 工具实践误区的常见错误和解决步骤",
       "titleLength": 19,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "AI 工具新手常见误区包括以为工具等于能力、草稿等于发布、低价等于优势、自动化等于省心，以及忽略人工审核和交付边界。",
@@ -4297,9 +767,7 @@
       "status": "published",
       "title": "AI 做 Logo 怎么开始：新手先别急着商用",
       "titleLength": 23,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。",
@@ -4312,12 +780,9 @@
       ],
       "slug": "ai-model-selection-customer-service-guide",
       "status": "published",
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-      "titleLength": 29,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检",
+      "titleLength": 30,
+      "warnings": []
     },
     {
       "description": "一份给 AI 工具新手的输出稳定性检查清单，覆盖输入固定、版本保存、人工审核、抽样验证、交付说明和风险暂停。",
@@ -4332,10 +797,7 @@
       "status": "published",
       "title": "AI 输出不稳定风险控制检查清单",
       "titleLength": 16,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "AI 输出不稳定时，常见错误包括反复生成、不固定输入、让 AI 自审、没有验证记录、交付说明过度承诺。本文给出修正步骤。",
@@ -4350,9 +812,7 @@
       "status": "published",
       "title": "AI 输出不稳定风险控制常见错误",
       "titleLength": 16,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "AI 工具实践时，输出不稳定不能靠多生成几次糊过去。本文给出输入固定、人工审核、抽样验证、版本记录和交付边界的风险控制流程。",
@@ -4367,9 +827,7 @@
       "status": "published",
       "title": "AI 输出不稳定怎么做风险控制",
       "titleLength": 15,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手说明 AI 做 PPT 的基本流程，覆盖主题拆解、大纲生成、页面结构、配图、演讲稿、人工校对和交付检查。",
@@ -4399,9 +857,7 @@
       "status": "published",
       "title": "AI 提示词怎么写才好用：全行业都能套的 5 段式框架",
       "titleLength": 27,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "讲清团队提示词库的搭建方式，覆盖行业分类、版本管理、示例输出、适用边界、审核流程、失败案例和工具导航。",
@@ -4416,9 +872,7 @@
       "status": "published",
       "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
       "titleLength": 28,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "说明如何用 AI 辅助写简历和求职信，覆盖岗位分析、经历整理、量化表达、求职信初稿、人工核对和风险提醒。",
@@ -4433,9 +887,7 @@
       "status": "published",
       "title": "AI 写简历和求职信怎么用：别让内容变得不真实",
       "titleLength": 23,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "一份给 AI 工具新手的练习项目选题检查清单，帮助你确认题目是否低风险、可验证、可记录、适合作品集展示。",
@@ -4450,10 +902,7 @@
       "status": "published",
       "title": "AI 小项目练习选题检查清单",
       "titleLength": 14,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "AI 工具新手做练习项目时，常见错误包括选题太大、材料未授权、只展示截图、不写验证方式、把练习包装成客户案例。本文给出修正步骤。",
@@ -4468,9 +917,7 @@
       "status": "published",
       "title": "AI 小项目练习常见错误",
       "titleLength": 12,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "AI 工具新手不要一开始就碰复杂项目。本文整理低风险练习小项目选题，帮助你从文案整理、页面小改、表格清洗、报错解释和交付说明开始。",
@@ -4483,11 +930,9 @@
       ],
       "slug": "ai-small-project-practice-topics",
       "status": "published",
-      "title": "AI 工具新手练习小项目选什么",
-      "titleLength": 15,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "AI 小项目练习选什么：新手从低风险任务开始",
+      "titleLength": 22,
+      "warnings": []
     },
     {
       "description": "一份给新手使用的 AI 工具配置服务检查清单，用于确认需求、账号权限、配置范围、验收证据和交付后的维护边界。",
@@ -4502,10 +947,7 @@
       "status": "published",
       "title": "AI 工具配置服务项目检查清单",
       "titleLength": 15,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手的 AI 工具配置服务项目清单，帮助你把账号、权限、交付范围、验收方式和风险边界说清楚，避免把小配置做成高风险代运营。",
@@ -4535,9 +977,7 @@
       "status": "published",
       "title": "AI 工具推荐怎么选：新手别一开始买太多",
       "titleLength": 20,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "一份给 AI 工具新手的免费工具栈检查清单，帮助你确认工具是否覆盖需求记录、AI 初稿、人工审核、验证、交付和复盘。",
@@ -4582,9 +1022,7 @@
       "status": "published",
       "title": "AI 工具新手免费工具栈怎么选",
       "titleLength": 15,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手说明 AI 做视频的基础流程，覆盖选题、脚本、分镜、配音、字幕、画面素材、版权和发布前检查。",
@@ -4599,9 +1037,7 @@
       "status": "published",
       "title": "AI 做视频怎么开始：脚本、配音、画面和发布检查",
       "titleLength": 24,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手说明 AI 做网站的流程，覆盖需求确认、页面结构、文案、设计、代码或无代码工具、部署上线和验收清单。",
@@ -4616,9 +1052,7 @@
       "status": "published",
       "title": "AI 做网站怎么开始：新手从页面需求到上线检查",
       "titleLength": 23,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 AnythingLLM 本地知识库和 RAG 原型搭建思路，覆盖模型选择、文档导入、工作区、检索测试、权限和交付边界。",
@@ -4633,9 +1067,7 @@
       "status": "published",
       "title": "AnythingLLM 怎么搭本地知识库：从文档聊天到 Agent 原型",
       "titleLength": 36,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份给新手使用的 API Key 无效或缺失排查清单，覆盖错误记录、环境变量、部署平台、权限额度、日志脱敏和客户沟通。",
@@ -4663,11 +1095,9 @@
       ],
       "slug": "api-key-invalid-or-missing-freelance-scope",
       "status": "published",
-      "title": "API Key 无效或缺失：使用前怎么判断是否适合",
-      "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "API Key 无效或缺失项目范围：使用前怎么判断是否适合",
+      "titleLength": 29,
+      "warnings": []
     },
     {
       "description": "整理 API Key 无效或缺失排查中的常见错误：变量名不一致、没有重启服务、前端暴露密钥、线上变量遗漏、权限额度不足。",
@@ -4682,9 +1112,7 @@
       "status": "published",
       "title": "API Key 无效或缺失的常见错误和修复步骤",
       "titleLength": 23,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手排查 API Key 无效或缺失时，可以按环境变量、密钥权限、计费状态、服务端读取和安全边界逐步检查，避免泄露客户密钥。",
@@ -4714,9 +1142,7 @@
       "status": "published",
       "title": "Arize Phoenix 怎么做 LLM Tracing：OpenTelemetry、评测和排错入门",
       "titleLength": 51,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 AutoGen 与 Microsoft Agent Framework 的入门判断，覆盖多 Agent、工具、人类介入、迁移、日志、评测和生产边界。",
@@ -4731,9 +1157,7 @@
       "status": "published",
       "title": "AutoGen / Microsoft Agent Framework 怎么入门：多 Agent 先看迁移和边界",
       "titleLength": 56,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手看的银行卡绑定收款平台检查清单：核对平台身份、账户权限、提现规则、费用、隐私、记录和暂停条件。",
@@ -4748,9 +1172,7 @@
       "status": "published",
       "title": "银行卡绑定收款平台要注意什么：新手检查清单",
       "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向 AI 工具新手的银行卡绑定收款平台指南：解释为什么要先核对平台、主体、费用、提现周期、隐私和安全设置，再进入真实收款流程。",
@@ -4778,11 +1200,9 @@
       ],
       "slug": "before-first-ai-freelance-job-checklist",
       "status": "published",
-      "title": "第一次接 AI 小单前检查清单",
-      "titleLength": 15,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "第一次 AI 工具实践检查清单：接小单前要准备什么",
+      "titleLength": 25,
+      "warnings": []
     },
     {
       "description": "整理新手第一次接 AI 小单前常见错误：没有作品证据、范围写太大、报价不含修改、直接交 AI 输出、忽略客户权限风险。",
@@ -4797,9 +1217,7 @@
       "status": "published",
       "title": "第一次接 AI 小单前最容易犯的错误",
       "titleLength": 18,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手第一次接 AI 小单前，应先准备作品集证据、服务范围、沟通模板、交付清单和风险边界，而不是直接承诺复杂结果。",
@@ -4829,9 +1247,7 @@
       "status": "published",
       "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
       "titleLength": 44,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份给新手使用的 bug 修复交付前检查清单，帮助确认原问题、修改范围、测试证据、未覆盖事项和客户验收边界。",
@@ -4846,9 +1262,7 @@
       "status": "published",
       "title": "Bug 修复交付前检查清单",
       "titleLength": 13,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "新手完成 bug 修复后，应把问题原因、修改内容、测试结果、未覆盖范围和后续风险写进交付说明，减少客户验收争议。",
@@ -4893,9 +1307,7 @@
       "status": "published",
       "title": "Canva 作品集封面发布前检查清单",
       "titleLength": 18,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Canva 做 AI 工具实践作品集封面时，应突出服务类型、真实交付证据和可复查案例，而不是堆砌夸张标题和未授权素材。",
@@ -4925,9 +1337,7 @@
       "status": "published",
       "title": "ChatGPT、Codex 和 Claude 工作流检查清单",
       "titleLength": 30,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手把 ChatGPT、Codex 和 Claude 用在 AI 工具实践流程里时，应先分清需求澄清、代码修改、长文复核和人工验收边界，避免把 AI 输出直接交付。",
@@ -4940,11 +1350,9 @@
       ],
       "slug": "chatgpt-codex-claude-workflow",
       "status": "published",
-      "title": "ChatGPT、Codex 和 Claude 怎么分工做 AI 工具实践流程",
+      "title": "ChatGPT Codex Claude 工作流怎么分工：AI 工具实践流程",
       "titleLength": 38,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向普通新手整理 ChatGPT 怎么用，覆盖提问、写作、翻译、总结、学习、办公和做小项目，并说明人工复核和工具选择边界。",
@@ -4989,9 +1397,7 @@
       "status": "published",
       "title": "AI 生成 Proposal 发布前检查清单",
       "titleLength": 22,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 ChatGPT 或 Claude 写自由职业 proposal 时，应把 AI 当成草稿助手，先确认客户需求、平台规则和服务边界，再人工删改成真实回复。",
@@ -5036,9 +1442,7 @@
       "status": "published",
       "title": "Claude API 怎么接入：Messages API、费用和上下文边界",
       "titleLength": 37,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 Claude API rate limit reached 的排查方法，覆盖 token、RPM、上下文长度、重试、队列、降级和日志。",
@@ -5068,9 +1472,7 @@
       "status": "published",
       "title": "Claude Code 自动化人工审核检查清单",
       "titleLength": 23,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 自动化项目前，应判断任务是否低风险、是否可复现、是否能人工审核、是否有测试证据和明确交付边界。",
@@ -5085,9 +1487,7 @@
       "status": "published",
       "title": "Claude Code 自动化项目前怎么判断能不能做",
       "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理 Claude Code 自动化中常见的人工审核错误：输入未脱敏、范围过大、不看 diff、不跑测试、交付说明缺少未覆盖范围。",
@@ -5102,9 +1502,7 @@
       "status": "published",
       "title": "Claude Code 自动化最容易忽略的人工审核错误",
       "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 自动化处理代码、文档或排错任务时，必须保留人工审查、diff 检查、测试证据和权限边界，不能把工具输出直接交付。",
@@ -5119,9 +1517,7 @@
       "status": "published",
       "title": "Claude Code 自动化为什么必须有人审",
       "titleLength": 23,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份 Claude Code 新手检查清单，覆盖读仓库、缩小范围、查看 diff、运行测试、脱敏客户资料和写交付说明。",
@@ -5136,9 +1532,7 @@
       "status": "published",
       "title": "Claude Code 新手使用检查清单",
       "titleLength": 20,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 接代码小单前，应先判断任务是否可复现、权限是否安全、修改范围是否清楚、测试证据是否可提供。",
@@ -5153,9 +1547,7 @@
       "status": "published",
       "title": "Claude Code 项目前怎么判断范围",
       "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理 Claude Code 新手常见错误：不读上下文、直接接受改动、不看 diff、不跑检查、忽略客户权限和交付说明，并给出修正方法。",
@@ -5170,9 +1562,7 @@
       "status": "published",
       "title": "Claude Code 新手常见错误和修正方法",
       "titleLength": 23,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 做 AI 工具实践或练习项目时，最容易忽略仓库上下文、diff 检查、测试证据和权限边界。本文给出可执行的修正流程。",
@@ -5187,9 +1577,7 @@
       "status": "published",
       "title": "Claude Code 新手最容易犯的错误",
       "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份 Claude Code 新手使用场景检查清单，帮助判断任务是否低风险、可复现、可测试、可人工审核、可写清交付边界。",
@@ -5204,9 +1592,7 @@
       "status": "published",
       "title": "Claude Code 新手使用场景检查清单",
       "titleLength": 22,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 项目前，应判断需求是否适合低风险自动化辅助：可复现、低权限、小范围、可测试、可交付说明。",
@@ -5219,11 +1605,9 @@
       ],
       "slug": "claude-code-beginner-use-cases-freelance-scope",
       "status": "published",
-      "title": "Claude Code 新手项目练习前怎么判断使用场景",
-      "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Claude Code 使用场景项目范围：新手练习前怎么判断",
+      "titleLength": 30,
+      "warnings": []
     },
     {
       "description": "整理 Claude Code 新手选择使用场景时的常见错误：选高风险项目、忽略复现条件、低估权限风险、没有测试证据和交付边界。",
@@ -5238,9 +1622,7 @@
       "status": "published",
       "title": "Claude Code 新手选使用场景时的常见错误",
       "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手使用 Claude Code 做项目时，更适合从报错解释、代码阅读、低风险页面小改、配置文档和交付说明开始，而不是直接处理高权限生产项目。",
@@ -5255,9 +1637,7 @@
       "status": "published",
       "title": "Claude Code 新手适合用在哪些项目场景",
       "titleLength": 24,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份 Claude Code bug prompt 检查清单，帮助新手确认复现步骤、错误原文、运行环境、预期结果、脱敏处理和验证命令。",
@@ -5287,9 +1667,7 @@
       "status": "published",
       "title": "Claude Code Bug Prompt 项目前怎么判断范围",
       "titleLength": 32,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理 Claude Code bug prompt 常见错误：缺少复现步骤、没有预期结果、直接贴敏感信息、让工具大范围修改、不要求测试证据。",
@@ -5319,9 +1697,7 @@
       "status": "published",
       "title": "Claude Code 修 bug 的 prompt 怎么写",
       "titleLength": 30,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份 Claude Code 项目客户问题检查清单，帮助新手确认复现步骤、错误原文、运行环境、权限边界、报价范围和验收方式。",
@@ -5336,9 +1712,7 @@
       "status": "published",
       "title": "Claude Code 项目客户问题检查清单",
       "titleLength": 22,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "客户需求不清楚时，新手用 Claude Code 项目前应先判断是否能复现、是否低权限、是否可测试、是否适合诊断而不是直接修复。",
@@ -5353,9 +1727,7 @@
       "status": "published",
       "title": "Claude Code 项目前客户问题不清楚时怎么判断范围",
       "titleLength": 29,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理 Claude Code 项目前客户沟通常见错误：不问复现步骤、不问环境、不问权限、不问验收、直接接受客户说很简单。",
@@ -5370,9 +1742,7 @@
       "status": "published",
       "title": "Claude Code 项目前问客户时的常见错误",
       "titleLength": 24,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 辅助接代码小单前，应先向客户确认复现步骤、运行环境、权限边界、验收标准和未覆盖范围，再决定是否报价。",
@@ -5387,9 +1757,7 @@
       "status": "published",
       "title": "用 Claude Code 项目前要问客户哪些问题",
       "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份 Claude Code 常用命令检查清单，帮助新手区分只读命令、本地验证命令、文件修改命令和高风险命令，再决定是否执行。",
@@ -5404,9 +1772,7 @@
       "status": "published",
       "title": "Claude Code 常用命令检查清单",
       "titleLength": 20,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 做项目时，可以把只读排查、本地验证和交付说明写进范围，但应谨慎处理部署、数据库、环境变量和生产权限命令。",
@@ -5421,9 +1787,7 @@
       "status": "published",
       "title": "Claude Code 常用命令哪些适合写进项目范围",
       "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理 Claude Code 新手运行常用命令时的常见错误：不看命令用途、不区分环境、不记录输出、把构建通过当成业务验收。",
@@ -5438,9 +1802,7 @@
       "status": "published",
       "title": "Claude Code 新手运行常用命令时的常见错误",
       "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手使用 Claude Code 接代码小单前，可以把 npm、git、构建、测试和日志命令整理成安全笔记，先在低权限环境验证，再写进交付说明。",
@@ -5455,9 +1817,7 @@
       "status": "published",
       "title": "Claude Code 新手常用命令怎么整理成项目笔记",
       "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份 Claude Code 交付说明检查清单，帮助新手在发给客户前确认问题回顾、修改摘要、验证结果、未覆盖范围和验收动作。",
@@ -5487,9 +1847,7 @@
       "status": "published",
       "title": "Claude Code 交付说明哪些内容适合写进项目范围",
       "titleLength": 28,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理新手用 Claude Code 项目后写交付说明的常见错误：只说已修好、不写验证、不写未覆盖范围、暴露敏感信息、过度承诺。",
@@ -5519,9 +1877,7 @@
       "status": "published",
       "title": "用 Claude Code 项目后交付说明怎么写",
       "titleLength": 24,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份 Claude Code 错误排查检查清单，帮助新手在接客户报错小单前确认错误原文、复现步骤、环境、权限、验证命令和交付边界。",
@@ -5551,9 +1907,7 @@
       "status": "published",
       "title": "Claude Code 错误排查哪些适合写进项目范围",
       "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理新手用 Claude Code 排查客户报错时的常见错误：不拿错误原文、不问复现环境、盲跑命令、暴露敏感日志、把诊断写成修复。",
@@ -5568,9 +1922,7 @@
       "status": "published",
       "title": "Claude Code 排查客户报错时的常见错误",
       "titleLength": 24,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 辅助排查客户报错时，应先确认复现步骤、错误原文、运行环境和权限边界，再用低风险命令整理诊断结论。",
@@ -5583,11 +1935,9 @@
       ],
       "slug": "claude-code-error-debug",
       "status": "published",
-      "title": "用 Claude Code 排查客户报错时怎么做才稳",
-      "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Claude Code 错误排查怎么做：客户报错处理更稳",
+      "titleLength": 28,
+      "warnings": []
     },
     {
       "description": "一份 Claude Code GitHub 文件范围检查清单，帮助新手确认链接类型、分支版本、文件范围、只读边界、敏感信息和客户验收方式。",
@@ -5602,9 +1952,7 @@
       "status": "published",
       "title": "Claude Code GitHub 文件范围检查清单",
       "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 接 GitHub 文件检查小单时，可以写入只读诊断、文件范围、分支版本和交付说明，但不应默认包含全仓库审计、推送和生产配置。",
@@ -5619,9 +1967,7 @@
       "status": "published",
       "title": "Claude Code 看 GitHub 文件哪些适合写进项目范围",
       "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理新手用 Claude Code 看客户 GitHub 文件时的常见范围错误：不问分支、不限文件、不确认只读、不脱敏、把单文件检查扩大成全仓库维护。",
@@ -5636,9 +1982,7 @@
       "status": "published",
       "title": "Claude Code 看 GitHub 文件时的常见范围错误",
       "titleLength": 31,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 处理客户给的 GitHub 文件或仓库链接时，应先确认文件路径、分支、问题范围、只读边界和验收方式，避免把单文件检查扩大成全仓库维护。",
@@ -5653,9 +1997,7 @@
       "status": "published",
       "title": "客户给 GitHub 文件时用 Claude Code 怎么限定范围",
       "titleLength": 34,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份 Claude Code 安装前置条件检查清单，帮助新手确认系统、终端、Node、Git、网络、测试项目、账号边界和客户项目权限。",
@@ -5670,9 +2012,7 @@
       "status": "published",
       "title": "Claude Code 安装前置条件检查清单",
       "titleLength": 22,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 项目前，可以把本机环境确认、安装诊断、测试项目验证和交付说明写进范围，但不应默认包含客户账号、生产配置和长期维护。",
@@ -5687,9 +2027,7 @@
       "status": "published",
       "title": "Claude Code 安装准备哪些适合写进项目范围",
       "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理新手安装 Claude Code 前常见错误：不确认系统和终端、不看 Node 版本、不记录错误原文、直接在客户项目里试错、混淆安装问题和项目问题。",
@@ -5704,9 +2042,7 @@
       "status": "published",
       "title": "Claude Code 安装准备常见错误",
       "titleLength": 20,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手安装 Claude Code 前，应先确认系统、终端、Node.js、Git、项目权限、网络环境和测试项目，避免把安装问题误判成工具不可用。",
@@ -5721,9 +2057,7 @@
       "status": "published",
       "title": "安装 Claude Code 前新手要先确认哪些条件",
       "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份 Claude Code 低风险项目检查清单，帮助新手确认目标、权限、影响范围、复现步骤、测试环境、验收方式和不承接边界。",
@@ -5753,9 +2087,7 @@
       "status": "published",
       "title": "Claude Code 低风险小单哪些适合写进项目范围",
       "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理新手用 Claude Code 判断低风险小单时的常见错误：只听客户说简单、不问权限、不写验收、忽略未覆盖范围、把诊断做成长期支持。",
@@ -5770,9 +2102,7 @@
       "status": "published",
       "title": "Claude Code 低风险项目常见错误",
       "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 做项目时，应优先选择低权限、低影响、可复现、可验收的小任务，例如页面文案、单报错诊断、README 整理和交付说明。",
@@ -5785,11 +2115,9 @@
       ],
       "slug": "claude-code-low-risk-freelance-jobs",
       "status": "published",
-      "title": "Claude Code 新手适合先接哪些低风险小单",
-      "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Claude Code 低风险项目有哪些：新手适合先接的小单",
+      "titleLength": 30,
+      "warnings": []
     },
     {
       "description": "一份 Claude Code Next.js 页面检查清单，帮助新手确认页面路径、组件范围、数据来源、复现步骤、验证命令和交付边界。",
@@ -5819,9 +2147,7 @@
       "status": "published",
       "title": "Claude Code 检查 Next.js 页面哪些适合写进项目范围",
       "titleLength": 35,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理新手用 Claude Code 检查 Next.js 页面时的常见错误：不问页面路径、不确认数据来源、不跑本地验证、把页面小改扩成全站重构。",
@@ -5834,11 +2160,9 @@
       ],
       "slug": "claude-code-nextjs-page-check-mistakes",
       "status": "published",
-      "title": "Claude Code 检查 Next.js 页面时的常见错误",
-      "titleLength": 31,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Claude Code Next.js 页面检查错误：新手常见问题",
+      "titleLength": 33,
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 检查 Next.js 页面小问题时，应先确认页面路径、复现步骤、组件范围、数据来源和本地验证方式，再写交付说明。",
@@ -5851,11 +2175,9 @@
       ],
       "slug": "claude-code-nextjs-page-check",
       "status": "published",
-      "title": "用 Claude Code 检查 Next.js 页面小问题怎么做",
-      "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Claude Code Next.js 页面检查怎么做：小问题处理步骤",
+      "titleLength": 35,
+      "warnings": []
     },
     {
       "description": "一份 Claude Code proposal 审阅检查清单，帮助新手发送报价前检查客户问题、服务范围、未覆盖范围、验证方式、追问问题和风险表达。",
@@ -5870,9 +2192,7 @@
       "status": "published",
       "title": "Claude Code Proposal 审阅检查清单",
       "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 做 proposal 审阅服务时，可以写入范围检查、风险提示、追问问题和交付修改建议，但不应默认承诺成交、收益或平台外沟通。",
@@ -5887,9 +2207,7 @@
       "status": "published",
       "title": "Claude Code Proposal 审阅哪些适合写进项目范围",
       "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理新手用 Claude Code 审阅 proposal 时的常见错误：直接发送 AI 初稿、过度承诺、不写未覆盖范围、暴露敏感信息、缺少客户追问。",
@@ -5904,9 +2222,7 @@
       "status": "published",
       "title": "Claude Code 审阅 Proposal 时的常见错误",
       "titleLength": 30,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 辅助审阅项目 proposal 时，应重点检查客户问题、服务范围、风险边界、验证方式和交付说明，不写夸大承诺。",
@@ -5921,9 +2237,7 @@
       "status": "published",
       "title": "用 Claude Code 审阅项目 Proposal 时要看什么",
       "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份 Claude Code 小项目任务检查清单，帮助新手判断任务是否明确、低权限、可复现、可验证、可验收，避免接成长期维护或高风险项目。",
@@ -5938,9 +2252,7 @@
       "status": "published",
       "title": "Claude Code 小项目任务检查清单",
       "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 接小项目时，可以把单页面、单报错、单配置、单文档和交付说明写进范围，但不应默认包含生产部署、长期维护和高权限系统。",
@@ -5955,9 +2267,7 @@
       "status": "published",
       "title": "Claude Code 小项目任务哪些适合写进项目范围",
       "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理新手用 Claude Code 接小项目时的常见错误：把模糊需求当小单、忽略权限、没有验收方式、把诊断写成修复、接成长期维护。",
@@ -5972,9 +2282,7 @@
       "status": "published",
       "title": "Claude Code 小项目常见错误",
       "titleLength": 19,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手用 Claude Code 接小项目任务时，应优先选择单页面、单报错、单配置、单文档这类低权限、可复现、可验收的任务，避免接长期维护和高风险系统。",
@@ -5989,13 +2297,11 @@
       "status": "published",
       "title": "哪些小项目任务适合用 Claude Code 辅助项目",
       "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
-      "description": "网页修改项目前的工具选择和安全检查清单：确认需求、仓库状态、验证命令、截图、交付边界和暂停条件。",
-      "descriptionLength": 48,
+      "description": "网页修改项目前的工具选择和安全检查清单：确认需求、仓库状态、验证命令、截图、交付边界、暂停条件和风险。",
+      "descriptionLength": 51,
       "file": "content/blog/claude-code-vs-codex-web-editing-checklist.mdx",
       "issues": [],
       "primaryKeyword": "网页修改 AI 工具检查清单",
@@ -6004,12 +2310,9 @@
       ],
       "slug": "claude-code-vs-codex-web-editing-checklist",
       "status": "published",
-      "title": "Claude Code 和 Codex 网页修改新手检查清单",
-      "titleLength": 30,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "网页修改 AI 工具检查清单：Claude Code 和 Codex 怎么选",
+      "titleLength": 38,
+      "warnings": []
     },
     {
       "description": "网页修改项目前的范围判断草稿：用 Claude Code 和 Codex 辅助拆需求，但先确认任务边界、风险等级、验证条件和客户待补材料。",
@@ -6022,11 +2325,9 @@
       ],
       "slug": "claude-code-vs-codex-web-editing-freelance-scope",
       "status": "published",
-      "title": "Claude Code 和 Codex 网页修改使用前怎么判断是否适合",
-      "titleLength": 35,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "网页修改项目范围判断：Claude Code 和 Codex 使用前检查",
+      "titleLength": 36,
+      "warnings": []
     },
     {
       "description": "整理新手用 Claude Code 或 Codex 做网页修改时常见的错误：需求没拆清、没跑构建、忽略移动端、误碰敏感配置和交付说明不足。",
@@ -6041,9 +2342,7 @@
       "status": "published",
       "title": "Claude Code 和 Codex 网页修改常见错误",
       "titleLength": 28,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手看的网页修改工具选择指南：什么时候用 Claude Code，什么时候用 Codex，如何判断任务范围、验证结果和交付风险。",
@@ -6058,13 +2357,11 @@
       "status": "published",
       "title": "Claude Code 和 Codex 哪个适合网页修改",
       "titleLength": 28,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
-      "description": "客户验收清单的检查版：交付前核对范围、文件、截图、验证命令、客户确认项、未覆盖范围和返工边界。",
-      "descriptionLength": 47,
+      "description": "客户验收清单的检查版：交付前核对范围、文件、截图、验证命令、客户确认项、未覆盖范围、返工边界和记录方式。",
+      "descriptionLength": 52,
       "file": "content/blog/client-acceptance-checklist-checklist.mdx",
       "issues": [],
       "primaryKeyword": "客户验收清单检查",
@@ -6075,10 +2372,7 @@
       "status": "published",
       "title": "客户验收清单新手检查清单",
       "titleLength": 12,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手看的客户验收清单写法：交付前明确范围、文件、截图、测试结果、未覆盖内容和修改规则，减少返工争议。",
@@ -6093,13 +2387,11 @@
       "status": "published",
       "title": "客户验收清单怎么减少返工",
       "titleLength": 12,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
-      "description": "客户需求沟通表的检查清单版本：确认目标、材料、范围、权限、验收、截止时间、修改次数和暂停条件。",
-      "descriptionLength": 47,
+      "description": "客户需求沟通表的检查清单版本：确认目标、材料、范围、权限、验收、截止时间、修改次数、暂停条件和补充问题。",
+      "descriptionLength": 52,
       "file": "content/blog/client-requirement-form-questions-checklist.mdx",
       "issues": [],
       "primaryKeyword": "客户需求沟通表检查清单",
@@ -6110,10 +2402,7 @@
       "status": "published",
       "title": "客户需求沟通表新手检查清单",
       "titleLength": 13,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手看的客户需求沟通表写法：先问目标、素材、权限、范围、验收和风险，再决定是否报价和交付。",
@@ -6128,9 +2417,7 @@
       "status": "published",
       "title": "客户需求沟通表怎么问才清楚",
       "titleLength": 13,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "一份给新手的域名选择检查清单，覆盖 Cloudflare、Namecheap、DNS、nameserver、邮箱记录、客户账号、续费责任和项目边界。",
@@ -6173,11 +2460,9 @@
       ],
       "slug": "cloudflare-workers-ai-beginner-guide",
       "status": "published",
-      "title": "Cloudflare Workers AI 怎么开始：边缘 AI 接口、成本和数据边界",
-      "titleLength": 43,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Cloudflare Workers AI 入门：边缘 AI 接口、成本和数据边界",
+      "titleLength": 41,
+      "warnings": []
     },
     {
       "description": "Codex 自动化开发前后的检查清单：确认需求、权限、工作区、修改范围、命令验证、人工复核和交付记录。",
@@ -6192,10 +2477,7 @@
       "status": "published",
       "title": "Codex 自动化开发流程新手检查清单",
       "titleLength": 19,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手看的 Codex 自动化开发项目范围判断：确认任务是否低风险、能否验证、是否需要权限、哪些步骤不能省。",
@@ -6208,11 +2490,9 @@
       ],
       "slug": "codex-automation-steps-not-skip-freelance-scope",
       "status": "published",
-      "title": "Codex 自动化开发使用前怎么判断是否适合",
-      "titleLength": 22,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Codex 自动化开发项目范围：使用前怎么判断是否适合",
+      "titleLength": 27,
+      "warnings": []
     },
     {
       "description": "整理新手用 Codex 做自动化开发时常见的错误：没确认需求、没看工作区、盲目执行命令、没跑验证、交付记录不足。",
@@ -6227,9 +2507,7 @@
       "status": "published",
       "title": "Codex 自动化开发流程常见错误",
       "titleLength": 17,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手看的 Codex 自动化开发流程安全指南：需求确认、工作区检查、变更边界、测试验证、人工复核和交付记录都不能省。",
@@ -6259,9 +2537,7 @@
       "status": "published",
       "title": "Codex 处理客户项目的密钥安全检查清单",
       "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手的范围判断指南：遇到密钥、账号权限、生产数据、支付配置和后台授权时，如何判断能不能接、怎么拆范围、哪些事项必须客户确认。",
@@ -6276,9 +2552,7 @@
       "status": "published",
       "title": "涉及密钥和权限的 Codex 任务能不能接",
       "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理 AI 工具新手使用 Codex 时常见的密钥泄露错误：复制 .env、提交日志、把 token 写进示例、忽略 git 历史、用生产环境测试，以及发现问题后的处理顺序。",
@@ -6293,9 +2567,7 @@
       "status": "published",
       "title": "Codex 做项目时常见密钥泄露错误和修复顺序",
       "titleLength": 23,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手看的 Codex 密钥安全指南：如何识别密钥、脱敏材料、限制工具可见范围、检查 diff、处理提交记录，并在高风险操作前暂停让人工确认。",
@@ -6308,11 +2580,9 @@
       ],
       "slug": "codex-avoid-secret-leak",
       "status": "published",
-      "title": "Codex 做项目时如何避免把密钥写进代码",
-      "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Codex 避免密钥泄露：做项目时不要把密钥写进代码",
+      "titleLength": 26,
+      "warnings": []
     },
     {
       "description": "一份给 AI 工具新手使用的 Codex 修 bug 检查清单，覆盖原始证据、工作区状态、修改范围、验证命令、回滚点、交付说明和人工复核。",
@@ -6327,9 +2597,7 @@
       "status": "published",
       "title": "Codex 修 bug 回滚记录检查清单",
       "titleLength": 20,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手的 Codex 修 bug 范围判断指南：如何区分低风险小修、高风险生产问题、需要客户确认的授权事项，并把验证和回滚写进报价范围。",
@@ -6342,11 +2610,9 @@
       ],
       "slug": "codex-bugfix-rollback-record-freelance-scope",
       "status": "published",
-      "title": "Codex 修 bug 任务使用前怎么判断是否适合",
-      "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Codex 修 bug 任务能不能接：使用前怎么判断是否适合",
+      "titleLength": 30,
+      "warnings": []
     },
     {
       "description": "整理 AI 工具新手用 Codex 修 bug 时常见错误：不看工作区、缺复现记录、改动范围过大、没有验证命令、忘记回滚点，以及发现问题后的修复顺序。",
@@ -6361,9 +2627,7 @@
       "status": "published",
       "title": "Codex 修 bug 回滚记录常见错误和修复顺序",
       "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手看的 Codex 修 bug 回滚记录流程：修复前保存证据、确认工作区、限定修改范围、记录验证命令、保留回滚点，并在高风险变更前暂停复核。",
@@ -6378,9 +2642,7 @@
       "status": "published",
       "title": "Codex 修 bug 时如何保留回滚记录",
       "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份给 AI 工具新手使用的客户需求澄清清单，覆盖目标、材料、验收、权限、风险、报价边界、交付记录和需要客户确认的事项。",
@@ -6395,9 +2657,7 @@
       "status": "published",
       "title": "Codex 客户需求澄清问题检查清单",
       "titleLength": 18,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手的需求边界判断指南：客户需求不清楚时，如何判断能不能接、哪些问题必须补问、哪些风险要暂停，以及怎么写报价前提。",
@@ -6410,11 +2670,9 @@
       ],
       "slug": "codex-client-requirement-questions-freelance-scope",
       "status": "published",
-      "title": "Codex 需求不清楚的任务使用前怎么判断是否适合",
-      "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Codex 需求不清楚能不能接：使用前怎么判断",
+      "titleLength": 23,
+      "warnings": []
     },
     {
       "description": "整理 AI 工具新手用 Codex 处理客户需求时常见错误：没问验收标准、没确认权限、直接报价、把模糊需求交给工具、忽略风险，以及补救顺序。",
@@ -6429,9 +2687,7 @@
       "status": "published",
       "title": "Codex 客户需求澄清常见错误和修复顺序",
       "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手看的 Codex 客户需求澄清指南：如何围绕目标、材料、权限、验收、风险和交付边界提问，避免在需求不清楚时直接报价或动手。",
@@ -6446,9 +2702,7 @@
       "status": "published",
       "title": "Codex 处理客户需求不清楚时怎么提问",
       "titleLength": 20,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手遇到“Codex 生成代码后怎么审核：交付前检查清单”时，通常不知道如何判断范围、准备材料、识别风险和写出稳妥回复。读完后能按步骤做初步判断，知道该问客户什么、该测试什么、哪些情况需要暂缓。",
@@ -6478,9 +2732,7 @@
       "status": "published",
       "title": "Codex 是什么：新手怎么开始",
       "titleLength": 16,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "Codex 安装失败时，先确认系统、Node.js、包管理器、网络、权限和终端日志，再决定是本地环境问题、依赖安装问题，还是需要人工核对官方文档。",
@@ -6690,9 +2942,7 @@
       "status": "published",
       "title": "Codex 修改现有网页 UI 检查清单",
       "titleLength": 20,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手的 Codex UI 修改范围判断指南：如何区分小范围视觉修复、模糊重设计、高风险页面，以及怎么把截图、响应式验证和未覆盖范围写进报价。",
@@ -6705,11 +2955,9 @@
       ],
       "slug": "codex-edit-existing-ui-freelance-scope",
       "status": "published",
-      "title": "Codex 修改现有网页 UI 使用前怎么判断是否适合",
-      "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Codex UI 修改任务能不能接：使用前怎么判断",
+      "titleLength": 25,
+      "warnings": []
     },
     {
       "description": "整理 AI 工具新手用 Codex 修改现有网页 UI 时常见错误：没留截图、改动范围过大、忽略响应式、破坏设计系统、没写交付记录，以及补救顺序。",
@@ -6724,9 +2972,7 @@
       "status": "published",
       "title": "Codex 修改现有网页 UI 常见错误和修复顺序",
       "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手看的 Codex 修改现有网页 UI 流程：先确认目标和设计边界，再截图留证、限定文件范围、检查响应式状态、跑验证命令，避免覆盖客户已有设计。",
@@ -6756,9 +3002,7 @@
       "status": "published",
       "title": "Codex 是什么，新手第一天应该怎么用：新手检查清单",
       "titleLength": 27,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "Codex 新手项目练习前判断指南：第一天哪些任务不能接，哪些练习后可以尝试，报价前必须确认哪些材料和风险。",
@@ -6773,9 +3017,7 @@
       "status": "published",
       "title": "Codex 是什么，新手第一天应该怎么用：使用前怎么判断是否适合",
       "titleLength": 32,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "整理 Codex 新手第一天最常见的错误：目标太大、直接改文件、跳过构建、误判项目判断能力、忽视平台规则，并给出对应纠正步骤。",
@@ -6910,9 +3152,7 @@
       "status": "published",
       "title": "Codex GitHub 提交代码检查清单",
       "titleLength": 21,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手的 Codex + GitHub 项目范围判断指南：如何区分普通代码提交、高风险仓库权限、CI/部署变更，并把分支、PR、验证和客户确认写进报价。",
@@ -6925,11 +3165,9 @@
       ],
       "slug": "codex-github-workflow-freelance-scope",
       "status": "published",
-      "title": "Codex GitHub 提交任务使用前怎么判断是否适合",
-      "titleLength": 28,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Codex GitHub 提交任务能不能接：使用前怎么判断",
+      "titleLength": 29,
+      "warnings": []
     },
     {
       "description": "整理 AI 工具新手用 Codex 和 GitHub 提交代码时常见错误：直接推主分支、混入无关改动、没跑检查、提交敏感文件、PR 描述空泛，以及补救顺序。",
@@ -6942,11 +3180,9 @@
       ],
       "slug": "codex-github-workflow-mistakes",
       "status": "published",
-      "title": "Codex GitHub 工作流常见错误和修复顺序",
-      "titleLength": 25,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Codex GitHub 提交错误：工作流常见错误和修复顺序",
+      "titleLength": 30,
+      "warnings": []
     },
     {
       "description": "给 AI 工具新手看的 Codex + GitHub 提交流程：确认工作区、创建分支、限定修改范围、查看 diff、运行检查、写提交说明、开 PR，并避免直接推主分支。",
@@ -6961,9 +3197,7 @@
       "status": "published",
       "title": "Codex 和 GitHub 怎么配合提交代码",
       "titleLength": 23,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手遇到“Codex 安装失败怎么办”时，通常不知道如何判断范围、准备材料、识别风险和写出稳妥回复。读完后能按步骤做初步判断，知道该问客户什么、该测试什么、哪些情况需要暂缓。",
@@ -7053,9 +3287,7 @@
       "status": "published",
       "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
       "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份给新手的 npm install 报错排查清单，覆盖目录、Node/npm 版本、lockfile、网络、权限、私有包、低风险验证和交付记录。",
@@ -7145,9 +3377,7 @@
       "status": "published",
       "title": "作品集素材整理项目能不能接",
       "titleLength": 13,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "整理 AI 工具新手准备作品集素材时常见的错误：案例夸大、截图授权不清、证据不足、CTA 过度，以及更稳的修复顺序。",
@@ -7192,9 +3422,7 @@
       "status": "published",
       "title": "Codex 项目启动检查表：新手清单",
       "titleLength": 18,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "给中文新手的 Codex 项目启动检查表：先确认仓库、目标、权限、依赖、测试命令、数据边界和交付记录，再让 AI 辅助改代码。",
@@ -7272,8 +3500,8 @@
       "warnings": []
     },
     {
-      "description": "一份给新手的 Codex 代码人工审核清单，覆盖需求、差异、依赖、测试、安全、交付记录和项目边界。",
-      "descriptionLength": 49,
+      "description": "一份给新手的 Codex 代码人工审核清单，覆盖需求、差异、依赖、测试、安全、交付记录、项目边界和复核顺序。",
+      "descriptionLength": 54,
       "file": "content/blog/codex-review-generated-code-checklist.mdx",
       "issues": [],
       "primaryKeyword": "Codex 生成代码后的人工审核检查清单",
@@ -7284,9 +3512,7 @@
       "status": "published",
       "title": "Codex 生成代码后的人工审核检查清单",
       "titleLength": 20,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "用案例方式判断涉及 Codex 代码审查的项目任务能不能接：看需求边界、权限风险、验证条件、报价范围和交付记录。",
@@ -7781,9 +4007,7 @@
       "status": "published",
       "title": "CrewAI Agent 怎么部署：从 Crew、Task 到生产监控边界",
       "titleLength": 37,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份给新手使用的 Cursor 和 Codex 改网页选择清单，帮助确认任务范围、工具选择、客户权限、验证命令、移动端检查和交付记录。",
@@ -8068,9 +4292,7 @@
       "status": "published",
       "title": "Dify、Coze、Flowise 怎么选：做 Agent 和知识库前先看边界",
       "titleLength": 39,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 Dify Docker Compose 自部署前后的检查点，覆盖服务器、环境变量、数据库、向量库、模型供应商、备份和安全边界。",
@@ -8085,9 +4307,7 @@
       "status": "published",
       "title": "Dify Docker Compose 自部署怎么做：新手先看这份边界清单",
       "titleLength": 37,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 Dify 知识库搭建流程，覆盖文档准备、知识库创建、检索节点、metadata filtering、引用来源、测试和上线边界。",
@@ -8130,11 +4350,9 @@
       ],
       "slug": "dify-ollama-local-model-guide",
       "status": "published",
-      "title": "Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试",
-      "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Dify 接入 Ollama 怎么做：本地模型到知识库测试",
+      "titleLength": 29,
+      "warnings": []
     },
     {
       "description": "面向新手整理 Dify 接入 OpenAI API 的流程和风险，覆盖模型供应商、API Key、LLM 节点、知识库、费用控制、日志和上线检查。",
@@ -8149,9 +4367,7 @@
       "status": "published",
       "title": "Dify 怎么接 OpenAI API：模型供应商、LLM 节点和费用边界",
       "titleLength": 37,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 Dify 工作流错误处理方法，覆盖输入变量校验、节点失败、条件分支、重试、人工兜底和上线前测试。",
@@ -8166,9 +4382,7 @@
       "status": "published",
       "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
       "titleLength": 29,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "解释 Dify Workflow 与 Agent 的选择方法，覆盖固定流程、自由工具调用、知识库问答、人工审核、成本和上线风险。",
@@ -8181,11 +4395,9 @@
       ],
       "slug": "dify-workflow-vs-agent-guide",
       "status": "published",
-      "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
-      "titleLength": 40,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Dify Workflow 和 Agent 区别：固定流程、工具调用和人工审核",
+      "titleLength": 39,
+      "warnings": []
     },
     {
       "description": "一份给新手使用的数字模板退款规则检查清单，用来核对商品描述、交付方式、可退款场景、不可退款边界、下载后争议、平台政策、授权素材、订单证据和明日待办。",
@@ -8305,9 +4517,7 @@
       "status": "published",
       "title": "企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管",
       "titleLength": 39,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份给新手的环境变量 missing 检查清单，覆盖变量名、发生环境、本地和部署平台差异、公开变量、敏感密钥、验证命令和客户待确认事项。",
@@ -8502,9 +4712,7 @@
       "status": "published",
       "title": "FastGPT 知识库怎么部署：新手先分清自部署和检索参数",
       "titleLength": 29,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向财务和运营团队整理 AI 提示词模板，覆盖报表摘要、费用分类、预算复盘、应收应付、异常说明和人工复核边界。",
@@ -8609,9 +4817,7 @@
       "status": "published",
       "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
       "titleLength": 28,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 Flowise 本地部署的入门检查清单，覆盖本地运行、Docker、数据库、环境变量、模型 API、权限、日志和上线边界。",
@@ -8641,9 +4847,7 @@
       "status": "published",
       "title": "Flowise 接 Ollama 做本地 RAG：新手先跑通最小链路",
       "titleLength": 34,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份给新手使用的免费 SEO 工具检查清单，用来核对页面可访问性、标题描述、canonical、sitemap、robots、链接、移动端、性能截图、内容风险和需要授权的明日待办。",
@@ -8793,9 +4997,7 @@
       "status": "published",
       "title": "自由职业每周复盘检查清单",
       "titleLength": 12,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "新手做 AI 项目练习时，每周复盘不要只写忙了什么，而要记录线索、投递、练习、交付证据、风险和明日待办。本文给出一份保守可执行的自由职业每周复盘模板。",
@@ -8825,9 +5027,7 @@
       "status": "published",
       "title": "Gemini API 怎么接 Next.js：从 API Key 到服务端 Route Handler",
       "titleLength": 51,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理 Gemini API 限流排查方法，覆盖 RPM、TPM、请求峰值、上下文长度、队列、重试、降级和生产监控。",
@@ -9095,11 +5295,9 @@
       ],
       "slug": "gpu-docker-nvidia-container-toolkit-guide",
       "status": "published",
-      "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
-      "titleLength": 48,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Docker 使用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
+      "titleLength": 47,
+      "warnings": []
     },
     {
       "description": "面向新手整理 Groq API 接入和使用边界，覆盖 OpenAI-compatible 接口、模型选择、响应速度、限速、费用、应用接入和上线检查。",
@@ -9114,9 +5312,7 @@
       "status": "published",
       "title": "Groq API 怎么接入：高速推理适合什么 AI 应用",
       "titleLength": 28,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份给新手使用的 Gumroad 模板上架前检查清单，用来核对商品范围、文件交付、授权素材、商品页、退款说明、下载测试、收款税务、订单记录和明日待办。",
@@ -9161,9 +5357,7 @@
       "status": "published",
       "title": "医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写",
       "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 Helicone LLM 观测入门，覆盖 AI Gateway、OpenAI-compatible 接口、日志、成本、缓存、限流、错误排查和隐私边界。",
@@ -9176,11 +5370,9 @@
       ],
       "slug": "helicone-llm-observability-guide",
       "status": "published",
-      "title": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住",
-      "titleLength": 39,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Helicone LLM Observability 怎么做：Gateway、日志、成本和限流",
+      "titleLength": 47,
+      "warnings": []
     },
     {
       "description": "面向 HR 和招聘团队整理 AI 提示词模板，覆盖岗位 JD、简历初筛、面试题、候选人沟通、入职培训和人工公平复核。",
@@ -9193,11 +5385,9 @@
       ],
       "slug": "hr-recruiting-ai-prompts-guide",
       "status": "published",
-      "title": "人力招聘 AI 提示词模板：JD、简历初筛、面试题和培训材料",
-      "titleLength": 30,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "HR AI 提示词模板：JD、简历初筛、面试题和培训材料",
+      "titleLength": 28,
+      "warnings": []
     },
     {
       "description": "面向新手整理 Hugging Face Spaces 部署 AI Demo 的路线，覆盖 Gradio、Docker、Secrets、模型文件、公开访问、成本和客户演示边界。",
@@ -9212,9 +5402,7 @@
       "status": "published",
       "title": "Hugging Face Spaces 怎么部署 AI Demo：Gradio、Docker 和公开边界",
       "titleLength": 52,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 Hugging Face Text Generation Inference 部署路线，覆盖 Docker、GPU、模型 ID、Messages API、流式输出、性能和上线风险。",
@@ -9229,9 +5417,7 @@
       "status": "published",
       "title": "Hugging Face TGI 怎么部署：Text Generation Inference 入门检查表",
       "titleLength": 53,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理全行业 AI 提示词模板库的搭建方法，覆盖销售、运营、客服、HR、财务、教育、产品和研发场景，重点讲分类、输入、输出、审核和复用。",
@@ -9291,9 +5477,7 @@
       "status": "published",
       "title": "AI 知识库权限怎么设计：别让检索结果越权",
       "titleLength": 21,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 Kubernetes 部署 GPU LLM 的基础检查点，覆盖 NVIDIA device plugin、nvidia.com/gpu、节点驱动、Pod 资源、日志和生产边界。",
@@ -9306,11 +5490,9 @@
       ],
       "slug": "kubernetes-gpu-llm-deployment-guide",
       "status": "published",
-      "title": "Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界",
-      "titleLength": 47,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Kubernetes GPU 大模型部署：Device Plugin、资源限制和调度边界",
+      "titleLength": 44,
+      "warnings": []
     },
     {
       "description": "面向新手整理 LangChain 做 RAG 的入门流程，覆盖文档加载、切分、embedding、向量库、retriever、回答链、评测和上线边界。",
@@ -9325,9 +5507,7 @@
       "status": "published",
       "title": "LangChain 做 RAG 怎么开始：新手先跑通检索链路",
       "titleLength": 30,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 LangGraph Agent 入门思路，覆盖状态图、工具调用、长流程、人工介入、可观测性、评测和生产部署边界。",
@@ -9342,9 +5522,7 @@
       "status": "published",
       "title": "LangGraph Agent 怎么入门：把状态、工具和人工节点先想清楚",
       "titleLength": 36,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 LangSmith 观测和评测入门，覆盖 tracing、runs、datasets、evaluations、LangChain/LangGraph 应用、成本和上线排查。",
@@ -9357,11 +5535,9 @@
       ],
       "slug": "langsmith-observability-evaluation-guide",
       "status": "published",
-      "title": "LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent",
-      "titleLength": 38,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "LangSmith Observability 怎么做：观测、评测和 Agent 调试",
+      "titleLength": 43,
+      "warnings": []
     },
     {
       "description": "面向法务、运营和创业者整理合同 AI 提示词模板，覆盖条款摘要、风险清单、待确认问题、版本对比和人工律师复核边界。",
@@ -9421,9 +5597,7 @@
       "status": "published",
       "title": "LiteLLM Proxy 怎么部署：统一多个模型 API 前先管好预算和密钥",
       "titleLength": 39,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 llama.cpp server 的使用思路，覆盖 GGUF 模型、启动参数、OpenAI 兼容端点、性能、局域网、日志和生产边界。",
@@ -9453,9 +5627,7 @@
       "status": "published",
       "title": "LlamaIndex 做 RAG 怎么开始：Document、Node 和检索",
       "titleLength": 39,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理大模型 API 接入上线前检查清单，覆盖密钥管理、请求限制、成本、日志、失败重试、内容复核、隐私和回退方案。",
@@ -9485,9 +5657,7 @@
       "status": "published",
       "title": "大模型 API 限流和重试怎么做：429、队列、退避和降级方案",
       "titleLength": 31,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理 LLM 成本监控看板设计方法，覆盖用户、功能、模型、token、错误率、缓存、预算告警和客户项目拆账。",
@@ -9502,9 +5672,7 @@
       "status": "published",
       "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
       "titleLength": 25,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手解释大模型部署的三条路线：调用 API、本地部署和私有化部署，并整理成本、延迟、数据、运维和上线检查边界。",
@@ -9594,9 +5762,7 @@
       "status": "published",
       "title": "本地部署大模型怎么开始：新手先看硬件、模型和用途",
       "titleLength": 24,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手解释本地部署大模型显存不够的排查思路，覆盖模型大小、量化、KV cache、上下文长度、并发、CPU offload 和模型选择。",
@@ -9701,9 +5867,7 @@
       "status": "published",
       "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
       "titleLength": 36,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 Modal Serverless GPU 部署 LLM 的路线，覆盖 image、function、GPU、volume、模型缓存、endpoint、费用和上线检查。",
@@ -9718,9 +5882,7 @@
       "status": "published",
       "title": "Modal 怎么部署 Serverless GPU LLM：代码化环境和冷启动先评估",
       "titleLength": 42,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份给新手使用的 module not found 定位检查清单，覆盖缺失模块、导入文件、本地路径、大小写、依赖包、路径别名、构建环境和客户待确认事项。",
@@ -9795,9 +5957,7 @@
       "status": "published",
       "title": "多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估",
       "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "讲清 n8n AI Agent 接 RAG 和记忆的思路，覆盖知识库检索、短期上下文、长期偏好、状态存储、权限和测试。",
@@ -9812,9 +5972,7 @@
       "status": "published",
       "title": "n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储",
       "titleLength": 35,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 n8n AI Agent 自托管入门路线，覆盖 Docker 安装、Agent 节点、凭据、工具调用、日志、权限和上线前风险。",
@@ -9844,9 +6002,7 @@
       "status": "published",
       "title": "n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试",
       "titleLength": 41,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份给 AI 工具新手的 Next.js hydration error 检查清单：核对报错原文、复现路径、服务端客户端差异、第三方组件、构建验证和明日人工复核事项。",
@@ -10071,9 +6227,7 @@
       "status": "published",
       "title": "npm command not found 使用前怎么判断是否适合",
       "titleLength": 33,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理新手处理 npm command not found 时的常见错误：没检查 Node、没重启终端、混用包管理器、乱改 PATH、在客户环境直接操作，并给出修正方法。",
@@ -10148,9 +6302,7 @@
       "status": "published",
       "title": "Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流",
       "titleLength": 52,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 Open WebUI 搭配 Ollama 的 Docker 部署思路，覆盖本机模型、Docker 网络、端口、模型连接、知识库测试和上线前检查。",
@@ -10165,9 +6317,7 @@
       "status": "published",
       "title": "Open WebUI + Ollama 怎么部署：本地大模型网页聊天入门",
       "titleLength": 36,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 OpenAI Agents SDK 入门路线，覆盖 agent、tools、handoffs、running agents、tracing、敏感数据、评测和上线边界。",
@@ -10182,9 +6332,7 @@
       "status": "published",
       "title": "OpenAI Agents SDK 怎么入门：Tools、Handoffs 和 Tracing 先分清",
       "titleLength": 51,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 OpenAI API 接入 Next.js 的基本流程，覆盖服务端 Route Handler、环境变量、Responses API、错误处理、成本和安全边界。",
@@ -10199,9 +6347,7 @@
       "status": "published",
       "title": "OpenAI API 接入 Next.js 怎么做：Route Handler 新手清单",
       "titleLength": 44,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "解释 OpenAI Batch API 的适用场景，覆盖批量摘要、分类、抽取、非实时任务、24 小时窗口、成本控制和验收。",
@@ -10231,9 +6377,7 @@
       "status": "published",
       "title": "OpenRouter API 怎么接入：统一模型入口不是只换 Base URL",
       "titleLength": 39,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向运营团队整理 AI 提示词模板，覆盖周报、SOP、活动计划、复盘、用户反馈、数据解释、会议纪要和人工审核边界。",
@@ -10278,9 +6422,7 @@
       "status": "published",
       "title": "package lock 冲突使用前怎么判断是否适合",
       "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理新手处理 package-lock.json 冲突时的常见错误：直接删除锁文件、保留一边、混用包管理器、不看 package.json、没跑验证和在客户主分支试错。",
@@ -10355,9 +6497,7 @@
       "status": "published",
       "title": "收款账户资料不一致风险：新手检查清单",
       "titleLength": 18,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "面向自由职业新手的收款账户资料一致性风险草稿：解释姓名、地址、税务、银行、平台资料不一致时为什么应暂停收款并人工核对。",
@@ -10447,9 +6587,7 @@
       "status": "published",
       "title": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
       "titleLength": 39,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份给 AI 工具新手的 Payoneer、Wise、PayPal 选择检查清单：先核对收入来源、客户付款方式、平台规则、费用记录和明日人工复核事项。",
@@ -10614,9 +6752,7 @@
       "status": "published",
       "title": "Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试",
       "titleLength": 37,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "一份给自由职业新手的收款方式检查清单，帮助在平台内收款和直接收款之间核对客户来源、平台规则、合同、费用、争议和税务记录。",
@@ -10676,9 +6812,7 @@
       "status": "published",
       "title": "port already in use 使用前怎么判断是否适合",
       "titleLength": 31,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理新手处理 port already in use 时的常见错误：乱杀进程、没确认端口来源、忘记旧终端、随便换端口、在客户服务器操作，并给出修正方法。",
@@ -10933,9 +7067,7 @@
       "status": "published",
       "title": "promptfoo 怎么做 LLM 评测：提示词、模型和 Agent 都要有测试用例",
       "titleLength": 42,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 Qdrant 在 RAG 和语义搜索中的使用思路，覆盖集合、向量、payload、过滤、Top-K、部署、权限和评测。",
@@ -10965,9 +7097,7 @@
       "status": "published",
       "title": "报价邮件模板怎么表达不确定范围：新手检查清单",
       "titleLength": 22,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "客户需求不清楚时，新手不要硬报最终价。报价邮件应先说明已知范围、未知信息、诊断阶段、需要客户确认的问题和下一步报价条件。",
@@ -11012,9 +7142,7 @@
       "status": "published",
       "title": "RAG 怎么显示引用来源：文档名、页码、片段和可信度",
       "titleLength": 26,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "整理知识库文档上传前的清洗步骤，覆盖目录、页眉页脚、扫描件、表格、重复段落、版本号、权限和测试问题。",
@@ -11029,10 +7157,7 @@
       "status": "published",
       "title": "RAG 文档上传前怎么清洗：目录、页眉、表格、重复段落和版本号",
       "titleLength": 31,
-      "warnings": [
-        "description may be thin for search snippets",
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 RAG 评测方法，覆盖测试集、正确来源、召回、忠实度、找不到答案、权限问题、回归测试和上线记录。",
@@ -11062,9 +7187,7 @@
       "status": "published",
       "title": "RAG 知识库怎么搭：文档、切分、检索和回答复核",
       "titleLength": 24,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手解释 RAG 提示词注入风险，覆盖不可信文档、系统提示保护、检索过滤、引用、工具调用隔离、人工确认和测试方法。",
@@ -11109,9 +7232,7 @@
       "status": "published",
       "title": "Ragas 怎么评测 RAG：Faithfulness、Context 和测试集先建好",
       "titleLength": 43,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向新手整理 Ray Serve LLM 部署路线，覆盖 Ray cluster、Serve、vLLM backend、OpenAI-compatible app、多节点、多模型和生产边界。",
@@ -11126,9 +7247,7 @@
       "status": "published",
       "title": "Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门",
       "titleLength": 41,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "面向房产经纪、租赁和物业团队整理 AI 提示词模板，覆盖房源文案、客户需求、带看记录、租售对比和人工复核边界。",
@@ -11156,11 +7275,9 @@
       ],
       "slug": "replicate-api-ai-demo-guide",
       "status": "published",
-      "title": "Replicate API 怎么做 AI Demo：模型调用、部署和费用边界",
-      "titleLength": 38,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "Replicate API 教程：做 AI Demo 的模型调用、部署和费用边界",
+      "titleLength": 40,
+      "warnings": []
     },
     {
       "description": "面向新手整理 RunPod Serverless 部署 LLM 的流程，覆盖 vLLM 模板、endpoint、worker、Docker、模型缓存、冷启动、日志和费用。",
@@ -11173,11 +7290,9 @@
       ],
       "slug": "runpod-serverless-llm-deployment-guide",
       "status": "published",
-      "title": "RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界",
-      "titleLength": 48,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "title": "RunPod Serverless 大模型部署：Endpoint、Worker 和冷启动边界",
+      "titleLength": 46,
+      "warnings": []
     },
     {
       "description": "面向销售团队整理 AI 提示词模板，覆盖客户画像、线索分析、跟进邮件、异议处理、会议纪要、报价前问题和人工复核。",
@@ -11267,9 +7382,7 @@
       "status": "published",
       "title": "小网站上线检查 SOP 怎么写：新手检查清单",
       "titleLength": 22,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "小网站上线前，新手要检查内容、链接、移动端、SEO 基础、表单、隐私页、构建、部署、回滚和客户验收，不能只看首页能打开。",
@@ -11344,9 +7457,7 @@
       "status": "published",
       "title": "订阅支付失败怎么和客户沟通：新手检查清单",
       "titleLength": 20,
-      "warnings": [
-        "description may be thin for search snippets"
-      ]
+      "warnings": []
     },
     {
       "description": "Upwork 新手经常遇到客户需求很短、范围不清、预算不明的项目。本文提供需求分析步骤、追问模板、风险提醒和是否投标的判断方法。",
@@ -11376,9 +7487,7 @@
       "status": "published",
       "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
       "titleLength": 32,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "Vercel 部署 Next.js 项目时经常因为环境变量缺失失败。本文解释什么是环境变量、如何看日志、如何使用 .env.example、什么时候不能让客户直接发真实密钥。",
@@ -11393,9 +7502,7 @@
       "status": "published",
       "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
       "titleLength": 27,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     },
     {
       "description": "新手遇到“Codex 是什么新手怎么开始”时，通常不知道如何判断范围、准备材料、识别风险和写出稳妥回复。读完后能按步骤做初步判断，知道该问客户什么、该测试什么、哪些情况需要暂缓。",
@@ -11461,9 +7568,7 @@
       "status": "draft",
       "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
       "titleLength": 51,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     }
   ],
   "waveItems": [
@@ -11515,9 +7620,7 @@
       "status": "draft",
       "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
       "titleLength": 51,
-      "warnings": [
-        "primary keyword is not an exact title substring"
-      ]
+      "warnings": []
     }
   ]
 }

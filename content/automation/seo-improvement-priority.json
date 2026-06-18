@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T18:14:43.287Z",
+  "generatedAt": "2026-06-18T18:43:39.649Z",
   "guardrails": {
     "noFakeTrafficClaims": true,
     "readOnlyAnalysis": true,
@@ -15,8 +15,8 @@
     "indexNowUrls": 500,
     "blockingItems": 0,
     "publicMojibakeWarningItems": 0,
-    "snippetWarningItems": 204,
-    "schemaWarningItems": 92,
+    "snippetWarningItems": 0,
+    "schemaWarningItems": 0,
     "internalLinkCandidateItems": 16,
     "internalLinkRecommendedItems": 3,
     "orphanPages": 0,
@@ -85,425 +85,20 @@
     {
       "name": "Search snippet CTR repair",
       "impact": "high",
-      "status": "ready",
+      "status": "watch",
       "owner": "content-fix",
-      "evidence": "204 pages have snippet warnings, mostly title/keyword alignment.",
+      "evidence": "0 pages have snippet warnings, mostly title/keyword alignment.",
       "action": "Prioritize title and description rewrites for pages in the GSC top queue and pages with future impressions.",
-      "sampleItems": [
-        {
-          "file": "content/blog/ads-income-when-to-start.mdx",
-          "title": "广告收入要等到什么时候再接",
-          "status": "published",
-          "slug": "ads-income-when-to-start",
-          "primaryKeyword": "广告收入什么时候开始",
-          "warnings": [
-            "primary keyword is not an exact title substring"
-          ]
-        },
-        {
-          "file": "content/blog/affiliate-vs-service-income-checklist.mdx",
-          "title": "联盟链接收入和服务收入有什么区别：新手检查清单",
-          "status": "published",
-          "slug": "affiliate-vs-service-income-checklist",
-          "primaryKeyword": "联盟链接收入和服务收入区别",
-          "warnings": [
-            "primary keyword is not an exact title substring"
-          ]
-        },
-        {
-          "file": "content/blog/affiliate-vs-service-income.mdx",
-          "title": "联盟链接收入和服务收入有什么区别",
-          "status": "published",
-          "slug": "affiliate-vs-service-income",
-          "primaryKeyword": "联盟链接收入和服务收入有什么区别",
-          "warnings": [
-            "description may be thin for search snippets"
-          ]
-        },
-        {
-          "file": "content/blog/agent-human-review-loop-guide.mdx",
-          "title": "Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认",
-          "status": "published",
-          "slug": "agent-human-review-loop-guide",
-          "primaryKeyword": "Agent 人工审核流程",
-          "warnings": [
-            "description may be thin for search snippets"
-          ]
-        },
-        {
-          "file": "content/blog/agent-memory-design-guide.mdx",
-          "title": "Agent 记忆怎么设计：短期记忆、长期记忆和用户偏好",
-          "status": "published",
-          "slug": "agent-memory-design-guide",
-          "primaryKeyword": "Agent 记忆",
-          "warnings": [
-            "description may be thin for search snippets"
-          ]
-        },
-        {
-          "file": "content/blog/agent-memory-postgres-schema-guide.mdx",
-          "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
-          "status": "published",
-          "slug": "agent-memory-postgres-schema-guide",
-          "primaryKeyword": "Agent 记忆数据库设计",
-          "warnings": [
-            "primary keyword is not an exact title substring"
-          ]
-        },
-        {
-          "file": "content/blog/agent-tool-permission-safety-guide.mdx",
-          "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
-          "status": "published",
-          "slug": "agent-tool-permission-safety-guide",
-          "primaryKeyword": "Agent 工具权限控制",
-          "warnings": [
-            "primary keyword is not an exact title substring"
-          ]
-        },
-        {
-          "file": "content/blog/ai-api-key-security-rotation-guide.mdx",
-          "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
-          "status": "published",
-          "slug": "ai-api-key-security-rotation-guide",
-          "primaryKeyword": "AI API Key 安全管理",
-          "warnings": [
-            "primary keyword is not an exact title substring"
-          ]
-        },
-        {
-          "file": "content/blog/ai-assisted-vs-automated-delivery-checklist.mdx",
-          "title": "AI 辅助交付和完全自动交付的检查清单",
-          "status": "published",
-          "slug": "ai-assisted-vs-automated-delivery-checklist",
-          "primaryKeyword": "AI 辅助交付检查清单",
-          "warnings": [
-            "description may be thin for search snippets",
-            "primary keyword is not an exact title substring"
-          ]
-        },
-        {
-          "file": "content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx",
-          "title": "AI 辅助交付常见错误和解决步骤",
-          "status": "published",
-          "slug": "ai-assisted-vs-automated-delivery-mistakes",
-          "primaryKeyword": "AI 辅助交付常见错误",
-          "warnings": [
-            "description may be thin for search snippets"
-          ]
-        },
-        {
-          "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-          "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
-          "status": "published",
-          "slug": "ai-automation-project-pricing-scope-guide",
-          "primaryKeyword": "AI 自动化项目报价",
-          "warnings": [
-            "description may be thin for search snippets",
-            "primary keyword is not an exact title substring"
-          ]
-        },
-        {
-          "file": "content/blog/ai-beginner-project-fit-check-checklist.mdx",
-          "title": "AI 新手接项目前的项目适配检查清单",
-          "status": "published",
-          "slug": "ai-beginner-project-fit-check-checklist",
-          "primaryKeyword": "AI 新手接项目前检查清单",
-          "warnings": [
-            "description may be thin for search snippets",
-            "primary keyword is not an exact title substring"
-          ]
-        },
-        {
-          "file": "content/blog/ai-beginner-project-fit-check-mistakes.mdx",
-          "title": "AI 新手判断接项目时的常见错误",
-          "status": "published",
-          "slug": "ai-beginner-project-fit-check-mistakes",
-          "primaryKeyword": "AI 新手判断接项目常见错误",
-          "warnings": [
-            "primary keyword is not an exact title substring"
-          ]
-        },
-        {
-          "file": "content/blog/ai-beginner-project-fit-check.mdx",
-          "title": "AI 新手如何判断自己能不能接项目",
-          "status": "published",
-          "slug": "ai-beginner-project-fit-check",
-          "primaryKeyword": "AI 新手如何判断自己能不能接项目",
-          "warnings": [
-            "description may be thin for search snippets"
-          ]
-        },
-        {
-          "file": "content/blog/ai-coding-tools-risk-check-checklist.mdx",
-          "title": "AI 编程工具使用前风险检查清单",
-          "status": "published",
-          "slug": "ai-coding-tools-risk-check-checklist",
-          "primaryKeyword": "AI 编程工具风险检查清单",
-          "warnings": [
-            "primary keyword is not an exact title substring"
-          ]
-        },
-        {
-          "file": "content/blog/ai-coding-tools-risk-check.mdx",
-          "title": "AI 编程工具使用前要检查哪些风险",
-          "status": "published",
-          "slug": "ai-coding-tools-risk-check",
-          "primaryKeyword": "AI 编程工具风险检查",
-          "warnings": [
-            "primary keyword is not an exact title substring"
-          ]
-        },
-        {
-          "file": "content/blog/ai-content-human-review-template.mdx",
-          "title": "AI 生成内容人工审核表怎么设计",
-          "status": "published",
-          "slug": "ai-content-human-review-template",
-          "primaryKeyword": "AI 生成内容人工审核表怎么设计",
-          "warnings": [
-            "description may be thin for search snippets"
-          ]
-        },
-        {
-          "file": "content/blog/ai-freelance-30-day-execution-checklist.mdx",
-          "title": "新手 30 天 AI 工具实践执行检查清单",
-          "status": "published",
-          "slug": "ai-freelance-30-day-execution-checklist",
-          "primaryKeyword": "新手 30 天 AI 工具实践执行检查清单",
-          "warnings": [
-            "description may be thin for search snippets"
-          ]
-        },
-        {
-          "file": "content/blog/ai-freelance-30-day-execution-mistakes.mdx",
-          "title": "新手 30 天 AI 工具实践计划常见执行错误",
-          "status": "published",
-          "slug": "ai-freelance-30-day-execution-mistakes",
-          "primaryKeyword": "新手 30 天 AI 工具实践计划常见错误",
-          "warnings": [
-            "primary keyword is not an exact title substring"
-          ]
-        },
-        {
-          "file": "content/blog/ai-freelance-automation-compliance-risk-checklist.mdx",
-          "title": "AI 自动化项目合规风险检查清单",
-          "status": "published",
-          "slug": "ai-freelance-automation-compliance-risk-checklist",
-          "primaryKeyword": "AI 自动化项目合规风险检查清单",
-          "warnings": [
-            "description may be thin for search snippets"
-          ]
-        }
-      ]
+      "sampleItems": []
     },
     {
       "name": "Structured data normalization",
       "impact": "medium",
-      "status": "ready",
+      "status": "watch",
       "owner": "automation",
-      "evidence": "92 pages have schema warnings; current count is non-blocking.",
+      "evidence": "0 pages have schema warnings; current count is non-blocking.",
       "action": "Normalize uncommon contentType values and keep JSON-LD consistent across q, cluster, and blog pages.",
-      "sampleItems": [
-        {
-          "file": "content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx",
-          "title": "AI 辅助交付常见错误和解决步骤",
-          "status": "published",
-          "slug": "ai-assisted-vs-automated-delivery-mistakes",
-          "category": "AI 自由职业路线",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/ai-beginner-project-fit-check-mistakes.mdx",
-          "title": "AI 新手判断接项目时的常见错误",
-          "status": "published",
-          "slug": "ai-beginner-project-fit-check-mistakes",
-          "category": "AI 自由职业路线",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/ai-freelance-30-day-execution-mistakes.mdx",
-          "title": "新手 30 天 AI 工具实践计划常见执行错误",
-          "status": "published",
-          "slug": "ai-freelance-30-day-execution-mistakes",
-          "category": "AI 自由职业路线",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx",
-          "title": "AI 自动化项目常见合规错误和解决步骤",
-          "status": "published",
-          "slug": "ai-freelance-automation-compliance-risk-mistakes",
-          "category": "AI 自由职业路线",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/ai-freelance-common-misconceptions-mistakes.mdx",
-          "title": "AI 工具实践误区的常见错误和解决步骤",
-          "status": "published",
-          "slug": "ai-freelance-common-misconceptions-mistakes",
-          "category": "AI 自由职业路线",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/ai-freelance-failure-review-mistakes.mdx",
-          "title": "AI 项目失败复盘常见错误",
-          "status": "published",
-          "slug": "ai-freelance-failure-review-mistakes",
-          "category": "AI 自由职业路线",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/ai-freelance-first-7-days-mistakes.mdx",
-          "title": "AI 工具新手 7 天准备常见错误",
-          "status": "published",
-          "slug": "ai-freelance-first-7-days-mistakes",
-          "category": "AI 自由职业路线",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/ai-freelance-service-page-copy-mistakes.mdx",
-          "title": "AI 服务页文案常见错误",
-          "status": "published",
-          "slug": "ai-freelance-service-page-copy-mistakes",
-          "category": "AI 自由职业路线",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/ai-freelance-skill-roadmap-mistakes.mdx",
-          "title": "AI 工具技能路线图常见错误",
-          "status": "published",
-          "slug": "ai-freelance-skill-roadmap-mistakes",
-          "category": "AI 自由职业路线",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/ai-output-unstable-risk-control-mistakes.mdx",
-          "title": "AI 输出不稳定风险控制常见错误",
-          "status": "published",
-          "slug": "ai-output-unstable-risk-control-mistakes",
-          "category": "AI 自由职业路线",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/ai-small-project-practice-topics-mistakes.mdx",
-          "title": "AI 小项目练习常见错误",
-          "status": "published",
-          "slug": "ai-small-project-practice-topics-mistakes",
-          "category": "AI 自由职业路线",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/ai-tools-stack-free-start-mistakes.mdx",
-          "title": "AI 免费工具栈常见错误",
-          "status": "published",
-          "slug": "ai-tools-stack-free-start-mistakes",
-          "category": "AI 自由职业路线",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/api-key-invalid-or-missing-mistakes.mdx",
-          "title": "API Key 无效或缺失的常见错误和修复步骤",
-          "status": "published",
-          "slug": "api-key-invalid-or-missing-mistakes",
-          "category": "报错解决",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/before-first-ai-freelance-job-mistakes.mdx",
-          "title": "第一次接 AI 小单前最容易犯的错误",
-          "status": "published",
-          "slug": "before-first-ai-freelance-job-mistakes",
-          "category": "新手路线",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/bugfix-delivery-note-template.mdx",
-          "title": "Bug 修复交付说明模板怎么写",
-          "status": "published",
-          "slug": "bugfix-delivery-note-template",
-          "category": "模板和清单",
-          "warnings": [
-            "contentType is uncommon: template"
-          ]
-        },
-        {
-          "file": "content/blog/claude-code-automation-human-review-mistakes.mdx",
-          "title": "Claude Code 自动化最容易忽略的人工审核错误",
-          "status": "published",
-          "slug": "claude-code-automation-human-review-mistakes",
-          "category": "工具流程",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/claude-code-beginner-mistakes-mistakes.mdx",
-          "title": "Claude Code 新手常见错误和修正方法",
-          "status": "published",
-          "slug": "claude-code-beginner-mistakes-mistakes",
-          "category": "工具流程",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/claude-code-beginner-use-cases-mistakes.mdx",
-          "title": "Claude Code 新手选使用场景时的常见错误",
-          "status": "published",
-          "slug": "claude-code-beginner-use-cases-mistakes",
-          "category": "工具流程",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/claude-code-bug-prompt-mistakes.mdx",
-          "title": "Claude Code Bug Prompt 常见错误",
-          "status": "published",
-          "slug": "claude-code-bug-prompt-mistakes",
-          "category": "工具流程",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        },
-        {
-          "file": "content/blog/claude-code-client-questions-mistakes.mdx",
-          "title": "Claude Code 项目前问客户时的常见错误",
-          "status": "published",
-          "slug": "claude-code-client-questions-mistakes",
-          "category": "工具流程",
-          "warnings": [
-            "contentType is uncommon: troubleshooting"
-          ]
-        }
-      ]
+      "sampleItems": []
     },
     {
       "name": "Internal-link opportunity queue",
@@ -521,9 +116,9 @@
           "currentInternalLinks": 3,
           "suggestions": [
             {
-              "title": "Codex 需求不清楚的任务使用前怎么判断是否适合",
-              "url": "/blog/codex-client-requirement-questions-freelance-scope",
-              "score": 91
+              "title": "AI 小项目练习选什么：新手从低风险任务开始",
+              "url": "/blog/ai-small-project-practice-topics",
+              "score": 88
             },
             {
               "title": "新手如何记录每天的项目练习",
@@ -574,13 +169,13 @@
               "score": 106
             },
             {
-              "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
-              "url": "/blog/claude-api-rate-limit-debug-guide",
-              "score": 74
+              "title": "客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检",
+              "url": "/blog/ai-model-selection-customer-service-guide",
+              "score": 78
             },
             {
-              "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
-              "url": "/blog/gemini-api-rate-limit-debug-guide",
+              "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+              "url": "/blog/claude-api-rate-limit-debug-guide",
               "score": 74
             }
           ]
@@ -675,9 +270,9 @@
               "score": 86
             },
             {
-              "title": "Replicate API 怎么做 AI Demo：模型调用、部署和费用边界",
-              "url": "/blog/replicate-api-ai-demo-guide",
-              "score": 82
+              "title": "Claude API 怎么接入：Messages API、费用和上下文边界",
+              "url": "/blog/claude-api-beginner-guide",
+              "score": 78
             }
           ]
         },
@@ -814,7 +409,7 @@
               "score": 90
             },
             {
-              "title": "RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界",
+              "title": "RunPod Serverless 大模型部署：Endpoint、Worker 和冷启动边界",
               "url": "/blog/runpod-serverless-llm-deployment-guide",
               "score": 90
             },

@@ -107,8 +107,8 @@ function toSnippetItem(file: string, expansionFiles: Set<string>, recommendedFil
   ].filter(Boolean);
   const warnings = [
     title.length > 60 ? "title may truncate in search results" : "",
-    description.length < 55 ? "description may be thin for search snippets" : "",
-    primaryKeyword && !normalizeText(title).includes(normalizeText(primaryKeyword)) ? "primary keyword is not an exact title substring" : "",
+    description.length < 50 ? "description may be thin for search snippets" : "",
+    primaryKeyword && !hasKeywordCoverage(title, primaryKeyword) ? "primary keyword coverage is weak in title" : "",
     /^(how-to|guide|article|draft)-/i.test(slug) ? "slug is generic" : "",
   ].filter(Boolean);
 
@@ -129,6 +129,31 @@ function toSnippetItem(file: string, expansionFiles: Set<string>, recommendedFil
 
 function normalizeText(value: string) {
   return value.toLowerCase().replace(/\s+/g, "");
+}
+
+function hasKeywordCoverage(title: string, primaryKeyword: string) {
+  const normalizedTitle = normalizeText(title);
+  const normalizedKeyword = normalizeText(primaryKeyword);
+  if (!normalizedKeyword) return true;
+  if (normalizedTitle.includes(normalizedKeyword)) return true;
+
+  const latinTokens = primaryKeyword.toLowerCase().match(/[a-z0-9]+/g) ?? [];
+  if (latinTokens.some((token) => !normalizedTitle.includes(token))) return false;
+
+  const keywordChars = [...normalizedKeyword].filter((char) => /[\u4e00-\u9fa5]/.test(char));
+  if (keywordChars.length === 0) return latinTokens.length > 0;
+
+  const titleChars = [...normalizedTitle].filter((char) => /[\u4e00-\u9fa5]/.test(char));
+  let matched = 0;
+  let searchFrom = 0;
+  for (const char of keywordChars) {
+    const index = titleChars.indexOf(char, searchFrom);
+    if (index === -1) continue;
+    matched += 1;
+    searchFrom = index + 1;
+  }
+
+  return matched / keywordChars.length >= 0.68;
 }
 
 function normalizeFile(file: string) {

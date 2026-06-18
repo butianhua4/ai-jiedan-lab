@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T18:14:17.930Z",
+  "generatedAt": "2026-06-18T18:43:15.152Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -13,3969 +13,12 @@
     "publicItems": 500,
     "recommendedItems": 3,
     "scopedItems": 516,
-    "warningItems": 92,
+    "warningItems": 0,
     "waveItems": 3,
     "waveItemsWithBlockingIssues": 0
   },
   "blockingItems": [],
-  "warningItems": [
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-assisted-vs-automated-delivery-mistakes",
-      "category": "AI 自由职业路线",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "新手用 AI 辅助做项目时最容易犯的错误：直接复制输出、跳过测试、夸大承诺、忽略敏感数据和交付边界。",
-        "headline": "AI 辅助交付常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/ai-assisted-vs-automated-delivery-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-assisted-vs-automated-delivery-mistakes",
-      "status": "published",
-      "tags": [
-        "AI 辅助交付",
-        "交付错误",
-        "AI 工具实践",
-        "新手避坑"
-      ],
-      "title": "AI 辅助交付常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-beginner-project-fit-check-mistakes",
-      "category": "AI 自由职业路线",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/ai-beginner-project-fit-check-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "AI 新手判断能不能接项目时，常见错误包括只看预算、相信 simple、跳过材料检查、不会写边界和把学习任务当成交付任务。",
-        "headline": "AI 新手判断接项目时的常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/ai-beginner-project-fit-check-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-beginner-project-fit-check-mistakes",
-      "status": "published",
-      "tags": [
-        "AI 工具实践",
-        "项目错误",
-        "项目判断",
-        "新手避坑"
-      ],
-      "title": "AI 新手判断接项目时的常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-freelance-30-day-execution-mistakes",
-      "category": "AI 自由职业路线",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/ai-freelance-30-day-execution-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "新手执行 30 天 AI 工具实践计划时，常见错误包括第一周急着投标、每天换工具、没有作品集、忽略人工审核和误接高风险项目。",
-        "headline": "新手 30 天 AI 工具实践计划常见执行错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/ai-freelance-30-day-execution-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-freelance-30-day-execution-mistakes",
-      "status": "published",
-      "tags": [
-        "AI 工具实践",
-        "30 天计划",
-        "执行错误",
-        "新手避坑"
-      ],
-      "title": "新手 30 天 AI 工具实践计划常见执行错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-freelance-automation-compliance-risk-mistakes",
-      "category": "AI 自由职业路线",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "intermediate",
-      "file": "content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "新手做 AI 自动化项目时常见的合规错误：未审核发布、自动承诺客户、混用敏感数据、缺少日志和误改 sitemap。",
-        "headline": "AI 自动化项目常见合规错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/ai-freelance-automation-compliance-risk-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-freelance-automation-compliance-risk-mistakes",
-      "status": "published",
-      "tags": [
-        "AI 自动化",
-        "合规错误",
-        "AI 工具实践",
-        "人工审核"
-      ],
-      "title": "AI 自动化项目常见合规错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-freelance-common-misconceptions-mistakes",
-      "category": "AI 自由职业路线",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/ai-freelance-common-misconceptions-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "AI 工具新手常见错误包括过度相信工具、低估客户沟通、跳过审核、误把学习项目当交付项目，以及让自动化越过人工确认。",
-        "headline": "AI 工具实践误区的常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/ai-freelance-common-misconceptions-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-freelance-common-misconceptions-mistakes",
-      "status": "published",
-      "tags": [
-        "AI 工具实践",
-        "误区修正",
-        "新手避坑",
-        "交付风险"
-      ],
-      "title": "AI 工具实践误区的常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-freelance-failure-review-mistakes",
-      "category": "AI 自由职业路线",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/ai-freelance-failure-review-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "AI 工具实践失败后，常见错误包括只复盘情绪、不看原始证据、忽略 AI 输出问题、没有记录范围变化、把复盘结论写得太空。本文给出修正步骤。",
-        "headline": "AI 项目失败复盘常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/ai-freelance-failure-review-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-freelance-failure-review-mistakes",
-      "status": "published",
-      "tags": [
-        "AI 工具实践",
-        "失败复盘",
-        "常见错误",
-        "项目复盘"
-      ],
-      "title": "AI 项目失败复盘常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-freelance-first-7-days-mistakes",
-      "category": "AI 自由职业路线",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/ai-freelance-first-7-days-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "AI 工具新手做 7 天准备时，常见问题不是工具不够多，而是服务边界不清、练习没有证据、报价忽略验证、客户问题没有问全。本文整理错误和修正步骤。",
-        "headline": "AI 工具新手 7 天准备常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/ai-freelance-first-7-days-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-freelance-first-7-days-mistakes",
-      "status": "published",
-      "tags": [
-        "AI 工具实践",
-        "7 天准备",
-        "常见错误",
-        "新手教程"
-      ],
-      "title": "AI 工具新手 7 天准备常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-freelance-service-page-copy-mistakes",
-      "category": "AI 自由职业路线",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/ai-freelance-service-page-copy-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "AI 工具新手写服务页时，常见错误包括夸大能力、只堆工具名、没有交付物、缺少验证方式、不写不包含范围。本文给出修正步骤。",
-        "headline": "AI 服务页文案常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/ai-freelance-service-page-copy-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-freelance-service-page-copy-mistakes",
-      "status": "published",
-      "tags": [
-        "AI 工具实践",
-        "服务页文案",
-        "常见错误",
-        "客户沟通"
-      ],
-      "title": "AI 服务页文案常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-freelance-skill-roadmap-mistakes",
-      "category": "AI 自由职业路线",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/ai-freelance-skill-roadmap-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "AI 工具新手排技能路线时，常见错误包括先学复杂工具、忽略人工审核、没有交付验证、只学制作不学沟通。本文整理错误和修正步骤。",
-        "headline": "AI 工具技能路线图常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/ai-freelance-skill-roadmap-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-freelance-skill-roadmap-mistakes",
-      "status": "published",
-      "tags": [
-        "AI 工具实践",
-        "技能路线图",
-        "常见错误",
-        "新手教程"
-      ],
-      "title": "AI 工具技能路线图常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-output-unstable-risk-control-mistakes",
-      "category": "AI 自由职业路线",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/ai-output-unstable-risk-control-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "AI 输出不稳定时，常见错误包括反复生成、不固定输入、让 AI 自审、没有验证记录、交付说明过度承诺。本文给出修正步骤。",
-        "headline": "AI 输出不稳定风险控制常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/ai-output-unstable-risk-control-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-output-unstable-risk-control-mistakes",
-      "status": "published",
-      "tags": [
-        "AI 工具实践",
-        "风险控制",
-        "常见错误",
-        "人工审核"
-      ],
-      "title": "AI 输出不稳定风险控制常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-small-project-practice-topics-mistakes",
-      "category": "AI 自由职业路线",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/ai-small-project-practice-topics-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "AI 工具新手做练习项目时，常见错误包括选题太大、材料未授权、只展示截图、不写验证方式、把练习包装成客户案例。本文给出修正步骤。",
-        "headline": "AI 小项目练习常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/ai-small-project-practice-topics-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-small-project-practice-topics-mistakes",
-      "status": "published",
-      "tags": [
-        "AI 工具实践",
-        "练习项目",
-        "常见错误",
-        "作品集"
-      ],
-      "title": "AI 小项目练习常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/ai-tools-stack-free-start-mistakes",
-      "category": "AI 自由职业路线",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/ai-tools-stack-free-start-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "AI 工具新手选免费工具栈时，常见错误包括工具太多、只追新工具、忽略人工审核、没有验证方法、过早付费升级。本文给出修正步骤。",
-        "headline": "AI 免费工具栈常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/ai-tools-stack-free-start-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "ai-tools-stack-free-start-mistakes",
-      "status": "published",
-      "tags": [
-        "AI 工具实践",
-        "工具栈",
-        "常见错误",
-        "免费工具"
-      ],
-      "title": "AI 免费工具栈常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/api-key-invalid-or-missing-mistakes",
-      "category": "报错解决",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "intermediate",
-      "file": "content/blog/api-key-invalid-or-missing-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理 API Key 无效或缺失排查中的常见错误：变量名不一致、没有重启服务、前端暴露密钥、线上变量遗漏、权限额度不足。",
-        "headline": "API Key 无效或缺失的常见错误和修复步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/api-key-invalid-or-missing-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "api-key-invalid-or-missing-mistakes",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "API Key",
-        "常见错误",
-        "AI 工具实践"
-      ],
-      "title": "API Key 无效或缺失的常见错误和修复步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/before-first-ai-freelance-job-mistakes",
-      "category": "新手路线",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/before-first-ai-freelance-job-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手第一次接 AI 小单前常见错误：没有作品证据、范围写太大、报价不含修改、直接交 AI 输出、忽略客户权限风险。",
-        "headline": "第一次接 AI 小单前最容易犯的错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/before-first-ai-freelance-job-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "before-first-ai-freelance-job-mistakes",
-      "status": "published",
-      "tags": [
-        "新手路线",
-        "AI 工具实践",
-        "常见错误",
-        "自由职业"
-      ],
-      "title": "第一次接 AI 小单前最容易犯的错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/bugfix-delivery-note-template",
-      "category": "模板和清单",
-      "contentType": "template",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/bugfix-delivery-note-template.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "新手完成 bug 修复后，应把问题原因、修改内容、测试结果、未覆盖范围和后续风险写进交付说明，减少客户验收争议。",
-        "headline": "Bug 修复交付说明模板怎么写",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/bugfix-delivery-note-template"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "bugfix-delivery-note-template",
-      "status": "published",
-      "tags": [
-        "模板和清单",
-        "Bug 修复",
-        "AI 工具实践",
-        "交付说明"
-      ],
-      "title": "Bug 修复交付说明模板怎么写",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: template"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-code-automation-human-review-mistakes",
-      "category": "工具流程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/claude-code-automation-human-review-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理 Claude Code 自动化中常见的人工审核错误：输入未脱敏、范围过大、不看 diff、不跑测试、交付说明缺少未覆盖范围。",
-        "headline": "Claude Code 自动化最容易忽略的人工审核错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/claude-code-automation-human-review-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-automation-human-review-mistakes",
-      "status": "published",
-      "tags": [
-        "工具流程",
-        "Claude Code",
-        "常见错误",
-        "人工审核"
-      ],
-      "title": "Claude Code 自动化最容易忽略的人工审核错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-code-beginner-mistakes-mistakes",
-      "category": "工具流程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/claude-code-beginner-mistakes-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理 Claude Code 新手常见错误：不读上下文、直接接受改动、不看 diff、不跑检查、忽略客户权限和交付说明，并给出修正方法。",
-        "headline": "Claude Code 新手常见错误和修正方法",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/claude-code-beginner-mistakes-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-beginner-mistakes-mistakes",
-      "status": "published",
-      "tags": [
-        "工具流程",
-        "Claude Code",
-        "常见错误",
-        "AI 工具实践"
-      ],
-      "title": "Claude Code 新手常见错误和修正方法",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-code-beginner-use-cases-mistakes",
-      "category": "工具流程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/claude-code-beginner-use-cases-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理 Claude Code 新手选择使用场景时的常见错误：选高风险项目、忽略复现条件、低估权限风险、没有测试证据和交付边界。",
-        "headline": "Claude Code 新手选使用场景时的常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/claude-code-beginner-use-cases-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-beginner-use-cases-mistakes",
-      "status": "published",
-      "tags": [
-        "工具流程",
-        "Claude Code",
-        "常见错误",
-        "AI 工具实践"
-      ],
-      "title": "Claude Code 新手选使用场景时的常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-code-bug-prompt-mistakes",
-      "category": "工具流程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/claude-code-bug-prompt-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理 Claude Code bug prompt 常见错误：缺少复现步骤、没有预期结果、直接贴敏感信息、让工具大范围修改、不要求测试证据。",
-        "headline": "Claude Code Bug Prompt 常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/claude-code-bug-prompt-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-bug-prompt-mistakes",
-      "status": "published",
-      "tags": [
-        "工具流程",
-        "Claude Code",
-        "常见错误",
-        "Bug 修复"
-      ],
-      "title": "Claude Code Bug Prompt 常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-code-client-questions-mistakes",
-      "category": "工具流程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/claude-code-client-questions-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理 Claude Code 项目前客户沟通常见错误：不问复现步骤、不问环境、不问权限、不问验收、直接接受客户说很简单。",
-        "headline": "Claude Code 项目前问客户时的常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/claude-code-client-questions-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-client-questions-mistakes",
-      "status": "published",
-      "tags": [
-        "工具流程",
-        "Claude Code",
-        "常见错误",
-        "客户沟通"
-      ],
-      "title": "Claude Code 项目前问客户时的常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-code-common-commands-mistakes",
-      "category": "工具流程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/claude-code-common-commands-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理 Claude Code 新手运行常用命令时的常见错误：不看命令用途、不区分环境、不记录输出、把构建通过当成业务验收。",
-        "headline": "Claude Code 新手运行常用命令时的常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/claude-code-common-commands-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-common-commands-mistakes",
-      "status": "published",
-      "tags": [
-        "工具流程",
-        "Claude Code",
-        "常见错误",
-        "命令行"
-      ],
-      "title": "Claude Code 新手运行常用命令时的常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-code-delivery-note-mistakes",
-      "category": "工具流程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/claude-code-delivery-note-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手用 Claude Code 项目后写交付说明的常见错误：只说已修好、不写验证、不写未覆盖范围、暴露敏感信息、过度承诺。",
-        "headline": "Claude Code 交付说明常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/claude-code-delivery-note-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-delivery-note-mistakes",
-      "status": "published",
-      "tags": [
-        "工具流程",
-        "Claude Code",
-        "常见错误",
-        "交付说明"
-      ],
-      "title": "Claude Code 交付说明常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-code-error-debug-mistakes",
-      "category": "工具流程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/claude-code-error-debug-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手用 Claude Code 排查客户报错时的常见错误：不拿错误原文、不问复现环境、盲跑命令、暴露敏感日志、把诊断写成修复。",
-        "headline": "Claude Code 排查客户报错时的常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/claude-code-error-debug-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-error-debug-mistakes",
-      "status": "published",
-      "tags": [
-        "工具流程",
-        "Claude Code",
-        "常见错误",
-        "错误排查"
-      ],
-      "title": "Claude Code 排查客户报错时的常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-code-github-file-scope-mistakes",
-      "category": "工具流程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/claude-code-github-file-scope-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手用 Claude Code 看客户 GitHub 文件时的常见范围错误：不问分支、不限文件、不确认只读、不脱敏、把单文件检查扩大成全仓库维护。",
-        "headline": "Claude Code 看 GitHub 文件时的常见范围错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/claude-code-github-file-scope-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-github-file-scope-mistakes",
-      "status": "published",
-      "tags": [
-        "工具流程",
-        "Claude Code",
-        "GitHub",
-        "常见错误"
-      ],
-      "title": "Claude Code 看 GitHub 文件时的常见范围错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-code-install-prerequisites-mistakes",
-      "category": "工具流程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/claude-code-install-prerequisites-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手安装 Claude Code 前常见错误：不确认系统和终端、不看 Node 版本、不记录错误原文、直接在客户项目里试错、混淆安装问题和项目问题。",
-        "headline": "Claude Code 安装准备常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/claude-code-install-prerequisites-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-install-prerequisites-mistakes",
-      "status": "published",
-      "tags": [
-        "工具流程",
-        "Claude Code",
-        "常见错误",
-        "安装准备"
-      ],
-      "title": "Claude Code 安装准备常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-code-low-risk-freelance-jobs-mistakes",
-      "category": "工具流程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/claude-code-low-risk-freelance-jobs-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手用 Claude Code 判断低风险小单时的常见错误：只听客户说简单、不问权限、不写验收、忽略未覆盖范围、把诊断做成长期支持。",
-        "headline": "Claude Code 低风险项目常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/claude-code-low-risk-freelance-jobs-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-low-risk-freelance-jobs-mistakes",
-      "status": "published",
-      "tags": [
-        "工具流程",
-        "Claude Code",
-        "常见错误",
-        "低风险项目"
-      ],
-      "title": "Claude Code 低风险项目常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-code-nextjs-page-check-mistakes",
-      "category": "工具流程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/claude-code-nextjs-page-check-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手用 Claude Code 检查 Next.js 页面时的常见错误：不问页面路径、不确认数据来源、不跑本地验证、把页面小改扩成全站重构。",
-        "headline": "Claude Code 检查 Next.js 页面时的常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/claude-code-nextjs-page-check-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-nextjs-page-check-mistakes",
-      "status": "published",
-      "tags": [
-        "工具流程",
-        "Claude Code",
-        "Next.js",
-        "常见错误"
-      ],
-      "title": "Claude Code 检查 Next.js 页面时的常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-code-proposal-review-mistakes",
-      "category": "工具流程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/claude-code-proposal-review-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手用 Claude Code 审阅 proposal 时的常见错误：直接发送 AI 初稿、过度承诺、不写未覆盖范围、暴露敏感信息、缺少客户追问。",
-        "headline": "Claude Code 审阅 Proposal 时的常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/claude-code-proposal-review-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-proposal-review-mistakes",
-      "status": "published",
-      "tags": [
-        "工具流程",
-        "Claude Code",
-        "常见错误",
-        "Proposal"
-      ],
-      "title": "Claude Code 审阅 Proposal 时的常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-code-small-project-tasks-mistakes",
-      "category": "工具流程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/claude-code-small-project-tasks-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手用 Claude Code 接小项目时的常见错误：把模糊需求当小单、忽略权限、没有验收方式、把诊断写成修复、接成长期维护。",
-        "headline": "Claude Code 小项目常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/claude-code-small-project-tasks-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-small-project-tasks-mistakes",
-      "status": "published",
-      "tags": [
-        "工具流程",
-        "Claude Code",
-        "常见错误",
-        "小项目"
-      ],
-      "title": "Claude Code 小项目常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/claude-code-vs-codex-web-editing-mistakes",
-      "category": "Claude Code 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/claude-code-vs-codex-web-editing-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手用 Claude Code 或 Codex 做网页修改时常见的错误：需求没拆清、没跑构建、忽略移动端、误碰敏感配置和交付说明不足。",
-        "headline": "Claude Code 和 Codex 网页修改常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/claude-code-vs-codex-web-editing-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "claude-code-vs-codex-web-editing-mistakes",
-      "status": "published",
-      "tags": [
-        "Claude Code",
-        "Codex",
-        "网页修改",
-        "常见错误"
-      ],
-      "title": "Claude Code 和 Codex 网页修改常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-automation-steps-not-skip-mistakes",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-automation-steps-not-skip-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理新手用 Codex 做自动化开发时常见的错误：没确认需求、没看工作区、盲目执行命令、没跑验证、交付记录不足。",
-        "headline": "Codex 自动化开发流程常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-automation-steps-not-skip-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-automation-steps-not-skip-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "自动化开发",
-        "常见错误",
-        "AI 工具实践"
-      ],
-      "title": "Codex 自动化开发流程常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-avoid-secret-leak-mistakes",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "intermediate",
-      "file": "content/blog/codex-avoid-secret-leak-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理 AI 工具新手使用 Codex 时常见的密钥泄露错误：复制 .env、提交日志、把 token 写进示例、忽略 git 历史、用生产环境测试，以及发现问题后的处理顺序。",
-        "headline": "Codex 做项目时常见密钥泄露错误和修复顺序",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-avoid-secret-leak-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-avoid-secret-leak-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "密钥安全",
-        "错误复盘",
-        "AI 工具实践"
-      ],
-      "title": "Codex 做项目时常见密钥泄露错误和修复顺序",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-bugfix-rollback-record-mistakes",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-bugfix-rollback-record-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理 AI 工具新手用 Codex 修 bug 时常见错误：不看工作区、缺复现记录、改动范围过大、没有验证命令、忘记回滚点，以及发现问题后的修复顺序。",
-        "headline": "Codex 修 bug 回滚记录常见错误和修复顺序",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-bugfix-rollback-record-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-bugfix-rollback-record-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "Bug 修复",
-        "错误复盘",
-        "AI 工具实践"
-      ],
-      "title": "Codex 修 bug 回滚记录常见错误和修复顺序",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-client-requirement-questions-mistakes",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-client-requirement-questions-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理 AI 工具新手用 Codex 处理客户需求时常见错误：没问验收标准、没确认权限、直接报价、把模糊需求交给工具、忽略风险，以及补救顺序。",
-        "headline": "Codex 客户需求澄清常见错误和修复顺序",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-client-requirement-questions-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-client-requirement-questions-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "需求澄清",
-        "错误复盘",
-        "AI 工具实践"
-      ],
-      "title": "Codex 客户需求澄清常见错误和修复顺序",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-codex-4-31",
-      "category": "Codex 新手教程",
-      "contentType": "template",
-      "date": "2026-06-01",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-codex-4-31.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-01",
-        "description": "新手了解 Codex 时，不要先急着项目。先确认它能帮你做什么、不能替你做什么，再用一个小项目练习需求拆解、代码修改、测试和交付记录。",
-        "headline": "Codex 是什么：新手怎么开始",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-codex-4-31"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-codex-4-31",
-      "status": "published",
-      "tags": [
-        "Codex 新手教程",
-        "Codex 入门",
-        "AI 工具实践",
-        "新手教程"
-      ],
-      "title": "Codex 是什么：新手怎么开始",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: template"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-codex-4-34",
-      "category": "Codex 新手教程",
-      "contentType": "tool-guide",
-      "date": "2026-06-01",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-codex-4-34.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-01",
-        "description": "用 Codex 做第一个网页时，先从单页练习开始：确定主题、准备内容、生成结构、检查样式、运行构建、记录交付。不要直接拿客户复杂站点练手。",
-        "headline": "Codex 怎么做第一个网页：新手练习流程",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-codex-4-34"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-codex-4-34",
-      "status": "published",
-      "tags": [
-        "Codex 新手教程",
-        "第一个网页",
-        "AI 工具实践",
-        "作品集"
-      ],
-      "title": "Codex 怎么做第一个网页：新手练习流程",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: tool-guide"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-codex-claude-code-4-40",
-      "category": "Codex 新手教程",
-      "contentType": "template",
-      "date": "2026-06-01",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-codex-claude-code-4-40.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-01",
-        "description": "Codex 和 Claude Code 都可以辅助编程，新手不要只看工具名。先看项目环境、授权方式、代码规模、验证流程、隐私边界和自己能否审核输出。",
-        "headline": "Codex 和 Claude Code 怎么选：新手判断模板",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-codex-claude-code-4-40"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-codex-claude-code-4-40",
-      "status": "published",
-      "tags": [
-        "Codex 新手教程",
-        "Claude Code",
-        "AI 编程工具",
-        "AI 工具实践"
-      ],
-      "title": "Codex 和 Claude Code 怎么选：新手判断模板",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: template"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-codex-css-bug-4-35",
-      "category": "Codex 新手教程",
-      "contentType": "pricing-guide",
-      "date": "2026-06-01",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-codex-css-bug-4-35.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-01",
-        "description": "用 Codex 修 CSS bug 时，先确认页面、浏览器、屏幕宽度、复现截图、预期效果和验收标准。不要把一个样式小问题扩大成整站重构。",
-        "headline": "Codex 修 CSS bug 的流程：新手项目练习边界",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-codex-css-bug-4-35"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-codex-css-bug-4-35",
-      "status": "published",
-      "tags": [
-        "Codex 新手教程",
-        "CSS bug",
-        "AI 工具实践",
-        "报价边界"
-      ],
-      "title": "Codex 修 CSS bug 的流程：新手项目练习边界",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: pricing-guide"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-codex-github-4-36",
-      "category": "Codex 新手教程",
-      "contentType": "roadmap",
-      "date": "2026-06-01",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-codex-github-4-36.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-01",
-        "description": "用 Codex 辅助改代码时，GitHub 负责留下可复查记录。新手应先学会分支、提交、PR、diff、检查结果和客户授权边界，再把 AI 修改用于练习或交付。",
-        "headline": "Codex 和 GitHub 怎么配合：新手工作流",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-codex-github-4-36"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-codex-github-4-36",
-      "status": "published",
-      "tags": [
-        "Codex 新手教程",
-        "GitHub 工作流",
-        "AI 工具实践",
-        "代码交付"
-      ],
-      "title": "Codex 和 GitHub 怎么配合：新手工作流",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: roadmap"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-codex-npm-install-4-33",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-01",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-codex-npm-install-4-33.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-01",
-        "description": "npm install 报错时，不要先删 lockfile 或乱换镜像。先保存完整日志，确认 Node.js、包管理器、项目路径、网络、权限和依赖冲突，再让 Codex 辅助分析。",
-        "headline": "Codex npm install 报错怎么办：新手诊断流程",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-codex-npm-install-4-33"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-codex-npm-install-4-33",
-      "status": "published",
-      "tags": [
-        "Codex 新手教程",
-        "npm install 报错",
-        "报错解决",
-        "AI 工具实践"
-      ],
-      "title": "Codex npm install 报错怎么办：新手诊断流程",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-codex-upwork-4-39",
-      "category": "Codex 新手教程",
-      "contentType": "comparison",
-      "date": "2026-06-01",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-codex-upwork-4-39.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-01",
-        "description": "用 Codex 辅助接 Upwork 小单前，先判断需求是否低风险、材料是否完整、客户是否愿意确认范围、是否需要敏感权限，以及你能否独立验证交付结果。",
-        "headline": "Codex 接 Upwork 小单怎么判断",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-codex-upwork-4-39"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-codex-upwork-4-39",
-      "status": "published",
-      "tags": [
-        "Codex 新手教程",
-        "Upwork 项目",
-        "AI 工具实践",
-        "需求判断"
-      ],
-      "title": "Codex 接 Upwork 小单怎么判断",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: comparison"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-css-spacing-responsive-mistakes",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-css-spacing-responsive-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "新手搜索“Codex 修 CSS 间距和响应式问题怎么做：常见错误和解决步骤”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
-        "headline": "Codex 修 CSS 间距和响应式问题怎么做：常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-css-spacing-responsive-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-css-spacing-responsive-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex 新手教程",
-        "Codex 修 CSS 间距和响应式问题怎么做：常见错误和解决步骤",
-        "AI 工具教程",
-        "新手教程"
-      ],
-      "title": "Codex 修 CSS 间距和响应式问题怎么做：常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-edit-existing-ui-mistakes",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-edit-existing-ui-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理 AI 工具新手用 Codex 修改现有网页 UI 时常见错误：没留截图、改动范围过大、忽略响应式、破坏设计系统、没写交付记录，以及补救顺序。",
-        "headline": "Codex 修改现有网页 UI 常见错误和修复顺序",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-edit-existing-ui-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-edit-existing-ui-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "UI 修改",
-        "错误复盘",
-        "AI 工具实践"
-      ],
-      "title": "Codex 修改现有网页 UI 常见错误和修复顺序",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-first-day-guide-mistakes",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-first-day-guide-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理 Codex 新手第一天最常见的错误：目标太大、直接改文件、跳过构建、误判项目判断能力、忽视平台规则，并给出对应纠正步骤。",
-        "headline": "Codex 是什么，新手第一天应该怎么用：常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-first-day-guide-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-first-day-guide-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex 新手教程",
-        "Codex 是什么，新手第一天应该怎么用：常见错误和解决步骤",
-        "AI 工具实践",
-        "新手教程"
-      ],
-      "title": "Codex 是什么，新手第一天应该怎么用：常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-first-landing-page-mistakes",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-first-landing-page-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理 Codex 新手做第一个落地页时常见的错误：主题太大、素材不清、一次改太多、忽视移动端、跳过构建和误判项目风险。",
-        "headline": "Codex 怎么做第一个落地页：常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-first-landing-page-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-first-landing-page-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex 新手教程",
-        "Codex 怎么做第一个落地页：常见错误和解决步骤",
-        "AI 工具实践",
-        "新手教程"
-      ],
-      "title": "Codex 怎么做第一个落地页：常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-github-before-commit-checklist",
-      "category": "Codex 新手教程",
-      "contentType": "pricing-guide",
-      "date": "2026-06-01",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-github-before-commit-checklist.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-01",
-        "datePublished": "2026-06-01",
-        "description": "新手遇到“Codex 和 GitHub 怎么配合：提交代码前检查”时，通常不知道如何判断范围、准备材料、识别风险和写出稳妥回复。读完后能按步骤做初步判断，知道该问客户什么、该测试什么、哪些情况需要暂缓。",
-        "headline": "Codex 和 GitHub 怎么配合：提交代码前检查",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-github-before-commit-checklist"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-github-before-commit-checklist",
-      "status": "published",
-      "tags": [
-        "Codex 新手教程",
-        "Codex 和 GitHub 怎么配合：提交代码前检查",
-        "AI 工具实践",
-        "新手教程"
-      ],
-      "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
-      "updatedAt": "2026-06-01",
-      "warnings": [
-        "contentType is uncommon: pricing-guide"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-github-workflow-mistakes",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-github-workflow-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理 AI 工具新手用 Codex 和 GitHub 提交代码时常见错误：直接推主分支、混入无关改动、没跑检查、提交敏感文件、PR 描述空泛，以及补救顺序。",
-        "headline": "Codex GitHub 工作流常见错误和修复顺序",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-github-workflow-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-github-workflow-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "GitHub",
-        "错误复盘",
-        "AI 工具实践"
-      ],
-      "title": "Codex GitHub 工作流常见错误和修复顺序",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-install-prerequisites-mistakes",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-install-prerequisites-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理新手安装 Codex 前最常见的环境错误：终端路径混乱、Node 版本冲突、Git 未配置、权限不清、账号授权缺失，以及更稳的修复顺序。",
-        "headline": "Codex 安装前置条件常见错误和修复顺序",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-install-prerequisites-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-install-prerequisites-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "安装准备",
-        "AI 工具实践",
-        "故障排查"
-      ],
-      "title": "Codex 安装前置条件常见错误和修复顺序",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-npm-install-error-beginner-fix",
-      "category": "报错解决",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-npm-install-error-beginner-fix.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-02",
-        "datePublished": "2026-06-02",
-        "description": "新手用 Codex 接触 Next.js 或 Node.js 项目时，npm install 报错很常见。本文用可执行步骤解释如何判断 Node 版本、依赖冲突、网络和权限问题，避免在没有把握时承诺客户。",
-        "headline": "Codex 项目 npm install 报错怎么办：新手排查步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-npm-install-error-beginner-fix"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-npm-install-error-beginner-fix",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "npm install",
-        "Node.js",
-        "报错解决"
-      ],
-      "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
-      "updatedAt": "2026-06-02",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-npm-install-errors-mistakes",
-      "category": "Troubleshooting",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-npm-install-errors-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理新手排查 npm install 报错时常见的错误：跑错目录、混用包管理器、乱删 lockfile、盲目升级依赖，以及更稳的修复顺序。",
-        "headline": "npm install 报错常见错误和修复顺序",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-npm-install-errors-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-npm-install-errors-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "npm install",
-        "报错排查",
-        "故障排查"
-      ],
-      "title": "npm install 报错常见错误和修复顺序",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-portfolio-page-assets-mistakes",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-portfolio-page-assets-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理 AI 工具新手准备作品集素材时常见的错误：案例夸大、截图授权不清、证据不足、CTA 过度，以及更稳的修复顺序。",
-        "headline": "Codex 作品集素材常见错误和修复顺序",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-portfolio-page-assets-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-portfolio-page-assets-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "作品集",
-        "AI 工具实践",
-        "故障排查"
-      ],
-      "title": "Codex 作品集素材常见错误和修复顺序",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-readme-review-mistakes",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-readme-review-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理新手用 Codex 审核 README 时常见的错误：命令未验证、环境变量遗漏、功能描述夸大、敏感信息暴露，以及更稳的修复顺序。",
-        "headline": "Codex README 审核常见错误和修复顺序",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-readme-review-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-readme-review-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "README 审核",
-        "AI 工具实践",
-        "故障排查"
-      ],
-      "title": "Codex README 审核常见错误和修复顺序",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-review-generated-code-mistakes",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-review-generated-code-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理新手审核 Codex 生成代码时常见的错误，以及建议的修复顺序：先保住现场，再缩小范围、运行验证、记录风险。",
-        "headline": "Codex 代码审查常见错误和修复顺序",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-review-generated-code-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-review-generated-code-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "代码审查",
-        "AI 工具实践",
-        "故障排查"
-      ],
-      "title": "Codex 代码审查常见错误和修复顺序",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-small-website-delivery-check-mistakes",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-small-website-delivery-check-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理新手交付小网站时常见的错误：只看桌面端、漏测表单、忘记草稿 noindex、错用客户素材、部署后不复查，以及更稳的修复顺序。",
-        "headline": "小网站交付检查常见错误和修复顺序",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-small-website-delivery-check-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-small-website-delivery-check-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "小网站交付",
-        "AI 工具实践",
-        "故障排查"
-      ],
-      "title": "小网站交付检查常见错误和修复顺序",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-tailwind-mobile-check-mistakes",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-tailwind-mobile-check-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理新手检查 Tailwind 移动端样式时常见的错误：只看桌面端、乱用 overflow-hidden、断点反了、按钮太小、修复范围过大，以及更稳的修复顺序。",
-        "headline": "Tailwind 移动端检查常见错误和修复顺序",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-tailwind-mobile-check-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-tailwind-mobile-check-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "Tailwind",
-        "移动端检查",
-        "故障排查"
-      ],
-      "title": "Tailwind 移动端检查常见错误和修复顺序",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-upwork-job-risk-check-mistakes",
-      "category": "Upwork 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-upwork-job-risk-check-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理新手判断 Upwork 任务风险时常见的错误：被 simple 吸引、忽略权限、低估测试时间、没问验收标准、平台边界不清，以及更稳的修复顺序。",
-        "headline": "Upwork 任务风险判断常见错误和修复顺序",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-upwork-job-risk-check-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-upwork-job-risk-check-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "Upwork",
-        "AI 工具实践",
-        "故障排查"
-      ],
-      "title": "Upwork 任务风险判断常见错误和修复顺序",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-vercel-deploy-preflight-checklist",
-      "category": "Codex 新手教程",
-      "contentType": "roadmap",
-      "date": "2026-06-01",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-01",
-        "datePublished": "2026-06-01",
-        "description": "新手遇到“Codex 部署 Vercel 前检查什么：上线前清单”时，通常不知道如何判断范围、准备材料、识别风险和写出稳妥回复。读完后能按步骤做初步判断，知道该问客户什么、该测试什么、哪些情况需要暂缓。",
-        "headline": "Codex 部署 Vercel 前检查什么：上线前清单",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-vercel-deploy-preflight-checklist"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-vercel-deploy-preflight-checklist",
-      "status": "published",
-      "tags": [
-        "Codex 新手教程",
-        "Codex 部署 Vercel 前检查什么：上线前清单",
-        "AI 工具实践",
-        "新手教程"
-      ],
-      "title": "Codex 部署 Vercel 前检查什么：上线前清单",
-      "updatedAt": "2026-06-01",
-      "warnings": [
-        "contentType is uncommon: roadmap"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-vercel-deployment-mistakes",
-      "category": "Deployment",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-vercel-deployment-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理新手排查 Vercel 部署问题时常见的错误：本地没 build、环境变量遗漏、混用包管理器、域名未确认、部署后不复查，以及更稳的修复顺序。",
-        "headline": "Vercel 部署常见错误和修复顺序",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-vercel-deployment-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-vercel-deployment-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "Vercel",
-        "部署检查",
-        "故障排查"
-      ],
-      "title": "Vercel 部署常见错误和修复顺序",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-vs-claude-code-beginner-checklist",
-      "category": "Codex 新手教程",
-      "contentType": "comparison",
-      "date": "2026-06-01",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-01",
-        "datePublished": "2026-06-01",
-        "description": "新手遇到“Codex 和 Claude Code 怎么选：新手对比清单”时，通常不知道如何判断范围、准备材料、识别风险和写出稳妥回复。读完后能按步骤做初步判断，知道该问客户什么、该测试什么、哪些情况需要暂缓。",
-        "headline": "Codex 和 Claude Code 怎么选：新手对比清单",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-vs-claude-code-beginner-checklist"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-vs-claude-code-beginner-checklist",
-      "status": "published",
-      "tags": [
-        "Codex 新手教程",
-        "Codex 和 Claude Code 怎么选：新手对比清单",
-        "AI 工具实践",
-        "新手教程"
-      ],
-      "title": "Codex 和 Claude Code 怎么选：新手对比清单",
-      "updatedAt": "2026-06-01",
-      "warnings": [
-        "contentType is uncommon: comparison"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-vs-cursor-web-editing-mistakes",
-      "category": "工具对比",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-vs-cursor-web-editing-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理新手用 Codex 和 Cursor 改网页时常见的错误：工具切换混乱、没看 diff、没跑 build、过度重写组件、缺少交付记录，以及更稳的修复顺序。",
-        "headline": "Codex 和 Cursor 改网页常见错误和修复顺序",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-vs-cursor-web-editing-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-vs-cursor-web-editing-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "Cursor",
-        "网页修改",
-        "故障排查"
-      ],
-      "title": "Codex 和 Cursor 改网页常见错误和修复顺序",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/codex-windows-install-failed-mistakes",
-      "category": "Codex 新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/codex-windows-install-failed-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-02",
-        "description": "整理新手在 Windows 上安装 Codex 时常见错误：跑错终端、路径混乱、Node 版本冲突、权限误判、网络代理问题，以及更稳的修复顺序。",
-        "headline": "Windows 安装 Codex 常见错误和修复顺序",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/codex-windows-install-failed-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "codex-windows-install-failed-mistakes",
-      "status": "published",
-      "tags": [
-        "Codex",
-        "Windows",
-        "安装失败",
-        "故障排查"
-      ],
-      "title": "Windows 安装 Codex 常见错误和修复顺序",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/daily-ai-freelance-practice-log-mistakes",
-      "category": "新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/daily-ai-freelance-practice-log-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理 AI 工具新手记录每日练习时的常见错误：只写流水账、没有验证、复制 AI 输出、暴露敏感信息、不会转化作品集，并给出修正步骤。",
-        "headline": "每天项目练习记录常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/daily-ai-freelance-practice-log-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "daily-ai-freelance-practice-log-mistakes",
-      "status": "published",
-      "tags": [
-        "新手教程",
-        "练习记录",
-        "常见错误",
-        "AI 工具实践"
-      ],
-      "title": "每天项目练习记录常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/deliver-small-website-with-ai-no-code-mistakes",
-      "category": "新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/deliver-small-website-with-ai-no-code-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手用 AI 交付小网站时的常见错误：范围不清、直接交 AI 生成页面、不验收移动端、忽略素材授权、代管客户账号，并给出更稳的修正步骤。",
-        "headline": "小网站交付常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/deliver-small-website-with-ai-no-code-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "deliver-small-website-with-ai-no-code-mistakes",
-      "status": "published",
-      "tags": [
-        "新手教程",
-        "小网站交付",
-        "常见错误",
-        "AI 工具实践"
-      ],
-      "title": "小网站交付常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/dependency-conflict-fix-mistakes",
-      "category": "报错解决",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/dependency-conflict-fix-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理 dependency conflict 依赖冲突排查中的常见错误：混用包管理器、乱删锁文件、强制安装、忽略 peer dependency、没跑 build，以及更稳的解决顺序。",
-        "headline": "dependency conflict 常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/dependency-conflict-fix-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "dependency-conflict-fix-mistakes",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "依赖冲突",
-        "npm",
-        "故障排查"
-      ],
-      "title": "dependency conflict 常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/dev-works-build-fails-mistakes",
-      "category": "报错解决",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/dev-works-build-fails-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理 build 失败排查中的常见错误：只看 dev、不保存完整日志、关掉类型检查、忽略环境变量、忽略静态生成和路径大小写，以及更稳的解决顺序。",
-        "headline": "npm run dev 能跑但 build 失败常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/dev-works-build-fails-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "dev-works-build-fails-mistakes",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "build 失败",
-        "故障排查",
-        "AI 工具实践"
-      ],
-      "title": "npm run dev 能跑但 build 失败常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/env-variable-missing-fix-mistakes",
-      "category": "报错解决",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "intermediate",
-      "file": "content/blog/env-variable-missing-fix-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理环境变量 missing 排查中的常见错误：泄露密钥、混淆本地和部署环境、把服务端密钥放到客户端、配置后不重新部署，以及更稳的解决顺序。",
-        "headline": "环境变量 missing 常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/env-variable-missing-fix-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "env-variable-missing-fix-mistakes",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "环境变量",
-        "故障排查",
-        "AI 工具实践"
-      ],
-      "title": "环境变量 missing 常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/eslint-error-should-not-disable-mistakes",
-      "category": "报错解决",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/eslint-error-should-not-disable-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理 ESLint error 处理中的常见错误：全局关闭检查、批量加 eslint-disable、忽略 Hook 规则、只看 build 通过，以及更稳的解决顺序。",
-        "headline": "ESLint error 常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/eslint-error-should-not-disable-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "eslint-error-should-not-disable-mistakes",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "ESLint",
-        "故障排查",
-        "AI 工具实践"
-      ],
-      "title": "ESLint error 常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/failed-to-push-some-refs-fix-freelance-scope",
-      "category": "报错解决",
-      "contentType": "freelance-scope",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "从项目角度判断 failed to push some refs 是否适合新手处理：区分普通分支问题、远端领先、冲突、权限不足、保护分支和客户授权边界。",
-        "headline": "failed to push some refs 使用前怎么判断是否适合",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/failed-to-push-some-refs-fix-freelance-scope"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "failed-to-push-some-refs-fix-freelance-scope",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "Git",
-        "项目边界",
-        "AI 工具实践"
-      ],
-      "title": "failed to push some refs 使用前怎么判断是否适合",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: freelance-scope"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/failed-to-push-some-refs-fix-mistakes",
-      "category": "报错解决",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/failed-to-push-some-refs-fix-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理 failed to push some refs 的常见处理错误：忽略远端提交、直接强制推送、推错分支、没看权限、没保存现场，并给出更稳的解决顺序。",
-        "headline": "failed to push some refs 常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/failed-to-push-some-refs-fix-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "failed-to-push-some-refs-fix-mistakes",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "Git",
-        "故障排查",
-        "AI 工具实践"
-      ],
-      "title": "failed to push some refs 常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/first-portfolio-case-realistic-mistakes",
-      "category": "新手教程",
-      "contentType": "mistakes",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/first-portfolio-case-realistic-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手做第一个作品集案例时的常见错误：伪装客户项目、范围过大、没有截图、没有验证命令、忽略版权和把 AI 输出当最终成果，并给出修正方法。",
-        "headline": "第一个作品集案例常见错误和修正方法",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/first-portfolio-case-realistic-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "first-portfolio-case-realistic-mistakes",
-      "status": "published",
-      "tags": [
-        "作品集",
-        "常见错误",
-        "AI 工具实践",
-        "新手教程"
-      ],
-      "title": "第一个作品集案例常见错误和修正方法",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: mistakes"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/first-upwork-project-pricing-checklist",
-      "category": "报价指南",
-      "contentType": "pricing-guide",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-02",
-        "datePublished": "2026-06-02",
-        "description": "新手给第一个 Upwork 项目报价时，不要只看别人报多少。本文从工时、沟通成本、平台抽成、修改次数和交付风险出发，给你一个谨慎的报价检查流程。",
-        "headline": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/first-upwork-project-pricing-checklist"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "first-upwork-project-pricing-checklist",
-      "status": "published",
-      "tags": [
-        "Upwork",
-        "报价",
-        "自由职业",
-        "新手项目练习"
-      ],
-      "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
-      "updatedAt": "2026-06-02",
-      "warnings": [
-        "contentType is uncommon: pricing-guide"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/freelance-beginner-scope-confirmation-mistakes",
-      "category": "新手教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/freelance-beginner-scope-confirmation-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理自由职业新手确认范围时的常见错误：没复述需求、没写不包含事项、无限修改、替客户代管账号、把授权问题当成自己拖延，并给出修正步骤。",
-        "headline": "自由职业范围确认常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/freelance-beginner-scope-confirmation-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "freelance-beginner-scope-confirmation-mistakes",
-      "status": "published",
-      "tags": [
-        "新手教程",
-        "范围确认",
-        "常见错误",
-        "AI 工具实践"
-      ],
-      "title": "自由职业范围确认常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/git-authentication-failed-fix-freelance-scope",
-      "category": "报错解决",
-      "contentType": "freelance-scope",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/git-authentication-failed-fix-freelance-scope.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "从项目角度判断 git authentication failed 是否适合新手处理：区分本地配置、平台权限、客户授权、token 安全、SSH key 和组织规则。",
-        "headline": "git authentication failed 使用前怎么判断是否适合",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/git-authentication-failed-fix-freelance-scope"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "git-authentication-failed-fix-freelance-scope",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "Git",
-        "项目边界",
-        "AI 工具实践"
-      ],
-      "title": "git authentication failed 使用前怎么判断是否适合",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: freelance-scope"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/git-authentication-failed-fix-mistakes",
-      "category": "报错解决",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/git-authentication-failed-fix-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理 git authentication failed 的常见错误：索要客户密码、把 token 写进代码、HTTPS 和 SSH 混查、忽略权限、误删凭据，并给出更稳的恢复顺序。",
-        "headline": "git authentication failed 常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/git-authentication-failed-fix-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "git-authentication-failed-fix-mistakes",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "Git",
-        "故障排查",
-        "AI 工具实践"
-      ],
-      "title": "git authentication failed 常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/github-actions-build-log-debug-freelance-scope",
-      "category": "报错解决",
-      "contentType": "freelance-scope",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/github-actions-build-log-debug-freelance-scope.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "从项目角度判断 GitHub Actions build 失败是否适合新手处理：区分代码错误、CI 配置、secret 缺失、部署授权、组织规则和客户待办。",
-        "headline": "GitHub Actions build 失败使用前怎么判断是否适合",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/github-actions-build-log-debug-freelance-scope"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "github-actions-build-log-debug-freelance-scope",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "GitHub Actions",
-        "项目边界",
-        "AI 工具实践"
-      ],
-      "title": "GitHub Actions build 失败使用前怎么判断是否适合",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: freelance-scope"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/github-actions-build-log-debug-mistakes",
-      "category": "报错解决",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/github-actions-build-log-debug-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手排查 GitHub Actions build 失败时的常见错误：只看最后一行、改错 workflow、删除测试、泄露 secret、忽略客户权限，并给出更稳的解决顺序。",
-        "headline": "GitHub Actions build 失败常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/github-actions-build-log-debug-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "github-actions-build-log-debug-mistakes",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "GitHub Actions",
-        "故障排查",
-        "AI 工具实践"
-      ],
-      "title": "GitHub Actions build 失败常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/module-not-found-debug-freelance-scope",
-      "category": "报错解决",
-      "contentType": "freelance-scope",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/module-not-found-debug-freelance-scope.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "从项目角度判断 module not found 是否适合新手处理：区分本地路径错误、依赖缺失、路径别名、私有包权限、客户漏文件和构建环境差异。",
-        "headline": "module not found 使用前怎么判断是否适合",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/module-not-found-debug-freelance-scope"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "module-not-found-debug-freelance-scope",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "module not found",
-        "项目边界",
-        "AI 工具实践"
-      ],
-      "title": "module not found 使用前怎么判断是否适合",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: freelance-scope"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/module-not-found-debug-mistakes",
-      "category": "报错解决",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/module-not-found-debug-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手处理 module not found 时的常见错误：乱装包、改错路径、忽略大小写、删除导入、没看路径别名、忽略客户私有依赖，并给出更稳的修正顺序。",
-        "headline": "module not found 常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/module-not-found-debug-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "module-not-found-debug-mistakes",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "module not found",
-        "故障排查",
-        "AI 工具实践"
-      ],
-      "title": "module not found 常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/nextjs-hydration-error-debug-mistakes",
-      "category": "报错解决",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/nextjs-hydration-error-debug-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "把 Next.js hydration error 当成前后端渲染结果不一致的问题来排查：先保存报错、复现路径和运行环境，再缩小到组件、数据和浏览器状态差异。",
-        "headline": "Next.js hydration error 怎么排查：常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/nextjs-hydration-error-debug-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "nextjs-hydration-error-debug-mistakes",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "Next.js hydration error",
-        "Next.js",
-        "AI 工具实践"
-      ],
-      "title": "Next.js hydration error 怎么排查：常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/no-code-ai-freelance-start-mistakes",
-      "category": "AI 自由职业路线",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/no-code-ai-freelance-start-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理不会编程新手开始 AI 项目练习时常见的错误：过早投递、夸大能力、忽略人工复核、没有作品集证据、接触高风险客户任务。",
-        "headline": "不会编程开始 AI 项目练习：常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/no-code-ai-freelance-start-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "no-code-ai-freelance-start-mistakes",
-      "status": "published",
-      "tags": [
-        "AI 自由职业路线",
-        "不会编程",
-        "AI 工具实践",
-        "常见错误"
-      ],
-      "title": "不会编程开始 AI 项目练习：常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/node-version-mismatch-fix-freelance-scope",
-      "category": "报错解决",
-      "contentType": "freelance-scope",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/node-version-mismatch-fix-freelance-scope.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "从项目角度判断 Node 版本不匹配是否适合新手处理：区分本地环境、包管理器、锁文件、CI、部署平台和客户权限边界。",
-        "headline": "Node 版本不匹配使用前怎么判断是否适合",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/node-version-mismatch-fix-freelance-scope"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "node-version-mismatch-fix-freelance-scope",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "Node.js",
-        "项目边界",
-        "AI 工具实践"
-      ],
-      "title": "Node 版本不匹配使用前怎么判断是否适合",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: freelance-scope"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/node-version-mismatch-fix-mistakes",
-      "category": "报错解决",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/node-version-mismatch-fix-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手处理 Node 版本不匹配时的常见错误：盲目升级、删除锁文件、混用包管理器、忽略 CI 和部署平台版本、把客户配置当代码问题，并给出修正步骤。",
-        "headline": "Node 版本不匹配常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/node-version-mismatch-fix-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "node-version-mismatch-fix-mistakes",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "Node.js",
-        "故障排查",
-        "AI 工具实践"
-      ],
-      "title": "Node 版本不匹配常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/npm-command-not-found-fix-freelance-scope",
-      "category": "报错解决",
-      "contentType": "freelance-scope",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/npm-command-not-found-fix-freelance-scope.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "从项目角度判断 npm command not found 是否适合新手处理：区分本地环境、客户设备、CI、部署平台和项目包管理器，确认权限后再决定报价范围。",
-        "headline": "npm command not found 使用前怎么判断是否适合",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/npm-command-not-found-fix-freelance-scope"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "npm-command-not-found-fix-freelance-scope",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "npm",
-        "项目判断",
-        "AI 工具实践"
-      ],
-      "title": "npm command not found 使用前怎么判断是否适合",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: freelance-scope"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/npm-command-not-found-fix-mistakes",
-      "category": "报错解决",
-      "contentType": "mistakes",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/npm-command-not-found-fix-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手处理 npm command not found 时的常见错误：没检查 Node、没重启终端、混用包管理器、乱改 PATH、在客户环境直接操作，并给出修正方法。",
-        "headline": "npm command not found 常见错误和修正方法",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/npm-command-not-found-fix-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "npm-command-not-found-fix-mistakes",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "npm",
-        "常见错误",
-        "Node.js"
-      ],
-      "title": "npm command not found 常见错误和修正方法",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: mistakes"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/package-lock-conflict-fix-freelance-scope",
-      "category": "报错解决",
-      "contentType": "freelance-scope",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/package-lock-conflict-fix-freelance-scope.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "从项目角度判断 package-lock.json 冲突是否适合新手处理：确认包管理器、分支权限、依赖变更来源、验证命令、客户维护者确认和不包含事项。",
-        "headline": "package lock 冲突使用前怎么判断是否适合",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/package-lock-conflict-fix-freelance-scope"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "package-lock-conflict-fix-freelance-scope",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "package-lock",
-        "项目判断",
-        "AI 工具实践"
-      ],
-      "title": "package lock 冲突使用前怎么判断是否适合",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: freelance-scope"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/package-lock-conflict-fix-mistakes",
-      "category": "报错解决",
-      "contentType": "mistakes",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/package-lock-conflict-fix-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手处理 package-lock.json 冲突时的常见错误：直接删除锁文件、保留一边、混用包管理器、不看 package.json、没跑验证和在客户主分支试错。",
-        "headline": "package lock 冲突常见错误和修正方法",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/package-lock-conflict-fix-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "package-lock-conflict-fix-mistakes",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "package-lock",
-        "常见错误",
-        "Git"
-      ],
-      "title": "package lock 冲突常见错误和修正方法",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: mistakes"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/payoneer-wise-paypal-beginner-comparison",
-      "category": "收款工具",
-      "contentType": "comparison",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-02",
-        "datePublished": "2026-06-02",
-        "description": "Payoneer、Wise、PayPal 都可能用于跨境收款，但适用场景、费用、平台支持和账户风险不同。本文用新手能理解的方式说明差异，并提醒先遵守平台内收款规则。",
-        "headline": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/payoneer-wise-paypal-beginner-comparison"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "payoneer-wise-paypal-beginner-comparison",
-      "status": "published",
-      "tags": [
-        "Payoneer",
-        "Wise",
-        "PayPal",
-        "跨境收款"
-      ],
-      "title": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
-      "updatedAt": "2026-06-02",
-      "warnings": [
-        "contentType is uncommon: comparison"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/permission-denied-fix-mistakes",
-      "category": "报错解决",
-      "contentType": "troubleshooting",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/permission-denied-fix-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "permission denied 报错不能靠盲目提权解决。新手要先判断被拒绝的是文件、目录、SSH、Git、部署平台还是客户授权，再按证据处理。",
-        "headline": "permission denied 报错新手怎么处理：常见错误和解决步骤",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/permission-denied-fix-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "permission-denied-fix-mistakes",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "permission denied",
-        "AI 工具实践",
-        "新手教程"
-      ],
-      "title": "permission denied 报错新手怎么处理：常见错误和解决步骤",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/port-already-in-use-fix-freelance-scope",
-      "category": "报错解决",
-      "contentType": "freelance-scope",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/port-already-in-use-fix-freelance-scope.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "从项目角度判断 port already in use 是否适合新手处理：区分本地开发、客户设备、远程服务器、Docker 和部署平台，确认权限后再决定范围。",
-        "headline": "port already in use 使用前怎么判断是否适合",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/port-already-in-use-fix-freelance-scope"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "port-already-in-use-fix-freelance-scope",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "端口占用",
-        "项目判断",
-        "AI 工具实践"
-      ],
-      "title": "port already in use 使用前怎么判断是否适合",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: freelance-scope"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/port-already-in-use-fix-mistakes",
-      "category": "报错解决",
-      "contentType": "mistakes",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/port-already-in-use-fix-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手处理 port already in use 时的常见错误：乱杀进程、没确认端口来源、忘记旧终端、随便换端口、在客户服务器操作，并给出修正方法。",
-        "headline": "port already in use 常见错误和修正方法",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/port-already-in-use-fix-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "port-already-in-use-fix-mistakes",
-      "status": "published",
-      "tags": [
-        "报错解决",
-        "端口占用",
-        "常见错误",
-        "本地开发"
-      ],
-      "title": "port already in use 常见错误和修正方法",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: mistakes"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/practice-projects-before-clients-mistakes",
-      "category": "新手教程",
-      "contentType": "mistakes",
-      "date": "2026-06-03",
-      "difficulty": "beginner",
-      "file": "content/blog/practice-projects-before-clients-mistakes.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-14",
-        "datePublished": "2026-06-03",
-        "description": "整理新手没有客户时做练习项目的常见错误：项目过大、伪装客户案例、没有截图、没有验证、忽略版权、只收藏不动手，并给出修正方法。",
-        "headline": "没有客户时做练习项目的常见错误",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/practice-projects-before-clients-mistakes"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "practice-projects-before-clients-mistakes",
-      "status": "published",
-      "tags": [
-        "练习项目",
-        "常见错误",
-        "作品集",
-        "AI 工具实践"
-      ],
-      "title": "没有客户时做练习项目的常见错误",
-      "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: mistakes"
-      ]
-    },
-    {
-      "author": "AI 工具指南",
-      "canonical": "https://ai-jiedan-lab.vercel.app/blog/vercel-env-variable-missing-beginner-guide",
-      "category": "部署教程",
-      "contentType": "troubleshooting",
-      "date": "2026-06-02",
-      "difficulty": "beginner",
-      "file": "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
-      "issues": [],
-      "jsonLdPreview": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": {
-          "@type": "Organization",
-          "name": "AI 工具指南"
-        },
-        "dateModified": "2026-06-02",
-        "datePublished": "2026-06-02",
-        "description": "Vercel 部署 Next.js 项目时经常因为环境变量缺失失败。本文解释什么是环境变量、如何看日志、如何使用 .env.example、什么时候不能让客户直接发真实密钥。",
-        "headline": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ai-jiedan-lab.vercel.app/blog/vercel-env-variable-missing-beginner-guide"
-        }
-      },
-      "scope": [
-        "public"
-      ],
-      "slug": "vercel-env-variable-missing-beginner-guide",
-      "status": "published",
-      "tags": [
-        "Vercel",
-        "环境变量",
-        "Next.js",
-        "部署失败"
-      ],
-      "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
-      "updatedAt": "2026-06-02",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
-    }
-  ],
+  "warningItems": [],
   "publicItems": [
     {
       "author": "AI 工具指南",
@@ -4283,7 +326,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-06",
         "description": "面向新手整理 Agent 记忆落库设计，覆盖短期会话、长期偏好、项目事实、来源记录、过期时间、删除入口和人工复核。",
-        "headline": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
+        "headline": "Agent 记忆数据库怎么设计：Postgres 用户偏好、项目事实和过期规则",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -4301,7 +344,7 @@
         "AI Agent",
         "长期记忆"
       ],
-      "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
+      "title": "Agent 记忆数据库怎么设计：Postgres 用户偏好、项目事实和过期规则",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -4610,7 +653,7 @@
         },
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
-        "description": "一份给新手的 AI 辅助交付检查清单：用来判断哪些步骤可以交给 AI 辅助，哪些步骤必须人工确认。",
+        "description": "一份给新手的 AI 辅助交付检查清单：判断哪些步骤可以交给 AI 辅助，哪些必须人工确认，并减少交付风险。",
         "headline": "AI 辅助交付和完全自动交付的检查清单",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
@@ -4672,9 +715,7 @@
       ],
       "title": "AI 辅助交付常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -4776,7 +817,7 @@
         },
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
-        "description": "AI 新手接项目前可以复制使用的检查清单：确认需求、材料、风险、验证方式、报价边界和交付说明。",
+        "description": "AI 新手接项目前可以复制使用的检查清单：确认需求、材料、风险、验证方式、报价边界、交付说明和暂停条件。",
         "headline": "AI 新手接项目前的项目适配检查清单",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
@@ -4838,9 +879,7 @@
       ],
       "title": "AI 新手判断接项目时的常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -4860,7 +899,7 @@
         },
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
-        "description": "AI 新手接项目前，先用需求清晰度、风险等级、验证能力和交付边界四个维度判断自己能不能接。",
+        "description": "AI 新手接项目前，先用需求清晰度、风险等级、验证能力和交付边界判断自己能不能接，避免盲目报价和交付失控。",
         "headline": "AI 新手如何判断自己能不能接项目",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
@@ -5127,9 +1166,7 @@
       ],
       "title": "新手 30 天 AI 工具实践计划常见执行错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -5190,7 +1227,7 @@
         },
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
-        "description": "一份给新手的 AI 自动化项目合规检查清单，用来区分可自动化、必须人工确认和不适合自动化的动作。",
+        "description": "一份给新手的 AI 自动化项目合规检查清单，用来区分可自动化、必须人工确认、不适合自动化的动作和交付边界。",
         "headline": "AI 自动化项目合规风险检查清单",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
@@ -5252,9 +1289,7 @@
       ],
       "title": "AI 自动化项目常见合规错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -5377,9 +1412,7 @@
       ],
       "title": "AI 工具实践误区的常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -5584,9 +1617,7 @@
       ],
       "title": "AI 项目失败复盘常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -5709,9 +1740,7 @@
       ],
       "title": "AI 工具新手 7 天准备常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -5834,9 +1863,7 @@
       ],
       "title": "AI 服务页文案常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -5959,9 +1986,7 @@
       ],
       "title": "AI 工具技能路线图常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -6064,7 +2089,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-06",
         "description": "整理客服 AI 模型选型方法，覆盖响应速度、成本、知识库、情绪识别、转人工、质检、上下文长度和安全边界。",
-        "headline": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+        "headline": "客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -6082,7 +2107,7 @@
         "RAG",
         "AI Agent"
       ],
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
+      "title": "客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -6166,9 +2191,7 @@
       ],
       "title": "AI 输出不稳定风险控制常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -6455,9 +2478,7 @@
       ],
       "title": "AI 小项目练习常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -6478,7 +2499,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
         "description": "AI 工具新手不要一开始就碰复杂项目。本文整理低风险练习小项目选题，帮助你从文案整理、页面小改、表格清洗、报错解释和交付说明开始。",
-        "headline": "AI 工具新手练习小项目选什么",
+        "headline": "AI 小项目练习选什么：新手从低风险任务开始",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -6496,7 +2517,7 @@
         "新手教程",
         "作品集"
       ],
-      "title": "AI 工具新手练习小项目选什么",
+      "title": "AI 小项目练习选什么：新手从低风险任务开始",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -6703,9 +2724,7 @@
       ],
       "title": "AI 免费工具栈常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -6931,7 +2950,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
         "description": "接到 API Key 无效或缺失的排错需求时，新手应先判断复现环境、授权方式、密钥安全、交付范围和验收标准，再决定是否报价。",
-        "headline": "API Key 无效或缺失：使用前怎么判断是否适合",
+        "headline": "API Key 无效或缺失项目范围：使用前怎么判断是否适合",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -6949,7 +2968,7 @@
         "项目范围",
         "AI 工具实践"
       ],
-      "title": "API Key 无效或缺失：使用前怎么判断是否适合",
+      "title": "API Key 无效或缺失项目范围：使用前怎么判断是否适合",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -6992,9 +3011,7 @@
       ],
       "title": "API Key 无效或缺失的常见错误和修复步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -7220,7 +3237,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
         "description": "一份给新手使用的第一次 AI 工具实践检查清单，覆盖作品集、服务范围、客户问题、报价边界、交付记录和安全风险。",
-        "headline": "第一次接 AI 小单前检查清单",
+        "headline": "第一次 AI 工具实践检查清单：接小单前要准备什么",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -7238,7 +3255,7 @@
         "检查清单",
         "自由职业"
       ],
-      "title": "第一次接 AI 小单前检查清单",
+      "title": "第一次 AI 工具实践检查清单：接小单前要准备什么",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -7281,9 +3298,7 @@
       ],
       "title": "第一次接 AI 小单前最容易犯的错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -7447,9 +3462,7 @@
       ],
       "title": "Bug 修复交付说明模板怎么写",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: template"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -7635,7 +3648,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
         "description": "新手把 ChatGPT、Codex 和 Claude 用在 AI 工具实践流程里时，应先分清需求澄清、代码修改、长文复核和人工验收边界，避免把 AI 输出直接交付。",
-        "headline": "ChatGPT、Codex 和 Claude 怎么分工做 AI 工具实践流程",
+        "headline": "ChatGPT Codex Claude 工作流怎么分工：AI 工具实践流程",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -7654,7 +3667,7 @@
         "Claude",
         "AI 工具实践"
       ],
-      "title": "ChatGPT、Codex 和 Claude 怎么分工做 AI 工具实践流程",
+      "title": "ChatGPT Codex Claude 工作流怎么分工：AI 工具实践流程",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -8067,9 +4080,7 @@
       ],
       "title": "Claude Code 自动化最容易忽略的人工审核错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -8233,9 +4244,7 @@
       ],
       "title": "Claude Code 新手常见错误和修正方法",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -8338,7 +4347,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
         "description": "新手用 Claude Code 项目前，应判断需求是否适合低风险自动化辅助：可复现、低权限、小范围、可测试、可交付说明。",
-        "headline": "Claude Code 新手项目练习前怎么判断使用场景",
+        "headline": "Claude Code 使用场景项目范围：新手练习前怎么判断",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -8356,7 +4365,7 @@
         "项目范围",
         "AI 工具实践"
       ],
-      "title": "Claude Code 新手项目练习前怎么判断使用场景",
+      "title": "Claude Code 使用场景项目范围：新手练习前怎么判断",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -8399,9 +4408,7 @@
       ],
       "title": "Claude Code 新手选使用场景时的常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -8565,9 +4572,7 @@
       ],
       "title": "Claude Code Bug Prompt 常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -8731,9 +4736,7 @@
       ],
       "title": "Claude Code 项目前问客户时的常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -8897,9 +4900,7 @@
       ],
       "title": "Claude Code 新手运行常用命令时的常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -9063,9 +5064,7 @@
       ],
       "title": "Claude Code 交付说明常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -9229,9 +5228,7 @@
       ],
       "title": "Claude Code 排查客户报错时的常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -9252,7 +5249,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
         "description": "新手用 Claude Code 辅助排查客户报错时，应先确认复现步骤、错误原文、运行环境和权限边界，再用低风险命令整理诊断结论。",
-        "headline": "用 Claude Code 排查客户报错时怎么做才稳",
+        "headline": "Claude Code 错误排查怎么做：客户报错处理更稳",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -9270,7 +5267,7 @@
         "错误排查",
         "AI 工具实践"
       ],
-      "title": "用 Claude Code 排查客户报错时怎么做才稳",
+      "title": "Claude Code 错误排查怎么做：客户报错处理更稳",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -9395,9 +5392,7 @@
       ],
       "title": "Claude Code 看 GitHub 文件时的常见范围错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -9561,9 +5556,7 @@
       ],
       "title": "Claude Code 安装准备常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -9727,9 +5720,7 @@
       ],
       "title": "Claude Code 低风险项目常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -9750,7 +5741,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
         "description": "新手用 Claude Code 做项目时，应优先选择低权限、低影响、可复现、可验收的小任务，例如页面文案、单报错诊断、README 整理和交付说明。",
-        "headline": "Claude Code 新手适合先接哪些低风险小单",
+        "headline": "Claude Code 低风险项目有哪些：新手适合先接的小单",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -9768,7 +5759,7 @@
         "低风险项目",
         "AI 工具实践"
       ],
-      "title": "Claude Code 新手适合先接哪些低风险小单",
+      "title": "Claude Code 低风险项目有哪些：新手适合先接的小单",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -9873,7 +5864,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
         "description": "整理新手用 Claude Code 检查 Next.js 页面时的常见错误：不问页面路径、不确认数据来源、不跑本地验证、把页面小改扩成全站重构。",
-        "headline": "Claude Code 检查 Next.js 页面时的常见错误",
+        "headline": "Claude Code Next.js 页面检查错误：新手常见问题",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -9891,11 +5882,9 @@
         "Next.js",
         "常见错误"
       ],
-      "title": "Claude Code 检查 Next.js 页面时的常见错误",
+      "title": "Claude Code Next.js 页面检查错误：新手常见问题",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -9916,7 +5905,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
         "description": "新手用 Claude Code 检查 Next.js 页面小问题时，应先确认页面路径、复现步骤、组件范围、数据来源和本地验证方式，再写交付说明。",
-        "headline": "用 Claude Code 检查 Next.js 页面小问题怎么做",
+        "headline": "Claude Code Next.js 页面检查怎么做：小问题处理步骤",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -9934,7 +5923,7 @@
         "Next.js",
         "AI 工具实践"
       ],
-      "title": "用 Claude Code 检查 Next.js 页面小问题怎么做",
+      "title": "Claude Code Next.js 页面检查怎么做：小问题处理步骤",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -10059,9 +6048,7 @@
       ],
       "title": "Claude Code 审阅 Proposal 时的常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -10225,9 +6212,7 @@
       ],
       "title": "Claude Code 小项目常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -10288,8 +6273,8 @@
         },
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
-        "description": "网页修改项目前的工具选择和安全检查清单：确认需求、仓库状态、验证命令、截图、交付边界和暂停条件。",
-        "headline": "Claude Code 和 Codex 网页修改新手检查清单",
+        "description": "网页修改项目前的工具选择和安全检查清单：确认需求、仓库状态、验证命令、截图、交付边界、暂停条件和风险。",
+        "headline": "网页修改 AI 工具检查清单：Claude Code 和 Codex 怎么选",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -10307,7 +6292,7 @@
         "网页修改",
         "检查清单"
       ],
-      "title": "Claude Code 和 Codex 网页修改新手检查清单",
+      "title": "网页修改 AI 工具检查清单：Claude Code 和 Codex 怎么选",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -10330,7 +6315,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
         "description": "网页修改项目前的范围判断草稿：用 Claude Code 和 Codex 辅助拆需求，但先确认任务边界、风险等级、验证条件和客户待补材料。",
-        "headline": "Claude Code 和 Codex 网页修改使用前怎么判断是否适合",
+        "headline": "网页修改项目范围判断：Claude Code 和 Codex 使用前检查",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -10348,7 +6333,7 @@
         "网页修改",
         "项目范围"
       ],
-      "title": "Claude Code 和 Codex 网页修改使用前怎么判断是否适合",
+      "title": "网页修改项目范围判断：Claude Code 和 Codex 使用前检查",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -10391,9 +6376,7 @@
       ],
       "title": "Claude Code 和 Codex 网页修改常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -10454,7 +6437,7 @@
         },
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
-        "description": "客户验收清单的检查版：交付前核对范围、文件、截图、验证命令、客户确认项、未覆盖范围和返工边界。",
+        "description": "客户验收清单的检查版：交付前核对范围、文件、截图、验证命令、客户确认项、未覆盖范围、返工边界和记录方式。",
         "headline": "客户验收清单新手检查清单",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
@@ -10536,7 +6519,7 @@
         },
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-03",
-        "description": "客户需求沟通表的检查清单版本：确认目标、材料、范围、权限、验收、截止时间、修改次数和暂停条件。",
+        "description": "客户需求沟通表的检查清单版本：确认目标、材料、范围、权限、验收、截止时间、修改次数、暂停条件和补充问题。",
         "headline": "客户需求沟通表新手检查清单",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
@@ -10703,7 +6686,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-05",
         "description": "面向新手整理 Cloudflare Workers AI 入门路线，覆盖 Worker 调用模型、API、Vectorize、AI Gateway、部署、限额、日志和上线风险。",
-        "headline": "Cloudflare Workers AI 怎么开始：边缘 AI 接口、成本和数据边界",
+        "headline": "Cloudflare Workers AI 入门：边缘 AI 接口、成本和数据边界",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -10721,7 +6704,7 @@
         "AI 部署",
         "边缘计算"
       ],
-      "title": "Cloudflare Workers AI 怎么开始：边缘 AI 接口、成本和数据边界",
+      "title": "Cloudflare Workers AI 入门：边缘 AI 接口、成本和数据边界",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -10785,7 +6768,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-02",
         "description": "给 AI 工具新手看的 Codex 自动化开发项目范围判断：确认任务是否低风险、能否验证、是否需要权限、哪些步骤不能省。",
-        "headline": "Codex 自动化开发使用前怎么判断是否适合",
+        "headline": "Codex 自动化开发项目范围：使用前怎么判断是否适合",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -10803,7 +6786,7 @@
         "项目范围",
         "AI 工具实践"
       ],
-      "title": "Codex 自动化开发使用前怎么判断是否适合",
+      "title": "Codex 自动化开发项目范围：使用前怎么判断是否适合",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -10846,9 +6829,7 @@
       ],
       "title": "Codex 自动化开发流程常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -11012,9 +6993,7 @@
       ],
       "title": "Codex 做项目时常见密钥泄露错误和修复顺序",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -11035,7 +7014,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-02",
         "description": "给 AI 工具新手看的 Codex 密钥安全指南：如何识别密钥、脱敏材料、限制工具可见范围、检查 diff、处理提交记录，并在高风险操作前暂停让人工确认。",
-        "headline": "Codex 做项目时如何避免把密钥写进代码",
+        "headline": "Codex 避免密钥泄露：做项目时不要把密钥写进代码",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -11053,7 +7032,7 @@
         "AI 工具实践",
         "新手教程"
       ],
-      "title": "Codex 做项目时如何避免把密钥写进代码",
+      "title": "Codex 避免密钥泄露：做项目时不要把密钥写进代码",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -11117,7 +7096,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-02",
         "description": "给 AI 工具新手的 Codex 修 bug 范围判断指南：如何区分低风险小修、高风险生产问题、需要客户确认的授权事项，并把验证和回滚写进报价范围。",
-        "headline": "Codex 修 bug 任务使用前怎么判断是否适合",
+        "headline": "Codex 修 bug 任务能不能接：使用前怎么判断是否适合",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -11135,7 +7114,7 @@
         "Bug 修复",
         "AI 工具实践"
       ],
-      "title": "Codex 修 bug 任务使用前怎么判断是否适合",
+      "title": "Codex 修 bug 任务能不能接：使用前怎么判断是否适合",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -11178,9 +7157,7 @@
       ],
       "title": "Codex 修 bug 回滚记录常见错误和修复顺序",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -11283,7 +7260,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-02",
         "description": "给 AI 工具新手的需求边界判断指南：客户需求不清楚时，如何判断能不能接、哪些问题必须补问、哪些风险要暂停，以及怎么写报价前提。",
-        "headline": "Codex 需求不清楚的任务使用前怎么判断是否适合",
+        "headline": "Codex 需求不清楚能不能接：使用前怎么判断",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -11301,7 +7278,7 @@
         "需求澄清",
         "AI 工具实践"
       ],
-      "title": "Codex 需求不清楚的任务使用前怎么判断是否适合",
+      "title": "Codex 需求不清楚能不能接：使用前怎么判断",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -11344,9 +7321,7 @@
       ],
       "title": "Codex 客户需求澄清常见错误和修复顺序",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -11469,9 +7444,7 @@
       ],
       "title": "Codex 是什么：新手怎么开始",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: template"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -11553,9 +7526,7 @@
       ],
       "title": "Codex 怎么做第一个网页：新手练习流程",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: tool-guide"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -11637,9 +7608,7 @@
       ],
       "title": "Codex 和 Claude Code 怎么选：新手判断模板",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: template"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -11680,9 +7649,7 @@
       ],
       "title": "Codex 修 CSS bug 的流程：新手项目练习边界",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: pricing-guide"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -11723,9 +7690,7 @@
       ],
       "title": "Codex 和 GitHub 怎么配合：新手工作流",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: roadmap"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -11766,9 +7731,7 @@
       ],
       "title": "Codex npm install 报错怎么办：新手诊断流程",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -11809,9 +7772,7 @@
       ],
       "title": "Codex 接 Upwork 小单怎么判断",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: comparison"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -11975,9 +7936,7 @@
       ],
       "title": "Codex 修 CSS 间距和响应式问题怎么做：常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -12080,7 +8039,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-02",
         "description": "给 AI 工具新手的 Codex UI 修改范围判断指南：如何区分小范围视觉修复、模糊重设计、高风险页面，以及怎么把截图、响应式验证和未覆盖范围写进报价。",
-        "headline": "Codex 修改现有网页 UI 使用前怎么判断是否适合",
+        "headline": "Codex UI 修改任务能不能接：使用前怎么判断",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -12098,7 +8057,7 @@
         "UI 修改",
         "AI 工具实践"
       ],
-      "title": "Codex 修改现有网页 UI 使用前怎么判断是否适合",
+      "title": "Codex UI 修改任务能不能接：使用前怎么判断",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -12141,9 +8100,7 @@
       ],
       "title": "Codex 修改现有网页 UI 常见错误和修复顺序",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -12307,9 +8264,7 @@
       ],
       "title": "Codex 是什么，新手第一天应该怎么用：常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -12473,9 +8428,7 @@
       ],
       "title": "Codex 怎么做第一个落地页：常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -12598,9 +8551,7 @@
       ],
       "title": "Codex 和 GitHub 怎么配合：提交代码前检查",
       "updatedAt": "2026-06-01",
-      "warnings": [
-        "contentType is uncommon: pricing-guide"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -12662,7 +8613,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-02",
         "description": "给 AI 工具新手的 Codex + GitHub 项目范围判断指南：如何区分普通代码提交、高风险仓库权限、CI/部署变更，并把分支、PR、验证和客户确认写进报价。",
-        "headline": "Codex GitHub 提交任务使用前怎么判断是否适合",
+        "headline": "Codex GitHub 提交任务能不能接：使用前怎么判断",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -12680,7 +8631,7 @@
         "项目边界",
         "AI 工具实践"
       ],
-      "title": "Codex GitHub 提交任务使用前怎么判断是否适合",
+      "title": "Codex GitHub 提交任务能不能接：使用前怎么判断",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -12703,7 +8654,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-02",
         "description": "整理 AI 工具新手用 Codex 和 GitHub 提交代码时常见错误：直接推主分支、混入无关改动、没跑检查、提交敏感文件、PR 描述空泛，以及补救顺序。",
-        "headline": "Codex GitHub 工作流常见错误和修复顺序",
+        "headline": "Codex GitHub 提交错误：工作流常见错误和修复顺序",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -12721,11 +8672,9 @@
         "错误复盘",
         "AI 工具实践"
       ],
-      "title": "Codex GitHub 工作流常见错误和修复顺序",
+      "title": "Codex GitHub 提交错误：工作流常见错误和修复顺序",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -12930,9 +8879,7 @@
       ],
       "title": "Codex 安装前置条件常见错误和修复顺序",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -13014,9 +8961,7 @@
       ],
       "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
       "updatedAt": "2026-06-02",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -13139,9 +9084,7 @@
       ],
       "title": "npm install 报错常见错误和修复顺序",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -13305,9 +9248,7 @@
       ],
       "title": "Codex 作品集素材常见错误和修复顺序",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -13554,9 +9495,7 @@
       ],
       "title": "Codex README 审核常见错误和修复顺序",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -13617,7 +9556,7 @@
         },
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-01",
-        "description": "一份给新手的 Codex 代码人工审核清单，覆盖需求、差异、依赖、测试、安全、交付记录和项目边界。",
+        "description": "一份给新手的 Codex 代码人工审核清单，覆盖需求、差异、依赖、测试、安全、交付记录、项目边界和复核顺序。",
         "headline": "Codex 生成代码后的人工审核检查清单",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
@@ -13720,9 +9659,7 @@
       ],
       "title": "Codex 代码审查常见错误和修复顺序",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -13886,9 +9823,7 @@
       ],
       "title": "小网站交付检查常见错误和修复顺序",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -14052,9 +9987,7 @@
       ],
       "title": "Tailwind 移动端检查常见错误和修复顺序",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -14218,9 +10151,7 @@
       ],
       "title": "Upwork 任务风险判断常见错误和修复顺序",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -14343,9 +10274,7 @@
       ],
       "title": "Codex 部署 Vercel 前检查什么：上线前清单",
       "updatedAt": "2026-06-01",
-      "warnings": [
-        "contentType is uncommon: roadmap"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -14468,9 +10397,7 @@
       ],
       "title": "Vercel 部署常见错误和修复顺序",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -14552,9 +10479,7 @@
       ],
       "title": "Codex 和 Claude Code 怎么选：新手对比清单",
       "updatedAt": "2026-06-01",
-      "warnings": [
-        "contentType is uncommon: comparison"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -14718,9 +10643,7 @@
       ],
       "title": "Codex 和 Cursor 改网页常见错误和修复顺序",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -14884,9 +10807,7 @@
       ],
       "title": "Windows 安装 Codex 常见错误和修复顺序",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -15214,9 +11135,7 @@
       ],
       "title": "每天项目练习记录常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -15380,9 +11299,7 @@
       ],
       "title": "小网站交付常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -15546,9 +11463,7 @@
       ],
       "title": "dependency conflict 常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -15712,9 +11627,7 @@
       ],
       "title": "npm run dev 能跑但 build 失败常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -15940,7 +11853,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-05",
         "description": "面向新手整理 Dify 接入 Ollama 本地模型的检查点，覆盖 Ollama 服务、模型供应商配置、Docker 网络、LLM 节点、知识库和上线边界。",
-        "headline": "Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试",
+        "headline": "Dify 接入 Ollama 怎么做：本地模型到知识库测试",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -15958,7 +11871,7 @@
         "本地大模型",
         "知识库"
       ],
-      "title": "Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试",
+      "title": "Dify 接入 Ollama 怎么做：本地模型到知识库测试",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -16063,7 +11976,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-06",
         "description": "解释 Dify Workflow 与 Agent 的选择方法，覆盖固定流程、自由工具调用、知识库问答、人工审核、成本和上线风险。",
-        "headline": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+        "headline": "Dify Workflow 和 Agent 区别：固定流程、工具调用和人工审核",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -16081,7 +11994,7 @@
         "AI Agent",
         "AI 应用"
       ],
-      "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+      "title": "Dify Workflow 和 Agent 区别：固定流程、工具调用和人工审核",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -16534,9 +12447,7 @@
       ],
       "title": "环境变量 missing 常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -16700,9 +12611,7 @@
       ],
       "title": "ESLint error 常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -16825,9 +12734,7 @@
       ],
       "title": "failed to push some refs 使用前怎么判断是否适合",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: freelance-scope"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -16868,9 +12775,7 @@
       ],
       "title": "failed to push some refs 常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -17157,9 +13062,7 @@
       ],
       "title": "第一个作品集案例常见错误和修正方法",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: mistakes"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -17241,9 +13144,7 @@
       ],
       "title": "第一个 Upwork 小项目怎么报价：新手范围和底价检查",
       "updatedAt": "2026-06-02",
-      "warnings": [
-        "contentType is uncommon: pricing-guide"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -17489,9 +13390,7 @@
       ],
       "title": "自由职业范围确认常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -17942,9 +13841,7 @@
       ],
       "title": "git authentication failed 使用前怎么判断是否适合",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: freelance-scope"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -17985,9 +13882,7 @@
       ],
       "title": "git authentication failed 常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -18110,9 +14005,7 @@
       ],
       "title": "GitHub Actions build 失败使用前怎么判断是否适合",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: freelance-scope"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -18153,9 +14046,7 @@
       ],
       "title": "GitHub Actions build 失败常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -18545,7 +14436,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-05",
         "description": "面向新手整理 Docker 使用 NVIDIA GPU 的部署检查点，覆盖驱动、NVIDIA Container Toolkit、Docker runtime、nvidia-smi、CUDA 镜像和排错。",
-        "headline": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
+        "headline": "Docker 使用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -18563,7 +14454,7 @@
         "GPU",
         "大模型部署"
       ],
-      "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
+      "title": "Docker 使用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -18750,7 +14641,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-05",
         "description": "面向新手整理 Helicone LLM 观测入门，覆盖 AI Gateway、OpenAI-compatible 接口、日志、成本、缓存、限流、错误排查和隐私边界。",
-        "headline": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住",
+        "headline": "Helicone LLM Observability 怎么做：Gateway、日志、成本和限流",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -18768,7 +14659,7 @@
         "AI Gateway",
         "成本监控"
       ],
-      "title": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住",
+      "title": "Helicone LLM Observability 怎么做：Gateway、日志、成本和限流",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -18791,7 +14682,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-05",
         "description": "面向 HR 和招聘团队整理 AI 提示词模板，覆盖岗位 JD、简历初筛、面试题、候选人沟通、入职培训和人工公平复核。",
-        "headline": "人力招聘 AI 提示词模板：JD、简历初筛、面试题和培训材料",
+        "headline": "HR AI 提示词模板：JD、简历初筛、面试题和培训材料",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -18809,7 +14700,7 @@
         "简历筛选",
         "培训"
       ],
-      "title": "人力招聘 AI 提示词模板：JD、简历初筛、面试题和培训材料",
+      "title": "HR AI 提示词模板：JD、简历初筛、面试题和培训材料",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -19078,7 +14969,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-05",
         "description": "面向新手整理 Kubernetes 部署 GPU LLM 的基础检查点，覆盖 NVIDIA device plugin、nvidia.com/gpu、节点驱动、Pod 资源、日志和生产边界。",
-        "headline": "Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界",
+        "headline": "Kubernetes GPU 大模型部署：Device Plugin、资源限制和调度边界",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -19096,7 +14987,7 @@
         "Device Plugin",
         "大模型部署"
       ],
-      "title": "Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界",
+      "title": "Kubernetes GPU 大模型部署：Device Plugin、资源限制和调度边界",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -19201,7 +15092,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-05",
         "description": "面向新手整理 LangSmith 观测和评测入门，覆盖 tracing、runs、datasets、evaluations、LangChain/LangGraph 应用、成本和上线排查。",
-        "headline": "LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent",
+        "headline": "LangSmith Observability 怎么做：观测、评测和 Agent 调试",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -19219,7 +15110,7 @@
         "Evaluation",
         "LangChain"
       ],
-      "title": "LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent",
+      "title": "LangSmith Observability 怎么做：观测、评测和 Agent 调试",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -20246,9 +16137,7 @@
       ],
       "title": "module not found 使用前怎么判断是否适合",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: freelance-scope"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -20289,9 +16178,7 @@
       ],
       "title": "module not found 常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -20620,9 +16507,7 @@
       ],
       "title": "Next.js hydration error 怎么排查：常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -20746,9 +16631,7 @@
       ],
       "title": "不会编程开始 AI 项目练习：常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -20871,9 +16754,7 @@
       ],
       "title": "Node 版本不匹配使用前怎么判断是否适合",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: freelance-scope"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -20914,9 +16795,7 @@
       ],
       "title": "Node 版本不匹配常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -21123,9 +17002,7 @@
       ],
       "title": "npm command not found 使用前怎么判断是否适合",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: freelance-scope"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -21166,9 +17043,7 @@
       ],
       "title": "npm command not found 常见错误和修正方法",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: mistakes"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -21660,9 +17535,7 @@
       ],
       "title": "package lock 冲突使用前怎么判断是否适合",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: freelance-scope"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -21703,9 +17576,7 @@
       ],
       "title": "package lock 冲突常见错误和修正方法",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: mistakes"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -22119,9 +17990,7 @@
       ],
       "title": "Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看",
       "updatedAt": "2026-06-02",
-      "warnings": [
-        "contentType is uncommon: comparison"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -22496,9 +18365,7 @@
       ],
       "title": "permission denied 报错新手怎么处理：常见错误和解决步骤",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -22744,9 +18611,7 @@
       ],
       "title": "port already in use 使用前怎么判断是否适合",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: freelance-scope"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -22787,9 +18652,7 @@
       ],
       "title": "port already in use 常见错误和修正方法",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: mistakes"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -23076,9 +18939,7 @@
       ],
       "title": "没有客户时做练习项目的常见错误",
       "updatedAt": "2026-06-14",
-      "warnings": [
-        "contentType is uncommon: mistakes"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",
@@ -24001,7 +19862,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-05",
         "description": "面向新手整理 Replicate API 做 AI Demo 的流程，覆盖模型选择、prediction、deployment、Webhook、文件输入、费用、错误处理和客户演示。",
-        "headline": "Replicate API 怎么做 AI Demo：模型调用、部署和费用边界",
+        "headline": "Replicate API 教程：做 AI Demo 的模型调用、部署和费用边界",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -24019,7 +19880,7 @@
         "API",
         "模型部署"
       ],
-      "title": "Replicate API 怎么做 AI Demo：模型调用、部署和费用边界",
+      "title": "Replicate API 教程：做 AI Demo 的模型调用、部署和费用边界",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -24042,7 +19903,7 @@
         "dateModified": "2026-06-14",
         "datePublished": "2026-06-05",
         "description": "面向新手整理 RunPod Serverless 部署 LLM 的流程，覆盖 vLLM 模板、endpoint、worker、Docker、模型缓存、冷启动、日志和费用。",
-        "headline": "RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界",
+        "headline": "RunPod Serverless 大模型部署：Endpoint、Worker 和冷启动边界",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -24060,7 +19921,7 @@
         "vLLM",
         "大模型部署"
       ],
-      "title": "RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界",
+      "title": "RunPod Serverless 大模型部署：Endpoint、Worker 和冷启动边界",
       "updatedAt": "2026-06-14",
       "warnings": []
     },
@@ -24636,9 +20497,7 @@
       ],
       "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
       "updatedAt": "2026-06-02",
-      "warnings": [
-        "contentType is uncommon: troubleshooting"
-      ]
+      "warnings": []
     },
     {
       "author": "AI 工具指南",

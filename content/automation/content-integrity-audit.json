@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T18:10:07.463Z",
+  "generatedAt": "2026-06-18T18:44:38.239Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -112,8 +112,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
-      "titleLength": 38,
+      "title": "Agent 记忆数据库怎么设计：Postgres 用户偏好、项目事实和过期规则",
+      "titleLength": 39,
       "warnings": []
     },
     {
@@ -201,7 +201,7 @@
       "warnings": []
     },
     {
-      "descriptionLength": 49,
+      "descriptionLength": 53,
       "file": "content/blog/ai-assisted-vs-automated-delivery-checklist.mdx",
       "issues": [],
       "scope": [
@@ -249,7 +249,7 @@
       "warnings": []
     },
     {
-      "descriptionLength": 47,
+      "descriptionLength": 52,
       "file": "content/blog/ai-beginner-project-fit-check-checklist.mdx",
       "issues": [],
       "scope": [
@@ -273,7 +273,7 @@
       "warnings": []
     },
     {
-      "descriptionLength": 45,
+      "descriptionLength": 53,
       "file": "content/blog/ai-beginner-project-fit-check.mdx",
       "issues": [],
       "scope": [
@@ -369,7 +369,7 @@
       "warnings": []
     },
     {
-      "descriptionLength": 48,
+      "descriptionLength": 53,
       "file": "content/blog/ai-freelance-automation-compliance-risk-checklist.mdx",
       "issues": [],
       "scope": [
@@ -628,8 +628,8 @@
         "public"
       ],
       "status": "published",
-      "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检",
-      "titleLength": 29,
+      "title": "客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检",
+      "titleLength": 30,
       "warnings": []
     },
     {
@@ -748,8 +748,8 @@
         "public"
       ],
       "status": "published",
-      "title": "AI 工具新手练习小项目选什么",
-      "titleLength": 15,
+      "title": "AI 小项目练习选什么：新手从低风险任务开始",
+      "titleLength": 22,
       "warnings": []
     },
     {
@@ -880,8 +880,8 @@
         "public"
       ],
       "status": "published",
-      "title": "API Key 无效或缺失：使用前怎么判断是否适合",
-      "titleLength": 25,
+      "title": "API Key 无效或缺失项目范围：使用前怎么判断是否适合",
+      "titleLength": 29,
       "warnings": []
     },
     {
@@ -964,8 +964,8 @@
         "public"
       ],
       "status": "published",
-      "title": "第一次接 AI 小单前检查清单",
-      "titleLength": 15,
+      "title": "第一次 AI 工具实践检查清单：接小单前要准备什么",
+      "titleLength": 25,
       "warnings": []
     },
     {
@@ -1084,7 +1084,7 @@
         "public"
       ],
       "status": "published",
-      "title": "ChatGPT、Codex 和 Claude 怎么分工做 AI 工具实践流程",
+      "title": "ChatGPT Codex Claude 工作流怎么分工：AI 工具实践流程",
       "titleLength": 38,
       "warnings": []
     },
@@ -1288,8 +1288,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Claude Code 新手项目练习前怎么判断使用场景",
-      "titleLength": 27,
+      "title": "Claude Code 使用场景项目范围：新手练习前怎么判断",
+      "titleLength": 30,
       "warnings": []
     },
     {
@@ -1552,8 +1552,8 @@
         "public"
       ],
       "status": "published",
-      "title": "用 Claude Code 排查客户报错时怎么做才稳",
-      "titleLength": 26,
+      "title": "Claude Code 错误排查怎么做：客户报错处理更稳",
+      "titleLength": 28,
       "warnings": []
     },
     {
@@ -1696,8 +1696,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Claude Code 新手适合先接哪些低风险小单",
-      "titleLength": 25,
+      "title": "Claude Code 低风险项目有哪些：新手适合先接的小单",
+      "titleLength": 30,
       "warnings": []
     },
     {
@@ -1732,8 +1732,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Claude Code 检查 Next.js 页面时的常见错误",
-      "titleLength": 31,
+      "title": "Claude Code Next.js 页面检查错误：新手常见问题",
+      "titleLength": 33,
       "warnings": []
     },
     {
@@ -1744,8 +1744,8 @@
         "public"
       ],
       "status": "published",
-      "title": "用 Claude Code 检查 Next.js 页面小问题怎么做",
-      "titleLength": 33,
+      "title": "Claude Code Next.js 页面检查怎么做：小问题处理步骤",
+      "titleLength": 35,
       "warnings": []
     },
     {
@@ -1845,15 +1845,15 @@
       "warnings": []
     },
     {
-      "descriptionLength": 48,
+      "descriptionLength": 51,
       "file": "content/blog/claude-code-vs-codex-web-editing-checklist.mdx",
       "issues": [],
       "scope": [
         "public"
       ],
       "status": "published",
-      "title": "Claude Code 和 Codex 网页修改新手检查清单",
-      "titleLength": 30,
+      "title": "网页修改 AI 工具检查清单：Claude Code 和 Codex 怎么选",
+      "titleLength": 38,
       "warnings": []
     },
     {
@@ -1864,8 +1864,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Claude Code 和 Codex 网页修改使用前怎么判断是否适合",
-      "titleLength": 35,
+      "title": "网页修改项目范围判断：Claude Code 和 Codex 使用前检查",
+      "titleLength": 36,
       "warnings": []
     },
     {
@@ -1893,7 +1893,7 @@
       "warnings": []
     },
     {
-      "descriptionLength": 47,
+      "descriptionLength": 52,
       "file": "content/blog/client-acceptance-checklist-checklist.mdx",
       "issues": [],
       "scope": [
@@ -1917,7 +1917,7 @@
       "warnings": []
     },
     {
-      "descriptionLength": 47,
+      "descriptionLength": 52,
       "file": "content/blog/client-requirement-form-questions-checklist.mdx",
       "issues": [],
       "scope": [
@@ -1972,8 +1972,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Cloudflare Workers AI 怎么开始：边缘 AI 接口、成本和数据边界",
-      "titleLength": 43,
+      "title": "Cloudflare Workers AI 入门：边缘 AI 接口、成本和数据边界",
+      "titleLength": 41,
       "warnings": []
     },
     {
@@ -1996,8 +1996,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Codex 自动化开发使用前怎么判断是否适合",
-      "titleLength": 22,
+      "title": "Codex 自动化开发项目范围：使用前怎么判断是否适合",
+      "titleLength": 27,
       "warnings": []
     },
     {
@@ -2068,8 +2068,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Codex 做项目时如何避免把密钥写进代码",
-      "titleLength": 21,
+      "title": "Codex 避免密钥泄露：做项目时不要把密钥写进代码",
+      "titleLength": 26,
       "warnings": []
     },
     {
@@ -2092,8 +2092,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Codex 修 bug 任务使用前怎么判断是否适合",
-      "titleLength": 25,
+      "title": "Codex 修 bug 任务能不能接：使用前怎么判断是否适合",
+      "titleLength": 30,
       "warnings": []
     },
     {
@@ -2140,8 +2140,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Codex 需求不清楚的任务使用前怎么判断是否适合",
-      "titleLength": 25,
+      "title": "Codex 需求不清楚能不能接：使用前怎么判断",
+      "titleLength": 23,
       "warnings": []
     },
     {
@@ -2368,8 +2368,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Codex 修改现有网页 UI 使用前怎么判断是否适合",
-      "titleLength": 27,
+      "title": "Codex UI 修改任务能不能接：使用前怎么判断",
+      "titleLength": 25,
       "warnings": []
     },
     {
@@ -2536,8 +2536,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Codex GitHub 提交任务使用前怎么判断是否适合",
-      "titleLength": 28,
+      "title": "Codex GitHub 提交任务能不能接：使用前怎么判断",
+      "titleLength": 29,
       "warnings": []
     },
     {
@@ -2548,8 +2548,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Codex GitHub 工作流常见错误和修复顺序",
-      "titleLength": 25,
+      "title": "Codex GitHub 提交错误：工作流常见错误和修复顺序",
+      "titleLength": 30,
       "warnings": []
     },
     {
@@ -2805,7 +2805,7 @@
       "warnings": []
     },
     {
-      "descriptionLength": 49,
+      "descriptionLength": 54,
       "file": "content/blog/codex-review-generated-code-checklist.mdx",
       "issues": [],
       "scope": [
@@ -3484,8 +3484,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试",
-      "titleLength": 33,
+      "title": "Dify 接入 Ollama 怎么做：本地模型到知识库测试",
+      "titleLength": 29,
       "warnings": []
     },
     {
@@ -3520,8 +3520,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
-      "titleLength": 40,
+      "title": "Dify Workflow 和 Agent 区别：固定流程、工具调用和人工审核",
+      "titleLength": 39,
       "warnings": []
     },
     {
@@ -4240,8 +4240,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
-      "titleLength": 48,
+      "title": "Docker 使用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
+      "titleLength": 47,
       "warnings": []
     },
     {
@@ -4300,8 +4300,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住",
-      "titleLength": 39,
+      "title": "Helicone LLM Observability 怎么做：Gateway、日志、成本和限流",
+      "titleLength": 47,
       "warnings": []
     },
     {
@@ -4312,8 +4312,8 @@
         "public"
       ],
       "status": "published",
-      "title": "人力招聘 AI 提示词模板：JD、简历初筛、面试题和培训材料",
-      "titleLength": 30,
+      "title": "HR AI 提示词模板：JD、简历初筛、面试题和培训材料",
+      "titleLength": 28,
       "warnings": []
     },
     {
@@ -4396,8 +4396,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界",
-      "titleLength": 47,
+      "title": "Kubernetes GPU 大模型部署：Device Plugin、资源限制和调度边界",
+      "titleLength": 44,
       "warnings": []
     },
     {
@@ -4432,8 +4432,8 @@
         "public"
       ],
       "status": "published",
-      "title": "LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent",
-      "titleLength": 38,
+      "title": "LangSmith Observability 怎么做：观测、评测和 Agent 调试",
+      "titleLength": 43,
       "warnings": []
     },
     {
@@ -5824,8 +5824,8 @@
         "public"
       ],
       "status": "published",
-      "title": "Replicate API 怎么做 AI Demo：模型调用、部署和费用边界",
-      "titleLength": 38,
+      "title": "Replicate API 教程：做 AI Demo 的模型调用、部署和费用边界",
+      "titleLength": 40,
       "warnings": []
     },
     {
@@ -5836,8 +5836,8 @@
         "public"
       ],
       "status": "published",
-      "title": "RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界",
-      "titleLength": 48,
+      "title": "RunPod Serverless 大模型部署：Endpoint、Worker 和冷启动边界",
+      "titleLength": 46,
       "warnings": []
     },
     {
