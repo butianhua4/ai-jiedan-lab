@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T14:49:54.627Z",
+  "generatedAt": "2026-06-18T16:29:51.603Z",
   "guardrails": {
     "fakeTrafficClaims": false,
     "fakeRevenueClaims": false,
@@ -35,8 +35,8 @@
       "ok": true,
       "status": 200,
       "url": "https://ai-jiedan-lab.vercel.app/",
-      "cache": "HIT",
-      "age": "2825",
+      "cache": "PRERENDER",
+      "age": "0",
       "contains": {
         "500": true,
         "AI 工具指南": true,
@@ -47,8 +47,8 @@
       "ok": true,
       "status": 200,
       "url": "https://ai-jiedan-lab.vercel.app/blog",
-      "cache": "HIT",
-      "age": "2825",
+      "cache": "PRERENDER",
+      "age": "0",
       "contains": {
         "500": true,
         "新手教程": true,
@@ -59,8 +59,8 @@
       "ok": true,
       "status": 200,
       "url": "https://ai-jiedan-lab.vercel.app/q",
-      "cache": "HIT",
-      "age": "98",
+      "cache": "PRERENDER",
+      "age": "0",
       "contains": {
         "Question Layer": true,
         "/q/codex": true
@@ -71,7 +71,7 @@
       "status": 200,
       "url": "https://ai-jiedan-lab.vercel.app/sitemap.xml",
       "cache": "HIT",
-      "age": "2822",
+      "age": "0",
       "contains": {
         "<sitemapindex": true
       }
@@ -80,8 +80,8 @@
       "ok": true,
       "status": 200,
       "url": "https://ai-jiedan-lab.vercel.app/sitemap-blog.xml",
-      "cache": "HIT",
-      "age": "2822",
+      "cache": "PRERENDER",
+      "age": "0",
       "contains": {
         "<urlset": true
       },
@@ -91,8 +91,8 @@
       "ok": true,
       "status": 200,
       "url": "https://ai-jiedan-lab.vercel.app/sitemap-q.xml",
-      "cache": "HIT",
-      "age": "2822",
+      "cache": "PRERENDER",
+      "age": "0",
       "contains": {
         "<urlset": true
       },
@@ -102,8 +102,8 @@
       "ok": true,
       "status": 200,
       "url": "https://ai-jiedan-lab.vercel.app/sitemap-cluster.xml",
-      "cache": "HIT",
-      "age": "2822",
+      "cache": "PRERENDER",
+      "age": "0",
       "contains": {
         "<urlset": true
       },
@@ -114,7 +114,7 @@
       "status": 200,
       "url": "https://ai-jiedan-lab.vercel.app/robots.txt",
       "cache": "HIT",
-      "age": "2822",
+      "age": "0",
       "contains": {
         "Sitemap": true,
         "Allow": true
@@ -135,8 +135,8 @@
       "ok": true,
       "status": 200,
       "url": "https://ai-jiedan-lab.vercel.app/indexnow-4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt",
-      "cache": "HIT",
-      "age": "97",
+      "cache": "PRERENDER",
+      "age": "0",
       "contains": {
         "4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e": true
       }
@@ -144,15 +144,15 @@
   },
   "vercel": {
     "repository": "butianhua4/ai-jiedan-lab",
-    "sha": "5eacc29f3767503e477683f841636030c7ca3de0",
+    "sha": "b668cdb62a0ecc8a39468c259205abfd0e9a9482",
     "state": "success",
     "description": "Deployment has completed",
-    "targetUrl": "https://vercel.com/ip-studio-s-projects/ai-jiedan-lab/3ygSagxkLqQbHt9soSGXwHbCCvsj"
+    "targetUrl": "https://vercel.com/ip-studio-s-projects/ai-jiedan-lab/5LgLdeoVMcLSeExUaGgMsvkCNqbT"
   },
   "problems": [],
   "nextActions": [
     "In GSC, resubmit /sitemap.xml when a deployment changes q, cluster, or sitemap structure.",
-    "Manually request indexing for 5-15 priority URLs from docs/gsc-indexing-priority.md; do not submit all 500 pages.",
+    "Manually request indexing for 15-30 priority URLs from docs/gsc-indexing-priority.md when GSC allows it; do not submit all 500 pages.",
     "Prioritize exact problem-entry pages: Codex errors, Vercel failures, GitHub Actions failures, Agent deployment, RAG memory, API key and rate limits.",
     "Keep the current growth phase running; wait for Search Console to move discovered q/cluster pages into indexed pages."
   ]

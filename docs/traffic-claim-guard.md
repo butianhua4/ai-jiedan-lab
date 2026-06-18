@@ -1,14 +1,14 @@
 # Traffic Claim Guard
-Generated at: 2026-06-18T11:37:27.317Z
+Generated at: 2026-06-18T16:34:22.188Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
 - Note: This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples.
 ## Summary
-- filesScanned: 227
+- filesScanned: 229
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 9553
+- watchMentions: 9559
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -19,10 +19,6 @@ None.
 | README.md | 147 | - 不承诺搜索排名、收入、成交转化成功率或平台曝光 |
 | README.md | 159 | - 在有真实数据后接入 Search Console、Analytics、模板销售和联盟链接 |
 | app/llms.txt/route.ts | 51 | "- The site does not claim real traffic, impressions, income guarantees, or automatic publishing.", |
-| docs/NEXT_ACTIONS.md | 24 | ## 4. 收款和流量收益 |
-| docs/NEXT_ACTIONS.md | 29 | - 稳定流量后再接联盟链接和广告。 |
-| docs/NEXT_ACTIONS.md | 46 | - 有 5 篇以上人工审核公开文章：注册 Google Search Console。 |
-| docs/NEXT_ACTIONS.md | 47 | - 有稳定访问：开启 Vercel Web Analytics 或 Google Analytics。 |
 | docs/ai-deployment-coverage.md | 11 | - Note: This coverage matrix is read-only. It organizes deployment, Agent, RAG, and model infrastructure drafts for manual review and does not claim measured traffic. |
 | docs/ai-deployment-review-pack.md | 17 | - Traffic note: Search queries are broad intent seeds, not measured traffic, rankings, clicks, impressions, or income. |
 | docs/ai-deployment-review-pack.md | 109 | - No fabricated benchmark, latency, cost, traffic, ranking, income, or conversion claim. |
@@ -94,6 +90,10 @@ None.
 | docs/automation-digest.md | 2317 | - Traffic data available: false |
 | docs/automation-digest.md | 2333 | \| google-search-console \| global \| true \| https://support.google.com/webmasters/answer/9008080 \| Verify site ownership, then submit sitemap in Search Console. \| |
 | docs/automation-digest.md | 2436 | - Traffic data available: false |
+| docs/automation-digest.md | 2470 | - Traffic data available: false |
+| docs/automation-digest.md | 2527 | - Traffic data available: false |
+| docs/automation-digest.md | 2556 | - Traffic data available: false |
+| docs/automation-digest.md | 2589 | - Traffic data available: false |
 ## Next Actions
 - Keep saying that live/search surfaces are healthy, not that traffic exists.
 - Only report traffic after an audited source provides clicks, impressions, visits, or pageviews.

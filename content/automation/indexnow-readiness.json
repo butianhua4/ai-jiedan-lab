@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:37:30.046Z",
+  "generatedAt": "2026-06-18T16:33:26.121Z",
   "guardrails": {
     "submitByDefault": false,
     "note": "IndexNow is for Bing and other participating search engines. Google does not use IndexNow for normal q/blog pages."
@@ -16,19 +16,23 @@
     "key": "4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e",
     "keyLocation": "https://ai-jiedan-lab.vercel.app/indexnow-4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt",
     "urlList": [
-      "https://ai-jiedan-lab.vercel.app/q/node-js-errors/eslint-error-should-not-disable",
-      "https://ai-jiedan-lab.vercel.app/q/github/failed-to-push-some-refs-fix",
-      "https://ai-jiedan-lab.vercel.app/q/github/git-authentication-failed-fix",
-      "https://ai-jiedan-lab.vercel.app/q/github/github-actions-build-log-debug",
-      "https://ai-jiedan-lab.vercel.app/q/vercel/llm-api-integration-deployment-checklist",
       "https://ai-jiedan-lab.vercel.app/q/node-js-errors/module-not-found-debug",
+      "https://ai-jiedan-lab.vercel.app/q/ai-tools/n8n-ai-agent-webhook-production-guide",
       "https://ai-jiedan-lab.vercel.app/q/node-js-errors/nextjs-hydration-error-debug",
+      "https://ai-jiedan-lab.vercel.app/q/node-js-errors/node-version-mismatch-fix",
+      "https://ai-jiedan-lab.vercel.app/q/node-js-errors/npm-command-not-found-fix",
+      "https://ai-jiedan-lab.vercel.app/q/ai-tools/openai-api-nextjs-route-handler-guide",
       "https://ai-jiedan-lab.vercel.app/q/github/package-lock-conflict-fix",
+      "https://ai-jiedan-lab.vercel.app/q/node-js-errors/port-already-in-use-fix",
       "https://ai-jiedan-lab.vercel.app/q/vercel/replicate-api-ai-demo-guide",
       "https://ai-jiedan-lab.vercel.app/q/upwork/ai-freelance-failure-review"
     ]
   },
-  "submission": null,
+  "submission": {
+    "ok": true,
+    "status": 200,
+    "statusText": "OK"
+  },
   "summary": {
     "growthStage": "warming",
     "totalPages": 1006,
@@ -43,7 +47,6 @@
     "graphEdges": 9572
   },
   "nextActions": [
-    "Key file is live. Keep report generation automated.",
-    "Use --submit only after Bing Webmaster Tools is registered and the daily URL batch is reviewed."
+    "Submission attempted. Check the submission status field and Bing Webmaster Tools after processing delay."
   ]
 }

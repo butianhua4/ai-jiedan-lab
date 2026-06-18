@@ -1,6 +1,6 @@
 # SEO Growth Heartbeat
 
-Generated at: 2026-06-18T14:49:54.627Z
+Generated at: 2026-06-18T16:29:51.603Z
 
 ## Status
 
@@ -45,10 +45,10 @@ Generated at: 2026-06-18T14:49:54.627Z
 ## Vercel
 
 - Repository: butianhua4/ai-jiedan-lab
-- SHA: 5eacc29f3767503e477683f841636030c7ca3de0
+- SHA: b668cdb62a0ecc8a39468c259205abfd0e9a9482
 - State: success
 - Description: Deployment has completed
-- Target: https://vercel.com/ip-studio-s-projects/ai-jiedan-lab/3ygSagxkLqQbHt9soSGXwHbCCvsj
+- Target: https://vercel.com/ip-studio-s-projects/ai-jiedan-lab/5LgLdeoVMcLSeExUaGgMsvkCNqbT
 
 ## Problems
 
@@ -57,6 +57,6 @@ Generated at: 2026-06-18T14:49:54.627Z
 ## Next Actions
 
 1. In GSC, resubmit /sitemap.xml when a deployment changes q, cluster, or sitemap structure.
-2. Manually request indexing for 5-15 priority URLs from docs/gsc-indexing-priority.md; do not submit all 500 pages.
+2. Manually request indexing for 15-30 priority URLs from docs/gsc-indexing-priority.md when GSC allows it; do not submit all 500 pages.
 3. Prioritize exact problem-entry pages: Codex errors, Vercel failures, GitHub Actions failures, Agent deployment, RAG memory, API key and rate limits.
 4. Keep the current growth phase running; wait for Search Console to move discovered q/cluster pages into indexed pages.

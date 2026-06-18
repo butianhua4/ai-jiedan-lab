@@ -1,6 +1,6 @@
 # SEO Growth Daily Ops
 
-Generated at: 2026-06-18T15:17:00.076Z
+Generated at: 2026-06-18T16:37:31.980Z
 
 ## Guardrails
 
@@ -24,30 +24,31 @@ Generated at: 2026-06-18T15:17:00.076Z
 
 1. Submit sitemap index: https://ai-jiedan-lab.vercel.app/sitemap.xml
 2. Manual URL Inspection limit: 20
-3. Rule: Submit sitemap.xml first in GSC. Then use URL Inspection for about 15-30 URLs from todayBatch if GSC allows it. Do not request indexing for hundreds of URLs in one day.
+3. Queue window: day 2 since 2026-06-18, URLs 31-50 of 78
+4. Rule: Submit sitemap.xml first in GSC. Then use URL Inspection for about 15-30 URLs from todayBatch if GSC allows it. Do not request indexing for hundreds of URLs in one day.
 
 ### Today URL Inspection Batch
 
-1. https://ai-jiedan-lab.vercel.app/cluster/ai-tools (cluster, ai-tools, score 100)
-2. https://ai-jiedan-lab.vercel.app/cluster/codex (cluster, codex, score 100)
-3. https://ai-jiedan-lab.vercel.app/cluster/github (cluster, github, score 100)
-4. https://ai-jiedan-lab.vercel.app/cluster/node-js-errors (cluster, node-js-errors, score 100)
-5. https://ai-jiedan-lab.vercel.app/cluster/upwork (cluster, upwork, score 100)
-6. https://ai-jiedan-lab.vercel.app/cluster/vercel (cluster, vercel, score 100)
-7. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-observability-logging-guide (q, ai-tools, score 90)
-8. https://ai-jiedan-lab.vercel.app/q/vercel/agent-production-deployment-checklist (q, vercel, score 89)
-9. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-calling-beginner-guide (q, ai-tools, score 88)
-10. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide (q, ai-tools, score 87)
-11. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-prompt-library-team-knowledge-base-guide (q, ai-tools, score 86)
-12. https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-api-rate-limit-debug-guide (q, ai-tools, score 85)
-13. https://ai-jiedan-lab.vercel.app/q/codex/codex-bugfix-rollback-record (q, codex, score 84)
-14. https://ai-jiedan-lab.vercel.app/q/codex/codex-npm-install-errors (q, codex, score 83)
-15. https://ai-jiedan-lab.vercel.app/q/codex/codex-vercel-deployment (q, codex, score 82)
-16. https://ai-jiedan-lab.vercel.app/q/codex/codex-windows-install-failed (q, codex, score 81)
-17. https://ai-jiedan-lab.vercel.app/q/node-js-errors/dependency-conflict-fix (q, node-js-errors, score 80)
-18. https://ai-jiedan-lab.vercel.app/q/vercel/dev-works-build-fails (q, vercel, score 79)
-19. https://ai-jiedan-lab.vercel.app/q/node-js-errors/dify-workflow-error-handling-guide (q, node-js-errors, score 78)
-20. https://ai-jiedan-lab.vercel.app/q/vercel/env-variable-missing-fix (q, vercel, score 77)
+1. https://ai-jiedan-lab.vercel.app/q/node-js-errors/module-not-found-debug (q, node-js-errors, score 66)
+2. https://ai-jiedan-lab.vercel.app/q/ai-tools/n8n-ai-agent-webhook-production-guide (q, ai-tools, score 65)
+3. https://ai-jiedan-lab.vercel.app/q/node-js-errors/nextjs-hydration-error-debug (q, node-js-errors, score 64)
+4. https://ai-jiedan-lab.vercel.app/q/node-js-errors/node-version-mismatch-fix (q, node-js-errors, score 63)
+5. https://ai-jiedan-lab.vercel.app/q/node-js-errors/npm-command-not-found-fix (q, node-js-errors, score 62)
+6. https://ai-jiedan-lab.vercel.app/q/ai-tools/openai-api-nextjs-route-handler-guide (q, ai-tools, score 61)
+7. https://ai-jiedan-lab.vercel.app/q/github/package-lock-conflict-fix (q, github, score 60)
+8. https://ai-jiedan-lab.vercel.app/q/node-js-errors/port-already-in-use-fix (q, node-js-errors, score 59)
+9. https://ai-jiedan-lab.vercel.app/q/vercel/replicate-api-ai-demo-guide (q, vercel, score 58)
+10. https://ai-jiedan-lab.vercel.app/q/upwork/ai-freelance-failure-review (q, upwork, score 57)
+11. https://ai-jiedan-lab.vercel.app/q/node-js-errors/claude-code-error-debug (q, node-js-errors, score 56)
+12. https://ai-jiedan-lab.vercel.app/q/upwork/claude-code-low-risk-freelance-jobs (q, upwork, score 55)
+13. https://ai-jiedan-lab.vercel.app/q/vercel/cloudflare-vs-namecheap-domain (q, vercel, score 54)
+14. https://ai-jiedan-lab.vercel.app/q/node-js-errors/ai-website-builder-beginner-guide (q, node-js-errors, score 53)
+15. https://ai-jiedan-lab.vercel.app/q/codex/codex-css-spacing-responsive (q, codex, score 52)
+16. https://ai-jiedan-lab.vercel.app/q/codex/codex-project-start-checklist (q, codex, score 51)
+17. https://ai-jiedan-lab.vercel.app/q/codex/codex-vs-claude-code-beginner (q, codex, score 50)
+18. https://ai-jiedan-lab.vercel.app/q/codex/codex-vs-cursor-web-editing (q, codex, score 49)
+19. https://ai-jiedan-lab.vercel.app/q/codex/cursor-vs-codex-web-editing (q, codex, score 48)
+20. https://ai-jiedan-lab.vercel.app/q/node-js-errors/dify-coze-flowise-agent-builder-comparison (q, node-js-errors, score 47)
 
 ## Daily Content Actions
 
@@ -118,6 +119,7 @@ Generated at: 2026-06-18T15:17:00.076Z
 - Keywords: api, key, rate, limit, claude, openai
 - Current q examples:
   - https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-api-rate-limit-debug-guide
+  - https://ai-jiedan-lab.vercel.app/q/ai-tools/gemini-api-nextjs-guide
+  - https://ai-jiedan-lab.vercel.app/q/ai-tools/gemini-api-rate-limit-debug-guide
   - https://ai-jiedan-lab.vercel.app/q/vercel/llm-api-integration-deployment-checklist
-  - https://ai-jiedan-lab.vercel.app/q/vercel/replicate-api-ai-demo-guide
-  - https://ai-jiedan-lab.vercel.app/q/upwork/claude-code-low-risk-freelance-jobs
+  - https://ai-jiedan-lab.vercel.app/q/ai-tools/llm-api-rate-limit-retry-guide
