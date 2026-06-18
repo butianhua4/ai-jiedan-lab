@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const nav = [
   ["/", "首页"],
+  ["/en", "English"],
   ["/office-ai", "AI 办公"],
   ["/prompts", "提示词库"],
   ["/q", "AI 问题"],

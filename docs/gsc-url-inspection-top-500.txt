@@ -1,3 +1,4 @@
+https://ai-jiedan-lab.vercel.app/en
 https://ai-jiedan-lab.vercel.app/cluster/ai-tools
 https://ai-jiedan-lab.vercel.app/cluster/codex
 https://ai-jiedan-lab.vercel.app/cluster/github
@@ -497,4 +498,3 @@ https://ai-jiedan-lab.vercel.app/q/ai-tools/healthcare-admin-ai-prompts-guide
 https://ai-jiedan-lab.vercel.app/blog/env-variable-missing-fix-checklist
 https://ai-jiedan-lab.vercel.app/q/ai-tools/hr-recruiting-ai-prompts-guide
 https://ai-jiedan-lab.vercel.app/blog/env-variable-missing-fix-freelance-scope
-https://ai-jiedan-lab.vercel.app/q/github/huggingface-spaces-ai-demo-guide

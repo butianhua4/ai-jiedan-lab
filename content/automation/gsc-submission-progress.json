@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T17:56:09.086Z",
+  "generatedAt": "2026-06-18T19:54:10.934Z",
   "guardrails": {
     "gscManualOnly": true,
     "noFakeIndexingClaims": true,
@@ -16,7 +16,7 @@
     "todayQueueUrls": 400,
     "confirmedGscSubmitted": 0,
     "gscRemaining": 500,
-    "nextUrl": "https://ai-jiedan-lab.vercel.app/cluster/ai-tools",
+    "nextUrl": "https://ai-jiedan-lab.vercel.app/en",
     "indexNowReady": true,
     "indexNowSubmitted": true,
     "indexNowUrls": 500,
@@ -33,19 +33,22 @@
   "queueHealth": {
     "duplicateUrls": [],
     "typeSummary": {
+      "static": 1,
       "cluster": 6,
-      "q": 257,
+      "q": 256,
       "blog": 237
     },
     "clusterSummary": {
+      "us-entry": 1,
       "ai-tools": 196,
       "codex": 117,
-      "github": 24,
+      "github": 23,
       "node-js-errors": 29,
       "upwork": 89,
       "vercel": 45
     },
     "firstRemainingUrls": [
+      "https://ai-jiedan-lab.vercel.app/en",
       "https://ai-jiedan-lab.vercel.app/cluster/ai-tools",
       "https://ai-jiedan-lab.vercel.app/cluster/codex",
       "https://ai-jiedan-lab.vercel.app/cluster/github",
@@ -64,8 +67,7 @@
       "https://ai-jiedan-lab.vercel.app/q/codex/codex-windows-install-failed",
       "https://ai-jiedan-lab.vercel.app/q/node-js-errors/dependency-conflict-fix",
       "https://ai-jiedan-lab.vercel.app/q/vercel/dev-works-build-fails",
-      "https://ai-jiedan-lab.vercel.app/q/node-js-errors/dify-workflow-error-handling-guide",
-      "https://ai-jiedan-lab.vercel.app/q/vercel/env-variable-missing-fix"
+      "https://ai-jiedan-lab.vercel.app/q/node-js-errors/dify-workflow-error-handling-guide"
     ]
   },
   "improvementActions": [

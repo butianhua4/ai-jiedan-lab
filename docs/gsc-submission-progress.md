@@ -1,6 +1,6 @@
 # GSC Submission Progress
 
-Generated at: 2026-06-18T17:56:09.086Z
+Generated at: 2026-06-18T19:54:10.934Z
 
 ## Guardrails
 
@@ -20,7 +20,7 @@ Generated at: 2026-06-18T17:56:09.086Z
 - Today queue URLs: 400
 - Confirmed GSC submitted: 0
 - GSC remaining: 500
-- Next URL: https://ai-jiedan-lab.vercel.app/cluster/ai-tools
+- Next URL: https://ai-jiedan-lab.vercel.app/en
 - IndexNow ready: true
 - IndexNow submitted: true
 - IndexNow URLs: 500
@@ -28,31 +28,31 @@ Generated at: 2026-06-18T17:56:09.086Z
 
 ## Queue Mix
 
-- Types: {"cluster":6,"q":257,"blog":237}
-- Clusters: {"ai-tools":196,"codex":117,"github":24,"node-js-errors":29,"upwork":89,"vercel":45}
+- Types: {"static":1,"cluster":6,"q":256,"blog":237}
+- Clusters: {"us-entry":1,"ai-tools":196,"codex":117,"github":23,"node-js-errors":29,"upwork":89,"vercel":45}
 
 ## First Remaining URLs
 
-1. https://ai-jiedan-lab.vercel.app/cluster/ai-tools
-2. https://ai-jiedan-lab.vercel.app/cluster/codex
-3. https://ai-jiedan-lab.vercel.app/cluster/github
-4. https://ai-jiedan-lab.vercel.app/cluster/node-js-errors
-5. https://ai-jiedan-lab.vercel.app/cluster/upwork
-6. https://ai-jiedan-lab.vercel.app/cluster/vercel
-7. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-observability-logging-guide
-8. https://ai-jiedan-lab.vercel.app/q/vercel/agent-production-deployment-checklist
-9. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-calling-beginner-guide
-10. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide
-11. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-prompt-library-team-knowledge-base-guide
-12. https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-api-rate-limit-debug-guide
-13. https://ai-jiedan-lab.vercel.app/q/codex/codex-bugfix-rollback-record
-14. https://ai-jiedan-lab.vercel.app/q/codex/codex-npm-install-errors
-15. https://ai-jiedan-lab.vercel.app/q/codex/codex-vercel-deployment
-16. https://ai-jiedan-lab.vercel.app/q/codex/codex-windows-install-failed
-17. https://ai-jiedan-lab.vercel.app/q/node-js-errors/dependency-conflict-fix
-18. https://ai-jiedan-lab.vercel.app/q/vercel/dev-works-build-fails
-19. https://ai-jiedan-lab.vercel.app/q/node-js-errors/dify-workflow-error-handling-guide
-20. https://ai-jiedan-lab.vercel.app/q/vercel/env-variable-missing-fix
+1. https://ai-jiedan-lab.vercel.app/en
+2. https://ai-jiedan-lab.vercel.app/cluster/ai-tools
+3. https://ai-jiedan-lab.vercel.app/cluster/codex
+4. https://ai-jiedan-lab.vercel.app/cluster/github
+5. https://ai-jiedan-lab.vercel.app/cluster/node-js-errors
+6. https://ai-jiedan-lab.vercel.app/cluster/upwork
+7. https://ai-jiedan-lab.vercel.app/cluster/vercel
+8. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-observability-logging-guide
+9. https://ai-jiedan-lab.vercel.app/q/vercel/agent-production-deployment-checklist
+10. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-calling-beginner-guide
+11. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide
+12. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-prompt-library-team-knowledge-base-guide
+13. https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-api-rate-limit-debug-guide
+14. https://ai-jiedan-lab.vercel.app/q/codex/codex-bugfix-rollback-record
+15. https://ai-jiedan-lab.vercel.app/q/codex/codex-npm-install-errors
+16. https://ai-jiedan-lab.vercel.app/q/codex/codex-vercel-deployment
+17. https://ai-jiedan-lab.vercel.app/q/codex/codex-windows-install-failed
+18. https://ai-jiedan-lab.vercel.app/q/node-js-errors/dependency-conflict-fix
+19. https://ai-jiedan-lab.vercel.app/q/vercel/dev-works-build-fails
+20. https://ai-jiedan-lab.vercel.app/q/node-js-errors/dify-workflow-error-handling-guide
 
 ## Improvement Actions
 

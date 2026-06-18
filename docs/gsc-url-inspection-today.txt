@@ -1,3 +1,4 @@
+https://ai-jiedan-lab.vercel.app/q/codex/cursor-vs-codex-web-editing
 https://ai-jiedan-lab.vercel.app/blog/codex-vercel-deployment
 https://ai-jiedan-lab.vercel.app/q/node-js-errors/dify-coze-flowise-agent-builder-comparison
 https://ai-jiedan-lab.vercel.app/blog/codex-windows-install-failed
@@ -397,4 +398,3 @@ https://ai-jiedan-lab.vercel.app/q/ai-tools/healthcare-admin-ai-prompts-guide
 https://ai-jiedan-lab.vercel.app/blog/env-variable-missing-fix-checklist
 https://ai-jiedan-lab.vercel.app/q/ai-tools/hr-recruiting-ai-prompts-guide
 https://ai-jiedan-lab.vercel.app/blog/env-variable-missing-fix-freelance-scope
-https://ai-jiedan-lab.vercel.app/q/github/huggingface-spaces-ai-demo-guide

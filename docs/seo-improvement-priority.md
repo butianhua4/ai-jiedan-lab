@@ -1,6 +1,6 @@
 # SEO Improvement Priority
 
-Generated at: 2026-06-18T18:43:39.649Z
+Generated at: 2026-06-18T19:54:36.999Z
 
 ## Guardrails
 
@@ -38,6 +38,7 @@ Generated at: 2026-06-18T18:43:39.649Z
 
 | File/URL | Title | Warnings |
 | --- | --- | --- |
+| https://ai-jiedan-lab.vercel.app/en |  |  |
 | https://ai-jiedan-lab.vercel.app/cluster/ai-tools |  |  |
 | https://ai-jiedan-lab.vercel.app/cluster/codex |  |  |
 | https://ai-jiedan-lab.vercel.app/cluster/github |  |  |
@@ -47,7 +48,6 @@ Generated at: 2026-06-18T18:43:39.649Z
 | https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-observability-logging-guide |  |  |
 | https://ai-jiedan-lab.vercel.app/q/vercel/agent-production-deployment-checklist |  |  |
 | https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-calling-beginner-guide |  |  |
-| https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide |  |  |
 
 ### 2. Public mojibake and encoding repair
 

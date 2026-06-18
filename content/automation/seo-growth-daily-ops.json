@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T17:49:25.092Z",
+  "generatedAt": "2026-06-18T19:54:10.786Z",
   "guardrails": {
     "fakeTrafficClaims": false,
     "manualGscOnly": true,
@@ -12,11 +12,20 @@
     "topQueueTarget": 500,
     "launchDate": "2026-06-18",
     "dayIndex": 1,
-    "queueSize": 1006,
+    "queueSize": 1007,
     "batchStart": 101,
     "batchEnd": 500,
     "wrapsQueue": false,
     "todayBatch": [
+      {
+        "cluster": "codex",
+        "path": "/q/codex/cursor-vs-codex-web-editing",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 34,
+        "title": "Cursor 和 Codex 改网页有什么区别",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/codex/cursor-vs-codex-web-editing"
+      },
       {
         "cluster": "codex",
         "path": "/blog/codex-vercel-deployment",
@@ -3607,18 +3616,18 @@
         "title": "环境变量 missing 使用前怎么判断是否适合",
         "type": "blog",
         "url": "https://ai-jiedan-lab.vercel.app/blog/env-variable-missing-fix-freelance-scope"
-      },
-      {
-        "cluster": "github",
-        "path": "/q/github/huggingface-spaces-ai-demo-guide",
-        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
-        "score": -166,
-        "title": "Hugging Face Spaces 怎么部署 AI Demo：Gradio、Docker 和公开边界",
-        "type": "q",
-        "url": "https://ai-jiedan-lab.vercel.app/q/github/huggingface-spaces-ai-demo-guide"
       }
     ],
     "topQueue": [
+      {
+        "cluster": "us-entry",
+        "path": "/en",
+        "reason": "US search entry page with English metadata and links into q, cluster, blog, and tool pages.",
+        "score": 120,
+        "title": "AI Tools Guide for Deployment, Agents, RAG, and Automation",
+        "type": "static",
+        "url": "https://ai-jiedan-lab.vercel.app/en"
+      },
       {
         "cluster": "ai-tools",
         "path": "/cluster/ai-tools",
@@ -8109,15 +8118,6 @@
         "title": "环境变量 missing 使用前怎么判断是否适合",
         "type": "blog",
         "url": "https://ai-jiedan-lab.vercel.app/blog/env-variable-missing-fix-freelance-scope"
-      },
-      {
-        "cluster": "github",
-        "path": "/q/github/huggingface-spaces-ai-demo-guide",
-        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
-        "score": -166,
-        "title": "Hugging Face Spaces 怎么部署 AI Demo：Gradio、Docker 和公开边界",
-        "type": "q",
-        "url": "https://ai-jiedan-lab.vercel.app/q/github/huggingface-spaces-ai-demo-guide"
       }
     ],
     "operatingRule": "Submit sitemap.xml first in GSC. Then use URL Inspection from todayBatch until the top 500 queue is processed or GSC rate-limits requests."

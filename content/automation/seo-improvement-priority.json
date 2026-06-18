@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T18:43:39.649Z",
+  "generatedAt": "2026-06-18T19:54:36.999Z",
   "guardrails": {
     "noFakeTrafficClaims": true,
     "readOnlyAnalysis": true,
@@ -33,43 +33,43 @@
       "sampleItems": [
         {
           "rank": 1,
-          "url": "https://ai-jiedan-lab.vercel.app/cluster/ai-tools"
+          "url": "https://ai-jiedan-lab.vercel.app/en"
         },
         {
           "rank": 2,
-          "url": "https://ai-jiedan-lab.vercel.app/cluster/codex"
+          "url": "https://ai-jiedan-lab.vercel.app/cluster/ai-tools"
         },
         {
           "rank": 3,
-          "url": "https://ai-jiedan-lab.vercel.app/cluster/github"
+          "url": "https://ai-jiedan-lab.vercel.app/cluster/codex"
         },
         {
           "rank": 4,
-          "url": "https://ai-jiedan-lab.vercel.app/cluster/node-js-errors"
+          "url": "https://ai-jiedan-lab.vercel.app/cluster/github"
         },
         {
           "rank": 5,
-          "url": "https://ai-jiedan-lab.vercel.app/cluster/upwork"
+          "url": "https://ai-jiedan-lab.vercel.app/cluster/node-js-errors"
         },
         {
           "rank": 6,
-          "url": "https://ai-jiedan-lab.vercel.app/cluster/vercel"
+          "url": "https://ai-jiedan-lab.vercel.app/cluster/upwork"
         },
         {
           "rank": 7,
-          "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-observability-logging-guide"
+          "url": "https://ai-jiedan-lab.vercel.app/cluster/vercel"
         },
         {
           "rank": 8,
-          "url": "https://ai-jiedan-lab.vercel.app/q/vercel/agent-production-deployment-checklist"
+          "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-observability-logging-guide"
         },
         {
           "rank": 9,
-          "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-calling-beginner-guide"
+          "url": "https://ai-jiedan-lab.vercel.app/q/vercel/agent-production-deployment-checklist"
         },
         {
           "rank": 10,
-          "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide"
+          "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-calling-beginner-guide"
         }
       ]
     },

@@ -7,6 +7,7 @@ export const revalidate = 86400;
 export function GET() {
   const staticRoutes = [
     "",
+    "/en",
     "/blog",
     "/deployments",
     "/office-ai",

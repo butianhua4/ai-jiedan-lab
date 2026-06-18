@@ -8,7 +8,7 @@ type PriorityItem = {
   reason: string;
   score: number;
   title: string;
-  type: "cluster" | "q" | "blog";
+  type: "cluster" | "q" | "blog" | "static";
   url: string;
 };
 
@@ -52,6 +52,17 @@ const dailyBatchSize = 50;
 const topQueueTarget = 500;
 const alreadyPreparedTarget = 100;
 const launchDate = "2026-06-18";
+const pinnedInspectionItems: PriorityItem[] = [
+  {
+    cluster: "us-entry",
+    path: "/en",
+    reason: "US search entry page with English metadata and links into q, cluster, blog, and tool pages.",
+    score: 120,
+    title: "AI Tools Guide for Deployment, Agents, RAG, and Automation",
+    type: "static",
+    url: "https://ai-jiedan-lab.vercel.app/en",
+  },
+];
 
 const laneSeeds = [
   {
@@ -170,7 +181,13 @@ function readPriority(): PriorityPayload {
 }
 
 function getInspectionQueue(items: PriorityItem[]) {
-  return items.filter((item) => item.type === "cluster" || item.type === "q" || item.type === "blog");
+  const eligible = items.filter((item) => item.type === "cluster" || item.type === "q" || item.type === "blog");
+  const seen = new Set<string>();
+  return [...pinnedInspectionItems, ...eligible].filter((item) => {
+    if (seen.has(item.url)) return false;
+    seen.add(item.url);
+    return true;
+  });
 }
 
 function getTodayBatchPlan(queue: PriorityItem[], firstDaySize: number) {
