@@ -1,27 +1,73 @@
 {
-  "generatedAt": "2026-06-18T20:28:08.555Z",
+  "generatedAt": "2026-06-18T20:28:27.899Z",
+  "startedAt": "2026-06-18T20:28:03.417Z",
+  "endedAt": "2026-06-18T20:28:27.899Z",
   "guardrails": {
-    "noFakeTrafficClaims": true,
-    "readOnlyAnalysis": true,
-    "note": "This report consolidates existing audits and queues. It does not generate new content or claim indexing, impressions, clicks, or income."
+    "autoPublish": false,
+    "autoGenerateMassContent": false,
+    "fakeTrafficClaims": false,
+    "failMode": "report-only",
+    "note": "This loop refreshes SEO growth reports and next actions. It does not claim Google indexing, traffic, clicks, rankings, or revenue."
   },
-  "summary": {
+  "status": {
+    "ok": true,
+    "severity": "green",
+    "criticalFailures": 0,
+    "advisoryFailures": 0,
+    "healthScore": 100,
     "growthStage": "warming",
-    "growthReadinessScore": 100,
-    "confirmedGscSubmitted": 0,
-    "gscRemaining": 500,
+    "canContinueScaling": true
+  },
+  "gsc": {
+    "nextUrl": "https://ai-jiedan-lab.vercel.app/en",
+    "confirmedSubmitted": 0,
+    "remaining": 500,
     "topQueueUrls": 500,
-    "indexNowSubmitted": false,
-    "indexNowUrls": 500,
-    "blockingItems": 0,
-    "publicMojibakeWarningItems": 0,
-    "snippetWarningItems": 0,
-    "schemaWarningItems": 0,
-    "internalLinkCandidateItems": 16,
-    "internalLinkRecommendedItems": 3,
+    "firstRemainingUrls": [
+      "https://ai-jiedan-lab.vercel.app/en",
+      "https://ai-jiedan-lab.vercel.app/cluster/ai-tools",
+      "https://ai-jiedan-lab.vercel.app/cluster/codex",
+      "https://ai-jiedan-lab.vercel.app/cluster/github",
+      "https://ai-jiedan-lab.vercel.app/cluster/node-js-errors",
+      "https://ai-jiedan-lab.vercel.app/cluster/upwork",
+      "https://ai-jiedan-lab.vercel.app/cluster/vercel",
+      "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-observability-logging-guide",
+      "https://ai-jiedan-lab.vercel.app/q/vercel/agent-production-deployment-checklist",
+      "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-calling-beginner-guide",
+      "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide",
+      "https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-prompt-library-team-knowledge-base-guide",
+      "https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-api-rate-limit-debug-guide",
+      "https://ai-jiedan-lab.vercel.app/q/codex/codex-bugfix-rollback-record",
+      "https://ai-jiedan-lab.vercel.app/q/codex/codex-npm-install-errors"
+    ],
+    "queueMix": {
+      "static": 1,
+      "cluster": 6,
+      "q": 256,
+      "blog": 237
+    },
+    "clusterMix": {
+      "us-entry": 1,
+      "ai-tools": 196,
+      "codex": 117,
+      "github": 23,
+      "node-js-errors": 29,
+      "upwork": 89,
+      "vercel": 45
+    }
+  },
+  "growth": {
+    "readinessScore": 100,
+    "internalLinkHealth": 100,
     "orphanPages": 0,
     "weakPages": 0
   },
+  "traffic": {
+    "dataAvailable": false,
+    "measuredSources": 0,
+    "searchConsoleVerificationEvidence": false
+  },
+  "problems": [],
   "priorityLanes": [
     {
       "name": "GSC manual indexing queue",
@@ -495,13 +541,135 @@
       ]
     }
   ],
-  "nextSevenActions": [
-    "Do not expand beyond the current top 500 queue until crawl/indexing movement is visible in GSC.",
-    "Keep the top queue focused on q and cluster pages; use blog pages as depth targets, not the first manual request priority.",
-    "Repair public mojibake warnings first because broken titles/descriptions reduce trust and CTR even when indexed.",
-    "Rewrite snippet warnings for pages already in the GSC top 500 queue before touching lower-priority pages.",
-    "Normalize structured-data contentType values so schema warnings stay non-blocking and consistent.",
-    "Apply the internal-link opportunity suggestions to draft/recommended pages before publishing them.",
-    "Record real manual GSC progress in content/automation/gsc-manual-progress.json after URL Inspection submissions."
+  "nextActions": [
+    "Next manual GSC URL Inspection target: https://ai-jiedan-lab.vercel.app/en.",
+    "Keep GSC requests focused on /en, cluster pages, and high-intent q pages before broad blog pages.",
+    "Do not report traffic, clicks, rankings, or revenue until Analytics/GSC data is imported or manually evidenced.",
+    "GSC manual indexing queue: Continue manual URL Inspection requests from the priority queue, then update the local confirmed count so progress stays auditable.",
+    "Internal-link opportunity queue: Apply suggested public links to candidates before publishing and keep every new page above the internal-link floor.",
+    "In GSC, resubmit /sitemap.xml when a deployment changes q, cluster, or sitemap structure.",
+    "Manually request indexing for 15-30 priority URLs from docs/gsc-indexing-priority.md when GSC allows it; do not submit all 500 pages.",
+    "Prioritize exact problem-entry pages: Codex errors, Vercel failures, GitHub Actions failures, Agent deployment, RAG memory, API key and rate limits.",
+    "Keep the current growth phase running; wait for Search Console to move discovered q/cluster pages into indexed pages.",
+    "After GSC impressions appear, rewrite only the pages with evidence: title, meta description, first answer block, FAQ, and related q links."
+  ],
+  "tasks": [
+    {
+      "critical": true,
+      "durationMs": 1649,
+      "exitCode": 0,
+      "ok": true,
+      "stderrTail": "",
+      "stdoutTail": "> ai-tools-guide@0.1.0 search-console:indexing-priority\n> tsx scripts/gsc-indexing-priority.ts\n\n{\n  \"ok\": true,\n  \"json\": \"content/automation/gsc-indexing-priority.json\",\n  \"markdown\": \"docs/gsc-indexing-priority.md\",\n  \"firstDayUrls\": 500,\n  \"qPages\": 500,\n  \"clusterPages\": 6,\n  \"blogPages\": 500\n}",
+      "title": "Refresh GSC indexing priority"
+    },
+    {
+      "critical": true,
+      "durationMs": 550,
+      "exitCode": 0,
+      "ok": true,
+      "stderrTail": "",
+      "stdoutTail": "> ai-tools-guide@0.1.0 seo:growth-daily-ops\n> tsx scripts/seo-growth-daily-ops.ts\n\n{\n  \"ok\": true,\n  \"json\": \"content/automation/seo-growth-daily-ops.json\",\n  \"markdown\": \"docs/seo-growth-daily-ops.md\",\n  \"text\": \"docs/gsc-url-inspection-today.txt\",\n  \"top100Text\": \"docs/gsc-url-inspection-top-100.txt\",\n  \"top500Text\": \"docs/gsc-url-inspection-top-500.txt\",\n  \"todayBatch\": 400,\n  \"batchStart\": 101,\n  \"batchEnd\": 500,\n  \"wrapsQueue\": false,\n  \"dayIndex\": 1,\n  \"problemLanes\": 6,\n  \"growthStage\": \"warming\"\n}",
+      "title": "Refresh SEO growth daily ops"
+    },
+    {
+      "critical": false,
+      "durationMs": 2011,
+      "exitCode": 0,
+      "ok": true,
+      "stderrTail": "",
+      "stdoutTail": "> ai-tools-guide@0.1.0 indexnow:readiness\n> tsx scripts/indexnow-readiness.ts\n\n{\n  \"ok\": true,\n  \"ready\": true,\n  \"submitted\": false,\n  \"json\": \"content/automation/indexnow-readiness.json\",\n  \"markdown\": \"docs/indexnow-readiness.md\",\n  \"urlCount\": 500\n}",
+      "title": "Refresh IndexNow readiness"
+    },
+    {
+      "critical": true,
+      "durationMs": 485,
+      "exitCode": 0,
+      "ok": true,
+      "stderrTail": "",
+      "stdoutTail": "> ai-tools-guide@0.1.0 search-console:progress\n> tsx scripts/gsc-submission-progress.ts\n\n{\n  \"ok\": true,\n  \"json\": \"content/automation/gsc-submission-progress.json\",\n  \"markdown\": \"docs/gsc-submission-progress.md\",\n  \"topQueueUrls\": 500,\n  \"confirmedGscSubmitted\": 0,\n  \"gscRemaining\": 500,\n  \"indexNowUrls\": 500,\n  \"nextUrl\": \"https://ai-jiedan-lab.vercel.app/en\"\n}",
+      "title": "Refresh GSC submission progress"
+    },
+    {
+      "critical": true,
+      "durationMs": 479,
+      "exitCode": 0,
+      "ok": true,
+      "stderrTail": "",
+      "stdoutTail": "> ai-tools-guide@0.1.0 seo:improvement-priority\n> tsx scripts/seo-improvement-priority.ts\n\n{\n  \"ok\": true,\n  \"json\": \"content/automation/seo-improvement-priority.json\",\n  \"markdown\": \"docs/seo-improvement-priority.md\",\n  \"growthStage\": \"warming\",\n  \"blockingItems\": 0,\n  \"publicMojibakeWarningItems\": 0,\n  \"snippetWarningItems\": 0,\n  \"schemaWarningItems\": 0,\n  \"internalLinkCandidateItems\": 16\n}",
+      "title": "Refresh SEO improvement priority"
+    },
+    {
+      "critical": false,
+      "durationMs": 2075,
+      "exitCode": 0,
+      "ok": true,
+      "stderrTail": "",
+      "stdoutTail": "> ai-tools-guide@0.1.0 traffic:evidence\n> tsx scripts/traffic-evidence-audit.ts --url=https://ai-jiedan-lab.vercel.app --fetch-retries=4 --fetch-timeout-ms=15000\n\n{\n  \"ok\": true,\n  \"trafficDataAvailable\": false,\n  \"json\": \"content/automation/traffic-evidence-audit.json\",\n  \"markdown\": \"docs/traffic-evidence-audit.md\"\n}",
+      "title": "Run traffic evidence audit"
+    },
+    {
+      "critical": true,
+      "durationMs": 691,
+      "exitCode": 0,
+      "ok": true,
+      "stderrTail": "",
+      "stdoutTail": "> ai-tools-guide@0.1.0 traffic:claim-guard\n> tsx scripts/traffic-claim-guard.ts\n\n{\n  \"ok\": true,\n  \"unsafeClaims\": 0,\n  \"json\": \"content/automation/traffic-claim-guard.json\",\n  \"markdown\": \"docs/traffic-claim-guard.md\"\n}",
+      "title": "Run traffic claim guard"
+    },
+    {
+      "critical": true,
+      "durationMs": 1879,
+      "exitCode": 0,
+      "ok": true,
+      "stderrTail": "",
+      "stdoutTail": "s\": [\n    {\n      \"name\": \"published posts are available\",\n      \"ok\": true,\n      \"detail\": \"500 published posts\"\n    },\n    {\n      \"name\": \"article slugs are english/ascii\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"category slugs are english/ascii\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"tag slugs are english/ascii\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"published posts are indexable\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"published posts have canonical URL\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"published posts have metadata basics\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"published posts have enough content\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"tool detail pages exist in data\",\n      \"ok\": true,\n      \"detail\": \"20 tools\"\n    },\n    {\n      \"name\": \"llms.txt route renders\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"llms.txt route uses canonical base\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"llms.txt route excludes draft slugs\",\n      \"ok\": true\n    },\n    {\n      \"name\": \"llms.txt route includes public article links\",\n      \"ok\": true\n    }\n  ],\n  \"nextActions\": [\n    \"当前基础可搜索度检查通过。下一步提交 Google Search Console 并观察真实收录。\"\n  ]\n}",
+      "title": "Run searchability check"
+    },
+    {
+      "critical": true,
+      "durationMs": 888,
+      "exitCode": 0,
+      "ok": true,
+      "stderrTail": "",
+      "stdoutTail": "> ai-tools-guide@0.1.0 seo:check\n> tsx scripts/seo-safety-check.ts\n\n{\n  \"publicPosts\": 500,\n  \"leakedDraftOrReview\": [],\n  \"nonPublishedWithNoindexFalse\": [],\n  \"publishedButNoindexed\": [],\n  \"ok\": true\n}",
+      "title": "Run SEO safety check"
+    },
+    {
+      "critical": true,
+      "durationMs": 609,
+      "exitCode": 0,
+      "ok": true,
+      "stderrTail": "",
+      "stdoutTail": "> ai-tools-guide@0.1.0 content:integrity\n> tsx scripts/content-integrity-audit.ts\n\n{\n  \"ok\": true,\n  \"json\": \"content/automation/content-integrity-audit.json\",\n  \"markdown\": \"docs/content-integrity-audit.md\",\n  \"summary\": {\n    \"allIssueItems\": 0,\n    \"blockingItems\": 0,\n    \"expansionItems\": 15,\n    \"filesScanned\": 669,\n    \"mojibakeWarningItems\": 0,\n    \"publicItems\": 500,\n    \"publicMojibakeWarningItems\": 0,\n    \"recommendedItems\": 3,\n    \"waveItems\": 3,\n    \"warningItems\": 0\n  }\n}",
+      "title": "Run content integrity audit"
+    },
+    {
+      "critical": true,
+      "durationMs": 605,
+      "exitCode": 0,
+      "ok": true,
+      "stderrTail": "",
+      "stdoutTail": "> ai-tools-guide@0.1.0 seo:snippets\n> tsx scripts/search-snippet-readiness-audit.ts\n\n{\n  \"ok\": true,\n  \"json\": \"content/automation/search-snippet-readiness-audit.json\",\n  \"markdown\": \"docs/search-snippet-readiness-audit.md\",\n  \"summary\": {\n    \"blockingItems\": 0,\n    \"expansionItems\": 15,\n    \"publicItems\": 500,\n    \"recommendedItems\": 3,\n    \"scopedItems\": 516,\n    \"warningItems\": 0,\n    \"waveItems\": 3,\n    \"waveItemsWithBlockingIssues\": 0\n  }\n}",
+      "title": "Run search snippet readiness audit"
+    },
+    {
+      "critical": true,
+      "durationMs": 604,
+      "exitCode": 0,
+      "ok": true,
+      "stderrTail": "",
+      "stdoutTail": "> ai-tools-guide@0.1.0 seo:schema\n> tsx scripts/structured-data-readiness-audit.ts\n\n{\n  \"ok\": true,\n  \"json\": \"content/automation/structured-data-readiness-audit.json\",\n  \"markdown\": \"docs/structured-data-readiness-audit.md\",\n  \"summary\": {\n    \"blockingItems\": 0,\n    \"expansionItems\": 15,\n    \"jsonLdPreviewItems\": 516,\n    \"publicItems\": 500,\n    \"recommendedItems\": 3,\n    \"scopedItems\": 516,\n    \"warningItems\": 0,\n    \"waveItems\": 3,\n    \"waveItemsWithBlockingIssues\": 0\n  }\n}",
+      "title": "Run structured data readiness audit"
+    },
+    {
+      "critical": false,
+      "durationMs": 11956,
+      "exitCode": 0,
+      "ok": true,
+      "stderrTail": "",
+      "stdoutTail": "> ai-tools-guide@0.1.0 seo:heartbeat\n> tsx scripts/seo-growth-heartbeat.ts\n\n{\n  \"ok\": true,\n  \"severity\": \"green\",\n  \"healthScore\": 100,\n  \"growthStage\": \"warming\",\n  \"qPages\": 500,\n  \"blogPages\": 500,\n  \"clusterPages\": 6,\n  \"orphanPages\": 0,\n  \"json\": \"content/automation/seo-growth-heartbeat.json\",\n  \"markdown\": \"docs/seo-growth-heartbeat.md\"\n}",
+      "title": "Run SEO growth heartbeat"
+    }
   ]
 }

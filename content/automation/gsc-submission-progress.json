@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T19:54:10.934Z",
+  "generatedAt": "2026-06-18T20:28:08.080Z",
   "guardrails": {
     "gscManualOnly": true,
     "noFakeIndexingClaims": true,
@@ -18,7 +18,7 @@
     "gscRemaining": 500,
     "nextUrl": "https://ai-jiedan-lab.vercel.app/en",
     "indexNowReady": true,
-    "indexNowSubmitted": true,
+    "indexNowSubmitted": false,
     "indexNowUrls": 500,
     "duplicateUrls": 0
   },
@@ -75,6 +75,7 @@
     "Keep requesting GSC URL Inspection from docs/gsc-url-inspection-today.txt until rate-limited, then update content/automation/gsc-manual-progress.json.",
     "After 24-72 hours, compare GSC Page Indexing statuses for the top 500 queue and prioritize pages that move from discovered to crawled.",
     "When impressions appear, optimize only pages with evidence: tighten title, first answer block, FAQ, and related q links.",
+    "Retry IndexNow submission after verifying the key route still returns 200.",
     "Do not expand beyond 500 until GSC shows crawl/indexing movement for this queue."
   ]
 }

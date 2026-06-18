@@ -1,6 +1,6 @@
 # GSC Indexing Priority
 
-Generated at: 2026-06-18T17:49:25.883Z
+Generated at: 2026-06-18T20:28:05.020Z
 
 Use this list for manual URL Inspection and indexing requests in Google Search Console. Do not submit hundreds of URLs manually.
 
@@ -247,158 +247,158 @@ Submit these 500 URLs if GSC allows it. Stop at the current GSC limit and contin
 217. https://ai-jiedan-lab.vercel.app/blog/ai-content-human-review-template - Deep article paired with high-priority q page; submit after the q page is discoverable.
 218. https://ai-jiedan-lab.vercel.app/q/vercel/ai-agent-deployment-vercel-ai-sdk-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 219. https://ai-jiedan-lab.vercel.app/blog/ai-freelance-automation-compliance-risk - Deep article paired with high-priority q page; submit after the q page is discoverable.
-220. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-logo-design-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score.
+220. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-beginner-project-fit-check - High-potential q entry based on local title, intent, tags, and quality score.
 221. https://ai-jiedan-lab.vercel.app/blog/ai-freelance-daily-planner - Deep article paired with high-priority q page; submit after the q page is discoverable.
-222. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-ppt-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score.
+222. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-logo-design-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score.
 223. https://ai-jiedan-lab.vercel.app/blog/ai-freelance-first-7-days - Deep article paired with high-priority q page; submit after the q page is discoverable.
-224. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-resume-cover-letter-guide - High-potential q entry based on local title, intent, tags, and quality score.
+224. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-ppt-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score.
 225. https://ai-jiedan-lab.vercel.app/blog/ai-tool-setup-service-checklist - Deep article paired with high-priority q page; submit after the q page is discoverable.
-226. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-video-tools-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score.
+226. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-resume-cover-letter-guide - High-potential q entry based on local title, intent, tags, and quality score.
 227. https://ai-jiedan-lab.vercel.app/blog/ai-tools-stack-free-start - Deep article paired with high-priority q page; submit after the q page is discoverable.
-228. https://ai-jiedan-lab.vercel.app/q/ai-tools/autogen-agent-framework-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+228. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-video-tools-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score.
 229. https://ai-jiedan-lab.vercel.app/blog/before-first-ai-freelance-job - Deep article paired with high-priority q page; submit after the q page is discoverable.
-230. https://ai-jiedan-lab.vercel.app/q/upwork/bank-card-payment-platform-risk - High-potential q entry based on local title, intent, tags, and quality score.
+230. https://ai-jiedan-lab.vercel.app/q/ai-tools/autogen-agent-framework-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 231. https://ai-jiedan-lab.vercel.app/blog/chatgpt-vs-claude-proposal - Deep article paired with high-priority q page; submit after the q page is discoverable.
-232. https://ai-jiedan-lab.vercel.app/q/codex/build-first-webpage-with-codex - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+232. https://ai-jiedan-lab.vercel.app/q/upwork/bank-card-payment-platform-risk - High-potential q entry based on local title, intent, tags, and quality score.
 233. https://ai-jiedan-lab.vercel.app/blog/client-acceptance-checklist - Deep article paired with high-priority q page; submit after the q page is discoverable.
-234. https://ai-jiedan-lab.vercel.app/q/codex/chatgpt-codex-claude-workflow - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+234. https://ai-jiedan-lab.vercel.app/q/codex/build-first-webpage-with-codex - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 235. https://ai-jiedan-lab.vercel.app/blog/client-requirement-form-questions - Deep article paired with high-priority q page; submit after the q page is discoverable.
-236. https://ai-jiedan-lab.vercel.app/q/ai-tools/chatgpt-how-to-use-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score.
+236. https://ai-jiedan-lab.vercel.app/q/codex/chatgpt-codex-claude-workflow - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 237. https://ai-jiedan-lab.vercel.app/blog/codex-client-requirement-questions - Deep article paired with high-priority q page; submit after the q page is discoverable.
-238. https://ai-jiedan-lab.vercel.app/q/ai-tools/chatgpt-prompt-template-beginner - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+238. https://ai-jiedan-lab.vercel.app/q/ai-tools/chatgpt-how-to-use-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score.
 239. https://ai-jiedan-lab.vercel.app/blog/codex-code-review-delivery-checklist - Deep article paired with high-priority q page; submit after the q page is discoverable.
-240. https://ai-jiedan-lab.vercel.app/q/upwork/claude-code-client-questions - High-potential q entry based on local title, intent, tags, and quality score.
+240. https://ai-jiedan-lab.vercel.app/q/ai-tools/chatgpt-prompt-template-beginner - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 241. https://ai-jiedan-lab.vercel.app/blog/digital-template-refund-policy - Deep article paired with high-priority q page; submit after the q page is discoverable.
-242. https://ai-jiedan-lab.vercel.app/q/upwork/claude-code-proposal-review - High-potential q entry based on local title, intent, tags, and quality score.
+242. https://ai-jiedan-lab.vercel.app/q/upwork/claude-code-client-questions - High-potential q entry based on local title, intent, tags, and quality score.
 243. https://ai-jiedan-lab.vercel.app/blog/english-client-reply-template-honest - Deep article paired with high-priority q page; submit after the q page is discoverable.
-244. https://ai-jiedan-lab.vercel.app/q/codex/codex-avoid-secret-leak - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+244. https://ai-jiedan-lab.vercel.app/q/upwork/claude-code-proposal-review - High-potential q entry based on local title, intent, tags, and quality score.
 245. https://ai-jiedan-lab.vercel.app/blog/first-freelance-payment-check - Deep article paired with high-priority q page; submit after the q page is discoverable.
-246. https://ai-jiedan-lab.vercel.app/q/codex/codex-codex-vercel-4-37 - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+246. https://ai-jiedan-lab.vercel.app/q/codex/codex-avoid-secret-leak - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 247. https://ai-jiedan-lab.vercel.app/blog/freelance-platform-tool-stack - Deep article paired with high-priority q page; submit after the q page is discoverable.
-248. https://ai-jiedan-lab.vercel.app/q/codex/codex-edit-existing-ui - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+248. https://ai-jiedan-lab.vercel.app/q/codex/codex-codex-vercel-4-37 - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 249. https://ai-jiedan-lab.vercel.app/blog/freelance-quote-template-fill - Deep article paired with high-priority q page; submit after the q page is discoverable.
-250. https://ai-jiedan-lab.vercel.app/q/codex/codex-first-day-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+250. https://ai-jiedan-lab.vercel.app/q/codex/codex-edit-existing-ui - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 251. https://ai-jiedan-lab.vercel.app/blog/gumroad-template-selling-prep - Deep article paired with high-priority q page; submit after the q page is discoverable.
-252. https://ai-jiedan-lab.vercel.app/q/codex/codex-first-landing-page - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+252. https://ai-jiedan-lab.vercel.app/q/codex/codex-first-day-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 253. https://ai-jiedan-lab.vercel.app/blog/lemon-squeezy-digital-products - Deep article paired with high-priority q page; submit after the q page is discoverable.
-254. https://ai-jiedan-lab.vercel.app/q/codex/codex-github-workflow - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+254. https://ai-jiedan-lab.vercel.app/q/codex/codex-first-landing-page - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 255. https://ai-jiedan-lab.vercel.app/blog/platform-payment-vs-direct-payment - Deep article paired with high-priority q page; submit after the q page is discoverable.
-256. https://ai-jiedan-lab.vercel.app/q/codex/codex-install-prerequisites - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+256. https://ai-jiedan-lab.vercel.app/q/codex/codex-github-workflow - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 257. https://ai-jiedan-lab.vercel.app/blog/portfolio-page-copy-template - Deep article paired with high-priority q page; submit after the q page is discoverable.
-258. https://ai-jiedan-lab.vercel.app/q/codex/codex-portfolio-page-assets - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+258. https://ai-jiedan-lab.vercel.app/q/codex/codex-install-prerequisites - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 259. https://ai-jiedan-lab.vercel.app/blog/practice-project-log-template - Deep article paired with high-priority q page; submit after the q page is discoverable.
-260. https://ai-jiedan-lab.vercel.app/q/codex/codex-readme-review - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+260. https://ai-jiedan-lab.vercel.app/q/codex/codex-portfolio-page-assets - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 261. https://ai-jiedan-lab.vercel.app/blog/pre-project-risk-assessment-template - Deep article paired with high-priority q page; submit after the q page is discoverable.
-262. https://ai-jiedan-lab.vercel.app/q/codex/codex-review-generated-code - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+262. https://ai-jiedan-lab.vercel.app/q/codex/codex-readme-review - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 263. https://ai-jiedan-lab.vercel.app/blog/project-delivery-checklist-items - Deep article paired with high-priority q page; submit after the q page is discoverable.
-264. https://ai-jiedan-lab.vercel.app/q/codex/codex-small-website-delivery-check - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+264. https://ai-jiedan-lab.vercel.app/q/codex/codex-review-generated-code - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 265. https://ai-jiedan-lab.vercel.app/blog/project-retrospective-template - Deep article paired with high-priority q page; submit after the q page is discoverable.
-266. https://ai-jiedan-lab.vercel.app/q/codex/codex-tailwind-mobile-check - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+266. https://ai-jiedan-lab.vercel.app/q/codex/codex-small-website-delivery-check - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 267. https://ai-jiedan-lab.vercel.app/blog/quote-email-uncertain-scope - Deep article paired with high-priority q page; submit after the q page is discoverable.
-268. https://ai-jiedan-lab.vercel.app/q/codex/codex-upwork-job-risk-check - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+268. https://ai-jiedan-lab.vercel.app/q/codex/codex-tailwind-mobile-check - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 269. https://ai-jiedan-lab.vercel.app/blog/sales-ai-prompts-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
-270. https://ai-jiedan-lab.vercel.app/q/vercel/crewai-agent-deployment-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+270. https://ai-jiedan-lab.vercel.app/q/codex/codex-upwork-job-risk-check - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 271. https://ai-jiedan-lab.vercel.app/blog/service-inquiry-form-questions - Deep article paired with high-priority q page; submit after the q page is discoverable.
-272. https://ai-jiedan-lab.vercel.app/q/upwork/daily-ai-freelance-practice-log - High-potential q entry based on local title, intent, tags, and quality score.
+272. https://ai-jiedan-lab.vercel.app/q/vercel/crewai-agent-deployment-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 273. https://ai-jiedan-lab.vercel.app/blog/small-site-launch-sop - Deep article paired with high-priority q page; submit after the q page is discoverable.
-274. https://ai-jiedan-lab.vercel.app/q/ai-tools/deliver-small-website-with-ai-no-code - High-potential q entry based on local title, intent, tags, and quality score.
+274. https://ai-jiedan-lab.vercel.app/q/upwork/daily-ai-freelance-practice-log - High-potential q entry based on local title, intent, tags, and quality score.
 275. https://ai-jiedan-lab.vercel.app/blog/stripe-templates-vs-services - Deep article paired with high-priority q page; submit after the q page is discoverable.
-276. https://ai-jiedan-lab.vercel.app/q/upwork/first-portfolio-case-realistic - High-potential q entry based on local title, intent, tags, and quality score.
-277. https://ai-jiedan-lab.vercel.app/blog/ai-logo-design-beginner-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
-278. https://ai-jiedan-lab.vercel.app/q/ai-tools/free-seo-tools-beginner - High-potential q entry based on local title, intent, tags, and quality score.
-279. https://ai-jiedan-lab.vercel.app/blog/ai-ppt-beginner-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
-280. https://ai-jiedan-lab.vercel.app/q/upwork/freelance-beginner-scope-confirmation - High-potential q entry based on local title, intent, tags, and quality score.
-281. https://ai-jiedan-lab.vercel.app/blog/ai-resume-cover-letter-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
-282. https://ai-jiedan-lab.vercel.app/q/upwork/freelance-weekly-review-template - High-potential q entry based on local title, intent, tags, and quality score.
-283. https://ai-jiedan-lab.vercel.app/blog/ai-video-tools-beginner-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
-284. https://ai-jiedan-lab.vercel.app/q/github/github-command-cheatsheet-beginner - High-potential q entry based on local title, intent, tags, and quality score.
-285. https://ai-jiedan-lab.vercel.app/blog/autogen-agent-framework-beginner-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
-286. https://ai-jiedan-lab.vercel.app/q/vercel/github-vercel-beginner-site - High-potential q entry based on local title, intent, tags, and quality score.
-287. https://ai-jiedan-lab.vercel.app/blog/bank-card-payment-platform-risk - Deep article paired with high-priority q page; submit after the q page is discoverable.
-288. https://ai-jiedan-lab.vercel.app/q/ai-tools/google-analytics-when-to-add - High-potential q entry based on local title, intent, tags, and quality score.
-289. https://ai-jiedan-lab.vercel.app/blog/chatgpt-how-to-use-beginner-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
-290. https://ai-jiedan-lab.vercel.app/q/ai-tools/google-search-console-new-site - High-potential q entry based on local title, intent, tags, and quality score.
-291. https://ai-jiedan-lab.vercel.app/blog/chatgpt-prompt-template-beginner - Deep article paired with high-priority q page; submit after the q page is discoverable.
-292. https://ai-jiedan-lab.vercel.app/q/ai-tools/gpu-docker-nvidia-container-toolkit-guide - High-potential q entry based on local title, intent, tags, and quality score.
-293. https://ai-jiedan-lab.vercel.app/blog/claude-code-client-questions - Deep article paired with high-priority q page; submit after the q page is discoverable.
-294. https://ai-jiedan-lab.vercel.app/q/upwork/international-payment-fee-estimate - High-potential q entry based on local title, intent, tags, and quality score.
-295. https://ai-jiedan-lab.vercel.app/blog/claude-code-proposal-review - Deep article paired with high-priority q page; submit after the q page is discoverable.
-296. https://ai-jiedan-lab.vercel.app/q/ai-tools/langgraph-agent-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
-297. https://ai-jiedan-lab.vercel.app/blog/codex-avoid-secret-leak - Deep article paired with high-priority q page; submit after the q page is discoverable.
-298. https://ai-jiedan-lab.vercel.app/q/vercel/local-llm-deployment-beginner - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
-299. https://ai-jiedan-lab.vercel.app/blog/codex-codex-vercel-4-37 - Deep article paired with high-priority q page; submit after the q page is discoverable.
-300. https://ai-jiedan-lab.vercel.app/q/ai-tools/mcp-beginner-guide-agent-tools - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
-301. https://ai-jiedan-lab.vercel.app/blog/codex-edit-existing-ui - Deep article paired with high-priority q page; submit after the q page is discoverable.
-302. https://ai-jiedan-lab.vercel.app/q/ai-tools/n8n-ai-agent-self-host-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
-303. https://ai-jiedan-lab.vercel.app/blog/codex-first-day-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
-304. https://ai-jiedan-lab.vercel.app/q/ai-tools/openai-agents-sdk-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
-305. https://ai-jiedan-lab.vercel.app/blog/codex-first-landing-page - Deep article paired with high-priority q page; submit after the q page is discoverable.
-306. https://ai-jiedan-lab.vercel.app/q/upwork/payment-account-info-mismatch-risk - High-potential q entry based on local title, intent, tags, and quality score.
-307. https://ai-jiedan-lab.vercel.app/blog/codex-github-workflow - Deep article paired with high-priority q page; submit after the q page is discoverable.
-308. https://ai-jiedan-lab.vercel.app/q/upwork/payment-page-disclaimer - High-potential q entry based on local title, intent, tags, and quality score.
-309. https://ai-jiedan-lab.vercel.app/blog/codex-install-prerequisites - Deep article paired with high-priority q page; submit after the q page is discoverable.
-310. https://ai-jiedan-lab.vercel.app/q/upwork/practice-projects-before-clients - High-potential q entry based on local title, intent, tags, and quality score.
-311. https://ai-jiedan-lab.vercel.app/blog/codex-portfolio-page-assets - Deep article paired with high-priority q page; submit after the q page is discoverable.
-312. https://ai-jiedan-lab.vercel.app/q/ai-tools/rag-prompt-injection-defense-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
-313. https://ai-jiedan-lab.vercel.app/blog/codex-readme-review - Deep article paired with high-priority q page; submit after the q page is discoverable.
-314. https://ai-jiedan-lab.vercel.app/q/upwork/service-payment-method-beginner - High-potential q entry based on local title, intent, tags, and quality score.
-315. https://ai-jiedan-lab.vercel.app/blog/codex-review-generated-code - Deep article paired with high-priority q page; submit after the q page is discoverable.
-316. https://ai-jiedan-lab.vercel.app/q/codex/what-is-codex-beginner-start - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
-317. https://ai-jiedan-lab.vercel.app/blog/codex-small-website-delivery-check - Deep article paired with high-priority q page; submit after the q page is discoverable.
-318. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-beginner-project-fit-check - High-potential q entry based on local title, intent, tags, and quality score.
-319. https://ai-jiedan-lab.vercel.app/blog/codex-tailwind-mobile-check - Deep article paired with high-priority q page; submit after the q page is discoverable.
+276. https://ai-jiedan-lab.vercel.app/q/ai-tools/deliver-small-website-with-ai-no-code - High-potential q entry based on local title, intent, tags, and quality score.
+277. https://ai-jiedan-lab.vercel.app/blog/ai-beginner-project-fit-check - Deep article paired with high-priority q page; submit after the q page is discoverable.
+278. https://ai-jiedan-lab.vercel.app/q/upwork/first-portfolio-case-realistic - High-potential q entry based on local title, intent, tags, and quality score.
+279. https://ai-jiedan-lab.vercel.app/blog/ai-logo-design-beginner-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
+280. https://ai-jiedan-lab.vercel.app/q/ai-tools/free-seo-tools-beginner - High-potential q entry based on local title, intent, tags, and quality score.
+281. https://ai-jiedan-lab.vercel.app/blog/ai-ppt-beginner-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
+282. https://ai-jiedan-lab.vercel.app/q/upwork/freelance-beginner-scope-confirmation - High-potential q entry based on local title, intent, tags, and quality score.
+283. https://ai-jiedan-lab.vercel.app/blog/ai-resume-cover-letter-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
+284. https://ai-jiedan-lab.vercel.app/q/upwork/freelance-weekly-review-template - High-potential q entry based on local title, intent, tags, and quality score.
+285. https://ai-jiedan-lab.vercel.app/blog/ai-video-tools-beginner-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
+286. https://ai-jiedan-lab.vercel.app/q/github/github-command-cheatsheet-beginner - High-potential q entry based on local title, intent, tags, and quality score.
+287. https://ai-jiedan-lab.vercel.app/blog/autogen-agent-framework-beginner-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
+288. https://ai-jiedan-lab.vercel.app/q/vercel/github-vercel-beginner-site - High-potential q entry based on local title, intent, tags, and quality score.
+289. https://ai-jiedan-lab.vercel.app/blog/bank-card-payment-platform-risk - Deep article paired with high-priority q page; submit after the q page is discoverable.
+290. https://ai-jiedan-lab.vercel.app/q/ai-tools/google-analytics-when-to-add - High-potential q entry based on local title, intent, tags, and quality score.
+291. https://ai-jiedan-lab.vercel.app/blog/chatgpt-how-to-use-beginner-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
+292. https://ai-jiedan-lab.vercel.app/q/ai-tools/google-search-console-new-site - High-potential q entry based on local title, intent, tags, and quality score.
+293. https://ai-jiedan-lab.vercel.app/blog/chatgpt-prompt-template-beginner - Deep article paired with high-priority q page; submit after the q page is discoverable.
+294. https://ai-jiedan-lab.vercel.app/q/ai-tools/gpu-docker-nvidia-container-toolkit-guide - High-potential q entry based on local title, intent, tags, and quality score.
+295. https://ai-jiedan-lab.vercel.app/blog/claude-code-client-questions - Deep article paired with high-priority q page; submit after the q page is discoverable.
+296. https://ai-jiedan-lab.vercel.app/q/upwork/international-payment-fee-estimate - High-potential q entry based on local title, intent, tags, and quality score.
+297. https://ai-jiedan-lab.vercel.app/blog/claude-code-proposal-review - Deep article paired with high-priority q page; submit after the q page is discoverable.
+298. https://ai-jiedan-lab.vercel.app/q/ai-tools/langgraph-agent-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+299. https://ai-jiedan-lab.vercel.app/blog/codex-avoid-secret-leak - Deep article paired with high-priority q page; submit after the q page is discoverable.
+300. https://ai-jiedan-lab.vercel.app/q/vercel/local-llm-deployment-beginner - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+301. https://ai-jiedan-lab.vercel.app/blog/codex-codex-vercel-4-37 - Deep article paired with high-priority q page; submit after the q page is discoverable.
+302. https://ai-jiedan-lab.vercel.app/q/ai-tools/mcp-beginner-guide-agent-tools - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+303. https://ai-jiedan-lab.vercel.app/blog/codex-edit-existing-ui - Deep article paired with high-priority q page; submit after the q page is discoverable.
+304. https://ai-jiedan-lab.vercel.app/q/ai-tools/n8n-ai-agent-self-host-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+305. https://ai-jiedan-lab.vercel.app/blog/codex-first-day-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
+306. https://ai-jiedan-lab.vercel.app/q/ai-tools/openai-agents-sdk-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+307. https://ai-jiedan-lab.vercel.app/blog/codex-first-landing-page - Deep article paired with high-priority q page; submit after the q page is discoverable.
+308. https://ai-jiedan-lab.vercel.app/q/upwork/payment-account-info-mismatch-risk - High-potential q entry based on local title, intent, tags, and quality score.
+309. https://ai-jiedan-lab.vercel.app/blog/codex-github-workflow - Deep article paired with high-priority q page; submit after the q page is discoverable.
+310. https://ai-jiedan-lab.vercel.app/q/upwork/payment-page-disclaimer - High-potential q entry based on local title, intent, tags, and quality score.
+311. https://ai-jiedan-lab.vercel.app/blog/codex-install-prerequisites - Deep article paired with high-priority q page; submit after the q page is discoverable.
+312. https://ai-jiedan-lab.vercel.app/q/upwork/practice-projects-before-clients - High-potential q entry based on local title, intent, tags, and quality score.
+313. https://ai-jiedan-lab.vercel.app/blog/codex-portfolio-page-assets - Deep article paired with high-priority q page; submit after the q page is discoverable.
+314. https://ai-jiedan-lab.vercel.app/q/ai-tools/rag-prompt-injection-defense-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+315. https://ai-jiedan-lab.vercel.app/blog/codex-readme-review - Deep article paired with high-priority q page; submit after the q page is discoverable.
+316. https://ai-jiedan-lab.vercel.app/q/upwork/service-payment-method-beginner - High-potential q entry based on local title, intent, tags, and quality score.
+317. https://ai-jiedan-lab.vercel.app/blog/codex-review-generated-code - Deep article paired with high-priority q page; submit after the q page is discoverable.
+318. https://ai-jiedan-lab.vercel.app/q/codex/what-is-codex-beginner-start - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
+319. https://ai-jiedan-lab.vercel.app/blog/codex-small-website-delivery-check - Deep article paired with high-priority q page; submit after the q page is discoverable.
 320. https://ai-jiedan-lab.vercel.app/q/codex/ai-coding-tools-risk-check - High-potential q entry based on local title, intent, tags, and quality score.
-321. https://ai-jiedan-lab.vercel.app/blog/codex-upwork-job-risk-check - Deep article paired with high-priority q page; submit after the q page is discoverable.
+321. https://ai-jiedan-lab.vercel.app/blog/codex-tailwind-mobile-check - Deep article paired with high-priority q page; submit after the q page is discoverable.
 322. https://ai-jiedan-lab.vercel.app/q/upwork/ai-freelance-30-day-execution - High-potential q entry based on local title, intent, tags, and quality score.
-323. https://ai-jiedan-lab.vercel.app/blog/crewai-agent-deployment-beginner-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
+323. https://ai-jiedan-lab.vercel.app/blog/codex-upwork-job-risk-check - Deep article paired with high-priority q page; submit after the q page is discoverable.
 324. https://ai-jiedan-lab.vercel.app/q/upwork/ai-freelance-common-misconceptions - High-potential q entry based on local title, intent, tags, and quality score.
-325. https://ai-jiedan-lab.vercel.app/blog/daily-ai-freelance-practice-log - Deep article paired with high-priority q page; submit after the q page is discoverable.
+325. https://ai-jiedan-lab.vercel.app/blog/crewai-agent-deployment-beginner-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
 326. https://ai-jiedan-lab.vercel.app/q/upwork/ai-freelance-service-page-copy - High-potential q entry based on local title, intent, tags, and quality score.
-327. https://ai-jiedan-lab.vercel.app/blog/deliver-small-website-with-ai-no-code - Deep article paired with high-priority q page; submit after the q page is discoverable.
+327. https://ai-jiedan-lab.vercel.app/blog/daily-ai-freelance-practice-log - Deep article paired with high-priority q page; submit after the q page is discoverable.
 328. https://ai-jiedan-lab.vercel.app/q/upwork/ai-freelance-skill-roadmap - High-potential q entry based on local title, intent, tags, and quality score.
-329. https://ai-jiedan-lab.vercel.app/blog/first-portfolio-case-realistic - Deep article paired with high-priority q page; submit after the q page is discoverable.
+329. https://ai-jiedan-lab.vercel.app/blog/deliver-small-website-with-ai-no-code - Deep article paired with high-priority q page; submit after the q page is discoverable.
 330. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-output-unstable-risk-control - High-potential q entry based on local title, intent, tags, and quality score.
-331. https://ai-jiedan-lab.vercel.app/blog/free-seo-tools-beginner - Deep article paired with high-priority q page; submit after the q page is discoverable.
+331. https://ai-jiedan-lab.vercel.app/blog/first-portfolio-case-realistic - Deep article paired with high-priority q page; submit after the q page is discoverable.
 332. https://ai-jiedan-lab.vercel.app/q/upwork/canva-portfolio-cover-tips - High-potential q entry based on local title, intent, tags, and quality score.
-333. https://ai-jiedan-lab.vercel.app/blog/freelance-beginner-scope-confirmation - Deep article paired with high-priority q page; submit after the q page is discoverable.
+333. https://ai-jiedan-lab.vercel.app/blog/free-seo-tools-beginner - Deep article paired with high-priority q page; submit after the q page is discoverable.
 334. https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-code-automation-human-review - High-potential q entry based on local title, intent, tags, and quality score.
-335. https://ai-jiedan-lab.vercel.app/blog/freelance-weekly-review-template - Deep article paired with high-priority q page; submit after the q page is discoverable.
+335. https://ai-jiedan-lab.vercel.app/blog/freelance-beginner-scope-confirmation - Deep article paired with high-priority q page; submit after the q page is discoverable.
 336. https://ai-jiedan-lab.vercel.app/q/github/claude-code-common-commands - High-potential q entry based on local title, intent, tags, and quality score.
-337. https://ai-jiedan-lab.vercel.app/blog/github-command-cheatsheet-beginner - Deep article paired with high-priority q page; submit after the q page is discoverable.
+337. https://ai-jiedan-lab.vercel.app/blog/freelance-weekly-review-template - Deep article paired with high-priority q page; submit after the q page is discoverable.
 338. https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-code-delivery-note - High-potential q entry based on local title, intent, tags, and quality score.
-339. https://ai-jiedan-lab.vercel.app/blog/github-vercel-beginner-site - Deep article paired with high-priority q page; submit after the q page is discoverable.
+339. https://ai-jiedan-lab.vercel.app/blog/github-command-cheatsheet-beginner - Deep article paired with high-priority q page; submit after the q page is discoverable.
 340. https://ai-jiedan-lab.vercel.app/q/github/claude-code-github-file-scope - High-potential q entry based on local title, intent, tags, and quality score.
-341. https://ai-jiedan-lab.vercel.app/blog/google-analytics-when-to-add - Deep article paired with high-priority q page; submit after the q page is discoverable.
+341. https://ai-jiedan-lab.vercel.app/blog/github-vercel-beginner-site - Deep article paired with high-priority q page; submit after the q page is discoverable.
 342. https://ai-jiedan-lab.vercel.app/q/github/claude-code-install-prerequisites - High-potential q entry based on local title, intent, tags, and quality score.
-343. https://ai-jiedan-lab.vercel.app/blog/google-search-console-new-site - Deep article paired with high-priority q page; submit after the q page is discoverable.
+343. https://ai-jiedan-lab.vercel.app/blog/google-analytics-when-to-add - Deep article paired with high-priority q page; submit after the q page is discoverable.
 344. https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-code-nextjs-page-check - High-potential q entry based on local title, intent, tags, and quality score.
-345. https://ai-jiedan-lab.vercel.app/blog/gpu-docker-nvidia-container-toolkit-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
+345. https://ai-jiedan-lab.vercel.app/blog/google-search-console-new-site - Deep article paired with high-priority q page; submit after the q page is discoverable.
 346. https://ai-jiedan-lab.vercel.app/q/codex/codex-automation-steps-not-skip - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
-347. https://ai-jiedan-lab.vercel.app/blog/international-payment-fee-estimate - Deep article paired with high-priority q page; submit after the q page is discoverable.
+347. https://ai-jiedan-lab.vercel.app/blog/gpu-docker-nvidia-container-toolkit-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
 348. https://ai-jiedan-lab.vercel.app/q/upwork/no-code-ai-freelance-start - High-potential q entry based on local title, intent, tags, and quality score.
-349. https://ai-jiedan-lab.vercel.app/blog/langgraph-agent-beginner-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
+349. https://ai-jiedan-lab.vercel.app/blog/international-payment-fee-estimate - Deep article paired with high-priority q page; submit after the q page is discoverable.
 350. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-human-review-loop-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
-351. https://ai-jiedan-lab.vercel.app/blog/local-llm-deployment-beginner - Deep article paired with high-priority q page; submit after the q page is discoverable.
+351. https://ai-jiedan-lab.vercel.app/blog/langgraph-agent-beginner-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
 352. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-memory-design-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
-353. https://ai-jiedan-lab.vercel.app/blog/mcp-beginner-guide-agent-tools - Deep article paired with high-priority q page; submit after the q page is discoverable.
+353. https://ai-jiedan-lab.vercel.app/blog/local-llm-deployment-beginner - Deep article paired with high-priority q page; submit after the q page is discoverable.
 354. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-memory-postgres-schema-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
-355. https://ai-jiedan-lab.vercel.app/blog/n8n-ai-agent-self-host-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
+355. https://ai-jiedan-lab.vercel.app/blog/mcp-beginner-guide-agent-tools - Deep article paired with high-priority q page; submit after the q page is discoverable.
 356. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-model-selection-customer-service-guide - High-potential q entry based on local title, intent, tags, and quality score.
-357. https://ai-jiedan-lab.vercel.app/blog/openai-agents-sdk-beginner-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
+357. https://ai-jiedan-lab.vercel.app/blog/n8n-ai-agent-self-host-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
 358. https://ai-jiedan-lab.vercel.app/q/ai-tools/anythingllm-local-rag-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
-359. https://ai-jiedan-lab.vercel.app/blog/payment-account-info-mismatch-risk - Deep article paired with high-priority q page; submit after the q page is discoverable.
+359. https://ai-jiedan-lab.vercel.app/blog/openai-agents-sdk-beginner-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
 360. https://ai-jiedan-lab.vercel.app/q/ai-tools/arize-phoenix-llm-observability-guide - High-potential q entry based on local title, intent, tags, and quality score.
-361. https://ai-jiedan-lab.vercel.app/blog/payment-page-disclaimer - Deep article paired with high-priority q page; submit after the q page is discoverable.
+361. https://ai-jiedan-lab.vercel.app/blog/payment-account-info-mismatch-risk - Deep article paired with high-priority q page; submit after the q page is discoverable.
 362. https://ai-jiedan-lab.vercel.app/q/vercel/bentoml-llm-deployment-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
-363. https://ai-jiedan-lab.vercel.app/blog/practice-projects-before-clients - Deep article paired with high-priority q page; submit after the q page is discoverable.
+363. https://ai-jiedan-lab.vercel.app/blog/payment-page-disclaimer - Deep article paired with high-priority q page; submit after the q page is discoverable.
 364. https://ai-jiedan-lab.vercel.app/q/ai-tools/chroma-vector-database-rag-guide - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
-365. https://ai-jiedan-lab.vercel.app/blog/rag-prompt-injection-defense-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
+365. https://ai-jiedan-lab.vercel.app/blog/practice-projects-before-clients - Deep article paired with high-priority q page; submit after the q page is discoverable.
 366. https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-api-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score.
-367. https://ai-jiedan-lab.vercel.app/blog/service-payment-method-beginner - Deep article paired with high-priority q page; submit after the q page is discoverable.
+367. https://ai-jiedan-lab.vercel.app/blog/rag-prompt-injection-defense-guide - Deep article paired with high-priority q page; submit after the q page is discoverable.
 368. https://ai-jiedan-lab.vercel.app/q/vercel/cloudflare-workers-ai-beginner-guide - High-potential q entry based on local title, intent, tags, and quality score.
-369. https://ai-jiedan-lab.vercel.app/blog/what-is-codex-beginner-start - Deep article paired with high-priority q page; submit after the q page is discoverable.
+369. https://ai-jiedan-lab.vercel.app/blog/service-payment-method-beginner - Deep article paired with high-priority q page; submit after the q page is discoverable.
 370. https://ai-jiedan-lab.vercel.app/q/codex/codex-avoid-secret-leak-mistakes - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
-371. https://ai-jiedan-lab.vercel.app/blog/ai-beginner-project-fit-check - Deep article paired with high-priority q page; submit after the q page is discoverable.
+371. https://ai-jiedan-lab.vercel.app/blog/what-is-codex-beginner-start - Deep article paired with high-priority q page; submit after the q page is discoverable.
 372. https://ai-jiedan-lab.vercel.app/q/codex/codex-bugfix-rollback-record-checklist - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
 373. https://ai-jiedan-lab.vercel.app/blog/ai-freelance-common-misconceptions - Deep article paired with high-priority q page; submit after the q page is discoverable.
 374. https://ai-jiedan-lab.vercel.app/q/codex/codex-bugfix-rollback-record-freelance-scope - High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.
@@ -656,56 +656,56 @@ Submit these 500 URLs if GSC allows it. Stop at the current GSC limit and contin
 114. https://ai-jiedan-lab.vercel.app/q/ai-tools/ads-income-when-to-start (q, ai-tools, score -23)
 115. https://ai-jiedan-lab.vercel.app/q/vercel/agent-deployment-beginner-guide (q, vercel, score -24)
 116. https://ai-jiedan-lab.vercel.app/q/vercel/ai-agent-deployment-vercel-ai-sdk-guide (q, vercel, score -25)
-117. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-logo-design-beginner-guide (q, ai-tools, score -26)
-118. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-ppt-beginner-guide (q, ai-tools, score -27)
-119. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-resume-cover-letter-guide (q, ai-tools, score -28)
-120. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-video-tools-beginner-guide (q, ai-tools, score -29)
-121. https://ai-jiedan-lab.vercel.app/q/ai-tools/autogen-agent-framework-beginner-guide (q, ai-tools, score -30)
-122. https://ai-jiedan-lab.vercel.app/q/upwork/bank-card-payment-platform-risk (q, upwork, score -31)
-123. https://ai-jiedan-lab.vercel.app/q/codex/build-first-webpage-with-codex (q, codex, score -32)
-124. https://ai-jiedan-lab.vercel.app/q/codex/chatgpt-codex-claude-workflow (q, codex, score -33)
-125. https://ai-jiedan-lab.vercel.app/q/ai-tools/chatgpt-how-to-use-beginner-guide (q, ai-tools, score -34)
-126. https://ai-jiedan-lab.vercel.app/q/ai-tools/chatgpt-prompt-template-beginner (q, ai-tools, score -35)
-127. https://ai-jiedan-lab.vercel.app/q/upwork/claude-code-client-questions (q, upwork, score -36)
-128. https://ai-jiedan-lab.vercel.app/q/upwork/claude-code-proposal-review (q, upwork, score -37)
-129. https://ai-jiedan-lab.vercel.app/q/codex/codex-avoid-secret-leak (q, codex, score -38)
-130. https://ai-jiedan-lab.vercel.app/q/codex/codex-codex-vercel-4-37 (q, codex, score -39)
-131. https://ai-jiedan-lab.vercel.app/q/codex/codex-edit-existing-ui (q, codex, score -40)
-132. https://ai-jiedan-lab.vercel.app/q/codex/codex-first-day-guide (q, codex, score -41)
-133. https://ai-jiedan-lab.vercel.app/q/codex/codex-first-landing-page (q, codex, score -42)
-134. https://ai-jiedan-lab.vercel.app/q/codex/codex-github-workflow (q, codex, score -43)
-135. https://ai-jiedan-lab.vercel.app/q/codex/codex-install-prerequisites (q, codex, score -44)
-136. https://ai-jiedan-lab.vercel.app/q/codex/codex-portfolio-page-assets (q, codex, score -45)
-137. https://ai-jiedan-lab.vercel.app/q/codex/codex-readme-review (q, codex, score -46)
-138. https://ai-jiedan-lab.vercel.app/q/codex/codex-review-generated-code (q, codex, score -47)
-139. https://ai-jiedan-lab.vercel.app/q/codex/codex-small-website-delivery-check (q, codex, score -48)
-140. https://ai-jiedan-lab.vercel.app/q/codex/codex-tailwind-mobile-check (q, codex, score -49)
-141. https://ai-jiedan-lab.vercel.app/q/codex/codex-upwork-job-risk-check (q, codex, score -50)
-142. https://ai-jiedan-lab.vercel.app/q/vercel/crewai-agent-deployment-beginner-guide (q, vercel, score -51)
-143. https://ai-jiedan-lab.vercel.app/q/upwork/daily-ai-freelance-practice-log (q, upwork, score -52)
-144. https://ai-jiedan-lab.vercel.app/q/ai-tools/deliver-small-website-with-ai-no-code (q, ai-tools, score -53)
-145. https://ai-jiedan-lab.vercel.app/q/upwork/first-portfolio-case-realistic (q, upwork, score -54)
-146. https://ai-jiedan-lab.vercel.app/q/ai-tools/free-seo-tools-beginner (q, ai-tools, score -55)
-147. https://ai-jiedan-lab.vercel.app/q/upwork/freelance-beginner-scope-confirmation (q, upwork, score -56)
-148. https://ai-jiedan-lab.vercel.app/q/upwork/freelance-weekly-review-template (q, upwork, score -57)
-149. https://ai-jiedan-lab.vercel.app/q/github/github-command-cheatsheet-beginner (q, github, score -58)
-150. https://ai-jiedan-lab.vercel.app/q/vercel/github-vercel-beginner-site (q, vercel, score -59)
-151. https://ai-jiedan-lab.vercel.app/q/ai-tools/google-analytics-when-to-add (q, ai-tools, score -60)
-152. https://ai-jiedan-lab.vercel.app/q/ai-tools/google-search-console-new-site (q, ai-tools, score -61)
-153. https://ai-jiedan-lab.vercel.app/q/ai-tools/gpu-docker-nvidia-container-toolkit-guide (q, ai-tools, score -62)
-154. https://ai-jiedan-lab.vercel.app/q/upwork/international-payment-fee-estimate (q, upwork, score -63)
-155. https://ai-jiedan-lab.vercel.app/q/ai-tools/langgraph-agent-beginner-guide (q, ai-tools, score -64)
-156. https://ai-jiedan-lab.vercel.app/q/vercel/local-llm-deployment-beginner (q, vercel, score -65)
-157. https://ai-jiedan-lab.vercel.app/q/ai-tools/mcp-beginner-guide-agent-tools (q, ai-tools, score -66)
-158. https://ai-jiedan-lab.vercel.app/q/ai-tools/n8n-ai-agent-self-host-guide (q, ai-tools, score -67)
-159. https://ai-jiedan-lab.vercel.app/q/ai-tools/openai-agents-sdk-beginner-guide (q, ai-tools, score -68)
-160. https://ai-jiedan-lab.vercel.app/q/upwork/payment-account-info-mismatch-risk (q, upwork, score -69)
-161. https://ai-jiedan-lab.vercel.app/q/upwork/payment-page-disclaimer (q, upwork, score -70)
-162. https://ai-jiedan-lab.vercel.app/q/upwork/practice-projects-before-clients (q, upwork, score -71)
-163. https://ai-jiedan-lab.vercel.app/q/ai-tools/rag-prompt-injection-defense-guide (q, ai-tools, score -72)
-164. https://ai-jiedan-lab.vercel.app/q/upwork/service-payment-method-beginner (q, upwork, score -73)
-165. https://ai-jiedan-lab.vercel.app/q/codex/what-is-codex-beginner-start (q, codex, score -74)
-166. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-beginner-project-fit-check (q, ai-tools, score -75)
+117. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-beginner-project-fit-check (q, ai-tools, score -26)
+118. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-logo-design-beginner-guide (q, ai-tools, score -27)
+119. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-ppt-beginner-guide (q, ai-tools, score -28)
+120. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-resume-cover-letter-guide (q, ai-tools, score -29)
+121. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-video-tools-beginner-guide (q, ai-tools, score -30)
+122. https://ai-jiedan-lab.vercel.app/q/ai-tools/autogen-agent-framework-beginner-guide (q, ai-tools, score -31)
+123. https://ai-jiedan-lab.vercel.app/q/upwork/bank-card-payment-platform-risk (q, upwork, score -32)
+124. https://ai-jiedan-lab.vercel.app/q/codex/build-first-webpage-with-codex (q, codex, score -33)
+125. https://ai-jiedan-lab.vercel.app/q/codex/chatgpt-codex-claude-workflow (q, codex, score -34)
+126. https://ai-jiedan-lab.vercel.app/q/ai-tools/chatgpt-how-to-use-beginner-guide (q, ai-tools, score -35)
+127. https://ai-jiedan-lab.vercel.app/q/ai-tools/chatgpt-prompt-template-beginner (q, ai-tools, score -36)
+128. https://ai-jiedan-lab.vercel.app/q/upwork/claude-code-client-questions (q, upwork, score -37)
+129. https://ai-jiedan-lab.vercel.app/q/upwork/claude-code-proposal-review (q, upwork, score -38)
+130. https://ai-jiedan-lab.vercel.app/q/codex/codex-avoid-secret-leak (q, codex, score -39)
+131. https://ai-jiedan-lab.vercel.app/q/codex/codex-codex-vercel-4-37 (q, codex, score -40)
+132. https://ai-jiedan-lab.vercel.app/q/codex/codex-edit-existing-ui (q, codex, score -41)
+133. https://ai-jiedan-lab.vercel.app/q/codex/codex-first-day-guide (q, codex, score -42)
+134. https://ai-jiedan-lab.vercel.app/q/codex/codex-first-landing-page (q, codex, score -43)
+135. https://ai-jiedan-lab.vercel.app/q/codex/codex-github-workflow (q, codex, score -44)
+136. https://ai-jiedan-lab.vercel.app/q/codex/codex-install-prerequisites (q, codex, score -45)
+137. https://ai-jiedan-lab.vercel.app/q/codex/codex-portfolio-page-assets (q, codex, score -46)
+138. https://ai-jiedan-lab.vercel.app/q/codex/codex-readme-review (q, codex, score -47)
+139. https://ai-jiedan-lab.vercel.app/q/codex/codex-review-generated-code (q, codex, score -48)
+140. https://ai-jiedan-lab.vercel.app/q/codex/codex-small-website-delivery-check (q, codex, score -49)
+141. https://ai-jiedan-lab.vercel.app/q/codex/codex-tailwind-mobile-check (q, codex, score -50)
+142. https://ai-jiedan-lab.vercel.app/q/codex/codex-upwork-job-risk-check (q, codex, score -51)
+143. https://ai-jiedan-lab.vercel.app/q/vercel/crewai-agent-deployment-beginner-guide (q, vercel, score -52)
+144. https://ai-jiedan-lab.vercel.app/q/upwork/daily-ai-freelance-practice-log (q, upwork, score -53)
+145. https://ai-jiedan-lab.vercel.app/q/ai-tools/deliver-small-website-with-ai-no-code (q, ai-tools, score -54)
+146. https://ai-jiedan-lab.vercel.app/q/upwork/first-portfolio-case-realistic (q, upwork, score -55)
+147. https://ai-jiedan-lab.vercel.app/q/ai-tools/free-seo-tools-beginner (q, ai-tools, score -56)
+148. https://ai-jiedan-lab.vercel.app/q/upwork/freelance-beginner-scope-confirmation (q, upwork, score -57)
+149. https://ai-jiedan-lab.vercel.app/q/upwork/freelance-weekly-review-template (q, upwork, score -58)
+150. https://ai-jiedan-lab.vercel.app/q/github/github-command-cheatsheet-beginner (q, github, score -59)
+151. https://ai-jiedan-lab.vercel.app/q/vercel/github-vercel-beginner-site (q, vercel, score -60)
+152. https://ai-jiedan-lab.vercel.app/q/ai-tools/google-analytics-when-to-add (q, ai-tools, score -61)
+153. https://ai-jiedan-lab.vercel.app/q/ai-tools/google-search-console-new-site (q, ai-tools, score -62)
+154. https://ai-jiedan-lab.vercel.app/q/ai-tools/gpu-docker-nvidia-container-toolkit-guide (q, ai-tools, score -63)
+155. https://ai-jiedan-lab.vercel.app/q/upwork/international-payment-fee-estimate (q, upwork, score -64)
+156. https://ai-jiedan-lab.vercel.app/q/ai-tools/langgraph-agent-beginner-guide (q, ai-tools, score -65)
+157. https://ai-jiedan-lab.vercel.app/q/vercel/local-llm-deployment-beginner (q, vercel, score -66)
+158. https://ai-jiedan-lab.vercel.app/q/ai-tools/mcp-beginner-guide-agent-tools (q, ai-tools, score -67)
+159. https://ai-jiedan-lab.vercel.app/q/ai-tools/n8n-ai-agent-self-host-guide (q, ai-tools, score -68)
+160. https://ai-jiedan-lab.vercel.app/q/ai-tools/openai-agents-sdk-beginner-guide (q, ai-tools, score -69)
+161. https://ai-jiedan-lab.vercel.app/q/upwork/payment-account-info-mismatch-risk (q, upwork, score -70)
+162. https://ai-jiedan-lab.vercel.app/q/upwork/payment-page-disclaimer (q, upwork, score -71)
+163. https://ai-jiedan-lab.vercel.app/q/upwork/practice-projects-before-clients (q, upwork, score -72)
+164. https://ai-jiedan-lab.vercel.app/q/ai-tools/rag-prompt-injection-defense-guide (q, ai-tools, score -73)
+165. https://ai-jiedan-lab.vercel.app/q/upwork/service-payment-method-beginner (q, upwork, score -74)
+166. https://ai-jiedan-lab.vercel.app/q/codex/what-is-codex-beginner-start (q, codex, score -75)
 167. https://ai-jiedan-lab.vercel.app/q/codex/ai-coding-tools-risk-check (q, codex, score -76)
 168. https://ai-jiedan-lab.vercel.app/q/upwork/ai-freelance-30-day-execution (q, upwork, score -77)
 169. https://ai-jiedan-lab.vercel.app/q/upwork/ai-freelance-common-misconceptions (q, upwork, score -78)
@@ -1168,54 +1168,54 @@ Submit these 500 URLs if GSC allows it. Stop at the current GSC limit and contin
 123. https://ai-jiedan-lab.vercel.app/blog/service-inquiry-form-questions (blog, ai-tools, score -52)
 124. https://ai-jiedan-lab.vercel.app/blog/small-site-launch-sop (blog, ai-tools, score -53)
 125. https://ai-jiedan-lab.vercel.app/blog/stripe-templates-vs-services (blog, ai-tools, score -54)
-126. https://ai-jiedan-lab.vercel.app/blog/ai-logo-design-beginner-guide (blog, ai-tools, score -55)
-127. https://ai-jiedan-lab.vercel.app/blog/ai-ppt-beginner-guide (blog, ai-tools, score -56)
-128. https://ai-jiedan-lab.vercel.app/blog/ai-resume-cover-letter-guide (blog, ai-tools, score -57)
-129. https://ai-jiedan-lab.vercel.app/blog/ai-video-tools-beginner-guide (blog, ai-tools, score -58)
-130. https://ai-jiedan-lab.vercel.app/blog/autogen-agent-framework-beginner-guide (blog, ai-tools, score -59)
-131. https://ai-jiedan-lab.vercel.app/blog/bank-card-payment-platform-risk (blog, upwork, score -60)
-132. https://ai-jiedan-lab.vercel.app/blog/chatgpt-how-to-use-beginner-guide (blog, ai-tools, score -61)
-133. https://ai-jiedan-lab.vercel.app/blog/chatgpt-prompt-template-beginner (blog, ai-tools, score -62)
-134. https://ai-jiedan-lab.vercel.app/blog/claude-code-client-questions (blog, upwork, score -63)
-135. https://ai-jiedan-lab.vercel.app/blog/claude-code-proposal-review (blog, upwork, score -64)
-136. https://ai-jiedan-lab.vercel.app/blog/codex-avoid-secret-leak (blog, codex, score -65)
-137. https://ai-jiedan-lab.vercel.app/blog/codex-codex-vercel-4-37 (blog, codex, score -66)
-138. https://ai-jiedan-lab.vercel.app/blog/codex-edit-existing-ui (blog, codex, score -67)
-139. https://ai-jiedan-lab.vercel.app/blog/codex-first-day-guide (blog, codex, score -68)
-140. https://ai-jiedan-lab.vercel.app/blog/codex-first-landing-page (blog, codex, score -69)
-141. https://ai-jiedan-lab.vercel.app/blog/codex-github-workflow (blog, codex, score -70)
-142. https://ai-jiedan-lab.vercel.app/blog/codex-install-prerequisites (blog, codex, score -71)
-143. https://ai-jiedan-lab.vercel.app/blog/codex-portfolio-page-assets (blog, codex, score -72)
-144. https://ai-jiedan-lab.vercel.app/blog/codex-readme-review (blog, codex, score -73)
-145. https://ai-jiedan-lab.vercel.app/blog/codex-review-generated-code (blog, codex, score -74)
-146. https://ai-jiedan-lab.vercel.app/blog/codex-small-website-delivery-check (blog, codex, score -75)
-147. https://ai-jiedan-lab.vercel.app/blog/codex-tailwind-mobile-check (blog, codex, score -76)
-148. https://ai-jiedan-lab.vercel.app/blog/codex-upwork-job-risk-check (blog, codex, score -77)
-149. https://ai-jiedan-lab.vercel.app/blog/crewai-agent-deployment-beginner-guide (blog, vercel, score -78)
-150. https://ai-jiedan-lab.vercel.app/blog/daily-ai-freelance-practice-log (blog, upwork, score -79)
-151. https://ai-jiedan-lab.vercel.app/blog/deliver-small-website-with-ai-no-code (blog, ai-tools, score -80)
-152. https://ai-jiedan-lab.vercel.app/blog/first-portfolio-case-realistic (blog, upwork, score -81)
-153. https://ai-jiedan-lab.vercel.app/blog/free-seo-tools-beginner (blog, ai-tools, score -82)
-154. https://ai-jiedan-lab.vercel.app/blog/freelance-beginner-scope-confirmation (blog, upwork, score -83)
-155. https://ai-jiedan-lab.vercel.app/blog/freelance-weekly-review-template (blog, upwork, score -84)
-156. https://ai-jiedan-lab.vercel.app/blog/github-command-cheatsheet-beginner (blog, github, score -85)
-157. https://ai-jiedan-lab.vercel.app/blog/github-vercel-beginner-site (blog, vercel, score -86)
-158. https://ai-jiedan-lab.vercel.app/blog/google-analytics-when-to-add (blog, ai-tools, score -87)
-159. https://ai-jiedan-lab.vercel.app/blog/google-search-console-new-site (blog, ai-tools, score -88)
-160. https://ai-jiedan-lab.vercel.app/blog/gpu-docker-nvidia-container-toolkit-guide (blog, ai-tools, score -89)
-161. https://ai-jiedan-lab.vercel.app/blog/international-payment-fee-estimate (blog, upwork, score -90)
-162. https://ai-jiedan-lab.vercel.app/blog/langgraph-agent-beginner-guide (blog, ai-tools, score -91)
-163. https://ai-jiedan-lab.vercel.app/blog/local-llm-deployment-beginner (blog, vercel, score -92)
-164. https://ai-jiedan-lab.vercel.app/blog/mcp-beginner-guide-agent-tools (blog, ai-tools, score -93)
-165. https://ai-jiedan-lab.vercel.app/blog/n8n-ai-agent-self-host-guide (blog, ai-tools, score -94)
-166. https://ai-jiedan-lab.vercel.app/blog/openai-agents-sdk-beginner-guide (blog, ai-tools, score -95)
-167. https://ai-jiedan-lab.vercel.app/blog/payment-account-info-mismatch-risk (blog, upwork, score -96)
-168. https://ai-jiedan-lab.vercel.app/blog/payment-page-disclaimer (blog, upwork, score -97)
-169. https://ai-jiedan-lab.vercel.app/blog/practice-projects-before-clients (blog, upwork, score -98)
-170. https://ai-jiedan-lab.vercel.app/blog/rag-prompt-injection-defense-guide (blog, ai-tools, score -99)
-171. https://ai-jiedan-lab.vercel.app/blog/service-payment-method-beginner (blog, upwork, score -100)
-172. https://ai-jiedan-lab.vercel.app/blog/what-is-codex-beginner-start (blog, codex, score -101)
-173. https://ai-jiedan-lab.vercel.app/blog/ai-beginner-project-fit-check (blog, ai-tools, score -102)
+126. https://ai-jiedan-lab.vercel.app/blog/ai-beginner-project-fit-check (blog, ai-tools, score -55)
+127. https://ai-jiedan-lab.vercel.app/blog/ai-logo-design-beginner-guide (blog, ai-tools, score -56)
+128. https://ai-jiedan-lab.vercel.app/blog/ai-ppt-beginner-guide (blog, ai-tools, score -57)
+129. https://ai-jiedan-lab.vercel.app/blog/ai-resume-cover-letter-guide (blog, ai-tools, score -58)
+130. https://ai-jiedan-lab.vercel.app/blog/ai-video-tools-beginner-guide (blog, ai-tools, score -59)
+131. https://ai-jiedan-lab.vercel.app/blog/autogen-agent-framework-beginner-guide (blog, ai-tools, score -60)
+132. https://ai-jiedan-lab.vercel.app/blog/bank-card-payment-platform-risk (blog, upwork, score -61)
+133. https://ai-jiedan-lab.vercel.app/blog/chatgpt-how-to-use-beginner-guide (blog, ai-tools, score -62)
+134. https://ai-jiedan-lab.vercel.app/blog/chatgpt-prompt-template-beginner (blog, ai-tools, score -63)
+135. https://ai-jiedan-lab.vercel.app/blog/claude-code-client-questions (blog, upwork, score -64)
+136. https://ai-jiedan-lab.vercel.app/blog/claude-code-proposal-review (blog, upwork, score -65)
+137. https://ai-jiedan-lab.vercel.app/blog/codex-avoid-secret-leak (blog, codex, score -66)
+138. https://ai-jiedan-lab.vercel.app/blog/codex-codex-vercel-4-37 (blog, codex, score -67)
+139. https://ai-jiedan-lab.vercel.app/blog/codex-edit-existing-ui (blog, codex, score -68)
+140. https://ai-jiedan-lab.vercel.app/blog/codex-first-day-guide (blog, codex, score -69)
+141. https://ai-jiedan-lab.vercel.app/blog/codex-first-landing-page (blog, codex, score -70)
+142. https://ai-jiedan-lab.vercel.app/blog/codex-github-workflow (blog, codex, score -71)
+143. https://ai-jiedan-lab.vercel.app/blog/codex-install-prerequisites (blog, codex, score -72)
+144. https://ai-jiedan-lab.vercel.app/blog/codex-portfolio-page-assets (blog, codex, score -73)
+145. https://ai-jiedan-lab.vercel.app/blog/codex-readme-review (blog, codex, score -74)
+146. https://ai-jiedan-lab.vercel.app/blog/codex-review-generated-code (blog, codex, score -75)
+147. https://ai-jiedan-lab.vercel.app/blog/codex-small-website-delivery-check (blog, codex, score -76)
+148. https://ai-jiedan-lab.vercel.app/blog/codex-tailwind-mobile-check (blog, codex, score -77)
+149. https://ai-jiedan-lab.vercel.app/blog/codex-upwork-job-risk-check (blog, codex, score -78)
+150. https://ai-jiedan-lab.vercel.app/blog/crewai-agent-deployment-beginner-guide (blog, vercel, score -79)
+151. https://ai-jiedan-lab.vercel.app/blog/daily-ai-freelance-practice-log (blog, upwork, score -80)
+152. https://ai-jiedan-lab.vercel.app/blog/deliver-small-website-with-ai-no-code (blog, ai-tools, score -81)
+153. https://ai-jiedan-lab.vercel.app/blog/first-portfolio-case-realistic (blog, upwork, score -82)
+154. https://ai-jiedan-lab.vercel.app/blog/free-seo-tools-beginner (blog, ai-tools, score -83)
+155. https://ai-jiedan-lab.vercel.app/blog/freelance-beginner-scope-confirmation (blog, upwork, score -84)
+156. https://ai-jiedan-lab.vercel.app/blog/freelance-weekly-review-template (blog, upwork, score -85)
+157. https://ai-jiedan-lab.vercel.app/blog/github-command-cheatsheet-beginner (blog, github, score -86)
+158. https://ai-jiedan-lab.vercel.app/blog/github-vercel-beginner-site (blog, vercel, score -87)
+159. https://ai-jiedan-lab.vercel.app/blog/google-analytics-when-to-add (blog, ai-tools, score -88)
+160. https://ai-jiedan-lab.vercel.app/blog/google-search-console-new-site (blog, ai-tools, score -89)
+161. https://ai-jiedan-lab.vercel.app/blog/gpu-docker-nvidia-container-toolkit-guide (blog, ai-tools, score -90)
+162. https://ai-jiedan-lab.vercel.app/blog/international-payment-fee-estimate (blog, upwork, score -91)
+163. https://ai-jiedan-lab.vercel.app/blog/langgraph-agent-beginner-guide (blog, ai-tools, score -92)
+164. https://ai-jiedan-lab.vercel.app/blog/local-llm-deployment-beginner (blog, vercel, score -93)
+165. https://ai-jiedan-lab.vercel.app/blog/mcp-beginner-guide-agent-tools (blog, ai-tools, score -94)
+166. https://ai-jiedan-lab.vercel.app/blog/n8n-ai-agent-self-host-guide (blog, ai-tools, score -95)
+167. https://ai-jiedan-lab.vercel.app/blog/openai-agents-sdk-beginner-guide (blog, ai-tools, score -96)
+168. https://ai-jiedan-lab.vercel.app/blog/payment-account-info-mismatch-risk (blog, upwork, score -97)
+169. https://ai-jiedan-lab.vercel.app/blog/payment-page-disclaimer (blog, upwork, score -98)
+170. https://ai-jiedan-lab.vercel.app/blog/practice-projects-before-clients (blog, upwork, score -99)
+171. https://ai-jiedan-lab.vercel.app/blog/rag-prompt-injection-defense-guide (blog, ai-tools, score -100)
+172. https://ai-jiedan-lab.vercel.app/blog/service-payment-method-beginner (blog, upwork, score -101)
+173. https://ai-jiedan-lab.vercel.app/blog/what-is-codex-beginner-start (blog, codex, score -102)
 174. https://ai-jiedan-lab.vercel.app/blog/ai-freelance-common-misconceptions (blog, upwork, score -103)
 175. https://ai-jiedan-lab.vercel.app/blog/ai-freelance-service-page-copy (blog, upwork, score -104)
 176. https://ai-jiedan-lab.vercel.app/blog/ai-freelance-skill-roadmap (blog, upwork, score -105)

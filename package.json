@@ -89,6 +89,7 @@
     "seo:growth-daily-ops": "tsx scripts/seo-growth-daily-ops.ts",
     "seo:improvement-priority": "tsx scripts/seo-improvement-priority.ts",
     "seo:heartbeat": "tsx scripts/seo-growth-heartbeat.ts",
+    "seo:autopilot-loop": "tsx scripts/seo-autopilot-loop.ts",
     "traffic:evidence": "tsx scripts/traffic-evidence-audit.ts",
     "traffic:claim-guard": "tsx scripts/traffic-claim-guard.ts",
     "automation:public-surface-inventory": "tsx scripts/public-surface-inventory.ts",

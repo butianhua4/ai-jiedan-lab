@@ -1,0 +1,75 @@
+name: SEO Autopilot Loop
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 * * * *"
+
+permissions:
+  contents: read
+  actions: read
+  statuses: read
+
+concurrency:
+  group: seo-autopilot-loop
+  cancel-in-progress: true
+
+jobs:
+  seo-autopilot-loop:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm install
+
+      - name: Run SEO autopilot loop
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          npm run seo:autopilot-loop -- --url=https://ai-jiedan-lab.vercel.app
+          code=$?
+          echo "SEO_AUTOPILOT_EXIT_CODE=$code" >> "$GITHUB_ENV"
+          if [ "$code" != "0" ]; then
+            echo "::warning::SEO autopilot loop reported issues. Reports were still produced; this workflow is report-only by default."
+          fi
+          exit 0
+
+      - name: Add autopilot summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "# SEO Autopilot Loop"
+            echo ""
+            echo "- Exit code: ${SEO_AUTOPILOT_EXIT_CODE:-0}"
+            echo ""
+          } >> "$GITHUB_STEP_SUMMARY"
+          if [ -f docs/seo-autopilot-loop.md ]; then
+            cat docs/seo-autopilot-loop.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Autopilot report was not generated." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload autopilot reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-autopilot-loop
+          path: |
+            content/automation/seo-autopilot-loop.json
+            docs/seo-autopilot-loop.md
+            content/automation/gsc-submission-progress.json
+            docs/gsc-submission-progress.md
+            content/automation/seo-growth-daily-ops.json
+            docs/seo-growth-daily-ops.md
+            content/automation/seo-improvement-priority.json
+            docs/seo-improvement-priority.md
+            content/automation/seo-growth-heartbeat.json
+            docs/seo-growth-heartbeat.md

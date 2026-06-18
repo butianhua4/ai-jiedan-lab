@@ -1,6 +1,6 @@
 # SEO Improvement Priority
 
-Generated at: 2026-06-18T19:54:36.999Z
+Generated at: 2026-06-18T20:28:08.555Z
 
 ## Guardrails
 
@@ -15,7 +15,7 @@ Generated at: 2026-06-18T19:54:36.999Z
 - confirmedGscSubmitted: 0
 - gscRemaining: 500
 - topQueueUrls: 500
-- indexNowSubmitted: true
+- indexNowSubmitted: false
 - indexNowUrls: 500
 - blockingItems: 0
 - publicMojibakeWarningItems: 0

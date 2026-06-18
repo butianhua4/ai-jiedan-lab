@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T16:29:51.603Z",
+  "generatedAt": "2026-06-18T20:28:27.863Z",
   "guardrails": {
     "fakeTrafficClaims": false,
     "fakeRevenueClaims": false,
@@ -35,8 +35,8 @@
       "ok": true,
       "status": 200,
       "url": "https://ai-jiedan-lab.vercel.app/",
-      "cache": "PRERENDER",
-      "age": "0",
+      "cache": "HIT",
+      "age": "7",
       "contains": {
         "500": true,
         "AI 工具指南": true,
@@ -135,8 +135,8 @@
       "ok": true,
       "status": 200,
       "url": "https://ai-jiedan-lab.vercel.app/indexnow-4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt",
-      "cache": "PRERENDER",
-      "age": "0",
+      "cache": "HIT",
+      "age": "18",
       "contains": {
         "4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e": true
       }
@@ -144,10 +144,10 @@
   },
   "vercel": {
     "repository": "butianhua4/ai-jiedan-lab",
-    "sha": "b668cdb62a0ecc8a39468c259205abfd0e9a9482",
+    "sha": "bdc72e530a31999d23c1e031012c23f517dc5874",
     "state": "success",
     "description": "Deployment has completed",
-    "targetUrl": "https://vercel.com/ip-studio-s-projects/ai-jiedan-lab/5LgLdeoVMcLSeExUaGgMsvkCNqbT"
+    "targetUrl": "https://vercel.com/ip-studio-s-projects/ai-jiedan-lab/8QjGUb6aW6bPVjPhe4FSbL58CNhp"
   },
   "problems": [],
   "nextActions": [
