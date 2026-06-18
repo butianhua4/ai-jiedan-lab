@@ -1,6 +1,6 @@
 # SEO Improvement Priority
 
-Generated at: 2026-06-18T18:00:47.221Z
+Generated at: 2026-06-18T18:14:43.287Z
 
 ## Guardrails
 
@@ -18,7 +18,7 @@ Generated at: 2026-06-18T18:00:47.221Z
 - indexNowSubmitted: true
 - indexNowUrls: 500
 - blockingItems: 0
-- publicMojibakeWarningItems: 51
+- publicMojibakeWarningItems: 0
 - snippetWarningItems: 204
 - schemaWarningItems: 92
 - internalLinkCandidateItems: 16
@@ -52,23 +52,14 @@ Generated at: 2026-06-18T18:00:47.221Z
 ### 2. Public mojibake and encoding repair
 
 - Impact: critical
-- Status: ready
+- Status: watch
 - Owner: content-fix
-- Evidence: 51 public pages have possible mojibake warnings.
+- Evidence: 0 public pages have possible mojibake warnings.
 - Action: Repair titles/descriptions/body text for public pages with encoding damage before expanding new content.
 
 | File/URL | Title | Warnings |
 | --- | --- | --- |
-| content/blog/ai-ppt-beginner-guide.mdx | AI 做 PPT 怎么开始：新手从大纲到成稿的流程 | possible mojibake or replacement character |
-| content/blog/ai-small-project-practice-topics-checklist.mdx | AI 小项目练习选题检查清单 | possible mojibake or replacement character |
-| content/blog/ai-tools-recommendation-beginner.mdx | AI 工具推荐怎么选：新手别一开始买太多 | possible mojibake or replacement character |
-| content/blog/before-first-ai-freelance-job.mdx | 第一次接 AI 小单前要准备什么 | possible mojibake or replacement character |
-| content/blog/build-first-webpage-with-codex.mdx | Codex 怎么做第一个网页 | possible mojibake or replacement character |
-| content/blog/canva-portfolio-cover-tips-checklist.mdx | Canva 作品集封面发布前检查清单 | possible mojibake or replacement character |
-| content/blog/claude-code-beginner-mistakes-checklist.mdx | Claude Code 新手使用检查清单 | possible mojibake or replacement character |
-| content/blog/claude-code-beginner-mistakes-mistakes.mdx | Claude Code 新手常见错误和修正方法 | possible mojibake or replacement character |
-| content/blog/claude-code-beginner-use-cases-checklist.mdx | Claude Code 新手使用场景检查清单 | possible mojibake or replacement character |
-| content/blog/claude-code-beginner-use-cases.mdx | Claude Code 新手适合用在哪些项目场景 | possible mojibake or replacement character |
+| none | none | none |
 
 ### 3. Search snippet CTR repair
 

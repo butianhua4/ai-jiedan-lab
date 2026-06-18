@@ -1,6 +1,6 @@
 # Content Integrity Audit
 
-Generated at: 2026-06-18T17:51:04.628Z
+Generated at: 2026-06-18T18:10:07.463Z
 
 This report is read-only. It checks article metadata, encoding integrity, and indexing boundaries before review or publishing.
 
@@ -16,12 +16,12 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 - blockingItems: 0
 - expansionItems: 15
 - filesScanned: 669
-- mojibakeWarningItems: 77
+- mojibakeWarningItems: 0
 - publicItems: 500
-- publicMojibakeWarningItems: 51
+- publicMojibakeWarningItems: 0
 - recommendedItems: 3
 - waveItems: 3
-- warningItems: 77
+- warningItems: 0
 
 ## Blocking Items
 
@@ -101,16 +101,16 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 16 | 54 | none | none | AI 输出不稳定风险控制检查清单 | content/blog/ai-output-unstable-risk-control-checklist.mdx |
 | published | public | 16 | 60 | none | none | AI 输出不稳定风险控制常见错误 | content/blog/ai-output-unstable-risk-control-mistakes.mdx |
 | published | public | 15 | 62 | none | none | AI 输出不稳定怎么做风险控制 | content/blog/ai-output-unstable-risk-control.mdx |
-| published | public | 25 | 56 | none | possible mojibake or replacement character | AI 做 PPT 怎么开始：新手从大纲到成稿的流程 | content/blog/ai-ppt-beginner-guide.mdx |
+| published | public | 25 | 56 | none | none | AI 做 PPT 怎么开始：新手从大纲到成稿的流程 | content/blog/ai-ppt-beginner-guide.mdx |
 | published | public | 27 | 52 | none | none | AI 提示词怎么写才好用：全行业都能套的 5 段式框架 | content/blog/ai-prompt-framework-business-guide.mdx |
 | published | public | 28 | 51 | none | none | 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx |
 | published | public | 23 | 52 | none | none | AI 写简历和求职信怎么用：别让内容变得不真实 | content/blog/ai-resume-cover-letter-guide.mdx |
-| published | public | 14 | 52 | none | possible mojibake or replacement character | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
+| published | public | 14 | 52 | none | none | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
 | published | public | 12 | 64 | none | none | AI 小项目练习常见错误 | content/blog/ai-small-project-practice-topics-mistakes.mdx |
 | published | public | 15 | 65 | none | none | AI 工具新手练习小项目选什么 | content/blog/ai-small-project-practice-topics.mdx |
 | published | public | 15 | 54 | none | none | AI 工具配置服务项目检查清单 | content/blog/ai-tool-setup-service-checklist-checklist.mdx |
 | published | public | 16 | 63 | none | none | AI 工具配置服务项目清单怎么写 | content/blog/ai-tool-setup-service-checklist.mdx |
-| published | public | 20 | 54 | none | possible mojibake or replacement character | AI 工具推荐怎么选：新手别一开始买太多 | content/blog/ai-tools-recommendation-beginner.mdx |
+| published | public | 20 | 54 | none | none | AI 工具推荐怎么选：新手别一开始买太多 | content/blog/ai-tools-recommendation-beginner.mdx |
 | published | public | 12 | 58 | none | none | AI 免费工具栈检查清单 | content/blog/ai-tools-stack-free-start-checklist.mdx |
 | published | public | 12 | 62 | none | none | AI 免费工具栈常见错误 | content/blog/ai-tools-stack-free-start-mistakes.mdx |
 | published | public | 15 | 66 | none | none | AI 工具新手免费工具栈怎么选 | content/blog/ai-tools-stack-free-start.mdx |
@@ -127,12 +127,12 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 14 | 64 | none | none | 银行卡绑定收款平台要注意什么 | content/blog/bank-card-payment-platform-risk.mdx |
 | published | public | 15 | 55 | none | none | 第一次接 AI 小单前检查清单 | content/blog/before-first-ai-freelance-job-checklist.mdx |
 | published | public | 18 | 59 | none | none | 第一次接 AI 小单前最容易犯的错误 | content/blog/before-first-ai-freelance-job-mistakes.mdx |
-| published | public | 16 | 56 | none | possible mojibake or replacement character | 第一次接 AI 小单前要准备什么 | content/blog/before-first-ai-freelance-job.mdx |
+| published | public | 16 | 56 | none | none | 第一次接 AI 小单前要准备什么 | content/blog/before-first-ai-freelance-job.mdx |
 | published | public | 44 | 91 | none | none | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | content/blog/bentoml-llm-deployment-beginner-guide.mdx |
 | published | public | 13 | 54 | none | none | Bug 修复交付前检查清单 | content/blog/bugfix-delivery-note-template-checklist.mdx |
 | published | public | 15 | 56 | none | none | Bug 修复交付说明模板怎么写 | content/blog/bugfix-delivery-note-template.mdx |
-| published | public | 14 | 88 | none | possible mojibake or replacement character | Codex 怎么做第一个网页 | content/blog/build-first-webpage-with-codex.mdx |
-| published | public | 18 | 61 | none | possible mojibake or replacement character | Canva 作品集封面发布前检查清单 | content/blog/canva-portfolio-cover-tips-checklist.mdx |
+| published | public | 14 | 88 | none | none | Codex 怎么做第一个网页 | content/blog/build-first-webpage-with-codex.mdx |
+| published | public | 18 | 61 | none | none | Canva 作品集封面发布前检查清单 | content/blog/canva-portfolio-cover-tips-checklist.mdx |
 | published | public | 25 | 63 | none | none | Canva 作品集封面怎么做更适合 AI 工具新手 | content/blog/canva-portfolio-cover-tips.mdx |
 | published | public | 30 | 57 | none | none | ChatGPT、Codex 和 Claude 工作流检查清单 | content/blog/chatgpt-codex-claude-workflow-checklist.mdx |
 | published | public | 38 | 82 | none | none | ChatGPT、Codex 和 Claude 怎么分工做 AI 工具实践流程 | content/blog/chatgpt-codex-claude-workflow.mdx |
@@ -147,37 +147,37 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 26 | 63 | none | none | Claude Code 自动化项目前怎么判断能不能做 | content/blog/claude-code-automation-human-review-freelance-scope.mdx |
 | published | public | 27 | 65 | none | none | Claude Code 自动化最容易忽略的人工审核错误 | content/blog/claude-code-automation-human-review-mistakes.mdx |
 | published | public | 23 | 72 | none | none | Claude Code 自动化为什么必须有人审 | content/blog/claude-code-automation-human-review.mdx |
-| published | public | 20 | 59 | none | possible mojibake or replacement character | Claude Code 新手使用检查清单 | content/blog/claude-code-beginner-mistakes-checklist.mdx |
+| published | public | 20 | 59 | none | none | Claude Code 新手使用检查清单 | content/blog/claude-code-beginner-mistakes-checklist.mdx |
 | published | public | 21 | 61 | none | none | Claude Code 项目前怎么判断范围 | content/blog/claude-code-beginner-mistakes-freelance-scope.mdx |
-| published | public | 23 | 68 | none | possible mojibake or replacement character | Claude Code 新手常见错误和修正方法 | content/blog/claude-code-beginner-mistakes-mistakes.mdx |
+| published | public | 23 | 68 | none | none | Claude Code 新手常见错误和修正方法 | content/blog/claude-code-beginner-mistakes-mistakes.mdx |
 | published | public | 21 | 74 | none | none | Claude Code 新手最容易犯的错误 | content/blog/claude-code-beginner-mistakes.mdx |
-| published | public | 22 | 60 | none | possible mojibake or replacement character | Claude Code 新手使用场景检查清单 | content/blog/claude-code-beginner-use-cases-checklist.mdx |
+| published | public | 22 | 60 | none | none | Claude Code 新手使用场景检查清单 | content/blog/claude-code-beginner-use-cases-checklist.mdx |
 | published | public | 27 | 60 | none | none | Claude Code 新手项目练习前怎么判断使用场景 | content/blog/claude-code-beginner-use-cases-freelance-scope.mdx |
 | published | public | 25 | 63 | none | none | Claude Code 新手选使用场景时的常见错误 | content/blog/claude-code-beginner-use-cases-mistakes.mdx |
-| published | public | 24 | 71 | none | possible mojibake or replacement character | Claude Code 新手适合用在哪些项目场景 | content/blog/claude-code-beginner-use-cases.mdx |
+| published | public | 24 | 71 | none | none | Claude Code 新手适合用在哪些项目场景 | content/blog/claude-code-beginner-use-cases.mdx |
 | published | public | 27 | 67 | none | none | Claude Code Bug Prompt 检查清单 | content/blog/claude-code-bug-prompt-checklist.mdx |
 | published | public | 32 | 73 | none | none | Claude Code Bug Prompt 项目前怎么判断范围 | content/blog/claude-code-bug-prompt-freelance-scope.mdx |
-| published | public | 27 | 70 | none | possible mojibake or replacement character | Claude Code Bug Prompt 常见错误 | content/blog/claude-code-bug-prompt-mistakes.mdx |
-| published | public | 30 | 74 | none | possible mojibake or replacement character | Claude Code 修 bug 的 prompt 怎么写 | content/blog/claude-code-bug-prompt.mdx |
+| published | public | 27 | 70 | none | none | Claude Code Bug Prompt 常见错误 | content/blog/claude-code-bug-prompt-mistakes.mdx |
+| published | public | 30 | 74 | none | none | Claude Code 修 bug 的 prompt 怎么写 | content/blog/claude-code-bug-prompt.mdx |
 | published | public | 22 | 62 | none | none | Claude Code 项目客户问题检查清单 | content/blog/claude-code-client-questions-checklist.mdx |
 | published | public | 29 | 64 | none | none | Claude Code 项目前客户问题不清楚时怎么判断范围 | content/blog/claude-code-client-questions-freelance-scope.mdx |
 | published | public | 24 | 60 | none | none | Claude Code 项目前问客户时的常见错误 | content/blog/claude-code-client-questions-mistakes.mdx |
 | published | public | 25 | 66 | none | none | 用 Claude Code 项目前要问客户哪些问题 | content/blog/claude-code-client-questions.mdx |
 | published | public | 20 | 63 | none | none | Claude Code 常用命令检查清单 | content/blog/claude-code-common-commands-checklist.mdx |
 | published | public | 26 | 68 | none | none | Claude Code 常用命令哪些适合写进项目范围 | content/blog/claude-code-common-commands-freelance-scope.mdx |
-| published | public | 26 | 61 | none | possible mojibake or replacement character | Claude Code 新手运行常用命令时的常见错误 | content/blog/claude-code-common-commands-mistakes.mdx |
-| published | public | 27 | 72 | none | possible mojibake or replacement character | Claude Code 新手常用命令怎么整理成项目笔记 | content/blog/claude-code-common-commands.mdx |
+| published | public | 26 | 61 | none | none | Claude Code 新手运行常用命令时的常见错误 | content/blog/claude-code-common-commands-mistakes.mdx |
+| published | public | 27 | 72 | none | none | Claude Code 新手常用命令怎么整理成项目笔记 | content/blog/claude-code-common-commands.mdx |
 | published | public | 20 | 62 | none | none | Claude Code 交付说明检查清单 | content/blog/claude-code-delivery-note-checklist.mdx |
 | published | public | 28 | 70 | none | none | Claude Code 交付说明哪些内容适合写进项目范围 | content/blog/claude-code-delivery-note-freelance-scope.mdx |
 | published | public | 20 | 63 | none | none | Claude Code 交付说明常见错误 | content/blog/claude-code-delivery-note-mistakes.mdx |
 | published | public | 24 | 70 | none | none | 用 Claude Code 项目后交付说明怎么写 | content/blog/claude-code-delivery-note.mdx |
 | published | public | 20 | 65 | none | none | Claude Code 错误排查检查清单 | content/blog/claude-code-error-debug-checklist.mdx |
 | published | public | 26 | 69 | none | none | Claude Code 错误排查哪些适合写进项目范围 | content/blog/claude-code-error-debug-freelance-scope.mdx |
-| published | public | 24 | 65 | none | possible mojibake or replacement character | Claude Code 排查客户报错时的常见错误 | content/blog/claude-code-error-debug-mistakes.mdx |
+| published | public | 24 | 65 | none | none | Claude Code 排查客户报错时的常见错误 | content/blog/claude-code-error-debug-mistakes.mdx |
 | published | public | 26 | 64 | none | none | 用 Claude Code 排查客户报错时怎么做才稳 | content/blog/claude-code-error-debug.mdx |
 | published | public | 27 | 69 | none | none | Claude Code GitHub 文件范围检查清单 | content/blog/claude-code-github-file-scope-checklist.mdx |
 | published | public | 33 | 78 | none | none | Claude Code 看 GitHub 文件哪些适合写进项目范围 | content/blog/claude-code-github-file-scope-freelance-scope.mdx |
-| published | public | 31 | 75 | none | possible mojibake or replacement character | Claude Code 看 GitHub 文件时的常见范围错误 | content/blog/claude-code-github-file-scope-mistakes.mdx |
+| published | public | 31 | 75 | none | none | Claude Code 看 GitHub 文件时的常见范围错误 | content/blog/claude-code-github-file-scope-mistakes.mdx |
 | published | public | 34 | 83 | none | none | 客户给 GitHub 文件时用 Claude Code 怎么限定范围 | content/blog/claude-code-github-file-scope.mdx |
 | published | public | 22 | 67 | none | none | Claude Code 安装前置条件检查清单 | content/blog/claude-code-install-prerequisites-checklist.mdx |
 | published | public | 26 | 73 | none | none | Claude Code 安装准备哪些适合写进项目范围 | content/blog/claude-code-install-prerequisites-freelance-scope.mdx |
@@ -198,8 +198,8 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 21 | 69 | none | none | Claude Code 小项目任务检查清单 | content/blog/claude-code-small-project-tasks-checklist.mdx |
 | published | public | 27 | 73 | none | none | Claude Code 小项目任务哪些适合写进项目范围 | content/blog/claude-code-small-project-tasks-freelance-scope.mdx |
 | published | public | 19 | 65 | none | none | Claude Code 小项目常见错误 | content/blog/claude-code-small-project-tasks-mistakes.mdx |
-| published | public | 27 | 75 | none | possible mojibake or replacement character | 哪些小项目任务适合用 Claude Code 辅助项目 | content/blog/claude-code-small-project-tasks.mdx |
-| published | public | 30 | 48 | none | possible mojibake or replacement character | Claude Code 和 Codex 网页修改新手检查清单 | content/blog/claude-code-vs-codex-web-editing-checklist.mdx |
+| published | public | 27 | 75 | none | none | 哪些小项目任务适合用 Claude Code 辅助项目 | content/blog/claude-code-small-project-tasks.mdx |
+| published | public | 30 | 48 | none | none | Claude Code 和 Codex 网页修改新手检查清单 | content/blog/claude-code-vs-codex-web-editing-checklist.mdx |
 | published | public | 35 | 69 | none | none | Claude Code 和 Codex 网页修改使用前怎么判断是否适合 | content/blog/claude-code-vs-codex-web-editing-freelance-scope.mdx |
 | published | public | 28 | 69 | none | none | Claude Code 和 Codex 网页修改常见错误 | content/blog/claude-code-vs-codex-web-editing-mistakes.mdx |
 | published | public | 28 | 71 | none | none | Claude Code 和 Codex 哪个适合网页修改 | content/blog/claude-code-vs-codex-web-editing.mdx |
@@ -212,8 +212,8 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 43 | 88 | none | none | Cloudflare Workers AI 怎么开始：边缘 AI 接口、成本和数据边界 | content/blog/cloudflare-workers-ai-beginner-guide.mdx |
 | published | public | 19 | 51 | none | none | Codex 自动化开发流程新手检查清单 | content/blog/codex-automation-steps-not-skip-checklist.mdx |
 | published | public | 22 | 60 | none | none | Codex 自动化开发使用前怎么判断是否适合 | content/blog/codex-automation-steps-not-skip-freelance-scope.mdx |
-| published | public | 17 | 56 | none | possible mojibake or replacement character | Codex 自动化开发流程常见错误 | content/blog/codex-automation-steps-not-skip-mistakes.mdx |
-| published | public | 20 | 65 | none | possible mojibake or replacement character | Codex 自动化开发流程哪些步骤不能省 | content/blog/codex-automation-steps-not-skip.mdx |
+| published | public | 17 | 56 | none | none | Codex 自动化开发流程常见错误 | content/blog/codex-automation-steps-not-skip-mistakes.mdx |
+| published | public | 20 | 65 | none | none | Codex 自动化开发流程哪些步骤不能省 | content/blog/codex-automation-steps-not-skip.mdx |
 | published | public | 21 | 69 | none | none | Codex 处理客户项目的密钥安全检查清单 | content/blog/codex-avoid-secret-leak-checklist.mdx |
 | published | public | 21 | 69 | none | none | 涉及密钥和权限的 Codex 任务能不能接 | content/blog/codex-avoid-secret-leak-freelance-scope.mdx |
 | published | public | 23 | 87 | none | none | Codex 做项目时常见密钥泄露错误和修复顺序 | content/blog/codex-avoid-secret-leak-mistakes.mdx |
@@ -226,7 +226,7 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 25 | 64 | none | none | Codex 需求不清楚的任务使用前怎么判断是否适合 | content/blog/codex-client-requirement-questions-freelance-scope.mdx |
 | published | public | 21 | 70 | none | none | Codex 客户需求澄清常见错误和修复顺序 | content/blog/codex-client-requirement-questions-mistakes.mdx |
 | published | public | 20 | 70 | none | none | Codex 处理客户需求不清楚时怎么提问 | content/blog/codex-client-requirement-questions.mdx |
-| published | public | 23 | 97 | none | possible mojibake or replacement character | Codex 生成代码后怎么审核：交付前检查清单 | content/blog/codex-code-review-delivery-checklist.mdx |
+| published | public | 23 | 97 | none | none | Codex 生成代码后怎么审核：交付前检查清单 | content/blog/codex-code-review-delivery-checklist.mdx |
 | published | public | 16 | 67 | none | none | Codex 是什么：新手怎么开始 | content/blog/codex-codex-4-31.mdx |
 | published | public | 20 | 73 | none | none | Codex 安装失败怎么办：新手排查清单 | content/blog/codex-codex-4-32.mdx |
 | published | public | 21 | 69 | none | none | Codex 怎么做第一个网页：新手练习流程 | content/blog/codex-codex-4-34.mdx |
@@ -243,32 +243,32 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 23 | 121 | none | none | Codex 修 CSS 间距和响应式问题怎么做 | content/blog/codex-css-spacing-responsive.mdx |
 | published | public | 20 | 72 | none | none | Codex 修改现有网页 UI 检查清单 | content/blog/codex-edit-existing-ui-checklist.mdx |
 | published | public | 27 | 77 | none | none | Codex 修改现有网页 UI 使用前怎么判断是否适合 | content/blog/codex-edit-existing-ui-freelance-scope.mdx |
-| published | public | 25 | 73 | none | possible mojibake or replacement character | Codex 修改现有网页 UI 常见错误和修复顺序 | content/blog/codex-edit-existing-ui-mistakes.mdx |
+| published | public | 25 | 73 | none | none | Codex 修改现有网页 UI 常见错误和修复顺序 | content/blog/codex-edit-existing-ui-mistakes.mdx |
 | published | public | 21 | 80 | none | none | Codex 修改现有网页 UI 的安全流程 | content/blog/codex-edit-existing-ui.mdx |
-| published | public | 27 | 50 | none | possible mojibake or replacement character | Codex 是什么，新手第一天应该怎么用：新手检查清单 | content/blog/codex-first-day-guide-checklist.mdx |
+| published | public | 27 | 50 | none | none | Codex 是什么，新手第一天应该怎么用：新手检查清单 | content/blog/codex-first-day-guide-checklist.mdx |
 | published | public | 32 | 54 | none | none | Codex 是什么，新手第一天应该怎么用：使用前怎么判断是否适合 | content/blog/codex-first-day-guide-freelance-scope.mdx |
 | published | public | 30 | 63 | none | none | Codex 是什么，新手第一天应该怎么用：常见错误和解决步骤 | content/blog/codex-first-day-guide-mistakes.mdx |
 | published | public | 20 | 64 | none | none | Codex 是什么，新手第一天应该怎么用 | content/blog/codex-first-day-guide.mdx |
 | published | public | 22 | 60 | none | none | Codex 怎么做第一个落地页：新手检查清单 | content/blog/codex-first-landing-page-checklist.mdx |
-| published | public | 27 | 62 | none | possible mojibake or replacement character | Codex 怎么做第一个落地页：使用前怎么判断是否适合 | content/blog/codex-first-landing-page-freelance-scope.mdx |
+| published | public | 27 | 62 | none | none | Codex 怎么做第一个落地页：使用前怎么判断是否适合 | content/blog/codex-first-landing-page-freelance-scope.mdx |
 | published | public | 25 | 59 | none | none | Codex 怎么做第一个落地页：常见错误和解决步骤 | content/blog/codex-first-landing-page-mistakes.mdx |
 | published | public | 15 | 64 | none | none | Codex 怎么做第一个落地页 | content/blog/codex-first-landing-page.mdx |
 | published | public | 15 | 89 | none | none | Codex 生成代码后怎么审核 | content/blog/codex-generated-code-review-guide.mdx |
-| published | public | 27 | 101 | none | possible mojibake or replacement character | Codex 和 GitHub 怎么配合：提交代码前检查 | content/blog/codex-github-before-commit-checklist.mdx |
+| published | public | 27 | 101 | none | none | Codex 和 GitHub 怎么配合：提交代码前检查 | content/blog/codex-github-before-commit-checklist.mdx |
 | published | public | 21 | 74 | none | none | Codex GitHub 提交代码检查清单 | content/blog/codex-github-workflow-checklist.mdx |
 | published | public | 28 | 82 | none | none | Codex GitHub 提交任务使用前怎么判断是否适合 | content/blog/codex-github-workflow-freelance-scope.mdx |
 | published | public | 25 | 78 | none | none | Codex GitHub 工作流常见错误和修复顺序 | content/blog/codex-github-workflow-mistakes.mdx |
 | published | public | 23 | 84 | none | none | Codex 和 GitHub 怎么配合提交代码 | content/blog/codex-github-workflow.mdx |
-| published | public | 13 | 87 | none | possible mojibake or replacement character | Codex 安装失败怎么办 | content/blog/codex-install-failed-beginner-fix.mdx |
-| published | public | 16 | 60 | none | possible mojibake or replacement character | Codex 安装前置条件检查清单 | content/blog/codex-install-prerequisites-checklist.mdx |
+| published | public | 13 | 87 | none | none | Codex 安装失败怎么办 | content/blog/codex-install-failed-beginner-fix.mdx |
+| published | public | 16 | 60 | none | none | Codex 安装前置条件检查清单 | content/blog/codex-install-prerequisites-checklist.mdx |
 | published | public | 18 | 60 | none | none | Codex 安装环境配置项目能不能接 | content/blog/codex-install-prerequisites-freelance-scope.mdx |
 | published | public | 21 | 70 | none | none | Codex 安装前置条件常见错误和修复顺序 | content/blog/codex-install-prerequisites-mistakes.mdx |
 | published | public | 15 | 65 | none | none | 安装 Codex 前要准备什么 | content/blog/codex-install-prerequisites.mdx |
 | published | public | 33 | 102 | none | none | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx |
 | published | public | 20 | 73 | none | none | npm install 报错排查检查清单 | content/blog/codex-npm-install-errors-checklist.mdx |
 | published | public | 22 | 63 | none | none | npm install 报错排查项目能不能接 | content/blog/codex-npm-install-errors-freelance-scope.mdx |
-| published | public | 23 | 69 | none | possible mojibake or replacement character | npm install 报错常见错误和修复顺序 | content/blog/codex-npm-install-errors-mistakes.mdx |
-| published | public | 25 | 79 | none | possible mojibake or replacement character | 用 Codex 排查 npm install 报错 | content/blog/codex-npm-install-errors.mdx |
+| published | public | 23 | 69 | none | none | npm install 报错常见错误和修复顺序 | content/blog/codex-npm-install-errors-mistakes.mdx |
+| published | public | 25 | 79 | none | none | 用 Codex 排查 npm install 报错 | content/blog/codex-npm-install-errors.mdx |
 | published | public | 17 | 60 | none | none | Codex 作品集页面素材检查清单 | content/blog/codex-portfolio-page-assets-checklist.mdx |
 | published | public | 13 | 54 | none | none | 作品集素材整理项目能不能接 | content/blog/codex-portfolio-page-assets-freelance-scope.mdx |
 | published | public | 20 | 58 | none | none | Codex 作品集素材常见错误和修复顺序 | content/blog/codex-portfolio-page-assets-mistakes.mdx |
@@ -292,16 +292,16 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 23 | 80 | none | none | Tailwind 移动端检查常见错误和修复顺序 | content/blog/codex-tailwind-mobile-check-mistakes.mdx |
 | published | public | 25 | 80 | none | none | 用 Codex 检查 Tailwind 移动端样式 | content/blog/codex-tailwind-mobile-check.mdx |
 | published | public | 15 | 67 | none | none | Upwork 任务风险检查清单 | content/blog/codex-upwork-job-risk-check-checklist.mdx |
-| published | public | 17 | 60 | none | possible mojibake or replacement character | Upwork 筛单风险判断能不能接 | content/blog/codex-upwork-job-risk-check-freelance-scope.mdx |
+| published | public | 17 | 60 | none | none | Upwork 筛单风险判断能不能接 | content/blog/codex-upwork-job-risk-check-freelance-scope.mdx |
 | published | public | 22 | 73 | none | none | Upwork 任务风险判断常见错误和修复顺序 | content/blog/codex-upwork-job-risk-check-mistakes.mdx |
-| published | public | 22 | 75 | none | possible mojibake or replacement character | 用 Codex 判断 Upwork 任务风险 | content/blog/codex-upwork-job-risk-check.mdx |
-| published | public | 28 | 102 | none | possible mojibake or replacement character | Codex 接 Upwork 小单怎么判断：风险检查清单 | content/blog/codex-upwork-small-job-risk-checklist.mdx |
-| published | public | 27 | 101 | none | possible mojibake or replacement character | Codex 部署 Vercel 前检查什么：上线前清单 | content/blog/codex-vercel-deploy-preflight-checklist.mdx |
+| published | public | 22 | 75 | none | none | 用 Codex 判断 Upwork 任务风险 | content/blog/codex-upwork-job-risk-check.mdx |
+| published | public | 28 | 102 | none | none | Codex 接 Upwork 小单怎么判断：风险检查清单 | content/blog/codex-upwork-small-job-risk-checklist.mdx |
+| published | public | 27 | 101 | none | none | Codex 部署 Vercel 前检查什么：上线前清单 | content/blog/codex-vercel-deploy-preflight-checklist.mdx |
 | published | public | 13 | 78 | none | none | Vercel 部署检查清单 | content/blog/codex-vercel-deployment-checklist.mdx |
 | published | public | 17 | 60 | none | none | Vercel 部署排查项目能不能接 | content/blog/codex-vercel-deployment-freelance-scope.mdx |
 | published | public | 18 | 72 | none | none | Vercel 部署常见错误和修复顺序 | content/blog/codex-vercel-deployment-mistakes.mdx |
 | published | public | 22 | 82 | none | none | 用 Codex 检查 Vercel 部署问题 | content/blog/codex-vercel-deployment.mdx |
-| published | public | 30 | 104 | none | possible mojibake or replacement character | Codex 和 Claude Code 怎么选：新手对比清单 | content/blog/codex-vs-claude-code-beginner-checklist.mdx |
+| published | public | 30 | 104 | none | none | Codex 和 Claude Code 怎么选：新手对比清单 | content/blog/codex-vs-claude-code-beginner-checklist.mdx |
 | published | public | 25 | 72 | none | none | Codex 和 Claude Code 新手怎么选 | content/blog/codex-vs-claude-code-beginner.mdx |
 | published | public | 23 | 64 | none | none | Codex 和 Cursor 网页修改选择清单 | content/blog/codex-vs-cursor-web-editing-checklist.mdx |
 | published | public | 25 | 65 | none | none | Codex 和 Cursor 网页修改项目能不能接 | content/blog/codex-vs-cursor-web-editing-freelance-scope.mdx |
@@ -318,7 +318,7 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 31 | 56 | none | none | 客服 AI 提示词模板：回复草稿、工单分类、情绪安抚和升级判断 | content/blog/customer-service-ai-prompts-guide.mdx |
 | published | public | 12 | 66 | none | none | 每天项目练习记录检查清单 | content/blog/daily-ai-freelance-practice-log-checklist.mdx |
 | published | public | 17 | 66 | none | none | 每天项目练习记录常见错误和解决步骤 | content/blog/daily-ai-freelance-practice-log-mistakes.mdx |
-| published | public | 13 | 72 | none | possible mojibake or replacement character | 新手如何记录每天的项目练习 | content/blog/daily-ai-freelance-practice-log.mdx |
+| published | public | 13 | 72 | none | none | 新手如何记录每天的项目练习 | content/blog/daily-ai-freelance-practice-log.mdx |
 | published | public | 35 | 59 | none | none | 数据分析 AI 提示词模板：指标解释、SQL 思路、异常排查和报告摘要 | content/blog/data-analysis-ai-prompts-guide.mdx |
 | published | public | 9 | 67 | none | none | 小网站交付检查清单 | content/blog/deliver-small-website-with-ai-no-code-checklist.mdx |
 | published | public | 14 | 70 | none | none | 小网站交付常见错误和解决步骤 | content/blog/deliver-small-website-with-ai-no-code-mistakes.mdx |
@@ -334,7 +334,7 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 39 | 68 | none | none | Dify、Coze、Flowise 怎么选：做 Agent 和知识库前先看边界 | content/blog/dify-coze-flowise-agent-builder-comparison.mdx |
 | published | public | 37 | 70 | none | none | Dify Docker Compose 自部署怎么做：新手先看这份边界清单 | content/blog/dify-docker-compose-self-host-guide.mdx |
 | published | public | 25 | 70 | none | none | Dify 知识库怎么搭：从上传文档到 RAG 问答 | content/blog/dify-knowledge-base-beginner-guide.mdx |
-| published | public | 37 | 69 | none | possible mojibake or replacement character | Dify metadata filtering 怎么用：让知识库检索更可控 | content/blog/dify-metadata-filtering-rag-guide.mdx |
+| published | public | 37 | 69 | none | none | Dify metadata filtering 怎么用：让知识库检索更可控 | content/blog/dify-metadata-filtering-rag-guide.mdx |
 | published | public | 33 | 78 | none | none | Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试 | content/blog/dify-ollama-local-model-guide.mdx |
 | published | public | 37 | 73 | none | none | Dify 怎么接 OpenAI API：模型供应商、LLM 节点和费用边界 | content/blog/dify-openai-api-provider-guide.mdx |
 | published | public | 29 | 55 | none | none | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | content/blog/dify-workflow-error-handling-guide.mdx |
@@ -366,7 +366,7 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 15 | 59 | none | none | 第一个作品集案例真实性检查清单 | content/blog/first-portfolio-case-realistic-checklist.mdx |
 | published | public | 17 | 70 | none | none | 第一个作品集案例常见错误和修正方法 | content/blog/first-portfolio-case-realistic-mistakes.mdx |
 | published | public | 14 | 77 | none | none | 第一个作品集案例怎么做才真实 | content/blog/first-portfolio-case-realistic.mdx |
-| published | public | 28 | 72 | none | possible mojibake or replacement character | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
+| published | public | 28 | 72 | none | none | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
 | published | public | 26 | 68 | none | none | Flowise 本地部署怎么开始：新手先看数据和权限 | content/blog/flowise-local-deployment-beginner-guide.mdx |
 | published | public | 34 | 73 | none | none | Flowise 接 Ollama 做本地 RAG：新手先跑通最小链路 | content/blog/flowise-ollama-local-rag-checklist.mdx |
 | published | public | 14 | 90 | none | none | SEO 工具免费功能检查清单 | content/blog/free-seo-tools-beginner-checklist.mdx |
@@ -384,9 +384,9 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 35 | 57 | none | none | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | content/blog/gemini-api-rate-limit-debug-guide.mdx |
 | published | public | 32 | 85 | none | none | git authentication failed 处理检查清单 | content/blog/git-authentication-failed-fix-checklist.mdx |
 | published | public | 37 | 83 | none | none | git authentication failed 使用前怎么判断是否适合 | content/blog/git-authentication-failed-fix-freelance-scope.mdx |
-| published | public | 35 | 91 | none | possible mojibake or replacement character | git authentication failed 常见错误和解决步骤 | content/blog/git-authentication-failed-fix-mistakes.mdx |
-| published | public | 30 | 91 | none | possible mojibake or replacement character | git authentication failed 怎么解决 | content/blog/git-authentication-failed-fix.mdx |
-| published | public | 29 | 91 | none | possible mojibake or replacement character | GitHub Actions build 失败日志检查清单 | content/blog/github-actions-build-log-debug-checklist.mdx |
+| published | public | 35 | 91 | none | none | git authentication failed 常见错误和解决步骤 | content/blog/git-authentication-failed-fix-mistakes.mdx |
+| published | public | 30 | 91 | none | none | git authentication failed 怎么解决 | content/blog/git-authentication-failed-fix.mdx |
+| published | public | 29 | 91 | none | none | GitHub Actions build 失败日志检查清单 | content/blog/github-actions-build-log-debug-checklist.mdx |
 | published | public | 34 | 78 | none | none | GitHub Actions build 失败使用前怎么判断是否适合 | content/blog/github-actions-build-log-debug-freelance-scope.mdx |
 | published | public | 32 | 89 | none | none | GitHub Actions build 失败常见错误和解决步骤 | content/blog/github-actions-build-log-debug-mistakes.mdx |
 | published | public | 28 | 106 | none | none | GitHub Actions build 失败怎么看日志 | content/blog/github-actions-build-log-debug.mdx |
@@ -423,7 +423,7 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 39 | 67 | none | none | LlamaIndex 做 RAG 怎么开始：Document、Node 和检索 | content/blog/llamaindex-rag-beginner-guide.mdx |
 | published | public | 23 | 56 | none | none | 大模型 API 接入部署清单：上线前要检查什么 | content/blog/llm-api-integration-deployment-checklist.mdx |
 | published | public | 31 | 56 | none | none | 大模型 API 限流和重试怎么做：429、队列、退避和降级方案 | content/blog/llm-api-rate-limit-retry-guide.mdx |
-| published | public | 25 | 54 | none | possible mojibake or replacement character | 大模型成本监控怎么做：按用户、功能、模型和项目拆账 | content/blog/llm-cost-monitoring-dashboard-guide.mdx |
+| published | public | 25 | 54 | none | none | 大模型成本监控怎么做：按用户、功能、模型和项目拆账 | content/blog/llm-cost-monitoring-dashboard-guide.mdx |
 | published | public | 24 | 57 | none | none | 大模型部署是什么意思：API、本地和私有化怎么选 | content/blog/llm-deployment-beginner-guide.mdx |
 | published | public | 54 | 65 | none | none | 大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查 | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
 | published | public | 26 | 57 | none | none | 大模型微调和 RAG 怎么选：新手别把两件事混在一起 | content/blog/llm-finetuning-vs-rag-beginner-guide.mdx |
@@ -439,8 +439,8 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 36 | 58 | none | none | MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单 | content/blog/mcp-server-deployment-security-checklist.mdx |
 | published | public | 42 | 90 | none | none | Modal 怎么部署 Serverless GPU LLM：代码化环境和冷启动先评估 | content/blog/modal-serverless-gpu-llm-guide.mdx |
 | published | public | 25 | 76 | none | none | module not found 报错定位检查清单 | content/blog/module-not-found-debug-checklist.mdx |
-| published | public | 28 | 72 | none | possible mojibake or replacement character | module not found 使用前怎么判断是否适合 | content/blog/module-not-found-debug-freelance-scope.mdx |
-| published | public | 26 | 78 | none | possible mojibake or replacement character | module not found 常见错误和解决步骤 | content/blog/module-not-found-debug-mistakes.mdx |
+| published | public | 28 | 72 | none | none | module not found 使用前怎么判断是否适合 | content/blog/module-not-found-debug-freelance-scope.mdx |
+| published | public | 26 | 78 | none | none | module not found 常见错误和解决步骤 | content/blog/module-not-found-debug-mistakes.mdx |
 | published | public | 25 | 93 | none | none | module not found 报错怎么定位文件 | content/blog/module-not-found-debug.mdx |
 | published | public | 33 | 61 | none | none | 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 | content/blog/multi-model-router-fallback-guide.mdx |
 | published | public | 35 | 59 | none | none | n8n AI Agent 怎么接知识库和记忆：RAG、上下文和状态存储 | content/blog/n8n-ai-agent-rag-memory-guide.mdx |
@@ -454,9 +454,9 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 24 | 60 | none | none | 不会编程开始 AI 项目练习：常见错误和解决步骤 | content/blog/no-code-ai-freelance-start-mistakes.mdx |
 | published | public | 16 | 63 | none | none | 不会编程怎么开始 AI 项目练习 | content/blog/no-code-ai-freelance-start.mdx |
 | published | public | 16 | 87 | none | none | Node 版本不匹配排查检查清单 | content/blog/node-version-mismatch-fix-checklist.mdx |
-| published | public | 21 | 58 | none | possible mojibake or replacement character | Node 版本不匹配使用前怎么判断是否适合 | content/blog/node-version-mismatch-fix-freelance-scope.mdx |
-| published | public | 19 | 75 | none | possible mojibake or replacement character | Node 版本不匹配常见错误和解决步骤 | content/blog/node-version-mismatch-fix-mistakes.mdx |
-| published | public | 14 | 91 | none | possible mojibake or replacement character | Node 版本不匹配怎么排查 | content/blog/node-version-mismatch-fix.mdx |
+| published | public | 21 | 58 | none | none | Node 版本不匹配使用前怎么判断是否适合 | content/blog/node-version-mismatch-fix-freelance-scope.mdx |
+| published | public | 19 | 75 | none | none | Node 版本不匹配常见错误和解决步骤 | content/blog/node-version-mismatch-fix-mistakes.mdx |
+| published | public | 14 | 91 | none | none | Node 版本不匹配怎么排查 | content/blog/node-version-mismatch-fix.mdx |
 | published | public | 23 | 62 | none | none | Notion 管理项目流程怎么用：新手检查清单 | content/blog/notion-freelance-workflow-checklist.mdx |
 | published | public | 16 | 74 | none | none | Notion 管理项目流程怎么用 | content/blog/notion-freelance-workflow.mdx |
 | published | public | 28 | 80 | none | none | npm command not found 排查检查清单 | content/blog/npm-command-not-found-fix-checklist.mdx |
@@ -491,9 +491,9 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 16 | 74 | none | none | PayPal 收款有哪些常见限制 | content/blog/paypal-freelancer-limits.mdx |
 | published | public | 31 | 70 | none | none | PayPal 和 Payoneer 哪个适合新手：新手检查清单 | content/blog/paypal-vs-payoneer-beginner-checklist.mdx |
 | published | public | 24 | 80 | none | none | PayPal 和 Payoneer 哪个适合新手 | content/blog/paypal-vs-payoneer-beginner.mdx |
-| published | public | 33 | 73 | none | possible mojibake or replacement character | permission denied 报错新手怎么处理：新手检查清单 | content/blog/permission-denied-fix-checklist.mdx |
+| published | public | 33 | 73 | none | none | permission denied 报错新手怎么处理：新手检查清单 | content/blog/permission-denied-fix-checklist.mdx |
 | published | public | 38 | 81 | none | none | permission denied 报错新手怎么处理：使用前怎么判断是否适合 | content/blog/permission-denied-fix-freelance-scope.mdx |
-| published | public | 36 | 73 | none | possible mojibake or replacement character | permission denied 报错新手怎么处理：常见错误和解决步骤 | content/blog/permission-denied-fix-mistakes.mdx |
+| published | public | 36 | 73 | none | none | permission denied 报错新手怎么处理：常见错误和解决步骤 | content/blog/permission-denied-fix-mistakes.mdx |
 | published | public | 26 | 94 | none | none | permission denied 报错新手怎么处理 | content/blog/permission-denied-fix.mdx |
 | published | public | 37 | 83 | none | none | Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试 | content/blog/pinecone-rag-beginner-guide.mdx |
 | published | public | 17 | 60 | none | none | 平台内收款和直接收款：新手检查清单 | content/blog/platform-payment-vs-direct-payment-checklist.mdx |
@@ -525,10 +525,10 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 31 | 50 | none | none | RAG 文档上传前怎么清洗：目录、页眉、表格、重复段落和版本号 | content/blog/rag-document-cleaning-before-upload-guide.mdx |
 | published | public | 21 | 55 | none | none | RAG 评测怎么做：先准备一套真实测试问题 | content/blog/rag-evaluation-test-set-guide.mdx |
 | published | public | 24 | 50 | none | none | RAG 知识库怎么搭：文档、切分、检索和回答复核 | content/blog/rag-knowledge-base-beginner-guide.mdx |
-| published | public | 26 | 59 | none | possible mojibake or replacement character | RAG 提示词注入怎么防：知识库不能盲目信任文档内容 | content/blog/rag-prompt-injection-defense-guide.mdx |
+| published | public | 26 | 59 | none | none | RAG 提示词注入怎么防：知识库不能盲目信任文档内容 | content/blog/rag-prompt-injection-defense-guide.mdx |
 | published | public | 29 | 74 | none | none | RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路 | content/blog/rag-retrieval-no-context-debug-guide.mdx |
 | published | public | 43 | 101 | none | none | Ragas 怎么评测 RAG：Faithfulness、Context 和测试集先建好 | content/blog/ragas-rag-evaluation-beginner-guide.mdx |
-| published | public | 41 | 95 | none | possible mojibake or replacement character | Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门 | content/blog/ray-serve-llm-deployment-guide.mdx |
+| published | public | 41 | 95 | none | none | Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门 | content/blog/ray-serve-llm-deployment-guide.mdx |
 | published | public | 33 | 55 | none | none | 房产 AI 提示词模板：房源文案、客户需求分析、带看记录和风险提醒 | content/blog/real-estate-ai-prompts-guide.mdx |
 | published | public | 38 | 90 | none | none | Replicate API 怎么做 AI Demo：模型调用、部署和费用边界 | content/blog/replicate-api-ai-demo-guide.mdx |
 | published | public | 48 | 85 | none | none | RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界 | content/blog/runpod-serverless-llm-deployment-guide.mdx |
@@ -546,7 +546,7 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 | published | public | 27 | 64 | none | none | Upwork 客户需求太模糊怎么办：新手分析和追问清单 | content/blog/upwork-client-requirements-analysis-beginner.mdx |
 | published | public | 32 | 80 | none | none | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
 | published | public | 27 | 87 | none | none | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | content/blog/vercel-env-variable-missing-beginner-guide.mdx |
-| published | public | 15 | 89 | none | possible mojibake or replacement character | Codex 是什么新手怎么开始 | content/blog/what-is-codex-beginner-start.mdx |
+| published | public | 15 | 89 | none | none | Codex 是什么新手怎么开始 | content/blog/what-is-codex-beginner-start.mdx |
 
 ## Other Issue Items
 
@@ -554,82 +554,4 @@ This report is read-only. It checks article metadata, encoding integrity, and in
 
 ## Warning Items
 
-| Status | Scope | Title chars | Description chars | Issues | Warnings | Title | File |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| published | public | 25 | 56 | none | possible mojibake or replacement character | AI 做 PPT 怎么开始：新手从大纲到成稿的流程 | content/blog/ai-ppt-beginner-guide.mdx |
-| published | public | 14 | 52 | none | possible mojibake or replacement character | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
-| published | public | 20 | 54 | none | possible mojibake or replacement character | AI 工具推荐怎么选：新手别一开始买太多 | content/blog/ai-tools-recommendation-beginner.mdx |
-| published | public | 16 | 56 | none | possible mojibake or replacement character | 第一次接 AI 小单前要准备什么 | content/blog/before-first-ai-freelance-job.mdx |
-| published | public | 14 | 88 | none | possible mojibake or replacement character | Codex 怎么做第一个网页 | content/blog/build-first-webpage-with-codex.mdx |
-| published | public | 18 | 61 | none | possible mojibake or replacement character | Canva 作品集封面发布前检查清单 | content/blog/canva-portfolio-cover-tips-checklist.mdx |
-| published | public | 20 | 59 | none | possible mojibake or replacement character | Claude Code 新手使用检查清单 | content/blog/claude-code-beginner-mistakes-checklist.mdx |
-| published | public | 23 | 68 | none | possible mojibake or replacement character | Claude Code 新手常见错误和修正方法 | content/blog/claude-code-beginner-mistakes-mistakes.mdx |
-| published | public | 22 | 60 | none | possible mojibake or replacement character | Claude Code 新手使用场景检查清单 | content/blog/claude-code-beginner-use-cases-checklist.mdx |
-| published | public | 24 | 71 | none | possible mojibake or replacement character | Claude Code 新手适合用在哪些项目场景 | content/blog/claude-code-beginner-use-cases.mdx |
-| published | public | 27 | 70 | none | possible mojibake or replacement character | Claude Code Bug Prompt 常见错误 | content/blog/claude-code-bug-prompt-mistakes.mdx |
-| published | public | 30 | 74 | none | possible mojibake or replacement character | Claude Code 修 bug 的 prompt 怎么写 | content/blog/claude-code-bug-prompt.mdx |
-| published | public | 26 | 61 | none | possible mojibake or replacement character | Claude Code 新手运行常用命令时的常见错误 | content/blog/claude-code-common-commands-mistakes.mdx |
-| published | public | 27 | 72 | none | possible mojibake or replacement character | Claude Code 新手常用命令怎么整理成项目笔记 | content/blog/claude-code-common-commands.mdx |
-| published | public | 24 | 65 | none | possible mojibake or replacement character | Claude Code 排查客户报错时的常见错误 | content/blog/claude-code-error-debug-mistakes.mdx |
-| published | public | 31 | 75 | none | possible mojibake or replacement character | Claude Code 看 GitHub 文件时的常见范围错误 | content/blog/claude-code-github-file-scope-mistakes.mdx |
-| published | public | 27 | 75 | none | possible mojibake or replacement character | 哪些小项目任务适合用 Claude Code 辅助项目 | content/blog/claude-code-small-project-tasks.mdx |
-| published | public | 30 | 48 | none | possible mojibake or replacement character | Claude Code 和 Codex 网页修改新手检查清单 | content/blog/claude-code-vs-codex-web-editing-checklist.mdx |
-| published | public | 17 | 56 | none | possible mojibake or replacement character | Codex 自动化开发流程常见错误 | content/blog/codex-automation-steps-not-skip-mistakes.mdx |
-| published | public | 20 | 65 | none | possible mojibake or replacement character | Codex 自动化开发流程哪些步骤不能省 | content/blog/codex-automation-steps-not-skip.mdx |
-| published | public | 23 | 97 | none | possible mojibake or replacement character | Codex 生成代码后怎么审核：交付前检查清单 | content/blog/codex-code-review-delivery-checklist.mdx |
-| archived | all | 20 | 94 | none | possible mojibake or replacement character | Codex 是什么新手怎么开始：场景 2 | content/blog/codex-codex-2-11.mdx |
-| archived | all | 18 | 92 | none | possible mojibake or replacement character | Codex 安装失败怎么办：场景 2 | content/blog/codex-codex-2-12.mdx |
-| archived | all | 19 | 93 | none | possible mojibake or replacement character | Codex 怎么做第一个网页：场景 2 | content/blog/codex-codex-2-14.mdx |
-| archived | all | 20 | 94 | none | possible mojibake or replacement character | Codex 生成代码后怎么审核：场景 2 | content/blog/codex-codex-2-18.mdx |
-| archived | all | 20 | 94 | none | possible mojibake or replacement character | Codex 是什么新手怎么开始：场景 3 | content/blog/codex-codex-3-21.mdx |
-| archived | all | 18 | 92 | none | possible mojibake or replacement character | Codex 安装失败怎么办：场景 3 | content/blog/codex-codex-3-22.mdx |
-| archived | all | 19 | 93 | none | possible mojibake or replacement character | Codex 怎么做第一个网页：场景 3 | content/blog/codex-codex-3-24.mdx |
-| archived | all | 23 | 97 | none | possible mojibake or replacement character | Codex 和 Claude Code 怎么选 | content/blog/codex-codex-claude-code-1-10.mdx |
-| archived | all | 28 | 102 | none | possible mojibake or replacement character | Codex 和 Claude Code 怎么选：场景 2 | content/blog/codex-codex-claude-code-2-20.mdx |
-| archived | all | 19 | 93 | none | possible mojibake or replacement character | Codex 修 CSS bug 的流程 | content/blog/codex-codex-css-bug-1-5.mdx |
-| archived | all | 24 | 98 | none | possible mojibake or replacement character | Codex 修 CSS bug 的流程：场景 2 | content/blog/codex-codex-css-bug-2-15.mdx |
-| archived | all | 24 | 98 | none | possible mojibake or replacement character | Codex 修 CSS bug 的流程：场景 3 | content/blog/codex-codex-css-bug-3-25.mdx |
-| archived | all | 19 | 93 | none | possible mojibake or replacement character | Codex 和 GitHub 怎么配合 | content/blog/codex-codex-github-1-6.mdx |
-| archived | all | 24 | 98 | none | possible mojibake or replacement character | Codex 和 GitHub 怎么配合：场景 2 | content/blog/codex-codex-github-2-16.mdx |
-| archived | all | 23 | 97 | none | possible mojibake or replacement character | Codex npm install 报错怎么办 | content/blog/codex-codex-npm-install-1-3.mdx |
-| archived | all | 28 | 102 | none | possible mojibake or replacement character | Codex npm install 报错怎么办：场景 2 | content/blog/codex-codex-npm-install-2-13.mdx |
-| archived | all | 28 | 102 | none | possible mojibake or replacement character | Codex npm install 报错怎么办：场景 3 | content/blog/codex-codex-npm-install-3-23.mdx |
-| archived | all | 21 | 95 | none | possible mojibake or replacement character | Codex 接 Upwork 小单怎么判断 | content/blog/codex-codex-upwork-1-9.mdx |
-| archived | all | 26 | 100 | none | possible mojibake or replacement character | Codex 接 Upwork 小单怎么判断：场景 2 | content/blog/codex-codex-upwork-2-19.mdx |
-| archived | all | 21 | 95 | none | possible mojibake or replacement character | Codex 部署 Vercel 前检查什么 | content/blog/codex-codex-vercel-1-7.mdx |
-| archived | all | 26 | 100 | none | possible mojibake or replacement character | Codex 部署 Vercel 前检查什么：场景 2 | content/blog/codex-codex-vercel-2-17.mdx |
-| published | public | 25 | 73 | none | possible mojibake or replacement character | Codex 修改现有网页 UI 常见错误和修复顺序 | content/blog/codex-edit-existing-ui-mistakes.mdx |
-| published | public | 27 | 50 | none | possible mojibake or replacement character | Codex 是什么，新手第一天应该怎么用：新手检查清单 | content/blog/codex-first-day-guide-checklist.mdx |
-| published | public | 27 | 62 | none | possible mojibake or replacement character | Codex 怎么做第一个落地页：使用前怎么判断是否适合 | content/blog/codex-first-landing-page-freelance-scope.mdx |
-| published | public | 27 | 101 | none | possible mojibake or replacement character | Codex 和 GitHub 怎么配合：提交代码前检查 | content/blog/codex-github-before-commit-checklist.mdx |
-| published | public | 13 | 87 | none | possible mojibake or replacement character | Codex 安装失败怎么办 | content/blog/codex-install-failed-beginner-fix.mdx |
-| published | public | 16 | 60 | none | possible mojibake or replacement character | Codex 安装前置条件检查清单 | content/blog/codex-install-prerequisites-checklist.mdx |
-| published | public | 23 | 69 | none | possible mojibake or replacement character | npm install 报错常见错误和修复顺序 | content/blog/codex-npm-install-errors-mistakes.mdx |
-| published | public | 25 | 79 | none | possible mojibake or replacement character | 用 Codex 排查 npm install 报错 | content/blog/codex-npm-install-errors.mdx |
-| published | public | 17 | 60 | none | possible mojibake or replacement character | Upwork 筛单风险判断能不能接 | content/blog/codex-upwork-job-risk-check-freelance-scope.mdx |
-| published | public | 22 | 75 | none | possible mojibake or replacement character | 用 Codex 判断 Upwork 任务风险 | content/blog/codex-upwork-job-risk-check.mdx |
-| published | public | 28 | 102 | none | possible mojibake or replacement character | Codex 接 Upwork 小单怎么判断：风险检查清单 | content/blog/codex-upwork-small-job-risk-checklist.mdx |
-| published | public | 27 | 101 | none | possible mojibake or replacement character | Codex 部署 Vercel 前检查什么：上线前清单 | content/blog/codex-vercel-deploy-preflight-checklist.mdx |
-| published | public | 30 | 104 | none | possible mojibake or replacement character | Codex 和 Claude Code 怎么选：新手对比清单 | content/blog/codex-vs-claude-code-beginner-checklist.mdx |
-| published | public | 13 | 72 | none | possible mojibake or replacement character | 新手如何记录每天的项目练习 | content/blog/daily-ai-freelance-practice-log.mdx |
-| published | public | 37 | 69 | none | possible mojibake or replacement character | Dify metadata filtering 怎么用：让知识库检索更可控 | content/blog/dify-metadata-filtering-rag-guide.mdx |
-| published | public | 28 | 72 | none | possible mojibake or replacement character | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
-| published | public | 35 | 91 | none | possible mojibake or replacement character | git authentication failed 常见错误和解决步骤 | content/blog/git-authentication-failed-fix-mistakes.mdx |
-| published | public | 30 | 91 | none | possible mojibake or replacement character | git authentication failed 怎么解决 | content/blog/git-authentication-failed-fix.mdx |
-| published | public | 29 | 91 | none | possible mojibake or replacement character | GitHub Actions build 失败日志检查清单 | content/blog/github-actions-build-log-debug-checklist.mdx |
-| published | public | 25 | 54 | none | possible mojibake or replacement character | 大模型成本监控怎么做：按用户、功能、模型和项目拆账 | content/blog/llm-cost-monitoring-dashboard-guide.mdx |
-| published | public | 28 | 72 | none | possible mojibake or replacement character | module not found 使用前怎么判断是否适合 | content/blog/module-not-found-debug-freelance-scope.mdx |
-| published | public | 26 | 78 | none | possible mojibake or replacement character | module not found 常见错误和解决步骤 | content/blog/module-not-found-debug-mistakes.mdx |
-| published | public | 21 | 58 | none | possible mojibake or replacement character | Node 版本不匹配使用前怎么判断是否适合 | content/blog/node-version-mismatch-fix-freelance-scope.mdx |
-| published | public | 19 | 75 | none | possible mojibake or replacement character | Node 版本不匹配常见错误和解决步骤 | content/blog/node-version-mismatch-fix-mistakes.mdx |
-| published | public | 14 | 91 | none | possible mojibake or replacement character | Node 版本不匹配怎么排查 | content/blog/node-version-mismatch-fix.mdx |
-| published | public | 33 | 73 | none | possible mojibake or replacement character | permission denied 报错新手怎么处理：新手检查清单 | content/blog/permission-denied-fix-checklist.mdx |
-| published | public | 36 | 73 | none | possible mojibake or replacement character | permission denied 报错新手怎么处理：常见错误和解决步骤 | content/blog/permission-denied-fix-mistakes.mdx |
-| published | public | 26 | 59 | none | possible mojibake or replacement character | RAG 提示词注入怎么防：知识库不能盲目信任文档内容 | content/blog/rag-prompt-injection-defense-guide.mdx |
-| published | public | 41 | 95 | none | possible mojibake or replacement character | Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门 | content/blog/ray-serve-llm-deployment-guide.mdx |
-| draft | all | 26 | 68 | none | possible mojibake or replacement character | TypeScript 报错新手怎么排查：新手检查清单 | content/blog/typescript-error-beginner-debug-checklist.mdx |
-| draft | all | 31 | 71 | none | possible mojibake or replacement character | TypeScript 报错新手怎么排查：使用前怎么判断是否适合 | content/blog/typescript-error-beginner-debug-freelance-scope.mdx |
-| draft | all | 24 | 62 | none | possible mojibake or replacement character | Upwork 新手怎么避免假作品集：新手检查清单 | content/blog/upwork-avoid-fake-portfolio-checklist.mdx |
-| draft | all | 17 | 62 | none | possible mojibake or replacement character | Upwork 新手怎么避免假作品集 | content/blog/upwork-avoid-fake-portfolio.mdx |
-| draft | all | 24 | 69 | none | possible mojibake or replacement character | Upwork 客户不确认需求怎么办：新手检查清单 | content/blog/upwork-client-no-confirmation-checklist.mdx |
-| published | public | 15 | 89 | none | possible mojibake or replacement character | Codex 是什么新手怎么开始 | content/blog/what-is-codex-beginner-start.mdx |
+- none

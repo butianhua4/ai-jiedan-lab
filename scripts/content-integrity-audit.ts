@@ -25,9 +25,12 @@ type PublicExpansionQueue = {
   items: Array<{ file: string }>;
 };
 
-const broadMojibakePattern =
-  /[\uFFFD]|鈥|閫|鎺|鏂|绋|銆|锛|閮|鎬|涓|鐢|妫|瀹|璇|悊|噴|拰|杩|鍏|鍦|鍨|甯|閿|璧||||||Ã|Â|â€|æ|ç|è|é|å|脙|脗|芒|莽|猫|茅|氓|盲|枚|冒|脨|脩/;
-const mojibakePattern = broadMojibakePattern;
+const mojibakePatterns = [
+  /\uFFFD/,
+  /锟斤拷/,
+  /(?:Ã.|Â.|â[€�])/,
+  /(?:鎬庝箞|鐨勭|鍋氾|绋嬶|妫€|锛氬|銆|浠庡|庝箞|叿|楠岃|||||)/,
+];
 
 async function main() {
   const reviewCandidates = readJson<ReviewCandidates>("content/automation/review-candidates.json");
@@ -117,7 +120,7 @@ function auditFile(file: string, recommended: Set<string>, waveFiles: Set<string
     status !== "published" && article.data.noindex === false ? "non-published article must not be indexable" : "",
   ].filter(Boolean);
   const warnings = [
-    mojibakePattern.test(inspectedText) || broadMojibakePattern.test(inspectedText) ? "possible mojibake or replacement character" : "",
+    mojibakePatterns.some((pattern) => pattern.test(inspectedText)) ? "possible mojibake or replacement character" : "",
   ].filter(Boolean);
 
   return {
