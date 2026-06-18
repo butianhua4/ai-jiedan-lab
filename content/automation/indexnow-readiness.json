@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-06-18T09:25:28.701Z",
+  "guardrails": {
+    "submitByDefault": false,
+    "note": "IndexNow is for Bing and other participating search engines. Google does not use IndexNow for normal q/blog pages."
+  },
+  "ready": false,
+  "liveKey": {
+    "ok": false,
+    "status": 404,
+    "url": "https://ai-jiedan-lab.vercel.app/indexnow-4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt",
+    "valueMatches": false
+  },
+  "payload": {
+    "host": "ai-jiedan-lab.vercel.app",
+    "key": "4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e",
+    "keyLocation": "https://ai-jiedan-lab.vercel.app/indexnow-4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt",
+    "urlList": [
+      "https://ai-jiedan-lab.vercel.app/q/node-js-errors/eslint-error-should-not-disable",
+      "https://ai-jiedan-lab.vercel.app/q/github/failed-to-push-some-refs-fix",
+      "https://ai-jiedan-lab.vercel.app/q/github/git-authentication-failed-fix",
+      "https://ai-jiedan-lab.vercel.app/q/github/github-actions-build-log-debug",
+      "https://ai-jiedan-lab.vercel.app/q/vercel/llm-api-integration-deployment-checklist",
+      "https://ai-jiedan-lab.vercel.app/q/node-js-errors/module-not-found-debug",
+      "https://ai-jiedan-lab.vercel.app/q/node-js-errors/nextjs-hydration-error-debug",
+      "https://ai-jiedan-lab.vercel.app/q/github/package-lock-conflict-fix",
+      "https://ai-jiedan-lab.vercel.app/q/vercel/replicate-api-ai-demo-guide",
+      "https://ai-jiedan-lab.vercel.app/q/upwork/ai-freelance-failure-review"
+    ]
+  },
+  "submission": null,
+  "summary": {
+    "growthStage": "warming",
+    "totalPages": 1006,
+    "qPages": 500,
+    "clusterPages": 6,
+    "blogPages": 500,
+    "orphanPages": 0,
+    "weakPages": 0,
+    "internalLinkHealth": 100,
+    "growthReadinessScore": 100,
+    "graphNodes": 1006,
+    "graphEdges": 9572
+  },
+  "nextActions": [
+    "Deploy the site and verify https://ai-jiedan-lab.vercel.app/indexnow-4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt returns the IndexNow key.",
+    "Register or import the site in Bing Webmaster Tools.",
+    "After the key is live, run npm run indexnow:readiness -- --submit only for a small priority batch."
+  ]
+}

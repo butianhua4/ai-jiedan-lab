@@ -65,6 +65,8 @@ jobs:
           refresh_code=$(( refresh_code || $? ))
           npm run seo:growth-daily-ops
           refresh_code=$(( refresh_code || $? ))
+          npm run indexnow:readiness
+          refresh_code=$(( refresh_code || $? ))
           npm run searchability:check
           refresh_code=$(( refresh_code || $? ))
           npm run seo:check
