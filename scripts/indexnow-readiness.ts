@@ -38,7 +38,7 @@ async function main() {
   const shouldSubmit = process.argv.includes("--submit") || process.env.INDEXNOW_SUBMIT === "true";
   const dailyOps = readDailyOps();
   const indexNowItems = dailyOps.gscDailyActions.topQueue ?? dailyOps.gscDailyActions.todayBatch;
-  const urlList = uniqueUrls(indexNowItems.map((item) => item.url)).slice(0, 100);
+  const urlList = uniqueUrls(indexNowItems.map((item) => item.url)).slice(0, 500);
   const keyLocation = `${base}/${keyFile}`;
   const liveKey = await checkLiveKey(keyLocation);
   const payload = {

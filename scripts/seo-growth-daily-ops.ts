@@ -47,9 +47,10 @@ const outputJson = path.join(process.cwd(), "content", "automation", "seo-growth
 const outputMarkdown = path.join(process.cwd(), "docs", "seo-growth-daily-ops.md");
 const outputText = path.join(process.cwd(), "docs", "gsc-url-inspection-today.txt");
 const outputTop100Text = path.join(process.cwd(), "docs", "gsc-url-inspection-top-100.txt");
-const dailyBatchSize = 30;
-const topQueueTarget = 100;
-const launchDaySubmittedTarget = 30;
+const outputTop500Text = path.join(process.cwd(), "docs", "gsc-url-inspection-top-500.txt");
+const dailyBatchSize = 50;
+const topQueueTarget = 500;
+const alreadyPreparedTarget = 100;
 const launchDate = "2026-06-18";
 
 const laneSeeds = [
@@ -96,6 +97,7 @@ function main() {
   const queue = getInspectionQueue(priority.allItems);
   const batchPlan = getTodayBatchPlan(queue, priority.recommendedManualBatchSize.firstDay);
   const topQueue = queue.slice(0, Math.min(topQueueTarget, queue.length));
+  const top100Queue = queue.slice(0, Math.min(100, queue.length));
   const problemLanes = buildProblemLanes(priority.allItems);
   const payload = {
     generatedAt: new Date().toISOString(),
@@ -117,7 +119,7 @@ function main() {
       wrapsQueue: batchPlan.wrapsQueue,
       todayBatch: batchPlan.todayBatch,
       topQueue,
-      operatingRule: "Submit sitemap.xml first in GSC. Then use URL Inspection from todayBatch until the top 100 queue is processed or GSC rate-limits requests.",
+      operatingRule: "Submit sitemap.xml first in GSC. Then use URL Inspection from todayBatch until the top 500 queue is processed or GSC rate-limits requests.",
     },
     contentDailyActions: {
       targetFormat: "problem-entry page",
@@ -133,7 +135,8 @@ function main() {
   fs.writeFileSync(outputJson, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
   fs.writeFileSync(outputMarkdown, toMarkdown(payload), "utf8");
   fs.writeFileSync(outputText, toTextBatch(batchPlan.todayBatch), "utf8");
-  fs.writeFileSync(outputTop100Text, toTextBatch(topQueue), "utf8");
+  fs.writeFileSync(outputTop100Text, toTextBatch(top100Queue), "utf8");
+  fs.writeFileSync(outputTop500Text, toTextBatch(topQueue), "utf8");
 
   console.log(
     JSON.stringify(
@@ -143,6 +146,7 @@ function main() {
         markdown: rel(outputMarkdown),
         text: rel(outputText),
         top100Text: rel(outputTop100Text),
+        top500Text: rel(outputTop500Text),
         todayBatch: batchPlan.todayBatch.length,
         batchStart: batchPlan.start + 1,
         batchEnd: Math.min(queue.length, batchPlan.start + batchPlan.todayBatch.length),
@@ -179,7 +183,7 @@ function getTodayBatchPlan(queue: PriorityItem[], firstDaySize: number) {
     return { dayIndex, start: 0, todayBatch: queue.slice(0, Math.min(firstDaySize, queue.length)), wrapsQueue: false };
   }
 
-  const previousTarget = Math.min(topQueueTarget, launchDaySubmittedTarget, firstDaySize);
+  const previousTarget = Math.min(topQueueTarget, alreadyPreparedTarget, firstDaySize);
   const start = Math.min(previousTarget, queue.length);
   const targetEnd = Math.min(topQueueTarget, queue.length);
   if (start < targetEnd) {

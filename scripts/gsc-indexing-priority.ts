@@ -34,10 +34,10 @@ function main() {
   const graphSummary = getSeoGraphSummary();
   const growth = getSeoGrowthReport(graph);
   const clusters = buildClusterItems();
-  const qPages = buildQuestionItems(140);
-  const blogPages = buildBlogItems(qPages, 80);
+  const qPages = buildQuestionItems(500);
+  const blogPages = buildBlogItems(qPages, 500);
   const allItems = [...clusters, ...qPages, ...blogPages].sort((a, b) => b.score - a.score || a.path.localeCompare(b.path));
-  const firstManualBatch = allItems.slice(0, 100);
+  const firstManualBatch = allItems.slice(0, 500);
   const payload = {
     generatedAt: new Date().toISOString(),
     guardrails: {
@@ -59,9 +59,9 @@ function main() {
       graphEdges: graphSummary.edgeCount,
     },
     recommendedManualBatchSize: {
-      firstDay: 100,
-      dailyAfterFirstDay: 30,
-      note: "Accelerated mode: prepare the top 100 URL Inspection queue first. Stop early if GSC rate-limits requests.",
+      firstDay: 500,
+      dailyAfterFirstDay: 50,
+      note: "Accelerated mode: prepare the top 500 URL Inspection queue. Stop early if GSC rate-limits requests and continue from the next URL.",
     },
     firstManualBatch,
     sections: {
@@ -128,7 +128,7 @@ function buildBlogItems(qItems: PriorityItem[], limit: number): PriorityItem[] {
   for (const cluster of seoClusters) {
     for (const post of getHighAuthorityPosts(cluster.slug, 5)) selected.set(post.slug, post);
   }
-  for (const post of getHighPotentialQuestionPosts(60)) {
+  for (const post of getHighPotentialQuestionPosts(Math.max(limit, qItems.length))) {
     if (qSlugs.has(post.slug)) selected.set(post.slug, post);
   }
 
@@ -231,7 +231,7 @@ function toMarkdown(payload: {
     "",
     "## First Manual Batch",
     "",
-    `Submit these ${firstDay.length} URLs first if GSC allows it. Stop at the current GSC limit and continue from the next URL later.`,
+    `Submit these ${firstDay.length} URLs if GSC allows it. Stop at the current GSC limit and continue from the next URL later.`,
     "",
     ...firstDay.map((item, index) => `${index + 1}. ${item.url} - ${item.reason}`),
     "",
