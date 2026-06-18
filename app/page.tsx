@@ -32,10 +32,17 @@ const searchEntrances = [
 ];
 
 export default function Home() {
-  const posts = getAllPosts(false).slice(0, 6);
+  const allPosts = getAllPosts(false);
+  const posts = allPosts.slice(0, 12);
   const featuredTools = tools.slice(0, 8);
   const featuredTemplates = templates.slice(0, 5);
-  const priorityQuestions = getHighPotentialQuestionPosts(12);
+  const priorityQuestions = getHighPotentialQuestionPosts(18);
+  const networkStats = [
+    { label: "公开教程文章", value: allPosts.length, href: "/blog" },
+    { label: "问题入口页面", value: allPosts.length, href: "/q" },
+    { label: "主题中心", value: seoClusters.length, href: "/q" },
+    { label: "工具与模板入口", value: tools.length + templates.length, href: "/tools" },
+  ];
 
   return (
     <main className="w-full max-w-full overflow-hidden">
@@ -94,6 +101,26 @@ export default function Home() {
         {trustItems.map((item) => (
           <div key={item} className="rounded-lg border border-gray-200 bg-white p-4 text-center text-sm font-semibold text-ink shadow-sm">{item}</div>
         ))}
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-8">
+        <div className="flex flex-col justify-between gap-3 md:flex-row md:items-end">
+          <div>
+            <h2 className="text-2xl font-bold text-ink">SEO 内容网络状态</h2>
+            <p className="mt-2 max-w-2xl text-sm leading-6 text-gray-600">
+              站点不是只靠首页几篇文章，而是由教程文章、问题入口、主题中心和工具页面一起给搜索引擎提供抓取路径。
+            </p>
+          </div>
+          <Link href="/blog" className="text-sm font-medium text-brand">查看 500 篇教程</Link>
+        </div>
+        <div className="mt-5 grid gap-3 md:grid-cols-4">
+          {networkStats.map((item) => (
+            <Link key={item.label} href={item.href} className="rounded-lg border border-gray-200 bg-white p-5 shadow-sm transition hover:border-brand/50 hover:shadow-md">
+              <p className="text-sm font-medium text-gray-500">{item.label}</p>
+              <p className="mt-2 text-3xl font-bold text-ink">{item.value}</p>
+            </Link>
+          ))}
+        </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-8">
