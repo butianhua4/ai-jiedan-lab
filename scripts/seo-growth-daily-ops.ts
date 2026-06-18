@@ -45,6 +45,7 @@ type ProblemLane = {
 const priorityJson = path.join(process.cwd(), "content", "automation", "gsc-indexing-priority.json");
 const outputJson = path.join(process.cwd(), "content", "automation", "seo-growth-daily-ops.json");
 const outputMarkdown = path.join(process.cwd(), "docs", "seo-growth-daily-ops.md");
+const outputText = path.join(process.cwd(), "docs", "gsc-url-inspection-today.txt");
 const dailyBatchSize = 20;
 const launchDate = "2026-06-18";
 
@@ -125,6 +126,7 @@ function main() {
   fs.mkdirSync(path.dirname(outputMarkdown), { recursive: true });
   fs.writeFileSync(outputJson, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
   fs.writeFileSync(outputMarkdown, toMarkdown(payload), "utf8");
+  fs.writeFileSync(outputText, toTextBatch(batchPlan.todayBatch), "utf8");
 
   console.log(
     JSON.stringify(
@@ -132,6 +134,7 @@ function main() {
         ok: true,
         json: rel(outputJson),
         markdown: rel(outputMarkdown),
+        text: rel(outputText),
         todayBatch: batchPlan.todayBatch.length,
         batchStart: batchPlan.start + 1,
         batchEnd: Math.min(queue.length, batchPlan.start + batchPlan.todayBatch.length),
@@ -187,6 +190,10 @@ function daysSinceLaunch() {
 function shanghaiDateKey(date: Date) {
   const shanghai = new Date(date.getTime() + 8 * 60 * 60 * 1000);
   return shanghai.toISOString().slice(0, 10);
+}
+
+function toTextBatch(items: PriorityItem[]) {
+  return `${items.map((item) => item.url).join("\n")}\n`;
 }
 
 function buildProblemLanes(items: PriorityItem[]): ProblemLane[] {
