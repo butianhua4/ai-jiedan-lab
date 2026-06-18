@@ -8,7 +8,7 @@ const checks = [
   ["/templates", "模板下载"],
   ["/monetization", "变现路线"],
   ["/blog", "新手教程"],
-  ["/sitemap.xml", "<urlset"],
+  ["/sitemap.xml", "<sitemapindex"],
   ["/robots.txt", "Sitemap"],
 ] as const;
 
