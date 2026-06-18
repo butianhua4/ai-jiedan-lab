@@ -84,6 +84,7 @@
     "seo:check": "tsx scripts/seo-safety-check.ts",
     "search-console:check": "tsx scripts/search-console-readiness.ts",
     "search-console:indexing-priority": "tsx scripts/gsc-indexing-priority.ts",
+    "search-console:mark-submitted": "tsx scripts/gsc-mark-submitted.ts",
     "search-console:progress": "tsx scripts/gsc-submission-progress.ts",
     "indexnow:readiness": "tsx scripts/indexnow-readiness.ts",
     "seo:growth-daily-ops": "tsx scripts/seo-growth-daily-ops.ts",
