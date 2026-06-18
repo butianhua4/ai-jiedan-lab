@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-17T16:48:41.758Z
+Generated at: 2026-06-18T02:01:32.789Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -314,7 +314,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=he
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=ar
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/
 - https://docs.vllm.ai -> https://docs.vllm.ai/en/latest/
@@ -346,7 +346,7 @@ Unsafe source remediation items:
 | true | redirected-url | 11 | 0 | content/blog/tools-not-to-buy-first.mdx<br>content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/together-ai-api-beginner-guide.mdx<br>content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx<br>content/blog/vercel-deploy-checklist-template.mdx<br>content/blog/vercel-404-after-deploy-freelance-scope.mdx<br>content/blog/windows-path-permission-install-fix.mdx<br>content/blog/windows-path-permission-install-fix-checklist.mdx<br>content/blog/windows-path-permission-install-fix-freelance-scope.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://docs.anthropic.com | https://platform.claude.com/docs/en/home |
 | true | redirected-url | 7 | 0 | content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/together-ai-api-beginner-guide.mdx<br>content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://platform.openai.com/docs/guides/retrieval | https://developers.openai.com/api/docs/guides/retrieval |
 | true | redirected-url | 5 | 0 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/windows-path-permission-install-fix-checklist.mdx<br>content/blog/windows-path-permission-install-fix-freelance-scope.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://platform.openai.com/docs/guides/agents | https://developers.openai.com/api/docs/guides/agents |
-| true | redirected-url | 2 | 0 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=he |
+| true | redirected-url | 2 | 0 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=ar |
 | true | redirected-url | 2 | 0 | content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx | https://docs.llamaindex.ai | https://developers.llamaindex.ai/python/framework/ |
 
 ## Source Replacement Decisions
@@ -2906,7 +2906,7 @@ Public categories:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-17T16:48:37.961Z
+- Latest check: 2026-06-18T02:01:28.854Z
 - Ok: true
 - Public articles checked: 500
 - Sitemap URLs: undefined

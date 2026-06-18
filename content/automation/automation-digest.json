@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T16:48:41.758Z",
+  "generatedAt": "2026-06-18T02:01:32.789Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -2423,7 +2423,7 @@
           "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=he.",
+          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=ar.",
           "Open source URL: https://platform.openai.com/docs.",
           "Open source URL: https://ai-sdk.dev/docs.",
           "Open source URL: https://docs.anthropic.com.",
@@ -3362,10 +3362,10 @@
             "affectedTitles": [
               "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
             ],
-            "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=he",
+            "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=ar",
             "humanChecklist": [
               "Review URL: https://ai.google.dev/docs.",
-              "Review final URL: https://ai.google.dev/gemini-api/docs?hl=he.",
+              "Review final URL: https://ai.google.dev/gemini-api/docs?hl=ar.",
               "HTTP status observed by automation: 200.",
               "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
               "If the final URL is the canonical destination, update the source target during human review.",
@@ -3425,7 +3425,7 @@
           "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=he.",
+          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=ar.",
           "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
           "If the final URL is the canonical destination, update the source target during human review.",
           "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
@@ -6043,7 +6043,7 @@
         "url": "https://ai-sdk.dev/docs"
       },
       {
-        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=he",
+        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=ar",
         "ok": true,
         "references": [
           {
@@ -7379,10 +7379,10 @@
         "affectedTitles": [
           "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
         ],
-        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=he",
+        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=ar",
         "humanChecklist": [
           "Review URL: https://ai.google.dev/docs.",
-          "Review final URL: https://ai.google.dev/gemini-api/docs?hl=he.",
+          "Review final URL: https://ai.google.dev/gemini-api/docs?hl=ar.",
           "HTTP status observed by automation: 200.",
           "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
           "If the final URL is the canonical destination, update the source target during human review.",
@@ -9861,7 +9861,7 @@
           "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=he.",
+          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=ar.",
           "Open source URL: https://platform.openai.com/docs.",
           "Open source URL: https://ai-sdk.dev/docs.",
           "Open source URL: https://docs.anthropic.com.",
@@ -9895,7 +9895,7 @@
           "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=he."
+          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=ar."
         ],
         "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
         "unsafeReasons": []
@@ -68943,7 +68943,7 @@
   "liveSearch": {
     "checkedArticles": 500,
     "failedChecks": [],
-    "generatedAt": "2026-06-17T16:48:37.961Z",
+    "generatedAt": "2026-06-18T02:01:28.854Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 500

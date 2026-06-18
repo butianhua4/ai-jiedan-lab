@@ -1,6 +1,6 @@
 # Source Target Health Audit
 
-Generated at: 2026-06-17T16:47:27.557Z
+Generated at: 2026-06-18T02:00:17.565Z
 
 This report is read-only. It verifies official source URLs used by review and public-gap candidates before any human approval step.
 
@@ -42,7 +42,7 @@ This report is read-only. It verifies official source URLs used by review and pu
 | OK | Status | URL | Final URL | References | Error |
 | --- | --- | --- | --- | --- | --- |
 | true | 200 | https://ai-sdk.dev/docs | https://ai-sdk.dev/docs/introduction | 17 |  |
-| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=he | 2 |  |
+| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=ar | 2 |  |
 | true | 200 | https://docs.anthropic.com | https://platform.claude.com/docs/en/home | 11 |  |
 | true | 200 | https://docs.llamaindex.ai | https://developers.llamaindex.ai/python/framework/ | 2 |  |
 | true | 200 | https://docs.vllm.ai | https://docs.vllm.ai/en/latest/ | 2 |  |
@@ -78,7 +78,7 @@ This report is read-only. It verifies official source URLs used by review and pu
 | OK | Status | URL | Final URL | References | Error |
 | --- | --- | --- | --- | --- | --- |
 | true | 200 | https://ai-sdk.dev/docs | https://ai-sdk.dev/docs/introduction | 17 |  |
-| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=he | 2 |  |
+| true | 200 | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=ar | 2 |  |
 | true | 200 | https://docs.anthropic.com | https://platform.claude.com/docs/en/home | 11 |  |
 | true | 200 | https://docs.langchain.com | https://docs.langchain.com/ | 1 |  |
 | true | 200 | https://docs.llamaindex.ai | https://developers.llamaindex.ai/python/framework/ | 2 |  |

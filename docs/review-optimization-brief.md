@@ -1,6 +1,6 @@
 # Review Optimization Brief
 
-Generated at: 2026-06-17T16:47:29.899Z
+Generated at: 2026-06-18T02:00:20.047Z
 
 This report is read-only. It converts review warnings into copydesk suggestions for human review.
 
