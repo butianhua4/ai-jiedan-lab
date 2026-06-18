@@ -61,6 +61,12 @@ jobs:
           refresh_code=$(( refresh_code || $? ))
           npm run traffic:claim-guard
           refresh_code=$(( refresh_code || $? ))
+          npm run search-console:indexing-priority
+          refresh_code=$(( refresh_code || $? ))
+          npm run searchability:check
+          refresh_code=$(( refresh_code || $? ))
+          npm run seo:check
+          refresh_code=$(( refresh_code || $? ))
           npm run automation:public-surface-inventory
           refresh_code=$(( refresh_code || $? ))
           npm run automation:broad-first-coverage-launch
