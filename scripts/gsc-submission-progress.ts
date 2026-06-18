@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { rel } from "./content-utils";
+import { parseArgs, rel } from "./content-utils";
 
 type DailyOps = {
   generatedAt: string;
@@ -47,6 +47,8 @@ const top500Text = path.join(process.cwd(), "docs", "gsc-url-inspection-top-500.
 const todayText = path.join(process.cwd(), "docs", "gsc-url-inspection-today.txt");
 
 function main() {
+  const args = parseArgs();
+  const batchSize = clamp(toNumber(args["batch-size"]) ?? 15, 1, 50);
   const dailyOps = readJson<DailyOps>(dailyOpsJson);
   const indexNow = readJson<IndexNowReport>(indexNowJson);
   const manual = readManualProgress();
@@ -55,6 +57,7 @@ function main() {
   const confirmedSubmittedCount = clamp(manual.confirmedSubmittedCount, 0, topQueue.length);
   const nextUrl = topQueue[confirmedSubmittedCount] ?? null;
   const remainingUrls = topQueue.slice(confirmedSubmittedCount);
+  const nextBatchUrls = remainingUrls.slice(0, batchSize);
   const duplicateUrls = findDuplicates(topQueue);
   const typeSummary = summarizeTypes(dailyOps.gscDailyActions.topQueue);
   const clusterSummary = summarizeClusters(dailyOps.gscDailyActions.topQueue);
@@ -77,6 +80,7 @@ function main() {
       todayQueueUrls: todayQueue.length,
       confirmedGscSubmitted: confirmedSubmittedCount,
       gscRemaining: remainingUrls.length,
+      nextBatchSize: nextBatchUrls.length,
       nextUrl,
       indexNowReady: indexNow.ready,
       indexNowSubmitted: Boolean(indexNow.submission?.ok),
@@ -88,6 +92,10 @@ function main() {
       duplicateUrls,
       typeSummary,
       clusterSummary,
+      nextBatchUrls,
+      nextBatchMarkCommand: nextBatchUrls.length
+        ? `npm run search-console:mark-submitted -- --add=${nextBatchUrls.length}`
+        : null,
       firstRemainingUrls: remainingUrls.slice(0, 20),
     },
     improvementActions: buildImprovementActions({
@@ -114,6 +122,7 @@ function main() {
         topQueueUrls: topQueue.length,
         confirmedGscSubmitted: confirmedSubmittedCount,
         gscRemaining: remainingUrls.length,
+        nextBatchSize: nextBatchUrls.length,
         indexNowUrls: indexNow.payload.urlList.length,
         nextUrl,
       },
@@ -161,6 +170,12 @@ function readUrlText(file: string) {
 
 function clamp(value: number, min: number, max: number) {
   return Math.max(min, Math.min(max, Math.floor(value)));
+}
+
+function toNumber(value: string | boolean | undefined) {
+  if (value === undefined || value === false || value === true) return null;
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? Math.floor(parsed) : null;
 }
 
 function findDuplicates(urls: string[]) {
@@ -222,6 +237,8 @@ function toMarkdown(report: {
     clusterSummary: Record<string, number>;
     duplicateUrls: string[];
     firstRemainingUrls: string[];
+    nextBatchMarkCommand: string | null;
+    nextBatchUrls: string[];
     typeSummary: Record<string, number>;
   };
   summary: {
@@ -234,6 +251,7 @@ function toMarkdown(report: {
     indexNowSubmitted: boolean;
     indexNowUrls: number;
     internalLinkHealth: number;
+    nextBatchSize: number;
     nextUrl: string | null;
     orphanPages: number;
     todayQueueUrls: number;
@@ -265,6 +283,7 @@ function toMarkdown(report: {
     `- Today queue URLs: ${report.summary.todayQueueUrls}`,
     `- Confirmed GSC submitted: ${report.summary.confirmedGscSubmitted}`,
     `- GSC remaining: ${report.summary.gscRemaining}`,
+    `- Next batch size: ${report.summary.nextBatchSize}`,
     `- Next URL: ${report.summary.nextUrl ?? "none"}`,
     `- IndexNow ready: ${report.summary.indexNowReady}`,
     `- IndexNow submitted: ${report.summary.indexNowSubmitted}`,
@@ -275,6 +294,12 @@ function toMarkdown(report: {
     "",
     `- Types: ${JSON.stringify(report.queueHealth.typeSummary)}`,
     `- Clusters: ${JSON.stringify(report.queueHealth.clusterSummary)}`,
+    "",
+    "## Next Manual Batch",
+    "",
+    ...report.queueHealth.nextBatchUrls.map((url, index) => `${index + 1}. ${url}`),
+    "",
+    `After submitting this batch in GSC, run: ${report.queueHealth.nextBatchMarkCommand ?? "none"}`,
     "",
     "## First Remaining URLs",
     "",

@@ -1,6 +1,6 @@
 # GSC Submission Progress
 
-Generated at: 2026-06-18T21:47:12.700Z
+Generated at: 2026-06-18T23:03:20.398Z
 
 ## Guardrails
 
@@ -20,6 +20,7 @@ Generated at: 2026-06-18T21:47:12.700Z
 - Today queue URLs: 400
 - Confirmed GSC submitted: 0
 - GSC remaining: 500
+- Next batch size: 15
 - Next URL: https://ai-jiedan-lab.vercel.app/en
 - IndexNow ready: true
 - IndexNow submitted: true
@@ -30,6 +31,26 @@ Generated at: 2026-06-18T21:47:12.700Z
 
 - Types: {"static":1,"cluster":6,"q":256,"blog":237}
 - Clusters: {"us-entry":1,"ai-tools":196,"codex":117,"github":23,"node-js-errors":29,"upwork":89,"vercel":45}
+
+## Next Manual Batch
+
+1. https://ai-jiedan-lab.vercel.app/en
+2. https://ai-jiedan-lab.vercel.app/cluster/ai-tools
+3. https://ai-jiedan-lab.vercel.app/cluster/codex
+4. https://ai-jiedan-lab.vercel.app/cluster/github
+5. https://ai-jiedan-lab.vercel.app/cluster/node-js-errors
+6. https://ai-jiedan-lab.vercel.app/cluster/upwork
+7. https://ai-jiedan-lab.vercel.app/cluster/vercel
+8. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-observability-logging-guide
+9. https://ai-jiedan-lab.vercel.app/q/vercel/agent-production-deployment-checklist
+10. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-calling-beginner-guide
+11. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide
+12. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-prompt-library-team-knowledge-base-guide
+13. https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-api-rate-limit-debug-guide
+14. https://ai-jiedan-lab.vercel.app/q/codex/codex-bugfix-rollback-record
+15. https://ai-jiedan-lab.vercel.app/q/codex/codex-npm-install-errors
+
+After submitting this batch in GSC, run: npm run search-console:mark-submitted -- --add=15
 
 ## First Remaining URLs
 
