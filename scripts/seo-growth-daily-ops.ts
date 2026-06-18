@@ -45,7 +45,7 @@ type ProblemLane = {
 const priorityJson = path.join(process.cwd(), "content", "automation", "gsc-indexing-priority.json");
 const outputJson = path.join(process.cwd(), "content", "automation", "seo-growth-daily-ops.json");
 const outputMarkdown = path.join(process.cwd(), "docs", "seo-growth-daily-ops.md");
-const dailyBatchSize = 10;
+const dailyBatchSize = 20;
 
 const laneSeeds = [
   {
@@ -102,7 +102,7 @@ function main() {
       submitSitemapFirst: true,
       manualUrlInspectionLimit: dailyBatchSize,
       todayBatch,
-      operatingRule: "Submit sitemap.xml first in GSC. Then use URL Inspection for 5-15 URLs from todayBatch. Do not request indexing for hundreds of URLs in one day.",
+      operatingRule: "Submit sitemap.xml first in GSC. Then use URL Inspection for about 15-30 URLs from todayBatch if GSC allows it. Do not request indexing for hundreds of URLs in one day.",
     },
     contentDailyActions: {
       targetFormat: "problem-entry page",

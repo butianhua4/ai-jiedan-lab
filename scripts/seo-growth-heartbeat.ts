@@ -249,7 +249,7 @@ function getNextActions(
   if (!probes.indexNowKey.ok) actions.push("Fix IndexNow key route before submitting Bing batches.");
   if (growth.orphanPages > 0 || growth.weakPages > 0) actions.push("Run internal link repair before scaling more pages.");
   actions.push("In GSC, resubmit /sitemap.xml when a deployment changes q, cluster, or sitemap structure.");
-  actions.push("Manually request indexing for 5-15 priority URLs from docs/gsc-indexing-priority.md; do not submit all 500 pages.");
+  actions.push("Manually request indexing for 15-30 priority URLs from docs/gsc-indexing-priority.md when GSC allows it; do not submit all 500 pages.");
   actions.push("Prioritize exact problem-entry pages: Codex errors, Vercel failures, GitHub Actions failures, Agent deployment, RAG memory, API key and rate limits.");
   if (severity === "green") actions.push("Keep the current growth phase running; wait for Search Console to move discovered q/cluster pages into indexed pages.");
   return actions;

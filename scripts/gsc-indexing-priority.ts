@@ -34,10 +34,10 @@ function main() {
   const graphSummary = getSeoGraphSummary();
   const growth = getSeoGrowthReport(graph);
   const clusters = buildClusterItems();
-  const qPages = buildQuestionItems(30);
-  const blogPages = buildBlogItems(qPages, 15);
+  const qPages = buildQuestionItems(72);
+  const blogPages = buildBlogItems(qPages, 30);
   const allItems = [...clusters, ...qPages, ...blogPages].sort((a, b) => b.score - a.score || a.path.localeCompare(b.path));
-  const firstManualBatch = allItems.slice(0, 15);
+  const firstManualBatch = allItems.slice(0, 30);
   const payload = {
     generatedAt: new Date().toISOString(),
     guardrails: {
@@ -59,9 +59,9 @@ function main() {
       graphEdges: graphSummary.edgeCount,
     },
     recommendedManualBatchSize: {
-      firstDay: 15,
-      dailyAfterFirstDay: 10,
-      note: "Avoid manually requesting hundreds of URLs. Submit hubs first, then q pages, then matching blog pages.",
+      firstDay: 30,
+      dailyAfterFirstDay: 20,
+      note: "Accelerated mode: submit hubs first, then q pages, then matching blog pages. Avoid requesting all 500 URLs in one day.",
     },
     firstManualBatch,
     sections: {
@@ -231,7 +231,7 @@ function toMarkdown(payload: {
     "",
     "## First Manual Batch",
     "",
-    `Submit these ${firstDay.length} URLs first. Then wait 24-48 hours before the next small batch.`,
+    `Submit these ${firstDay.length} URLs first. Then continue with the next 20 high-priority URLs per day if GSC allows it.`,
     "",
     ...firstDay.map((item, index) => `${index + 1}. ${item.url} - ${item.reason}`),
     "",
