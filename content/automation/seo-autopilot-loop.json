@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-18T20:28:27.899Z",
-  "startedAt": "2026-06-18T20:28:03.417Z",
-  "endedAt": "2026-06-18T20:28:27.899Z",
+  "generatedAt": "2026-06-18T20:46:18.936Z",
+  "startedAt": "2026-06-18T20:46:00.928Z",
+  "endedAt": "2026-06-18T20:46:18.936Z",
   "guardrails": {
     "autoPublish": false,
     "autoGenerateMassContent": false,
@@ -11,10 +11,10 @@
   },
   "status": {
     "ok": true,
-    "severity": "green",
+    "severity": "yellow",
     "criticalFailures": 0,
     "advisoryFailures": 0,
-    "healthScore": 100,
+    "healthScore": 80,
     "growthStage": "warming",
     "canContinueScaling": true
   },
@@ -67,7 +67,13 @@
     "measuredSources": 0,
     "searchConsoleVerificationEvidence": false
   },
-  "problems": [],
+  "problems": [
+    {
+      "severity": "yellow",
+      "area": "vercel",
+      "message": "Latest Vercel deployment is still pending."
+    }
+  ],
   "priorityLanes": [
     {
       "name": "GSC manual indexing queue",
@@ -547,16 +553,16 @@
     "Do not report traffic, clicks, rankings, or revenue until Analytics/GSC data is imported or manually evidenced.",
     "GSC manual indexing queue: Continue manual URL Inspection requests from the priority queue, then update the local confirmed count so progress stays auditable.",
     "Internal-link opportunity queue: Apply suggested public links to candidates before publishing and keep every new page above the internal-link floor.",
+    "Check the Vercel deployment URL if it stays pending for more than 20 minutes.",
     "In GSC, resubmit /sitemap.xml when a deployment changes q, cluster, or sitemap structure.",
     "Manually request indexing for 15-30 priority URLs from docs/gsc-indexing-priority.md when GSC allows it; do not submit all 500 pages.",
     "Prioritize exact problem-entry pages: Codex errors, Vercel failures, GitHub Actions failures, Agent deployment, RAG memory, API key and rate limits.",
-    "Keep the current growth phase running; wait for Search Console to move discovered q/cluster pages into indexed pages.",
     "After GSC impressions appear, rewrite only the pages with evidence: title, meta description, first answer block, FAQ, and related q links."
   ],
   "tasks": [
     {
       "critical": true,
-      "durationMs": 1649,
+      "durationMs": 1557,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -565,7 +571,7 @@
     },
     {
       "critical": true,
-      "durationMs": 550,
+      "durationMs": 560,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -574,7 +580,7 @@
     },
     {
       "critical": false,
-      "durationMs": 2011,
+      "durationMs": 1361,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -583,7 +589,7 @@
     },
     {
       "critical": true,
-      "durationMs": 485,
+      "durationMs": 482,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -592,7 +598,7 @@
     },
     {
       "critical": true,
-      "durationMs": 479,
+      "durationMs": 474,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -601,7 +607,7 @@
     },
     {
       "critical": false,
-      "durationMs": 2075,
+      "durationMs": 1636,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -619,7 +625,7 @@
     },
     {
       "critical": true,
-      "durationMs": 1879,
+      "durationMs": 1794,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -628,7 +634,7 @@
     },
     {
       "critical": true,
-      "durationMs": 888,
+      "durationMs": 855,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -637,7 +643,7 @@
     },
     {
       "critical": true,
-      "durationMs": 609,
+      "durationMs": 597,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -646,7 +652,7 @@
     },
     {
       "critical": true,
-      "durationMs": 605,
+      "durationMs": 609,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -655,7 +661,7 @@
     },
     {
       "critical": true,
-      "durationMs": 604,
+      "durationMs": 593,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -664,11 +670,11 @@
     },
     {
       "critical": false,
-      "durationMs": 11956,
+      "durationMs": 6798,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
-      "stdoutTail": "> ai-tools-guide@0.1.0 seo:heartbeat\n> tsx scripts/seo-growth-heartbeat.ts\n\n{\n  \"ok\": true,\n  \"severity\": \"green\",\n  \"healthScore\": 100,\n  \"growthStage\": \"warming\",\n  \"qPages\": 500,\n  \"blogPages\": 500,\n  \"clusterPages\": 6,\n  \"orphanPages\": 0,\n  \"json\": \"content/automation/seo-growth-heartbeat.json\",\n  \"markdown\": \"docs/seo-growth-heartbeat.md\"\n}",
+      "stdoutTail": "> ai-tools-guide@0.1.0 seo:heartbeat\n> tsx scripts/seo-growth-heartbeat.ts\n\n{\n  \"ok\": true,\n  \"severity\": \"yellow\",\n  \"healthScore\": 80,\n  \"growthStage\": \"warming\",\n  \"qPages\": 500,\n  \"blogPages\": 500,\n  \"clusterPages\": 6,\n  \"orphanPages\": 0,\n  \"json\": \"content/automation/seo-growth-heartbeat.json\",\n  \"markdown\": \"docs/seo-growth-heartbeat.md\"\n}",
       "title": "Run SEO growth heartbeat"
     }
   ]

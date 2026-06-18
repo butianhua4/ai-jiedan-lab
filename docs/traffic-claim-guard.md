@@ -1,14 +1,14 @@
 # Traffic Claim Guard
-Generated at: 2026-06-18T20:28:11.319Z
+Generated at: 2026-06-18T20:46:07.650Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
 - Note: This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples.
 ## Summary
-- filesScanned: 235
+- filesScanned: 238
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 9643
+- watchMentions: 9662
 ## Unsafe Claims
 None.
 ## Watch Mentions

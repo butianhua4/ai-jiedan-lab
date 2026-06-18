@@ -1,11 +1,11 @@
 # SEO Growth Heartbeat
 
-Generated at: 2026-06-18T20:28:27.863Z
+Generated at: 2026-06-18T20:46:18.897Z
 
 ## Status
 
-- Severity: green
-- Health score: 100
+- Severity: yellow
+- Health score: 80
 - Growth stage: warming
 - Can continue scaling: true
 
@@ -45,18 +45,18 @@ Generated at: 2026-06-18T20:28:27.863Z
 ## Vercel
 
 - Repository: butianhua4/ai-jiedan-lab
-- SHA: bdc72e530a31999d23c1e031012c23f517dc5874
-- State: success
-- Description: Deployment has completed
-- Target: https://vercel.com/ip-studio-s-projects/ai-jiedan-lab/8QjGUb6aW6bPVjPhe4FSbL58CNhp
+- SHA: 9813b24d41ebf08c46d063acd8196a6472ab1d50
+- State: pending
+- Description: Vercel is deploying your app
+- Target: https://vercel.com/ip-studio-s-projects/ai-jiedan-lab/2txvPU5HBC5YDtmzBbaG5WnCqDiX
 
 ## Problems
 
-- None
+- [yellow] vercel: Latest Vercel deployment is still pending.
 
 ## Next Actions
 
-1. In GSC, resubmit /sitemap.xml when a deployment changes q, cluster, or sitemap structure.
-2. Manually request indexing for 15-30 priority URLs from docs/gsc-indexing-priority.md when GSC allows it; do not submit all 500 pages.
-3. Prioritize exact problem-entry pages: Codex errors, Vercel failures, GitHub Actions failures, Agent deployment, RAG memory, API key and rate limits.
-4. Keep the current growth phase running; wait for Search Console to move discovered q/cluster pages into indexed pages.
+1. Check the Vercel deployment URL if it stays pending for more than 20 minutes.
+2. In GSC, resubmit /sitemap.xml when a deployment changes q, cluster, or sitemap structure.
+3. Manually request indexing for 15-30 priority URLs from docs/gsc-indexing-priority.md when GSC allows it; do not submit all 500 pages.
+4. Prioritize exact problem-entry pages: Codex errors, Vercel failures, GitHub Actions failures, Agent deployment, RAG memory, API key and rate limits.

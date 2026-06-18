@@ -1,14 +1,14 @@
 # SEO Autopilot Loop
 
-Generated at: 2026-06-18T20:28:27.899Z
+Generated at: 2026-06-18T20:46:18.936Z
 
 ## Status
 
 - ok: true
-- severity: green
+- severity: yellow
 - criticalFailures: 0
 - advisoryFailures: 0
-- healthScore: 100
+- healthScore: 80
 - growthStage: warming
 - canContinueScaling: true
 
@@ -62,7 +62,7 @@ Generated at: 2026-06-18T20:28:27.899Z
 
 ## Problems
 
-- None
+- [yellow] vercel: Latest Vercel deployment is still pending.
 
 ## Priority Lanes
 
@@ -79,26 +79,26 @@ Generated at: 2026-06-18T20:28:27.899Z
 3. Do not report traffic, clicks, rankings, or revenue until Analytics/GSC data is imported or manually evidenced.
 4. GSC manual indexing queue: Continue manual URL Inspection requests from the priority queue, then update the local confirmed count so progress stays auditable.
 5. Internal-link opportunity queue: Apply suggested public links to candidates before publishing and keep every new page above the internal-link floor.
-6. In GSC, resubmit /sitemap.xml when a deployment changes q, cluster, or sitemap structure.
-7. Manually request indexing for 15-30 priority URLs from docs/gsc-indexing-priority.md when GSC allows it; do not submit all 500 pages.
-8. Prioritize exact problem-entry pages: Codex errors, Vercel failures, GitHub Actions failures, Agent deployment, RAG memory, API key and rate limits.
-9. Keep the current growth phase running; wait for Search Console to move discovered q/cluster pages into indexed pages.
+6. Check the Vercel deployment URL if it stays pending for more than 20 minutes.
+7. In GSC, resubmit /sitemap.xml when a deployment changes q, cluster, or sitemap structure.
+8. Manually request indexing for 15-30 priority URLs from docs/gsc-indexing-priority.md when GSC allows it; do not submit all 500 pages.
+9. Prioritize exact problem-entry pages: Codex errors, Vercel failures, GitHub Actions failures, Agent deployment, RAG memory, API key and rate limits.
 10. After GSC impressions appear, rewrite only the pages with evidence: title, meta description, first answer block, FAQ, and related q links.
 
 ## Task Results
 
 | Task | Critical | Status | Exit | Duration |
 | --- | --- | --- | --- | --- |
-| Refresh GSC indexing priority | true | PASS | 0 | 1649ms |
-| Refresh SEO growth daily ops | true | PASS | 0 | 550ms |
-| Refresh IndexNow readiness | false | PASS | 0 | 2011ms |
-| Refresh GSC submission progress | true | PASS | 0 | 485ms |
-| Refresh SEO improvement priority | true | PASS | 0 | 479ms |
-| Run traffic evidence audit | false | PASS | 0 | 2075ms |
+| Refresh GSC indexing priority | true | PASS | 0 | 1557ms |
+| Refresh SEO growth daily ops | true | PASS | 0 | 560ms |
+| Refresh IndexNow readiness | false | PASS | 0 | 1361ms |
+| Refresh GSC submission progress | true | PASS | 0 | 482ms |
+| Refresh SEO improvement priority | true | PASS | 0 | 474ms |
+| Run traffic evidence audit | false | PASS | 0 | 1636ms |
 | Run traffic claim guard | true | PASS | 0 | 691ms |
-| Run searchability check | true | PASS | 0 | 1879ms |
-| Run SEO safety check | true | PASS | 0 | 888ms |
-| Run content integrity audit | true | PASS | 0 | 609ms |
-| Run search snippet readiness audit | true | PASS | 0 | 605ms |
-| Run structured data readiness audit | true | PASS | 0 | 604ms |
-| Run SEO growth heartbeat | false | PASS | 0 | 11956ms |
+| Run searchability check | true | PASS | 0 | 1794ms |
+| Run SEO safety check | true | PASS | 0 | 855ms |
+| Run content integrity audit | true | PASS | 0 | 597ms |
+| Run search snippet readiness audit | true | PASS | 0 | 609ms |
+| Run structured data readiness audit | true | PASS | 0 | 593ms |
+| Run SEO growth heartbeat | false | PASS | 0 | 6798ms |
