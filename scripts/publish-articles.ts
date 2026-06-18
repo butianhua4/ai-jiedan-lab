@@ -6,24 +6,34 @@ import { checkFile } from "./quality-core";
 async function main() {
   const args = parseArgs();
   const confirm = Boolean(args.confirm);
+  const quiet = Boolean(args.quiet);
+  const statusFilter = args.status ? String(args.status) : "";
   let files = args.file ? [String(args.file)] : await articleFiles();
   if (args.batch) {
     files = files.filter((file) => readArticle(file).data.publishBatch === Number(args.batch));
+  }
+  if (statusFilter) {
+    files = files.filter((file) => readArticle(file).data.status === statusFilter);
   }
   const limit = Math.min(Number(args.limit || 1), 5);
   const logPath = path.join(process.cwd(), "content", "publish-log.json");
   const log = fs.existsSync(logPath) ? JSON.parse(fs.readFileSync(logPath, "utf8")) : [];
   let candidates = 0;
   let published = 0;
+  let scanned = 0;
+  let skipped = 0;
+  const firstSkips: Array<{ file: string; score: number; status: string; reasons: string[] }> = [];
 
   for (const file of files) {
     if (candidates >= limit) break;
+    scanned += 1;
 
     const article = readArticle(file);
     const result = checkFile(file);
+    const articleStatus = String(article.data.status || "");
     const reasons: string[] = [];
 
-    if (article.data.status !== "review") reasons.push(`status is ${article.data.status}, expected review`);
+    if (articleStatus !== "review") reasons.push(`status is ${articleStatus || "missing"}, expected review`);
     if (result.qualityScore < 80) reasons.push(`qualityScore ${result.qualityScore} below 80`);
     if (result.failedItems.length) reasons.push(`failedItems: ${result.failedItems.join("; ")}`);
     if (article.data.noindex !== true) reasons.push("review candidate must still be noindex=true before publishing");
@@ -31,12 +41,20 @@ async function main() {
     const ok = reasons.length === 0;
 
     if (!ok) {
-      console.log(JSON.stringify({ file: result.file, candidate: false, score: result.qualityScore, status: article.data.status, reasons }, null, 2));
+      skipped += 1;
+      if (firstSkips.length < 10) {
+        firstSkips.push({ file: result.file, score: result.qualityScore, status: articleStatus, reasons });
+      }
+      if (!quiet) {
+        console.log(JSON.stringify({ file: result.file, candidate: false, score: result.qualityScore, status: articleStatus, reasons }, null, 2));
+      }
       continue;
     }
 
     candidates += 1;
-    console.log(JSON.stringify({ file: result.file, candidate: true, dryRun: !confirm, ok, score: result.qualityScore, status: article.data.status }, null, 2));
+    if (!quiet) {
+      console.log(JSON.stringify({ file: result.file, candidate: true, dryRun: !confirm, ok, score: result.qualityScore, status: articleStatus }, null, 2));
+    }
 
     if (!confirm) continue;
 
@@ -49,7 +67,7 @@ async function main() {
     published += 1;
   }
   fs.writeFileSync(logPath, `${JSON.stringify(log, null, 2)}\n`, "utf8");
-  console.log(JSON.stringify({ dryRun: !confirm, candidates, published }, null, 2));
+  console.log(JSON.stringify({ dryRun: !confirm, scanned, skipped, candidates, published, statusFilter: statusFilter || "all", firstSkips }, null, 2));
 }
 
 void main();
