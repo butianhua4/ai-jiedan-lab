@@ -53,7 +53,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           description: post.description,
           datePublished: post.date,
           dateModified: post.updatedAt,
-          author: { "@type": "Organization", name: post.author },
+          author: { "@type": "Organization", name: post.author || site.author },
+          publisher: { "@type": "Organization", name: site.englishName },
+          mainEntityOfPage: `${site.url}/blog/${post.slug}`,
         }}
       />
 
@@ -62,7 +64,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           <div className="rounded-lg border border-gray-200 bg-gradient-to-b from-sky-50 to-white p-6 shadow-sm md:p-8">
             <div className="flex flex-wrap items-center gap-2 text-sm text-gray-600">
               <Link className="font-medium text-brand" href="/blog">
-                新手教程
+                Tutorials
               </Link>
               <span>/</span>
               <Link className="font-medium text-brand" href={`/category/${slugify(post.category)}`}>
@@ -79,7 +81,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               ))}
             </div>
             <p className="mt-4 text-sm text-gray-500">
-              发布：{post.date} · 更新：{post.updatedAt}
+              Published: {post.date} / Updated: {post.updatedAt}
             </p>
           </div>
 
@@ -93,12 +95,12 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           <SeoInternalLinks post={post} />
 
           <div className="mt-10">
-            <ToolCTA title="读完这篇后可以直接使用工具" />
+            <ToolCTA title="Use a practical tool after reading this guide" />
           </div>
 
           {related.length ? (
             <section className="mt-10 rounded-lg border border-gray-200 bg-white p-5 shadow-sm">
-              <h2 className="text-xl font-semibold text-ink">相关文章</h2>
+              <h2 className="text-xl font-semibold text-ink">Related articles</h2>
               <div className="mt-4 space-y-3">
                 {related.map((item) => (
                   <Link key={item.slug} className="block rounded-md border border-gray-200 p-3 text-sm transition hover:border-brand/50" href={`/blog/${item.slug}`}>
@@ -116,7 +118,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
         <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
           <section className="rounded-lg border border-gray-200 bg-white p-5 shadow-sm">
-            <h2 className="text-base font-semibold text-ink">文章目录</h2>
+            <h2 className="text-base font-semibold text-ink">Article outline</h2>
             <div className="mt-3 space-y-2 text-sm">
               {headings.slice(0, 10).map((heading) => (
                 <a key={heading} className="block leading-6 text-gray-600 hover:text-brand" href={`#${slugify(heading)}`}>
@@ -126,16 +128,16 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             </div>
           </section>
           <section className="rounded-lg border border-blue-100 bg-blue-50 p-5">
-            <h2 className="text-base font-semibold text-ink">先用工具练一下</h2>
+            <h2 className="text-base font-semibold text-ink">Try a tool first</h2>
             <div className="mt-3 grid gap-2 text-sm">
               <Link className="rounded-md bg-brand px-3 py-2 text-center font-medium text-white" href="/tools/proposal-generator">
-                Proposal 生成器
+                Proposal generator
               </Link>
               <Link className="rounded-md border border-gray-200 bg-white px-3 py-2 text-center font-medium text-ink" href="/tools/pricing-calculator">
-                报价助手
+                Pricing helper
               </Link>
               <Link className="rounded-md border border-gray-200 bg-white px-3 py-2 text-center font-medium text-ink" href="/templates">
-                模板下载
+                Templates
               </Link>
             </div>
           </section>

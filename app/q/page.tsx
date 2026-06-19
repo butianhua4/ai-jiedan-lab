@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { JsonLd } from "@/components/JsonLd";
+import { site } from "@/data/site";
 import {
   getBlogPath,
   getClusterPath,
@@ -9,13 +11,17 @@ import {
   seoClusters,
 } from "@/lib/seo-graph";
 
+const pageTitle = "AI problem entry pages: Codex, deployment, Agent, RAG, prompts, and automation";
+const pageDescription =
+  "Browse high-intent AI troubleshooting questions covering Codex, Upwork, Vercel, GitHub, Node.js errors, AI tools, Agent, RAG, prompts, and office automation.";
+
 export const metadata: Metadata = {
-  title: "AI 问题入口：Codex、部署、Agent、RAG、提示词和办公自动化",
-  description: "按主题整理 AI 工具指南的高频问题入口，覆盖 Codex、Upwork、Vercel、GitHub、Node.js 报错、AI 工具、Agent、RAG、提示词和办公自动化。",
+  title: pageTitle,
+  description: pageDescription,
   alternates: { canonical: "/q" },
   openGraph: {
-    title: "AI 问题入口",
-    description: "从具体问题进入教程和工具，比直接翻文章更快。",
+    title: "AI problem entry pages",
+    description: "Start from a concrete AI problem, then move into the matching tutorial, cluster hub, and tool.",
     url: "/q",
   },
 };
@@ -31,21 +37,56 @@ export default function QuestionsIndexPage() {
 
   return (
     <main className="mx-auto w-full max-w-6xl overflow-hidden px-4 py-12">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": `${site.url}/q#page`,
+              url: `${site.url}/q`,
+              name: "AI problem entry pages",
+              description: pageDescription,
+              isPartOf: { "@type": "WebSite", name: site.englishName, url: site.url },
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": `${site.url}/q#breadcrumb`,
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: site.url },
+                { "@type": "ListItem", position: 2, name: "Questions", item: `${site.url}/q` },
+              ],
+            },
+            {
+              "@type": "ItemList",
+              "@id": `${site.url}/q#clusters`,
+              itemListElement: clusterCards.map(({ cluster }, index) => ({
+                "@type": "ListItem",
+                position: index + 1,
+                name: `${cluster.shortTitle} questions`,
+                url: `${site.url}/q/${cluster.slug}`,
+              })),
+            },
+          ],
+        }}
+      />
+
       <section className="rounded-lg border border-gray-200 bg-gradient-to-b from-sky-50 to-white p-6 shadow-sm md:p-8">
-        <p className="text-sm font-medium text-brand">Question Layer / SEO 入口层</p>
-        <h1 className="mt-2 break-words text-3xl font-bold text-ink md:text-5xl">AI 问题入口：先解决具体问题，再进入深度教程</h1>
+        <p className="text-sm font-medium text-brand">Question Layer / SEO entry layer</p>
+        <h1 className="mt-2 break-words text-3xl font-bold text-ink md:text-5xl">AI problem entry pages for real troubleshooting searches</h1>
         <p className="mt-4 max-w-3xl text-base leading-8 text-gray-700">
-          这里把站内高频问题按主题集中展示，方便用户和搜索引擎从“怎么做、为什么失败、如何配置、用什么工具”这类具体问题进入。
+          This layer groups high-intent AI questions by topic so readers and search engines can start from concrete
+          tasks like fixing an error, deploying an agent, configuring RAG memory, or choosing the right automation tool.
         </p>
         <div className="mt-6 grid gap-3 sm:grid-cols-3">
           <Link className="rounded-md bg-brand px-4 py-3 text-center text-sm font-semibold text-white" href="/tools">
-            先看工具
+            View tools
           </Link>
           <Link className="rounded-md border border-gray-300 bg-white px-4 py-3 text-center text-sm font-semibold text-ink" href="/blog">
-            进入教程库
+            View tutorials
           </Link>
           <Link className="rounded-md border border-gray-300 bg-white px-4 py-3 text-center text-sm font-semibold text-ink" href="/templates">
-            下载模板
+            Download templates
           </Link>
         </div>
       </section>
@@ -53,11 +94,13 @@ export default function QuestionsIndexPage() {
       <section className="mt-8">
         <div className="flex flex-col justify-between gap-3 md:flex-row md:items-end">
           <div>
-            <h2 className="text-2xl font-bold text-ink">按主题进入问题</h2>
-            <p className="mt-2 max-w-3xl text-sm leading-6 text-gray-600">每个主题页都会继续链接到 q 页面、cluster 中心页和深度文章，形成可抓取的闭环。</p>
+            <h2 className="text-2xl font-bold text-ink">Browse questions by topic</h2>
+            <p className="mt-2 max-w-3xl text-sm leading-6 text-gray-600">
+              Each topic connects q pages, cluster hubs, and deep tutorials into a crawlable internal link loop.
+            </p>
           </div>
           <Link className="text-sm font-medium text-brand hover:underline" href="/sitemap-q.xml">
-            查看 q sitemap
+            View q sitemap
           </Link>
         </div>
         <div className="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -66,10 +109,10 @@ export default function QuestionsIndexPage() {
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <h3 className="text-lg font-semibold text-ink">{cluster.shortTitle}</h3>
-                  <p className="mt-1 text-sm text-gray-500">{count} 个问题入口</p>
+                  <p className="mt-1 text-sm text-gray-500">{count} question entrances</p>
                 </div>
                 <Link className="shrink-0 text-sm font-medium text-brand hover:underline" href={`/q/${cluster.slug}`}>
-                  进入
+                  Open
                 </Link>
               </div>
               <p className="mt-3 line-clamp-3 text-sm leading-6 text-gray-600">{cluster.description}</p>
@@ -81,7 +124,7 @@ export default function QuestionsIndexPage() {
                 ))}
               </div>
               <Link className="mt-4 inline-flex text-sm font-medium text-brand hover:underline" href={getClusterPath(cluster.slug)}>
-                查看主题中心
+                View cluster hub
               </Link>
             </article>
           ))}
@@ -90,8 +133,11 @@ export default function QuestionsIndexPage() {
 
       <section className="mt-10 grid gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
         <div className="rounded-lg border border-gray-200 bg-white p-5 shadow-sm">
-          <h2 className="text-2xl font-bold text-ink">优先抓取问题</h2>
-          <p className="mt-2 text-sm leading-6 text-gray-600">这些问题由真实文章字段排序，优先覆盖报错、部署、Agent、提示词、办公自动化和项目交付。</p>
+          <h2 className="text-2xl font-bold text-ink">Priority crawl questions</h2>
+          <p className="mt-2 text-sm leading-6 text-gray-600">
+            These questions are ranked from real published articles and prioritize errors, deployment, agents,
+            prompts, office automation, and delivery workflows.
+          </p>
           <div className="mt-5 grid gap-3 md:grid-cols-2">
             {priorityQuestions.map((post) => (
               <Link className="rounded-lg border border-gray-100 bg-gray-50 p-4 text-sm font-medium leading-6 text-ink transition hover:border-brand/50 hover:bg-white" href={getQuestionPath(post)} key={post.slug}>
@@ -102,8 +148,11 @@ export default function QuestionsIndexPage() {
         </div>
 
         <aside className="rounded-lg border border-gray-200 bg-white p-5 shadow-sm">
-          <h2 className="text-xl font-bold text-ink">深度教程回流</h2>
-          <p className="mt-2 text-sm leading-6 text-gray-600">q 页面负责承接搜索意图，深度文章负责完整解释和风险边界。</p>
+          <h2 className="text-xl font-bold text-ink">Deep tutorial loop</h2>
+          <p className="mt-2 text-sm leading-6 text-gray-600">
+            Q pages capture the search intent. Deep tutorials carry the full explanation, checklist, and risk
+            boundaries.
+          </p>
           <div className="mt-4 grid gap-3">
             {priorityQuestions.slice(0, 10).map((post) => (
               <Link className="rounded-md border border-gray-100 p-3 transition hover:border-brand/50" href={getBlogPath(post)} key={post.slug}>

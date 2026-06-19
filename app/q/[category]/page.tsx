@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { JsonLd } from "@/components/JsonLd";
 import { site } from "@/data/site";
 import {
   getBlogPath,
@@ -47,9 +48,44 @@ export default async function QuestionCategoryPage({ params }: { params: Promise
   const priorityPosts = getHighPotentialQuestionPosts(160).filter((post) => getQuestionPath(post).startsWith(`/q/${cluster.slug}/`));
   const remainingPosts = allPosts.filter((post) => !priorityPosts.some((item) => item.slug === post.slug)).sort((a, b) => a.slug.localeCompare(b.slug));
   const posts = [...priorityPosts, ...remainingPosts];
+  const pageUrl = `${site.url}/q/${cluster.slug}`;
 
   return (
     <main className="mx-auto w-full max-w-6xl overflow-hidden px-4 py-12">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": `${pageUrl}#page`,
+              url: pageUrl,
+              name: `${cluster.shortTitle} troubleshooting questions`,
+              description: cluster.description,
+              isPartOf: { "@type": "WebSite", name: site.englishName, url: site.url },
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": `${pageUrl}#breadcrumb`,
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: site.url },
+                { "@type": "ListItem", position: 2, name: "Questions", item: `${site.url}/q` },
+                { "@type": "ListItem", position: 3, name: `${cluster.shortTitle} questions`, item: pageUrl },
+              ],
+            },
+            {
+              "@type": "ItemList",
+              "@id": `${pageUrl}#questions`,
+              itemListElement: posts.slice(0, 120).map((post, index) => ({
+                "@type": "ListItem",
+                position: index + 1,
+                name: post.title,
+                url: `${site.url}${getQuestionPath(post)}`,
+              })),
+            },
+          ],
+        }}
+      />
       <section className="rounded-lg border border-gray-200 bg-gradient-to-b from-sky-50 to-white p-6 shadow-sm md:p-8">
         <div className="flex flex-wrap items-center gap-2 text-sm text-gray-600">
           <Link className="font-medium text-brand" href="/q">

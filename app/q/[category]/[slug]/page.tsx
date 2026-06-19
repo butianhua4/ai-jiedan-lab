@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { JsonLd } from "@/components/JsonLd";
 import { site } from "@/data/site";
 import { getBlogPath, getClusterForPost, getClusterPath, getPublishedSeoPosts, getQuestionPath, getRelatedQuestions } from "@/lib/seo-graph";
 
@@ -42,9 +43,58 @@ export default async function QuestionPage({ params }: { params: Promise<{ categ
   const relatedQuestions = getRelatedQuestions(post, 8);
   const code = extractFirstCodeFence(post.content);
   const steps = extractSteps(post.content);
+  const pageUrl = `${site.url}${getQuestionPath(post)}`;
+  const clusterUrl = `${site.url}${getClusterPath(cluster.slug)}`;
+  const blogUrl = `${site.url}${getBlogPath(post)}`;
 
   return (
     <main className="mx-auto w-full max-w-5xl overflow-hidden px-4 py-12">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "FAQPage",
+              "@id": `${pageUrl}#faq`,
+              url: pageUrl,
+              name: post.title,
+              description: post.description,
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: post.title,
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: `Treat this as a ${cluster.shortTitle} ${post.contentType} issue. Confirm the environment, inputs, permissions, logs, and delivery boundary, then use the linked deep guide for the full checklist.`,
+                    url: blogUrl,
+                  },
+                },
+              ],
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": `${pageUrl}#breadcrumb`,
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: site.url },
+                { "@type": "ListItem", position: 2, name: "Questions", item: `${site.url}/q` },
+                { "@type": "ListItem", position: 3, name: `${cluster.shortTitle} questions`, item: `${site.url}/q/${cluster.slug}` },
+                { "@type": "ListItem", position: 4, name: post.title, item: pageUrl },
+              ],
+            },
+            {
+              "@type": "WebPage",
+              "@id": `${pageUrl}#webpage`,
+              url: pageUrl,
+              name: post.title,
+              description: post.description,
+              isPartOf: { "@type": "WebSite", name: site.englishName, url: site.url },
+              about: { "@type": "Thing", name: cluster.shortTitle, url: clusterUrl },
+              primaryImageOfPage: undefined,
+              relatedLink: [blogUrl, clusterUrl, ...relatedQuestions.slice(0, 5).map((question) => `${site.url}${question.path}`)],
+            },
+          ],
+        }}
+      />
       <section className="rounded-lg border border-gray-200 bg-gradient-to-b from-sky-50 to-white p-6 shadow-sm md:p-8">
         <div className="flex flex-wrap items-center gap-2 text-sm text-gray-600">
           <Link className="font-medium text-brand" href={getClusterPath(cluster.slug)}>
