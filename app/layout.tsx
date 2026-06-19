@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { site } from "@/data/site";
 
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
-const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_ID || process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID;
+const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_ID || process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-BG3NQRLR64";
 const clarityProjectId = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID || "x9c2phrvfy";
 
 export const metadata: Metadata = {
