@@ -43,6 +43,20 @@ jobs:
           fi
           exit 0
 
+      - name: Wait for production sitemap refresh
+        shell: bash
+        run: |
+          for attempt in {1..30}; do
+            body="$(curl -fsSL --max-time 20 "https://ai.aporet.com/sitemap.xml?deploy_wait=${GITHUB_SHA}-${attempt}" || true)"
+            if echo "$body" | grep -q "https://ai.aporet.com/sitemap-q.xml" && ! echo "$body" | grep -q "ai-jiedan-lab.vercel.app"; then
+              echo "Production sitemap is refreshed for ai.aporet.com."
+              exit 0
+            fi
+            echo "Production sitemap has not refreshed yet; waiting 30s ($attempt/30)."
+            sleep 30
+          done
+          echo "::warning::Production sitemap did not refresh before live checks. Continuing so the live report captures the real current state."
+
       - name: Check live search surfaces
         shell: bash
         run: |
