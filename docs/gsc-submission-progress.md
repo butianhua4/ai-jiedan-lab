@@ -1,6 +1,6 @@
 # GSC Submission Progress
 
-Generated at: 2026-06-19T01:49:22.778Z
+Generated at: 2026-06-19T02:08:05.301Z
 
 ## Guardrails
 
@@ -17,7 +17,7 @@ Generated at: 2026-06-19T01:49:22.778Z
 - Weak pages: 0
 - Top queue target: 500
 - Top queue URLs: 500
-- Today queue URLs: 400
+- Today queue URLs: 500
 - Confirmed GSC submitted: 0
 - GSC remaining: 500
 - Next batch size: 15

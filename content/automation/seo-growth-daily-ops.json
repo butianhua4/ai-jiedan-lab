@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T01:49:20.122Z",
+  "generatedAt": "2026-06-19T02:08:03.262Z",
   "guardrails": {
     "fakeTrafficClaims": false,
     "manualGscOnly": true,
@@ -11,12 +11,913 @@
     "manualUrlInspectionLimit": 50,
     "topQueueTarget": 500,
     "launchDate": "2026-06-18",
+    "confirmedSubmittedCount": 0,
     "dayIndex": 1,
     "queueSize": 1007,
-    "batchStart": 101,
+    "batchStart": 1,
     "batchEnd": 500,
     "wrapsQueue": false,
     "todayBatch": [
+      {
+        "cluster": "us-entry",
+        "path": "/en",
+        "reason": "US search entry page with English metadata and links into q, cluster, blog, and tool pages.",
+        "score": 120,
+        "title": "AI Tools Guide for Deployment, Agents, RAG, and Automation",
+        "type": "static",
+        "url": "https://ai-jiedan-lab.vercel.app/en"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/cluster/ai-tools",
+        "reason": "Topic hub; submit first because it links to q pages and deep blog pages.",
+        "score": 100,
+        "title": "AI tools",
+        "type": "cluster",
+        "url": "https://ai-jiedan-lab.vercel.app/cluster/ai-tools"
+      },
+      {
+        "cluster": "codex",
+        "path": "/cluster/codex",
+        "reason": "Topic hub; submit first because it links to q pages and deep blog pages.",
+        "score": 100,
+        "title": "Codex",
+        "type": "cluster",
+        "url": "https://ai-jiedan-lab.vercel.app/cluster/codex"
+      },
+      {
+        "cluster": "github",
+        "path": "/cluster/github",
+        "reason": "Topic hub; submit first because it links to q pages and deep blog pages.",
+        "score": 100,
+        "title": "GitHub",
+        "type": "cluster",
+        "url": "https://ai-jiedan-lab.vercel.app/cluster/github"
+      },
+      {
+        "cluster": "node-js-errors",
+        "path": "/cluster/node-js-errors",
+        "reason": "Topic hub; submit first because it links to q pages and deep blog pages.",
+        "score": 100,
+        "title": "Node.js errors",
+        "type": "cluster",
+        "url": "https://ai-jiedan-lab.vercel.app/cluster/node-js-errors"
+      },
+      {
+        "cluster": "upwork",
+        "path": "/cluster/upwork",
+        "reason": "Topic hub; submit first because it links to q pages and deep blog pages.",
+        "score": 100,
+        "title": "Upwork",
+        "type": "cluster",
+        "url": "https://ai-jiedan-lab.vercel.app/cluster/upwork"
+      },
+      {
+        "cluster": "vercel",
+        "path": "/cluster/vercel",
+        "reason": "Topic hub; submit first because it links to q pages and deep blog pages.",
+        "score": 100,
+        "title": "Vercel",
+        "type": "cluster",
+        "url": "https://ai-jiedan-lab.vercel.app/cluster/vercel"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/agent-observability-logging-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Early batch candidate with cross-cluster coverage. Matches common search-intent terms.",
+        "score": 90,
+        "title": "Agent 可观测性怎么做：日志、轨迹、成本和失败复盘",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-observability-logging-guide"
+      },
+      {
+        "cluster": "vercel",
+        "path": "/q/vercel/agent-production-deployment-checklist",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Early batch candidate with cross-cluster coverage. Matches common search-intent terms.",
+        "score": 89,
+        "title": "Agent 生产上线检查表：权限、日志、成本和人工确认",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/vercel/agent-production-deployment-checklist"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/agent-tool-calling-beginner-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Early batch candidate with cross-cluster coverage. Matches common search-intent terms.",
+        "score": 88,
+        "title": "Agent 工具调用怎么设计：读、写、执行要分清",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-calling-beginner-guide"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/agent-tool-permission-safety-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Early batch candidate with cross-cluster coverage. Matches common search-intent terms.",
+        "score": 87,
+        "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/ai-prompt-library-team-knowledge-base-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Early batch candidate with cross-cluster coverage. Matches common search-intent terms.",
+        "score": 86,
+        "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-prompt-library-team-knowledge-base-guide"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/claude-api-rate-limit-debug-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Early batch candidate with cross-cluster coverage.",
+        "score": 85,
+        "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-api-rate-limit-debug-guide"
+      },
+      {
+        "cluster": "codex",
+        "path": "/q/codex/codex-bugfix-rollback-record",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 84,
+        "title": "Codex 修 bug 时如何保留回滚记录",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/codex/codex-bugfix-rollback-record"
+      },
+      {
+        "cluster": "codex",
+        "path": "/q/codex/codex-npm-install-errors",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 83,
+        "title": "用 Codex 排查 npm install 报错",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/codex/codex-npm-install-errors"
+      },
+      {
+        "cluster": "codex",
+        "path": "/q/codex/codex-vercel-deployment",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 82,
+        "title": "用 Codex 检查 Vercel 部署问题",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/codex/codex-vercel-deployment"
+      },
+      {
+        "cluster": "codex",
+        "path": "/q/codex/codex-windows-install-failed",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 81,
+        "title": "Windows 上 Codex 安装失败怎么排查",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/codex/codex-windows-install-failed"
+      },
+      {
+        "cluster": "node-js-errors",
+        "path": "/q/node-js-errors/dependency-conflict-fix",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 80,
+        "title": "dependency conflict 依赖冲突怎么处理",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/node-js-errors/dependency-conflict-fix"
+      },
+      {
+        "cluster": "vercel",
+        "path": "/q/vercel/dev-works-build-fails",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 79,
+        "title": "npm run dev 能跑但 build 失败怎么办",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/vercel/dev-works-build-fails"
+      },
+      {
+        "cluster": "node-js-errors",
+        "path": "/q/node-js-errors/dify-workflow-error-handling-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 78,
+        "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/node-js-errors/dify-workflow-error-handling-guide"
+      },
+      {
+        "cluster": "vercel",
+        "path": "/q/vercel/env-variable-missing-fix",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 77,
+        "title": "环境变量 missing 怎么排查",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/vercel/env-variable-missing-fix"
+      },
+      {
+        "cluster": "node-js-errors",
+        "path": "/q/node-js-errors/eslint-error-should-not-disable",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 76,
+        "title": "ESLint error 要不要直接关闭",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/node-js-errors/eslint-error-should-not-disable"
+      },
+      {
+        "cluster": "github",
+        "path": "/q/github/failed-to-push-some-refs-fix",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 75,
+        "title": "failed to push some refs 怎么排查",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/github/failed-to-push-some-refs-fix"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/gemini-api-nextjs-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 74,
+        "title": "Gemini API 怎么接 Next.js：从 API Key 到服务端 Route Handler",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/gemini-api-nextjs-guide"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/gemini-api-rate-limit-debug-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 73,
+        "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/gemini-api-rate-limit-debug-guide"
+      },
+      {
+        "cluster": "github",
+        "path": "/q/github/git-authentication-failed-fix",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 72,
+        "title": "git authentication failed 怎么解决",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/github/git-authentication-failed-fix"
+      },
+      {
+        "cluster": "github",
+        "path": "/q/github/github-actions-build-log-debug",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 71,
+        "title": "GitHub Actions build 失败怎么看日志",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/github/github-actions-build-log-debug"
+      },
+      {
+        "cluster": "codex",
+        "path": "/blog/chatgpt-codex-claude-workflow",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 70,
+        "title": "ChatGPT Codex Claude 工作流怎么分工：AI 工具实践流程",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/chatgpt-codex-claude-workflow"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/helicone-llm-observability-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 70,
+        "title": "Helicone LLM Observability 怎么做：Gateway、日志、成本和限流",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/helicone-llm-observability-guide"
+      },
+      {
+        "cluster": "codex",
+        "path": "/blog/ai-coding-tools-risk-check",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 69,
+        "title": "AI 编程工具使用前要检查哪些风险",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/ai-coding-tools-risk-check"
+      },
+      {
+        "cluster": "vercel",
+        "path": "/q/vercel/llm-api-integration-deployment-checklist",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 69,
+        "title": "大模型 API 接入部署清单：上线前要检查什么",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/vercel/llm-api-integration-deployment-checklist"
+      },
+      {
+        "cluster": "codex",
+        "path": "/blog/build-first-webpage-with-codex",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 68,
+        "title": "Codex 怎么做第一个网页",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/build-first-webpage-with-codex"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/llm-api-rate-limit-retry-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 68,
+        "title": "大模型 API 限流和重试怎么做：429、队列、退避和降级方案",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/llm-api-rate-limit-retry-guide"
+      },
+      {
+        "cluster": "codex",
+        "path": "/blog/claude-code-vs-codex-web-editing",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 67,
+        "title": "Claude Code 和 Codex 哪个适合网页修改",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/claude-code-vs-codex-web-editing"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/llm-cost-monitoring-dashboard-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 67,
+        "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/llm-cost-monitoring-dashboard-guide"
+      },
+      {
+        "cluster": "codex",
+        "path": "/blog/codex-automation-steps-not-skip",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 66,
+        "title": "Codex 自动化开发流程哪些步骤不能省",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/codex-automation-steps-not-skip"
+      },
+      {
+        "cluster": "node-js-errors",
+        "path": "/q/node-js-errors/module-not-found-debug",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 66,
+        "title": "module not found 报错怎么定位文件",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/node-js-errors/module-not-found-debug"
+      },
+      {
+        "cluster": "upwork",
+        "path": "/blog/notion-freelance-workflow",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 65,
+        "title": "Notion 管理项目流程怎么用",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/notion-freelance-workflow"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/n8n-ai-agent-webhook-production-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 65,
+        "title": "n8n AI Agent 接 Webhook 怎么上线：触发、鉴权、队列和失败重试",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/n8n-ai-agent-webhook-production-guide"
+      },
+      {
+        "cluster": "upwork",
+        "path": "/blog/payoneer-freelancer-beginner",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 64,
+        "title": "Payoneer 适合新手自由职业收款吗",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/payoneer-freelancer-beginner"
+      },
+      {
+        "cluster": "node-js-errors",
+        "path": "/q/node-js-errors/nextjs-hydration-error-debug",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 64,
+        "title": "Next.js hydration error 怎么排查",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/node-js-errors/nextjs-hydration-error-debug"
+      },
+      {
+        "cluster": "upwork",
+        "path": "/blog/paypal-freelancer-limits",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 63,
+        "title": "PayPal 收款有哪些常见限制",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/paypal-freelancer-limits"
+      },
+      {
+        "cluster": "node-js-errors",
+        "path": "/q/node-js-errors/node-version-mismatch-fix",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 63,
+        "title": "Node 版本不匹配怎么排查",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/node-js-errors/node-version-mismatch-fix"
+      },
+      {
+        "cluster": "upwork",
+        "path": "/blog/ai-automation-project-pricing-scope-guide",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 62,
+        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/ai-automation-project-pricing-scope-guide"
+      },
+      {
+        "cluster": "node-js-errors",
+        "path": "/q/node-js-errors/npm-command-not-found-fix",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 62,
+        "title": "npm command not found 怎么解决",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/node-js-errors/npm-command-not-found-fix"
+      },
+      {
+        "cluster": "upwork",
+        "path": "/blog/ai-freelance-30-day-execution",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 61,
+        "title": "新手 30 天 AI 工具实践计划怎么执行",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/ai-freelance-30-day-execution"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/openai-api-nextjs-route-handler-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 61,
+        "title": "OpenAI API 接入 Next.js 怎么做：Route Handler 新手清单",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/openai-api-nextjs-route-handler-guide"
+      },
+      {
+        "cluster": "vercel",
+        "path": "/blog/cloudflare-vs-namecheap-domain",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 60,
+        "title": "Cloudflare 和 Namecheap 域名怎么选",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/cloudflare-vs-namecheap-domain"
+      },
+      {
+        "cluster": "github",
+        "path": "/q/github/package-lock-conflict-fix",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 60,
+        "title": "package lock 冲突怎么安全处理",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/github/package-lock-conflict-fix"
+      },
+      {
+        "cluster": "vercel",
+        "path": "/blog/agent-deployment-beginner-guide",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 59,
+        "title": "Agent 部署怎么做：从聊天助手到可上线工作流",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/agent-deployment-beginner-guide"
+      },
+      {
+        "cluster": "node-js-errors",
+        "path": "/q/node-js-errors/port-already-in-use-fix",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 59,
+        "title": "port already in use 怎么释放端口",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/node-js-errors/port-already-in-use-fix"
+      },
+      {
+        "cluster": "vercel",
+        "path": "/blog/agent-production-deployment-checklist",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 58,
+        "title": "Agent 生产上线检查表：权限、日志、成本和人工确认",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/agent-production-deployment-checklist"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/rag-retrieval-no-context-debug-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 58,
+        "title": "RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/rag-retrieval-no-context-debug-guide"
+      },
+      {
+        "cluster": "vercel",
+        "path": "/blog/ai-agent-deployment-vercel-ai-sdk-guide",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 57,
+        "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/ai-agent-deployment-vercel-ai-sdk-guide"
+      },
+      {
+        "cluster": "vercel",
+        "path": "/q/vercel/replicate-api-ai-demo-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 57,
+        "title": "Replicate API 教程：做 AI Demo 的模型调用、部署和费用边界",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/vercel/replicate-api-ai-demo-guide"
+      },
+      {
+        "cluster": "vercel",
+        "path": "/blog/bentoml-llm-deployment-beginner-guide",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 56,
+        "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/bentoml-llm-deployment-beginner-guide"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/ai-assisted-vs-automated-delivery",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 56,
+        "title": "AI 辅助交付和完全自动交付有什么区别",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-assisted-vs-automated-delivery"
+      },
+      {
+        "cluster": "github",
+        "path": "/blog/claude-code-common-commands",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 55,
+        "title": "Claude Code 新手常用命令怎么整理成项目笔记",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/claude-code-common-commands"
+      },
+      {
+        "cluster": "upwork",
+        "path": "/q/upwork/ai-freelance-failure-review",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 55,
+        "title": "AI 项目失败复盘怎么做",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/upwork/ai-freelance-failure-review"
+      },
+      {
+        "cluster": "github",
+        "path": "/blog/claude-code-github-file-scope",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 54,
+        "title": "客户给 GitHub 文件时用 Claude Code 怎么限定范围",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/claude-code-github-file-scope"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/ai-small-project-practice-topics",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 54,
+        "title": "AI 小项目练习选什么：新手从低风险任务开始",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-small-project-practice-topics"
+      },
+      {
+        "cluster": "github",
+        "path": "/blog/claude-code-install-prerequisites",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 53,
+        "title": "安装 Claude Code 前新手要先确认哪些条件",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/claude-code-install-prerequisites"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/api-key-invalid-or-missing",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 53,
+        "title": "API Key 无效或缺失怎么处理",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/api-key-invalid-or-missing"
+      },
+      {
+        "cluster": "github",
+        "path": "/blog/failed-to-push-some-refs-fix",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 52,
+        "title": "failed to push some refs 怎么排查",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/failed-to-push-some-refs-fix"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/claude-code-beginner-mistakes",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 52,
+        "title": "Claude Code 新手最容易犯的错误",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-code-beginner-mistakes"
+      },
+      {
+        "cluster": "github",
+        "path": "/blog/git-authentication-failed-fix",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 51,
+        "title": "git authentication failed 怎么解决",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/git-authentication-failed-fix"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/claude-code-beginner-use-cases",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 51,
+        "title": "Claude Code 新手适合用在哪些项目场景",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-code-beginner-use-cases"
+      },
+      {
+        "cluster": "node-js-errors",
+        "path": "/blog/nextjs-hydration-error-debug",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 50,
+        "title": "Next.js hydration error 怎么排查",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/nextjs-hydration-error-debug"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/claude-code-bug-prompt",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 50,
+        "title": "Claude Code 修 bug 的 prompt 怎么写",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-code-bug-prompt"
+      },
+      {
+        "cluster": "node-js-errors",
+        "path": "/blog/ai-website-builder-beginner-guide",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 49,
+        "title": "AI 做网站怎么开始：新手从页面需求到上线检查",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/ai-website-builder-beginner-guide"
+      },
+      {
+        "cluster": "node-js-errors",
+        "path": "/q/node-js-errors/claude-code-error-debug",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 49,
+        "title": "Claude Code 错误排查怎么做：客户报错处理更稳",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/node-js-errors/claude-code-error-debug"
+      },
+      {
+        "cluster": "node-js-errors",
+        "path": "/blog/claude-code-error-debug",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 48,
+        "title": "Claude Code 错误排查怎么做：客户报错处理更稳",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/claude-code-error-debug"
+      },
+      {
+        "cluster": "upwork",
+        "path": "/q/upwork/claude-code-low-risk-freelance-jobs",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 48,
+        "title": "Claude Code 低风险项目有哪些：新手适合先接的小单",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/upwork/claude-code-low-risk-freelance-jobs"
+      },
+      {
+        "cluster": "node-js-errors",
+        "path": "/blog/dependency-conflict-fix",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 47,
+        "title": "dependency conflict 依赖冲突怎么处理",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/dependency-conflict-fix"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/claude-code-small-project-tasks",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 47,
+        "title": "哪些小项目任务适合用 Claude Code 辅助项目",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-code-small-project-tasks"
+      },
+      {
+        "cluster": "node-js-errors",
+        "path": "/blog/dify-coze-flowise-agent-builder-comparison",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 46,
+        "title": "Dify、Coze、Flowise 怎么选：做 Agent 和知识库前先看边界",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/dify-coze-flowise-agent-builder-comparison"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/permission-denied-fix",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 46,
+        "title": "permission denied 报错新手怎么处理",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/permission-denied-fix"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/blog/paddle-vs-stripe-beginner",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 45,
+        "title": "Paddle 和 Stripe 有什么区别",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/paddle-vs-stripe-beginner"
+      },
+      {
+        "cluster": "vercel",
+        "path": "/q/vercel/cloudflare-vs-namecheap-domain",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 45,
+        "title": "Cloudflare 和 Namecheap 域名怎么选",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/vercel/cloudflare-vs-namecheap-domain"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/blog/payoneer-wise-paypal-choose",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 44,
+        "title": "Payoneer Wise PayPal 怎么选择",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/payoneer-wise-paypal-choose"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/ai-agent-memory-rag-design-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 44,
+        "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-agent-memory-rag-design-guide"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/blog/paypal-vs-payoneer-beginner",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 43,
+        "title": "PayPal 和 Payoneer 哪个适合新手",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/paypal-vs-payoneer-beginner"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/ai-api-key-security-rotation-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 43,
+        "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-api-key-security-rotation-guide"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/blog/ads-income-when-to-start",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 42,
+        "title": "广告收入要等到什么时候再接",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/ads-income-when-to-start"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/ai-prompt-framework-business-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 42,
+        "title": "AI 提示词怎么写才好用：全行业都能套的 5 段式框架",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-prompt-framework-business-guide"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/blog/affiliate-vs-service-income",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 41,
+        "title": "联盟链接收入和服务收入有什么区别",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/affiliate-vs-service-income"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/ai-tools-recommendation-beginner",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 41,
+        "title": "AI 工具推荐怎么选：新手别一开始买太多",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-tools-recommendation-beginner"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/blog/agent-observability-logging-guide",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 40,
+        "title": "Agent 可观测性怎么做：日志、轨迹、成本和失败复盘",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/agent-observability-logging-guide"
+      },
+      {
+        "cluster": "node-js-errors",
+        "path": "/q/node-js-errors/ai-website-builder-beginner-guide",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 40,
+        "title": "AI 做网站怎么开始：新手从页面需求到上线检查",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/node-js-errors/ai-website-builder-beginner-guide"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/blog/agent-tool-calling-beginner-guide",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 39,
+        "title": "Agent 工具调用怎么设计：读、写、执行要分清",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/agent-tool-calling-beginner-guide"
+      },
+      {
+        "cluster": "codex",
+        "path": "/q/codex/codex-css-spacing-responsive",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 39,
+        "title": "Codex 修 CSS 间距和响应式问题怎么做",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/codex/codex-css-spacing-responsive"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/blog/agent-tool-permission-safety-guide",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 38,
+        "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/agent-tool-permission-safety-guide"
+      },
+      {
+        "cluster": "codex",
+        "path": "/q/codex/codex-project-start-checklist",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 38,
+        "title": "Codex 项目启动检查表怎么用",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/codex/codex-project-start-checklist"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/blog/ai-prompt-library-team-knowledge-base-guide",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 37,
+        "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/ai-prompt-library-team-knowledge-base-guide"
+      },
+      {
+        "cluster": "codex",
+        "path": "/q/codex/codex-vs-claude-code-beginner",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 37,
+        "title": "Codex 和 Claude Code 新手怎么选",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/codex/codex-vs-claude-code-beginner"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/blog/claude-api-rate-limit-debug-guide",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 36,
+        "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/claude-api-rate-limit-debug-guide"
+      },
+      {
+        "cluster": "codex",
+        "path": "/q/codex/codex-vs-cursor-web-editing",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score. Matches common search-intent terms.",
+        "score": 36,
+        "title": "Codex 和 Cursor 改网页怎么选",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/codex/codex-vs-cursor-web-editing"
+      },
+      {
+        "cluster": "codex",
+        "path": "/blog/codex-bugfix-rollback-record",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 35,
+        "title": "Codex 修 bug 时如何保留回滚记录",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/codex-bugfix-rollback-record"
+      },
+      {
+        "cluster": "ai-tools",
+        "path": "/q/ai-tools/coze-bot-publish-checklist",
+        "reason": "High-potential q entry based on local title, intent, tags, and quality score.",
+        "score": 35,
+        "title": "Coze Bot 发布前检查什么：新手别只看能不能聊天",
+        "type": "q",
+        "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/coze-bot-publish-checklist"
+      },
+      {
+        "cluster": "codex",
+        "path": "/blog/codex-npm-install-errors",
+        "reason": "Deep article paired with high-priority q page; submit after the q page is discoverable.",
+        "score": 34,
+        "title": "用 Codex 排查 npm install 报错",
+        "type": "blog",
+        "url": "https://ai-jiedan-lab.vercel.app/blog/codex-npm-install-errors"
+      },
       {
         "cluster": "codex",
         "path": "/q/codex/cursor-vs-codex-web-editing",

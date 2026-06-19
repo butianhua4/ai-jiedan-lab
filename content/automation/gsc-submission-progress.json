@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T01:49:22.778Z",
+  "generatedAt": "2026-06-19T02:08:05.301Z",
   "guardrails": {
     "gscManualOnly": true,
     "noFakeIndexingClaims": true,
@@ -13,7 +13,7 @@
     "weakPages": 0,
     "topQueueTarget": 500,
     "topQueueUrls": 500,
-    "todayQueueUrls": 400,
+    "todayQueueUrls": 500,
     "confirmedGscSubmitted": 0,
     "gscRemaining": 500,
     "nextBatchSize": 15,

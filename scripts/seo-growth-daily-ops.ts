@@ -42,7 +42,15 @@ type ProblemLane = {
   reason: string;
 };
 
+type ManualProgress = {
+  confirmedSubmittedCount: number;
+  lastSubmittedAt: string | null;
+  lastSubmittedUrl: string | null;
+  notes: string[];
+};
+
 const priorityJson = path.join(process.cwd(), "content", "automation", "gsc-indexing-priority.json");
+const manualProgressJson = path.join(process.cwd(), "content", "automation", "gsc-manual-progress.json");
 const outputJson = path.join(process.cwd(), "content", "automation", "seo-growth-daily-ops.json");
 const outputMarkdown = path.join(process.cwd(), "docs", "seo-growth-daily-ops.md");
 const outputText = path.join(process.cwd(), "docs", "gsc-url-inspection-today.txt");
@@ -50,7 +58,6 @@ const outputTop100Text = path.join(process.cwd(), "docs", "gsc-url-inspection-to
 const outputTop500Text = path.join(process.cwd(), "docs", "gsc-url-inspection-top-500.txt");
 const dailyBatchSize = 50;
 const topQueueTarget = 500;
-const alreadyPreparedTarget = 100;
 const launchDate = "2026-06-18";
 const pinnedInspectionItems: PriorityItem[] = [
   {
@@ -105,8 +112,9 @@ const laneSeeds = [
 
 function main() {
   const priority = readPriority();
+  const manualProgress = readManualProgress();
   const queue = getInspectionQueue(priority.allItems);
-  const batchPlan = getTodayBatchPlan(queue, priority.recommendedManualBatchSize.firstDay);
+  const batchPlan = getTodayBatchPlan(queue, priority.recommendedManualBatchSize.firstDay, manualProgress.confirmedSubmittedCount);
   const topQueue = queue.slice(0, Math.min(topQueueTarget, queue.length));
   const top100Queue = queue.slice(0, Math.min(100, queue.length));
   const problemLanes = buildProblemLanes(priority.allItems);
@@ -123,6 +131,7 @@ function main() {
       manualUrlInspectionLimit: dailyBatchSize,
       topQueueTarget,
       launchDate,
+      confirmedSubmittedCount: manualProgress.confirmedSubmittedCount,
       dayIndex: batchPlan.dayIndex,
       queueSize: queue.length,
       batchStart: batchPlan.start + 1,
@@ -180,6 +189,25 @@ function readPriority(): PriorityPayload {
   return JSON.parse(fs.readFileSync(priorityJson, "utf8")) as PriorityPayload;
 }
 
+function readManualProgress(): ManualProgress {
+  if (!fs.existsSync(manualProgressJson)) {
+    return {
+      confirmedSubmittedCount: 0,
+      lastSubmittedAt: null,
+      lastSubmittedUrl: null,
+      notes: [],
+    };
+  }
+
+  const parsed = JSON.parse(fs.readFileSync(manualProgressJson, "utf8")) as ManualProgress;
+  return {
+    confirmedSubmittedCount: Number.isFinite(parsed.confirmedSubmittedCount) ? parsed.confirmedSubmittedCount : 0,
+    lastSubmittedAt: parsed.lastSubmittedAt ?? null,
+    lastSubmittedUrl: parsed.lastSubmittedUrl ?? null,
+    notes: Array.isArray(parsed.notes) ? parsed.notes : [],
+  };
+}
+
 function getInspectionQueue(items: PriorityItem[]) {
   const eligible = items.filter((item) => item.type === "cluster" || item.type === "q" || item.type === "blog");
   const seen = new Set<string>();
@@ -190,21 +218,17 @@ function getInspectionQueue(items: PriorityItem[]) {
   });
 }
 
-function getTodayBatchPlan(queue: PriorityItem[], firstDaySize: number) {
+function getTodayBatchPlan(queue: PriorityItem[], firstDaySize: number, confirmedSubmittedCount: number) {
   if (queue.length <= dailyBatchSize) {
     return { dayIndex: 0, start: 0, todayBatch: queue, wrapsQueue: false };
   }
 
   const dayIndex = Math.max(0, daysSinceLaunch());
-  if (dayIndex === 0) {
-    return { dayIndex, start: 0, todayBatch: queue.slice(0, Math.min(firstDaySize, queue.length)), wrapsQueue: false };
-  }
-
-  const previousTarget = Math.min(topQueueTarget, alreadyPreparedTarget, firstDaySize);
-  const start = Math.min(previousTarget, queue.length);
+  const start = Math.min(Math.max(0, confirmedSubmittedCount), queue.length);
   const targetEnd = Math.min(topQueueTarget, queue.length);
   if (start < targetEnd) {
-    return { dayIndex, start, todayBatch: queue.slice(start, targetEnd), wrapsQueue: false };
+    const end = dayIndex === 0 ? Math.min(firstDaySize, targetEnd) : targetEnd;
+    return { dayIndex, start, todayBatch: queue.slice(start, Math.max(start, end)), wrapsQueue: false };
   }
 
   const laterStart = topQueueTarget + (dayIndex - 1) * dailyBatchSize;

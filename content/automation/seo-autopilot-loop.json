@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-19T01:49:49.967Z",
-  "startedAt": "2026-06-19T01:49:17.761Z",
-  "endedAt": "2026-06-19T01:49:49.967Z",
+  "generatedAt": "2026-06-19T02:08:24.662Z",
+  "startedAt": "2026-06-19T02:08:01.167Z",
+  "endedAt": "2026-06-19T02:08:24.662Z",
   "guardrails": {
     "autoPublish": false,
     "autoGenerateMassContent": false,
@@ -547,6 +547,7 @@
     "Do not report traffic, clicks, rankings, or revenue until Analytics/GSC data is imported or manually evidenced.",
     "GSC manual indexing queue: Continue manual URL Inspection requests from the priority queue, then update the local confirmed count so progress stays auditable.",
     "Internal-link opportunity queue: Apply suggested public links to candidates before publishing and keep every new page above the internal-link floor.",
+    "Monitor the Vercel deployment URL, but keep SEO work moving while live probes remain healthy.",
     "In GSC, resubmit /sitemap.xml when a deployment changes q, cluster, or sitemap structure.",
     "Manually request indexing for 15-30 priority URLs from docs/gsc-indexing-priority.md when GSC allows it; do not submit all 500 pages.",
     "Prioritize exact problem-entry pages: Codex errors, Vercel failures, GitHub Actions failures, Agent deployment, RAG memory, API key and rate limits.",
@@ -556,7 +557,7 @@
   "tasks": [
     {
       "critical": true,
-      "durationMs": 1805,
+      "durationMs": 1581,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -565,16 +566,16 @@
     },
     {
       "critical": true,
-      "durationMs": 601,
+      "durationMs": 553,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
-      "stdoutTail": "> ai-tools-guide@0.1.0 seo:growth-daily-ops\n> tsx scripts/seo-growth-daily-ops.ts\n\n{\n  \"ok\": true,\n  \"json\": \"content/automation/seo-growth-daily-ops.json\",\n  \"markdown\": \"docs/seo-growth-daily-ops.md\",\n  \"text\": \"docs/gsc-url-inspection-today.txt\",\n  \"top100Text\": \"docs/gsc-url-inspection-top-100.txt\",\n  \"top500Text\": \"docs/gsc-url-inspection-top-500.txt\",\n  \"todayBatch\": 400,\n  \"batchStart\": 101,\n  \"batchEnd\": 500,\n  \"wrapsQueue\": false,\n  \"dayIndex\": 1,\n  \"problemLanes\": 6,\n  \"growthStage\": \"warming\"\n}",
+      "stdoutTail": "> ai-tools-guide@0.1.0 seo:growth-daily-ops\n> tsx scripts/seo-growth-daily-ops.ts\n\n{\n  \"ok\": true,\n  \"json\": \"content/automation/seo-growth-daily-ops.json\",\n  \"markdown\": \"docs/seo-growth-daily-ops.md\",\n  \"text\": \"docs/gsc-url-inspection-today.txt\",\n  \"top100Text\": \"docs/gsc-url-inspection-top-100.txt\",\n  \"top500Text\": \"docs/gsc-url-inspection-top-500.txt\",\n  \"todayBatch\": 500,\n  \"batchStart\": 1,\n  \"batchEnd\": 500,\n  \"wrapsQueue\": false,\n  \"dayIndex\": 1,\n  \"problemLanes\": 6,\n  \"growthStage\": \"warming\"\n}",
       "title": "Refresh SEO growth daily ops"
     },
     {
       "critical": false,
-      "durationMs": 2118,
+      "durationMs": 1545,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -583,7 +584,7 @@
     },
     {
       "critical": true,
-      "durationMs": 528,
+      "durationMs": 488,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -592,7 +593,7 @@
     },
     {
       "critical": true,
-      "durationMs": 592,
+      "durationMs": 485,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -601,7 +602,7 @@
     },
     {
       "critical": false,
-      "durationMs": 2811,
+      "durationMs": 1482,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -610,7 +611,7 @@
     },
     {
       "critical": false,
-      "durationMs": 2762,
+      "durationMs": 2310,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -619,7 +620,7 @@
     },
     {
       "critical": true,
-      "durationMs": 858,
+      "durationMs": 677,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -628,7 +629,7 @@
     },
     {
       "critical": true,
-      "durationMs": 2050,
+      "durationMs": 1924,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -637,7 +638,7 @@
     },
     {
       "critical": true,
-      "durationMs": 867,
+      "durationMs": 891,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -646,7 +647,7 @@
     },
     {
       "critical": true,
-      "durationMs": 641,
+      "durationMs": 620,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -655,7 +656,7 @@
     },
     {
       "critical": true,
-      "durationMs": 622,
+      "durationMs": 615,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -664,7 +665,7 @@
     },
     {
       "critical": true,
-      "durationMs": 585,
+      "durationMs": 605,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
@@ -673,7 +674,7 @@
     },
     {
       "critical": false,
-      "durationMs": 15363,
+      "durationMs": 9718,
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
