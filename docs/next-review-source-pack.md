@@ -1,6 +1,6 @@
 # Next Review Source Pack
 
-Generated at: 2026-06-19T02:12:35.205Z
+Generated at: 2026-06-19T06:41:19.959Z
 
 This pack is read-only. It prepares official-source, fact-check, approval, and risk-review work for the roadmap's next review files.
 

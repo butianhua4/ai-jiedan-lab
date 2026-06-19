@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T02:12:55.366Z",
+  "generatedAt": "2026-06-19T06:41:39.902Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,23 +9,23 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "mojibakeRemediationGeneratedAt": "2026-06-18T11:37:01.629Z",
+    "mojibakeRemediationGeneratedAt": "2026-06-19T02:13:12.047Z",
     "mojibakeRemediationSummary": {
       "affectedDraftFiles": 26,
-      "affectedFiles": 77,
+      "affectedFiles": 78,
       "affectedMetadataFields": 4,
-      "affectedPublicFiles": 51,
+      "affectedPublicFiles": 52,
       "bodyExcerptHits": 72,
       "executiveTopAffected": 0,
       "filesScanned": 669,
       "immediateApprovalAffected": 0,
-      "metadataFieldHits": 85,
+      "metadataFieldHits": 86,
       "publishConfirmCommandsIncluded": 0,
       "scannedMetadataFields": 9,
       "trafficDataAvailable": false,
       "unsafeItems": 0
     },
-    "publicSearchRefreshGeneratedAt": "2026-06-19T02:12:54.866Z",
+    "publicSearchRefreshGeneratedAt": "2026-06-19T06:41:39.397Z",
     "publicSearchRefreshSummary": {
       "actionItems": 2723,
       "cannibalizationItems": 241,
@@ -33,7 +33,7 @@
       "items": 500,
       "itemsReadyForHumanRefreshReview": 500,
       "liveMissingFromSitemap": 0,
-      "measuredTrafficSources": 0,
+      "measuredTrafficSources": 1,
       "publicArticles": 500,
       "publishConfirmCommandsIncluded": 0,
       "publishedButNoindexed": 0,
@@ -45,14 +45,14 @@
     "trafficNote": "No measured traffic, ranking, impression, click, conversion, or revenue claim is made."
   },
   "summary": {
-    "actionItems": 5030,
+    "actionItems": 5032,
     "cannibalizationItems": 241,
-    "highPriorityItems": 59,
+    "highPriorityItems": 60,
     "items": 500,
     "itemsPerWave": 3,
     "itemsReadyForPublicRefreshSprint": 500,
     "liveMissingFromSitemap": 0,
-    "mojibakePublicItems": 51,
+    "mojibakePublicItems": 52,
     "publicArticles": 500,
     "publishConfirmCommandsIncluded": 0,
     "publishedButNoindexed": 0,
@@ -86,8 +86,8 @@
       "actionItems": 39,
       "files": [
         "content/blog/what-is-codex-beginner-start.mdx",
-        "content/blog/ai-small-project-practice-topics-checklist.mdx",
-        "content/blog/before-first-ai-freelance-job.mdx"
+        "content/blog/ai-beginner-project-fit-check.mdx",
+        "content/blog/ai-small-project-practice-topics-checklist.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
@@ -104,9 +104,9 @@
     {
       "actionItems": 39,
       "files": [
+        "content/blog/before-first-ai-freelance-job.mdx",
         "content/blog/canva-portfolio-cover-tips-checklist.mdx",
-        "content/blog/claude-code-beginner-mistakes-checklist.mdx",
-        "content/blog/claude-code-beginner-mistakes-mistakes.mdx"
+        "content/blog/claude-code-beginner-mistakes-checklist.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
@@ -122,9 +122,9 @@
     {
       "actionItems": 39,
       "files": [
+        "content/blog/claude-code-beginner-mistakes-mistakes.mdx",
         "content/blog/claude-code-beginner-use-cases-checklist.mdx",
-        "content/blog/claude-code-beginner-use-cases.mdx",
-        "content/blog/claude-code-bug-prompt-mistakes.mdx"
+        "content/blog/claude-code-beginner-use-cases.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
@@ -140,9 +140,9 @@
     {
       "actionItems": 39,
       "files": [
+        "content/blog/claude-code-bug-prompt-mistakes.mdx",
         "content/blog/claude-code-bug-prompt.mdx",
-        "content/blog/claude-code-common-commands-mistakes.mdx",
-        "content/blog/claude-code-common-commands.mdx"
+        "content/blog/claude-code-common-commands-mistakes.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
@@ -158,9 +158,9 @@
     {
       "actionItems": 39,
       "files": [
+        "content/blog/claude-code-common-commands.mdx",
         "content/blog/claude-code-error-debug-mistakes.mdx",
-        "content/blog/claude-code-github-file-scope-mistakes.mdx",
-        "content/blog/claude-code-small-project-tasks.mdx"
+        "content/blog/claude-code-github-file-scope-mistakes.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
@@ -176,9 +176,9 @@
     {
       "actionItems": 39,
       "files": [
+        "content/blog/claude-code-small-project-tasks.mdx",
         "content/blog/claude-code-vs-codex-web-editing-checklist.mdx",
-        "content/blog/codex-automation-steps-not-skip-mistakes.mdx",
-        "content/blog/codex-automation-steps-not-skip.mdx"
+        "content/blog/codex-automation-steps-not-skip-mistakes.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
@@ -194,9 +194,9 @@
     {
       "actionItems": 39,
       "files": [
+        "content/blog/codex-automation-steps-not-skip.mdx",
         "content/blog/codex-edit-existing-ui-mistakes.mdx",
-        "content/blog/codex-first-day-guide-checklist.mdx",
-        "content/blog/codex-install-prerequisites-checklist.mdx"
+        "content/blog/codex-first-day-guide-checklist.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
@@ -212,9 +212,9 @@
     {
       "actionItems": 39,
       "files": [
+        "content/blog/codex-install-prerequisites-checklist.mdx",
         "content/blog/codex-npm-install-errors-mistakes.mdx",
-        "content/blog/codex-npm-install-errors.mdx",
-        "content/blog/codex-upwork-job-risk-check-freelance-scope.mdx"
+        "content/blog/codex-npm-install-errors.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
@@ -230,9 +230,9 @@
     {
       "actionItems": 39,
       "files": [
+        "content/blog/codex-upwork-job-risk-check-freelance-scope.mdx",
         "content/blog/codex-upwork-job-risk-check.mdx",
-        "content/blog/daily-ai-freelance-practice-log.mdx",
-        "content/blog/module-not-found-debug-mistakes.mdx"
+        "content/blog/daily-ai-freelance-practice-log.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
@@ -248,9 +248,9 @@
     {
       "actionItems": 39,
       "files": [
+        "content/blog/module-not-found-debug-mistakes.mdx",
         "content/blog/node-version-mismatch-fix-mistakes.mdx",
-        "content/blog/permission-denied-fix-checklist.mdx",
-        "content/blog/permission-denied-fix-mistakes.mdx"
+        "content/blog/permission-denied-fix-checklist.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
@@ -264,11 +264,30 @@
       "wave": 11
     },
     {
+      "actionItems": 35,
+      "files": [
+        "content/blog/permission-denied-fix-mistakes.mdx",
+        "content/blog/codex-code-review-delivery-checklist.mdx",
+        "content/blog/codex-github-before-commit-checklist.mdx"
+      ],
+      "highPriorityItems": 3,
+      "items": 3,
+      "readyItems": 3,
+      "refreshReasons": [
+        "mojibake-public",
+        "short-description",
+        "cannibalization",
+        "freshness-high"
+      ],
+      "unsafeItems": 0,
+      "wave": 12
+    },
+    {
       "actionItems": 33,
       "files": [
-        "content/blog/codex-code-review-delivery-checklist.mdx",
-        "content/blog/codex-github-before-commit-checklist.mdx",
-        "content/blog/codex-upwork-small-job-risk-checklist.mdx"
+        "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+        "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+        "content/blog/codex-vs-claude-code-beginner-checklist.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
@@ -278,32 +297,14 @@
         "freshness-high"
       ],
       "unsafeItems": 0,
-      "wave": 12
-    },
-    {
-      "actionItems": 33,
-      "files": [
-        "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
-        "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
-        "content/blog/git-authentication-failed-fix-mistakes.mdx"
-      ],
-      "highPriorityItems": 3,
-      "items": 3,
-      "readyItems": 3,
-      "refreshReasons": [
-        "mojibake-public",
-        "freshness-high",
-        "cannibalization"
-      ],
-      "unsafeItems": 0,
       "wave": 13
     },
     {
       "actionItems": 33,
       "files": [
+        "content/blog/git-authentication-failed-fix-mistakes.mdx",
         "content/blog/git-authentication-failed-fix.mdx",
-        "content/blog/github-actions-build-log-debug-checklist.mdx",
-        "content/blog/node-version-mismatch-fix.mdx"
+        "content/blog/github-actions-build-log-debug-checklist.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
@@ -318,15 +319,16 @@
     {
       "actionItems": 33,
       "files": [
+        "content/blog/node-version-mismatch-fix.mdx",
         "content/blog/ai-ppt-beginner-guide.mdx",
-        "content/blog/ai-tools-recommendation-beginner.mdx",
-        "content/blog/codex-first-landing-page-freelance-scope.mdx"
+        "content/blog/ai-tools-recommendation-beginner.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
       "readyItems": 3,
       "refreshReasons": [
         "mojibake-public",
+        "cannibalization",
         "short-description"
       ],
       "unsafeItems": 0,
@@ -335,9 +337,9 @@
     {
       "actionItems": 33,
       "files": [
+        "content/blog/codex-first-landing-page-freelance-scope.mdx",
         "content/blog/dify-metadata-filtering-rag-guide.mdx",
-        "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
-        "content/blog/module-not-found-debug-freelance-scope.mdx"
+        "content/blog/llm-cost-monitoring-dashboard-guide.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
@@ -350,11 +352,11 @@
       "wave": 16
     },
     {
-      "actionItems": 31,
+      "actionItems": 33,
       "files": [
+        "content/blog/module-not-found-debug-freelance-scope.mdx",
         "content/blog/node-version-mismatch-fix-freelance-scope.mdx",
-        "content/blog/rag-prompt-injection-defense-guide.mdx",
-        "content/blog/ray-serve-llm-deployment-guide.mdx"
+        "content/blog/rag-prompt-injection-defense-guide.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
@@ -367,16 +369,17 @@
       "wave": 17
     },
     {
-      "actionItems": 33,
+      "actionItems": 31,
       "files": [
+        "content/blog/ray-serve-llm-deployment-guide.mdx",
         "content/blog/dev-works-build-fails-checklist.mdx",
-        "content/blog/dev-works-build-fails-mistakes.mdx",
-        "content/blog/dev-works-build-fails.mdx"
+        "content/blog/dev-works-build-fails-mistakes.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
       "readyItems": 3,
       "refreshReasons": [
+        "mojibake-public",
         "short-description",
         "cannibalization",
         "high-priority"
@@ -387,9 +390,9 @@
     {
       "actionItems": 33,
       "files": [
+        "content/blog/dev-works-build-fails.mdx",
         "content/blog/failed-to-push-some-refs-fix-checklist.mdx",
-        "content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx",
-        "content/blog/failed-to-push-some-refs-fix-mistakes.mdx"
+        "content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx"
       ],
       "highPriorityItems": 3,
       "items": 3,
@@ -405,51 +408,51 @@
     {
       "actionItems": 33,
       "files": [
+        "content/blog/failed-to-push-some-refs-fix-mistakes.mdx",
         "content/blog/nextjs-hydration-error-debug-checklist.mdx",
-        "content/blog/nextjs-hydration-error-debug-mistakes.mdx",
-        "content/blog/codex-npm-install-error-beginner-fix.mdx"
+        "content/blog/nextjs-hydration-error-debug-mistakes.mdx"
       ],
-      "highPriorityItems": 2,
+      "highPriorityItems": 3,
       "items": 3,
       "readyItems": 3,
       "refreshReasons": [
         "short-description",
         "cannibalization",
-        "high-priority",
-        "freshness-high"
+        "high-priority"
       ],
       "unsafeItems": 0,
       "wave": 20
     },
     {
-      "actionItems": 31,
+      "actionItems": 32,
       "files": [
+        "content/blog/codex-npm-install-error-beginner-fix.mdx",
         "content/blog/codex-generated-code-review-guide.mdx",
-        "content/blog/failed-to-push-some-refs-fix.mdx",
-        "content/blog/nextjs-hydration-error-debug.mdx"
+        "content/blog/failed-to-push-some-refs-fix.mdx"
       ],
       "highPriorityItems": 0,
       "items": 3,
       "readyItems": 3,
       "refreshReasons": [
-        "short-description",
+        "cannibalization",
         "freshness-high",
-        "cannibalization"
+        "short-description"
       ],
       "unsafeItems": 0,
       "wave": 21
     },
     {
-      "actionItems": 33,
+      "actionItems": 32,
       "files": [
+        "content/blog/nextjs-hydration-error-debug.mdx",
         "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
-        "content/blog/upwork-client-requirements-analysis-beginner.mdx",
-        "content/blog/upwork-proposal-no-reply-checklist.mdx"
+        "content/blog/upwork-client-requirements-analysis-beginner.mdx"
       ],
       "highPriorityItems": 0,
       "items": 3,
       "readyItems": 3,
       "refreshReasons": [
+        "cannibalization",
         "short-description",
         "freshness-high"
       ],
@@ -459,9 +462,9 @@
     {
       "actionItems": 33,
       "files": [
+        "content/blog/upwork-proposal-no-reply-checklist.mdx",
         "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
-        "content/blog/ads-income-when-to-start-checklist.mdx",
-        "content/blog/ads-income-when-to-start.mdx"
+        "content/blog/ads-income-when-to-start-checklist.mdx"
       ],
       "highPriorityItems": 0,
       "items": 3,
@@ -477,9 +480,9 @@
     {
       "actionItems": 33,
       "files": [
+        "content/blog/ads-income-when-to-start.mdx",
         "content/blog/affiliate-vs-service-income-checklist.mdx",
-        "content/blog/affiliate-vs-service-income.mdx",
-        "content/blog/ai-assisted-vs-automated-delivery-checklist.mdx"
+        "content/blog/affiliate-vs-service-income.mdx"
       ],
       "highPriorityItems": 0,
       "items": 3,
@@ -494,9 +497,9 @@
     {
       "actionItems": 33,
       "files": [
+        "content/blog/ai-assisted-vs-automated-delivery-checklist.mdx",
         "content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx",
-        "content/blog/ai-assisted-vs-automated-delivery.mdx",
-        "content/blog/ai-beginner-project-fit-check-checklist.mdx"
+        "content/blog/ai-assisted-vs-automated-delivery.mdx"
       ],
       "highPriorityItems": 0,
       "items": 3,
@@ -511,8 +514,8 @@
     {
       "actionItems": 33,
       "files": [
+        "content/blog/ai-beginner-project-fit-check-checklist.mdx",
         "content/blog/ai-beginner-project-fit-check-mistakes.mdx",
-        "content/blog/ai-beginner-project-fit-check.mdx",
         "content/blog/ai-freelance-30-day-execution-checklist.mdx"
       ],
       "highPriorityItems": 0,
@@ -2986,6 +2989,45 @@
     {
       "actionCount": 13,
       "category": "AI 自由职业路线",
+      "descriptionLength": 53,
+      "file": "content/blog/ai-beginner-project-fit-check.mdx",
+      "priorityScore": 205,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Cannibalization check: review similar slug stem conflict \"beginner-project-fit-check\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded.",
+        "Repair likely garbled public copy in description after comparing the intended topic and sources.",
+        "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
+        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+        "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "mojibake-public",
+        "short-description",
+        "cannibalization"
+      ],
+      "mojibakeSignal": {
+        "fields": [
+          "description"
+        ],
+        "sample": "AI 新手接项目前，先用需求清晰度、风险等级、验证能力和交付边界判断自己能不能接，避免盲目报价和交付失控。"
+      },
+      "slug": "ai-beginner-project-fit-check",
+      "sprintWave": 2,
+      "title": "AI 新手如何判断自己能不能接项目",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 13,
+      "category": "AI 自由职业路线",
       "descriptionLength": 52,
       "file": "content/blog/ai-small-project-practice-topics-checklist.mdx",
       "priorityScore": 205,
@@ -3057,7 +3099,7 @@
         "sample": "不要为了拿下第一单就接受所有要求。第一次项目最重要的是形成可复用流程，而不是冒险碰高权限任务。凡是涉及客户账号、密钥、付款、隐私数据和生产环境的需求，都应该先暂停确认。"
       },
       "slug": "before-first-ai-freelance-job",
-      "sprintWave": 2,
+      "sprintWave": 3,
       "title": "第一次接 AI 小单前要准备什么",
       "unsafeReasons": []
     },
@@ -3174,7 +3216,7 @@
         "sample": "如果检查失败，也要记录失败原因。失败不是坏事，它说明你还在验证，而不是盲目交付。客户看到清楚的失败记录和下一步建议，通常比看到一句含糊的“还在处理中”更容易理解。"
       },
       "slug": "claude-code-beginner-mistakes-mistakes",
-      "sprintWave": 3,
+      "sprintWave": 4,
       "title": "Claude Code 新手常见错误和修正方法",
       "unsafeReasons": []
     },
@@ -3292,7 +3334,7 @@
         "sample": "很多 Claude Code 修 bug 失败，不是工具完全没用，而是 prompt 从一开始就让它盲猜。新手常把“页面有问题”“代码报错了”“帮我修一下”扔给工具，却没有复现步骤、错误原文、预期结果和安全边界。结果工具只能大范围搜索和尝试，风险自然上升。"
       },
       "slug": "claude-code-bug-prompt-mistakes",
-      "sprintWave": 4,
+      "sprintWave": 5,
       "title": "Claude Code Bug Prompt 常见错误",
       "unsafeReasons": []
     },
@@ -3409,7 +3451,7 @@
         "sample": "不要在客户生产项目里盲跑会修改状态的命令。先问清环境，再确认是否有测试分支、测试数据和回滚方式。"
       },
       "slug": "claude-code-common-commands",
-      "sprintWave": 5,
+      "sprintWave": 6,
       "title": "Claude Code 新手常用命令怎么整理成项目笔记",
       "unsafeReasons": []
     },
@@ -3527,7 +3569,7 @@
         "sample": "Claude Code 适合帮助新手阅读代码、定位文件、整理修改方案和写交付说明，但它不等于能接所有项目。真正适合新手的，是范围小、权限低、能复现、能验证的小任务。先把任务选对，比盲目追求复杂项目更重要。"
       },
       "slug": "claude-code-small-project-tasks",
-      "sprintWave": 6,
+      "sprintWave": 7,
       "title": "哪些小项目任务适合用 Claude Code 辅助项目",
       "unsafeReasons": []
     },
@@ -3645,7 +3687,7 @@
         "sample": "1. 保存客户原始需求，确认目标、范围、验收标准和截止时间。 2. 看 `git status`，确认当前工作区是否干净，是否有你不理解的改动。 3. 限定修改范围，只让 Codex 处理和任务相关的文件。 4. 修改前先读相关文件和命令脚本，不要盲目执行。 5. 修改后看 diff，确认每一处变化都能解释。 6. 跑项目已有检查，例如 lint、build"
       },
       "slug": "codex-automation-steps-not-skip",
-      "sprintWave": 7,
+      "sprintWave": 8,
       "title": "Codex 自动化开发流程哪些步骤不能省",
       "unsafeReasons": []
     },
@@ -3762,7 +3804,7 @@
         "sample": "这个结论能帮助你避免盲目尝试。项目场景里，它也能变成客户沟通材料。"
       },
       "slug": "codex-install-prerequisites-checklist",
-      "sprintWave": 8,
+      "sprintWave": 9,
       "title": "Codex 安装前置条件检查清单",
       "unsafeReasons": []
     },
@@ -3880,7 +3922,7 @@
         "sample": "这类报告的价值在于降低盲目投递，而不是制造乐观情绪。你可以明确写“这个任务预算看起来高，但权限和范围都不清，建议先问，不建议直接承诺”。这种判断比套模板更有帮助。"
       },
       "slug": "codex-upwork-job-risk-check-freelance-scope",
-      "sprintWave": 9,
+      "sprintWave": 10,
       "title": "Upwork 筛单风险判断能不能接",
       "unsafeReasons": []
     },
@@ -3997,7 +4039,7 @@
         "sample": "如果发现客户仓库缺文件、缺子模块或缺私有包权限，把它写成客户待办。不要自己造一个假文件冒充修复。"
       },
       "slug": "module-not-found-debug-mistakes",
-      "sprintWave": 10,
+      "sprintWave": 11,
       "title": "module not found 常见错误和解决步骤",
       "unsafeReasons": []
     },
@@ -4115,7 +4157,7 @@
         "sample": "permission denied 报错不能靠盲目提权解决。新手要先判断被拒绝的是文件、目录、SSH、Git、部署平台还是客户授权，再按证据处理。"
       },
       "slug": "permission-denied-fix-mistakes",
-      "sprintWave": 11,
+      "sprintWave": 12,
       "title": "permission denied 报错新手怎么处理：常见错误和解决步骤",
       "unsafeReasons": []
     },
@@ -4223,7 +4265,7 @@
         "sample": "常见错误一，是把 AI 生成的 Proposal 原文直接发送。这样很容易出现你不会做却承诺会做的内容。常见错误二，是看到客户预算低就盲目压价，结果沟通、修改和部署花掉更多时间。常见错误三，是忽略平台规则，例如诱导站外付款、批量骚扰式发送、虚假案例，这些都可能伤害账号安全。常见错误四，是没有保存交付过程，最后客户问起修改内容时说不清楚。"
       },
       "slug": "codex-upwork-small-job-risk-checklist",
-      "sprintWave": 12,
+      "sprintWave": 13,
       "title": "Codex 接 Upwork 小单怎么判断：风险检查清单",
       "unsafeReasons": []
     },
@@ -4331,7 +4373,7 @@
         "sample": "也不适合在客户电脑上随意清理所有凭据的人。凭据管理器里可能保存着多个项目和平台账号，盲目删除会影响其他工作。"
       },
       "slug": "git-authentication-failed-fix-mistakes",
-      "sprintWave": 13,
+      "sprintWave": 14,
       "title": "git authentication failed 常见错误和解决步骤",
       "unsafeReasons": []
     },
@@ -4439,7 +4481,7 @@
         "sample": "也适合准备接小单的人。客户常说“项目跑不起来”，但真实原因可能只是本地 Node 版本和项目要求不一致。你需要先诊断，而不是盲目改代码。"
       },
       "slug": "node-version-mismatch-fix",
-      "sprintWave": 14,
+      "sprintWave": 15,
       "title": "Node 版本不匹配怎么排查",
       "unsafeReasons": []
     },
@@ -4548,7 +4590,7 @@
         "sample": "如果你已经能用 Codex 做一个练习落地页，下一步很容易冒出一个念头：这种项目是不是可以去 Upwork 或 Fiverr 项目？先给结论：可以研究，但不要急着投。落地页看起来简单，实际包含需求理解、文案边界、视觉还原、移动端适配、部署方式、客户验收和后续修改。"
       },
       "slug": "codex-first-landing-page-freelance-scope",
-      "sprintWave": 15,
+      "sprintWave": 16,
       "title": "Codex 怎么做第一个落地页：使用前怎么判断是否适合",
       "unsafeReasons": []
     },
@@ -4656,7 +4698,7 @@
         "sample": "这样写不会显得退缩，反而能让客户知道你在保护项目材料和访问权限。新手项目练习时，清楚边界比盲目承诺更可靠。"
       },
       "slug": "module-not-found-debug-freelance-scope",
-      "sprintWave": 16,
+      "sprintWave": 17,
       "title": "module not found 使用前怎么判断是否适合",
       "unsafeReasons": []
     },
@@ -4762,7 +4804,7 @@
         "sample": "扩容前先看瓶颈在哪里。盲目加 GPU 不一定解决提示词过长、批处理不合理或模型选择不当的问题。"
       },
       "slug": "ray-serve-llm-deployment-guide",
-      "sprintWave": 17,
+      "sprintWave": 18,
       "title": "Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门",
       "unsafeReasons": []
     },
@@ -4858,7 +4900,7 @@
       ],
       "mojibakeSignal": null,
       "slug": "dev-works-build-fails",
-      "sprintWave": 18,
+      "sprintWave": 19,
       "title": "npm run dev 能跑但 build 失败怎么办",
       "unsafeReasons": []
     },
@@ -4954,7 +4996,7 @@
       ],
       "mojibakeSignal": null,
       "slug": "failed-to-push-some-refs-fix-mistakes",
-      "sprintWave": 19,
+      "sprintWave": 20,
       "title": "failed to push some refs 常见错误和解决步骤",
       "unsafeReasons": []
     },
@@ -5049,7 +5091,7 @@
       ],
       "mojibakeSignal": null,
       "slug": "codex-npm-install-error-beginner-fix",
-      "sprintWave": 20,
+      "sprintWave": 21,
       "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
       "unsafeReasons": []
     },
@@ -5138,7 +5180,7 @@
       ],
       "mojibakeSignal": null,
       "slug": "nextjs-hydration-error-debug",
-      "sprintWave": 21,
+      "sprintWave": 22,
       "title": "Next.js hydration error 怎么排查",
       "unsafeReasons": []
     },
@@ -5231,7 +5273,7 @@
       ],
       "mojibakeSignal": null,
       "slug": "upwork-proposal-no-reply-checklist",
-      "sprintWave": 22,
+      "sprintWave": 23,
       "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单",
       "unsafeReasons": []
     },
@@ -5324,7 +5366,7 @@
       ],
       "mojibakeSignal": null,
       "slug": "ads-income-when-to-start",
-      "sprintWave": 23,
+      "sprintWave": 24,
       "title": "广告收入要等到什么时候再接",
       "unsafeReasons": []
     },
@@ -5417,7 +5459,7 @@
       ],
       "mojibakeSignal": null,
       "slug": "ai-assisted-vs-automated-delivery-checklist",
-      "sprintWave": 24,
+      "sprintWave": 25,
       "title": "AI 辅助交付和完全自动交付的检查清单",
       "unsafeReasons": []
     },
@@ -5510,7 +5552,7 @@
       ],
       "mojibakeSignal": null,
       "slug": "ai-beginner-project-fit-check-checklist",
-      "sprintWave": 25,
+      "sprintWave": 26,
       "title": "AI 新手接项目前的项目适配检查清单",
       "unsafeReasons": []
     },
@@ -5543,37 +5585,6 @@
       "slug": "ai-beginner-project-fit-check-mistakes",
       "sprintWave": 26,
       "title": "AI 新手判断接项目时的常见错误",
-      "unsafeReasons": []
-    },
-    {
-      "actionCount": 11,
-      "category": "AI 自由职业路线",
-      "descriptionLength": 53,
-      "file": "content/blog/ai-beginner-project-fit-check.mdx",
-      "priorityScore": 125,
-      "publishConfirm": "not-included",
-      "readyForPublicRefreshSprint": true,
-      "refreshActions": [
-        "Confirm the public page still answers one clear search intent before editing.",
-        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
-        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
-        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
-        "Cannibalization check: review similar slug stem conflict \"beginner-project-fit-check\" before expanding this page or approving related drafts.",
-        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
-        "Apply public-page edits manually only after approval; publish confirm remains excluded.",
-        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
-        "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
-        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
-        "Apply edits manually only after approval; publish confirm remains excluded."
-      ],
-      "refreshReasons": [
-        "short-description",
-        "cannibalization"
-      ],
-      "mojibakeSignal": null,
-      "slug": "ai-beginner-project-fit-check",
-      "sprintWave": 26,
-      "title": "AI 新手如何判断自己能不能接项目",
       "unsafeReasons": []
     },
     {

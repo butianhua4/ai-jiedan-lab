@@ -1,5 +1,5 @@
 # Traffic Claim Guard
-Generated at: 2026-06-19T02:13:37.961Z
+Generated at: 2026-06-19T06:42:06.386Z
 This guard scans operational reports and docs for unsupported claims that real traffic, clicks, impressions, or visits already exist.
 ## Guardrails
 - Auto publish: false
@@ -8,7 +8,7 @@ This guard scans operational reports and docs for unsupported claims that real t
 - filesScanned: 240
 - measuredTrafficUnavailable: true
 - unsafeClaims: 0
-- watchMentions: 9122
+- watchMentions: 9126
 ## Unsafe Claims
 None.
 ## Watch Mentions
@@ -44,7 +44,7 @@ None.
 | docs/automation-digest.md | 41 | - Traffic data available: false |
 | docs/automation-digest.md | 53 | \| Public refresh \| Use docs/public-refresh-sprint-board.md to refresh existing public articles without claiming traffic. \| |
 | docs/automation-digest.md | 72 | - Traffic data available: false |
-| docs/automation-digest.md | 80 | - 51 public article(s) need garbled-copy refresh before traffic work is credible. |
+| docs/automation-digest.md | 80 | - 52 public article(s) need garbled-copy refresh before traffic work is credible. |
 | docs/automation-digest.md | 81 | - Traffic data is unavailable, so traffic claims remain blocked. |
 | docs/automation-digest.md | 111 | - Traffic data available: false |
 | docs/automation-digest.md | 130 | - Traffic data available: false |
@@ -72,18 +72,18 @@ None.
 | docs/automation-digest.md | 1298 | ## Traffic Evidence |
 | docs/automation-digest.md | 1300 | - Traffic data available: false |
 | docs/automation-digest.md | 1301 | - Can claim traffic: false |
-| docs/automation-digest.md | 1303 | - Measured traffic sources: none |
+| docs/automation-digest.md | 1303 | - Measured traffic sources: google-analytics |
 | docs/automation-digest.md | 1304 | - Search Console verification evidence: false |
 | docs/automation-digest.md | 1307 | - Unsupported traffic claims: 0 |
 | docs/automation-digest.md | 1308 | - Traffic claim files scanned: 240 |
-| docs/automation-digest.md | 1309 | - Traffic claim watch mentions: 9670 |
+| docs/automation-digest.md | 1309 | - Traffic claim watch mentions: 9121 |
 | docs/automation-digest.md | 1322 | - Traffic data available: false |
 | docs/automation-digest.md | 1444 | \| AI 提示词 \| 2026-06-14 \| 4 \| 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 \| /blog/healthcare-admin-ai-prompts-guide \| |
 | docs/automation-digest.md | 1637 | \| 工具导航 \| 2026-06-14 \| 4 \| Google Analytics 什么时候再接入 \| /blog/google-analytics-when-to-add \| |
 | docs/automation-digest.md | 1638 | \| 工具导航 \| 2026-06-14 \| 4 \| Google Analytics 接入前检查清单 \| /blog/google-analytics-when-to-add-checklist \| |
 | docs/automation-digest.md | 1639 | \| 工具导航 \| 2026-06-14 \| 4 \| Google Search Console 新站怎么用 \| /blog/google-search-console-new-site \| |
 | docs/automation-digest.md | 1640 | \| 工具导航 \| 2026-06-14 \| 4 \| Google Search Console 新站检查清单 \| /blog/google-search-console-new-site-checklist \| |
-| docs/automation-digest.md | 1881 | - Measured traffic sources: 0 |
+| docs/automation-digest.md | 1881 | - Measured traffic sources: 1 |
 | docs/automation-digest.md | 1883 | - Traffic data available: false |
 | docs/automation-digest.md | 1920 | - Traffic data available: false |
 | docs/automation-digest.md | 2051 | \| 127 \| 3/3 \| 0 \| 27 \| short-description \| content/blog/google-analytics-when-to-add-checklist.mdx<br>content/blog/groq-api-fast-llm-guide.mdx<br>content/blog/gumroad-template-selling-prep-checklist.mdx \| |

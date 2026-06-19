@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T02:13:37.288Z",
+  "generatedAt": "2026-06-19T06:42:05.689Z",
   "guardrails": {
     "noTrafficClaims": true,
     "noIndexingClaims": true,
@@ -62,7 +62,7 @@
       "ok": true,
       "url": "https://ai.aporet.com/sitemap.xml",
       "expected": "sitemap-q.xml, sitemap-cluster.xml, sitemap-blog.xml, sitemap-priority.xml",
-      "actual": "200, length=735"
+      "actual": "200, length=680"
     }
   ],
   "nextActions": [

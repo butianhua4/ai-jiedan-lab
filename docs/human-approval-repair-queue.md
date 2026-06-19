@@ -1,6 +1,6 @@
 # Human Approval Repair Queue
 
-Generated at: 2026-06-19T02:13:00.733Z
+Generated at: 2026-06-19T06:41:45.185Z
 
 This report is read-only. It breaks repair-before-review candidates into task-level work and stops before any status change.
 
@@ -39,7 +39,7 @@ This report is read-only. It breaks repair-before-review candidates into task-le
 - approvalItems: 3
 - decisionRows: 3
 - matrixUnsafeItems: 0
-- mojibakeAffectedFiles: 77
+- mojibakeAffectedFiles: 78
 - mojibakeUnsafeItems: 0
 - remediationUnsafeItems: 2
 

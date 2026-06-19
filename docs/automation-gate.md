@@ -1,14 +1,14 @@
 # Automation Gate
 
-Generated at: 2026-06-19T02:13:45.612Z
+Generated at: 2026-06-19T06:42:14.030Z
 
 Overall: FAIL
 
 ## Summary
 
 - Checks: 197
-- Passed: 149
-- Failed: 48
+- Passed: 148
+- Failed: 49
 
 ## Checks
 
@@ -29,17 +29,17 @@ Overall: FAIL
 | project automation workflow is scheduled and report-visible | PASS | scheduleCount=4, artifact=true, reportCommitGated=true |
 | project automation workflow excludes review and publish commands | PASS | forbiddenWorkflowCommands=0, checks=10/10 |
 | autopilot executive brief summarizes immediate execution priorities | PASS | public=500, immediate=3/3, boards=5 |
-| autopilot executive brief stays human-gated and publish-safe | PASS | unsafe=0, publishConfirm=0, publishableNow=0, routeWarnings=3 |
+| autopilot executive brief stays human-gated and publish-safe | FAIL | unsafe=1, publishConfirm=0, publishableNow=0, routeWarnings=3 |
 | publication bottleneck report explains manual gate | PASS | public=500, publishableNow=0, immediateReady=3 |
-| publication bottleneck report stays publish-safe | PASS | unsafe=0, publishConfirm=0, preflightFailed=0, traffic=false |
+| publication bottleneck report stays publish-safe | FAIL | unsafe=1, publishConfirm=0, preflightFailed=0, traffic=false |
 | mojibake remediation brief is read-only and article-safe | PASS | filesScanned=669, affected=78, metadataFields=9 |
 | mojibake remediation brief stays human-gated and publish-safe | PASS | unsafe=0, publishConfirm=0, traffic=false |
 | no non-published article is indexable | PASS |  |
 | all published articles are indexable | PASS |  |
 | project status still stops before publishing | PASS | publicPublished=500, publishableNow=0 |
-| traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
+| traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=1 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=240, unsafeClaims=0, watchMentions=9122 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=240, unsafeClaims=0, watchMentions=9126 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit mirrors mojibake warnings without blocking | PASS | warnings=0, mojibake=0, publicMojibake=0, remediationAffected=78/52 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=500, recommended=3, wave=3 |
@@ -197,11 +197,11 @@ Overall: FAIL
 | live search surface check passed | PASS | publicArticles=500, failed=0 |
 | public surface inventory is read-only and matches public counts | PASS | public=500, live=500, unsafe=0 |
 | public surface inventory identifies broad AI public gaps with candidates | PASS | clusters=8, zeroPublic=0 |
-| public search refresh pack is read-only and covers all public pages | PASS | items=500, public=500, seo=0, measuredTraffic=0 |
+| public search refresh pack is read-only and covers all public pages | PASS | items=500, public=500, seo=0, measuredTraffic=1 |
 | public search refresh pack keeps public edits human-gated and action-ready | PASS | ready=500, actions=2723, highPriority=8, shortDescriptions=457, publishConfirm=0 |
-| public refresh sprint board covers public refresh pack | FAIL | items=500, public=500, waves=167, mojibakePublic=51, seo=0, shortDescriptions=457 |
-| public refresh sprint board keeps public edits manual and publish-confirm-free | PASS | ready=500, actions=5030, unsafe=0, publishConfirm=0 |
-| public search refresh session pack covers public sprint waves | PASS | sessions=167, files=500, actions=5030, ready=500 |
+| public refresh sprint board covers public refresh pack | PASS | items=500, public=500, waves=167, mojibakePublic=52, seo=0, shortDescriptions=457 |
+| public refresh sprint board keeps public edits manual and publish-confirm-free | PASS | ready=500, actions=5032, unsafe=0, publishConfirm=0 |
+| public search refresh session pack covers public sprint waves | PASS | sessions=167, files=500, actions=5032, ready=500 |
 | public search refresh session pack stays manual and non-publishing | PASS | unsafe=0, publishConfirm=0, traffic=false |
 | tool market opportunity map covers broad tool demand safely | PASS | opportunities=8, tools=11, queries=80, public=500 |
 | tool market opportunity map includes PPT, spreadsheet and registration actions without publishing | PASS | registrations=5, unsafe=0, publishConfirm=0, traffic=false |

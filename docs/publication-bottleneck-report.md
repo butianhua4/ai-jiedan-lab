@@ -1,6 +1,6 @@
 # Publication Bottleneck Report
 
-Generated at: 2026-06-19T02:13:11.355Z
+Generated at: 2026-06-19T06:41:55.708Z
 
 This report is read-only. It explains why public article growth is gated and what to review next.
 
@@ -25,7 +25,7 @@ This report is read-only. It explains why public article growth is gated and wha
 - nextBatchWarningItems: 3
 - publicArticles: 500
 - publicMojibakeWarningItems: 0
-- publicRefreshActionItems: 5030
+- publicRefreshActionItems: 5032
 - publishConfirmCommandsIncluded: 0
 - reviewPreflightFailed: 0
 - reviewPreflightMojibakeWarningItems: 0
@@ -33,14 +33,14 @@ This report is read-only. It explains why public article growth is gated and wha
 - reviewPreflightWarningItems: 0
 - statusCounts: {"published":500,"archived":21,"draft":148}
 - trafficDataAvailable: false
-- unsafeItems: 0
+- unsafeItems: 1
 
 ## Bottlenecks
 
 - No article is publishable without explicit human approval.
 - 3 draft article(s) are ready for human approval before mark:review.
 - 3 next-batch route item(s) still need SEO/query/freshness remediation review.
-- 51 public article(s) need garbled-copy refresh before traffic work is credible.
+- 52 public article(s) need garbled-copy refresh before traffic work is credible.
 - Traffic data is unavailable, so traffic claims remain blocked.
 
 ## Next Human Approval
@@ -75,4 +75,4 @@ This report is read-only. It explains why public article growth is gated and wha
 | 210 | 13 | mojibake-public<br>short-description<br>freshness-high | Codex 安装失败怎么办 | content/blog/codex-install-failed-beginner-fix.mdx |
 | 210 | 13 | mojibake-public<br>short-description<br>freshness-high | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
 | 210 | 13 | mojibake-public<br>short-description<br>freshness-high | Codex 是什么新手怎么开始 | content/blog/what-is-codex-beginner-start.mdx |
-| 205 | 13 | mojibake-public<br>short-description<br>cannibalization | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
+| 205 | 13 | mojibake-public<br>short-description<br>cannibalization | AI 新手如何判断自己能不能接项目 | content/blog/ai-beginner-project-fit-check.mdx |

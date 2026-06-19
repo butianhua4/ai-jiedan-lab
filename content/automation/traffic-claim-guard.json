@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T02:13:37.961Z",
+  "generatedAt": "2026-06-19T06:42:06.386Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
@@ -8,7 +8,7 @@
     "filesScanned": 240,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 9122
+    "watchMentions": 9126
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -196,7 +196,7 @@
       "file": "docs/automation-digest.md",
       "line": 80,
       "reason": "traffic-related mention",
-      "text": "- 51 public article(s) need garbled-copy refresh before traffic work is credible."
+      "text": "- 52 public article(s) need garbled-copy refresh before traffic work is credible."
     },
     {
       "file": "docs/automation-digest.md",
@@ -364,7 +364,7 @@
       "file": "docs/automation-digest.md",
       "line": 1303,
       "reason": "traffic-related mention",
-      "text": "- Measured traffic sources: none"
+      "text": "- Measured traffic sources: google-analytics"
     },
     {
       "file": "docs/automation-digest.md",
@@ -388,7 +388,7 @@
       "file": "docs/automation-digest.md",
       "line": 1309,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 9670"
+      "text": "- Traffic claim watch mentions: 9121"
     },
     {
       "file": "docs/automation-digest.md",
@@ -430,7 +430,7 @@
       "file": "docs/automation-digest.md",
       "line": 1881,
       "reason": "traffic-related mention",
-      "text": "- Measured traffic sources: 0"
+      "text": "- Measured traffic sources: 1"
     },
     {
       "file": "docs/automation-digest.md",

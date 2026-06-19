@@ -1,6 +1,6 @@
 # Manual Review Workbench
 
-Generated at: 2026-06-19T02:13:09.515Z
+Generated at: 2026-06-19T06:41:53.864Z
 
 This workbench is read-only. It does not publish articles or mark drafts for review.
 
@@ -188,12 +188,12 @@ Next review files:
 - Traffic data available: false
 - Can claim traffic: false
 - Claimable metrics: 0
-- Measured traffic sources: none
+- Measured traffic sources: google-analytics
 - Search Console verification evidence: false
 - Failed checks: 0
 - Unsupported traffic claims: 0
 - Traffic claim files scanned: 240
-- Traffic claim watch mentions: 9670
+- Traffic claim watch mentions: 9121
 
 ## Content Integrity
 

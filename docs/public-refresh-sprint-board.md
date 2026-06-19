@@ -1,6 +1,6 @@
 # Public Refresh Sprint Board
 
-Generated at: 2026-06-19T02:12:55.366Z
+Generated at: 2026-06-19T06:41:39.902Z
 
 This report is read-only. It groups public pages into manual SEO refresh waves without editing pages or claiming traffic.
 
@@ -15,14 +15,14 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 
 ## Summary
 
-- actionItems: 5030
+- actionItems: 5032
 - cannibalizationItems: 241
-- highPriorityItems: 59
+- highPriorityItems: 60
 - items: 500
 - itemsPerWave: 3
 - itemsReadyForPublicRefreshSprint: 500
 - liveMissingFromSitemap: 0
-- mojibakePublicItems: 51
+- mojibakePublicItems: 52
 - publicArticles: 500
 - publishConfirmCommandsIncluded: 0
 - publishedButNoindexed: 0
@@ -41,31 +41,31 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 | Wave | Ready | High priority | Actions | Reasons | Files |
 | ---: | ---: | ---: | ---: | --- | --- |
 | 1 | 3/3 | 3 | 39 | mojibake-public, short-description, freshness-high | content/blog/build-first-webpage-with-codex.mdx<br>content/blog/codex-install-failed-beginner-fix.mdx<br>content/blog/first-upwork-project-pricing-checklist.mdx |
-| 2 | 3/3 | 3 | 39 | mojibake-public, short-description, freshness-high, cannibalization | content/blog/what-is-codex-beginner-start.mdx<br>content/blog/ai-small-project-practice-topics-checklist.mdx<br>content/blog/before-first-ai-freelance-job.mdx |
-| 3 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/canva-portfolio-cover-tips-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-mistakes.mdx |
-| 4 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-beginner-use-cases-checklist.mdx<br>content/blog/claude-code-beginner-use-cases.mdx<br>content/blog/claude-code-bug-prompt-mistakes.mdx |
-| 5 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-bug-prompt.mdx<br>content/blog/claude-code-common-commands-mistakes.mdx<br>content/blog/claude-code-common-commands.mdx |
-| 6 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-error-debug-mistakes.mdx<br>content/blog/claude-code-github-file-scope-mistakes.mdx<br>content/blog/claude-code-small-project-tasks.mdx |
-| 7 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-vs-codex-web-editing-checklist.mdx<br>content/blog/codex-automation-steps-not-skip-mistakes.mdx<br>content/blog/codex-automation-steps-not-skip.mdx |
-| 8 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-edit-existing-ui-mistakes.mdx<br>content/blog/codex-first-day-guide-checklist.mdx<br>content/blog/codex-install-prerequisites-checklist.mdx |
-| 9 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-npm-install-errors-mistakes.mdx<br>content/blog/codex-npm-install-errors.mdx<br>content/blog/codex-upwork-job-risk-check-freelance-scope.mdx |
-| 10 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-upwork-job-risk-check.mdx<br>content/blog/daily-ai-freelance-practice-log.mdx<br>content/blog/module-not-found-debug-mistakes.mdx |
-| 11 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/node-version-mismatch-fix-mistakes.mdx<br>content/blog/permission-denied-fix-checklist.mdx<br>content/blog/permission-denied-fix-mistakes.mdx |
-| 12 | 3/3 | 3 | 33 | mojibake-public, freshness-high | content/blog/codex-code-review-delivery-checklist.mdx<br>content/blog/codex-github-before-commit-checklist.mdx<br>content/blog/codex-upwork-small-job-risk-checklist.mdx |
-| 13 | 3/3 | 3 | 33 | mojibake-public, freshness-high, cannibalization | content/blog/codex-vercel-deploy-preflight-checklist.mdx<br>content/blog/codex-vs-claude-code-beginner-checklist.mdx<br>content/blog/git-authentication-failed-fix-mistakes.mdx |
-| 14 | 3/3 | 3 | 33 | mojibake-public, cannibalization | content/blog/git-authentication-failed-fix.mdx<br>content/blog/github-actions-build-log-debug-checklist.mdx<br>content/blog/node-version-mismatch-fix.mdx |
-| 15 | 3/3 | 3 | 33 | mojibake-public, short-description | content/blog/ai-ppt-beginner-guide.mdx<br>content/blog/ai-tools-recommendation-beginner.mdx<br>content/blog/codex-first-landing-page-freelance-scope.mdx |
-| 16 | 3/3 | 3 | 33 | mojibake-public, short-description | content/blog/dify-metadata-filtering-rag-guide.mdx<br>content/blog/llm-cost-monitoring-dashboard-guide.mdx<br>content/blog/module-not-found-debug-freelance-scope.mdx |
-| 17 | 3/3 | 3 | 31 | mojibake-public, short-description | content/blog/node-version-mismatch-fix-freelance-scope.mdx<br>content/blog/rag-prompt-injection-defense-guide.mdx<br>content/blog/ray-serve-llm-deployment-guide.mdx |
-| 18 | 3/3 | 3 | 33 | short-description, cannibalization, high-priority | content/blog/dev-works-build-fails-checklist.mdx<br>content/blog/dev-works-build-fails-mistakes.mdx<br>content/blog/dev-works-build-fails.mdx |
-| 19 | 3/3 | 3 | 33 | short-description, cannibalization, high-priority | content/blog/failed-to-push-some-refs-fix-checklist.mdx<br>content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx<br>content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
-| 20 | 3/3 | 2 | 33 | short-description, cannibalization, high-priority, freshness-high | content/blog/nextjs-hydration-error-debug-checklist.mdx<br>content/blog/nextjs-hydration-error-debug-mistakes.mdx<br>content/blog/codex-npm-install-error-beginner-fix.mdx |
-| 21 | 3/3 | 0 | 31 | short-description, freshness-high, cannibalization | content/blog/codex-generated-code-review-guide.mdx<br>content/blog/failed-to-push-some-refs-fix.mdx<br>content/blog/nextjs-hydration-error-debug.mdx |
-| 22 | 3/3 | 0 | 33 | short-description, freshness-high | content/blog/payoneer-wise-paypal-beginner-comparison.mdx<br>content/blog/upwork-client-requirements-analysis-beginner.mdx<br>content/blog/upwork-proposal-no-reply-checklist.mdx |
-| 23 | 3/3 | 0 | 33 | short-description, freshness-high, cannibalization | content/blog/vercel-env-variable-missing-beginner-guide.mdx<br>content/blog/ads-income-when-to-start-checklist.mdx<br>content/blog/ads-income-when-to-start.mdx |
-| 24 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/affiliate-vs-service-income-checklist.mdx<br>content/blog/affiliate-vs-service-income.mdx<br>content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
-| 25 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx<br>content/blog/ai-assisted-vs-automated-delivery.mdx<br>content/blog/ai-beginner-project-fit-check-checklist.mdx |
-| 26 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-beginner-project-fit-check-mistakes.mdx<br>content/blog/ai-beginner-project-fit-check.mdx<br>content/blog/ai-freelance-30-day-execution-checklist.mdx |
+| 2 | 3/3 | 3 | 39 | mojibake-public, short-description, freshness-high, cannibalization | content/blog/what-is-codex-beginner-start.mdx<br>content/blog/ai-beginner-project-fit-check.mdx<br>content/blog/ai-small-project-practice-topics-checklist.mdx |
+| 3 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/before-first-ai-freelance-job.mdx<br>content/blog/canva-portfolio-cover-tips-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-checklist.mdx |
+| 4 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-beginner-mistakes-mistakes.mdx<br>content/blog/claude-code-beginner-use-cases-checklist.mdx<br>content/blog/claude-code-beginner-use-cases.mdx |
+| 5 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-bug-prompt-mistakes.mdx<br>content/blog/claude-code-bug-prompt.mdx<br>content/blog/claude-code-common-commands-mistakes.mdx |
+| 6 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-common-commands.mdx<br>content/blog/claude-code-error-debug-mistakes.mdx<br>content/blog/claude-code-github-file-scope-mistakes.mdx |
+| 7 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-small-project-tasks.mdx<br>content/blog/claude-code-vs-codex-web-editing-checklist.mdx<br>content/blog/codex-automation-steps-not-skip-mistakes.mdx |
+| 8 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-automation-steps-not-skip.mdx<br>content/blog/codex-edit-existing-ui-mistakes.mdx<br>content/blog/codex-first-day-guide-checklist.mdx |
+| 9 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-install-prerequisites-checklist.mdx<br>content/blog/codex-npm-install-errors-mistakes.mdx<br>content/blog/codex-npm-install-errors.mdx |
+| 10 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-upwork-job-risk-check-freelance-scope.mdx<br>content/blog/codex-upwork-job-risk-check.mdx<br>content/blog/daily-ai-freelance-practice-log.mdx |
+| 11 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/module-not-found-debug-mistakes.mdx<br>content/blog/node-version-mismatch-fix-mistakes.mdx<br>content/blog/permission-denied-fix-checklist.mdx |
+| 12 | 3/3 | 3 | 35 | mojibake-public, short-description, cannibalization, freshness-high | content/blog/permission-denied-fix-mistakes.mdx<br>content/blog/codex-code-review-delivery-checklist.mdx<br>content/blog/codex-github-before-commit-checklist.mdx |
+| 13 | 3/3 | 3 | 33 | mojibake-public, freshness-high | content/blog/codex-upwork-small-job-risk-checklist.mdx<br>content/blog/codex-vercel-deploy-preflight-checklist.mdx<br>content/blog/codex-vs-claude-code-beginner-checklist.mdx |
+| 14 | 3/3 | 3 | 33 | mojibake-public, cannibalization | content/blog/git-authentication-failed-fix-mistakes.mdx<br>content/blog/git-authentication-failed-fix.mdx<br>content/blog/github-actions-build-log-debug-checklist.mdx |
+| 15 | 3/3 | 3 | 33 | mojibake-public, cannibalization, short-description | content/blog/node-version-mismatch-fix.mdx<br>content/blog/ai-ppt-beginner-guide.mdx<br>content/blog/ai-tools-recommendation-beginner.mdx |
+| 16 | 3/3 | 3 | 33 | mojibake-public, short-description | content/blog/codex-first-landing-page-freelance-scope.mdx<br>content/blog/dify-metadata-filtering-rag-guide.mdx<br>content/blog/llm-cost-monitoring-dashboard-guide.mdx |
+| 17 | 3/3 | 3 | 33 | mojibake-public, short-description | content/blog/module-not-found-debug-freelance-scope.mdx<br>content/blog/node-version-mismatch-fix-freelance-scope.mdx<br>content/blog/rag-prompt-injection-defense-guide.mdx |
+| 18 | 3/3 | 3 | 31 | mojibake-public, short-description, cannibalization, high-priority | content/blog/ray-serve-llm-deployment-guide.mdx<br>content/blog/dev-works-build-fails-checklist.mdx<br>content/blog/dev-works-build-fails-mistakes.mdx |
+| 19 | 3/3 | 3 | 33 | short-description, cannibalization, high-priority | content/blog/dev-works-build-fails.mdx<br>content/blog/failed-to-push-some-refs-fix-checklist.mdx<br>content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx |
+| 20 | 3/3 | 3 | 33 | short-description, cannibalization, high-priority | content/blog/failed-to-push-some-refs-fix-mistakes.mdx<br>content/blog/nextjs-hydration-error-debug-checklist.mdx<br>content/blog/nextjs-hydration-error-debug-mistakes.mdx |
+| 21 | 3/3 | 0 | 32 | cannibalization, freshness-high, short-description | content/blog/codex-npm-install-error-beginner-fix.mdx<br>content/blog/codex-generated-code-review-guide.mdx<br>content/blog/failed-to-push-some-refs-fix.mdx |
+| 22 | 3/3 | 0 | 32 | cannibalization, short-description, freshness-high | content/blog/nextjs-hydration-error-debug.mdx<br>content/blog/payoneer-wise-paypal-beginner-comparison.mdx<br>content/blog/upwork-client-requirements-analysis-beginner.mdx |
+| 23 | 3/3 | 0 | 33 | short-description, freshness-high, cannibalization | content/blog/upwork-proposal-no-reply-checklist.mdx<br>content/blog/vercel-env-variable-missing-beginner-guide.mdx<br>content/blog/ads-income-when-to-start-checklist.mdx |
+| 24 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ads-income-when-to-start.mdx<br>content/blog/affiliate-vs-service-income-checklist.mdx<br>content/blog/affiliate-vs-service-income.mdx |
+| 25 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx<br>content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx<br>content/blog/ai-assisted-vs-automated-delivery.mdx |
+| 26 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-beginner-project-fit-check-checklist.mdx<br>content/blog/ai-beginner-project-fit-check-mistakes.mdx<br>content/blog/ai-freelance-30-day-execution-checklist.mdx |
 | 27 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-30-day-execution-mistakes.mdx<br>content/blog/ai-freelance-30-day-execution.mdx<br>content/blog/ai-freelance-automation-compliance-risk-checklist.mdx |
 | 28 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx<br>content/blog/ai-freelance-automation-compliance-risk.mdx<br>content/blog/ai-freelance-common-misconceptions-checklist.mdx |
 | 29 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-common-misconceptions-mistakes.mdx<br>content/blog/ai-freelance-common-misconceptions.mdx<br>content/blog/ai-freelance-failure-review-checklist.mdx |
@@ -216,79 +216,79 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 | 1 | true | 210 | 13 | 87 | mojibake-public, short-description, freshness-high | not-included | Codex 安装失败怎么办 | content/blog/codex-install-failed-beginner-fix.mdx |
 | 1 | true | 210 | 13 | 72 | mojibake-public, short-description, freshness-high | not-included | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
 | 2 | true | 210 | 13 | 89 | mojibake-public, short-description, freshness-high | not-included | Codex 是什么新手怎么开始 | content/blog/what-is-codex-beginner-start.mdx |
+| 2 | true | 205 | 13 | 53 | mojibake-public, short-description, cannibalization | not-included | AI 新手如何判断自己能不能接项目 | content/blog/ai-beginner-project-fit-check.mdx |
 | 2 | true | 205 | 13 | 52 | mojibake-public, short-description, cannibalization | not-included | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
-| 2 | true | 205 | 13 | 56 | mojibake-public, short-description, cannibalization | not-included | 第一次接 AI 小单前要准备什么 | content/blog/before-first-ai-freelance-job.mdx |
+| 3 | true | 205 | 13 | 56 | mojibake-public, short-description, cannibalization | not-included | 第一次接 AI 小单前要准备什么 | content/blog/before-first-ai-freelance-job.mdx |
 | 3 | true | 205 | 13 | 61 | mojibake-public, short-description, cannibalization | not-included | Canva 作品集封面发布前检查清单 | content/blog/canva-portfolio-cover-tips-checklist.mdx |
 | 3 | true | 205 | 13 | 59 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手使用检查清单 | content/blog/claude-code-beginner-mistakes-checklist.mdx |
-| 3 | true | 205 | 13 | 68 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手常见错误和修正方法 | content/blog/claude-code-beginner-mistakes-mistakes.mdx |
+| 4 | true | 205 | 13 | 68 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手常见错误和修正方法 | content/blog/claude-code-beginner-mistakes-mistakes.mdx |
 | 4 | true | 205 | 13 | 60 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手使用场景检查清单 | content/blog/claude-code-beginner-use-cases-checklist.mdx |
 | 4 | true | 205 | 13 | 71 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手适合用在哪些项目场景 | content/blog/claude-code-beginner-use-cases.mdx |
-| 4 | true | 205 | 13 | 70 | mojibake-public, short-description, cannibalization | not-included | Claude Code Bug Prompt 常见错误 | content/blog/claude-code-bug-prompt-mistakes.mdx |
+| 5 | true | 205 | 13 | 70 | mojibake-public, short-description, cannibalization | not-included | Claude Code Bug Prompt 常见错误 | content/blog/claude-code-bug-prompt-mistakes.mdx |
 | 5 | true | 205 | 13 | 74 | mojibake-public, short-description, cannibalization | not-included | Claude Code 修 bug 的 prompt 怎么写 | content/blog/claude-code-bug-prompt.mdx |
 | 5 | true | 205 | 13 | 61 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手运行常用命令时的常见错误 | content/blog/claude-code-common-commands-mistakes.mdx |
-| 5 | true | 205 | 13 | 72 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手常用命令怎么整理成项目笔记 | content/blog/claude-code-common-commands.mdx |
+| 6 | true | 205 | 13 | 72 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手常用命令怎么整理成项目笔记 | content/blog/claude-code-common-commands.mdx |
 | 6 | true | 205 | 13 | 65 | mojibake-public, short-description, cannibalization | not-included | Claude Code 排查客户报错时的常见错误 | content/blog/claude-code-error-debug-mistakes.mdx |
 | 6 | true | 205 | 13 | 75 | mojibake-public, short-description, cannibalization | not-included | Claude Code 看 GitHub 文件时的常见范围错误 | content/blog/claude-code-github-file-scope-mistakes.mdx |
-| 6 | true | 205 | 13 | 75 | mojibake-public, short-description, cannibalization | not-included | 哪些小项目任务适合用 Claude Code 辅助项目 | content/blog/claude-code-small-project-tasks.mdx |
+| 7 | true | 205 | 13 | 75 | mojibake-public, short-description, cannibalization | not-included | 哪些小项目任务适合用 Claude Code 辅助项目 | content/blog/claude-code-small-project-tasks.mdx |
 | 7 | true | 205 | 13 | 51 | mojibake-public, short-description, cannibalization | not-included | 网页修改 AI 工具检查清单：Claude Code 和 Codex 怎么选 | content/blog/claude-code-vs-codex-web-editing-checklist.mdx |
 | 7 | true | 205 | 13 | 56 | mojibake-public, short-description, cannibalization | not-included | Codex 自动化开发流程常见错误 | content/blog/codex-automation-steps-not-skip-mistakes.mdx |
-| 7 | true | 205 | 13 | 65 | mojibake-public, short-description, cannibalization | not-included | Codex 自动化开发流程哪些步骤不能省 | content/blog/codex-automation-steps-not-skip.mdx |
+| 8 | true | 205 | 13 | 65 | mojibake-public, short-description, cannibalization | not-included | Codex 自动化开发流程哪些步骤不能省 | content/blog/codex-automation-steps-not-skip.mdx |
 | 8 | true | 205 | 13 | 73 | mojibake-public, short-description, cannibalization | not-included | Codex 修改现有网页 UI 常见错误和修复顺序 | content/blog/codex-edit-existing-ui-mistakes.mdx |
 | 8 | true | 205 | 13 | 50 | mojibake-public, short-description, cannibalization | not-included | Codex 是什么，新手第一天应该怎么用：新手检查清单 | content/blog/codex-first-day-guide-checklist.mdx |
-| 8 | true | 205 | 13 | 60 | mojibake-public, short-description, cannibalization | not-included | Codex 安装前置条件检查清单 | content/blog/codex-install-prerequisites-checklist.mdx |
+| 9 | true | 205 | 13 | 60 | mojibake-public, short-description, cannibalization | not-included | Codex 安装前置条件检查清单 | content/blog/codex-install-prerequisites-checklist.mdx |
 | 9 | true | 205 | 13 | 69 | mojibake-public, short-description, cannibalization | not-included | npm install 报错常见错误和修复顺序 | content/blog/codex-npm-install-errors-mistakes.mdx |
 | 9 | true | 205 | 13 | 79 | mojibake-public, short-description, cannibalization | not-included | 用 Codex 排查 npm install 报错 | content/blog/codex-npm-install-errors.mdx |
-| 9 | true | 205 | 13 | 60 | mojibake-public, short-description, cannibalization | not-included | Upwork 筛单风险判断能不能接 | content/blog/codex-upwork-job-risk-check-freelance-scope.mdx |
+| 10 | true | 205 | 13 | 60 | mojibake-public, short-description, cannibalization | not-included | Upwork 筛单风险判断能不能接 | content/blog/codex-upwork-job-risk-check-freelance-scope.mdx |
 | 10 | true | 205 | 13 | 75 | mojibake-public, short-description, cannibalization | not-included | 用 Codex 判断 Upwork 任务风险 | content/blog/codex-upwork-job-risk-check.mdx |
 | 10 | true | 205 | 13 | 72 | mojibake-public, short-description, cannibalization | not-included | 新手如何记录每天的项目练习 | content/blog/daily-ai-freelance-practice-log.mdx |
-| 10 | true | 205 | 13 | 78 | mojibake-public, short-description, cannibalization | not-included | module not found 常见错误和解决步骤 | content/blog/module-not-found-debug-mistakes.mdx |
+| 11 | true | 205 | 13 | 78 | mojibake-public, short-description, cannibalization | not-included | module not found 常见错误和解决步骤 | content/blog/module-not-found-debug-mistakes.mdx |
 | 11 | true | 205 | 13 | 75 | mojibake-public, short-description, cannibalization | not-included | Node 版本不匹配常见错误和解决步骤 | content/blog/node-version-mismatch-fix-mistakes.mdx |
 | 11 | true | 205 | 13 | 73 | mojibake-public, short-description, cannibalization | not-included | permission denied 报错新手怎么处理：新手检查清单 | content/blog/permission-denied-fix-checklist.mdx |
-| 11 | true | 205 | 13 | 73 | mojibake-public, short-description, cannibalization | not-included | permission denied 报错新手怎么处理：常见错误和解决步骤 | content/blog/permission-denied-fix-mistakes.mdx |
+| 12 | true | 205 | 13 | 73 | mojibake-public, short-description, cannibalization | not-included | permission denied 报错新手怎么处理：常见错误和解决步骤 | content/blog/permission-denied-fix-mistakes.mdx |
 | 12 | true | 200 | 11 | 97 | mojibake-public, freshness-high | not-included | Codex 生成代码后怎么审核：交付前检查清单 | content/blog/codex-code-review-delivery-checklist.mdx |
 | 12 | true | 200 | 11 | 101 | mojibake-public, freshness-high | not-included | Codex 和 GitHub 怎么配合：提交代码前检查 | content/blog/codex-github-before-commit-checklist.mdx |
-| 12 | true | 200 | 11 | 102 | mojibake-public, freshness-high | not-included | Codex 接 Upwork 小单怎么判断：风险检查清单 | content/blog/codex-upwork-small-job-risk-checklist.mdx |
+| 13 | true | 200 | 11 | 102 | mojibake-public, freshness-high | not-included | Codex 接 Upwork 小单怎么判断：风险检查清单 | content/blog/codex-upwork-small-job-risk-checklist.mdx |
 | 13 | true | 200 | 11 | 101 | mojibake-public, freshness-high | not-included | Codex 部署 Vercel 前检查什么：上线前清单 | content/blog/codex-vercel-deploy-preflight-checklist.mdx |
 | 13 | true | 200 | 11 | 104 | mojibake-public, freshness-high | not-included | Codex 和 Claude Code 怎么选：新手对比清单 | content/blog/codex-vs-claude-code-beginner-checklist.mdx |
-| 13 | true | 195 | 11 | 91 | mojibake-public, cannibalization | not-included | git authentication failed 常见错误和解决步骤 | content/blog/git-authentication-failed-fix-mistakes.mdx |
+| 14 | true | 195 | 11 | 91 | mojibake-public, cannibalization | not-included | git authentication failed 常见错误和解决步骤 | content/blog/git-authentication-failed-fix-mistakes.mdx |
 | 14 | true | 195 | 11 | 91 | mojibake-public, cannibalization | not-included | git authentication failed 怎么解决 | content/blog/git-authentication-failed-fix.mdx |
 | 14 | true | 195 | 11 | 91 | mojibake-public, cannibalization | not-included | GitHub Actions build 失败日志检查清单 | content/blog/github-actions-build-log-debug-checklist.mdx |
-| 14 | true | 195 | 11 | 91 | mojibake-public, cannibalization | not-included | Node 版本不匹配怎么排查 | content/blog/node-version-mismatch-fix.mdx |
+| 15 | true | 195 | 11 | 91 | mojibake-public, cannibalization | not-included | Node 版本不匹配怎么排查 | content/blog/node-version-mismatch-fix.mdx |
 | 15 | true | 190 | 11 | 56 | mojibake-public, short-description | not-included | AI 做 PPT 怎么开始：新手从大纲到成稿的流程 | content/blog/ai-ppt-beginner-guide.mdx |
 | 15 | true | 190 | 11 | 54 | mojibake-public, short-description | not-included | AI 工具推荐怎么选：新手别一开始买太多 | content/blog/ai-tools-recommendation-beginner.mdx |
-| 15 | true | 190 | 11 | 62 | mojibake-public, short-description | not-included | Codex 怎么做第一个落地页：使用前怎么判断是否适合 | content/blog/codex-first-landing-page-freelance-scope.mdx |
+| 16 | true | 190 | 11 | 62 | mojibake-public, short-description | not-included | Codex 怎么做第一个落地页：使用前怎么判断是否适合 | content/blog/codex-first-landing-page-freelance-scope.mdx |
 | 16 | true | 190 | 11 | 69 | mojibake-public, short-description | not-included | Dify metadata filtering 怎么用：让知识库检索更可控 | content/blog/dify-metadata-filtering-rag-guide.mdx |
 | 16 | true | 190 | 11 | 54 | mojibake-public, short-description | not-included | 大模型成本监控怎么做：按用户、功能、模型和项目拆账 | content/blog/llm-cost-monitoring-dashboard-guide.mdx |
-| 16 | true | 190 | 11 | 72 | mojibake-public, short-description | not-included | module not found 使用前怎么判断是否适合 | content/blog/module-not-found-debug-freelance-scope.mdx |
+| 17 | true | 190 | 11 | 72 | mojibake-public, short-description | not-included | module not found 使用前怎么判断是否适合 | content/blog/module-not-found-debug-freelance-scope.mdx |
 | 17 | true | 190 | 11 | 58 | mojibake-public, short-description | not-included | Node 版本不匹配使用前怎么判断是否适合 | content/blog/node-version-mismatch-fix-freelance-scope.mdx |
 | 17 | true | 190 | 11 | 59 | mojibake-public, short-description | not-included | RAG 提示词注入怎么防：知识库不能盲目信任文档内容 | content/blog/rag-prompt-injection-defense-guide.mdx |
-| 17 | true | 180 | 9 | 95 | mojibake-public | not-included | Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门 | content/blog/ray-serve-llm-deployment-guide.mdx |
+| 18 | true | 180 | 9 | 95 | mojibake-public | not-included | Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门 | content/blog/ray-serve-llm-deployment-guide.mdx |
 | 18 | true | 140 | 11 | 76 | short-description, cannibalization, high-priority | not-included | npm run dev 能跑但 build 失败检查清单 | content/blog/dev-works-build-fails-checklist.mdx |
 | 18 | true | 140 | 11 | 72 | short-description, cannibalization, high-priority | not-included | npm run dev 能跑但 build 失败常见错误和解决步骤 | content/blog/dev-works-build-fails-mistakes.mdx |
-| 18 | true | 140 | 11 | 84 | short-description, cannibalization, high-priority | not-included | npm run dev 能跑但 build 失败怎么办 | content/blog/dev-works-build-fails.mdx |
+| 19 | true | 140 | 11 | 84 | short-description, cannibalization, high-priority | not-included | npm run dev 能跑但 build 失败怎么办 | content/blog/dev-works-build-fails.mdx |
 | 19 | true | 140 | 11 | 81 | short-description, cannibalization, high-priority | not-included | failed to push some refs 排查检查清单 | content/blog/failed-to-push-some-refs-fix-checklist.mdx |
 | 19 | true | 140 | 11 | 76 | short-description, cannibalization, high-priority | not-included | failed to push some refs 使用前怎么判断是否适合 | content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx |
-| 19 | true | 140 | 11 | 77 | short-description, cannibalization, high-priority | not-included | failed to push some refs 常见错误和解决步骤 | content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
+| 20 | true | 140 | 11 | 77 | short-description, cannibalization, high-priority | not-included | failed to push some refs 常见错误和解决步骤 | content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
 | 20 | true | 140 | 11 | 83 | short-description, cannibalization, high-priority | not-included | Next.js hydration error 怎么排查：新手检查清单 | content/blog/nextjs-hydration-error-debug-checklist.mdx |
 | 20 | true | 140 | 11 | 79 | short-description, cannibalization, high-priority | not-included | Next.js hydration error 怎么排查：常见错误和解决步骤 | content/blog/nextjs-hydration-error-debug-mistakes.mdx |
-| 20 | true | 135 | 11 | 102 | cannibalization, freshness-high | not-included | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx |
+| 21 | true | 135 | 11 | 102 | cannibalization, freshness-high | not-included | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx |
 | 21 | true | 130 | 11 | 89 | short-description, freshness-high | not-included | Codex 生成代码后怎么审核 | content/blog/codex-generated-code-review-guide.mdx |
 | 21 | true | 130 | 10 | 99 | cannibalization | not-included | failed to push some refs 怎么排查 | content/blog/failed-to-push-some-refs-fix.mdx |
-| 21 | true | 130 | 10 | 92 | cannibalization | not-included | Next.js hydration error 怎么排查 | content/blog/nextjs-hydration-error-debug.mdx |
+| 22 | true | 130 | 10 | 92 | cannibalization | not-included | Next.js hydration error 怎么排查 | content/blog/nextjs-hydration-error-debug.mdx |
 | 22 | true | 130 | 11 | 82 | short-description, freshness-high | not-included | Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
 | 22 | true | 130 | 11 | 64 | short-description, freshness-high | not-included | Upwork 客户需求太模糊怎么办：新手分析和追问清单 | content/blog/upwork-client-requirements-analysis-beginner.mdx |
-| 22 | true | 130 | 11 | 80 | short-description, freshness-high | not-included | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
+| 23 | true | 130 | 11 | 80 | short-description, freshness-high | not-included | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
 | 23 | true | 130 | 11 | 87 | short-description, freshness-high | not-included | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | content/blog/vercel-env-variable-missing-beginner-guide.mdx |
 | 23 | true | 125 | 11 | 63 | short-description, cannibalization | not-included | 广告收入要等到什么时候再接：新手检查清单 | content/blog/ads-income-when-to-start-checklist.mdx |
-| 23 | true | 125 | 11 | 66 | short-description, cannibalization | not-included | 广告收入要等到什么时候再接 | content/blog/ads-income-when-to-start.mdx |
+| 24 | true | 125 | 11 | 66 | short-description, cannibalization | not-included | 广告收入要等到什么时候再接 | content/blog/ads-income-when-to-start.mdx |
 | 24 | true | 125 | 11 | 69 | short-description, cannibalization | not-included | 联盟链接收入和服务收入有什么区别：新手检查清单 | content/blog/affiliate-vs-service-income-checklist.mdx |
 | 24 | true | 125 | 11 | 52 | short-description, cannibalization | not-included | 联盟链接收入和服务收入有什么区别 | content/blog/affiliate-vs-service-income.mdx |
-| 24 | true | 125 | 11 | 53 | short-description, cannibalization | not-included | AI 辅助交付和完全自动交付的检查清单 | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
+| 25 | true | 125 | 11 | 53 | short-description, cannibalization | not-included | AI 辅助交付和完全自动交付的检查清单 | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
 | 25 | true | 125 | 11 | 50 | short-description, cannibalization | not-included | AI 辅助交付常见错误和解决步骤 | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx |
 | 25 | true | 125 | 11 | 58 | short-description, cannibalization | not-included | AI 辅助交付和完全自动交付有什么区别 | content/blog/ai-assisted-vs-automated-delivery.mdx |
-| 25 | true | 125 | 11 | 52 | short-description, cannibalization | not-included | AI 新手接项目前的项目适配检查清单 | content/blog/ai-beginner-project-fit-check-checklist.mdx |
+| 26 | true | 125 | 11 | 52 | short-description, cannibalization | not-included | AI 新手接项目前的项目适配检查清单 | content/blog/ai-beginner-project-fit-check-checklist.mdx |
 | 26 | true | 125 | 11 | 61 | short-description, cannibalization | not-included | AI 新手判断接项目时的常见错误 | content/blog/ai-beginner-project-fit-check-mistakes.mdx |
-| 26 | true | 125 | 11 | 53 | short-description, cannibalization | not-included | AI 新手如何判断自己能不能接项目 | content/blog/ai-beginner-project-fit-check.mdx |
 | 26 | true | 125 | 11 | 54 | short-description, cannibalization | not-included | 新手 30 天 AI 工具实践执行检查清单 | content/blog/ai-freelance-30-day-execution-checklist.mdx |
 | 27 | true | 125 | 11 | 62 | short-description, cannibalization | not-included | 新手 30 天 AI 工具实践计划常见执行错误 | content/blog/ai-freelance-30-day-execution-mistakes.mdx |
 | 27 | true | 125 | 11 | 55 | short-description, cannibalization | not-included | 新手 30 天 AI 工具实践计划怎么执行 | content/blog/ai-freelance-30-day-execution.mdx |
@@ -803,6 +803,28 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
 - Apply edits manually only after approval; publish confirm remains excluded.
 
+### AI 新手如何判断自己能不能接项目
+
+- File: content/blog/ai-beginner-project-fit-check.mdx
+- Wave: 2
+- Ready for public refresh sprint: true
+- Refresh reasons: mojibake-public, short-description, cannibalization
+- Publish confirm: not-included
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "beginner-project-fit-check" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in description after comparing the intended topic and sources.
+- Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
+- Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.
+- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
+- Apply edits manually only after approval; publish confirm remains excluded.
+
 ### AI 小项目练习选题检查清单
 
 - File: content/blog/ai-small-project-practice-topics-checklist.mdx
@@ -828,7 +850,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### 第一次接 AI 小单前要准备什么
 
 - File: content/blog/before-first-ai-freelance-job.mdx
-- Wave: 2
+- Wave: 3
 - Ready for public refresh sprint: true
 - Refresh reasons: mojibake-public, short-description, cannibalization
 - Publish confirm: not-included
@@ -894,7 +916,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### Claude Code 新手常见错误和修正方法
 
 - File: content/blog/claude-code-beginner-mistakes-mistakes.mdx
-- Wave: 3
+- Wave: 4
 - Ready for public refresh sprint: true
 - Refresh reasons: mojibake-public, short-description, cannibalization
 - Publish confirm: not-included
@@ -960,7 +982,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### Claude Code Bug Prompt 常见错误
 
 - File: content/blog/claude-code-bug-prompt-mistakes.mdx
-- Wave: 4
+- Wave: 5
 - Ready for public refresh sprint: true
 - Refresh reasons: mojibake-public, short-description, cannibalization
 - Publish confirm: not-included
@@ -1026,7 +1048,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### Claude Code 新手常用命令怎么整理成项目笔记
 
 - File: content/blog/claude-code-common-commands.mdx
-- Wave: 5
+- Wave: 6
 - Ready for public refresh sprint: true
 - Refresh reasons: mojibake-public, short-description, cannibalization
 - Publish confirm: not-included
@@ -1092,7 +1114,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### 哪些小项目任务适合用 Claude Code 辅助项目
 
 - File: content/blog/claude-code-small-project-tasks.mdx
-- Wave: 6
+- Wave: 7
 - Ready for public refresh sprint: true
 - Refresh reasons: mojibake-public, short-description, cannibalization
 - Publish confirm: not-included
@@ -1158,7 +1180,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### Codex 自动化开发流程哪些步骤不能省
 
 - File: content/blog/codex-automation-steps-not-skip.mdx
-- Wave: 7
+- Wave: 8
 - Ready for public refresh sprint: true
 - Refresh reasons: mojibake-public, short-description, cannibalization
 - Publish confirm: not-included
@@ -1224,7 +1246,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### Codex 安装前置条件检查清单
 
 - File: content/blog/codex-install-prerequisites-checklist.mdx
-- Wave: 8
+- Wave: 9
 - Ready for public refresh sprint: true
 - Refresh reasons: mojibake-public, short-description, cannibalization
 - Publish confirm: not-included
@@ -1290,7 +1312,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### Upwork 筛单风险判断能不能接
 
 - File: content/blog/codex-upwork-job-risk-check-freelance-scope.mdx
-- Wave: 9
+- Wave: 10
 - Ready for public refresh sprint: true
 - Refresh reasons: mojibake-public, short-description, cannibalization
 - Publish confirm: not-included
@@ -1356,7 +1378,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### module not found 常见错误和解决步骤
 
 - File: content/blog/module-not-found-debug-mistakes.mdx
-- Wave: 10
+- Wave: 11
 - Ready for public refresh sprint: true
 - Refresh reasons: mojibake-public, short-description, cannibalization
 - Publish confirm: not-included
@@ -1422,7 +1444,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### permission denied 报错新手怎么处理：常见错误和解决步骤
 
 - File: content/blog/permission-denied-fix-mistakes.mdx
-- Wave: 11
+- Wave: 12
 - Ready for public refresh sprint: true
 - Refresh reasons: mojibake-public, short-description, cannibalization
 - Publish confirm: not-included
@@ -1484,7 +1506,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### Codex 接 Upwork 小单怎么判断：风险检查清单
 
 - File: content/blog/codex-upwork-small-job-risk-checklist.mdx
-- Wave: 12
+- Wave: 13
 - Ready for public refresh sprint: true
 - Refresh reasons: mojibake-public, freshness-high
 - Publish confirm: not-included
@@ -1544,7 +1566,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### git authentication failed 常见错误和解决步骤
 
 - File: content/blog/git-authentication-failed-fix-mistakes.mdx
-- Wave: 13
+- Wave: 14
 - Ready for public refresh sprint: true
 - Refresh reasons: mojibake-public, cannibalization
 - Publish confirm: not-included
@@ -1604,7 +1626,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### Node 版本不匹配怎么排查
 
 - File: content/blog/node-version-mismatch-fix.mdx
-- Wave: 14
+- Wave: 15
 - Ready for public refresh sprint: true
 - Refresh reasons: mojibake-public, cannibalization
 - Publish confirm: not-included
@@ -1664,7 +1686,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### Codex 怎么做第一个落地页：使用前怎么判断是否适合
 
 - File: content/blog/codex-first-landing-page-freelance-scope.mdx
-- Wave: 15
+- Wave: 16
 - Ready for public refresh sprint: true
 - Refresh reasons: mojibake-public, short-description
 - Publish confirm: not-included
@@ -1724,7 +1746,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### module not found 使用前怎么判断是否适合
 
 - File: content/blog/module-not-found-debug-freelance-scope.mdx
-- Wave: 16
+- Wave: 17
 - Ready for public refresh sprint: true
 - Refresh reasons: mojibake-public, short-description
 - Publish confirm: not-included
@@ -1784,7 +1806,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门
 
 - File: content/blog/ray-serve-llm-deployment-guide.mdx
-- Wave: 17
+- Wave: 18
 - Ready for public refresh sprint: true
 - Refresh reasons: mojibake-public
 - Publish confirm: not-included
@@ -1842,7 +1864,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### npm run dev 能跑但 build 失败怎么办
 
 - File: content/blog/dev-works-build-fails.mdx
-- Wave: 18
+- Wave: 19
 - Ready for public refresh sprint: true
 - Refresh reasons: short-description, cannibalization, high-priority
 - Publish confirm: not-included
@@ -1902,7 +1924,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### failed to push some refs 常见错误和解决步骤
 
 - File: content/blog/failed-to-push-some-refs-fix-mistakes.mdx
-- Wave: 19
+- Wave: 20
 - Ready for public refresh sprint: true
 - Refresh reasons: short-description, cannibalization, high-priority
 - Publish confirm: not-included
@@ -1962,7 +1984,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### Codex 项目 npm install 报错怎么办：新手排查步骤
 
 - File: content/blog/codex-npm-install-error-beginner-fix.mdx
-- Wave: 20
+- Wave: 21
 - Ready for public refresh sprint: true
 - Refresh reasons: cannibalization, freshness-high
 - Publish confirm: not-included
@@ -2021,7 +2043,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### Next.js hydration error 怎么排查
 
 - File: content/blog/nextjs-hydration-error-debug.mdx
-- Wave: 21
+- Wave: 22
 - Ready for public refresh sprint: true
 - Refresh reasons: cannibalization
 - Publish confirm: not-included
@@ -2080,7 +2102,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### Upwork Proposal 发出去没人回怎么办：新手检查清单
 
 - File: content/blog/upwork-proposal-no-reply-checklist.mdx
-- Wave: 22
+- Wave: 23
 - Ready for public refresh sprint: true
 - Refresh reasons: short-description, freshness-high
 - Publish confirm: not-included
@@ -2140,7 +2162,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### 广告收入要等到什么时候再接
 
 - File: content/blog/ads-income-when-to-start.mdx
-- Wave: 23
+- Wave: 24
 - Ready for public refresh sprint: true
 - Refresh reasons: short-description, cannibalization
 - Publish confirm: not-included
@@ -2200,7 +2222,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### AI 辅助交付和完全自动交付的检查清单
 
 - File: content/blog/ai-assisted-vs-automated-delivery-checklist.mdx
-- Wave: 24
+- Wave: 25
 - Ready for public refresh sprint: true
 - Refresh reasons: short-description, cannibalization
 - Publish confirm: not-included
@@ -2260,7 +2282,7 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### AI 新手接项目前的项目适配检查清单
 
 - File: content/blog/ai-beginner-project-fit-check-checklist.mdx
-- Wave: 25
+- Wave: 26
 - Ready for public refresh sprint: true
 - Refresh reasons: short-description, cannibalization
 - Publish confirm: not-included
@@ -2280,26 +2302,6 @@ This report is read-only. It groups public pages into manual SEO refresh waves w
 ### AI 新手判断接项目时的常见错误
 
 - File: content/blog/ai-beginner-project-fit-check-mistakes.mdx
-- Wave: 26
-- Ready for public refresh sprint: true
-- Refresh reasons: short-description, cannibalization
-- Publish confirm: not-included
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar slug stem conflict "beginner-project-fit-check" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-- Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.
-- Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-- Apply edits manually only after approval; publish confirm remains excluded.
-
-### AI 新手如何判断自己能不能接项目
-
-- File: content/blog/ai-beginner-project-fit-check.mdx
 - Wave: 26
 - Ready for public refresh sprint: true
 - Refresh reasons: short-description, cannibalization

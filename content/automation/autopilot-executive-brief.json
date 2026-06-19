@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T02:13:10.889Z",
+  "generatedAt": "2026-06-19T06:41:55.248Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -21,9 +21,11 @@
     "publishConfirmCommandsIncluded": 0,
     "routeWarningItems": 3,
     "trafficDataAvailable": false,
-    "unsafeItems": 0
+    "unsafeItems": 1
   },
-  "unsafeReasons": [],
+  "unsafeReasons": [
+    "traffic source summary is inconsistent"
+  ],
   "topApprovalActions": [
     {
       "action": "Human reviewer verifies sources, SEO warnings, internal link path, and risk language; stop before mark:review until approval.",
@@ -112,14 +114,14 @@
       "action": "Use docs/public-refresh-sprint-board.md to refresh existing public articles without claiming traffic.",
       "publishConfirm": "not-included",
       "summary": {
-        "actionItems": 5030,
+        "actionItems": 5032,
         "cannibalizationItems": 241,
-        "highPriorityItems": 59,
+        "highPriorityItems": 60,
         "items": 500,
         "itemsPerWave": 3,
         "itemsReadyForPublicRefreshSprint": 500,
         "liveMissingFromSitemap": 0,
-        "mojibakePublicItems": 51,
+        "mojibakePublicItems": 52,
         "publicArticles": 500,
         "publishConfirmCommandsIncluded": 0,
         "publishedButNoindexed": 0,

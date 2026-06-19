@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-19T02:13:46.087Z
+Generated at: 2026-06-19T06:42:14.515Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -39,7 +39,7 @@ This digest is read-only. It summarizes automation reports and does not publish 
 - Forbidden workflow commands: 0
 - Route warning items: 3
 - Traffic data available: false
-- Unsafe items: 0
+- Unsafe items: 1
 
 | Priority | Human gate | Title | File | Reason |
 | ---: | --- | --- | --- | --- |
@@ -67,17 +67,17 @@ This digest is read-only. It summarizes automation reports and does not publish 
 - Content integrity warning/blocking items: 0/0
 - Public mojibake warning items: 0
 - Next batch warning/action items: 3/30
-- Public refresh action items: 5030
+- Public refresh action items: 5032
 - Publish confirm commands included: 0
 - Traffic data available: false
-- Unsafe items: 0
+- Unsafe items: 1
 
 ### Bottleneck Reasons
 
 - No article is publishable without explicit human approval.
 - 3 draft article(s) are ready for human approval before mark:review.
 - 3 next-batch route item(s) still need SEO/query/freshness remediation review.
-- 51 public article(s) need garbled-copy refresh before traffic work is credible.
+- 52 public article(s) need garbled-copy refresh before traffic work is credible.
 - Traffic data is unavailable, so traffic claims remain blocked.
 
 ### Next Human Approval
@@ -314,7 +314,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=tr
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=th
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/
 - https://docs.vllm.ai -> https://docs.vllm.ai/en/latest/
@@ -346,7 +346,7 @@ Unsafe source remediation items:
 | true | redirected-url | 11 | 0 | content/blog/tools-not-to-buy-first.mdx<br>content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/together-ai-api-beginner-guide.mdx<br>content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx<br>content/blog/vercel-deploy-checklist-template.mdx<br>content/blog/vercel-404-after-deploy-freelance-scope.mdx<br>content/blog/windows-path-permission-install-fix.mdx<br>content/blog/windows-path-permission-install-fix-checklist.mdx<br>content/blog/windows-path-permission-install-fix-freelance-scope.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://docs.anthropic.com | https://platform.claude.com/docs/en/home |
 | true | redirected-url | 7 | 0 | content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/together-ai-api-beginner-guide.mdx<br>content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://platform.openai.com/docs/guides/retrieval | https://developers.openai.com/api/docs/guides/retrieval |
 | true | redirected-url | 5 | 0 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/windows-path-permission-install-fix-checklist.mdx<br>content/blog/windows-path-permission-install-fix-freelance-scope.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://platform.openai.com/docs/guides/agents | https://developers.openai.com/api/docs/guides/agents |
-| true | redirected-url | 2 | 0 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=tr |
+| true | redirected-url | 2 | 0 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=th |
 | true | redirected-url | 2 | 0 | content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx | https://docs.llamaindex.ai | https://developers.llamaindex.ai/python/framework/ |
 
 ## Source Replacement Decisions
@@ -1300,13 +1300,13 @@ Next review files:
 - Traffic data available: false
 - Can claim traffic: false
 - Claimable metrics: 0
-- Measured traffic sources: none
+- Measured traffic sources: google-analytics
 - Search Console verification evidence: false
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
 - Traffic claim files scanned: 240
-- Traffic claim watch mentions: 9122
+- Traffic claim watch mentions: 9126
 
 ## Public Surface Inventory
 
@@ -1878,7 +1878,7 @@ Public categories:
 - Action items: 2723
 - Live missing from sitemap: 0
 - Published but noindexed: 0
-- Measured traffic sources: 0
+- Measured traffic sources: 1
 - Publish confirm commands included: 0
 - Traffic data available: false
 - Unsafe items: 0
@@ -1908,12 +1908,12 @@ Public categories:
 - Waves: 167
 - Items per wave: 3
 - Ready for public refresh sprint: 500
-- High-priority items: 59
+- High-priority items: 60
 - SEO warning items: 0
 - Short-description items: 457
-- Mojibake public items: 51
+- Mojibake public items: 52
 - Cannibalization items: 241
-- Action items: 5030
+- Action items: 5032
 - Live missing from sitemap: 0
 - Published but noindexed: 0
 - Publish confirm commands included: 0
@@ -1923,31 +1923,31 @@ Public categories:
 | Wave | Ready | High priority | Actions | Reasons | Files |
 | ---: | ---: | ---: | ---: | --- | --- |
 | 1 | 3/3 | 3 | 39 | mojibake-public, short-description, freshness-high | content/blog/build-first-webpage-with-codex.mdx<br>content/blog/codex-install-failed-beginner-fix.mdx<br>content/blog/first-upwork-project-pricing-checklist.mdx |
-| 2 | 3/3 | 3 | 39 | mojibake-public, short-description, freshness-high, cannibalization | content/blog/what-is-codex-beginner-start.mdx<br>content/blog/ai-small-project-practice-topics-checklist.mdx<br>content/blog/before-first-ai-freelance-job.mdx |
-| 3 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/canva-portfolio-cover-tips-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-mistakes.mdx |
-| 4 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-beginner-use-cases-checklist.mdx<br>content/blog/claude-code-beginner-use-cases.mdx<br>content/blog/claude-code-bug-prompt-mistakes.mdx |
-| 5 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-bug-prompt.mdx<br>content/blog/claude-code-common-commands-mistakes.mdx<br>content/blog/claude-code-common-commands.mdx |
-| 6 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-error-debug-mistakes.mdx<br>content/blog/claude-code-github-file-scope-mistakes.mdx<br>content/blog/claude-code-small-project-tasks.mdx |
-| 7 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-vs-codex-web-editing-checklist.mdx<br>content/blog/codex-automation-steps-not-skip-mistakes.mdx<br>content/blog/codex-automation-steps-not-skip.mdx |
-| 8 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-edit-existing-ui-mistakes.mdx<br>content/blog/codex-first-day-guide-checklist.mdx<br>content/blog/codex-install-prerequisites-checklist.mdx |
-| 9 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-npm-install-errors-mistakes.mdx<br>content/blog/codex-npm-install-errors.mdx<br>content/blog/codex-upwork-job-risk-check-freelance-scope.mdx |
-| 10 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-upwork-job-risk-check.mdx<br>content/blog/daily-ai-freelance-practice-log.mdx<br>content/blog/module-not-found-debug-mistakes.mdx |
-| 11 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/node-version-mismatch-fix-mistakes.mdx<br>content/blog/permission-denied-fix-checklist.mdx<br>content/blog/permission-denied-fix-mistakes.mdx |
-| 12 | 3/3 | 3 | 33 | mojibake-public, freshness-high | content/blog/codex-code-review-delivery-checklist.mdx<br>content/blog/codex-github-before-commit-checklist.mdx<br>content/blog/codex-upwork-small-job-risk-checklist.mdx |
-| 13 | 3/3 | 3 | 33 | mojibake-public, freshness-high, cannibalization | content/blog/codex-vercel-deploy-preflight-checklist.mdx<br>content/blog/codex-vs-claude-code-beginner-checklist.mdx<br>content/blog/git-authentication-failed-fix-mistakes.mdx |
-| 14 | 3/3 | 3 | 33 | mojibake-public, cannibalization | content/blog/git-authentication-failed-fix.mdx<br>content/blog/github-actions-build-log-debug-checklist.mdx<br>content/blog/node-version-mismatch-fix.mdx |
-| 15 | 3/3 | 3 | 33 | mojibake-public, short-description | content/blog/ai-ppt-beginner-guide.mdx<br>content/blog/ai-tools-recommendation-beginner.mdx<br>content/blog/codex-first-landing-page-freelance-scope.mdx |
-| 16 | 3/3 | 3 | 33 | mojibake-public, short-description | content/blog/dify-metadata-filtering-rag-guide.mdx<br>content/blog/llm-cost-monitoring-dashboard-guide.mdx<br>content/blog/module-not-found-debug-freelance-scope.mdx |
-| 17 | 3/3 | 3 | 31 | mojibake-public, short-description | content/blog/node-version-mismatch-fix-freelance-scope.mdx<br>content/blog/rag-prompt-injection-defense-guide.mdx<br>content/blog/ray-serve-llm-deployment-guide.mdx |
-| 18 | 3/3 | 3 | 33 | short-description, cannibalization, high-priority | content/blog/dev-works-build-fails-checklist.mdx<br>content/blog/dev-works-build-fails-mistakes.mdx<br>content/blog/dev-works-build-fails.mdx |
-| 19 | 3/3 | 3 | 33 | short-description, cannibalization, high-priority | content/blog/failed-to-push-some-refs-fix-checklist.mdx<br>content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx<br>content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
-| 20 | 3/3 | 2 | 33 | short-description, cannibalization, high-priority, freshness-high | content/blog/nextjs-hydration-error-debug-checklist.mdx<br>content/blog/nextjs-hydration-error-debug-mistakes.mdx<br>content/blog/codex-npm-install-error-beginner-fix.mdx |
-| 21 | 3/3 | 0 | 31 | short-description, freshness-high, cannibalization | content/blog/codex-generated-code-review-guide.mdx<br>content/blog/failed-to-push-some-refs-fix.mdx<br>content/blog/nextjs-hydration-error-debug.mdx |
-| 22 | 3/3 | 0 | 33 | short-description, freshness-high | content/blog/payoneer-wise-paypal-beginner-comparison.mdx<br>content/blog/upwork-client-requirements-analysis-beginner.mdx<br>content/blog/upwork-proposal-no-reply-checklist.mdx |
-| 23 | 3/3 | 0 | 33 | short-description, freshness-high, cannibalization | content/blog/vercel-env-variable-missing-beginner-guide.mdx<br>content/blog/ads-income-when-to-start-checklist.mdx<br>content/blog/ads-income-when-to-start.mdx |
-| 24 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/affiliate-vs-service-income-checklist.mdx<br>content/blog/affiliate-vs-service-income.mdx<br>content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
-| 25 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx<br>content/blog/ai-assisted-vs-automated-delivery.mdx<br>content/blog/ai-beginner-project-fit-check-checklist.mdx |
-| 26 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-beginner-project-fit-check-mistakes.mdx<br>content/blog/ai-beginner-project-fit-check.mdx<br>content/blog/ai-freelance-30-day-execution-checklist.mdx |
+| 2 | 3/3 | 3 | 39 | mojibake-public, short-description, freshness-high, cannibalization | content/blog/what-is-codex-beginner-start.mdx<br>content/blog/ai-beginner-project-fit-check.mdx<br>content/blog/ai-small-project-practice-topics-checklist.mdx |
+| 3 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/before-first-ai-freelance-job.mdx<br>content/blog/canva-portfolio-cover-tips-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-checklist.mdx |
+| 4 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-beginner-mistakes-mistakes.mdx<br>content/blog/claude-code-beginner-use-cases-checklist.mdx<br>content/blog/claude-code-beginner-use-cases.mdx |
+| 5 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-bug-prompt-mistakes.mdx<br>content/blog/claude-code-bug-prompt.mdx<br>content/blog/claude-code-common-commands-mistakes.mdx |
+| 6 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-common-commands.mdx<br>content/blog/claude-code-error-debug-mistakes.mdx<br>content/blog/claude-code-github-file-scope-mistakes.mdx |
+| 7 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-small-project-tasks.mdx<br>content/blog/claude-code-vs-codex-web-editing-checklist.mdx<br>content/blog/codex-automation-steps-not-skip-mistakes.mdx |
+| 8 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-automation-steps-not-skip.mdx<br>content/blog/codex-edit-existing-ui-mistakes.mdx<br>content/blog/codex-first-day-guide-checklist.mdx |
+| 9 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-install-prerequisites-checklist.mdx<br>content/blog/codex-npm-install-errors-mistakes.mdx<br>content/blog/codex-npm-install-errors.mdx |
+| 10 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-upwork-job-risk-check-freelance-scope.mdx<br>content/blog/codex-upwork-job-risk-check.mdx<br>content/blog/daily-ai-freelance-practice-log.mdx |
+| 11 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/module-not-found-debug-mistakes.mdx<br>content/blog/node-version-mismatch-fix-mistakes.mdx<br>content/blog/permission-denied-fix-checklist.mdx |
+| 12 | 3/3 | 3 | 35 | mojibake-public, short-description, cannibalization, freshness-high | content/blog/permission-denied-fix-mistakes.mdx<br>content/blog/codex-code-review-delivery-checklist.mdx<br>content/blog/codex-github-before-commit-checklist.mdx |
+| 13 | 3/3 | 3 | 33 | mojibake-public, freshness-high | content/blog/codex-upwork-small-job-risk-checklist.mdx<br>content/blog/codex-vercel-deploy-preflight-checklist.mdx<br>content/blog/codex-vs-claude-code-beginner-checklist.mdx |
+| 14 | 3/3 | 3 | 33 | mojibake-public, cannibalization | content/blog/git-authentication-failed-fix-mistakes.mdx<br>content/blog/git-authentication-failed-fix.mdx<br>content/blog/github-actions-build-log-debug-checklist.mdx |
+| 15 | 3/3 | 3 | 33 | mojibake-public, cannibalization, short-description | content/blog/node-version-mismatch-fix.mdx<br>content/blog/ai-ppt-beginner-guide.mdx<br>content/blog/ai-tools-recommendation-beginner.mdx |
+| 16 | 3/3 | 3 | 33 | mojibake-public, short-description | content/blog/codex-first-landing-page-freelance-scope.mdx<br>content/blog/dify-metadata-filtering-rag-guide.mdx<br>content/blog/llm-cost-monitoring-dashboard-guide.mdx |
+| 17 | 3/3 | 3 | 33 | mojibake-public, short-description | content/blog/module-not-found-debug-freelance-scope.mdx<br>content/blog/node-version-mismatch-fix-freelance-scope.mdx<br>content/blog/rag-prompt-injection-defense-guide.mdx |
+| 18 | 3/3 | 3 | 31 | mojibake-public, short-description, cannibalization, high-priority | content/blog/ray-serve-llm-deployment-guide.mdx<br>content/blog/dev-works-build-fails-checklist.mdx<br>content/blog/dev-works-build-fails-mistakes.mdx |
+| 19 | 3/3 | 3 | 33 | short-description, cannibalization, high-priority | content/blog/dev-works-build-fails.mdx<br>content/blog/failed-to-push-some-refs-fix-checklist.mdx<br>content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx |
+| 20 | 3/3 | 3 | 33 | short-description, cannibalization, high-priority | content/blog/failed-to-push-some-refs-fix-mistakes.mdx<br>content/blog/nextjs-hydration-error-debug-checklist.mdx<br>content/blog/nextjs-hydration-error-debug-mistakes.mdx |
+| 21 | 3/3 | 0 | 32 | cannibalization, freshness-high, short-description | content/blog/codex-npm-install-error-beginner-fix.mdx<br>content/blog/codex-generated-code-review-guide.mdx<br>content/blog/failed-to-push-some-refs-fix.mdx |
+| 22 | 3/3 | 0 | 32 | cannibalization, short-description, freshness-high | content/blog/nextjs-hydration-error-debug.mdx<br>content/blog/payoneer-wise-paypal-beginner-comparison.mdx<br>content/blog/upwork-client-requirements-analysis-beginner.mdx |
+| 23 | 3/3 | 0 | 33 | short-description, freshness-high, cannibalization | content/blog/upwork-proposal-no-reply-checklist.mdx<br>content/blog/vercel-env-variable-missing-beginner-guide.mdx<br>content/blog/ads-income-when-to-start-checklist.mdx |
+| 24 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ads-income-when-to-start.mdx<br>content/blog/affiliate-vs-service-income-checklist.mdx<br>content/blog/affiliate-vs-service-income.mdx |
+| 25 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx<br>content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx<br>content/blog/ai-assisted-vs-automated-delivery.mdx |
+| 26 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-beginner-project-fit-check-checklist.mdx<br>content/blog/ai-beginner-project-fit-check-mistakes.mdx<br>content/blog/ai-freelance-30-day-execution-checklist.mdx |
 | 27 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-30-day-execution-mistakes.mdx<br>content/blog/ai-freelance-30-day-execution.mdx<br>content/blog/ai-freelance-automation-compliance-risk-checklist.mdx |
 | 28 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx<br>content/blog/ai-freelance-automation-compliance-risk.mdx<br>content/blog/ai-freelance-common-misconceptions-checklist.mdx |
 | 29 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-common-misconceptions-mistakes.mdx<br>content/blog/ai-freelance-common-misconceptions.mdx<br>content/blog/ai-freelance-failure-review-checklist.mdx |
@@ -2096,17 +2096,17 @@ Public categories:
 | 1 | true | 210 | 13 | 87 | mojibake-public, short-description, freshness-high | not-included | Codex 安装失败怎么办 | content/blog/codex-install-failed-beginner-fix.mdx |
 | 1 | true | 210 | 13 | 72 | mojibake-public, short-description, freshness-high | not-included | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
 | 2 | true | 210 | 13 | 89 | mojibake-public, short-description, freshness-high | not-included | Codex 是什么新手怎么开始 | content/blog/what-is-codex-beginner-start.mdx |
+| 2 | true | 205 | 13 | 53 | mojibake-public, short-description, cannibalization | not-included | AI 新手如何判断自己能不能接项目 | content/blog/ai-beginner-project-fit-check.mdx |
 | 2 | true | 205 | 13 | 52 | mojibake-public, short-description, cannibalization | not-included | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
-| 2 | true | 205 | 13 | 56 | mojibake-public, short-description, cannibalization | not-included | 第一次接 AI 小单前要准备什么 | content/blog/before-first-ai-freelance-job.mdx |
+| 3 | true | 205 | 13 | 56 | mojibake-public, short-description, cannibalization | not-included | 第一次接 AI 小单前要准备什么 | content/blog/before-first-ai-freelance-job.mdx |
 | 3 | true | 205 | 13 | 61 | mojibake-public, short-description, cannibalization | not-included | Canva 作品集封面发布前检查清单 | content/blog/canva-portfolio-cover-tips-checklist.mdx |
 | 3 | true | 205 | 13 | 59 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手使用检查清单 | content/blog/claude-code-beginner-mistakes-checklist.mdx |
-| 3 | true | 205 | 13 | 68 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手常见错误和修正方法 | content/blog/claude-code-beginner-mistakes-mistakes.mdx |
+| 4 | true | 205 | 13 | 68 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手常见错误和修正方法 | content/blog/claude-code-beginner-mistakes-mistakes.mdx |
 | 4 | true | 205 | 13 | 60 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手使用场景检查清单 | content/blog/claude-code-beginner-use-cases-checklist.mdx |
 | 4 | true | 205 | 13 | 71 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手适合用在哪些项目场景 | content/blog/claude-code-beginner-use-cases.mdx |
-| 4 | true | 205 | 13 | 70 | mojibake-public, short-description, cannibalization | not-included | Claude Code Bug Prompt 常见错误 | content/blog/claude-code-bug-prompt-mistakes.mdx |
+| 5 | true | 205 | 13 | 70 | mojibake-public, short-description, cannibalization | not-included | Claude Code Bug Prompt 常见错误 | content/blog/claude-code-bug-prompt-mistakes.mdx |
 | 5 | true | 205 | 13 | 74 | mojibake-public, short-description, cannibalization | not-included | Claude Code 修 bug 的 prompt 怎么写 | content/blog/claude-code-bug-prompt.mdx |
 | 5 | true | 205 | 13 | 61 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手运行常用命令时的常见错误 | content/blog/claude-code-common-commands-mistakes.mdx |
-| 5 | true | 205 | 13 | 72 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手常用命令怎么整理成项目笔记 | content/blog/claude-code-common-commands.mdx |
 
 ## Public Search Refresh Session Pack
 
@@ -2114,12 +2114,12 @@ Public categories:
 - Sessions: 167
 - Files covered: 500
 - Ready items: 500
-- Action items: 5030
-- High-priority items: 59
+- Action items: 5032
+- High-priority items: 60
 - SEO warning sessions: 0
-- Short-description sessions: 154
-- Mojibake sessions: 17
-- Cannibalization sessions: 82
+- Short-description sessions: 155
+- Mojibake sessions: 18
+- Cannibalization sessions: 84
 - Live missing from sitemap: 0
 - Publish confirm commands included: 0
 - Traffic data available: false
@@ -2128,31 +2128,31 @@ Public categories:
 | Wave | Session | Ready | Actions | High priority | Reasons | Files |
 | ---: | --- | ---: | ---: | ---: | --- | --- |
 | 1 | public search refresh wave 1 | 3/3 | 39 | 3 | mojibake-public, short-description, freshness-high | content/blog/build-first-webpage-with-codex.mdx<br>content/blog/codex-install-failed-beginner-fix.mdx<br>content/blog/first-upwork-project-pricing-checklist.mdx |
-| 2 | public search refresh wave 2 | 3/3 | 39 | 3 | mojibake-public, short-description, freshness-high, cannibalization | content/blog/what-is-codex-beginner-start.mdx<br>content/blog/ai-small-project-practice-topics-checklist.mdx<br>content/blog/before-first-ai-freelance-job.mdx |
-| 3 | public search refresh wave 3 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/canva-portfolio-cover-tips-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-mistakes.mdx |
-| 4 | public search refresh wave 4 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-beginner-use-cases-checklist.mdx<br>content/blog/claude-code-beginner-use-cases.mdx<br>content/blog/claude-code-bug-prompt-mistakes.mdx |
-| 5 | public search refresh wave 5 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-bug-prompt.mdx<br>content/blog/claude-code-common-commands-mistakes.mdx<br>content/blog/claude-code-common-commands.mdx |
-| 6 | public search refresh wave 6 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-error-debug-mistakes.mdx<br>content/blog/claude-code-github-file-scope-mistakes.mdx<br>content/blog/claude-code-small-project-tasks.mdx |
-| 7 | public search refresh wave 7 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-vs-codex-web-editing-checklist.mdx<br>content/blog/codex-automation-steps-not-skip-mistakes.mdx<br>content/blog/codex-automation-steps-not-skip.mdx |
-| 8 | public search refresh wave 8 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-edit-existing-ui-mistakes.mdx<br>content/blog/codex-first-day-guide-checklist.mdx<br>content/blog/codex-install-prerequisites-checklist.mdx |
-| 9 | public search refresh wave 9 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-npm-install-errors-mistakes.mdx<br>content/blog/codex-npm-install-errors.mdx<br>content/blog/codex-upwork-job-risk-check-freelance-scope.mdx |
-| 10 | public search refresh wave 10 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-upwork-job-risk-check.mdx<br>content/blog/daily-ai-freelance-practice-log.mdx<br>content/blog/module-not-found-debug-mistakes.mdx |
-| 11 | public search refresh wave 11 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/node-version-mismatch-fix-mistakes.mdx<br>content/blog/permission-denied-fix-checklist.mdx<br>content/blog/permission-denied-fix-mistakes.mdx |
-| 12 | public search refresh wave 12 | 3/3 | 33 | 3 | mojibake-public, freshness-high | content/blog/codex-code-review-delivery-checklist.mdx<br>content/blog/codex-github-before-commit-checklist.mdx<br>content/blog/codex-upwork-small-job-risk-checklist.mdx |
-| 13 | public search refresh wave 13 | 3/3 | 33 | 3 | mojibake-public, freshness-high, cannibalization | content/blog/codex-vercel-deploy-preflight-checklist.mdx<br>content/blog/codex-vs-claude-code-beginner-checklist.mdx<br>content/blog/git-authentication-failed-fix-mistakes.mdx |
-| 14 | public search refresh wave 14 | 3/3 | 33 | 3 | mojibake-public, cannibalization | content/blog/git-authentication-failed-fix.mdx<br>content/blog/github-actions-build-log-debug-checklist.mdx<br>content/blog/node-version-mismatch-fix.mdx |
-| 15 | public search refresh wave 15 | 3/3 | 33 | 3 | mojibake-public, short-description | content/blog/ai-ppt-beginner-guide.mdx<br>content/blog/ai-tools-recommendation-beginner.mdx<br>content/blog/codex-first-landing-page-freelance-scope.mdx |
-| 16 | public search refresh wave 16 | 3/3 | 33 | 3 | mojibake-public, short-description | content/blog/dify-metadata-filtering-rag-guide.mdx<br>content/blog/llm-cost-monitoring-dashboard-guide.mdx<br>content/blog/module-not-found-debug-freelance-scope.mdx |
-| 17 | public search refresh wave 17 | 3/3 | 31 | 3 | mojibake-public, short-description | content/blog/node-version-mismatch-fix-freelance-scope.mdx<br>content/blog/rag-prompt-injection-defense-guide.mdx<br>content/blog/ray-serve-llm-deployment-guide.mdx |
-| 18 | public search refresh wave 18 | 3/3 | 33 | 3 | short-description, cannibalization, high-priority | content/blog/dev-works-build-fails-checklist.mdx<br>content/blog/dev-works-build-fails-mistakes.mdx<br>content/blog/dev-works-build-fails.mdx |
-| 19 | public search refresh wave 19 | 3/3 | 33 | 3 | short-description, cannibalization, high-priority | content/blog/failed-to-push-some-refs-fix-checklist.mdx<br>content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx<br>content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
-| 20 | public search refresh wave 20 | 3/3 | 33 | 2 | short-description, cannibalization, high-priority, freshness-high | content/blog/nextjs-hydration-error-debug-checklist.mdx<br>content/blog/nextjs-hydration-error-debug-mistakes.mdx<br>content/blog/codex-npm-install-error-beginner-fix.mdx |
-| 21 | public search refresh wave 21 | 3/3 | 31 | 0 | short-description, freshness-high, cannibalization | content/blog/codex-generated-code-review-guide.mdx<br>content/blog/failed-to-push-some-refs-fix.mdx<br>content/blog/nextjs-hydration-error-debug.mdx |
-| 22 | public search refresh wave 22 | 3/3 | 33 | 0 | short-description, freshness-high | content/blog/payoneer-wise-paypal-beginner-comparison.mdx<br>content/blog/upwork-client-requirements-analysis-beginner.mdx<br>content/blog/upwork-proposal-no-reply-checklist.mdx |
-| 23 | public search refresh wave 23 | 3/3 | 33 | 0 | short-description, freshness-high, cannibalization | content/blog/vercel-env-variable-missing-beginner-guide.mdx<br>content/blog/ads-income-when-to-start-checklist.mdx<br>content/blog/ads-income-when-to-start.mdx |
-| 24 | public search refresh wave 24 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/affiliate-vs-service-income-checklist.mdx<br>content/blog/affiliate-vs-service-income.mdx<br>content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
-| 25 | public search refresh wave 25 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx<br>content/blog/ai-assisted-vs-automated-delivery.mdx<br>content/blog/ai-beginner-project-fit-check-checklist.mdx |
-| 26 | public search refresh wave 26 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-beginner-project-fit-check-mistakes.mdx<br>content/blog/ai-beginner-project-fit-check.mdx<br>content/blog/ai-freelance-30-day-execution-checklist.mdx |
+| 2 | public search refresh wave 2 | 3/3 | 39 | 3 | mojibake-public, short-description, freshness-high, cannibalization | content/blog/what-is-codex-beginner-start.mdx<br>content/blog/ai-beginner-project-fit-check.mdx<br>content/blog/ai-small-project-practice-topics-checklist.mdx |
+| 3 | public search refresh wave 3 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/before-first-ai-freelance-job.mdx<br>content/blog/canva-portfolio-cover-tips-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-checklist.mdx |
+| 4 | public search refresh wave 4 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-beginner-mistakes-mistakes.mdx<br>content/blog/claude-code-beginner-use-cases-checklist.mdx<br>content/blog/claude-code-beginner-use-cases.mdx |
+| 5 | public search refresh wave 5 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-bug-prompt-mistakes.mdx<br>content/blog/claude-code-bug-prompt.mdx<br>content/blog/claude-code-common-commands-mistakes.mdx |
+| 6 | public search refresh wave 6 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-common-commands.mdx<br>content/blog/claude-code-error-debug-mistakes.mdx<br>content/blog/claude-code-github-file-scope-mistakes.mdx |
+| 7 | public search refresh wave 7 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-small-project-tasks.mdx<br>content/blog/claude-code-vs-codex-web-editing-checklist.mdx<br>content/blog/codex-automation-steps-not-skip-mistakes.mdx |
+| 8 | public search refresh wave 8 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-automation-steps-not-skip.mdx<br>content/blog/codex-edit-existing-ui-mistakes.mdx<br>content/blog/codex-first-day-guide-checklist.mdx |
+| 9 | public search refresh wave 9 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-install-prerequisites-checklist.mdx<br>content/blog/codex-npm-install-errors-mistakes.mdx<br>content/blog/codex-npm-install-errors.mdx |
+| 10 | public search refresh wave 10 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-upwork-job-risk-check-freelance-scope.mdx<br>content/blog/codex-upwork-job-risk-check.mdx<br>content/blog/daily-ai-freelance-practice-log.mdx |
+| 11 | public search refresh wave 11 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/module-not-found-debug-mistakes.mdx<br>content/blog/node-version-mismatch-fix-mistakes.mdx<br>content/blog/permission-denied-fix-checklist.mdx |
+| 12 | public search refresh wave 12 | 3/3 | 35 | 3 | mojibake-public, short-description, cannibalization, freshness-high | content/blog/permission-denied-fix-mistakes.mdx<br>content/blog/codex-code-review-delivery-checklist.mdx<br>content/blog/codex-github-before-commit-checklist.mdx |
+| 13 | public search refresh wave 13 | 3/3 | 33 | 3 | mojibake-public, freshness-high | content/blog/codex-upwork-small-job-risk-checklist.mdx<br>content/blog/codex-vercel-deploy-preflight-checklist.mdx<br>content/blog/codex-vs-claude-code-beginner-checklist.mdx |
+| 14 | public search refresh wave 14 | 3/3 | 33 | 3 | mojibake-public, cannibalization | content/blog/git-authentication-failed-fix-mistakes.mdx<br>content/blog/git-authentication-failed-fix.mdx<br>content/blog/github-actions-build-log-debug-checklist.mdx |
+| 15 | public search refresh wave 15 | 3/3 | 33 | 3 | mojibake-public, cannibalization, short-description | content/blog/node-version-mismatch-fix.mdx<br>content/blog/ai-ppt-beginner-guide.mdx<br>content/blog/ai-tools-recommendation-beginner.mdx |
+| 16 | public search refresh wave 16 | 3/3 | 33 | 3 | mojibake-public, short-description | content/blog/codex-first-landing-page-freelance-scope.mdx<br>content/blog/dify-metadata-filtering-rag-guide.mdx<br>content/blog/llm-cost-monitoring-dashboard-guide.mdx |
+| 17 | public search refresh wave 17 | 3/3 | 33 | 3 | mojibake-public, short-description | content/blog/module-not-found-debug-freelance-scope.mdx<br>content/blog/node-version-mismatch-fix-freelance-scope.mdx<br>content/blog/rag-prompt-injection-defense-guide.mdx |
+| 18 | public search refresh wave 18 | 3/3 | 31 | 3 | mojibake-public, short-description, cannibalization, high-priority | content/blog/ray-serve-llm-deployment-guide.mdx<br>content/blog/dev-works-build-fails-checklist.mdx<br>content/blog/dev-works-build-fails-mistakes.mdx |
+| 19 | public search refresh wave 19 | 3/3 | 33 | 3 | short-description, cannibalization, high-priority | content/blog/dev-works-build-fails.mdx<br>content/blog/failed-to-push-some-refs-fix-checklist.mdx<br>content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx |
+| 20 | public search refresh wave 20 | 3/3 | 33 | 3 | short-description, cannibalization, high-priority | content/blog/failed-to-push-some-refs-fix-mistakes.mdx<br>content/blog/nextjs-hydration-error-debug-checklist.mdx<br>content/blog/nextjs-hydration-error-debug-mistakes.mdx |
+| 21 | public search refresh wave 21 | 3/3 | 32 | 0 | cannibalization, freshness-high, short-description | content/blog/codex-npm-install-error-beginner-fix.mdx<br>content/blog/codex-generated-code-review-guide.mdx<br>content/blog/failed-to-push-some-refs-fix.mdx |
+| 22 | public search refresh wave 22 | 3/3 | 32 | 0 | cannibalization, short-description, freshness-high | content/blog/nextjs-hydration-error-debug.mdx<br>content/blog/payoneer-wise-paypal-beginner-comparison.mdx<br>content/blog/upwork-client-requirements-analysis-beginner.mdx |
+| 23 | public search refresh wave 23 | 3/3 | 33 | 0 | short-description, freshness-high, cannibalization | content/blog/upwork-proposal-no-reply-checklist.mdx<br>content/blog/vercel-env-variable-missing-beginner-guide.mdx<br>content/blog/ads-income-when-to-start-checklist.mdx |
+| 24 | public search refresh wave 24 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ads-income-when-to-start.mdx<br>content/blog/affiliate-vs-service-income-checklist.mdx<br>content/blog/affiliate-vs-service-income.mdx |
+| 25 | public search refresh wave 25 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx<br>content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx<br>content/blog/ai-assisted-vs-automated-delivery.mdx |
+| 26 | public search refresh wave 26 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-beginner-project-fit-check-checklist.mdx<br>content/blog/ai-beginner-project-fit-check-mistakes.mdx<br>content/blog/ai-freelance-30-day-execution-checklist.mdx |
 | 27 | public search refresh wave 27 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-30-day-execution-mistakes.mdx<br>content/blog/ai-freelance-30-day-execution.mdx<br>content/blog/ai-freelance-automation-compliance-risk-checklist.mdx |
 | 28 | public search refresh wave 28 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx<br>content/blog/ai-freelance-automation-compliance-risk.mdx<br>content/blog/ai-freelance-common-misconceptions-checklist.mdx |
 | 29 | public search refresh wave 29 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-common-misconceptions-mistakes.mdx<br>content/blog/ai-freelance-common-misconceptions.mdx<br>content/blog/ai-freelance-failure-review-checklist.mdx |
@@ -2898,7 +2898,7 @@ Public categories:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-19T02:13:35.596Z
+- Latest check: 2026-06-19T06:42:03.983Z
 - Ok: true
 - Public articles checked: 500
 - Sitemap URLs: undefined

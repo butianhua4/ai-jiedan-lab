@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T02:13:00.733Z",
+  "generatedAt": "2026-06-19T06:41:45.185Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -18,7 +18,7 @@
     "approvalItems": 3,
     "decisionRows": 3,
     "matrixUnsafeItems": 0,
-    "mojibakeAffectedFiles": 77,
+    "mojibakeAffectedFiles": 78,
     "mojibakeUnsafeItems": 0,
     "remediationUnsafeItems": 2
   },

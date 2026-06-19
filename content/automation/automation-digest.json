@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T02:13:46.087Z",
+  "generatedAt": "2026-06-19T06:42:14.515Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -40,7 +40,7 @@
     "publishConfirmCommandsIncluded": 0,
     "routeWarningItems": 3,
     "trafficDataAvailable": false,
-    "unsafeItems": 0,
+    "unsafeItems": 1,
     "boardActions": [
       {
         "action": "Use docs/internal-link-sprint-board.md to add one contextual public link per candidate during manual review.",
@@ -71,14 +71,14 @@
         "action": "Use docs/public-refresh-sprint-board.md to refresh existing public articles without claiming traffic.",
         "publishConfirm": "not-included",
         "summary": {
-          "actionItems": 5030,
+          "actionItems": 5032,
           "cannibalizationItems": 241,
-          "highPriorityItems": 59,
+          "highPriorityItems": 60,
           "items": 500,
           "itemsPerWave": 3,
           "itemsReadyForPublicRefreshSprint": 500,
           "liveMissingFromSitemap": 0,
-          "mojibakePublicItems": 51,
+          "mojibakePublicItems": 52,
           "publicArticles": 500,
           "publishConfirmCommandsIncluded": 0,
           "publishedButNoindexed": 0,
@@ -233,7 +233,7 @@
       "No article is publishable without explicit human approval.",
       "3 draft article(s) are ready for human approval before mark:review.",
       "3 next-batch route item(s) still need SEO/query/freshness remediation review.",
-      "51 public article(s) need garbled-copy refresh before traffic work is credible.",
+      "52 public article(s) need garbled-copy refresh before traffic work is credible.",
       "Traffic data is unavailable, so traffic claims remain blocked."
     ],
     "contentIntegrityBlockingItems": 0,
@@ -691,7 +691,7 @@
     ],
     "publicArticles": 500,
     "publicMojibakeWarningItems": 0,
-    "publicRefreshActionItems": 5030,
+    "publicRefreshActionItems": 5032,
     "publicRefreshWarnings": [
       {
         "actionCount": 13,
@@ -852,8 +852,8 @@
       {
         "actionCount": 13,
         "category": "AI 自由职业路线",
-        "descriptionLength": 52,
-        "file": "content/blog/ai-small-project-practice-topics-checklist.mdx",
+        "descriptionLength": 53,
+        "file": "content/blog/ai-beginner-project-fit-check.mdx",
         "priorityScore": 205,
         "publishConfirm": "not-included",
         "readyForPublicRefreshSprint": true,
@@ -862,10 +862,10 @@
           "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
           "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
           "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
-          "Cannibalization check: review similar slug stem conflict \"small-project-practice-topics\" before expanding this page or approving related drafts.",
+          "Cannibalization check: review similar slug stem conflict \"beginner-project-fit-check\" before expanding this page or approving related drafts.",
           "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
           "Apply public-page edits manually only after approval; publish confirm remains excluded.",
-          "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
+          "Repair likely garbled public copy in description after comparing the intended topic and sources.",
           "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
           "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
           "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
@@ -879,13 +879,13 @@
         ],
         "mojibakeSignal": {
           "fields": [
-            "bodyExcerpt"
+            "description"
           ],
-          "sample": "命中这些信号时，换一个低风险题目。练习不需要冒险。"
+          "sample": "AI 新手接项目前，先用需求清晰度、风险等级、验证能力和交付边界判断自己能不能接，避免盲目报价和交付失控。"
         },
-        "slug": "ai-small-project-practice-topics-checklist",
+        "slug": "ai-beginner-project-fit-check",
         "sprintWave": 2,
-        "title": "AI 小项目练习选题检查清单",
+        "title": "AI 新手如何判断自己能不能接项目",
         "unsafeReasons": []
       }
     ],
@@ -900,7 +900,7 @@
       "draft": 148
     },
     "trafficDataAvailable": false,
-    "unsafeItems": 0
+    "unsafeItems": 1
   },
   "humanApprovalDecisionMatrix": {
     "approvalItems": 3,
@@ -2385,7 +2385,7 @@
           "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=tr.",
+          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=th.",
           "Open source URL: https://platform.openai.com/docs.",
           "Open source URL: https://ai-sdk.dev/docs.",
           "Open source URL: https://docs.anthropic.com.",
@@ -3324,10 +3324,10 @@
             "affectedTitles": [
               "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
             ],
-            "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=tr",
+            "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=th",
             "humanChecklist": [
               "Review URL: https://ai.google.dev/docs.",
-              "Review final URL: https://ai.google.dev/gemini-api/docs?hl=tr.",
+              "Review final URL: https://ai.google.dev/gemini-api/docs?hl=th.",
               "HTTP status observed by automation: 200.",
               "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
               "If the final URL is the canonical destination, update the source target during human review.",
@@ -3387,7 +3387,7 @@
           "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=tr.",
+          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=th.",
           "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
           "If the final URL is the canonical destination, update the source target during human review.",
           "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
@@ -5999,7 +5999,7 @@
         "url": "https://ai-sdk.dev/docs"
       },
       {
-        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=tr",
+        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=th",
         "ok": true,
         "references": [
           {
@@ -7335,10 +7335,10 @@
         "affectedTitles": [
           "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
         ],
-        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=tr",
+        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=th",
         "humanChecklist": [
           "Review URL: https://ai.google.dev/docs.",
-          "Review final URL: https://ai.google.dev/gemini-api/docs?hl=tr.",
+          "Review final URL: https://ai.google.dev/gemini-api/docs?hl=th.",
           "HTTP status observed by automation: 200.",
           "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
           "If the final URL is the canonical destination, update the source target during human review.",
@@ -9814,7 +9814,7 @@
           "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=tr.",
+          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=th.",
           "Open source URL: https://platform.openai.com/docs.",
           "Open source URL: https://ai-sdk.dev/docs.",
           "Open source URL: https://docs.anthropic.com.",
@@ -9848,7 +9848,7 @@
           "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=tr."
+          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=th."
         ],
         "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
         "unsafeReasons": []
@@ -20737,7 +20737,9 @@
     "claimableMetrics": 0,
     "failedChecks": 0,
     "liveStatus": 200,
-    "measuredTrafficSources": [],
+    "measuredTrafficSources": [
+      "google-analytics"
+    ],
     "searchConsoleVerificationEvidence": false,
     "trafficDataAvailable": false
   },
@@ -20745,7 +20747,7 @@
     "filesScanned": 240,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 9122
+    "watchMentions": 9126
   },
   "publicSurfaceInventory": {
     "broadCoverage": [
@@ -28443,7 +28445,7 @@
     "items": 500,
     "itemsReadyForHumanRefreshReview": 500,
     "liveMissingFromSitemap": 0,
-    "measuredTrafficSources": 0,
+    "measuredTrafficSources": 1,
     "publicArticles": 500,
     "publishConfirmCommandsIncluded": 0,
     "publishedButNoindexed": 0,
@@ -29531,14 +29533,14 @@
     "unsafeItems": 0
   },
   "publicRefreshSprintBoard": {
-    "actionItems": 5030,
+    "actionItems": 5032,
     "cannibalizationItems": 241,
-    "highPriorityItems": 59,
+    "highPriorityItems": 60,
     "items": 500,
     "itemsPerWave": 3,
     "itemsReadyForPublicRefreshSprint": 500,
     "liveMissingFromSitemap": 0,
-    "mojibakePublicItems": 51,
+    "mojibakePublicItems": 52,
     "publicArticles": 500,
     "publishConfirmCommandsIncluded": 0,
     "publishedButNoindexed": 0,
@@ -29704,6 +29706,45 @@
       {
         "actionCount": 13,
         "category": "AI 自由职业路线",
+        "descriptionLength": 53,
+        "file": "content/blog/ai-beginner-project-fit-check.mdx",
+        "priorityScore": 205,
+        "publishConfirm": "not-included",
+        "readyForPublicRefreshSprint": true,
+        "refreshActions": [
+          "Confirm the public page still answers one clear search intent before editing.",
+          "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+          "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+          "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+          "Cannibalization check: review similar slug stem conflict \"beginner-project-fit-check\" before expanding this page or approving related drafts.",
+          "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+          "Apply public-page edits manually only after approval; publish confirm remains excluded.",
+          "Repair likely garbled public copy in description after comparing the intended topic and sources.",
+          "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
+          "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+          "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
+          "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+          "Apply edits manually only after approval; publish confirm remains excluded."
+        ],
+        "refreshReasons": [
+          "mojibake-public",
+          "short-description",
+          "cannibalization"
+        ],
+        "mojibakeSignal": {
+          "fields": [
+            "description"
+          ],
+          "sample": "AI 新手接项目前，先用需求清晰度、风险等级、验证能力和交付边界判断自己能不能接，避免盲目报价和交付失控。"
+        },
+        "slug": "ai-beginner-project-fit-check",
+        "sprintWave": 2,
+        "title": "AI 新手如何判断自己能不能接项目",
+        "unsafeReasons": []
+      },
+      {
+        "actionCount": 13,
+        "category": "AI 自由职业路线",
         "descriptionLength": 52,
         "file": "content/blog/ai-small-project-practice-topics-checklist.mdx",
         "priorityScore": 205,
@@ -29775,7 +29816,7 @@
           "sample": "不要为了拿下第一单就接受所有要求。第一次项目最重要的是形成可复用流程，而不是冒险碰高权限任务。凡是涉及客户账号、密钥、付款、隐私数据和生产环境的需求，都应该先暂停确认。"
         },
         "slug": "before-first-ai-freelance-job",
-        "sprintWave": 2,
+        "sprintWave": 3,
         "title": "第一次接 AI 小单前要准备什么",
         "unsafeReasons": []
       },
@@ -29892,7 +29933,7 @@
           "sample": "如果检查失败，也要记录失败原因。失败不是坏事，它说明你还在验证，而不是盲目交付。客户看到清楚的失败记录和下一步建议，通常比看到一句含糊的“还在处理中”更容易理解。"
         },
         "slug": "claude-code-beginner-mistakes-mistakes",
-        "sprintWave": 3,
+        "sprintWave": 4,
         "title": "Claude Code 新手常见错误和修正方法",
         "unsafeReasons": []
       },
@@ -30010,7 +30051,7 @@
           "sample": "很多 Claude Code 修 bug 失败，不是工具完全没用，而是 prompt 从一开始就让它盲猜。新手常把“页面有问题”“代码报错了”“帮我修一下”扔给工具，却没有复现步骤、错误原文、预期结果和安全边界。结果工具只能大范围搜索和尝试，风险自然上升。"
         },
         "slug": "claude-code-bug-prompt-mistakes",
-        "sprintWave": 4,
+        "sprintWave": 5,
         "title": "Claude Code Bug Prompt 常见错误",
         "unsafeReasons": []
       },
@@ -30091,45 +30132,6 @@
         "sprintWave": 5,
         "title": "Claude Code 新手运行常用命令时的常见错误",
         "unsafeReasons": []
-      },
-      {
-        "actionCount": 13,
-        "category": "工具流程",
-        "descriptionLength": 72,
-        "file": "content/blog/claude-code-common-commands.mdx",
-        "priorityScore": 205,
-        "publishConfirm": "not-included",
-        "readyForPublicRefreshSprint": true,
-        "refreshActions": [
-          "Confirm the public page still answers one clear search intent before editing.",
-          "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
-          "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
-          "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
-          "Cannibalization check: review similar slug stem conflict \"claude-code-common-commands\" before expanding this page or approving related drafts.",
-          "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
-          "Apply public-page edits manually only after approval; publish confirm remains excluded.",
-          "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
-          "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
-          "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
-          "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
-          "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
-          "Apply edits manually only after approval; publish confirm remains excluded."
-        ],
-        "refreshReasons": [
-          "mojibake-public",
-          "short-description",
-          "cannibalization"
-        ],
-        "mojibakeSignal": {
-          "fields": [
-            "bodyExcerpt"
-          ],
-          "sample": "不要在客户生产项目里盲跑会修改状态的命令。先问清环境，再确认是否有测试分支、测试数据和回滚方式。"
-        },
-        "slug": "claude-code-common-commands",
-        "sprintWave": 5,
-        "title": "Claude Code 新手常用命令怎么整理成项目笔记",
-        "unsafeReasons": []
       }
     ],
     "trafficDataAvailable": false,
@@ -30157,8 +30159,8 @@
         "actionItems": 39,
         "files": [
           "content/blog/what-is-codex-beginner-start.mdx",
-          "content/blog/ai-small-project-practice-topics-checklist.mdx",
-          "content/blog/before-first-ai-freelance-job.mdx"
+          "content/blog/ai-beginner-project-fit-check.mdx",
+          "content/blog/ai-small-project-practice-topics-checklist.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
@@ -30175,9 +30177,9 @@
       {
         "actionItems": 39,
         "files": [
+          "content/blog/before-first-ai-freelance-job.mdx",
           "content/blog/canva-portfolio-cover-tips-checklist.mdx",
-          "content/blog/claude-code-beginner-mistakes-checklist.mdx",
-          "content/blog/claude-code-beginner-mistakes-mistakes.mdx"
+          "content/blog/claude-code-beginner-mistakes-checklist.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
@@ -30193,9 +30195,9 @@
       {
         "actionItems": 39,
         "files": [
+          "content/blog/claude-code-beginner-mistakes-mistakes.mdx",
           "content/blog/claude-code-beginner-use-cases-checklist.mdx",
-          "content/blog/claude-code-beginner-use-cases.mdx",
-          "content/blog/claude-code-bug-prompt-mistakes.mdx"
+          "content/blog/claude-code-beginner-use-cases.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
@@ -30211,9 +30213,9 @@
       {
         "actionItems": 39,
         "files": [
+          "content/blog/claude-code-bug-prompt-mistakes.mdx",
           "content/blog/claude-code-bug-prompt.mdx",
-          "content/blog/claude-code-common-commands-mistakes.mdx",
-          "content/blog/claude-code-common-commands.mdx"
+          "content/blog/claude-code-common-commands-mistakes.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
@@ -30229,9 +30231,9 @@
       {
         "actionItems": 39,
         "files": [
+          "content/blog/claude-code-common-commands.mdx",
           "content/blog/claude-code-error-debug-mistakes.mdx",
-          "content/blog/claude-code-github-file-scope-mistakes.mdx",
-          "content/blog/claude-code-small-project-tasks.mdx"
+          "content/blog/claude-code-github-file-scope-mistakes.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
@@ -30247,9 +30249,9 @@
       {
         "actionItems": 39,
         "files": [
+          "content/blog/claude-code-small-project-tasks.mdx",
           "content/blog/claude-code-vs-codex-web-editing-checklist.mdx",
-          "content/blog/codex-automation-steps-not-skip-mistakes.mdx",
-          "content/blog/codex-automation-steps-not-skip.mdx"
+          "content/blog/codex-automation-steps-not-skip-mistakes.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
@@ -30265,9 +30267,9 @@
       {
         "actionItems": 39,
         "files": [
+          "content/blog/codex-automation-steps-not-skip.mdx",
           "content/blog/codex-edit-existing-ui-mistakes.mdx",
-          "content/blog/codex-first-day-guide-checklist.mdx",
-          "content/blog/codex-install-prerequisites-checklist.mdx"
+          "content/blog/codex-first-day-guide-checklist.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
@@ -30283,9 +30285,9 @@
       {
         "actionItems": 39,
         "files": [
+          "content/blog/codex-install-prerequisites-checklist.mdx",
           "content/blog/codex-npm-install-errors-mistakes.mdx",
-          "content/blog/codex-npm-install-errors.mdx",
-          "content/blog/codex-upwork-job-risk-check-freelance-scope.mdx"
+          "content/blog/codex-npm-install-errors.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
@@ -30301,9 +30303,9 @@
       {
         "actionItems": 39,
         "files": [
+          "content/blog/codex-upwork-job-risk-check-freelance-scope.mdx",
           "content/blog/codex-upwork-job-risk-check.mdx",
-          "content/blog/daily-ai-freelance-practice-log.mdx",
-          "content/blog/module-not-found-debug-mistakes.mdx"
+          "content/blog/daily-ai-freelance-practice-log.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
@@ -30319,9 +30321,9 @@
       {
         "actionItems": 39,
         "files": [
+          "content/blog/module-not-found-debug-mistakes.mdx",
           "content/blog/node-version-mismatch-fix-mistakes.mdx",
-          "content/blog/permission-denied-fix-checklist.mdx",
-          "content/blog/permission-denied-fix-mistakes.mdx"
+          "content/blog/permission-denied-fix-checklist.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
@@ -30335,11 +30337,30 @@
         "wave": 11
       },
       {
+        "actionItems": 35,
+        "files": [
+          "content/blog/permission-denied-fix-mistakes.mdx",
+          "content/blog/codex-code-review-delivery-checklist.mdx",
+          "content/blog/codex-github-before-commit-checklist.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": 3,
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "short-description",
+          "cannibalization",
+          "freshness-high"
+        ],
+        "unsafeItems": 0,
+        "wave": 12
+      },
+      {
         "actionItems": 33,
         "files": [
-          "content/blog/codex-code-review-delivery-checklist.mdx",
-          "content/blog/codex-github-before-commit-checklist.mdx",
-          "content/blog/codex-upwork-small-job-risk-checklist.mdx"
+          "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+          "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "content/blog/codex-vs-claude-code-beginner-checklist.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
@@ -30349,32 +30370,14 @@
           "freshness-high"
         ],
         "unsafeItems": 0,
-        "wave": 12
-      },
-      {
-        "actionItems": 33,
-        "files": [
-          "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
-          "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
-          "content/blog/git-authentication-failed-fix-mistakes.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": 3,
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "freshness-high",
-          "cannibalization"
-        ],
-        "unsafeItems": 0,
         "wave": 13
       },
       {
         "actionItems": 33,
         "files": [
+          "content/blog/git-authentication-failed-fix-mistakes.mdx",
           "content/blog/git-authentication-failed-fix.mdx",
-          "content/blog/github-actions-build-log-debug-checklist.mdx",
-          "content/blog/node-version-mismatch-fix.mdx"
+          "content/blog/github-actions-build-log-debug-checklist.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
@@ -30389,15 +30392,16 @@
       {
         "actionItems": 33,
         "files": [
+          "content/blog/node-version-mismatch-fix.mdx",
           "content/blog/ai-ppt-beginner-guide.mdx",
-          "content/blog/ai-tools-recommendation-beginner.mdx",
-          "content/blog/codex-first-landing-page-freelance-scope.mdx"
+          "content/blog/ai-tools-recommendation-beginner.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
         "readyItems": 3,
         "refreshReasons": [
           "mojibake-public",
+          "cannibalization",
           "short-description"
         ],
         "unsafeItems": 0,
@@ -30406,9 +30410,9 @@
       {
         "actionItems": 33,
         "files": [
+          "content/blog/codex-first-landing-page-freelance-scope.mdx",
           "content/blog/dify-metadata-filtering-rag-guide.mdx",
-          "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
-          "content/blog/module-not-found-debug-freelance-scope.mdx"
+          "content/blog/llm-cost-monitoring-dashboard-guide.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
@@ -30421,11 +30425,11 @@
         "wave": 16
       },
       {
-        "actionItems": 31,
+        "actionItems": 33,
         "files": [
+          "content/blog/module-not-found-debug-freelance-scope.mdx",
           "content/blog/node-version-mismatch-fix-freelance-scope.mdx",
-          "content/blog/rag-prompt-injection-defense-guide.mdx",
-          "content/blog/ray-serve-llm-deployment-guide.mdx"
+          "content/blog/rag-prompt-injection-defense-guide.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
@@ -30438,16 +30442,17 @@
         "wave": 17
       },
       {
-        "actionItems": 33,
+        "actionItems": 31,
         "files": [
+          "content/blog/ray-serve-llm-deployment-guide.mdx",
           "content/blog/dev-works-build-fails-checklist.mdx",
-          "content/blog/dev-works-build-fails-mistakes.mdx",
-          "content/blog/dev-works-build-fails.mdx"
+          "content/blog/dev-works-build-fails-mistakes.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
         "readyItems": 3,
         "refreshReasons": [
+          "mojibake-public",
           "short-description",
           "cannibalization",
           "high-priority"
@@ -30458,9 +30463,9 @@
       {
         "actionItems": 33,
         "files": [
+          "content/blog/dev-works-build-fails.mdx",
           "content/blog/failed-to-push-some-refs-fix-checklist.mdx",
-          "content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx",
-          "content/blog/failed-to-push-some-refs-fix-mistakes.mdx"
+          "content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx"
         ],
         "highPriorityItems": 3,
         "items": 3,
@@ -30476,51 +30481,51 @@
       {
         "actionItems": 33,
         "files": [
+          "content/blog/failed-to-push-some-refs-fix-mistakes.mdx",
           "content/blog/nextjs-hydration-error-debug-checklist.mdx",
-          "content/blog/nextjs-hydration-error-debug-mistakes.mdx",
-          "content/blog/codex-npm-install-error-beginner-fix.mdx"
+          "content/blog/nextjs-hydration-error-debug-mistakes.mdx"
         ],
-        "highPriorityItems": 2,
+        "highPriorityItems": 3,
         "items": 3,
         "readyItems": 3,
         "refreshReasons": [
           "short-description",
           "cannibalization",
-          "high-priority",
-          "freshness-high"
+          "high-priority"
         ],
         "unsafeItems": 0,
         "wave": 20
       },
       {
-        "actionItems": 31,
+        "actionItems": 32,
         "files": [
+          "content/blog/codex-npm-install-error-beginner-fix.mdx",
           "content/blog/codex-generated-code-review-guide.mdx",
-          "content/blog/failed-to-push-some-refs-fix.mdx",
-          "content/blog/nextjs-hydration-error-debug.mdx"
+          "content/blog/failed-to-push-some-refs-fix.mdx"
         ],
         "highPriorityItems": 0,
         "items": 3,
         "readyItems": 3,
         "refreshReasons": [
-          "short-description",
+          "cannibalization",
           "freshness-high",
-          "cannibalization"
+          "short-description"
         ],
         "unsafeItems": 0,
         "wave": 21
       },
       {
-        "actionItems": 33,
+        "actionItems": 32,
         "files": [
+          "content/blog/nextjs-hydration-error-debug.mdx",
           "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
-          "content/blog/upwork-client-requirements-analysis-beginner.mdx",
-          "content/blog/upwork-proposal-no-reply-checklist.mdx"
+          "content/blog/upwork-client-requirements-analysis-beginner.mdx"
         ],
         "highPriorityItems": 0,
         "items": 3,
         "readyItems": 3,
         "refreshReasons": [
+          "cannibalization",
           "short-description",
           "freshness-high"
         ],
@@ -30530,9 +30535,9 @@
       {
         "actionItems": 33,
         "files": [
+          "content/blog/upwork-proposal-no-reply-checklist.mdx",
           "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
-          "content/blog/ads-income-when-to-start-checklist.mdx",
-          "content/blog/ads-income-when-to-start.mdx"
+          "content/blog/ads-income-when-to-start-checklist.mdx"
         ],
         "highPriorityItems": 0,
         "items": 3,
@@ -30548,9 +30553,9 @@
       {
         "actionItems": 33,
         "files": [
+          "content/blog/ads-income-when-to-start.mdx",
           "content/blog/affiliate-vs-service-income-checklist.mdx",
-          "content/blog/affiliate-vs-service-income.mdx",
-          "content/blog/ai-assisted-vs-automated-delivery-checklist.mdx"
+          "content/blog/affiliate-vs-service-income.mdx"
         ],
         "highPriorityItems": 0,
         "items": 3,
@@ -30565,9 +30570,9 @@
       {
         "actionItems": 33,
         "files": [
+          "content/blog/ai-assisted-vs-automated-delivery-checklist.mdx",
           "content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx",
-          "content/blog/ai-assisted-vs-automated-delivery.mdx",
-          "content/blog/ai-beginner-project-fit-check-checklist.mdx"
+          "content/blog/ai-assisted-vs-automated-delivery.mdx"
         ],
         "highPriorityItems": 0,
         "items": 3,
@@ -30582,8 +30587,8 @@
       {
         "actionItems": 33,
         "files": [
+          "content/blog/ai-beginner-project-fit-check-checklist.mdx",
           "content/blog/ai-beginner-project-fit-check-mistakes.mdx",
-          "content/blog/ai-beginner-project-fit-check.mdx",
           "content/blog/ai-freelance-30-day-execution-checklist.mdx"
         ],
         "highPriorityItems": 0,
@@ -32899,18 +32904,18 @@
     ]
   },
   "publicSearchRefreshSessionPack": {
-    "actionItems": 5030,
-    "cannibalizationSessions": 82,
+    "actionItems": 5032,
+    "cannibalizationSessions": 84,
     "filesCovered": 500,
-    "highPriorityItems": 59,
+    "highPriorityItems": 60,
     "liveMissingFromSitemap": 0,
-    "mojibakeSessions": 17,
+    "mojibakeSessions": 18,
     "publicArticles": 500,
     "publishConfirmCommandsIncluded": 0,
     "readyItems": 500,
     "seoWarningSessions": 0,
     "sessions": 167,
-    "shortDescriptionSessions": 154,
+    "shortDescriptionSessions": 155,
     "top": [
       {
         "actionCount": 39,
@@ -33032,8 +33037,8 @@
         },
         "files": [
           "content/blog/what-is-codex-beginner-start.mdx",
-          "content/blog/ai-small-project-practice-topics-checklist.mdx",
-          "content/blog/before-first-ai-freelance-job.mdx"
+          "content/blog/ai-beginner-project-fit-check.mdx",
+          "content/blog/ai-small-project-practice-topics-checklist.mdx"
         ],
         "highPriorityItems": 3,
         "items": [
@@ -33067,6 +33072,34 @@
           },
           {
             "actionCount": 13,
+            "descriptionLength": 53,
+            "file": "content/blog/ai-beginner-project-fit-check.mdx",
+            "priorityScore": 205,
+            "refreshActions": [
+              "Confirm the public page still answers one clear search intent before editing.",
+              "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+              "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+              "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+              "Cannibalization check: review similar slug stem conflict \"beginner-project-fit-check\" before expanding this page or approving related drafts.",
+              "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+              "Apply public-page edits manually only after approval; publish confirm remains excluded.",
+              "Repair likely garbled public copy in description after comparing the intended topic and sources.",
+              "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
+              "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+              "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
+              "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+              "Apply edits manually only after approval; publish confirm remains excluded."
+            ],
+            "refreshReasons": [
+              "mojibake-public",
+              "short-description",
+              "cannibalization"
+            ],
+            "slug": "ai-beginner-project-fit-check",
+            "title": "AI 新手如何判断自己能不能接项目"
+          },
+          {
+            "actionCount": 13,
             "descriptionLength": 52,
             "file": "content/blog/ai-small-project-practice-topics-checklist.mdx",
             "priorityScore": 205,
@@ -33092,7 +33125,34 @@
             ],
             "slug": "ai-small-project-practice-topics-checklist",
             "title": "AI 小项目练习选题检查清单"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "short-description",
+          "freshness-high",
+          "cannibalization"
+        ],
+        "sessionName": "public search refresh wave 2",
+        "unsafeItems": 0,
+        "wave": 2
+      },
+      {
+        "actionCount": 39,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/before-first-ai-freelance-job.mdx",
+          "content/blog/canva-portfolio-cover-tips-checklist.mdx",
+          "content/blog/claude-code-beginner-mistakes-checklist.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 13,
             "descriptionLength": 56,
@@ -33120,34 +33180,7 @@
             ],
             "slug": "before-first-ai-freelance-job",
             "title": "第一次接 AI 小单前要准备什么"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "short-description",
-          "freshness-high",
-          "cannibalization"
-        ],
-        "sessionName": "public search refresh wave 2",
-        "unsafeItems": 0,
-        "wave": 2
-      },
-      {
-        "actionCount": 39,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/canva-portfolio-cover-tips-checklist.mdx",
-          "content/blog/claude-code-beginner-mistakes-checklist.mdx",
-          "content/blog/claude-code-beginner-mistakes-mistakes.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 13,
             "descriptionLength": 61,
@@ -33203,7 +33236,33 @@
             ],
             "slug": "claude-code-beginner-mistakes-checklist",
             "title": "Claude Code 新手使用检查清单"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "short-description",
+          "cannibalization"
+        ],
+        "sessionName": "public search refresh wave 3",
+        "unsafeItems": 0,
+        "wave": 3
+      },
+      {
+        "actionCount": 39,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/claude-code-beginner-mistakes-mistakes.mdx",
+          "content/blog/claude-code-beginner-use-cases-checklist.mdx",
+          "content/blog/claude-code-beginner-use-cases.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 13,
             "descriptionLength": 68,
@@ -33231,33 +33290,7 @@
             ],
             "slug": "claude-code-beginner-mistakes-mistakes",
             "title": "Claude Code 新手常见错误和修正方法"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "short-description",
-          "cannibalization"
-        ],
-        "sessionName": "public search refresh wave 3",
-        "unsafeItems": 0,
-        "wave": 3
-      },
-      {
-        "actionCount": 39,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/claude-code-beginner-use-cases-checklist.mdx",
-          "content/blog/claude-code-beginner-use-cases.mdx",
-          "content/blog/claude-code-bug-prompt-mistakes.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 13,
             "descriptionLength": 60,
@@ -33313,7 +33346,33 @@
             ],
             "slug": "claude-code-beginner-use-cases",
             "title": "Claude Code 新手适合用在哪些项目场景"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "short-description",
+          "cannibalization"
+        ],
+        "sessionName": "public search refresh wave 4",
+        "unsafeItems": 0,
+        "wave": 4
+      },
+      {
+        "actionCount": 39,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/claude-code-bug-prompt-mistakes.mdx",
+          "content/blog/claude-code-bug-prompt.mdx",
+          "content/blog/claude-code-common-commands-mistakes.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 13,
             "descriptionLength": 70,
@@ -33341,33 +33400,7 @@
             ],
             "slug": "claude-code-bug-prompt-mistakes",
             "title": "Claude Code Bug Prompt 常见错误"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "short-description",
-          "cannibalization"
-        ],
-        "sessionName": "public search refresh wave 4",
-        "unsafeItems": 0,
-        "wave": 4
-      },
-      {
-        "actionCount": 39,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/claude-code-bug-prompt.mdx",
-          "content/blog/claude-code-common-commands-mistakes.mdx",
-          "content/blog/claude-code-common-commands.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 13,
             "descriptionLength": 74,
@@ -33423,7 +33456,33 @@
             ],
             "slug": "claude-code-common-commands-mistakes",
             "title": "Claude Code 新手运行常用命令时的常见错误"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "short-description",
+          "cannibalization"
+        ],
+        "sessionName": "public search refresh wave 5",
+        "unsafeItems": 0,
+        "wave": 5
+      },
+      {
+        "actionCount": 39,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/claude-code-common-commands.mdx",
+          "content/blog/claude-code-error-debug-mistakes.mdx",
+          "content/blog/claude-code-github-file-scope-mistakes.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 13,
             "descriptionLength": 72,
@@ -33451,33 +33510,7 @@
             ],
             "slug": "claude-code-common-commands",
             "title": "Claude Code 新手常用命令怎么整理成项目笔记"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "short-description",
-          "cannibalization"
-        ],
-        "sessionName": "public search refresh wave 5",
-        "unsafeItems": 0,
-        "wave": 5
-      },
-      {
-        "actionCount": 39,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/claude-code-error-debug-mistakes.mdx",
-          "content/blog/claude-code-github-file-scope-mistakes.mdx",
-          "content/blog/claude-code-small-project-tasks.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 13,
             "descriptionLength": 65,
@@ -33533,7 +33566,33 @@
             ],
             "slug": "claude-code-github-file-scope-mistakes",
             "title": "Claude Code 看 GitHub 文件时的常见范围错误"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "short-description",
+          "cannibalization"
+        ],
+        "sessionName": "public search refresh wave 6",
+        "unsafeItems": 0,
+        "wave": 6
+      },
+      {
+        "actionCount": 39,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/claude-code-small-project-tasks.mdx",
+          "content/blog/claude-code-vs-codex-web-editing-checklist.mdx",
+          "content/blog/codex-automation-steps-not-skip-mistakes.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 13,
             "descriptionLength": 75,
@@ -33561,33 +33620,7 @@
             ],
             "slug": "claude-code-small-project-tasks",
             "title": "哪些小项目任务适合用 Claude Code 辅助项目"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "short-description",
-          "cannibalization"
-        ],
-        "sessionName": "public search refresh wave 6",
-        "unsafeItems": 0,
-        "wave": 6
-      },
-      {
-        "actionCount": 39,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/claude-code-vs-codex-web-editing-checklist.mdx",
-          "content/blog/codex-automation-steps-not-skip-mistakes.mdx",
-          "content/blog/codex-automation-steps-not-skip.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 13,
             "descriptionLength": 51,
@@ -33643,7 +33676,33 @@
             ],
             "slug": "codex-automation-steps-not-skip-mistakes",
             "title": "Codex 自动化开发流程常见错误"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "short-description",
+          "cannibalization"
+        ],
+        "sessionName": "public search refresh wave 7",
+        "unsafeItems": 0,
+        "wave": 7
+      },
+      {
+        "actionCount": 39,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/codex-automation-steps-not-skip.mdx",
+          "content/blog/codex-edit-existing-ui-mistakes.mdx",
+          "content/blog/codex-first-day-guide-checklist.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 13,
             "descriptionLength": 65,
@@ -33671,33 +33730,7 @@
             ],
             "slug": "codex-automation-steps-not-skip",
             "title": "Codex 自动化开发流程哪些步骤不能省"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "short-description",
-          "cannibalization"
-        ],
-        "sessionName": "public search refresh wave 7",
-        "unsafeItems": 0,
-        "wave": 7
-      },
-      {
-        "actionCount": 39,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/codex-edit-existing-ui-mistakes.mdx",
-          "content/blog/codex-first-day-guide-checklist.mdx",
-          "content/blog/codex-install-prerequisites-checklist.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 13,
             "descriptionLength": 73,
@@ -33753,7 +33786,33 @@
             ],
             "slug": "codex-first-day-guide-checklist",
             "title": "Codex 是什么，新手第一天应该怎么用：新手检查清单"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "short-description",
+          "cannibalization"
+        ],
+        "sessionName": "public search refresh wave 8",
+        "unsafeItems": 0,
+        "wave": 8
+      },
+      {
+        "actionCount": 39,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/codex-install-prerequisites-checklist.mdx",
+          "content/blog/codex-npm-install-errors-mistakes.mdx",
+          "content/blog/codex-npm-install-errors.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 13,
             "descriptionLength": 60,
@@ -33781,33 +33840,7 @@
             ],
             "slug": "codex-install-prerequisites-checklist",
             "title": "Codex 安装前置条件检查清单"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "short-description",
-          "cannibalization"
-        ],
-        "sessionName": "public search refresh wave 8",
-        "unsafeItems": 0,
-        "wave": 8
-      },
-      {
-        "actionCount": 39,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/codex-npm-install-errors-mistakes.mdx",
-          "content/blog/codex-npm-install-errors.mdx",
-          "content/blog/codex-upwork-job-risk-check-freelance-scope.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 13,
             "descriptionLength": 69,
@@ -33863,7 +33896,33 @@
             ],
             "slug": "codex-npm-install-errors",
             "title": "用 Codex 排查 npm install 报错"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "short-description",
+          "cannibalization"
+        ],
+        "sessionName": "public search refresh wave 9",
+        "unsafeItems": 0,
+        "wave": 9
+      },
+      {
+        "actionCount": 39,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/codex-upwork-job-risk-check-freelance-scope.mdx",
+          "content/blog/codex-upwork-job-risk-check.mdx",
+          "content/blog/daily-ai-freelance-practice-log.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 13,
             "descriptionLength": 60,
@@ -33891,33 +33950,7 @@
             ],
             "slug": "codex-upwork-job-risk-check-freelance-scope",
             "title": "Upwork 筛单风险判断能不能接"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "short-description",
-          "cannibalization"
-        ],
-        "sessionName": "public search refresh wave 9",
-        "unsafeItems": 0,
-        "wave": 9
-      },
-      {
-        "actionCount": 39,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/codex-upwork-job-risk-check.mdx",
-          "content/blog/daily-ai-freelance-practice-log.mdx",
-          "content/blog/module-not-found-debug-mistakes.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 13,
             "descriptionLength": 75,
@@ -33973,7 +34006,33 @@
             ],
             "slug": "daily-ai-freelance-practice-log",
             "title": "新手如何记录每天的项目练习"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "short-description",
+          "cannibalization"
+        ],
+        "sessionName": "public search refresh wave 10",
+        "unsafeItems": 0,
+        "wave": 10
+      },
+      {
+        "actionCount": 39,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/module-not-found-debug-mistakes.mdx",
+          "content/blog/node-version-mismatch-fix-mistakes.mdx",
+          "content/blog/permission-denied-fix-checklist.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 13,
             "descriptionLength": 78,
@@ -34001,33 +34060,7 @@
             ],
             "slug": "module-not-found-debug-mistakes",
             "title": "module not found 常见错误和解决步骤"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "short-description",
-          "cannibalization"
-        ],
-        "sessionName": "public search refresh wave 10",
-        "unsafeItems": 0,
-        "wave": 10
-      },
-      {
-        "actionCount": 39,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/node-version-mismatch-fix-mistakes.mdx",
-          "content/blog/permission-denied-fix-checklist.mdx",
-          "content/blog/permission-denied-fix-mistakes.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 13,
             "descriptionLength": 75,
@@ -34083,7 +34116,33 @@
             ],
             "slug": "permission-denied-fix-checklist",
             "title": "permission denied 报错新手怎么处理：新手检查清单"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "short-description",
+          "cannibalization"
+        ],
+        "sessionName": "public search refresh wave 11",
+        "unsafeItems": 0,
+        "wave": 11
+      },
+      {
+        "actionCount": 35,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/permission-denied-fix-mistakes.mdx",
+          "content/blog/codex-code-review-delivery-checklist.mdx",
+          "content/blog/codex-github-before-commit-checklist.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 13,
             "descriptionLength": 73,
@@ -34111,33 +34170,7 @@
             ],
             "slug": "permission-denied-fix-mistakes",
             "title": "permission denied 报错新手怎么处理：常见错误和解决步骤"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "short-description",
-          "cannibalization"
-        ],
-        "sessionName": "public search refresh wave 11",
-        "unsafeItems": 0,
-        "wave": 11
-      },
-      {
-        "actionCount": 33,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/codex-code-review-delivery-checklist.mdx",
-          "content/blog/codex-github-before-commit-checklist.mdx",
-          "content/blog/codex-upwork-small-job-risk-checklist.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 11,
             "descriptionLength": 97,
@@ -34187,7 +34220,34 @@
             ],
             "slug": "codex-github-before-commit-checklist",
             "title": "Codex 和 GitHub 怎么配合：提交代码前检查"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "short-description",
+          "cannibalization",
+          "freshness-high"
+        ],
+        "sessionName": "public search refresh wave 12",
+        "unsafeItems": 0,
+        "wave": 12
+      },
+      {
+        "actionCount": 33,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/codex-upwork-small-job-risk-checklist.mdx",
+          "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
+          "content/blog/codex-vs-claude-code-beginner-checklist.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 11,
             "descriptionLength": 102,
@@ -34212,32 +34272,7 @@
             ],
             "slug": "codex-upwork-small-job-risk-checklist",
             "title": "Codex 接 Upwork 小单怎么判断：风险检查清单"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "freshness-high"
-        ],
-        "sessionName": "public search refresh wave 12",
-        "unsafeItems": 0,
-        "wave": 12
-      },
-      {
-        "actionCount": 33,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/codex-vercel-deploy-preflight-checklist.mdx",
-          "content/blog/codex-vs-claude-code-beginner-checklist.mdx",
-          "content/blog/git-authentication-failed-fix-mistakes.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 11,
             "descriptionLength": 101,
@@ -34287,7 +34322,32 @@
             ],
             "slug": "codex-vs-claude-code-beginner-checklist",
             "title": "Codex 和 Claude Code 怎么选：新手对比清单"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "freshness-high"
+        ],
+        "sessionName": "public search refresh wave 13",
+        "unsafeItems": 0,
+        "wave": 13
+      },
+      {
+        "actionCount": 33,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/git-authentication-failed-fix-mistakes.mdx",
+          "content/blog/git-authentication-failed-fix.mdx",
+          "content/blog/github-actions-build-log-debug-checklist.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 11,
             "descriptionLength": 91,
@@ -34312,33 +34372,7 @@
             ],
             "slug": "git-authentication-failed-fix-mistakes",
             "title": "git authentication failed 常见错误和解决步骤"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "freshness-high",
-          "cannibalization"
-        ],
-        "sessionName": "public search refresh wave 13",
-        "unsafeItems": 0,
-        "wave": 13
-      },
-      {
-        "actionCount": 33,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/git-authentication-failed-fix.mdx",
-          "content/blog/github-actions-build-log-debug-checklist.mdx",
-          "content/blog/node-version-mismatch-fix.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 11,
             "descriptionLength": 91,
@@ -34388,7 +34422,32 @@
             ],
             "slug": "github-actions-build-log-debug-checklist",
             "title": "GitHub Actions build 失败日志检查清单"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "cannibalization"
+        ],
+        "sessionName": "public search refresh wave 14",
+        "unsafeItems": 0,
+        "wave": 14
+      },
+      {
+        "actionCount": 33,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/node-version-mismatch-fix.mdx",
+          "content/blog/ai-ppt-beginner-guide.mdx",
+          "content/blog/ai-tools-recommendation-beginner.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 11,
             "descriptionLength": 91,
@@ -34413,32 +34472,7 @@
             ],
             "slug": "node-version-mismatch-fix",
             "title": "Node 版本不匹配怎么排查"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "cannibalization"
-        ],
-        "sessionName": "public search refresh wave 14",
-        "unsafeItems": 0,
-        "wave": 14
-      },
-      {
-        "actionCount": 33,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/ai-ppt-beginner-guide.mdx",
-          "content/blog/ai-tools-recommendation-beginner.mdx",
-          "content/blog/codex-first-landing-page-freelance-scope.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 11,
             "descriptionLength": 56,
@@ -34488,7 +34522,33 @@
             ],
             "slug": "ai-tools-recommendation-beginner",
             "title": "AI 工具推荐怎么选：新手别一开始买太多"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "cannibalization",
+          "short-description"
+        ],
+        "sessionName": "public search refresh wave 15",
+        "unsafeItems": 0,
+        "wave": 15
+      },
+      {
+        "actionCount": 33,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/codex-first-landing-page-freelance-scope.mdx",
+          "content/blog/dify-metadata-filtering-rag-guide.mdx",
+          "content/blog/llm-cost-monitoring-dashboard-guide.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 11,
             "descriptionLength": 62,
@@ -34513,32 +34573,7 @@
             ],
             "slug": "codex-first-landing-page-freelance-scope",
             "title": "Codex 怎么做第一个落地页：使用前怎么判断是否适合"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "short-description"
-        ],
-        "sessionName": "public search refresh wave 15",
-        "unsafeItems": 0,
-        "wave": 15
-      },
-      {
-        "actionCount": 33,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/dify-metadata-filtering-rag-guide.mdx",
-          "content/blog/llm-cost-monitoring-dashboard-guide.mdx",
-          "content/blog/module-not-found-debug-freelance-scope.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 11,
             "descriptionLength": 69,
@@ -34588,7 +34623,32 @@
             ],
             "slug": "llm-cost-monitoring-dashboard-guide",
             "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "short-description"
+        ],
+        "sessionName": "public search refresh wave 16",
+        "unsafeItems": 0,
+        "wave": 16
+      },
+      {
+        "actionCount": 33,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/module-not-found-debug-freelance-scope.mdx",
+          "content/blog/node-version-mismatch-fix-freelance-scope.mdx",
+          "content/blog/rag-prompt-injection-defense-guide.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 11,
             "descriptionLength": 72,
@@ -34613,32 +34673,7 @@
             ],
             "slug": "module-not-found-debug-freelance-scope",
             "title": "module not found 使用前怎么判断是否适合"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "short-description"
-        ],
-        "sessionName": "public search refresh wave 16",
-        "unsafeItems": 0,
-        "wave": 16
-      },
-      {
-        "actionCount": 31,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/node-version-mismatch-fix-freelance-scope.mdx",
-          "content/blog/rag-prompt-injection-defense-guide.mdx",
-          "content/blog/ray-serve-llm-deployment-guide.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 11,
             "descriptionLength": 58,
@@ -34688,7 +34723,32 @@
             ],
             "slug": "rag-prompt-injection-defense-guide",
             "title": "RAG 提示词注入怎么防：知识库不能盲目信任文档内容"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "short-description"
+        ],
+        "sessionName": "public search refresh wave 17",
+        "unsafeItems": 0,
+        "wave": 17
+      },
+      {
+        "actionCount": 31,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/ray-serve-llm-deployment-guide.mdx",
+          "content/blog/dev-works-build-fails-checklist.mdx",
+          "content/blog/dev-works-build-fails-mistakes.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 9,
             "descriptionLength": 95,
@@ -34710,32 +34770,7 @@
             ],
             "slug": "ray-serve-llm-deployment-guide",
             "title": "Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "mojibake-public",
-          "short-description"
-        ],
-        "sessionName": "public search refresh wave 17",
-        "unsafeItems": 0,
-        "wave": 17
-      },
-      {
-        "actionCount": 33,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/dev-works-build-fails-checklist.mdx",
-          "content/blog/dev-works-build-fails-mistakes.mdx",
-          "content/blog/dev-works-build-fails.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 11,
             "descriptionLength": 76,
@@ -34787,7 +34822,34 @@
             ],
             "slug": "dev-works-build-fails-mistakes",
             "title": "npm run dev 能跑但 build 失败常见错误和解决步骤"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "mojibake-public",
+          "short-description",
+          "cannibalization",
+          "high-priority"
+        ],
+        "sessionName": "public search refresh wave 18",
+        "unsafeItems": 0,
+        "wave": 18
+      },
+      {
+        "actionCount": 33,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/dev-works-build-fails.mdx",
+          "content/blog/failed-to-push-some-refs-fix-checklist.mdx",
+          "content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 11,
             "descriptionLength": 84,
@@ -34813,33 +34875,7 @@
             ],
             "slug": "dev-works-build-fails",
             "title": "npm run dev 能跑但 build 失败怎么办"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "short-description",
-          "cannibalization",
-          "high-priority"
-        ],
-        "sessionName": "public search refresh wave 18",
-        "unsafeItems": 0,
-        "wave": 18
-      },
-      {
-        "actionCount": 33,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/failed-to-push-some-refs-fix-checklist.mdx",
-          "content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx",
-          "content/blog/failed-to-push-some-refs-fix-mistakes.mdx"
-        ],
-        "highPriorityItems": 3,
-        "items": [
+          },
           {
             "actionCount": 11,
             "descriptionLength": 81,
@@ -34891,7 +34927,33 @@
             ],
             "slug": "failed-to-push-some-refs-fix-freelance-scope",
             "title": "failed to push some refs 使用前怎么判断是否适合"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "short-description",
+          "cannibalization",
+          "high-priority"
+        ],
+        "sessionName": "public search refresh wave 19",
+        "unsafeItems": 0,
+        "wave": 19
+      },
+      {
+        "actionCount": 33,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/failed-to-push-some-refs-fix-mistakes.mdx",
+          "content/blog/nextjs-hydration-error-debug-checklist.mdx",
+          "content/blog/nextjs-hydration-error-debug-mistakes.mdx"
+        ],
+        "highPriorityItems": 3,
+        "items": [
           {
             "actionCount": 11,
             "descriptionLength": 77,
@@ -34917,33 +34979,7 @@
             ],
             "slug": "failed-to-push-some-refs-fix-mistakes",
             "title": "failed to push some refs 常见错误和解决步骤"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "short-description",
-          "cannibalization",
-          "high-priority"
-        ],
-        "sessionName": "public search refresh wave 19",
-        "unsafeItems": 0,
-        "wave": 19
-      },
-      {
-        "actionCount": 33,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/nextjs-hydration-error-debug-checklist.mdx",
-          "content/blog/nextjs-hydration-error-debug-mistakes.mdx",
-          "content/blog/codex-npm-install-error-beginner-fix.mdx"
-        ],
-        "highPriorityItems": 2,
-        "items": [
+          },
           {
             "actionCount": 11,
             "descriptionLength": 83,
@@ -34995,7 +35031,33 @@
             ],
             "slug": "nextjs-hydration-error-debug-mistakes",
             "title": "Next.js hydration error 怎么排查：常见错误和解决步骤"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "short-description",
+          "cannibalization",
+          "high-priority"
+        ],
+        "sessionName": "public search refresh wave 20",
+        "unsafeItems": 0,
+        "wave": 20
+      },
+      {
+        "actionCount": 32,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/codex-npm-install-error-beginner-fix.mdx",
+          "content/blog/codex-generated-code-review-guide.mdx",
+          "content/blog/failed-to-push-some-refs-fix.mdx"
+        ],
+        "highPriorityItems": 0,
+        "items": [
           {
             "actionCount": 11,
             "descriptionLength": 102,
@@ -35020,34 +35082,7 @@
             ],
             "slug": "codex-npm-install-error-beginner-fix",
             "title": "Codex 项目 npm install 报错怎么办：新手排查步骤"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "short-description",
-          "cannibalization",
-          "high-priority",
-          "freshness-high"
-        ],
-        "sessionName": "public search refresh wave 20",
-        "unsafeItems": 0,
-        "wave": 20
-      },
-      {
-        "actionCount": 31,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/codex-generated-code-review-guide.mdx",
-          "content/blog/failed-to-push-some-refs-fix.mdx",
-          "content/blog/nextjs-hydration-error-debug.mdx"
-        ],
-        "highPriorityItems": 0,
-        "items": [
+          },
           {
             "actionCount": 11,
             "descriptionLength": 89,
@@ -35095,7 +35130,33 @@
             ],
             "slug": "failed-to-push-some-refs-fix",
             "title": "failed to push some refs 怎么排查"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "cannibalization",
+          "freshness-high",
+          "short-description"
+        ],
+        "sessionName": "public search refresh wave 21",
+        "unsafeItems": 0,
+        "wave": 21
+      },
+      {
+        "actionCount": 32,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/nextjs-hydration-error-debug.mdx",
+          "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
+          "content/blog/upwork-client-requirements-analysis-beginner.mdx"
+        ],
+        "highPriorityItems": 0,
+        "items": [
           {
             "actionCount": 10,
             "descriptionLength": 92,
@@ -35118,33 +35179,7 @@
             ],
             "slug": "nextjs-hydration-error-debug",
             "title": "Next.js hydration error 怎么排查"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "short-description",
-          "freshness-high",
-          "cannibalization"
-        ],
-        "sessionName": "public search refresh wave 21",
-        "unsafeItems": 0,
-        "wave": 21
-      },
-      {
-        "actionCount": 33,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/payoneer-wise-paypal-beginner-comparison.mdx",
-          "content/blog/upwork-client-requirements-analysis-beginner.mdx",
-          "content/blog/upwork-proposal-no-reply-checklist.mdx"
-        ],
-        "highPriorityItems": 0,
-        "items": [
+          },
           {
             "actionCount": 11,
             "descriptionLength": 82,
@@ -35194,7 +35229,33 @@
             ],
             "slug": "upwork-client-requirements-analysis-beginner",
             "title": "Upwork 客户需求太模糊怎么办：新手分析和追问清单"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "cannibalization",
+          "short-description",
+          "freshness-high"
+        ],
+        "sessionName": "public search refresh wave 22",
+        "unsafeItems": 0,
+        "wave": 22
+      },
+      {
+        "actionCount": 33,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/upwork-proposal-no-reply-checklist.mdx",
+          "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
+          "content/blog/ads-income-when-to-start-checklist.mdx"
+        ],
+        "highPriorityItems": 0,
+        "items": [
           {
             "actionCount": 11,
             "descriptionLength": 80,
@@ -35219,32 +35280,7 @@
             ],
             "slug": "upwork-proposal-no-reply-checklist",
             "title": "Upwork Proposal 发出去没人回怎么办：新手检查清单"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "short-description",
-          "freshness-high"
-        ],
-        "sessionName": "public search refresh wave 22",
-        "unsafeItems": 0,
-        "wave": 22
-      },
-      {
-        "actionCount": 33,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/vercel-env-variable-missing-beginner-guide.mdx",
-          "content/blog/ads-income-when-to-start-checklist.mdx",
-          "content/blog/ads-income-when-to-start.mdx"
-        ],
-        "highPriorityItems": 0,
-        "items": [
+          },
           {
             "actionCount": 11,
             "descriptionLength": 87,
@@ -35294,7 +35330,33 @@
             ],
             "slug": "ads-income-when-to-start-checklist",
             "title": "广告收入要等到什么时候再接：新手检查清单"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "short-description",
+          "freshness-high",
+          "cannibalization"
+        ],
+        "sessionName": "public search refresh wave 23",
+        "unsafeItems": 0,
+        "wave": 23
+      },
+      {
+        "actionCount": 33,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/ads-income-when-to-start.mdx",
+          "content/blog/affiliate-vs-service-income-checklist.mdx",
+          "content/blog/affiliate-vs-service-income.mdx"
+        ],
+        "highPriorityItems": 0,
+        "items": [
           {
             "actionCount": 11,
             "descriptionLength": 66,
@@ -35319,33 +35381,7 @@
             ],
             "slug": "ads-income-when-to-start",
             "title": "广告收入要等到什么时候再接"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "short-description",
-          "freshness-high",
-          "cannibalization"
-        ],
-        "sessionName": "public search refresh wave 23",
-        "unsafeItems": 0,
-        "wave": 23
-      },
-      {
-        "actionCount": 33,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/affiliate-vs-service-income-checklist.mdx",
-          "content/blog/affiliate-vs-service-income.mdx",
-          "content/blog/ai-assisted-vs-automated-delivery-checklist.mdx"
-        ],
-        "highPriorityItems": 0,
-        "items": [
+          },
           {
             "actionCount": 11,
             "descriptionLength": 69,
@@ -35395,7 +35431,32 @@
             ],
             "slug": "affiliate-vs-service-income",
             "title": "联盟链接收入和服务收入有什么区别"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "short-description",
+          "cannibalization"
+        ],
+        "sessionName": "public search refresh wave 24",
+        "unsafeItems": 0,
+        "wave": 24
+      },
+      {
+        "actionCount": 33,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/ai-assisted-vs-automated-delivery-checklist.mdx",
+          "content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx",
+          "content/blog/ai-assisted-vs-automated-delivery.mdx"
+        ],
+        "highPriorityItems": 0,
+        "items": [
           {
             "actionCount": 11,
             "descriptionLength": 53,
@@ -35420,32 +35481,7 @@
             ],
             "slug": "ai-assisted-vs-automated-delivery-checklist",
             "title": "AI 辅助交付和完全自动交付的检查清单"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "short-description",
-          "cannibalization"
-        ],
-        "sessionName": "public search refresh wave 24",
-        "unsafeItems": 0,
-        "wave": 24
-      },
-      {
-        "actionCount": 33,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx",
-          "content/blog/ai-assisted-vs-automated-delivery.mdx",
-          "content/blog/ai-beginner-project-fit-check-checklist.mdx"
-        ],
-        "highPriorityItems": 0,
-        "items": [
+          },
           {
             "actionCount": 11,
             "descriptionLength": 50,
@@ -35495,7 +35531,32 @@
             ],
             "slug": "ai-assisted-vs-automated-delivery",
             "title": "AI 辅助交付和完全自动交付有什么区别"
-          },
+          }
+        ],
+        "readyItems": 3,
+        "refreshReasons": [
+          "short-description",
+          "cannibalization"
+        ],
+        "sessionName": "public search refresh wave 25",
+        "unsafeItems": 0,
+        "wave": 25
+      },
+      {
+        "actionCount": 33,
+        "commandBoundary": {
+          "editAfterHumanApproval": "manual-only",
+          "markReview": "not-applicable-public-page",
+          "publishConfirm": "not-included",
+          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
+        },
+        "files": [
+          "content/blog/ai-beginner-project-fit-check-checklist.mdx",
+          "content/blog/ai-beginner-project-fit-check-mistakes.mdx",
+          "content/blog/ai-freelance-30-day-execution-checklist.mdx"
+        ],
+        "highPriorityItems": 0,
+        "items": [
           {
             "actionCount": 11,
             "descriptionLength": 52,
@@ -35520,32 +35581,7 @@
             ],
             "slug": "ai-beginner-project-fit-check-checklist",
             "title": "AI 新手接项目前的项目适配检查清单"
-          }
-        ],
-        "readyItems": 3,
-        "refreshReasons": [
-          "short-description",
-          "cannibalization"
-        ],
-        "sessionName": "public search refresh wave 25",
-        "unsafeItems": 0,
-        "wave": 25
-      },
-      {
-        "actionCount": 33,
-        "commandBoundary": {
-          "editAfterHumanApproval": "manual-only",
-          "markReview": "not-applicable-public-page",
-          "publishConfirm": "not-included",
-          "stopBefore": "Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change."
-        },
-        "files": [
-          "content/blog/ai-beginner-project-fit-check-mistakes.mdx",
-          "content/blog/ai-beginner-project-fit-check.mdx",
-          "content/blog/ai-freelance-30-day-execution-checklist.mdx"
-        ],
-        "highPriorityItems": 0,
-        "items": [
+          },
           {
             "actionCount": 11,
             "descriptionLength": 61,
@@ -35570,31 +35606,6 @@
             ],
             "slug": "ai-beginner-project-fit-check-mistakes",
             "title": "AI 新手判断接项目时的常见错误"
-          },
-          {
-            "actionCount": 11,
-            "descriptionLength": 53,
-            "file": "content/blog/ai-beginner-project-fit-check.mdx",
-            "priorityScore": 125,
-            "refreshActions": [
-              "Confirm the public page still answers one clear search intent before editing.",
-              "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
-              "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
-              "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
-              "Cannibalization check: review similar slug stem conflict \"beginner-project-fit-check\" before expanding this page or approving related drafts.",
-              "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
-              "Apply public-page edits manually only after approval; publish confirm remains excluded.",
-              "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
-              "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
-              "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
-              "Apply edits manually only after approval; publish confirm remains excluded."
-            ],
-            "refreshReasons": [
-              "short-description",
-              "cannibalization"
-            ],
-            "slug": "ai-beginner-project-fit-check",
-            "title": "AI 新手如何判断自己能不能接项目"
           },
           {
             "actionCount": 11,
@@ -66697,7 +66708,7 @@
   "liveSearch": {
     "checkedArticles": 500,
     "failedChecks": [],
-    "generatedAt": "2026-06-19T02:13:35.596Z",
+    "generatedAt": "2026-06-19T06:42:03.983Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 500

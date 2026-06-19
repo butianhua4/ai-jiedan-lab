@@ -1,6 +1,6 @@
 # Public Search Refresh Session Pack
 
-Generated at: 2026-06-19T02:12:55.858Z
+Generated at: 2026-06-19T06:41:40.381Z
 
 This report is read-only. It turns public refresh waves into manual SEO refresh sessions without editing public pages or claiming traffic.
 
@@ -15,24 +15,24 @@ This report is read-only. It turns public refresh waves into manual SEO refresh 
 
 ## Summary
 
-- actionItems: 5030
-- cannibalizationSessions: 82
+- actionItems: 5032
+- cannibalizationSessions: 84
 - filesCovered: 500
-- highPriorityItems: 59
+- highPriorityItems: 60
 - liveMissingFromSitemap: 0
-- mojibakeSessions: 17
+- mojibakeSessions: 18
 - publicArticles: 500
 - publishConfirmCommandsIncluded: 0
 - readyItems: 500
 - seoWarningSessions: 0
 - sessions: 167
-- shortDescriptionSessions: 154
+- shortDescriptionSessions: 155
 - trafficDataAvailable: false
 - unsafeItems: 0
 
 ## Source Evidence
 
-- publicRefreshSprintActions: 5030
+- publicRefreshSprintActions: 5032
 - publicRefreshSprintItems: 500
 - publicRefreshSprintUnsafeItems: 0
 - publicSearchRefreshActions: 2723
@@ -43,7 +43,7 @@ This report is read-only. It turns public refresh waves into manual SEO refresh 
 - publicSurfaceMissingFromSitemap: 0
 - publicSurfaceUnsafeItems: 0
 - trafficDataAvailable: false
-- measuredTrafficSources: 0
+- measuredTrafficSources: 1
 
 ## Unsafe Sessions
 
@@ -54,31 +54,31 @@ This report is read-only. It turns public refresh waves into manual SEO refresh 
 | Wave | Session | Ready | Actions | High priority | Reasons | Files |
 | ---: | --- | ---: | ---: | ---: | --- | --- |
 | 1 | public search refresh wave 1 | 3/3 | 39 | 3 | mojibake-public, short-description, freshness-high | content/blog/build-first-webpage-with-codex.mdx<br>content/blog/codex-install-failed-beginner-fix.mdx<br>content/blog/first-upwork-project-pricing-checklist.mdx |
-| 2 | public search refresh wave 2 | 3/3 | 39 | 3 | mojibake-public, short-description, freshness-high, cannibalization | content/blog/what-is-codex-beginner-start.mdx<br>content/blog/ai-small-project-practice-topics-checklist.mdx<br>content/blog/before-first-ai-freelance-job.mdx |
-| 3 | public search refresh wave 3 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/canva-portfolio-cover-tips-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-mistakes.mdx |
-| 4 | public search refresh wave 4 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-beginner-use-cases-checklist.mdx<br>content/blog/claude-code-beginner-use-cases.mdx<br>content/blog/claude-code-bug-prompt-mistakes.mdx |
-| 5 | public search refresh wave 5 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-bug-prompt.mdx<br>content/blog/claude-code-common-commands-mistakes.mdx<br>content/blog/claude-code-common-commands.mdx |
-| 6 | public search refresh wave 6 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-error-debug-mistakes.mdx<br>content/blog/claude-code-github-file-scope-mistakes.mdx<br>content/blog/claude-code-small-project-tasks.mdx |
-| 7 | public search refresh wave 7 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-vs-codex-web-editing-checklist.mdx<br>content/blog/codex-automation-steps-not-skip-mistakes.mdx<br>content/blog/codex-automation-steps-not-skip.mdx |
-| 8 | public search refresh wave 8 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-edit-existing-ui-mistakes.mdx<br>content/blog/codex-first-day-guide-checklist.mdx<br>content/blog/codex-install-prerequisites-checklist.mdx |
-| 9 | public search refresh wave 9 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-npm-install-errors-mistakes.mdx<br>content/blog/codex-npm-install-errors.mdx<br>content/blog/codex-upwork-job-risk-check-freelance-scope.mdx |
-| 10 | public search refresh wave 10 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-upwork-job-risk-check.mdx<br>content/blog/daily-ai-freelance-practice-log.mdx<br>content/blog/module-not-found-debug-mistakes.mdx |
-| 11 | public search refresh wave 11 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/node-version-mismatch-fix-mistakes.mdx<br>content/blog/permission-denied-fix-checklist.mdx<br>content/blog/permission-denied-fix-mistakes.mdx |
-| 12 | public search refresh wave 12 | 3/3 | 33 | 3 | mojibake-public, freshness-high | content/blog/codex-code-review-delivery-checklist.mdx<br>content/blog/codex-github-before-commit-checklist.mdx<br>content/blog/codex-upwork-small-job-risk-checklist.mdx |
-| 13 | public search refresh wave 13 | 3/3 | 33 | 3 | mojibake-public, freshness-high, cannibalization | content/blog/codex-vercel-deploy-preflight-checklist.mdx<br>content/blog/codex-vs-claude-code-beginner-checklist.mdx<br>content/blog/git-authentication-failed-fix-mistakes.mdx |
-| 14 | public search refresh wave 14 | 3/3 | 33 | 3 | mojibake-public, cannibalization | content/blog/git-authentication-failed-fix.mdx<br>content/blog/github-actions-build-log-debug-checklist.mdx<br>content/blog/node-version-mismatch-fix.mdx |
-| 15 | public search refresh wave 15 | 3/3 | 33 | 3 | mojibake-public, short-description | content/blog/ai-ppt-beginner-guide.mdx<br>content/blog/ai-tools-recommendation-beginner.mdx<br>content/blog/codex-first-landing-page-freelance-scope.mdx |
-| 16 | public search refresh wave 16 | 3/3 | 33 | 3 | mojibake-public, short-description | content/blog/dify-metadata-filtering-rag-guide.mdx<br>content/blog/llm-cost-monitoring-dashboard-guide.mdx<br>content/blog/module-not-found-debug-freelance-scope.mdx |
-| 17 | public search refresh wave 17 | 3/3 | 31 | 3 | mojibake-public, short-description | content/blog/node-version-mismatch-fix-freelance-scope.mdx<br>content/blog/rag-prompt-injection-defense-guide.mdx<br>content/blog/ray-serve-llm-deployment-guide.mdx |
-| 18 | public search refresh wave 18 | 3/3 | 33 | 3 | short-description, cannibalization, high-priority | content/blog/dev-works-build-fails-checklist.mdx<br>content/blog/dev-works-build-fails-mistakes.mdx<br>content/blog/dev-works-build-fails.mdx |
-| 19 | public search refresh wave 19 | 3/3 | 33 | 3 | short-description, cannibalization, high-priority | content/blog/failed-to-push-some-refs-fix-checklist.mdx<br>content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx<br>content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
-| 20 | public search refresh wave 20 | 3/3 | 33 | 2 | short-description, cannibalization, high-priority, freshness-high | content/blog/nextjs-hydration-error-debug-checklist.mdx<br>content/blog/nextjs-hydration-error-debug-mistakes.mdx<br>content/blog/codex-npm-install-error-beginner-fix.mdx |
-| 21 | public search refresh wave 21 | 3/3 | 31 | 0 | short-description, freshness-high, cannibalization | content/blog/codex-generated-code-review-guide.mdx<br>content/blog/failed-to-push-some-refs-fix.mdx<br>content/blog/nextjs-hydration-error-debug.mdx |
-| 22 | public search refresh wave 22 | 3/3 | 33 | 0 | short-description, freshness-high | content/blog/payoneer-wise-paypal-beginner-comparison.mdx<br>content/blog/upwork-client-requirements-analysis-beginner.mdx<br>content/blog/upwork-proposal-no-reply-checklist.mdx |
-| 23 | public search refresh wave 23 | 3/3 | 33 | 0 | short-description, freshness-high, cannibalization | content/blog/vercel-env-variable-missing-beginner-guide.mdx<br>content/blog/ads-income-when-to-start-checklist.mdx<br>content/blog/ads-income-when-to-start.mdx |
-| 24 | public search refresh wave 24 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/affiliate-vs-service-income-checklist.mdx<br>content/blog/affiliate-vs-service-income.mdx<br>content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
-| 25 | public search refresh wave 25 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx<br>content/blog/ai-assisted-vs-automated-delivery.mdx<br>content/blog/ai-beginner-project-fit-check-checklist.mdx |
-| 26 | public search refresh wave 26 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-beginner-project-fit-check-mistakes.mdx<br>content/blog/ai-beginner-project-fit-check.mdx<br>content/blog/ai-freelance-30-day-execution-checklist.mdx |
+| 2 | public search refresh wave 2 | 3/3 | 39 | 3 | mojibake-public, short-description, freshness-high, cannibalization | content/blog/what-is-codex-beginner-start.mdx<br>content/blog/ai-beginner-project-fit-check.mdx<br>content/blog/ai-small-project-practice-topics-checklist.mdx |
+| 3 | public search refresh wave 3 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/before-first-ai-freelance-job.mdx<br>content/blog/canva-portfolio-cover-tips-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-checklist.mdx |
+| 4 | public search refresh wave 4 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-beginner-mistakes-mistakes.mdx<br>content/blog/claude-code-beginner-use-cases-checklist.mdx<br>content/blog/claude-code-beginner-use-cases.mdx |
+| 5 | public search refresh wave 5 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-bug-prompt-mistakes.mdx<br>content/blog/claude-code-bug-prompt.mdx<br>content/blog/claude-code-common-commands-mistakes.mdx |
+| 6 | public search refresh wave 6 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-common-commands.mdx<br>content/blog/claude-code-error-debug-mistakes.mdx<br>content/blog/claude-code-github-file-scope-mistakes.mdx |
+| 7 | public search refresh wave 7 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-small-project-tasks.mdx<br>content/blog/claude-code-vs-codex-web-editing-checklist.mdx<br>content/blog/codex-automation-steps-not-skip-mistakes.mdx |
+| 8 | public search refresh wave 8 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-automation-steps-not-skip.mdx<br>content/blog/codex-edit-existing-ui-mistakes.mdx<br>content/blog/codex-first-day-guide-checklist.mdx |
+| 9 | public search refresh wave 9 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-install-prerequisites-checklist.mdx<br>content/blog/codex-npm-install-errors-mistakes.mdx<br>content/blog/codex-npm-install-errors.mdx |
+| 10 | public search refresh wave 10 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-upwork-job-risk-check-freelance-scope.mdx<br>content/blog/codex-upwork-job-risk-check.mdx<br>content/blog/daily-ai-freelance-practice-log.mdx |
+| 11 | public search refresh wave 11 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/module-not-found-debug-mistakes.mdx<br>content/blog/node-version-mismatch-fix-mistakes.mdx<br>content/blog/permission-denied-fix-checklist.mdx |
+| 12 | public search refresh wave 12 | 3/3 | 35 | 3 | mojibake-public, short-description, cannibalization, freshness-high | content/blog/permission-denied-fix-mistakes.mdx<br>content/blog/codex-code-review-delivery-checklist.mdx<br>content/blog/codex-github-before-commit-checklist.mdx |
+| 13 | public search refresh wave 13 | 3/3 | 33 | 3 | mojibake-public, freshness-high | content/blog/codex-upwork-small-job-risk-checklist.mdx<br>content/blog/codex-vercel-deploy-preflight-checklist.mdx<br>content/blog/codex-vs-claude-code-beginner-checklist.mdx |
+| 14 | public search refresh wave 14 | 3/3 | 33 | 3 | mojibake-public, cannibalization | content/blog/git-authentication-failed-fix-mistakes.mdx<br>content/blog/git-authentication-failed-fix.mdx<br>content/blog/github-actions-build-log-debug-checklist.mdx |
+| 15 | public search refresh wave 15 | 3/3 | 33 | 3 | mojibake-public, cannibalization, short-description | content/blog/node-version-mismatch-fix.mdx<br>content/blog/ai-ppt-beginner-guide.mdx<br>content/blog/ai-tools-recommendation-beginner.mdx |
+| 16 | public search refresh wave 16 | 3/3 | 33 | 3 | mojibake-public, short-description | content/blog/codex-first-landing-page-freelance-scope.mdx<br>content/blog/dify-metadata-filtering-rag-guide.mdx<br>content/blog/llm-cost-monitoring-dashboard-guide.mdx |
+| 17 | public search refresh wave 17 | 3/3 | 33 | 3 | mojibake-public, short-description | content/blog/module-not-found-debug-freelance-scope.mdx<br>content/blog/node-version-mismatch-fix-freelance-scope.mdx<br>content/blog/rag-prompt-injection-defense-guide.mdx |
+| 18 | public search refresh wave 18 | 3/3 | 31 | 3 | mojibake-public, short-description, cannibalization, high-priority | content/blog/ray-serve-llm-deployment-guide.mdx<br>content/blog/dev-works-build-fails-checklist.mdx<br>content/blog/dev-works-build-fails-mistakes.mdx |
+| 19 | public search refresh wave 19 | 3/3 | 33 | 3 | short-description, cannibalization, high-priority | content/blog/dev-works-build-fails.mdx<br>content/blog/failed-to-push-some-refs-fix-checklist.mdx<br>content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx |
+| 20 | public search refresh wave 20 | 3/3 | 33 | 3 | short-description, cannibalization, high-priority | content/blog/failed-to-push-some-refs-fix-mistakes.mdx<br>content/blog/nextjs-hydration-error-debug-checklist.mdx<br>content/blog/nextjs-hydration-error-debug-mistakes.mdx |
+| 21 | public search refresh wave 21 | 3/3 | 32 | 0 | cannibalization, freshness-high, short-description | content/blog/codex-npm-install-error-beginner-fix.mdx<br>content/blog/codex-generated-code-review-guide.mdx<br>content/blog/failed-to-push-some-refs-fix.mdx |
+| 22 | public search refresh wave 22 | 3/3 | 32 | 0 | cannibalization, short-description, freshness-high | content/blog/nextjs-hydration-error-debug.mdx<br>content/blog/payoneer-wise-paypal-beginner-comparison.mdx<br>content/blog/upwork-client-requirements-analysis-beginner.mdx |
+| 23 | public search refresh wave 23 | 3/3 | 33 | 0 | short-description, freshness-high, cannibalization | content/blog/upwork-proposal-no-reply-checklist.mdx<br>content/blog/vercel-env-variable-missing-beginner-guide.mdx<br>content/blog/ads-income-when-to-start-checklist.mdx |
+| 24 | public search refresh wave 24 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ads-income-when-to-start.mdx<br>content/blog/affiliate-vs-service-income-checklist.mdx<br>content/blog/affiliate-vs-service-income.mdx |
+| 25 | public search refresh wave 25 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx<br>content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx<br>content/blog/ai-assisted-vs-automated-delivery.mdx |
+| 26 | public search refresh wave 26 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-beginner-project-fit-check-checklist.mdx<br>content/blog/ai-beginner-project-fit-check-mistakes.mdx<br>content/blog/ai-freelance-30-day-execution-checklist.mdx |
 | 27 | public search refresh wave 27 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-30-day-execution-mistakes.mdx<br>content/blog/ai-freelance-30-day-execution.mdx<br>content/blog/ai-freelance-automation-compliance-risk-checklist.mdx |
 | 28 | public search refresh wave 28 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx<br>content/blog/ai-freelance-automation-compliance-risk.mdx<br>content/blog/ai-freelance-common-misconceptions-checklist.mdx |
 | 29 | public search refresh wave 29 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-common-misconceptions-mistakes.mdx<br>content/blog/ai-freelance-common-misconceptions.mdx<br>content/blog/ai-freelance-failure-review-checklist.mdx |
@@ -283,8 +283,8 @@ Top actions:
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
 | 210 | 13 | 89 | mojibake-public, short-description, freshness-high | Codex 是什么新手怎么开始 | content/blog/what-is-codex-beginner-start.mdx |
+| 205 | 13 | 53 | mojibake-public, short-description, cannibalization | AI 新手如何判断自己能不能接项目 | content/blog/ai-beginner-project-fit-check.mdx |
 | 205 | 13 | 52 | mojibake-public, short-description, cannibalization | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
-| 205 | 13 | 56 | mojibake-public, short-description, cannibalization | 第一次接 AI 小单前要准备什么 | content/blog/before-first-ai-freelance-job.mdx |
 
 Top actions:
 
@@ -299,6 +299,17 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
+#### AI 新手如何判断自己能不能接项目
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "beginner-project-fit-check" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in description after comparing the intended topic and sources.
+
 #### AI 小项目练习选题检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -306,17 +317,6 @@ Top actions:
 - Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
 - Review the meta description for a clearer user problem, outcome, and concrete workflow term.
 - Cannibalization check: review similar slug stem conflict "small-project-practice-topics" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-
-#### 第一次接 AI 小单前要准备什么
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar slug stem conflict "before-first-freelance-job" before expanding this page or approving related drafts.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
@@ -331,11 +331,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 205 | 13 | 56 | mojibake-public, short-description, cannibalization | 第一次接 AI 小单前要准备什么 | content/blog/before-first-ai-freelance-job.mdx |
 | 205 | 13 | 61 | mojibake-public, short-description, cannibalization | Canva 作品集封面发布前检查清单 | content/blog/canva-portfolio-cover-tips-checklist.mdx |
 | 205 | 13 | 59 | mojibake-public, short-description, cannibalization | Claude Code 新手使用检查清单 | content/blog/claude-code-beginner-mistakes-checklist.mdx |
-| 205 | 13 | 68 | mojibake-public, short-description, cannibalization | Claude Code 新手常见错误和修正方法 | content/blog/claude-code-beginner-mistakes-mistakes.mdx |
 
 Top actions:
+
+#### 第一次接 AI 小单前要准备什么
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "before-first-freelance-job" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
 #### Canva 作品集封面发布前检查清单
 
@@ -359,17 +370,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
-#### Claude Code 新手常见错误和修正方法
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar slug stem conflict "claude-code-beginner" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-
 ### public search refresh wave 4
 
 - Ready items: 3/3
@@ -380,11 +380,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 205 | 13 | 68 | mojibake-public, short-description, cannibalization | Claude Code 新手常见错误和修正方法 | content/blog/claude-code-beginner-mistakes-mistakes.mdx |
 | 205 | 13 | 60 | mojibake-public, short-description, cannibalization | Claude Code 新手使用场景检查清单 | content/blog/claude-code-beginner-use-cases-checklist.mdx |
 | 205 | 13 | 71 | mojibake-public, short-description, cannibalization | Claude Code 新手适合用在哪些项目场景 | content/blog/claude-code-beginner-use-cases.mdx |
-| 205 | 13 | 70 | mojibake-public, short-description, cannibalization | Claude Code Bug Prompt 常见错误 | content/blog/claude-code-bug-prompt-mistakes.mdx |
 
 Top actions:
+
+#### Claude Code 新手常见错误和修正方法
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "claude-code-beginner" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
 #### Claude Code 新手使用场景检查清单
 
@@ -408,17 +419,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
-#### Claude Code Bug Prompt 常见错误
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar slug stem conflict "claude-code-bug-prompt" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in targetReader, bodyExcerpt after comparing the intended topic and sources.
-
 ### public search refresh wave 5
 
 - Ready items: 3/3
@@ -429,11 +429,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 205 | 13 | 70 | mojibake-public, short-description, cannibalization | Claude Code Bug Prompt 常见错误 | content/blog/claude-code-bug-prompt-mistakes.mdx |
 | 205 | 13 | 74 | mojibake-public, short-description, cannibalization | Claude Code 修 bug 的 prompt 怎么写 | content/blog/claude-code-bug-prompt.mdx |
 | 205 | 13 | 61 | mojibake-public, short-description, cannibalization | Claude Code 新手运行常用命令时的常见错误 | content/blog/claude-code-common-commands-mistakes.mdx |
-| 205 | 13 | 72 | mojibake-public, short-description, cannibalization | Claude Code 新手常用命令怎么整理成项目笔记 | content/blog/claude-code-common-commands.mdx |
 
 Top actions:
+
+#### Claude Code Bug Prompt 常见错误
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "claude-code-bug-prompt" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in targetReader, bodyExcerpt after comparing the intended topic and sources.
 
 #### Claude Code 修 bug 的 prompt 怎么写
 
@@ -457,17 +468,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in targetReader after comparing the intended topic and sources.
 
-#### Claude Code 新手常用命令怎么整理成项目笔记
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar slug stem conflict "claude-code-common-commands" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-
 ### public search refresh wave 6
 
 - Ready items: 3/3
@@ -478,11 +478,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 205 | 13 | 72 | mojibake-public, short-description, cannibalization | Claude Code 新手常用命令怎么整理成项目笔记 | content/blog/claude-code-common-commands.mdx |
 | 205 | 13 | 65 | mojibake-public, short-description, cannibalization | Claude Code 排查客户报错时的常见错误 | content/blog/claude-code-error-debug-mistakes.mdx |
 | 205 | 13 | 75 | mojibake-public, short-description, cannibalization | Claude Code 看 GitHub 文件时的常见范围错误 | content/blog/claude-code-github-file-scope-mistakes.mdx |
-| 205 | 13 | 75 | mojibake-public, short-description, cannibalization | 哪些小项目任务适合用 Claude Code 辅助项目 | content/blog/claude-code-small-project-tasks.mdx |
 
 Top actions:
+
+#### Claude Code 新手常用命令怎么整理成项目笔记
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "claude-code-common-commands" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
 #### Claude Code 排查客户报错时的常见错误
 
@@ -506,17 +517,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
-#### 哪些小项目任务适合用 Claude Code 辅助项目
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar slug stem conflict "claude-code-small-project-tasks" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-
 ### public search refresh wave 7
 
 - Ready items: 3/3
@@ -527,11 +527,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 205 | 13 | 75 | mojibake-public, short-description, cannibalization | 哪些小项目任务适合用 Claude Code 辅助项目 | content/blog/claude-code-small-project-tasks.mdx |
 | 205 | 13 | 51 | mojibake-public, short-description, cannibalization | 网页修改 AI 工具检查清单：Claude Code 和 Codex 怎么选 | content/blog/claude-code-vs-codex-web-editing-checklist.mdx |
 | 205 | 13 | 56 | mojibake-public, short-description, cannibalization | Codex 自动化开发流程常见错误 | content/blog/codex-automation-steps-not-skip-mistakes.mdx |
-| 205 | 13 | 65 | mojibake-public, short-description, cannibalization | Codex 自动化开发流程哪些步骤不能省 | content/blog/codex-automation-steps-not-skip.mdx |
 
 Top actions:
+
+#### 哪些小项目任务适合用 Claude Code 辅助项目
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "claude-code-small-project-tasks" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
 #### 网页修改 AI 工具检查清单：Claude Code 和 Codex 怎么选
 
@@ -555,17 +566,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in description, bodyExcerpt after comparing the intended topic and sources.
 
-#### Codex 自动化开发流程哪些步骤不能省
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar slug stem conflict "codex-automation-steps-not-skip" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-
 ### public search refresh wave 8
 
 - Ready items: 3/3
@@ -576,11 +576,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 205 | 13 | 65 | mojibake-public, short-description, cannibalization | Codex 自动化开发流程哪些步骤不能省 | content/blog/codex-automation-steps-not-skip.mdx |
 | 205 | 13 | 73 | mojibake-public, short-description, cannibalization | Codex 修改现有网页 UI 常见错误和修复顺序 | content/blog/codex-edit-existing-ui-mistakes.mdx |
 | 205 | 13 | 50 | mojibake-public, short-description, cannibalization | Codex 是什么，新手第一天应该怎么用：新手检查清单 | content/blog/codex-first-day-guide-checklist.mdx |
-| 205 | 13 | 60 | mojibake-public, short-description, cannibalization | Codex 安装前置条件检查清单 | content/blog/codex-install-prerequisites-checklist.mdx |
 
 Top actions:
+
+#### Codex 自动化开发流程哪些步骤不能省
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "codex-automation-steps-not-skip" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
 #### Codex 修改现有网页 UI 常见错误和修复顺序
 
@@ -604,17 +615,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
-#### Codex 安装前置条件检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar slug stem conflict "codex-install-prerequisites" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-
 ### public search refresh wave 9
 
 - Ready items: 3/3
@@ -625,11 +625,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 205 | 13 | 60 | mojibake-public, short-description, cannibalization | Codex 安装前置条件检查清单 | content/blog/codex-install-prerequisites-checklist.mdx |
 | 205 | 13 | 69 | mojibake-public, short-description, cannibalization | npm install 报错常见错误和修复顺序 | content/blog/codex-npm-install-errors-mistakes.mdx |
 | 205 | 13 | 79 | mojibake-public, short-description, cannibalization | 用 Codex 排查 npm install 报错 | content/blog/codex-npm-install-errors.mdx |
-| 205 | 13 | 60 | mojibake-public, short-description, cannibalization | Upwork 筛单风险判断能不能接 | content/blog/codex-upwork-job-risk-check-freelance-scope.mdx |
 
 Top actions:
+
+#### Codex 安装前置条件检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "codex-install-prerequisites" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
 #### npm install 报错常见错误和修复顺序
 
@@ -653,17 +664,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
-#### Upwork 筛单风险判断能不能接
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar slug stem conflict "codex-upwork-job-risk-check" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-
 ### public search refresh wave 10
 
 - Ready items: 3/3
@@ -674,11 +674,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 205 | 13 | 60 | mojibake-public, short-description, cannibalization | Upwork 筛单风险判断能不能接 | content/blog/codex-upwork-job-risk-check-freelance-scope.mdx |
 | 205 | 13 | 75 | mojibake-public, short-description, cannibalization | 用 Codex 判断 Upwork 任务风险 | content/blog/codex-upwork-job-risk-check.mdx |
 | 205 | 13 | 72 | mojibake-public, short-description, cannibalization | 新手如何记录每天的项目练习 | content/blog/daily-ai-freelance-practice-log.mdx |
-| 205 | 13 | 78 | mojibake-public, short-description, cannibalization | module not found 常见错误和解决步骤 | content/blog/module-not-found-debug-mistakes.mdx |
 
 Top actions:
+
+#### Upwork 筛单风险判断能不能接
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "codex-upwork-job-risk-check" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
 #### 用 Codex 判断 Upwork 任务风险
 
@@ -702,17 +713,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
-#### module not found 常见错误和解决步骤
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar slug stem conflict "module-not-found-debug" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-
 ### public search refresh wave 11
 
 - Ready items: 3/3
@@ -723,11 +723,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 205 | 13 | 78 | mojibake-public, short-description, cannibalization | module not found 常见错误和解决步骤 | content/blog/module-not-found-debug-mistakes.mdx |
 | 205 | 13 | 75 | mojibake-public, short-description, cannibalization | Node 版本不匹配常见错误和解决步骤 | content/blog/node-version-mismatch-fix-mistakes.mdx |
 | 205 | 13 | 73 | mojibake-public, short-description, cannibalization | permission denied 报错新手怎么处理：新手检查清单 | content/blog/permission-denied-fix-checklist.mdx |
-| 205 | 13 | 73 | mojibake-public, short-description, cannibalization | permission denied 报错新手怎么处理：常见错误和解决步骤 | content/blog/permission-denied-fix-mistakes.mdx |
 
 Top actions:
+
+#### module not found 常见错误和解决步骤
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "module-not-found-debug" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 
 #### Node 版本不匹配常见错误和解决步骤
 
@@ -751,6 +762,22 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in description after comparing the intended topic and sources.
 
+### public search refresh wave 12
+
+- Ready items: 3/3
+- Action items: 35
+- Refresh reasons: mojibake-public, short-description, cannibalization, freshness-high
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 205 | 13 | 73 | mojibake-public, short-description, cannibalization | permission denied 报错新手怎么处理：常见错误和解决步骤 | content/blog/permission-denied-fix-mistakes.mdx |
+| 200 | 11 | 97 | mojibake-public, freshness-high | Codex 生成代码后怎么审核：交付前检查清单 | content/blog/codex-code-review-delivery-checklist.mdx |
+| 200 | 11 | 101 | mojibake-public, freshness-high | Codex 和 GitHub 怎么配合：提交代码前检查 | content/blog/codex-github-before-commit-checklist.mdx |
+
+Top actions:
+
 #### permission denied 报错新手怎么处理：常见错误和解决步骤
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -761,22 +788,6 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in description after comparing the intended topic and sources.
-
-### public search refresh wave 12
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: mojibake-public, freshness-high
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 200 | 11 | 97 | mojibake-public, freshness-high | Codex 生成代码后怎么审核：交付前检查清单 | content/blog/codex-code-review-delivery-checklist.mdx |
-| 200 | 11 | 101 | mojibake-public, freshness-high | Codex 和 GitHub 怎么配合：提交代码前检查 | content/blog/codex-github-before-commit-checklist.mdx |
-| 200 | 11 | 102 | mojibake-public, freshness-high | Codex 接 Upwork 小单怎么判断：风险检查清单 | content/blog/codex-upwork-small-job-risk-checklist.mdx |
-
-Top actions:
 
 #### Codex 生成代码后怎么审核：交付前检查清单
 
@@ -800,6 +811,22 @@ Top actions:
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 - Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
 
+### public search refresh wave 13
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: mojibake-public, freshness-high
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 200 | 11 | 102 | mojibake-public, freshness-high | Codex 接 Upwork 小单怎么判断：风险检查清单 | content/blog/codex-upwork-small-job-risk-checklist.mdx |
+| 200 | 11 | 101 | mojibake-public, freshness-high | Codex 部署 Vercel 前检查什么：上线前清单 | content/blog/codex-vercel-deploy-preflight-checklist.mdx |
+| 200 | 11 | 104 | mojibake-public, freshness-high | Codex 和 Claude Code 怎么选：新手对比清单 | content/blog/codex-vs-claude-code-beginner-checklist.mdx |
+
+Top actions:
+
 #### Codex 接 Upwork 小单怎么判断：风险检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -810,22 +837,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 - Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
-
-### public search refresh wave 13
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: mojibake-public, freshness-high, cannibalization
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 200 | 11 | 101 | mojibake-public, freshness-high | Codex 部署 Vercel 前检查什么：上线前清单 | content/blog/codex-vercel-deploy-preflight-checklist.mdx |
-| 200 | 11 | 104 | mojibake-public, freshness-high | Codex 和 Claude Code 怎么选：新手对比清单 | content/blog/codex-vs-claude-code-beginner-checklist.mdx |
-| 195 | 11 | 91 | mojibake-public, cannibalization | git authentication failed 常见错误和解决步骤 | content/blog/git-authentication-failed-fix-mistakes.mdx |
-
-Top actions:
 
 #### Codex 部署 Vercel 前检查什么：上线前清单
 
@@ -849,17 +860,6 @@ Top actions:
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 - Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
 
-#### git authentication failed 常见错误和解决步骤
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Cannibalization check: review similar slug stem conflict "git-authentication-failed-fix" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-- Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
-
 ### public search refresh wave 14
 
 - Ready items: 3/3
@@ -870,11 +870,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 195 | 11 | 91 | mojibake-public, cannibalization | git authentication failed 常见错误和解决步骤 | content/blog/git-authentication-failed-fix-mistakes.mdx |
 | 195 | 11 | 91 | mojibake-public, cannibalization | git authentication failed 怎么解决 | content/blog/git-authentication-failed-fix.mdx |
 | 195 | 11 | 91 | mojibake-public, cannibalization | GitHub Actions build 失败日志检查清单 | content/blog/github-actions-build-log-debug-checklist.mdx |
-| 195 | 11 | 91 | mojibake-public, cannibalization | Node 版本不匹配怎么排查 | content/blog/node-version-mismatch-fix.mdx |
 
 Top actions:
+
+#### git authentication failed 常见错误和解决步骤
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Cannibalization check: review similar slug stem conflict "git-authentication-failed-fix" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
+- Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
 
 #### git authentication failed 怎么解决
 
@@ -898,6 +909,22 @@ Top actions:
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 - Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
 
+### public search refresh wave 15
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: mojibake-public, cannibalization, short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 195 | 11 | 91 | mojibake-public, cannibalization | Node 版本不匹配怎么排查 | content/blog/node-version-mismatch-fix.mdx |
+| 190 | 11 | 56 | mojibake-public, short-description | AI 做 PPT 怎么开始：新手从大纲到成稿的流程 | content/blog/ai-ppt-beginner-guide.mdx |
+| 190 | 11 | 54 | mojibake-public, short-description | AI 工具推荐怎么选：新手别一开始买太多 | content/blog/ai-tools-recommendation-beginner.mdx |
+
+Top actions:
+
 #### Node 版本不匹配怎么排查
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -908,22 +935,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 - Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
-
-### public search refresh wave 15
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: mojibake-public, short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 190 | 11 | 56 | mojibake-public, short-description | AI 做 PPT 怎么开始：新手从大纲到成稿的流程 | content/blog/ai-ppt-beginner-guide.mdx |
-| 190 | 11 | 54 | mojibake-public, short-description | AI 工具推荐怎么选：新手别一开始买太多 | content/blog/ai-tools-recommendation-beginner.mdx |
-| 190 | 11 | 62 | mojibake-public, short-description | Codex 怎么做第一个落地页：使用前怎么判断是否适合 | content/blog/codex-first-landing-page-freelance-scope.mdx |
-
-Top actions:
 
 #### AI 做 PPT 怎么开始：新手从大纲到成稿的流程
 
@@ -947,17 +958,6 @@ Top actions:
 - Repair likely garbled public copy in description, bodyExcerpt after comparing the intended topic and sources.
 - Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
 
-#### Codex 怎么做第一个落地页：使用前怎么判断是否适合
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
-- Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
-
 ### public search refresh wave 16
 
 - Ready items: 3/3
@@ -968,11 +968,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 190 | 11 | 62 | mojibake-public, short-description | Codex 怎么做第一个落地页：使用前怎么判断是否适合 | content/blog/codex-first-landing-page-freelance-scope.mdx |
 | 190 | 11 | 69 | mojibake-public, short-description | Dify metadata filtering 怎么用：让知识库检索更可控 | content/blog/dify-metadata-filtering-rag-guide.mdx |
 | 190 | 11 | 54 | mojibake-public, short-description | 大模型成本监控怎么做：按用户、功能、模型和项目拆账 | content/blog/llm-cost-monitoring-dashboard-guide.mdx |
-| 190 | 11 | 72 | mojibake-public, short-description | module not found 使用前怎么判断是否适合 | content/blog/module-not-found-debug-freelance-scope.mdx |
 
 Top actions:
+
+#### Codex 怎么做第一个落地页：使用前怎么判断是否适合
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
+- Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
 
 #### Dify metadata filtering 怎么用：让知识库检索更可控
 
@@ -996,6 +1007,22 @@ Top actions:
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 - Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
 
+### public search refresh wave 17
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: mojibake-public, short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 190 | 11 | 72 | mojibake-public, short-description | module not found 使用前怎么判断是否适合 | content/blog/module-not-found-debug-freelance-scope.mdx |
+| 190 | 11 | 58 | mojibake-public, short-description | Node 版本不匹配使用前怎么判断是否适合 | content/blog/node-version-mismatch-fix-freelance-scope.mdx |
+| 190 | 11 | 59 | mojibake-public, short-description | RAG 提示词注入怎么防：知识库不能盲目信任文档内容 | content/blog/rag-prompt-injection-defense-guide.mdx |
+
+Top actions:
+
 #### module not found 使用前怎么判断是否适合
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -1006,22 +1033,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 - Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
-
-### public search refresh wave 17
-
-- Ready items: 3/3
-- Action items: 31
-- Refresh reasons: mojibake-public, short-description
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 190 | 11 | 58 | mojibake-public, short-description | Node 版本不匹配使用前怎么判断是否适合 | content/blog/node-version-mismatch-fix-freelance-scope.mdx |
-| 190 | 11 | 59 | mojibake-public, short-description | RAG 提示词注入怎么防：知识库不能盲目信任文档内容 | content/blog/rag-prompt-injection-defense-guide.mdx |
-| 180 | 9 | 95 | mojibake-public | Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门 | content/blog/ray-serve-llm-deployment-guide.mdx |
-
-Top actions:
 
 #### Node 版本不匹配使用前怎么判断是否适合
 
@@ -1045,6 +1056,22 @@ Top actions:
 - Repair likely garbled public copy in title, bodyExcerpt after comparing the intended topic and sources.
 - Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
 
+### public search refresh wave 18
+
+- Ready items: 3/3
+- Action items: 31
+- Refresh reasons: mojibake-public, short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 180 | 9 | 95 | mojibake-public | Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门 | content/blog/ray-serve-llm-deployment-guide.mdx |
+| 140 | 11 | 76 | short-description, cannibalization, high-priority | npm run dev 能跑但 build 失败检查清单 | content/blog/dev-works-build-fails-checklist.mdx |
+| 140 | 11 | 72 | short-description, cannibalization, high-priority | npm run dev 能跑但 build 失败常见错误和解决步骤 | content/blog/dev-works-build-fails-mistakes.mdx |
+
+Top actions:
+
 #### Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -1055,22 +1082,6 @@ Top actions:
 - Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.
 - Prioritize readable Chinese body copy before metadata polishing, because this page is already public.
 - Keep canonical and slug stable unless a human explicitly approves a redirect or migration.
-
-### public search refresh wave 18
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: short-description, cannibalization, high-priority
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 11 | 76 | short-description, cannibalization, high-priority | npm run dev 能跑但 build 失败检查清单 | content/blog/dev-works-build-fails-checklist.mdx |
-| 140 | 11 | 72 | short-description, cannibalization, high-priority | npm run dev 能跑但 build 失败常见错误和解决步骤 | content/blog/dev-works-build-fails-mistakes.mdx |
-| 140 | 11 | 84 | short-description, cannibalization, high-priority | npm run dev 能跑但 build 失败怎么办 | content/blog/dev-works-build-fails.mdx |
-
-Top actions:
 
 #### npm run dev 能跑但 build 失败检查清单
 
@@ -1094,17 +1105,6 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-#### npm run dev 能跑但 build 失败怎么办
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar title stem conflict "npm run dev 能跑但 build" before expanding this page or approving related drafts.
-- Cannibalization check: review similar slug stem conflict "dev-works-build-fails" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
 ### public search refresh wave 19
 
 - Ready items: 3/3
@@ -1115,11 +1115,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 140 | 11 | 84 | short-description, cannibalization, high-priority | npm run dev 能跑但 build 失败怎么办 | content/blog/dev-works-build-fails.mdx |
 | 140 | 11 | 81 | short-description, cannibalization, high-priority | failed to push some refs 排查检查清单 | content/blog/failed-to-push-some-refs-fix-checklist.mdx |
 | 140 | 11 | 76 | short-description, cannibalization, high-priority | failed to push some refs 使用前怎么判断是否适合 | content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx |
-| 140 | 11 | 77 | short-description, cannibalization, high-priority | failed to push some refs 常见错误和解决步骤 | content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
 
 Top actions:
+
+#### npm run dev 能跑但 build 失败怎么办
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar title stem conflict "npm run dev 能跑但 build" before expanding this page or approving related drafts.
+- Cannibalization check: review similar slug stem conflict "dev-works-build-fails" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
 #### failed to push some refs 排查检查清单
 
@@ -1143,6 +1154,22 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 20
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, cannibalization, high-priority
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 140 | 11 | 77 | short-description, cannibalization, high-priority | failed to push some refs 常见错误和解决步骤 | content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
+| 140 | 11 | 83 | short-description, cannibalization, high-priority | Next.js hydration error 怎么排查：新手检查清单 | content/blog/nextjs-hydration-error-debug-checklist.mdx |
+| 140 | 11 | 79 | short-description, cannibalization, high-priority | Next.js hydration error 怎么排查：常见错误和解决步骤 | content/blog/nextjs-hydration-error-debug-mistakes.mdx |
+
+Top actions:
+
 #### failed to push some refs 常见错误和解决步骤
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -1153,22 +1180,6 @@ Top actions:
 - Cannibalization check: review similar slug stem conflict "failed-push-some-refs-fix" before expanding this page or approving related drafts.
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-### public search refresh wave 20
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: short-description, cannibalization, high-priority, freshness-high
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 140 | 11 | 83 | short-description, cannibalization, high-priority | Next.js hydration error 怎么排查：新手检查清单 | content/blog/nextjs-hydration-error-debug-checklist.mdx |
-| 140 | 11 | 79 | short-description, cannibalization, high-priority | Next.js hydration error 怎么排查：常见错误和解决步骤 | content/blog/nextjs-hydration-error-debug-mistakes.mdx |
-| 135 | 11 | 102 | cannibalization, freshness-high | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx |
-
-Top actions:
 
 #### Next.js hydration error 怎么排查：新手检查清单
 
@@ -1192,6 +1203,22 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 21
+
+- Ready items: 3/3
+- Action items: 32
+- Refresh reasons: cannibalization, freshness-high, short-description
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 135 | 11 | 102 | cannibalization, freshness-high | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx |
+| 130 | 11 | 89 | short-description, freshness-high | Codex 生成代码后怎么审核 | content/blog/codex-generated-code-review-guide.mdx |
+| 130 | 10 | 99 | cannibalization | failed to push some refs 怎么排查 | content/blog/failed-to-push-some-refs-fix.mdx |
+
+Top actions:
+
 #### Codex 项目 npm install 报错怎么办：新手排查步骤
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -1202,22 +1229,6 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.
-
-### public search refresh wave 21
-
-- Ready items: 3/3
-- Action items: 31
-- Refresh reasons: short-description, freshness-high, cannibalization
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 130 | 11 | 89 | short-description, freshness-high | Codex 生成代码后怎么审核 | content/blog/codex-generated-code-review-guide.mdx |
-| 130 | 10 | 99 | cannibalization | failed to push some refs 怎么排查 | content/blog/failed-to-push-some-refs-fix.mdx |
-| 130 | 10 | 92 | cannibalization | Next.js hydration error 怎么排查 | content/blog/nextjs-hydration-error-debug.mdx |
-
-Top actions:
 
 #### Codex 生成代码后怎么审核
 
@@ -1241,6 +1252,22 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.
 
+### public search refresh wave 22
+
+- Ready items: 3/3
+- Action items: 32
+- Refresh reasons: cannibalization, short-description, freshness-high
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 130 | 10 | 92 | cannibalization | Next.js hydration error 怎么排查 | content/blog/nextjs-hydration-error-debug.mdx |
+| 130 | 11 | 82 | short-description, freshness-high | Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
+| 130 | 11 | 64 | short-description, freshness-high | Upwork 客户需求太模糊怎么办：新手分析和追问清单 | content/blog/upwork-client-requirements-analysis-beginner.mdx |
+
+Top actions:
+
 #### Next.js hydration error 怎么排查
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -1251,22 +1278,6 @@ Top actions:
 - Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.
-
-### public search refresh wave 22
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: short-description, freshness-high
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 130 | 11 | 82 | short-description, freshness-high | Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
-| 130 | 11 | 64 | short-description, freshness-high | Upwork 客户需求太模糊怎么办：新手分析和追问清单 | content/blog/upwork-client-requirements-analysis-beginner.mdx |
-| 130 | 11 | 80 | short-description, freshness-high | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
-
-Top actions:
 
 #### Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看
 
@@ -1290,17 +1301,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-#### Upwork Proposal 发出去没人回怎么办：新手检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
 ### public search refresh wave 23
 
 - Ready items: 3/3
@@ -1311,11 +1311,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 130 | 11 | 80 | short-description, freshness-high | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
 | 130 | 11 | 87 | short-description, freshness-high | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | content/blog/vercel-env-variable-missing-beginner-guide.mdx |
 | 125 | 11 | 63 | short-description, cannibalization | 广告收入要等到什么时候再接：新手检查清单 | content/blog/ads-income-when-to-start-checklist.mdx |
-| 125 | 11 | 66 | short-description, cannibalization | 广告收入要等到什么时候再接 | content/blog/ads-income-when-to-start.mdx |
 
 Top actions:
+
+#### Upwork Proposal 发出去没人回怎么办：新手检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
 #### Vercel 提示环境变量缺失怎么办：新手部署检查流程
 
@@ -1339,17 +1350,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-#### 广告收入要等到什么时候再接
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar slug stem conflict "ads-income-when-start" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
 ### public search refresh wave 24
 
 - Ready items: 3/3
@@ -1360,11 +1360,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 66 | short-description, cannibalization | 广告收入要等到什么时候再接 | content/blog/ads-income-when-to-start.mdx |
 | 125 | 11 | 69 | short-description, cannibalization | 联盟链接收入和服务收入有什么区别：新手检查清单 | content/blog/affiliate-vs-service-income-checklist.mdx |
 | 125 | 11 | 52 | short-description, cannibalization | 联盟链接收入和服务收入有什么区别 | content/blog/affiliate-vs-service-income.mdx |
-| 125 | 11 | 53 | short-description, cannibalization | AI 辅助交付和完全自动交付的检查清单 | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
 
 Top actions:
+
+#### 广告收入要等到什么时候再接
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "ads-income-when-start" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
 #### 联盟链接收入和服务收入有什么区别：新手检查清单
 
@@ -1388,17 +1399,6 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-#### AI 辅助交付和完全自动交付的检查清单
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar slug stem conflict "assisted-automated-delivery" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
 ### public search refresh wave 25
 
 - Ready items: 3/3
@@ -1409,11 +1409,22 @@ Top actions:
 
 | Score | Actions | Desc | Reasons | Title | File |
 | ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 53 | short-description, cannibalization | AI 辅助交付和完全自动交付的检查清单 | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
 | 125 | 11 | 50 | short-description, cannibalization | AI 辅助交付常见错误和解决步骤 | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx |
 | 125 | 11 | 58 | short-description, cannibalization | AI 辅助交付和完全自动交付有什么区别 | content/blog/ai-assisted-vs-automated-delivery.mdx |
-| 125 | 11 | 52 | short-description, cannibalization | AI 新手接项目前的项目适配检查清单 | content/blog/ai-beginner-project-fit-check-checklist.mdx |
 
 Top actions:
+
+#### AI 辅助交付和完全自动交付的检查清单
+
+- Confirm the public page still answers one clear search intent before editing.
+- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
+- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
+- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
+- Cannibalization check: review similar slug stem conflict "assisted-automated-delivery" before expanding this page or approving related drafts.
+- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
+- Apply public-page edits manually only after approval; publish confirm remains excluded.
+- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
 #### AI 辅助交付常见错误和解决步骤
 
@@ -1437,6 +1448,22 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
+### public search refresh wave 26
+
+- Ready items: 3/3
+- Action items: 33
+- Refresh reasons: short-description, cannibalization
+- Publish confirm: not-included
+- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
+
+| Score | Actions | Desc | Reasons | Title | File |
+| ---: | ---: | ---: | --- | --- | --- |
+| 125 | 11 | 52 | short-description, cannibalization | AI 新手接项目前的项目适配检查清单 | content/blog/ai-beginner-project-fit-check-checklist.mdx |
+| 125 | 11 | 61 | short-description, cannibalization | AI 新手判断接项目时的常见错误 | content/blog/ai-beginner-project-fit-check-mistakes.mdx |
+| 125 | 11 | 54 | short-description, cannibalization | 新手 30 天 AI 工具实践执行检查清单 | content/blog/ai-freelance-30-day-execution-checklist.mdx |
+
+Top actions:
+
 #### AI 新手接项目前的项目适配检查清单
 
 - Confirm the public page still answers one clear search intent before editing.
@@ -1448,34 +1475,7 @@ Top actions:
 - Apply public-page edits manually only after approval; publish confirm remains excluded.
 - Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
 
-### public search refresh wave 26
-
-- Ready items: 3/3
-- Action items: 33
-- Refresh reasons: short-description, cannibalization
-- Publish confirm: not-included
-- Stop before: Stop before editing public metadata, body copy, canonical URL, sources, or internal links until a human approves the exact change.
-
-| Score | Actions | Desc | Reasons | Title | File |
-| ---: | ---: | ---: | --- | --- | --- |
-| 125 | 11 | 61 | short-description, cannibalization | AI 新手判断接项目时的常见错误 | content/blog/ai-beginner-project-fit-check-mistakes.mdx |
-| 125 | 11 | 53 | short-description, cannibalization | AI 新手如何判断自己能不能接项目 | content/blog/ai-beginner-project-fit-check.mdx |
-| 125 | 11 | 54 | short-description, cannibalization | 新手 30 天 AI 工具实践执行检查清单 | content/blog/ai-freelance-30-day-execution-checklist.mdx |
-
-Top actions:
-
 #### AI 新手判断接项目时的常见错误
-
-- Confirm the public page still answers one clear search intent before editing.
-- Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.
-- Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.
-- Review the meta description for a clearer user problem, outcome, and concrete workflow term.
-- Cannibalization check: review similar slug stem conflict "beginner-project-fit-check" before expanding this page or approving related drafts.
-- Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.
-- Apply public-page edits manually only after approval; publish confirm remains excluded.
-- Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.
-
-#### AI 新手如何判断自己能不能接项目
 
 - Confirm the public page still answers one clear search intent before editing.
 - Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.

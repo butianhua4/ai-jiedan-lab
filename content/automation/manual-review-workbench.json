@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T02:13:09.515Z",
+  "generatedAt": "2026-06-19T06:41:53.864Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -800,7 +800,9 @@
     "canClaimTraffic": false,
     "claimableMetrics": 0,
     "failedChecks": 0,
-    "measuredTrafficSources": [],
+    "measuredTrafficSources": [
+      "google-analytics"
+    ],
     "searchConsoleVerificationEvidence": false,
     "trafficDataAvailable": false
   },
@@ -808,7 +810,7 @@
     "filesScanned": 240,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 9670
+    "watchMentions": 9121
   },
   "contentIntegrity": {
     "allIssueItems": 0,

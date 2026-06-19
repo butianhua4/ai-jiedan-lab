@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T02:12:45.071Z",
+  "generatedAt": "2026-06-19T06:41:29.543Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,7 +10,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "approvalQueueGeneratedAt": "2026-06-18T11:36:57.586Z",
+    "approvalQueueGeneratedAt": "2026-06-19T02:13:08.094Z",
     "approvalQueueSummary": {
       "backlogItems": 0,
       "commandBoundaries": 3,
@@ -22,13 +22,13 @@
       "itemsWithFailedSourceDecision": 0,
       "itemsWithMassSearchTheme": 3,
       "itemsWithPopularPromptLane": 3,
-      "itemsWithSeoWarnings": 1,
+      "itemsWithSeoWarnings": 0,
       "itemsWithSourceReplacementDecisions": 3,
       "publishConfirmCommandsIncluded": 0,
       "trafficDataAvailable": false,
       "unsafeItems": 0
     },
-    "playbookGeneratedAt": "2026-06-19T02:12:44.569Z",
+    "playbookGeneratedAt": "2026-06-19T06:41:29.038Z",
     "playbookSummary": {
       "agentDeploymentLanes": 3,
       "broadWorkPromptLanes": 3,
@@ -50,7 +50,7 @@
       "uniqueCandidateFiles": 21,
       "unsafeItems": 7
     },
-    "reviewCandidatesGeneratedAt": "2026-06-19T02:12:21.121Z",
+    "reviewCandidatesGeneratedAt": "2026-06-19T06:41:04.965Z",
     "reviewCandidatesCounts": {
       "candidates": 148,
       "returned": 25,

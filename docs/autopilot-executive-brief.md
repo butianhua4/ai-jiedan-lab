@@ -1,6 +1,6 @@
 # Autopilot Executive Brief
 
-Generated at: 2026-06-19T02:13:10.889Z
+Generated at: 2026-06-19T06:41:55.248Z
 
 This report is read-only. It compresses the current automation reports into the next human-gated execution priorities.
 
@@ -27,11 +27,11 @@ This report is read-only. It compresses the current automation reports into the 
 - publishConfirmCommandsIncluded: 0
 - routeWarningItems: 3
 - trafficDataAvailable: false
-- unsafeItems: 0
+- unsafeItems: 1
 
 ## Unsafe Reasons
 
-- none
+- traffic source summary is inconsistent
 
 ## Top Human Approval Actions
 
@@ -54,7 +54,7 @@ This report is read-only. It compresses the current automation reports into the 
 | Board | Publish confirm | Action | Key summary |
 | --- | --- | --- | --- |
 | Internal links | not-included | Use docs/internal-link-sprint-board.md to add one contextual public link per candidate during manual review. | actionItems=128; broadFirstCoverageItems=0; candidateItems=16; candidateItemsMissingPublicLinkSuggestion=0; candidateItemsWithPublicSuggestions=16; candidatesWithoutCurrentPublicLinks=10; expansionItems=15; items=16 |
-| Public refresh | not-included | Use docs/public-refresh-sprint-board.md to refresh existing public articles without claiming traffic. | actionItems=5030; cannibalizationItems=241; highPriorityItems=59; items=500; itemsPerWave=3; itemsReadyForPublicRefreshSprint=500; liveMissingFromSitemap=0; mojibakePublicItems=51 |
+| Public refresh | not-included | Use docs/public-refresh-sprint-board.md to refresh existing public articles without claiming traffic. | actionItems=5032; cannibalizationItems=241; highPriorityItems=60; items=500; itemsPerWave=3; itemsReadyForPublicRefreshSprint=500; liveMissingFromSitemap=0; mojibakePublicItems=52 |
 | AI deployment | not-included | Use docs/ai-deployment-sprint-board.md to prioritize deployment, Agent, model-serving, and API tutorial candidates. | actionItems=88; agentItems=0; apiIntegrationItems=2; automationPlatformItems=0; deploymentPublicArticles=179; highPriorityItems=0; implementationModes=4; items=6 |
 | Memory/RAG | not-included | Use docs/memory-rag-sprint-board.md to prioritize RAG, knowledge base, vector search, memory, evaluation, and privacy lanes. | candidateItems=2; decisionChecks=39; deploymentPublicArticles=179; howToLanes=2; itemsPerWave=3; lanes=6; lanesWithCandidateFiles=2; privacyLanes=1 |
 | Popular prompts | not-included | Use docs/popular-prompt-sprint-board.md to prioritize high-demand prompt playbook lanes. | actionItems=90; bridgeItems=14; candidateFiles=21; highPriorityItems=5; industryBuckets=5; items=10; itemsPerWave=2; lanesReadyForPromptSprint=3 |

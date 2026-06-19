@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T02:12:56.526Z",
+  "generatedAt": "2026-06-19T06:41:41.041Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -55,7 +55,7 @@
     "liveMissingFromSitemap": 0,
     "publicArticles": 500,
     "trafficDataAvailable": false,
-    "measuredTrafficSources": 0,
+    "measuredTrafficSources": 1,
     "unsafeItems": 0
   },
   "marketRecommendation": {

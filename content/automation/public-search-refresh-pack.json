@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T02:12:54.866Z",
+  "generatedAt": "2026-06-19T06:41:39.397Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "cannibalizationGeneratedAt": "2026-06-19T02:12:52.162Z",
+    "cannibalizationGeneratedAt": "2026-06-19T06:41:36.689Z",
     "cannibalizationSummary": {
       "articleCount": 669,
       "conflicts": 199,
@@ -18,7 +18,7 @@
       "slugStemConflicts": 177,
       "titleStemConflicts": 11
     },
-    "freshnessGeneratedAt": "2026-06-19T02:12:53.920Z",
+    "freshnessGeneratedAt": "2026-06-19T06:41:38.451Z",
     "freshnessSummary": {
       "articlesChecked": 669,
       "currentReviewItems": 3,
@@ -27,7 +27,7 @@
       "mediumRisk": 93,
       "plannedReviewItems": 6
     },
-    "publicSurfaceGeneratedAt": "2026-06-19T02:12:25.249Z",
+    "publicSurfaceGeneratedAt": "2026-06-19T06:41:09.576Z",
     "publicSurfaceSummary": {
       "broadClusters": 8,
       "broadClustersWithoutPublicCoverage": 0,
@@ -45,7 +45,7 @@
       "trafficDataAvailable": false,
       "unsafeItems": 0
     },
-    "seoWarningsGeneratedAt": "2026-06-19T02:12:29.877Z",
+    "seoWarningsGeneratedAt": "2026-06-19T06:41:14.340Z",
     "seoWarningsSummary": {
       "blockingItems": 0,
       "draftItems": 0,
@@ -62,12 +62,12 @@
       "warningItems": 0,
       "waveItems": 0
     },
-    "trafficEvidenceGeneratedAt": "2026-06-19T02:12:23.831Z",
+    "trafficEvidenceGeneratedAt": "2026-06-19T06:41:08.192Z",
     "trafficEvidenceSummary": {
       "canClaimTraffic": false,
       "claimableMetrics": 0,
       "failedChecks": 0,
-      "measuredTrafficSources": 0,
+      "measuredTrafficSources": 1,
       "searchConsoleVerificationEvidence": false,
       "trafficDataAvailable": false
     },
@@ -80,7 +80,7 @@
     "items": 500,
     "itemsReadyForHumanRefreshReview": 500,
     "liveMissingFromSitemap": 0,
-    "measuredTrafficSources": 0,
+    "measuredTrafficSources": 1,
     "publicArticles": 500,
     "publishConfirmCommandsIncluded": 0,
     "publishedButNoindexed": 0,

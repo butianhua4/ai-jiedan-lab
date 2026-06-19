@@ -1,6 +1,6 @@
 # Traffic Evidence Audit
 
-Generated at: 2026-06-19T02:13:36.152Z
+Generated at: 2026-06-19T06:42:04.594Z
 
 This report separates live-site health from measured traffic. It does not claim visits, clicks, impressions, rankings, or revenue.
 
@@ -15,10 +15,10 @@ This report separates live-site health from measured traffic. It does not claim 
 - canClaimTraffic: false
 - claimableMetrics: 0
 - failedChecks: 0
-- measuredTrafficSources: 0
+- measuredTrafficSources: 1
 - searchConsoleVerificationEvidence: false
 - trafficDataAvailable: false
-- Measured traffic sources: none
+- Measured traffic sources: google-analytics
 
 ## Evidence
 
@@ -31,7 +31,7 @@ Environment:
 Code:
 
 - googleAnalyticsDependency: false
-- googleAnalyticsSnippet: false
+- googleAnalyticsSnippet: true
 - googleSiteVerificationMeta: true
 - vercelAnalyticsDependency: false
 - vercelAnalyticsSnippet: false
@@ -50,12 +50,11 @@ Live HTML:
 | Check | Status | Detail |
 | --- | --- | --- |
 | live homepage fetched | PASS | 200 after 1 attempt(s) |
-| traffic data is not claimed without measured source | PASS | measuredTrafficSources=0, claimableMetrics=0 |
+| traffic data is not claimed without measured source | PASS | measuredTrafficSources=1, claimableMetrics=0 |
 | search console status is evidence-based | PASS | no verification evidence detected in env or live HTML |
 | privacy page mentions analytics possibility | PASS | privacy notice should be reviewed before adding tracking scripts |
 
 ## Next Actions
 
-- Do not claim real traffic yet; current automation only proves the site is reachable and index surfaces are clean.
-- Add Search Console verification evidence before treating search performance as measurable.
-- Add Analytics or Vercel Web Analytics only after privacy notice and tracking purpose are confirmed.
+- Connect an authenticated export/API before reporting visits, clicks, impressions, or conversion metrics.
+- Keep public reports separate from measured traffic until metrics are imported into content/automation.

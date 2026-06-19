@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-19T02:13:45.612Z",
+  "generatedAt": "2026-06-19T06:42:14.030Z",
   "ok": false,
   "summary": {
     "checks": 197,
-    "failed": 48,
-    "passed": 149
+    "failed": 49,
+    "passed": 148
   },
   "failed": [
     {
@@ -16,6 +16,16 @@
       "name": "publish pack includes human decision and risk context",
       "ok": false,
       "detail": "content/blog/tools-not-to-buy-first.mdx"
+    },
+    {
+      "name": "autopilot executive brief stays human-gated and publish-safe",
+      "ok": false,
+      "detail": "unsafe=1, publishConfirm=0, publishableNow=0, routeWarnings=3"
+    },
+    {
+      "name": "publication bottleneck report stays publish-safe",
+      "ok": false,
+      "detail": "unsafe=1, publishConfirm=0, preflightFailed=0, traffic=false"
     },
     {
       "name": "internal link sprint board covers all linkable candidates",
@@ -238,11 +248,6 @@
       "detail": "ready=0, unsafe=0, waves=0"
     },
     {
-      "name": "public refresh sprint board covers public refresh pack",
-      "ok": false,
-      "detail": "items=500, public=500, waves=167, mojibakePublic=51, seo=0, shortDescriptions=457"
-    },
-    {
       "name": "manual review workbench includes SEO warning remediation",
       "ok": false,
       "detail": "workbenchSeo=0, remediation=0, unsafe=0"
@@ -325,8 +330,8 @@
     },
     {
       "name": "autopilot executive brief stays human-gated and publish-safe",
-      "ok": true,
-      "detail": "unsafe=0, publishConfirm=0, publishableNow=0, routeWarnings=3"
+      "ok": false,
+      "detail": "unsafe=1, publishConfirm=0, publishableNow=0, routeWarnings=3"
     },
     {
       "name": "publication bottleneck report explains manual gate",
@@ -335,8 +340,8 @@
     },
     {
       "name": "publication bottleneck report stays publish-safe",
-      "ok": true,
-      "detail": "unsafe=0, publishConfirm=0, preflightFailed=0, traffic=false"
+      "ok": false,
+      "detail": "unsafe=1, publishConfirm=0, preflightFailed=0, traffic=false"
     },
     {
       "name": "mojibake remediation brief is read-only and article-safe",
@@ -366,7 +371,7 @@
     {
       "name": "traffic evidence audit passed and is read-only",
       "ok": true,
-      "detail": "failedChecks=0, measuredTrafficSources=0"
+      "detail": "failedChecks=0, measuredTrafficSources=1"
     },
     {
       "name": "traffic is not claimed without measured metrics",
@@ -376,7 +381,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=240, unsafeClaims=0, watchMentions=9122"
+      "detail": "filesScanned=240, unsafeClaims=0, watchMentions=9126"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -1166,7 +1171,7 @@
     {
       "name": "public search refresh pack is read-only and covers all public pages",
       "ok": true,
-      "detail": "items=500, public=500, seo=0, measuredTraffic=0"
+      "detail": "items=500, public=500, seo=0, measuredTraffic=1"
     },
     {
       "name": "public search refresh pack keeps public edits human-gated and action-ready",
@@ -1175,18 +1180,18 @@
     },
     {
       "name": "public refresh sprint board covers public refresh pack",
-      "ok": false,
-      "detail": "items=500, public=500, waves=167, mojibakePublic=51, seo=0, shortDescriptions=457"
+      "ok": true,
+      "detail": "items=500, public=500, waves=167, mojibakePublic=52, seo=0, shortDescriptions=457"
     },
     {
       "name": "public refresh sprint board keeps public edits manual and publish-confirm-free",
       "ok": true,
-      "detail": "ready=500, actions=5030, unsafe=0, publishConfirm=0"
+      "detail": "ready=500, actions=5032, unsafe=0, publishConfirm=0"
     },
     {
       "name": "public search refresh session pack covers public sprint waves",
       "ok": true,
-      "detail": "sessions=167, files=500, actions=5030, ready=500"
+      "detail": "sessions=167, files=500, actions=5032, ready=500"
     },
     {
       "name": "public search refresh session pack stays manual and non-publishing",

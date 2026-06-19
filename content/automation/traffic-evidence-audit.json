@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T02:13:36.152Z",
+  "generatedAt": "2026-06-19T06:42:04.594Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This audit checks evidence for traffic measurement. It does not claim visits, clicks, impressions, rankings, or Search Console performance data."
@@ -9,11 +9,13 @@
     "canClaimTraffic": false,
     "claimableMetrics": 0,
     "failedChecks": 0,
-    "measuredTrafficSources": 0,
+    "measuredTrafficSources": 1,
     "searchConsoleVerificationEvidence": false,
     "trafficDataAvailable": false
   },
-  "measuredTrafficSources": [],
+  "measuredTrafficSources": [
+    "google-analytics"
+  ],
   "envEvidence": {
     "googleAnalyticsId": false,
     "googleSiteVerification": false,
@@ -21,7 +23,7 @@
   },
   "codeEvidence": {
     "googleAnalyticsDependency": false,
-    "googleAnalyticsSnippet": false,
+    "googleAnalyticsSnippet": true,
     "googleSiteVerificationMeta": true,
     "vercelAnalyticsDependency": false,
     "vercelAnalyticsSnippet": false
@@ -43,7 +45,7 @@
     {
       "name": "traffic data is not claimed without measured source",
       "ok": true,
-      "detail": "measuredTrafficSources=0, claimableMetrics=0"
+      "detail": "measuredTrafficSources=1, claimableMetrics=0"
     },
     {
       "name": "search console status is evidence-based",
@@ -57,8 +59,7 @@
     }
   ],
   "nextActions": [
-    "Do not claim real traffic yet; current automation only proves the site is reachable and index surfaces are clean.",
-    "Add Search Console verification evidence before treating search performance as measurable.",
-    "Add Analytics or Vercel Web Analytics only after privacy notice and tracking purpose are confirmed."
+    "Connect an authenticated export/API before reporting visits, clicks, impressions, or conversion metrics.",
+    "Keep public reports separate from measured traffic until metrics are imported into content/automation."
   ]
 }

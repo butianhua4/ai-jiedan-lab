@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T02:13:11.355Z",
+  "generatedAt": "2026-06-19T06:41:55.708Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -19,7 +19,7 @@
     "nextBatchWarningItems": 3,
     "publicArticles": 500,
     "publicMojibakeWarningItems": 0,
-    "publicRefreshActionItems": 5030,
+    "publicRefreshActionItems": 5032,
     "publishConfirmCommandsIncluded": 0,
     "reviewPreflightFailed": 0,
     "reviewPreflightMojibakeWarningItems": 0,
@@ -31,13 +31,13 @@
       "draft": 148
     },
     "trafficDataAvailable": false,
-    "unsafeItems": 0
+    "unsafeItems": 1
   },
   "bottlenecks": [
     "No article is publishable without explicit human approval.",
     "3 draft article(s) are ready for human approval before mark:review.",
     "3 next-batch route item(s) still need SEO/query/freshness remediation review.",
-    "51 public article(s) need garbled-copy refresh before traffic work is credible.",
+    "52 public article(s) need garbled-copy refresh before traffic work is credible.",
     "Traffic data is unavailable, so traffic claims remain blocked."
   ],
   "nextHumanApproval": [
@@ -646,8 +646,8 @@
     {
       "actionCount": 13,
       "category": "AI 自由职业路线",
-      "descriptionLength": 52,
-      "file": "content/blog/ai-small-project-practice-topics-checklist.mdx",
+      "descriptionLength": 53,
+      "file": "content/blog/ai-beginner-project-fit-check.mdx",
       "priorityScore": 205,
       "publishConfirm": "not-included",
       "readyForPublicRefreshSprint": true,
@@ -656,10 +656,10 @@
         "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
         "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
         "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
-        "Cannibalization check: review similar slug stem conflict \"small-project-practice-topics\" before expanding this page or approving related drafts.",
+        "Cannibalization check: review similar slug stem conflict \"beginner-project-fit-check\" before expanding this page or approving related drafts.",
         "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
         "Apply public-page edits manually only after approval; publish confirm remains excluded.",
-        "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
+        "Repair likely garbled public copy in description after comparing the intended topic and sources.",
         "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
         "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
         "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
@@ -673,13 +673,13 @@
       ],
       "mojibakeSignal": {
         "fields": [
-          "bodyExcerpt"
+          "description"
         ],
-        "sample": "命中这些信号时，换一个低风险题目。练习不需要冒险。"
+        "sample": "AI 新手接项目前，先用需求清晰度、风险等级、验证能力和交付边界判断自己能不能接，避免盲目报价和交付失控。"
       },
-      "slug": "ai-small-project-practice-topics-checklist",
+      "slug": "ai-beginner-project-fit-check",
       "sprintWave": 2,
-      "title": "AI 小项目练习选题检查清单",
+      "title": "AI 新手如何判断自己能不能接项目",
       "unsafeReasons": []
     }
   ]
