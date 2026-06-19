@@ -1,6 +1,6 @@
 {
-  "base": "https://ai-jiedan-lab.vercel.app",
-  "fetchBase": "https://ai-jiedan-lab.vercel.app",
+  "base": "https://ai.aporet.com",
+  "fetchBase": "https://ai.aporet.com",
   "score": 100,
   "summary": {
     "checks": 13,

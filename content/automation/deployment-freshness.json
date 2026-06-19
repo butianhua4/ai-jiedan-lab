@@ -5,7 +5,7 @@
     "noIndexingClaims": true,
     "note": "This report checks whether production HTML matches the current SEO code expectations. It does not claim Google indexing, ranking, impressions, clicks, or revenue."
   },
-  "base": "https://ai-jiedan-lab.vercel.app",
+  "base": "https://ai.aporet.com",
   "summary": {
     "ok": true,
     "checks": 7,
@@ -18,49 +18,49 @@
     {
       "name": "q detail page uses current US-facing title",
       "ok": true,
-      "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide",
+      "url": "https://ai.aporet.com/q/ai-tools/agent-tool-permission-safety-guide",
       "expected": "Agent Tool Permission Safety Guide",
       "actual": "Agent Tool Permission Safety Guide: quick fix, steps, and deep guide | AI Tools Guide"
     },
     {
       "name": "q detail page uses current US-facing H1",
       "ok": true,
-      "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide",
+      "url": "https://ai.aporet.com/q/ai-tools/agent-tool-permission-safety-guide",
       "expected": "Agent Tool Permission Safety Guide",
       "actual": "Agent Tool Permission Safety Guide"
     },
     {
       "name": "q detail page keeps JSON-LD graph",
       "ok": true,
-      "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide",
+      "url": "https://ai.aporet.com/q/ai-tools/agent-tool-permission-safety-guide",
       "expected": "FAQPage + BreadcrumbList + at least 4 JSON-LD blocks",
       "actual": "4 JSON-LD block(s)"
     },
     {
       "name": "cluster hub uses current English title",
       "ok": true,
-      "url": "https://ai-jiedan-lab.vercel.app/cluster/ai-tools",
+      "url": "https://ai.aporet.com/cluster/ai-tools",
       "expected": "AI tools and LLM applications topic hub",
       "actual": "AI tools and LLM applications topic hub | AI Tools Guide"
     },
     {
       "name": "cluster hub uses current English H1",
       "ok": true,
-      "url": "https://ai-jiedan-lab.vercel.app/cluster/ai-tools",
+      "url": "https://ai.aporet.com/cluster/ai-tools",
       "expected": "AI tools and LLM applications topic hub",
       "actual": "AI tools and LLM applications topic hub"
     },
     {
       "name": "q index is reachable with JSON-LD",
       "ok": true,
-      "url": "https://ai-jiedan-lab.vercel.app/q",
+      "url": "https://ai.aporet.com/q",
       "expected": "200 and at least 4 JSON-LD blocks",
       "actual": "200, 4 JSON-LD block(s)"
     },
     {
       "name": "main sitemap index includes q, cluster, blog, and priority sitemaps",
       "ok": true,
-      "url": "https://ai-jiedan-lab.vercel.app/sitemap.xml",
+      "url": "https://ai.aporet.com/sitemap.xml",
       "expected": "sitemap-q.xml, sitemap-cluster.xml, sitemap-blog.xml, sitemap-priority.xml",
       "actual": "200, length=735"
     }

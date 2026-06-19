@@ -4,7 +4,7 @@
 
 这个仓库同时包含一个公开网站和一套内容生产/审核自动化系统。目标不是做一个只卖工具的页面，而是把真实用户会搜索的问题整理成可访问、可复查、可持续扩展的工具与教程库。
 
-Live site: https://ai-jiedan-lab.vercel.app
+Live site: https://ai.aporet.com
 
 ## 项目定位
 
@@ -79,8 +79,8 @@ npm.cmd run build
 npm run lint
 npm run build
 npm run project:status
-npm run searchability:check -- --url=https://ai-jiedan-lab.vercel.app
-npm run live:check -- --url=https://ai-jiedan-lab.vercel.app
+npm run searchability:check -- --url=https://ai.aporet.com
+npm run live:check -- --url=https://ai.aporet.com
 ```
 
 这些检查不会发布文章，也不会调用真实 AI API。

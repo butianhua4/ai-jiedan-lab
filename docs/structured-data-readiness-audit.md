@@ -572,7 +572,7 @@ This report is read-only. It checks whether public and publish-candidate article
       "inLanguage": "zh-CN",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://ai-jiedan-lab.vercel.app/blog/supabase-pgvector-rag-guide"
+        "@id": "https://ai.aporet.com/blog/supabase-pgvector-rag-guide"
       }
     }
   },
@@ -592,7 +592,7 @@ This report is read-only. It checks whether public and publish-candidate article
       "inLanguage": "zh-CN",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://ai-jiedan-lab.vercel.app/blog/vector-database-selection-for-rag-guide"
+        "@id": "https://ai.aporet.com/blog/vector-database-selection-for-rag-guide"
       }
     }
   },
@@ -612,7 +612,7 @@ This report is read-only. It checks whether public and publish-candidate article
       "inLanguage": "zh-CN",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://ai-jiedan-lab.vercel.app/blog/vercel-ai-gateway-multi-provider-guide"
+        "@id": "https://ai.aporet.com/blog/vercel-ai-gateway-multi-provider-guide"
       }
     }
   }

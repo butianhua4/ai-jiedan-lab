@@ -1,6 +1,6 @@
 # GSC Submission Progress
 
-Generated at: 2026-06-19T02:08:05.301Z
+Generated at: 2026-06-19T03:45:01.534Z
 
 ## Guardrails
 
@@ -21,7 +21,7 @@ Generated at: 2026-06-19T02:08:05.301Z
 - Confirmed GSC submitted: 0
 - GSC remaining: 500
 - Next batch size: 15
-- Next URL: https://ai-jiedan-lab.vercel.app/en
+- Next URL: https://ai.aporet.com/en
 - IndexNow ready: true
 - IndexNow submitted: true
 - IndexNow URLs: 500
@@ -34,46 +34,46 @@ Generated at: 2026-06-19T02:08:05.301Z
 
 ## Next Manual Batch
 
-1. https://ai-jiedan-lab.vercel.app/en
-2. https://ai-jiedan-lab.vercel.app/cluster/ai-tools
-3. https://ai-jiedan-lab.vercel.app/cluster/codex
-4. https://ai-jiedan-lab.vercel.app/cluster/github
-5. https://ai-jiedan-lab.vercel.app/cluster/node-js-errors
-6. https://ai-jiedan-lab.vercel.app/cluster/upwork
-7. https://ai-jiedan-lab.vercel.app/cluster/vercel
-8. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-observability-logging-guide
-9. https://ai-jiedan-lab.vercel.app/q/vercel/agent-production-deployment-checklist
-10. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-calling-beginner-guide
-11. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide
-12. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-prompt-library-team-knowledge-base-guide
-13. https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-api-rate-limit-debug-guide
-14. https://ai-jiedan-lab.vercel.app/q/codex/codex-bugfix-rollback-record
-15. https://ai-jiedan-lab.vercel.app/q/codex/codex-npm-install-errors
+1. https://ai.aporet.com/en
+2. https://ai.aporet.com/cluster/ai-tools
+3. https://ai.aporet.com/cluster/codex
+4. https://ai.aporet.com/cluster/github
+5. https://ai.aporet.com/cluster/node-js-errors
+6. https://ai.aporet.com/cluster/upwork
+7. https://ai.aporet.com/cluster/vercel
+8. https://ai.aporet.com/q/ai-tools/agent-observability-logging-guide
+9. https://ai.aporet.com/q/vercel/agent-production-deployment-checklist
+10. https://ai.aporet.com/q/ai-tools/agent-tool-calling-beginner-guide
+11. https://ai.aporet.com/q/ai-tools/agent-tool-permission-safety-guide
+12. https://ai.aporet.com/q/ai-tools/ai-prompt-library-team-knowledge-base-guide
+13. https://ai.aporet.com/q/ai-tools/claude-api-rate-limit-debug-guide
+14. https://ai.aporet.com/q/codex/codex-bugfix-rollback-record
+15. https://ai.aporet.com/q/codex/codex-npm-install-errors
 
 After submitting this batch in GSC, run: npm run search-console:mark-submitted -- --add=15
 
 ## First Remaining URLs
 
-1. https://ai-jiedan-lab.vercel.app/en
-2. https://ai-jiedan-lab.vercel.app/cluster/ai-tools
-3. https://ai-jiedan-lab.vercel.app/cluster/codex
-4. https://ai-jiedan-lab.vercel.app/cluster/github
-5. https://ai-jiedan-lab.vercel.app/cluster/node-js-errors
-6. https://ai-jiedan-lab.vercel.app/cluster/upwork
-7. https://ai-jiedan-lab.vercel.app/cluster/vercel
-8. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-observability-logging-guide
-9. https://ai-jiedan-lab.vercel.app/q/vercel/agent-production-deployment-checklist
-10. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-calling-beginner-guide
-11. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide
-12. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-prompt-library-team-knowledge-base-guide
-13. https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-api-rate-limit-debug-guide
-14. https://ai-jiedan-lab.vercel.app/q/codex/codex-bugfix-rollback-record
-15. https://ai-jiedan-lab.vercel.app/q/codex/codex-npm-install-errors
-16. https://ai-jiedan-lab.vercel.app/q/codex/codex-vercel-deployment
-17. https://ai-jiedan-lab.vercel.app/q/codex/codex-windows-install-failed
-18. https://ai-jiedan-lab.vercel.app/q/node-js-errors/dependency-conflict-fix
-19. https://ai-jiedan-lab.vercel.app/q/vercel/dev-works-build-fails
-20. https://ai-jiedan-lab.vercel.app/q/node-js-errors/dify-workflow-error-handling-guide
+1. https://ai.aporet.com/en
+2. https://ai.aporet.com/cluster/ai-tools
+3. https://ai.aporet.com/cluster/codex
+4. https://ai.aporet.com/cluster/github
+5. https://ai.aporet.com/cluster/node-js-errors
+6. https://ai.aporet.com/cluster/upwork
+7. https://ai.aporet.com/cluster/vercel
+8. https://ai.aporet.com/q/ai-tools/agent-observability-logging-guide
+9. https://ai.aporet.com/q/vercel/agent-production-deployment-checklist
+10. https://ai.aporet.com/q/ai-tools/agent-tool-calling-beginner-guide
+11. https://ai.aporet.com/q/ai-tools/agent-tool-permission-safety-guide
+12. https://ai.aporet.com/q/ai-tools/ai-prompt-library-team-knowledge-base-guide
+13. https://ai.aporet.com/q/ai-tools/claude-api-rate-limit-debug-guide
+14. https://ai.aporet.com/q/codex/codex-bugfix-rollback-record
+15. https://ai.aporet.com/q/codex/codex-npm-install-errors
+16. https://ai.aporet.com/q/codex/codex-vercel-deployment
+17. https://ai.aporet.com/q/codex/codex-windows-install-failed
+18. https://ai.aporet.com/q/node-js-errors/dependency-conflict-fix
+19. https://ai.aporet.com/q/vercel/dev-works-build-fails
+20. https://ai.aporet.com/q/node-js-errors/dify-workflow-error-handling-guide
 
 ## Improvement Actions
 

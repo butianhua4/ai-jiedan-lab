@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { contentPlan500 } from "../content/content-plan-500";
+import { site } from "../data/site";
 import { parseArgs } from "./content-utils";
 
 type PlanItem = (typeof contentPlan500)[number];
@@ -91,7 +92,7 @@ monetization:
     - "article-bottom"
 qualityScore: 0
 publishBatch: ${item.batch}
-canonical: ${q(`https://ai-jiedan-lab.vercel.app/blog/${item.slug}`)}
+canonical: ${q(`${site.url}/blog/${item.slug}`)}
 noindex: true
 ---
 # ${item.title}

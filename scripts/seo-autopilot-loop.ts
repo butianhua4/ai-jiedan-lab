@@ -1,6 +1,7 @@
 import { spawnSync } from "child_process";
 import fs from "fs";
 import path from "path";
+import { site } from "../data/site";
 import { rel } from "./content-utils";
 
 type Task = {
@@ -24,7 +25,7 @@ type JsonFile<T> = T | null;
 
 const isWindows = process.platform === "win32";
 const strict = process.argv.includes("--strict");
-const baseUrl = readArg("url") || "https://ai-jiedan-lab.vercel.app";
+const baseUrl = readArg("url") || site.url;
 const outputJson = path.join(process.cwd(), "content", "automation", "seo-autopilot-loop.json");
 const outputMarkdown = path.join(process.cwd(), "docs", "seo-autopilot-loop.md");
 

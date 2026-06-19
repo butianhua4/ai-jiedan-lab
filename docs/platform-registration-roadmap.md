@@ -24,7 +24,7 @@
 
 用途：
 
-- 提交 `https://ai-jiedan-lab.vercel.app/sitemap.xml`
+- 提交 `https://ai.aporet.com/sitemap.xml`
 - 查看哪些页面被收录。
 - 查看哪些搜索词带来曝光。
 

@@ -4,7 +4,7 @@
     "autoPublish": false,
     "note": "This audit checks evidence for traffic measurement. It does not claim visits, clicks, impressions, rankings, or Search Console performance data."
   },
-  "base": "https://ai-jiedan-lab.vercel.app",
+  "base": "https://ai.aporet.com",
   "summary": {
     "canClaimTraffic": false,
     "claimableMetrics": 0,

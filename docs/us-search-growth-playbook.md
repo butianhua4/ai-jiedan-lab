@@ -49,13 +49,13 @@ Its purpose:
 
 Use this order for manual URL Inspection requests:
 
-1. `https://ai-jiedan-lab.vercel.app/en`
-2. `https://ai-jiedan-lab.vercel.app/cluster/ai-tools`
-3. `https://ai-jiedan-lab.vercel.app/cluster/codex`
-4. `https://ai-jiedan-lab.vercel.app/cluster/github`
-5. `https://ai-jiedan-lab.vercel.app/cluster/node-js-errors`
-6. `https://ai-jiedan-lab.vercel.app/cluster/upwork`
-7. `https://ai-jiedan-lab.vercel.app/cluster/vercel`
+1. `https://ai.aporet.com/en`
+2. `https://ai.aporet.com/cluster/ai-tools`
+3. `https://ai.aporet.com/cluster/codex`
+4. `https://ai.aporet.com/cluster/github`
+5. `https://ai.aporet.com/cluster/node-js-errors`
+6. `https://ai.aporet.com/cluster/upwork`
+7. `https://ai.aporet.com/cluster/vercel`
 8. Core q pages for Agent, RAG, Vercel failures, GitHub Actions failures, API key, and rate limit queries.
 
 The generated source of truth is:

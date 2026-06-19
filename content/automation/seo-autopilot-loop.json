@@ -19,26 +19,26 @@
     "canContinueScaling": true
   },
   "gsc": {
-    "nextUrl": "https://ai-jiedan-lab.vercel.app/en",
+    "nextUrl": "https://ai.aporet.com/en",
     "confirmedSubmitted": 0,
     "remaining": 500,
     "topQueueUrls": 500,
     "firstRemainingUrls": [
-      "https://ai-jiedan-lab.vercel.app/en",
-      "https://ai-jiedan-lab.vercel.app/cluster/ai-tools",
-      "https://ai-jiedan-lab.vercel.app/cluster/codex",
-      "https://ai-jiedan-lab.vercel.app/cluster/github",
-      "https://ai-jiedan-lab.vercel.app/cluster/node-js-errors",
-      "https://ai-jiedan-lab.vercel.app/cluster/upwork",
-      "https://ai-jiedan-lab.vercel.app/cluster/vercel",
-      "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-observability-logging-guide",
-      "https://ai-jiedan-lab.vercel.app/q/vercel/agent-production-deployment-checklist",
-      "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-calling-beginner-guide",
-      "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide",
-      "https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-prompt-library-team-knowledge-base-guide",
-      "https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-api-rate-limit-debug-guide",
-      "https://ai-jiedan-lab.vercel.app/q/codex/codex-bugfix-rollback-record",
-      "https://ai-jiedan-lab.vercel.app/q/codex/codex-npm-install-errors"
+      "https://ai.aporet.com/en",
+      "https://ai.aporet.com/cluster/ai-tools",
+      "https://ai.aporet.com/cluster/codex",
+      "https://ai.aporet.com/cluster/github",
+      "https://ai.aporet.com/cluster/node-js-errors",
+      "https://ai.aporet.com/cluster/upwork",
+      "https://ai.aporet.com/cluster/vercel",
+      "https://ai.aporet.com/q/ai-tools/agent-observability-logging-guide",
+      "https://ai.aporet.com/q/vercel/agent-production-deployment-checklist",
+      "https://ai.aporet.com/q/ai-tools/agent-tool-calling-beginner-guide",
+      "https://ai.aporet.com/q/ai-tools/agent-tool-permission-safety-guide",
+      "https://ai.aporet.com/q/ai-tools/ai-prompt-library-team-knowledge-base-guide",
+      "https://ai.aporet.com/q/ai-tools/claude-api-rate-limit-debug-guide",
+      "https://ai.aporet.com/q/codex/codex-bugfix-rollback-record",
+      "https://ai.aporet.com/q/codex/codex-npm-install-errors"
     ],
     "queueMix": {
       "static": 1,
@@ -79,43 +79,43 @@
       "sampleItems": [
         {
           "rank": 1,
-          "url": "https://ai-jiedan-lab.vercel.app/en"
+          "url": "https://ai.aporet.com/en"
         },
         {
           "rank": 2,
-          "url": "https://ai-jiedan-lab.vercel.app/cluster/ai-tools"
+          "url": "https://ai.aporet.com/cluster/ai-tools"
         },
         {
           "rank": 3,
-          "url": "https://ai-jiedan-lab.vercel.app/cluster/codex"
+          "url": "https://ai.aporet.com/cluster/codex"
         },
         {
           "rank": 4,
-          "url": "https://ai-jiedan-lab.vercel.app/cluster/github"
+          "url": "https://ai.aporet.com/cluster/github"
         },
         {
           "rank": 5,
-          "url": "https://ai-jiedan-lab.vercel.app/cluster/node-js-errors"
+          "url": "https://ai.aporet.com/cluster/node-js-errors"
         },
         {
           "rank": 6,
-          "url": "https://ai-jiedan-lab.vercel.app/cluster/upwork"
+          "url": "https://ai.aporet.com/cluster/upwork"
         },
         {
           "rank": 7,
-          "url": "https://ai-jiedan-lab.vercel.app/cluster/vercel"
+          "url": "https://ai.aporet.com/cluster/vercel"
         },
         {
           "rank": 8,
-          "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-observability-logging-guide"
+          "url": "https://ai.aporet.com/q/ai-tools/agent-observability-logging-guide"
         },
         {
           "rank": 9,
-          "url": "https://ai-jiedan-lab.vercel.app/q/vercel/agent-production-deployment-checklist"
+          "url": "https://ai.aporet.com/q/vercel/agent-production-deployment-checklist"
         },
         {
           "rank": 10,
-          "url": "https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-calling-beginner-guide"
+          "url": "https://ai.aporet.com/q/ai-tools/agent-tool-calling-beginner-guide"
         }
       ]
     },
@@ -542,7 +542,7 @@
     }
   ],
   "nextActions": [
-    "Next manual GSC URL Inspection target: https://ai-jiedan-lab.vercel.app/en.",
+    "Next manual GSC URL Inspection target: https://ai.aporet.com/en.",
     "Keep GSC requests focused on /en, cluster pages, and high-intent q pages before broad blog pages.",
     "Do not report traffic, clicks, rankings, or revenue until Analytics/GSC data is imported or manually evidenced.",
     "GSC manual indexing queue: Continue manual URL Inspection requests from the priority queue, then update the local confirmed count so progress stays auditable.",
@@ -588,7 +588,7 @@
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
-      "stdoutTail": "> ai-tools-guide@0.1.0 search-console:progress\n> tsx scripts/gsc-submission-progress.ts\n\n{\n  \"ok\": true,\n  \"json\": \"content/automation/gsc-submission-progress.json\",\n  \"markdown\": \"docs/gsc-submission-progress.md\",\n  \"topQueueUrls\": 500,\n  \"confirmedGscSubmitted\": 0,\n  \"gscRemaining\": 500,\n  \"nextBatchSize\": 15,\n  \"indexNowUrls\": 500,\n  \"nextUrl\": \"https://ai-jiedan-lab.vercel.app/en\"\n}",
+      "stdoutTail": "> ai-tools-guide@0.1.0 search-console:progress\n> tsx scripts/gsc-submission-progress.ts\n\n{\n  \"ok\": true,\n  \"json\": \"content/automation/gsc-submission-progress.json\",\n  \"markdown\": \"docs/gsc-submission-progress.md\",\n  \"topQueueUrls\": 500,\n  \"confirmedGscSubmitted\": 0,\n  \"gscRemaining\": 500,\n  \"nextBatchSize\": 15,\n  \"indexNowUrls\": 500,\n  \"nextUrl\": \"https://ai.aporet.com/en\"\n}",
       "title": "Refresh GSC submission progress"
     },
     {
@@ -606,7 +606,7 @@
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
-      "stdoutTail": "> ai-tools-guide@0.1.0 traffic:evidence\n> tsx scripts/traffic-evidence-audit.ts --url=https://ai-jiedan-lab.vercel.app --fetch-retries=4 --fetch-timeout-ms=15000\n\n{\n  \"ok\": true,\n  \"trafficDataAvailable\": false,\n  \"json\": \"content/automation/traffic-evidence-audit.json\",\n  \"markdown\": \"docs/traffic-evidence-audit.md\"\n}",
+      "stdoutTail": "> ai-tools-guide@0.1.0 traffic:evidence\n> tsx scripts/traffic-evidence-audit.ts --url=https://ai.aporet.com --fetch-retries=4 --fetch-timeout-ms=15000\n\n{\n  \"ok\": true,\n  \"trafficDataAvailable\": false,\n  \"json\": \"content/automation/traffic-evidence-audit.json\",\n  \"markdown\": \"docs/traffic-evidence-audit.md\"\n}",
       "title": "Run traffic evidence audit"
     },
     {
@@ -615,7 +615,7 @@
       "exitCode": 0,
       "ok": true,
       "stderrTail": "",
-      "stdoutTail": "> ai-tools-guide@0.1.0 deploy:freshness\n> tsx scripts/deployment-freshness-check.ts --url=https://ai-jiedan-lab.vercel.app --fetch-retries=4 --fetch-timeout-ms=15000\n\n{\n  \"ok\": true,\n  \"productionFresh\": true,\n  \"staleItems\": 0,\n  \"json\": \"content/automation/deployment-freshness.json\",\n  \"markdown\": \"docs/deployment-freshness.md\"\n}",
+      "stdoutTail": "> ai-tools-guide@0.1.0 deploy:freshness\n> tsx scripts/deployment-freshness-check.ts --url=https://ai.aporet.com --fetch-retries=4 --fetch-timeout-ms=15000\n\n{\n  \"ok\": true,\n  \"productionFresh\": true,\n  \"staleItems\": 0,\n  \"json\": \"content/automation/deployment-freshness.json\",\n  \"markdown\": \"docs/deployment-freshness.md\"\n}",
       "title": "Check production deployment freshness"
     },
     {

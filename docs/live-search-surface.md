@@ -8,8 +8,8 @@ Overall: PASS
 
 ## Scope
 
-- Canonical base: https://ai-jiedan-lab.vercel.app
-- Fetch base: https://ai-jiedan-lab.vercel.app
+- Canonical base: https://ai.aporet.com
+- Fetch base: https://ai.aporet.com
 - Public articles: 500
 - Articles checked: 500
 

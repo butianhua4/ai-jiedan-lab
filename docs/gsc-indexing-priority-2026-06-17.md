@@ -18,36 +18,36 @@ Purpose: use this list for manual URL Inspection and indexing requests after the
 
 ### Cluster Hubs
 
-1. https://ai-jiedan-lab.vercel.app/cluster/ai-tools
-2. https://ai-jiedan-lab.vercel.app/cluster/upwork
-3. https://ai-jiedan-lab.vercel.app/cluster/codex
-4. https://ai-jiedan-lab.vercel.app/cluster/vercel
-5. https://ai-jiedan-lab.vercel.app/cluster/node-js-errors
-6. https://ai-jiedan-lab.vercel.app/cluster/github
+1. https://ai.aporet.com/cluster/ai-tools
+2. https://ai.aporet.com/cluster/upwork
+3. https://ai.aporet.com/cluster/codex
+4. https://ai.aporet.com/cluster/vercel
+5. https://ai.aporet.com/cluster/node-js-errors
+6. https://ai.aporet.com/cluster/github
 
 ### High-Potential Q Pages
 
-1. https://ai-jiedan-lab.vercel.app/q/ai-tools/dify-knowledge-base-beginner-guide
-2. https://ai-jiedan-lab.vercel.app/q/ai-tools/langchain-rag-beginner-guide
-3. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-memory-design-guide
-4. https://ai-jiedan-lab.vercel.app/q/ai-tools/customer-service-ai-prompts-guide
-5. https://ai-jiedan-lab.vercel.app/q/ai-tools/practice-project-log-template
-6. https://ai-jiedan-lab.vercel.app/q/codex/codex-avoid-secret-leak
-7. https://ai-jiedan-lab.vercel.app/q/codex/codex-client-requirement-questions-checklist
-8. https://ai-jiedan-lab.vercel.app/q/ai-tools/data-analysis-ai-prompts-guide
-9. https://ai-jiedan-lab.vercel.app/q/ai-tools/industry-ai-prompts-template-library-2026
-10. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-tool-setup-service-checklist
-11. https://ai-jiedan-lab.vercel.app/q/ai-tools/chroma-vector-database-rag-guide
-12. https://ai-jiedan-lab.vercel.app/q/ai-tools/rag-knowledge-base-beginner-guide
+1. https://ai.aporet.com/q/ai-tools/dify-knowledge-base-beginner-guide
+2. https://ai.aporet.com/q/ai-tools/langchain-rag-beginner-guide
+3. https://ai.aporet.com/q/ai-tools/agent-memory-design-guide
+4. https://ai.aporet.com/q/ai-tools/customer-service-ai-prompts-guide
+5. https://ai.aporet.com/q/ai-tools/practice-project-log-template
+6. https://ai.aporet.com/q/codex/codex-avoid-secret-leak
+7. https://ai.aporet.com/q/codex/codex-client-requirement-questions-checklist
+8. https://ai.aporet.com/q/ai-tools/data-analysis-ai-prompts-guide
+9. https://ai.aporet.com/q/ai-tools/industry-ai-prompts-template-library-2026
+10. https://ai.aporet.com/q/ai-tools/ai-tool-setup-service-checklist
+11. https://ai.aporet.com/q/ai-tools/chroma-vector-database-rag-guide
+12. https://ai.aporet.com/q/ai-tools/rag-knowledge-base-beginner-guide
 
 ### Matching Deep Blog Pages
 
-1. https://ai-jiedan-lab.vercel.app/blog/dify-knowledge-base-beginner-guide
-2. https://ai-jiedan-lab.vercel.app/blog/practice-project-log-template
-3. https://ai-jiedan-lab.vercel.app/blog/industry-ai-prompts-template-library-2026
-4. https://ai-jiedan-lab.vercel.app/blog/customer-service-ai-prompts-guide
-5. https://ai-jiedan-lab.vercel.app/blog/langchain-rag-beginner-guide
-6. https://ai-jiedan-lab.vercel.app/blog/agent-memory-design-guide
+1. https://ai.aporet.com/blog/dify-knowledge-base-beginner-guide
+2. https://ai.aporet.com/blog/practice-project-log-template
+3. https://ai.aporet.com/blog/industry-ai-prompts-template-library-2026
+4. https://ai.aporet.com/blog/customer-service-ai-prompts-guide
+5. https://ai.aporet.com/blog/langchain-rag-beginner-guide
+6. https://ai.aporet.com/blog/agent-memory-design-guide
 
 ## Next GSC Check
 

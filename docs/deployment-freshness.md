@@ -12,7 +12,7 @@ This report checks whether production HTML matches the current SEO code expectat
 
 ## Summary
 
-- Base: https://ai-jiedan-lab.vercel.app
+- Base: https://ai.aporet.com
 - ok: true
 - checks: 7
 - passed: 7
@@ -24,13 +24,13 @@ This report checks whether production HTML matches the current SEO code expectat
 
 | Check | Status | Expected | Actual | URL |
 | --- | --- | --- | --- | --- |
-| q detail page uses current US-facing title | PASS | Agent Tool Permission Safety Guide | Agent Tool Permission Safety Guide: quick fix, steps, and deep guide \| AI Tools Guide | https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide |
-| q detail page uses current US-facing H1 | PASS | Agent Tool Permission Safety Guide | Agent Tool Permission Safety Guide | https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide |
-| q detail page keeps JSON-LD graph | PASS | FAQPage + BreadcrumbList + at least 4 JSON-LD blocks | 4 JSON-LD block(s) | https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide |
-| cluster hub uses current English title | PASS | AI tools and LLM applications topic hub | AI tools and LLM applications topic hub \| AI Tools Guide | https://ai-jiedan-lab.vercel.app/cluster/ai-tools |
-| cluster hub uses current English H1 | PASS | AI tools and LLM applications topic hub | AI tools and LLM applications topic hub | https://ai-jiedan-lab.vercel.app/cluster/ai-tools |
-| q index is reachable with JSON-LD | PASS | 200 and at least 4 JSON-LD blocks | 200, 4 JSON-LD block(s) | https://ai-jiedan-lab.vercel.app/q |
-| main sitemap index includes q, cluster, blog, and priority sitemaps | PASS | sitemap-q.xml, sitemap-cluster.xml, sitemap-blog.xml, sitemap-priority.xml | 200, length=735 | https://ai-jiedan-lab.vercel.app/sitemap.xml |
+| q detail page uses current US-facing title | PASS | Agent Tool Permission Safety Guide | Agent Tool Permission Safety Guide: quick fix, steps, and deep guide \| AI Tools Guide | https://ai.aporet.com/q/ai-tools/agent-tool-permission-safety-guide |
+| q detail page uses current US-facing H1 | PASS | Agent Tool Permission Safety Guide | Agent Tool Permission Safety Guide | https://ai.aporet.com/q/ai-tools/agent-tool-permission-safety-guide |
+| q detail page keeps JSON-LD graph | PASS | FAQPage + BreadcrumbList + at least 4 JSON-LD blocks | 4 JSON-LD block(s) | https://ai.aporet.com/q/ai-tools/agent-tool-permission-safety-guide |
+| cluster hub uses current English title | PASS | AI tools and LLM applications topic hub | AI tools and LLM applications topic hub \| AI Tools Guide | https://ai.aporet.com/cluster/ai-tools |
+| cluster hub uses current English H1 | PASS | AI tools and LLM applications topic hub | AI tools and LLM applications topic hub | https://ai.aporet.com/cluster/ai-tools |
+| q index is reachable with JSON-LD | PASS | 200 and at least 4 JSON-LD blocks | 200, 4 JSON-LD block(s) | https://ai.aporet.com/q |
+| main sitemap index includes q, cluster, blog, and priority sitemaps | PASS | sitemap-q.xml, sitemap-cluster.xml, sitemap-blog.xml, sitemap-priority.xml | 200, length=735 | https://ai.aporet.com/sitemap.xml |
 
 ## Next Actions
 

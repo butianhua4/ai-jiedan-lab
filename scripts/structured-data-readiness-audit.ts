@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { site } from "../data/site";
 import { articleFiles, readArticle, rel } from "./content-utils";
 
 type SchemaScope = "expansion" | "public" | "recommended" | "wave-1";
@@ -47,7 +48,7 @@ type WaveApprovalPacket = {
   files: string[];
 };
 
-const siteUrl = "https://ai-jiedan-lab.vercel.app";
+const siteUrl = site.url;
 const commonContentTypes = [
   "case-study",
   "checklist",

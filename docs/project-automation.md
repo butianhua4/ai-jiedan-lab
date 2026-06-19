@@ -60,5 +60,5 @@ npm run automation:all
 ```bash
 npm run lint
 npm run build
-npm run live:check -- --url=https://ai-jiedan-lab.vercel.app
+npm run live:check -- --url=https://ai.aporet.com
 ```

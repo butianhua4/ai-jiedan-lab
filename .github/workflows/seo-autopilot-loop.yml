@@ -36,7 +36,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           set +e
-          npm run seo:autopilot-loop -- --url=https://ai-jiedan-lab.vercel.app
+          npm run seo:autopilot-loop -- --url=https://ai.aporet.com
           code=$?
           echo "SEO_AUTOPILOT_EXIT_CODE=$code" >> "$GITHUB_ENV"
           if [ "$code" != "0" ]; then

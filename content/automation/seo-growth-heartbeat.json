@@ -34,7 +34,7 @@
     "home": {
       "ok": true,
       "status": 200,
-      "url": "https://ai-jiedan-lab.vercel.app/",
+      "url": "https://ai.aporet.com/",
       "cache": "HIT",
       "age": "1131",
       "contains": {
@@ -46,7 +46,7 @@
     "blog": {
       "ok": true,
       "status": 200,
-      "url": "https://ai-jiedan-lab.vercel.app/blog",
+      "url": "https://ai.aporet.com/blog",
       "cache": "HIT",
       "age": "1119",
       "contains": {
@@ -58,7 +58,7 @@
     "q": {
       "ok": true,
       "status": 200,
-      "url": "https://ai-jiedan-lab.vercel.app/q",
+      "url": "https://ai.aporet.com/q",
       "cache": "HIT",
       "age": "1168",
       "contains": {
@@ -69,7 +69,7 @@
     "sitemapIndex": {
       "ok": true,
       "status": 200,
-      "url": "https://ai-jiedan-lab.vercel.app/sitemap.xml",
+      "url": "https://ai.aporet.com/sitemap.xml",
       "cache": "HIT",
       "age": "1168",
       "contains": {
@@ -79,7 +79,7 @@
     "sitemapBlog": {
       "ok": true,
       "status": 200,
-      "url": "https://ai-jiedan-lab.vercel.app/sitemap-blog.xml",
+      "url": "https://ai.aporet.com/sitemap-blog.xml",
       "cache": "HIT",
       "age": "1119",
       "contains": {
@@ -90,7 +90,7 @@
     "sitemapQ": {
       "ok": true,
       "status": 200,
-      "url": "https://ai-jiedan-lab.vercel.app/sitemap-q.xml",
+      "url": "https://ai.aporet.com/sitemap-q.xml",
       "cache": "HIT",
       "age": "1119",
       "contains": {
@@ -101,7 +101,7 @@
     "sitemapCluster": {
       "ok": true,
       "status": 200,
-      "url": "https://ai-jiedan-lab.vercel.app/sitemap-cluster.xml",
+      "url": "https://ai.aporet.com/sitemap-cluster.xml",
       "cache": "HIT",
       "age": "1118",
       "contains": {
@@ -112,7 +112,7 @@
     "robots": {
       "ok": true,
       "status": 200,
-      "url": "https://ai-jiedan-lab.vercel.app/robots.txt",
+      "url": "https://ai.aporet.com/robots.txt",
       "cache": "HIT",
       "age": "1118",
       "contains": {
@@ -123,7 +123,7 @@
     "growthApi": {
       "ok": true,
       "status": 200,
-      "url": "https://ai-jiedan-lab.vercel.app/api/seo/growth-report",
+      "url": "https://ai.aporet.com/api/seo/growth-report",
       "cache": "MISS",
       "age": "0",
       "contains": {
@@ -134,7 +134,7 @@
     "indexNowKey": {
       "ok": true,
       "status": 200,
-      "url": "https://ai-jiedan-lab.vercel.app/indexnow-4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt",
+      "url": "https://ai.aporet.com/indexnow-4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt",
       "cache": "HIT",
       "age": "1141",
       "contains": {

@@ -43,7 +43,7 @@ monetization:
 qualityScore: 100
 publishBatch: 6
 canonical: >-
-  https://ai-jiedan-lab.vercel.app/blog/vercel-env-variable-missing-beginner-guide
+  https://ai.aporet.com/blog/vercel-env-variable-missing-beginner-guide
 noindex: false
 ---
 # Vercel 提示环境变量缺失怎么办：新手部署检查流程
@@ -78,7 +78,7 @@ Vercel 部署失败时，如果日志里出现 `missing environment variable`、
 
 ## 先判断你属于哪种情况
 
-第一种情况：变量是公开配置，比如 `NEXT_PUBLIC_SITE_URL`。它通常可以写成你的正式域名，例如 `https://ai-jiedan-lab.vercel.app`。第二种情况：变量是密钥，比如 `OPENAI_API_KEY`、`STRIPE_SECRET_KEY`、`RESEND_API_KEY`。这类值不能出现在代码仓库，也不能截图公开。第三种情况：变量属于还没接入的功能，例如你暂时没有邮件订阅后端，那么可以先让代码走占位逻辑，或在 README 写清楚以后再接。
+第一种情况：变量是公开配置，比如 `NEXT_PUBLIC_SITE_URL`。它通常可以写成你的正式域名，例如 `https://ai.aporet.com`。第二种情况：变量是密钥，比如 `OPENAI_API_KEY`、`STRIPE_SECRET_KEY`、`RESEND_API_KEY`。这类值不能出现在代码仓库，也不能截图公开。第三种情况：变量属于还没接入的功能，例如你暂时没有邮件订阅后端，那么可以先让代码走占位逻辑，或在 README 写清楚以后再接。
 
 你还要判断变量影响的是构建阶段还是运行阶段。如果构建时就失败，通常需要先补齐变量或修改构建逻辑。如果只是某个页面功能运行时报错，可以让网站先上线静态部分，再把功能标记为“即将上线”。
 

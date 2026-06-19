@@ -34,7 +34,7 @@
 npm run project:status
 npm run seo:check
 npm run smoke:web
-npm run live:check -- --url=https://ai-jiedan-lab.vercel.app
+npm run live:check -- --url=https://ai.aporet.com
 ```
 
 ## 6. 平台注册顺序

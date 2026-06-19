@@ -14474,7 +14474,7 @@
         },
         "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/tensorrt-llm-beginner-guide",
+          "canonical": "https://ai.aporet.com/blog/tensorrt-llm-beginner-guide",
           "date": "2026-06-05",
           "description": "面向新手整理 TensorRT-LLM 入门判断，覆盖 NVIDIA GPU、模型支持、Quick Start、HTTP 请求、性能优化、部署成本和生产边界。",
           "noindex": true,
@@ -14513,7 +14513,7 @@
         },
         "file": "content/blog/template-download-cta-copy-checklist.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/template-download-cta-copy-checklist",
+          "canonical": "https://ai.aporet.com/blog/template-download-cta-copy-checklist",
           "date": "2026-06-03",
           "description": "模板下载页 CTA 文案要说明模板内容、适合对象、下载动作、使用边界、隐私提示和后续支持，避免夸大效果或让用户误以为下载后一定成交。",
           "noindex": true,
@@ -14554,7 +14554,7 @@
         },
         "file": "content/blog/template-download-cta-copy.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/template-download-cta-copy",
+          "canonical": "https://ai.aporet.com/blog/template-download-cta-copy",
           "date": "2026-06-03",
           "description": "模板下载页 CTA 文案要让用户知道下载什么、适合谁、下一步怎么用、是否需要邮箱，以及不能承诺哪些结果。新手应先写清边界，再优化按钮。",
           "noindex": true,
@@ -14595,7 +14595,7 @@
         },
         "file": "content/blog/together-ai-api-beginner-guide.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/together-ai-api-beginner-guide",
+          "canonical": "https://ai.aporet.com/blog/together-ai-api-beginner-guide",
           "date": "2026-06-05",
           "description": "面向新手整理 Together AI API 接入路线，覆盖 OpenAI-compatible 调用、开源模型选择、embedding、费用、限速、应用接入和客户项目边界。",
           "noindex": true,
@@ -14634,7 +14634,7 @@
         },
         "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/vector-database-selection-for-rag-guide",
+          "canonical": "https://ai.aporet.com/blog/vector-database-selection-for-rag-guide",
           "date": "2026-06-05",
           "description": "面向新手整理 RAG 向量数据库选型思路，比较 pgvector、Qdrant、Milvus 等路线时应关注数据规模、权限、运维、成本和迁移。",
           "noindex": true,
@@ -14673,7 +14673,7 @@
         },
         "file": "content/blog/windows-path-permission-install-fix-checklist.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/windows-path-permission-install-fix-checklist",
+          "canonical": "https://ai.aporet.com/blog/windows-path-permission-install-fix-checklist",
           "date": "2026-06-03",
           "description": "新手搜索“Windows 路径和权限导致安装失败怎么办：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
           "noindex": true,
@@ -14712,7 +14712,7 @@
         },
         "file": "content/blog/upwork-proposal-review-sheet-checklist.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/upwork-proposal-review-sheet-checklist",
+          "canonical": "https://ai.aporet.com/blog/upwork-proposal-review-sheet-checklist",
           "date": "2026-06-03",
           "description": "新手搜索“Upwork 投标复盘表怎么记录：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
           "noindex": true,
@@ -14753,7 +14753,7 @@
         },
         "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/vercel-ai-gateway-multi-provider-guide",
+          "canonical": "https://ai.aporet.com/blog/vercel-ai-gateway-multi-provider-guide",
           "date": "2026-06-06",
           "description": "整理 Vercel AI Gateway 多模型接入思路，覆盖统一 API、provider 切换、日志、成本、降级、AI SDK 和上线检查。",
           "noindex": true,
@@ -14792,7 +14792,7 @@
         },
         "file": "content/blog/windows-path-permission-install-fix-freelance-scope.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/windows-path-permission-install-fix-freelance-scope",
+          "canonical": "https://ai.aporet.com/blog/windows-path-permission-install-fix-freelance-scope",
           "date": "2026-06-03",
           "description": "新手搜索“Windows 路径和权限导致安装失败怎么办：使用前怎么判断是否适合”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
           "noindex": true,
@@ -14831,7 +14831,7 @@
         },
         "file": "content/blog/vllm-deployment-beginner-guide.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/vllm-deployment-beginner-guide",
+          "canonical": "https://ai.aporet.com/blog/vllm-deployment-beginner-guide",
           "date": "2026-06-04",
           "description": "解释 vLLM 部署的适用场景和新手评估清单，覆盖推理服务、并发、GPU、模型许可、API、监控、成本和上线风险。",
           "noindex": true,
@@ -14870,7 +14870,7 @@
         },
         "file": "content/blog/vercel-build-failed-causes-checklist.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/vercel-build-failed-causes-checklist",
+          "canonical": "https://ai.aporet.com/blog/vercel-build-failed-causes-checklist",
           "date": "2026-06-03",
           "description": "一份面向新手的 Vercel build failed 排查清单，帮助记录日志、依赖、构建命令、环境变量、根目录、Node 版本和验收结果。",
           "noindex": true,
@@ -14919,7 +14919,7 @@
         },
         "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/tensorrt-llm-beginner-guide",
+          "canonical": "https://ai.aporet.com/blog/tensorrt-llm-beginner-guide",
           "date": "2026-06-05",
           "description": "面向新手整理 TensorRT-LLM 入门判断，覆盖 NVIDIA GPU、模型支持、Quick Start、HTTP 请求、性能优化、部署成本和生产边界。",
           "noindex": true,
@@ -14958,7 +14958,7 @@
         },
         "file": "content/blog/template-download-cta-copy-checklist.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/template-download-cta-copy-checklist",
+          "canonical": "https://ai.aporet.com/blog/template-download-cta-copy-checklist",
           "date": "2026-06-03",
           "description": "模板下载页 CTA 文案要说明模板内容、适合对象、下载动作、使用边界、隐私提示和后续支持，避免夸大效果或让用户误以为下载后一定成交。",
           "noindex": true,
@@ -14999,7 +14999,7 @@
         },
         "file": "content/blog/template-download-cta-copy.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/template-download-cta-copy",
+          "canonical": "https://ai.aporet.com/blog/template-download-cta-copy",
           "date": "2026-06-03",
           "description": "模板下载页 CTA 文案要让用户知道下载什么、适合谁、下一步怎么用、是否需要邮箱，以及不能承诺哪些结果。新手应先写清边界，再优化按钮。",
           "noindex": true,
@@ -15040,7 +15040,7 @@
         },
         "file": "content/blog/together-ai-api-beginner-guide.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/together-ai-api-beginner-guide",
+          "canonical": "https://ai.aporet.com/blog/together-ai-api-beginner-guide",
           "date": "2026-06-05",
           "description": "面向新手整理 Together AI API 接入路线，覆盖 OpenAI-compatible 调用、开源模型选择、embedding、费用、限速、应用接入和客户项目边界。",
           "noindex": true,
@@ -15079,7 +15079,7 @@
         },
         "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/vector-database-selection-for-rag-guide",
+          "canonical": "https://ai.aporet.com/blog/vector-database-selection-for-rag-guide",
           "date": "2026-06-05",
           "description": "面向新手整理 RAG 向量数据库选型思路，比较 pgvector、Qdrant、Milvus 等路线时应关注数据规模、权限、运维、成本和迁移。",
           "noindex": true,
@@ -15118,7 +15118,7 @@
         },
         "file": "content/blog/windows-path-permission-install-fix-checklist.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/windows-path-permission-install-fix-checklist",
+          "canonical": "https://ai.aporet.com/blog/windows-path-permission-install-fix-checklist",
           "date": "2026-06-03",
           "description": "新手搜索“Windows 路径和权限导致安装失败怎么办：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
           "noindex": true,
@@ -15157,7 +15157,7 @@
         },
         "file": "content/blog/upwork-proposal-review-sheet-checklist.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/upwork-proposal-review-sheet-checklist",
+          "canonical": "https://ai.aporet.com/blog/upwork-proposal-review-sheet-checklist",
           "date": "2026-06-03",
           "description": "新手搜索“Upwork 投标复盘表怎么记录：新手检查清单”时，通常不是缺一个概念解释，而是不知道准备哪些材料、按什么顺序验证、哪些风险不能碰。读完后可以按清单完成初步判断，知道下一步该问什么、测什么、记录什么，以及什么时候应该暂缓或找人复核。",
           "noindex": true,
@@ -15198,7 +15198,7 @@
         },
         "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
         "frontMatter": {
-          "canonical": "https://ai-jiedan-lab.vercel.app/blog/vercel-ai-gateway-multi-provider-guide",
+          "canonical": "https://ai.aporet.com/blog/vercel-ai-gateway-multi-provider-guide",
           "date": "2026-06-06",
           "description": "整理 Vercel AI Gateway 多模型接入思路，覆盖统一 API、provider 切换、日志、成本、降级、AI SDK 和上线检查。",
           "noindex": true,

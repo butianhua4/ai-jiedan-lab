@@ -5,7 +5,7 @@
 ## 当前不需要注册
 
 - 不需要注册新的 GitHub 仓库，现有仓库已经可用。
-- 不需要新建 Vercel 项目，现有项目已经部署并绑定 `ai-jiedan-lab.vercel.app`。
+- 不需要新建 Vercel 项目，现有项目已经部署并绑定 `ai.aporet.com`。
 - 不需要现在注册 Payoneer、Wise、PayPal。
 - 不需要现在注册 Gumroad、Lemon Squeezy、Paddle 或 Stripe。
 - 不需要现在申请 Google AdSense。

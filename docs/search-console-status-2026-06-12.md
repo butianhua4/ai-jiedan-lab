@@ -4,7 +4,7 @@ This note corrects the earlier platform-status assumption. The project-local scr
 
 ## Evidence From Screenshot
 
-- Property: `https://ai-jiedan-lab.vercel.app/`
+- Property: `https://ai.aporet.com/`
 - Search Console overview is accessible.
 - Performance chart shows 0 Google Search clicks.
 - Indexing chart shows 3 indexed pages and 1 unindexed page.

@@ -40,7 +40,7 @@ npm run publish:articles -- --batch=1 --limit=1 --confirm
 ```bash
 npm run seo:check
 npm run build
-npm run live:check -- --url=https://ai-jiedan-lab.vercel.app
+npm run live:check -- --url=https://ai.aporet.com
 ```
 
 ## 发布节奏

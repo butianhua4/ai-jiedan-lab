@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { site } from "../data/site";
 import { chineseCount, readArticle, rel } from "./content-utils";
 
 type CommandBoundary = {
@@ -69,7 +70,7 @@ type BridgeItem = {
   warningIssues: string[];
 };
 
-const siteUrl = "https://ai-jiedan-lab.vercel.app";
+const siteUrl = site.url;
 
 function main() {
   const reviewPack = readJson<SearchDemandReviewPack>("content/automation/search-demand-review-pack.json");

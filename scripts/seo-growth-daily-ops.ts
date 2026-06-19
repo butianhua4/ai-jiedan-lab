@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { site } from "../data/site";
 import { rel } from "./content-utils";
 
 type PriorityItem = {
@@ -67,7 +68,7 @@ const pinnedInspectionItems: PriorityItem[] = [
     score: 120,
     title: "AI Tools Guide for Deployment, Agents, RAG, and Automation",
     type: "static",
-    url: "https://ai-jiedan-lab.vercel.app/en",
+    url: `${site.url}/en`,
   },
 ];
 
@@ -126,7 +127,7 @@ function main() {
       note: "This workflow does not claim indexing, ranking, impressions, clicks, or income. It uses local SEO structure and Search Console operating rules.",
     },
     gscDailyActions: {
-      sitemapIndex: "https://ai-jiedan-lab.vercel.app/sitemap.xml",
+      sitemapIndex: `${site.url}/sitemap.xml`,
       submitSitemapFirst: true,
       manualUrlInspectionLimit: dailyBatchSize,
       topQueueTarget,

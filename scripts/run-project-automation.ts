@@ -1,6 +1,7 @@
 import { spawnSync } from "child_process";
 import fs from "fs";
 import path from "path";
+import { site } from "../data/site";
 
 type Task = {
   args: string[];
@@ -19,7 +20,7 @@ const tasks: Task[] = [
   { title: "Run review candidate preflight", args: ["run", "automation:review-preflight"] },
   { title: "Audit project automation workflow", args: ["run", "automation:workflow-audit"] },
   { title: "Generate project status", args: ["run", "--silent", "project:status"], outputFile: "content/automation/project-status.json" },
-  { title: "Run traffic evidence audit", args: ["run", "traffic:evidence", "--", "--url=https://ai-jiedan-lab.vercel.app", "--fetch-retries=5", "--fetch-timeout-ms=15000"] },
+  { title: "Run traffic evidence audit", args: ["run", "traffic:evidence", "--", `--url=${site.url}`, "--fetch-retries=5", "--fetch-timeout-ms=15000"] },
   { title: "Run traffic claim guard", args: ["run", "traffic:claim-guard"] },
   { title: "Generate public surface inventory", args: ["run", "automation:public-surface-inventory"] },
   { title: "Run content integrity audit", args: ["run", "content:integrity"] },

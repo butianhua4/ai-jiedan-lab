@@ -12,8 +12,8 @@ type Check = {
 async function main() {
   const checks: Check[] = [
     {
-      name: "site url is production vercel url",
-      ok: base === "https://ai-jiedan-lab.vercel.app" || base.startsWith("https://"),
+      name: "site url is production https url",
+      ok: base.startsWith("https://"),
       detail: base,
     },
     {
@@ -91,7 +91,7 @@ function buildNextActions(failed: Check[]) {
       return "环境变量保存后需要重新部署 Vercel，再检查首页是否输出 google-site-verification meta。";
     }
     if (check.name.includes("sitemap")) {
-      return "确认 https://ai-jiedan-lab.vercel.app/sitemap.xml 可以打开，再提交给 Search Console。";
+      return `确认 ${base}/sitemap.xml 可以打开，再提交给 Search Console。`;
     }
     return `Fix: ${check.name}${check.detail ? ` (${check.detail})` : ""}`;
   });

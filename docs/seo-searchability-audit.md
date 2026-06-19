@@ -64,7 +64,7 @@ categoryAndTagSlugs: english/ascii
 
 ```bash
 npm run searchability:check
-npm run searchability:check -- --url=https://ai-jiedan-lab.vercel.app
+npm run searchability:check -- --url=https://ai.aporet.com
 ```
 
 这个脚本会检查：
@@ -91,7 +91,7 @@ https://search.google.com/search-console
 添加站点：
 
 ```text
-https://ai-jiedan-lab.vercel.app
+https://ai.aporet.com
 ```
 
 验证成功后提交：
@@ -102,7 +102,7 @@ sitemap.xml
 
 ### Google 是否收录仍需等待
 
-`site:ai-jiedan-lab.vercel.app` 当前没有明显收录结果。这对新站是正常现象，不代表技术配置失败。提交 sitemap 后通常还需要等待，并持续发布少量高质量页面。
+`site:ai.aporet.com` 当前没有明显收录结果。这对新站是正常现象，不代表技术配置失败。提交 sitemap 后通常还需要等待，并持续发布少量高质量页面。
 
 ## 每次发布文章后要做
 
@@ -118,8 +118,8 @@ npm run build
 部署后运行：
 
 ```bash
-npm run live:check -- --url=https://ai-jiedan-lab.vercel.app
-npm run searchability:check -- --url=https://ai-jiedan-lab.vercel.app
+npm run live:check -- --url=https://ai.aporet.com
+npm run searchability:check -- --url=https://ai.aporet.com
 ```
 
 如果检查失败，不要继续发布更多文章，先修失败项。

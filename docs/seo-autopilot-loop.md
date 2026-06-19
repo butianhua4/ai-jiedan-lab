@@ -22,7 +22,7 @@ Generated at: 2026-06-19T02:08:24.662Z
 
 ## GSC Queue
 
-- Next URL: https://ai-jiedan-lab.vercel.app/en
+- Next URL: https://ai.aporet.com/en
 - Confirmed submitted: 0
 - Remaining: 500
 - Top queue URLs: 500
@@ -31,21 +31,21 @@ Generated at: 2026-06-19T02:08:24.662Z
 
 ### First Remaining URLs
 
-1. https://ai-jiedan-lab.vercel.app/en
-2. https://ai-jiedan-lab.vercel.app/cluster/ai-tools
-3. https://ai-jiedan-lab.vercel.app/cluster/codex
-4. https://ai-jiedan-lab.vercel.app/cluster/github
-5. https://ai-jiedan-lab.vercel.app/cluster/node-js-errors
-6. https://ai-jiedan-lab.vercel.app/cluster/upwork
-7. https://ai-jiedan-lab.vercel.app/cluster/vercel
-8. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-observability-logging-guide
-9. https://ai-jiedan-lab.vercel.app/q/vercel/agent-production-deployment-checklist
-10. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-calling-beginner-guide
-11. https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-permission-safety-guide
-12. https://ai-jiedan-lab.vercel.app/q/ai-tools/ai-prompt-library-team-knowledge-base-guide
-13. https://ai-jiedan-lab.vercel.app/q/ai-tools/claude-api-rate-limit-debug-guide
-14. https://ai-jiedan-lab.vercel.app/q/codex/codex-bugfix-rollback-record
-15. https://ai-jiedan-lab.vercel.app/q/codex/codex-npm-install-errors
+1. https://ai.aporet.com/en
+2. https://ai.aporet.com/cluster/ai-tools
+3. https://ai.aporet.com/cluster/codex
+4. https://ai.aporet.com/cluster/github
+5. https://ai.aporet.com/cluster/node-js-errors
+6. https://ai.aporet.com/cluster/upwork
+7. https://ai.aporet.com/cluster/vercel
+8. https://ai.aporet.com/q/ai-tools/agent-observability-logging-guide
+9. https://ai.aporet.com/q/vercel/agent-production-deployment-checklist
+10. https://ai.aporet.com/q/ai-tools/agent-tool-calling-beginner-guide
+11. https://ai.aporet.com/q/ai-tools/agent-tool-permission-safety-guide
+12. https://ai.aporet.com/q/ai-tools/ai-prompt-library-team-knowledge-base-guide
+13. https://ai.aporet.com/q/ai-tools/claude-api-rate-limit-debug-guide
+14. https://ai.aporet.com/q/codex/codex-bugfix-rollback-record
+15. https://ai.aporet.com/q/codex/codex-npm-install-errors
 
 ## Growth
 
@@ -74,7 +74,7 @@ Generated at: 2026-06-19T02:08:24.662Z
 
 ## Next Actions
 
-1. Next manual GSC URL Inspection target: https://ai-jiedan-lab.vercel.app/en.
+1. Next manual GSC URL Inspection target: https://ai.aporet.com/en.
 2. Keep GSC requests focused on /en, cluster pages, and high-intent q pages before broad blog pages.
 3. Do not report traffic, clicks, rankings, or revenue until Analytics/GSC data is imported or manually evidenced.
 4. GSC manual indexing queue: Continue manual URL Inspection requests from the priority queue, then update the local confirmed count so progress stays auditable.

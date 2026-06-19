@@ -1,8 +1,9 @@
 import fs from "fs";
 import path from "path";
+import { site } from "../data/site";
 import { getAllPosts } from "../lib/blog";
 
-const defaultBase = process.env.NEXT_PUBLIC_SITE_URL || "https://ai-jiedan-lab.vercel.app";
+const defaultBase = site.url;
 const fetchBase = normalizeBase(readArg("url") || readArg("fetchBase") || defaultBase);
 const canonicalBase = normalizeBase(readArg("canonical") || readArg("base") || defaultBase);
 const jsonOutput = readArg("json") || readArg("jsonOutput");

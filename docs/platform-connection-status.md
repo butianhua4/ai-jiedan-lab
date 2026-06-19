@@ -9,8 +9,8 @@ This document records the current external platform status, article publication 
 Connected and usable:
 
 - GitHub: repository, commits, issue templates, pull request template, and public project documentation.
-- Vercel: production deployment at https://ai-jiedan-lab.vercel.app.
-- Google Search Console: user-provided screenshots on 2026-06-12 and 2026-06-15 show the `https://ai-jiedan-lab.vercel.app/` property exists, with Search Console overview, page indexing, URL inspection, sitemap, HTTPS, and link reports visible.
+- Vercel: production deployment at https://ai.aporet.com.
+- Google Search Console: user-provided screenshots on 2026-06-12 and 2026-06-15 show the `https://ai.aporet.com/` property exists, with Search Console overview, page indexing, URL inspection, sitemap, HTTPS, and link reports visible.
 - Local automation: content status checks, review queue generation, review packs, searchability checks, traffic evidence guardrails.
 
 Ready but not fully connected:
@@ -28,7 +28,7 @@ Not connected yet:
 
 User-provided Search Console evidence from 2026-06-12 and 2026-06-15 shows:
 
-- The `https://ai-jiedan-lab.vercel.app/` property is present in Google Search Console.
+- The `https://ai.aporet.com/` property is present in Google Search Console.
 - Search Console overview is available.
 - Performance summary currently shows 0 Google Search clicks, 11 impressions, 0% CTR, and average position 10 in the visible 3-month report.
 - Page indexing summary in the visible report shows 3 indexed pages and 1 unindexed page, but this report is lagging behind the latest 500-article sitemap.
@@ -36,7 +36,7 @@ User-provided Search Console evidence from 2026-06-12 and 2026-06-15 shows:
 - URL inspection still reports several newly published URLs as not known to Google yet, including `/prompts` and selected new blog posts. This means Google has not discovered or crawled those URLs yet; it is not evidence that the live pages are blocked.
 - Sitemap report shows `/sitemap.xml` submitted successfully, but the visible last-read/discovered count is stale compared with the current live sitemap.
 
-The local readiness check against `https://ai-jiedan-lab.vercel.app` still shows:
+The local readiness check against `https://ai.aporet.com` still shows:
 
 - Homepage returns 200.
 - `robots.txt` returns 200.
@@ -50,19 +50,19 @@ Next step: keep the existing Search Console property. Resubmit `sitemap.xml` aft
 Priority URL inspection queue:
 
 ```text
-https://ai-jiedan-lab.vercel.app/
-https://ai-jiedan-lab.vercel.app/deployments
-https://ai-jiedan-lab.vercel.app/prompts
-https://ai-jiedan-lab.vercel.app/blog/ai-agent-deployment-vercel-ai-sdk-guide
-https://ai-jiedan-lab.vercel.app/blog/industry-ai-prompts-template-library-2026
-https://ai-jiedan-lab.vercel.app/blog/ai-agent-memory-rag-design-guide
-https://ai-jiedan-lab.vercel.app/blog/llm-deployment-beginner-guide
+https://ai.aporet.com/
+https://ai.aporet.com/deployments
+https://ai.aporet.com/prompts
+https://ai.aporet.com/blog/ai-agent-deployment-vercel-ai-sdk-guide
+https://ai.aporet.com/blog/industry-ai-prompts-template-library-2026
+https://ai.aporet.com/blog/ai-agent-memory-rag-design-guide
+https://ai.aporet.com/blog/llm-deployment-beginner-guide
 ```
 
 If the HTML tag token is available, optionally set it as `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` in Vercel so local automation can verify the same evidence. After redeploying, rerun:
 
 ```bash
-npm run search-console:check -- --url=https://ai-jiedan-lab.vercel.app
+npm run search-console:check -- --url=https://ai.aporet.com
 ```
 
 ## Traffic Evidence

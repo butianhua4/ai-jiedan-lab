@@ -78,7 +78,7 @@ Commands:
 npm run mark:review -- --file=content/blog/tools-not-to-buy-first.mdx --confirm-human
 npm run publish:articles -- --file=content/blog/tools-not-to-buy-first.mdx
 npm run publish:articles -- --file=content/blog/tools-not-to-buy-first.mdx --confirm
-npm run live:check -- --url=https://ai-jiedan-lab.vercel.app
+npm run live:check -- --url=https://ai.aporet.com
 ```
 
 ## 2. RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界
@@ -153,7 +153,7 @@ Commands:
 npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm-human
 npm run publish:articles -- --file=content/blog/vector-database-selection-for-rag-guide.mdx
 npm run publish:articles -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm
-npm run live:check -- --url=https://ai-jiedan-lab.vercel.app
+npm run live:check -- --url=https://ai.aporet.com
 ```
 
 ## 3. Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级
@@ -230,5 +230,5 @@ Commands:
 npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human
 npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx
 npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm
-npm run live:check -- --url=https://ai-jiedan-lab.vercel.app
+npm run live:check -- --url=https://ai.aporet.com
 ```

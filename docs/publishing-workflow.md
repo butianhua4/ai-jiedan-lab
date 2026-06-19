@@ -15,7 +15,7 @@
 9. `git add .`
 10. `git commit -m "Publish reviewed article"`
 11. `git push`
-12. Vercel 自动部署后运行 `npm run live:check -- --url=https://ai-jiedan-lab.vercel.app`。
+12. Vercel 自动部署后运行 `npm run live:check -- --url=https://ai.aporet.com`。
 13. 部署后检查 `/sitemap.xml`，确认只出现 published 且 noindex=false 的文章。
 14. 观察 Google Search Console 的抓取、收录和点击数据。
 

@@ -36,7 +36,7 @@ When this conversation resumes, continue in this order:
 
 1. Run `git status --short` and inspect the latest commit.
 2. Check latest GitHub/Vercel status.
-3. Run `npm run seo:autopilot-loop -- --url=https://ai-jiedan-lab.vercel.app`.
+3. Run `npm run seo:autopilot-loop -- --url=https://ai.aporet.com`.
 4. If the loop reports red or critical failures, fix those first.
 5. If green or yellow-only, continue the next action from `docs/seo-autopilot-loop.md`.
 6. Keep GSC manual targets focused on `/en`, cluster pages, and high-intent q pages.
@@ -45,7 +45,7 @@ When this conversation resumes, continue in this order:
 
 ## Current Manual GSC Target
 
-`https://ai-jiedan-lab.vercel.app/en`
+`https://ai.aporet.com/en`
 
 After that:
 

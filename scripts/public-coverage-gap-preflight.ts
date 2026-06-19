@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { site } from "../data/site";
 import { chineseCount, readArticle, rel } from "./content-utils";
 import { checkFile } from "./quality-core";
 
@@ -80,7 +81,7 @@ type PreflightItem = {
   wordCountChinese: number;
 };
 
-const siteUrl = "https://ai-jiedan-lab.vercel.app";
+const siteUrl = site.url;
 
 async function main() {
   const plan = readJson<GapPlan>("content/automation/public-coverage-gap-plan.json");

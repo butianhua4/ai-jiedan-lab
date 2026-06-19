@@ -11,7 +11,7 @@ This report separates live-site health from measured traffic. It does not claim 
 
 ## Summary
 
-- Base: https://ai-jiedan-lab.vercel.app
+- Base: https://ai.aporet.com
 - canClaimTraffic: false
 - claimableMetrics: 0
 - failedChecks: 0

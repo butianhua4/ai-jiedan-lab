@@ -5,7 +5,7 @@
 ## 自动检查
 
 ```bash
-npm run live:check -- --url=https://ai-jiedan-lab.vercel.app
+npm run live:check -- --url=https://ai.aporet.com
 ```
 
 检查内容：

@@ -20,17 +20,17 @@
 
 先打开这些地址：
 
-1. `https://ai-jiedan-lab.vercel.app/`
-2. `https://ai-jiedan-lab.vercel.app/blog`
-3. `https://ai-jiedan-lab.vercel.app/sitemap.xml`
-4. `https://ai-jiedan-lab.vercel.app/robots.txt`
+1. `https://ai.aporet.com/`
+2. `https://ai.aporet.com/blog`
+3. `https://ai.aporet.com/sitemap.xml`
+4. `https://ai.aporet.com/robots.txt`
 
 也可以在本地运行：
 
 ```bash
-npm run live:check -- --url=https://ai-jiedan-lab.vercel.app
+npm run live:check -- --url=https://ai.aporet.com
 npm run seo:check
-npm run searchability:check -- --url=https://ai-jiedan-lab.vercel.app
+npm run searchability:check -- --url=https://ai.aporet.com
 ```
 
 如果 `leaksDrafts` 是 `false`，`seo:check` 的 `ok` 是 `true`，并且 `searchability:check` 的 `score` 是 `100`，再提交给 Search Console。
@@ -46,7 +46,7 @@ docs/seo-searchability-audit.md
 进入 Google Search Console 后，建议优先使用 URL prefix：
 
 ```text
-https://ai-jiedan-lab.vercel.app
+https://ai.aporet.com
 ```
 
 如果以后购买自定义域名，再新增 Domain property。不要急着把临时域名和正式域名都推给搜索引擎，避免后期重复迁移。
@@ -74,13 +74,13 @@ Environment: Production and Preview
 保存环境变量并重新部署后，可以运行：
 
 ```bash
-npm run search-console:check -- --url=https://ai-jiedan-lab.vercel.app
+npm run search-console:check -- --url=https://ai.aporet.com
 ```
 
 如果还没有写入环境变量，也可以临时把验证码作为参数传入：
 
 ```bash
-npm run search-console:check -- --url=https://ai-jiedan-lab.vercel.app --token=你的验证码
+npm run search-console:check -- --url=https://ai.aporet.com --token=你的验证码
 ```
 
 检查通过后，再回到 Search Console 点击 Verify。
@@ -96,7 +96,7 @@ sitemap.xml
 完整地址是：
 
 ```text
-https://ai-jiedan-lab.vercel.app/sitemap.xml
+https://ai.aporet.com/sitemap.xml
 ```
 
 提交后不用反复点。Google 收录通常需要时间，重点看后续有没有抓取错误、重复 canonical、noindex 冲突或 404。
@@ -106,7 +106,7 @@ https://ai-jiedan-lab.vercel.app/sitemap.xml
 每次发布 1-3 篇文章后做这些事：
 
 1. 运行 `npm run seo:check`。
-2. 运行 `npm run searchability:check -- --url=https://ai-jiedan-lab.vercel.app`。
+2. 运行 `npm run searchability:check -- --url=https://ai.aporet.com`。
 3. 确认新文章是 `status: published`。
 4. 确认新文章是 `noindex: false`。
 5. 确认草稿仍然是 `noindex: true`。

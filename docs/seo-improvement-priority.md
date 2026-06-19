@@ -40,16 +40,16 @@ Generated at: 2026-06-19T02:08:05.785Z
 
 | File/URL | Title | Warnings |
 | --- | --- | --- |
-| https://ai-jiedan-lab.vercel.app/en |  |  |
-| https://ai-jiedan-lab.vercel.app/cluster/ai-tools |  |  |
-| https://ai-jiedan-lab.vercel.app/cluster/codex |  |  |
-| https://ai-jiedan-lab.vercel.app/cluster/github |  |  |
-| https://ai-jiedan-lab.vercel.app/cluster/node-js-errors |  |  |
-| https://ai-jiedan-lab.vercel.app/cluster/upwork |  |  |
-| https://ai-jiedan-lab.vercel.app/cluster/vercel |  |  |
-| https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-observability-logging-guide |  |  |
-| https://ai-jiedan-lab.vercel.app/q/vercel/agent-production-deployment-checklist |  |  |
-| https://ai-jiedan-lab.vercel.app/q/ai-tools/agent-tool-calling-beginner-guide |  |  |
+| https://ai.aporet.com/en |  |  |
+| https://ai.aporet.com/cluster/ai-tools |  |  |
+| https://ai.aporet.com/cluster/codex |  |  |
+| https://ai.aporet.com/cluster/github |  |  |
+| https://ai.aporet.com/cluster/node-js-errors |  |  |
+| https://ai.aporet.com/cluster/upwork |  |  |
+| https://ai.aporet.com/cluster/vercel |  |  |
+| https://ai.aporet.com/q/ai-tools/agent-observability-logging-guide |  |  |
+| https://ai.aporet.com/q/vercel/agent-production-deployment-checklist |  |  |
+| https://ai.aporet.com/q/ai-tools/agent-tool-calling-beginner-guide |  |  |
 
 ### 2. Mojibake and encoding repair
 
