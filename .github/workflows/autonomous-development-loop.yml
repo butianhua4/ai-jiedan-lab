@@ -1,0 +1,102 @@
+name: Autonomous Development Loop
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Autonomous loop mode"
+        required: true
+        default: "report-only"
+        type: choice
+        options:
+          - report-only
+          - plan-only
+          - execute-low-risk
+  schedule:
+    - cron: "45 2 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: autonomous-development-loop
+  cancel-in-progress: false
+
+jobs:
+  autonomous-development-loop:
+    runs-on: ubuntu-latest
+    env:
+      NEXT_TELEMETRY_DISABLED: 1
+      AUTONOMOUS_MODE: ${{ github.event_name == 'schedule' && 'report-only' || inputs.mode }}
+      AUTONOMOUS_COMMIT: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'execute-low-risk' && '1' || '0' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ github.token }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Configure git author
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'execute-low-risk'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Run autonomous loop
+        shell: bash
+        run: |
+          if [ "$AUTONOMOUS_MODE" = "execute-low-risk" ]; then
+            npm run autonomous:execute
+          elif [ "$AUTONOMOUS_MODE" = "plan-only" ]; then
+            npm run autonomous:plan
+          else
+            npm run autonomous:report
+          fi
+
+      - name: Push autonomous commit
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'execute-low-risk'
+        shell: bash
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No autonomous changes to commit."
+            exit 0
+          fi
+          git add app data lib scripts docs reports prompts content/automation package.json .github/workflows
+          if git diff --cached --quiet; then
+            echo "No autonomous changes staged."
+            exit 0
+          fi
+          git commit -m "auto: advance seo growth loop - $(date -u +%F) - execute-low-risk"
+          git push
+
+      - name: Add autonomous summary
+        if: always()
+        shell: bash
+        run: |
+          echo "# Autonomous Development Loop" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Mode: ${AUTONOMOUS_MODE}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Commit enabled: ${AUTONOMOUS_COMMIT}" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f content/automation/autonomous-loop-status.json ]; then
+            echo "## Status" >> "$GITHUB_STEP_SUMMARY"
+            echo '```json' >> "$GITHUB_STEP_SUMMARY"
+            cat content/automation/autonomous-loop-status.json >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload autonomous reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: autonomous-development-loop
+          path: |
+            content/automation/autonomous-loop-status.json
+            reports/autonomous-loop/**/*.md
+            reports/autonomous-loop/artifacts/**/*.json

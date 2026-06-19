@@ -1,0 +1,23 @@
+{
+  "enabled": true,
+  "mode": "execute-low-risk",
+  "currentStage": "monetization",
+  "lastRunAt": "2026-06-19T18:05:13.381Z",
+  "lastTask": "Add GA/Clarity detection status",
+  "lastStatus": "success",
+  "lastReport": "reports/autonomous-loop/2026-06-19T18-05-13.md",
+  "nextRecommendedTask": "Add GSC/Bing data placeholders",
+  "autoExecuteAllowed": true,
+  "blockedReasons": [],
+  "guardrails": {
+    "maxFilesChanged": 20,
+    "maxFilesAdded": 8,
+    "maxFilesDeleted": 3,
+    "forbidsSensitiveConfig": true,
+    "requiresVerification": [
+      "npm run lint",
+      "npm run seo:check",
+      "npm run build"
+    ]
+  }
+}

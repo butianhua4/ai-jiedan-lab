@@ -18,6 +18,7 @@ export function SystemLiveReport({ initialStatus }: { initialStatus: SystemStatu
     () => [
       { title: "内容系统", data: status.content },
       { title: "SEO 系统", data: status.seo },
+      { title: "Autonomous Development Loop", data: status.autonomousLoop },
       { title: "Question Engine", data: status.questionEngine },
       { title: "页面系统", data: status.pages },
       { title: "内链系统", data: status.links },
@@ -87,6 +88,33 @@ export function SystemLiveReport({ initialStatus }: { initialStatus: SystemStatu
         <Metric label="Sitemap URLs" value={status.seo.sitemap.urlCount} />
         <Metric label="孤立页面" value={status.links.orphanPages} />
       </section>
+
+      <Panel title="Autonomous Development Loop">
+        <div className="grid gap-3 md:grid-cols-4">
+          <Metric label="Mode" value={status.autonomousLoop.mode} />
+          <Metric label="Stage" value={status.autonomousLoop.currentStage} />
+          <Metric label="Auto execute" value={status.autonomousLoop.autoExecuteAllowed ? "allowed" : "blocked"} />
+          <Metric label="Last status" value={status.autonomousLoop.lastStatus || "none"} />
+        </div>
+        <div className="mt-4 rounded-md border border-gray-200 bg-gray-50 p-4 text-sm">
+          <p className="font-semibold text-ink">Next recommended task</p>
+          <p className="mt-1 text-gray-700">{status.autonomousLoop.nextRecommendedTask}</p>
+          <p className="mt-3 font-semibold text-ink">Last task</p>
+          <p className="mt-1 text-gray-700">{status.autonomousLoop.lastTask || "No autonomous run yet."}</p>
+          <p className="mt-3 font-semibold text-ink">Last report</p>
+          <p className="mt-1 text-gray-700">{status.autonomousLoop.lastReport || "No report yet."}</p>
+          {status.autonomousLoop.blockedReasons.length ? (
+            <>
+              <p className="mt-3 font-semibold text-ink">Blocked reasons</p>
+              <ul className="mt-1 list-disc pl-5 text-gray-700">
+                {status.autonomousLoop.blockedReasons.map((reason) => (
+                  <li key={reason}>{reason}</li>
+                ))}
+              </ul>
+            </>
+          ) : null}
+        </div>
+      </Panel>
 
       <section className="grid gap-4 md:grid-cols-2">
         {modules.map((module) => (

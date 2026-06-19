@@ -25,6 +25,8 @@ export function GET() {
     "/tools/error-explainer",
     "/tools/pricing-calculator",
     "/templates",
+    "/services",
+    "/hire-me",
     "/roadmap",
     "/about",
     "/contact",

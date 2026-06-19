@@ -3,6 +3,7 @@ import path from "path";
 import { getAllPosts, getCategorySlugs, getTagSlugs } from "@/lib/blog";
 import { site } from "@/data/site";
 import { tools } from "@/data/tools";
+import type { AutonomousLoopStatus } from "@/lib/autonomous-next-step";
 import { getSeoGrowthReport, type SeoGrowthReport } from "@/lib/seo-growth-monitor";
 import { getClusterPath, getQuestionPath, getSeoGraph, seoClusters, type SeoGraph } from "@/lib/seo-graph";
 
@@ -105,6 +106,7 @@ export type SystemStatus = {
     risingPages: number;
     potentialPages: number;
   };
+  autonomousLoop: AutonomousLoopStatus;
   logs: {
     file: string;
     latest: SystemLogEntry[];
@@ -130,6 +132,7 @@ export function getSystemStatus(): SystemStatus {
   const linkStatus = getLinkStatus(graph);
   const buildStatus = getBuildStatus();
   const performance = getPerformanceStatus(sitemapStatus.urlCount);
+  const autonomousLoop = getAutonomousLoopStatusSnapshot();
   const latestLogs = readSystemLog().slice(-10).reverse();
   const errorLogs = readSystemLog().filter((entry) => entry.level === "error").slice(-20).reverse();
 
@@ -197,6 +200,7 @@ export function getSystemStatus(): SystemStatus {
       risingPages: seoGrowth.signals.risingPages.length,
       potentialPages: seoGrowth.signals.potentialPages.length,
     },
+    autonomousLoop,
     logs: {
       file: "logs/system.log",
       latest: latestLogs,
@@ -286,6 +290,8 @@ function getGeneratedSitemapPaths() {
     "/tools/error-explainer",
     "/tools/pricing-calculator",
     "/templates",
+    "/services",
+    "/hire-me",
     "/roadmap",
     "/about",
     "/contact",
@@ -401,6 +407,30 @@ function readSystemLog(): SystemLogEntry[] {
         } satisfies SystemLogEntry;
       }
     });
+}
+
+function getAutonomousLoopStatusSnapshot(): AutonomousLoopStatus {
+  const file = projectPath("content", "automation", "autonomous-loop-status.json");
+  const saved = readJson(file) as Partial<AutonomousLoopStatus> | null;
+  return {
+    enabled: saved?.enabled ?? true,
+    mode: saved?.mode ?? "report-only",
+    currentStage: saved?.currentStage ?? "warming",
+    lastRunAt: saved?.lastRunAt ?? null,
+    lastTask: saved?.lastTask ?? null,
+    lastStatus: saved?.lastStatus ?? null,
+    lastReport: saved?.lastReport ?? null,
+    nextRecommendedTask: saved?.nextRecommendedTask ?? "Run npm run autonomous:plan to generate the next recommendation.",
+    autoExecuteAllowed: saved?.autoExecuteAllowed ?? false,
+    blockedReasons: saved?.blockedReasons ?? ["No autonomous loop report has been generated yet."],
+    guardrails: saved?.guardrails ?? {
+      maxFilesChanged: 20,
+      maxFilesAdded: 8,
+      maxFilesDeleted: 3,
+      forbidsSensitiveConfig: true,
+      requiresVerification: ["npm run lint", "npm run seo:check", "npm run build"],
+    },
+  };
 }
 
 function extractDiagnosticLines(text: string, needles: string[]) {

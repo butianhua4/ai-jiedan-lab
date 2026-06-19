@@ -1,0 +1,147 @@
+{
+  "generatedAt": "2026-06-19T17:57:51.326Z",
+  "taskId": "seo-indexability-report",
+  "decision": {
+    "currentStage": "cold_start",
+    "mainBottleneck": "Build output is not healthy.",
+    "recommendedTask": {
+      "id": "seo-indexability-report",
+      "type": "seo",
+      "priority": "P1",
+      "title": "Add indexability report",
+      "reason": "Create an auditable indexability queue.",
+      "expectedImpact": "Faster diagnosis of pages that should be submitted.",
+      "riskLevel": "low",
+      "allowedToAutoExecute": true,
+      "executionKind": "report"
+    },
+    "nextThreeCandidates": [
+      {
+        "id": "seo-robots-check",
+        "type": "seo",
+        "priority": "P1",
+        "title": "Add robots check",
+        "reason": "Catch accidental crawl blocking.",
+        "expectedImpact": "Lower indexability risk.",
+        "riskLevel": "low",
+        "allowedToAutoExecute": true,
+        "executionKind": "report"
+      },
+      {
+        "id": "seo-canonical-check",
+        "type": "seo",
+        "priority": "P1",
+        "title": "Add canonical check",
+        "reason": "Catch duplicate or missing canonical issues.",
+        "expectedImpact": "Lower duplicate-content risk.",
+        "riskLevel": "low",
+        "allowedToAutoExecute": true,
+        "executionKind": "report"
+      },
+      {
+        "id": "monitoring-ga-clarity-status",
+        "type": "monitoring",
+        "priority": "P1",
+        "title": "Add GA/Clarity detection status",
+        "reason": "Verify behavior tools are installed and ready.",
+        "expectedImpact": "Better confidence in post-click measurement.",
+        "riskLevel": "low",
+        "allowedToAutoExecute": true,
+        "executionKind": "report"
+      }
+    ],
+    "observed": {
+      "generatedAt": "2026-06-19T17:57:51.322Z",
+      "system": {
+        "healthScore": 80,
+        "buildSuccess": false,
+        "sitemapNormal": true,
+        "noErrors": true,
+        "mode": "dev"
+      },
+      "seo": {
+        "totalPages": 1006,
+        "qPages": 500,
+        "blogPages": 500,
+        "clusterPages": 6,
+        "orphanPages": 0,
+        "weakPages": 0,
+        "internalLinkHealth": 100,
+        "growthReadinessScore": 100,
+        "seoScore": 100,
+        "indexedPages": null,
+        "impressions": null,
+        "clicks": null
+      },
+      "graph": {
+        "nodeCount": 1006,
+        "edgeCount": 9572,
+        "internalLinksComplete": true
+      },
+      "sitemap": {
+        "urlCount": 1511,
+        "ok": true
+      },
+      "content": {
+        "published": 500,
+        "draft": 148,
+        "noindex": 169
+      },
+      "tools": {
+        "count": 20,
+        "staticToolPages": 33
+      },
+      "conversion": {
+        "hasServicesPage": true,
+        "hasHireMePage": true,
+        "hasContactPage": true,
+        "hasTemplatePage": true,
+        "hasMonetizationPage": true
+      },
+      "latestReports": [
+        {
+          "path": "reports/autonomous-loop/2026-06-19T17-54-40.md",
+          "updatedAt": "2026-06-19T17:54:58.720Z"
+        },
+        {
+          "path": "reports/autonomous-loop/2026-06-19T17-50-52.md",
+          "updatedAt": "2026-06-19T17:51:16.132Z"
+        },
+        {
+          "path": "reports/autonomous-loop/2026-06-19T17-47-26.md",
+          "updatedAt": "2026-06-19T17:47:26.823Z"
+        },
+        {
+          "path": "reports/autonomous-loop/2026-06-19T17-42-57.md",
+          "updatedAt": "2026-06-19T17:42:57.157Z"
+        },
+        {
+          "path": "reports/autonomous-loop/2026-06-19T17-42-56.md",
+          "updatedAt": "2026-06-19T17:42:56.752Z"
+        },
+        {
+          "path": "reports/autonomous-loop/2026-06-19T17-42-14.md",
+          "updatedAt": "2026-06-19T17:42:14.796Z"
+        },
+        {
+          "path": "reports/autonomous-loop/2026-06-19T17-28-02.md",
+          "updatedAt": "2026-06-19T17:28:02.520Z"
+        },
+        {
+          "path": "reports/autonomous-loop/2026-06-19T17-26.md",
+          "updatedAt": "2026-06-19T17:26:53.036Z"
+        },
+        {
+          "path": "docs/seo-growth-roadmap.md",
+          "updatedAt": "2026-06-19T17:22:21.771Z"
+        },
+        {
+          "path": "docs/structured-data-readiness-audit.md",
+          "updatedAt": "2026-06-19T16:50:52.278Z"
+        }
+      ],
+      "latestCommit": "e5d8ccbc5baf"
+    }
+  },
+  "note": "This task does not have a safe source-change executor yet, so the autonomous loop created an auditable planning artifact instead of pretending the task was completed."
+}
