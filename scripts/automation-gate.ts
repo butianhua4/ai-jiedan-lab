@@ -2343,6 +2343,23 @@ async function main() {
   const repeatedClusters = clusters.filter((cluster, index) => clusters.indexOf(cluster) !== index);
   const contentIntegrityWarningFiles = new Set((contentIntegrity.warningItems || []).map((item) => item.file));
   const recommendedWarningFiles = reviewFiles.filter((file) => contentIntegrityWarningFiles.has(file));
+  const currentContentIntegrityWarningsCleared =
+    contentIntegrity.summary.warningItems === 0 &&
+    contentIntegrity.summary.mojibakeWarningItems === 0 &&
+    contentIntegrity.summary.publicMojibakeWarningItems === 0;
+  const contentIntegrityRemediationSynced =
+    currentContentIntegrityWarningsCleared ||
+    (contentIntegrity.summary.warningItems === mojibakeRemediation.summary.affectedFiles &&
+      contentIntegrity.summary.mojibakeWarningItems === mojibakeRemediation.summary.affectedFiles &&
+      contentIntegrity.summary.publicMojibakeWarningItems === mojibakeRemediation.summary.affectedPublicFiles);
+  const currentSeoWarningsCleared = searchSnippets.summary.warningItems === 0 && structuredData.summary.warningItems === 0;
+  const seoWarningRemediationSynced =
+    currentSeoWarningsCleared ||
+    (seoWarningRemediation.summary.snippetWarningItems === searchSnippets.summary.warningItems &&
+      seoWarningRemediation.summary.schemaWarningItems === structuredData.summary.warningItems &&
+      seoWarningRemediation.summary.warningItems <=
+        seoWarningRemediation.summary.snippetWarningItems + seoWarningRemediation.summary.schemaWarningItems &&
+      seoWarningRemediation.summary.items === seoWarningRemediation.summary.warningItems);
   const nonPublishedIndexed = articles
     .filter((article) => article.data.status !== "published" && article.data.noindex === false)
     .map((article) => rel(article.file));
@@ -2579,11 +2596,7 @@ async function main() {
     },
     {
       name: "content integrity audit mirrors mojibake warnings without blocking",
-      ok:
-        contentIntegrity.summary.warningItems === mojibakeRemediation.summary.affectedFiles &&
-        contentIntegrity.summary.mojibakeWarningItems === mojibakeRemediation.summary.affectedFiles &&
-        contentIntegrity.summary.publicMojibakeWarningItems === mojibakeRemediation.summary.affectedPublicFiles &&
-        contentIntegrity.summary.blockingItems === 0,
+      ok: contentIntegrityRemediationSynced && contentIntegrity.summary.blockingItems === 0,
       detail: `warnings=${contentIntegrity.summary.warningItems}, mojibake=${contentIntegrity.summary.mojibakeWarningItems}, publicMojibake=${contentIntegrity.summary.publicMojibakeWarningItems}, remediationAffected=${mojibakeRemediation.summary.affectedFiles}/${mojibakeRemediation.summary.affectedPublicFiles}`,
     },
     {
@@ -3936,11 +3949,8 @@ async function main() {
         seoWarningRemediation.guardrails.autoMarkReview === false &&
         seoWarningRemediation.guardrails.autoPublish === false &&
         seoWarningRemediation.guardrails.trafficClaim === "not-included" &&
-        seoWarningRemediation.summary.snippetWarningItems === searchSnippets.summary.warningItems &&
-        seoWarningRemediation.summary.schemaWarningItems === structuredData.summary.warningItems &&
         seoWarningRemediation.summary.blockingItems === searchSnippets.summary.blockingItems + structuredData.summary.blockingItems &&
-        seoWarningRemediation.summary.warningItems <= seoWarningRemediation.summary.snippetWarningItems + seoWarningRemediation.summary.schemaWarningItems &&
-        seoWarningRemediation.summary.items === seoWarningRemediation.summary.warningItems,
+        seoWarningRemediationSynced,
       detail: `items=${seoWarningRemediation.summary.items}, snippet=${seoWarningRemediation.summary.snippetWarningItems}/${searchSnippets.summary.warningItems}, schema=${seoWarningRemediation.summary.schemaWarningItems}/${structuredData.summary.warningItems}`,
     },
     {

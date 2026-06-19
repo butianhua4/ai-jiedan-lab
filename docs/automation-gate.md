@@ -1,6 +1,6 @@
 # Automation Gate
 
-Generated at: 2026-06-18T11:37:35.017Z
+Generated at: 2026-06-19T00:56:13.465Z
 
 Overall: FAIL
 
@@ -39,9 +39,9 @@ Overall: FAIL
 | project status still stops before publishing | PASS | publicPublished=500, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=227, unsafeClaims=0, watchMentions=9553 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=238, unsafeClaims=0, watchMentions=9666 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
-| content integrity audit mirrors mojibake warnings without blocking | PASS | warnings=77, mojibake=77, publicMojibake=51, remediationAffected=77/51 |
+| content integrity audit mirrors mojibake warnings without blocking | PASS | warnings=0, mojibake=0, publicMojibake=0, remediationAffected=77/51 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=500, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=500, expansion=15, broadFirst=0, candidates=16 |
 | internal link opportunity audit has public suggestions for Wave 1 | PASS | wave=3, broadFirstMissing=0, waveMissing=0, candidateMissing=0 |
@@ -110,10 +110,10 @@ Overall: FAIL
 | review optimization brief is read-only and covers ready action-board tasks | PASS | briefs=2, ready=2, unsafeCommands=0 |
 | review optimization brief has actionable copydesk guidance | PASS | withAction=2, missingPublicLinkItems=1, exactQueryWeak=2 |
 | search snippet readiness audit is read-only and covers public plus expansion items | PASS | public=500, expansion=15, scoped=516 |
-| search snippet readiness audit has no blocking Wave 1 issues | PASS | blocking=0, wave=3, waveBlocking=0, warnings=204 |
+| search snippet readiness audit has no blocking Wave 1 issues | PASS | blocking=0, wave=3, waveBlocking=0, warnings=0 |
 | structured data readiness audit is read-only and covers public plus expansion items | PASS | public=500, expansion=15, scoped=516 |
-| structured data readiness audit has JSON-LD previews and no blocking Wave 1 issues | PASS | blocking=0, previews=516, wave=3, waveBlocking=0, warnings=92 |
-| SEO warning remediation pack is read-only and mirrors snippet/schema warnings | PASS | items=260, snippet=204/204, schema=92/92 |
+| structured data readiness audit has JSON-LD previews and no blocking Wave 1 issues | PASS | blocking=0, previews=516, wave=3, waveBlocking=0, warnings=0 |
+| SEO warning remediation pack is read-only and mirrors snippet/schema warnings | PASS | items=260, snippet=204/0, schema=92/0 |
 | SEO warning remediation pack keeps every SEO fix human-gated | PASS | ready=260, public=255, draft=5, gated=260 |
 | SEO opportunity map has review-ready drafts | PASS | reviewReadyDrafts=148 |
 | SEO opportunity map includes manual review batches | PASS | batches=5 |

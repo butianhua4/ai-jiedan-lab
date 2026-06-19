@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:37:35.017Z",
+  "generatedAt": "2026-06-19T00:56:13.465Z",
   "ok": false,
   "summary": {
     "checks": 197,
@@ -366,7 +366,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=227, unsafeClaims=0, watchMentions=9553"
+      "detail": "filesScanned=238, unsafeClaims=0, watchMentions=9666"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -376,7 +376,7 @@
     {
       "name": "content integrity audit mirrors mojibake warnings without blocking",
       "ok": true,
-      "detail": "warnings=77, mojibake=77, publicMojibake=51, remediationAffected=77/51"
+      "detail": "warnings=0, mojibake=0, publicMojibake=0, remediationAffected=77/51"
     },
     {
       "name": "content integrity audit covers public, recommended, and Wave 1 items",
@@ -721,7 +721,7 @@
     {
       "name": "search snippet readiness audit has no blocking Wave 1 issues",
       "ok": true,
-      "detail": "blocking=0, wave=3, waveBlocking=0, warnings=204"
+      "detail": "blocking=0, wave=3, waveBlocking=0, warnings=0"
     },
     {
       "name": "structured data readiness audit is read-only and covers public plus expansion items",
@@ -731,12 +731,12 @@
     {
       "name": "structured data readiness audit has JSON-LD previews and no blocking Wave 1 issues",
       "ok": true,
-      "detail": "blocking=0, previews=516, wave=3, waveBlocking=0, warnings=92"
+      "detail": "blocking=0, previews=516, wave=3, waveBlocking=0, warnings=0"
     },
     {
       "name": "SEO warning remediation pack is read-only and mirrors snippet/schema warnings",
       "ok": true,
-      "detail": "items=260, snippet=204/204, schema=92/92"
+      "detail": "items=260, snippet=204/0, schema=92/0"
     },
     {
       "name": "SEO warning remediation pack keeps every SEO fix human-gated",
