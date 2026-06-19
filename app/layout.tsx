@@ -7,8 +7,16 @@ import { JsonLd } from "@/components/JsonLd";
 import { site } from "@/data/site";
 
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+const bingSiteVerification = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION;
+const ahrefsSiteVerification = process.env.NEXT_PUBLIC_AHREFS_SITE_VERIFICATION;
 const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_ID || process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-BG3NQRLR64";
 const clarityProjectId = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID || "x9c2phrvfy";
+const cloudflareWebAnalyticsToken = process.env.NEXT_PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
+
+const extraVerification = {
+  ...(bingSiteVerification ? { "msvalidate.01": bingSiteVerification } : {}),
+  ...(ahrefsSiteVerification ? { "ahrefs-site-verification": ahrefsSiteVerification } : {}),
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -40,10 +48,11 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.svg",
   },
-  ...(googleSiteVerification
+  ...(googleSiteVerification || Object.keys(extraVerification).length
     ? {
         verification: {
-          google: googleSiteVerification,
+          ...(googleSiteVerification ? { google: googleSiteVerification } : {}),
+          ...(Object.keys(extraVerification).length ? { other: extraVerification } : {}),
         },
       }
     : {}),
@@ -76,6 +85,13 @@ gtag('config', '${googleAnalyticsId}');
 })(window, document, "clarity", "script", "${clarityProjectId}");
 `}
           </Script>
+        ) : null}
+        {cloudflareWebAnalyticsToken ? (
+          <Script
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            strategy="afterInteractive"
+            data-cf-beacon={JSON.stringify({ token: cloudflareWebAnalyticsToken })}
+          />
         ) : null}
         <JsonLd
           data={{
