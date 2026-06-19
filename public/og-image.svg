@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="AI Tools Guide">
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <rect x="72" y="72" width="1056" height="486" rx="36" fill="#ffffff" stroke="#dbeafe" stroke-width="4"/>
+  <circle cx="166" cy="166" r="42" fill="#2563eb"/>
+  <path d="M145 166h42M166 145v42" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+  <text x="238" y="158" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700">AI Tools Guide</text>
+  <text x="238" y="220" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="30">Deployment, Agent, RAG, prompts, and troubleshooting</text>
+  <g fill="#e0f2fe" stroke="#38bdf8" stroke-width="3">
+    <rect x="140" y="310" width="250" height="110" rx="18"/>
+    <rect x="475" y="310" width="250" height="110" rx="18"/>
+    <rect x="810" y="310" width="250" height="110" rx="18"/>
+  </g>
+  <g fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">
+    <text x="178" y="376">Q pages</text>
+    <text x="513" y="376">Clusters</text>
+    <text x="850" y="376">Deep guides</text>
+  </g>
+  <path d="M390 365h85M725 365h85" stroke="#2563eb" stroke-width="8" stroke-linecap="round"/>
+  <path d="M462 347l24 18-24 18M797 347l24 18-24 18" fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="140" y="500" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="26">Search-first AI execution playbooks for the US and global English-speaking market.</text>
+</svg>

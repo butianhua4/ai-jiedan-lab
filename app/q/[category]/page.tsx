@@ -14,6 +14,7 @@ import {
   type SeoClusterSlug,
   seoClusters,
 } from "@/lib/seo-graph";
+import { defaultOgImages, seoDescription } from "@/lib/seo-metadata";
 
 export function generateStaticParams() {
   return seoClusters.map((cluster) => ({ category: cluster.slug }));
@@ -25,7 +26,10 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   if (!cluster) return {};
 
   const title = `${cluster.shortTitle} troubleshooting questions`;
-  const description = `Browse high-intent ${cluster.shortTitle} questions with q pages, cluster hubs, and deep tutorials for practical SEO entry traffic.`;
+  const description = seoDescription(
+    `Browse high-intent ${cluster.shortTitle} questions with q pages, cluster hubs, and deep tutorials for practical SEO entry traffic.`,
+    "Use this category page to discover concrete troubleshooting tasks, related deep guides, and internal link paths across the AI Tools Guide network.",
+  );
 
   return {
     title,
@@ -36,6 +40,14 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
       description,
       url: `${site.url}/q/${cluster.slug}`,
       type: "website",
+      siteName: site.englishName,
+      images: defaultOgImages,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [site.ogImage],
     },
   };
 }

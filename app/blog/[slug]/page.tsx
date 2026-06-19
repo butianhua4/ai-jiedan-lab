@@ -9,6 +9,7 @@ import { ArticleToolLinks } from "@/components/ArticleToolLinks";
 import { SeoInternalLinks } from "@/components/SeoInternalLinks";
 import { getAllPosts, getPostBySlug, renderMarkdown, slugify } from "@/lib/blog";
 import { site } from "@/data/site";
+import { defaultOgImages, seoDescription } from "@/lib/seo-metadata";
 
 export function generateStaticParams() {
   return getAllPosts(false).map((post) => ({ slug: post.slug }));
@@ -18,16 +19,31 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return {};
+  const description = seoDescription(
+    post.description,
+    `Read the full ${post.category} guide with practical steps, related questions, internal links, and risk checks for AI builders.`,
+  );
   return {
     title: post.title,
-    description: post.description,
+    description,
     robots: { index: !post.noindex },
     alternates: { canonical: post.canonical },
     openGraph: {
       title: post.title,
-      description: post.description,
+      description,
       url: `${site.url}/blog/${post.slug}`,
       type: "article",
+      siteName: site.englishName,
+      images: defaultOgImages,
+      publishedTime: post.date,
+      modifiedTime: post.updatedAt,
+      authors: [post.author || site.author],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description,
+      images: [site.ogImage],
     },
   };
 }

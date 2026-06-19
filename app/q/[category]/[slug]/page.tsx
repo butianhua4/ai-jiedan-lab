@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { site } from "@/data/site";
 import { getBlogPath, getClusterForPost, getClusterPath, getPublishedSeoPosts, getQuestionName, getQuestionPath, getRelatedQuestions } from "@/lib/seo-graph";
+import { defaultOgImages, seoDescription } from "@/lib/seo-metadata";
 
 export function generateStaticParams() {
   return getPublishedSeoPosts().map((post) => ({
@@ -19,7 +20,10 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
 
   const questionName = getQuestionName(post);
   const title = `${questionName}: quick fix, steps, and deep guide`;
-  const description = `Troubleshoot ${questionName.toLowerCase()} with a short answer, practical steps, commands when available, risk notes, and a deeper guide.`;
+  const description = seoDescription(
+    `Troubleshoot ${questionName.toLowerCase()} with a short answer, practical steps, commands when available, risk notes, related questions, and a deeper guide.`,
+    `This q page connects to the ${getClusterForPost(post).shortTitle} topic cluster and the full blog tutorial for search-driven AI troubleshooting.`,
+  );
 
   return {
     title,
@@ -30,6 +34,14 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
       description,
       url: `${site.url}${getQuestionPath(post)}`,
       type: "article",
+      siteName: site.englishName,
+      images: defaultOgImages,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [site.ogImage],
     },
     robots: { index: true, follow: true },
   };

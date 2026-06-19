@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { site } from "@/data/site";
 import { getBlogPath, getClusterBySlug, getClusterPath, getHighAuthorityPosts, getPostsForCluster, getQuestionName, getQuestionPath, seoClusters } from "@/lib/seo-graph";
+import { defaultOgImages, seoDescription } from "@/lib/seo-metadata";
 
 export function generateStaticParams() {
   return seoClusters.map((cluster) => ({ slug: cluster.slug }));
@@ -13,16 +14,28 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const cluster = getClusterBySlug(slug);
   if (!cluster) return {};
+  const description = seoDescription(
+    cluster.description,
+    "This topic hub links high-potential q pages, high-authority blog tutorials, and related AI troubleshooting paths for search engines and readers.",
+  );
 
   return {
     title: cluster.title,
-    description: cluster.description,
+    description,
     alternates: { canonical: `${site.url}${getClusterPath(cluster.slug)}` },
     openGraph: {
       title: cluster.title,
-      description: cluster.description,
+      description,
       url: `${site.url}${getClusterPath(cluster.slug)}`,
       type: "website",
+      siteName: site.englishName,
+      images: defaultOgImages,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: cluster.title,
+      description,
+      images: [site.ogImage],
     },
   };
 }

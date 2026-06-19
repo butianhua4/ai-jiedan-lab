@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { site } from "@/data/site";
+import { defaultOgImages, seoDescription } from "@/lib/seo-metadata";
 
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 const bingSiteVerification = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION;
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
     default: site.name,
     template: `%s | ${site.englishName}`,
   },
-  description: site.description,
+  description: seoDescription(site.description),
   alternates: {
     languages: {
       "zh-CN": "/",
@@ -33,17 +34,19 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: `${site.name} / ${site.englishName}`,
-    description: site.englishDescription,
+    description: seoDescription(site.englishDescription),
     url: "/",
     siteName: site.englishName,
     locale: "zh_CN",
     alternateLocale: ["en_US"],
     type: "website",
+    images: defaultOgImages,
   },
   twitter: {
     card: "summary_large_image",
     title: site.englishName,
-    description: site.englishDescription,
+    description: seoDescription(site.englishDescription),
+    images: [site.ogImage],
   },
   icons: {
     icon: "/favicon.svg",

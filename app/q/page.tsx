@@ -11,19 +11,33 @@ import {
   getQuestionPath,
   getSeoClusters,
 } from "@/lib/seo-graph";
+import { defaultOgImages, seoDescription } from "@/lib/seo-metadata";
 
 const pageTitle = "AI problem entry pages: Codex, deployment, Agent, RAG, prompts, and automation";
 const pageDescription =
   "Browse high-intent AI troubleshooting questions covering Codex, Upwork, Vercel, GitHub, Node.js errors, AI tools, Agent, RAG, prompts, and office automation.";
+const metadataDescription = seoDescription(
+  pageDescription,
+  "Start from concrete search questions, then move through q pages, topic clusters, and deep tutorials with practical AI troubleshooting steps.",
+);
 
 export const metadata: Metadata = {
   title: pageTitle,
-  description: pageDescription,
+  description: metadataDescription,
   alternates: { canonical: "/q" },
   openGraph: {
     title: "AI problem entry pages",
-    description: "Start from a concrete AI problem, then move into the matching tutorial, cluster hub, and tool.",
+    description: metadataDescription,
     url: "/q",
+    siteName: site.englishName,
+    type: "website",
+    images: defaultOgImages,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: metadataDescription,
+    images: [site.ogImage],
   },
 };
 
