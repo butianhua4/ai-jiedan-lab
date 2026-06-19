@@ -1,6 +1,6 @@
 # Review Action Board
 
-Generated at: 2026-06-19T11:49:52.224Z
+Generated at: 2026-06-19T16:19:54.704Z
 
 This board is read-only. It turns review automation reports into a prioritized human task queue.
 
@@ -67,7 +67,7 @@ Action items:
 - Read the article end to end and confirm the opening answer matches search intent.
 - Open 2 official source target(s) and verify fast-changing claims.
 - Run through 8 risk review checks.
-- Choose or reject public internal link suggestion: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).
+- Choose or reject public internal link suggestion: RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide).
 - Confirm snippet and structured-data checks remain clean.
 
 Warnings:
@@ -121,7 +121,7 @@ Action items:
 - Read the article end to end and confirm the opening answer matches search intent.
 - Open 7 official source target(s) and verify fast-changing claims.
 - Run through 5 risk review checks.
-- Choose or reject public internal link suggestion: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).
+- Choose or reject public internal link suggestion: Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试 (/blog/pinecone-rag-beginner-guide).
 - Confirm snippet and structured-data checks remain clean.
 
 Warnings:

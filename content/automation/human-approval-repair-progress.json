@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T11:50:03.734Z",
+  "generatedAt": "2026-06-19T16:20:06.157Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -352,7 +352,7 @@
           "category": "internal-link",
           "detail": "At least one contextual public article link is present.",
           "evidence": {
-            "linksToPublicArticles": 1,
+            "linksToPublicArticles": 2,
             "readyForHumanReview": true,
             "safeDraft": true,
             "suggestions": 5

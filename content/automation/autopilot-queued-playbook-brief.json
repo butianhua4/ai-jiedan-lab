@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T11:50:05.594Z",
+  "generatedAt": "2026-06-19T16:20:07.994Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -34,7 +34,7 @@
         "Read the article end to end and confirm the opening answer matches search intent.",
         "Open 2 official source target(s) and verify fast-changing claims.",
         "Run through 8 risk review checks.",
-        "Choose or reject public internal link suggestion: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).",
+        "Choose or reject public internal link suggestion: RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide).",
         "Confirm snippet and structured-data checks remain clean.",
         "Review source lanes together: wave.",
         "Verify 8 official source target(s) before any approval.",
@@ -95,16 +95,8 @@
       },
       "internalLinkSuggestions": [
         {
-          "currentPublicLinks": 0,
-          "reason": "same category: AI 基建; shared tags: 向量数据库, RAG, Qdrant; keyword overlap: rag, qdrant, ai, 基建, 向量数据库, 过滤",
-          "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-          "url": "/blog/qdrant-vector-database-beginner-guide"
-        },
-        {
-          "file": "content/blog/rag-knowledge-base-beginner-guide.mdx",
+          "currentPublicLinks": 1,
           "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数",
-          "score": 106,
-          "slug": "rag-knowledge-base-beginner-guide",
           "title": "RAG 知识库怎么搭：文档、切分、检索和回答复核",
           "url": "/blog/rag-knowledge-base-beginner-guide"
         },
@@ -115,6 +107,14 @@
           "slug": "chroma-vector-database-rag-guide",
           "title": "Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection",
           "url": "/blog/chroma-vector-database-rag-guide"
+        },
+        {
+          "file": "content/blog/rag-retrieval-no-context-debug-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数",
+          "score": 102,
+          "slug": "rag-retrieval-no-context-debug-guide",
+          "title": "RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路",
+          "url": "/blog/rag-retrieval-no-context-debug-guide"
         }
       ],
       "manualOnlyCommands": {
@@ -125,7 +125,7 @@
       },
       "optimizationActions": [
         "在开头 200 字内自然回答一次“RAG 向量数据库怎么选”这个搜索意图，先给结论再展开步骤。",
-        "在相关段落加入公开内链：Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide)。",
+        "在相关段落加入公开内链：RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide)。",
         "Add one FAQ or checklist line that uses a high-intent query variant such as: RAG 向量数据库怎么选.",
         "Consider reviewed title: RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
         "Consider reviewed description: 面向准备落地 RAG 向量数据库怎么选 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。"
@@ -236,7 +236,7 @@
         "Read the article end to end and confirm the opening answer matches search intent.",
         "Open 7 official source target(s) and verify fast-changing claims.",
         "Run through 5 risk review checks.",
-        "Choose or reject public internal link suggestion: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).",
+        "Choose or reject public internal link suggestion: Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试 (/blog/pinecone-rag-beginner-guide).",
         "Confirm snippet and structured-data checks remain clean.",
         "Review source lanes together: wave.",
         "Verify 7 official source target(s) before any approval.",
@@ -282,14 +282,6 @@
       },
       "internalLinkSuggestions": [
         {
-          "file": "content/blog/qdrant-vector-database-beginner-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, ai, 基建, 向量数据库, 语义搜索, 向量",
-          "score": 114,
-          "slug": "qdrant-vector-database-beginner-guide",
-          "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-          "url": "/blog/qdrant-vector-database-beginner-guide"
-        },
-        {
           "file": "content/blog/pinecone-rag-beginner-guide.mdx",
           "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, 怎么开始, ai, 基建, 向量数据库, metadata",
           "score": 110,
@@ -304,6 +296,14 @@
           "slug": "chroma-vector-database-rag-guide",
           "title": "Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection",
           "url": "/blog/chroma-vector-database-rag-guide"
+        },
+        {
+          "file": "content/blog/rag-retrieval-no-context-debug-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 怎么",
+          "score": 98,
+          "slug": "rag-retrieval-no-context-debug-guide",
+          "title": "RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路",
+          "url": "/blog/rag-retrieval-no-context-debug-guide"
         }
       ],
       "manualOnlyCommands": {

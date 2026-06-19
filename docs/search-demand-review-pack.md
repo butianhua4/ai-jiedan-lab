@@ -1,6 +1,6 @@
 # Search Demand Review Pack
 
-Generated at: 2026-06-19T11:49:41.650Z
+Generated at: 2026-06-19T16:19:43.860Z
 
 This report is read-only. It converts high-search-demand lanes into manual review packets and stops before status changes or publishing.
 
@@ -34,7 +34,7 @@ This report is read-only. It converts high-search-demand lanes into manual revie
 
 ## Source Evidence
 
-- intakeGeneratedAt: "2026-06-19T11:49:41.182Z"
+- intakeGeneratedAt: "2026-06-19T16:19:43.390Z"
 - intakeGuardrails: {"autoCreateArticles":false,"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"trafficClaim":"not-included","note":"Read-only search-demand intake. Search queries are editorial seeds, not measured keyword volume, rankings, impressions, clicks, traffic, or revenue."}
 - intakeSummary: {"contentFormats":32,"lanes":8,"lanesWithPublicCoverage":8,"lanesWithoutPublicCoverage":0,"lanesWithReadyCandidates":7,"officialSourceTargets":29,"readyCandidateFiles":24,"reviewQueueMatches":10,"searchQueries":81,"unsafeLanes":1}
 - sourceHealthFilesWithoutReachableSource: 0
@@ -279,7 +279,7 @@ Human review checklist:
 - Check the article directly answers the primary search phrase: RAG knowledge base tutorial.
 - Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.
 - Confirm all commands, credentials, API keys, and customer data examples are safe.
-- Approve or replace internal link suggestion: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).
+- Approve or replace internal link suggestion: RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide).
 - Only after explicit human approval, run: npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm-human
 - Publishing remains separate and requires explicit approval.
 

@@ -1,6 +1,6 @@
 # Internal Link Sprint Board
 
-Generated at: 2026-06-19T11:49:29.497Z
+Generated at: 2026-06-19T16:19:31.725Z
 
 This report is read-only. It turns public-link suggestions into manual internal-link review waves without editing article bodies.
 
@@ -20,7 +20,7 @@ This report is read-only. It turns public-link suggestions into manual internal-
 - candidateItems: 16
 - candidateItemsMissingPublicLinkSuggestion: 0
 - candidateItemsWithPublicSuggestions: 16
-- candidatesWithoutCurrentPublicLinks: 10
+- candidatesWithoutCurrentPublicLinks: 9
 - expansionItems: 15
 - items: 16
 - itemsPerWave: 4
@@ -51,9 +51,9 @@ This report is read-only. It turns public-link suggestions into manual internal-
 
 | Wave | Ready | Score | Public links | Suggestions | Scopes | Top target | Title | File |
 | ---: | --- | ---: | ---: | ---: | --- | --- | --- | --- |
-| 1 | true | 248 | 0 | 3 | expansion, recommended, wave-1 | /blog/qdrant-vector-database-beginner-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| 1 | true | 208 | 1 | 3 | expansion, recommended, wave-1 | /blog/multi-model-router-fallback-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| 1 | true | 148 | 1 | 3 | expansion, wave-1 | /blog/qdrant-vector-database-beginner-guide | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
+| 1 | true | 208 | 1 | 3 | expansion, recommended, wave-1 | /blog/rag-knowledge-base-beginner-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| 1 | true | 208 | 2 | 3 | expansion, recommended, wave-1 | /blog/multi-model-router-fallback-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| 1 | true | 148 | 2 | 3 | expansion, wave-1 | /blog/pinecone-rag-beginner-guide | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
 | 1 | true | 143 | 0 | 3 | recommended | /blog/ai-small-project-practice-topics | AI 工具新手不应该先买哪些工具 | content/blog/tools-not-to-buy-first.mdx |
 | 2 | true | 111 | 0 | 3 | expansion | /blog/permission-denied-fix-freelance-scope | Vercel 404 部署成功但页面打不开怎么办：使用前怎么判断是否适合 | content/blog/vercel-404-after-deploy-freelance-scope.mdx |
 | 2 | true | 111 | 0 | 3 | expansion | /blog/permission-denied-fix-checklist | Windows 路径和权限导致安装失败怎么办：新手检查清单 | content/blog/windows-path-permission-install-fix-checklist.mdx |
@@ -64,8 +64,8 @@ This report is read-only. It turns public-link suggestions into manual internal-
 | 3 | true | 108 | 0 | 3 | expansion | /blog/small-site-launch-sop-checklist | Vercel 部署检查表怎么写：给新手的上线模板 | content/blog/vercel-deploy-checklist-template.mdx |
 | 3 | true | 107 | 0 | 3 | expansion | /blog/nextjs-hydration-error-debug-freelance-scope | Vercel 部署成功但页面 404：新手排查顺序 | content/blog/vercel-404-after-deploy.mdx |
 | 4 | true | 70 | 4 | 3 | expansion | /blog/openrouter-api-beginner-guide | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
-| 4 | true | 69 | 1 | 3 | expansion | /blog/gemini-api-nextjs-guide | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
-| 4 | true | 68 | 1 | 3 | expansion | /blog/local-llm-deployment-beginner | TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收 | content/blog/tensorrt-llm-beginner-guide.mdx |
+| 4 | true | 69 | 2 | 3 | expansion | /blog/gemini-api-nextjs-guide | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
+| 4 | true | 68 | 2 | 3 | expansion | /blog/local-llm-deployment-beginner | TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收 | content/blog/tensorrt-llm-beginner-guide.mdx |
 | 4 | true | 68 | 2 | 3 | expansion | /blog/local-llm-deployment-beginner | vLLM 部署适合什么场景：新手先看推理服务边界 | content/blog/vllm-deployment-beginner-guide.mdx |
 
 ## Item Actions
@@ -76,7 +76,7 @@ This report is read-only. It turns public-link suggestions into manual internal-
 - Wave: 1
 - Ready for internal link sprint: true
 - Publish confirm: not-included
-- Anchor prompt: When a paragraph mentions the related workflow, add one natural link to /blog/qdrant-vector-database-beginner-guide using reader-first anchor text, not keyword stuffing.
+- Anchor prompt: When a paragraph mentions the related workflow, add one natural link to /blog/rag-knowledge-base-beginner-guide using reader-first anchor text, not keyword stuffing.
 
 Link actions:
 - Keep this as a manual article-body edit; do not auto-insert links.
@@ -85,13 +85,13 @@ Link actions:
 - Prefer links that help the reader move from a draft tutorial to an already public beginner page.
 - Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.
 - After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.
-- Primary suggested target: /blog/qdrant-vector-database-beginner-guide.
-- Candidate currently links to 0 public article(s).
+- Primary suggested target: /blog/rag-knowledge-base-beginner-guide.
+- Candidate currently links to 1 public article(s).
 
 Suggested public links:
-- /blog/qdrant-vector-database-beginner-guide - Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (same category: AI 基建; shared tags: 向量数据库, RAG, Qdrant; keyword overlap: rag, qdrant, ai, 基建, 向量数据库, 过滤)
 - /blog/rag-knowledge-base-beginner-guide - RAG 知识库怎么搭：文档、切分、检索和回答复核 (same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数)
 - /blog/chroma-vector-database-rag-guide - Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection (same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, collection, 向量)
+- /blog/rag-retrieval-no-context-debug-guide - RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路 (same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数)
 
 ### Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级
 
@@ -109,7 +109,7 @@ Link actions:
 - Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.
 - After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.
 - Primary suggested target: /blog/multi-model-router-fallback-guide.
-- Candidate currently links to 1 public article(s).
+- Candidate currently links to 2 public article(s).
 
 Suggested public links:
 - /blog/multi-model-router-fallback-guide - 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做)
@@ -122,7 +122,7 @@ Suggested public links:
 - Wave: 1
 - Ready for internal link sprint: true
 - Publish confirm: not-included
-- Anchor prompt: When a paragraph mentions the related workflow, add one natural link to /blog/qdrant-vector-database-beginner-guide using reader-first anchor text, not keyword stuffing.
+- Anchor prompt: When a paragraph mentions the related workflow, add one natural link to /blog/pinecone-rag-beginner-guide using reader-first anchor text, not keyword stuffing.
 
 Link actions:
 - Keep this as a manual article-body edit; do not auto-insert links.
@@ -131,13 +131,13 @@ Link actions:
 - Prefer links that help the reader move from a draft tutorial to an already public beginner page.
 - Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.
 - After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.
-- Primary suggested target: /blog/qdrant-vector-database-beginner-guide.
-- Candidate currently links to 1 public article(s).
+- Primary suggested target: /blog/pinecone-rag-beginner-guide.
+- Candidate currently links to 2 public article(s).
 
 Suggested public links:
-- /blog/qdrant-vector-database-beginner-guide - Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, ai, 基建, 向量数据库, 语义搜索, 向量)
 - /blog/pinecone-rag-beginner-guide - Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试 (same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, 怎么开始, ai, 基建, 向量数据库, metadata)
 - /blog/chroma-vector-database-rag-guide - Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection (same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 怎么)
+- /blog/rag-retrieval-no-context-debug-guide - RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路 (same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 怎么)
 
 ### AI 工具新手不应该先买哪些工具
 
@@ -385,7 +385,7 @@ Link actions:
 - Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.
 - After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.
 - Primary suggested target: /blog/gemini-api-nextjs-guide.
-- Candidate currently links to 1 public article(s).
+- Candidate currently links to 2 public article(s).
 
 Suggested public links:
 - /blog/gemini-api-nextjs-guide - Gemini API 怎么接 Next.js：从 API Key 到服务端 Route Handler (same category: AI 基建; shared tags: Next.js, AI 部署; keyword overlap: ai, next, js, 基建, 部署, api)
@@ -408,7 +408,7 @@ Link actions:
 - Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.
 - After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.
 - Primary suggested target: /blog/local-llm-deployment-beginner.
-- Candidate currently links to 1 public article(s).
+- Candidate currently links to 2 public article(s).
 
 Suggested public links:
 - /blog/local-llm-deployment-beginner - 本地部署大模型怎么开始：新手先看硬件、模型和用途 (same category: AI 基建; keyword overlap: ai, 基建, llm, ollama, 硬件, 怎么)

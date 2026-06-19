@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T11:49:28.979Z",
+  "generatedAt": "2026-06-19T16:19:31.242Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -75,7 +75,7 @@
     {
       "currentInternalLinks": 3,
       "file": "content/blog/supabase-pgvector-rag-guide.mdx",
-      "linksToPublicArticles": 1,
+      "linksToPublicArticles": 2,
       "missingPublicLinkSuggestion": false,
       "scopes": [
         "expansion",
@@ -83,14 +83,6 @@
       ],
       "status": "draft",
       "suggestions": [
-        {
-          "file": "content/blog/qdrant-vector-database-beginner-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, ai, 基建, 向量数据库, 语义搜索, 向量",
-          "score": 114,
-          "slug": "qdrant-vector-database-beginner-guide",
-          "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-          "url": "/blog/qdrant-vector-database-beginner-guide"
-        },
         {
           "file": "content/blog/pinecone-rag-beginner-guide.mdx",
           "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, 怎么开始, ai, 基建, 向量数据库, metadata",
@@ -122,6 +114,14 @@
           "slug": "knowledge-base-permission-design-guide",
           "title": "AI 知识库权限怎么设计：别让检索结果越权",
           "url": "/blog/knowledge-base-permission-design-guide"
+        },
+        {
+          "file": "content/blog/dify-knowledge-base-beginner-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: RAG; keyword overlap: rag, ai, 基建, 知识库怎么搭, 怎么, 文档",
+          "score": 82,
+          "slug": "dify-knowledge-base-beginner-guide",
+          "title": "Dify 知识库怎么搭：从上传文档到 RAG 问答",
+          "url": "/blog/dify-knowledge-base-beginner-guide"
         }
       ],
       "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索"
@@ -129,7 +129,7 @@
     {
       "currentInternalLinks": 3,
       "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
-      "linksToPublicArticles": 1,
+      "linksToPublicArticles": 2,
       "missingPublicLinkSuggestion": false,
       "scopes": [
         "expansion"
@@ -288,7 +288,7 @@
     {
       "currentInternalLinks": 3,
       "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
-      "linksToPublicArticles": 0,
+      "linksToPublicArticles": 1,
       "missingPublicLinkSuggestion": false,
       "scopes": [
         "expansion",
@@ -297,14 +297,6 @@
       ],
       "status": "draft",
       "suggestions": [
-        {
-          "file": "content/blog/qdrant-vector-database-beginner-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: 向量数据库, RAG, Qdrant; keyword overlap: rag, qdrant, ai, 基建, 向量数据库, 过滤",
-          "score": 118,
-          "slug": "qdrant-vector-database-beginner-guide",
-          "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-          "url": "/blog/qdrant-vector-database-beginner-guide"
-        },
         {
           "file": "content/blog/rag-knowledge-base-beginner-guide.mdx",
           "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数",
@@ -336,6 +328,14 @@
           "slug": "pinecone-rag-beginner-guide",
           "title": "Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试",
           "url": "/blog/pinecone-rag-beginner-guide"
+        },
+        {
+          "file": "content/blog/fastgpt-knowledge-base-deployment-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: RAG; keyword overlap: rag, ai, 基建, 库怎, 怎么, 新手",
+          "score": 86,
+          "slug": "fastgpt-knowledge-base-deployment-guide",
+          "title": "FastGPT 知识库怎么部署：新手先分清自部署和检索参数",
+          "url": "/blog/fastgpt-knowledge-base-deployment-guide"
         }
       ],
       "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界"
@@ -502,7 +502,7 @@
     {
       "currentInternalLinks": 3,
       "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-      "linksToPublicArticles": 1,
+      "linksToPublicArticles": 2,
       "missingPublicLinkSuggestion": false,
       "scopes": [
         "expansion",
@@ -557,7 +557,7 @@
     {
       "currentInternalLinks": 4,
       "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
-      "linksToPublicArticles": 1,
+      "linksToPublicArticles": 2,
       "missingPublicLinkSuggestion": false,
       "scopes": [
         "expansion"
@@ -932,7 +932,7 @@
     {
       "currentInternalLinks": 3,
       "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
-      "linksToPublicArticles": 0,
+      "linksToPublicArticles": 1,
       "missingPublicLinkSuggestion": false,
       "scopes": [
         "expansion",
@@ -941,14 +941,6 @@
       ],
       "status": "draft",
       "suggestions": [
-        {
-          "file": "content/blog/qdrant-vector-database-beginner-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: 向量数据库, RAG, Qdrant; keyword overlap: rag, qdrant, ai, 基建, 向量数据库, 过滤",
-          "score": 118,
-          "slug": "qdrant-vector-database-beginner-guide",
-          "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-          "url": "/blog/qdrant-vector-database-beginner-guide"
-        },
         {
           "file": "content/blog/rag-knowledge-base-beginner-guide.mdx",
           "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数",
@@ -980,6 +972,14 @@
           "slug": "pinecone-rag-beginner-guide",
           "title": "Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试",
           "url": "/blog/pinecone-rag-beginner-guide"
+        },
+        {
+          "file": "content/blog/fastgpt-knowledge-base-deployment-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: RAG; keyword overlap: rag, ai, 基建, 库怎, 怎么, 新手",
+          "score": 86,
+          "slug": "fastgpt-knowledge-base-deployment-guide",
+          "title": "FastGPT 知识库怎么部署：新手先分清自部署和检索参数",
+          "url": "/blog/fastgpt-knowledge-base-deployment-guide"
         }
       ],
       "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界"
@@ -987,7 +987,7 @@
     {
       "currentInternalLinks": 3,
       "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-      "linksToPublicArticles": 1,
+      "linksToPublicArticles": 2,
       "missingPublicLinkSuggestion": false,
       "scopes": [
         "expansion",
@@ -1044,7 +1044,7 @@
     {
       "currentInternalLinks": 3,
       "file": "content/blog/supabase-pgvector-rag-guide.mdx",
-      "linksToPublicArticles": 1,
+      "linksToPublicArticles": 2,
       "missingPublicLinkSuggestion": false,
       "scopes": [
         "expansion",
@@ -1052,14 +1052,6 @@
       ],
       "status": "draft",
       "suggestions": [
-        {
-          "file": "content/blog/qdrant-vector-database-beginner-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, ai, 基建, 向量数据库, 语义搜索, 向量",
-          "score": 114,
-          "slug": "qdrant-vector-database-beginner-guide",
-          "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-          "url": "/blog/qdrant-vector-database-beginner-guide"
-        },
         {
           "file": "content/blog/pinecone-rag-beginner-guide.mdx",
           "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, 怎么开始, ai, 基建, 向量数据库, metadata",
@@ -1091,6 +1083,14 @@
           "slug": "knowledge-base-permission-design-guide",
           "title": "AI 知识库权限怎么设计：别让检索结果越权",
           "url": "/blog/knowledge-base-permission-design-guide"
+        },
+        {
+          "file": "content/blog/dify-knowledge-base-beginner-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: RAG; keyword overlap: rag, ai, 基建, 知识库怎么搭, 怎么, 文档",
+          "score": 82,
+          "slug": "dify-knowledge-base-beginner-guide",
+          "title": "Dify 知识库怎么搭：从上传文档到 RAG 问答",
+          "url": "/blog/dify-knowledge-base-beginner-guide"
         }
       ],
       "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索"
@@ -1098,7 +1098,7 @@
     {
       "currentInternalLinks": 3,
       "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
-      "linksToPublicArticles": 0,
+      "linksToPublicArticles": 1,
       "missingPublicLinkSuggestion": false,
       "scopes": [
         "expansion",
@@ -1107,14 +1107,6 @@
       ],
       "status": "draft",
       "suggestions": [
-        {
-          "file": "content/blog/qdrant-vector-database-beginner-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: 向量数据库, RAG, Qdrant; keyword overlap: rag, qdrant, ai, 基建, 向量数据库, 过滤",
-          "score": 118,
-          "slug": "qdrant-vector-database-beginner-guide",
-          "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-          "url": "/blog/qdrant-vector-database-beginner-guide"
-        },
         {
           "file": "content/blog/rag-knowledge-base-beginner-guide.mdx",
           "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数",
@@ -1146,6 +1138,14 @@
           "slug": "pinecone-rag-beginner-guide",
           "title": "Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试",
           "url": "/blog/pinecone-rag-beginner-guide"
+        },
+        {
+          "file": "content/blog/fastgpt-knowledge-base-deployment-guide.mdx",
+          "reason": "same category: AI 基建; shared tags: RAG; keyword overlap: rag, ai, 基建, 库怎, 怎么, 新手",
+          "score": 86,
+          "slug": "fastgpt-knowledge-base-deployment-guide",
+          "title": "FastGPT 知识库怎么部署：新手先分清自部署和检索参数",
+          "url": "/blog/fastgpt-knowledge-base-deployment-guide"
         }
       ],
       "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界"
@@ -1153,7 +1153,7 @@
     {
       "currentInternalLinks": 3,
       "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-      "linksToPublicArticles": 1,
+      "linksToPublicArticles": 2,
       "missingPublicLinkSuggestion": false,
       "scopes": [
         "expansion",

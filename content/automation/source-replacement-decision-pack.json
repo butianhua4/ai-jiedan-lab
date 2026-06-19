@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T11:49:51.748Z",
+  "generatedAt": "2026-06-19T16:19:54.240Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "No measured traffic, rankings, clicks, impressions, or revenue are claimed."
   },
   "sourceEvidence": {
-    "remediationGeneratedAt": "2026-06-19T11:49:51.285Z",
+    "remediationGeneratedAt": "2026-06-19T16:19:53.780Z",
     "remediationGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,

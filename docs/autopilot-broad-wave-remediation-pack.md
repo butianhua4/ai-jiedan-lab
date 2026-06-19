@@ -1,6 +1,6 @@
 # Autopilot Broad Wave Remediation Pack
 
-Generated at: 2026-06-19T11:50:08.753Z
+Generated at: 2026-06-19T16:20:11.141Z
 
 This report is read-only. It turns broad AI publish-wave optimization items into manual remediation cards and keeps article edits, mark-review, and publishing human-gated.
 
@@ -30,7 +30,7 @@ This report is read-only. It turns broad AI publish-wave optimization items into
 
 ## Source Evidence
 
-- broadWaveOptimizationGeneratedAt: "2026-06-19T11:50:08.287Z"
+- broadWaveOptimizationGeneratedAt: "2026-06-19T16:20:10.691Z"
 - broadWaveOptimizationGuardrails: {"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"note":"Read-only optimization brief for broad publish waves. It proposes SEO, snippet, opening, internal-link, and risk-language checks without editing article files.","stopBefore":"Apply any copy or link changes only during human review. Do not mark review or publish automatically.","trafficClaim":"not-included"}
 - broadWaveOptimizationItems: 7
 - broadWaveOptimizationReadyItems: 7
@@ -61,7 +61,7 @@ This report is read-only. It turns broad AI publish-wave optimization items into
 | 2 | true | 5 | 12 | 8 | 3 | 1 | 1 | 5 | true | not-included | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
 | 2 | true | 5 | 12 | 11 | 3 | 1 | 2 | 6 | true | not-included | vLLM 部署适合什么场景：新手先看推理服务边界 | content/blog/vllm-deployment-beginner-guide.mdx |
 | 2 | true | 5 | 12 | 4 | 6 | 4 | 2 | 6 | true | not-included | 向量数据库怎么选：新手先理解 embedding 和检索 | content/blog/vector-database-beginner-guide.mdx |
-| 3 | true | 5 | 12 | 12 | 3 | 1 | 3 | 7 | true | not-included | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| 3 | true | 5 | 12 | 12 | 3 | 1 | 2 | 6 | true | not-included | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
 
 ## Per-Item Checklist
 
@@ -74,7 +74,7 @@ This report is read-only. It turns broad AI publish-wave optimization items into
 
 Public-link plan:
 
-- Use suggested public link: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).
+- Use suggested public link: Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试 (/blog/pinecone-rag-beginner-guide).
 
 Search fixes:
 
@@ -449,7 +449,7 @@ Human checklist:
 
 Public-link plan:
 
-- Use suggested public link: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).
+- Use suggested public link: RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide).
 
 Search fixes:
 
@@ -480,7 +480,6 @@ Source checks:
 Warning fixes:
 
 - Meta description is short; rewrite it before approval.
-- No current link to published articles; add one approved contextual public link.
 - Freshness risk is high; all implementation-sensitive claims need current source checks.
 
 Risk checks:
@@ -489,7 +488,6 @@ Risk checks:
 - Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.
 - Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.
 - Meta description is short; rewrite it before approval.
-- No current link to published articles; add one approved contextual public link.
 - Freshness risk is high; all implementation-sensitive claims need current source checks.
 - Reject unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.
 

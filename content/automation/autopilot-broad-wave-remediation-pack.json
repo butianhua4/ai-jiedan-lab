@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T11:50:08.753Z",
+  "generatedAt": "2026-06-19T16:20:11.141Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "broadWaveOptimizationGeneratedAt": "2026-06-19T11:50:08.287Z",
+    "broadWaveOptimizationGeneratedAt": "2026-06-19T16:20:10.691Z",
     "broadWaveOptimizationGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -88,13 +88,13 @@
         "Publishing remains a separate explicit approval step."
       ],
       "internalLinkFixes": [
-        "Use suggested public link: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).",
+        "Use suggested public link: Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试 (/blog/pinecone-rag-beginner-guide).",
         "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
         "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
       ],
       "manualFixReady": true,
       "publicLinkPlan": [
-        "Use suggested public link: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide)."
+        "Use suggested public link: Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试 (/blog/pinecone-rag-beginner-guide)."
       ],
       "remediationReasons": [
         "broad AI wave item needs human remediation before approval",
@@ -549,13 +549,13 @@
         "Publishing remains a separate explicit approval step."
       ],
       "internalLinkFixes": [
-        "Use suggested public link: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).",
+        "Use suggested public link: RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide).",
         "Place the internal link contextually near a setup, deployment, pricing, security, or troubleshooting step.",
         "Do not add a public link if it weakens the article or points to an unrelated beginner topic."
       ],
       "manualFixReady": true,
       "publicLinkPlan": [
-        "Use suggested public link: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide)."
+        "Use suggested public link: RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide)."
       ],
       "remediationReasons": [
         "broad AI wave item needs human remediation before approval",
@@ -569,7 +569,6 @@
         "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
         "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
         "Meta description is short; rewrite it before approval.",
-        "No current link to published articles; add one approved contextual public link.",
         "Freshness risk is high; all implementation-sensitive claims need current source checks.",
         "Reject unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims."
       ],
@@ -605,7 +604,6 @@
       "unsafeReasons": [],
       "warningFixes": [
         "Meta description is short; rewrite it before approval.",
-        "No current link to published articles; add one approved contextual public link.",
         "Freshness risk is high; all implementation-sensitive claims need current source checks."
       ],
       "wave": 3

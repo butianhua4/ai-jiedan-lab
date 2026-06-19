@@ -1,6 +1,6 @@
 # Manual Review Workbench
 
-Generated at: 2026-06-19T11:50:11.628Z
+Generated at: 2026-06-19T16:20:13.954Z
 
 This workbench is read-only. It does not publish articles or mark drafts for review.
 
@@ -192,8 +192,8 @@ Next review files:
 - Search Console verification evidence: false
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 240
-- Traffic claim watch mentions: 9126
+- Traffic claim files scanned: 241
+- Traffic claim watch mentions: 9138
 
 ## Content Integrity
 
@@ -215,9 +215,9 @@ Next review files:
 
 | Public links now | Suggestions | Title | File |
 | --- | --- | --- | --- |
-| 1/3 | Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide)<br>Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试 (/blog/pinecone-rag-beginner-guide)<br>Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection (/blog/chroma-vector-database-rag-guide) | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
-| 0/3 | Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide)<br>RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide)<br>Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection (/blog/chroma-vector-database-rag-guide) | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| 1/3 | 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide)<br>客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检 (/blog/ai-model-selection-customer-service-guide)<br>Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 (/blog/claude-api-rate-limit-debug-guide) | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| 2/3 | Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试 (/blog/pinecone-rag-beginner-guide)<br>Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection (/blog/chroma-vector-database-rag-guide)<br>RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路 (/blog/rag-retrieval-no-context-debug-guide) | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
+| 1/3 | RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide)<br>Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection (/blog/chroma-vector-database-rag-guide)<br>RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路 (/blog/rag-retrieval-no-context-debug-guide) | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| 2/3 | 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide)<br>客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检 (/blog/ai-model-selection-customer-service-guide)<br>Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 (/blog/claude-api-rate-limit-debug-guide) | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 
 ## Search Snippet Readiness
 

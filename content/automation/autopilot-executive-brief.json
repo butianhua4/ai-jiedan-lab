@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T11:50:13.041Z",
+  "generatedAt": "2026-06-19T16:20:15.317Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -94,7 +94,7 @@
         "candidateItems": 16,
         "candidateItemsMissingPublicLinkSuggestion": 0,
         "candidateItemsWithPublicSuggestions": 16,
-        "candidatesWithoutCurrentPublicLinks": 10,
+        "candidatesWithoutCurrentPublicLinks": 9,
         "expansionItems": 15,
         "items": 16,
         "itemsPerWave": 4,

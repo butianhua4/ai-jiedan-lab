@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T11:50:00.485Z",
+  "generatedAt": "2026-06-19T16:20:02.929Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -44,7 +44,7 @@
         "Use one link only if it helps the reader continue the task; avoid stuffing links.",
         "Keep the article draft/noindex until explicit approval."
       ],
-      "linksToPublicArticles": 1,
+      "linksToPublicArticles": 2,
       "readyForHumanReview": true,
       "safeDraft": true,
       "suggestions": [

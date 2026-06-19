@@ -1,6 +1,6 @@
 # Autopilot Queued Remediation Pack
 
-Generated at: 2026-06-19T11:50:06.061Z
+Generated at: 2026-06-19T16:20:08.467Z
 
 This report is read-only. It turns queued playbook items into manual remediation cards and keeps article edits, mark-review, and publishing human-gated.
 
@@ -25,7 +25,7 @@ This report is read-only. It turns queued playbook items into manual remediation
 
 ## Source Evidence
 
-- queuedPlaybookGeneratedAt: "2026-06-19T11:50:05.594Z"
+- queuedPlaybookGeneratedAt: "2026-06-19T16:20:07.994Z"
 - queuedPlaybookGuardrails: {"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"note":"Read-only merged playbook for next-10 queued-for-playbook sprint items. It prepares human review without changing article status.","stopBefore":"Use this report for manual review only. mark:review requires explicit human approval per file; publish --confirm is not included."}
 - queuedPlaybookItems: 7
 - queuedPlaybookReadyItems: 7
@@ -88,9 +88,9 @@ Source checks:
 
 Internal-link fixes:
 
-- Add or explicitly reject public internal link: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).
 - Add or explicitly reject public internal link: RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide).
 - Add or explicitly reject public internal link: Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection (/blog/chroma-vector-database-rag-guide).
+- Add or explicitly reject public internal link: RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路 (/blog/rag-retrieval-no-context-debug-guide).
 - Confirm the link anchor is contextual and does not interrupt the tutorial flow.
 
 Risk checks:
@@ -156,9 +156,9 @@ Source checks:
 
 Internal-link fixes:
 
-- Add or explicitly reject public internal link: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).
 - Add or explicitly reject public internal link: Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试 (/blog/pinecone-rag-beginner-guide).
 - Add or explicitly reject public internal link: Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection (/blog/chroma-vector-database-rag-guide).
+- Add or explicitly reject public internal link: RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路 (/blog/rag-retrieval-no-context-debug-guide).
 - Confirm the link anchor is contextual and does not interrupt the tutorial flow.
 
 Risk checks:

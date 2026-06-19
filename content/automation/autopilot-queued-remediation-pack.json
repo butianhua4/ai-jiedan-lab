@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T11:50:06.061Z",
+  "generatedAt": "2026-06-19T16:20:08.467Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "queuedPlaybookGeneratedAt": "2026-06-19T11:50:05.594Z",
+    "queuedPlaybookGeneratedAt": "2026-06-19T16:20:07.994Z",
     "queuedPlaybookGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -60,9 +60,9 @@
         "Publishing remains a separate explicit approval step."
       ],
       "internalLinkFixes": [
-        "Add or explicitly reject public internal link: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).",
         "Add or explicitly reject public internal link: RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide).",
         "Add or explicitly reject public internal link: Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection (/blog/chroma-vector-database-rag-guide).",
+        "Add or explicitly reject public internal link: RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路 (/blog/rag-retrieval-no-context-debug-guide).",
         "Confirm the link anchor is contextual and does not interrupt the tutorial flow."
       ],
       "manualFixReady": true,
@@ -193,9 +193,9 @@
         "Publishing remains a separate explicit approval step."
       ],
       "internalLinkFixes": [
-        "Add or explicitly reject public internal link: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).",
         "Add or explicitly reject public internal link: Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试 (/blog/pinecone-rag-beginner-guide).",
         "Add or explicitly reject public internal link: Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection (/blog/chroma-vector-database-rag-guide).",
+        "Add or explicitly reject public internal link: RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路 (/blog/rag-retrieval-no-context-debug-guide).",
         "Confirm the link anchor is contextual and does not interrupt the tutorial flow."
       ],
       "manualFixReady": true,

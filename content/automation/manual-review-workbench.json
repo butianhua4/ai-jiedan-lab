@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T11:50:11.628Z",
+  "generatedAt": "2026-06-19T16:20:13.954Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -807,10 +807,10 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 240,
+    "filesScanned": 241,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 9126
+    "watchMentions": 9138
   },
   "contentIntegrity": {
     "allIssueItems": 0,
@@ -841,12 +841,8 @@
       {
         "currentInternalLinks": 3,
         "file": "content/blog/supabase-pgvector-rag-guide.mdx",
-        "linksToPublicArticles": 1,
+        "linksToPublicArticles": 2,
         "suggestions": [
-          {
-            "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-            "url": "/blog/qdrant-vector-database-beginner-guide"
-          },
           {
             "title": "Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试",
             "url": "/blog/pinecone-rag-beginner-guide"
@@ -854,6 +850,10 @@
           {
             "title": "Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection",
             "url": "/blog/chroma-vector-database-rag-guide"
+          },
+          {
+            "title": "RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路",
+            "url": "/blog/rag-retrieval-no-context-debug-guide"
           }
         ],
         "title": "Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索"
@@ -861,12 +861,8 @@
       {
         "currentInternalLinks": 3,
         "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
-        "linksToPublicArticles": 0,
+        "linksToPublicArticles": 1,
         "suggestions": [
-          {
-            "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-            "url": "/blog/qdrant-vector-database-beginner-guide"
-          },
           {
             "title": "RAG 知识库怎么搭：文档、切分、检索和回答复核",
             "url": "/blog/rag-knowledge-base-beginner-guide"
@@ -874,6 +870,10 @@
           {
             "title": "Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection",
             "url": "/blog/chroma-vector-database-rag-guide"
+          },
+          {
+            "title": "RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路",
+            "url": "/blog/rag-retrieval-no-context-debug-guide"
           }
         ],
         "title": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界"
@@ -881,7 +881,7 @@
       {
         "currentInternalLinks": 3,
         "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "linksToPublicArticles": 1,
+        "linksToPublicArticles": 2,
         "suggestions": [
           {
             "title": "多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估",

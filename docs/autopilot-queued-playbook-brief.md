@@ -1,6 +1,6 @@
 # Autopilot Queued Playbook Brief
 
-Generated at: 2026-06-19T11:50:05.594Z
+Generated at: 2026-06-19T16:20:07.994Z
 
 This report is read-only. It prepares the queued-for-playbook sprint items for manual review and keeps all status changes human-gated.
 
@@ -86,16 +86,16 @@ Source actions:
 Optimization actions:
 
 - 在开头 200 字内自然回答一次“RAG 向量数据库怎么选”这个搜索意图，先给结论再展开步骤。
-- 在相关段落加入公开内链：Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide)。
+- 在相关段落加入公开内链：RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide)。
 - Add one FAQ or checklist line that uses a high-intent query variant such as: RAG 向量数据库怎么选.
 - Consider reviewed title: RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界
 - Consider reviewed description: 面向准备落地 RAG 向量数据库怎么选 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。
 
 Internal link suggestions:
 
-- Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤: /blog/qdrant-vector-database-beginner-guide
 - RAG 知识库怎么搭：文档、切分、检索和回答复核: /blog/rag-knowledge-base-beginner-guide
 - Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection: /blog/chroma-vector-database-rag-guide
+- RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路: /blog/rag-retrieval-no-context-debug-guide
 
 Risk checklist:
 
@@ -145,9 +145,9 @@ Optimization actions:
 
 Internal link suggestions:
 
-- Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤: /blog/qdrant-vector-database-beginner-guide
 - Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试: /blog/pinecone-rag-beginner-guide
 - Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection: /blog/chroma-vector-database-rag-guide
+- RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路: /blog/rag-retrieval-no-context-debug-guide
 
 Risk checklist:
 

@@ -1,6 +1,6 @@
 # Live Search Surface Check
 
-Generated at: 2026-06-19T15:39:53.065Z
+Generated at: 2026-06-19T16:20:27.393Z
 
 This report checks the live production search surfaces. It does not use Search Console traffic, impressions, or ranking data.
 

@@ -1,6 +1,6 @@
 # Automation Gate
 
-Generated at: 2026-06-19T11:50:51.923Z
+Generated at: 2026-06-19T16:20:37.665Z
 
 Overall: FAIL
 
@@ -39,7 +39,7 @@ Overall: FAIL
 | project status still stops before publishing | PASS | publicPublished=500, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=1 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=240, unsafeClaims=0, watchMentions=9126 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=241, unsafeClaims=0, watchMentions=9138 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
 | content integrity audit mirrors mojibake warnings without blocking | PASS | warnings=0, mojibake=0, publicMojibake=0, remediationAffected=78/52 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=500, recommended=3, wave=3 |
@@ -108,7 +108,7 @@ Overall: FAIL
 | human approval clearance pack is read-only and covers the full approval queue | PASS | items=3, immediate=3, backlog=0, failedSources=0, seo=0 |
 | human approval clearance pack keeps all work human-gated and action-ready | PASS | ready=3, actions=25, sourceDecisions=1, copydesk=2, publishConfirm=0 |
 | review optimization brief is read-only and covers ready action-board tasks | PASS | briefs=2, ready=2, unsafeCommands=0 |
-| review optimization brief has actionable copydesk guidance | PASS | withAction=2, missingPublicLinkItems=1, exactQueryWeak=2 |
+| review optimization brief has actionable copydesk guidance | PASS | withAction=2, missingPublicLinkItems=0, exactQueryWeak=2 |
 | search snippet readiness audit is read-only and covers public plus expansion items | PASS | public=500, expansion=15, scoped=516 |
 | search snippet readiness audit has no blocking Wave 1 issues | PASS | blocking=0, wave=3, waveBlocking=0, warnings=0 |
 | structured data readiness audit is read-only and covers public plus expansion items | PASS | public=500, expansion=15, scoped=516 |

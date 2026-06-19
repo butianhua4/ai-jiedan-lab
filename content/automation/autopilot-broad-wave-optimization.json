@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T11:50:08.287Z",
+  "generatedAt": "2026-06-19T16:20:10.691Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "broadPublishWavesGeneratedAt": "2026-06-19T11:50:07.824Z",
+    "broadPublishWavesGeneratedAt": "2026-06-19T16:20:10.223Z",
     "broadPublishWavesGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -60,7 +60,7 @@
         "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
         "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
         "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
-        "Add one contextual link to the published article \"Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤\" at /blog/qdrant-vector-database-beginner-guide.",
+        "Add one contextual link to the published article \"Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试\" at /blog/pinecone-rag-beginner-guide.",
         "Apply review focus: 把 RAG、微调、提示词模板区分清楚.",
         "Apply review focus: 必须写明引用、来源、权限和失败兜底.",
         "Apply review focus: 不要把 demo 成功写成生产质量保证.",
@@ -82,12 +82,12 @@
       },
       "file": "content/blog/supabase-pgvector-rag-guide.mdx",
       "publicLinkSuggestion": {
-        "file": "content/blog/qdrant-vector-database-beginner-guide.mdx",
-        "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, ai, 基建, 向量数据库, 语义搜索, 向量",
-        "score": 114,
-        "slug": "qdrant-vector-database-beginner-guide",
-        "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-        "url": "/blog/qdrant-vector-database-beginner-guide"
+        "file": "content/blog/pinecone-rag-beginner-guide.mdx",
+        "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, 怎么开始, ai, 基建, 向量数据库, metadata",
+        "score": 110,
+        "slug": "pinecone-rag-beginner-guide",
+        "title": "Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试",
+        "url": "/blog/pinecone-rag-beginner-guide"
       },
       "readyForHumanOptimizationReview": true,
       "safeDraft": true,
@@ -426,7 +426,7 @@
         "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
         "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
         "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
-        "Add one contextual link to the published article \"Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤\" at /blog/qdrant-vector-database-beginner-guide.",
+        "Add one contextual link to the published article \"RAG 知识库怎么搭：文档、切分、检索和回答复核\" at /blog/rag-knowledge-base-beginner-guide.",
         "Apply review focus: 把 RAG、微调、提示词模板区分清楚.",
         "Apply review focus: 必须写明引用、来源、权限和失败兜底.",
         "Apply review focus: 不要把 demo 成功写成生产质量保证.",
@@ -448,12 +448,12 @@
       },
       "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
       "publicLinkSuggestion": {
-        "file": "content/blog/qdrant-vector-database-beginner-guide.mdx",
-        "reason": "same category: AI 基建; shared tags: 向量数据库, RAG, Qdrant; keyword overlap: rag, qdrant, ai, 基建, 向量数据库, 过滤",
-        "score": 118,
-        "slug": "qdrant-vector-database-beginner-guide",
-        "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-        "url": "/blog/qdrant-vector-database-beginner-guide"
+        "file": "content/blog/rag-knowledge-base-beginner-guide.mdx",
+        "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数",
+        "score": 106,
+        "slug": "rag-knowledge-base-beginner-guide",
+        "title": "RAG 知识库怎么搭：文档、切分、检索和回答复核",
+        "url": "/blog/rag-knowledge-base-beginner-guide"
       },
       "readyForHumanOptimizationReview": true,
       "safeDraft": true,
@@ -481,7 +481,6 @@
       "unsafeReasons": [],
       "warningRemediation": [
         "Meta description is short; rewrite it before approval.",
-        "No current link to published articles; add one approved contextual public link.",
         "Freshness risk is high; all implementation-sensitive claims need current source checks."
       ],
       "wave": 3
@@ -534,7 +533,7 @@
         "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
         "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
         "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
-        "Add one contextual link to the published article \"Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤\" at /blog/qdrant-vector-database-beginner-guide.",
+        "Add one contextual link to the published article \"Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试\" at /blog/pinecone-rag-beginner-guide.",
         "Apply review focus: 把 RAG、微调、提示词模板区分清楚.",
         "Apply review focus: 必须写明引用、来源、权限和失败兜底.",
         "Apply review focus: 不要把 demo 成功写成生产质量保证.",
@@ -556,12 +555,12 @@
       },
       "file": "content/blog/supabase-pgvector-rag-guide.mdx",
       "publicLinkSuggestion": {
-        "file": "content/blog/qdrant-vector-database-beginner-guide.mdx",
-        "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, ai, 基建, 向量数据库, 语义搜索, 向量",
-        "score": 114,
-        "slug": "qdrant-vector-database-beginner-guide",
-        "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-        "url": "/blog/qdrant-vector-database-beginner-guide"
+        "file": "content/blog/pinecone-rag-beginner-guide.mdx",
+        "reason": "same category: AI 基建; shared tags: RAG, 向量数据库; keyword overlap: rag, 怎么开始, ai, 基建, 向量数据库, metadata",
+        "score": 110,
+        "slug": "pinecone-rag-beginner-guide",
+        "title": "Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试",
+        "url": "/blog/pinecone-rag-beginner-guide"
       },
       "readyForHumanOptimizationReview": true,
       "safeDraft": true,
@@ -900,7 +899,7 @@
         "Confirm every fast-changing model, SDK, API, deployment, pricing, and version claim against current official sources.",
         "Remove unsupported traffic, ranking, revenue, benchmark, or guaranteed-outcome language.",
         "Keep human review, rollback, logging, cost, privacy, and failure-handling boundaries explicit.",
-        "Add one contextual link to the published article \"Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤\" at /blog/qdrant-vector-database-beginner-guide.",
+        "Add one contextual link to the published article \"RAG 知识库怎么搭：文档、切分、检索和回答复核\" at /blog/rag-knowledge-base-beginner-guide.",
         "Apply review focus: 把 RAG、微调、提示词模板区分清楚.",
         "Apply review focus: 必须写明引用、来源、权限和失败兜底.",
         "Apply review focus: 不要把 demo 成功写成生产质量保证.",
@@ -922,12 +921,12 @@
       },
       "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
       "publicLinkSuggestion": {
-        "file": "content/blog/qdrant-vector-database-beginner-guide.mdx",
-        "reason": "same category: AI 基建; shared tags: 向量数据库, RAG, Qdrant; keyword overlap: rag, qdrant, ai, 基建, 向量数据库, 过滤",
-        "score": 118,
-        "slug": "qdrant-vector-database-beginner-guide",
-        "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-        "url": "/blog/qdrant-vector-database-beginner-guide"
+        "file": "content/blog/rag-knowledge-base-beginner-guide.mdx",
+        "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数",
+        "score": 106,
+        "slug": "rag-knowledge-base-beginner-guide",
+        "title": "RAG 知识库怎么搭：文档、切分、检索和回答复核",
+        "url": "/blog/rag-knowledge-base-beginner-guide"
       },
       "readyForHumanOptimizationReview": true,
       "safeDraft": true,
@@ -955,7 +954,6 @@
       "unsafeReasons": [],
       "warningRemediation": [
         "Meta description is short; rewrite it before approval.",
-        "No current link to published articles; add one approved contextual public link.",
         "Freshness risk is high; all implementation-sensitive claims need current source checks."
       ],
       "wave": 3

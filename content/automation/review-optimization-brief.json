@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T11:49:53.186Z",
+  "generatedAt": "2026-06-19T16:19:55.669Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -29,7 +29,7 @@
     "briefs": 2,
     "briefsWithAction": 2,
     "exactQueryWeakItems": 2,
-    "missingPublicLinkItems": 1,
+    "missingPublicLinkItems": 0,
     "readyBriefs": 2,
     "unsafeCommands": 0
   },
@@ -37,17 +37,17 @@
     {
       "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
       "internalLink": {
-        "currentPublicLinks": 0,
-        "reason": "same category: AI 基建; shared tags: 向量数据库, RAG, Qdrant; keyword overlap: rag, qdrant, ai, 基建, 向量数据库, 过滤",
-        "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-        "url": "/blog/qdrant-vector-database-beginner-guide"
+        "currentPublicLinks": 1,
+        "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数",
+        "title": "RAG 知识库怎么搭：文档、切分、检索和回答复核",
+        "url": "/blog/rag-knowledge-base-beginner-guide"
       },
       "kind": "wave-approval",
       "priority": 1010,
       "proposedDescription": "面向准备落地 RAG 向量数据库怎么选 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
       "proposedOpeningAdditions": [
         "在开头 200 字内自然回答一次“RAG 向量数据库怎么选”这个搜索意图，先给结论再展开步骤。",
-        "在相关段落加入公开内链：Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide)。"
+        "在相关段落加入公开内链：RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide)。"
       ],
       "proposedTitle": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
       "ready": true,
@@ -71,7 +71,7 @@
     {
       "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
       "internalLink": {
-        "currentPublicLinks": 1,
+        "currentPublicLinks": 2,
         "reason": "same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做",
         "title": "多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估",
         "url": "/blog/multi-model-router-fallback-guide"
@@ -107,17 +107,17 @@
     {
       "file": "content/blog/vector-database-selection-for-rag-guide.mdx",
       "internalLink": {
-        "currentPublicLinks": 0,
-        "reason": "same category: AI 基建; shared tags: 向量数据库, RAG, Qdrant; keyword overlap: rag, qdrant, ai, 基建, 向量数据库, 过滤",
-        "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-        "url": "/blog/qdrant-vector-database-beginner-guide"
+        "currentPublicLinks": 1,
+        "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数",
+        "title": "RAG 知识库怎么搭：文档、切分、检索和回答复核",
+        "url": "/blog/rag-knowledge-base-beginner-guide"
       },
       "kind": "wave-approval",
       "priority": 1010,
       "proposedDescription": "面向准备落地 RAG 向量数据库怎么选 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。",
       "proposedOpeningAdditions": [
         "在开头 200 字内自然回答一次“RAG 向量数据库怎么选”这个搜索意图，先给结论再展开步骤。",
-        "在相关段落加入公开内链：Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide)。"
+        "在相关段落加入公开内链：RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide)。"
       ],
       "proposedTitle": "RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界",
       "ready": true,
@@ -141,7 +141,7 @@
     {
       "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
       "internalLink": {
-        "currentPublicLinks": 1,
+        "currentPublicLinks": 2,
         "reason": "same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做",
         "title": "多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估",
         "url": "/blog/multi-model-router-fallback-guide"

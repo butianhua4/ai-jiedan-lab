@@ -1,6 +1,6 @@
 # Autopilot Internal Link Brief
 
-Generated at: 2026-06-19T11:50:00.485Z
+Generated at: 2026-06-19T16:20:02.929Z
 
 This report is read-only. It packages public internal-link suggestions for the top autopilot approval packet items.
 
@@ -43,7 +43,7 @@ This report is read-only. It packages public internal-link suggestions for the t
 
 | Ready | Safe | Current links | Public links | Suggestions | Title | File |
 | --- | --- | --- | --- | --- | --- | --- |
-| true | true | 3 | 1 | 5 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| true | true | 3 | 2 | 5 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 | true | true | 5 | 4 | 5 | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
 | true | true | 2 | 0 | 5 | Vercel 部署成功但页面 404：新手排查顺序 | content/blog/vercel-404-after-deploy.mdx |
 
@@ -52,7 +52,7 @@ This report is read-only. It packages public internal-link suggestions for the t
 ### Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级
 
 - File: content/blog/vercel-ai-gateway-multi-provider-guide.mdx
-- Existing public article links: 1
+- Existing public article links: 2
 
 Human review focus:
 

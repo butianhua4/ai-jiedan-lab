@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T11:50:51.923Z",
+  "generatedAt": "2026-06-19T16:20:37.665Z",
   "ok": false,
   "summary": {
     "checks": 197,
@@ -381,7 +381,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=240, unsafeClaims=0, watchMentions=9126"
+      "detail": "filesScanned=241, unsafeClaims=0, watchMentions=9138"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -726,7 +726,7 @@
     {
       "name": "review optimization brief has actionable copydesk guidance",
       "ok": true,
-      "detail": "withAction=2, missingPublicLinkItems=1, exactQueryWeak=2"
+      "detail": "withAction=2, missingPublicLinkItems=0, exactQueryWeak=2"
     },
     {
       "name": "search snippet readiness audit is read-only and covers public plus expansion items",

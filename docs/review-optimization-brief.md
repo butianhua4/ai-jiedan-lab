@@ -1,6 +1,6 @@
 # Review Optimization Brief
 
-Generated at: 2026-06-19T11:49:53.186Z
+Generated at: 2026-06-19T16:19:55.669Z
 
 This report is read-only. It converts review warnings into copydesk suggestions for human review.
 
@@ -22,7 +22,7 @@ This report is read-only. It converts review warnings into copydesk suggestions 
 - briefs: 2
 - briefsWithAction: 2
 - exactQueryWeakItems: 2
-- missingPublicLinkItems: 1
+- missingPublicLinkItems: 0
 - readyBriefs: 2
 - unsafeCommands: 0
 
@@ -30,14 +30,14 @@ This report is read-only. It converts review warnings into copydesk suggestions 
 
 | Priority | Scope | Actions | Exact queries | Link | Proposed title | File |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1010 | wave-1 | 3 | 0 | /blog/qdrant-vector-database-beginner-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| 1010 | wave-1 | 3 | 0 | /blog/rag-knowledge-base-beginner-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
 | 1002 | wave-2 | 3 | 0 | /blog/multi-model-router-fallback-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 
 ## All Briefs
 
 | Priority | Scope | Actions | Exact queries | Link | Proposed title | File |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1010 | wave-1 | 3 | 0 | /blog/qdrant-vector-database-beginner-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| 1010 | wave-1 | 3 | 0 | /blog/rag-knowledge-base-beginner-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
 | 1002 | wave-2 | 3 | 0 | /blog/multi-model-router-fallback-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 
 ## Per-Article Suggestions
@@ -49,12 +49,12 @@ This report is read-only. It converts review warnings into copydesk suggestions 
 - Proposed title: RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界
 - Proposed description: 面向准备落地 RAG 向量数据库怎么选 的团队，梳理判断标准、实施步骤、风险边界、验收清单和发布前人工审核重点。
 - Search evidence: exact=0, families=7, titleHit=true, descriptionHit=true
-- Internal link: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide)
+- Internal link: RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide)
 
 Opening additions:
 
 - 在开头 200 字内自然回答一次“RAG 向量数据库怎么选”这个搜索意图，先给结论再展开步骤。
-- 在相关段落加入公开内链：Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide)。
+- 在相关段落加入公开内链：RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide)。
 
 Warning remediation:
 

@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-19T11:50:52.412Z
+Generated at: 2026-06-19T16:20:38.131Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -261,7 +261,7 @@ This digest is read-only. It summarizes automation reports and does not publish 
 - Waves: 4
 - Items per wave: 4
 - Ready for internal link sprint: 16
-- Candidates without current public links: 10
+- Candidates without current public links: 9
 - Suggested public links: 48
 - Action items: 128
 - Publish confirm commands included: 0
@@ -277,9 +277,9 @@ This digest is read-only. It summarizes automation reports and does not publish 
 
 | Wave | Ready | Score | Public links | Suggestions | Scopes | Top target | Title | File |
 | ---: | --- | ---: | ---: | ---: | --- | --- | --- | --- |
-| 1 | true | 248 | 0 | 3 | expansion, recommended, wave-1 | /blog/qdrant-vector-database-beginner-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| 1 | true | 208 | 1 | 3 | expansion, recommended, wave-1 | /blog/multi-model-router-fallback-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| 1 | true | 148 | 1 | 3 | expansion, wave-1 | /blog/qdrant-vector-database-beginner-guide | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
+| 1 | true | 208 | 1 | 3 | expansion, recommended, wave-1 | /blog/rag-knowledge-base-beginner-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| 1 | true | 208 | 2 | 3 | expansion, recommended, wave-1 | /blog/multi-model-router-fallback-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| 1 | true | 148 | 2 | 3 | expansion, wave-1 | /blog/pinecone-rag-beginner-guide | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
 | 1 | true | 143 | 0 | 3 | recommended | /blog/ai-small-project-practice-topics | AI 工具新手不应该先买哪些工具 | content/blog/tools-not-to-buy-first.mdx |
 | 2 | true | 111 | 0 | 3 | expansion | /blog/permission-denied-fix-freelance-scope | Vercel 404 部署成功但页面打不开怎么办：使用前怎么判断是否适合 | content/blog/vercel-404-after-deploy-freelance-scope.mdx |
 | 2 | true | 111 | 0 | 3 | expansion | /blog/permission-denied-fix-checklist | Windows 路径和权限导致安装失败怎么办：新手检查清单 | content/blog/windows-path-permission-install-fix-checklist.mdx |
@@ -386,7 +386,7 @@ Unsafe source replacement decisions:
 
 Unsafe tasks:
 
-- {"actionItems":["Read the article end to end and confirm the opening answer matches search intent.","Open 7 official source target(s) and verify fast-changing claims.","Run through 5 risk review checks.","Choose or reject public internal link suggestion: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).","Confirm snippet and structured-data checks remain clean."],"blockers":["missing publish readiness pack item"],"commandBoundary":{"markReviewAfterHumanApproval":"npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx --confirm-human","publishDryRunAfterReview":"npm run publish:articles -- --file=content/blog/supabase-pgvector-rag-guide.mdx","publishConfirm":"not-included","stopBefore":"Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."},"file":"content/blog/supabase-pgvector-rag-guide.mdx","kind":"wave-approval","priority":987,"ready":false,"scope":"wave-3","sourceTargets":7,"title":"Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索","warnings":[]}
+- {"actionItems":["Read the article end to end and confirm the opening answer matches search intent.","Open 7 official source target(s) and verify fast-changing claims.","Run through 5 risk review checks.","Choose or reject public internal link suggestion: Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试 (/blog/pinecone-rag-beginner-guide).","Confirm snippet and structured-data checks remain clean."],"blockers":["missing publish readiness pack item"],"commandBoundary":{"markReviewAfterHumanApproval":"npm run mark:review -- --file=content/blog/supabase-pgvector-rag-guide.mdx --confirm-human","publishDryRunAfterReview":"npm run publish:articles -- --file=content/blog/supabase-pgvector-rag-guide.mdx","publishConfirm":"not-included","stopBefore":"Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."},"file":"content/blog/supabase-pgvector-rag-guide.mdx","kind":"wave-approval","priority":987,"ready":false,"scope":"wave-3","sourceTargets":7,"title":"Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索","warnings":[]}
 
 | Ready | Priority | Kind | Scope | Sources | Warnings | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -505,7 +505,7 @@ Unsafe internal-link items:
 
 | Ready | Safe | Current links | Public links | Suggestions | First suggestion | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | true | 3 | 1 | 5 | /blog/multi-model-router-fallback-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| true | true | 3 | 2 | 5 | /blog/multi-model-router-fallback-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 | true | true | 5 | 4 | 5 | /blog/openrouter-api-beginner-guide | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
 | true | true | 2 | 0 | 5 | /blog/nextjs-hydration-error-debug-freelance-scope | Vercel 部署成功但页面 404：新手排查顺序 | content/blog/vercel-404-after-deploy.mdx |
 
@@ -888,13 +888,13 @@ Unsafe broad wave optimization items:
 
 | Wave | Ready | Link | H2 | Description | Actions | Warnings | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | true | /blog/qdrant-vector-database-beginner-guide | 12 | 83 | 15 | 1 | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
+| 1 | true | /blog/pinecone-rag-beginner-guide | 12 | 83 | 15 | 1 | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
 | 1 | true | /blog/local-llm-deployment-beginner | 11 | 79 | 15 | 2 | TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收 | content/blog/tensorrt-llm-beginner-guide.mdx |
 | 1 | true | missing | 9 | 70 | 15 | 1 | Vercel build failed 排查清单：从日志到重新部署 | content/blog/vercel-build-failed-causes-checklist.mdx |
 | 2 | true | /blog/openrouter-api-beginner-guide | 11 | 87 | 15 | 1 | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
 | 2 | true | /blog/local-llm-deployment-beginner | 9 | 57 | 15 | 2 | vLLM 部署适合什么场景：新手先看推理服务边界 | content/blog/vllm-deployment-beginner-guide.mdx |
 | 2 | true | missing | 10 | 56 | 15 | 2 | 向量数据库怎么选：新手先理解 embedding 和检索 | content/blog/vector-database-beginner-guide.mdx |
-| 3 | true | /blog/qdrant-vector-database-beginner-guide | 10 | 71 | 15 | 3 | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| 3 | true | /blog/rag-knowledge-base-beginner-guide | 10 | 71 | 15 | 2 | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
 
 ## Autopilot Broad Wave Remediation Pack
 
@@ -931,7 +931,7 @@ Unsafe broad wave remediation items:
 | 2 | true | 5 | 12 | 8 | 3 | 1 | 1 | 5 | true | not-included | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
 | 2 | true | 5 | 12 | 11 | 3 | 1 | 2 | 6 | true | not-included | vLLM 部署适合什么场景：新手先看推理服务边界 | content/blog/vllm-deployment-beginner-guide.mdx |
 | 2 | true | 5 | 12 | 4 | 6 | 4 | 2 | 6 | true | not-included | 向量数据库怎么选：新手先理解 embedding 和检索 | content/blog/vector-database-beginner-guide.mdx |
-| 3 | true | 5 | 12 | 12 | 3 | 1 | 3 | 7 | true | not-included | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| 3 | true | 5 | 12 | 12 | 3 | 1 | 2 | 6 | true | not-included | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
 
 ## Broad First Coverage Launch Pack
 
@@ -1085,12 +1085,12 @@ Unsafe first coverage launch items:
 - Ready briefs: 2
 - Briefs with action: 2
 - Exact-query weak items: 2
-- Missing public-link items: 1
+- Missing public-link items: 0
 - Unsafe commands: 0
 
 | Priority | Scope | Exact queries | Link | Proposed title | File |
 | --- | --- | --- | --- | --- | --- |
-| 1010 | wave-1 | 0 | /blog/qdrant-vector-database-beginner-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
+| 1010 | wave-1 | 0 | /blog/rag-knowledge-base-beginner-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
 | 1002 | wave-2 | 0 | /blog/multi-model-router-fallback-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 
 ## Review Cannibalization Brief
@@ -1305,8 +1305,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 240
-- Traffic claim watch mentions: 9126
+- Traffic claim files scanned: 241
+- Traffic claim watch mentions: 9138
 
 ## Public Surface Inventory
 
@@ -2898,7 +2898,7 @@ Public categories:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-19T11:50:41.799Z
+- Latest check: 2026-06-19T16:20:27.393Z
 - Ok: true
 - Public articles checked: 500
 - Sitemap URLs: undefined

@@ -1,6 +1,6 @@
 # Human Approval Clearance Pack
 
-Generated at: 2026-06-19T11:50:10.670Z
+Generated at: 2026-06-19T16:20:13.013Z
 
 This report is read-only. It consolidates the source, SEO, copydesk, and link checks needed before a human reviewer approves any mark:review action.
 
@@ -67,7 +67,7 @@ This report is read-only. It consolidates the source, SEO, copydesk, and link ch
 - Confirm the draft still answers one clear search intent.
 - Verify source-backed claims before any status change.
 - Keep status=draft, noindex=true, and humanReviewRequired=true until approval.
-- Review public internal link suggestion: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).
+- Review public internal link suggestion: RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide).
 - Review proposed meta description from copydesk brief before approval.
 - Check that popular prompt lane framing stays broad enough for real search demand.
 - Check that mass-search theme framing is covered without stuffing keywords.

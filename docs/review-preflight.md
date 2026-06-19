@@ -1,6 +1,6 @@
 # Review Candidate Preflight
 
-Generated at: 2026-06-19T11:49:23.494Z
+Generated at: 2026-06-19T16:19:26.167Z
 
 Overall: PASS
 

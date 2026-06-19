@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T11:49:41.650Z",
+  "generatedAt": "2026-06-19T16:19:43.860Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,7 +10,7 @@
     "stopBefore": "All commands are manual-only and require explicit human approval."
   },
   "sourceEvidence": {
-    "intakeGeneratedAt": "2026-06-19T11:49:41.182Z",
+    "intakeGeneratedAt": "2026-06-19T16:19:43.390Z",
     "intakeGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -473,7 +473,7 @@
         "Check the article directly answers the primary search phrase: RAG knowledge base tutorial.",
         "Remove or rewrite any unsupported traffic, ranking, revenue, benchmark, cost, latency, or stability claims.",
         "Confirm all commands, credentials, API keys, and customer data examples are safe.",
-        "Approve or replace internal link suggestion: Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide).",
+        "Approve or replace internal link suggestion: RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide).",
         "Only after explicit human approval, run: npm run mark:review -- --file=content/blog/vector-database-selection-for-rag-guide.mdx --confirm-human",
         "Publishing remains separate and requires explicit approval."
       ],
@@ -492,12 +492,12 @@
       ],
       "priorityScore": 438,
       "publicInternalLinkSuggestion": {
-        "file": "content/blog/qdrant-vector-database-beginner-guide.mdx",
-        "reason": "same category: AI 基建; shared tags: 向量数据库, RAG, Qdrant; keyword overlap: rag, qdrant, ai, 基建, 向量数据库, 过滤",
-        "score": 118,
-        "slug": "qdrant-vector-database-beginner-guide",
-        "title": "Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤",
-        "url": "/blog/qdrant-vector-database-beginner-guide"
+        "file": "content/blog/rag-knowledge-base-beginner-guide.mdx",
+        "reason": "same category: AI 基建; shared tags: 向量数据库, RAG; keyword overlap: rag, ai, 基建, 向量数据库, 向量, 量数",
+        "score": 106,
+        "slug": "rag-knowledge-base-beginner-guide",
+        "title": "RAG 知识库怎么搭：文档、切分、检索和回答复核",
+        "url": "/blog/rag-knowledge-base-beginner-guide"
       },
       "publicMatches": 30,
       "readyForHumanReview": true,
