@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T06:42:09.125Z",
+  "generatedAt": "2026-06-19T09:08:43.615Z",
   "guardrails": {
     "submitByDefault": false,
     "note": "IndexNow is for Bing and other participating search engines. Google does not use IndexNow for normal q/blog pages."
@@ -8,13 +8,13 @@
   "liveKey": {
     "ok": true,
     "status": 200,
-    "url": "https://ai.aporet.com/indexnow-4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt",
+    "url": "https://ai.aporet.com/4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt",
     "valueMatches": true
   },
   "payload": {
     "host": "ai.aporet.com",
     "key": "4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e",
-    "keyLocation": "https://ai.aporet.com/indexnow-4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt",
+    "keyLocation": "https://ai.aporet.com/4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt",
     "urlList": [
       "https://ai.aporet.com/en",
       "https://ai.aporet.com/cluster/ai-tools",
@@ -523,7 +523,7 @@
     "status": 200,
     "statusText": "OK"
   },
-  "submissionAttemptedThisRun": false,
+  "submissionAttemptedThisRun": true,
   "summary": {
     "growthStage": "warming",
     "totalPages": 1006,
@@ -538,7 +538,6 @@
     "graphEdges": 9572
   },
   "nextActions": [
-    "Key file is live. Keep report generation automated.",
-    "Use --submit only after Bing Webmaster Tools is registered and the daily URL batch is reviewed."
+    "Submission attempted. Check the submission status field and Bing Webmaster Tools after processing delay."
   ]
 }

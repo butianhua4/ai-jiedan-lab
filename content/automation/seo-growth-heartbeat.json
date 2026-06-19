@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T02:08:24.628Z",
+  "generatedAt": "2026-06-19T09:09:29.365Z",
   "guardrails": {
     "fakeTrafficClaims": false,
     "fakeRevenueClaims": false,
@@ -35,8 +35,8 @@
       "ok": true,
       "status": 200,
       "url": "https://ai.aporet.com/",
-      "cache": "HIT",
-      "age": "1131",
+      "cache": "PRERENDER",
+      "age": "0",
       "contains": {
         "500": true,
         "AI 工具指南": true,
@@ -47,8 +47,8 @@
       "ok": true,
       "status": 200,
       "url": "https://ai.aporet.com/blog",
-      "cache": "HIT",
-      "age": "1119",
+      "cache": "PRERENDER",
+      "age": "0",
       "contains": {
         "500": true,
         "新手教程": true,
@@ -59,8 +59,8 @@
       "ok": true,
       "status": 200,
       "url": "https://ai.aporet.com/q",
-      "cache": "HIT",
-      "age": "1168",
+      "cache": "PRERENDER",
+      "age": "0",
       "contains": {
         "Question Layer": true,
         "/q/codex": true
@@ -71,7 +71,7 @@
       "status": 200,
       "url": "https://ai.aporet.com/sitemap.xml",
       "cache": "HIT",
-      "age": "1168",
+      "age": "0",
       "contains": {
         "<sitemapindex": true
       }
@@ -80,8 +80,8 @@
       "ok": true,
       "status": 200,
       "url": "https://ai.aporet.com/sitemap-blog.xml",
-      "cache": "HIT",
-      "age": "1119",
+      "cache": "PRERENDER",
+      "age": "0",
       "contains": {
         "<urlset": true
       },
@@ -91,8 +91,8 @@
       "ok": true,
       "status": 200,
       "url": "https://ai.aporet.com/sitemap-q.xml",
-      "cache": "HIT",
-      "age": "1119",
+      "cache": "PRERENDER",
+      "age": "0",
       "contains": {
         "<urlset": true
       },
@@ -102,8 +102,8 @@
       "ok": true,
       "status": 200,
       "url": "https://ai.aporet.com/sitemap-cluster.xml",
-      "cache": "HIT",
-      "age": "1118",
+      "cache": "PRERENDER",
+      "age": "0",
       "contains": {
         "<urlset": true
       },
@@ -114,7 +114,7 @@
       "status": 200,
       "url": "https://ai.aporet.com/robots.txt",
       "cache": "HIT",
-      "age": "1118",
+      "age": "0",
       "contains": {
         "Sitemap": true,
         "Allow": true
@@ -134,9 +134,9 @@
     "indexNowKey": {
       "ok": true,
       "status": 200,
-      "url": "https://ai.aporet.com/indexnow-4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt",
+      "url": "https://ai.aporet.com/4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt",
       "cache": "HIT",
-      "age": "1141",
+      "age": "78",
       "contains": {
         "4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e": true
       }
@@ -144,14 +144,13 @@
   },
   "vercel": {
     "repository": "butianhua4/ai-jiedan-lab",
-    "sha": "f406c0b9059d9d7b72cf057e2b7c0d9b3c4d0220",
-    "state": "pending",
-    "description": "Vercel is deploying your app",
-    "targetUrl": "https://vercel.com/ip-studio-s-projects/ai-jiedan-lab/HqJHEpZGC2yNxm7334aE3U9KCU6a"
+    "sha": "0487280da58201abf535deb7e3c0a9073db06d62",
+    "state": "success",
+    "description": "Deployment has completed",
+    "targetUrl": "https://vercel.com/ip-studio-s-projects/ai-jiedan-lab/J5LzCyU9pEVffbvskyKzLCeeSR5P"
   },
   "problems": [],
   "nextActions": [
-    "Monitor the Vercel deployment URL, but keep SEO work moving while live probes remain healthy.",
     "In GSC, resubmit /sitemap.xml when a deployment changes q, cluster, or sitemap structure.",
     "Manually request indexing for 15-30 priority URLs from docs/gsc-indexing-priority.md when GSC allows it; do not submit all 500 pages.",
     "Prioritize exact problem-entry pages: Codex errors, Vercel failures, GitHub Actions failures, Agent deployment, RAG memory, API key and rate limits.",

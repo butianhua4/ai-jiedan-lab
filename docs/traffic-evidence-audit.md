@@ -1,6 +1,6 @@
 # Traffic Evidence Audit
 
-Generated at: 2026-06-19T06:42:04.594Z
+Generated at: 2026-06-19T09:09:20.433Z
 
 This report separates live-site health from measured traffic. It does not claim visits, clicks, impressions, rankings, or revenue.
 
@@ -40,7 +40,7 @@ Live HTML:
 
 - attempts: 1
 - fetched: true
-- googleAnalyticsSnippet: false
+- googleAnalyticsSnippet: true
 - googleSiteVerificationMeta: false
 - status: 200
 - vercelAnalyticsSnippet: false

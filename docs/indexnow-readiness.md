@@ -1,6 +1,6 @@
 # IndexNow Readiness
 
-Generated at: 2026-06-19T06:42:09.125Z
+Generated at: 2026-06-19T09:08:43.615Z
 
 ## Guardrails
 
@@ -10,10 +10,10 @@ Generated at: 2026-06-19T06:42:09.125Z
 ## Status
 
 - Ready: true
-- Key URL: https://ai.aporet.com/indexnow-4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt
+- Key URL: https://ai.aporet.com/4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt
 - Key HTTP status: 200
 - Key matches: true
-- Submission attempted this run: false
+- Submission attempted this run: true
 - Last submission recorded: true
 - Submission ok: true
 
@@ -28,7 +28,7 @@ Generated at: 2026-06-19T06:42:09.125Z
 ## Payload
 
 - Host: ai.aporet.com
-- Key location: https://ai.aporet.com/indexnow-4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt
+- Key location: https://ai.aporet.com/4d7b5e9c9f2a4c7c8e7d2a6b3c1f0a9e.txt
 - URLs: 500
 
 1. https://ai.aporet.com/en
@@ -534,5 +534,4 @@ Generated at: 2026-06-19T06:42:09.125Z
 
 ## Next Actions
 
-- Key file is live. Keep report generation automated.
-- Use --submit only after Bing Webmaster Tools is registered and the daily URL batch is reviewed.
+- Submission attempted. Check the submission status field and Bing Webmaster Tools after processing delay.
