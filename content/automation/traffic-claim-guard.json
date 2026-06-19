@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T06:42:06.386Z",
+  "generatedAt": "2026-06-19T09:13:04.708Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
@@ -41,30 +41,6 @@
       "line": 51,
       "reason": "traffic-related mention",
       "text": "\"- The site does not claim real traffic, impressions, income guarantees, or automatic publishing.\","
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 24,
-      "reason": "traffic-related mention",
-      "text": "## 4. 收款和流量收益"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 29,
-      "reason": "traffic-related mention",
-      "text": "- 稳定流量后再接联盟链接和广告。"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 46,
-      "reason": "traffic-related mention",
-      "text": "- 有 5 篇以上人工审核公开文章：注册 Google Search Console。"
-    },
-    {
-      "file": "docs/NEXT_ACTIONS.md",
-      "line": 47,
-      "reason": "traffic-related mention",
-      "text": "- 有稳定访问：开启 Vercel Web Analytics 或 Google Analytics。"
     },
     {
       "file": "docs/ai-deployment-coverage.md",
@@ -388,7 +364,7 @@
       "file": "docs/automation-digest.md",
       "line": 1309,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 9121"
+      "text": "- Traffic claim watch mentions: 9126"
     },
     {
       "file": "docs/automation-digest.md",
@@ -489,6 +465,30 @@
     {
       "file": "docs/automation-digest.md",
       "line": 2428,
+      "reason": "traffic-related mention",
+      "text": "- Traffic data available: false"
+    },
+    {
+      "file": "docs/automation-digest.md",
+      "line": 2462,
+      "reason": "traffic-related mention",
+      "text": "- Traffic data available: false"
+    },
+    {
+      "file": "docs/automation-digest.md",
+      "line": 2519,
+      "reason": "traffic-related mention",
+      "text": "- Traffic data available: false"
+    },
+    {
+      "file": "docs/automation-digest.md",
+      "line": 2548,
+      "reason": "traffic-related mention",
+      "text": "- Traffic data available: false"
+    },
+    {
+      "file": "docs/automation-digest.md",
+      "line": 2581,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     }
