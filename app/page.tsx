@@ -7,7 +7,7 @@ import { site } from "@/data/site";
 import { templates } from "@/data/templates";
 import { tools } from "@/data/tools";
 import { getAllPosts } from "@/lib/blog";
-import { getClusterPath, getHighPotentialQuestionPosts, getQuestionPath, seoClusters } from "@/lib/seo-graph";
+import { getClusterPath, getHighPotentialQuestionPosts, getQuestionName, getQuestionPath, getSeoClusters, seoClusters } from "@/lib/seo-graph";
 
 export const metadata: Metadata = {
   title: site.name,
@@ -155,7 +155,7 @@ export default function Home() {
           <Link href="/blog" className="text-sm font-medium text-brand">查看全部教程</Link>
         </div>
         <div className="mt-5 grid gap-4 md:grid-cols-3">
-          {seoClusters.map((cluster) => (
+          {getSeoClusters().map((cluster) => (
             <Link key={cluster.slug} href={getClusterPath(cluster.slug)} className="rounded-lg border border-gray-200 bg-white p-5 shadow-sm transition hover:border-brand/50 hover:shadow-md">
               <p className="text-sm font-medium text-brand">Topic Cluster</p>
               <h3 className="mt-2 break-words text-lg font-semibold text-ink">{cluster.shortTitle}</h3>
@@ -178,7 +178,7 @@ export default function Home() {
         <div className="mt-5 grid gap-3 md:grid-cols-2">
           {priorityQuestions.map((post) => (
             <Link key={post.slug} href={getQuestionPath(post)} className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition hover:border-brand/50 hover:shadow-md">
-              <h3 className="break-words text-base font-semibold leading-6 text-ink">{post.title}</h3>
+              <h3 className="break-words text-base font-semibold leading-6 text-ink">{getQuestionName(post)}</h3>
               <p className="mt-2 text-sm leading-6 text-gray-600">{post.description}</p>
             </Link>
           ))}

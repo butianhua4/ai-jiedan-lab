@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { site } from "@/data/site";
-import { getBlogPath, getClusterForPost, getClusterPath, getPublishedSeoPosts, getQuestionPath, getRelatedQuestions } from "@/lib/seo-graph";
+import { getBlogPath, getClusterForPost, getClusterPath, getPublishedSeoPosts, getQuestionName, getQuestionPath, getRelatedQuestions } from "@/lib/seo-graph";
 
 export function generateStaticParams() {
   return getPublishedSeoPosts().map((post) => ({
@@ -17,8 +17,9 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   const post = findQuestionPost(category, slug);
   if (!post) return {};
 
-  const title = `${post.title}: quick fix, steps, and related guide`;
-  const description = `Fix ${post.title} with a short answer, practical steps, commands when available, risk notes, and a deeper guide.`;
+  const questionName = getQuestionName(post);
+  const title = `${questionName}: quick fix, steps, and deep guide`;
+  const description = `Troubleshoot ${questionName.toLowerCase()} with a short answer, practical steps, commands when available, risk notes, and a deeper guide.`;
 
   return {
     title,
@@ -40,6 +41,7 @@ export default async function QuestionPage({ params }: { params: Promise<{ categ
   if (!post) notFound();
 
   const cluster = getClusterForPost(post);
+  const questionName = getQuestionName(post);
   const relatedQuestions = getRelatedQuestions(post, 8);
   const code = extractFirstCodeFence(post.content);
   const steps = extractSteps(post.content);
@@ -57,12 +59,12 @@ export default async function QuestionPage({ params }: { params: Promise<{ categ
               "@type": "FAQPage",
               "@id": `${pageUrl}#faq`,
               url: pageUrl,
-              name: post.title,
-              description: post.description,
+              name: questionName,
+              description: `Troubleshoot ${questionName.toLowerCase()} with a short answer, practical steps, commands when available, risk notes, and a deeper guide.`,
               mainEntity: [
                 {
                   "@type": "Question",
-                  name: post.title,
+                  name: questionName,
                   acceptedAnswer: {
                     "@type": "Answer",
                     text: `Treat this as a ${cluster.shortTitle} ${post.contentType} issue. Confirm the environment, inputs, permissions, logs, and delivery boundary, then use the linked deep guide for the full checklist.`,
@@ -78,15 +80,15 @@ export default async function QuestionPage({ params }: { params: Promise<{ categ
                 { "@type": "ListItem", position: 1, name: "Home", item: site.url },
                 { "@type": "ListItem", position: 2, name: "Questions", item: `${site.url}/q` },
                 { "@type": "ListItem", position: 3, name: `${cluster.shortTitle} questions`, item: `${site.url}/q/${cluster.slug}` },
-                { "@type": "ListItem", position: 4, name: post.title, item: pageUrl },
+                { "@type": "ListItem", position: 4, name: questionName, item: pageUrl },
               ],
             },
             {
               "@type": "WebPage",
               "@id": `${pageUrl}#webpage`,
               url: pageUrl,
-              name: post.title,
-              description: post.description,
+              name: questionName,
+              description: `Troubleshoot ${questionName.toLowerCase()} with a short answer, practical steps, commands when available, risk notes, and a deeper guide.`,
               isPartOf: { "@type": "WebSite", name: site.englishName, url: site.url },
               about: { "@type": "Thing", name: cluster.shortTitle, url: clusterUrl },
               primaryImageOfPage: undefined,
@@ -105,7 +107,7 @@ export default async function QuestionPage({ params }: { params: Promise<{ categ
             Deep guide
           </Link>
         </div>
-        <h1 className="mt-4 break-words text-3xl font-bold leading-tight text-ink md:text-4xl">{post.title}</h1>
+        <h1 className="mt-4 break-words text-3xl font-bold leading-tight text-ink md:text-4xl">{questionName}</h1>
         <p className="mt-4 text-lg leading-8 text-gray-700">{post.description}</p>
       </section>
 

@@ -87,6 +87,32 @@ export const seoClusters: SeoCluster[] = [
 ];
 
 const clusterPriority: SeoClusterSlug[] = ["codex", "upwork", "vercel", "github", "node-js-errors", "ai-tools"];
+const publicClusterLabels: Record<SeoClusterSlug, Pick<SeoCluster, "description" | "title">> = {
+  codex: {
+    title: "Codex AI coding topic hub",
+    description: "Troubleshooting hub for Codex setup, code review, project delivery, deployment checks, and AI-assisted coding workflows.",
+  },
+  upwork: {
+    title: "Upwork AI freelancing topic hub",
+    description: "Troubleshooting hub for Upwork proposals, client communication, pricing, portfolios, payment boundaries, and AI freelancing delivery.",
+  },
+  vercel: {
+    title: "Vercel and web deployment topic hub",
+    description: "Troubleshooting hub for Vercel, Next.js deployment failures, environment variables, production checks, and frontend delivery.",
+  },
+  github: {
+    title: "GitHub and code collaboration topic hub",
+    description: "Troubleshooting hub for GitHub Actions, Git workflows, repository handoff, commits, secret leaks, and collaboration issues.",
+  },
+  "node-js-errors": {
+    title: "Node.js errors and engineering issues topic hub",
+    description: "Troubleshooting hub for npm, Node.js, TypeScript, Tailwind, build failures, port conflicts, module errors, and common frontend bugs.",
+  },
+  "ai-tools": {
+    title: "AI tools and LLM applications topic hub",
+    description: "Troubleshooting hub for AI tools, LLM deployment, agents, RAG memory, prompt workflows, office automation, and tool selection.",
+  },
+};
 let publishedSeoPostsCache: BlogPost[] | null = null;
 const clusterCache = new Map<string, SeoCluster>();
 const relatedCache = new Map<string, BlogPost[]>();
@@ -98,8 +124,13 @@ export function getPublishedSeoPosts() {
   return publishedSeoPostsCache;
 }
 
+export function getSeoClusters() {
+  return seoClusters.map(withPublicClusterLabel);
+}
+
 export function getClusterBySlug(slug: string) {
-  return seoClusters.find((cluster) => cluster.slug === slug);
+  const cluster = seoClusters.find((item) => item.slug === slug);
+  return cluster ? withPublicClusterLabel(cluster) : undefined;
 }
 
 export function getClusterForPost(post: BlogPost): SeoCluster {
@@ -111,7 +142,7 @@ export function getClusterForPost(post: BlogPost): SeoCluster {
     .map((slug) => seoClusters.find((item) => item.slug === slug))
     .find((item): item is SeoCluster => Boolean(item && item.match.test(haystack)));
 
-  const result = cluster || seoClusters[seoClusters.length - 1];
+  const result = withPublicClusterLabel(cluster || seoClusters[seoClusters.length - 1]);
   clusterCache.set(post.slug, result);
   return result;
 }
@@ -130,6 +161,10 @@ export function getBlogPath(post: BlogPost) {
 
 export function getQuestionPath(post: BlogPost) {
   return `/q/${getClusterForPost(post).slug}/${post.slug}`;
+}
+
+export function getQuestionName(post: BlogPost) {
+  return titleCaseFromSlug(post.slug);
 }
 
 export function getIntentBucket(post: BlogPost) {
@@ -171,7 +206,7 @@ export function getRelatedPosts(post: BlogPost, limit = 6) {
 
 export function getRelatedQuestions(post: BlogPost, limit = 8) {
   return getRelatedPosts(post, limit).map((related) => ({
-    title: related.title,
+    title: getQuestionName(related),
     path: getQuestionPath(related),
     blogPath: getBlogPath(related),
   }));
@@ -234,14 +269,14 @@ export function getSeoGraph(): SeoGraph {
     edgeSet.add(key);
   };
 
-  for (const cluster of seoClusters) {
+  for (const cluster of seoClusters.map(withPublicClusterLabel)) {
     addNode({ path: getClusterPath(cluster.slug), title: cluster.title, type: "cluster", clusterSlug: cluster.slug });
   }
 
   for (const post of posts) {
     const cluster = getClusterForPost(post);
     addNode({ path: getBlogPath(post), title: post.title, type: "blog", clusterSlug: cluster.slug });
-    addNode({ path: getQuestionPath(post), title: post.title, type: "q", clusterSlug: cluster.slug });
+    addNode({ path: getQuestionPath(post), title: getQuestionName(post), type: "q", clusterSlug: cluster.slug });
   }
 
   for (const cluster of seoClusters) {
@@ -320,13 +355,13 @@ export function getSeoGraph(): SeoGraph {
       .sort((a, b) => b.incoming.length - a.incoming.length || b.outgoing.length - a.outgoing.length)
       .slice(0, 20),
     hubPages: finalNodes.filter((node) => node.type === "cluster").sort((a, b) => b.outgoing.length - a.outgoing.length),
-    clusters: seoClusters.map((cluster) => {
+    clusters: seoClusters.map(withPublicClusterLabel).map((cluster) => {
       const clusterPosts = getPostsForCluster(cluster.slug);
       return {
         cluster,
         posts: clusterPosts,
         questions: clusterPosts.map((post) => ({
-          title: post.title,
+          title: getQuestionName(post),
           path: getQuestionPath(post),
           blogPath: getBlogPath(post),
         })),
@@ -364,6 +399,26 @@ function postSearchText(post: BlogPost) {
     .filter(Boolean)
     .join(" ")
     .toLowerCase();
+}
+
+function withPublicClusterLabel(cluster: SeoCluster): SeoCluster {
+  const label = publicClusterLabels[cluster.slug];
+  return label ? { ...cluster, ...label } : cluster;
+}
+
+function titleCaseFromSlug(slug: string) {
+  return slug
+    .split("-")
+    .filter(Boolean)
+    .map(formatTitleToken)
+    .join(" ");
+}
+
+function formatTitleToken(token: string) {
+  const upper = new Set(["ai", "api", "rag", "llm", "seo", "sdk", "mcp", "gsc", "faq", "ci", "cd", "ui", "ux", "ppt", "pdf", "json", "yaml", "env", "npm"]);
+  if (upper.has(token)) return token.toUpperCase();
+  if (token === "js") return "JS";
+  return token.charAt(0).toUpperCase() + token.slice(1);
 }
 
 function highPotentialScore(post: BlogPost) {

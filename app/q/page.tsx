@@ -7,8 +7,9 @@ import {
   getClusterPath,
   getHighPotentialQuestionPosts,
   getPostsForCluster,
+  getQuestionName,
   getQuestionPath,
-  seoClusters,
+  getSeoClusters,
 } from "@/lib/seo-graph";
 
 const pageTitle = "AI problem entry pages: Codex, deployment, Agent, RAG, prompts, and automation";
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
 export default function QuestionsIndexPage() {
   const priorityQuestions = getHighPotentialQuestionPosts(36);
   const highPotentialQuestions = getHighPotentialQuestionPosts(80);
-  const clusterCards = seoClusters.map((cluster) => ({
+  const clusterCards = getSeoClusters().map((cluster) => ({
     cluster,
     count: getPostsForCluster(cluster.slug).length,
     topQuestions: highPotentialQuestions.filter((post) => getQuestionPath(post).startsWith(`/q/${cluster.slug}/`)).slice(0, 4),
@@ -119,7 +120,7 @@ export default function QuestionsIndexPage() {
               <div className="mt-4 grid gap-2">
                 {topQuestions.map((post) => (
                   <Link className="rounded-md bg-gray-50 px-3 py-2 text-sm leading-6 text-ink hover:text-brand" href={getQuestionPath(post)} key={post.slug}>
-                    {post.title}
+                    {getQuestionName(post)}
                   </Link>
                 ))}
               </div>
@@ -141,7 +142,7 @@ export default function QuestionsIndexPage() {
           <div className="mt-5 grid gap-3 md:grid-cols-2">
             {priorityQuestions.map((post) => (
               <Link className="rounded-lg border border-gray-100 bg-gray-50 p-4 text-sm font-medium leading-6 text-ink transition hover:border-brand/50 hover:bg-white" href={getQuestionPath(post)} key={post.slug}>
-                {post.title}
+                {getQuestionName(post)}
               </Link>
             ))}
           </div>
@@ -156,7 +157,7 @@ export default function QuestionsIndexPage() {
           <div className="mt-4 grid gap-3">
             {priorityQuestions.slice(0, 10).map((post) => (
               <Link className="rounded-md border border-gray-100 p-3 transition hover:border-brand/50" href={getBlogPath(post)} key={post.slug}>
-                <span className="block text-sm font-semibold leading-6 text-ink">{post.title}</span>
+                <span className="block text-sm font-semibold leading-6 text-ink">{getQuestionName(post)}</span>
                 <span className="mt-1 block text-xs leading-5 text-gray-500">{post.category}</span>
               </Link>
             ))}

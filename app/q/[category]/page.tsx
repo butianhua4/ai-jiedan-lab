@@ -9,6 +9,7 @@ import {
   getClusterPath,
   getHighPotentialQuestionPosts,
   getPostsForCluster,
+  getQuestionName,
   getQuestionPath,
   type SeoClusterSlug,
   seoClusters,
@@ -79,7 +80,7 @@ export default async function QuestionCategoryPage({ params }: { params: Promise
               itemListElement: posts.slice(0, 120).map((post, index) => ({
                 "@type": "ListItem",
                 position: index + 1,
-                name: post.title,
+                name: getQuestionName(post),
                 url: `${site.url}${getQuestionPath(post)}`,
               })),
             },
@@ -129,7 +130,7 @@ export default async function QuestionCategoryPage({ params }: { params: Promise
               href={getQuestionPath(post)}
               key={post.slug}
             >
-              <h3 className="break-words text-base font-semibold leading-6 text-ink">{post.title}</h3>
+              <h3 className="break-words text-base font-semibold leading-6 text-ink">{getQuestionName(post)}</h3>
               <p className="mt-2 line-clamp-3 text-sm leading-6 text-gray-600">{post.description}</p>
             </Link>
           ))}
@@ -144,7 +145,7 @@ export default async function QuestionCategoryPage({ params }: { params: Promise
         <div className="mt-5 grid gap-3 md:grid-cols-2">
           {posts.slice(0, 12).map((post) => (
             <Link className="rounded-md border border-gray-100 bg-gray-50 p-3 transition hover:border-brand/50 hover:bg-white" href={getBlogPath(post)} key={post.slug}>
-              <span className="block text-sm font-semibold leading-6 text-ink">{post.title}</span>
+              <span className="block text-sm font-semibold leading-6 text-ink">{getQuestionName(post)}</span>
               <span className="mt-1 block text-xs leading-5 text-gray-500">{post.category}</span>
             </Link>
           ))}

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { site } from "@/data/site";
-import { getBlogPath, getClusterBySlug, getClusterPath, getHighAuthorityPosts, getPostsForCluster, getQuestionPath, seoClusters } from "@/lib/seo-graph";
+import { getBlogPath, getClusterBySlug, getClusterPath, getHighAuthorityPosts, getPostsForCluster, getQuestionName, getQuestionPath, seoClusters } from "@/lib/seo-graph";
 
 export function generateStaticParams() {
   return seoClusters.map((cluster) => ({ slug: cluster.slug }));
@@ -66,7 +66,7 @@ export default async function ClusterPage({ params }: { params: Promise<{ slug: 
               itemListElement: questions.map((post, index) => ({
                 "@type": "ListItem",
                 position: index + 1,
-                name: post.title,
+                name: getQuestionName(post),
                 url: `${site.url}${getQuestionPath(post)}`,
               })),
             },
@@ -99,7 +99,7 @@ export default async function ClusterPage({ params }: { params: Promise<{ slug: 
           <div className="mt-4 grid gap-3 md:grid-cols-2">
             {questions.map((post) => (
               <Link className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition hover:border-brand/50" href={getQuestionPath(post)} key={post.slug}>
-                <h3 className="break-words text-base font-semibold leading-6 text-ink">{post.title}</h3>
+                <h3 className="break-words text-base font-semibold leading-6 text-ink">{getQuestionName(post)}</h3>
                 <p className="mt-2 text-sm text-gray-500">Open the q page first, then continue to the deep article.</p>
               </Link>
             ))}
