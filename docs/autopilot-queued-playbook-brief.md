@@ -1,6 +1,6 @@
 # Autopilot Queued Playbook Brief
 
-Generated at: 2026-06-18T11:36:52.965Z
+Generated at: 2026-06-19T02:13:03.523Z
 
 This report is read-only. It prepares the queued-for-playbook sprint items for manual review and keeps all status changes human-gated.
 
@@ -199,7 +199,7 @@ Internal link suggestions:
 
 - OpenRouter API 怎么接入：统一模型入口不是只换 Base URL: /blog/openrouter-api-beginner-guide
 - Groq API 怎么接入：高速推理适合什么 AI 应用: /blog/groq-api-fast-llm-guide
-- Replicate API 怎么做 AI Demo：模型调用、部署和费用边界: /blog/replicate-api-ai-demo-guide
+- Claude API 怎么接入：Messages API、费用和上下文边界: /blog/claude-api-beginner-guide
 
 Risk checklist:
 

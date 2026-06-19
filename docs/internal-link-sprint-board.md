@@ -1,6 +1,6 @@
 # Internal Link Sprint Board
 
-Generated at: 2026-06-18T11:36:16.422Z
+Generated at: 2026-06-19T02:12:27.190Z
 
 This report is read-only. It turns public-link suggestions into manual internal-link review waves without editing article bodies.
 
@@ -54,7 +54,7 @@ This report is read-only. It turns public-link suggestions into manual internal-
 | 1 | true | 248 | 0 | 3 | expansion, recommended, wave-1 | /blog/qdrant-vector-database-beginner-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
 | 1 | true | 208 | 1 | 3 | expansion, recommended, wave-1 | /blog/multi-model-router-fallback-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 | 1 | true | 148 | 1 | 3 | expansion, wave-1 | /blog/qdrant-vector-database-beginner-guide | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
-| 1 | true | 143 | 0 | 3 | recommended | /blog/codex-client-requirement-questions-freelance-scope | AI 工具新手不应该先买哪些工具 | content/blog/tools-not-to-buy-first.mdx |
+| 1 | true | 143 | 0 | 3 | recommended | /blog/ai-small-project-practice-topics | AI 工具新手不应该先买哪些工具 | content/blog/tools-not-to-buy-first.mdx |
 | 2 | true | 111 | 0 | 3 | expansion | /blog/permission-denied-fix-freelance-scope | Vercel 404 部署成功但页面打不开怎么办：使用前怎么判断是否适合 | content/blog/vercel-404-after-deploy-freelance-scope.mdx |
 | 2 | true | 111 | 0 | 3 | expansion | /blog/permission-denied-fix-checklist | Windows 路径和权限导致安装失败怎么办：新手检查清单 | content/blog/windows-path-permission-install-fix-checklist.mdx |
 | 2 | true | 111 | 0 | 3 | expansion | /blog/permission-denied-fix-freelance-scope | Windows 路径和权限导致安装失败怎么办：使用前怎么判断是否适合 | content/blog/windows-path-permission-install-fix-freelance-scope.mdx |
@@ -113,8 +113,8 @@ Link actions:
 
 Suggested public links:
 - /blog/multi-model-router-fallback-guide - 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做)
+- /blog/ai-model-selection-customer-service-guide - 客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检 (same category: AI 部署; keyword overlap: ai, 部署, 知识库, agent, 怎么, 么做)
 - /blog/claude-api-rate-limit-debug-guide - Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 (same category: AI 部署; keyword overlap: ai, claude, 部署, 降级, api, 怎么)
-- /blog/gemini-api-rate-limit-debug-guide - Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 (same category: AI 部署; keyword overlap: ai, gemini, 部署, 降级, api, 怎么)
 
 ### Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索
 
@@ -145,7 +145,7 @@ Suggested public links:
 - Wave: 1
 - Ready for internal link sprint: true
 - Publish confirm: not-included
-- Anchor prompt: When a paragraph mentions the related workflow, add one natural link to /blog/codex-client-requirement-questions-freelance-scope using reader-first anchor text, not keyword stuffing.
+- Anchor prompt: When a paragraph mentions the related workflow, add one natural link to /blog/ai-small-project-practice-topics using reader-first anchor text, not keyword stuffing.
 
 Link actions:
 - Keep this as a manual article-body edit; do not auto-insert links.
@@ -154,11 +154,11 @@ Link actions:
 - Prefer links that help the reader move from a draft tutorial to an already public beginner page.
 - Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.
 - After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.
-- Primary suggested target: /blog/codex-client-requirement-questions-freelance-scope.
+- Primary suggested target: /blog/ai-small-project-practice-topics.
 - Candidate currently links to 0 public article(s).
 
 Suggested public links:
-- /blog/codex-client-requirement-questions-freelance-scope - Codex 需求不清楚的任务使用前怎么判断是否适合 (shared tags: AI 工具实践; keyword overlap: ai, 工具实践, 新手教程, codex, 工具, 新手)
+- /blog/ai-small-project-practice-topics - AI 小项目练习选什么：新手从低风险任务开始 (shared tags: AI 工具实践, 新手教程; keyword overlap: ai, 工具实践, 新手教程, 作品集, 工具, 新手)
 - /blog/daily-ai-freelance-practice-log - 新手如何记录每天的项目练习 (shared tags: AI 工具实践, 新手教程; keyword overlap: ai, 工具实践, 新手教程, 作品集, 工具, 新手)
 - /blog/first-portfolio-case-realistic-checklist - 第一个作品集案例真实性检查清单 (shared tags: AI 工具实践, 新手教程; keyword overlap: ai, 工具实践, 新手教程, 第一, 作品集, 工具)
 
@@ -367,7 +367,7 @@ Link actions:
 Suggested public links:
 - /blog/openrouter-api-beginner-guide - OpenRouter API 怎么接入：统一模型入口不是只换 Base URL (same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai)
 - /blog/groq-api-fast-llm-guide - Groq API 怎么接入：高速推理适合什么 AI 应用 (same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai)
-- /blog/replicate-api-ai-demo-guide - Replicate API 怎么做 AI Demo：模型调用、部署和费用边界 (same category: AI 基建; shared tags: API; keyword overlap: ai, api, 基建, 模型, 怎么, 部署)
+- /blog/claude-api-beginner-guide - Claude API 怎么接入：Messages API、费用和上下文边界 (same category: AI 基建; keyword overlap: ai, api, 怎么接入, 基建, 接入, 怎么)
 
 ### Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查
 
@@ -435,5 +435,5 @@ Link actions:
 
 Suggested public links:
 - /blog/local-llm-deployment-beginner - 本地部署大模型怎么开始：新手先看硬件、模型和用途 (same category: AI 基建; shared tags: AI 基建; keyword overlap: ai, 基建, 部署, 硬件, ollama, 新手)
-- /blog/runpod-serverless-llm-deployment-guide - RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界 (same category: AI 基建; shared tags: vLLM, 大模型部署; keyword overlap: vllm, ai, 基建, 部署, 大模型部署, gpu)
+- /blog/runpod-serverless-llm-deployment-guide - RunPod Serverless 大模型部署：Endpoint、Worker 和冷启动边界 (same category: AI 基建; shared tags: vLLM, 大模型部署; keyword overlap: vllm, ai, 基建, 部署, 大模型部署, gpu)
 - /blog/agent-production-deployment-checklist - Agent 生产上线检查表：权限、日志、成本和人工确认 (same category: AI 基建; shared tags: AI 基建; keyword overlap: ai, 基建, 部署, 生产部署, agent, 成本)

@@ -1,6 +1,6 @@
 # Human Approval Repair Session Pack
 
-Generated at: 2026-06-18T11:36:51.548Z
+Generated at: 2026-06-19T02:13:02.136Z
 
 This report is read-only. It packages the next manual repair session for each routed file and stops before article edits, mark:review, or publishing.
 
@@ -87,7 +87,7 @@ Source URL actions:
 - Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.
-- Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs.
+- Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=tr.
 - Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.
 - If the final URL is the canonical destination, update the source target during human review.
 - If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.
@@ -104,7 +104,7 @@ Source target URL items:
 - [redirected-url] https://docs.anthropic.com -> https://platform.claude.com/docs/en/home; replacements=0
 - [redirected-url] https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval; replacements=0
 - [redirected-url] https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents; replacements=0
-- [redirected-url] https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs; replacements=0
+- [redirected-url] https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=tr; replacements=0
 
 Source review actions:
 
@@ -118,7 +118,7 @@ Source review actions:
 - Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.
-- Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs.
+- Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=tr.
 - Open source URL: https://platform.openai.com/docs.
 - Open source URL: https://ai-sdk.dev/docs.
 - Open source URL: https://docs.anthropic.com.
@@ -137,7 +137,7 @@ Source review actions:
 - Verify 7 official source target(s).
 - Check 4 search query seed(s).
 - Review 19 combined checklist signal(s).
-- Apply copydesk remediation: Check whether the primary keyword can appear naturally in the title without making the title stiff.; Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型..
+- Apply copydesk remediation: Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型..
 - Complete freshness checklist for fast-changing AI/tool guidance.
 - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.
 - Prompt examples include inputs, output criteria, and review steps instead of vague universal prompts.

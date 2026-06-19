@@ -1,14 +1,14 @@
 # Automation Gate
 
-Generated at: 2026-06-19T00:56:13.465Z
+Generated at: 2026-06-19T02:13:45.612Z
 
 Overall: FAIL
 
 ## Summary
 
 - Checks: 197
-- Passed: 151
-- Failed: 46
+- Passed: 149
+- Failed: 48
 
 ## Checks
 
@@ -32,16 +32,16 @@ Overall: FAIL
 | autopilot executive brief stays human-gated and publish-safe | PASS | unsafe=0, publishConfirm=0, publishableNow=0, routeWarnings=3 |
 | publication bottleneck report explains manual gate | PASS | public=500, publishableNow=0, immediateReady=3 |
 | publication bottleneck report stays publish-safe | PASS | unsafe=0, publishConfirm=0, preflightFailed=0, traffic=false |
-| mojibake remediation brief is read-only and article-safe | PASS | filesScanned=669, affected=77, metadataFields=9 |
+| mojibake remediation brief is read-only and article-safe | PASS | filesScanned=669, affected=78, metadataFields=9 |
 | mojibake remediation brief stays human-gated and publish-safe | PASS | unsafe=0, publishConfirm=0, traffic=false |
 | no non-published article is indexable | PASS |  |
 | all published articles are indexable | PASS |  |
 | project status still stops before publishing | PASS | publicPublished=500, publishableNow=0 |
 | traffic evidence audit passed and is read-only | PASS | failedChecks=0, measuredTrafficSources=0 |
 | traffic is not claimed without measured metrics | PASS | trafficDataAvailable=false, canClaimTraffic=false, claimableMetrics=0 |
-| traffic claim guard found no unsupported claims | PASS | filesScanned=238, unsafeClaims=0, watchMentions=9666 |
+| traffic claim guard found no unsupported claims | PASS | filesScanned=240, unsafeClaims=0, watchMentions=9122 |
 | content integrity audit is read-only and clean | PASS | filesScanned=669, blockingItems=0 |
-| content integrity audit mirrors mojibake warnings without blocking | PASS | warnings=0, mojibake=0, publicMojibake=0, remediationAffected=77/51 |
+| content integrity audit mirrors mojibake warnings without blocking | PASS | warnings=0, mojibake=0, publicMojibake=0, remediationAffected=78/52 |
 | content integrity audit covers public, recommended, and Wave 1 items | PASS | public=500, recommended=3, wave=3 |
 | internal link opportunity audit is read-only and covers expansion candidates | PASS | public=500, expansion=15, broadFirst=0, candidates=16 |
 | internal link opportunity audit has public suggestions for Wave 1 | PASS | wave=3, broadFirstMissing=0, waveMissing=0, candidateMissing=0 |
@@ -104,17 +104,17 @@ Overall: FAIL
 | broad first coverage readiness matrix is read-only and covers launch pack | PASS | items=0, unique=0, blocking=0, unsafe=0 |
 | broad first coverage readiness matrix has review evidence and command boundaries | PASS | commands=0, preflight=0, source=0, links=0 |
 | human approval execution queue is read-only and covers approval wave | FAIL | items=3, immediate=3, backlog=0, promptLanes=3, projected=503 |
-| human approval execution queue stays human-gated and excludes publish confirm | PASS | ready=3, sourceDecisions=3, seoWarnings=1, promptLanes=3, publishConfirm=0 |
-| human approval clearance pack is read-only and covers the full approval queue | PASS | items=3, immediate=3, backlog=0, failedSources=0, seo=1 |
-| human approval clearance pack keeps all work human-gated and action-ready | PASS | ready=3, actions=28, sourceDecisions=1, copydesk=2, publishConfirm=0 |
+| human approval execution queue stays human-gated and excludes publish confirm | PASS | ready=3, sourceDecisions=3, seoWarnings=0, promptLanes=3, publishConfirm=0 |
+| human approval clearance pack is read-only and covers the full approval queue | PASS | items=3, immediate=3, backlog=0, failedSources=0, seo=0 |
+| human approval clearance pack keeps all work human-gated and action-ready | PASS | ready=3, actions=25, sourceDecisions=1, copydesk=2, publishConfirm=0 |
 | review optimization brief is read-only and covers ready action-board tasks | PASS | briefs=2, ready=2, unsafeCommands=0 |
 | review optimization brief has actionable copydesk guidance | PASS | withAction=2, missingPublicLinkItems=1, exactQueryWeak=2 |
 | search snippet readiness audit is read-only and covers public plus expansion items | PASS | public=500, expansion=15, scoped=516 |
 | search snippet readiness audit has no blocking Wave 1 issues | PASS | blocking=0, wave=3, waveBlocking=0, warnings=0 |
 | structured data readiness audit is read-only and covers public plus expansion items | PASS | public=500, expansion=15, scoped=516 |
 | structured data readiness audit has JSON-LD previews and no blocking Wave 1 issues | PASS | blocking=0, previews=516, wave=3, waveBlocking=0, warnings=0 |
-| SEO warning remediation pack is read-only and mirrors snippet/schema warnings | PASS | items=260, snippet=204/0, schema=92/0 |
-| SEO warning remediation pack keeps every SEO fix human-gated | PASS | ready=260, public=255, draft=5, gated=260 |
+| SEO warning remediation pack is read-only and mirrors snippet/schema warnings | PASS | items=0, snippet=0/0, schema=0/0 |
+| SEO warning remediation pack keeps every SEO fix human-gated | PASS | ready=0, public=0, draft=0, gated=0 |
 | SEO opportunity map has review-ready drafts | PASS | reviewReadyDrafts=148 |
 | SEO opportunity map includes manual review batches | PASS | batches=5 |
 | content opportunity backlog has reviewable topics | PASS | topics=7, topicsWithReadyCandidates=4 |
@@ -169,7 +169,7 @@ Overall: FAIL
 | public coverage gap preflight has no blocking publish-readiness issues | PASS | blocking=0, ready=0, structured=0, seedMatches=0, warnings=0 |
 | public coverage gap decision pack is read-only and covers preflight items | PASS | items=0, ready=0, waves=0 |
 | public coverage gap decision pack has human review actions and command boundaries | PASS | blocking=0, unsafe=0, commandBoundary=0, optimizations=0 |
-| content cannibalization check generated warning report | PASS | conflicts=200, reviewBatchConflicts=0 |
+| content cannibalization check generated warning report | PASS | conflicts=199, reviewBatchConflicts=0 |
 | review cannibalization brief is read-only and covers unique action-board files | PASS | items=2, uniqueActionFiles=2, unsafeCommands=0 |
 | review cannibalization brief keeps publish candidates differentiated | PASS | highRisk=0, highPublished=0, highReviewOnly=0, mediumRisk=0, publishedComparisons=1, reviewComparisons=0 |
 | review collision decision pack is read-only and covers high-risk overlaps | PASS | decisionItems=0, highRisk=0, blocking=0, unsafe=0 |
@@ -197,17 +197,17 @@ Overall: FAIL
 | live search surface check passed | PASS | publicArticles=500, failed=0 |
 | public surface inventory is read-only and matches public counts | PASS | public=500, live=500, unsafe=0 |
 | public surface inventory identifies broad AI public gaps with candidates | PASS | clusters=8, zeroPublic=0 |
-| public search refresh pack is read-only and covers all public pages | PASS | items=500, public=500, seo=255, measuredTraffic=0 |
-| public search refresh pack keeps public edits human-gated and action-ready | PASS | ready=500, actions=3489, highPriority=247, shortDescriptions=457, publishConfirm=0 |
-| public refresh sprint board covers public refresh pack | PASS | items=500, public=500, waves=167, mojibakePublic=51, seo=255, shortDescriptions=457 |
-| public refresh sprint board keeps public edits manual and publish-confirm-free | PASS | ready=500, actions=5154, unsafe=0, publishConfirm=0 |
-| public search refresh session pack covers public sprint waves | PASS | sessions=167, files=500, actions=5154, ready=500 |
+| public search refresh pack is read-only and covers all public pages | PASS | items=500, public=500, seo=0, measuredTraffic=0 |
+| public search refresh pack keeps public edits human-gated and action-ready | PASS | ready=500, actions=2723, highPriority=8, shortDescriptions=457, publishConfirm=0 |
+| public refresh sprint board covers public refresh pack | FAIL | items=500, public=500, waves=167, mojibakePublic=51, seo=0, shortDescriptions=457 |
+| public refresh sprint board keeps public edits manual and publish-confirm-free | PASS | ready=500, actions=5030, unsafe=0, publishConfirm=0 |
+| public search refresh session pack covers public sprint waves | PASS | sessions=167, files=500, actions=5030, ready=500 |
 | public search refresh session pack stays manual and non-publishing | PASS | unsafe=0, publishConfirm=0, traffic=false |
 | tool market opportunity map covers broad tool demand safely | PASS | opportunities=8, tools=11, queries=80, public=500 |
 | tool market opportunity map includes PPT, spreadsheet and registration actions without publishing | PASS | registrations=5, unsafe=0, publishConfirm=0, traffic=false |
 | manual review workbench is ready and stops before publishing | PASS | currentItemsCovered=3, publishableNow=0 |
-| manual review workbench includes SEO warning remediation | PASS | workbenchSeo=260, remediation=260, unsafe=0 |
+| manual review workbench includes SEO warning remediation | FAIL | workbenchSeo=0, remediation=0, unsafe=0 |
 | next batch approval route matches manual review workbench | PASS | batch=1, items=3, workbenchItems=3, public=500, publishable=0 |
-| next batch approval route is human-gated and action-ready | PASS | ready=3, actions=39, sourcePack=3, queryCoverage=3, warnings=9, publishConfirm=0 |
-| next batch route remediation pack covers route warnings | PASS | batch=1, items=3, warningItems=3, routeWarnings=9, actions=42 |
-| next batch route remediation pack stays safe and publish-confirm-free | PASS | ready=3, unsafe=0, publishConfirm=0, clearanceGaps=2, copydeskGaps=2, queryWarnings=3, seoWarnings=3 |
+| next batch approval route is human-gated and action-ready | PASS | ready=3, actions=36, sourcePack=3, queryCoverage=3, warnings=9, publishConfirm=0 |
+| next batch route remediation pack covers route warnings | PASS | batch=1, items=3, warningItems=3, routeWarnings=9, actions=30 |
+| next batch route remediation pack stays safe and publish-confirm-free | PASS | ready=3, unsafe=0, publishConfirm=0, clearanceGaps=2, copydeskGaps=2, queryWarnings=3, seoWarnings=0 |

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:36:58.057Z",
+  "generatedAt": "2026-06-19T02:13:08.566Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "approvalQueueGeneratedAt": "2026-06-18T11:36:57.586Z",
+    "approvalQueueGeneratedAt": "2026-06-19T02:13:08.094Z",
     "approvalQueueSummary": {
       "backlogItems": 0,
       "commandBoundaries": 3,
@@ -21,13 +21,13 @@
       "itemsWithFailedSourceDecision": 0,
       "itemsWithMassSearchTheme": 3,
       "itemsWithPopularPromptLane": 3,
-      "itemsWithSeoWarnings": 1,
+      "itemsWithSeoWarnings": 0,
       "itemsWithSourceReplacementDecisions": 3,
       "publishConfirmCommandsIncluded": 0,
       "trafficDataAvailable": false,
       "unsafeItems": 0
     },
-    "copydeskGeneratedAt": "2026-06-18T11:36:40.349Z",
+    "copydeskGeneratedAt": "2026-06-19T02:12:51.067Z",
     "copydeskSummary": {
       "briefs": 2,
       "briefsWithAction": 2,
@@ -36,7 +36,7 @@
       "readyBriefs": 2,
       "unsafeCommands": 0
     },
-    "sourceReplacementGeneratedAt": "2026-06-18T11:36:38.887Z",
+    "sourceReplacementGeneratedAt": "2026-06-19T02:12:49.635Z",
     "sourceReplacementSummary": {
       "affectedFiles": 16,
       "failedDecisionItems": 0,
@@ -52,22 +52,22 @@
       "sourceRemediationUnsafeItems": 0,
       "unsafeItems": 0
     },
-    "seoWarningGeneratedAt": "2026-06-18T11:36:19.137Z",
+    "seoWarningGeneratedAt": "2026-06-19T02:12:29.877Z",
     "seoWarningSummary": {
       "blockingItems": 0,
-      "draftItems": 5,
-      "humanGatedItems": 260,
-      "items": 260,
-      "itemsWithHumanChecklist": 260,
-      "itemsWithManualActions": 260,
-      "publicItems": 255,
-      "recommendedItems": 1,
-      "schemaWarningItems": 92,
-      "snippetWarningItems": 204,
+      "draftItems": 0,
+      "humanGatedItems": 0,
+      "items": 0,
+      "itemsWithHumanChecklist": 0,
+      "itemsWithManualActions": 0,
+      "publicItems": 0,
+      "recommendedItems": 0,
+      "schemaWarningItems": 0,
+      "snippetWarningItems": 0,
       "trafficDataAvailable": false,
       "unsafeItems": 0,
-      "warningItems": 260,
-      "waveItems": 1
+      "warningItems": 0,
+      "waveItems": 0
     },
     "trafficNote": "No measured traffic, ranking, impression, click, conversion, or revenue claim is made."
   },
@@ -80,7 +80,7 @@
   "summary": {
     "approvalItems": 3,
     "backlogItems": 0,
-    "clearanceActions": 28,
+    "clearanceActions": 25,
     "copydeskBriefItems": 2,
     "failedSourceDecisionItems": 0,
     "immediateItems": 3,
@@ -88,7 +88,7 @@
     "massSearchThemeItems": 3,
     "popularPromptLaneItems": 3,
     "publishConfirmCommandsIncluded": 0,
-    "seoWarningItems": 1,
+    "seoWarningItems": 0,
     "sourceDecisionItems": 1,
     "trafficDataAvailable": false,
     "unsafeItems": 0
@@ -182,9 +182,6 @@
         "Confirm the draft still answers one clear search intent.",
         "Verify source-backed claims before any status change.",
         "Keep status=draft, noindex=true, and humanReviewRequired=true until approval.",
-        "SEO: Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
-        "SEO: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO: Confirm the H1/title/description still answer the same search intent after any metadata change.",
         "Review public internal link suggestion: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide).",
         "Review proposed meta description from copydesk brief before approval.",
         "Check that popular prompt lane framing stays broad enough for real search demand.",
@@ -224,12 +221,10 @@
           "titleHit": true
         },
         "sourceWarnings": [
-          "primary keyword is not an exact title substring",
           "few exact query variant matches in article text"
         ],
         "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
         "warningRemediation": [
-          "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
           "Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型."
         ]
       },
@@ -241,47 +236,7 @@
       "priorityScore": 439,
       "readyForHumanApproval": true,
       "readyForClearanceReview": true,
-      "seoWarning": {
-        "commandBoundary": {
-          "markReviewAfterHumanApproval": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
-          "publishConfirm": "not-included",
-          "publishDryRunAfterReview": "npm run publish:articles -- --dry-run"
-        },
-        "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "humanChecklist": [
-          "Review file: content/blog/vercel-ai-gateway-multi-provider-guide.mdx.",
-          "Review status: draft.",
-          "Confirm primary keyword intent: Vercel AI Gateway 多模型.",
-          "Snippet warning: primary keyword is not an exact title substring.",
-          "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
-          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
-          "Do not mark review or publish from this remediation pack."
-        ],
-        "manualActions": [
-          "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
-          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
-        ],
-        "manualFixReady": true,
-        "primaryKeyword": "Vercel AI Gateway 多模型",
-        "priority": 78,
-        "scope": [
-          "expansion",
-          "recommended",
-          "wave-1"
-        ],
-        "schemaWarnings": [],
-        "snippetWarnings": [
-          "primary keyword is not an exact title substring"
-        ],
-        "status": "draft",
-        "stopBefore": "Stop before human approval before changing draft metadata, mark:review, or publishing.",
-        "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
-        "unsafeReasons": []
-      },
+      "seoWarning": null,
       "sourceDecisions": [],
       "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
       "unsafeReasons": []

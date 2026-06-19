@@ -1,6 +1,6 @@
 # Review Action Board
 
-Generated at: 2026-06-18T11:36:39.379Z
+Generated at: 2026-06-19T02:12:50.113Z
 
 This board is read-only. It turns review automation reports into a prioritized human task queue.
 
@@ -42,14 +42,14 @@ This board is read-only. It turns review automation reports into a prioritized h
 | Ready | Priority | Kind | Scope | Sources | Warnings | Blockers | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | 1010 | wave-approval | wave-1 | 10 | 0 | none | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| true | 1002 | wave-approval | wave-2 | 12 | 1 | none | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| true | 1002 | wave-approval | wave-2 | 12 | 0 | none | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 
 ## All Tasks
 
 | Ready | Priority | Kind | Scope | Sources | Warnings | Blockers | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | 1010 | wave-approval | wave-1 | 10 | 0 | none | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| true | 1002 | wave-approval | wave-2 | 12 | 1 | none | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| true | 1002 | wave-approval | wave-2 | 12 | 0 | none | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 | false | 987 | wave-approval | wave-3 | 7 | 0 | missing publish readiness pack item | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
 
 ## Per-Task Actions
@@ -95,11 +95,11 @@ Action items:
 - Open 5 official source target(s) and verify fast-changing claims.
 - Run through 7 risk review checks.
 - Choose or reject public internal link suggestion: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide).
-- Resolve or explicitly accept snippet/structured-data warnings before mark:review.
+- Confirm snippet and structured-data checks remain clean.
 
 Warnings:
 
-- primary keyword is not an exact title substring
+- none
 
 Command boundary:
 

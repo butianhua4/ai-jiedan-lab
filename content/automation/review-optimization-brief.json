@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:36:40.349Z",
+  "generatedAt": "2026-06-19T02:12:51.067Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -95,12 +95,10 @@
         "titleHit": true
       },
       "sourceWarnings": [
-        "primary keyword is not an exact title substring",
         "few exact query variant matches in article text"
       ],
       "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
       "warningRemediation": [
-        "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
         "Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型."
       ]
     }
@@ -167,12 +165,10 @@
         "titleHit": true
       },
       "sourceWarnings": [
-        "primary keyword is not an exact title substring",
         "few exact query variant matches in article text"
       ],
       "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
       "warningRemediation": [
-        "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
         "Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型."
       ]
     }

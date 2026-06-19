@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:36:45.906Z",
+  "generatedAt": "2026-06-19T02:12:56.526Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -599,7 +599,7 @@
             "简历筛选",
             "培训"
           ],
-          "title": "人力招聘 AI 提示词模板：JD、简历初筛、面试题和培训材料",
+          "title": "HR AI 提示词模板：JD、简历初筛、面试题和培训材料",
           "updatedAt": "2026-06-14"
         },
         {
@@ -862,7 +862,7 @@
           "noindex": false,
           "slug": "agent-memory-postgres-schema-guide",
           "status": "published",
-          "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则"
+          "title": "Agent 记忆数据库怎么设计：Postgres 用户偏好、项目事实和过期规则"
         },
         {
           "file": "content/blog/agent-observability-logging-guide.mdx",
@@ -964,7 +964,7 @@
             "AI Agent",
             "长期记忆"
           ],
-          "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
+          "title": "Agent 记忆数据库怎么设计：Postgres 用户偏好、项目事实和过期规则",
           "updatedAt": "2026-06-14"
         },
         {
@@ -1146,7 +1146,7 @@
             "GPU",
             "大模型部署"
           ],
-          "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
+          "title": "Docker 使用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
           "updatedAt": "2026-06-14"
         },
         {
@@ -1188,7 +1188,7 @@
             "Device Plugin",
             "大模型部署"
           ],
-          "title": "Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界",
+          "title": "Kubernetes GPU 大模型部署：Device Plugin、资源限制和调度边界",
           "updatedAt": "2026-06-14"
         },
         {
@@ -1216,7 +1216,7 @@
             "Evaluation",
             "LangChain"
           ],
-          "title": "LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent",
+          "title": "LangSmith Observability 怎么做：观测、评测和 Agent 调试",
           "updatedAt": "2026-06-14"
         },
         {
@@ -1426,7 +1426,7 @@
             "API",
             "模型部署"
           ],
-          "title": "Replicate API 怎么做 AI Demo：模型调用、部署和费用边界",
+          "title": "Replicate API 教程：做 AI Demo 的模型调用、部署和费用边界",
           "updatedAt": "2026-06-14"
         },
         {
@@ -1440,7 +1440,7 @@
             "vLLM",
             "大模型部署"
           ],
-          "title": "RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界",
+          "title": "RunPod Serverless 大模型部署：Endpoint、Worker 和冷启动边界",
           "updatedAt": "2026-06-14"
         },
         {
@@ -1468,7 +1468,7 @@
             "AI Agent",
             "AI 应用"
           ],
-          "title": "Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核",
+          "title": "Dify Workflow 和 Agent 区别：固定流程、工具调用和人工审核",
           "updatedAt": "2026-06-14"
         },
         {
@@ -1734,7 +1734,7 @@
           "noindex": false,
           "slug": "dify-ollama-local-model-guide",
           "status": "published",
-          "title": "Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试"
+          "title": "Dify 接入 Ollama 怎么做：本地模型到知识库测试"
         },
         {
           "file": "content/blog/dify-openai-api-provider-guide.mdx",
@@ -1755,7 +1755,7 @@
           "noindex": false,
           "slug": "gpu-docker-nvidia-container-toolkit-guide",
           "status": "published",
-          "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit"
+          "title": "Docker 使用 NVIDIA GPU：大模型部署先装对 Container Toolkit"
         },
         {
           "file": "content/blog/groq-api-fast-llm-guide.mdx",
@@ -1822,7 +1822,7 @@
             "本地大模型",
             "知识库"
           ],
-          "title": "Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试",
+          "title": "Dify 接入 Ollama 怎么做：本地模型到知识库测试",
           "updatedAt": "2026-06-14"
         },
         {
@@ -1864,7 +1864,7 @@
             "GPU",
             "大模型部署"
           ],
-          "title": "Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
+          "title": "Docker 使用 NVIDIA GPU：大模型部署先装对 Container Toolkit",
           "updatedAt": "2026-06-14"
         },
         {
@@ -1892,7 +1892,7 @@
             "AI Gateway",
             "成本监控"
           ],
-          "title": "Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住",
+          "title": "Helicone LLM Observability 怎么做：Gateway、日志、成本和限流",
           "updatedAt": "2026-06-14"
         },
         {
@@ -1934,7 +1934,7 @@
             "Device Plugin",
             "大模型部署"
           ],
-          "title": "Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界",
+          "title": "Kubernetes GPU 大模型部署：Device Plugin、资源限制和调度边界",
           "updatedAt": "2026-06-14"
         },
         {
@@ -2116,7 +2116,7 @@
             "vLLM",
             "大模型部署"
           ],
-          "title": "RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界",
+          "title": "RunPod Serverless 大模型部署：Endpoint、Worker 和冷启动边界",
           "updatedAt": "2026-06-14"
         },
         {
@@ -2238,7 +2238,7 @@
           "noindex": false,
           "slug": "agent-memory-postgres-schema-guide",
           "status": "published",
-          "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则"
+          "title": "Agent 记忆数据库怎么设计：Postgres 用户偏好、项目事实和过期规则"
         },
         {
           "file": "content/blog/ai-agent-memory-rag-design-guide.mdx",
@@ -2312,7 +2312,7 @@
             "AI Agent",
             "长期记忆"
           ],
-          "title": "Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则",
+          "title": "Agent 记忆数据库怎么设计：Postgres 用户偏好、项目事实和过期规则",
           "updatedAt": "2026-06-14"
         },
         {
@@ -2709,7 +2709,7 @@
           "noindex": false,
           "slug": "api-key-invalid-or-missing-freelance-scope",
           "status": "published",
-          "title": "API Key 无效或缺失：使用前怎么判断是否适合"
+          "title": "API Key 无效或缺失项目范围：使用前怎么判断是否适合"
         },
         {
           "file": "content/blog/api-key-invalid-or-missing-mistakes.mdx",
@@ -2944,7 +2944,7 @@
             "API",
             "模型部署"
           ],
-          "title": "Replicate API 怎么做 AI Demo：模型调用、部署和费用边界",
+          "title": "Replicate API 教程：做 AI Demo 的模型调用、部署和费用边界",
           "updatedAt": "2026-06-14"
         },
         {
@@ -3112,7 +3112,7 @@
             "项目范围",
             "AI 工具实践"
           ],
-          "title": "API Key 无效或缺失：使用前怎么判断是否适合",
+          "title": "API Key 无效或缺失项目范围：使用前怎么判断是否适合",
           "updatedAt": "2026-06-14"
         },
         {

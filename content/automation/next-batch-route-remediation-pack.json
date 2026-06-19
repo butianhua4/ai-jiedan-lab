@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:36:59.995Z",
+  "generatedAt": "2026-06-19T02:13:10.433Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,9 +9,9 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "nextBatchApprovalRouteGeneratedAt": "2026-06-18T11:36:59.531Z",
+    "nextBatchApprovalRouteGeneratedAt": "2026-06-19T02:13:09.981Z",
     "nextBatchApprovalRouteSummary": {
-      "actionItems": 39,
+      "actionItems": 36,
       "batchItems": 3,
       "clearanceMatchedItems": 1,
       "commandBoundaries": 3,
@@ -25,7 +25,7 @@
       "queryCoverageMatchedItems": 3,
       "queryMatchWarningItems": 3,
       "routeWarnings": 9,
-      "seoWarningItems": 3,
+      "seoWarningItems": 0,
       "sourcePackMatchedItems": 3,
       "trafficDataAvailable": false,
       "unsafeItems": 0
@@ -44,7 +44,7 @@
     "publishConfirmCommandsIncluded": 0
   },
   "summary": {
-    "actionItems": 42,
+    "actionItems": 30,
     "batchItems": 3,
     "clearanceGapItems": 2,
     "copydeskGapItems": 2,
@@ -53,7 +53,7 @@
     "publishConfirmCommandsIncluded": 0,
     "queryWarningItems": 3,
     "routeWarnings": 9,
-    "seoWarningItems": 3,
+    "seoWarningItems": 0,
     "trafficDataAvailable": false,
     "unsafeItems": 0,
     "warningItems": 3
@@ -61,7 +61,7 @@
   "unsafeItems": [],
   "warningItems": [
     {
-      "actionCount": 14,
+      "actionCount": 10,
       "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
       "manualRemediationActions": [
         "Keep status=draft, noindex=true, and humanReviewRequired=true while remediating this route.",
@@ -70,21 +70,16 @@
         "Review the suggested public internal link: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide).",
         "Resolve or explicitly accept search wording warnings: few exact query variant matches in article text.",
         "Check whether the exact query can appear naturally in title, description, a heading, or the opening paragraph without keyword stuffing.",
-        "SEO remediation: Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
-        "SEO remediation: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO remediation: Confirm the H1/title/description still answer the same search intent after any metadata change.",
-        "SEO remediation: For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
         "Verify at least the first official source targets: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.",
         "After explicit human approval only: npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
         "After review state only, publish dry-run without confirm: npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
         "Do not run publish:articles --confirm from this remediation pack."
       ],
-      "priorityScore": 511,
+      "priorityScore": 481,
       "publishConfirm": "not-included",
       "readyForRemediationReview": true,
       "remediationKinds": [
         "query-warning",
-        "seo-warning",
         "route-warning"
       ],
       "routeReady": true,
@@ -95,7 +90,7 @@
       "unsafeReasons": []
     },
     {
-      "actionCount": 14,
+      "actionCount": 10,
       "file": "content/blog/together-ai-api-beginner-guide.mdx",
       "manualRemediationActions": [
         "Keep status=draft, noindex=true, and humanReviewRequired=true while remediating this route.",
@@ -104,23 +99,18 @@
         "Create or manually review copydesk guidance for title, meta description, opening answer, and public internal link before approval.",
         "Resolve or explicitly accept search wording warnings: few exact query variant matches in article text; missing query-family signals: intentSeeds.",
         "Check whether the exact query can appear naturally in title, description, a heading, or the opening paragraph without keyword stuffing.",
-        "SEO remediation: Check whether the title can naturally include the exact primary keyword: Together AI API 接入.",
-        "SEO remediation: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO remediation: Confirm the H1/title/description still answer the same search intent after any metadata change.",
-        "SEO remediation: For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
         "Verify at least the first official source targets: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.",
         "After explicit human approval only: npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human",
         "After review state only, publish dry-run without confirm: npm run publish:articles -- --file=content/blog/together-ai-api-beginner-guide.mdx",
         "Do not run publish:articles --confirm from this remediation pack."
       ],
-      "priorityScore": 510,
+      "priorityScore": 480,
       "publishConfirm": "not-included",
       "readyForRemediationReview": true,
       "remediationKinds": [
         "clearance-gap",
         "copydesk-gap",
         "query-warning",
-        "seo-warning",
         "route-warning"
       ],
       "routeReady": true,
@@ -134,7 +124,7 @@
       "unsafeReasons": []
     },
     {
-      "actionCount": 14,
+      "actionCount": 10,
       "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
       "manualRemediationActions": [
         "Keep status=draft, noindex=true, and humanReviewRequired=true while remediating this route.",
@@ -143,23 +133,18 @@
         "Create or manually review copydesk guidance for title, meta description, opening answer, and public internal link before approval.",
         "Resolve or explicitly accept search wording warnings: few exact query variant matches in article text.",
         "Check whether the exact query can appear naturally in title, description, a heading, or the opening paragraph without keyword stuffing.",
-        "SEO remediation: Check whether the title can naturally include the exact primary keyword: Vercel AI SDK 聊天机器人部署.",
-        "SEO remediation: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO remediation: Confirm the H1/title/description still answer the same search intent after any metadata change.",
-        "SEO remediation: For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
         "Verify at least the first official source targets: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.",
         "After explicit human approval only: npm run mark:review -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx --confirm-human",
         "After review state only, publish dry-run without confirm: npm run publish:articles -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
         "Do not run publish:articles --confirm from this remediation pack."
       ],
-      "priorityScore": 509,
+      "priorityScore": 479,
       "publishConfirm": "not-included",
       "readyForRemediationReview": true,
       "remediationKinds": [
         "clearance-gap",
         "copydesk-gap",
         "query-warning",
-        "seo-warning",
         "route-warning"
       ],
       "routeReady": true,
@@ -175,7 +160,7 @@
   ],
   "items": [
     {
-      "actionCount": 14,
+      "actionCount": 10,
       "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
       "manualRemediationActions": [
         "Keep status=draft, noindex=true, and humanReviewRequired=true while remediating this route.",
@@ -184,21 +169,16 @@
         "Review the suggested public internal link: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide).",
         "Resolve or explicitly accept search wording warnings: few exact query variant matches in article text.",
         "Check whether the exact query can appear naturally in title, description, a heading, or the opening paragraph without keyword stuffing.",
-        "SEO remediation: Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
-        "SEO remediation: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO remediation: Confirm the H1/title/description still answer the same search intent after any metadata change.",
-        "SEO remediation: For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
         "Verify at least the first official source targets: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.",
         "After explicit human approval only: npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
         "After review state only, publish dry-run without confirm: npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
         "Do not run publish:articles --confirm from this remediation pack."
       ],
-      "priorityScore": 511,
+      "priorityScore": 481,
       "publishConfirm": "not-included",
       "readyForRemediationReview": true,
       "remediationKinds": [
         "query-warning",
-        "seo-warning",
         "route-warning"
       ],
       "routeReady": true,
@@ -209,7 +189,7 @@
       "unsafeReasons": []
     },
     {
-      "actionCount": 14,
+      "actionCount": 10,
       "file": "content/blog/together-ai-api-beginner-guide.mdx",
       "manualRemediationActions": [
         "Keep status=draft, noindex=true, and humanReviewRequired=true while remediating this route.",
@@ -218,23 +198,18 @@
         "Create or manually review copydesk guidance for title, meta description, opening answer, and public internal link before approval.",
         "Resolve or explicitly accept search wording warnings: few exact query variant matches in article text; missing query-family signals: intentSeeds.",
         "Check whether the exact query can appear naturally in title, description, a heading, or the opening paragraph without keyword stuffing.",
-        "SEO remediation: Check whether the title can naturally include the exact primary keyword: Together AI API 接入.",
-        "SEO remediation: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO remediation: Confirm the H1/title/description still answer the same search intent after any metadata change.",
-        "SEO remediation: For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
         "Verify at least the first official source targets: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.",
         "After explicit human approval only: npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human",
         "After review state only, publish dry-run without confirm: npm run publish:articles -- --file=content/blog/together-ai-api-beginner-guide.mdx",
         "Do not run publish:articles --confirm from this remediation pack."
       ],
-      "priorityScore": 510,
+      "priorityScore": 480,
       "publishConfirm": "not-included",
       "readyForRemediationReview": true,
       "remediationKinds": [
         "clearance-gap",
         "copydesk-gap",
         "query-warning",
-        "seo-warning",
         "route-warning"
       ],
       "routeReady": true,
@@ -248,7 +223,7 @@
       "unsafeReasons": []
     },
     {
-      "actionCount": 14,
+      "actionCount": 10,
       "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
       "manualRemediationActions": [
         "Keep status=draft, noindex=true, and humanReviewRequired=true while remediating this route.",
@@ -257,23 +232,18 @@
         "Create or manually review copydesk guidance for title, meta description, opening answer, and public internal link before approval.",
         "Resolve or explicitly accept search wording warnings: few exact query variant matches in article text.",
         "Check whether the exact query can appear naturally in title, description, a heading, or the opening paragraph without keyword stuffing.",
-        "SEO remediation: Check whether the title can naturally include the exact primary keyword: Vercel AI SDK 聊天机器人部署.",
-        "SEO remediation: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO remediation: Confirm the H1/title/description still answer the same search intent after any metadata change.",
-        "SEO remediation: For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
         "Verify at least the first official source targets: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.",
         "After explicit human approval only: npm run mark:review -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx --confirm-human",
         "After review state only, publish dry-run without confirm: npm run publish:articles -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
         "Do not run publish:articles --confirm from this remediation pack."
       ],
-      "priorityScore": 509,
+      "priorityScore": 479,
       "publishConfirm": "not-included",
       "readyForRemediationReview": true,
       "remediationKinds": [
         "clearance-gap",
         "copydesk-gap",
         "query-warning",
-        "seo-warning",
         "route-warning"
       ],
       "routeReady": true,

@@ -1,15 +1,15 @@
 # Mojibake Remediation Brief
 
-Generated at: 2026-06-18T11:37:01.629Z
+Generated at: 2026-06-19T02:13:12.047Z
 
 Read-only queue for likely garbled Chinese article metadata and body excerpts. It does not edit articles, mark review, publish, or claim traffic.
 
 ## Summary
 
 - Files scanned: 669
-- Affected files: 77
+- Affected files: 78
 - Affected draft files: 26
-- Affected public files: 51
+- Affected public files: 52
 - Immediate approval affected: 0
 - Executive top affected: 0
 - Body excerpt hits: 72
@@ -20,7 +20,7 @@ Read-only queue for likely garbled Chinese article metadata and body excerpts. I
 ## Field Counts
 
 - bodyExcerpt: 72
-- description: 10
+- description: 11
 - targetReader: 2
 - title: 1
 
@@ -41,6 +41,7 @@ Read-only queue for likely garbled Chinese article metadata and body excerpts. I
 | 140 | published | false | false | false | internal-link-sprint | description, bodyExcerpt | content/blog/node-version-mismatch-fix-mistakes.mdx |
 | 140 | published | false | false | false | internal-link-sprint | description | content/blog/permission-denied-fix-checklist.mdx |
 | 140 | published | false | false | false | internal-link-sprint | bodyExcerpt | content/blog/ray-serve-llm-deployment-guide.mdx |
+| 100 | published | false | false | false | none | description | content/blog/ai-beginner-project-fit-check.mdx |
 | 100 | published | false | false | false | none | bodyExcerpt | content/blog/ai-ppt-beginner-guide.mdx |
 | 100 | published | false | false | false | none | bodyExcerpt | content/blog/ai-small-project-practice-topics-checklist.mdx |
 | 100 | published | false | false | false | none | description, bodyExcerpt | content/blog/ai-tools-recommendation-beginner.mdx |
@@ -60,7 +61,6 @@ Read-only queue for likely garbled Chinese article metadata and body excerpts. I
 | 100 | published | false | false | false | none | bodyExcerpt | content/blog/claude-code-small-project-tasks.mdx |
 | 100 | published | false | false | false | none | bodyExcerpt | content/blog/claude-code-vs-codex-web-editing-checklist.mdx |
 | 100 | published | false | false | false | none | description, bodyExcerpt | content/blog/codex-automation-steps-not-skip-mistakes.mdx |
-| 100 | published | false | false | false | none | bodyExcerpt | content/blog/codex-automation-steps-not-skip.mdx |
 
 ## Top Samples
 
@@ -104,6 +104,14 @@ Read-only queue for likely garbled Chinese article metadata and body excerpts. I
 - Fields: bodyExcerpt
 - Sample: 扩容前先看瓶颈在哪里。盲目加 GPU 不一定解决提示词过长、批处理不合理或模型选择不当的问题。
 
+### content/blog/ai-beginner-project-fit-check.mdx
+
+- Status/noindex: published/false
+- Preserve status: true
+- Publish confirm: not-included
+- Fields: description
+- Sample: AI 新手接项目前，先用需求清晰度、风险等级、验证能力和交付边界判断自己能不能接，避免盲目报价和交付失控。
+
 ### content/blog/ai-ppt-beginner-guide.mdx
 
 - Status/noindex: published/false
@@ -135,12 +143,4 @@ Read-only queue for likely garbled Chinese article metadata and body excerpts. I
 - Publish confirm: not-included
 - Fields: bodyExcerpt
 - Sample: 不要为了拿下第一单就接受所有要求。第一次项目最重要的是形成可复用流程，而不是冒险碰高权限任务。凡是涉及客户账号、密钥、付款、隐私数据和生产环境的需求，都应该先暂停确认。
-
-### content/blog/build-first-webpage-with-codex.mdx
-
-- Status/noindex: published/false
-- Preserve status: true
-- Publish confirm: not-included
-- Fields: bodyExcerpt
-- Sample: 常见错误一，是把 AI 生成的 Proposal 原文直接发送。这样很容易出现你不会做却承诺会做的内容。常见错误二，是看到客户预算低就盲目压价，结果沟通、修改和部署花掉更多时间。常见错误三，是忽略平台规则，例如诱导站外付款、批量骚扰式发送、虚假案例，这些都可能伤害账号安全。常见错误四，是没有保存交付过程，最后客户问起修改内容时说不清楚。
 

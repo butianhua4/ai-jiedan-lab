@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-18T11:37:35.502Z
+Generated at: 2026-06-19T02:13:46.087Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -64,10 +64,10 @@ This digest is read-only. It summarizes automation reports and does not publish 
 - Approval backlog items: 0
 - Review preflight passed/failed: 3/0
 - Review preflight warning items: 0
-- Content integrity warning/blocking items: 77/0
-- Public mojibake warning items: 51
-- Next batch warning/action items: 3/42
-- Public refresh action items: 5154
+- Content integrity warning/blocking items: 0/0
+- Public mojibake warning items: 0
+- Next batch warning/action items: 3/30
+- Public refresh action items: 5030
 - Publish confirm commands included: 0
 - Traffic data available: false
 - Unsafe items: 0
@@ -92,9 +92,9 @@ This digest is read-only. It summarizes automation reports and does not publish 
 
 | Priority | Actions | Warnings | Title | File |
 | ---: | ---: | --- | --- | --- |
-| 511 | 14 | search query match warning exists | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| 510 | 14 | not yet matched in human approval clearance pack<br>no copydesk optimization brief matched<br>no freshness brief matched<br>search query match warning exists | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
-| 509 | 14 | not yet matched in human approval clearance pack<br>no copydesk optimization brief matched<br>no freshness brief matched<br>search query match warning exists | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
+| 481 | 10 | search query match warning exists | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| 480 | 10 | not yet matched in human approval clearance pack<br>no copydesk optimization brief matched<br>no freshness brief matched<br>search query match warning exists | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
+| 479 | 10 | not yet matched in human approval clearance pack<br>no copydesk optimization brief matched<br>no freshness brief matched<br>search query match warning exists | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
 
 ## Human Approval Decision Matrix
 
@@ -214,8 +214,8 @@ This digest is read-only. It summarizes automation reports and does not publish 
 ## Mojibake Remediation Brief
 
 - Files scanned: 669
-- Affected files: 77
-- Affected draft/public files: 26/51
+- Affected files: 78
+- Affected draft/public files: 26/52
 - Immediate approval affected: 0
 - Executive top affected: 0
 - Body excerpt hits: 72
@@ -230,17 +230,17 @@ This digest is read-only. It summarizes automation reports and does not publish 
 | 140 | published | false | false | internal-link-sprint | description, bodyExcerpt | content/blog/node-version-mismatch-fix-mistakes.mdx |
 | 140 | published | false | false | internal-link-sprint | description | content/blog/permission-denied-fix-checklist.mdx |
 | 140 | published | false | false | internal-link-sprint | bodyExcerpt | content/blog/ray-serve-llm-deployment-guide.mdx |
+| 100 | published | false | false | none | description | content/blog/ai-beginner-project-fit-check.mdx |
 | 100 | published | false | false | none | bodyExcerpt | content/blog/ai-ppt-beginner-guide.mdx |
 | 100 | published | false | false | none | bodyExcerpt | content/blog/ai-small-project-practice-topics-checklist.mdx |
-| 100 | published | false | false | none | description, bodyExcerpt | content/blog/ai-tools-recommendation-beginner.mdx |
 
 ## Content Integrity
 
 - Files scanned: 669
 - Blocking items: 0
-- Warning items: 77
-- Mojibake warning items: 77
-- Public mojibake warning items: 51
+- Warning items: 0
+- Mojibake warning items: 0
+- Public mojibake warning items: 0
 - Public items: 500
 - Recommended items: 3
 - Wave items: 3
@@ -280,7 +280,7 @@ This digest is read-only. It summarizes automation reports and does not publish 
 | 1 | true | 248 | 0 | 3 | expansion, recommended, wave-1 | /blog/qdrant-vector-database-beginner-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
 | 1 | true | 208 | 1 | 3 | expansion, recommended, wave-1 | /blog/multi-model-router-fallback-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 | 1 | true | 148 | 1 | 3 | expansion, wave-1 | /blog/qdrant-vector-database-beginner-guide | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
-| 1 | true | 143 | 0 | 3 | recommended | /blog/codex-client-requirement-questions-freelance-scope | AI 工具新手不应该先买哪些工具 | content/blog/tools-not-to-buy-first.mdx |
+| 1 | true | 143 | 0 | 3 | recommended | /blog/ai-small-project-practice-topics | AI 工具新手不应该先买哪些工具 | content/blog/tools-not-to-buy-first.mdx |
 | 2 | true | 111 | 0 | 3 | expansion | /blog/permission-denied-fix-freelance-scope | Vercel 404 部署成功但页面打不开怎么办：使用前怎么判断是否适合 | content/blog/vercel-404-after-deploy-freelance-scope.mdx |
 | 2 | true | 111 | 0 | 3 | expansion | /blog/permission-denied-fix-checklist | Windows 路径和权限导致安装失败怎么办：新手检查清单 | content/blog/windows-path-permission-install-fix-checklist.mdx |
 | 2 | true | 111 | 0 | 3 | expansion | /blog/permission-denied-fix-freelance-scope | Windows 路径和权限导致安装失败怎么办：使用前怎么判断是否适合 | content/blog/windows-path-permission-install-fix-freelance-scope.mdx |
@@ -314,7 +314,7 @@ Failed checks:
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=tr
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/
 - https://docs.vllm.ai -> https://docs.vllm.ai/en/latest/
@@ -346,7 +346,7 @@ Unsafe source remediation items:
 | true | redirected-url | 11 | 0 | content/blog/tools-not-to-buy-first.mdx<br>content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/together-ai-api-beginner-guide.mdx<br>content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx<br>content/blog/vercel-deploy-checklist-template.mdx<br>content/blog/vercel-404-after-deploy-freelance-scope.mdx<br>content/blog/windows-path-permission-install-fix.mdx<br>content/blog/windows-path-permission-install-fix-checklist.mdx<br>content/blog/windows-path-permission-install-fix-freelance-scope.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://docs.anthropic.com | https://platform.claude.com/docs/en/home |
 | true | redirected-url | 7 | 0 | content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/together-ai-api-beginner-guide.mdx<br>content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://platform.openai.com/docs/guides/retrieval | https://developers.openai.com/api/docs/guides/retrieval |
 | true | redirected-url | 5 | 0 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/windows-path-permission-install-fix-checklist.mdx<br>content/blog/windows-path-permission-install-fix-freelance-scope.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://platform.openai.com/docs/guides/agents | https://developers.openai.com/api/docs/guides/agents |
-| true | redirected-url | 2 | 0 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs |
+| true | redirected-url | 2 | 0 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=tr |
 | true | redirected-url | 2 | 0 | content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx | https://docs.llamaindex.ai | https://developers.llamaindex.ai/python/framework/ |
 
 ## Source Replacement Decisions
@@ -391,7 +391,7 @@ Unsafe tasks:
 | Ready | Priority | Kind | Scope | Sources | Warnings | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | true | 1010 | wave-approval | wave-1 | 10 | 0 | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| true | 1002 | wave-approval | wave-2 | 12 | 1 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| true | 1002 | wave-approval | wave-2 | 12 | 0 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 
 ## Review Portfolio Board
 
@@ -548,7 +548,7 @@ Unsafe human-review playbook items:
 
 | Ready | Safe | Search actions | Source actions | Link actions | Mark-review gated | Publish confirm | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | true | 12 | 44 | 6 | true | not-included | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| true | true | 11 | 44 | 6 | true | not-included | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 | false | true | 10 | 37 | 5 | true | not-included | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
 | false | true | 6 | 33 | 5 | true | not-included | Vercel 部署成功但页面 404：新手排查顺序 | content/blog/vercel-404-after-deploy.mdx |
 
@@ -568,7 +568,7 @@ Unsafe human-review playbook items:
 
 Unsafe approval remediation items:
 
-- {"commandBoundary":{"markReviewAfterHumanApproval":"npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human","publishDryRunAfterReview":"npm run publish:articles -- --file=content/blog/together-ai-api-beginner-guide.mdx","publishConfirm":"not-included","stopBefore":"Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."},"file":"content/blog/together-ai-api-beginner-guide.mdx","humanChecklist":["Review reason: 4 search-intent weakness(es) need human copy review.","Review reason: 8 source URL remediation action(s) need human confirmation.","Apply or explicitly reject the internal-link suggestion before mark:review.","Resolve or explicitly accept search-intent weaknesses before mark:review.","Resolve or explicitly accept source URL remediation actions before mark:review.","Verify source URLs and fact-check queries before mark:review.","Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.","Only after explicit human approval, run: npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human","Publishing remains a separate explicit approval step."],"internalLinkFixes":["Suggested public link: OpenRouter API 怎么接入：统一模型入口不是只换 Base URL (/blog/openrouter-api-beginner-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai.","Suggested public link: Groq API 怎么接入：高速推理适合什么 AI 应用 (/blog/groq-api-fast-llm-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai.","Suggested public link: Replicate API 怎么做 AI Demo：模型调用、部署和费用边界 (/blog/replicate-api-ai-demo-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 基建, 模型, 怎么, 部署.","Already links to at least one public article.","Review 5 suggested public link target(s).","Use one link only if it helps the reader continue the task; avoid stuffing links.","Keep the article draft/noindex until explicit approval."],"manualFixReady":false,"remediationReasons":["4 search-intent weakness(es) need human copy review","8 source URL remediation action(s) need human confirmation"],"searchFixes":["Resolve search weakness: no exact search query appears in title.","Resolve search weakness: no exact search query appears in description.","Resolve search weakness: no exact search query appears in headings or body.","Resolve search weakness: few query tokens appear in searchable text.","Make the opening answer this query naturally: RAG 知识库搭建教程.","During human review, consider whether the title can naturally include: RAG 知识库搭建教程.","During human review, tune the meta description around: RAG 知识库搭建教程.","During human review, add one natural H2/H3 or paragraph that answers: RAG 知识库搭建教程 / 企业知识库 AI 部署.","During human review, add user-language phrasing without keyword stuffing.","Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.","Confirm the opening directly answers primary query: RAG 知识库搭建教程."],"sourceChecks":["Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.","Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.","Source URL action: If the final URL is the canonical destination, update the source target during human review.","Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.","Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.","Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.","Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.","Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.","Open source URL: https://platform.openai.com/docs.","Open source URL: https://ai-sdk.dev/docs.","Open source URL: https://docs.anthropic.com.","Open source URL: https://platform.openai.com/docs/guides/retrieval.","Fact-check query: Together AI API 接入 official docs latest.","Fact-check query: Together AI API 接入 official documentation current limits.","Fact-check query: Together AI API 怎么接入：开源模型接口、embedding 和部署边界 fact check official docs.","Fact-check query: AI 基建 official docs limits pricing changelog.","Fact-check query: 大模型部署教程.","No income, ranking, approval, or client acquisition guarantee.","No instruction to bypass platform, payment, messaging, account, or review rules.","No API key, credential, private customer data, or account detail is included.","Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.","RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.","Verify 4 official source target(s).","Check 4 search query seed(s).","Review 13 combined checklist signal(s).","Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.","Open official source and verify current wording: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval","Open official source and verify current wording: LangChain docs: https://python.langchain.com/docs"],"sourceUrlFixes":["Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.","Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.","Source URL action: If the final URL is the canonical destination, update the source target during human review.","Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.","Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.","Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.","Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.","Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval."],"title":"Together AI API 怎么接入：开源模型接口、embedding 和部署边界","unsafeReasons":["human review playbook item is not ready"]}
+- {"commandBoundary":{"markReviewAfterHumanApproval":"npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human","publishDryRunAfterReview":"npm run publish:articles -- --file=content/blog/together-ai-api-beginner-guide.mdx","publishConfirm":"not-included","stopBefore":"Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."},"file":"content/blog/together-ai-api-beginner-guide.mdx","humanChecklist":["Review reason: 4 search-intent weakness(es) need human copy review.","Review reason: 8 source URL remediation action(s) need human confirmation.","Apply or explicitly reject the internal-link suggestion before mark:review.","Resolve or explicitly accept search-intent weaknesses before mark:review.","Resolve or explicitly accept source URL remediation actions before mark:review.","Verify source URLs and fact-check queries before mark:review.","Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.","Only after explicit human approval, run: npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human","Publishing remains a separate explicit approval step."],"internalLinkFixes":["Suggested public link: OpenRouter API 怎么接入：统一模型入口不是只换 Base URL (/blog/openrouter-api-beginner-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai.","Suggested public link: Groq API 怎么接入：高速推理适合什么 AI 应用 (/blog/groq-api-fast-llm-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai.","Suggested public link: Claude API 怎么接入：Messages API、费用和上下文边界 (/blog/claude-api-beginner-guide) - same category: AI 基建; keyword overlap: ai, api, 怎么接入, 基建, 接入, 怎么.","Already links to at least one public article.","Review 5 suggested public link target(s).","Use one link only if it helps the reader continue the task; avoid stuffing links.","Keep the article draft/noindex until explicit approval."],"manualFixReady":false,"remediationReasons":["4 search-intent weakness(es) need human copy review","8 source URL remediation action(s) need human confirmation"],"searchFixes":["Resolve search weakness: no exact search query appears in title.","Resolve search weakness: no exact search query appears in description.","Resolve search weakness: no exact search query appears in headings or body.","Resolve search weakness: few query tokens appear in searchable text.","Make the opening answer this query naturally: RAG 知识库搭建教程.","During human review, consider whether the title can naturally include: RAG 知识库搭建教程.","During human review, tune the meta description around: RAG 知识库搭建教程.","During human review, add one natural H2/H3 or paragraph that answers: RAG 知识库搭建教程 / 企业知识库 AI 部署.","During human review, add user-language phrasing without keyword stuffing.","Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.","Confirm the opening directly answers primary query: RAG 知识库搭建教程."],"sourceChecks":["Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.","Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.","Source URL action: If the final URL is the canonical destination, update the source target during human review.","Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.","Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.","Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.","Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.","Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.","Open source URL: https://platform.openai.com/docs.","Open source URL: https://ai-sdk.dev/docs.","Open source URL: https://docs.anthropic.com.","Open source URL: https://platform.openai.com/docs/guides/retrieval.","Fact-check query: Together AI API 接入 official docs latest.","Fact-check query: Together AI API 接入 official documentation current limits.","Fact-check query: Together AI API 怎么接入：开源模型接口、embedding 和部署边界 fact check official docs.","Fact-check query: AI 基建 official docs limits pricing changelog.","Fact-check query: 大模型部署教程.","No income, ranking, approval, or client acquisition guarantee.","No instruction to bypass platform, payment, messaging, account, or review rules.","No API key, credential, private customer data, or account detail is included.","Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.","RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.","Verify 4 official source target(s).","Check 4 search query seed(s).","Review 13 combined checklist signal(s).","Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.","Open official source and verify current wording: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval","Open official source and verify current wording: LangChain docs: https://python.langchain.com/docs"],"sourceUrlFixes":["Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.","Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.","Source URL action: If the final URL is the canonical destination, update the source target during human review.","Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.","Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.","Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.","Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.","Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval."],"title":"Together AI API 怎么接入：开源模型接口、embedding 和部署边界","unsafeReasons":["human review playbook item is not ready"]}
 - {"commandBoundary":{"markReviewAfterHumanApproval":"npm run mark:review -- --file=content/blog/vercel-404-after-deploy.mdx --confirm-human","publishDryRunAfterReview":"npm run publish:articles -- --file=content/blog/vercel-404-after-deploy.mdx","publishConfirm":"not-included","stopBefore":"Do not run mark:review until explicit human approval; do not publish without a separate explicit approval."},"file":"content/blog/vercel-404-after-deploy.mdx","humanChecklist":["Review reason: approval candidate has no current link to a published article.","Review reason: 2 search-intent weakness(es) need human copy review.","Review reason: 7 source URL remediation action(s) need human confirmation.","Apply or explicitly reject the internal-link suggestion before mark:review.","Resolve or explicitly accept search-intent weaknesses before mark:review.","Resolve or explicitly accept source URL remediation actions before mark:review.","Verify source URLs and fact-check queries before mark:review.","Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.","Only after explicit human approval, run: npm run mark:review -- --file=content/blog/vercel-404-after-deploy.mdx --confirm-human","Publishing remains a separate explicit approval step."],"internalLinkFixes":["Add at least one contextual link to a currently published article before approval.","Suggested public link: Next.js hydration error 怎么排查：使用前怎么判断是否适合 (/blog/nextjs-hydration-error-debug-freelance-scope) - same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, 排查, ai, 工具实践, next, js.","Suggested public link: Node 版本不匹配使用前怎么判断是否适合 (/blog/node-version-mismatch-fix-freelance-scope) - same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, ai, 工具实践, js, 报错, 错解.","Suggested public link: Node 版本不匹配常见错误和解决步骤 (/blog/node-version-mismatch-fix-mistakes) - same category: 报错解决; shared tags: AI 工具实践; keyword overlap: 报错解决, 排查, ai, 工具实践, js, 报错.","Add one contextual public article link during human review.","Review 5 suggested public link target(s).","Use one link only if it helps the reader continue the task; avoid stuffing links.","Keep the article draft/noindex until explicit approval."],"manualFixReady":false,"remediationReasons":["approval candidate has no current link to a published article","2 search-intent weakness(es) need human copy review","7 source URL remediation action(s) need human confirmation"],"searchFixes":["Resolve search weakness: no exact search query appears in title.","Resolve search weakness: no exact search query appears in description.","Make the opening answer this query naturally: Vercel build failed.","During human review, consider whether the title can naturally include: Vercel build failed.","During human review, tune the meta description around: Vercel build failed.","Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.","Confirm the opening directly answers primary query: Vercel build failed.","Resolve search-intent weakness: no exact search query appears in title.","Resolve search-intent weakness: no exact search query appears in description."],"sourceChecks":["Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.","Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.","Source URL action: If the final URL is the canonical destination, update the source target during human review.","Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.","Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.","Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.","Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering.","Open source URL: https://platform.openai.com/docs.","Open source URL: https://platform.openai.com/docs/guides/prompt-engineering.","Open source URL: https://ai-sdk.dev/docs.","Fact-check query: Vercel 部署成功但 404 official docs latest.","Fact-check query: Vercel 部署成功但 404 official documentation current limits.","Fact-check query: Vercel 部署成功但页面 404：新手排查顺序 fact check official docs.","Fact-check query: 报错解决 official docs limits pricing changelog.","Fact-check query: OpenAI API 报错解决.","No income, ranking, approval, or client acquisition guarantee.","No instruction to bypass platform, payment, messaging, account, or review rules.","No API key, credential, private customer data, or account detail is included.","Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.","Deployment guidance includes environment variables, smoke checks, rate limits, logs, resource limits, and rollback steps.","Verify 2 official source target(s).","Check 4 search query seed(s).","Review 13 combined checklist signal(s).","Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.","Open official source and verify current wording: Vercel AI SDK docs: https://ai-sdk.dev/docs","Open official source and verify current wording: OpenAI API docs: https://platform.openai.com/docs"],"sourceUrlFixes":["Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.","Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.","Source URL action: If the final URL is the canonical destination, update the source target during human review.","Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.","Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.","Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.","Confirm source redirect before approval: https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering."],"title":"Vercel 部署成功但页面 404：新手排查顺序","unsafeReasons":["human review playbook item is not ready"]}
 
 | Ready | Reasons | Search fixes | Link fixes | Source checks | URL fixes | Mark-review gated | Publish confirm | Title | File |
@@ -990,7 +990,7 @@ Unsafe first coverage launch items:
 - Items ready for human approval: 3
 - Items with source replacement decisions: 3
 - Items with failed source decision: 0
-- Items with SEO warnings: 1
+- Items with SEO warnings: 0
 - Items with mass search theme: 3
 - Items with popular prompt lane: 3
 - Publish confirm commands included: 0
@@ -1000,7 +1000,7 @@ Unsafe first coverage launch items:
 | Stage | Ready | Priority | SEO | Source decisions | Mass themes | Prompt lanes | Status | Title | File |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- | --- |
 | draft-needs-human-approval | true | 446 | 0 | 7 | 1 | 2 | draft | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| draft-needs-human-approval | true | 439 | 1 | 7 | 1 | 2 | draft | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| draft-needs-human-approval | true | 439 | 0 | 7 | 1 | 2 | draft | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 | draft-needs-human-approval | true | 415 | 0 | 5 | 1 | 1 | draft | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
 
 ## Human Approval Clearance Pack
@@ -1011,10 +1011,10 @@ Unsafe first coverage launch items:
 - Immediate items: 3
 - Backlog items: 0
 - Ready for clearance review: 3
-- Clearance actions: 28
+- Clearance actions: 25
 - Source decision items: 1
 - Failed source decision items: 0
-- SEO warning items: 1
+- SEO warning items: 0
 - Copydesk brief items: 2
 - Popular prompt lane items: 3
 - Mass search theme items: 3
@@ -1025,7 +1025,7 @@ Unsafe first coverage launch items:
 | Immediate | Ready | Priority | Actions | Source decisions | Failed source | SEO | Copydesk | Prompt lanes | Mass themes | Title | File |
 | --- | --- | ---: | ---: | ---: | --- | --- | --- | ---: | ---: | --- | --- |
 | true | true | 446 | 8 | 0 | false | false | true | 2 | 1 | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| true | true | 439 | 11 | 0 | false | true | true | 2 | 1 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| true | true | 439 | 8 | 0 | false | false | true | 2 | 1 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 | true | true | 415 | 9 | 5 | false | false | false | 1 | 1 | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
 
 ## Next Batch Approval Route
@@ -1033,13 +1033,13 @@ Unsafe first coverage launch items:
 - Next batch: 1 - 大模型和 AI 应用部署教程
 - Batch items: 3
 - Ready for human route review: 3
-- Action items: 39
+- Action items: 36
 - Source-pack matched items: 3
 - Query coverage matched items: 3
 - Clearance matched items: 1
 - Copydesk matched items: 1
 - Freshness matched items: 1
-- SEO warning items: 3
+- SEO warning items: 0
 - Query match warning items: 3
 - Route warnings: 9
 - Current public published: 500
@@ -1050,9 +1050,9 @@ Unsafe first coverage launch items:
 
 | Ready | Score | Actions | Warnings | Sources | Queries | SEO | Publish confirm | Title | File |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- | --- | --- |
-| true | 441 | 15 | 1 | 7 | 30 | true | not-included | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| true | 370 | 12 | 4 | 4 | 35 | true | not-included | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
-| true | 369 | 12 | 4 | 5 | 35 | true | not-included | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
+| true | 431 | 14 | 1 | 7 | 30 | false | not-included | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| true | 360 | 11 | 4 | 4 | 35 | false | not-included | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
+| true | 359 | 11 | 4 | 5 | 35 | false | not-included | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
 
 ## Next Batch Route Remediation Pack
 
@@ -1060,11 +1060,11 @@ Unsafe first coverage launch items:
 - Batch items: 3
 - Warning items: 3
 - Ready for remediation review: 3
-- Action items: 42
+- Action items: 30
 - Clearance gap items: 2
 - Copydesk gap items: 2
 - Query warning items: 3
-- SEO warning items: 3
+- SEO warning items: 0
 - Freshness warning items: 0
 - Route warnings: 9
 - Current public published: 500
@@ -1075,9 +1075,9 @@ Unsafe first coverage launch items:
 
 | Ready | Score | Actions | Kinds | Warnings | Publish confirm | Title | File |
 | --- | ---: | ---: | --- | ---: | --- | --- | --- |
-| true | 511 | 14 | query-warning, seo-warning, route-warning | 1 | not-included | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| true | 510 | 14 | clearance-gap, copydesk-gap, query-warning, seo-warning, route-warning | 4 | not-included | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
-| true | 509 | 14 | clearance-gap, copydesk-gap, query-warning, seo-warning, route-warning | 4 | not-included | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
+| true | 481 | 10 | query-warning, route-warning | 1 | not-included | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| true | 480 | 10 | clearance-gap, copydesk-gap, query-warning, route-warning | 4 | not-included | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
+| true | 479 | 10 | clearance-gap, copydesk-gap, query-warning, route-warning | 4 | not-included | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
 
 ## Review Optimization Brief
 
@@ -1126,7 +1126,7 @@ Unsafe first coverage launch items:
 
 - Scoped items: 516
 - Blocking items: 0
-- Warning items: 204
+- Warning items: 0
 - Wave items: 3
 - Wave items with blocking issues: 0
 
@@ -1135,21 +1135,21 @@ Unsafe first coverage launch items:
 - Scoped items: 516
 - JSON-LD preview items: 516
 - Blocking items: 0
-- Warning items: 92
+- Warning items: 0
 - Wave items: 3
 - Wave items with blocking issues: 0
 
 ## SEO Warning Remediation
 
-- Items: 260
-- Public items: 255
-- Draft items: 5
-- Recommended items: 1
-- Wave items: 1
-- Snippet warning items: 204
-- Schema warning items: 92
-- Manual-fix-ready items: 260
-- Human-gated items: 260
+- Items: 0
+- Public items: 0
+- Draft items: 0
+- Recommended items: 0
+- Wave items: 0
+- Snippet warning items: 0
+- Schema warning items: 0
+- Manual-fix-ready items: 0
+- Human-gated items: 0
 - Unsafe items: 0
 - Traffic data available: false
 
@@ -1159,14 +1159,6 @@ Unsafe SEO warning remediation items:
 
 | Priority | Ready | Status | Scope | Snippet warnings | Schema warnings | Title | File |
 | ---: | --- | --- | --- | ---: | ---: | --- | --- |
-| 78 | true | draft | expansion, recommended, wave-1 | 1 | 0 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| 66 | true | published | public | 2 | 0 | AI 辅助交付和完全自动交付的检查清单 | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
-| 66 | true | published | public | 2 | 0 | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
-| 66 | true | published | public | 2 | 0 | AI 新手接项目前的项目适配检查清单 | content/blog/ai-beginner-project-fit-check-checklist.mdx |
-| 66 | true | published | public | 2 | 0 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| 66 | true | published | public | 2 | 0 | AI 输出不稳定风险控制检查清单 | content/blog/ai-output-unstable-risk-control-checklist.mdx |
-| 66 | true | published | public | 2 | 0 | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
-| 66 | true | published | public | 2 | 0 | AI 工具配置服务项目检查清单 | content/blog/ai-tool-setup-service-checklist-checklist.mdx |
 
 ## Publishing Boundary
 
@@ -1313,8 +1305,8 @@ Next review files:
 - Live status: 200
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 227
-- Traffic claim watch mentions: 9553
+- Traffic claim files scanned: 240
+- Traffic claim watch mentions: 9122
 
 ## Public Surface Inventory
 
@@ -1366,7 +1358,7 @@ Public categories:
 | AI 基建 | 2026-06-14 | 4 | Agent 部署怎么做：从聊天助手到可上线工作流 | /blog/agent-deployment-beginner-guide |
 | AI 基建 | 2026-06-14 | 4 | Agent 人工审核流程怎么设计：什么时候自动，什么时候必须人确认 | /blog/agent-human-review-loop-guide |
 | AI 基建 | 2026-06-14 | 4 | Agent 记忆怎么设计：短期记忆、长期记忆和用户偏好 | /blog/agent-memory-design-guide |
-| AI 基建 | 2026-06-14 | 4 | Agent 记忆用 Postgres 怎么设计：用户偏好、项目事实和过期规则 | /blog/agent-memory-postgres-schema-guide |
+| AI 基建 | 2026-06-14 | 4 | Agent 记忆数据库怎么设计：Postgres 用户偏好、项目事实和过期规则 | /blog/agent-memory-postgres-schema-guide |
 | AI 基建 | 2026-06-14 | 4 | Agent 可观测性怎么做：日志、轨迹、成本和失败复盘 | /blog/agent-observability-logging-guide |
 | AI 基建 | 2026-06-14 | 4 | Agent 生产上线检查表：权限、日志、成本和人工确认 | /blog/agent-production-deployment-checklist |
 | AI 基建 | 2026-06-14 | 4 | Agent 工具调用怎么设计：读、写、执行要分清 | /blog/agent-tool-calling-beginner-guide |
@@ -1377,30 +1369,30 @@ Public categories:
 | AI 基建 | 2026-06-14 | 4 | BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收 | /blog/bentoml-llm-deployment-beginner-guide |
 | AI 基建 | 2026-06-14 | 4 | Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection | /blog/chroma-vector-database-rag-guide |
 | AI 基建 | 2026-06-14 | 4 | Claude API 怎么接入：Messages API、费用和上下文边界 | /blog/claude-api-beginner-guide |
-| AI 基建 | 2026-06-14 | 4 | Cloudflare Workers AI 怎么开始：边缘 AI 接口、成本和数据边界 | /blog/cloudflare-workers-ai-beginner-guide |
+| AI 基建 | 2026-06-14 | 4 | Cloudflare Workers AI 入门：边缘 AI 接口、成本和数据边界 | /blog/cloudflare-workers-ai-beginner-guide |
 | AI 基建 | 2026-06-14 | 4 | Coze Bot 发布前检查什么：新手别只看能不能聊天 | /blog/coze-bot-publish-checklist |
 | AI 基建 | 2026-06-14 | 4 | CrewAI Agent 怎么部署：从 Crew、Task 到生产监控边界 | /blog/crewai-agent-deployment-beginner-guide |
 | AI 基建 | 2026-06-14 | 4 | Dify、Coze、Flowise 怎么选：做 Agent 和知识库前先看边界 | /blog/dify-coze-flowise-agent-builder-comparison |
 | AI 基建 | 2026-06-14 | 4 | Dify Docker Compose 自部署怎么做：新手先看这份边界清单 | /blog/dify-docker-compose-self-host-guide |
 | AI 基建 | 2026-06-14 | 4 | Dify 知识库怎么搭：从上传文档到 RAG 问答 | /blog/dify-knowledge-base-beginner-guide |
 | AI 基建 | 2026-06-14 | 4 | Dify metadata filtering 怎么用：让知识库检索更可控 | /blog/dify-metadata-filtering-rag-guide |
-| AI 基建 | 2026-06-14 | 4 | Dify 怎么接 Ollama 本地模型：从模型供应商到知识库测试 | /blog/dify-ollama-local-model-guide |
+| AI 基建 | 2026-06-14 | 4 | Dify 接入 Ollama 怎么做：本地模型到知识库测试 | /blog/dify-ollama-local-model-guide |
 | AI 基建 | 2026-06-14 | 4 | Dify 怎么接 OpenAI API：模型供应商、LLM 节点和费用边界 | /blog/dify-openai-api-provider-guide |
 | AI 基建 | 2026-06-14 | 4 | Embedding 模型怎么选：RAG 和向量检索别只看模型名 | /blog/embedding-model-selection-guide |
 | AI 基建 | 2026-06-14 | 4 | FastGPT 知识库怎么部署：新手先分清自部署和检索参数 | /blog/fastgpt-knowledge-base-deployment-guide |
 | AI 基建 | 2026-06-14 | 4 | Flowise 本地部署怎么开始：新手先看数据和权限 | /blog/flowise-local-deployment-beginner-guide |
 | AI 基建 | 2026-06-14 | 4 | Flowise 接 Ollama 做本地 RAG：新手先跑通最小链路 | /blog/flowise-ollama-local-rag-checklist |
 | AI 基建 | 2026-06-14 | 4 | Gemini API 怎么接 Next.js：从 API Key 到服务端 Route Handler | /blog/gemini-api-nextjs-guide |
-| AI 基建 | 2026-06-14 | 4 | Docker 怎么用 NVIDIA GPU：大模型部署先装对 Container Toolkit | /blog/gpu-docker-nvidia-container-toolkit-guide |
+| AI 基建 | 2026-06-14 | 4 | Docker 使用 NVIDIA GPU：大模型部署先装对 Container Toolkit | /blog/gpu-docker-nvidia-container-toolkit-guide |
 | AI 基建 | 2026-06-14 | 4 | Groq API 怎么接入：高速推理适合什么 AI 应用 | /blog/groq-api-fast-llm-guide |
-| AI 基建 | 2026-06-14 | 4 | Helicone 怎么做 LLM 观测：Gateway、日志、成本和限流先管住 | /blog/helicone-llm-observability-guide |
+| AI 基建 | 2026-06-14 | 4 | Helicone LLM Observability 怎么做：Gateway、日志、成本和限流 | /blog/helicone-llm-observability-guide |
 | AI 基建 | 2026-06-14 | 4 | Hugging Face Spaces 怎么部署 AI Demo：Gradio、Docker 和公开边界 | /blog/huggingface-spaces-ai-demo-guide |
 | AI 基建 | 2026-06-14 | 4 | Hugging Face TGI 怎么部署：Text Generation Inference 入门检查表 | /blog/huggingface-tgi-deployment-guide |
 | AI 基建 | 2026-06-14 | 4 | AI 知识库权限怎么设计：别让检索结果越权 | /blog/knowledge-base-permission-design-guide |
-| AI 基建 | 2026-06-14 | 4 | Kubernetes 怎么部署 GPU 大模型：Device Plugin、资源限制和调度边界 | /blog/kubernetes-gpu-llm-deployment-guide |
+| AI 基建 | 2026-06-14 | 4 | Kubernetes GPU 大模型部署：Device Plugin、资源限制和调度边界 | /blog/kubernetes-gpu-llm-deployment-guide |
 | AI 基建 | 2026-06-14 | 4 | LangChain 做 RAG 怎么开始：新手先跑通检索链路 | /blog/langchain-rag-beginner-guide |
 | AI 基建 | 2026-06-14 | 4 | LangGraph Agent 怎么入门：把状态、工具和人工节点先想清楚 | /blog/langgraph-agent-beginner-guide |
-| AI 基建 | 2026-06-14 | 4 | LangSmith 怎么做观测和评测：别再只靠 print 调试 Agent | /blog/langsmith-observability-evaluation-guide |
+| AI 基建 | 2026-06-14 | 4 | LangSmith Observability 怎么做：观测、评测和 Agent 调试 | /blog/langsmith-observability-evaluation-guide |
 | AI 基建 | 2026-06-14 | 4 | LiteLLM Proxy 怎么部署：统一多个模型 API 前先管好预算和密钥 | /blog/litellm-proxy-beginner-guide |
 | AI 基建 | 2026-06-14 | 4 | llama.cpp server 怎么用：本地 GGUF 模型 API 入门 | /blog/llama-cpp-server-beginner-guide |
 | AI 基建 | 2026-06-14 | 4 | LlamaIndex 做 RAG 怎么开始：Document、Node 和检索 | /blog/llamaindex-rag-beginner-guide |
@@ -1432,8 +1424,8 @@ Public categories:
 | AI 基建 | 2026-06-14 | 4 | RAG 检索不到内容怎么办：先判断是资料、切分还是检索链路 | /blog/rag-retrieval-no-context-debug-guide |
 | AI 基建 | 2026-06-14 | 4 | Ragas 怎么评测 RAG：Faithfulness、Context 和测试集先建好 | /blog/ragas-rag-evaluation-beginner-guide |
 | AI 基建 | 2026-06-14 | 4 | Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门 | /blog/ray-serve-llm-deployment-guide |
-| AI 基建 | 2026-06-14 | 4 | Replicate API 怎么做 AI Demo：模型调用、部署和费用边界 | /blog/replicate-api-ai-demo-guide |
-| AI 基建 | 2026-06-14 | 4 | RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界 | /blog/runpod-serverless-llm-deployment-guide |
+| AI 基建 | 2026-06-14 | 4 | Replicate API 教程：做 AI Demo 的模型调用、部署和费用边界 | /blog/replicate-api-ai-demo-guide |
+| AI 基建 | 2026-06-14 | 4 | RunPod Serverless 大模型部署：Endpoint、Worker 和冷启动边界 | /blog/runpod-serverless-llm-deployment-guide |
 | AI 工具 | 2026-06-14 | 4 | AI 做 Logo 怎么开始：新手先别急着商用 | /blog/ai-logo-design-beginner-guide |
 | AI 工具 | 2026-06-14 | 4 | AI 做 PPT 怎么开始：新手从大纲到成稿的流程 | /blog/ai-ppt-beginner-guide |
 | AI 工具 | 2026-06-14 | 4 | AI 写简历和求职信怎么用：别让内容变得不真实 | /blog/ai-resume-cover-letter-guide |
@@ -1450,7 +1442,7 @@ Public categories:
 | AI 提示词 | 2026-06-14 | 4 | 教育 AI 提示词模板：备课、教案、测验、反馈和学习计划 | /blog/education-ai-prompts-guide |
 | AI 提示词 | 2026-06-14 | 4 | 财务 AI 提示词模板：报表摘要、费用分类、预算复盘和风险清单 | /blog/finance-ai-prompts-guide |
 | AI 提示词 | 2026-06-14 | 4 | 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 | /blog/healthcare-admin-ai-prompts-guide |
-| AI 提示词 | 2026-06-14 | 4 | 人力招聘 AI 提示词模板：JD、简历初筛、面试题和培训材料 | /blog/hr-recruiting-ai-prompts-guide |
+| AI 提示词 | 2026-06-14 | 4 | HR AI 提示词模板：JD、简历初筛、面试题和培训材料 | /blog/hr-recruiting-ai-prompts-guide |
 | AI 提示词 | 2026-06-14 | 4 | 全行业 AI 提示词模板库怎么做：销售、运营、客服、HR、财务和教育都能用 | /blog/industry-ai-prompts-template-library-2026 |
 | AI 提示词 | 2026-06-14 | 4 | 法务合同 AI 提示词模板：条款摘要、风险清单和修改问题 | /blog/legal-contract-ai-prompts-guide |
 | AI 提示词 | 2026-06-14 | 4 | 制造业 AI 提示词模板：SOP、质检记录、设备故障和生产复盘 | /blog/manufacturing-ai-prompts-guide |
@@ -1492,7 +1484,7 @@ Public categories:
 | AI 自由职业路线 | 2026-06-14 | 4 | AI 输出不稳定怎么做风险控制 | /blog/ai-output-unstable-risk-control |
 | AI 自由职业路线 | 2026-06-14 | 4 | AI 输出不稳定风险控制检查清单 | /blog/ai-output-unstable-risk-control-checklist |
 | AI 自由职业路线 | 2026-06-14 | 4 | AI 输出不稳定风险控制常见错误 | /blog/ai-output-unstable-risk-control-mistakes |
-| AI 自由职业路线 | 2026-06-14 | 4 | AI 工具新手练习小项目选什么 | /blog/ai-small-project-practice-topics |
+| AI 自由职业路线 | 2026-06-14 | 4 | AI 小项目练习选什么：新手从低风险任务开始 | /blog/ai-small-project-practice-topics |
 | AI 自由职业路线 | 2026-06-14 | 4 | AI 小项目练习选题检查清单 | /blog/ai-small-project-practice-topics-checklist |
 | AI 自由职业路线 | 2026-06-14 | 4 | AI 小项目练习常见错误 | /blog/ai-small-project-practice-topics-mistakes |
 | AI 自由职业路线 | 2026-06-14 | 4 | AI 工具新手免费工具栈怎么选 | /blog/ai-tools-stack-free-start |
@@ -1503,10 +1495,10 @@ Public categories:
 | AI 自由职业路线 | 2026-06-14 | 4 | 不会编程开始 AI 项目练习：常见错误和解决步骤 | /blog/no-code-ai-freelance-start-mistakes |
 | AI 记忆 | 2026-06-14 | 4 | AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界 | /blog/ai-agent-memory-rag-design-guide |
 | AI 部署 | 2026-06-14 | 4 | AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急 | /blog/ai-api-key-security-rotation-guide |
-| AI 部署 | 2026-06-14 | 4 | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | /blog/ai-model-selection-customer-service-guide |
+| AI 部署 | 2026-06-14 | 4 | 客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检 | /blog/ai-model-selection-customer-service-guide |
 | AI 部署 | 2026-06-14 | 4 | Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | /blog/claude-api-rate-limit-debug-guide |
 | AI 部署 | 2026-06-14 | 4 | Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底 | /blog/dify-workflow-error-handling-guide |
-| AI 部署 | 2026-06-14 | 4 | Dify Workflow 和 Agent 怎么选：固定流程、工具调用和人工审核 | /blog/dify-workflow-vs-agent-guide |
+| AI 部署 | 2026-06-14 | 4 | Dify Workflow 和 Agent 区别：固定流程、工具调用和人工审核 | /blog/dify-workflow-vs-agent-guide |
 | AI 部署 | 2026-06-14 | 4 | 企业微信、飞书、Slack 怎么接 AI Agent：消息入口、权限和人工接管 | /blog/enterprise-im-ai-agent-integration-guide |
 | AI 部署 | 2026-06-14 | 4 | Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 | /blog/gemini-api-rate-limit-debug-guide |
 | AI 部署 | 2026-06-14 | 4 | 大模型 API 限流和重试怎么做：429、队列、退避和降级方案 | /blog/llm-api-rate-limit-retry-guide |
@@ -1519,25 +1511,25 @@ Public categories:
 | AI 部署 | 2026-06-14 | 4 | Open WebUI Functions 和 Pipelines 怎么用：扩展模型、RAG 和外部工作流 | /blog/open-webui-functions-pipelines-deployment-guide |
 | AI 部署 | 2026-06-14 | 4 | OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制 | /blog/openai-batch-api-cost-guide |
 | Claude Code 新手教程 | 2026-06-14 | 4 | Claude Code 和 Codex 哪个适合网页修改 | /blog/claude-code-vs-codex-web-editing |
-| Claude Code 新手教程 | 2026-06-14 | 4 | Claude Code 和 Codex 网页修改新手检查清单 | /blog/claude-code-vs-codex-web-editing-checklist |
-| Claude Code 新手教程 | 2026-06-14 | 4 | Claude Code 和 Codex 网页修改使用前怎么判断是否适合 | /blog/claude-code-vs-codex-web-editing-freelance-scope |
+| Claude Code 新手教程 | 2026-06-14 | 4 | 网页修改 AI 工具检查清单：Claude Code 和 Codex 怎么选 | /blog/claude-code-vs-codex-web-editing-checklist |
+| Claude Code 新手教程 | 2026-06-14 | 4 | 网页修改项目范围判断：Claude Code 和 Codex 使用前检查 | /blog/claude-code-vs-codex-web-editing-freelance-scope |
 | Claude Code 新手教程 | 2026-06-14 | 4 | Claude Code 和 Codex 网页修改常见错误 | /blog/claude-code-vs-codex-web-editing-mistakes |
 | Codex 新手教程 | 2026-06-01 | 4 | Codex 怎么做第一个网页 | /blog/build-first-webpage-with-codex |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 自动化开发流程哪些步骤不能省 | /blog/codex-automation-steps-not-skip |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 自动化开发流程新手检查清单 | /blog/codex-automation-steps-not-skip-checklist |
-| Codex 新手教程 | 2026-06-14 | 4 | Codex 自动化开发使用前怎么判断是否适合 | /blog/codex-automation-steps-not-skip-freelance-scope |
+| Codex 新手教程 | 2026-06-14 | 4 | Codex 自动化开发项目范围：使用前怎么判断是否适合 | /blog/codex-automation-steps-not-skip-freelance-scope |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 自动化开发流程常见错误 | /blog/codex-automation-steps-not-skip-mistakes |
-| Codex 新手教程 | 2026-06-14 | 4 | Codex 做项目时如何避免把密钥写进代码 | /blog/codex-avoid-secret-leak |
+| Codex 新手教程 | 2026-06-14 | 4 | Codex 避免密钥泄露：做项目时不要把密钥写进代码 | /blog/codex-avoid-secret-leak |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 处理客户项目的密钥安全检查清单 | /blog/codex-avoid-secret-leak-checklist |
 | Codex 新手教程 | 2026-06-14 | 4 | 涉及密钥和权限的 Codex 任务能不能接 | /blog/codex-avoid-secret-leak-freelance-scope |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 做项目时常见密钥泄露错误和修复顺序 | /blog/codex-avoid-secret-leak-mistakes |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 修 bug 时如何保留回滚记录 | /blog/codex-bugfix-rollback-record |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 修 bug 回滚记录检查清单 | /blog/codex-bugfix-rollback-record-checklist |
-| Codex 新手教程 | 2026-06-14 | 4 | Codex 修 bug 任务使用前怎么判断是否适合 | /blog/codex-bugfix-rollback-record-freelance-scope |
+| Codex 新手教程 | 2026-06-14 | 4 | Codex 修 bug 任务能不能接：使用前怎么判断是否适合 | /blog/codex-bugfix-rollback-record-freelance-scope |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 修 bug 回滚记录常见错误和修复顺序 | /blog/codex-bugfix-rollback-record-mistakes |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 处理客户需求不清楚时怎么提问 | /blog/codex-client-requirement-questions |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 客户需求澄清问题检查清单 | /blog/codex-client-requirement-questions-checklist |
-| Codex 新手教程 | 2026-06-14 | 4 | Codex 需求不清楚的任务使用前怎么判断是否适合 | /blog/codex-client-requirement-questions-freelance-scope |
+| Codex 新手教程 | 2026-06-14 | 4 | Codex 需求不清楚能不能接：使用前怎么判断 | /blog/codex-client-requirement-questions-freelance-scope |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 客户需求澄清常见错误和修复顺序 | /blog/codex-client-requirement-questions-mistakes |
 | Codex 新手教程 | 2026-06-01 | 4 | Codex 生成代码后怎么审核：交付前检查清单 | /blog/codex-code-review-delivery-checklist |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 是什么：新手怎么开始 | /blog/codex-codex-4-31 |
@@ -1556,7 +1548,7 @@ Public categories:
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 修 CSS 间距和响应式问题怎么做：常见错误和解决步骤 | /blog/codex-css-spacing-responsive-mistakes |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 修改现有网页 UI 的安全流程 | /blog/codex-edit-existing-ui |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 修改现有网页 UI 检查清单 | /blog/codex-edit-existing-ui-checklist |
-| Codex 新手教程 | 2026-06-14 | 4 | Codex 修改现有网页 UI 使用前怎么判断是否适合 | /blog/codex-edit-existing-ui-freelance-scope |
+| Codex 新手教程 | 2026-06-14 | 4 | Codex UI 修改任务能不能接：使用前怎么判断 | /blog/codex-edit-existing-ui-freelance-scope |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 修改现有网页 UI 常见错误和修复顺序 | /blog/codex-edit-existing-ui-mistakes |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 是什么，新手第一天应该怎么用 | /blog/codex-first-day-guide |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 是什么，新手第一天应该怎么用：新手检查清单 | /blog/codex-first-day-guide-checklist |
@@ -1570,8 +1562,8 @@ Public categories:
 | Codex 新手教程 | 2026-06-01 | 4 | Codex 和 GitHub 怎么配合：提交代码前检查 | /blog/codex-github-before-commit-checklist |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 和 GitHub 怎么配合提交代码 | /blog/codex-github-workflow |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex GitHub 提交代码检查清单 | /blog/codex-github-workflow-checklist |
-| Codex 新手教程 | 2026-06-14 | 4 | Codex GitHub 提交任务使用前怎么判断是否适合 | /blog/codex-github-workflow-freelance-scope |
-| Codex 新手教程 | 2026-06-14 | 4 | Codex GitHub 工作流常见错误和修复顺序 | /blog/codex-github-workflow-mistakes |
+| Codex 新手教程 | 2026-06-14 | 4 | Codex GitHub 提交任务能不能接：使用前怎么判断 | /blog/codex-github-workflow-freelance-scope |
+| Codex 新手教程 | 2026-06-14 | 4 | Codex GitHub 提交错误：工作流常见错误和修复顺序 | /blog/codex-github-workflow-mistakes |
 | Codex 新手教程 | 2026-06-01 | 4 | Codex 安装失败怎么办 | /blog/codex-install-failed-beginner-fix |
 | Codex 新手教程 | 2026-06-14 | 4 | 安装 Codex 前要准备什么 | /blog/codex-install-prerequisites |
 | Codex 新手教程 | 2026-06-14 | 4 | Codex 安装前置条件检查清单 | /blog/codex-install-prerequisites-checklist |
@@ -1652,7 +1644,7 @@ Public categories:
 | 工具导航 | 2026-06-14 | 5 | Notion 管理项目流程怎么用：新手检查清单 | /blog/notion-freelance-workflow-checklist |
 | 工具导航 | 2026-06-14 | 5 | PayPal 和 Payoneer 哪个适合新手 | /blog/paypal-vs-payoneer-beginner |
 | 工具导航 | 2026-06-14 | 5 | PayPal 和 Payoneer 哪个适合新手：新手检查清单 | /blog/paypal-vs-payoneer-beginner-checklist |
-| 工具流程 | 2026-06-14 | 5 | ChatGPT、Codex 和 Claude 怎么分工做 AI 工具实践流程 | /blog/chatgpt-codex-claude-workflow |
+| 工具流程 | 2026-06-14 | 5 | ChatGPT Codex Claude 工作流怎么分工：AI 工具实践流程 | /blog/chatgpt-codex-claude-workflow |
 | 工具流程 | 2026-06-14 | 5 | ChatGPT、Codex 和 Claude 工作流检查清单 | /blog/chatgpt-codex-claude-workflow-checklist |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 自动化为什么必须有人审 | /blog/claude-code-automation-human-review |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 自动化人工审核检查清单 | /blog/claude-code-automation-human-review-checklist |
@@ -1664,7 +1656,7 @@ Public categories:
 | 工具流程 | 2026-06-14 | 4 | Claude Code 新手常见错误和修正方法 | /blog/claude-code-beginner-mistakes-mistakes |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 新手适合用在哪些项目场景 | /blog/claude-code-beginner-use-cases |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 新手使用场景检查清单 | /blog/claude-code-beginner-use-cases-checklist |
-| 工具流程 | 2026-06-14 | 4 | Claude Code 新手项目练习前怎么判断使用场景 | /blog/claude-code-beginner-use-cases-freelance-scope |
+| 工具流程 | 2026-06-14 | 4 | Claude Code 使用场景项目范围：新手练习前怎么判断 | /blog/claude-code-beginner-use-cases-freelance-scope |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 新手选使用场景时的常见错误 | /blog/claude-code-beginner-use-cases-mistakes |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 修 bug 的 prompt 怎么写 | /blog/claude-code-bug-prompt |
 | 工具流程 | 2026-06-14 | 4 | Claude Code Bug Prompt 检查清单 | /blog/claude-code-bug-prompt-checklist |
@@ -1682,7 +1674,7 @@ Public categories:
 | 工具流程 | 2026-06-14 | 4 | Claude Code 交付说明检查清单 | /blog/claude-code-delivery-note-checklist |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 交付说明哪些内容适合写进项目范围 | /blog/claude-code-delivery-note-freelance-scope |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 交付说明常见错误 | /blog/claude-code-delivery-note-mistakes |
-| 工具流程 | 2026-06-14 | 4 | 用 Claude Code 排查客户报错时怎么做才稳 | /blog/claude-code-error-debug |
+| 工具流程 | 2026-06-14 | 4 | Claude Code 错误排查怎么做：客户报错处理更稳 | /blog/claude-code-error-debug |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 错误排查检查清单 | /blog/claude-code-error-debug-checklist |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 错误排查哪些适合写进项目范围 | /blog/claude-code-error-debug-freelance-scope |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 排查客户报错时的常见错误 | /blog/claude-code-error-debug-mistakes |
@@ -1694,14 +1686,14 @@ Public categories:
 | 工具流程 | 2026-06-14 | 4 | Claude Code 安装前置条件检查清单 | /blog/claude-code-install-prerequisites-checklist |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 安装准备哪些适合写进项目范围 | /blog/claude-code-install-prerequisites-freelance-scope |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 安装准备常见错误 | /blog/claude-code-install-prerequisites-mistakes |
-| 工具流程 | 2026-06-14 | 4 | Claude Code 新手适合先接哪些低风险小单 | /blog/claude-code-low-risk-freelance-jobs |
+| 工具流程 | 2026-06-14 | 4 | Claude Code 低风险项目有哪些：新手适合先接的小单 | /blog/claude-code-low-risk-freelance-jobs |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 低风险项目检查清单 | /blog/claude-code-low-risk-freelance-jobs-checklist |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 低风险小单哪些适合写进项目范围 | /blog/claude-code-low-risk-freelance-jobs-freelance-scope |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 低风险项目常见错误 | /blog/claude-code-low-risk-freelance-jobs-mistakes |
-| 工具流程 | 2026-06-14 | 4 | 用 Claude Code 检查 Next.js 页面小问题怎么做 | /blog/claude-code-nextjs-page-check |
+| 工具流程 | 2026-06-14 | 4 | Claude Code Next.js 页面检查怎么做：小问题处理步骤 | /blog/claude-code-nextjs-page-check |
 | 工具流程 | 2026-06-14 | 4 | Claude Code Next.js 页面检查清单 | /blog/claude-code-nextjs-page-check-checklist |
 | 工具流程 | 2026-06-14 | 4 | Claude Code 检查 Next.js 页面哪些适合写进项目范围 | /blog/claude-code-nextjs-page-check-freelance-scope |
-| 工具流程 | 2026-06-14 | 4 | Claude Code 检查 Next.js 页面时的常见错误 | /blog/claude-code-nextjs-page-check-mistakes |
+| 工具流程 | 2026-06-14 | 4 | Claude Code Next.js 页面检查错误：新手常见问题 | /blog/claude-code-nextjs-page-check-mistakes |
 | 工具流程 | 2026-06-14 | 4 | 用 Claude Code 审阅项目 Proposal 时要看什么 | /blog/claude-code-proposal-review |
 | 工具流程 | 2026-06-14 | 4 | Claude Code Proposal 审阅检查清单 | /blog/claude-code-proposal-review-checklist |
 | 工具流程 | 2026-06-14 | 4 | Claude Code Proposal 审阅哪些适合写进项目范围 | /blog/claude-code-proposal-review-freelance-scope |
@@ -1715,7 +1707,7 @@ Public categories:
 | 报价指南 | 2026-06-14 | 4 | 自由职业报价单填写检查清单 | /blog/freelance-quote-template-fill-checklist |
 | 报错解决 | 2026-06-14 | 4 | API Key 无效或缺失怎么处理 | /blog/api-key-invalid-or-missing |
 | 报错解决 | 2026-06-14 | 4 | API Key 无效或缺失排查清单 | /blog/api-key-invalid-or-missing-checklist |
-| 报错解决 | 2026-06-14 | 4 | API Key 无效或缺失：使用前怎么判断是否适合 | /blog/api-key-invalid-or-missing-freelance-scope |
+| 报错解决 | 2026-06-14 | 4 | API Key 无效或缺失项目范围：使用前怎么判断是否适合 | /blog/api-key-invalid-or-missing-freelance-scope |
 | 报错解决 | 2026-06-14 | 4 | API Key 无效或缺失的常见错误和修复步骤 | /blog/api-key-invalid-or-missing-mistakes |
 | 报错解决 | 2026-06-02 | 4 | Codex 项目 npm install 报错怎么办：新手排查步骤 | /blog/codex-npm-install-error-beginner-fix |
 | 报错解决 | 2026-06-14 | 4 | dependency conflict 依赖冲突怎么处理 | /blog/dependency-conflict-fix |
@@ -1828,7 +1820,7 @@ Public categories:
 | 新手教程 | 2026-06-14 | 4 | 没有客户时练习项目检查清单 | /blog/practice-projects-before-clients-checklist |
 | 新手教程 | 2026-06-14 | 4 | 没有客户时做练习项目的常见错误 | /blog/practice-projects-before-clients-mistakes |
 | 新手路线 | 2026-06-14 | 4 | 第一次接 AI 小单前要准备什么 | /blog/before-first-ai-freelance-job |
-| 新手路线 | 2026-06-14 | 4 | 第一次接 AI 小单前检查清单 | /blog/before-first-ai-freelance-job-checklist |
+| 新手路线 | 2026-06-14 | 4 | 第一次 AI 工具实践检查清单：接小单前要准备什么 | /blog/before-first-ai-freelance-job-checklist |
 | 新手路线 | 2026-06-14 | 4 | 第一次接 AI 小单前最容易犯的错误 | /blog/before-first-ai-freelance-job-mistakes |
 | 模板和清单 | 2026-06-14 | 4 | AI 生成内容人工审核表怎么设计 | /blog/ai-content-human-review-template |
 | 模板和清单 | 2026-06-14 | 4 | AI 生成内容人工审核表检查清单 | /blog/ai-content-human-review-template-checklist |
@@ -1879,11 +1871,11 @@ Public categories:
 - Public articles: 500
 - Items: 500
 - Ready for human refresh review: 500
-- High-priority items: 247
-- SEO warning items: 255
+- High-priority items: 8
+- SEO warning items: 0
 - Short-description items: 457
-- Cannibalization items: 239
-- Action items: 3489
+- Cannibalization items: 241
+- Action items: 2723
 - Live missing from sitemap: 0
 - Published but noindexed: 0
 - Measured traffic sources: 0
@@ -1893,21 +1885,21 @@ Public categories:
 
 | Ready | Score | Actions | SEO | Freshness | Conflicts | Desc | Category | Title | File |
 | --- | ---: | ---: | --- | --- | ---: | ---: | --- | --- | --- |
-| true | 170 | 10 | true | none | 2 | 74 | 工具流程 | Claude Code 检查 Next.js 页面哪些适合写进项目范围 | content/blog/claude-code-nextjs-page-check-freelance-scope.mdx |
-| true | 170 | 10 | true | none | 2 | 72 | 工具流程 | Claude Code 检查 Next.js 页面时的常见错误 | content/blog/claude-code-nextjs-page-check-mistakes.mdx |
-| true | 170 | 10 | true | none | 2 | 72 | 工具流程 | 用 Claude Code 检查 Next.js 页面小问题怎么做 | content/blog/claude-code-nextjs-page-check.mdx |
-| true | 170 | 10 | true | none | 2 | 72 | 报错解决 | npm run dev 能跑但 build 失败常见错误和解决步骤 | content/blog/dev-works-build-fails-mistakes.mdx |
-| true | 170 | 10 | true | none | 2 | 76 | 报错解决 | failed to push some refs 使用前怎么判断是否适合 | content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx |
-| true | 170 | 10 | true | none | 2 | 77 | 报错解决 | failed to push some refs 常见错误和解决步骤 | content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
-| true | 170 | 10 | true | none | 2 | 79 | 报错解决 | Next.js hydration error 怎么排查：常见错误和解决步骤 | content/blog/nextjs-hydration-error-debug-mistakes.mdx |
-| true | 165 | 9 | true | high | 1 | 102 | 报错解决 | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx |
-| true | 160 | 9 | true | high | 0 | 72 | 报价指南 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
-| true | 160 | 9 | true | high | 0 | 82 | 收款工具 | Payoneer、Wise、PayPal 有什么区别：AI 工具新手收款前先看 | content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
-| true | 160 | 9 | true | high | 0 | 80 | Upwork 新手 | Upwork Proposal 发出去没人回怎么办：新手检查清单 | content/blog/upwork-proposal-no-reply-checklist.mdx |
-| true | 160 | 9 | true | high | 0 | 87 | 部署教程 | Vercel 提示环境变量缺失怎么办：新手部署检查流程 | content/blog/vercel-env-variable-missing-beginner-guide.mdx |
-| true | 155 | 9 | true | none | 1 | 66 | 收款工具 | 广告收入要等到什么时候再接 | content/blog/ads-income-when-to-start.mdx |
-| true | 155 | 9 | true | none | 1 | 69 | 收款工具 | 联盟链接收入和服务收入有什么区别：新手检查清单 | content/blog/affiliate-vs-service-income-checklist.mdx |
-| true | 155 | 9 | true | none | 1 | 52 | 收款工具 | 联盟链接收入和服务收入有什么区别 | content/blog/affiliate-vs-service-income.mdx |
+| true | 140 | 7 | false | none | 2 | 76 | 报错解决 | npm run dev 能跑但 build 失败检查清单 | content/blog/dev-works-build-fails-checklist.mdx |
+| true | 140 | 7 | false | none | 2 | 72 | 报错解决 | npm run dev 能跑但 build 失败常见错误和解决步骤 | content/blog/dev-works-build-fails-mistakes.mdx |
+| true | 140 | 7 | false | none | 2 | 84 | 报错解决 | npm run dev 能跑但 build 失败怎么办 | content/blog/dev-works-build-fails.mdx |
+| true | 140 | 7 | false | none | 2 | 81 | 报错解决 | failed to push some refs 排查检查清单 | content/blog/failed-to-push-some-refs-fix-checklist.mdx |
+| true | 140 | 7 | false | none | 2 | 76 | 报错解决 | failed to push some refs 使用前怎么判断是否适合 | content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx |
+| true | 140 | 7 | false | none | 2 | 77 | 报错解决 | failed to push some refs 常见错误和解决步骤 | content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
+| true | 140 | 7 | false | none | 2 | 83 | 报错解决 | Next.js hydration error 怎么排查：新手检查清单 | content/blog/nextjs-hydration-error-debug-checklist.mdx |
+| true | 140 | 7 | false | none | 2 | 79 | 报错解决 | Next.js hydration error 怎么排查：常见错误和解决步骤 | content/blog/nextjs-hydration-error-debug-mistakes.mdx |
+| true | 135 | 6 | false | high | 1 | 102 | 报错解决 | Codex 项目 npm install 报错怎么办：新手排查步骤 | content/blog/codex-npm-install-error-beginner-fix.mdx |
+| true | 130 | 6 | false | high | 0 | 88 | Codex 新手教程 | Codex 怎么做第一个网页 | content/blog/build-first-webpage-with-codex.mdx |
+| true | 130 | 6 | false | high | 0 | 89 | Codex 新手教程 | Codex 生成代码后怎么审核 | content/blog/codex-generated-code-review-guide.mdx |
+| true | 130 | 6 | false | high | 0 | 87 | Codex 新手教程 | Codex 安装失败怎么办 | content/blog/codex-install-failed-beginner-fix.mdx |
+| true | 130 | 6 | false | none | 2 | 99 | 报错解决 | failed to push some refs 怎么排查 | content/blog/failed-to-push-some-refs-fix.mdx |
+| true | 130 | 6 | false | high | 0 | 72 | 报价指南 | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
+| true | 130 | 6 | false | none | 2 | 92 | 报错解决 | Next.js hydration error 怎么排查 | content/blog/nextjs-hydration-error-debug.mdx |
 
 ## Public Refresh Sprint Board
 
@@ -1916,12 +1908,12 @@ Public categories:
 - Waves: 167
 - Items per wave: 3
 - Ready for public refresh sprint: 500
-- High-priority items: 268
-- SEO warning items: 255
+- High-priority items: 59
+- SEO warning items: 0
 - Short-description items: 457
 - Mojibake public items: 51
-- Cannibalization items: 239
-- Action items: 5154
+- Cannibalization items: 241
+- Action items: 5030
 - Live missing from sitemap: 0
 - Published but noindexed: 0
 - Publish confirm commands included: 0
@@ -1930,191 +1922,191 @@ Public categories:
 
 | Wave | Ready | High priority | Actions | Reasons | Files |
 | ---: | ---: | ---: | ---: | --- | --- |
-| 1 | 3/3 | 3 | 39 | mojibake-public, seo-warning, short-description, freshness-high, high-priority, cannibalization | content/blog/first-upwork-project-pricing-checklist.mdx<br>content/blog/ai-small-project-practice-topics-checklist.mdx<br>content/blog/canva-portfolio-cover-tips-checklist.mdx |
-| 2 | 3/3 | 3 | 39 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-beginner-mistakes-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-mistakes.mdx<br>content/blog/claude-code-beginner-use-cases-checklist.mdx |
-| 3 | 3/3 | 3 | 39 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-beginner-use-cases.mdx<br>content/blog/claude-code-bug-prompt-mistakes.mdx<br>content/blog/claude-code-bug-prompt.mdx |
-| 4 | 3/3 | 3 | 39 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-common-commands-mistakes.mdx<br>content/blog/claude-code-common-commands.mdx<br>content/blog/claude-code-error-debug-mistakes.mdx |
-| 5 | 3/3 | 3 | 39 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-github-file-scope-mistakes.mdx<br>content/blog/claude-code-small-project-tasks.mdx<br>content/blog/claude-code-vs-codex-web-editing-checklist.mdx |
-| 6 | 3/3 | 3 | 39 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/codex-automation-steps-not-skip-mistakes.mdx<br>content/blog/codex-edit-existing-ui-mistakes.mdx<br>content/blog/codex-first-day-guide-checklist.mdx |
-| 7 | 3/3 | 3 | 39 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/codex-npm-install-errors-mistakes.mdx<br>content/blog/module-not-found-debug-mistakes.mdx<br>content/blog/node-version-mismatch-fix-mistakes.mdx |
-| 8 | 3/3 | 3 | 37 | mojibake-public, seo-warning, short-description, cannibalization, high-priority, freshness-high | content/blog/permission-denied-fix-mistakes.mdx<br>content/blog/codex-github-before-commit-checklist.mdx<br>content/blog/codex-vercel-deploy-preflight-checklist.mdx |
-| 9 | 3/3 | 3 | 36 | mojibake-public, seo-warning, freshness-high, high-priority, cannibalization, short-description | content/blog/codex-vs-claude-code-beginner-checklist.mdx<br>content/blog/git-authentication-failed-fix-mistakes.mdx<br>content/blog/ai-tools-recommendation-beginner.mdx |
-| 10 | 3/3 | 3 | 36 | mojibake-public, seo-warning, short-description, high-priority | content/blog/llm-cost-monitoring-dashboard-guide.mdx<br>content/blog/module-not-found-debug-freelance-scope.mdx<br>content/blog/node-version-mismatch-fix-freelance-scope.mdx |
-| 11 | 3/3 | 3 | 37 | mojibake-public, seo-warning, short-description, freshness-high | content/blog/ray-serve-llm-deployment-guide.mdx<br>content/blog/build-first-webpage-with-codex.mdx<br>content/blog/codex-install-failed-beginner-fix.mdx |
-| 12 | 3/3 | 3 | 39 | mojibake-public, short-description, freshness-high, cannibalization | content/blog/what-is-codex-beginner-start.mdx<br>content/blog/before-first-ai-freelance-job.mdx<br>content/blog/codex-automation-steps-not-skip.mdx |
-| 13 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-install-prerequisites-checklist.mdx<br>content/blog/codex-npm-install-errors.mdx<br>content/blog/codex-upwork-job-risk-check-freelance-scope.mdx |
-| 14 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-upwork-job-risk-check.mdx<br>content/blog/daily-ai-freelance-practice-log.mdx<br>content/blog/permission-denied-fix-checklist.mdx |
-| 15 | 3/3 | 3 | 33 | mojibake-public, freshness-high, cannibalization | content/blog/codex-code-review-delivery-checklist.mdx<br>content/blog/codex-upwork-small-job-risk-checklist.mdx<br>content/blog/git-authentication-failed-fix.mdx |
-| 16 | 3/3 | 3 | 33 | mojibake-public, cannibalization, short-description | content/blog/github-actions-build-log-debug-checklist.mdx<br>content/blog/node-version-mismatch-fix.mdx<br>content/blog/ai-ppt-beginner-guide.mdx |
-| 17 | 3/3 | 3 | 33 | mojibake-public, short-description | content/blog/codex-first-landing-page-freelance-scope.mdx<br>content/blog/dify-metadata-filtering-rag-guide.mdx<br>content/blog/rag-prompt-injection-defense-guide.mdx |
-| 18 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-nextjs-page-check-freelance-scope.mdx<br>content/blog/claude-code-nextjs-page-check-mistakes.mdx<br>content/blog/claude-code-nextjs-page-check.mdx |
-| 19 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/dev-works-build-fails-mistakes.mdx<br>content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx<br>content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
-| 20 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority, freshness-high | content/blog/nextjs-hydration-error-debug-mistakes.mdx<br>content/blog/codex-npm-install-error-beginner-fix.mdx<br>content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
-| 21 | 3/3 | 3 | 33 | seo-warning, short-description, freshness-high, high-priority, cannibalization | content/blog/upwork-proposal-no-reply-checklist.mdx<br>content/blog/vercel-env-variable-missing-beginner-guide.mdx<br>content/blog/ads-income-when-to-start.mdx |
-| 22 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/affiliate-vs-service-income-checklist.mdx<br>content/blog/affiliate-vs-service-income.mdx<br>content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
-| 23 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx<br>content/blog/ai-beginner-project-fit-check-checklist.mdx<br>content/blog/ai-beginner-project-fit-check-mistakes.mdx |
-| 24 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-beginner-project-fit-check.mdx<br>content/blog/ai-freelance-30-day-execution-checklist.mdx<br>content/blog/ai-freelance-30-day-execution-mistakes.mdx |
-| 25 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-freelance-automation-compliance-risk-checklist.mdx<br>content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx<br>content/blog/ai-freelance-common-misconceptions-mistakes.mdx |
-| 26 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-freelance-failure-review-mistakes.mdx<br>content/blog/ai-freelance-first-7-days-mistakes.mdx<br>content/blog/ai-freelance-service-page-copy-mistakes.mdx |
-| 27 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-freelance-skill-roadmap-mistakes.mdx<br>content/blog/ai-output-unstable-risk-control-checklist.mdx<br>content/blog/ai-output-unstable-risk-control-mistakes.mdx |
-| 28 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-output-unstable-risk-control.mdx<br>content/blog/ai-small-project-practice-topics-mistakes.mdx<br>content/blog/ai-small-project-practice-topics.mdx |
-| 29 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-tools-stack-free-start-mistakes.mdx<br>content/blog/ai-tools-stack-free-start.mdx<br>content/blog/api-key-invalid-or-missing-mistakes.mdx |
-| 30 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/bank-card-payment-platform-risk-checklist.mdx<br>content/blog/before-first-ai-freelance-job-checklist.mdx<br>content/blog/before-first-ai-freelance-job-mistakes.mdx |
-| 31 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/bugfix-delivery-note-template-checklist.mdx<br>content/blog/bugfix-delivery-note-template.mdx<br>content/blog/claude-code-automation-human-review-checklist.mdx |
-| 32 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-automation-human-review-freelance-scope.mdx<br>content/blog/claude-code-automation-human-review-mistakes.mdx<br>content/blog/claude-code-automation-human-review.mdx |
-| 33 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-beginner-mistakes.mdx<br>content/blog/claude-code-beginner-use-cases-freelance-scope.mdx<br>content/blog/claude-code-beginner-use-cases-mistakes.mdx |
-| 34 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-client-questions-checklist.mdx<br>content/blog/claude-code-client-questions-mistakes.mdx<br>content/blog/claude-code-client-questions.mdx |
-| 35 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-common-commands-checklist.mdx<br>content/blog/claude-code-delivery-note-mistakes.mdx<br>content/blog/claude-code-delivery-note.mdx |
-| 36 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-error-debug.mdx<br>content/blog/claude-code-github-file-scope-checklist.mdx<br>content/blog/claude-code-github-file-scope-freelance-scope.mdx |
-| 37 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-github-file-scope.mdx<br>content/blog/claude-code-install-prerequisites-checklist.mdx<br>content/blog/claude-code-install-prerequisites-mistakes.mdx |
-| 38 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-install-prerequisites.mdx<br>content/blog/claude-code-low-risk-freelance-jobs-freelance-scope.mdx<br>content/blog/claude-code-low-risk-freelance-jobs-mistakes.mdx |
-| 39 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-low-risk-freelance-jobs.mdx<br>content/blog/claude-code-proposal-review-checklist.mdx<br>content/blog/claude-code-proposal-review-mistakes.mdx |
-| 40 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-proposal-review.mdx<br>content/blog/claude-code-small-project-tasks-checklist.mdx<br>content/blog/claude-code-small-project-tasks-freelance-scope.mdx |
-| 41 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-small-project-tasks-mistakes.mdx<br>content/blog/claude-code-vs-codex-web-editing-freelance-scope.mdx<br>content/blog/claude-code-vs-codex-web-editing-mistakes.mdx |
-| 42 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-vs-codex-web-editing.mdx<br>content/blog/codex-automation-steps-not-skip-checklist.mdx<br>content/blog/codex-automation-steps-not-skip-freelance-scope.mdx |
-| 43 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-avoid-secret-leak-checklist.mdx<br>content/blog/codex-avoid-secret-leak-mistakes.mdx<br>content/blog/codex-avoid-secret-leak.mdx |
-| 44 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-bugfix-rollback-record-checklist.mdx<br>content/blog/codex-bugfix-rollback-record-mistakes.mdx<br>content/blog/codex-bugfix-rollback-record.mdx |
-| 45 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-client-requirement-questions-checklist.mdx<br>content/blog/codex-client-requirement-questions-mistakes.mdx<br>content/blog/codex-client-requirement-questions.mdx |
-| 46 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-codex-4-31.mdx<br>content/blog/codex-codex-4-34.mdx<br>content/blog/codex-edit-existing-ui-checklist.mdx |
-| 47 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-first-day-guide-mistakes.mdx<br>content/blog/codex-first-landing-page-mistakes.mdx<br>content/blog/codex-github-workflow-checklist.mdx |
-| 48 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-github-workflow-mistakes.mdx<br>content/blog/codex-github-workflow.mdx<br>content/blog/codex-install-prerequisites-mistakes.mdx |
-| 49 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-portfolio-page-assets-mistakes.mdx<br>content/blog/codex-readme-review-mistakes.mdx<br>content/blog/codex-review-generated-code-checklist.mdx |
-| 50 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-review-generated-code-mistakes.mdx<br>content/blog/codex-small-website-delivery-check-mistakes.mdx<br>content/blog/codex-tailwind-mobile-check-mistakes.mdx |
-| 51 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-upwork-job-risk-check-mistakes.mdx<br>content/blog/codex-vercel-deployment-mistakes.mdx<br>content/blog/codex-vs-cursor-web-editing-mistakes.mdx |
-| 52 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-windows-install-failed-mistakes.mdx<br>content/blog/daily-ai-freelance-practice-log-mistakes.mdx<br>content/blog/deliver-small-website-with-ai-no-code-mistakes.mdx |
-| 53 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/env-variable-missing-fix-mistakes.mdx<br>content/blog/eslint-error-should-not-disable-mistakes.mdx<br>content/blog/first-portfolio-case-realistic-mistakes.mdx |
-| 54 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/freelance-beginner-scope-confirmation-mistakes.mdx<br>content/blog/github-actions-build-log-debug-freelance-scope.mdx<br>content/blog/github-actions-build-log-debug-mistakes.mdx |
-| 55 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/no-code-ai-freelance-start-mistakes.mdx<br>content/blog/npm-command-not-found-fix-freelance-scope.mdx<br>content/blog/npm-command-not-found-fix-mistakes.mdx |
-| 56 | 3/3 | 3 | 33 | seo-warning, short-description, cannibalization, high-priority | content/blog/package-lock-conflict-fix-mistakes.mdx<br>content/blog/port-already-in-use-fix-mistakes.mdx<br>content/blog/practice-projects-before-clients-mistakes.mdx |
-| 57 | 3/3 | 3 | 30 | seo-warning, cannibalization, high-priority | content/blog/codex-codex-npm-install-4-33.mdx<br>content/blog/codex-css-spacing-responsive-mistakes.mdx<br>content/blog/dependency-conflict-fix-mistakes.mdx |
-| 58 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/agent-human-review-loop-guide.mdx<br>content/blog/agent-memory-design-guide.mdx<br>content/blog/agent-memory-postgres-schema-guide.mdx |
-| 59 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/agent-tool-permission-safety-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx |
-| 60 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/ai-coding-tools-risk-check-checklist.mdx<br>content/blog/ai-coding-tools-risk-check.mdx<br>content/blog/ai-content-human-review-template.mdx |
-| 61 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/ai-logo-design-beginner-guide.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-prompt-framework-business-guide.mdx |
-| 62 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/ai-resume-cover-letter-guide.mdx<br>content/blog/ai-tool-setup-service-checklist-checklist.mdx |
-| 63 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/ai-video-tools-beginner-guide.mdx<br>content/blog/ai-website-builder-beginner-guide.mdx<br>content/blog/anythingllm-local-rag-beginner-guide.mdx |
-| 64 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/api-key-invalid-or-missing-freelance-scope.mdx<br>content/blog/autogen-agent-framework-beginner-guide.mdx<br>content/blog/chatgpt-codex-claude-workflow-checklist.mdx |
-| 65 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/chatgpt-codex-claude-workflow.mdx<br>content/blog/chatgpt-vs-claude-proposal-checklist.mdx<br>content/blog/claude-api-beginner-guide.mdx |
-| 66 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/claude-code-beginner-mistakes-freelance-scope.mdx<br>content/blog/claude-code-bug-prompt-freelance-scope.mdx<br>content/blog/claude-code-client-questions-freelance-scope.mdx |
-| 67 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/claude-code-common-commands-freelance-scope.mdx<br>content/blog/claude-code-delivery-note-freelance-scope.mdx<br>content/blog/claude-code-error-debug-freelance-scope.mdx |
-| 68 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/claude-code-install-prerequisites-freelance-scope.mdx<br>content/blog/claude-code-proposal-review-freelance-scope.mdx<br>content/blog/client-acceptance-checklist-checklist.mdx |
-| 69 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/client-acceptance-checklist.mdx<br>content/blog/client-requirement-form-questions-checklist.mdx<br>content/blog/client-requirement-form-questions.mdx |
-| 70 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/cloudflare-workers-ai-beginner-guide.mdx<br>content/blog/codex-avoid-secret-leak-freelance-scope.mdx<br>content/blog/codex-bugfix-rollback-record-freelance-scope.mdx |
-| 71 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/codex-client-requirement-questions-freelance-scope.mdx<br>content/blog/codex-codex-claude-code-4-40.mdx<br>content/blog/codex-codex-css-bug-4-35.mdx |
-| 72 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/codex-codex-github-4-36.mdx<br>content/blog/codex-codex-upwork-4-39.mdx<br>content/blog/codex-edit-existing-ui-freelance-scope.mdx |
-| 73 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/codex-first-day-guide-freelance-scope.mdx<br>content/blog/codex-github-workflow-freelance-scope.mdx<br>content/blog/codex-portfolio-page-assets-freelance-scope.mdx |
-| 74 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/codex-project-start-checklist-checklist.mdx<br>content/blog/crewai-agent-deployment-beginner-guide.mdx<br>content/blog/dify-coze-flowise-agent-builder-comparison.mdx |
-| 75 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/dify-docker-compose-self-host-guide.mdx<br>content/blog/dify-ollama-local-model-guide.mdx<br>content/blog/dify-openai-api-provider-guide.mdx |
-| 76 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/enterprise-im-ai-agent-integration-guide.mdx |
-| 77 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/fastgpt-knowledge-base-deployment-guide.mdx<br>content/blog/flowise-ollama-local-rag-checklist.mdx<br>content/blog/freelance-weekly-review-template-checklist.mdx |
-| 78 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/gemini-api-nextjs-guide.mdx<br>content/blog/git-authentication-failed-fix-freelance-scope.mdx<br>content/blog/groq-api-fast-llm-guide.mdx |
-| 79 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/healthcare-admin-ai-prompts-guide.mdx<br>content/blog/helicone-llm-observability-guide.mdx<br>content/blog/hr-recruiting-ai-prompts-guide.mdx |
-| 80 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/huggingface-spaces-ai-demo-guide.mdx<br>content/blog/knowledge-base-permission-design-guide.mdx<br>content/blog/langchain-rag-beginner-guide.mdx |
-| 81 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/langgraph-agent-beginner-guide.mdx<br>content/blog/litellm-proxy-beginner-guide.mdx<br>content/blog/llamaindex-rag-beginner-guide.mdx |
-| 82 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/llm-api-rate-limit-retry-guide.mdx<br>content/blog/local-llm-deployment-beginner.mdx<br>content/blog/mcp-server-deployment-security-checklist.mdx |
-| 83 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/multi-model-router-fallback-guide.mdx<br>content/blog/n8n-ai-agent-rag-memory-guide.mdx<br>content/blog/n8n-ai-agent-webhook-production-guide.mdx |
-| 84 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/open-webui-ollama-docker-guide.mdx<br>content/blog/openai-api-nextjs-route-handler-guide.mdx |
-| 85 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/openrouter-api-beginner-guide.mdx<br>content/blog/package-lock-conflict-fix-freelance-scope.mdx<br>content/blog/payment-account-info-mismatch-risk-checklist.mdx |
-| 86 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/pinecone-rag-beginner-guide.mdx<br>content/blog/port-already-in-use-fix-freelance-scope.mdx<br>content/blog/quote-email-uncertain-scope-checklist.mdx |
-| 87 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/rag-citation-source-trace-guide.mdx<br>content/blog/rag-document-cleaning-before-upload-guide.mdx<br>content/blog/rag-knowledge-base-beginner-guide.mdx |
-| 88 | 3/3 | 3 | 30 | seo-warning, short-description, high-priority | content/blog/runpod-serverless-llm-deployment-guide.mdx<br>content/blog/small-site-launch-sop-checklist.mdx<br>content/blog/subscription-payment-failed-message-checklist.mdx |
-| 89 | 3/3 | 3 | 33 | short-description, cannibalization, high-priority | content/blog/dev-works-build-fails-checklist.mdx<br>content/blog/dev-works-build-fails.mdx<br>content/blog/failed-to-push-some-refs-fix-checklist.mdx |
-| 90 | 3/3 | 1 | 29 | short-description, cannibalization, high-priority, seo-warning | content/blog/nextjs-hydration-error-debug-checklist.mdx<br>content/blog/arize-phoenix-llm-observability-guide.mdx<br>content/blog/bentoml-llm-deployment-beginner-guide.mdx |
-| 91 | 3/3 | 0 | 27 | seo-warning | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx<br>content/blog/huggingface-tgi-deployment-guide.mdx<br>content/blog/kubernetes-gpu-llm-deployment-guide.mdx |
-| 92 | 3/3 | 0 | 27 | seo-warning | content/blog/langsmith-observability-evaluation-guide.mdx<br>content/blog/modal-serverless-gpu-llm-guide.mdx<br>content/blog/openai-agents-sdk-beginner-guide.mdx |
-| 93 | 3/3 | 0 | 27 | seo-warning | content/blog/promptfoo-llm-evaluation-beginner-guide.mdx<br>content/blog/ragas-rag-evaluation-beginner-guide.mdx<br>content/blog/replicate-api-ai-demo-guide.mdx |
-| 94 | 3/3 | 0 | 31 | short-description, freshness-high, cannibalization | content/blog/codex-generated-code-review-guide.mdx<br>content/blog/failed-to-push-some-refs-fix.mdx<br>content/blog/nextjs-hydration-error-debug.mdx |
-| 95 | 3/3 | 0 | 33 | short-description, freshness-high, cannibalization | content/blog/upwork-client-requirements-analysis-beginner.mdx<br>content/blog/ads-income-when-to-start-checklist.mdx<br>content/blog/ai-assisted-vs-automated-delivery.mdx |
-| 96 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-30-day-execution.mdx<br>content/blog/ai-freelance-automation-compliance-risk.mdx<br>content/blog/ai-freelance-common-misconceptions-checklist.mdx |
-| 97 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-common-misconceptions.mdx<br>content/blog/ai-freelance-failure-review-checklist.mdx<br>content/blog/ai-freelance-failure-review.mdx |
-| 98 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-first-7-days-checklist.mdx<br>content/blog/ai-freelance-first-7-days.mdx<br>content/blog/ai-freelance-service-page-copy-checklist.mdx |
-| 99 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-service-page-copy.mdx<br>content/blog/ai-freelance-skill-roadmap-checklist.mdx<br>content/blog/ai-freelance-skill-roadmap.mdx |
-| 100 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-tools-stack-free-start-checklist.mdx<br>content/blog/api-key-invalid-or-missing-checklist.mdx<br>content/blog/api-key-invalid-or-missing.mdx |
-| 101 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/bank-card-payment-platform-risk.mdx<br>content/blog/canva-portfolio-cover-tips.mdx<br>content/blog/claude-code-bug-prompt-checklist.mdx |
-| 102 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/claude-code-delivery-note-checklist.mdx<br>content/blog/claude-code-error-debug-checklist.mdx<br>content/blog/claude-code-low-risk-freelance-jobs-checklist.mdx |
-| 103 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/claude-code-nextjs-page-check-checklist.mdx<br>content/blog/codex-codex-4-32.mdx<br>content/blog/codex-codex-4-38.mdx |
-| 104 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-edit-existing-ui.mdx<br>content/blog/codex-first-day-guide.mdx<br>content/blog/codex-first-landing-page-checklist.mdx |
-| 105 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-first-landing-page.mdx<br>content/blog/codex-install-prerequisites.mdx<br>content/blog/codex-npm-install-errors-checklist.mdx |
-| 106 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-portfolio-page-assets-checklist.mdx<br>content/blog/codex-portfolio-page-assets.mdx<br>content/blog/codex-readme-review-checklist.mdx |
-| 107 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-readme-review.mdx<br>content/blog/codex-review-generated-code.mdx<br>content/blog/codex-small-website-delivery-check-checklist.mdx |
-| 108 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-small-website-delivery-check-freelance-scope.mdx<br>content/blog/codex-small-website-delivery-check.mdx<br>content/blog/codex-tailwind-mobile-check-checklist.mdx |
-| 109 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-tailwind-mobile-check.mdx<br>content/blog/codex-upwork-job-risk-check-checklist.mdx<br>content/blog/codex-vercel-deployment-checklist.mdx |
-| 110 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-vercel-deployment.mdx<br>content/blog/codex-vs-cursor-web-editing-checklist.mdx<br>content/blog/codex-vs-cursor-web-editing.mdx |
-| 111 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-windows-install-failed-checklist.mdx<br>content/blog/codex-windows-install-failed.mdx<br>content/blog/daily-ai-freelance-practice-log-checklist.mdx |
-| 112 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/deliver-small-website-with-ai-no-code-checklist.mdx<br>content/blog/deliver-small-website-with-ai-no-code.mdx<br>content/blog/dependency-conflict-fix-checklist.mdx |
-| 113 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/dev-works-build-fails-freelance-scope.mdx<br>content/blog/env-variable-missing-fix-checklist.mdx<br>content/blog/env-variable-missing-fix.mdx |
-| 114 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/eslint-error-should-not-disable-checklist.mdx<br>content/blog/eslint-error-should-not-disable-freelance-scope.mdx<br>content/blog/eslint-error-should-not-disable.mdx |
-| 115 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/first-portfolio-case-realistic-checklist.mdx<br>content/blog/first-portfolio-case-realistic.mdx<br>content/blog/freelance-beginner-scope-confirmation-checklist.mdx |
-| 116 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/freelance-beginner-scope-confirmation.mdx<br>content/blog/git-authentication-failed-fix-checklist.mdx<br>content/blog/module-not-found-debug-checklist.mdx |
-| 117 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/nextjs-hydration-error-debug-freelance-scope.mdx<br>content/blog/no-code-ai-freelance-start-checklist.mdx<br>content/blog/no-code-ai-freelance-start.mdx |
-| 118 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/node-version-mismatch-fix-checklist.mdx<br>content/blog/npm-command-not-found-fix-checklist.mdx<br>content/blog/package-lock-conflict-fix-checklist.mdx |
-| 119 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/package-lock-conflict-fix.mdx<br>content/blog/port-already-in-use-fix-checklist.mdx<br>content/blog/port-already-in-use-fix.mdx |
-| 120 | 3/3 | 0 | 31 | short-description, cannibalization | content/blog/practice-projects-before-clients-checklist.mdx<br>content/blog/practice-projects-before-clients.mdx<br>content/blog/codex-css-spacing-responsive-checklist.mdx |
-| 121 | 3/3 | 0 | 27 | cannibalization | content/blog/codex-css-spacing-responsive.mdx<br>content/blog/dependency-conflict-fix.mdx<br>content/blog/github-actions-build-log-debug.mdx |
-| 122 | 3/3 | 0 | 27 | cannibalization | content/blog/module-not-found-debug.mdx<br>content/blog/npm-command-not-found-fix.mdx<br>content/blog/permission-denied-fix.mdx |
-| 123 | 3/3 | 0 | 27 | short-description | content/blog/agent-deployment-beginner-guide.mdx<br>content/blog/agent-observability-logging-guide.mdx<br>content/blog/agent-production-deployment-checklist.mdx |
-| 124 | 3/3 | 0 | 27 | short-description | content/blog/agent-tool-calling-beginner-guide.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx |
-| 125 | 3/3 | 0 | 27 | short-description | content/blog/ai-content-human-review-template-checklist.mdx<br>content/blog/ai-freelance-daily-planner-checklist.mdx<br>content/blog/ai-freelance-daily-planner.mdx |
-| 126 | 3/3 | 0 | 27 | short-description | content/blog/ai-tool-setup-service-checklist.mdx<br>content/blog/chatgpt-how-to-use-beginner-guide.mdx<br>content/blog/chatgpt-prompt-template-beginner.mdx |
-| 127 | 3/3 | 0 | 27 | short-description | content/blog/chatgpt-vs-claude-proposal.mdx<br>content/blog/chroma-vector-database-rag-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx |
-| 128 | 3/3 | 0 | 27 | short-description | content/blog/cloudflare-vs-namecheap-domain-checklist.mdx<br>content/blog/codex-codex-vercel-4-37.mdx<br>content/blog/codex-install-prerequisites-freelance-scope.mdx |
-| 129 | 3/3 | 0 | 27 | short-description | content/blog/codex-npm-install-errors-freelance-scope.mdx<br>content/blog/codex-project-start-checklist.mdx<br>content/blog/codex-readme-review-freelance-scope.mdx |
-| 130 | 3/3 | 0 | 27 | short-description | content/blog/codex-review-generated-code-freelance-scope.mdx<br>content/blog/codex-tailwind-mobile-check-freelance-scope.mdx<br>content/blog/codex-vercel-deployment-freelance-scope.mdx |
-| 131 | 3/3 | 0 | 27 | short-description | content/blog/codex-vs-claude-code-beginner.mdx<br>content/blog/codex-vs-cursor-web-editing-freelance-scope.mdx<br>content/blog/codex-windows-install-failed-freelance-scope.mdx |
-| 132 | 3/3 | 0 | 27 | short-description | content/blog/coze-bot-publish-checklist.mdx<br>content/blog/cursor-vs-codex-web-editing-checklist.mdx<br>content/blog/customer-service-ai-prompts-guide.mdx |
-| 133 | 3/3 | 0 | 27 | short-description | content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/dependency-conflict-fix-freelance-scope.mdx<br>content/blog/dify-knowledge-base-beginner-guide.mdx |
-| 134 | 3/3 | 0 | 27 | short-description | content/blog/digital-template-refund-policy-checklist.mdx<br>content/blog/ecommerce-ai-prompts-guide.mdx<br>content/blog/education-ai-prompts-guide.mdx |
-| 135 | 3/3 | 0 | 27 | short-description | content/blog/embedding-model-selection-guide.mdx<br>content/blog/english-client-reply-template-honest-checklist.mdx<br>content/blog/english-client-reply-template-honest.mdx |
-| 136 | 3/3 | 0 | 27 | short-description | content/blog/env-variable-missing-fix-freelance-scope.mdx<br>content/blog/finance-ai-prompts-guide.mdx<br>content/blog/first-freelance-payment-check-checklist.mdx |
-| 137 | 3/3 | 0 | 27 | short-description | content/blog/first-freelance-payment-check.mdx<br>content/blog/flowise-local-deployment-beginner-guide.mdx<br>content/blog/freelance-platform-tool-stack-checklist.mdx |
-| 138 | 3/3 | 0 | 27 | short-description | content/blog/freelance-platform-tool-stack.mdx<br>content/blog/freelance-quote-template-fill-checklist.mdx<br>content/blog/freelance-quote-template-fill.mdx |
-| 139 | 3/3 | 0 | 27 | short-description | content/blog/freelance-weekly-review-template.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx<br>content/blog/github-command-cheatsheet-beginner-checklist.mdx |
-| 140 | 3/3 | 0 | 27 | short-description | content/blog/github-command-cheatsheet-beginner.mdx<br>content/blog/github-vercel-beginner-site-checklist.mdx<br>content/blog/github-vercel-beginner-site.mdx |
-| 141 | 3/3 | 0 | 27 | short-description | content/blog/google-analytics-when-to-add-checklist.mdx<br>content/blog/gumroad-template-selling-prep-checklist.mdx<br>content/blog/gumroad-template-selling-prep.mdx |
-| 142 | 3/3 | 0 | 27 | short-description | content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/international-payment-fee-estimate-checklist.mdx<br>content/blog/international-payment-fee-estimate.mdx |
-| 143 | 3/3 | 0 | 27 | short-description | content/blog/legal-contract-ai-prompts-guide.mdx<br>content/blog/lemon-squeezy-digital-products-checklist.mdx<br>content/blog/lemon-squeezy-digital-products.mdx |
-| 144 | 3/3 | 0 | 27 | short-description | content/blog/llama-cpp-server-beginner-guide.mdx<br>content/blog/llm-api-integration-deployment-checklist.mdx<br>content/blog/llm-deployment-beginner-guide.mdx |
-| 145 | 3/3 | 0 | 27 | short-description | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/llm-finetuning-vs-rag-beginner-guide.mdx<br>content/blog/llm-serving-cost-latency-checklist.mdx |
-| 146 | 3/3 | 0 | 27 | short-description | content/blog/lm-studio-local-api-guide.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/make-vs-zapier-automation-checklist.mdx |
-| 147 | 3/3 | 0 | 27 | short-description | content/blog/make-vs-zapier-automation.mdx<br>content/blog/manufacturing-ai-prompts-guide.mdx<br>content/blog/marketing-ai-prompts-guide.mdx |
-| 148 | 3/3 | 0 | 27 | short-description | content/blog/mcp-beginner-guide-agent-tools.mdx<br>content/blog/n8n-ai-agent-self-host-guide.mdx<br>content/blog/notion-freelance-workflow-checklist.mdx |
-| 149 | 3/3 | 0 | 27 | short-description | content/blog/notion-freelance-workflow.mdx<br>content/blog/ollama-api-web-app-integration.mdx<br>content/blog/ollama-local-model-deployment-guide.mdx |
-| 150 | 3/3 | 0 | 27 | short-description | content/blog/openai-batch-api-cost-guide.mdx<br>content/blog/operations-ai-prompts-guide.mdx<br>content/blog/paddle-vs-stripe-beginner-checklist.mdx |
-| 151 | 3/3 | 0 | 27 | short-description | content/blog/paddle-vs-stripe-beginner.mdx<br>content/blog/payment-account-info-mismatch-risk.mdx<br>content/blog/payment-page-disclaimer-checklist.mdx |
-| 152 | 3/3 | 0 | 27 | short-description | content/blog/payment-page-disclaimer.mdx<br>content/blog/payoneer-freelancer-beginner-checklist.mdx<br>content/blog/payoneer-freelancer-beginner.mdx |
-| 153 | 3/3 | 0 | 27 | short-description | content/blog/payoneer-wise-paypal-choose-checklist.mdx<br>content/blog/payoneer-wise-paypal-choose.mdx<br>content/blog/paypal-freelancer-limits-checklist.mdx |
-| 154 | 3/3 | 0 | 27 | short-description | content/blog/paypal-freelancer-limits.mdx<br>content/blog/paypal-vs-payoneer-beginner-checklist.mdx<br>content/blog/paypal-vs-payoneer-beginner.mdx |
-| 155 | 3/3 | 0 | 27 | short-description | content/blog/permission-denied-fix-freelance-scope.mdx<br>content/blog/platform-payment-vs-direct-payment-checklist.mdx<br>content/blog/platform-payment-vs-direct-payment.mdx |
-| 156 | 3/3 | 0 | 27 | short-description | content/blog/portfolio-page-copy-template-checklist.mdx<br>content/blog/portfolio-page-copy-template.mdx<br>content/blog/practice-project-log-template-checklist.mdx |
-| 157 | 3/3 | 0 | 27 | short-description | content/blog/practice-project-log-template.mdx<br>content/blog/pre-project-risk-assessment-template-checklist.mdx<br>content/blog/pre-project-risk-assessment-template.mdx |
-| 158 | 3/3 | 0 | 27 | short-description | content/blog/product-manager-ai-prompts-guide.mdx<br>content/blog/project-delivery-checklist-items-checklist.mdx<br>content/blog/project-delivery-checklist-items.mdx |
-| 159 | 3/3 | 0 | 27 | short-description | content/blog/project-retrospective-template-checklist.mdx<br>content/blog/project-retrospective-template.mdx<br>content/blog/qdrant-vector-database-beginner-guide.mdx |
-| 160 | 3/3 | 0 | 27 | short-description | content/blog/quote-email-uncertain-scope.mdx<br>content/blog/rag-chunking-strategy-guide.mdx<br>content/blog/rag-evaluation-test-set-guide.mdx |
-| 161 | 3/3 | 0 | 27 | short-description | content/blog/rag-retrieval-no-context-debug-guide.mdx<br>content/blog/real-estate-ai-prompts-guide.mdx<br>content/blog/sales-ai-prompts-guide.mdx |
-| 162 | 3/3 | 0 | 27 | short-description | content/blog/service-inquiry-form-questions-checklist.mdx<br>content/blog/service-inquiry-form-questions.mdx<br>content/blog/service-payment-method-beginner-checklist.mdx |
-| 163 | 3/3 | 0 | 27 | short-description | content/blog/service-payment-method-beginner.mdx<br>content/blog/small-site-launch-sop.mdx<br>content/blog/software-development-ai-prompts-guide.mdx |
-| 164 | 3/3 | 0 | 25 | short-description | content/blog/stripe-templates-vs-services-checklist.mdx<br>content/blog/stripe-templates-vs-services.mdx<br>content/blog/cloudflare-vs-namecheap-domain.mdx |
-| 165 | 3/3 | 0 | 21 | none | content/blog/codex-css-spacing-responsive-freelance-scope.mdx<br>content/blog/cursor-vs-codex-web-editing.mdx<br>content/blog/digital-template-refund-policy.mdx |
-| 166 | 3/3 | 0 | 21 | none | content/blog/free-seo-tools-beginner-checklist.mdx<br>content/blog/free-seo-tools-beginner.mdx<br>content/blog/google-analytics-when-to-add.mdx |
-| 167 | 2/2 | 0 | 14 | none | content/blog/google-search-console-new-site-checklist.mdx<br>content/blog/google-search-console-new-site.mdx |
+| 1 | 3/3 | 3 | 39 | mojibake-public, short-description, freshness-high | content/blog/build-first-webpage-with-codex.mdx<br>content/blog/codex-install-failed-beginner-fix.mdx<br>content/blog/first-upwork-project-pricing-checklist.mdx |
+| 2 | 3/3 | 3 | 39 | mojibake-public, short-description, freshness-high, cannibalization | content/blog/what-is-codex-beginner-start.mdx<br>content/blog/ai-small-project-practice-topics-checklist.mdx<br>content/blog/before-first-ai-freelance-job.mdx |
+| 3 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/canva-portfolio-cover-tips-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-mistakes.mdx |
+| 4 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-beginner-use-cases-checklist.mdx<br>content/blog/claude-code-beginner-use-cases.mdx<br>content/blog/claude-code-bug-prompt-mistakes.mdx |
+| 5 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-bug-prompt.mdx<br>content/blog/claude-code-common-commands-mistakes.mdx<br>content/blog/claude-code-common-commands.mdx |
+| 6 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-error-debug-mistakes.mdx<br>content/blog/claude-code-github-file-scope-mistakes.mdx<br>content/blog/claude-code-small-project-tasks.mdx |
+| 7 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/claude-code-vs-codex-web-editing-checklist.mdx<br>content/blog/codex-automation-steps-not-skip-mistakes.mdx<br>content/blog/codex-automation-steps-not-skip.mdx |
+| 8 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-edit-existing-ui-mistakes.mdx<br>content/blog/codex-first-day-guide-checklist.mdx<br>content/blog/codex-install-prerequisites-checklist.mdx |
+| 9 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-npm-install-errors-mistakes.mdx<br>content/blog/codex-npm-install-errors.mdx<br>content/blog/codex-upwork-job-risk-check-freelance-scope.mdx |
+| 10 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/codex-upwork-job-risk-check.mdx<br>content/blog/daily-ai-freelance-practice-log.mdx<br>content/blog/module-not-found-debug-mistakes.mdx |
+| 11 | 3/3 | 3 | 39 | mojibake-public, short-description, cannibalization | content/blog/node-version-mismatch-fix-mistakes.mdx<br>content/blog/permission-denied-fix-checklist.mdx<br>content/blog/permission-denied-fix-mistakes.mdx |
+| 12 | 3/3 | 3 | 33 | mojibake-public, freshness-high | content/blog/codex-code-review-delivery-checklist.mdx<br>content/blog/codex-github-before-commit-checklist.mdx<br>content/blog/codex-upwork-small-job-risk-checklist.mdx |
+| 13 | 3/3 | 3 | 33 | mojibake-public, freshness-high, cannibalization | content/blog/codex-vercel-deploy-preflight-checklist.mdx<br>content/blog/codex-vs-claude-code-beginner-checklist.mdx<br>content/blog/git-authentication-failed-fix-mistakes.mdx |
+| 14 | 3/3 | 3 | 33 | mojibake-public, cannibalization | content/blog/git-authentication-failed-fix.mdx<br>content/blog/github-actions-build-log-debug-checklist.mdx<br>content/blog/node-version-mismatch-fix.mdx |
+| 15 | 3/3 | 3 | 33 | mojibake-public, short-description | content/blog/ai-ppt-beginner-guide.mdx<br>content/blog/ai-tools-recommendation-beginner.mdx<br>content/blog/codex-first-landing-page-freelance-scope.mdx |
+| 16 | 3/3 | 3 | 33 | mojibake-public, short-description | content/blog/dify-metadata-filtering-rag-guide.mdx<br>content/blog/llm-cost-monitoring-dashboard-guide.mdx<br>content/blog/module-not-found-debug-freelance-scope.mdx |
+| 17 | 3/3 | 3 | 31 | mojibake-public, short-description | content/blog/node-version-mismatch-fix-freelance-scope.mdx<br>content/blog/rag-prompt-injection-defense-guide.mdx<br>content/blog/ray-serve-llm-deployment-guide.mdx |
+| 18 | 3/3 | 3 | 33 | short-description, cannibalization, high-priority | content/blog/dev-works-build-fails-checklist.mdx<br>content/blog/dev-works-build-fails-mistakes.mdx<br>content/blog/dev-works-build-fails.mdx |
+| 19 | 3/3 | 3 | 33 | short-description, cannibalization, high-priority | content/blog/failed-to-push-some-refs-fix-checklist.mdx<br>content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx<br>content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
+| 20 | 3/3 | 2 | 33 | short-description, cannibalization, high-priority, freshness-high | content/blog/nextjs-hydration-error-debug-checklist.mdx<br>content/blog/nextjs-hydration-error-debug-mistakes.mdx<br>content/blog/codex-npm-install-error-beginner-fix.mdx |
+| 21 | 3/3 | 0 | 31 | short-description, freshness-high, cannibalization | content/blog/codex-generated-code-review-guide.mdx<br>content/blog/failed-to-push-some-refs-fix.mdx<br>content/blog/nextjs-hydration-error-debug.mdx |
+| 22 | 3/3 | 0 | 33 | short-description, freshness-high | content/blog/payoneer-wise-paypal-beginner-comparison.mdx<br>content/blog/upwork-client-requirements-analysis-beginner.mdx<br>content/blog/upwork-proposal-no-reply-checklist.mdx |
+| 23 | 3/3 | 0 | 33 | short-description, freshness-high, cannibalization | content/blog/vercel-env-variable-missing-beginner-guide.mdx<br>content/blog/ads-income-when-to-start-checklist.mdx<br>content/blog/ads-income-when-to-start.mdx |
+| 24 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/affiliate-vs-service-income-checklist.mdx<br>content/blog/affiliate-vs-service-income.mdx<br>content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
+| 25 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx<br>content/blog/ai-assisted-vs-automated-delivery.mdx<br>content/blog/ai-beginner-project-fit-check-checklist.mdx |
+| 26 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-beginner-project-fit-check-mistakes.mdx<br>content/blog/ai-beginner-project-fit-check.mdx<br>content/blog/ai-freelance-30-day-execution-checklist.mdx |
+| 27 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-30-day-execution-mistakes.mdx<br>content/blog/ai-freelance-30-day-execution.mdx<br>content/blog/ai-freelance-automation-compliance-risk-checklist.mdx |
+| 28 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx<br>content/blog/ai-freelance-automation-compliance-risk.mdx<br>content/blog/ai-freelance-common-misconceptions-checklist.mdx |
+| 29 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-common-misconceptions-mistakes.mdx<br>content/blog/ai-freelance-common-misconceptions.mdx<br>content/blog/ai-freelance-failure-review-checklist.mdx |
+| 30 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-failure-review-mistakes.mdx<br>content/blog/ai-freelance-failure-review.mdx<br>content/blog/ai-freelance-first-7-days-checklist.mdx |
+| 31 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-first-7-days-mistakes.mdx<br>content/blog/ai-freelance-first-7-days.mdx<br>content/blog/ai-freelance-service-page-copy-checklist.mdx |
+| 32 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-service-page-copy-mistakes.mdx<br>content/blog/ai-freelance-service-page-copy.mdx<br>content/blog/ai-freelance-skill-roadmap-checklist.mdx |
+| 33 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-freelance-skill-roadmap-mistakes.mdx<br>content/blog/ai-freelance-skill-roadmap.mdx<br>content/blog/ai-output-unstable-risk-control-checklist.mdx |
+| 34 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-output-unstable-risk-control-mistakes.mdx<br>content/blog/ai-output-unstable-risk-control.mdx<br>content/blog/ai-small-project-practice-topics-mistakes.mdx |
+| 35 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-small-project-practice-topics.mdx<br>content/blog/ai-tools-stack-free-start-checklist.mdx<br>content/blog/ai-tools-stack-free-start-mistakes.mdx |
+| 36 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/ai-tools-stack-free-start.mdx<br>content/blog/api-key-invalid-or-missing-checklist.mdx<br>content/blog/api-key-invalid-or-missing-mistakes.mdx |
+| 37 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/api-key-invalid-or-missing.mdx<br>content/blog/bank-card-payment-platform-risk-checklist.mdx<br>content/blog/bank-card-payment-platform-risk.mdx |
+| 38 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/before-first-ai-freelance-job-checklist.mdx<br>content/blog/before-first-ai-freelance-job-mistakes.mdx<br>content/blog/bugfix-delivery-note-template-checklist.mdx |
+| 39 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/bugfix-delivery-note-template.mdx<br>content/blog/canva-portfolio-cover-tips.mdx<br>content/blog/chatgpt-vs-claude-proposal-checklist.mdx |
+| 40 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/chatgpt-vs-claude-proposal.mdx<br>content/blog/claude-code-automation-human-review-checklist.mdx<br>content/blog/claude-code-automation-human-review-freelance-scope.mdx |
+| 41 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/claude-code-automation-human-review-mistakes.mdx<br>content/blog/claude-code-automation-human-review.mdx<br>content/blog/claude-code-beginner-mistakes.mdx |
+| 42 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/claude-code-beginner-use-cases-freelance-scope.mdx<br>content/blog/claude-code-beginner-use-cases-mistakes.mdx<br>content/blog/claude-code-bug-prompt-checklist.mdx |
+| 43 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/claude-code-client-questions-checklist.mdx<br>content/blog/claude-code-client-questions-mistakes.mdx<br>content/blog/claude-code-client-questions.mdx |
+| 44 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/claude-code-common-commands-checklist.mdx<br>content/blog/claude-code-delivery-note-checklist.mdx<br>content/blog/claude-code-delivery-note-mistakes.mdx |
+| 45 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/claude-code-delivery-note.mdx<br>content/blog/claude-code-error-debug-checklist.mdx<br>content/blog/claude-code-error-debug.mdx |
+| 46 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/claude-code-github-file-scope-checklist.mdx<br>content/blog/claude-code-github-file-scope-freelance-scope.mdx<br>content/blog/claude-code-github-file-scope.mdx |
+| 47 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/claude-code-install-prerequisites-checklist.mdx<br>content/blog/claude-code-install-prerequisites-mistakes.mdx<br>content/blog/claude-code-install-prerequisites.mdx |
+| 48 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/claude-code-low-risk-freelance-jobs-checklist.mdx<br>content/blog/claude-code-low-risk-freelance-jobs-freelance-scope.mdx<br>content/blog/claude-code-low-risk-freelance-jobs-mistakes.mdx |
+| 49 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/claude-code-low-risk-freelance-jobs.mdx<br>content/blog/claude-code-nextjs-page-check-checklist.mdx<br>content/blog/claude-code-nextjs-page-check-freelance-scope.mdx |
+| 50 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/claude-code-nextjs-page-check-mistakes.mdx<br>content/blog/claude-code-nextjs-page-check.mdx<br>content/blog/claude-code-proposal-review-checklist.mdx |
+| 51 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/claude-code-proposal-review-mistakes.mdx<br>content/blog/claude-code-proposal-review.mdx<br>content/blog/claude-code-small-project-tasks-checklist.mdx |
+| 52 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/claude-code-small-project-tasks-freelance-scope.mdx<br>content/blog/claude-code-small-project-tasks-mistakes.mdx<br>content/blog/claude-code-vs-codex-web-editing-freelance-scope.mdx |
+| 53 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/claude-code-vs-codex-web-editing-mistakes.mdx<br>content/blog/claude-code-vs-codex-web-editing.mdx<br>content/blog/codex-automation-steps-not-skip-checklist.mdx |
+| 54 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-automation-steps-not-skip-freelance-scope.mdx<br>content/blog/codex-avoid-secret-leak-checklist.mdx<br>content/blog/codex-avoid-secret-leak-mistakes.mdx |
+| 55 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-avoid-secret-leak.mdx<br>content/blog/codex-bugfix-rollback-record-checklist.mdx<br>content/blog/codex-bugfix-rollback-record-mistakes.mdx |
+| 56 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-bugfix-rollback-record.mdx<br>content/blog/codex-client-requirement-questions-checklist.mdx<br>content/blog/codex-client-requirement-questions-mistakes.mdx |
+| 57 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-client-requirement-questions.mdx<br>content/blog/codex-codex-4-31.mdx<br>content/blog/codex-codex-4-32.mdx |
+| 58 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-codex-4-34.mdx<br>content/blog/codex-codex-4-38.mdx<br>content/blog/codex-edit-existing-ui-checklist.mdx |
+| 59 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-edit-existing-ui.mdx<br>content/blog/codex-first-day-guide-mistakes.mdx<br>content/blog/codex-first-day-guide.mdx |
+| 60 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-first-landing-page-checklist.mdx<br>content/blog/codex-first-landing-page-mistakes.mdx<br>content/blog/codex-first-landing-page.mdx |
+| 61 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-github-workflow-checklist.mdx<br>content/blog/codex-github-workflow-mistakes.mdx<br>content/blog/codex-github-workflow.mdx |
+| 62 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-install-prerequisites-mistakes.mdx<br>content/blog/codex-install-prerequisites.mdx<br>content/blog/codex-npm-install-errors-checklist.mdx |
+| 63 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-portfolio-page-assets-checklist.mdx<br>content/blog/codex-portfolio-page-assets-mistakes.mdx<br>content/blog/codex-portfolio-page-assets.mdx |
+| 64 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-readme-review-checklist.mdx<br>content/blog/codex-readme-review-mistakes.mdx<br>content/blog/codex-readme-review.mdx |
+| 65 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-review-generated-code-checklist.mdx<br>content/blog/codex-review-generated-code-mistakes.mdx<br>content/blog/codex-review-generated-code.mdx |
+| 66 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-small-website-delivery-check-checklist.mdx<br>content/blog/codex-small-website-delivery-check-freelance-scope.mdx<br>content/blog/codex-small-website-delivery-check-mistakes.mdx |
+| 67 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-small-website-delivery-check.mdx<br>content/blog/codex-tailwind-mobile-check-checklist.mdx<br>content/blog/codex-tailwind-mobile-check-mistakes.mdx |
+| 68 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-tailwind-mobile-check.mdx<br>content/blog/codex-upwork-job-risk-check-checklist.mdx<br>content/blog/codex-upwork-job-risk-check-mistakes.mdx |
+| 69 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-vercel-deployment-checklist.mdx<br>content/blog/codex-vercel-deployment-mistakes.mdx<br>content/blog/codex-vercel-deployment.mdx |
+| 70 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-vs-cursor-web-editing-checklist.mdx<br>content/blog/codex-vs-cursor-web-editing-mistakes.mdx<br>content/blog/codex-vs-cursor-web-editing.mdx |
+| 71 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/codex-windows-install-failed-checklist.mdx<br>content/blog/codex-windows-install-failed-mistakes.mdx<br>content/blog/codex-windows-install-failed.mdx |
+| 72 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/daily-ai-freelance-practice-log-checklist.mdx<br>content/blog/daily-ai-freelance-practice-log-mistakes.mdx<br>content/blog/deliver-small-website-with-ai-no-code-checklist.mdx |
+| 73 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/deliver-small-website-with-ai-no-code-mistakes.mdx<br>content/blog/deliver-small-website-with-ai-no-code.mdx<br>content/blog/dependency-conflict-fix-checklist.mdx |
+| 74 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/dev-works-build-fails-freelance-scope.mdx<br>content/blog/env-variable-missing-fix-checklist.mdx<br>content/blog/env-variable-missing-fix-mistakes.mdx |
+| 75 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/env-variable-missing-fix.mdx<br>content/blog/eslint-error-should-not-disable-checklist.mdx<br>content/blog/eslint-error-should-not-disable-freelance-scope.mdx |
+| 76 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/eslint-error-should-not-disable-mistakes.mdx<br>content/blog/eslint-error-should-not-disable.mdx<br>content/blog/first-portfolio-case-realistic-checklist.mdx |
+| 77 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/first-portfolio-case-realistic-mistakes.mdx<br>content/blog/first-portfolio-case-realistic.mdx<br>content/blog/freelance-beginner-scope-confirmation-checklist.mdx |
+| 78 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/freelance-beginner-scope-confirmation-mistakes.mdx<br>content/blog/freelance-beginner-scope-confirmation.mdx<br>content/blog/git-authentication-failed-fix-checklist.mdx |
+| 79 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/github-actions-build-log-debug-freelance-scope.mdx<br>content/blog/github-actions-build-log-debug-mistakes.mdx<br>content/blog/module-not-found-debug-checklist.mdx |
+| 80 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/nextjs-hydration-error-debug-freelance-scope.mdx<br>content/blog/no-code-ai-freelance-start-checklist.mdx<br>content/blog/no-code-ai-freelance-start-mistakes.mdx |
+| 81 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/no-code-ai-freelance-start.mdx<br>content/blog/node-version-mismatch-fix-checklist.mdx<br>content/blog/npm-command-not-found-fix-checklist.mdx |
+| 82 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/npm-command-not-found-fix-freelance-scope.mdx<br>content/blog/npm-command-not-found-fix-mistakes.mdx<br>content/blog/package-lock-conflict-fix-checklist.mdx |
+| 83 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/package-lock-conflict-fix-mistakes.mdx<br>content/blog/package-lock-conflict-fix.mdx<br>content/blog/port-already-in-use-fix-checklist.mdx |
+| 84 | 3/3 | 0 | 33 | short-description, cannibalization | content/blog/port-already-in-use-fix-mistakes.mdx<br>content/blog/port-already-in-use-fix.mdx<br>content/blog/practice-projects-before-clients-checklist.mdx |
+| 85 | 3/3 | 0 | 31 | short-description, cannibalization | content/blog/practice-projects-before-clients-mistakes.mdx<br>content/blog/practice-projects-before-clients.mdx<br>content/blog/codex-codex-npm-install-4-33.mdx |
+| 86 | 3/3 | 0 | 27 | cannibalization | content/blog/codex-css-spacing-responsive-checklist.mdx<br>content/blog/codex-css-spacing-responsive-mistakes.mdx<br>content/blog/codex-css-spacing-responsive.mdx |
+| 87 | 3/3 | 0 | 27 | cannibalization | content/blog/dependency-conflict-fix-mistakes.mdx<br>content/blog/dependency-conflict-fix.mdx<br>content/blog/github-actions-build-log-debug.mdx |
+| 88 | 3/3 | 0 | 27 | cannibalization | content/blog/module-not-found-debug.mdx<br>content/blog/npm-command-not-found-fix.mdx<br>content/blog/permission-denied-fix.mdx |
+| 89 | 3/3 | 0 | 27 | short-description | content/blog/agent-deployment-beginner-guide.mdx<br>content/blog/agent-human-review-loop-guide.mdx<br>content/blog/agent-memory-design-guide.mdx |
+| 90 | 3/3 | 0 | 27 | short-description | content/blog/agent-memory-postgres-schema-guide.mdx<br>content/blog/agent-observability-logging-guide.mdx<br>content/blog/agent-production-deployment-checklist.mdx |
+| 91 | 3/3 | 0 | 27 | short-description | content/blog/agent-tool-calling-beginner-guide.mdx<br>content/blog/agent-tool-permission-safety-guide.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 92 | 3/3 | 0 | 27 | short-description | content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 93 | 3/3 | 0 | 27 | short-description | content/blog/ai-coding-tools-risk-check-checklist.mdx<br>content/blog/ai-coding-tools-risk-check.mdx<br>content/blog/ai-content-human-review-template-checklist.mdx |
+| 94 | 3/3 | 0 | 27 | short-description | content/blog/ai-content-human-review-template.mdx<br>content/blog/ai-freelance-daily-planner-checklist.mdx<br>content/blog/ai-freelance-daily-planner.mdx |
+| 95 | 3/3 | 0 | 27 | short-description | content/blog/ai-logo-design-beginner-guide.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-prompt-framework-business-guide.mdx |
+| 96 | 3/3 | 0 | 27 | short-description | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/ai-resume-cover-letter-guide.mdx<br>content/blog/ai-tool-setup-service-checklist-checklist.mdx |
+| 97 | 3/3 | 0 | 27 | short-description | content/blog/ai-tool-setup-service-checklist.mdx<br>content/blog/ai-video-tools-beginner-guide.mdx<br>content/blog/ai-website-builder-beginner-guide.mdx |
+| 98 | 3/3 | 0 | 27 | short-description | content/blog/anythingllm-local-rag-beginner-guide.mdx<br>content/blog/api-key-invalid-or-missing-freelance-scope.mdx<br>content/blog/autogen-agent-framework-beginner-guide.mdx |
+| 99 | 3/3 | 0 | 27 | short-description | content/blog/chatgpt-codex-claude-workflow-checklist.mdx<br>content/blog/chatgpt-codex-claude-workflow.mdx<br>content/blog/chatgpt-how-to-use-beginner-guide.mdx |
+| 100 | 3/3 | 0 | 27 | short-description | content/blog/chatgpt-prompt-template-beginner.mdx<br>content/blog/chroma-vector-database-rag-guide.mdx<br>content/blog/claude-api-beginner-guide.mdx |
+| 101 | 3/3 | 0 | 27 | short-description | content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/claude-code-beginner-mistakes-freelance-scope.mdx<br>content/blog/claude-code-bug-prompt-freelance-scope.mdx |
+| 102 | 3/3 | 0 | 27 | short-description | content/blog/claude-code-client-questions-freelance-scope.mdx<br>content/blog/claude-code-common-commands-freelance-scope.mdx<br>content/blog/claude-code-delivery-note-freelance-scope.mdx |
+| 103 | 3/3 | 0 | 27 | short-description | content/blog/claude-code-error-debug-freelance-scope.mdx<br>content/blog/claude-code-install-prerequisites-freelance-scope.mdx<br>content/blog/claude-code-proposal-review-freelance-scope.mdx |
+| 104 | 3/3 | 0 | 27 | short-description | content/blog/client-acceptance-checklist-checklist.mdx<br>content/blog/client-acceptance-checklist.mdx<br>content/blog/client-requirement-form-questions-checklist.mdx |
+| 105 | 3/3 | 0 | 27 | short-description | content/blog/client-requirement-form-questions.mdx<br>content/blog/cloudflare-vs-namecheap-domain-checklist.mdx<br>content/blog/cloudflare-workers-ai-beginner-guide.mdx |
+| 106 | 3/3 | 0 | 27 | short-description | content/blog/codex-avoid-secret-leak-freelance-scope.mdx<br>content/blog/codex-bugfix-rollback-record-freelance-scope.mdx<br>content/blog/codex-client-requirement-questions-freelance-scope.mdx |
+| 107 | 3/3 | 0 | 27 | short-description | content/blog/codex-codex-claude-code-4-40.mdx<br>content/blog/codex-codex-css-bug-4-35.mdx<br>content/blog/codex-codex-github-4-36.mdx |
+| 108 | 3/3 | 0 | 27 | short-description | content/blog/codex-codex-upwork-4-39.mdx<br>content/blog/codex-codex-vercel-4-37.mdx<br>content/blog/codex-edit-existing-ui-freelance-scope.mdx |
+| 109 | 3/3 | 0 | 27 | short-description | content/blog/codex-first-day-guide-freelance-scope.mdx<br>content/blog/codex-github-workflow-freelance-scope.mdx<br>content/blog/codex-install-prerequisites-freelance-scope.mdx |
+| 110 | 3/3 | 0 | 27 | short-description | content/blog/codex-npm-install-errors-freelance-scope.mdx<br>content/blog/codex-portfolio-page-assets-freelance-scope.mdx<br>content/blog/codex-project-start-checklist-checklist.mdx |
+| 111 | 3/3 | 0 | 27 | short-description | content/blog/codex-project-start-checklist.mdx<br>content/blog/codex-readme-review-freelance-scope.mdx<br>content/blog/codex-review-generated-code-freelance-scope.mdx |
+| 112 | 3/3 | 0 | 27 | short-description | content/blog/codex-tailwind-mobile-check-freelance-scope.mdx<br>content/blog/codex-vercel-deployment-freelance-scope.mdx<br>content/blog/codex-vs-claude-code-beginner.mdx |
+| 113 | 3/3 | 0 | 27 | short-description | content/blog/codex-vs-cursor-web-editing-freelance-scope.mdx<br>content/blog/codex-windows-install-failed-freelance-scope.mdx<br>content/blog/coze-bot-publish-checklist.mdx |
+| 114 | 3/3 | 0 | 27 | short-description | content/blog/crewai-agent-deployment-beginner-guide.mdx<br>content/blog/cursor-vs-codex-web-editing-checklist.mdx<br>content/blog/customer-service-ai-prompts-guide.mdx |
+| 115 | 3/3 | 0 | 27 | short-description | content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/dependency-conflict-fix-freelance-scope.mdx<br>content/blog/dify-coze-flowise-agent-builder-comparison.mdx |
+| 116 | 3/3 | 0 | 27 | short-description | content/blog/dify-docker-compose-self-host-guide.mdx<br>content/blog/dify-knowledge-base-beginner-guide.mdx<br>content/blog/dify-ollama-local-model-guide.mdx |
+| 117 | 3/3 | 0 | 27 | short-description | content/blog/dify-openai-api-provider-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx |
+| 118 | 3/3 | 0 | 27 | short-description | content/blog/digital-template-refund-policy-checklist.mdx<br>content/blog/ecommerce-ai-prompts-guide.mdx<br>content/blog/education-ai-prompts-guide.mdx |
+| 119 | 3/3 | 0 | 27 | short-description | content/blog/embedding-model-selection-guide.mdx<br>content/blog/english-client-reply-template-honest-checklist.mdx<br>content/blog/english-client-reply-template-honest.mdx |
+| 120 | 3/3 | 0 | 27 | short-description | content/blog/enterprise-im-ai-agent-integration-guide.mdx<br>content/blog/env-variable-missing-fix-freelance-scope.mdx<br>content/blog/fastgpt-knowledge-base-deployment-guide.mdx |
+| 121 | 3/3 | 0 | 27 | short-description | content/blog/finance-ai-prompts-guide.mdx<br>content/blog/first-freelance-payment-check-checklist.mdx<br>content/blog/first-freelance-payment-check.mdx |
+| 122 | 3/3 | 0 | 27 | short-description | content/blog/flowise-local-deployment-beginner-guide.mdx<br>content/blog/flowise-ollama-local-rag-checklist.mdx<br>content/blog/freelance-platform-tool-stack-checklist.mdx |
+| 123 | 3/3 | 0 | 27 | short-description | content/blog/freelance-platform-tool-stack.mdx<br>content/blog/freelance-quote-template-fill-checklist.mdx<br>content/blog/freelance-quote-template-fill.mdx |
+| 124 | 3/3 | 0 | 27 | short-description | content/blog/freelance-weekly-review-template-checklist.mdx<br>content/blog/freelance-weekly-review-template.mdx<br>content/blog/gemini-api-nextjs-guide.mdx |
+| 125 | 3/3 | 0 | 27 | short-description | content/blog/gemini-api-rate-limit-debug-guide.mdx<br>content/blog/git-authentication-failed-fix-freelance-scope.mdx<br>content/blog/github-command-cheatsheet-beginner-checklist.mdx |
+| 126 | 3/3 | 0 | 27 | short-description | content/blog/github-command-cheatsheet-beginner.mdx<br>content/blog/github-vercel-beginner-site-checklist.mdx<br>content/blog/github-vercel-beginner-site.mdx |
+| 127 | 3/3 | 0 | 27 | short-description | content/blog/google-analytics-when-to-add-checklist.mdx<br>content/blog/groq-api-fast-llm-guide.mdx<br>content/blog/gumroad-template-selling-prep-checklist.mdx |
+| 128 | 3/3 | 0 | 27 | short-description | content/blog/gumroad-template-selling-prep.mdx<br>content/blog/healthcare-admin-ai-prompts-guide.mdx<br>content/blog/helicone-llm-observability-guide.mdx |
+| 129 | 3/3 | 0 | 27 | short-description | content/blog/hr-recruiting-ai-prompts-guide.mdx<br>content/blog/huggingface-spaces-ai-demo-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx |
+| 130 | 3/3 | 0 | 27 | short-description | content/blog/international-payment-fee-estimate-checklist.mdx<br>content/blog/international-payment-fee-estimate.mdx<br>content/blog/knowledge-base-permission-design-guide.mdx |
+| 131 | 3/3 | 0 | 27 | short-description | content/blog/langchain-rag-beginner-guide.mdx<br>content/blog/langgraph-agent-beginner-guide.mdx<br>content/blog/legal-contract-ai-prompts-guide.mdx |
+| 132 | 3/3 | 0 | 27 | short-description | content/blog/lemon-squeezy-digital-products-checklist.mdx<br>content/blog/lemon-squeezy-digital-products.mdx<br>content/blog/litellm-proxy-beginner-guide.mdx |
+| 133 | 3/3 | 0 | 27 | short-description | content/blog/llama-cpp-server-beginner-guide.mdx<br>content/blog/llamaindex-rag-beginner-guide.mdx<br>content/blog/llm-api-integration-deployment-checklist.mdx |
+| 134 | 3/3 | 0 | 27 | short-description | content/blog/llm-api-rate-limit-retry-guide.mdx<br>content/blog/llm-deployment-beginner-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| 135 | 3/3 | 0 | 27 | short-description | content/blog/llm-finetuning-vs-rag-beginner-guide.mdx<br>content/blog/llm-serving-cost-latency-checklist.mdx<br>content/blog/lm-studio-local-api-guide.mdx |
+| 136 | 3/3 | 0 | 27 | short-description | content/blog/local-llm-deployment-beginner.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/make-vs-zapier-automation-checklist.mdx |
+| 137 | 3/3 | 0 | 27 | short-description | content/blog/make-vs-zapier-automation.mdx<br>content/blog/manufacturing-ai-prompts-guide.mdx<br>content/blog/marketing-ai-prompts-guide.mdx |
+| 138 | 3/3 | 0 | 27 | short-description | content/blog/mcp-beginner-guide-agent-tools.mdx<br>content/blog/mcp-server-deployment-security-checklist.mdx<br>content/blog/multi-model-router-fallback-guide.mdx |
+| 139 | 3/3 | 0 | 27 | short-description | content/blog/n8n-ai-agent-rag-memory-guide.mdx<br>content/blog/n8n-ai-agent-self-host-guide.mdx<br>content/blog/n8n-ai-agent-webhook-production-guide.mdx |
+| 140 | 3/3 | 0 | 27 | short-description | content/blog/notion-freelance-workflow-checklist.mdx<br>content/blog/notion-freelance-workflow.mdx<br>content/blog/ollama-api-web-app-integration.mdx |
+| 141 | 3/3 | 0 | 27 | short-description | content/blog/ollama-local-model-deployment-guide.mdx<br>content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/open-webui-ollama-docker-guide.mdx |
+| 142 | 3/3 | 0 | 27 | short-description | content/blog/openai-api-nextjs-route-handler-guide.mdx<br>content/blog/openai-batch-api-cost-guide.mdx<br>content/blog/openrouter-api-beginner-guide.mdx |
+| 143 | 3/3 | 0 | 27 | short-description | content/blog/operations-ai-prompts-guide.mdx<br>content/blog/package-lock-conflict-fix-freelance-scope.mdx<br>content/blog/paddle-vs-stripe-beginner-checklist.mdx |
+| 144 | 3/3 | 0 | 27 | short-description | content/blog/paddle-vs-stripe-beginner.mdx<br>content/blog/payment-account-info-mismatch-risk-checklist.mdx<br>content/blog/payment-account-info-mismatch-risk.mdx |
+| 145 | 3/3 | 0 | 27 | short-description | content/blog/payment-page-disclaimer-checklist.mdx<br>content/blog/payment-page-disclaimer.mdx<br>content/blog/payoneer-freelancer-beginner-checklist.mdx |
+| 146 | 3/3 | 0 | 27 | short-description | content/blog/payoneer-freelancer-beginner.mdx<br>content/blog/payoneer-wise-paypal-choose-checklist.mdx<br>content/blog/payoneer-wise-paypal-choose.mdx |
+| 147 | 3/3 | 0 | 27 | short-description | content/blog/paypal-freelancer-limits-checklist.mdx<br>content/blog/paypal-freelancer-limits.mdx<br>content/blog/paypal-vs-payoneer-beginner-checklist.mdx |
+| 148 | 3/3 | 0 | 27 | short-description | content/blog/paypal-vs-payoneer-beginner.mdx<br>content/blog/permission-denied-fix-freelance-scope.mdx<br>content/blog/pinecone-rag-beginner-guide.mdx |
+| 149 | 3/3 | 0 | 27 | short-description | content/blog/platform-payment-vs-direct-payment-checklist.mdx<br>content/blog/platform-payment-vs-direct-payment.mdx<br>content/blog/port-already-in-use-fix-freelance-scope.mdx |
+| 150 | 3/3 | 0 | 27 | short-description | content/blog/portfolio-page-copy-template-checklist.mdx<br>content/blog/portfolio-page-copy-template.mdx<br>content/blog/practice-project-log-template-checklist.mdx |
+| 151 | 3/3 | 0 | 27 | short-description | content/blog/practice-project-log-template.mdx<br>content/blog/pre-project-risk-assessment-template-checklist.mdx<br>content/blog/pre-project-risk-assessment-template.mdx |
+| 152 | 3/3 | 0 | 27 | short-description | content/blog/product-manager-ai-prompts-guide.mdx<br>content/blog/project-delivery-checklist-items-checklist.mdx<br>content/blog/project-delivery-checklist-items.mdx |
+| 153 | 3/3 | 0 | 27 | short-description | content/blog/project-retrospective-template-checklist.mdx<br>content/blog/project-retrospective-template.mdx<br>content/blog/qdrant-vector-database-beginner-guide.mdx |
+| 154 | 3/3 | 0 | 27 | short-description | content/blog/quote-email-uncertain-scope-checklist.mdx<br>content/blog/quote-email-uncertain-scope.mdx<br>content/blog/rag-chunking-strategy-guide.mdx |
+| 155 | 3/3 | 0 | 27 | short-description | content/blog/rag-citation-source-trace-guide.mdx<br>content/blog/rag-document-cleaning-before-upload-guide.mdx<br>content/blog/rag-evaluation-test-set-guide.mdx |
+| 156 | 3/3 | 0 | 27 | short-description | content/blog/rag-knowledge-base-beginner-guide.mdx<br>content/blog/rag-retrieval-no-context-debug-guide.mdx<br>content/blog/real-estate-ai-prompts-guide.mdx |
+| 157 | 3/3 | 0 | 27 | short-description | content/blog/runpod-serverless-llm-deployment-guide.mdx<br>content/blog/sales-ai-prompts-guide.mdx<br>content/blog/service-inquiry-form-questions-checklist.mdx |
+| 158 | 3/3 | 0 | 27 | short-description | content/blog/service-inquiry-form-questions.mdx<br>content/blog/service-payment-method-beginner-checklist.mdx<br>content/blog/service-payment-method-beginner.mdx |
+| 159 | 3/3 | 0 | 27 | short-description | content/blog/small-site-launch-sop-checklist.mdx<br>content/blog/small-site-launch-sop.mdx<br>content/blog/software-development-ai-prompts-guide.mdx |
+| 160 | 3/3 | 0 | 27 | short-description | content/blog/stripe-templates-vs-services-checklist.mdx<br>content/blog/stripe-templates-vs-services.mdx<br>content/blog/subscription-payment-failed-message-checklist.mdx |
+| 161 | 3/3 | 0 | 21 | none | content/blog/arize-phoenix-llm-observability-guide.mdx<br>content/blog/bentoml-llm-deployment-beginner-guide.mdx<br>content/blog/cloudflare-vs-namecheap-domain.mdx |
+| 162 | 3/3 | 0 | 21 | none | content/blog/codex-css-spacing-responsive-freelance-scope.mdx<br>content/blog/cursor-vs-codex-web-editing.mdx<br>content/blog/digital-template-refund-policy.mdx |
+| 163 | 3/3 | 0 | 21 | none | content/blog/free-seo-tools-beginner-checklist.mdx<br>content/blog/free-seo-tools-beginner.mdx<br>content/blog/google-analytics-when-to-add.mdx |
+| 164 | 3/3 | 0 | 21 | none | content/blog/google-search-console-new-site-checklist.mdx<br>content/blog/google-search-console-new-site.mdx<br>content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
+| 165 | 3/3 | 0 | 21 | none | content/blog/huggingface-tgi-deployment-guide.mdx<br>content/blog/kubernetes-gpu-llm-deployment-guide.mdx<br>content/blog/langsmith-observability-evaluation-guide.mdx |
+| 166 | 3/3 | 0 | 21 | none | content/blog/modal-serverless-gpu-llm-guide.mdx<br>content/blog/openai-agents-sdk-beginner-guide.mdx<br>content/blog/promptfoo-llm-evaluation-beginner-guide.mdx |
+| 167 | 2/2 | 0 | 14 | none | content/blog/ragas-rag-evaluation-beginner-guide.mdx<br>content/blog/replicate-api-ai-demo-guide.mdx |
 
 | Wave | Ready | Score | Actions | Desc | Reasons | Publish confirm | Title | File |
 | ---: | --- | ---: | ---: | ---: | --- | --- | --- | --- |
-| 1 | true | 240 | 13 | 72 | mojibake-public, seo-warning, short-description, freshness-high, high-priority | not-included | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
-| 1 | true | 235 | 13 | 52 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | not-included | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
-| 1 | true | 235 | 13 | 61 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | not-included | Canva 作品集封面发布前检查清单 | content/blog/canva-portfolio-cover-tips-checklist.mdx |
-| 2 | true | 235 | 13 | 59 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | not-included | Claude Code 新手使用检查清单 | content/blog/claude-code-beginner-mistakes-checklist.mdx |
-| 2 | true | 235 | 13 | 68 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | not-included | Claude Code 新手常见错误和修正方法 | content/blog/claude-code-beginner-mistakes-mistakes.mdx |
-| 2 | true | 235 | 13 | 60 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | not-included | Claude Code 新手使用场景检查清单 | content/blog/claude-code-beginner-use-cases-checklist.mdx |
-| 3 | true | 235 | 13 | 71 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | not-included | Claude Code 新手适合用在哪些项目场景 | content/blog/claude-code-beginner-use-cases.mdx |
-| 3 | true | 235 | 13 | 70 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | not-included | Claude Code Bug Prompt 常见错误 | content/blog/claude-code-bug-prompt-mistakes.mdx |
-| 3 | true | 235 | 13 | 74 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | not-included | Claude Code 修 bug 的 prompt 怎么写 | content/blog/claude-code-bug-prompt.mdx |
-| 4 | true | 235 | 13 | 61 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | not-included | Claude Code 新手运行常用命令时的常见错误 | content/blog/claude-code-common-commands-mistakes.mdx |
-| 4 | true | 235 | 13 | 72 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | not-included | Claude Code 新手常用命令怎么整理成项目笔记 | content/blog/claude-code-common-commands.mdx |
-| 4 | true | 235 | 13 | 65 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | not-included | Claude Code 排查客户报错时的常见错误 | content/blog/claude-code-error-debug-mistakes.mdx |
-| 5 | true | 235 | 13 | 75 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | not-included | Claude Code 看 GitHub 文件时的常见范围错误 | content/blog/claude-code-github-file-scope-mistakes.mdx |
-| 5 | true | 235 | 13 | 75 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | not-included | 哪些小项目任务适合用 Claude Code 辅助项目 | content/blog/claude-code-small-project-tasks.mdx |
-| 5 | true | 235 | 13 | 48 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | not-included | Claude Code 和 Codex 网页修改新手检查清单 | content/blog/claude-code-vs-codex-web-editing-checklist.mdx |
+| 1 | true | 210 | 13 | 88 | mojibake-public, short-description, freshness-high | not-included | Codex 怎么做第一个网页 | content/blog/build-first-webpage-with-codex.mdx |
+| 1 | true | 210 | 13 | 87 | mojibake-public, short-description, freshness-high | not-included | Codex 安装失败怎么办 | content/blog/codex-install-failed-beginner-fix.mdx |
+| 1 | true | 210 | 13 | 72 | mojibake-public, short-description, freshness-high | not-included | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
+| 2 | true | 210 | 13 | 89 | mojibake-public, short-description, freshness-high | not-included | Codex 是什么新手怎么开始 | content/blog/what-is-codex-beginner-start.mdx |
+| 2 | true | 205 | 13 | 52 | mojibake-public, short-description, cannibalization | not-included | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
+| 2 | true | 205 | 13 | 56 | mojibake-public, short-description, cannibalization | not-included | 第一次接 AI 小单前要准备什么 | content/blog/before-first-ai-freelance-job.mdx |
+| 3 | true | 205 | 13 | 61 | mojibake-public, short-description, cannibalization | not-included | Canva 作品集封面发布前检查清单 | content/blog/canva-portfolio-cover-tips-checklist.mdx |
+| 3 | true | 205 | 13 | 59 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手使用检查清单 | content/blog/claude-code-beginner-mistakes-checklist.mdx |
+| 3 | true | 205 | 13 | 68 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手常见错误和修正方法 | content/blog/claude-code-beginner-mistakes-mistakes.mdx |
+| 4 | true | 205 | 13 | 60 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手使用场景检查清单 | content/blog/claude-code-beginner-use-cases-checklist.mdx |
+| 4 | true | 205 | 13 | 71 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手适合用在哪些项目场景 | content/blog/claude-code-beginner-use-cases.mdx |
+| 4 | true | 205 | 13 | 70 | mojibake-public, short-description, cannibalization | not-included | Claude Code Bug Prompt 常见错误 | content/blog/claude-code-bug-prompt-mistakes.mdx |
+| 5 | true | 205 | 13 | 74 | mojibake-public, short-description, cannibalization | not-included | Claude Code 修 bug 的 prompt 怎么写 | content/blog/claude-code-bug-prompt.mdx |
+| 5 | true | 205 | 13 | 61 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手运行常用命令时的常见错误 | content/blog/claude-code-common-commands-mistakes.mdx |
+| 5 | true | 205 | 13 | 72 | mojibake-public, short-description, cannibalization | not-included | Claude Code 新手常用命令怎么整理成项目笔记 | content/blog/claude-code-common-commands.mdx |
 
 ## Public Search Refresh Session Pack
 
@@ -2122,12 +2114,12 @@ Public categories:
 - Sessions: 167
 - Files covered: 500
 - Ready items: 500
-- Action items: 5154
-- High-priority items: 268
-- SEO warning sessions: 86
-- Short-description sessions: 157
+- Action items: 5030
+- High-priority items: 59
+- SEO warning sessions: 0
+- Short-description sessions: 154
 - Mojibake sessions: 17
-- Cannibalization sessions: 85
+- Cannibalization sessions: 82
 - Live missing from sitemap: 0
 - Publish confirm commands included: 0
 - Traffic data available: false
@@ -2135,173 +2127,173 @@ Public categories:
 
 | Wave | Session | Ready | Actions | High priority | Reasons | Files |
 | ---: | --- | ---: | ---: | ---: | --- | --- |
-| 1 | public search refresh wave 1 | 3/3 | 39 | 3 | mojibake-public, seo-warning, short-description, freshness-high, high-priority, cannibalization | content/blog/first-upwork-project-pricing-checklist.mdx<br>content/blog/ai-small-project-practice-topics-checklist.mdx<br>content/blog/canva-portfolio-cover-tips-checklist.mdx |
-| 2 | public search refresh wave 2 | 3/3 | 39 | 3 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-beginner-mistakes-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-mistakes.mdx<br>content/blog/claude-code-beginner-use-cases-checklist.mdx |
-| 3 | public search refresh wave 3 | 3/3 | 39 | 3 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-beginner-use-cases.mdx<br>content/blog/claude-code-bug-prompt-mistakes.mdx<br>content/blog/claude-code-bug-prompt.mdx |
-| 4 | public search refresh wave 4 | 3/3 | 39 | 3 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-common-commands-mistakes.mdx<br>content/blog/claude-code-common-commands.mdx<br>content/blog/claude-code-error-debug-mistakes.mdx |
-| 5 | public search refresh wave 5 | 3/3 | 39 | 3 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-github-file-scope-mistakes.mdx<br>content/blog/claude-code-small-project-tasks.mdx<br>content/blog/claude-code-vs-codex-web-editing-checklist.mdx |
-| 6 | public search refresh wave 6 | 3/3 | 39 | 3 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/codex-automation-steps-not-skip-mistakes.mdx<br>content/blog/codex-edit-existing-ui-mistakes.mdx<br>content/blog/codex-first-day-guide-checklist.mdx |
-| 7 | public search refresh wave 7 | 3/3 | 39 | 3 | mojibake-public, seo-warning, short-description, cannibalization, high-priority | content/blog/codex-npm-install-errors-mistakes.mdx<br>content/blog/module-not-found-debug-mistakes.mdx<br>content/blog/node-version-mismatch-fix-mistakes.mdx |
-| 8 | public search refresh wave 8 | 3/3 | 37 | 3 | mojibake-public, seo-warning, short-description, cannibalization, high-priority, freshness-high | content/blog/permission-denied-fix-mistakes.mdx<br>content/blog/codex-github-before-commit-checklist.mdx<br>content/blog/codex-vercel-deploy-preflight-checklist.mdx |
-| 9 | public search refresh wave 9 | 3/3 | 36 | 3 | mojibake-public, seo-warning, freshness-high, high-priority, cannibalization, short-description | content/blog/codex-vs-claude-code-beginner-checklist.mdx<br>content/blog/git-authentication-failed-fix-mistakes.mdx<br>content/blog/ai-tools-recommendation-beginner.mdx |
-| 10 | public search refresh wave 10 | 3/3 | 36 | 3 | mojibake-public, seo-warning, short-description, high-priority | content/blog/llm-cost-monitoring-dashboard-guide.mdx<br>content/blog/module-not-found-debug-freelance-scope.mdx<br>content/blog/node-version-mismatch-fix-freelance-scope.mdx |
-| 11 | public search refresh wave 11 | 3/3 | 37 | 3 | mojibake-public, seo-warning, short-description, freshness-high | content/blog/ray-serve-llm-deployment-guide.mdx<br>content/blog/build-first-webpage-with-codex.mdx<br>content/blog/codex-install-failed-beginner-fix.mdx |
-| 12 | public search refresh wave 12 | 3/3 | 39 | 3 | mojibake-public, short-description, freshness-high, cannibalization | content/blog/what-is-codex-beginner-start.mdx<br>content/blog/before-first-ai-freelance-job.mdx<br>content/blog/codex-automation-steps-not-skip.mdx |
-| 13 | public search refresh wave 13 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-install-prerequisites-checklist.mdx<br>content/blog/codex-npm-install-errors.mdx<br>content/blog/codex-upwork-job-risk-check-freelance-scope.mdx |
-| 14 | public search refresh wave 14 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-upwork-job-risk-check.mdx<br>content/blog/daily-ai-freelance-practice-log.mdx<br>content/blog/permission-denied-fix-checklist.mdx |
-| 15 | public search refresh wave 15 | 3/3 | 33 | 3 | mojibake-public, freshness-high, cannibalization | content/blog/codex-code-review-delivery-checklist.mdx<br>content/blog/codex-upwork-small-job-risk-checklist.mdx<br>content/blog/git-authentication-failed-fix.mdx |
-| 16 | public search refresh wave 16 | 3/3 | 33 | 3 | mojibake-public, cannibalization, short-description | content/blog/github-actions-build-log-debug-checklist.mdx<br>content/blog/node-version-mismatch-fix.mdx<br>content/blog/ai-ppt-beginner-guide.mdx |
-| 17 | public search refresh wave 17 | 3/3 | 33 | 3 | mojibake-public, short-description | content/blog/codex-first-landing-page-freelance-scope.mdx<br>content/blog/dify-metadata-filtering-rag-guide.mdx<br>content/blog/rag-prompt-injection-defense-guide.mdx |
-| 18 | public search refresh wave 18 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-nextjs-page-check-freelance-scope.mdx<br>content/blog/claude-code-nextjs-page-check-mistakes.mdx<br>content/blog/claude-code-nextjs-page-check.mdx |
-| 19 | public search refresh wave 19 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/dev-works-build-fails-mistakes.mdx<br>content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx<br>content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
-| 20 | public search refresh wave 20 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority, freshness-high | content/blog/nextjs-hydration-error-debug-mistakes.mdx<br>content/blog/codex-npm-install-error-beginner-fix.mdx<br>content/blog/payoneer-wise-paypal-beginner-comparison.mdx |
-| 21 | public search refresh wave 21 | 3/3 | 33 | 3 | seo-warning, short-description, freshness-high, high-priority, cannibalization | content/blog/upwork-proposal-no-reply-checklist.mdx<br>content/blog/vercel-env-variable-missing-beginner-guide.mdx<br>content/blog/ads-income-when-to-start.mdx |
-| 22 | public search refresh wave 22 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/affiliate-vs-service-income-checklist.mdx<br>content/blog/affiliate-vs-service-income.mdx<br>content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
-| 23 | public search refresh wave 23 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx<br>content/blog/ai-beginner-project-fit-check-checklist.mdx<br>content/blog/ai-beginner-project-fit-check-mistakes.mdx |
-| 24 | public search refresh wave 24 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-beginner-project-fit-check.mdx<br>content/blog/ai-freelance-30-day-execution-checklist.mdx<br>content/blog/ai-freelance-30-day-execution-mistakes.mdx |
-| 25 | public search refresh wave 25 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-freelance-automation-compliance-risk-checklist.mdx<br>content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx<br>content/blog/ai-freelance-common-misconceptions-mistakes.mdx |
-| 26 | public search refresh wave 26 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-freelance-failure-review-mistakes.mdx<br>content/blog/ai-freelance-first-7-days-mistakes.mdx<br>content/blog/ai-freelance-service-page-copy-mistakes.mdx |
-| 27 | public search refresh wave 27 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-freelance-skill-roadmap-mistakes.mdx<br>content/blog/ai-output-unstable-risk-control-checklist.mdx<br>content/blog/ai-output-unstable-risk-control-mistakes.mdx |
-| 28 | public search refresh wave 28 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-output-unstable-risk-control.mdx<br>content/blog/ai-small-project-practice-topics-mistakes.mdx<br>content/blog/ai-small-project-practice-topics.mdx |
-| 29 | public search refresh wave 29 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/ai-tools-stack-free-start-mistakes.mdx<br>content/blog/ai-tools-stack-free-start.mdx<br>content/blog/api-key-invalid-or-missing-mistakes.mdx |
-| 30 | public search refresh wave 30 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/bank-card-payment-platform-risk-checklist.mdx<br>content/blog/before-first-ai-freelance-job-checklist.mdx<br>content/blog/before-first-ai-freelance-job-mistakes.mdx |
-| 31 | public search refresh wave 31 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/bugfix-delivery-note-template-checklist.mdx<br>content/blog/bugfix-delivery-note-template.mdx<br>content/blog/claude-code-automation-human-review-checklist.mdx |
-| 32 | public search refresh wave 32 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-automation-human-review-freelance-scope.mdx<br>content/blog/claude-code-automation-human-review-mistakes.mdx<br>content/blog/claude-code-automation-human-review.mdx |
-| 33 | public search refresh wave 33 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-beginner-mistakes.mdx<br>content/blog/claude-code-beginner-use-cases-freelance-scope.mdx<br>content/blog/claude-code-beginner-use-cases-mistakes.mdx |
-| 34 | public search refresh wave 34 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-client-questions-checklist.mdx<br>content/blog/claude-code-client-questions-mistakes.mdx<br>content/blog/claude-code-client-questions.mdx |
-| 35 | public search refresh wave 35 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-common-commands-checklist.mdx<br>content/blog/claude-code-delivery-note-mistakes.mdx<br>content/blog/claude-code-delivery-note.mdx |
-| 36 | public search refresh wave 36 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-error-debug.mdx<br>content/blog/claude-code-github-file-scope-checklist.mdx<br>content/blog/claude-code-github-file-scope-freelance-scope.mdx |
-| 37 | public search refresh wave 37 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-github-file-scope.mdx<br>content/blog/claude-code-install-prerequisites-checklist.mdx<br>content/blog/claude-code-install-prerequisites-mistakes.mdx |
-| 38 | public search refresh wave 38 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-install-prerequisites.mdx<br>content/blog/claude-code-low-risk-freelance-jobs-freelance-scope.mdx<br>content/blog/claude-code-low-risk-freelance-jobs-mistakes.mdx |
-| 39 | public search refresh wave 39 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-low-risk-freelance-jobs.mdx<br>content/blog/claude-code-proposal-review-checklist.mdx<br>content/blog/claude-code-proposal-review-mistakes.mdx |
-| 40 | public search refresh wave 40 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-proposal-review.mdx<br>content/blog/claude-code-small-project-tasks-checklist.mdx<br>content/blog/claude-code-small-project-tasks-freelance-scope.mdx |
-| 41 | public search refresh wave 41 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-small-project-tasks-mistakes.mdx<br>content/blog/claude-code-vs-codex-web-editing-freelance-scope.mdx<br>content/blog/claude-code-vs-codex-web-editing-mistakes.mdx |
-| 42 | public search refresh wave 42 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/claude-code-vs-codex-web-editing.mdx<br>content/blog/codex-automation-steps-not-skip-checklist.mdx<br>content/blog/codex-automation-steps-not-skip-freelance-scope.mdx |
-| 43 | public search refresh wave 43 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-avoid-secret-leak-checklist.mdx<br>content/blog/codex-avoid-secret-leak-mistakes.mdx<br>content/blog/codex-avoid-secret-leak.mdx |
-| 44 | public search refresh wave 44 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-bugfix-rollback-record-checklist.mdx<br>content/blog/codex-bugfix-rollback-record-mistakes.mdx<br>content/blog/codex-bugfix-rollback-record.mdx |
-| 45 | public search refresh wave 45 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-client-requirement-questions-checklist.mdx<br>content/blog/codex-client-requirement-questions-mistakes.mdx<br>content/blog/codex-client-requirement-questions.mdx |
-| 46 | public search refresh wave 46 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-codex-4-31.mdx<br>content/blog/codex-codex-4-34.mdx<br>content/blog/codex-edit-existing-ui-checklist.mdx |
-| 47 | public search refresh wave 47 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-first-day-guide-mistakes.mdx<br>content/blog/codex-first-landing-page-mistakes.mdx<br>content/blog/codex-github-workflow-checklist.mdx |
-| 48 | public search refresh wave 48 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-github-workflow-mistakes.mdx<br>content/blog/codex-github-workflow.mdx<br>content/blog/codex-install-prerequisites-mistakes.mdx |
-| 49 | public search refresh wave 49 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-portfolio-page-assets-mistakes.mdx<br>content/blog/codex-readme-review-mistakes.mdx<br>content/blog/codex-review-generated-code-checklist.mdx |
-| 50 | public search refresh wave 50 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-review-generated-code-mistakes.mdx<br>content/blog/codex-small-website-delivery-check-mistakes.mdx<br>content/blog/codex-tailwind-mobile-check-mistakes.mdx |
-| 51 | public search refresh wave 51 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-upwork-job-risk-check-mistakes.mdx<br>content/blog/codex-vercel-deployment-mistakes.mdx<br>content/blog/codex-vs-cursor-web-editing-mistakes.mdx |
-| 52 | public search refresh wave 52 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/codex-windows-install-failed-mistakes.mdx<br>content/blog/daily-ai-freelance-practice-log-mistakes.mdx<br>content/blog/deliver-small-website-with-ai-no-code-mistakes.mdx |
-| 53 | public search refresh wave 53 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/env-variable-missing-fix-mistakes.mdx<br>content/blog/eslint-error-should-not-disable-mistakes.mdx<br>content/blog/first-portfolio-case-realistic-mistakes.mdx |
-| 54 | public search refresh wave 54 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/freelance-beginner-scope-confirmation-mistakes.mdx<br>content/blog/github-actions-build-log-debug-freelance-scope.mdx<br>content/blog/github-actions-build-log-debug-mistakes.mdx |
-| 55 | public search refresh wave 55 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/no-code-ai-freelance-start-mistakes.mdx<br>content/blog/npm-command-not-found-fix-freelance-scope.mdx<br>content/blog/npm-command-not-found-fix-mistakes.mdx |
-| 56 | public search refresh wave 56 | 3/3 | 33 | 3 | seo-warning, short-description, cannibalization, high-priority | content/blog/package-lock-conflict-fix-mistakes.mdx<br>content/blog/port-already-in-use-fix-mistakes.mdx<br>content/blog/practice-projects-before-clients-mistakes.mdx |
-| 57 | public search refresh wave 57 | 3/3 | 30 | 3 | seo-warning, cannibalization, high-priority | content/blog/codex-codex-npm-install-4-33.mdx<br>content/blog/codex-css-spacing-responsive-mistakes.mdx<br>content/blog/dependency-conflict-fix-mistakes.mdx |
-| 58 | public search refresh wave 58 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/agent-human-review-loop-guide.mdx<br>content/blog/agent-memory-design-guide.mdx<br>content/blog/agent-memory-postgres-schema-guide.mdx |
-| 59 | public search refresh wave 59 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/agent-tool-permission-safety-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx |
-| 60 | public search refresh wave 60 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/ai-coding-tools-risk-check-checklist.mdx<br>content/blog/ai-coding-tools-risk-check.mdx<br>content/blog/ai-content-human-review-template.mdx |
-| 61 | public search refresh wave 61 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/ai-logo-design-beginner-guide.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-prompt-framework-business-guide.mdx |
-| 62 | public search refresh wave 62 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/ai-resume-cover-letter-guide.mdx<br>content/blog/ai-tool-setup-service-checklist-checklist.mdx |
-| 63 | public search refresh wave 63 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/ai-video-tools-beginner-guide.mdx<br>content/blog/ai-website-builder-beginner-guide.mdx<br>content/blog/anythingllm-local-rag-beginner-guide.mdx |
-| 64 | public search refresh wave 64 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/api-key-invalid-or-missing-freelance-scope.mdx<br>content/blog/autogen-agent-framework-beginner-guide.mdx<br>content/blog/chatgpt-codex-claude-workflow-checklist.mdx |
-| 65 | public search refresh wave 65 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/chatgpt-codex-claude-workflow.mdx<br>content/blog/chatgpt-vs-claude-proposal-checklist.mdx<br>content/blog/claude-api-beginner-guide.mdx |
-| 66 | public search refresh wave 66 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/claude-code-beginner-mistakes-freelance-scope.mdx<br>content/blog/claude-code-bug-prompt-freelance-scope.mdx<br>content/blog/claude-code-client-questions-freelance-scope.mdx |
-| 67 | public search refresh wave 67 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/claude-code-common-commands-freelance-scope.mdx<br>content/blog/claude-code-delivery-note-freelance-scope.mdx<br>content/blog/claude-code-error-debug-freelance-scope.mdx |
-| 68 | public search refresh wave 68 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/claude-code-install-prerequisites-freelance-scope.mdx<br>content/blog/claude-code-proposal-review-freelance-scope.mdx<br>content/blog/client-acceptance-checklist-checklist.mdx |
-| 69 | public search refresh wave 69 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/client-acceptance-checklist.mdx<br>content/blog/client-requirement-form-questions-checklist.mdx<br>content/blog/client-requirement-form-questions.mdx |
-| 70 | public search refresh wave 70 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/cloudflare-workers-ai-beginner-guide.mdx<br>content/blog/codex-avoid-secret-leak-freelance-scope.mdx<br>content/blog/codex-bugfix-rollback-record-freelance-scope.mdx |
-| 71 | public search refresh wave 71 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/codex-client-requirement-questions-freelance-scope.mdx<br>content/blog/codex-codex-claude-code-4-40.mdx<br>content/blog/codex-codex-css-bug-4-35.mdx |
-| 72 | public search refresh wave 72 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/codex-codex-github-4-36.mdx<br>content/blog/codex-codex-upwork-4-39.mdx<br>content/blog/codex-edit-existing-ui-freelance-scope.mdx |
-| 73 | public search refresh wave 73 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/codex-first-day-guide-freelance-scope.mdx<br>content/blog/codex-github-workflow-freelance-scope.mdx<br>content/blog/codex-portfolio-page-assets-freelance-scope.mdx |
-| 74 | public search refresh wave 74 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/codex-project-start-checklist-checklist.mdx<br>content/blog/crewai-agent-deployment-beginner-guide.mdx<br>content/blog/dify-coze-flowise-agent-builder-comparison.mdx |
-| 75 | public search refresh wave 75 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/dify-docker-compose-self-host-guide.mdx<br>content/blog/dify-ollama-local-model-guide.mdx<br>content/blog/dify-openai-api-provider-guide.mdx |
-| 76 | public search refresh wave 76 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx<br>content/blog/enterprise-im-ai-agent-integration-guide.mdx |
-| 77 | public search refresh wave 77 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/fastgpt-knowledge-base-deployment-guide.mdx<br>content/blog/flowise-ollama-local-rag-checklist.mdx<br>content/blog/freelance-weekly-review-template-checklist.mdx |
-| 78 | public search refresh wave 78 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/gemini-api-nextjs-guide.mdx<br>content/blog/git-authentication-failed-fix-freelance-scope.mdx<br>content/blog/groq-api-fast-llm-guide.mdx |
-| 79 | public search refresh wave 79 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/healthcare-admin-ai-prompts-guide.mdx<br>content/blog/helicone-llm-observability-guide.mdx<br>content/blog/hr-recruiting-ai-prompts-guide.mdx |
-| 80 | public search refresh wave 80 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/huggingface-spaces-ai-demo-guide.mdx<br>content/blog/knowledge-base-permission-design-guide.mdx<br>content/blog/langchain-rag-beginner-guide.mdx |
-| 81 | public search refresh wave 81 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/langgraph-agent-beginner-guide.mdx<br>content/blog/litellm-proxy-beginner-guide.mdx<br>content/blog/llamaindex-rag-beginner-guide.mdx |
-| 82 | public search refresh wave 82 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/llm-api-rate-limit-retry-guide.mdx<br>content/blog/local-llm-deployment-beginner.mdx<br>content/blog/mcp-server-deployment-security-checklist.mdx |
-| 83 | public search refresh wave 83 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/multi-model-router-fallback-guide.mdx<br>content/blog/n8n-ai-agent-rag-memory-guide.mdx<br>content/blog/n8n-ai-agent-webhook-production-guide.mdx |
-| 84 | public search refresh wave 84 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/open-webui-ollama-docker-guide.mdx<br>content/blog/openai-api-nextjs-route-handler-guide.mdx |
-| 85 | public search refresh wave 85 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/openrouter-api-beginner-guide.mdx<br>content/blog/package-lock-conflict-fix-freelance-scope.mdx<br>content/blog/payment-account-info-mismatch-risk-checklist.mdx |
-| 86 | public search refresh wave 86 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/pinecone-rag-beginner-guide.mdx<br>content/blog/port-already-in-use-fix-freelance-scope.mdx<br>content/blog/quote-email-uncertain-scope-checklist.mdx |
-| 87 | public search refresh wave 87 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/rag-citation-source-trace-guide.mdx<br>content/blog/rag-document-cleaning-before-upload-guide.mdx<br>content/blog/rag-knowledge-base-beginner-guide.mdx |
-| 88 | public search refresh wave 88 | 3/3 | 30 | 3 | seo-warning, short-description, high-priority | content/blog/runpod-serverless-llm-deployment-guide.mdx<br>content/blog/small-site-launch-sop-checklist.mdx<br>content/blog/subscription-payment-failed-message-checklist.mdx |
-| 89 | public search refresh wave 89 | 3/3 | 33 | 3 | short-description, cannibalization, high-priority | content/blog/dev-works-build-fails-checklist.mdx<br>content/blog/dev-works-build-fails.mdx<br>content/blog/failed-to-push-some-refs-fix-checklist.mdx |
-| 90 | public search refresh wave 90 | 3/3 | 29 | 1 | short-description, cannibalization, high-priority, seo-warning | content/blog/nextjs-hydration-error-debug-checklist.mdx<br>content/blog/arize-phoenix-llm-observability-guide.mdx<br>content/blog/bentoml-llm-deployment-beginner-guide.mdx |
-| 91 | public search refresh wave 91 | 3/3 | 27 | 0 | seo-warning | content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx<br>content/blog/huggingface-tgi-deployment-guide.mdx<br>content/blog/kubernetes-gpu-llm-deployment-guide.mdx |
-| 92 | public search refresh wave 92 | 3/3 | 27 | 0 | seo-warning | content/blog/langsmith-observability-evaluation-guide.mdx<br>content/blog/modal-serverless-gpu-llm-guide.mdx<br>content/blog/openai-agents-sdk-beginner-guide.mdx |
-| 93 | public search refresh wave 93 | 3/3 | 27 | 0 | seo-warning | content/blog/promptfoo-llm-evaluation-beginner-guide.mdx<br>content/blog/ragas-rag-evaluation-beginner-guide.mdx<br>content/blog/replicate-api-ai-demo-guide.mdx |
-| 94 | public search refresh wave 94 | 3/3 | 31 | 0 | short-description, freshness-high, cannibalization | content/blog/codex-generated-code-review-guide.mdx<br>content/blog/failed-to-push-some-refs-fix.mdx<br>content/blog/nextjs-hydration-error-debug.mdx |
-| 95 | public search refresh wave 95 | 3/3 | 33 | 0 | short-description, freshness-high, cannibalization | content/blog/upwork-client-requirements-analysis-beginner.mdx<br>content/blog/ads-income-when-to-start-checklist.mdx<br>content/blog/ai-assisted-vs-automated-delivery.mdx |
-| 96 | public search refresh wave 96 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-30-day-execution.mdx<br>content/blog/ai-freelance-automation-compliance-risk.mdx<br>content/blog/ai-freelance-common-misconceptions-checklist.mdx |
-| 97 | public search refresh wave 97 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-common-misconceptions.mdx<br>content/blog/ai-freelance-failure-review-checklist.mdx<br>content/blog/ai-freelance-failure-review.mdx |
-| 98 | public search refresh wave 98 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-first-7-days-checklist.mdx<br>content/blog/ai-freelance-first-7-days.mdx<br>content/blog/ai-freelance-service-page-copy-checklist.mdx |
-| 99 | public search refresh wave 99 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-service-page-copy.mdx<br>content/blog/ai-freelance-skill-roadmap-checklist.mdx<br>content/blog/ai-freelance-skill-roadmap.mdx |
-| 100 | public search refresh wave 100 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-tools-stack-free-start-checklist.mdx<br>content/blog/api-key-invalid-or-missing-checklist.mdx<br>content/blog/api-key-invalid-or-missing.mdx |
-| 101 | public search refresh wave 101 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/bank-card-payment-platform-risk.mdx<br>content/blog/canva-portfolio-cover-tips.mdx<br>content/blog/claude-code-bug-prompt-checklist.mdx |
-| 102 | public search refresh wave 102 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-delivery-note-checklist.mdx<br>content/blog/claude-code-error-debug-checklist.mdx<br>content/blog/claude-code-low-risk-freelance-jobs-checklist.mdx |
-| 103 | public search refresh wave 103 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-nextjs-page-check-checklist.mdx<br>content/blog/codex-codex-4-32.mdx<br>content/blog/codex-codex-4-38.mdx |
-| 104 | public search refresh wave 104 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-edit-existing-ui.mdx<br>content/blog/codex-first-day-guide.mdx<br>content/blog/codex-first-landing-page-checklist.mdx |
-| 105 | public search refresh wave 105 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-first-landing-page.mdx<br>content/blog/codex-install-prerequisites.mdx<br>content/blog/codex-npm-install-errors-checklist.mdx |
-| 106 | public search refresh wave 106 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-portfolio-page-assets-checklist.mdx<br>content/blog/codex-portfolio-page-assets.mdx<br>content/blog/codex-readme-review-checklist.mdx |
-| 107 | public search refresh wave 107 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-readme-review.mdx<br>content/blog/codex-review-generated-code.mdx<br>content/blog/codex-small-website-delivery-check-checklist.mdx |
-| 108 | public search refresh wave 108 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-small-website-delivery-check-freelance-scope.mdx<br>content/blog/codex-small-website-delivery-check.mdx<br>content/blog/codex-tailwind-mobile-check-checklist.mdx |
-| 109 | public search refresh wave 109 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-tailwind-mobile-check.mdx<br>content/blog/codex-upwork-job-risk-check-checklist.mdx<br>content/blog/codex-vercel-deployment-checklist.mdx |
-| 110 | public search refresh wave 110 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-vercel-deployment.mdx<br>content/blog/codex-vs-cursor-web-editing-checklist.mdx<br>content/blog/codex-vs-cursor-web-editing.mdx |
-| 111 | public search refresh wave 111 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-windows-install-failed-checklist.mdx<br>content/blog/codex-windows-install-failed.mdx<br>content/blog/daily-ai-freelance-practice-log-checklist.mdx |
-| 112 | public search refresh wave 112 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/deliver-small-website-with-ai-no-code-checklist.mdx<br>content/blog/deliver-small-website-with-ai-no-code.mdx<br>content/blog/dependency-conflict-fix-checklist.mdx |
-| 113 | public search refresh wave 113 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/dev-works-build-fails-freelance-scope.mdx<br>content/blog/env-variable-missing-fix-checklist.mdx<br>content/blog/env-variable-missing-fix.mdx |
-| 114 | public search refresh wave 114 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/eslint-error-should-not-disable-checklist.mdx<br>content/blog/eslint-error-should-not-disable-freelance-scope.mdx<br>content/blog/eslint-error-should-not-disable.mdx |
-| 115 | public search refresh wave 115 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/first-portfolio-case-realistic-checklist.mdx<br>content/blog/first-portfolio-case-realistic.mdx<br>content/blog/freelance-beginner-scope-confirmation-checklist.mdx |
-| 116 | public search refresh wave 116 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/freelance-beginner-scope-confirmation.mdx<br>content/blog/git-authentication-failed-fix-checklist.mdx<br>content/blog/module-not-found-debug-checklist.mdx |
-| 117 | public search refresh wave 117 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/nextjs-hydration-error-debug-freelance-scope.mdx<br>content/blog/no-code-ai-freelance-start-checklist.mdx<br>content/blog/no-code-ai-freelance-start.mdx |
-| 118 | public search refresh wave 118 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/node-version-mismatch-fix-checklist.mdx<br>content/blog/npm-command-not-found-fix-checklist.mdx<br>content/blog/package-lock-conflict-fix-checklist.mdx |
-| 119 | public search refresh wave 119 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/package-lock-conflict-fix.mdx<br>content/blog/port-already-in-use-fix-checklist.mdx<br>content/blog/port-already-in-use-fix.mdx |
-| 120 | public search refresh wave 120 | 3/3 | 31 | 0 | short-description, cannibalization | content/blog/practice-projects-before-clients-checklist.mdx<br>content/blog/practice-projects-before-clients.mdx<br>content/blog/codex-css-spacing-responsive-checklist.mdx |
-| 121 | public search refresh wave 121 | 3/3 | 27 | 0 | cannibalization | content/blog/codex-css-spacing-responsive.mdx<br>content/blog/dependency-conflict-fix.mdx<br>content/blog/github-actions-build-log-debug.mdx |
-| 122 | public search refresh wave 122 | 3/3 | 27 | 0 | cannibalization | content/blog/module-not-found-debug.mdx<br>content/blog/npm-command-not-found-fix.mdx<br>content/blog/permission-denied-fix.mdx |
-| 123 | public search refresh wave 123 | 3/3 | 27 | 0 | short-description | content/blog/agent-deployment-beginner-guide.mdx<br>content/blog/agent-observability-logging-guide.mdx<br>content/blog/agent-production-deployment-checklist.mdx |
-| 124 | public search refresh wave 124 | 3/3 | 27 | 0 | short-description | content/blog/agent-tool-calling-beginner-guide.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx<br>content/blog/ai-agent-memory-rag-design-guide.mdx |
-| 125 | public search refresh wave 125 | 3/3 | 27 | 0 | short-description | content/blog/ai-content-human-review-template-checklist.mdx<br>content/blog/ai-freelance-daily-planner-checklist.mdx<br>content/blog/ai-freelance-daily-planner.mdx |
-| 126 | public search refresh wave 126 | 3/3 | 27 | 0 | short-description | content/blog/ai-tool-setup-service-checklist.mdx<br>content/blog/chatgpt-how-to-use-beginner-guide.mdx<br>content/blog/chatgpt-prompt-template-beginner.mdx |
-| 127 | public search refresh wave 127 | 3/3 | 27 | 0 | short-description | content/blog/chatgpt-vs-claude-proposal.mdx<br>content/blog/chroma-vector-database-rag-guide.mdx<br>content/blog/claude-api-rate-limit-debug-guide.mdx |
-| 128 | public search refresh wave 128 | 3/3 | 27 | 0 | short-description | content/blog/cloudflare-vs-namecheap-domain-checklist.mdx<br>content/blog/codex-codex-vercel-4-37.mdx<br>content/blog/codex-install-prerequisites-freelance-scope.mdx |
-| 129 | public search refresh wave 129 | 3/3 | 27 | 0 | short-description | content/blog/codex-npm-install-errors-freelance-scope.mdx<br>content/blog/codex-project-start-checklist.mdx<br>content/blog/codex-readme-review-freelance-scope.mdx |
-| 130 | public search refresh wave 130 | 3/3 | 27 | 0 | short-description | content/blog/codex-review-generated-code-freelance-scope.mdx<br>content/blog/codex-tailwind-mobile-check-freelance-scope.mdx<br>content/blog/codex-vercel-deployment-freelance-scope.mdx |
-| 131 | public search refresh wave 131 | 3/3 | 27 | 0 | short-description | content/blog/codex-vs-claude-code-beginner.mdx<br>content/blog/codex-vs-cursor-web-editing-freelance-scope.mdx<br>content/blog/codex-windows-install-failed-freelance-scope.mdx |
-| 132 | public search refresh wave 132 | 3/3 | 27 | 0 | short-description | content/blog/coze-bot-publish-checklist.mdx<br>content/blog/cursor-vs-codex-web-editing-checklist.mdx<br>content/blog/customer-service-ai-prompts-guide.mdx |
-| 133 | public search refresh wave 133 | 3/3 | 27 | 0 | short-description | content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/dependency-conflict-fix-freelance-scope.mdx<br>content/blog/dify-knowledge-base-beginner-guide.mdx |
-| 134 | public search refresh wave 134 | 3/3 | 27 | 0 | short-description | content/blog/digital-template-refund-policy-checklist.mdx<br>content/blog/ecommerce-ai-prompts-guide.mdx<br>content/blog/education-ai-prompts-guide.mdx |
-| 135 | public search refresh wave 135 | 3/3 | 27 | 0 | short-description | content/blog/embedding-model-selection-guide.mdx<br>content/blog/english-client-reply-template-honest-checklist.mdx<br>content/blog/english-client-reply-template-honest.mdx |
-| 136 | public search refresh wave 136 | 3/3 | 27 | 0 | short-description | content/blog/env-variable-missing-fix-freelance-scope.mdx<br>content/blog/finance-ai-prompts-guide.mdx<br>content/blog/first-freelance-payment-check-checklist.mdx |
-| 137 | public search refresh wave 137 | 3/3 | 27 | 0 | short-description | content/blog/first-freelance-payment-check.mdx<br>content/blog/flowise-local-deployment-beginner-guide.mdx<br>content/blog/freelance-platform-tool-stack-checklist.mdx |
-| 138 | public search refresh wave 138 | 3/3 | 27 | 0 | short-description | content/blog/freelance-platform-tool-stack.mdx<br>content/blog/freelance-quote-template-fill-checklist.mdx<br>content/blog/freelance-quote-template-fill.mdx |
-| 139 | public search refresh wave 139 | 3/3 | 27 | 0 | short-description | content/blog/freelance-weekly-review-template.mdx<br>content/blog/gemini-api-rate-limit-debug-guide.mdx<br>content/blog/github-command-cheatsheet-beginner-checklist.mdx |
-| 140 | public search refresh wave 140 | 3/3 | 27 | 0 | short-description | content/blog/github-command-cheatsheet-beginner.mdx<br>content/blog/github-vercel-beginner-site-checklist.mdx<br>content/blog/github-vercel-beginner-site.mdx |
-| 141 | public search refresh wave 141 | 3/3 | 27 | 0 | short-description | content/blog/google-analytics-when-to-add-checklist.mdx<br>content/blog/gumroad-template-selling-prep-checklist.mdx<br>content/blog/gumroad-template-selling-prep.mdx |
-| 142 | public search refresh wave 142 | 3/3 | 27 | 0 | short-description | content/blog/industry-ai-prompts-template-library-2026.mdx<br>content/blog/international-payment-fee-estimate-checklist.mdx<br>content/blog/international-payment-fee-estimate.mdx |
-| 143 | public search refresh wave 143 | 3/3 | 27 | 0 | short-description | content/blog/legal-contract-ai-prompts-guide.mdx<br>content/blog/lemon-squeezy-digital-products-checklist.mdx<br>content/blog/lemon-squeezy-digital-products.mdx |
-| 144 | public search refresh wave 144 | 3/3 | 27 | 0 | short-description | content/blog/llama-cpp-server-beginner-guide.mdx<br>content/blog/llm-api-integration-deployment-checklist.mdx<br>content/blog/llm-deployment-beginner-guide.mdx |
-| 145 | public search refresh wave 145 | 3/3 | 27 | 0 | short-description | content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx<br>content/blog/llm-finetuning-vs-rag-beginner-guide.mdx<br>content/blog/llm-serving-cost-latency-checklist.mdx |
-| 146 | public search refresh wave 146 | 3/3 | 27 | 0 | short-description | content/blog/lm-studio-local-api-guide.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/make-vs-zapier-automation-checklist.mdx |
-| 147 | public search refresh wave 147 | 3/3 | 27 | 0 | short-description | content/blog/make-vs-zapier-automation.mdx<br>content/blog/manufacturing-ai-prompts-guide.mdx<br>content/blog/marketing-ai-prompts-guide.mdx |
-| 148 | public search refresh wave 148 | 3/3 | 27 | 0 | short-description | content/blog/mcp-beginner-guide-agent-tools.mdx<br>content/blog/n8n-ai-agent-self-host-guide.mdx<br>content/blog/notion-freelance-workflow-checklist.mdx |
-| 149 | public search refresh wave 149 | 3/3 | 27 | 0 | short-description | content/blog/notion-freelance-workflow.mdx<br>content/blog/ollama-api-web-app-integration.mdx<br>content/blog/ollama-local-model-deployment-guide.mdx |
-| 150 | public search refresh wave 150 | 3/3 | 27 | 0 | short-description | content/blog/openai-batch-api-cost-guide.mdx<br>content/blog/operations-ai-prompts-guide.mdx<br>content/blog/paddle-vs-stripe-beginner-checklist.mdx |
-| 151 | public search refresh wave 151 | 3/3 | 27 | 0 | short-description | content/blog/paddle-vs-stripe-beginner.mdx<br>content/blog/payment-account-info-mismatch-risk.mdx<br>content/blog/payment-page-disclaimer-checklist.mdx |
-| 152 | public search refresh wave 152 | 3/3 | 27 | 0 | short-description | content/blog/payment-page-disclaimer.mdx<br>content/blog/payoneer-freelancer-beginner-checklist.mdx<br>content/blog/payoneer-freelancer-beginner.mdx |
-| 153 | public search refresh wave 153 | 3/3 | 27 | 0 | short-description | content/blog/payoneer-wise-paypal-choose-checklist.mdx<br>content/blog/payoneer-wise-paypal-choose.mdx<br>content/blog/paypal-freelancer-limits-checklist.mdx |
-| 154 | public search refresh wave 154 | 3/3 | 27 | 0 | short-description | content/blog/paypal-freelancer-limits.mdx<br>content/blog/paypal-vs-payoneer-beginner-checklist.mdx<br>content/blog/paypal-vs-payoneer-beginner.mdx |
-| 155 | public search refresh wave 155 | 3/3 | 27 | 0 | short-description | content/blog/permission-denied-fix-freelance-scope.mdx<br>content/blog/platform-payment-vs-direct-payment-checklist.mdx<br>content/blog/platform-payment-vs-direct-payment.mdx |
-| 156 | public search refresh wave 156 | 3/3 | 27 | 0 | short-description | content/blog/portfolio-page-copy-template-checklist.mdx<br>content/blog/portfolio-page-copy-template.mdx<br>content/blog/practice-project-log-template-checklist.mdx |
-| 157 | public search refresh wave 157 | 3/3 | 27 | 0 | short-description | content/blog/practice-project-log-template.mdx<br>content/blog/pre-project-risk-assessment-template-checklist.mdx<br>content/blog/pre-project-risk-assessment-template.mdx |
-| 158 | public search refresh wave 158 | 3/3 | 27 | 0 | short-description | content/blog/product-manager-ai-prompts-guide.mdx<br>content/blog/project-delivery-checklist-items-checklist.mdx<br>content/blog/project-delivery-checklist-items.mdx |
-| 159 | public search refresh wave 159 | 3/3 | 27 | 0 | short-description | content/blog/project-retrospective-template-checklist.mdx<br>content/blog/project-retrospective-template.mdx<br>content/blog/qdrant-vector-database-beginner-guide.mdx |
-| 160 | public search refresh wave 160 | 3/3 | 27 | 0 | short-description | content/blog/quote-email-uncertain-scope.mdx<br>content/blog/rag-chunking-strategy-guide.mdx<br>content/blog/rag-evaluation-test-set-guide.mdx |
-| 161 | public search refresh wave 161 | 3/3 | 27 | 0 | short-description | content/blog/rag-retrieval-no-context-debug-guide.mdx<br>content/blog/real-estate-ai-prompts-guide.mdx<br>content/blog/sales-ai-prompts-guide.mdx |
-| 162 | public search refresh wave 162 | 3/3 | 27 | 0 | short-description | content/blog/service-inquiry-form-questions-checklist.mdx<br>content/blog/service-inquiry-form-questions.mdx<br>content/blog/service-payment-method-beginner-checklist.mdx |
-| 163 | public search refresh wave 163 | 3/3 | 27 | 0 | short-description | content/blog/service-payment-method-beginner.mdx<br>content/blog/small-site-launch-sop.mdx<br>content/blog/software-development-ai-prompts-guide.mdx |
-| 164 | public search refresh wave 164 | 3/3 | 25 | 0 | short-description | content/blog/stripe-templates-vs-services-checklist.mdx<br>content/blog/stripe-templates-vs-services.mdx<br>content/blog/cloudflare-vs-namecheap-domain.mdx |
-| 165 | public search refresh wave 165 | 3/3 | 21 | 0 | none | content/blog/codex-css-spacing-responsive-freelance-scope.mdx<br>content/blog/cursor-vs-codex-web-editing.mdx<br>content/blog/digital-template-refund-policy.mdx |
-| 166 | public search refresh wave 166 | 3/3 | 21 | 0 | none | content/blog/free-seo-tools-beginner-checklist.mdx<br>content/blog/free-seo-tools-beginner.mdx<br>content/blog/google-analytics-when-to-add.mdx |
-| 167 | public search refresh wave 167 | 2/2 | 14 | 0 | none | content/blog/google-search-console-new-site-checklist.mdx<br>content/blog/google-search-console-new-site.mdx |
+| 1 | public search refresh wave 1 | 3/3 | 39 | 3 | mojibake-public, short-description, freshness-high | content/blog/build-first-webpage-with-codex.mdx<br>content/blog/codex-install-failed-beginner-fix.mdx<br>content/blog/first-upwork-project-pricing-checklist.mdx |
+| 2 | public search refresh wave 2 | 3/3 | 39 | 3 | mojibake-public, short-description, freshness-high, cannibalization | content/blog/what-is-codex-beginner-start.mdx<br>content/blog/ai-small-project-practice-topics-checklist.mdx<br>content/blog/before-first-ai-freelance-job.mdx |
+| 3 | public search refresh wave 3 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/canva-portfolio-cover-tips-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-mistakes.mdx |
+| 4 | public search refresh wave 4 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-beginner-use-cases-checklist.mdx<br>content/blog/claude-code-beginner-use-cases.mdx<br>content/blog/claude-code-bug-prompt-mistakes.mdx |
+| 5 | public search refresh wave 5 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-bug-prompt.mdx<br>content/blog/claude-code-common-commands-mistakes.mdx<br>content/blog/claude-code-common-commands.mdx |
+| 6 | public search refresh wave 6 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-error-debug-mistakes.mdx<br>content/blog/claude-code-github-file-scope-mistakes.mdx<br>content/blog/claude-code-small-project-tasks.mdx |
+| 7 | public search refresh wave 7 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/claude-code-vs-codex-web-editing-checklist.mdx<br>content/blog/codex-automation-steps-not-skip-mistakes.mdx<br>content/blog/codex-automation-steps-not-skip.mdx |
+| 8 | public search refresh wave 8 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-edit-existing-ui-mistakes.mdx<br>content/blog/codex-first-day-guide-checklist.mdx<br>content/blog/codex-install-prerequisites-checklist.mdx |
+| 9 | public search refresh wave 9 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-npm-install-errors-mistakes.mdx<br>content/blog/codex-npm-install-errors.mdx<br>content/blog/codex-upwork-job-risk-check-freelance-scope.mdx |
+| 10 | public search refresh wave 10 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/codex-upwork-job-risk-check.mdx<br>content/blog/daily-ai-freelance-practice-log.mdx<br>content/blog/module-not-found-debug-mistakes.mdx |
+| 11 | public search refresh wave 11 | 3/3 | 39 | 3 | mojibake-public, short-description, cannibalization | content/blog/node-version-mismatch-fix-mistakes.mdx<br>content/blog/permission-denied-fix-checklist.mdx<br>content/blog/permission-denied-fix-mistakes.mdx |
+| 12 | public search refresh wave 12 | 3/3 | 33 | 3 | mojibake-public, freshness-high | content/blog/codex-code-review-delivery-checklist.mdx<br>content/blog/codex-github-before-commit-checklist.mdx<br>content/blog/codex-upwork-small-job-risk-checklist.mdx |
+| 13 | public search refresh wave 13 | 3/3 | 33 | 3 | mojibake-public, freshness-high, cannibalization | content/blog/codex-vercel-deploy-preflight-checklist.mdx<br>content/blog/codex-vs-claude-code-beginner-checklist.mdx<br>content/blog/git-authentication-failed-fix-mistakes.mdx |
+| 14 | public search refresh wave 14 | 3/3 | 33 | 3 | mojibake-public, cannibalization | content/blog/git-authentication-failed-fix.mdx<br>content/blog/github-actions-build-log-debug-checklist.mdx<br>content/blog/node-version-mismatch-fix.mdx |
+| 15 | public search refresh wave 15 | 3/3 | 33 | 3 | mojibake-public, short-description | content/blog/ai-ppt-beginner-guide.mdx<br>content/blog/ai-tools-recommendation-beginner.mdx<br>content/blog/codex-first-landing-page-freelance-scope.mdx |
+| 16 | public search refresh wave 16 | 3/3 | 33 | 3 | mojibake-public, short-description | content/blog/dify-metadata-filtering-rag-guide.mdx<br>content/blog/llm-cost-monitoring-dashboard-guide.mdx<br>content/blog/module-not-found-debug-freelance-scope.mdx |
+| 17 | public search refresh wave 17 | 3/3 | 31 | 3 | mojibake-public, short-description | content/blog/node-version-mismatch-fix-freelance-scope.mdx<br>content/blog/rag-prompt-injection-defense-guide.mdx<br>content/blog/ray-serve-llm-deployment-guide.mdx |
+| 18 | public search refresh wave 18 | 3/3 | 33 | 3 | short-description, cannibalization, high-priority | content/blog/dev-works-build-fails-checklist.mdx<br>content/blog/dev-works-build-fails-mistakes.mdx<br>content/blog/dev-works-build-fails.mdx |
+| 19 | public search refresh wave 19 | 3/3 | 33 | 3 | short-description, cannibalization, high-priority | content/blog/failed-to-push-some-refs-fix-checklist.mdx<br>content/blog/failed-to-push-some-refs-fix-freelance-scope.mdx<br>content/blog/failed-to-push-some-refs-fix-mistakes.mdx |
+| 20 | public search refresh wave 20 | 3/3 | 33 | 2 | short-description, cannibalization, high-priority, freshness-high | content/blog/nextjs-hydration-error-debug-checklist.mdx<br>content/blog/nextjs-hydration-error-debug-mistakes.mdx<br>content/blog/codex-npm-install-error-beginner-fix.mdx |
+| 21 | public search refresh wave 21 | 3/3 | 31 | 0 | short-description, freshness-high, cannibalization | content/blog/codex-generated-code-review-guide.mdx<br>content/blog/failed-to-push-some-refs-fix.mdx<br>content/blog/nextjs-hydration-error-debug.mdx |
+| 22 | public search refresh wave 22 | 3/3 | 33 | 0 | short-description, freshness-high | content/blog/payoneer-wise-paypal-beginner-comparison.mdx<br>content/blog/upwork-client-requirements-analysis-beginner.mdx<br>content/blog/upwork-proposal-no-reply-checklist.mdx |
+| 23 | public search refresh wave 23 | 3/3 | 33 | 0 | short-description, freshness-high, cannibalization | content/blog/vercel-env-variable-missing-beginner-guide.mdx<br>content/blog/ads-income-when-to-start-checklist.mdx<br>content/blog/ads-income-when-to-start.mdx |
+| 24 | public search refresh wave 24 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/affiliate-vs-service-income-checklist.mdx<br>content/blog/affiliate-vs-service-income.mdx<br>content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
+| 25 | public search refresh wave 25 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx<br>content/blog/ai-assisted-vs-automated-delivery.mdx<br>content/blog/ai-beginner-project-fit-check-checklist.mdx |
+| 26 | public search refresh wave 26 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-beginner-project-fit-check-mistakes.mdx<br>content/blog/ai-beginner-project-fit-check.mdx<br>content/blog/ai-freelance-30-day-execution-checklist.mdx |
+| 27 | public search refresh wave 27 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-30-day-execution-mistakes.mdx<br>content/blog/ai-freelance-30-day-execution.mdx<br>content/blog/ai-freelance-automation-compliance-risk-checklist.mdx |
+| 28 | public search refresh wave 28 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-automation-compliance-risk-mistakes.mdx<br>content/blog/ai-freelance-automation-compliance-risk.mdx<br>content/blog/ai-freelance-common-misconceptions-checklist.mdx |
+| 29 | public search refresh wave 29 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-common-misconceptions-mistakes.mdx<br>content/blog/ai-freelance-common-misconceptions.mdx<br>content/blog/ai-freelance-failure-review-checklist.mdx |
+| 30 | public search refresh wave 30 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-failure-review-mistakes.mdx<br>content/blog/ai-freelance-failure-review.mdx<br>content/blog/ai-freelance-first-7-days-checklist.mdx |
+| 31 | public search refresh wave 31 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-first-7-days-mistakes.mdx<br>content/blog/ai-freelance-first-7-days.mdx<br>content/blog/ai-freelance-service-page-copy-checklist.mdx |
+| 32 | public search refresh wave 32 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-service-page-copy-mistakes.mdx<br>content/blog/ai-freelance-service-page-copy.mdx<br>content/blog/ai-freelance-skill-roadmap-checklist.mdx |
+| 33 | public search refresh wave 33 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-freelance-skill-roadmap-mistakes.mdx<br>content/blog/ai-freelance-skill-roadmap.mdx<br>content/blog/ai-output-unstable-risk-control-checklist.mdx |
+| 34 | public search refresh wave 34 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-output-unstable-risk-control-mistakes.mdx<br>content/blog/ai-output-unstable-risk-control.mdx<br>content/blog/ai-small-project-practice-topics-mistakes.mdx |
+| 35 | public search refresh wave 35 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-small-project-practice-topics.mdx<br>content/blog/ai-tools-stack-free-start-checklist.mdx<br>content/blog/ai-tools-stack-free-start-mistakes.mdx |
+| 36 | public search refresh wave 36 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/ai-tools-stack-free-start.mdx<br>content/blog/api-key-invalid-or-missing-checklist.mdx<br>content/blog/api-key-invalid-or-missing-mistakes.mdx |
+| 37 | public search refresh wave 37 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/api-key-invalid-or-missing.mdx<br>content/blog/bank-card-payment-platform-risk-checklist.mdx<br>content/blog/bank-card-payment-platform-risk.mdx |
+| 38 | public search refresh wave 38 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/before-first-ai-freelance-job-checklist.mdx<br>content/blog/before-first-ai-freelance-job-mistakes.mdx<br>content/blog/bugfix-delivery-note-template-checklist.mdx |
+| 39 | public search refresh wave 39 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/bugfix-delivery-note-template.mdx<br>content/blog/canva-portfolio-cover-tips.mdx<br>content/blog/chatgpt-vs-claude-proposal-checklist.mdx |
+| 40 | public search refresh wave 40 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/chatgpt-vs-claude-proposal.mdx<br>content/blog/claude-code-automation-human-review-checklist.mdx<br>content/blog/claude-code-automation-human-review-freelance-scope.mdx |
+| 41 | public search refresh wave 41 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-automation-human-review-mistakes.mdx<br>content/blog/claude-code-automation-human-review.mdx<br>content/blog/claude-code-beginner-mistakes.mdx |
+| 42 | public search refresh wave 42 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-beginner-use-cases-freelance-scope.mdx<br>content/blog/claude-code-beginner-use-cases-mistakes.mdx<br>content/blog/claude-code-bug-prompt-checklist.mdx |
+| 43 | public search refresh wave 43 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-client-questions-checklist.mdx<br>content/blog/claude-code-client-questions-mistakes.mdx<br>content/blog/claude-code-client-questions.mdx |
+| 44 | public search refresh wave 44 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-common-commands-checklist.mdx<br>content/blog/claude-code-delivery-note-checklist.mdx<br>content/blog/claude-code-delivery-note-mistakes.mdx |
+| 45 | public search refresh wave 45 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-delivery-note.mdx<br>content/blog/claude-code-error-debug-checklist.mdx<br>content/blog/claude-code-error-debug.mdx |
+| 46 | public search refresh wave 46 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-github-file-scope-checklist.mdx<br>content/blog/claude-code-github-file-scope-freelance-scope.mdx<br>content/blog/claude-code-github-file-scope.mdx |
+| 47 | public search refresh wave 47 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-install-prerequisites-checklist.mdx<br>content/blog/claude-code-install-prerequisites-mistakes.mdx<br>content/blog/claude-code-install-prerequisites.mdx |
+| 48 | public search refresh wave 48 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-low-risk-freelance-jobs-checklist.mdx<br>content/blog/claude-code-low-risk-freelance-jobs-freelance-scope.mdx<br>content/blog/claude-code-low-risk-freelance-jobs-mistakes.mdx |
+| 49 | public search refresh wave 49 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-low-risk-freelance-jobs.mdx<br>content/blog/claude-code-nextjs-page-check-checklist.mdx<br>content/blog/claude-code-nextjs-page-check-freelance-scope.mdx |
+| 50 | public search refresh wave 50 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-nextjs-page-check-mistakes.mdx<br>content/blog/claude-code-nextjs-page-check.mdx<br>content/blog/claude-code-proposal-review-checklist.mdx |
+| 51 | public search refresh wave 51 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-proposal-review-mistakes.mdx<br>content/blog/claude-code-proposal-review.mdx<br>content/blog/claude-code-small-project-tasks-checklist.mdx |
+| 52 | public search refresh wave 52 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-small-project-tasks-freelance-scope.mdx<br>content/blog/claude-code-small-project-tasks-mistakes.mdx<br>content/blog/claude-code-vs-codex-web-editing-freelance-scope.mdx |
+| 53 | public search refresh wave 53 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/claude-code-vs-codex-web-editing-mistakes.mdx<br>content/blog/claude-code-vs-codex-web-editing.mdx<br>content/blog/codex-automation-steps-not-skip-checklist.mdx |
+| 54 | public search refresh wave 54 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-automation-steps-not-skip-freelance-scope.mdx<br>content/blog/codex-avoid-secret-leak-checklist.mdx<br>content/blog/codex-avoid-secret-leak-mistakes.mdx |
+| 55 | public search refresh wave 55 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-avoid-secret-leak.mdx<br>content/blog/codex-bugfix-rollback-record-checklist.mdx<br>content/blog/codex-bugfix-rollback-record-mistakes.mdx |
+| 56 | public search refresh wave 56 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-bugfix-rollback-record.mdx<br>content/blog/codex-client-requirement-questions-checklist.mdx<br>content/blog/codex-client-requirement-questions-mistakes.mdx |
+| 57 | public search refresh wave 57 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-client-requirement-questions.mdx<br>content/blog/codex-codex-4-31.mdx<br>content/blog/codex-codex-4-32.mdx |
+| 58 | public search refresh wave 58 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-codex-4-34.mdx<br>content/blog/codex-codex-4-38.mdx<br>content/blog/codex-edit-existing-ui-checklist.mdx |
+| 59 | public search refresh wave 59 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-edit-existing-ui.mdx<br>content/blog/codex-first-day-guide-mistakes.mdx<br>content/blog/codex-first-day-guide.mdx |
+| 60 | public search refresh wave 60 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-first-landing-page-checklist.mdx<br>content/blog/codex-first-landing-page-mistakes.mdx<br>content/blog/codex-first-landing-page.mdx |
+| 61 | public search refresh wave 61 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-github-workflow-checklist.mdx<br>content/blog/codex-github-workflow-mistakes.mdx<br>content/blog/codex-github-workflow.mdx |
+| 62 | public search refresh wave 62 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-install-prerequisites-mistakes.mdx<br>content/blog/codex-install-prerequisites.mdx<br>content/blog/codex-npm-install-errors-checklist.mdx |
+| 63 | public search refresh wave 63 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-portfolio-page-assets-checklist.mdx<br>content/blog/codex-portfolio-page-assets-mistakes.mdx<br>content/blog/codex-portfolio-page-assets.mdx |
+| 64 | public search refresh wave 64 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-readme-review-checklist.mdx<br>content/blog/codex-readme-review-mistakes.mdx<br>content/blog/codex-readme-review.mdx |
+| 65 | public search refresh wave 65 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-review-generated-code-checklist.mdx<br>content/blog/codex-review-generated-code-mistakes.mdx<br>content/blog/codex-review-generated-code.mdx |
+| 66 | public search refresh wave 66 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-small-website-delivery-check-checklist.mdx<br>content/blog/codex-small-website-delivery-check-freelance-scope.mdx<br>content/blog/codex-small-website-delivery-check-mistakes.mdx |
+| 67 | public search refresh wave 67 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-small-website-delivery-check.mdx<br>content/blog/codex-tailwind-mobile-check-checklist.mdx<br>content/blog/codex-tailwind-mobile-check-mistakes.mdx |
+| 68 | public search refresh wave 68 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-tailwind-mobile-check.mdx<br>content/blog/codex-upwork-job-risk-check-checklist.mdx<br>content/blog/codex-upwork-job-risk-check-mistakes.mdx |
+| 69 | public search refresh wave 69 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-vercel-deployment-checklist.mdx<br>content/blog/codex-vercel-deployment-mistakes.mdx<br>content/blog/codex-vercel-deployment.mdx |
+| 70 | public search refresh wave 70 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-vs-cursor-web-editing-checklist.mdx<br>content/blog/codex-vs-cursor-web-editing-mistakes.mdx<br>content/blog/codex-vs-cursor-web-editing.mdx |
+| 71 | public search refresh wave 71 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/codex-windows-install-failed-checklist.mdx<br>content/blog/codex-windows-install-failed-mistakes.mdx<br>content/blog/codex-windows-install-failed.mdx |
+| 72 | public search refresh wave 72 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/daily-ai-freelance-practice-log-checklist.mdx<br>content/blog/daily-ai-freelance-practice-log-mistakes.mdx<br>content/blog/deliver-small-website-with-ai-no-code-checklist.mdx |
+| 73 | public search refresh wave 73 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/deliver-small-website-with-ai-no-code-mistakes.mdx<br>content/blog/deliver-small-website-with-ai-no-code.mdx<br>content/blog/dependency-conflict-fix-checklist.mdx |
+| 74 | public search refresh wave 74 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/dev-works-build-fails-freelance-scope.mdx<br>content/blog/env-variable-missing-fix-checklist.mdx<br>content/blog/env-variable-missing-fix-mistakes.mdx |
+| 75 | public search refresh wave 75 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/env-variable-missing-fix.mdx<br>content/blog/eslint-error-should-not-disable-checklist.mdx<br>content/blog/eslint-error-should-not-disable-freelance-scope.mdx |
+| 76 | public search refresh wave 76 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/eslint-error-should-not-disable-mistakes.mdx<br>content/blog/eslint-error-should-not-disable.mdx<br>content/blog/first-portfolio-case-realistic-checklist.mdx |
+| 77 | public search refresh wave 77 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/first-portfolio-case-realistic-mistakes.mdx<br>content/blog/first-portfolio-case-realistic.mdx<br>content/blog/freelance-beginner-scope-confirmation-checklist.mdx |
+| 78 | public search refresh wave 78 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/freelance-beginner-scope-confirmation-mistakes.mdx<br>content/blog/freelance-beginner-scope-confirmation.mdx<br>content/blog/git-authentication-failed-fix-checklist.mdx |
+| 79 | public search refresh wave 79 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/github-actions-build-log-debug-freelance-scope.mdx<br>content/blog/github-actions-build-log-debug-mistakes.mdx<br>content/blog/module-not-found-debug-checklist.mdx |
+| 80 | public search refresh wave 80 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/nextjs-hydration-error-debug-freelance-scope.mdx<br>content/blog/no-code-ai-freelance-start-checklist.mdx<br>content/blog/no-code-ai-freelance-start-mistakes.mdx |
+| 81 | public search refresh wave 81 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/no-code-ai-freelance-start.mdx<br>content/blog/node-version-mismatch-fix-checklist.mdx<br>content/blog/npm-command-not-found-fix-checklist.mdx |
+| 82 | public search refresh wave 82 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/npm-command-not-found-fix-freelance-scope.mdx<br>content/blog/npm-command-not-found-fix-mistakes.mdx<br>content/blog/package-lock-conflict-fix-checklist.mdx |
+| 83 | public search refresh wave 83 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/package-lock-conflict-fix-mistakes.mdx<br>content/blog/package-lock-conflict-fix.mdx<br>content/blog/port-already-in-use-fix-checklist.mdx |
+| 84 | public search refresh wave 84 | 3/3 | 33 | 0 | short-description, cannibalization | content/blog/port-already-in-use-fix-mistakes.mdx<br>content/blog/port-already-in-use-fix.mdx<br>content/blog/practice-projects-before-clients-checklist.mdx |
+| 85 | public search refresh wave 85 | 3/3 | 31 | 0 | short-description, cannibalization | content/blog/practice-projects-before-clients-mistakes.mdx<br>content/blog/practice-projects-before-clients.mdx<br>content/blog/codex-codex-npm-install-4-33.mdx |
+| 86 | public search refresh wave 86 | 3/3 | 27 | 0 | cannibalization | content/blog/codex-css-spacing-responsive-checklist.mdx<br>content/blog/codex-css-spacing-responsive-mistakes.mdx<br>content/blog/codex-css-spacing-responsive.mdx |
+| 87 | public search refresh wave 87 | 3/3 | 27 | 0 | cannibalization | content/blog/dependency-conflict-fix-mistakes.mdx<br>content/blog/dependency-conflict-fix.mdx<br>content/blog/github-actions-build-log-debug.mdx |
+| 88 | public search refresh wave 88 | 3/3 | 27 | 0 | cannibalization | content/blog/module-not-found-debug.mdx<br>content/blog/npm-command-not-found-fix.mdx<br>content/blog/permission-denied-fix.mdx |
+| 89 | public search refresh wave 89 | 3/3 | 27 | 0 | short-description | content/blog/agent-deployment-beginner-guide.mdx<br>content/blog/agent-human-review-loop-guide.mdx<br>content/blog/agent-memory-design-guide.mdx |
+| 90 | public search refresh wave 90 | 3/3 | 27 | 0 | short-description | content/blog/agent-memory-postgres-schema-guide.mdx<br>content/blog/agent-observability-logging-guide.mdx<br>content/blog/agent-production-deployment-checklist.mdx |
+| 91 | public search refresh wave 91 | 3/3 | 27 | 0 | short-description | content/blog/agent-tool-calling-beginner-guide.mdx<br>content/blog/agent-tool-permission-safety-guide.mdx<br>content/blog/ai-agent-deployment-vercel-ai-sdk-guide.mdx |
+| 92 | public search refresh wave 92 | 3/3 | 27 | 0 | short-description | content/blog/ai-agent-memory-rag-design-guide.mdx<br>content/blog/ai-api-key-security-rotation-guide.mdx<br>content/blog/ai-automation-project-pricing-scope-guide.mdx |
+| 93 | public search refresh wave 93 | 3/3 | 27 | 0 | short-description | content/blog/ai-coding-tools-risk-check-checklist.mdx<br>content/blog/ai-coding-tools-risk-check.mdx<br>content/blog/ai-content-human-review-template-checklist.mdx |
+| 94 | public search refresh wave 94 | 3/3 | 27 | 0 | short-description | content/blog/ai-content-human-review-template.mdx<br>content/blog/ai-freelance-daily-planner-checklist.mdx<br>content/blog/ai-freelance-daily-planner.mdx |
+| 95 | public search refresh wave 95 | 3/3 | 27 | 0 | short-description | content/blog/ai-logo-design-beginner-guide.mdx<br>content/blog/ai-model-selection-customer-service-guide.mdx<br>content/blog/ai-prompt-framework-business-guide.mdx |
+| 96 | public search refresh wave 96 | 3/3 | 27 | 0 | short-description | content/blog/ai-prompt-library-team-knowledge-base-guide.mdx<br>content/blog/ai-resume-cover-letter-guide.mdx<br>content/blog/ai-tool-setup-service-checklist-checklist.mdx |
+| 97 | public search refresh wave 97 | 3/3 | 27 | 0 | short-description | content/blog/ai-tool-setup-service-checklist.mdx<br>content/blog/ai-video-tools-beginner-guide.mdx<br>content/blog/ai-website-builder-beginner-guide.mdx |
+| 98 | public search refresh wave 98 | 3/3 | 27 | 0 | short-description | content/blog/anythingllm-local-rag-beginner-guide.mdx<br>content/blog/api-key-invalid-or-missing-freelance-scope.mdx<br>content/blog/autogen-agent-framework-beginner-guide.mdx |
+| 99 | public search refresh wave 99 | 3/3 | 27 | 0 | short-description | content/blog/chatgpt-codex-claude-workflow-checklist.mdx<br>content/blog/chatgpt-codex-claude-workflow.mdx<br>content/blog/chatgpt-how-to-use-beginner-guide.mdx |
+| 100 | public search refresh wave 100 | 3/3 | 27 | 0 | short-description | content/blog/chatgpt-prompt-template-beginner.mdx<br>content/blog/chroma-vector-database-rag-guide.mdx<br>content/blog/claude-api-beginner-guide.mdx |
+| 101 | public search refresh wave 101 | 3/3 | 27 | 0 | short-description | content/blog/claude-api-rate-limit-debug-guide.mdx<br>content/blog/claude-code-beginner-mistakes-freelance-scope.mdx<br>content/blog/claude-code-bug-prompt-freelance-scope.mdx |
+| 102 | public search refresh wave 102 | 3/3 | 27 | 0 | short-description | content/blog/claude-code-client-questions-freelance-scope.mdx<br>content/blog/claude-code-common-commands-freelance-scope.mdx<br>content/blog/claude-code-delivery-note-freelance-scope.mdx |
+| 103 | public search refresh wave 103 | 3/3 | 27 | 0 | short-description | content/blog/claude-code-error-debug-freelance-scope.mdx<br>content/blog/claude-code-install-prerequisites-freelance-scope.mdx<br>content/blog/claude-code-proposal-review-freelance-scope.mdx |
+| 104 | public search refresh wave 104 | 3/3 | 27 | 0 | short-description | content/blog/client-acceptance-checklist-checklist.mdx<br>content/blog/client-acceptance-checklist.mdx<br>content/blog/client-requirement-form-questions-checklist.mdx |
+| 105 | public search refresh wave 105 | 3/3 | 27 | 0 | short-description | content/blog/client-requirement-form-questions.mdx<br>content/blog/cloudflare-vs-namecheap-domain-checklist.mdx<br>content/blog/cloudflare-workers-ai-beginner-guide.mdx |
+| 106 | public search refresh wave 106 | 3/3 | 27 | 0 | short-description | content/blog/codex-avoid-secret-leak-freelance-scope.mdx<br>content/blog/codex-bugfix-rollback-record-freelance-scope.mdx<br>content/blog/codex-client-requirement-questions-freelance-scope.mdx |
+| 107 | public search refresh wave 107 | 3/3 | 27 | 0 | short-description | content/blog/codex-codex-claude-code-4-40.mdx<br>content/blog/codex-codex-css-bug-4-35.mdx<br>content/blog/codex-codex-github-4-36.mdx |
+| 108 | public search refresh wave 108 | 3/3 | 27 | 0 | short-description | content/blog/codex-codex-upwork-4-39.mdx<br>content/blog/codex-codex-vercel-4-37.mdx<br>content/blog/codex-edit-existing-ui-freelance-scope.mdx |
+| 109 | public search refresh wave 109 | 3/3 | 27 | 0 | short-description | content/blog/codex-first-day-guide-freelance-scope.mdx<br>content/blog/codex-github-workflow-freelance-scope.mdx<br>content/blog/codex-install-prerequisites-freelance-scope.mdx |
+| 110 | public search refresh wave 110 | 3/3 | 27 | 0 | short-description | content/blog/codex-npm-install-errors-freelance-scope.mdx<br>content/blog/codex-portfolio-page-assets-freelance-scope.mdx<br>content/blog/codex-project-start-checklist-checklist.mdx |
+| 111 | public search refresh wave 111 | 3/3 | 27 | 0 | short-description | content/blog/codex-project-start-checklist.mdx<br>content/blog/codex-readme-review-freelance-scope.mdx<br>content/blog/codex-review-generated-code-freelance-scope.mdx |
+| 112 | public search refresh wave 112 | 3/3 | 27 | 0 | short-description | content/blog/codex-tailwind-mobile-check-freelance-scope.mdx<br>content/blog/codex-vercel-deployment-freelance-scope.mdx<br>content/blog/codex-vs-claude-code-beginner.mdx |
+| 113 | public search refresh wave 113 | 3/3 | 27 | 0 | short-description | content/blog/codex-vs-cursor-web-editing-freelance-scope.mdx<br>content/blog/codex-windows-install-failed-freelance-scope.mdx<br>content/blog/coze-bot-publish-checklist.mdx |
+| 114 | public search refresh wave 114 | 3/3 | 27 | 0 | short-description | content/blog/crewai-agent-deployment-beginner-guide.mdx<br>content/blog/cursor-vs-codex-web-editing-checklist.mdx<br>content/blog/customer-service-ai-prompts-guide.mdx |
+| 115 | public search refresh wave 115 | 3/3 | 27 | 0 | short-description | content/blog/data-analysis-ai-prompts-guide.mdx<br>content/blog/dependency-conflict-fix-freelance-scope.mdx<br>content/blog/dify-coze-flowise-agent-builder-comparison.mdx |
+| 116 | public search refresh wave 116 | 3/3 | 27 | 0 | short-description | content/blog/dify-docker-compose-self-host-guide.mdx<br>content/blog/dify-knowledge-base-beginner-guide.mdx<br>content/blog/dify-ollama-local-model-guide.mdx |
+| 117 | public search refresh wave 117 | 3/3 | 27 | 0 | short-description | content/blog/dify-openai-api-provider-guide.mdx<br>content/blog/dify-workflow-error-handling-guide.mdx<br>content/blog/dify-workflow-vs-agent-guide.mdx |
+| 118 | public search refresh wave 118 | 3/3 | 27 | 0 | short-description | content/blog/digital-template-refund-policy-checklist.mdx<br>content/blog/ecommerce-ai-prompts-guide.mdx<br>content/blog/education-ai-prompts-guide.mdx |
+| 119 | public search refresh wave 119 | 3/3 | 27 | 0 | short-description | content/blog/embedding-model-selection-guide.mdx<br>content/blog/english-client-reply-template-honest-checklist.mdx<br>content/blog/english-client-reply-template-honest.mdx |
+| 120 | public search refresh wave 120 | 3/3 | 27 | 0 | short-description | content/blog/enterprise-im-ai-agent-integration-guide.mdx<br>content/blog/env-variable-missing-fix-freelance-scope.mdx<br>content/blog/fastgpt-knowledge-base-deployment-guide.mdx |
+| 121 | public search refresh wave 121 | 3/3 | 27 | 0 | short-description | content/blog/finance-ai-prompts-guide.mdx<br>content/blog/first-freelance-payment-check-checklist.mdx<br>content/blog/first-freelance-payment-check.mdx |
+| 122 | public search refresh wave 122 | 3/3 | 27 | 0 | short-description | content/blog/flowise-local-deployment-beginner-guide.mdx<br>content/blog/flowise-ollama-local-rag-checklist.mdx<br>content/blog/freelance-platform-tool-stack-checklist.mdx |
+| 123 | public search refresh wave 123 | 3/3 | 27 | 0 | short-description | content/blog/freelance-platform-tool-stack.mdx<br>content/blog/freelance-quote-template-fill-checklist.mdx<br>content/blog/freelance-quote-template-fill.mdx |
+| 124 | public search refresh wave 124 | 3/3 | 27 | 0 | short-description | content/blog/freelance-weekly-review-template-checklist.mdx<br>content/blog/freelance-weekly-review-template.mdx<br>content/blog/gemini-api-nextjs-guide.mdx |
+| 125 | public search refresh wave 125 | 3/3 | 27 | 0 | short-description | content/blog/gemini-api-rate-limit-debug-guide.mdx<br>content/blog/git-authentication-failed-fix-freelance-scope.mdx<br>content/blog/github-command-cheatsheet-beginner-checklist.mdx |
+| 126 | public search refresh wave 126 | 3/3 | 27 | 0 | short-description | content/blog/github-command-cheatsheet-beginner.mdx<br>content/blog/github-vercel-beginner-site-checklist.mdx<br>content/blog/github-vercel-beginner-site.mdx |
+| 127 | public search refresh wave 127 | 3/3 | 27 | 0 | short-description | content/blog/google-analytics-when-to-add-checklist.mdx<br>content/blog/groq-api-fast-llm-guide.mdx<br>content/blog/gumroad-template-selling-prep-checklist.mdx |
+| 128 | public search refresh wave 128 | 3/3 | 27 | 0 | short-description | content/blog/gumroad-template-selling-prep.mdx<br>content/blog/healthcare-admin-ai-prompts-guide.mdx<br>content/blog/helicone-llm-observability-guide.mdx |
+| 129 | public search refresh wave 129 | 3/3 | 27 | 0 | short-description | content/blog/hr-recruiting-ai-prompts-guide.mdx<br>content/blog/huggingface-spaces-ai-demo-guide.mdx<br>content/blog/industry-ai-prompts-template-library-2026.mdx |
+| 130 | public search refresh wave 130 | 3/3 | 27 | 0 | short-description | content/blog/international-payment-fee-estimate-checklist.mdx<br>content/blog/international-payment-fee-estimate.mdx<br>content/blog/knowledge-base-permission-design-guide.mdx |
+| 131 | public search refresh wave 131 | 3/3 | 27 | 0 | short-description | content/blog/langchain-rag-beginner-guide.mdx<br>content/blog/langgraph-agent-beginner-guide.mdx<br>content/blog/legal-contract-ai-prompts-guide.mdx |
+| 132 | public search refresh wave 132 | 3/3 | 27 | 0 | short-description | content/blog/lemon-squeezy-digital-products-checklist.mdx<br>content/blog/lemon-squeezy-digital-products.mdx<br>content/blog/litellm-proxy-beginner-guide.mdx |
+| 133 | public search refresh wave 133 | 3/3 | 27 | 0 | short-description | content/blog/llama-cpp-server-beginner-guide.mdx<br>content/blog/llamaindex-rag-beginner-guide.mdx<br>content/blog/llm-api-integration-deployment-checklist.mdx |
+| 134 | public search refresh wave 134 | 3/3 | 27 | 0 | short-description | content/blog/llm-api-rate-limit-retry-guide.mdx<br>content/blog/llm-deployment-beginner-guide.mdx<br>content/blog/llm-deployment-huggingface-inference-endpoints-guide.mdx |
+| 135 | public search refresh wave 135 | 3/3 | 27 | 0 | short-description | content/blog/llm-finetuning-vs-rag-beginner-guide.mdx<br>content/blog/llm-serving-cost-latency-checklist.mdx<br>content/blog/lm-studio-local-api-guide.mdx |
+| 136 | public search refresh wave 136 | 3/3 | 27 | 0 | short-description | content/blog/local-llm-deployment-beginner.mdx<br>content/blog/local-llm-vram-not-enough-guide.mdx<br>content/blog/make-vs-zapier-automation-checklist.mdx |
+| 137 | public search refresh wave 137 | 3/3 | 27 | 0 | short-description | content/blog/make-vs-zapier-automation.mdx<br>content/blog/manufacturing-ai-prompts-guide.mdx<br>content/blog/marketing-ai-prompts-guide.mdx |
+| 138 | public search refresh wave 138 | 3/3 | 27 | 0 | short-description | content/blog/mcp-beginner-guide-agent-tools.mdx<br>content/blog/mcp-server-deployment-security-checklist.mdx<br>content/blog/multi-model-router-fallback-guide.mdx |
+| 139 | public search refresh wave 139 | 3/3 | 27 | 0 | short-description | content/blog/n8n-ai-agent-rag-memory-guide.mdx<br>content/blog/n8n-ai-agent-self-host-guide.mdx<br>content/blog/n8n-ai-agent-webhook-production-guide.mdx |
+| 140 | public search refresh wave 140 | 3/3 | 27 | 0 | short-description | content/blog/notion-freelance-workflow-checklist.mdx<br>content/blog/notion-freelance-workflow.mdx<br>content/blog/ollama-api-web-app-integration.mdx |
+| 141 | public search refresh wave 141 | 3/3 | 27 | 0 | short-description | content/blog/ollama-local-model-deployment-guide.mdx<br>content/blog/open-webui-functions-pipelines-deployment-guide.mdx<br>content/blog/open-webui-ollama-docker-guide.mdx |
+| 142 | public search refresh wave 142 | 3/3 | 27 | 0 | short-description | content/blog/openai-api-nextjs-route-handler-guide.mdx<br>content/blog/openai-batch-api-cost-guide.mdx<br>content/blog/openrouter-api-beginner-guide.mdx |
+| 143 | public search refresh wave 143 | 3/3 | 27 | 0 | short-description | content/blog/operations-ai-prompts-guide.mdx<br>content/blog/package-lock-conflict-fix-freelance-scope.mdx<br>content/blog/paddle-vs-stripe-beginner-checklist.mdx |
+| 144 | public search refresh wave 144 | 3/3 | 27 | 0 | short-description | content/blog/paddle-vs-stripe-beginner.mdx<br>content/blog/payment-account-info-mismatch-risk-checklist.mdx<br>content/blog/payment-account-info-mismatch-risk.mdx |
+| 145 | public search refresh wave 145 | 3/3 | 27 | 0 | short-description | content/blog/payment-page-disclaimer-checklist.mdx<br>content/blog/payment-page-disclaimer.mdx<br>content/blog/payoneer-freelancer-beginner-checklist.mdx |
+| 146 | public search refresh wave 146 | 3/3 | 27 | 0 | short-description | content/blog/payoneer-freelancer-beginner.mdx<br>content/blog/payoneer-wise-paypal-choose-checklist.mdx<br>content/blog/payoneer-wise-paypal-choose.mdx |
+| 147 | public search refresh wave 147 | 3/3 | 27 | 0 | short-description | content/blog/paypal-freelancer-limits-checklist.mdx<br>content/blog/paypal-freelancer-limits.mdx<br>content/blog/paypal-vs-payoneer-beginner-checklist.mdx |
+| 148 | public search refresh wave 148 | 3/3 | 27 | 0 | short-description | content/blog/paypal-vs-payoneer-beginner.mdx<br>content/blog/permission-denied-fix-freelance-scope.mdx<br>content/blog/pinecone-rag-beginner-guide.mdx |
+| 149 | public search refresh wave 149 | 3/3 | 27 | 0 | short-description | content/blog/platform-payment-vs-direct-payment-checklist.mdx<br>content/blog/platform-payment-vs-direct-payment.mdx<br>content/blog/port-already-in-use-fix-freelance-scope.mdx |
+| 150 | public search refresh wave 150 | 3/3 | 27 | 0 | short-description | content/blog/portfolio-page-copy-template-checklist.mdx<br>content/blog/portfolio-page-copy-template.mdx<br>content/blog/practice-project-log-template-checklist.mdx |
+| 151 | public search refresh wave 151 | 3/3 | 27 | 0 | short-description | content/blog/practice-project-log-template.mdx<br>content/blog/pre-project-risk-assessment-template-checklist.mdx<br>content/blog/pre-project-risk-assessment-template.mdx |
+| 152 | public search refresh wave 152 | 3/3 | 27 | 0 | short-description | content/blog/product-manager-ai-prompts-guide.mdx<br>content/blog/project-delivery-checklist-items-checklist.mdx<br>content/blog/project-delivery-checklist-items.mdx |
+| 153 | public search refresh wave 153 | 3/3 | 27 | 0 | short-description | content/blog/project-retrospective-template-checklist.mdx<br>content/blog/project-retrospective-template.mdx<br>content/blog/qdrant-vector-database-beginner-guide.mdx |
+| 154 | public search refresh wave 154 | 3/3 | 27 | 0 | short-description | content/blog/quote-email-uncertain-scope-checklist.mdx<br>content/blog/quote-email-uncertain-scope.mdx<br>content/blog/rag-chunking-strategy-guide.mdx |
+| 155 | public search refresh wave 155 | 3/3 | 27 | 0 | short-description | content/blog/rag-citation-source-trace-guide.mdx<br>content/blog/rag-document-cleaning-before-upload-guide.mdx<br>content/blog/rag-evaluation-test-set-guide.mdx |
+| 156 | public search refresh wave 156 | 3/3 | 27 | 0 | short-description | content/blog/rag-knowledge-base-beginner-guide.mdx<br>content/blog/rag-retrieval-no-context-debug-guide.mdx<br>content/blog/real-estate-ai-prompts-guide.mdx |
+| 157 | public search refresh wave 157 | 3/3 | 27 | 0 | short-description | content/blog/runpod-serverless-llm-deployment-guide.mdx<br>content/blog/sales-ai-prompts-guide.mdx<br>content/blog/service-inquiry-form-questions-checklist.mdx |
+| 158 | public search refresh wave 158 | 3/3 | 27 | 0 | short-description | content/blog/service-inquiry-form-questions.mdx<br>content/blog/service-payment-method-beginner-checklist.mdx<br>content/blog/service-payment-method-beginner.mdx |
+| 159 | public search refresh wave 159 | 3/3 | 27 | 0 | short-description | content/blog/small-site-launch-sop-checklist.mdx<br>content/blog/small-site-launch-sop.mdx<br>content/blog/software-development-ai-prompts-guide.mdx |
+| 160 | public search refresh wave 160 | 3/3 | 27 | 0 | short-description | content/blog/stripe-templates-vs-services-checklist.mdx<br>content/blog/stripe-templates-vs-services.mdx<br>content/blog/subscription-payment-failed-message-checklist.mdx |
+| 161 | public search refresh wave 161 | 3/3 | 21 | 0 | none | content/blog/arize-phoenix-llm-observability-guide.mdx<br>content/blog/bentoml-llm-deployment-beginner-guide.mdx<br>content/blog/cloudflare-vs-namecheap-domain.mdx |
+| 162 | public search refresh wave 162 | 3/3 | 21 | 0 | none | content/blog/codex-css-spacing-responsive-freelance-scope.mdx<br>content/blog/cursor-vs-codex-web-editing.mdx<br>content/blog/digital-template-refund-policy.mdx |
+| 163 | public search refresh wave 163 | 3/3 | 21 | 0 | none | content/blog/free-seo-tools-beginner-checklist.mdx<br>content/blog/free-seo-tools-beginner.mdx<br>content/blog/google-analytics-when-to-add.mdx |
+| 164 | public search refresh wave 164 | 3/3 | 21 | 0 | none | content/blog/google-search-console-new-site-checklist.mdx<br>content/blog/google-search-console-new-site.mdx<br>content/blog/gpu-docker-nvidia-container-toolkit-guide.mdx |
+| 165 | public search refresh wave 165 | 3/3 | 21 | 0 | none | content/blog/huggingface-tgi-deployment-guide.mdx<br>content/blog/kubernetes-gpu-llm-deployment-guide.mdx<br>content/blog/langsmith-observability-evaluation-guide.mdx |
+| 166 | public search refresh wave 166 | 3/3 | 21 | 0 | none | content/blog/modal-serverless-gpu-llm-guide.mdx<br>content/blog/openai-agents-sdk-beginner-guide.mdx<br>content/blog/promptfoo-llm-evaluation-beginner-guide.mdx |
+| 167 | public search refresh wave 167 | 2/2 | 14 | 0 | none | content/blog/ragas-rag-evaluation-beginner-guide.mdx<br>content/blog/replicate-api-ai-demo-guide.mdx |
 
 ## Tool Market Opportunity Map
 
@@ -2879,7 +2871,7 @@ Public categories:
 
 ## Cannibalization Warnings
 
-- Conflicts: 200
+- Conflicts: 199
 - Review batch conflicts: 0
 
 ## Freshness Warnings
@@ -2906,7 +2898,7 @@ Public categories:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-18T11:37:26.032Z
+- Latest check: 2026-06-19T02:13:35.596Z
 - Ok: true
 - Public articles checked: 500
 - Sitemap URLs: undefined
@@ -2916,11 +2908,11 @@ Public categories:
 
 - Next batch: 1 - 大模型和 AI 应用部署教程
 - Current publish readiness items: 3
-- SEO warning remediation items: 260
-- SEO warning public/draft items: 255/5
-- SEO warning human-gated items: 260
+- SEO warning remediation items: 0
+- SEO warning public/draft items: 0/0
+- SEO warning human-gated items: 0
 - SEO warning unsafe items: 0
-- SEO warning top items shown: 8
+- SEO warning top items shown: 0
 
 ## Next Actions
 

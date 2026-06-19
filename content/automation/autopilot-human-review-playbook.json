@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:36:48.707Z",
+  "generatedAt": "2026-06-19T02:12:59.325Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -222,14 +222,13 @@
         "Review proposed meta description option: 整理 Vercel AI Gateway 多模型接入思路，覆盖统一 API、provider 切换、日志、成本、降级、AI SDK 和上线检查。.",
         "在开头 200 字内自然回答一次“Vercel AI Gateway 多模型”这个搜索意图，先给结论再展开步骤。",
         "在相关段落加入公开内链：多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide)。",
-        "Check whether the primary keyword can appear naturally in the title without making the title stiff.",
         "Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型."
       ],
       "sourceActions": [
         "Verify 7 official source target(s).",
         "Check 4 search query seed(s).",
         "Review 19 combined checklist signal(s).",
-        "Apply copydesk remediation: Check whether the primary keyword can appear naturally in the title without making the title stiff.; Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型..",
+        "Apply copydesk remediation: Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型..",
         "Complete freshness checklist for fast-changing AI/tool guidance.",
         "Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.",
         "Open official source and verify current wording: OpenAI API docs: https://platform.openai.com/docs",

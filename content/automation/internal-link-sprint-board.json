@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:36:16.422Z",
+  "generatedAt": "2026-06-19T02:12:27.190Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "internalLinkAuditGeneratedAt": "2026-06-18T11:36:15.957Z",
+    "internalLinkAuditGeneratedAt": "2026-06-19T02:12:26.730Z",
     "internalLinkAuditSummary": {
       "broadFirstCoverageItems": 0,
       "broadFirstCoverageItemsMissingPublicLinkSuggestion": 0,
@@ -207,20 +207,20 @@
           "url": "/blog/multi-model-router-fallback-guide"
         },
         {
+          "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
+          "reason": "same category: AI 部署; keyword overlap: ai, 部署, 知识库, agent, 怎么, 么做",
+          "score": 78,
+          "slug": "ai-model-selection-customer-service-guide",
+          "title": "客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检",
+          "url": "/blog/ai-model-selection-customer-service-guide"
+        },
+        {
           "file": "content/blog/claude-api-rate-limit-debug-guide.mdx",
           "reason": "same category: AI 部署; keyword overlap: ai, claude, 部署, 降级, api, 怎么",
           "score": 74,
           "slug": "claude-api-rate-limit-debug-guide",
           "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
           "url": "/blog/claude-api-rate-limit-debug-guide"
-        },
-        {
-          "file": "content/blog/gemini-api-rate-limit-debug-guide.mdx",
-          "reason": "same category: AI 部署; keyword overlap: ai, gemini, 部署, 降级, api, 怎么",
-          "score": 74,
-          "slug": "gemini-api-rate-limit-debug-guide",
-          "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
-          "url": "/blog/gemini-api-rate-limit-debug-guide"
         }
       ],
       "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
@@ -280,7 +280,7 @@
       "unsafeReasons": []
     },
     {
-      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/codex-client-requirement-questions-freelance-scope using reader-first anchor text, not keyword stuffing.",
+      "anchorPrompt": "When a paragraph mentions the related workflow, add one natural link to /blog/ai-small-project-practice-topics using reader-first anchor text, not keyword stuffing.",
       "currentInternalLinks": 3,
       "file": "content/blog/tools-not-to-buy-first.mdx",
       "linkActions": [
@@ -290,7 +290,7 @@
         "Prefer links that help the reader move from a draft tutorial to an already public beginner page.",
         "Do not change status, noindex, canonical, slug, review state, or publish state while adding the link.",
         "After the edit, rerun content integrity, internal link audit, and automation gate before any approval action.",
-        "Primary suggested target: /blog/codex-client-requirement-questions-freelance-scope.",
+        "Primary suggested target: /blog/ai-small-project-practice-topics.",
         "Candidate currently links to 0 public article(s)."
       ],
       "linksToPublicArticles": 0,
@@ -304,12 +304,12 @@
       "status": "draft",
       "suggestedLinks": [
         {
-          "file": "content/blog/codex-client-requirement-questions-freelance-scope.mdx",
-          "reason": "shared tags: AI 工具实践; keyword overlap: ai, 工具实践, 新手教程, codex, 工具, 新手",
-          "score": 91,
-          "slug": "codex-client-requirement-questions-freelance-scope",
-          "title": "Codex 需求不清楚的任务使用前怎么判断是否适合",
-          "url": "/blog/codex-client-requirement-questions-freelance-scope"
+          "file": "content/blog/ai-small-project-practice-topics.mdx",
+          "reason": "shared tags: AI 工具实践, 新手教程; keyword overlap: ai, 工具实践, 新手教程, 作品集, 工具, 新手",
+          "score": 88,
+          "slug": "ai-small-project-practice-topics",
+          "title": "AI 小项目练习选什么：新手从低风险任务开始",
+          "url": "/blog/ai-small-project-practice-topics"
         },
         {
           "file": "content/blog/daily-ai-freelance-practice-log.mdx",
@@ -788,12 +788,12 @@
           "url": "/blog/groq-api-fast-llm-guide"
         },
         {
-          "file": "content/blog/replicate-api-ai-demo-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: API; keyword overlap: ai, api, 基建, 模型, 怎么, 部署",
-          "score": 82,
-          "slug": "replicate-api-ai-demo-guide",
-          "title": "Replicate API 怎么做 AI Demo：模型调用、部署和费用边界",
-          "url": "/blog/replicate-api-ai-demo-guide"
+          "file": "content/blog/claude-api-beginner-guide.mdx",
+          "reason": "same category: AI 基建; keyword overlap: ai, api, 怎么接入, 基建, 接入, 怎么",
+          "score": 78,
+          "slug": "claude-api-beginner-guide",
+          "title": "Claude API 怎么接入：Messages API、费用和上下文边界",
+          "url": "/blog/claude-api-beginner-guide"
         }
       ],
       "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
@@ -940,7 +940,7 @@
           "reason": "same category: AI 基建; shared tags: vLLM, 大模型部署; keyword overlap: vllm, ai, 基建, 部署, 大模型部署, gpu",
           "score": 90,
           "slug": "runpod-serverless-llm-deployment-guide",
-          "title": "RunPod Serverless 怎么部署大模型：Endpoint、Worker 和冷启动边界",
+          "title": "RunPod Serverless 大模型部署：Endpoint、Worker 和冷启动边界",
           "url": "/blog/runpod-serverless-llm-deployment-guide"
         },
         {

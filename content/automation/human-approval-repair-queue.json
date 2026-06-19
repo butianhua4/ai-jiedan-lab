@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:36:50.118Z",
+  "generatedAt": "2026-06-19T02:13:00.733Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -454,7 +454,7 @@
       "taskId": "VERCEL-AI-GATEWAY-MULTI-PROVIDER-GUIDE-13"
     },
     {
-      "action": "Suggested public link: Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 (/blog/claude-api-rate-limit-debug-guide) - same category: AI 部署; keyword overlap: ai, claude, 部署, 降级, api, 怎么.",
+      "action": "Suggested public link: 客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检 (/blog/ai-model-selection-customer-service-guide) - same category: AI 部署; keyword overlap: ai, 部署, 知识库, agent, 怎么, 么做.",
       "autoEditable": false,
       "category": "internal-link",
       "commandBoundary": "npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",

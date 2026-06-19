@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T02:08:10.255Z",
+  "generatedAt": "2026-06-19T02:13:37.961Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This guard scans operational docs and automation reports for unsupported traffic claims. It does not scan draft article teaching examples."
@@ -8,7 +8,7 @@
     "filesScanned": 240,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 9670
+    "watchMentions": 9122
   },
   "unsafeClaims": [],
   "watchMentions": [
@@ -41,6 +41,30 @@
       "line": 51,
       "reason": "traffic-related mention",
       "text": "\"- The site does not claim real traffic, impressions, income guarantees, or automatic publishing.\","
+    },
+    {
+      "file": "docs/NEXT_ACTIONS.md",
+      "line": 24,
+      "reason": "traffic-related mention",
+      "text": "## 4. 收款和流量收益"
+    },
+    {
+      "file": "docs/NEXT_ACTIONS.md",
+      "line": 29,
+      "reason": "traffic-related mention",
+      "text": "- 稳定流量后再接联盟链接和广告。"
+    },
+    {
+      "file": "docs/NEXT_ACTIONS.md",
+      "line": 46,
+      "reason": "traffic-related mention",
+      "text": "- 有 5 篇以上人工审核公开文章：注册 Google Search Console。"
+    },
+    {
+      "file": "docs/NEXT_ACTIONS.md",
+      "line": 47,
+      "reason": "traffic-related mention",
+      "text": "- 有稳定访问：开启 Vercel Web Analytics 或 Google Analytics。"
     },
     {
       "file": "docs/ai-deployment-coverage.md",
@@ -244,7 +268,7 @@
       "file": "docs/automation-digest.md",
       "line": 571,
       "reason": "traffic-related mention",
-      "text": "- {\"commandBoundary\":{\"markReviewAfterHumanApproval\":\"npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human\",\"publishDryRunAfterReview\":\"npm run publish:articles -- --file=content/blog/together-ai-api-beginner-guide.mdx\",\"publishConfirm\":\"not-included\",\"stopBefore\":\"Do not run mark:review until explicit human approval; do not publish without a separate explicit approval.\"},\"file\":\"content/blog/together-ai-api-beginner-guide.mdx\",\"humanChecklist\":[\"Review reason: 4 search-intent weakness(es) need human copy review.\",\"Review reason: 8 source URL remediation action(s) need human confirmation.\",\"Apply or explicitly reject the internal-link suggestion before mark:review.\",\"Resolve or explicitly accept search-intent weaknesses before mark:review.\",\"Resolve or explicitly accept source URL remediation actions before mark:review.\",\"Verify source URLs and fact-check queries before mark:review.\",\"Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.\",\"Only after explicit human approval, run: npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human\",\"Publishing remains a separate explicit approval step.\"],\"internalLinkFixes\":[\"Suggested public link: OpenRouter API 怎么接入：统一模型入口不是只换 Base URL (/blog/openrouter-api-beginner-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai.\",\"Suggested public link: Groq API 怎么接入：高速推理适合什么 AI 应用 (/blog/groq-api-fast-llm-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai.\",\"Suggested public link: Replicate API 怎么做 AI Demo：模型调用、部署和费用边界 (/blog/replicate-api-ai-demo-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 基建, 模型, 怎么, 部署.\",\"Already links to at least one public article.\",\"Review 5 suggested public link target(s).\",\"Use one link only if it helps the reader continue the task; avoid stuffing links.\",\"Keep the article draft/noindex until explicit approval.\"],\"manualFixReady\":false,\"remediationReasons\":[\"4 search-intent weakness(es) need human copy review\",\"8 source URL remediation action(s) need human confirmation\"],\"searchFixes\":[\"Resolve search weakness: no exact search query appears in title.\",\"Resolve search weakness: no exact search query appears in description.\",\"Resolve search weakness: no exact search query appears in headings or body.\",\"Resolve search weakness: few query tokens appear in searchable text.\",\"Make the opening answer this query naturally: RAG 知识库搭建教程.\",\"During human review, consider whether the title can naturally include: RAG 知识库搭建教程.\",\"During human review, tune the meta description around: RAG 知识库搭建教程.\",\"During human review, add one natural H2/H3 or paragraph that answers: RAG 知识库搭建教程 / 企业知识库 AI 部署.\",\"During human review, add user-language phrasing without keyword stuffing.\",\"Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.\",\"Confirm the opening directly answers primary query: RAG 知识库搭建教程.\"],\"sourceChecks\":[\"Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.\",\"Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.\",\"Source URL action: If the final URL is the canonical destination, update the source target during human review.\",\"Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.\",\"Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.\",\"Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.\",\"Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.\",\"Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.\",\"Open source URL: https://platform.openai.com/docs.\",\"Open source URL: https://ai-sdk.dev/docs.\",\"Open source URL: https://docs.anthropic.com.\",\"Open source URL: https://platform.openai.com/docs/guides/retrieval.\",\"Fact-check query: Together AI API 接入 official docs latest.\",\"Fact-check query: Together AI API 接入 official documentation current limits.\",\"Fact-check query: Together AI API 怎么接入：开源模型接口、embedding 和部署边界 fact check official docs.\",\"Fact-check query: AI 基建 official docs limits pricing changelog.\",\"Fact-check query: 大模型部署教程.\",\"No income, ranking, approval, or client acquisition guarantee.\",\"No instruction to bypass platform, payment, messaging, account, or review rules.\",\"No API key, credential, private customer data, or account detail is included.\",\"Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.\",\"RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.\",\"Verify 4 official source target(s).\",\"Check 4 search query seed(s).\",\"Review 13 combined checklist signal(s).\",\"Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.\",\"Open official source and verify current wording: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval\",\"Open official source and verify current wording: LangChain docs: https://python.langchain.com/docs\"],\"sourceUrlFixes\":[\"Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.\",\"Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.\",\"Source URL action: If the final URL is the canonical destination, update the source target during human review.\",\"Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.\",\"Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.\",\"Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.\",\"Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.\",\"Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.\"],\"title\":\"Together AI API 怎么接入：开源模型接口、embedding 和部署边界\",\"unsafeReasons\":[\"human review playbook item is not ready\"]}"
+      "text": "- {\"commandBoundary\":{\"markReviewAfterHumanApproval\":\"npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human\",\"publishDryRunAfterReview\":\"npm run publish:articles -- --file=content/blog/together-ai-api-beginner-guide.mdx\",\"publishConfirm\":\"not-included\",\"stopBefore\":\"Do not run mark:review until explicit human approval; do not publish without a separate explicit approval.\"},\"file\":\"content/blog/together-ai-api-beginner-guide.mdx\",\"humanChecklist\":[\"Review reason: 4 search-intent weakness(es) need human copy review.\",\"Review reason: 8 source URL remediation action(s) need human confirmation.\",\"Apply or explicitly reject the internal-link suggestion before mark:review.\",\"Resolve or explicitly accept search-intent weaknesses before mark:review.\",\"Resolve or explicitly accept source URL remediation actions before mark:review.\",\"Verify source URLs and fact-check queries before mark:review.\",\"Confirm no traffic, ranking, revenue, benchmark, cost, latency, or stability claim is unsupported.\",\"Only after explicit human approval, run: npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human\",\"Publishing remains a separate explicit approval step.\"],\"internalLinkFixes\":[\"Suggested public link: OpenRouter API 怎么接入：统一模型入口不是只换 Base URL (/blog/openrouter-api-beginner-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai.\",\"Suggested public link: Groq API 怎么接入：高速推理适合什么 AI 应用 (/blog/groq-api-fast-llm-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai.\",\"Suggested public link: Claude API 怎么接入：Messages API、费用和上下文边界 (/blog/claude-api-beginner-guide) - same category: AI 基建; keyword overlap: ai, api, 怎么接入, 基建, 接入, 怎么.\",\"Already links to at least one public article.\",\"Review 5 suggested public link target(s).\",\"Use one link only if it helps the reader continue the task; avoid stuffing links.\",\"Keep the article draft/noindex until explicit approval.\"],\"manualFixReady\":false,\"remediationReasons\":[\"4 search-intent weakness(es) need human copy review\",\"8 source URL remediation action(s) need human confirmation\"],\"searchFixes\":[\"Resolve search weakness: no exact search query appears in title.\",\"Resolve search weakness: no exact search query appears in description.\",\"Resolve search weakness: no exact search query appears in headings or body.\",\"Resolve search weakness: few query tokens appear in searchable text.\",\"Make the opening answer this query naturally: RAG 知识库搭建教程.\",\"During human review, consider whether the title can naturally include: RAG 知识库搭建教程.\",\"During human review, tune the meta description around: RAG 知识库搭建教程.\",\"During human review, add one natural H2/H3 or paragraph that answers: RAG 知识库搭建教程 / 企业知识库 AI 部署.\",\"During human review, add user-language phrasing without keyword stuffing.\",\"Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.\",\"Confirm the opening directly answers primary query: RAG 知识库搭建教程.\"],\"sourceChecks\":[\"Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.\",\"Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.\",\"Source URL action: If the final URL is the canonical destination, update the source target during human review.\",\"Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.\",\"Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.\",\"Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.\",\"Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.\",\"Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.\",\"Open source URL: https://platform.openai.com/docs.\",\"Open source URL: https://ai-sdk.dev/docs.\",\"Open source URL: https://docs.anthropic.com.\",\"Open source URL: https://platform.openai.com/docs/guides/retrieval.\",\"Fact-check query: Together AI API 接入 official docs latest.\",\"Fact-check query: Together AI API 接入 official documentation current limits.\",\"Fact-check query: Together AI API 怎么接入：开源模型接口、embedding 和部署边界 fact check official docs.\",\"Fact-check query: AI 基建 official docs limits pricing changelog.\",\"Fact-check query: 大模型部署教程.\",\"No income, ranking, approval, or client acquisition guarantee.\",\"No instruction to bypass platform, payment, messaging, account, or review rules.\",\"No API key, credential, private customer data, or account detail is included.\",\"Fast-changing model names, pricing, quotas, rate limits, and deployment steps are checked against current official docs.\",\"RAG or knowledge-base claims distinguish retrieval quality, citation checks, privacy boundaries, and hallucination risk.\",\"Verify 4 official source target(s).\",\"Check 4 search query seed(s).\",\"Review 13 combined checklist signal(s).\",\"Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.\",\"Open official source and verify current wording: OpenAI retrieval docs: https://platform.openai.com/docs/guides/retrieval\",\"Open official source and verify current wording: LangChain docs: https://python.langchain.com/docs\"],\"sourceUrlFixes\":[\"Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.\",\"Source URL action: Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.\",\"Source URL action: If the final URL is the canonical destination, update the source target during human review.\",\"Source replacement plan: Prefer the final URL when it is canonical, current, and content-equivalent.\",\"Source replacement plan: Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.\",\"Confirm source redirect before approval: https://platform.openai.com/docs -> https://developers.openai.com/api/docs.\",\"Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.\",\"Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.\"],\"title\":\"Together AI API 怎么接入：开源模型接口、embedding 和部署边界\",\"unsafeReasons\":[\"human review playbook item is not ready\"]}"
     },
     {
       "file": "docs/automation-digest.md",
@@ -320,175 +344,151 @@
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1306,
+      "line": 1298,
       "reason": "traffic-related mention",
       "text": "## Traffic Evidence"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1308,
+      "line": 1300,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1309,
+      "line": 1301,
       "reason": "traffic-related mention",
       "text": "- Can claim traffic: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1311,
+      "line": 1303,
       "reason": "traffic-related mention",
       "text": "- Measured traffic sources: none"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1312,
+      "line": 1304,
       "reason": "traffic-related mention",
       "text": "- Search Console verification evidence: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1315,
+      "line": 1307,
       "reason": "traffic-related mention",
       "text": "- Unsupported traffic claims: 0"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1316,
+      "line": 1308,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim files scanned: 227"
+      "text": "- Traffic claim files scanned: 240"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1317,
+      "line": 1309,
       "reason": "traffic-related mention",
-      "text": "- Traffic claim watch mentions: 9553"
+      "text": "- Traffic claim watch mentions: 9670"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1330,
+      "line": 1322,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1452,
+      "line": 1444,
       "reason": "traffic-related mention",
       "text": "| AI 提示词 | 2026-06-14 | 4 | 医疗行政 AI 提示词模板：病历摘要、随访问卷和宣教材料怎么安全写 | /blog/healthcare-admin-ai-prompts-guide |"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1645,
+      "line": 1637,
       "reason": "traffic-related mention",
       "text": "| 工具导航 | 2026-06-14 | 4 | Google Analytics 什么时候再接入 | /blog/google-analytics-when-to-add |"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1646,
+      "line": 1638,
       "reason": "traffic-related mention",
       "text": "| 工具导航 | 2026-06-14 | 4 | Google Analytics 接入前检查清单 | /blog/google-analytics-when-to-add-checklist |"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1647,
+      "line": 1639,
       "reason": "traffic-related mention",
       "text": "| 工具导航 | 2026-06-14 | 4 | Google Search Console 新站怎么用 | /blog/google-search-console-new-site |"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1648,
+      "line": 1640,
       "reason": "traffic-related mention",
       "text": "| 工具导航 | 2026-06-14 | 4 | Google Search Console 新站检查清单 | /blog/google-search-console-new-site-checklist |"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1889,
+      "line": 1881,
       "reason": "traffic-related mention",
       "text": "- Measured traffic sources: 0"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1891,
+      "line": 1883,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 1928,
+      "line": 1920,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 2073,
+      "line": 2051,
       "reason": "traffic-related mention",
-      "text": "| 141 | 3/3 | 0 | 27 | short-description | content/blog/google-analytics-when-to-add-checklist.mdx<br>content/blog/gumroad-template-selling-prep-checklist.mdx<br>content/blog/gumroad-template-selling-prep.mdx |"
+      "text": "| 127 | 3/3 | 0 | 27 | short-description | content/blog/google-analytics-when-to-add-checklist.mdx<br>content/blog/groq-api-fast-llm-guide.mdx<br>content/blog/gumroad-template-selling-prep-checklist.mdx |"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 2098,
+      "line": 2087,
       "reason": "traffic-related mention",
-      "text": "| 166 | 3/3 | 0 | 21 | none | content/blog/free-seo-tools-beginner-checklist.mdx<br>content/blog/free-seo-tools-beginner.mdx<br>content/blog/google-analytics-when-to-add.mdx |"
+      "text": "| 163 | 3/3 | 0 | 21 | none | content/blog/free-seo-tools-beginner-checklist.mdx<br>content/blog/free-seo-tools-beginner.mdx<br>content/blog/google-analytics-when-to-add.mdx |"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 2133,
-      "reason": "traffic-related mention",
-      "text": "- Traffic data available: false"
-    },
-    {
-      "file": "docs/automation-digest.md",
-      "line": 2278,
-      "reason": "traffic-related mention",
-      "text": "| 141 | public search refresh wave 141 | 3/3 | 27 | 0 | short-description | content/blog/google-analytics-when-to-add-checklist.mdx<br>content/blog/gumroad-template-selling-prep-checklist.mdx<br>content/blog/gumroad-template-selling-prep.mdx |"
-    },
-    {
-      "file": "docs/automation-digest.md",
-      "line": 2303,
-      "reason": "traffic-related mention",
-      "text": "| 166 | public search refresh wave 166 | 3/3 | 21 | 0 | none | content/blog/free-seo-tools-beginner-checklist.mdx<br>content/blog/free-seo-tools-beginner.mdx<br>content/blog/google-analytics-when-to-add.mdx |"
-    },
-    {
-      "file": "docs/automation-digest.md",
-      "line": 2317,
+      "line": 2125,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 2333,
+      "line": 2256,
+      "reason": "traffic-related mention",
+      "text": "| 127 | public search refresh wave 127 | 3/3 | 27 | 0 | short-description | content/blog/google-analytics-when-to-add-checklist.mdx<br>content/blog/groq-api-fast-llm-guide.mdx<br>content/blog/gumroad-template-selling-prep-checklist.mdx |"
+    },
+    {
+      "file": "docs/automation-digest.md",
+      "line": 2292,
+      "reason": "traffic-related mention",
+      "text": "| 163 | public search refresh wave 163 | 3/3 | 21 | 0 | none | content/blog/free-seo-tools-beginner-checklist.mdx<br>content/blog/free-seo-tools-beginner.mdx<br>content/blog/google-analytics-when-to-add.mdx |"
+    },
+    {
+      "file": "docs/automation-digest.md",
+      "line": 2309,
+      "reason": "traffic-related mention",
+      "text": "- Traffic data available: false"
+    },
+    {
+      "file": "docs/automation-digest.md",
+      "line": 2325,
       "reason": "traffic-related mention",
       "text": "| google-search-console | global | true | https://support.google.com/webmasters/answer/9008080 | Verify site ownership, then submit sitemap in Search Console. |"
     },
     {
       "file": "docs/automation-digest.md",
-      "line": 2436,
-      "reason": "traffic-related mention",
-      "text": "- Traffic data available: false"
-    },
-    {
-      "file": "docs/automation-digest.md",
-      "line": 2470,
-      "reason": "traffic-related mention",
-      "text": "- Traffic data available: false"
-    },
-    {
-      "file": "docs/automation-digest.md",
-      "line": 2527,
-      "reason": "traffic-related mention",
-      "text": "- Traffic data available: false"
-    },
-    {
-      "file": "docs/automation-digest.md",
-      "line": 2556,
-      "reason": "traffic-related mention",
-      "text": "- Traffic data available: false"
-    },
-    {
-      "file": "docs/automation-digest.md",
-      "line": 2589,
+      "line": 2428,
       "reason": "traffic-related mention",
       "text": "- Traffic data available: false"
     }

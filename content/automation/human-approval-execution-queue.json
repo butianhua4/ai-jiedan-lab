@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:36:57.586Z",
+  "generatedAt": "2026-06-19T02:13:08.094Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "firstCoverageGeneratedAt": "2026-06-18T11:36:57.104Z",
+    "firstCoverageGeneratedAt": "2026-06-19T02:13:07.622Z",
     "firstCoverageSummary": {
       "blockingItems": 0,
       "commandBoundaries": 0,
@@ -29,7 +29,7 @@
       "warningItems": 0,
       "zeroPublicClusters": 0
     },
-    "massAiSearchMatrixGeneratedAt": "2026-06-18T11:36:30.584Z",
+    "massAiSearchMatrixGeneratedAt": "2026-06-19T02:12:41.138Z",
     "massAiSearchMatrixSummary": {
       "commandBoundaries": 5,
       "deploymentBridgedThemes": 4,
@@ -50,7 +50,7 @@
       "unsafeItems": 2,
       "waves": 3
     },
-    "popularAiPromptPlaybookGeneratedAt": "2026-06-18T11:36:33.917Z",
+    "popularAiPromptPlaybookGeneratedAt": "2026-06-19T02:12:44.569Z",
     "popularAiPromptPlaybookSummary": {
       "agentDeploymentLanes": 3,
       "broadWorkPromptLanes": 3,
@@ -72,24 +72,24 @@
       "uniqueCandidateFiles": 21,
       "unsafeItems": 7
     },
-    "seoWarningGeneratedAt": "2026-06-18T11:36:19.137Z",
+    "seoWarningGeneratedAt": "2026-06-19T02:12:29.877Z",
     "seoWarningSummary": {
       "blockingItems": 0,
-      "draftItems": 5,
-      "humanGatedItems": 260,
-      "items": 260,
-      "itemsWithHumanChecklist": 260,
-      "itemsWithManualActions": 260,
-      "publicItems": 255,
-      "recommendedItems": 1,
-      "schemaWarningItems": 92,
-      "snippetWarningItems": 204,
+      "draftItems": 0,
+      "humanGatedItems": 0,
+      "items": 0,
+      "itemsWithHumanChecklist": 0,
+      "itemsWithManualActions": 0,
+      "publicItems": 0,
+      "recommendedItems": 0,
+      "schemaWarningItems": 0,
+      "snippetWarningItems": 0,
       "trafficDataAvailable": false,
       "unsafeItems": 0,
-      "warningItems": 260,
-      "waveItems": 1
+      "warningItems": 0,
+      "waveItems": 0
     },
-    "sourceReplacementGeneratedAt": "2026-06-18T11:36:38.887Z",
+    "sourceReplacementGeneratedAt": "2026-06-19T02:12:49.635Z",
     "sourceReplacementSummary": {
       "affectedFiles": 16,
       "failedDecisionItems": 0,
@@ -105,7 +105,7 @@
       "sourceRemediationUnsafeItems": 0,
       "unsafeItems": 0
     },
-    "waveApprovalGeneratedAt": "2026-06-18T11:36:25.491Z",
+    "waveApprovalGeneratedAt": "2026-06-19T02:12:36.162Z",
     "waveApprovalSummary": {
       "alreadyPublished": 0,
       "completedOrReady": 3,
@@ -114,7 +114,7 @@
       "unsafeItems": 0,
       "wave": 1
     },
-    "wavePublishSimulationGeneratedAt": "2026-06-18T11:36:40.837Z",
+    "wavePublishSimulationGeneratedAt": "2026-06-19T02:12:51.522Z",
     "wavePublishSimulationSummary": {
       "currentlyPublishable": 0,
       "alreadyPublished": 0,
@@ -145,7 +145,7 @@
     "itemsWithFailedSourceDecision": 0,
     "itemsWithMassSearchTheme": 3,
     "itemsWithPopularPromptLane": 3,
-    "itemsWithSeoWarnings": 1,
+    "itemsWithSeoWarnings": 0,
     "itemsWithSourceReplacementDecisions": 3,
     "publishConfirmCommandsIncluded": 0,
     "trafficDataAvailable": false,
@@ -336,20 +336,7 @@
       "projectedPublishableAfterHumanApproval": true,
       "publicImpact": "Immediate Wave 1; projected public count after human approval is 503.",
       "readyForHumanApproval": true,
-      "seoWarnings": [
-        {
-          "actions": [
-            "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
-            "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-            "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-            "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
-          ],
-          "schemaWarnings": [],
-          "snippetWarnings": [
-            "primary keyword is not an exact title substring"
-          ]
-        }
-      ],
+      "seoWarnings": [],
       "sourceReplacementDecisions": [
         {
           "kind": "redirected-url",
@@ -671,20 +658,7 @@
       "projectedPublishableAfterHumanApproval": true,
       "publicImpact": "Immediate Wave 1; projected public count after human approval is 503.",
       "readyForHumanApproval": true,
-      "seoWarnings": [
-        {
-          "actions": [
-            "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
-            "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-            "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-            "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
-          ],
-          "schemaWarnings": [],
-          "snippetWarnings": [
-            "primary keyword is not an exact title substring"
-          ]
-        }
-      ],
+      "seoWarnings": [],
       "sourceReplacementDecisions": [
         {
           "kind": "redirected-url",

@@ -1,6 +1,6 @@
 # Human Approval Clearance Pack
 
-Generated at: 2026-06-18T11:36:58.057Z
+Generated at: 2026-06-19T02:13:08.566Z
 
 This report is read-only. It consolidates the source, SEO, copydesk, and link checks needed before a human reviewer approves any mark:review action.
 
@@ -24,7 +24,7 @@ This report is read-only. It consolidates the source, SEO, copydesk, and link ch
 
 - approvalItems: 3
 - backlogItems: 0
-- clearanceActions: 28
+- clearanceActions: 25
 - copydeskBriefItems: 2
 - failedSourceDecisionItems: 0
 - immediateItems: 3
@@ -32,7 +32,7 @@ This report is read-only. It consolidates the source, SEO, copydesk, and link ch
 - massSearchThemeItems: 3
 - popularPromptLaneItems: 3
 - publishConfirmCommandsIncluded: 0
-- seoWarningItems: 1
+- seoWarningItems: 0
 - sourceDecisionItems: 1
 - trafficDataAvailable: false
 - unsafeItems: 0
@@ -46,7 +46,7 @@ This report is read-only. It consolidates the source, SEO, copydesk, and link ch
 | Already published | Immediate | Ready | Priority | Source decisions | Failed source | SEO | Copydesk | Popular lanes | Mass themes | Title | File |
 | --- | --- | --- | ---: | ---: | --- | --- | --- | ---: | ---: | --- | --- |
 | false | true | true | 446 | 0 | false | false | true | 2 | 1 | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| false | true | true | 439 | 0 | false | true | true | 2 | 1 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| false | true | true | 439 | 0 | false | false | true | 2 | 1 | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 | false | true | true | 415 | 5 | false | false | false | 1 | 1 | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
 
 ## Item Actions
@@ -81,7 +81,7 @@ This report is read-only. It consolidates the source, SEO, copydesk, and link ch
 - Ready for clearance review: true
 - Source decisions: 0
 - Failed source decision: false
-- SEO warning: true
+- SEO warning: false
 - Copydesk brief: true
 - Popular prompt lanes: 2
 - Mass search themes: 1
@@ -89,9 +89,6 @@ This report is read-only. It consolidates the source, SEO, copydesk, and link ch
 - Confirm the draft still answers one clear search intent.
 - Verify source-backed claims before any status change.
 - Keep status=draft, noindex=true, and humanReviewRequired=true until approval.
-- SEO: Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.
-- SEO: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.
-- SEO: Confirm the H1/title/description still answer the same search intent after any metadata change.
 - Review public internal link suggestion: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide).
 - Review proposed meta description from copydesk brief before approval.
 - Check that popular prompt lane framing stays broad enough for real search demand.

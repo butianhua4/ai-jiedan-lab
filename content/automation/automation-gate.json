@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-19T00:56:13.465Z",
+  "generatedAt": "2026-06-19T02:13:45.612Z",
   "ok": false,
   "summary": {
     "checks": 197,
-    "failed": 46,
-    "passed": 151
+    "failed": 48,
+    "passed": 149
   },
   "failed": [
     {
@@ -236,6 +236,16 @@
       "name": "public coverage gap plan keeps candidates safe for manual review",
       "ok": false,
       "detail": "ready=0, unsafe=0, waves=0"
+    },
+    {
+      "name": "public refresh sprint board covers public refresh pack",
+      "ok": false,
+      "detail": "items=500, public=500, waves=167, mojibakePublic=51, seo=0, shortDescriptions=457"
+    },
+    {
+      "name": "manual review workbench includes SEO warning remediation",
+      "ok": false,
+      "detail": "workbenchSeo=0, remediation=0, unsafe=0"
     }
   ],
   "checks": [
@@ -331,7 +341,7 @@
     {
       "name": "mojibake remediation brief is read-only and article-safe",
       "ok": true,
-      "detail": "filesScanned=669, affected=77, metadataFields=9"
+      "detail": "filesScanned=669, affected=78, metadataFields=9"
     },
     {
       "name": "mojibake remediation brief stays human-gated and publish-safe",
@@ -366,7 +376,7 @@
     {
       "name": "traffic claim guard found no unsupported claims",
       "ok": true,
-      "detail": "filesScanned=238, unsafeClaims=0, watchMentions=9666"
+      "detail": "filesScanned=240, unsafeClaims=0, watchMentions=9122"
     },
     {
       "name": "content integrity audit is read-only and clean",
@@ -376,7 +386,7 @@
     {
       "name": "content integrity audit mirrors mojibake warnings without blocking",
       "ok": true,
-      "detail": "warnings=0, mojibake=0, publicMojibake=0, remediationAffected=77/51"
+      "detail": "warnings=0, mojibake=0, publicMojibake=0, remediationAffected=78/52"
     },
     {
       "name": "content integrity audit covers public, recommended, and Wave 1 items",
@@ -691,17 +701,17 @@
     {
       "name": "human approval execution queue stays human-gated and excludes publish confirm",
       "ok": true,
-      "detail": "ready=3, sourceDecisions=3, seoWarnings=1, promptLanes=3, publishConfirm=0"
+      "detail": "ready=3, sourceDecisions=3, seoWarnings=0, promptLanes=3, publishConfirm=0"
     },
     {
       "name": "human approval clearance pack is read-only and covers the full approval queue",
       "ok": true,
-      "detail": "items=3, immediate=3, backlog=0, failedSources=0, seo=1"
+      "detail": "items=3, immediate=3, backlog=0, failedSources=0, seo=0"
     },
     {
       "name": "human approval clearance pack keeps all work human-gated and action-ready",
       "ok": true,
-      "detail": "ready=3, actions=28, sourceDecisions=1, copydesk=2, publishConfirm=0"
+      "detail": "ready=3, actions=25, sourceDecisions=1, copydesk=2, publishConfirm=0"
     },
     {
       "name": "review optimization brief is read-only and covers ready action-board tasks",
@@ -736,12 +746,12 @@
     {
       "name": "SEO warning remediation pack is read-only and mirrors snippet/schema warnings",
       "ok": true,
-      "detail": "items=260, snippet=204/0, schema=92/0"
+      "detail": "items=0, snippet=0/0, schema=0/0"
     },
     {
       "name": "SEO warning remediation pack keeps every SEO fix human-gated",
       "ok": true,
-      "detail": "ready=260, public=255, draft=5, gated=260"
+      "detail": "ready=0, public=0, draft=0, gated=0"
     },
     {
       "name": "SEO opportunity map has review-ready drafts",
@@ -1016,7 +1026,7 @@
     {
       "name": "content cannibalization check generated warning report",
       "ok": true,
-      "detail": "conflicts=200, reviewBatchConflicts=0"
+      "detail": "conflicts=199, reviewBatchConflicts=0"
     },
     {
       "name": "review cannibalization brief is read-only and covers unique action-board files",
@@ -1156,27 +1166,27 @@
     {
       "name": "public search refresh pack is read-only and covers all public pages",
       "ok": true,
-      "detail": "items=500, public=500, seo=255, measuredTraffic=0"
+      "detail": "items=500, public=500, seo=0, measuredTraffic=0"
     },
     {
       "name": "public search refresh pack keeps public edits human-gated and action-ready",
       "ok": true,
-      "detail": "ready=500, actions=3489, highPriority=247, shortDescriptions=457, publishConfirm=0"
+      "detail": "ready=500, actions=2723, highPriority=8, shortDescriptions=457, publishConfirm=0"
     },
     {
       "name": "public refresh sprint board covers public refresh pack",
-      "ok": true,
-      "detail": "items=500, public=500, waves=167, mojibakePublic=51, seo=255, shortDescriptions=457"
+      "ok": false,
+      "detail": "items=500, public=500, waves=167, mojibakePublic=51, seo=0, shortDescriptions=457"
     },
     {
       "name": "public refresh sprint board keeps public edits manual and publish-confirm-free",
       "ok": true,
-      "detail": "ready=500, actions=5154, unsafe=0, publishConfirm=0"
+      "detail": "ready=500, actions=5030, unsafe=0, publishConfirm=0"
     },
     {
       "name": "public search refresh session pack covers public sprint waves",
       "ok": true,
-      "detail": "sessions=167, files=500, actions=5154, ready=500"
+      "detail": "sessions=167, files=500, actions=5030, ready=500"
     },
     {
       "name": "public search refresh session pack stays manual and non-publishing",
@@ -1200,8 +1210,8 @@
     },
     {
       "name": "manual review workbench includes SEO warning remediation",
-      "ok": true,
-      "detail": "workbenchSeo=260, remediation=260, unsafe=0"
+      "ok": false,
+      "detail": "workbenchSeo=0, remediation=0, unsafe=0"
     },
     {
       "name": "next batch approval route matches manual review workbench",
@@ -1211,17 +1221,17 @@
     {
       "name": "next batch approval route is human-gated and action-ready",
       "ok": true,
-      "detail": "ready=3, actions=39, sourcePack=3, queryCoverage=3, warnings=9, publishConfirm=0"
+      "detail": "ready=3, actions=36, sourcePack=3, queryCoverage=3, warnings=9, publishConfirm=0"
     },
     {
       "name": "next batch route remediation pack covers route warnings",
       "ok": true,
-      "detail": "batch=1, items=3, warningItems=3, routeWarnings=9, actions=42"
+      "detail": "batch=1, items=3, warningItems=3, routeWarnings=9, actions=30"
     },
     {
       "name": "next batch route remediation pack stays safe and publish-confirm-free",
       "ok": true,
-      "detail": "ready=3, unsafe=0, publishConfirm=0, clearanceGaps=2, copydeskGaps=2, queryWarnings=3, seoWarnings=3"
+      "detail": "ready=3, unsafe=0, publishConfirm=0, clearanceGaps=2, copydeskGaps=2, queryWarnings=3, seoWarnings=0"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Autopilot Queued Remediation Pack
 
-Generated at: 2026-06-18T11:36:53.436Z
+Generated at: 2026-06-19T02:13:04.000Z
 
 This report is read-only. It turns queued playbook items into manual remediation cards and keeps article edits, mark-review, and publishing human-gated.
 
@@ -25,7 +25,7 @@ This report is read-only. It turns queued playbook items into manual remediation
 
 ## Source Evidence
 
-- queuedPlaybookGeneratedAt: "2026-06-18T11:36:52.965Z"
+- queuedPlaybookGeneratedAt: "2026-06-19T02:13:03.523Z"
 - queuedPlaybookGuardrails: {"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"note":"Read-only merged playbook for next-10 queued-for-playbook sprint items. It prepares human review without changing article status.","stopBefore":"Use this report for manual review only. mark:review requires explicit human approval per file; publish --confirm is not included."}
 - queuedPlaybookItems: 7
 - queuedPlaybookReadyItems: 7
@@ -226,7 +226,7 @@ Internal-link fixes:
 
 - Add or explicitly reject public internal link: OpenRouter API 怎么接入：统一模型入口不是只换 Base URL (/blog/openrouter-api-beginner-guide).
 - Add or explicitly reject public internal link: Groq API 怎么接入：高速推理适合什么 AI 应用 (/blog/groq-api-fast-llm-guide).
-- Add or explicitly reject public internal link: Replicate API 怎么做 AI Demo：模型调用、部署和费用边界 (/blog/replicate-api-ai-demo-guide).
+- Add or explicitly reject public internal link: Claude API 怎么接入：Messages API、费用和上下文边界 (/blog/claude-api-beginner-guide).
 - Confirm the link anchor is contextual and does not interrupt the tutorial flow.
 
 Risk checks:

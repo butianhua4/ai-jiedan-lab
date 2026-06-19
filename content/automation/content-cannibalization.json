@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-06-18T11:36:41.490Z",
+  "generatedAt": "2026-06-19T02:12:52.162Z",
   "guardrails": {
     "autoPublish": false,
     "note": "This is a warning report for manual review. It does not change article status or block drafts by itself."
   },
   "summary": {
     "articleCount": 669,
-    "conflicts": 200,
+    "conflicts": 199,
     "keywordConflicts": 11,
     "reviewBatchConflicts": 0,
     "slugStemConflicts": 177,
-    "titleStemConflicts": 12
+    "titleStemConflicts": 11
   },
   "reviewBatchConflicts": [],
   "conflicts": [
@@ -86,10 +86,10 @@
         "published": 4
       },
       "titles": [
+        "Claude Code 使用场景项目范围：新手练习前怎么判断",
         "Claude Code 新手使用场景检查清单",
         "Claude Code 新手适合用在哪些项目场景",
-        "Claude Code 新手选使用场景时的常见错误",
-        "Claude Code 新手项目练习前怎么判断使用场景"
+        "Claude Code 新手选使用场景时的常见错误"
       ]
     },
     {
@@ -108,9 +108,9 @@
       },
       "titles": [
         "Claude Code 和 Codex 哪个适合网页修改",
-        "Claude Code 和 Codex 网页修改使用前怎么判断是否适合",
         "Claude Code 和 Codex 网页修改常见错误",
-        "Claude Code 和 Codex 网页修改新手检查清单"
+        "网页修改 AI 工具检查清单：Claude Code 和 Codex 怎么选",
+        "网页修改项目范围判断：Claude Code 和 Codex 使用前检查"
       ]
     },
     {
@@ -151,8 +151,8 @@
       "titles": [
         "Claude Code 低风险小单哪些适合写进项目范围",
         "Claude Code 低风险项目常见错误",
-        "Claude Code 低风险项目检查清单",
-        "Claude Code 新手适合先接哪些低风险小单"
+        "Claude Code 低风险项目有哪些：新手适合先接的小单",
+        "Claude Code 低风险项目检查清单"
       ]
     },
     {
@@ -170,10 +170,10 @@
         "published": 4
       },
       "titles": [
+        "Claude Code Next.js 页面检查怎么做：小问题处理步骤",
         "Claude Code Next.js 页面检查清单",
-        "Claude Code 检查 Next.js 页面哪些适合写进项目范围",
-        "Claude Code 检查 Next.js 页面时的常见错误",
-        "用 Claude Code 检查 Next.js 页面小问题怎么做"
+        "Claude Code Next.js 页面检查错误：新手常见问题",
+        "Claude Code 检查 Next.js 页面哪些适合写进项目范围"
       ]
     },
     {
@@ -212,10 +212,10 @@
         "published": 4
       },
       "titles": [
-        "Codex 自动化开发使用前怎么判断是否适合",
         "Codex 自动化开发流程哪些步骤不能省",
         "Codex 自动化开发流程常见错误",
-        "Codex 自动化开发流程新手检查清单"
+        "Codex 自动化开发流程新手检查清单",
+        "Codex 自动化开发项目范围：使用前怎么判断是否适合"
       ]
     },
     {
@@ -459,8 +459,8 @@
         "published": 3
       },
       "titles": [
+        "第一次 AI 工具实践检查清单：接小单前要准备什么",
         "第一次接 AI 小单前最容易犯的错误",
-        "第一次接 AI 小单前检查清单",
         "第一次接 AI 小单前要准备什么"
       ]
     },
@@ -481,25 +481,6 @@
         "AI 新手判断接项目时的常见错误",
         "AI 新手如何判断自己能不能接项目",
         "AI 新手接项目前的项目适配检查清单"
-      ]
-    },
-    {
-      "files": [
-        "content/blog/claude-code-nextjs-page-check-freelance-scope.mdx",
-        "content/blog/claude-code-nextjs-page-check-mistakes.mdx",
-        "content/blog/claude-code-nextjs-page-check.mdx"
-      ],
-      "groupKey": "claude code 检查 next js",
-      "publishedCount": 3,
-      "reason": "similar title stem",
-      "reviewBatchOverlap": [],
-      "statuses": {
-        "published": 3
-      },
-      "titles": [
-        "Claude Code 检查 Next.js 页面哪些适合写进项目范围",
-        "Claude Code 检查 Next.js 页面时的常见错误",
-        "用 Claude Code 检查 Next.js 页面小问题怎么做"
       ]
     },
     {
@@ -612,8 +593,8 @@
       },
       "titles": [
         "Claude Code 排查客户报错时的常见错误",
-        "Claude Code 错误排查检查清单",
-        "用 Claude Code 排查客户报错时怎么做才稳"
+        "Claude Code 错误排查怎么做：客户报错处理更稳",
+        "Claude Code 错误排查检查清单"
       ]
     },
     {
@@ -687,9 +668,9 @@
         "published": 3
       },
       "titles": [
-        "Codex 做项目时如何避免把密钥写进代码",
         "Codex 做项目时常见密钥泄露错误和修复顺序",
-        "Codex 处理客户项目的密钥安全检查清单"
+        "Codex 处理客户项目的密钥安全检查清单",
+        "Codex 避免密钥泄露：做项目时不要把密钥写进代码"
       ]
     },
     {
@@ -839,8 +820,8 @@
         "published": 3
       },
       "titles": [
-        "Codex GitHub 工作流常见错误和修复顺序",
         "Codex GitHub 提交代码检查清单",
+        "Codex GitHub 提交错误：工作流常见错误和修复顺序",
         "Codex 和 GitHub 怎么配合提交代码"
       ]
     },
@@ -1448,8 +1429,8 @@
       },
       "titles": [
         "AI 小项目练习常见错误",
-        "AI 小项目练习选题检查清单",
-        "AI 工具新手练习小项目选什么"
+        "AI 小项目练习选什么：新手从低风险任务开始",
+        "AI 小项目练习选题检查清单"
       ]
     },
     {
@@ -1574,6 +1555,23 @@
       "titles": [
         "Canva 作品集封面发布前检查清单",
         "Canva 作品集封面怎么做更适合 AI 工具新手"
+      ]
+    },
+    {
+      "files": [
+        "content/blog/chatgpt-vs-claude-proposal-checklist.mdx",
+        "content/blog/chatgpt-vs-claude-proposal.mdx"
+      ],
+      "groupKey": "chatgpt-claude-proposal",
+      "publishedCount": 2,
+      "reason": "similar slug stem",
+      "reviewBatchOverlap": [],
+      "statuses": {
+        "published": 2
+      },
+      "titles": [
+        "AI 生成 Proposal 发布前检查清单",
+        "ChatGPT 和 Claude 写 Proposal 有什么区别"
       ]
     }
   ]

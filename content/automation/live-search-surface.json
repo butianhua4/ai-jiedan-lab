@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:37:26.032Z",
+  "generatedAt": "2026-06-19T02:13:35.596Z",
   "ok": true,
   "base": "https://ai-jiedan-lab.vercel.app",
   "fetchBase": "https://ai-jiedan-lab.vercel.app",
@@ -88,6 +88,24 @@
       "status": 200,
       "ok": true,
       "expected": "Draft and noindex articles are intentionally excluded"
+    },
+    {
+      "path": "/q/ai-tools/agent-tool-permission-safety-guide",
+      "status": 200,
+      "ok": true,
+      "expected": "What is the problem?"
+    },
+    {
+      "path": "/q/ai-tools",
+      "status": 200,
+      "ok": true,
+      "expected": "All questions in this topic"
+    },
+    {
+      "path": "/cluster/ai-tools",
+      "status": 200,
+      "ok": true,
+      "expected": "Internal link map"
     }
   ],
   "articles": {

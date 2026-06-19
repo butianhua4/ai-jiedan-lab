@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:37:00.941Z",
+  "generatedAt": "2026-06-19T02:13:11.355Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -11,15 +11,15 @@
   "summary": {
     "approvalBacklogItems": 0,
     "contentIntegrityBlockingItems": 0,
-    "contentIntegrityWarningItems": 77,
+    "contentIntegrityWarningItems": 0,
     "currentPublishableNow": 0,
     "immediateApprovalItems": 3,
     "immediateApprovalReadyItems": 3,
-    "nextBatchActionItems": 42,
+    "nextBatchActionItems": 30,
     "nextBatchWarningItems": 3,
     "publicArticles": 500,
-    "publicMojibakeWarningItems": 51,
-    "publicRefreshActionItems": 5154,
+    "publicMojibakeWarningItems": 0,
+    "publicRefreshActionItems": 5030,
     "publishConfirmCommandsIncluded": 0,
     "reviewPreflightFailed": 0,
     "reviewPreflightMojibakeWarningItems": 0,
@@ -250,20 +250,7 @@
       "projectedPublishableAfterHumanApproval": true,
       "publicImpact": "Immediate Wave 1; projected public count after human approval is 503.",
       "readyForHumanApproval": true,
-      "seoWarnings": [
-        {
-          "actions": [
-            "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
-            "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-            "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-            "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
-          ],
-          "schemaWarnings": [],
-          "snippetWarnings": [
-            "primary keyword is not an exact title substring"
-          ]
-        }
-      ],
+      "seoWarnings": [],
       "sourceReplacementDecisions": [
         {
           "kind": "redirected-url",
@@ -402,7 +389,7 @@
   ],
   "nextBatchWarnings": [
     {
-      "actionCount": 14,
+      "actionCount": 10,
       "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
       "manualRemediationActions": [
         "Keep status=draft, noindex=true, and humanReviewRequired=true while remediating this route.",
@@ -411,21 +398,16 @@
         "Review the suggested public internal link: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide).",
         "Resolve or explicitly accept search wording warnings: few exact query variant matches in article text.",
         "Check whether the exact query can appear naturally in title, description, a heading, or the opening paragraph without keyword stuffing.",
-        "SEO remediation: Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
-        "SEO remediation: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO remediation: Confirm the H1/title/description still answer the same search intent after any metadata change.",
-        "SEO remediation: For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
         "Verify at least the first official source targets: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.",
         "After explicit human approval only: npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human",
         "After review state only, publish dry-run without confirm: npm run publish:articles -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
         "Do not run publish:articles --confirm from this remediation pack."
       ],
-      "priorityScore": 511,
+      "priorityScore": 481,
       "publishConfirm": "not-included",
       "readyForRemediationReview": true,
       "remediationKinds": [
         "query-warning",
-        "seo-warning",
         "route-warning"
       ],
       "routeReady": true,
@@ -436,7 +418,7 @@
       "unsafeReasons": []
     },
     {
-      "actionCount": 14,
+      "actionCount": 10,
       "file": "content/blog/together-ai-api-beginner-guide.mdx",
       "manualRemediationActions": [
         "Keep status=draft, noindex=true, and humanReviewRequired=true while remediating this route.",
@@ -445,23 +427,18 @@
         "Create or manually review copydesk guidance for title, meta description, opening answer, and public internal link before approval.",
         "Resolve or explicitly accept search wording warnings: few exact query variant matches in article text; missing query-family signals: intentSeeds.",
         "Check whether the exact query can appear naturally in title, description, a heading, or the opening paragraph without keyword stuffing.",
-        "SEO remediation: Check whether the title can naturally include the exact primary keyword: Together AI API 接入.",
-        "SEO remediation: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO remediation: Confirm the H1/title/description still answer the same search intent after any metadata change.",
-        "SEO remediation: For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
         "Verify at least the first official source targets: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.",
         "After explicit human approval only: npm run mark:review -- --file=content/blog/together-ai-api-beginner-guide.mdx --confirm-human",
         "After review state only, publish dry-run without confirm: npm run publish:articles -- --file=content/blog/together-ai-api-beginner-guide.mdx",
         "Do not run publish:articles --confirm from this remediation pack."
       ],
-      "priorityScore": 510,
+      "priorityScore": 480,
       "publishConfirm": "not-included",
       "readyForRemediationReview": true,
       "remediationKinds": [
         "clearance-gap",
         "copydesk-gap",
         "query-warning",
-        "seo-warning",
         "route-warning"
       ],
       "routeReady": true,
@@ -475,7 +452,7 @@
       "unsafeReasons": []
     },
     {
-      "actionCount": 14,
+      "actionCount": 10,
       "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
       "manualRemediationActions": [
         "Keep status=draft, noindex=true, and humanReviewRequired=true while remediating this route.",
@@ -484,23 +461,18 @@
         "Create or manually review copydesk guidance for title, meta description, opening answer, and public internal link before approval.",
         "Resolve or explicitly accept search wording warnings: few exact query variant matches in article text.",
         "Check whether the exact query can appear naturally in title, description, a heading, or the opening paragraph without keyword stuffing.",
-        "SEO remediation: Check whether the title can naturally include the exact primary keyword: Vercel AI SDK 聊天机器人部署.",
-        "SEO remediation: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO remediation: Confirm the H1/title/description still answer the same search intent after any metadata change.",
-        "SEO remediation: For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval.",
         "Verify at least the first official source targets: OpenAI API docs: https://platform.openai.com/docs | Vercel AI SDK docs: https://ai-sdk.dev/docs | Anthropic docs: https://docs.anthropic.com.",
         "After explicit human approval only: npm run mark:review -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx --confirm-human",
         "After review state only, publish dry-run without confirm: npm run publish:articles -- --file=content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
         "Do not run publish:articles --confirm from this remediation pack."
       ],
-      "priorityScore": 509,
+      "priorityScore": 479,
       "publishConfirm": "not-included",
       "readyForRemediationReview": true,
       "remediationKinds": [
         "clearance-gap",
         "copydesk-gap",
         "query-warning",
-        "seo-warning",
         "route-warning"
       ],
       "routeReady": true,
@@ -517,10 +489,10 @@
   "publicRefreshWarnings": [
     {
       "actionCount": 13,
-      "category": "报价指南",
-      "descriptionLength": 72,
-      "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
-      "priorityScore": 240,
+      "category": "Codex 新手教程",
+      "descriptionLength": 88,
+      "file": "content/blog/build-first-webpage-with-codex.mdx",
+      "priorityScore": 210,
       "publishConfirm": "not-included",
       "readyForPublicRefreshSprint": true,
       "refreshActions": [
@@ -528,9 +500,9 @@
         "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
         "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
         "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
-        "SEO warning: Check whether the title can naturally include the exact primary keyword: 第一个 Upwork 项目怎么报价.",
-        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded.",
         "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
         "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
         "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
@@ -540,10 +512,86 @@
       ],
       "refreshReasons": [
         "mojibake-public",
-        "seo-warning",
         "short-description",
-        "freshness-high",
-        "high-priority"
+        "freshness-high"
+      ],
+      "mojibakeSignal": {
+        "fields": [
+          "bodyExcerpt"
+        ],
+        "sample": "常见错误一，是把 AI 生成的 Proposal 原文直接发送。这样很容易出现你不会做却承诺会做的内容。常见错误二，是看到客户预算低就盲目压价，结果沟通、修改和部署花掉更多时间。常见错误三，是忽略平台规则，例如诱导站外付款、批量骚扰式发送、虚假案例，这些都可能伤害账号安全。常见错误四，是没有保存交付过程，最后客户问起修改内容时说不清楚。"
+      },
+      "slug": "build-first-webpage-with-codex",
+      "sprintWave": 1,
+      "title": "Codex 怎么做第一个网页",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 13,
+      "category": "Codex 新手教程",
+      "descriptionLength": 87,
+      "file": "content/blog/codex-install-failed-beginner-fix.mdx",
+      "priorityScore": 210,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded.",
+        "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
+        "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
+        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "mojibake-public",
+        "short-description",
+        "freshness-high"
+      ],
+      "mojibakeSignal": {
+        "fields": [
+          "bodyExcerpt"
+        ],
+        "sample": "常见错误一，是把 AI 生成的 Proposal 原文直接发送。这样很容易出现你不会做却承诺会做的内容。常见错误二，是看到客户预算低就盲目压价，结果沟通、修改和部署花掉更多时间。常见错误三，是忽略平台规则，例如诱导站外付款、批量骚扰式发送、虚假案例，这些都可能伤害账号安全。常见错误四，是没有保存交付过程，最后客户问起修改内容时说不清楚。"
+      },
+      "slug": "codex-install-failed-beginner-fix",
+      "sprintWave": 1,
+      "title": "Codex 安装失败怎么办",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 13,
+      "category": "报价指南",
+      "descriptionLength": 72,
+      "file": "content/blog/first-upwork-project-pricing-checklist.mdx",
+      "priorityScore": 210,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded.",
+        "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
+        "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
+        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "mojibake-public",
+        "short-description",
+        "freshness-high"
       ],
       "mojibakeSignal": {
         "fields": [
@@ -558,10 +606,10 @@
     },
     {
       "actionCount": 13,
-      "category": "AI 自由职业路线",
-      "descriptionLength": 52,
-      "file": "content/blog/ai-small-project-practice-topics-checklist.mdx",
-      "priorityScore": 235,
+      "category": "Codex 新手教程",
+      "descriptionLength": 89,
+      "file": "content/blog/what-is-codex-beginner-start.mdx",
+      "priorityScore": 210,
       "publishConfirm": "not-included",
       "readyForPublicRefreshSprint": true,
       "refreshActions": [
@@ -569,9 +617,48 @@
         "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
         "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
         "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
-        "SEO warning: Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-        "SEO warning: Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-        "SEO warning: Confirm description length remains suitable for search snippets after editing.",
+        "Freshness check: verify fast-changing product, model, pricing, deployment, API, and policy claims against current official sources.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded.",
+        "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
+        "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
+        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
+        "Re-check fast-changing tool, model, deployment, API, and policy claims against current official sources.",
+        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
+        "Apply edits manually only after approval; publish confirm remains excluded."
+      ],
+      "refreshReasons": [
+        "mojibake-public",
+        "short-description",
+        "freshness-high"
+      ],
+      "mojibakeSignal": {
+        "fields": [
+          "bodyExcerpt"
+        ],
+        "sample": "常见错误一，是把 AI 生成的 Proposal 原文直接发送。这样很容易出现你不会做却承诺会做的内容。常见错误二，是看到客户预算低就盲目压价，结果沟通、修改和部署花掉更多时间。常见错误三，是忽略平台规则，例如诱导站外付款、批量骚扰式发送、虚假案例，这些都可能伤害账号安全。常见错误四，是没有保存交付过程，最后客户问起修改内容时说不清楚。"
+      },
+      "slug": "what-is-codex-beginner-start",
+      "sprintWave": 2,
+      "title": "Codex 是什么新手怎么开始",
+      "unsafeReasons": []
+    },
+    {
+      "actionCount": 13,
+      "category": "AI 自由职业路线",
+      "descriptionLength": 52,
+      "file": "content/blog/ai-small-project-practice-topics-checklist.mdx",
+      "priorityScore": 205,
+      "publishConfirm": "not-included",
+      "readyForPublicRefreshSprint": true,
+      "refreshActions": [
+        "Confirm the public page still answers one clear search intent before editing.",
+        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
+        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
+        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
+        "Cannibalization check: review similar slug stem conflict \"small-project-practice-topics\" before expanding this page or approving related drafts.",
+        "Keep canonical URL stable unless a human explicitly approves a redirect or slug migration.",
+        "Apply public-page edits manually only after approval; publish confirm remains excluded.",
         "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
         "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
         "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
@@ -581,10 +668,8 @@
       ],
       "refreshReasons": [
         "mojibake-public",
-        "seo-warning",
         "short-description",
-        "cannibalization",
-        "high-priority"
+        "cannibalization"
       ],
       "mojibakeSignal": {
         "fields": [
@@ -593,131 +678,8 @@
         "sample": "命中这些信号时，换一个低风险题目。练习不需要冒险。"
       },
       "slug": "ai-small-project-practice-topics-checklist",
-      "sprintWave": 1,
+      "sprintWave": 2,
       "title": "AI 小项目练习选题检查清单",
-      "unsafeReasons": []
-    },
-    {
-      "actionCount": 13,
-      "category": "作品集",
-      "descriptionLength": 61,
-      "file": "content/blog/canva-portfolio-cover-tips-checklist.mdx",
-      "priorityScore": 235,
-      "publishConfirm": "not-included",
-      "readyForPublicRefreshSprint": true,
-      "refreshActions": [
-        "Confirm the public page still answers one clear search intent before editing.",
-        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
-        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
-        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
-        "SEO warning: Check whether the title can naturally include the exact primary keyword: Canva 作品集封面检查清单.",
-        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
-        "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
-        "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
-        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
-        "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
-        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
-        "Apply edits manually only after approval; publish confirm remains excluded."
-      ],
-      "refreshReasons": [
-        "mojibake-public",
-        "seo-warning",
-        "short-description",
-        "cannibalization",
-        "high-priority"
-      ],
-      "mojibakeSignal": {
-        "fields": [
-          "bodyExcerpt"
-        ],
-        "sample": "不要用 AI 生成图像冒充真实项目结果。如果是 AI 辅助生成的视觉稿，要标明用途和限制。作品集的核心是你的过程和判断，不是让客户误以为所有画面都来自真实项目。"
-      },
-      "slug": "canva-portfolio-cover-tips-checklist",
-      "sprintWave": 1,
-      "title": "Canva 作品集封面发布前检查清单",
-      "unsafeReasons": []
-    },
-    {
-      "actionCount": 13,
-      "category": "工具流程",
-      "descriptionLength": 59,
-      "file": "content/blog/claude-code-beginner-mistakes-checklist.mdx",
-      "priorityScore": 235,
-      "publishConfirm": "not-included",
-      "readyForPublicRefreshSprint": true,
-      "refreshActions": [
-        "Confirm the public page still answers one clear search intent before editing.",
-        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
-        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
-        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
-        "SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 新手检查清单.",
-        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
-        "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
-        "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
-        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
-        "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
-        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
-        "Apply edits manually only after approval; publish confirm remains excluded."
-      ],
-      "refreshReasons": [
-        "mojibake-public",
-        "seo-warning",
-        "short-description",
-        "cannibalization",
-        "high-priority"
-      ],
-      "mojibakeSignal": {
-        "fields": [
-          "bodyExcerpt"
-        ],
-        "sample": "诊断不是退缩。对新手来说，能判断“现在不能直接修”，比盲目接下高风险任务更专业。"
-      },
-      "slug": "claude-code-beginner-mistakes-checklist",
-      "sprintWave": 2,
-      "title": "Claude Code 新手使用检查清单",
-      "unsafeReasons": []
-    },
-    {
-      "actionCount": 13,
-      "category": "工具流程",
-      "descriptionLength": 68,
-      "file": "content/blog/claude-code-beginner-mistakes-mistakes.mdx",
-      "priorityScore": 235,
-      "publishConfirm": "not-included",
-      "readyForPublicRefreshSprint": true,
-      "refreshActions": [
-        "Confirm the public page still answers one clear search intent before editing.",
-        "Do not claim traffic, rankings, impressions, clicks, conversions, or revenue.",
-        "Do not claim traffic, rankings, conversions, clicks, impressions, or revenue.",
-        "Review the meta description for a clearer user problem, outcome, and concrete workflow term.",
-        "SEO warning: Check whether the title can naturally include the exact primary keyword: Claude Code 常见错误.",
-        "SEO warning: If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-        "SEO warning: Confirm the H1/title/description still answer the same search intent after any metadata change.",
-        "Repair likely garbled public copy in bodyExcerpt after comparing the intended topic and sources.",
-        "Prioritize readable Chinese body copy before metadata polishing, because this page is already public.",
-        "Rewrite the meta description manually with a clearer user problem, concrete workflow term, and safe outcome.",
-        "Decide whether overlapping draft/review pages should be merged, redirected, archived, or kept as separate intent pages.",
-        "Keep canonical and slug stable unless a human explicitly approves a redirect or migration.",
-        "Apply edits manually only after approval; publish confirm remains excluded."
-      ],
-      "refreshReasons": [
-        "mojibake-public",
-        "seo-warning",
-        "short-description",
-        "cannibalization",
-        "high-priority"
-      ],
-      "mojibakeSignal": {
-        "fields": [
-          "bodyExcerpt"
-        ],
-        "sample": "如果检查失败，也要记录失败原因。失败不是坏事，它说明你还在验证，而不是盲目交付。客户看到清楚的失败记录和下一步建议，通常比看到一句含糊的“还在处理中”更容易理解。"
-      },
-      "slug": "claude-code-beginner-mistakes-mistakes",
-      "sprintWave": 2,
-      "title": "Claude Code 新手常见错误和修正方法",
       "unsafeReasons": []
     }
   ]

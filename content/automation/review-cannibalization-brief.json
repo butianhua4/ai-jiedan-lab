@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:36:42.157Z",
+  "generatedAt": "2026-06-19T02:12:52.818Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -16,14 +16,14 @@
       "stopBefore": "Every mark:review command requires explicit human approval. publish --confirm commands are intentionally not included."
     },
     "actionBoardReadyTasks": 2,
-    "contentCannibalizationGeneratedAt": "2026-06-18T11:36:41.490Z",
+    "contentCannibalizationGeneratedAt": "2026-06-19T02:12:52.162Z",
     "contentCannibalizationSummary": {
       "articleCount": 669,
-      "conflicts": 200,
+      "conflicts": 199,
       "keywordConflicts": 11,
       "reviewBatchConflicts": 0,
       "slugStemConflicts": 177,
-      "titleStemConflicts": 12
+      "titleStemConflicts": 11
     },
     "uniqueActionFiles": 2
   },

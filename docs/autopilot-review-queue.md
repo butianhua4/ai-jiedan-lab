@@ -1,6 +1,6 @@
 # Autopilot Review Queue
 
-Generated at: 2026-06-18T11:36:46.368Z
+Generated at: 2026-06-19T02:12:56.996Z
 
 This report is read-only. It ranks the next manual review assignments and stops before article status changes.
 
@@ -65,7 +65,7 @@ Focus:
 - Verify 7 official source target(s).
 - Check 4 search query seed(s).
 - Review 19 combined checklist signal(s).
-- Apply copydesk remediation: Check whether the primary keyword can appear naturally in the title without making the title stiff.; Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型..
+- Apply copydesk remediation: Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型..
 - Complete freshness checklist for fast-changing AI/tool guidance.
 - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.
 

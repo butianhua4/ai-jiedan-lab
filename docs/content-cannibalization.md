@@ -1,6 +1,6 @@
 # Content Cannibalization Check
 
-Generated at: 2026-06-18T11:36:41.490Z
+Generated at: 2026-06-19T02:12:52.162Z
 
 This warning report helps manual reviewers avoid publishing multiple articles that compete for the same search intent.
 
@@ -12,9 +12,9 @@ This warning report helps manual reviewers avoid publishing multiple articles th
 ## Summary
 
 - Articles checked: 669
-- Conflicts: 200
+- Conflicts: 199
 - Keyword conflicts: 11
-- Title-stem conflicts: 12
+- Title-stem conflicts: 11
 - Slug-stem conflicts: 177
 - Review batch conflicts: 0
 
@@ -49,7 +49,6 @@ This warning report helps manual reviewers avoid publishing multiple articles th
 | similar slug stem | assisted-automated-delivery | 3 | {"published":3} | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx<br>content/blog/ai-assisted-vs-automated-delivery-mistakes.mdx<br>content/blog/ai-assisted-vs-automated-delivery.mdx |
 | similar slug stem | before-first-freelance-job | 3 | {"published":3} | content/blog/before-first-ai-freelance-job-checklist.mdx<br>content/blog/before-first-ai-freelance-job-mistakes.mdx<br>content/blog/before-first-ai-freelance-job.mdx |
 | similar slug stem | beginner-project-fit-check | 3 | {"published":3} | content/blog/ai-beginner-project-fit-check-checklist.mdx<br>content/blog/ai-beginner-project-fit-check-mistakes.mdx<br>content/blog/ai-beginner-project-fit-check.mdx |
-| similar title stem | claude code 检查 next js | 3 | {"published":3} | content/blog/claude-code-nextjs-page-check-freelance-scope.mdx<br>content/blog/claude-code-nextjs-page-check-mistakes.mdx<br>content/blog/claude-code-nextjs-page-check.mdx |
 | similar slug stem | claude-code-beginner | 3 | {"published":3} | content/blog/claude-code-beginner-mistakes-checklist.mdx<br>content/blog/claude-code-beginner-mistakes-mistakes.mdx<br>content/blog/claude-code-beginner-mistakes.mdx |
 | similar slug stem | claude-code-bug-prompt | 3 | {"published":3} | content/blog/claude-code-bug-prompt-checklist.mdx<br>content/blog/claude-code-bug-prompt-mistakes.mdx<br>content/blog/claude-code-bug-prompt.mdx |
 | similar slug stem | claude-code-client-questions | 3 | {"published":3} | content/blog/claude-code-client-questions-checklist.mdx<br>content/blog/claude-code-client-questions-mistakes.mdx<br>content/blog/claude-code-client-questions.mdx |
@@ -107,3 +106,4 @@ This warning report helps manual reviewers avoid publishing multiple articles th
 | similar slug stem | bank-card-payment-platform-risk | 2 | {"published":2} | content/blog/bank-card-payment-platform-risk-checklist.mdx<br>content/blog/bank-card-payment-platform-risk.mdx |
 | similar slug stem | bugfix-delivery-note-template | 2 | {"published":2} | content/blog/bugfix-delivery-note-template-checklist.mdx<br>content/blog/bugfix-delivery-note-template.mdx |
 | similar slug stem | canva-portfolio-cover-tips | 2 | {"published":2} | content/blog/canva-portfolio-cover-tips-checklist.mdx<br>content/blog/canva-portfolio-cover-tips.mdx |
+| similar slug stem | chatgpt-claude-proposal | 2 | {"published":2} | content/blog/chatgpt-vs-claude-proposal-checklist.mdx<br>content/blog/chatgpt-vs-claude-proposal.mdx |

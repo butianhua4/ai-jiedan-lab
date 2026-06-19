@@ -1,6 +1,6 @@
 # Manual Review Workbench
 
-Generated at: 2026-06-18T11:36:59.038Z
+Generated at: 2026-06-19T02:13:09.515Z
 
 This workbench is read-only. It does not publish articles or mark drafts for review.
 
@@ -69,7 +69,7 @@ This workbench is read-only. It does not publish articles or mark drafts for rev
 
 ## Cannibalization
 
-- Conflicts: 200
+- Conflicts: 199
 - Review batch conflicts: 0
 
 ## Review Coverage
@@ -192,8 +192,8 @@ Next review files:
 - Search Console verification evidence: false
 - Failed checks: 0
 - Unsupported traffic claims: 0
-- Traffic claim files scanned: 227
-- Traffic claim watch mentions: 9553
+- Traffic claim files scanned: 240
+- Traffic claim watch mentions: 9670
 
 ## Content Integrity
 
@@ -217,13 +217,13 @@ Next review files:
 | --- | --- | --- | --- |
 | 1/3 | Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide)<br>Pinecone 做 RAG 怎么开始：索引、metadata 和召回测试 (/blog/pinecone-rag-beginner-guide)<br>Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection (/blog/chroma-vector-database-rag-guide) | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
 | 0/3 | Qdrant 向量数据库怎么用：RAG 新手先看集合、向量和过滤 (/blog/qdrant-vector-database-beginner-guide)<br>RAG 知识库怎么搭：文档、切分、检索和回答复核 (/blog/rag-knowledge-base-beginner-guide)<br>Chroma 向量数据库怎么用：本地 RAG 原型先跑通 collection (/blog/chroma-vector-database-rag-guide) | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| 1/3 | 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide)<br>Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 (/blog/claude-api-rate-limit-debug-guide)<br>Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 (/blog/gemini-api-rate-limit-debug-guide) | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| 1/3 | 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide)<br>客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检 (/blog/ai-model-selection-customer-service-guide)<br>Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 (/blog/claude-api-rate-limit-debug-guide) | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 
 ## Search Snippet Readiness
 
 - Scoped items: 516
 - Blocking items: 0
-- Warning items: 204
+- Warning items: 0
 - Wave items: 3
 - Wave items with blocking issues: 0
 
@@ -231,14 +231,14 @@ Next review files:
 | --- | --- | --- | --- | --- | --- | --- |
 | 44 | 83 | none | none | supabase-pgvector-rag-guide | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx |
 | 42 | 71 | none | none | vector-database-selection-for-rag-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| 51 | 72 | none | primary keyword is not an exact title substring | vercel-ai-gateway-multi-provider-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| 51 | 72 | none | none | vercel-ai-gateway-multi-provider-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 
 ## Structured Data Readiness
 
 - Scoped items: 516
 - JSON-LD preview items: 516
 - Blocking items: 0
-- Warning items: 92
+- Warning items: 0
 - Wave items: 3
 - Wave items with blocking issues: 0
 
@@ -250,26 +250,18 @@ Next review files:
 
 ## SEO Warning Remediation
 
-- Items: 260
-- Public items: 255
-- Draft items: 5
-- Recommended items: 1
-- Wave items: 1
-- Human-gated items: 260
+- Items: 0
+- Public items: 0
+- Draft items: 0
+- Recommended items: 0
+- Wave items: 0
+- Human-gated items: 0
 - Unsafe items: 0
-- Snippet warning items: 204
-- Schema warning items: 92
+- Snippet warning items: 0
+- Schema warning items: 0
 
 | Priority | Ready | Status | Scope | Snippet warnings | Schema warnings | Actions | Title | File |
 | ---: | --- | --- | --- | ---: | ---: | --- | --- | --- |
-| 78 | true | draft | expansion, recommended, wave-1 | 1 | 0 | Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.<br>If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.<br>Confirm the H1/title/description still answer the same search intent after any metadata change.<br>For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval. | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| 66 | true | published | public | 2 | 0 | Expand the meta description with the user problem, outcome, and one concrete workflow term.<br>Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.<br>Confirm description length remains suitable for search snippets after editing.<br>Check whether the title can naturally include the exact primary keyword: AI 辅助交付检查清单. | AI 辅助交付和完全自动交付的检查清单 | content/blog/ai-assisted-vs-automated-delivery-checklist.mdx |
-| 66 | true | published | public | 2 | 0 | Expand the meta description with the user problem, outcome, and one concrete workflow term.<br>Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.<br>Confirm description length remains suitable for search snippets after editing.<br>Check whether the title can naturally include the exact primary keyword: AI 自动化项目报价. | AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围 | content/blog/ai-automation-project-pricing-scope-guide.mdx |
-| 66 | true | published | public | 2 | 0 | Expand the meta description with the user problem, outcome, and one concrete workflow term.<br>Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.<br>Confirm description length remains suitable for search snippets after editing.<br>Check whether the title can naturally include the exact primary keyword: AI 新手接项目前检查清单. | AI 新手接项目前的项目适配检查清单 | content/blog/ai-beginner-project-fit-check-checklist.mdx |
-| 66 | true | published | public | 2 | 0 | Expand the meta description with the user problem, outcome, and one concrete workflow term.<br>Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.<br>Confirm description length remains suitable for search snippets after editing.<br>Check whether the title can naturally include the exact primary keyword: 客服 AI 模型选型. | 客服 AI 该选什么模型：速度、成本、知识库、转人工和质检 | content/blog/ai-model-selection-customer-service-guide.mdx |
-| 66 | true | published | public | 2 | 0 | Expand the meta description with the user problem, outcome, and one concrete workflow term.<br>Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.<br>Confirm description length remains suitable for search snippets after editing.<br>Check whether the title can naturally include the exact primary keyword: AI 输出不稳定检查清单. | AI 输出不稳定风险控制检查清单 | content/blog/ai-output-unstable-risk-control-checklist.mdx |
-| 66 | true | published | public | 2 | 0 | Expand the meta description with the user problem, outcome, and one concrete workflow term.<br>Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.<br>Confirm description length remains suitable for search snippets after editing.<br>Check whether the title can naturally include the exact primary keyword: AI 项目练习项目检查清单. | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
-| 66 | true | published | public | 2 | 0 | Expand the meta description with the user problem, outcome, and one concrete workflow term.<br>Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.<br>Confirm description length remains suitable for search snippets after editing.<br>Check whether the title can naturally include the exact primary keyword: AI 工具配置服务检查清单. | AI 工具配置服务项目检查清单 | content/blog/ai-tool-setup-service-checklist-checklist.mdx |
 
 ## AI Deployment Coverage
 

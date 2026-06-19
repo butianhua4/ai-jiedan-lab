@@ -1,6 +1,6 @@
 # Human Approval Decision Matrix
 
-Generated at: 2026-06-18T11:36:49.647Z
+Generated at: 2026-06-19T02:13:00.260Z
 
 This report is read-only. It gives reviewers one decision row per approval candidate and stops before mark:review or publish.
 
@@ -67,7 +67,7 @@ This report is read-only. It gives reviewers one decision row per approval candi
 - Resolve or explicitly accept search weakness: no exact search query appears in title.
 - Resolve or explicitly accept search weakness: no exact search query appears in description.
 - Suggested public link: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide) - same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做.
-- Suggested public link: Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 (/blog/claude-api-rate-limit-debug-guide) - same category: AI 部署; keyword overlap: ai, claude, 部署, 降级, api, 怎么.
+- Suggested public link: 客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检 (/blog/ai-model-selection-customer-service-guide) - same category: AI 部署; keyword overlap: ai, 部署, 知识库, agent, 怎么, 么做.
 - Resolve search weakness: no exact search query appears in title.
 - Resolve search weakness: no exact search query appears in description.
 - Confirm source redirect before approval: https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction.

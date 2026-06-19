@@ -1,6 +1,6 @@
 # Live Search Surface Check
 
-Generated at: 2026-06-18T11:37:26.032Z
+Generated at: 2026-06-19T02:13:35.596Z
 
 This report checks the live production search surfaces. It does not use Search Console traffic, impressions, or ranking data.
 
@@ -52,6 +52,9 @@ Overall: PASS
 | /sitemap-cluster.xml | 200 | PASS | <urlset |
 | /robots.txt | 200 | PASS | Sitemap |
 | /llms.txt | 200 | PASS | Draft and noindex articles are intentionally excluded |
+| /q/ai-tools/agent-tool-permission-safety-guide | 200 | PASS | What is the problem? |
+| /q/ai-tools | 200 | PASS | All questions in this topic |
+| /cluster/ai-tools | 200 | PASS | Internal link map |
 
 ## Article Failures
 

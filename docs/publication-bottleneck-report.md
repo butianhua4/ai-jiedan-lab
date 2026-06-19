@@ -1,6 +1,6 @@
 # Publication Bottleneck Report
 
-Generated at: 2026-06-18T11:37:00.941Z
+Generated at: 2026-06-19T02:13:11.355Z
 
 This report is read-only. It explains why public article growth is gated and what to review next.
 
@@ -17,15 +17,15 @@ This report is read-only. It explains why public article growth is gated and wha
 
 - approvalBacklogItems: 0
 - contentIntegrityBlockingItems: 0
-- contentIntegrityWarningItems: 77
+- contentIntegrityWarningItems: 0
 - currentPublishableNow: 0
 - immediateApprovalItems: 3
 - immediateApprovalReadyItems: 3
-- nextBatchActionItems: 42
+- nextBatchActionItems: 30
 - nextBatchWarningItems: 3
 - publicArticles: 500
-- publicMojibakeWarningItems: 51
-- publicRefreshActionItems: 5154
+- publicMojibakeWarningItems: 0
+- publicRefreshActionItems: 5030
 - publishConfirmCommandsIncluded: 0
 - reviewPreflightFailed: 0
 - reviewPreflightMojibakeWarningItems: 0
@@ -63,16 +63,16 @@ This report is read-only. It explains why public article growth is gated and wha
 
 | Priority | Actions | Warnings | Title | File |
 | ---: | ---: | --- | --- | --- |
-| 511 | 14 | search query match warning exists | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| 510 | 14 | not yet matched in human approval clearance pack<br>no copydesk optimization brief matched<br>no freshness brief matched<br>search query match warning exists | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
-| 509 | 14 | not yet matched in human approval clearance pack<br>no copydesk optimization brief matched<br>no freshness brief matched<br>search query match warning exists | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
+| 481 | 10 | search query match warning exists | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| 480 | 10 | not yet matched in human approval clearance pack<br>no copydesk optimization brief matched<br>no freshness brief matched<br>search query match warning exists | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
+| 479 | 10 | not yet matched in human approval clearance pack<br>no copydesk optimization brief matched<br>no freshness brief matched<br>search query match warning exists | Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查 | content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx |
 
 ## Public Refresh Warnings
 
 | Priority | Actions | Reasons | Title | File |
 | ---: | ---: | --- | --- | --- |
-| 240 | 13 | mojibake-public<br>seo-warning<br>short-description<br>freshness-high<br>high-priority | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
-| 235 | 13 | mojibake-public<br>seo-warning<br>short-description<br>cannibalization<br>high-priority | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |
-| 235 | 13 | mojibake-public<br>seo-warning<br>short-description<br>cannibalization<br>high-priority | Canva 作品集封面发布前检查清单 | content/blog/canva-portfolio-cover-tips-checklist.mdx |
-| 235 | 13 | mojibake-public<br>seo-warning<br>short-description<br>cannibalization<br>high-priority | Claude Code 新手使用检查清单 | content/blog/claude-code-beginner-mistakes-checklist.mdx |
-| 235 | 13 | mojibake-public<br>seo-warning<br>short-description<br>cannibalization<br>high-priority | Claude Code 新手常见错误和修正方法 | content/blog/claude-code-beginner-mistakes-mistakes.mdx |
+| 210 | 13 | mojibake-public<br>short-description<br>freshness-high | Codex 怎么做第一个网页 | content/blog/build-first-webpage-with-codex.mdx |
+| 210 | 13 | mojibake-public<br>short-description<br>freshness-high | Codex 安装失败怎么办 | content/blog/codex-install-failed-beginner-fix.mdx |
+| 210 | 13 | mojibake-public<br>short-description<br>freshness-high | 第一个 Upwork 小项目怎么报价：新手范围和底价检查 | content/blog/first-upwork-project-pricing-checklist.mdx |
+| 210 | 13 | mojibake-public<br>short-description<br>freshness-high | Codex 是什么新手怎么开始 | content/blog/what-is-codex-beginner-start.mdx |
+| 205 | 13 | mojibake-public<br>short-description<br>cannibalization | AI 小项目练习选题检查清单 | content/blog/ai-small-project-practice-topics-checklist.mdx |

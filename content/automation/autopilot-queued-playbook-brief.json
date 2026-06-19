@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:36:52.965Z",
+  "generatedAt": "2026-06-19T02:13:03.523Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -447,12 +447,12 @@
           "url": "/blog/groq-api-fast-llm-guide"
         },
         {
-          "file": "content/blog/replicate-api-ai-demo-guide.mdx",
-          "reason": "same category: AI 基建; shared tags: API; keyword overlap: ai, api, 基建, 模型, 怎么, 部署",
-          "score": 82,
-          "slug": "replicate-api-ai-demo-guide",
-          "title": "Replicate API 怎么做 AI Demo：模型调用、部署和费用边界",
-          "url": "/blog/replicate-api-ai-demo-guide"
+          "file": "content/blog/claude-api-beginner-guide.mdx",
+          "reason": "same category: AI 基建; keyword overlap: ai, api, 怎么接入, 基建, 接入, 怎么",
+          "score": 78,
+          "slug": "claude-api-beginner-guide",
+          "title": "Claude API 怎么接入：Messages API、费用和上下文边界",
+          "url": "/blog/claude-api-beginner-guide"
         }
       ],
       "manualOnlyCommands": {

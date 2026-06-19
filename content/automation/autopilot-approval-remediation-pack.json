@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:36:49.181Z",
+  "generatedAt": "2026-06-19T02:12:59.786Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -65,7 +65,7 @@
       "internalLinkFixes": [
         "Suggested public link: OpenRouter API 怎么接入：统一模型入口不是只换 Base URL (/blog/openrouter-api-beginner-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai.",
         "Suggested public link: Groq API 怎么接入：高速推理适合什么 AI 应用 (/blog/groq-api-fast-llm-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai.",
-        "Suggested public link: Replicate API 怎么做 AI Demo：模型调用、部署和费用边界 (/blog/replicate-api-ai-demo-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 基建, 模型, 怎么, 部署.",
+        "Suggested public link: Claude API 怎么接入：Messages API、费用和上下文边界 (/blog/claude-api-beginner-guide) - same category: AI 基建; keyword overlap: ai, api, 怎么接入, 基建, 接入, 怎么.",
         "Already links to at least one public article.",
         "Review 5 suggested public link target(s).",
         "Use one link only if it helps the reader continue the task; avoid stuffing links.",
@@ -247,8 +247,8 @@
       ],
       "internalLinkFixes": [
         "Suggested public link: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide) - same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做.",
+        "Suggested public link: 客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检 (/blog/ai-model-selection-customer-service-guide) - same category: AI 部署; keyword overlap: ai, 部署, 知识库, agent, 怎么, 么做.",
         "Suggested public link: Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 (/blog/claude-api-rate-limit-debug-guide) - same category: AI 部署; keyword overlap: ai, claude, 部署, 降级, api, 怎么.",
-        "Suggested public link: Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 (/blog/gemini-api-rate-limit-debug-guide) - same category: AI 部署; keyword overlap: ai, gemini, 部署, 降级, api, 怎么.",
         "Copydesk public link: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide).",
         "Already links to at least one public article.",
         "Review 5 suggested public link target(s).",
@@ -287,7 +287,7 @@
         "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
         "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
         "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-        "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs.",
+        "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=tr.",
         "Open source URL: https://platform.openai.com/docs.",
         "Open source URL: https://ai-sdk.dev/docs.",
         "Open source URL: https://docs.anthropic.com.",
@@ -306,7 +306,7 @@
         "Verify 7 official source target(s).",
         "Check 4 search query seed(s).",
         "Review 19 combined checklist signal(s).",
-        "Apply copydesk remediation: Check whether the primary keyword can appear naturally in the title without making the title stiff.; Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型..",
+        "Apply copydesk remediation: Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型..",
         "Complete freshness checklist for fast-changing AI/tool guidance.",
         "Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence."
       ],
@@ -321,7 +321,7 @@
         "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
         "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
         "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-        "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs."
+        "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=tr."
       ],
       "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
       "unsafeReasons": []
@@ -348,7 +348,7 @@
       "internalLinkFixes": [
         "Suggested public link: OpenRouter API 怎么接入：统一模型入口不是只换 Base URL (/blog/openrouter-api-beginner-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai.",
         "Suggested public link: Groq API 怎么接入：高速推理适合什么 AI 应用 (/blog/groq-api-fast-llm-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai.",
-        "Suggested public link: Replicate API 怎么做 AI Demo：模型调用、部署和费用边界 (/blog/replicate-api-ai-demo-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 基建, 模型, 怎么, 部署.",
+        "Suggested public link: Claude API 怎么接入：Messages API、费用和上下文边界 (/blog/claude-api-beginner-guide) - same category: AI 基建; keyword overlap: ai, api, 怎么接入, 基建, 接入, 怎么.",
         "Already links to at least one public article.",
         "Review 5 suggested public link target(s).",
         "Use one link only if it helps the reader continue the task; avoid stuffing links.",

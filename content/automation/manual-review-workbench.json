@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:36:59.038Z",
+  "generatedAt": "2026-06-19T02:13:09.515Z",
   "guardrails": {
     "autoMarkReview": false,
     "autoPublish": false,
@@ -213,7 +213,7 @@
     ]
   },
   "cannibalization": {
-    "conflicts": 200,
+    "conflicts": 199,
     "reviewBatchConflicts": 0,
     "reviewBatchConflictItems": []
   },
@@ -805,22 +805,22 @@
     "trafficDataAvailable": false
   },
   "trafficClaimGuard": {
-    "filesScanned": 227,
+    "filesScanned": 240,
     "measuredTrafficUnavailable": true,
     "unsafeClaims": 0,
-    "watchMentions": 9553
+    "watchMentions": 9670
   },
   "contentIntegrity": {
     "allIssueItems": 0,
     "blockingItems": 0,
     "expansionItems": 15,
     "filesScanned": 669,
-    "mojibakeWarningItems": 77,
+    "mojibakeWarningItems": 0,
     "publicItems": 500,
-    "publicMojibakeWarningItems": 51,
+    "publicMojibakeWarningItems": 0,
     "recommendedItems": 3,
     "waveItems": 3,
-    "warningItems": 77
+    "warningItems": 0
   },
   "internalLinks": {
     "summary": {
@@ -886,12 +886,12 @@
             "url": "/blog/multi-model-router-fallback-guide"
           },
           {
-            "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
-            "url": "/blog/claude-api-rate-limit-debug-guide"
+            "title": "客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检",
+            "url": "/blog/ai-model-selection-customer-service-guide"
           },
           {
-            "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
-            "url": "/blog/gemini-api-rate-limit-debug-guide"
+            "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+            "url": "/blog/claude-api-rate-limit-debug-guide"
           }
         ],
         "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
@@ -905,7 +905,7 @@
       "publicItems": 500,
       "recommendedItems": 3,
       "scopedItems": 516,
-      "warningItems": 204,
+      "warningItems": 0,
       "waveItems": 3,
       "waveItemsWithBlockingIssues": 0
     },
@@ -935,9 +935,7 @@
         "slug": "vercel-ai-gateway-multi-provider-guide",
         "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
         "titleLength": 51,
-        "warnings": [
-          "primary keyword is not an exact title substring"
-        ]
+        "warnings": []
       }
     ]
   },
@@ -949,7 +947,7 @@
       "publicItems": 500,
       "recommendedItems": 3,
       "scopedItems": 516,
-      "warningItems": 92,
+      "warningItems": 0,
       "waveItems": 3,
       "waveItemsWithBlockingIssues": 0
     },
@@ -1007,191 +1005,21 @@
   "seoWarningRemediation": {
     "summary": {
       "blockingItems": 0,
-      "draftItems": 5,
-      "humanGatedItems": 260,
-      "items": 260,
-      "itemsWithHumanChecklist": 260,
-      "itemsWithManualActions": 260,
-      "publicItems": 255,
-      "recommendedItems": 1,
-      "schemaWarningItems": 92,
-      "snippetWarningItems": 204,
+      "draftItems": 0,
+      "humanGatedItems": 0,
+      "items": 0,
+      "itemsWithHumanChecklist": 0,
+      "itemsWithManualActions": 0,
+      "publicItems": 0,
+      "recommendedItems": 0,
+      "schemaWarningItems": 0,
+      "snippetWarningItems": 0,
       "trafficDataAvailable": false,
       "unsafeItems": 0,
-      "warningItems": 260,
-      "waveItems": 1
+      "warningItems": 0,
+      "waveItems": 0
     },
-    "topItems": [
-      {
-        "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-        "manualActions": [
-          "Check whether the title can naturally include the exact primary keyword: Vercel AI Gateway 多模型.",
-          "If exact-match wording makes the title stiff or misleading, explicitly accept the warning and keep the more natural title.",
-          "Confirm the H1/title/description still answer the same search intent after any metadata change.",
-          "For draft/review pages, keep status, noindex, and humanReviewRequired unchanged until explicit approval."
-        ],
-        "manualFixReady": true,
-        "priority": 78,
-        "schemaWarnings": [],
-        "scope": [
-          "expansion",
-          "recommended",
-          "wave-1"
-        ],
-        "snippetWarnings": [
-          "primary keyword is not an exact title substring"
-        ],
-        "status": "draft",
-        "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
-      },
-      {
-        "file": "content/blog/ai-assisted-vs-automated-delivery-checklist.mdx",
-        "manualActions": [
-          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-          "Confirm description length remains suitable for search snippets after editing.",
-          "Check whether the title can naturally include the exact primary keyword: AI 辅助交付检查清单."
-        ],
-        "manualFixReady": true,
-        "priority": 66,
-        "schemaWarnings": [],
-        "scope": [
-          "public"
-        ],
-        "snippetWarnings": [
-          "description may be thin for search snippets",
-          "primary keyword is not an exact title substring"
-        ],
-        "status": "published",
-        "title": "AI 辅助交付和完全自动交付的检查清单"
-      },
-      {
-        "file": "content/blog/ai-automation-project-pricing-scope-guide.mdx",
-        "manualActions": [
-          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-          "Confirm description length remains suitable for search snippets after editing.",
-          "Check whether the title can naturally include the exact primary keyword: AI 自动化项目报价."
-        ],
-        "manualFixReady": true,
-        "priority": 66,
-        "schemaWarnings": [],
-        "scope": [
-          "public"
-        ],
-        "snippetWarnings": [
-          "description may be thin for search snippets",
-          "primary keyword is not an exact title substring"
-        ],
-        "status": "published",
-        "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围"
-      },
-      {
-        "file": "content/blog/ai-beginner-project-fit-check-checklist.mdx",
-        "manualActions": [
-          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-          "Confirm description length remains suitable for search snippets after editing.",
-          "Check whether the title can naturally include the exact primary keyword: AI 新手接项目前检查清单."
-        ],
-        "manualFixReady": true,
-        "priority": 66,
-        "schemaWarnings": [],
-        "scope": [
-          "public"
-        ],
-        "snippetWarnings": [
-          "description may be thin for search snippets",
-          "primary keyword is not an exact title substring"
-        ],
-        "status": "published",
-        "title": "AI 新手接项目前的项目适配检查清单"
-      },
-      {
-        "file": "content/blog/ai-model-selection-customer-service-guide.mdx",
-        "manualActions": [
-          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-          "Confirm description length remains suitable for search snippets after editing.",
-          "Check whether the title can naturally include the exact primary keyword: 客服 AI 模型选型."
-        ],
-        "manualFixReady": true,
-        "priority": 66,
-        "schemaWarnings": [],
-        "scope": [
-          "public"
-        ],
-        "snippetWarnings": [
-          "description may be thin for search snippets",
-          "primary keyword is not an exact title substring"
-        ],
-        "status": "published",
-        "title": "客服 AI 该选什么模型：速度、成本、知识库、转人工和质检"
-      },
-      {
-        "file": "content/blog/ai-output-unstable-risk-control-checklist.mdx",
-        "manualActions": [
-          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-          "Confirm description length remains suitable for search snippets after editing.",
-          "Check whether the title can naturally include the exact primary keyword: AI 输出不稳定检查清单."
-        ],
-        "manualFixReady": true,
-        "priority": 66,
-        "schemaWarnings": [],
-        "scope": [
-          "public"
-        ],
-        "snippetWarnings": [
-          "description may be thin for search snippets",
-          "primary keyword is not an exact title substring"
-        ],
-        "status": "published",
-        "title": "AI 输出不稳定风险控制检查清单"
-      },
-      {
-        "file": "content/blog/ai-small-project-practice-topics-checklist.mdx",
-        "manualActions": [
-          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-          "Confirm description length remains suitable for search snippets after editing.",
-          "Check whether the title can naturally include the exact primary keyword: AI 项目练习项目检查清单."
-        ],
-        "manualFixReady": true,
-        "priority": 66,
-        "schemaWarnings": [],
-        "scope": [
-          "public"
-        ],
-        "snippetWarnings": [
-          "description may be thin for search snippets",
-          "primary keyword is not an exact title substring"
-        ],
-        "status": "published",
-        "title": "AI 小项目练习选题检查清单"
-      },
-      {
-        "file": "content/blog/ai-tool-setup-service-checklist-checklist.mdx",
-        "manualActions": [
-          "Expand the meta description with the user problem, outcome, and one concrete workflow term.",
-          "Keep the description reviewer-friendly and avoid unsupported traffic, ranking, or conversion claims.",
-          "Confirm description length remains suitable for search snippets after editing.",
-          "Check whether the title can naturally include the exact primary keyword: AI 工具配置服务检查清单."
-        ],
-        "manualFixReady": true,
-        "priority": 66,
-        "schemaWarnings": [],
-        "scope": [
-          "public"
-        ],
-        "snippetWarnings": [
-          "description may be thin for search snippets",
-          "primary keyword is not an exact title substring"
-        ],
-        "status": "published",
-        "title": "AI 工具配置服务项目检查清单"
-      }
-    ]
+    "topItems": []
   },
   "deploymentCoverage": {
     "summary": {

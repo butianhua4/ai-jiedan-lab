@@ -1,6 +1,6 @@
 # Review Optimization Brief
 
-Generated at: 2026-06-18T11:36:40.349Z
+Generated at: 2026-06-19T02:12:51.067Z
 
 This report is read-only. It converts review warnings into copydesk suggestions for human review.
 
@@ -31,14 +31,14 @@ This report is read-only. It converts review warnings into copydesk suggestions 
 | Priority | Scope | Actions | Exact queries | Link | Proposed title | File |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1010 | wave-1 | 3 | 0 | /blog/qdrant-vector-database-beginner-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| 1002 | wave-2 | 4 | 0 | /blog/multi-model-router-fallback-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| 1002 | wave-2 | 3 | 0 | /blog/multi-model-router-fallback-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 
 ## All Briefs
 
 | Priority | Scope | Actions | Exact queries | Link | Proposed title | File |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1010 | wave-1 | 3 | 0 | /blog/qdrant-vector-database-beginner-guide | RAG 向量数据库怎么选：pgvector、Qdrant、Milvus 先看项目边界 | content/blog/vector-database-selection-for-rag-guide.mdx |
-| 1002 | wave-2 | 4 | 0 | /blog/multi-model-router-fallback-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| 1002 | wave-2 | 3 | 0 | /blog/multi-model-router-fallback-guide | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 
 ## Per-Article Suggestions
 
@@ -76,6 +76,5 @@ Opening additions:
 
 Warning remediation:
 
-- Check whether the primary keyword can appear naturally in the title without making the title stiff.
 - Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型.
 

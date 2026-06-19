@@ -1,6 +1,6 @@
 # Human Approval Repair Queue
 
-Generated at: 2026-06-18T11:36:50.118Z
+Generated at: 2026-06-19T02:13:00.733Z
 
 This report is read-only. It breaks repair-before-review candidates into task-level work and stops before any status change.
 
@@ -119,7 +119,7 @@ This report is read-only. It breaks repair-before-review candidates into task-le
 | 1803 | medium | search-intent | Review reason: 2 search-intent weakness(es) need human copy review. | Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body. | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 | 1803 | medium | search-intent | Resolve or explicitly accept search-intent weaknesses before mark:review. | Primary query or accepted equivalent appears naturally in title, description, opening, and headings/body. | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 | 1763 | medium | internal-link | Suggested public link: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide) - same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做. | Draft contains at least one contextual link to a currently published relevant article. | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
-| 1763 | medium | internal-link | Suggested public link: Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 (/blog/claude-api-rate-limit-debug-guide) - same category: AI 部署; keyword overlap: ai, claude, 部署, 降级, api, 怎么. | Draft contains at least one contextual link to a currently published relevant article. | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| 1763 | medium | internal-link | Suggested public link: 客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检 (/blog/ai-model-selection-customer-service-guide) - same category: AI 部署; keyword overlap: ai, 部署, 知识库, agent, 怎么, 么做. | Draft contains at least one contextual link to a currently published relevant article. | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 | 1763 | medium | internal-link | Apply or explicitly reject the internal-link suggestion before mark:review. | Draft contains at least one contextual link to a currently published relevant article. | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 | 1763 | medium | internal-link | Only after explicit human approval, run: npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human | Draft contains at least one contextual link to a currently published relevant article. | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 | 1723 | medium | copydesk | Review reason: copydesk warning remediation exists. | Reviewer resolves or explicitly accepts copydesk warning without weakening guardrails. | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
@@ -159,7 +159,7 @@ This report is read-only. It breaks repair-before-review candidates into task-le
 - [medium] search-intent: Review reason: 2 search-intent weakness(es) need human copy review.
 - [medium] search-intent: Resolve or explicitly accept search-intent weaknesses before mark:review.
 - [medium] internal-link: Suggested public link: 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide) - same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做.
-- [medium] internal-link: Suggested public link: Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 (/blog/claude-api-rate-limit-debug-guide) - same category: AI 部署; keyword overlap: ai, claude, 部署, 降级, api, 怎么.
+- [medium] internal-link: Suggested public link: 客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检 (/blog/ai-model-selection-customer-service-guide) - same category: AI 部署; keyword overlap: ai, 部署, 知识库, agent, 怎么, 么做.
 - [medium] internal-link: Apply or explicitly reject the internal-link suggestion before mark:review.
 - [medium] internal-link: Only after explicit human approval, run: npm run mark:review -- --file=content/blog/vercel-ai-gateway-multi-provider-guide.mdx --confirm-human
 - [medium] copydesk: Review reason: copydesk warning remediation exists.

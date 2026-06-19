@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:37:01.629Z",
+  "generatedAt": "2026-06-19T02:13:12.047Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -10,14 +10,14 @@
   },
   "summary": {
     "affectedDraftFiles": 26,
-    "affectedFiles": 77,
+    "affectedFiles": 78,
     "affectedMetadataFields": 4,
-    "affectedPublicFiles": 51,
+    "affectedPublicFiles": 52,
     "bodyExcerptHits": 72,
     "executiveTopAffected": 0,
     "filesScanned": 669,
     "immediateApprovalAffected": 0,
-    "metadataFieldHits": 85,
+    "metadataFieldHits": 86,
     "publishConfirmCommandsIncluded": 0,
     "scannedMetadataFields": 9,
     "trafficDataAvailable": false,
@@ -25,7 +25,7 @@
   },
   "metadataHitCounts": {
     "bodyExcerpt": 72,
-    "description": 10,
+    "description": 11,
     "targetReader": 2,
     "title": 1
   },
@@ -204,6 +204,39 @@
       },
       "status": "published",
       "title": "Ray Serve 怎么部署 LLM：多节点、多模型和 OpenAI 兼容接口入门"
+    },
+    {
+      "bodyHit": null,
+      "file": "content/blog/ai-beginner-project-fit-check.mdx",
+      "humanReviewRequired": true,
+      "manualActions": [
+        "Repair title and description into readable Chinese without changing slug or publish status.",
+        "Compare body excerpt against intended topic and rewrite only the garbled copy after human source review.",
+        "Verify sourceNotes and official source targets still match the repaired claim wording.",
+        "Keep draft/review/published status and noindex unchanged during remediation.",
+        "Rerun integrity, content quality, automation gate, and digest checks before any approval action."
+      ],
+      "metadataHits": [
+        {
+          "field": "description",
+          "markers": [
+            "盲"
+          ],
+          "sample": "AI 新手接项目前，先用需求清晰度、风险等级、验证能力和交付边界判断自己能不能接，避免盲目报价和交付失控。"
+        }
+      ],
+      "noindex": false,
+      "preserveStatus": true,
+      "priorityScore": 100,
+      "publishConfirm": "not-included",
+      "queueSignals": {
+        "inExecutiveTop": false,
+        "inHumanApprovalImmediate": false,
+        "inReviewPortfolio": false,
+        "lanes": []
+      },
+      "status": "published",
+      "title": "AI 新手如何判断自己能不能接项目"
     },
     {
       "bodyHit": {
@@ -789,7 +822,7 @@
         "lanes": []
       },
       "status": "published",
-      "title": "Claude Code 和 Codex 网页修改新手检查清单"
+      "title": "网页修改 AI 工具检查清单：Claude Code 和 Codex 怎么选"
     },
     {
       "bodyHit": {

@@ -1,6 +1,6 @@
 # Autopilot Internal Link Brief
 
-Generated at: 2026-06-18T11:36:47.782Z
+Generated at: 2026-06-19T02:12:58.404Z
 
 This report is read-only. It packages public internal-link suggestions for the top autopilot approval packet items.
 
@@ -64,10 +64,10 @@ Human review focus:
 Suggested public links:
 
 - 多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide) - same category: AI 部署; shared tags: 多模型, AI 部署; keyword overlap: ai, 部署, 多模型, 降级, 怎么, 么做
+- 客服 AI 模型选型怎么做：速度、成本、知识库、转人工和质检 (/blog/ai-model-selection-customer-service-guide) - same category: AI 部署; keyword overlap: ai, 部署, 知识库, agent, 怎么, 么做
 - Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 (/blog/claude-api-rate-limit-debug-guide) - same category: AI 部署; keyword overlap: ai, claude, 部署, 降级, api, 怎么
 - Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型 (/blog/gemini-api-rate-limit-debug-guide) - same category: AI 部署; keyword overlap: ai, gemini, 部署, 降级, api, 怎么
 - 大模型成本监控怎么做：按用户、功能、模型和项目拆账 (/blog/llm-cost-monitoring-dashboard-guide) - same category: AI 部署; keyword overlap: ai, 部署, 怎么, 么做, 模型, 成本
-- OpenAI Batch API 适合什么任务：批量摘要、分类、抽取和成本控制 (/blog/openai-batch-api-cost-guide) - same category: AI 部署; keyword overlap: ai, openai, 部署, api, 任务, 适合
 
 ### Together AI API 怎么接入：开源模型接口、embedding 和部署边界
 
@@ -85,9 +85,9 @@ Suggested public links:
 
 - OpenRouter API 怎么接入：统一模型入口不是只换 Base URL (/blog/openrouter-api-beginner-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai
 - Groq API 怎么接入：高速推理适合什么 AI 应用 (/blog/groq-api-fast-llm-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 怎么接入, 基建, 接入, openai
-- Replicate API 怎么做 AI Demo：模型调用、部署和费用边界 (/blog/replicate-api-ai-demo-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 基建, 模型, 怎么, 部署
 - Claude API 怎么接入：Messages API、费用和上下文边界 (/blog/claude-api-beginner-guide) - same category: AI 基建; keyword overlap: ai, api, 怎么接入, 基建, 接入, 怎么
 - LM Studio 本地 API 怎么用：把本地模型变成 OpenAI 兼容接口 (/blog/lm-studio-local-api-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 基建, openai, compatible, 模型
+- Replicate API 教程：做 AI Demo 的模型调用、部署和费用边界 (/blog/replicate-api-ai-demo-guide) - same category: AI 基建; shared tags: API; keyword overlap: ai, api, 基建, 模型, 部署, 边界
 
 ### Vercel 部署成功但页面 404：新手排查顺序
 

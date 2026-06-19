@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:37:00.467Z",
+  "generatedAt": "2026-06-19T02:13:10.889Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -53,7 +53,7 @@
   "routeWarnings": [
     {
       "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-      "priorityScore": 441,
+      "priorityScore": 431,
       "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
       "warnings": [
         "search query match warning exists"
@@ -61,7 +61,7 @@
     },
     {
       "file": "content/blog/together-ai-api-beginner-guide.mdx",
-      "priorityScore": 370,
+      "priorityScore": 360,
       "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
       "warnings": [
         "not yet matched in human approval clearance pack",
@@ -72,7 +72,7 @@
     },
     {
       "file": "content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx",
-      "priorityScore": 369,
+      "priorityScore": 359,
       "title": "Vercel AI SDK 聊天机器人怎么部署：Next.js 流式输出和上线检查",
       "warnings": [
         "not yet matched in human approval clearance pack",
@@ -112,9 +112,9 @@
       "action": "Use docs/public-refresh-sprint-board.md to refresh existing public articles without claiming traffic.",
       "publishConfirm": "not-included",
       "summary": {
-        "actionItems": 5154,
-        "cannibalizationItems": 239,
-        "highPriorityItems": 268,
+        "actionItems": 5030,
+        "cannibalizationItems": 241,
+        "highPriorityItems": 59,
         "items": 500,
         "itemsPerWave": 3,
         "itemsReadyForPublicRefreshSprint": 500,
@@ -123,7 +123,7 @@
         "publicArticles": 500,
         "publishConfirmCommandsIncluded": 0,
         "publishedButNoindexed": 0,
-        "seoWarningItems": 255,
+        "seoWarningItems": 0,
         "shortDescriptionItems": 457,
         "trafficDataAvailable": false,
         "unsafeItems": 0,

@@ -1,6 +1,6 @@
 # Autopilot Human Review Playbook
 
-Generated at: 2026-06-18T11:36:48.707Z
+Generated at: 2026-06-19T02:12:59.325Z
 
 This report is read-only. It merges the top autopilot approval packet with search, source, internal-link, and copydesk tasks for human review.
 
@@ -50,7 +50,7 @@ This report is read-only. It merges the top autopilot approval packet with searc
 
 | Ready | Safe | Search actions | Source actions | Link actions | Mark-review command gated | Publish confirm | Title | File |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| true | true | 12 | 44 | 6 | true | not-included | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
+| true | true | 11 | 44 | 6 | true | not-included | Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx |
 | false | true | 10 | 37 | 5 | true | not-included | Together AI API 怎么接入：开源模型接口、embedding 和部署边界 | content/blog/together-ai-api-beginner-guide.mdx |
 | false | true | 6 | 33 | 5 | true | not-included | Vercel 部署成功但页面 404：新手排查顺序 | content/blog/vercel-404-after-deploy.mdx |
 
@@ -82,7 +82,6 @@ Search and copydesk actions:
 - Review proposed meta description option: 整理 Vercel AI Gateway 多模型接入思路，覆盖统一 API、provider 切换、日志、成本、降级、AI SDK 和上线检查。.
 - 在开头 200 字内自然回答一次“Vercel AI Gateway 多模型”这个搜索意图，先给结论再展开步骤。
 - 在相关段落加入公开内链：多模型 Router 怎么做降级：主模型、备用模型、成本和质量评估 (/blog/multi-model-router-fallback-guide)。
-- Check whether the primary keyword can appear naturally in the title without making the title stiff.
 - Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型.
 
 Source verification actions:
@@ -90,7 +89,7 @@ Source verification actions:
 - Verify 7 official source target(s).
 - Check 4 search query seed(s).
 - Review 19 combined checklist signal(s).
-- Apply copydesk remediation: Check whether the primary keyword can appear naturally in the title without making the title stiff.; Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型..
+- Apply copydesk remediation: Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型..
 - Complete freshness checklist for fast-changing AI/tool guidance.
 - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.
 - Open official source and verify current wording: OpenAI API docs: https://platform.openai.com/docs

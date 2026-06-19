@@ -1,6 +1,6 @@
 # Autopilot Review Sprint Board
 
-Generated at: 2026-06-18T11:36:52.022Z
+Generated at: 2026-06-19T02:13:02.608Z
 
 This report is read-only. It plans the next 10 manual review assignments and keeps all status changes human-gated.
 
@@ -73,7 +73,7 @@ This report is read-only. It plans the next 10 manual review assignments and kee
 
 Checklist:
 
-- Use merged playbook actions: 12 search, 44 source, 6 link.
+- Use merged playbook actions: 11 search, 44 source, 6 link.
 - Review source lanes together: deployment, wave.
 - Verify 7 official source target(s) before any approval.
 - Check search intent against 4 query seed(s).
@@ -83,7 +83,7 @@ Checklist:
 - Verify 7 official source target(s).
 - Check 4 search query seed(s).
 - Review 19 combined checklist signal(s).
-- Apply copydesk remediation: Check whether the primary keyword can appear naturally in the title without making the title stiff.; Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型..
+- Apply copydesk remediation: Add one FAQ or checklist line that uses a high-intent query variant such as: Vercel AI Gateway 多模型..
 - Complete freshness checklist for fast-changing AI/tool guidance.
 - Do not approve traffic, ranking, revenue, benchmark, or stability claims without measured evidence.
 - Keep status=draft, noindex=true, and humanReviewRequired=true until explicit approval.
