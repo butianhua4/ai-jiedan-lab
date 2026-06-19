@@ -6,6 +6,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "ai-jiedan-lab.vercel.app" }],
+        destination: "https://ai.aporet.com/:path*",
+        permanent: true,
+      },
       { source: "/category/报错解决", destination: "/category/troubleshooting", permanent: true },
       { source: "/category/报价指南", destination: "/category/pricing-guide", permanent: true },
       { source: "/category/收款工具", destination: "/category/payment-tools", permanent: true },
