@@ -9,6 +9,7 @@ import {
   type AutonomousMode,
   type AutonomousRunStatus,
 } from "../lib/autonomous-next-step";
+import { getDeadPageImprovementReport } from "../lib/dead-page-improvements";
 import { getEnglishExpansionPlan, getEnglishQDraftFramework } from "../lib/english-expansion-plan";
 import { getHighPotentialKeywordList } from "../lib/high-potential-keywords";
 import { getManualIndexingList } from "../lib/manual-indexing-list";
@@ -184,6 +185,9 @@ function executeTask(taskId: string, notes: string[]) {
   }
   if (taskId === "content-high-potential-keywords") {
     return createHighPotentialKeywordList(notes);
+  }
+  if (taskId === "content-dead-page-improvements") {
+    return createDeadPageImprovementReport(notes);
   }
 
   const artifactPath = path.join(artifactDir, `${taskId}-${formatTimestamp(timestamp)}.json`);
@@ -447,6 +451,70 @@ function createHighPotentialKeywordList(notes: string[]) {
     path.relative(process.cwd(), jsonPath).replace(/\\/g, "/"),
     path.relative(process.cwd(), markdownPath).replace(/\\/g, "/"),
   ];
+}
+
+function createDeadPageImprovementReport(notes: string[]) {
+  const report = getDeadPageImprovementReport(60);
+  const jsonPath = path.join(process.cwd(), "content", "automation", "dead-page-improvements.json");
+  const markdownPath = path.join(process.cwd(), "docs", "dead-page-improvements.md");
+
+  fs.mkdirSync(path.dirname(jsonPath), { recursive: true });
+  fs.mkdirSync(path.dirname(markdownPath), { recursive: true });
+
+  fs.writeFileSync(jsonPath, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  fs.writeFileSync(
+    markdownPath,
+    [
+      "# Dead Page Improvement Suggestions",
+      "",
+      `Generated at: ${report.generatedAt}`,
+      "",
+      report.evidence,
+      "",
+      "## Summary",
+      "",
+      ...Object.entries(report.summary).map(([key, value]) => `- ${key}: ${value}`),
+      "",
+      "## Structural Dead Pages",
+      "",
+      renderImprovementTable(report.deadPages),
+      "",
+      "## Watch Candidates",
+      "",
+      renderImprovementTable(report.watchCandidates),
+      "",
+      "## Opportunity Candidates",
+      "",
+      renderImprovementTable(report.opportunityCandidates),
+      "",
+      "## Next Actions",
+      "",
+      ...report.nextActions.map((action) => `- ${action}`),
+      "",
+    ].join("\n"),
+    "utf8",
+  );
+
+  notes.push(`Generated dead-page improvement report: ${report.summary.structuralDeadPages} structural dead pages, ${report.summary.watchCandidates} watch candidates.`);
+  return [
+    path.relative(process.cwd(), jsonPath).replace(/\\/g, "/"),
+    path.relative(process.cwd(), markdownPath).replace(/\\/g, "/"),
+  ];
+}
+
+function renderImprovementTable(items: ReturnType<typeof getDeadPageImprovementReport>["deadPages"]) {
+  if (!items.length) return "| Path | Type | Links | Reason |\n| --- | --- | --- | --- |\n| none | none | none | none |";
+  return [
+    "| Path | Type | Links | Reason |",
+    "| --- | --- | --- | --- |",
+    ...items
+      .slice(0, 30)
+      .map((item) => `| ${item.path} | ${item.type} | in ${item.incoming} / out ${item.outgoing} | ${escapeMarkdownCell(item.reason)} |`),
+  ].join("\n");
+}
+
+function escapeMarkdownCell(value: string) {
+  return value.replaceAll("|", "\\|").replace(/\s+/g, " ").trim();
 }
 
 function createServicesPage(notes: string[]) {

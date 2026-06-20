@@ -75,6 +75,7 @@ export type AutonomousObservedState = {
     hasEnglishExpansionPlan: boolean;
     hasEnglishQDraftFramework: boolean;
     hasHighPotentialKeywordList: boolean;
+    hasDeadPageImprovementReport: boolean;
   };
   latestReports: Array<{ path: string; updatedAt: string }>;
   latestCommit: string | null;
@@ -180,6 +181,7 @@ export function getAutonomousObservedState(): AutonomousObservedState {
       hasEnglishExpansionPlan: fs.existsSync(projectPath("content", "automation", "english-expansion-plan.json")),
       hasEnglishQDraftFramework: fs.existsSync(projectPath("content", "automation", "english-q-draft-framework.json")),
       hasHighPotentialKeywordList: fs.existsSync(projectPath("content", "automation", "high-potential-keywords.json")),
+      hasDeadPageImprovementReport: fs.existsSync(projectPath("content", "automation", "dead-page-improvements.json")),
     },
     latestReports: getLatestReports(),
     latestCommit: getLatestCommit(),
@@ -277,7 +279,8 @@ function rankCandidates(observed: AutonomousObservedState) {
     if (!observed.monitoring.hasEnglishExpansionPlan) push("content-cn-to-en-expansion-plan");
     if (!observed.monitoring.hasEnglishQDraftFramework) push("content-english-q-draft-plan");
     if (!observed.monitoring.hasHighPotentialKeywordList) push("content-high-potential-keywords");
-    push("content-dead-page-improvements");
+    if (!observed.monitoring.hasDeadPageImprovementReport) push("content-dead-page-improvements");
+    push("content-bing-indexnow-plan");
   } else {
     push("monitoring-ga-clarity-status");
     push("monitoring-gsc-bing-placeholders");

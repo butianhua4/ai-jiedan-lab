@@ -1,0 +1,1044 @@
+{
+  "generatedAt": "2026-06-20T14:04:51.701Z",
+  "evidence": "This report reads the real SEO graph and local crawl log evidence only. Search Console impressions/clicks are not connected here, so pages are not marked dead because of missing traffic data alone.",
+  "summary": {
+    "structuralDeadPages": 0,
+    "orphanPages": 0,
+    "weakPages": 0,
+    "watchCandidates": 30,
+    "opportunityCandidates": 30,
+    "gscConnected": false
+  },
+  "deadPages": [],
+  "watchCandidates": [
+    {
+      "path": "/blog/ai-api-key-security-rotation-guide",
+      "title": "AI API Key 怎么安全管理：环境变量、权限、轮换、泄露应急",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/ai-logo-design-beginner-guide",
+      "title": "AI 做 Logo 怎么开始：新手先别急着商用",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/ai-prompt-library-team-knowledge-base-guide",
+      "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/ai-tools-recommendation-beginner",
+      "title": "AI 工具推荐怎么选：新手别一开始买太多",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/codex-codex-4-38",
+      "title": "Codex 生成代码后怎么审核：新手检查清单",
+      "type": "blog",
+      "clusterSlug": "codex",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/codex-npm-install-error-beginner-fix",
+      "title": "Codex 项目 npm install 报错怎么办：新手排查步骤",
+      "type": "blog",
+      "clusterSlug": "codex",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/codex-readme-review",
+      "title": "用 Codex 审核 README 怎么做",
+      "type": "blog",
+      "clusterSlug": "codex",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/codex-tailwind-mobile-check-checklist",
+      "title": "Tailwind 移动端样式检查清单",
+      "type": "blog",
+      "clusterSlug": "codex",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/codex-tailwind-mobile-check-mistakes",
+      "title": "Tailwind 移动端检查常见错误和修复顺序",
+      "type": "blog",
+      "clusterSlug": "codex",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/hr-recruiting-ai-prompts-guide",
+      "title": "HR AI 提示词模板：JD、简历初筛、面试题和培训材料",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/ollama-api-web-app-integration",
+      "title": "Ollama API 怎么接到网页应用：本地模型到前后端调用",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/quote-email-uncertain-scope",
+      "title": "报价邮件模板怎么表达不确定范围",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/quote-email-uncertain-scope-checklist",
+      "title": "报价邮件模板怎么表达不确定范围：新手检查清单",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/rag-citation-source-trace-guide",
+      "title": "RAG 怎么显示引用来源：文档名、页码、片段和可信度",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/rag-document-cleaning-before-upload-guide",
+      "title": "RAG 文档上传前怎么清洗：目录、页眉、表格、重复段落和版本号",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/rag-evaluation-test-set-guide",
+      "title": "RAG 评测怎么做：先准备一套真实测试问题",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/sales-ai-prompts-guide",
+      "title": "销售 AI 提示词模板：客户画像、跟进话术、异议处理和会议纪要",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/software-development-ai-prompts-guide",
+      "title": "软件开发 AI 提示词模板：需求拆解、代码审查、Bug 排查和测试用例",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/subscription-payment-failed-message-checklist",
+      "title": "订阅支付失败怎么和客户沟通：新手检查清单",
+      "type": "blog",
+      "clusterSlug": "upwork",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/vercel-env-variable-missing-beginner-guide",
+      "title": "Vercel 提示环境变量缺失怎么办：新手部署检查流程",
+      "type": "blog",
+      "clusterSlug": "vercel",
+      "incoming": 1,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/ai-agent-memory-rag-design-guide",
+      "title": "AI Agent 记忆和 RAG 怎么设计：短期记忆、长期记忆、引用来源和隐私边界",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 2,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/ai-automation-project-pricing-scope-guide",
+      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+      "type": "blog",
+      "clusterSlug": "upwork",
+      "incoming": 2,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/ai-beginner-project-fit-check",
+      "title": "AI 新手如何判断自己能不能接项目",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 2,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/ai-beginner-project-fit-check-checklist",
+      "title": "AI 新手接项目前的项目适配检查清单",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 2,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/ai-coding-tools-risk-check-checklist",
+      "title": "AI 编程工具使用前风险检查清单",
+      "type": "blog",
+      "clusterSlug": "codex",
+      "incoming": 2,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/ai-content-human-review-template",
+      "title": "AI 生成内容人工审核表怎么设计",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 2,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/ai-content-human-review-template-checklist",
+      "title": "AI 生成内容人工审核表检查清单",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 2,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/ai-freelance-automation-compliance-risk-checklist",
+      "title": "AI 自动化项目合规风险检查清单",
+      "type": "blog",
+      "clusterSlug": "upwork",
+      "incoming": 2,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/ai-freelance-common-misconceptions-checklist",
+      "title": "AI 工具实践常见误区自查清单",
+      "type": "blog",
+      "clusterSlug": "upwork",
+      "incoming": 2,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    },
+    {
+      "path": "/blog/bugfix-delivery-note-template",
+      "title": "Bug 修复交付说明模板怎么写",
+      "type": "blog",
+      "clusterSlug": "ai-tools",
+      "incoming": 2,
+      "outgoing": 10,
+      "crawlEvents": 0,
+      "severity": "watch",
+      "reason": "structurally valid but no local crawl evidence yet; watch after GSC/Bing submission",
+      "actions": [
+        "Verify the title matches one exact problem query.",
+        "Keep the first screen focused on answer, steps, and risk warning.",
+        "Check that related links point to same-intent pages.",
+        "Refresh only after real GSC data shows low impressions or no clicks."
+      ]
+    }
+  ],
+  "opportunityCandidates": [
+    {
+      "path": "/cluster/ai-tools",
+      "title": "AI tools and LLM applications topic hub",
+      "type": "cluster",
+      "clusterSlug": "ai-tools",
+      "incoming": 360,
+      "outgoing": 192,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "hub page can pass authority to q and blog pages",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/cluster/upwork",
+      "title": "Upwork AI freelancing topic hub",
+      "type": "cluster",
+      "clusterSlug": "upwork",
+      "incoming": 246,
+      "outgoing": 135,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "hub page can pass authority to q and blog pages",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/cluster/codex",
+      "title": "Codex AI coding topic hub",
+      "type": "cluster",
+      "clusterSlug": "codex",
+      "incoming": 226,
+      "outgoing": 125,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "hub page can pass authority to q and blog pages",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/cluster/vercel",
+      "title": "Vercel and web deployment topic hub",
+      "type": "cluster",
+      "clusterSlug": "vercel",
+      "incoming": 64,
+      "outgoing": 44,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "hub page can pass authority to q and blog pages",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/cluster/node-js-errors",
+      "title": "Node.js errors and engineering issues topic hub",
+      "type": "cluster",
+      "clusterSlug": "node-js-errors",
+      "incoming": 58,
+      "outgoing": 41,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "hub page can pass authority to q and blog pages",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/cluster/github",
+      "title": "GitHub and code collaboration topic hub",
+      "type": "cluster",
+      "clusterSlug": "github",
+      "incoming": 46,
+      "outgoing": 35,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "hub page can pass authority to q and blog pages",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/ai-tools/dify-knowledge-base-beginner-guide",
+      "title": "Dify Knowledge Base Beginner Guide",
+      "type": "q",
+      "clusterSlug": "ai-tools",
+      "incoming": 38,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/ai-tools/langchain-rag-beginner-guide",
+      "title": "Langchain RAG Beginner Guide",
+      "type": "q",
+      "clusterSlug": "ai-tools",
+      "incoming": 33,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/ai-tools/agent-memory-design-guide",
+      "title": "Agent Memory Design Guide",
+      "type": "q",
+      "clusterSlug": "ai-tools",
+      "incoming": 31,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/ai-tools/customer-service-ai-prompts-guide",
+      "title": "Customer Service AI Prompts Guide",
+      "type": "q",
+      "clusterSlug": "ai-tools",
+      "incoming": 30,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/ai-tools/practice-project-log-template",
+      "title": "Practice Project Log Template",
+      "type": "q",
+      "clusterSlug": "ai-tools",
+      "incoming": 30,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/codex/codex-avoid-secret-leak",
+      "title": "Codex Avoid Secret Leak",
+      "type": "q",
+      "clusterSlug": "codex",
+      "incoming": 30,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/codex/codex-client-requirement-questions-checklist",
+      "title": "Codex Client Requirement Questions Checklist",
+      "type": "q",
+      "clusterSlug": "codex",
+      "incoming": 30,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/ai-tools/ai-tool-setup-service-checklist",
+      "title": "AI Tool Setup Service Checklist",
+      "type": "q",
+      "clusterSlug": "ai-tools",
+      "incoming": 29,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/ai-tools/data-analysis-ai-prompts-guide",
+      "title": "Data Analysis AI Prompts Guide",
+      "type": "q",
+      "clusterSlug": "ai-tools",
+      "incoming": 29,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/ai-tools/industry-ai-prompts-template-library-2026",
+      "title": "Industry AI Prompts Template Library 2026",
+      "type": "q",
+      "clusterSlug": "ai-tools",
+      "incoming": 29,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/ai-tools/chroma-vector-database-rag-guide",
+      "title": "Chroma Vector Database RAG Guide",
+      "type": "q",
+      "clusterSlug": "ai-tools",
+      "incoming": 28,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/ai-tools/rag-knowledge-base-beginner-guide",
+      "title": "RAG Knowledge Base Beginner Guide",
+      "type": "q",
+      "clusterSlug": "ai-tools",
+      "incoming": 28,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/codex/codex-avoid-secret-leak-checklist",
+      "title": "Codex Avoid Secret Leak Checklist",
+      "type": "q",
+      "clusterSlug": "codex",
+      "incoming": 27,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/codex/codex-automation-steps-not-skip",
+      "title": "Codex Automation Steps Not Skip",
+      "type": "q",
+      "clusterSlug": "codex",
+      "incoming": 26,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/codex/codex-install-prerequisites-mistakes",
+      "title": "Codex Install Prerequisites Mistakes",
+      "type": "q",
+      "clusterSlug": "codex",
+      "incoming": 26,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/upwork/payoneer-freelancer-beginner",
+      "title": "Payoneer Freelancer Beginner",
+      "type": "q",
+      "clusterSlug": "upwork",
+      "incoming": 26,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/github/git-authentication-failed-fix",
+      "title": "Git Authentication Failed Fix",
+      "type": "q",
+      "clusterSlug": "github",
+      "incoming": 25,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/node-js-errors/node-version-mismatch-fix-checklist",
+      "title": "Node Version Mismatch Fix Checklist",
+      "type": "q",
+      "clusterSlug": "node-js-errors",
+      "incoming": 25,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/upwork/international-payment-fee-estimate",
+      "title": "International Payment Fee Estimate",
+      "type": "q",
+      "clusterSlug": "upwork",
+      "incoming": 25,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/ai-tools/pre-project-risk-assessment-template",
+      "title": "Pre Project Risk Assessment Template",
+      "type": "q",
+      "clusterSlug": "ai-tools",
+      "incoming": 23,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/codex/codex-avoid-secret-leak-freelance-scope",
+      "title": "Codex Avoid Secret Leak Freelance Scope",
+      "type": "q",
+      "clusterSlug": "codex",
+      "incoming": 23,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/codex/codex-edit-existing-ui-checklist",
+      "title": "Codex Edit Existing UI Checklist",
+      "type": "q",
+      "clusterSlug": "codex",
+      "incoming": 23,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/codex/codex-github-workflow",
+      "title": "Codex Github Workflow",
+      "type": "q",
+      "clusterSlug": "codex",
+      "incoming": 23,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    },
+    {
+      "path": "/q/codex/codex-install-prerequisites-checklist",
+      "title": "Codex Install Prerequisites Checklist",
+      "type": "q",
+      "clusterSlug": "codex",
+      "incoming": 23,
+      "outgoing": 8,
+      "crawlEvents": 0,
+      "severity": "opportunity",
+      "reason": "q entry page can attract specific problem-search traffic",
+      "actions": [
+        "Prioritize for manual URL Inspection after sitemap refresh.",
+        "Use as an internal-link target from related blog pages.",
+        "Add clearer snippet copy when real impressions appear.",
+        "Keep it connected to the Q -> Blog -> Cluster -> Q loop."
+      ]
+    }
+  ],
+  "nextActions": [
+    "No structural dead pages found; keep monitoring GSC coverage instead of forcing unnecessary rewrites.",
+    "Use watch candidates for title/intro/internal-link refresh only after they are seen in GSC with low impressions or no clicks.",
+    "Use opportunity candidates as the next manual URL Inspection and Bing URL Submission queue after sitemap refresh.",
+    "Do not delete or noindex pages only because they have no traffic yet; the site is still in early indexing.",
+    "Record real GSC observations before changing page status or removing pages from sitemap."
+  ]
+}
