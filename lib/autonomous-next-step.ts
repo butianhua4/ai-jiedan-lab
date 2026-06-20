@@ -76,6 +76,8 @@ export type AutonomousObservedState = {
     hasEnglishQDraftFramework: boolean;
     hasHighPotentialKeywordList: boolean;
     hasDeadPageImprovementReport: boolean;
+    hasFreshBingIndexNowPlan: boolean;
+    hasFreshDomesticSearchAdaptationPlan: boolean;
   };
   latestReports: Array<{ path: string; updatedAt: string }>;
   latestCommit: string | null;
@@ -182,6 +184,8 @@ export function getAutonomousObservedState(): AutonomousObservedState {
       hasEnglishQDraftFramework: fs.existsSync(projectPath("content", "automation", "english-q-draft-framework.json")),
       hasHighPotentialKeywordList: fs.existsSync(projectPath("content", "automation", "high-potential-keywords.json")),
       hasDeadPageImprovementReport: fs.existsSync(projectPath("content", "automation", "dead-page-improvements.json")),
+      hasFreshBingIndexNowPlan: fileGeneratedToday(projectPath("content", "automation", "indexnow-readiness.json")),
+      hasFreshDomesticSearchAdaptationPlan: fileGeneratedToday(projectPath("content", "automation", "domestic-search-adaptation-plan.json")),
     },
     latestReports: getLatestReports(),
     latestCommit: getLatestCommit(),
@@ -280,7 +284,8 @@ function rankCandidates(observed: AutonomousObservedState) {
     if (!observed.monitoring.hasEnglishQDraftFramework) push("content-english-q-draft-plan");
     if (!observed.monitoring.hasHighPotentialKeywordList) push("content-high-potential-keywords");
     if (!observed.monitoring.hasDeadPageImprovementReport) push("content-dead-page-improvements");
-    push("content-bing-indexnow-plan");
+    if (!observed.monitoring.hasFreshBingIndexNowPlan) push("content-bing-indexnow-plan");
+    if (!observed.monitoring.hasFreshDomesticSearchAdaptationPlan) push("content-cn-search-adaptation-plan");
   } else {
     push("monitoring-ga-clarity-status");
     push("monitoring-gsc-bing-placeholders");
@@ -355,6 +360,11 @@ function readJson<T>(file: string): T | null {
   } catch {
     return null;
   }
+}
+
+function fileGeneratedToday(file: string) {
+  const data = readJson<{ generatedAt?: string }>(file);
+  return Boolean(data?.generatedAt && data.generatedAt.slice(0, 10) === new Date().toISOString().slice(0, 10));
 }
 
 function projectPath(...parts: string[]) {

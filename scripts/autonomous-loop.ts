@@ -10,6 +10,7 @@ import {
   type AutonomousRunStatus,
 } from "../lib/autonomous-next-step";
 import { getDeadPageImprovementReport } from "../lib/dead-page-improvements";
+import { getDomesticSearchAdaptationPlan } from "../lib/domestic-search-adaptation";
 import { getEnglishExpansionPlan, getEnglishQDraftFramework } from "../lib/english-expansion-plan";
 import { getHighPotentialKeywordList } from "../lib/high-potential-keywords";
 import { getManualIndexingList } from "../lib/manual-indexing-list";
@@ -188,6 +189,12 @@ function executeTask(taskId: string, notes: string[]) {
   }
   if (taskId === "content-dead-page-improvements") {
     return createDeadPageImprovementReport(notes);
+  }
+  if (taskId === "content-bing-indexnow-plan") {
+    return createBingIndexNowPlan(notes);
+  }
+  if (taskId === "content-cn-search-adaptation-plan") {
+    return createDomesticSearchAdaptationPlan(notes);
   }
 
   const artifactPath = path.join(artifactDir, `${taskId}-${formatTimestamp(timestamp)}.json`);
@@ -496,6 +503,67 @@ function createDeadPageImprovementReport(notes: string[]) {
   );
 
   notes.push(`Generated dead-page improvement report: ${report.summary.structuralDeadPages} structural dead pages, ${report.summary.watchCandidates} watch candidates.`);
+  return [
+    path.relative(process.cwd(), jsonPath).replace(/\\/g, "/"),
+    path.relative(process.cwd(), markdownPath).replace(/\\/g, "/"),
+  ];
+}
+
+function createBingIndexNowPlan(notes: string[]) {
+  const output = execSync("npm run indexnow:readiness", { cwd: process.cwd(), encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
+  notes.push(`Refreshed Bing IndexNow readiness without automatic submission. ${tail(output).split(/\r?\n/).slice(-1)[0] || ""}`.trim());
+  return ["content/automation/indexnow-readiness.json", "docs/indexnow-readiness.md"];
+}
+
+function createDomesticSearchAdaptationPlan(notes: string[]) {
+  const plan = getDomesticSearchAdaptationPlan();
+  const jsonPath = path.join(process.cwd(), "content", "automation", "domestic-search-adaptation-plan.json");
+  const markdownPath = path.join(process.cwd(), "docs", "domestic-search-adaptation-plan.md");
+
+  fs.mkdirSync(path.dirname(jsonPath), { recursive: true });
+  fs.mkdirSync(path.dirname(markdownPath), { recursive: true });
+
+  fs.writeFileSync(jsonPath, `${JSON.stringify(plan, null, 2)}\n`, "utf8");
+  fs.writeFileSync(
+    markdownPath,
+    [
+      "# Domestic Search Adaptation Plan",
+      "",
+      `Generated at: ${plan.generatedAt}`,
+      "",
+      "## Strategic Decision",
+      "",
+      `- Primary market: ${plan.strategicDecision.primaryMarket}`,
+      `- Secondary market: ${plan.strategicDecision.secondaryMarket}`,
+      `- Recommendation: ${plan.strategicDecision.recommendation}`,
+      `- Reason: ${plan.strategicDecision.reason}`,
+      "",
+      "## Current State",
+      "",
+      ...Object.entries(plan.currentState).map(([key, value]) => `- ${key}: ${value}`),
+      "",
+      "## China Search Risks",
+      "",
+      ...plan.chinaSearchRisks.map((item) => `- [${item.impact}] ${item.risk} Response: ${item.response}`),
+      "",
+      "## Platform Checklist",
+      "",
+      "| Platform | Status | Purpose | Action |",
+      "| --- | --- | --- | --- |",
+      ...plan.platformChecklist.map((item) => `| ${item.platform} | ${item.status} | ${escapeMarkdownCell(item.purpose)} | ${escapeMarkdownCell(item.action)} |`),
+      "",
+      "## Domain Options",
+      "",
+      ...plan.domainOptions.flatMap((item) => [`### ${item.option}`, "", `- Fit: ${item.fit}`, ...item.notes.map((note) => `- ${note}`), ""]),
+      "## Next Actions",
+      "",
+      ...plan.nextActions.map((action) => `- ${action}`),
+      "",
+    ].join("\n"),
+    "utf8",
+  );
+
+  notes.push(`Generated domestic search adaptation plan with primary market=${plan.strategicDecision.primaryMarket}.`);
   return [
     path.relative(process.cwd(), jsonPath).replace(/\\/g, "/"),
     path.relative(process.cwd(), markdownPath).replace(/\\/g, "/"),
