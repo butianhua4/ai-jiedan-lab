@@ -1,6 +1,6 @@
 # Structured Data Readiness Audit
 
-Generated at: 2026-06-20T05:54:54.666Z
+Generated at: 2026-06-20T10:18:59.956Z
 
 This report is read-only. It checks whether public and publish-candidate articles have the metadata needed to render Article JSON-LD safely later.
 

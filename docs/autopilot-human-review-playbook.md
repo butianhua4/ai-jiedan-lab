@@ -1,6 +1,6 @@
 # Autopilot Human Review Playbook
 
-Generated at: 2026-06-20T05:55:24.257Z
+Generated at: 2026-06-20T10:19:29.896Z
 
 This report is read-only. It merges the top autopilot approval packet with search, source, internal-link, and copydesk tasks for human review.
 
