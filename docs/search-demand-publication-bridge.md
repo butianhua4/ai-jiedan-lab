@@ -1,6 +1,6 @@
 # Search Demand Publication Bridge
 
-Generated at: 2026-06-20T01:35:01.145Z
+Generated at: 2026-06-20T05:55:05.036Z
 
 This report is read-only. It maps search-demand review candidates to SEO, source, internal-link, and manual publication readiness while stopping before review or publish commands.
 
@@ -30,7 +30,7 @@ This report is read-only. It maps search-demand review candidates to SEO, source
 
 ## Source Evidence
 
-- reviewPackGeneratedAt: "2026-06-20T01:35:00.646Z"
+- reviewPackGeneratedAt: "2026-06-20T05:55:04.575Z"
 - reviewPackGuardrails: {"autoCreateArticles":false,"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"trafficClaim":"not-included","note":"Read-only review pack for high-search-demand lanes. It packages manual review work but never edits article files, marks review, or publishes.","stopBefore":"All commands are manual-only and require explicit human approval."}
 - reviewPackSummary: {"factCheckQueries":63,"items":11,"itemsPerLaneMax":2,"itemsWithCommandBoundary":11,"itemsWithHumanChecklist":11,"itemsWithInternalLinkSuggestion":7,"itemsWithManualReviewFocus":11,"itemsWithOfficialSources":11,"itemsWithSearchQueries":11,"lanes":8,"readyItems":11,"reviewQueueMatchedItems":6,"safeDraftItems":11,"unsafeItems":0,"zeroPublicLaneItems":0}
 - sourceHealthFilesWithoutReachableSource: 0
