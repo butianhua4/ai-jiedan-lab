@@ -16,15 +16,16 @@ export function SystemLiveReport({ initialStatus }: { initialStatus: SystemStatu
 
   const modules = useMemo(
     () => [
-      { title: "内容系统", data: status.content },
-      { title: "SEO 系统", data: status.seo },
+      { title: "Content System", data: status.content },
+      { title: "SEO System", data: status.seo },
+      { title: "Search / Analytics Platforms", data: status.searchPlatforms },
       { title: "Autonomous Development Loop", data: status.autonomousLoop },
       { title: "Question Engine", data: status.questionEngine },
-      { title: "页面系统", data: status.pages },
-      { title: "内链系统", data: status.links },
+      { title: "Page System", data: status.pages },
+      { title: "Internal Link System", data: status.links },
       { title: "SEO Growth Status", data: status.seoGrowth },
-      { title: "构建状态", data: status.build },
-      { title: "性能指标", data: status.performance },
+      { title: "Build Status", data: status.build },
+      { title: "Performance", data: status.performance },
     ],
     [status],
   );
@@ -53,12 +54,12 @@ export function SystemLiveReport({ initialStatus }: { initialStatus: SystemStatu
               <h1 className="text-3xl font-bold text-ink">System Live Report</h1>
             </div>
             <p className="mt-2 text-sm text-gray-600">
-              生成时间：{formatDate(status.generatedAt)} · 模式：{status.system.mode} · NODE_ENV：{status.system.nodeEnv}
+              Generated at: {formatDate(status.generatedAt)} / Mode: {status.system.mode} / NODE_ENV: {status.system.nodeEnv}
             </p>
           </div>
           <div className="flex items-center gap-3">
             <div className="rounded-md border bg-gray-50 px-4 py-3 text-right">
-              <p className="text-xs text-gray-500">健康度</p>
+              <p className="text-xs text-gray-500">Health score</p>
               <p className="text-3xl font-bold text-ink">{status.health.score}/100</p>
             </div>
             <button
@@ -67,11 +68,11 @@ export function SystemLiveReport({ initialStatus }: { initialStatus: SystemStatu
               onClick={refresh}
               type="button"
             >
-              {loading ? "刷新中" : "刷新状态"}
+              {loading ? "Refreshing" : "Refresh status"}
             </button>
           </div>
         </div>
-        {refreshError ? <p className="mt-3 text-sm text-red-600">刷新失败：{refreshError}</p> : null}
+        {refreshError ? <p className="mt-3 text-sm text-red-600">Refresh failed: {refreshError}</p> : null}
         <div className="mt-5 grid gap-3 md:grid-cols-5">
           {Object.entries(status.health.checks).map(([key, value]) => (
             <div className="rounded-md border border-gray-200 bg-gray-50 p-3" key={key}>
@@ -83,11 +84,23 @@ export function SystemLiveReport({ initialStatus }: { initialStatus: SystemStatu
       </section>
 
       <section className="grid gap-4 md:grid-cols-4">
-        <Metric label="公开文章" value={status.content.published} />
-        <Metric label="草稿" value={status.content.draft} />
+        <Metric label="Published posts" value={status.content.published} />
+        <Metric label="Drafts" value={status.content.draft} />
         <Metric label="Sitemap URLs" value={status.seo.sitemap.urlCount} />
-        <Metric label="孤立页面" value={status.links.orphanPages} />
+        <Metric label="Orphan pages" value={status.links.orphanPages} />
       </section>
+
+      <Panel title="Search / Analytics Platforms">
+        <div className="grid gap-3 md:grid-cols-4">
+          <Metric label="GA4" value={status.searchPlatforms.analytics.googleAnalytics.configured ? "configured" : "missing"} />
+          <Metric label="Clarity" value={status.searchPlatforms.analytics.microsoftClarity.configured ? "configured" : "missing"} />
+          <Metric label="GSC surface" value={status.searchPlatforms.search.googleSearchConsole.status === "not_configured" ? "missing" : "present"} />
+          <Metric label="Bing / IndexNow" value={status.searchPlatforms.search.bingWebmasterTools.status === "not_configured" ? "missing" : "present"} />
+        </div>
+        <p className="mt-4 text-sm text-gray-600">
+          Search Console and Bing API metrics stay null until real API exports or tokens are connected. This panel only reports surfaces that can be verified from local code and public files.
+        </p>
+      </Panel>
 
       <Panel title="Autonomous Development Loop">
         <div className="grid gap-3 md:grid-cols-4">
@@ -128,14 +141,10 @@ export function SystemLiveReport({ initialStatus }: { initialStatus: SystemStatu
       </section>
 
       <section className="grid gap-4 md:grid-cols-2">
-        <Panel title="最近 10 条日志">
-          {status.logs.latest.length ? (
-            <LogList entries={status.logs.latest} />
-          ) : (
-            <p className="text-sm text-gray-500">暂无 system.log 记录。</p>
-          )}
+        <Panel title="Latest 10 Logs">
+          {status.logs.latest.length ? <LogList entries={status.logs.latest} /> : <p className="text-sm text-gray-500">No system.log entries yet.</p>}
         </Panel>
-        <Panel title="错误列表">
+        <Panel title="Errors">
           {status.logs.errors.length || status.build.errors.length ? (
             <>
               <LogList entries={status.logs.errors} />
@@ -146,25 +155,25 @@ export function SystemLiveReport({ initialStatus }: { initialStatus: SystemStatu
               ))}
             </>
           ) : (
-            <p className="text-sm text-gray-500">当前没有从日志或构建产物中读到错误。</p>
+            <p className="text-sm text-gray-500">No errors were read from logs or build artifacts.</p>
           )}
         </Panel>
       </section>
 
-      <Panel title="未发布草稿列表">
+      <Panel title="Unpublished Drafts">
         {status.content.draftList.length ? (
           <div className="grid gap-2 md:grid-cols-2">
             {status.content.draftList.map((post) => (
               <div className="rounded-md border border-gray-200 bg-gray-50 p-3 text-sm" key={post.slug}>
                 <p className="font-semibold text-ink">{post.title}</p>
                 <p className="mt-1 text-xs text-gray-500">
-                  {post.slug} · updated {post.updatedAt} · score {post.qualityScore ?? "n/a"}
+                  {post.slug} / updated {post.updatedAt} / score {post.qualityScore ?? "n/a"}
                 </p>
               </div>
             ))}
           </div>
         ) : (
-          <p className="text-sm text-gray-500">没有 draft 状态文章。</p>
+          <p className="text-sm text-gray-500">No draft posts.</p>
         )}
       </Panel>
     </div>
@@ -195,7 +204,11 @@ function LogList({ entries }: { entries: SystemStatus["logs"]["latest"] }) {
       {entries.map((entry, index) => (
         <div className="rounded-md border border-gray-200 bg-gray-50 p-3 text-sm" key={`${entry.timestamp}-${entry.event}-${index}`}>
           <div className="flex flex-wrap items-center gap-2">
-            <span className={`rounded px-2 py-0.5 text-xs font-semibold ${entry.level === "error" ? "bg-red-100 text-red-700" : entry.level === "warn" ? "bg-amber-100 text-amber-700" : "bg-emerald-100 text-emerald-700"}`}>
+            <span
+              className={`rounded px-2 py-0.5 text-xs font-semibold ${
+                entry.level === "error" ? "bg-red-100 text-red-700" : entry.level === "warn" ? "bg-amber-100 text-amber-700" : "bg-emerald-100 text-emerald-700"
+              }`}
+            >
               {entry.level}
             </span>
             <span className="font-medium text-ink">{entry.event}</span>

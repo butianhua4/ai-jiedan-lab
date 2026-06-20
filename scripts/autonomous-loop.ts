@@ -9,6 +9,8 @@ import {
   type AutonomousMode,
   type AutonomousRunStatus,
 } from "../lib/autonomous-next-step";
+import { getManualIndexingList } from "../lib/manual-indexing-list";
+import { getQuestionOptimizationList } from "../lib/q-optimization-list";
 
 type VerificationResult = {
   command: string;
@@ -49,15 +51,16 @@ function main() {
 
   const previous = getAutonomousLoopStatus(mode);
   const blockedReasons = getBlockedReasonsForRun(execution);
+  const isExecutionMode = mode === "execute-low-risk";
   writeAutonomousLoopStatus({
     ...previous,
-    mode,
+    mode: isExecutionMode ? mode : previous.mode,
     currentStage: decision.currentStage,
-    lastRunAt: timestamp.toISOString(),
-    lastTask: decision.recommendedTask.title,
-    lastStatus: execution.status,
-    lastReport: path.relative(process.cwd(), reportPath).replace(/\\/g, "/"),
-    nextRecommendedTask: decision.nextThreeCandidates[0]?.title || decision.recommendedTask.title,
+    lastRunAt: isExecutionMode ? timestamp.toISOString() : previous.lastRunAt,
+    lastTask: isExecutionMode ? decision.recommendedTask.title : previous.lastTask,
+    lastStatus: isExecutionMode ? execution.status : previous.lastStatus,
+    lastReport: isExecutionMode ? path.relative(process.cwd(), reportPath).replace(/\\/g, "/") : previous.lastReport,
+    nextRecommendedTask: isExecutionMode ? decision.nextThreeCandidates[0]?.title || decision.recommendedTask.title : decision.recommendedTask.title,
     autoExecuteAllowed: decision.recommendedTask.allowedToAutoExecute && decision.recommendedTask.riskLevel === "low" && blockedReasons.length === 0,
     blockedReasons,
     guardrails: getAutonomousGuardrails(),
@@ -165,6 +168,12 @@ function executeTask(taskId: string, notes: string[]) {
   if (taskId === "conversion-hire-me-page") {
     return createHireMePage(notes);
   }
+  if (taskId === "content-gsc-manual-indexing-list") {
+    return createManualIndexingList(notes);
+  }
+  if (taskId === "content-top-50-q-optimization") {
+    return createQuestionOptimizationList(notes);
+  }
 
   const artifactPath = path.join(artifactDir, `${taskId}-${formatTimestamp(timestamp)}.json`);
   fs.writeFileSync(
@@ -183,6 +192,75 @@ function executeTask(taskId: string, notes: string[]) {
   );
   notes.push("No safe source-change executor exists for this task yet; wrote a planning artifact only.");
   return [path.relative(process.cwd(), artifactPath).replace(/\\/g, "/")];
+}
+
+function createManualIndexingList(notes: string[]) {
+  const list = getManualIndexingList(100);
+  const jsonPath = path.join(process.cwd(), "content", "automation", "manual-indexing-priority.json");
+  const textPath = path.join(process.cwd(), "docs", "gsc-url-inspection-today.txt");
+
+  fs.mkdirSync(path.dirname(jsonPath), { recursive: true });
+  fs.mkdirSync(path.dirname(textPath), { recursive: true });
+
+  fs.writeFileSync(jsonPath, `${JSON.stringify(list, null, 2)}\n`, "utf8");
+  fs.writeFileSync(
+    textPath,
+    [
+      `Generated at: ${list.generatedAt}`,
+      `Recommended daily manual requests: ${list.dailyRequestLimit.recommendedMin}-${list.dailyRequestLimit.recommendedMax}`,
+      list.dailyRequestLimit.note,
+      "",
+      ...list.items.map((item, index) => `${index + 1}. [${item.type}] ${item.url}\n   ${item.title}\n   ${item.reason}`),
+      "",
+    ].join("\n"),
+    "utf8",
+  );
+
+  notes.push(`Generated ${list.items.length} priority URLs for GSC URL Inspection and Bing URL Submission.`);
+  return [
+    path.relative(process.cwd(), jsonPath).replace(/\\/g, "/"),
+    path.relative(process.cwd(), textPath).replace(/\\/g, "/"),
+  ];
+}
+
+function createQuestionOptimizationList(notes: string[]) {
+  const list = getQuestionOptimizationList(50);
+  const jsonPath = path.join(process.cwd(), "content", "automation", "top-50-q-optimization.json");
+  const markdownPath = path.join(process.cwd(), "docs", "top-50-q-optimization.md");
+
+  fs.mkdirSync(path.dirname(jsonPath), { recursive: true });
+  fs.mkdirSync(path.dirname(markdownPath), { recursive: true });
+
+  fs.writeFileSync(jsonPath, `${JSON.stringify(list, null, 2)}\n`, "utf8");
+  fs.writeFileSync(
+    markdownPath,
+    [
+      "# Top 50 Q Page Optimization List",
+      "",
+      `Generated at: ${list.generatedAt}`,
+      `Total pages: ${list.total}`,
+      "",
+      ...list.items.flatMap((item, index) => [
+        `## ${index + 1}. ${item.path}`,
+        "",
+        `- URL: ${item.url}`,
+        `- Category: ${item.category}`,
+        `- Cluster: ${item.cluster}`,
+        `- Primary keyword: ${item.primaryKeyword || "n/a"}`,
+        `- Search intent: ${item.searchIntent || "n/a"}`,
+        "- Actions:",
+        ...item.actions.map((action) => `  - ${action}`),
+        "",
+      ]),
+    ].join("\n"),
+    "utf8",
+  );
+
+  notes.push(`Generated ${list.total} high-priority q page optimization targets.`);
+  return [
+    path.relative(process.cwd(), jsonPath).replace(/\\/g, "/"),
+    path.relative(process.cwd(), markdownPath).replace(/\\/g, "/"),
+  ];
 }
 
 function createServicesPage(notes: string[]) {

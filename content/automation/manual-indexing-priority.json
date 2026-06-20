@@ -1,0 +1,778 @@
+{
+  "generatedAt": "2026-06-20T12:14:23.235Z",
+  "dailyRequestLimit": {
+    "recommendedMin": 5,
+    "recommendedMax": 15,
+    "note": "Use these URLs for manual GSC URL Inspection and Bing URL Submission. Do not submit hundreds at once."
+  },
+  "items": [
+    {
+      "url": "https://ai.aporet.com/q/ai-tools/agent-observability-logging-guide",
+      "path": "/q/ai-tools/agent-observability-logging-guide",
+      "type": "q",
+      "title": "Agent 可观测性怎么做：日志、轨迹、成本和失败复盘",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 1000
+    },
+    {
+      "url": "https://ai.aporet.com/q/vercel/agent-production-deployment-checklist",
+      "path": "/q/vercel/agent-production-deployment-checklist",
+      "type": "q",
+      "title": "Agent 生产上线检查表：权限、日志、成本和人工确认",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 999
+    },
+    {
+      "url": "https://ai.aporet.com/q/ai-tools/agent-tool-calling-beginner-guide",
+      "path": "/q/ai-tools/agent-tool-calling-beginner-guide",
+      "type": "q",
+      "title": "Agent 工具调用怎么设计：读、写、执行要分清",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 998
+    },
+    {
+      "url": "https://ai.aporet.com/q/ai-tools/agent-tool-permission-safety-guide",
+      "path": "/q/ai-tools/agent-tool-permission-safety-guide",
+      "type": "q",
+      "title": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 997
+    },
+    {
+      "url": "https://ai.aporet.com/q/ai-tools/ai-prompt-library-team-knowledge-base-guide",
+      "path": "/q/ai-tools/ai-prompt-library-team-knowledge-base-guide",
+      "type": "q",
+      "title": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 996
+    },
+    {
+      "url": "https://ai.aporet.com/q/ai-tools/claude-api-rate-limit-debug-guide",
+      "path": "/q/ai-tools/claude-api-rate-limit-debug-guide",
+      "type": "q",
+      "title": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 995
+    },
+    {
+      "url": "https://ai.aporet.com/q/codex/codex-bugfix-rollback-record",
+      "path": "/q/codex/codex-bugfix-rollback-record",
+      "type": "q",
+      "title": "Codex 修 bug 时如何保留回滚记录",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 994
+    },
+    {
+      "url": "https://ai.aporet.com/q/codex/codex-npm-install-errors",
+      "path": "/q/codex/codex-npm-install-errors",
+      "type": "q",
+      "title": "用 Codex 排查 npm install 报错",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 993
+    },
+    {
+      "url": "https://ai.aporet.com/q/codex/codex-vercel-deployment",
+      "path": "/q/codex/codex-vercel-deployment",
+      "type": "q",
+      "title": "用 Codex 检查 Vercel 部署问题",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 992
+    },
+    {
+      "url": "https://ai.aporet.com/q/codex/codex-windows-install-failed",
+      "path": "/q/codex/codex-windows-install-failed",
+      "type": "q",
+      "title": "Windows 上 Codex 安装失败怎么排查",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 991
+    },
+    {
+      "url": "https://ai.aporet.com/q/node-js-errors/dependency-conflict-fix",
+      "path": "/q/node-js-errors/dependency-conflict-fix",
+      "type": "q",
+      "title": "dependency conflict 依赖冲突怎么处理",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 990
+    },
+    {
+      "url": "https://ai.aporet.com/q/vercel/dev-works-build-fails",
+      "path": "/q/vercel/dev-works-build-fails",
+      "type": "q",
+      "title": "npm run dev 能跑但 build 失败怎么办",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 989
+    },
+    {
+      "url": "https://ai.aporet.com/q/node-js-errors/dify-workflow-error-handling-guide",
+      "path": "/q/node-js-errors/dify-workflow-error-handling-guide",
+      "type": "q",
+      "title": "Dify 工作流怎么做错误处理：变量、分支、重试和人工兜底",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 988
+    },
+    {
+      "url": "https://ai.aporet.com/q/vercel/env-variable-missing-fix",
+      "path": "/q/vercel/env-variable-missing-fix",
+      "type": "q",
+      "title": "环境变量 missing 怎么排查",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 987
+    },
+    {
+      "url": "https://ai.aporet.com/q/node-js-errors/eslint-error-should-not-disable",
+      "path": "/q/node-js-errors/eslint-error-should-not-disable",
+      "type": "q",
+      "title": "ESLint error 要不要直接关闭",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 986
+    },
+    {
+      "url": "https://ai.aporet.com/q/github/failed-to-push-some-refs-fix",
+      "path": "/q/github/failed-to-push-some-refs-fix",
+      "type": "q",
+      "title": "failed to push some refs 怎么排查",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 985
+    },
+    {
+      "url": "https://ai.aporet.com/q/ai-tools/gemini-api-nextjs-guide",
+      "path": "/q/ai-tools/gemini-api-nextjs-guide",
+      "type": "q",
+      "title": "Gemini API 怎么接 Next.js：从 API Key 到服务端 Route Handler",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 984
+    },
+    {
+      "url": "https://ai.aporet.com/q/ai-tools/gemini-api-rate-limit-debug-guide",
+      "path": "/q/ai-tools/gemini-api-rate-limit-debug-guide",
+      "type": "q",
+      "title": "Gemini API 限流怎么排查：RPM、TPM、批量请求和降级模型",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 983
+    },
+    {
+      "url": "https://ai.aporet.com/q/github/git-authentication-failed-fix",
+      "path": "/q/github/git-authentication-failed-fix",
+      "type": "q",
+      "title": "git authentication failed 怎么解决",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 982
+    },
+    {
+      "url": "https://ai.aporet.com/q/github/github-actions-build-log-debug",
+      "path": "/q/github/github-actions-build-log-debug",
+      "type": "q",
+      "title": "GitHub Actions build 失败怎么看日志",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 981
+    },
+    {
+      "url": "https://ai.aporet.com/q/ai-tools/helicone-llm-observability-guide",
+      "path": "/q/ai-tools/helicone-llm-observability-guide",
+      "type": "q",
+      "title": "Helicone LLM Observability 怎么做：Gateway、日志、成本和限流",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 980
+    },
+    {
+      "url": "https://ai.aporet.com/q/vercel/llm-api-integration-deployment-checklist",
+      "path": "/q/vercel/llm-api-integration-deployment-checklist",
+      "type": "q",
+      "title": "大模型 API 接入部署清单：上线前要检查什么",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 979
+    },
+    {
+      "url": "https://ai.aporet.com/q/ai-tools/llm-api-rate-limit-retry-guide",
+      "path": "/q/ai-tools/llm-api-rate-limit-retry-guide",
+      "type": "q",
+      "title": "大模型 API 限流和重试怎么做：429、队列、退避和降级方案",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 978
+    },
+    {
+      "url": "https://ai.aporet.com/q/ai-tools/llm-cost-monitoring-dashboard-guide",
+      "path": "/q/ai-tools/llm-cost-monitoring-dashboard-guide",
+      "type": "q",
+      "title": "大模型成本监控怎么做：按用户、功能、模型和项目拆账",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 977
+    },
+    {
+      "url": "https://ai.aporet.com/q/node-js-errors/module-not-found-debug",
+      "path": "/q/node-js-errors/module-not-found-debug",
+      "type": "q",
+      "title": "module not found 报错怎么定位文件",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 976
+    },
+    {
+      "url": "https://ai.aporet.com/q/node-js-errors/nextjs-hydration-error-debug",
+      "path": "/q/node-js-errors/nextjs-hydration-error-debug",
+      "type": "q",
+      "title": "Next.js hydration error 怎么排查",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 975
+    },
+    {
+      "url": "https://ai.aporet.com/q/node-js-errors/node-version-mismatch-fix",
+      "path": "/q/node-js-errors/node-version-mismatch-fix",
+      "type": "q",
+      "title": "Node 版本不匹配怎么排查",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 974
+    },
+    {
+      "url": "https://ai.aporet.com/q/node-js-errors/npm-command-not-found-fix",
+      "path": "/q/node-js-errors/npm-command-not-found-fix",
+      "type": "q",
+      "title": "npm command not found 怎么解决",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 973
+    },
+    {
+      "url": "https://ai.aporet.com/q/github/package-lock-conflict-fix",
+      "path": "/q/github/package-lock-conflict-fix",
+      "type": "q",
+      "title": "package lock 冲突怎么安全处理",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 972
+    },
+    {
+      "url": "https://ai.aporet.com/q/node-js-errors/port-already-in-use-fix",
+      "path": "/q/node-js-errors/port-already-in-use-fix",
+      "type": "q",
+      "title": "port already in use 怎么释放端口",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 971
+    },
+    {
+      "url": "https://ai.aporet.com/q/vercel/replicate-api-ai-demo-guide",
+      "path": "/q/vercel/replicate-api-ai-demo-guide",
+      "type": "q",
+      "title": "Replicate API 教程：做 AI Demo 的模型调用、部署和费用边界",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 970
+    },
+    {
+      "url": "https://ai.aporet.com/q/upwork/ai-freelance-failure-review",
+      "path": "/q/upwork/ai-freelance-failure-review",
+      "type": "q",
+      "title": "AI 项目失败复盘怎么做",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 969
+    },
+    {
+      "url": "https://ai.aporet.com/q/node-js-errors/claude-code-error-debug",
+      "path": "/q/node-js-errors/claude-code-error-debug",
+      "type": "q",
+      "title": "Claude Code 错误排查怎么做：客户报错处理更稳",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 968
+    },
+    {
+      "url": "https://ai.aporet.com/q/upwork/claude-code-low-risk-freelance-jobs",
+      "path": "/q/upwork/claude-code-low-risk-freelance-jobs",
+      "type": "q",
+      "title": "Claude Code 低风险项目有哪些：新手适合先接的小单",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 967
+    },
+    {
+      "url": "https://ai.aporet.com/q/vercel/cloudflare-vs-namecheap-domain",
+      "path": "/q/vercel/cloudflare-vs-namecheap-domain",
+      "type": "q",
+      "title": "Cloudflare 和 Namecheap 域名怎么选",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 966
+    },
+    {
+      "url": "https://ai.aporet.com/q/node-js-errors/ai-website-builder-beginner-guide",
+      "path": "/q/node-js-errors/ai-website-builder-beginner-guide",
+      "type": "q",
+      "title": "AI 做网站怎么开始：新手从页面需求到上线检查",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 965
+    },
+    {
+      "url": "https://ai.aporet.com/q/codex/codex-css-spacing-responsive",
+      "path": "/q/codex/codex-css-spacing-responsive",
+      "type": "q",
+      "title": "Codex 修 CSS 间距和响应式问题怎么做",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 964
+    },
+    {
+      "url": "https://ai.aporet.com/q/codex/codex-project-start-checklist",
+      "path": "/q/codex/codex-project-start-checklist",
+      "type": "q",
+      "title": "Codex 项目启动检查表怎么用",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 963
+    },
+    {
+      "url": "https://ai.aporet.com/q/codex/codex-vs-claude-code-beginner",
+      "path": "/q/codex/codex-vs-claude-code-beginner",
+      "type": "q",
+      "title": "Codex 和 Claude Code 新手怎么选",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 962
+    },
+    {
+      "url": "https://ai.aporet.com/q/codex/codex-vs-cursor-web-editing",
+      "path": "/q/codex/codex-vs-cursor-web-editing",
+      "type": "q",
+      "title": "Codex 和 Cursor 改网页怎么选",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 961
+    },
+    {
+      "url": "https://ai.aporet.com/q/codex/cursor-vs-codex-web-editing",
+      "path": "/q/codex/cursor-vs-codex-web-editing",
+      "type": "q",
+      "title": "Cursor 和 Codex 改网页有什么区别",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 960
+    },
+    {
+      "url": "https://ai.aporet.com/q/vercel/flowise-local-deployment-beginner-guide",
+      "path": "/q/vercel/flowise-local-deployment-beginner-guide",
+      "type": "q",
+      "title": "Flowise 本地部署怎么开始：新手先看数据和权限",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 959
+    },
+    {
+      "url": "https://ai.aporet.com/q/vercel/llm-deployment-beginner-guide",
+      "path": "/q/vercel/llm-deployment-beginner-guide",
+      "type": "q",
+      "title": "大模型部署是什么意思：API、本地和私有化怎么选",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 958
+    },
+    {
+      "url": "https://ai.aporet.com/q/vercel/llm-deployment-huggingface-inference-endpoints-guide",
+      "path": "/q/vercel/llm-deployment-huggingface-inference-endpoints-guide",
+      "type": "q",
+      "title": "大模型部署怎么选：Hugging Face Inference Endpoints、API、私有化和成本检查",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 957
+    },
+    {
+      "url": "https://ai.aporet.com/q/vercel/mcp-server-deployment-security-checklist",
+      "path": "/q/vercel/mcp-server-deployment-security-checklist",
+      "type": "q",
+      "title": "MCP Server 怎么部署才安全：本地、远程、权限、日志和工具白名单",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 956
+    },
+    {
+      "url": "https://ai.aporet.com/q/upwork/ai-automation-project-pricing-scope-guide",
+      "path": "/q/upwork/ai-automation-project-pricing-scope-guide",
+      "type": "q",
+      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 955
+    },
+    {
+      "url": "https://ai.aporet.com/q/upwork/ai-freelance-automation-compliance-risk",
+      "path": "/q/upwork/ai-freelance-automation-compliance-risk",
+      "type": "q",
+      "title": "AI 自动化项目有哪些合规风险",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 954
+    },
+    {
+      "url": "https://ai.aporet.com/q/upwork/ai-freelance-daily-planner",
+      "path": "/q/upwork/ai-freelance-daily-planner",
+      "type": "q",
+      "title": "AI 工具学习每日执行表怎么安排",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 953
+    },
+    {
+      "url": "https://ai.aporet.com/q/upwork/ai-freelance-first-7-days",
+      "path": "/q/upwork/ai-freelance-first-7-days",
+      "type": "q",
+      "title": "AI 工具新手 7 天准备什么",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 952
+    },
+    {
+      "url": "https://ai.aporet.com/q/upwork/before-first-ai-freelance-job",
+      "path": "/q/upwork/before-first-ai-freelance-job",
+      "type": "q",
+      "title": "第一次接 AI 小单前要准备什么",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 951
+    },
+    {
+      "url": "https://ai.aporet.com/q/upwork/chatgpt-vs-claude-proposal",
+      "path": "/q/upwork/chatgpt-vs-claude-proposal",
+      "type": "q",
+      "title": "ChatGPT 和 Claude 写 Proposal 有什么区别",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 950
+    },
+    {
+      "url": "https://ai.aporet.com/q/codex/claude-code-vs-codex-web-editing",
+      "path": "/q/codex/claude-code-vs-codex-web-editing",
+      "type": "q",
+      "title": "Claude Code 和 Codex 哪个适合网页修改",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 949
+    },
+    {
+      "url": "https://ai.aporet.com/q/upwork/client-acceptance-checklist",
+      "path": "/q/upwork/client-acceptance-checklist",
+      "type": "q",
+      "title": "客户验收清单怎么减少返工",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 948
+    },
+    {
+      "url": "https://ai.aporet.com/q/upwork/client-requirement-form-questions",
+      "path": "/q/upwork/client-requirement-form-questions",
+      "type": "q",
+      "title": "客户需求沟通表怎么问才清楚",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 947
+    },
+    {
+      "url": "https://ai.aporet.com/q/github/github-command-cheatsheet-beginner",
+      "path": "/q/github/github-command-cheatsheet-beginner",
+      "type": "q",
+      "title": "GitHub 常用命令表新手怎么记",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 946
+    },
+    {
+      "url": "https://ai.aporet.com/q/github/claude-code-common-commands",
+      "path": "/q/github/claude-code-common-commands",
+      "type": "q",
+      "title": "Claude Code 新手常用命令怎么整理成项目笔记",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 945
+    },
+    {
+      "url": "https://ai.aporet.com/q/github/claude-code-github-file-scope",
+      "path": "/q/github/claude-code-github-file-scope",
+      "type": "q",
+      "title": "客户给 GitHub 文件时用 Claude Code 怎么限定范围",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 944
+    },
+    {
+      "url": "https://ai.aporet.com/q/github/claude-code-install-prerequisites",
+      "path": "/q/github/claude-code-install-prerequisites",
+      "type": "q",
+      "title": "安装 Claude Code 前新手要先确认哪些条件",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 943
+    },
+    {
+      "url": "https://ai.aporet.com/q/github/failed-to-push-some-refs-fix-checklist",
+      "path": "/q/github/failed-to-push-some-refs-fix-checklist",
+      "type": "q",
+      "title": "failed to push some refs 排查检查清单",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 942
+    },
+    {
+      "url": "https://ai.aporet.com/q/github/failed-to-push-some-refs-fix-mistakes",
+      "path": "/q/github/failed-to-push-some-refs-fix-mistakes",
+      "type": "q",
+      "title": "failed to push some refs 常见错误和解决步骤",
+      "reason": "High-potential question entry page. Prioritize these for manual URL inspection requests.",
+      "priority": 941
+    },
+    {
+      "url": "https://ai.aporet.com/cluster/codex",
+      "path": "/cluster/codex",
+      "type": "cluster",
+      "title": "Codex AI 编程主题中心",
+      "reason": "Topic cluster hub page. Helps pass authority to related q and blog pages.",
+      "priority": 900
+    },
+    {
+      "url": "https://ai.aporet.com/cluster/upwork",
+      "path": "/cluster/upwork",
+      "type": "cluster",
+      "title": "Upwork 与 AI 自由职业主题中心",
+      "reason": "Topic cluster hub page. Helps pass authority to related q and blog pages.",
+      "priority": 899
+    },
+    {
+      "url": "https://ai.aporet.com/cluster/vercel",
+      "path": "/cluster/vercel",
+      "type": "cluster",
+      "title": "Vercel 与网页部署主题中心",
+      "reason": "Topic cluster hub page. Helps pass authority to related q and blog pages.",
+      "priority": 898
+    },
+    {
+      "url": "https://ai.aporet.com/cluster/github",
+      "path": "/cluster/github",
+      "type": "cluster",
+      "title": "GitHub 与代码协作主题中心",
+      "reason": "Topic cluster hub page. Helps pass authority to related q and blog pages.",
+      "priority": 897
+    },
+    {
+      "url": "https://ai.aporet.com/cluster/node-js-errors",
+      "path": "/cluster/node-js-errors",
+      "type": "cluster",
+      "title": "Node.js 报错与工程问题主题中心",
+      "reason": "Topic cluster hub page. Helps pass authority to related q and blog pages.",
+      "priority": 896
+    },
+    {
+      "url": "https://ai.aporet.com/cluster/ai-tools",
+      "path": "/cluster/ai-tools",
+      "type": "cluster",
+      "title": "AI 工具与大模型应用主题中心",
+      "reason": "Topic cluster hub page. Helps pass authority to related q and blog pages.",
+      "priority": 895
+    },
+    {
+      "url": "https://ai.aporet.com/blog/chatgpt-codex-claude-workflow",
+      "path": "/blog/chatgpt-codex-claude-workflow",
+      "type": "blog",
+      "title": "ChatGPT Codex Claude 工作流怎么分工：AI 工具实践流程",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 700
+    },
+    {
+      "url": "https://ai.aporet.com/blog/ai-coding-tools-risk-check",
+      "path": "/blog/ai-coding-tools-risk-check",
+      "type": "blog",
+      "title": "AI 编程工具使用前要检查哪些风险",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 699
+    },
+    {
+      "url": "https://ai.aporet.com/blog/build-first-webpage-with-codex",
+      "path": "/blog/build-first-webpage-with-codex",
+      "type": "blog",
+      "title": "Codex 怎么做第一个网页",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 698
+    },
+    {
+      "url": "https://ai.aporet.com/blog/claude-code-vs-codex-web-editing",
+      "path": "/blog/claude-code-vs-codex-web-editing",
+      "type": "blog",
+      "title": "Claude Code 和 Codex 哪个适合网页修改",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 697
+    },
+    {
+      "url": "https://ai.aporet.com/blog/codex-automation-steps-not-skip",
+      "path": "/blog/codex-automation-steps-not-skip",
+      "type": "blog",
+      "title": "Codex 自动化开发流程哪些步骤不能省",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 696
+    },
+    {
+      "url": "https://ai.aporet.com/blog/notion-freelance-workflow",
+      "path": "/blog/notion-freelance-workflow",
+      "type": "blog",
+      "title": "Notion 管理项目流程怎么用",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 690
+    },
+    {
+      "url": "https://ai.aporet.com/blog/payoneer-freelancer-beginner",
+      "path": "/blog/payoneer-freelancer-beginner",
+      "type": "blog",
+      "title": "Payoneer 适合新手自由职业收款吗",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 689
+    },
+    {
+      "url": "https://ai.aporet.com/blog/paypal-freelancer-limits",
+      "path": "/blog/paypal-freelancer-limits",
+      "type": "blog",
+      "title": "PayPal 收款有哪些常见限制",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 688
+    },
+    {
+      "url": "https://ai.aporet.com/blog/ai-automation-project-pricing-scope-guide",
+      "path": "/blog/ai-automation-project-pricing-scope-guide",
+      "type": "blog",
+      "title": "AI 自动化项目怎么报价：Dify、n8n、RAG、Agent 和维护范围",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 687
+    },
+    {
+      "url": "https://ai.aporet.com/blog/ai-freelance-30-day-execution",
+      "path": "/blog/ai-freelance-30-day-execution",
+      "type": "blog",
+      "title": "新手 30 天 AI 工具实践计划怎么执行",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 686
+    },
+    {
+      "url": "https://ai.aporet.com/blog/cloudflare-vs-namecheap-domain",
+      "path": "/blog/cloudflare-vs-namecheap-domain",
+      "type": "blog",
+      "title": "Cloudflare 和 Namecheap 域名怎么选",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 680
+    },
+    {
+      "url": "https://ai.aporet.com/blog/agent-deployment-beginner-guide",
+      "path": "/blog/agent-deployment-beginner-guide",
+      "type": "blog",
+      "title": "Agent 部署怎么做：从聊天助手到可上线工作流",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 679
+    },
+    {
+      "url": "https://ai.aporet.com/blog/agent-production-deployment-checklist",
+      "path": "/blog/agent-production-deployment-checklist",
+      "type": "blog",
+      "title": "Agent 生产上线检查表：权限、日志、成本和人工确认",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 678
+    },
+    {
+      "url": "https://ai.aporet.com/blog/ai-agent-deployment-vercel-ai-sdk-guide",
+      "path": "/blog/ai-agent-deployment-vercel-ai-sdk-guide",
+      "type": "blog",
+      "title": "AI Agent 部署怎么做：用 Vercel AI SDK 理解工具调用、多步执行和上线检查",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 677
+    },
+    {
+      "url": "https://ai.aporet.com/blog/bentoml-llm-deployment-beginner-guide",
+      "path": "/blog/bentoml-llm-deployment-beginner-guide",
+      "type": "blog",
+      "title": "BentoML 怎么部署 LLM：从本地 Service 到 BentoCloud 验收",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 676
+    },
+    {
+      "url": "https://ai.aporet.com/blog/claude-code-common-commands",
+      "path": "/blog/claude-code-common-commands",
+      "type": "blog",
+      "title": "Claude Code 新手常用命令怎么整理成项目笔记",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 670
+    },
+    {
+      "url": "https://ai.aporet.com/blog/claude-code-github-file-scope",
+      "path": "/blog/claude-code-github-file-scope",
+      "type": "blog",
+      "title": "客户给 GitHub 文件时用 Claude Code 怎么限定范围",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 669
+    },
+    {
+      "url": "https://ai.aporet.com/blog/claude-code-install-prerequisites",
+      "path": "/blog/claude-code-install-prerequisites",
+      "type": "blog",
+      "title": "安装 Claude Code 前新手要先确认哪些条件",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 668
+    },
+    {
+      "url": "https://ai.aporet.com/blog/failed-to-push-some-refs-fix",
+      "path": "/blog/failed-to-push-some-refs-fix",
+      "type": "blog",
+      "title": "failed to push some refs 怎么排查",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 667
+    },
+    {
+      "url": "https://ai.aporet.com/blog/git-authentication-failed-fix",
+      "path": "/blog/git-authentication-failed-fix",
+      "type": "blog",
+      "title": "git authentication failed 怎么解决",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 666
+    },
+    {
+      "url": "https://ai.aporet.com/blog/nextjs-hydration-error-debug",
+      "path": "/blog/nextjs-hydration-error-debug",
+      "type": "blog",
+      "title": "Next.js hydration error 怎么排查",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 660
+    },
+    {
+      "url": "https://ai.aporet.com/blog/ai-website-builder-beginner-guide",
+      "path": "/blog/ai-website-builder-beginner-guide",
+      "type": "blog",
+      "title": "AI 做网站怎么开始：新手从页面需求到上线检查",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 659
+    },
+    {
+      "url": "https://ai.aporet.com/blog/claude-code-error-debug",
+      "path": "/blog/claude-code-error-debug",
+      "type": "blog",
+      "title": "Claude Code 错误排查怎么做：客户报错处理更稳",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 658
+    },
+    {
+      "url": "https://ai.aporet.com/blog/dependency-conflict-fix",
+      "path": "/blog/dependency-conflict-fix",
+      "type": "blog",
+      "title": "dependency conflict 依赖冲突怎么处理",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 657
+    },
+    {
+      "url": "https://ai.aporet.com/blog/dify-coze-flowise-agent-builder-comparison",
+      "path": "/blog/dify-coze-flowise-agent-builder-comparison",
+      "type": "blog",
+      "title": "Dify、Coze、Flowise 怎么选：做 Agent 和知识库前先看边界",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 656
+    },
+    {
+      "url": "https://ai.aporet.com/blog/paddle-vs-stripe-beginner",
+      "path": "/blog/paddle-vs-stripe-beginner",
+      "type": "blog",
+      "title": "Paddle 和 Stripe 有什么区别",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 650
+    },
+    {
+      "url": "https://ai.aporet.com/blog/payoneer-wise-paypal-choose",
+      "path": "/blog/payoneer-wise-paypal-choose",
+      "type": "blog",
+      "title": "Payoneer Wise PayPal 怎么选择",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 649
+    },
+    {
+      "url": "https://ai.aporet.com/blog/paypal-vs-payoneer-beginner",
+      "path": "/blog/paypal-vs-payoneer-beginner",
+      "type": "blog",
+      "title": "PayPal 和 Payoneer 哪个适合新手",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 648
+    },
+    {
+      "url": "https://ai.aporet.com/blog/ads-income-when-to-start",
+      "path": "/blog/ads-income-when-to-start",
+      "type": "blog",
+      "title": "广告收入要等到什么时候再接",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 647
+    },
+    {
+      "url": "https://ai.aporet.com/blog/affiliate-vs-service-income",
+      "path": "/blog/affiliate-vs-service-income",
+      "type": "blog",
+      "title": "联盟链接收入和服务收入有什么区别",
+      "reason": "Deep article linked from a cluster and useful as a supporting authority page.",
+      "priority": 646
+    }
+  ]
+}

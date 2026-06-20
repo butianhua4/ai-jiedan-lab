@@ -66,6 +66,13 @@ export type AutonomousObservedState = {
     hasTemplatePage: boolean;
     hasMonetizationPage: boolean;
   };
+  monitoring: {
+    hasSearchPlatformStatusLib: boolean;
+    hasPlatformStatusApi: boolean;
+    hasBehaviorAnalyticsConfigured: boolean;
+    hasManualIndexingList: boolean;
+    hasTop50QuestionOptimizationList: boolean;
+  };
   latestReports: Array<{ path: string; updatedAt: string }>;
   latestCommit: string | null;
 };
@@ -160,6 +167,14 @@ export function getAutonomousObservedState(): AutonomousObservedState {
       hasTemplatePage: fs.existsSync(projectPath("app", "templates", "page.tsx")),
       hasMonetizationPage: fs.existsSync(projectPath("app", "monetization", "page.tsx")),
     },
+    monitoring: {
+      hasSearchPlatformStatusLib: fs.existsSync(projectPath("lib", "search-platform-status.ts")),
+      hasPlatformStatusApi: fs.existsSync(projectPath("app", "api", "seo", "platform-status", "route.ts")),
+      hasBehaviorAnalyticsConfigured:
+        system.searchPlatforms.analytics.googleAnalytics.configured && system.searchPlatforms.analytics.microsoftClarity.configured,
+      hasManualIndexingList: fs.existsSync(projectPath("content", "automation", "manual-indexing-priority.json")),
+      hasTop50QuestionOptimizationList: fs.existsSync(projectPath("content", "automation", "top-50-q-optimization.json")),
+    },
     latestReports: getLatestReports(),
     latestCommit: getLatestCommit(),
   };
@@ -246,6 +261,15 @@ function rankCandidates(observed: AutonomousObservedState) {
   if (!observed.conversion.hasHireMePage) push("conversion-hire-me-page");
 
   if (observed.seo.growthReadinessScore >= 100 && observed.seo.clicks === null) {
+    if (!observed.monitoring.hasBehaviorAnalyticsConfigured) push("monitoring-ga-clarity-status");
+    if (!observed.monitoring.hasSearchPlatformStatusLib || !observed.monitoring.hasPlatformStatusApi) push("monitoring-gsc-bing-placeholders");
+  }
+
+  if (observed.seo.growthReadinessScore >= 100 && observed.monitoring.hasBehaviorAnalyticsConfigured && observed.monitoring.hasSearchPlatformStatusLib) {
+    if (!observed.monitoring.hasManualIndexingList) push("content-gsc-manual-indexing-list");
+    if (!observed.monitoring.hasTop50QuestionOptimizationList) push("content-top-50-q-optimization");
+    push("content-cn-to-en-expansion-plan");
+  } else {
     push("monitoring-ga-clarity-status");
     push("monitoring-gsc-bing-placeholders");
   }
@@ -253,10 +277,6 @@ function rankCandidates(observed: AutonomousObservedState) {
   if (observed.seo.qPages >= 500 && !observed.conversion.hasServicesPage) {
     push("conversion-services-page");
   }
-
-  push("content-gsc-manual-indexing-list");
-  push("content-top-50-q-optimization");
-  push("content-cn-to-en-expansion-plan");
 
   return [...chosen, ...autonomousTaskPool.filter((task) => !chosen.some((item) => item.id === task.id))];
 }

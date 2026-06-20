@@ -6,6 +6,7 @@ import { tools } from "@/data/tools";
 import type { AutonomousLoopStatus } from "@/lib/autonomous-next-step";
 import { getSeoGrowthReport, type SeoGrowthReport } from "@/lib/seo-growth-monitor";
 import { getClusterPath, getQuestionPath, getSeoGraph, seoClusters, type SeoGraph } from "@/lib/seo-graph";
+import { getSearchPlatformStatus, type SearchPlatformStatus } from "@/lib/search-platform-status";
 
 const root = projectPath();
 const logFile = projectPath("logs", "system.log");
@@ -106,6 +107,7 @@ export type SystemStatus = {
     risingPages: number;
     potentialPages: number;
   };
+  searchPlatforms: SearchPlatformStatus;
   autonomousLoop: AutonomousLoopStatus;
   logs: {
     file: string;
@@ -132,6 +134,7 @@ export function getSystemStatus(): SystemStatus {
   const linkStatus = getLinkStatus(graph);
   const buildStatus = getBuildStatus();
   const performance = getPerformanceStatus(sitemapStatus.urlCount);
+  const searchPlatforms = getSearchPlatformStatus();
   const autonomousLoop = getAutonomousLoopStatusSnapshot();
   const latestLogs = readSystemLog().slice(-10).reverse();
   const errorLogs = readSystemLog().filter((entry) => entry.level === "error").slice(-20).reverse();
@@ -200,6 +203,7 @@ export function getSystemStatus(): SystemStatus {
       risingPages: seoGrowth.signals.risingPages.length,
       potentialPages: seoGrowth.signals.potentialPages.length,
     },
+    searchPlatforms,
     autonomousLoop,
     logs: {
       file: "logs/system.log",
