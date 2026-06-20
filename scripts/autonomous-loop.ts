@@ -10,6 +10,7 @@ import {
   type AutonomousRunStatus,
 } from "../lib/autonomous-next-step";
 import { getEnglishExpansionPlan, getEnglishQDraftFramework } from "../lib/english-expansion-plan";
+import { getHighPotentialKeywordList } from "../lib/high-potential-keywords";
 import { getManualIndexingList } from "../lib/manual-indexing-list";
 import { getQuestionOptimizationList } from "../lib/q-optimization-list";
 
@@ -180,6 +181,9 @@ function executeTask(taskId: string, notes: string[]) {
   }
   if (taskId === "content-english-q-draft-plan") {
     return createEnglishQDraftFramework(notes);
+  }
+  if (taskId === "content-high-potential-keywords") {
+    return createHighPotentialKeywordList(notes);
   }
 
   const artifactPath = path.join(artifactDir, `${taskId}-${formatTimestamp(timestamp)}.json`);
@@ -390,6 +394,55 @@ function createEnglishQDraftFramework(notes: string[]) {
   );
 
   notes.push(`Generated ${framework.drafts.length} English q page draft skeletons without publishing new pages.`);
+  return [
+    path.relative(process.cwd(), jsonPath).replace(/\\/g, "/"),
+    path.relative(process.cwd(), markdownPath).replace(/\\/g, "/"),
+  ];
+}
+
+function createHighPotentialKeywordList(notes: string[]) {
+  const list = getHighPotentialKeywordList(120);
+  const jsonPath = path.join(process.cwd(), "content", "automation", "high-potential-keywords.json");
+  const markdownPath = path.join(process.cwd(), "docs", "high-potential-keywords.md");
+
+  fs.mkdirSync(path.dirname(jsonPath), { recursive: true });
+  fs.mkdirSync(path.dirname(markdownPath), { recursive: true });
+
+  fs.writeFileSync(jsonPath, `${JSON.stringify(list, null, 2)}\n`, "utf8");
+  fs.writeFileSync(
+    markdownPath,
+    [
+      "# High-Potential Keyword List",
+      "",
+      `Generated at: ${list.generatedAt}`,
+      `Total keywords: ${list.total}`,
+      "",
+      `Source: ${list.source}`,
+      "",
+      `Caveat: ${list.caveat}`,
+      "",
+      "## Groups",
+      "",
+      ...list.groups.flatMap((group) => [
+        `### ${group.priority}: ${group.group}`,
+        "",
+        `- Count: ${group.count}`,
+        "- Examples:",
+        ...(group.examples.length ? group.examples.map((example) => `  - ${example}`) : ["  - none"]),
+        "",
+      ]),
+      "## Keywords",
+      "",
+      ...list.keywords.map(
+        (item, index) =>
+          `${index + 1}. [${item.priority}] ${item.keyword}\n   - Intent: ${item.intent}\n   - Source: ${item.sourcePath}\n   - Cluster: ${item.cluster}\n   - Reason: ${item.reason}\n   - Next action: ${item.nextAction}`,
+      ),
+      "",
+    ].join("\n"),
+    "utf8",
+  );
+
+  notes.push(`Generated ${list.total} high-potential keywords from existing q-page priorities without fake volume data.`);
   return [
     path.relative(process.cwd(), jsonPath).replace(/\\/g, "/"),
     path.relative(process.cwd(), markdownPath).replace(/\\/g, "/"),
