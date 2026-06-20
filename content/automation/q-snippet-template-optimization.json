@@ -1,0 +1,97 @@
+{
+  "generatedAt": "2026-06-20T14:36:14.779Z",
+  "purpose": "Improve q page search snippets with problem-first title and description templates.",
+  "rules": [
+    "Preserve the exact question text at the start of the title.",
+    "Add an intent suffix: Fix Guide for error/failure queries, Quick Answer for guide queries.",
+    "Keep metadata linked to q page, cluster hub, and blog deep guide.",
+    "Do not claim ranking, indexing, traffic, or income inside snippets."
+  ],
+  "sampleSize": 12,
+  "examples": [
+    {
+      "path": "/q/ai-tools/agent-observability-logging-guide",
+      "cluster": "AI tools and LLM applications topic hub",
+      "originalTitle": "Agent 可观测性怎么做：日志、轨迹、成本和失败复盘",
+      "titleTemplate": "Agent 可观测性怎么做：日志、轨迹、成本和失败复盘 | Fix Guide, Steps & Risks",
+      "descriptionTemplate": "Solve Agent 可观测性怎么做：日志、轨迹、成本和失败复盘: get the quick answer, step-by-step checks, commands when available, risk notes, related AI tools and LLM applications topic hub questions, and the full deep guide."
+    },
+    {
+      "path": "/q/vercel/agent-production-deployment-checklist",
+      "cluster": "Vercel and web deployment topic hub",
+      "originalTitle": "Agent 生产上线检查表：权限、日志、成本和人工确认",
+      "titleTemplate": "Agent 生产上线检查表：权限、日志、成本和人工确认 | Quick Answer, Steps & Risks",
+      "descriptionTemplate": "Solve Agent 生产上线检查表：权限、日志、成本和人工确认: get the quick answer, step-by-step checks, commands when available, risk notes, related Vercel and web deployment topic hub questions, and the full deep guide."
+    },
+    {
+      "path": "/q/ai-tools/agent-tool-calling-beginner-guide",
+      "cluster": "AI tools and LLM applications topic hub",
+      "originalTitle": "Agent 工具调用怎么设计：读、写、执行要分清",
+      "titleTemplate": "Agent 工具调用怎么设计：读、写、执行要分清 | Quick Answer, Steps & Risks",
+      "descriptionTemplate": "Solve Agent 工具调用怎么设计：读、写、执行要分清: get the quick answer, step-by-step checks, commands when available, risk notes, related AI tools and LLM applications topic hub questions, and the full deep guide."
+    },
+    {
+      "path": "/q/ai-tools/agent-tool-permission-safety-guide",
+      "cluster": "AI tools and LLM applications topic hub",
+      "originalTitle": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志",
+      "titleTemplate": "Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志 | Quick Answer, Steps & Risks",
+      "descriptionTemplate": "Solve Agent 调工具怎么做权限控制：白名单、审批、沙箱和日志: get the quick answer, step-by-step checks, commands when available, risk notes, related AI tools and LLM applications topic hub questions, and the full deep guide."
+    },
+    {
+      "path": "/q/ai-tools/ai-prompt-library-team-knowledge-base-guide",
+      "cluster": "AI tools and LLM applications topic hub",
+      "originalTitle": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用",
+      "titleTemplate": "团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用 | Quick Answer, Steps & Risks",
+      "descriptionTemplate": "Solve 团队 AI 提示词库怎么搭：分类、版本、示例、审核和复用: get the quick answer, step-by-step checks, commands when available, risk notes, related AI tools and LLM applications topic hub questions, and the full deep guide."
+    },
+    {
+      "path": "/q/ai-tools/claude-api-rate-limit-debug-guide",
+      "cluster": "AI tools and LLM applications topic hub",
+      "originalTitle": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级",
+      "titleTemplate": "Claude API Rate limit reached 怎么办：限流、上下文、重试和降级 | Quick Answer, Steps & Risks",
+      "descriptionTemplate": "Solve Claude API Rate limit reached 怎么办：限流、上下文、重试和降级: get the quick answer, step-by-step checks, commands when available, risk notes, related AI tools and LLM applications topic hub questions, and the full deep guide."
+    },
+    {
+      "path": "/q/codex/codex-bugfix-rollback-record",
+      "cluster": "Codex AI coding topic hub",
+      "originalTitle": "Codex 修 bug 时如何保留回滚记录",
+      "titleTemplate": "Codex 修 bug 时如何保留回滚记录 | Quick Answer, Steps & Risks",
+      "descriptionTemplate": "Solve Codex 修 bug 时如何保留回滚记录: get the quick answer, step-by-step checks, commands when available, risk notes, related Codex AI coding topic hub questions, and the full deep guide."
+    },
+    {
+      "path": "/q/codex/codex-npm-install-errors",
+      "cluster": "Codex AI coding topic hub",
+      "originalTitle": "用 Codex 排查 npm install 报错",
+      "titleTemplate": "用 Codex 排查 npm install 报错 | Fix Guide, Steps & Risks",
+      "descriptionTemplate": "Solve 用 Codex 排查 npm install 报错: get the quick answer, step-by-step checks, commands when available, risk notes, related Codex AI coding topic hub questions, and the full deep guide."
+    },
+    {
+      "path": "/q/codex/codex-vercel-deployment",
+      "cluster": "Codex AI coding topic hub",
+      "originalTitle": "用 Codex 检查 Vercel 部署问题",
+      "titleTemplate": "用 Codex 检查 Vercel 部署问题 | Quick Answer, Steps & Risks",
+      "descriptionTemplate": "Solve 用 Codex 检查 Vercel 部署问题: get the quick answer, step-by-step checks, commands when available, risk notes, related Codex AI coding topic hub questions, and the full deep guide."
+    },
+    {
+      "path": "/q/codex/codex-windows-install-failed",
+      "cluster": "Codex AI coding topic hub",
+      "originalTitle": "Windows 上 Codex 安装失败怎么排查",
+      "titleTemplate": "Windows 上 Codex 安装失败怎么排查 | Fix Guide, Steps & Risks",
+      "descriptionTemplate": "Solve Windows 上 Codex 安装失败怎么排查: get the quick answer, step-by-step checks, commands when available, risk notes, related Codex AI coding topic hub questions, and the full deep guide."
+    },
+    {
+      "path": "/q/node-js-errors/dependency-conflict-fix",
+      "cluster": "Node.js errors and engineering issues topic hub",
+      "originalTitle": "dependency conflict 依赖冲突怎么处理",
+      "titleTemplate": "dependency conflict 依赖冲突怎么处理 | Quick Answer, Steps & Risks",
+      "descriptionTemplate": "Solve dependency conflict 依赖冲突怎么处理: get the quick answer, step-by-step checks, commands when available, risk notes, related Node.js errors and engineering issues topic hub questions, and the full deep guide."
+    },
+    {
+      "path": "/q/vercel/dev-works-build-fails",
+      "cluster": "Vercel and web deployment topic hub",
+      "originalTitle": "npm run dev 能跑但 build 失败怎么办",
+      "titleTemplate": "npm run dev 能跑但 build 失败怎么办 | Fix Guide, Steps & Risks",
+      "descriptionTemplate": "Solve npm run dev 能跑但 build 失败怎么办: get the quick answer, step-by-step checks, commands when available, risk notes, related Vercel and web deployment topic hub questions, and the full deep guide."
+    }
+  ]
+}

@@ -78,6 +78,9 @@ export type AutonomousObservedState = {
     hasDeadPageImprovementReport: boolean;
     hasFreshBingIndexNowPlan: boolean;
     hasFreshDomesticSearchAdaptationPlan: boolean;
+    hasFreshQSnippetTemplateReport: boolean;
+    hasQFaqJsonLd: boolean;
+    hasClusterBreadcrumbJsonLd: boolean;
   };
   latestReports: Array<{ path: string; updatedAt: string }>;
   latestCommit: string | null;
@@ -186,6 +189,9 @@ export function getAutonomousObservedState(): AutonomousObservedState {
       hasDeadPageImprovementReport: fs.existsSync(projectPath("content", "automation", "dead-page-improvements.json")),
       hasFreshBingIndexNowPlan: fileGeneratedToday(projectPath("content", "automation", "indexnow-readiness.json")),
       hasFreshDomesticSearchAdaptationPlan: fileGeneratedToday(projectPath("content", "automation", "domestic-search-adaptation-plan.json")),
+      hasFreshQSnippetTemplateReport: fileGeneratedToday(projectPath("content", "automation", "q-snippet-template-optimization.json")),
+      hasQFaqJsonLd: fileContains(projectPath("app", "q", "[category]", "[slug]", "page.tsx"), '"@type": "FAQPage"'),
+      hasClusterBreadcrumbJsonLd: fileContains(projectPath("app", "cluster", "[slug]", "page.tsx"), '"@type": "BreadcrumbList"'),
     },
     latestReports: getLatestReports(),
     latestCommit: getLatestCommit(),
@@ -263,7 +269,7 @@ function rankCandidates(observed: AutonomousObservedState) {
     push("tool-title-generator");
   }
 
-  if ((observed.seo.impressions || 0) > 0 && (observed.seo.clicks || 0) === 0) {
+  if ((observed.seo.impressions || 0) > 0 && (observed.seo.clicks || 0) === 0 && !observed.monitoring.hasFreshQSnippetTemplateReport) {
     push("seo-q-title-template");
     push("seo-q-description-template");
     push("conversion-fix-this-error-cta");
@@ -286,6 +292,7 @@ function rankCandidates(observed: AutonomousObservedState) {
     if (!observed.monitoring.hasDeadPageImprovementReport) push("content-dead-page-improvements");
     if (!observed.monitoring.hasFreshBingIndexNowPlan) push("content-bing-indexnow-plan");
     if (!observed.monitoring.hasFreshDomesticSearchAdaptationPlan) push("content-cn-search-adaptation-plan");
+    if (!observed.monitoring.hasFreshQSnippetTemplateReport) push("seo-q-title-template");
   } else {
     push("monitoring-ga-clarity-status");
     push("monitoring-gsc-bing-placeholders");
@@ -295,7 +302,19 @@ function rankCandidates(observed: AutonomousObservedState) {
     push("conversion-services-page");
   }
 
-  return [...chosen, ...autonomousTaskPool.filter((task) => !chosen.some((item) => item.id === task.id))];
+  return [
+    ...chosen,
+    ...autonomousTaskPool.filter((task) => !chosen.some((item) => item.id === task.id) && !isFreshlyCompletedTask(task.id, observed)),
+  ];
+}
+
+function isFreshlyCompletedTask(taskId: string, observed: AutonomousObservedState) {
+  if ((taskId === "seo-q-title-template" || taskId === "seo-q-description-template") && observed.monitoring.hasFreshQSnippetTemplateReport) return true;
+  if (taskId === "seo-q-faq-jsonld" && observed.monitoring.hasQFaqJsonLd) return true;
+  if (taskId === "seo-cluster-breadcrumb-jsonld" && observed.monitoring.hasClusterBreadcrumbJsonLd) return true;
+  if (taskId === "content-bing-indexnow-plan" && observed.monitoring.hasFreshBingIndexNowPlan) return true;
+  if (taskId === "content-cn-search-adaptation-plan" && observed.monitoring.hasFreshDomesticSearchAdaptationPlan) return true;
+  return false;
 }
 
 function detectBottleneck(observed: AutonomousObservedState) {
@@ -365,6 +384,14 @@ function readJson<T>(file: string): T | null {
 function fileGeneratedToday(file: string) {
   const data = readJson<{ generatedAt?: string }>(file);
   return Boolean(data?.generatedAt && data.generatedAt.slice(0, 10) === new Date().toISOString().slice(0, 10));
+}
+
+function fileContains(file: string, pattern: string) {
+  try {
+    return fs.existsSync(file) && fs.readFileSync(file, "utf8").includes(pattern);
+  } catch {
+    return false;
+  }
 }
 
 function projectPath(...parts: string[]) {

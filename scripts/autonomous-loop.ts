@@ -54,18 +54,19 @@ function main() {
   fs.writeFileSync(reportPath, report, "utf8");
 
   const previous = getAutonomousLoopStatus(mode);
-  const blockedReasons = getBlockedReasonsForRun(execution);
   const isExecutionMode = mode === "execute-low-risk";
+  const nextDecision = isExecutionMode ? decideAutonomousNextStep() : decision;
+  const blockedReasons = getBlockedReasonsForRun(execution, nextDecision.recommendedTask);
   writeAutonomousLoopStatus({
     ...previous,
     mode: isExecutionMode ? mode : previous.mode,
-    currentStage: decision.currentStage,
+    currentStage: nextDecision.currentStage,
     lastRunAt: isExecutionMode ? timestamp.toISOString() : previous.lastRunAt,
     lastTask: isExecutionMode ? decision.recommendedTask.title : previous.lastTask,
     lastStatus: isExecutionMode ? execution.status : previous.lastStatus,
     lastReport: isExecutionMode ? path.relative(process.cwd(), reportPath).replace(/\\/g, "/") : previous.lastReport,
-    nextRecommendedTask: isExecutionMode ? decision.nextThreeCandidates[0]?.title || decision.recommendedTask.title : decision.recommendedTask.title,
-    autoExecuteAllowed: decision.recommendedTask.allowedToAutoExecute && decision.recommendedTask.riskLevel === "low" && blockedReasons.length === 0,
+    nextRecommendedTask: nextDecision.recommendedTask.title,
+    autoExecuteAllowed: nextDecision.recommendedTask.allowedToAutoExecute && nextDecision.recommendedTask.riskLevel === "low" && blockedReasons.length === 0,
     blockedReasons,
     guardrails: getAutonomousGuardrails(),
   });
@@ -195,6 +196,9 @@ function executeTask(taskId: string, notes: string[]) {
   }
   if (taskId === "content-cn-search-adaptation-plan") {
     return createDomesticSearchAdaptationPlan(notes);
+  }
+  if (taskId === "seo-q-title-template" || taskId === "seo-q-description-template") {
+    return createQSnippetTemplateReport(notes);
   }
 
   const artifactPath = path.join(artifactDir, `${taskId}-${formatTimestamp(timestamp)}.json`);
@@ -570,6 +574,70 @@ function createDomesticSearchAdaptationPlan(notes: string[]) {
   ];
 }
 
+function createQSnippetTemplateReport(notes: string[]) {
+  const list = getQuestionOptimizationList(30);
+  const generatedAt = new Date().toISOString();
+  const examples = list.items.slice(0, 12).map((item) => ({
+    path: item.path,
+    cluster: item.cluster,
+    originalTitle: item.title,
+    titleTemplate: `${item.title} | ${/报错|失败|错误|error|fail|failed/i.test(item.title) ? "Fix Guide, Steps & Risks" : "Quick Answer, Steps & Risks"}`,
+    descriptionTemplate:
+      `Solve ${item.title}: get the quick answer, step-by-step checks, commands when available, risk notes, related ${item.cluster} questions, and the full deep guide.`,
+  }));
+  const report = {
+    generatedAt,
+    purpose: "Improve q page search snippets with problem-first title and description templates.",
+    rules: [
+      "Preserve the exact question text at the start of the title.",
+      "Add an intent suffix: Fix Guide for error/failure queries, Quick Answer for guide queries.",
+      "Keep metadata linked to q page, cluster hub, and blog deep guide.",
+      "Do not claim ranking, indexing, traffic, or income inside snippets.",
+    ],
+    sampleSize: examples.length,
+    examples,
+  };
+  const jsonPath = path.join(process.cwd(), "content", "automation", "q-snippet-template-optimization.json");
+  const markdownPath = path.join(process.cwd(), "docs", "q-snippet-template-optimization.md");
+
+  fs.mkdirSync(path.dirname(jsonPath), { recursive: true });
+  fs.mkdirSync(path.dirname(markdownPath), { recursive: true });
+  fs.writeFileSync(jsonPath, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  fs.writeFileSync(
+    markdownPath,
+    [
+      "# Q Snippet Template Optimization",
+      "",
+      `Generated at: ${generatedAt}`,
+      "",
+      "## Purpose",
+      "",
+      report.purpose,
+      "",
+      "## Rules",
+      "",
+      ...report.rules.map((rule) => `- ${rule}`),
+      "",
+      "## Examples",
+      "",
+      "| Path | Cluster | Title template | Description template |",
+      "| --- | --- | --- | --- |",
+      ...examples.map(
+        (item) =>
+          `| ${item.path} | ${escapeMarkdownCell(item.cluster)} | ${escapeMarkdownCell(item.titleTemplate)} | ${escapeMarkdownCell(item.descriptionTemplate)} |`,
+      ),
+      "",
+    ].join("\n"),
+    "utf8",
+  );
+
+  notes.push(`Optimized q page snippet templates and recorded ${examples.length} real q page examples.`);
+  return [
+    path.relative(process.cwd(), jsonPath).replace(/\\/g, "/"),
+    path.relative(process.cwd(), markdownPath).replace(/\\/g, "/"),
+  ];
+}
+
 function renderImprovementTable(items: ReturnType<typeof getDeadPageImprovementReport>["deadPages"]) {
   if (!items.length) return "| Path | Type | Links | Reason |\n| --- | --- | --- | --- |\n| none | none | none | none |";
   return [
@@ -838,10 +906,10 @@ function checkFileGuardrails(files: string[]) {
   return "";
 }
 
-function getBlockedReasonsForRun(execution: ExecutionResult) {
+function getBlockedReasonsForRun(execution: ExecutionResult, nextTask = decision.recommendedTask) {
   const reasons: string[] = [];
-  if (decision.recommendedTask.riskLevel !== "low") reasons.push("Recommended task is not low risk.");
-  if (!decision.recommendedTask.allowedToAutoExecute) reasons.push("Recommended task is not allowed for auto execution.");
+  if (nextTask.riskLevel !== "low") reasons.push("Recommended task is not low risk.");
+  if (!nextTask.allowedToAutoExecute) reasons.push("Recommended task is not allowed for auto execution.");
   if (execution.status === "failed") reasons.push("Latest run failed verification or guardrails.");
   return reasons;
 }
