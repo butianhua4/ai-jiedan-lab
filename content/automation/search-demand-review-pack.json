@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T06:27:54.034Z",
+  "generatedAt": "2026-06-21T10:53:32.472Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,7 +10,7 @@
     "stopBefore": "All commands are manual-only and require explicit human approval."
   },
   "sourceEvidence": {
-    "intakeGeneratedAt": "2026-06-21T06:27:53.551Z",
+    "intakeGeneratedAt": "2026-06-21T10:53:32.000Z",
     "intakeGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T06:27:44.158Z",
+  "generatedAt": "2026-06-21T10:53:22.800Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "searchSnippetAuditGeneratedAt": "2026-06-21T06:27:43.001Z",
+    "searchSnippetAuditGeneratedAt": "2026-06-21T10:53:21.679Z",
     "searchSnippetSummary": {
       "blockingItems": 0,
       "expansionItems": 15,
@@ -20,7 +20,7 @@
       "waveItems": 3,
       "waveItemsWithBlockingIssues": 0
     },
-    "structuredDataAuditGeneratedAt": "2026-06-21T06:27:43.655Z",
+    "structuredDataAuditGeneratedAt": "2026-06-21T10:53:22.311Z",
     "structuredDataSummary": {
       "blockingItems": 0,
       "expansionItems": 15,

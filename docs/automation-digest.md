@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-21T06:29:02.527Z
+Generated at: 2026-06-21T10:54:38.879Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -2898,7 +2898,7 @@ Public categories:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-21T06:28:51.390Z
+- Latest check: 2026-06-21T10:54:28.092Z
 - Ok: true
 - Public articles checked: 500
 - Sitemap URLs: undefined
