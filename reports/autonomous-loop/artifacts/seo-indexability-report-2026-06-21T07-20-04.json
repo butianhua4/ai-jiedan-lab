@@ -1,0 +1,163 @@
+{
+  "generatedAt": "2026-06-21T07:20:04.750Z",
+  "taskId": "seo-indexability-report",
+  "decision": {
+    "currentStage": "cold_start",
+    "mainBottleneck": "Build output is not healthy.",
+    "recommendedTask": {
+      "id": "seo-indexability-report",
+      "type": "seo",
+      "priority": "P1",
+      "title": "Add indexability report",
+      "reason": "Create an auditable indexability queue.",
+      "expectedImpact": "Faster diagnosis of pages that should be submitted.",
+      "riskLevel": "low",
+      "allowedToAutoExecute": true,
+      "executionKind": "report"
+    },
+    "nextThreeCandidates": [
+      {
+        "id": "seo-robots-check",
+        "type": "seo",
+        "priority": "P1",
+        "title": "Add robots check",
+        "reason": "Catch accidental crawl blocking.",
+        "expectedImpact": "Lower indexability risk.",
+        "riskLevel": "low",
+        "allowedToAutoExecute": true,
+        "executionKind": "report"
+      },
+      {
+        "id": "seo-canonical-check",
+        "type": "seo",
+        "priority": "P1",
+        "title": "Add canonical check",
+        "reason": "Catch duplicate or missing canonical issues.",
+        "expectedImpact": "Lower duplicate-content risk.",
+        "riskLevel": "low",
+        "allowedToAutoExecute": true,
+        "executionKind": "report"
+      },
+      {
+        "id": "content-cn-search-adaptation-plan",
+        "type": "content",
+        "priority": "P4",
+        "title": "Generate domestic search adaptation plan",
+        "reason": "Handle China access/search differences without DNS changes.",
+        "expectedImpact": "Lower domestic discoverability risk.",
+        "riskLevel": "low",
+        "allowedToAutoExecute": true,
+        "executionKind": "report"
+      }
+    ],
+    "observed": {
+      "generatedAt": "2026-06-21T07:20:04.747Z",
+      "system": {
+        "healthScore": 80,
+        "buildSuccess": false,
+        "sitemapNormal": true,
+        "noErrors": true,
+        "mode": "dev"
+      },
+      "seo": {
+        "totalPages": 1006,
+        "qPages": 500,
+        "blogPages": 500,
+        "clusterPages": 6,
+        "orphanPages": 0,
+        "weakPages": 0,
+        "internalLinkHealth": 100,
+        "growthReadinessScore": 100,
+        "seoScore": 100,
+        "indexedPages": null,
+        "impressions": null,
+        "clicks": null
+      },
+      "graph": {
+        "nodeCount": 1006,
+        "edgeCount": 9572,
+        "internalLinksComplete": true
+      },
+      "sitemap": {
+        "urlCount": 1511,
+        "ok": true
+      },
+      "content": {
+        "published": 500,
+        "draft": 148,
+        "noindex": 169
+      },
+      "tools": {
+        "count": 20,
+        "staticToolPages": 33
+      },
+      "conversion": {
+        "hasServicesPage": true,
+        "hasHireMePage": true,
+        "hasContactPage": true,
+        "hasTemplatePage": true,
+        "hasMonetizationPage": true
+      },
+      "monitoring": {
+        "hasSearchPlatformStatusLib": true,
+        "hasPlatformStatusApi": true,
+        "hasBehaviorAnalyticsConfigured": true,
+        "hasManualIndexingList": true,
+        "hasTop50QuestionOptimizationList": true,
+        "hasEnglishExpansionPlan": true,
+        "hasEnglishQDraftFramework": true,
+        "hasHighPotentialKeywordList": true,
+        "hasDeadPageImprovementReport": true,
+        "hasFreshBingIndexNowPlan": true,
+        "hasFreshDomesticSearchAdaptationPlan": false,
+        "hasFreshQSnippetTemplateReport": false,
+        "hasQFaqJsonLd": true,
+        "hasClusterBreadcrumbJsonLd": true
+      },
+      "latestReports": [
+        {
+          "path": "reports/autonomous-loop/2026-06-19T17-57-51.md",
+          "updatedAt": "2026-06-21T07:19:47.203Z"
+        },
+        {
+          "path": "reports/autonomous-loop/2026-06-19T18-01-13.md",
+          "updatedAt": "2026-06-21T07:19:47.203Z"
+        },
+        {
+          "path": "reports/autonomous-loop/2026-06-19T18-01-14.md",
+          "updatedAt": "2026-06-21T07:19:47.203Z"
+        },
+        {
+          "path": "reports/autonomous-loop/2026-06-19T18-05-13.md",
+          "updatedAt": "2026-06-21T07:19:47.203Z"
+        },
+        {
+          "path": "reports/autonomous-loop/2026-06-20-platform-closure.md",
+          "updatedAt": "2026-06-21T07:19:47.203Z"
+        },
+        {
+          "path": "reports/autonomous-loop/2026-06-20T06-48-41.md",
+          "updatedAt": "2026-06-21T07:19:47.203Z"
+        },
+        {
+          "path": "reports/autonomous-loop/2026-06-20T12-10-12.md",
+          "updatedAt": "2026-06-21T07:19:47.203Z"
+        },
+        {
+          "path": "reports/autonomous-loop/2026-06-20T12-14-23.md",
+          "updatedAt": "2026-06-21T07:19:47.203Z"
+        },
+        {
+          "path": "reports/autonomous-loop/2026-06-20T12-18-02.md",
+          "updatedAt": "2026-06-21T07:19:47.203Z"
+        },
+        {
+          "path": "reports/autonomous-loop/2026-06-20T12-25-57.md",
+          "updatedAt": "2026-06-21T07:19:47.203Z"
+        }
+      ],
+      "latestCommit": "25b775ff412c"
+    }
+  },
+  "note": "This task does not have a safe source-change executor yet, so the autonomous loop created an auditable planning artifact instead of pretending the task was completed."
+}
