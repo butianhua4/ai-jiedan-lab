@@ -1,6 +1,6 @@
 # Next Batch Approval Route
 
-Generated at: 2026-06-21T10:54:03.283Z
+Generated at: 2026-06-21T15:28:53.222Z
 
 This report is read-only. It converts the manual review workbench next batch into per-article approval routes without editing articles or changing publishing state.
 

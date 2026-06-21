@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T10:53:52.053Z",
+  "generatedAt": "2026-06-21T15:28:41.553Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -18,15 +18,15 @@
       "checkedUrls": 14,
       "broadFirstCoverageFiles": 0,
       "currentReviewFiles": 3,
-      "failedUrls": 0,
+      "failedUrls": 1,
       "filesCovered": 16,
       "filesWithReachableSource": 16,
       "filesWithoutReachableSource": 0,
       "missingUrlTargets": 0,
       "nextSourcePackFiles": 15,
-      "okUrls": 14,
+      "okUrls": 13,
       "publicGapDecisionFiles": 0,
-      "redirectedUrls": 10,
+      "redirectedUrls": 9,
       "sourceReferences": 86,
       "uniqueUrls": 14
     },

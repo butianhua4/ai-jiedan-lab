@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-21T10:54:38.386Z",
+  "generatedAt": "2026-06-21T15:29:30.783Z",
   "ok": false,
   "summary": {
     "checks": 197,
-    "failed": 49,
-    "passed": 148
+    "failed": 51,
+    "passed": 146
   },
   "failed": [
     {
@@ -31,6 +31,16 @@
       "name": "internal link sprint board covers all linkable candidates",
       "ok": false,
       "detail": "items=16, waves=4, public=500, suggestions=48"
+    },
+    {
+      "name": "source target remediation pack keeps every source fix human-gated",
+      "ok": false,
+      "detail": "ready=9, unsafe=1, gated=10, replacementCandidates=0"
+    },
+    {
+      "name": "source replacement decision pack keeps file-level decisions human-gated",
+      "ok": false,
+      "detail": "unsafe=2, gated=71, recommended=0, official=0"
     },
     {
       "name": "review action board tasks are ready and preserve command boundaries",
@@ -426,27 +436,27 @@
     {
       "name": "source target health audit has reachable URLs for every covered review file",
       "ok": true,
-      "detail": "checked=14, ok=14, failed=0, missingTargets=0, filesWithoutReachable=0"
+      "detail": "checked=14, ok=13, failed=1, missingTargets=0, filesWithoutReachable=0"
     },
     {
       "name": "source target remediation pack is read-only and mirrors source health counts",
       "ok": true,
-      "detail": "items=10, failed=0/0, redirected=10/10"
+      "detail": "items=10, failed=1/1, redirected=9/9"
     },
     {
       "name": "source target remediation pack keeps every source fix human-gated",
-      "ok": true,
-      "detail": "ready=10, unsafe=0, gated=10, replacementCandidates=0"
+      "ok": false,
+      "detail": "ready=9, unsafe=1, gated=10, replacementCandidates=0"
     },
     {
       "name": "source replacement decision pack is read-only and mirrors remediation counts",
       "ok": true,
-      "detail": "decisions=71, remediation=10, failed=0/0, redirected=71/10"
+      "detail": "decisions=71, remediation=10, failed=2/1, redirected=69/9"
     },
     {
       "name": "source replacement decision pack keeps file-level decisions human-gated",
-      "ok": true,
-      "detail": "unsafe=0, gated=71, recommended=0, official=0"
+      "ok": false,
+      "detail": "unsafe=2, gated=71, recommended=0, official=0"
     },
     {
       "name": "review action board is read-only and covers active review queues",

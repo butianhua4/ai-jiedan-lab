@@ -1,6 +1,6 @@
 # Autopilot Approval Remediation Pack
 
-Generated at: 2026-06-21T10:53:52.989Z
+Generated at: 2026-06-21T15:28:42.536Z
 
 This report is read-only. It consolidates approval-packet search, internal-link, source, and copydesk fixes before human review.
 
@@ -45,8 +45,8 @@ This report is read-only. It consolidates approval-packet search, internal-link,
 - searchWeakItems: 3
 - sourceVerificationUnsafeItems: 0
 - sourceTargetRemediationItems: 10
-- sourceTargetRemediationUnsafeItems: 0
-- sourceTargetRemediationManualFixReadyItems: 10
+- sourceTargetRemediationUnsafeItems: 1
+- sourceTargetRemediationManualFixReadyItems: 9
 - approvalItemsWithSourceUrlRemediation: 3
 - humanReviewPlaybookUnsafeItems: 2
 
@@ -119,7 +119,7 @@ Source checks:
 - Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.
-- Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs.
+- Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=de.
 - Open source URL: https://platform.openai.com/docs.
 - Open source URL: https://ai-sdk.dev/docs.
 - Open source URL: https://docs.anthropic.com.
@@ -154,7 +154,7 @@ Source URL fixes:
 - Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.
-- Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs.
+- Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=de.
 
 Human checklist:
 

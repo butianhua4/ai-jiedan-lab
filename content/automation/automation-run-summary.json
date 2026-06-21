@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T10:54:08.773Z",
+  "generatedAt": "2026-06-21T15:28:58.931Z",
   "failures": [
     "Generate search intent lane map exited 1",
     "Generate search intent approval packet exited 1",
@@ -9,6 +9,8 @@
     "Generate popular AI prompt playbook exited 1",
     "Generate popular prompt approval bridge exited 1",
     "Generate popular prompt sprint board exited 1",
+    "Generate source target remediation pack exited 1",
+    "Generate source replacement decision pack exited 1",
     "Generate review action board exited 1",
     "Generate autopilot human review playbook exited 1",
     "Generate autopilot approval remediation pack exited 1",

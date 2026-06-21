@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T10:53:59.941Z",
+  "generatedAt": "2026-06-21T15:28:49.732Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "broadWaveOptimizationGeneratedAt": "2026-06-21T10:53:59.473Z",
+    "broadWaveOptimizationGeneratedAt": "2026-06-21T15:28:49.240Z",
     "broadWaveOptimizationGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,

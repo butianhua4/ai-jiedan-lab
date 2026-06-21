@@ -1,14 +1,14 @@
 # Automation Gate
 
-Generated at: 2026-06-21T10:54:38.386Z
+Generated at: 2026-06-21T15:29:30.783Z
 
 Overall: FAIL
 
 ## Summary
 
 - Checks: 197
-- Passed: 148
-- Failed: 49
+- Passed: 146
+- Failed: 51
 
 ## Checks
 
@@ -48,11 +48,11 @@ Overall: FAIL
 | internal link sprint board covers all linkable candidates | FAIL | items=16, waves=4, public=500, suggestions=48 |
 | internal link sprint board keeps link edits manual and publish-safe | PASS | ready=16, actions=128, unsafe=0, publishConfirm=0 |
 | source target health audit is read-only and covers review source scopes | PASS | broadFirst=0, current=3, publicGap=0, next=15, files=16 |
-| source target health audit has reachable URLs for every covered review file | PASS | checked=14, ok=14, failed=0, missingTargets=0, filesWithoutReachable=0 |
-| source target remediation pack is read-only and mirrors source health counts | PASS | items=10, failed=0/0, redirected=10/10 |
-| source target remediation pack keeps every source fix human-gated | PASS | ready=10, unsafe=0, gated=10, replacementCandidates=0 |
-| source replacement decision pack is read-only and mirrors remediation counts | PASS | decisions=71, remediation=10, failed=0/0, redirected=71/10 |
-| source replacement decision pack keeps file-level decisions human-gated | PASS | unsafe=0, gated=71, recommended=0, official=0 |
+| source target health audit has reachable URLs for every covered review file | PASS | checked=14, ok=13, failed=1, missingTargets=0, filesWithoutReachable=0 |
+| source target remediation pack is read-only and mirrors source health counts | PASS | items=10, failed=1/1, redirected=9/9 |
+| source target remediation pack keeps every source fix human-gated | FAIL | ready=9, unsafe=1, gated=10, replacementCandidates=0 |
+| source replacement decision pack is read-only and mirrors remediation counts | PASS | decisions=71, remediation=10, failed=2/1, redirected=69/9 |
+| source replacement decision pack keeps file-level decisions human-gated | FAIL | unsafe=2, gated=71, recommended=0, official=0 |
 | review action board is read-only and covers active review queues | PASS | tasks=3, wave=3, publicGap=0 |
 | review action board tasks are ready and preserve command boundaries | FAIL | ready=2, unsafe=1 |
 | review portfolio board deduplicates all review packs | PASS | sourceCandidates=9, uniqueItems=8, duplicates=1, multiSource=1 |

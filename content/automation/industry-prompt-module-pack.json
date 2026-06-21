@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T10:53:37.240Z",
+  "generatedAt": "2026-06-21T15:28:15.210Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -39,7 +39,7 @@
       "https://support.google.com/docs/answer/15013615",
       "https://adoption.microsoft.com/en-us/copilot/prompt-gallery/"
     ],
-    "opportunityBoardGeneratedAt": "2026-06-21T10:53:36.744Z",
+    "opportunityBoardGeneratedAt": "2026-06-21T15:28:14.711Z",
     "reviewPackItems": 0,
     "reviewPackSafeDraftItems": 0,
     "searchDate": "2026-06-07",

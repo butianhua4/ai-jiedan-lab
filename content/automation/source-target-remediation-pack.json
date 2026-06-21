@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T10:53:42.185Z",
+  "generatedAt": "2026-06-21T15:28:31.396Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "sourceHealthGeneratedAt": "2026-06-21T10:53:41.718Z",
+    "sourceHealthGeneratedAt": "2026-06-21T15:28:30.913Z",
     "sourceHealthGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -21,22 +21,22 @@
       "checkedUrls": 14,
       "broadFirstCoverageFiles": 0,
       "currentReviewFiles": 3,
-      "failedUrls": 0,
+      "failedUrls": 1,
       "filesCovered": 16,
       "filesWithReachableSource": 16,
       "filesWithoutReachableSource": 0,
       "missingUrlTargets": 0,
       "nextSourcePackFiles": 15,
-      "okUrls": 14,
+      "okUrls": 13,
       "publicGapDecisionFiles": 0,
-      "redirectedUrls": 10,
+      "redirectedUrls": 9,
       "sourceReferences": 86,
       "uniqueUrls": 14
     }
   },
   "summary": {
-    "failedUrlItems": 0,
-    "failedUrls": 0,
+    "failedUrlItems": 1,
+    "failedUrls": 1,
     "humanGatedItems": 10,
     "items": 10,
     "itemsWithAffectedFiles": 10,
@@ -45,19 +45,146 @@
     "itemsWithReplacementCandidates": 0,
     "itemsWithReferences": 10,
     "itemsWithReplacementPlan": 10,
-    "manualFixReadyItems": 10,
+    "manualFixReadyItems": 9,
     "failedItemsWithReplacementCandidates": 0,
     "replacementCandidateOptions": 0,
-    "redirectedUrlItems": 10,
-    "redirectedUrls": 10,
+    "redirectedUrlItems": 9,
+    "redirectedUrls": 9,
     "sourceHealthCheckedUrls": 14,
-    "sourceHealthFailedUrls": 0,
-    "sourceHealthRedirectedUrls": 10,
+    "sourceHealthFailedUrls": 1,
+    "sourceHealthRedirectedUrls": 9,
     "trafficDataAvailable": false,
-    "unsafeItems": 0
+    "unsafeItems": 1
   },
-  "unsafeItems": [],
+  "unsafeItems": [
+    {
+      "affectedFiles": [
+        "content/blog/tensorrt-llm-beginner-guide.mdx",
+        "content/blog/vllm-deployment-beginner-guide.mdx"
+      ],
+      "affectedScopes": [
+        "next-source-pack"
+      ],
+      "affectedTitles": [
+        "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
+        "vLLM 部署适合什么场景：新手先看推理服务边界"
+      ],
+      "error": "TimeoutError",
+      "humanChecklist": [
+        "Review URL: https://docs.vllm.ai.",
+        "Automation error observed: TimeoutError.",
+        "Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.",
+        "If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.",
+        "Confirm every affected draft still has at least one reachable source for the claim family before mark:review.",
+        "Do not approve a fast-changing AI, SDK, deployment, pricing, or model claim if it depends only on this failed URL.",
+        "Prefer another reachable official source already present for the same affected file when it covers the same claim.",
+        "If no existing source covers the claim, manually find a current official source before approval.",
+        "If no reliable source exists, rewrite or remove the dependent claim instead of substituting a weak source.",
+        "Keep article status, noindex, and humanReviewRequired unchanged until explicit approval.",
+        "Publishing remains separate and is not included in this remediation pack."
+      ],
+      "kind": "failed-url",
+      "manualActions": [
+        "Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.",
+        "If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.",
+        "Confirm every affected draft still has at least one reachable source for the claim family before mark:review.",
+        "Do not approve a fast-changing AI, SDK, deployment, pricing, or model claim if it depends only on this failed URL."
+      ],
+      "manualFixReady": false,
+      "referenceCount": 2,
+      "references": [
+        {
+          "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
+          "label": "vLLM docs: https://docs.vllm.ai",
+          "scope": "next-source-pack",
+          "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/vllm-deployment-beginner-guide.mdx",
+          "label": "vLLM docs: https://docs.vllm.ai",
+          "scope": "next-source-pack",
+          "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
+          "url": "https://docs.vllm.ai"
+        }
+      ],
+      "replacementCandidates": [],
+      "replacementPlan": [
+        "Prefer another reachable official source already present for the same affected file when it covers the same claim.",
+        "If no existing source covers the claim, manually find a current official source before approval.",
+        "If no reliable source exists, rewrite or remove the dependent claim instead of substituting a weak source."
+      ],
+      "stopBefore": "Stop before human approval if this failed URL is the only evidence for any fast-changing claim.",
+      "unsafeReasons": [
+        "failed URL has no concrete replacement candidates"
+      ],
+      "url": "https://docs.vllm.ai"
+    }
+  ],
   "items": [
+    {
+      "affectedFiles": [
+        "content/blog/tensorrt-llm-beginner-guide.mdx",
+        "content/blog/vllm-deployment-beginner-guide.mdx"
+      ],
+      "affectedScopes": [
+        "next-source-pack"
+      ],
+      "affectedTitles": [
+        "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
+        "vLLM 部署适合什么场景：新手先看推理服务边界"
+      ],
+      "error": "TimeoutError",
+      "humanChecklist": [
+        "Review URL: https://docs.vllm.ai.",
+        "Automation error observed: TimeoutError.",
+        "Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.",
+        "If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.",
+        "Confirm every affected draft still has at least one reachable source for the claim family before mark:review.",
+        "Do not approve a fast-changing AI, SDK, deployment, pricing, or model claim if it depends only on this failed URL.",
+        "Prefer another reachable official source already present for the same affected file when it covers the same claim.",
+        "If no existing source covers the claim, manually find a current official source before approval.",
+        "If no reliable source exists, rewrite or remove the dependent claim instead of substituting a weak source.",
+        "Keep article status, noindex, and humanReviewRequired unchanged until explicit approval.",
+        "Publishing remains separate and is not included in this remediation pack."
+      ],
+      "kind": "failed-url",
+      "manualActions": [
+        "Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.",
+        "If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.",
+        "Confirm every affected draft still has at least one reachable source for the claim family before mark:review.",
+        "Do not approve a fast-changing AI, SDK, deployment, pricing, or model claim if it depends only on this failed URL."
+      ],
+      "manualFixReady": false,
+      "referenceCount": 2,
+      "references": [
+        {
+          "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
+          "label": "vLLM docs: https://docs.vllm.ai",
+          "scope": "next-source-pack",
+          "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/vllm-deployment-beginner-guide.mdx",
+          "label": "vLLM docs: https://docs.vllm.ai",
+          "scope": "next-source-pack",
+          "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
+          "url": "https://docs.vllm.ai"
+        }
+      ],
+      "replacementCandidates": [],
+      "replacementPlan": [
+        "Prefer another reachable official source already present for the same affected file when it covers the same claim.",
+        "If no existing source covers the claim, manually find a current official source before approval.",
+        "If no reliable source exists, rewrite or remove the dependent claim instead of substituting a weak source."
+      ],
+      "stopBefore": "Stop before human approval if this failed URL is the only evidence for any fast-changing claim.",
+      "unsafeReasons": [
+        "failed URL has no concrete replacement candidates"
+      ],
+      "url": "https://docs.vllm.ai"
+    },
     {
       "affectedFiles": [
         "content/blog/tools-not-to-buy-first.mdx",
@@ -962,10 +1089,10 @@
       "affectedTitles": [
         "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
       ],
-      "finalUrl": "https://ai.google.dev/gemini-api/docs",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=de",
       "humanChecklist": [
         "Review URL: https://ai.google.dev/docs.",
-        "Review final URL: https://ai.google.dev/gemini-api/docs.",
+        "Review final URL: https://ai.google.dev/gemini-api/docs?hl=de.",
         "HTTP status observed by automation: 200.",
         "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
         "If the final URL is the canonical destination, update the source target during human review.",
@@ -1075,69 +1202,6 @@
       "stopBefore": "Stop before human approval until a reviewer confirms the final redirected URL is canonical and content-equivalent.",
       "unsafeReasons": [],
       "url": "https://docs.llamaindex.ai"
-    },
-    {
-      "affectedFiles": [
-        "content/blog/tensorrt-llm-beginner-guide.mdx",
-        "content/blog/vllm-deployment-beginner-guide.mdx"
-      ],
-      "affectedScopes": [
-        "next-source-pack"
-      ],
-      "affectedTitles": [
-        "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
-        "vLLM 部署适合什么场景：新手先看推理服务边界"
-      ],
-      "finalUrl": "https://docs.vllm.ai/en/latest/",
-      "humanChecklist": [
-        "Review URL: https://docs.vllm.ai.",
-        "Review final URL: https://docs.vllm.ai/en/latest/.",
-        "HTTP status observed by automation: 200.",
-        "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
-        "If the final URL is the canonical destination, update the source target during human review.",
-        "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
-        "Confirm the affected draft still cites source material that matches its implementation-sensitive claims.",
-        "Prefer the final URL when it is canonical, current, and content-equivalent.",
-        "Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
-        "Replace the source if the redirect weakens specificity or points to a general landing page.",
-        "Keep article status, noindex, and humanReviewRequired unchanged until explicit approval.",
-        "Publishing remains separate and is not included in this remediation pack."
-      ],
-      "kind": "redirected-url",
-      "manualActions": [
-        "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
-        "If the final URL is the canonical destination, update the source target during human review.",
-        "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
-        "Confirm the affected draft still cites source material that matches its implementation-sensitive claims."
-      ],
-      "manualFixReady": true,
-      "referenceCount": 2,
-      "references": [
-        {
-          "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
-          "label": "vLLM docs: https://docs.vllm.ai",
-          "scope": "next-source-pack",
-          "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
-          "url": "https://docs.vllm.ai"
-        },
-        {
-          "file": "content/blog/vllm-deployment-beginner-guide.mdx",
-          "label": "vLLM docs: https://docs.vllm.ai",
-          "scope": "next-source-pack",
-          "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
-          "url": "https://docs.vllm.ai"
-        }
-      ],
-      "replacementCandidates": [],
-      "replacementPlan": [
-        "Prefer the final URL when it is canonical, current, and content-equivalent.",
-        "Keep the original URL only if the redirect is intentionally stable and the source target is still reviewer-friendly.",
-        "Replace the source if the redirect weakens specificity or points to a general landing page."
-      ],
-      "status": 200,
-      "stopBefore": "Stop before human approval until a reviewer confirms the final redirected URL is canonical and content-equivalent.",
-      "unsafeReasons": [],
-      "url": "https://docs.vllm.ai"
     },
     {
       "affectedFiles": [

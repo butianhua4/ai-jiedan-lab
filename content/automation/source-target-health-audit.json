@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T10:53:41.718Z",
+  "generatedAt": "2026-06-21T15:28:30.913Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -11,21 +11,43 @@
     "checkedUrls": 14,
     "broadFirstCoverageFiles": 0,
     "currentReviewFiles": 3,
-    "failedUrls": 0,
+    "failedUrls": 1,
     "filesCovered": 16,
     "filesWithReachableSource": 16,
     "filesWithoutReachableSource": 0,
     "missingUrlTargets": 0,
     "nextSourcePackFiles": 15,
-    "okUrls": 14,
+    "okUrls": 13,
     "publicGapDecisionFiles": 0,
-    "redirectedUrls": 10,
+    "redirectedUrls": 9,
     "sourceReferences": 86,
     "uniqueUrls": 14
   },
   "missingUrlTargets": [],
   "filesWithoutReachableSource": [],
-  "failedChecks": [],
+  "failedChecks": [
+    {
+      "error": "TimeoutError",
+      "ok": false,
+      "references": [
+        {
+          "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
+          "label": "vLLM docs: https://docs.vllm.ai",
+          "scope": "next-source-pack",
+          "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
+          "url": "https://docs.vllm.ai"
+        },
+        {
+          "file": "content/blog/vllm-deployment-beginner-guide.mdx",
+          "label": "vLLM docs: https://docs.vllm.ai",
+          "scope": "next-source-pack",
+          "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
+          "url": "https://docs.vllm.ai"
+        }
+      ],
+      "url": "https://docs.vllm.ai"
+    }
+  ],
   "redirectedChecks": [
     {
       "finalUrl": "https://ai-sdk.dev/docs/introduction",
@@ -155,7 +177,7 @@
       "url": "https://ai-sdk.dev/docs"
     },
     {
-      "finalUrl": "https://ai.google.dev/gemini-api/docs",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=de",
       "ok": true,
       "references": [
         {
@@ -282,28 +304,6 @@
       ],
       "status": 200,
       "url": "https://docs.llamaindex.ai"
-    },
-    {
-      "finalUrl": "https://docs.vllm.ai/en/latest/",
-      "ok": true,
-      "references": [
-        {
-          "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
-          "label": "vLLM docs: https://docs.vllm.ai",
-          "scope": "next-source-pack",
-          "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
-          "url": "https://docs.vllm.ai"
-        },
-        {
-          "file": "content/blog/vllm-deployment-beginner-guide.mdx",
-          "label": "vLLM docs: https://docs.vllm.ai",
-          "scope": "next-source-pack",
-          "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
-          "url": "https://docs.vllm.ai"
-        }
-      ],
-      "status": 200,
-      "url": "https://docs.vllm.ai"
     },
     {
       "finalUrl": "https://developers.openai.com/api/docs",
@@ -689,7 +689,7 @@
     },
     {
       "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
-      "reachableSources": 5,
+      "reachableSources": 4,
       "scopes": [
         "next-source-pack"
       ],
@@ -854,7 +854,7 @@
     },
     {
       "file": "content/blog/vllm-deployment-beginner-guide.mdx",
-      "reachableSources": 7,
+      "reachableSources": 6,
       "scopes": [
         "next-source-pack"
       ],
@@ -1049,7 +1049,7 @@
       "url": "https://ai-sdk.dev/docs"
     },
     {
-      "finalUrl": "https://ai.google.dev/gemini-api/docs",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=de",
       "ok": true,
       "references": [
         {
@@ -1237,8 +1237,8 @@
       "url": "https://docs.ollama.com"
     },
     {
-      "finalUrl": "https://docs.vllm.ai/en/latest/",
-      "ok": true,
+      "error": "TimeoutError",
+      "ok": false,
       "references": [
         {
           "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
@@ -1255,7 +1255,6 @@
           "url": "https://docs.vllm.ai"
         }
       ],
-      "status": 200,
       "url": "https://docs.vllm.ai"
     },
     {

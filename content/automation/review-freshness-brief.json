@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T10:53:47.552Z",
+  "generatedAt": "2026-06-21T15:28:36.877Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -16,7 +16,7 @@
       "stopBefore": "Every mark:review command requires explicit human approval. publish --confirm commands are intentionally not included."
     },
     "actionBoardReadyTasks": 2,
-    "contentFreshnessGeneratedAt": "2026-06-21T10:53:47.058Z",
+    "contentFreshnessGeneratedAt": "2026-06-21T15:28:36.383Z",
     "contentFreshnessGuardrails": {
       "autoPublish": false,
       "note": "This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status."
@@ -25,15 +25,15 @@
       "checkedUrls": 14,
       "broadFirstCoverageFiles": 0,
       "currentReviewFiles": 3,
-      "failedUrls": 0,
+      "failedUrls": 1,
       "filesCovered": 16,
       "filesWithReachableSource": 16,
       "filesWithoutReachableSource": 0,
       "missingUrlTargets": 0,
       "nextSourcePackFiles": 15,
-      "okUrls": 14,
+      "okUrls": 13,
       "publicGapDecisionFiles": 0,
-      "redirectedUrls": 10,
+      "redirectedUrls": 9,
       "sourceReferences": 86,
       "uniqueUrls": 14
     },

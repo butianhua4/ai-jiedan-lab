@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T10:53:42.654Z",
+  "generatedAt": "2026-06-21T15:28:31.884Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "No measured traffic, rankings, clicks, impressions, or revenue are claimed."
   },
   "sourceEvidence": {
-    "remediationGeneratedAt": "2026-06-21T10:53:42.185Z",
+    "remediationGeneratedAt": "2026-06-21T15:28:31.396Z",
     "remediationGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -19,8 +19,8 @@
       "trafficClaim": "not-included"
     },
     "remediationSummary": {
-      "failedUrlItems": 0,
-      "failedUrls": 0,
+      "failedUrlItems": 1,
+      "failedUrls": 1,
       "humanGatedItems": 10,
       "items": 10,
       "itemsWithAffectedFiles": 10,
@@ -29,35 +29,168 @@
       "itemsWithReplacementCandidates": 0,
       "itemsWithReferences": 10,
       "itemsWithReplacementPlan": 10,
-      "manualFixReadyItems": 10,
+      "manualFixReadyItems": 9,
       "failedItemsWithReplacementCandidates": 0,
       "replacementCandidateOptions": 0,
-      "redirectedUrlItems": 10,
-      "redirectedUrls": 10,
+      "redirectedUrlItems": 9,
+      "redirectedUrls": 9,
       "sourceHealthCheckedUrls": 14,
-      "sourceHealthFailedUrls": 0,
-      "sourceHealthRedirectedUrls": 10,
+      "sourceHealthFailedUrls": 1,
+      "sourceHealthRedirectedUrls": 9,
       "trafficDataAvailable": false,
-      "unsafeItems": 0
+      "unsafeItems": 1
     }
   },
   "summary": {
     "affectedFiles": 16,
-    "failedDecisionItems": 0,
+    "failedDecisionItems": 2,
     "humanGatedItems": 71,
     "items": 71,
     "itemsWithDecisionOptions": 71,
     "itemsWithManualChecklist": 71,
     "itemsWithRecommendedCandidate": 0,
     "officialRecommendedCandidates": 0,
-    "redirectedDecisionItems": 71,
+    "redirectedDecisionItems": 69,
     "replacementCandidateOptions": 0,
     "sourceRemediationItems": 10,
-    "sourceRemediationUnsafeItems": 0,
-    "unsafeItems": 0
+    "sourceRemediationUnsafeItems": 1,
+    "unsafeItems": 2
   },
-  "unsafeItems": [],
+  "unsafeItems": [
+    {
+      "alternatives": [],
+      "decisionOptions": [
+        "Replace the failed URL with the recommended official source if it covers the same claim.",
+        "Use one market-signal alternative only for category-demand evidence, not for technical or policy authority.",
+        "Remove or rewrite the dependent claim if no source candidate covers it.",
+        "Keep the article draft/noindex/humanReviewRequired until approval."
+      ],
+      "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
+      "kind": "failed-url",
+      "manualChecklist": [
+        "Original URL: https://docs.vllm.ai",
+        "Scopes: next-source-pack",
+        "Confirm the replacement source covers the exact claim family.",
+        "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+        "Use prompt-library sources only as market/category evidence.",
+        "Do not run mark:review or publish commands from this decision pack."
+      ],
+      "originalUrl": "https://docs.vllm.ai",
+      "recommendedCandidate": null,
+      "referenceLabels": [
+        "vLLM docs: https://docs.vllm.ai"
+      ],
+      "scopes": [
+        "next-source-pack"
+      ],
+      "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+      "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
+      "unsafeReasons": [
+        "failed URL has no concrete replacement candidates",
+        "Failed URL needs a recommended replacement candidate."
+      ]
+    },
+    {
+      "alternatives": [],
+      "decisionOptions": [
+        "Replace the failed URL with the recommended official source if it covers the same claim.",
+        "Use one market-signal alternative only for category-demand evidence, not for technical or policy authority.",
+        "Remove or rewrite the dependent claim if no source candidate covers it.",
+        "Keep the article draft/noindex/humanReviewRequired until approval."
+      ],
+      "file": "content/blog/vllm-deployment-beginner-guide.mdx",
+      "kind": "failed-url",
+      "manualChecklist": [
+        "Original URL: https://docs.vllm.ai",
+        "Scopes: next-source-pack",
+        "Confirm the replacement source covers the exact claim family.",
+        "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+        "Use prompt-library sources only as market/category evidence.",
+        "Do not run mark:review or publish commands from this decision pack."
+      ],
+      "originalUrl": "https://docs.vllm.ai",
+      "recommendedCandidate": null,
+      "referenceLabels": [
+        "vLLM docs: https://docs.vllm.ai"
+      ],
+      "scopes": [
+        "next-source-pack"
+      ],
+      "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+      "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
+      "unsafeReasons": [
+        "failed URL has no concrete replacement candidates",
+        "Failed URL needs a recommended replacement candidate."
+      ]
+    }
+  ],
   "topItems": [
+    {
+      "alternatives": [],
+      "decisionOptions": [
+        "Replace the failed URL with the recommended official source if it covers the same claim.",
+        "Use one market-signal alternative only for category-demand evidence, not for technical or policy authority.",
+        "Remove or rewrite the dependent claim if no source candidate covers it.",
+        "Keep the article draft/noindex/humanReviewRequired until approval."
+      ],
+      "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
+      "kind": "failed-url",
+      "manualChecklist": [
+        "Original URL: https://docs.vllm.ai",
+        "Scopes: next-source-pack",
+        "Confirm the replacement source covers the exact claim family.",
+        "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+        "Use prompt-library sources only as market/category evidence.",
+        "Do not run mark:review or publish commands from this decision pack."
+      ],
+      "originalUrl": "https://docs.vllm.ai",
+      "recommendedCandidate": null,
+      "referenceLabels": [
+        "vLLM docs: https://docs.vllm.ai"
+      ],
+      "scopes": [
+        "next-source-pack"
+      ],
+      "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+      "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
+      "unsafeReasons": [
+        "failed URL has no concrete replacement candidates",
+        "Failed URL needs a recommended replacement candidate."
+      ]
+    },
+    {
+      "alternatives": [],
+      "decisionOptions": [
+        "Replace the failed URL with the recommended official source if it covers the same claim.",
+        "Use one market-signal alternative only for category-demand evidence, not for technical or policy authority.",
+        "Remove or rewrite the dependent claim if no source candidate covers it.",
+        "Keep the article draft/noindex/humanReviewRequired until approval."
+      ],
+      "file": "content/blog/vllm-deployment-beginner-guide.mdx",
+      "kind": "failed-url",
+      "manualChecklist": [
+        "Original URL: https://docs.vllm.ai",
+        "Scopes: next-source-pack",
+        "Confirm the replacement source covers the exact claim family.",
+        "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+        "Use prompt-library sources only as market/category evidence.",
+        "Do not run mark:review or publish commands from this decision pack."
+      ],
+      "originalUrl": "https://docs.vllm.ai",
+      "recommendedCandidate": null,
+      "referenceLabels": [
+        "vLLM docs: https://docs.vllm.ai"
+      ],
+      "scopes": [
+        "next-source-pack"
+      ],
+      "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+      "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
+      "unsafeReasons": [
+        "failed URL has no concrete replacement candidates",
+        "Failed URL needs a recommended replacement candidate."
+      ]
+    },
     {
       "alternatives": [],
       "decisionOptions": [
@@ -355,38 +488,6 @@
         "Keep the article draft/noindex/humanReviewRequired until approval."
       ],
       "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
-      "finalUrl": "https://docs.vllm.ai/en/latest/",
-      "kind": "redirected-url",
-      "manualChecklist": [
-        "Original URL: https://docs.vllm.ai",
-        "Final URL: https://docs.vllm.ai/en/latest/",
-        "Scopes: next-source-pack",
-        "Confirm the replacement source covers the exact claim family.",
-        "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
-        "Use prompt-library sources only as market/category evidence.",
-        "Do not run mark:review or publish commands from this decision pack."
-      ],
-      "originalUrl": "https://docs.vllm.ai",
-      "recommendedCandidate": null,
-      "referenceLabels": [
-        "vLLM docs: https://docs.vllm.ai"
-      ],
-      "scopes": [
-        "next-source-pack"
-      ],
-      "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-      "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
-      "unsafeReasons": []
-    },
-    {
-      "alternatives": [],
-      "decisionOptions": [
-        "Approve the redirected final URL as canonical if it is content-equivalent.",
-        "Replace the original URL with the final URL during human review if the redirect is stable.",
-        "Find a more specific official source if the redirect lands on a generic page.",
-        "Keep the article draft/noindex/humanReviewRequired until approval."
-      ],
-      "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
       "finalUrl": "https://developers.openai.com/api/docs",
       "kind": "redirected-url",
       "manualChecklist": [
@@ -408,38 +509,6 @@
       ],
       "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
       "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
-      "unsafeReasons": []
-    },
-    {
-      "alternatives": [],
-      "decisionOptions": [
-        "Approve the redirected final URL as canonical if it is content-equivalent.",
-        "Replace the original URL with the final URL during human review if the redirect is stable.",
-        "Find a more specific official source if the redirect lands on a generic page.",
-        "Keep the article draft/noindex/humanReviewRequired until approval."
-      ],
-      "file": "content/blog/together-ai-api-beginner-guide.mdx",
-      "finalUrl": "https://ai-sdk.dev/docs/introduction",
-      "kind": "redirected-url",
-      "manualChecklist": [
-        "Original URL: https://ai-sdk.dev/docs",
-        "Final URL: https://ai-sdk.dev/docs/introduction",
-        "Scopes: next-source-pack",
-        "Confirm the replacement source covers the exact claim family.",
-        "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
-        "Use prompt-library sources only as market/category evidence.",
-        "Do not run mark:review or publish commands from this decision pack."
-      ],
-      "originalUrl": "https://ai-sdk.dev/docs",
-      "recommendedCandidate": null,
-      "referenceLabels": [
-        "Vercel AI SDK docs: https://ai-sdk.dev/docs"
-      ],
-      "scopes": [
-        "next-source-pack"
-      ],
-      "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-      "title": "Together AI API 怎么接入：开源模型接口、embedding 和部署边界",
       "unsafeReasons": []
     }
   ],
@@ -447,6 +516,72 @@
     {
       "alternatives": [],
       "decisionOptions": [
+        "Replace the failed URL with the recommended official source if it covers the same claim.",
+        "Use one market-signal alternative only for category-demand evidence, not for technical or policy authority.",
+        "Remove or rewrite the dependent claim if no source candidate covers it.",
+        "Keep the article draft/noindex/humanReviewRequired until approval."
+      ],
+      "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
+      "kind": "failed-url",
+      "manualChecklist": [
+        "Original URL: https://docs.vllm.ai",
+        "Scopes: next-source-pack",
+        "Confirm the replacement source covers the exact claim family.",
+        "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+        "Use prompt-library sources only as market/category evidence.",
+        "Do not run mark:review or publish commands from this decision pack."
+      ],
+      "originalUrl": "https://docs.vllm.ai",
+      "recommendedCandidate": null,
+      "referenceLabels": [
+        "vLLM docs: https://docs.vllm.ai"
+      ],
+      "scopes": [
+        "next-source-pack"
+      ],
+      "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+      "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
+      "unsafeReasons": [
+        "failed URL has no concrete replacement candidates",
+        "Failed URL needs a recommended replacement candidate."
+      ]
+    },
+    {
+      "alternatives": [],
+      "decisionOptions": [
+        "Replace the failed URL with the recommended official source if it covers the same claim.",
+        "Use one market-signal alternative only for category-demand evidence, not for technical or policy authority.",
+        "Remove or rewrite the dependent claim if no source candidate covers it.",
+        "Keep the article draft/noindex/humanReviewRequired until approval."
+      ],
+      "file": "content/blog/vllm-deployment-beginner-guide.mdx",
+      "kind": "failed-url",
+      "manualChecklist": [
+        "Original URL: https://docs.vllm.ai",
+        "Scopes: next-source-pack",
+        "Confirm the replacement source covers the exact claim family.",
+        "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
+        "Use prompt-library sources only as market/category evidence.",
+        "Do not run mark:review or publish commands from this decision pack."
+      ],
+      "originalUrl": "https://docs.vllm.ai",
+      "recommendedCandidate": null,
+      "referenceLabels": [
+        "vLLM docs: https://docs.vllm.ai"
+      ],
+      "scopes": [
+        "next-source-pack"
+      ],
+      "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
+      "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
+      "unsafeReasons": [
+        "failed URL has no concrete replacement candidates",
+        "Failed URL needs a recommended replacement candidate."
+      ]
+    },
+    {
+      "alternatives": [],
+      "decisionOptions": [
         "Approve the redirected final URL as canonical if it is content-equivalent.",
         "Replace the original URL with the final URL during human review if the redirect is stable.",
         "Find a more specific official source if the redirect lands on a generic page.",
@@ -724,38 +859,6 @@
       "recommendedCandidate": null,
       "referenceLabels": [
         "Vercel AI SDK docs: https://ai-sdk.dev/docs"
-      ],
-      "scopes": [
-        "next-source-pack"
-      ],
-      "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-      "title": "TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收",
-      "unsafeReasons": []
-    },
-    {
-      "alternatives": [],
-      "decisionOptions": [
-        "Approve the redirected final URL as canonical if it is content-equivalent.",
-        "Replace the original URL with the final URL during human review if the redirect is stable.",
-        "Find a more specific official source if the redirect lands on a generic page.",
-        "Keep the article draft/noindex/humanReviewRequired until approval."
-      ],
-      "file": "content/blog/tensorrt-llm-beginner-guide.mdx",
-      "finalUrl": "https://docs.vllm.ai/en/latest/",
-      "kind": "redirected-url",
-      "manualChecklist": [
-        "Original URL: https://docs.vllm.ai",
-        "Final URL: https://docs.vllm.ai/en/latest/",
-        "Scopes: next-source-pack",
-        "Confirm the replacement source covers the exact claim family.",
-        "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
-        "Use prompt-library sources only as market/category evidence.",
-        "Do not run mark:review or publish commands from this decision pack."
-      ],
-      "originalUrl": "https://docs.vllm.ai",
-      "recommendedCandidate": null,
-      "referenceLabels": [
-        "vLLM docs: https://docs.vllm.ai"
       ],
       "scopes": [
         "next-source-pack"
@@ -1608,11 +1711,11 @@
         "Keep the article draft/noindex/humanReviewRequired until approval."
       ],
       "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-      "finalUrl": "https://ai.google.dev/gemini-api/docs",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=de",
       "kind": "redirected-url",
       "manualChecklist": [
         "Original URL: https://ai.google.dev/docs",
-        "Final URL: https://ai.google.dev/gemini-api/docs",
+        "Final URL: https://ai.google.dev/gemini-api/docs?hl=de",
         "Scopes: current-review, next-source-pack",
         "Confirm the replacement source covers the exact claim family.",
         "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
@@ -2140,38 +2243,6 @@
       "recommendedCandidate": null,
       "referenceLabels": [
         "Anthropic docs: https://docs.anthropic.com"
-      ],
-      "scopes": [
-        "next-source-pack"
-      ],
-      "stopBefore": "Stop before human approval; this pack is a file-level decision aid only.",
-      "title": "vLLM 部署适合什么场景：新手先看推理服务边界",
-      "unsafeReasons": []
-    },
-    {
-      "alternatives": [],
-      "decisionOptions": [
-        "Approve the redirected final URL as canonical if it is content-equivalent.",
-        "Replace the original URL with the final URL during human review if the redirect is stable.",
-        "Find a more specific official source if the redirect lands on a generic page.",
-        "Keep the article draft/noindex/humanReviewRequired until approval."
-      ],
-      "file": "content/blog/vllm-deployment-beginner-guide.mdx",
-      "finalUrl": "https://docs.vllm.ai/en/latest/",
-      "kind": "redirected-url",
-      "manualChecklist": [
-        "Original URL: https://docs.vllm.ai",
-        "Final URL: https://docs.vllm.ai/en/latest/",
-        "Scopes: next-source-pack",
-        "Confirm the replacement source covers the exact claim family.",
-        "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
-        "Use prompt-library sources only as market/category evidence.",
-        "Do not run mark:review or publish commands from this decision pack."
-      ],
-      "originalUrl": "https://docs.vllm.ai",
-      "recommendedCandidate": null,
-      "referenceLabels": [
-        "vLLM docs: https://docs.vllm.ai"
       ],
       "scopes": [
         "next-source-pack"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T10:54:01.378Z",
+  "generatedAt": "2026-06-21T15:28:51.242Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "firstCoverageGeneratedAt": "2026-06-21T10:54:00.899Z",
+    "firstCoverageGeneratedAt": "2026-06-21T15:28:50.727Z",
     "firstCoverageSummary": {
       "blockingItems": 0,
       "commandBoundaries": 0,
@@ -29,7 +29,7 @@
       "warningItems": 0,
       "zeroPublicClusters": 0
     },
-    "massAiSearchMatrixGeneratedAt": "2026-06-21T10:53:34.317Z",
+    "massAiSearchMatrixGeneratedAt": "2026-06-21T15:28:12.237Z",
     "massAiSearchMatrixSummary": {
       "commandBoundaries": 5,
       "deploymentBridgedThemes": 4,
@@ -50,7 +50,7 @@
       "unsafeItems": 2,
       "waves": 3
     },
-    "popularAiPromptPlaybookGeneratedAt": "2026-06-21T10:53:37.751Z",
+    "popularAiPromptPlaybookGeneratedAt": "2026-06-21T15:28:15.709Z",
     "popularAiPromptPlaybookSummary": {
       "agentDeploymentLanes": 3,
       "broadWorkPromptLanes": 3,
@@ -72,7 +72,7 @@
       "uniqueCandidateFiles": 21,
       "unsafeItems": 7
     },
-    "seoWarningGeneratedAt": "2026-06-21T10:53:22.800Z",
+    "seoWarningGeneratedAt": "2026-06-21T15:28:00.457Z",
     "seoWarningSummary": {
       "blockingItems": 0,
       "draftItems": 0,
@@ -89,23 +89,23 @@
       "warningItems": 0,
       "waveItems": 0
     },
-    "sourceReplacementGeneratedAt": "2026-06-21T10:53:42.654Z",
+    "sourceReplacementGeneratedAt": "2026-06-21T15:28:31.884Z",
     "sourceReplacementSummary": {
       "affectedFiles": 16,
-      "failedDecisionItems": 0,
+      "failedDecisionItems": 2,
       "humanGatedItems": 71,
       "items": 71,
       "itemsWithDecisionOptions": 71,
       "itemsWithManualChecklist": 71,
       "itemsWithRecommendedCandidate": 0,
       "officialRecommendedCandidates": 0,
-      "redirectedDecisionItems": 71,
+      "redirectedDecisionItems": 69,
       "replacementCandidateOptions": 0,
       "sourceRemediationItems": 10,
-      "sourceRemediationUnsafeItems": 0,
-      "unsafeItems": 0
+      "sourceRemediationUnsafeItems": 1,
+      "unsafeItems": 2
     },
-    "waveApprovalGeneratedAt": "2026-06-21T10:53:29.243Z",
+    "waveApprovalGeneratedAt": "2026-06-21T15:28:07.053Z",
     "waveApprovalSummary": {
       "alreadyPublished": 0,
       "completedOrReady": 3,
@@ -114,7 +114,7 @@
       "unsafeItems": 0,
       "wave": 1
     },
-    "wavePublishSimulationGeneratedAt": "2026-06-21T10:53:44.608Z",
+    "wavePublishSimulationGeneratedAt": "2026-06-21T15:28:33.865Z",
     "wavePublishSimulationSummary": {
       "currentlyPublishable": 0,
       "alreadyPublished": 0,

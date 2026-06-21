@@ -1,6 +1,6 @@
 # Automation Digest
 
-Generated at: 2026-06-21T10:54:38.879Z
+Generated at: 2026-06-21T15:29:31.289Z
 
 This digest is read-only. It summarizes automation reports and does not publish or mark articles for review.
 
@@ -302,79 +302,80 @@ This digest is read-only. It summarizes automation reports and does not publish 
 - Source references: 86
 - Unique URLs: 14
 - Checked URLs: 14
-- OK URLs: 14
-- Failed URLs: 0
+- OK URLs: 13
+- Failed URLs: 1
 - Missing URL targets: 0
-- Redirected URLs: 10
+- Redirected URLs: 9
 
 Failed checks:
 
-- none
+- https://docs.vllm.ai (TimeoutError)
 
 Redirect samples:
 
 - https://ai-sdk.dev/docs -> https://ai-sdk.dev/docs/introduction
-- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs
+- https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=de
 - https://docs.anthropic.com -> https://platform.claude.com/docs/en/home
 - https://docs.llamaindex.ai -> https://developers.llamaindex.ai/python/framework/
-- https://docs.vllm.ai -> https://docs.vllm.ai/en/latest/
 - https://platform.openai.com/docs -> https://developers.openai.com/api/docs
 - https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents
 - https://platform.openai.com/docs/guides/prompt-engineering -> https://developers.openai.com/api/docs/guides/prompt-engineering
+- https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval
 
 ## Source Target Remediation
 
 - Items: 10
-- Failed URL items: 0
+- Failed URL items: 1
 - Failed URL items with replacement candidates: 0
 - Replacement candidate options: 0
-- Redirected URL items: 10
-- Manual-fix-ready items: 10
+- Redirected URL items: 9
+- Manual-fix-ready items: 9
 - Human-gated items: 10
-- Unsafe items: 0
+- Unsafe items: 1
 - Source health checked URLs: 14
 
 Unsafe source remediation items:
 
-- none
+- {"affectedFiles":["content/blog/tensorrt-llm-beginner-guide.mdx","content/blog/vllm-deployment-beginner-guide.mdx"],"affectedScopes":["next-source-pack"],"affectedTitles":["TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收","vLLM 部署适合什么场景：新手先看推理服务边界"],"error":"TimeoutError","humanChecklist":["Review URL: https://docs.vllm.ai.","Automation error observed: TimeoutError.","Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.","If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.","Confirm every affected draft still has at least one reachable source for the claim family before mark:review.","Do not approve a fast-changing AI, SDK, deployment, pricing, or model claim if it depends only on this failed URL.","Prefer another reachable official source already present for the same affected file when it covers the same claim.","If no existing source covers the claim, manually find a current official source before approval.","If no reliable source exists, rewrite or remove the dependent claim instead of substituting a weak source.","Keep article status, noindex, and humanReviewRequired unchanged until explicit approval.","Publishing remains separate and is not included in this remediation pack."],"kind":"failed-url","manualActions":["Open the failed URL manually from a normal browser session and confirm whether the failure is transient or permanent.","If the URL is still unavailable, replace it with a reachable official or source-backed URL during human review.","Confirm every affected draft still has at least one reachable source for the claim family before mark:review.","Do not approve a fast-changing AI, SDK, deployment, pricing, or model claim if it depends only on this failed URL."],"manualFixReady":false,"referenceCount":2,"references":[{"file":"content/blog/tensorrt-llm-beginner-guide.mdx","label":"vLLM docs: https://docs.vllm.ai","scope":"next-source-pack","title":"TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收","url":"https://docs.vllm.ai"},{"file":"content/blog/vllm-deployment-beginner-guide.mdx","label":"vLLM docs: https://docs.vllm.ai","scope":"next-source-pack","title":"vLLM 部署适合什么场景：新手先看推理服务边界","url":"https://docs.vllm.ai"}],"replacementCandidates":[],"replacementPlan":["Prefer another reachable official source already present for the same affected file when it covers the same claim.","If no existing source covers the claim, manually find a current official source before approval.","If no reliable source exists, rewrite or remove the dependent claim instead of substituting a weak source."],"stopBefore":"Stop before human approval if this failed URL is the only evidence for any fast-changing claim.","unsafeReasons":["failed URL has no concrete replacement candidates"],"url":"https://docs.vllm.ai"}
 
 | Ready | Kind | References | Replacement candidates | Files | URL | Final URL / Issue |
 | --- | --- | ---: | ---: | --- | --- | --- |
+| false | failed-url | 2 | 0 | content/blog/tensorrt-llm-beginner-guide.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://docs.vllm.ai | TimeoutError |
 | true | redirected-url | 17 | 0 | content/blog/tools-not-to-buy-first.mdx<br>content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/together-ai-api-beginner-guide.mdx<br>content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx<br>content/blog/vercel-deploy-checklist-template.mdx<br>content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx<br>content/blog/subscription-payment-failed-message.mdx<br>content/blog/vercel-404-after-deploy.mdx<br>content/blog/vercel-404-after-deploy-checklist.mdx<br>content/blog/vercel-404-after-deploy-freelance-scope.mdx<br>content/blog/windows-path-permission-install-fix.mdx<br>content/blog/windows-path-permission-install-fix-checklist.mdx<br>content/blog/windows-path-permission-install-fix-freelance-scope.mdx<br>content/blog/tensorrt-llm-beginner-guide.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://ai-sdk.dev/docs | https://ai-sdk.dev/docs/introduction |
 | true | redirected-url | 17 | 0 | content/blog/tools-not-to-buy-first.mdx<br>content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/together-ai-api-beginner-guide.mdx<br>content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx<br>content/blog/vercel-deploy-checklist-template.mdx<br>content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx<br>content/blog/subscription-payment-failed-message.mdx<br>content/blog/vercel-404-after-deploy.mdx<br>content/blog/vercel-404-after-deploy-checklist.mdx<br>content/blog/vercel-404-after-deploy-freelance-scope.mdx<br>content/blog/windows-path-permission-install-fix.mdx<br>content/blog/windows-path-permission-install-fix-checklist.mdx<br>content/blog/windows-path-permission-install-fix-freelance-scope.mdx<br>content/blog/tensorrt-llm-beginner-guide.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://platform.openai.com/docs | https://developers.openai.com/api/docs |
 | true | redirected-url | 13 | 0 | content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx<br>content/blog/vercel-deploy-checklist-template.mdx<br>content/blog/subscription-payment-failed-message.mdx<br>content/blog/vercel-404-after-deploy.mdx<br>content/blog/vercel-404-after-deploy-checklist.mdx<br>content/blog/vercel-404-after-deploy-freelance-scope.mdx<br>content/blog/windows-path-permission-install-fix.mdx<br>content/blog/windows-path-permission-install-fix-checklist.mdx<br>content/blog/windows-path-permission-install-fix-freelance-scope.mdx | https://platform.openai.com/docs/guides/prompt-engineering | https://developers.openai.com/api/docs/guides/prompt-engineering |
 | true | redirected-url | 11 | 0 | content/blog/tools-not-to-buy-first.mdx<br>content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/together-ai-api-beginner-guide.mdx<br>content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx<br>content/blog/vercel-deploy-checklist-template.mdx<br>content/blog/vercel-404-after-deploy-freelance-scope.mdx<br>content/blog/windows-path-permission-install-fix.mdx<br>content/blog/windows-path-permission-install-fix-checklist.mdx<br>content/blog/windows-path-permission-install-fix-freelance-scope.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://docs.anthropic.com | https://platform.claude.com/docs/en/home |
 | true | redirected-url | 7 | 0 | content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/together-ai-api-beginner-guide.mdx<br>content/blog/vercel-ai-sdk-chatbot-deploy-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://platform.openai.com/docs/guides/retrieval | https://developers.openai.com/api/docs/guides/retrieval |
 | true | redirected-url | 5 | 0 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx<br>content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/windows-path-permission-install-fix-checklist.mdx<br>content/blog/windows-path-permission-install-fix-freelance-scope.mdx<br>content/blog/vllm-deployment-beginner-guide.mdx | https://platform.openai.com/docs/guides/agents | https://developers.openai.com/api/docs/guides/agents |
-| true | redirected-url | 2 | 0 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs |
-| true | redirected-url | 2 | 0 | content/blog/vector-database-selection-for-rag-guide.mdx<br>content/blog/supabase-pgvector-rag-guide.mdx | https://docs.llamaindex.ai | https://developers.llamaindex.ai/python/framework/ |
+| true | redirected-url | 2 | 0 | content/blog/vercel-ai-gateway-multi-provider-guide.mdx | https://ai.google.dev/docs | https://ai.google.dev/gemini-api/docs?hl=de |
 
 ## Source Replacement Decisions
 
 - Items: 71
 - Affected files: 16
-- Failed decision items: 0
-- Redirected decision items: 71
+- Failed decision items: 2
+- Redirected decision items: 69
 - Items with recommended candidate: 0
 - Official recommended candidates: 0
 - Replacement candidate options: 0
 - Human-gated items: 71
-- Unsafe items: 0
+- Unsafe items: 2
 
 Unsafe source replacement decisions:
 
-- none
+- {"alternatives":[],"decisionOptions":["Replace the failed URL with the recommended official source if it covers the same claim.","Use one market-signal alternative only for category-demand evidence, not for technical or policy authority.","Remove or rewrite the dependent claim if no source candidate covers it.","Keep the article draft/noindex/humanReviewRequired until approval."],"file":"content/blog/tensorrt-llm-beginner-guide.mdx","kind":"failed-url","manualChecklist":["Original URL: https://docs.vllm.ai","Scopes: next-source-pack","Confirm the replacement source covers the exact claim family.","Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.","Use prompt-library sources only as market/category evidence.","Do not run mark:review or publish commands from this decision pack."],"originalUrl":"https://docs.vllm.ai","recommendedCandidate":null,"referenceLabels":["vLLM docs: https://docs.vllm.ai"],"scopes":["next-source-pack"],"stopBefore":"Stop before human approval; this pack is a file-level decision aid only.","title":"TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收","unsafeReasons":["failed URL has no concrete replacement candidates","Failed URL needs a recommended replacement candidate."]}
+- {"alternatives":[],"decisionOptions":["Replace the failed URL with the recommended official source if it covers the same claim.","Use one market-signal alternative only for category-demand evidence, not for technical or policy authority.","Remove or rewrite the dependent claim if no source candidate covers it.","Keep the article draft/noindex/humanReviewRequired until approval."],"file":"content/blog/vllm-deployment-beginner-guide.mdx","kind":"failed-url","manualChecklist":["Original URL: https://docs.vllm.ai","Scopes: next-source-pack","Confirm the replacement source covers the exact claim family.","Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.","Use prompt-library sources only as market/category evidence.","Do not run mark:review or publish commands from this decision pack."],"originalUrl":"https://docs.vllm.ai","recommendedCandidate":null,"referenceLabels":["vLLM docs: https://docs.vllm.ai"],"scopes":["next-source-pack"],"stopBefore":"Stop before human approval; this pack is a file-level decision aid only.","title":"vLLM 部署适合什么场景：新手先看推理服务边界","unsafeReasons":["failed URL has no concrete replacement candidates","Failed URL needs a recommended replacement candidate."]}
 
 | Kind | Recommended | Alternatives | Scopes | Title | File | URL |
 | --- | --- | ---: | --- | --- | --- | --- |
+| failed-url | review redirect | 0 | next-source-pack | TensorRT-LLM 怎么入门：NVIDIA GPU 推理优化先看模型和验收 | content/blog/tensorrt-llm-beginner-guide.mdx | https://docs.vllm.ai |
+| failed-url | review redirect | 0 | next-source-pack | vLLM 部署适合什么场景：新手先看推理服务边界 | content/blog/vllm-deployment-beginner-guide.mdx | https://docs.vllm.ai |
 | redirected-url | review redirect | 0 | next-source-pack | 订阅支付失败怎么和客户沟通 | content/blog/subscription-payment-failed-message.mdx | https://ai-sdk.dev/docs |
 | redirected-url | review redirect | 0 | next-source-pack | 订阅支付失败怎么和客户沟通 | content/blog/subscription-payment-failed-message.mdx | https://platform.openai.com/docs |
 | redirected-url | review redirect | 0 | next-source-pack | 订阅支付失败怎么和客户沟通 | content/blog/subscription-payment-failed-message.mdx | https://platform.openai.com/docs/guides/prompt-engineering |
 | redirected-url | review redirect | 0 | next-source-pack | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx | https://ai-sdk.dev/docs |
 | redirected-url | review redirect | 0 | next-source-pack | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx | https://docs.llamaindex.ai |
 | redirected-url | review redirect | 0 | next-source-pack | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx | https://platform.openai.com/docs |
-| redirected-url | review redirect | 0 | next-source-pack | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx | https://platform.openai.com/docs/guides/retrieval |
-| redirected-url | review redirect | 0 | next-source-pack | Supabase pgvector 做 RAG 怎么开始：Postgres 里的向量检索 | content/blog/supabase-pgvector-rag-guide.mdx | https://python.langchain.com/docs |
 
 ## Review Action Board
 
@@ -2898,7 +2899,7 @@ Public categories:
 
 ## Live Search Surface
 
-- Latest check: 2026-06-21T10:54:28.092Z
+- Latest check: 2026-06-21T15:29:20.343Z
 - Ok: true
 - Public articles checked: 500
 - Sitemap URLs: undefined

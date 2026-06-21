@@ -1,6 +1,6 @@
 # Autopilot Source Verification Brief
 
-Generated at: 2026-06-21T10:53:52.053Z
+Generated at: 2026-06-21T15:28:41.553Z
 
 This report is read-only. It packages source verification work for the top autopilot approval packet items.
 
@@ -33,7 +33,7 @@ This report is read-only. It packages source verification work for the top autop
 
 ## Source Evidence
 
-- Source health summary: {"checkedUrls":14,"broadFirstCoverageFiles":0,"currentReviewFiles":3,"failedUrls":0,"filesCovered":16,"filesWithReachableSource":16,"filesWithoutReachableSource":0,"missingUrlTargets":0,"nextSourcePackFiles":15,"okUrls":14,"publicGapDecisionFiles":0,"redirectedUrls":10,"sourceReferences":86,"uniqueUrls":14}
+- Source health summary: {"checkedUrls":14,"broadFirstCoverageFiles":0,"currentReviewFiles":3,"failedUrls":1,"filesCovered":16,"filesWithReachableSource":16,"filesWithoutReachableSource":0,"missingUrlTargets":0,"nextSourcePackFiles":15,"okUrls":13,"publicGapDecisionFiles":0,"redirectedUrls":9,"sourceReferences":86,"uniqueUrls":14}
 - Packet unsafe items: 0
 
 ## Unsafe Items
