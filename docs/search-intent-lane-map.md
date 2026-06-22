@@ -1,6 +1,6 @@
 # Search Intent Lane Map
 
-Generated at: 2026-06-22T01:44:55.061Z
+Generated at: 2026-06-22T06:59:02.119Z
 
 This report is read-only. It maps broad AI search-intent lanes to existing public articles and safe draft candidates. It does not claim keyword volume, impressions, clicks, or traffic.
 

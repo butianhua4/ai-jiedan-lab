@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T01:45:03.608Z",
+  "generatedAt": "2026-06-22T06:59:08.657Z",
   "guardrails": {
     "autoCreateArticles": false,
     "autoEditArticles": false,
@@ -10,7 +10,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "deploymentReviewGeneratedAt": "2026-06-22T01:45:03.136Z",
+    "deploymentReviewGeneratedAt": "2026-06-22T06:59:08.279Z",
     "deploymentReviewSummary": {
       "deploymentPublicArticles": 179,
       "duplicateFiles": 0,

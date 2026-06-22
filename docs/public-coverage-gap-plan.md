@@ -1,6 +1,6 @@
 # Public Coverage Gap Plan
 
-Generated at: 2026-06-22T01:45:07.436Z
+Generated at: 2026-06-22T06:59:11.768Z
 
 This report is read-only. It converts broad search-demand themes with no public coverage into a manual review wave plan.
 

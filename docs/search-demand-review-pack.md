@@ -1,6 +1,6 @@
 # Search Demand Review Pack
 
-Generated at: 2026-06-22T01:45:00.824Z
+Generated at: 2026-06-22T06:59:06.473Z
 
 This report is read-only. It converts high-search-demand lanes into manual review packets and stops before status changes or publishing.
 
@@ -34,7 +34,7 @@ This report is read-only. It converts high-search-demand lanes into manual revie
 
 ## Source Evidence
 
-- intakeGeneratedAt: "2026-06-22T01:45:00.347Z"
+- intakeGeneratedAt: "2026-06-22T06:59:06.110Z"
 - intakeGuardrails: {"autoCreateArticles":false,"autoEditArticles":false,"autoMarkReview":false,"autoPublish":false,"trafficClaim":"not-included","note":"Read-only search-demand intake. Search queries are editorial seeds, not measured keyword volume, rankings, impressions, clicks, traffic, or revenue."}
 - intakeSummary: {"contentFormats":32,"lanes":8,"lanesWithPublicCoverage":8,"lanesWithoutPublicCoverage":0,"lanesWithReadyCandidates":7,"officialSourceTargets":29,"readyCandidateFiles":24,"reviewQueueMatches":10,"searchQueries":81,"unsafeLanes":1}
 - sourceHealthFilesWithoutReachableSource: 0
