@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T13:12:52.611Z",
+  "generatedAt": "2026-06-22T18:05:36.314Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -16,7 +16,7 @@
       "stopBefore": "Every mark:review command requires explicit human approval. publish --confirm commands are intentionally not included."
     },
     "actionBoardReadyTasks": 2,
-    "contentCannibalizationGeneratedAt": "2026-06-22T13:12:51.885Z",
+    "contentCannibalizationGeneratedAt": "2026-06-22T18:05:35.627Z",
     "contentCannibalizationSummary": {
       "articleCount": 669,
       "conflicts": 199,

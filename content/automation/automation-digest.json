@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T13:14:15.084Z",
+  "generatedAt": "2026-06-22T18:06:37.963Z",
   "guardrails": {
     "autoPublish": false,
     "note": "Digest is read-only. It summarizes local automation reports and does not use traffic, impressions, or Search Console performance data."
@@ -2385,7 +2385,7 @@
           "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs.",
+          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=de.",
           "Open source URL: https://platform.openai.com/docs.",
           "Open source URL: https://ai-sdk.dev/docs.",
           "Open source URL: https://docs.anthropic.com.",
@@ -3324,11 +3324,13 @@
             "affectedTitles": [
               "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
             ],
-            "finalUrl": "https://ai.google.dev/gemini-api/docs",
+            "error": "TimeoutError",
+            "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=de",
             "humanChecklist": [
               "Review URL: https://ai.google.dev/docs.",
-              "Review final URL: https://ai.google.dev/gemini-api/docs.",
+              "Review final URL: https://ai.google.dev/gemini-api/docs?hl=de.",
               "HTTP status observed by automation: 200.",
+              "Automation error observed: TimeoutError.",
               "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
               "If the final URL is the canonical destination, update the source target during human review.",
               "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
@@ -3387,7 +3389,7 @@
           "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs.",
+          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=de.",
           "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
           "If the final URL is the canonical destination, update the source target during human review.",
           "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
@@ -5999,7 +6001,8 @@
         "url": "https://ai-sdk.dev/docs"
       },
       {
-        "finalUrl": "https://ai.google.dev/gemini-api/docs",
+        "error": "TimeoutError",
+        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=de",
         "ok": true,
         "references": [
           {
@@ -7335,11 +7338,13 @@
         "affectedTitles": [
           "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级"
         ],
-        "finalUrl": "https://ai.google.dev/gemini-api/docs",
+        "error": "TimeoutError",
+        "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=de",
         "humanChecklist": [
           "Review URL: https://ai.google.dev/docs.",
-          "Review final URL: https://ai.google.dev/gemini-api/docs.",
+          "Review final URL: https://ai.google.dev/gemini-api/docs?hl=de.",
           "HTTP status observed by automation: 200.",
+          "Automation error observed: TimeoutError.",
           "Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.",
           "If the final URL is the canonical destination, update the source target during human review.",
           "If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.",
@@ -9814,7 +9819,7 @@
           "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs.",
+          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=de.",
           "Open source URL: https://platform.openai.com/docs.",
           "Open source URL: https://ai-sdk.dev/docs.",
           "Open source URL: https://docs.anthropic.com.",
@@ -9848,7 +9853,7 @@
           "Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.",
           "Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.",
-          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs."
+          "Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=de."
         ],
         "title": "Vercel AI Gateway 怎么做多模型接入：OpenAI、Claude、Gemini 和降级",
         "unsafeReasons": []
@@ -66705,7 +66710,7 @@
   "liveSearch": {
     "checkedArticles": 500,
     "failedChecks": [],
-    "generatedAt": "2026-06-22T13:14:03.533Z",
+    "generatedAt": "2026-06-22T18:06:26.775Z",
     "missingFromSitemap": [],
     "ok": true,
     "publicArticles": 500

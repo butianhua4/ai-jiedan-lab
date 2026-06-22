@@ -1,6 +1,6 @@
 # SEO Opportunity Map
 
-Generated at: 2026-06-22T13:12:28.832Z
+Generated at: 2026-06-22T18:05:07.099Z
 
 This report ranks local content opportunities. It does not use or claim real traffic, impressions, or keyword volume.
 

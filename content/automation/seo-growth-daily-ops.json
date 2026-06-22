@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T13:14:08.628Z",
+  "generatedAt": "2026-06-22T18:06:31.646Z",
   "guardrails": {
     "fakeTrafficClaims": false,
     "manualGscOnly": true,
@@ -12,7 +12,7 @@
     "topQueueTarget": 500,
     "launchDate": "2026-06-18",
     "confirmedSubmittedCount": 0,
-    "dayIndex": 4,
+    "dayIndex": 5,
     "queueSize": 1007,
     "batchStart": 1,
     "batchEnd": 500,
