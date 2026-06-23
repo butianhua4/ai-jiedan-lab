@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T05:43:25.157Z",
+  "generatedAt": "2026-06-23T10:48:09.177Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "not-included"
   },
   "sourceEvidence": {
-    "broadDemandGeneratedAt": "2026-06-23T05:43:24.678Z",
+    "broadDemandGeneratedAt": "2026-06-23T10:48:08.703Z",
     "broadDemandGuardrails": {
       "autoCreateArticles": false,
       "autoEditArticles": false,
@@ -28,7 +28,7 @@
       "reviewReadyDrafts": 148,
       "unsafeClusters": 0
     },
-    "contentFreshnessGeneratedAt": "2026-06-23T05:43:13.831Z",
+    "contentFreshnessGeneratedAt": "2026-06-23T10:47:57.934Z",
     "contentFreshnessGuardrails": {
       "autoPublish": false,
       "note": "This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status."
