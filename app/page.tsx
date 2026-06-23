@@ -4,6 +4,7 @@ import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { Card } from "@/components/Card";
 import { ServiceCTA } from "@/components/ServiceCTA";
 import { site } from "@/data/site";
+import { seoDescription } from "@/lib/seo-metadata";
 import { templates } from "@/data/templates";
 import { tools } from "@/data/tools";
 import { getAllPosts } from "@/lib/blog";
@@ -11,7 +12,7 @@ import { getClusterPath, getHighPotentialQuestionPosts, getQuestionName, getQues
 
 export const metadata: Metadata = {
   title: site.name,
-  description: site.description,
+  description: seoDescription(site.description),
   alternates: { canonical: "/", languages: { "zh-CN": "/", "en-US": "/en" } },
   openGraph: {
     title: site.name,
