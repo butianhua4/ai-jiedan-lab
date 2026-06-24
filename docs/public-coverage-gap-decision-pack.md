@@ -1,6 +1,6 @@
 # Public Coverage Gap Decision Pack
 
-Generated at: 2026-06-24T05:39:55.169Z
+Generated at: 2026-06-24T10:34:33.399Z
 
 This report is read-only. It turns public coverage gap preflight warnings into human review decisions and explicit command boundaries.
 
@@ -14,7 +14,7 @@ This report is read-only. It turns public coverage gap preflight warnings into h
 
 ## Source Evidence
 
-- Preflight generated at: 2026-06-24T05:39:54.692Z
+- Preflight generated at: 2026-06-24T10:34:32.927Z
 - Traffic note: Search seeds and link suggestions are editorial signals, not measured rankings, impressions, clicks, traffic, or income.
 - Preflight summary: {"blockingItems":0,"broadFirstCoverageItems":0,"broadFirstCoveragePreflightItems":0,"items":0,"planItems":0,"planReadyItems":0,"planUnsafeItems":0,"planWaves":0,"readyItems":0,"structuredDataReadyItems":0,"uniqueFiles":0,"warningItems":0,"withPublicLinkSuggestions":0,"withSeedMatches":0}
 

@@ -1,6 +1,6 @@
 # Search Query Match Audit
 
-Generated at: 2026-06-24T05:39:46.020Z
+Generated at: 2026-06-24T10:34:24.414Z
 
 This report is read-only. It checks whether planned query variants are visible in article metadata, headings, and body copy before human review.
 

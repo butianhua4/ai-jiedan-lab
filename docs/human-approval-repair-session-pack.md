@@ -1,6 +1,6 @@
 # Human Approval Repair Session Pack
 
-Generated at: 2026-06-24T05:40:10.066Z
+Generated at: 2026-06-24T10:34:48.470Z
 
 This report is read-only. It packages the next manual repair session for each routed file and stops before article edits, mark:review, or publishing.
 
@@ -87,7 +87,7 @@ Source URL actions:
 - Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.
-- Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=pt-br.
+- Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs.
 - Open the original URL and the final redirected URL, then confirm the final URL is canonical and content-equivalent.
 - If the final URL is the canonical destination, update the source target during human review.
 - If the redirect lands on a generic, tracked, or unrelated page, replace it with a more specific official source.
@@ -104,7 +104,7 @@ Source target URL items:
 - [redirected-url] https://docs.anthropic.com -> https://platform.claude.com/docs/en/home; replacements=0
 - [redirected-url] https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval; replacements=0
 - [redirected-url] https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents; replacements=0
-- [redirected-url] https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=pt-br; replacements=0
+- [redirected-url] https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs; replacements=0
 
 Source review actions:
 
@@ -118,7 +118,7 @@ Source review actions:
 - Confirm source redirect before approval: https://docs.anthropic.com -> https://platform.claude.com/docs/en/home.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/retrieval -> https://developers.openai.com/api/docs/guides/retrieval.
 - Confirm source redirect before approval: https://platform.openai.com/docs/guides/agents -> https://developers.openai.com/api/docs/guides/agents.
-- Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs?hl=pt-br.
+- Confirm source redirect before approval: https://ai.google.dev/docs -> https://ai.google.dev/gemini-api/docs.
 - Open source URL: https://platform.openai.com/docs.
 - Open source URL: https://ai-sdk.dev/docs.
 - Open source URL: https://docs.anthropic.com.
