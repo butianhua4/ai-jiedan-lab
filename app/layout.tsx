@@ -12,6 +12,7 @@ const bingSiteVerification = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION;
 const ahrefsSiteVerification = process.env.NEXT_PUBLIC_AHREFS_SITE_VERIFICATION;
 const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_ID || process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-BG3NQRLR64";
 const clarityProjectId = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID || "x9c2phrvfy";
+const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT?.trim();
 const cloudflareWebAnalyticsToken = process.env.NEXT_PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
 
 const extraVerification = {
@@ -65,6 +66,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="zh-CN">
       <body>
+        {adsenseClient ? (
+          <Script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
+            strategy="afterInteractive"
+            crossOrigin="anonymous"
+          />
+        ) : null}
         {googleAnalyticsId ? (
           <>
             <Script src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`} strategy="afterInteractive" />
