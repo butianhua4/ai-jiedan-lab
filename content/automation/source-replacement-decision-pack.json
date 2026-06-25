@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T15:52:29.378Z",
+  "generatedAt": "2026-06-25T01:30:58.704Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -9,7 +9,7 @@
     "trafficClaim": "No measured traffic, rankings, clicks, impressions, or revenue are claimed."
   },
   "sourceEvidence": {
-    "remediationGeneratedAt": "2026-06-24T15:52:28.874Z",
+    "remediationGeneratedAt": "2026-06-25T01:30:58.307Z",
     "remediationGuardrails": {
       "autoEditArticles": false,
       "autoMarkReview": false,
@@ -1608,11 +1608,11 @@
         "Keep the article draft/noindex/humanReviewRequired until approval."
       ],
       "file": "content/blog/vercel-ai-gateway-multi-provider-guide.mdx",
-      "finalUrl": "https://ai.google.dev/gemini-api/docs?hl=sq",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs",
       "kind": "redirected-url",
       "manualChecklist": [
         "Original URL: https://ai.google.dev/docs",
-        "Final URL: https://ai.google.dev/gemini-api/docs?hl=sq",
+        "Final URL: https://ai.google.dev/gemini-api/docs",
         "Scopes: current-review, next-source-pack",
         "Confirm the replacement source covers the exact claim family.",
         "Prefer official documentation for implementation, pricing, SDK, deployment, or model behavior claims.",
