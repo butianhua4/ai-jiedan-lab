@@ -1,30 +1,36 @@
 ---
-title: Codex 和 GitHub 怎么配合：新手工作流
+title: git push 报错怎么解决？7 个常见 rejected / permission denied 原因和修复
 slug: codex-codex-github-4-36
 description: >-
-  用 Codex 辅助改代码时，GitHub 负责留下可复查记录。新手应先学会分支、提交、PR、diff、检查结果和客户授权边界，再把 AI
-  修改用于练习或交付。
+  git push 报错先看关键行再动手：rejected non-fast-forward、Permission denied publickey、密码认证已移除要用
+  PAT、unrelated histories、large files、no upstream——7 个最常见 git push 报错的真实原因和修复命令，附 Codex 工作流。
 date: '2026-06-01'
-updatedAt: '2026-06-14'
+updatedAt: '2026-06-25'
 category: Codex 新手教程
 tags:
-  - Codex 新手教程
-  - GitHub 工作流
-  - AI 工具实践
-  - 代码交付
+  - git
+  - git push 报错
+  - GitHub
+  - permission denied
+  - 非快进
+  - 报错排查
+  - Codex
 author: AI 工具指南
 status: published
-contentType: roadmap
+contentType: troubleshooting
 difficulty: beginner
-targetReader: 想把 Codex 生成或修改的代码通过 GitHub 安全记录下来的新手
+targetReader: git push 失败、想按报错关键行快速修复的开发者和 AI 工具新手
 searchIntent: informational
-primaryKeyword: Codex 和 GitHub 怎么配合
+primaryKeyword: git push 报错怎么解决
 secondaryKeywords:
-  - Codex GitHub 工作流
-  - AI 代码交付
-  - GitHub PR
-  - 新手教程
-sourceNotes: 待人工补充真实 PR 截图、GitHub 权限说明、客户授权流程和平台规则核对。
+  - git push rejected non-fast-forward
+  - Permission denied publickey
+  - Support for password authentication was removed
+  - failed to push some refs
+  - refusing to merge unrelated histories
+  - GitHub large files 100MB
+  - git no upstream branch
+sourceNotes: 已按真实 git/GitHub 报错重写；错误信息与修复对应 git 与 GitHub 官方行为，发布前建议补一张你本机真实 git push 报错截图增强 E-E-A-T。
 humanReviewRequired: true
 reviewChecklist:
   hasOriginalAngle: true
@@ -46,108 +52,123 @@ publishBatch: 2
 canonical: 'https://ai.aporet.com/blog/codex-codex-github-4-36'
 noindex: false
 ---
-# Codex 和 GitHub 怎么配合：新手工作流
+# git push 报错怎么解决？7 个常见 rejected / permission denied 原因和修复
 
-Codex 可以帮你读代码、改代码、解释报错，但 GitHub 才是记录改动、审查差异和交付结果的地方。新手不要把 AI 生成代码直接丢进主分支，而要学会用分支、提交、PR 和检查结果把过程留下来。
+`git push` 失败时，别急着 `--force`（强推会覆盖别人的提交）。先看报错的**第一行关键句**——git 的报错很明确，几乎一句话就能定位是远程比你新、是权限不对、还是认证方式过期。
 
-这篇仍是草稿。发布前需要人工核对 GitHub 当前界面、权限说明、PR 流程截图和客户授权规则。
+下面是 7 个最常见的 git push 报错、真实成因和对应命令，最后讲怎么用 Codex 辅助 GitHub 工作流。
 
-## 适合谁
+## 第一步：按报错关键句对号入座
 
-适合已经能用 Codex 修改小项目，但还不熟悉 GitHub 交付流程的新手。你可能只会基础 Git 命令，但愿意按步骤保存 diff、提交信息和验证结果。
+- `! [rejected] ... (fetch first)` / `non-fast-forward` → 远程比你新（见 ①）
+- `Permission denied (publickey)` → SSH 密钥（见 ②）
+- `Support for password authentication was removed` → 要用 PAT（见 ③）
+- `failed to push some refs` → 通常是 ① 的连带（见 ④）
+- `refusing to merge unrelated histories` → 两个无关历史（见 ⑤）
+- `remote: error: ... File ... is XXX MB; this exceeds GitHub's file size limit of 100 MB` → 大文件（见 ⑥）
+- `fatal: The current branch has no upstream branch` → 没设上游（见 ⑦）
 
-也适合准备做自由职业技术小单的人。客户更需要看到你如何改、如何测、如何说明风险，而不是只听你说“AI 已经完成”。
+## ① ! [rejected] non-fast-forward（远程比你新，最常见）
 
-## 不适合谁
+**成因**：你 push 之前，远程已经有别的提交（你或队友在网页/别处提交过），本地落后，git 拒绝覆盖。
 
-不适合还不会回滚、不看 diff、直接把代码推到主分支的人。也不适合处理客户生产仓库、组织权限、私有依赖、安全配置或敏感代码的新手。
-
-如果客户没有明确授权你访问仓库，或者要求你直接登录他的个人账号操作，这类事项应该先记录为客户侧授权待办，而不是继续开工。
-
-## GitHub 在流程里负责什么
-
-GitHub 的价值不是“存代码”这么简单。对新手来说，它至少承担四个角色：
-
-1. 记录：每一次改动都有提交和文件差异。
-2. 隔离：分支让练习改动不直接影响主线。
-3. 审核：PR 让你或客户可以逐行查看改动。
-4. 验证：CI、预览链接和评论可以把检查结果放在同一个地方。
-
-Codex 负责帮你推进任务，GitHub 负责让任务可追踪。两者配合的重点是“可复查”，不是“速度看起来很快”。
-
-## 具体步骤
-
-1. 从干净工作区开始，先运行 `git status`。
-2. 新建任务分支，分支名写清楚目的，例如 `fix/header-layout`。
-3. 让 Codex 只处理一个明确问题，不要一次改多个无关范围。
-4. 修改后查看 `git diff`，确认每个文件都和需求有关。
-5. 运行项目检查，例如 lint、build、测试或手动页面验证。
-6. 写提交信息，说明本次解决了什么，不要只写 “update”。
-7. 打开 PR，附上改动摘要、验证命令、截图和未验证事项。
-8. 客户确认后再合并；需要账号、环境变量或生产权限的事项列入明日待办。
-
-## 可以复制的 PR 说明
-
-```text
-## Summary
-- Updated:
-- Reason:
-- Out of scope:
-
-## Verification
-- npm run lint:
-- npm run build:
-- Manual check:
-
-## Risks / Follow-up
-- Needs customer confirmation:
-- Needs account or platform authorization:
-- Not verified:
+**修复**：先把远程拉下来再推，**别直接 `--force`**：
+```bash
+git pull --rebase origin main
+# 解决可能的冲突后
+git push origin main
 ```
 
-这段模板适合内部草稿和小型 PR。正式给客户时，要按真实项目删改，避免把未验证事项写成已完成。
+## ② Permission denied (publickey)（SSH 密钥问题）
 
-## 做项目时怎么用
+**成因**：用 SSH 地址（`git@github.com:...`）但本机没配 SSH key，或 key 没加到 GitHub。
 
-如果客户只想让你“直接改一下”，你也应该建议走测试分支或 PR。这样客户能看到改动，自己也能保留交付证据。即使是小 CSS 修复，也应该有清楚的截图、提交记录和验收方式。
+**修复**：
+```bash
+ssh -T git@github.com          # 测试连接
+ssh-keygen -t ed25519 -C "你的邮箱"   # 没有就生成
+cat ~/.ssh/id_ed25519.pub      # 把这串公钥加到 GitHub → Settings → SSH keys
+```
 
-如果客户没有 GitHub 仓库，可以先建议用压缩包或最小复现做诊断，但最终交付仍然需要版本记录。没有版本记录的交付，后面返工会很难说清责任。
+## ③ Support for password authentication was removed（密码认证已移除）
 
-## 一个新手可执行的练习
+**成因**：GitHub 早已不支持用账号密码 push HTTPS。要用 **Personal Access Token（PAT）** 当密码。
 
-可以先做一个很小的练习：新建分支，修改首页一段文案，运行构建，提交，再写一个 PR 说明。这个练习的目标不是炫技，而是确认自己是否能把从需求到交付的过程走完整。
+**修复**：GitHub → Settings → Developer settings → Personal access tokens 生成 token，push 时密码处粘贴这个 token。**token 等于密码，别提交进代码或公开。**
 
-练习时要特别看两件事。第一，Codex 是否只改了你要求的文件；如果它顺手改了无关配置，要停下来确认原因。第二，你是否能解释每一行关键 diff；如果解释不了，就把它标为需要复核，而不是直接合并。
+## ④ failed to push some refs（推送被拒）
 
-完成后，把 PR 链接、截图、命令结果和未验证事项写进练习记录。以后接小单时，这类记录比一句“我会用 Codex”更可信。
+**成因**：这是个笼统提示，**90% 是 ① 的非快进**，少数是分支保护规则。
 
-## 什么时候不要继续
+**修复**：先按 ① 处理（`git pull --rebase` 再 push）；如果是受保护分支，按仓库规则走 PR 而不是直接 push 到 main。
 
-如果客户要求你用他的个人账号登录 GitHub、直接改主分支、跳过 PR 审核，或者把组织权限交给你处理，就应该先暂停。新手可以协助写清楚需要哪些授权，但不应该在没有授权记录的情况下替客户调整权限。
+## ⑤ refusing to merge unrelated histories（无关历史）
 
-如果仓库里已经出现密钥、客户数据或生产配置，也不要继续普通交付流程。先记录风险，建议客户做权限和历史记录复核，再决定后续技术处理。
+**成因**：本地仓库和远程仓库是各自独立初始化的（比如远程建仓时勾了 README），两边没有共同祖先。
+
+**修复**：
+```bash
+git pull origin main --allow-unrelated-histories
+# 解决冲突后再 push
+```
+
+## ⑥ GitHub 大文件超 100MB（large files detected）
+
+**成因**：提交里有超过 100MB 的文件（视频、模型、打包产物），GitHub 直接拒收；而且文件已经进了历史，删了再提交也没用。
+
+**修复**：用 Git LFS 管理大文件，或把大文件从**历史**里移除：
+```bash
+# 先把它加进 .gitignore,再从历史移除(谨慎,会改写历史)
+git rm --cached 大文件路径
+echo "大文件路径" >> .gitignore
+```
+模型、数据集、构建产物这类，本来就不该进 git。
+
+## ⑦ no upstream branch（没设上游分支）
+
+**成因**：新建的本地分支第一次 push，没告诉 git 推到远程哪个分支。
+
+**修复**：
+```bash
+git push -u origin 你的分支名      # -u 一次设好上游,以后直接 git push
+```
+
+## 让 Codex 辅助 GitHub 工作流
+
+Codex 适合帮你**解释报错、起草提交信息、写 PR 描述**，但 push、合并、改历史这类操作要你自己确认：
+
+```text
+这是我的 git push 报错：[贴完整报错]
+请判断是哪类问题（远程更新 / 权限 / 认证 / 大文件），给出验证和修复命令，
+任何会 --force 或改写历史的命令都要单独标注风险，先别直接执行。
+```
+
+正确顺序永远是：建分支 → 小步提交 → push → 开 PR → 看 diff 再合，别把 AI 生成代码直接推 main。
+
+## 可以复制的诊断记录
+
+```text
+git push 报错诊断记录
+报错第一行：
+远程地址（SSH git@ / HTTPS https）：
+是否已 git pull --rebase：
+认证方式（SSH key / PAT）：
+是否涉及大文件：
+当前分支 / 目标分支：
+下一步：
+```
 
 ## 风险提醒
 
-不要把客户私有仓库、截图、代码片段或密钥放进公开作品集。不要把 token、`.env`、本地缓存、日志里的客户数据提交到 GitHub。不要在没有授权的情况下邀请自己进入客户组织或修改仓库权限。
+- `git push --force` 会覆盖远程提交，多人协作时几乎不要用；非要用也用 `--force-with-lease`。
+- PAT、SSH 私钥、token 等同密码，别提交进仓库、别公开。客户私有仓库的权限改动先确认授权。
 
-如果 PR 涉及登录、支付、数据库、隐私数据、安全策略或生产部署，必须人工复核，并准备回滚方案。
+## 相关工具
 
-## 明日待办
-
-- 补充一份匿名 PR 截图和验证记录。
-- 人工核对 GitHub 权限、协作者邀请和 PR 流程说明。
-- 准备客户侧授权清单：仓库访问、分支权限、CI 权限、预览链接。
-- 检查是否需要单独写“如何避免提交密钥”的草稿。
-
-## 可以继续看的内容
-
+- [报错解释器](/tools/error-explainer)：贴 git 报错自动归类
 - [Codex 工具页](/tools/codex)
-- [报错解释器](/tools/error-explainer)
-- [模板下载](/templates)
+- [项目交付清单](/tools/proposal-generator)
 
 ## 免责声明
 
-本文仅供学习和交付流程整理，不构成法律、安全或职业建议。涉及客户仓库、账号、密钥、生产分支和组织权限时，需要明确授权并人工复核。
-
-CTA：你可以先用 [报错解释器](/tools/error-explainer) 整理验证日志，再用 [Proposal 生成器](/tools/proposal-generator) 写一版 PR 交付说明。
+本文中的报错信息与修复对应 git 与 GitHub 官方行为，供学习和排查参考；具体项目涉及客户私有仓库、权限、token 时，需明确授权并人工复核。

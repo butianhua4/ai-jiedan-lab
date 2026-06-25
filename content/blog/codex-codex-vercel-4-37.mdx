@@ -1,28 +1,36 @@
 ---
-title: Codex 部署 Vercel 前检查什么
+title: Vercel 部署失败怎么办？8 个常见 build 报错原因和修复
 slug: codex-codex-vercel-4-37
-description: 用 Codex 改完项目后准备部署到 Vercel，不要直接点发布。先检查构建命令、环境变量、路由、静态资源、预览链接、回滚方案和客户授权边界。
+description: >-
+  Vercel 部署失败先看 build 日志再动手：Command exited with 1、Module not found、环境变量缺失、Output
+  Directory 配错、Node 版本不符、构建超时、部署后 404、FUNCTION_INVOCATION_FAILED——8 个最常见 Vercel build 报错的真实原因和修复，附 Codex 辅助排查。
 date: '2026-06-01'
-updatedAt: '2026-06-14'
+updatedAt: '2026-06-25'
 category: Codex 新手教程
 tags:
-  - Codex 新手教程
-  - Vercel 部署
-  - AI 工具实践
-  - 交付检查
+  - Vercel
+  - Vercel 部署失败
+  - build failed
+  - Next.js
+  - 环境变量
+  - 报错排查
+  - Codex
 author: AI 工具指南
 status: published
-contentType: tutorial
+contentType: troubleshooting
 difficulty: beginner
-targetReader: 用 Codex 修改项目后准备部署到 Vercel 的新手
+targetReader: 把项目部署到 Vercel 时 build 报错、想按日志快速定位的开发者和新手
 searchIntent: informational
-primaryKeyword: Codex 部署 Vercel 前检查什么
+primaryKeyword: Vercel 部署失败怎么办
 secondaryKeywords:
-  - Vercel 部署检查
-  - Codex 交付
-  - Next.js 部署
-  - 新手教程
-sourceNotes: 待人工核对 Vercel 官方文档、项目脚本、环境变量处理方式、预览部署截图和客户授权流程。
+  - Vercel build failed
+  - Module not found Vercel
+  - Vercel 环境变量缺失
+  - No Output Directory named public
+  - Vercel Node 版本
+  - 部署后 404 NOT_FOUND
+  - FUNCTION_INVOCATION_FAILED
+sourceNotes: 已按真实 Vercel build 报错重写；错误信息与修复对应 Vercel 官方部署行为，发布前建议补一张你项目的真实 build 日志截图增强 E-E-A-T。
 humanReviewRequired: true
 reviewChecklist:
   hasOriginalAngle: true
@@ -44,105 +52,117 @@ publishBatch: 2
 canonical: 'https://ai.aporet.com/blog/codex-codex-vercel-4-37'
 noindex: false
 ---
-# Codex 部署 Vercel 前检查什么
+# Vercel 部署失败怎么办？8 个常见 build 报错原因和修复
 
-Codex 帮你改完代码后，部署到 Vercel 不是最后一步，而是另一轮检查的开始。新手最容易犯的错，是本地看起来能跑就直接发布，结果线上构建失败、环境变量缺失、页面空白或客户不知道怎么验收。
+本地 `npm run build` 能过、推上去 Vercel 却 build 失败，是新手最常踩的坑。原因几乎都写在 **Vercel 的 Build Logs 里**——别急着重试或改配置，先去 Deployment 页打开完整构建日志，看红色那几行。
 
-这篇仍是草稿。发布前需要人工核对 Vercel 官方文档、当前项目脚本、部署截图和真实回滚流程。
+下面是 8 个最常见的 Vercel 部署报错、真实成因和修复，最后讲怎么让 Codex 辅助读日志。
 
-## 适合谁
+## 第一步：去哪看真正的报错
 
-适合已经用 Codex 修改过前端项目，并准备把练习项目或客户测试项目部署到 Vercel 的新手。你需要会看 `git diff`，会运行本地构建命令，知道部署前要先确认环境变量和分支。
+Vercel 仪表板 → 失败的 Deployment → **Build Logs**。报错关键句通常是这几类，对号入座往下看：
 
-也适合准备接“帮我部署到 Vercel”这类小单的人。部署本身可能很快，但部署前的检查、客户授权和验收边界必须说清楚。
+- `Command "npm run build" exited with 1` → 构建命令本身失败（见 ①）
+- `Module not found` / `Can't resolve` → 找不到模块（见 ②）
+- `Environment Variable ... references Secret which does not exist` / 运行时 undefined → 环境变量（见 ③）
+- `No Output Directory named "public"/"dist" found` → 输出目录配错（见 ④）
+- `Found invalid Node.js Version` / `engine` → Node 版本（见 ⑤）
+- `Error: The build exceeded the maximum allowed runtime` → 构建超时（见 ⑥）
+- 部署成功但访问 `404: NOT_FOUND` → 路由/输出（见 ⑦）
+- `500` / `FUNCTION_INVOCATION_FAILED` → 运行时函数报错（见 ⑧）
 
-## 不适合谁
+## ① Command "npm run build" exited with 1（构建命令失败）
 
-不适合一上来就处理客户生产站、商业域名、支付回调、登录系统、数据库迁移或组织级 Vercel 账号的人。这些场景牵涉权限、费用、隐私和回滚责任，新手不应该独立操作。
+**成因**：本地有缓存或没开严格校验，线上干净环境把警告当错误（最常见是 TypeScript 类型错、ESLint 错、缺依赖）。
 
-如果客户只给一句“deploy it”，但没有提供仓库、构建命令、环境变量说明、目标分支和验收标准，不适合直接报价或开工。
+**修复**：用干净环境本地复现，别信增量缓存：
+```bash
+rm -rf node_modules .next && npm ci && npm run build
+```
+本地复现出同样的红字，按那条错误改；线上和本地 Node 版本要一致（见 ⑤）。
 
-## 部署前先检查什么
+## ② Module not found / Can't resolve（找不到模块）
 
-先从本地项目开始，不要直接依赖平台提示。重点看这些项目：
+**成因**：两个高频原因——(a) **大小写**：本地 macOS/Windows 不区分大小写，Vercel 的 Linux 区分，`import './Header'` 实际文件叫 `header.tsx` 就会挂；(b) 依赖装到了 `devDependencies`，生产构建装不到。
 
-1. `package.json` 里是否有明确的 build 脚本。
-2. 本地 `npm run build` 是否通过。
-3. 是否新增环境变量，变量名是否已记录，值是否不该提交到仓库。
-4. 是否有图片、字体、静态文件路径大小写问题。
-5. 是否改动路由、sitemap、robots、canonical 或 SEO 相关逻辑。
-6. 是否有 API、数据库、鉴权、支付或第三方服务依赖。
-7. 是否能通过预览链接验收，而不是直接替换生产站。
+**修复**：核对 import 路径大小写和真实文件名完全一致；构建需要的包放进 `dependencies`：
+```bash
+npm install <包名> --save        # 进 dependencies,不是 --save-dev
+```
 
-这些检查看起来琐碎，但能把很多线上问题挡在发布前。
+## ③ 环境变量缺失（references Secret / undefined）
 
-## 具体步骤
+**成因**：本地 `.env` 有的变量，Vercel 项目里没配；或前端要用的变量没加 `NEXT_PUBLIC_` 前缀。
 
-1. 用 `git status` 和 `git diff` 确认本次部署包含哪些改动。
-2. 运行项目已有检查，例如 lint、测试、类型检查和构建。
-3. 列出所有环境变量，只记录变量名和用途，不记录敏感值。
-4. 确认目标分支、预览环境和生产环境的区别。
-5. 如果是客户项目，让客户在平台内完成必要授权，不要把账号密码发给你。
-6. 先生成预览部署，让客户按页面、表单、移动端和核心流程验收。
-7. 记录部署 URL、提交 SHA、检查命令和已知限制。
-8. 生产发布前准备回滚方案，至少知道上一版部署在哪里。
+**修复**：Vercel → Settings → Environment Variables 补齐，**勾对 Production 环境**，然后**重新部署**（加完变量不会自动生效，必须 redeploy）。前端可读的变量必须以 `NEXT_PUBLIC_` 开头。
 
-## 可以复制的部署检查表
+## ④ No Output Directory named "public"/"dist" found（输出目录配错）
+
+**成因**：Vercel 的 Framework Preset 或 Output Directory 和你项目实际产物目录对不上（Vite 是 `dist`，CRA 是 `build`，Next.js 自动识别）。
+
+**修复**：Settings → Build & Development Settings，把 Framework Preset 选对，或手动把 Output Directory 改成项目真实的产物目录。
+
+## ⑤ Found invalid Node.js Version（Node 版本不符）
+
+**成因**：项目 `package.json` 的 `engines.node` 或依赖要求的 Node 版本，和 Vercel 默认版本不一致。
+
+**修复**：在 Settings → Node.js Version 选和本地一致的 LTS 版本；或在 `package.json` 写明：
+```json
+"engines": { "node": "20.x" }
+```
+
+## ⑥ The build exceeded the maximum allowed runtime（构建超时）
+
+**成因**：依赖过多、生成页面过多（比如几千个静态页）、或构建脚本里有死循环、超大数据处理。
+
+**修复**：减少构建期的重活；把超大数据生成挪到运行时或增量生成；精简页面数量（页太多本身也拖累收录）。
+
+## ⑦ 部署成功但 404: NOT_FOUND（访问页面 404）
+
+**成因**：构建过了但路由对不上——`basePath` 配错、SPA 没配 rewrites、或输出目录里根本没有那个页面。
+
+**修复**：Next.js 确认页面文件在正确的 `app/` 或 `pages/` 路径；纯前端 SPA 在 `vercel.json` 加 rewrites 把所有路由指向 `index.html`。
+
+## ⑧ 500 / FUNCTION_INVOCATION_FAILED（运行时函数报错）
+
+**成因**：构建成功，但 serverless 函数运行时崩了——常见是运行时读不到环境变量、用了 Node 不支持的 API、或没处理异步异常。
+
+**修复**：去 Vercel → 该 Deployment → **Runtime Logs**（不是 Build Logs）看运行时报错；按那条 stack trace 修，重点查 ③ 环境变量和未捕获的 async 异常。
+
+## 让 Codex 辅助读部署日志
+
+把**完整 Build/Runtime 日志**贴给 Codex，让它定位而不是盲改：
 
 ```text
-Vercel 部署前检查
-
-项目仓库：
-目标分支：
-本次提交：
-构建命令：
-本地构建结果：
-新增环境变量名称：
-预览链接：
-需要客户确认的页面：
-需要客户侧授权的事项：
-回滚方式：
-未验证风险：
+这是我的 Vercel 部署日志：[贴完整日志]
+请判断是 build 阶段还是 runtime 阶段失败、指出关键报错行和最可能原因，
+先给只读的验证步骤，不要直接改我的 vercel.json 或环境变量。
 ```
 
-本地常用检查命令：
+## 可以复制的诊断记录
 
-```bash
-git status
-git diff
-npm run lint
-npm run build
+```text
+Vercel 部署失败诊断记录
+失败阶段（Build / Runtime）：
+关键报错行：
+本地 npm ci && npm run build 是否复现：
+本地 Node 版本 / Vercel Node 版本：
+缺失的环境变量：
+Framework Preset / Output Directory：
+下一步：
 ```
-
-如果项目还有测试脚本，也要先运行。没有测试脚本时，要写清楚“未覆盖自动化测试”，不要把构建通过说成全流程通过。
-
-## 做项目时怎么定范围
-
-部署单可以分成三段：第一段是部署前诊断，确认项目能不能构建；第二段是预览部署，给客户一个可验收链接；第三段才是生产发布或域名配置。
-
-新手更适合先做前两段。生产发布、域名、团队账号、计费设置和敏感环境变量，应该让客户在自己的账号里完成或明确授权后再处理。
 
 ## 风险提醒
 
-不要提交 `.env`、token、私钥、客户数据或本地缓存。不要在没有客户确认的情况下改生产域名。不要把预览环境当成生产环境，也不要把生产发布当成一个普通按钮。
+- 别把含密钥的 `.env` 提交进仓库；环境变量在 Vercel 后台配，别写进代码。
+- 客户项目的生产部署、域名、环境变量改动，先确认授权再动。
 
-如果部署牵涉数据库迁移、支付回调、登录权限、组织账号、费用账单或客户域名 DNS，需要人工复核，并把客户侧授权事项列入明日待办。
+## 相关工具
 
-## 明日待办
-
-- 人工核对 Vercel 官方部署、环境变量和回滚说明。
-- 准备一张预览部署验收截图，确保不含客户信息。
-- 写一份客户侧授权清单：仓库、Vercel 项目、环境变量、域名。
-- 检查是否需要把生产发布拆成单独服务范围。
-
-## 可以继续看的内容
-
+- [报错解释器](/tools/error-explainer)：贴部署日志自动归类报错
 - [Codex 工具页](/tools/codex)
 - [项目报价助手](/tools/pricing-calculator)
-- [模板下载](/templates)
 
 ## 免责声明
 
-本文仅供学习和部署前检查参考，不构成官方文档、法律建议或职业承诺。涉及客户账号、域名、环境变量、账单和生产环境时，需要明确授权与人工复核。
-
-CTA：部署前可以先用 [报错解释器](/tools/error-explainer) 整理构建日志，再用 [Proposal 生成器](/tools/proposal-generator) 写出预览部署和生产发布的边界。
+本文中的报错信息与修复对应 Vercel 官方部署行为，供学习和排查参考；具体项目涉及客户域名、环境变量、生产部署时，需明确授权并人工复核。
