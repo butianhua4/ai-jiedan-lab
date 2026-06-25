@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T05:43:07.973Z",
+  "generatedAt": "2026-06-25T10:25:56.839Z",
   "guardrails": {
     "autoEditArticles": false,
     "autoMarkReview": false,
@@ -16,7 +16,7 @@
       "stopBefore": "Every mark:review command requires explicit human approval. publish --confirm commands are intentionally not included."
     },
     "actionBoardReadyTasks": 2,
-    "contentFreshnessGeneratedAt": "2026-06-25T05:43:07.488Z",
+    "contentFreshnessGeneratedAt": "2026-06-25T10:25:56.366Z",
     "contentFreshnessGuardrails": {
       "autoPublish": false,
       "note": "This report flags freshness risk for manual review. It does not verify live facts, claim traffic, or change article status."

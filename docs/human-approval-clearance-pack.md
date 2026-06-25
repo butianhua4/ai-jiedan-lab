@@ -1,6 +1,6 @@
 # Human Approval Clearance Pack
 
-Generated at: 2026-06-25T05:43:22.508Z
+Generated at: 2026-06-25T10:26:11.330Z
 
 This report is read-only. It consolidates the source, SEO, copydesk, and link checks needed before a human reviewer approves any mark:review action.
 
