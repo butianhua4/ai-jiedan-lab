@@ -1,3 +1,5 @@
+import { site } from "@/data/site";
+
 export const metadata = {
   title: "服务条款",
   description: "AI 工具指南服务条款与使用须知。",
@@ -15,6 +17,13 @@ export default function TermsPage() {
         <p>本站的工具与内容按“现状”提供，不保证完全准确、及时或不中断。对于因使用本站内容或工具而造成的任何直接或间接损失，本站在法律允许范围内不承担责任。</p>
         <p>本站尊重知识产权。若你认为本站内容侵犯了你的合法权益，请通过联系页与我们沟通，我们会及时核实处理。</p>
         <p>本站保留随时更新本服务条款的权利。条款更新后，你继续访问或使用本站即视为接受更新后的条款。</p>
+        <p>
+          如对本条款有疑问，可发送邮件至{" "}
+          <a className="font-medium text-brand hover:underline" href={`mailto:${site.email}`}>
+            {site.email}
+          </a>
+          （备用 {site.backupEmail}）。
+        </p>
       </div>
     </main>
   );

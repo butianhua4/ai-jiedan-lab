@@ -13,7 +13,8 @@ export const site = {
     "Practical AI deployment, agent, RAG, prompt, automation, and troubleshooting guides for builders targeting Google search in the United States and global English-speaking markets.",
   ogImage: "/og-image.svg",
   author: "AI Tools Guide",
-  email: "hello@example.com",
+  email: "bu834156@gmail.com",
+  backupEmail: "3321059434@qq.com",
   targetMarkets: ["US", "global"],
   languages: ["zh-CN", "en-US"],
 };

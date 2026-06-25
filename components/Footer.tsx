@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const footerLinks = [
   ["/about", "About"],
+  ["/contact", "Contact"],
   ["/privacy", "Privacy"],
   ["/terms", "Terms"],
   ["/disclaimer", "Disclaimer"],

@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { site } from "@/data/site";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -29,7 +30,11 @@ export function ContactForm() {
         <p className="text-sm font-medium text-brand">联系表单预留</p>
         <h2 className="mt-2 text-xl font-semibold text-ink">描述你的问题</h2>
         <p className="mt-2 text-sm leading-6 text-gray-600">
-          第一版不接后端提交。你可以先填写生成一份咨询草稿，再通过邮箱或后续接入的 Formspree / Resend / Supabase 发送。
+          第一版不接后端提交。你可以先填写生成一份咨询草稿，再发送到联系邮箱{" "}
+          <a className="font-medium text-brand hover:underline" href={`mailto:${site.email}`}>
+            {site.email}
+          </a>
+          （备用 {site.backupEmail}）。后续会接入 Formspree / Resend / Supabase。
         </p>
       </div>
 
@@ -90,7 +95,13 @@ export function ContactForm() {
 
       {submitted ? (
         <div className="mt-5 rounded-md bg-blue-50 p-4 text-sm leading-6 text-blue-950">
-          <p className="font-semibold">表单后端即将上线。当前请先把下面草稿保存，用联系邮箱发送。</p>
+          <p className="font-semibold">
+            表单后端即将上线。当前请先把下面草稿保存，发送到{" "}
+            <a className="underline" href={`mailto:${site.email}`}>
+              {site.email}
+            </a>
+            。
+          </p>
           <pre className="mt-3 whitespace-pre-wrap rounded-md bg-white p-3 text-xs leading-5 text-gray-700">{summary}</pre>
         </div>
       ) : null}

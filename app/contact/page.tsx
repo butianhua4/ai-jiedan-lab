@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ContactForm } from "@/components/ContactForm";
+import { site } from "@/data/site";
 import {
   getBlogPath,
   getClusterPath,
@@ -69,6 +70,25 @@ export default function ContactPage() {
           <Link className="rounded-md border border-gray-300 bg-white px-4 py-3 text-center text-sm font-semibold text-ink" href="/templates">
             先下载清单
           </Link>
+        </div>
+
+        <div className="mt-6 rounded-md border border-gray-200 bg-white p-4">
+          <p className="text-sm font-medium text-ink">联系邮箱</p>
+          <div className="mt-2 flex flex-col gap-1 text-sm text-gray-600">
+            <p>
+              主要邮箱：
+              <a className="font-medium text-brand hover:underline" href={`mailto:${site.email}`}>
+                {site.email}
+              </a>
+            </p>
+            <p>
+              备用邮箱：
+              <a className="font-medium text-brand hover:underline" href={`mailto:${site.backupEmail}`}>
+                {site.backupEmail}
+              </a>
+            </p>
+          </div>
+          <p className="mt-2 text-xs leading-5 text-gray-500">建议优先邮件联系，标题写清问题类型，正文附上完整报错和项目链接。一般 1–2 个工作日内回复。</p>
         </div>
       </section>
 
