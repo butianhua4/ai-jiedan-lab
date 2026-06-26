@@ -1,30 +1,35 @@
 ---
-title: npm run dev 能跑但 build 失败怎么办
+title: npm run dev 能跑但 build 失败？7 个最常见原因和修复
 slug: dev-works-build-fails
 description: >-
-  给中文新手的 build 失败排查流程：先区分 dev 和 build，再检查
-  TypeScript、lint、环境变量、静态生成、依赖版本、大小写路径和部署环境差异。
+  dev 能跑 build 却失败，几乎都是严格校验和环境差异：TypeScript 类型错、ESLint 当错误、SSR 里用了
+  window、环境变量缺失、import 大小写、依赖装错位置、动态导入——7 个最常见原因的真实成因和修复命令。
 date: '2026-06-03'
-updatedAt: '2026-06-14'
-category: 报错解决
+updatedAt: '2026-06-26'
+category: Node.js 报错与工程问题
 tags:
-  - 报错解决
+  - npm run build
   - build 失败
-  - npm run dev
-  - AI 工具实践
+  - TypeScript
+  - SSR
+  - 环境变量
+  - 报错排查
+  - Codex
 author: AI 工具指南
 status: published
-contentType: tutorial
+contentType: troubleshooting
 difficulty: beginner
-targetReader: 本地 dev 能启动，但 build、部署或 CI 失败的新手。
+targetReader: 本地 dev 正常、npm run build 却失败、想按报错快速定位的开发者
 searchIntent: informational
-primaryKeyword: npm run dev 能跑但 build 失败怎么办
+primaryKeyword: npm run dev 能跑但 build 失败
 secondaryKeywords:
-  - npm run build 失败
-  - Next.js build
-  - Vercel build failed
-  - AI 工具实践
-sourceNotes: 人工重写草稿；公开前仍需人工复核 Next.js、Vercel、包管理器、项目日志、环境变量和客户授权边界。
+  - dev works build fails
+  - window is not defined build
+  - TypeScript build 类型错误
+  - ESLint build failed
+  - import 大小写 Linux
+  - 环境变量 build 缺失
+sourceNotes: 已按真实 build 失败原因重写；成因与修复对应 TypeScript / Next.js / Node 构建行为，发布前建议补一张你本机真实 build 报错截图增强 E-E-A-T。
 humanReviewRequired: true
 reviewChecklist:
   hasOriginalAngle: true
@@ -46,62 +51,99 @@ publishBatch: 15
 canonical: 'https://ai.aporet.com/blog/dev-works-build-fails'
 noindex: false
 ---
-# npm run dev 能跑但 build 失败怎么办
+# npm run dev 能跑但 build 失败？7 个最常见原因和修复
 
-`npm run dev` 能跑，不代表项目已经能上线。dev 模式通常更宽松，目标是让你本地开发；build 模式会做更严格的类型检查、lint、静态生成、依赖打包和生产配置校验。所以“本地页面能打开，但 build 失败”是新手很常见的卡点。
+`npm run dev` 一切正常，`npm run build` 却一堆红字——这不是玄学。**dev 是宽松的开发模式，build 是严格的生产编译**，两者的校验强度和运行环境不一样。dev 帮你跑起来，build 帮你抓出真正会上线出问题的代码。
 
-先给保守结论：不要把 build 失败当成部署平台的问题。先在本地复现 `npm run build`，保存完整日志，找出失败阶段，再判断是 TypeScript、lint、环境变量、路径大小写、静态生成、依赖版本，还是部署环境差异。短表可以看 [build 失败检查清单](/blog/dev-works-build-fails-checklist)，误区复盘看 [build 失败常见错误和解决步骤](/blog/dev-works-build-fails-mistakes)。
+先看 build 日志里第一条报错，再按下面对号入座。
 
-## 适合谁
+## 为什么 dev 过、build 不过
 
-适合本地 `npm run dev` 能打开页面，但 `npm run build`、Vercel 部署、CI 检查失败的新手。你可能正在做 Next.js、React、静态站、小工具页或作品集项目。
+- dev 用增量编译、不做完整类型检查、不跑生产优化；
+- build 会做**全量 TypeScript 类型检查、ESLint、Tree-shaking、SSR 预渲染**，任何一步出错就整体失败。
 
-也适合准备接“小网站部署前检查”任务的人。客户说“本地能跑，为什么上线失败”，你需要先拆日志和环境差异，而不是直接改一堆文件。
+所以 build 失败基本是 4 个方向：类型/lint、SSR 预渲染、环境差异、依赖位置。
 
-## 不适合谁
+## ① TypeScript 类型错误（dev 不拦，build 拦）
 
-不适合在客户生产项目里直接关掉 TypeScript、关掉 lint、删除环境变量校验或绕过 build 检查的人。build 失败往往是在提醒你生产环境会出问题，不能把检查当成麻烦。
+**成因**：dev 默认不阻断类型错误，但 `next build` / `tsc` 会把类型错当成失败。
 
-也不适合没有仓库、没有日志、没有验证命令的任务。客户只给一句“build failed”，你最多先问材料，不能承诺修好。
+**修复**：本地先单独跑类型检查，把红字一次看全：
+```bash
+npx tsc --noEmit
+```
+按报错逐个改；临时绕过可在该行上面加 `// @ts-expect-error` 并写原因，但别滥用。
+
+## ② ESLint 错误被当成 build 失败
+
+**成因**：项目配置了 build 时跑 lint，未使用变量、缺 key、依赖数组不全等被当错误。
+
+**修复**：本地跑 `npm run lint` 看具体规则；该修的修。确实要先上线，可在 `next.config` 里临时 `eslint: { ignoreDuringBuilds: true }`，但这是欠债不是解决。
+
+## ③ SSR 里用了 window / document / localStorage
+
+**成因**：build 要在 Node 环境预渲染页面，那里**没有 `window`**，于是报 `window is not defined` / `document is not defined`。
+
+**修复**：把访问浏览器 API 的代码挪进 `useEffect`（只在客户端跑），或动态导入禁用 SSR：
+```js
+import dynamic from "next/dynamic";
+const Chart = dynamic(() => import("./Chart"), { ssr: false });
+```
+
+## ④ 环境变量 build 时缺失
+
+**成因**：本地 `.env` 有的变量，CI / 构建环境没有；或前端要用的变量没加 `NEXT_PUBLIC_` 前缀，build 后变 `undefined`。
+
+**修复**：在构建平台（Vercel / CI）补齐环境变量；浏览器要读的变量必须 `NEXT_PUBLIC_` 开头；别把变量写死进代码。
+
+## ⑤ import 路径大小写（本地不敏感，Linux 敏感）
+
+**成因**：macOS / Windows 文件系统不区分大小写，本地 `import './Header'` 能找到 `header.tsx`；CI 的 Linux 区分，直接 `Module not found`。
+
+**修复**：核对每个 import 的大小写和真实文件名完全一致。这条在本地几乎无法复现，要特别留意。
+
+## ⑥ 依赖装在 devDependencies，生产构建装不到
+
+**成因**：构建时需要的包被 `--save-dev` 装进了 `devDependencies`，生产安装（`npm ci --omit=dev`）装不到。
+
+**修复**：构建/运行时需要的包放进 `dependencies`：
+```bash
+npm install <包名> --save
+```
+
+## ⑦ 动态导入 / 未使用变量在严格模式报错
+
+**成因**：生产编译开严格模式后，未使用的 import、不可达代码、错误的动态导入路径会被标记为错误。
+
+**修复**：按报错删未使用代码；动态导入的路径不能是完全动态的变量，保留可分析的字符串前缀。
+
+## 一招稳定复现：用干净环境本地 build
+
+别信本地缓存，把环境清干净再 build，复现出和线上一样的报错：
+```bash
+rm -rf node_modules .next && npm ci && npm run build
+```
+本地和构建平台的 Node 版本也要一致（`node -v` 对齐）。
+
+## 让 Codex 辅助定位
+
+```text
+这是我的 npm run build 报错日志：[贴完整日志]
+我本地 npm run dev 正常。请判断属于类型 / lint / SSR / 环境变量 / 依赖 哪一类，
+指出关键报错行，先给只读验证步骤，不要直接改我的 next.config 或 tsconfig。
+```
 
 ## 风险提醒
 
-build 失败的风险是“dev 假象”。页面在本地能打开，可能只是因为某条路由没访问、某个组件没渲染、某个环境变量在本地存在、某个大小写路径在 Windows 上没暴露。生产构建会把更多页面和依赖一起检查出来。
+- 用 `ignoreBuildErrors` / `ignoreDuringBuilds` 强行让 build 过，是把问题推到线上，能修就别用。
+- 改 `tsconfig`、`next.config`、依赖文件前先有 Git 记录，方便回滚。
 
-如果排查需要登录 Vercel、GitHub、私有仓库、客户环境变量后台、生产数据库或真实 token，先记录为待确认事项。没有授权前，只分析日志和项目文件，不操作客户账号。
+## 相关工具
 
-## 具体步骤
-
-1. 保存完整日志。复制 `npm run build` 的完整输出，不要只保存最后一行。
-2. 确认本地复现。先在项目根目录运行 build，不要只看部署平台截图。
-3. 找失败阶段。看是 TypeScript、lint、静态生成、依赖安装、图片处理、路由生成，还是环境变量校验。
-4. 检查环境变量。确认 build 需要哪些变量，哪些可以为空，哪些必须由客户确认。
-5. 检查路径大小写。Windows 本地可能不敏感，Linux 部署环境可能敏感。
-6. 检查动态代码。静态生成时访问浏览器对象、读取不存在的数据、调用未授权接口，都可能失败。
-7. 修复后运行验证。至少跑 build，必要时再跑 lint、test 和关键页面检查。
-
-## dev 和 build 有什么区别
-
-dev 模式强调开发速度，很多问题只有访问到某个页面或组件时才出现。build 模式强调生产产物，会提前检查更多路径和类型，并把页面生成、服务端代码、客户端代码和依赖打包放到一起验证。
-
-所以不要说“dev 能跑，说明代码没问题”。更准确的说法是“dev 只证明本地开发服务器能启动，并不能证明生产构建通过”。这个区别是项目沟通里很重要的一句。
-
-## 常见原因
-
-第一类是类型错误。TypeScript 在 build 阶段更严格，未处理的 `undefined`、错误 props、导入类型不匹配都会暴露。第二类是 lint 或格式规则。第三类是环境变量缺失，尤其是部署平台里没有配置本地 `.env` 里的变量。
-
-第四类是静态生成错误，比如页面在 build 时调用了运行时才有的数据。第五类是路径大小写问题，比如导入 `Button` 但文件叫 `button`。第六类是依赖版本差异，尤其是锁文件、Node 版本和包管理器不一致。
-
-## 项目前怎么处理
-
-先把任务定义为“build 失败诊断”。交付内容可以是失败阶段、可能原因、低风险修复建议和客户待确认事项。只有当日志完整、仓库可访问、验证命令明确、授权清楚时，才进入修复。
-
-需要客户沟通稿时，可以用 [Proposal 生成器](/tools/proposal-generator) 起草问题；需要估算诊断和验证时间时，用 [报价计算器](/tools/pricing-calculator)。
-
-## CTA：下一步
-
-在项目根目录运行 `npm run build`，保存完整日志。然后把失败阶段、报错文件、环境变量、Node 版本、包管理器和验证命令写下来。遇到日志看不懂时，用 [报错解释器](/tools/error-explainer) 先拆原因。
+- [报错解释器](/tools/error-explainer)：贴 build 日志自动归类
+- [Codex 工具页](/tools/codex)
+- [项目报价助手](/tools/pricing-calculator)
 
 ## 免责声明
 
-本文是学习和排查流程，不构成法律、财务、安全或职业承诺。实际修复需要结合项目框架、真实日志、部署环境、客户授权和验证结果人工判断。
+本文成因与修复对应 TypeScript / Next.js / Node 构建的通用行为，供学习和排查参考；具体项目涉及客户代码、生产部署时需明确授权并人工复核。
