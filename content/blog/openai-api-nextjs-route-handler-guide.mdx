@@ -1,30 +1,34 @@
 ---
-title: OpenAI API 接入 Next.js 怎么做：Route Handler 新手清单
+title: OpenAI API 接入 Next.js 怎么做？Route Handler + 流式 + 报错处理完整流程
 slug: openai-api-nextjs-route-handler-guide
 description: >-
-  面向新手整理 OpenAI API 接入 Next.js 的基本流程，覆盖服务端 Route Handler、环境变量、Responses
-  API、错误处理、成本和安全边界。
+  在 Next.js 接 OpenAI API 的正确姿势：API Key 放服务端、用 App Router 的 Route Handler 调用、流式返回、处理
+  401/429/quota 报错，绝不在前端暴露 key。附可直接用的 route.ts 代码。
 date: '2026-06-05'
-updatedAt: '2026-06-14'
+updatedAt: '2026-06-26'
 category: AI 基建
 tags:
   - OpenAI API
   - Next.js
   - Route Handler
-  - AI 应用
+  - 流式响应
+  - API Key 安全
+  - AI 接入
 author: AI 工具指南
 status: published
 contentType: tutorial
 difficulty: beginner
-targetReader: 想在 Next.js 应用里安全调用 OpenAI API 的前端或全栈新手
+targetReader: 想在 Next.js 项目里安全调用 OpenAI API、做聊天或生成功能的开发者
 searchIntent: informational
-primaryKeyword: OpenAI API Next.js
+primaryKeyword: OpenAI API 接入 Next.js
 secondaryKeywords:
-  - Next.js 调用 OpenAI
-  - OpenAI Responses API
-  - Next.js Route Handler
-  - AI 应用部署
-sourceNotes: 参考 OpenAI 官方 Responses API 文档整理；正式发布前需要人工核对 OpenAI 和 Next.js 最新文档。
+  - Next.js Route Handler OpenAI
+  - OpenAI 流式返回 streaming
+  - OpenAI API key 放哪里
+  - openai 401 Incorrect API key
+  - openai 429 rate limit
+  - app/api route.ts OpenAI
+sourceNotes: 已按真实 OpenAI SDK 与 Next.js App Router 行为重写；接口形态稳定，具体模型名与价格随官方变动，发布前建议核对 OpenAI 官方文档当前模型。
 humanReviewRequired: true
 reviewChecklist:
   hasOriginalAngle: true
@@ -37,8 +41,8 @@ reviewChecklist:
 monetization:
   affiliateSlots:
     - 工具导航
-  templateCTA: 下载 AI API 接入检查表
-  serviceCTA: 联系人工协助接入 OpenAI API
+  templateCTA: 下载模板包
+  serviceCTA: 联系人工协助
   adSlots:
     - article-bottom
 qualityScore: 100
@@ -46,80 +50,104 @@ publishBatch: 23
 canonical: 'https://ai.aporet.com/blog/openai-api-nextjs-route-handler-guide'
 noindex: false
 ---
-# OpenAI API 接入 Next.js 怎么做：Route Handler 新手清单
+# OpenAI API 接入 Next.js 怎么做？Route Handler + 流式 + 报错处理
 
-很多人搜索“OpenAI API Next.js”，是想把聊天、总结、生成文案、错误解释或知识库问答接进网页应用。新手最重要的一点是：模型 API 应该从服务端调用，API Key 不应该放进浏览器端代码。Next.js 的 Route Handler 可以作为前端和 OpenAI API 之间的服务端接口。
+在 Next.js 里接 OpenAI API，第一条铁律：**API Key 只能放服务端，绝不能出现在前端代码或 `NEXT_PUBLIC_` 变量里**。前端直接调 OpenAI 会把 key 暴露给所有访客，几分钟就被盗刷。正确做法是用 App Router 的 **Route Handler** 在服务端中转。
 
-这篇是草稿，正式发布前需要核对 OpenAI 和 Next.js 最新官方文档。模型 API 上线清单可以看 [大模型 API 接入部署清单](/blog/llm-api-integration-deployment-checklist)，成本延迟可以看 [大模型部署成本和延迟](/blog/llm-serving-cost-latency-checklist)。
+## 第一步：装 SDK + 配 Key
 
-## 适合谁
+```bash
+npm install openai
+```
+在 `.env.local` 里配 key（**不要**加 `NEXT_PUBLIC_` 前缀）：
+```bash
+OPENAI_API_KEY=sk-xxxxx
+```
+`.env.local` 必须进 `.gitignore`，别提交进仓库。
 
-适合想在 Next.js 网站里接入 AI 功能的人。你可能要做 proposal 生成器、报错解释器、文章摘要、客服草稿、聊天窗口或内部工具。
+## 第二步：写服务端 Route Handler
 
-也适合接 AI 小工具开发需求的新手。客户说“帮我接 OpenAI”，你要确认功能、输入、输出、成本、权限、日志和部署环境。
+新建 `app/api/chat/route.ts`，在服务端调用 OpenAI：
+```ts
+import OpenAI from "openai";
 
-## 不适合谁
+export const runtime = "nodejs";
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-不适合把 API Key 放到前端代码、公开仓库或浏览器环境变量里的人。这样很容易泄漏密钥，造成费用和安全风险。
+export async function POST(req: Request) {
+  const { messages } = await req.json();
+  const completion = await openai.chat.completions.create({
+    model: "gpt-4o-mini",      // 以 OpenAI 官方当前可用模型为准
+    messages,
+  });
+  return Response.json({ reply: completion.choices[0].message });
+}
+```
+前端只 `fetch("/api/chat", { method: "POST", body: ... })`，key 全程留在服务端。
 
-如果功能涉及客户隐私、公司文件、合同、医疗法律财务等内容，需要更严格的数据处理和免责声明。
+## 第三步：流式返回（边生成边显示）
 
-## 第一步：把 API 调用放到服务端
+聊天体验的关键是流式（不让用户干等）。开 `stream: true`，把流转发给前端：
+```ts
+const stream = await openai.chat.completions.create({
+  model: "gpt-4o-mini",
+  messages,
+  stream: true,
+});
+const encoder = new TextEncoder();
+return new Response(new ReadableStream({
+  async start(controller) {
+    for await (const chunk of stream) {
+      const text = chunk.choices[0]?.delta?.content || "";
+      if (text) controller.enqueue(encoder.encode(text));
+    }
+    controller.close();
+  },
+}), { headers: { "Content-Type": "text/plain; charset=utf-8" } });
+```
+前端用 `response.body.getReader()` 逐块读，追加到界面。
 
-Next.js Route Handler 可以在服务端处理请求。前端提交用户输入到你的 `/api/...` 路由，服务端读取环境变量里的 API Key，再调用 OpenAI API。
+## 常见报错和修复
 
-这样浏览器看不到密钥，也方便你统一做输入检查、速率限制、日志和错误处理。
+- **401 Incorrect API key provided**：key 错、过期、或没读到 → 检查 `.env.local` 拼写、重启 dev（环境变量启动时才读）。
+- **429 Rate limit / insufficient_quota**：超频或余额不足 → 看 OpenAI 后台用量；加重试退避；`insufficient_quota` 是要充值，不是限流。
+- **key 在前端被暴露**：说明你在客户端组件直接调了 OpenAI → 立刻挪到 Route Handler，并在 OpenAI 后台**吊销并换新 key**。
+- **生产 undefined**：本地有 `.env.local`，但 Vercel 没配 → 在 Vercel 环境变量补 `OPENAI_API_KEY` 并重新部署。
 
-## 第二步：使用环境变量
+## 安全清单（上线前必看）
 
-API Key 应该放在 `.env.local` 或部署平台的环境变量中。不要写进组件、页面、公开配置或 README 截图里。
+1. key 只在服务端，前端零暴露；
+2. `.env*` 已 gitignore；
+3. 加基本的频率限制 / 鉴权，别让 `/api/chat` 被人白嫖你的额度；
+4. 设 OpenAI 后台用量上限，防止被刷爆。
 
-预览环境和生产环境要分别配置。很多线上问题不是代码错，而是部署平台缺环境变量。
+## 让 Codex 辅助
 
-## 第三步：理解 Responses API
-
-OpenAI 官方 API Reference 中的 Responses API 是用于生成模型响应的接口，并支持文本、图像输入、工具、function calling、conversation state 等能力。新手不必一开始用完所有功能，先把一个最小请求跑通。
-
-功能越复杂，越要记录输入输出、错误处理和成本。聊天、结构化输出、工具调用和文件搜索的检查点不同。
-
-## 第四步：处理错误和成本
-
-模型调用可能超时、失败、额度不足、输入过长或返回格式不符合预期。Route Handler 应该返回用户能理解的错误，而不是把底层错误直接抛到页面。
-
-成本也要控制。限制输入长度、输出长度、请求频率和用户权限。OpenAI Help Center 也提醒控制输出长度有助于成本和延迟管理。
-
-## 第五步：上线验证
-
-上线后测试本地、预览和生产环境。检查 API Key 是否配置，接口是否返回，错误提示是否可读，日志是否不会泄漏敏感输入。
-
-如果接入 Vercel，还要检查环境变量、构建日志、访问权限和接口超时。可以配合 [Vercel 部署检查表](/blog/codex-vercel-deploy-preflight-checklist) 使用。
-
-交付时要写清功能边界：用户能输入什么，最大长度是多少，模型输出是否需要人工确认，失败时展示什么，费用由谁承担。很多 AI 小工具一开始能跑，后面出问题往往是因为这些边界没有写进交付说明。
-
-## 常见错误
-
-常见错误是只写成功路径：用户输入一句话，模型返回一段文字。但真实用户会输入空内容、超长内容、敏感内容、重复请求，也可能在模型超时时连续点击。Route Handler 要处理这些边界，而不是把所有情况都丢给模型。
-
-交付记录里要包含环境变量名、接口路径、输入限制、输出格式、错误码、日志位置、成本限制和人工复核提示。这样客户以后改页面或换模型时，不需要重新猜接口怎么工作。
+```text
+我在 Next.js App Router 接 OpenAI，报 [贴报错]。
+我的 key 放在 .env.local / 前端 / Vercel。请判断是 key、环境变量还是流式处理问题，
+给出修复，并确认我的 key 没有暴露在客户端。
+```
 
 ## 风险提醒
 
-OpenAI API 接入最大的风险是密钥泄漏、成本失控和未复核输出。不要让用户无限制调用，不要把敏感内容长期写入日志。
+- 别把 key 写进代码、截图、或 `NEXT_PUBLIC_`；一旦泄露立刻吊销换新。
+- 帮客户接 API 用客户自己的 key 和账号，别用你的额度承担客户用量。
 
-如果模型输出会被发布、发送给客户或触发工具调用，需要人工确认或更严格的安全设计。
+## 相关工具
 
-## 具体步骤
+- [报错解释器](/tools/error-explainer)
+- [Codex 工具页](/tools/codex)
+- [项目报价助手](/tools/pricing-calculator)
 
-第一步，在 Next.js 里创建服务端 Route Handler。
+## 相关 AI 接入
 
-第二步，把 OpenAI API Key 放到服务端环境变量。
+接其他模型 / 管好 key 一起看：
 
-第三步，在服务端调用 Responses API 或其他合适接口。
-
-第四步，处理输入校验、错误、超时、成本和日志。
-
-第五步，部署后测试本地、预览和生产。需要检查表或人工协助，可以从 [工具导航](/tools) 进入。
+- [Claude API 怎么接入 Next.js](/blog/claude-api-beginner-guide)
+- [Gemini API 怎么接 Next.js](/blog/gemini-api-nextjs-guide)
+- [AI API Key 怎么安全管理](/blog/ai-api-key-security-rotation-guide)
 
 ## 免责声明
 
-本文是 OpenAI API 接入 Next.js 的入门草稿，不构成安全、成本或生产架构建议。OpenAI API 和 Next.js 能力会变化，正式发布前需要人工核对官方文档。涉及客户数据和生产系统时，请由专业人员复核。
+本文 SDK 用法与 Route Handler 形态对应 OpenAI 与 Next.js 的通用行为；具体模型名、价格、限额以 OpenAI 官方文档为准，涉及客户密钥与账单时需明确授权并人工复核。

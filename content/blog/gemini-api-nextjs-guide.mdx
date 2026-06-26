@@ -1,30 +1,34 @@
 ---
-title: Gemini API 怎么接 Next.js：从 API Key 到服务端 Route Handler
+title: Gemini API 怎么接 Next.js？从 API Key 到服务端 Route Handler + 流式
 slug: gemini-api-nextjs-guide
-description: 面向新手整理 Gemini API 接入 Next.js 的流程，覆盖 API Key、服务端调用、环境变量、多模态输入、错误处理、费用和上线检查。
+description: >-
+  在 Next.js 接 Google Gemini API 的正确做法：用 @google/generative-ai SDK、key 放服务端 Route
+  Handler、流式返回、处理 400/403/429 报错，绝不在前端暴露 key。附可用代码。
 date: '2026-06-05'
-updatedAt: '2026-06-14'
+updatedAt: '2026-06-26'
 category: AI 基建
 tags:
   - Gemini API
   - Next.js
+  - Route Handler
   - Google AI
-  - AI 部署
+  - API Key 安全
+  - AI 接入
 author: AI 工具指南
 status: published
 contentType: tutorial
 difficulty: beginner
-targetReader: 想在 Next.js 应用里接入 Gemini API 的新手
+targetReader: 想在 Next.js 安全调用 Google Gemini API 做生成或聊天功能的开发者
 searchIntent: informational
-primaryKeyword: Gemini API Next.js
+primaryKeyword: Gemini API 接 Next.js
 secondaryKeywords:
-  - Gemini API 教程
-  - Google AI API Key
-  - Next.js AI 接口
-  - Gemini 多模态
-sourceNotes: >-
-  参考 Google AI for Developers Gemini API Quickstart 和 API 文档整理；正式发布前需要人工核对最新
-  SDK、模型名、环境变量和价格。
+  - google generative ai SDK
+  - Gemini API key 怎么用
+  - Gemini Route Handler
+  - Gemini 流式 streaming
+  - Gemini 403 API key
+  - Gemini 429 quota
+sourceNotes: 已按真实 Google Generative AI SDK 与 Next.js 行为重写；接口形态稳定，具体模型名与免费额度随官方变动，发布前建议核对 Google AI 官方文档。
 humanReviewRequired: true
 reviewChecklist:
   hasOriginalAngle: true
@@ -37,8 +41,8 @@ reviewChecklist:
 monetization:
   affiliateSlots:
     - 工具导航
-  templateCTA: 下载 Gemini API 接入检查表
-  serviceCTA: 联系人工协助检查 Next.js AI 接口
+  templateCTA: 下载模板包
+  serviceCTA: 联系人工协助
   adSlots:
     - article-bottom
 qualityScore: 100
@@ -46,74 +50,91 @@ publishBatch: 27
 canonical: 'https://ai.aporet.com/blog/gemini-api-nextjs-guide'
 noindex: false
 ---
-# Gemini API 怎么接 Next.js：从 API Key 到服务端 Route Handler
+# Gemini API 怎么接 Next.js？从 API Key 到服务端 Route Handler
 
-Gemini API 是很多新手搜索的模型接入口，尤其是想在网页应用里做聊天、摘要、多模态分析或内容生成的人。对 Next.js 项目来说，关键不是把 API Key 填进去就完事，而是把模型调用放在服务端、处理环境变量、错误、费用和用户输入边界。
+Google Gemini API 接 Next.js 的逻辑和接 OpenAI 一样：**key 放服务端、用 Route Handler 中转、前端只调你自己的接口**。Gemini 有免费额度，适合做 Demo，但 key 一样不能漏到前端。
 
-这篇是草稿，正式发布前需要核对 Google AI 最新官方文档。类似的 Next.js 接口结构可以看 [OpenAI API Next.js Route Handler 指南](/blog/openai-api-nextjs-route-handler-guide)，聊天部署可以看 [Vercel AI SDK 聊天机器人部署](/blog/ai-agent-deployment-vercel-ai-sdk-guide)。
+## 第一步：拿 Key + 装 SDK
 
-## 适合谁
+去 Google AI Studio 申请 API Key（注意它的免费额度和速率限制）。装官方 SDK：
+```bash
+npm install @google/generative-ai
+```
+`.env.local`（不加 `NEXT_PUBLIC_`）：
+```bash
+GEMINI_API_KEY=xxxxx
+```
 
-适合会一点 Next.js，想在自己的网站或工具里加入 Gemini 模型能力的人。常见场景包括摘要、问答、表单辅助、图片理解、文案草稿和内部工具。
+## 第二步：服务端 Route Handler
 
-也适合给客户做 AI 小工具的新手。客户不一定关心模型供应商，他们关心能不能稳定、费用能不能控制、输入数据是否安全、结果是否需要人工确认。
+新建 `app/api/gemini/route.ts`：
+```ts
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
-## 不适合谁
+export const runtime = "nodejs";
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
-不适合把 API Key 写进客户端代码的人。任何在浏览器里暴露的 Key 都有被滥用的风险。
+export async function POST(req: Request) {
+  const { prompt } = await req.json();
+  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" }); // 以官方当前模型为准
+  const result = await model.generateContent(prompt);
+  return Response.json({ text: result.response.text() });
+}
+```
+前端 `fetch("/api/gemini", ...)`，key 不出服务端。
 
-也不适合没有边界的公开工具。用户输入、模型输出、费用和日志都需要设计，不然一个简单接口也可能变成长期维护问题。
+## 第三步：流式返回
 
-## 第一步：准备 API Key
+```ts
+const result = await model.generateContentStream(prompt);
+const encoder = new TextEncoder();
+return new Response(new ReadableStream({
+  async start(controller) {
+    for await (const chunk of result.stream) {
+      controller.enqueue(encoder.encode(chunk.text()));
+    }
+    controller.close();
+  },
+}), { headers: { "Content-Type": "text/plain; charset=utf-8" } });
+```
 
-Google Gemini API 文档里的示例通常会提醒设置环境变量。新手要把 Key 放在服务端环境变量里，本地和线上分别配置。
+## 常见报错和修复
 
-客户项目建议使用客户自己的账号和账单。你可以协助配置，但不要把客户 Key 保存到不必要的地方，也不要写进交付文档正文。
+- **400 API key not valid**：key 错或没读到 → 检查 `.env.local`、重启 dev。
+- **403 / PERMISSION_DENIED**：key 没开对应 API，或地区/项目限制 → 在 Google AI Studio / Cloud 确认 key 权限。
+- **429 RESOURCE_EXHAUSTED**：超免费额度或 RPM/TPM 限制 → 降速、加重试退避、或换更高配额。
+- **生产读不到**：Vercel 没配 `GEMINI_API_KEY` → 补环境变量并重新部署。
 
-## 第二步：写服务端 Route Handler
+## OpenAI vs Gemini 接入差异（一句话）
 
-Next.js 应用里，模型调用应该放在服务端 Route Handler 或后端函数中。前端提交用户输入，服务端读取环境变量并调用 Gemini API，再把结果返回前端。
+调用结构几乎一样（key + 服务端中转 + 流式），主要差别在 **SDK 包名和方法名**：OpenAI 是 `openai` + `chat.completions.create`，Gemini 是 `@google/generative-ai` + `generateContent`。换供应商主要改这层。
 
-这样可以避免密钥暴露，也方便加输入校验、日志、错误处理和费用限制。不要让前端直接请求模型供应商。
+## 让 Codex 辅助
 
-## 第三步：处理多模态输入
-
-Gemini 常被用于文字和图片等多模态任务。多模态功能很有吸引力，但也要处理文件大小、格式、隐私、上传限制和错误提示。
-
-如果客户要上传截图、票据、合同或用户资料，必须先确认数据授权和使用范围。不要因为模型能看图，就随意收集敏感图片。
-
-## 第四步：测试错误和限额
-
-上线前要测试 API Key 无效、额度不足、模型不可用、输入过长、网络超时和用户连续提交。只测试成功路径是不够的。
-
-错误提示要让用户知道下一步是什么，例如稍后重试、缩短输入、联系管理员，而不是只显示空白页面。
-
-## 第五步：记录模型和费用
-
-交付时要记录模型名、用途、典型输入输出长度、调用频率和费用观察方式。模型价格和可用性可能变化，正式上线前必须人工复核。
-
-如果应用公开访问，建议加入登录、限流或使用额度。否则费用很难预测。
-
-## 常见错误
-
-常见错误是把 Google AI 的 quickstart 代码直接搬到前端。示例用于学习，真实 Web 应用要按服务端方式改造。
-
-另一个错误是没有测试图片或长文本边界。多模态输入的失败情况比纯文本更多，需要提前处理。
-
-客户项目里，Gemini API 接入最好拆成两个验收层次。第一层是技术链路：环境变量、Route Handler、模型返回、错误提示和部署环境都正常。第二层是业务链路：用户输入是否合理、输出是否需要人工复核、图片或文本是否涉及敏感资料、费用是否能被客户接受。只验收第一层，很容易出现“代码能跑，但业务不能用”的情况。
-
-如果客户希望做多模态功能，例如上传截图生成说明、读取图片里的表格、分析产品图或处理用户资料，建议先用样本数据跑通，不要直接接真实敏感资料。演示阶段把数据来源、输入限制、输出免责声明和人工审核流程写清楚，后续产品化会稳很多。
+```text
+我在 Next.js 接 Gemini API 报 [贴报错]。
+请判断是 key 无效、权限、还是配额问题，给出修复，并确认我的 key 没暴露在前端。
+```
 
 ## 风险提醒
 
-Gemini API 调用涉及用户输入和模型输出，正式项目要核对服务条款、数据处理、日志策略和客户授权。涉及敏感内容时必须保留人工复核。
+- key 只在服务端，泄露立刻在 Google AI Studio 吊销换新。
+- 免费额度有限，给 `/api/gemini` 加频率限制，别被人刷爆配额。
 
-公开接口要防止滥用和费用失控。不要把未加限制的模型接口直接暴露给所有访问者。
+## 相关工具
 
-## 具体步骤
+- [报错解释器](/tools/error-explainer)
+- [Codex 工具页](/tools/codex)
+- [项目报价助手](/tools/pricing-calculator)
 
-第一步，准备 API Key 并配置服务端环境变量。第二步，创建 Next.js Route Handler。第三步，在服务端调用 Gemini API。第四步，前端只提交输入和展示结果。第五步，测试错误、限额、多模态和长输入。第六步，记录费用、日志和维护说明。需要接入检查表可以进入 [工具导航](/tools)。
+## 相关 AI 接入
+
+接其他模型 / 管好 key 一起看：
+
+- [OpenAI API 接入 Next.js 怎么做](/blog/openai-api-nextjs-route-handler-guide)
+- [Claude API 怎么接入 Next.js](/blog/claude-api-beginner-guide)
+- [AI API Key 怎么安全管理](/blog/ai-api-key-security-rotation-guide)
 
 ## 免责声明
 
-本文只用于技术学习和项目预评估，不构成费用、安全、合规、稳定性或模型效果承诺。正式上线前，应由人工核对 Google AI 官方文档、客户数据边界、服务条款和验收标准。
+本文 SDK 用法对应 Google Generative AI 与 Next.js 的通用行为；具体模型名、免费额度、限额以 Google AI 官方文档为准，涉及客户密钥时需明确授权并人工复核。

@@ -1,30 +1,34 @@
 ---
-title: Claude API 怎么接入：Messages API、费用和上下文边界
+title: Claude API 怎么接入 Next.js？Messages API、system、流式和报错处理
 slug: claude-api-beginner-guide
-description: 面向新手整理 Claude API 接入思路，覆盖 Messages API、API Key、服务端调用、流式输出、Token 计数、费用和客户数据边界。
+description: >-
+  接 Anthropic Claude API 的正确做法：用 @anthropic-ai/sdk、Messages API（必须传 max_tokens、system
+  是顶层参数）、key 放服务端 Route Handler、流式返回、处理 401/429/overloaded。附可用代码。
 date: '2026-06-05'
-updatedAt: '2026-06-14'
+updatedAt: '2026-06-26'
 category: AI 基建
 tags:
   - Claude API
   - Anthropic
   - Messages API
-  - AI 部署
+  - Next.js
+  - 流式响应
+  - AI 接入
 author: AI 工具指南
 status: published
 contentType: tutorial
 difficulty: beginner
-targetReader: 想在应用里接入 Claude API 的新手和自由职业者
+targetReader: 想在 Next.js 安全接入 Anthropic Claude API 做对话或生成的开发者
 searchIntent: informational
-primaryKeyword: Claude API 接入
+primaryKeyword: Claude API 怎么接入
 secondaryKeywords:
-  - Anthropic API
-  - Claude Messages API
-  - Claude API Key
-  - Claude 流式输出
-sourceNotes: >-
-  参考 Anthropic Claude API Overview、Messages API、Streaming 和 Token Counting
-  文档整理；正式发布前需要人工核对最新模型名、版本头和价格。
+  - Anthropic Messages API
+  - anthropic-ai sdk
+  - Claude API max_tokens
+  - Claude API system 参数
+  - Claude API 流式 streaming
+  - Claude API 429 overloaded
+sourceNotes: 已按真实 Anthropic SDK 与 Messages API 行为重写；接口形态稳定，具体模型名与价格随官方变动，发布前建议核对 Anthropic 官方文档当前模型与限额。
 humanReviewRequired: true
 reviewChecklist:
   hasOriginalAngle: true
@@ -37,8 +41,8 @@ reviewChecklist:
 monetization:
   affiliateSlots:
     - 工具导航
-  templateCTA: 下载 Claude API 接入检查表
-  serviceCTA: 联系人工协助检查 Claude 应用接入
+  templateCTA: 下载模板包
+  serviceCTA: 联系人工协助
   adSlots:
     - article-bottom
 qualityScore: 100
@@ -46,74 +50,102 @@ publishBatch: 27
 canonical: 'https://ai.aporet.com/blog/claude-api-beginner-guide'
 noindex: false
 ---
-# Claude API 怎么接入：Messages API、费用和上下文边界
+# Claude API 怎么接入 Next.js？Messages API、system、流式和报错处理
 
-Claude API 常被用于写作、代码、长文档处理、摘要和 Agent 应用。新手搜索“Claude API 接入”“Anthropic Messages API”“Claude 流式输出”时，最容易卡在请求格式、版本头、Token、费用和服务端调用位置。
+Anthropic 的 Claude API 接入逻辑和别的 LLM 一样：**key 放服务端、用 Route Handler 中转、前端只调你自己的接口**。但 Messages API 有两个新手最容易踩的点：**`max_tokens` 是必填的**，**`system` 是顶层参数、不是一条 message**。
 
-这篇是草稿，正式发布前需要核对 Anthropic 最新官方文档。Claude Code 工具类内容可以看 [Claude Code 新手使用场景](/blog/claude-code-beginner-use-cases)，模型 API 统一代理可以看 [LiteLLM Proxy 怎么部署](/blog/litellm-proxy-beginner-guide)。
+## 第一步：装 SDK + 配 Key
 
-## 适合谁
+```bash
+npm install @anthropic-ai/sdk
+```
+`.env.local`（不加 `NEXT_PUBLIC_`）：
+```bash
+ANTHROPIC_API_KEY=sk-ant-xxxxx
+```
 
-适合想把 Claude 接入自己应用、内部工具或客户项目的人。常见场景包括长文档摘要、代码解释、客户回复草稿、资料整理和 Agent 推理。
+## 第二步：服务端 Route Handler（注意两个坑）
 
-也适合正在比较 OpenAI、Gemini、Claude 等模型的新手。Claude 的能力边界、价格、上下文和输出风格都需要用真实任务测试，而不是只看别人评价。
+新建 `app/api/claude/route.ts`：
+```ts
+import Anthropic from "@anthropic-ai/sdk";
 
-## 不适合谁
+export const runtime = "nodejs";
+const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
-不适合把 API Key 写进前端的人。Claude API Key 应该只放在服务端环境变量里，由后端接口调用。
+export async function POST(req: Request) {
+  const { messages } = await req.json();
+  const msg = await client.messages.create({
+    model: "claude-sonnet-4-5",     // 以 Anthropic 官方当前模型为准
+    max_tokens: 1024,               // 必填,漏了会直接报错
+    system: "你是一个简洁的中文助手", // system 是顶层参数,不是 messages 里的一条
+    messages,                       // 形如 [{ role: "user", content: "..." }]
+  });
+  return Response.json({ reply: msg.content });
+}
+```
+两个高频报错就来自这里：漏 `max_tokens`、或把 system 当成 `{ role: "system" }` 塞进 messages（Messages API 不接受 system 角色）。
 
-也不适合没有成本估算的长文档项目。长上下文看起来方便，但输入越长，费用和延迟越需要关注。
+## 第三步：流式返回
 
-## 第一步：理解 Messages API
+```ts
+const stream = client.messages.stream({
+  model: "claude-sonnet-4-5",
+  max_tokens: 1024,
+  messages,
+});
+const encoder = new TextEncoder();
+return new Response(new ReadableStream({
+  async start(controller) {
+    for await (const event of stream) {
+      if (event.type === "content_block_delta" && event.delta.type === "text_delta") {
+        controller.enqueue(encoder.encode(event.delta.text));
+      }
+    }
+    controller.close();
+  },
+}), { headers: { "Content-Type": "text/plain; charset=utf-8" } });
+```
 
-Anthropic 官方文档里，Messages API 是常见对话接口。请求通常包含模型、消息列表、最大输出等字段，并且需要认证和版本相关请求头。
+## 常见报错和修复
 
-新手不要把不同供应商的请求格式混在一起。Claude API 不是简单复制 OpenAI 请求就一定可用，SDK 或官方示例更适合入门。
+- **缺 max_tokens 报错**：Messages API 必须传 `max_tokens`，补上即可。
+- **system 放错位置**：别在 `messages` 里放 `{ role: "system" }`，用顶层 `system` 字段。
+- **401 authentication_error**：key 错或没读到 → 检查 `.env.local`、重启 dev。
+- **429 / overloaded_error**：限流或服务繁忙 → 加指数退避重试；`overloaded` 通常稍后重试即可。
+- **生产读不到**：Vercel 没配 `ANTHROPIC_API_KEY` → 补环境变量并重新部署。
 
-## 第二步：把调用放到服务端
+## 和 OpenAI 接入的主要差异
 
-无论是 Next.js、Node、Python 还是其他后端，API Key 都应该留在服务端。前端只提交用户输入，服务端负责调用 Claude 并返回结果。
+结构相近（key + 服务端 + 流式），差别在：SDK 是 `@anthropic-ai/sdk`、方法是 `messages.create`、**`max_tokens` 必填**、**`system` 单独传**、流式事件是 `content_block_delta`。换供应商主要改这层。
 
-这样可以统一做输入校验、日志、错误处理、额度限制和人工复核。客户项目里也更方便交接和审计。
+## 让 Codex 辅助
 
-## 第三步：测试流式输出
-
-长回答或聊天应用通常需要流式输出。Anthropic 官方文档提供 streaming 相关说明。上线前要测试网络中断、用户取消、模型超时和前端显示状态。
-
-流式体验好，但错误处理更复杂。不要只在成功路径下展示漂亮动画，也要处理失败、重试和空结果。
-
-## 第四步：控制 Token 和费用
-
-Claude API 文档也提供 Token Counting 方向，用于在发送前估算输入。长文档、RAG、Agent 记忆和工具调用都可能让 Token 快速增长。
-
-客户项目里要记录典型任务的输入长度、输出长度、调用次数和预算。不要承诺固定费用，除非你已经加了限制和监控。
-
-## 第五步：明确数据边界
-
-如果输入包含客户资料、合同、代码、内部文档或个人信息，要先确认是否允许发送到模型 API。客户授权、日志保存和删除流程都要写清楚。
-
-如果项目只是生成草稿，建议在页面或交付说明中标注 AI 输出需要人工复核。尤其是对外回复、报价、合同、法律、财务和医疗相关内容。
-
-## 常见错误
-
-常见错误是用错误的模型名、版本头或请求格式。另一个错误是忽略长输入成本，导致测试阶段看起来很好，上线后费用不可控。
-
-还有一种错误是没有区分直连和第三方代理。客户数据路径不同，风险和责任也不同。
-
-客户项目里，Claude API 的优势常被放在长文档、写作和复杂指令上，但这也意味着输入可能更长、费用更高、日志更敏感。验收时不要只测试短聊天，要测试客户真实文档、超长输入、空输入、格式要求、流式输出中断和模型拒答。每个失败场景都要有用户能理解的提示。
-
-交付说明里建议写清：模型名、API Key 归属、服务端环境变量位置、典型 Token 成本、是否保存对话、谁能查看日志、输出是否必须人工复核。这样客户后续扩展功能时，不会把 API 接入误认为“无限可用的智能员工”。
+```text
+我在 Next.js 接 Claude（Anthropic）API 报 [贴报错]。
+请判断是 max_tokens、system 位置、key、还是限流问题，给出修复，
+并确认我的 key 没暴露在前端。
+```
 
 ## 风险提醒
 
-Claude API 接入涉及模型服务条款、数据处理和费用控制。正式项目必须核对官方文档、客户授权和访问权限。
+- key 只在服务端，泄露立刻在 Anthropic 后台吊销换新。
+- 给 `/api/claude` 加频率限制和用量上限，别被人白嫖额度。
 
-不要把模型输出当成最终专业结论。需要对外交付或高影响判断时，必须由人工审核。
+## 相关工具
 
-## 具体步骤
+- [报错解释器](/tools/error-explainer)
+- [Codex 工具页](/tools/codex)
+- [项目报价助手](/tools/pricing-calculator)
 
-第一步，准备 API Key 并保存到服务端环境变量。第二步，阅读 Messages API 官方示例。第三步，用后端接口调用 Claude。第四步，测试流式、错误和长输入。第五步，估算 Token 和费用。第六步，记录数据边界和人工复核流程。需要接入检查表可以进入 [工具导航](/tools)。
+## 相关 AI 接入
+
+接其他模型 / 管好 key 一起看：
+
+- [OpenAI API 接入 Next.js 怎么做](/blog/openai-api-nextjs-route-handler-guide)
+- [Gemini API 怎么接 Next.js](/blog/gemini-api-nextjs-guide)
+- [AI API Key 怎么安全管理](/blog/ai-api-key-security-rotation-guide)
 
 ## 免责声明
 
-本文只用于技术学习和项目预评估，不构成费用、安全、合规、稳定性或模型效果承诺。正式上线前，应由人工核对 Anthropic 官方文档、服务条款、客户数据要求和验收标准。
+本文 SDK 用法与 Messages API 形态对应 Anthropic 与 Next.js 的通用行为；具体模型名、价格、限额以 Anthropic 官方文档为准，涉及客户密钥与账单时需明确授权并人工复核。
