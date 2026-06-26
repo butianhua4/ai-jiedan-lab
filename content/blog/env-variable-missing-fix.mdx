@@ -1,28 +1,34 @@
 ---
-title: 环境变量 missing 怎么排查
+title: .env 环境变量不生效怎么解决？process.env 读到 undefined 的 6 个原因
 slug: env-variable-missing-fix
-description: 给中文新手的环境变量 missing 排查流程：先确认缺哪个变量、在哪个环境缺、本地和部署平台是否一致，再处理公开变量、敏感密钥和客户授权边界。
+description: >-
+  本地配了 .env 但 process.env 还是 undefined，常见于没重启 dev、前端变量缺 NEXT_PUBLIC_ 前缀、.env
+  文件名/位置不对、没装 dotenv、变量名拼错、构建平台没配。逐条给真实修复。
 date: '2026-06-03'
-updatedAt: '2026-06-14'
-category: 报错解决
+updatedAt: '2026-06-26'
+category: Node.js 报错与工程问题
 tags:
-  - 报错解决
   - 环境变量
-  - Vercel
-  - AI 工具实践
+  - .env
+  - process.env undefined
+  - NEXT_PUBLIC
+  - dotenv
+  - 报错排查
 author: AI 工具指南
 status: published
-contentType: tutorial
-difficulty: intermediate
-targetReader: 遇到环境变量缺失、部署失败或本地能跑线上失败的新手。
+contentType: troubleshooting
+difficulty: beginner
+targetReader: 配了 .env 但代码里读不到、想定位环境变量为什么 undefined 的开发者
 searchIntent: informational
-primaryKeyword: 环境变量 missing 怎么排查
+primaryKeyword: .env 环境变量不生效怎么解决
 secondaryKeywords:
-  - 环境变量缺失
-  - .env
-  - Vercel 环境变量
-  - AI 工具实践
-sourceNotes: 人工重写草稿；公开前仍需人工复核 Next.js、Vercel、部署平台、环境变量规则、项目日志和客户授权边界。
+  - process.env undefined
+  - NEXT_PUBLIC 前缀
+  - .env.local 不生效
+  - dotenv 不读取
+  - 环境变量 missing
+  - Next.js 环境变量读不到
+sourceNotes: 已按真实环境变量问题重写；成因与修复对应 Node / Next.js / dotenv 行为，发布前建议补一张你项目的真实读取截图增强 E-E-A-T。
 humanReviewRequired: true
 reviewChecklist:
   hasOriginalAngle: true
@@ -44,62 +50,82 @@ publishBatch: 13
 canonical: 'https://ai.aporet.com/blog/env-variable-missing-fix'
 noindex: false
 ---
-# 环境变量 missing 怎么排查
+# .env 环境变量不生效怎么解决？process.env 读到 undefined 的 6 个原因
 
-环境变量 missing 通常不是单纯“少一行配置”。它可能发生在本地、测试环境、预览部署、生产部署、服务端代码或客户端代码里。新手最容易犯的错误，是看到缺变量就让客户把密钥发过来，或者把真实密钥写进代码和聊天记录。
+明明在 `.env` 里写了 `API_KEY=xxx`，代码里 `process.env.API_KEY` 却是 `undefined`——这几乎都不是玄学，而是下面 6 个具体原因之一。先按它们逐个排除。
 
-先给一个安全顺序：只讨论变量名、用途和所在环境，不收集真实密钥值。先确认缺哪个变量、在哪个命令或页面报错、是本地缺还是部署平台缺，再决定由谁配置。短表可以看 [环境变量缺失检查清单](/blog/env-variable-missing-fix-checklist)，误区看 [环境变量缺失常见错误和解决步骤](/blog/env-variable-missing-fix-mistakes)。
+## ① 改了 .env 没重启 dev（最常见）
 
-## 适合谁
+**成因**：环境变量是**进程启动时**读进去的。dev 服务器已经在跑，你改了 `.env` 它不会自动重读。
 
-适合遇到 `missing env`、`environment variable is not defined`、`process.env` 为空、Vercel 部署失败、API key 未配置、本地能跑线上失败的新手。
+**修复**：`Ctrl+C` 停掉，重新 `npm run dev`。这一步能解决一大半"读不到"。
 
-也适合准备接小型部署诊断任务的人。你可以帮助客户定位变量名、环境和配置位置，但不应该保存客户真实密钥。
+## ② 前端变量缺 NEXT_PUBLIC_ 前缀（Next.js / Vite）
 
-## 不适合谁
+**成因**：出于安全，框架默认只把环境变量注入服务端。浏览器里要用的变量必须加前缀，否则在客户端永远是 `undefined`。
 
-不适合需要你接管客户账号、保存客户 token、配置生产密钥或访问真实用户数据的新手独立操作。环境变量经常包含数据库连接、支付密钥、邮件服务密钥、AI API key 和 OAuth secret，这些都属于敏感信息。
+**修复**：
+- Next.js：浏览器要读的变量改成 `NEXT_PUBLIC_API_URL`；
+- Vite：改成 `VITE_API_URL`，代码里用 `import.meta.env.VITE_API_URL`。
+- **密钥类（API key、token）不要加前缀**，那样会泄露到前端。
 
-也不适合把 `.env` 文件直接贴给 AI 或客户群聊的人。变量名可以讨论，变量值要保护。
+## ③ 文件名或位置不对
+
+**成因**：文件叫成了 `env`、`.env.txt`、放在了子目录，或该用 `.env.local` 的用了 `.env`。
+
+**修复**：文件名就是 `.env`（或 `.env.local`），放在**项目根目录**（和 `package.json` 同级）。注意优先级：`.env.local` 会覆盖 `.env`。
+
+## ④ 纯 Node 脚本没装 / 没加载 dotenv
+
+**成因**：Next.js / Vite 内置读 `.env`，但**纯 Node 脚本不会自动读**，需要 dotenv。
+
+**修复**：
+```bash
+npm install dotenv
+```
+脚本最顶部加载：
+```js
+import "dotenv/config";   // 或 require("dotenv").config();
+```
+
+## ⑤ 变量名拼错 / 大小写 / 多了空格引号
+
+**成因**：`.env` 里写成 `API_KEY = xxx`（等号两边空格）、加了引号、或代码里大小写对不上。
+
+**修复**：`.env` 写成 `KEY=value`，等号两边不留空格、值不用加引号（除非含空格）；代码里的变量名和 `.env` 完全一致。
+
+## ⑥ 构建/部署平台没配（线上 undefined）
+
+**成因**：本地 `.env` 不会上传（也不该上传），Vercel / CI 上没配同样的变量，所以线上读不到。
+
+**修复**：在 Vercel → Settings → Environment Variables（或 CI 的 Secrets）补齐，勾对 Production 环境，**重新部署**才生效。
+
+## 快速验证一行
+
+```bash
+node -e "require('dotenv').config(); console.log(process.env.你的变量名)"
+```
+能打印出值，说明 `.env` 本身没问题，问题在框架前缀或重启；打印 undefined，回到 ③⑤ 查文件和拼写。
+
+## 让 Codex 辅助
+
+```text
+我在 .env 配了 X，但 process.env.X 是 undefined。
+我用的是 Next.js / Vite / 纯 Node 脚本，这个变量在服务端还是浏览器用。
+请判断最可能是前缀、重启、文件位置还是平台未配，给出对应修复。
+```
 
 ## 风险提醒
 
-环境变量排查的核心风险是泄密。你要避免三件事：把密钥写进代码、把密钥贴进聊天、把客户密钥保存到自己的设备。客户项目里，敏感变量应由客户在自己的部署平台或密钥管理系统里配置。
+- **`.env` 必须进 `.gitignore`**，别把密钥提交进仓库或公开。
+- 给前端加前缀的变量等于公开，绝不要把密钥、token 加 `NEXT_PUBLIC_` / `VITE_`。
 
-另一个风险是环境混淆。本地 `.env.local` 有变量，不代表预览部署或生产部署也有。预览环境、生产环境、开发环境可能各自需要配置。
+## 相关工具
 
-## 具体步骤
-
-1. 保存原始报错。记录命令、页面、接口、部署平台日志和报错变量名。
-2. 只记录变量名，不记录真实值。比如写 `DATABASE_URL` 缺失，不写具体连接串。
-3. 判断发生环境。本地 dev、本地 build、预览部署、生产部署、服务端请求、客户端页面要分开。
-4. 看项目说明。检查 README、`.env.example`、配置文件、校验脚本和部署说明。
-5. 判断变量类型。公开变量、服务端密钥、数据库连接、第三方 API key、功能开关要区别处理。
-6. 找配置位置。本地放本地 env 文件；部署平台放对应环境的变量配置；客户密钥由客户自己配置。
-7. 重新验证。配置后重启 dev server、重新 build 或重新部署，并保存结果。
-
-## 公开变量和敏感变量怎么分
-
-很多前端框架会用命名前缀区分客户端可见变量。以 Next.js 常见习惯为例，带公开前缀的变量可能进入浏览器代码，不能放服务端密钥。没有公开前缀的变量通常只应在服务端使用，但具体规则仍要看项目框架和文档。
-
-判断时不要只看变量名字。`PUBLIC_SITE_URL` 可能只是网站地址，风险较低；`DATABASE_URL`、`STRIPE_SECRET_KEY`、`OPENAI_API_KEY`、`JWT_SECRET` 这类通常应视为敏感。敏感变量只确认名称和用途，不复制真实值。
-
-## 本地和部署平台为什么不一致
-
-本地能跑，线上缺变量，常见原因有四个。第一，本地有 `.env.local`，部署平台没有配置。第二，预览环境配置了，生产环境没配置。第三，变量名大小写不一致。第四，部署后没有重新触发构建。
-
-所以排查时要写清：变量在哪个环境缺、谁有权限配置、配置后需要重启还是重新部署。不要把所有问题都归结为“平台坏了”。
-
-## 项目前怎么处理
-
-把任务定义为“环境变量缺失诊断”。交付内容包括缺失变量名、出现位置、可能用途、建议配置环境、客户待确认事项。只有客户授权明确时，才协助配置；涉及真实密钥时，让客户自己在后台填写。
-
-需要客户沟通稿时，可以用 [Proposal 生成器](/tools/proposal-generator) 起草确认问题；需要估算诊断时间时，用 [报价计算器](/tools/pricing-calculator)。
-
-## CTA：下一步
-
-把当前报错整理成四项：缺失变量名、出现环境、相关命令或页面、谁有权限配置。遇到日志看不懂时，用 [报错解释器](/tools/error-explainer) 拆原因。
+- [报错解释器](/tools/error-explainer)
+- [Codex 工具页](/tools/codex)
+- [项目报价助手](/tools/pricing-calculator)
 
 ## 免责声明
 
-本文是学习和排查流程，不构成法律、财务、安全或职业承诺。实际处理环境变量必须结合项目文档、部署平台规则、客户授权和安全要求人工判断。
+本文成因与修复对应 Node / Next.js / dotenv 的通用行为，供学习和排查参考；涉及客户密钥、生产环境变量时需明确授权并人工复核。
